@@ -2,24 +2,24 @@
 title: Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 description: Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler.
 author: twheeloc
-ms.date: 02/14/2022
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AgreementClassification
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d13a54209b5e8eeec3d51de3d6eedcc7f0261d3
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 57db57534bd526f8970e5bb98ba5db0ac85958e8b9aa7388500db4056c130952
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773647"
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a>Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 
@@ -29,17 +29,17 @@ Købsaftaleklassifikationen gør det muligt at styre de administrative oplysning
 
 Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-demofirmaet i den offentlige sektor partition.
 
-1. Gå til **Indkøb og forsyning > Konfiguration >.. > Købsaftaleklassifikation**.
-2. Klik på **Ny**.
-3. Skriv en værdi i feltet **Navn**.
-4. Indtast en værdi i feltet **Beskrivelse**.
-5. Valgfrit: Vælg indstillingen **Underleverandører** for at medtage oplysninger om underleverandører.
+1. Gå til Indkøb og forsyning > Opsætning > .. > Købsaftaleklassifikation.
+2. Klik på Ny.
+3. Skriv en værdi i feltet Navn.
+4. Skriv en værdi i feltet Beskrivelse.
+5. Valgfrit: Vælg indstillingen Underleverandører for at medtage oplysninger om underleverandører.
     * En købsaftale kan have en primære kontrahent, medkontrahenter og underleverandører. Du kan tildele den primære kontrahent til den overordnede købsaftale og en medkontrahent eller underleverandør til specifikke underordnede aftaler.  
-6. Valgfrit: Vælg indstillingen **Certificeringer** for at medtage oplysninger om certificeringer for kreditorer.
+6. Valgfrit: Vælg indstillingen Certificeringer for at medtage oplysninger om certificeringer for kreditorer.
     * Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.  
-7. Valgfrit: Vælg indstillingen **Kræv direkte fakturering** for at forhindre brug af aftræksordrer.
-8. Valgfrit: Vælg indstillingen **Aktiviteter** for at medtage oplysninger om opgaver og milepæle.
-9. Klik på **Gem**.
+7. Valgfrit: Vælg indstillingen Kræv direkte fakturering for at forhindre brug af aftræksordrer.
+8. Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.
+9. Klik på Gem.
 
 
 

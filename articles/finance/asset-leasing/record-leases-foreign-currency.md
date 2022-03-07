@@ -2,28 +2,25 @@
 title: Registrere leasingaftaler i udenlandsk valuta
 description: Dette emne forklarer, hvordan du registrerer leasingaftaler i andre valutaer end regnskabs- eller rapporteringsvalutaen.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseDetail
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 92177d4f808bfec88dabe9277c3d584ed02e401e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 91bf3f91614f0dd4835c253456128c9ced046749c0e13383590e01dfd436c921
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766331"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Registrere leasingaftaler i udenlandsk valuta
 
@@ -53,3 +50,6 @@ Når du opretter afskrivningskladdeposteringerne i forhold til en leasingaftale,
 Det endelige afskrivningsbeløb for udligningsudgifter kan beregnes ved hjælp af en lidt anden valutakurs, så ROU aktivet afskrives fuldt ud i regnskabsvalutaen og rapporteringsvalutaen.
 
 Hvis rettigheden er blevet genklassificeret som **Udskudt leje**, fjerner systemet automatisk valutakurserne for regnskabs- og rapporteringsvaluta, hvis de allerede er defineret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

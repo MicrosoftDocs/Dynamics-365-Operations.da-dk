@@ -2,11 +2,9 @@
 title: Angive en brugerdefineret placering, hvor oprettede dokumenter kan gemmes
 description: I dette emne beskrives, hvordan du kan udvide listen over placering til lagring af dokumenter, som genereres ved elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718495"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angive en brugerdefineret placering, hvor oprettede dokumenter kan gemmes
 
@@ -29,7 +27,7 @@ Med API'en (application programming interface) i den elektroniske rapporteringss
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal installere en topologi, der understøtter fortløbende build. Yderligere oplysninger finder du i [Installere topologier, der understøtter fortløbende build og automatisering af test](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal have adgang til denne topologi for en af følgende roller:
+Du skal installere en topologi, der understøtter fortløbende build. Yderligere oplysninger finder du i [Installere topologier, der understøtter fortløbende build og automatisering af test](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal have adgang til denne topologi for en af følgende roller:
 
 - Udvikler til elektronisk rapportering
 - Funktionel konsulent i elektronisk rapportering
@@ -41,7 +39,7 @@ Du skal også have adgang til udviklingsmiljøet for denne topologi.
 
 I den aktuelle topologi skal du [oprette et nyt ER-format](tasks/er-format-configuration-2016-11.md) for at oprette dokumenter, du vil tilføje en brugerdefineret lagerplacering for. Du kan også [importere et eksisterende ER-format til denne topologi](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Siden Formatdesigner](media/er-extend-file-storages-format.png)
+![Siden Formatdesigner.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Det ER-format, som du opretter eller importerer, skal indeholde mindst ét af følgende formatelementer:
@@ -55,12 +53,12 @@ I den aktuelle topologi skal du [oprette et nyt ER-format](tasks/er-format-confi
 
 Hvis du vil angive, hvordan dokumenter, der genereres af et ER-format, skal sendes, skal du konfigurere [Destinationer for Elektronisk rapportering (ER)](electronic-reporting-destinations.md). I hver ER destination, der er konfigureret til at gemme genererede dokumenter som filer, skal du angive en dokumenttype i dokumentstyringsstrukturen. Der kan bruges forskellige dokumenttyper til at sende dokumenter, som forskellige ER-formater genererer.
 
-1. Tilføj en ny [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for det ER-format, som du har oprettet eller tidligere har importeret. I følgende illustration er dokumenttypen **FileX**.
+1. Tilføj en ny [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md) for det ER-format, som du har oprettet eller tidligere har importeret. I følgende illustration er dokumenttypen **FileX**.
 2. For at skelne denne dokumenttype fra andre dokumenttyper skal du medtage et bestemt nøgleord i dens navn. F.eks. i illustrationen, der følger, er navnet **(LOKAL) mappe**.
 3. I feltet **Klasse** skal du angive **Vedhæft fil**.
 4. I feltet **Gruppe** skal du angive **Fil**.
 
-![Siden Dokumenttyper](media/er-extend-file-storages-document-type.png)
+![Siden Dokumenttyper.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttyper er firmaspecifikke. Du kan bruge et ER-format med en destination, der er konfigureret, i flere firmaer, hvis du konfigurerer en separat dokumenttype i hvert firma.
@@ -115,18 +113,18 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 - **Arkiv** – Når denne destination anvendes, oprettes en ny post for ER-formatet, der køres i tabellen ERFormatMappingRunJobTable. Feltet **Arkiveret** i denne post er indstillet til **Falsk**. Hvis ER-formatet er kørt korrekt, er det genererede dokument tilknyttet denne post, og **AttachingFile()** hændelsen udføres. Den dokumenttype, der er valgt i denne ER-destination, bestemmer lagerplaceringen for den vedhæftede fil (Microsoft Azure Storage eller en Microsoft SharePoint-mappe).
 - **Jobarkiv** – Når denne destination anvendes, oprettes en ny post for ER-formularen, der køres i tabellen ERFormatMappingRunJobTable. Feltet **Arkiveret** i denne post er indstillet til **Sand**. Hvis ER-formatet er kørt korrekt, er det genererede dokument tilknyttet denne post, og **AttachingFile()** hændelsen udføres. Den dokumenttype, der er konfigureret i ER-parametrene, bestemmer lagerplaceringen for den vedhæftede fil (Azure Storage eller en SharePoint-mappe).
 
-![Siden Parametre til elektronisk rapportering](media/er-extend-file-storages-parameters.png)
+![Siden Parametre til elektronisk rapportering.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurere en ER-destination
 
-1. Konfigurer den arkiverede destination for et af de tidligere nævnte elementer (fil, mappe, fletning eller vedhæftet fil) for det ER-format, du har oprettet eller importeret. Du kan finde en vejledning i [Konfigurere ER-destinationer](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurer den arkiverede destination for et af de tidligere nævnte elementer (fil, mappe, fletning eller vedhæftet fil) for det ER-format, du har oprettet eller importeret. Du kan finde en vejledning i [Konfigurere ER-destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Brug den dokumenttype, du har tilføjet tidligere for den konfigurerede destination. (I dette emne f.eks. er dokumenttypen **FileX**).
 
-![Dialogboksen Indstillinger for destination](media/er-extend-file-storages-destination.png)
+![Dialogboksen Indstillinger for destination.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Ændre kildekode
 
-1. Tilføj en ny klasse til dit Microsoft Visual Studio-projekt, og skriv kode for at abonnere på den **AttachingFile()** hændelse, der blev nævnt tidligere. (Du kan finde flere oplysninger om det anvendte mønster for udvidelsesmuligheder i [Svare ved hjælp af EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)). Skriv f.eks. kode, der udfører følgende handlinger, i den nye klasse:
+1. Tilføj en ny klasse til dit Microsoft Visual Studio-projekt, og skriv kode for at abonnere på den **AttachingFile()** hændelse, der blev nævnt tidligere. (Du kan finde flere oplysninger om det anvendte mønster for udvidelsesmuligheder i [Svare ved hjælp af EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result)). Skriv f.eks. kode, der udfører følgende handlinger, i den nye klasse:
 
     1. Du kan gemme genererede filer i en mappe i det lokale filsystem på den server, der kører Applikationsobjektserver-tjenesten (AOS).
     2. Du skal kun gemme de genererede filer, når den nye dokumenttype (f.eks. typen **FileX**, der har nøgleordet "(lokal)" i navnet) bruges, mens en fil er knyttet til posten i logfilen for ER-kørselsjobbet.
@@ -175,3 +173,6 @@ Hændelsen **AttachingFile()** udføres, når de følgende ER-destinationer beha
 
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startside for udvidelsesmuligheder](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

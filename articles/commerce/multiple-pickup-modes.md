@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594950"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053407"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivere flere leveringsmåder for afhentning af kundeordrer
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 I Microsoft Dynamics 365 Commerce version 10.0.16 og nyere kan organisationer definere flere leveringsmåder, som kunder eller salgsforbindelser kan vælge imellem, når de opretter en ordre, der skal afhentes i en butik. På denne måde kan organisationer stille flere afhentningsmuligheder til rådighed for deres kunder. Mange forhandlere tilbyder nu kunder at vælge mellem afhentning af ordrer i butikken eller ved fortovskanten. Commerce understøtter konfigurationen af disse forskellige leveringsmåder for afhentning. Brugerne kan derefter benytte dem, når de opretter kundeordrer i en hvilken som helst understøttet Commerce-kanal (e-handel, callcenter eller butik).
 

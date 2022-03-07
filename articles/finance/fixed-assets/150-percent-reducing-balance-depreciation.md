@@ -1,35 +1,32 @@
 ---
 title: 150 % saldoafskrivning
-description: Denne artikel indeholder en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
-author: saraschi2
-manager: AnnBe
+description: Dette emne viser en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a132a8d6e5eaf0dad54133fc9d0c12dcf5866c7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441536"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883306"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150 % saldoafskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
+Dette emne viser en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
 
 Når du opretter en afskrivningsprofil til et anlægsaktiv og vælger **150% saldoværdi** i feltet **Metode** på siden **Afskrivningsprofiler**, bliver de anlægsaktiver, der er tildelt afskrivningsprofilen, afskrevet med den samme procent i hver afskrivningsperiode. Denne procentdel beregnes på basis af aktivets levetid. Hvis et aktiv f.eks. har en levetid på fem år, beregnes procentdelen som 30 % (150 % ÷ 5). 
 
@@ -67,7 +64,7 @@ Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Eksempel på en 150 % saldoafskrivning
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffelsesomkostning               | 11.000 |
 | Restværdi                  | 1.000  |
@@ -88,3 +85,6 @@ Metoden med 150 % saldoafskrivning dividerer de 150 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

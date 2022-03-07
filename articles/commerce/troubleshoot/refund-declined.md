@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99fd4b816b1a3a1fe3c2d1579be45b43fdc3d385
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738618"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020750"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Refusion af en returordre afvises
 
@@ -34,7 +34,7 @@ En refusion afvises, når det kreditkort, der bruges til at fakturere en returor
 
 Oplysningerne om betalingstilladelsen indeholder følgende fejlmeddelelse: "Adyen-gateway SendRequest() mislykkedes med status 'InternalServerError'.22144; Tomt svar, der returneres fra Adyen.(22001);"
 
-![Afviste refusion af en returordre.](media/refund-order-decline.jpg)
+![Afviste refusion af en returordre](media/refund-order-decline.jpg)
 
 ## <a name="resolution"></a>Løsning
 

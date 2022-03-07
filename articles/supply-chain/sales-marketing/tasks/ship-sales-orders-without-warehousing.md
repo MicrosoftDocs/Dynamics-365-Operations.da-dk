@@ -1,24 +1,26 @@
 ---
 title: Sende salgsordrer uden lagerstyring
 description: I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e21bcdef22caf4f4d97ba7dd36ebf1a6e6e055
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9a2079ae02c01d30eb648e9cc95ee9cf6599048b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578866"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205875"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Sende salgsordrer uden lagerstyring
 

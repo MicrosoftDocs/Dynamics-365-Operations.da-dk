@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMADispatchTeamTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b2b41b9ed763971feba489769ebad6f4076925e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa61c8dabf34e74f46147149d54f310d8a8277b8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424308"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256105"
 ---
 # <a name="set-up-dispatch-teams"></a>Konfigurer planlægningsteams 
 
@@ -54,3 +53,6 @@ Dette emne beskriver, hvordan et planlægningsteam oprettes. Når du har oprette
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

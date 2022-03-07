@@ -2,9 +2,11 @@
 title: Kvalitetskontrol
 description: Dette emne indeholder oplysninger om funktionen Kvalitetskontrol. Denne funktion giver lagermedarbejderne mulighed for hurtig spottjek af kvalitet, mens de modtager varer i modtagelsesområdet.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 585ca933726cb932290f8abf8504aeb13848a0e5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103282"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996245"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -39,9 +41,12 @@ Når du bruger denne funktion, sker modtagelse og kvalitetskontrol på følgende
 
 Denne proces kan også konfigureres, så alle scannede id'er straks omdirigeres til kvalitetskontrollens lokation.
 
-## <a name="turn-the-quality-check-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Kvalitetskontrol
+## <a name="turn-on-the-quality-check-feature"></a>Aktivere funktionen Kvalitetskontrol
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Kvalitetskontrol* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Kvalitetskontrol* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge funktionen *Kvalitetskontrol*, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Kvalitetskontrol*
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurere funktionen til eksempelscenariet
 
@@ -296,7 +301,7 @@ Når indkøbsordren er blevet oprettet, kan den modtages ved hjælp af menupunkt
 
 #### <a name="receive-pallet-1"></a>Modtage palle 1
 
-1. Log på mobilappen Lokationsstyring som en bruger for lagersted *51*. (Angiv *51* som bruger-id og *1* som adgangskode).
+1. Log på lagerstedsappen som bruger af lagersted *51*. (Angiv *51* som bruger-id og *1* som adgangskode).
 1. Gå til **Indgående \> Modtagelse af indkøbsordrelinje**.
 1. Angiv dit indkøbsordrenummer i feltet **IO-num**.
 1. Bekræft indkøbsordrens nummer.
@@ -307,7 +312,7 @@ Når indkøbsordren er blevet oprettet, kan den modtages ved hjælp af menupunkt
 
     Siden **Kvalitetskontrol** vises uden postfelter. Den har kun bekræftelsesknappen (markering) nederst og menuknappen (**≡**) øverst. (Menuknappen kaldes undertiden hamburgeren eller hamburgerknappen). Når pallen passerer kvalitetskontrollen, bekræfter brugeren blot kvalitetskontrollen på siden **Kvalitetskontrol**.
 
-    ![Siden Kvalitetskontrol.](media/quality-check.png "Siden Kvalitetskontrol")
+    ![Siden Kvalitetskontrol](media/quality-check.png "Siden Kvalitetskontrol")
 
 1. Vælg bekræftelsesknappen for at bestå kvalitetskontrollen af palle 1 fra linje 1.
 
@@ -391,6 +396,3 @@ I dette scenario vil palle 3 blive accepteret.
 1. Vælg menuknappen (**≡**) øverst på siden, og vælg derefter **Annuller** i menuen for at gå tilbage til menuen.
 
 Du kan nu lukke mobilappen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Sidehovedmodul
 description: Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4411215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712784"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
@@ -30,15 +27,13 @@ ms.locfileid: "4411215"
 
 Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
-
 I Dynamics 365 Commerce konfigureres et sidehoved som et sidefragment, der omfatter modulerne til sidehoved, kampagnebanner og cookie-samtykke. 
 
 Sidehovedmodulet indeholder et websteds logo, links til navigationshierarkiet, links til andre sider på webstedet, et modul til indkøbskurveikon, et hvidlistesymbol, logonindstillinger og søgelinjen. Et sidehovedmodul optimeres automatisk for den enhed, som webstedet vises på (med andre ord en stationær enhed eller en mobilenhed). På en mobilenhed er navigationslinjen f.eks. skjult på **Menu**-knappen (som undertiden kaldes en *hamburgermenu*).
 
 Det følgende billede viser et eksempel på et sidehovedmodul på en startside.
 
-![Eksempel på et sidehovedmodul](./media/ecommerce-header.png)
+![Eksempel på et sidehovedmodul.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaber for et sidehovedmodul
 
@@ -63,9 +58,16 @@ Følgende moduler kan bruges i et sidehovedmodul:
 - **Butiksvælger** - Butiksvælgermodulet kan medtages på et overskriftmoduls butiksvælgerplads. Det giver brugere mulighed for at søge efter og finde butikker i nærheden. Brugerne kan også angive en foretrukken butik. Butikken vil derefter blive vist i overskriften. Når butiksvælgermodulet er inkluderet i overskriftsmodulet, skal egenskaben **Tilstand** være angivet til **Find butikker**. Du kan få flere oplysninger under [Butiksvælgermodul](store-selector.md).
 
 > [!NOTE]
-> - Understøttelse af indkøbsvognikonets modul i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.11.
-> - Understøttelse af webstedsvælgermodulet i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.14.
-> - Understøttelse af butiksvælgermodulet i overskriftsmoduler er tilgængelig i Dynamics 365 Commerce version 10.0.15.
+> - Understøttelse af indkøbsvognikonets modul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.11.
+> - Understøttelse af brug af webstedets vælgermodul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.14.
+> - Understøttelse af brug af butikkens vælgermodul i overskriftsmoduler er tilgængelig pr. Dynamics 365 Commerce version 10.0.15.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Overskriftsmodul i emnet Adventure Works
+
+I emnet Adventure Works understøtter overskriftsmodulet egenskaben **Mobillogo**. Denne egenskab gør det muligt at angive et logo for mobile viewports. Egenskaben **Mobillogo** er tilgængelig som en moduldefinitionsudvidelse.
+
+> [!IMPORTANT]
+> Emnet Adventure Works er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Oprette et sidehovedfragment for en side
 
@@ -119,3 +121,6 @@ Du kan medvirke til at sikre, at der vises et sidehoved på hver side, ved at f�
 [Webstedsvælgermodul](site-selector.md)
 
 [Butiksvælgermodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

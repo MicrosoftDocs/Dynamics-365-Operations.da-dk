@@ -2,24 +2,26 @@
 title: Oprette en avanceret finanspost i den offentlige sektor
 description: Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter.
 author: twheeloc
-ms.date: 02/14/2022
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, AdvancedLedgerEntryCreate, ProjTableLookup, ProjCategoryLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3541671dcc8e39defd0364244e1989052712d084
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: a4f5eb2f4ec718eb3cfbd4c6af0710b2ff471b01
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119378"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235576"
 ---
 # <a name="create-an-advanced-ledger-entry-in-the-public-sector"></a>Oprette en avanceret finanspost i den offentlige sektor
 
@@ -27,25 +29,25 @@ ms.locfileid: "8119378"
 
 Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter. For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 
-1. Gå til **Finans > Kladdeposteringer > Avancerede finansposter**.
-2. Klik på **Ny**.
-3. Angiv en dato i feltet **Regnskabsdato**.
-4. Klik på rullelisten i feltet **Posteringstekst** for at åbne opslaget.
+1. Gå til Finans > Kladdeposteringer > Avancerede finansposter.
+2. Klik på Ny.
+3. Angiv en dato i datofeltet Regnskab.
+4. Klik på rullelisten i feltet Posteringstekst for at åbne opslaget.
 5. På listen skal du klikke på posteringsteksten for denne avancerede finanspost.
-6. Klik på rullelisten i feltet **Bogføringsdefinition** for at åbne opslaget.
-7. På listen skal du klikke på **Bogføringsdefinition** for denne avancerede finanspost.
-8. Klik på rullelisten i feltet **Årsagskode** for at åbne opslaget.
-9. På listen skal du klikke på **Årsagskode** for denne avancerede finanspost.
-10. Skriv en værdi i feltet **Årsagskommentar**.
-11. Klik på **OK**.
-12. Klik på **Tilføj linje**.
-13. Klik på rullelisten i feltet **Projekt-id** for at åbne opslaget.
+6. Klik på rullelisten i feltet Bogføringsdefinition for at åbne opslaget.
+7. På listen skal du klikke på Bogføringsdefinition for denne avancerede finanspost.
+8. Klik på rullelisten i feltet Årsagskode for at åbne opslaget.
+9. På listen skal du klikke på Årsagskode for denne avancerede finanspost.
+10. Skriv en værdi i feltet Årsagskommentar.
+11. Klik på OK.
+12. Klik på Tilføj linje.
+13. Klik på rullelisten i feltet Projekt-id for at åbne opslaget.
 14. Klik på et projekt-id på listen.
-15. Klik på rullelisten i feltet **Projektkategori** for at åbne opslaget.
+15. Klik på rullelisten i feltet Projektkategori for at åbne opslaget.
 16. Klik på en projektkategori på listen.
     * Hvis du vælger projektkategorien, angives finanskontoen automatisk.  
     * Føj et debetbeløb eller kreditbeløb til linjen. Hvis det er nødvendigt, skal du klikke på Tilføj linje for at tilføje flere linjer.  
-17. Klik på **Gem**.
+17. Klik på Gem.
 
 
 

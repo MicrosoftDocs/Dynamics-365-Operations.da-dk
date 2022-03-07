@@ -2,28 +2,25 @@
 title: Oversigt over produktkonfigurationsmodeller
 description: Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87d61203d36722194b98a247609fa126b71b846c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8629c2af9d28d821996707532ae0c77b072a8f94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424400"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820292"
 ---
 # <a name="product-configuration-models-overview"></a>Oversigt over produktkonfigurationsmodeller
 
@@ -153,3 +150,6 @@ Du kan få vist, om et frigivet produkt kan bruges som en komponent eller underk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

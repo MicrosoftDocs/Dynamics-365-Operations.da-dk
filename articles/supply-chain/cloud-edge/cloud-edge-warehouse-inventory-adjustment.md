@@ -2,9 +2,11 @@
 title: Lagerregulering for lagersted
 description: Dette emne indeholder oplysninger om lagerstedets lagerreguleringskladde og behandling, når du bruger skaleringsenheder.
 author: perlynne
+manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventoryAdjustmentJournal, InventJournalCount
 audience: Application User
@@ -16,16 +18,17 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3999c16cdf4fce342ce56ca3a459944566c6d0cb6a8460d30d2254356e5cba82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be386539ea7addf20256ac2b1f8a2a72736fcbec
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748805"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938220"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerregulering for lagersted
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funktionen Lagersteds lagerregulering anvendes ved kørsel af cloud- og kantskaleringsenheder til [produktionsbelastninger](cloud-edge-workload-manufacturing.md) og [belastninger i lagerstyring](cloud-edge-workload-warehousing.md).
 
@@ -37,7 +40,7 @@ Følgende arbejdsprocesser for lagerstedsappen bruger aktuelt **Lagerregulerings
 - Cyklusoptælling
 - Indlæsning af nummerplade
 
-Flere lagertransaktioner oprettes som en del af hver lagerreguleringsproces, fordi hubbens og skaleringsenhedens installationer deler lagerposter.
+Flere lagertransaktioner oprettes som en del skyen eller edge i en lagerreguleringsproces, fordi hubbens og skaleringsenhedens installationer deler lagerposter.
 
 ## <a name="inventory-adjustment-example"></a>Eksempel på lagerregulering
 

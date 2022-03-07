@@ -1,12 +1,10 @@
 ---
 title: Oprette arbejdssteder
 description: Dette emne beskriver, hvordan du opretter et arbejdssted i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81b5b81d7c318ba0a195dbc6324d700ccb8d39bf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e8bdf8367cb7a54520c671fbc05807b891e0cc45
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018215"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813839"
 ---
 # <a name="create-functional-locations"></a>Oprette arbejdssteder
 
@@ -131,3 +129,6 @@ Et arbejdssted med relaterede underlokationer kan slettes, hvis der ikke er inst
 
 >[!NOTE]
 >Hvis du ikke kan slette et arbejdssted, kan du i stedet håndtere sletningen ved at konfigurere en livscyklustilstand for arbejdssted til dette formål. Du kan for eksempel oprette et "skrottet" eller "slettet" stadie, som ikke bør være et aktivt stadie, i formen **Livscyklustilstande for arbejdssted**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

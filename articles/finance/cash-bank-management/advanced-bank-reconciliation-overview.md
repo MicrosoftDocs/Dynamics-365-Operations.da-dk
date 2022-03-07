@@ -2,28 +2,27 @@
 title: Oversigt over avanceret bankafstemning
 description: I denne artikel beskrives forløbet for den avancerede bankafstemningsproces. Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 22104
+ms.custom:
+- "22104"
+- intro-internal
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b26b6e1e50e5a9b53ca6b5315de760f5bcec4769
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93ba7c8dc29a50de4b4cec342a5a83efe03e6419
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441655"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336135"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>Oversigt over avanceret bankafstemning
 
@@ -51,3 +50,6 @@ Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De impo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

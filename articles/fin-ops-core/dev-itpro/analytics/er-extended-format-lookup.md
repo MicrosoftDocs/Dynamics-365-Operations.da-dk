@@ -15,46 +15,46 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2b69ba1b3b27f447b58cf98b1140a481b01b735a
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324132"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753330"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillad brugere at konfigurerer en ER-formatreference, der forespørger om et format fra den globale lagermappe
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere formater til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din Dynamics 365 Finance-forekomst til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces.
+Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere [formater](general-electronic-reporting.md#FormatComponentOutbound) for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere [formater](general-electronic-reporting.md#FormatComponentInbound) til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din Dynamics 365 Finance-forekomst til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces.
 
 Normalt skal du angive, hvilket ER-format der skal bruges i en bestemt forretningsproces. Hvis du vil gøre det, skal du vælge ER-formatet i et opslagsfelt, der er konfigureret som en del af forretningsprocesspecifikke parametre. Disse opslagsfelter implementeres normalt ved hjælp af den relevante API i ER-strukturen. Du kan finde flere oplysninger i [API til ER-struktur – kode til visning af et formattilknytningopslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Når du f.eks. konfigurerer [udenrigshandelsparametre](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), skal du konfigurere referencerne til de enkelte ER-formater, der bruges til at generere Intrastat-opgørelsen og kontrolrapporten til Intrastat-opgørelsen. Skærmbillederne nedenfor viser, hvordan opslagsfeltet til ER-formater ser ud på siden **Udenrigshandelsparametre**.
+Når du f.eks. konfigurerer [udenrigshandelsparametre](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), skal du konfigurere referencerne til de enkelte ER-formater, der bruges til at generere Intrastat-opgørelsen og kontrolrapporten til Intrastat-opgørelsen. Skærmbillederne nedenfor viser, hvordan opslagsfeltet til ER-formater ser ud på siden **Udenrigshandelsparametre**.
 
 Hvis den aktuelle Finance-forekomst ikke indeholder nogen Intrastat-forretningsprocesrelaterede ER-formater, er dette opslagsfelt tomt.
 
-[![Siden Udenrigshandelsparametre, det tomme felt til tilknytning af rapportformat.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Hvis den aktuelle Finance-forekomst indeholder Intrastat-forretningsprocesrelaterede ER-formater, tilbydes ER-formater i dette opslagsfelt.
 
-[![Siden Udenrigshandelsparametre, det tomme felt til tilknytning af rapportformat.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Dette opslag indeholder kun de ER-formater, der allerede er importeret til den aktuelle Finance-forekomst. Hvis du vil [importere](./tasks/er-import-configuration-lifecycle-services.md) ER-løsninger til den aktuelle Finance-forekomst, skal du have rettigheder til at køre den relevante funktion i den ER-struktur, der understøtter [livscyklussen](general-electronic-reporting-manage-configuration-lifecycle.md) for ER-løsninger, der indeholder ER-formater.
 
 Fra og med Finance version 10.0.9 (april 2020 release) er brugergrænsefladen i det ER-formatopslag, der implementeres ved hjælp af API til ER-struktur, udvidet. Du kan stadig vælge de eksisterende ER-formater, som findes i oversigtspanelet **Vælg formatkonfiguration**. Derudover tilbyder det udvidede opslag den nye indstilling til søgning i den globale lagermappe (GR) for at finde bestemte ER-formater. Alle ER-formaterne for GR vises i oversigtspanelet **Indlæs fra den globale lagermappe**.
 
-[![Siden Udenrigshandelsparametre, Oversigtspanelet Import fra det globale lager.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Med sin lighed med oversigtspanelet **Vælg formatkonfiguration** viser oversigtspanelet **Indlæs fra den globale lagermappe** kun de ER-formater, der gælder for den forretningsproces, som et ER-format er valgt for i dette opslagsfelt. I dette eksempel er det genereringen af Intrastat-opgørelsen. Er-formatet gælder for det firma, som brugeren aktuelt er logget på, afhængigt af firmaets landekontekst.
 
 Når du vælger et ER-format i oversigtspanelet **Indlæs fra den globale lagermappe**, importeres det valgte ER-format [konfiguration](general-electronic-reporting.md#Configuration) fra GR til den aktuelle forekomst af Finance.
 
-[![Siden Udenrigshandelsparametre, Behandling af operationsnote.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Hvis importen fuldføres korrekt, gemmes referencen til det importerede ER-format i dette opslagsfelt. Når du åbner GR første gang, skal du følge linket for at tilmelde dig den [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), der bruges til at administrere adgangen til GR-lageret.
 
-[![Siden Udenrigshandelsparametre, Link til tilmelding til RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Siden Udenrigshandelsparametre](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard viser oversigtspanelet **Indlæs fra den globale lagermappe** listen over ER-formater fra det midlertidige lager, der automatisk oprettes ud fra GR-indholdet for at forbedre ydeevnen. Dette sker, når oversigtspanelet **Indlæs fra den globale lagermappe** åbnes for første gang, hvilket kan tage et par sekunder.
 
@@ -64,7 +64,7 @@ Hvis du ikke kan se det krævede ER-format i oversigtspanelet **Indlæs fra den 
 
 Tilgængeligheden af denne funktionalitet styres af funktionen **Udvidet opslag for ER-formatkonfigurationer med mulighed for at forespørge på den globale lagermappe** i **Funktionsstyring**. Denne funktion er som standard aktiveret.
 
-[![Siden Funktionsstyring.](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
+[![Siden Funktionsstyring](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 
@@ -72,7 +72,7 @@ Rettigheden **Vedligehold konfigurationslagre** (**ERMaintainSolutionRepositorie
 
 Følgende skærmbillede viser, hvordan denne rettighed kan tildeles til brugere, der er tildelt rollen **Bogholder**. Denne rolle gør det muligt for brugere at konfigurere udenrigshandelsparametre og oprette referencer til ER-formaterne i felterne **Filformattilknytning** og **Rapportformattilknytning** på siden **Udenrigshandelsparametre**.
 
-[![Siden Sikkerhedskonfiguration.](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
+[![Siden Sikkerhedskonfiguration](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 
 ## <a name="limitations"></a>Begrænsninger
 

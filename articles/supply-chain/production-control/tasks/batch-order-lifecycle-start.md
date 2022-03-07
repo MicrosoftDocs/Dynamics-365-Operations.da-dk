@@ -1,28 +1,25 @@
 ---
 title: Livscyklus for batchordre fra oprettelse til start
 description: Denne procedure fører dig gennem den første del af livscyklussen for en batchordre.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdBOM, PmfProdCoBy, ProdParmCostEstimation, ProdCalcTrans, ProdParmRelease, ProdSchedule, ProdRouteJob, ProdParmStartUp, ProdJournalTransBOM, ProdJournalTransRoute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e57cd9254185b73f544e8ff4f7658cf743b672f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7ca259ca8f176cd5bc76081836adcb7d272972b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424359"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579250"
 ---
 # <a name="batch-order-lifecycle-from-create-to-start"></a>Livscyklus for batchordre fra oprettelse til start
 
@@ -92,3 +89,6 @@ Forudsætningerne for at køre proceduren med et andet datasæt er et frigivet p
 12. Luk siden.
 13. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

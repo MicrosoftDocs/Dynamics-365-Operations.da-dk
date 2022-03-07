@@ -2,35 +2,30 @@
 title: Mediegallerimodul
 description: Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733191"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler mediegallerimoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Mediegallerimoduler vises et eller flere billeder i en gallerivisning. Mediegallerimoduler understøtter miniaturebilleder, som kan arrangeres enten vandret (som en række under billedet) eller lodret (som en kolonne ved siden af billedet). Mediegallerimoduler indeholder også egenskaber, der gør det muligt at zoome billeder (forstørrer) eller få dem vist i fuld skærmtilstand. Hvis det skal gengives i et mediegallerimodul, skal der være et billede i mediebiblioteket til Commerce-webstedsgeneratoren. I øjeblikket understøtter mediegallerimoduler kun billeder.
 
@@ -46,27 +41,33 @@ Her er nogle eksempel eksempler til mediegallerimoduler:
 
 I eksemplet i følgende illustration er der et købsfelt på en PDP-vært for produktbilleder ved hjælp af et mediegallerimodul.
 
-![Eksempel på en købsfelt på en side med produktdetaljer, der er vært for produktbilleder ved hjælp af et mediegallerimodul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på en købsfelt på en side med produktdetaljer, der er vært for produktbilleder ved hjælp af et mediegallerimodul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Egenskaber for mediegalleri
 
-| Egenskabsbetegnelse | Værdier | Beskrivende tekst |
+| Egenskabsbetegnelse | Værdier | Betegnelse |
 |---------------|--------|-------------|
 | Billedkilde | **Sidekontekst** eller **Produkt-id** | Standardværdien er **Sidekontekst**. Hvis der er valgt **Sidekontekst**, forventer modulet, at siden indeholder oplysninger om produkt-id. Hvis **Produkt-id** er valgt, skal produkt-id'et for et billede angives som værdien af egenskaben **Produkt-id**. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Produkt-id | Et produkt-id | Denne egenskab kan kun anvendes, hvis værdien af egenskaben **Billedkilde** er **Produkt-id**. |
-| Billedzoom | **Indbygget** eller **Container** | Denne egenskab giver brugeren mulighed for at zoome billeder i mediegallerimodulet. Et billede kan zoomes enten indbygget eller i en separat container ved siden af billedet. Denne funktion er tilgængelig i 10.0.12 |
-| Zoomskala | Et decimaltal | Denne egenskab specificerer den skaleringsfaktor, der skal anvendes til zoom af billeder. Hvis f.eks. værdien er indstillet til **2,5**, forstørres billederne 2,5 gange.|
-| Fuld skærm | **Sand** eller **Falsk** | Denne egenskab specificerer, om billeder kan vises i fuld skærmtilstand. I fuld skærmtilstand kan billeder også forstørres, hvis zoomfunktionen er slået til. Denne funktion er tilgængelig i Commerce version 10.0.13. |
+| Billedzoom | **Indbygget** eller **Container** | Denne egenskab giver brugeren mulighed for at zoome billeder i mediegallerimodulet. Et billede kan zoomes enten indbygget eller i en separat container ved siden af billedet. Denne funktion er tilgængelig i 10.0.12. |
+| Zoomfaktor | Et decimaltal | Denne egenskab specificerer den skaleringsfaktor, der skal anvendes til zoom af billeder. Hvis f.eks. værdien er indstillet til **2,5**, forstørres billederne 2,5 gange. |
+| Fuld skærm | **Sand** eller **Falsk** | Denne egenskab specificerer, om billeder kan vises i fuld skærmtilstand. I fuld skærmtilstand kan billeder også forstørres, hvis zoomfunktionen er slået til. Denne funktion er tilgængelig fra frigivelsen af Commerce version 10.0.13. |
+| Kvalitet af zoomet billede | Et tal fra 1 til og med 100, der repræsenterer en procentdel og vælges ved hjælp af en skyder | Denne egenskab definerer billedkvaliteten for zoomede billeder. Den kan angives til 100 procent for at sikre, at et billede altid bruger den højest mulige opløsning. Denne egenskab kan ikke anvendes til PNG-filer, da de bruger et format uden tab. Denne funktion er tilgængelig fra frigivelsen af Commerce version 10.0.19. |
 | Billeder | Billeder, der er valgt fra mediebiblioteket til webstedsgenerator | Ud over at blive gengivet fra et produkt kan billeder organiseres for et mediegallerimodul. Disse billeder vil blive føjet til alle de produktbilleder, der er tilgængelige. Denne funktion er tilgængelig i Commerce version 10.0.12. |
 | Miniatureretning | **Lodret** eller **Vandret** | Denne egenskab specificerer, om miniaturebilleder skal vises i en lodret stribe eller i en vandret stribe. |
+| Skjule masterproduktbilleder for variant | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, når der vælges en variant, skjules billeder af masterproduktet, medmindre varianten ikke har nogen billeder. Denne egenskab påvirker ikke produkter, der ikke har varianter. |
+| Opdatere medier ved valg af dimension | **Sand** eller **Falsk** | Hvis denne egenskab er angivet til **Sand**, opdateres billeder i mediebiblioteket, når der vælges en dimension (f.eks. farve, typografi eller størrelse), og hvis et billede er tilgængeligt. Denne egenskab hjælper med at forenkle gennemsøgningsoplevelsen, da ikke alle produktvariantdimensioner skal vælges, for at det tilsvarende billede kan opdateres. Denne egenskab er tilgængelig under fanen **Avanceret**. |
+
+> [!IMPORTANT]
+> Egenskaben **Opdater medier ved dimensionsvalg** er tilgængelig fra og med version 10.0.21. Det kræver, at Commerce-modulets bibliotekspakkeversion 9.31 er installeret.
 
 I følgende illustration vises et eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.
 
-![Eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige](./media/ecommerce-media-zoom.png)
+![Eksempel på et mediegallerimodul, hvor indstillingerne af fuld skærm og zoom er tilgængelige.](./media/ecommerce-media-zoom.png)
 
 Følgende illustration viser et eksempel på et mediegallerimodul, der indeholder organiserede billeder (dvs. de angivne billeder ikke er afhængige af produkt-id'et eller sidekonteksten).
 
-![Eksempel på et mediegallerimodul med organiserede billeder](./media/ecommerce-media-curated.PNG)
+![Eksempel på et mediegallerimodul med organiserede billeder.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
@@ -104,3 +105,6 @@ Hvis du vil tilføje et mediegallerimodul på en marketingside, skal du følge d
 [Container-modul](add-container-module.md)
 
 [Overføre billeder](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eb38483d3ac61acb4513e87d8c36ddd0f8863a10
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 365fa7a54dcf6817f933c0d305561c5fd0f8ba27
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441572"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213478"
 ---
 # <a name="transfer-a-fixed-asset"></a>Overføre et anlægsaktiv
 
@@ -48,3 +47,6 @@ Denne opgaveguide overfører de økonomiske oplysninger for en anlægsaktivbog f
     * Gennemgå resultaterne, før du overfører anlægsaktivbøgerne.  
 10. Klik på **Overfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

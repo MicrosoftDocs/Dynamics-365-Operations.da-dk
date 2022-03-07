@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798543"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694130"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -30,7 +30,7 @@ Kender du ikke Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller 
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Prøv Finance and Operations helt gratis i 30 dage
 
-Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af Finance and Operations-programmerne indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Se detaljer under [Tilmelde dig prøveabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af Finance and Operations-programmerne indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Du kan få flere oplysninger på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 

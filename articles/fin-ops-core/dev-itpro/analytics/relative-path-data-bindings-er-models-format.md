@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313561"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749980"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Brug en relativ sti i databindinger for ER-modeller og -formater
 
@@ -26,25 +26,25 @@ ms.locfileid: "8313561"
 
 ER-værktøjet (Electronic Reporting) giver brugerne mulighed for at definere elektroniske formatstrukturer og derefter beskrive, hvordan disse strukturer skal udfyldes ved hjælp af de data og algoritmer, der findes i programmet. Du kan finde flere oplysninger under [Oprette ER-konfigurationer (Electronic reporting)](electronic-reporting-configuration.md). Hvis du vil angive dataflowet til hentning af Finance and Operations-data og bruge dem til at generere et elektronisk dokument, skal du gøre følgende:
 
-- Bind konfigurerede datakilder til elementer i den domænespecifikke datamodel, der er designet. Modelstrukturen og de valgte datakilder kan være en del af en kompleks hierarkisk struktur. Derfor kan endelige bindinger være temmelig store og indeholde mange elementer af forskellige typer (f.eks. relationer, tabeller og metoder). Bindingerne kan blive mindre læselige og ret komplekse at gennemgå og forstå, især for ikke-ejere. 
-- Bind datamodelelementer med formateringskomponenter for at definere, hvilke data der udfyldes fra datamodellen til det genererede output.
+- Bind konfigurerede datakilder til elementer i den domænespecifikke datamodel, der er designet [datamodel](general-electronic-reporting.md#data-model-and-model-mapping-components). Modelstrukturen og de valgte datakilder kan være en del af en kompleks hierarkisk struktur. Derfor kan endelige bindinger være temmelig store og indeholde mange elementer af forskellige typer (f.eks. relationer, tabeller og metoder). Bindingerne kan blive mindre læselige og ret komplekse at gennemgå og forstå, især for ikke-ejere. 
+- Bind datamodelelementer med [formateringskomponenter](general-electronic-reporting.md#FormatComponentOutbound) for at definere, hvilke data der udfyldes fra datamodellen til det genererede output.
 
 Hvis du vil forbedre anvendeligheden af ER-tilknytningsdesignere, er funktionen [relativ sti](er-formula-language.md#relative-path) blevet udgivet. Indstillingen for gengivelsen af den relative sti er som standard slået til for alle nye forekomster af programmet, hvor ER-designoplevelsen er aktiveret (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Vi har implementeret den relative sti, så brugerne kan fortsætte med at bruge den fulde sti, når arbejdet med denne præsentation med ER-bindinger.
 
-[![Brugerparametre.](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Brugerparametre](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 Når parameteren for brug af den relative sti er slået til, erstatter et enkelt @-tegn stien til det overordnede element i bindingen for det aktuelle modelelement. Hele bindingsstien bliver kortere, hvilket gør hele tilknytningen mere tydelig og nemmere at forstå. I de fleste tilfælde er det ikke nødvendigt at rulle yderligere i ER-designeren for at få vist alle bindingerne i datamodellen.
 
-[![Modeltilknytningsdesigner.](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Modeltilknytningsdesigner](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 Når du går i gang med at designe et nyt ER-udtryk, skal du kun angive ét tegn for at definere en binding til et felt af i overordnede element.
 
-[![Formeldesigner.](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Formeldesigner](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 Når du vælger at ændre datakilden for det overordnede modelelement med den absolutte sti, skal du manuelt binde dette modelelement samt alle indlejrede elementer til en ny datakilde. Når en relativ sti er aktiveret, og du vælger en ny datakilde, der skal bindes til et overordnet element, får du mulighed for automatisk at binde alle indlejrede elementer i dette overordnede element sammen med et enkelt klik.
 
-[![Meddelelsen Erstat eksisterende sti.](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Erstat eksisterende stimeddelelse](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Hvis du bekræfter genbinding af af indlejrede elementer, placeres det nye overordnede element på stien for alle de indlejrede elementer, der indeholder det eksisterende overordnede element.
 Denne funktion bryder ikke bagud-kompatibiliteten for ER-strukturen. Alle tidligere designede ER-konfigurationer vil fungere med denne nye funktion, og der kræves ingen opgraderinger eller konverteringer.

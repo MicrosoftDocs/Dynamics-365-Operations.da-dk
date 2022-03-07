@@ -1,27 +1,25 @@
 ---
 title: Planlægge arbejdsbyrdekapacitet
 description: I dette emne beskrives, hvordan du opretter og planlægger arbejdsbyrdekapaciteten for arbejdere på et lagersted eller for hele lagerstedet.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f66eb1b2f35d19aba0f4f8f2804577a62ac14e79
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965571"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901940"
 ---
 # <a name="schedule-workload-capacity"></a>Planlægge arbejdsbyrdekapacitet
 
@@ -79,3 +77,6 @@ Hvis disse oplysninger ikke angives korrekt, du får vist en meddelelse, når du
 3. I feltet **Ordretype** skal du vælge **Planlagt og bekræftet**, **Planlagt** eller **Bekræftet** for at angive den type ordrer, der skal anslås i rapporten.
 4. I feltet **Lastningstype** skal du vælge en belastningstype for at angive, om arbejdsbyrdekapaciteten skal planlægges for paller, volumen eller vægt.
 5. I feltet **Arbejdsbyrdekapacitet** skal du vælge en arbejdsbyrdekapacitetsopsætning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

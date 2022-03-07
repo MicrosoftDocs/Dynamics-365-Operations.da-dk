@@ -2,7 +2,7 @@
 title: Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 description: Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises.
 author: twheeloc
-ms.date: 02/14/2022
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e27f05f1a4c50f32bc5997fdc7cc845e5d8f8a3
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 47905398d1b9e2fba6048ee18044382b92420e58
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119454"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813401"
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a>Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 
@@ -27,15 +27,15 @@ ms.locfileid: "8119454"
 
 Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises. Dette omfatter eksempelvis navne og titler på de personer, der skal godkende de foreslåede betalinger. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 
-1. Gå til **Kreditor > Opsætning af betaling > Forside til betalingsrapport**.
-2. Klik på **Rediger**.
-3. Vælg en indstilling i feltet **Antal signaturlinjer**.
-4. Skriv en værdi i feltet **Navn**.
-5. Skriv en værdi i feltet **Titel**.
-6. Valgfrit: Markér afkrydsningsfeltet **Udskriv navn** for at udskrive underskriverens navn i rapporten.
-7. Valgfrit: Markér afkrydsningsfeltet **Udskriv titel** for at udskrive titlen på rapporten.
+1. Gå til Kreditor > Opsætning af betaling > Forside til betalingsrapport.
+2. Klik på Rediger.
+3. Vælg en indstilling i feltet Antal signaturlinjer.
+4. Skriv en værdi i feltet Navn.
+5. Skriv en værdi i feltet Titel.
+6. Valgfrit: Markér afkrydsningsfeltet Udskriv navn for at udskrive underskriverens navn i rapporten.
+7. Valgfrit: Markér afkrydsningsfeltet Udskriv titel for at udskrive titlen på rapporten.
     * Tilføj eventuelt flere navne, og vælg de ønskede indstillinger.  
-8. Klik på **Gem**.
+8. Klik på Gem.
 
 
 

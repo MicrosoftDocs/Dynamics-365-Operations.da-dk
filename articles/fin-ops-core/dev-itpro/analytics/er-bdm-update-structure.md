@@ -2,11 +2,9 @@
 title: Opdatere strukturen for en forretningsdokumentskabelon
 description: Dette emne forklarer, hvordan du opdaterer strukturen i en skabelon til et forretningsdokument ved hjælp af funktionen til administration af forretningsdokumenter.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
-ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
+ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "4728083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775280"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Opdatere strukturen for en forretningsdokumentskabelon 
 
@@ -60,7 +58,7 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 
     Den nye skabelon åbnes til redigering i det integrerede Excel Online-kontrolelement på editorsiden for skabelonen.
 
-[![Bruge arbejdsområdet Styring af forretningsdokumenter til at starte redigering af en skabelon til forretningsdokumenter](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Bruge arbejdsområdet Styring af forretningsdokumenter til at starte redigering af en skabelon til forretningsdokumenter.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Gennemse den aktuelle struktur i den redigerbare skabelon
 
@@ -70,7 +68,7 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 4. I ruden **Skabelonstruktur** skal du udvide **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Bemærk, at elementet **rptHeaderCompLogo** i skabelonstrukturen i Finans vises som underordnet element til **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 
-[![Bruge arbejdsområdet Styring af forretningsdokumenter til at gennemse den aktuelle struktur i en redigerbar skabelon](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Bruge arbejdsområdet Styring af forretningsdokumenter til at gennemse den aktuelle struktur i en redigerbar skabelon.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Opdatere strukturen for en forretningsdokumentskabelon ved at slette et billede
 
@@ -87,7 +85,7 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 4. I ruden **Skabelonstruktur** skal du udvide **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Bemærk, at elementet **rptHeaderCompLogo** ikke længere er medtaget i skabelonstrukturen i Finans.
 
-[![Bruge arbejdsområdet Styring af forretningsdokumenter til at slette et billede fra en skabelon til forretningsdokumenter](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Bruge arbejdsområdet Styring af forretningsdokumenter til at slette et billede fra en skabelon til forretningsdokumenter.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Opdatere strukturen for en forretningsdokumentskabelon ved at tilføje et billede
 
@@ -99,10 +97,13 @@ Gennemfør følgende procedurer i [Oversigt over styring af forretningsdokumente
 6. I ruden **Skabelonstruktur** skal du udvide **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 7. Bemærk, at det nye billede nu er medtaget som et element i skabelonstrukturen i Finans.
 
-[![Bruge arbejdsområdet Styring af forretningsdokumenter til at føje et billede til en skabelon til forretningsdokumenter](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Bruge arbejdsområdet Styring af forretningsdokumenter til at føje et billede til en skabelon til forretningsdokumenter.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Relaterede links
 
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversigt over styring af forretningsdokumenter](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

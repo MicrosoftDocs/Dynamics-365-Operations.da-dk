@@ -1,10 +1,12 @@
 ---
-title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
+title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.17.
 author: kamaybac
-ms.date: 02/01/2021
+manager: annbe
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -12,20 +14,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2021-02-01
+ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: bfa6e04f8d7ae192d0acd88fb3f1d7e2ce6cc576
+ms.sourcegitcommit: b9c6ad79d05feb858f818b37ce5c344f90cc6eb7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "5137922"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.17 (april 2021)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.17. Denne version har et build-nummer på 10.0.761 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.17. Denne version har et build-nummer på 10.0.761 og er tilgængelig som følger:
 
 - **Forhåndsversion:** Februar 2021
 - **Generel tilgængelighed af version (selvopdatering):** Marts 2021
@@ -33,99 +36,86 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version.  Følg linkene til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
+Følgende funktioner er inkluderet i denne version. Nogle af de viste funktioner findes stadig i prøveversionen, mens andre muligvis allerede er generelt tilgængelige. Følg linkene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for at få vist de officielle frigivelsesdatoer for hver funktion.
+
+- [Anvende regler for gruppering af arbejdsordrer, mens en vedligeholdelsesplan køres](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Du kan finde flere oplysninger i [Oprette arbejdsordrer](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
+
+<!-- KFM: Blocked for now. Dana will followup.
+- [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) 
+-->
+
+- Aktivstyringsfunktioner i grænsefladen til produktionsudførelse<br> - Der er flere oplysninger under [Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere](../production-control/production-floor-execution-use.md).  <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
+
+- [Fakturere kunder for vedligeholdelsesarbejde](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Du kan finde flere oplysninger i [Fakturere for vedligeholdelse af aktiver, der ejes af kunder](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+
+- [Understøttelse af disponeringstidshorisont for Planlægningsoptimering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Du kan finde flere oplysninger i [Disponeringstidshorisonter](../master-planning/planning-optimization/coverage-time-fence.md).
+
+- [Aktivér administration af ændringer på eksisterende produkter](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)
+
+<!-- KFM: Add this when the feature appears in release plan at next update:
+- Enterprise-scale inventory performance improvements and archiving  -->
+
+- [Landingsomkostninger](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)
+
+- [Produktionsudførelse med skaleringsenheder i skyen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-manufacturing.md).
+
+- [Materialehåndtering/automatisk lagersted](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/material-handlingwarehouse-automation) <!-- KFM: Update RP link when the new one goes live -->
+
+- [Emballage vs. lagringsdimensioner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Du kan finde flere oplysninger under [Angive forskellige dimensioner for pakning og lagring](../warehousing/packing-vs-storage-dimensions.md)
+
+- Tilsidesætte standardreservationsprincippet for materialer i produktion<br> - Du kan finde flere oplysninger under [Tilsidesætte standardreservationsprincippet for materialer i produktion](../production-control/override-default-reservation-principle.md). <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
+
+- [Planlægge vedligeholdelse baseret på akkumulerede værdier for en aktivtæller](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Du kan finde flere oplysninger i [Vedligeholdelsesplaner](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+
+- [Understøttelse af indkøbsrekvisition for Planlægningsoptimering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Du kan finde flere oplysninger under [Indkøbsrekvisitioner](../master-planning/planning-optimization/purchase-requisitions.md).
+
+- [Gemte visninger af lager og logistik](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
+
+- [Gemte visninger af ordreforslag](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
+
+- [Gemte visninger for produktionsstyring](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
+
+- [Planlægge oprettelse af lagerstedsarbejde](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Du kan finde flere oplysninger i [Planlægge oprettelse af arbejde under bølge](../warehousing/configure-wave-schedule-work-creation.md).
+
+- [Angive økonomiske standarddimensioner for værdireguleringsbilag for lagerstandardomkostninger](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Du kan finde flere oplysninger i [Administrere opdateringer af standardomkostninger](../cost-management/manage-standard-cost-updates.md).
+
+- [Forsendelse af småpakker (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)<br> - Du kan finde flere oplysninger i [Forsendelse af småpakker](../warehousing/small-parcel-shipping.md). <!-- KFM: Update RP link when the new one goes live -->
+
+- [Lagerudførelse med skaleringsenheder i skyen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger i [Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-warehousing.md) og [Lagerstedsordrer til sky- og kantskalaenheder](../cloud-edge/cloud-edge-warehouse-order.md).
+
+- [Mobilappen Lokationsstyring](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Du kan finde flere oplysninger i [Installere og tilslutte appen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
 
 De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
-
-### <a name="asset-management"></a>Aktivstyring
-
-- [Anvende regler for gruppering af arbejdsordrer, mens en vedligeholdelsesplan køres](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Du kan finde flere oplysninger i [Oprette arbejdsordrer](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
-
-- [Fakturere kunder for vedligeholdelsesarbejde](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Du kan finde flere oplysninger i [Fakturere for vedligeholdelse af aktiver, der ejes af kunder](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
-
-- [Planlægge vedligeholdelse baseret på akkumulerede værdier for en aktivtæller](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Du kan finde flere oplysninger i [Vedligeholdelsesplaner](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
-
-### <a name="inventory-and-logistics"></a>Lager og logistik
-
-- [Integrationsstruktur for materialehåndteringsudstyr til automatiserede lagerprocesser (tidligere MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Du kan finde flere oplysninger i [Grænseflade for materialehåndteringsudstyr (MHAX)](../warehousing/mhax.md).
-
-- [Landingsomkostninger](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Yderligere oplysninger finder du i [modulet Landingsomkostninger](../landed-cost/landed-cost-overview.md).
-
-- [Emballage vs. lagringsdimensioner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Du kan finde flere oplysninger under [Angive forskellige dimensioner for pakning og lagring](../warehousing/packing-vs-storage-dimensions.md).
-
-- [Parallel bølgefordeling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - Du finder flere oplysninger under [Bølgefordeling](../warehousing/wave-allocation-method.md).
-
-- [Gemte visninger af lager og logistik](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
-
-- [Planlægge oprettelse af lagerstedsarbejde](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Du kan finde flere oplysninger i [Planlægge oprettelse af arbejde under bølge](../warehousing/configure-wave-schedule-work-creation.md).
-
-- [Angive økonomiske standarddimensioner for værdireguleringsbilag for lagerstandardomkostninger](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Du kan finde flere oplysninger i [Administrere opdateringer af standardomkostninger](../cost-management/manage-standard-cost-updates.md).
-
-- [Forsendelse af småpakker (SPS)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Du kan finde flere oplysninger i [Forsendelse af småpakker](../warehousing/small-parcel-shipping.md).
-
-- [Lagerudførelse med skaleringsenheder i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger i [Arbejdsbelastninger i forbindelse med lokationsstyring for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-warehousing.md) og [Lagerstedsordrer til sky- og kantskalaenheder](../cloud-edge/cloud-edge-warehouse-order.md).
-
-- [Mobilappen Lokationsstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Du kan finde flere oplysninger under [Installere og forbinde appen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md) og [Brugerindstillinger for mobilenhed](../warehousing/mobile-device-user-settings.md).
-
-- Beskeder om udførelse af bølge<br> - Du kan finde flere oplysninger under [Beskeder om bølgeudførelse](../warehousing/wave-execution-notifications.md)
-
-### <a name="manufacturing"></a>Produktion
-
-- [Aktivstyringsfunktioner i grænsefladen til produktionsudførelse](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](../production-control/production-floor-execution-configure.md).
-
-- [Produktionsudførelse med skaleringsenheder i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Du kan finde flere oplysninger under [Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder](../cloud-edge/cloud-edge-workload-manufacturing.md).
-
-- [Tilsidesætte standardreservationsprincippet for materialer i produktion](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Du kan finde flere oplysninger under [Tilsidesætte standardreservationsprincippet for materialer i produktion](../production-control/override-default-reservation-principle.md).
-
-- [Gemte visninger for produktionsstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
-
-- Samlet nummerserie for job-id'er<br> - Du kan finde flere oplysninger under [Samlet nummerserie for job-id'er](../production-control/unified-job-ids.md).
-
-### <a name="planning"></a>Planlægning
-
-- [Understøttelse af disponeringstidshorisont for Planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Du kan finde flere oplysninger i [Disponeringstidshorisonter](../master-planning/planning-optimization/coverage-time-fence.md).
-
-- [Understøttelse af prognoseundermodel til planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Du kan finde flere oplysninger under [Varedisponering med behovsprognoser](../master-planning/planning-optimization/demand-forecast.md).
-
-- [Understøttelse af indkøbsrekvisition for Planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Du kan finde flere oplysninger under [Indkøbsrekvisitioner](../master-planning/planning-optimization/purchase-requisitions.md).
-
-- [Gemte visninger af ordreforslag](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Du kan finde flere oplysninger i [Gemte standardvisninger for Supply Chain Management](saved-views-scm.md).
-
-### <a name="product-information-management"></a>Administration af produktoplysninger
-
-- [Aktivér administration af ændringer på eksisterende produkter](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Yderligere oplysninger finder du i [Aktivere administration af ændringer på eksisterende produkter](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 
 Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. De er ikke nødvendigvis relateret til de nye funktioner, der er tilføjet i denne version, som vist i forrige afsnit, men de kan måske hjælpe dig med at få mere ud af eksisterende funktioner.
 
-### <a name="asset-management"></a>Aktivstyring
-
-- [Konfiguration af arbejdsområde til aktivstyring på mobilenhed](../asset-management/set-up-asset-management-mobile.md)
-
-### <a name="inventory-and-logistics"></a>Lager og logistik
-
-- [Konfigurere produktfiltre for lagerstedsposteringer](../warehousing/filters-and-filter-codes.md)
-
-- [Delvis cyklusoptælling for lokation](../warehousing/partial-location-cycle-counting.md)
-
-- [Pluklinjegruppering](../warehousing/pick-line-grouping.md)
-
-- [Lagerstedsallokering](../warehousing/warehouse-slotting.md)
-
-### <a name="manufacturing"></a>Produktion
+- [Konfigurere produktfiltre til lagerstedstransaktioner](../warehousing/filters-and-filter-codes.md)
 
 - [Designe grænsefladen til produktionsudførelse](../production-control/production-floor-execution-tabs.md)
-
-### <a name="planning"></a>Planlægning
 
 - [Intern planlægning](../master-planning/planning-optimization/Intercompany-planning.md)
 
 - [Lagermarkering med planlægningsoptimering](../master-planning/planning-optimization/marking.md)
 
-- [Produktionsplanlægning](../master-planning/planning-optimization/production-planning.md)
+- [Varedisponering med behovsprognoser](../master-planning/planning-optimization/demand-forecast.md)
+
+- [Delvis cyklusoptælling for lokation](../warehousing/partial-location-cycle-counting.md)
+
+- [Pluklinjegruppering](../warehousing/pick-line-grouping.md)
+
+- [Produktionsplanlægning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
 
 - [Indkøbsrekvisitioner i varedisponering](../master-planning/planning-optimization/purchase-requisitions.md)
+
+- [Konfigurere arbejdsområdet til aktivstyring på mobilenhed](../asset-management/set-up-asset-management-mobile.md)
+
+- [Fejlfinde i omkostningsstyring](../cost-management/troubleshoot-costmanagement.md)
+
+- [Fejlfinde lagerhandlinger](../inventory/troubleshoot-inventory-operations.md)
+
+- [Lagerstedsallokering](../warehousing/warehouse-slotting.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -141,7 +131,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2021-frigivelsesplan bølge 1](/dynamics365-release-plan/2021wave1/). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2021-frigivelsesplan bølge 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
@@ -153,6 +143,3 @@ Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](
 Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

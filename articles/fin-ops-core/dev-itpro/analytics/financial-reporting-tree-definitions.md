@@ -1,28 +1,26 @@
 ---
 title: Rapportering af trædefinitioner i økonomiske rapporter
-description: Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+description: I denne artikel beskrives definitioner af rapporteringstræer. En definition af et rapporteringstræ er en rapportkomponent, der definerer strukturen i en organisation.
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92da476f64b937d339b5f0c6088b8ce722a0584938ccf2a6c6cbd39fdc15544d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714629"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
@@ -54,9 +52,7 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen. |
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret. |
 | Rækkedefinitioner       | Navnet på rækkedefinitionen for rapporteringsenheden. Den samme rækkedefinition bruges til hver enkelt enhed i trædiagrammet. Når du opretter en rapport, bruges denne rækkedefinition til hver enhed i trædiagrammet. Rækkedefinitionen kan indeholde flere sammenkædninger af økonomiske dimensioner. Hvis der er angivet en rækkedefinition i rapporteringstræet, skal du markere afkrydsningsfeltet **Brug rækkedefinition fra rapporteringstræ** under fanen **Rapport** i rapportdefinitionen. |
-| Rækkelink              | Det rækkelink, der skal bruges til enheden i trædiagrammet. Rækkelinks defineres for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal linkes til. |
-| Eksternt link         | Det rækkelink, der skal bruges til enheden i trædiagrammet. Der er defineret link til rækker for rækkedefinitionen for at identificere den rapport, der skal være link til. |
-| Ekstern fil         | Filstien til økonomirapporteringsregnearket, der skal hentes data fra. |
+| Link til økonomiske dimensioner| Link til økonomiske dimensioner, der skal bruges til rapporteringsenheden. Link til økonomiske dimensioner defineres for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal linkes til. |
 | Sideindstillinger          | Denne kolonne angiver, om detaljerne for den rapporteringsenheden tilsidesættes, når rapporten vises eller udskrives. |
 | Opløsning %              | Procentdelen af rapporteringsenheden, der skal allokeres til den overordnede enhed. Den procentdel, du angiver i denne kolonne, gælder for hver række i rækkedefinitionen, før værdien i rækken føjes til den overordnede rapport. Hvis en underordnet enhed for eksempel skal være fordelt ligeligt mellem to afdelinger, skal beløbene i hver række ganges med 50 procent, før værdien føjes til afdelingsrapporten. En rapporteringsenhed kan ikke have to overordnede enheder. Hvis du vil tildele beløbene fra en rapporteringsenhed til to overordnede enheder, skal du oprette en anden rapporteringsenhed, der har samme dimension, for at få vist yderligere 50 procent. Angiv hele procentsatser uden et decimaltegn. For eksempel repræsenterer **25** 25 procent allokering til den overordnede enhed. Hvis du medtager et decimaltegn (**0,25**), fordeles 0,25 procent til den overordnede enhed. Hvis du vil bruge en procentdel, der er mindre end 1 procent, skal du anvende indstillingen **Tillad opløftning på &lt;1 %** i rapportdefinitionen. Denne indstilling er på fanen **Flere indstillinger** i dialogboksen **Rapportindstillinger**. Denne dialogboks er tilgængelig via knappen **Andre** under fanen **Indstillinger** i rapportdefinitionen. |
 | Sikkerhed for enhed         | Begrænsninger for de brugere og grupper, der har adgang til oplysninger for rapporteringsenheden. |
@@ -75,7 +71,7 @@ Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
     | Medtag/tegnposition       | I dette afsnit vises de dimensioner, der er defineret i de økonomiske data, og antallet af tegn i den længste værdi, der er defineret for hver dimension. Marker afkrydsningsfeltet for en dimension for at medtage den i rapporteringstræhierarkiet. |
     | Hierarki og intervaller for segmenter     | I dette afsnit vises dimensionshierarkiet. Du kan flytte dimensionerne på listen for at ændre deres rapporteringsrækkefølge. I felterne **Fra dimension** og **Til dimension** kan angive et interval af værdier inden for hver dimension. Hvis du ikke angiver et interval, indsættes alle dimensionsværdier i rapporteringstræet.<blockquote>[!NOTE] Hvis du bruger mere end én dimension, er det kun kombinationer af de dimensioner, der er bogført til, som returneres i resultaterne.</blockquote> |
 
-    Du kan finde et skærmbillede, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
+    Du kan finde en illustration, der viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, i afsnittet "Eksempel på dialogboksen Indsæt rapporteringsenheder fra dimensioner" senere i denne artikel.
 
 5. Hvis du vil oprette flere segmenter (f.eks ved at opdele ét segment i to kortere segmenter), skal du klikke på den korrekte placering i et felt af typen **Tegnposition** og derefter klikke på **Opdel segmenter**.
 6. Hvis du vil flette to segmenter i ét segment, skal du klikke i en af boksene for segmentet, der skal flettes, og derefter klikke på **Kombiner segmenter**.
@@ -115,10 +111,10 @@ Hver rapportingstrædefinition vises i entydige visninger. Der er en grafisk vis
 
 Der anvendes følgende typer rapporteringsenheder i økonomirapportering:
 
-- En detaljeenhed henter oplysninger direkte fra de økonomiske data, fra et Excel-regneark eller fra et andet regneark til økonomirapportering.
+- En detaljeenhed henter oplysninger direkte fra de økonomiske data.
 - En oversigtsenhed opsummerer data fra enheder på et lavere niveau.
 
-En overordnet rapporteringsenhed er en oversigtsenhed, der indsamler opsummerede oplysninger fra en detaljeenhed. En oversigtsenhed kan være både en detaljeenhed og en sammenfattende enhed. Derfor kan en oversigtsenhed hente oplysninger fra en enhed på et lavere niveau, de økonomiske data eller et Excel-regneark. En overordnet enhed kan være underordnet enhed for en overordnet enhed på et højere niveau. En underordnet rapporteringsenhed kan være en detaljeenhed, der henter oplysninger direkte fra de økonomiske data eller et Excel-regneark. En underordnet rapporteringsenhed kan også være en midlertidig oversigtsenhed. Med andre ord kan det være den overordnede enhed for en enhed på et lavere niveau og også den underordnede enhed i en oversigtsenhed på et højere niveau. I det mest almindelige scenario for rapporteringsenheder har overordnede enheder en tom celle i kolonnen **Dimensioner**, og underordnede enheder har links til kombinationer af specifikke dimensioner eller dimensioner med jokertegn.
+En overordnet rapporteringsenhed er en oversigtsenhed, der indsamler opsummerede oplysninger fra en detaljeenhed. En oversigtsenhed kan være både en detaljeenhed og en sammenfattende enhed. Derfor kan en oversigtsenhed hente oplysninger fra en enhed på et lavere niveau eller de økonomiske data. En overordnet enhed kan være underordnet enhed for en overordnet enhed på et højere niveau. En underordnet rapporteringsenhed kan være en detaljeenhed, der henter oplysninger direkte fra de økonomiske data. En underordnet rapporteringsenhed kan også være en midlertidig oversigtsenhed. Med andre ord kan det være den overordnede enhed for en enhed på et lavere niveau og også den underordnede enhed i en oversigtsenhed på et højere niveau. I det mest almindelige scenario for rapporteringsenheder har overordnede enheder en tom celle i kolonnen **Dimensioner**, og underordnede enheder har links til kombinationer af specifikke dimensioner eller dimensioner med jokertegn.
 
 ### <a name="organize-reporting-units"></a>Organisere rapporteringsenheder
 
@@ -164,19 +160,6 @@ Du kan forhindre bestemte brugere og grupper i at få adgang til en rapportering
 3. Marker et navn i dialogboksen **Sikkerhed for enhed**, og klik derefter på **Fjern**.
 4. Klik på **OK**.
 
-### <a name="link-to-reports"></a>Link til rapporter
-
-Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identificer rapporten i et rapporteringstræ
-
-1. Åbn den rapporteringstrædefinition, der skal ændres, i Report Designer.
-2. I kolonnen **Rækkedefinitioner** er oplysningerne i cellerne baseret på oplysningerne for den valgte række, fordi det samme rækkedefinition skal bruges i alle rapporteringstræets enheder. Dobbeltklik på cellen **Rækkedefinitioner**, og vælg derefter den rækkedefinition, der indeholder oplysninger om rapporten.
-3. I cellen **Link til regneark** for en rapporteringsenhed skal du vælge det linknavn, der svarer til rapporten.
-4. I cellen **Projektmappe eller rapportsti** for en rapporteringsenhed, skal du angive navnet på rapporten eller søge efter og vælge rapporten.
-5. Hvis du vil angive et regneark i en rapport, skal du angive navnet på regnearket i cellen **Navn på regneark**.
-6. Gentag trin 3 til og med 5 for hver rapporteringsenhed, der skal modtage data fra en rapport. For at forhindre, at der vises forkerte data i rapporten, skal du sørge for, at de korrekte rapportnavne vises i den tilsvarende enhed i rapporteringstræet.
-
 ## <a name="examples"></a>Eksempler
 ### <a name="reporting-unit-structure--example-1"></a>Rapporteringsenhedstruktur – eksempel 1
 
@@ -187,23 +170,23 @@ Her er strukturen for rapporteringsenhederne i følgende rapporteringstræ:
 - Rapporteringsenhederne på det laveste niveau (Hjemmesalg, Autosalg, Kundeservice og Operationer) repræsenterer afdelinger i de økonomiske data. Disse rapporteringsenheder er i det nedtonede område i diagrammet.
 - Oversigtsenhederne på de højere niveauer opsummerer oplysninger fra detaljeenhederne.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapporteringsenhedstruktur – eksempel 2
 
 I følgende diagram har rapporteringstræet en organisationsstruktur, der er opdelt efter forretningsfunktion.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-oversigtsrapportstruktur – eksempel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Indsæt rapporteringsenheder fra Dimensioner
 
 Følgende illustration viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra Dimensioner**. I dette eksempel returnerer resultaterne kombinationen af virksomhedsenheder, bærere og afdelinger.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Indsætte rapporteringsenheder.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterende rapporteringstrædefinition er sorteret efter virksomhedsenhed og derefter efter bærer og derefter efter afdeling. Dimensionen for den femte rapporteringsenhed er **Virksomhedsenhed = \[001\] Bærer =\[\], Afdeling = \[022\]**, og den identificerer en rapporteringsenhed for konti, der er specifikke for virksomhedsenhed 001 og afdeling 022.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration af rapporteringstræet.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på dataakkumulering
 
@@ -211,12 +194,15 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 
 #### <a name="example-1"></a>Eksempel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Total af flere firmaer.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Eksempel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Total på tværs af firmaafdeling.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

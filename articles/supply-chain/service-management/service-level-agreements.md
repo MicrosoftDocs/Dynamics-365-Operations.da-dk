@@ -1,25 +1,26 @@
 ---
 title: Oversigt over serviceniveauaftaler
 description: I en serviceniveauaftale accepterer kunden en minimumsvartid baseret på det tidspunkt, hvor servicefirmaet registrerer problemet, og hvornår problemet er løst.
-author: kamaybac
+author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SMAServicelevelagreement
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a36b1c0e18201ae04a9fe13cb4f9524a19655c92
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d39d76151ddc91b0242b17f344415b2746cc9598
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985830"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336335"
 ---
 # <a name="service-level-agreements-overview"></a>Oversigt over serviceniveauaftaler       
 

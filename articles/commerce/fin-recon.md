@@ -2,11 +2,9 @@
 title: Økonomisk afstemning i detailbutikker
 description: Dette emne beskriver økonomisk afstemning i detailbutikker for POS til Microsoft Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0f57f3119039337922dcd4035e1c4d64e6ae7295
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965071"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792385"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Økonomisk afstemning i detailbutikker
 
@@ -61,3 +59,6 @@ Når sivende feedbaseret bogføring bruges, så bogføringen af posteringer adsk
 Oplysninger om økonomisk afstemning for et skift synkroniseres til Commerce Headquarters ved hjælp af P-job.
 
 Økonomiske detailopgørelser i Commerce Headquarters beregner ikke totaler for at få vist detaljerne på opgørelseslinjerne. I stedet bruges de endelige beløb i POS-klienten til at oprette og bogføre økonomiske detailopgørelser.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

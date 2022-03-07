@@ -2,26 +2,23 @@
 title: Økonomiske konsolideringer online
 description: I dette emne beskrives økonomiske onlinekonsolideringer i Finans.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c8a36447670458b2a8fe423f35fafd5f8cff773461f4dff47577e52573abc3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758843"
 ---
 # <a name="online-financial-consolidations"></a>Økonomiske konsolideringer online
 
@@ -34,7 +31,7 @@ Når du har fuldført opsætningen, kan du angive detaljerne om konsolideringen 
 ## <a name="criteria"></a>Afgrænsning
 Under fanen **Kriterier** på siden **Konsolider [Online]** kan du definere kontiene, perioderne og typen af data, der konsolideres.
 
-![Fanen kriterier](./media/criteria-consolidate-online.png "Fanen kriterier")
+![Fanen kriterier.](./media/criteria-consolidate-online.png "Fanen kriterier")
 
 Her er en forklaring på de forskellige felter under denne fane:
 
@@ -60,16 +57,16 @@ Her er en forklaring på de forskellige felter under denne fane:
 ## <a name="financial-dimensions"></a>Økonomiske dimensioner
 Under fanen **Økonomiske dimensioner** skal du definere de dimensioner, der skal medtages i det konsoliderede regnskab. Du kan vælge en dimension ved at indstille feltet **Specifikation** til **Dimension** og derefter definere rækkefølgen for dimensionen i det konsoliderede regnskab.
 
-![Fanen økonomiske dimensioner](./media/financial-dimensions-cons.png "Fanen økonomiske dimensioner")
+![Fanen økonomiske dimensioner.](./media/financial-dimensions-cons.png "Fanen økonomiske dimensioner")
 
 Uanset hvilken rækkefølge du definerer, er **Hovedkonto** altid det første segment.
 
 ## <a name="legal-entities"></a>Juridiske enheder
 Under fanen **Juridiske enheder** skal du definere de firmaer, der skal medtages i det konsoliderede regnskab. Du kan også definere ejerskabsprocentdelen for disse firmaer. Hvis du angiver mindre end 100 procent ejerskab, bliver den angivne procentdel aggregeret til det konsoliderede regnskab. For enhver omregningsdifference bruges feltet **Kontotype til omregningsdifferencer** til at vælge hovedkontoen fra opsætningen på siden **Konti til automatisk posteringer**.
 
-![Fanen juridiske enheder](./media/legal-entities-cons.png "Fanen juridiske enheder")
+![Fanen juridiske enheder.](./media/legal-entities-cons.png "Fanen juridiske enheder")
 
-![Siden konti til automatisk posteringer](./media/accounts-for-automatic-cons.png "Siden konti til automatisk posteringer")
+![Siden konti til automatisk posteringer.](./media/accounts-for-automatic-cons.png "Siden konti til automatisk posteringer")
 
 ## <a name="elimination"></a>Eliminering
 Under fanen **Eliminering** har du tre muligheder for at behandle elimineringer:
@@ -78,7 +75,7 @@ Under fanen **Eliminering** har du tre muligheder for at behandle elimineringer:
 - Vælg elimineringsreglen, og vælg derefter **Kun bogføring** i feltet **Forslagsmuligheder**. Denne indstilling vil behandle elimineringen under konsolideringsprocessen og bogfører alt på én gang.
 - Kør et elimineringsforslag separat fra konsolideringsprocessen ved hjælp af elimineringskladden.
 
-![Fanen eliminering](./media/elimination-cons-onl.png "Fanen eliminering")
+![Fanen eliminering.](./media/elimination-cons-onl.png "Fanen eliminering")
 
 Du kan finde flere oplysninger om elimineringer i [Elimineringsregler](./elimination-rules.md).
 
@@ -89,10 +86,13 @@ Under fanen **Valutaomregning** kan du definere den juridiske enhed, kontoen og 
 - **Posteringsdato** – Datoen for hver postering, der skal bruges til at vælge en valutakurs. Denne indstilling bruges oftest til anlægsaktiver og kaldes ofte en historisk kurs. Du kan ikke se en forhåndsvisning af satsen, fordi der vil være mange satser for de forskellige transaktioner i kontointervallet.
 - **Brugerdefineret sats** – Når du vælger denne indstilling, kan du angive den valutakurs, som du ønsker. Denne indstilling kan være praktisk ved gennemsnitlige valutakurser, eller hvis du konsoliderer mod en fast valutakurs.
 
-![Fanen valutaomregning](./media/currency-translation-cons-online.png "Fanen valutaomregning")
+![Fanen valutaomregning.](./media/currency-translation-cons-online.png "Fanen valutaomregning")
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

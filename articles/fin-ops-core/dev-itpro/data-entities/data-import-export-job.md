@@ -2,24 +2,23 @@
 title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d42f6af27ecb79e02a20516d58846e842d5960ce9363afcafbcbb487e60c0c38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723105"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -108,7 +107,7 @@ Der er to visninger af tilknytningen: **Visualisering af tilknytning**, som er s
 
 Du kan oprette en tilknytning på siden ved at vælge **Generér kildetilknytning**. En genereret tilknytning fungerer som en automatisk tilknytning. Du skal derfor manuelt tilknytte eventuelle ikke-tilknyttede felter.
 
-![Tilknytning af data](./media/dixf-map.png)
+![Tilknytning af data.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Kontroller sikkerheden i dit import- eller eksportjob
 Adgangen til arbejdsområdet **Datastyring** kan begrænses, så brugere, der ikke er administratorer, kun har adgang til bestemte datajob. Adgang til et datajob indebærer fuld adgang til udførelseshistorikken for jobbet og adgang til de midlertidige tabeller. Du skal derfor sikre dig, at relevante adgangskontroller er på plads, når du opretter et datajob.
@@ -134,7 +133,7 @@ Du kan køre et job én gang ved at vælge knappen **Import** eller **Eksport**,
 ## <a name="validate-that-the-job-ran-as-expected"></a>Kontroller, at jobbet kørte som forventet
 Jobhistorikken er tilgængelig i forbindelse med fejlfinding og undersøgelse på både import- og eksportjob. Kørsler af historiske job er organiseret efter tidsintervaller.
 
-![Jobhistorikintervaller](./media/dixf-job-history.md.png)
+![Jobhistorikintervaller.](./media/dixf-job-history.md.png)
 
 Hver jobkørsel indeholder følgende oplysninger:
 
@@ -163,19 +162,7 @@ For at gøre det hurtigere at importere data kan parallel behandling af en filim
     - I feltet **Antal poster for importtærskel** skal du angive grænsen for antallet af poster til import. Dette bestemmer det antal poster, der skal behandles af en tråd. Hvis en fil har 10.000 poster, vil et postantal på 2500 med et opgaveantal på 4 betyde, at hver tråd behandler 2500 poster.
     - Angiv antallet af importopgaver i feltet **Antal importopgaver**. Dette må ikke overstige det maksimale antal batchtråde, der er tildelt batchbehandling i **Systemadministration \>Serverkonfiguration**.
 
-## <a name="clean-up-the-staging-tables"></a>Ryd op i de midlertidige tabeller
-Med start i Platform update 29 er denne funktionalitet blevet udfaset. Den er erstattet af en ny version af oprydningsfunktionalitet af jobhistorik, der er forklaret nedenfor.
-
-Du kan rydde op i midlertidige tabeller ved hjælp af funktionen **Oprydning i midlertidige filer** i arbejdsområdet **Datastyring**. Du kan bruge følgende indstillinger til at vælge, hvilke poster der skal slettes fra de midlertidige tabeller:
-
-- **Enhed** – Hvis der kun angives en enhed, slettes alle poster fra den pågældende enheds midlertidig tabel. Vælg denne indstilling for at rydde op i alle dataene for enheden på tværs af alle dataprojekter og alle job.
-- **Job-id** – Hvis der kun angives et job-id, slettes alle poster for alle enheder i det valgte job fra de relevante midlertidige tabeller.
-- **Dataprojekter** – Hvis der kun er markeret et dataprojekt, slettes alle poster for alle enheder og på tværs af alle job for det valgte dataprojekt.
-
-Du kan også kombinere indstillingerne for yderligere at begrænse det postsæt, der slettes.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Oprydning af jobhistorik (tilgængelig i Platform update 29 og nyere)
-
+## <a name="job-history-clean-up"></a>Oprydning i jobhistorik 
 Funktionen til oprydning i jobhistorik i datastyring skal bruges til at planlægge en regelmæssig oprydning af udførelseshistorikken. Denne funktionalitet erstatter den tidligere oprydningsfunktion til midlertidig tabel, som nu udfases. Følgende tabeller vil blive ryddet op af oprydningsprocessen.
 
 -   Alle midlertidige tabeller
@@ -243,3 +230,6 @@ Hvis du vil hente den arkiverede kørselshistorik, skal du gå til arbejdsområd
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

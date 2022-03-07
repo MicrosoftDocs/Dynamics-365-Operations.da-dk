@@ -1,12 +1,10 @@
 ---
 title: Få adgang til programmetadata ved hjælp af ER-konfiguration
-description: Fremgangsmåden i dette emne forklarer, hvordan en Regulatory Configuration Service-bruger (RCS) kan designe en ny elektronisk rapporteringsmodel (ER) ved hjælp af metadataene i Finance and Operations.
+description: Dette emne forklarer, hvordan en Regulatory Configuration Service-bruger kan designe en ny elektronisk rapporteringsmodel ved hjælp af metadata.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 261c208b5906e313293d837dda20b2fe6dd649d6
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682159"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749333"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Få adgang til programmetadata ved hjælp af ER-konfiguration
 
@@ -125,3 +123,6 @@ Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Servic
 > [!NOTE]
 > Denne måde at hente oplysninger om programmetadata er den eneste, der er tilgængelig for lokalt installerede programmer (når der bruges lokale virksomhedsdata (LBD) eller en lokal installationsmodel).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

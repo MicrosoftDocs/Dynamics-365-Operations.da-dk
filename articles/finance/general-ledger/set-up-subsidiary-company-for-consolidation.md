@@ -2,9 +2,11 @@
 title: Konfigurere en juridisk datterselskabsenhed til konsolidering
 description: Dette emne indeholder en forklaring på, hvordan du kan arbejde med kontoplaner for konsoliderede regnskaber.
 author: jinniew
+manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: fbec5ad8fa5e17b75859c07ee64a66c9568c97d3d18b6a7616a64303d3a33f10
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ffe0ac0b11a3f58ca4a893d8786f04b4067b270
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727953"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975527"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>Konfigurere en juridisk datterselskabsenhed til konsolidering
 
@@ -78,6 +80,3 @@ Uanset om du har tilknyttet konti, skal du fjerne markeringen i afkrydsningsfelt
 
 > [!NOTE]
 > Du kan anvende denne metode til at oprette en kontoplan i den konsoliderede juridiske enhed fra kontoplanen i en af datterselskabernes juridiske enheder. (Du kan finde flere oplysninger i [Konsolideringskontogrupper og yderligere](../budgeting/consolidation-account-groups-consolidation-accounts.md)konsolideringskonti.) Tildel derefter et relevant princip for konsolideringsomregning til hver konsolideret hovedkonto, og kør konsolideringen for alle juridiske enheder for datterselskabet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

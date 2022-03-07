@@ -3,10 +3,9 @@ title: Videoer
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70eddab17d94a7ff4a9f00117200a657ebfb24dd
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797869"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566216"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -89,9 +88,6 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 ### <a name="customize-the-app"></a>Tilpasse appen
 - [Tilføj brugerdefinerede felter](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Integrere Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-
-### <a name="expenses"></a>Udgifter
-- [Udgiftsangivelsesoplevelse](https://youtu.be/Ocy-MsTvEE0)
 
 ### <a name="financial-reporting"></a>Økonomirapportering
 - [Finde versionen af Rapportdesigner](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -167,3 +163,6 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 [Tekniske oplysninger om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserer på at levere teknisk dybde og bedste fremgangsmåder, der giver kunder og partnere detaljeret viden, der er specifik for emneområder.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

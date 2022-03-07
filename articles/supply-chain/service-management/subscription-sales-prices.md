@@ -2,28 +2,25 @@
 title: Abonnementssalgspriser
 description: Når du opretter et abonnement, afledes salgsprisen fra den salgsprisopsætningen, der er oprettet i formularen Salgspris (abonnement).
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASalespriceSubscription
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3b4b02af0a535e67818751c437482c3663524474
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424552"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817407"
 ---
 # <a name="subscription-sales-prices"></a>Abonnementssalgspriser   
 
@@ -380,3 +377,6 @@ I den første postering for abonnement 00020\_135 afledes salgsprisen på EUR 55
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

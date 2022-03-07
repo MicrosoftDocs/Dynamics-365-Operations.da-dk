@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 261b831806a7912b270fd3ae098e1b758ef4f521
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7109fa574bd05884fab4a4159999ee89bffe6e84
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962685"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212945"
 ---
 # <a name="invoice-issue-deadline"></a>Deadline for fakturaudstedelse
 
@@ -121,3 +121,6 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre opgaverne, som
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

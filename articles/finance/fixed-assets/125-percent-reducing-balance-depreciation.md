@@ -1,12 +1,10 @@
 ---
 title: 125 % saldoafskrivning
-description: Denne artikel indeholder en oversigt over afskrivningsmetoden 125 % saldoafskrivning.
-author: saraschi2
-manager: AnnBe
+description: Dette emne viser en oversigt over afskrivningsmetoden 125 % saldoafskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9511917d72a1bb45daf2ce7e4b56d94c17825daf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969222"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883512"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 % saldoafskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder en oversigt over afskrivningsmetoden 125 % saldoafskrivning.
+Dette emne viser en oversigt over afskrivningsmetoden 125 % saldoafskrivning.
 
 Når du opretter en afskrivningsprofil for et anlægsaktiv og vælger **125 % saldoværdi** i feltet **Metode** på siden **Afskrivningsprofiler**, bliver de anlægsaktiver, der er tildelt afskrivningsprofilen, afskrevet med den samme procent i hver afskrivningsperiode. Denne procentdel beregnes på basis af aktivets levetid. Hvis et aktiv f.eks. har en levetid på fem år, beregnes procentdelen som 25 % (125 % ÷ 5).
 
@@ -66,7 +64,7 @@ Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Eksempel på en 125 % saldoafskrivning
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffelsesomkostning               | 11.000 |
 | Restværdi                  | 1.000  |
@@ -87,3 +85,6 @@ Metoden med 125 % saldoafskrivning dividerer de 125 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

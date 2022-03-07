@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3cd18320ca8505b1357ce505dfb4c94e81aaae91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 127f38e7db0a8c0703fd95274f45ff4ca49c131e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441521"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225435"
 ---
 # <a name="export-letter-of-credit"></a>Eksportér remburs
 
@@ -140,3 +139,6 @@ Kør proceduren "Konfigurere bankfaciliteter og posteringsprofiler" og "Remburs_
 3. Klik op linket i den valgte række på listen.
     * Kontroller Forsendelsesstatus = Betaling modtaget og saldobeløb = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

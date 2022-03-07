@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: 7af7bbb500de25e0a796147fae42cd7d943be9df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014502"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205219"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Afstemme fragt i transportstyring
 
@@ -105,3 +105,6 @@ Manuel afstemning for dette eksempel kan også foregå på følgende måde:
 1. Afstem Fak1 og Fak2 med FB én efter én. FB er fuldt afstemt.
 
 Som dette eksempel viser, skal afstemningen af fragtfakturaer med negative beløb kun foregå manuelt. Derved sikres, at det altid er muligt at afstemme fragtfakturaer med negative beløb for et fragtbrev, der ikke er fuldt afstemt, da det giver dig mulighed for at styre afstemningsrækkefølgen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

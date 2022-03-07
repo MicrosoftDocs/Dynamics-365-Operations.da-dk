@@ -1,12 +1,10 @@
 ---
 title: Få adgang til programmetadata ved hjælp af tilsluttede programmer
-description: Fremgangsmåden i dette emne forklarer, hvordan en Regulatory Configuration Service-bruger (RCS) kan designe en ny elektronisk rapporteringsmodel (ER) ved hjælp af metadata i Finance and Operations.
+description: Fremgangsmåden i dette emne forklarer, hvordan en Regulatory Configuration Service-bruger kan designe en ny elektronisk rapporteringsmodel ved hjælp af metadata.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6d99ca41a9a24ef8ac0fe31e703cad79d41216fa726fa1d354ac19db90706954
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776018"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få adgang til programmetadata ved hjælp af tilsluttede programmer
 
 [!include [banner](../../includes/banner.md)]
 
-Følgende trin beskriver, hvordan en Regulatory Configuration Service-bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i Finance and Operations. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. For at fuldføre disse trin skal du i RCS først fuldføre trinnene i emnet [Opret konfigurationsudbydere og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i emnet [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du gå til [eksempelsiden for elektroniske rapporter](https://go.microsoft.com/fwlink/?linkid=862266) for at hente og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
+Følgende trin beskriver, hvordan en Regulatory Configuration Service-bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i Finance and Operations. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. For at fuldføre disse trin skal du i RCS først fuldføre trinnene i emnet [Opret konfigurationsudbydere og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i emnet [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du downloade [Eksempler for elektronisk rapportering](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
 
 ## <a name="prerequisites"></a>Forudsætninger
 1. Gå til **Alle arbejdsområder** > **Elektronisk rapportering**. 
@@ -113,3 +111,6 @@ Følgende trin beskriver, hvordan en Regulatory Configuration Service-bruger i r
 11. Luk siden. 
 
 Når du har brug for at evaluere denne modeltilknytning ved hjælp af metadata for et andet versionsprogram, skal du registrere et andet tilknyttet program, tildele det denne modeltilknytning og validere det mod nye metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

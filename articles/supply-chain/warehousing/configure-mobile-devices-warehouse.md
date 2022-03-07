@@ -1,7 +1,7 @@
 ---
 title: Konfigurere mobilenheder til lagerstedsarbejde
 description: Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902173"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808792"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -41,7 +41,6 @@ Når du vil oprettes et menupunkt for en aktivitet eller en undersøgelse, skal 
 > Flere felter kan være tilgængelige for menupunktet, afhængigt af den tilstand, du vælger for menupunktet, og om menupunktet bruges til at udføre eksisterende arbejde. Du kan finde oplysninger om valg af yderligere felter i afsnittet "Yderligere indstillinger for menupunkter" i dette emne.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menupunkter for aktiviteter og forespørgsler
-
 Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du oprette et menupunkt, der udfører en generel aktivitet eller forespørgsel, der ikke skaber arbejde. Af eksempler kan nævnes udskrivning af id-nummer og forespørgsler om varerne på en lokalitet. I følgende tabel vises de indstillinger, der er tilgængelige.
 
 | Indstilling | Beskrivelse |
@@ -59,15 +58,16 @@ Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du o
 | Id-build | Opret et overordnet id-nummer ved at kombinere flere id-numre på den lokalitet. Denne indstilling er nyttig, hvis du flytter flere id-numre på samme tid. Når det overordnede id-nummer er flyttet, skal du udføre en id-nummerpause, før du kan plukke varer fra hvert id-nummer. <p></p>**Tip!** Hvis du vil flytte et overordnet id-nummer, skal du bruge en mobilenhed, der er konfigureret til at oprette arbejde til bevægelser. |
 | Id-pause | Opdel et id-nummerbuild, så du kan plukke varer fra de id-numre, der var i buildet. |
 | Chaufførens check-in | Hvis du bruger Transportstyring, kan du se, at der er kommet en chauffør, ved at scanne det udgående last-id, aftale-id eller leverance-id. I forbindelse med denne indstilling skal en last være knyttet til aftalen, og status for lasten skal være **Indlæst**. |
-| Chaufførens check-ud | Registrer, at en chauffør har fuldført sin aftale. |
+| Chaufførens check-ud | Registrer, at en chauffør har fuldført aftalen. |
 | Ryd cachen med nummerserie | Slet numre i nummerserier fra cachen med nummerserier. Denne aktivitet udføres typisk af en systemadministrator for at løse cachingproblemer, når der bruges mobilenheder. |
 | Skift batchdisposition | Tillad, at en arbejder kan angive en batchdispositionskode for en vare og batch. Denne indstilling opdaterer den dispositionskode, der er angivet for batchen. |
 | Vis oversigt over åbent arbejde | Vis en liste over tilgængeligt arbejde for en bestemt bruger. Brugeren kan derefter vælge arbejde, der skal udføres, og sendes videre til det. Denne liste er beregnet til at blive vist tabletenheder med en skærmstørrelse på 7 tommer eller derover. Når du vælger denne indstilling, bliver menupunkterne **Rediger forespørgsel** og **Feltliste** tilgængelige. På siden **Rediger forespørgsel** kan du angive kriterier for det arbejde, der vises på listen. På siden **Feltliste** kan du vælge, hvilke felter der skal vises på opgavelisten. Du kan f.eks. reducere antallet af felter, der vises, så brugeren hurtigere kan vælge den mest hensigtsmæssige workflowopgave. Du kan også vælge, hvor mange arbejdsposter der skal vises pr. side, i feltet **poster pr. side** i oversigtspanelet **Generelt**. Hvis indstillingen **Tillad, at brugere filtrerer arbejde efter transaktionstype** er markeret, inkluderer opgavelisten kontrolelementet **Filtrer arbejde**, så brugeren kan filtrere efter transaktionstype. Brugeren kan kun se arbejde på opgavelisten, som de har adgangstilladelse til. Du skal sikre, at brugere har tilladelse til en eller flere brugerstyrede menupunkter, der understøtter de specifikke opgaveklassetyper, som de skal have adgang til. Tilladelser kontrolleres, når en bruger forsøger at udføre arbejde på listen.|
 | Opret flytteordre fra id'er. | Giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra mobilappen Lokationsstyring. Lagermedarbejderne starter ved at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er. Du kan finde flere oplysninger under [Oprette flytteordrer fra lagerstedsappen](create-transfer-order-from-warehouse-app.md)
 
-## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurer menupunkter for at oprette arbejde for en anden arbejder eller proces
 
+## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurer menupunkter for at oprette arbejde for en anden arbejder eller proces
 Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, efter en indledende handling er udført på mobilenheden. Når én arbejder f.eks. bruger en mobilenhed til at modtage en vare, oprettes der læg på lager-arbejde for en anden arbejder. Hvis du vil konfigurere et menupunkt, der skaber arbejde, skal du gå til siden **Menupunkter i mobilenhed**, feltet **Tilstand** og vælge **Arbejde**. I følgende tabel er indstillingerne i feltet **Arbejdsoprettelsesproces** arrangeret efter arbejdsordretype.
+
 
 <table>
 <tbody>
@@ -232,7 +232,7 @@ Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive 
 </tr>
 <tr class="even">
 <td>Brugergruppering</td>
-<td>Arbejderen grupperer manuelt arbejde. Denne indstilling er f.eks. nyttig, når en arbejder kan plukke flere varer ad gangen på en lokalitet. Når arbejderen har plukket alle de ønskede varer, kan vedkommende lægge varerne på lager.</td>
+<td>Arbejderen grupperer manuelt arbejde. Denne indstilling er f.eks. nyttig, når en arbejder kan plukke flere varer ad gangen på en lokalitet. Når arbejderen har plukket alle de ønskede varer, kan han eller hun lægge varerne på lager.</td>
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
@@ -407,7 +407,6 @@ Indstillingerne er beskrevet i følgende tabel.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Kræv, at arbejdere bekræfter produkt, lokalitet eller antal, når de plukker varer
-
 Du kan konfigurere arbejdsbekræftelser, der kræver, at en arbejder bruger en mobilenhed til at registrere lokaliteten eller antallet, når han eller hun udfører arbejde på lagerstedet. Arbejdsbekræftelser er med til at sikre, at arbejderen er på den korrekte lokalitet eller håndterer det korrekte antal varer. Du kan også aktivere Supply Chain Management for at bekræfte arbejderens registrering automatisk. Hvis du aktiverer automatisk bekræftelse, kan du ikke også kræve bekræftelser for lokalitet eller antal. Arbejdsbekræftelser inkluderer også produkter og produktvarianter. Derudover kan du registrere bekræftelser ved at scanne en stregkode. For at bekræfte produkter og produktvarianter skal du angive et id for produktet eller produktvarianten. Dette id kan være produkt-id, produktsøgnings-id, eksternt id, GTIN eller stregkode. Når du angiver id'et eller scanner stregkoden, vises dimensionerne for produktvarianten på mobilenheden. 
 
 I følgende tabel beskrives de forskellige arbejdstyper, som du kan bruge sammen med arbejdsbekræftelser.
@@ -427,11 +426,14 @@ I følgende tabel beskrives de forskellige arbejdstyper, som du kan bruge sammen
 > [!NOTE]
 > Du kan kun kræve bekræftelse af produkt for arbejdstyperne pluk og læg på lager.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
-- [Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre](tasks/set-up-mobile-device-menu.md)
-- [Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-- [Lagerstatusser](../inventory/inventory-statuses.md)
+[Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre](tasks/set-up-mobile-device-menu.md)
+
+[Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+
+[Lagerstatusser](../inventory/inventory-statuses.md)
 
 
 

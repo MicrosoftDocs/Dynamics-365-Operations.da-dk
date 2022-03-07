@@ -2,36 +2,30 @@
 title: Administrere SEO-metadata
 description: I dette emne beskrives, hvordan du administrerer SEO-metadata (søgemaskineoptimering) i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751561"
 ---
 # <a name="manage-seo-metadata"></a>Administrere SEO-metadata
-
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du administrerer SEO-metadata (søgemaskineoptimering) i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 SEO-metadata for et websted kan administreres ved hjælp af webstedsoversigter og sidemetadata.
     
@@ -94,4 +88,9 @@ Hvis du vil redigere sidemetadata, skal du følge disse trin.
 
 [Forbedre en kategorilandingsside](enrich-category-page.md)
 
-[Bekræft tilgængelighed af sideindhold](verify-accessibility.md)
+[Bekræfte tilgængelighed af sideindhold](verify-accessibility.md)
+
+[Oprette dynamiske e-handelssider baseret på URL-parametre](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

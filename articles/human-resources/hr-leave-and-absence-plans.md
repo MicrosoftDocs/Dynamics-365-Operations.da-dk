@@ -1,31 +1,33 @@
 ---
 title: Oprette en orlovs- og fraværsplan
-description: Opret orlovsplaner i Dynamics 365 Human Resources for forskellige typer orlov.
-author: andreabichsel
-manager: AnnBe
-ms.date: 09/11/2020
+description: Dette emne beskriver, hvordan du opretter orlovsplaner i Dynamics 365 Human Resources for forskellige typer orlov.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9267b4d4025ef0e5cec2d3e995785a6291c850e5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417857"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070244"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Oprette en orlovs- og fraværsplan
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definer orlovs og fraværsplaner i Dynamics 365 Human Resources for hver type orlov, du tilbyder. Orlovs og fraværsplaner kan periodiseres ved forskellige frekvenser, f.eks. årligt, månedligt eller halvmånedligt. Du kan også definere en plan som et tilskud, hvor en enkelt periodisering forekommer på en bestemt dato. Du kan f.eks. oprette en plan, der giver flydende helligdage årligt.
 
@@ -271,7 +273,7 @@ Aktuel saldo (7) = Periodiseringsbeløb (5 × 3) – Ønsket beløb (8)
 
 Den *budgetterede saldo* er den samlede orlov på en fremtidig dato. Periodiseringer og regulerede overførsler budgetteres indtil denne dato.
 
-I Personale bruges følgende formel:
+I Human Resources bruges følgende formel:
 
 Budgetteret saldo mandag = Aktuel saldo – Anmodninger + Periodiseringer – Reguleret overførsel
 
@@ -383,3 +385,6 @@ Budgetteret saldo (30) = Periodiseringsbeløb (10 × 1) + Aktuel saldo (40) – 
 - [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere orlovs- og fraværstyper](hr-leave-and-absence-types.md)
 - [Periodisere orlovs- og fraværsplaner](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Kontostyringssider og -moduler
 description: Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716244"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontostyringssider og -moduler
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omfatter sider og moduler til kontostyring i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Kontostyring henviser til en gruppe sider, der bruges til at administrere brugerkontorelaterede oplysninger i Dynamics 365 Commerce. Kontostyringssider omfatter landingssiden til kontostyring, brugerprofilside, brugeradresseside, ordrehistorikside, ordreoplysningside, fordelskundeside og ønskelisteside.
 
@@ -54,9 +49,9 @@ På ordrehistoriksiden bruges modulet for ordrehistorik til at vise alle de sene
 
 På ordredetaljesiden vises der detaljerede oplysninger om hver enkelt ordre, og du kan få adgang til den fra ordrehistoriksiden. Den bruger ordredetaljemodulet, som kræver salgs-id'et eller transaktions-id'et for at kunne hente ordreoplysningerne.
 
-### <a name="user-profile-page"></a>Brugerprofilside
+### <a name="my-profile-page"></a>Siden Min profil
 
-På brugerprofilsiden forevises detaljer om brugerkonti, f.eks. en brugers navn og mailadresse. Den bruger brugerprofilen og redigeringsmodulerne til brugerprofiler. Mailadressen kan ikke fjernes, men den kan redigeres. Brugerprofilsiden viser også brugerpræferencer, der giver en bruger mulighed for at tilmelde sig eller fravælge visse funktioner som f.eks. personalisering af anbefalingslister. 
+På siden Min profil vises brugerens kontoprofiloplysninger ved hjælp af kontoprofilmodulet. Siden viser den mailadresse, der er tilknyttet brugerens konto, samt de indstillinger, der er angivet for kontoen. Hvis du konfigurerer brugerdefinerede kundeattributter, vises disse attributter også i afsnittet "Yderligere oplysninger". Brugere kan redigere deres navn, indstillinger eller flere oplysninger (hvis de er tilgængelige).
 
 ### <a name="user-address-page"></a>Brugeradresseside
 
@@ -89,3 +84,6 @@ Hvis du vil deltage i fordelskundesprogrammet, kan der oprettes en marketingside
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

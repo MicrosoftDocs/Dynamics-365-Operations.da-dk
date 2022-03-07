@@ -2,7 +2,7 @@
 title: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
 description: Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: cdac52ed7f11f796b9559e5454456fb139c6ba00
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323517"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346392"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Tilføje datafelter i momsintegrationen ved hjælp af udvidelse
 
@@ -353,77 +353,15 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-I denne kode er `_destination` det ombryderobjekt, der bruges til at generere bogføringsanmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.
+I denne kode er `_destination` det ombryderobjekt, der bruges til at generere bogføringsanmodningen, og `_source` er `TaxIntegrationLineObject`-objektet. 
 
 > [!NOTE]
-> Definer den nøgle, der bruges i anmodningsformularen, som **privat konstruktionsstreng**. Strengen skal være nøjagtig den samme som det målingsnavn, der tilføjes i emnet [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
-> Angiv feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjælp af metoden **SetField**. Datatypen for den anden parameter skal være **streng**. Hvis datatypen ikke er **streng**, skal du konvertere den.
-> Hvis en X++- **enumtype** udvides, skal du notere forskellen mellem dens værdi, label og navn.
-> 
->   - Enum-værdien er et heltal.
->   - Labelen i enum kan være forskellig på tværs af foretrukne sprog. Brug ikke **enum2Str** til at konvertere enum-typen til streng.
->   - Navnet på enum anbefales, fordi det er fast. **enum2Symbol** kan bruges til at konvertere enum til navnet. Den enum-værdi, der tilføjes i momskonfigurationen, skal være nøjagtig den samme som enum-navnet.
-
-## <a name="model-dependency"></a>Modelafhængighed
-
-Hvis projektet skal opbygges korrekt, skal du føje følgende referencemodeller til modelafhængighederne:
-
-- ApplicationPlatform
-- ApplicationSuite
-- Momsprogram
-- Dimensioner, hvis der bruges økonomisk dimension
-- Der refereres til andre nødvendige modeller i koden
-
-## <a name="validation"></a>Validering
-
-Når du har fuldført de foregående trin, kan du validere ændringerne.
-
-1. I Finans skal du gå til **Kreditor** og føje **&debug=vs%2CconfirmExit&** til URL-adressen. For eksempel https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Det sidste **&** er afgørende.
-2. Åbn siden **Indkøbsordre**, og vælg **Ny** for at oprette en indkøbsordre.
-3. Angiv værdien for det brugerdefinerede felt, og vælg derefter **Moms**. En fejlfindingsfil med præfikset **TaxServiceTroubleshootingLog** downloades automatisk. Denne fil indeholder de transaktionsoplysninger, der er bogført til Momsberegningstjeneste. 
-4. Kontrollér, om det tilpassede felt, der er tilføjet, findes i afsnittet **Momsberegningstjenesteinput i JSON**, og om værdien er korrekt. Hvis værdien ikke er korrekt, skal du dobbelttjekke trinnene i dette dokument.
-
-Fileksempel:
-
-```
-===Tax service calculation input JSON:===
-{
-  "TaxableDocument": {
-    "Header": [
-      {
-        "Lines": [
-          {
-            "Line Type": "Normal",
-            "Item Code": "",
-            "Item Type": "Item",
-            "Quantity": 0.0,
-            "Amount": 1000.0,
-            "Currency": "EUR",
-            "Transaction Date": "2022-1-26T00:00:00",
-            ...
-            /// The new fields added at line level
-            "Cost Center": "003",
-            "Project": "Proj-123"
-          }
-        ],
-        "Amount include tax": true,
-        "Business Process": "Journal",
-        "Currency": "",
-        "Vendor Account": "DE-001",
-        "Vendor Invoice Account": "DE-001",
-        ...
-        // The new fields added at header level, no new fields in this example
-        ...
-      }
-    ]
-  },
-}
-...
-```
+> * Definer den nøgle, der bruges i anmodningsformularen, som `private const str`.
+> * Angiv feltet i metoden `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` ved hjælp af `SetField`-metoden. Datatypen for den anden parameter skal være `string`. Hvis datatypen ikke er `string`, skal du konvertere den til `string`.
 
 ## <a name="appendix"></a>Appendiks
 
-Dette appendiks viser den komplette eksempelkode til integration af de økonomiske dimensioner **Bærer** og **Projekt** på linjeniveau.
+Dette appendiks viser den komplette eksempelkode til integration af økonomiske dimensioner (**Bærer** og **Projekt**) på linjeniveau.
 
 ### <a name="taxintegrationlineobject_extensionxpp"></a>TaxIntegrationLineObject_Extension.xpp
 

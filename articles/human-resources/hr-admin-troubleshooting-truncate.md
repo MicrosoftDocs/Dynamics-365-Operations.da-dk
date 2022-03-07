@@ -2,14 +2,11 @@
 title: Undgå tekstafkortning i stillingshierarkiet, og eksportér til Visio
 description: I denne artikel beskrives det, hvordan du kan løse et problem, hvor navnene på personer og stillinger afkortes, når kunder får vist stillingshierarkiet i Microsoft Dynamics 365 Human Resources. Afkortning af tekst kan gøre det svært at tage et skærmbillede eller udskrive hierarkiet.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417812"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053245"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undgå afkortning af teksten i stillingshierarkiet og eksportere til Visio
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Afgang**
 
@@ -38,11 +37,11 @@ Denne funktionsmåde er tilsigtet.
 
 **Løsning**
 
-Desværre kan brugere ikke nemt ændre størrelsen af teksten. Du kan dog eksportere stillingshierarkiet fra Personale og derefter importere det til Microsoft Visio. Selvom følgende artikel er skrevet til Microsoft Dynamics AX 2012, gælder processen stadig for Personale: [Eksportere et stillingshierarki til Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Desværre kan brugere ikke nemt ændre størrelsen af teksten. Du kan dog eksportere stillingshierarkiet fra Human Resources og derefter importere det til Microsoft Visio. Selvom følgende artikel er skrevet til Microsoft Dynamics AX 2012, gælder processen stadig for Human Resources: [Eksportere et stillingshierarki til Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Følg disse trin for at eksportere til Visio.
 
-1. Åbn listesiden **Stillinger** i Personale.
+1. Åbn listesiden **Stillinger** i Human Resources.
 
     Hvis du vil medtage flere oplysninger i organisationsstrukturdiagrammet, skal du tilføje felter på listen **Stillinger**, så de er tilgængelige, når du bruger guiden senere i denne procedure.
 
@@ -103,4 +102,7 @@ Baseret på de felter, du har valgt at medtage i diagrammet, viser hver node de 
 
 **Flere indstillinger**
 
-I Personale kan du muligvis også bruge arbejdsområdet **Personer** til at få vist visse oplysninger i forbindelse med hierarkiet.
+I Human Resources kan du muligvis også bruge arbejdsområdet **Personer** til at få vist visse oplysninger i forbindelse med hierarkiet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

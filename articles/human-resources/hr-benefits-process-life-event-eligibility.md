@@ -1,33 +1,35 @@
 ---
-title: Behandle berettigelse til livshændelse
-description: I denne artikel beskrives, hvordan du kan køre processen til berettigelse til livshændelse.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Behandle berettigelse til livshændelser
+description: Dette emne forklarer, hvordan du behandler berettigelse til livshændelser.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17ecef1412eb0232fbb4782bd9d2d79f210c7e80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3086718ed8dc0a8da988eb2d4cd07a2fff38e52c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417754"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065887"
 ---
-# <a name="process-life-event-eligibility"></a>Behandle berettigelse til livshændelse
+# <a name="process-life-event-eligibility"></a>Behandle berettigelse til livshændelser
 
-I denne artikel beskrives, hvordan du kan køre processen til berettigelse til livshændelse.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dette emne forklarer, hvordan du behandler berettigelse til livshændelser.
 
 1. Vælg **Behandling af berettigelse til livshændelse** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -48,3 +50,6 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse til l
    4. Vælg **OK**. Processen køres med de parametre, du angiver.
 
 4. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Oprette nye brugere
 description: Brugerne er interne medarbejdere i din organisation, eller eksterne debitorer og kreditorer, der kræver adgang til systemet for at udføre deres job.
 author: peakerbl
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
-ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
+ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "4878651"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595380"
 ---
 # <a name="create-new-users"></a>Oprette nye brugere
 
@@ -31,10 +29,10 @@ Før du kan få adgang til Finance and Operations-apps, skal du først føjes ti
 Du kan finde flere oplysninger om, hvordan du køber og får licens til Finance and Operations-apps, i [licensvejledningen til Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Tildele en bruger licens
-Systemadministratorer kan [tildele licenser til brugere](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) i [Microsoft 365 Administration](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Systemadministratorer kan [tildele licenser til brugere](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [Microsoft 365 Administration](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Tilføje en ekstern bruger i Azure AD og tildele en licens 
-Eksterne brugere skal være repræsenteret i dit lejerbibliotek (Azure Active Directory (Azure AD)), så de kan tildeles licenser. Disse eksterne brugere skal føjes til lejeren i Azure AD som gæstebrugere og derefter tildeles de relevante licenser. Et krav til Finance and Operations-apps er, at gæstebrugerens firma skal bruge Azure AD. Du kan finde flere oplysninger under [Tilføje Azure Active Directory B2B-samarbejdsbrugere i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Eksterne brugere skal være repræsenteret i dit lejerbibliotek (Azure Active Directory (Azure AD)), så de kan tildeles licenser. Disse eksterne brugere skal føjes til lejeren i Azure AD som gæstebrugere og derefter tildeles de relevante licenser. Et krav til Finance and Operations-apps er, at gæstebrugerens firma skal bruge Azure AD. Du kan finde flere oplysninger under [Tilføje Azure Active Directory B2B-samarbejdsbrugere i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importere nye brugere fra Azure AD 
 1. Gå til **Systemadministration** \> **Bruger** \> **Brugere**.
@@ -59,7 +57,7 @@ Eksterne brugere skal være repræsenteret i dit lejerbibliotek (Azure Active Di
 7. Vælg standardstartfirmaet for brugeren i feltet **Firma**. 
 8. Vælg **Gem**.
 
-Værdierne for Identitetsudbyder og Telemetri-id opdateres baseret på et [Microsoft-grafkald](https://docs.microsoft.com/graph/overview), når brugerposten gemmes. Telemetri-id'et er baseret på brugerens objekt-id/sikkerheds-id (SID) i Azure AD.
+Værdierne for Identitetsudbyder og Telemetri-id opdateres baseret på et [Microsoft-grafkald](/graph/overview), når brugerposten gemmes. Telemetri-id'et er baseret på brugerens objekt-id/sikkerheds-id (SID) i Azure AD.
 
 > [!NOTE]
 > Når du har tilføjet en bruger, skal du tildele roller og organisationer efter behov. Du kan finde flere oplysninger under [Tildele brugere til sikkerhedsroller](assign-users-security-roles.md). Det kan også være nødvendigt at knytte brugeren til en **Person** og opdatere **Brugerindstillinger** som f.eks. sprog.
@@ -81,3 +79,6 @@ Hvis du vil ændre et bruger-id, skal du omdøbe nøglen i databasen. Når du æ
 Du kan finde flere indstillinger til implementering af B2B-brugere i [Eksportere B2B-brugere til Azure AD](../implement-b2b.md).
 
 Du kan finde oplysninger om forudkonfigurerede systemkonti i [Forudkonfigurerede systemkonti](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

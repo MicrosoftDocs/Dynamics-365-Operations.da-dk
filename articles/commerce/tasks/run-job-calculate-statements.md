@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 973236acca0cb8c0d57171e4bb9d4daaa7faaf38
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8366bfff16bac8ef8f7b15cb97417d474b52f59c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411113"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232755"
 ---
 # <a name="configure-and-run-job-to-calculate-statements"></a>Konfigurer og kør jobbet for at beregne opgørelser
 
@@ -45,3 +44,6 @@ Denne procedure hjælper med at konfigurere og køre tilbagevendende batchjob fo
 11. Klik på OK.
 12. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

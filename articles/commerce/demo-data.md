@@ -2,16 +2,13 @@
 title: Skærmlayouts til demodata i Modern POS (MPOS) og Cloud POS
 description: Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
-ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
+ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4411236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761656"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Skærmlayouts til demodata i Modern POS (MPOS) og Cloud POS
 
@@ -36,13 +33,13 @@ Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatas�
 
 De eksempelskærmlayouts, der følger med Commerce-demodata, leverer indhold, der er optimeret til forskellige detailsegmenter, butiksmedarbejderroller og enheder. Et enkelt layout kan indeholde flere layoutstørrelser og kombinationer af knapmatricer for at sikre dækning, når butiksmedarbejderne flytter mellem enheder og stationer. I dette emne beskrives forskellene mellem disse layouts, de operationer, de indeholder, og den samlede oplevelse, de leverer.
 
-![Layouts til demodata på tværs af enheder](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Layouts til demodata på tværs af enheder.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Anatomi af et skærmlayout-id
 
 For at finde skærmlayouts skal du gå til **Retail og Commerce** \> **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
 
-![Side til skærmlayouts](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Side til skærmlayouts.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Skærmlayout-id'er må være på op til 10 tegn. Id'et er en streng, der består af tre dele af oplysninger i følgende rækkefølge:
 
@@ -50,13 +47,13 @@ Skærmlayout-id'er må være på op til 10 tegn. Id'et er en streng, der består
 2. Layoutversion
 3. Karakter
 
-### <a name="company"></a>Regnskab
+### <a name="company"></a>Virksomhed
 
-| Bogstav | Regnskab         |
+| Bogstav | Virksomhed         |
 |--------|-----------------|
 | T      | Adventure Works |
 | F      | Fabrikam        |
-| A      | Contoso         |
+| K      | Contoso         |
 
 ### <a name="layout-version"></a>Layoutversion
 
@@ -82,7 +79,7 @@ F4MGR
 
 I følgende illustration vises et eksempel på velkomstskærmbilledet for en butikschef hos Fabrikam.
 
-![Velkomstskærmbillede for Fabrikam-butikschefen](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Velkomstskærmbillede for Fabrikam-butikschefen.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Layoutstørrelser
 
@@ -111,7 +108,7 @@ Følgende tabel viser de layoutstørrelser, som findes til typiske skærmopløsn
 > [!TIP]
 > POS vælger automatisk layoutstørrelser, baseret på den nærmeste størrelse, der er tilgængelig for skærmopløsningen i det aktuelle appvindue. Hvis du vil finde det skærmlayout-id og den layoutopløsning, der aktuelt bruges i Modern POS (MPOS) eller Retail Cloud POS (CPOS), skal du åbne siden **Indstillinger** siden, og se i afsnittet **Sessionsoplysninger**. Du kan også se den faktiske vinduesopløsning for dit aktuelle program eller browserramme. Når du har disse oplysninger, du kan finde kilden til indholdet i layoutet i Retail ved at gå til **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
 
-![Skærmlayouts og layoutopløsninger/-størrelser i Commerce og POS](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Skærmlayouts og layoutopløsninger/-størrelser i Commerce og POS.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Firmaer og brands
 
@@ -132,19 +129,19 @@ Nedenstående illustrationer viser eksempler på velkomstsiden og transaktionssi
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Velkomstside i demodata til Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Velkomstside i demodata til Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Transaktionsside i demodata til Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Transaktionsside i demodata til Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Velkomstside i demodata til Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Velkomstside i demodata til Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Transaktionsside i demodata til Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Transaktionsside i demodata til Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Layout af demodata til Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Layout af demodata til Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Matrix for brugerlogon
 
@@ -160,7 +157,7 @@ Der er angivet brugere til de forskellige skærmlayouts. Ved hjælp af tabellen 
 | Fabrikam        | F3STK            | Lagermedarbejder   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikschef | 000100, 000111         |
 | Contoso         | C3CSH            | Kasseassistent       | 000110, 000120         |
-| Contoso         | Ikke tilgængelig   | Lagermedarbejder   | Ikke tilgængelig         |
+| Contoso         | Ikke anvendelig   | Lagermedarbejder   | Ikke anvendelig         |
 
 > [!TIP]
 > For at få de bedste resultater skal du aktivere et register i den tilsvarende butikslokalitet og angive firmaet til firmaet for den karakter, som du vil bruge, når du logger på. På denne måde kan du hjælpe med til at garantere, at den visuelle profil og brandingbillederne justeres på tværs af oplevelsen. Hvis du f.eks. er interesseret i at se et layout til Fabrikam for en kasserer, skal du aktivere et register i butikken i Houston.
@@ -171,8 +168,11 @@ Der er angivet brugere til de forskellige skærmlayouts. Ved hjælp af tabellen 
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

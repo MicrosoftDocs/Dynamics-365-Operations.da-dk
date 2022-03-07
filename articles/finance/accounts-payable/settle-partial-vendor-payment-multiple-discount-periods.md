@@ -2,28 +2,25 @@
 title: Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
 description: Denne artikel gennemgår et scenarie, hvor der foretages flere delbetalinger for en kreditor, der tilbyder flere kasserabatter.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 659fb6c98b9ed0589932f8c4a67cb7b08264283c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a0538a522733a9df9ae3b8832959c68bb0c25056694786e4b1a46a2ee7d0fcfc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737083"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
 
@@ -57,11 +54,11 @@ D. 2. juli vil April betale 300,00 af denne faktura. Hun opretter en engangsbeta
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/02/2015 |
 | Kasserabatbeløb         | -20,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -6,12     |
 
@@ -73,11 +70,11 @@ Da der er en tilgængelig kasserabat, vil April ændre det betalingsbeløbet, s�
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 7/02/2015 |
 | Kasserabatbeløb         | -20,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -6,00     |
 
@@ -106,11 +103,11 @@ April beslutter at betale 495,00 og medtagetage kasserabatten på 5,00. Det saml
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
 | Kasserabatdato           | 12-7-2015 |
 | Kasserabatbeløb         | -10,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | -6,00     |
 | Kasserabatbeløb, der skal medtages | -5,00     |
 
@@ -140,3 +137,6 @@ Den 20. juli opretter April en endelig betaling på 200,00. Der medtages ingen k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

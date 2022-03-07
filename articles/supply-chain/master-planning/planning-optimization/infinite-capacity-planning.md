@@ -1,8 +1,8 @@
 ---
 title: Planlægning med uendelig kapacitet
 description: Dette emne indeholder oplysninger om planlægning med uendelig kapacitet for planlægningsoptimering. Det beskriver også de aktuelle funktionsbegrænsninger.
-author: ChristianRytt
-ms.date: 09/21/2021
+author: crytt
+ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,27 +11,23 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982144"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471662"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlægning med uendelig kapacitet
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* introducerer en planlægning, der er baseret på ruteoplysninger. Det giver dig mulighed for at planlægge job ud fra en lang række ruteopsætninger. Planlægning for planlægningsoptimering dækker ofte anvendte ruteindstillinger, herunder rækkefølgen af ruteoperationer eller krav til ruteoperationsressourcer.
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Aktivere funktionen til planlægning med uendelig kapacitet
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Varedisponering*
-- **Funktionsnavn:** *Uendelig kapacitetsplanlægning til Planlægningsoptimering*
-
-Yderligere oplysninger om denne funktion finder du i [Planlægning med ressourcevalg baseret på egenskab](capability-based-scheduling.md).
+Hvis systemet ikke allerede indeholder den funktion, der er beskrevet i dette emne, skal du åbne arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering*.
 
 ## <a name="added-functionality"></a>Tilføjet funktonalitet
 
@@ -46,12 +42,10 @@ Under planlægningsprocessen tager systemet også højde for de *ressourcekrav*,
 - Ressourcetype
 - Ressource
 - Ressourcegruppe
-- Egenskab (Yderligere oplysninger finder du i [Planlægning med ressourcevalg baseret på egenskab](capability-based-scheduling.md).)
+- Egenskab
 
 > [!NOTE]
->
-> - Hvis ressourcen og/eller ressourcegruppen er indstillet til ubegrænset kapacitet, vil varedisponeringen betragte dem som ubegrænset kapacitet.
-> - Krav, der er relateret til personale, for eksempel kompetencer eller certifikatkrav, understøttes ikke endnu.
+> Krav, der er relateret til personale, for eksempel kompetencer eller certifikatkrav, understøttes ikke endnu.
 
 Funktionen understøtter også de operationelle egenskaber **Opstillingstid** og **Kørselstid**. Når du angiver disse egenskaber i en ruteoperation, opretter planlægningsprocessen de relevante opstillings- og procesjob.
 
@@ -61,6 +55,7 @@ Kort sagt understøtter planlægning for planlægningsoptimering de scenarier, d
 
 Der gælder følgende begrænsninger, når du bruger planlægning til planlægningsoptimering:
 
+- Funktionen understøtter kun finplanlægning. Der tages ikke højde for indstillinger, der er relateret til grovplanlægning, under planlægningen, uanset planlægningsmetoden i behovsplanerne.
 - Funktionen understøtter kun uendelig kapacitet.
 - Funktionen understøtter ikke funktioner til ressourcebelastning.
 - Funktionen tager ikke højde for rutespild.

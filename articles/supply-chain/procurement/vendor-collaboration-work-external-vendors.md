@@ -1,12 +1,10 @@
 ---
 title: Kreditorsamarbejde med eksterne kreditorer
 description: I dette emne forklares, hvordan indkøbere bruger kreditorportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016747"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576970"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -35,7 +33,7 @@ Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen 
 > [!NOTE]
 > Oplysningerne om kreditorsamarbejde i dette emne gælder kun for den aktuelle version af Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
 
-Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
+Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definition af de oplysninger, der vises for kreditorer, når de reagerer på indkøbsordrer
 
@@ -242,7 +240,7 @@ For den offentlige sektor muliggør de udvidede funktioner, at en tilbudsanmodni
 - Linje i publicerede tilbudsanmodninger
 - Vedhæftede filer i overskrifter til publicerede tilbudsanmodninger
 
-Med disse enheder kan personer, der ikke er klargjorte brugere i Supply Chain Management, men har anonym adgang til det eksterne websted, se tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Derefter, når indkøberen opretter tilbudsanmodningssagen, skal han eller hun vælge e-mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
+Med disse enheder kan personer, der ikke er klargjorte brugere i Supply Chain Management, men har anonym adgang til det eksterne websted, se tilgængeligt og lukket arbejdet. Desuden gør de udvidede funktioner i **Send og publicer** det muligt for den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, at definere en e-mailskabelon. Når indkøberen derefter opretter tilbudsanmodningssagen, skal vedkommende vælge mailskabelonen for at sende de nødvendige oplysninger til kreditorerne i tilbudsanmodningssagen. 
 
 Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan oprette flere e-mailskabeloner. Disse e-mailskabeloner kan indeholde både statisk tekst og følgende erstatningstokens. Tokenerne erstattes med kontekstafhængige værdier, når der oprettes en e-mail.
 
@@ -258,3 +256,6 @@ Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan opret
 - %createddate%
 
 Hvis der kræves en ændring, og den sendes, når tilbudsanmodningen er sendt, vil tilbudsanmodningen blive sendt igen for alle kreditorer, der inviteret. Det publicerede dokument opdateres også på siden **Åbne publicerede tilbudsanmodninger**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

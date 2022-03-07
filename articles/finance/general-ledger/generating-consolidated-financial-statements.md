@@ -2,26 +2,23 @@
 title: Generere konsoliderede regnskaber
 description: I dette emne beskrives de forskellige scenarier, hvor du kan generere konsoliderede regnskaber.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 10f8754c4156893034117a4d449d464754eacafb0c0f6725c36709632af730ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727353"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
@@ -37,23 +34,23 @@ Den mest enkle metode til konsolidering ved hjælp af Økonomirapportering er at
 3. Opret et trædiagram, der indeholder en rapporteringsnode for hvert regnskab, du bruger i konsoliderede rapporter.
 
 > [!TIP]
-> Du kan finde flere oplysninger om, hvordan du kan oprette og administrere rækkedefinitioner, kolonnedefinitioner og trædiagrammer, i [Komponenter i økonomisk rapport](../../dev-itpro/analytics/financial-report-components.md).
+> Du kan finde flere oplysninger om, hvordan du kan oprette og administrere rækkedefinitioner, kolonnedefinitioner og trædiagrammer, i [Komponenter i økonomisk rapport](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 I følgende illustration vises, hvordan du kan bruge en trædiagramdefinition i Økonomirapportering til at identificere hvert regnskab, du vil konsolidere.
 
-![Rapporteringstrædefinition](./media/reporting-tree-definition.png "Rapporteringstrædefinition")
+![Rapporteringstrædefinition.](./media/reporting-tree-definition.png "Rapporteringstrædefinition")
 
 Som den konsoliderede rapport i følgende illustration viser, kan du se hvert firma separat, når du bruger trædiagrammet sammen med en rapportdefinition. De konsoliderede beløb vises på oversigtsniveau.
 
-![Oversigtsniveau for konsoliderede beløb](./media/consolidate-amount-summary-level.png "Oversigtsniveau for konsoliderede beløb")
+![Oversigtsniveau for konsoliderede beløb.](./media/consolidate-amount-summary-level.png "Oversigtsniveau for konsoliderede beløb")
 
 Du kan også oprette et trædiagram med flere niveauer. Diagrammet kan indeholde så mange niveauer, som du har brug for. I følgende illustration vises en trædiagramdefinition med flere niveauer, der indeholder akkumuleringer fra områder verden over.
 
-![Trædefinition i flere niveauer med akkumuleringer efter område](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Trædefinition i flere niveauer med akkumuleringer efter område")
+![Trædefinition i flere niveauer med akkumuleringer efter område.](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Trædefinition i flere niveauer med akkumuleringer efter område")
 
 I følgende illustration vises en trædiagramdefinition med flere niveauer, der indeholder akkumuleringer efter funktion.
 
-![Trædefinition i flere niveauer med akkumuleringer efter funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Trædefinition i flere niveauer med akkumuleringer efter funktion")
+![Trædefinition i flere niveauer med akkumuleringer efter funktion.](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Trædefinition i flere niveauer med akkumuleringer efter funktion")
 
 ### <a name="viewing-companies-side-by-side"></a>Regnskaber vist ved siden af hinanden
 Mange kunder foretrækker rapporter, hvor regnskaberne vises ved siden af hinanden, og hvor en kolonne viser den konsoliderede total. Dette format er let at opnå, når du har oprettet trædiagrammet. Her er de overordnede trin, du skal bruge for at få vist regnskaber side om side i konsoliderede regnskaber.
@@ -64,19 +61,19 @@ Mange kunder foretrækker rapporter, hvor regnskaberne vises ved siden af hinand
 
 I følgende illustration vises en kolonnedefinition i side om side-format.
 
-![Kolonnedefinition i et side om side-format](./media/column-definition-side-by-side-format.png "Kolonnedefinition i et side om side-format")
+![Kolonnedefinition i et side om side-format.](./media/column-definition-side-by-side-format.png "Kolonnedefinition i et side om side-format")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringer, der bruger organisationsstrukturer, der er oprettet ud fra juridiske enheder
-Organisationshierarkier, der indeholder dimensioner eller juridiske enheder, opretter dynamisk trædiagramdefinitioner i Økonomirapportering. En nem måde at strømline konsolideringer på er ved at føje et organisationshierarki til rapporten i Økonomirapportering. Baseret på rapportdatoen vælger Økonomirapportering organisationshierarkiet på eller før ikrafttrædelsesdatoen, som vist i følgende illustration.
+Organisationshierarkier, der indeholder dimensioner eller juridiske enheder, opretter dynamisk trædiagramdefinitioner i Økonomirapportering. En nem måde at strømline konsolideringer på er ved at føje et organisationshierarki til rapporten i Økonomirapportering. Baseret på rapportdatoen vælger Financial Reporting organisationshierarkiet på eller før ikrafttrædelsesdatoen, som vist i følgende illustration.
 
-![Dynamisk oprettelse af trædiagramdefinition](./media/dynamically-create-reporting-tree-definitions.png "Dynamisk oprettelse af trædiagramdefinition")
+![Dynamisk oprettelse af trædiagramdefinition.](./media/dynamically-create-reporting-tree-definitions.png "Dynamisk oprettelse af trædiagramdefinition")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolideringer, der omfatter elimineringer
 Elimineringstransaktioner er en almindelig del af konsolideringsprocessen. I dette eksempel elimineres fem konti under konsolideringen: 142600, 211400, 401420, 401180 og 510820. Virksomheder kan oprette deres mellemregningskonti anderledes. Nogle virksomheder vælger f.eks. at indstille det sidste ciffer til 9, hvis kontoen bruges i mellemregningstransaktioner. Uanset metoden, hvis du kender mellemregningskontiene, kan du vise elimineringer i dine konsoliderede regnskaber.
 
-Følgende illustration viser en kolonnedefinitionen for en konsolideret resultatopgørelse. Der er defineret tre driftsmellemregningskonti for hvert regnskab ved hjælp af dimensionsfilteret. Kolonne D indeholder kun elimineringskontiene for USMF-firmaet, og kolonne E indeholder kun elimineringer for DEMF-firmaet. Både kolonne D og kolonne E er konfigureret, så de **ikke** udskrives i regnskabet.
+Følgende illustration viser en kolonnedefinitionen for en konsolideret resultatopgørelse. Der er defineret tre driftsmellemregningskonti for hvert regnskab ved hjælp af dimensionsfilteret. Kolonnerne F, G og H omfatter kun elimineringskontiene for USMF-, USRT- og DEMF-regnskaberne. Disse kolonner er konfigureret, så de **ikke** udskrives i regnskabet.
 
-![Kolonnedefinitionen for en konsolideret resultatopgørelse](./media/column-definition-consolidated-income-statement.png "Kolonnedefinitionen for en konsolideret resultatopgørelse")
+![Kolonnedefinitionen for en konsolideret resultatopgørelse.](./media/column-definition-consolidated-income-statement.png "Kolonnedefinitionen for en konsolideret resultatopgørelse")
 
 Når rapporten oprettes, beregnes elimineringsbeløbene i kolonne F, G og H, og de lægges sammen i kolonne I. J viser de konsoliderede beløb. Disse konsolideringsbeløb udelader elimineringer for firmaerne USMF, USRT og DEMF.
 
@@ -85,7 +82,7 @@ Når rapporten oprettes, beregnes elimineringsbeløbene i kolonne F, G og H, og 
 
 Følgende illustration viser den konsoliderede rapport.
 
-![Konsolideret rapport for resultatopgørelse](./media/consolidated-report-income-statement.png "Konsolideret rapport for resultatopgørelse")
+![Konsolideret rapport for resultatopgørelse.](./media/consolidated-report-income-statement.png "Konsolideret rapport for resultatopgørelse")
 
 Om du bruger konti, dimensioner eller begge dele, kan du i Økonomirapportering filtrere elimineringsposter ved hjælp af dimensionsfiltreringsfunktionerne.
 
@@ -98,20 +95,20 @@ I trædiagramdefinitionen skal du angive procentdelen af ejerskab i kolonnen **A
 > [!NOTE]
 > Du kan anvende denne procentdel af ejerskabet på alle rapporteringsenheder, ikke kun på firmaniveau. 
 
-![Bruge procentdel i trædiagramdefinition](./media/Using-reporting-tree-definition-percentage.png "Bruge procentdel i trædiagramdefinition")
+![Bruge procentdel i trædiagramdefinition.](./media/Using-reporting-tree-definition-percentage.png "Bruge procentdel i trædiagramdefinition")
 
 Når rapporten oprettes, viser rapporten Contoso Germany 100 procent af salgsbeløbet, og 80 procent af beløbet bliver fordelt og aggregeret til det konsoliderede niveau for salg.
 
 Hvis du har mindre end 1 % af et firma, kan du markere afkrydsningsfeltet **Tillad aggregering på mindre end 1%** under fanen **Flere indstillinger** på siden **Rapportindstillinger** som vist i følgende illustration. I så fald behandles værdier i kolonnen **Aggregeringsprocent** i diagramtræet som mindre end 1 %. Hvis du f.eks. angiver **0,8**, aggregeres 0,8 % til det konsoliderede niveau, og ikke 80 procent. Alternativt kan du opnå samme resultat ved ikke at markere afkrydsningsfeltet **Tillad aggregering på mindre end 1%** og angive **0,008** i kolonnen **Aggregeringsprocent**.
 
-![Indstillinger for rapporteringsindstillinger](./media/reporting-setting-options.png "Indstillinger for rapporteringsindstillinger")
+![Indstillinger for rapporteringsindstillinger.](./media/reporting-setting-options.png "Indstillinger for rapporteringsindstillinger")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Viser ejerskab som en separat række i den konsoliderede rapport
 En anden indstilling for minoritetsinteresse er at vise 100 procent af datterselskabet for hver linje i rapporten, men fratrække den ikke-bestemmende aktiepost fra nettofortjenesten.
 
 Som følgende illustration viser, kan en **ikke-bestemmende aktiepost**-sætning og kolonnebegrænsning i rækkedefinitionen bruges til at beregne minoritetsinteresse i økonomirapporter.
 
-![Viser ejerskab som en separat række i den konsoliderede rapport](./media/Showing-ownership-separate-row-consolidated-report.png "Viser ejerskab som en separat række i den konsoliderede rapport")
+![Viser ejerskab som en separat række i den konsoliderede rapport.](./media/Showing-ownership-separate-row-consolidated-report.png "Viser ejerskab som en separat række i den konsoliderede rapport")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>Flere kontoplaner på tværs af juridiske enheder
 Ofte har forskellige juridiske enheder forskellige kontoplaner, men vil alligevel oprette konsoliderede regnskaber. I så fald kan Økonomirapportering bruges til at konsolidere dataene, så du kan oprette konsoliderede økonomirapporter. Her er de overordnede konsolideringstrin, når der findes forskellige kontoplaner på tværs af juridiske enheder.
@@ -125,11 +122,11 @@ Der kan tilføjes flere links til økonomiske dimensioner i hver række i række
 > [!TIP]
 > Du kan finde flere oplysninger om cellen **Link til økonomiske dimensioner** under Angiv link til cellen Økonomiske dimensioner.
 
-![Sæt konti først-link til økonomiske dimensioner](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Sæt konti først-link til økonomiske dimensioner")
+![Sæt konti først-link til økonomiske dimensioner.](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Sæt konti først-link til økonomiske dimensioner")
 
 Du kan bruge et trædiagram til at definere, hvilket link til økonomiske dimensioner fra rækkedefinitionen, der bruges sammen med hvert firma. Vælg rækkedefinitionen i kolonne E, og vælg derefter det relevante rækkelink i kolonne F, som vist i følgende illustration.
 
-![Anvendt rækkedefinition for link til økonomiske dimensioner](./media/link-financial-dimensions-row-definition-used.png "Anvendt rækkedefinition for link til økonomiske dimensioner")
+![Anvendt rækkedefinition for link til økonomiske dimensioner.](./media/link-financial-dimensions-row-definition-used.png "Anvendt rækkedefinition for link til økonomiske dimensioner")
 
 > [!TIP]
 > Når du opretter links til økonomiske dimensioner, skal du bruge beskrivelsen til at identificere de firmaer, som hvert hyperlink gælder for. På denne måde kan du lettere vælge det rigtige firma, når du opretter et trædiagram. I kolonnedefinitionen kan du i feltet **Enhed i trædiagram** begrænse hver kolonne til en enhed i træet, så du kan få vist dataene ved siden af hinanden. Hvis du ikke angiver et bestemt firma for en kolonne, vises konsoliderede data for alle firmaer.
@@ -149,16 +146,16 @@ Når du udformer kolonnedefinitionen for flere firmaer, der har forskellige regn
 
 I følgende illustration er firmaet USMF angivet i feltet **Firmanavn** i rapportdefinitionen. Derfor bruges USMF-firmaets regnskabskalender som basisregnskabskalender. Når der i dette eksempel genereres en rapport til 30. juni 2018, bruger firmaet USMF den grundlæggende BASE-periode, der er defineret som periode 12 i rapportdefinitionen. INMF-firmaet bruger BASE–6, som er periode 6. Begge kolonner indeholder data for juni 2018.
 
-![Grundlæggende rapportperiode](./media/report-base-period.png "Grundlæggende rapportperiode")
+![Grundlæggende rapportperiode.](./media/report-base-period.png "Grundlæggende rapportperiode")
 
 I følgende illustration vises de indstillinger i rapportdefinitionen, hvor du kan vælge, om periodenummeret eller periodens slutdato skal bruges til konsolideringen.
 
-![Indstillinger for rapportdefinitionens periodenummer](./media/options-report-definition-period-number.png "Indstillinger for rapportdefinitionens periodenummer")
+![Indstillinger for rapportdefinitionens periodenummer.](./media/options-report-definition-period-number.png "Indstillinger for rapportdefinitionens periodenummer")
 
 ## <a name="business-unit-consolidations"></a>Konsolideringer af virksomhedsenheder
 Dette emne har fokuseret på at bruge trædiagramdefinitioner og organisationshierarkier i Økonomirapportering med henblik på konsolidering. Du kan også bruge trædiagrammet til at oprette konsolideringsrapporter for virksomhedsenheden, f.eks. rapporter om globalt salg eller operationer. Disse rapporter er et almindelig krav. Du kan oprette dem ved at vælge et firma og en dimension for hver enhed, som du vil konsolidere for. F.eks. i følgende illustration er akkumuleringen for virksomhedsenheden opnået ved at gentage hver virksomhed i kolonnen **Firma** (kolonne A) og identificere en gruppe af Dimensionsværdi for afdeling pr. firma i kolonnen **Dimensioner** (kolonne D).
 
-![Konsolideringsrapporter for virksomhedsenheder](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for virksomhedsenheder")
+![Konsolideringsrapporter for virksomhedsenheder.](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for virksomhedsenheder")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>Konsolideringer, der involverer flere rapporteringsvalutaer
 Økonomirapportering giver øget fleksibilitet, når du får vist faktiske data, budgetdata, budgetstyrings- og budgetplanlægningsdata i flere valutaer. Når du leverer på tværs af nøgleopsætningsdata behøver du ikke at fortage yderligere opsætning i Økonomirapportering for at få vist en rapport i en hvilken som helst valuta til enhver tid for alle brugere.
@@ -171,7 +168,7 @@ På hovedkontoen skal felterne **Valutakurstype for økonomirapportering** og **
 - I feltet **Valutakurstype for økonomirapportering** skal du vælge den valutakurstype, der indeholder de valutaer og valutakurser, der skal gælde for kontoen. Denne tabel over valutaer og valutakurser vil blive anvendt til faktiske data i Økonomirapportering.
 - I feltet **Valutaomregningstype** skal du vælge metoden, der bruges til at beregne valutakursen for kontoen. Denne valutametode bruges til både faktiske og budgetterede data i Økonomirapportering.
 
-![Hovedkonti for økonomisk rapportering](./media/Financial-reporting-main-accounts.png "Hovedkonti for økonomisk rapportering")
+![Hovedkonti for økonomisk rapportering.](./media/Financial-reporting-main-accounts.png "Hovedkonti for økonomisk rapportering")
 
 For budget-, budgetstyrings- og budgetplanlægningsdata defineres valutakurstypen på siden **Finans**. Denne tabel skal bruges til at trække valutakurserne, og den valutaomregningstype, der er tildelt til kontoen, bruges.
 
@@ -202,15 +199,15 @@ Regulering af valutaomregning (CTA) er forskellen mellem de kurser, der bruges t
 
 - Brug siden **Afrundingsdifferencer** i rækkedefinitionen, som vist i følgende illustration.
 
-    ![Afrundingsdifferencer ved regulering af valutaomregning](./media/Currency-translation-adjustment-rounding-adjustments.png "Afrundingsdifferencer ved regulering af valutaomregning")
+    ![Afrundingsdifferencer ved regulering af valutaomregning.](./media/Currency-translation-adjustment-rounding-adjustments.png "Afrundingsdifferencer ved regulering af valutaomregning")
 
     Når du angiver den række, der skal vise afrundingsdifferencer (CTA), den samlede række aktiver, de samlede passiver og egenkapitalrækken og den grænse, som du finder i orden, beregner Økonomirapportering forskellen og placerer den i den ønskede række. Der oprettes en linje, **Afrundingsdifference**, som vises ved detailudledning, som vist i følgende illustration.
 
-    ![Detailudledning for afrundingsdifference](./media/rounding-adjustment-drill-down.png "Detailudledning for afrundingsdifference")
+    ![Detailudledning for afrundingsdifference.](./media/rounding-adjustment-drill-down.png "Detailudledning for afrundingsdifference")
 
 - Placer alle konti i et område fra aktiver til udgifter. Som vist i følgende illustration bliver forskellen samme beløb som afrundingsdifferencen. Derfor kan du bruge den som en kontroltotal for at sikre, at siden med afrundingsdifferencen ikke indeholder nogen kontosaldi, som er sprunget over.
 
-    ![Formular til kontrol af afrundingsdifference](./media/rounding-adjustment-form-check.png "Formular til kontrol af afrundingsdifference")
+    ![Formular til kontrol af afrundingsdifference.](./media/rounding-adjustment-form-check.png "Formular til kontrol af afrundingsdifference")
 
 ### <a name="balance-calculation-approach"></a>Saldoberegningsmetode
 For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirapportering følgende beregningsmåder for saldi:
@@ -224,3 +221,6 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

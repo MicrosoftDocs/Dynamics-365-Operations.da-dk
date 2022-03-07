@@ -1,37 +1,34 @@
 ---
 title: Indstillinger for beregning af hele beløbet og intervaller for momskoder
-description: I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
-author: ShylaThompson
-manager: AnnBe
+description: I dette emne beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3e18eac934eb109e8f3f509b2bd78f76dd5f74d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441563"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726817"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Indstillinger for beregning af hele beløbet og intervaller for momskoder
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
+I dette emne beskrives indstillingerne for feltet **Beregningsmåde** for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
 
-Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge, hvordan en momskode skal beregnes.
+Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden **Momskoder** skal du bruge feltet **Beregningsmåde** på oversigtspanelet **Beregning** til at vælge beregningsmetoden for en momskode.
 - Hele beløb – En momssats anvendes på hele det momspligtige beløb.
 - Interval – Det momspligtige beløb er opdelt i dele, hvor hver del ligger inden for et beløbsinterval, der er underlagt en bestemt momssats. Den del af beløbet, der ligger inden for et bestemt interval, pålægges moms i henhold til momssatsen for dette interval. Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
   > [!NOTE]                                                                                                                              
@@ -47,9 +44,8 @@ Hvis et beløb er maksimumgrænsen for det forrige interval og minimumgrænsen f
 ## <a name="example-whole-amount-method-of-calculation"></a>Eksempel: Beregningsmåden er hele beløbet
 På siden Momskodeværdier er momssatserne defineret i følgende intervaller i:
 
-|                   |                   |              |
+| Minimumsgrænse     | Maksimumgrænse     | Momssats     |
 |-------------------|-------------------|--------------|
-| **Minimumsgrænse** | **Maksimumgrænse** | **Momssats** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -66,9 +62,8 @@ Momsen beregnes af hele det momspligtige beløb.
 ## <a name="example-interval-method-of-calculation"></a>Eksempel: Beregningsmåde er interval
 På siden Værdier er momssatserne defineret i følgende intervaller:
 
-|                   |                   |              |
+| Minimumsgrænse     | Maksimumgrænse     | Momssats     |
 |-------------------|-------------------|--------------|
-| **Minimumsgrænse** | **Maksimumgrænse** | **Momssats** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -90,3 +85,6 @@ Du kan finde flere oplysninger i [Momssatser baseret på beregningsgrundlaget og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

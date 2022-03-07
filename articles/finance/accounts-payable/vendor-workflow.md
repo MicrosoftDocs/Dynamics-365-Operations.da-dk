@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: fb89b54b2f9377c216c447590a9434e3ff2d9bac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441786"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248129"
 ---
 # <a name="vendor-workflow"></a>Arbejdsgang for kreditorer
 
@@ -61,3 +60,6 @@ Når du har mindst én foreslåede ændring, vises der to ekstra faner i handlin
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
 Arbejdsgangen følger standardarbejdsgangsprocessen. Godkenderen dirigeres til siden **Kreditor**, hvor ændringerne kan gennemgås på siden **Forslag til ændringer**. Vælg derefter **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

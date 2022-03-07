@@ -2,9 +2,11 @@
 title: Fleksgrupper
 description: Dette emne beskriver, hvordan fleksgrupper bruges i forbindelse med tid og fremmøde.
 author: johanhoffmann
+manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgFlexGroup, JmgFlexCorrection
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 44d8876aac8f8a3439a9a1285780bcc076c95807b950e3640c2a7523beae3f3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b695775b74950d3b5ce7d05d178c24a6bdb5aeb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717022"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214884"
 ---
 # <a name="flex-groups"></a>Fleksgrupper
 
@@ -103,7 +105,7 @@ Arbejderen er tilknyttet en fleksgruppe med følgende konfiguration:
 - **Minimum for lønart:** 1302
 - **Faktor for lønart:** -1,0
 
-Som forskellen mellem arbejderens flekskonto og den tilladte fleksmaksimum angiver, har arbejderen overskredet sit tilladte fleksmaksimum med 4,0 timer.
+Som forskellen mellem arbejderens flekskonto og hendes tilladte fleksmaksimum angiver, har arbejderen overskredet sit tilladte fleksmaksimum med 4,0 timer.
 
 Når lønadministratoren overfører arbejderens løndata ved at køre jobbet **Overfør til løn** eller **Fleksregulering**, foretages følgende justeringer:
 

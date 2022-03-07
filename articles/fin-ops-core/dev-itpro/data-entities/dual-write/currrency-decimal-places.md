@@ -2,34 +2,25 @@
 title: Migrering af valutadatatype til dobbeltskrivning
 description: Dette emne indeholder en beskrivelse af, hvordan du kan ændre det antal decimaler, som dobbeltskrivning understøtter for valuta.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744369"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061830"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering af valutadatatype til dobbeltskrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan øge antallet af decimaler, der understøttes for valutaværdier, til højst 10. Standardgrænsen er fire decimaler. Ved at øge antallet af decimaler undgår du datatab, når du bruger dobbeltskrivning til synkronisering af data. Stigningen i antallet af decimaler er et tilvalg. Hvis du vil implementere den, skal du bede Microsoft om hjælp.
 
@@ -38,7 +29,7 @@ Du kan øge antallet af decimaler, der understøttes for valutaværdier, til hø
 1. Anmod om migrering fra Microsoft.
 2. Ret antallet af decimaler i Dataverse.
 
-Finance and Operations-appen og Dataverse skal understøtte det samme antal decimaler i valutaværdier. Ellers kan der opstå datatab, når disse oplysninger synkroniseres mellem apps. Migreringsprocessen konfigurerer den måde, værdierne for valuta og valutakurs gemmes på, men den ændrer ikke nogen data. Når migreringen er fuldført, kan antallet af decimaler for valutakoder og prisfastsættelse øges, og de data, som brugerne indtaster og ser, kan have større decimalpræcision.
+Finans- og driftsappen og Dataverse skal understøtte det samme antal decimaler i valutaværdier. Ellers kan der opstå datatab, når disse oplysninger synkroniseres mellem apps. Migreringsprocessen konfigurerer den måde, værdierne for valuta og valutakurs gemmes på, men den ændrer ikke nogen data. Når migreringen er fuldført, kan antallet af decimaler for valutakoder og prisfastsættelse øges, og de data, som brugerne indtaster og ser, kan have større decimalpræcision.
 
 Migrering er valgfri. Hvis du kan få fordel ved understøttelse af flere decimaler, anbefales du at overveje migrering. Organisationer, der ikke har brug for værdier med mere end fire decimaler, behøver ikke at overføre data.
 
@@ -46,13 +37,13 @@ Migrering er valgfri. Hvis du kan få fordel ved understøttelse af flere decima
 
 Lager til eksisterende valutakolonner i Dataverse understøtter ikke mere end fire decimalpladser. Under migreringsprocessen kopieres valutaværdier derfor til nye interne kolonner i databasen. Denne proces foregår løbende, indtil alle data er overført. Internt i slutningen af migreringen erstatter de nye lagertyper de gamle lagertyper, men dataværdierne er uændrede. Valutakolonnerne kan derefter understøtte op til ti decimaler. Under migreringsprocessen kan Dataverse fortsat blive brugt uden afbrydelser.
 
-På samme tid ændres valutakurserne, så de understøtter op til 12 decimaler i stedet for den aktuelle grænse på 10. Denne ændring er påkrævet, så antallet af decimaler er det samme i både Finance and Operations-appen og Dataverse.
+På samme tid ændres valutakurserne, så de understøtter op til 12 decimaler i stedet for den aktuelle grænse på 10. Denne ændring er påkrævet, så antallet af decimaler er det samme i både Finans- og driftsappen og Dataverse.
 
 Migrering ændrer ikke nogen data. Når kolonnerne for valuta og valutakurs konverteres, kan administratorer konfigurere systemet til at bruge op til ti decimaler for valutakolonner ved at angive antallet af decimaler for hver transaktionsvaluta og for prisfastsættelse.
 
 ### <a name="request-a-migration"></a>Anmode om en migrering
 
-Hvis du vil gøre denne funktion tilgængelig, skal du sende en mail til **CDSExpandDecimal@microsoft.com** og medtage følgende oplysninger:
+Hvis du vil gøre denne funktion tilgængelig, skal du sende en email til **CDSExpandDecimal@microsoft.com** og medtage følgende oplysninger:
 
 + **Emne:** Anmodning om at aktivere udvidet decimalunderstøttelse for \<organizationID\>
 + **Brødtekst:** Jeg vil gerne aktivere udvidet decimalunderstøttelse for min organisation \<organizationID\>.
@@ -84,14 +75,28 @@ Der er nogle begrænsninger:
 
 Når migreringen er fuldført, kan administratorer angive valutapræcisionen. Gå til **Indstillinger \> Administration**, og vælg **Systemindstillinger**. Under fanen **Generelt** skal du ændre værdien af kolonnen **Vælg den valutapræcision, der bruges til prissætning i hele systemet**, som vist i følgende illustration.
 
-![Systemindstillinger for valuta](media/currency-system-settings.png)
+![Systemindstillinger for valuta.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: valutaer
 
 Hvis du kræver, at valutapræcisionen for en bestemt valuta er forskellig fra den valutapræcision, der bruges til prisfastsættelsen, kan du ændre den. Gå til **Indstillinger \> Forretningsstyring**, vælg **Valutaer**, og vælg den valuta, der skal ændres. Angiv derefter kolonnen **Valutapræcision** til det antal decimaler, du ønsker, som vist i følgende illustration.
 
-![Valutaindstillinger for en bestemt landestandard](media/specific-currency.png)
+![Valutaindstillinger for en bestemt landestandard.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabeller: valutakolonne
+### <a name="tables-currency-column"></a>Tabeller: valutakolonne
 
 Det antal decimaler, der kan konfigureres for bestemte valutakolonner, er begrænset til fire.
+
+### <a name="default-currency-decimal-precision"></a>Decimalpræcision i standardvaluta
+Se følgende tabel for den forventede funktionsmåde af standardvalutaens decimalpræcision i overflytnings- og ikke-overflytningsscenarier. 
+
+| Oprettelsesdato  | Feltet valutadecimal    | Eksisterende organisation (feltet Valuta er ikke overflyttet) | Eksisterende organisation (feltet Valuta er overflyttet) | Ny organisation oprettet efter build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Valutafelt oprettet før build 9.2.21111.00146  |     |  |       |
+|    | Maksimal præcision synlig i brugergrænsefladen   | Fire cifre    | Ti cifre    | I/T    |
+| | Maksimal præcision synlig i brugergrænsefladen til database og databaseforespørgsler         | Fire cifre   | Ti cifre   | I/T    |
+| Valutafelt oprettet før efter 9.2.21111.00146 |    |  |     |   |
+|   | Maksimal decimalpræcision synlig i brugergrænsefladen     | Fire cifre   | Ti cifre   | Ti cifre     |
+|          | Maksimal decimalpræcision synlig i brugergrænsefladen til database og databaseforespørgsler | Ti cifre. Men det er kun fire, der er betydende med alle nuller ud over de fire decimaler. Dette giver en simplere og hurtigere overflytning af organisationen, hvis det er nødvendigt. | Ti cifre      | Ti cifre     |
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

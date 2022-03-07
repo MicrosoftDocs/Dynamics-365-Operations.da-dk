@@ -2,28 +2,25 @@
 title: Understøttelse af to momsvalutaer
 description: I dette emne forklares det, hvordan du udvider funktionen vedrørende regnskab for to valutaer på momsområdet og indvirkningen på momsberegning og bogføring
 author: EricWang
-manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 449ebe55b8be7ee7ea22b4be7c44162d83fc3c2affbd4d20f4cad235ddb0f772
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742198"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Understøttelse af to momsvalutaer
 [!include [banner](../includes/banner.md)]
@@ -44,10 +41,10 @@ Yderligere oplysninger om to valutaer finder du under [To valutaer](dual-currenc
 
 Som følge af support i forbindelse med dobbelte valutaer er der stillet to nye funktioner i funktionsstyring til rådighed: 
 
-- Momskonvertering (udgivet i version 10.0.9)
-- Automatisk saldo for momsafregning i rapporteringsvaluta (udgivet i version 10.0.11)
+- Momskonvertering (ny i version 10.0.13)
+- Angive økonomiske dimensioner i driftskontiene for realiseret valutaregulering til momsafregning (nyt i version 10.0.17)
 
-Understøttelse af to momsvalutaer sikrer, at momsen beregnes nøjagtigt i momsvalutaen, og at momsafregningssaldoen beregnes nøjagtigt i både regnskabsvalutaen og rapporteringsvalutaen. 
+Understøttelse af to momsvalutaer sikrer, at momsen beregnes nøjagtigt i momsvalutaen, og at momsafregningssaldoen beregnes nøjagtigt i både regnskabsvalutaen og rapporteringsvalutaen.
 
 ## <a name="sales-tax-conversion"></a>Omregning af moms
 
@@ -92,6 +89,10 @@ Denne funktion gælder kun for nye transaktioner. For så vidt angår momstransa
 
 Hvis du vil undgå ovenstående, anbefales det, at du ændrer denne parameterværdi i en ny (ren) momsafregningsperiode, der ikke indeholder nogen ikke-udlignede momstransaktioner. Hvis du vil ændre denne værdi midt i en momsafregningsperiode, skal du køre programmet "Udligning og bogføring af moms" for den aktuelle momsafregningsperiode, før du ændrer denne parameterværdi.
 
+Denne funktion tilføjer regnskabsposter, der tydeliggør gevinster og tab fra valutakurser. Posterne indføres i driftskontiene for realiseret valutaregulering, når værdireguleringen foretages under momsafregning. Du kan finde flere oplysninger i afsnittet [Automatisk saldo for momsafregning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i dette emne.
+
+> [!NOTE]
+> Under afregningen hentes der oplysninger om økonomiske dimensioner fra momskonti, som er statuskonti, og de angives i driftskontiene for valutaregulering, som er driftsopgørelseskonti. Da begrænsninger for værdien af økonomiske dimensioner varierer mellem statuskonti og driftsopgørelseskonti, kan der opstå en fejl under processen Afregn og bogfør moms. Hvis du vil undgå at skulle ændre kontostrukturer, kan du aktivere funktionen "Udfyld økonomiske dimensioner i driftskontiene for realiseret valutaregulering til momsafregning". Denne funktion tvinger afledning af økonomiske dimensioner til driftskontiene for valutaregulering. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Spor momsbeløbet i rapporteringsvaluta
 
@@ -118,7 +119,7 @@ Hvis du bruger eksemplet ovenfor til at demonstrere denne funktion, skal du gå 
 | Regnskabsvaluta             | 100                        | 111                       | 83                       | **83.25**          |
 | Rapporteringsvaluta              | 100                        | 111                       | 83                       | **83**             |
 
-Når du kører momsafregningsprogrammet ved månedsafslutning, vil regnskabsbogføringen være følgende:.
+Når du kører momsafregningsprogrammet ved månedsafslutning, vil regnskabsbogføringen være følgende.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Scenarie: omberegning af momsbeløb = "Regnskabsvaluta"
 
 | Hovedkonto           | Transaktionsvaluta (GBP) | Regnskabsvaluta (USD) | Rapporteringsvaluta (GBP) |
@@ -145,3 +146,6 @@ Du kan finde flere oplysninger under følgende emner:
 - [Dobbelt valuta](dual-currency.md)
 - [Momsoversigt](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters, OMLegalEntity, UnitOfMeasure, ExtCodeTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6930b0edd41afa551611a5d1e96c904093cd9778
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 73d5f5cc817a244ff6c31b1128a06e4a34489422
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407687"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988089"
 ---
 # <a name="set-up-oioubl-electronic-invoicing"></a>Konfigurere elektronisk OIOUBL-fakturering
 

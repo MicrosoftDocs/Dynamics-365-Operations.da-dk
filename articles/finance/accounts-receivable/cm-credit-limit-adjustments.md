@@ -1,26 +1,23 @@
 ---
 title: Reguleringer af kreditgrænse
 description: I dette emne beskrives, hvordan du kan konfigurere og tilføje reguleringer af kreditgrænser.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441527"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753892"
 ---
 # <a name="credit-limit-adjustments"></a>Reguleringer af kreditgrænse 
 
@@ -124,3 +121,6 @@ Arbejdsgangene for **Reguleringer af kreditmaksimum** kan bruges til at sende kr
 
 > [!NOTE]
 > Når du opretter arbejdsgangen **Reguleringer af kreditmaksimum**, kan du konfigurere den, så reguleringerne automatisk bogføres, efter at linjerne er godkendt. Du skal blot medtage opgaven **Bogfør kladde automatisk** i arbejdsgangen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

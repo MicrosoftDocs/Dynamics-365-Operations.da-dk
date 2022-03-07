@@ -2,28 +2,19 @@
 title: Firmakoncept i Dataverse
 description: I dette emne beskrives integrationen af virksomhedsdata mellem Finance and Operations og Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 24cd936fd330ce2bdfc6aa7cac75ab5bacbbf3d0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744873"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416773"
 ---
 # <a name="company-concept-in-dataverse"></a>Firmakoncept i Dataverse
 
@@ -45,7 +36,7 @@ Da virksomhedsenhed og firma ikke er tilsvarende koncepter, er det ikke muligt a
 
 I følgende illustration vises et eksempel på denne dataopsætning i Dataverse.
 
-![Dataopsætning i Dataverse](media/dual-write-company-1.png)
+![Dataopsætning i Dataverse.](media/dual-write-company-1.png)
 
 På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-firmaet, af et team, der er knyttet til USMF-virksomhedsenheden i Dataverse. Derfor kan alle brugere, der har adgang til den pågældende virksomhedsenhed via en sikkerhedsrolle, der er angivet til synlighed på virksomhedsenhedsniveau, nu se disse rækker. Følgende eksempel viser, hvordan teams kan bruges til at give den korrekte adgang til disse rækker.
 
@@ -54,21 +45,21 @@ På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-fi
 + Teamet "USMF Sales" er knyttet til den USMF-virksomhedsenhed, der er nævnt tidligere.
 + Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmatabellen i Finance and Operations.
 
-![Sådan kan teams bruges](media/dual-write-company-2.png)
+![Sådan kan teams bruges.](media/dual-write-company-2.png)
 
 Som den foregående illustration viser, er denne 1:1-tilknytning mellem virksomhedsenhed, firma og team blot et udgangspunkt. I dette eksempel oprettes der manuelt en ny "Europe"-virksomhedsenhed i Dataverse som overordnet til både DEMF og ESMF. Denne nye rodvirksomhedsenhed er ikke relateret til dobbeltskrivning. Den kan dog bruges til at give medlemmerne af "EUR Sales"-teamet adgang til kontodata i både DEMF og ESMF ved at indstille datasynlighed til **Parent/Child BU** i den tilknyttede sikkerhedsrolle.
 
 Et sidste emne, der skal omtales, er, hvordan dobbeltskrivning afgør, hvilket ejerteam det skal tildeles rækker. Denne funktionsmåde styres af kolonnen **Standardejerteam** på cdm\_Company-rækken. Når en cdm\_Company-række er aktiveret til dobbeltskrivning, opretter en plug-in automatisk den tilknyttede virksomhedsenhed og ejerteamet (hvis den ikke allerede findes) og indstiller kolonnen **Standardejerteam**. Administratoren kan ændre denne kolonne til en anden værdi. Men administratoren kan ikke rydde kolonnen, så længe tabellen er aktiveret til dobbeltskrivning.
 
 > [!div class="mx-imgBorder"]
-![Kolonnen Standardejerteam](media/dual-write-default-owning-team.jpg)
+![Kolonnen Standardejerteam.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Firma-striping og bootstrapping
 
 Dataverse-integration giver firmaparitet ved at bruge en firmaidentifikator til at stripe data. Som det fremgår af følgende illustration, udvides alle firmaspecifikke tabeller, så de har en mange-til-en-relation (N:1) med tabellen cdm\_Company.
 
 > [!div class="mx-imgBorder"]
-![N:1-relation mellem en firmaspecifik tabel og tabellen cdm_Company](media/dual-write-bootstrapping.png)
+![N:1-relation mellem en firmaspecifik tabel og tabellen cdm_Company.](media/dual-write-bootstrapping.png)
 
 + Når et firma er tilføjet og gemt i rækker, bliver værdien skrivebeskyttet. Derfor skal brugerne sørge for, at de vælger det rigtige firma.
 + Kun rækker, der har firmadata, er kvalificerede til dobbeltskrivning mellem programmet og Dataverse.
@@ -91,7 +82,7 @@ Du kan automatisk udfylde firmanavnet i kundeengagementapps på flere måder.
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Når du vælger en række, ændres standardfirmaet.":::
 
-+ Hvis du er systemkonfigurator eller -administrator, og du vil udfylde firmadata automatisk i en brugerdefineret formular, kan du bruge [formularhændelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Føj en JavaScript-reference til **msdyn_/DefaultCompany.js**, og brug følgende hændelser. Du kan bruge enhver standardformular, f.eks. formularen **Konto**.
++ Hvis du er systemkonfigurator eller -administrator, og du vil udfylde firmadata automatisk i en brugerdefineret formular, kan du bruge [formularhændelser](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Føj en JavaScript-reference til **msdyn_/DefaultCompany.js**, og brug følgende hændelser. Du kan bruge enhver standardformular, f.eks. formularen **Konto**.
 
     + Hændelsen **OnLoad** for formularen: Angiv kolonnen **defaultCompany**.
     + Hændelsen **OnChange** for kolonnen **Firma**: Angiv kolonnen **updateDefaultCompany**.
@@ -100,5 +91,8 @@ Du kan automatisk udfylde firmanavnet i kundeengagementapps på flere måder.
 
 Hvis du vil anvende filtrering baseret på firmakonteksten i de brugerdefinerede formularer eller på brugerdefinerede opslagskolonner, der er føjet til standardformularer, skal du åbne formularen og bruge sektionen **Filtrering af relaterede poster** til at anvende firmafilteret. Du skal angive dette for hver opslagskolonne, der kræver filtrering, på baggrund af det underliggende firma på en bestemt række. Indstillingen vises for **Konto** i følgende illustration.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Anvende firmakontekst":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Anvende firmakontekst.":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

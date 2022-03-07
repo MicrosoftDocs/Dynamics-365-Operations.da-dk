@@ -2,27 +2,23 @@
 title: Oversigt over standardlandingsside for kategori og side for søgeresultater
 description: Dette emne indeholder en oversigt over standardlandingsside for kategori og side for søgeresultater i Dynamics 365 Commerce.
 author: ashishmsft
-manager: annbe
 ms.date: 06/30/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411046"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982428"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversigt over standardlandingsside for kategori og side for søgeresultater
 
@@ -34,7 +30,7 @@ Dette emne indeholder en oversigt over standardlandingssiden for kategorier og s
 
 Standardlandingssiden for kategorier er den side, som brugerne af et websted typisk får vist, når de vælger en kategori i navigationshierarkiet. Du kan gennemse kategorisiden, og du kan også sortere og finpudse de kategoriserede produkter.
 
-![Standardlandingsside for kategorier](./media/SimpleCategoryLandingDressCategory.png)
+![Standardlandingsside for kategorier.](./media/SimpleCategoryLandingDressCategory.png)
 
 Øverst på siden findes et sidehoved, der viser alle produktkategorierne og andre sider, som produktchefen har kategoriseret. Konfigurationen udføres som en del af konfigurationen af kanalnavigationshierarkiet. Nederst på startsiden findes en sidefod med hurtige links til forskellige emner, som kan have interesse for kunderne.
 
@@ -58,7 +54,7 @@ Følgende komponenter er vigtige for en kategori:
 
 Hvis du ønsker, at en landingsside for en kategori skal have en mere skræddersyet oplevelse for en bestemt kategori, kan du "forbedre" kategorilandingssiden for den pågældende kategori. Du kan f.eks. tilføje en marketingvideo og fortælle om kategorien for at få kundernes opmærksomhed. Du kan finde flere oplysninger under [Forbedre en kategorilandingsside](enrich-category-page.md).
 
-![Forbedre en kategorilandingsside](./media/CategoryLandingPages.png)
+![Forbedre en kategorilandingsside.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Sider med automatiske forslag og søgeresultater
 
@@ -72,11 +68,11 @@ Her er nogle af de typer forslag, der kan vises:
 - **Produkter** giver direkte links til siden med produktdetaljer.
 - **Søgeforslag for kategoriområde** viser forskellige kategorier og lader brugere søge efter nøgleordet i en bestemt kategori.
 
-![Avancerede automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![Avancerede automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 Når brugerne vælger et af søgeforslagene for nøgleord eller områdekategori, eller når der ikke er nogen forslag til det søgeord, de angiver, omdirigeres de til en side med søgeresultater. Brugerne kan derefter gennemse, sortere og finjustere listen over søgeresultater for at finde det ønskede produkt.
 
-![Landingsside for søgeresultater](./media/SearchLanding.png)
+![Landingsside for søgeresultater.](./media/SearchLanding.png)
 
 Følgende komponenter er vigtige for en søgeresultatside:
 
@@ -97,7 +93,7 @@ Følgende komponenter er vigtige for en søgeresultatside:
 
 >[!NOTE]
 >Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
-![Konfigurationsparametre for cloud-baseret søgning](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -111,3 +107,6 @@ Følgende komponenter er vigtige for en søgeresultatside:
 
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

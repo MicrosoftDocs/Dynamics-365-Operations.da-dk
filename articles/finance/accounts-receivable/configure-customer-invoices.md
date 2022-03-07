@@ -1,29 +1,26 @@
 ---
 title: Oprette en debitorfaktura
-description: En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde.
+description: En debitorfaktura for en salgsordre er en regning, som er relateret til et salg, og som en organisation giver til en kunde.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441429"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087417"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
@@ -45,6 +42,23 @@ Du kan få flere oplysninger på:
 
 
 En **proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en proformafaktura for en debitorfaktura for en salgsordre eller for en fritekstfaktura.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Bruge dataenheder for salgsordres debitorfaktura
+Du kan bruge dataenheder til at importere og eksportere oplysninger om en debitorfaktura for en salgsordre. Der er forskellige enheder til oplysningerne i salgsfakturahovedet og salgsfakturalinjerne.
+
+Følgende objekter er tilgængelige for oplysningerne i salgsfakturahovedet:
+
+- **Hoved i salgsfakturakladde**-enhed (SalesInvoiceJournalHeaderEntity)
+- **Salgsfakturahoveder V2**-enhed (SalesInvoiceHeaderV2Entity)
+
+Det anbefales, at du bruger enheden **Hoved i salgsfakturakladde**, da det giver en mere effektiv import og eksport af salgshoveder. Denne enhed indeholder ikke kolonnen **Momsbeløb** (INVOICEHEADERTAXAMOUNT), som repræsenterer momsværdien i salgsfakturahovedet. Hvis forretningsscenariet kræver disse oplysninger, skal du bruge enheden **Salgsfakturahoveder V2** til at importere og eksportere oplysningerne i salgsfakturahovedet.
+
+Følgende objekter er tilgængelige for oplysningerne på salgsfakturalinjer:
+
+- **Debitorfakturalinjer**-enhed (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Salgsfakturalinjer V3**-enhed (SalesInvoiceLineV3Entity)
+
+Når du afgør, hvilken linjeenhed der skal bruges til eksport, skal du overveje, om der skal bruges et helt push eller et trinvist push. Overvej desuden datakompositionen. Enheden **Salgsfakturalinjer V3** understøtter mere komplekse scenarier (f.eks. tilknytning til lagerfelter). Den understøtter også scenarier med eksport af fuld push. I forbindelse med trinvis push anbefales det, at du bruger enheden **Debitorfakturalinjer**. Denne enhed indeholder en meget simplere datakomposition end enheden **Salgsfakturalinjer V3**, og den foretrækkes især, hvis det ikke er nødvendigt at integrere lagerfeltet. På grund af forskelle i understøttelse af tilknytning mellem linjeenhederne har enheden for **Debitorfakturalinjer** typisk en hurtigere ydeevne end enheden **Salgsfakturalinjer V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Bogføre og udskrive individuelle debitorfakturaer, der er baseret på salgsordrer
 Brug denne proces til at oprette en faktura, der er baseret på en salgsordre. Det kan du f.eks. gøre, hvis du beslutter at fakturere debitoren, før du leverer varerne eller tjenesterne. 
@@ -167,3 +181,6 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

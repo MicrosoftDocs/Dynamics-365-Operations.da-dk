@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b704699c5e04f38c3b79691f935287f8f9c24fba
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017862"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263704"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt oprettede arbejdsordrer
 
@@ -165,3 +165,6 @@ I illustrationen nedenfor vises et eksempel på dialogboksen **Opret arbejdsordr
 >[!NOTE]
 >Du kan også oprette arbejdsordrer automatisk ved at planlægge vedligeholdelsesplanjob eller ved at konfigurere "Automatisk oprettelse" af [vedligeholdelsesplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [vedligeholdelsesrunder](../preventive-and-reactive-maintenance/maintenance-rounds.md) for et aktiv. Arbejdsordrer, der er oprettet ud fra vedligeholdelsesanmodninger på siden **Hele vedligeholdelsestidsplanen**, har de vedligeholdelsesjobtyper, der er valgt i vedligeholdelsesanmodningerne.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

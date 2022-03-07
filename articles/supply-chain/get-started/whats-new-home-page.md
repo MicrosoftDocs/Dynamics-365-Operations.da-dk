@@ -2,26 +2,24 @@
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management
 description: Dette emne peger på emner, der beskriver de nye og ændrede funktioner i hver version af Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3350afc5f9537a0bd97b9c5257a66039b9dcb55c
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: b21fba6fbfd4fe2a645efd56fb3592252c2a3fe0
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014552"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920617"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management
 
@@ -31,8 +29,16 @@ ms.locfileid: "5014552"
 
 Oplysninger om, hvad der er nyt eller ændret i hver version af Dynamics 365 Supply Chain Management, finder du i følgende emner.
 
-| Version | Build-nummer | Tilgængelighed af automatisk opdatering | Få mere at vide |
+| Version | Build-nummer | Tilgængelighed af automatisk opdatering | Få flere oplysninger |
 |---|---|---|---|
+| 10.0.24 | 10.0.1084 | 2022. februar | [Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.24](whats-new-scm-10-0-24.md) |
+| 10.0.23 | 10.0.1037 | 2022. januar | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.23](whats-new-scm-10-0-23.md) |
+| 10.0.22 | 10.0.995 | November 2021 | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
+| 10.0.21 | 10.0.960 | 2021. oktober | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
+| 10.0.20 | 10.0.886 | August 2021 | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.20](whats-new-scm-10-0-20.md) |
+| 10.0.19 | 10.0.837 | 2021. juni | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.19](whats-new-scm-10-0-19.md) |
+| 10.0.18 | 10.0.793 | Maj 2021 | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.18](whats-new-scm-10-0-18.md) |
+| 10.0.17 | 10.0.761 | 2021. april | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.17](whats-new-scm-10-0-17.md) |
 | 10.0.16 | 10.0.689 | 2021. februar | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.16](whats-new-scm-10-0-16.md) |
 | 10.0.15 | 10.0.644 | 2021. januar | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.15](whats-new-scm-10-0-15.md) |
 | 10.0.14 | 10.0.605 | November 2020 | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.14](whats-new-scm-10-0-14.md) |
@@ -67,3 +73,6 @@ Oplysninger om, hvad der er nyt eller ændret i frigivelser før november 2019, 
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | November 2016    | [Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | Maj 2016         | [Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016. februar    | [Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

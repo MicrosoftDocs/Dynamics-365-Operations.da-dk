@@ -1,12 +1,10 @@
 ---
 title: Automatisk opdatering af aktivtællere
 description: I dette emne beskrives automatisk opdatering af aktivtællere i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f15aea2f867de6f0bcf01ecfd046efc44581a1ec
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021924"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820436"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk opdatering af aktivtællere
 
@@ -69,3 +67,6 @@ Vær opmærksom på følgende punkter:
 
 - Du kan oprette tællere, der er relateret til en anden tæller. I dette tilfælde opdateres relaterede tællere automatisk, når en tæller opdateres. Du kan finde flere oplysninger om, hvordan du konfigurerer relaterede tællere, i [Tællere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

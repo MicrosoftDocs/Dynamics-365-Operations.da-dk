@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2ac4a4a42447e4ee57d24548a79f43b88b03927
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410997"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213692"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedligeholde detailkanaler
 
@@ -89,3 +88,6 @@ Commerce bruger organisationshierarkier til at strukturere kanaler. Organisation
 > [!NOTE]
 > Hvis du vil bruge funktionaliteten Commerce Sales, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af forskellige valideringer, som er baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

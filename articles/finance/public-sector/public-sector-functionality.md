@@ -1,7 +1,7 @@
 ---
 title: Startside for offentlig sektor
-description: Dynamics 365 Finance understøtter almindelige forretningsprocesser i den offentlige sektor. Disse processer omfatter budgetplanlægnings-, indkøbs-, kreditor- og debitoropgaver.
-author: v-kiarnd
+description: Dynamics 365 Finance understøtter almindelige forretningsprocesser i den offentlige sektor. Disse omfatter budgetplanlægnings-, indkøbs-, kreditor- og debitoropgaver.
+author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 3b8779f0ece4f9befe612750ceb9c78e19a7a483
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817735"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338649"
 ---
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 

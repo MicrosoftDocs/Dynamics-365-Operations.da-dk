@@ -2,28 +2,25 @@
 title: Værdiregulering af udenlandsk valuta for Finans
 description: 'Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt.'
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: e2f24c60b3fb82532f50e58dde9a19f5fefb25d5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4441726"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832916"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
@@ -84,7 +81,7 @@ Hovedkontoen værdireguleres den 31 januar.  Ikke-realiseret gevinst eller tab b
 
 | Aktuel saldo i transaktionsvaluta | Aktuel saldo i regnskabsvaluta | Valutakurs på værdiregulering | Nyt beløb i regnskabsvaluta | Ikke-realiseret gevinst/tab    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 tab (833,33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 tab (833,33 – 1000) |
 
 Der oprettes følgende regnskabspost.
 
@@ -113,3 +110,6 @@ Du kan tilbageføre resultaterne af forældet værdiregulering, men du skal muli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

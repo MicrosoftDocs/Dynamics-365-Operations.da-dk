@@ -1,39 +1,42 @@
 ---
-title: Oprette et dataintegrationsprojekt
-description: Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
+title: Opret et dataintegratorprojekt (prøveversion)
+description: Dette emne forklarer, hvordan du opretter et dataintegratorprojekt.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+manager: AnnBe
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 0029e093f524c61ff17a480ee3b881b3994ba95a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107281"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009437"
 ---
-# <a name="create-a-data-integration-project"></a>Oprette et dataintegrationsprojekt
+# <a name="create-a-data-integrator-project-preview"></a>Opret et dataintegratorprojekt (prøveversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
+Dette emne forklarer, hvordan du opretter et dataintegratorprojekt.
 
 1. Log på Microsoft Dynamics 365 Finance.
 2. Gå til **Arbejdsområder \> Datastyring**, og vælg **Dataenheder**. Vent, indtil alle dataenheder er opdateret, før du går videre til næste trin.
 3. Åbn [Power Apps-portalen](https://make.powerapps.com/), og udfør følgende trin:
 
     1. Vælg det relevante miljø.
-    2. Vælg **Dataverse \> Forbindelser** i den venstre navigationsrude.
+    2. Vælg **Data \> Forbindelser** i den venstre navigationsrude.
     3. Opret forbindelse til de relevante forekomster af følgende elementer:
 
         - Dynamics 365
@@ -41,7 +44,7 @@ Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
 
 4. Åbn [Power Apps-miljøer](https://admin.powerapps.com/environments), og udfør følgende trin:
 
-    1. Vælg **Dataintegration**.
+    1. Vælg **Dataintegrator**.
     2. Vælg **Forbindelsessæt**.
     3. Vælg **Nyt forbindelsessæt**.
     4. Angiv et navn for forbindelsen.
@@ -57,13 +60,15 @@ Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
 
     1. Opret dataintegrationsprojekter til følgende skabeloner ved hjælp af det forbindelsessæt, du lige har oprettet:
 
-        - Resultat af indsigt i kundebetaling (CDS til Fin og Ops 10.0.17+)
+        - Resultater af indsigt i kundebetaling (CDS til Fin og Ops)
         - Pengestrømsresultater for likviditetsserier (CDS Fin og Ops)
         - Budgetresultater for tidsserier (CDS Fin og Ops)
 
     2. Angiv den relevante planlægning for hvert projekt.
 
 > [!NOTE]
-> Hvis du ikke kan se de påkrævede enheder i Dataverse, skal du gå til **Kredit og rykkere** > **Konfiguration** > **Finance Insights** > **Finance Insights-parametre**, aktivere funktionen **Debitorbetalingsforudsigelser** og vælge **Opret forudsigelsesmodel**. Når implementeringen af AI-modellen er fuldført, vil de Dataverse-enheder, der skal bruges til at oprette integrationen, blive installeret .
+> Hvis du ikke kan se de påkrævede enheder i CDS, skal du gå til **Kredit og rykkere > Opsætning > Finance Insights > Finance Insights-parametre**, aktivere funktionen Debitorbetalingsforudsigelser og klikke på knappen **Opret forudsigelsesmodel**. Når implementeringen af AI-modellen er fuldført (med eller uden succes), vil de CDS-enheder, der skal bruges til at oprette integrationen, blive installeret i CDS.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
+
+Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.

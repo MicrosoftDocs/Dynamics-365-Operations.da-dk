@@ -2,9 +2,11 @@
 title: Handlingsmeddelelser
 description: En aktionsmeddelelse er et systemgenereret forslag om ændring af en eksisterende planlagt eller autoriseret ordre.
 author: ChristianRytt
+manager: tfehr
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb208d390d3b5d2091f5b0f112532794a4d78d8adcf947291a4183c3b3fd3f9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dd9efebbe5cfea1bb2c9beedfea4fa0492040ddc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769557"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989762"
 ---
 # <a name="action-messages"></a>Handlingsmeddelelser
 
@@ -50,6 +52,3 @@ På siden **Disponeringsgrupper** kan du vælge de handlingsmeddelelser, som sys
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

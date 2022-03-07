@@ -2,16 +2,13 @@
 title: Krav til produktionsopsætning
 description: Denne artikel indeholder oplysninger om opsætningskrav, før du kan arbejde med Produktionsstyring.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424380"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968790"
 ---
 # <a name="production-setup-requirements"></a>Krav til produktionsopsætning
 
@@ -42,7 +39,7 @@ Der skal angives oplysninger i andre moduler, før du kan arbejde i Produktionss
 -   Definition af varegrupper.
 -   Opsætning af finanskonti for varegrupper.
 -   Opsætning af lagervaretabellen i Lagerstyring.
--   Oprette styklister og styklisteversioner i Lagerstyring.
+-   Oprette styklister og styklisteversioner i Administration af produktoplysninger.
 
 ## <a name="required-calendar-and-resource-setup"></a>Krævet kalender- og ressourceopsætning
 Før du bruger Produktionsstyring, skal du åbne Virksomhedsadministration og oprette og definere kalender- og operationsressourcer i følgende rækkefølge:
@@ -81,3 +78,6 @@ Hvis du arbejder med ruter, skal der defineres operationer for hver produktionsr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

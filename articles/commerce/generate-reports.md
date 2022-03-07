@@ -2,11 +2,9 @@
 title: Generere onlinekanalrapporter
 description: Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58342f07233e3c6a6e6a1af87ab23513ad63caf5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 80d62b29fcc95a3153c604512e1ee6b3e55ba840
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970036"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019781"
 ---
 # <a name="generate-online-channel-reports"></a>Generere onlinekanalrapporter
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du genererer rapporter for din onlinekanal i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Du kan generere og få vist flere rapporter i Commerce for at se, hvordan din onlinekanal fungerer.
 
@@ -136,4 +131,7 @@ Hvis du vil generere en **Salg i organisation**-rapport, skal du følge disse tr
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Startside for Commerce](../retail/index.md)
+- [Startside for Commerce](./index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

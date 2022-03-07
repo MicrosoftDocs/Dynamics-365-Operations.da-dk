@@ -2,9 +2,11 @@
 title: Rapportering til EU-listesystemet
 description: Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c1e9a566b7dc4dc2ed1970294a22e72b0bd21a7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003003"
 ---
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
@@ -27,7 +29,8 @@ ms.locfileid: "8323470"
 
 Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 
-## <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
+<a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
+-----------------------
 
 En leverandør, der inden for fællesskabet leverer varer eller tjenesteydelser til virksomheder, der er etableret inden for den Europæiske Union (EU), skal indsende en erklæring om fællesskabsleveringer (EU-listesystemet eller ESL). Generelt skal ESL sendes til skattemyndigheder senest den sidste dag i måneden efter den kalenderperiode, der dækker ESL. Leverandøren skal angive sit momsidentifikationsnummer på ESL'en og skal også angive, efter debitor, følgende oplysninger:
 
@@ -68,19 +71,13 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 <td>Konfigurer identifikationsparametre for SE-nummer på siden <strong>Lande/områdeparametre</strong> (klik på <strong>Moms</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Moms</strong> &gt; <strong>Lande/områdeparametre</strong>). For hvert land/område, hvor du har modparter, skal du oprette en post på siden og angive følgende oplysninger:
 <ul>
 <li><strong>Land/område</strong> – Vælg et land/område, der skal knyttes til en SE-nummeridentifikation.</li>
-<li><strong>Moms</strong> – Angiv SE-nummeridentifikationen (dvs. momsregistreringsnummerets eller SE-nummerets præfiks) for det valgte land/område.</li>
+<li><strong>Moms</strong> – Angiv SE-nummeridentifikationen (dvs. SE-nummerets nummerpræfiks) for det valgte land/område.</li>
 <li><strong>Kontroller SE-nummer</strong> – Markér dette afkrydsningsfelt for at validere SE-nummeridentifikationen for det valgte land/område.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Konfiguration:</strong> Momsregistreringsnumre</td>
-<td>Opret momsregistreringsoplysninger for dine modparter på siden <strong>Alle debitorer</strong> (gå til <strong>Salg og marketing</strong> &gt; <strong>Debitorer</strong> &gt; <strong>Alle debitorer</strong>, vælg en kundepost, og vælg derefter <strong>Debitorer</strong> &gt; <strong>Registrerings-id'er</strong>) eller siden <strong>Kreditorer</strong> (gå til <strong>Indkøb og forsyning</strong> &gt; <strong>Kreditorer</strong> &gt; <strong>Kreditorer</strong>, vælg en kreditorpost, og vælg derefter <strong>Kreditorer</strong> &gt; <strong>Registrerings-id'er</strong>). Opret en post i oversigtspanelet <strong>Registrerings-id</strong> under fanen <strong>Generelt</strong>, og angiv følgende oplysninger:
-<ul>
-<li><strong>Registreringstype</strong> – Vælg den registreringstype, der er tildelt registreringskategorien <strong>Moms-id</strong> for modpartens land/område.</li>
-<li><strong>Registreringsnummer</strong> – Angiv modpartens momsregistreringsnummer.</li>
-<li><strong>Gyldig fra</strong> – Vælg starten af brugsperioden for momsregistreringsnummeret.</li>
-</ul>  
-Du kan også oprette et momsregistreringsnummer for dine modparter på siden <strong>SE-numre</strong> (gå til <strong>Moms</strong> &gt; <strong>Konfiguration</strong> &gt; <strong>Moms</strong> &gt; <strong>SE-numre</strong>). Opret en post på siden for hvert SE-nummer, og angiv følgende oplysninger:
+<td><strong>Opsætning: </strong>SE-numre</td>
+<td>Opret SE-numre for dine modparter på siden <strong>SE-numre</strong> (klik på <strong>Moms</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Moms</strong> &gt; <strong>SE-numre</strong>). Opret en post på siden for hvert SE-nummer, og angiv følgende oplysninger:
 <ul>
 <li><strong>Land/område </strong>– Vælg landet/området for momsregistrering af modparten.</li>
 <li><strong>SE-nummer</strong> – Angiv modpartens SE-nummer.</li>
@@ -89,7 +86,7 @@ Du kan også oprette et momsregistreringsnummer for dine modparter på siden <st
 </tr>
 <tr class="even">
 <td><strong>Opsætning: </strong>Momsregistrering af modparter</td>
-<td>Konfigurer momsregistreringsoplysninger for dine modparter enten på siden <strong>Alle debitorer</strong> (klik på <strong>Salg og marketing</strong> &gt; <strong>Debitorer</strong> &gt; <strong>Alle debitorer</strong>, vælg en kundepost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>) eller på siden <strong>Kreditorer</strong> (klik på <strong>Indkøb og forsyning</strong> &gt; <strong>Kreditorer</strong> &gt; <strong>Kreditorer</strong>, vælg en kreditorpost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>). I oversigtspanelet <strong>Faktura og levering</strong> i feltet <strong>SE-nummer</strong> skal du vælge momsregistreringsnummeret.</td>
+<td>Konfigurer momsregistreringsoplysninger for dine modparter enten på siden <strong>Alle debitorer</strong> (klik på <strong>Salg og marketing</strong> &gt; <strong>Debitorer</strong> &gt; <strong>Alle debitorer</strong>, vælg en kundepost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>) eller på siden <strong>Kreditorer</strong> (klik på <strong>Indkøb og forsyning</strong> &gt; <strong>Kreditorer</strong> &gt; <strong>Kreditorer</strong>, vælg en kreditorpost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>). I oversigtspanelet <strong>Faktura og levering</strong> i feltet <strong>SE-nummer</strong> skal du vælge SE-nummer.</td>
 </tr>
 <tr class="odd">
 <td><strong>Opsætning: </strong>Moms</td>
@@ -162,6 +159,3 @@ Når du har fuldført rapporteringsprocessen for en bestemt periode (f.eks. når
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

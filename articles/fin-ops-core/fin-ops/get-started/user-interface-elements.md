@@ -2,11 +2,9 @@
 title: Brugergrænsefladeelementer
 description: I dette emne beskrives brugergrænsefladeelementerne i appen.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c2c50fadb38f3c6e20c72288b2c1e23278c10119250a0d0fcde643307cbaf7f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745058"
 ---
 # <a name="user-interface-elements"></a>Brugergrænsefladeelementer
 
@@ -77,7 +75,7 @@ Følgende billede viser eksempler på disse typer beskeder.
 
 - **Meddelelsesboks** - Boksen vises oven over grænsefladen, og du skal interagere med den, før du kan fortsætte med at bruge produktet.  
 
-![Følgende billede viser et eksempel på en meddelelsesboks.](media/user-interface-07.png)
+![Følgende billede viser et eksempel på et meddelelsesfelt.](media/user-interface-07.png)
 
 ## <a name="toolbars-grids-and-lists"></a>Værktøjslinjer, gitre og lister
 
@@ -86,3 +84,6 @@ En *værktøjslinje* indeholder værktøjer, du kan bruge til f.eks. at tilføje
 En *liste* er den betegnelse, der bruges om en samling poster, som du kan rulle gennem. Du kan placere disse poster på siden ved at markere dem. Ofte vil dette åbne et gitter.
 
 ![Følgende billede viser eksempler på værktøjslinjer, gitre og lister.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

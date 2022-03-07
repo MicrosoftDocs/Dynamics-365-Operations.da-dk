@@ -1,12 +1,10 @@
 ---
 title: Serviceniveau og -beskrivelse
 description: I dette emne beskrives serviceniveau og -beskrivelse i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356458"
 ---
 # <a name="service-level-and-description"></a>Serviceniveau og -beskrivelse
 
@@ -47,7 +45,7 @@ Når du opretter en arbejdsordre, kan det være en god ide at definere serviceni
 8. Hvis du vil angive et sluttidspunkt for arbejdsordren, skal du ud over at angive en slutdato vælge **Ja** i indstillingen **Angiv sluttidspunkt**. Angiv derefter sluttidspunktet i feltet **Sluttidspunkt**. Hvis du vælger **Nej** i denne indstillingen, bruges det aktuelle tidspunkt på dagen.
 9. Vælg **Gem**.
 
-![Siden Serviceniveau for arbejdsordrer](media/19-setup-for-work-orders.png)
+![Siden Serviceniveau for arbejdsordrer.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Oprette en beskrivelse
 
@@ -55,3 +53,6 @@ Når du opretter en arbejdsordre, kan det være en god ide at definere serviceni
 2. Vælg **Ny**.
 3. Indtast beskrivelsen i feltet **Beskrivelse**.
 4. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

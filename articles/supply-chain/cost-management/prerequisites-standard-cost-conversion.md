@@ -2,11 +2,9 @@
 title: Forudsætninger for en standardomkostningskonvertering
 description: Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24840357b0eb8cb5f42ff2c1a65fdad56041783d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b78cfb2c6f0462a86cf3785038c5fe4e5d63b9cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967377"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809680"
 ---
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forudsætninger for en standardomkostningskonvertering
 
@@ -53,3 +51,6 @@ Udfør følgende trin, før du kører en standardomkostningskonvertering:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

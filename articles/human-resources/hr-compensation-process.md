@@ -2,29 +2,28 @@
 title: Kompensationsbehandling
 description: Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a60ab866f3ad06acc747f8c8b80a65e767b27c8
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417802"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6051347"
 ---
 # <a name="process-compensation"></a>Kompensationsbehandling
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance. Denne artikel drejer sig om den grundlæggende arbejdsgang ved kompensationsbehandling i forbindelse med faste lønplaner uden indregning af en medarbejderperformance.
 
@@ -77,3 +76,6 @@ Når du har gennemset kompensationsbeløbene for en medarbejder, og du har foret
 Når status for en eller flere medarbejderhændelser er blevet opdateret til Godkendt, kan de indlæses i medarbejdernes fast løn-poster. Dette kan gøres ved at vælge én medarbejderhændelse ad gangen og klikke på knappen **Indlæs medarbejderkompensation** på siden **Medarbejderresultater** eller ved at klikke på **Indlæs kompensation** på siden **Procesresultater** for at indlæse alle godkendte medarbejderhændelser på én gang.
 
 Hvis du klikker på **OK** i dialogboksen **Indlæs kompensation**, tilføjes kompensationshandlingslinjer, der ikke er nul, på siden **Fast løn til medarbejder**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

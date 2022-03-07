@@ -2,28 +2,25 @@
 title: Debitorbetalinger af et delvist beløb
 description: Kunder vil nogle gange indbetale et beløb, der er mindre end beløbet på en faktura. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a74803d3adf71ef1495ec5b42753d0988cea4133
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441423"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824022"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Debitorbetalinger af et delvist beløb
 
@@ -60,3 +57,6 @@ Kunder kan foretage en delvis betaling, hvor det resterende beløb ikke betales,
 
 
 Du kan finde flere oplysninger i [Deponere debitorbetalinger](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

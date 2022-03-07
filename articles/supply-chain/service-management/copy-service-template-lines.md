@@ -2,11 +2,9 @@
 title: Kopiere serviceskabelonlinjer
 description: Skabelonoplysninger kan kopieres enten til en serviceaftale eller en serviceordre.
 author: ShylaThompson
-manager: tfehr
 ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d542d7fc0ba33bb587bb3ffde22da2aa37d1e98
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 73bcfb2018822cebf0d602cdf014f06073d98009
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966024"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840527"
 ---
 # <a name="copy-service-templates-lines"></a>Kopiere serviceskabelonlinjer 
 
@@ -59,3 +57,6 @@ Linjerne fra serviceskabelonen kopieres nu til den nye serviceordre sammen med d
 [Serviceskabeloner](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

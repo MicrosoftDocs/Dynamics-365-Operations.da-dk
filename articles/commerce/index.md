@@ -2,34 +2,33 @@
 title: Startside for Commerce
 description: Startside for Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: ''
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 4f6dccb7c69eb5dc692ce9543ae31738e95e38fa
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4411228"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336828"
 ---
 # <a name="commerce-home-page"></a>Startside for Commerce
 
 [!include [banner](includes/banner.md)]
-
 
 Dynamics 365 Commerce – bygget på de gennemprøvede Dynamics 365 Retail-funktioner – leverer en omfattende flerkanalsløsning, der forener administrations-, butiks-, callcenter- og digitale erfaringer. Dynamics 365 Commerce giver dig mulighed for at opbygge varemærkeloyalitet gennem personlige kundeaftaler, øge indtjeningen med forbedret medarbejderproduktivitet, optimere operationer for at reducere omkostninger og fremme effektivitet i forsyningskæden og i sidste ende levere bedre virksomhedsresultater.
 
@@ -41,18 +40,23 @@ Denne version gør det muligt at oprette digitale oplevelser ved hjælp af indby
 
 - **Fleksibel og intelligent omnikanaloplevelse:** Du kan samle fysisk og digital handel ved at give kunderne en ensartet oplevelse på tværs af skybaseret søgning og registrering, produktanmeldelser, ønskelister, lager, gavekort og kundefordele. Gør det muligt for kunderne at købe, hvornår, hvordan og hvor de vil, på en hvilken som helst enhed – og giv samtidig mulighed for moderne betalingsmetoder og produktsamling eller -levering.
 
-- **Strømlin operationer ved hjælp af AI i skyen**: Skab omnikanal-handelsoplevelser og integrerede, optimerede administrationsoperationer via gennemført, udbredt og kontekstorienteret Cloud Intelligence. Brug avanceret merchandising, lagerstyring, distribueret ordrestyring og priser og kampagner til at skabe innovation og holde dig foran konkurrenterne. Få indsigt ved at visualisere og analysere omfattende og ensartede data på tværs af alle aspekter af din virksomhed. Brug AI-styrede teknologier til at give adgang til websteder, beskyt din virksomhed mod betalingsbedrageri og moderer effektivt brugergenereret indhold som f.eks. vurderinger og anmeldelser. 
+- **Strømlin operationer ved hjælp af AI i skyen**: Skab omnikanal-handelsoplevelser og integrerede, optimerede administrationsoperationer via gennemført, udbredt og kontekstorienteret Cloud Intelligence. Brug avanceret merchandising, lagerstyring, distribueret ordrestyring og priser og kampagner til at skabe innovation og holde dig foran konkurrenterne. Få indsigt ved at visualisere og analysere omfattende og ensartede data på tværs af alle aspekter af din virksomhed. Brug AI-styrede teknologier til at give adgang til websteder, beskyt din virksomhed mod betalingsbedrageri og moderer effektivt brugergenereret indhold som f.eks. vurderinger og anmeldelser.
 
 ## <a name="core-concepts-and-tasks"></a>Grundlæggende begreber og opgaver
 
 Vælg et funktionsområde, du vil vide mere om.
+
 - [Konfigurere et Commerce-prøveversionsmiljø](provisioning-guide.md)
-- [Commerce-arkitektur](retail-components.md)
+- [Commerce-arkitektur](./commerce-architecture.md)
 - [Konfigurere dine kanaler](channels-overview.md)
-- [Markedsføre dine produkter og tjenester](set-up-retail-products.md)
+- [Promovere dine produkter og serviceydelser](set-up-retail-products.md)
 - [Administrere dine ordrer](Order-fulfillment-overview.md)
 - [Administrere dine kunder](set-up-customer-loyalty-program.md)
 - [Styre din økonomi](retail-statements.md)
 - [Administrere dit websted til e-handel](online-store-overview.md)
-- [Beskyttelse mod svindel](dev-itpro/DFP.md)
-- [Handelsudvikling og-udvidelse](dev-itpro/dev-retail-home-page.md)
+- [Fraud Protection](dev-itpro/DFP.md)
+- [Commerce-udvikling og -udvidelse](dev-itpro/dev-retail-home-page.md)
+
+## <a name="elearning-courses"></a>eLearning-kurser
+
+Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Commerce on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

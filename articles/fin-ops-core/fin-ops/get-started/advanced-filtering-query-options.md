@@ -1,12 +1,10 @@
 ---
 title: Avanceret filtrering og forespørgselssyntaks
-description: I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren forekomster i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
+description: I dette emne beskrives indstillingerne for filtrering og forespørgsler i dialogboksen Avanceret filtrering/sortering og operatoren matches i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798664"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070003"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering, eller operatoren **forekomster** i ruden Filter eller i filtre til gitterets kolonneoverskrifter.
 
@@ -121,9 +122,9 @@ I dette emne beskrives indstillingerne for filtrering og forespørgsler, der er 
 <td>To på hinanden følgende dobbelte anførselstegn (<strong>""</strong>) finder rækker uden værdi for den aktuelle kolonne.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations-forespørgsel</span>) (Finance and Operations-forespørgsel mellem parenteser)</td>
+<td>(<span class="code">Finans- og driftsforespørgsel</span>) (Finans- og driftsforespørgsel mellem parenteser)</td>
 <td>Svarende til en defineret forespørgsel</td>
-<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finance and Operations-forespørgselssproget.</td>
+<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finans- og driftsforespørgselssproget.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        som et eksempel på en filterbetingelse i et felt fra rodens datakilden samt et felt fra en anden datakilde (for siden Alle kunder)</td>
 </tr>
@@ -242,3 +243,6 @@ Se tabellen i næste afsnit for at få flere oplysninger om datometoden <strong>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

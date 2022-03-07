@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 426a5e42c1fc26958ab37eddd915334f8b0e19cc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441415"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205022"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anskaffelser af anlægsaktiver
 
@@ -43,3 +42,6 @@ I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffe
 - Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
 11. Vælg fanen **Bøger** på siden.
 12. Vælg **Bogfør**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

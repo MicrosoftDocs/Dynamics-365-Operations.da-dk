@@ -2,11 +2,9 @@
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.13.
 author: kamaybac
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 9c5358cbc13c10983cfcbdde95fd573f652cc683
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 238dc7191b5d6cb044b2825e511bdc869d82ca20c03cfbc6129c22a010da3496
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766116"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 
@@ -35,23 +33,23 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation, der aktuelt er tilgængelig for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
+Følgende funktioner er inkluderet i denne version. Funktionen indeholder links til yderligere oplysninger om webstedet [Frigivelsesplaner](/dynamics365/release-plans/). Yderligere links peger på yderligere dokumentation, der aktuelt er tilgængelig for den pågældende funktion. De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), før du kan bruge dem.
 
-- [Skift terminologien for "annullering af lagerlukning" til "tilbageført lagerlukning"](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Du finder flere oplysninger under [Lagerlukning](../cost-management/inventory-close.md).
+- [Skift terminologien for "annullering af lagerlukning" til "tilbageført lagerlukning"](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Du finder flere oplysninger under [Lagerlukning](../cost-management/inventory-close.md).
 
-- [Bekræft udgående forsendelser fra batchjob](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Du kan finde flere oplysninger under [Bekræfte udgående forsendelser fra batchjob](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Bekræft udgående forsendelser fra batchjob](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Du kan finde flere oplysninger under [Bekræfte udgående forsendelser fra batchjob](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegering af flere indkøb af arbejdselementer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Du kan finde flere oplysninger under [Delegere arbejdselementer i en arbejdsgang](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Delegering af flere indkøb af arbejdselementer](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Du kan finde flere oplysninger under [Delegere arbejdselementer i en arbejdsgang](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Angive serienumre, når der færdigmeldes fra jobkortenheden](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Du kan finde flere oplysninger under [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md).
+- [Angive serienumre, når der færdigmeldes fra jobkortenheden](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Du kan finde flere oplysninger under [Færdigmelde fra jobkortenheden](../production-control/report-finished-job-device.md).
 
-- [Nye lagerdimensioner for produktversionssporing og forbedret udvidelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Du kan finde flere oplysninger under [Produktdimensioner](../pim/product-dimensions.md).
+- [Nye lagerdimensioner for produktversionssporing og forbedret udvidelse](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Du kan finde flere oplysninger under [Produktdimensioner](../pim/product-dimensions.md).
 
-- [Ordrebekræftet reservation baseret på id'er](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Du kan finde flere oplysninger under [Fleksibel reservation af id](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Ordrebekræftet reservation baseret på id'er](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Du kan finde flere oplysninger under [Fleksibel reservation af id](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Arbejdspluklinje, oversigt](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Arbejdspluklinje, oversigt](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Forbedringer af arbejdspolitikker for indgående arbejde](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Du kan finde flere oplysninger under [Politikker for lagersted](../warehousing/warehouse-work-policies.md).
+- [Forbedringer af arbejdspolitikker for indgående arbejde](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Du kan finde flere oplysninger under [Politikker for lagersted](../warehousing/warehouse-work-policies.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -67,7 +65,7 @@ Du kan finde flere oplysninger om de fejlrettelser, der er inkluderet i hver af 
 
 Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?
 
-Se [Dynamics 365: 2020-frigivelsesplan bølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
+Se [Dynamics 365: 2020-frigivelsesplan bølge 2](/dynamics365-release-plan/2020wave2/index). Vi har samlet alle oplysninger fra start til slut og top til bund i et enkelt dokument, som du kan bruge til planlægning.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
@@ -79,3 +77,6 @@ Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](
 Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

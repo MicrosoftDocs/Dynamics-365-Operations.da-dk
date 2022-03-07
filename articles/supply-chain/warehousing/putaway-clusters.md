@@ -2,22 +2,24 @@
 title: Læg på lager-klynger
 description: Læg på lager-klynger giver mulighed for at plukke flere id'er samtidigt og derefter tage dem til læg på lager forskellige steder. De kan være meget nyttige for detailforretninger, hvor id'erne typisk ikke er fulde lagerpaller.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 297792e90b3d2da0d738f5cbaa14779bc17ea3c8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103657"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996192"
 ---
 # <a name="putaway-clusters"></a>Læg på lager-klynger
 
@@ -25,9 +27,12 @@ ms.locfileid: "8103657"
 
 Læg på lager-klynger giver mulighed for at plukke flere id'er samtidigt og derefter tage dem til læg på lager forskellige steder. Denne proces omtales ofte som en *leveringsrute*. Læg på lager-klynger kan være meget nyttige for detailforretninger, hvor id'erne typisk ikke er fulde lagerpaller. 
 
-## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Aktivere eller deaktivere funktionen læg på lager-klynge
+## <a name="turn-on-the-cluster-putaway-feature"></a>Aktivere funktionen læg på lager-klynge
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Klynge for Læg på lager* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Klynge for Læg på lager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Funktionen læg på lager-klynge*
 
 ## <a name="setup-for-the-example-scenario"></a>Konfiguration af eksempelscenariet
 
@@ -225,7 +230,7 @@ Dette scenario simulerer behandling af læg på lager-klyngen.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Modtage og sortere lageret i en klynge
 
-1. Log på mobilappen Lokationsstyring som en bruger, der er konfigureret til lagersted *61*.
+1. Log på lagerstedsappen som en bruger, der er konfigureret til lagersted *61*.
 1. I hovedmenuen skal du vælge **Indgående**.
 1. Vælg **Modtag og sortér klynge** i menuen **Indgående**.
 1. Angiv indkøbsordrenummeret i feltet **IO-num**.
@@ -267,7 +272,7 @@ Før varerne i klyngen kan lægges på lager, skal klyngen lukkes.
 
 #### <a name="put-the-cluster-away"></a>Lægge klyngen på lager
 
-1. Log på mobilappen Lokationsstyring som en bruger, der er konfigureret til lagersted *61*.
+1. Log på lagerstedsappen som en bruger, der er konfigureret til lagersted *61*.
 1. I hovedmenuen skal du vælge **Indgående**.
 1. Vælg **Læg på lager-klynge** i menuen **Indgående**.
 1. Vælg **Klynge-id**, og angiv det klynge-id, du tidligere har angivet til den lukkede klynge.
@@ -281,7 +286,7 @@ Før varerne i klyngen kan lægges på lager, skal klyngen lukkes.
 
     Du har standardindstillingerne til at tilsidesætte eller ignorere dette trin.
 
-    ![Siden Læg på lager-klynge: Læg.](media/Cluster_putaway-Put.png "Siden Læg på lager-klynge: Læg")
+    ![Siden Læg på lager-klynge: Læg](media/Cluster_putaway-Put.png "Siden Læg på lager-klynge: Læg")
 
 1. Vælg **OK** for at bekræfte læg på lager af klyngen.
 
@@ -290,6 +295,3 @@ Før varerne i klyngen kan lægges på lager, skal klyngen lukkes.
 ## <a name="notes-and-tips"></a>Noter og tip
 
 For de tilfælde, hvor klynge-id'et bliver til det overordnede id for en indlejret Palle, angives positionen automatisk, når klynge-id'et scannes. Der skal ikke scannes flere id'er, selvom id-genereringen er angivet til manuel.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

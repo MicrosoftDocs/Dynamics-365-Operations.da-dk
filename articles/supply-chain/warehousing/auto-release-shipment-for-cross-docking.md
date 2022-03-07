@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424427"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233169"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse af forsendelse til cross-docking
 
@@ -179,3 +178,6 @@ Bemærk, at der sker følgende:
 - Frigivelsen til et lagersted udløses for den tilknyttede salgsordre.
 - På baggrund af frigivelsen oprettes forsendelses- og cross-docking-arbejde. Dette arbejde giver lageroperatøren besked på at plukke det antal, der kræves for at opfylde salgsordrelinjen, og lægge det på den udgående lokation, der er angivet i lokationsvejledningen til cross-docking.
 - Hvis produktionsordreantallet er større end det antal, der kræves af salgsordren, oprettes der et almindeligt læg på lager-arbejde. Dette arbejde giver lageroperatøren besked på at plukke antallet af færdigvarer, der er tilbage efter cross-docking, og flytte dem til almindelig opbevaring i overensstemmelse med lokationsvejledningen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

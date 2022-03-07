@@ -2,26 +2,23 @@
 title: Forespørgsel på likviditet
 description: Dette emne indeholder oplysninger om, hvordan du fastlægger den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
 author: velofog
-manager: AnnBe
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 267e2d4c0ed3ad5a60e08200d7be338bfab02c2e
-ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
+ms.openlocfilehash: bcec909e13eefbc999ffef794544dae1d482fcfa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/26/2020
-ms.locfileid: "4407724"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811256"
 ---
 # <a name="cash-position-inquiry"></a>Forespørgsel på likviditet
 [!include [banner](../includes/banner.md)]
@@ -86,3 +83,6 @@ Valgfri:
 - Indstil **Vis segmenter i separate kolonner** til **Ja** for at få vist kontonavnene for hver dimension som separate kolonner i gitteret.
 - Hvis du vil filtrere værdierne for en bestemt dimension, skal du vælge de ønskede dimensioner i felterne under feltet **Økonomiske dimensionsopsætninger**. De valg, du skal foretage, afhænger af, hvilken økonomisk dimensionsopsætning du har valgt.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Mandats de paiement i den offentlige sektor i Frankrig
 description: Mandat de paiement bruges af direktøren til at underrette og autorisere bogholderen til at betale et specifikt beløb til en anden enhed.
 author: rschloma
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27231
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19bd649a17728faddfed49ce7ae99c4bc2048552
-ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
+ms.openlocfilehash: 00b8558e64d30ba139046bce443cb33e7ae98bc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665486"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826077"
 ---
 # <a name="mandats-de-paiement-in-the-public-sector-in-france"></a>Mandats de paiement i den offentlige sektor i Frankrig
 
@@ -83,3 +80,6 @@ Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f4e648f4c1d18e5f8b82d1ccf7ba02bd4e12bc2a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797484"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566424"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -195,3 +194,6 @@ For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-view
 Når du tilpasser opsætningen af lagerdimensioner på en side, skal du overveje de indstillinger, der er oprettet ved hjælp af indstillingen **Vis dimension**. Du kan f.eks. bruge personlige indstillinger til at skjule en kolonne for batchnummer-lagerdimensionen, men kolonnen vises, næste gang siden åbnes. Dette sker, fordi indstillingen **Dimensionsvisning** styrer de lagerdimensionskolonner, der vises. Indstillingerne i **Dimensionsvisning** gælder på tværs af alle sider og tilsidesætter den tilpassede opsætning af lagerdimensionsfelter på individuelle sider.
 
 Hvis du derfor i det foregående eksempel ikke ønsker, at kolonnen for batchnummer-lagerdimensionen skal vises på en side, skal du rydde dimensionen som en del af indstillingen **Vis dimensioner** for denne side.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

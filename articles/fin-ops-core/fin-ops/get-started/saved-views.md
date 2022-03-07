@@ -2,11 +2,9 @@
 title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
-manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, IT Pro
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 8537ec87c625e8b54cdf7574216d66f285da3a48
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065700"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Introduktion
 
@@ -49,6 +50,8 @@ Visningsvælgeren har to størrelsesvariationer:
  
 Hvis du vælger visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.
 
+**Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren de tilgængelige visninger i to sektioner. Den første sektiont indeholder visninger, der er specifikke for den aktuelle juridiske enhed, og den anden indeholder visninger, der er tilgængelige for alle juridiske enheder. Den første sektion er kun synlig, hvis der er visnnger for siden, som er specifikke for de juridiske enheder.
+
 - **Standardvisning** – Visningen **Standard** er den indbyggede visning af siden, hvor der ikke er anvendt brugertilpasninger.
 - **Personlige visninger** – Visningerne uden hængelåse repræsenterer dine personlige visninger. Dette er visninger, som enten du har oprettet, eller som er tildelt af en administrator.
 - **Låste visninger** – Nogle visninger (f.eks. **Standard**-visningen og eventuelle visninger, der er udgivet til din rolle) har et hængelåssymbol ved siden af dem i visningsvælgeren. Dette symbol angiver, at du ikke kan redigere disse visninger. Men ændringer, der afspejler sideforbruget, gemmes dog automatisk. Disse ændringer omfatter ændringer i bredden af en gitterkolonne og ændringer af den udvidede eller skjulte tilstand for et oversigtspanel. Du kan dog oprette en personlig visning, der er baseret på en låst visning, ved hjælp af handlingen **Gem som**, hvis du har rettigheder til personlige indstillinger.
@@ -69,15 +72,18 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
 3. Sådan oprettes en ny visning:
 
     1. Vælg **Gem som**. 
-    2. Indtast et visningsnavn og evt. en beskrivelse.
-    3. Vælg **Gem**.
+    2. Angiv et navn og eventuelt en beskrivelse af visningen i ruden **Gem visnsing som**.
+    3. Hvis denne visning skal være din standardvisning, skal du vælge **Fastgør som standard**. Yderligere oplysninger om standardvisninger finder du i afsnittet [Ændring af standardvisningen](#changing-the-default-view) nedenfor. 
+    4. **Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, kan du vælge, om denne visning skal være tilgængelig for alle juridiske enheder eller kun for et delsæt af dem.
+    5. Vælg **Gem**.
 
 ## <a name="changing-the-default-view"></a>Ændre standardvisningen
 
 Standardvisningen er den visning, som systemet vil forsøge at åbne, første gang du åbner siden. Du skal indstille standardvisningen til den visning, du forventer at bruge oftest. 
 
 > [!NOTE]
-> Der findes en enkelt global standardvisning på tværs af firmaer. Hvis du ændrer standardvisningen, åbnes denne visning som standard, uanset hvilken juridisk enhed du aktuelt befinder dig i. 
+> - I den grundlæggende funktion **Gemte visninger** er der en enkelt global standardvisning på tværs af juridiske enheder. Hvis du ændrer standardvisningen, åbnes denne visning som standard, uanset hvilken juridisk enhed du aktuelt befinder dig i.
+> - **Version 10.0.21 eller senere:** Når funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, kan hver juridisk enhed få sin egen standardvisning pr. side.
 
 For at ændre standardvisningen for en side skal du følge disse trin:
 
@@ -87,20 +93,23 @@ For at ændre standardvisningen for en side skal du følge disse trin:
 
 Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
 
-Bemærk, at i nogle tilfælde køres den forespørgsel, der er knyttet til standardvisningen, ikke første gang du åbner en side. Hvis du f.eks. åbner siden via et felt, køres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du åbner en side med en **Standard**-visning, som allerede har en defineret forespørgsel, køres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. I dette tilfælde modtager du en informativ meddelelse, når visningen indlæses. Hvis du skifter visning, efter at siden er blevet indlæst, skal visningsforespørgslen kunne køres som forventet. Fra og med version 10.0.10 vil meddelelsen indeholde en integreret handling, der giver dig mulighed for at indlæse forespørgslen i standardvisningen direkte.
+> [!WARNING]
+> I nogle tilfælde køres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du åbner en side. Hvis du f.eks. åbner siden via et felt, køres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du åbner en side med en **standardvisning**, som allerede har en defineret forespørgsel, køres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. I dette tilfælde modtager du en informativ meddelelse, når visningen indlæses. Hvis du skifter visning, efter at siden er blevet indlæst, skal visningsforespørgslen kunne køres som forventet. Fra og med version 10.0.10 vil meddelelsen indeholde en integreret handling, der giver dig mulighed for at indlæse forespørgslen i standardvisningen direkte.
 
 ## <a name="managing-personal-views"></a>Administrere personlige visninger
 
 Dialogboksen **Administrer mine visninger** indeholder grundlæggende vedligeholdelsesfunktioner til dine personlige visninger og rækkefølgen af visninger i visningsvælgeren. Når du vil åbne denne side, skal du vælge navnet på visningen for at åbne rullemenuen for visningsvælger, vælge **Flere** og derefter vælge **Administrer mine visninger**.
 
+**Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser sektionen **Mine visninger** i dialogboksen **Administrer mine visninger** de tilgængelige visninger for siden i sektioner. Eventuelle visninger, der er specifikke for den aktuelle juridiske enhed, vises i deres egen sektion. Sektionen **Globale visninger** vises altid, så du kan administrere de visninger, der er tilgængelige for siden i alle juridiske enheder. 
+
 Hvis du vil se en liste over tilgængelige visninger for den pågældende side, kan du bruge følgende sæt handlinger.
 
-- **Ændre standardvisningen** – Brug handlingen **Fastgør som standard** for at gøre den aktuelt valgte visning til standardvisning for denne side.
+- **Ændre standardvisningen** – Brug handlingen **Fastgør som standard** for at gøre den aktuelt valgte visning til standardvisning for denne side. Hvis funktionen **Importér understøttelse af juridisk enhed for gemte visninger** er aktiveret, giver sektionen **Globale visninger** dig mulighed for at få vist standardvisningen for enten den aktuelle juridiske enhed eller alle juridiske enheder.
 - **Omarranger dine visninger** – Brug handlingerne **Flyt op** og **Flyt ned** for at arrangere dine visninger i en bestemt rækkefølge.
 - **Omdøb en visning** – Brug handlingen **Omdøb** til at ændre navnet på den aktuelt valgte personlige visning. Denne handling er slået fra for låste visninger. 
 - **Slet en visning** – Brug handlingen **Fjern** til at slette den valgte visning permanent fra siden. Det er ikke muligt at gendanne en visning efter at have fjernet den.
 
-De ændringer, der er foretaget i denne dialogboks, træder i kraft, når du vælger knappen **Gem**.
+De ændringer, der er foretaget i denne dialogboks, træder i kraft, når du vælger knappen **Opdater**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige indstillinger på organisationsniveau med visninger
 
@@ -123,19 +132,34 @@ Følg disse trin for at publicere en visning:
 1. Opret og gem en personlig kopi af den visning, du vil publicere. 
 2. Når denne visning indlæst skal du vælge navnet på visningen for at åbne visningsvælgerens rullemenu. 
 3. Vælg knappen **Flere**, og vælg derefter **Publicer**. Dialogboksen Publicer åbnes.
-4. Angiv et navn til og evt. en beskrivelse af visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
-5. **Version 10.0.9 og nyere:** Afgør, om visningen skal publiceres som standardvisning for de valgte brugere. Når du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Den ene, globale standardvisning for alle målbrugere vil blive ændret. Brugerne kan dog stadig ændre deres standardvisning, når der er foretaget publicering.
-6. Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning. 
-7. **Version 10.0.13 og nyere:** Bestem, om du vil publicere visningen til de underordnede roller for de enkelte sikkerhedsroller, der er valgt. Hvis du gør det, skal du markere afkrydsningsfeltet **Medtag underordnede roller** i rækken for de relevante sikkerhedsroller. Bemærk, at dette afkrydsningsfelt ikke er tilgængeligt for roller, der ikke har underordnede roller.
-7. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
-8. Vælg **Publicer**.
+4. Angiv et navn til visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
+5. **Opdatering 10.0.17 eller senere:** Hvis funktionen **(Forhåndsversion) Understøttelse af oversættelse for organisationsvisninger** er aktiveret, kan du føje oversættelser for dit visningsnavn på så mange sprog, som organisationen har brug for, ved at vælge knappen **Oversættelser** ud for feltet **Navn**. Visningsnavnet vises derefter til brugerne på deres aktuelle sprog. Du kan også angive standardsproget for at angive den oversættelse, der skal vises til brugere, som kører sprog, der ikke er defineret oversættelse for.
+5. Valgfrit: Angiv en beskrivelse af visningen, så brugere, der modtager denne visning, bedre kan forstå formålet med visningen. 
+6. Afgør, om visningen skal publiceres som standardvisning for de valgte brugere. Når du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Den ene, globale standardvisning for alle målbrugere vil blive ændret. Brugerne kan dog stadig ændre deres standardvisning, når der er foretaget publicering.
+
+    > [!NOTE]
+    > Vær opmærksom på følgende funktionsmåde, når du publicerer en visning som standardvisning:
+    >
+    > - Hvis du publicerer en visning som standardvisning for nogle eller alle juridiske enheder, forekommer følgende funktionsmåde:
+    >
+    >    - Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, vil den globale visning blive ændret for hver målbruger. 
+    >    - **Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, og du publicerer visningen til et undersæt af juridiske enheder, vil standardvisningen for disse juridiske enheder blive ændret for alle målbrugere.
+    >
+    > - Hvis en bruger har roller, hvor flere visninger er publiceret som standardvisning, vil den sidst publicerede visning blive brugt som brugerens standardvisning. 
+
+8. Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning. 
+9. Afgør, om du vil publicere visningen til de underordnede roller for de enkelte sikkerhedsroller, der er valgt. Hvis du gør det, skal du markere afkrydsningsfeltet **Medtag underordnede roller** i rækken for de relevante sikkerhedsroller. Bemærk, at dette afkrydsningsfelt ikke er tilgængeligt for roller, der ikke har underordnede roller.
+10. Tilføj de juridiske enheder, som denne visning skal være tilgængelig for. 
+
+    > [!NOTE]
+    > Vær opmærksom på følgende funktionsmåde, hvis du publicerer en visning for en bestemt juridisk enhed, men du ikke publicerer visningen som standardvisning.
+    >
+    > - Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, viser brugerens visningsvælger for siden først visningen for de angivne juridiske enheder. Når visningen er indlæst for første gang, vil visningsvælgeren for siden altid vise den, uanset den juridiske enhed.
+    > - **Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder.
+
+11. Vælg **Publicer**.
 
 Bemærk, at det kan tage et stykke tid (op til en time) i nogle miljøer, før brugerne kan se den publicerede visning.
-
-> [!NOTE]
-> Vær opmærksom på følgende forventninger, når du publicerer en visning i en juridisk enhed, eller når du publicerer en visning som standardvisning.
-> - Hvis du publicerer en visning som standardvisning til alle eller nogle juridiske enheder, ændrer du den ene, globale standardvisning for alle målbrugere. Hvis en bruger har roller, hvor flere visninger er publiceret som standardvisning, vil den sidst publicerede visning blive brugt som brugerens standardvisning. 
-> - Hvis du publicerer en visning til en juridisk enhed, men ikke publicerer den som standardvisning, vil brugerne først se visningen i visningsvælgeren for de angivne juridiske enheder. Når visningen først er indlæst, er den dog altid i brugerens visningsvælger til den pågældende side, uanset den juridiske enhed. 
 
 ## <a name="modifying-a-published-view"></a>Redigere en publiceret visning
 
@@ -146,27 +170,15 @@ Hvis de ændringer, du vil foretage i en publiceret visning, kun omfatter public
 1. Skift til den publicerede visning for de parametre, du vil opdatere. 
 2. Vælg **Publicer igen** i visningsvælgerens rullemenu. Hvis du bruger version 10.0.12 eller tidligere, skal du vælge **Publicer** og derefter **Ja** for at opdatere den eksisterende visning.
 3. Opdater navnet, beskrivelsen, sikkerhedsrollerne og juridiske enheder for visningen. 
-4. Vælg **Publicer**. 
-5. **Version 10.0.8 og tidligere:** Hvis du har opdateret navnet på den publicerede visning, skal du også slette den publicerede visning, der har det gamle navn. (Du kan finde flere oplysninger i afsnittet [Administrere publicerede visninger](saved-views.md#managing-published-views)).
+4. Vælg **Publicer**. Hvis du oprindeligt har valgt denne publicerede visning som standardvisning, vil den være standardvisningen for brugere igen, når du har publiceret den igen. 
 
-**Version 10.0.9 og nyere:** Hvis du oprindeligt har valgt denne publicerede visning som standardvisning, vil den være standardvisningen for brugere igen, når du har publiceret den igen.
-
-Hvis ændringerne af den publicerede visning omfatter redigering af de tilpasninger eller filtre, der er tilknyttet visningen, skal du følge disse trin: 
-
-**Version 10.0.13 og nyere:** Foretag de nødvendige ændringer direkte i visningen. Der vises en stjerne (\*) ud for visningsnavnet.
+Hvis ændringerne af den publicerede visning omfatter redigeringer af de tilpasninger eller filtre, der er tilknyttet visningen, skal du følge disse trin.
 
 1. Indlæs den publicerede visning, du vil ændre. 
 2. Foretag de nødvendige ændringer i den lokale kladde.
 3. Vælg **Publicer igen** i visningsvælgerens rullemenu.
 4. Vælg **Ja** for at angive, at du vil publicere visningen sammen med de ændringer, der ikke er gemt. 
 5. Juster eventuelle publiceringsparametre, der kræver justering, og vælg derefter **Publicer**. 
-
-**Version 10.0.12 og tidligere**
-
-1. Indlæs den publicerede visning, du vil redigere. 
-2. Gem en kopi af den publicerede visning for at oprette en lokal kladde til den publicerede visning. 
-3. Rediger den lokale kladde med de nødvendige ændringer.
-4. Publicer visningen med det oprindelige navn. 
 
 ## <a name="managing-published-views"></a>Administrere publicerede visninger
 
@@ -179,22 +191,23 @@ Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge f�
 - **Publicer igen** – Brug handlingen **Publicer igen** til at publicere en visning igen, når publiceringsparametre (navn, beskrivelse, sikkerhedsroller eller juridiske enheder) er ændret.
 - **Publicer** – Brug handlingen **Publicer** til at publicere en visning, der ikke er publiceret i øjeblikket. 
 - **Annuller publicering** – Brug handlingen **Annuller publicering** til at gøre en visning inaktiv. Visningen vil stadig være tilgængelig i systemet, men brugerne kan ikke se den i visningsvælgeren, før visningen publiceres igen.
-- **Gem som personlig** – Brug handlingen **Gem som personlig** til at oprette en personlig kladdekopi af den publicerede visning. Denne egenskab kan hjælpe dig med at forstå indholdet af en visning, der ikke blev publiceret til dig, eller som endnu ikke er publiceret. Du kan også bruge den til at redigere og derefter publicere en visning igen. Denne funktion introduceres i version 10.0.12.
+- **Gem som personlig** – Brug handlingen **Gem som personlig** til at oprette en personlig kladdekopi af den publicerede visning. Denne egenskab kan hjælpe dig med at forstå indholdet af en visning, der ikke blev publiceret til dig, eller som endnu ikke er publiceret. Du kan også bruge den til at redigere og derefter publicere en visning igen.
 - **Slet** – Brug handlingen **Slet** til at slette en publiceret eller ikke-publiceret visning permanent. Denne handling fjerner også visningen for alle brugere i systemet. Når publicerede visninger fjernes, træder det i kraft, når knappen **Gem** er valgt. Når en visning er slettet, kan den ikke gendannes. 
 
 ## <a name="managing-views-globally"></a>Administrere visninger globalt
 
 Selvom nogle administrationsmuligheder vises på alle sider som angivet i dette emne, kan **systemadministratorer** og **gemte visningsadministratorer** administrere visninger mere enkelt for systemet via siden **Brugertilpasning**. Denne side indeholder bl. a. følgende afsnit og funktioner: 
 
-- **Publicerede visninger** – i dette afsnit beskrives alle de visninger, der er publiceret for din organisation. Herfra kan du publicere en visning igen, efter at du har justeret de sikkerhedsroller eller juridiske enheder, som visningen er mål for. Du kan også eksportere, slette eller annullere publicering af visninger. I version 10.0.12 og nyere kan du bruge handlingen **Gem som personlig** til at oprette en personlig kopi af en visning, så du kan opdatere visningen eller få en bedre forståelse af dens indhold. 
-- **Ikke-publicerede visninger** – I dette afsnit vises alle organisationsvisninger i systemet, der ikke aktuelt er publiceret. Disse visninger kommer oftest ind i systemet via importfunktionen. Du kan publicere, eksportere eller slette disse visninger. Handlingen **Hurtig publicering**, der blev tilføjet i version 10.0.12, gør det muligt at publicere flere visninger fra dette afsnit i én handling ved hjælp af de eksisterende konfigurationer af sikkerhedsroller og juridiske enheder. I version 10.0.12 og nyere kan du bruge handlingen **Gem som personlig** til at oprette personlige kopier af disse visninger, så du kan få en bedre forståelse af deres indhold.
+- **Publicerede visninger** – i dette afsnit beskrives alle de visninger, der er publiceret for din organisation. Herfra kan du publicere en visning igen, efter at du har justeret de sikkerhedsroller eller juridiske enheder, som visningen er mål for. Du kan også eksportere, slette eller annullere publicering af visninger. Du kan bruge handlingen **Gem som personlig** til at oprette en personlig kopi af en visning, så du kan opdatere visningen eller få en bedre forståelse af dens indhold. 
+- **Ikke-publicerede visninger** – I dette afsnit vises alle organisationsvisninger i systemet, der ikke aktuelt er publiceret. Disse visninger kommer oftest ind i systemet via importfunktionen. Du kan publicere, eksportere eller slette disse visninger. Handlingen **Hurtig publicering**, der blev tilføjet i version 10.0.12, gør det muligt at publicere flere visninger fra dette afsnit i én handling ved hjælp af de eksisterende konfigurationer af sikkerhedsroller og juridiske enheder. Du kan bruge handlingen **Gem som personlig** til at oprette personlige kopier af disse visninger, så du kan få en bedre forståelse af deres indhold.
 - **Personlige visninger** – Dette afsnit beskriver alle de visninger, der er oprettet af brugere i systemet. Herfra kan du publicere en personlig visning i organisationen eller kopiere en eller flere af disse visninger til andre brugere. Du kan også eksportere eller slette disse visninger efter behov.
 - **Brugerindstillinger** – Vælg en bruger, der skal vises, eller juster brugerens mulighed for brugertilpasning enten for hele systemet eller for bestemte sider, som brugeren har besøgt. Du kan se og arbejde interaktivt med brugerens tilpasninger i systemet. Du kan også slette alle tilpasninger for den pågældende bruger eller nulstille billedforklaringer for brugeren. Hvis billedforklaringer til funktioner nulstilles, bliver pop op-vinduer, der introducerede nye funktioner, og som brugeren tidligere har afvist, vist igen, næste gang brugeren støder på disse funktioner.
 - **Systemindstillinger** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde anvendes ingen tilpasninger for nogen bruger, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
 
-Brugere, der har adgang til siden **Brugertilpasning**, kan også importere personlige visninger eller organisationsvisninger ved hjælp af knappen **Importér visninger** i handlingsruden. I version 10.0.12 og nyere er der tilføjet en mekanisme til øjeblikkelig publicering af visninger, når de importeres.
+Brugere, der har adgang til siden **Brugertilpasning**, kan også importere personlige visninger eller organisationsvisninger ved hjælp af knappen **Importér visninger** i handlingsruden. I forbindelse med organisationsvisninger kan du vælge **Publicer med det samme** for at gøre visningerne tilgængelige for brugere uden yderligere eksplicit publicering.
 
 ## <a name="known-issues"></a>Kendte problemer
+
 Du kan få vist en liste over kendte problemer med gemte visninger ved at se [Opbygge formularer, der fuldt ud anvender gemte visninger](../../dev-itpro/user-interface/understanding-saved-views.md).
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
@@ -202,29 +215,9 @@ Du kan få vist en liste over kendte problemer med gemte visninger ved at se [Op
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø?
 
 > [!NOTE]
-> Funktionen **Gemte visninger** kræver, at Finance and Operations-tilpasningssystemet er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
+> Funktionen **Gemte visninger** kræver, at tilpasningssystemet i Finans og drift er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
 
-**Version 10.0.13 og nyere**
-
-Funktionen **Gemte visninger** er ikke længere i prøveversion. Den er nu tilgængelig direkte via funktionsstyring i alle miljøer.
-
-**Version 10.0.9 til 10.0.12**
-
-Funktionen **Gemte visninger** er tilgængelig direkte i funktionsstyring i ethvert miljø. Ligesom det er tilfældet med andre funktioner i prøveversioner, er aktivering af denne funktion i produktion underlagt [Supplerende aftale om vilkår for anvendelse](https://go.microsoft.com/fwlink/?linkid=2105274).
-
-**10.0.8 / Platform update 32 og tidligere**
-
-Funktionen **Gemte visninger** kan aktiveres i miljøer på niveau 1 (udvikling/test) og niveau 2 (sandkasse), hvis du vil foretage yderligere test- og designændringer ved at følge trinnene nedenfor.
-
-1. **Aktivér flyvningen**: Udfør følgende SQL-sætning: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
-
-2. **Nulstil IIS** for at rydde den statiske flighting-cache. 
-3. **Find funktionen**: Gå til arbejdsområdet **Funktionsstyring**. Hvis **Gemte visninger** ikke fremgår af listen, skal du vælge **Søg efter opdateringer**.
-4. **Aktivér funktionen**: Find funktionen **Gemte visninger** på listen over funktioner, og vælg **Aktivér nu** i detaljeruden.
-
-Alle efterfølgende brugersessioner vil starte med gemte visninger aktiveret.
+Du kan aktivere og deaktivere funktionen **Gemte visninger** via Funktionsstyring i alle miljøer. Når den er aktiveret, aktiveres gemte visninger i alle efterfølgende brugersessioner.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Hvad sker der med eksisterende tilpasninger, når visninger er aktiveret? 
 
@@ -253,3 +246,12 @@ For sider med store visningsvælgere (både brugertilpasninger og forespørgsler
 
 - Hvis du navigerer til en side fra et felt, udføres feltforespørgslen, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du har oprettet det pågældende felt, efter at visninger er blevet aktiveret, vil valg af et felt åbne siden med den visning, der er knyttet til feltet.
 - Hvis du navigerer til en side, og dette adgangspunkt omfatter en forespørgsel, udføres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. Når dette sker, skulle du få besked om det, når visningen indlæses. Du kan også bekræfte ved at skifte til denne visning, når siden er indlæst, fordi visningsforespørgslen skulle kunne udføres under alle omstændigheder.
+
+### <a name="why-is-a-view-that-was-published-for-a-specific-legal-entity-visible-in-all-legal-entities"></a>Hvorfor er en visning, der er publiceret for en bestemt juridisk enhed, synlig for alle juridiske enheder?
+
+Hvis publicerer en visning for en bestemt juridisk enhed, men du ikke publicerer visningen som standardvisning, sker følgende:
+
+- Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, viser brugerens visningsvælger for siden først visningen for de angivne juridiske enheder. Når visningen er indlæst for første gang, vil visningsvælgeren for siden altid vise den, uanset den juridiske enhed. Denne funktionsmåde forekommer, fordi brugere får deres egen personlige kopi af den publicerede visning, når den indlæses, og personlige visninger er globale.
+- **Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder. Denne funktionsmåde forekommer, fordi funktionen giver mulighed for at sammenkæde visninger (herunder personlige visninger) med bestemte juridiske enheder.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

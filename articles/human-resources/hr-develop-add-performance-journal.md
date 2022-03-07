@@ -2,28 +2,28 @@
 title: Tilføje til performancekladde og sende ros til en person
 description: Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2a90a5f746e49e1a5df9910867e8cd35feb1147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 94df675b02054d7a4761ea5b6edf24c6207e8fc9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417746"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805556"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Tilføje til performancekladde og sende ros til en person
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode. Du kan også rose handlinger udført af en kollega fra kladden. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
@@ -54,3 +54,6 @@ Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt
 20. Skriv 'Tak for hjælpen på konferencen!' i feltet Beskrivelse.
 21. Klik på Send.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

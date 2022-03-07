@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b057f5a66f7a52f3d2236d3a5c9273a5c3a926dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 06005e854ad449e78e83d402b13506150b353362
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407643"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206039"
 ---
 # <a name="purchasing-cards"></a>Indkøbskort
 
@@ -131,3 +130,6 @@ Du kan bruge følgende procedure til at oprette en kreditorfaktura for at regist
 11. Hvis du vil angive flere oplysninger om linjen, skal du vælge oversigtspanelet **Linjedetaljer** og angive oplysningerne.
 12. Valgfrit: Send fakturaen til arbejdsgangssystemet til gennemsyn og godkendelse, og bogfør derefter fakturaen.
 13. Hvis du vil gemme fakturaen uden at bogføre den, skal du lukke siden. Du kan se fakturaen på listesiden **Ventende kreditorfakturaer**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

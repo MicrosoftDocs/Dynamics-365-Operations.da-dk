@@ -1,31 +1,33 @@
 ---
 title: Masseansættelsesprojekter
-description: Masseansættelsesprojekter tillader personalespecialister at oprette flere stillinger og effektivt ansætte arbejdere til disse stillinger.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: I dette emne beskrives masseansættelsesprojekter, så HR-specialister kan oprette flere stillinger og effektivt ansætte arbejdere til disse stillinger.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f33fb96e9a2331499a594689a758694c2291368
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcfc973dc9acea624336f059d68562fa5eb41353
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417824"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070195"
 ---
 # <a name="mass-hire-projects"></a>Masseansættelsesprojekter
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,19 +46,19 @@ Brug masseansættelsesprojekter, når du ansætter flere arbejdere på én gang,
 
 Om sommeren ansætter du normalt 15-20 studerende på deltid i de turnusstillinger, der findes i virksomheden. I år vil du ansætte fem bogholdere, fem medarbejdere til ordrebehandling og fem kasserer. I stedet for at oprette hver stillingspost og arbejderpost særskilt, opretter du ét masseansættelsesprojekt, der kaldes "Sommermedarbejdere". Projektets start- og slutdatoer samkøres med start- og slutdatoerne for varigheden af de stillinger, du opretter til dette masseansættelsesprojekt.
 
-På siden **Masseansættelsesprojekter** skal du vælge projektet "Sommermedarbejdere" og derefter klikke på **Åbn projekt**. I det åbne masseansættelsesprojekt skal du klikke på **Opret stillinger** og angive oplysninger om bogholderstillingen. Du kan angive, at fem bogholderstillinger bør oprettes med de samme oplysninger for hver stilling, og derefter kan du klikke på OK. Gentag denne proces for stillingerne til medarbejdere til ordrebehandling og kasserere.
+På siden **Masseansættelsesprojekter** skal du vælge projektet **SummerInterns** og derefter vælge **Åbn projekt**. I det åbne masseansættelsesprojekt skal du vælge **Opret stillinger** og angive oplysninger om bogholderstillingen. Du kan angive, at fem bogholderstillinger skal oprettes med de samme oplysninger for hver stilling. Vælg derefter **OK**. Gentag denne proces for stillingerne til medarbejdere til ordrebehandling og kasserere.
 
-Når du har fundet studerende, der skal ansættes i praktikantstillingerne, indtaster du den enkelte studerendes oplysninger i **Detaljer for stilling** for stillingen, som du vil ansætte dem i. Når du har angivet alle stillingsoplysningerne, skal du vælge stillingen på siden Masseansættelsesprojekter og derefter klikke på **Ansæt**. Der oprettes en stillingspost for hver stilling, og der oprettes og tildeles en arbejderpost til den relevante stilling for hver person, du ansætter.
+Når du har valgt studerende, der skal ansættes i praktikantstillingerne, indtaster du den enkelte studerendes oplysninger i detaljerne for den stilling, som du vil ansætte dem i. Når du har angivet alle stillingsoplysningerne, skal du vælge stillingen på siden **Masseansættelsesprojekter** og derefter klikke på **Ansæt**. Der oprettes en stillingspost for hver stilling, og der oprettes og tildeles en arbejderpost til den relevante stilling for hver person, du ansætter.
 
 ## <a name="mass-hire-project-statuses"></a>Statusser for masseansættelsesprojekter
 
 Et masseansættelsesprojekt kan have følgende statusser.
 
-- Oprettet
-- Åbnet
+- Oprettet den
+- Åbn
 - Lukket
 
-På siden **Masseansættelsesprojekt** skal du klikke på **Åbn projekt** eller **Luk projekt** for at ændre status for et masseansættelsesprojekt. I følgende tabel beskrives, hvad du kan gøre med et projekt i henhold til projektets status.
+På siden **Masseansættelsesprojekt** skal du vælge **Åbn projekt** eller **Luk projekt** for at ændre status for et masseansættelsesprojekt. I følgende tabel beskrives, hvad du kan gøre med et projekt i henhold til projektets status.
 
 <table>
 <thead>
@@ -76,9 +78,12 @@ På siden **Masseansættelsesprojekt** skal du klikke på **Åbn projekt** eller
 </tr>
 <tr>
 <td>Lukket</td>
-<td>Du kan ikke føje stillinger til projektet. Hvis du vil føje stillinger til masseansættelsesprojektet, skal du åbne projektet igen. Det er status for færdige projekter.
-<blockquote>[!NOTE] Før du kan lukke et masseansættelsesprojekt, skal alle stillinger i projektet være tildelt statussen Oprettet eller Lukket.</blockquote>
+<td><p>Du kan ikke føje stillinger til projektet. Hvis du vil føje stillinger til masseansættelsesprojektet, skal du åbne projektet igen. Det er status for færdige projekter.</p>
+<p><strong>Bemærk:</strong> Før du kan lukke et masseansættelsesprojekt, skal alle stillinger i projektet have statussen <b>Oprettet</b> eller <b>Lukket</b>.</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,42 +1,41 @@
 ---
-title: Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico
-description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
+title: Start her med elektronisk fakturering for Mexico
+description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Mexico.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742147"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico
+# <a name="get-started-with-electronic-invoicing-for-mexico"></a>Start her med elektronisk fakturering for Mexico
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Tilføjelsesprogrammet til elektronisk fakturering for Mexico understøtter i øjeblikket muligvis ikke alle de funktioner, der er tilgængelige i CFDI-dokumentet (Comprobante Fiscal Digital por Internet) og i den relaterede integrering i Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
+> Elektronisk fakturering for Mexico understøtter i øjeblikket muligvis ikke alle de funktioner, der er tilgængelige i CFDI-dokumentet (Comprobante Fiscal Digital por Internet) og i den relaterede integrering i Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
 
-Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico. Det fører dig gennem de konfigurationstrin, der er landeafhængige i Regulatory Configuration Services (RCS) og i Finance. Det fører også dig gennem de trin, du skal følge i Finance for at sende CFDI-fakturaer via tjenesten, og det forklarer, hvordan du kan gennemse behandlingsresultaterne og statussen for CFDI-fakturaer.
+Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Mexico. Det fører dig gennem de konfigurationstrin, der er landeafhængige i Regulatory Configuration Services (RCS) og i Finance. Det fører også dig gennem de trin, du skal følge i Finance for at sende CFDI-fakturaer via tjenesten, og det forklarer, hvordan du kan gennemse behandlingsresultaterne og statussen for CFDI-fakturaer.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du udfører trinene i dette emne, skal du udføre trinnene i [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md).
+Før du udfører trinene i dette emne, skal du udføre trinnene i [Start her med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="rcs-setup"></a>RCS-opsætning
 
@@ -48,7 +47,7 @@ Under RCS-opsætningen skal du udføre disse opgaver:
 4. Publicer e-faktureringsfunktionen for CFDI-fakturaer.
 
 > [!NOTE]
-> "E-faktureringsfunktionen" er det generiske navn på den ressource, der er konfigureret og publiceret til at bruge serveren for tilføjelsesprogrammet til elektronisk fakturering. I dette tilfælde er CFDI-fakturaer (MX) den e-faktureringsfunktion, du skal konfigurere.
+> "E-faktureringsfunktionen" er det generiske navn på den ressource, der er konfigureret og publiceret til at bruge serveren for elektronisk fakturering. I dette tilfælde er CFDI-fakturaer (MX) den e-faktureringsfunktion, du skal konfigurere.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importere e-faktureringsfunktionen
 
@@ -59,7 +58,7 @@ Under RCS-opsætningen skal du udføre disse opgaver:
     > [!NOTE]
     > Hvis du ikke kan se funktionen på listen, skal du vælge **Synkroniser** og derefter gentage trin 3.
 
-![Importere funktionen CFDI-fakturaer (MX)](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![Importere funktionen CFDI-fakturaer (MX).](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 Når du importerer funktionen **CFDI-fakturaer (MX)** fra det globale lager, importeres alle funktionsindstillinger, herunder konfigurationer og handlinger, også.
 
@@ -69,13 +68,13 @@ Du kan oprette en ny version, hvis f.eks. URL-adresser skal opdateres. Du kan fi
 
 - På siden med **e-faktureringsfunktioner** på fanen **Versioner** skal du vælge **Ny**.
 
-![Tilføje en ny version af e-faktureringsfunktionen](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![Tilføje en ny version af e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### <a name="update-the-configuration-version"></a>Opdatere konfigurationsversionen
 
 1. På siden med **e-faktureringsfunktioner** under **Konfigurationer** skal du vælge **Tilføj** eller **Slet** for at administrere konfigurationsversionerne (filkonfigurationer for ER-format).
 
-    ![Administrere konfigurationer for e-faktureringsfunktion](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![Administrere konfigurationer for e-faktureringsfunktion.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     Når du opretter en ny version, nedarves alle konfigurationer fra den senest publicerede version. Der kræves følgende konfigurationer for at behandle CFDI-fakturaer:
 
@@ -87,17 +86,17 @@ Du kan oprette en ny version, hvis f.eks. URL-adresser skal opdateres. Du kan fi
 
 2. Vælg en konfigurationsversion på listen, og vælg derefter **Rediger** eller **Vis** for at åbne siden **Formatdesigner**, hvor du kan redigere eller få vist konfigurationen.
 
-    ![Åbne siden Formatdesigner](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![Åbne siden Formatdesigner.](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Du kan bruge siden **Formatdesigner** til at redigere og få vist filkonfigurationer for ER-formatet. Du kan finde flere oplysninger i [Oprette konfigurationer for elektroniske dokumenter](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Du kan bruge siden **Formatdesigner** til at redigere og få vist filkonfigurationer for ER-formatet. Du kan finde flere oplysninger i [Oprette konfigurationer for elektroniske dokumenter](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Siden Formatdesigner](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![Siden Formatdesigner.](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Administrere funktionsopsætninger for e-fakturering
 
 - På siden med **e-faktureringsfunktioner** på fanen **Konfigurationer** skal du vælge **Tilføj**, **Slet** eller **Rediger** for at administrere funktionsopsætningerne for e-fakturering.
 
-![Administrere funktionsopsætninger for e-fakturering](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![Administrere funktionsopsætninger for e-fakturering.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 Hvis du vil sende CFDI-fakturaer til autorisation (oprette XML-filen, sende XML-filen og behandle svaret), kræves funktionsopsætningen for **Salgsfaktura**.
 
@@ -108,15 +107,15 @@ Hvis du vil sende en CFDI-fakturaannullering, kræves der funktionsopsætninger 
 1. Vælg **Salgsfaktura** i kolonnen **Funktionsopsætning** på fanen **Konfigurationer** på siden med **e-faktureringsfunktioner**.
 2. Vælg **Rediger** for at konfigurere handlinger, anvendelighedsregler og variabler.
 
-    ![Redigere funktionsopsætningen for e-fakturering](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![Redigere funktionsopsætningen for e-fakturering.](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. På siden **Opsætning af funktionsversion** skal du vælge fanen **Handlinger** for at administrere listen over handlinger. Handlinger definerer en liste over handlinger, der skal køres i rækkefølge for at opnå fuld udførelse af hændelsen.
 
-    ![Fanen Handlinger](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![Fanen Handlinger.](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
     | Handlings-id | Handling                   | Handlingsnavn                                  | Handlingsbeskrivelse                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
-    | 1         | Transformere document       | Oprette CFDI-e-faktura uden digital underskrift | Opret CFDI-e-fakturaen.                                |
+    | 1         | Transformér dokument       | Oprette CFDI-e-faktura uden digital underskrift | Opret CFDI-e-fakturaen.                                |
     | 2         | Underskriv dokument            | Underskrive digital                                 | Underskriv e-fakturaen digitalt til indsendelse.                |
     | 3         | Kalde mexicansk PAC-tjeneste | Sende CFDI-e-faktura                        | WCF-klienten (Windows Communication Foundation) sender CFDI-e-fakturaen. |
     | 4         | Behandle svar         | Analysere svar fra webtjeneste                 | Analysér svaret fra webtjenesten, og returner fejlloggen. |
@@ -136,7 +135,7 @@ Hvis du vil sende en CFDI-fakturaannullering, kræves der funktionsopsætninger 
 3. I feltet **Gyldig fra** skal du vælge den dato, hvor miljøet skal være gyldigt.
 3. Vælg **Aktivér**.
 
-![Aktivere et e-faktureringsmiljø](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![Aktivere et e-faktureringsmiljø.](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## <a name="change-the-version-status-to-completed"></a>Skifte versionsstatus til Fuldført
 
@@ -152,11 +151,11 @@ Hvis du vil sende en CFDI-fakturaannullering, kræves der funktionsopsætninger 
 1. På siden med **e-faktureringsfunktioner** skal du vælge fanen **Versioner** for at administrere statussen for funktionen **CFDI-fakturaer (MX)**.
 2. Vælg **Skift status** for at ændre funktionens status.
 
-![Ændre status for e-faktureringsfunktionen](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![Ændre status for e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance"></a>Konfigurere integrationen af tilføjelsesprogrammet til elektronisk fakturering i Finance
+## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Konfigurere integrationen af elektronisk fakturering i Finance
 
-Hvis du vil konfigurere tilføjelsesprogrammet til elektronisk fakturering i Finance, skal du fuldføre disse opgaver:
+Hvis du vil konfigurere elektronisk fakturering i Finance, skal du fuldføre disse opgaver:
 
 1. Importér ER-datamodellen, ER-datamodeltilknytningen og de formater, der kræves til CFDI-fakturaer.
 2. Konfigurer svartyper for opdatering af CFDI-fakturaerne. Disse svartyper bruges til svaret fra den autoriserede certificeringsudbyderserver (PAC).
@@ -164,7 +163,7 @@ Hvis du vil konfigurere tilføjelsesprogrammet til elektronisk fakturering i Fin
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importere ER-datamodellen, ER-datamodeltilknytningen og kontekstkonfigurationerne for CFDI-fakturaer
 
 1. Log på Finance.
-2. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv**, i [Oprette konfigurationsudbydere og markere dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. Gå til arbejdsområdet **Elektronisk rapportering**, og vælg feltet **Microsoft** i sektionen **Konfigurationsudbydere**. Kontrollér, at denne konfigurationsudbyder er angivet til **Aktiv**. Du kan finde flere oplysninger om, hvordan du angiver en udbyder til **Aktiv**, i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Vælg **Lagre**.
 4. Vælg **Globalt lager \> Åbn**.
 5. Importér **Fakturamodel**, **Fakturamodeltilknytning**, **CFDI-fakturaformat (MX)**, **CFDI-fakturaformat for anmodning om annullering (MX)** og **CFDI fakturaformat for annullering (MX)**.
@@ -174,7 +173,7 @@ Hvis du vil konfigurere tilføjelsesprogrammet til elektronisk fakturering i Fin
 1. Gå til **Organisationsadministration \> Konfiguration \> Parametre for elektroniske dokumenter**.
 2. På fanen **Funktioner** skal du markere afkrydsningsfeltet **Aktivér** i rækkerne for funktionsreferencerne **MX-00010** og **MX-00016**.
 
-![Aktivere funktionerne til behandling af CFDI-fakturaer](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![Aktivere funktionerne til behandling af CFDI-fakturaer.](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-updating-cfdi-invoices"></a>Importere ER-konfigurationer og konfigurere svartyper for opdatering af CFDI-fakturaer
 
@@ -195,7 +194,7 @@ Hvis du vil konfigurere tilføjelsesprogrammet til elektronisk fakturering i Fin
     - Angiv en **Debitorfakturakontekst** for **Debitorfakturajournal**.
     - Angiv en **Projektfakturakontekst** for **Projektfaktura**.
 
-4. Vælg **Svartyper** for at konfigurere de svartyper, der kan returneres fra tilføjelsesprogrammet til elektronisk fakturering, og som er medtaget i en debitorfakturajournal eller projektfaktura.
+4. Vælg **Svartyper** for at konfigurere de svartyper, der kan returneres fra elektronisk fakturering, og som er medtaget i en debitorfakturakladde eller projektfaktura.
 5. Vælg **Ny**, og vælg derefter **Svar** i feltet **Svartype**.
 6. Vælg **Afventer** i feltet **Indsendelsesstatus**.
 7. I feltet **Modeltilknytning** skal du vælge **Format til import af svarmeddelelse – modeltilknytning fra svarmeddelelse**.
@@ -207,7 +206,7 @@ Hvis du vil konfigurere tilføjelsesprogrammet til elektronisk fakturering i Fin
 
 ## <a name="process-electronic-invoices-in-finance"></a>Behandle elektroniske fakturaer i Finance 
 
-Du kan udføre følgende opgaver under behandlingen af CFDI-fakturaer i Finance ved hjælp af tilføjelsesprogrammet til elektronisk fakturering:
+Du kan udføre følgende opgaver under behandlingen af CFDI-fakturaer i Finance ved hjælp af elektronisk fakturering:
 
 - Send CFDI-fakturaer.
 - Få vist loggene for udførelse af indsendelse.
@@ -215,19 +214,19 @@ Du kan udføre følgende opgaver under behandlingen af CFDI-fakturaer i Finance 
 
 ### <a name="submit-cfdi-invoices"></a>Sende CFDI-fakturaer
 
-Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**, kan processen **Eksportér/importér elektronisk faktura** (**Debitor \> Fakturaer \> E-fakturaer**) ikke længere bruges til at sende CFDI-fakturaer. Den erstattes af den nye proces **Send elektroniske dokumenter**.
+Når du har aktiveret funktionen **Konfigurerbar integration for elektronisk fakturering**, kan processen **Eksportér/importér elektronisk faktura** (**Debitor \> Fakturaer \> E-fakturaer**) ikke længere bruges til at sende CFDI-fakturaer. Den erstattes af den nye proces **Send elektroniske dokumenter**.
 
 > [!NOTE]
-> Før du bruger den nye proces **Send elektroniske dokumenter**, skal du kontrollere, at den opsætning, der kræves til mexicanske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [CFDI-layoutversion 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Før du bruger den nye proces **Send elektroniske dokumenter**, skal du kontrollere, at den opsætning, der kræves til mexicanske e-fakturaer, blev fuldført. Du kan finde flere oplysninger i [CFDI-layoutversion 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. Ved den første indsendelse af et dokument skal du altid angive indstillingen **Send dokumenter igen** til **Nej**. Hvis du skal sende et dokument igen via tjenesten, skal du angive denne indstilling til **Ja**.
 3. I oversigtspanelet **Poster, der skal indgå** skal du vælge **Filter** for at åbne dialogboksen **Forespørgsel**, hvor du kan oprette en forespørgsel for at vælge de dokumenter, der skal sendes.
 
-![Sende et CFDI-dokument](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![Sende et CFDI-dokument.](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> I løbet af første forsøg på at sende et dokument via tjenesten bliver du bedt om at bekræfte forbindelsen med tilføjelsesprogrammet til elektronisk fakturering. Vælg **Klik her for at oprette forbindelse til tjenesten til indsendelse af elektroniske dokumenter**.
+> Under første forsøg på at sende et dokument via tjenesten bliver du bedt om at bekræfte forbindelsen med elektronisk fakturering. Vælg **Klik her for at oprette forbindelse til tjenesten til indsendelse af elektroniske dokumenter**.
 
 ### <a name="view-submission-logs"></a>Få vist indsendelseslogge
 
@@ -235,41 +234,41 @@ Du kan få vist indsendelseslogge for alle sendte dokumenter eller kun for ét s
 
 #### <a name="view-all-submission-logs"></a>Få vist alle indsendelseslogge
 
-Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**, bliver en ny side tilgængelig, hvor du kan følge op på processen for indsendelse af dokumenter. Du kan bruge denne side til at få vist indsendelseslogge for alle sendte dokumenter.
+Når du har aktiveret funktionen **Konfigurerbar integration for elektronisk fakturering**, bliver en ny side tilgængelig, hvor du kan følge op på processen for indsendelse af dokumenter. Du kan bruge denne side til at få vist indsendelseslogge for alle sendte dokumenter.
 
 1. Gå til **Organisationsadministration \> Periodisk \> Elektroniske dokumenter \> Indsendelseslog for elektroniske dokumenter**.
 2. I feltet **Dokumenttype** skal du vælge **Debitorfakturajournal** for at filtrere de nødvendige elektroniske dokumenter.
 
-    ![Vælge en dokumenttype for at få vist indsendelseslogge](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![Vælge en dokumenttype for at få vist indsendelseslogge.](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. Vælg **Forespørgsler \> Indsendelsesoplysninger** i handlingsruden for at få vist logoplysningerne for udførelse af indsendelsen.
 
-    ![Få vist logoplysninger om indsendelse](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![Få vist logoplysninger om indsendelse.](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 Oplysningerne i indsendelseslogge er opdelt mellem tre oversigtspaneler:
 
 - **Behandling af handlinger** – I dette oversigtspanel vises udførelsesloggen for de handlinger, der er konfigureret i den funktionsversion, som blev konfigureret i RCS. Kolonnen **Status** viser, om handlingen blev kørt korrekt.
 - **Handlingsfiler** – I dette oversigtspanel vises de midlertidige filer, der blev oprettet under udførelse af handlingerne. Du kan vælge **Vis** for at downloade og få vist filen.
-- **Handlingslog for behandling** – I dette oversigtspanel vises resultaterne af kommunikationen mellem tilføjelsesprogrammet til elektronisk fakturering og destinationswebtjenesten. Den viser også, hvad der blev returneret af behandlingen fra webtjenesten. Kolonnen **Fejlkode** viser den returkode, der blev returneret af autorisationswebtjenesten.
+- **Handlingslog for behandling** – I dette oversigtspanel vises resultaterne af kommunikationen mellem elektronisk fakturering og destinationswebtjenesten. Den viser også, hvad der blev returneret af behandlingen fra webtjenesten. Kolonnen **Fejlkode** viser den returkode, der blev returneret af autorisationswebtjenesten.
 
 Når den afsendte CFDI-faktura er godkendt, opdateres statussen til **Godkendt**.
 
 #### <a name="view-submission-logs-from-cfdi-invoices"></a>Få vist indsendelseslogge fra CFDI-fakturaer
 
-Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**, kan du også få vist indsendelsesloggene fra CFDI-fakturaer.
+Når du har aktiveret funktionen **Konfigurerbar integration for elektronisk fakturering**, kan du også få vist indsendelsesloggene fra CFDI-fakturaer.
 
 1. Gå til **Debitor \> Forespørgsler og rapporter \> CFDI (elektroniske fakturaer)**.
-2. Vælg en CFDI-faktura, der blev sendt, efter at funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering** blev aktiveret.
+2. Vælg en CFDI-faktura, der blev sendt, efter at funktionen **Konfigurerbar integration for elektronisk fakturering** blev aktiveret.
 3. Vælg **Log for elektronisk dokument** på fanen **Historik** i handlingsruden.
 
-![Få vist indsendelseslogge fra CFDI-fakturaer](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![Få vist indsendelseslogge fra CFDI-fakturaer.](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> Knappen **Historik** er tilgængelig for CFDI-fakturaer, der blev sendt, før funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering** blev aktiveret. Knappen **Historik** er ikke tilgængelig for CFDI-fakturaer, der blev sendt, efter at funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering** blev aktiveret.
+> Knappen **Historik** er tilgængelig for CFDI-fakturaer, der blev sendt, før funktionen **Konfigurerbar integration for elektronisk fakturering** blev aktiveret. Knappen **Historik** er ikke tilgængelig for CFDI-fakturaer, der blev sendt, efter at funktionen **Konfigurerbar integration for elektronisk fakturering** blev aktiveret.
 
 ### <a name="submit-cancellation-of-cfdi-invoices"></a>Sende annullering af CFDI-fakturaer
 
-Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsesprogrammet til elektronisk fakturering**, kan den gamle proces til annullering af CFDI-fakturaer ikke længere bruges. Den erstattes af en ny annulleringsproces, der er indlejret på siden **Indsendelseslog for elektroniske dokumenter**.
+Når du har aktiveret funktionen **Konfigurerbar integration for elektronisk fakturering**, kan den gamle proces til annullering af CFDI-fakturaer ikke længere bruges. Den erstattes af en ny annulleringsproces, der er indlejret på siden **Indsendelseslog for elektroniske dokumenter**.
 
 1. Gå til **Debitor \> Forespørgsler og rapporter \> CFDI (elektroniske fakturaer)**.
 2. Hvis CFDI-fakturaen har statussen **Godkendt**, skal du vælge **Funktioner \> Annuller CFDI**.
@@ -285,17 +284,20 @@ Når du har aktiveret funktionen **Konfigurerbar integration for tilføjelsespro
 
     På siden **Relaterede indsendelser** vises alle relaterede indsendelser og deres indsendelsesstatus for en bestemt CFDI-faktura. I følgende illustration repræsenterer den første linje den indsendelse, der anmodede om godkendelse af CFDI-fakturaen. Den anden linje repræsenterer den indsendelse, der annullerede den pågældende CFDI-faktura.
 
-    ![Få vist alle indsendelseslogge for annullering](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![Få vist alle indsendelseslogge for annullering.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. Vælg **Forespørgsler \> Indsendelsesoplysninger** i handlingsruden for at få vist logoplysningerne for udførelse af indsendelsen.
 
-    ![Få vist alle oplysninger om indsendelseslogge for annullering](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![Få vist alle oplysninger om indsendelseslogge for annullering.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Aktivering af funktionerne MX-00010 og MX-00016 (CFDI-faktura og CFDI-annullering) kan kræve, at der sendes begrænsede data, som omfatter organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer til denne skattemyndighed i det foruddefinerede format, der kræves til integration med myndighedernes webtjeneste. En administrator kan aktivere og deaktivere funktionerne MX-00010 og MX-00016 (CFDI-faktura og CFDI-annullering) ved at gå til **Organisationsadministration \> Konfiguration \> Parametre for elektroniske dokumenter**. Vælg fanen **Funktioner**, vælg de rækker, der indeholder funktionerne MX-00010 og MX-00016, og foretag derefter det relevante valg. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.
+Aktivering af funktionen **CFDI mexicansk elektronisk faktura (MX)** kan kræve, at der sendes begrænsede data, herunder organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer til denne skattemyndighed i det foruddefinerede format, der kræves til integration med myndighedernes webtjeneste. En administrator kan aktivere og deaktivere funktionen **CFDI mexicansk elektronisk faktura (MX)** ved at gå til **Organisationsadministration \> Konfiguration\> Parametre for elektronisk dokument**. Vælg fanen **Funktioner**, og vælg de rækker, der indeholder funktionen **CFDI mexicansk elektronisk faktura (MX)** og derefter foretage de relevante valg. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Oversigt over tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-service-overview.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
-- [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+- [Oversigt over elektronisk fakturering](e-invoicing-service-overview.md)
+- [Start her med elektronisk fakturering](e-invoicing-get-started.md)
+- [Konfigurere elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

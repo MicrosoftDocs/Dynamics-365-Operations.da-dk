@@ -1,12 +1,11 @@
 ---
-title: Kontrollere, at dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
+title: Kontrollere konfiguration af dobbeltskrivning i Finance and Operations-apps og Dataverse
 description: I dette emne forklares det, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finance and Operations-apps og i Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,14 +17,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a1da32713f3d4d19b4d343c5b67b416a6c4ffbb
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685533"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566759"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Kontrollere, at dobbeltskrivning er konfigureret i Finance and Operations-apps og Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Kontrollere konfiguration af dobbeltskrivning i Finance and Operations-apps og Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,10 +50,13 @@ Du kan finde flere oplysninger om, hvordan du løser problemer, når du opretter
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Kontrollere, at dobbeltskrivning er konfigureret i Dataverse
 
-Når du opretter data, og du ser feltet **Firma** på siderne i Dataverse, er dobbeltskrivning konfigureret.
+Når du opretter data, og du ser kolonnen **Firma** på siderne i Dataverse, er dobbeltskrivning konfigureret.
 
 ![Kontrollere Dataverse-forbindelsen](media/verify_cds.png)
 
 Du kan finde flere oplysninger om, hvordan du løser problemer, når du opretter data i Dataverse, under [Fejlfinding i forbindelse med problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
 
 Du kan finde oplysninger om, hvordan du kan få vist detaljer om fejl, hvis der opstår fejl, mens du opretter data i Dataverse, under [Aktivere og få vist sporingsloggen for plug-ins i Dataverse for at få vist detaljer om fejl](dual-write-troubleshooting.md#enable-view-trace).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

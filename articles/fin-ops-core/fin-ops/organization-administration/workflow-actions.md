@@ -2,11 +2,9 @@
 title: Handlinger i godkendelsesprocesser i arbejdsgang
 description: I denne artikel beskrives de handlinger, som hver deltager i godkendelsen af en arbejdsproces kan foretage.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355742"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Handlinger i godkendelsesprocesser i arbejdsgang
 
@@ -31,7 +29,7 @@ I denne artikel beskrives de handlinger, som hver deltager i godkendelsen af en 
 
 En arbejdsgang kan involvere flere persongrupper: igangsætteren, opgavemodtagere, beslutningstagere og godkendere. I arbejdsgangen for følgende udgiftsrapport er Søren igangsætter, medlemmerne af køen er opgavemodtagere, John er opgavemodtager og Henrik, Mette og Dorthe er godkendere.
 
-[![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Workflow\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Følgende afsnit indeholder beskrivelser af de arbejdsgangshandlinger, som hver gruppe kan udføre.
 
@@ -141,3 +139,6 @@ Når en godkender anmoder om en ændring i et dokument, sendes dokumentet tilbag
 For eksempel har Søren sendt en udgiftsrapport på kr. 12.000, og dette dokument er tildelt til Mette. Hvis Mette anmoder om en ændring, sendes dokumentet tilbage til Søren.
 
 Søren kan sende udgiftsrapporten igen. Han kan udføre de ønskede ændringer først, eller han kan sende den oprindelige version af udgiftsrapporten igen. Hvis Søren sender udgiftsrapporten igen, sendes den til Henrik til godkendelse, fordi Henrik er den første godkender i godkendelsesprocessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

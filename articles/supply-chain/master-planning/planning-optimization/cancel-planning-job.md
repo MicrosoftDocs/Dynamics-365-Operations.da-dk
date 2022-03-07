@@ -2,16 +2,13 @@
 title: Annullere et planlægningsjob
 description: I dette emne beskrives det, hvordan du kan annullere et aktivt planlægningsjob, der bruger funktionen Planlægningsoptimering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4b65d344cd764740cc1485969c2fc4c2052e55e2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9cf4902251c3c2b93af12a8ad9bd571930ef769
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424600"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833323"
 ---
 # <a name="cancel-a-planning-job"></a>Annullere et planlægningsjob
 
@@ -60,3 +57,6 @@ Jobstatussen angives til **Annulleres** indtil planlægningsoptimeringstjenesten
 [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
 
 [Anvend filtre på en plan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,11 @@
 ---
 title: Oversigt over regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
-author: josaw
+author: EvgenyPopovMBS
 manager: annbe
-ms.date: 02/01/2019
-ms.topic: article
+ms.date: 09/22/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,26 +15,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d63f26afb8f533728a6b7ab0a1f359b210be3e5b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017461"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983738"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Introduktion
+Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce. 
 
-Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af salg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
+Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af salg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
 
 - Registrere et salg på en regnskabsenhed, der er knyttet til POS, f.eks. en bonprinter, og udskrive en regnskabskvittering til kunden.
 - Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
 - Hjælpe med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
 
-Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende scenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Commerce-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende scenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Commerce-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Commerce SDK'et, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For at understøtte andre scenarier, der ikke understøttes af et regnskabsintegrationseksempel, for at integrere Retail POS med andre regnskabsenheder eller -tjenester eller for at opfylde kravene i andre lande eller områder, skal du enten udvide et eksisterende regnskabsintegrationseksempel eller oprette et nyt eksempel ved hjælp af et eksisterende eksempel.
 
@@ -56,15 +55,15 @@ En regnskabsregistreringsproces for et bestemt POS-kasseapparat er defineret af 
 Følgende eksempel viser en typisk regnskabsregistreringskørsel af processen for en regnskabsenhed. Processen starter med en hændelse i POS (f.eks. afslutning af en salgstransaktion) og implementerer følgende sekvens af trin:
 
 1. POS anmoder om et regnskabsdokument fra CRT.
-2. CRT bestemmer, om den aktuelle hændelse kræver regnskabsregistrering.
-3. CRT identificerer, baseret på indstillingerne for regnskabsregistreringsprocessen, en regnskabsconnector og tilsvarende regnskabsdokumentudbyder, der skal bruges til regnskabsregistreringen.
-4. CRT kører regnskabsdokumentudbyderen, der genererer et regnskabsdokument (f.eks. et XML-dokument), der repræsenterer transaktionen eller -hændelsen.
-5. POS sender regnskabsdokumentet, som CRT forbereder til en hardwarestation.
-6. Hardwarestationen kører regnskabsconnectoren, der behandler regnskabsdokumentet og oplyser regnskabsenheden eller -tjenesten om det.
-7. POS analyserer svaret fra regnskabsenheden eller -tjenesten for at afgøre, om regnskabsregistreringen blev udført korrekt.
-8. CRT gemmer svaret i kanaldatabasen.
+1. CRT bestemmer, om den aktuelle hændelse kræver regnskabsregistrering.
+1. CRT identificerer, baseret på indstillingerne for regnskabsregistreringsprocessen, en regnskabsconnector og tilsvarende regnskabsdokumentudbyder, der skal bruges til regnskabsregistreringen.
+1. CRT kører regnskabsdokumentudbyderen, der genererer et regnskabsdokument (f.eks. et XML-dokument), der repræsenterer transaktionen eller -hændelsen.
+1. POS sender regnskabsdokumentet, som CRT forbereder til en hardwarestation.
+1. Hardwarestationen kører regnskabsconnectoren, der behandler regnskabsdokumentet og oplyser regnskabsenheden eller -tjenesten om det.
+1. POS analyserer svaret fra regnskabsenheden eller -tjenesten for at afgøre, om regnskabsregistreringen blev udført korrekt.
+1. CRT gemmer svaret i kanaldatabasen.
 
-![Løsningsskema](media/emea-fiscal-integration-solution.png "Løsningsskema")
+![Løsningsskema.](media/emea-fiscal-integration-solution.png "Løsningsskema")
 
 ## <a name="error-handling"></a>Fejlhåndtering
 
@@ -118,6 +117,8 @@ En regnskabstransaktion indeholder følgende oplysninger:
 - Status for regnskabsregistreringen: **Fuldført** for fuldført registrering, **Sprunget over**, hvis operatøren har valgt indstillingen **Spring over** for en mislykket registrering eller **Markeret som registreret**, hvis operatøren har valgt indstillingen **Markér som registreret**.
 - Infokodetransaktioner, der er relateret til en valgt regnskabstransaktion. Hvis du vil se infokodetransaktioner, skal du i oversigtspanelet **Regnskabstransaktioner** vælge en regnskabstransaktion, der har statussen **Sprunget over** eller **Markeret som registreret**, og derefter vælge **Infokodetransaktioner**.
 
+Hvis du vælger **Udvidede data**, kan du også få vist visse egenskaber for regnskabstransaktionen. Listen over egenskaber, der kan vises, gælder specifikt for funktionen til regnskabsregistrering, som har genereret regnskabsposteringen. Du kan f.eks. få vist den digitale signatur, løbenummer, certifikataftryk, id for hash-algoritmer og andre egenskaber for regnskabsposteringer for den digitale signeringsfunktionalitet for Frankrig.
+
 ## <a name="fiscal-texts-for-discounts"></a>Regnskabstekster for rabatter
 
 Nogle lande eller områder har særlige krav om yderligere tekster, der skal udskrives på regnskabskvitteringer, når der anvendes forskellige rabatter. Med regnskabsintegrationsfunktionen kan du oprette en særlig tekst for en rabat, der udskrives efter en rabatlinje på en regnskabskvittering. For manuelle rabatter kan du konfigurere en regnskabstekst for den infokode, der er angivet som **Produktrabat**-infokoden i POS-funktionalitetsprofilen. Du kan finde flere oplysninger om, hvordan du opretter regnskabstekster for rabatter, i [Oprette regnskabstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -129,23 +130,30 @@ Funktionen til regnskabsintegration understøtter generering af kasseoptællings
 - Nye knapper, der kører tilsvarende operationer, skal føjes til POS-skærmlayoutet. Du kan finde flere oplysninger i [Konfigurere X/Z-regnskabsrapporter fra POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - I regnskabsintegrationseksemplet skal disse operationer sammenholdes med de tilsvarende handlinger for regnskabsenheden.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskabsintegration i Retail SDK
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Eksempler på regnskabsintegration i Commerce SDK
 
-Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i Retail SDK:
+Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i Commerce SDK:
 
-- [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md)
-- [Eksempel på integration af bonprinter for Polen](emea-pol-fpi-sample.md)
-- [Eksempel på integration af regnskabsregistreringstjeneste for Østrig](emea-aut-fi-sample.md)
-- [Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet](emea-cze-fi-sample.md)
+- [Eksempel på integration af bonprinter for Italien](./emea-ita-fpi-sample.md)
+- [Eksempel på integration af bonprinter i Polen](./emea-pol-fpi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste for Østrig](./emea-aut-fi-sample.md)
+- [Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet](./emea-cze-fi-sample.md)
 - [Eksempel på integration med kontrolenhed for Sverige](./emea-swe-fi-sample.md)
-- [Eksempel på integration af regnskabsregistreringstjeneste i Tyskland](./emea-deu-fi-sample.md)
+- [Eksempel på integration af regnskabsregistreringsservice i Tyskland](./emea-deu-fi-sample.md)
+- [Eksempel på integration af bonprinter i Rusland](./rus-fpi-sample.md)
 
-Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, men kan i øjeblikket ikke udnytte regnskabsintegrationsstrukturen. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
+Følgende funktionalitet til regnskabsintegration implementeres også ved hjælp af strukturen for regnskabsintegration, men den er tilgængelig fra feltet og er ikke inkluderet i Commerce SDK:
 
+- [Regnskabsregistrering for Brasilien](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digital signatur for Frankrig](./emea-fra-cash-registers.md)
 
-- [Digital signatur for Frankrig](emea-fra-cash-registers.md)
-- [Digital signatur for Norge](emea-nor-cash-registers.md)
+Følgende regnskabsintegrationsfunktionalitet er også tilgængelig i Commerce SDK, men den kan i øjeblikket ikke udnytte strukturen for regnskabsintegration. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
 
-Følgende ældre finansintegrationsfunktioner, der er tilgængelige i Retail SDK, bruger ikke strukturen for finansintegration og vil blive udfaset i senere opdateringer:
+- [Digital signatur for Norge](./emea-nor-cash-registers.md)
+
+Følgende ældre finansintegrationsfunktionalitet, der er tilgængelig i Commerce SDK, anvender ikke strukturen for finansintegration og vil blive udfaset i senere opdateringer:
 
 - [Eksempel på integration med kontrolenhed for Sverige (forældet)](./retail-sdk-control-unit-sample.md)
+- [Digital signatur for Frankrig (ældre)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

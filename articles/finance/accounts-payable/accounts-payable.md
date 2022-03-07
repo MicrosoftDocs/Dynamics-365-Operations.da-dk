@@ -1,7 +1,7 @@
 ---
 title: Startside for kreditor
 description: Dette emne giver en oversigt over kreditor.
-author: sunfzam
+author: ShylaThompson
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21901"
-- intro-internal
+ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 62e075fc26ee2e183cd859c5ec2c90faa3bfe3ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595281"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897004"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
@@ -34,7 +32,7 @@ Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dat
 
 **Forretningsprocesser**
 
-[![Diagram over forretningsprocesser.](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram over forretningsprocesser](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## <a name="set-up-accounts-payable"></a>Konfigurere Kreditorer
 

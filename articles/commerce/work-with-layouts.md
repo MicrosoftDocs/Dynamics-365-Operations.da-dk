@@ -2,36 +2,30 @@
 title: Arbejde med forudindstillede layout
 description: Dette emne beskriver, hvordan du kan arbejde med forudindstillede layout i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411098"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090839"
 ---
 # <a name="work-with-preset-layouts"></a>Arbejde med forudindstillede layout
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan arbejde med forudindstillede layout i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Før du fuldfører procedurerne i dette emne, skal du sørge for at læse [Forudindstillede og brugerdefinerede layout](templates-layouts-overview.md#preset-and-custom-layouts). Du kan finde en generel oversigt under [Oversigt over skabeloner og layout](templates-layouts-overview.md).
 
@@ -97,15 +91,30 @@ Hvis du vil se ændringerne på forhånd, skal du enten åbne en eksisterende si
 
 Når du har set ændringerne af det forudindstillede layout, skal du følge et af disse trin for at publicere layoutet til dit aktive websted:
 
-* Gå til **Layout**, vælg layoutet, og vælg derefter **Publicer**.
-* Vælg layoutnavnet for at åbne layouteditoren, og vælg derefter **Publicer**.
-* Publicer en side, der refererer til det ikke-publicerede layout. Layoutet vil automatisk blive publiceret.
+1. Gå til **Layout**, vælg layoutet, og vælg derefter **Publicer**.
+1. Vælg layoutnavnet for at åbne layouteditoren, og vælg derefter **Publicer**.
+1. Publicer en side, der refererer til det ikke-publicerede layout. Layoutet vil automatisk blive publiceret.
 
 > [!WARNING]
 > Der kan refereres til forudindstillede layout fra flere sider. Når du publicerer et forudindstillet layout, skal du være opmærksom på, at du kan påvirke layoutet af flere sider.
+
+## <a name="rename-a-preset-layout"></a>Omdøbe et forudindstillet layout
+
+Hvis du vil omdøbe et forudindstillet layout i webstedsgenerator, skal du følge disse trin.
+
+1. Vælg **Layout** i navigationsruden til venstre.
+1. Vælg layoutnavnet på det layout, du vil omdøbe.
+1. Vælg **Rediger** for at begynde at redigere layoutet.
+1. Vælg blyantssymbolet ud for layoutnavnet i ruden med egenskaber for layout.
+1. Rediger layoutnavnet efter behov.
+1. Markér afkrydsningsfeltet for at bekræfte navneændringen.
+1. Vælg **Afslut redigering**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over skabeloner og layout](templates-layouts-overview.md)
 
 [Arbejde med skabeloner](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

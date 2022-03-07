@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 97ac33d28a49ad0f2a3956ad65b159e4ec4785c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 87063653eb78209caaefd3fafa7783f425e710b7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424333"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257285"
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>Definere en udløbsdato for en produktionsflowversion
 
@@ -41,3 +40,6 @@ For at afslutte gyldigheden og behandlingen af en version af produktionsflowet p
 6. Angiv dato og klokkeslæt i feltet Udløbsdato.
     * For udløbsdatoen starter der ikke eller deaktiveres der ikke en ny version. Det vil heller ikke længere være muligt at oprette eller starte job for denne produktionsflow. Du kan stadig fuldføre igangsatte job efter udløbsdatoen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

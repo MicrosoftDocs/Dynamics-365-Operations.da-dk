@@ -2,36 +2,33 @@
 title: Opret et navigationshierarki for kanal
 description: Dette emne beskriver, hvordan du opretter et navigationshierarki for en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749949"
 ---
-# <a name="create-a-channel-navigation-hierarchy"></a>Opret et navigationshierarki for kanal
+# <a name="create-a-channel-navigation-hierarchy"></a>Oprette et navigationshierarki for kanal
 
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter et navigationshierarki for en kanal i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Et navigationshierarki for en kanal bruges til at gruppere og organisere produkter i kategorier, så produkterne kan gennemses online eller ved POS.
 
@@ -52,7 +49,7 @@ Benyt følgende fremgangsmåde for at oprette et navigationshierarki for en kana
 
 Følgende billede viser et eksempel på en rodnode.
 
-![Eksempel på rodnode](media/create-channel-hierarchy-1.png)
+![Eksempel på rodnode.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Oprette navigationskategorinoder
 
@@ -68,7 +65,7 @@ Følge disse trin for at oprette yderligere navigationskategorinoder, der repræ
 
 Følgende billede viser et eksempel på et fuldført navigationshierarki for kanal.
 
-![Eksempel på kanalhierarki](media/create-channel-hierarchy-2.png)
+![Eksempel på kanalhierarki.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Føje produkter til kategorinoder
 
@@ -80,11 +77,11 @@ Følg disse trin for at føje produkter til kategorinoder.
 1. Gå til handlingsruden, og vælg **Gem**.
 
 > [!NOTE]
-> Hvis du føjer produkter til en node i navigationshierarkiet for en kanal, er det ikke tilstrækkeligt, at produkterne vises i en valgt kanal – produkterne skal også være udvalgt til et produkt.
+> Tilføjelse af produkter til en node i kanalnavigationshierarkiet er ikke tilstrækkeligt for at få vist produkterne på en valgt kanal. Produkterne skal også være tildelt en kanal. Yderligere oplysninger om tildeling finder du under [Administration af tildeling](assortments.md).
 
 Følgende billede viser en eksempelnode med tilføjede produkter.
 
-![Produkter føjet til en kategorinode](media/create-channel-hierarchy-3.png)
+![Produkter føjet til en kategorinode.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Føje produktattributgrupper til kategorinoder
 
@@ -100,10 +97,13 @@ Følg disse trin for at føje en produktattributgruppe til en kategorinode.
 
 Følgende billede viser en eksempelnode med tilføjede produktattributgrupper.
 
-![Produktattributgrupper på en node](media/create-channel-hierarchy-4.png)
+![Produktattributgrupper på en node.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Konfigurere udvalg](set-up-assortments.md)
 
 [Administrere attributter for attributgrupper](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

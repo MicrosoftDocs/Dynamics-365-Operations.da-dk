@@ -2,28 +2,25 @@
 title: Forringe et brugsretsaktiver
 description: I dette emne beskrives de funktioner, der registrerer en forringelse og justerer aktivafskrivningsplanen for et regnskabsstandarder Codification Emne 842 (ASC 842) operationel leasing.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723817"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe brugsretsaktiver
 
@@ -95,10 +92,13 @@ Fanen **Generelt**
     | Transaktionsdato       | 1/1/2022 |
     | Resterende perioder      | 84       |
     | Bogfør                   | Ja      |
-    | Forhåndsvisning før bogføring | Ingen       |
-    | Luk bog             | Ingen       |
+    | Forhåndsvisning før bogføring | Nej       |
+    | Luk bog             | Nej       |
 
 6. Der er oprettet og bogført en kladdepostering for værdiforringelsen. Hvis du vil se den, skal du gå til aktivets leasingkladde i leasingkartoteket. Bemærk, at beløbet for forringelsen blev debiteret på bogføringskontoen for værdiforringelsen, og at bogføringskontoen for ROU er krediteret.
 7. Hvis du vil have vist nettoeffekten af værdiforringelsen, skal du gå til tabellerne for passiver og aktiver. Bemærk, at udgiften til værdiforringelsen har formindsket ROU-aktivet, men at der ikke er ændret et overførselsbeløb for leasingforpligtelsen.
 
 Værdiforringelsen har én anden effekt, du skal overveje. Da ROU-aktivbeløbet nu er meget mindre end leasingforpligtelsen, skal beløbet afskrives anderledes end før. Specielt afskrives aktivet nu i en lineær måde i løbet af de resterende 84 måneder af leasingaftalen med start på transaktionsdatoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

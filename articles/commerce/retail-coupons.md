@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb21c037c4492ce215780913301c0c0b54ab9d2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411009"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259460"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -82,3 +81,6 @@ Kuponfunktioner indeholder flere specifikke funktioner. Commerce Headquarters (H
 - **HQ opdateres delvist, men Commerce Scale Unit og POS opdateres ikke.** Under en opdatering af HQ opdateres kupon- og rabatsiderne, og handelsprisprogrammet opdateres også. Hvis kun en af disse to komponenter opdateres, vil nogle sider i Commerce ikke svare til prisberegningsdataene. Derfor kan der forekomme uventede rabatberegninger eller fejl under rabatberegninger.
 - **HQ opdateres, men Commerce Scale Unit og POS opdateres ikke (N-1).** Da ikke alle butikker kan opdateres på samme tid, anbefales det, at du opdaterer HQ, før du opdaterer butikkerne. I eksemplet N-1 er nye funktioner, der er relateret til kuponer, ikke tilgængelige i butikker, der endnu ikke er blevet opdateret. For eksempel introducerer kuponfunktionen "udelad"-linjer. Hvis du bruger udelad-linjer på en rabat, bliver de ikke anvendt i en butik, der kører en tidligere version.
 - **HQ opdateres ikke, men Commerce Scale Unit og POS opdateres (N+1).** Da det opdaterede prisprogram i Commerce Scale Unit kan håndtere ældre rabatkoder under prisberegninger, bør opdateringen ikke have nogen indflydelse på funktioner i dette scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

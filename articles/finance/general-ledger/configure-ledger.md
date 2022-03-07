@@ -2,26 +2,23 @@
 title: Konfigurering af Finans
 description: Dette emne indeholder oplysninger om konfiguration af Finans for hver juridisk enhed. Det indeholder oplysninger om, hvordan du vælger valutaer, regnskabskalendere, kontoplaner og de kontostrukturer, der skal bruges sammen med de enkelte juridiske enheder.
 author: kweekley
-manager: ''
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
-ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
+ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4441777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712213"
 ---
 # <a name="configure-ledgers"></a>Konfigurering af Finans
 
@@ -82,3 +79,6 @@ Hvis du bruger to valutaer, eller hvis du bruger en enkelt valuta, men postering
 Realiserede gevinster og tab er fortjeneste og tab, der er foretaget fra afsluttede transaktioner. De registreres i driftsregnskabet. Ikke-realiserede gevinster og tab er fortjeneste og tab, der har materialiseret sig, men posteringen er ikke fuldført. Du har med andre ord f.eks. bogført en faktura, men fakturaen er endnu ikke udlignet og betalt. Ikke-realiserede gevinster og tab registreres i balancen.
 
 Yderligere oplysninger om hvordan du bruger to valutaer, finder du under [To valutaer](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

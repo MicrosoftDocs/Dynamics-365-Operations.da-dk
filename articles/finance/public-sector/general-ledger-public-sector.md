@@ -2,29 +2,28 @@
 title: Oversigt over finans i den offentlige sektor
 description: I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 27211
+ms.custom:
+- "27211"
+- intro-internal
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47e79eb12e8f4563595507b0edafba7e056e476c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: def176d9ffaa14df8e6a6a7b0da9fbeda940a1b2
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407719"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338669"
 ---
 # <a name="general-ledger-in-the-public-sector-overview"></a>Oversigt over finans i den offentlige sektor
 
@@ -32,8 +31,7 @@ ms.locfileid: "4407719"
 
 I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
 
-<a name="how-do-general-ledger-parameters-need-to-be-set-for-public-sector-organizations"></a>Hvordan skal Finansparametre indstilles til offentlige organisationer?
---------------------------------------------------------------------------------
+## <a name="how-do-general-ledger-parameters-need-to-be-set-for-public-sector-organizations"></a>Hvordan skal Finansparametre indstilles til offentlige organisationer?
 
 De fleste Finansparametre angives på samme måde for offentlige og private organisationer. Der er desuden offentlige parametre, der bruges til årsafslutningsprocessen i forbindelse med midler. Indstil disse parametre på siden **Finansparametre** i afsnittet **Finans** i **Årsafslutning**-oversigtspanelet:
 
@@ -58,10 +56,12 @@ Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til ki
 ## <a name="how-do-i-collect-and-analyze-data-to-meet-the-common-governmentwide-accounting-classification-cgac-requirements"></a>Hvordan indsamler og analyserer jeg data for at opfylde CGAC-krav (Governmentwide Accounting Classification)?
 Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data for bogførte transaktioner for bestemte tal i hovedkonto, fuld kontonumre og økonomiske dimensionsværdier. Du kan finde flere oplysninger under [Afledte finansielle hierarkier i den offentlige sektor](derived-financial-hierarchies-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over finans og økonomirapportering](../general-ledger/general-ledger.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Oprette bemyndigelse til SEPA Direct Debit
 description: En direkte SEPA-debitering (fælles eurobetalingsområde (SEPA)) gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at debitoren er tildelt en signeret bemyndigelse til kreditor.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 59491
 ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba265e69bde9a9c194147d6ee6a806e9b2bd7c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1fb167798a1c721d9f0e81f5e33e2989259037e9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817191"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>Oprette bemyndigelse til SEPA Direct Debit
 
@@ -54,3 +51,6 @@ Yderligere ressourcer
 
 [Oprette en ny bemyndigelse til direkte debitering til en debitor](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

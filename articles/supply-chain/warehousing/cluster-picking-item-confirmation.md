@@ -2,9 +2,11 @@
 title: Produktbekræftelse for klyngepluk
 description: I dette emne beskrives, hvordan du opretter varebekræftelse sammen med klyngepluk.
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d14d015811a72bc0ba05b65473331b047dbcc49c104f633c50ee497d92ff3e7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c8f81d760e8c181891aeba92834577e8869fbdd8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755924"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001118"
 ---
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekræftelse for klyngepluk
 
@@ -39,6 +41,3 @@ Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer va
 |        Indstilling        |                                    Beskrivelse                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Bekræftelse af produkt | Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

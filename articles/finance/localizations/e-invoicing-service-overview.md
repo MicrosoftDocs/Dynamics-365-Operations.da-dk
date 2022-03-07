@@ -1,40 +1,39 @@
 ---
-title: Oversigt over tilføjelsesprogrammet til elektronisk fakturering
-description: Dette emne indeholder oplysninger om tilføjelsesprogrammet til elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
+title: Oversigt over elektronisk fakturering
+description: Dette emne indeholder oplysninger om elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344752"
 ---
-# <a name="electronic-invoicing-add-on-overview"></a>Oversigt over tilføjelsesprogrammet til elektronisk fakturering
+# <a name="electronic-invoicing-overview"></a>Oversigt over elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
-Tilføjelsesprogrammet til elektronisk fakturering til Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management er en hyperskalerbar tjeneste til flere lejere, der giver mulighed for konfigurerbar behandling af elektroniske fakturadokumenter og konfigurerbar dokumentudveksling. Reglerne for behandling og integration er fuldt konfigurerbare, og logikken køres uden for Finance og Supply Chain Management. Tjenesten er primært rettet mod e-fakturabehandling i virksomhed-til-myndighed-scenarier, men den kan tilpasses og konfigureres til andre formål.
+Elektronisk fakturering til Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management er en hyperskalerbar tjeneste til flere lejere, der giver mulighed for konfigurerbar behandling af elektroniske fakturadokumenter og konfigurerbar dokumentudveksling. Reglerne for behandling og integration er fuldt konfigurerbare, og logikken køres uden for Finance og Supply Chain Management. Tjenesten er primært rettet mod e-fakturabehandling i virksomhed-til-myndighed-scenarier, men den kan tilpasses og konfigureres til andre formål.
 
-Tilføjelsesprogrammet til elektronisk fakturering kan hjælpe dig med at opnå følgende mål:
+Elektronisk fakturering kan hjælpe dig med at opnå følgende mål:
 
 - Hurtig og nem implementering af lande-/områdespecifikke krav
-- Standardiserede implementeringer af en løsning til tilføjelsesprogrammet til elektronisk fakturering
+- Standardiserede implementeringer af en løsning til elektronisk fakturering
 - Forbedret sporing af dokumenthistorik
 - Kortere implementeringscyklus
 - Reducerede samlede ejeromkostninger (TCO)
@@ -43,29 +42,29 @@ Tilføjelsesprogrammet til elektronisk fakturering kan hjælpe dig med at opnå 
 - Indbygget eksport, import og integration samt nemme udvidelsesmuligheder i behandlingen af e-fakturadokumenter
 - Nem genbrug af de samme konfigurationer for eksport, import og integration på tværs af virksomheder
 
-Hvis du vil bruge tilføjelsesprogrammet til elektronisk fakturering, skal du installere det fra dit projekt i Microsoft Dynamics Lifecycle Services (LCS). Derefter skal du følge installationsproceduren for at aktivere integrationen med Finance eller Supply Chain Management. Du kan finde flere oplysninger i [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md).
+Hvis du vil bruge elektronisk fakturering, skal du installere det fra dit projekt i Microsoft Dynamics Lifecycle Services (LCS). Derefter skal du følge installationsproceduren for at aktivere integrationen med Finance eller Supply Chain Management. Du kan finde flere oplysninger i [Start her med elektronisk fakturering](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Tilgængelighed
+## <a name="service-availability"></a><a name="availability"></a>Tilgængelighed af tjeneste
 
-Som udgangspunkt er tilføjelsesprogrammet til elektronisk fakturering tilgængeligt for udvalgte kunder via en prøveversion. Prøveversionen vil senere blive åbnet op for flere kunder. Tjenesten vil til sidst være generelt tilgængelig. Da funktioner, der adresserer lande-/områdespecifikke krav, kan være begrænset i forskellige faser af udgivelsen, skal du altid kontrollere den nyeste dokumentation, der fremhæver dækningen og omfanget af understøttede lande-/områdespecifikke løsninger.
+I øjeblikket er Elektronisk fakturering tilgængelig for debitorer via programmet forhåndsvisning, og i næste fase vil tjenesten være generelt tilgængelig. Da funktioner, der adresserer lande-/områdespecifikke krav, kan være begrænset i forskellige faser af udgivelsen, skal du altid kontrollere den nyeste dokumentation, der fremhæver dækningen og omfanget af understøttede lande-/områdespecifikke løsninger.
 
-Tilføjelsesprogrammet til elektronisk fakturering er udrullet i følgende geografiske Azure-områder:
+Elektronisk fakturering er udrullet i følgende geografiske Azure-områder:
 
 - United States
 - Europa
 
 > [!NOTE]
-> Tilføjelsesprogrammet til elektronisk fakturering understøtter ikke udrulninger i det lokale miljø.
+> Elektronisk fakturering understøtter ikke udrulninger i det lokale miljø.
 
 ## <a name="extended-configurability"></a>Udvidet konfigurerbarhed
 
-Tilføjelsesprogrammet til elektronisk fakturering kan bruges i scenarier, hvor du skal oprette og sende et elektronisk dokument til de udpegede parter. Det er specialdesignet til at køre et konfigurerbart flow til behandling af handlinger baseret på modtagne data. De indstillinger for konfigurerbarhed, der er tilgængelige i Finance og Supply Chain Management, er begrænset til ændring af dokumenter. Tjenesten udvider disse indstillinger ved at tilføje de konfigurerbare integrationer, der er tilgængelige i den. Desuden vil alle de funktioner til elektroniske fakturaer, der tidligere var tilgængelige, f.eks. brasiliansk Nota fiscal eletrônica (NF-e), mexicansk Comprobante Fiscal Digital por Internet (CFDI) eller andre vesteuropæiske funktioner som Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL), der bruges til eksport og import og til at muliggøre integration med eksterne webtjenester.
+Elektronisk fakturering kan bruges i scenarier, hvor du skal oprette og sende et elektronisk dokument til de udpegede parter. Det er specialdesignet til at køre et konfigurerbart flow til behandling af handlinger baseret på modtagne data. De indstillinger for konfigurerbarhed, der er tilgængelige i Finance og Supply Chain Management, er begrænset til ændring af dokumenter. Tjenesten udvider disse indstillinger ved at tilføje de konfigurerbare integrationer, der er tilgængelige i den. Desuden vil alle de funktioner til elektroniske fakturaer, der tidligere var tilgængelige, f.eks. brasiliansk Nota fiscal eletrônica (NF-e), mexicansk Comprobante Fiscal Digital por Internet (CFDI) eller andre vesteuropæiske funktioner som Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL), der bruges til eksport og import og til at muliggøre integration med eksterne webtjenester.
 
 ## <a name="feature-highlights"></a>Fremhævning af funktioner
 
 - Køreklar integration med Finance og Supply Chain Management
 - Ensartet brugeroplevelse i forbindelse med konfiguration og overvågning af e-fakturaprocessen for alle lande eller områder
-- Hurtigere, nemmere og mere økonomisk implementering af løsninger til tilføjelsesprogrammet til elektronisk fakturering i nye lande eller områder
+- Hurtigere, nemmere og mere økonomisk implementering af løsninger til elektronisk fakturering i nye lande eller områder
 - Konfiguration af tjenesten ved hjælp af RCS (Regulatory Configuration Service) og funktionsopsætninger for globalisering
 - Transformation af forretningsdata til flere e-fakturaformater (XML, JavaScript Object Notation \[JSON\], TXT og kommaseparerede værdier \[CSV\]) ved hjælp af de konfigurationer, der er defineret i RCS:
 
@@ -76,7 +75,7 @@ Tilføjelsesprogrammet til elektronisk fakturering kan bruges i scenarier, hvor 
     - Indbygget og konfigurerbar integration, der nemt kan udvides, med yderligere indhold til flere lande/områder
 
     > [!NOTE]
-    > I øjeblikket understøttes et begrænset antal direkte indsendelser. Du kan finde flere oplysninger i afsnittet [Tilgængelighed](#availability) tidligere i dette emne. Support vil blive udvidet i fremtiden.
+    > I øjeblikket understøttes et begrænset antal direkte indsendelser. Du kan finde flere oplysninger i afsnittet [Tilgængelighed af tjeneste](#availability) tidligere i dette emne. Support vil blive udvidet i fremtiden.
 
 - Håndtering af svar fra webtjenester, herunder konfigurerbar håndtering af undtagelsesmeddelelser
 - Understøttelse af elektroniske signaturer (f.eks. ved at bruge XMLDSig-signeringsalgoritmen)
@@ -84,7 +83,7 @@ Tilføjelsesprogrammet til elektronisk fakturering kan bruges i scenarier, hvor 
 
 ## <a name="architecture-and-data-flow"></a>Arkitektur og dataflow
 
-Når tilføjelsesprogrammet til elektronisk fakturering er installeret fra LCS, og den nødvendige konfiguration er fuldført i alle nødvendige programmer, oprettes der en sikker forbindelse. Tjenesten er i øjeblikket placeret i datacentre i USA og Europa. Tjenestens placering kan derfor være forskellig fra placeringen af den relaterede Finance- og Supply Chain Management-instans. Når du har fuldført konfigurationen af tilføjelsesprogrammet til elektronisk fakturering og slår integrationen til, når der sendes en elektronisk faktura, sendes masterdata og transaktionsdata, der er knyttet til et bestemt dokument, til tilføjelsesprogrammet til elektronisk fakturering.
+Når Elektronisk fakturering er installeret fra LCS, og den nødvendige konfiguration er fuldført i alle nødvendige programmer, oprettes der en sikker forbindelse. Tjenesten er i øjeblikket placeret i datacentre i USA og Europa. Tjenestens placering kan derfor være forskellig fra placeringen af den relaterede Finance- og Supply Chain Management-instans. Når du har fuldført konfigurationen af Elektronisk fakturering og slår integrationen til, når der sendes en elektronisk faktura, sendes masterdata og transaktionsdata, der er knyttet til et bestemt dokument, til Elektronisk fakturering.
 
 > [!NOTE]
 > Hvis din elektroniske faktura eller et andet dokument indeholder personlige data, skal du kontrollere, at brugen af denne funktion opfylder den generelle forordning om databeskyttelse (GDPR) og andre forordninger, der vedrører overførsel af personlige data.
@@ -99,17 +98,17 @@ Når tilføjelsesprogrammet til elektronisk fakturering er installeret fra LCS, 
 6. Tjenesten leverer oplysninger efter behov til klienten om status for behandling af det forretningsdokument, der er sendt.
 7. Klienten modtager oplysninger om den fuldførte udførelse af behandlingen og gør alle logoplysninger tilgængelige. Det dokument, der blev oprettet eller modtaget under flowbehandlingen, tilvejebringes også.
 
-I følgende illustration vises dataflowet til og fra tilføjelsesprogrammet til elektronisk fakturering.
+I følgende illustration vises dataflowet til og fra Elektronisk fakturering.
 
-![Dataflow for tilføjelsesprogrammet til elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Dataflow for elektronisk fakturering.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
 Aktivering og brug af elektronisk fakturering kan kræve, at der sendes begrænsede data, herunder organisationens momsregistrerings-id. Dette vil blive overført til tredjepartsorganer, der er godkendt af skattemyndighederne, med det formål at sende elektroniske fakturaer i de foruddefinerede formater, der kræves til integration med myndighedernes webtjenester. De data, der importeres fra disse eksterne systemer til denne Dynamics 365-onlinetjeneste, er underlagt vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=512132). Yderligere oplysninger finder du i sektionerne med Erklæring om beskyttelse af personlige oplysninger i dokumentationen for den lande- eller områdespecifikke funktion.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
+- [Administration af tjeneste](e-invoicing-service-administration.md)
+- [Konfiguration af elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
+- [Udsted elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
 
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Brasilien](e-invoicing-bra-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
-- [Kom i gang med tilføjelsesprogrammet til elektronisk fakturering for Italien](e-invoicing-ita-get-started.md)
-- [Konfigurere tilføjelsesprogrammet til elektronisk fakturering](e-invoicing-setup.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

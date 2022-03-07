@@ -1,32 +1,31 @@
 ---
-title: Personale vises ikke i Microsoft Dynamics 365-apps
-description: I denne artikel emne beskrives det, hvad du skal gøre, hvis kunden ikke kan se Microsoft Dynamics 365 Human Resources-appen mellem Microsoft Dynamics 365-apps.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Human Resources vises ikke i Microsoft Dynamics 365-apps
+description: Dette emne forklarer, hvad du skal gøre, hvis Microsoft Dynamics 365 Human Resources ikke er anført blandt Microsoft Dynamics365-appsene.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dfed82463eece882bed66c7b2dac1dd30e04720e
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417784"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413358"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Personale vises ikke i Microsoft Dynamics 365-apps
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources-appen vises ikke i Microsoft Dynamics 365-apps
 
-**Udsted**
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+**Emne**
 
 Kunden ser ikke Dynamics 365 Human Resources blandt Microsoft Dynamics 365-apps.
 
@@ -36,15 +35,15 @@ Brugeren skal føjes til rollen Miljøopretter for miljøet i Microsoft Power Ap
 
 1. Den administratorbruger, der har licens til Power Apps Plan 2, skal åbne [Power Apps Administration-portalen](https://preview.admin.powerapps.com/).
 
-2. Vælg **Miljøer**, og vælg det korrekte miljø til Personale.
+2. Vælg **Miljøer**, og vælg det korrekte miljø til Human Resources.
 
 3. Under fanen **Miljøroller** under fanen **Sikkerhed** skal du vælge **Miljøopretter**.
 
-    ![Fanen Miljøroller](media/environment-roles.png)
+    ![Fanen Miljøroller.](media/environment-roles.png)
 
 4. Under fanen **Brugere** skal du tilføje brugeren eller din organisation.
 
-    ![Fanen Brugere](media/environment-maker.png)
+    ![Fanen Brugere.](media/environment-maker.png)
 
 5. Vælg **Gem**.
 
@@ -52,6 +51,9 @@ Brugeren skal føjes til rollen Miljøopretter for miljøet i Microsoft Power Ap
 
 7. Vælg **Synkroniser** for at opdatere brugerappsene.
 
-    ![Knappen Synkroniser](media/get-more.png)
+    ![Knappen Synkroniser.](media/get-more.png)
 
-    Når synkroniseringen er fuldført, vises Personale på startsiden.
+    Når synkroniseringen er fuldført, vises Human Resources på startsiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

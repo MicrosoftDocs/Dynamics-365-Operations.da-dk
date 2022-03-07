@@ -2,11 +2,9 @@
 title: Opret en driftsenhed
 description: En driftsenhed er en organisation, der bruges til at opdele administrationen af økonomiske ressourcer og driftsprocesser i et firma.
 author: sericks007
-manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 70a57741340df2aec5c20dc576672b6acc8343dd
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: dcfcd64ae24297c8e11f36629490ebe7cd063de53c717559e1b73743ccc61664
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758987"
 ---
 # <a name="create-an-operating-unit"></a>Opret en driftsenhed
 
@@ -41,3 +39,6 @@ En driftsenhed er en organisation, der bruges til at opdele administrationen af 
     + Angiv oplysninger om kommunikationsmåder, som f.eks. e-mail-adresser, URL-adresser og telefonnumre. Klik på Ny for at angive en ny kommunikationspost. Klik på **Flere indstillinger > Avanceret** for at ændre en eksisterende kommunikationspost.   
 6. Du kan evt. ændre **Driftsenhedsnummer**, hvis det er nødvendigt. Bemærk, at dette tal er en entydig idenitifikator for den tilsvarende **Part**-post og må ikke være det samme som en anden driftsenhed.
 7. Vælg **Gem**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

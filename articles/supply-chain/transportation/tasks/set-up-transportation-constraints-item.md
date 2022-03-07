@@ -2,27 +2,24 @@
 title: Konfigurere transportbegrænsninger for en vare
 description: Denne procedure skal oprette en transportbegrænsning for at forhindre, at en valgt vare transporteres gennem en valgt hub.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f351da832f8fa62935d09c6ce6ede277971dbbbc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8488ec154412840bf88779eeffc3d4ff52aabd22
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424412"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818986"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Konfigurere transportbegrænsninger for en vare
 
@@ -44,3 +41,6 @@ Denne procedure skal oprette en transportbegrænsning for at forhindre, at en va
 10. Klik på Gem.
 11. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

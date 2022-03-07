@@ -1,7 +1,7 @@
 ---
 title: Listen Disponibel lagerbeholdning
 description: Dette emne beskriver, hvordan du bruger den disponible listeside til at inspicere oplysninger om disponibel lagerbeholdning. Det viser et par af de måder, som de forskellige filtrerings- og sorteringsindstillinger fungerer sammen på, og hvordan disse indstillinger undertiden kan give uventede resultater, når de kombineres.
-author: yufeihuang
+author: sherry-zheng
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: cd90b3c8b84aa969f93015f8c953105db1636902c7dcf1d3150356284efa302b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780216"
 ---
 # <a name="inventory-on-hand-list"></a>Listen Disponibel lagerbeholdning
 

@@ -1,26 +1,29 @@
 ---
 title: Oprette serviceordrer manuelt
 description: Du kan oprette serviceordrer manuelt ved hjælp af en serviceaftale eller formularen **Serviceordrer**.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1fad4abcf39021f94db50c07a39803af31f85c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 51cfdb94a368df9e7082af3c768c79df44000342
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424655"
 ---
 # <a name="create-service-orders-manually"></a>Oprette serviceordrer manuelt    
 
@@ -34,17 +37,17 @@ Du kan oprette serviceordrer manuelt ved hjælp af en serviceaftale eller formul
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Oprette en serviceordre manuelt fra en serviceaftale
 
-1.  Vælg **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.
+1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.
 
 2.  Vælg en serviceaftale, eller opret en ny serviceaftale.
 
-3.  Vælg fanen **Levér** og vælg i gruppen **Opret** **Planlagte serviceordrer** for at åbne formularen **Opret serviceordrer**.
+3.  Klik på fanen **Levér** og klik i gruppen **Opret** på **Planlagte serviceordrer** for at åbne formularen **Opret serviceordrer**.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Oprette en serviceordre manuelt i formen Serviceordrer
 
-1.  Vælg **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
 
-2.  Vælg **Ny** for at oprette en ny serviceordre.
+2.  Tryk på Ctrl+N for at oprette en ny serviceordre.
 
 3.  Opret serviceordrelinjer til serviceordren.
 
@@ -53,9 +56,9 @@ Du kan oprette serviceordrer manuelt ved hjælp af en serviceaftale eller formul
 
 ## <a name="create-a-service-order-from-a-project"></a>Oprette en serviceordre ud fra et projekt
 
-1.  Gå til **Projektstyring og regnskab** \> **Fælles** \> **Projekter** \> **Alle projekter**.
+1.  Klik på **Projektstyring og regnskab** \> **Generelt** \> **Projekter** \> **Alle projekter**.
 
-2.  I formularen **Projekter** skal du i **handlingsruden** vælge fanen **Administrer** \> og vælge **Service** \> **Serviceordrer**.
+2.  I formularen **Projekter** skal du i **handlingsruden** klikke på fanen **Administrer** \> og klikke på **Service** \> **Serviceordrer**.
 
 3.  Følg den foregående fremgangsmåde for at oprette en serviceordre manuelt i formularen **Serviceordrer**. I feltet **Projekt-id** vises projektreferencen.
 
@@ -66,19 +69,19 @@ Du kan oprette serviceordrer manuelt ved hjælp af en serviceaftale eller formul
 
 Du kan oprette en serviceordre fra formularen **Salgsordrer** ved hjælp af guiden **Opret en ny serviceordre ud fra salgsordren**.
 
-1.  Gå til **Salg og marketing** \> **Fælles** \> **Salgsordrer** \> **Alle salgsordrer**.
+1.  Klik på **Salg og marketing** \> **Generelt** \> **Salgsordrer** \> **Alle salgsordrer**.
 
 2.  Åbn den relevante salgsordre.
 
-3.  Under fanen **Salgsordre** skal du vælge **Serviceordre** for at starte guiden **Opret en ny serviceordre ud fra salgsordren**.
+3.  Under fanen **Salgsordre** skal du klikke på **Serviceordre** for at starte guiden **Opret en ny serviceordre ud fra salgsordren**.
 
-4.  Vælg **Næste \>**, og udfør derefter følgende trin på siden **Vælg aftale for serviceordre**:
+4.  Klik på **Næste \>**, og udfør derefter følgende trin på siden **Vælg aftale for serviceordre**:
     
       - Brug feltet **Serviceaftale** til at vælge den serviceaftale, den nye serviceordre skal knyttes til.
     
       - Valgfrit: Brug feltet **Projekt-id** til at knytte denne serviceordre til et bestemt projekt.
 
-5.  Vælg **Næste \>**, og udfør derefter følgende trin på siden **Opret serviceordre**:
+5.  Klik på **Næste \>**, og udfør derefter følgende trin på siden **Opret serviceordre**:
     
       - Angiv en dato og et klokkeslæt for, hvornår servicebesøget skal starte, i feltet **Foretrukket servicetidspunkt**.
     
@@ -88,7 +91,7 @@ Du kan oprette en serviceordre fra formularen **Salgsordrer** ved hjælp af guid
     
       - Vælg den person hos kunden, der skal kontaktes angående denne serviceordre, i feltet **Kontakt-id**.
 
-6.  Vælg **Næste \>**, og vælg derefter **Udfør**.
+6.  Klik på **Næste \>**, og klik derefter på **Udfør**.
 
 
 ## <a name="see-also"></a>Se også
@@ -99,6 +102,3 @@ Du kan oprette en serviceordre fra formularen **Salgsordrer** ved hjælp af guid
 
 [Opret serviceordrer (klasseform)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

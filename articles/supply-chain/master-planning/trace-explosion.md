@@ -1,30 +1,27 @@
 ---
 title: Brug af sporing for udfoldning
 description: Denne artikel beskriver, hvordan du kan bruge sporing til at undersøge årsagerne bag resultatet af en ordreudfoldning.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88e777d69c9da8a19c186bca3ca591e59af232f0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c42eaf4c9218a186bca30848bc7b09c634f9a69e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424402"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567169"
 ---
 # <a name="use-tracing-for-explosion"></a>Brug af sporing for udfoldning
 
@@ -41,10 +38,12 @@ Ved at aktivere sporing kan du få vist oplysninger om de faktorer, der bidrog t
 
 Du kan få vist detaljer om terminer og handlinger til en valgt ordre. På siden **Udfoldning** er sporingsoplysninger tilgængelige under fanen **Udfoldning** i den øverste rude. Sporing forekommer, når du udfolder en ordre. Start sporing for ordren ved at klikke på **Opdater**, og markér derefter afkrydsningsfeltet **Aktivér spor**. Du kan bruge feltet **Søg efter tekst** til at søge i logfilen efter specifikke oplysninger. Søgeresultater fremhæves i træet.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsplaner](master-plans.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

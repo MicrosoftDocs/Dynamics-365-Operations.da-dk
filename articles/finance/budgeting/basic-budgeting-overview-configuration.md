@@ -1,29 +1,28 @@
 ---
 title: Budgetteringsoversigt
-description: Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 Finance, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 01/11/2018
-ms.topic: article
+description: Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 Finance, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finans og drift eller indlæse dem fra et tredjepartsprogram.
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 60113
+ms.custom:
+- "60113"
+- intro-internal
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441571"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986504"
 ---
 # <a name="budgeting-overview"></a>Budgetteringsoversigt 
 
@@ -31,8 +30,7 @@ ms.locfileid: "4441571"
 
 Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 Finance, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 Det godkendte budget for en juridisk enhed bevares i et dokument, der er kendt som en *Budgetregisterpost*. Linjerne i et budgetregisterpostdokument kaldes *budgetkonto*-poster og indeholder oplysninger om økonomiske dimensioner, datoer og beløb for det godkendte budget. Budgetregisterpostdokumentet integreres med grundlæggende økonomiske rapporter og forespørgselssider, hvor faktiske finansbeløb sammenlignes med budgetbeløb. 
 
@@ -40,7 +38,7 @@ Der er flere metoder til at oprette budgetregisterposter:
 
 -   Du kan manuelt angive dokumentoplysninger på siden **Budgetregisterposter**.
 -   Brug Microsoft Excel-skabelon, som du kan åbne ved at klikke på knappen **Åbn i Excel** på siden **Budgetregisterposter**.
--   Brug dataenheden **Budgetkontoposter** i Datastyring til at importere budgetregisterposter. Du bør overveje at bruge denne metode og slå parameteren **Sætbaseret** **behandling** til, når du skal importere mange budgetkontoposter i systemet.
+-   Brug dataenheden **Budgetkontoposter** i Datastyring til at importere budgetregisterposter. Du bør overveje at bruge denne metode og slå parameteren **Sætbaseret behandling** til, når du skal importere mange budgetkontoposter i systemet.
 -   Hvis firmaet bruger budgetplanlægningsfunktionen til at forberede budgetdata, kan du bruge den periodiske proces **Generér budgetregisterpost**.
 
 Posten i budgetregisteret betragtes som afsluttet, når budgetsaldi er blevet opdateret. På siden **Budgetregisterposter** skal du klikke på **Opdater budgetsaldi** for en valgt budgetregisterpost eller flere poster. Når du har opdateret budgetsaldiene, ændres status på budgetregisterposten til **Fuldført**. Fuldført budgetregisterpost kan ikke åbnes igen til redigering. Hvis budgetdataene skal justeres, skal du derfor oprette en ny budgetregisterpost i stedet for at korrigere data i den færdige budgetregisterpost.
@@ -74,7 +72,7 @@ Funktioner, der blev introduceret i Microsoft Dynamics 365 Finance version 10.0.
 
 Du kan bruge funktionen **Kun budgetregisterposter for antal**, hvis du kun vil bogføre en budgetregisterpost med beløb, der kun er antal. Du kan f.eks. bogføre en budgetpost med et antal på 32 og en pris på nul, hvilket giver et beløb på nul. Du kan derefter bruge dette antal inden for rammerne af en økonomisk rapport til at bestemme en pris pr. antal. Bemærk, at ingen forespørgsler eller rapporter er opdateret som en del af denne funktion. Med funktionen kan du kun bogføre et beløb på nul.
 
-Med **Budgetregisterposter med beløbstype som standard**-funktionen kan standardbeløbstypen i en budgetregisterpost være en anden beløbstype end udgift. Budgetregisterpostlinjen vil nu som standard blive udgift, når hovedkontotypen er udgift, vil som standard være omsætning, når hovedkontotypen er udgift, og som standard være udgift for alle andre kontotyper.
+Med **Budgetregisterposter med beløbstype som standard**-funktionen kan standardbeløbstypen i en budgetregisterpost være en anden beløbstype end udgift. Postlinjen i budgetregisteret vil nu som standard være udgift, når hovedkontotypen er udgift, den vil som standard være omsætning, når hovedkontotypen er omsætning, og den vil som standard være udgift for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruge arbejdsområder og forespørgselssider til at spore budget vs. faktiske tal
 Budgetadministratoren kan gennemgå den aktuelle tilstand for et budget i arbejdsområdet **Finansbudgetter og budgetter**. Fanerne **Udgifter over budget** og **Omsætning under budget** giver et hurtigt overblik over de økonomiske dimensionskombinationer, hvor budgetmål ikke opfyldes eller nærmer sig grænsen. Du kan tilpasse budgettærskelprocent og økonomiske dimensionssæt, der bruges på disse faner ved at klikke på **Konfigurer mit arbejdsområde**. Du kan klikke på **Afdelingsledere** for at se de arbejdere, der er ansvarlige for bestemte økonomiske dimensionskombinationer, der er valgt under disse faner. Hvis du f.eks. kan se, at driftsafdelingens udgiftsbudget overskrider budgettærsklen, kan du nemt finde og kontakte driftsafdelingens leder for at diskutere problemet. 
@@ -88,3 +86,6 @@ En virksomhed, der bruger budgetplanlægningsfunktionen kan oprette og bruge *bu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

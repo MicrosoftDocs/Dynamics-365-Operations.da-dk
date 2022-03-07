@@ -1,28 +1,25 @@
 ---
 title: Oprette en kanban-regel til erstatning
 description: Denne procedure drejer sig om at erstatte en eksisterende kanban-regel med en ny kanban-regel på en bestemt dato.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae589f81811c1586e0e24de94eaf5f467f19debb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2db44c1b43a6dc5e0ab37a7756c4eecaab468e15
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424342"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570051"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Oprette en kanban-regel til erstatning
 
@@ -56,3 +53,6 @@ Denne procedure drejer sig om at erstatte en eksisterende kanban-regel med en ny
 1. Angiv Maksimumantal til '100'.
     * Udvid oversigtspanelet Antal for at få vist feltet Maksimalt antal. Hvis du ændrer det maksimale antal til 100, bliver det muligt at behandle op til 100 kanbans.    Dette er det sidste trin i denne opgave.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

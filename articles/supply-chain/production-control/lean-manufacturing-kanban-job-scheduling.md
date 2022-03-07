@@ -1,10 +1,12 @@
 ---
 title: Kanban-job til lean manufacturing
 description: Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 52961
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f70c3cf44ce90b13250836013636920267d2016d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: be515fa206c62a50457c65f3fe16079bbea76a3a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570219"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007118"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-job til lean manufacturing
 
@@ -65,10 +67,8 @@ Den tilgængelige kapacitet pr. dag eller uge er defineret af den kalender, der 
 
 Listesiden **Tidsplanlægning af kanban-job** indeholder en faktaboks, der viser den tilgængelige og reserverede periodekapacitet for den valgte arbejdscelle. Afhængigt af de valgte planlagte perioder i produktionsflowmodellen viser perioderne dage eller uger.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

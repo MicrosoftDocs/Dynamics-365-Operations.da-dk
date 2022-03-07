@@ -2,29 +2,26 @@
 title: Modul med afhentningsoplysninger
 description: I dette emne beskrives afhentningsoplysningsmodulet, og det beskriver, hvordan du kan føje det til betalingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764555"
 ---
-# <a name="pickup-information-module"></a>Modul med afhentningsoplysninger
+# <a name="pickup-information-module"></a>Modul til afhentningsoplysninger
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +40,7 @@ Hvis der er valgt flere varer til afhentning på tværs af flere butikker, vil b
 
 I følgende illustration vises et eksempel på valg af tidsinterval via modulet med afhentningsoplysninger på en betalingsside.
 
-![Eksempel på et afhentningsoplysningsmodul på en betalingsside](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på et afhentningsoplysningsmodul på en betalingsside.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaber
 
@@ -59,14 +56,17 @@ Du kan få flere oplysninger om, hvordan du føjer et afhentningsoplysningsmodul
 
 I følgende illustration vises et eksempel på en e-handelsbetalingside, der indeholder tidsintervaller for afhentningslinjevarer.
 
-![Eksempel på en e-handelsbetalingsside, der indeholder tidsintervaller for afhentningslinjevarer](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en e-handelsbetalingsside, der indeholder tidsintervaller for linjevarer til afhentning.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oprette og opdatere tidsintervaller for kundeafhentning](dev-itpro/pickup-timeslots.md)
+[Oprette og opdatere tidsrubrikker for kundeafhentning](dev-itpro/pickup-timeslots.md)
 
 [Betalingsmodul](add-checkout-module.md)
 
 [Ordrebekræftelsesmodul](order-confirmation-module.md)
 
 [Ordredetaljer-modul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

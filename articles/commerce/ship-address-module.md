@@ -2,35 +2,30 @@
 title: Leveringsadressemodul
 description: Dette emne omhandler leveringsadressemodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4411241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765188"
 ---
 # <a name="shipping-address-module"></a>Leveringsadressemodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver leveringsadressemodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
+Dette emne omhandler leveringsadressemodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 
 Leveringsadressemodulet giver kunder mulighed for at tilføje eller vælge leveringsadressen for en ordre i betalingsflowet. Hvis en kunde er logget på, vises adresser, der tidligere er blevet gemt for den pågældende kunde, og kunden kan vælge mellem dem. Kunden kan også tilføje en ny adresse. Leveringsadressemodulet bruges til alle varer i en ordre, som kræver levering.
 
@@ -42,7 +37,7 @@ Selvom leveringsadressemodulet ikke indeholder adressevalidering, kan denne funk
 
 Følgende illustration viser et eksempel på et nyt leveringsadressemodul på en betalingsside.
 
-![Eksempel på et leveringsadressemodul på en betalingsside](./media/ecommerce-shippingaddress.PNG)
+![Eksempel på et leveringsadressemodul på en betalingsside.](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaber
 
@@ -50,6 +45,8 @@ Følgende illustration viser et eksempel på et nyt leveringsadressemodul på en
 |---------------|--------|-------------|
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valgfri overskrift til leveringsadressemodulet. |
 | Vis adressetype | **Sand** eller **Falsk** | Hvis denne valgfrie egenskab er angivet til **Sand**, vises en adressetype som f.eks **Privat** eller **Virksomhed**. Hvis der ikke er angivet en adressetype, vil adressen automatisk blive gemt som **Type**=**Anden**. |
+| Aktivér automatisk forslag| **Sand** eller **Falsk** | Hvis denne valgfrie egenskab er angivet til **Sand**, vises der automatiske adresseforslag. Disse forslag drives af Bing Maps. Du kan finde oplysninger om, hvordan du konfigurerer Bing Maps-integration for dit websted, i [modulet Butiksvælger](store-selector.md). Denne funktion er tilgængelig pr. Commerce version 10.0.15-udgaven.|
+|Indstillinger til automatiske forslag| Et nummer| Hvis automatiske adresseforslag er aktiveret, kan du angive yderligere indstillinger, f.eks. det maksimale antal forslag, der skal gives.|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Føje et leveringsadressemodul til en betalingsside og angive de krævede egenskaber
 
@@ -67,8 +64,13 @@ Et leveringsadressemodul kan kun føjes til et betalignsmodul. Du kan finde fler
 
 [Leveringsindstillingsmodul](delivery-options-module.md)
 
-[Modul med afhentningsoplysninger](pickup-info-module.md)
+[Modul til afhentningsoplysninger](pickup-info-module.md)
 
 [Ordredetaljer-modul](order-confirmation-module.md)
 
 [Gavekortsmodul](add-giftcard.md)
+
+[Butiksvælgermodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

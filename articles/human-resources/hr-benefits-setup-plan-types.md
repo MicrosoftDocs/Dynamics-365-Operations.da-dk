@@ -1,16 +1,13 @@
 ---
-title: Oprette plantyper
+title: Oversigt over plantype
 description: En plantype i Microsoft Dynamics 365 Human Resources er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,22 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417829"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558267"
 ---
-# <a name="create-plan-types"></a>Oprette plantyper
+# <a name="plan-type-overview"></a>Oversigt over plantype
 
-En plantype i Microsoft Dynamics 365 Human Resources er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen. Plantypen Basisliv har f.eks. plantypekoden Liv, fordi den er en slags livsforsikring, og den skal overholde de regler, der er fastsat for plantypekoden Liv. En anden plantype kan være Øvrigt liv, som også har plantypekoden Liv.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen. Plantypen **Basisliv** har f.eks. plantypekoden **Liv**, fordi den er en slags livsforsikringsplan og skal overholde de regler, der er fastsat for plantypekoden **Liv**. En anden plantype kan være **Supplerende liv**. Denne plantype vil også have plantypekoden **Liv**.
 
 Hver enkelt plantype angiver, om en medarbejder kan tilmelde sig en eller flere af planerne af denne typen. En medarbejder kan f.eks. sandsynligvis tilmelde sig politikkerne for både Basisliv og Øvrige liv for plantypen Liv. En medarbejder må højst sandsynligt kun tilmeldes sig én politik af typen Medicinsk.
 
 Hvis en plantype omfatter kontakter, angiver plantypen, om kontaktpersoner er modtagere eller afhængige. Plantypen Basisliv kan f.eks. have modtagere, mens plantypen Basis medicinsk ville have afhængige. I nogle tilfælde kan en plan ikke have personlige kontaktpersoner. Det kan f.eks. være en Fleksibel forbrugskonto eller Parkeringsgodtgørelse.
 
 En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne defineres i formularen Disponeringsindstilling. En disponeringsindstilling kan angive beløbet for frynsegodet eller de kontakter, der er berettigede til plantypen. Hvis kontakttypen f.eks. er modtager, skal disponeringsindstillingen definere de betingelser, som modtageren er berettiget til at modtage, når frynsegodet bruges. Hvis kontakttypen er Afhængig, skal disponeringsindstillingen definere forholdet mellem den afhængige og medarbejderen. 
+
+> [!IMPORTANT]
+> Formularen indeholder nøgledata, der påvirker de tilgængelige muligheder ved oprettelse af en ny frynsegodeplan:
+>
+> - **Plantypekode** – Dette felt påvirker, hvad der vises under fanen **Konfiguration**, når den faktiske frynsegode konfigureres.  
+> - **Samtidig tilmelding** – Dette felt bestemmer, om der tillades flere tilmeldinger. (For en sundhedsplan angives dette felt typisk til **Én tilmelding**).
+> - **Kontakttype** – Dette felt gør det muligt at føje afhængige eller modtagere til en plan. Hvis den er angivet til **Ingen**, har medarbejdere, der tilmeldes fryndegoder, ikke mulighed for at vælge en modtager eller en afhængig.
+> - **Dækningsindstillinger** – Brug dette felt til at sammenkæde dækningsmulighederne med plantyperne. Den definerer enten de personer, der vil blive dækket af denne plantype, eller de dækningsbeløb, der er tilgængelige for denne plantype. Du kan f.eks. angive, at dækningen for en sundhedsforsikringstype kun vil være tilgængelig for medarbejderen, medarbejderen og en anden person eller medarbejderen og dennes familie.
+
+## <a name="create-plan-types"></a>Oprette plantyper
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Plantyper** under **Konfiguration**.
 
@@ -63,3 +72,6 @@ En plantype kan definere disponeringsindstillinger. Disponeringsindstillingerne 
    | **Rapporteringsvindue** | Angiver rapporteringsvinduet, i dage, for livshændelsen. **Bemærk!** Hvis du ikke indtaster et beløb, antager systemet, at rapporteringsvinduet skal være nul, og livshændelsen behandles ikke. |
 
 5. Vælg **Gem**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

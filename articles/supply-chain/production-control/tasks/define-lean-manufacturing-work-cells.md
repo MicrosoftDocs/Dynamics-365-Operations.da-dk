@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4f460fb42be5cbeda55a82e536e2a83cd2f6b608
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 068f87d4fcbee95227bb51ea6b7fdcbef8547d06
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424331"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257261"
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definere arbejdsceller for lean manufacturing
 
@@ -100,3 +99,6 @@ En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesa
 ## <a name="save"></a>Gem
 1. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

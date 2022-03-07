@@ -2,16 +2,13 @@
 title: Konfigurere detailprodukter
 description: I denne artikel beskrives, hvordan du konfigurerer produkter i Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b2c5a8976973203a943a2cec7658a2998c54f279
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14f18cb18a068983579d64fa37668be898fe0252fb0759603b7d0a14ec0e0181
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745252"
 ---
 # <a name="set-up-retail-products"></a>Konfigurere detailprodukter
 
@@ -40,3 +37,6 @@ Før du kan tilbyde produkter til videresalg i dine handelskanaler, skal du opre
 4. **Føj produkter til sortimenter.** Et udvalg repræsenterer en samling af produkter, som du tilbyder i dine kanaler. Du kan definere et eller flere udvalg, og hvert produkt kan tildeles et eller flere udvalg. Hvis du vil tildele produkter til kanaler, kan du tildele disse kanaler sortimenter. Når du opretter et udvalg, kan du tilføje produkter, som endnu ikke er frigivet til en juridisk enhed. Du skal dog frigive produkterne til en juridisk enhed, før disse produkter kan gøres tilgængelige for kanalerne.
 5. **Føj produkter til navigationshierarkier.** Før produkter kan gennemses online eller ved POS, skal de være kategoriseret i et navigationshierarki for Commerce.
 6. **Føj produkter til kataloger.** Selvom dette trin er valgfrit for POS, kræver onlinebutikker, at produkter skal medtages i mindst ét katalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

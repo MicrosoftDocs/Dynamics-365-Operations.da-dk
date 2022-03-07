@@ -2,61 +2,66 @@
 title: Vis ordrebeskeder på POS
 description: I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen.
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e663a5dca76d570217b7e02444689a2e2d312c41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714132"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
 [!include [banner](includes/banner.md)]
 
-I det moderne detailmiljø tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten leverer ét enkelt program, hvor medarbejderne kan udføre alle disse og mange andre opgaver. Da der skal udføres forskellige opgaver i løbet af dagen, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. Fra og med Dynamics 365 for Retail med programopdatering 5 kan disse meddelelser kun konfigureres for POS-handlinger.
+Butiksmedarbejdere kan tildeles forskellige opgaver i butikken, f.eks. opfyldelse af ordrer eller udførelse af lageropgørelse eller statusoptællinger. POS-klienten leverer ét enkelt program, hvor medarbejderne kan blive gjort opmærksom på disse opgaver. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. Med start i Dynamics 365 Retail med programopdatering 5 kan disse meddelelser konfigureres til POS-handlinger.
 
+Systemet kan vise beskeder om *ordreopfyldningshandlingen*, og der kan også vises beskeder om *tilbagekaldsordrehandlingen* ved at starte i Commerce version 10.0.18. Fordi strukturen er udviklet til at kunne udvides, vil udviklere dog senere kunne [skrive en beskedbehandler](dev-itpro/extend-pos-notification.md) for operationer og få vist beskederne for den pågældende operation i POS.
 
-På nuværende tidspunkt kan systemet kun vise beskeder for ordreopfyldningsoperationer. Fordi strukturen er udviklet til at kunne udvides, vil udviklere dog senere kunne skrive en beskedbehandler for operationer og få vist beskederne for den pågældende operation i POS'et.
+## <a name="enable-notifications-for-order-fulfillment-or-recall-order-operations"></a>Aktivere beskeder for ordreopfyldningsoperationer eller tilbagekalde handlinger
 
-## <a name="enable-notifications-for-order-fulfillment-operations"></a>Aktivere beskeder for ordreopfyldningsoperationer
+Hvis du vil aktivere beskeder for ordreopfyldningsoperationer eller tilbagekalde handlinger, skal du se følgende trin.
 
-Hvis du vil aktivere beskeder for ordreopfyldningsoperationer, skal du følge disse trin.
+1. Gå til **Retail og Commerce \> Kanalopsætning \> POS-opsætning \> POS \> Handlinger**.
+1. Søg efter ente **Ordreopfyldning**-operationen eller **Tilbagekald**-operationen, og marker afkrydsningsfeltet **Aktiver beskeder** ud for indstillingen for at angive, at beskedstrukturen skal lytte til behandleren for denne operation. Hvis behandleren er implementeret, vises beskeder for denne operation derefter i POS.
+1. Gå til **Retail og Commerce \> Medarbejdere \> Arbejdere**.
+1. Vælg fanen **Handel**, vælg en arbejderrække, og vælg derefter **POS-tilladelser**. Vælg oversigtspanelet **Beskeder** for at udvide det, og tilføj derefter de handlinger, du har aktiveret beskeder for. Hvis du konfigurerer en enkelt besked til en arbejder, skal du sikre dig, at værdien for **Visningsrækkefølge** er angivet til **1**. Hvis du konfigurerer mere end én handling, skal du angive værdierne for **Visningsrækkefølge** for at angive den rækkefølge, som beskederne skal vises i. 
 
-1. Gå til **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Handlinger**.
-2. Søg efter **Ordreopfyldning**-operationen, og marker afkrydsningsfeltet **Aktiver beskeder** ud for indstillingen for at angive, at beskedstrukturen skal lytte til behandleren for denne operation. Hvis behandleren er implementeret, vises beskeder for denne operation derefter i POS.
-3. Gå til **Retail og Commerce** &gt; **Medarbejdere** &gt; **Arbejdere** &gt;. Under fanen Commerce skal du åbne de POS-rettigheder, der er knyttet til arbejderen. Udvid oversigtspanelet **Beskeder**, tilføj operationen **Ordreopfyldning**, og indstil feltet **Visningsrækkefølge** til **1**. Hvis mere end én besked er konfigureret, kan dette felt bruges til at arrangere beskeder. Beskeder, der har en lavere værdi for **Visningsrækkefølge**, vises over beskeder, der har en højere værdi. Beskeder, der har en **Visningsrækkefølge**-værdi på **1**, findes øverst.
-
-    Beskeder vises kun for operationer, der er tilføjet i oversigtspanelet **Beskeder**, og du kan kun tilføje operationer der, hvis afkrydsningsfeltet **Aktiver beskeder** for disse operationer er markeret på siden **POS-operationer**. Derudover vises beskeder for en operation kun for arbejdere, hvis operationen føjes til POS-rettighederne for disse arbejdere.
+      Beskeder vises kun for handlinger, der er tilføjet i oversigtspanelet **Beskeder**. Du kan kun tilføje handlinger der, hvis afkrydsningsfelterne **Aktiver beskeder** for disse handlinger er markeret på siden **POS-handlinger**. Derudover vises beskeder for en operation kun for arbejdere, hvis operationen føjes til POS-rettighederne for disse arbejdere.
 
     > [!NOTE]
-    > Beskeder kan tilsidesættes på brugerniveau. Åbn arbejderens post, vælg **POS-rettigheder**, og rediger derefter brugerens beskedabonnement.
+    > Beskeder kan tilsidesættes på brugerniveau. Gør dette ved at åbne arbejderens post, vælge **POS-rettigheder**, og rediger derefter brugerens beskedabonnement.
 
-4. Gå til **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Funktionalitetsprofiler**. I feltet **Beskedinterval** skal du angive, hvor ofte beskeder skal udtrækkes. For nogle beskeder skal POS foretage kald i realtid til back-office-programmet. Disse kald forbruger databehandlingskapaciteten fra back-office-programmet. Når du indstiller beskedintervallet, skal du derfor overveje både virksomhedens behov og virkningen af kald i realtid til back-office-programmet. En værdi på **0** (nul) deaktiverer beskeder.
-5. Gå til **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan**. Vælg tidsplanen **1060** (**personale**) for at synkronisere indstillinger for beskedabonnementet, og vælg derefter **Kør nu**. Vælg derefter tidsplanen **1070** (**kanalkonfiguration**) for at synkronisere rettighedsintervallet, og vælg derefter **Kør nu**.
+1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**. I feltet **Beskedinterval** skal du angive, hvor ofte beskeder skal udtrækkes. For nogle beskeder skal POS foretage kald i realtid til back-office-programmet. Disse kald forbruger databehandlingskapaciteten fra back-office-programmet. Når du indstiller beskedintervallet, skal du derfor overveje både virksomhedens behov og virkningen af kald i realtid til back-office-programmet. En værdi på **0** (nul) deaktiverer beskeder.
+1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**. Vælg tidsplanen **1060** (**personale**) for at synkronisere indstillinger for beskedabonnementet, og vælg derefter **Kør nu**. Vælg derefter tidsplanen **1070** (**kanalkonfiguration**) for at synkronisere rettighedsintervallet, og vælg derefter **Kør nu**.
 
 ## <a name="view-notifications-in-the-pos"></a>Vise beskeder i POS'et
 
-Når du har fuldført de foregående trin, kan arbejderne se beskederne i POS'et. Tryk på beskedikonet i øverste højre hjørne i POS'et for at få vist beskederne. Der vises et beskedcenter med beskederne for ordreopfyldningsoperationen. Beskedcenteret skal vise følgende grupper i ordreopfyldningsoperationen:
+Når du har fuldført de foregående trin, kan arbejderne se beskederne i POS'et. Vælg beskedikonet i øverste højre hjørne i POS'et for at få vist beskederne. Der vises et beskedpanel, som viser beskeder om de handlinger, der er konfigureret for arbejderen. 
 
-- **Afhentning i butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Afhentning**, og som er planlagt til afhentning fra den aktuelle butik. Du kan trykke på nummeret på gruppen for at åbne siden **Ordreopfyldning**. I dette tilfælde filtreres på siden, så den kun viser de aktive ordrer, der er konfigureret til afhentning fra det aktuelle lager.
-- **Afsend fra butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Levering**, og som er planlagt til forsendelse fra den aktuelle butik. Du kan trykke på nummeret på gruppen for at åbne siden **Ordreopfyldning**. I dette tilfælde filtreres på siden, så den kun viser de aktive ordrer, der er konfigureret til forsendelse fra det aktuelle lager.
+Beskedcenteret skal vise følgende grupper i **ordreopfyldningsoperation**:
 
-Hvis der tildeles nye ordrer til butikken til opfyldelse, ændres beskedikonet, så det angiver, at der er nye beskeder, og antallet af de relevante grupper opdateres. Selvom grupperne opdateres med jævne mellemrum, kan POS-brugere manuelt opdatere grupperne til enhver tid ved at vælge knappen **Opdater** ud for gruppen. Endelig, hvis en gruppe har en ny vare, som den aktuelle arbejder ikke har fået vist, viser gruppen et burst-symbol for at angive nyt indhold.
+- **Afhentning i butik** - Denne gruppe viser antallet af individuelle ordrer, der har leveringsmåden Afhentning, og som er planlagt til afhentning fra den aktuelle butik. Du kan vælge nummeret på gruppen for at åbne **ordreopfyldningsoperationen** med et filter, så den kun viser de aktive ordrelinjer, der er konfigureret til afhentning fra den aktuelle butik.
+- **Afsendelse fra butik** - Denne gruppe viser optællingen af individuelle ordrelinjer, der er konfigureret til at blive afsendt fra brugerens aktuelle butik. Du kan vælge nummeret på gruppen for at åbne **ordreopfyldningsoperationen** med en filtreret visning, så den kun viser de aktive ordrelinjer, der er konfigureret til afhentning fra den aktuelle butik.
+
+Beskedcenteret skal vise følgende grupper i **ordreopfyldningsoperation**:
+
+- **Ordrer, der skal opfyldes** – Denne gruppe viser optællingen af ordrer, der er konfigureret til enten afhentning eller forsendelsesopfyldning for brugerens aktuelle butik. Du kan vælge nummeret på gruppen for at åbne operationen **Tilbagekald ordre** med en filtreret visning, der kun viser de åbne ordrer, som skal opfyldes af brugerens aktuelle butik for enten afhentning i butiks- eller afsendelse fra butiksscenarier.
+- **Afhentning i butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden Afhentning, og som er planlagt til afhentning fra den aktuelle butik. Du kan vælge nummeret på gruppen for at åbne operationen **Tilbagekald ordre** med en filtreret visning, der kun viser de åbne ordrer, som skal opfyldes med kundens afhentning i kundens aktuelle butik.
+- **Ordrer, der skal afsendes** – Denne gruppe viser antallet af ordrer, der skal afsendes fra brugerens aktuelle butik. Du kan vælge nummeret på gruppen for at åbne operationen **Tilbagekald ordre** med en filtreret visning, der kun viser de åbne ordrer, som skal opfyldes med afsendelse fra kundens aktuelle butik.
+
+For både ordreopfyldning og tilbagekaldsmeddelelser kan nye ordrer, der afhentes af processen, ændre beskedikon, så det angiver, at der er nye beskeder, og antallet af de relevante grupper opdateres. Selvom grupperne opdateres med jævne mellemrum, kan POS-brugere manuelt opdatere grupperne til enhver tid ved at vælge knappen **Opdater** ud for gruppen. Endelig, hvis en gruppe har en ny vare, som den aktuelle arbejder ikke har fået vist, viser gruppen et burst-symbol for at angive nyt indhold.
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivere dynamisk indhold på POS-knapper
 
@@ -67,13 +72,14 @@ POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvil
 
 I følgende illustration vises indstillingerne for dynamisk indhold i knapgitterdesigneren.
 
-![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
+![Indstillinger for dynamisk indhold i knapgitterdesigneren.](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
 
 Hvis du vil have vist antallet af beskeder på en knap, skal du sikre dig, at det korrekte skærmlayout opdateres. Hvis du vil fastlægge, hvilket skærmlayout der bruges af POS, skal du vælge ikonet **Indstillinger** i øverste højre hjørne og notere **Skærmlayout-id** og **Layoutopløsning**. Brug nu Microsoft Edge-browseren, og gå til siden **Skærmlayout**, find det **Skærmlayout-id** og den **Layoutopløsning**, der blev identificeret ovenfor, og markér afkrydsningsfeltet **Aktivér dynamisk indhold**. Gå til **Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**, og kør jobbet 1090 (Kasseapparater) for at synkronisere ændringer af layoutet.
 
-
-![Finde det skærmlayout, der bruges af POS](./media/Choose_screen_layout.png "Finde skærmlayoutet")
+![Finde det skærmlayout, der bruges af POS.](./media/Choose_screen_layout.png "Finde skærmlayoutet")
 
 I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 
-![Dynamisk indhold på POS-knapper](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
+![Dynamisk indhold på POS-knapper.](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

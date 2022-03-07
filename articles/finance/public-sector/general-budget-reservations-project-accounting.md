@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BudgetReservation_PSN
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3f376de75951e9468ce95a24e9393d9bdca66672
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cf55723007580ec2e6e19deb23fff5b9795b54c6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407670"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258139"
 ---
 # <a name="project-accounting-with-general-budget-reservations"></a>Projektregnskab med generelle budgetreservationer
 
@@ -60,3 +59,6 @@ Når du bogfører en generel budgetreservation for et projekt, oprettes der en b
 3. Vælg **Bindende omkostninger**. Siden **Bindende omkostninger** åbnes og viser de bindende omkostninger, der er relateret til den valgte linje.
 
     Bindende omkostninger for generelle budgetreservationer er baseret på beløb, uanset om den bindende omkostning indeholder et bestemt antal og kostpris. Antallet for bindende omkostninger vil altid være 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,40 +2,29 @@
 title: Kundeemner til kontanter og to skrivninger
 description: I dette emne får dig oplysninger om kundeemner til kontanter og to skrivninger.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959595"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542265"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og to skrivninger
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Et vigtigt mål i de fleste virksomheder er at konvertere kundeemner til kunder og derefter vedligeholde et løbende forretningsforhold til disse kunder. I Microsoft Dynamics 365-apps sker kundeemne til kontant-processen gennem tilbud eller ordrebehandlingsarbejdsgange, og finanserne afstemmes og registreres. Integration af kundeemner til kontanter med to skrivninger opretter en arbejdsgang, der tager et tilbud og en ordre, der stammer fra Dynamics 365 Sales eller Dynamics 365 Supply Chain Management, og gør tilbuddet og ordren tilgængeligt i begge apps.
 
 I-app-grænsefladerne kan du få adgang til behandlingsstatus og fakturaoplysninger i realtid. Du kan derfor nemmere administrere funktioner som produktlager, lagerekspedition og -udførelse i styring af Supply Chain Management, uden at skulle oprette tilbud og ordrer igen.
 
-![Dataflow med to skrivninger til kundeemner til kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dataflow med to skrivninger til kundeemner til kontanter.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Du kan finde oplysninger om integration af kunder og kontakter i [Integreret kundemaster](customer-mapping.md). Du kan finde oplysninger om produktintegration i [Samlet produktoplevelse](product-mapping.md).
 
@@ -50,7 +39,7 @@ Før du kan synkronisere salgstilbud, skal du opdatere følgende indstillinger.
 
 Gå til **Indstillinger \> Administration \> Systemindstillinger \> Salg** i Sales, og sørg for, at der bruges til følgende indstillinger:
 
-- Systemindstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
+- Indstillingen **Brug systemets prisberegningssystem** er angivet til **Ja**.
 - Kolonnen **Rabatberegningsmetode** er angivet til **Linjeelement**.
 
 ### <a name="sites-and-warehouses"></a>Websteder og lagersteder
@@ -72,6 +61,7 @@ Salgstilbud kan oprettes i Sales eller i Supply Chain Management. Hvis du oprett
 + Kolonnerne **Fragtbetingelser**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringstilstand** er ikke del af standardtilknytningerne. Hvis du vil tilknytte disse kolonner, skal du angive en værditilknytning, der er specifik for dataene i de organisationer, som tabellen synkroniseres mellem.
 
 Hvis du også bruger løsningen Field Service, skal du sørge for at aktivere parameteren **Opret hurtigt tilbudslinjen** igen. Hvis du aktiverer parameteren igen, kan du fortsætte med at oprette tilbudslinjer ved hjælp af funktionen til hurtig oprettelse.
+
 1. Naviger til dit Dynamics 365 Sales-program.
 2. Vælg ikonet Indstillinger på den øverste navigationslinje.
 3. Vælg **Avancerede indstillinger**.
@@ -123,40 +113,25 @@ Kundeemne til kontant omfatter en samling af centrale tabeltilknytninger, der ar
 
 | Finance and Operations-apps | Kundeengagementapps | Betegnelse |
 |-----------------------------|-----------------------------------|-------------|
-| Salgsfakturahoveder V2    | fakturaer                          | Tabellen Salgsfakturahoveder V2 i Finance and Operations-appen indeholder fakturaer for salgsordrer og fritekstfakturaer. Der anvendes et filter i Dataverse for dobbeltskrivning, der filtrerer alle dokumenter med fritekstfakturaer ud. |
-| Salgsfakturalinjer V2      | invoicedetails                    |             |
-| CDS-salgsordrehoveder     | salesorders                       |             |
-| CDS-salgsordrelinjer       | salesorderdetails                 |             |
-| Koder for salgsordreoprindelse    | msdyn\_salgsordreoprindelser          |             |
-| CDS-salgstilbudshoved  | pristilbud                            |             |
-| CDS-salgstilbudslinjer   | quotedetails                      |             |
+[Alle produkter](mapping-reference.md#138) | msdyn_globalproducts | |
+[Debitorer V3](mapping-reference.md#101) | konti | |
+[Debitorer V3](mapping-reference.md#116) | kontakter | |
+[Kontakter V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[CDS-salgsordrehoveder](mapping-reference.md#217) | salesorders | |
+[CDS-salgsordrelinjer](mapping-reference.md#216) | salesorderdetails | |
+[CDS-salgstilbudshoved](mapping-reference.md#215) | pristilbud | |
+[CDS-salgstilbudslinjer](mapping-reference.md#214) | quotedetails | |
+[Frigivne produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoveder V2 i Finance and Operations-appen indeholder fakturaer for salgsordrer og fritekstfakturaer. Der anvendes et filter i Dataverse for dobbeltskrivning, der filtrerer alle dokumenter med fritekstfakturaer ud. |
+[Salgsfakturalinjer V2](mapping-reference.md#117) | invoicedetails | |
+[Koder for salgsordreoprindelse](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Her er de relaterede kernetabeltilknytninger for kundeemne til kontant:
-
-+ [Debitorer V3 til konti](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS kontakter V2 til kontakter](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Debitorer V3 til kontakter](customer-mapping.md#customers-v3-to-contacts)
-+ [Frigivne produkter V2 til msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Alle produkter til msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Prisliste](product-mapping.md)
+Du kan finde oplysninger om prislister i [Samlet produktoplevelse](product-mapping.md).
 
 ## <a name="limitations"></a>Begrænsninger
+
 - Returordrer understøttes ikke.
 - Kreditnotaer understøttes ikke.
-- Økonomiske dimensioner skal angives for masterdata, f.eks. debitor og kreditor. Når en kunde føjes til et tilbud eller en salgsordre, flyttes de økonomiske dimensioner, der er knyttet til kundeposten, automatisk til ordren. Aktuelt omfatter dobbeltskrivning ikke økonomiske dimensionsdata for masterdata. 
+- Økonomiske dimensioner skal angives for masterdata, f.eks. debitor og kreditor. Når en kunde føjes til et tilbud eller en salgsordre, flyttes de økonomiske dimensioner, der er knyttet til kundeposten, automatisk til ordren. Aktuelt omfatter dobbeltskrivning ikke økonomiske dimensionsdata for masterdata.
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: ER-funktionen INTVALUE
 description: Dette emne indeholder oplysninger om, hvordan funktionen INTVALUE til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98b91a983c60bb99280763f7f7a944d08f535e60
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 71eedde5a22f36a8a827824087633de32c00cc7d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685997"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755366"
 ---
 # <a name="intvalue-er-function"></a>ER-funktionen INTVALUE
 
@@ -73,3 +71,6 @@ Eventuelle decimalpladser afkortes.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Typekonverteringsfunktioner](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

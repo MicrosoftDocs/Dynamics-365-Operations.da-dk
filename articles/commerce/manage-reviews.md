@@ -2,15 +2,12 @@
 title: Administrere vurderinger og anmeldelser
 description: I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411102"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968221"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
 
 Dynamics 365 Commerce bruger Microsoft Azure Cognitive Services til automatisk at moderere tekst i anmeldelser ved at bortredigere krænkende ord og udtryk. Derudover kan redaktører bruge Dynamics 365 Commerce-webstedsgenerator til at implementere følgende manuelle opgaver:
 
@@ -48,7 +43,7 @@ Følg disse trin for at læse en anmeldelse i Commerce-webstedsgenerator.
 
 Yderligere filtre giver dig mulighed for at begrænse anmeldelserne efter status periode, vurdering, kanal eller problem (fjernet, besvaret eller rapporteret).
 
-![Startside for redigering](media/rnr-moderation-home.png) 
+![Startside for redigering.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Besvare en anmeldelse 
 
@@ -62,7 +57,7 @@ Følg disse trin for at reagere på en anmeldelse i Commerce-webstedsgenerator.
 1. Angiv svarteksten og det navn, der skal vises for respondenten. Respondentens navn er som standard **Redaktør**.
 1. Vælg **Send svar**, når du er færdig.
 
-![Besvare en anmeldelse](media/rnr-moderation-response.png) 
+![Besvare en anmeldelse.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Fjerne en anmeldelse 
 
@@ -85,7 +80,7 @@ Hvis du vil finde og slette kundedata i Commerce-webstedsgenerator, skal du føl
 1. Hvis kunden har anmeldelsesaktivitet (f.eks. indsendelse af anmeldelser, tilkendegivelser om nytten af andre kunders anmeldelser eller kommentarer til en anden kundes anmeldelse), vises resultaterne. Knappen **Slet** vises for hvert element.
 1. Vælg **Slet** for hvert element, der skal slettes. Når du bliver bedt om at bekræfte, skal du vælge **Ja**. 
     
-![Slette kundedata](media/rnr-moderation-delete-reviews.png) 
+![Slette kundedata.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Det kan tage op til syv dage, før data er fjernet fuldstændigt fra systemet. Redaktører skal give kunderne besked om denne forsinkelse.
@@ -109,19 +104,19 @@ Hvis du vil se vurderings- og anmeldelsestendenser i Commerce-webstedsgenerator,
 1. Gå til **Startside \> Anmeldelser \> Rapportering**.
 1. Vælg **Power BI-skabelon** for at hente skabelonen.
 
-    ![Hent Power BI-skabelonen](media/rnr-moderation-reports.png) 
+    ![Hent Power BI-skabelonen.](media/rnr-moderation-reports.png) 
 
 1. Åbn den hentede skabelon ved hjælp af Power BI-appen. Luk dialogboksen **Adgang til webindhold**, der vises, og luk derefter fejlmeddelelsen "Opdater", der vises.
 1. Gå til **Startside**, vælg **Rediger forespørgsler**, og vælg derefter **indstillinger for datakilde**.
 1. Vælg **Skift kilde** i dialogboksen **Indstillinger for datakilde**.
 1. I feltet **URL-adresse** skal du angive stien til de anmeldelsesdata, du hentede i den forrige procedure (f.eks **C:\\Anmeldelser\\Anmeldelsesdata.csv**).
 
-    ![Felt med URL-adresse i dialogboksen Kommaseparerede værdier](media/rnr-powerbi-datasource-settings.png) 
+    ![Felt med URL-adresse i dialogboksen Kommaseparerede værdier.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Vælg **OK**, og vælg derefter **Anvende ændringer**. Det tager ét til to minutter at anvende ændringerne på datakilden.
 1. Vælg **Tendensark** for at få vist tendenser for vurderinger og anmeldelser.
 
-    ![Tendenser i vurderinger og anmeldelser](media/rnr-powerbi-dashboard-template.png) 
+    ![Tendenser i vurderinger og anmeldelser.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -132,3 +127,14 @@ Hvis du vil se vurderings- og anmeldelsestendenser i Commerce-webstedsgenerator,
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
+
+[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
+
+[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
+
+[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
+
+[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

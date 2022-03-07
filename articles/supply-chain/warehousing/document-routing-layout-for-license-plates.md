@@ -2,28 +2,30 @@
 title: Dokumentrutelayout for id-nummeretiketter
 description: I dette emne beskrives, hvordan du bruger formateringsmetoder til at udskrive værdier på etiketter.
 author: perlynne
+manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103884"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4424965"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutelayout for id-nummeretiketter
 
 [!include [banner](../includes/banner.md)]
-
 
 I dokumentrutelayoutet defineres layoutet for id-nummeretiketter og de data, der udskrives på dem. Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.
 
@@ -51,10 +53,6 @@ Hvis du vil have vist de værdier, der vil blive udskrevet, skal du gå til **Lo
 
 Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet. Mange af disse værktøjer understøtter `$FieldName$`-formatet. Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.
 
-## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
-
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Udvidede layout for id-etiket*. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres.)
-
 ## <a name="custom-number-formats"></a>Brugerdefinerede talformater
 
 Du kan tilpasse formateringen af numeriske feltværdier, der udskrives, ved hjælp af koder, som har følgende format.
@@ -73,7 +71,7 @@ Følgende eksempler viser, hvordan du kan tilpasse feltet arbejdsantal (**Antal*
 - Hvis du altid vil have vist fire cifre (ved hjælp af nuller som pladsholdere), skal du bruge `$Qty:0000$`. Hvis antallet f.eks. er 10, vil etiketten vise "0010".
 - Hvis du altid vil have vist to decimaler, skal du bruge `$Qty:0.00$`. Hvis antallet f.eks. er 10, vil etiketten vise "10,00".
 
-Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](/dotnet/standard/base-types/custom-numeric-format-strings).
+Du kan få vist en komplet liste over de tilgængelige numeriske formatstrenge i [Brugerdefinerede numeriske formatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Brugerdefinerede strengformater
 
@@ -95,7 +93,7 @@ $PrintedDate:dd-MM-yyyy$
 
 I dette eksempel vil datoen 30. april 2020 blive udskrevet som "30-04-2020".
 
-Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Du kan få vist en komplet liste over de tilgængelige dato/klokkeslætsformater i [Brugerdefinerede dato/klokkeslætsformatstrenge ](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Udskrive individuelle linjer fra data på flere linjer
 
@@ -138,6 +136,3 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Flere oplysninger om, hvordan du udskriver etiketter
 
 Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive etiketter, i [Aktivere udskrivning af id-etiket](tasks/license-plate-label-printing.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

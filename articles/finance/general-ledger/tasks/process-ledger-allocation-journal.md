@@ -2,11 +2,9 @@
 title: Behandle finansfordelingskladde
 description: I dette emne beskrives, hvordan du behandler en fordelingsanmodning i Dynamics 365 Finance.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a7e8c3ef6fa85daec2a191b433b1ec4ece441ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e89aa21f988d50bc1a922e053be0ff2dcd196268
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834404"
 ---
 # <a name="process-ledger-allocation-journal"></a>Behandle finansfordelingskladde
 
@@ -43,3 +41,6 @@ I dette emne beskrives, hvordan du behandler en fordelingsanmodning. Brug siden 
 9. Vælg **Bogfør**.
 10. Vælg **Bogfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

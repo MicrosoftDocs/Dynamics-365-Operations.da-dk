@@ -1,23 +1,23 @@
 ---
 title: Konfiguration af kreditstyringsparametre
 description: I dette emne beskrives de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
-author: JodiChristiansen
-ms.date: 12/10/2021
+author: mikefalkner
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 4243b7163d822f8b496fb79f6c72cf8d5502ca7e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323404"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835334"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
@@ -31,7 +31,7 @@ Der er fire oversigtspaneler i sektionen **Kredit**, hvor du kan ændre parametr
 
 ### <a name="credit-holds"></a>Kreditter på hold
 
-- Vælg **Nej** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet øget, efter at salgsordren blev frigivet fra spærringslisten.
+- Vælg **Nej** i indstillingen **Tillad redigering af salgsordrer, når spærringen af ordren er ophævet** for at angive, at bogføringsreglerne skal kontrolleres igen, hvis salgsordrens værdi (udvidet pris) er blevet øget, efter at salgsordren blev frigivet fra spærringslisten. .
 - I feltet **Årsager til annullerede ordrer** skal du vælge den frigivelsesårsag, der skal bruges som standard, når en salgsordre, hvor der er spærret for kreditstyring, annulleres.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum for kundekreditgrupper** for at kontrollere kreditgrænsen for en kundekreditgruppe, når kunden på en salgsordre tilhører en kundekreditgruppe. Gruppens kreditmaksimum kontrolleres, og hvis det er tilstrækkeligt, kontrolleres kreditmaksimum for kunden.
 - Vælg **Ja** i indstillingen **Kontroller kreditmaksimum, når betalingsbetingelserne er forlænget**, hvis du vil kontrollere, om rangeringen i betalingsbetingelserne er forskellig fra standardbetalingsbetingelserne for kunden. Hvis de nye betalingsbetingelser har en højere rangering end de oprindelige betalingsbetingelser, sættes ordren på hold i kreditstyringen.
@@ -50,8 +50,7 @@ Du kan også definere antallet af respitdage, før kreditreglerne kontrolleres i
 
 Hvis du ikke angiver antallet af respitdage, kontrolleres kreditreglerne for alle de posteringstrin, der er konfigureret til kørslen af regler for kreditstyring. Hvis du frigiver salgsordren uden at bogføre den og derefter kører det samme ordrebehandlingstrin igen, kontrolleres kreditreglerne igen. En ordre sættes f.eks. på hold efter en bekræftelse, og du frigiver den enten med eller uden bogføring. I dette tilfælde vil ordren blive sat på hold igen, hvis du bekræfter den igen. Brug respitdage, hvis ordren skal gå videre til næste behandlingstrin uden at blive sat på hold igen.
 
-> [!Note]
-> Hvis der er angivet en respitdag for et bogføringskontrolpunkt, skal alle kontrolpunkter, der er markeret til bogføring, have respitdage.
+Du kan ikke angive respitdage for nogle bogføringskontrolpunkter, og så ikke for andre. Du skal enten konfigurere alle bogføringskontrolpunkter, så de har respitdage, eller også skal du indstille dem alle til ikke at have respitdage.
 
 - Markér afkrydsningsfeltet **Bogføring** for at køre reglerne for kreditstyring, når det bogføringskontrolpunkt, der vises på linjen, køres. Hvis du ikke markerer afkrydsningsfeltet, bliver reglerne kun kontrolleret én gang i hele bogføringsprocessen.
 - Hvis du markerer afkrydsningsfeltet **Bogføring**, skal du angive det antal respitdage, der skal gå, før blokeringsreglerne skal kontrolleres igen. Du kan ikke tilføje respitdage, hvis afkrydsningsfeltet **Bogføring** ikke er markeret.
@@ -73,10 +72,6 @@ Der findes flere kreditstyringsstatistikker i faktaboksen **Statistik for kundek
 
 - I forbindelse med kreditstyring vises kundens kreditmaksimum i kundens valuta. Du skal angive valutakurstypen for kreditmaksimum i kundens valuta. I feltet **Valutakurstype for kreditmaksimum** skal du vælge den type valutakurs, der skal bruges til omregning af den primære kreditmaksimum til debitorens kreditmaksimum.
 - Vælg **Nej** i indstillingen **Tillad manuel redigering af kreditmaks.** for at forhindre brugere i at redigere kreditmaksimum på siden **Debitor**. Hvis du vælger **Nej** i denne indstilling, kan ændringer af en debitors kreditmaksimum kun foretages ved bogføring af reguleringsposteringer for kreditmaksimum.
-- Angiv indstillingen **Undgå lagerreservationer** til **Ja**, hvis du vil ignorere lagerreservationer, når blokeringsregler for kreditstyring kontrolleres. I dette tilfælde kontrollerer systemet hele linjeantal og aktiverer fristerne for kontrolpunktet, uanset antallet på lagerreservationen.
-- Når Kreditstyring er aktiveret, bruges indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum** kun til behandling af fritekstfakturaer. Selvom meddelelser stadig føjes til salgsordrer, når kunderne har overskredet deres kreditmaksimum, spærres der ikke for bekræftelse, udskrivning af pluklister og følgesedler eller bogføring af fakturaer.
-
-    Kreditstyring er som standard aktiveret, men du kan deaktivere den. Hvis den er aktiveret, kan du bruge blokeringsreglerne for kreditstyring og kontrolpunkter til at identificere, hvornår kunder har overskredet deres kreditmaksimum. Hvis den deaktiveres, kan de meddelelser, der føjes til salgsordrer baseret på indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum**, hjælpe dig med at identificere, hvornår kunder har overskredet deres kreditmaksimum.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametre for delte nummerserier
 

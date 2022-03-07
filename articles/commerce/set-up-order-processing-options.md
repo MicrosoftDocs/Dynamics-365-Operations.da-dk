@@ -2,16 +2,13 @@
 title: Konfigurere callcenterkanaler
 description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer til callcentre ved hjælp af Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28954eab857a06da3978ca362081dfc3c525354d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411156"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092426"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurere callcenter-kanaler
 
@@ -40,7 +37,7 @@ Brugere skal være knyttet til en callcenter-kanalen for at kunne bruge funktion
 
 En profil for e-mail-besked kan også konfigureres for callcenter-kanalen. Profilen definerer det sæt af e-mail-skabeloner, der bruges, når der sendes e-mail til kunder, der kan afgiver ordrer gennem callcenter-kanalen. E-mail-udløserne kan konfigureres i forhold til systemhændelser som f.eks. indgivelse eller forsendelse af ordrer.
 
-Før salget kan behandles korrekt via en callcenter-kanal, skal du angive de rette [betalingsmetoder](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) og leveringsmåder for kanalen.
+Før salget kan behandles korrekt via en callcenter-kanal, skal du angive de rette [betalingsmetoder](/dynamics365/unified-operations/retail/work-with-payments) og leveringsmåder for kanalen.
 
 På niveauet for callcenter-kanalen kan du definere andre standardværdier i relation til de økonomiske dimensioner, som knyttes til de ordrer, der oprettes i den pågældende kanal.
 
@@ -50,15 +47,18 @@ Tre indstillinger i konfigurationen af et callcenter har stor indvirkning på de
 
 ### <a name="enable-order-completion"></a>Aktivér ordrefuldførelse
 
-Indstillingen **Aktivér ordrefuldførelse** for callcenter-kanalen har en større effekt på ordrebehandlingens flow af de salgsordrer, som er angivet for den pågældende kanal. Når indstillingen er aktiveret, skal alle salgsordrer opfylde en række valideringsregler, før de kan bekræftes. Du kan køre disse regler ved at vælge knappen **Fuldført**, der er tilføjet i handlingsruden på siden for salgsordren. Alle salgsordrer, der oprettes, når indstillingen **Aktivér ordrefuldførelse** er aktiveret, skal gennemgå processen for ordrefuldførelse. Denne proces gennemtvinger indhentning af betaling og følger valideringslogikken for betalingen. Ud over indhentning af betaling kan ordreindgivelsesprocessen udløse [svindelkontroller](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts), som konfigureres i systemet. Ordrer, der ikke består betalings- eller svindelvalideringer, sættes i kø og kan ikke frigives til yderligere behandling (f.eks. pluk eller levering), indtil det problem, der forårsagede spærringen, er løst.
+Indstillingen **Aktivér ordrefuldførelse** for callcenter-kanalen har en større effekt på ordrebehandlingens flow af de salgsordrer, som er angivet for den pågældende kanal. Når indstillingen er aktiveret, skal alle salgsordrer opfylde en række valideringsregler, før de kan bekræftes. Du kan køre disse regler ved at vælge knappen **Fuldført**, der er tilføjet i handlingsruden på siden for salgsordren. Alle salgsordrer, der oprettes, når indstillingen **Aktivér ordrefuldførelse** er aktiveret, skal gennemgå processen for ordrefuldførelse. Denne proces gennemtvinger indhentning af betaling og følger valideringslogikken for betalingen. Ud over indhentning af betaling kan ordreindgivelsesprocessen udløse [svindelkontroller](/dynamics365/unified-operations/retail/set-up-fraud-alerts), som konfigureres i systemet. Ordrer, der ikke består betalings- eller svindelvalideringer, sættes i kø og kan ikke frigives til yderligere behandling (f.eks. pluk eller levering), indtil det problem, der forårsagede spærringen, er løst.
 
-Når indstillingen **Aktivér ordrefuldførelse** er aktiveret for callcenter-kanalen, der er angivet linjeelementer på en salgsordre, og kanalens bruger forsøger at lukke eller forlade salgsordreformen uden først at markere **Fuldført**, håndhæver systemet ordrefuldførelsesprocessen ved at åbne siden for opsummering af salgsordrer og kræver, at brugeren indsender ordren korrekt. Hvis ordren ikke kan sendes korrekt sammen med betalingen, kan brugeren anvende funktionen for [ordrekø](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) for at sætte ordren i kø. Hvis brugeren forsøger at annullere ordren, skal han eller hun annullere den korrekt ved hjælp af funktionen Annuller eller Slet, afhængigt af den funktion brugerens sikkerhedsindstillinger tillader.
+Når indstillingen **Aktivér ordrefuldførelse** er aktiveret for callcenter-kanalen, der er angivet linjeelementer på en salgsordre, og kanalens bruger forsøger at lukke eller forlade salgsordreformen uden først at markere **Fuldført**, håndhæver systemet ordrefuldførelsesprocessen ved at åbne siden for opsummering af salgsordrer og kræver, at brugeren indsender ordren korrekt. Hvis ordren ikke kan sendes korrekt sammen med betalingen, kan brugeren anvende funktionen for [ordrekø](/dynamics365/unified-operations/retail/work-with-order-holds) for at sætte ordren i kø. Hvis brugeren forsøger at annullere ordren, skal han eller hun annullere den korrekt ved hjælp af funktionen Annuller eller Slet, afhængigt af den funktion brugerens sikkerhedsindstillinger tillader.
 
 Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret for callcenter-kanalen, spores feltet **Betalingsstatus** på ordren. Systemet beregner **Betalingsstatus**, når salgsordren er afgivet. Kun ordrer, der har en godkendt betalingsstatus, får lov til at gå gennem systemet til de øvrige trin i ordrebehandlingen, f.eks. pluk og levering. Hvis betalinger bliver afvist, aktiveres flaget **Udfør ikke behandling** i den detaljerede ordrestatus, og ordren sættes i kø, indtil betalingsproblemet er løst.
 
-Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, når brugere opretter salgsordrer, og tilstanden for indtastning af linjeelementer er aktiveret, vil feltet **Kilde** være tilgængeligt i det overordnede salgsordrehoved. Feltet **Kilde** bruges til at registrere en [katalogkildekode](https://docs.microsoft.com/dynamics365/unified-operations/retail/call-center-catalogs) i forbindelse med et salgscenarie med direkte marketing. Denne kode kan derefter udløse specialpriser og kampagner.
+Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, når brugere opretter salgsordrer, og tilstanden for indtastning af linjeelementer er aktiveret, vil feltet **Kilde** være tilgængeligt i det overordnede salgsordrehoved. Feltet **Kilde** bruges til at registrere en [katalogkildekode](/dynamics365/unified-operations/retail/call-center-catalogs) i forbindelse med et salgscenarie med direkte marketing. Denne kode kan derefter udløse specialpriser og kampagner.
 
 Selvom indstillingen **Aktivér ordrefuldførelse** er deaktiveret, kan brugerne stadig anvende en kildekode til en salgsordre. De skal dog først åbne salgsordrehovedets detaljer for at få adgang til feltet **Kilde**. Med andre ord kræves der nogle ekstra klik. Samme funktionsmåde gælder for funktioner som f.eks. Forsendelse fuldført og Fremskyndede ordrer. Disse funktioner er tilgængelige for alle ordrer, der er oprettet i callcenteret. Når indstillingen **Aktivér ordrefuldførelse** er slået til, kan brugere dog se konfigurationen af disse funktioner på salgshovedet, mens de er i linjepostvisning. De behøver ikke dykke ned i salgsordrehovedets detaljer for at finde de relevante indstillinger og felter.
+
+> [!NOTE]
+> Når funktionen **Omnikanalers Commerce-ordrebetalinger** er aktiveret, skjules callcenterknappen **Aktivér ordrefuldførelse** i hovedkontoret i oversigtspanelet **Generelt** i din kanal på **Retail og Commerce \> Kanaler \> Callcentre**.
 
 ### <a name="enable-direct-selling"></a>Aktivere direkte salg
 
@@ -84,3 +84,6 @@ Når du er færdig med at konfigurere callcenter-kanalen og definere kanalens br
 > [!NOTE]
 > Hvis du vil bruge funktionen call center, skal konfigurationsnøglen for **Flere leveringssteder** være aktiveret. Denne konfigurationsnøgle kan findes i **Konfigurationsnøgler til handel** under **Systemadministration**\> **Opsætning** \> **Licenskonfiguration**. Dette er påkrævet på grund af funktionen call center, som udfører forskellige valideringer baseret på den leveringsadresse, der er konfigureret på salgsordrelinjeniveau. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

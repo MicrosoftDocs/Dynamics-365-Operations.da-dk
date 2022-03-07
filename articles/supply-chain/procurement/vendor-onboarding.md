@@ -1,26 +1,24 @@
 ---
 title: Modtage kreditorer
 description: I dette emne beskrives processen til modtagelse af nye kreditorer. I emnet beskrives de handlinger, der kræves af forskellige roller under denne proces.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c2950cecfaf2c8b19ed14df748810b7d6f926c53
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019873"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566881"
 ---
 # <a name="onboard-vendors"></a>Modtage kreditorer
 
@@ -35,7 +33,7 @@ Processen består af følgende trin, hvor forskellige roller udfører handlinger
 1. **OData til datastyring** – Import af enhed – Den oprindelige anmodning er anmodningen om registrering af den mulige kreditor. Denne anmodning stammer normalt fra en kilde som f.eks. et websted til hos kunden, der tillader anonym adgang. Kreditorer kan tilmelde sig ved at angive grundlæggende oplysninger, f.eks. kreditornavnet, berettigelse, organisationsnummer og navn på og mailadresse til kontaktpersonen. Anmodningerne importeres via brugergrænsefladen i Datastyring.
 2. **Listeside med registreringsanmodning for mulige kreditorer** - Baseret på de oplysninger, der er angivet i registreringsanmodningen for mulige kreditorer, beslutter en anmoder, om kreditoren skal modtages. Anmoderen kan se den indgående anmodning på listesiden **Anmodninger om registrering af mulig kreditor**.
 3. **Arbejdsgang for brugerklargøring** – Når en anmoder har kontrolleret oplysningerne i den indgående anmodning og har besluttet at fortsætte modtagelsesprocessen, klargør brugeranmodningsarbejdsgangen den nye bruger og sender en mail med invitation til at acceptere kontaktpersonen som godkendt bruger af Microsoft Dynamics 365.
-4. **Guide til registrering af kreditorer** - Kreditorens kontaktperson logger på ved hjælp af den nye brugerkonto. Han eller hun kører en kreditorregistreringsguide for at angive oplysninger som f.eks. adresser, forretningsoplysninger, indkøbskategorier og spørgeskemasvar.
+4. **Guide til registrering af kreditorer** - Kreditorens kontaktperson logger på ved hjælp af den nye brugerkonto. De kører en kreditorregistreringsguide for at angive oplysninger som f.eks. adresser, forretningsoplysninger, indkøbskategorier og spørgeskemasvar.
 5. **Godkendelsesarbejdsgang** - Der oprettes en kreditoranmodning, der indeholder oplysningerne om registreringen. Denne kreditoranmodning sendes til en arbejdsgang og videresendes til gennemsyn og godkendelse.
 6. **Oprettelse af en kreditormaster og ændring af brugerrolle** – Når kreditoranmodningen er godkendt, oprettes en kreditorpost. Brugerkontoen for kreditorens kontaktperson har enten tilladelse til samarbejde med leverandøren eller er deaktiveret.
 
@@ -89,7 +87,7 @@ Oplysninger om konfigurationen af e-mailen og arbejdsgangen generelt finder du i
 
 ## <a name="vendor-registration"></a>Registrering af kreditor
 
-En mulig kreditorbruger, der logger på Supply Chain Management, ser den første side i en kreditorregistreringsguide, hvor han eller hun kan angive kreditoroplysninger.
+En mulig kreditorbruger, der logger på Supply Chain Management, ser den første side i en kreditorregistreringsguide, hvor der kan angives kreditoroplysninger.
 
 Guiden afspejler konfigurationen af kreditoranmodningen. Det land eller område, hvor kreditoren handler, bestemmer, hvilke oplysninger der anmodes om i guiden, og hvilke oplysninger er obligatoriske.
 
@@ -129,7 +127,7 @@ Følgende tabel viser de statusser, som kreditoranmodninger kan have.
 |----------------------------|-------------|
 | Udkast                      | Kreditoranmodningen er ikke endnu blevet afsendt. |
 | Anmodningen er sendt          | Kreditoranmodningen er sendt, og det første trin i arbejdsgangen behandles. |
-| Afventer gennemsyn             | Hvis der er flere korrekturlæsere i en arbejdsgangsopgave, kan en korrekturlæser acceptere opgaven med at gennemse kreditoranmodningen og derefter fuldføre gennemgangen. Hvis der kun er en enkelt korrekturlæser, kan denne deltager fuldføre gennemgangen af ved at vælge **Fuldført** i arbejdsproceshandlingen. Han eller hun behøver ikke at acceptere workflowopgaven først. |
+| Afventer gennemsyn             | Hvis der er flere korrekturlæsere i en arbejdsgangsopgave, kan en korrekturlæser acceptere opgaven med at gennemse kreditoranmodningen og derefter fuldføre gennemgangen. Hvis der kun er en enkelt korrekturlæser, kan denne deltager fuldføre gennemgangen af ved at vælge **Fuldført** i arbejdsproceshandlingen. Vedkommende behøver ikke at acceptere workflowopgaven først. |
 | Anmodning afventer godkendelse   | Kreditoranmodningen er blevet sendt til deltagerne til godkendelse, og det er muligt at anmode om yderligere oplysninger. En anmodning om supplerende oplysninger medfører, at workflowopgaven bliver dirigeret tilbage til afsenderen. Kreditoranmodningen kan også godkendes eller afvises, mens den har denne status. |
 | Anmodning om ændring af ansøgning | Der er anmodet om yderligere oplysninger af godkenderen, og kreditoranmodningen er blevet sendt til den person, der sendte kreditoranmodningen. Denne person kan tilføje de oplysninger, der anmodes om, og derefter sende kreditoranmodningen igen. Hvis en kreditoranmodning sendes igen, ændres status tilbage til status **Anmodning afventer godkendelse**. |
 | Anmodningen er godkendt           | Denne status er en sluttilstand. |
@@ -174,3 +172,6 @@ Ved hjælp af handlingen **Slet** i anmodningen om registrering af mulig kredito
 |         Godkendt         |                                                                               Kreditoranmodningen er godkendt.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
 |         Afvist         |                                                                               Kreditoranmodningen slettes.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

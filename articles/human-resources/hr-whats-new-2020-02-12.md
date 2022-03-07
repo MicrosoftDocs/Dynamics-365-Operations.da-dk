@@ -1,31 +1,30 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (12. februar 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 12. februar 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b89e022441f69825d9c9c56ecdbca2e09e461b9e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6cae0d3f59b1b0d01f3b2f6cf3469520e35d2f91
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526881"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6051206"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (12. februar 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -35,9 +34,9 @@ I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics
 
 Med denne uges udgivelse er enhederne **CompFixedEmpls** og **HcmPersonImage** offentlige og tilgængelige via ODAta.
 
-## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>Slet ansættelse fra Common Data Service virker ikke, når oplysninger om ansættelse ikke er aktive (403193)
+## <a name="delete-employment-from-dataverse-doesnt-work-when-employment-details-arent-active-403193"></a>Slet ansættelse fra Dataverse virker ikke, når oplysninger om ansættelse ikke er aktive (403193)
 
-Denne ændring giver dig nu mulighed for at slette ansættelser via Common Data Service, når der ikke findes nogen aktive ansættelsesoplysninger.
+Denne ændring giver dig nu mulighed for at slette ansættelser via Dataverse, når der ikke findes nogen aktive ansættelsesoplysninger.
 
 ## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>Arbejdsgang for kursusregistrering ændrer status til fuldført og fejl efter anden godkendelse (409749)
 
@@ -55,11 +54,11 @@ Følgende prøvefunktioner er tilgængelige den 3. februar 2020:
 
 ### <a name="platform-update-32"></a>Platform update 32 
 
-Platform update 32 vil snart være tilgængelig. [Få flere oplysninger om Platform update 32 her](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Platform update 32 vil snart være tilgængelig. [Få flere oplysninger om Platform update 32 her](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
-### <a name="updated-common-data-service-solution"></a>Opdateret Common Data Service-løsning
+### <a name="updated-dataverse-solution"></a>Opdateret Dataverse-løsning
 
-Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
+Der vil snart være en ny Dataverse-løsning med følgende ændringer:
 
 | Beskrivelse | Forskydning |
 | ----------------------------------------- | --- |
@@ -70,11 +69,13 @@ Der vil snart være en ny Common Data Service-løsning med følgende ændringer:
 | Nye konfigurationsobjekter til variabel kompensation | **Type af variabel kompensationsplan**</br>**Kompensation - variabel struktur**</br>**Fordelingsregler**</br>**Niveau i variabel kompensationsplan** |
 | Nyt objekt **Arbejderkalender for ansættelse** | **Arbejdskalenderobjekt** er tilføjet |
 | Nyt objekt **Lønoplysninger for stillinger** | **Lønoplysninger for stillinger** er tilføjet |
-| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Common Data Service. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
+| Nyt objekt **Titel** | **Titel** er tilføjet. Den nye enhed **Titel** vil blive medtaget i synkroniseringsprocessen mellem Human Resources og Dataverse. Der henvises ikke til den først i enhederne **Stilling** eller **Job**. |
 
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

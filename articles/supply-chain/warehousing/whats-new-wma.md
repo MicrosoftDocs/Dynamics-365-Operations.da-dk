@@ -1,92 +1,27 @@
 ---
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
-ms.date: 01/18/2022
+author: ivanv-microsoft
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067245"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386093"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
-
-## <a name="version-20150"></a>Version 2.0.15.0
-
-I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
-
-- Forbedret ydeevne ved at rette problemer med hukommelsen.
-- Har løst et problem, hvor nogle feltværdier ikke opdateres korrekt, når de er valgt på detaljesiden.
-
-## <a name="version-20140"></a>Version 2.0.14.0
-
-I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
-
-- Har løst et problem, der deaktiverede standardknappen Send.
-
-## <a name="version-20130"></a>Version 2.0.13.0
-
-I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
- 
-- Forbedret rulning mellem sider med blødere animation.
-- Har rettet tællerintuitiv respons på strygebevægelser og lejlighedsvise skærmfrysninger.
-- Forbedret kombinationer af tekst i mørketilstand og baggrundsfarve, så de bliver mere læsbare.
-- Har løst et problem, hvor teksten kunne blive meget lille, når appvinduets størrelse ændredes.
-- Har løst et problem, der kunne få appen til at gå ned, når der blev scannet stregkoder.
-- Tilføjet mulighed for at erstatte en skyder med en knap.
-- Har løst et problem, der kunne få appen til at vise fejlmeddelelsen "AADSTS7000215: Ugyldig klienthemmelighed er angivet."
-- Har rettet tipanimationen, der viser, hvordan du lukker en side ved at stryge nedad.
-- Tilføjede muligheden for at lukke en side ved at svippe nedad.
-- Har løst et problem, hvor rullelistetitlerne ikke blev vist på siden **Brugerindstillinger**.
-- Har løst et lokaliseringsproblem, hvor appen ikke kunne anerkende et komma (,) som decimalseparator.
-- Forbedret tilgængelighed.
-- Har rettet navigering på siden **Ny forbindelse** for at gøre tilgængeligheden bedre.
-- Har løst et problem, hvor tastaturet på skærmen ikke blev vist ved valg af et inputfelt.
-- Har løst et problem, der kunne få appen til at gå ned, hvis brugerne hurtigt ændrede størrelsen på vinduet.
-- Har løst et problem, hvor et hurtigt tastetryk nogle gange blev fortolket som et langt tryk.
-- Har løst et problem, hvor applayoutet kunne blive ødelagt på grund af felttilpasninger, der blev foretaget i Supply Chain Management.
-- Har løst et problem, hvor varelokationerne ikke blev vist korrekt.
-- Har løst et problem vedrørende kort pluk i arbejdsgangen for produktvarianter.
-- Har fjernet den unødvendige validering af felter, der indeholder foruddefinerede standardværdier.
-- Forbedret ydeevne.
-- Har tilføjet en ny indstilling, der giver brugerne mulighed for at vælge, hvordan felter skal filtreres og sorteres på kortsiden.
-
-## <a name="version-20110"></a>Version 2.0.11.0
-
-I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
-
-- Tilføjet understøttelse af hævede felter.
-- Tilføjet understøttelse af navigation på hardwaretastaturet.
-- Forbedret tilgængelighed.
-- Forbedrede detaljekort.
-- Forbedrede omveje til trin i menupunkter.
-- Mindre forbedringer af brugergrænsefladen.
-- Har løst et problem, der kunne medføre, at appen gik ned, når der blev scannet stregkoder.
-- Har løst forskellige problemer, der kunne forårsage, at systemet ikke længere svarede.
-
-## <a name="version-20100"></a>Version 2.0.10.0
-
-I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
-
-- Tilføjet animation, når du stryger gennem lister og sider.
-- Teksten ombrydes nu korrekt på forbindelsens fejlside.
-- Kombinationsfelter uden standardværdier vises nu korrekt.
-- Oplysninger i underhovedet vises nu kun på siden med fulde detaljer.
-- Tomme inputfelter vises ikke længere på detaljekortet.
-- Bekræftelsesværdier dubleres ikke længere på detaljekortet.
-- Har løst forskellige problemer, der forårsagede, at systemet ikke længere svarede.
 
 ## <a name="version-2090"></a>Version 2.0.9.0
 

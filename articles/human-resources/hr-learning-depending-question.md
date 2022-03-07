@@ -2,7 +2,7 @@
 title: Stille et spørgsmål afhængigt af svaret på det forrige spørgsmål
 description: Betingede spørgsmål, kan du angive, hvilken opfølgende spørgsmål vises til en svarperson, efter svar på det foregående spørgsmål.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4295b49336ec7ac3cff4deba675bc63511be48de
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a76220647417b6ff69e2f0ab5b2fa5297db5c49
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417875"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467837"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>Stille et spørgsmål afhængigt af svaret på det forrige spørgsmål
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -56,3 +58,6 @@ Betingede spørgsmål, kan du angive, hvilken opfølgende spørgsmål vises til 
 10. Vælg '"Spørgsmål\Jeg betales rimeligt for det arbejde, jeg udfører.".
     * Bemærk, at spørgsmålstræet opdateres for at vise afhængigheden.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7014e3a4384e08b0c218585a3c2110243360ec08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a24deecd27c977474ef3457063040157a4e3c7d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441556"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205079"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
 
@@ -41,3 +40,6 @@ Dette emne viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakt
 10. Skriv eller vælg en værdi i feltet **Anlægsaktiv**.
 11. Vælg **Bogfør**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

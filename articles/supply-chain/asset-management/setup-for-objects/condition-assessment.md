@@ -1,12 +1,10 @@
 ---
 title: Tilstandsvurdering
 description: Dette emne forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectCondition, EntAssetConditionTemplate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18be786e6f78829f61db1521a923e229fc4f0e70
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736058"
 ---
 # <a name="condition-assessment"></a>Tilstandsvurdering
 
@@ -65,3 +63,6 @@ Når du har foretaget en registrering af tilstandsvurdering for et aktiv, kan du
 
 >[!NOTE]
 >Du kan også registrere tilstandsvurdering på en arbejdsordre (**Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** > **Tilstandsvurdering**-knap).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Bølgeskabelongruppering
 description: Gruppering af bølgeskabeloner gør, at systemet kan bruge opsætninger af bøgeskabeloner til at bestemme, baseret på kriterier, du definerer, hvordan den skal opdele frigivne linjer og tildele dem til nye eller eksisterende bølger. Denne funktion kan være nyttig i lagre, hvor bølger oprettes på basis af bestemte kriterier, men hvor lederne foretrækker at oprette bølger automatisk i stedet for manuelt.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: b422eb432e579d4ae914fbc0efa79aaa15f1de27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579898"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998372"
 ---
 # <a name="wave-template-grouping"></a>Bølgeskabelongruppering
 
@@ -198,6 +200,3 @@ Der blev oprettet en ny bølge til denne forsendelse, fordi den bruger en anden 
 1. Vælg det bølge-id, der blev oprettet fra den tredje salgsordre.
 1. Vælg linket for bølge-id'et for at åbne siden med bølgedetaljer.
 1. Bemærk, at forsendelsen er føjet til oversigtspanelet **Bølgelinjer** sammen med forsendelsen for den første salgsordre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

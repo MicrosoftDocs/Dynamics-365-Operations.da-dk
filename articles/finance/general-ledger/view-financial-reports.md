@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c368259af9454af94da217585b2a1d01ea75d834
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54d407eb33060c61a5899ba5cc021c8c1c6c77c9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441561"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240610"
 ---
 # <a name="view-financial-reports"></a>Vise økonomirapporter
 
@@ -87,3 +86,6 @@ Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke p�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Registrere modtagelsen af varer for indkøbsordren
 description: Dette emne beskriver, hvordan du registrerer modtagelsen af varer direkte på en indkøbsordre.
-author: Henrikan
+author: mkirknel
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ec37082ffa7816d1b07cadc595eec6e8373920a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565326"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4425056"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Registrere modtagelsen af varer for indkøbsordren
 
@@ -46,6 +49,3 @@ Dette emne beskriver, hvordan du registrerer modtagelsen af varer direkte på en
 6. Angiv **Antal** til '4'. Her kan du manuelt angive det antal, der modtages for hver linje på ordren.  
 7. Vælg **OK**. Varerne er nu registreret som modtaget på indkøbsordren, og der er oprettet en produktkvitteringskladde som dokument for at afspejle dette. Du kan bruge handlingen Produktkvittering til at gennemse de kladder, der er oprettet med indkøbsordren, og til at se, hvad der er modtaget, og hvornår.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

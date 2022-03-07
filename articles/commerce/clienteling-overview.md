@@ -3,7 +3,7 @@ title: Oversigt over kundeaktiviteter
 description: Dette emne indeholder en oversigt over de nye egenskaber for kundeaktiviteter, der findes i butiksprogrammet.
 author: bebeale
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8f3135d0a34086b67c6e5ce11a5af47a51479c92
+ms.sourcegitcommit: 8a14eac1c27f10c2b1b02ac9ad82339f5e127602
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5554988"
 ---
 # <a name="clienteling-overview"></a>Kundeaktiviteter, oversigt
 
@@ -106,21 +105,33 @@ Hvis du vil aktivere integrationen af Customer Insights med Commerce, skal du si
 
 Følg disse trin for at konfigurere integrationen.
 
-1. Registrer et program i Azure-portalen. Dette program bruges til godkendelse i relation til Customer Insights. Du kan finde instruktioner under [Hurtig start: Registrer et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-2. Generér en ny hemmelighed for programmet Noter dig hemmeligheden, og opbevar den på et sikkert sted, for du får brug for den senere. Vælg også, hvornår hemmeligheden skal udløbe.
+1. Registrer et nyt program på Azure-portalen, og noter programnavnet, program-id'et og hemmelighed. Disse oplysninger bruges til service-til-service-godkendelse mellem Commerce og Customer Insights. Bemærk det sikkert, som det bliver nødvendigt at gemme det i nøgleboksen. I følgende eksempel kan du CI_Access_name nummer CI_Access_AppID CI_Access_AppID, CI_Access_Secret til henholdsvis ansøgningsnavnet, program-id'et og applikations-id'et. Du kan finde flere oplysninger under [Hurtig start: Registrer et program med platformen Microsoft-identitet](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Sikr dig, at du husker at ændre hemmeligheden, før den udløber. Ellers stopper integrationen uventet.
 
-3. Opret en Key Vault for Azure, og gem programhemmeligheden. Du kan finde instruktioner under [Hurtig start: Angiv og hent en hemmelighed fra Key Vault for Azure ved hjælp af Azure-portalen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
-4. Aktivér adgangen til Key Vault for Azure fra Commerce. For at fuldføre dette trin skal du have et program-ID og en hemmelighed. Programmet kan være det samme program, som du oprettede i trin 1, eller det kan være et nyt program. (Med andre ord kan du bruge det program, du oprettede i trin 1, til at få adgang til både Key Vault og tjenesten Customer Insights, eller du kan oprette et unikt program til hver enkelt adgangstype.) Yderligere oplysninger finder du i [Gem primære legitimationsoplysninger til tjenester Stack Key Vault for Azure](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
-5. Gå til **Systemadministration \> Opsætning \> Parametre for Key Vault** i Headquarters, og angiv de krævede oplysninger til Key Vault. Derefter skal du i feltet **Key Vault-klient** angive det program-id, du brugte i trin 4, så Commerce kan få adgang til hemmelighederne i Key Vault.
-6. Hvis du vil tilføje det program, du oprettede i trin 1, til listen over sikre programmer (kaldes til tider også en sikker liste), skal du gå til Customer Insights og give **Vise**-adgang til programmet. Du finder flere instruktioner under [Tilladelser](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. I Commerce skal du på siden **Parametre for Commerce** på fanen **Kundeaktiviteter** i oversigtspanelet **Dynamics 365 Customer Insights** gøre følgende:
+2. Gå til din forekomst af Customer Insights, og søg efter navnet på den applikation, der er oprettet ovenfor (i dette eksempel "CI_Access_name").
+3. Opret en vault for en Azure-nøgle, og noter navnet og URL-adressen (i dette eksempel "KeyVaultName", "KeyVaultURL"). Du kan finde instruktioner under [Hurtig start: Angiv og hent en hemmelighed fra Key Vault for Azure ved hjælp af Azure-portalen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+4. Gem dit nummer (i dette eksempel "CI_Access_Secret") i boksen. Når denne adresse gemmes i boksen, får denne adresse et navn. Noter navnet på (i dette eksempel, 'Adressenavn").
+5. Hvis du vil have adgang til computeren fra Azure Key Vault, skal du oprette et andet program med et program-id og et program-id (i dette eksempel, "KeyVault_Access_AppID" og "KeyVault_Access_Secret"). Bemærk det sikkert, da det ikke vil blive vist igen.
+6. Derefter skal du give programmet rettigheder for at få adgang til Key Vault fra Commerce ved hjælp af API'er. Gå til programsiden i Azure-portalen. Vælg **Administrer** under **API-tilladelser**. Tilføj rettigheden til at få adgang til **Azure-nøglehvælving**. Vælg **adgangspolitik** for denne tilladelse. Vælg skabelonen som **Hemmelig administration** og vælg indstillingerne **Hent**, **Liste**, **Dekrypter** og **Krypter**. 
+5. Gå til **Systemadministration \> Opsætning \> Parametre for Key Vault** i Commerce Headquarters, og angiv de krævede oplysninger til Key Vault. Derefter skal du i feltet **Key Vault-klient** angive det program-id, du brugte i trin 4, så Commerce kan få adgang til hemmelighederne i Key Vault.
+6. Hvis du vil tilføje det program, du oprettede i trin 1, til listen over sikre programmer (kaldes til tider også en sikker liste), skal du gå til Customer Insights og give **Vis** adgang til programmet. Du finder flere instruktioner under [Tilladelser](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+7. Opdater felterne som beskrevet nedenfor på siden **Systemadministration > Opsætning > Key Vault-parametre** i Commerce HQ: 
 
-    1. I feltet **Program-ID** skal du angive det program-ID, du brugte i trin 1.
-    2. I feltet **Hemmeligt navn** skal du angive navnet på den hemmelighed i Kay Vault, du oprettede i trin 5.
-    3. Angiv indstillingen **Aktivér Customer Insights** til **Ja**. Hvis opsætningen af en eller anden grund mislykkes, får du vist en fejlmeddelelse, og denne indstilling vil blive angivet til **Nej**.
-    4. Du kan have flere miljøer i Customer Insights, f.eks. test- og produktionsmiljøer. Angiv i feltet **ID for miljøforekomst** det relevante miljø.
-    5. I feltet **Alternativt kunde-ID** skal du angive den egenskab i Customer Insights, der er knyttet til kundens kontonummer. (i Commerce er kundens kontonummer det samme som kundens id.)
-    6. De resterende tre egenskaber er de målpunkter, der vil blive vist på kundekortet i klientbogen. Du kan vælge op til tre målpunkter, der skal vises på kundekortet. (Du behøver dog ikke at vælge nogen målpunkter.) Som tidligere nævnt, viser systemet disse værdier først, og derefter vises værdierne for attributgruppen for klientbogen.
+- **Nøgle Url-adresse**: "KeyVaultURL" (fra trin 3 ovenfor).
+- **Nøgle-Vault-klient**: "KeyVault_Access_AppID" (fra trin 5 ovenfor).
+- **Nøgle-Vault hemmelig nøgle**: "KeyVault_Access_Secret" (fra trin 5 ovenfor).
+- Afsnittet under **Hemmelighed**:
+    - **Navn**: Et hvilket som helst navn, f.eks. "CISecret".
+    - **Beskrivelse**: Alle værdier.
+    - **Hemmelig**: **vault**://<Name of key vault>/<name of secret>> I dette eksempel vil det være "vault://KeyVaultName/SecretName".
+
+Når du har opdateret felterne, skal du vælge **Valider** for at sikre, at commerce application kan få adgang til den.
+
+8. I Commerce på siden **Commerce-parametre** skal du på fanen **Kundeaktiviteter** på oversigtspanelet **Dynamics 365 Customer Insights** indstille **Program-id** til "CI_Access_AppID" (fra trin 1 ovenfor). Vælg navnet på den hemmelighed, der er angivet i trin 7 ovenfor ("CISecret") i **Hemmeligt navn**. Angiv indstillingen **Aktivér Customer Insights** til **Ja**. Hvis opsætningen af en eller anden grund mislykkes, får du vist en fejlmeddelelse, og denne indstilling vil blive angivet til **Nej**. 
+
+Du kan have flere miljøer i Customer Insights, f.eks. test- og produktionsmiljøer. Angiv i feltet **ID for miljøforekomst** det relevante miljø. I feltet **Alternativt kunde-ID** skal du angive den egenskab i Customer Insights, der er knyttet til kundens kontonummer. (Inden for handel er debitorkontonummeret debitor-id'et). De øvrige tre egenskaber er de mål, der vises på kundekortet i klientkartoteket. Du kan vælge op til tre målpunkter, der skal vises på kundekortet. Det er dog ikke et krav, at du vælger nogen målinger. Som tidligere nævnt viser systemet disse værdier først, og derefter viser det værdierne for attributgruppen for klientkartoteket.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

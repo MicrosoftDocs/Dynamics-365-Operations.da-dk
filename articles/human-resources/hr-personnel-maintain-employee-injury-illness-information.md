@@ -2,28 +2,27 @@
 title: Vedligeholde oplysninger om skade og sygdom for medarbejder
 description: Det anbefales at fuldføre opgaveguiden "Konfiguration af skade og sygdom" først, fordi nogle af konfigurationsoplysningerne bruges her.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8cda1617a24e1b15227ff1280e114218069b38a3
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417771"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052811"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Vedligeholde oplysninger om skade og sygdom for medarbejder
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -93,3 +92,6 @@ Denne opgaveregistrering omfatter de grundlæggende trin til oprettelse af en sk
 36. Klik på Gem.
     * Sagsstatus kan altid opdateres.  Indstil sagen til Igangværende, hvis behandlingen af en skade eller sygdom er i gang.  Når du lukker hændelsen, kan du kun tilføje eller fjerne omkostninger, behandlinger eller registreringer, der er knyttet til hændelsen.  Hvis du vil ændre andre oplysninger, skal du genåbne sagen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

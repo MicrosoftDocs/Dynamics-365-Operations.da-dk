@@ -2,16 +2,13 @@
 title: Styring af attributter og attributgrupper
 description: I dette emne beskrives, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727648"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Styring af attributter og attributgrupper
 
@@ -46,7 +43,7 @@ Et typisk tv-produkt kan f.eks. have følgende attributter.
 |            | Sammensat inputs         | 0-10                        | 2             |
 |            | Komponent-inputs         | 0-10                        | 1             |
 | LCD        | 3D-klar                 | Ja eller Nej                   | Ja           |
-|            | 3D-aktiveret               | Ja eller Nej                   | Nr.            |
+|            | 3D-aktiveret               | Ja eller Nej                   | Nej            |
 | Plasma     | Driftstemperatur fra      | 32-110 grader              | 32            |
 |            | Driftstemperatur til        | 32-110 grader              | 100           |
 | Projection | Garanti på projektionsrør | 6, 12 eller 18 måneder         | 12            |
@@ -73,7 +70,7 @@ Attributterne baseres på *attributtyper*. Attributtypen identificerer den type 
     - Navngiv én attributtype **Linseform**, og tilføj følgende værdier: **Ellipse**, **Firkant** og **Rektangel**.
     - Navngiv den anden attributtype **Solbrillemærke**, og tilføj følgende værdier: **Ray ban**, **Aviator** og **Oakley**.
 
-![Attributtyper](media/AttributeType.png)
+![Attributtyper.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Konfigurer en attribut
 
@@ -82,7 +79,7 @@ Attributterne baseres på *attributtyper*. Attributtypen identificerer den type 
 3. Opret en attribut med navnet **Linse**.
 4. Indstil feltet **Attributtype** til **Linseform**.
 
-![Egenskaber](media/Attribute.png)
+![attributter.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attributmetadata
 
@@ -104,7 +101,7 @@ Her er de resterende indstillinger for attributmetadata på siden **Attributter*
 
 Disse indstillinger var oprindeligt beregnet til at forbedre online storefrontens søgefunktion. Selvom Commerce ikke som standard indeholder online storefronten, indeholder det SDK'et (Software Development Kit) til eCommerce-publicering. Kunder kan bruge dette SDK til at placere produkter i et søgeindeks efter eget valg. Selvom produktdataene er importeret, skal kunder stadig kunne skelne søgbare data, data, der kan forespørges på, osv. På denne måde kan de opbygge et optimalt indeks for at sikre, at de kun indekserer attributter, der *efter deres opfattelse* der skal indekseres.
 
-Du kan finde oplysninger om formålet med disse resterende indstillinger under [Oversigt over søgeskemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Du kan finde oplysninger om formålet med disse resterende indstillinger under [Oversigt over søgeskemaet i SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Filterindstillinger for attributter
 
@@ -137,7 +134,7 @@ Siden **Visningsindstillinger for filter** indeholder følgende felter:
     - 200 – 500
     - 500 eller derover
 
-![Filterindstillinger for attribut](media/AttributeFilterSettings.PNG)
+![Filterindstillinger for attribut.](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Attributgrupper
 
@@ -145,7 +142,7 @@ Når attributter er defineret, kan de tildeles til attributgrupper. En *attribut
 
 Du kan også angive standardværdier for attributter, der indgår i en attributgruppe. For eksempel kan du føje en attribut for farve til en attributgruppe og vælge **Blå** som standardattributværdien. I dette tilfælde, når attributgruppen føjes til et produkt, der omfatter farve, som en af attributterne, vises **Blå** som standardfarven for det pågældende produkt.
 
-![Attributgrupper](media/AttributeGroup.png)
+![Attributgrupper.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Oprette en ny attributgruppe
 
@@ -158,7 +155,7 @@ Du kan også angive standardværdier for attributter, der indgår i en attributg
 
 En eller flere attributgrupper kan knyttes til kategorinoder i følgende typer kategorihierarkier: Commerce-produkthierarki, kategorihierarki for kanalnavigation og supplerende produktkategorihierarki. Når produkter derefter kategoriseres, arver de de attributter, der indgår i attributgrupperne.
 
-![Produkthierarki – produktattributgrupper](media/AGRetailProdHierarchy.PNG)
+![Produkthierarki – produktattributgrupper.](media/AGRetailProdHierarchy.PNG)
 
 Følg disse trin for at tildele attributgrupper til kategorierne i Commerce-produkthierarkiet.
 
@@ -203,7 +200,7 @@ En eller flere attributgrupper kan knyttes til en eller flere butikker i butikhi
     3. Vælg kategorinoden **Modetilbehør**, vælg kategorien **Moderigtige solbriller**, og vælg derefter **Medtag attribut** i oversigtspanelet **Kanalproduktattributter for hver attribut**.
     4. Vælg kategorinoden **Herretøj**, vælg kategorien **Bukser**, og vælg derefter **Medtag attribut** i oversigtspanelet **Kanalproduktattributter for hver attribut**.
 
-![Kanalkategorier og produktattributter – Attributgrupper](media/CCPAttrGrp.png)
+![Kanalkategorier og produktattributter – Attributgrupper.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Tilsidesætte attributværdier
 
@@ -217,7 +214,7 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 4. Vælg det påkrævede produkt i gitteret. Vælg derefter **Produktattributter** i gruppen **Konfigurer** under fanen **Produkt** i handlingsruden.
 5. Vælg en attribut i venstre rude, og opdater derefter dens værdi i højre rude.
 
-![Siden Produktdetaljer – produktattributgrupper](media/ProdDetailsProdAttrValues.png)
+![Siden Produktdetaljer – produktattributgrupper.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Tilsidesætte attributværdierne for produkter i et katalog
 
@@ -236,7 +233,7 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
     > [!NOTE]
     > Hvis der er oprettet delte produktmedier og delte produktattributter, gælder de for alle produkter.
 
-![Attributgrupper for katalogprodukt](media/CatalogProdAttrValues.png)
+![Attributgrupper for katalogprodukt.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Tilsidesætte attributværdierne for produkter i en kanal
 
@@ -257,3 +254,6 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 
     > [!NOTE]
     > Hvis der er oprettet delte produktmedier og delte produktattributter, gælder de for alle produkter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

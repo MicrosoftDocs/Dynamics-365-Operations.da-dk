@@ -2,28 +2,25 @@
 title: Annullere en returordre
 description: Du kan annullere en returordre i stedet for at slette den, hvis du vil gemme en registrering af den planlagte returnering.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 496608dc0175dd9f396b6b135cc8f7d692b4d6c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f564f18f7748401246dcf33c474265e38ab9894
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424417"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838951"
 ---
 # <a name="cancel-a-return-order"></a>Annullere en returordre 
 
@@ -49,3 +46,6 @@ Du kan annullere en returordre i stedet for at slette den, hvis du vil gemme en 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurere regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2ac8dc8787ab0bdb796ec849f9ede3f697b09680
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017887"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193638"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
@@ -88,7 +86,7 @@ Før du bruger funktionen til regnskabsintegration, skal du konfigurere følgend
 
         **Eksempler**
 
-        |   | Formater | Eksempel |
+        | Parameter  | Formater | Eksempel |
         |---|--------|---------|
         | **Indstillinger for momssats** | værdi : VATrate | 1 : 2000, 2 : 1800 |
         | **Tilknytning af momskoder** | VATcode : værdi | vat20 : 1, vat18 : 2 |
@@ -225,3 +223,6 @@ For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du ti
     1. Vælg det layout, der skal opdateres.
     2. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
     3. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

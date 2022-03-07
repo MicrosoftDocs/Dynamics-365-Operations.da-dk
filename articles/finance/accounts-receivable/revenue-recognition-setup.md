@@ -2,7 +2,7 @@
 title: Opsætning af Indtægtsføring
 description: Dette emne beskriver opsætningsindstillingerne for Indtægtsføring og deres konsekvenser.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867214"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345620"
 ---
 # <a name="revenue-recognition-setup"></a>Opsætning af Indtægtsføring
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "7867214"
 Der er blevet tilføjet et nyt **Indtægtsføring**-modul, som indeholder menupunkter for alle de opsætninger, der kræves. Dette emne beskriver opsætningsindstillingerne og deres konsekvenser.
 
 > [!NOTE]
-> Funktionen Indtægtsføring er nu aktiveret som standard via Funktionsstyring. Hvis din organisation ikke bruger denne funktion, kan du slå den fra i arbejdsområdet **Funktionsstyring**.
->
-> Indtægtsføring, herunder bundtfunktionalitet, understøttes ikke i Commerce-kanaler (e-handel, POS og callcenter). Varer, der er konfigureret til indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der blev oprettet i Commerce-kanaler.
+> Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
+
+> Indtægtsføring, herunder bundtfunktionalitet, understøttes ikke til brug i handelskanaler (e-handel, POS, callcenter). Varer, der er konfigureret med indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der er oprettet i Commerce-kanaler.
 
 Modulet **Indtægtsføring** har følgende opsætningsindstillinger:
 
@@ -40,16 +40,12 @@ Modulet **Indtægtsføring** har følgende opsætningsindstillinger:
     - Varegrupper og frigivne produkter
     - Definere indtægtstidsplan
     - Definere indtægtspris
-    - Opsætning af lager
 
-        - Definere indtægtstidsplan
-        - Definere indtægtspris
+        - Posteringsprofiler
+        - Bundter
 
-    - Posteringsprofiler
-    - Bundter
-
-        - Bundtkomponenter
-        - Bundtvare
+    - Bundtkomponenter
+    - Bundtvare
 
 - Opsætning af Projekt
 
@@ -61,7 +57,7 @@ Det første scenario forekommer, efter at alle de kontraktmæssige forpligtelser
 
 Det andet scenarie forekommer, når der oprettes en kladde, efter at omfordelingen finder sted. Der foretages en omfordeling, når en salgsordrelinje føjes til en tidligere faktureret salgsordre, eller når der oprettes en ny salgsordre, som indeholder en linje, der er en del af den oprindelige kontrakt. Hvis en faktura blev bogført, før den nye salgsordrelinje tilføjes, skal der oprettes en korrigerende regnskabspost for den bogførte debitorfaktura.
 
-Kladden konfigureres på siden **Kladdenavne** (**Indtægtsføring \> Opsætning \> Kladdenavne**). Kladdetypen skal være angivet til **Indtægtsføring**. 
+Kladden konfigureres på siden **Kladdenavne** (**Indtægtsføring \> Opsætning \> Kladdenavne**). Kladdetypen skal være angivet til **Indtægtsføring**. Indtægtsføringskladden giver dig mulighed for at vælge det posteringslag, der skal bogføres på.
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametre for indtægtsføring
 
@@ -95,27 +91,20 @@ Angiv beskrivende værdier i felterne **Indtægtstidsplan** og **Beskrivelse**. 
 - **Automatiske kontraktvilkår** – Markér dette afkrydsningsfelt, hvis kontraktens start-og slutdato skal angives automatisk. Disse datoer angives automatisk for frigivne produkter af indtægtstypen **Support efter kontrakt**. Kontraktens startdato angives automatisk til salgsordrelinjens ønskede afsendelsesdato, og kontraktens slutdato angives automatisk til startdatoen plus det antal måneder eller forekomster, der er defineret i opsætningen af indtægtstidsplanen. Produktet på salgsordrelinjen er f.eks. for en garanti på ét år. Standardtidsplanen for indtægt er **12M** (12 måneder), og afkrydsningsfeltet **Automatiske kontraktvilkår** er markeret for denne indtægtstidsplan. Hvis salgsordrelinjen har den ønskede afsendelsesdato d. 16. december, 2019, er standardkontraktens startdato 16. december 2019, og standardkontraktens slutdato er 15. december 2020.
 - **Indregningsgrundlag** – Indregningsgrundlaget bestemmer, hvordan indtægtsprisen fordeles hen over forekomsterne.
 
-    - **Månedligt efter dage** – beløbet fordeles på grundlag af de faktiske dage i hver kalendermåned.
+    - **Månedligt efter dato** – beløbet fordeles på grundlag af de faktiske dage i hver måned.
     - **Månedligt** – Beløbet fordeles ligeligt mellem det antal måneder, der er defineret i forekomsterne.
     - **Forekomster** – Beløbet fordeles ligeligt på tværs af forekomsterne, men det kan inkludere en ekstra periode, hvis du vælger **Faktisk startdato** som registreringsprincip.
-    - **Regnskabsperiode efter dage** – beløbet fordeles på grundlag af de faktiske dage i hver regnskabsperiode. 
 
-    Resultaterne af **Månedligt efter dage** og **Regnskabsperiode efter dage** er de samme, når regnskabsperioderne følger kalendermånederne. Den eneste undtagelse er, når registreringsprincippet er angivet til **Afslutning af måned/periode**, og felterne **Kontraktstartdato** og **Slutdato** er tomme på en salgsordrelinje.
-
-- **Registreringsprincip** – Registreringsprincippet bestemmer de datoer, der er angivet i indtægtstidsplanen for fakturaen.
+- **Registreringsprincip** – Registreringsprincippet bestemmer de standarddatoer, der er angivet i indtægtstidsplanen for fakturaen.
 
     - **Faktisk startdato** – Tidsplanen oprettes ved hjælp af kontraktens startdato (for \[PCS\]-varer (Support efter kontrakt)), eller fakturadatoen (for vigtige og mindre vigtige varer).
-    - **1. dage i måneden/perioden** – Datoen på den første linje i tidsplanen er kontraktens startdato (eller fakturadatoen). Alle efterfølgende linjer i tidsplanen oprettes dog for den første i måneden eller regnskabsperioden.
+    - **Den 1. i måneden** – Datoen på den første linje i tidsplanen er kontraktens startdato (eller fakturadatoen). Alle efterfølgende linjer i tidsplanen oprettes dog for den første i måneden.
     - **Midt i måneden** – Datoen på den første linje i tidsplanen afhænger af fakturadatoen. Hvis fakturaen bogføres den første til den 15. i måneden, oprettes indtægtstidsplanen ved hjælp af den første dag i måneden. Hvis fakturaen bogføres den 16. i måneden eller senere, oprettes indtægtstidsplanen ved hjælp af den første dag i den næste måned.
+    - **D. 1. i næste måned** – Datoen i tidsplanen er den første dato i næste måned.
 
-        **Midt i måneden** kan ikke vælges, hvis grundlaget for registrering er angivet til **Regnskabsperiode efter dage**.
+Vælg knappen **Oplysninger om indtægtstidsplan** for at få vist de generelle perioder og de procentdele, der registreres i hver periode. Værdien for **Registrer procent** opdeles som standard ligeligt over antallet af perioder. Hvis registreringsgrundlaget er angivet til enten **Månedligt** eller **Forekomster**, kan registreringsprocenten blive ændret. Når du ændrer registreringsprocenten, får du besked om, at totalen ikke er lig med 100 procent. Hvis du modtager meddelelsen, kan du fortsætte med at redigere linjer. Den samlede procentdel skal dog være lig med 100, før du lukker siden.
 
-    - **1. i dag i næste måned/periode** – Den dato, som tidsplanen starter på, er den første dato i næste måned eller regnskabsperiode.
-    - **Slut på måneden/perioden** – Datoen på den første linje i tidsplanen er kontraktens startdato (eller fakturadatoen). Alle efterfølgende linjer i tidsplanen oprettes dog for den sidste i måneden eller regnskabsperioden. 
-
-Vælg knappen **Oplysninger om indtægtstidsplan** for at få vist de generelle perioder og de procentdele, der registreres i hver periode. Værdien for **Registrer procent** opdeles som standard ligeligt over antallet af perioder. Hvis registreringsgrundlaget er indstillet til **Månedligt**, kan registreringsprocenten blive ændret. Når du ændrer registreringsprocenten, får du besked om, at totalen ikke er lig med 100 procent. Hvis du modtager denne meddelelse, kan du fortsætte med at redigere linjer. Den samlede procentdel skal dog være lig med 100, før du lukker siden.
-
-[![Oplysninger om indtægtstidsplan.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
+[![Oplysninger om indtægtstidsplan.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Opsætning af lager
 

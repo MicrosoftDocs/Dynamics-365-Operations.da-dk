@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 19931
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ccd613b4118bc7bada51fd8da84eb89b568c37
-ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
+ms.openlocfilehash: 3ff9e61b03fcef59bad11ccb91ff33a65f9095b7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665498"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248866"
 ---
 # <a name="titres-de-recette-in-the-public-sector-in-france"></a>Titres de recette i den offentlige sektor i Frankrig
 
@@ -78,3 +77,6 @@ Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

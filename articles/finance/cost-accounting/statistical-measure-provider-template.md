@@ -2,11 +2,9 @@
 title: Levere skabeloner for statistiske dimensionsmedlemmer og målinger
 description: Dette emne indeholder oplysninger om skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger. Statistiske dimensionsmedlemmer kan bruges som fordelingsbasis i politikker som f.eks. omkostningsdistribution og omkostningsfordeling. De kan også bruges til at rapportere forbrug af ikke-pengemæssige omkostninger.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 330b7dfd3937d0d7c4a394b55972d75e876aea17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969447"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833060"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Levere skabeloner for statistiske dimensionsmedlemmer og målinger
 
@@ -162,7 +160,7 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende sta
 
 **Statistiske poster**
 
-| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |  Beskrivelse        | Størrelsesorden |
+| Omkostningsobjekt |  Betegnelse  | Regnskabsdato | Statistisk dimensionsmedlem |  Betegnelse        | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Human Resources | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 1,00      |
 | CC002       | FI | 31-01-2017      | Fuldtidsansatte                         | Fuldtidsmedarbejdere | 2.00      |
@@ -328,7 +326,7 @@ Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Admin
 
 **Statistiske poster**
 
-| Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |      Beskrivelse                   | Størrelsesorden  |
+| Omkostningsobjekt | Betegnelse | Regnskabsdato | Statistisk dimensionsmedlem |      Betegnelse                   | Størrelsesorden  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Human Resources | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00   |
@@ -336,12 +334,15 @@ Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Admin
 
 Hvis elektricitetens foruddefinerede fordelingsbasis for dimensionsmedlemmer tildeles som en fordelingsbasis i en regel til fordeling af omkostninger, fordeles omkostningerne ved hjælp af følgende fordelingsfaktor.
 
-| Omkostningsobjekt |    | Størrelsesorden | Fordelingsfaktor          |
-|-------------|----|-----------|----------------------------|
-| CC001       | Human Resources | 2,450.00  | (2.450 ÷ 21.550) × beløb  |
-| CC002       | FI | 4,100.00  | (4.100 ÷ 21.550) × beløb  |
-| CC003       | LO | 15.000,00 | (15.000 ÷ 21.550) × beløb |
+| Omkostningsobjekt | Betegnelse   | Størrelsesorden | Fordelingsfaktor          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | HR            | 2,450.00  | (2.450 ÷ 21.550) × beløb  |
+| CC002       | FI            | 4,100.00  | (4.100 ÷ 21.550) × beløb  |
+| CC003       | LO            | 15.000,00 | (15.000 ÷ 21.550) × beløb |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Fordelingsgrundlag](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

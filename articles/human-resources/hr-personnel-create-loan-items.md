@@ -2,28 +2,28 @@
 title: Oprettelse af udlånsemner
 description: Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, som f.eks. telefoner eller computere, som virksomheden udlåner til arbejdere.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8317a2fbe9d857ed3824631241b99c333b6dc4e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 28fb201f7951384d847058b05668a7f3e366700a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417801"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800231"
 ---
 # <a name="create-loan-items"></a>Oprettelse af udlånsemner
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -31,7 +31,7 @@ Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, so
 
 
 ## <a name="create-loan-types"></a>Opret udlånstyper
-1. Gå til Personale > Arbejdere > Udlånsemner > Udlånstyper.
+1. Gå til Human Resources > Arbejdere > Udlånsemner > Udlånstyper.
 2. Klik på Ny.
 3. Indtast en værdi i feltet Udlånstype.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -41,7 +41,7 @@ Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, so
 8. Opdater siden.
 
 ## <a name="create-loan-items"></a>Opret Udlånsemner
-1. Gå til Personale > Arbejdere > Udlånsemner > Udlånsemner.
+1. Gå til Human Resources > Arbejdere > Udlånsemner > Udlånsemner.
 2. Klik på Opret udlånsemner.
 3. I feltet Antal. skal du angive et tal.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -59,3 +59,6 @@ Udlånsemner er poster, der hjælper dig med at holde styr på fysiske emner, so
 14. Klik på OK.
 15. Opdater siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

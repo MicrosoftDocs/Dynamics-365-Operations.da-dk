@@ -2,28 +2,25 @@
 title: Oprette leasingbøger
 description: I dette emne beskrives de oplysninger, der vedligeholdes i leasingkartoteker. Leasingkartoteker indeholder de regnskabspolitikker, der bestemmer, hvordan en leasingaftale redegøres for i systemet.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseBookMaster
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 5894fc96e9b80be61fa57417e083780f617ee06bcdca29aceaf164308d17dcda
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4441758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728811"
 ---
 # <a name="set-up-lease-books"></a>Oprette leasingbøger
 
@@ -53,3 +50,7 @@ Du kan oprette et nyt leasingkartotek ved at følge disse trin.
     | Kortsigtet grænse                     | Angiv det antal måneder, der skal bruges som tærskel for kortfristede leasingaftaler. Hvis leasingperioden er mindre end eller lig med det antal måneder, du angiver her, klassificerer systemet leasingaftalen som en kortfristet leasingaftale, og den udskudte lejebehandling anvendes. |
     | Grænseværdi for lav værdi                      | Angiv et beløb, der skal bruges som en tærskel for leasingaftaler med lav værdi. Hvis aktivets rimelige værdi er mindre end eller lig med den værdi, du angiver her, klassificerer systemet leasingaftalen som en lavværdileasingaftale, og den udskudte lejebehandling anvendes. |
     | Betal til kreditor                            | Angiv denne indstilling til **Ja** for at tillade, at leasingbetalinger bogføres som en faktura til den kreditorkonto, der er angivet for hver leasingaftale. Når en leasingbetaling bogføres, vil kreditorkontoen blive krediteret. Hvis denne indstilling er angivet til **Nej**, krediteres den konto, der er angivet for **Leasingbetaling**-bogføringstypen for siden **Leasingbogføringsparametre** i stedet. |
+    | Leasingkonvention                       | Vælg convention for udfyldningsdatoen for leasingaftalen:<ul><li><b>Ingen</b> – Brug leasingaftalens startdato som startdato.</li><li><b>Fuld måned</b> - Brug den første dag i måneden, hvor startdatoen for leasingaftalen ligger, som startdato.</li></ul><p>Hvis du vælger <b>Ingen</b>, er der en risiko for, at passiv-amortisering og afskrivningsplaner for aktiver periodiseres og bogføres udgifter midt i måneden i stedet for ved udgangen af måneden. Hvis du vælger <b>Fuld måned</b>, sikrer du, at systemet begynder at gøre regnskab for lejen den første dag i måneden, og at hele månedens udgift periodiseres og bogføres den sidste dag i måneden.</p><p><strong>Bemærk:</strong> Funktionen til leasingkonventioner kan aktiveres via Funktionsstyring. I arbejdsområdet i <b>Funktionsstyring</b> skal du finde og vælge den funktion, der hedder <b>Leasingkonvention for leasingfunktionen</b>, og derefter vælge <b>Aktivér nu</b>.</p> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

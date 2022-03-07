@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcb7585d344988e00093231f785c1a746226e4e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f43c0a64e2bfefb7c4ed0e0f07be60e9f5293f8d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441461"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229616"
 ---
 # <a name="sepa-direct-debit-overview"></a>Oversigt over direkte debitering (SEPA)
 
@@ -84,3 +83,6 @@ I henhold til begge SEPA-ordninger til direkte debitering har kunderne visse ref
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

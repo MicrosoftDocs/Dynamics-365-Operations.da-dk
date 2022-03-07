@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 88463
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f64b2bc6c336ba833cbd95f83596fe516bce8b56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 611cd7c46cf160a3e4e2b43acecaacdb6c79b16d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441515"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235903"
 ---
 # <a name="positive-pay-overview"></a>Oversigt over positive betalinger
 
@@ -49,3 +48,6 @@ Yderligere oplysninger finder du i afsnittet [Konfigurer og generer filer til po
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Detailopgørelser
 description: I dette emne beskrives, hvordan opgørelser oprettes og bogføres.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738690"
 ---
 # <a name="retail-statements"></a>Detailopgørelser
 
@@ -34,7 +31,7 @@ I Dynamics 365 Commerce bruges processen til bogføring af opgørelsen til at re
 
 Følgende illustration viser til opgørelsesbogføringsprocessen. I denne proces overføres transaktioner, der er registreret i POS, til klienten ved hjælp af Commerce-planlægger. Når klienten modtager transaktionerne, kan du oprette, beregne og bogføre transaktionsopgørelsen for butikken.
 
-[![Opgørelsesbogføringsproces](./media/retail-statements.png)](./media/retail-statements.png)
+[![Opgørelsesbogføringsproces.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Oprettelse og bogføring af opgørelser
 
@@ -59,7 +56,7 @@ Når du beregner en opgørelse, omfatter beregningen følgende opgaver:
 - Beregn de samlede beløb, der blev tilbudt i de valgte transaktioner. Resultaterne vises i opgørelseslinjerne afhængigt af opgørelsesmetoden:
 
     - Hvis opgørelsesmetoden er **Sum**, oprettes der en linje for hver betalingsmetode i de valgte transaktioner.
-    - Hvis opgørelsesmetoden er **Personale**, oprettes der en linje for hver betalingsmetode i transaktioner, der er udført af den valgte medarbejder.
+    - Hvis opgørelsesmetoden er **Human Resources**, oprettes der en linje for hver betalingsmetode i transaktioner, der er udført af den valgte medarbejder.
     - Hvis opgørelsesmetoden er **POS-klient**, oprettes der en linje for hver betalingsmetode i transaktioner, der blev udført i det valgte register.
     - Hvis opgørelsesmetoden er **Skift**, oprettes der en linje for hver betalingsmetode i transaktioner, der blev udført under et skift.
 
@@ -88,3 +85,6 @@ Når du bogfører en opgørelse, oprettes der salgsordrer og fakturaer for salg 
 - Salg, for hvilket der blev føjet en kunde til transaktionen i POS, genererer separate salgsordrer og fakturaer – én for hver entydig kunde.
 
 Der oprettes automatisk betalingskladder for betalingerne i opgørelsen, og lageret opdateres for POS-butikken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,35 +2,30 @@
 title: Tekstblokmodul
 description: Dette emne omhandler tekstblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9068c35eaeee68f97d81d168983d7281da09491cb0afd70cb8196010ce771b0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723305"
 ---
 # <a name="text-block-module"></a>Tekstblokmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler tekstblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Et tekstblokmodul er et modul, der bruges til at tilføje tekstindhold. Det kan være oplysninger og kampagneindhold.
 
@@ -47,11 +42,11 @@ Tekstblokmoduler kan bruges på følgende måder:
 
 Det følgende billede viser et eksempel på et tekstblokmodul, der bruges på en startside.
 
-![Eksempel på et tekstblokmodul](./media/ecommerce-textblock.PNG)
+![Eksempel på et tekstblokmodul.](./media/ecommerce-textblock.PNG)
 
 ## <a name="text-block-module-properties"></a>Egenskaber for Tekstblokmodul
 
-| Egenskabsbetegnelse     | Værdi                                            | Beskrivende tekst |
+| Egenskabsbetegnelse     | Værdi                                            | Betegnelse |
 |-------------------|--------------------------------------------------|-------------|
 | RTF         | RTF                                        | Afsnitstekst. Nogle grundlæggende RTF-funktioner understøttes, f. eks. fed, understreget og kursiv tekst. |
 | Brugerdefineret klassenavn | Klassenavn for overlappende typografiark (CSS)        | Navnet på en brugerdefineret CSS-klasse, som en udvikler leverer til at formatere dette modul. Klassenavnet skal defineres i temapakken. |
@@ -89,3 +84,6 @@ Hvis du vil føje et tekstblokmodul til en ny side og angive de påkrævede egen
 
 [Videoafspillermodul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

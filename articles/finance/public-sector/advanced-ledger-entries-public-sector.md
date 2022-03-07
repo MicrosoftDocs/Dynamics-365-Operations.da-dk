@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 19511
 ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c79a4b02582151101223a6b5428b714f5492b3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1ad0d8a9137ba295affe3e795aebd62106e643cf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407661"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264086"
 ---
 # <a name="advanced-ledger-entries-in-the-public-sector"></a>Avancerede finansposter i den offentlige sektor
 
@@ -50,3 +49,6 @@ Opret en avanceret finanspost, vælg indstillingen **Tilbageførsel** indstillin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

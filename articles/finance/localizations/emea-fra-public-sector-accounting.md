@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 19621
 ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
 ms.search.region: France
@@ -18,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1775c6a6895ed129bd6d03a91b4e809299c9a2d
-ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
+ms.openlocfilehash: 751da12da1ffb8ff7e691f9fc17bb59185e94cb3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665483"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206068"
 ---
 # <a name="public-sector-accounting-in-france"></a>Regnskab i den offentlige sektor i Frankrig
 
@@ -53,3 +52,6 @@ Yderligere konfigurationstrin for bestemte funktioner er omfattet af artiklen fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

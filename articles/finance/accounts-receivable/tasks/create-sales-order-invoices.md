@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c504ef36f61613c7aa7db5a1e5ddba6e69cd7285
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4d2e1dd552f529d09756c1ddeec39fc54a1f073a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441688"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241580"
 ---
 # <a name="create-sales-order-invoices"></a>Oprette salgsordrefakturaer
 
@@ -68,3 +67,6 @@ Denne opgaveguide beskriver fakturering af en salgsordre, herunder fletning af f
 10. Klik på **Annuller**.
 11. Klik på **Ja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

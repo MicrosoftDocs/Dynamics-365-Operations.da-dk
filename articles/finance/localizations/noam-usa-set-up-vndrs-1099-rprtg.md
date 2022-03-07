@@ -12,7 +12,6 @@ ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: ''
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.tgt_pltfrm: ''
 ms.custom: ''
 ms.search.region: Global
@@ -20,12 +19,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bc3f2cf1aec97fa7bb6505f3be721c56b20e9331
-ms.sourcegitcommit: ffe9ae98b347f78430926ca96c1061f25f698f53
+ms.openlocfilehash: 7780746d5c3c7cbbc49a074bfdc167e6e3724a55
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4407725"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251098"
 ---
 # <a name="set-up-vendors-for-1099-reporting"></a>Konfigurere kreditorer til 1099-rapportering
 
@@ -118,3 +117,6 @@ Systemet evaluerer alle kreditorer, hvor indstillingen **Rapport 1099** er valgt
 
 > [!NOTE]
 > Der er føjet en ny kolonne med navnet **Oprettet af 1099-opdateringsprocessen** til siden **1099-skat transaktioner**. Afkrydsningsfelterne i denne kolonne er markeret for at vise, at den nye opdateringsproces har opdateret 1099-saldoen. Hvis afkrydsningsfeltet for en række ikke er markeret, blev standardfunktionaliteten brugt til at oprette posteringen. Hvis du vil åbne siden **1099-skat transaktioner**, skal du gå til **Kreditor \> Periodiske opgaver \> Kreditorudligning for 1099 \> 1099-kreditor transaktioner**. Du kan også gå til **Kreditor \> Kreditorer \> Alle kreditorer**. Vælg en kreditor, og brug derefter fanen **Kreditor** i handlingsruden til i gruppen **Skatteoplysninger** at vælge **Kreditorudligning for 1099 \> 1099-kreditor transaktioner**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

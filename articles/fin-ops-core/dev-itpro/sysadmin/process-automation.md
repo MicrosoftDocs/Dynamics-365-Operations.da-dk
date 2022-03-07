@@ -2,11 +2,9 @@
 title: Procesautomatisering
 description: Dette emne indeholder oplysninger om, hvordan procesautomatisering tillader enkel planlægning af processer, der køres af batchserveren.
 author: RyanCCarlson2
-manager: tonyafehr
-ms.date: 08/12/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcessScheduleSeries
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 479f621ef05519f4f2c97112a0115dccdbf24c52
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b69fa378539e39053b6f7066ba4b6ae9984157c9bdc4f38b78de4c062c04ad09
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746531"
 ---
 # <a name="process-automation"></a>Procesautomatisering
 
@@ -32,13 +30,13 @@ Procesautomatisering tillader enkel planlægning af processer, der køres af bat
 
 Den centrale administrationsside for alle procesautomatiseringer findes i modulet Systemadministration under menuen **Konfiguration** . På denne side vises en liste over alle automatiserede processer (serier), der er oprettet i systemet. Du kan også tilføje nye procesautomatiseringer direkte fra denne side. Når en serie er konfigureret, kan du administrere hver serie på denne liste. Du kan vælge at redigere hele serien, slette den, få vist alle forekomster i en listevisning eller deaktivere serien, hvis du vil stoppe det planlagte arbejde i et stykke tid. 
 
-Processer, der er deaktiveret i funktionsstyringen, vises ikke, når funktionen er deaktiveret. Derudover vil planlægningsprogrammet for procesautomatisering ikke planlægge nogen forekomster eller baggrundsprocesser for en deaktiveret funktion. Hvis du genaktiverer funktionen, vil eventuelle planlagte forekomster eller baggrundsprocesser fra tidligere straks blive kørt.
+Processer, der er deaktiveret i funktionsstyringen, vises ikke, når funktionen er deaktiveret. Derudover vil planlægningsprogrammet for procesautomatisering ikke planlægge nogen forekomster eller baggrundsprocesser for en deaktiveret funktion. Hvis du genaktiverer funktionen, vil eventuelle planlagte forekomster eller baggrundsprocesser fra tidligere straks blive kørt. Planlægningsprogrammet for procesautomatisering benytter systembatchjobbet **Systemjob til forespørgsler på procesautomatisering** til at køre. Jobbet bør ikke tilpasses eller ændres på noget tidspunkt. 
 
 ## <a name="calendar-view"></a>Kalendervisning
 
 En af de vigtigste fordele ved procesautomatisering er muligheden for at se det planlagte arbejde i en simpel kalendervisning.  Du kan bruge denne visning til at få vist arbejde for en uge ad gangen. Du kan se denne visning i højre side af siden **Procesautomatisering**. Den vil blive udfyldt med det planlagte arbejde for den valgte serie. 
 
-[![Kalender for procesautomatisering](./media/CalendarView2.png)](./media/CalendarView2.png)
+[![Kalender for procesautomatisering.](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## <a name="occurrence-changes"></a>Forekomster ændres
 
@@ -47,3 +45,6 @@ Hver forekomst kan redigeres uden at påvirke andre forekomster, der er definere
 ## <a name="developer-documentation"></a>Udviklerdokumentation
 
 Procesautomatiseringsstrukturen giver udviklere mulighed for at udvide procesautomatiseringsstrukturen. Dokumentation til [procesautomatiseringsstrukturen](../process-automation/process-automation-framework.md) indeholder oplysninger om, hvordan du kan oprette brugerdefinerede processer, som du skal køre på den batchserver, der er planlagt med guiden til procesautomatisering, og som automatisk vises i kalendervisningen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

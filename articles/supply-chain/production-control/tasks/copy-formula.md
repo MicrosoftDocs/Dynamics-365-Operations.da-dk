@@ -2,26 +2,23 @@
 title: Kopiere en formel
 description: Denne fremgangsmåde fokuserer på at oprette en formel, der indeholder de samme ingredienser som en eksisterende formel, men med mindre forskelle.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26524f886a8af545869bacef4d57bfc14c0ed225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 611ebb79fb77bde13a3dd59317662fddbfc1a7e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424355"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829252"
 ---
 # <a name="copy-a-formula"></a>Kopiere en formel
 
@@ -65,3 +62,6 @@ Denne fremgangsmåde fokuserer på at oprette en formel, der indeholder de samme
 5. Klik på Vælg.
 6. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

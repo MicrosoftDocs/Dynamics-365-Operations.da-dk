@@ -2,16 +2,13 @@
 title: Sikkerhedsmargener
 description: Dette emne beskriver, hvordan sikkerhedsmargener kan bruges sammen med tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424501"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074961"
 ---
 # <a name="safety-margins"></a>Sikkerhedsmargener
 
@@ -44,7 +41,7 @@ Der er tre typer sikkerhedsmargener:
 
 I følgende illustration vises, hvordan disse sikkerhedsmargener anvendes over tid.
 
-![Sikkerhedsmargener](media/safety-margins-1.png)
+![Sikkerhedsmargener.](media/safety-margins-1.png)
 
 Alle margener defineres i dage. Standardværdieb på *0* (nul) angiver, at ingen standardmargen bruges. Hvis du konfigurerer flere margener, vil de alle blive føjet til den samlede tid fra forsyningens *ordredato* til *behovsdatoen*. En opsætning har f.eks. ikke en leveringstid, og alle tre margentyper er angivet til én dag. I dette tilfælde vil der være tre dage mellem forsyningens ordredato og behovsdatoen, så hvis ordredatoen er 1. juli, vil behovsdatoen være den 4.
 
@@ -54,7 +51,7 @@ Modtagelsesmargen er sandsynligvis den mest anvendte af de tre sikkerhedsmargene
 
 I følgende illustration fremhæves modtagelsesmargenen.
 
-![Modtagelsesmargen](media/safety-margins-2.png)
+![Modtagelsesmargen.](media/safety-margins-2.png)
 
 Modtagelsesmargenen bruges typisk som en buffer til at sikre tid nok til lagerregistrering eller andre tidskrævende processer, der ikke medtages som en del af den generelle leveringstid i systemet. I forbindelse med indkøb er det en fordel, at *leveringsdatoen* for indkøbsordren flyttes tilsvarende. Hvis du øger leveringstiden i stedet for at bruge en sikkerhedsmargen, bliver leverandøren stadig bedt om at levere i sidste øjeblik.
 
@@ -64,23 +61,17 @@ Bemærk, at der ikke anvendes modtagelsesmargen, når der bruges en disponibel l
 
 ### <a name="reorder-margin"></a>Bestillingsmargen
 
-> [!NOTE]
-> **Kommer snart:** Denne funktion understøttes endnu ikke for planlægningsoptimering. Indtil den understøttes, behandles alle de værdier, der er angivet for **Bestillingsmargen tilføjet til varens leveringstid**, som *0* (nul).
-
 I følgende illustration fremhæves bestillingsmargen.
 
-![Bestillingsmargen](media/safety-margins-3.png)
+![Bestillingsmargen.](media/safety-margins-3.png)
 
 Bestillingsmargen lægges til før varens leveringstid for alle ordreforslag under behovsplanlægning. Derfor sikrer den, at der er mere tid til at afgive en forsyningsordre. Denne margen bruges typisk som en buffer til at sikre tid nok til godkendelsesprocesser eller andre interne processer, der er nødvendige i forbindelse med oprettelsen af forsyningsordrer. Bestillingsmargenen sættes mellem forsyningens *ordredato* og *startdato*.
 
 ### <a name="issue-margin"></a>Afgangsmargen
 
-> [!NOTE]
-> **Kommer snart:** Denne funktion understøttes endnu ikke for planlægningsoptimering. Indtil den understøttes, behandles alle de værdier, der er angivet for **Afgangsmargen trukket fra behovsdato**, som *0* (nul).
-
 I følgende illustration fremhæves afgangsmargen.
 
-![Afgangsmargen](media/safety-margins-4.png)
+![Afgangsmargen.](media/safety-margins-4.png)
 
 Afgangsmargenen trækkes fra behovsdatoen ved varedisponering. Det er med til at sikre, at du har tid til at reagere på og afsende indgående behovsordrer. Denne margen bruges typisk som en buffer til at sikre tid til forsendelse og relaterede udgående lagerprocesser.
 
@@ -90,7 +81,7 @@ Bemærk, at de relaterede udbud og efterspørgselskrav ikke stemmer overens, nå
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Slå sikkerhedsmargener til i Funktionsstyring
 
-Før du kan bruge denne funktion sammen med Planlægningsoptimering, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Før du kan bruge denne funktion sammen med Planlægningsoptimering, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
 - **Modul:** _Varedisponering_
 - **Funktionsnavn:** _Margener for planlægningsoptimering_
@@ -168,7 +159,7 @@ I følgende illustration vises en matrix, der opsummerer, hvilke kalendere der a
 - **Lagersted (WH):** gul
 - **Leverandør (V):** blå
 
-[![Oversigtsmatrix for kalenderopsætning](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Oversigtsmatrix for kalenderopsætning.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Beregning af forsinkelser
 
@@ -176,10 +167,13 @@ Alle tre typer sikkerhedsmargener medtages, når systemet bestemmer, om en ordre
 
 En vare har f.eks. en leveringstid på én dag og en modtagelsesmargen på tre dage. En salgsordre for denne vare angives som påkrævet i dag. I dette tilfælde beregnes forsinkelsen som *leveringstid* + *modtagelsesmargen* = fire dage. Hvis dags dato f.eks. er 14. august, skaber de fire dages forsinkelse en levering den 18. august. Følgende illustration viser dette eksempel.
 
-![Eksempelberegning af forsinkelse](media/safety-margins-delays.png)
+![Eksempelberegning af forsinkelse.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Kom i gang med planlægningsoptimering](get-started.md)
+[Start her med planlægningsoptimering](get-started.md)
 
 [Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

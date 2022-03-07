@@ -1,12 +1,10 @@
 ---
 title: Budgetter, arbejdsordrer og projekter
 description: Dette emne forklarer integrering af budgetter og arbejdsordrer i modulet Projektstyring og regnskab i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021012"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345422"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Budgetter, arbejdsordrer og projekter
 
@@ -60,13 +58,13 @@ Nogle af disse oplysninger findes muligvis ikke på en arbejdsordre. Derfor sker
 
 Se f.eks. følgende illustration: På grund af den måde, hvorpå **lastbilsmotorens** aktivtype er konfigureret, vil alle de arbejdsordrer, der oprettes med **lastbilmotorens** aktivtype, være et underprojekt med projekt-id 000186.
 
-![Figur 1](media/01-integration-to-pma.png)
+![Figur 1.](media/01-integration-to-pma.png)
 
 Formålet med projekt-id'et på arbejdsordrejobbet og det relaterede aktivitetsnummer er at spore omkostninger, der er relateret til arbejdsordrejobbet, og det aktiv, der er valgt på det, i modulet **Projektstyring og regnskab**. (Hvis du vil have vist projekt-id og aktivitetsnummer, skal du vælge **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** og derefter vælge arbejdsordren. I oversigtspanelet **Linjedetaljer** viser feltet **Projekt-id** projekt-id'et, og feltet **Aktivitetsnummer** viser aktivitetsnummeret). Du kan finde flere oplysninger om omkostningsstyring i Styring af aktiver ved at se [Omkostnings- og datokontrol](../controlling-and-reporting/cost-and-date-control.md).
 
 Følgende illustration viser en grafisk oversigt over projekter for arbejdsordrer og relaterede projektaktiviteter.
 
-![Figur 2](media/02-integration-to-pma.png)
+![Figur 2.](media/02-integration-to-pma.png)
 
 Når et nyt arbejdsordrejob oprettes på en arbejdsordre, oprettes der automatisk et arbejdsordreprojekt for jobbet. De økonomiske dimensioner for aktivet, der er tilknyttet arbejdsordrejobbet, overføres automatisk til arbejdsordreprojektet.
 
@@ -88,15 +86,18 @@ For at hjælpe med at garantere at livscyklusser for arbejdsordrer og relaterede
 
 Følgende illustrationer viser tilknytningerne mellem projektgrupper for arbejdsordrer, relaterede projekttyper, projektstadier og livscyklustilstande for arbejdsordrer.
 
-![Figur 3](media/03-integration-to-pma.png)
+![Figur 3.](media/03-integration-to-pma.png)
 
-![Figur 4](media/04-integration-to-pma.png)
+![Figur 4.](media/04-integration-to-pma.png)
 
-![Figur 5](media/05-integration-to-pma.png)
+![Figur 5.](media/05-integration-to-pma.png)
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer arbejdsordreprojekter ved at se [Opsætning af arbejdsordreprojekt](../setup-for-work-orders/work-order-project-setup.md). Du kan finde flere oplysninger om, hvordan du opretter livscyklustilstande for arbejdsordrer i [Livscyklustilstande for arbejdsordre](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 I følgende illustration vises en grafisk oversigt over de forskellige projekter, der oprettes i modulet **Styring af aktiver**, for at aktivere integration med modulet **Projektstyring og regnskab**. Den viser også de arbejdsprocesser, som projekterne er relateret til.
 
-![Figur 6](media/06-integration-to-pma.png)
+![Figur 6.](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

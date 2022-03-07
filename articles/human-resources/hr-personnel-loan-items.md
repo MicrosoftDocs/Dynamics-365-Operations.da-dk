@@ -2,7 +2,7 @@
 title: Administrere udstyr, der er udlånt til arbejdere
 description: Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,23 @@ ms.technology: ''
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5915df388da7ce8b90cdcb0e859268c00003110c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5517ee621f1c41b6348dc965e8846d677aa1bb56
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417793"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464808"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Administrere udstyr, der er udlånt til arbejdere
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere. 
 
@@ -51,7 +53,10 @@ Hvis et emne bliver beskadiget eller mistes, skal du angive en fiktiv tilbagelev
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Personale](index.md)
+[Human Resources](index.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Forpligtelser i den offentlige sektor i Frankrig
 description: Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetControlConfiguration, PurchAgreement, PurchCommitment_PSN, PurchTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 19531
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c88c75160ab74a5e7a0d91b67ce04121f9313ce5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc5e8a854c8735ac9b5fbb42513c9616fbc71d62
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407677"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188372"
 ---
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 
@@ -73,10 +70,12 @@ Forpligtelser skal lukkes manuelt.
 
 **Vigtigt**! Når du vælger de forpligtelser, som du vil lukke, er det vigtigt, at du ikke vælger de forpligtelser, som du allerede har oprettet for det nye regnskabsår. Lukning af en forpligtelseslinje kan ikke fortrydes. Hvis du lukker en forpligtelseslinje ved en fejltagelse, skal du oprette en ny forpligtelse for at gendanne budgetreservationen. Hvis du vil vide mere om årsafslutningsprocessen, skal du se under [Årsafslutningen i den offentlige sektor](../public-sector/year-end-processing-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Regnskab i den offentlige sektor i Frankrig](emea-fra-public-sector-accounting.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

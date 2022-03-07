@@ -2,26 +2,23 @@
 title: Råbalance med detaljeret transaktionsrapport
 description: I dette emne beskrives standardrapporten til råbalancer. Her beskrives også de komponenter, der er knyttet til denne rapport, og hvordan du kan redigere rapporten, så den passer til virksomhedens behov.
 author: v-kiarnd
-manager: AnnBe
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 76b0560499532eb3e97b03a9e797a9168ebcbcdc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a941b3e2e9b0fa50b373974c9ce88604921dfd0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407668"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839717"
 ---
 # <a name="trial-balance-with-transactional-detail-report"></a>Råbalance med detaljeret transaktionsrapport
 
@@ -203,3 +200,6 @@ Afhængigt af transaktionstypen, f.eks. en avanceret finanspost (ALE) eller en i
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

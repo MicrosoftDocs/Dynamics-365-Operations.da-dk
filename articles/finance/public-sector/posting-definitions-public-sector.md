@@ -2,28 +2,25 @@
 title: Bogføringsdefinitioner i den offentlige sektor
 description: Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 27271
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bb46992503013d7c40c2e3ba034ae73bd5988b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af57e73b29728d89d2f7ae6ec16d2e477b7f2ef8d0a0ab00a942d326bca980c0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763060"
 ---
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
@@ -608,8 +605,7 @@ I dette eksempel defineres midler med betegnelsen 601 som klassen **Privat** på
 
 Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst kontodel af udgiftskontostrukturen. Når 601-66100-130- evalueres, bruges der derfor samme finanskonto, beløbet tilbageføres for at afslutte kontoen, og den genererede reguleringspost i finans oprettes.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Kreditorer](../accounts-payable/accounts-payable.md)
 
@@ -623,3 +619,6 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

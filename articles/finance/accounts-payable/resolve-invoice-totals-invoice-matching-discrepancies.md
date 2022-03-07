@@ -2,28 +2,27 @@
 title: Oversigt over løsning af afvigelser under sammenholdelse af fakturatotaler
 description: Du kan bruge matchning af fakturatotaler til at sikre, at de samlede fakturabeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelse.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTotalPriceTolerance
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 63413
+ms.custom:
+- "63413"
+- intro-internal
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf5a48a0f6beafad3c9a657c44079b290a7ebd5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4f15edb0423bba2a6fe01f4b3ef1ba1be4e463d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441511"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985307"
 ---
 # <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>Oversigt over løsning af afvigelser under sammenholdelse af fakturatotaler
 
@@ -44,3 +43,6 @@ Når du har identificeret afvigelse, kan det være nødvendigt at kontakte kredi
 Yderligere oplysninger finder du i [Undersøg/Løs undtagelser](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

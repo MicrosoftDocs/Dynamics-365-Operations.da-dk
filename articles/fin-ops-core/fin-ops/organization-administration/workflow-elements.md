@@ -2,11 +2,9 @@
 title: Arbejdsgangselementer
 description: I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797570"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070444"
 ---
 # <a name="workflow-elements"></a>Arbejdsgangselementer
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang.
 
@@ -62,7 +63,7 @@ En *godkendelsesproces* er en proces, der består af separate trin. På hvert en
 
 En arbejdsgang kan oprettes for at behandle enten dokumenter eller linjeelementerne i et dokument. Du har f.eks. oprettet en godkendelsesarbejdsgang for timesedler. (Vi vil henvise til denne arbejdsproces som *dokumentarbejdsgangen*). Du kan tilføje en *arbejdsgang for linjeelement* til denne dokumentarbejdsgang. Når elementet i linjeelementet køres, sendes hvert linjeelement i dokumentet til behandling. Det kan være, at du vil have alle linjeelementer behandlet af samme arbejdsgang for linjeelement, eller at du vil måske have hvert enkelt linjeelement behandlet af en særskilt arbejdsgang for linjeelement. Antag, at en medarbejder har sendt en timeseddel, der ligner nedenstående figur.
 
-![Arbejdsgang med linjeelementer](./media/workflow_lineitemworkflow.gif)
+![Arbejdsgang med linjeelementer.](./media/workflow_lineitemworkflow.gif)
 
 I dette scenario kan du muligvis oprette følgende arbejdsgange for linjeelementer:
 
@@ -89,3 +90,6 @@ En *parallel aktivitet* er et arbejdsgangselement, der omfatter to eller flere a
 ### <a name="subworkflow"></a>Underarbejdsgang
 
 En *underarbejdsgang* er en arbejdsgang, der køres inden for rammerne af en anden arbejdsgang.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

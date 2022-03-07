@@ -2,37 +2,32 @@
 title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717789"
 ---
-# <a name="buy-box-module"></a>Købefeltmodul
+# <a name="buy-box-module"></a>Boksmodul til køb
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
-
-Termen *købefelt* refererer normalt til det område på en produktdetaljeside, der er "over folden", og som omfatter alle de vigtigste oplysninger, der kræves for at foretage et produktkøb. (et område, der er "over folden", er synligt med det samme, når siden indlæses, så brugerne ikke behøver at rulle ned for at se den).
+Termen *købefelt* refererer normalt til det område på en produktdetaljeside (PDP), der er "over folden", og som omfatter alle de vigtigste oplysninger, der kræves for at foretage et produktkøb. (et område, der er "over folden", er synligt med det samme, når siden indlæses, så brugerne ikke behøver at rulle ned for at se den).
 
 Et købefeltmodul er en særlig container, der omfatter alle de moduler, som vises i købefeltområdet på en side med produktdetaljer.
 
@@ -40,7 +35,7 @@ URL-adressen for siden produktdetaljer indeholder produkt-id'et. Alle de oplysni
 
 Det følgende billede viser et eksempel på et købefeltmodul på en side med produktdetaljer.
 
-![Eksempel på et købefeltmodul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på et købefeltmodul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Egenskaber og pladser i købefeltmodulet 
 
@@ -72,14 +67,16 @@ De følgende indstillinger for købefeltmoduler kan konfigureres under **Indstil
 
 - **Grænse for antal linjevarer i indkøbsvogn** – Denne egenskab bruges tl at angive det maksimale antal af hver vare, der kan føjes til indkøbsvognen. En detailhandler kan f. eks. beslutte, at der kun kan sælges 10 stk. af hvert produkt i en enkelt transaktion.
 - **Lager** – Du finder oplysninger om, hvordan du anvender lagerindstillinger, under [Anvendelse af lagerindstillinger](inventory-settings.md).
-- **Føj produkt til indkøbsvogn** – Denne egenskab bruges til at angive proceduren, når en vare er føjet til indkøbsvognen. De mulige værdier er **Naviger til side for indkøbsvogn**, **Naviger ikke til side for indkøbsvogn** og **Vis besked**. Når værdien er angivet til **Naviger til side for indkøbsvogn**, sendes brugeren til indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Naviger ikke til side for indkøbsvogn**, sendes brugeren ikke til siden med indkøbsvognen, når der er tilføjet en vare. Når værdien er angivet til **Vis besked**, får brugerne vist en bekræftelsesmeddelelse og kan fortsætte med at søge på siden produktdetaljer. 
+- **Tilføj produkt til indkøbsvogn** – Yderligere oplysninger om, hvordan du anvender indstillinger for **Tilføj produkt til indkøbsvogn**, finder du i [Indstillinger for Tilføj produkt til indkøbsvogn](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Udvidelser til definition af købsdåsemoduler under emnet Adventure Works
+
+Det købsboksmodul, som adventure Works-emnet indeholder, har en moduldefinitionsudvidelse, der understøtter implementeringen af et produktspecifikationsmodul i et modul til udvidelse af produktspecifikationer i en PDP-købsboks. Hvis du vil ændre attributter for produktspecifikationer i en PDP-købsboks, skal du føje et produktspecifikationsmodul til modulet i købefeltet.
+
 
 > [!IMPORTANT]
-> Indstillingerne for webstedet **Føj produkt til indkøbskurv** er tilgængelige i Dynamics 365 Commerce version 10.0.11. Hvis du opdaterer fra en ældre version af Dynamics 365 Commerce, skal du opdatere filen appsettings.json manuelt. Oplysninger om opdatering af filen appsettings.json finder du under [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Emnet Adventure Works er tilgængelige pr. Dynamics 365 Commerce version 10.0.20.
 
-Det følgende billede viser et eksempel på en besked med bekræftelse af handlingen "Føjet til indkøbsvogn" på Fabrikam-webstedet.
-
-![Eksempel på et beskedmodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 
@@ -133,6 +130,11 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 
 [Modul til deling på sociale medier](social-share-module.md)
 
+[Tilføj produkt til indstillinger for indkøbsvogn](add-cart-settings.md)
+
 [Beregne lagertilgængelighed for detailkanaler](calculated-inventory-retail-channels.md)
 
 [Opdateringer til SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

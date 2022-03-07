@@ -2,27 +2,24 @@
 title: Automatisere kreditorbetalingsforslag
 description: I dette emne forklares det, hvordan organisationer, der betaler kreditorer i en tilbagevendende tidsplan, kan automatisere processen med at generere kreditorbetalingsforslag.
 author: kweekley
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4441781"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966709"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisere kreditorbetalingsforslag
 
@@ -35,6 +32,9 @@ Organisationer, der betaler kreditorer i en tilbagevendende tidsplan, kan nu aut
 - Hvilken kreditorbetalingskladde de resulterende betalinger gemmes i
 
 Automatiseringer af betalingsforslag bogfører ikke automatisk betalingerne. Du kan derfor fortsætte med at bruge validerings- og arbejdsgangsprocesser, som du i øjeblikket bruger til at godkende de betalinger, der oprettes.
+
+> [!NOTE]
+> Funktionen **Automatisk kreditorbetalingsforslag** skal være aktiveret i Funktionsstyring, før du kan bruge denne funktion. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Definere forekomsten af forslag til kreditorbetalinger
 
@@ -100,11 +100,11 @@ Det anbefales, at du vurderer, om automatiseringen vil være en fordel for din o
 
 Når automatiseringsserien for kreditorbetalingsforslag er oprettet, vises hændelserne for hver betaling i en ugentlig visning af automatiseringsprocesserne. I forbindelse med kreditorbetalinger er den ugentlige visning af procesautomatiseringer føjet til arbejdsområdet for **kreditorbetalinger** og siden **Procesautomatisering**.
 
-[![Ugentlig visning af procesautomatiseringer i arbejdsområdet kreditorbetalinger](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Ugentlig visning af procesautomatiseringer i arbejdsområdet kreditorbetalinger.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Den ugentlige visning af procesautomatiseringer i arbejdsområdet **Kreditorbetalinger** viser kun automatisering af kreditorbetalingsforslag. Den viser alle forekomster af betalinger for den aktuelle uge for alle juridiske enheder, som den bruger, der er logget på, har sikkerhedsrettigheder til. Hvis f.eks. medarbejderen for kreditorbetalinger er ansvarlig for betalinger i USMF- og USSI-virksomhederne, vil de se forekomsterne af automatisering af kreditorbetalingsforslag for disse to virksomheder, men ikke for andre virksomheder.
 
-[![Ugentlig visning af procesautomatiseringer i USMF- og USSI-virksomheder](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Ugentlig visning af procesautomatiseringer i USMF- og USSI-virksomheder.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Hver forekomst viser den virksomhed, som betalingskladden blev eller vil blive oprettet i. Hvis betalinger oprettes ved hjælp af centraliserede betalinger, vil den virksomhed, der vises, være den virksomhed, som der oprettes betalinger i. Denne forekomst viser ikke nødvendigvis, hvilke virksomheders fakturaer der vil blive betalt.
 
@@ -144,3 +144,6 @@ Følgende opgaver og rettigheder er blevet tilføjet for automatiseringer af kre
 | Forespørgsel om tidsplanforekomster | Medearbejder for kreditorbetalinger, medarbejder for centraliseret kreditorbetaling | Denne pligt giver ret til at se forekomsterne af automatisering af betalingsforslag i kraft af følgende rettigheder:<ul><li>Få vist tidsplanforekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul> |
 | Forespørge om tidsplansserier      | None                                                                       | Denne pligt giver ret til at se indstillingerne for serier og forekomster i kraft af følgende rettigheder:<ul><li>Få vist tidsplanforekomster</li><li>Få vist listesiden med forekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul>|
 | Opretholde tidsplanforekomster     | None                                                                       | Denne pligt giver ret til at oprette og opretholde en forekomst i kraft af følgende rettigheder:<ul><li>Opretholde tidsplanforekomster</li><li>Få vist den ugentlige visning af forekomster</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

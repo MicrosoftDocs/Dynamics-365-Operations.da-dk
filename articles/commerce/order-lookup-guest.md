@@ -2,7 +2,7 @@
 title: Aktivere ordreopslag for gæsteudbetaling
 description: Dette emne beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 12/03/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 0368f567898210f122047a9f298bcb28b7540de1
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891492"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472584"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivere ordreopslag for gæsteudbetaling
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
 
@@ -63,16 +64,6 @@ Når du har ændret værdien af opslagsfeltet **Medtag personlige data i gæsteo
 ## <a name="configure-the-order-lookup-module"></a>Konfigurere ordreopslagsmodulet
 
 Ordreopslagsmodulet i modulbiblioteket til handel bruges til at vise den form, som gæstebrugere bruger til at slå ordrer op. Ordreopslagsmodulet kan inkluderes i brødteksten på alle sider, der ikke kræver kunde-logon. Yderligere oplysninger om, hvordan du konfigurerer modulet, finder du i [modulet Ordreopslag](order-lookup-module.md).
-
-## <a name="configure-the-order-details-page"></a>Konfigurere siden med ordredetaljer
-
-Før gæstebrugere kan få vist deres ordredetaljer, skal siden med ordredetaljer på dit e-handelswebsted være konfigureret, så der ikke kræves logon. Hvis du vil deaktivere kravet om logon for siden med ordredetaljer, skal du åbne siden i Commerce-webstedsgenerator, vælge **Standardside (obligatorisk)** i trævisningen og fjerne markeringen i afkrydsningsfeltet **Kræver logon?** nederst i egenskabsruden til højre.
-
-## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Føje et link til ordredetaljer i transaktionsmails
-
-I ordrerelaterede mails kan du angive et link eller en knap, der fører kunder til siden med ordredetaljerne for deres ordre. Hvis du vil tilføje dette link eller denne knap, skal du oprette et HTML-link, der peger på siden med ordredetaljer på e-handelswebstedet, og overføre ordrebekræftelses-id'et og kundens mailadresse som URL-parametre, som vist i følgende eksempel.
-
-`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

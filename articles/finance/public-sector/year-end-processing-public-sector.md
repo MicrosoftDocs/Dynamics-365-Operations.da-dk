@@ -1,36 +1,33 @@
 ---
 title: Årsafslutningen i den offentlige sektor
-description: Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
-author: ShylaThompson
-manager: AnnBe
+description: Dette emne indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchYearEndClose
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 19601
 ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e23aade2af33bc0f62aa11e57de0ad6caacad5d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5ac994392fccf6db475b3bb3811573ac529bbc12
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407694"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817680"
 ---
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
+Dette emne indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 
 I dette emne beskrives de årsafslutningsfunktioner, som er tilgængelige for den offentlige sektor. Ved udgangen af regnskabsåret skal du generere ultimoposter og forberede alle konti til det næste regnskabsår.  Kunder i den offentlige sektor har følgende muligheder:
 
@@ -60,3 +57,6 @@ Bogføringsdefinitioner styrer de regnskaber, der forekommer på ultimoposterne,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

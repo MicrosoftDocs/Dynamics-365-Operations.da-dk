@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4957d9a80ecb98b647ca73dfddc35cd450c6160e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23d18800508c6994f62e15921ef574062781b1be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424374"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234819"
 ---
 # <a name="receive-returned-items"></a>Modtage returnerede varer 
 
@@ -45,3 +44,6 @@ Afh√¶ngigt af firmaets politikker sendes varerne i returvareleverancen i karant√
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Gennemgå konfigurationer til at generere rapporter i Office-format, der har integrerede billeder
-description: For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "ER Oprette rapporter i Microsoft Office-formater med integrerede billeder (Del 1 - Konfigurere parametre)".
+description: I dette emne forklares det, hvordan du designer konfigurationer af rapportering for at generere elektroniske dokumenter med integrerede billeder. (Del 1 – Konfigurere parametre).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f209fcbac310dffb654f7830a4d4b12fa95d7a461b681864b8c9b547f4a4986c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717564"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gennemgå konfigurationer til at generere rapporter i Office-format, der har integrerede billeder
 
@@ -91,3 +89,6 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
     * Nogle etiketter, der vises i den fortrykte checkformular, medtages i rapporten, når den oprettes til testformål. Disse etiketter udskrives dog ikke under den egentlige udskrivning, fordi den fortrykte formular allerede indeholder dem.  
 15. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

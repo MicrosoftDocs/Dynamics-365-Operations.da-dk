@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 6238b67a35a303a03c51bbd261dd24d1b2acf041
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c038773dc7c1c475f5852f0f0272b59516140593
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077109"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944657"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Østrig (ældre)
 
@@ -206,7 +206,7 @@ Den foregående procedure aktiverer de udvidelser, der er komponenter i eksemple
 
 ## <a name="design-of-extensions"></a>Design af udvidelser
 
-Regnskabsintegrationstjenestens eksempel til Østrig er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md). Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over eksempeldesign til regnskabsintegration](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Regnskabsintegrationstjenestens eksempel til Østrig er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md). Du kan finde flere oplysninger om designet af løsningen til regnskabsintegration i [Oversigt over eksempeldesign til regnskabsintegration](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### <a name="commerce-runtime-extension-design"></a>Design af Commerce Runtime-udvidelse
 

@@ -2,11 +2,9 @@
 title: Funktionen LISTDISTINCT ER
 description: Dette emne indeholder oplysninger om, hvordan funktionen til elektronisk LISTDISTINCT-rapportering (ER) skal anvendes.
 author: NickSelin
-manager: kfend
 ms.date: 7/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2333cfc21a16a5905acadd590982020fdf878330
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9ab9354b0fdb1c08c192b90e6bab303cb85ea41a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682261"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743817"
 ---
 # <a name="listdistinct-er-function"></a>Funktionen LISTDISTINCT ER
 
@@ -97,3 +95,6 @@ I følgende eksempel vises det, hvordan du kan få vist en liste over entydige k
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Listefunktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,52 +1,152 @@
 ---
 title: Konfigurere personaleparametre
-description: Indstillingerne for nogle personaleparametre (HR) deles på tværs af firmaer, mens indstillingerne for andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre for personale.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Dette emne forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417749"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771429"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere personaleparametre
 
-Indstillingerne for nogle parametre for personale (HR) deles på tværs af firmaer, mens indstillingerne for andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre for personale.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Personaleparametre**. På siden **Personaleparametre** er indstillingerne fordelt på seks faner:
+Indstillingerne for nogle personaleparametre deles på tværs af firmaer, mens indstillingerne af andre parametre er firmaspecifikke. Dette emne forklarer, hvordan du konfigurerer firmaspecifikke personaleparametre.
 
--   Almindelig
--   Rekruttering - dette er ikke inkluderet i Dynamics 365 Human Resources
--   Kompensation
--   Nummerserier
--   Family and Medical Leave Act (FMLA)
--   Medarbejderselvbetjening
+To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Human Resourcesparametre**.
 
-Hver fane indeholder oplysninger, der vedrører en enkelt virksomhed. Indstillingerne på fanen **Generelt** definerer visningen af oplysninger om fravær, skader og sygdom og nye ansættelser. Indstillingerne på denne fane kan også definere nogle standardposter, der vises, mens du arbejder. Specifikt giver denne fane dig mulighed for at vælge en farve, der skal anvendes på åbne fraværsposter, angive typografiark, der skal bruges til rapporter, angive integration mellem undervisningskurser og fraværsregistrering og vælge den fraværskode, der skal bruges til at styre denne integration. Du kan også angive, hvor længe sager om skader og sygdom skal opbevares, og angiv standardidentifikationsnummeret, der vises, når en ny medarbejder ansættes. 
+![Gå til Human Resources-parametre.](./media/hr-employee-self-service-human-resources-parameters.png)
 
-Indstillingerne på fanen **Rekruttering** definerer de dokumenttyper, der bruges til korrespondance, der automatisk sendes til ansøgere og det rekrutteringsprojekt, der bruges til uopfordrede ansøgninger (ansøgninger, der ikke er til et bestemt rekrutteringsprojekt). Den periode, der er defineret for det aldersfordelte rekrutteringsprojekt bestemmer rekrutteringsprojekter, der er medtaget i feltet **Aldersfordelte projekter** i arbejdsområdet **Rekrutteringsstyring**. Den periode, der er defineret for advarsel om deadline for ansøgning bruges til at få vist rekrutteringsprojekter, der nærmer sig deres ansøgningsfrist i feltet den **Deadline for ansøgning nærmer sig** i arbejdsområdet **Rekruttering**. 
+På siden **Human Resourcesparametre** er indstillingerne fordelt på seks faner:
 
-Indstillingerne under fanen **Kompensation** definerer, om brugere skal bekræfte, at de vil gemme oplysninger om en fast eller variabel lønstruktur. Hvis du vælger afkrydsningsfeltet **Aktivér validering ved lagring**, får brugerne vist en meddelelse, hver gang de lukker en kompensationsrelateret side, hvor de bliver spurgt, om de vil gemme posten. Nogle sider inden for kompensationsstyring giver ikke brugerne mulighed for at slette information. Når brugeren får besked på at bekræfte, om oplysningerne skal gemmes, kan det hjælpe med at begrænse mængden af oplysninger, der gemmes, men ikke senere kan slettes. Hvis afkrydsningsfeltet **Aktiver validering ved lagring** ikke er markeret, gemmes poster altid med det samme, eventuelt før brugeren er klar. Hvis du bruger performancestyring, giver fanen **Kompensation** dig også mulighed for at vælge en rangeringsmodel, der skal bruges i stedet for den model, der er tildelt til kompensationsstrukturerne, når performance vurderes. 
+- **Generel**
+- **Rekruttering** (denne fane er ikke inkluderet i Dynamics 365 Human Resources)
+- **Kompensation**
+- **Nummerserier**
+- **FMLA**
+- **Medarbejderselvbetjening**
+- **Selvbetjening for leder**
+- **Frynsegodeadministration**
+- **Orlov og fravær**
+- **Betalingsmetoder**
 
-### <a name="previously-released-functionality"></a>Tidligere frigiven funktionalitet
+Hver fane indeholder oplysninger, der vedrører en enkelt virksomhed.
 
-Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder skal du bruge listesiden **Nummerserier** (klik på **Organisationsadministration** &gt; **Nummerserier** &gt; **Nummerserier**).
+## <a name="general"></a>Generel
+
+Indstillingerne på fanen **Generelt** definerer visningen af oplysninger om fravær, skader og sygdom og nye ansættelser. Indstillingerne på denne fane kan også definere nogle standardposter, der vises, mens du arbejder. Denne fane giver dig mulighed for at:
+
+- Vælge den farve, der skal anvendes på åbne fraværsposter.
+- Angive det typografiark, der skal bruges til rapporter.
+- Aktivere integration mellem kurser og fraværsregistrering.
+- Vælg den fraværskode, der bruges til at styre denne integration.
+- Angiv, hvor længe hændelser med skades- og sygdomstilfælde skal opbevares.
+- Angiv det standard-id, der vises, når der ansættes en ny arbejder.
+- Angiv den dato, der bruges til at beregne års tjeneste. 
+
+![Fanen Generelt.](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Rekruttering
+
+Indstillingerne under fanen **Rekruttering** definerer de dokumenttyper, der bruges til korrespondance, som automatisk sendes til ansøgere. Du kan også angive det rekrutteringsprojekt, der bruges til uopfordrede ansøgninger.
+
+Den periode, der er defineret I **Aldersfordelt rekrutteringsprojekt** bestemmer, hvilke rekrutteringsprojekter der er medtaget i feltet **Aldersfordelte projekter** i arbejdsområdet **Rekrutteringsstyring**. Den periode, der er defineret for advarsel om deadline for ansøgning bruges til at vise rekrutteringsprojekter, der nærmer sig deres ansøgningsfrist i feltet den **Deadline for ansøgning nærmer sig** i arbejdsområdet **Rekruttering**.
+
+Du kan finde flere oplysninger om rekruttering under [Rekruttere jobkandidater](hr-personnel-recruit.md).
+
+## <a name="compensation"></a>Kompensation
+
+I Dynamics 365 Finance definerer indstillingerne under fanen **Kompensation**, om brugere skal bekræfte, at de vil gemme oplysninger om en fast eller variabel lønstruktur. Hvis du vælger **Aktivér validering ved lagring**, får brugerne vist en meddelelse, når de lukker en kompensationsrelateret side, hvor de bliver spurgt, om de vil gemme posten. Nogle sider i Kompensationsstyring giver ikke brugerne mulighed for at slette information. Når brugeren får besked på at bekræfte, om oplysningerne skal gemmes, kan det hjælpe med at begrænse mængden af oplysninger, der gemmes, men ikke senere kan slettes. Hvis du rydder **Aktivér validering ved lagring**, gemmes poster med det samme, eventuelt før brugeren er klar. Hvis du bruger Performancestyring, giver fanen **Kompensation** dig også mulighed for at vælge en rangeringsmodel, der skal bruges i stedet for den model, der er tildelt til kompensationsstrukturerne, når performance vurderes.
+
+I Human Resources kan du bruge fanen **Kompensation** til at vælge at begrænse adgangen til kompensationsplaner og angive en standardvaluta.
+
+Du kan finde flere oplysninger om kompensation under [Oversigt over lønstrukturer](hr-compensation-overview.md).
+
+![Fanen Kompensation.](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Nummerserier
+
+Indstillingerne under fanen **Nummerserie** bestemmer, hvilke nummerserier der bruges til automatisk at tildele elementer id'er i Human Resources, f.eks.:
+
+- Anvendelser
+- Fraværsregistreringer
+- Resultater af kompensationsproces
+- Sagsnumre
+- Kurser
+- Kursusagendaer
+
+Hvis du vil vedligeholde nummerseriereferencer og -koder skal du bruge listesiden **Nummerserier** (vælg **Organisationsadministration > Nummerserier > Nummerserier**).
+
+Du kan finde flere oplysninger under [Oversigt over nummerserier](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
-> Antallet af timer, der er arbejdet, må ikke overstige 1.250, og længden af beskæftigelsen må ikke overstige 12 måneder. Disse maksimale værdier er i overensstemmelse med gældende lovgivning i USA. Endeligt angiver indstillingerne under fanen **Medarbejderselvbetjening** de oplysninger, som ledere kan angive på vegne af deres medarbejdere.
+> Antallet af timer, der er arbejdet, må ikke overstige 1.250, og længden af beskæftigelsen må ikke overstige 12 måneder. Disse maksimale værdier er i overensstemmelse med gældende lovgivning i USA.
+
+![Fanen Nummerserier.](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>FMLA
+
+Du kan angive FMLA-berettigelseskrav og FMLA-berettigelsestimer under fanen FMLA. Du kan finde flere oplysninger i [Konfigurere orlovs- og fraværsparametre](hr-leave-and-absence-parameters.md).
+
+![Fanen FMLA.](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Medarbejderselvbetjening
+
+Indstillingerne under fanen **Medarbejderselvbetjening** har indflydelse på, hvordan **Medarbejderselvbetjening** vises for medarbejderne. Du kan udføre følgende opgaver under denne fane:
+
+- Angive et navn i arbejdsområdet **Medarbejderselvbetjening**
+- Vælge, hvilke oplysninger en leder kan angive for medarbejdere
+- Tilføje nyttige links for medarbejdere
+- Begrænse medarbejdere i at tilføje eller redigere forretningskontaktoplysninger. Du kan finde flere oplysninger i [Begrænse redigering af personlige oplysninger](hr-employee-self-service-restrict-editing.md).
+
+Du kan finde flere oplysninger om opsætning af **Medarbejderselvbetjening** i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
+
+![Fanen Medarbejderselvbetjening.](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Selvbetjening for leder
+
+Indstillingerne under fanen **Selvbetjening for leder** har indflydelse på, hvad lederne kan se i **Selvbetjening for leder**. Under denne fane kan du konfigurere følgende indstillinger:
+
+- Intervallet for udløb af poster
+- Informationschefer kan se udløb af poster
+- Om ledere kan se ledige stillinger til udvidede underordnede
+- Visninger af fratrædende arbejdere
+- Nyttige links for ledere
+
+Du kan finde flere oplysninger om opsætning af **Lederselvbetjening** i [Oversigt over medarbejder- og lederselvbetjening](hr-employee-manager-self-service-overview.md).
+
+![Fanen Selvbetjening for leder.](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Personalegodeadministration
+
+Under fanen **Frynsegodeadministration** kan du konfigurere mailindstillinger for Frynsegodeadministration. Du kan finde flere oplysninger om konfiguration og brug af Frynsegodeadministration i [Oversigt over Administration af frynsegoder](hr-benefits-management-overview.md).
+
+![Fanen Frynsegodeadministration.](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Orlov og fravær
+
+Du kan finde flere oplysninger om opsætning og brug af orlov og fravær under [Oversigt over orlov og fravær](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Betalingsmetoder
+
+Under fanen **Betalingsmetoder** kan du vælge de betalingsmetoder, der understøttes af din organisation. Du kan finde flere oplysninger om konfiguration af kompensation under [Oversigt over lønstrukturer](hr-compensation-overview.md).
+
+![Fanen Betalingsmetoder.](./media/hr-setup-parameters-payment-methods.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74be72ac5787273e13692abdb9db18be4c5ccc08
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 59631148dbd2ad27ce2bb5c268d78e625daef6bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966949"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224445"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Oprette et hierarki eller en produktklassifikation
 
@@ -66,3 +66,6 @@ Denne fremgangsmåde viser, hvordan du opretter et nyt kategorihierarki og tilde
 8. Klik op linket i den valgte række på listen.
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Konfigurere et eksternt katalog til PunchOut e-indkøb
 description: Dette emne beskriver brugen af et eksternt katalog eller PunchOut-katalog til at indsamle oplysninger om tilbud fra en leverandør og føje dem til en rekvisition.
-author: RichardLuan
+author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016371"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4425005"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
@@ -43,8 +44,8 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Registrer leverandøren i Supply Chain Management. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenhed](../pim/tasks/manage-unit-measure.md).
-4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne kreditorkatalog](#configure-the-external-vendor-catalog).
-5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at kreditorens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
+4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne leverandørkatalog](#configure-the-external-vendor-catalog).
+5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at leverandørens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
 6. Aktivér det eksterne katalog ved hjælp af knappen **Aktivér katalog** på siden **Eksterne kataloger**. Det eksterne katalog skal aktiveres, før medarbejdere kan bruge det. Du kan deaktivere det eksterne katalog når som helst.
 
 
@@ -52,19 +53,20 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 
 Dette afsnit indeholder flere detaljer om opgave 4 i forrige afsnit.
 
-1. Angiv et navn og en beskrivelse for kreditorens eksterne katalog. Det navn, du angiver, vises i indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Medarbejderne kan klikke på indkøbsvognen for at åbne kataloget på leverandørens eksterne katalogwebsted.
-2. Tilføj et billede ved hjælp af handlingen **Eksternt katalogbillede**. Billedet vises på indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Bemærk, at billedets bredde og højde skal være ens. Ellers vises billedet ikke korrekt.
-3. Vælg, om kreditorens eksterne katalogwebsted skal vises i det samme browservindue, hvor medarbejderen har oprettet rekvisitionen, eller om det åbnes i et nyt vindue.
-4. Vælg leverandøren for kataloget. På listen **Juridiske enheder** er der en række for hver juridiske enhed, hvor leverandøren er oprettet. Hvis brugere skal kunne anmode om produkter direkte fra kreditorkataloget i visse juridiske enheder, men ikke andre, kan du bruge knappen **Udeluk adgang** eller **Tillad adgang** for hver juridiske enhed, hvor kataloget skal være eller ikke være tilgængeligt.
+1. Angiv et navn og en beskrivelse for leverandørens eksterne katalog. Det navn, du angiver, vises i indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Medarbejderne kan klikke på indkøbsvognen for at åbne kataloget på leverandørens eksterne katalogwebsted.
+2. Tilføj et billede ved hjælp af handlingen **Eksternt katalogbillede**. Billedet vises på indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Bemærk, at billedets bredde og højde skal være ens. Ellers vises billedet ikke korrekt.
+3. Vælg, om leverandørens eksterne katalogwebsted skal vises i det samme browservindue, hvor medarbejderen har oprettet rekvisitionen, eller om det åbnes i et nyt vindue.
+4. Vælg leverandøren for kataloget. På listen **Juridiske enheder** er der en række for hver juridiske enhed, hvor leverandøren er oprettet. Hvis brugere skal kunne anmode om produkter direkte fra leverandørkataloget i visse juridiske enheder, men ikke andre, kan du bruge knappen **Udeluk adgang** eller **Tillad adgang** for hver juridiske enhed, hvor kataloget skal være eller ikke være tilgængeligt.
 5. I feltet **Standardudløb (dage)** skal du angive antallet af dage, hvor tilbuddet fra det eksterne katalog er gyldigt og kan bruges til køb hos den eksterne leverandør. Når et tilbud er oprettet og hentet fra leverandørens eksterne katalogwebsted, er tilbuddet gyldigt med virkning fra den aktuelle systemdato og forbliver gyldigt i det antal dage, du angiver i dette felt.
 6. Klik på knappen **Tilføj** for at starte tilknytning af indkøbskategorier til det eksterne katalog. Vælg derefter en kategori på listen Kategorinavn. Listen over kategorier er et undersæt af indkøbskategorier, som leverandøren er knyttet til i de juridiske enheder, der er konfigureret for leverandøren.
 
     > [!NOTE]
-    > Indkøbspolitikker bruges til at tillade eller begrænse adgang til kategorier for den juridiske indkøbsenhed eller modtagende driftsenhed. Punchout til et eksternt katalog kræver, at der er tilladt adgang til mindst en af de indkøbskategorier, som er knyttet til kataloget.
+    > Indkøbspolitikker bruges til at tillade eller begrænse adgang til kategorier for den juridiske indkøbsenhed eller modtagende driftsenhed.Punchout til et eksternt katalog kræver, at der er tilladt adgang til mindst en af de indkøbskategorier, som er knyttet til kataloget.
 
 7. Konfigurer cXML-meddelelsen om opsætningsanmodning, der skal sendes til leverandøren. Det automatisk genererede meddelelsesformat er den minimale skabelonen, der kræves for at starte en session. Udfyld værdier for koderne.
 
-Du kan til enhver tid genindlæse den systemgenererede meddelelsesskabelon ved at klikke på **Gendan meddelelsesformat**. Bemærk, at hvis du gendanner meddelelsesformatet, bliver den aktuelle meddelelse erstattet af det automatisk genererede meddelelsesformat, som har tomme koder.
+Du kan til enhver tid genindlæse den systemgenererede meddelelsesskabelon ved at klikke på **Gendan meddelelsesformat**. 
+Bemærk, at hvis du gendanner meddelelsesformatet, bliver den aktuelle meddelelse erstattet af det automatisk genererede meddelelsesformat, som har tomme koder.
 
 ### <a name="cxml-setup-message"></a>cXML-konfigurationsmeddelelse
 Nedenfor kan du se en beskrivelse af de koder, der er inkluderet i skabelonen:
@@ -89,7 +91,7 @@ Angiv et navn for det ydre element, så leverandøren kan genkende det og tilkny
 Du kan finde flere oplysninger om cXML-protokollen på [cXML.org-webstedet](http://cxml.org/)
 
 ## <a name="post-back-message"></a>Tilbagesendelsesmeddelelse
-Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra kreditoren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Supply Chain Management. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen. Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje.
+Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Supply Chain Management. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen. Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje.
 
 | Meddelelse modtaget fra leverandør | Kopieret til rekvisitionslinje|
 |------------------------------|----------------------------------------------------------|

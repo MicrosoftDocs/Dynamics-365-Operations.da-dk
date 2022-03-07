@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d860c2b9fe01231e8e47b085f93c79c5a7dc449e
+ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323973"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7941238"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere [destinationer](electronic-reporting-destinations.md) for hver outputkomponent (mappe eller fil) til et [Elektronisk rapportering (ER)](general-electronic-reporting.md)-formats [konfiguration](general-electronic-reporting.md#Configuration), der bruges til at generere et udgående dokument. Brugere, som kører et ER-format af denne type, og som har de relevante adgangsrettigheder, kan også ændre de konfigurerede destinationsindstillinger under kørslen.
+Du kan konfigurere [destinationer](electronic-reporting-destinations.md) for hver outputkomponent (mappe eller fil) til en [elektronisk rapportering (ER)](general-electronic-reporting.md)-[format](general-electronic-reporting.md#FormatComponentOutbound)-[konfiguration](general-electronic-reporting.md#Configuration), der bruges til at generere et udgående dokument. Brugere, som kører et ER-format af denne type, og som har de relevante adgangsrettigheder, kan også ændre de konfigurerede destinationsindstillinger under kørslen.
 
 I Microsoft Dynamics 365 Finance **version 10.0.17 og senere** kan der køres et ER-format ved at [klargøre](er-apis-app10-0-17.md) en handlingskode, som brugeren udfører ved at køre dette ER-format. I modulet **Debitor** kan du f.eks. vælge et ER-format i indstillingerne for udskriftsstyring, der genererer et bestemt forretningsdokument, f.eks. en fritekstfaktura. Du kan derefter vælge **Vis** for at få vist fakturaen eller **Udskriv** for at sende den til en printer. Hvis der sendes en brugerhandling for det kørende ER-format under kørsel, kan du konfigurere forskellige ER-destinationer til forskellige brugerhandlinger. Dette emne forklarer, hvordan du konfigurerer ER-destinationer for denne type ER-format.
 

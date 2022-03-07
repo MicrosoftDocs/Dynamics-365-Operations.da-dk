@@ -2,16 +2,13 @@
 title: Varedisponering med behovsprognoser
 description: Dette emne forklarer, hvordan du kan inkludere behovsprognoser under varedisponering med Planlægningsoptimering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666716"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867241"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
@@ -87,11 +84,11 @@ Denne sektion indeholder oplysninger om de forskellige metoder, der anvendes til
 
 Når du inkluderer en prognose i en masterplan, kan du vælge, hvordan prognosekravene skal reduceres, når den faktiske efterspørgsel inddrages. Bemærk, at varedisponering udelukker prognosebehovet fra fortiden, hvilket betyder alle prognosebehov før dags dato.
 
-For at inkludere en prognose i en masterplan og vælge den metode, der skal anvendes til at reducere prognosekravene, skal du gå til **Varedisponering \> Opsætning \> Planer \> Masterplaner**. Vælg en prognosemodel i feltet **Prognosemodel**. I feltet **Metode, der anvendes til at reducere prognosekrav** skal du vælge en metode. Der findes følgende indstillinger:
+For at inkludere en prognose i en masterplan og vælge den metode, der skal anvendes til at reducere prognosekravene, skal du gå til **Varedisponering \> Opsætning \> Planer \> Masterplaner**. Vælg en prognosemodel i feltet **Prognosemodel**. I feltet **Metode, der anvendes til at reducere prognosekrav** skal du vælge en metode. Følgende indstillinger er tilgængelige:
 
-- None
+- Ingen
 - Procent – reduktionsnøgle
-- Transaktioner – reduktionsnøgle (endnu ikke understøttet med Planlægningsoptimering)
+- Transaktioner – reduktionsnøgle
 - Transaktioner – dynamisk periode
 
 I de følgende afsnit finder du flere oplysninger om hver indstilling.
@@ -140,32 +137,85 @@ Hvis du i dette tilfælde kører prognoseplanlægningen den 1. januar, forbruges
 
 #### <a name="transactions--reduction-key"></a>Transaktioner – reduktionsnøgle
 
-Hvis du vælger **Transaktioner - reduktionsnøgle** reduceres prognosekravene af de transaktioner, som finder sted i løbet af de perioder, der er defineret af reduktionsnøglen.
+Hvis du angiver den **metode, der bruges til at reducere feltet budgetbehov** til *Transaktioner – reduktionsnøgle*, reduceres prognosebehovet med de kvalificerede efterspørgselsposteringer, der forekommer i de perioder, der er defineret i reduktionsnøglen.
+
+Den kvalificerede efterspørgsel defineres af feltet **Reducer prognose efter** på siden **Disponeringsgrupper**. Hvis du angiver feltet **Reducer budget pr. felt** til *Ordrer*, betragtes kun salgsordreposteringer som værende kvalificeret efterspørgsel. Hvis du angiver den til *Alle transaktioner*, betragtes eventuelle lagerposteringer for ikke-interne afgange som kvalificerede behov. Hvis der skal inkluderes interne ordrer, når prognosen reduceres, skal indstillingen **Medtag interne ordrer** angives til *Ja*.
+
+Prognosereduktion starter med den første (tidligste) efterspørgselsprognosepost i reduktionsnøgleperioden. Hvis antallet af kvalificerede lagerposteringer er større end antallet af linjer i efterspørgselsprognosen i samme reduktionsnøgleperiode, bruges saldoen for antallet for lagerposteringer til at reducere antallet i efterspørgselsprognosen i den forrige periode (hvis der ikke er brugt en prognose).
+
+Hvis der ikke findes et ikke-forbrugt budget i den forrige reduktionsnøgleperiode, bruges saldoen for antallet for lagertransaktioner til at reducere budgetantallet i den næste måned (hvis der ikke er et budget, der ikke er brugt).
+
+Værdien i feltet **Procent** på reduktionsnøglelinjerne bruges ikke, når den **metode, der bruges til at reducere budgetbehovsfeltet**, er angivet til *Transaktioner - reduktionsnøgle*. Det er kun datoerne, der bruges til at definere reduktionsnøgleperioden.
+
+> [!NOTE]
+> Alle budgetter, der bogføres på eller før dags dato, ignoreres og bruges ikke til at oprette ordreforslag. Hvis f.eks. efterspørgselsprognosen for måneden genereres den 1. januar, og du kører behovsplanlægning, der omfatter efterspørgselsprognosen den 2. januar, ignoreres den efterspørgselsprognoselinje, der er dateret 1. januar.
 
 ##### <a name="example-transactions--reduction-key"></a>Eksempel: transaktioner – reduktionsnøgle
 
 Dette eksempel viser, hvordan de faktiske ordrer, der forekommer i de perioder, der er defineret i reduktionsnøglen, reducerer efterspørgselsprognosebehovet.
 
-I dette eksempels skal du vælge **Transaktioner - reduktionsnøgle** i feltet **Metode, der anvendes til at reducere prognosekrav** på siden **Masterplaner**.
+[![Faktiske ordrer og budgettering, før der køres behovsplanlægning.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Der findes følgende salgsordrer pr. 1. januar.
+I dette eksempels skal du vælge *Transaktioner - reduktionsnøgle* i feltet **Metode, der anvendes til at reducere prognosekrav** på siden **Masterplaner**.
 
-| Måned    | Antal bestilte enheder |
-|----------|--------------------------|
-| Januar  | 956                      |
-| Februar | 1.176                    |
-| Marts    | 451                      |
-| April    | 119                      |
+Der findes følgende linjer i efterspørgselsprognosen den 1. april.
 
-Såfremt du anvender den samme behovsprognose på 1.000 enheder pr. måned, som blev benyttet i det forrige eksempel, overføres følgende krævede antal til masterplanen.
+| Dato     | Antal budgetterede enheder |
+|----------|-----------------------------|
+| 5. april  | 100                         |
+| 12. april | 100                         |
+| 19. april | 100                         |
+| 26. april | 100                         |
+| Maj 3    | 100                         |
+| Maj 10   | 100                         |
+| Maj 17   | 100                         |
 
-| Måned                | Antal krævede enheder |
-|----------------------|---------------------------|
-| Januar              | 44                        |
-| Februar             | 0                         |
-| Marts                | 549                       |
-| April                | 881                       |
-| Maj-december | 1.000                     |
+Der findes følgende salgsordrelinjer i april.
+
+| Dato     | Antal anmodede enheder |
+|----------|----------------------------|
+| 27. april | 240                        |
+
+[![Planlagt forsyning genereret på basis af aprilordrer.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Følgende behovsantal overføres til behovsplanen, når der køres behovsplanlægning den 1. april. Som du kan se, blev budgetposterne i april reduceret med behovet på 240 i en rækkefølge med udgangspunkt i den første af disse posteringer.
+
+| Dato     | Antal krævede enheder |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| Maj 3    | 100                       |
+| Maj 10   | 100                       |
+| Maj 17   | 100                       |
+
+Antag nu, at der er importeret nye ordrer for perioden maj.
+
+Der findes følgende salgsordrelinjer i maj.
+
+| Dato   | Antal anmodede enheder |
+|--------|----------------------------|
+| Maj 4  | 80                         |
+| Maj 11 | 130                        |
+
+[![Planlagt forsyning genereret på basis af april- og majordrer.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Følgende behovsantal overføres til behovsplanen, når der køres behovsplanlægning den 1. april. Som du kan se, blev budgetposterne i april reduceret med behovet på 240 i en rækkefølge med udgangspunkt i den første af disse posteringer. Prognoseposteringerne for maj blev dog reduceret med i alt 210 med udgangspunkt i den første postering i efterspørgselsprognosen i maj. Totalerne pr. periode bevares dog (400 i april og 300 i maj).
+
+| Dato     | Antal krævede enheder |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| Maj 3    | 0                         |
+| Maj 4    | 80                        |
+| Maj 10   | 0                         |
+| Maj 11   | 130                       |
+| Maj 17   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaktioner – dynamisk periode
 
@@ -250,7 +300,7 @@ Derfor oprettes følgende planlagte ordrer.
 En prognosereduktionsnøgle anvendes af metoderne **Transaktioner - reduktionsnøgle** og **Procent - reduktionsnøgle** til at reducere prognosekrav. Følg følgende fremgangsmåde for at oprette og konfigurere en reduktionsnøgle:
 
 1. Gå til **Varedisponering \> Opsætning \> Dækning \> Reduktionsnøgler**.
-2. Vælg **Ny** eller tryk på **Ctrl+N** for at oprette en reduktionsnøgle.
+2. Vælg **Ny** for at oprette en reduktionsnøgle.
 3. I feltet **Reduktionsnøgle** indtastes en unik identifikator for prognosereduktionsnøglen. Dernæst indtastes et navn i feltet **Navn**. 
 4. Fastsæt perioderne og reduktionsnøgleprocenterne for hver periode:
 
@@ -266,11 +316,78 @@ Der skal tildeles en prognosereduktionsnøgle til elementets dækningsgruppe. F�
 2. I feltet **Reduktionsnøgle** i oversigtspanelet **Andre** vælges den reduktionsnøgle, der skal tildeles dækningsgruppen. Reduktionsnøglen gælder derefter for alle elementer, der tilhører den pågældende dækningsgruppe.
 3. Hvis du vil bruge en reduktionsnøgle til at beregne prognosereduktionen i løbet af behovsplanlægningen, skal du definere denne indstilling under opsætningen af prognoseplanen eller masterplanen. Gå til en af følgende placeringer:
 
-    - Varedisponering \> Opsætning \> Planer \> Prognoseplaner
-    - Varedisponering \> Opsætning \> Planer \> Masterplaner
+    - **Varedisponering \> Opsætning \> Planer \> Hovedplaner**
+    - **Varedisponering \> Opsætning \> Planer \> Behovsplaner**
 
 4. I feltet **Metode, der anvendes til at reducere prognosekrav** i oversigtspanelet **Generelt** på siden **Prognoseplaner** eller **Varedisponering** vælges enten **Procent - reduktionsnøgle** eller **Transaktioner - reduktionsnøgle**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Reducer en prognose med transaktioner
 
 Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dynamisk periode** som en metode til at reducere prognosekrav, kan du præcisere de transaktioner, der skal reducere prognosen. I feltet **Reducer prognose med** i oversigtspanelet **Andre** på siden **Disponeringsgrupper** skal du vælge **Alle transaktioner**, hvis alle transaktioner skal reducere prognosen, eller **Ordrer**, hvis alene salgsordrer skal reducere prognosen.
+
+## <a name="forecast-models-and-submodels"></a>Budgetmodeller og undermodeller
+
+I dette afsnit beskrives, hvordan du kan oprette budgetmodeller, og hvordan du kan kombinere flere budgetmodeller ved at konfigurere undermodeller.
+
+En *budgetmodel* navngiver og identificerer et bestemt budget. Når du har oprettet budgetmodellen, kan du føje budgetlinjer til den. Brug siden **Behovsprognoselinjer** til at tilføje budgetlinjer for flere varer. Brug siden **Frigivne produkter** til at tilføje budgetlinjer for en bestemt valgt vare.
+
+En budgetmodel kan inkludere budgetter fra andre budgetmodeller. For at opnå dette resultat kan du tilføje andre budgetmodeller som *undermodeller* af en overordnet budgetmodel. Du skal oprette hver relevant model, før du kan tilføje den som undermodel til en overordnet budgetmodel.
+
+Den struktur, der fås som resultat, giver dig mulighed for at styre budgetter på en effektiv måde, da du kan kombinere (samle) input fra flere individuelle budgetter. Fra et planlægningssynspunkt er det derfor let at kombinere budgetter til simuleringer. Du kan f.eks. konfigurere en simulering, der er baseret på kombinationen af et almindeligt budget med budgettet for en forårskampagne.
+
+### <a name="submodel-levels"></a>Undermodelniveauer
+
+Der er ingen grænser for, hvor mange undermodeller der kan føjes til en overordnet budgetmodel. Strukturen kan dog kun være ét niveau dyb. Det vil sige, at en budgetmodel, der er en undermodel af en anden budgetmodel, ikke kan have egne undermodeller. Når du føjer undermodeller til en budgetmodel, kontrollerer systemet, om den pågældende budgetmodel allerede er en undermodel til en anden budgetmodel.
+
+Hvis der ved behovsplanlægningen findes en undermodel med egne undermodeller, får du vist en fejlmeddelelse.
+
+#### <a name="submodel-levels-example"></a>Eksempel på undermodelniveauer
+
+Budgetmodel A har budgetmodel B som undermodel. Budgetmodel B kan derfor ikke have egne undermodeller. Hvis du forsøger at føje en undermodel til budgetmodel B, får du følgende fejlmeddelelse: "Budgetmodel B er en undermodel til model A".
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Samle budgetter på tværs af budgetmodeller
+
+Budgetlinjer, der findes på den samme dag, samles på tværs af deres budgetmodel og dens undermodeller.
+
+#### <a name="aggregation-example"></a>Eksempel på sammenlægning
+
+Budgetmodel A har budgetmodel B og C som undermodeller.
+
+- Budgetmodel A inkluderer en behovsprognose på 2 stk. den 15. juni.
+- Budgetmodel B inkluderer en behovsprognose på 3 stk. den 15. juni.
+- Budgetmodel C inkluderer en behovsprognose på 4 stk. den 15. juni.
+
+Den oprettede behovsprognose vil være en enkelt efterspørgsel på 9 stk. (2 + 3 + 4) den 15. juni.
+
+> [!NOTE]
+> Hver undermodel bruger sine egne parametre, og ikke parametrene i den overordnede budgetmodel.
+
+### <a name="create-a-forecast-model"></a>Oprette en budgetmodel
+
+Følg disse trin for at oprette en budgetmodel.
+
+1. Gå til **Varedisponering \> Konfiguration \> Behovsprognose \> Budgetmodeller**.
+1. Gå til handlingsruden, og vælg **Ny**.
+1. Angiv følgende felter for den nye budgetmodel:
+
+    - **Model** – Angiv et entydigt id for modellen.
+    - **Navn** – Angiv et sigende navn til modellen.
+    - **Stoppet** – Normalt skal du angive denne indstilling til *Nej*. Angiv kun til *Ja*, hvis du vil forhindre redigering af alle budgetlinjer, der er tildelt modellen.
+
+    > [!NOTE]
+    > Feltet **Medtag i likviditetsbudgetter** og felterne i oversigtspanelet **Projekt** er ikke relateret til behovsplanlægning. Du kan derfor ignorere dem i denne sammenhæng. De skal kun tages i betragtning, når du arbejder med budgetter i modulet **Projektstyring og regnskab**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tildele en prognosemodel undermodeller
+
+Følg disse trin, hvis du vil tildele en budgetmodel undermodeller.
+
+1. Gå til **Lagerstyring \> Konfiguration \> Budget \> Budgetmodeller**.
+1. Vælg den budgetmodel, som du vil oprette en undermodel til, i listeruden.
+1. I oversigtspanelet **Undermodel** skal du vælge **Tilføj** for at føje en række til gitteret.
+1. Angiv følgende felter i den nye række:
+
+    - **Undermodel** – Vælg den budgetmodel, der skal tilføjes som undermodel. Denne budgetmodel skal allerede findes, og den må ikke have egne undermodeller.
+    - **Navn** – Angiv et sigende navn til undermodellen. Dette navn kan f.eks. angive undermodellens relation til den overordnede budgetmodel.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

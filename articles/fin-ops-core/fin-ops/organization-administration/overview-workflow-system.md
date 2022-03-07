@@ -2,30 +2,33 @@
 title: Oversigt over arbejdsgangssystem
 description: I dette emne beskrives arbejdsgangssystemet.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796990"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067927"
 ---
 # <a name="workflow-system-overview"></a>Oversigt over arbejdsgangssystem
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives arbejdsgangssystemet.
 
@@ -41,7 +44,7 @@ Arbejdsgang er et system, der kører på applikationsobjektserveren (AOS). Arbej
 
 En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et dokument "flyder" eller bevæger sig gennem systemet, ved at vise, hvem der skal udføre en opgave, træffe en beslutning eller godkende et dokument. I nedenstående illustration vises f.eks. en arbejdsgang for udgiftsrapporter.
 
-![Arbejdsgang med elementer, der er tilknyttet brugere](./media/workflow_user.gif)
+![Arbejdsgang med elementer, der er tilknyttet brugere.](./media/workflow_user.gif)
 
 Hvis du bedre vil kunne forstå denne arbejdsgang, kan du antage, at Søren sender en udgiftsrapport for kr. 7.000. I dette scenario skal Ivan gennemse de kvitteringer, som Søren har sendt til ham. Henrik og Mette skal derefter godkende udgiftsrapporten. Antag nu, at Søren sender en udgiftsrapport for kr. 11.000. I dette scenario skal Ivan gennemse kvitteringerne, og Henrik, Mette og Dorthe skal godkende udgiftsrapporten.
 
@@ -71,3 +74,6 @@ Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 + [Konfigurere parallelle grene i en arbejdsgang](configure-parallel-branch-workflow.md)
 + [Konfigurere arbejdsgange for linjeelementer](configure-line-item-workflow.md)
 + [Ofte stillede spørgsmål om arbejdsgang](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,40 +1,42 @@
 ---
-title: Opret faste lønstrukturer
-description: Fast løn henviser til en medarbejders normale bruttoløn eller løn. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Oprette planer for fast løn
+description: I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46dbc167a76782cfa8a72da8ce8bed2ce29e4dc6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417822"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070319"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Oprette planer for fast løn
 
-Fast løn henviser til en medarbejders normale bruttoløn eller løn. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Fast løn henviser til en medarbejders normale bruttoløn eller løn. I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 
 Fast løn-beløb kan beregnes for dine medarbejdere baseret på faktorer som ydeevne, område og øgede budgetter. Dynamics 365 Human Resources understøtter kompensationstyperne trin, lønklasse og omfang.
 
 ## <a name="fixed-compensation-components"></a>Komponenter i fast løn
 ### <a name="compensation-levels"></a>Kompensationsniveauer
 
-Du kan bruge **kompensationsniveauer** til at angive kompensation for forskellige job for at sikre, at de medarbejdere, der har disse job, betales rimeligt. På siden **Kompensationsniveauer** kan du konfigurere de kompensationsniveauer, der er nødvendige for hvert trin, løntrin og omfang. Brug knapperne **Op** og **Ned** til at sætte niveauerne i rigtige rækkefølge efter type. Ved at angive kompensationsniveauer for et job kan du garantere, at alle medarbejdere, der har en position for det pågældende, job betales på samme niveau.
+Du kan bruge **Kompensationsniveauer** til at angive kompensation for forskellige job for at sikre, at de medarbejdere, der har disse job, betales rimeligt. På siden **Kompensationsniveauer** kan du konfigurere de kompensationsniveauer, der er nødvendige for hvert trin, løntrin og omfang. Brug knapperne **Op** og **Ned** til at sætte niveauerne i rigtige rækkefølge efter type. Ved at angive kompensationsniveauer for et job kan du garantere, at alle medarbejdere, der har en position for det pågældende, job betales på samme niveau.
 
 ### <a name="reference-points"></a>Referencepunkter
 
@@ -42,7 +44,7 @@ Du kan bruge **kompensationsniveauer** til at angive kompensation for forskellig
 
 ### <a name="compensation-grids"></a>Kompensationsgitre
 
-Når du har konfigureret niveauer og referencepunkter, kan de kombineres for at oprette et **kompensationsgitter**. På siden **Kompensationsgitre** skal du angive oplysninger om gitteret. Angiv for eksempel, hvad gitteret er designet til at blive brugt til, hvilken type plan det skal bruges sammen med, og hvilke referencepunkter eller kolonner der kræves i gitteret. Når du er færdig med at angive oplysningerne, skal du klikke på **Kompensationsstruktur** for at føje niveauer og beløb til gitteret. 
+Når du har konfigureret niveauer og referencepunkter, kan de kombineres for at oprette et **Kompensationsgitter**. På siden **Kompensationsgitre** skal du angive oplysninger om gitteret. Angiv for eksempel, hvad gitteret er designet til at blive brugt til, hvilken type plan det skal bruges sammen med, og hvilke referencepunkter eller kolonner der kræves i gitteret. Når du er færdig med at angive oplysningerne, skal du klikke på **Kompensationsstruktur** for at føje niveauer og beløb til gitteret. 
 
 **Tip!** Brug funktionen **Masseændringer** i kompensationsstrukturen til at angive startbeløb, og forøg derefter med procentsatser eller beløb på tværs af niveauer eller referencepunkter.
 
@@ -57,13 +59,13 @@ Med indstillingen **Tolerance uden for afgrænsningerne** kan du angive, hvor st
 
 Med indstillingen **Ansættelsesregel** kan du angive, om alle medarbejdere skal have den samme stigning uanset datoen for deres ansættelse (**Ansættelsesregel** = **Ingen**), eller om medarbejderne skal modtage en procentdel af den pågældende bonus, baseret på hvor længe de var ansat under cyklussen (**Ansættelsesregel** = **Procent**). 
 
-En **rammeudnyttelsesmatrix** er nyttig, hvis du enten vil reducere den tid, der kræves, for at medarbejdere kan nå midtpunktet i deres område eller for at øge den tid, der kræves, for at medarbejdere kan nå det maksimale referencepunkt i området. Du vil for eksempel give medarbejdere, der er i de nederste 25 procent af deres område, 110 procent af bonusmålet, mens du kun vil give medarbejdere, der er i de øverste 25 procent af deres område, 80 procent af deres bonusmål for at forhindre dem i at nå maksimum lige så hurtigt. 
+En **Rammeudnyttelsesmatrix** er nyttig, hvis du enten vil reducere den tid, der kræves, for at medarbejdere kan nå midtpunktet i deres område eller for at øge den tid, der kræves, for at medarbejdere kan nå det maksimale referencepunkt i området. Du vil for eksempel give medarbejdere, der er i de nederste 25 procent af deres område, 110 procent af bonusmålet, mens du kun vil give medarbejdere, der er i de øverste 25 procent af deres område, 80 procent af deres bonusmål for at forhindre dem i at nå maksimum lige så hurtigt. 
 
 Når du definerer de grundlæggende principper for den faste løn-struktur, kan du angive kompensationsstrukturen for planen. Klik på **Konfigurer kompensation**. Der åbnes en dialogboks med en skyder, hvor du har muligheder:
 
--   Oprette et nyt kompensationsgitter ved at vælge en referencepunktsopsætning og give et navn til gitteret.
--   Oprette et nyt kompensationsgitter ved at oprette en kopi af et eksisterende gitter, som du kan bruge som udgangspunkt.
--   Bruge et eksisterende kompensationsgitter, der allerede er defineret. Alle kompensationsstrukturer, der bruger det samme gitter, modtage opdateringer, hvis dette gitter ændres.
+-   **Opret en ny kompensationsmatrix** ved at vælge en referencepunktsopsætning og give et navn til gitteret.
+-   **Opret et nyt kompensationsmatrix** ved at oprette en kopi af et eksisterende gitter, som du kan bruge som udgangspunkt.
+-   **Brug et eksisterende kompensationsmatrix**, der allerede er defineret. Alle kompensationsstrukturer, der bruger det samme gitter, modtage opdateringer, hvis dette gitter ændres.
 
 Når du vælger en indstilling, åbnes siden **Kompensationsstruktur**, og du kan foretage ændringer af det nye kompensationsgitter eller det eksisterende kompensationsgitter.
 
@@ -74,7 +76,7 @@ Det første trin i tilmelding af medarbejdere i en fast løn-struktur er at best
 
 **Bemærk!** Berettigelsesregler bruges til at fastlægge berettigelse for både faste og variable strukturer. 
 
-Berettigelsesreglen tager højde for værdien af bestemte felter i posterne Job, Stilling og Medarbejder, når det skal afgøres, om en medarbejder er berettiget til en kompensationsstruktur.
+Berettigelsesreglen tager højde for værdien af bestemte felter i posterne **Job**, **Stilling** og **Medarbejder**, når det skal afgøres, om en medarbejder er berettiget til en kompensationsstruktur.
 
 -   På siden **Job** vurderer berettigelsesreglen følgende felter:
     -   Feltet **Job**
@@ -86,7 +88,7 @@ Berettigelsesreglen vurderer også fagforeninger, som er knyttet til medarbejder
 
 ### <a name="define-fixed-compensation-actions"></a>Definere fast løn-handlinger
 
-**Fast løn-handlinger** bruges, når du angiver eller anvender ændringer af en medarbejders fast løn. Fast løn-handlinger giver dig mulighed for at anvende beskrivende navne til de typer handlinger, som chef for kompensation og frynsegoder kan udføre. Forskellige aktionstyper har særlig logik bag sig, så de kan bruges på bestemte tidspunkter. 
+**Fast løn-handlinger** bruges, når du angiver eller anvender ændringer af en medarbejders fast løn. Fast løn-handlinger giver dig mulighed for at anvende beskrivende navne til de typer handlinger, som en chef for kompensation og frynsegoder kan udføre. Forskellige aktionstyper har særlig logik bag sig, så de kan bruges på bestemte tidspunkter. 
 
 Når fast løn f.eks. er konfigureret for en medarbejder, kan der kun bruges handlinger af typen **Ansæt/genansæt**. I dette tilfælde kan du oprette tre forskellige handlinger af typen **Ansæt/genansæt** og kalde dem **Ansæt**, **Genansæt** og **Overfør**. Du har så en mere beskrivende forklaring på, hvorfor den faste løn blev givet til en medarbejder eller ændret.
 
@@ -94,7 +96,10 @@ Når fast løn f.eks. er konfigureret for en medarbejder, kan der kun bruges han
 
 Du kan nu knytte en medarbejder til en fast løn-struktur. Åbn siden **Medarbejdere** side, og vælg den medarbejder, der skal tilmeldes kompensationsplanen. Klik i handlingsruden på **Kompensation** &gt; **Fast plan**. Du kan nu oprette en ny fast løn-handling for den pågældende medarbejder. 
 
-**Bemærk!** Feltet Kompensationsstruktur viser kun de strukturer, som en medarbejder er berettiget til i henhold til de berettigelsesregler, der er konfigureret for hver enkelt struktur. Hvis der ikke er konfigureret berettigelsesregler for en struktur, vil ingen medarbejdere være berettiget til denne den. 
+**Bemærk:** Feltet **Kompensationsplan** viser kun de strukturer, som en medarbejder er berettiget til i henhold til de berettigelsesregler, der er konfigureret for hver enkelt struktur. Hvis der ikke er konfigureret berettigelsesregler for en struktur, vil ingen medarbejdere være berettiget til denne den. 
 
-Systemet kontrollerer, at det kompensationsbeløb, der er angivet for en kompensationsstruktur af typen klasse eller omfang ligger inden for de minimale og maksimale referencepunkter for det givne kompensationsniveau i medarbejderens job. Hvis kompensationsbeløbet ligger uden for det tilladte interval, vises en advarsel eller fejlmeddelelse, afhængigt af det toleranceniveau, der er angivet for fast løn-strukturen.
+Systemet kontrollerer, at det kompensationsbeløb, der er angivet for en kompensationsplan af typen klasse eller omfang ligger verificeret inden for de minimale og maksimale referencepunkter for det givne kompensationsniveau i medarbejderens job. Hvis kompensationsbeløbet ligger uden for det tilladte interval, vises en advarsel eller fejlmeddelelse, afhængigt af det toleranceniveau, der er angivet for fast løn-strukturen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

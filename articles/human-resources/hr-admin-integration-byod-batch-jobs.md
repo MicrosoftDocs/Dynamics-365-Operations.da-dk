@@ -2,29 +2,29 @@
 title: Optimere BYOD-planlagte batchjob
 description: I dette emne forklares det, hvordan du kan optimere ydeevnen, når du bruger funktionen Bring din egen database (BYOD) sammen med Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: d08762ff40b4da8264bd5bc4a1c16fd2afc4d610
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f21e9b94b5aa30b2cdb18692e8cc9c8d00f758d6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417787"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805028"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimere BYOD-planlagte batchjob
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emne forklares det, hvordan du kan optimere ydeevnen, når du bruger funktionen Bring din egen database (BYOD). Yderligere oplysninger om BYOD finder du i afsnittet [Bruge din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
 
@@ -96,3 +96,6 @@ BYOD-funktionen har følgende begrænsninger:
 [Brug din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
 [Oversigt over dataimport- og -eksportjob](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
 [Aktivere ændringssporing for enheder](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,25 +2,27 @@
 title: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
 description: Dette emne indeholder oplysninger om, hvordan du importerer kreditorfakturaer ved hjælp af tjenesten Elektronisk fakturering.
 author: gionoder
-ms.date: 09/03/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f3b3a27436d32cf25d09f368e4a32018d7559bf6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 434bf1f6a5a727a71592493b85ab166cbeff2f0980c2c968c99973a03f4dc660
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751246"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
 
@@ -43,21 +45,13 @@ Konfigurer en mailkontokanal, hvis du med funktionen Elektronisk fakturering har
 
 1. Vælg den funktion til elektronisk fakturering, du har oprettet, i RCS. Sørg for at vælge den version, der har statussen **Kladde**.
 2. Vælg en funktionsopsætning i gitteret under fanen **Opsætninger**, og vælg derefter **Rediger**.
-3. Angiv navnet på kanalen i fanen **Datakanel** i feltgruppen **Parametre** i feltet **Datakanal**, og angiv navnet på kanalen. Kanalnavnet må ikke være på mere end ti tegn.
-4. I feltet **Serveradresse** skal du angive kontoudbyderens e-mailadresse. Serveradressen til **https://outlook.live.com/** er f.eks. **imap-mail.outlook.com**.
-5. Vælg **Serverport** i feltet, og angiv den port, der bruges af mailkontoudbyderen. Serverporten for **https://outlook.live.com/** er f.eks. **993**.
-6. Vælg **Brugernavnhemmelighed**, og angiv navnet på Key Vault-hemmeligheden, der indeholder id'et for mailbrugerkontoen. Denne konfiguration skal oprettes i Azure-nøgle vault og -konfiguration i dit servicemiljø. 
-7. Vælg **Brugeradgangskodehemmelighed**, og angiv navnet på Key Vault-hemmeligheden, der indeholder adgangskoden for mailbrugerkontoen.
-8. Valgfrit – Angiv værdier i felterne **Fra filter**, **Emnefilter** og **Datofilter**.
-9. Angiv navnene på de mail-mapper, hvor mails skal være:
-
-    - Importeret fra: **Hovedmappe**
-    - Gemt efter vellykket behandling: **Arkivmappe**
-    - Gemt, efter at behandling af fejlen ikke lykkedes: **fejlmappe** Du behøver ikke oprette disse mapper i e-mailfeltet. Mapperne oprettes automatisk efter den første e-fakturaimport og -behandling. 
-   
-10. Tilføj oplysningerne om filfiltre i feltgruppen **Vedhæftede filer**. Der behandles kun vedhæftede filer, der opfylder det definerede filter. Du kan f.eks. konfigurere "\*.xml" for vedhæftede filer med xml-filtype. Navnet på den vedhæftede fil bruges i Dynamics 365 Finance eller Dynamics 365 Supply Chain Management under opsætningen. 
-11. Gennemse og opdater kriterierne under fanen **Anvendelighedsregler**, hvis det er nødvendigt. Feltet **Kanal** skal være lig med den **datakanal**, der er angivet tidligere. Du kan finde flere oplysninger i [Anvendelighedsregler](e-invoicing-configuration-rcs.md#applicability-rules).
-12. Vælg **Gem**, og luk siden.
+3. Vælg **Serveradresse** under fanen **Datakanal** i feltgruppen **Parametre**, og angiv mailkontoudbyderen.
+4. Vælg **Serverport**, og angiv den port, der bruges af mailkontoudbyderen.
+5. Vælg **Brugernavnhemmelighed**, og angiv navnet på Key Vault-hemmeligheden, der indeholder id'et for mailbrugerkontoen.
+6. Vælg **Brugeradgangskodehemmelighed**, og angiv navnet på Key Vault-hemmeligheden, der indeholder adgangskoden for mailbrugerkontoen.
+7. Vælg **Emnefilter**. Gennemse og opdater den streng, der indeholder standardmailemnet, for at identificere den mail, der indeholder den elektroniske kreditorfaktura, der skal importeres.
+8. Gennemse og opdater kriterierne under fanen **Anvendelighedsregler**, hvis det er nødvendigt. Du kan finde flere oplysninger i [Anvendelighedsregler](e-invoicing-configuration-rcs.md#applicability-rules).
+9. Vælg **Gem**, og luk siden.
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Konfigurere en Microsoft SharePoint-kanal
 
@@ -77,10 +71,10 @@ Konfigurer en Microsoft SharePoint-kanal, hvis funktionen til elektronisk faktur
 
 Hvis du vil implementere funktionen Elektronisk fakturering, skal du se [Implementere funktionen Elektronisk fakturering i servicemiljøet](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Konfigurere import af kreditorfakturaer i Finance eller Supply Chain Management
+## <a name="set-up-vendor-invoice-import-in-finance-and-supply-chain-management"></a>Konfigurere import af kreditorfakturaer i Finance og Supply Chain Management
 Gennemfør trinnene i følgende to afsnit for at konfigurere forskellige typer import af kreditorfakturaer.
 
-### <a name="import-brazilian-nf-e-from-email"></a>Brasiliansk NF-e import fra e-mail
+### <a name="import-vendor-invoices-from-email"></a>Importere kreditorfakturaer fra mail
 
 1. Log på dit Finance- eller Supply Chain Management-miljø, og kontrollér, at du er i den korrekte juridiske enhed.
 2. Gå til **Organisationsadministration** > **Konfiguration** > **Elektroniske dokumentparametre**.
@@ -104,43 +98,30 @@ Gennemfør trinnene i følgende to afsnit for at konfigurere forskellige typer i
 ### <a name="import-peppol-electronic-vendor-invoices"></a>Importere PEPPOL-elektroniske kreditorfakturaer
 
 1. Gå til arbejdsområdet **Elektronisk rapportering** og vælg **Rapporteringskonfigurationer**.
-2. Vælg en **kontekstmodel for debitorfaktura**, og vælg derefter **Opret konfiguration** > **Afledt fra navn: Kundefakturakontekstmodel, Microsoft** for at oprette en afledt konfiguration.
-3. I **Kladde**-versionen skal du vælge **Designer** og i **Datamodel**-træet skal du vælge **Tilknyt model til datakilde**.
-4. Vælg **DataChannel** i træet **Definitioner**, og vælg derefter **Designer**.
-5. I træet **Datakilder** udvides containeren **$Context\_Kanal**. Vælg **Rediger**, og angiv navnet på datakanalen i feltet **Værdi**. Det er navnet på den kanal, der er angivet i konfigurationen af datakanalen til funktionen Elektronisk fakturering i RCS. 
+2. Vælg **Kontekstmodel til debitorfaktura**, og opret en afledt konfiguration.
+3. Vælg **Designer** på **Kladde**-versionen.
+4. I træet **Datamodel** skal du vælge **Debitorfaktura** og derefter vælge **Tilknyt model til datakilden**.
+5. Vælg **CustomerInvoice** i træet **Definitioner**, og vælg derefter **Designer**.
+6. Vælg **Kontekst\_Kanal** i ruden **Datakilder**. Vælg **PEPPOL** i feltet **Værdi**. Det er navnet på den kanal, der er angivet i konfigurationen af datakanalen til funktionen Elektronisk fakturering i RCS. 
 7. Vælg **Gem**, og luk siden.
 8. Luk siden.
-9. Vælg den afledte konfiguration, du netop har oprettet fra **kontekstmodellen for debitorfakturaen**, og vælg **Ændringsstatus**  > **Fuldført** i oversigtspanelet **Versioner**.
+9. Vælg **Kontekstmodel for debitorfaktura**, og vælg **Ændringsstatus** > **Fuldført** i oversigtspanelet **Versioner**.
 10. Gå til **Organisationsadministration** > **Konfiguration** > **Parametre for elektroniske dokumenter**, og under fanen **Funktioner** skal du sørge for, at **PEPPOL - Global elektronisk faktura** er valgt. 
 11. Under fanen **Eksterne kanaler** i feltgruppen **Kanaler** skal du vælge **Tilføj**.
-12. I feltet **Kanal** angives datakanalnavnet og i feltet **Beskrivelse** angives en beskrivelse.
-13. I feltet **Virksomhed** skal du vælge den juridiske enhed. 
-14. Vælg den nye afledte konfiguration fra **debitorfakturakontekstmodellen** i feltet **Dokumentkontekst**. Tilknytningsbeskrivelsen skal være en **datakanalkontekst**.
-15. Vælg **Tilføj** i feltgruppen **Importkilder**.
-16. Angiv filternavnet **Vedhæftede filer** i feltet **Navn**, og vælg **kreditorfakturahoved** i feltet **Navn på dataenhed**.
-17. Vælg **import for kreditorfaktura – Importer kreditorfaktura** i feltet **Modeltilknytning**.
-18. Klik på **Gem**, og luk derefter siden.
+12. I feltet **Kanal** skal du angive **PEPPOL**. Indtast en beskrivelse i feltet **Beskrivelse**.
+13. I feltet **Virksomhed** skal du vælge den juridiske enhed. I feltet **Dokumentkontekst** skal du vælge **Kontekst for debitorfaktura – Kontekstmodel for debitorfaktura**.
+14. Vælg **Gem**, og luk derefter siden.
 
 
 ## <a name="receive-electronic-invoices"></a>Modtage elektroniske fakturaer
-
-Tjenesten Elektronisk fakturering udfører to trin under fakturaimport fra datakanalerne:
-
-1. Får adgang til e-mailfeltet og læser e-mailen.
-2. Behandler e-mailene. 
-    
-Hvis du vil udføre disse to trin, skal klienten ringe til tjenesten manuelt for hvert trin. Det anbefales dog, at du konfigurerer et batch til modtagelse af elektroniske dokumenter.
-
 Benyt følgende fremgangsmåde for at modtage elektroniske fakturaer:
 
 1. Gå til **Organisationsadministration** > **Periodisk** > **Elektroniske dokumenter** > **Modtag elektroniske dokumenter**.
 2. Vælg **OK**, og luk derefter siden.
 
-
 ## <a name="view-receive-logs-for-electronic-invoices"></a>Se modtagelseslogge for elektroniske fakturaer
 
 Du kan se modtagelseslogfilerne for elektroniske fakturaer ved at gå til **Organisationsadministration** > **Periodisk** > **Elektroniske dokumenter** > **Modtagelseslog for elektroniske dokumenter**.
-Hvis du ikke kan se fakturaer, der er behandlet, skal du fjerne tabelfilteret.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics AX-programversion 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014.
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f1d0361da03f2fc4aaaa749d632192265483db2d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797157"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752811"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)
 
@@ -106,3 +104,6 @@ I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsof
 [Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
 
 [Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

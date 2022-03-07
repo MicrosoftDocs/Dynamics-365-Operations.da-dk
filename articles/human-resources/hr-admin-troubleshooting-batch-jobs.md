@@ -2,29 +2,28 @@
 title: Optimere performance ved at planlægge batchjobs efter arbejdstid
 description: Dette emne forklarer, hvordan du kan løse problemer med ydeevnen med Microsoft Dynamics 365 Human Resources ved at lægge batchjob, der kører i lang tid, efter arbejdstid.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 452a87cf5ba6c1ac73636584d75b2ec2ac555e02
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d2369b3209901eb2d60232a47d89284779199e1c98a56142758353d65a1faaf7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766865"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optimere performance ved at planlægge batchjobs efter arbejdstid
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -46,17 +45,17 @@ Følgende batchjob skal køre om natten eller efter arbejdstid. Sørg for at kon
 | Systemjob til databasekomprimering, der skal køre regelmæssigt uden for arbejdstid | 1 gang om dagen |
 | Systemjob til genopbygning af indeks, der skal køre regelmæssigt uden for arbejdstid | 1 gang om dagen |
 
-1. I Personale skal du vælge **Systemadministration**.
+1. I Human Resources skal du vælge **Systemadministration**.
 
 2. I panelet **Søg** skal du søge efter en af de ovennævnte kørsler.
 
 3. Vælg **Kør i baggrunden**, og vælg derefter **Gentagelse**.
 
-   ![Angiv gentagelse](media/talent-batch-history-cleanup-recurrence.png)
+   ![Angiv gentagelse.](media/talent-batch-history-cleanup-recurrence.png)
 
 4. Under **Definer gentagelse** skal du angive **Startdato** og **Starttidspunkt**, der skal være uden for arbejdstiden eller i weekenden. Vælg **Ingen slutdato**. 
 
-   ![Definer startdato og -tidspunkt for gentagelse](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definer startdato og -tidspunkt for gentagelse.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Vælg **OK**.
 
@@ -65,3 +64,6 @@ Følgende batchjob skal køre om natten eller efter arbejdstid. Sørg for at kon
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Optimere ydeevnen med automatiske oprydningsopgaver](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

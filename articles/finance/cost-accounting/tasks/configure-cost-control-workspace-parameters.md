@@ -2,11 +2,9 @@
 title: Konfigurere arbejdsområdeparametre for omkostningsstyring
 description: Du kan bruge denne procedure til at konfigurere arbejdsområdet Omkostningsstyring, så ledere på forskellige niveauer i organisationen kan få indsigt i deres omkostningsobjekter, f.eks. bærere og produktgrupper.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ecc775019445bbe97dd5a0e9198b9c605b1c65322006d912a95a5bb1fbdf879
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766928"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurere arbejdsområdeparametre for omkostningsstyring
 
@@ -58,3 +56,6 @@ Du kan bruge denne procedure til at konfigurere arbejdsområdet Omkostningsstyri
 27. Indtast eller vælg en værdi i feltet Dimensionshierarkinode for omkostningsobjekt.
     * Når du har valgt et dimensionshierarki for omkostningsobjekt, kan du udvide dimensionshierarkiet for omkostningselement for at få vist de ønskede omkostningsværdier. For eksempel kan du udvide hierarkiet for at få vist værdien i Produktionsomkostninger.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

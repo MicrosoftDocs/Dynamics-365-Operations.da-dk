@@ -2,16 +2,13 @@
 title: Planlægning af engangsleverandører i den offentlige sektor
 description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7622293340139c7f18354ecdc4b733edb602a2ce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b71544672fec13872455fd561cef303db2a41af3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407690"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188574"
 ---
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
@@ -91,7 +88,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 |------------------------------------------------------|------------------------------------------|
 | Tal                                               | Regnskabsfordelingslinjenummer      |
 | Økonomiske dimensioner                                 | Hvis den importerede fil har økonomiske dimensioner, skal du medtage alle økonomiske dimensioner med den rette navngivning, ellers vises der en fejlmeddelelse, som angiver, at finansdimensionen er ugyldig. Derefter skal du rette de økonomiske dimensioner eller fjerne kolonnerne fra filen.                                         |
-| Procent                                              | Decimalværdier er tilladt.              |
+| Procent                                              | Decimalværdier er tilladt.              |
 
 
 
@@ -99,8 +96,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md).
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 
@@ -108,3 +104,6 @@ Når du har konfigureret de forudsætninger, skal du læse [Engangsleverandører
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

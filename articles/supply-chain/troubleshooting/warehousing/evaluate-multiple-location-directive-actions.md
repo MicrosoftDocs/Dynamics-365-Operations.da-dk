@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2d5f7cf548eb6c18d9700c73ef084f197b78542e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 45995ed6f051cdf6be2b2985ff0e2cb1decf4cf0
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102957"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475887"
 ---
 # <a name="multiple-sku-option-doesnt-evaluate-multiple-location-directive-actions"></a>Indstillingen Flere SKU-indstillinger evaluerer ikke flere lokalitetsdirektivhandlinger
 
@@ -25,4 +25,4 @@ Lokationsvejledninger for arbejdsordretypen *Salgsordrer* og arbejdstypen *Læg 
 
 ## <a name="resolution"></a>Løsning
 
-En ny funktion, *Evaluer alle handlinger for lokationsvejledninger med flere SKU'er*, er blevet tilføjet i version 10.0.15 (se [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Denne funktion evaluerer alle handlinger for lokationsvejledninger med flere SKU'er. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.  Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Administratorer kan bruge siden [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt.
+En ny funktion, *Evaluer alle handlinger for lokationsvejledninger med flere SKU'er*, er blevet tilføjet i version 10.0.15 (se [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Denne funktion evaluerer alle handlinger for lokationsvejledninger med flere SKU'er. Hvis du har brug for denne funktion, skal du bruge [Funktionsstyring](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) til at aktivere den.

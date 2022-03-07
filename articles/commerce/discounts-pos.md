@@ -2,16 +2,13 @@
 title: Få vist rabatter i POS
 description: I dette emne forklares det, hvordan Microsoft Dynamics 365 Commerce hjælper salgsforbindelser med at få mere at vide om kampagner, og hvordan de kan bruges til at krydssælge og videresælge bevægelser.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411084"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792841"
 ---
 # <a name="show-discounts-in-pos"></a>Få vist rabatter i POS
 
@@ -69,3 +66,6 @@ I følgende illustration vises den logik, der bruges, når rabattens sammensatte
 I følgende illustration vises den logik, der bruges, når rabattens sammensatte kontrol er angivet til **Kun bedste pris indenfor prioritet, altid sammensat på tværs af prioriteter**.
 
 ![Logik for bedste pris kun inden for prioritet, altid sammensat på tværs af prioritet](./media/Model_2.png "Logik for bedste pris kun inden for prioritet, altid sammensat på tværs af prioritet").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

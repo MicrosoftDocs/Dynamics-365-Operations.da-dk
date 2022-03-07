@@ -2,15 +2,12 @@
 title: Indholdsblokmodul
 description: Dette emne omhandler indholdsblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,21 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726433"
 ---
 # <a name="content-block-module"></a>Indholdsblokmodul
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler indholdsblokmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Et indholdsblokmodul bruges til markedsføring af produkter eller kampagner via en kombination af billeder og tekst. En forhandler kan f.eks. føje et indholdsblokmodul til startsiden på et e-handels-websted for at markedsføre et nyt produkt og tiltrække kundernes opmærksomhed.
 
@@ -52,15 +46,15 @@ Desuden kan temaet vise forskellige egenskaber for hvert layout. En temaudvikler
 
 Følgende billede viser et eksempel på et indholdsblokmodul med et Helte-layout.
 
-![Eksempel på et hero-modul](./media/Hero.PNG)
+![Eksempel på et hero-modul.](./media/Hero.PNG)
 
 Følgende billede viser et eksempel på et indholdsblokmodul med et funktionslayout.
 
-![Eksempler på funktionsmoduler](./media/Feature.PNG)
+![Eksempler på funktionsmoduler.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Egenskaber for indholdblokmodul
 
-| Egenskabsnavn  | Værdier | Beskrivelse |
+| Egenskabsbetegnelse  | Værdier | Betegnelse |
 |----------------|--------|-------------|
 | Billede          | Billedfil | Der kan bruges et billede til at vise et produkt eller en kampagne. Der kan overføres et billede til billedgalleriet, eller der kan bruges et eksisterende billede. |
 | Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Alle hero-moduler kan have en overskrift. Overskrift koden **H2** bruges som standard til overskriften. Koden kan dog ændres, så den opfylder tilgængelighedskravene. |
@@ -107,3 +101,6 @@ Hvis du vil føje et hero-modul til en ny side og angive de påkrævede egenskab
 [Tekstblokmodul](add-content-rich-block.md)
 
 [Videoafspillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

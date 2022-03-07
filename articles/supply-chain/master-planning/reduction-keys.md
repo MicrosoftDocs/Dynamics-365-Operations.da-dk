@@ -2,16 +2,13 @@
 title: Prognosereduktionsnøgler
 description: Dette emne indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424500"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474766"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduktionsnøgler
 
@@ -89,7 +86,18 @@ Hvis du i dette tilfælde kører prognoseplanlægningen den 1. januar, forbruges
 
 ### <a name="transactions--reduction-key"></a>Transaktioner – reduktionsnøgle
 
-Hvis du vælger **Transaktioner - reduktionsnøgle** reduceres prognosekravene af de transaktioner, som finder sted i løbet af de perioder, der er defineret af reduktionsnøglen.
+Hvis du angiver den **metode, der bruges til at reducere feltet budgetbehov** til *Transaktioner – reduktionsnøgle*, reduceres prognosebehovet med de kvalificerede efterspørgselsposteringer, der forekommer i de perioder, der er defineret i reduktionsnøglen.
+
+Den kvalificerede efterspørgsel defineres af feltet **Reducer prognose efter** på siden **Disponeringsgrupper**. Hvis du angiver feltet **Reducer budget pr. felt** til *Ordrer*, betragtes kun salgsordreposteringer som værende kvalificeret efterspørgsel. Hvis du angiver den til *Alle transaktioner*, betragtes eventuelle lagerposteringer for ikke-interne afgange som kvalificerede behov. Hvis der skal inkluderes interne ordrer, når prognosen reduceres, skal indstillingen **Medtag interne ordrer** angives til *Ja*.
+
+Prognosereduktion starter med den første (tidligste) efterspørgselsprognosepost i reduktionsnøgleperioden. Hvis antallet af kvalificerede lagerposteringer er større end antallet af linjer i efterspørgselsprognosen i samme reduktionsnøgleperiode, bruges saldoen for antallet for lagerposteringer til at reducere antallet i efterspørgselsprognosen i den forrige periode (hvis der ikke er brugt en prognose).
+
+Hvis der ikke findes et ikke-forbrugt budget i den forrige reduktionsnøgleperiode, bruges saldoen for antallet for lagertransaktioner til at reducere budgetantallet i den næste måned (hvis der ikke er et budget, der ikke er brugt).
+
+Værdien i feltet **Procent** på reduktionsnøglelinjerne bruges ikke, når den **metode, der bruges til at reducere budgetbehovsfeltet**, er angivet til *Transaktioner - reduktionsnøgle*. Det er kun datoerne, der bruges til at definere reduktionsnøgleperioden.
+
+> [!NOTE]
+> Alle budgetter, der bogføres på eller før dags dato, ignoreres og bruges ikke til at oprette ordreforslag. Hvis f.eks. efterspørgselsprognosen for måneden genereres den 1. januar, og du kører behovsplanlægning, der omfatter efterspørgselsprognosen den 2. januar, ignoreres den efterspørgselsprognoselinje, der er dateret 1. januar.
 
 #### <a name="example-transactions--reduction-key"></a>Eksempel: transaktioner – reduktionsnøgle
 
@@ -199,7 +207,7 @@ Derfor oprettes følgende planlagte ordrer.
 En prognosereduktionsnøgle anvendes af metoderne **Transaktioner - reduktionsnøgle** og **Procent - reduktionsnøgle** til at reducere prognosekrav. Følg følgende fremgangsmåde for at oprette og konfigurere en reduktionsnøgle:
 
 1. Gå til **Varedisponering \> Opsætning \> Dækning \> Reduktionsnøgler**.
-2. Vælg **Ny** eller tryk på **Ctrl+N** for at oprette en reduktionsnøgle.
+2. Vælg **Ny** for at oprette en reduktionsnøgle.
 3. I feltet **Reduktionsnøgle** indtastes en unik identifikator for prognosereduktionsnøglen. Dernæst indtastes et navn i feltet **Navn**. 
 4. Fastsæt perioderne og reduktionsnøgleprocenterne for hver periode:
 
@@ -227,3 +235,6 @@ Når du vælger **Transaktioner - reduktionsnøgle** eller **Transaktioner - dyn
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over behovsplaner](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

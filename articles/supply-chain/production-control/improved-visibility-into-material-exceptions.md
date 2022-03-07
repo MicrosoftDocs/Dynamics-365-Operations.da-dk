@@ -2,11 +2,13 @@
 title: Synlighed i materialeundtagelser
 description: I dette emne beskrives, hvordan du kan få bedre indsigt i undtagelser for råmaterialer til produktionsordrer og batchordrer.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3ea260535e76d7ac3d73d4bca930b7b4b2d22b2b2c076d4d1346785eaed85b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd4392417c7fd389c1c5fadf3e61be33a2f336db
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726795"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011116"
 ---
 # <a name="visibility-into-material-exceptions"></a>Synlighed i materialeundtagelser
 
@@ -57,17 +59,10 @@ Når du vælger feltet, åbnes siden **Frigiv til lagersted**. Denne side viser 
 
 Når en stykliste- eller formellinje er frigivet, føjes den til en ny produktionsbølge eller en eksisterende åben bølge, afhængigt af konfigurationen af produktionsbølgeskabelonen. Via konfigurationen af bølgeskabelonen kan du også angive en bølge, så den automatisk behandles, når en stykliste- eller formellinje frigives. Når bølgen er behandlet, oprettes lagerstedsarbejde for råvarepluk. Hvis bølgeskabelonen er konfigureret, så bølger ikke behandles på tidspunktet for frigivelsen, forbliver bølgen i ubehandlet-tilstand. Feltet **Ubehandlede bølger, der kræver opmærksomhed** viser det antal stykliste- og formellinjer, der er frigivet til lageret i ubehandlede bølger, og som har en råvaredato, der er tidligere end eller lig med datoen i arbejdsområdet. Linjerne skal også forbruges af en operationsressource, der gælder for filteret i arbejdsområdet.
 
-Når feltet er markeret, åbnes siden **Alle produktionsbølger**. Denne side filtreres efter antallet af åbne bølger, der indeholder bølgelinjer fra frigivne stykliste- og formellinjer, der opfylder kriterierne for feltet.
-
-### <a name="manually-maintain-production-waves"></a>Vedligeholde produktionsbølger manuelt
-
-På siden **Alle produktionsbølger** kan du bruge knapperne under fanen **Bølge** i handlingsruden til manuelt at **behandle** og **frigive** en bølge. Du kan også bruge indstillingen **Vedligehold produktioner** til at se og vedligeholde **Produktionsstyklistepulje**-data, der bruges til at håndtere bølgeprocessen.
+Når feltet er markeret, åbnes siden **Alle produktionsbølger**. Denne side filtreres efter antallet af åbne bølger, der indeholder bølgelinjer fra frigivne stykliste- og formellinjer, der opfylder kriterierne for feltet. Fra siden **Alle produktionsbølger** kan du behandle bølgen manuelt.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Åbent lagerstedsarbejde, der kræver opmærksomhed
 
 Feltet **Åbent lagerstedsarbejde, der kræver opmærksomhed** viser det antal stykliste- og formellinjer, der er frigivet til lageret i ubehandlede bølger, og som har ubehandlet arbejde, der er tidligere end eller lig med datoen i arbejdsområdet. Linjerne skal også forbruges af en operationsressource, der gælder for filteret i arbejdsområdet.
 
 Når feltet er markeret, åbnes siden **Alt arbejde**. Denne side filtreres efter antallet af åbne arbejdsoverskrifter, der indeholder arbejdslinjer fra frigivne stykliste- og formellinjer, der opfylder kriterierne for feltet. Fra siden **Alt arbejde** kan du behandle arbejdet manuelt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

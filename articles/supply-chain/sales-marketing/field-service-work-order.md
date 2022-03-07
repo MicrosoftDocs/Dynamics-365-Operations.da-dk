@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528917"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235430"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 
@@ -62,13 +61,13 @@ Følgende synkroniseringsopgaver kræves, før salgsordrehoveder og -linjer kan 
 
 | **Field Service** | **Supply Chain Management** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS-salgsordrehoveder |
-| msdyn_workorderservices | CDS-salgsordrelinjer   |
-| msdyn_workorderproducts | CDS-salgsordrelinjer   |
+| msdyn_workorders        | Dataverse-salgsordrehoveder |
+| msdyn_workorderservices | Dataverse-salgsordrelinjer   |
+| msdyn_workorderproducts | Dataverse-salgsordrelinjer   |
 
 ## <a name="entity-flow"></a>Enhedsflow
 
-Arbejdsordrer oprettes i Field Service. Hvis arbejdsordrer kun indeholder eksternt vedligeholdte produkter, og værdien **Status for arbejdsordre** adskiller sig fra **Åben – ikke planlagt** og **Lukket – Annulleret**, kan arbejdsordrer synkroniseres til Supply Chain Management via et Common Data Service-dataintegrationsprojekt. Opdateringer af arbejdsordrer synkroniseres som salgsordrer i Supply Chain Management. Disse opdateringer omfatter oplysninger om oprindelsestype og status.
+Arbejdsordrer oprettes i Field Service. Hvis arbejdsordrer kun indeholder eksternt vedligeholdte produkter, og værdien **Status for arbejdsordre** adskiller sig fra **Åben – ikke planlagt** og **Lukket – Annulleret**, kan arbejdsordrer synkroniseres til Supply Chain Management via et Microsoft Dataverse-dataintegrationsprojekt. Opdateringer af arbejdsordrer synkroniseres som salgsordrer i Supply Chain Management. Disse opdateringer omfatter oplysninger om oprindelsestype og status.
 
 ## <a name="estimated-versus-used"></a>Estimeret vs. Brugt
 
@@ -273,3 +272,6 @@ Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
 [![Skabelontilknytning i dataintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Konfigurere debitorkonti til elektronisk OIOUBL-fakturering
 description: Denne opgave gennemgår, hvordan du konfigurerer en debitorkonto for elektronisk OIOUBL fakturering.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, RegNumTaxIdLookup, smmContactPerson, DirPartyLookup, ContactPersonLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ecb922c2e02d3d9d20b0795ad98399b38d1fb38d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31e588d97b299f674a33193fe9e25b5b731536ab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407666"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819442"
 ---
 # <a name="set-up-customer-accounts-for-oioubl-electronic-invoicing"></a>Konfigurere debitorkonti til elektronisk OIOUBL-fakturering
 
@@ -50,3 +47,6 @@ Det er den tredje af seks procedurer, der viser processen til oprettelse af e-fa
 
 ## <a name="set-up-contact-information-for-a-customer"></a>Konfigurer kontaktoplysninger for en kunde
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Oversigt over sider til kontostyring
 description: Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e194004476545fb142f71aa4bd889dbbc70c6ed4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969845"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984513"
 ---
 # <a name="account-management-pages-overview"></a>Oversigt over sider til kontostyring
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 På sider til kontostyring kan kunderne se oplysninger, der er relateret til deres konto og deres ordrer. Sider til kontostyring omfatter landingssiden til kontostyring og sider til brugerens profil, adresser, ordrehistorik, ordreoplysninger, fordelskundepoint og ønskeliste.
 
@@ -39,15 +35,15 @@ Når en kunde logger på og vælger **Min konto**, åbnes landingssiden til kont
 
 I følgende illustration vises et eksempel på landingssiden til kontostyring.
 
-![Eksempel på en landingsside til kontostyring](./media/Account-Management.PNG)
+![Eksempel på en landingsside til kontostyring.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Siden Min profil
 
-På siden **Min profil** vises kundens kontooplysninger, f.eks. personens navn og telefonnummer. Kunden kan opdatere sine profiloplysninger på denne side. Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.
+På siden **Min profil** vises kundens kontooplysninger, f.eks. vedkommende persons navn og telefonnummer. Kunden kan opdatere sine profiloplysninger på denne side. Denne side kan tilpasses, så den indeholder yderligere indstillinger for kundekontoen, f.eks. en indstilling for tilmelding til marketingmail.
 
 I følgende illustration vises et eksempel på en **Min profil**-side, der er oprettet ved hjælp af modulbiblioteket.
 
-![Eksempel på siden Min profil](./media/Account-Management-MyProfile.PNG)
+![Eksempel på siden Min profil.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Siden Adresser
 
@@ -55,7 +51,7 @@ På siden **Adresser** kan kunden føje adresser til sin konto. Den viser også 
 
 I følgende illustration vises et eksempel på siden **Adresser**.
 
-![Eksempel på en adresseside](./media/Account-Management-Address.png)
+![Eksempel på en adresseside.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Siderne Ordrehistorik og Ordredetaljer
 
@@ -63,11 +59,11 @@ På siden **Ordrehistorik** vises en oversigt over alle ordrer, som kunden har a
 
 I følgende illustration vises et eksempel på siden **Ordrehistorik**.
 
-![Eksempel på en side med ordrehistorik](./media/Account-Management-OrderHistory.PNG)
+![Eksempel på en side med ordrehistorik.](./media/Account-Management-OrderHistory.PNG)
 
 I følgende illustration vises et eksempel på siden **Ordredetaljer**.
 
-![Eksempel på en side med ordredetaljer](./media/Account-Management-OrderDetails.PNG)
+![Eksempel på en side med ordredetaljer.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Siden Fordelskundeprogram
 
@@ -75,7 +71,7 @@ På siden **Fordelskundeprogram** kan kunden blive medlem af et fordelskundeprog
 
 Følgende illustration viser et eksempel på siden **Fordelskundeprogram**.
 
-![Eksempel på en side med fordelskundeprogram](./media/Account-Management-Loyalty.PNG)
+![Eksempel på en side med fordelskundeprogram.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Siden Ønskeliste
 
@@ -83,7 +79,7 @@ Siden **Ønskeliste** viser en liste over de varer, som kunden har føjet til si
 
 Følgende illustration viser et eksempel på siden **Ønskeliste**.
 
-![Eksempel på siden Ønskeliste](./media/Account-Management-Wishlist.PNG)
+![Eksempel på siden Ønskeliste.](./media/Account-Management-Wishlist.PNG)
 
 Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder du under [Kontostyring](account-management.md).
 
@@ -95,3 +91,6 @@ Yderligere oplysninger om kontostyringsmoduler, og hvordan de oprettes, finder d
 
 [Oversigt over sider til indkøbsvogn og betaling ved kassen](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
