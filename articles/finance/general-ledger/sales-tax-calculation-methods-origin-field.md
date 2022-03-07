@@ -2,28 +2,25 @@
 title: Momsberegningsmetoderne i feltet Grundlag
 description: I denne artikel beskrives indstillingerne i feltet Grundlag på siden Momskoder, og hvordan momsen beregnes ud fra den valgte indstilling for en momskode.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0eb3671051d9a3be9430050e2a0ad4227b17677e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441568"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815350"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Momsberegningsmetoderne i feltet Grundlag
 
@@ -131,3 +128,6 @@ Dokument/kladde er angivet til Beløb inkl. moms = Nej Beløb på transaktionsli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

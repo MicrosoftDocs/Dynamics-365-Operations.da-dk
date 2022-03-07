@@ -2,16 +2,13 @@
 title: Formeldesigner
 description: I dette emne beskrives, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
 author: cvocph
-manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3673e2a6c135e2dd7cbc593ee737a2f843b2ee2637ae17ce975d157287229646
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767406"
 ---
 # <a name="formula-designer"></a>Formeldesigner
 
@@ -121,3 +118,6 @@ Klik på **Opsætning** for at tilpasse de oplysninger, der vises i formeldesign
 |     Stykliste     | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. De valgte kriterier vises nederst under begge faner i formeldesigneren. |
 |    Rute    |                                           Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

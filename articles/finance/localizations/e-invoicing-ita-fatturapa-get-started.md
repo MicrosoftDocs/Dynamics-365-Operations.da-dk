@@ -2,7 +2,7 @@
 title: Konfigurere direkte integration af italiensk FatturaPA med SDI
 description: Dette emne indeholder oplysninger, der kan hjælpe dig med at komme i gang med elektronisk fakturering for Italien og oprette direkte integration af italiensk FatturaPA med udvekslingssystemet (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 12/14/2021
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,16 +10,18 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 0ccc9f04e42e748b4531622a1c90559d4ca17196
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984797"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922446"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Konfigurere direkte integration af italiensk FatturaPA med SDI
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Elektronisk fakturering for Italien understøtter i øjeblikket muligvis ikke alle de funktioner, der er tilgængelige for elektroniske fakturaer i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.

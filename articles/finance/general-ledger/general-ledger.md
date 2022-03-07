@@ -2,28 +2,25 @@
 title: Oversigt over finans og økonomirapportering
 description: Brug finansregnskabet til at definere og administrere finansposter for den juridiske enhed.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 65431
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ade10020e4bab02490c9104c37fe1f234d634e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 403cd616faef2f856c21a771d46607c41987f0bb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441672"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897522"
 ---
 # <a name="general-ledger-home-page"></a>Startside for finans
 
@@ -55,7 +52,7 @@ Reglerne skal desuden opdateres regelmæssigt, når skattemyndighederne ændrer 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="financial-reporting"></a>Økonomirapportering
 Gå til emnet [Oversigt over økonomirapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) for at få oplysninger om økonomirapporter.
@@ -74,3 +71,6 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 - [Værd at vide om Finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

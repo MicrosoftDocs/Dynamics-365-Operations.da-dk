@@ -1,26 +1,23 @@
 ---
 title: Tildele en status for produktlivscyklus til et frigivet produkt
 description: Denne fremgangsmåde viser, hvordan du tildeler en status for produktlivscyklus til et frigivet produkt.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e7df272a946506dfa4e8d7a04181dd0cb40972c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 02a1a32213d9b44574ed47bc32a1683c205024a6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424480"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566977"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>Tildele en status for produktlivscyklus til et frigivet produkt
 
@@ -37,3 +34,6 @@ Denne fremgangsmåde viser, hvordan du tildeler en status for produktlivscyklus 
 5. Indtast eller vælg en værdi i feltet Status for produktlivscyklus.
 6. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,37 +2,32 @@
 title: NF-e-brugerdefineret certifikatvalidering
 description: Dette emne giver oplysninger om aktivering og brug af det brugerdefinerede NF-e-certifikat.
 author: gionoder
-manager: AnnBe
-ms.date: 10/06/2020
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 26ffed1f49d9087ca767aab1b8cac41b099f73cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8144e16b127bdbe954ef44f52c5ac71689a2036e6085e9a4ccc8bb17f91ae9b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755585"
 ---
-# <a name="nf-e-custom-certificate-validation"></a>NF-e-brugerdefineret certifikatvalidering
+# <a name="nf-e-custom-certificate-validation"></a>NF-e-tilpasset certifikatvalidering
 
 [!include [banner](../includes/banner.md)]
 
-Når du aktiverer NF-e-brugerdefineret certifikatkontrolfunktionen, giver brugerdefineret validering en forbindelse til webtjenesterne. Denne forbindelse er påkrævet for at overføre NF-e og modtage autorisation fra SEFAZ.
+Egenskaben **Servergodkendelsesformål** fra de certifikater, der er udstedt af det brasilianske rodnøglecenter, er som standard deaktiveret og skal aktiveres manuelt. I nogle tilfælde kan den automatiske certifikatopdatering ændre denne egenskab, så den ikke længere er aktiveret. Hvis dette sker, påvirkes TLS-forbindelsen og er ikke længere pålidelig. Muligheden for at udstede det brasilianske elektroniske regnskabsdokument model 55 (NF-e) i produktionsmiljøer for tilstande af Minas Gerais (MG) og Paraná (PR) påvirkes også.
 
-Egenskaben **Formål for servergodkendelse** fra certifikatet V5 udstedes af det brasilianske rodnøglecenter. Denne egenskab er deaktiveret som standard og skal aktiveres manuelt. I nogle tilfælde kan den automatiske certifikatopdatering ændre denne egenskab, så den ikke længere er aktiveret. Hvis dette sker, påvirkes TLS-forbindelsen og er ikke længere pålidelig. Muligheden for at udstede NF-e i produktionsmiljøer for tilstande af Minas Gerais (MG) og Paraná (PR) påvirkes også.
+Du kan aktivere rettelsen til **brugerdefineret validering af NF-e-certifikater** ved at gå til **Funktionsstyring**. Denne funktion giver mulighed for en alternativ løsning til validering af V5- og V10-certifikatet og tillader en sikker forbindelse til webtjenesterne, hvilket er påkrævet for sikker overførsel af NF-e og modtagelse af godkendelsen fra SEFAZ.
 
-Denne opdatering giver mulighed for en alternativ løsning til certifikatvalidering, hvilket betyder, at det er muligt at oprette en sikker kommunikation.
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

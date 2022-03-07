@@ -2,28 +2,25 @@
 title: Kreditorposteringsprofil
 description: Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Finans.
 author: abruer
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43450c5f7ab8295b896b591880da9d0bddd955cf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441392"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189487"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
@@ -31,8 +28,7 @@ ms.locfileid: "4441392"
 
 Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Finans.
 
-<a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
------------------------
+## <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
 Kreditorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle kreditorer, en gruppe kreditorer eller en enkelt kreditor. Disse indstillinger bruges, når du opretter indkøbsordrer, kreditorfakturaer og kontantbetalinger. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. Standardposteringsprofilen defineres i oversigtspanelet **Finans og Moms** på siden **Kreditorparametre**. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
 
@@ -119,3 +115,6 @@ Angiv følgende værdier for at definere en posteringsprofil
 | **Udligning** | Vælg denne indstilling for at kunne foretage automatisk udligning af poster med denne posteringsprofil. Hvis ikke denne indstilling vælges, skal posteringerne udlignes manuelt på siden **Udlign åbne posteringer**. |
 | **Annuller**     | Vælg denne indstilling, hvis du vil kunne annullere poster med denne posteringsprofil.                                                                                                               |
 | **Luk**      | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

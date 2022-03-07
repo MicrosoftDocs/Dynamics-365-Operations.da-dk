@@ -1,12 +1,10 @@
 ---
 title: Arbejdsområdet Mit team til mobilenheder
-description: Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale. Brugerne kan også sende ros til enkeltpersoner i deres rapporteringskæde.
+description: Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,14 +12,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5ce0da7eb99d6da876362bb7e3f2cfbb9e561cfd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680964"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358935"
 ---
-# <a name="my-team-mobile-workspace"></a>Arbejdsområdet Mit team til mobilenheder
+# <a name="my-team-mobile-workspace"></a>Mobilarbejdsområdet Mit team
 
 [!include [banner](../includes/banner.md)]
 
@@ -80,7 +78,7 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 3.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 4.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-[![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Træk ned for at opdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Få vist teammedlemmer ved hjælp af arbejdsområdet Mit team til mobilenheder
 1.  I mobilappen skal du vælge mobilarbejdsområdet **Mit team**. Der vises en oversigt over teammedlemmer. Oversigten viser også hvert teammedlems titel og eventuelle direkte underordnede, som medlemmet har.
@@ -97,3 +95,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 1.  Vælg **Send ros**. 
 1. Angiv teksten til den ros, du vil sende. 
 1. Vælg **Udført**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

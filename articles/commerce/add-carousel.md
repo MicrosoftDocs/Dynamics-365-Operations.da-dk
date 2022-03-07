@@ -2,15 +2,12 @@
 title: Karruselmodul
 description: Dette emne omhandler karruselmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721049"
 ---
 # <a name="carousel-module"></a>Karruselmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler karruselmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Et karruselmodul bruges til at placere flere kampagnevarer (herunder detaljerede billeder) i et roterende karruselbanner, som kunderne kan gennemse. En detailhandler kan f. eks. bruge et karruselmodul på en hjemmeside for at vise flere nye produkter eller kampagner.
 
@@ -45,11 +40,11 @@ Du kan tilføje indholdsblokmoduler inde i et karruselmodul. Egenskaberne for ka
 
 Det følgende billede viser et eksempel på et karruselmodul, der bruges på en startside. Dette karruselmodul indeholder flere blokelementer med indhold.
 
-![Eksempel på et karruselmodul](./media/Hero.PNG)
+![Eksempel på et karruselmodul.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Egenskaber for karruselmodul
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Automatisk afspilning                  | **Sand** eller **Falsk** | Hvis værdien er angivet til **Sand**, sker overgangen mellem varerne inde i karrusellen automatisk. Hvis værdien er angivet til **Falsk**, sker der ingen overgang, medmindre kunden bruger tastaturet eller musen til at flytte fra en vare til den næste. |
 | Interval for glidende interval | En værdi i sekunder    | Intervallet for overgange mellem varerne. |
@@ -86,3 +81,6 @@ Hvis du vil føje et karruselmodul til en ny side og angive de påkrævede egens
 [Indholdsblokmodul](add-hero-module.md)
 
 [Videoafspillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

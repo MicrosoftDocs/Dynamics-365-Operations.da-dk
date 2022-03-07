@@ -2,11 +2,9 @@
 title: Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services
 description: I dette emne beskrives det, hvordan du henter konfigurationer af elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
@@ -17,18 +15,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ea603d01d05e98ac69d5a0d12802b5f23ee34793bf4c9b4f885f0e4303f77d2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683299"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762266"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer af elektronisk rapportering (ER)](general-electronic-reporting.md#Configuration) fra det [delte aktivbibliotek](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Brugen af LCS som opbevaringslager for ER-konfigurationer [udfases](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Du kan finde flere oplysninger under [RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Log på programmet ved hjælp af en af følgende roller:
 
@@ -40,7 +41,7 @@ Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer a
 3. I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.
 4. I feltet **Microsoft** skal du vælge **Lagre**.
 
-    [![Microsoft-felt på siden Lokaliseringskonfigurationer](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft-felt på siden Lokaliseringskonfigurationer.](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. På siden **Konfigurationslagre** i gitteret, skal du vælge det eksisterende lager for **LCS**-typen. Hvis lageret ikke vises i gitteret, skal du følge disse trin:
 
@@ -54,7 +55,7 @@ Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer a
 
 6. Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.
 
-    [![Siden Konfigurationslagre](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Siden Konfigurationslagre.](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
     > [!TIP]
     > Hvis du har problemer med at få adgang til LCS-lageret for at kunne hente konfigurationer fra det delte aktivbibliotek i LCS, kan du i stedet hente konfigurationer fra det [globale lager](er-download-configurations-global-repo.md).
@@ -66,7 +67,7 @@ Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer a
     > [!NOTE]
     > Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes på den aktuelle forekomst.
 
-    [![Siden Konfigurationslager](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Siden Konfigurationslager.](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
 > Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Du skal løse disse problemer, før du kan bruge den importerede konfigurationsversion. Se listen over relaterede emner til dette emne for at få flere oplysninger.
@@ -76,3 +77,6 @@ Dette emne forklarer, hvordan du henter den nyeste version af [Konfigurationer a
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 title: Tilbageføre bogførte leasingtransaktioner
 description: Dette emne forklarer, hvordan du tilbagefører en bogført leasingtransaktion. Alle transaktioner, der oprettes via aktivleasing, kan tilbageføres.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseTransactions
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3e4908ddab2650e5ff7e4a28bf916604d165d08c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f76b75a968e9ee9a3c545f646077c16282b5b185aa88025653f7443fbcfd9581
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770659"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Tilbageføre bogførte leasingtransaktioner
 
@@ -55,3 +53,6 @@ Udfør følgende trin for at annullere en tilbageført postering.
 Når du vælger **Tilbagefør sporing**, vises en dialogboks, der viser både de oprindelige posteringer og de tilbageførte posteringer sammen med et nummer, der kaldes et sporingsnummer.
 
 Du kan også spore annulleringer ved hjælp af den relevante **Tidsplan**-side. Feltet **Tilbagefør** fjernes, mens feltet **Kladde** er markeret. Derudover opdateres feltet **Seneste journalnummer** med kladdenummeret for den tilbagekaldte postering, og feltet **Kladdenummer** opdateres med kladdenummeret for tilbageførslen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

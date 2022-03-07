@@ -1,12 +1,10 @@
 ---
 title: Styring af arbejdstimer
 description: I dette emne beskrives styring af arbejdstimer i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018465"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838652"
 ---
 # <a name="work-hour-control"></a>Styring af arbejdstimer
 
@@ -73,3 +71,6 @@ I skærmbilledet herunder vises et eksempel på en beregning af **Styring af akt
 Du kan også foretage en timeberegning ved at vælge flere aktiver i **Alle aktiver** eller **Aktive aktiver**. Derefter skal du klikke på knappen **Timestyring** i oversigtspanelet **Generelt**. De valgte anlægsaktiver indsættes automatisk i feltet **Aktiv** i oversigtspanelet **Poster, der skal indgå**. Klik på **OK** i dialogboksen **Styring af aktivtimer**, hvorefter beregningen for de valgte aktiver vises. Den samme procedure kan udføres for arbejdssteder i **Alle arbejdssteder** eller **Aktive arbejdssteder** og for arbejdsordrer i **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,35 +1,32 @@
 ---
 title: Årsagskoder for lageroptælling
 description: Dette emne beskriver, hvordan du konfigurerer og anvender årsagskoder til optællingsopgaver.
-author: Mirzaab
-manager: tfehr
-ms.date: 03/15/2017
+author: perlynne
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 1025dd00db2e8b87e3c76e3047a7cf470a2d6641
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424423"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500584"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsagskoder for lageroptælling
 
 [!include [banner](../includes/banner.md)]
 
-Med årsagskoder kan du analysere resultaterne af en optællingsproces og eventuelle uoverensstemmelser, der opstår under denne proces. Du kan angive årsagen til optællingen, f.eks. en ødelagt palle eller en regulering af lageret, der er baseret på lagerprøver.
+Med årsagskoder kan du analysere resultaterne af en optællingsproces og eventuelle uoverensstemmelser, der opstår under denne proces. Du kan angive årsagen til optællingen, f.eks. en ødelagt palle eller en regulering af lageret, der er baseret på lagerprøver. Du kan samtidig bruge reguleringsfunktionen til at bogføre værdien af reguleringer af lagerbeholdningen på den relevante modkonto på baggrund af årsagen til hver enkelt lagerregulering.
 
 ## <a name="recommendation"></a>Anbefaling
 
@@ -38,17 +35,30 @@ Før du konfigurerer systemet, anbefales det, at du definerer en strategi for at
 - Skal årsagskoder være obligatoriske på lagersteder?
 - Årsagskoder skal være obligatoriske eller valgfrie for bestemte varer?
 - Hvor mange årsagskoder skal du bruge?
+- Skal du vælge en begrænset liste over årsagskoder for reguleringer på forhånd?
 - Hvordan skal brugere af stregkodescannere bruge årsagskoder? Skal årsagskoderne være forvalgte, obligatoriske eller ikke kunne redigeres?
 - Kræver lagermedarbejdere andre funktionsmåder for årsagskoder på mobile scannere? Hvis svaret er Ja, kan du oprette flere menupunkter og tildele dem til forskellige personer.
+- Skal årsagskoderne skabe økonomisk modkontobogføring?
 
-## <a name="where-reason-codes-apply"></a>Hvor anvendes årsagskoder
+## <a name="turn-on-reason-code-features-in-your-system"></a>Aktivere årsagskodefunktioner i systemet
 
-Du kan oprette flere årsagskodepolitikker, og hver årsagskodepolitik kan have to politikker for årsagskoder for optælling. Politikker for optællingsårsagskoder kan bruges på lagerstedsniveau eller vareniveau.
+Hvis du ikke kan se alle de funktioner, der er beskrevet i dette emne, i dit system, er du sandsynligvis nødt til at aktivere funktionen *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
-## <a name="set-up-reason-code-policies"></a>Konfigurere politikker for årsagskoder
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*
 
-1. Vælg **Lagerstyring** \> **Opsætning** \> **Lager** \> **Politikker for optællingsårsagskode**, og opret en ny politik for årsagskoder.
-2. I feltet **Type af optællingsårsagskode** skal du vælge enten **Obligatorisk** eller **Valgfrit** for at angive, om valget af en årsagskode skal være en valgfri eller obligatorisk handling i en af følgende optællingskladder:
+## <a name="set-up-reason-codes"></a>Definer årsagskoder
+
+### <a name="set-up-reason-code-policies"></a>Konfigurere politikker for årsagskoder
+
+Du kan oprette flere politikker for årsagskoder for at styre, hvornår og hvordan optælling af årsagskoder anvendes. Hver årsagskodepolitik kan have en af to typer optællingsårsagskoder (*Valgfri* eller *Obligatorisk*). Politikker for optællingsårsagskoder kan bruges på lagerstedsniveau eller vareniveau.
+
+Hvis du vil oprette en årsagskodepolitik, skal du følge disse trin.
+
+1. Gå til **Lagerstyring** \> **Konfiguration** \> **Lager** \> **Politikker for optællingsårsagskode**.
+1. Gå til handlingsruden, og vælg **Ny** for at føje en politik til gitteret.
+1. Angiv feltet **Navn** for den nye politik.
+1. I feltet **Type af optællingsårsagskode** skal du vælge enten *Obligatorisk* eller *Valgfrit* for at angive, om valget af en årsagskode skal være en valgfri eller obligatorisk handling i en af følgende lagerreguleringsprocesser:
 
     - Cyklusoptælling (mobilenhed)
     - Spotoptælling (mobilenhed)
@@ -56,34 +66,63 @@ Du kan oprette flere årsagskodepolitikker, og hver årsagskodepolitik kan have 
     - Regulering ind (mobilenhed)
     - Regulering ud (mobilenhed)
     - Optællingskladde (Rich Client)
+    - Antalsjregulering/Onlineoptælling (Rich Client)
 
-Du kan også angive årsagskoder for individuelle lagersteder og produkter. Opsætningen af årsagskoder for produkter kan se bort fra opsætningen for lagersteder.
+Du kan konfigurere politikker for årsagskoder til individuelle lagersteder og produkter. Årsagskodeopsætningen for et produkt kan tilsidesætte opsætningen af produktets lagersted.
 
-## <a name="mandatory-reason-codes"></a>Obligatoriske årsagskoder
+> [!NOTE]
+> For lagersteder og varer, hvor feltet **Politik for optællingsårsagskode** er angivet til *Obligatorisk* , kan optællingskladden ikke fuldføres og lukkes, før en årsagskode er angivet. Der er flere oplysninger i næste afsnit.
 
-Hvis parameteren **Obligatorisk** er angivet i konfigurationen af årsagskoder for lagersteder eller varer, kan optællingskladden ikke fuldføres og lukkes, før en årsagskode er angivet.
+### <a name="assign-counting-reason-code-policies-to-warehouses"></a>Tildele politikker for optællingsårsagskode til lagersteder
 
-### <a name="set-up-reason-codes-for-warehouses"></a>Konfigurere årsagskoder for lagersteder
+Hvis du vil tildele en politik for optællingsårsagskode til et lagersted, skal du følge disse trin.
 
-1. Vælg **Lagerstyring** \> **Opsætning** \> **Lageropdeling** \> **Lagersteder**.
-2. På fanen **Lagersted** i feltet **Politik for optællingsårsagskode** skal du vælge en af følgende indstillinger:
+1. Gå til **Lagerstyring** \> **Konfiguration** \> **Lageropdeling** \> **Lagersteder**.
+1. Vælg et lagersted i listeruden.
+1. I handlingsruden skal du under fanen **Lagersted** i gruppen **Konfiguration** vælge **Politik for optællingsårsagskode**. Følg derefter et af disse trin i dialogboksen **Tildel politik for optællingsårsagskode**:
 
-    - **Tom** – Den parameter, der er defineret for varen, bruges til at afgøre, om optællingskladder er obligatoriske for produktet.
-    - **Obligatoriske** – Der kræves altid en årsagskode på optællingskladder for lagerstedet.
-    - **Valgfri** – Der kræves ikke en årsagskode på optællingskladder for lagerstedet.
+    - Hvis du vil bruge politikopsætningen for den enkelte vare til at bestemme, om optællingskladder er obligatoriske for den, skal du ikke angive en værdi (eller slette den eksisterende værdi).
+    - Hvis du vil kræve en årsagskode for optællingskladder for lagerstedet, skal du vælge en årsagspolitik, hvor feltet **Type af optællingsårsagskode** er angivet til *Obligatorisk*.
+    - Hvis en årsagskode er valgfri for optællingskladder for lagerstedet, skal du vælge en årsagspolitik, hvor feltet **Type af optællingsårsagskode** er angivet til *Valgfri*.
 
-### <a name="set-up-reason-codes-for-products"></a>Konfigurere årsagskoder for produkter
+### <a name="assign-counting-reason-code-policies-to-products"></a>Tildele politikker for optællingsårsagskode til produkter
 
-1. Vælg **Administration af produktoplysninger** \> **Produkter** \> **Frigivne produkter**.
-2. På fanen **Produkt** skal du vælge **Politik for optællingsårsagskode** og derefter vælge en af følgende indstillinger:
+Hvis du vil tildele en politik for optællingsårsagskode til et produkt, skal du følge disse trin.
 
-    - **Tom** – Den parameter, der er defineret for lagerstedet, bruges til at afgøre, om optællingskladder er obligatoriske for produktet.
-    - **Obligatoriske** – Der kræves altid en årsagskode kræves på optællingskladder for produktet. Denne indstilling tilsidesætter enhver indstilling for årsagskoder på lagerstedsniveau.
-    - **Valgfri** – Der kræves ikke en årsagskode på optællingskladder for produktet. Denne indstilling tilsidesætter enhver indstilling for årsagskoder på lagerstedsniveau.
+1. Gå til **Administration af produktoplysninger** \> **Produkter** \> **Frigivne produkter**.
+1. Vælg et produkt i gitteret.
+1. I handlingsruden skal du under fanen **Produkt** i gruppen **Konfiguration** vælge **Politik for optællingsårsagskode**. Følg derefter et af disse trin i dialogboksen **Tildel politik for optællingsårsagskode**:
 
-### <a name="use-reason-codes-in-counting-journals"></a>Bruge årsagskoder i optællingskladder
+    - Hvis du vil bruge politikopsætningen for lagerstedet til at bestemme, om optællingskladder er obligatoriske for produktet, skal du ikke angive en værdi (eller slette den eksisterende værdi).
+    - Hvis du vil kræve en årsagskode for optællingskladder for produktet, skal du vælge en årsagspolitik, hvor feltet **Type af optællingsårsagskode** er angivet til *Obligatorisk*. Denne indstilling tilsidesætter enhver indstilling for årsagskoder på lagerstedsniveau.
+    - Hvis en årsagskode er valgfri for optællingskladder for produktet, skal du vælge en årsagspolitik, hvor feltet **Type af optællingsårsagskode** er angivet til *Valgfri*. Denne indstilling tilsidesætter enhver indstilling for årsagskoder på lagerstedsniveau.
 
-I en optællingskladde kan du tilføje årsagskoder for optælling af følgende typer:
+### <a name="set-up-counting-reason-codes"></a>Konfigurere årsagskoder for optælling
+
+Benyt følgende fremgangsmåde for at konfigurere dine optællingsårsagskoder.
+
+1. Gå til **Lagerstyring** \> **Konfiguration** \> **Lager** \> **Optællingsårsagskoder**.
+1. Gå til handlingsruden, og vælg **Ny** for at føje en række til gitteret.
+1. Angiv og felterne **Optællingsårsagskode** og **Beskrivelse** for den nye række.
+1. Hvis du vil tildele en modkonto, skal du angive eller vælge en værdi i feltet **Modkonto**.
+
+    > [!NOTE]
+    > Hvis en modkonto tildeles en årsagskode til optællingen, og du bogfører en optællingskladde med denne optællingsårsagskode, bogføres værdien mod den tildelte modkonto i stedet for standardkontoen til lagerposteringsprofilen.
+
+### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Konfigurere årsagskodegrupper for optælling
+
+*Optællingsårsagskodegrupper* kan bruges som en del af menupunkterne *Regulering ind* og *Regulering ud* i mobilappen Warehouse Management til at grænse listen over optællingsårsagskoder. (Du kan finde flere oplysninger om optællingsårsagskodegrupper i [Konfigurere menupunkter i mobilenhed for Regulering ind og Regulering ud](#setup-adjustment-in-out) senere i dette emne).
+
+1. Gå til **Lagerstyring** \> **Konfiguration** \> **Lager** \> **Grupper for optællingsårsagskode**.
+1. Vælg **Ny** i handlingsruden for at tilføje en gruppe.
+1. Angiv felterne **Optællingsårsagsgruppe** og **Gruppebeskrivelse** for den nye gruppe.
+1. Vælg **Gem** i handlingsruden.
+1. Vælg **Ny** på værktøjslinjen i sektionen **Detaljer** for at føje en række til gitteret. Angiv feltet **Optællingsårsagskode** for den nye række. 
+1. Gentag det forrige trin for at tildele flere koder efter behov. Hvis du skal fjerne en kode fra gruppen, skal du markere den og derefter vælge **Slet** på værktøjslinjen.
+
+### <a name="set-up-reason-codes-for-mobile-device-menu-items"></a>Konfigurere årsagskoder for mobilenheders menupunkter
+
+Du kan konfigurere årsagskoder for følgende typer tilgængelige reguleringer:
 
 - Cyklusoptælling
 - Spotoptælling
@@ -91,56 +130,92 @@ I en optællingskladde kan du tilføje årsagskoder for optælling af følgende 
 - Regulering ind
 - Regulering ud
 
-Årsagskoder føjes til kladdelinjerne i optællingskladder af typen **Optællingskladde**.
-
-1. Vælg **Lagerstyring** \> **Kladdeposteringer** \> **Vareoptælling** \> **Optælling**.
-2. I linjedetaljerne i optællingskladden, i feltet **Optællingsårsagskode** skal du vælge en indstilling.
-
-### <a name="view-the-counting-history-as-its-recorded-by-reason-codes"></a>Få vist optællingshistorikken, sådan som den er registreret af årsagskoder
-
-- Vælg **Lagerstyring** \> **Forespørgsler og rapporter** \> **Optællingshistorik**, få derefter vist den optællingshistorik i feltet **Optællingsårsagskode**, som er registreret gennem en årsagskode.
-
-### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Bruge en årsagskode til en regulering af antal
-
-1. På siden **Disponibel lagerbeholdning** skal du vælge **Juster antal**. Du kan åbne siden **Disponibel lagerbeholdning** på flere måder. Vælg f.eks. **Lagerstyring** \> **Forespørgsler og rapporter** \> **Disponibel lagerbeholdning**.
-2. Vælg **Juster antal**, og vælg derefter en årsagskode i feltet **Optællingsårsagskode**.
-
-### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Konfigurere årsagskoder for mobilenheds menupunkter
-
-Du kan konfigurere årsagskoder for enhver type optælling i et menupunkt på en mobilenhed. Konfigurationen af menupunktet på mobilenheden indeholder følgende oplysninger:
+I de fleste tilfælde kan du definere følgende oplysninger for hvert relevant menupunkt for en mobilenhed:
 
 - Om årsagskoden vises for mobilenhedens arbejder under optælling.
 - Den standardårsagskode, der vises i en mobilenheds menupunkt.
 - Om brugeren kan redigere årsagskoden.
 
-### <a name="set-up-reason-codes-on-a-mobile-device"></a>Konfigurere årsagskoder på en mobilenhed
+#### <a name="set-up-mobile-device-menu-items-for-a-counting-process"></a>Konfigurere menupunkter for mobilenheders optællingsproces
 
-1. Vælg **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \> **Menupunkter i mobilenhed**.
-2. På fanen **Cyklusoptælling** skal du vælge **Cyklusoptælling**.
-3. I feltet **Standardkode for optællingsårsag** skal du angive den standardårsagskode, der skal registreres, når optællingen udføres ved hjælp af mobilenhedens menupunkt.
-4. I feltet **Vis optællingsårsagskode** skal du vælge **Linje** for at vise årsagskoden efter registrering af hver afvigelse. Alternativt skal du vælge **Skjul**, hvis årsagskoden ikke skal vises.
-5. Angiv indstillingen **Rediger optællingsårsagskode** til enten **Ja** eller **Nej**. Hvis du angiver denne indstilling til **Ja**, kan arbejderen redigere årsagskoden, når den vises på mobileenheden under optælling.
+Du kan konfigurere et menupunkt for en optællingsproces på en mobilenhed ved at følge nedenstående trin.
+
+1. Gå til **Lagerstedsstyring** \> **Konfiguration** \> **Mobilenhed** \> **Menupunkter i mobilenhed**.
+1. Vælg det relevante menupunkt i listeruden, eller opret et nyt menupunkt.
+1. Vælg **Cyklusoptælling** i handlingsruden.
+1. I feltet **Standardkode for optællingsårsag** skal du angive den standardårsagskode, der skal registreres, når optællingen udføres ved hjælp af mobilenhedens menupunkt.
+1. Vælg en af følgende værdier i feltet **Vis optællingsårsagskode**:
+
+    - *Linje* – Vis årsagskoden, når hver afvigelse er registreret.
+    - *Skjul* – Vis ikke årsagskoden.
+
+1. Angiv **Rediger optællingsårsagskode** til *Ja*, så arbejderen kan redigere årsagskoden, når den vises på mobileenheden under optælling. Angiv det til *Nej* for at forhindre arbejderen i at redigere koden.
 
 > [!NOTE]
-> Knappen **Cyklusoptælling** kan aktiveres i menupunktet på enhver mobilenhed, hvor optælling kan udføres. Eksemplet omfatter menupunkter for spotoptællinger, brugerstyret arbejde og systemstyret arbejde.
+> Knappen **Cyklusoptælling** kan aktiveres i menupunktet på enhver mobilenhed, hvor optælling kan udføres. Eksempler omfatter menupunkter for spotoptællinger, brugerstyret arbejde og systemstyret arbejde.
 
-## <a name="cycle-count-approvals"></a>Godkendelse af cyklusoptælling
+#### <a name="set-up-mobile-device-menu-items-for-adjustment-in-and-adjustment-out"></a><a name="setup-adjustment-in-out"></a>Konfigurere mobilenhedens menupunkter for Regulering ind og Regulering ud
 
-Før antallet godkendes, kan brugeren ændre den årsagskode, der er tilknyttet optællingen. Når optællingen er godkendt, angives årsagskoden i optællingskladdens linjer.
+Du kan konfigurere et menupunkt for Regulering ind eller Regulering ud på en mobilenhed ved at følge nedenstående trin.
 
-### <a name="modify-cycle-count-approvals"></a>Rediger godkendelse af cyklusoptælling
+1. Gå til **Lagerstedsstyring** \> **Konfiguration** \> **Mobilenhed** \> **Menupunkter i mobilenhed**.
+1. Vælg **Ny** i handlingsruden for at oprette et menupunkt.
+1. Angiv felterne **Mobilpunktnavn** og **Titel** til det nye menupunkt.
+1. Indstil feltet **Tilstand** til *Arbejde*.
+1. Angiv indstillingen **Brug eksisterende arbejde** til *Nej*.
+1. I feltet **Arbejdsoprettelsesproces** skal du vælge *Regulering ind* eller *Regulering ud*.
+1. I oversigtspanelet **Generelt** skal du indstille følgende felter. (Alle disse felter tilføjes, når du vælger *Regulering ind* eller *Regulering ud* i feltet **Arbejdsoprettelsesproces**).
 
-1. Vælg **Lokationsstyring** \> **Cyklusoptælling** \> **Ventende gennemsyn af cyklusoptællingsarbejde**.
-2. Vælg **Cyklusoptælling**, og vælg derefter en ny årsagskode i feltet **Årsagskode**.
+    - **Brug procesvejledning** – Hvis du skal oprette en *Regulering ud*-proces, skal du sørge for at angive denne indstilling til *Ja*. Hvis du opretter en *Regulering ud*-proces, er denne indstilling altid angivet til *Ja*.
+    - **Standardkode for optællingsårsag** – Angiv den standardårsagskode, der skal registreres, når optællingen udføres ved hjælp af mobilenhedens menupunkt.
+    - **Vis optællingsårsagskode** – Vælg en af følgende værdier:
 
-### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Redigere mobilenhedens menupunkt for Regulering ind og Regulering ud
+        - *Linje* – Vis årsagskoden, når hver afvigelse er registreret.
+        - *Skjul* – Vis ikke årsagskoden.
 
-1. Vælg **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \> **Menupunkter i mobilenhed**, og vælg derefter **Regulering ind og ud**.
-2. Angiv indstillingen **Brug eksisterende arbejde** til **Nej**.
-3. I feltet **Arbejdsoprettelsesproces** skal du vælge **Regulering ind**.
+    - **Rediger optællingsårsagskode** – Angiv den til *Ja*, så arbejderen kan redigere årsagskoden, når den vises på mobileenheden under optælling. Angiv det til *Nej* for at forhindre arbejderen i at redigere koden.
+    - **Optællingsårsagskodegruppe** – Vælg en årsagskodegruppe, hvis du vil begrænse listen over indstillinger, som arbejdere kan se. Du kan finde flere oplysninger om opsætning af årsagskodegrupper i afsnittet [Konfigurere årsagskodegrupper for optælling](#reason-groups) tidligere i dette emne. 
 
-Følgende felter føjes til mobilenhedens menupunkt, når **Regulering ind** eller **Regulering ud** er valgt under oprettelsen af arbejdsoprettelsesprocessen:
+> [!NOTE]
+> Når du tildeler en optællingsårsagskodegruppe til menupunkterne *Regulering ind* og *Regulering ud*, hvor indstillingen **Brug procesvejledning** er angivet til *Ja*, kan du få en begrænset liste over optællingsårsagskoder som en del af behandlingen i mobilappen Warehouse Management.
+>
+> Indstillingen **Brug procesvejledning** kan også hjælpe dig med at forhindre, at der sker store reguleringsantal ved en fejl. (En arbejder kan f.eks. ved en fejl scanne en stregkode på et varenummer i stedet for en antalsværdi). Du kan konfigurere denne funktion ved at indstille **Brug procesvejledning** til *Ja* for hvert af de relevante menupunkter. Gå derefter til **Lagerstedsstyring \> Konfiguration \> Arbejder**, og angiv feltet **Grænse for reguleringsantal** for hver relevant lagerarbejder for at angive det maksimale reguleringsantal, som arbejderen kan registrere.
 
-- Standardkode for optællingsårsag
-- Vis optællingsårsagskode
-- Rediger optællingsårsagskode
+## <a name="processing-that-uses-counting-reason-codes"></a>Behandling, der bruger optællingsårsagskoder
+
+Når arbejdere bruger mobilappen Warehouse Management, registreres årsagskoder. Medmindre der er defineret en proces til godkendelse af optælling, bruges de registrerede årsagskoder med det samme som en del af den efterfølgende optællingskladdebogføring.
+
+### <a name="cycle-count-approvals"></a>Godkendelse af cyklusoptælling
+
+Før antallet godkendes, kan arbejderen ændre den årsagskode, der er tilknyttet optællingen. Når optællingen er godkendt, angives årsagskoden i optællingskladdens linjer.
+
+#### <a name="modify-reason-codes-for-cycle-count-approvals"></a>Redigere årsagskoder for godkendelser af cyklusoptælling
+
+Hvis du vil redigere en godkendelse af cyklusoptælling, skal du gøre følgende.
+
+1. Gå til **Lagerstedsstyring** \> **Cyklusoptælling** \> **Ventende gennemsyn af cyklusoptællingsarbejde**.
+1. Vælg en cyklusoptælling i gitteret.
+1. I handlingsruden skal du gå til fanen **Arbejde** og vælge **Cyklusoptælling**. Vælg en ny årsagskode i feltet **Årsagskode**.
+
+Årsagskoder føjes til kladdelinjerne i optællingskladder af typen *Optællingskladde*.
+
+1. Gå til **Lagerstyring** \> **Kladdeposteringer** \> **Vareoptælling** \> **Optælling**.
+2. Vælg den årsagskode, der passer til din aktuelle situation, i feltet **Optællingsårsagskode** i linjedetaljerne for optællingskladden.
+
+### <a name="view-the-reason-codes-recorded-in-the-counting-history"></a>Se de registrerede årsagskoder i optællingshistorikken
+
+Hvis du vil se de årsagskoder, der er registreret i optællingshistorikken, skal du følge disse trin.
+
+1. Gå til **Lagerstyring** \> **Forespørgsler og rapporter** \> **Optællingshistorik**.
+1. Vælg en vareoptællingspost i listeruden.
+1. I feltet **Optællingsårsagenskode** kan du se den optællingshistorik, der er registreret via en årsagskode.
+
+### <a name="use-reason-codes-for-quantity-adjustment-or-online-counting"></a>Bruge årsagskoder til antalsregulering eller onlineoptælling
+
+Hvis du vil bruge en årsagskode til en regulering af antal eller onlineoptælling, skal du følge disse trin.
+
+1. Gå til **Lagerstyring \> Forespørgsler og rapporter \> Beholdningsliste**.
+1. Vælg **Justering af antal** i handlingsruden.
+1. Vælg **Justering af antal**, og vælg derefter en årsagskode i feltet **Optællingsårsagskode**.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

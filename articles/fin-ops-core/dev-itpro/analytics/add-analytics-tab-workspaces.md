@@ -1,25 +1,23 @@
 ---
 title: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
 description: Dette emne viser, hvordan du kan integrere en Power BI-rapport under fanen Analyser i et arbejdsområde.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760146"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
 
@@ -56,11 +54,11 @@ Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgensta
 3. I dialogboksen **Tilføj nyt element** under **Operationsgenstande** skal du vælge skabelonen **Ressource**.
 4. Angiv et navn, der skal bruges til at referere til rapporten i X ++-metadata, og klik derefter på **Tilføj**.
 
-    ![Dialogboksen Tilføj nyt element](media/analytical-workspace-add.png)
+    ![Dialogboksen Tilføj nyt element.](media/analytical-workspace-add.png)
 
 5. Find .pbix filen med definitionen af analyserapporten, og klik derefter på **Åbn**.
 
-    ![Dialogboksen Vælg en ressourcefil](media/analytical-workspace-select-resource.png)
+    ![Dialogboksen Vælg en ressourcefil.](media/analytical-workspace-select-resource.png)
 
 Nu, hvor du har tilføjet .pbix filen som en ressource i Dynamics 365, kan du integrere rapporterne i arbejdsområder og tilføje direkte hyperlinks ved hjælp af menupunkter.
 
@@ -69,7 +67,7 @@ I dette eksempel skal vi udvide arbejdsområdet **Reservationsstyring** i Flåde
 
 Følgende illustration viser, hvordan formularen **FMClerkWorkspace** ser ud i designeren i Microsoft Visual Studio.
 
-![FMClerkWorkspace-formular før ændringer](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-formular før ændringer.](media/analytical-workspace-definition-before.png)
 
 Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reservationsstyring**.
 
@@ -94,7 +92,7 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 
 I følgende illustration vises designet, når disse ændringer er anvendt.
 
-![FMClerkWorkspace efter ændringer](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace efter ændringer.](media/analytical-workspace-definition-after.png)
 
 Nu, hvor du har tilføjet de kontrolelementer til formularen, der skal bruges til at integrere arbejdsområderapporten, skal du definere størrelsen på det overordnede kontrolelement, så det kan rumme layoutet. Som standard er både siden **Filterrude** og siden **Fane** synlige i rapporten. Du kan dog ændre synligheden af disse kontrolelementer alt efter rapportens målforbruger.
 
@@ -144,7 +142,7 @@ Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrol
 
 Du har nu fuldført tilføjelsen af forretningslogik for at initialisere det integrerede rapportfremviserkontrolelement. I følgende illustration vises arbejdsområdet, når disse ændringer er anvendt.
 
-![Rapport, der er integreret i arbejdsområdet](media/analytical-workspace-final.png)
+![Rapport, der er integreret i arbejdsområdet.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kan åbne den eksisterende operationsvisning ved hjælp af fanerne i arbejdsområde under sidetitlen.
@@ -175,3 +173,6 @@ public static void initializeReportControl(
 | showFilterPane   | En boolesk værdi, der angiver, om filterruden skal vises (**true**) eller skjules (**false**).     |
 | showNavPane      | En boolesk værdi, der angiver, om navigationsruden skal vises (**true**) eller skjules (**false**). |
 | defaultFilters   | Standardfiltrene for Power BI-rapporten.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

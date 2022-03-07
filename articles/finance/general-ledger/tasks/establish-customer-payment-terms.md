@@ -2,11 +2,9 @@
 title: Fastlægge betingelser for debitorbetaling
 description: Denne procedure definerer opsætning af en kasserabat og forfaldsdato.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec16ba09cc7c942119bab1d992856c3ffcd5c628
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8f4adfd4231a39df6f17e8a131aa14d057eb8447
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968548"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809976"
 ---
 # <a name="establish-customer-payment-terms"></a>Fastlægge betingelser for debitorbetaling
 
@@ -56,3 +54,6 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
 26. I **Hovedkonto til kreditorrabatter** skal du angive den hovedkonto, som kasserabatten skal bogføres på for kreditorfakturaer.
 27. Klik på **Gem**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

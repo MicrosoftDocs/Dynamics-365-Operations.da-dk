@@ -2,26 +2,23 @@
 title: Grænser for lokationslagring
 description: I dette emne beskrives funktionerne til grænser for lokationslagring.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
-ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
+ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "4607273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714156"
 ---
 # <a name="location-stocking-limits"></a>Grænser for lokationslagring
 
@@ -84,7 +81,7 @@ I dette eksempel skal du køre en indkøbsordre, der modtager flow for to linjer
 
 Du modtager først antallet *4* af enhed *PL* i størrelse *S*, og du kan gennemse lokationer af læg på-linje for det arbejde, der oprettes. Du modtager derefter antallet *4* af enhed *PL* i størrelse *L*, og du kan gennemse lokationer af læg på-linje for det arbejde, der oprettes.
 
-1. I lagerstedsappen skal du logge på ved at bruge *24* som bruger-id og *1* som adgangskode.
+1. I mobilappen Lokationsstyring skal du logge på ved at bruge *24* som bruger-id og *1* som adgangskode.
 1. Vælg **Indgående** \> **Købsmodtagelse**.
 1. Modtag *4* *PL* af varenummer *D0013* i størrelse *S*.
 1. Gennemgå det læg på lager-arbejde, der er oprettet. Du bør se følgende resultat:
@@ -104,3 +101,6 @@ For at forklare denne tilsyneladende fejl skal du forstå udvælgelseskriteriern
 
 > [!NOTE]
 > Du kan ikke bruge grænser for lokalitetslagring til at styre f.eks. genopfyldning af varer, der har forskellige antal på samme lokation. I dette tilfælde skal du bruge en *genopfyldningsskabelon*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

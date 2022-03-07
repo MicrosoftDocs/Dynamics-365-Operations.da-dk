@@ -1,10 +1,12 @@
 ---
 title: Forsinkelser
 description: Dette emne indeholder oplysninger om forsinkede datoer i forbindelse med varedisponering. En forsinket dato er en realistisk forfaldsdato, som en transaktion får, hvis den tidligste dato for udførelse, som Varedisponering beregner, er senere end den ønskede dato.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89830feea12b4f5703e0eda622729887dd9bf46
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9dcb11b3665c5d2f296f1ba2ce4708c4eff241b0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573747"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977982"
 ---
 # <a name="delays"></a>Forsinkelser
 
@@ -52,9 +54,7 @@ Handlingsmeddelelser kan også bruges til at identificere planlagte ordrer, der 
 
 På siden **Planlagt ordre** under fanen **Forsinkelser** forefindes den **Ønskede dato** for den planlagte ordre. Den ønskede dato for en planlagt ordre er basisdatoen for forsinkelser, hvilket er en beregnet dato, der svarer til **Anmodet dato**, som beregnes på grundlag af **Nettobehov**. Såfremt den planlagte ordre er en styklistelinje, en produktionslinje eller en kanbanlinje, baseres den ønskede dato på **Behovsdatoen**, og den ønskede dato vil ikke fremgå af siden med **Planlagt ordre**.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
+<a name="additional-resources"></a>Yderligere ressourcer
+--------
 
 [Disponeringsindstillinger](coverage-settings.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

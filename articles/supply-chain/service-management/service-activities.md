@@ -1,10 +1,12 @@
 ---
 title: Serviceaktiviteter
 description: Opret serviceaktiviteter for at definere og vedligeholde opgaver i en serviceordre.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmActivityTypeGroup, SMADispatchBoard
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 656c16f812afccd58ea9031fd83a4b09a4c44957
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b18acd7b66baa804d5a230116a43ca820c097af1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566137"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219215"
 ---
 # <a name="service-activities"></a>Serviceaktiviteter        
 

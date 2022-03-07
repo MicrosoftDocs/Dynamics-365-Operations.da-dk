@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5805cc31bf9c7c2231defab63dc9a1e67f82622a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72b925feb8f784c257656dd93b48c9c0cc66da5e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424594"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214908"
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Aktivere lønproces for tid og fremmøde
 
@@ -70,3 +69,6 @@ Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres. Det
 7. Klik på Rediger.
 8. Indtast eller vælg en værdi i feltet Lønaftale.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

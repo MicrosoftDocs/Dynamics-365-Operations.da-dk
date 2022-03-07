@@ -1,30 +1,27 @@
 ---
 title: Tilslutte ydre enheder til POS
 description: Dette emne dækker, hvordan du forbinder enheder med din Retail POS.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410999"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779512"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Tilslutte ydre enheder til POS
 
@@ -81,7 +78,7 @@ Selvom selve hardwarestationen angives på kanalniveau, og angivelsen indeholder
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med forbundne eksterne enheder
 
-[![Traditionelt, fast POS](./media/traditional-300x279.png)](./media/traditional.png)
+[![Traditionelt, fast POS.](./media/traditional-300x279.png)](./media/traditional.png)
 
 For at forbinde MPOS til POS-enheder i et traditionelt, fast POS-scenario skal du først navigere til selve kasseapparatet og tildele en hardwareprofil til det. Du kan finde POS-kasseapparater i **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. 
 
@@ -100,7 +97,7 @@ Brug til sidst i MPOS handlingen **Vælg hardwarestation** for at vælge hardwar
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en enkeltstående hardwarestation
 
-[![Delte eksterne enheder](./media/shared-300x254.png)](./media/shared.png)
+[![Delte eksterne enheder.](./media/shared-300x254.png)](./media/shared.png)
 
 I dette scenario deles en enkeltstående hardwarestation af MPOS- og Cloud POS-klienter. Dette scenario kræver, at du opretter en hardwarestationprofil for at angive den overførselspakke, port og hardwareprofil, der bruger hardwarestationen. Du kan finde hardwarestationsprofilen på **Retail og Commerce** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestations profiler**. 
 
@@ -205,3 +202,6 @@ Yderligere oplysninger i forbindelse med aktivering omfatter den medarbejder, de
 ### <a name="client-data-synchronization"></a>Synkronisering af klientdata
 
 Alle ændringer af POS-klienten med undtagelse af ændringer af enhedens aktiveringsstatus skal synkroniseres, for at kanaldatabasen kan træde i kraft. For at synkronisere ændringer med kanaldatabasen skal du gå til **Retail og Commerce** &gt; **Retail og Commerce IT** &gt; **Distributionsplan** og køre den krævede distributionsplan. For klientændringer skal du køre distributionsplanerne **Kasseapparater** og **Kanalkonfiguration**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,27 @@
 ---
 title: Indkøb og forsyning i den offentlige sektor
 description: Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning. Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb.
-author: ShylaThompson
-manager: AnnBe
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70adc10cfb4ae446be9ea5d69b14f34f497168a4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b91435dd1d8220f607922872713e5f0f43c4cac9
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407646"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817788"
 ---
 # <a name="procurement-and-sourcing-in-the-public-sector"></a>Indkøb og forsyning i den offentlige sektor
 
@@ -89,7 +86,7 @@ Ja. Du kan få vist linjeantal for en indkøbsordre, herunder det aktuelle ordre
 
 Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført på to finanskonti. Den ene finanskonto er beregnet til kontormøbler, der er bestilt hos en leverandør. Den anden finanskonto er beregnet til kontorartikler. Ordreantallet er lig med summen af fakturerede antal, antallet på ventende fakturaer og antal, der ikke er faktureret endnu. Det modtagne antal er den del af ordreantallet, der er modtaget fra kreditor.
 
-<table style="width:100%;">
+<table>
 
 <col width="16%" />
 <col width="16%" />
@@ -120,7 +117,7 @@ Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført 
 <td><p>750,00</p></td>
 <td>150,00</td>
 <td>400,00</td>
-<td></td>
+<td>&nbsp;</td>
 <td><p>350,00</p></td>
 </tr>
 <tr class="even">
@@ -140,3 +137,6 @@ Du kan finde yderligere oplysninger i [Oversigt over kreditorbetalinger i den of
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

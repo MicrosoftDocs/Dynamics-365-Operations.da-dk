@@ -2,36 +2,30 @@
 title: Funktioner og egenskaber til øget tilgængelighed
 description: Dette emne indeholder oplysninger om funktionerne og egenskaberne til øget tilgængelighed i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716270"
 ---
-# <a name="accessibility-features-and-capabilities"></a>Funktioner og egenskaber til øget tilgængelighed
-
+# <a name="accessibility-features-and-capabilities"></a>Tilgængelighedsfunktioner og -egenskaber
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om funktionerne og egenskaberne til øget tilgængelighed i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Funktioner og egenskaber til øget tilgængelighed giver alle brugere de funktionelle midler til at kunne tilgå og udføre handlinger, så de kan nå deres mål. Denne brede vifte af brugere kan få brug for hjælpemidler til hørelse, syn, mobilitet eller neurodiversitet.
 
@@ -101,11 +95,11 @@ Følg disse trin for at angive en attribut for **Minimumsalder** for et videoakt
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Tilgængelighed i formularer, produkter og kontrolelementer](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+[Tilgængelighed i formularer, produkter og kontrolelementer](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
 
 [Microsoft Accessibility Center](https://www.microsoft.com/accessibility)
 
-[Dynamics 365 Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+[Dynamics 365 Accessibility Center](/dynamics365/get-started/accessibility/index)
 
 [Oversigt over overholdelse](compliance-overview.md)
 
@@ -114,3 +108,6 @@ Følg disse trin for at angive en attribut for **Minimumsalder** for et videoakt
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

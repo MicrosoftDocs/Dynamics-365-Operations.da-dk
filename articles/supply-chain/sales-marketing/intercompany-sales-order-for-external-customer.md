@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074988"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548165"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Oprette og fakturere en intern salgsordre til en ekstern kunde
 
@@ -75,18 +75,5 @@ Udføre disse trin i juridisk enhed B. Denne procedure svarer til afkrydsningsfe
 1. Markér salgsordren, og vælg derefter **OK**.
 
 Debitorfakturaen for den interne salgsordre bogføres automatisk i juridisk enhed B. Den interne kreditorfaktura oprettes derefter automatisk og bogføres i juridisk enhed A. Hvis den oprindelige salgsordre er konfigureret som en direkte levering, oprettes debitorfakturaen for den oprindelige salgsordre i juridisk enhed A.
-
-> [!NOTE]
-> Hvis arbejdsprocessen for kreditorfakturaer tidligere er konfigureret til interne salgsscenarier i det interne indkøbsfirma, kunne den interne salgsordre ikke faktureres. Derfor skal arbejdsprocessen for kreditorfakturaer være deaktiveret for det interne indkøbsfirma. 
-> 
-> Denne begrænsning er fastlagt af en ny funktion i version 10.0.25. Interne salgsordrer kan nu faktureres, når arbejdsprocessen for kreditorfakturaer er konfigureret i det interne indkøbsfirma.
-> 
-> Følg disse trin for at aktivere funktionen.
->
-> 1. Vælge den juridiske enhed for internt salg.  
-> 2. Gå til **Debitorer \> Kunder \> Alle kunder**.
-> 3. Vælg debitor for det interne indkøbsfirma.
-> 4. Gå til **Generelt \> Opsætning \> Intern handel**.
-> 5. Vælg parameteren **Tilsidesæt arbejdsgangen for kreditorfakturaer for interne kreditorfakturaer** under fanen **Indkøbsordrepolitikker**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Konfigurere anlægsaktivgrupper
 description: I dette emne beskrives, hvordan du opretter en ny anlægsaktivgruppe.
-author: saraschi2
-manager: AnnBe
+author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bcb78158afbf7bb0e9b83b35e37b1532a7c6283
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a39d709d739ac4fea4bf79e3174d2fbe39d4ded
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441412"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883787"
 ---
 # <a name="set-up-fixed-asset-groups"></a>Konfigurere anlægsaktivgrupper
 
@@ -39,3 +36,6 @@ I dette emne beskrives, hvordan du opretter en ny anlægsaktivgruppe. Den bruger
 8. Vælg en indstilling i feltet **Afskrivningsprincip**.
 9. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

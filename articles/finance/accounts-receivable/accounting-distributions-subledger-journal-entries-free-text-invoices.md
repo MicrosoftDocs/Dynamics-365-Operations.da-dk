@@ -1,38 +1,34 @@
 ---
-title: Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer
+title: Regnskabsfordelinger og kladdeposteringer til fritekstfakturaer
 description: Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan indtægt, skat eller afgifter redegøres for på en fritekstfaktura. Alle beløb, der skal tages redegøres for, når fritekstfakturaen journaliseres, har en eller flere regnskabsfordelinger.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da1d1b41c4da1fafcf20246022c4020b60152917f5df85f8e003e23aaef9433c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728931"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Regnskabsfordelinger og posteringer for reskontro til fritekstfakturaer
 
 [!include [banner](../includes/banner.md)]
 
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan indtægt, skat eller afgifter redegøres for på en fritekstfaktura. Alle beløb, der skal tages redegøres for, når fritekstfakturaen journaliseres, har en eller flere regnskabsfordelinger.
 
-<a name="accounting-distributions"></a>Regnskabsfordelinger
-------------------------
+## <a name="accounting-distributions"></a>Regnskabsfordelinger
 
 Du kan bruge følgende knapper på siden Fritekstfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på fritekstfakturaen.
 
@@ -136,3 +132,6 @@ Før du bogfører en fritekstfaktura, kan du få vist den komplette regnskabsenh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Oprette og køre out of box-rapporter
 description: Brug denne opgaveguide til at køre standardrapporter i Headquarters fra forskellige arbejdsområder og forespørgsler og salgsrapporter, der er placeret i Commerce.
 author: ashishmsft
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774455"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Oprette og køre out of box-rapporter
 
@@ -64,3 +61,6 @@ Det demodatafirma, der bruges til at oprette denne post, er USRT. Denne registre
 5. Klik på Eksporter.
 6. Klik på PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

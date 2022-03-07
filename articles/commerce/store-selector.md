@@ -3,14 +3,12 @@ title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,34 +16,53 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772150"
 ---
-# <a name="store-selector-module"></a>Modulet Butiksvælger
+# <a name="store-selector-module"></a>Butiksvælgermodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
-
 Kunder kan bruge butiksvælgermodulet til at hente et produkt i en valgt butik efter et onlineindkøb. I Commerce version 10.0.13 indeholder butiksvælgermodulet også yderligere egenskaber, der kan vise en **Find en butik**-side, der viser butikker i nærheden.
 
 I butiksvælgermodulet kan brugerne angive en placering (by, stat, adresse osv.) til søgning efter butikker inden for en søgeradius. Når modulet åbnes første gang, bruges kundens browserplacering til at søge efter butikker (hvis der er givet samtykke).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Brug af butiksvælgermodul i e-handel
+## <a name="store-selector-module-usage"></a>Brug af butiksvælgermodul
 
 - Et butiksvælgermodul kan bruges på siden med produktdetaljer (PDP) til at vælge en butik til afhentning.
 - Et butiksvælgermodul kan bruges på en side med indkøbsvogn til at vælge en butik til afhentning.
 - Et butiksvælgermodul kan bruges på en enkeltstående side, der viser alle tilgængelige butikker.
 
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurere opfyldelsesgruppe i Commerce-hovedkontoret
+
+For at butiksvælgeren kan vise tilgængelige butikker, skal opfyldelsesgruppen være konfigureret i Commerce-hovedkontoret. Du kan finde flere oplysninger under [Konfigurere opfyldelsesgrupper](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Derudover skal butikslokationens længdegrad og breddegrad defineres i hovedkontoret for hver butik i opfyldelsesgruppen.
+
+Følg disse trin for at angive længde- og breddegrad for butiksadressen i Commerce-hovedkontoret.
+
+1. Gå til **Lagerstyring \> Opsætning \> Lageropdeling**.
+1. Vælg lagerstedslokation i venstre rude.
+1. Vælg **Avanceret** i oversigtspanelet **Adresser**.
+
+    ![Eksempel på butiksoplysninger i hovedkvarter.](./media/Store-address.png)
+
+1. Vælg **Rediger** i handlingsruden.
+1. Angiv værdier for **Længdegrad** og **Breddegrad** i oversigtspanelet **Generelt**.
+
+    ![Eksempel på konfiguration af breddegrad og længdegrad for en butik i hovedkontoret.](./media/Store-latitude-longitude.png)
+
+1. Vælg **Gem** i handlingsruden. 
+
 ## <a name="bing-maps-integration"></a>Bing Kort-integration
 
-Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](https://docs.microsoft.com/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
+Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
 
 For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte pr. webstedets sikkerhedspolitik for indhold (CSP). Denne opsætning udføres i Commerce-webstedsgeneratoren ved at tilføje tilladte URL-adresser i forskellige CSP-direktiver for webstedet (f.eks. **img-src**). Du kan finde flere oplysninger under [Sikkerhedspolitik for indhold](manage-csp.md). 
 
@@ -53,21 +70,21 @@ For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte
 - Til **img-src**-direktivet skal du tilføje **&#42;.virtualearth.net**.
 - Til direktivet **script-src** skal du **tilføje &#42;.bing.com, &#42;.virtualearth.net**.
 - Til direktivet **script style-src** skal du tilføje **&#42;.bing.com**.
- 
+
 ## <a name="pickup-in-store-mode"></a>Afhent i butik-tilstand
 
 Butiksvælgermodulet understøtter en **Afhent i butik**-tilstand, der viser en liste over butikker, hvor produktet er tilgængeligt for afhentning. Den viser også butiksåbningstider og produktlager for hver butik på listen. Butiksvælgermodulet kræver et produkts kontekst for at gengive produkttilgængeligheden og give brugeren mulighed for at føje produktet til indkøbsvognen, hvis produktets leveringsmåde er sat til **afhentning** i den valgte butik. Du finder flere oplysninger under [Lagerindstillinger](inventory-settings.md). 
 
 Butiksvælgermodulet kan føjes til et købefeltmodul på siden med produktdetaljer (PDP) for at vise butikker, hvor et produkt kan afhentes. Modulet kan også føjes til et indkøbsvognmodul. I dette tilfælde viser butiksvælgermodulet afhentningsindstillinger for de enkelte linjeelementer i indkøbsvognen. Desuden kan butiksvælgermodulet føjes til andre sider eller moduler via udvidelser og tilpasninger.
 
-Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstilstanden **afhentning**. Ellers bliver modulet ikke vist på produktsiderne. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden, under [Konfigurere leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Hvis dette scenarie skal fungere, skal produkterne konfigureres med leveringstilstanden **afhentning**. Ellers bliver modulet ikke vist på produktsiderne. Du kan finde flere oplysninger om, hvordan du kan konfigurere leveringsmåden, under [Konfigurere leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Følgende billede viser et eksempel på et butiksvælgermodul, der bruges på en produktoplysningsside (PDP).
 
-![Eksempel på et butiksvælgermodul, der bruges på en PDP](./media/BOPIS.PNG)
+![Eksempel på et butiksvælgermodul, der bruges på en PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
-> I version 10.0.16 og nyere versioner kan der aktiveres en ny funktion, som giver en organisation mulighed for at definere flere afhentningsmåder i leveringsindstillinger for debitorer.  Hvis denne funktion er aktiveret, vil butiksvælgeren og andre e-handelsmoduler blive forbedret, så brugeren potentielt kan vælge mellem flere muligheder for at afhente leveringer, hvis de er konfigureret.  Yderligere oplysninger om denne funktion finder du i [denne dokumentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> I version 10.0.16 og nyere versioner kan der aktiveres en ny funktion, som giver en organisation mulighed for at definere flere afhentningsmåder i leveringsindstillinger for debitorer.  Hvis denne funktion er aktiveret, vil butiksvælgeren og andre e-handelsmoduler blive forbedret, så brugeren potentielt kan vælge mellem flere muligheder for at afhente leveringer, hvis de er konfigureret.  Yderligere oplysninger om denne funktion finder du i [denne dokumentation](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Find butikker-tilstand
 
@@ -75,7 +92,7 @@ Butiksvælgermodulet understøtter også tilstanden **Find butikker**. Denne til
 
 I følgende illustration vises et eksempel på et butiksvælgermodul, der bruges sammen med et kortmodul på en butiksadresseside.
 
-![Eksempel på et butiksvælgermodul og et kortmodul på en side med butiksadresser](./media/ecommerce-Storelocator.PNG)
+![Eksempel på et butiksvælgermodul og et kortmodul på en side med butiksadresser.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Gengive et kort
 
@@ -93,6 +110,10 @@ Butiksvælgermodulet kan bruges sammen med kortmodulet til at vise butiksadresse
 | Indstillinger for Autosuggest: maks. resultater | Tal | Denne egenskab definerer det maksimale antal automatiske forslagsresultater, der kan vises via Bing Autosuggest-API. |
 | Søgeradius | Tal | Denne egenskab definerer søgeradius for butikker, i miles. Hvis der ikke er angivet en værdi, bruges standardradiussen på 50 miles. |
 | Vilkår for brug | URL |  Denne egenskab specificerer de servicebetingelser for URL-adressen, der kræves for at kunne bruge tjenesten Bing Kort. |
+
+## <a name="site-settings"></a>Indstillinger for websted
+
+Modulet til butiksvælger overholder [indstillingerne for Tilføjelse af produkt til indkøbsvogn](add-cart-settings.md). Når en vare er føjet til indkøbsvognen fra modulet til butiksvælger, kan webstedsbrugerne se de relevante konfigurerede arbejdsgange.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Føje et butiksvælgermodul til en side
 
@@ -139,10 +160,13 @@ Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker 
 
 [Hurtig rundvisning i indkøbsvogn og betaling](quick-tour-cart-checkout.md)
 
-[Konfigurer leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Konfigurer leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Administrere Bing Kort for din organisation](dev-itpro/manage-bing-maps.md)
 
-[Bing Kort-REST-API'er](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Kort-REST-API'er](/bingmaps/rest-services/)
 
 [Kortmodul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

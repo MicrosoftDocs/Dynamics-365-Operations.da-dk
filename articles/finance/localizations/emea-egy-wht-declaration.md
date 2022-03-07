@@ -5,24 +5,26 @@ author: sndray
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: sndray
+ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: e0d13a2de9acaa8b1c896e130b4dabb222e45dcb
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403885"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881416"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>A-skatopgørelse for Egypten (EG-00005)
 
 [!include[banner](../includes/banner.md)]
+
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Overblik
@@ -102,7 +104,7 @@ Hvis du vil generere momsindberetningsformularrapporten i Microsoft Excel-format
 2. Under fanen **A-skat** skal du i feltet **Formattilknytning af WHT-opgørelse** vælge **WHT-opgørelse i Excel (EG)**. Hvis du lader feltet stå tomt, genereres standardrapporten for moms i SSRS-format.
 
 
-![Rapport formular.](media/egypt-wht-declaration-setup1.png)
+![Rapport formular](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Generere A-opgørelsesformularer
 Processen til forberedelse og afsendelse af en form for A-opgørelse for en bestemt periode er baseret på de posteringer for A-skat, der er bogført under afregnings- og postering af betalingsskatjobbet. Du kan finde flere oplysninger om global A-skat i [Global A-skat](../general-ledger/global-withholding-tax-overview.md).
@@ -112,7 +114,7 @@ Fuldfør følgende trin, hvis du vil generere den elektroniske momsopgørelse:
 1. Gå til **Moms** > **Opgørelse** > **A-skat** > **Betaling af A-skat*.
 2. Vælg afregningsperioden, og vælg fra-datoen til rapporten. 
 3. Angiv transaktionsdatoen, og vælg derefter **OK**.
-4. I den dialogboks, der åbnes, skal du vælge en eller flere formulartyper **Formularnr. 41**, **Formular nr. 11** eller **Ingen**. Hvis du vælger **Ingen**, genereres standardrapporten. 
+4. I den dialogboks, der åbnes, skal du vælge en eller flere formtyper **Formularnr. 41**, **Formular nr. 11** eller **Ingen**. Hvis du vælger **Ingen**, genereres standardrapporten. 
 5. Vælg sprog. Alle rapporter oversættes i **en-us** og **ar-eg**.
 6. Angiv afdelingen og navnet på den bank, hvor skattebetalingen skal betales.
 7. Vælg forretningstype, og angiv derefter check- og dokumentnumrene. 

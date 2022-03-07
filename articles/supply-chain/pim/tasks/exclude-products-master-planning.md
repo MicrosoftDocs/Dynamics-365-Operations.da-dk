@@ -1,26 +1,23 @@
 ---
 title: Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering
 description: Denne fremgangsmåde viser, hvordan du opretter en ny status for produktlivscyklus, der udelukker produkterne fra varedisponering og styklisteniveauberegning.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5f9573fd220cd8b6a58f81e4d17ca65234f41beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7f72be341b81515b7c5540d66f61647df93af41
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424487"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567025"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering
 
@@ -44,3 +41,6 @@ Denne fremgangsmåde viser, hvordan du opretter en ny status for produktlivscykl
 5. Markér den valgte række på listen.
 6. Indtast eller vælg en værdi i feltet Status for produktlivscyklus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

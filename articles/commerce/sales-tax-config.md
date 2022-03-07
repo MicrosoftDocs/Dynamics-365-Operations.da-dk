@@ -2,15 +2,12 @@
 title: Konfigurere moms for onlineordrer
 description: Dette emne giver en oversigt over valg af momsgrupper for forskellige onlineordretyper i Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,17 +15,16 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 68b7e59a1e1ea18bdcd4e7a9117e4892407f40ff
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530191"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791841"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurere moms for onlineordrer
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emne giver en oversigt over valg af momsgrupper for forskellige onlineordretyper. 
 
@@ -83,3 +79,6 @@ For ordrelinjer, hvor der er angivet afhentning i butik eller ved fortovskant, a
 
 [Beregning af momsfritagelse](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

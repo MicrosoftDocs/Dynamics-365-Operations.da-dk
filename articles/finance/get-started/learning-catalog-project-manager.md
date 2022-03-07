@@ -6,20 +6,18 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a0c8dabc91d4d69d3f7098672611610a4ec73ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b6086ee40c0d5925cc2e2d368ada66a34df2656c
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441665"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5614657"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Undervisningskatalog for projektlederens implementeringsarbejde med Dynamics 365 Finance
 
@@ -95,3 +93,6 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: bruge almindelige funktioner og implementeringsværktøjer, konfigurere sikkerhed, processer og indstillinger, udføre dataoverførsel og validere og understøtte løsningen. | Eksamen, hvor omkostning varierer alt efter region | |
 | [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Finans](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamen måler din evne til at udføre følgende tekniske opgaver: oprette og konfigurere økonomistyring, administrere og anvende almindelige processer, implementere og styre kreditor og debitor samt administrere budgettering og anlægsaktiver. | Eksamen, hvor omkostning varierer alt efter region | |
 | [Microsoft-certificeret: Dynamics 365 for Finance and Operations, tilknyttet funktionel økonomisk konsulent](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-certificeret: Dynamics 365 for Finance and Operations, funktionelle økonomiske konsulenter samler globale regnskaber og operationer og automatiserer opgaver og arbejdsgange, strømliner af kundeordrer, salg, fakturering og rapportering. | Certificering, hvor omkostning varierer alt efter region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

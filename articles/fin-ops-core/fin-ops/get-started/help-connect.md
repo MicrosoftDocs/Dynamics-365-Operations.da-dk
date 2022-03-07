@@ -1,12 +1,10 @@
 ---
 title: Konfigurere hjælp-oplevelsen for Finance and Operations-apps
-description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps. Det forklarer også, hvordan disse apps tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
+description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
 author: margoc
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798274"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343928"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finance and Operations-apps
 
@@ -34,7 +32,7 @@ I dette emne kan du finde en oversigt over komponenterne i Hjælp-systemet til F
 
 Finance and Operations-apps omfatter konceptbaserede oversigter og andre emner, der er udgivet på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webstedet. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
 
-[![Hjælp-arkitektur](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hjælp-arkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Hjælp-systemet i produktet henter artikler fra docs.microsoft.com og andre tilknyttede websteder. Det henter også opgavevejledninger, der er gemt i BPM (Business process modeler) i Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -49,14 +47,14 @@ På siden **Systemparametre** kan systemadministratorer konfigurere adgang til d
 > - Hvis du vil konfigurere hjælp, skal du være logget på med en konto i den samme lejer som den lejer, hvor appen er installeret.
 > - Det er ikke muligt at oprette forbindelse til et LCS-bibliotek fra en forekomst af den app, der kører på en lokal virtuel harddisk (VHD).
 
-[![Formularen Systemparametre med hjælpeindstillinger](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formularen Systemparametre med hjælpeindstillinger.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Hvis du vil konfigurere opgaveguides til en løsning, skal du følge disse trin på siden **Systemparametre**.
 
 > [!IMPORTANT]
 > Første gang du åbner fanen **Hjælp**, skal du oprette forbindelse til Lifecycle Services. Du skal vælge linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter vælge **OK** for at få adgang til siden **Systemparametre**.
 >
-> [![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS")](./media/connect-to-lcs-crop.png)
+> [![Oprette forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Oprette forbindelse til LCS."](./media/connect-to-lcs-crop.png)
 
 1. Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
@@ -99,3 +97,6 @@ Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning 
 [Ressourcer til arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)  
 [Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Brugerdefineret GitHub-hjælpelager](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

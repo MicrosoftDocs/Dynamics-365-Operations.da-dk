@@ -1,10 +1,12 @@
 ---
 title: Få vist status for serviceordrer
 description: Du kan bruge formularen Planlægningstavle til at få vist status for serviceaktiviteter i serviceordrer.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a43e93f2ea64f75a559e1429bbc927c6d23a10ae
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 429e1cf525854a87f55e4d4f900931f61223e0d1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571251"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231315"
 ---
 # <a name="view-the-status-of-service-orders"></a>Få vist status for serviceordrer 
 

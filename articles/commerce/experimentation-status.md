@@ -2,11 +2,9 @@
 title: Gennemgå status for et eksperiment
 description: I dette emne forklares, hvad status et eksperiment har i livscyklussen for eksperimenteren i Dynamics 365 Commerce.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5ae29fe5ac49d92c261c59d115664b50e87880a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f7bdd292893ee42d49bdf977a55d8b10896ca1cd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965096"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792433"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Gennemgå status for et eksperiment
 Der er mange trin involveret i opsætning og kørsel af et eksperiment i Dynamics 365 Commerce. Du kan finde flere oplysninger om livscyklussen for eksperimenteren under [Eksperimenteren i Dynamics 365 Commerce](experimentation-overview.md).
@@ -44,3 +42,6 @@ På samme måde kan følgende værdier vises i kolonnen **tredjepartsstatus** fo
 I nedenstående diagram vises begge sæt statusser, og hvordan de er relateret til hinanden.
 
 [ ![Eksperimenterens statusser](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

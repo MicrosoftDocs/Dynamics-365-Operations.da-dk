@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 454d79d56801b1bff228e957b34807acc4fad684
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1fe4171911896c979a1517dc1099bceaca82d4d4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407647"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231460"
 ---
 # <a name="set-up-general-budget-reservation-rules-and-reservation-types"></a>Konfigurere regler for generel budgetreservation og reservationstyper
 
@@ -162,3 +161,6 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, 
 |---------------------------|---------------------------------------------------------------|
 | Licenskonfigurationsnøgle | Offentlig sektor \> Generel budgetreservation                   |
 | Sikkerhedsroller            | Du skal være medlem af sikkerhedsrollen **Budgetchef**. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

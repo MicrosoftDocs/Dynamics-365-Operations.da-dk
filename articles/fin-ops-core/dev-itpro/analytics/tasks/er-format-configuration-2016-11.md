@@ -1,12 +1,11 @@
 ---
 title: Oprette en ER-formatkonfiguration (november 2016)
-description: Dette emne beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en formatkonfiguration til elektronisk rapportering (ER).
+description: Dette emne forklarer, hvordan du opretter en formatkonfiguration til elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4cd3960594ab37ca867792c655cfd28dc332fa9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8cb86c1486223e982f8cbddc8eadaaf1c8ced4f8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684757"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565184"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Oprette en ER-formatkonfiguration (november 2016)
 
@@ -158,3 +157,6 @@ Dette emne beskriver, hvordan en bruger i rollen som systemadministrator eller u
 42. Klik på **Gem**.
 43. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e92dd1ac7e849f5ce7db4b4769b062701bb8f158
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441710"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236259"
 ---
 # <a name="registration-ids"></a>Registrerings-id'er
 
@@ -112,3 +111,6 @@ Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder n√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

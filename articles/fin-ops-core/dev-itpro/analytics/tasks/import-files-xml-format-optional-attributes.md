@@ -2,11 +2,9 @@
 title: (RCS) Importere filer i XML-format med valgfrie attributter
 description: Dette emne indeholder oplysninger om, hvordan en bruger kan designe ER-formatkonfiguration til at importere filer i XML-format, der indeholder valgfrie attributter.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1d4c8c1d81faa60193d2339fd6541e752c2e2f9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b9447c827a02acb616bbfdcb2c7305e8bdd013c9811e28bb25256db056d85d6a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720706"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Importere filer i XML-format med valgfrie attributter
 
@@ -123,3 +121,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 
 > [!NOTE]
 > Den samme fil er blevet importeret, da formatdesignet nu anser attributten "id" for elementet "Document" som valgfrit.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

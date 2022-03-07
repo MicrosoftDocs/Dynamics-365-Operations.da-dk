@@ -2,16 +2,13 @@
 title: 1099-blanket i den offentlige sektor
 description: Denne artikel indeholder tip og oplysninger om opsætning af 1099-blanketfunktionalitet til Kreditor i den offentlige sektor.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 ms.search.region: USA
@@ -19,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66b311a02238aae5c08f71c64c751444cb187410
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0510ab84b2b44dcadfbcaee25a3cd43e29ef44d582e0dc0e8281d993e4808c07
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729532"
 ---
 # <a name="form-1099-in-the-public-sector"></a>1099-blanket i den offentlige sektor
 
@@ -52,10 +49,12 @@ Du kan også bruge siden **Kreditorudligning for 1099** til at angive eller opda
 -   Hvis et enkelt beløb på en side er større end minimumbeløbet, kan det amerikanske skattevæsen kræve, at alle beløb rapporteres, selvom alle andre beløb er mindre end minimumbeløbet.
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over kreditor i den offentlige sektor](../public-sector/accounts-payable-public-sector.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

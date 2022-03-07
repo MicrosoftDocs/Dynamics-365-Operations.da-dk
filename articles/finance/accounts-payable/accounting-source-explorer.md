@@ -1,29 +1,26 @@
 ---
 title: Sporing af regnskabskilde
 description: Denne artikel indeholder oplysninger om Sporing af regnskabskilde, som du kan bruge til detaljeret analyse af kildeoplysninger bag regnskabsposter i finansmodulet.
-author: ShylaThompson
-manager: AnnBe
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingSourceExplorer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15391
 ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 904f1f9fb139248205b426aec5a0372f2edb1e59
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab098aa36d6fa6c34beaaa31ecfbb1eb47840e343d7dee3d9cd3034d6ff8f9c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749192"
 ---
 # <a name="accounting-source-explorer"></a>Sporing af regnskabskilde
 
@@ -49,5 +46,10 @@ Til kildedokumenter, der anvender begrebet reference-id'er til kildedokumenter, 
 
 For disse dokumenter kan du også navigere til det faktiske kildedokument fra Sporing af regnskabskilde.
 
+> [!NOTE]
+> Fra og med version 10.0.20 har knappen **Opdater** to ekstra områder til begrænsning af den første forespørgsel, der køres for at angive data på siden. Disse ekstra områder er også tilgængelige i version 10.0.19 som en serviceopdatering. Følgende felter er tilføjet:
+>
+> - Fra bilag, Til bilag
+> - Fra hovedkonto, Til hovedkonto
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

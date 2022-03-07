@@ -2,25 +2,22 @@
 title: Genopfyldningsstrategier
 description: Dette emne indeholder oplysninger om genopfyldningsstrategier og forklarer, hvordan du kan bruge feltet Genopfyldningsstrategi på linjer til genopfyldningsskabeloner for bølgeefterspørgsel for at vælge, hvordan genopfyldning udføres.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646127"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574155"
 ---
 # <a name="replenishment-strategies"></a>Genopfyldningsstrategier
 
@@ -48,7 +45,7 @@ Før du kan bruge denne funktion, skal den være slået til i dit system. Admini
 
 Få adgang til skabelonerne ved at gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Genopfyldningsskabeloner**. I afsnittet **Oversigt** skal du vælge eller oprette en opfyldningsskabelon for bølgeefterspørgsel, hvor feltet **Genopfyldningstype** er angivet til *Bølgebehov*. Opret derefter genopfyldningsskabelonlinjerne i sektionen **Detaljer om genopfyldningsskabelon**. For hver linje i feltet **Genopfyldningsstrategi** skal du vælge den genopfyldningsstrategi, du vil bruge.
 
-![Siden Genopfyldningsskabeloner](media/ReplenTempWaveDmdMaxLocCap.png "Siden Genopfyldningsskabeloner")
+![Siden Genopfyldningsskabeloner.](media/ReplenTempWaveDmdMaxLocCap.png "Siden Genopfyldningsskabeloner")
 
 Hvis kolonnen **Genopfyldningsstrategi** ikke vises i gitteret i sektionen **Detaljer om genopfyldningsskabelon**, skal du kontrollere, at funktionen er slået til, og at den valgte genopfyldningsskabelon har genopfyldningstypen *Bølgebehov*.
 
@@ -88,7 +85,7 @@ Hvis genopfyldningsstrategien indstilles til *Maksimal lokationskapacitet*, får
 - **Genopfyldningsarbejde 1:** Pluk 4 kasser fra bulkvarelokation, og placer dem i lokationspluk-001.
 - **Genopfyldningsarbejde 2:** Pluk 5 kasser fra bulkvarelokation, og placer dem i lokationspluk-002.
 
-[![Eksempel 1](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
+[![Eksempel 1.](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
@@ -112,6 +109,9 @@ Afhængigt af indstillingen af **Tillad opdeling** i lokationsvejledningen for g
 
 Resultaterne er forskellige på grund af de oplysninger, der er tilgængelige, når du opretter arbejdet. Når **Tillad opdeling** er angivet til *Ja* i lokationsvejledningerne for genopfyldningspluk, er du sikker på, at du kan finde 160 stk. Derfor kan du oprette arbejde for det pågældende antal. Men når indstillingen **Tillad opdeling** er angivet til *Nej*, ved du ikke, at der findes 160 stk. Da det ekstra antal, du har besluttet at genopfylde, var 3 kasser, dropper du det ekstra antal og afprøver det oprindelige antal igen.
 
-[![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
+[![Eksempel 2.](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 Hvis du vil hente maksimumantallet til genopfyldningslokationer, skal du derfor angive indstillingen **Tillad opdeling** til *Ja* i lokationsvejledningerne for genopfyldningspluk.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

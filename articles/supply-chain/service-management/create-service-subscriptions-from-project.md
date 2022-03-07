@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1cd529a584eba16883d76c4da8c1f013cfc8465a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424458"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247664"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Oprette serviceabonnementer fra et projekt    
 
@@ -55,3 +54,6 @@ Nu kan du oprette abonnementstransaktioner for abonnementet.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

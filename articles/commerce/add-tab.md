@@ -2,15 +2,12 @@
 title: Fanemodul
 description: Dette emne omhandler fanemoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e7d2cd7b7ce9446d77eff66433739c8ea6b1f309
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411024"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348290"
 ---
 # <a name="tab-module"></a>Fanemodul
 
@@ -31,19 +28,17 @@ ms.locfileid: "4411024"
 
 Dette emne omhandler fanemoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
-
 Fanemoduler er containeragtige moduler, som bruges til at organisere oplysningerne på en webstedsside på faner. De kan bruges på alle sider, hvor oplysninger skal vises under faner.
 
 Inde i hvert fanemodul kan et eller flere faneelementmoduler tilføjes. De enkelte faneelementmoduler repræsenterer en enkelt fane. I hvert faneelementmodul kan et eller flere moduler tilføjes. Der er ingen begrænsninger for de typer moduler, der kan føjes til et faneelementmodul.
 
 Det følgende billede viser et eksempel på et fanemodul på en webstedside. I dette eksempel er fanen **Levering** valgt.
 
-![Eksempel på et fanemodul](./media/ecommerce-tab.PNG)
+![Eksempel på et fanemodul.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Fanemodulegenskaber
 
-| Egenskabsbetegnelse | Værdier | Beskrivende tekst |
+| Egenskabsbetegnelse | Værdier | Betegnelse |
 |---------------|--------|-------------|
 | Overskrift | Tekst | Denne egenskab specificerer en valgfri tekstoverskrift i fanemodulet. |
 | Aktiv fane-indeks | Tal | Denne egenskab specificerer den fane, der skal være aktiv som standard, når en side indlæses. Hvis der ikke angives en værdi, er det første faneelement som standard aktivt. |
@@ -84,3 +79,6 @@ Hvis du vil føje et fanemodul til en side og angive de påkrævede egenskaber, 
 [Harmonikamodul](add-accordion.md)
 
 [Tekstblokmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Nye eller opdaterede opgaveguider (december 2017)
 description: I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (december 2016 - alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c24fed0027f1c1f6aeab823b22bc3b36b814f814
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 42bf8e4a1264b67ff11dad7417d16b6273e6feb36294596014faf562a4a0ef3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723049"
 ---
 # <a name="new-or-updated-task-guides-december-2017"></a>Nye eller opdaterede opgaveguider (december 2017)
 
@@ -368,3 +366,6 @@ Når en BPM-linje slettes, slettes alle opgaveguider, der er knyttet til BPM-lin
 **Slettet BPM-linje**
 
 - Flytte planlagte kanban-job
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

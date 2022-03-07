@@ -1,30 +1,27 @@
 ---
 title: Arbejde med serienummerede varer
 description: Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 62e53ec57a8d5c5c922f580219e4bde5338d0707
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424555"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571683"
 ---
 # <a name="working-with-serialized-items"></a>Arbejde med serienummerede varer
 
@@ -55,8 +52,8 @@ Hvis et serienummer ikke kan læse eller scannes, kan du oprette en tom linje fo
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jeg rette eller ændre de serienumre, jeg har registreret for en salgsordre?
 Ja, du kan rette serienumre, hvis følgende betingelser er opfyldt:
--   **Fakturaer** – Du kan ændre serienumrene for de varer, du ikke har endnu faktureret. Følgesedlen opdateres derefter også. Hvis en salgsordrelinje imidlertid blev rettet ved at registrere et negativt antal, kan du ikke ændre serienumre for salgsordrelinjen.
--   **Følgesedler** – Du kan ikke delvist rette en følgeseddellinje, der indeholder serienummererede varer. Du skal tilbageføre den fulde mængde for linjen. Hvis en følgeseddel er blevet annulleret eller rettet, behøver du ikke registrere de tilbageførte serienumrene igen, når du opretter en ny følgeseddel for de samme serienummererede varer. De tal, der blev registreret, vil blive brugt.
+-   **Fakturaer** – Du kan ændre serienumrene for de varer, du ikke har faktureret endnu. Følgesedlen opdateres derefter også. Hvis en salgsordrelinje imidlertid blev rettet ved at registrere et negativt antal, kan du ikke ændre serienumre for salgsordrelinjen.
+-   **Følgesedler** – Du kan ikke delvist rette en følgeseddellinje, der indeholder serienummererede varer. Du skal tilbageføre den fulde mængde for linjen. Hvis en følgeseddel er blevet annulleret eller rettet, behøver du ikke registrere de tilbageførte serienumrene igen, når du opretter en ny følgeseddel for de samme serienummererede varer. De tal, der blev registreret, vil blive brugt.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Kan jeg få vist de serienumre, der blev leveret sammen med en bestemt følgeseddel eller blev medtaget i en faktura?
 Ja, du kan køre en forespørgsel på følgeseddelkladdelinjen eller fakturakladdelinjen for at få vist en liste over alle de serienumre, der blev medtaget i dokumentet.
@@ -80,3 +77,6 @@ Denne funktion er tilgængelig for alle de roller, der kan vedligeholde salgsfø
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

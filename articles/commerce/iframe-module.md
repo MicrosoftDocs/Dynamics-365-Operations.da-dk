@@ -2,15 +2,12 @@
 title: iFrame-modul
 description: I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665390"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754008"
 ---
-# <a name="iframe-module"></a>iFrame-modul
+# <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
 
 I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Et iFrame-modul indeholder en iframe (indbygget ramme), der fungerer som vært for eksternt indhold på et websted. Det kan f.eks. bruges som vært for en YouTube-video eller PDF-filfremviser på en side på et websted. 
 
@@ -42,11 +37,11 @@ Et iFrame-modul kræver en URL-destination. Derefter vil den være vært for ind
 
 Følgende billede viser eksempler på iFrame-moduler, der præsenterer eksterne videoer på websider.
 
-![Eksempel på iFrame-moduler, der præsenterer eksterne videoer](./media/ecommerce-iframe.PNG)
+![Eksempel på iFrame-moduler, der præsenterer eksterne videoer.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Egenskaber for iFrame-modul
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Overskrift | Tekst | Overskrift for modulet. |
 | Mål-URL-adresse | URL | Den URL-adresse, der har modulet som vært. |
@@ -71,9 +66,15 @@ Hvis du vil føje et iFrame-modul til en side, der viser en ekstern video, skal 
 1. Angiv andre egenskaber, f.eks **Overskrift** og **Højde**, som du har brug for.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til siden Marketing på dit websted. Du bør kunne se, at videoen gengives i iFrame-modulet.
- 
+
+> [!NOTE]
+> Da iFrame-modulet er vært for eksternt indhold, skal webstedsforfattere sikre, at indhold, der har et iFrame-modul som vært, ikke overtræder politikker for indholdsbegrænsning på det pågældende marked. Hvis der er en indholdsovertrædelse på en side, der bruger modulet iFrame, kan webstedsopretter fjerne iFrame-modulet ved at åbne siden i Site Builder, vælge **Fjern modul** på iFrame-modulets plads og derefter gemme og publicere siden igen.
+
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek, oversigt](starter-kit-overview.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

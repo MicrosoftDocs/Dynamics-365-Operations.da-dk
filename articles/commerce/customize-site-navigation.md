@@ -2,36 +2,30 @@
 title: Tilpasse navigation på webstedet
 description: I dette emne beskrives, hvordan du opretter et tilpasset onlinenavigationshierarki for at organisere dine produkter til gennemsyn på dit Microsoft Dynamics 365 Commerce-websted.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8af68fff17f2f92356ade356da0e75867ed54950d744c6cbe730ad8db4ac3975
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755876"
 ---
 # <a name="customize-site-navigation"></a>Tilpasse navigation på webstedet
-
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du opretter et tilpasset onlinenavigationshierarki for at organisere dine produkter til gennemsyn på dit Microsoft Dynamics 365 Commerce-websted.
-
-## <a name="overview"></a>Oversigt
 
 Onlinestorefronts giver typisk kunderne mulighed for at finde og gennemse produkter ved at navigere gennem produktkategorier. Denne egenskab leveres normalt af faner øverst på siden eller af en navigationslinje i venstre side. I Dynamics 365 Commerce kan du oprette og administrere hierarkistrukturen i kategorinavigationen og de produkter, der er inkluderet i de forskellige kategorier.
 
@@ -110,3 +104,6 @@ Hvis du vil føje brugerdefinerede navigationsindstillinger til navigationsmenue
 [Oprette en side-URL](create-page-url.md)
 
 [Arbejd med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Estimere en produktionsordre
 description: Du kan køre denne procedure ved hjælp af demodatafirmaet USMF eller dine egne datasæt.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bbb541a09809c1f1bfada42094d840a2f6e7764
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0450186382b6c306910fc6653f67ce313b7cfc2c69a134a9a806d1a232dc0fd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765412"
 ---
 # <a name="estimate-a-production-order"></a>Estimere en produktionsordre
 
@@ -42,3 +39,6 @@ Du kan køre denne procedure ved hjælp af demodatafirmaet USMF eller dine egne 
 1. Klik på Administrer omkostninger i handlingsruden.
 2. Klik på Vis beregningsoplysninger.
     * Denne side viser kostprisopdelingen. For eksempel kan du se den samlede kostpris pr. enhed for det færdige produkt i den første række. De efterfølgende rækker indeholder omkostninger i henhold til styklisten, produktionsruten, og indirekte omkostninger.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

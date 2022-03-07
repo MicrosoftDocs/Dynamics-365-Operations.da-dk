@@ -2,27 +2,24 @@
 title: " Betalingskonfigurationer for detailopgørelser"
 description: Denne procedure viser konfigurationer af betalingsmetoder for Commerce-butikker, der påvirker, hvordan opgørelser oprettes og bogføres.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 390ccdfde3f9bb93770d456af7532a42e81955a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b3c8c7678d88b3c01138aa098b8830336885e6445fb41931b19bcda2b95b86b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712351"
 ---
 # <a name="payment-configurations-for-retail-statements"></a> Betalingskonfigurationer for detailopgørelser
 
@@ -53,3 +50,6 @@ Denne registrering anvender demofirmaet USRT.
     * Vælg den konto, som deponeringer til pengeskab skal bogføres på.  
 8. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

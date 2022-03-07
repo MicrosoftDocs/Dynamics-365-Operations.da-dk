@@ -2,27 +2,24 @@
 title: Gemme konfigurationer for detailopgørelser
 description: Denne procedure viser konfigurationer for butikken, der påvirker, hvordan Commerce-opgørelser oprettes og bogføres.
 author: jashanno
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: da862af25df241ad42b7e1ade3fdca19f6280278
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4411233"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804107"
 ---
 # <a name="store-configurations-for-retail-statements"></a>Gemme konfigurationer for detailopgørelser
 
@@ -49,3 +46,6 @@ Denne procedure viser konfigurationer for butikken, der påvirker, hvordan Comme
 17. Vælg "Ja" i **Opdel efter opgørelsesmetode** for at få oprettet opgørelser for hver defineret opgørelsesmetoden. Denne handling kan være nyttig, hvis bogføringens ydeevne skal forbedres for butikker med store transaktionsmængder, da den opretter mange mindre opgørelser, som kan behandles parallelt.  
 18. I feltet **Standardkunde** i oversigtspanelet **Generelt** skal du vælge den debitorkonto, der skal bruges til salg til kunder, der kommer ind fra gaden.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

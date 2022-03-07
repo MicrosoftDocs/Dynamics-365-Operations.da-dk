@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e85bd359ce1053629ad4217cf623e57b2976463a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 756b3568d1d43805a5786f0c90a0a198f89e7c2f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441602"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205981"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Konfigurere overførselsdokumenter for varebevægelser inden for et firma
 
@@ -74,3 +73,6 @@ Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer
 10. Klik på følgeseddel.
 11. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

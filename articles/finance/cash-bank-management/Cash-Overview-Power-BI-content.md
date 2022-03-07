@@ -2,32 +2,29 @@
 title: Power BI-indhold til Oversigt over kontanter
 description: Dette emne beskriver Power BI-indholdet til Oversigt over kontanter. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 794a8b19224858a690f2b857c0d7278ed177d531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441598"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830586"
 ---
-# <a name="cash-overview-power-bi-content"></a>Power BI-indhold til Oversigt over kontanter
+# <a name="cash-overview-power-bi-content"></a>Power BI-indhold til oversigt over kontanter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Power BI-indhold til **Oversigt over kontanter**. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
+Dette emne beskriver **Oversigt over kontanter** Microsoft Power BI-indholdet. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
 
 ## <a name="overview"></a>Overblik
 
@@ -79,3 +76,6 @@ Følgende tabel viser de enheder, som Power BI-indholdet for **Oversigt over kon
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Opsummeret indgående pengestrømme, udgående pengestrømme og saldo ved hjælp af regnskabsvalutaen for hvert regnskab |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Opsummeret indgående pengestrømme, udgående pengestrømme og saldo ved hjælp af systemvalutaen for alle regnskaber |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Opsummeret nettoposteringsbeløb og saldo for valutaer ved hjælp af transaktionsvalutaen |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

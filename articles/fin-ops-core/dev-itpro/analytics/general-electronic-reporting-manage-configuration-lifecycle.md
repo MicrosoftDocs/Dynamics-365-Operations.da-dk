@@ -1,12 +1,10 @@
 ---
 title: Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
-description: I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Microsoft Dynamics 365 Finance-løsningen.
+description: I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Dynamics 365 Finance.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4741784103817c270c4c7f730753ba59a327d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767773"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Microsoft Dynamics 365 Finance.
+I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Dynamics 365 Finance.
 
 ## <a name="overview"></a>Overblik
 
@@ -47,7 +45,7 @@ Elektronisk rapportering (ER) er et program, der understøtter lovgivningsmæssi
 
 - Gør en skabelon tilgængelig, så den kan bruges i andre forekomster:
 
-    - Transformér en dokumentskabelon, der er oprettet til en ER-konfiguration, og eksportér konfigurationen fra den aktuelle forekomst som en XML-pakke, der kan gemmes lokalt eller i LCS.
+    - Transformér en dokumentskabelon, der er oprettet til en ER-konfiguration, og eksportér konfigurationen fra den aktuelle programforekomst som en XML-pakke, der kan gemmes lokalt eller i Lifecycle Services (LCS).
     - Transformér en ER-konfiguration til en programdokumentskabelon.
     - Importér en XML-pakke, der er gemt lokalt eller i LCS, til den aktuelle forekomst.
 
@@ -67,7 +65,7 @@ Elektronisk rapportering (ER) er et program, der understøtter lovgivningsmæssi
 ## <a name="concepts"></a>Begreber
 Følgende roller og relaterede aktiviteter er tilknyttet ER-konfigurations livscyklus.
 
-| Rolle                                       | Aktiviteter                                                      | Betegnelse |
+| Rolle                                       | Aktiviteter                                                      | Beskrivelse |
 |--------------------------------------------|-----------------------------------------------------------------|-------------|
 | Funktionel konsulent i elektronisk rapportering | Opret og administrer ER-komponenter (modeller og formater).           | En forretningsmand, som designer ER domæne-specifikke datamodeller, designer de krævede skabeloner til elektroniske dokumenter og binder dem i overensstemmelse hermed. |
 | Udvikler til elektronisk rapportering             | Opret og administrer datamodeltilknytninger.                          | En specialist, der vælger de nødvendige Finance-datakilder og binder dem til ER-domænespecifikke datamodeller. |
@@ -80,10 +78,38 @@ Af følgende ER-relaterede årsager anbefales du at designe ER-konfigurationer i
 - Brugere i rollen som **Udvikler til elektronisk rapportering** eller **Funktionel konsulent i elektronisk rapportering** kan redigere konfigurationer og køre dem til testformål. Denne situation kan medføre kald af metoder for klasser og tabeller, der kan være skadelige for virksomhedens data og forekomstens ydeevne.
 - Kald af metoder for klasser og tabeller som ER-datakilder til ER-konfigurationer er ikke begrænset af indgangspunkter og logført firmaindhold. Derfor kan brugere i rollen **Udvikler til elektronisk rapportering** eller rollen **Funktionel konsulent i elektronisk rapportering** få adgang til forretningsfølsomme data.
 
-ER-konfigurationer, der designet i udviklingsmiljøet, kan overføres til testmiljøet til konfigurationen af evaluering (korrekt procesintegration, rigtigheden af resultater og ydeevne) og kvalitetssikring som f.eks. rigtigheden af rollebaserede adgangsrettigheder og opdeling af opgaver. De funktioner, der aktiverer ER-konfigurationsudvekslingen, kan bruges til dette formål. Endelig kan afprøvede ER-konfigurationer overføres til enten LCS, hvor de kan deles med serviceabonnenter, eller til produktionsmiljøet til intern brug som vist i følgende illustration.
+ER-konfigurationer, der designet i udviklingsmiljøet, kan [uploades](#data-persistence-consideration) til testmiljøet til konfigurationen af evaluering (korrekt procesintegration, rigtigheden af resultater og ydeevne) og kvalitetssikring som f.eks. rigtigheden af rollebaserede adgangsrettigheder og opdeling af opgaver. De funktioner, der aktiverer ER-konfigurationsudvekslingen, kan bruges til dette formål. Afprøvede ER-konfigurationer kan uploades til LCS, hvor de kan deles med serviceabonnenter, eller de kan [importeres](#data-persistence-consideration) til intern brug i produktionsmiljøet.
 
-![Livscyklus for ER-konfiguration](./media/ger-configuration-lifecycle.png)
+![Livscyklus for ER-konfiguration.](./media/ger-configuration-lifecycle.png)
+
+## <a name="data-persistence-consideration"></a>Overvejelse af datafastholdelse
+
+Du kan [importere](tasks/er-import-configuration-lifecycle-services.md) forskellige [versioner](general-electronic-reporting.md#component-versioning) af en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuelt til din Finance-forekomst. Når en ny version af en ER-konfiguration importeres, styrer systemet indholdet af kladdeversionen af denne konfiguration:
+
+- Når den importerede version er lavere end den højeste version af denne konfiguration i den aktuelle Finance-forekomst, forbliver indholdet af kladdeversionen af denne konfiguration uændret.
+- Når den importerede version er højere end nogen anden version af denne konfiguration i den aktuelle Finance-forekomst, kopieres indholdet af den importerede version til kladdeversionen af denne konfiguration, så du kan fortsætte med at redigere den sidste fuldførte version.
+
+Hvis denne konfiguration ejes af den [konfigurationsudbyder](general-electronic-reporting.md#Provider), der er aktiveret i øjeblikket, er kladdeversionen af denne konfiguration synlig for dig i oversigtspanelet **Versioner** på siden **Konfigurationer** (**Organisationsadministration** > **Elektronisk rapportering** > **Konfigurationer**). Du kan vælge kladdeversionen af konfigurationen og [redigere](er-quick-start2-customize-report.md#ConfigureDerivedFormat) dens indhold ved hjælp af den relevante ER-designer. Når du har redigeret kladdeversionen af ER-konfigurationen, matcher indholdet ikke længere indholdet af den højeste version af denne konfiguration i den aktuelle Finance-forekomst. For at forhindre, at du mister ændringerne, vises der en fejl om, at importen ikke kan fortsætte, da versionen af denne konfiguration er højere end den højeste version af denne konfiguration i den aktuelle Finance-forekomst. Når det sker, f.eks. i forbindelse med formatkonfiguration **X**, vises fejlen **Format 'X' version er ikke fuldført**.
+
+Hvis du vil fortryde de ændringer, du har foretaget i kladdeversionen, skal du vælge den højeste fuldførte eller delte version af din ER-konfiguration i Finance i oversigtspanelet **Versioner** og derefter vælge indstillingen **Hent denne version**. Indholdet af den valgte version kopieres til kladdeversionen.
+
+## <a name="applicability-consideration"></a>Overvejelse af anvendelighed
+
+Når du designer en ny version af en ER-konfiguration, kan du definere dens [afhængighed](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) af andre softwarekomponenter. Dette trin betragtes som en forudsætning for at kontrollere overførslen af denne konfigurations version fra et ER-lager eller en ekstern XML-fil og yderligere anvendelse af denne version. Når du forsøger at importere en ny version af en ER-konfiguration, bruger systemet de konfigurerede forudsætninger til at styre, om versionen kan importeres.
+
+I visse tilfælde kan du kræve, at systemet ignorerer de konfigurerede forudsætninger, når du importerer nye versioner af ER-konfigurationer. Hvis du ønsker, at systemet skal ignorere forudsætningerne under importen, skal du følge disse trin.
+
+1. Gå til **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2. På siden **Konfigurationer** i handlingsruden skal du under fanen **Konfigurationer** i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
+3. Angiv indstillingen **Spring over produktopdateringer og kontrol af forudsætninger for version under import** til **Ja**.
+
+    > [!NOTE]
+    > Denne parameter er bruger- og virksomhedspecifik.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+[Definere afhængigheden af ER-konfigurationer for andre komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,32 +2,29 @@
 title: Power BI-indhold til styring af kredit og inkasso
 description: I dette emne beskrives, hvad der indgår i Power BI-indhold til styring af kredit og inkasso. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
+ms.openlocfilehash: 65423f49ba106a152f58c92533c4f1a16d47a318982cfe69bb23f9091fa09846
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4441743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763208"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-indhold til styring af kredit og inkasso
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der indgår i **Microsoft Power BI-indhold til styring af kredit og inkasso**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der indgår i **Styring af kredit og inkasso** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -77,3 +74,6 @@ Power BI-indholdet **CustCollectionsBICrossCompany** omfatter en rapport, der be
 | Rykkere         | <ul><li>Rykkerkodebeløb</li><li>Oplysninger om rykkerkodebeløb</li><li>Rykkerbeløb pr. firma</li><li>Rykkerbeløb pr. kundegruppe</li><li>Rykkerbeløb pr. område</li></ul> |
 
 Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruge funktionen til eksport af underliggende data til at eksportere underliggende data, der opsummeres i en visuel effekt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

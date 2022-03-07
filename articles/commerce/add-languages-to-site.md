@@ -2,36 +2,30 @@
 title: Føje sprog til webstedet
 description: I dette emne forklares det, hvordan du kan føje understøttelse af yderligere sprog til et Microsoft Dynamics 365 Commerce-websted.
 author: bicyclingfool
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411019"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964548"
 ---
 # <a name="add-languages-to-your-site"></a>Føje sprog til webstedet
-
 
 [!include [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan du kan føje understøttelse af yderligere sprog til et Microsoft Dynamics 365 Commerce-websted.
-
-## <a name="overview"></a>Oversigt
 
 Du kan lokalisere dit websted til ethvert sprog, som Commerce understøtter. Listen over understøttede sprog vises senere i dette emne. Hvis du vil tilføje et sprog på dit websted, skal du først føje det til en onlinebutik, der er tilknyttet dit websted.
 
@@ -165,14 +159,15 @@ Det sprog, du har tilføjet, er nu tilgængeligt, så du kan konfigurere dit web
 
 [Tilføj et logo](add-logo.md)
 
-[Vælg et tema for webstedet](select-site-theme.md)
+[Vælge et tema for webstedet](select-site-theme.md)
 
 [Arbejd med CSS-tilsidesættelsesfiler](css-override-files.md)
 
-[Tilføj en favicon](add-favicon.md)
+[Tilføje en favicon](add-favicon.md)
 
-[Tilføj en velkomstmeddelelse](add-welcome-message.md)
-
-[Tilføj en copyright-meddelelse](add-copyright-notice.md)
+[Tilføje en copyright-meddelelse](add-copyright-notice.md)
 
 [Tilføje scriptkode til sider på websteder for at understøtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

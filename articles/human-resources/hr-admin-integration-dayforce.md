@@ -1,48 +1,50 @@
 ---
-title: Konfigurer integration med Dayforce
-description: Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Personale og Dayforce, før du kan behandle en lønkørsel.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Konfigurere integration med Dayforce
+description: Dette emne beskriver de krævede konfigurationstrin for integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067070"
 ---
-# <a name="configure-integration-with-dayforce"></a>Konfigurer integration med Dayforce
+# <a name="configure-integration-with-dayforce"></a>Konfigurere integration med Dayforce
 
-Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Personale og Dayforce, før du kan behandle en lønkørsel.
 
-Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Personale. Integrationen kræver bestemte data fra Personale. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Personale på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
-- Personaledata
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Integration mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
+
+Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Human Resources. Integrationen kræver bestemte data fra Human Resources. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Human Resources på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
+
+- Human Resourcesdata
 - Kompensationsdata
 - Lønoplysninger, f.eks. løncyklusser, betalingsperioder og lønkoder
 - Arbejderdata
 
-Denne artikel beskriver de trin, du skal udføre for at aktivere integrationen. Det forklarer også typerne af data og oplysninger om konfigurationen, der kræves til integrationen.
+Dette emne beskriver den fremgangsmåde, du skal følge for at aktivere integrationen, og hvilke datatyper og konfigurationsdetaljer der kræves til integrationen.
 
 ## <a name="enable-the-integration"></a>Aktivere integrationen.
 
-I Personale skal du aktivere integrationen og angive konfigurationsoplysningerne for at oprette forbindelse til Dayforce. Hvis den finanspostering, der er oprettet, skal importeres til Microsoft Dynamics 365 Finance, skal du også konfigurere en Microsoft Azure-lagerkonto og angive Azure-lagerets forbindelsesstreng i Finance.
+I Human Resources skal du aktivere integrationen og angive konfigurationsoplysningerne for at oprette forbindelse til Dayforce. Hvis den finanspostering, der er oprettet, skal importeres til Microsoft Dynamics 365 Finance, skal du også konfigurere en Microsoft Azure-lagerkonto og angive Azure-lagerets forbindelsesstreng i Finance.
 
-Følg disse trin for at aktivere integrationen i Personale.
+Følg disse trin for at aktivere integrationen i Human Resources.
 
 1. På siden **Systemadministration** skal du vælge **Integrationskonfiguration**.
 2. Angiv det sikre FTP-slutpunkt og den sikre FTP-mappesti.
@@ -51,10 +53,10 @@ Følg disse trin for at aktivere integrationen i Personale.
 
 Når integrationen er aktiveret, oprettes dataeksportpakken og -filerne, og hyppigheden angives. Du kan ændre denne frekvens efter behov.
 
-Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-artikler:
+Yderligere oplysninger om Azure-lagerkonti og Azure-lagerforbindelsesstrenge finder du i følgende Azure-emner:
 
-- [Om Azure-lagerkonti](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere forbindelsesstrenge for Azure-datalager](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Om Azure-lagerkonti](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere forbindelsesstrenge for Azure-datalager](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske oplysninger ved aktivering af lønintegration
 
@@ -68,13 +70,13 @@ Aktivering af lønintegration har to primære effekter:
 
 ## <a name="configure-your-data"></a>Konfigurere dine data 
 
-Hvis du vil behandle løn, skal du konfigurere personaledata i Personale. Du skal angive virksomhedens data, f.eks. job og stillinger, sammen med frynsegoder og kompensationsoplysninger. Disse oplysninger indeholder oplysningerne om ansættelse, løn og fradrag, der kræves for at generere løn for medarbejderen.
+Hvis du vil behandle løn, skal du konfigurere personaledata i Human Resources. Du skal angive virksomhedens data, f.eks. job og stillinger, sammen med frynsegoder og kompensationsoplysninger. Disse oplysninger indeholder oplysningerne om ansættelse, løn og fradrag, der kræves for at generere løn for medarbejderen.
 
-### <a name="human-resource-data"></a>Personaledata
+### <a name="human-resource-data"></a>Human Resourcesdata
 
 #### <a name="benefits"></a>Frynsegoder 
 
-Personale indeholder en række værktøjer til konfiguration og vedligeholdelse af frynsegoder, fradrag og arbejderkompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte.
+Human Resources indeholder en række værktøjer til konfiguration og vedligeholdelse af frynsegoder, fradrag og arbejderkompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte.
 
 Når du opretter frynsegoder, skal du huske på følgende data og konfigurationer, der bruges i Dayforce.
 
@@ -115,19 +117,19 @@ Når du opretter frynsegoder, skal du huske på følgende data og konfiguratione
 
 Dayforce opretter følgende fradrag, der er baseret på den løneffekt, der er defineret på frynsegodeplanen.
 
-| Valg i Personale        | Resultat i Dayforce                            |
+| Valg i Human Resources        | Resultat i Dayforce                            |
 |----------------------------|-----------------------------------------------|
 | Ingen                       | Der oprettes ikke noget fradrag.                      |
 | Kun fradrag             | Der oprettes et medarbejderfradrag.             |
 | Kun bidrag          | Der oprettes et arbejdsgiverfradrag.             |
 | Fradrag og bidrag | Der oprettes medarbejder- og arbejdsgiverfradrag. |
 
-Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram i følgende artikler:
+Du kan finde flere oplysninger om, hvordan du definerer og administrerer et frynsegodeprogram under følgende emner:
 
-- [Levere et frynsegodeprogram for medarbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opret et nyt frynsegode](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere regler og politikker for frynsegodeberettigelse](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Tilmelde og fjerne frynsegoder fra arbejdere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et frynsegodeprogram for medarbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Oprette et nyt frynsegode](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere regler og politikker for frynsegodeberettigelse](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Tilmelde og fjerne frynsegoder fra arbejdere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensation 
 
@@ -135,22 +137,22 @@ Kompensationsstyring bruges til at styre fordelingen af grundløn og bonusser. E
 
 Dayforce anvendes kompensationsoplysninger til at beregne en medarbejders timesats eller årlige sats. Konverteringer af planer for fast løn og lønsats er påkrævet. Medarbejderne skal være knyttet til en plan for fast løn.
 
-Du kan finde flere oplysninger om kompensationsplaner i følgende artikler:
+Du kan finde flere oplysninger om kompensationsplaner under følgende emner:
 
-- [Oprette planer for fast løn](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Oprette planer for variabel kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Udarbejde løn-/kompensationsstruktur og -planer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Proceskompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensationsproces og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Melde en medarbejder til en fast lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Melde en medarbejder til en variabel lønplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Oprette faste kompensationsordninger](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Oprette planer for variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Udarbejde løn-/kompensationsstruktur og -planer](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Proceskompensation](/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensationsproces og beregne resultater](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Melde en medarbejder til en fast lønplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Melde en medarbejder til en variabel lønplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Job 
 
-Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger i følgende artikler:
+Et job er en samling af de opgaver og ansvarsområder, der kræves af en person, der udfører et job. Du kan finde flere oplysninger under følgende emner:
 
-- [Konfiguration af komponenter i et job](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definere nye job](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfiguration af komponenter i et job](/dynamics365/unified-operations/talent/create-job)
+- [Definere nye job](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -172,19 +174,19 @@ Hav følgende data og konfiguration i tankerne, når du konfigurerer stillinger:
 
 Hvis flere stillinger i den samme afdeling er knyttet til samme job, konsolideres de til en enkelt stilling i Dayforce.
 
-Du kan finde flere oplysninger i følgende artikler:
+Du kan finde flere oplysninger under følgende emner:
 
-- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurere stillinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Afdelinger
 
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
 
-Du kan finde flere oplysninger i følgende artikler:
+Du kan finde flere oplysninger under følgende emner:
 
-- [Oprette en afdeling og knytte den til afdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye afdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Oprette en afdeling og knytte den til afdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye afdelinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Betalingscyklusser og lønperioder
 
@@ -199,7 +201,7 @@ Følgende oplysninger bruges i Dayforce:
 - Periodens startdato (første lønperiode påkrævet)
 - Standardbetalingsdato (første lønperiode påkrævet)
 
-Oplysningerne er integreret med Dayforce som løngrupper og adskilles af et land eller område for hver løncyklus. Mindst én periode skal genereres før integration. Dayforce genererer løngruppekalendere og betalingsdatoer, der er baseret på startdatoen for den første lønperiode og den standardbetalingsdato, der er angivet i Personale.
+Oplysningerne er integreret med Dayforce som løngrupper og adskilles af et land eller område for hver løncyklus. Mindst én periode skal genereres før integration. Dayforce genererer løngruppekalendere og betalingsdatoer, der er baseret på startdatoen for den første lønperiode og den standardbetalingsdato, der er angivet i Human Resources.
 
 #### <a name="earning-codes"></a>Lønkoder
 
@@ -208,7 +210,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 Følgende oplysninger bruges i Dayforce:
 
 - Lønkode (påkrævet)
-- Betegnelse
+- Beskrivelse
 - Måleenhed
 - Produktiv
 
@@ -299,7 +301,7 @@ Detaljeret ansættelseshistorik bruges som vigtige oplysninger til at udlede sta
 
 Vigtige datoer for en medarbejders udledes ved hjælp af følgende oplysninger.
 
-| Personale                | Dayforce                                                                                             |
+| Human Resources                | Dayforce                                                                                             |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 | Den seneste ansættelsesdato | Historikpost for ansættelsesstart for aktuel ikke-afsluttet ansættelse                                 |
 | Fratrædelsesdato      | Historikpost for fratrædelsesdato for aktuel ikke-afsluttet ansættelse                                 |
@@ -338,7 +340,7 @@ Medarbejdere kan angive flere identifikationsnumre af **SSN**-identifikationstyp
 
 Gyldige bankkontooplysninger skal angives for enhver medarbejder, der vælger at blive betalt via bankkontooverførsler.
 
-| Personale                         | Dayforce                                                                                                    |
+| Human Resources                         | Dayforce                                                                                                    |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Bankkontonummer (påkrævet) |                                                                                                             |
 | SWIFT-kode (påkrævet)          | Feltet **Bank-id** bruges ved behandling af løn i Mexico.                                                             |
@@ -370,7 +372,7 @@ Hvis du genererer løn for medarbejdere i USA og Canada, skal følgende elemente
 - Bærere skal angives som økonomiske dimensioner og skal være det første element i standardstrengen for økonomisk dimension.
 
 > [!NOTE] 
-> Du kan konfigurere Personale til at kræve, at der angives en afdeling for stillinger. For at gøre dette skal du gå til **Personalets delte stillinger > Stillinger > Kræv afdelinger for stillinger**. Det anbefales, at denne indstilling gennemtvinges i forbindelse med integrationen.
+> Du kan konfigurere Human Resources til at kræve, at der angives en afdeling for stillinger. For at gøre dette skal du gå til **Human Resourcests delte stillinger > Stillinger > Kræv afdelinger for stillinger**. Det anbefales, at denne indstilling gennemtvinges i forbindelse med integrationen.
 
 ### <a name="job-types"></a>Jobtyper
 
@@ -378,7 +380,7 @@ Jobtyper bruges til at gruppere lignende job i kategorier. Jobtyper kræves for 
 
 Der kræves følgende jobtyper og beskrivelser.
 
-| Jobtype   | Betegnelse |
+| Jobtype   | Beskrivelse |
 |------------|-------------|
 | Pr. time     | Pr. time      |
 | Funktionærløn   | Funktionærløn    |
@@ -389,7 +391,7 @@ Du bruge stillingstyper til at beskrive, om stillingen er fuld tid, deltid eller
 
 Der kræves følgende stillingstyper og beskrivelser.
 
-| Stillingstype   | Betegnelse        |
+| Stillingstype   | Beskrivelse        |
 |-----------------|--------------------|
 | Fuld tid       | Fuldtidsmedarbejder |
 | Deltid       | Deltidsmedarbejder |
@@ -400,7 +402,7 @@ Der kræves følgende stillingstyper og beskrivelser.
 
 Der kræves følgende årsagskoder og beskrivelser.
 
-| Årsagskode    | Betegnelse      | Anvendelige scenarier |
+| Årsagskode    | Beskrivelse      | Anvendelige scenarier |
 |----------------|------------------|----------------------|
 | OPSIGELSE    | Opsigelse      | Lad arbejder fratræde     |
 | OPHØR    | Ophør      | Lad arbejder fratræde     |
@@ -417,7 +419,7 @@ Der kræves følgende årsagskoder og beskrivelser.
 
 Følgende tabel viser, hvordan ægteskabelige statusværdier knyttes til Dayforce.
 
-| Personale                 | Dayforce             |
+| Human Resources                 | Dayforce             |
 |------------------------|----------------------|
 | Gift                | Gift              |
 | Enlig                 | Enlig               |
@@ -433,7 +435,7 @@ Kønsbetegnelse knyttes til Dayforce og oversættes efter behov til de acceptere
 
 Følgende tabel viser, hvordan kønsbetegnelser knyttes til Dayforce.
 
-| Personale       | Dayforce        |
+| Human Resources       | Dayforce        |
 |--------------|-----------------|
 | Mand         | Mand            |
 | Kvinde       | Kvinde          |
@@ -479,7 +481,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 
 Identifikation af specifikke koder for land eller område, stat og region (kommune) kræver specifikke formater, som Dayforce og udbydere af i landet/ i regionen kan genkende. Selvom formatet for byer er fleksibelt, skal hver by være tilknyttet en tilstand.
 
-| Personale          | Dayforce              |
+| Human Resources          | Dayforce              |
 |-----------------|-----------------------|
 | Land/område  | Landekode          |
 | Postnummer | Postnummer           |
@@ -511,7 +513,7 @@ Jobtyper bruges til at gruppere lignende job i kategorier. Jobtyper kræves for 
 
 Der kræves følgende jobtyper og beskrivelser.
 
-| Jobtype   | Betegnelse |
+| Jobtype   | Beskrivelse |
 |------------|-------------|
 | Pr. time     | MX Pr. time   |
 | Funktionærløn   | MX Funktionærløn |
@@ -522,7 +524,7 @@ Du bruge stillingstyper til at beskrive, om stillingen er fuld tid, deltid eller
 
 Der kræves følgende stillingstyper og beskrivelser.
 
-| Stillingstype   | Betegnelse        |
+| Stillingstype   | Beskrivelse        |
 |-----------------|--------------------|
 | Fuld tid       | Fuldtidsmedarbejder |
 | Deltid       | Deltidsmedarbejder |
@@ -533,7 +535,7 @@ Der kræves følgende stillingstyper og beskrivelser.
 
 Der kræves følgende årsagskoder og beskrivelser.
 
-| Årsagskode            | Betegnelse                    | Anvendelige scenarier |
+| Årsagskode            | Beskrivelse                    | Anvendelige scenarier |
 |------------------------|--------------------------------|----------------------|
 | DEPARTUREBEFOREPAYMENT | Afgang før første løn | Lad arbejder fratræde     |
 | OPSIGELSE            | Opsigelse                    | Lad arbejder fratræde     |
@@ -554,7 +556,7 @@ Ansættelsesvilkår bruges til at oprette kategorier for ansættelsesvilkår. Vi
 
 Følgende begreber for beskæftigelse og beskrivelser er påkrævet.
 
-| Ansættelsesvilkår   | Betegnelse |
+| Ansættelsesvilkår   | Beskrivelse |
 |-----------------------|-------------|
 | Regulær               | Regulær     |
 | Direkte                | Direkte      |
@@ -567,7 +569,7 @@ Følgende begreber for beskæftigelse og beskrivelser er påkrævet.
 
 Følgende tabel viser, hvordan ægteskabelige statusværdier knyttes til Dayforce.
 
-| Personale                 | Dayforce                  |
+| Human Resources                 | Dayforce                  |
 |------------------------|---------------------------|
 | Gift                | Gift                   |
 | Enlig                 | Enlig                    |
@@ -583,7 +585,7 @@ Kønsbetegnelse knyttes til Dayforce og oversættes efter behov til de acceptere
 
 Følgende tabel viser, hvordan kønsbetegnelser knyttes til Dayforce.
 
-| Personale       | Dayforce                  |
+| Human Resources       | Dayforce                  |
 |--------------|---------------------------|
 | Mand         | Mand                      |
 | Kvinde       | Kvinde                    |
@@ -595,7 +597,7 @@ Betalingsmetoder giver medarbejderen og virksomheden en måde til at beskrive, h
 
 Følgende tabel viser, hvordan betalingsmetoder knyttes til Dayforce.
 
-| Personale             | Dayforce                  |
+| Human Resources             | Dayforce                  |
 |--------------------|---------------------------|
 | Indløsning               | Indløsning                      |
 | Elektronisk betaling | Ompostering                  |
@@ -607,7 +609,7 @@ Følgende tabel viser, hvordan betalingsmetoder knyttes til Dayforce.
 
 Bankkontotyper bruges til elektroniske betalinger til medarbejdere. Bankkontotyper knyttes til Dayforce som overførselskontooplysninger. Bankkontotyperne oversættes efter behov til de accepterede værdier ved integration.
 
-| Personale            | Dayforce                  |
+| Human Resources            | Dayforce                  |
 |-------------------|---------------------------|
 | Checkkonto  | CheckingAccount           |
 | Lønkonto   | PayrollAccount            |
@@ -655,7 +657,7 @@ Lønkoder identificerer entydigt alle typer af løn, som arbejderne modtager. Ko
 
 Identifikation af specifikke koder for land eller område, stat og region (kommune) kræver specifikke formater, som Dayforce og udbydere af i landet/ i regionen kan genkende. Selvom formatet for byer er fleksibelt, skal hver by være tilknyttet en tilstand.
 
-| Personale              | Dayforce              |
+| Human Resources              | Dayforce              |
 |---------------------|-----------------------|
 | Land/område      | Landekode          |
 | Postnummer     | Postnummer           |
@@ -676,3 +678,6 @@ Medarbejdere kan erklære pasoplysninger. Disse oplysninger er af identifikation
 
 Medarbejdere kan angive flere identifikationsnumre af **Pas**-identifikationstypen. Men det er kun den aktuelle aktive paspost, der integreres i Dayforce. Hvis alle pasposter er udløbet, integreres det pas, der senest blev udstedt, i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

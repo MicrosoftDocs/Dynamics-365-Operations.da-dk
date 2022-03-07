@@ -1,48 +1,38 @@
 ---
 title: Integreret debitormaster
-description: I dette emne beskrives integrationen af debitordata mellem Finance and Operations og Dataverse.
+description: I dette emne beskrives integrationen af debitordata mellem Finans og drift og Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b7e9cd27bb918dc3a6088b45803329deb01a864e
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744395"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063283"
 ---
 # <a name="integrated-customer-master"></a>Integreret kundemaster
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan f.eks. stamme fra en salgsaktivitet i Dynamics 365 Sales (en modelbaseret app i Dynamics 365), eller en række kan stamme fra detailaktivitet i Dynamics 365 Commerce (en Finance and Operations-app). Uanset hvor debitordataene stammer fra, integreres de i baggrunden. Integreret kundemaster giver dig fleksibiliteten til at administrere debitordata i ethvert Dynamics 365-program og giver en omfattende oversigt over kunden på tværs af Dynamics 365-programpakken.
+Debitordata kan styres i mere end ét Dynamics 365-program. En debitorrække kan f.eks. stamme fra en salgsaktivitet i Dynamics 365 Sales (en Customer Engagement-app), eller en række kan stamme fra detailaktivitet i Dynamics 365 Commerce (en Finans og drift-app). Uanset hvor debitordataene stammer fra, integreres de i baggrunden. Integreret kundemaster giver dig fleksibiliteten til at administrere debitordata i ethvert Dynamics 365-program og giver en omfattende oversigt over kunden på tværs af Dynamics 365-programpakken.
 
 ## <a name="customer-data-flow"></a>Debitordataflow
 
 *Debitor* er et veldefineret begreb i programmer. Derfor involverer integrationen af debitordata blot en harmonisering af debitorkonceptet mellem de to programmer. Følgende illustration viser debitordataflowet.
 
-![Debitordataflow](media/dual-write-customer-data-flow.png)
+![Debitordataflow.](media/dual-write-customer-data-flow.png)
 
-Debitorer kan groft inddeles i to typer: kommercielle/organisatoriske debitorer og forbrugere/slutbrugere. Disse to typer af debitorer lagres og håndteres forskelligt i Finance and Operations og Dataverse.
+Debitorer kan groft inddeles i to typer: kommercielle/organisatoriske debitorer og forbrugere/slutbrugere. Disse to typer af debitorer lagres og håndteres forskelligt i Finans og drift og Dataverse.
 
-I Finance and Operations  styres både kommercielle/organisatoriske debitorer og forbrugere/slutbrugere i en enkelt tabel med navnet **CustTable** (CustCustomerV3Entity), og de klassificeres ud fra attributten **Type**. (Hvis **Type** er angivet til **Organisation**, er debitoren en kommerciel/organisatorisk kunde, og hvis **Type** er angivet til **Person**, er debitoren en forbruger/slutbruger). Oplysningerne om den primære kontaktperson håndteres via tabellen SMMContactPersonEntity.
+I Finans- og drift styres både kommercielle/organisatoriske debitorer og forbrugere/slutbrugere i en enkelt tabel med navnet **CustTable** (CustCustomerV3Entity), og de klassificeres ud fra attributten **Type**. (Hvis **Type** er angivet til **Organisation**, er debitoren en kommerciel/organisatorisk kunde, og hvis **Type** er angivet til **Person**, er debitoren en forbruger/slutbruger). Oplysningerne om den primære kontaktperson håndteres via tabellen SMMContactPersonEntity.
 
 I Dataverse bliver kommercielle/organisatoriske kunder styret i kontotabellen og identificeres som debitorer, når attributten **RelationshipType** er angivet til **Debitor.** Både forbrugere/slutbrugere og kontaktpersonen repræsenteres af kontakttabellen. Hvis du vil have en klar adskillelse mellem en forbruger/slutbruger og en kontaktperson, har tabellen **Kontakt** et boolesk flag med navnet **Salgbar**. Når **Salgbar** er **Sand**, er kontakten en forbruger/slutbruger, og der kan oprettes tilbud og ordrer for den pågældende kontakt. Når **Salgbar** er **Falsk**, er kontakten kun en primær kontaktperson for en kunde.
 
@@ -52,40 +42,18 @@ Når en kontakt, der ikke er salgbar, deltager i et tilbud eller en ordreproces,
 
 Debitordata indeholder alle oplysninger om debitoren, f.eks debitorens gruppe, adresser, kontaktoplysninger, betalingsprofil, fakturaprofil og fordelskundestatus. En samling af tabeltilknytninger fungerer sammen under interaktion med debitordata, som vist i følgende tabel.
 
-Finance and Operations-apps | Andre Dynamics 365-apps         | Beskrivelse
+Finans og drift-apps | Kundeengagementapps         | Betegnelse
 ----------------------------|---------------------------------|------------
-CDS kontakter V2             | kontakter                        | Denne skabelon synkroniserer alle primære, sekundære og tertiære kontaktoplysninger for både kunder og leverandører.
-Debitorgrupper             | msdyn_customergroups            | Denne skabelon synkroniserer kundegruppeoplysninger.
-Debitorbetalingsmetode     | msdyn_customerpaymentmethods    | Denne skabelon synkroniserer kundebetalingsoplysninger.
-Debitorer V3                | konti                        | Denne skabelon synkroniserer kundemasteroplysninger for kommercielle og organisatoriske kunder.
-Debitorer V3                | kontakter                        | Denne skabelon synkroniserer kundemasterdata for forbrugere og slutbrugere.
-Foranstillede navne                | msdyn_nameaffixes               | Denne skabelon synkroniserer referencedata for foranstillede navne for både kunder og leverandører.
-Betalingsdagslinjer CDS V2    | msdyn_paymentdaylines           | Denne skabelon synkroniserer betalingsdagslinjers referencedata for både kunder og leverandører.
-Betalingsdage CDS            | msdyn_paymentdays               | Denne skabelon synkroniserer referencedata for linjer for betalingsdage for både kunder og leverandører.
-Betalingsplanlinjer      | msdyn_paymentschedulelines      | Synkroniserer betalingsdagsskemalinjers referencedata for både kunder og leverandører.
-Betalingsplan            | msdyn_paymentschedules          | Denne skabelon synkroniserer referencedata for betalingsskemaer for både kunder og leverandører.
-Betalingsbetingelse            | msdyn_paymentterms              | Denne skabelon synkroniserer referencedata for betalingsbetingelser (betalingsvilkår) for både kunder og leverandører.
+[CDS kontakter V2](mapping-reference.md#115) | kontakter | Denne skabelon synkroniserer alle primære, sekundære og tertiære kontaktoplysninger for både kunder og leverandører.
+[Debitorgrupper](mapping-reference.md#126) | msdyn_customergroups | Denne skabelon synkroniserer kundegruppeoplysninger.
+[Debitorbetalingsmetode](mapping-reference.md#127) | msdyn_customerpaymentmethods | Denne skabelon synkroniserer kundebetalingsoplysninger.
+[Debitorer V3](mapping-reference.md#101) | konti | Denne skabelon synkroniserer kundemasteroplysninger for kommercielle og organisatoriske kunder.
+[Debitorer V3](mapping-reference.md#116) | kontakter | Denne skabelon synkroniserer kundemasterdata for forbrugere og slutbrugere.
+[Foranstillede navne](mapping-reference.md#155) | msdyn_nameaffixes | Denne skabelon synkroniserer referencedata for foranstillede navne for både kunder og leverandører.
+[Betalingsdagslinjer CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Denne skabelon synkroniserer betalingsdagslinjers referencedata for både kunder og leverandører.
+[Betalingsdage CDS](mapping-reference.md#158) | msdyn_paymentdays | Denne skabelon synkroniserer referencedata for linjer for betalingsdage for både kunder og leverandører.
+[Betalingsplanlinjer](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkroniserer betalingsdagsskemalinjers referencedata for både kunder og leverandører.
+[Betalingsplan](mapping-reference.md#160) | msdyn_paymentschedules | Denne skabelon synkroniserer referencedata for betalingsskemaer for både kunder og leverandører.
+[Betalingsbetingelse](mapping-reference.md#161) | msdyn_paymentterms | Denne skabelon synkroniserer referencedata for betalingsbetingelser (betalingsvilkår) for både kunder og leverandører.
 
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
-
-[!include [mapping customer group](includes/CustCustomerGroup-msdyn-customergroups.md)]
-
-[!include [mapping customer payment method](includes/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
-
-[!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
-
-[!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
-
-[!include [mapping payment day lines](includes/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
-
-[!include [mapping payment days](includes/PaymentDaysCds-msdyn-paymentdays.md)]
-
-[!include [mapping payment schedule lines](includes/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
-
-[!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
-
-[!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

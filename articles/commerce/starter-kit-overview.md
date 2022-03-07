@@ -1,37 +1,32 @@
 ---
-title: Oversigt over modulbibliotek
+title: Modulbibliotek, oversigt
 description: Dette emne indeholder en oversigt over modulbiblioteket til Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 35cf3b4413b5288a823527d24a5db759b6bfbf37
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411152"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338551"
 ---
-# <a name="module-library-overview"></a>Oversigt over modulbibliotek
+# <a name="module-library-overview"></a>Modulbibliotek, oversigt
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over modulbiblioteket til Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Dynamics 365 Commerce-modulbiblioteket er en samling af moduler, der kan bruges til at bygge et e-handels-websted. Moduler har både aspekter af brugergrænseflade og funktionsmåder.
 
@@ -66,3 +61,6 @@ Følgende typer moduler findes i modulbiblioteket:
 [Sidehovedmodul](author-header-module.md)
 
 [Sidefodsmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

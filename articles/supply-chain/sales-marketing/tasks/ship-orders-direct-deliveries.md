@@ -2,11 +2,9 @@
 title: Sende ordrer som direkte leveringer
 description: Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
 author: omulvad
-manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7eacd80f8f8b9b4a4c2a1e5e5b0da7f0c46e82166d1d02d15ce26dd641f7127f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781363"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
@@ -81,3 +79,6 @@ Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
     - Siden Direkte levering fungerer som et panel, der giver indkøberen en oversigt over alle salgsordrelinjer, der skal leveres direkte, og den gør det muligt at oprette de respektive indkøbsordrer. Desuden kan han eller hun se de åbne direkte leveringsordrer og de bekræftede ordrer under fanen Bekræftelse og Levering.  
     - Når du har oprettet en ordre med direkte levering, flyttes den automatisk til fanen Bekræftelse. Du kan vælge at bekræfte ordren direkte fra denne side. Når købet er bekræftet, flyttes det automatisk til fanen Levering, hvorfra du kan registrere modtagelsen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

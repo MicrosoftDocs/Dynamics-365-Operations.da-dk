@@ -1,37 +1,31 @@
 ---
-title: Oversigt over oprettelsesside
+title: Oprette oversigt over side
 description: Dette emne indeholder en oversigt over oprettelsessiden i Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411059"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984615"
 ---
-# <a name="authoring-page-overview"></a>Oversigt over oprettelsesside
+# <a name="authoring-page-overview"></a>Oprette oversigt over side
 
   
  [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en oversigt over oprettelsessiden i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Websteder kan oprettes for at understøtte forskellige forretningsbehov. De kan repræsentere et helt firma, tilbyde en enkelt kanal i firmaet eller fokusere på et bestemt segment i en målgruppe. En tøjproducent kan f.eks. have et websted, der viser alle de mærker, producenten ejer. Den samme producent kan have et særskilt websted for hvert af disse mærker og desuden et sæt websteder, der har luksusvarer, udendørsbeklædning og tøj til børn.
 
@@ -45,7 +39,7 @@ I øjeblikket består oprettelsessiden af følgende sektioner.
 
 Følgende illustration viser oprettelsessiden.
 
-![Dynamics 365 Commerce-oprettelsesside](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce-oprettelsesside.](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Brug knappen Startside til at vælge et værktøj
 
@@ -122,3 +116,6 @@ Når oprettelsesværktøjet er indlæst, kan du vælge **Startside** for at vend
 [Overvejelser om optimering af søgeprogram (SEO) for webstedet](search-engine-optimization-considerations.md)
 
 [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

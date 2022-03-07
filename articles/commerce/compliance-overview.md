@@ -2,29 +2,25 @@
 title: Oversigt over overholdelse
 description: Dette emne indeholder en oversigt over den overholdelsesvejledning, der leveres sammen Microsoft Dynamics 365 Commerce for at hjælpe dig med at sikre dine virksomhedswebsteders overholdelse.
 author: BrianShook
-manager: annbe
 ms.date: 01/08/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3d90bbce5949468966d995710cdad69484aa90c9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411079"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983286"
 ---
-# <a name="compliance-overview"></a>Oversigt over overholdelse
+# <a name="compliance-overview"></a>Oversigt over overholdelse af angivne standarder
 
 
 [!include [banner](includes/banner.md)]
@@ -46,3 +42,6 @@ Hvis du vil vide mere om de grundlæggende principper, som Microsoft gør brug a
 [Tilføje en side med politik om beskyttelse af personlige oplysninger](add-privacy-page.md)
 
 [Erstatte bruger-id'er, der er tilknyttet sporede indholdsændringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,29 +1,25 @@
 ---
 title: Oversigt over serviceobjekter
-description: Serviceobjekter er en kundes aktiver og produkter, som du kan udføre en service på.
-author: ShylaThompson
-manager: tfehr
+description: Dette emne giver et overblik over, hvordan du kan arbejde med serviceobjekter.
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29d2cf6a496fed8d9932d5c6d49f4560d7eabbbb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad758d32c6e9de0758c6fddb57a7dea886ab73d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424315"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986429"
 ---
 # <a name="service-objects-overview"></a>Oversigt over serviceobjekter
 
@@ -47,3 +43,6 @@ Firma A fører finansielle poster for flere små virksomheder. En af virksomhed 
 
 [Oprette serviceobjekter](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

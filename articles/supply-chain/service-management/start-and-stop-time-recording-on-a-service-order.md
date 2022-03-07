@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dcec3cfde34959de73132c8d764df25fb676d140
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424298"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242343"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Starte og stoppe tidsregistrering på en serviceordre 
 
@@ -65,3 +64,6 @@ Brug denne procedure til at starte og stoppe tidsregistreringen for en serviceor
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

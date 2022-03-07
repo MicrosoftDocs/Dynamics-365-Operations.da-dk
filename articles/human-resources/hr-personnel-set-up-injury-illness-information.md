@@ -2,34 +2,34 @@
 title: Konfigurer oplysninger om skade og sygdom
 description: Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver syge som følge af farlige forhold på arbejdspladsen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 19512a075a9b863a84ca3e9db4a06f7eac047140
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417820"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802497"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Konfigurer oplysninger om skade og sygdom
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver syge som følge af farlige forhold på arbejdspladsen. Du kan bruge siden Skade og sygdom til at angive oplysninger til brug for rapportering af tilskadekomst eller sygdom på arbejdspladsen. Du kan definere typer af tilskadekomst og sygdom, herunder også behandlingstyper, omkostninger og resultater. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
-1. Gå til Personale > Arbejdere > Skade og sygdom > Konfiguration af skade og sygdom.
+1. Gå til Human Resources > Arbejdere > Skade og sygdom > Konfiguration af skade og sygdom.
 2. Klik på Ny.
 3. Indtast en værdi i feltet Skades- eller sygdomstype.
     * Eksempel: Brud  
@@ -65,3 +65,6 @@ Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver s
     * Indberetningsorganer er de organer, som hændelsen skal rapporteres til. Markér afkrydsningsfeltet for det organ, der er standardorganet for indberetning af skader og sygdom.  
 23. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

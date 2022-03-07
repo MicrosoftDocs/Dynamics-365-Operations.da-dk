@@ -2,11 +2,9 @@
 title: Oprette og opdatere tidsintervaller for kundeafhentning
 description: I dette emne beskrives, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
 author: anupamar-ms
-manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
-ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
+ms.openlocfilehash: e2369b17244525023541cdbd0a0da3f2a2a09b30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "4828205"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355445"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Oprette og opdatere tidsintervaller for kundeafhentning
 
@@ -36,7 +34,7 @@ Tidsintervalfunktionen giver detailhandlere mulighed for at definere et tidsinte
 
 I følgende illustration vises et eksempel på valg af tidsinterval under betaling ved e-handel.
 
-![Eksempel på valg af tidsinterval under betaling ved e-handel](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på valg af tidsinterval under betaling ved e-handel.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Egenskaber for tidsinterval
 
@@ -62,7 +60,7 @@ Et tidsinterval defineres ved hjælp af følgende egenskaber:
 - **Aktive dage** – Angiv de ugedage, hvor tidsintervaller for afhentning er aktive. Denne egenskab gør det muligt for forhandleren at definere de dage, hvor afhentning af ordrer kan understøttes.
 - **Detailkanaler** – Angiv detailkanalerne. Hvert tidsinterval kan knyttes til en eller flere detailbutikker. Afhængigt af en butiks åbningstider, kan der oprettes en eller flere tidsintervalposter, som kan knyttes til en kanal. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Der kan kun konfigureres én tidsintervalskabelon pr. kanal. Disse kanaler omfatter fysiske butikker, callcentre, mobilenheder og e-handelswebsteder.
 
@@ -87,14 +85,14 @@ Følg disse trin for at konfigurere tidsintervalfunktionen i Commerce Headquarte
     > [!NOTE]
     > Du kan oprette flere skabeloner, men kun én skabelon kan knyttes til en enkelt kanal eller butik.
 
-    ![Dialogboksen Ordreafhentning - Tidsindstillinger](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Dialogboksen Ordreafhentning – Tidsindstillinger.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Vælg **OK**, når du er færdig.
 1. Hvis tidsintervallerne for en dag varierer, kan du oprette flere poster i oversigtspanelet **Ordreafhentning - Tidsindstillinger** for at sikre, at datoer og klokkeslæt ikke overlapper hinanden.
 1. I oversigtspanelet **Detailkanaler** skal du vælge **Tilføj** for at knytte skabelonen for tidsrubrikken til de butikker eller kanaler, hvor den skal bruges.
 1. Brug pileknapperne eller vælg (eller fjern markeringen af) de butikker, områder og organisationer, skabelonen skal knyttes til, i dialogboksen **Vælg organisationsnoder**.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Vælg **OK**, når du er færdig.
 1. På siden **Distributionstidsplan** skal du køre jobbene **1070** og **1135** for at synkronisere data til kanalerne.
@@ -105,7 +103,7 @@ Når en ordre eller en ordrelinje identificeres for afhentning i POS, kan kasser
 
 I følgende illustration vises et eksempel på valg af tidsinterval for en POS-ordre.
 
-![Et eksempel på valg af tidsinterval for en POS-ordre](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Et eksempel på valg af tidsinterval for en POS-ordre.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Valg af tidsinterval for e-handelsordrer
 
@@ -116,14 +114,17 @@ Du kan finde oplysninger om, hvordan du kan gøre tidsinterval tilgængelig for 
 
 I følgende illustration vises et eksempel på en e-handelsordre, hvor der er valgt et tidsinterval for afhentning.
 
-![Eksempel på en e-handelsordre, hvor der er valgt et tidsinterval for afhentning](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en e-handelsordre, hvor der er valgt et tidsinterval for afhentning.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Valg af tidsinterval for callcenter-ordrer
 
 I callcenter-appen kan callcenter-medarbejdere vælge afhentningsbutik eller lokalitet samt en dato og et tidsrum, som er markeret i følgende illustration.
 
-![Eksempel på en callcenter-ordre, hvor der er valgt et tidsinterval for afhentning](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Eksempel på en callcenter-ordre, hvor der er valgt et tidsinterval for afhentning.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Modul med afhentningsoplysninger](../pickup-info-module.md)
+[Modul til afhentningsoplysninger](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

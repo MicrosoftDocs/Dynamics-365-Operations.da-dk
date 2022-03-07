@@ -2,28 +2,25 @@
 title: Afskrivningsmetoder og -principper
 description: Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3370db28f551b5ce4a9b49342cb0c0b2f3945c0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 76b20c895519edb7316c2b9a6b223a109a307e77
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441667"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189391"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Afskrivningsmetoder og -principper
 
@@ -64,8 +61,7 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Afskrivning af anlægsaktiv](fixed-asset-depreciation.md)
 
@@ -91,3 +87,6 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

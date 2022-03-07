@@ -1,6 +1,6 @@
 ---
 title: Redigere modeller og tilknytninger til at generere dokumenter, der har programdata
-description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 2 - Generere dokumenter)".
+description: I dette emne forklares det, hvordan du designer konfigurationer af rapportering for at generere et elektronisk dokument og opdatere programdata. (Del 2 – Generere dokumenter).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3401ec98ac1b61572d07fbb30d4465de78473fca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 025429c8e6775d20634703853df04d63c0651b98
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684565"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092891"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Redigere modeller og tilknytninger til at generere dokumenter, der har programdata
 

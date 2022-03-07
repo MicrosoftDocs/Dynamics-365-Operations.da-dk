@@ -1,31 +1,28 @@
 ---
-title: Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
+title: Udligne en delvis betaling før rabatdatoen og en endelig betaling efter rabatdatoen
 description: Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 693339929bbdbc960afc2a5e63b3a3864bfd3ca19cd2dbc992de776836b17e50
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737131"
 ---
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
+# <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Udligne en delvis betaling før rabatdatoen og en endelig betaling efter rabatdatoen
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,11 +46,11 @@ D. 2. juli vil April udligne 300,00 af denne faktura. Betalingen er rabatberetti
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
+| Kasserabatdato           | 09-07-2015 |
 | Kasserabatbeløb         | -10,00    |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -3,00     |
 
@@ -74,11 +71,11 @@ April betaler resten af fakturaen den 15. juli, som er efter rabatperioden. På 
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**. April kan se, at hun allerede har fået 3,00 i rabat.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
+| Kasserabatdato           | 09-07-2015 |
 | Kasserabatbeløb         | 0,00      |
-| Anvend kasserabat            | Almindelig    |
+| Anvende kasserabat            | Almindelig    |
 | Medtaget kasserabat          | -3,00     |
 | Kasserabatbeløb, der skal medtages | 0,00      |
 
@@ -100,11 +97,11 @@ Hvis kreditoren giver April rabat, selvom hun betaler efter rabatdatoen, kan hun
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
-|                              |           |
+| Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 7:00      |
-| Anvend kasserabat            | Altid    |
+| Kasserabatdato           | 09-07-2015 |
+| Kasserabatbeløb         | 7.00      |
+| Anvende kasserabat            | Altid    |
 | Medtaget kasserabat          | -3,00     |
 | Kasserabatbeløb, der skal medtages | -7,00     |
 
@@ -122,3 +119,6 @@ Derefter bogfører April fakturaen. Når hun åbner siden **Kreditorposteringer*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

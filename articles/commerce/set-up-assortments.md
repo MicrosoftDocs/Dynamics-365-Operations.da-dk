@@ -2,11 +2,9 @@
 title: Opsætning af sortimenter
 description: I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774479"
 ---
 # <a name="set-up-assortments"></a>Konfigurere udvalg
 
@@ -33,7 +31,7 @@ I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan d
 
 Et sortiment er en samling af relaterede produkter, som du tildeler til en handelskanal, f.eks. en fysisk butik eller en onlinebutik. Du kan bruge udvalgt til at identificere de produkter, der er tilgængelige i hver butik. Et udvalg kan omfatte varekategorier. Alle de produkter, der er tildelt en bestemt kategori, er derfor inkluderet i sortimentet. Et udvalg kan også omfatte specifikke produkter og bestemte varianter af produkter. Ved at oprette et udvalg kan du tildele tusindvis af produkter til dine kanaler på det samme tidspunkt i enhver kombination, som din butikker kræver. Du kan oprette så mange produktudvalg, som du har brug for. Hvert produkt kan medtages i et eller flere udvalg, og hvert udvalg kan tildeles til en eller flere kanaler. Du kan f.eks. definere et sortiment der omfatter et grundlæggende sæt af produkter. Alle butikker modtager dette sortiment. Du kan derefter definere et andet sortiment, der kun indeholder stort sportsudstyr. Kun dine større butikker modtager dette sortiment. Følgende diagram viser, hvordan produkter kan tildeles sortimenter, og hvordan disse sortimenter kan tildeles kanaler.
 
-![Produktsortimentrelationer](./media/assortments_relationship.gif)
+![Produktsortimentrelationer.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -54,3 +52,6 @@ Når du har fuldført forudsætningerne, kan du oprette et sortiment og tildele 
 2. Vælg de kanaler eller grupper af kanaler på højeste niveau, som sortimentet gælder for.
 3. Føj produktkategorier, individuelle produkter eller produktvarianter til udvalget. Du kan inkludere alle produkter i en bestemt kategori, eller du kan udelukke markerede produkter fra en kategori, der er inkluderet i sortimentet.
 4. Udgiv udvalget. Sortimentsplanlæggeren kører automatisk, når du udgiver et udvalg. Denne proces opretter listen over produkter. Når denne proces er fuldført, bliver produkterne tilgængelige for de kanaler, som produktudvalget er tildelt. Hvis der foretages ændringer af et udvalg, der er udgivet, eller af kanaler, som udvalget er tildelt til, skal udvalget opdateres. Hvis du vil opdatere udvalget, når der er foretaget ændringer, kan du køre sortimentsplanlæggeren som et batchjob.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

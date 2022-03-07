@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570478"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -41,7 +41,10 @@ For at forhindre, at din købsaftale bliver brugt og bekræftet, skal du markere
 Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder.
 
 > [!IMPORTANT]
-> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Ansvarlig part for købsaftale* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+> 
+> - **Modul:** *Indkøb og forsyning*
+> - **Funktionsnavn:** *Ansvarlig part for købsaftale*
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge linjer fra flere købsordrer (IO'er) til at opfylde forpligtelsen. Der findes fire typer forpligtelser:

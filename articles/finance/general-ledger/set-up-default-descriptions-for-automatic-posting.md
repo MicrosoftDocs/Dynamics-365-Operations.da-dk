@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5955b796cbc7917eb5500b96c879d1b0819d2edc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441391"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204852"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Angive standardbeskrivelser til automatisk bogføring
 
@@ -87,3 +86,6 @@ Når du har fuldført trinnene i afsnittet [Konfigurere standardbeskrivelser](#s
 2. I feltet **Referencetabel** skal du vælge den databasetabel, hvorfra der skal føjes parameterdata til beskrivelsen.
 3. I feltet **Referencefelt** skal du vælge det felt, hvorfra der skal føjes parameterdata til beskrivelsen.
 4. Gentag trin 1-3 for at tilføje flere parametre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1ab6de4bfa619df74bafc5511affddd516bdb34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411147"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260303"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkroniser produktvurderinger i Dynamics 365 Commerce
 
@@ -31,7 +30,7 @@ ms.locfileid: "4411147"
 
 Dette emne beskriver, hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Hvis du vil bruge produktvurderinger i omni-kanaler som f.eks. på POS og i callcentre, skal produktvurderinger fra vurderings- og anmeldelsestjenesten importeres til Commerce-kanalens database. Når produktvurderinger stilles til rådighed i omni-kanaler, kan de hjælpe kunder indirekte under deres interaktioner med salgsmedarbejdere.
 
@@ -135,3 +134,6 @@ I følgende illustration vises et eksempel på produktvurderinger i callcenter-k
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

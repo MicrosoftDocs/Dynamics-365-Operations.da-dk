@@ -2,7 +2,7 @@
 title: Forslag til leasingophør
 description: Dette emne forklarer, hvordan du foreslår en leasingtransaktion til opsigelse.
 author: moaamer
-ms.date: 07/16/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 657bd2aa32179941e4103fea31f813688ad478ac6e9902212c976a92620b2e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717491"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881102"
 ---
 # <a name="propose-a-lease-for-termination"></a>Foreslå en leasingaftale til opsigelse
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis en leasingaftale ophører før tid, kan aktivleasing registrere en fratrædelseskladdepost, der afskrives for det leasingforpligtelsen, ROU-forbrugsaktivet og akkumuleret afskrivning samt registrere vinding eller tab. I processen til tidlig fratrædelse afsluttes en leasingaftale, og dens tilknyttede leasingbøger. Det betyder ikke, at individuelle leasingbøger opsiges. Dette emne indeholder en beskrivelse af den funktionalitet, der giver dig mulighed for at foreslå en leasingaftale til fratrædelse og behandle kladdeposten til fratrædelsesposten.
 

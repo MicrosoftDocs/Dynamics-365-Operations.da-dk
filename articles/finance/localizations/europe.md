@@ -3,24 +3,23 @@ title: Oversigt for Europa
 description: Dette emne indeholder links til Microsoft Dynamics 365 Finance-dokumentationsressourcer for Europa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: b5aed9d3b5a82b88bb7d1e237aea0aa24dae102f
+ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512205"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5557418"
 ---
 # <a name="europe-overview"></a>Oversigt for Europa
 
@@ -41,6 +40,7 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 - [Rapportering til EU-listesystemet](emea-eu-sales-list.md)
 - [Kursreguleringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåder](emea-select-file-formats-for-the-method-of-payments.md)
+- [Finans (Globalisering) vejledning om indflydelse på udligning](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integration af regnskabsservice (ESR)](emea-fiscal-service-integration.md)
 - [Kassation af anlægsaktiver for Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overførselsdokument for en intern lageroverførsel](tasks/transfer-document-internal-inventory-transfer.md)
@@ -65,6 +65,7 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 - [Fakturabehandling](emea-invoice-processing.md)
 - [Udstede et EU-indførselscertifikat](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Understøttede standarder til elektronisk fakturering](emea-oioubl-standards-electronic-invoicing.md)
+- [Tvungen generering af elektroniske fakturaer](emea-eur-forced-einvoices.md)
 - [Original fakturareference (Østeuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Søgning efter part ved hjælp af moms-id](tasks/eur-00015-party-search-vat-id.md)
 - [Værktøj til generering af betalingsreference](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -99,3 +100,6 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 
 - [Oversigt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Tids- og fremmødestyring i Retail
 description: Dette emne beskriver de scenarier, der understøttes for styring af tid og fremmøde i Dynamics 365 Commerce.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68aafc9f397333d88644bb1870bb4e65da32c265decb10e6ac420be99c1e2c4e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762662"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Tids- og fremmødestyring i Retail
 
@@ -41,9 +38,9 @@ Dette emne beskriver de scenarier, der understøttes for styring af tid og fremm
 
 ### <a name="plan-worker-schedules"></a>Planlæg tidsplaner for arbejdere
 
-- Anvende profiler ved hjælp af arbejdsplanlægningen. Du kan finde flere oplysninger om arbejdstidsprofiler i [Anvende profiler ved hjælp af arbejdsplanlægning](https://technet.microsoft.com/library/aa551234.aspx).
+- Anvende profiler ved hjælp af arbejdsplanlægningen. Du kan finde flere oplysninger om arbejdstidsprofiler i [Anvende profiler ved hjælp af arbejdsplanlægning](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremmøde](https://technet.microsoft.com/library/aa496971.aspx).
+Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremmøde](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Commerce-specifik konfiguration
 
@@ -100,7 +97,7 @@ Du kan finde oplysninger om konfigurationstrin under [Opsætning af tid og fremm
         </tbody>
         </table>
 
-        [![Tidsurstilstande](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Tidsurstilstande.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Få vist en bekræftelsesmeddelelse, og kontrollér, at den aktuelle aktivitetstid er korrekt.
 - Logbog:
@@ -138,4 +135,7 @@ En Commerce-bruger følger arbejdsgangen for at beregne, godkende og overføre t
 - Flere udklokninger
 - Registrere fravær
 
-Du kan finde flere oplysninger om, hvordan du behandler registreringer af tid og fremmøde, under [Behandle registreringer af tid og fremmøde](https://technet.microsoft.com/library/aa573180.aspx).
+Du kan finde flere oplysninger om, hvordan du behandler registreringer af tid og fremmøde, under [Behandle registreringer af tid og fremmøde](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

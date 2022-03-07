@@ -2,27 +2,24 @@
 title: Domæner i Dynamics 365 Commerce
 description: Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 8d4381c64b69f8b62dcb509407c4f04dcee696ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517349"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792793"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -41,7 +38,7 @@ Når der klargøres et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services 
 
 I følgende illustration vises LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet. 
 
-![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS-skærmen til klargøring af e-handel, hvor feltet **Understøttede værtsnavne** er fremhævet](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hvis der allerede er foretaget klargøring. Hvis du vil oprette en serviceanmodning i LCS, skal du i dit miljø gå til **Support \> Supportproblemer** og vælge **Send en hændelse**.
 
@@ -173,3 +170,6 @@ Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdom�
   [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md)
 
   [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

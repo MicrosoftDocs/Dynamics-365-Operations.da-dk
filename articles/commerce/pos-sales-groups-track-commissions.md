@@ -2,15 +2,12 @@
 title: Spore provisioner i POS via salgsgrupper
 description: Det er almindelig detailpraksis at spore salg efter den salgsmedarbejder, der har arbejdet med kunden – ydet assistance, mersalg, krydssalg og behandlet transaktionen.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770903"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Spore provisioner i POS via salgsgrupper
 
@@ -72,7 +69,7 @@ Der er en række indstillinger for funktionalitetsprofil for en butik, der beste
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Vis oplysninger om sælgeren på POS-transaktionsskærmen
 
-POS-skærmlayoutet for transaktioner og indhold kan konfigureres ved hjælp af skærmlayoutdesigneren og tildelte skærmlayouts til butikker, kasseapparater eller medarbejdere.Feltet **Sælger** feltet kan føjes til fanen Linjer i ruden Kvittering.Dette viser id'et for den angivne salgsgruppe for hver linje på transaktionsskærmbilledet.
+POS-skærmlayoutet for transaktioner og indhold kan konfigureres ved hjælp af skærmlayoutdesigneren og tildelte skærmlayouts til butikker, kasseapparater eller medarbejdere. Feltet **Sælger** kan føjes til fanen Linjer i ruden Kvittering.  Dette viser id'et for den angivne salgsgruppe for hver linje på transaktionsskærmbilledet.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Tilføjelse af sælgerhandlinger på POS-knapmatricer
 
@@ -80,11 +77,14 @@ POS gør det muligt for brugerne at konfigurere knapmatricer, som indgår i skæ
 
 | Handling                                 | Betegnelse |
 |-------------------------------------------|-------------|
-| Angiv sælger på linjen          | Denne POS-handling viser en liste over berettigede salgsgrupper (Id: navn) for butikken.Når der vælges en salgsgruppe på denne liste, angives værdien på den aktuelle transaktionslinje. |
+| Angiv sælger på linjen          | Denne POS-handling viser en liste over berettigede salgsgrupper (Id: navn) for butikken. Når der vælges en salgsgruppe på denne liste, angives værdien på den aktuelle transaktionslinje. |
 | Ryd sælger på linjen        | Denne POS-handling fjerner den aktuelle værdi for salgsgruppe fra den aktuelle transaktionslinje. |
-| Angiv sælger for transaktion   | Denne POS-handling viser en liste over berettigede salgsgrupper (Id: navn) for butikken.Når der vælges en salgsgruppe på denne liste, angives standardværdien på den aktuelle transaktion. Alle eksisterende linjer uden en tildelt salgsgruppe får værdien angivet, ligesom alle efterfølgende tilføjede linjer. |
+| Angiv sælger for transaktion   | Denne POS-handling viser en liste over berettigede salgsgrupper (Id: navn) for butikken. Når der vælges en salgsgruppe på denne liste, angives standardværdien på den aktuelle transaktion. Alle eksisterende linjer uden en tildelt salgsgruppe får værdien angivet, ligesom alle efterfølgende tilføjede linjer. |
 | Ryd sælgeren på transaktionen | Denne POS-handling fjerner den aktuelle standardværdi for salgsgruppe fra den aktuelle transaktion. Det har ingen indflydelse på alle de linjer, der allerede eksisterer i transaktionen. |
 
 ## <a name="calculating-commissions"></a>Beregning af provision
 
-Provisionen beregnes for medarbejderne i de angivne salgsgrupper på tidspunktet for bogføring af opgørelsen eller bogføring af salgsordrer.Provisionsbeløbet bestemmes på basis af medarbejderens provisionsandel, som defineret i salgsgruppen og de tilhørende indstillinger for provisionsberegning for kunden og/eller produkter på transaktionen.
+Provisionen beregnes for medarbejderne i de angivne salgsgrupper på tidspunktet for bogføring af opgørelsen eller bogføring af salgsordrer. Provisionsbeløbet bestemmes på basis af medarbejderens provisionsandel, som defineret i salgsgruppen og de tilhørende indstillinger for provisionsberegning for kunden og/eller produkter på transaktionen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

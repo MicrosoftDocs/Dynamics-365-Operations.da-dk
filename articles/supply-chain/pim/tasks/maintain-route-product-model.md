@@ -2,11 +2,9 @@
 title: Vedligehold rute for en produktmodel
 description: Kørsel af denne procedure kræver, at der findes en model til produktkonfiguration.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966824"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817983"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Vedligehold rute for en produktmodel
 
@@ -66,3 +64,6 @@ Kørsel af denne procedure kræver, at der findes en model til produktkonfigurat
 15. Indtast eller vælg en værdi i feltet Krav.
 16. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

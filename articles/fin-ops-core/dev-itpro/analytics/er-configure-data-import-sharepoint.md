@@ -2,11 +2,9 @@
 title: Konfigurere dataimport fra SharePoint
 description: I dette emne beskrives, hvordan du importerer data fra Microsoft SharePoint.
 author: NickSelin
-manager: AnnBe
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1f7754a3e69238ab1760b3f7eb8f5e2c792b451b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680896"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074760"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
@@ -49,13 +47,13 @@ Afspil opgaveguiderne **ER Import af data fra en Microsoft Excel-fil**, der er e
 - ER-modelkonfigurationen **1099-betalingsmodel**
 - ER-formatkonfigurationen **Format til import af kreditorposteringer fra Excel**
 
-![ER-konfigurationer til import af data fra SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![ER-konfigurationer til import af data fra SharePoint.](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
 #### <a name="sample-of-the-incoming-file-for-data-import"></a>Eksempel på den indgående fil til import af data
 
 - Excel-filen **1099import-data.xlsx** med kreditorposteringer, der skal importeres.
 
-![Excel-eksempelfil til import fra SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Excel-eksempelfil til import fra SharePoint.](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Formatet til import af kreditorposteringer er valgt som standardmodeltilknytningen. Hvis du derfor kører en modeltilknytning af **1099-betalingsmodellen**, og modeltilknytningen er af typen **Til destination**, kører modeltilknytningen dette format ved import af data fra eksterne filer. Derefter bruges disse data til at opdatere programtabeller.
@@ -70,7 +68,7 @@ Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfig
      - Filimportkilde (hoved) (eksempel vises på skærmbilledet nedenfor)
      - Filimportkilde (alternativ)
 
-    ![Filimportkilde (hoved)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+    ![Filimportkilde (hoved).](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
 4. (Valgfrit) Opret følgende mapper, hvor filerne kan gemmes efter import. 
 
@@ -87,9 +85,9 @@ Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfig
 |SP-alternativ             |Fil                |SharePoint     |Filimportkilde (alternativ)|
 |SP-arkiv             |Fil                |SharePoint     |Filarkivmappe|
 |SP-advarsel             |Fil                |SharePoint     |Mappe til filer med advarsler|
-|SP-fejl             |Fil                |SharePoint     |Mappe til fejlslagne filer|
+|SP-fejl             |Filer                |SharePoint     |Mappe til fejlslagne filer|
 
-![SharePoint-indstilling – ny dokumenttype](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint-indstilling – ny dokumenttype.](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurere ER-kilder for ER-formatet
 1. Klik på **Virksomhedsadministration** \> **Elektronisk rapportering** \> **Kilde til elektronisk rapportering**.
@@ -98,7 +96,7 @@ Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfig
 4. Skift **Sortér filer før import** til **Sortér ikke**, hvis der er mange filer til import, og importrækkefølgen ikke er vigtig
 5. Vælg alle de SharePoint-mapper, du oprettede tidligere.
 
-    [![Indstilling for ER-filkilde](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
+    [![Indstilling for ER-filkilde.](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - ER *kilde* defineres individuelt for hvert firma i programmet. Derimod deles ER *konfigurationer* på tværs af firmaer.
@@ -116,7 +114,7 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Importere data fra Excel-filer, der findes i en SharePoint-mappe
 1. I SharePoint skal du overføre Microsoft Excel-filen **1099import-data.xlsx**, der indeholder kreditorposter, til den **Filimportkilde (hoved)** SharePoint-mappe, du oprettede tidligere.
 
-    [![SharePoint-indhold – Microsoft Excel-fil til import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint-indhold – Microsoft Excel-fil til import.](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. På siden **Filtilstande for kilderne** skal du vælge **Opdater** for at opdatere siden. Den Excel-fil, der blev overført til SharePoint, blev vist på denne side med status **Klar**. Følgende statusser understøttes i øjeblikket:
 
@@ -126,19 +124,19 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
     - **Mislykkedes** – Tildeles automatisk af en ER-rapport, når filimporten blev fuldført med fejl eller undtagelser.
     - **På hold** – Tildeles manuelt af brugeren på denne side. Denne status betyder, at filen ikke importeres på nuværende tidspunkt. Denne status kan bruges til at udskyde importen af visse filer.
 
-    [![Opdateret ER-filtilstandsside for de valgte kilder](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Opdateret ER-filtilstandsside for de valgte kilder.](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## <a name="import-data-from-sharepoint-files"></a>Importere data fra SharePoint-filer
 1. Åbn ER-konfigurationstræet, vælg **1099-betalingsmodel**, og udvid listen over ER-modelkomponenter.
 2. Vælg navnet på modeltilknytningen for at åbne listen over modeltilknytninger for den valgte ER-modelkonfiguration.
 
-    [![Siden Konfiguration](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Siden Konfiguration.](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Vælg **Kør** for at køre den valgte modeltilknytning. Da du har konfigureret filkilder for ER-formatet, kan du ændre indstillingen **Filkilde**, hvis der er brug for det. Hvis du lader denne indstilling være uændret, importeres .xslx-filerne fra de konfigurerede kilder (SharePoint-mapperne i dette eksempel).
 
     I dette eksempel skal du kun importere én fil. Hvis der er flere filer, vælges de til import i samme rækkefølge, som de blev tilføjet i SharePoint-mappen. Hver kørsel af et ER-format importerer en enkelt valgt fil.
 
-    [![Importere fra SharePoint og køre ER-modeltilknytning](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Importere fra SharePoint og køre ER-modeltilknytning.](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. Modeltilknytningen kan køre [automatisk](#limitations) i batchtilstand. I så fald importeres en enkelt fil fra de konfigurerede filkilder, hver gang en batch kører dette ER-format.
 
@@ -146,11 +144,11 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 
 5. Angiv bilags-id'et, f.eks. **V-00001**, og vælg derefter **OK**.
 
-    [![Køre ER-modeltilknytning](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
+    [![Køre ER-modeltilknytning.](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
 
 6. På siden **Filtilstande for kilderne** skal du vælge **Opdater** for at opdatere siden.
 
-    [![ER-filtilstande for den valgte kildeside](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![ER-filtilstande for den valgte kildeside.](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. I sektionen **Filer** skal du gennemse listen over filer. Sektionen **Kildelogfiler for importformatet** indeholder en oversigt over Excel-filimporten. Da denne fil blev importeret korrekt, er den markeret som **Slettet** i SharePoint-mappen.
 8. Gennemse SharePoint-mappen **Filimportkilde (hoved)**. Excel-filer, der blev importeret, er blevet slettet fra denne mappe.
@@ -159,12 +157,12 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 
     De kreditorposteringer, der blev importeret fra Excel-filerne i SharePoint for bilag **V-00001**, vises på siden.
 
-    [![Side for 1099-kreditorposteringer](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
+    [![Side for 1099-kreditorposteringer.](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
 
 ## <a name="prepare-an-excel-file-for-import"></a>Forberede en Excel-fil til import
 1. Åbn den Excel-fil, du tidligere brugte. I række 3, kolonne 1 skal du tilføje en kreditorkode, der ikke findes i programmet. Føj yderligere falske kreditoroplysninger til rækken.
 
-    [![Microsoft Excel-eksempelfil til import fra SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Microsoft Excel-eksempelfil til import fra SharePoint.](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Overfør den opdaterede Excel-fil, der indeholder kreditorposteringer til SharePoint-mappen **Filimportkilde (hoved)**.
 3. Åbn ER-konfigurationstræet, vælg **1099-betalingsmodel**, og udvid listen over ER-modelkomponenter.
@@ -172,7 +170,7 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 5. Vælg **Designer**.
 6. Under fanen **Valideringer** skal du ændre efter-valideringshandlingen for den valideringsregel, der blev konfigureret, for at vurdere, om den kreditorkonto, der importeres, findes i programmet. Opdater værdien i feltet **Efter-valideringshandling** for at **Stop udførelse**, gemme ændringerne og lukke siden.
 
-    [![Side for ER-modeltilknytningsdesigner](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
+    [![Side for ER-modeltilknytningsdesigner.](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
 
 7. Gem ændringerne, og luk ER-modeltilknytningsdesigneren.
 8. Vælg **Kør** for at køre den ændrede ER-modeltilknytning.
@@ -180,11 +178,11 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 
     Infologgen indeholder en besked om, at der er en fil i SharePoint-mappen, der indeholder en forkert kreditorkonto, som ikke kan importeres.
 
-    [![Fuldført kørsel af ER-modeltilknytning](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Fuldført kørsel af ER-modeltilknytning.](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. På siden **Filtilstande for kilderne** skal du vælge **Opdater** og derefter i sektionen **Filer** gennemgå listen over filer.
 
-    [![ER-filtilstandsside for de valgte kilder](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
+    [![ER-filtilstandsside for de valgte kilder.](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
    Sektionen **Kildelogfiler for importformatet** angiver, at importen mislykkedes, og at filen er i SharePoint-mappen til fejlslagne filer (afkrydsningsfeltet **Er slettet** er ikke markeret). Hvis du reparerer denne fil på SharePoint ved at tilføje den korrekte kreditorkode og derefter flytter den til SharePoint-mappen Filimportkilde (hoved), kan du importere filen igen.
 
@@ -194,11 +192,11 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 
 ## <a name=""></a><a name="limitations">Begrænsninger</a>
 
-ER-strukturen giver ikke mulighed for at starte et nyt batchjob, der udfører en modeltilknytning i automatisk tilstand for dataimport. Hvis du vil gøre det, skal du udvikle ny logik, så den konfigurerede ER-modeltilknytning kan kaldes fra brugergrænsefladen i programmet for at importere data fra indgående filer. Dette kræver derfor udviklingsarbejde. 
+I versioner af Dynamics 365 Finance før version 10.0.25, giver brugergrænsefladen (UI) for ER-strukturen ikke mulighed for at starte et nyt batchjob, der udfører en modeltilknytning i uovervåget tilstand for dataimport. Du skal i stedet udvikle ny logik, så den konfigurerede ER-modeltilknytning kan kaldes fra brugergrænsefladen i programmet for at importere data fra indgående filer. For at kunne udvikle denne logik er det nødvendigt med teknikerarbejde. 
 
-Du kan få mere om det relevante-API i afsnittet [Kode til kørsel af en formattilknytning til dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i emnet [Ændringer af API til ER-struktur til Application Update 7.3](er-apis-app73.md).
+Du kan få mere at vide om det relevante ER-API i afsnittet [Kode til kørsel af en formattilknytning til dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i emnet [Ændringer af API til ER-struktur til Application Update 7.3](er-apis-app73.md). Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at se, hvordan din brugerdefinerede logik kan implementeres. Klassen `BankImport_RU` udvider klassen `RunBaseBatch`. Du skal især gennemgå `runER()`-metoden, hvor `ERIModelMappingDestinationRun`-objektet oprettes som kørselsfunktion for en ER-modeltilknytning.
 
-Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at se, hvordan din brugerdefinerede logik kan implementeres. Denne klasse udvider `RunBaseBatch`-klassen. Du skal især gennemse `runER()`-metoden, hvor `ERIModelMappingDestinationRun`-objektet oprettes som kørselsfunktion for en ER-modeltilknytning.
+In Finans version 10.0.25 og nyere giver ER-strukturens brugergrænseflade ikke mulighed for at starte et nyt batchjob, der kører en modeltilknytning i uovervåget tilstand for dataimport. Yderligere oplysninger om denne proces finder du i [Importere data i batchtilstand fra manuelt valgte filer](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -206,3 +204,10 @@ Gennemse koden i `BankImport_RU`-klassen for `Application Suite`-modellen for at
 
 [Ændringer af API til ER-struktur for Application Update 7.3](er-apis-app73.md)
 
+[Ændringer af API til ER-struktur for Application Update 10.0.23](er-apis-app10-0-23.md)
+
+[Ændringer af API til ER-struktur for Application Update 10.0.25](er-apis-app10-0-25.md)
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

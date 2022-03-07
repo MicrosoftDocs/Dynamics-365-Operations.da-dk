@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767945"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -45,17 +45,20 @@ Du kan kun opdele laster, der opfylder alle følgende kriterier:
 
 - En eller flere lastlinjer har plukkede antal.
 - Laststatussen er mindre end lastet.
-- Der er ingen lastlinjedata. (Disse data oprettes ved konsolidering af nummerplader på den midlertidige placering, og funktionen Bekræft og overfør understøtter ikke nummerpladekonsolidering).
-- Der er ingen lager, der i øjeblikket afventer pakning på en pakkelokation. (*Bekræft og overfør* funktionen understøtter ikke lagerbeholdning, der er plukket til pakkestationen, men som endnu ikke er pakket, medmindre containere, som er pakket, er placeret på midlertidige lokationer, hvor der ikke er oprettet indlæsningsarbejde).
+- Der er ingen lastlinjedata. (Disse data oprettes ved konsolidering af nummerplader på den midlertidige placering, og funktionen *Bekræft og overfør* understøtter ikke nummerpladekonsolidering).
+- Der er ingen lager, der i øjeblikket afventer pakning på en pakkelokation. (Funktionen *Bekræft og overfør* understøtter ikke den lagerbeholdning, der er plukket til pakkestationen, men endnu ikke er pakket.)
 
 > [!NOTE]
 > Denne funktionalitet adskiller sig fra funktionaliteten for transportlasten, som skal bruges på lagersteder, der aldrig kan planlægge og oprette laster før plukning, men som i stedet læsser den tilgængelige transportplads, når plukningen er fuldført.
 >
 > Brug funktionen *Bekræft og overfør* i situationer, hvor laster normalt planlægges og oprettes forud for tiden, men hvor der sommetider opstår undtagelser, hvor lasten ikke kan passer til den tilgængelige transport (f. eks. en lastbil).
 
-## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivere eller deaktivere bekræftelses- og overførselsfunktionen
+## <a name="turn-on-confirm-and-transfer"></a>Slå Bekræft og overfør til
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Bekræft og overfør* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Bekræft og overfør* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge funktionen *Bekræft og overfør*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Lokationsstyring*
+- **Funktionsnavn:** *Bekræft og overfør*
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfigurere Bekræft og overfør
 

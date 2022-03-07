@@ -1,12 +1,10 @@
 ---
-title: Definere afhængigheden af ER-konfigurationer i andre komponenter
-description: For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS).
+title: Definere afhængigheden af ER-konfigurationer for andre komponenter
+description: I dette emne beskrives, hvordan du designer en ER-konfiguration (elektronisk rapportering), og angiver dens afhængighed af andre softwarekomponenter.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,14 +12,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717588"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer i andre komponenter
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer for andre komponenter
 
 [!include [banner](../../includes/banner.md)]
 
@@ -59,7 +57,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 16. Klik på Ny.
 17. Vælg den nødvendige Produkt-komponent.
 18. Vælg Microsoft Dynamics AX 7.0 RTW.
-19. Skriv '[7.0.1265.3015,7.1) i feltet Version.
+19. Skriv '[7.0.1265.3015,7.1)' i feltet Version.
     * [7.0.1265.3015,7.1)  
     * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 for Finance and Operations Enterprise edition, version 7.0.1265.3015 eller nyere, men ikke nyere end mindre version 1.   
 20. Klik på Gem.
@@ -139,3 +137,9 @@ Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-
 26. Udvid 'Eksempeldatamodel' i træet.
     * Bemærk, at tilknytningskonfigurationen 'Eksempeltilknytning' for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
     * Hvis du logger på Finance and Operations, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

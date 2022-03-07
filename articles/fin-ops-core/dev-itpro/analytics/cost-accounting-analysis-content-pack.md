@@ -1,12 +1,10 @@
 ---
 title: Power BI-indhold til omkostningsregnskabsanalyse
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabsanalyse.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e9253537b7d306384747ca1e492def13c48aa678
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683865"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755494"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indhold til **Omkostningsregnskabsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indhold til **omkostningsregnskabsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -123,3 +121,6 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
 | Regnskabsår                       | Kalenderår                                                                                                        |
 | Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

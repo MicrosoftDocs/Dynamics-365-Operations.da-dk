@@ -2,11 +2,9 @@
 title: Mobilarbejdsområdet Firmaadressekartotek
 description: Dette emne indeholder oplysninger om mobilarbejdsområdet Firmaadressekartotek, hvor brugerne kan se og kontakte andre medarbejdere i organisationen.
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720642"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilarbejdsområdet Firmaadressekartotek
 
@@ -79,7 +77,7 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 3.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 4.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-[![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Træk ned for at opdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Få vist firmaadressekartoteket ved hjælp af mobilarbejdsområdet
 1.  I mobilappen skal du vælge mobilarbejdsområdet **Firmaadressekartotek**. Der vises en oversigt over medarbejdere.
@@ -89,3 +87,6 @@ Sådan downloades og installeres Finance and Operations-mobilappen:
 1.  I mobilappen skal du vælge mobilarbejdsområdet **Firmaadressekartotek**.
 2.  I feltet **Søg** skal du angive medarbejderens fornavn, efternavn, titel eller afdeling for at starte søgningen.
 3.  Vælg medarbejderen. Siden **Medarbejderprofil** vises. Oplysningerne på denne side omfatter medarbejderens fornavn, efternavn, titel og afdeling.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f458ce6ea4fa3efdfa470e90efa1e267047a8e37
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410954"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231121"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
@@ -175,3 +174,6 @@ Når denne beregningsmetode bruges til en delvis returnering, og hvis gebyrkoden
 [Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md)
 
 [Aktivere og konfigurere automatiske gebyrer efter kanal](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

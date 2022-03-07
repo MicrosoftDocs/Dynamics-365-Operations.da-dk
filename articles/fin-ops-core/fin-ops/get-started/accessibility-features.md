@@ -2,11 +2,9 @@
 title: Tilgængelighedsfunktioner
 description: I dette emne beskrives den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,16 +12,19 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798689"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071052"
 ---
 # <a name="accessibility-features"></a>Funktioner til øget tilgængelighed
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne beskrives den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap med at bruge denne app. Der er f.eks. funktioner til personer, der bruger synsteknologiske hjælpemidler som f.eks. Microsoft Windows Oplæser.
 
@@ -54,13 +55,13 @@ Der er adgang til alle handlinger, der kan udføres på en side, fra et tastatur
 
 Du vil udføre handlingen **Log for e-mail-besked**, der vises i gruppen **E-mail-besked** under fanen **Salgsordre** i handlingsruden.
 
-![Loghandling for e-mailbesked i handlingsruden](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Loghandling for e-mailbesked' i Handlingsruden")
+![Loghandling for e-mailbesked i handlingsruden.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Loghandling for e-mailbesked' i Handlingsruden")
 
 Én mulighed er at bruge tastaturet. Tryk på Ctrl + F6 for at flytte fokus til handlingsruden, og tryk derefter på Tab flere gange for at flytte gennem alle faner og handlinger, indtil handlingen **Log for e-mail-besked** er i fokus.
 
 Men du kan også køre handlingen mere direkte. Fra et vilkårligt sted på siden skal du trykke på Ctrl + apostrof (') for at få vist søgefeltet for handlinger.
 
-![Søgefelt for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søgefelt for handlinger")
+![Søgefelt for handlinger.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søgefelt for handlinger")
 
 Skriv ord, der beskriver handlingen, i søgefeltet. Handlingen gøres tilgængelig for dig, og du kan køre den direkte. For eksempel ved at skrive **e-mail**, **besk** (et delvist ord) eller **log** kan du "springe" til Log for e-mail-besked-funktionen.
 
@@ -97,3 +98,6 @@ På smartphones og andre små skærme tilpasser betjenings- og formularlayoutet 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Vejledning i, hvordan udviklere og kunder kan inkorporere tilgængelighed i deres tilpasninger
 
 Du kan finde flere oplysninger om Microsofts bedste fremgangsmåder for implementering af hjælp til handicappede under [Tilgængelighed i formularer, produkter og kontrolelementer](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

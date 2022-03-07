@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: f362aef527272781464d5c1a17f0a382cfb8cacc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102904"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568129"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -123,7 +123,7 @@ Hvis du vil gennemse berørte transaktioner, blokere valgte transaktioner og sen
     - **Vis alle transaktioner** – Åbn den fulde liste over alle transaktioner, ikke kun de åbne transaktioner.
 
 > [!IMPORTANT]
-> Knappen **Giv produktion besked** er tilgængelig, hvis funktionen *Tekniske beskeder for produktion* er aktiveret i systemet. Du kan finde oplysninger om, hvordan du slår denne funktion og dens forudsætninger til og fra, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
+> Knappen **Giv kun besked om produktion** er tilgængelig, hvis *tekniske beskeder for produktionsfunktionen* er aktiveret i systemet. Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](product-engineering-overview.md).
 
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Gennemse og behandle ændringsbeskeder for transaktioner
 
@@ -136,7 +136,7 @@ Du kan læse og behandle de ændringsbeskeder, du modtager, på følgende måder
 Når du gennemser beskeder om produktionsordrer på siden **Tekniske beskeder**, kan du følge links til relaterede ændringsordrer eller produktionsordrer ved at vælge kolonneværdier eller bruge de relaterede kommandoer i handlingsruden. Når du er færdig med at evaluere en ændring, og når du har annulleret eller ændret produktionsordrer efter behov, kan du markere en besked som løst. Vælg beskeden, og vælg derefter **Løs** i handlingsruden. Beskeden fjernes fra alle brugeres visninger.
 
 > [!IMPORTANT]
-> Muligheden for at sende beskeder om produktionsordrer kræver, at funktionen *Tekniske beskeder til produktion* er aktiveret i systemet. Du kan finde oplysninger om, hvordan du slår denne funktion og dens forudsætninger til og fra, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
+> Muligheden for at sende beskeder om produktionsordrer kræver, at *tekniske beskeder til produktionsfunktionen* er aktiveret i systemet. Yderligere oplysninger finder du i [Oversigt over teknisk ændringsstyring](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Oprette en ændringsordre ud fra en ændringsanmodning
 

@@ -1,42 +1,33 @@
 ---
-title: Fejlfinding i forbindelse med problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
-description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finance and Operations-apps.
+title: Fejlfinde fejl med dobbeltskrivning i Finans og drift-apps
+description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finans- og driftsapps.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683617"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061802"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Fejlfinding i forbindelse med problemer med dobbeltskrivningsmodulet i Finance and Operations-apps
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Fejlfinde fejl med dobbeltskrivning i Finans og drift-apps
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med **dobbeltskrivningsmodulet** i Finance and Operations-apps.
+
+Dette emne indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med **dobbeltskrivningsmodulet** i Finans- og driftsapps.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke indlæse dobbeltskrivningsmodulet i en Finance and Operations-app
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke indlæse dobbeltskrivningsmodulet i Finans- og driftsapps
 
 Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbeltskrivning** i **Datastyring**-arbejdsområdet, er dataintegrationstjenesten sandsynligvis nede. Opret en supportanmodning for at anmode om genstart af dataintegrationstjenesten.
 
@@ -44,10 +35,9 @@ Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbelt
 
 **Påkrævede legitimationsoplysninger for at løse problemet:** Den samme bruger, der har konfigureret dobbeltskrivning.
 
-Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny enhed til dobbeltskrivning. Den eneste bruger, der kan oprette en tilknytning, er den bruger, der har konfigureret dobbeltskrivningsforbindelsen.
+Du kan få vist følgende fejlmeddelelse, når du forsøger at konfigurere en ny tabel til dobbeltskrivning. Den eneste bruger, der kan oprette en tilknytning, er den bruger, der har konfigureret dobbeltskrivningsforbindelsen.
 
-*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 401 (uautoriseret)*
-
+*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 401 (uautoriseret).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fejl, når du åbner brugergrænsefladen til dobbeltskrivning
 
@@ -59,13 +49,17 @@ Du kan løse problemet ved at logge på ved hjælp af et InPrivate-vindue i Micr
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fejl under sammenkædning af miljøet ved dobbeltskrivning eller tilføjelse af en ny tabeltilknytning
 
-**Påkrævet rolle for at løse problemet:** Systemadministrator i både Finance and Operations-apps og Dataverse.
+**Påkrævet rolle for at løse problemet:** Systemadministrator i både Finans- og driftsapps og Dataverse.
 
 Der kan opstå følgende fejl under sammenkædning eller oprettelse af tilknytninger:
 
-*Svarstatuskoden tyder ikke på, at handlingen lykkedes: 403 (tokenexchange).<br> Sessions-id: \<your session id\><br> Rodaktivitets-id: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
-Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Dataverse-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både Finance and Operations-apps og Dataverse kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye tabeltilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
+Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Dataverse-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både Finans- og driftsapps og Dataverse kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye tabeltilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fejl, når du stopper tabeltilknytningen
 
@@ -77,13 +71,29 @@ Denne fejl opstår, når det sammenkædede Dataverse-miljø ikke er tilgængelig
 
 Du kan løse problemet ved at oprette en supportanmodning til dataintegrationsteamet. Tilknyt netværkssporingen, så dataintegrationsteamet kan markere tilknytningerne som **Kører ikke** i backend.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Der opstod en fejl under forsøg på at starte en tabeltilknytning
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Der opstod fejl under forsøg på at starte en tabeltilknytning
 
-Du kan få vist en fejl som følgende, når du forsøger at angive denne tilstand for en tilknytning til **Kører**:
+### <a name="unable-to-complete-initial-data-sync"></a>Den første datasynkronisering kunne ikke fuldføres
+
+Du kan få vist en fejlmeddelelse som den følgende, når du forsøger at køre den første synkronisering:
 
 *Den indledende datasynkronisering kan ikke fuldføres. Fejl: dobbeltskrivningsfejl - plugin-registrering mislykkedes: Der kan ikke oprettes metadata til dobbeltskrivningsopslag. Objektreference er ikke indstillet til en forekomst af et objekt.*
 
-Rettelsen til denne fejl afhænger af årsagen til fejlen:
+Når du forsøger at angive denne tilstand for en tilknytning til **Kører**, kan du modtage denne fejlmeddelelse: Rettelsen afhænger af årsagen til fejlen:
 
 + Hvis tilknytningen har afhængige tilknytninger, skal du sørge for at aktivere de afhængige tilknytninger for denne tabeltilknytning.
-+ Tilknytningen mangler muligvis kilde- eller destinationsfelter. Hvis der mangler et felt i Finance and Operations-appen, skal du følge trinnene i afsnittet [Problemer med manglende enhedsfelter i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis der mangler et felt i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så felterne automatisk udfyldes i tilknytningen.
++ Tilknytningen mangler muligvis kilde- eller destinationskolonner. Hvis der mangler en kolonne i Finans- og driftsapps, skal du følge trinnene i afsnittet [Problemer med manglende tabelkolonner i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis der mangler en kolonne i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så kolonnerne automatisk udfyldes i tilknytningen.
+
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Fejl pga. uoverensstemmelse mellem versioner og opgradering af dobbeltskrivningsløsninger
+
+Du kan få vist følgende fejlmeddelelser, når du forsøger at køre tabeltilknytningerne:
+
++ *Debitorgrupper (msdyn_customergroups): Fejl under dobbeltskrivning - Dynamics 365 for Sales-løsningen 'Dynamics365Company har uoverensstemmelse mellem versioner. Version: '2.0.2.10' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365FinanceExtended' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.227'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365FinanceAndOperationsCommon' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'CurrencyExchangeRates' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.133'*
++ *Dynamics 365 for Sales-løsningen 'Dynamics365SupplyChainExtended' har uoverensstemmelse mellem versioner. Version: '1.0.0.0' Påkrævet version: '2.0.227'*
+
+Du kan løse problemerne ved at opdatere løsningerne til dobbeltskrivning i Dataverse. Sørg for at opgradere til den seneste løsning, som svarer til den ønskede løsningsversion.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

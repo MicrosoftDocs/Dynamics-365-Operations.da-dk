@@ -1,28 +1,28 @@
 ---
 title: Oversigt over indkøbsrekvisition
 description: Dette emne beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020073"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982896"
 ---
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
@@ -49,7 +49,7 @@ Du kan konfigurere indkøbsrekvisitionens arbejdsgangsproces, så indkøbsrekvis
 
 Diagrammet nedenfor viser de statusser, som en indkøbsrekvisition og en indkøbsrekvisitionslinje tildeles, efterhånden som de bevæger sig igennem gennemsynsprocessen.  
 
-[![Statusser for indkøbsrekvisitionshoved og -linje](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statusser for indkøbsrekvisitionshoved og -linje.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelationer for indkøbsrekvisitionshoved og -linje
 
@@ -181,7 +181,7 @@ Du kan oprette en indkøbsordre for indkøbsrekvisitionslinjer, der ikke er bere
 
 Processen til efterspørgselskonsolidering starter, når en indkøbsrekvisition godkendes i en arbejdsgang, og hvis budgetstyring er konfigurer for din organisation, når budgetreservationerne og forudgående behæftelser er blevet registreret. Det følgende diagram viser procesforløbet for efterspørgselskonsolidering.  
 
-[![Procesforløb for efterspørgselskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Procesforløb for efterspørgselskonsolidering.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 
@@ -192,8 +192,7 @@ Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 5.  Opret indkøbsordrer for konsoliderede rekvisitionslinjer eller for indkøbsrekvisitionslinjer i en konsolideringsmulighed.
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oprette en forbrugsrekvisition](tasks/create-requisition-consumption.md)
 
@@ -201,3 +200,6 @@ Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

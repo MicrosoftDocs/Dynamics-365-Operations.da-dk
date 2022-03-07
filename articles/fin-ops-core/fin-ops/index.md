@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: rhaertle
 ms.custom: 62303
 ms.search.region: Global
-ms.author: margoc
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 413bdd2e7a817185829eb551380caf71d87af9b7
+ms.sourcegitcommit: 36d256bf5a832d2d70014d64044026f732b77831
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694379"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5073101"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentation til Finance and Operations-applikation
 
@@ -41,7 +41,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du køber</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig et prøveabonnement</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig en prøveversion af et abonnement</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælg en installationsindstilling</a></p>
  <p><a href="get-started/purchase-on-premises.md">Køb Finance and Operations (i det lokale miljø)</a></p>
 
@@ -72,7 +72,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <h3><a href="../../finance/index.md">Økonomistyring</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kreditor</a></p>
 <p><a href="../../finance/accounts-receivable/accounts-receivable.md">Debitor</a></p>
-<p><a href="../../finance/budgeting/budgeting-overview.md">Budgettering</a></p>
+<p><a href="../../finance/budgeting/budgeting-overview.md">Budgetplanlægning</a></p>
 <p><a href="../../finance/cash-bank-management/cash-bank-management.md">Kontant- og bankstyring</a></p>
 <p><a href="../../finance/general-ledger/audit-policy-rules.md">Overholdelse</a></p>
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Omkostningsregnskab</a></p>
@@ -91,7 +91,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Styring af forsyningskæde</a></h3>
+<h3><a href="../../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Varedisponering</a></p>

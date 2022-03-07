@@ -2,11 +2,9 @@
 title: Fraværsregistrering i Tid og fremmøde
 description: I dette emne forklares, hvordan du håndterer fraværsregistreringer i Tid og fremmøde.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966624"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809272"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Fraværsregistrering i Tid og fremmøde
 
@@ -108,3 +106,6 @@ En arbejder stempler f.eks. ind 10.00 og vælger en fraværskode, der angiver, a
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkende fravær
 
 - Vælg **Tid og fremmøde** &gt; **Gennemse og godkend** &gt; **Godkend eller beregn**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

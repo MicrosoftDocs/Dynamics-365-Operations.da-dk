@@ -1,27 +1,31 @@
 ---
 title: Forespørgsler og rapporter om farligt materiale
 description: Dette emne forklarer, hvordan du kan arbejde med forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4424664"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørgsler og rapporter om farligt materiale
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management leverer forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
 
@@ -29,7 +33,7 @@ Alle disse rapporter, bortset fra rapporten **Multimodalt farligt gods**, kan br
 
 I følgende illustration vises sekvensen af aktiviteter, der finder sted, når systemet genererer rapporter over skadelige materialer.
 
-![Serie af aktiviteter for rapporter over farligt materiale.](media/hazmat-report-sequence.png "Serie af aktiviteter for rapporter over farligt materiale")
+![Serie af aktiviteter for rapporter over farligt materiale](media/hazmat-report-sequence.png "Serie af aktiviteter for rapporter over farligt materiale")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>Konfigurere rapportering af farlige materialer
 
@@ -106,6 +110,3 @@ Når funktionen for farligt materiale er aktiveret i systemet, indeholder rappor
 ## <a name="packing-list-report"></a>Rapporten Plukliste
 
 Når funktionen for farligt materiale er aktiveret i systemet, indeholder pakkelister yderligere oplysninger vedrørende forsendelsesudskrivningsteksten for en vare. Denne rapport er tilgængelig på siden **Alle laster** som normalt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

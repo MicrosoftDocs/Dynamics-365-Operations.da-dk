@@ -2,23 +2,23 @@
 title: Konfigurere validering af fakturasammenholdelse for kreditor
 description: Dette emne indeholder oplysninger om, hvordan validering af fakturasammenholdelse for kreditorer defineres.
 author: abruer
-ms.date: 02/14/2022
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722857"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af fakturasammenholdelse for kreditor
 
@@ -54,7 +54,7 @@ Der findes fire forskellige typer sammenholdelsesvalideringer.
 12. I feltet **Tolerance for indkøbspristotaler** skal du angive et beløb i regnskabsvalutaen. Dette felt er tilgængeligt, når **Afstem pristotaler** er indstillet til **Beløb** eller **Procent og beløb**.
 13. I feltet **Vis ikon for afstemning af pristotal** skal du vælge, hvornår der skal vises et ikon, hvis en uoverensstemmelse for fakturasammenholdelse overstiger tolerancen for nettoenhedsprisen. Ikonet kan blive vist, når en positiv uoverensstemmelse overstiger tolerancen, eller når enten en positiv eller en negativ uoverensstemmelse overstiger tolerancen.
 Tolerancen er f.eks. 5 procent, og den samlede linjepris på indkøbsordren er 10,00. Derfor vises der et ikon for prisafstemning, hvis den samlede linjepris på fakturaen overstiger 10,50. Hvis du vælger **Hvis større eller mindre end tolerance**, vises ikonet også, hvis samlede linjepris på fakturaen er mindre end 9,50.
-13. Indstil **Sammenholdelsen af gebyrer**.
+13. Indstil sammenholdelsen af gebyrer.
 14. Hvis du vil sammenligne faktiske gebyrer med forventede gebyrer baseret på oplysninger på indkøbsordren, skal du markere afkrydsningsfeltet **Sammenhold gebyrer**.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Konfigurer pristoleranceprocenter for enhed
@@ -75,7 +75,7 @@ Som standard tillades negative prisuoverensstemmelser. Du kan imidlertid ikke an
 
 ## <a name="set-up-matching-policy-override"></a>Konfigurer overstyring af sammenholdelsespolitik
 
-Gå til **Kreditor > Konfiguration > Konfiguration af fakturasammenholdelse > Sammenholdelsespolitik** for at definere standardposten for feltet **Sammenholdelsespolitik** for linjer på siden **Indkøbsordre**. Denne konfiguration er valgfri. Du kan bruge denne side til at konfigurere tovejs-sammenholdelse eller trevejs-sammenholdelse, der skal bruges til varer og leverandører eller kombinationer af varer og leverandører. Disse poster giver dig mulighed for at definere flere detaljerede sammenholdelsespolitikker end den sammenholdelsespolitik for den juridiske enhed, som du har defineret på siden **Kreditorparametre**. Standardlinjesammenholdelsespolitikken for den juridiske enhed gælder for alle linjevarer og -leverandører med undtagelse af elementer, som har en anden sammenholdelsespolitik for linjer angivet på denne side.
+Gå til **Kreditor > Konfiguration > Konfiguration af fakturasammenholdelse > Sammenholdelsespolitik** for at definere standardposten for feltet Sammenholdelsespolitik for linjer i indkøbsordreformularen. Denne konfiguration er valgfri. Du kan bruge denne form til at konfigurere tovejs-sammenholdelse eller trevejs-sammenholdelse, der skal bruges til varer og leverandører eller kombinationer af varer og leverandører. Disse poster giver dig mulighed for at definere flere detaljerede sammenholdelsespolitikker end den sammenholdelsespolitik for den juridiske enhed, som du har defineret på siden **Kreditorparametre**. Standardlinjesammenholdelsespolitikken for den juridiske enhed gælder for alle linjevarer og -leverandører med undtagelse af elementer, som har en anden sammenholdelsespolitik for linjer angivet på denne side.
 
 Vælg **Niveau for sammenholdelsespolitik** på denne side. Vælg det niveau i hierarkiet for sammenholdelsespolitikker, der skal angives sammenholdelsespolitikker for linjer for.
 

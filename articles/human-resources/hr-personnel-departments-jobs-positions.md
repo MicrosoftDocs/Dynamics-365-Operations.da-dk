@@ -1,33 +1,32 @@
 ---
 title: Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger
-description: Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer.
+description: Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Human Resources. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417789"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778790"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, job og stillinger
 
-Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Human Resources. Denne artikel beskriver begrebsmæssige oplysninger om disse elementer. 
 
 Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i denne artikel.
 
@@ -38,13 +37,12 @@ Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i denn
 |**Salg**|Salgschef (centralt)|Salgsdirektør|
 |**Regnskab**|Regnskabsansvarlig|Regnskabschef|
 |**Regnskab**|Regnskab-A|Bogholder|
-|**Personale**|Personalechef (øst)|Personalechef|
-|**Personale**|Personalechef (vest)|Personalechef|
-|**Personale**|Personalechef (centralt)|Personalechef|
+|**Human Resources**|Human Resourceschef (øst)|Human Resourceschef|
+|**Human Resources**|Human Resourceschef (vest)|Human Resourceschef|
+|**Human Resources**|Human Resourceschef (centralt)|Human Resourceschef|
 
 
- <a name="departments"></a>Afdelinger
-------------
+##  <a name="departments"></a>Afdelinger
 
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation, der er ansvarlig for et bestemt område af organisationen, f.eks. salg eller regnskab. En afdeling bruges til at rapportere om funktionsområder og kan have driftsansvar. En afdeling kan også omfatte en gruppe af bærere. Salgs-, regnskabs- og personaleressourcer er nogle eksempler på afdelinger i en organisation.
 
@@ -97,8 +95,7 @@ Du kan bruge jobtyper til at klassificere lignende job i kategorier. Jobtyper ka
 
 Brug ansvarsområder til at angive arbejdsroller, processer, og produkter, som en arbejder i en stilling for det pågældende job ville være ansvarlig for. Et eksempel på et ansvarsområde for et job med titlen "Bogholder" kunne være "Finansiel rapportering for vare A".
 
-<a name="positions"></a>Stillinger
-----------
+## <a name="positions"></a>Stillinger
 
 Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En stilling er en individuel forekomst af et job. For eksempel er stillingen "Salgschef (øst)" blot én af de stillinger, der er tilknyttet jobbet "Salgschef". Stillinger findes i en afdeling og tildeles til arbejdere.
 ### <a name="position-creation-and-maintenance"></a>Oprette og vedligeholde stillinger
@@ -120,7 +117,7 @@ Når du tildeler en medarbejder til en stilling, udfylder du stillingen. Du kan 
 
 Stillinger er vigtige elementer i et organisationshierarkis lavere niveau. I formen Stilling kan du angive den stilling, en stilling rapporterer til. Når du tildeler en medarbejder til en stilling, der refererer til en anden stilling, opretter du en rapporteringsrelation mellem de arbejdere, der er tildelt til to stillinger. For eksempel rapporterer stillingen "Bogholder-A" til stillingen "Regnskabsansvarlig". Kim Akers er tildelt stillingen "Regnskabsansvarlig", og Sanjay Patel er tildelt stillingen "Bogholder-A". Det betyder, at Sanjay Patel rapporter til Kim Akers. 
 
-Hvis organisationen bruger et matrixhierarki eller et andet brugerdefineret hierarki, kan du konfigurere stillingshierarkityper og derefter tilføje rapporteringsforhold for hver enkelt hierarki, du har angivet. Lori Penor er f.eks. administrerende direktør hos Eventyrcykler og er tildelt stillingen "Adm. direktør". Lori styrer udviklingen af et produkt, der bruges til at rense dimser. Lori har brug for, at en bogholde hjælper hende med økonomi til udvikling af produktet. Derfor har hun ansat Sanjay Patel sin bogholder. Sanjay rapporterer direkte til Kim Akers, men samarbejder også med Lori Penor med regnskabsopgaver til udvikling af renseanordningen. 
+Hvis organisationen bruger et matrixhierarki eller et andet brugerdefineret hierarki, kan du konfigurere stillingshierarkityper og derefter tilføje rapporteringsforhold for hver enkelt hierarki, du har angivet. Lori Penor er f.eks. administrerende direktør hos Eventyrcykler og er tildelt stillingen "Adm. direktør". Lori styrer udviklingen af et produkt, der bruges til at rense dimser. Lori har brug for, at en bogholder hjælper med økonomien til udvikling af produktet. Derfor har hun ansat Sanjay Patel som bogholder. Sanjay rapporterer direkte til Kim Akers, men samarbejder også med Lori Penor med regnskabsopgaver til udvikling af renseanordningen. 
 
 Du ville skulle udføre følgende opgaver for at konfigurere samarbejdsforhold mellem Sanjay Patel og Lori Penor i det forrige eksempel:
 1.  Opret en brugerdefineret stillingshierarkitype kaldes "Dims" for at oprette et hierarki, der omfatter stillinger, der er ansvarlig for at arbejde på rensningsproduktet.
@@ -159,9 +156,12 @@ For nogle poster kan du angive fremtidige ændringer i posten. Følgende oplysni
 </tbody>
 </table>
 
-Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når han rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
+Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når Sanjay rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
 
 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

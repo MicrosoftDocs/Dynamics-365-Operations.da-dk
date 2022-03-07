@@ -2,28 +2,25 @@
 title: Fordelingsbetingelser
 description: I dette emne kan du finde oplysninger om, hvordan du bruger fordelingsbetingelser på en hovedkonto.
 author: rachel-profitt
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 637e12f0deaa53811093a8745bc74dbc19e34f6b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5735cbdd4c8b137d01a56be0009b60d32c21e94e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823662"
 ---
 # <a name="allocation-terms"></a>Fordelingsbetingelser
 
@@ -70,3 +67,6 @@ I oversigtspanelet **Destinationens finanskonto** er hovedkontoen den samme udgi
 > Du kan vælge at bruge knappen **Kopiér** til at duplikere den valgte fordeling.
 
 Når der oprettes en fordelingsbetingelse for en hovedkonto, vil systemet automatisk bogføre et nyt bilag, når der bogføres et bilag, der svarer til de økonomiske dimensioner for kilden på fordelingsbetingelserne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

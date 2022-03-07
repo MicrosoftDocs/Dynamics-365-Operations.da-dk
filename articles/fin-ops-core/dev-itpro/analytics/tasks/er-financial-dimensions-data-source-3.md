@@ -1,12 +1,10 @@
 ---
 title: 'ER Bruge økonomiske dimensioner som en datakilde (del 3: Design rapporten)'
-description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.
+description: Dette emne beskriver, hvordan du konfigurerer en ER-model (elektronisk rapportering) til at bruge økonomiske dimensioner som datakilde til ER-rapporter. (Del 3)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684781"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356313"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Bruge økonomiske dimensioner som en datakilde (del 3: Design rapporten)
 
@@ -94,7 +92,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 59. Klik på Tilføj attribut.
 60. Skriv 'Desc' i feltet Navn.
 61. Klik på OK.
-![Side med ER-operationsdesigner](../media/er-financial-dimensions-guides-format1.png)
+![Side med ER-operationsdesigner.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Knyt rapportelementer til datakilder
 1. Klik på fanen Tilknytning.
@@ -143,5 +141,8 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 44. Klik på Bind.
 45. Klik på Gem.
 46. Luk siden.
-![Side med ER-operationsdesigner](../media/er-financial-dimensions-guides-format2.png)
+![Side med ER-operationsdesigner.](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7740d64166e08d9347ea4648b1fd3c60c6d6ee21
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441703"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232531"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kasserabatter i forbindelse med overbetalinger
 
@@ -139,3 +138,6 @@ Kasserabatbeløbet reduceres fra 10,50 til 10,00. Betalingen og fakturaen anses 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

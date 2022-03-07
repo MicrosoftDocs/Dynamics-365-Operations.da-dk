@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: edba4e496de9cbb99765857d0d5e87c32477f803
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441531"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228881"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserede debitorbetalinger
 
@@ -296,3 +295,6 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West)    |              | 75,00         |
 | Forfalden fra Fabrikam East (Fabrikam West) | 25,00        |               |
 | Debitor (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,6 +5,7 @@ author: v-kiarnd
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +15,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fc1658b5a4ae687b90d2690834ce172275471733690546a62d84a8a2c62af0a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ffda4c2ff6c95f66df8caa43c065d3e6c837b832
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768704"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821746"
 ---
 # <a name="restrict-editing-of-accounting-distributions-on-invoices"></a>Begrænse redigeringen af regnskabsfordelinger på fakturaer
 

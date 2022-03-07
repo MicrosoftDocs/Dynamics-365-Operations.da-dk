@@ -2,34 +2,34 @@
 title: Konfigurere kompensationsgitre
 description: Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d5ada0817dd73caad38bb2e50302869857c71d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c393dc3393b5331b5594e39254ffe208ff439bc7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417790"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800945"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer. Kompensationsgitre kan deles mellem flere planer eller kopieres, når du opretter en ny lønstruktur.  Før du opretter et kompensationsgitteret, skal niveauer og referencepunkter konfigureres. I dette eksempel oprettes der en ny klassetype for kompensationsgitteret ved hjælp af demodata for niveauerne og referencepunkter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
 
 ## <a name="set-up-information-about-the-compensation-grid"></a>Konfigurer oplysninger om kompensationsgitteret
-1. Gå til Personale > Kompensation > Fast løn > Kompensationsgitre.
+1. Gå til Human Resources > Kompensation > Fast løn > Kompensationsgitre.
 2. Klik på Ny.
 3. Skriv en værdi i feltet Gitter.
 4. Skriv en værdi i feltet Beskrivelse.
@@ -92,3 +92,6 @@ Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for f
 29. Markér eller fjern markeringen af alle rækker på listen.
 30. Klik på Anvend på gitter.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

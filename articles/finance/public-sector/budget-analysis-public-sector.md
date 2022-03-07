@@ -1,30 +1,27 @@
 ---
 title: Budgetanalyse i den offentlig sektor
 description: Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring.
-author: ShylaThompson
-manager: AnnBe
+author: v-kiarnd
 ms.date: 02/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24a51347cc4b7a80d9de1b71a20792422d05bada
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe178d94926050b48ea91765baa9edd2adadade7
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407658"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817723"
 ---
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
@@ -68,9 +65,8 @@ Siden **Budgetstyringsdimension** er værktøjet, der skal bruges, når du vil a
 
 Følgende tabel beskriver forskellene mellem disse sider.
 
-|                                                                                                                         |                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Siden Statistik for budgetstyring**                                                                                      | **Siden Budgetanalyse**                                                                    |
+| Siden Statistik for budgetstyring | Budgetanalyse                        |
+|---|---|
 | Viser budgetsaldiene for en budgetcyklus og en budgetmodel for én enkelt økonomisk dimensionsværdi eller budgetgruppe. | Viser de samlede budgetbeløb for flere økonomiske dimensionsværdier på samme tid. |
 | Medtager data fra både bekræftede og ubekræftede behæftelser.                                                         | Medtager kun data fra bekræftede behæftelser.                                             |
 | Medtager kun data fra udgiftskonti.                                                                               | Medtager data fra både indtægts- og udgiftskonti.                                       |
@@ -108,3 +104,6 @@ Når du har ændret indstillingerne øverst på siden, skal du klikke på **Opda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

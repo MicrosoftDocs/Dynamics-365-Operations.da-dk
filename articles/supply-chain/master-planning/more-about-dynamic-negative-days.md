@@ -1,30 +1,21 @@
 ---
 title: Negative dage og dynamiske negative dage
 description: Dette emne giver oplysninger om negative dage og dynamiske negative dage, og hvordan du kan bruge dem til at hjælpe din virksomhed.
-author: t-benebo
-manager: tfehr
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d5e86cc8abd4de1e23b1a7f7217bbb1fd5ea966b988a879e663b6f393e0d1204
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756961"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative dage og dynamiske negative dage
 
@@ -48,11 +39,11 @@ Du kan få behov enten relativt tidligt i leveringstiden for varen, eller umidde
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningsniveauet for DemoProduct-varen 0 (nul).
 - På dag nul (1. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag syv (7. januar) findes der en eksisterende indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag syv (8. januar) findes der en eksisterende indkøbsordre på 10 stk. af DemoProduct-varen.
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
-![Grafisk visning af scenarie 1](./media/negative-days-1.jpg)
+![Grafisk visning af scenarie 1.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Eksempel A: Negative dage er mindre end varens leveringstid
 
@@ -60,11 +51,11 @@ Hvis du angiver de negative dage som et tal, der er mindre end varens leveringst
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel A til scenarie 1](./media/negative-days-2.png)
+![Skærmbillede for eksempel A til scenarie 1.](./media/negative-days-2.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel A til scenarie 1](./media/negative-days-3.png)
+![Grafisk visning af eksempel A til scenarie 1.](./media/negative-days-3.png)
 
 Hvis du betragter MPS-performance og planlægger nervøsitet, fungerer dette eksempel ikke godt. MRP skal oprette et nyt ordreforslag og skal beregne forsinkelser og handlinger. Disse opgaver tager lang tid. I dette eksempel føjes der også to yderligere transaktioner til planen. Salgsordren bliver på den anden side kun forsinket med seks dage, ikke syv dage.
 
@@ -82,11 +73,11 @@ Tidshorison for dynamiske negative dage = Leveringstid for indkøb + Tidshorison
 
 Når der bruges dynamiske negative dage, er den tidshorisont, som MRP leder efter for tilgange, nu 6 + 2 + 0 = 8 dage. MRP finder den eksisterende indkøbsordre og fastfryser salgsordren mod den. Ingen nye ordreforslag oprettes. Derfor er kørselstiden for MRP kortere. I den følgende illustration vises nettobehovet for DemoProduct-varen.
 
-![Nettokrav til eksempel C i scenarie 1](./media/negative-days-4.png)
+![Nettokrav til eksempel C i scenarie 1.](./media/negative-days-4.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel C til scenarie 1](./media/negative-days-5.png)
+![Grafisk visning af eksempel C til scenarie 1.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Eksempel D: Brug kun dynamiske negative dage
 
@@ -94,11 +85,11 @@ Hvis du angiver de negative dage til **0** (nul) og kun bruger tidshorisonten fo
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel D til scenarie 1](./media/negative-days-6.png)
+![Skærmbillede for eksempel D til scenarie 1.](./media/negative-days-6.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel D til scenarie 1](./media/negative-days-7.png)
+![Grafisk visning af eksempel D til scenarie 1.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Eksempel E: Brug både negative dage, som er større end varens leveringstid og tidshorisonten for de dynamiske negative dage
 
@@ -115,7 +106,7 @@ Der kan opstå et behov på et tidspunkt i løbet af varens leveringstid. Her er
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
-![Grafisk visning af scenarie 1](./media/negative-days-8.png)
+![Grafisk visning af scenarie 2.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Eksempel A: Negative dage er mindre end varens leveringstid
 
@@ -123,11 +114,11 @@ Hvis du angiver de negative dage som et tal, der er mindre end varens leveringst
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel A til scenarie 2](./media/negative-days-9.png)
+![Skærmbillede for eksempel A til scenarie 2.](./media/negative-days-9.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel A til scenarie 2](./media/negative-days-10.png)
+![Grafisk visning af eksempel A til scenarie 2.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Eksempel B: Negative dage er mere end varens leveringstid
 
@@ -139,11 +130,11 @@ Denne situation ligner eksempel C i scenarie 1, fordi dynamiske negative dage fu
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel C til scenarie 2](./media/negative-days-11.png)
+![Skærmbillede for eksempel C til scenarie 2.](./media/negative-days-11.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel C til scenarie 2](./media/negative-days-12.png)
+![Grafisk visning af eksempel C til scenarie 2.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Eksempel D: Brug kun dynamiske negative dage
 
@@ -160,11 +151,11 @@ Du får måske behov efter varens leveringstid. Her er et eksempel på dette sce
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningen for DemoProduct-varen 0 (nul).
 - På dag syv (8. januar), der ligger uden for varens leveringstid, får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 10 (11. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag ti (11. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
 
 I følgende illustration vises en grafisk visning af dette scenarie.
 
-![Grafisk visning af scenarie 3](./media/negative-days-13.png)
+![Grafisk visning af scenarie 3.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Eksempel A: Negative dage er mindre end varens leveringstid
 
@@ -172,11 +163,11 @@ Hvis du angiver de negative dage som et tal, der er mindre end varens leveringst
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel A til scenarie 3](./media/negative-days-14.png)
+![Skærmbillede for eksempel A til scenarie 3.](./media/negative-days-14.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel A til scenarie 3](./media/negative-days-15.png)
+![Grafisk visning af eksempel A til scenarie 3.](./media/negative-days-15.png)
 
 > [!NOTE]
 > På det foregående skærmbillede er behovsdatoen for indkøbsordren 12. januar. Da det pågældende skærmbillede blev taget i 2015, hvor 11. januar var en søndag, flytter MRP behovsdatoen til næste arbejdsdag, som var mandag d. 12. januar. Indkøbsordren har dog leveringsdato den 11. januar.
@@ -187,11 +178,11 @@ Hvis du angiver de negative dage til et tal, der er større end varens leverings
 
 I følgende illustration vises et skærmbillede af dette eksempel.
 
-![Skærmbillede for eksempel B til scenarie 3](./media/negative-days-16.png)
+![Skærmbillede for eksempel B til scenarie 3.](./media/negative-days-16.png)
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel B til scenarie 3](./media/negative-days-17.png)
+![Grafisk visning af eksempel B til scenarie 3.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Eksempel C: Korreler automatisk varens leveringstid med tidshorisonten for negative dage
 
@@ -201,7 +192,7 @@ Tidshorisonten for dynamiske negative dage er 6 + 2 – 7 = 1 dag. I dette tilf�
 
 I følgende illustration vises en grafisk visning af, hvad der sker i dette eksempel.
 
-![Grafisk visning af eksempel C til scenarie 3](./media/negative-days-18.png)
+![Grafisk visning af eksempel C til scenarie 3.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Eksempel D: Brug kun dynamiske negative dage
 
@@ -222,17 +213,17 @@ Du kan angive de negative dage som en lang tidshorisont og derefter arbejde med 
 - DemoProduct-varen har en indkøbsleveringstid på seks.
 - På dag nul (1. januar) er lagerbeholdningen for DemoProduct-varen 0 (nul).
 - På dag nul (1. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 10 (10. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
-- På dag 12 (12. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
+- På dag ni (10. januar) får du en salgsordre på 10 stk. af DemoProduct-varen.
+- På dag elleve (12. januar) findes der en indkøbsordre på 10 stk. af DemoProduct-varen.
 - Negative dage angives til **20**, hvilket er langt mere end varens leveringstid.
 
 I følgende illustration vises en grafisk visning af, hvad der sker.
 
-![Grafisk gennemgang af eksemplet](./media/negative-days-19.png)
+![Grafisk gennemgang af eksemplet.](./media/negative-days-19.png)
 
 MRP producerer følgende resultater.
 
-![Resultater](./media/negative-days-20.png)
+![Eksempel på resultater 1.](./media/negative-days-20.png)
 
 På det foregående skærmbillede er behovsdatoen for salgsordren den 9. januar i stedet for den 10. januar. Da det pågældende skærmbillede blev taget i 2015, hvor 10. januar var en søndag, flytter skal behovsdatoen for ordren være den forudgående arbejdsdag, som var fredag d. 9. januar.
 
@@ -242,7 +233,7 @@ Resultaterne er ikke forkerte, men kørselstiden for MRP kan være længere, da 
 
 Hvis du reducerer de negative dage til et tal, der ligger tættere på varens leveringstid, og du bruger dynamiske negative dage, producerer MRP følgende resultater.
 
-![Resultater](./media/negative-days-21.png)
+![Eksempel på resultater 2.](./media/negative-days-21.png)
 
 MRP opretter et ordreforslag, der er knyttet til den første salgsordre. Det forventes, at den anden salgsordre udlignes derefter mod den eksisterende indkøbsordre, baseret på indstillingen for negative dage. Dette planlægningsresultat er også korrekt, og kørselstiden for MRP kan være kortere. I dette tilfælde er det ikke vigtigt, at du forstår og ved, hvordan du skal arbejde med handlingsmeddelelser.
 
@@ -250,4 +241,7 @@ Som en hjælp til at sikre, at der er angivet de korrekte værdier for din virks
 
 ## <a name="see-also"></a>Se også
 
-Få mere diskussion ved at se det oprindelige blogindlæg [Mere om (dynamiske) negative dage](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+Få mere diskussion ved at se det oprindelige blogindlæg [Mere om (dynamiske) negative dage](/archive/blogs/axmfg/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

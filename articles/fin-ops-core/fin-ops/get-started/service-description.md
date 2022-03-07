@@ -2,19 +2,19 @@
 title: Servicebeskrivelse af Finance and Operations-apps
 description: Dette emne indeholder servicebeskrivelsen til Finance and Operations-apps.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 09/03/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952360"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472499"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeskrivelse af Finance and Operations-apps
 
@@ -28,7 +28,7 @@ Finance and Operations-apps er ERP-software (Enterprise Resource Planning)-softw
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Sammen med [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beregn](/azure/service-fabric/service-fabric-overview) og [databasetjenester](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) giver disse apps organisationer mulighed for at køre branchespecifikke og driftsmæssige forretningsprocesser. Kunder, der understøttes af deres implementeringspartner, bestemmer konfigurationen af den forretningsprogramlogik, der passer bedst sammen med deres entydige forretningsprocesser. Funktionalitet og forretningsprocesser kan udvides eller udvides via en eller en kombination af følgende løsninger:
+Sammen med [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beregn](/azure/service-fabric/service-fabric-overview) og [databasetjenester](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) giver disse apps organisationer mulighed for at køre branchespecifikke og driftsmæssige forretningsprocesser. Kunder, der understøttes af deres implementeringspartner, bestemmer konfigurationen af den forretningsprogramlogik, der passer bedst sammen med deres entydige forretningsprocesser. Funktionalitet og forretningsprocesser kan udvides eller udvides via en eller en kombination af følgende løsninger:
 
 - Indbygget [tilpasningserfaring](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-værktøjer
@@ -50,10 +50,10 @@ Driftsmodellen for Finance and Operations-apps definerer specifikke roller og an
 
 ### <a name="customer-activities"></a>Brugerdefinerede aktiviteter
 
-Kunder arbejder sammen med deres partner og [Microsoft FastTrack](/dynamics365/fasttrack/) efter [Dynamics 365-implementeringsvejledningen](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), [Success by Design](/dynamics365/fasttrack/success-by-design-overview)-skabeloner og de værktøjer og best practice-skabeloner, der findes i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) til implementering af deres løsning. Af almindelige aktiviteter kan nævnes:
+Kunderne arbejder sammen med deres partner og [Microsoft FastTrack](/dynamics365/fasttrack/) efter de [Success by Design](/dynamics365/fasttrack/success-by-design-overview) værktøjer og best practice-skabeloner, der findes i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md), til implementering af deres løsning. Af almindelige aktiviteter kan nævnes:
 
 - Brugeridentitet og sikkerhedsstyring
-- Definere, udvikle og betjene forretningsprocesser
+- Definere, udvikle og operere forretningsprocesser
 - Definere, udvikle, teste og operere udvidelser
 - Overvåge og administrere installationer uden for produktion
 - Administrere programopdateringer og validere udvidelser
@@ -66,7 +66,7 @@ Microsoft administrerer Finance and Operations-tjenesten ved at implementere, ov
 **Infrastrukturstyring**
 - Sikkerhed og isolation
 - Operativsystemer og virtualisering
-- Servere, lagre og netværke
+- Servere, lagring og netværk
 - Datacenterkraft, netværk, afkøling
 
 **Styring af applikationsplatform**
@@ -117,7 +117,7 @@ Finance and Operations-apps vises fra flere Azure-områder over hele verden. Fin
 ### <a name="countryregion-specific-considerations"></a>Lande-/områdespecifikke overvejelser
 
 - Kunder i regulerede industri- eller erhvervsorganisationer, der gør forretning med enheder i Frankrig, der kræver lokal databopæl, skal gennemgå [Finance and Operations i Frankrig](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunder, der har operationer i Kina, bør gennemgå [Azures Kina-strategiplan](/azure/china/) og [Finance and Operations, der drives af 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
+- Kunder, der har operationer i Kina, bør gennemgå [Finance and Operations 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
 - Kunder, der har operationer i Rusland, bør gennemse [russisk lov om tilpasning af personlige data](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Generel forordning om databeskyttelse (GDPR)
@@ -197,17 +197,17 @@ I følgende tabel beskrives nogle af de typiske scenarier og aktiviteter for tje
 | Klargøre alle produktionsforekomster og ikke-produktionsforekomster. | X | |
 | Validere installerede produktionsforekomster og ikke-produktionsforekomster. | | X |
 | **Tjenesteopdateringer** | |
-| Anvend serviceopdateringer til angivne forekomster uden for produktion og produktion. | X | |
-| Anvend manuelle serviceopdateringer fra LCS på sandboksforekomster. Definer, udvikle, teste opdateringen og levere kodeopdateringspakken tilbage til LCS. | | X |
-| Anmod om, og planlæg, at der skal anvendes forlængelsesopdateringer på produktionsforekomsten. | | X |
+| Microsoft anvender serviceopdateringer til angivne forekomster uden for produktion og produktion. | X | X |
+| Hent opdateringen fra LCS, definer, udvikl og test opdateringen, og tilbage med kodeopdateringspakken til LCS. | | X |
+| Anmod om, at der skal anvendes forlængelsesopdateringer på produktionsforekomsten. | | X |
 | Opret en kode og sikkerhedskopiering af data til produktionsforekomsten, før der anvendes opdateringer. | X | |
 | Hvis der opstår fejl, skal du tilbagerulle produktionsforekomsten til koden og datasikkerhedskopien. | X | |
 | **Datastyring (sikkerhedskopier, gendan og opdater)** | | |
 | Sikkerhedskopier databasen. | X | |
 | Fastlæg, at der er høj tilgængelighed og en plan for genoprettelse efter planen for udlæg. | X | |
-| Overvåge ydeevnen for databasen med produktionsforekomster. | X | |
-| Indstil ydeevnen for databasen med produktionsforekomster. | X | |
-| Udfør tidsopdatering af en database med produktionsforekomster til en forekomst, som ikke er en produktionsforekomst. | | X |
+| Overvåge ydeevnen for databasen med produktionsforekomster. | X | X |
+| Indstil ydeevnen for databasen med produktionsforekomster. | X | X |
+| Start kopieringen af databasen med produktionsforekomster til en forekomst, der ikke er en produktionsforekomst. | | X |
 | **Opdatere infrastrukturen** | | |
 | Planlæg regelmæssige opdateringer af infrastrukturen. | X | |
 | **Op- og nedskalering (brugere, lagring og forekomster)** | | |
@@ -215,7 +215,7 @@ I følgende tabel beskrives nogle af de typiske scenarier og aktiviteter for tje
 | Opdater brugsændringerne i værktøjet til estimator for LCS-abonnement. | | X |
 | Rapportér eventuelle væsentlige problemer med ydeevnen, der påvirker brugen af tjenesten. | | X |
 | Administrer proaktivt de ressourcer, der kræves til den relevante service. | X | |
-| Undersøg og fejlfinde hændelser. | X | |
+| Undersøg og fejlfinde hændelser. | X | X |
 | **Sikkerhed (brugeradgang)** | | |
 | Giv brugeren adgang til tjenesten. | | X |
 | Giver LCS-projektadgang til administration og operation af forekomster, der blev implementeret via LCS. | | X |
@@ -314,7 +314,7 @@ Microsofts planer og procedurer for naturkatastrofer undersøges jævnligt via S
 | Microsoft hensættelser et sekundært miljø i det azure-parrede datacenter, når den primære produktionsforekomst implementeres. Yderligere oplysninger finder du i [Forretningskontinuitet og it-katastrofeberedskab (BCDR): Azure-parrede områder](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft aktiverer de oplysninger om Azure SQL og Azure Blob Storage, når den primære produktionsforekomst implementeres. | None |
 | Microsoft aktiverer automatisk sikkerhedskopiering af Azure SQL-databaserne. | None |
-| <p>Når der opstår svigt, bestemmer Microsoft, om der skal udføres en failover for kunden, og om der vil være tab af data. Kunder kan opleve at miste data i op til 15 minutter, afhængigt af arten af og tidspunktet for afbrydelsen. | I tilfælde af tab af data kan kunden være nødt til at angive skriftlig afhændelse, for at det kan udløse en failover. |
+| <p>Når der opstår svigt, bestemmer Microsoft, om der skal udføres en failover for kunden, og om der vil være tab af data. Tab af data kan tage op til fem sekunder. Du kan finde flere oplysninger [i Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>I tilfælde af tab af data anmoder Microsoft kunden om at få en failover-mulighed.</p> | I tilfælde af tab af data kan kunden være nødt til at angive skriftlig afhændelse, for at det kan udløse en failover. |
 | Når der opstår en fejl, fungerer den gældende tjeneste i begrænset tilstand. Opdateringsvedligeholdelse kan ikke udløses i failover-tilstand. | Kunden kan ikke anmode om pakkeinstallationer eller andre almindelige anmodninger om vedligeholdelse i failover-tilstand. |
 | Når datacenter bliver driftsklart, vender Microsoft tilbage til produktionsforekomsten i det primære Azure-område. Normal genoptag operationer. | Kunden skal muligvis ikke logge af produktionsforekomsten i det primære Azure-område. |
 
@@ -333,9 +333,9 @@ Microsoft tilbyder Finance and Operations-kunder tre supportplaner: Premier, Pro
 | Ubegrænset afsendelse af pause/ret hændelse | Ja | Ja | Ja |
 | 24/7 adgang via LCS | Ja | Ja | Ja |
 | Svartid for hændelse | Mindre end en time | Mindre end en time | Næste arbejdsdag |
-| Rådgivningstimer | Puljer anskaffes pr. aftale. | Nej | Nej |
-| Dedikeret supportkontoadministrator | Ja | Nej | Nej |
-| Dedikeret supporttekniker | Involveret i henhold til en separat aftale | Nej | Nej |
+| Rådgivningstimer | Puljer anskaffes pr. aftale. | Ingen | Ingen |
+| Dedikeret supportkontoadministrator | Ja | Ingen | Ingen |
+| Dedikeret supporttekniker | Involveret i henhold til en separat aftale | Ingen | Ingen |
 
 Du kan finde flere oplysninger under [Support-oversigt](/power-platform/admin/support-overview).
 
@@ -356,7 +356,6 @@ Microsoft har en tilgængelighedssats på 99,9 % pr. måned for tjenesten. Hvis
 - **[Licensvejledning](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Du kan bruge denne vejledning til at få mere at vide om, hvordan du licenserer Dynamics 365.
 - **[Kundesupport](https://dynamics.microsoft.com/support/)** – Få brancheførende support til dine Dynamics 365-apps.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Administrer programlivscyklussen, og gå i retning af forudsigelige, gentagelige implementeringer af høj kvalitet.
-- **[Implementeringsvejledning til Dynamics 365](https://aka.ms/D365ImplementationGuideFlip)** – Implementeringsvejledning til Dynamics 365 dokumenterer timetestede Success by Design-principper og indeholder en vejledning til arkitekter, build, test og udrulning af Dynamics 365-løsninger.
 
 ## <a name="definitions"></a>Definitioner
 
@@ -428,11 +427,7 @@ Serviceniveauaftalen (SLA) gælder for Microsofts onlinetjenester. Du kan finde 
 
 ### <a name="service-update"></a>Tjenesteopdatering
 
-Microsoft Finance and Operations-tjenestemiljøer på ensartet basis via serviceopdateringer. Kunder opretter deres egen serviceopdateringskalender ud fra deres forretningsbehov. Du kan finde flere oplysninger under [One Version-tjenesteopdateringer](../../dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
-
-Den struktur, der systematisk leder en implementering gennem en række vurderinger på kritiske stadier for at sikre optimal arkitektur, sikkerhed, ydeevne og brugeroplevelse for en Dynamics 365-løsning.
+Microsofts Finance and Operations-tjenestemiljøer på ensartet basis via serviceopdateringer. Kunder opretter deres egen serviceopdateringskalender ud fra deres forretningsbehov. Du kan finde flere oplysninger under [One Version-tjenesteopdateringer](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="user"></a>Bruger
 

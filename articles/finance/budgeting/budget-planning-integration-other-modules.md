@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7456d0c6a9114fae71aff7b4070d86090e2c7c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d94e95c921d8237d8f69f793dbf48f1f40632964
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441684"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210331"
 ---
 # <a name="budget-planning-integration-with-other-modules"></a>Integration af budgetplanlægning med andre moduler
 
@@ -147,3 +146,6 @@ Yderligere rapporter, der er tilgængelige, omfatter rapporten **Budgetpositione
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

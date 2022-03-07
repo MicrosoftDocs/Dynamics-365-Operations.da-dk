@@ -2,11 +2,9 @@
 title: Få vist og eksportere feltbeskrivelser
 description: I denne artikel beskrives, hvordan du får vist feltbeskrivelser, og hvordan du bruger siden Felt beskrivelser til at eksportere beskrivelser.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39dd9a86ffb04d18f61c75fb2c9634e441dc823b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797892"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069267"
 ---
 # <a name="view-and-export-field-descriptions"></a>Få vist og eksportere feltbeskrivelser
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I denne artikel beskrives, hvordan du får vist feltbeskrivelser, og hvordan du bruger siden Felt beskrivelser til at eksportere beskrivelser.
 
@@ -45,7 +46,7 @@ Du kan se feltbeskrivelser ved at holde musen over et felt. Hvis ingen beskrivel
 
 I følgende illustration ses den feltbeskrivelse, der vises, når du peger på feltet **Lås varer under optælling**.
 
-[![Eksempel på feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
+[![Eksempel på feltbeskrivelse.](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruge siden Feltbeskrivelser til at få vist og eksportere hjælp
 
@@ -107,3 +108,6 @@ Du kan finde oplysninger om de forskellige måder, du kan finde sider på, i afs
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

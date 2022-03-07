@@ -2,35 +2,30 @@
 title: Aktivere og bruge deling på tværs af kanaler
 description: Dette emne beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4411209"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742410"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruge deling på tværs af kanaler
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
 
 Med deling på tværs af kanaler kan forhandlere genbruge og dele indhold mellem flere forskellige kanaler af et websted. Denne egenskab er nyttig, når der er et kompatibelt basissprog for webstedskanaler, eller når der er mange forskellige indholdsobjekter til fælles.
 
@@ -53,15 +48,15 @@ Udfør følgende trin for at aktivere deling af på tværs af kanaler i Commerce
 1. Gå til **Webstedsindstillinger \> Funktioner**.
 1. Angiv indstillingen for funktionen **På tværs af kanal** til **Aktiveret**.
 
-    ![Indstillingen på tværs af kanaler er indstillet til aktiveret i Commerce -webstedsgenerator](./media/enabling-cross-channel-sharing.png)
+    ![Indstillingen på tværs af kanaler er indstillet til aktiveret i Commerce-webstedsgenerator.](./media/enabling-cross-channel-sharing.png)
 
 Når du har aktiveret deling på tværs af kanaler, vises oplysninger om tværkanal i afsnittet **Kanaler** i **Webstedsindstillinger \> Funktioner** som eksemplet i følgende illustration viser.
 
-![Kanaloplysninger, der er synlige, efter at deling på tværs af kanaler er aktiveret](./media/channels-cross-channel.png)
+![Kanaloplysninger, der er synlige, efter at deling på tværs af kanaler er aktiveret.](./media/channels-cross-channel.png)
 
 Når du har aktiveret deling via flere kanaler, vil feltet **Kanal** i øverste højre hjørne af Commerce-webstedsgenerator medtage en **Onlinebutik på tværs af kanaler**, som du kan bruge til at administrere krydskanalindhold som vist i følgende illustration.
 
-![Indstillingen Onlinebutik på tværs af kanaler i feltet Kanaler, efter at deling på tværs af kanaler er aktiveret](./media/cross-channel-dropdown.png)
+![Indstillingen Onlinebutik på tværs af kanaler i feltet Kanaler, efter at deling på tværs af kanaler er aktiveret.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Oprette og bruge indhold på tværs af kanaler
 
@@ -137,3 +132,6 @@ Hvis du nu bruger kanalens grundlæggende URL-adresse og går til URL-adressen f
 [Dokumenttilstande og -livscyklus](document-states-overview.md)
 
 [Arbejde med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

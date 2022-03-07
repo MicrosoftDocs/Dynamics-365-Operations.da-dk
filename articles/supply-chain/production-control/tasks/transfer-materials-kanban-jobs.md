@@ -1,7 +1,7 @@
 ---
 title: Overføre materialer med kanban-job
 description: Denne fremgangsmåde fokuserer på at udtrække et kanban-job for at overføre materialer.
-author: johanhoffmann
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11771bbedc9fe4bdfaaa074c449cd329ce1a1d8f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1d4e6d8bbdb50394ef575e1088dd238eb39170124854edb878f6dccb6c9e07d4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771341"
 ---
 # <a name="transfer-materials-with-kanban-jobs"></a>Overføre materialer med kanban-job
 

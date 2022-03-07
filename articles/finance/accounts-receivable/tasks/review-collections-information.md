@@ -2,26 +2,23 @@
 title: Gennemse oplysninger om rykkere
 description: Dette emne beskriver, hvordan du gennemgår oplysninger om rykkere samt forskellige konfigurationsindstillinger og rykkertransaktioner.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59fcaef39460761dbe68273aecb5cbff8850ef031d43393277a17d07dd92db3b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778380"
 ---
 # <a name="review-collections-information"></a>Gennemse oplysninger om rykkere
 
@@ -143,3 +140,6 @@ Dette emne beskriver, hvordan du gennemgår oplysninger om rykkere samt forskell
 5. Vælg **Vis liste**.
 - Vælg en debitorkonto, eller acceptér standardposten. Som standard er det den valgte debitorkonto på listesiden eller i den form, du åbnede denne form fra. Hvis du åbnede formen fra en listeside, er debitorerne på listen de debitorer, der er med i den rykkerpulje, der bruges på listesiden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

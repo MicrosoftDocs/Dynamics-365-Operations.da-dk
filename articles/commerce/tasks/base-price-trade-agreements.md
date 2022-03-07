@@ -2,27 +2,24 @@
 title: " Basispris- og samhandelsaftaler"
 description: Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsaftaler.
 author: josaw1
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: df4d0042e51524c1d50568e969b59923a7ba4a65
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411140"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789798"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris- og samhandelsaftaler
 
@@ -70,3 +67,6 @@ Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsafta
 38. Klik på Sælg i **handlingsruden**.
 39. Klik på **Salgspris**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

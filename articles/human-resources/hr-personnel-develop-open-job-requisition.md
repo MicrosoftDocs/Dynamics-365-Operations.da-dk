@@ -1,68 +1,69 @@
 ---
-title: Udarbejd og åbn jobansættelse
-description: Rekrutteringsprojekter hjælper dig med at administrere rekrutteringsprocessen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/29/2018
+title: Oprette og åbne jobansættelse
+description: Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3207d61536422255b574fd126f16075fcddc2c93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417742"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731555"
 ---
-# <a name="develop-and-open-job-requisition"></a>Udarbejd og åbn jobansættelse
+# <a name="create-and-open-job-requisition"></a>Oprette og åbne jobansættelse
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+Rekrutteringsprojekter hjælper dig med rekrutteringsprocessen. Når du har oprettet et rekrutteringsprojekt, kan du udføre følgende opgaver:
 
-Rekrutteringsprojekter hjælper dig med at administrere rekrutteringsprocessen. For de enkelte rekrutteringsprojekter kan du angive oplysninger, f.eks. det job, du rekrutterer til, navnet på rekrutteringsmedarbejderen, status for projektet og den afdeling, som jobbet findes i. Når du har oprettet et rekrutteringsprojekt, kan du skrive en jobannonce for projektet, publicere annoncen på Medarbejderselvbetjeningssider, knytte jobansøgninger til projektet og spore aktiviteter i det pågældende projekt. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du starter proceduren ved at gå til Personale > Rekruttering > Rekrutteringsprojekter > Rekrutteringsprojekter
+- Skriv en jobannonce til projektet.
+- Publicer annoncen på Employee Self Service-sider.
+- Knyt jobansøgninger til projektet.
+- Spor aktiviteter for det pågældende projekt. 
 
-1. Klik på Ny.
-2. Skriv en værdi i feltet Rekrutteringsprojekt.
-3. Skriv en værdi i feltet Beskrivelse.
-4. Klik på rullelisten i feltet Rekrutteringsmedarbejder for at åbne opslaget.
-5. Find og vælg den ønskede post på listen.
-6. Klik op linket i den valgte række på listen.
-7. Klik på Vælg.
-8. Klik på rullelisten i feltet Afdeling for at åbne opslaget.
-9. Klik op linket i den valgte række på listen.
-10. Klik på rullelisten i feltet Job for at åbne opslaget.
-11. Find og vælg den ønskede post på listen.
-12. Klik op linket i den valgte række på listen.
-13. Angiv et tal i feltet Antal ledige stillinger.
-14. Klik på rullelisten i feltet Ansvarlig for ansættelse for at åbne opslaget.
-15. Find og vælg den ønskede post på listen.
-16. Klik op linket i den valgte række på listen.
-17. Klik på Vælg.
-18. Angiv en dato i feltet Ansøgningsfrist.
-19. Klik på Medier.
-    * Rekrutteringsprojekter omfatter mulighed for at angive nyhedsmedier til at annoncere ledige stillinger.  
-20. Klik på Ny.
-21. Klik på rullelisten i feltet Medier for at åbne opslaget.
-22. Klik op linket i den valgte række på listen.
-23. Angiv en dato i feltet Startdato.
-24. Indtast en dato i feltet Slutdato.
-25. Klik på Gem.
-26. Luk siden.
-27. Klik på jobannoncer.
-28. Klik på Gem.
-29. Luk siden.
-30. Markere eller fjerne markeringen af afkrydsningsfeltet Vis på medarbejderselvbetjening.
-    * Markér afkrydsningsfeltet Vis på medarbejderselvbetjening for at gøre rekrutteringsprojektet synligt for medarbejdere på deres Medarbejderselvbetjeningssider.  
-31. Klik på Status på rekrutteringsprojekt.
-32. Klik på Start.
-    * Status Påbegyndt betyder, at projektet er klar til at modtage ansøgninger.  
-33. Klik på OK.
+1. Gå til **Human resources > Rekruttering > Rekrutteringsprojekter > Rekrutteringsprojekter**.
+2. Vælg **Ny**.
+3. Indtast en værdi i feltet **Rekrutteringsprojekt**.
+4. Indtast en værdi i feltet **Beskrivelse**.
+5. Klik på rullelistens knap i feltet **Rekrutteringsmedarbejder** for at åbne opslaget.
+6. Find og vælg den ønskede post på listen.
+7. Vælg linket i den valgte række på listen.
+8. Vælg **Vælg**.
+9. Vælg rullemenuens knap i feltet **Afdeling** for at åbne opslaget.
+10. Vælg linket i den valgte række på listen.
+11. Klik på rullelistens knap i feltet **Job** for at åbne opslaget.
+12. Find og vælg den ønskede post på listen.
+13. Vælg linket i den valgte række på listen.
+14. Angiv et tal i feltet **Antal ledige stillinger**.
+15. Klik på rullelistens knap i feltet **Ansvarlig for ansættelse** for at åbne opslaget.
+16. Find og vælg den ønskede post på listen.
+17. Vælg linket i den valgte række på listen.
+18. Vælg **Vælg**.
+19. Angiv en dato i feltet **Ansøgningsfrist**.
+20. Vælg **Medie**. Rekrutteringsprojekter omfatter mulighed for at angive nyhedsmedier til at annoncere ledige stillinger.  
+21. Vælg **Ny**.
+22. Klik på rullelistens knap i feltet **Medie** for at åbne opslaget.
+23. Vælg linket i den valgte række på listen.
+24. Angiv en dato i feltet **Startdato**.
+25. Indtast en dato i feltet **Slutdato**.
+26. Vælg **Gem**.
+27. Luk siden.
+28. Vælg **Jobannoncer**.
+29. Vælg **Gem**.
+30. Luk siden.
+31. Markér eller fjern markeringen af afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Markér afkrydsningsfeltet **Vis på medarbejderselvbetjening**. Dette valg gør rekrutteringsprojektet synligt for medarbejderne på deres side **Medarbejderselvbetjening**.
+32. Klik på **Status på rekrutteringsprojekt**..
+33. Vælg **Start**. Status **Påbegyndt** betyder, at projektet er klar til at modtage ansøgninger.  
+34. Vælg **OK**.
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

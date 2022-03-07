@@ -2,11 +2,9 @@
 title: Bogføre en projektfaktura med et indbetalingskort
 description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate, ProjInvoiceTable, ProjProjectsListPage, ProjTableCreate, ProjGroupLookUp, ProjTable,  ProjTransOnAcc, ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0d07f008f15e7e4bb51871eee4658e7d2c49f8c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3f10aa070c83c847fcf1c594f30883e221381894666d8794c489f5d0fd138439
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769676"
 ---
 # <a name="post-a-project-invoice-with-a-payment-slip"></a>Bogføre en projektfaktura med et indbetalingskort
 
@@ -96,3 +94,6 @@ Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.
 56. Klik på OK.
 57. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

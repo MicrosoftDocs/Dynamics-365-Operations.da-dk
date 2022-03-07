@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6ccd60082b65fdbd47fef4a67ba269d7d7afc04679647d3eb8d2a5e9c21a19b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad7ddf8a17640471a2344c45eef76f682d29ef2b
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762614"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020811"
 ---
 # <a name="retail-store-doesnt-appear-in-the-list-of-stores-to-pick-up-from"></a>Retail-butik vises ikke på listen over butikker, der kan vælges
 

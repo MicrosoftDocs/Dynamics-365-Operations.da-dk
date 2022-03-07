@@ -1,12 +1,10 @@
 ---
-title: Uploade billeder
-description: Dette emne indeholder en beskrivelse af, hvordan du uploader billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+title: Overføre billeder
+description: I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963004"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891516"
 ---
-# <a name="upload-images"></a>Uploade billeder
+# <a name="upload-images"></a>Overføre billeder
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du uploader billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
+I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 I Commerce-webstedsgeneratorens mediebibliotek kan du uploade billeder enkeltvist eller masseupload ved hjælp af mapper. Du bør altid uploade billedet med den højeste opløsning og kvalitet, da funktionen til tilpasning af billedstørrelsen optimerer automatisk billedet for forskellige billeder og pausepunkterne.
 
@@ -45,7 +41,8 @@ Når du uploader et billede, kan du angive følgende oplysninger.
 - **Publicer aktiver efter upload**: Når dette afkrydsningsfelt er markeret, udgives billedet eller billederne straks efter upload.
 
 > [!NOTE]
-> Billedaktiver med en tildelt kategori mærkes også automatisk med kategorien som et nøgleord for at hjælpe med at søge efter aktiver af en bestemt kategori.
+> - Billedaktiver med en tildelt kategori mærkes også automatisk med kategorien som et nøgleord for at hjælpe med at søge efter aktiver af en bestemt kategori.
+> - På sider med produktdetaljer genereres **Alt-tekst** dynamisk ved hjælp af produktnavnet, så ændring af **Alt-tekst** til et produktbillede har ingen indflydelse på det gengivne billede.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Navngivningskonventioner for omni-kanalbilleder 
 
@@ -56,9 +53,17 @@ Standardnavngivningskonventionen varierer, afhængigt af kategorien:
 - Kategoribilleder skal navngives "**/Categories/\{CategoryName\}.png**"
 - Kundebilleder skal navngives "**/Customers/\{CustomerNumber\}.jpg**"
 - Medarbejderbilleder skal navngives "**/Workers/\{WorkerNumber\}.jpg**"
-- Produktbilleder skal navngives "**/Products/\{ProductNumber\}_000_001.png**"
+- Produktbilleder skal navngives "**/Produkter/\{Produktnummer\}\_000_001.png**"
     - 001 er rækkefølgen af billedet, og det kan være 001, 002, 003, 004 eller 005
-- Produktvariantbilleder skal navngives "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Produktvariantbilleder skal navngives "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - For eksempel: 93039 \^ &nbsp;\^ 2 \^ Sort \^\_000_001.png
+- Produktvariantbilleder med konfigurationsdimension skal navngives "**/Produkter/\{Produktnummer\} \^ \{Konfiguration\}\_000_001.png**"
+    - For eksempel: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> Hvis dimensionsværdien er tom for produktvariantbilleder, skal der være to blanktegn mellem cirkumflekserne i filnavnet.
+
+I eksemplerne ovenfor bruges standardkonfigurationen. Separatortegnet og dimensionerne kan konfigureres, og det nøjagtige navn, der skal bruges, kan variere mellem installationer. En metode til at identificere den nøjagtige navngivningskonvention er at bruge udviklerkonsollen i browseren til at kontrollere anmodninger om produktvariantbilleder, mens produktdimensionerne ændres på butikkens produktdetaljeside (PDP).
 
 ## <a name="upload-an-image"></a>Upload et billede
 
@@ -96,3 +101,6 @@ Følg disse trin for at masseuploade en mappe med billeder i webstedsgenerator.
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

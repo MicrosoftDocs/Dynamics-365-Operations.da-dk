@@ -1,31 +1,30 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (13. april 2020)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 13. april 2020.
-author: Darinkramer
-manager: AnnBe
-ms.date: 4/13/2020
+author: andreabichsel
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 82b67a5d0c9de37e1d989e2a55d879a94b4f2ea3161541e2a197e2d602696c74
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782042"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (13. april 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -43,9 +42,9 @@ Med denne ændring er feltet **Afrundingspræcision** tilgængeligt, når du har
 
 Du kan nu redigere orlovstilmeldings slutdatoen, uden at fejlen "Udgangspunktet for feltet periodisering af felter skal udfyldes" vises.
 
-## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>Ansættelsesenhed synkroniseres ikke med Common Data Service (430834)
+## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>Ansættelsesenhed synkroniseres ikke med Dataverse (430834)
 
-Denne ændring retter et problem, hvor ansættelsesdataene ikke blev synkroniseret til Common Data Service, efter at der er tilføjet økonomiske dimensioner. 
+Denne ændring retter et problem, hvor ansættelsesdataene ikke blev synkroniseret til Dataverse, efter at der er tilføjet økonomiske dimensioner. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Fjern multiovervågning for enheden Arbejdskalenderens tidsinterval (431775)
 
@@ -85,7 +84,7 @@ Hvis visning af dokumenter, der er gemt i SharePoint, ikke fungerer, kan du prø
 
 1. Kontroller, at administratorbrugerkontoen har en mail tilknyttet brugerposten. Du kan få vist disse oplysninger på siden **Bruger**. Hvis e-mail ikke er konfigureret, skal du tilføje e-mailadressen og udbyderen med OData Excel-tilføjelsesprogrammet. E-mailadressen findes som standard ikke i Excel-designet. Du skal redigere Excel-designet, tilføje alle felter, anvende og opdatere. Når du har fuldført disse trin, kan du opdatere administratorkontoen.
 
-2. Når administratorkontoen har en tilknyttet mailkonto, skal du logge på Personale med administrator-legitimationsoplysninger.
+2. Når administratorkontoen har en tilknyttet mailkonto, skal du logge på Human Resources med administrator-legitimationsoplysninger.
 
 3. Åbn en vedhæftet fil i SharePoint for at starte dokumentvisningen.
 
@@ -94,6 +93,8 @@ Hvis visning af dokumenter, der er gemt i SharePoint, ikke fungerer, kan du prø
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2019 frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

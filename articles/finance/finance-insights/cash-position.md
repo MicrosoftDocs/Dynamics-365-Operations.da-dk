@@ -1,31 +1,28 @@
 ---
-title: Likviditet (prøveversion)
+title: Likviditet
 description: Dette emne beskriver, hvordan funktionen likviditetsbudgettering forudsiger en organisations kontante stilling for bestemte tidspunkter. Den beskriver også de indstillinger, der er tilgængelige for visning af budgetter i forskellige perioder.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645884"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945783"
 ---
-# <a name="cash-position-preview"></a>Likviditet (prøveversion)
+# <a name="cash-position"></a>Likviditet
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -34,7 +31,7 @@ Likviditeten er den projektion af likviditeten, der er prognose for den nærmest
 
 Når systemet forudsiger debitorbetalinger, bruger det betalingsforudsigelserne fra funktionen til forudsigelse af debitorbetaling. Uden betalingsforudsigelser bruges den gennemsnitlige tid, der kræves for at konvertere en debitorfaktura til en betaling for hver debitor, til beregning af en betalingsdato. Ved åbne kundeordrer beregner systemet fakturadatoen ved hjælp af det gennemsnitlige antal dage til ordrelinjerne pr. kunde, der skal faktureres. Derefter bruger programmet fakturadatoen som et input til funktionen til betalingsforudsigelse. Funktionaliteten til forudsigelse af debitorbetaling beregner en betalingsdato for hver ordrelinje. 
 
-<*Du skal bruge tekst fra Jarek eller Dave angående, hvordan betalingsforudsigelser konverteres til en dato*> Betalingsdatoen for udestående fakturaer er cirka [*forkalkuleret*] fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsigede filsæts sandsynligheder.
+Betalingsdatoen for udestående fakturaer er estimeret fra betalingsforudsigelser ved at vælge en dato, der svarer til halvtredsindtyvende percentil for den kumulative fordelingsfunktion, der er opnået fra det forudsagte filsæts sandsynligheder.
 
 En lignende fremgangsmåde bruges til at forudsige betalinger til kreditorer. For hver leverandør beregner systemet den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling. Dette antal dage anvendes derefter til at beregne betalingsdatoen. I forbindelse med åbne kreditorordrer beregner systemet fakturadatoen ved at overveje det gennemsnitlige antal dage, der kræves for at konvertere ordrelinjer til en faktura for hver kreditor. Systemet beregner derefter betalingsdatoen ved at anvende den gennemsnitlige tid, der kræves for at konvertere en kreditorfaktura til en betaling for hver kreditor.
 
@@ -49,5 +46,16 @@ Den nederste del af fanen **Likviditet** indeholder oplysninger om stilling, pen
 
 Hvis du vil gemme og redigere likviditeten, skal du oprette et snapshot. Du kan finde flere oplysninger om, hvordan du arbejder med snapshots, under [Snapshots, oversigt](payment-snapshots.md).
 
-#### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
+## <a name="details-of-the-cash-position-capability"></a>Oplysninger om muligheden for likviditet 
+
+Funktionen til likviditet indeholder følgende funktioner. 
+
+- Funktionen til likviditet viser pengestrømmen baseret på eksisterende dokumenter i systemet og indgående og udgående likviditetslinjer, der er importeret fra eksterne systemer.
+- Gør det nemt at integrere pengestrømsdata fra eksterne systemer med Dynamics 365 Finance. Likviditet kan også bruge dataimport-eksportstrukturen. Denne struktur gør det nemt at integrere med Excel OData. Du kan også kombinere data fra flere kilder for at oprette en omfattende likviditetsløsning.
+- Introducerer intelligent kasseposition. Der oprettes en likviditet på baggrund af kundens betalingsmåde for at forudsige, hvornår et firma kan forvente at betale kontanter i deres konti.
+- For debitorordrer og -fakturaer bruges AI-forudsigelsesfunktionaliteten for debitorbetaling til at bestemme den historiske debitorbetalingsadfærd, når en ordre eller faktura betales.
+- I forbindelse med kreditorordrer og -fakturaer bruger vi den gennemsnitlige tid mellem afsendelse og faktura og betaling af en faktura pr. kreditor til at bestemme, hvornår en kreditorordre eller -faktura vil blive betalt, hvilket gør udgående likviditet mere nøjagtig.
+
+Det giver et mere præcist overblik over likviditet baseret på kassererens historiske betalingsadfærd. 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

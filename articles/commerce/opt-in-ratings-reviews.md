@@ -2,12 +2,15 @@
 title: Tilvælge brug af vurderinger og anmeldelser
 description: I dette emne beskrives, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
 author: gvrmohanreddy
-ms.date: 02/16/2020
+manager: annbe
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411088"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Tilvælge brug af vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
+
+## <a name="overview"></a>Oversigt
 
 Vurderings- og anmeldelsesløsningen er en omnikanalløsning, du kan stille til rådighed i Dynamics 365 Commerce ved hjælp af Microsoft Dynamics Lifecycle Services (LCS). LCS er en administrationsportal, som detailhandlere kan bruger til at styre deres miljøer fra klargøring til nedlukning.
 
@@ -39,9 +44,9 @@ Du kan tilvælge at bruge vurderinger og anmeldelser på dit websted ved at føl
 1. Følg trinnene i [Implementere et nyt websted for e-handel](deploy-ecommerce-site.md).
 1. Mens du stadig er i LCS, skal du gå til **Konfiguration af Retail-installation \> Andre indstillinger**.
 1. Vælg **Ja** i indstillingen **Aktivér vurderinger og anmeldelser**.
-1. I den **AAD-sikkerhedsgruppen for redaktør af vurderinger og anmeldelser** skal du angive id'et for den Microsoft Azure Active Directory-sikkerhedsgruppe (Azure AD), der omfatter vurderings- og anmeldelsesredaktørerne.
+1. I den **AAD-sikkerhedsgruppen for redaktør af vurderinger og anmeldelser (sikkerhedsgruppens objekt-id)** skal du angive id'et for den Microsoft Azure Active Directory-sikkerhedsgruppe (Azure AD), der omfatter vurderings- og anmeldelsesredaktørerne.
 
-    ![Tilvælge brug af vurderinger og anmeldelser.](media/LCS_RnR_Preference_2.png)
+    ![Tilvælge brug af vurderinger og anmeldelser](media/LCS_RnR_Preference.png)
 
 1. Fuldfør processen til e-handelsinitialisering.
 
@@ -58,13 +63,4 @@ Du kan tilvælge at bruge vurderinger og anmeldelser på dit websted ved at føl
 
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
 
-[Aktiver manuel udgivelse af vurderinger og gennemsyn af en redaktør](manual-publish-rating-reviews.md)
 
-[Importere og eksportere bedømmelser og anmeldelser](import-export-reviews.md)
-
-[Konfigurere service-til-service-godkendelse](service-to-service-auth.md)
-
-[Ofte stillede spørgsmål til Vurderinger og anmeldelser](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

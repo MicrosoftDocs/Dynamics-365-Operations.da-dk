@@ -1,12 +1,10 @@
 ---
 title: Oprette vedligeholdelsesanmodninger
 description: Dette emne forklarer, hvordan du opretter en vedligeholdelsesanmodning i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714974"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
@@ -32,7 +30,7 @@ ms.locfileid: "5019172"
 
 Vedligeholdelsesanmodninger kan bruges, hvis vedligeholdelsesarbejdere eller produktionsmedarbejdere opdager, at udstyr kræver reparation, men reparationsjobbet ikke kan udføres med det samme.
 
-**Eksempel:** Mens en vedligeholdelsesarbejder foretager en reparation, opdager hun, at et andet aktiv på samme sted skal serviceres. Vedligeholdelsesarbejderen har dog ikke tid eller de nødvendige reservedele til at udføre reparationsjobbet. Derfor opretter hun en vedligeholdelsesanmodning på aktivet og indtaster en kort beskrivelse af problemet.
+**Eksempel:** Mens en vedligeholdelsesarbejder foretager en reparation, opdager vedkommende, at et andet aktiv på samme sted skal serviceres. Vedligeholdelsesarbejderen har dog ikke tid eller de nødvendige reservedele til at udføre reparationsjobbet. Derfor opretter arbejderen en vedligeholdelsesanmodning på aktivet og indtaster en kort beskrivelse af problemet.
 
 Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninger** i højre side af siden **Alle aktiver** eller **Aktive aktiver** (**Styring af aktiver** \> **Fælles** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**) viser de aktive vedligeholdelsesanmodninger, der er knyttet til det valgte aktiv.
 
@@ -54,7 +52,7 @@ Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninge
 11. Udfyld eventuelt feltet **Noter** med yderligere bemærkninger.
 12. Vælg **OK**.
 
-![Opret vedligeholdelsesanmodning](media/03-manage-maintenance-requests.png)
+![Opret vedligeholdelsesanmodning.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterfølgende behandling af vedligeholdelsesanmodninger
 
@@ -69,7 +67,10 @@ I detaljevisningen kan du opdatere forskellige oplysninger. Her er nogle eksempl
 - Vælg en vedligeholdelsesjobtype og, hvis disse oplysninger er relevante, en relateret vedligeholdelsesjobvariant og en jobhandel.
 - Angiv geografiske koordinater i felterne **Breddegrad** og **Længdegrad**. Alle koordinater, der føjes til en vedligeholdelsesanmodning, overføres automatisk til en relateret arbejdsordre. 
 
-![Opdatere vedligeholdelsesanmodning](media/04-manage-maintenance-requests.png)
+![Opdatere vedligeholdelsesanmodning.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du vælger et aktiv, når du opretter en vedligeholdelsesanmodning, kan du føje én fejl til aktivet. Når vedligeholdelsesanmodningen er blevet oprettet, kan du tilføje flere fejl efter behov. Hvis du vil tilføje fejl, skal du vælge **Aktivfejl** på siden **Alle vedligeholdelsesanmodninger**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

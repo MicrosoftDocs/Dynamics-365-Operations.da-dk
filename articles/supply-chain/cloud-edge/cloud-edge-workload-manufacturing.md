@@ -2,11 +2,9 @@
 title: Produktionsarbejdsbyrder for sky- og kantskalaenheder
 description: Dette emne beskriver, hvordan produktionsarbejdsbyrder virker sammen med sky- og kantskalaenheder.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,22 +16,22 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967754"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352730"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Produktionsarbejdsbyrder for sky- og kantskalaenheder
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med produktionsudførelse for sky- og edge-skaleringsenheder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Arbejdsbyrden for produktionsudførelse er tilgængelig i forhåndsversion på nuværende tidspunkt.
 > Nogle forretningsfunktioner understøttes ikke fuldt ud i den offentlige prøveversion, når der anvendes skalaenheder for arbejdsbyrder.
 
-I produktionsudførelse giver sky- og kantskalaenheder følgende funktioner, også selvom der ikke er forbindelse mellem kantenheder og hubben:
+I produktionsudførelse giver skalaenheder følgende egenskaber:
 
 - Maskinoperatører og tilsynsførende kan få adgang til den operationelle produktionsplan.
 - Maskinoperatører kan holde planen opdateret ved at køre diskrete og procesproduktionsjob.
@@ -46,7 +44,7 @@ Dette emne beskriver, hvordan produktionsarbejdsbyrder virker sammen med sky- og
 
 Når følgende illustration vises, er produktions livscyklussen opdelt i tre faser: *Planlæg*, *Udfør* og *Færdiggør*.
 
-[![Produktionsudførelsesfaser, når der bruges et enkelt miljø](media/mes-phases.png "Produktionsudførelsesfaser, når der bruges et enkelt miljø")](media/mes-phases-large.png)
+[! [Produktionsudførelsesfaser, når der bruges et enkelt miljø](media/mes-phases.png "Produktionsudførelsesfaser, når der bruges et enkelt miljø."](media/mes-phases-large.png)
 
 Fasen _Planlæg_ omfatter produktdefinition, planlægning, oprettelse og planlægning af ordrer og frigivelse. Frigivelsestrinnet angiver overgangen fra fasen _Planlæg_ til fasen _Udfør_. Når en produktionsordre frigives, vil produktionsordrejobbene være synlige i produktionen og være klar til udførelse.
 
@@ -56,7 +54,7 @@ Når et produktionsjob er markeret som fuldført, flyttes det fra fasen _Udfør_
 
 Som følgende illustration viser er fasen _Udfør_ opdelt som en separat belastning, når der bruges skalaenheder.
 
-[![Produktionsudførelsesfaser ved brug af skalaenheder](media/mes-phases-workloads.png "Produktionsudførelsesfaser ved brug af skalaenheder")](media/mes-phases-workloads-large.png)
+[![Produktionsudførelsesfaser, når der bruges vægtenheder](media/mes-phases-workloads.png "Produktionsudførelsesfaser, når der bruges vægtenheder."](media/mes-phases-workloads-large.png)
 
 Modellen går nu fra en installation med én forekomst til en model, der er baseret på hubben og skalaenhederne. Faserne _Planlæg_ og _Færdiggør_ kører som baggrundshandlinger på hubben, og arbejdsbyrden for produktionsudførelse kører på skalaenhederne. Data overføres asynkront mellem hubben og skalaenhederne.
 
@@ -73,6 +71,7 @@ Følgende opgaver for produktionsudførelse kan i øjeblikket køres på arbejds
 - Rapportér spild
 - Indirekte aktivitet
 - Pause
+- Færdigmeld og læg på lager (kræver, at du også kører arbejdsbyrden for lagerstedsudførelse på skalaenheden. Se også [Færdigmelde og lægge på lager på en skalaenhed](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbejde med arbejdsbelastninger i produktionsudførelse på hubben
 
@@ -88,7 +87,7 @@ Selvom jobbet normalt køres automatisk, kan du køre det manuelt på et hvilket
 
 Hvis du vil gennemgå registreringsbehandlingsloggen, skal du logge på hubben og gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Behandlingslog for rå registrering**. På siden **Behandlingslog for rå registrering** vises en liste over behandlede rå registreringer og status for hver registrering.
 
-![Siden Behandlingslog for rå registrering](media/mes-processing-log.png "Siden Behandlingslog for rå registrering")
+![Siden Behandlingslog for rå registrering.](media/mes-processing-log.png "Siden Behandlingslog for rå registrering")
 
 Du kan arbejde på enhver registrering på listen ved at markere den og derefter vælge en af følgende knapper i handlingsruden:
 
@@ -109,3 +108,27 @@ Hvis du vil gennemgå historikken for de produktionsjob, der er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobbet Meddelelsesprocessor for produktionshub til skalaenhed
 
 Jobbet _Meddelelsesprocessor for produktionshub til skalaenhed_ behandler data fra hubben til skalaenheden. Dette job startes automatisk, når arbejdsbyrden for produktionsudførelse udrulles. Du kan dog køre den manuelt på et hvilket som helst tidspunkt ved at gå til **Produktionsstyring \> Periodiske opgaver \> BackOffice-styring af arbejdsbyrder \> Meddelelsesprocessor for produktionshub til skalaenhed**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Færdigmelde og lægge på lager på en skalaenhed
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I den aktuelle version understøttes færdigmeldings- og lagringsoperationer (for færdigvarer, samprodukter og biprodukter) af [arbejdsbyrden for lagerstedsudførelse](cloud-edge-workload-warehousing.md) (ikke arbejdsbyrden for produktionsudførelse). Hvis du vil bruge denne funktion, når den er knyttet til en skalaenhed, skal du derfor gøre følgende:
+
+- Installer både arbejdsbyrden for udførelse af lagersteder og arbejdsbyrden for produktionsudførelse på din skalaenhed.
+- Du kan bruge mobilappen Warehouse Management til at færdigmelde og behandle læg på lager-arbejdet. Grænsefladen til produktionsudførelse understøtter i øjeblikket ikke disse processer.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

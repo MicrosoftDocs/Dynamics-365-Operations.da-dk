@@ -1,12 +1,11 @@
 ---
 title: Tilknyt ER-datamodel til markerede datakilder
-description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan tilknytte en datamodel for elektronisk rapportering (ER) til valgte Microsoft Dynamics 365 Finance-datakilder.
+description: I dette emne beskrives, hvordan du kan knytte en ER-datamodel (elektronisk rapportering) til udvalgte Microsoft Dynamics 365 Finance-datakilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b6f5e3b64e7d000feb7fa1ff84edd2e20891bb7
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684301"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570656"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>Tilknyt ER-datamodel til markerede datakilder
 
@@ -146,3 +145,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 5. Vælg den færdige version af den aktuelle konfiguration.
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

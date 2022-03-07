@@ -2,28 +2,25 @@
 title: Serviceobjektrelationer
 description: Du kan oprette serviceobjektrelationer mellem et serviceobjekt og en serviceaftale eller en serviceordre.
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2b1b76dffc2751d51c2a25d831fab512b747c15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1984e4c2d57a03ad27c1f6d417209b806f7d6be6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424317"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835840"
 ---
 # <a name="service-object-relations"></a>Serviceobjektrelationer 
 
@@ -78,3 +75,6 @@ Få adgang til styklistedesigneren ved brug af en serviceobjektrelation
 
 Hvis serviceordrer oprettes automatisk for en serviceaftale, oprettes serviceobjektrelationerne i aftalen også i serviceordrerne.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

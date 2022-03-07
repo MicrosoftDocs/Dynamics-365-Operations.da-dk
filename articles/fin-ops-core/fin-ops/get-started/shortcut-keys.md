@@ -1,8 +1,8 @@
 ---
 title: Tastaturgenveje
-description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finans- og driftsapps.
+description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finance and Operations-apps.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119546"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800187"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finans og drift-apps. 
+Følgende tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finance and Operations-apps.
 
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
@@ -37,11 +35,11 @@ Nogle af genvejene på denne side er *tasteakkorder*, hvilket betyder, at de kr�
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
 
-Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden. Du kan også trykke på Alt+Skift+K for at åbne denne dialogboks (og trykke på Alt+Skift+K en gang til for at se alle aktuelt tilgængelige genveje til siden).    
+Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden.
 
 ## <a name="action-shortcuts"></a>Handlingsgenveje
 
-| Hvis du vil gøre dette                                      | Tryk på                             |
+| Hvis du vil gøre dette                                      | Tryk på                            |
 |-------------------------------------------------|----------------------------------|
 | Åbne handlingssøgning                              | Ctrl+' eller Alt+Q                  |
 | Flytte til standardhandlingsruden                | Alt+M, A eller Ctrl+F6               |
@@ -152,7 +150,6 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
-| Flyt den aktuelle kolonne til næste/forrige placering (med fokus på overskriftsrækken)                                   | Ctrl+Skift+højre pil/Ctrl+Skift+venstre pil |
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
 | Tilpasse størrelsen på den aktuelle kolonne, så den passer til indholdet (med fokus på overskriftsrækken)                                           | A (eller dobbeltklik på kolonnens størrelseshåndtag) |
 
@@ -256,14 +253,10 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Udvide/skjule den animerede pop op-prompt (under afspilning af en opgaveguide)              | Alt + R,C                    |
 | Vise flere/færre oplysninger i den animerede pop op-prompt (under afspilning af en opgaveguide) | Alt + R,M                    |
 
-## <a name="focus-management"></a>Fokusstyring 
-Fokusstyring beskriver, hvordan brugerfokus håndteres i et program. Finans og drift-apps har specielle fokuseringsmåder, der har til formål at optimere brugerproduktiviteten, især i forbindelse med dataindtastningsscenarier. Fokuseringsmåder omfatter følgende:  
-
--  Når en side indlæses, vil det første redigerbare inputkontrolelement på siden være i fokus og kan acceptere brugerinput med det samme. Hvis der ikke er noget redigerbart inputkontrolelement på siden, er reserveindstillingen for første fokusering det første inputkontrolelement på siden efterfulgt af det første fokuserbare kontrolelement på siden.   
--  Når der er valgt en knap, behandles handlingen typisk, og fokusering kan vende tilbage til siden. Når det sker, fokuseres der typisk på det valgte knapkontrolelement. Det gælder i Finans og drift-apps, **undtagen** når knappen findes i handlingsruden eller på en værktøjslinje. I disse tilfælde, når handlingen er fuldført, vender fokus tilbage til det sidste kontrolelement *uden for* handlingsruden (eller værktøjslinjen), der var i fokus, før knappen blev valgt.
-
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

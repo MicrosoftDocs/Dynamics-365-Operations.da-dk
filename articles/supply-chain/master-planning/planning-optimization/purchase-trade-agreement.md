@@ -2,16 +2,13 @@
 title: Varedisponering med handelsaftaler om indkøb
 description: Dette emne beskriver, hvordan planlægningsoptimering kan finde leverandøren og/eller gennemløbstiden for et ordreforslag baseret på den bedste pris eller leveringstid, der er fundet i handelsaftaler om indkøb.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424406"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820412"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Varedisponering med handelsaftaler om indkøb
 
@@ -74,19 +71,22 @@ Når systemet er forberedt som beskrevet i forrige afsnit, skal du følge disse 
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Eksempler på, hvordan planlægningsoptimering finder leverandør og leveringstider
 
-Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstillinger for et frigivet produkt og de tilknyttede handelsaftaler om indkøb påvirker de værdier, der findes for det resulterende indkøbsordreforslag. Værdierne med **fed** skrift i de to kolonner længst til højre er de værdier, der er valgt ved planlægningsoptimering. Værdierne med ***fed og i kursiv*** i de andre kolonner er de indstillinger, der frembragte de resulterende værdier for hver række.
+Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstillinger for et frigivet produkt og de tilknyttede handelsaftaler om indkøb påvirker de værdier, der findes for det resulterende indkøbsordreforslag. Værdierne med **fed** skrift i de to kolonner længst til højre er de værdier, der er valgt ved planlægningsoptimering. Værdierne **_fed og kursiv_** i de andre kolonner er de indstillinger, der frembragte de resulterende værdier for hver række.
 
 | Frigivet produkt: Leverandør | Standardindstillinger for ordre: Leveringstid | Varedisponering: Tilsidesæt leverandør | Varedisponering: Tilsidesæt leveringstid | Handelsaftale: Leverandør | Handelsaftale: Leveringstid | Handelsaftale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | Ingen | Ingen | US003 | 3 | Ingen | **US001** | **1** |
-| US001 | 1 | ***Ja: US002*** | ***Ja: 2*** | US003 | 3 | Ingen | **US002** | **2** |
-| *(Tom)* | 1 | Ingen | Ingen | ***US003*** | ***3*** | Ingen | **US003** | **3** |
-| *(Tom)* | ***1*** | Ingen | Ingen | ***US003*** | 3 | Ja | **US003** | **1** |
-| *(Tom)* | ***1*** | ***Ja: US002*** | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | ***1*** | ***Ja: US002*** | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003*** | ***3*** | Ingen | **US003** | **3** |
-| *(Tom)* | 1 | Ingen | ***Ja: 2*** | ***US003*** | 3 | Ja | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Ingen | Ingen | US003 | 3 | Ingen | **US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Ingen | **US002** | **2** |
+| *(Tom)* | 1 | Ingen | Ingen | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
+| *(Tom)* | ***1** _ | Ingen | Ingen | _*_US003_*_ | 3 | Ja | **US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
+| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
+| *(Tom)* | 1 | Ingen | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | **US003** | **2** |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Købsaftaler](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

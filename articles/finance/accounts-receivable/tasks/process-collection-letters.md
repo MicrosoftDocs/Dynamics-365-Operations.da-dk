@@ -2,26 +2,23 @@
 title: Behandle rykkere
 description: I dette emne vises, hvordan du kan oprette, udskrive og bogføre rykkere.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9355409076886b70ad224c82561cf0cf81066e9b97e1a22ad59ce04be2c90158
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762109"
 ---
 # <a name="process-collection-letters"></a>Behandle rykkere
 
@@ -88,3 +85,6 @@ Gør følgende for at ignorere betalinger og kreditnotaer ved beregning af rykke
 
 1. Gå til **Navigationsrude > Moduler > Kredit > Opsætning > Debitorparametre**, og klik på fanen **Rykkere**. 
 2. Vælg **Ja** for **Ignorere betalinger og kreditnotaer ved beregning af rykkerkoden**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

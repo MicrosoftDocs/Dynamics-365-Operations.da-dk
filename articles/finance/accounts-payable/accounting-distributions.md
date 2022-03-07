@@ -2,28 +2,25 @@
 title: Regnskabsfordelinger
 description: Dette emne indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c17c2e00c8c3b32062f70baf1da76a04dcd5d924
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441715"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820949"
 ---
 # <a name="accounting-distributions"></a>Regnskabsfordelinger
 
@@ -57,3 +54,6 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
 I version 10.0.13 er der tilføjet en funktion, der validerer regnskabsfordelingstabellen for at sikre, at nye felter konfigureres korrekt. Denne funktion kaldes **Aktivér yderligere validering af data for dokumenter ved hjælp af kildedokumentets regnskabsstruktur**. Hvis du vil bruge denne funktion, skal du aktivere den ved hjælp af arbejdsområdet **Funktionsstyring**. Hvis du vil aktivere funktionen, skal du søge efter funktionsnavnet i feltet **Søg** på siden **Funktionsstyring** og derefter vælge **Aktivér nu**.
 
 Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

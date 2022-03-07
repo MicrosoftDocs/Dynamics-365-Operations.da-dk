@@ -2,15 +2,12 @@
 title: Afsende ordrer fra en anden butik ved hjælp af sendefunktionen Gebyr
 description: Dette emne beskriver sendefunktionen Gebyr.
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 0bbebcc7b2ab89bf2f5db7294acfca1d8a5ad96e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c9c435c9ef8f692551a216d72a76f8a71b4ce6dc03dc6b13c23364a0aa81662
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746693"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Afsende ordrer fra en anden butik ved hjælp af sendefunktionen Gebyr
 
@@ -42,3 +39,6 @@ Sendefunktionen Gebyr bruger følgende POS-handlinger: afsendelse af alle produk
 Muligheden for at vælge "levér til"-adresser forbliver uændret.
 
 De forsendelsesmetoder, der kan bruges til at opfylde ordrelinjen er baseret på konfigurationen af gyldige leveringsmåder for produkter og adresser. Da reglerne om gyldige leveringsmåder kun vedligeholdes i Headquarters (Hovedkontoret), foretager POS-klienten et realtidsopkald for at hente de gyldige leveringsmåder for en forsendelseslinje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Kortmodul
 description: Dette emne omhandler kortmoduler og beskriver, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747387"
 ---
 # <a name="map-module"></a>Kortmodul
 
@@ -32,9 +29,7 @@ ms.locfileid: "4665414"
 
 Dette emne omhandler kortmoduler og beskriver, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
-
-Et kortmodul viser butikkernes placering på et interaktivt kort, der gengives ved hjælp af [Webkontrolelementet Bing Kort V8](https://docs.microsoft.com/bingmaps/v8-web-control/). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Kortmoduler indeholder forskellige visninger, f.eks. veje, fra luften og gadeniveau, som brugerne kan vælge for at se kortplaceringer. De giver også mulighed for interaktioner som f.eks. zoom og udnyttelse af brugerens placering.
+Et kortmodul viser butikkernes placering på et interaktivt kort, der gengives ved hjælp af [Webkontrolelementet Bing Kort V8](/bingmaps/v8-web-control/). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Kortmoduler indeholder forskellige visninger, f.eks. veje, fra luften og gadeniveau, som brugerne kan vælge for at se kortplaceringer. De giver også mulighed for interaktioner som f.eks. zoom og udnyttelse af brugerens placering.
 
 Et kortmodul fungerer sammen med modulet for butiksvælger for at bestemme de geografiske placeringer af butikker, der skal gengives på et kort. Butiksvælger og kortmoduler fungerer interaktivt, når en bruger vælger en butik i et af disse moduler på en webside. Kortmoduler kan udvides til andre scenarier udover interaktion med butiksvælgermoduler. Modultilpasning er dog påkrævet.
 
@@ -43,11 +38,11 @@ Et kortmodul fungerer sammen med modulet for butiksvælger for at bestemme de ge
 
 Det følgende billede viser et eksempel på et kortmodul, der bruges på en side med butiksadresser.
 
-![Eksempel på et butiksvælgermodul](./media/ecommerce-Storelocator.PNG)
+![Eksempel på et butiksvælgermodul.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaber
 
-| Egenskabsbetegnelse             | Værdi                 | Beskrivende tekst |
+| Egenskabsbetegnelse             | Værdi                 | Betegnelse |
 |---------------------------|-----------------------|-------------|
 | Overskrift | Tekst | Overskrift for modulet. |
 | Indstillinger for opslagsnål: standardikon | Billede | Det symbolbillede for opslagsnål, der bruges til butikker, som vises på et kort. |
@@ -81,4 +76,7 @@ Du kan finde detaljerede oplysninger om, hvordan du konfigurerer et kortmodul p�
 
 [Administrere Bing Kort for din organisation](./dev-itpro/manage-bing-maps.md)
 
-[Webkontrolelementet Bing Kort V8](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Webkontrolelementet Bing Kort V8](/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

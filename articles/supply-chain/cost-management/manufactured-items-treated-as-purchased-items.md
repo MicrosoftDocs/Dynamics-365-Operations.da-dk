@@ -2,11 +2,9 @@
 title: Konfigurere produkter, som kan være produceret eller indkøbt
 description: 'Produkterne kan købes på forskellige måder: De kan produceres (fremstilles) eller fremskaffes (købes). Denne artikel beskriver nogle typiske punkter, du skal overveje, når du konfigurerer produkter til understøttelse af multiforsyning.'
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7acf4952c1dbb33f4ec615d1ecb9d508a9e7b980
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e5abbbf5ffa60329a6044cbbec422f958c3fed2b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967502"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832316"
 ---
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Konfigurere produkter, som kan være produceret eller indkøbt
 
@@ -41,3 +39,6 @@ Du kan forhindre beregningen i at finde sted ved at angive flaget **Stop udfoldn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

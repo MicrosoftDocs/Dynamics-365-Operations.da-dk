@@ -2,29 +2,25 @@
 title: Oversigt over e-handelswebsted
 description: Dette emne giver et overblik over understøttelsen af e-handelswebsteder i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512911"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984563"
 ---
 # <a name="e-commerce-site-overview"></a>Oversigt over e-handelswebsted
 
@@ -40,37 +36,37 @@ I Dynamics 365 Commerce bruger du en onlinebutikskanal til at etablere produkter
 
 Der skal kun oprettes én onlinebutikskanal, før du kan komme i gang med Dynamics 365 Commerce. Et enkelt e-handelswebsted kan dog levere onlineoplevelsen for flere onlinebutikker. Hvis eksempelvis flere onlinebutikker er konfigureret til at understøtte forskellige geografiske områder, kan et enkelt sæt e-handelssider bruges til at give de unikke oplevelser, der er defineret af hver butik. Du finder flere oplysninger om, hvordan du konfigurerer et websted til at understøtte flere onlinebutikker under [Knyt et onlinewebsted til en kanal](associate-site-online-store.md).
 
-Efter en onlinebutik er sat op, kan den være tilknyttet det Dynamics 365 Commerce-websted, der skal anvendes som din onlinebutiksfacade. Du finder flere oplysninger om onlinebutikker, og hvordan du konfigurerer dem, under [Konfiguration af onlinebutikker](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Efter en onlinebutik er sat op, kan den være tilknyttet det Dynamics 365 Commerce-websted, der skal anvendes som din onlinebutiksfacade. Du finder flere oplysninger om onlinebutikker, og hvordan du konfigurerer dem, under [Konfiguration af onlinebutikker](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Implementere en ny e-handelslejer
 
-Under initialiseringen af et e-handelswebsted bliver du bedt om at angive et domænenavn. Du kan finde flere oplysninger om domæner i Commerce under [Konfigurere dit domænenavn](configure-your-domain-name.md) og [Domæner i Dynamics 365 Commerce](domains-commerce.md). Hvis du vil implementere en ny e-handelslejer ved hjælp af [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), skal du følge trinnene i [Implementere en ny e-handelslejer](deploy-ecommerce-site.md). Når din e-handelslejer er konfigureret i LCS, bliver der angivet et link til Commerce-webstedsgeneratoren. Du kan derefter bruge Commerce-webstedsgeneratoren til at initialisere og konfigurere dine e-handelswebsteder.
+Under initialiseringen af et e-handelswebsted bliver du bedt om at angive et domænenavn. Du kan finde flere oplysninger om domæner i Commerce under [Konfigurere dit domænenavn](configure-your-domain-name.md) og [Domæner i Dynamics 365 Commerce](domains-commerce.md). Hvis du vil implementere en ny e-handelslejer ved hjælp af [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), skal du følge trinnene i [Implementere en ny e-handelslejer](deploy-ecommerce-site.md). Når din e-handelslejer er konfigureret i LCS, bliver der angivet et link til Commerce-webstedsgeneratoren. Du kan derefter bruge Commerce-webstedsgeneratoren til at initialisere og konfigurere dine e-handelswebsteder.
 
 ## <a name="initialize-your-e-commerce-site"></a>Initialisere dit e-handelswebsted
 
 Når du starter Commerce-webstedsgeneratoren fra LCS, vises siden **Websteder**. Denne side indeholder to forudkonfigurerede websteder, **standard** og **fabrikam**, som vist i eksemplet i følgende illustration.
 
-![Siden Websteder i Commerce-webstedsgeneratoren](media/e-commerce-site-01.png)
+![Siden Websteder i Commerce-webstedsgeneratoren.](media/e-commerce-site-01.png)
 
 Når du vælger et af disse websteder, bliver du bedt om at vælge et domænenavn, en standard-onlinebutikskanal, et understøttet sprog for den valgte kanal og en sti. Hvis der kun bruges én kanal, kan du lade den pågældende sti være tom. Flere onlinebutikskanaler eller -sprog kan konfigureres senere i Commerce-webstedsgeneratoren. Der kræves en entydig sti til hver ekstra kanal eller sprog. Du har f.eks. to onlinekanaler, der er knyttet til et enkelt websted, og domænenavnet for webstedet er `www.fabrikam.com`. I dette tilfælde kan stien for en kanal være standardværdien, der ikke har en sti (`https://www.fabrikam.com`), og den anden kanal kan være indstillet til en ny sti, f.eks. **site2**, som vil have URL-adressen `https://www.fabrikam.com/site2`. I følgende illustration vises et eksempel på en dialogboks til initialisering af webstedet i Commerce-webstedsgeneratoren.
 
-![Dialogboks til initialisering af websted i Commerce-webstedsgenerator](media/e-commerce-site-02.png)
+![Dialogboks til initialisering af websted i Commerce-webstedsgenerator.](media/e-commerce-site-02.png)
 
 Siden **Websteder** indeholder også knappen **Nyt websted**. Den dialogboks, der vises, når du vælger denne knap, minder om dialogboksen til webstedsinitialisering, men den bruges til at oprette et nyt websted. Nye websteder er tomme. De indeholder ikke de samme standardskabeloner, fragmenter, sider og billeder, der leveres på **standard**- og **fabrikam**-webstederne. Men du kan åbne en supportanmodning for at anmode om, at der føjes en kopi af standardindholdet til et nyt tomt websted, hvis du har brug for det. Du kan finde flere oplysninger under [Oprette et websted for e-handel](create-ecommerce-site.md).
 
 Når et nyt websted er initialiseret, vises **Startside** for Commerce-webstedsgeneratoren. Denne side indeholder links til almindelige handlinger og vejledninger, som vist i eksemplet i følgende illustration.
 
-![Links på startsiden i Commerce-webstedsgenerator](media/e-commerce-site-03.png)
+![Links på startsiden i Commerce-webstedsgenerator.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Redigere onlinebutikskanaler eller føje onlinebutikskanaler til et e-handelswebsted
 
 Når der er oprettet et e-handelswebsted, kan du ændre den kanal, som stedet er knyttet til, ved at følge trinnene i [Tilknytte et websted til e-handel med en onlinekanal](associate-site-online-store.md). I eksemplet i følgende illustration vises, hvordan et kanalhandlingsnummer (OUN) kan ændres på siden **Kanaler** (**Indstillinger for websted \> Kanaler**). Når du har foretaget en ændring, skal du huske at vælge **Gem og udgiv**. På denne måde sikrer du, at ændringen publiceres.
 
-![Siden Kanaler i Commerce-webstedsgeneratoren](media/e-commerce-site-04.png)
+![Siden Kanaler i Commerce-webstedsgeneratoren.](media/e-commerce-site-04.png)
 
 Du kan tilføje nye kanaler ved at vælge **Tilføj en kanal**. Hvis du vil føje nye sprog til en kanal, skal du vælge kanalen og derefter vælge **Tilføj en landestandard** i den kanaldialogboks, der vises. Før landestandarder kan vises i dialogboksen, skal de forudkonfigureres til online butikskanalen i Commerce Headquarters.
 
-![Dialogboksen Kanal i Commerce-webstedsgenerator](media/e-commerce-site-05.png)
+![Dialogboksen Kanal i Commerce-webstedsgenerator.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Konfigurere en Azure B2C-lejer
 
@@ -121,3 +117,6 @@ Du kan finde flere oplysninger om, hvordan du administrerer webstedsindhold, i f
 [Aktivere registrering af lokationsbaseret lager](enable-store-detection.md)
 
 [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

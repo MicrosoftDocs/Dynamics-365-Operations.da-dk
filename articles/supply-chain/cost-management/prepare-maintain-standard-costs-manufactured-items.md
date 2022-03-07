@@ -2,11 +2,9 @@
 title: Forberede at vedligeholde standardomkostninger for producerede varer
 description: I dette emne beskrives trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec68e1efc261920dc8f08ed602836b1939511dfce01008c093af7916ecd71618
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734325"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede at vedligeholde standardomkostninger for producerede varer
 
@@ -65,10 +63,12 @@ Regler, der er knyttet til producerede varer, kan påvirke omkostningsberegninge
 
 Hvis du vil bruge ruteoplysninger i forbindelse med efterkalkulation, er der brug for flere trin i forberedelsen. Omkostningskategorier, der er knyttet til ruteoperationer, skal f.eks. være korrekte og fuldførte.
 
-<a name="related-topics"></a>Relaterede emner
---------
+## <a name="related-topics"></a>Relaterede emner
 
 [Amortisere konstante omkostninger for en produceret vare](amortize-constant-costs-manufactured-item.md)
 
 [Konfigurere produkter, som kan være produceret eller indkøbt](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

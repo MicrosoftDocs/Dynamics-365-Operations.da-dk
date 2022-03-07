@@ -1,16 +1,13 @@
 ---
 title: Uploade videoer
-description: Dette emne indeholder en beskrivelse af, hvordan du uploader videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: I dette emne beskrives, hvordan du overfører videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: f481e5d3f323b0c86d637b67c119d13b956d5714dc0d990004834e2be05b370e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735624"
 ---
 # <a name="upload-videos"></a>Uploade videoer
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du uploader videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
-
-## <a name="overview"></a>Overblik
+I dette emne beskrives, hvordan du overfører videoer i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 Mediebiblioteket i Commerce-webstedsgenerator giver dig mulighed for at uploade videoer. Du bør altid uploade versionen af videoen med den højeste bithastighed og opløsning, da videoen automatisk vil blive konverteret til at være passende for forskellige billeder og deres pausepunkter.
 
@@ -40,7 +35,7 @@ Mediebiblioteket i Commerce-webstedsgenerator giver dig mulighed for at uploade 
 Når du uploader en video, kan du angive følgende oplysninger.
 
 - **Titel, Beskrivelse, Nøgleord**: Videoens metadata.
-- **Generer undertekster automatisk**: Angiver, om der automatisk skal genereres undertekster til videoen.
+- **Generér undertekster automatisk**: Angiver, om der automatisk skal genereres undertekster til videoen (kun engelsk understøttes). 
 - **Undertekster**: Angiver, om undertekster skal bruges.
 - **Almindeligt lydsignal**: Angiver det almindelige lydspor, der skal bruges.
 - **Miniaturebillede**: Angiver miniaturebilledet for videoen. Hvis miniaturebilledet ikke angives, genereres det automatisk.
@@ -73,3 +68,6 @@ Hvis du uploader flere typer aktiver på én gang (f.eks. billeder og videoer), 
 [Tilpasse billedets fokuspunkter](dam-custom-focal-point.md)
 
 [Overføre og håndtere statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
