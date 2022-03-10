@@ -4,17 +4,45 @@
       items:
         - name: Startside for Dynamics 365 Commerce
           href: index.md
+        - name: Nyheder eller ændringer
+          items:
+            - name: Nyheder eller ændringer i programmer til finans og drift
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+            - name: Nyheder eller ændringer i Commerce
+              items:
+                - name: Nyheder eller ændringer på Commerce-startsiden
+                  href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.26 (maj 2022)
+                  href: get-started/whats-new-commerce-10-0-26.md
+                - name: Commerce 10.0.25 (april 2022)
+                  href: get-started/whats-new-commerce-10-0-25.md
+                - name: Commerce 10.0.24 (februar 2022)
+                  href: get-started/whats-new-commerce-10-0-24.md
+                - name: Commerce 10.0.23 (januar 2022)
+                  href: get-started/whats-new-commerce-10-0-23.md
+            - name: Fjernede eller udfasede funktioner
+              items:
+                - name: Fjernede eller udfasede funktioner på startsiden
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
+                - name: Fjernede eller udfasede funktioner i Finance and Operations
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                - name: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
+                  href: get-started/removed-deprecated-features-commerce.md
+            - name: 'AX 2012-funktioner, der er udsat'
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
+            - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
         - name: Start her
           items:
-            - name: Tjenestebeskrivelse
+            - name: Servicebeskrivelse
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: Før du køber
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: One Version-tjenesteopdateringer
+            - name: Opdateringer til One Version-servicen
               items:
-                - name: Oversigt over One Version-tjenesteopdateringer
+                - name: Oversigt over Opdateringer til One Version-servicen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Ofte stillede spørgsmål om One Version-tjenesteopdateringer
+                - name: Ofte stillede spørgsmål om Opdateringer til One Version-servicen
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Administrere opdateringer og livscyklus for brugerdefineret kode, herunder Dynamics 365 Commerce'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
@@ -22,17 +50,17 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
                 - name: Livscykluspolitik for software – I det lokale miljø
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/commerce/toc.json
-                - name: Tilgængelighed af tjenesteopdatering
+                - name: Tilgængelighed af serviceopdatering
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
-                - name: Anvende opdateringer i skybaserede miljøer
+                - name: Anvende opdateringer i cloudmiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Anvende opdateringer til lokale installationer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere tjenesteopdateringer
+                - name: Konfigurere serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Afbryde tjenesteopdateringer midlertidigt
+                - name: Afbryde serviceopdateringer midlertidigt
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Få besked om tjenesteopdateringer
+                - name: Få besked om serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
@@ -70,7 +98,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Købe Finance + Operations (on-premises)
+                - name: Købe Finance + Operations (i det lokale miljø)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange-vejledning til implementering
                   href: dev-itpro/implementation-considerations-cdx.md
@@ -84,32 +112,6 @@
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Opgradere Retail-kanaludvidelser til den seneste Retail SDK
                   href: dev-itpro/RetailSDK-update.md
-            - name: Nyheder eller ændringer
-              items:
-                - name: Nyheder eller ændringer i Finance and Operations-apps
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
-                - name: Nyheder eller ændringer i Commerce
-                  items:
-                    - name: Nyheder eller ændringer på Commerce-startsiden
-                      href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.24 (februar 2022)
-                      href: get-started/whats-new-commerce-10-0-24.md
-                    - name: Commerce 10.0.23 (januar 2022)
-                      href: get-started/whats-new-commerce-10-0-23.md
-                    - name: Commerce 10.0.22 (november 2021)
-                      href: get-started/whats-new-commerce-10-0-22.md
-                - name: Fjernede eller udfasede funktioner
-                  items:
-                    - name: Fjernede eller udfasede funktioner på startsiden
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fjernede eller udfasede funktioner i Finance and Operations
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
-                      href: get-started/removed-deprecated-features-commerce.md
-                - name: 'AX 2012-funktioner, der er udsat'
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
@@ -126,8 +128,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Ordliste
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
@@ -196,7 +196,7 @@
               items:
                 - name: Startside for implementering af livscyklusstyring
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur for Finance and Operations-apps
+                - name: Arkitektur for programmer til finans og drift
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -222,7 +222,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementere Finance and Operations Commerce-projekter
+                - name: Implementere Commerce-projekter i Finance and Operations
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
                 - name: 'Konfigurere nye miljøer, Azure DevOps og forgreninger for projekter'
                   href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -238,8 +238,6 @@
                   href: commerce-architecture.md
                 - name: Godkendelsesstrømme i Dynamics 365 Commerce
                   href: arch-auth-flow.md
-                - name: Dynamics 365 Commerce krav til komponentversioner
-                  href: arch-component-versioning.md
                 - name: Arkitekturen for konsolløs handelsplatform
                   href: dev-itpro/retail-server-architecture.md
                 - name: Vælge en topologi i butikken
@@ -256,6 +254,8 @@
                       href: CDX-package-sort.md
                 - name: Modern POS-arkitektur
                   href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Offline implementering og fejlfinding af handel
                   href: dev-itpro/implementation-considerations-offline.md
                 - name: Publicere et onlinebutikskatalog
@@ -294,6 +294,28 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initialisere oprindelsesdata i nye Commerce-miljøer
                   href: enable-configure-retail-functionality.md
+        - name: Implementering
+          items:
+            - name: Styring af applikationslivscyklus
+              items:
+                - name: Dynamics 365 Commerce-krav til komponentversioner
+                  href: arch-component-versioning.md
+            - name: Udgive og opdatere anbefalinger
+              items:
+                - name: 'Udgive og opdatere anbefalinger, oversigt'
+                  href: go-live/go-live-overview.md
+                - name: Ydeevne
+                  items:
+                    - name: Optimere billeder
+                      href: go-live/performance-optimize-images.md
+                    - name: Reducere JavaScript ved at udelukke ubrugte moduler
+                      href: go-live/performance-reduce-javascript.md
+            - name: AX Faseoprulning i 2012
+              items:
+                - name: Understøttelse af opgradering og N-1 for Commerce
+                  href: dev-itpro/overview-upgrade-n-minus1.md
+                - name: 'Trinvis implementering af (N-1)-installation, konfiguration og overgangsvejledning'
+                  href: dev-itpro/n-1-installation-configuration.md
         - name: Konfigurere dine kanaler
           items:
             - name: Oversigt over kanaler
@@ -366,8 +388,12 @@
                   href: channel-setup-retail.md
                 - name: Konfigurere detailarbejdere
                   href: tasks/worker.md
-                - name: Modern Point of Sale (MPOS) og Cloud POS
+                - name: 'Modern Point of Sale (MPOS), Cloud POS og Store Commerce'
                   items:
+                    - name: Store Commerce-app i Microsoft Dynamics 365 Commerce (Prøveversion)
+                      href: dev-itpro/store-commerce.md
+                    - name: Vejledning til implementering af enhedsstyring
+                      href: implementation-considerations-devices.md
                     - name: Vælge mellem MPOS og Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Online og offline POS-handlinger
@@ -404,7 +430,7 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Tilslutte eksterne enheder til POS
                           href: define-maintain-channel-clients-registers-hw-stations.md
-                        - name: Sundhedskontrol af eksterne enheder og tjenester til POS
+                        - name: Sundhedskontrol af eksterne enheder og services til POS
                           href: pos-healthcheck.md
                         - name: Understøttelse af eksterne netværksenheder
                           href: dev-itpro/network-peripherals.md
@@ -424,6 +450,18 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Klientbilleder i POS
                           href: pos-image.md
+                        - name: Åbne URL-adresse i POS
+                          href: open-url-in-pos.md
+                    - name: Betalinger
+                      items:
+                        - name: Gavekort
+                          items:
+                            - name: Understøttelse af eksterne gavekort
+                              href: dev-itpro/gift-card.md
+                    - name: RSAT
+                      items:
+                        - name: Testoptager og Regression Suite Automation Tool for Cloud POS
+                          href: dev-itpro/pos-rsat.md
                     - name: Salgstilknytninger
                       items:
                         - name: Spore provisioner i POS ved hjælp af salgsgrupper
@@ -458,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Oprette økonomiske dimensioner for detailkanaler og konfigurere værdier for butikker
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Aktivere ensartet leveringsmåde for håndtering i e-handelskanaler
+                  href: consistent-delivery-mode-handling.md
             - name: Konfigurere en onlinekanal
               items:
                 - name: Konfigurere en onlinekanal
@@ -572,7 +612,7 @@
                   href: dev-itpro/pickup-timeslots.md
                 - name: 'Konfigurere produktdimensionsværdier, der skal vises som farvekort'
                   href: dev-itpro/dimensions-swatch.md
-        - name: Markedsføre dine produkter og tjenester
+        - name: Markedsføre dine produkter og services
           items:
             - name: 'Kategorier, produkter og udvalg'
               items:
@@ -698,21 +738,25 @@
                   href: product-recommendations-demo-data.md
                 - name: Ofte stillede spørgsmål om produktanbefalinger
                   href: faq-recommendations.md
-            - name: Vurderinger og anmeldelser
+            - name: Bedømmelser og anmeldelser
               items:
-                - name: Oversigt over vurderinger og anmeldelser
+                - name: Oversigt over bedømmelser og anmeldelser
                   href: ratings-reviews-overview.md
-                - name: Tilvælge brug af vurderinger og anmeldelser
+                - name: Tilvælge brug af bedømmelser og anmeldelser
                   href: opt-in-ratings-reviews.md
-                - name: Administrere vurderinger og anmeldelser
+                - name: Administrere bedømmelser og anmeldelser
                   href: manage-reviews.md
-                - name: Konfigurere vurderinger og anmeldelser
+                - name: Konfigurere bedømmelser og anmeldelser
                   href: configure-ratings-reviews.md
-                - name: Synkronisere produktvurderinger
+                - name: Synkronisere produktbedømmelser
                   href: sync-product-ratings.md
-                - name: Aktiver manuel udgivelse af vurderinger og vurderinger af en dag
+                - name: Aktivere manuel udgivelse af bedømmelser og vurderinger af en dag
                   href: manual-publish-rating-reviews.md
-                - name: Ofte stillede spørgsmål til Vurderinger og anmeldelser
+                - name: Importere og eksportere bedømmelser og anmeldelser
+                  href: import-export-reviews.md
+                - name: Konfigurere service-til-service-godkendelse
+                  href: service-to-service-auth.md
+                - name: Ofte stillede spørgsmål til Bedømmelser og anmeldelser
                   href: ratings-reviews-faq.md
             - name: Administrere dit lager
               items:
@@ -916,6 +960,8 @@
                   href: deploy-ecommerce-site.md
                 - name: Oprette et e-handelswebsted
                   href: create-ecommerce-site.md
+                - name: Kopiere et e-handelswebsted
+                  href: copy-ecommerce-site.md
                 - name: Tilknytte et Dynamics 365 Commerce-websted med en onlinekanal
                   href: associate-site-online-store.md
                 - name: Administrere robots.txt-filer
@@ -998,13 +1044,11 @@
                       href: style-presets.md
                     - name: Tilføje et favoritikon
                       href: add-favicon.md
-                    - name: Tilføje en velkomstmeddelelse
-                      href: add-welcome-message.md
                     - name: Tilføje en copyright-meddelelse
                       href: add-copyright-notice.md
                     - name: Tilføje sprog
                       href: add-languages-to-site.md
-                    - name: Tilføje scriptkode til sider på websteder for at understøtte telemetri
+                    - name: Føje scriptkode til sider på websteder for at understøtte telemetri
                       href: add-telemetry.md
                 - name: Moduler
                   items:
@@ -1140,7 +1184,7 @@
                       href: add-buy-box.md
                     - name: Mediegallerimodul
                       href: media-gallery-module.md
-                    - name: Moduler til vurderinger og anmeldelser
+                    - name: Moduler til bedømmelser og anmeldelser
                       href: ratings-reviews-modules.md
                     - name: Modul til deling på sociale medier
                       href: social-share-module.md
@@ -1252,10 +1296,16 @@
           items:
             - name: Oprette et B2B-e-handelswebsted
               href: b2b/set-up-b2b-site.md
-            - name: Oprette organisationsmodelhierarkier for B2B-organisationer
-              href: b2b/org-model.md
+            - name: Administrere B2B-forretningspartnere ved hjælp af kundehierarkier
+              href: b2b/partners-customer-hierarchies.md
             - name: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
               href: b2b/manage-b2b-users.md
+            - name: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder ved hjælp af Dynamics 365 Sales
+              href: b2b/prospect-management-sales.md
+            - name: Placer B2B-webstedsordrer hurtigt
+              href: b2b/quick-bulk-orders.md
+            - name: Fakturastyring til B2B-e-handelswebsteder
+              href: b2b/invoice-management.md
             - name: Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
               href: b2b/payment-method.md
             - name: Angive produktantalsgrænser for B2B-e-handelswebsteder
@@ -1358,7 +1408,7 @@
                       href: localizations/emea-eeu-deployment.md
                 - name: Tjekkiet
                   items:
-                    - name: Eksempel på integration af regnskabsregistreringstjeneste i Tjekkiet
+                    - name: Eksempel på integration af regnskabsregistreringsservice i Tjekkiet
                       href: localizations/emea-cze-fi-sample.md
                     - name: Retningslinjer for installation for eksempel på regnskabsintegration i Tjekkiet (ældre)
                       href: localizations/emea-cze-fi-sample-sdk.md
@@ -1482,7 +1532,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Rapportering og udskrivning af dokumenter
               items:
-                - name: Oversigt over dokumentrapporteringstjenester
+                - name: Oversigt over dokumentrapporteringsservices
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
                 - name: Understøttede skrifttyper
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
@@ -1500,9 +1550,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
-                    - name: Køre agenten for ruteplanlægning af dokumenter som en Windows-tjeneste
+                    - name: Køre agenten for ruteplanlægning af dokumenter som en Windows-service
                       href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
-                - name: Tilgængelige rapporter vedrørende SQL Server-rapporteringstjenester
+                - name: Tilgængelige rapporter vedrørende SQL Server-rapporteringsservices
                   href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
                 - name: Installere skabeloner for rapportdesign
                   href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
@@ -1744,7 +1794,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: Concatenate
+                        - name: Sammenkæde
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
                         - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
@@ -1886,6 +1936,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
                     - name: Designe et ER-format til sideopgradere genererede dokumenter i Excel
                       href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: Designe et ER-format for at holde rækker sammen på samme Excel-side
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/commerce/toc.json
                 - name: Designe konfigurationer til generering af rapporter i Word-format
                   items:
                     - name: Designe ny ER-konfiguration til generering af rapporter i Word-format
@@ -1936,6 +1988,8 @@
                   items:
                     - name: Oprette konfigurationer for at importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere datamanuelt valgte filer i batchtilstand
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Konfigurere dataimport i batchtilstand fra filer, der findes i SharePoint'
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Importere filer i XML-format
@@ -2166,6 +2220,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Applikationsopdatering 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Applikationsopdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
@@ -2180,7 +2236,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementere en brugerdefineret ER-kilde til indgående dokumenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations (Dynamics 365)-mobilapp
+        - name: Finance and Operations (Dynamics 365) mobilapp
           items:
             - name: Mobilapp-startside
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -2318,27 +2374,27 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessen til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
                 - name: Arbejdsprocestyper
                   items:
-                    - name: Oprettelse af en arbejdsprocestype
+                    - name: Oprettelse af en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kontrolliste til arbejdsprocestype
+                    - name: Kontrolliste til arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en arbejdsproceskategori
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en forespørgsel for en arbejdsprocestype
+                    - name: Oprette en forespørgsel for en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oprette en ny arbejdsprocestype
+                    - name: Oprette en ny arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en arbejdsprocesdokumentklasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Oprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Knytte en arbejdsprocesdokumentklasse til en arbejdsprocestype
+                    - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
-                - name: Rapport om arbejdsprocestyper
+                - name: Rapport om arbejdsgangstyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
                 - name: Ofte stillede spørgsmål om arbejdsproces
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
@@ -2378,189 +2434,355 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Data om dato/klokkeslæt og tidszoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Udvidelsesmuligheder
+        - name: Udvikling
           items:
-            - name: Commerce-udvikling og -udvidelse
+            - name: Krydsløsning
               items:
-                - name: Commerce til it-medarbejdere og -udviklere
-                  href: dev-itpro/dev-retail-home-page.md
-                - name: Konfigurere et lokalt udviklingsmiljø
-                  href: dev-itpro/setup-local-dev-env.md
-            - name: Udvidelsesmuligheder for onlinekanal
-              items:
-                - name: Oversigt over udvidelsesmuligheder for onlinekanal
-                  href: e-commerce-extensibility/overview.md
-                - name: Start her
+                - name: Oversigt over Commerce SDK
                   items:
-                    - name: Start her med e-handelonlineudvidelsesudvikling
+                    - name: Prøver og referencepakker
+                      href: dev-itpro/retail-sdk/sdk-github.md
+                    - name: Ældre overflytning af Retail SDK
+                      href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
+                      href: 'https://www.microsoft.com/download/details.aspx?id=103896'
+                - name: Miljøkonfiguration
+                  items:
+                    - name: Lokalt udviklingsmiljø
+                      href: dev-itpro/setup-local-dev-env.md
+                    - name: Commerce SDK build pipeline (uafhængig emballage)
+                      href: dev-itpro/build-pipeline.md
+                - name: Betalinger
+                  items:
+                    - name: Installere betalingsconnectorer
+                      href: dev-itpro/deploy-payment-connector.md
+                    - name: Brug af betalingsdata
+                      href: payment-connector-data-fields.md
+                    - name: Understøttelse af tipping i SDK'en for betalinger
+                      href: dev-itpro/tipping.md
+                    - name: Trinvis dataindlæsning til ordrefakturering
+                      href: dev-itpro/incremental-capture.md
+                - name: Lokalisering
+                  items:
+                    - name: Tilpasse Commerce-udvidelsesressourcer og labelfiler
+                      href: dev-itpro/extension-resource-localization.md
+            - name: Headless Commerce
+              items:
+                - name: API'er og reference
+                  items:
+                    - name: Kunde og forbruger-API'er for Commerce Scale Unit
+                      href: dev-itpro/retail-server-customer-consumer-api.md
+                    - name: Bruge Retail Server-API'er i eksterne ansøgninger
+                      href: dev-itpro/consume-retail-server-api.md
+                    - name: Typescript og C#-proxyer til Retail POS
+                      href: dev-itpro/typescript-proxy-retail-pos.md
+                    - name: Commerce Runtime (CRT)-arkitektur og konfiguration
+                      href: dev-itpro/commerce-runtime-overview.md
+                    - name: Commerce runtime (CRT)-services
+                      href: dev-itpro/crt-services.md
+                - name: Oprette ny funktionalitet
+                  items:
+                    - name: Oprette Commerce Scale Unit API
+                      href: dev-itpro/retail-server-icontroller-extension.md
+                    - name: Udvidelse for CRT (Commerce Runtime)
+                      href: dev-itpro/commerce-runtime-extensibility.md
+                    - name: Logføre udvidelseshændelser i Application Insights
+                      href: dev-itpro/commerce-application-insights.md
+                    - name: Opret asynkrone Commerce (CRT) API'er
+                      href: dev-itpro/async-commerce-extension.md
+                    - name: Udvidelser til kanaldatabase
+                      href: dev-itpro/channel-db-extensions.md
+                    - name: Forlænge Commerce Data Exchange - Services i realtid
+                      href: dev-itpro/extend-commerce-data-exchange.md
+                - name: Udvide eksisterende funktioner
+                  items:
+                    - name: Commerce runtime (CRT)-udvidelse og udløsere
+                      href: dev-itpro/commerce-runtime-extensibility-trigger.md
+                    - name: Forlængede kolonner i kanaldatabasen
+                      href: dev-itpro/extended-columns.md
+                    - name: Aktivere brugerdefineret Commerce Data Exchange-synkronisering via filtypenavn
+                      href: dev-itpro/cdx-extensibility.md
+                    - name: Udvide Commerce Store-kvitteringer
+                      href: dev-itpro/retail-sdk/retail-sdk-samples.md
+                    - name: Debitorattributter
+                      href: dev-itpro/customer-attributes.md
+                    - name: Ordreattributter
+                      href: dev-itpro/order-attributes.md
+                    - name: Administrere hemmeligheder for Retail-kanaler
+                      href: dev-itpro/manage-secrets.md
+                - name: Eksempler
+                  items:
+                    - name: Spærre transaktioner ved hjælp af udløsere
+                      href: dev-itpro/trigger-example-blocking-transaction.md
+                    - name: Registrere forladte vogne og sende beskeder til kunder
+                      href: dev-itpro/abandoned-cart-sample-app.md
+                    - name: Loyalitetsudvidelseseksempel
+                      href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+                    - name: Tillægspunkter for følgesedler under ordreopfyldning
+                      href: dev-itpro/extensions-shipping-carrier-integration.md
+                - name: Emballage og implementering
+                  items:
+                    - name: Fjerne udvidelser til enheder i skyen
+                      href: dev-itpro/retail-sdk/remove-csu-package.md
+            - name: Store Commerce
+              items:
+                - name: Oversigt
+                  items:
+                    - name: Oversigt over POS-udvidelse
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: POS-udvidelsesbegreber og -terminologi
+                      href: dev-itpro/pos-extension/pos-extension-basics.md
+                    - name: Overføre POS-udvidelser til Commerce SDK
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                - name: Miljøkonfiguration
+                  items:
+                    - name: Lokalt udviklingsmiljø
+                      href: dev-itpro/setup-local-dev-env.md
+                    - name: Oprette et POS-udvidelsespakkeprojekt
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Oprette en .appx-fil til udvidelsespakken Modern POS
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Fejlfinde POS-udvidelser
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
+                - name: API'er og reference
+                  items:
+                    - name: Få vist oplysninger om POS-udvidelsespakke
+                      href: dev-itpro/view-pos-extension-package-details.md
+                    - name: POS-API'er
+                      href: dev-itpro/pos-apis.md
+                    - name: Bruge POS-kontrolelementer i udvidelser
+                      href: dev-itpro/pos-extension/controls-pos-extension.md
+                    - name: Udvide POS Dual-displayvisningen
+                      href: dev-itpro/pos-dual-display-extension.md
+                    - name: 'Forbruge brugerdefinerede, konsolløse API''er og objekter i POS'
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
+                    - name: Bruge eksterne biblioteker eller tredjepartsbiblioteker i POS-udvidelser
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                - name: Oprette ny funktionalitet
+                  items:
+                    - name: Oprette en POS-operation
+                      href: dev-itpro/add-pos-operations.md
+                    - name: Oprette en brugerdefineret visning i POS
+                      href: dev-itpro/pos-extension/custom-pos-view.md
+                    - name: Oprette en ny hardwareenhed og Integrere med POS
+                      href: dev-itpro/hardware-device-extension.md
+                    - name: Oprette komplet integration af betaling for en betalingsterminal
+                      href: dev-itpro/end-to-end-payment-extension.md
+                    - name: Oprette brugerdefinerede oversatte fejlmeddelelser for udvidelser for betalingsterminaler
+                      href: dev-itpro/payment-custom-error-messages.md
+                    - name: Aktivere beskyttelse mod dubleret betaling for betalingsconnector
+                      href: dev-itpro/duplicate-payments-protection.md
+                - name: Udvide eksisterende funktioner
+                  items:
+                    - name: Udvide POS-visninger for at tilføje brugerdefinerede kolonner og knapper på applinjen
+                      href: dev-itpro/pos-view-extension.md
+                    - name: Udvide POS-visninger til at inkludere brugerdefinerede kontrolelementer
+                      href: dev-itpro/pos-control-non-screen.md
+                    - name: Udvide POS-hovedlinje
+                      href: dev-itpro/pos-header-bar.md
+                    - name: Udvide POS-beskeder
+                      href: dev-itpro/extend-pos-notification.md
+                    - name: Tilsidesætte POS-anmodningshandlere
+                      href: dev-itpro/pos-handler.md
+                    - name: POS-udløsere
+                      href: dev-itpro/pos-trigger-printing.md
+                    - name: POS-indkøbsvognsvisning
+                      items:
+                        - name: Visningshændelser og -handlere for POS-indkøbskurv
+                          href: dev-itpro/cart-view-handlers.md
+                        - name: Tilføje brugerdefinerede felter til panelet for POS-totaler
+                          href: dev-itpro/custom-field-pos-totals.md
+                        - name: Tilføje brugerdefinerede kolonner til et POS-transaktionsgitter
+                          href: dev-itpro/pos-custom-transaction-column.md
+                        - name: Tilføje brugerdefinerede kontrolelementer til POS-visninger af indkøbskurv
+                          href: dev-itpro/pos-custom-transaction.md
+                    - name: Tilføje brugerdefinerede kontrolelementer til POS-visninger
+                      href: dev-itpro/pos-custom-control.md
+                    - name: Udvidelse af POS-betaling
+                      href: dev-itpro/pos-payment-extension.md
+                - name: Emballage og implementering
+                  items:
+                    - name: Oprette en udvidelsespakke til MPOS
+                      href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                    - name: Kodesignering af en udvidelsespakke til MPOS (MSIX)
+                      href: dev-itpro/pos-extension/mpos-extension-signing.md
+                    - name: Oprette en udvidelsespakke til Cloud POS
+                      href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: E-commerce
+              items:
+                - name: Oversigt
+                  items:
+                    - name: Oversigt over udvidelsesmuligheder for onlinekanal
+                      href: e-commerce-extensibility/overview.md
+                    - name: Arkitektonisk oversigt over e-handel
+                      href: e-commerce-extensibility/architectural-overview.md
+                    - name: E-handelskomponenter
+                      href: e-commerce-extensibility/ecommerce-components.md
+                    - name: Start her med online udvidelsesudvikling af e-handel
                       href: e-commerce-extensibility/sdk-getting-started.md
                     - name: Systemkrav
                       href: e-commerce-extensibility/system-requirements.md
-                    - name: Konfigurere et udviklingsmiljø
+                - name: Miljøkonfiguration
+                  items:
+                    - name: Udviklingsmiljø
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurere en fil til et udviklingsmiljø (.env)
                       href: e-commerce-extensibility/configure-env-file.md
                     - name: Konfigurere et udviklingsmiljø til e-handel i forhold til et Commerce-sky-miljø
                       href: e-commerce-extensibility/debug-tier-1.md
-                    - name: Konfigurere Azure DevOps-kodedeling og oprette en build-pipeline
-                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
-                - name: Platformsoversigt
+                - name: API'er og reference
                   items:
-                    - name: Arkitektonisk oversigt over e-handel
-                      href: e-commerce-extensibility/architectural-overview.md
-                    - name: E-handelskomponenter
-                      href: e-commerce-extensibility/ecommerce-components.md
                     - name: CLI-kommandoreference
                       href: e-commerce-extensibility/cli-command-reference.md
-                - name: Anatomi for et modul
+                    - name: Anatomi for et modul
+                      items:
+                        - name: Moduloversigt
+                          href: e-commerce-extensibility/modules-overview.md
+                        - name: Moduldefinitionsfil
+                          href: e-commerce-extensibility/module-definition-file.md
+                        - name: Modulreaktionskomponentfil
+                          href: e-commerce-extensibility/module-react-file.md
+                        - name: Modulvisningsfil
+                          href: e-commerce-extensibility/module-view-file.md
+                        - name: Moduldatafil
+                          href: e-commerce-extensibility/module-data-file.md
+                        - name: Model-fil for modul
+                          href: e-commerce-extensibility/module-mock-file.md
+                        - name: Test-fil for modul
+                          href: e-commerce-extensibility/module-test-file.md
+                        - name: Modulet props.autogenerated.ts-fil
+                          href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                        - name: Forudindstillinger for modulkonfiguration
+                          href: e-commerce-extensibility/module-config-presets.md
+                - name: Oprette ny funktionalitet
                   items:
-                    - name: Moduloversigt
-                      href: e-commerce-extensibility/modules-overview.md
-                    - name: Moduldefinitionsfil
-                      href: e-commerce-extensibility/module-definition-file.md
-                    - name: Modulreaktionskomponentfil
-                      href: e-commerce-extensibility/module-react-file.md
-                    - name: Modulvisningsfil
-                      href: e-commerce-extensibility/module-view-file.md
-                    - name: Moduldatafil
-                      href: e-commerce-extensibility/module-data-file.md
-                    - name: Model-fil for modul
-                      href: e-commerce-extensibility/module-mock-file.md
-                    - name: Test-fil for modul
-                      href: e-commerce-extensibility/module-test-file.md
-                    - name: Modulet props.autogenerated.ts-fil
-                      href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
-                    - name: Forudindstillinger for modulkonfiguration
-                      href: e-commerce-extensibility/module-config-presets.md
-                - name: Udvikle moduler
+                    - name: Moduler
+                      items:
+                        - name: Oprette et nyt model
+                          href: e-commerce-extensibility/create-new-module.md
+                        - name: Tilføje modulkonfigurationsfelter
+                          href: e-commerce-extensibility/add-module-config-fields.md
+                        - name: Se prøveversion og fejlfinde moduler
+                          href: e-commerce-extensibility/test-module.md
+                        - name: Teste moduler med modulmodeller
+                          href: e-commerce-extensibility/test-module-mock.md
+                        - name: Teste moduler ved hjælp af sidemodeller
+                          href: e-commerce-extensibility/test-page-mock.md
+                        - name: Container-moduler
+                          href: e-commerce-extensibility/container-modules.md
+                        - name: Oprette et layoutcontainermodul
+                          href: e-commerce-extensibility/create-layout-container.md
+                        - name: Oprette et sidecontainermodul
+                          href: e-commerce-extensibility/create-page-containers.md
+                        - name: Lokalisere et modul
+                          href: e-commerce-extensibility/localize-module.md
+                        - name: Avanceret
+                          items:
+                            - name: Anmode om egenskabsobjekt
+                              href: e-commerce-extensibility/request-properties-object.md
+                            - name: Appindstillinger
+                              href: e-commerce-extensibility/app-settings.md
+                            - name: Konfigurere globale konfigurationsindstillinger for webstedsbygger baseret på aktiverede funktioner
+                              href: e-commerce-extensibility/config-settings-for-features.md
+                            - name: Fil med indstillinger for platform
+                              href: e-commerce-extensibility/platform-settings.md
+                            - name: Cookie-API-oversigt
+                              href: e-commerce-extensibility/cookie-api-overview.md
+                            - name: Oversigt over interaktive komponenter
+                              href: e-commerce-extensibility/interactive-components.md
+                            - name: 'Modellering af den tilstand, der er logget på under lokal udvikling'
+                              href: e-commerce-extensibility/mock-sign-in.md
+                            - name: 'Konfigurere modulegenskaber, der skal vises ud fra kontekst'
+                              href: e-commerce-extensibility/configure-properties-context.md
+                            - name: Globalisere moduler ved hjælp af klassen CultureInfoFormatter
+                              href: e-commerce-extensibility/globalize-modules.md
+                            - name: Konfigurere Azure Key Vault til sikker nøgleadministration
+                              href: e-commerce-extensibility/set-up-key-vault.md
+                            - name: Billedkomponent
+                              href: e-commerce-extensibility/image-component.md
+                    - name: Datahandlinger
+                      items:
+                        - name: Oversigt over datahandlinger
+                          href: e-commerce-extensibility/data-actions.md
+                        - name: Indstillinger for datahandlingscache
+                          href: e-commerce-extensibility/data-action-cache.md
+                        - name: Teste datahandlinger med modeller
+                          href: e-commerce-extensibility/test-data-action-mocks.md
+                        - name: Datahandlinger for indlæsning af side
+                          href: e-commerce-extensibility/page-load-data-action.md
+                        - name: Hændelsesbaserede datahandlinger
+                          href: e-commerce-extensibility/event-based-data-actions.md
+                        - name: Kernedatahandlinger
+                          href: e-commerce-extensibility/core-data-actions.md
+                        - name: Kalde Commerce Scale Unit-API'er
+                          href: e-commerce-extensibility/call-retail-server-apis.md
+                        - name: Kalde udvidelses-API'er for Retail Server
+                          href: e-commerce-extensibility/call-retail-extension-api.md
+                        - name: Avanceret
+                          items:
+                            - name: Kædedatahandlinger
+                              href: e-commerce-extensibility/chain-data-actions.md
+                            - name: Batchdatahandlinger
+                              href: e-commerce-extensibility/batch-data-actions.md
+                            - name: Observerede datahandlinger
+                              href: e-commerce-extensibility/create-observable-data-action.md
+                            - name: Delingstilstand på tværs af moduler
+                              href: e-commerce-extensibility/share-state-across-modules.md
+                            - name: Indstillinger for datahandlingscache
+                              href: e-commerce-extensibility/data-action-cache-settings.md
+                            - name: Datahandlinger på opkaldsserversiden med AJAX
+                              href: e-commerce-extensibility/data-actions-with-ajax.md
+                    - name: Temaer
+                      items:
+                        - name: Oversigt over temaer
+                          href: e-commerce-extensibility/theming.md
+                        - name: Oprette et tema
+                          href: e-commerce-extensibility/create-theme.md
+                        - name: Konfigurere temaindstillinger
+                          href: e-commerce-extensibility/configure-theme-settings.md
+                        - name: Konfigurere forudindstillinger for tematypografi
+                          href: e-commerce-extensibility/theme-style-presets.md
+                        - name: Føje brugerdefinerede ressourcer til tilpasningskoden
+                          href: e-commerce-extensibility/add-custom-resources.md
+                    - name: Indsætte script
+                      items:
+                        - name: Script-injektorer
+                          href: e-commerce-extensibility/script-injector.md
+                    - name: Connectorer
+                      items:
+                        - name: Konfigurere og aktivere forbindelser
+                          href: e-commerce-extensibility/connectors.md
+                - name: Udvide eksisterende funktioner
                   items:
-                    - name: Oprette et nyt model
-                      href: e-commerce-extensibility/create-new-module.md
-                    - name: Klone et modulbiblioteks modul
-                      href: e-commerce-extensibility/clone-starter-module.md
-                    - name: Tilføje modulkonfigurationsfelter
-                      href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: Se prøveversion og fejlfinde moduler
-                      href: e-commerce-extensibility/test-module.md
-                    - name: Teste moduler med modulmodeller
-                      href: e-commerce-extensibility/test-module-mock.md
-                    - name: Teste moduler ved hjælp af sidemodeller
-                      href: e-commerce-extensibility/test-page-mock.md
-                    - name: Container-moduler
-                      href: e-commerce-extensibility/container-modules.md
-                    - name: Oprette et layoutcontainermodul
-                      href: e-commerce-extensibility/create-layout-container.md
-                    - name: Oprette et containermodul for side
-                      href: e-commerce-extensibility/create-page-containers.md
-                    - name: Lokalisere et modul
-                      href: e-commerce-extensibility/localize-module.md
-                - name: Avancerede modulemner
-                  items:
-                    - name: Anmode om egenskabsobjekt
-                      href: e-commerce-extensibility/request-properties-object.md
-                    - name: Appindstillinger
-                      href: e-commerce-extensibility/app-settings.md
-                    - name: Konfigurere globale konfigurationsindstillinger for webstedsbygger baseret på aktiverede funktioner
-                      href: e-commerce-extensibility/config-settings-for-features.md
-                    - name: Fil med indstillinger for platform
-                      href: e-commerce-extensibility/platform-settings.md
-                    - name: Udvide en moduldefinition
-                      href: e-commerce-extensibility/extend-module-definition.md
-                    - name: Cookie-API-oversigt
-                      href: e-commerce-extensibility/cookie-api-overview.md
-                    - name: Oversigt over interaktive komponenter
-                      href: e-commerce-extensibility/interactive-components.md
-                    - name: 'Modellering af den tilstand, der er logget på under lokal udvikling'
-                      href: e-commerce-extensibility/mock-sign-in.md
-                    - name: 'Konfigurere modulegenskaber, der skal vises ud fra kontekst'
-                      href: e-commerce-extensibility/configure-properties-context.md
-                    - name: Globalisere moduler ved hjælp af klassen CultureInfoFormatter
-                      href: e-commerce-extensibility/globalize-modules.md
-                    - name: Konfigurere Azure Key Vault til sikker nøgleadministration
-                      href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Oprette en pipeline til anmodninger om tilbud
-                      href: e-commerce-extensibility/request-pipeline-hook.md
-                    - name: Billedkomponent
-                      href: e-commerce-extensibility/image-component.md
-                - name: Udvikle datahandlinger
-                  items:
-                    - name: Oversigt over datahandlinger
-                      href: e-commerce-extensibility/data-actions.md
-                    - name: Indstillinger for datahandlingscache
-                      href: e-commerce-extensibility/data-action-cache.md
-                    - name: Teste datahandlinger med modeller
-                      href: e-commerce-extensibility/test-data-action-mocks.md
-                    - name: Datahandlinger for indlæsning af side
-                      href: e-commerce-extensibility/page-load-data-action.md
-                    - name: Hændelsesbaserede datahandlinger
-                      href: e-commerce-extensibility/event-based-data-actions.md
-                    - name: Kernedatahandlinger
-                      href: e-commerce-extensibility/core-data-actions.md
-                    - name: Kalde Commerce Scale Unit-API'er
-                      href: e-commerce-extensibility/call-retail-server-apis.md
-                    - name: Kalde udvidelses-API'er for Retail Server
-                      href: e-commerce-extensibility/call-retail-extension-api.md
-                - name: Avancerede datahandlingsemner
-                  items:
-                    - name: Kædedatahandlinger
-                      href: e-commerce-extensibility/chain-data-actions.md
-                    - name: Batchdatahandlinger
-                      href: e-commerce-extensibility/batch-data-actions.md
-                    - name: Observerede datahandlinger
-                      href: e-commerce-extensibility/create-observable-data-action.md
-                    - name: Delingstilstand på tværs af moduler
-                      href: e-commerce-extensibility/share-state-across-modules.md
-                    - name: Indstillinger for datahandlingscache
-                      href: e-commerce-extensibility/data-action-cache-settings.md
-                    - name: Tilsidesættelser af datahandlinger
-                      href: e-commerce-extensibility/data-action-overrides.md
-                    - name: Datahandlings-hooks
-                      href: e-commerce-extensibility/data-action-hooks.md
-                    - name: Datahandlinger på opkaldsserversiden med AJAX
-                      href: e-commerce-extensibility/data-actions-with-ajax.md
-                - name: Udvikle temaer
-                  items:
-                    - name: Oversigt over temaer
-                      href: e-commerce-extensibility/theming.md
-                    - name: Oprette et tema
-                      href: e-commerce-extensibility/create-theme.md
-                    - name: Konfigurere temaindstillinger
-                      href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Konfigurere forudindstillinger for tematypografi
-                      href: e-commerce-extensibility/theme-style-presets.md
-                    - name: Udvide et tema for at tilføje moduludvidelser
-                      href: e-commerce-extensibility/theme-module-extensions.md
-                    - name: Tilsidesætte en komponent til et modulbibliotek i et tema
-                      href: e-commerce-extensibility/override-theme-component.md
-                    - name: Udvide et tema fra et basistema
-                      href: e-commerce-extensibility/extend-theme.md
-                    - name: Føje brugerdefinerede ressourcer til tilpasningskoden
-                      href: e-commerce-extensibility/add-custom-resources.md
-                - name: Indsætte script
-                  items:
-                    - name: Script-injektorer
-                      href: e-commerce-extensibility/script-injector.md
-                - name: Connectorer
-                  items:
-                    - name: Konfigurere og aktivere forbindelser
-                      href: e-commerce-extensibility/connectors.md
-                - name: Ydeevne
-                  items:
-                    - name: Konfigurere sidelagring
-                      href: e-commerce-extensibility/page-caching.md
-                    - name: Instanscache for datahandling
-                      href: e-commerce-extensibility/instance-cache.md
-                - name: Telemetri og analyse
-                  items:
-                    - name: Telemetri-logføring
-                      href: e-commerce-extensibility/telemetry-logger.md
-                - name: Installation og vedligeholdelse
+                    - name: Moduler
+                      items:
+                        - name: Klone et modulbiblioteks modul
+                          href: e-commerce-extensibility/clone-starter-module.md
+                        - name: Udvide en moduldefinition
+                          href: e-commerce-extensibility/extend-module-definition.md
+                    - name: Datahandlinger
+                      items:
+                        - name: Tilsidesættelser af datahandlinger
+                          href: e-commerce-extensibility/data-action-overrides.md
+                        - name: Datahandlings-hooks
+                          href: e-commerce-extensibility/data-action-hooks.md
+                    - name: Temaer
+                      items:
+                        - name: Udvide et tema for at tilføje moduludvidelser
+                          href: e-commerce-extensibility/theme-module-extensions.md
+                        - name: Tilsidesætte en komponent til et modulbibliotek i et tema
+                          href: e-commerce-extensibility/override-theme-component.md
+                        - name: Udvide et tema fra et basistema
+                          href: e-commerce-extensibility/extend-theme.md
+                - name: Emballage og implementering
                   items:
                     - name: Pakke konfigurationer og implementere dem i et onlinemiljø
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Opdateringer til SDK og modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
-                - name: Bedste praksis og ofte stillede spørgsmål
+                    - name: Konfigurere Azure DevOps-kodedeling og oprette en build-pipeline
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
+                - name: 'Best Practices, ydeevne og Ofte stillede spørgsmål'
                   items:
                     - name: Bedste praksis til Dynamics 365 Commerce-udvikling
                       href: e-commerce-extensibility/best-practices-dev.md
@@ -2570,208 +2792,60 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
                     - name: Teste sider på e-handelswebsteder for hukommelseslæk
                       href: e-commerce-extensibility/memory-leak-detection.md
-            - name: Retail SDK
+                    - name: Ydeevne
+                      items:
+                        - name: Konfigurere sidelagring
+                          href: e-commerce-extensibility/page-caching.md
+                        - name: Instanscache for datahandling
+                          href: e-commerce-extensibility/instance-cache.md
+                    - name: Telemetri og analyse
+                      items:
+                        - name: Telemetri-logføring
+                          href: e-commerce-extensibility/telemetry-logger.md
+            - name: Commerce HQ
               items:
-                - name: Overføre til Commerce SDK
-                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
-                - name: Retail SDK-arkitektur
-                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Konfigurer en build-pipeline til det uafhængige emballage-SDK
-                  href: dev-itpro/build-pipeline.md
-                - name: Overflytte Retail SDK data fra Visual Studio 2015 til Visual Studio 2017
-                  href: dev-itpro/retail-sdk/migrate-sdk.md
-                - name: Eksempler på udvidelsesmuligheder for Retail SDK
-                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-                - name: Oprette installerbare pakker
-                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Udvikling i skybaserede miljøer uden administratoradgang
-                  href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurere Commerce SDK-build pipeline
-                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: Overføre eksempler og pakker fra GitHub og NuGet
-                  href: dev-itpro/retail-sdk/sdk-github.md
-                - name: Opret en Visual Studio 2017-build-agent for at oprette Modern POS
-                  href: dev-itpro/retail-sdk/mpos-build-agent.md
-                - name: Ofte stillede spørgsmål om Retail SDK
-                  href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: POS-udvidelse
-              items:
-                - name: POS-skærmlayout
-                  href: pos-screen-layouts.md
-                - name: Store Commerce-app i Microsoft Dynamics 365 Commerce
-                  href: dev-itpro/store-commerce.md
-                - name: Åbne URL-adresse i POS
-                  href: Open-URL-in-POS.md
-                - name: Installere layoutdesigneren til POS
-                  href: install-pos-layout-designer.md
-                - name: Udvide POS Dual-displayvisningen
-                  href: dev-itpro/pos-dual-display-extension.md
-                - name: Tilføje brugerdefinerede kontrolelementer til POS-visninger
-                  href: dev-itpro/pos-custom-control.md
-                - name: Tilføje POS-handlinger til POS-layout ved hjælp af knapmatrixdesigner
-                  href: dev-itpro/add-POS-operations.md
-                - name: POS-API'er
-                  href: dev-itpro/POS-APIs.md
-                - name: Udvidelse af POS-betaling
-                  href: dev-itpro/pos-payment-extension.md
-                - name: Understøttelse af tipping i SDK'en for POS-betalinger
-                  href: dev-itpro/tipping.md
-                - name: Understøttelse af eksterne gavekort
-                  href: dev-itpro/gift-card.md
-                - name: Oprette og anvende branding til Retail Experience-appen
-                  href: dev-itpro/create-retail-experience-app.md
-                - name: Konfigurere POS Hybrid-appen på Android og iOS
-                  href: dev-itpro/hybridApp.md
-                - name: Tilsidesætte POS-anmodningshandler
-                  href: dev-itpro/pos-handler.md
-                - name: Få vist oplysninger om POS-udvidelsespakke
-                  href: dev-itpro/view-pos-extension-package-details.md
-                - name: Testoptager og Regression Suite Automation Tool for Cloud POS
-                  href: dev-itpro/pos-rsat.md
-                - name: Tilføje brugerdefinerede felter til panelet for POS-totaler
-                  href: dev-itpro/custom-field-pos-totals.md
-                - name: Vise brugerdefinerede meddelelser i POS
-                  href: dev-itpro/extend-pos-notification.md
-                - name: Signer MPOS med kodesigneringscertifikat
-                  href: dev-itpro/pos-app-signing-certificate.md
-                - name: Udvide POS-visninger for at tilføje brugerdefinerede kolonner og knapper på applinjen
-                  href: dev-itpro/pos-view-extension.md
-                - name: Tilføje brugerdefinerede kontrolelementer til Modern POS-transaktionssider
-                  href: dev-itpro/pos-custom-transaction.md
-                - name: Tilføje brugerdefinerede kolonner til et POS-transaktionsgitter
-                  href: dev-itpro/pos-custom-transaction-column.md
-                - name: Kalde POS-API'er eller handlinger fra POS-udvidelser
-                  href: dev-itpro/pos-api-extension.md
-                - name: POS-udløsere
-                  href: dev-itpro/pos-trigger-printing.md
-                - name: Tilføje brugerdefinerede kontrolelementer til designerbaserede POS-visninger uden skærm
-                  href: dev-itpro/pos-control-non-screen.md
-                - name: Køre POS-eksemplerne
-                  href: dev-itpro/pos-run-samples.md
-                - name: Vejledning til implementering af enhedsstyring
-                  href: implementation-considerations-devices.md
-                - name: Visningshændelser og -handlere for POS-indkøbskurv
-                  href: dev-itpro/cart-view-handlers.md
-                - name: Føje brugerdefinerede knapper til POS-overskriftslinjen
-                  href: dev-itpro/pos-header-bar.md
-                - name: POS-uafhængige SDK-pakker
+                - name: Emballage og implementering
                   items:
-                    - name: Oversigt over POS-udvidelse
-                      href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: Introduktion til POS-udvidelser
-                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
-                    - name: Oprette et POS-udvidelsespakkeprojekt
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Oprette en .appx-fil til udvidelsespakken Modern POS
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Fejlfinde POS-udvidelser
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
-                    - name: Udvidelsesemballage og -implementering
-                      items:
-                        - name: Oprette en udvidelsespakke til Modern POS
-                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                        - name: Kodesignering af en udvidelsespakke til Modern POS (MSIX)
-                          href: dev-itpro/pos-extension/mpos-extension-signing.md
-                        - name: Oprette en udvidelsespakke til Cloud POS
-                          href: dev-itpro/pos-extension/cpos-extension-package.md
-                    - name: Overflytte en POS-udvidelse til den uafhængige pakningsmodel
-                      href: dev-itpro/pos-extension/migrate-pos-extension.md
-                    - name: Udviklingsvejledning til POS-udvidelse
-                      items:
-                        - name: Grundlæggende oplysninger om POS-udvidelse
-                          href: dev-itpro/pos-extension/pos-extension-basics.md
-                        - name: Oprette en brugerdefineret visning i POS
-                          href: dev-itpro/pos-extension/custom-pos-view.md
-                        - name: Bruge POS-kontrolelementer i udvidelser
-                          href: dev-itpro/pos-extension/controls-pos-extension.md
-                        - name: Opgaver
-                          items:
-                            - name: Bruge Knockout.js i POS-udvidelser
-                              href: dev-itpro/pos-extension/knockout-pos-extension.md
-                            - name: 'Forbruge brugerdefinerede, konsolløse API''er til Commerce'
-                              href: dev-itpro/pos-extension/consume-apis-pos.md
-            - name: Hardware Station-udvidelse
+                    - name: Oprette Commerce-betalingspakker til Finans og drift-udrulning
+                      href: dev-itpro/payment-connector-package.md
+            - name: Retail SDK (ældre)
               items:
-                - name: Integrere POS med en ny hardwareenhed
-                  href: dev-itpro/hardware-device-extension.md
-            - name: Retail Server-udvidelse
-              items:
-                - name: Kunde og forbruger-API'er for Commerce Scale Unit
-                  href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Opret udvidelses-API til Retail Server (Retail SDK version 10.0.11 og nyere)
-                  href: dev-itpro/retail-server-icontroller-extension.md
-                - name: Retail Typescript og C#-proxyer
-                  href: dev-itpro/typescript-proxy-retail-pos.md
-                - name: Bruge Retail Server-API'er i eksterne ansøgninger
-                  href: dev-itpro/consume-retail-server-api.md
-            - name: Commerce Runtime (CRT)-udvidelsesmuligheder
-              items:
-                - name: CRT-arkitektur og -konfiguration
-                  href: dev-itpro/commerce-runtime-overview.md
-                - name: CRT-tjenester
-                  href: dev-itpro/crt-services.md
-                - name: CRT-udvidelsesmønster
-                  href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Administrere hemmeligheder for Retail-kanaler
-                  href: dev-itpro/manage-secrets.md
-                - name: Udvidelse og udløsere for CRT
-                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
-                - name: Spærre transaktioner ved hjælp af udløsere
-                  href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Loyalitetsudvidelse
-                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-                - name: Udvidelsespunkter for følgesedler
-                  href: dev-itpro/extensions-shipping-carrier-integration.md
-                - name: Udvidelser til kanaldatabase
-                  href: dev-itpro/channel-db-extensions.md
-                - name: Fjerne udvidelser til enheder i skyen
-                  href: dev-itpro/retail-sdk/remove-csu-package.md
-                - name: Aktivere brugerdefineret CDX-synkronisering via filtypenavn
-                  href: dev-itpro/cdx-extensibility.md
-                - name: Definere og angive attributter for ordre
-                  href: dev-itpro/order-attributes.md
-                - name: Debitorattributter
-                  href: dev-itpro/customer-attributes.md
-                - name: Kvitteringsudvidelser
-                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                - name: Logføre udvidelseshændelser i Application Insights
-                  href: dev-itpro/commerce-application-insights.md
-                - name: Oprette asynkrone Commerce (CRT)-API'er i din forretningslogik
-                  href: dev-itpro/async-commerce-extension.md
-                - name: Forlængede kolonner i kanaldatabasen
-                  href: dev-itpro/extended-columns.md
-                - name: Forlænge Commerce Data Exchange - Tjenester i realtid
-                  href: dev-itpro/extend-commerce-data-exchange.md
-            - name: Udvide betalingsconnector
-              items:
-                - name: Oprette integration af betaling for en betalingsterminal
-                  href: dev-itpro/end-to-end-payment-extension.md
-                - name: Implementering af en betalingsconnector og betalingsenhed (hvidbog)
-                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                - name: Installere betalingsconnectorer
-                  href: dev-itpro/deploy-payment-connector.md
-                - name: Trinvis verifikation til for administrationsfakturering
-                  href: dev-itpro/incremental-capture.md
-                - name: Oprette brugerdefinerede oversatte fejlmeddelelser for udvidelser for betalingsterminaler
-                  href: dev-itpro/payment-custom-error-messages.md
-                - name: Oprette Windows-installationsprogrammer for betalingsconnectorer
-                  href: dev-itpro/create-windows-installer-payment-connector.md
-                - name: Brug af betalingsdata
-                  href: payment-connector-data-fields.md
-                - name: Aktivere beskyttelse mod dubleret betaling for betalingsconnector
-                  href: dev-itpro/duplicate-payments-protection.md
-                - name: Opret pakning af handelsbetaling til Finance and Operations-implementering
-                  href: dev-itpro/payment-connector-package.md
-            - name: Tredjepartsudvidelse for e-handel
-              items:
-                - name: Konfigurere onlinebutikker
-                  href: dev-itpro/configure-online-store.md
-                - name: Konfigurere godkendelsesprovidere
-                  href: dev-itpro/configure-authentication-providers.md
-                - name: e-handelsplatform SDK
-                  href: dev-itpro/ecommerce-platform-sdk.md
-            - name: Oversætte ressourcer til Commerce-udvidelser og labelfiler
-              href: dev-itpro/extension-resource-localization.md
+                - name: Oversigt
+                  items:
+                    - name: Retail SDK (Retail software development kit)
+                      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+                    - name: Retail SDK-prøver (software development kit)
+                      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                    - name: Ofte stillede spørgsmål om Retail SDK
+                      href: dev-itpro/retail-sdk/sdk-faq.md
+                    - name: Overflytte Retail SDK data fra Visual Studio 2015 til Visual Studio 2017
+                      href: dev-itpro/retail-sdk/migrate-sdk.md
+                - name: Miljøkonfiguration
+                  items:
+                    - name: Udvikling i skybaserede miljøer uden administratoradgang
+                      href: dev-itpro/cloud-dev-box.md
+                    - name: Detail SDK-build pipeline
+                      href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Køre POS-eksempler
+                      href: dev-itpro/pos-run-samples.md
+                - name: Reference
+                  items:
+                    - name: E-handelsplatform SDK (software development kit)
+                      href: dev-itpro/ecommerce-platform-sdk.md
+                    - name: Konfigurere onlinebutikker
+                      href: dev-itpro/configure-online-store.md
+                    - name: Konfigurere godkendelsesudbydere
+                      href: dev-itpro/configure-authentication-providers.md
+                - name: Emballage og implementering
+                  items:
+                    - name: Oprette installerbare pakker
+                      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+                    - name: Signere MPOS appx med kodesigneringscertifikat
+                      href: dev-itpro/pos-app-signing-certificate.md
+                    - name: Konfigurere POS Hybrid-appen på Android og iOS
+                      href: dev-itpro/hybridapp.md
+                    - name: Oprette og anvende branding til Retail Experience-appen
+                      href: dev-itpro/create-retail-experience-app.md
         - name: Fejlfinding
           items:
             - name: Ordrebehandling
@@ -2780,7 +2854,7 @@
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Moms på onlineordrer beregnes forkert
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Fejl ved ordresynkronisering i forbindelse med standardbetalingstjeneste
+                - name: Fejl ved ordresynkronisering i forbindelse med standardbetalingsservice
                   href: troubleshoot/synchronization-error.md
             - name: Behandling af betalinger
               items:
@@ -2816,13 +2890,17 @@
                   href: troubleshoot/pickup-store-missing.md
                 - name: Varer uden lager kan tjekkes ud
                   href: troubleshoot/items-without-inventory-checked-out.md
-                - name: 'Vurderingsjustering vises på søgeresultater og artssider, når vurderinger og gennemsyn af løsninger ikke er aktiveret'
+                - name: 'Bedømmelsesjustering vises på søgeresultater og kategorisider, når bedømmelser og gennemsyn af løsninger ikke er aktiveret'
                   href: troubleshoot/hide-ratings-refiner.md
+            - name: Kundestyring
+              items:
+                - name: 'Velkomstmail sendes ikke, når nye kunder oprettes'
+                  href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: SDK-fejlfinding
               items:
                 - name: Oprette et udviklingsmiljø til e-handel for at fejlfinde en Retail Server VM på niveau 1
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Udvikling og administration af Finance and Operations-apps
+    - name: Udvikling og administration af programmer til finans og drift
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

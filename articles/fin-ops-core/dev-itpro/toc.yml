@@ -1,19 +1,23 @@
-- name: Udvikling og administration af Finance and Operations-apps
+- name: Udvikling og administration af programmer til finans og drift
   items:
-    - name: Udvikling og administration af Finance and Operations-apps
+    - name: Udvikling og administration af programmer til finans og drift
       items:
         - name: Dokumentation for Finance and Operations-applikation
           href: ../fin-ops/index.md
-        - name: Udvikling og administration af Finance and Operations-apps
+        - name: Udvikling og administration af programmer til finans og drift
           href: index.md
         - name: Nyheder eller ændringer
           items:
-            - name: Nyheder eller ændringer i Finance and Operations-apps
+            - name: Nyheder eller ændringer i programmer til finans og drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheder eller ændringer i platformsopdateringer
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.26 (maj 2022)
+                  href: get-started/whats-new-platform-updates-10-0-26.md
+                - name: Platformsopdateringer til version 10.0.25 (april 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platformsopdateringer til version 10.0.24 (februar 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Platformsopdateringer til version 10.0.23 (januar 2022)
@@ -46,7 +50,7 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Integration mellem Finance and Operations-apps og tredjepartsservices
+            - name: Integration mellem programmer til finans og drift og tredjepartsservices
               href: data-entities/integration-overview.md
             - name: Prioritetsbaseret begrænsning
               hreF: data-entities/priority-based-throttling.md
@@ -56,19 +60,19 @@
               items:
                 - name: REST API for datastyringspakke
                   href: data-entities/data-management-api.md
-                - name: Tjenesteslutpunkter
+                - name: Serviceslutpunkter
                   items:
-                    - name: Oversigt over tjenesteslutpunkter
+                    - name: Oversigt over serviceslutpunkter
                       href: data-entities/services-home-page.md
                     - name: Fejlfinding i forbindelse med servicegodkendelse
                       href: data-entities/troubleshoot-service-authentication.md
                 - name: OData
                   href: data-entities/odata.md
-                - name: Udvikling af brugerdefinerede tjenester
+                - name: Udvikling af brugerdefinerede services
                   href: data-entities/custom-services.md
                 - name: Tilbagevendende integrationer
                   href: data-entities/recurring-integrations.md
-                - name: 'Testtjenester, der bruger værktøjer fra tredjepartstjenester'
+                - name: 'Testservices, der bruger værktøjer fra tredjepartsservices'
                   href: data-entities/third-party-service-test.md
             - name: Finance and Operations-connector
               href: data-entities/fin-ops-connector.md
@@ -144,7 +148,7 @@
                           href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                         - name: Synkronisere faktiske oplysninger om projekter til projektintegrationskladden
                           href: /dynamics365/project-operations/prod-pma/project-actuals-templates
-            - name: Forbrug af eksterne webtjenester
+            - name: Forbrug af eksterne webservices
               href: data-entities/consume-external-web-service.md
             - name: Elektroniske meddelelser
               href: ../../finance/general-ledger/electronic-messaging.md
@@ -188,7 +192,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Importere bilag ved hjælp af enheden Finanskladde
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimere dataoverførsel af Finance and Operations-apps
+                - name: Optimere dataoverførsel af programmer til finans og drift
                   href: sysadmin/optimize-data-migration.md
             - name: Udvikling for dataenheder
               items:
@@ -214,7 +218,7 @@
                   href: data-entities/validations-defaults-unmapped-fields.md
                 - name: Sikkerhed og dataenheder
                   href: data-entities/security-data-entities.md
-                - name: Bruge testværktøjer fra tredjepartstjenester
+                - name: Bruge testværktøjer fra tredjepartsservices
                   href: data-entities/third-party-service-test.md
                 - name: 'Oprette skrivebeskyttede enheder, der viser økonomiske dimensioner'
                   href: financial/read-only-entity-financial.md
@@ -234,7 +238,7 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Installere tilføjelsesprogrammet Eksport til Azure Data Lake
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations-apps i Azure Data Lake
+            - name: Programmer til finans og drift i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gøre enhedslageret tilgængeligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
@@ -430,7 +434,9 @@
                   href: deployment/install-deployable-package.md
                 - name: Fjerne installation af en pakke
                   href: deployment/uninstall-deployable-package.md
-                - name: Fejlfinde problemer med pakkeprogrammer
+                - name: Køre tilpassede X++-scripts med nul nedetid
+                  href: deployment/run-custom-scripts.md
+                - name: Fejlfinde problemer med pakkeapplikationer
                   href: deployment/deployable-package-troubleshooting.md
             - name: Installere brugerdefineret hjælp
               items:
@@ -466,7 +472,7 @@
                   href: deployment/us-gcc-deployment.md
                 - name: 'Finance og Supply Chain Management, som drives af 21Vianet i Kina'
                   href: deployment/china-local-deployment.md
-                - name: Finance and Operations-apps i Frankrig
+                - name: Programmer til finans og drift i Frankrig
                   href: deployment/france-local-deployment.md
         - name: Udvikle og tilpasse
           items:
@@ -854,6 +860,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering ved hjælp af klasse og metodeattributter
                   href: perf-test/systest-filtering.md
+                - name: Attributten SysTestRow til test af flere værdier
+                  href: perf-test/systest-row.md
                 - name: Bibliotek til godkendelsestest
                   items:
                     - name: Ressourcer til bibliotek til godkendelsestest
@@ -950,7 +958,7 @@
                   href: lifecycle-services/configuration-manager-lcs.md
                 - name: Opsætning af konfigurationsstyring
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
-            - name: Konfigurere tjenesten for opgradering af kode
+            - name: Konfigurere servicen for opgradering af kode
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Oprette eller opdatere metoder
               href: lifecycle-services/create-methodology.md
@@ -988,7 +996,7 @@
                   href: lifecycle-services/monitoring-diagnostics.md
                 - name: Bruge Azure Data Explorer til at forespørge på logfiler med rå oplysninger
                   href: lifecycle-services/azure-data-explorer.md
-            - name: Genstarte miljøtjenester
+            - name: Genstarte miljøservices
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportere en produktionsafbrydelse
               href: lifecycle-services/report-production-outage.md
@@ -1042,9 +1050,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Konfiguration af dobbeltskrivning fra Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
+                    - name: Aktivere dobbeltskrivning for eksisterende programmer til finans og drift
                       items:
-                        - name: Aktivere dobbeltskrivning for eksisterende Finance and Operations-apps
+                        - name: Aktivere dobbeltskrivning for eksisterende programmer til finans og drift
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systemkrav og forudsætninger
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1156,15 +1164,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Fejlfinde fejl ved aktiv synkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Fejlfinde fejl med dobbeltskrivning i Finance and Operations-apps
+                        - name: Fejlfinde fejl med dobbeltskrivning i programmer til finans og drift
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Fejlfinde problemer med parts- og globalt adressekartotek
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Fejlfinde fejl i forbindelse med løsningsforståelse
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Fejlfinde fejl fra opgraderinger af Finance and Operations-apps
+                        - name: Fejlfinde fejl fra opgraderinger af programmer til finans og drift
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Bekræfte dobbeltskrivningskonfiguration i Finance and Operations-apps og Dataverse
+                        - name: Bekræfte dobbeltskrivningskonfiguration i programmer til finans og drift og Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Fejlkoder for tabeltilknytningens sundhedskontrol
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1194,7 +1202,7 @@
                   href: business-events/managing-business-event-endpoints.md
                 - name: Forretningshændelser i applikation
                   href: business-events/app-business-events.md
-                - name: Forretningshændelser i arbejdsgang
+                - name: Forretningshændelser i arbejdsproces
                   href: business-events/business-events-workflow.md
                 - name: Forretningshændelsesbatch
                   href: business-events/system-business-events.md
@@ -1220,7 +1228,7 @@
                       href: business-events/how-to/how-to-servicebus.md
                     - name: Forretningshændelser og Azure Service Bus-kø
                       href: business-events/how-to/how-to-servicebus-queue.md
-                    - name: Forretningshændelser og arbejdsgangsgodkendelser
+                    - name: Forretningshændelser og arbejdsprocesgodkendelser
                       href: business-events/how-to/how-to-workflow.md
                     - name: Forretningshændelser og Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
@@ -1316,7 +1324,7 @@
                       href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
                     - name: Modulet Del
                       href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
-                    - name: Modulet Tjenester
+                    - name: Modulet Services
                       href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
                     - name: Modulet Værdi
                       href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
@@ -1532,9 +1540,9 @@
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Få support til Finance and Operations drevet af 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurere teknisk support til Finance and Operations-apps
+            - name: Konfigurere teknisk support til programmer til finans og drift
               href: lifecycle-services/support-experience.md
-            - name: Administrere supportoplevelser for Finance and Operations-apps
+            - name: Administrere supportoplevelser for programmer til finans og drift
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produktionssupport og -overvågning
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1562,7 +1570,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Sikkerhedsarkitektur
                   href: sysadmin/security-architecture.md
-                - name: Kryptering i Finance and Operations-apps
+                - name: Kryptering i programmer til finans og drift
                   href: sysadmin/encryption.md
                 - name: Angive timeout for sessionsinaktivitet
                   href: sysadmin/session-idle-timeout.md
@@ -1652,7 +1660,7 @@
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: Opgradering til AX 2012 – Planlægning med opgraderingsanalyseværktøjet
                   href: migration-upgrade/upgrade-analyzer-tool.md
-                - name: Opgradering til AX 2012 – Anslå behov ved hjælp af kodeopgraderingstjeneste
+                - name: Opgradering til AX 2012 – Anslå behov ved hjælp af kodeopgraderingsservice
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: Opgradering til AX 2012 – Installere et demonstrationsmiljø til analyse
                   href: migration-upgrade/analysis-sandbox.md
@@ -1660,8 +1668,6 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Opgradering til AX 2012 – Kontrolliste før opgradering af data
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Opgradere fra AX 2012 – SQL-transaktionsreplikering
-                  href: database/replication-setup.md
                 - name: Opgradere fra AX 2012 – Dataopgradering i selvbetjeningsmiljøer
                   href: migration-upgrade/data-upgrade-self-service.md
                 - name: Opgradering til AX 2012 – Lokale miljøer
@@ -1684,7 +1690,7 @@
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
                     - name: Datamodel for projektressourceplanlægning
                       href: migration-upgrade/data-model-changes-resource-management.md
-                    - name: Ændringer af undersystem for arbejdsgang
+                    - name: Ændringer af undersystem for arbejdsproces
                       href: migration-upgrade/workflow-subsystem.md
                     - name: 'Aggregere modeller, der bruges i stedet for kuber til analyser'
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md
@@ -1756,7 +1762,7 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Installere metadatahotfixes i udviklingsmiljøer
                   href: migration-upgrade/install-metadata-hotfix-package.md
-                - name: Foretage programrettelse af rapporteringstjenester i miljøer med én boks
+                - name: Foretage programrettelse af rapporteringsservices i miljøer med én boks
                   href: migration-upgrade/patch-reporting-service-environment.md
                 - name: Opdatere Visual Studio-udviklingsværktøjer
                   href: dev-tools/update-development-tools.md

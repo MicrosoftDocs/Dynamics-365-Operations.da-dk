@@ -1,26 +1,24 @@
 ---
 title: Kopiere kreditorer ved hjælp af delte nummerserier
 description: Dette emne forklarer, hvordan du kan bruge delte nummerserier til at kopiere en kreditor til en anden juridisk enhed, men bevare det samme kreditor-id.
-author: mikefalkner
-manager: aolson
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 320487c451dd63ca861a13fc490e60d561486e0b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979207"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358459"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiere kreditorer ved hjælp af delte nummerserier
 
@@ -38,9 +36,9 @@ Du kan også kopiere kreditorer mellem juridiske enheder, hvis du bruger manuell
 
 ## <a name="copy-a-vendor"></a>Kopiere en leverandør
 
-Hvis du vil kopiere en leverandør, skal du vælge **Ny** på listesiden **Alle leverandører** for at åbne siden **Alle leverandører, ny post**. Bemærk, at det nye leverandør-id ikke tildeles med det samme. Denne funktionsmåde adskiller sig fra funktionsmåden i tidligere versioner. Fordi du endnu ikke har valgt kreditorgruppen, kan systemet ikke bestemme den korrekte nummerserie, der skal bruges. Desuden kan det ikke bestemme, om du forsøger at oprette en ny kreditor eller kopiere en kreditor. Derfor tildeles kreditor-id'et først, når du vælger **Gem** nederst på siden.
+Hvis du vil kopiere en leverandør, skal du vælge **Ny** på listesiden **Alle leverandører** for at åbne siden **Alle leverandører, ny post**. Det nye leverandør-id ikke tildeles med det samme. Denne funktionsmåde adskiller sig fra funktionsmåden i tidligere versioner. Fordi du endnu ikke har valgt kreditorgruppen, kan systemet ikke bestemme den korrekte nummerserie, der skal bruges. Desuden kan det ikke bestemme, om du forsøger at oprette en ny kreditor eller kopiere en kreditor. Derfor tildeles kreditor-id'et først, når du vælger **Gem** nederst på siden.
 
-Hvis du vil oprette en ny kreditor, kan du fortsætte med at udfylde alle felterne, som du plejer. Når du er færdig, og du vælger **Gem**, kan du se, at kreditor-id'et tildeles automatisk. Hvis du bruger manuelle nummerserier, kan du se, at dit manuelle kreditor-id bruges.
+Hvis du vil oprette en ny kreditor, kan du fortsætte med at udfylde alle felterne, som du plejer. Når du er færdig, og du vælger **Gem**, og kreditor-id'et tildeles automatisk. Hvis du bruger manuelle nummerserier, kan du se, at dit manuelle kreditor-id bruges.
 
 Hvis du vil kopiere en kreditor, skal du i feltet **Navn** angive et eller flere tegn, der repræsenterer den kreditor, du søger efter. En søgedialogboks viser en liste over parter, der kan repræsentere den kreditor, du søger efter. Når du vælger en af parterne, vises der flere oplysninger i højre side af dialogboksen:
 
@@ -60,7 +58,10 @@ Når du kopierer en kreditor, forsøger systemet at gemme oplysningerne om den n
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Kopiere en kreditor ved hjælp af søgefunktionen til SE-nummer
 
-Du kan også kopiere kreditorer ved hjælp af søgefunktionen til SE-nummer, der findes i gruppen **Registrering** under fanen **Kreditor** i handlingsruden på siden **Alle kreditorer**. Dialogboksen **Søgning efter SE-nummer**, der vises, viser SE-numre, kreditor-id, kreditornavn og den juridiske enhed, hvor SE-id'et bruges. Du kan kun kopiere en kreditor, hvis den er i en juridisk enhed, der ikke er den aktuelle juridiske enhed. Følg disse trin, når du har valgt en kreditor, der opfylder dette kriterie.
+Du kan også kopiere kreditorer ved hjælp af søgefunktionen til **SE-nummer**, der findes i gruppen **Registrering** under fanen **Kreditor** i handlingsruden på siden **Alle kreditorer**. Dialogboksen **Søgning efter SE-nummer**, der vises, viser SE-numre, kreditor-id, kreditornavn og den juridiske enhed, hvor SE-id'et bruges. Du kan kun kopiere en kreditor, hvis den er i en juridisk enhed, der ikke er den aktuelle juridiske enhed. Følg disse trin, når du har valgt en kreditor, der opfylder dette kriterie.
 
 1. Indstillingen **Kopiér kreditor** vises. Denne indstilling er som standard angivet til **Nej**. Hvis du vil kopiere kreditoren til den aktuelle juridiske enhed, skal du angive indstillingen til **Ja**.
 2. Vælg **Vælg**. Den nye kreditor oprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
