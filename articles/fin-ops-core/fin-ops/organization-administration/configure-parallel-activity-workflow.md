@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1a47857cbe65c00ad678b2b0372c642abf01b41
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 054d62e2ff094aee987f8c6e04e2f2e173da633d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747825"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068757"
 ---
 # <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurere parallelle aktiviteter i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel aktivitet.
 
@@ -45,7 +48,7 @@ Udfør følgende trin for at tilføje og konfigurere grenene i den parallelle ak
 1. Dobbeltklik på den parallelle aktivitet for at få vist grenene i den parallelle aktivitet.
 2. Du kan tilføje en gren ved at trække elementet **Gren** fra området **Arbejdsgangselementer** til et indsættelsespunkt på lærredet. I følgende illustration vises et indsættelsespunkt.
 
-    ![Indsættelsespunkt](./media/workflow_insertionpoint.gif)
+    ![Indsættelsespunkt.](./media/workflow_insertionpoint.gif)
 
     > [!NOTE]
     > Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt.

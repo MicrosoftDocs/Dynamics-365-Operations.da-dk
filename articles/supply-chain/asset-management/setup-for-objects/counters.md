@@ -1,29 +1,26 @@
 ---
 title: Aktivmålinger
 description: Dette emne beskriver, hvordan du opretter typer af aktivmålinger i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectCounterPart, EntAssetObjectCounterLookup, EntAssetCounterType, EntAssetObjectCounterTotals
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: adadb1df7b41488fad496f937ecbc24e0761e42d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723569"
 ---
 # <a name="counters"></a>Tællere
 
@@ -65,5 +62,8 @@ En tællerregistrering kan opdateres manuelt eller automatisk baseret på produk
 
 Når aktivtyper føjes til en tællertype i **Tællere**, føjes denne tæller automatisk til aktivtyperne i oversigtspanelet **Tællere** i [Aktivtyper](../setup-for-objects/object-types.md).
 
-![Figur 1](media/071-setup-for-objects.png)
+![Figur 1.](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

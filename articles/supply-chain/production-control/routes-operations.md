@@ -1,30 +1,27 @@
 ---
 title: Ruter og operationer
 description: Dette emne indeholder en beskrivelse af ruter og operationer.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: sorenand
+ms.author: johanho
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424439"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891947"
 ---
 # <a name="routes-and-operations"></a>Ruter og operationer
 
@@ -32,8 +29,7 @@ ms.locfileid: "4424439"
 
 Dette emne indeholder en beskrivelse af ruter og operationer. En rute definerer processen til fremstilling af et produkt eller en produktvariant. Den beskriver hvert trin (operation) i produktionsprocessen, og den rækkefølge, som disse trin skal udføres i. For hvert trin definerer ruten også de krævede operationsressourcer, den krævede opstillingstid og operationstid, og hvordan omkostningerne skal beregnes.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 En rute beskriver rækkefølgen af operationer, der kræves for at producere et produkt eller en produktvariant. For hver operation definerer ruten også de operationsressourcer, der skal bruges, den tid, der kræves for at opsætte og udføre operationen, og hvordan omkostningerne skal beregnes. Du kan bruge den samme rute til at producere flere produkter, eller du kan definere en entydig rute for hvert produkt eller produktvariant. Du kan også have flere ruter til samme produkt. I dette tilfælde varierer den rute, der bruges, afhængigt af faktorer som det antal, der skal produceres. Definitionen af en rute i Supply Chain Management består af fire separate elementer, der tilsammen beskriver produktionsprocessen:
 
@@ -49,7 +45,7 @@ En rute beskriver rækkefølgen af operationer, der bruges for at producere et p
 
 En simpel rute er sekventiel, og der er kun et udgangspunkt for ruten.  
 
-[![Simpel rute](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Simpel rute.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer Supply Chain Management automatisk operationsnumrene (10, 20, 30 og så videre), når du definerer ruten.
 
@@ -57,7 +53,7 @@ Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer S
 
 Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametrene, kan du definere ruter, der har flere startpunkter og operationer, der kan køres parallelt.  
 
-[![Rutenetværk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Rutenetværk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Hver operation kan kun have en efterfølgende operation, og hele ruten skal afsluttes med en fælles operation.
@@ -68,7 +64,7 @@ Hvis du aktiverer de mere komplekse rutenetværk i produktionsstyringsparametren
 
 Nogle gange kræves en kombination af flere operationsressourcer, der har forskellige egenskaber, for at udføre en operation. For eksempel kan en samleoperation kræve en maskine, et værktøj og en arbejder for hver to maskiner til at overvåge driften. I dette eksempel kan dannes ved hjælp af parallelle operationer, hvor en operation er angivet som den primære operation, og de andre er sekundære.  
 
-[![Rute, der har primære og sekundære operationer](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Rute, der har primære og sekundære operationer.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Den primære operation repræsenterer typisk flaskehalsressourcen og bestemmer operationstiden for de sekundære operationer. Men under planlægning, der involverer kapacitetsbegrænsning, skal de ressourcer, der er planlagt for både den primære operation og de sekundære operationer, være tilgængelige og have ledig kapacitet på samme tid.  
 
@@ -82,7 +78,7 @@ En rute skal være godkendt, før den kan bruges i planlægnings- eller fremstil
 
 Hver rute kan være godkendt eller ikke-godkendt separat. Bemærk imidlertid, at hvis en rute ikke er godkendt, er alle relaterede ruteversioner heller ikke godkendt. I produktionsstyringsparametrene kan du angive, om ruter kan være ikke-godkendt, og om godkendte ruter kan ændres.  
 
-Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Operations
 En operation er trin i produktionsprocessen. Hver operation har et id og en kort beskrivelse. Følgende tabeller viser typiske eksempler på operationer fra en maskinfabrik.
@@ -188,7 +184,7 @@ Når du aktiverer en ruteversion, angiver du den som den standardruteversion, va
 
 ### <a name="electronic-signatures"></a>Elektroniske signaturer
 
-Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Produktændring, der bruger sagsstyring
 
@@ -227,7 +223,7 @@ Når du bruger denne metode, bliver siden **Operationsrelationer** din primære 
 Hvis du ikke angiver en operationsressource eller ressourcegruppe som en del af ressourcekravene for en operation, kan de relevante ressourcer fungere ved forskellige hastigheder. Den tid, der kræves for at behandle en operation, kan derfor variere. Du kan løse dette problem ved at bruge feltet **Formel** på operationsrelationen til at angive, hvordan procestiden beregnes. Følgende valgmuligheder er tilgængelige:
 
 - **Standard** – (standardindstilling) Beregningen bruger kun felterne fra operationsrelationen og ganger den angivne procestid med ordreantallet.
-- **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. **Procestid** beregnes som **Ordreantal** divideret med **Kapacitet**.
+- **Kapacitet** – Beregningen omfatter feltet **Kapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig. Den værdi, der er angivet på operationsressourcen, er kapacitet pr. time. **Procestid** beregnes som **Ordreantal** divideret med **Kapacitet**. Kapacitetsværdien er ikke specifik for en bestemt måleenhed og omregnes derfor ikke på grundlag af feltet **Kapacitetsenhed**, der blot er et beskrivende felt, som ikke bruges i beregninger.
 - **Batch** – En batchkapacitet beregnes ved hjælp af oplysninger fra operationsrelationen. Antallet af batches, og derfor procestiden, kan beregnes baseret på ordreantallet.
 - **Ressourcebatch** – Denne indstilling er grundlæggende den samme som indstillingen **Batch**. Men beregningen omfatter feltet **Batchkapacitet** fra operationsressourcen. Tiden er derfor ressourceafhængig.
 
@@ -256,7 +252,10 @@ Derfor påvirker de øvrige indstillinger (jobstyring, arbejdstid og kapacitet) 
 
 - [Ressourceegenskaber](resource-capabilities.md)
 
-- [Oversigt over elektroniske signaturer](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Oversigt over elektroniske signaturer](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

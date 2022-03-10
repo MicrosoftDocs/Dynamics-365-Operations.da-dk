@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ee2ac8636dad8d31719971b2cc17c8b923f07959
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94afc339bd156d26c5057c1e401d707aa7d517a041493659a40c7b69ad4d377a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715278"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>Log på link igen til et e-handelswebsted
 
@@ -44,13 +43,13 @@ Bekræft, at svarets URS-adresse er konfigureret korrekt i Azure AD B2C-programm
 1. Vælg det program, du oprettede i Azure AD B2C-opsætningen.
 1. Under **Svar URL-adresse** skal du sørge for, at listen indeholder poster for både URL-adressen for webstedets domæne og den URL-adresse, der genereres af e-handel, som vist i eksemplet i følgende illustration.
 
-    ![Azure AD B2C Svar til URL-adresseindgange](media/aad-b2c-reply-url.jpg)
+    ![Azure AD B2C Svar til URL-adresseindgange.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > Både URL-adressen til webstedet og den url-adresse, der genereres ved e-handel, skal være i et gyldigt URL-format, der ikke inkluderer foranstillede eller efterfølgende skråstreger.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Registrer en webstedsansøgning i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
+[Registrer en webstedsansøgning i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
 
 [Konfigurere en B2C-lejer i Commerce](../set-up-b2c-tenant.md)

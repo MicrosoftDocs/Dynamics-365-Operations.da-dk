@@ -2,11 +2,9 @@
 title: Oversigt over Dynamics 365 Commerce- og Microsoft Teams-integration
 description: Dette emne giver et overblik over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3b7872757815d4eec0393e8b1c8c6ff5467e9473
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39de59d182fd6f4cb1616a47a09b44cd249f2187
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842632"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984189"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Oversigt over Dynamics 365 Commerce- og Microsoft Teams-integration
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emne giver et overblik over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
 
@@ -53,7 +50,7 @@ Følgende forudsætninger skal være tilstede, før du kan begynde at bruge Micr
 
 I følgende illustration vises den grundlæggende arkitektur for integration af Dynamics 365 Commerce og Microsoft Teams med en San Francisco-butik som eksempel. Både Teams og Commerce POS-programmet bruger Microsoft Planner som lager, så opgaver, der udgives fra Teams, vises i POS-programmet, og ad hoc-opgaver, der er oprettet af butikschefer i POS-programmet, vises i Teams, hvilket medfører en problemfri opgavestyring mellem programmerne.    
 
-![Arkitektur for integration af Commerce og Teams](media/d365-commerce-teams-integration-conceptual-architecture.png)
+![Arkitektur for integration af Commerce og Teams.](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

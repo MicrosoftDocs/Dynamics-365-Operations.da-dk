@@ -2,7 +2,7 @@
 title: Konfigurere og behandle en udveksling på en returordre
 description: Dette emne forklarer, hvordan du konfigurerer en udveksling på en returnering i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758330"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en udveksling på en returordre
 
@@ -32,7 +32,10 @@ Der er imidlertid blevet tilføjet funktionalitet til understøttelse af scenari
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurere Commerce til at understøtte udvekslinger på returordrer
 
-Følg disse trin for at konfigurere systemet til at understøtte udvekslinger på returordrer.
+> [!NOTE]
+> I Commerce version 10.0.20 og senere er en ny funktion kaldet "Samlet behandling af returneringer i POS" tilgængelig. Hvis du aktiverer denne funktion, kræves opsætningstrinnene nedenfor ikke. **Bearbejde returneringer som salgsordrer** bliver efterhånden som salgsordrer konfigureres permanent, og du ikke kan ændre dem.
+
+Følg disse trin for at konfigurere systemet til at understøtte udvekslinger i returordrer, hvis du ikke har funktionen **Samlet returbehandling aktiveret i POS**.
 
 1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Commerce-parametre**. På oversigtspanelet **Kundeordrer** skal du angive indstillingen **Behandl returordrer som salgsordrer** til **Ja**.
 2. Kør jobbet **Global konfiguration distributionsplan** (**1110**).

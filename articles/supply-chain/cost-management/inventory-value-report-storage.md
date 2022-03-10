@@ -1,58 +1,153 @@
 ---
-title: Lagerrapport over lagerværdi
-description: I dette emne forklares det, hvordan du kan køre en lagerrapport over lagerværdi og gøre outputtet digitalt tilgængeligt enten som en interaktiv side i Microsoft Dynamics 365 Supply Chain Management eller som et eksporteret dokument i et af de tilgængelige formater.
-author: AndersGirke
-ms.date: 04/17/2020
+title: Lagerværdirapporter
+description: I dette emne beskrives, hvordan du konfigurerer, genererer og bruger lagerværdirapporter. Disse rapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb.
+author: banluo-ms
+ms.date: 10/19/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
-ms.search.validFrom: 2020-04-17
+ms.author: banluo
+ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1946ca72aa92b644e15e8a625577bdf4ef1506ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577738"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103934"
 ---
-# <a name="inventory-value-storage-report"></a>Lagerrapport over lagerværdi
+# <a name="inventory-value-reports"></a>Lagerværdirapporter
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du kan køre en **lagerrapport over lagerværdi** og gøre outputtet digitalt tilgængeligt enten som en interaktiv side i Microsoft Dynamics 365 Supply Chain Management eller som et eksporteret dokument i et af de tilgængelige formater.
+Lagerværdirapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb. Du kan få vist rapporterne på mange forskellige måder. Du kan f.eks. få vist totaler eller posteringer eller filtrere efter varer eller et tidsinterval. Du kan få vist vareforbrugsværdier eller IGVF-værdier (igangværende arbejde) og angive andre indstillinger.
+
+Du kan udføre følgende opgaver i rapporter over lagerværdier:
+
+- Afstemme mellem finans og lager.
+- Spørge efter lagerbeholdning og værdier for en bestemt periode.
+- Oprette rapportkonfigurationer, der er tilpasset et bestemt formål.
+- Gemme rapportkonfigurationer, så de kan bruges flere gange.
+- Tilføje områder i filtrering af data, når du kører en rapport.
+
+## <a name="types-of-inventory-value-report"></a>Typer af lagerværdirapporter
+
+Der findes to typer lagerværdirapporter: **Lagerværdi** (standardrapporten) og **Lagerværdirapportlager**.
+
+### <a name="standard-inventory-value-report"></a>Standardlagerværdirapport
+
+Standardrapporten **Lagerværdi** er en simpel rapport, som giver dig mulighed for at vælge de oplysninger, der skal medtages, og derefter vise disse oplysninger på skærmen. Resultaterne gemmes ikke. Den giver heller ikke interaktive funktioner til filtrering, detailudledning, gennemsyn eller eksport. Derfor anbefales det, at du i de fleste tilfælde bruger rapporten **Lagerværdirapportlager**.
+
+### <a name="inventory-value-report-storage-report"></a>Rapporten Lagerværdirapportlager
+
+Rapporten **Lagerværdirapportlager** leverer output enten som en interaktiv side i Microsoft Dynamics 365 Supply Chain Management eller som et eksporteret dokument i et af flere formater.
 
 Når du får vist rapporten i din browser, reguleres kolonner og aggregerede saldi dynamisk, afhængigt af det layout, som du har konfigureret. Du kan sortere resultaterne, filtrere dem, gå mere i dybden i dataene og meget mere.
 
 Rapportresultater gemmes i dataenheden **Lagerværdi**. Du kan derfor filtrere og eksportere resultaterne til et format, f.eks. kommaseparerede værdier (CSV) eller Microsoft Excel-format.
 
-**Lagerrapporten over lagerværdi** er nyttig, når outputtet indeholder mange linjer. Du har f.eks. 50.000 varer, og 300 butikker er oprettet som lagersteder. Hvis du i dette tilfælde anmoder om lagerafslutningssaldi pr. vare, sted og lagersted, indeholder outputtet mange linjer.
+**Lagerværdirapportlager** er nyttig, når outputtet indeholder mange linjer. Du har f.eks. 50.000 varer, og 300 butikker er oprettet som lagersteder. Hvis du i dette tilfælde anmoder om lagerafslutningssaldi pr. vare, sted og lagersted, indeholder outputtet mange linjer.
 
 > [!NOTE]
-> Rapporten omfatter ikke subtotaler, der er defineret i rapportlayoutet. Den omfatter heller ikke finanssaldi, selvom de er defineret i rapportlayoutet. Afstemning til finans skal ske ved hjælp af råbalance.
+> Rapporten **Lagerværdirapportlager** omfatter ikke subtotaler, der er defineret i rapportlayoutet. Den omfatter heller ikke finanssaldi, selvom de er defineret i rapportlayoutet. Afstemning til finans skal ske ved hjælp af råbalance. Standardrapporten for **Lagerværdi** indeholder dog disse subtotaler og saldi.
 
-## <a name="turn-on-the-inventory-value-storage-feature"></a>Aktivere lagerfunktionen for lagerværdi
+## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Lagerværdirapportlager
 
-Før du kan generere en **lagerrapport over lagerværdi**, skal du aktivere funktionen i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Lagerværdirapportlager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul** – Omkostningsstyring
-- **Funktionsnavn** – Lagerværdi af lager
+## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Definere konfigurationer af lagerværdirapport
 
-## <a name="generate-an-inventory-value-storage-report"></a>Generere en lagerrapport over lagerværdi
+Du kan bruge siden **Lagerværdirapporter** til at konfigurere det indhold, der medtages i de forskellige typer lagerværdirapporter. Du kan definere ethvert antal rapporttyper. Hver gang du opretter en af typerne af lagerværdirapporten, skal du vælge en rapporttype.
 
-Udfør følgende trin for at generere og gemme en **lagerrapport over lagerværdi**.
+1. Gå til **Omkostningsstyring \> Konfiguration af regnskabspolitik for lager \> Lagerværdirapporter**.
+1. Udfør ét af følgende trin:
+
+    - Hvis du vil redigere en eksisterende rapport, skal du vælge den i listeruden og derefter vælge **Rediger** i handlingsruden.
+    - Hvis du vil oprette en ny rapport, skal du vælge **Ny** i handlingsruden.
+
+1. Udfyld følgende felter i overskriften til den nye eller valgte rapport:
+
+    - **Id** – Angiv et kort id for rapporten. Denne værdi skal være entydig for alle rapportkonfigurationer af lagerværdier. Den kan ikke redigeres, når du har gemt en ny konfiguration.
+    - **Navn** – Angiv et sigende navn til rapporten.
+
+1. Hvis du er ved at oprette en ny rapportkonfiguration, skal du vælge **Gem** i handlingsruden for at gøre de resterende felter tilgængelige.
+1. I oversigtspanelet **Generelt** skal du indstille følgende felter:
+
+    - **Datointerval** – Vælg et foruddefineret datointerval. Du kan tilsidesætte dette datointerval, når du kører rapporten.
+    - **Interval** – Vælg enten *Bogføringsdato* eller *Transaktionstidspunkt*, afhængigt af den dato og det klokkeslæt, der skal bruges, når der hentes poster til rapporten.
+    - **Dimensionssæt** – Vælg det sæt dimensioner, som dataene skal køres for. (Dimensionerne er defineret i finansmodulet). Du kan f.eks. køre data for *Hovedkonto* eller for *Hovedkonto + forretningsenhed*. Det dimensionssæt, du vælger, må ikke have mere end to dimensioner. Du kan finde flere oplysninger under [Økonomiske dimensionssæt](../../finance/general-ledger/financial-dimension-sets.md).
+
+1. I oversigtspanelet **Kolonner** skal du indstille følgende felter. Disse felter styrer de kolonner, rapporten indeholder, og de typer data, som disse kolonner indeholder.
+
+    - **Lager** – Angiv denne indstilling til *Ja* for at få vist lagerværdierne. Du kan derefter afstemme disse værdier med finanskontosaldi.
+    - **IGVF** – Angiv denne indstilling til *Ja* for at få vist IGVF-værdierne. Du kan derefter afstemme disse værdier med IGVF-kontosaldi i finans. Når du angiver denne indstilling til *Ja*, viser rapporten kun de fysiske antal og beløb for lager, der har IGVF-status. Produktionsordrer med IGVF-status er plukket eller færdigmeldt, men de er ikke afsluttet.
+    - **Udskudt vareforbrug** – Angiv denne indstilling til *Ja* for at få vist en kolonne, der viser fysiske lagerantal og -beløb for udskudt vareforbrug. Udskudt vareforbrug vises ved hjælp af fysiske antal og beløb, fordi det modregner følgeseddelantal og -beløb.
+    - **Vareforbrug** – Angiv denne indstilling til *Ja* for at få vist en kolonne, der viser økonomiske antal og beløb for vareforbrug. Vareforbrug vises ved hjælp af økonomiske antal og beløb, fordi det modregner fakturaantal og -beløb.
+    - **Drift** – Angiv denne indstilling til *Ja* for at få vist en kolonne, der viser det økonomiske beløb, der er bogført til driftskontiene for lageret.
+    - **Udskriv akkumulerede kontoværdier til sammenligning** – Angiv denne indstilling til *Ja*, hvis du vil have vist en kolonne med saldoen på finanskontoen. På denne måde behøver du ikke kontrollere råbalancen. Denne indstilling fungerer kun sammen med standardrapporten **Lagerværdi**, ikke med rapporten **Lagerværdirapportlager**. Når du har angivet denne indstilling til *Ja*, skal du bruge følgende felter til at angive hver finanskonto, du vil medtage, afhængigt af de indstillinger for **Økonomisk position**, du har aktiveret.
+
+        > [!NOTE]
+        > Hvis du vælger en *totalkonto* i et af disse felter, vises både beløbet for hver lagerkonto, der er medtaget i totalkontoen, og totalkontobeløbet.
+
+        - **Lagerkonto** – Angiv den finanskonto, der skal vises lageroplysninger for. (Både indstillingen **Lager** og indstillingen **Udskriv akkumulerede kontoværdier til sammenligning** skal angives til *Ja*).
+        - **IGVF-konto** – Angiv den finanskonto, der skal vises IGVF-oplysninger for. (Både indstillingen **IGVF** og indstillingen **Udskriv akkumulerede kontoværdier til sammenligning** skal angives til *Ja*).
+        - **Konto for udskudt vareforbrug** – Angiv den finanskonto, der skal vises oplysninger om udskudt vareforbrug for. (Både indstillingen **Udskudt vareforbrug** og indstillingen **Udskriv akkumulerede kontoværdier til sammenligning** skal angives til *Ja*).
+        - **Vareforbrugskonto** – Angiv den finanskonto, der skal vises vareforbrugsoplysninger for. (Både indstillingen **Vareforbrug** og indstillingen **Udskriv akkumulerede kontoværdier til sammenligning** skal angives til *Ja*).
+
+    - **Opsummer fysiske og økonomiske værdier** – Angiv denne indstilling til *Ja* for at få vist en kolonne med det samlede lagerantal og lagerbeløb (en oversigt over både fysiske og økonomiske lagerværdier). Hvis denne indstilling er angivet til *Nej*, viser rapporten både fysiske og økonomiske lagerværdier.
+    - **Medtag ikke bogført i Finans** Angiv denne indstilling til *Ja* for at få vist en kolonne med de transaktioner, der aldrig er bogført i Finans. Posteringerne for følgende varetyper kan ikke bogføres i finansmodulet:
+
+        - Modtagne og endnu ikke fakturerede varer, når indstillingen **Bogfør fysisk lager** er ryddet for den relevante varemodelgruppe.
+        - Modtagne og endnu ikke fakturerede varer, når indstillingen **Bogfør produktkvittering i finans** er ryddet i oversigtspanelet **Produktkvittering** under fanen **Generelt** på siden **Kreditorparametre** (**Kreditor \> Konfiguration \> Kreditorparametre**).
+
+    - **Beregn gennemsnitlig enhedsomkostning** – Angiv denne indstilling til *Ja* for at få vist en kolonne med den gennemsnitlige enhedsomkostning. Den gennemsnitlige enhedsomkostning er det samlede antal divideret med det samlede beløb.
+    - **Samlet antal og værdi** – Angiv denne indstilling til *Ja* for at få vist kolonner med det samlede antal fysisk lager (og økonomiske antal) og det samlede beløb for fysisk lager (og økonomiske beløb). Du kan kun angive denne indstilling til *Ja*, hvis indstillingen **Opsummer fysiske og økonomiske værdier** er angivet til *Nej*.
+    - **Lagerdimensioner** – I dette gitter skal du markere afkrydsningsfeltet **Vis** for hver dimension, der skal vises i rapporten. Kun dimensioner, hvor indstillingen **Økonomisk lager** er aktiveret, viser værdier i rapporten. Andre dimensioner viser kun tomme kolonner. For de dimensioner, du vælger at vise, kan du markere afkrydsningsfeltet **Total**, hvis du også vil medtage totaler.
+    - **Ressource-id** – Angiv indstillingen **Vis** til *Ja* for at få vist en kolonne, der identificerer varen for hver række. Angiv indstillingen **Total** til *Ja*, så totaler også medtages. Afhængigt af den varetype, der er angivet i hver række, viser kolonnen en af følgende typer oplysninger:
+
+        - **Materiale** – Kolonnen viser `ItemID`-feltværdien for den relevante materialepost.
+        - **Arbejde** – Kolonnen viser `WorkCenterID`-feltværdien for den relevante arbejdspost.
+        - **Indirekte omkostning** – Kolonnen viser `CodeID`-feltværdien for den relevante omkostningspost.
+
+        Hvis indstillingen **Vis** er angivet til *Nej* for både feltet **Ressource-id** og feltet **Ressourcegruppe**, vil du kun få vist en samlet lagerværdi, der er baseret på de lagerdimensioner, du har valgt.
+
+    - **Ressourcegruppe** – Angiv indstillingen **Vis** til *Ja* for at få vist en kolonne, der identificerer ressourcegruppen for hver række. Angiv indstillingen **Total** til *Ja*, så totaler også medtages. Afhængigt af den varetype, der er angivet i hver række, viser kolonnen en af følgende typer oplysninger:
+
+        - **Materiale** – Kolonnen viser `ItemGroup`-feltværdien for den relevante materialepost.
+        - **Arbejde** – Kolonnen viser `WorkcenterGroup`-feltværdien for den relevante arbejdspost.
+        - **Indirekte omkostning** – Kolonnen viser `CostGroup`-feltværdien for den relevante omkostningspost. (Værdien `CostGroupType` skal være *Indirekte*).
+
+        Hvis indstillingen **Vis** er angivet til *Nej* for både feltet **Ressource-id** og feltet **Ressourcegruppe**, vil du kun få vist en samlet lagerværdi, der er baseret på de lagerdimensioner, du har valgt.
+
+1. I oversigtspanelet **Rækker** skal du indstille følgende felter: Med disse felter kan du føje tilsvarende IGVF-relaterede undersektioner til rapporten eller fjerne dem.
+
+    - **Materiale** – Angiv denne indstilling til *Ja* for at få vist oplysninger om materialer. *Materiale* er en standardressourcetype, da materialer skal medtages i alle rapportkonfigurationer for at give pålideligt output.
+    - **Arbejde** – Angiv denne indstilling til *Ja* for at få vist arbejdsomkostninger for IGVF.
+    - **Indirekte omkostning** – Angiv denne indstilling til *Ja* for at få vist indirekte omkostninger for IGVF.
+    - **Direkte outsourcing** – Angiv denne indstilling til *Ja* for at få vist direkte outsourcing for IGVF. Disse oplysninger bruges til underleverandørarbejde.
+    - **Detaljeringsniveau** – Vælg en visningsindstilling for rapporten:
+
+        - *Transaktioner* – Få vist alle relevante transaktioner i rapporten. Bemærk, at du måske oplever problemer med ydeevne, når du får vist rapporter, der indeholder et stort antal transaktioner. Hvis du vil bruge denne visningsindstilling, anbefales det derfor, at du bruger rapporten **Lagerværdirapportlager**.
+        - *Totaler* – Få vist det samlede resultat.
+
+    - **Medtag primosaldo** – Angiv denne indstilling til *Ja* for at vise primosaldoen. Denne indstilling er kun tilgængelig, når feltet **Detaljeringsniveau** er angivet til *Transaktioner*.
+
+## <a name="generate-an-inventory-value-report-storage-report"></a>Generere en rapport over lagerværdirapportlager
+
+Udfør følgende trin for at generere og gemme en **Lagerværdirapportlager** som rapport.
 
 1. Gå til **Omkostningsstyring \> Forespørgsler og rapporter \> Lagerrapport over lagerværdi**.
-1. Vælg **Ny**.
-1. I dialogboksen **Lagerværdi** skal du angive følgende værdier for at definere, hvilke poster der skal medtages i rapporten:
+1. Gå til handlingsruden, og vælg **Ny**.
+1. Angiv følgende felter i dialogboksen **Lagerværdi** i oversigtspanelet **Parametre**:
 
-    - Angiv et entydigt navn til rapporten i oversigtspanelet **Parametre**, og brug felterne i sektionen **Datointerval** til at definere, hvilke poster der skal medtages i rapporten. Hvis du vil definere datointervallet, kan du enten vælge et foruddefineret interval (i forhold til rapportgenereringsdatoen ) i feltet **Datointervalkode** eller vælge bestemte datoer i felterne **Fra dato** og **Til dato**.
-    - I oversigtspanelet **Poster, som skal medtages** skal du konfigurere filtre og begrænsninger for at definere, hvilke data der skal medtages i rapporten.
-    - Angiv, hvordan, hvornår og hvor ofte rapporten skal genereres, i oversigtspanelet **Kør i baggrunden**.
+    - **Navn** – Angiv et entydigt navn til rapporten.
+    - **Id** – Vælg den [konfiguration af lagerværdirapporten](#report-configuration), der skal bruges til rapporten. Konfigurationen opretter indstillinger for de kolonner og rækker, der skal medtages i rapporten.
+    - **Datointerval** – Brug felterne i dette område til at definere, hvilke poster der medtages i rapporten. Hvis du vil definere datointervallet, kan du enten vælge et foruddefineret interval (i forhold til rapportgenereringsdatoen ) i feltet **Datointervalkode** eller vælge bestemte datoer i felterne **Fra dato** og **Til dato**.
+
+1. I oversigtspanelet **Poster, som skal medtages** skal du konfigurere filtre og begrænsninger for at definere, hvilke data der skal medtages i rapporten. Vælg **Filter** for at åbne en standarddialogboks til forespørgselseditor, hvor du kan definere udvælgelseskriterier, sorteringskriterier og joinforbindelser. Felterne fungerer på samme måde som for andre typer af forespørgsler i Supply Chain Management. Alle disse filtre anvendes på lagertransaktioner, men ikke på finanssaldoen. Husk på denne funktionalitet, når du konfigurerer filtrene. Ellers vil du muligvis se en uoverensstemmelse mellem lageret og finansmodulet.
+1. Angiv, hvordan, hvornår og hvor ofte rapporten skal genereres, i oversigtspanelet **Kør i baggrunden**. Felterne fungerer på samme måde som for andre typer af [baggrundsjob](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management.
 
     > [!NOTE]
     > Denne rapport køres altid som en del af et batchjob.
@@ -61,40 +156,43 @@ Udfør følgende trin for at generere og gemme en **lagerrapport over lagerværd
 
 Når batchjobbet er fuldført, vises rapporten på siden **Lagerrapport over lagerværdi**. Du skal måske opdatere siden for at se rapporten.
 
-## <a name="explore-an-inventory-value-storage-report"></a>Undersøge en lagerrapport over lagerværdi
+> [!IMPORTANT]
+> I den valgte rapportkonfiguration til lagerværdi kan du få en forkert primosaldo, hvis du vælger samme dato i både feltet **Fra dato** og feltet **Til dato**, og hvis du også har angivet indstillingen **Medtag primosaldo** til *Ja*.
+
+## <a name="explore-an-inventory-value-report-storage-report"></a>Undersøge en Lagerværdirapportlager-rapport
 
 Når du har genereret en rapport, kan du til enhver tid se og udforske den på følgende måde.
 
 1. Gå til **Omkostningsstyring \> Forespørgsler og rapporter \> Lagerrapport over lagerværdi**.
-1. Vælg en rapport på listen.
-1. Vælg **Vis detaljer** for at få vist rapportindholdet.
+1. Vælg en rapport på listen. På siden vises detaljer om [konfigurationen af lagerværdirapporten](#report-configuration), der blev brugt til at generere den valgte rapport.
+1. Vælg **Vis detaljer** i handlingsruden for at få vist rapportindholdet.
 1. Undersøg rapporten ved at følge disse trin:
 
     - Du kan vælge næsten enhver kolonneoverskrift for at sortere eller filtrere gitteret efter værdier i kolonnen på samme måde som de fleste standardsider i Supply Chain Management.
     - Brug feltet **Filter** til at filtrere rapporten efter en hvilken som helst værdi i en af de tilgængelige kolonner.
     - Brug menuen Vis (oven over **Filter**-feltet) til at gemme og indlæse dine favoritkombinationer af sorterings- og filtreringsindstillinger.
 
-## <a name="export-an-inventory-value-storage-report"></a>Eksportere en lagerrapport over lagerværdi
+## <a name="export-an-inventory-value-report-storage-report"></a>Eksportere en Lagerværdirapportlager-rapport
 
 Hver rapport, du opretter, gemmes i dataenheden **Lagerværdi**. Du kan bruge standardfunktionerne til datastyring i Supply Chain Management til at eksportere data fra denne enhed til alle understøttede dataformater, herunder CSV eller Excel-format.
 
-I følgende eksempel vises, hvordan du kan eksportere en **lagerrapport over lagerværdi**.
+I følgende eksempel vises, hvordan du kan eksportere en **Lagerværdirapportlager**-rapport.
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Datastyring**.
-1. Vælg feltet **Eksport** i sektionen **Import/eksport**. 
+1. Vælg feltet **Eksport** i sektionen **Import/eksport**.
 1. På siden **Eksport**, der vises, skal du konfigurere eksportjobbet. Angiv først et gruppenavn til jobbet.
 1. Vælg **Tilføj enhed** i sektionen **Valgte enheder**.
 1. Angiv følgende felter i den viste dialogboks:
 
-    - **Enhedsnavn** – Vælg **Lagerværdi**.
+    - **Enhedsnavn** – Vælg *Lagerværdi*.
     - **Målformat for data** – Vælg det format, der skal eksporteres data til.
 
 1. Vælg **Tilføj** for at tilføje den nye række, og vælg derefter **Luk** for at lukke dialogboksen.
 1. Normalt skal du eksportere én rapport ad gangen. Hvis du vil eksportere en enkelt rapport, skal du oprette et filter for den række, du lige har føjet til dialogboksen **Forespørgsel**. På denne måde kan du definere, hvilken rapport fra enheden **Lagerværdi** der skal medtages i eksporten. Følg disse trin for at angive følgende filterindstillinger for at eksportere en enkelt rapport:
 
     1. Under fanen **Område** skal du vælge **Tilføj** for at tilføje en ny række.
-    2. Angiv feltet **Tabel** til **Lagerværdi**.
-    3. Angiv feltet **Afledt tabel** til **Lagerværdi**.
+    2. Angiv feltet **Tabel** til *Lagerværdi*.
+    3. Angiv feltet **Afledt tabel** til *Lagerværdi*.
     4. Angiv feltet **Felt** til det felt, du vil filtrere efter. Du skal normalt bruge feltet **Udførelsesnavn** og/eller feltet **Udførelsestid**.
     5. Angiv feltet **Kriterier** til den værdi, du vil søge efter i det valgte felt. (Hvis du har valgt feltet **Udførelsesnavn** i det foregående trin, vil denne værdi være navnet på rapporten. Hvis du har valgt feltet **Udførelsestid**, vil det være det tidspunkt, hvor rapporten blev oprettet).
     6. Hvis det er nødvendigt, kan du tilføje flere rækker under fanen **Område**, indtil du entydigt har identificeret den rapport, du søger efter.
@@ -106,5 +204,47 @@ I følgende eksempel vises, hvordan du kan eksportere en **lagerrapport over lag
 
 Du kan finde flere oplysninger om, hvordan du bruger datastyring til at eksportere data i [Oversigt over dataimport og eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
+## <a name="generate-a-standard-inventory-value-report"></a>Generere en standardrapport over lagerværdi
+
+Du kan bruge følgende procedure til at oprette en standardrapport over **Lagerværdi**.
+
+1. Gå til **Omkostningsstyring \> Forespørgsler og rapporter \> Lagerregnskab - statusrapporter \> Lagerværdi**.
+1. Angiv følgende felter i dialogboksen **Lagerværdirapport** i oversigtspanelet **Parametre**:
+
+    - **Navn** – Angiv et entydigt navn til rapporten.
+    - **Id** – Vælg den [konfiguration af lagerværdirapporten](#report-configuration), der skal bruges til rapporten. Konfigurationen opretter indstillinger for de kolonner og rækker, der skal medtages i din rapport.
+    - **Datointerval** – Brug felterne i dette område til at definere, hvilke poster der medtages i rapporten. Hvis du vil definere datointervallet, kan du enten vælge et foruddefineret interval (i forhold til rapportgenereringsdatoen ) i feltet **Datointervalkode** eller vælge bestemte datoer i felterne **Fra dato** og **Til dato**.
+
+1. I oversigtspanelet **Poster, som skal medtages** skal du konfigurere filtre og begrænsninger for at definere, hvilke data der skal medtages i rapporten. Vælg **Filter** for at åbne en standarddialogboks til forespørgselseditor, hvor du kan definere udvælgelseskriterier, sorteringskriterier og joinforbindelser. Felterne fungerer på samme måde som for andre typer af forespørgsler i Supply Chain Management.
+1. Angiv, hvordan, hvornår og hvor ofte rapporten skal genereres, i oversigtspanelet **Kør i baggrunden**. Felterne fungerer på samme måde som for andre typer af [baggrundsjob](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management.
+1. Vælg **OK** for at anvende dine indstillinger og dialogboksen. Rapporten vises.
+
+## <a name="reading-inventory-value-reports"></a>Læsning af lagerværdirapporter
+
+Dette afsnit indeholder en vejledning i, hvordan du kan læse og forstå en rapport over lagerværdier.
+
+Supply Chain Management understøtter følgende to vigtige koncepter, der har med lagerstatus at gøre:
+
+- **Økonomisk opdateret** – Dette begreb angiver, at lagertransaktionerne allerede er faktureret. For produktionsordrer angiver det afslutningen af en produktionsordre.
+- **Fysisk opdateret** – Dette begreb angiver, at lagertransaktionerne endnu ikke er faktureret, men de er modtaget eller afsendt. I forbindelse med produktionsordrer angiver det, at materiale er plukket, eller at produktionsordren er færdigmeldt.
+
+Når du forstår disse to begreber, vil det være let at forstå følgende kolonner i rapportens output:
+
+- **Lager: økonomisk antal** – Det antal, der er opdateret i økonomisk forstand.
+- **Lager: økonomisk beløb** – Beløbsværdien af det lager, der er opdateret i økonomisk forstand.
+- **Lager: bogført fysisk antal** – Det antal, der er opdateret i fysisk forstand.
+- **Lager: bogført fysisk beløb** – Beløbsværdien af det lager, der er opdateret i fysisk forstand.
+- **Lager: ikke bogført fysisk antal** – Det antal, der har lagertransaktioner, men som ikke er bogført i Finans. Du har f.eks. en varemodelgruppe, hvor indstillingerne **Bogfør fysisk lager** og **Bogfør økonomisk lager** er ryddet, og du har en vare, der er knyttet til den pågældende gruppe. Derefter opretter du en indkøbsordre, modtager den og fakturerer den. Hvis du på dette tidspunkt gennemser rapporten over lagerværdien for varen, vil du se, at antallet og værdien på indkøbsordren vises i kolonnerne **Lager: Fysisk antal, der ikke er bogført** og **Lager: Fysisk beløb, der ikke er bogført**.
+- **Lager: Fysisk beløb, der ikke er bogført** – Du kan konfigurere rapporterne, så de viser ikke-bogførte beløb. Men hvis du bruger rapporten til lagerafstemning, skal du ikke bruge denne værdi. Ellers bogføres beløbet ikke i Finans.
+- **Lager: Antal** – Det samlede antal af alle antalskolonner i rapporten.
+- **Lager: Beløb** – Det samlede antal af alle beløbskolonner i rapporten. Når du skal udføre lagerafstemning, skal du ikke bruge denne kolonne, hvis rapporten indeholder kolonnen **Lager: Fysisk beløb, der ikke er bogført**. I dette tilfælde skal du udelade **Lager: Fysisk beløb, der ikke er bogført** fra det samlede beløb.
+- **Gennemsnitlig enhedsomkostning** – Det samlede beløb divideret med det samlede antal.
+
+Du vil typisk bruge en rapport over lagerværdi til at få vist lagerværdien og -antallet. Sommetider viser rapporten ikke alle de relevante lagerdimensioner. Hvis du ikke kan se de forventede dimensioner, skal du validere følgende indstillinger:
+
+- Gennemgå varelager og sporingsdimensionsgrupper. Kun dimensioner, hvor indstillingen **Økonomisk lager** er aktiveret, kan vises i rapporten.
+- Gå til **Omkostningsstyring \> Konfiguration af regnskabspolitik for lager \> Lagerværdirapporter**, vælg den rapportkonfiguration, du brugte til at oprette rapporten, og sørg for, at de nødvendige lagerdimensioner er valgt i kolonnen **Vis**.
+
+Du kan f.eks. have en vare med varenummer *A0001*. I lagringsdimensionsgruppen er det kun lokationen, der er aktiveret til økonomisk lager. Lokation og lagersted er begge aktiveret til fysisk lager. I sporingsdimensionsgruppen er batchnummeret aktiveret for fysisk lager, men ikke for økonomisk lager. Du kan derefter bruge en rapportkonfiguration, hvor lokation, lagersted og batchnummer alle er valgt. Når du får vist rapporten, kan du kun se en værdi for lokationen. Kolonnerne for lagerstedet og batchnummeret er tomme. Som dette eksempel viser, kan lagerværdirapporter kun vise lagerdimensioner, der er aktiveret til økonomisk lager.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

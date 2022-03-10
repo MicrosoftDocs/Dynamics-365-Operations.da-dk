@@ -2,13 +2,11 @@
 title: Oprette månedlige kladdeposter i en batch
 description: Dette emne forklarer, hvordan du opretter kladdeposteringer i en batch for at øge effektiviteten, når de månedlige leasingudgifter registreres.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: Dialog
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f46f289c58c32c535dd20fb510cf2812625c49c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 22e2892a6866123ecf0e72511bdce19fe12895df
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344847"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>Oprette månedlige kladdeposter i en batch
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dette emne forklarer, hvordan du opretter kladdeposteringer i en batch for at øge effektiviteten, når de månedlige leasingudgifter registreres. Batchafvikling kan bruges til at oprette kladdeposter fra flere tidsplaner. Disse kladdeposteringer kan omfatte leasingbetalinger, passiv afskrivning, brugsretaktiv (ROU) afskrivning af aktiver og udgifter til udført omkostning. Du kan også bruge batchbehandling til at udføre den første anerkendelse af flere leasingaftaler samtidigt eller til at oprette overgangsjusteringer for flere leasingaftaler på samme tid.
 
@@ -36,3 +36,7 @@ Hvis du vil oprette et batchjob eller behandle betalingsfakturaer, afskrivninger
 > Efterfølgende posteringer, f. eks. planer for amortisering af passiver, betalinger, afskrivning og udgifter, bogføres først, når den første godkendelse af de tilsvarende leasingaftaler er bogført.
 >
 > Kladdeposterne oprettes, men de bogføres ikke, før du vælger kommandoen **Kør**.
+
+Hvis du vil bogføre den oprindelige genkendelseskladde på en anden dato end for leasingens ikrafttrædelsesdato, skal du vælge **Tildeling af bogføringsdato for oprindelig godkendelse**. Feltet **Dato** vises, så du kan angive den korrekte bogføringsdato.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

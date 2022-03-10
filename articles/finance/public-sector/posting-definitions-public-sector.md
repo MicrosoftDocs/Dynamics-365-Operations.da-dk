@@ -1,7 +1,7 @@
 ---
 title: Bogføringsdefinitioner i den offentlige sektor
-description: Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
-author: ShylaThompson
+description: Dette emne indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 27271
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af57e73b29728d89d2f7ae6ec16d2e477b7f2ef8d0a0ab00a942d326bca980c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c857d369c4eaebd6d01a57eaa8515662799c72b9
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763060"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817791"
 ---
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
+Dette emne indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
 
 I denne artikel beskrives bogføringsdefinitionernes tilgængelige funktioner for den offentlige sektor. Før du læser dette emne, skal du være fortrolig med bogføringsdefinitioner.
 
@@ -82,7 +82,7 @@ Du kan angive konti, dimensionsværdier og beløb til budgetkontoposten på side
 
 | Konto + dimensioner               | Debet | Kredit | Kommentar |
 |------------------------------------|-------|--------|---------|
-| 101-606400-OU\_1-OU\_3566-Training |       | 250,00 |         |
+| 101-606400-OU\_1-OU\_3566-Training |  &nbsp; | 250,00 |  &nbsp;  |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansposter genereret fra bogføringsdefinitionen
 
@@ -90,8 +90,8 @@ Genererede finansposter oprettes til registrering af de oprindelige budget i hve
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar |
 |----------------------|--------|--------|---------|
-| 101-36300            |        | 250,00 |         |
-| 101-36350            | 250,00 |        |         |
+| 101-36300            | &nbsp; | 250,00 | &nbsp;  |
+| 101-36350            | 250,00 | &nbsp; | &nbsp;  |
 
 I dette eksempel matcher middeldimensionen og kontodelen af udgiftskontostrukturen kriterierne for bogføringsdefinitionen. Derfor oprettes de genererede finansposter, når 101-606400-OU\_1-OU\_3566-Training evalueres.
 
@@ -143,7 +143,7 @@ Du kan angive en enkelt forfalden til-konto i kassererens midler for alle midler
 
 | Kontostruktur | Genereret kontonummer                                                           | Genereret debet/kredit |
 |-------------------|------------------------------------------------------------------------------------|------------------------|
-|                   | Ingen genererede poster er defineret for søgeposteringen for kassererens midler. |                        |
+|    &nbsp;         | Ingen genererede poster er defineret for søgeposteringen for kassererens midler. |    &nbsp;              |
 
 #### <a name="settlement-posting-definition--match-criteria"></a>Udligningsbogføringsdefinition – søgekriterier
 
@@ -190,15 +190,15 @@ Følgende bilag er repræsentative for et typisk scenarie for faktura, betaling 
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar             |
 |----------------------|--------|--------|---------------------|
-| 101 - 66100 - 150    | 250,00 |        | Udgiftskonto |
-| 101 - 24210          |        | 250,00 | Kreditor    |
+| 101 - 66100 - 150    | 250,00 | &nbsp; | Udgiftskonto |
+| 101 - 24210          | &nbsp; | 250,00 | Kreditor    |
 
 ### <a name="accounts-payable-payment-voucher"></a>Betalingsbilag for Kreditor
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar           |
 |----------------------|--------|--------|-------------------|
-| 999 - 24210          | 250,00 |        | Oversigt over kreditorer    |
-| 999 - 11020          |        | 250,00 | Bank-/kontantkonto |
+| 999 - 24210          | 250,00 | &nbsp; | Oversigt over kreditorer    |
+| 999 - 11020          | &nbsp; | 250,00 | Bank-/kontantkonto |
 
 ### <a name="accounts-payable-settlement-voucher"></a>Udligningsbilag for Kreditor
 
@@ -208,10 +208,10 @@ I dette eksempel vil værdierne **Overensstemmelseskontonummer** for bogførings
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                  |
 |----------------------|--------|--------|--------------------------------------------------------------------------|
-| 999 - 24210          |        | 250,00 | Oversigt over kreditor (genereres af systemet)                                        |
-| 101 - 24210          | 250,00 |        | Faktura til betaling (genereres af systemet)                                       |
-| 101 - 11010          |        | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                  |
-| 999 - 37101          | 250,00 |        | Kasserermidler – forfalder fra midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 24210          | &nbsp; | 250,00 | Oversigt over kreditor (genereres af systemet)                                        |
+| 101 - 24210          | 250,00 | &nbsp; | Faktura til betaling (genereres af systemet)                                       |
+| 101 - 11010          | &nbsp; | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                  |
+| 999 - 37101          | 250,00 | &nbsp; | Kasserermidler – forfalder fra midlet 101 (bogføringsdefinition for udligning) |
 
 ### <a name="summarizing-the-entries-across-the-invoice-payment-and-settlement-vouchers"></a>Kort beskrivelse af posterne på tværs af faktura, betaling og udligningsbilag
 
@@ -219,25 +219,25 @@ Følgende tabel viser, hvordan de endelige finanskonti påvirkes.
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                  |
 |----------------------|--------|--------|--------------------------------------------------------------------------|
-| 999 - 11020          |        | 250,00 | Bank-/kontantkonto                                                        |
-| 101 - 66100 - 150    | 250,00 |        | Udgiftskonto                                                      |
-| 101 - 11010          |        | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                  |
-| 999 - 37101          | 250,00 |        | Kassererens midler – forfalder fra midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11020          | &nbsp; | 250,00 | Bank-/kontantkonto                                                        |
+| 101 - 66100 - 150    | 250,00 | &nbsp; | Udgiftskonto                                                      |
+| 101 - 11010          | &nbsp; | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                  |
+| 999 - 37101          | 250,00 | &nbsp; | Kassererens midler – forfalder fra midlet 101 (bogføringsdefinition for udligning) |
 
 ## <a name="accounts-receivable-example"></a>Eksempel på Debitor
 ### <a name="accounts-receivable-invoice-voucher"></a>Fakturabilag for Debitor
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar             |
 |----------------------|--------|--------|---------------------|
-| 101 - 44400          |        | 250,00 | Omsætningskonto     |
-| 101 - 11530          | 250,00 |        | Debitor |
+| 101 - 44400          | &nbsp; | 250,00 | Omsætningskonto     |
+| 101 - 11530          | 250,00 | &nbsp; | Debitor |
 
 ### <a name="accounts-receivable-payment-voucher"></a>Betalingsbilag for Debitor
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar           |
 |----------------------|--------|--------|-------------------|
-| 999 - 11530          |        | 250,00 | Oversigt over debitorer  |
-| 999 - 11020          | 250,00 |        | Bank-/kontantkonto |
+| 999 - 11530          | &nbsp; | 250,00 | Oversigt over debitorer  |
+| 999 - 11020          | 250,00 | &nbsp; | Bank-/kontantkonto |
 
 ### <a name="accounts-receivable-settlement-voucher"></a>Debitor – udligningsbilag
 
@@ -247,10 +247,10 @@ I dette eksempel vil værdierne **Overensstemmelseskontonummer** for bogførings
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250,00 |        | Oversigt over debitorer (genereres af systemet)                                    |
-| 101 - 11530          |        | 250,00 | Debitorfaktura (genereres af systemet)                                  |
-| 101 - 11010          | 250,00 |        | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          |        | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11530          | 250,00 | &nbsp; | Oversigt over debitorer (genereres af systemet)                                    |
+| 101 - 11530          | &nbsp; | 250,00 | Debitorfaktura (genereres af systemet)                                  |
+| 101 - 11010          | 250,00 | &nbsp; | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | &nbsp; | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
 
 ### <a name="summarizing-the-entries-across-the-invoice-payment-and-settlement-vouchers"></a>Kort beskrivelse af posterne på tværs af faktura, betaling og udligningsbilag
 
@@ -258,10 +258,10 @@ Følgende tabel viser, hvordan de endelige finanskonti påvirkes.
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11020          | 250,00 |        | Bank-/kontantkonto                                                      |
-| 101 - 44400          |        | 250,00 | Omsætningskonto                                                        |
-| 101 - 11010          | 250,00 |        | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          |        | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11020          | 250,00 | &nbsp; | Bank-/kontantkonto                                                      |
+| 101 - 44400          | &nbsp; | 250,00 | Omsætningskonto                                                        |
+| 101 - 11010          | 250,00 | &nbsp; | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | &nbsp; | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
 
 Ud over eksemplet tidligere i dette afsnit kan bogføringsdefinitioner til udligninger, der er knyttet til posteringstypen debitorbetalingskladder, også anvendes i følgende situationer:
 
@@ -294,8 +294,8 @@ Hvis bogføringsdefinitionen til afskrivning er konfigureret til at tilbageføre
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar             |
 |----------------------|--------|--------|---------------------|
-| 101 - 44400 - -      |        | 250,00 | Omsætningskonto     |
-| 101 - 11530          | 250,00 |        | Debitor |
+| 101 - 44400 - -      | &nbsp; | 250,00 | Omsætningskonto     |
+| 101 - 11530          | 250,00 | &nbsp; | Debitor |
 
 ### <a name="accounts-receivable-write-off--general-ledger-credit-voucher"></a>Debitorafskrivning – kreditnota i Finans
 
@@ -303,10 +303,10 @@ I dette eksempel angives bogføringsdefinitionen for afskrivningen for at tilbag
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          |        | 250,00 | Oversigt over debitorer                                                       |
-| 101 - 44400 - -      | 250,00 |        | Bank-/kontantkonto                                                      |
-| 101 - 11010          |        | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          | 250,00 |        | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11530          | &nbsp; | 250,00 | Oversigt over debitorer                                                       |
+| 101 - 44400 - -      | 250,00 | &nbsp; | Bank-/kontantkonto                                                      |
+| 101 - 11010          | &nbsp; | 250,00 | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | 250,00 | &nbsp; | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
 
 ### <a name="accounts-receivable-write-off--settlement-voucher"></a>Debitorafskrivning – udligningsbilag
 
@@ -314,10 +314,10 @@ I dette eksempel anvendes den kredit, der er oprettet i finansbilaget, på afskr
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250,00 |        | Oversigt over debitorer (genereres af systemet)                                    |
-| 101 - 11530          |        | 250,00 | Debitorfaktura (genereres af systemet)                                  |
-| 101 - 11010          | 250,00 |        | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          |        | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11530          | 250,00 | &nbsp; | Oversigt over debitorer (genereres af systemet)                                    |
+| 101 - 11530          | &nbsp; | 250,00 | Debitorfaktura (genereres af systemet)                                  |
+| 101 - 11010          | 250,00 | &nbsp; | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | &nbsp; | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
 
 ### <a name="summarizing-the-entries-across-the-invoice-write-off-credit-and-settlement-vouchers"></a>Kort beskrivelse af posterne på tværs af faktura, afskrivningskredit og udligningsbilag
 
@@ -371,12 +371,12 @@ I posteringsdefinitionen skal du derefter angive følgende søgekriterier og gen
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                          |
 |----------------------|--------|--------|----------------------------------|
-| 101 - 44400 - -      |        | 250,00 | Omsætningskonto i 101-midlet      |
-| 999 - 44400 - -      |        | 250,00 | Omsætningskonto i 999-midlet      |
-| 101 - 11530          | 250,00 |        | Debitor i 101-midlet  |
-| 999 - 11535          | 250,00 |        | Debitor i 999-midlet  |
-| 999-11530            |        | 500,00 | Oversigt over debitorer                 |
-| 999 - 11020          | 500,00 |        | Kontantkonto ved betalingsvilkår |
+| 101 - 44400 - -      | &nbsp; | 250,00 | Omsætningskonto i 101-midlet      |
+| 999 - 44400 - -      | &nbsp; | 250,00 | Omsætningskonto i 999-midlet      |
+| 101 - 11530          | 250,00 | &nbsp; | Debitor i 101-midlet  |
+| 999 - 11535          | 250,00 | &nbsp; | Debitor i 999-midlet  |
+| 999-11530            | &nbsp; | 500,00 | Oversigt over debitorer                 |
+| 999 - 11020          | 500,00 | &nbsp; | Kontantkonto ved betalingsvilkår |
 
 Dette omfatter flere kreditposter i bilaget.
 
@@ -386,12 +386,12 @@ I dette eksempel vil værdierne **Overensstemmelseskontonummer** for bogførings
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250,00 |        | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
-| 101 - 11530          |        | 250,00 | Debitorfaktura (bogføringsdefinition til udligning)                 |
-| 101 - 11010          | 250,00 |        | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          |        | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
-| 999 - 11530          | 250,00 |        | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
-| 999 - 11535          |        | 250,00 | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
+| 999 - 11530          | 250,00 | &nbsp; | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
+| 101 - 11530          | &nbsp; | 250,00 | Debitorfaktura (bogføringsdefinition til udligning)                 |
+| 101 - 11010          | 250,00 | &nbsp; | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | &nbsp; | 250,00 | Kasserermidler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11530          | 250,00 | &nbsp; | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
+| 999 - 11535          | &nbsp; | 250,00 | Oversigt over debitorer (bogføringsdefinition til udligning)                   |
 
 ### <a name="summarizing-the-entries-across-the-invoice-payment-and-settlement-vouchers"></a>Kort beskrivelse af posterne på tværs af faktura, betaling og udligningsbilag
 
@@ -399,11 +399,11 @@ Følgende tabel viser, hvordan de endelige finanskonti påvirkes.
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11020          | 500,00 |        | Kontantkonto ved betalingsvilkår                                       |
-| 101 - 44400 - -      |        | 250,00 | Omsætning i 101-midlet                                                    |
-| 999 - 44400 - -      |        | 250,00 | Omsætning i 999-midlet                                                    |
-| 101 - 11010          | 250,00 |        | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
-| 999 - 37101          |        | 250,00 | Kassererens midler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
+| 999 - 11020          | 500,00 | &nbsp; | Kontantkonto ved betalingsvilkår                                       |
+| 101 - 44400 - -      | &nbsp; | 250,00 | Omsætning i 101-midlet                                                    |
+| 999 - 44400 - -      | &nbsp; | 250,00 | Omsætning i 999-midlet                                                    |
+| 101 - 11010          | 250,00 | &nbsp; | Egenkapital for midlet 101 (bogføringsdefinition for udligning)                |
+| 999 - 37101          | &nbsp; | 250,00 | Kassererens midler – forfalder til midlet 101 (bogføringsdefinition for udligning) |
 
 ## <a name="example-advanced-ledger-entries"></a>Eksempel: avancerede finansposter
 Når du opretter avancerede finansposter, skal du vælge en standardbogføringsdefinition. Derefter kan du for hver avanceret finanspostlinje enten bruge standardbogføringsdefinitionen eller vælge en anden. Bogføringsdefinitionerne genererer regnskabsfordelinger og kladdeposteringer for reskontro, der opretter, ændrer eller tilbagefører finansposterne og opdaterer finanskontiene. Du kan indstille hver bogføringsdefinition for appen Finans. Men du behøver ikke at tilknytte bogføringsdefinitionen med en transaktionstype, som du gør for andre bogføringsdefinitioner. I stedet vælger du bogføringsdefinitionen i den avancerede finanspost. 
@@ -446,19 +446,19 @@ I dette scenarie blev kreditorfakturaen AP\_0949 fejlagtigt bogført til kapital
 
 | Konto + dimensioner | Debet | Kredit | Kommentar                    |
 |----------------------|-------|--------|----------------------------|
-| 300-12300-51002      | 350   |        | Avanceret finanspostlinje |
-| 100-39810-51001      |       | 350    | Avanceret finanspostlinje |
+| 300-12300-51002      | 350   | &nbsp; | Avanceret finanspostlinje |
+| 100-39810-51001      |&nbsp; | 350    | Avanceret finanspostlinje |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansposter genereret fra bogføringsdefinitionen
 
 | Konto + dimensioner | Debet | Kredit | Kommentar       |
 |----------------------|-------|--------|---------------|
-| 300-11001            |       | 350    | Oversigtspost |
-| 900-11001            |       | 350    | Oversigtspost |
-| 900-37300            | 350   |        | Oversigtspost |
-| 100-11001            | 350   |        | Oversigtspost |
-| 900-11001            | 350   |        | Oversigtspost |
-| 900-37301            |       | 350    | Oversigtspost |
+| 300-11001            | &nbsp; | 350    | Oversigtspost |
+| 900-11001            | &nbsp; | 350    | Oversigtspost |
+| 900-37300            | 350   | &nbsp; | Oversigtspost |
+| 100-11001            | 350   | &nbsp; | Oversigtspost |
+| 900-11001            | 350   | &nbsp; | Oversigtspost |
+| 900-37301            | &nbsp; | 350    | Oversigtspost |
 
 ## <a name="examples-general-ledger-year-end-close"></a>Eksempel: årsafslutning for Finans
 Organisationer bruger bogføringsdefinitioner i forbindelse med ultimo ved årsafslutningen af finanskonti. Bogføringsdefinitioner kan bruges til afslutning af konti til pengebalancer eller overførsel af årets resultat på basis af den klasseattribut, der er angivet for midlerne (dimensionen), kombineret med kontoens afslutningstypeattribut. Det er et krav, at der bruges bogføringsdefinitioner ved afslutning af finanskonti og til overførsel af saldi til primoperioden i det nye regnskabsår. 
@@ -523,7 +523,7 @@ Saldoen for finanskontiene via den valgte periode vises på siden **Primoposter*
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar |
 |----------------------|--------|--------|---------|
-| 101-66100-130        | 250,00 |        |         |
+| 101-66100-130        | 250,00 | &nbsp; | &nbsp;  |
 
 #### <a name="governmental-funds--ledger-entries-generated-from-the-posting-definition"></a>Midler fra offentlige myndigheder – finansposter genereret fra bogføringsdefinitionen
 
@@ -531,8 +531,8 @@ Genererede finansposter oprettes til registrering af ultimoposteringen.
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar |
 |----------------------|--------|--------|---------|
-| 101-66100-130-       |        | 250,00 |         |
-| 101-37300            | 250,00 |        |         |
+| 101-66100-130-       | &nbsp; | 250,00 | &nbsp; |
+| 101-37300            | 250,00 | &nbsp; | &nbsp;  |
 
 I dette eksempel defineres midlet 101 som klassen **Offentlig** på siden **Midler** i Finans. På siden **Definitioner af posteringsbogføring** er ultimo-transaktionstypen **Finans** knyttet til klassen **Offentlig** og bogføringsdefinitionen. 
 
@@ -590,7 +590,7 @@ Saldoen for finanskontiene via den valgte periode vises på siden **Primoposter*
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar |
 |----------------------|--------|--------|---------|
-| 601-66100-130        | 250,00 |        |         |
+| 601-66100-130        | 250,00 | &nbsp; | &nbsp;  |
 
 #### <a name="proprietary-funds--ledger-entries-generated-from-the-posting-definition"></a>Beskyttede midler – finansposter genereret fra bogføringsdefinitionen
 
@@ -598,8 +598,8 @@ Genererede finansposter oprettes til registrering af ultimoposteringen.
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar |
 |----------------------|--------|--------|---------|
-| 601-66100-130-       |        | 250,00 |         |
-| 601-37310            | 250,00 |        |         |
+| 601-66100-130-       | &nbsp; | 250,00 | &nbsp;  |
+| 601-37310            | 250,00 | &nbsp; | &nbsp;  |
 
 I dette eksempel defineres midler med betegnelsen 601 som klassen **Privat** på siden **Midler**. På siden **Definitioner af posteringsbogføring** er ultimo-transaktionstypen **Finans** knyttet til klassen **Privat** og bogføringsdefinitionen. 
 

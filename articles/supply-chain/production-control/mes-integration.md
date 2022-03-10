@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778443"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952671"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrere med produktionsudførelsessystemer fra tredjeparter
 
@@ -37,10 +37,17 @@ I følgende illustration vises en typisk samling forretningshændelser, processe
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Aktivere MES-integrationsfunktionen
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal en administrator aktivere den i systemet som beskrevet i følgende procedure.
 
-- **Modul:** *Produktionsstyring*
-- **Funktionsnavn:** *Integration af produktionsudførelsessystem*
+1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
+1. Sørg for, at licensnøglen **Tid og fremmøde** er aktiveret (har markering). Denne licensnøgle er påkrævet, da den styrer produktionsudførelsessystemets funktioner og data. Hvis den ikke er aktiveret, skal du udføre følgende trin:
+    1. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. Markér afkrydsningsfeltet **Tid og fremmøde** på siden **Licenskonfiguration**.
+    1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
+1. Aktivér funktionen, der vises på følgende måde (se også [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Modul:** *Produktionsstyring*
+    - **Funktionsnavn:** *Integration af produktionsudførelsessystem*
 
 ## <a name="processes-available-for-mes-integration"></a>Processer til MES-integration
 
@@ -191,7 +198,7 @@ Følgende tabel viser de felter, som hver linje i sektionen `RouteCardLines` i m
 
 | Feltnavn | Status | Type |
 |---|---|---|
-| `OperationNumber` | Obligatorisk | Obligatorisk, heltal |
+| `OperationNumber` | Obligatorisk | Heltal |
 | `OperationPriority` | Valgfri | Fasttekst (Primær \| Sekundær1 \| Sekundær2 \| ... \| Sekundær20) |
 | `OperationId` | Valgfri | Streng |
 | `OperationsResourceId` | Valgfri | Streng |

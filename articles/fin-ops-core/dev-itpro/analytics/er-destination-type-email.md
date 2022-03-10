@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595197"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324002"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for email
 
@@ -140,7 +140,7 @@ Hvis du vil angive, hvilken type emailadresser der skal bruges på kørselstidsp
 
 ### <a name="configuration-email"></a>Konfigurationsmail
 
-Vælg **Konfigurationsmail** som emailadressetype, hvis den konfiguration, du bruger, har en node i datakilderne, der returnerer enten en enkelt emailadresse eller flere emailadresser, der er adskilt af semikolon (;). Du kan bruge [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funktioner](er-formula-language.md#Functions) i formeldesigneren til at få en korrekt formateret emailadresse eller korrekt formaterede emailadresser, der er adskilt af semikolon. Hvis du f.eks. bruger konfigurationen **ISO 20022 Kreditoverførsel**, er den node, der repræsenterer den primære emailadresse for en kreditor fra leverandørens kontaktoplysninger, som følgeskrivelsen skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Vælg **Konfigurationsmail** som emailadressetype, hvis den konfiguration, du bruger, har en node i datakilderne, der returnerer enten en enkelt emailadresse eller flere emailadresser, der er adskilt af semikolon (;). Du kan bruge datakilder og [funktioner](er-formula-language.md#Functions) i formeldesigneren til at få en korrekt formateret mailadresse eller korrekt formaterede mailadresser, der er adskilt af semikolon. Hvis du f.eks. bruger konfigurationen **ISO 20022 Kreditoverførsel**, er den node, der repræsenterer den primære emailadresse for en kreditor fra leverandørens kontaktoplysninger, som følgeskrivelsen skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Konfigurere en emailadressekilde.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

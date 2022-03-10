@@ -12,13 +12,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b120c24ad3289f5f46119d70c8cb7124546e41b1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: cd7961ae8f4237bcee7ae4c53365d24ab03c5aa9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019172"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572212"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Lagerstedsparametre til bølgebehandling
 

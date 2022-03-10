@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355742"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070927"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Handlinger i godkendelsesprocesser i arbejdsgang
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I denne artikel beskrives de handlinger, som hver deltager i godkendelsen af en arbejdsproces kan foretage.
 

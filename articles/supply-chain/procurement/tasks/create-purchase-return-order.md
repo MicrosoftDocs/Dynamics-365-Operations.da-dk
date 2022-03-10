@@ -1,7 +1,7 @@
 ---
 title: Oprette en købsreturordre
 description: Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hjælp af handlingen Kreditnota for at kopiere linjer fra et kreditorfakturadokument til en ny indkøbsordre.
-author: kamaybac
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, Inve
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364f8d4478a5e89c3824ff06d34c7bc90c0ddb87
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ea0d227966b69063993acf14e68cd069681357f1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812224"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569403"
 ---
 # <a name="create-a-purchase-return-order"></a>Oprette en købsreturordre
 

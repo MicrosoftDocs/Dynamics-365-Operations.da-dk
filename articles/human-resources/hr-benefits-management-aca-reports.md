@@ -1,8 +1,8 @@
 ---
 title: Generere Affordable Care Act-rapporter i Frynsegodeadministration
-description: I dette emner beskrives, hvordan Frynsegodeadministration hjælper dig med at spore de oplysninger, der er rapporteret på blanket 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate.
-author: andreabichsel
-ms.date: 12/28/2020
+description: Dette emne beskriver, hvordan Frynsegodeadministration sporer de oplysninger, der er rapporteret på formular 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 79bd8e02aeac1be94e735373740cf9508f494a06
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052258"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065987"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generere ACA-rapporter i Frynsegodeadministration
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Frynsegodeadministration hjælper dig med at spore de oplysninger, der er rapporteret på blanket 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate. Ligesom ACA-rapporteringsfunktionen i det gamle arbejdsområde **Frynsegoder** gælder denne funktion kun for juridiske enheder i USA.
+Frynsegodeadministration sporer de oplysninger, der er rapporteret på formular 1095-B og 1095-C for Affordable Care Act (ACA) Employer Mandate. Ligesom ACA-rapporteringsfunktionen i det gamle arbejdsområde **Frynsegoder** gælder denne funktion kun for juridiske enheder i USA.
 
 Hvis du vil bruge denne funktion, skal du først aktivere **avanceret administration af frynsegoder**. Yderligere oplysninger, herunder vigtige oplysninger om styring af goder, finder du i [Aktiver eller deaktiver administration af frynsegoder](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -48,15 +51,15 @@ De Affordable Care-dækningsgrupper giver dig mulighed for at administrere disse
 
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Affordable Care-dækningsgruppe**.
 
-    ![Vælge Affordable Care-dækningsgruppe](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Vælge Affordable Care-dækningsgruppe.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Vælg **Ny** for at oprette en ny Affordable Care-dækningsgruppe eller **Rediger** for at ændre en eksisterende gruppe.
 
-    ![Vælge Ny eller Rediger](./media/hr-benefits-management-aca-new.png)
+    ![Vælge Ny eller Rediger.](./media/hr-benefits-management-aca-new.png)
 
 3. Angiv følgende felter.
 
-    | Felt | Beskrivelse |
+    | Felt | Betegnelse |
     |---|---|
     | Navn | Angiv et navn på gruppen. |
     | Beskrivelse | Angiv en beskrivelse af gruppen. |
@@ -67,7 +70,7 @@ De Affordable Care-dækningsgrupper giver dig mulighed for at administrere disse
     | Gruppen er gældende fra | Den første dato, denne post er gyldig. |
     | Gruppen er gældende til | Den sidste dato, hvor denne post er gyldig. Hvis der ikke er nogen udløbsdato, skal du angive **Aldrig**. |
 
-    ![Oprette en dækningsgruppe](./media/hr-benefits-management-aca-new-group.png)
+    ![Oprette en dækningsgruppe.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Vælg **Gem**.
 
@@ -77,11 +80,11 @@ De Affordable Care-dækningsgrupper giver dig mulighed for at administrere disse
 2. Vælg den gruppe, der skal tildeles medarbejdere til.
 3. Vælg **Massetildeling**.
 
-    ![Vælge Massetildeling](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Vælge Massetildeling.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Vælg medarbejdere på listen, og vælg derefter **Tildel**.
 
-    ![Tildele valgte medarbejdere til en gruppe](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Tildele valgte medarbejdere til en gruppe.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Vedligeholde flere versioner af en dækningsmuligheder
 
@@ -111,12 +114,12 @@ Benyt følgende fremgangsmåde for at angive undtagelser for værdier for en Aff
 2. Vælg medarbejderen på listen.
 3. Under fanen **Ansættelse** i afsnittet **Flere oplysninger** skal du vælge **Affordable Care-dækning**.
 
-    ![Ændre indstillinger for én medarbejder](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Ændre indstillinger for én medarbejder.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Vælg **Rediger**.
 5. For hver måned, der kræver ændringer, skal du markere afkrydsningsfeltet **Tilsidesæt standard** og derefter ændre de andre værdier efter behov.
 
-    ![Tilsidesætte standardværdier](./media/hr-benefits-management-aca-override-default.png)
+    ![Tilsidesætte standardværdier.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Vælg **Gem**.
 
@@ -131,7 +134,7 @@ Hvis du vil angive, om der skal rapporteres en frynsegodeplan, skal du følge di
 3. Vælg **Rediger**.
 4. Angiv indstillingen **Rapporteret i henhold til Affordable Care Act** til **Ja**.
 
-    ![Indberetning af dækning af sygeforsikring](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Indberetning af dækning af sygeforsikring.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Vælg **Gem**.
 
@@ -145,25 +148,25 @@ Du kan også generere ACA 1095-B- og 1095-C-blanketter og derefter distribuere d
 2. Rediger parametrene efter behov, og vælg derefter **OK**.
 
     > [!NOTE]
-    > Hvis du udskriver 1095-C-blanketter for mere end 500 medarbejdere, modtager du mere end én PDF-fil. Det anbefales, at du øger værdien i feltet **Maksimal filstørrelse i megabyte** på siden **Dokumentadministrationsparametre** til **150**. (Hvis du hurtigt vil åbne siden, kan du bruge søgefeltet på navigationslinjen).
+    > Hvis du udskriver 1095-C-blanketter for mere end 500 medarbejdere, modtager du mere end én PDF-fil. Det anbefales, at du øger værdien i feltet **Maksimal filstørrelse i megabyte** på siden **Dokumentadministrationsparametre** til **150**. (Hvis du åbne siden hurtigt, skal du bruge søgefeltet på navigationslinjen).
     >
-    > ![Ændre den maksimale filstørrelse](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Ændre den maksimale filstørrelse.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Hvis du vil kontrollere status for rapporterne og få dem vist, skal du bruge søgefeltet på navigationslinjen til at åbne siden **Elektroniske rapporteringsjobs**.
 
-    ![Søge efter siden Job til elektronisk rapportering](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Søge efter siden Job til elektronisk rapportering.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Marker den rapport, du vil have vist, og vælg derefter **Vis filer**.
 
-    ![Vise filer](./media/hr-benefits-management-aca-show-files.png)
+    ![Vise filer.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Vælg **Åbn**.
 
-    ![Åbne en fil](./media/hr-benefits-management-aca-open-file.png)
+    ![Åbne en fil.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Åbn zip-filen, og vælg derefter rapporten på den meddelelseslinje, der vises nederst i browservinduet. Du kan få vist eller udskrive PDF-filen.
 
-    ![Eksempel på 1095-C-blanket](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Eksempel på 1095-C-formular.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Vise oplysninger om ACA-dækning
 
@@ -178,7 +181,7 @@ Benyt følgende trin for at se disse oplysninger.
 1. I arbejdsområdet **Frynsegodeadministration** skal du vælge **Arbejderens dækning under Affordable Care**.
 2. Vælg en gruppe i feltet **Gruppenavn**.
 
-    ![Vise ACA-dækning](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Vise ACA-dækning.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Hvis nogen af standardværdier fra Affordable Care-dækningsgruppen er blevet tilsidesat, vises en stjerne ud for den værdi, der er ændret. Hvis værdierne for alle 12 måneder er de samme og ikke er blevet tilsidesat, vises værdien i kolonnen **Alle 12 måneder**.
 
@@ -198,11 +201,11 @@ Hvis du vil eksportere en af Microsoft Excel-listerne, skal du benytte følgende
 
 Hvis du skal rapportere dækkede personer, fordi du giver dig selv forsikret dækning, kan du få vist alle afhængige, der er dækket af frynsegodeplaner, der er markeret som **ACA-rapporterbare**. Vælg **Vis afhængig af dækning** i handlingsruden.
 
-![Vise afhængig af dækning](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Vise afhængig af dækning.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Der vises dækningsoplysninger for dem, der er afhængige af medarbejderen.
 
-![Dækning for afhængig part](./media/hr-benefits-management-aca-dependents.png)
+![Dækning for afhængig part.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Siden viser kun frynsegoder, der er markeret som **ACA-rapporterbare**.

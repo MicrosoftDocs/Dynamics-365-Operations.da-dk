@@ -1,26 +1,24 @@
 ---
 title: Oprette nummerserier ved hjælp af en guide
 description: I dette emne beskrives, hvordan du konfigurerer alle krævede nummerserier på samme tid ved hjælp af en guide.
-author: sericks007
-manager: AnnBe
+author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca8174444d5a84f7efb402d6efc787e693801e82
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 7388a835147e1e8242463fee98c57c300d062877
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694733"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777562"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Oprette nummerserier ved hjælp af en guide
 
@@ -38,3 +36,6 @@ Nummerserier bruges til generering af læselige, entydige id'er for masterdatapo
 4. Vælg **Næste**.
 5. Vælg **Udfør**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

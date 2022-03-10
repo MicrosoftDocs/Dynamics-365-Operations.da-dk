@@ -3,9 +3,8 @@ title: Oversigt over modulet Rabatstyring
 description: Dette emne indeholder en oversigt over modulet Rabatstyring til Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 ms.date: 02/19/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -13,13 +12,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7917f36d8ff3c1ae2d37c5390806ef82771b5211
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 75311e137df522c476b938f660b8305004396137
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920031"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985490"
 ---
 # <a name="rebate-management-module-overview"></a>Oversigt over modulet Rabatstyring
 
@@ -71,7 +70,7 @@ Rabatter kan konfigureres ud fra mange forskellige parametre. De kan f.eks. konf
 
 Resultater af rabatberegninger kan også reduceres med andre rabatter, afhængigt af om rabatten er konfigureret til at beregne ud fra nettobeløbet.
 
-På kreditorsiden kan rabatter beregne prisen ud fra en FIFO-regel (First In, First Out), den seneste købspris, den gennemsnitlige købspris eller salgsprisen.
+På kreditorsiden kan rabatter, der er baseret på salgsordrer, beregne prisen ud fra en FIFO-regel (First In, First Out), den seneste købspris, den gennemsnitlige købspris eller salgsprisen.
 
 ## <a name="rebate-target-transactions"></a>Rabatmåltransaktioner
 
@@ -85,15 +84,15 @@ Vareoutput opretter en gratis varesalgsordre for kunderabatter og en indkøbsord
 
 Kombinationen af de tilknyttede aftaler, frekvensen af beregninger, beregningsgrundlaget og den valgte beregningsmetode bestemmer nøjagtigheden og præcisionen af rabatberegningerne. Rabathensættelser kan bruges til at periodisere bogførte og indkasserede værdier.
 
-Hensættelser kan håndteres dagligt eller månedligt. Funktionen kan dog tildele eller betale rabatten eller modtage betaling af den ved en defineret frekvens. Brugerne kan nemt justere en plan eller betalingsbeløb når som helst under udbetalingen.
+Hensættelser kan administreres hver dag, hver uge, hver måned eller i henhold til en tilpasset periode. Funktionen kan dog tildele eller betale rabatten eller modtage betaling af den med en defineret hyppighed, der har samme varighed som eller er længere end hensættelseshyppigheden. Til afskrivning bruges der samme hyppighed som til rabatten. Brugerne kan nemt justere en plan eller betalingsbeløb når som helst under udbetalingen.
 
-Brugerne behøver ikke længere at håndtere aftaler eller hensættelser i to trin. Hensættelser og afskrivninger bogføres direkte i finansmodulet. Der kan desuden oprettes kreditnotaer automatisk. Der er derfor fuld integration med kreditorer og debitorer. Under behandlingen tager beregningerne højde for udligningsrabatter, betalte fakturaer, handelsrabatter og eksisterende kreditnotaer for at sikre, at beløb og værdier beregnes korrekt.
+Brugerne behøver ikke længere at håndtere aftaler eller hensættelser i to trin. Hensættelser og afskrivninger bogføres direkte i finansmodulet. Der kan desuden oprettes kreditnotaer automatisk. Der er derfor fuld integration med kreditorer og debitorer. Under behandlingen kan beregningerne tage højde for udligningsrabatter, betalte fakturaer, handelsrabatter og eksisterende kreditnotaer for at sikre, at beløb og værdier beregnes korrekt.
 
-Når der beregnes rabatter, oprettes der transaktioner, som kan gennemgås, før bogføringen finder sted. Der kan derefter oprettes en kladde-, kreditnota- eller debettransaktion. En separat proces bogfører rabat- og fradragstransaktioner. Rapporteringsopgørelser og transaktionslister kan anskaffes for at sikre overholdelse af angivne standarder, effektivitet og gennemsigtighed.
+Når der beregnes rabatter, oprettes der transaktioner, som kan gennemgås, før bogføringen finder sted. Rabatadministrationstransaktioner bogføres i en separat proces. Der kan derefter oprettes en kladde, kreditnota eller debetpostering under bogføringen af foreslåede posteringer. Rapporteringsopgørelser og transaktionslister kan anskaffes for at sikre overholdelse af angivne standarder, effektivitet og gennemsigtighed.
 
 ## <a name="guaranteed-royalty-payments"></a>Garanterede betalinger af royalty
 
-Ved hjælp af automatisk betalingsgenerering i Rabatstyring kan royalties håndteres hurtigt og nemt, også selvom der gælder minimumgarantier. 
+Ved hjælp af automatisk betalingsgenerering i Rabatstyring kan royalties håndteres hurtigt og nemt, også selvom der gælder minimumgarantier.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maksimere forbrug i forhold til rabatter
 

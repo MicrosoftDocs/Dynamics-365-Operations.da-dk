@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b21fba6fbfd4fe2a645efd56fb3592252c2a3fe0
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 4c37a91a00aa6b7896bfbf9b57567a25c30d8b35
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920617"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075118"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,8 @@ Oplysninger om, hvad der er nyt eller ændret i hver version af Dynamics 365 Sup
 
 | Version | Build-nummer | Tilgængelighed af automatisk opdatering | Få flere oplysninger |
 |---|---|---|---|
-| 10.0.24 | 10.0.1084 | 2022. februar | [Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.24](whats-new-scm-10-0-24.md) |
+| 10.0.25 | 10.0.1149 | 2022. april | [Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.25](whats-new-scm-10-0-25.md) |
+| 10.0.24 | 10.0.1084 | 2022. februar | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.24](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | 2022. januar | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.23](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | November 2021 | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
 | 10.0.21 | 10.0.960 | 2021. oktober | [Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
@@ -62,7 +63,7 @@ Oplysninger om, hvad der er nyt eller ændret i frigivelser før november 2019, 
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019. juni        | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.2      | 10.0.80          | Maj 2019         | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 10.0.2 (maj 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.1      | 10.0.51          | 2019. april       | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 10.0.1 (april 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | 2019. april       | [Nyheder eller ændringer i Finance and Operations version 10.0 (april 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
+| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | 2019. april       | [Nyheder eller ændringer i Finans og drift version 10.0 (april 2019) ](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.3       | 8.1.227          | Januar 2019     | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 8.1.3. (januar 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.2       | 8.1.195          | 2018. december    | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 8.1.2. (december 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1.1       | 8.1.170          | Oktober 2018     | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 8.1.1. (oktober 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |

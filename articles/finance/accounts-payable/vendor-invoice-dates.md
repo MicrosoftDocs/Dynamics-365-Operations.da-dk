@@ -2,25 +2,25 @@
 title: Datoer på kreditorfakturaer
 description: I dette emne beskrives de datoer, der vises på kreditorfakturaer. Det forklares også, hvordan du kan konfigurere systemet, så bogføringsdatoen justeres automatisk.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647880"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105457"
 ---
 # <a name="vendor-invoice-dates"></a>Datoer på kreditorfakturaer
 
@@ -50,6 +50,9 @@ Benyt følgende fremgangsmåde for at give systemet mulighed for automatisk at r
     - **Ret altid bogføringsdatoen til systemdatoen** – Systemet ændrer automatisk bogføringsdatoen til systemdatoen under bogføring.
     - **Ret bogføringsdatoen til systemdatoen, når bogføringsdatoperioden er lukket eller på hold** – Systemet ændrer bogføringsdatoen til systemdatoen under bogføringen, men kun hvis den tilsvarende periode for bogføringsdatoen har statussen **Lukket** eller **På hold**.
     - **Ret bogføringsdatoen til den første dag i den nye periode, når bogføringsdatoperioden er lukket eller på hold** – Systemet ændrer bogføringsdatoen til den første dag i den nye åbne periode, men kun hvis den tilsvarende periode for bogføringsdatoen har statussen **Lukket** eller **På hold**.
+
+> [!NOTE]
+> Hvis den nye bogføringsdato, der blev reguleret automatisk, ligger i et nyt regnskabsår, opdateres fakturaens bogføringsdato ikke. Brugeren vil modtage en fejl "Regnskabsåret er ændret. Kontrollér og angiv bogføringsdatoen igen." Fakturabogføringsdatoen skal opdateres til den nye regnskabsårsdato, før den kan bogføres.
 
 ## <a name="impact-of-posting-date-changes"></a>Effekten af ændringer i bogføringsdato
 

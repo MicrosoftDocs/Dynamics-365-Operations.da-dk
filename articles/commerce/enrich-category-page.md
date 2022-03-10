@@ -2,11 +2,9 @@
 title: Forbedre en kategorilandingsside
 description: Dette emne omhandler forbedring af kategorisider i Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,27 +14,24 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fbcf6ec60723b726e022b4e17bbde4c903e5cb57
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771001"
 ---
 # <a name="enrich-a-category-landing-page"></a>Forbedre en kategorilandingsside
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne omhandler forbedring af kategorisider i Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
-
 Commerce angiver en landingsside for den standardkategori, der bruges, når der vises kategoridata. En standardkategoriside indeholder de påkrævede elementer, f.eks. afgrænsere, kategoriseret produktplacering, sorteringsindstillinger, en oversigt over valgmuligheder og kontrolelementer til sideinddeling. 
 
 Men i stedet for at bruge standardkategorisiden kan du bruge en "forbedret" kategorilandingsside, der har mere indhold og mere specifikke elementer. En typisk forbedring kan omfatte tilføjelse af kategorispecifikt marketingindhold på kategorisiden. Dette indhold kan omfatte produktplacering på tværs af kategorier med henblik på tillægssalg, redaktionelle lister, billeder, videoer og anden tekst. Du kan enten redigere standardkategorisiden eller definere en anden kategoriside for en bestemt kategori.
 
-![Forbedre en kategorilandingsside](./media/CategoryLandingPages.png)
+![Forbedre en kategorilandingsside.](./media/CategoryLandingPages.png)
 
 I Commerce-webstedsgeneratoren indeholder siden **Produkter** en liste over kategorier fra den kanal, der er tildelt webstedet. Hvis status **Forbedret** er valgt for en kategoriside, er den pågældende kategoriside blevet forbedret. Ellers bruges standardkategorisiden og standardindholdet til kategorien. Du kan gennemse både de forbedrede og de ikke-forbedrede kategorisider for en kategori ved at vælge kategorinavnet.
 

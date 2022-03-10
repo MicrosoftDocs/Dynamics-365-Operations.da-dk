@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcec7963bdf70f848249bb2ca5e2208e09f49548
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ff7d689129a4015b6085685f4b19ae61bdd549d2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054782"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066387"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Forberedelse af udgivelse med Human Resources
 
@@ -28,11 +28,14 @@ ms.locfileid: "6054782"
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 Dette emne beskriver, hvordan du kan forberede en udgivelse af et Dynamics 365 Human Resources-projekt ved hjælp af Microsoft Dynamics Lifecycle Services (LCS). 
 
 Denne grafik viser faserne i udgivelsesprocessen. 
 
-![Udgivelsesproces](./media/hr-admin-go-live-prepare-process.png)
+![Udgivelsesproces.](./media/hr-admin-go-live-prepare-process.png)
 
 I følgende tabel vises alle trinnene i processen, den forventede varighed og hvem, der er ansvarlig for aktionen.
 

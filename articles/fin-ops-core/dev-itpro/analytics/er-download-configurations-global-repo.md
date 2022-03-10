@@ -2,7 +2,6 @@
 title: Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
 description: Dette emne forklarer, hvordan du kan hente ER-konfigurationer (elektronisk rapportering) fra det globale lager til Konfigurationstjenesten.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c4f083163db72569d91825819a904319a0fe3123
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561896"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605325"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Åbn konfigurationslageret
 
@@ -41,7 +40,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
 3. I sektionen **Konfigurationsudbydere** skal du vælge feltet **Microsoft**.
 3. I feltet **Microsoft** skal du vælge **Lagre**.
 
-    ![Arbejdsområde til elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Arbejdsområde til elektronisk rapportering.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. På siden **Konfigurationslagre** i gitteret skal du vælge det eksisterende lager for **Global**-typen. Hvis lageret ikke vises i gitteret, skal du følge disse trin:
 
@@ -53,7 +52,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
 
 5. Vælg **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager.
 
-    ![Siden Konfigurationslagre](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Siden Konfigurationslagre.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importere en enkelt konfiguration
 
@@ -64,7 +63,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
     > [!NOTE]
     > Knappen **Importer** er ikke tilgængelig for ER-konfigurationsversioner, der allerede findes i den aktuelle Finans-forekomst.
 
-    ![Siden Konfigurationslager](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurationsoversigtspanelet Konfigurationslagerside.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importere filtrerede konfigurationer
 
@@ -78,7 +77,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
 4. I oversigtspanelet **Konfigurationer** skal du vælge **Importér** for at hente de filtrerede konfigurationer fra det globale lager til den aktuelle forekomst.
 5. I oversigtspanelet **Konfigurationer** skal du vælge **Nulstil filter** for at rydde op i de angivne udvælgelsesbetingelser.
 
-    ![Siden Konfigurationslager](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Siden Konfigurationslager, oversigtspanelet Versioner, knappen Import.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Før du kan bruge den importerede konfigurationsversion, skal du løse problemerne. Se listen over relaterede ressourcer i dette emne for at få flere oplysninger.

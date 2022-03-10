@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae02846c0ec937ebaff440dc5272a135e16c8aa7355ecc303929e760a54b6627
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760292"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920692"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Antallet overskrider procenten for underlevering under oprettelse af en følgeseddel
 
@@ -49,8 +49,8 @@ Du kan bruge følgende procedure til at justere procenten for underlevering.
 
 1. Gå til **Debitor \> Ordrer \> Alle ordrer**.
 1. Vælg den salgsordre, som du ikke kan bogføre en følgeseddel for lasten for.
-1. Vælg salgsordrelinjen for den vare, der overstiger procenten for underlevering, i oversigtspanelet  **Salgsordrelinjer**.
-1. Vælg **Levering** under fanen  **Linjedetaljer**.
+1. Vælg salgsordrelinjen for den vare, der overstiger procenten for underlevering, i oversigtspanelet **Salgsordrelinjer**.
+1. Vælg **Levering** under fanen **Linjedetaljer**.
 1. Angiv feltet **Underlevering** til en større procentdel, der tager højde for det antal, der er plukket i forhold til lastantallet, så du kan fortsætte med at oprette følgesedlen.
 
 ### <a name="reverse-and-make-adjustments"></a>Tilbageføre og foretage reguleringer
@@ -60,14 +60,14 @@ Tilbagefør alt det, der er bogført for lasten (f.eks. følgesedlen, forsendels
 Brug følgende procedure til at annullere en følgeseddel.
 
 1. Gå til **Lokationsstyring \> Laster \> Alle laster**.
-1. Vælg  **Annuller følgesedler** i gruppen  **Tilbagefør** under fanen  **Levér og modtag** i handlingsruden.
+1. Vælg **Annuller følgesedler** i gruppen **Tilbagefør** under fanen **Levér og modtag** i handlingsruden.
 
 Brug følgende procedure til at tilbageføre en forsendelsesbekræftelse.
 
 1. Gå til **Lokationsstyring \> Laster \> Alle laster**.
-1. Vælg  **Tilbagefør forsendelsesbekræftelse** i gruppen  **Tilbagefør** under fanen  **Levér og modtag** i handlingsruden.
+1. Vælg **Tilbagefør forsendelsesbekræftelse** i gruppen **Tilbagefør** under fanen **Levér og modtag** i handlingsruden.
 
 Benyt følgende fremgangsmåde for at tilbageføre arbejde.
 
 1. Gå til **Lokationsstyring \> Laster \> Alle laster**.
-1. Gå til handlingsruden, og vælg  **Tilbagefør arbejde** i gruppen  **Arbejde** under fanen  **Laster**.
+1. Gå til handlingsruden, og vælg **Tilbagefør arbejde** i gruppen **Arbejde** under fanen **Laster**.

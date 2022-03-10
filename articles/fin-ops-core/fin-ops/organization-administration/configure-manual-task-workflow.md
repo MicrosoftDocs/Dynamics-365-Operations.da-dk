@@ -2,7 +2,6 @@
 title: Konfigurere manuelle opgave i en arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer egenskaberne for en manuel opgave.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
@@ -15,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee759cbf51555a32045e74f40138a04f330d7eb2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559467"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066462"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurere manuelle opgave i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for en manuel opgave.
 

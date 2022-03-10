@@ -2,8 +2,7 @@
 title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
-manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4e648f4c1d18e5f8b82d1ccf7ba02bd4e12bc2a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566424"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075416"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emne forklarer, hvordan du kan tilpasse appen, og dækker følgende emner: 
 
@@ -86,7 +89,7 @@ Nogle af de mest almindelige og vigtigste ændringer, der kan udføres på en si
 
 De mest grundlæggende typer brugertilpasninger er desuden tilgængelige, hvis du højreklikker på et element og derefter vælger **Tilpas**. (Bemærk, at ikke alle elementer på din side kan tilpasses). Når du bruger denne metode for tilpasning, vises elementets *egenskabsvindue*.
 
-![Tilpasning af et elements egenskaber](./media/cli-element-property-window.png)
+![Tilpasning af et elements egenskaber.](./media/cli-element-property-window.png)
 
 Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 
@@ -99,7 +102,7 @@ Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 
 Egenskabsvinduet kan omfatte andre tilpasningsmuligheder, afhængigt af elementet. I egenskabsvinduet for et felt kan du f.eks. opgradere feltet til et dashboard, og i egenskabsvinduer for elementer på standarddashboardet kan du oprette et nyt tilpasset arbejdsområde i dette dashboard.
 
-### <a name="the-personalization-toolbar"></a>Værktøjslinjen Tilpasning
+### <a name="personalization-toolbar"></a>Værktøjslinjen Tilpasning
 
 Hvis du vil foretage flere ændringer på en side eller ændringer, der ikke er tilgængelige via andre mekanismer (f.eks. sortering af elementer), kan du bruge **Brugertilpasning**-værktøjslinjen. Benyt et af følgende fremgangsmåder for at åbne værktøjslinjen **Brugertilpasning**:
 
@@ -108,7 +111,7 @@ Hvis du vil foretage flere ændringer på en side eller ændringer, der ikke er 
 - Vælg **Tilpas denne side** i gruppen **Personaliser** under fanen **Indstillinger** i handlingsruden på en side.
 - Vælg knappen **Indstillinger** (tandhjulssymbolet) på navigationslinjen, og vælg derefter **Personaliser**.
 
-[![Værktøjslinjen Tilpasning](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Værktøjslinjen Tilpasning.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigering på siden
 
@@ -120,7 +123,10 @@ Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**
 
 - Brug værktøjet **Vælg** til at vælge og ændre et elements egenskaber. Hvis du vil bruge dette værktøj, skal du vælge knappen **Vælg** på værktøjslinjen og derefter vælge det ønskede element. Elementets egenskabsvindue åbnes, hvor du kan redigere egenskaberne for dette element. Du kan gentage processen for andre elementer, der kan tilpasses på siden. Bemærk, at nogle egenskaber for brugertilpasning muligvis ikke er tilgængelige i visse scenarier. Du kan f.eks. ikke låse et felt, der er obligatorisk.
 - Brug værktøjet **Skjul** til at skjule et element på siden. Hvis du vil bruge dette værktøj, skal du vælge knappen **Skjul** på værktøjslinjen og derefter vælge det element, du vil skjule. Når du bruger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige, men de vises i en nedtonet container. Du kan derefter gøre et element synligt ved at markere det. Hvis du vil se, hvordan siden vil se ud, når der skjules elementer, skal du skifte til et andet tilpasningsværktøj eller lukker værktøjslinjen for brugertilpasning.
-- Brug værktøjet **Tilføj felter** for at tilføje felter på din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj felter** på værktøjslinjen, skal du først markere det gitter eller den sektion, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til det gitter eller den sektion, der er valgt. Vælg ét eller flere felter, som du vil tilføje, i dialogboksen, og vælg derefter **Opdater**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
+- Brug værktøjet **Tilføj felter** for at tilføje felter på din side. Når du bruger dette værktøj, kan du kun tilføje felter, der er del af sidedefinitionen. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Opret og arbejd med brugerdefinerede felter](user-defined-fields.md). Når du har valgt knappen **Tilføj felter** på værktøjslinjen, skal du først markere det gitter eller den sektion, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til det gitter eller den sektion, der er valgt. Vælg et eller flere felter på listen **Anbefalede** eller **Alle felter** i dialogboksen. Når du har valgt de ønskede felter, skal du vælge **Opdater**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
+
+    Listen **Anbefalede felter** viser felter, der tidligere er tilføjet af andre brugere i organisationen. Denne liste over felter opdateres baseret på gentagelsesfrekvensen for **Anbefaling-batchjob**. En lignende erfaring findes, når du tilføjer nye filterfelter ved hjælp af ruden Filter på en side.
+
 - Brug værktøjet **Flyt** til at flytte et element til et andet sted inden i den aktuelle gruppe af elementer. Bemærk, at du ikke kan flytte et element uden for dets overordnede gruppe. Hvis du vil bruge dette værktøj, skal du vælge knappen **Flyt** på værktøjslinjen og derefter vælge det element, du vil flytte. Når du vælger et element, fastlægger appen de steder, hvor elementet kan flyttes hen. Disse steder kaldes *slipzoner*. Når du trækker elementet omkring i den aktuelle gruppe, vises hver slipzone som en farvet, fed linje ud for det område, hvor elementet kan slippes.
 - Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger knappen **Spring over** på værktøjslinjen, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan interaktivt fjerne eller tilføje felter i tabulatorsekvensen.
 - Brug værktøjet **Vis i overskrift**, når du vil have vist et felt i oversigtspanelets oversigtssektion. Når du vælger knappen **Vis i overskrift** på værktøjslinjen, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra oversigten ved at markere felterne.
@@ -148,11 +154,14 @@ For nogle sider, der indeholder lister, er tilpasningsfunktionen **Føj til arbe
 > [!NOTE]
 > Hvis funktionen [Gemte visninger](saved-views.md) er aktiveret, er det indhold, du skubber til et arbejdsområde, direkte knyttet til en visning. Forespørgslen i visningen bruges til at hente data i arbejdsområdet, og det tilhørende felt eller link i arbejdsområdet åbner siden i denne visning, så visningens forespørgsel og tilpasninger anvendes på den. Hvis visningen opdateres, justeres de tilsvarende arbejdsområdeelementer efter den nye visningsdefinition.
 
-[![Føj til arbejdsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Føj til arbejdsområde.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Hvis du vil føje en liste til et arbejdsområde, skal du først sortere eller filtrere listen på siden, så den viser oplysningerne, som de skal vises i arbejdsområdet. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Liste** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan vælge de kolonner, der skal vises på listen i arbejdsområdet. Du kan også angive, hvilken label der bruges til listen i arbejdsområdet.
 - Hvis du vil føje et felt til et arbejdsområde, skal du først filtrere listen på siden, så den viser de data, du vil opsummere eller ønsker hurtig adgang til. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Felt** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til feltet i arbejdsområdet. Du kan også angive, om feltet skal vise en optælling. Når feltet er føjet til arbejdsområdet, kan du vælge det for at åbne den aktuelle side fra arbejdsområdet. Du kan derefter få vist den filtrerede liste, der er knyttet til feltet.
-- Hvis du vil føje et link til et arbejdsområde, skal du først filtrere listen på siden, så den viser dataene, du er interesseret i. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Link** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til linket. Du kan også vælge at angive en label til en ny sektion, der indeholder dette link.
+- Hvis du vil føje et link til et arbejdsområde, skal du først filtrere listen på siden, så den viser dataene, du er interesseret i. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Link** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til linket. Du kan også vælge at angive en label til sektionen, der skal indeholde dette link. Hvis denne sektion ikke findes, oprettes der en ny sektion.
+
+> [!NOTE]
+> Fra og med version 10.0.25, når du konfigurerer listen, feltet eller linket, skal du muligvis også vælge de visninger af arbejdsområder, som du vil føje elementet til, hvis funktionen **(Forhåndsversion) Understøttelse af gemte visninger for arbejdsområde** er aktiveret. De tilgængelige visninger af arbejdsområder vises i sektionen **Indstillinger for arbejdsområde** i hver **Konfigurer**-dialogboks. 
 
 Når du har tilføjet en liste, et felt eller link i et arbejdsområde, kan du åbne dette arbejdsområde og omarrangere elementerne i det, som du vil.
 
@@ -170,11 +179,97 @@ Dashboardet er ofte den første side, du ser, når du åbner appen. Den kan tilp
 En entydig tilpasningsfunktion, der er tilgængelig på dashboardet, er muligheden for at tilføje felter. 
 
 - Hvis funktionen **Helsides apps** er deaktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj et arbejdsområde**. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Tilføje felter, lister og links i et arbejdsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i dette emne.
-- Hvis funktionen **Helsides apps** er aktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj en app**. Vælg i dialogboksen, om du vil tilføje et felt i et nyt arbejdsområde eller i et felt med indhold fra Power Apps eller et websted. Følg derefter trinnene for at konfigurere den valgte indstilling. Der oprettes et nyt felt i bunden af dashboardet. 
+- Hvis funktionen **Helsides apps** er aktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj en app**. Vælg i dialogboksen, om du vil tilføje et felt i et nyt arbejdsområde eller i et felt med indhold fra Power Apps eller et websted. Følg derefter trinnene for at konfigurere den valgte indstilling. Der oprettes et nyt felt i bunden af dashboardet. Du kan finde flere oplysninger om, hvordan du kan tilføje, redigere, slette og dele disse integrerede apps, i [Integrere lærredapps fra og Power Apps](embed-power-apps.md) og [Integrere tredjepartsapps](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Deling af tilpasninger
 
-Når du har tilpasset en side, kan du dele dine tilpasninger med andre brugere ved at eksportere den tilpassede side. Du kan derefter bede andre brugere om at importere tilpasningsfilen. Alternativt kan du give tilpasningerne til en bruger med administratorrettigheder. Den bruger kan derefter anvende din tilpasningsfil på mange brugere samtidigt ved hjælp af administrationssiden **Tilpasning**.
+Når du har tilpasset en side, kan du bruge en række metoder til at dele dine tilpasninger med andre brugere. På følgende liste er metoderne arrangeret i rækkefølge fra de mest anbefalede til mindst anbefalede.
+
+1. Publicer visninger til brugere.
+2. Kopier visninger eller tilpasninger til brugere.
+3. Eksportér og importér visninger eller tilpasninger.
+
+### <a name="publish-views-to-users"></a>Publicere visninger til brugere
+
+Hvis funktionen [Gemte visninger](saved-views.md) er aktiveret, og hvis siden understøtter visninger, er det bedst at dele tilpasninger med andre brugere ved at publicere visningen til brugere, der har en eller flere sikkerhedsroller. Du kan finde flere oplysninger i [Publiceringer af visninger](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopiere visninger eller tilpasninger til brugere
+
+Hvis funktionen [Gemte visninger](saved-views.md) er deaktiveret, eller hvis siden ikke understøtter visninger, anbefales det at dele tilpasninger ved at kopiere dem mellem brugere. Denne metode er kun tilgængelig for brugere med særlige rettigheder (f.eks. systemadministratorer). Administratorer kan dog søge efter en bestemt brugers tilpasning i systemet (herunder brugerens personlige visning, hvis gemte visninger er aktiveret) og kopiere konfigurationen til andre brugere.
+
+Hvis gemte visninger er aktiveret, skal du benytte følgende fremgangsmåde for at kopiere tilpasninger.
+
+1. Gå til **Systemadministration \> Opsætning \> Tilpasning**.
+2. Benyt følgende fremgangsmåde for at kopiere personlige visninger:
+
+    1. Vælg **Personlige visninger**.
+    2. Vælg de ønskede visninger på listen.
+    3. Vælg **Kopier til brugere**.
+    4. Vælg de brugere, visningerne skal fordeles til.
+
+    Benyt denne fremgangsmåde for at kopiere tilpasninger på sider, der ikke understøtter visninger:
+
+    1. Vælg **Brugerindstillinger**.
+    2. Vælg den bruger, der har den tilpasning, du vil fordele.
+    3. Vælg **Administrer alle tilpasninger**.
+    4. Vælg de ønskede tilpasninger på listen.
+    5. Vælg **Kopier til brugere**.
+    6. Vælg de brugere, tilpasningerne skal fordeles til.
+
+Hvis gemte visninger ikke er aktiveret, skal du benytte følgende fremgangsmåde for at kopiere en tilpasning.
+
+1. Gå til **Systemadministration \> Opsætning \> Tilpasning**.
+2. Vælg **Anvend**.
+3. Vælg de brugere, tilpasningen skal fordeles til.
+4. Vælg **Vælg eksisterende tilpasning**.
+5. Find og vælg den (enkelte) tilpasning, som du er interesseret i.
+6. Vælg **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Eksportere og importere visninger eller tilpasninger
+
+En anden metode til at dele tilpasninger foregår via eksport og import. Individuelle brugere eller en administrator, der arbejder på deres vegne, kan bruge denne metode til at eksportere deres personaliseringer eller visninger og derefter give den eksporterede fil til andre brugere, som kan importere den. Alternativt kan brugere give deres eksporterede tilpasninger til en bruger, der har administratorrettigheder, og brugeren kan derefter bruge administrationssiden **Tilpasning** til at anvende tilpasningsfilen på mange brugere på én gang.
+
+> [!IMPORTANT]
+> Da tilpasninger bevares på tværs af opdateringer, er det unødvendigt og stærkt frarådet at importere alle tilpasninger igen efter en serviceopdatering eller på noget andet tidspunkt.
+
+#### <a name="export"></a>Eksport
+
+Generelt kan du eksportere en af dine egne visninger eller tilpasninger ved at åbne den relevante side, åbne værktøjslinjen **Tilpasning** og derefter vælge **Eksportér**. Du kan finde flere oplysninger om værktøjslinjen i sektionen [Værktøjslinjen Tilpasning](#personalization-toolbar) tidligere i dette emne. Hvis [gemte visninger](saved-views.md) er aktiveret, kan du også gå til **Indstillinger \> Brugerindstillinger \> Tilpasning** for at få vist en liste over alle dine tilpasninger i systemet. Derfra kan du vælge de visninger eller tilpasninger, der skal eksporteres, og derefter vælge **Eksportér**.
+
+Administratorer kan desuden eksportere andre brugeres tilpasninger med denne fremgangsmåde.
+
+1. Gå til **Systemadministration \> Opsætning \> Tilpasning**.
+2. under fanen **Brugere** skal du vælge den ønskede bruger.
+3. Find og vælg den visning eller tilpasning, som du er interesseret i.
+4. Vælg **Eksportér**.
+
+#### <a name="import"></a>Import
+
+Hvis du vil importere en visning eller tilpasning, skal du blot åbne værktøjslinjen **Tilpasning** og vælge **Importér**. Administratorer kan desuden importere en fil og give den til en eller flere brugere med det samme.
+
+Hvis gemte visninger er aktiveret, skal du benytte følgende fremgangsmåde.
+
+1. Gå til **Systemadministration \> Opsætning \> Tilpasning**.
+2. Vælg **Importér visninger \> Brugervisninger** i handlingsruden.
+3. Vælg importmåden:
+
+    - **Vælg bestemte brugere** – Giv visningen eller tilpasningen til udvalgte brugere.
+    - **Importér uændret** – Importer visningen eller tilpasningen til den samme bruger, som eksporterede den.
+
+4. Vælg **Gennemse**, og søg derefter efter og vælg den tilpasning, der skal importeres.
+5. Vælg **Næste**.
+6. Hvis du valgte **Vælg bestemte brugere** i trin 3, skal du vælge de brugere, tilpasningen skal importeres til.
+7. Vælg **Importér**.
+8. Løs konflikter efter behov.
+
+Hvis gemte visninger ikke er aktiveret, skal du benytte følgende fremgangsmåde.
+
+1. Gå til **Systemadministration \> Opsætning \> Tilpasning**.
+2. Vælg **Anvend**.
+3. Vælg de brugere, tilpasningen skal fordeles til.
+4. Vælg **Importér tilpasninger fra en fil**.
+5. Vælg **Gennemse**, og søg derefter efter og vælg den tilpasning, der skal importeres.
+6. Vælg **OK**.
 
 ## <a name="administration-of-personalizations"></a>Administration af brugertilpasninger
 

@@ -2,11 +2,9 @@
 title: Oprette, beregne og bogføre opgørelser for en detailbutik
 description: Dette emne gennemgår de manuelle trin til oprettelse, beregning og bogføring af en opgørelse for en butik.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ef31bc02fe1761a587ff6bcbecf4a0f34daea9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719866"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Oprette, beregne og bogføre opgørelser for en detailbutik
 
@@ -47,3 +45,6 @@ Dette emne gennemgår de manuelle trin til oprettelse, beregning og bogføring a
 12. Vælg **Butiksregnskab** på startsiden.
 13. Vælg fanen **Bogførte opgørelser**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Fejlfinde problemer med opsætningen af Finance Insights
 description: Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827047"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109854"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 
@@ -93,3 +92,33 @@ Følgende trin bør være udført.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Fejl, "Vi fandt ingen data for det valgte filterområde. Vælg et andet filterområde, og prøv igen." 
+
+### <a name="resolution"></a>Løsning
+
+Kontrollér konfigurationen af dataintegratoren for at validere, at det fungerer som forventet, og konfigurer data fra AI Builder tilbage til Finans.  
+Du kan finde flere under [Oprette et dataintegrationsprojekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Træning af forudsigelse af debitorbetaling mislykkedes med AI Builder-fejlen "Forudsigelse bør kun have to specifikke udfaldsværdier for træning af modellen. Knyt til to udfald, og træn igen", "Problem i træningsrapport: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Løsning
+
+Denne fejl angiver, at der ikke er nok historiske transaktioner det sidste år, der repræsenterer hver af de kategorier, der er beskrevet i kategorierne **Til tiden**, **Forsinket** og **Meget forsinket**. Du kan løse denne fejl ved at justere transaktionsperioden **Meget forsinket**. Hvis en regulering af perioden **Meget forsinket** ikke retter fejlen, er **Forudsigelser om debitorbetaling** ikke den bedste løsning, da den har brug for data i hver kategori til træningsformål.
+
+Du kan finde flere oplysninger om, hvordan du justerer kategorierne **Til tiden**, **Forsinket** og **Meget forsinket**, i [Aktivere forudsigelser om debitorbetalinger](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modeltræning mislykkedes
+
+### <a name="resolution"></a>Løsning
+
+Modeltræningen **Likviditetsbudget** kræver data, der dækker mere end ét år, og som indeholder mindst 100 transaktioner. Det anbefales, at du har mindst to års data med mere end 1.000 transaktioner.
+
+Funktionen **Forudsigelser om debitorbetalinger** kræver mere end 100 transaktioner i de foregående seks til ni måneder. Transaktionerne kan omfatte fritekstfakturaer, salgsordrer og debitorbetalinger. Disse data skal fordeles på tværs af indstillingerne **Til tiden**, **For sent** og **Meget sent**, der defineres på siden **Konfiguration**.    
+
+Funktionen **Budgetforslag** kræver mindst tre års budgetdata eller faktiske data. Denne løsning bruger tre til ti års data i projektioner. Mere end tre år giver bedre resultater. Selve dataene fungerer bedst, når der er variation i værdierne. Hvis dataene indeholder alle konstante data, f.eks. en leasingudgift, kan træningen mislykkes, fordi manglende variation ikke kræver AI til at projektere beløbene.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Symptom: Fejlmeddelelse viser, at "Tabel med navn, "msdyn_paypredpredictionresultentities" ikke findes. Fjernserveren returnerede en fejl: (404) Ikke fundet..."
+
+### <a name="resolution"></a>Løsning
+
+Miljøet har nået maksimumtabelgrænsen for Data Lake-tjenester. Du kan finde flere oplysninger om grænsen i afsnittet **Aktivere dataændringer i næsten realtid** i emnet, [Oversigt over eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

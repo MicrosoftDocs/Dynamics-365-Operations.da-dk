@@ -2,7 +2,7 @@
 title: Offentlige API'er for Lagersynlighed
 description: Dette emne beskriver de offentlige API'er, der leveres via Lagersynlighed.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,18 +10,18 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474646"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062105"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Dette emne beskriver de offentlige API'er, der leveres via Lagersynlighed.
 
@@ -34,20 +34,22 @@ Den offentlige REST-API til tilføjelsesprogrammet Lagersynlighed viser flere sp
 
 I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 
-| Sti | metode | Betegnelse |
+| Sti | metode | Beskrivelse |
 |---|---|---|
 | /api/environment/{environmentId}/onhand | Bogfør | [Oprette en ændringshændelse for disponibelt antal](#create-one-onhand-change-event) |
 | /api/environment/{environmentId}/onhand/bulk | Bogfør | [Oprette flere ændringshændelser](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bogfør | [Angive/tilsidesætte disponibelt antal](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bogfør | [Oprette én reservationshændelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bogfør | [Oprette flere reservationshændelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Hent | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Hent | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
 
 Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > {environmentId}-delen af stien er miljø-id'et i Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> Masse-API'en kan maksimalt returnere 512 poster for hver anmodning.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Find slutpunktet i overensstemmelse med Lifecycle Services-miljøet
 
@@ -81,6 +83,8 @@ Microsoft har bygget en brugergrænseflade (UI) i Power Apps, så du kan hele he
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Godkendelse
 
 Sikkerhedstoken for platformen bruges til at kalde det offentlige API for Lagersynlighed. Du skal derfor generere et _Azure Active Directory-token (Azure AD)_ ved hjælp af Azure AD-programmet. Du skal derefter bruge Azure AD-tokenet til at hente _adgangstoken_ fra sikkerhedstjenesten.
+
+Microsoft leverer den brugsklare hent token-samling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
 Hvis du vil hente et token for sikkerhedstjenesten, skal du følge disse trin.
 
@@ -131,7 +135,7 @@ Hvis du vil hente et token for sikkerhedstjenesten, skal du følge disse trin.
    - Værdien `context` skal være det LCD-miljø-id, hvor du vil implementere tilføjelsesprogrammet.
    - Angiv alle de andre værdier som vist i eksemplet.
 
-1. Send en HTTP-anmodning, der har følgende egenskaber:
+1. Hent et adgangstoken (`access_token`) ved at sende en HTTP-anmodning, der har følgende egenskaber:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Metode:** `POST`
@@ -148,7 +152,8 @@ Hvis du vil hente et token for sikkerhedstjenesten, skal du følge disse trin.
    }
    ```
 
-I senere afsnit skal du bruge til `$access_token` til at repræsentere det token, der blev hentet i sidste trin.
+> [!IMPORTANT]
+> Når du bruger anmodningssamlingen *Postman* til at kalde offentlige API'er for lagersynlighed, skal du tilføje et ihændehaver-token for hver anmodning. Hvis du vil finde dit ihændehaver-token, skal du vælge fanen **Godkendelse** under URL-adressen til anmodningen, vælge typen **Ihændehaver-token** og kopiere det adgangstoken, der blev hentet i det sidste trin. I senere afsnit til dette emne bruges `$access_token` til at repræsentere det token, der blev hentet i sidste trin.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Oprette ændringshændelser for disponibelt antal
 
@@ -159,7 +164,7 @@ Der findes to API'er til oprettelse af ændringshændelser for disponibelt antal
 
 I følgende tabel opsummeres betydningen af hvert felt i JSON-brødteksten.
 
-| Felt-id | Betegnelse |
+| Felt-id | Beskrivelse |
 |---|---|
 | `id` | Et entydigt id for den specifikke ændringshændelse. Dette id bruges til at sikre, at hvis kommunikationen med tjenesten mislykkes under bogføringen, vil hændelsen ikke blive talt med to gange i systemet, hvis den sendes igen. |
 | `organizationId` | Identifikatoren for den organisation, der er knyttet til hændelsen. Denne værdi er tilknyttet et organisations-id eller et dataområde-id i Supply Chain Management. |
@@ -246,7 +251,7 @@ Følgende er et eksempel på brødtekst uden `dimensionDataSource`. I dette tilf
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Oprette flere ændringshændelser
 
-Denne API kan oprette flere poster samtidigt. De eneste forskelle mellem denne API og [API'en for enkelthændelser](#create-one-onhand-change-event) er værdierne for `Path` og `Body`. For denne API leverer `Body` en række af poster.
+Denne API kan oprette flere poster samtidigt. De eneste forskelle mellem denne API og [API'en for enkelthændelser](#create-one-onhand-change-event) er værdierne for `Path` og `Body`. For denne API leverer `Body` en række af poster. Det maksimale antal poster er 512, hvilket betyder, at masse-API'en til ændring af disponibelt antal kan understøtte op til 512 ændringshændelser på én gang.
 
 ```txt
 Path:
@@ -372,8 +377,6 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
 
 ## <a name="create-reservation-events"></a>Oprette reservationshændelser
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Hvis du vil bruge API'en for *Reservér*, skal du åbne reservationsfunktionen og fuldføre reservationskonfigurationen. Du kan finde flere oplysninger i [Konfiguration af reservationer (valgfri)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Oprette én reservationshændelse
@@ -475,7 +478,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Forespørg om disponibelt antal
 
-API'en for _Forespørg om disponibelt antal_ bruges til at hente aktuelle data om disponibelt antal for dine produkter.
+Brug API'en _Forespørg om disponibelt antal_ til at hente aktuelle data om disponibelt antal for dine produkter. API'en understøtter i øjeblikket forespørgsler på op til 100 individuelle varer efter `ProductID`-værdi. Der kan også angives flere `SiteID`- og `LocationID`-værdier i hver forespørgsel. Maksimumgrænsen er defineret som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Forespørgsel ved hjælp af opslagsmetoden
 
@@ -508,7 +511,7 @@ I brødteksten i denne anmodning er `dimensionDataSource` stadig en valgfri para
 
 - `organizationId` skal kun indeholde én værdi, men det er stadig en matrix.
 - `productId` kan indeholde en eller flere værdier. Hvis det er en tom matrix, returneres alle produkter.
-- `siteId` og `locationId` bruges i Lagersynlighed til partitionering.
+- `siteId` og `locationId` bruges i partitionering i Lagersynlighed. Du kan angive mere end én `siteId` og `locationId`-værdi i en *Forespørgselsanmodning*. I den aktuelle version skal du angive både `siteId` og `locationId`-værdier.
 
 Parameteren `groupByValues` skal følge din konfiguration til indeksering. Du kan få flere oplysninger i [Konfiguration af produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
 
@@ -550,7 +553,7 @@ I følgende eksempler vises, hvordan du forespørger på alle produkter på en b
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -567,7 +570,7 @@ Query(Url Parameters):
 Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er nøjagtigt den samme som det opslagseksempel, som blev angivet tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

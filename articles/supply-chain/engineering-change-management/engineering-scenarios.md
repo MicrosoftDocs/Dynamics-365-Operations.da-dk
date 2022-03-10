@@ -2,24 +2,22 @@
 title: Gennemgang af funktioner for styring af tekniske ændringer
 description: Dette emne indeholder en total gennemgang, der viser, hvordan du kan arbejde med styring af tekniske ændringer.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987572"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573987"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Gennemgang af funktioner for styring af tekniske ændringer
 
@@ -59,7 +57,7 @@ En teknisk organisation ejer de tekniske data og er ansvarlig for produktdesign 
     - **Teknisk organisation:** *DEMF*
     - **Organisationsnavn:** *Contoso Entertainment System Germany*
 
-    ![Tilføje en teknisk organisation](media/engineering-org.png "Tilføje en teknisk organisation")
+    ![Tilføje en teknisk organisation.](media/engineering-org.png "Tilføje en teknisk organisation")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Konfigurere dimensionsgruppen for versionsprodukt
 
@@ -69,7 +67,7 @@ En teknisk organisation ejer de tekniske data og er ansvarlig for produktdesign 
 1. Vælg **Gem** for at gemme de nye dimensions- og lastværdier i oversigtspanelet **Produktdimensioner**.
 1. I oversigtspanelet **Produktdimensioner** skal du angive **Version** som en aktiv produktdimension.
 
-    ![Tilføje en produktdimensionsgruppe](media/product-dimension-groups.png "Tilføje en produktdimensionsgruppe")
+    ![Tilføje en produktdimensionsgruppe.](media/product-dimension-groups.png "Tilføje en produktdimensionsgruppe")
 
 ### <a name="set-up-product-lifecycle-states"></a>Konfigurere produktlivscyklusser
 
@@ -84,7 +82,7 @@ Når et teknisk produkt går gennem dets livscyklus, er det vigtigt, at du kan s
 1. Vælg **Gem** for at gemme den nye livscyklustilstand og lastværdier i oversigtspanelet **Aktiverede forretningsprocesser**.
 1. Vælg de forretningsprocesser, der skal være tilgængelige, i oversigtspanelet **Aktiverede forretningsprocesser**. I dette eksempel skal du lade **Politik**-feltet være angivet til *Aktiveret* for alle forretningsprocesser.
 
-    ![Aktivere forretningsprocesser for en livscyklustilstand](media/product-lifecycle-states-1.png "Aktivere forretningsprocesser for en livscyklustilstand")
+    ![Aktivere forretningsprocesser for en livscyklustilstand.](media/product-lifecycle-states-1.png "Aktivere forretningsprocesser for en livscyklustilstand")
 
 1. Vælg **Ny** for at tilføje en ny livscyklustilstand, og angiv derefter følgende værdier for den:
 
@@ -94,7 +92,7 @@ Når et teknisk produkt går gennem dets livscyklus, er det vigtigt, at du kan s
 1. Vælg **Gem** for at gemme den nye livscyklustilstand og lastværdier i oversigtspanelet **Aktiverede forretningsprocesser**.
 1. Vælg de forretningsprocesser, der skal være tilgængelige, i oversigtspanelet **Aktiverede forretningsprocesser**. I dette eksempel skal du angive **Politik**-feltet til *Aktiveret med advarsel* for alle forretningsprocesser.
 
-    ![Aktivere (med advarsler) forretningsprocesser for en livscyklustilstand](media/product-lifecycle-states-2.png "Aktivere (med advarsler) forretningsprocesser for en livscyklustilstand")
+    ![Aktivere (med advarsler) forretningsprocesser for en livscyklustilstand.](media/product-lifecycle-states-2.png "Aktivere (med advarsler) forretningsprocesser for en livscyklustilstand")
 
 ### <a name="set-up-a-version-number-rule"></a>Oprette en regel for versionsnummer
 
@@ -105,7 +103,7 @@ Når et teknisk produkt går gennem dets livscyklus, er det vigtigt, at du kan s
     - **Nummerregel:** *Automatisk*
     - **Format:** *V-\#\#*
 
-    ![Tilføje en versionsnummerregel for et produkt](media/version-number-rule.png "Tilføje en versionsnummerregel for et produkt")
+    ![Tilføje en versionsnummerregel for et produkt.](media/version-number-rule.png "Tilføje en versionsnummerregel for et produkt")
 
 ### <a name="set-up-a-product-release-policy"></a>Konfigurere en produktfrigivelsespolitik
 
@@ -137,7 +135,7 @@ Når et teknisk produkt går gennem dets livscyklus, er det vigtigt, at du kan s
     - **Kopiér rutegodkendelse:** Markér dette afkrydsningsfelt.
     - **Kopiér ruteaktivering:** Markér dette afkrydsningsfelt.
 
-    ![Tilføje en produktfrigivelsespolitik](media/product-release-policy.png "Tilføje en produktfrigivelsespolitik")
+    ![Tilføje en produktfrigivelsespolitik.](media/product-release-policy.png "Tilføje en produktfrigivelsespolitik")
 
 ### <a name="set-up-an-engineering-product-category"></a>Konfigurere en teknisk produktkategori 
 
@@ -162,7 +160,7 @@ Tekniske produktkategorier udgør grundlaget for oprettelse af tekniske produkte
 1. I oversigtspanelet **Frigivelsespolitik** skal du angive feltet **Produktfrigivelsespolitik** til *Komponenter*.
 1. Vælg **Gem**.
 
-    ![Tilføje en teknisk produktkategori](media/product-category-details.png "Tilføje en teknisk produktkategori")
+    ![Tilføje en teknisk produktkategori.](media/product-category-details.png "Tilføje en teknisk produktkategori")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Konfigurere betingelser for accept af produkt
 
@@ -170,7 +168,7 @@ Tekniske produktkategorier udgør grundlaget for oprettelse af tekniske produkte
 1. Gå til **Teknisk ændringsstyring &gt; Konfiguration &gt; Parametre for styring af tekniske ændringer**.
 1. Under fanen **Frigivelseskontrol** skal du i sektionen **Accept af produkt** angive, feltet **Accept af produkt** til *Manuel*.
 
-    ![Konfigurere betingelser for accept af produkt](media/engineering-change-management-parameters.png "Konfigurere betingelser for accept af produkt")
+    ![Konfigurere betingelser for accept af produkt.](media/engineering-change-management-parameters.png "Konfigurere betingelser for accept af produkt")
 
 ## <a name="create-a-new-engineering-product"></a>Oprette et nyt teknisk produkt
 
@@ -189,23 +187,23 @@ Et teknisk produkt er et produkt, der versionsnummereret og kontrolleret via sty
     - **Produktnummer:** *Z0001*
     - **Produktnavn:** *Højttalersæt*
 
-    ![Tilføje et teknisk produkt](media/new-product-dialog.png "Tilføje et teknisk produkt")
+    ![Tilføje et teknisk produkt.](media/new-product-dialog.png "Tilføje et teknisk produkt")
 
     Bemærk, at **Version**-feltet automatisk angives ved hjælp af den regel for produktversionsnummer, som du oprettede tidligere.
 
 1. Vælg **OK** for at oprette produktet og lukke dialogboksen.
 1. Siden med detaljer for det nye produkt åbnes. Bemærk, at værdier allerede er udfyldt for nogle felter, f.eks. **Lagringsdimensionsgruppe**, **Sporingsdimensionsgruppe** og/eller **Varemodelgruppe**. Disse felter blev automatisk angivet, fordi produktet frigives i den juridiske enhed *DEMF* og bruger *Komponenter* som produktfrigivelsespolitik, der er knyttet til den tekniske produktkategori *Komponenter*. Da du tidligere brugte vare *D0006* som skabelon til oprettelse af en linje til den juridiske enhed *DEMF*, blev de værdier, der blev udfyldt, hentet fra vare *D0006*.
 
-    ![Frigivne produktdetaljer](media/product-details.png "Frigivne produktdetaljer")
+    ![Frigivne produktdetaljer.](media/product-details.png "Frigivne produktdetaljer")
 
 1. Vælg **Tekniske versioner** i gruppen **Teknisk ændringsstyring** i handlingsruden under fanen **Tekniker** for at få vist versionerne af produktet.
 
-    ![Tekniske versioner](media/engineering-versions-list.png "Tekniske versioner")
+    ![Tekniske versioner.](media/engineering-versions-list.png "Tekniske versioner")
 
 1. Læg mærke til, at der kun er én version til produktet på siden **Tekniske versioner**, og at den er aktiv.
 1. Vælg versionen for at få vist detaljerne.
 
-    ![Oplysninger om teknisk version](media/engineering-version-details.png "Oplysninger om teknisk version")
+    ![Oplysninger om teknisk version.](media/engineering-version-details.png "Oplysninger om teknisk version")
 
 1. Vælg **Opret stykliste** i oversigtspanelet **Stykliste** på siden **Teknisk version**.
 1. I dialogboksen **Opret stykliste** skal du angive følgende værdier:
@@ -214,25 +212,25 @@ Et teknisk produkt er et produkt, der versionsnummereret og kontrolleret via sty
     - **Navn:** Højttalersæt
     - **Lokation:** 1
 
-    ![Oprettelse af en BOM](media/create-bom.png "Oprettelse af en BOM")
+    ![Oprettelse af en BOM.](media/create-bom.png "Oprettelse af en BOM")
 
 1. Vælg **OK** for at tilføje styklisten og lukke dialogboksen.
 1. Vælg **Stykliste** i oversigtspanelet **Stykliste**.
 1. På siden **Styklister** i oversigtspanelet **Styklistelinjer** kan du tilføje tre linjer – én hver for varenummer *D0001*, *D0003* og *D0006*.
 
-    ![Tilføje styklistelinjer](media/bom.png "Tilføje styklistelinjer")
+    ![Tilføje styklistelinjer.](media/bom.png "Tilføje styklistelinjer")
 
 1. Vælg **Gem**.
 1. Luk siden.
 1. Vælg **Godkend** i oversigtspanelet **Stykliste** på siden **Teknisk version**.
 1. Vælg **OK** i dialogboksen, der vises.
 
-    ![Godkende styklisten](media/approve-dialog.png "Godkende styklisten")
+    ![Godkende styklisten.](media/approve-dialog.png "Godkende styklisten")
 
 1. Vælg **Aktivér** i oversigtspanelet **Stykliste** på siden **Teknisk version**.
 1. Bemærk, at afkrydsningsfelterne **Aktiv** og **Godkendt** er markeret for styklisten.
 
-    ![Aktiv og godkendt stykliste](media/approved-bom.png "Aktiv og godkendt stykliste")
+    ![Aktiv og godkendt stykliste.](media/approved-bom.png "Aktiv og godkendt stykliste")
 
 1. Luk siden.
 
@@ -246,25 +244,25 @@ Produktet er nu designet af den tekniske afdeling. I dette eksempel er produktet
 1. Vælg **Frigiv produktstruktur** i gruppen **Vedligehold** under fanen **Produkt** i handlingsruden for at åbne guiden **Frigiv produkter**.
 1. Markér afkrydsningsfeltet **Vælg** for produkt **Z0001** på siden *Vælg tekniske produkter, der skal frigives*.
 
-    ![Vælge de tekniske produkter, der skal frigives](media/select-eng-product-to-release.png "Vælge de tekniske produkter, der skal frigives")
+    ![Vælge de tekniske produkter, der skal frigives.](media/select-eng-product-to-release.png "Vælge de tekniske produkter, der skal frigives")
 
 1. Vælg **Frigiv detaljer**.
 1. Siden **Detaljer om produktfrigivelse** vises, hvor du kan gennemse detaljerne om det produkt, der skal frigives, og dets produktstruktur. Bemærk, at indstillingen **Send stykliste** er indstillet til *Ja*. Derfor vil både produkt *Z0001* og alle dets underordnede varer blive frigivet fra styklisten.
 
     Du kan vælge enhver underordnet vare i venstre rude for at gennemse oplysningerne. Hvis en underordnet vare har en stykliste, kan du også vælge at frigive styklisten for den pågældende underordnede vare.
 
-    ![Gennemse oplysninger om produktfrigivelse](media/product-release-details.png "Gennemse oplysninger om produktfrigivelse")
+    ![Gennemse oplysninger om produktfrigivelse.](media/product-release-details.png "Gennemse oplysninger om produktfrigivelse")
 
 1. Luk siden for at vende tilbage til guiden **Frigiv produkter**.
 1. Vælg **Næste** for at åbne siden **Vælg produkter, der skal frigives**. Hvis du har valgt standardprodukter (der ikke er tekniske), vil de blive vist på denne side. Bemærk, at når du frigiver et standardprodukt ved at vælge **Frigiv produktstruktur**, frigives stykliste og rute også.
 
-    ![Vælge standardprodukter, der skal frigives](media/select-std-product-to-release.png "Vælge standardprodukter, der skal frigives")
+    ![Vælge standardprodukter, der skal frigives.](media/select-std-product-to-release.png "Vælge standardprodukter, der skal frigives")
 
 1. Vælg **Næste** for at åbne siden **Vælg produktvarianter, der skal frigives**. I dette eksempel er der ikke nogen varianter.
 1. Vælg **Næste** for at åbne siden **Vælg firmaer**.
 1. Vælg de firmaer, som produktet skal frigives til. I dette eksempel skal du markere afkrydsningsfeltet **USMF**.
 
-    ![Vælge firmaer, der skal frigives til](media/select-release-companies.png "Vælge firmaer, der skal frigives til")
+    ![Vælge firmaer, der skal frigives til.](media/select-release-companies.png "Vælge firmaer, der skal frigives til")
 
 1. Vælg **Næste** for at åbne siden **Bekræft valg**.
 1. Vælg **Udfør**.
@@ -282,7 +280,7 @@ Udfør følgende trin for at gennemse produktet og frigive det i firmaet *USMF*.
 
     På siden **Åbn produktfrigivelser** vises produkt *Z0001*, som har status af *Afventer accept*.
 
-    ![Åbn produktfrigivelser](media/open-product-releases.png "Åbn produktfrigivelser")
+    ![Åbn produktfrigivelser.](media/open-product-releases.png "Åbn produktfrigivelser")
 
 1. Vælg værdien i kolonnen **Produktnummer** for at åbne siden **Detaljer om produktfrigivelse**. Bemærk følgende oplysninger:
 
@@ -290,7 +288,7 @@ Udfør følgende trin for at gennemse produktet og frigive det i firmaet *USMF*.
     - Oversigtspanelet **Frigivelsesdetaljer** indeholder oplysninger om produktet og den version, der er frigivet. Her kan du redigere indstillinger, f.eks. gyldighedsdatoer.
     - Oversigtspanelet **Rute** viser produktets rute. I dette eksempel har du dog ikke frigivet nogen ruter.
 
-    ![Detaljer om produktfrigivelse](media/product-release-details-2.png "Detaljer om produktfrigivelse")
+    ![Detaljer om produktfrigivelse.](media/product-release-details-2.png "Detaljer om produktfrigivelse")
 
 1. Når du er færdig med at gennemse oplysningerne, er du klar til at acceptere produktet og på denne måde frigive det i *USMF*-firmaet. Vælg **Handlinger &gt; Acceptér** i handlingsruden.
 1. Produktet er nu frigivet i *USMF*-firmaet. Gå til **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Du kan se vare *Z0001*.
@@ -306,7 +304,7 @@ Masterdatastyringen for *USMF*-firmaet vil sikre, at produktet er i en *Prototyp
 1. Vælg **Skift livscyklustilstand** i gruppen **Livscyklustilstand** under fanen **Produkt** i handlingsruden.
 1. Angiv feltet **Tilstand** til **Prototype** på dialogboksrullelisten *Skift livscyklustilstand*, og vælg derefter **OK**.
 
-    ![Ændre livscyklustilstand](media/change-lifecycle-state.png "Ændre livscyklustilstand")
+    ![Ændre livscyklustilstand.](media/change-lifecycle-state.png "Ændre livscyklustilstand")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Tilføje det tekniske produkt i en salgsordre
 
@@ -320,7 +318,7 @@ Produktet kan nu sælges til en kunde. Hvis du vil tilføje produktet i en salgs
 
     Du får vist en advarselsmeddelelse om, at varen har status af *Prototype*. Men da meddelelsen kun er en advarsel, er salgsordren stadig oprettet.
 
-    ![Det tekniske produkts salgsordre](media/sales-order-eng-product.png "Det tekniske produkts salgsordre")
+    ![Det tekniske produkts salgsordre.](media/sales-order-eng-product.png "Det tekniske produkts salgsordre")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Anmode om ændringer i det tekniske produkt
 
@@ -330,7 +328,7 @@ Produktet er sendt til en kunde, men kunden er ikke helt tilfreds og giver feedb
 1. Find og åbn den salgsordre, du oprettede i den forrige øvelse.
 1. I oversigtspanelet **Salgsordrelinjer** skal du vælge **Teknisk ændringsstyring &gt; Ny teknisk ændringsanmodning**.
 
-    ![Oprette en anmodning om en teknisk ændring fra en salgsordre](media/sales-order-eng-change-request.png "Oprette en anmodning om en teknisk ændring fra en salgsordre")
+    ![Oprette en anmodning om en teknisk ændring fra en salgsordre.](media/sales-order-eng-change-request.png "Oprette en anmodning om en teknisk ændring fra en salgsordre")
 
 1. Udfyld anmodningen om teknisk ændring på baggrund af kundens feedback. Angiv følgende værdier for dette eksempel:
 
@@ -343,7 +341,7 @@ Produktet er sendt til en kunde, men kunden er ikke helt tilfreds og giver feedb
 1. I oversigtspanelet **Oplysninger** skal du vælge **Ny &gt; Note** for at føje en note til gitteret.
 1. I feltet **Beskrivelse** for den nye note skal du angive, at varen *D0003* skal slettes fra styklisten. Hvis du skal tilføje flere oplysninger for noten, kan du skrive tekst i feltet **Noter**.
 
-    ![Teknisk ændringsanmodning](media/eng-change-request.png "Teknisk ændringsanmodning")
+    ![Teknisk ændringsanmodning.](media/eng-change-request.png "Teknisk ændringsanmodning")
 
 1. Vælg **Gem** i handlingsruden.
 1. Bemærk, at varen automatisk er tilføjet i oversigtspanelet **Produkter**, og at kilden til anmodningen om teknisk ændring (salgsordren) er blevet tilføjet i oversigtspanelet **Kilde**.
@@ -372,32 +370,31 @@ Teknikeren gennemgår nu anmodningen fra kunden og opretter en ændringsordre fo
     - **Produkt:** *Z0001*
     - **Virkning:** *Ny version*
 
-    ![Oprette en teknisk ændringsordre](media/eng-change-order.png "Oprette en teknisk ændringsordre")
+    ![Oprette en teknisk ændringsordre.](media/eng-change-order.png "Oprette en teknisk ændringsordre")
 
 1. Bemærk, at fordi du angiver feltet **Virkning** til *Ny version*, vises feltet **Ny version** under fanen **Detaljer** i oversigtspanelet **Produktdetaljer**, hvad det nye versionsnummer vil være (*V-02* for dette eksempel).
 
-    ![Produktdetaljer for en teknisk ændringsordre](media/eng-change-order-product-details.png "Produktdetaljer for en teknisk ændringsordre")
+    ![Produktdetaljer for en teknisk ændringsordre.](media/eng-change-order-product-details.png "Produktdetaljer for en teknisk ændringsordre")
 
 1. Vælg **Gem** i handlingsruden.
 1. I oversigtspanelet **Produktdetaljer** under fanen **Stykliste** skal du vælge **Linjer** for at åbne styklisten for version *V-01* af produkt *Z0001*.
 
-    ![Teknisk produkts styklistelinjer](media/eng-product-bom-lines.png "Teknisk produkts styklistelinjer")
+    ![Teknisk produkts styklistelinjer.](media/eng-product-bom-lines.png "Teknisk produkts styklistelinjer")
 
 1. Vælg linjen for varenummer *D0003*, og vælg derefter **Slet** i handlingsruden. Værdien i feltet **Ændringstype** for denne linje ændres til *Slettet*.
 1. Vælg **Gem** i handlingsruden.
 
-    ![Ændret teknisk produkts styklistelinjer](media/eng-product-bom-lines-modified.png "Ændret teknisk produkts styklistelinjer")
+    ![Ændret teknisk produkts styklistelinjer.](media/eng-product-bom-lines-modified.png "Ændret teknisk produkts styklistelinjer")
 
 1. Luk siden **Styklistelinje** for at vende tilbage til siden **Teknisk ændringsordre**.
 1. I oversigtspanelet **Produktdetaljer** skal du under fanen **Stykliste** bemærkr, at værdien i feltet **Ændringstype** for stykliste *Z0001* nu er *Ændret*.
 
-    ![Teknisk ændringsordre, der indeholder en ændret stykliste](media/eng-change-order-changed-bom.png "Teknisk ændringsordre, der indeholder en ændret stykliste")
+    ![Teknisk ændringsordre, der indeholder en ændret stykliste.](media/eng-change-order-changed-bom.png "Teknisk ændringsordre, der indeholder en ændret stykliste")
 
     Ordren skal nu godkendes, før ændringerne kan behandles. Når ændringerne er behandlet, opdateres produkterne med de ændringer, der er inkluderet i den tekniske ændringsordre. I dette eksempel er den person, der opretter den tekniske ændringsordre, angivet som godkender.
 
 1. Vælg **Godkend** i gruppen **Skift status** under fanen **Ændringsordre** i handlingsruden.
 1. Vælg **Proces** for at opdatere oplysningerne om produktet.
-1. Vælg **Fuldført** for at markere ændringsordren som fuldført.
 
 ## <a name="release-the-changed-product"></a>Frigive det ændrede produkt
 
@@ -410,3 +407,9 @@ Produktet kan nu frigives igen til firmaet *USMF* og derefter sendes til kunden.
 1. Vælg hvert af de firmaer, du vil frigive produkter til.
 1. Vælg **OK** for at lukke dialogboksen **Frigivelser** og vende tilbage til ændringsordren.
 1. Vælg **Proces** i gruppen **Produktfrigivelser** under fanen **Ændringsordre** i handlingsruden for at frigive de berørte produkter til de valgte firmaer. Du kan også vælge **Frigiv produktstruktur** for at starte frigivelsesprocessen.
+
+## <a name="complete-the-change-order"></a>Fuldføre ændringsrækkefølgen
+
+Hvis du vil markere ændringsordren som fuldført, hvilket angiver, at der ikke længere er flere handlinger, skal du vælge **Fuldført** i handlingsruden.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

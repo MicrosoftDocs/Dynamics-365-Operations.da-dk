@@ -2,7 +2,6 @@
 title: Konfigurere godkendelsestrin i en arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
@@ -15,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5442b7db0a1ccd2a2e07faf8635ac12ff06c560
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565728"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070771"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkendelsestrin i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 
@@ -157,7 +159,7 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
 
     - **Enkelt godkender** – den handling, der udføres på dokumentet, bestemmes af den første person, der reagerer. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette er den første person, der reagerer på dokumentet, vil den handling, hun udfører, blive anvendt på dokumentet. Hvis Mette afviser dokumentet, afvises det og sendes tilbage til Søren. Hvis Mette godkender dokumentet, sendes det til Dorthe til godkendelse.
 
-        ![Arbejdsgang, der har en godkendelsesproces](./media/workflow_multipleusersinstep.gif)
+        ![Arbejdsgang, der har en godkendelsesproces.](./media/workflow_multipleusersinstep.gif)
 
     - **Flertal af godkendere** – den handling, der skal anvendes på dokumentet, bliver bestemt, når de fleste af godkenderne har reageret. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette og Karina er de første personer, der reagerer på dokumentet, vil den handling, de udfører, blive anvendt på dokumentet.
 

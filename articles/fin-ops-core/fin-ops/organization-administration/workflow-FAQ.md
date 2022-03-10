@@ -2,7 +2,6 @@
 title: Ofte stillede spørgsmål om arbejdsgang
 description: Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
@@ -13,16 +12,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98d67e240cdd5e64fef1aaf24b4907d1af42056a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567973"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065574"
 ---
 # <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsgang
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
 
@@ -46,9 +48,9 @@ Her er nogle få nøgleområder, du kan bemærke om tilføjelse af påmindelser 
     - I en fremtidig opdatering vil vi tilføje en Handlingscenter-meddelelse, så en bruger får tildelt et arbejdsgangsopgave. 
 - Føje beskeder til arbejdsgange
     - Handlingscenter-meddelelser kan oprettes for bestemte brugere, f.eks. en meddelelse, der er oprettet fra en arbejdsgang i X++.
-    - [Arbejdsgange har forretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), som kunden kan bruge til at udløse flows, har de beskeder, de søger efter.   
+    - [Arbejdsgange har forretningshændelser](../../dev-itpro/business-events/business-events-workflow.md), som kunden kan bruge til at udløse flows, har de beskeder, de søger efter.   
 
-Hvis en bruger kort sagt ikke får den rigtige besked fra Handlingscenter, når vedkommende er blevet tildelt en arbejdsgangsopgave, så brug [Arbejdsgangsforretningshændelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate til at give flere eller andre beskeder.
+Hvis en bruger kort sagt ikke får den rigtige besked fra Handlingscenter, når vedkommende er blevet tildelt en arbejdsgangsopgave, så brug [Arbejdsgangsforretningshændelser](../../dev-itpro/business-events/business-events-workflow.md) med Microsoft Power Automate til at give flere eller andre beskeder.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Hvorfor kan arbejdsgangseditor ikke starte under AD FS?
 Når du kører arbejdsproceseditoren under Active Directory Federation Services (ADFS) i et opgraderet miljø, kan den have problemer med at starte. Hvis den gør det, skal du sørge for, at URL-adressen "https://dynamicsaxworkfloweditor/" er tilføjet til egenskaben **Microsoft Dynamics 365 for Operations i Det lokale miljø - Arbejdsgang - Forudinstalleret program** i ADFS-indstillingerne.

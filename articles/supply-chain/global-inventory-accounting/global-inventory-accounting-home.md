@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f4434afb847104a18a2a2a2f07a7060cf01de816
-ms.sourcegitcommit: eceae470f4ae58000ec33fea34db34b7a7a1af43
+ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "6273129"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103557"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Global Inventory Accounting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Internationale organisationer er under stadig større pres fra myndighederne til at overholde lokale og globale regnskabsstandarder. Værdiansættelsen af lagervarer spiller en vigtig rolle i forbindelse med at sikre overholdelse af angivne standarder. Tilføjelsesprogrammet Global Inventory Accounting til Microsoft Dynamics 365 Supply Chain Management tilbyder en omfattende løsning, der gør det muligt for organisationer (især internationale organisationer) at bruge flere finansmoduler til lagerregnskaber. Derfor kan disse organisationer overholde flere regnskabsstandarder og interne ledelsesregnskabsprincipper samtidig.
 
@@ -48,6 +49,8 @@ Global Inventory Accounting er i øjeblikket tilgængelig i følgende geografisk
 - Canada
 
 Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil Microsoft Dynamics Lifecycle Services (LCS) vise en meddelelse om, at dit geografiske område ikke understøttes. Global Inventory Accounting understøtter ikke implementering af Supply Chain Management i det lokale miljø.
+
+Hvis du har problemer med at aktivere Global Lagerregnskab i et af de områder, der understøttes her, kan du sende en e-mail med dit miljø-id til det team, der understøttes af[Global Lagerregnskab](mailto:GlobalInvAccount@microsoft.com), til validering.
 
 ## <a name="licensing"></a>Licensering
 

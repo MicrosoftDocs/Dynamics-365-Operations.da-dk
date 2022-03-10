@@ -2,16 +2,13 @@
 title: Gantt-diagram til finplanlægning
 description: Produktionsplanlæggere kan styre og optimere produktionsplaner ved hjælp af Gantt-diagrammer.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 180fb7b31ea826c546aa8472a7ef4025a3b8865a783a5b662ed30b69f98acf92
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730196"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram til finplanlægning
 
@@ -48,10 +45,10 @@ Gantt-diagrammet kan åbnes i to forskellige visninger, **Ordrevisning** og **Re
 
 ## <a name="order-view"></a>Ordrevisning
 
-[![Ordrevisning](./media/orderview.png)](./media/orderview.png)
+[![Ordrevisning.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Ressourcevisning
-[![Ressourcevisning](./media/resview.png)](./media/resview.png)
+[![Ressourcevisning.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktiviteter
 Aktiviteterne vises som søjler og er organiseret på en skala i tidsgitteret med planlagt start- og sluttidspunkt, så længden af søjlerne er proportional med den tid, der er nødvendig for at fuldføre aktiviteten. Aktiviteterne vises i henhold til en tidsskala. Du kan justere tidsskalaen i menuen, hvor du kan vælge en startdato og slutdato og en tidsenhed, f.eks., timer eller dage. Du kan angive fokus på et tidsinterval, hvor du vil administrere aktiviteter, ved at justere tidsskalaen. 
@@ -105,25 +102,25 @@ Det er ikke muligt at planlægge et job uden for det angivne tidsinterval i Gant
 
 I et netværk af aktiviteter som f.eks. job, der tilhører samme produktionsordre, kan du bruge funktionen **Planlæg foregående job** til at planlægge de foregående job i forhold til et valgt job i netværket. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før det foregående job er planlagt, og efter det foregående job er planlagt. 
 
-[![Planlæg foregående job](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Planlæg foregående job.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Planlæg efterfølgende job
 
 Du kan bruge funktionen **Planlæg efterfølgende job** til at planlægge de næste job i forhold til et valgt job i et netværk af aktiviteter. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før det næste job er planlagt, og efter det næste job er planlagt. 
 
-[![Planlæg næste job](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Planlæg næste job.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Planlæg omkring job
 
 Du kan bruge funktionen **Planlæg omkring job** til at planlægge det næste job og det foregående job i forhold til et valgt job i et netværk af aktiviteter. I eksemplet nedenfor er den fremhævede aktivitet det valgte job. Diagrammet viser, før et job er planlagt, og efter jobbet er planlagt. 
 
-[![Planlæg omkring job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Planlæg omkring job.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Arranger job
 
 Du kan bruge funktionen **Arranger** til at arrangere de valgte aktiviteter på samme ressource. Disse aktiviteter kan være i det samme netværk af aktiviteter, men de kan også tilhøre forskellige netværk. Når du bruger funktionen Arranger, vil tidsrum mellem de valgte aktiviteter blive elimineret. Du kan bruge denne funktion til at optimere kapacitetsudnyttelsen af ressourcerne. Diagrammet viser, før et job er planlagt, og efter jobbet er planlagt. 
 
-[![Arranger job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Arranger job.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Gentildele aktiviteter fra én ressource til en anden
 
@@ -158,5 +155,8 @@ Gantt-diagrammet kan åbnes fra følgende sider.
 ## <a name="additional-resources"></a>Yderligere ressourcer  
 [Visuel planlægning med Gantt-diagram for produktion og batchordrer (video)](https://youtu.be/BtbuShkGj4I)
 
-[Visuel planlægning for produktionen (demoscript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
+[Visuel planlægning for produktionen (demoscript)](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

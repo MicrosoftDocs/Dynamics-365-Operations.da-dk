@@ -4,18 +4,18 @@ description: I dette emne beskrives funktioner, der enten er nye eller ændrede 
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773507"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647308"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
@@ -38,14 +38,15 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 | Lager&nbsp;og&nbsp;logistik | [Forbedringer af ydeevne for salgsordredetaljer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Denne funktion gør brugergrænsefladen mere responsiv, når der åbnes salgsordrer, især ordrer, der indeholder mange linjer. |
 | Produktion | [Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer](../production-control/process-automation-quality-orders.md ) |
 | Produktion | [Forbedret brugergrænseflade til produktionsudførelse for fremstilling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Konfigurere grænsefladen til produktionsudførelse](../production-control/production-floor-execution-configure.md) |
-| Administration af produktoplysninger | [Administrere ændringer i formler og deres stoffer](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Administrere ændringer i formler og deres stoffer](../engineering-change-management/manage-formula-changes.md) |
+| Planlægning | [Uendelig kapacitetsplanlægning til planlægningsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planlægning med ubegrænset kapacitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Administration af produktoplysninger | [Administrere ændringer i formler og deres ingredienser](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Administrere ændringer i formler og deres stoffer](../engineering-change-management/manage-formula-changes.md) |
 | Administration af produktoplysninger | [Kontroller af produktparathed](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Produktparathed](../engineering-change-management/product-readiness.md) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsforbedringer, der er inkluderet i denne version
 
 Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne version. Hver af disse giver en trinvis forbedring af en eksisterende funktion. Da det kun er forbedringer, er de ikke angivet i [udgivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Men for at sikre, at disse forbedringer ikke er i konflikt med dine eksisterende tilpasninger eller præferencer, er hver af dem som standard deaktiveret (medmindre andet er angivet). Hvis du vil bruge en af disse funktioner, skal du udtrykkeligt aktivere dem i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsområde | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
+| Modul | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
 | Varedisponering | Parallel godkendelse til justeret behovsprognose | Denne funktion muliggør parallel godkendelse af justeret efterspørgselsprognose fra siden **Justeret efterspørgselsprognose**. Formålet med denne funktion er at øge ydeevnen, når et stort antal budgetter godkendes. Under godkendelse kan brugeren angive **Antal tråde** i dialogboksen til godkendelse. |
 | Varedisponering | (Forhåndsversion) Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |

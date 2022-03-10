@@ -2,27 +2,27 @@
 title: Oversigt over direkte debitering (SEPA)
 description: Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11144
+ms.custom:
+- "11144"
+- intro-internal
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c0a64e2bfefb7c4ed0e0f07be60e9f5293f8d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5f71eca0ca9ee07d43bdf737874f442f0029e87e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229616"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984372"
 ---
 # <a name="sepa-direct-debit-overview"></a>Oversigt over direkte debitering (SEPA)
 
@@ -30,8 +30,7 @@ ms.locfileid: "5229616"
 
 Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er målet for direkte SEPA-debiteringer?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er målet for direkte SEPA-debiteringer?
 
 En direkte SEPA-debitering gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at der er tildelt en signeret bemyndigelse af kunden til kreditor. Kunden signerer en bemyndigelse, som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen. 
 

@@ -2,11 +2,9 @@
 title: Vise økonomirapporter
 description: I dette emne beskrives, hvordan du kan se og undersøge økonomirapporter i Microsoft Dynamics 365 Finance. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
-manager: AnnBe
 ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d407eb33060c61a5899ba5cc021c8c1c6c77c9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 485d8f0aee791aa577432947d74b08caf484da0a3056d8119579e9d659ca3d57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730500"
 ---
 # <a name="view-financial-reports"></a>Vise økonomirapporter
 
@@ -30,8 +28,7 @@ ms.locfileid: "5240610"
 
 I dette emne beskrives, hvordan du kan se og undersøge økonomirapporter. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
-<a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
-----------------------------
+## <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 
 ## <a name="open-a-financial-report"></a>Åbne en økonomisk rapport
 Hvis du vil åbne en rapport, skal du vælge rapportnavnet. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2015, oprettes rapporten for 31. juli 2015. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
@@ -78,10 +75,9 @@ Når du er færdig med at angive udskriftsindstillingerne, skal du klikke på **
 ## <a name="export-a-financial-report"></a>Eksportere en økonomisk rapport
 Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke på **Publicer**. Rapporten eksporteres til Microsoft Excel, og browseren beder dig om at åbne eller gemme den eksporterede fil. De eksportindstillinger, der er defineret i rapportdesignet, anvendes til den eksporterede rapport.    
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Økonomirapportering](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Økonomirapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 
 
 
