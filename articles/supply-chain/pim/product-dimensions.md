@@ -2,11 +2,9 @@
 title: Produktdimensioner
 description: Der er fem produktdimensioner – farve, konfiguration, størrelse, typografi og version. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.
 author: t-benebo
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260641"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920517"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 

@@ -1,27 +1,25 @@
 ---
 title: Oprette en regel for fastmængde-kanban til produktion
 description: Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette en fast produktions-kanban-regel til udløsning af transformeringsaktiviteter i en arbejdscelle i et leanmiljø.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af912ecfb07a7af2f299e354243ba0d80c063a9e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16299427a8a6c74e43d7f0eb3ecb3edf4a8f08f0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981300"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576874"
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Oprette en regel for fastmængde-kanban til produktion
 
@@ -73,3 +71,6 @@ Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette e
     * Dette opretter 5 kanbans.  
     * Bemærk, at der blev oprettet 5 kanbans for 10 hver for denne produktions-kanban-regel. Dette er det sidste trin i denne procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

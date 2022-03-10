@@ -2,39 +2,33 @@
 title: Hændelser for lagerapp
 description: I dette emne beskrives den hændelsesbehandling i lagerstedsappen, der bruges til at behandle hændelsesmeddelelser i lagerstedsapps som en del af et batchjob.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424489"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103257"
 ---
 # <a name="warehouse-app-event-processing"></a>Hændelsesbehandling i lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
-Batchjob, der kører i Supply Chain Management, kan bruge data fra en kø til behandling af hændelser, der er udstedt af lagerstedsappen, til at reagere efter behov på de signalerede hændelser. Denne funktion føjer relevante hændelser til køen som svar på bestemte typer handlinger, der udføres af arbejdere, der bruger appen. Hvis du f.eks. bruger funktionen **Opret og behandl overførselsordrer fra lagerstedsappen**, oprettes og opdateres overflytningsordrehovedet og -linjerne automatisk i back-end, når systemet kører batchjobbet **Hændelsesbehandling i lagerstedsapp**.
+Batchjob, der kører i Supply Chain Management, kan bruge data fra en kø til behandling af hændelser, der er udstedt af mobilappen Lokationsstyring, til at reagere efter behov på de signalerede hændelser. Denne funktion føjer relevante hændelser til køen som svar på bestemte typer handlinger, der udføres af arbejdere, der bruger appen. Hvis du f.eks. bruger funktionen *Opret og behandl overførselsordrer fra lagerstedsappen*, oprettes og opdateres overflytningsordrehovedet og -linjerne automatisk i back-end, når systemet kører batchjobbet **Hændelsesbehandling i lagerstedsapp**.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivere funktionen Hændelsesbehandling i lagerstedsapp
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Slå funktionen Hændelsesbehandling i lagerstedsapp til eller fra
 
-Før du kan bruge denne funktion, skal den aktiveres i dit system. Administratorer kan bruge siden [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere den, hvis det er nødvendigt. Funktionen Hændelsesbehandling i lagerstedsapp vises som:
-
-- **Modul** – Lokationsstyring
-- **Funktionsnavn** - Hændelsesbehandling i lagerstedsapp
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Hændelsesbehandling i lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Konfigurere et batchjob, der skal behandle hændelser i lagerstedsapp
 
@@ -51,11 +45,11 @@ Konfigurere et planlagt batchjob, der skal behandle hændelser i lagerstedsapp f
 
 ## <a name="query-warehouse-app-events"></a>Forespørge på hændelser i lagerstedsapp
 
-Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af lagerstedsappen, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
+Du kan få vist hændelseskøen og de hændelsesmeddelelser, der er genereret af mobilappen Lokationsstyring, ved at gå til **Lokationsstyring \> Forespørgsler og rapporter \> Mobilenhedslogge \> Hændelser i lagerstedsapp**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardprocessen for hændelseskøer
 
-Køen for hændelser i lagerstedsapps vil typisk blive brugt sammen med følgende beskrevet flow:
+Køen for hændelser i lagerstedsappen vil typisk blive brugt sammen med følgende beskrevet flow:
 
 1. Der bliver føjet en hændelse til køen med en hændelsesmeddelelse. Den nye meddelelse har til at begynde med hændelsestilstanden **Ventende**, hvilket betyder, at batchjobbet **Hændelsesbehandling i lagerstedsapp** ikke vil hente og behandle denne meddelelse.
 1. Så snart meddelelsestilstanden er opdateret til **Sat i kø**, henter batchjobbet **Hændelsesbehandling i lagerstedsapp** hændelsen og behandler den.
@@ -78,3 +72,6 @@ Sådan nulstiller du en mislykket hændelsesmeddelelse i lagerstedsappen:
 1. Fortsæt med at arbejde, indtil alle relevante meddelelser er nulstillet.
 
 Du kan også fjerne en **Mislykket** hændelsesmeddelelse ved hjælp af indstillingen **Slet** på værktøjslinjen **Hændelsesmeddelelser i lagerstedsapp**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

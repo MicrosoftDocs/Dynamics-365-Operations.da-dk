@@ -1,29 +1,26 @@
 ---
 title: Lånte aktiver
 description: I dette emne beskrives, hvordan du kan registrere lånte aktiver i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cba680d0ad626e0275539d7478a83639a9d22635
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752844"
 ---
 # <a name="asset-loans"></a>Lånte aktiver
 
@@ -47,7 +44,7 @@ Hvis din virksomhed modtager aktiver til reparations- eller vedligeholdelsesopga
 
 Hvis du vil have vist en liste over alle de aktiver, du har udlånt til andre lokationer eller kunder, skal du vælge **Styring af aktiver** \> **Almindeligt** \> **Lånt aktiv** \> **Alle lånte aktiver**. Hvis afkrydsningsfeltet **Afsluttet** er markeret for et aktiv, er aktivet registreret som returneret til dit firma.
 
-![Administrere vedligeholdelsesanmodninger](media/06-manage-maintenance-requests.png)
+![Administrere vedligeholdelsesanmodninger.](media/06-manage-maintenance-requests.png)
 
 På siden **Aktive lånte aktiver** kan du få vist en liste over alle de lånte aktiver, der endnu ikke er returneret til din virksomhed.
 
@@ -58,3 +55,6 @@ På siden **Aktive lånte aktiver** kan du få vist en liste over alle de lånte
 3. Angiv datoen og tidspunktet i feltet **Returneret**.
 4. Vælg **OK**.
 5. Opdater listesiden **Aktive lånte aktiver**, og bemærk, at det lånte aktiv ikke længere vises på listen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

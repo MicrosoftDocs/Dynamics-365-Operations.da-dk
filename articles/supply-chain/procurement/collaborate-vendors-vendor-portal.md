@@ -1,12 +1,10 @@
 ---
 title: Samarbejde med kreditorer ved hjælp af kreditorportalen
 description: I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 &amp; maj 2016.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9334f5a822d42daf8abae6bcc03a60e93ab33976
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206961"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568058"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved hjælp af leverandørportalen
 
@@ -94,12 +92,11 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 |                           Du kan sende den nye version af indkøbsordren til kreditorportalen.                            |                                                                                                                                                                    Den nye version registreres på kreditorportalen, og status ændres til <strong>Til eksternt gennemsyn</strong>.                                                                                                                                                                     |
 |                                Kreditoren godkender den nye version af IO'en.                                 |                                                                                                                                                     Statussen ændres til <strong>Bekræftet</strong>. Det sker enten automatisk, eller når du modtager svar fra kreditoren og derefter bekræfter indkøbsordren.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Brugersikkerhed på leverandørportal](configure-security-vendor-portal-users.md)
 
-[Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 

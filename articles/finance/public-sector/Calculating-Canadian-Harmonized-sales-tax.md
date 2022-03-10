@@ -9,20 +9,20 @@ ms.technology: ''
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 30d13091279e4a7be06c494eb393793166acd2ee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6b3937641d8794de15073763911337c3f18b9b6
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809910"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119388"
 ---
 # <a name="calculating-canadian-harmonized-sales-tax"></a>Beregning af canadisk harmoniseret moms
 
@@ -44,7 +44,8 @@ Bemærk! Denne funktionalitet gælder ikke for kreditorfakturakladden.
 
 
 
-### <a name="note-only-the-financial-dimensions-that-are-used-in-the-current-legal-entity-will-be-available"></a>Bemærk! Kun de økonomiske dimensioner, der bruges i den aktuelle juridiske enhed, vil være tilgængelige.
+> [!Note] 
+> Kun de økonomiske dimensioner, der bruges i den aktuelle juridiske enhed, vil være tilgængelige.
 
 ## <a name="set-up-hst-rules"></a>Konfigurere HST-regler
 
@@ -72,7 +73,7 @@ Når du har defineret dimensionerne for HST, skal du konfigurere de finansdimens
 
 Den rækkefølge, som reglerne anvendes i, er noget kompleks. Følgende grafik viser princippet:
 
-> [![Definere HST-regler](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+> [![Definere HST-regler.](./media/define-hst-rules.png)](./media/define-hst-rules.png)
 
 De momskoder, der er valgt for dimensionslinjen, er som følger, hvis posteringen bruger en momsgruppe og varemomsgruppe med alle de momskoder, der er medtaget.
 

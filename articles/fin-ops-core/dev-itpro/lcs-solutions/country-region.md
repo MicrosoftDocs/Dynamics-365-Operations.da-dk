@@ -2,7 +2,6 @@
 title: Globaliseringsressourcer
 description: Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande/områdespecifikke funktioner og tilbud.
 author: kfend
-manager: AnnBe
 ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
@@ -15,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747509"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
 ## <a name="local-and-regional-deployments"></a>Lokale og regionale installationer
 Hvis de regler, der er påbudt af myndighederne, kræver, at data lagres eller serviceres på anden måde end det, der kræves for andre lande/områder, kan der være krav, som er knyttet til land/område, som du skal overveje under installationen. Overvej følgende ressourcer, der kan være relevante for dig:
 
-[Finance and Operations-apps drevet af 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apps drevet af 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisering og lovpligtige funktioner
 
@@ -61,7 +60,7 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 -   [Sende påmindelser om lande/områdespecifikke lovmæssige funktioner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365-frigivelsesplaner
-[Dynamics 365-frigivelsesplanerne](https://docs.microsoft.com/business-applications-release-notes/) indeholder beskrivelser af de nye og forbedrede funktioner, der er planlagt til Dynamics 365-virksomhedsprogrammer og -programplatforme. 
+[Dynamics 365-frigivelsesplanerne](/business-applications-release-notes/) indeholder beskrivelser af de nye og forbedrede funktioner, der er planlagt til Dynamics 365-virksomhedsprogrammer og -programplatforme. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Nyheder om Finance and Operations-apps
 Indholdet i [Nyheder eller ændringer i Finance and Operations-startside](../../fin-ops/get-started/whats-new-changed.md) viser de funktioner, der er inkluderet i bestemte versioner af Finance and Operations-apps.

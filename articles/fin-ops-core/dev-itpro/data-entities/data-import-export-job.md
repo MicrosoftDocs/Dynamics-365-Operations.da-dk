@@ -1,28 +1,30 @@
 ---
 title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
-author: Sunil-Garg
-ms.date: 04/22/2021
-ms.topic: article
+author: peakerbl
+ms.date: 10/21/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42f6af27ecb79e02a20516d58846e842d5960ce9363afcafbcbb487e60c0c38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723105"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071079"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Når du vil oprette og administrere dataimport- og -eksportjob, skal du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
@@ -68,6 +70,9 @@ Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporte
 | Excel                  | Excel                                      | \-Ikke relevant-                     |
 | XML                    | \-Ikke relevant-                                      | XML-element XML-attribut |
 | Afgrænset, fast bredde | Komma, semikolon, tabulering, lodret streg, kolon | \-Ikke relevant-                     |
+
+> [!NOTE]
+> Det er vigtigt at vælge den korrekte værdi for **Rækkeafgrænser**, **Kolonneafgrænser** og **Tekstoperator**, hvis indstillingen **Filformat** er angivet til **Afgrænset**. Sørg for, at dine data ikke indeholder det tegn, der bruges som afgrænser eller operator, da dette kan resultere i fejl under import og eksport.
 
 ### <a name="sequence-the-entities"></a>Anbring enhederne i rækkefølge
 Enheder kan sorteres i en dataskabelon eller i import- og eksportjob. Når du kører et job, der indeholder mere end én dataenhed, skal du sikre dig, at dataenhederne er i korrekt rækkefølge. Du anbringer primært enheder rækkefølge, så du kan løse eventuelle funktionelle afhængigheder mellem enheder. Hvis enheder ikke har funktionelle afhængigheder, kan de planlægges til parallel import eller eksport.
@@ -198,16 +203,10 @@ Når oprydningsprocessen planlægges, skal følgende parametre angives for at de
 > [!NOTE]
 > Hvis posterne i de midlertidige tabeller ikke er fuldstændig renset, skal du sikre dig, at oprydningsjobbet er planlagt til at skulle køre som en gentagelse. Som forklaret ovenfor vil jobbet i enhver oprydningskørsel alene fjerne så mange kørsels-id'er, som det er muligt inden for de opgivne maksimum timer. For at fortsætte oprydningen af eventuelle tilbageværende midlertidige poster, skal jobbet planlægges til at køre med jævne mellemrum.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Oprydning og arkivering i jobhistorik (tilgængelig til visning under Platform update 39 eller version 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Oprydning og arkivering af jobhistorik 
 Funktionen til oprydning og arkivering af jobhistorik erstatter de tidligere versioner af oprydningsfunktionen. I dette afsnit forklares disse nye funktioner.
 
-En af de vigtigste ændringer i oprydningsfunktionen er brugen af systembatchjobbet til oprydning af historikken. Brugen af systembatchjobbet giver Finance and Operations-apps mulighed for automatisk planlægning og kørsel af oprydningsbatchjobbet, så snart systemet er klart. Det er ikke længere nødvendigt at planlægge batchjobbet manuelt. I denne standardkørselstilstand køres batchjobbet hver time fra og med kl. 12 midnat, og kørselshistorikken bevares for de seneste 7 dage. Den slettede oversigt arkiveres, så den kan hentes senere.
-
-> [!NOTE]
-> Da denne funktionalitet er i prøveversion, vil systembatchjobbet ikke slette nogen kørselshistorikker, før det aktiveres via flightet DMFEnableExecutionHistoryCleanupSystemJob. Når funktionen er offentligt tilgængelig i en fremtidig version, vil denne fligth ikke være nødvendig, og systembatchjobbet begynder at rydde og arkivere, når systemet er klart, afhængigt af den definerede plan, som forklaret ovenfor. 
-
-> [!NOTE]
-> I en fremtidig udgivelse fjernes de tidligere versioner af oprydningsfunktionen fra Finance and Operations-apps.
+En af de vigtigste ændringer i oprydningsfunktionen er brugen af systembatchjobbet til oprydning af historikken. Brugen af systembatchjobbet giver Finans- og driftsapps mulighed for automatisk planlægning og kørsel af oprydningsbatchjobbet, så snart systemet er klart. Det er ikke længere nødvendigt at planlægge batchjobbet manuelt. I denne standardkørselstilstand køres batchjobbet hver time fra og med midnat, og kørselshistorikken bevares for de seneste 7 dage. Den slettede oversigt arkiveres, så den kan hentes senere. Fra og med version 10.0.20 er denne funktion altid aktiveret.
 
 Den anden ændring i oprydningsprocessen er arkiveringen af den slettede kørselshistorik. Oprydningsjobbet arkiverer de slettede poster i det blob-lager, som DIXF bruger til almindelige integrationer. Den arkiverede fil vil være i DIXF-pakkeformatet og vil være tilgængelig i 7 dage i blob'en, hvor den kan hentes. Standardvarigheden på 7 dage for den arkiverede fil kan ændres til højst 90 dage i parametrene.
 

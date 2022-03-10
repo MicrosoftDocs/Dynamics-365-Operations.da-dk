@@ -1,7 +1,7 @@
 ---
-title: Oprette og administrere brugere af kundeportalen
+title: Oprette og administrere brugere af kundeportalen (indeholder video)
 description: Dette emne forklarer, hvordan du kan oprette brugerkonti til kundeportalen og indstille rettigheder for dem.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
@@ -9,19 +9,20 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907759"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062484"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Oprette og administrere brugere af kundeportalen
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 I out-of-box-implementeringen er der ingen måde, hvorpå brugere kan registrere sig selv for websteder, der er oprettet ved hjælp af kundeportalen. Brugere skal inviteres af administratoren for at kunne logge på og bruge et websted. Microsoft har bevidst blokeret brugernes mulighed for at registrere sig selv.
 
@@ -32,13 +33,13 @@ Når brugerne selv registrerer, oprettes der automatisk kontaktposter for dem. D
 ## <a name="video"></a>Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkluderet i den [Finance and Operations-afspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+Videoen [Inviter kunder til at registrere og bruge din tilpassede portal](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkluderet i den [Finans- og driftsafspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="prerequisite-setup"></a>Forudsætninger for opsætning
 
 Kontakter i Power Apps-portaler gemmes som poster i tabellen **Kontakter** i Microsoft Dataverse. Dobbeltskrivning synkroniserer derefter disse poster med Microsoft Dynamics 365 Supply Chain Management som påkrævet.
 
-![Systemdiagram for kundeportal-kontaktpersoner](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
+![Systemdiagram for kundeportal-kontaktpersoner.](media/customer-portal-contacts.png "Systemdiagram for kundeportal-kontaktpersoner")
 
 Før du begynder at invitere nye kunder, skal du sikre dig, at du har aktiveret tabeltilknytningen **Kontakt** i dobbeltskrivning.
 
@@ -87,9 +88,9 @@ Følgende tabel viser, hvilke salgsordrer brugerne i de enkelte webroller kan se
 
 | Salgsordre | Administrator | Kunderepræsentant for kunde&nbsp;X | Autoriseret bruger: Jane | Autoriseret bruger: Sam | Uautoriseret bruger: May |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X-bestiller:&nbsp;Jane | Ja | Ja | Ja | Ingen | Ingen |
-| Kunde&nbsp;X-bestiller:&nbsp;Sam | Ja | Ja | Ingen | Ja | Ingen |
-| Kunde&nbsp;Y-bestiller:&nbsp;May | Ja | Ingen | Ingen | Ingen | Ingen |
+| Kunde&nbsp;X-bestiller:&nbsp;Jane | Ja | Ja | Ja | Nej | Nej |
+| Kunde&nbsp;X-bestiller:&nbsp;Sam | Ja | Ja | Nej | Ja | Nej |
+| Kunde&nbsp;Y-bestiller:&nbsp;May | Ja | Nej | Nej | Nej | Nej |
 
 > [!NOTE]
 > Selvom både Sam og Jane er kontaktpersoner, der arbejder for kunde X, kan de kun se de ordrer, de selv har afgivet, og intet andet. Selvom May har en ordre i systemet, kan hun ikke se den pågældende ordre i kundeportalen, fordi hun er en uautoriseret bruger. (Desuden må hun have afgivet ordren via en anden kanal end kundeportalen).

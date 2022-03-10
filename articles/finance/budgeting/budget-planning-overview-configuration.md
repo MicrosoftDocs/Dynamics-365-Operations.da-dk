@@ -2,27 +2,27 @@
 title: Oversigt over budgetplanlægning
 description: I dette emne beskrives budgetplanlægning. Det indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og budgetplanlægningsprocesser.
 author: panolte
-manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019222"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982059"
 ---
 # <a name="budget-planning-overview"></a>Oversigt over budgetplanlægning
 
@@ -42,7 +42,7 @@ En organisation kan konfigurere budgetplanlægning og derefter oprette budgetpla
 - **Budgetplanlægningsstadier** – Budgetplanlægningsfaser definerer de trin, som en budgetplan følger fra begyndelsen til den endelige godkendelse. Budgetplanlægningsstadier er arrangeret i arbejdsgange i budgetplanlægningen.
 - **Budgetplanlægningsarbejdsgange** – Budgetplanlægningsarbejdsgange består af og definere stadier i budgetplanlægningen. Arbejdsgange i budgetplanlægningen er knyttet til arbejdsgange i budgettering. Arbejdsgange i budgetteringen er automatiserede og manuelle processer, der flytter budgetplaner gennem budgetplanlægningsstadier.
 
-[![Budgetplanlægningsterminologi](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budgetplanlægningsterminologi.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Typiske opgaver
 
@@ -67,17 +67,17 @@ Et valgfrit, men anbefalet første trin er at oprette et skema, der viser din or
 
 Følgende illustration viser et generisk eksempel, hvor der oprettes separate arbejdsgange i budgetplanlægningen til forskellige niveauer af organisationen. Stadier er defineret i hver arbejdsproces, og bestemte scenarier er tildelt til hvert stadie til at indeholde budgetdata. Opgaver fuldføres for at flytte data fra ét stadie til det næste. Beløb kan f.eks. tildeles eller samles til forskellige konti, godkendelser eller andre undersøgelser. I denne illustration angiver kursiveret tekst et scenarie, der ikke kan redigeres i løbet af stadiet, eller data, der er historiske eller er blevet godkendt i et tidligere stadie og derfor ikke bør ændres.
 
-[![Generisk skema for budgetplanlægning](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Generisk skema for budgetplanlægning.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 I følgende illustration vises et eksempel, hvor virksomhedens hovedkvarter beregner de oprindelige beløb for startbudgettet og distribuerer dem til salgsafdelingerne. Salgsafdelingerne beregner og sender derefter deres budget tilbage til hovedkontoret, hvor budgetadministratoren samler og justerer budgettet. Endelig sender budgetadministratoren de regulerede budgetbeløb til regnskabsdirektøren (CFO) til gennemsyn, endelige justeringer og godkendelse.
 
-[![Eksempel på skema til budgetplanlægning](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Eksempel på skema til budgetplanlægning.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarkiet til budgetplanlægning
 
 På siden **Organisationshierarki** kan du angive et organisationshierarki som et budgetplanlægningshierarki til hver budgetplanlægningsproces. Budgetplanlægningshierarkiet behøver ikke at matche det standardorganisationshierarki, der bruges til andre formål. Da dette hierarki bruges til at samle og distribuere data, vil du måske have en anden struktur. I eksempelskemaet er salgsafdelingerne under et hovedkvarterniveau, der omfatter budget- og økonomiafdelinger. Denne struktur er sandsynligvis forskellig fra den struktur, der bruges til at styre handlinger for salgsafdelingerne. Kun et organisationshierarki kan tildeles til hver budgetplanlægningsproces.
 
-Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Brugersikkerhed
 
@@ -95,7 +95,7 @@ Det er en god idé at oprette en budgetplanlægningsarbejdsgang for hvert niveau
 
 Du opretter en arbejdsgang i budgettering for budgetplanlægning på siden **Arbejdsgange i budgettering**. Fremgangsmåden minder om processen til oprettelse af andre arbejdsgange. I følgende illustration vises et eksempel på en arbejdsgang i hovedkvartererne.
 
-[![Budgetteringsarbejdsgang for budgetplanlægning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budgetteringsarbejdsgang for budgetplanlægning.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Arbejdsgangen indeholder følgende elementer:
 
@@ -143,11 +143,11 @@ Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet
 
 I eksempelskemaet, der vises tidligere i dette emne, foretages en fordeling for at overføre beløb fra en budgetplan og scenarier i hovedkvarterets "Oprindelige" stadie til en anden budgetplan og scenarier i stadiet "Estimat" for salgsafdelingen. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 
-[![Stadiefordeling](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Stadiefordeling.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Desuden udføres en aggregering i eksempelskemaet fra budgetplaner og scenarier i stadiet "Sendt" for salgsafdelingerne til en overordnet plan i stadiet "Opløsning" for hovedkvartererne. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 
-[![Aggregering](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Aggregering.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioriteter
 
@@ -165,7 +165,7 @@ Ud over kolonner til budgetbeløb kan du definere kolonner til projektet, foresl
 
 I eksempelskemaet kan du oprette kolonner til scenarierne "PY-salg", "Kontrakter" og "Prognose". (I følgende illustration vises skemaets relevante afsnit). Du kan derefter opbryde en eller flere af disse scenarier i separate kolonner for hvert kvartal af regnskabsåret, så lederen af salgsafdelingen præcist kan angive budgetterede beløb for hver periode.
 
-[![Kolonner](./media/columns.png)](./media/columns.png)
+[![Illustration af sektioner i skemaet til tilføjelse af kolonner.](./media/columns.png)](./media/columns.png)
 
 Du kan også angive, om hvert layoutelement (kolonne) kan redigeres, og om det er tilgængeligt i en regnearksskabelon, der er oprettet for dette layout. Til eksempelskemaet kan kolonnerne "Prognose", der bruges til layoutet til stadiet "Estimat", redigeres, hvorimod kolonnerne "PY-salg" og "Kontrakter" er skrivebeskyttet.
 
@@ -203,4 +203,7 @@ Du kan også bruge menuen **Handlinger** til at oprette en ny proces ved at kopi
 
 En anden nyttig kommando i menuen **Handlinger** er **Vis budgetprocesstatus**. Denne kommando giver en grafisk visning af budgetplanerne i en proces sammen med relevante data, f.eks. planens arbejdsgangsstatus, oversigt efter beløb og efter enhed og navigation med et enkelt klik til selve budgetplanerne.
 
-[![Status for budgetplanlægningsproces](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Status for budgetplanlægningsproces.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Konfigurere et finanskontoalias
 description: I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1764f31c98039e9ea6f665dcb04a1cfd23c31dc
-ms.sourcegitcommit: 66dafaae9d97f0f8e67ce1d309362532b6edf447
+ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441717"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745790"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Konfigurere et finanskontoalias
 
@@ -41,3 +38,6 @@ I denne procedure vises det, hvordan du opretter et kontoalias, som giver en gen
 9. I feltet Startfokusering skal du vælge den dimension, der har fokus, når aliaset bruges.
     * Når du har indtastet genvejen, og kontoen og dimensionerne er udfyldt, flyttes markøren eller fokus til feltet Startfokusering.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

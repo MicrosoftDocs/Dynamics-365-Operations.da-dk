@@ -1,12 +1,10 @@
 ---
 title: Lagermærkatoptælling
 description: Dette emne indeholder oplysninger om mærkatoptælling, som du kan bruge til at sammenligne det faktiske indhold af et lagersted med den disponible lagerbeholdning.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11594
 ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
 ms.search.region: Global
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11081324f6970813322fb2463a63a441d30185ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 64315b8c5f0be1dbd19239a8b07746e90aebb0d4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992439"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567361"
 ---
 # <a name="inventory-tag-counting"></a>Lagermærkatoptælling
 
@@ -35,3 +33,6 @@ Ved at oprette linjer på siden **Mærkatoptælling** placerer du et mærkatnumm
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Cyklusoptælling](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

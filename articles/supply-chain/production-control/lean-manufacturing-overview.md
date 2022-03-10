@@ -1,29 +1,29 @@
 ---
 title: Oversigt over lean manufacturing
 description: Denne artikel indeholder en oversigt over og en beskrivelse af lean manufacturing-funktioner i Dynamics 365 Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 19371
+ms.custom:
+- "19371"
+- intro-internal
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b333b1bf5842211641c946730c5c6582a221b5b5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0c8b5ec4d4a391773e32a61a321c28868678baa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246015"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985930"
 ---
 # <a name="lean-manufacturing-overview"></a>Oversigt over lean manufacturing
 
@@ -66,7 +66,7 @@ Lean manufacturing viser den aktuelle status for produktion og logistik, der er 
 Følgende liste beskriver specielle kanban-kort:
 -   Tidsplanlægning af kanban-job – indeholder en oversigt over kanban-job. Tavlen viser kanban-job og deres status for en eller flere arbejdsceller. Jobsene er angivet efter de planlægningsperioder (dage eller uger), der er defineret i produktionsflowmodellen. Tavlen viser også kapacitetsforbruget for hver planlægningsperioden, så du kan overvåge den planlagte belastning. Du kan ændre status for kanban-job, omlægge kanban-job til andre perioder og udføre andre opgaver.
 -   Kanban-område for overførsel af sager – Denne tavle giver et overblik over de aktuelle overførselsjob. Du kan opdatere og registrere pluklister, starte og fuldføre overførselsjob og udføre andre opgaver.
--   Kanban-området til procesjob – denne tavle er udviklet til at understøtte det normale produktionsflow og giver et overblik over den aktuelle situation i en eller flere arbejdsceller. Fra denne tavle kan Kanbans prioriteres, plukkes eller fremstilles. Tavlen er også udviklet til at understøtte stregkodescanning for indberetning af Kanbans.
+-   Kanban-området til procesjob – denne tavle er udviklet til at understøtte det normale produktionsflow og giver et overblik over den aktuelle situation i en eller flere arbejdsceller. Fra denne tavle kan Kanbans prioriteres, plukkes eller fremstilles. Tavlen er også udviklet til at understøtte stregkodescanning for rapportering af kanbans.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-job og -integration med Supply Chain Management-processer
 Kanban-job er fuldt integreret med de aktuelle processer for lagertransaktioner i Supply Chain Management.

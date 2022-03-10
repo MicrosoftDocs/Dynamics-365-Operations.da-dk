@@ -2,11 +2,9 @@
 title: Prisjusteringer og rabatter
 description: Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Dynamics 365 Commerce.
 author: scott-tucker
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f29e90e1c61792c70d4d6eaeee7758676bf193b2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 96a695df250cda514b7bd8b9716c0f03fb2bfd28d3af4daedaf1335c3099fbb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748492"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
@@ -50,3 +48,13 @@ Der findes mange typer rabatter:
 - **Forsendelsesrabat** – En rabat, der anvendes, når totalen for transaktionen overstiger et angivet beløb, og når en bestemt leveringsmåde (f.eks. forsendelser over to dage eller samme dag) bruges i ordren.
 
 Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Prisgrupper kan derefter tilknyttes kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer.
+
+> [!NOTE]
+> Mix og match-rabatten og tærskelrabatten har egenskaber med henholdsvis navnet "Optæl produkter uden rabat" og "Optæl produkter uden rabat i forhold til tærskel". Hvis disse egenskaber er aktiveret, kan en vare, der ikke er berettiget til rabat, stadig være med til at kvalificere en transaktion til rabatten, men den ikke-berettigede vare kan ikke få rabatten. 
+> 
+> Hvis du f.eks. opretter en mix og match-rabat med to linjer, A og B, hvor en kunde skal have 10 % rabat på begge varer, men vare A har konfigurationen "Undgå alle rabatter" markeret, vil det typisk forhindre vare A i at blive medtaget i rabatten. Men hvis egenskaben "Optæl produkter uden rabat" er aktiveret, kan vare A bruges til at kvalificere til mix og match-rabatten, men rabatten på 10 % anvendes kun på vare B. Lignende logik gælder for tærskelrabatten. 
+>
+> Egenskaben "Optæl produkter uden rabat i forhold til tærskel" har dog en ekstra egenskab, når den sammenlignes med egenskaben "Optæl produkter uden rabat" for mix og match-rabatter. Hvis tærskelrabatten er aktiveret, og hvis der er en vare med en eksisterende rabat, som kan forhindre varen i at få andre rabatter, vil den pris, der er betalt for denne vare, være kvalificeret til at nå tærsklen, men denne vare får ikke den ekstra rabat.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

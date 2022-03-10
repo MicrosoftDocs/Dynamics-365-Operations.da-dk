@@ -1,7 +1,7 @@
 ---
 title: Startside for Kontant- og bankstyring
 description: Du kan bruge Kontant- og bankstyring til at vedligeholde den juridiske enheds bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti.
-author: panolte
+author: roschlom
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21941
+ms.custom:
+- "21941"
+- intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 237a2a594abba7d74e7c1aba33a6f4e72b1e2e69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830514"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883688"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for Kontant- og bankstyring
 
@@ -32,7 +34,7 @@ Disse instrumenter omfatter indbetalingsbilag, checks, veksler og egenveksler. D
 
 **Forretningsprocesser**
 
-[![Forretningsproces](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Forretningsproces.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Kasserabatter](cash-discounts.md)
 -   [Udligningsoversigt](settlement-overview.md)
@@ -83,7 +85,7 @@ Disse instrumenter omfatter indbetalingsbilag, checks, veksler og egenveksler. D
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-frigivelsesplaner](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
+Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="blogs"></a>Blogs
 

@@ -1,12 +1,10 @@
 ---
 title: Konfigurere kuponer for detailsalg
-description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres.
-author: scott-tucker
-manager: AnnBe
-ms.date: 06/04/2020
+description: Dette emne indeholder en oversigt over kuponer og en beskrivelse af, hvordan de konfigureres i Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fcb21c037c4492ce215780913301c0c0b54ab9d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259460"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603117"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer for detailsalg
 
@@ -40,6 +38,10 @@ Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Der
 
 > [!NOTE]
 > Når en kupon er knyttet til en rabat, bliver flere af felterne på rabatsiden i Commerce skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
+> 
+> Når du bruger kuponen i callcenter-kanalen, skal du vælge knappen **Genberegn** **(fanen Sælg > Beregn > Genberegn)** for at få rabatten tilknyttet kuponen, der skal anvendes. Dette ekstra trin vil blive fjernet i en fremtidig version.
+
+Hvis du vil anvende en kupon på en salgstransaktion i POS, kan du bruge **Kuponkode** eller **Kuponstregkode**. Hvis du vil bruge **kuponkode**, skal handlingen **Tilføj kuponkode** konfigureres i POS **Transaktion** [skærmlayoutet](pos-screen-layouts.md). Vælg **Tilføj kuponkode**, og angiv kuponkoden. Du kan også scanne stregkoden eller indtaste stregkoden ved hjælp af det numeriske tastatur på **Transaktionsskærmbilledet**, hvis du vil bruge **Kuponstregkoden**.
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 

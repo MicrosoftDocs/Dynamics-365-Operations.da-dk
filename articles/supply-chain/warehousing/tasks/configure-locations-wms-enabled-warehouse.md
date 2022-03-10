@@ -2,11 +2,9 @@
 title: Konfigurere lokationer på et WMS-aktiveret lagersted
 description: Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser).
 author: perlynne
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
@@ -15,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59835d28afc6f855f109cf9b875624f8fd11191a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977308"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599342"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokationer på et WMS-aktiveret lagersted
 
@@ -35,7 +33,7 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 2. Klik på **Ny**.
 3. Skriv en værdi i feltet **Lagersted**.
 4. Skriv en værdi i feltet **Navn**.
-5. Skriv en værdi i feltet **Sted**.
+5. Vælg eller angiv en eksisterende lokationsværdi i feltet **Websted**.
 6. Udvid afsnittet **Lagersted**.
 7. Angiv indstillingen **Brug lagerstedsstyringsprocesser** til Ja. Denne indstilling giver dig mulighed at køre avancerede lagerprocesser ved hjælp af lagerstedsarbejde og mobilenheder.
 8. Luk siden.
@@ -174,3 +172,6 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 6. Klik op linket i den valgte række på listen.
 7. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

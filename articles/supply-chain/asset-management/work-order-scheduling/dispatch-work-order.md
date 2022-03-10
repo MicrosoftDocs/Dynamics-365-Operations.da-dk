@@ -1,12 +1,10 @@
 ---
 title: Udsende arbejdsordre
 description: Dette emne beskriver, hvordan du udsender en arbejdsordre i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778718"
 ---
 # <a name="dispatch-work-order"></a>Udsende arbejdsordre
 
@@ -54,8 +52,11 @@ Du kan planlægge en arbejdsordre eller arbejdsordrejob til én arbejder ved hj�
 
 I figuren herunder vises et eksempel på udsendelsesvalg i dialogboksen **Planlægning arbejdsordre**.
 
-![Figur 1](media/04-work-order-scheduling.png)
+![Figur 1.](media/04-work-order-scheduling.png)
 
 [!NOTE]
 Hvis du vil slette tidsplanen på en arbejdsordre, skal du vælge arbejdsordren i **Alle arbejdsordrer** og klikke på **Slet tidsplan** under fanen **Generelt**. Husk at opdatere arbejdsordrens livscyklustilstand manuelt, hvis du sletter tidsplanen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

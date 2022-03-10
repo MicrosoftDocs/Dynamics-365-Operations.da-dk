@@ -2,36 +2,30 @@
 title: Oprette en standarddebitor
 description: Dette emne beskriver, hvordan du opretter en standarddebitor, der skal bruges, når der oprettes en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4410994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720953"
 ---
 # <a name="create-a-default-customer"></a>Oprette en standarddebitor
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du opretter en standarddebitor, der skal bruges, når der oprettes en kanal i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 Når du opretter en kanal, skal du angive en standardkunde. Der kan nemt oprettes en standarddebitor, når kundegruppen og kundeadressekartoteket først er oprettet.
 
@@ -53,7 +47,7 @@ Du kan oprette en kundegruppe ved at følge disse trin.
 
 Følgende billede viser flere konfigurerede kundegrupper.
 
-![Debitorgrupper](media/customer-groups.png)
+![Debitorgrupper.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Opret et kundeadressekartotek
 
@@ -69,7 +63,7 @@ Du kan oprette et kundeadressekartotek ved at følge disse trin.
 
 Følgende billede viser et eksempel på et adressekartotek.
 
-![Adressebog](media/address-book.png)
+![Adressebog.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Oprette en standarddebitor
 
@@ -92,11 +86,11 @@ Du kan oprette en standarddebitor ved at følge disse trin.
 
 Følgende billede viser et eksempel på kundeoprettelse.
 
-![Standardkundeoprettelse](media/default-customer-creation.png)
+![Standardkundeoprettelse.](media/default-customer-creation.png)
 
 Følgende billede viser en standardkonfiguration af kunde.
 
-![Eksempelkonfiguration af kunde](media/default-customer-configuration1.png)
+![Eksempelkonfiguration af kunde.](media/default-customer-configuration1.png)
 
 Du kan beholde de fleste af standardværdierne i skærmen kundedetaljer, men to værdier skal ændres.
 
@@ -106,10 +100,13 @@ Du kan beholde de fleste af standardværdierne i skærmen kundedetaljer, men to 
 
 Følgende billede viser et eksempel på konfiguration af kunde.
 
-![Eksempel på konfiguration af kunde](media/default-customer-configuration2.png)
+![Eksempel på konfiguration af kunde.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over kanaler](channels-overview.md)
 
 [Forudsætninger for konfiguration af kanal](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

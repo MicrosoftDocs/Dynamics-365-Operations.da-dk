@@ -1,12 +1,10 @@
 ---
 title: Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 description: Dette emne beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Field Service til salgsordrer i Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,25 +13,25 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235430"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061303"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Dynamics 365 Field Service med salgsordrer i Dynamics 365 Supply Chain Management.
 
-[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
@@ -90,21 +88,21 @@ Følgende tabel indeholder en oversigt over de forskellige kombinationer for pro
 | Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Fordelt <br>(Field Service) |Synkroniseret værdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Åben - planlagt   | Forkalkuleret   | Ja       | Forkalkuleret                       |
-| Åben - planlagt   | Estimeret   | Nr.        | Brugt                            |
+| Åben - planlagt   | Estimeret   | Nej        | Brugt                            |
 | Åben - planlagt   | Brugt        | Ja       | Brugt                            |
-| Åben - planlagt   | Brugt        | Nr.        | Brugt                            |
+| Åben - planlagt   | Brugt        | Nej        | Brugt                            |
 | Åben - i gang | Estimeret   | Ja       | Estimeret                       |
-| Åben - i gang | Estimeret   | Nr.        | Brugt                            |
+| Åben - i gang | Estimeret   | Nej        | Brugt                            |
 | Åben - i gang | Brugt        | Ja       | Brugt                            |
-| Åben - i gang | Brugt        | Nr.        | Brugt                            |
+| Åben - i gang | Brugt        | Nej        | Brugt                            |
 | Åben - fuldført   | Estimeret   | Ja       | Estimeret                       |
-| Åben - fuldført   | Estimeret   | Nr.        | Brugt                            |
+| Åben - fuldført   | Estimeret   | Nej        | Brugt                            |
 | Åben - fuldført   | Brugt        | Ja       | Brugt                            |
-| Åben - fuldført   | Brugt        | Nr.        | Brugt                            |
+| Åben - fuldført   | Brugt        | Nej        | Brugt                            |
 | Lukket - bogført    | Estimeret   | Ja       | Brugt                            |
-| Lukket - bogført    | Estimeret   | Nr.        | Brugt                            |
+| Lukket - bogført    | Estimeret   | Nej        | Brugt                            |
 | Lukket - bogført    | Brugt        | Ja       | Brugt                            |
-| Lukket - bogført    | Brugt        | Nr.        | Brugt                            |
+| Lukket - bogført    | Brugt        | Nej        | Brugt                            |
 
 Følgende tabel indeholder en oversigt over de forskellige kombinationer for servicelinjer.
 
@@ -247,31 +245,31 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 
 Filter: (msdyn_systemstatus ne 690970005) og (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Skabelontilknytning i dataintegration](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004)
 
-[![Skabelontilknytning i dataintegration](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Skabelontilknytning i dataintegration](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
 
-[![Skabelontilknytning i dataintegration](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Skabelontilknytning i dataintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Skabelontilknytning i dataintegration for arbejdsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

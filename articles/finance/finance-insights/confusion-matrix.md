@@ -1,8 +1,8 @@
 ---
-title: Resultater fra Machine Learning Models (prøveversion)
+title: Resultater fra modeller til maskinel indlæring
 description: I dette emne beskrives forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2545f7d043e139606c51bc559e3aacbe73abccfc
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818746"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386631"
 ---
-# <a name="results-of-machine-learning-models-preview"></a>Resultater fra Machine Learning Models (prøveversion)
+# <a name="results-of-machine-learning-models"></a>Resultater fra modeller til maskinel indlæring
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I dette emne beskrives forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater. Målgruppen omfatter ingeniører, analytikere og ledere, der vil opbygge deres viden og færdigheder inden for datavidenskab.
 
@@ -34,7 +33,7 @@ Når et overvåget ML-problem oplæres i et sæt historiske data, testes de ved 
 
 Din målsætning kan f.eks. være at forudsige, om et kæledyr er en hund eller en kat, baseret på nogle fysiske og funktionsmæssige attributter. Hvis du har et test-datasæt, der indeholder 30 hunde og 20 katte, kan forvekslingsmatrixen ligne følgende illustration.
 
-![Eksempel på forudsigelse af art](media/species-prediction-matrix.png)
+![Eksempel på forudsigelse af art.](media/species-prediction-matrix.png)
 
 Tallene i de grønne celler viser korrekte forudsigelser. Som du kan se, har modellen forventet en højere procentdel for katte. Det er let at beregne den overordnede nøjagtighed af modellen. I dette tilfælde er det 42 ÷ 50 eller 0,84.
 
@@ -44,7 +43,7 @@ De fleste diskussioner om forvekslingsmatrixen er fokuseret på binære klassifi
 
 Derefter vil vi overveje et klassifikationsproblem for et økonomisk scenario, der har tre tilstande. Modellen bruges til at forudsige, om en debitorfaktura vil blive betalt til tiden, for sent eller meget for sent. Der betales f. eks. ud af 100 testfakturaer, 50 til tiden, 35 betales forsinket, og 15 betales meget for sent. I dette tilfælde kan en model oprette en forvekslingsmatrix, der ligner følgende illustration.
 
-![Model 1](media/payment-prediction-matrix.png)]
+![Model 1.](media/payment-prediction-matrix.png)]
 
 En forvekslingsmatrix giver betydeligt flere oplysninger end en simpel præcisionsmetrik. Men det er stadig forholdsvis let at forstå. En forvekslingsmatrix fortæller dig, om du har et afstemt datasæt, hvor outputklasserne har samme antal. I multiklasse-scenariet får du at vide, hvor langt du er fra en forudsigelse, når outputklasserne er ordenstal, som i ovenstående eksempel på kundebetalinger.
 
@@ -55,7 +54,7 @@ Da nøjagtigheden er en nem metrikværdi for at forstå, er det et godt udgangsp
 
 For at opnå en mere indgående forståelse bør der blive noteret flere udfordringer, der er forbundet med nøjagtigheden. Metrikværdiens anvendelighed afhænger af problemets kontekst. Et spørgsmål, der ofte opstår i forbindelse med modellens ydeevne er, "hvor god er modellen?" Svaret på dette spørgsmål er dog ikke nødvendigvis ligetil. Overvej følgende forvekslingsmatrix (model 2).
 
-![Eksempel på forudbetalinger med et større eksempel](media/payment-prediction-matrix-2.png)
+![Eksempel på forudbetalinger med et større eksempel.](media/payment-prediction-matrix-2.png)
 
 En hurtig beregning viser, at denne models nøjagtighed er (70 + 10 + 3) ÷ 100 eller 0,83. På overfladen virker dette resultat bedre end resultatet for den tidligere multiklasse-model (model 1), som har en nøjagtighed på 0,73. Men er det bedre?
 
@@ -63,8 +62,8 @@ Hvis du vil begynde at løse dette problem, skal du overveje nøjagtigheden af e
 
 Et andet aspekt er også værd at bemærke. Tænk på et scenarie, hvor en medicinsk test bruges til at registrere en sygdom hos en patient. Dette problem er et binært klassifikationsproblem, hvor et positivt resultat viser, at patienten har sygdommen. I dette scenarie skal du overveje følgende fejl:
 
-- Falske positivværdier, hvor testen viser, at der er tale om, at en patient har en sygdom, men patienten har ikke alligevel sygdommen
-- Falske negativværdier, hvor testen viser, at der er tale om, at en patient ikke har en sygdom, men patienten har alligevel sygdommen
+- Falske positivværdier, hvor testen viser, at der er tale om, at patienten har en sygdom, men patienten har ikke alligevel sygdommen.
+- Falske negativværdier, hvor testen viser, at der er tale om, at patienten ikke har en sygdom, men patienten har alligevel sygdommen.
 
 Det kan naturligvis være, at begge fejltyper er uønskede, men hvad er det værste? Det afhænger igen af omstændighederne. Hvis der er tale om en livstruende sygdom, der kræver hurtig behandling, har det højere prioritet at minimere falske negativer (som forhåbentligt efterfølges af yderligere test). I andre tilfælde, hvor der er tale om mindre kritiske situationer, kan modeloprettelser minimere falske positiver i stedet. Når det sker, er det en rimelig konklusion, at du skal have flere oplysninger end en nøjagtighedsmetrikværdi, hvis du effektivt skal kunne bestemme en models kvalitet.
 
@@ -87,7 +86,7 @@ Den endelige overvejelse i dette emne er en mere avanceret måleenhed med en ove
 
 Før der kan defineres en nøjagtighed på F1, skal der angives to yderligere målepunkter: Præcision og tilbagekaldelse. Præcision angiver, hvor mange af det samlede antal forudsigelser, der er angivet som positive, der er korrekt tildelt. Denne metrikværdi kaldes også for den positive forudsigelige værdi. Tilbagekaldelse er det samlede antal af faktiske positive sager, der blev forudsagt korrekt. Denne metrikværdi kaldes også følsomhed.
 
-[![Faktiske resultater vs. falske resultater](./media/tn-fn.png)](./media/tn-fn.png)
+[![Faktiske resultater vs. falske resultater.](./media/tn-fn.png)](./media/tn-fn.png)
 
 I forvekslingsmatricen i ovenstående illustration beregnes disse målepunkter på følgende måde:
 
@@ -100,7 +99,7 @@ Med F1-målpunktet kombineres præcision og tilbagekaldelse. Resultatet er den h
 
 Lad os se på et konkret eksempel. Tidligere i dette emne var der et eksempel på en model, der forudsagde, om et dyr var en hund eller en kat. Illustrationen gentages her.
 
-[![Eksempel på forudsigelse af art (gentaget)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Eksempel på forudsigelse af art (gentaget).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Her er resultatet, hvis "hund" bruges som det positive svar.
 
@@ -114,9 +113,9 @@ Selvom det ikke er så nemt at forstå F1, tilføjer det en nuance til det grund
 
 Afsnittet [Modelpræcision](#model-accuracy) i dette emne sammenlignede følgende to forvekslingsmatrixer. Selvom den første model havde lavere nøjagtighed, blev den vurderet til at være en mere nyttig model, da den viste en større forbedring end standardgættet for betaling til tiden.
 
-![Eksempel på forudsigelse af forudbetaling vs. faktiske tal](media/payment-prediction-matrix.png)
+![Eksempel på forudsigelse af forudbetaling vs. faktiske tal.](media/payment-prediction-matrix.png)
 
-![Eksempel på forudbetalinger med et større eksempel (gentaget)](media/payment-prediction-matrix-2.png)
+![Eksempel på forudbetalinger med et større eksempel (gentaget).](media/payment-prediction-matrix-2.png)
 
 Lad os se, hvordan disse to modeller sammenlignes, når F1-scoren bruges. F1-scorefaktorerne i præcision og tilbagekaldelse for hver tilstand, og F1-makroberegningen beregner derefter F1-scoren på tværs af tilstandene for at fastlægge et samlet antal F1-resultater. Der er andre F1-varianter, men det er af stor interesse at overveje makroversionen med den tilsvarende overvejelse, der er tildelt alle tre tilstande.
 
@@ -129,16 +128,12 @@ For at forenkle beregningerne blev eksempelmatricer bygget til at matche de fakt
 
 Yderligere oplysninger om, hvordan denne beregning fungerer illustreres her i en sklearn.metrics-klassifikationsrapport for model 1. De tre tilstande, "Til tiden", "Sent" og "Meget sent" repræsenteres af de rækker, der kaldes henholdsvis 1, 2 og 3. Makrogennemsnittet er blot gennemsnittet af kolonnen "F1-score".
 
-|           | præcision | tilbagekald   | f1-score |
+| &nbsp;    | præcision | tilbagekald   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Som disse resultater viser, har de to modeller næsten identiske præcisionsresultater for makroen F1. I dette og mange andre tilfælde viser F1 præcision en bedre indikator for en models kapacitet. Af hensyn til nøjagtigheden kræver fortolkningen af resultaterne, at du forstår, hvad der er vigtigst at overveje i modellen.
-
-#### <a name="privacy-notice"></a>Erklæring om beskyttelse af personlige oplysninger
-Forhåndsvisning (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen (SLA) for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

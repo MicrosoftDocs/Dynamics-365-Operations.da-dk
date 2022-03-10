@@ -2,11 +2,9 @@
 title: Regnskab i den offentlige sektor i Frankrig
 description: I denne artikel beskrives regnskaber for den franske offentlige sektor.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -17,12 +15,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 751da12da1ffb8ff7e691f9fc17bb59185e94cb3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 89c5ca1f87807b8877eb64d1303e4c14fd0ad3303bedb605e713d6e9f761e67a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748935"
 ---
 # <a name="public-sector-accounting-in-france"></a>Regnskab i den offentlige sektor i Frankrig
 

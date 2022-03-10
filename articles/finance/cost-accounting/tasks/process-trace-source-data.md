@@ -2,11 +2,9 @@
 title: Behandle og spore kildedata
 description: Al databehandling køres af job.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4363a51549503327e7decccf38c82db6e75acd88
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fa4daff2d35ecfc9d2be171167683679b1e6db5698f9d04c13edf773253590d2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775884"
 ---
 # <a name="process-and-trace-source-data"></a>Behandle og spore kildedata
 
@@ -44,3 +42,6 @@ Al databehandling køres af job. Der oprettes en kladde for hvert job og datapro
     * Vælg regnskabsårets 2017 periode 9 i dette eksempel.  
 14. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

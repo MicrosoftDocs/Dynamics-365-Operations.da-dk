@@ -1,9 +1,9 @@
 ---
 title: Oversigt over finans i den offentlige sektor
-description: I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
-author: ShylaThompson
+description: I dette emne beskrives de finansfunktioner, som er tilgængelige for organisationer i den offentlige sektor.
+author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
@@ -15,21 +15,21 @@ ms.custom:
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: def176d9ffaa14df8e6a6a7b0da9fbeda940a1b2
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 269ad190d58afb53e7fc5360451eec5806ca01bb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338669"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984785"
 ---
 # <a name="general-ledger-in-the-public-sector-overview"></a>Oversigt over finans i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
+I dette emne beskrives de finansfunktioner, som er tilgængelige for organisationer i den offentlige sektor.
 
 ## <a name="how-do-general-ledger-parameters-need-to-be-set-for-public-sector-organizations"></a>Hvordan skal Finansparametre indstilles til offentlige organisationer?
 

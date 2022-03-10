@@ -6,7 +6,7 @@ ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
+ms.search.form: PurchTable, InventTransferOrders, SalesTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813717"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068103"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -36,7 +36,18 @@ Warehouse management-arbejdsbelastninger giver mulighed for, at der kan køres s
 
 ## <a name="prerequisites"></a>Forudsætninger
 
+Før du begynder at arbejde med arbejdsbyrden i lokationsstyring, skal systemet være forberedt som beskrevet i dette afsnit.
+
+### <a name="deploy-a-scale-unit-with-the-warehouse-management-workload"></a>Udrulle en skalaenhed med arbejdsbyrde for lokationsstyring
+
 Du skal have en Dynamics 365 Supply Chain Management-hub og en skaleringsenhed, der er implementeret med arbejdsbyrden for warehouse management. Du kan finde flere oplysninger om arkitekturen og installationsprocessen i [Skaler enheder i en distribueret hybridtopologi](cloud-edge-landing-page.md).
+
+### <a name="turn-on-required-features-in-feature-management"></a>Aktivere påkrævede funktioner i funktionsstyring
+
+I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere begge disse funktioner. (Begge funktioner er opført under modulet *Lokationsstyring*).
+
+- Afkobl læg på lager-arbejde fra ASN'er
+- (Forhåndsversion) Understøttelse af skalaenhed til indgående og udgående lagerstedsordrer
 
 ## <a name="how-the-warehouse-execution-workload-works-on-scale-units"></a>Sådan fungerer udførelse af lagerstedsarbejdsbyrde på skaleringsenheder
 
@@ -50,6 +61,11 @@ Afhængigt af forretningsprocesserne kan samme datapost skifte ejer mellem hub o
 > Nogle data kan oprettes både på hub'en og på vægtenheden. Det kan f.eks. være **id'er** og **batchnumre**. Der findes til den givne konflikthåndteringer i tilfælde af et scenario, hvor den samme entydige post både oprettes på hub'en og en vægtenhed under samme synkroniseringscyklus. Når det sker, mislykkes den næste synkronisering, og du skal gå til **Systemadministration > Forespørgsler > Forespørgsler > Dubletter af poster**, hvor du kan få vist og flette dataene.
 
 ## <a name="outbound-process-flow"></a>Udgående procesflow
+
+Før du udruller en arbejdsbyrde for lokationsstyring på en sky- eller edge-skaleringsenhed, skal du sørge for, at funktionen *Skaler enhedssupport til frigivelse til lagersted af udgående ordrer* er aktiveret i din virksomhedshub. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Warehouse Management*
+- **Funktionsnavn:** *Skaler enhedssupport til frigivelse til lagersted af udgående ordrer*
 
 Den udgående dataejerproces afhænger af, om du bruger belastningsplanlægningsprocessen. I alle tilfælde ejer hub *kildedokumenterne*, f.eks. salgsordrer og flytteordrer, ordrefordelingsprocessen og de relaterede ordretransaktionsdata. Men når du bruger belastningsplanlægningsprocessen, oprettes belastningerne i hub og ejes derfor i begyndelsen af hub. Som en del af processen for *frigivelse til lagersted* overføres ejerskabet af belastningsdataene til den tildefinerede implementering af vægtenheden, som vil blive ejer af den efterfølgende *behandling af forsendelser* (f.eks. arbejdsfordeling, opfyldningsarbejde og oprettelse af efterspørgselsarbejde). Lagerarbejdere kan derfor kun behandle udgående salgs- og flytteordrearbejde ved hjælp af en mobilapp til Warehouse Management, der er knyttet til den installation, der kører den specifikke arbejdsbyrde for vægtenheden.
 
@@ -103,6 +119,26 @@ I følgende diagram vises indgående processer, og det angives, hvor de enkelte 
 
 [![Indgående behandlingsflow](media/wes_inbound_warehouse_processes-small.png "Indgående behandlingsflow")](media/wes_inbound_warehouse_processes.png)
 
+## <a name="production-control"></a>Produktionsstyring
+
+Arbejdsbyrden for lokationsstyring understøtter følgende tre produktionsflow i appen Warehouse Management:
+
+- Færdigmeld, og læg på lager
+- Start produktionsordre
+- Registrer materialeforbrug
+
+### <a name="report-as-finished-and-put-away"></a>Færdigmeld, og læg på lager
+
+Arbejderne kan bruge flowet **Færdigmeld, og læg på lager** i appen Warehouse Management til at færdigmelde en produktions- eller batchordre. De kan også færdigmelde samprodukter og biprodukter i en batchordre. Når et job er færdigmeldt, genererer systemet normalt læg på lager-arbejde på skalaenheden. Hvis du ikke kræver læg på lager-arbejde, kan du konfigurere dine arbejdspolitikker til at udelade det.
+
+### <a name="start-production-order"></a>Start produktionsordre
+
+Arbejderne kan bruge flowet **Start produktionsordre** i appen Warehouse Management til at registrere starten af en produktions- eller batchordre.
+
+### <a name="register-material-consumption"></a>Registrer materialeforbrug
+
+Arbejderne kan bruge flowet **Registrer materialeforbrug** i appen Warehouse Management til at rapportere materialeforbrug for en produktions- eller batchordre. Der oprettes derefter en pluklistekladde for det rapporterede materiale på produktions- eller batchordren på skalaenheden. Kladdelinjerne foretager en fysisk reservation af det forbrugte lager. Når data synkroniseres mellem skalaenheden og hub'en, genereres der en pluklistekladde, som bogføres på hub-forekomsten.
+
 ## <a name="supported-processes-and-roles"></a>Understøttede processer og roller
 
 Ikke alle processer til Warehouse Management understøttes i en udførelse af lagerstedsarbejdsbyrde på en skaleringsenhed. Det anbefales derfor, at du tildeler roller, der stemmer overens med de funktioner, der er tilgængelige for de enkelte brugere.
@@ -134,22 +170,26 @@ Følgende arbejdstyper kan oprettes på en vægtenhed og kan derfor behandles so
 - **Cyklusoptælling** - herunder en afvigende godkendelses- og afvisningsproces som en del af optællingsoperationer.
 - **Indkøbsordrer** - læg på lager-arbejde via en lagerstedsordre, når indkøbsordrer ikke er tilknyttet laster.
 - **Salgsordrer** - simpelt pluk- og lastarbejde.
+- **Overførselskvittering** – Via nummerplade, der modtages.
 - **Overfør afgang** – Simpel pluk og indlæsning.
 - **Genopfyldning** - uden råvarer til produktion.
 - **Færdigvarer, der er blevet lagt på lager** – Efter produktionsprocessen for færdigmeldingen.
 - **Med-produkt og under-produkt, der er lagt væk** – Efter produktionsprocessen er færdigmeldt.
+<!-- - **Packed container picking** - After manual packing station processing. -->
 
-Ingen anden behandling af kildedokumenter eller lagerstedsarbejde understøttes i øjeblikket på skaleringsenheder. I forbindelse med en udførelse af lagerstedsarbejdsbyrde på en skaleringsenhed kan du f.eks. ikke udføre en modtagelsesproces for overførselsordrer (overførselskvittering). Den skal i stedet behandles af hubforekomsten.
+Ingen anden behandling af kildedokument eller lagerstedsarbejde understøttes i øjeblikket på skaleringsenheder. Når du f.eks. kører i forhold til en lagerstedsudførelsesbelastning på en skalaenhed, kan du ikke bruge processen til modtagelse af salgsreturordrer til at behandle returordrer. I stedet skal denne behandling udføres af hub-forekomsten.
 
 > [!NOTE]
 > Menupunkter og knapper til mobilenheder til funktioner, der ikke understøttes, vises ikke i _mobilappen Warehouse Management_, når den er knyttet til en implementering af skaleringsenhed.
-> 
+>
+> Der kræves et par ekstra trin at konfigurere mobilappen Warehouse Management til at arbejde i en sky- eller edge-skalaenhed. Du kan finde flere oplysninger under [Konfigurere mobilappen Warehouse Management til sky- og edge-skaleringsenheder](cloud-edge-workload-setup-warehouse-app.md).
+>
 > Når du kører en arbejdsbyrde i en skaleringsenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i dette emne dokumenterer de understøttede egenskaber.
 >
 > Valgte arbejdstyper for lagersteder kan oprettes både på hubben og skaleringsenheder, men kan kun vedligeholdes af ejerhubben eller -skaleringsenheden (den installation, der har oprettet dataene).
 >
 > Selv når en bestemt proces understøttes i skaleringsenheden, skal du være opmærksom på, at alle nødvendige data muligvis ikke bliver synkroniseret fra hubben til skaleringsenheden eller fra skaleringsenheden til hubben, hvilket udgør en risiko for uventet systembehandling. Eksempler på dette scenario omfatter:
-> 
+>
 > - Hvis du bruger en forespørgsel om lokationsvejledning, der tilknytter en datatabelpost, som kun findes i hubimplementeringen.
 > - Hvis du bruger lokationsstatus og/eller lokationsmængder som lastfunktioner. Disse data synkroniseres ikke mellem implementeringerne og vil derfor kun fungere, når lokationslagerbeholdningen opdateres for en af installationerne.
 
@@ -169,16 +209,16 @@ Følgende warehouse management-funktioner understøttes ikke i øjeblikket i arb
 - Behandling med fastvægtvarer.
 - Behandling med varer, der kun er aktiveret til transportstyring (TMS).
 - Behandling med negativ disponibel lagerbeholdning.
+- Datadeling af produkter på tværs af firma. <!-- Planned -->
 - Behandling af lagerstedsarbejde med forsendelsesnotaer.
 - Behandling af lagerstedsarbejde med materialehåndtering/warehouse automation.
 - Billeder af produktmasterdata (f.eks. på mobilappen Warehouse Management).
-- Datadeling af produkter på tværs af firma.
 
 > [!WARNING]
 > Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for Warehouse Management på en skaleringsenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skaleringsenheden.
-> 
+>
 > Andre egenskaber kan behandles på begge, men vil kræve nøje brug i visse scenarier, f.eks. når lagerbeholdning opdateres for det samme lagersted på både hubben og skaleringsenheden på grund af den asynkrone dataopdateringsproces.
-> 
+>
 > Specifikke funktioner (som f.eks. *blokringsarbejde*), der understøttes på både hubben og skaleringsenheder, vil kun blive understøttet for ejeren af dataene.
 
 ### <a name="outbound-supported-only-for-sales-and-transfer-orders"></a>Udgående (kun understøttet for salgsordrer og flytteordrer)
@@ -202,19 +242,22 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 | Udskrivning af lastrelaterede dokumenter                           | Ja | Ja|
 | Fragtseddel og ASN-generering                            | Nej  | Ja|
 | Forsendelsesbekræftelse                                             | Nej  | Ja|
-| Forsendelsesbekræftelse med "Bekræft og flyt"            | Nej  | Nej |
+| Forsendelsesbekræftelse med "Bekræft og flyt"            | Nej  | Ja|
 | Behandling af følgesedler og fakturering                        | Ja | Nej |
 | Kort pluk (salgs- og flytteordrer)                    | Nej  | Ja, uden at fjerne reservationer for kildedokumenter|
 | Overpluk (salgs- og flytteordrer)                     | Nej  | Ja|
+| Konsolider id'er                                   | Nej  | Ja|
 | Ændring af arbejdssteder (salgs- og flytteordrer)         | Nej  | Ja|
 | Fuldføre arbejde (salgs- og flytteordrer)                    | Nej  | Ja|
 | Udskrive arbejdsordrerapport                                            | Ja | Ja|
 | Bølgelabel                                                   | Nej  | Ja|
 | Arbejdsopdeling                                                   | Nej  | Ja|
 | Arbejdsbehandling – Styres af "Lastning af transport"            | Nej  | Nej |
-| Reducer det antal, der er plukket                                       | Nej  | Nej |
-| Tilbagefør arbejde                                                 | Nej  | Nej |
+| Reducer det antal, der er plukket                                       | Nej  | Ja|
+| Tilbagefør arbejde                                                 | Nej  | Ja|
 | Tilbagefør forsendelsesbekræftelse                                | Nej  | Ja|
+| Anmode om annullering af ordrelinjer på lagersted                      | Ja | Nej, men anmodningen godkendes eller afvises |
+| <p>Frigiv flytteordrer til modtagelse</p><p>Denne proces vil automatisk finde sted som en del af forsendelsesprocessen for flytteordren. Den kan dog bruges manuelt til at aktivere modtagelse af nummerplader med en skalaenhed, hvis indgående lagerstedsordrelinjer er blevet annulleret, eller som en del af en ny udrulningsproces for arbejdsbyrder.</p> | Ja | Nej|
 
 ### <a name="inbound"></a>Indgående
 
@@ -227,17 +270,17 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 | Modtagelse af varer undervejs og landingsomkostninger                       | Ja | Nej |
 | Bekræftelse af indgående forsendelse                                    | Ja | Nej |
 | Frigivelse af indkøbsordre til lagersted (behandling af lagerstedsordre) | Ja | Nej |
-| Annullering af ordrelinjer på lagersted<p>Bemærk, at dette kun understøttes, når der ikke er sket nogen registrering for linjen</p> | Ja | Nej |
+| Anmode om annullering af ordrelinjer på lagersted                            | Ja | Nej, men anmodningen godkendes eller afvises |
+| Behandle produktkvittering for indkøbsordres kildedokument                         | Ja | Nej |
 | Indkøbsordrevare til modtagelse og læg på lager                       | <p>Ja,&nbsp;når&nbsp;der&nbsp;ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p> |
 | Indkøbsordrelinje til modtagelse og læg på lager                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, når en indkøbsordre ikke er del af en <i>last</i></p></p> |
 | Modtagelse af returordre og placering på lager                              | Ja | Nej |
 | Modtagelse af blandede id'er og placering på lager                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja |
 | Modtagelse af varelast                                              | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
-| Modtagelse af nummerplade og placering på lager                             | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Indkøbsordre-id til modtagelse og læg på lager              | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
+| Flytteordre-id til modtagelse og læg på lager             | Nej | Ja |
 | Modtagelse af vare i flytteordre og placering på lager                       | Ja | Nej |
 | Flytteordrelinje til modtagelse og placering på lager                       | Ja | Nej |
-| Annuller arbejde (indgående)                                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, men kun når indstillingen <b>Fjern registrering af modtagelse, når du annullerer arbejde</b> (på siden <b>Parametre til warehouse management</b>) er ryddet</p> |
-| Behandle indkøbsordre - produktkvittering                        | Ja | Nej |
 | Indkøbsordre, der modtages med underlevering                      | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja, men kun ved at foretage en annulleringsanmodning fra hubben |
 | Indkøbsordre, der modtages med overlevering                       | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja  |
 | Modtagelse med oprettelse af *Cross-docking*-arbejde                 | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
@@ -247,6 +290,7 @@ I følgende tabel vises, hvilke indgående funktioner der understøttes, og hvor
 | Modtagelse med oprettelse af kvalitetsordre                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Nej |
 | Arbejdsbehandling – Styres af *Læg på lager-klynge*                 | Ja | Nej |
 | Arbejdsbehandling med *Kort pluk*                               | Ja | Nej |
+| Annuller arbejde (indgående)                                            | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | <p>Ja, men kun når indstillingen <b>Fjern registrering af modtagelse, når du annullerer arbejde</b> på siden <b>Parametre til lokationsstyring</b> er ryddet</p> |
 | Indlæsning af nummerplade                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lagerstedsoperationer og håndtering af undtagelser
@@ -269,12 +313,11 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 | Genudskrive etiket (udskrive nummerplade)             | Ja | Ja                          |
 | Id-build                                | Ja | Nej                           |
 | Id-pause                                | Ja | Nej                           |
-| Pak til indlejrede id'er                                | Ja | Nej                           |
+| Pak til indlejrede id'er                      | Ja | Nej                           |
 | Chaufførens check-in                                    | Ja | Nej                           |
 | Chaufførens check-ud                                   | Ja | Nej                           |
 | Skifte batchdispositionskode                      | Ja | Ja                          |
 | Vis oversigt over åbne opgaver                             | Ja | Ja                          |
-| Konsolider id'er                         | Ja | Nej                           |
 | Behandling af min./maks. og zonetærskelopfyldning| Ja <p>Anbefalingen er ikke at medtage de samme lokationer som en del af forespørgslerne</p>| Ja                          |
 | Behandle allokeringsgenopfyldning                  | Ja  | Ja<p>Bemærk, at opsætningen skal udføres på skaleringsenheden</p>                           |
 | Blokere og fjerne blokering af arbejde                             | Ja | Ja                          |
@@ -287,28 +330,46 @@ I følgende tabel vises, hvilke funktioner til håndtering af lageroperationer o
 I følgende tabel vises en oversigt over produktionsscenarier for warehouse management, der (ikke) understøttes i øjeblikket i arbejdsbelastninger på skaleringsenheder.
 
 | Behandling | Hub | Udførelse af lagerstedsarbejdsbyrde på skaleringsenheder |
-|---------|-----|------------------------------|
-| Færdigmelde og lægge færdigvarer på lager | Ja | Ja |
-| Samprodukt og biprodukt, læg på lager | Ja | Ja |
-| Start produktionsordre | Ja | Ja |
-| <p>Alle andre warehouse management-processer, der er relateret til produktion, omfatter:</p><li>Frigiv til lagersted</li><li>Produktionsbølgebehandling</li><li>Råvarepluk</li><li>Kanban-læg på lager</li><li>Kanban-pluk</li><li>Produktionsspild</li><li>Sidste produktionspalle</li><li>Registrer materialeforbrug</li><li>Tøm kanban</li></ul> | Ja | Nej |
-| Genopfyldning af råvarer | Nej | Nej |
+|---------|-----|----------------------------------------------|
+| Behandling af kildedokument til produktionsordre    | Ja | Nej |
+| Frigiv til lagersted                           | Ja | Nej |
+| Start produktionsordre                         | Ja | Ja|
+| Oprette lagerstedsordrer                        | Ja | Nej |
+| Anmode om annullering af ordrelinjer på lagersted        | Ja | Nej, men anmodningen godkendes eller afvises |
+| Færdigmelde og lægge færdigvarer på lager | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja|
+| Samprodukt og biprodukt, læg på lager             | <p>Ja, når der ikke er en lagerordre</p><p>Nej, når der er en lagerordre</p> | Ja|
+| Registrer materialeforbrug                  | Ja | Ja|
+| Produktionsbølgebehandling                     | Ja | Nej |
+| Råvarepluk                           | Ja | Nej |
+| Kanban-læg på lager                                | Ja | Nej |
+| Kanban-pluk                                 | Ja | Nej |
+| Tøm kanban                                   | Ja | Nej |
+| Produktionsspild                               | Ja | Nej |
+| Sidste produktionspalle                         | Ja | Nej |
+| Genopfyldning af råvarer                     | Nej  | Nej |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Vedligeholde skaleringsenheder til lagerstedsudførelse
 
 Flere batchjob kører på både hubben og skaleringsenheder.
 
-Under installationen af hub kan du vedligeholde batchjobbene manuelt. Du kan administrere følgende batchjob i **Warehouse Management \> Periodiske opgaver \> Backoffice-styring af arbejdsbyrder**:
+Under installationen af hub kan du vedligeholde følgende batchjob manuelt:
 
-- Skaleringsenhed til meddelelsesprocessors hub
-- Registrer kvitteringer på kildeordre
-- Fuldfør lagerstedsordrer
+- Administrer følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Backoffice-styring af arbejdsbyrder**:
 
-På arbejdsbyrden i skaleringsenheder kan du administrere følgende batchjob i **Warehouse Management \> Periodiske opgaver \> Styring af arbejdsbyrder**:
+    - Skaleringsenhed til meddelelsesprocessors hub
+    - Registrer kvitteringer på kildeordre
+    - Fuldfør lagerstedsordrer
 
-- Behandle bølgetabelposter
+- Administrer følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Styring af arbejdsbyrder**:
+
+    - Meddelelsesprocessor for lagerstedshub til skaleringsenhed
+    - Udfør behandling af lagerstedsordrelinjekvitteringer for bogføring af lagerstedskvittering
+
+Ved udrulninger af skaleringsenheder kan du administrere følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Styring af arbejdsbyrder**:
+
+- Behandl bølgetabelposter
 - Meddelelsesprocessor for lagerstedshub til skaleringsenhed
-- Foretag behandling af anmodninger om opdatering af antal for lagerstedsordrelinjer
+- Udfør behandling af lagerstedsordrelinjekvitteringer for bogføring af lagerstedskvittering
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

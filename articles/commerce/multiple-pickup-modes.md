@@ -2,11 +2,9 @@
 title: Aktivere flere leveringsmåder for afhentning af kundeordrer
 description: I dette emne forklares den funktionalitet i Microsoft Dynamics 365 Commerce, der giver dig mulighed for at oprette kundeordrer til afhentning i en butik.
 author: hhainesms
-manager: annbe
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
-ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
+ms.openlocfilehash: a8fec96eb644cccea3566a32f3eb2ac3c699faa412be2bb9cdb2690d34999542
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5053407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745350"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivere flere leveringsmåder for afhentning af kundeordrer
 
@@ -34,15 +32,15 @@ Hvis du vil bruge denne funktion, skal du slå funktionen **Understøttelse af f
 
 I Commerce version 10.0.15 og tidligere kan organisationer kun definere én leveringsmåde som den angivne afhentningsleveringsmåde. Denne definition udføres på siden **Commerce-parametre**. Når du aktiverer funktionen **Understøttelse af flere leveringsmåder for afhentning** i version 10.0.16 og senere versioner, kopieres den leveringsmåde, der tidligere er defineret som leveringsmåden ved afhentning på siden **Commerce-parametre**, automatisk til den nye konfiguration for afhentningsleveringsmåder.
 
-![Leveringsmåder ved afhentning på siden Commerce-parametre](media/multiplepickupparameter.png)
+![Leveringsmåder ved afhentning på siden Commerce-parametre.](media/multiplepickupparameter.png)
 
 Når du har slået funktionen **Understøttelse af flere leveringsmåder for afhentning** til, kan du definere flere leveringsmåder i gitteret **Levering gennem afhentning** i oversigtspanelet **Leveringsmåder** under fanen **Debitorordrer** på siden **Commerce-parametre**.
 
 Felterne **Leveringsmåde ved afhentning** og **Elektronisk leveringsmåde**, og indstillingen **Vis kun fragtmandstilstande for indstillingen forsendelsesordrer** er flyttet til dette oversigtspanel.
 
-Før du kan konfigurere flere leveringsmåder for afhentning, skal du definere leveringsmåderne. På siden **Leveringsmåder** i Commerce Headquarters kan du tilføje de leveringsmåder, der skal betragtes som afhentningsmåder. Sørg for, at al konfiguration er fuldført. Kontroller f.eks., at leveringsmåden er knyttet til de relevante kanaler og varer. Når du er færdig, kan du køre jobbet **Behandling af leveringsmåder** for at oprette relationerne mellem leveringsmåde, kanaler og varer. Når kørslen af jobbet er afsluttet, kan du åbne siden **Distributionsplan** i Commerce Headquarters og køre distributionsjobbet **1120** for at sikre, at de relevante Commerce-kanaldatabaser opdateres med den nye konfiguration af leveringsmåden.
+Før du kan konfigurere flere leveringsmåder for afhentning, skal du definere leveringsmåderne. På siden **Leveringsmåder** i Commerce Headquarters kan du tilføje de leveringsmåder, der skal betragtes som afhentningsmåder. Sørg for, at al konfiguration er fuldført. Hvis du f.eks. tilbyder afhentning ved fortovskant som leveringsmulighed for dine onlinekunder i bestemte butikker, skal du oprette en ny leveringsmåde til dette formål. Du kan oprette denne leveringsmåde ved hjælp af "afhentning ved fortovskant" som beskrevet. Du vil derefter sikre, at leveringsmåden "afhentning ved fortovskant" knyttes til alle de handelskanaler, der kan tilbyde den, herunder onlinebutikker, der kan tilbyde denne mulighed, og de individuelle butikskanaler, der vil tilbyde denne opfyldelsesmetode. Leveringsmåder skal også knyttes til produkterne. Hvis der i dette eksempel er bestemte produkter, der ikke kan opfyldes ved hjælp af "afhentning ved fortovskant", skal du sikre dig, at disse varer udelades. Når du er færdig med at tilføje nye leveringsmåder, kan du køre jobbet **Behandling af leveringsmåder** for at oprette relationerne mellem leveringsmåde, kanaler og varer. Når jobbet er fuldført, kan du åbne siden **Distributionsplan** i Commerce Headquarters og køre distributionsjobbet **1120** for at sikre, at de relevante Commerce-kanaldatabaser opdateres med den nye konfiguration af leveringsmåden.
 
-![Eksempel på en leveringskonfiguration for afhentning ved fortovskanten](media/pickupmodes.png)
+![Eksempel på en leveringskonfiguration for afhentning ved fortovskanten.](media/pickupmodes.png)
 
 Når du har defineret flere leveringsmåder for afhentning, skal du føje dem til **Levering gennem afhentning** på siden **Commerce-parametre**. Kør derefter de relevante distributionsjob for at opdatere de relevante Commerce-kanaldatabaser med konfigurationsændringen.
 
@@ -71,17 +69,20 @@ Når der er flere tilgængelige leveringsmåder for en kanal, giver det en forbe
 
 - I e-handelskanaler kan kunderne vælge en tilgængelig og gyldig leveringsmåde for afhentning. En detailhandler definerer f.eks. to leveringsmåder for afhentning (afhentning i butik og afhentning ved fortovskant), som begge konfigureres i **Levering gennem afhentning**, og som begge er gyldige for ordreopfyldningskanalen og det produkt, som en kunde aktuelt køber. I dette tilfælde kan kunden vælge sin foretrukne afhentningsmåde. Den valgte afhentningsleveringsmåde bliver derefter den leveringsmåde, der er knyttet til salgsordrelinjen, når ordren oprettes i Commerce Headquarters.
 
-    ![Valg af en afhentningsindstilling i e-handel](media/pickupecommerce.png)
+    ![Valg af en afhentningsindstilling i e-handel.](media/pickupecommerce.png)
 
 - Hvis der er oprettet en kundeordre for afhentning via POS-programmet i butikskanaler, bliver salgsmedarbejderen bedt om at vælge mellem de tilgængelige afhentningsmåder, der måtte være konfigureret. Hvis der kun findes én gyldig leveringsmåde for kanalen og varen, bliver medarbejderen ikke bedt om at vælge den. I stedet anvendes den tilgængelige leveringsmåde for afhentning automatisk på ordrelinjerne.
 
-    ![Valg af en afhentningsindstilling i POS-programmet](media/pickuppos.png)
+    ![Valg af en afhentningsindstilling i POS-programmet.](media/pickuppos.png)
 
 - Når brugere opretter afhentningsordrer i callcenter-kanaler, kan de manuelt vælge en eventuel angivet leveringsmåde for afhentning, der er knyttet til callcenter-kanalen. Systemet validerer derefter, at den valgte afhentningsmåde kan bruges, når den vare, der knyttes til den, bestilles. Når der vælges en leveringsmåde for afhentning i callcenter-kanaler, skal salgsordrelinjerne knyttes til et gyldigt butikslagersted. Hvis der defineres et ikke-butikslagersted på en salgslinje i et callcenter, kan der ikke angives en leveringsmåde for afhentning på den pågældende salgslinje.
 - Salgsmedarbejderne kan bruge handlingen **Ordretilbagekaldelse** eller **Ordreopfyldelse** i POS-programmet til at hente en liste over ordrer eller ordrelinjer til afhentning. Hvis en salgsmedarbejder bruger et foruddefineret søgefilter til at vise alle ordrer, der vil blive afhentet i den aktuelle butik, ændres forespørgslerne for at sikre, at søgeresultaterne omfatter alle de berettigede ordrer, der bruger en leveringsmåde for afhentning. POS-brugerne kan også bruge eksisterende filtre til at indsnævre listen over ordrer til en bestemt leveringsmåde for afhentning. De kan f.eks. kun vise ordrer for afhentning ved fortovskant.
 
-    ![Filter til leveringsmåder for afhentning anvendt på en oversigt over tilbagekaldsordrer](media/pickuprecallorder.png)
+    ![Filter til leveringsmåder for afhentning anvendt på en oversigt over tilbagekaldsordrer.](media/pickuprecallorder.png)
 
 ## <a name="considerations-for-distributed-order-management"></a>Overvejelser vedrørende fordelt ordrestyring
 
-Funktionerne for [fordelt ordrestyring (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerer alle salgslinjer, der er markeret til afhentning i butikken. Disse funktioner er blevet opdateret for at sikre, at salgslinjer, der er knyttet til konfigurerede leveringsmåder, springer DOM-logikken over, og de omfordeles ikke til et nyt opfyldningslagersted.
+Funktionerne for [fordelt ordrestyring (DOM)](./dom.md) i Commerce ignorerer alle salgslinjer, der er markeret til afhentning i butikken. Disse funktioner er blevet opdateret for at sikre, at salgslinjer, der er knyttet til konfigurerede leveringsmåder, springer DOM-logikken over, og de omfordeles ikke til et nyt opfyldningslagersted.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

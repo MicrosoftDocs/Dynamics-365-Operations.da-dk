@@ -1,12 +1,10 @@
 ---
 title: Automatiske opdateringer af forsendelser
 description: Dette emne indeholder en oversigt over funktioner, der leverer automatiske opdateringer til forsendelser.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1f75e9421ab9cac0b62e1cdee17ecf74796783cc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001218"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580090"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske opdateringer af forsendelser
 
@@ -139,3 +137,6 @@ Bølgen behandles, og der oprettes arbejde for de reserverede antal på lastlinj
 Hvis en forsendelse har statussen **I bølge** eller højere, vil opdateringer af antallet på en salgsordrelinje ikke blive afspejlet eller valideret mod en lastlinje, der er knyttet til forsendelsen. Ændringer i antallet på en lastlinje skal foretages direkte på lastlinjen.
 
 Validering udføres, efter at der er oprettet arbejde for lastlinjen, og der er foretaget en reservation. En reduktion af antallet på salgsordrelinjen valideres derefter i forhold til arbejdslinjereservationen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

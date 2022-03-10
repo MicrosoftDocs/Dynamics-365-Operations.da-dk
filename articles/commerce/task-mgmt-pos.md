@@ -2,11 +2,9 @@
 title: Opgavestyring i POS
 description: I dette emne beskrives opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,20 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772100"
 ---
 # <a name="task-management-in-pos"></a>Opgavestyring i POS
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversigt
 
 POS-programmet i Dynamics 365 Commerce indeholder funktioner til styring af opgaver, som giver butikschefer og arbejdere mulighed for at administrere opgaver og opdatere opgavestatus. Butiksmedarbejdere kan få adgang til opgaver ved at vælge feltet **Opgaver** på POS-startsiden eller ved at vælge opgavebeskeder. Som standard føres arbejdere til fanen **Mine opgaver**, hvor de kan få vist de opgaver, der er tildelt til dem. De kan imidlertid nemt skifte til fanerne **Forfaldne opgaver**, **Åbne opgaver** og **Opgavelister**.
 
@@ -48,11 +44,11 @@ Butiksmedarbejdere kan udføre følgende opgavehandlinger i POS-programmet ved h
 
 I følgende illustration vises fanen **Mine opgaver** i POS-programmet i Commerce.
 
-![Fanen Mine opgaver i POS-programmet i Commerce](media/POS-task-management.png)
+![Fanen Mine opgaver i POS-programmet i Commerce.](media/POS-task-management.png)
 
 I følgende illustration vises fanen **Opgavelister**.
 
-![Fanen Opgavelister i POS-programmet i Commerce](media/POS-task-lists-management.png)
+![Fanen Opgavelister i POS-programmet i Commerce.](media/POS-task-lists-management.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -63,3 +59,6 @@ I følgende illustration vises fanen **Opgavelister**.
 [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md)
 
 [Tildele opgavelister til butikker eller medarbejdere](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

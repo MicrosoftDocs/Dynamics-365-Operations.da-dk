@@ -3,7 +3,7 @@ title: Power BI-indhold til Oversigt over kontanter
 description: Dette emne beskriver Power BI-indholdet til Oversigt over kontanter. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet.
 author: saraschi2
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 794a8b19224858a690f2b857c0d7278ed177d531
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830586"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986402"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-indhold til oversigt over kontanter
 
@@ -38,7 +38,7 @@ Følgende opsætning skal være fuldført, før der kan vises data i de visuelle
 2. Gå til **Finans > Kalendere > Regnskabskalendere** for at validere regnskabskalenderdatoer, der er tildelt den aktive tidsperiode.
 3. Gå til **Finans > Opsætning > Finans** for at angive **Regnskabsvaluta** og **Valutakurstype**.
 4. Definer valutakurser mellem transaktionsvalutaer og regnskabsvaluta, regnskabsvaluta og systemvaluta samt regnskabsvaluta og bankvalutaer. Det gør du ved at gå til **Finans > Valutaer > Valutakurser**.
-5. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i [Likviditetsbudget](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Konfigurer og kør likviditetsbudgettering. Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgettering, i [Likviditetsbudget](./cash-flow-forecasting.md). 
 6. Gå til **Systemadministration > Konfiguration > Enhedslager** for at opdatere den samlede måling af **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet

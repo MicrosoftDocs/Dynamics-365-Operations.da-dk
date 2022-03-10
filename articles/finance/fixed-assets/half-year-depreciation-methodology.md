@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e71beb316494d05a3d8ce6066f2a4c72e32a2ad3d75a4ba3560cb0aebfe4cc8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746434"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metode for halvårligt afskrivningsprincip
 
@@ -36,7 +36,7 @@ Det første år, det er i brug, afsluttes i december 2020, hvilket betyder, at a
 > Årlig afskrivning 50.000/5 = 10.000 månedlig afskrivning 10.000/12 = 833,33 <br>
 > Første års afskrivning 10.000/2 = 5.000 og den efterfølgende månedlige afskrivning 5.000/9 = 555,56
 
-   [![Afskrivningsplan for halvårligt afskrivningsprincip](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Afskrivningsplan for halvårligt afskrivningsprincip.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De udvidede afskrivningsperioder, der tilføjes af halvårsprincippet, giver en mere præcis afskrivningsfordeling. Seks måneders princippet fordeler afskrivningsudgifter mere ligeligt, hvilket er nyttigt ved rapportering til driftsregnskabet.
 

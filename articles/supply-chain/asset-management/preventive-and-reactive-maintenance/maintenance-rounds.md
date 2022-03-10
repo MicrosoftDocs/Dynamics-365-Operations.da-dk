@@ -1,29 +1,26 @@
 ---
 title: Vedligeholdelsesrunder
 description: I dette emne beskrives vedligeholdelsesrunder i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740713"
 ---
 # <a name="maintenance-rounds"></a>Vedligeholdelsesrunder
 
@@ -83,7 +80,7 @@ I **Styring af aktiver** kan du oprette vedligeholdelsesrunder for forskellige a
 
 Illustrationen nedenfor viser et eksempel på en vedligeholdelsesrunde, der indeholder tre aktiver.
 
-![Figur 1](media/13-preventive-maintenance.png)
+![Figur 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Planlæg vedligeholdelsesrunder
@@ -109,11 +106,14 @@ Når du har konfigureret en vedligeholdelsesrunde, skal du køre et tidsplanlæg
 
 De to illustrationer nedenfor viser et planlægningsjob i dialogboksen **Planlæg vedligeholdelsesrunder** og vedligeholdelsestidsplanslinjer, der er oprettet i **Hele vedligeholdelsestidsplanen** baseret på det pågældende planlægningsjob.
 
-![Figur 2](media/14-preventive-maintenance.png)
+![Figur 2.](media/14-preventive-maintenance.png)
 
-![Figur 3](media/15-preventive-maintenance.png)
+![Figur 3.](media/15-preventive-maintenance.png)
 
 - Når der oprettes arbejdsordrer manuelt for aktiver, der er dækket af en leverandørgaranti, vises der en dialogboks for at gøre brugeren opmærksom på garantien. Oprettelsen af arbejdsordren kan derefter annulleres. Kontrollen af en garantirelation udelades for arbejdsordrer, der oprettes automatisk.  
 - Du kan oprette et batchjob i oversigtspanelet **Kør i baggrunden** for at planlægge runder med jævne mellemrum.  
 - Hvis en runde er medtaget i flere arbejdsordrepuljer (referer til [Arbejdsordrepuljer](../work-orders/work-order-pools.md)), vises der én post for hver pulje i **Åbne vedligeholdelsestidsplanspuljer**. Dette gøres for at optimere filtreringsindstillingerne for arbejdsordrepuljer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

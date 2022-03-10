@@ -3,24 +3,23 @@ title: Oversigt over automatiske processer for kreditorfakturering
 description: I dette emne beskrives muligheden for at automatisere behandlingen af kreditorfakturaer og fordelene ved at bruge en automatiseret proces.
 author: abruer
 ms.date: 02/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 778d00d777c44aa5cd19eced6d2d30e9b85500fd
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339054"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985650"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversigt over automatiske processer for kreditorfakturering
 
@@ -34,6 +33,7 @@ Du kan automatisere nogle kreditorfaktureringsprocesser. Disse processer omfatte
 
 Automatiseringsprocesserne kan bruges til at udføre disse opgaver:
 
+- Anvende forudbetalinger automatisk for kreditorfakturaer
 - Automatisk sende importerede fakturaer til arbejdsprocessystemet.
 - Afstemme produktkvitteringer med ventende kreditorfakturalinjer.
 - Simulere bogføring, før en kreditorfaktura bogføres.

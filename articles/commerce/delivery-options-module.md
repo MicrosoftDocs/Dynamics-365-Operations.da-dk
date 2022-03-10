@@ -2,27 +2,24 @@
 title: Leveringsindstillingsmodul
 description: Dette emne omhandler leveringsindstillingsmoduler og forklarer, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 08/05/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4411246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760894"
 ---
 # <a name="delivery-options-module"></a>Leveringsindstillingsmodul
 
@@ -30,15 +27,13 @@ ms.locfileid: "4411246"
 
 Dette emne omhandler leveringsindstillingsmoduler og forklarer, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Overblik
-
 Leveringsindstillingsmoduler gør det muligt for kunderne at vælge en leveringsmåde, f.eks. forsendelse eller afhentning af deres onlineordre. Der skal angives en leveringsadresse for at bestemme leveringsmåden. Hvis leveringsadressen ændres, skal leveringsindstillingerne hentes igen. Hvis en ordre kun omfatter varer, der afhentes i en butik, skjules dette modul automatisk.
 
-Du kan finde flere oplysninger om, hvordan du konfigurerer leveringsmåder, i [Konfiguration af onlinekanaler](channel-setup-online.md) og [Konfigurer leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Du kan finde flere oplysninger om, hvordan du konfigurerer leveringsmåder, i [Konfiguration af onlinekanaler](channel-setup-online.md) og [Konfigurer leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Hver leveringsmåde kan være tilknyttet et gebyr. Du kan få flere oplysninger om, hvordan du konfigurer gebyrer for en onlinebutik, i [Avancerede automatiske gebyrer for omni-kanal](omni-auto-charges.md).
 
-I Commerce version 10.0.13 er leveringsindstillingsmodulet opdateret til at understøtte funktionerne **Hovedgebyrer uden forholdsberegning** og **Levering som et linjegebyr**. Hvis forholdsberegning er deaktiveret, forventes det, at e-Commerce-arbejdsprocessen ikke tillader en blandet leveringsmåde for varerne i indkøbsvognen (dvs. at nogle varer er valgt til levering, mens andre er valgt til afhentning). Funktionen **Hovedgebyrerne uden forholdsberegning** kræver, at flaget **Aktivér ensartet leveringsmåde i kanal** er aktiveret i Commerce Headquarters. Når dette flag er aktiveret, tilskrives der forsendelsesgebyrer enten på hovedniveauet eller linjeniveauet, afhængigt af konfigurationen i Commerce Headquarters.
+I Commerce version 10.0.13 er leveringsindstillingsmodulet opdateret til at understøtte funktionerne **Hovedgebyrer uden forholdsberegning** og **Levering som et linjegebyr**. Hvis forholdsberegning er deaktiveret, forventes det, at e-Commerce-arbejdsprocessen ikke tillader en blandet leveringsmåde for varerne i indkøbsvognen (dvs. at nogle varer er valgt til levering, mens andre er valgt til afhentning). Funktionen **Hovedgebyrerne uden forholdsberegning** kræver, at flaget **Aktivér ensartet leveringsmåde i kanal** er aktiveret i Commerce-hovedkvarteret. Når funktionens flag er aktiveret, tilskrives der forsendelsesgebyrer enten på hovedniveauet eller linjeniveauet, afhængigt af konfigurationen i Commerce-hovedkvarteret.
 
 Fabrikam-temaet understøtter en blandet leveringsmåde, hvor nogle varer er valgt til levering, men andre er valgt til afhentning. I denne tilstand anvendes der forholdsberegning til forsendelsesgebyrer for alle varer, der er valgt til leveringsmåden for forsendelse. For at blandet leveringsmåde kan fungere korrekt, skal du først konfigurere funktionen **Hovedgebyrer med forholdsberegning** i Commerce Headquarters. Yderligere oplysninger om denne konfiguration finder du i [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md).
 
@@ -46,7 +41,7 @@ Hvis der gælder forsendelsesgebyrer for linjeelementer, kan de vises på indkø
 
 Følgende illustration viser et eksempel på et leveringsindstillingsmodul på en betalingsside.
 
-![Eksempel på et leveringsindstillingsmodul på en betalingsside](./media/ecommerce-deliveryoptions.PNG)
+![Eksempel på et leveringsindstillingsmodul på en betalingsside.](./media/ecommerce-deliveryoptions.PNG)
 
 ## <a name="delivery-options-module-properties"></a>Egenskaber for leveringsindstillingsmodul
 
@@ -55,6 +50,7 @@ Følgende illustration viser et eksempel på et leveringsindstillingsmodul på e
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valgfri overskrift til leveringsindstillingsmodulet. |
 | Brugerdefineret CSS-klassenavn | Tekst | Et brugerdefineret klassenavn for overlappende typografiark (CSS), der bruges til at gengive dette modul, hvis det er relevant. |
 | Indstilling til filtreret leveringstilstand | **Filtrér ikke** eller **Ingen forsendelsestilstand** | En værdi, der angiver, om leveringsindstillingsmodulet skal filtrere alle leveringsmåder, der ikke er forsendelser. |
+| Vælge en leveringsindstilling automatisk | **Filtrer ikke**, **Vælg leveringsindstilling automatisk og vis oversigt**, eller **Vælg leveringsindstilling automatisk og vis ikke oversigt** | Denne egenskab anvender automatisk den første tilgængelige leveringsindstilling i betalingstrinnet, uden at brugeren skal vælge den. Den skal kun bruges, hvis der er en tilgængelig leveringsindstilling. Denne egenskab understøttes fra frigivelsen af Commerce version 10.0.19. |
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Føje et leveringsindstillingsmodul til en betalingsside og angive de krævede egenskaber
 
@@ -82,4 +78,7 @@ Et leveringsindstillingsmodul kan kun føjes til et betalignsmodul. Du kan finde
 
 [Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer](pro-rate-charges-matching-lines.md)
 
-[Konfigurer leveringsmåder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Konfigurer leveringsmåder](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

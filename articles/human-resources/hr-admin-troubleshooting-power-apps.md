@@ -1,30 +1,30 @@
 ---
 title: Kan ikke oprette et miljø i Power Apps Administration
-description: I denne artikel beskrives det, hvad du skal gøre, hvis administratoren ikke kan oprette et miljø i Microsoft Power Apps Administration.
-author: andreabichsel
-manager: tfehr
-ms.date: 02/03/2020
+description: I dette emne beskrives, hvad du skal gøre, hvis administratoren ikke kan oprette et miljø i Microsoft Power Apps Administration.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec63148364022fe5b8c40d855856eec232af3e48
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 937b372fa95c8076666aed14c2b34b12e8029c4d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463954"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067698"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Kan ikke oprette et miljø i Power Apps Administration
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,7 +45,7 @@ Sørg for, at lejeradministratoren har tildelt en gyldig Power Apps P2-licens ti
 Bemærk, at forskellige Microsoft Office-SKU'er også giver rettigheden sammen med enkeltstående Power Apps Plan 2-SKU'er. Det vigtigste er, at der findes en af disse SKU'er.
 
 1. Gå til [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-2. Opret miljøerne ved at følge vejledningen i [Klargøre Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+2. Opret miljøerne ved at følge vejledningen i [Klargøre Human Resources](/dynamics365/unified-operations/talent/provisioning-talent).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

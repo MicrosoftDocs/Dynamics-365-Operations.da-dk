@@ -1,7 +1,7 @@
 ---
 title: Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
 description: I dette emne forklares, hvordan du kan integrere modulet Styring af aktiver i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for at udnytte Mixed Reality-hjælpelinjer i din service fra dag til dag og dine vedligeholdelsesarbejdsgange.
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344264"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568249"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Styring af aktiver) med Dynamics 365 Guides
+
+[!include [banner](../includes/banner.md)]
 
 Du kan integrere modulet **Styring af aktiver** i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for at udnytte Mixed Reality-guider i din service fra dag til og dine vedligeholdelsesarbejdsgange. Hvis der er knyttet en hjælpelinje til en arbejdsordre i Styring af aktiver, kan en arbejder, der åbner en arbejdsordres vedligeholdelsestjekliste i Supply Chain Management 365 (Dynamics 365)-mobilappen, se, at en hjælpelinje er tilgængelig. Arbejderen kan derefter finde og åbne hjælpelinjen i Dynamics 365 Guides HoloLens-appen.
 

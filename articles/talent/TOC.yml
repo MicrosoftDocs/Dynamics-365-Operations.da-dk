@@ -1,7 +1,9 @@
-- name: Dynamics 365 for Talent
-  href: talent-welcome.md
+- name: Ophør af Dynamics 365 Talent
+  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
-    - name: Introduktion
+    - name: Startside for Dynamics 365 Talent
+      href: ./index.md
+    - name: Start her
       items:
         - name: Kom i gang med Talent
           href: talent-get-started.md
@@ -151,7 +153,7 @@
         - name: Eksportere data fra Attract og Onboard
           href: attract-onboard-export-data.md
         - name: Integrere lærredsapps fra Power Apps
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Få support til Talent
           href: talent-support.md
     - name: Udstyre din organisation med Attract
@@ -224,9 +226,9 @@
           href: create-onboarding-experience.md
         - name: Hente Onboard-appen
           href: onboard-get-app.md
-        - name: Oprette og sende en onboardingguide
+        - name: Oprette og sende en Onboardingguide
           href: onboard-create-guide.md
-        - name: Oprette en onboardingskabelon
+        - name: Oprette en Onboardingskabelon
           href: onboard-create-template.md
         - name: Redigere guider og skabeloner
           href: onboard-edit-guides-templates.md

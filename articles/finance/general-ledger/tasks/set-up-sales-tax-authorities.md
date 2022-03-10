@@ -2,11 +2,9 @@
 title: Opsætte momsmyndigheder
 description: Momsmyndighederne er enheder, som opkrævet moms skal være indrapporteret og betalt til.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4847b5f3f50cc74c5b4854e1f0daedd64785baf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cbfc2e1afc7109e70851cbb8b4cb17ce44b2fc4d1946f95f382185b6ae1bb3e4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752145"
 ---
 # <a name="set-up-sales-tax-authorities"></a>Opsætte momsmyndigheder
 
@@ -40,3 +38,6 @@ Momsmyndighederne er enheder, som opkrævet moms skal være indrapporteret og be
 10. Angiv et tal i feltet Afrunding.
 11. Klik på Gem.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

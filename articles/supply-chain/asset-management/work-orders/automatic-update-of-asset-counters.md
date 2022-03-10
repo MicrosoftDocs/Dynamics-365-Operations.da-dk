@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15aea2f867de6f0bcf01ecfd046efc44581a1ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738289"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk opdatering af aktivtællere
 
@@ -49,7 +49,7 @@ Som nævnt ovenfor kan automatiske tællere opdateres fra produktionsregistrerin
 
     I illustrationen nedenfor vises et eksempel på dialogboksen **Opdater aktivtællere**.
 
-    ![Figur 1](media/12-work-orders.png)
+    ![Figur 1.](media/12-work-orders.png)
 
 5. Vælg **OK**. 
 
@@ -59,7 +59,7 @@ På siden **Aktivaggregeret værdi** kan du få en oversigt over den seneste reg
 
 I illustrationen nedenfor vises et eksempel på siden **Aktivaggregeret værdi**.
 
-![Figur 2](media/13-work-orders.png)
+![Figur 2.](media/13-work-orders.png)
 
 Vær opmærksom på følgende punkter:
 

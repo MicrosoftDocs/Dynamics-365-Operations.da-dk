@@ -1,7 +1,7 @@
 ---
 title: Genklassificer anlægsaktiver
-description: Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anlægsaktivgruppe eller tildele det et nyt anlægsaktivnummer i samme gruppe.
-author: saraschi2
+description: Dette emne indeholder en forklaring på processen til genklassificering af aktiver. Hvis du vil genklassificere et anlægsaktiv, skal du overføre det til en ny anlægsaktivgruppe eller tildele det et nyt anlægsaktivnummer i samme gruppe.
+author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7e689d5b02178758a8f850b3cd735f70898dbc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356721"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883640"
 ---
 # <a name="reclassify-fixed-assets"></a>Genklassificer anlægsaktiver
 

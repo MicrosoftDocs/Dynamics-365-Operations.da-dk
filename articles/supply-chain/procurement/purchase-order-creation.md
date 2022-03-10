@@ -1,12 +1,10 @@
 ---
 title: Opret indkøbsordrer
 description: I denne artikel beskrives den proces og de indstillinger, der gælder, når du opretter en indkøbsordre manuelt.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022275"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575506"
 ---
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
@@ -67,7 +65,7 @@ Nogle gange kan du opdele det antal, du har bestilt, så forskellige dele af det
 Gebyrer kan føjes automatisk til indkøbsordrelinjer, hvis der er oprettet automatiske gebyrer for kreditoren eller kreditorgebyrgruppen og for varen eller varegebyrgruppen. Dog mere typisk tilføjes gebyrer manuelt på ordrelinjeniveau. Når du vil tilføje et gebyr, skal du åbne siden **Vedligehold gebyrer** ved hjælp af handlingen **Vedligehold gebyrer** i menuen **Finans** i visningen **Linjer**. Fordelen ved at tilføje gebyrer direkte på ordrelinjeniveau er, at gebyret kan tildeles som en lageromkostning. Du kan konfigurere gebyrkoder til kontoproduktomkostninger ved at bruge debetindstillingen **Vare**. Disse typer af gebyrer, der skal fordeles fra indkøbsordrehovedets linjer, før ordren kan bekræftes. For eksempel kan du fordele gebyrer, der er baseret på antallet på hver linje. Gebyrkategorien påvirker også, hvordan gebyrer efterkalkuleres. For eksempel angiver faste gebyrer et fast beløb, og procentbaserede gebyrer beregnes som en procentdel af nettobeløbet for ordrelinjen. IO'er kan tildeles til en belastning, og belastningen kan indeholde et overslag over de forventede udgifter til transportomkostningerne. Du kan tildele denne udgift fra belastningen tilbage til IO-linjerne.
 
 ## <a name="purchase-order-actions"></a>Indkøbsordrehandlinger
-Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](../../fin-and-ops/get-started/action-search.md) til at finde det relevante menupunkt.  
+Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](../../fin-ops-core/fin-ops/get-started/action-search.md) til at finde det relevante menupunkt.  
 
 Du kan konfigurere produkter i ordren, så de får supplerende varer. Supplerende varer er varer, der skal eller kan købes sammen med andre produkter. Supplerende produkter kan tilføjes gratis, som ledsageprodukter, eller du vil muligvis kunne afgøre, om du vil føje til ordren eller ej. Når hver ordrelinje er tilføjet, kan du gennemse de supplerende varer. Dog vil det nok være mere praktisk at gennemgå og tilføje relevante supplerende varer til alle ordrelinjer ved hjælp af siden **Supplerende varer**, som du kan åbne fra handlingsruden.  
 
@@ -82,8 +80,7 @@ IO'er kan konfigureres til at kræve, at budgetmidler fordeles på ordren, før 
 
 Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du kræve yderligere oplysninger om produkter eller ydelser, eller du skal muligvis have tilladelse til forbruget. Der er flere måder at holde en ordre tilbage. For eksempel kan du vente med at bekræfte ordren. Hvis en arbejdsgang til ændringsstyring anvendes, skal du ikke sende ordren til godkendelse. Hvis du må blokere alle ordrer for en bestemt kreditor, kan du også markere kreditoren som **På hold**, for at der kan udføres behandling på kreditormasteren. Der findes også tilfælde, der kan forhindre, at ordren behandles. Behandling kan for eksempel være forhindret, hvis kreditmaksimum er overskredet, eller hvis de krævede budgetmidler ikke er tilgængelige.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over indkøbsordrer](purchase-order-overview.md)
 
@@ -95,3 +92,6 @@ Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

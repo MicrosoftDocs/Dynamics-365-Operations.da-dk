@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4c9c9463162f21cdaf40f1c4ed6d5ae51e97cb88
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773027"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Tilslutte et eksperiment og redigere variationer
 
@@ -28,7 +28,7 @@ Dette emne beskriver, hvordan du kan tilslutte dit eksperiment i Commerce og for
 
 I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate emner.
 
-[ ![Eksperimenteringens brugerrejse - tilslutte og redigere](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Eksperimenteringens brugerrejse - tilslutte og redigere.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Når du har [konfigureret dit eksperiment](experimentation-setup.md) i en tredjepartstjeneste, skal du tilslutte eksperimentet i Dynamics 365 Commerce og redigere eksperimentets variationer.
 

@@ -1,12 +1,10 @@
 ---
 title: Konfigurere udvidede logonfunktioner for MPOS og Cloud POS
 description: Dette emne dækker dine muligheder for at konfigurere udvidet logon til Cloud POS og Retail Modern POS (MPOS).
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ecb6f56f26133e7c46805500914e906b74e64df8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209095"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478665"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurere udvidet logonfunktionalitet for MPOS og Cloud POS
 
@@ -53,7 +51,7 @@ Når indstillingen **Logon med medarbejderkort kræver adgangskode** er aktivere
 
 ## <a name="assigning-an-extended-logon"></a>Tildele et udvidet logon
 
-Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, skal du gå til **Udvidet logon** i POS. Søg derefter efter en medarbejder ved at angive hans eller hendes operatør-id i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK** tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
+Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, skal du gå til **Udvidet logon** i POS. Søg derefter efter en medarbejder ved at angive vedkommendes operatør-id i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK** tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
 
 ## <a name="deleting-an-extended-logon"></a>Slette et udvidet logon
 
@@ -61,11 +59,13 @@ Hvis du vil slette det udvidede logon, der er tildelt til en medarbejder, søger
 
 ## <a name="extending-extended-logon"></a>Udvide udvidet logon
 
+Ved udvidet logon kan fem vigtige tegn være det entydige id uden for feltet. Hvis du f.eks. konfigurerer to kort med id'erne "1234567" og "1234578", anses de begge for at være "12345". Du kan bygge en filtype, der understøtter flere tegn. Detaljerede instruktioner finder du ved at kontrollere, hvordan du [udvider den udvidede logonfunktionalitet til MPOS og Sky POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+
 Logontjenesten kan udvides til at understøtte yderligere enheder med udvidet logon, f.eks. håndfladescannere. Yderligere oplysninger finder du i dokumentationen om POS-udvidelsesmuligheder.
 
 ## <a name="using-extended-logon"></a>Brug af udvidet logon
 
-Når Udvidet logon er konfigureret, og en medarbejder har fået tildelt en stregkode eller magnetstribe, skal medarbejderen har blot stryge eller scanne sit kort, mens POS-logonsiden vises. Hvis der også kræves en adgangskode, før logon kan fortsætte, kan medarbejderen indtaste sin adgangskode.
+Når Udvidet logon er konfigureret, og en medarbejder har fået tildelt en stregkode eller magnetstribe, skal medarbejderen blot stryge eller scanne sit kort, mens POS-logonsiden vises. Hvis der også kræves en adgangskode, før logon kan fortsætte, kan medarbejderen indtaste sin adgangskode.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

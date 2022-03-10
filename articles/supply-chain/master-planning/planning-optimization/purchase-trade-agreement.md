@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757752"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Varedisponering med handelsaftaler om indkøb
 
@@ -67,7 +67,7 @@ Når systemet er forberedt som beskrevet i forrige afsnit, skal du følge disse 
 1. Gentag denne procedure for hvert relevant produkt.
 
 > [!NOTE]
-> Valutaen i linjen på handelsaftalen om indkøb skal svare til valutaen for den valgte leverandør. Varedisponering omfatter kun oplysninger fra linjer i handelsaftaler om indkøb, hvor valutaen svarer til valutaen for leverandøren.
+> Planlægningsoptimering understøtter handelsaftaler for køb med flere valutaer. Når der søges efter en handelsaftale ved hjælp af indstillingen **Laveste enhedspris**, vil systemet overveje handelsaftalelinjer for køb med forskellige valutaer, forudsat at der er defineret en valutakurs mellem valutaen i handelsaftalelinjen og regnskabsvalutaen for den juridiske enhed. Ellers ignoreres handelsaftalelinjen, og du vil få vist en fejl under varedisponering. Varedisponering vil derfor indeholde oplysninger fra alle relevante handelsaftalelinjer for køb, hvor priser kan omregnes til regnskabsvalutaen. Det er vigtigt at bemærke, at der ikke tages højde for afrundingsregler under prisomregningen for samhandelsaftalen.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Eksempler på, hvordan planlægningsoptimering finder leverandør og leveringstider
 
@@ -75,14 +75,14 @@ Følgende tabel indeholder eksempler, der viser, hvordan forskellige indstilling
 
 | Frigivet produkt: Leverandør | Standardindstillinger for ordre: Leveringstid | Varedisponering: Tilsidesæt leverandør | Varedisponering: Tilsidesæt leveringstid | Handelsaftale: Leverandør | Handelsaftale: Leveringstid | Handelsaftale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Ingen | Ingen | US003 | 3 | Ingen | **US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Ingen | **US002** | **2** |
-| *(Tom)* | 1 | Ingen | Ingen | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
-| *(Tom)* | ***1** _ | Ingen | Ingen | _*_US003_*_ | 3 | Ja | **US003** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Ingen | US003 | 3 | Ingen | **US002** | **1** |
-| *(Tom)* | 1 | Ingen | Ja: 2 | ***US003** _ | _*_3_*_ | Ingen | **US003** | **3** |
-| *(Tom)* | 1 | Ingen | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nej | Nej | US003 | 3 | Nej | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nej | _ *US002** | **2** |
+| *(Tom)* | 1 | Nej | Nej | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | ***1** _ | Nej | Nej | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | 1 | Nej | Ja: 2 | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | 1 | Nej | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

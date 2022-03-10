@@ -2,16 +2,13 @@
 title: Konfigurere og arbejde med callcenterordrer på hold
 description: I dette emne beskrives, hvordan du kan arbejde med ordrer på hold ved hjælp af Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762590"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbejde med callcenter-ordrer på hold
 
@@ -56,7 +53,7 @@ Når holdoplysningerne er angivet og gemt, kan brugeren lukke siden **Ordrer på
 
 Hvis flaget **Aktivér ordrefuldførelse** er aktiveret i callcenterkanalen, skal betaling ikke nødvendigvis anvendes på en ordre, der er sat på hold. Ved en salgsordre, der ikke er sat på hold, kan brugerne derimod ikke forlade indtastningssiden, før betalingen er foretaget. Betalingen skal naturligvis foretages, før spærringen af ordren ophæves.
 
-Desuden kan callcenterbrugere sætte manuel svindelhold på ordrer, der af en eller anden grund er mistænkelige. Ordrer kan også sættes på hold automatisk, når de matcher aktive svindelkriterier og -regler. Du kan finde flere oplysninger om denne type ordrehold i [Konfigurere advarsler om svindel](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Desuden kan callcenterbrugere sætte manuel svindelhold på ordrer, der af en eller anden grund er mistænkelige. Ordrer kan også sættes på hold automatisk, når de matcher aktive svindelkriterier og -regler. Du kan finde flere oplysninger om denne type ordrehold i [Konfigurere advarsler om svindel](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Visning og styring af ordrer, der er sat på hold
 
@@ -103,3 +100,6 @@ Hvis brugeren vil fjerne en spærring, men foretage flere ændringer af ordren, 
 ## <a name="reporting-options"></a>Rapporteringsindstillinger
 
 Gå til **Retail og Commerce** \> **Forespørgsler og rapporter** \> **Call center-rapporter** \> **Rapport over ordrer på hold** for at køre en rapport om ordrehold efter datointerval, holdkode eller andre relaterede kriterier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

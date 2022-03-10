@@ -1,29 +1,26 @@
 ---
 title: Oprette serviceobjektrelationer
 description: I dette emne beskrives, hvordan du opretter serviceobjektrelationer for en serviceaftale og en serviceordre.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 352d3b790da340102b7dbe116d9deeb2f3cbfc4e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a558d513ba97d7df72ee785704b84dd38a5929b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424817"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569113"
 ---
 # <a name="create-service-object-relations"></a>Oprette serviceobjektrelationer 
 
@@ -72,3 +69,6 @@ Brug følgende trin til at oprette en serviceobjektrelation for en serviceordre:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

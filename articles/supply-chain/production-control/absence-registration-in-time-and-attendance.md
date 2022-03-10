@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730220"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Fraværsregistrering i Tid og fremmøde
 
@@ -31,7 +31,7 @@ I dette emne beskrives begreberne for fravær, og det forklares, hvordan du hån
 
 Arbejdere betragtes som fraværende i alle timer, hvor de ikke arbejder i deres almindelig arbejdstid. Almindelig arbejdstid er defineret i en arbejders profil for normaltid.
 
-En arbejder har f.eks. arbejde på en dagprofil, der har mødetid 7.00 og sluttid 15.00. Hvis arbejderen møder 9.00, betragtes han fraværende fra 7.00 til 9.00 på den pågældende dag.
+En arbejder har f.eks. arbejde på en dagprofil, der har mødetid 7.00 og sluttid 15.00. Hvis arbejderen møder 9.00, betragtes arbejderen fraværende fra 7.00 til 9.00 på den pågældende dag.
 
 I så fald bliver arbejderne bedt om at angive en årsag til deres fravær. De kan angive en årsag ved at vælge en fraværskode.
 
@@ -101,7 +101,7 @@ Tidsregistreringer for arbejderen skal beregnes og godkendes, før de kan overf�
 
 En godkender kan ændre en arbejders tidsregistreringer. Godkenderen kan desuden ændre ethvert fravær, som arbejderen har registreret. Hvis godkenderen manuelt angiver en tidsperiode, der har en fraværskode, tilsidesættes fraværskoden for den pågældende periode ikke af standardfraværskoden fra parametrene i Tid og fremmøde.
 
-En arbejder stempler f.eks. ind 10.00 og vælger en fraværskode, der angiver, at hun er forsinket. Senere fortæller arbejderen sin arbejdsleder, at hun havde en lægeaftale fra 8.00 til 10.00. En lægeaftale bør ikke føre til et fradrag i arbejderens løn. I dette tilfælde kan arbejdslederen derfor justere to timers fravær fra 8.00 til 10.00 ved manuelt at angive en fraværskode, der angiver sygdom i to timer.
+En arbejder stempler f.eks. ind 10.00 og vælger en fraværskode, der angiver, at arbejderen er forsinket. Senere fortæller arbejderen sin arbejdsleder, at det skyldtes en lægeaftale fra 8.00 til 10.00. En lægeaftale bør ikke føre til et fradrag i arbejderens løn. I dette tilfælde kan arbejdslederen derfor justere to timers fravær fra 8.00 til 10.00 ved manuelt at angive en fraværskode, der angiver sygdom i to timer.
 
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkende fravær
 

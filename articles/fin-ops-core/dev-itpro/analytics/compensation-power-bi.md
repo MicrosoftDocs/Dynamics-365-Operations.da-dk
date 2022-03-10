@@ -1,12 +1,10 @@
 ---
 title: Power BI-indhold til kompensation
-description: I dette emne beskrives Power BI-indhold til kompensation. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives Power BI-indhold til kompensation. Det forklarer, hvordan du får adgang til rapporterne, og giver oplysninger om datamodellen.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 549111dab1b6d3b66567801ae787a680a04b18e20e286e1a59d1ab388bf2a4f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763590"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-indhold til kompensation
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Microsoft Power BI-indhold til **Kompensation**. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives **kompensation** i Microsoft Power BI-indhold til. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Kompensation** vises i arbejdsområdet **Kompensationsstyring**, hvis du bruger et af følgende produkter:
@@ -71,3 +69,6 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Kompen
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, kompensation, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, job, ansættelse, job, frynsegoder |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

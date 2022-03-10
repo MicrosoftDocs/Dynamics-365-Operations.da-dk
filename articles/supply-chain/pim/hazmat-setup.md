@@ -1,7 +1,7 @@
 ---
 title: Konfigurere farlige materialer
 description: Dette emne forklarer, hvordan du kan konfigurere de data, der kræves for at klassificere varer som farlige materialer. Når du opretter en salgsordre, der indeholder en vare, der er klassificeret som farligt materiale, genererer systemet dokumentation til farligt materiale for den pågældende salgsordre, når den leveres.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 5cf323272926936ba6397a9f98cfff8d8a31d091
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820340"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778003"
 ---
 # <a name="set-up-hazardous-materials"></a>Konfigurere farlige materialer
 
@@ -27,7 +27,7 @@ Hvis du vil bruge funktionalitet til farlige materialer, skal du først konfigur
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Aktivere funktionen til farligt materiale for systemet
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
 
 - **Modul:** *Administration af produktoplysninger*
 - **Funktionsnavn:** *Produktoplysninger om farligt materiale og forsendelsesdokumentation*

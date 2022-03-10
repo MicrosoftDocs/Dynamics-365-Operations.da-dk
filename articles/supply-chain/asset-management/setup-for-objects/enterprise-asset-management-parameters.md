@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8df8e6204e9c64305387e6aed304142d7f13b33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808322"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105483"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -49,7 +49,7 @@ Fanen **Arbejdsordrer** indeholder følgende indstillinger:
 - **Standardarbejdsordretype** definerer standardindstillinger, når der oprettes en arbejdsordre.  
 - **Forebyggende arbejdsordretype** definerer den arbejdsordretype, der bruges ved oprettelse af arbejdsordrer ud fra vedligeholdelsesplaner. Hvis feltet ikke udfyldes, bruges arbejdsordretypen i feltet **Standardarbejdsordretype**.  
 - I feltet **Relateret arbejdsordremaske** definerer du det maksimale antal arbejdsordrer, der kan relateres til en arbejdsordre. Eksempelvis giver ## dig mulighed for at have op til 99 relaterede arbejdsordrer. Hvis du definerer en maske som beskrevet her, nummereres relaterede arbejdsordrer [arbejdsordre-id for den arbejdsordre, som en arbejdsordre er relateret til] -01, -02, -03 osv. Hvis du ikke definerer en maske i dette felt, får en relateret arbejdsordre det næste sekventielle arbejdsordre-id.  
-- Vælg **Ja** for **Kopiér fejl**, hvis du automatisk vil kopiere fejl, der er registreret på arbejdsordrer, til relaterede vedligeholdelsesanmodninger. 
+- Vælg **Ja** for **Kopiér fejl**, hvis du automatisk vil kopiere fejl, der er registreret på vedligeholdelsesanmodninger til relaterede arbejdsordrer. 
 - I feltet **Niveau** skal du definere det arbejdsstedsniveau, der automatisk indsættes på en arbejdsordre, hvis alle relaterede arbejdsordrejob refererer til det samme arbejdssted. Hvis arbejdsordrens job ikke alle er relateret til det samme arbejdssted på det definerede niveau, er feltet **Arbejdssted** tomt i arbejdsordren. Hvis du f.eks. indsætter tallet "1" i dette felt, er det øverste niveau i en arbejdsstedsstruktur. Hvis du indsætter tallet "0" i dette felt, har du ikke defineret et bestemt arbejdsstedsniveau, kun at alle arbejdsordrejob på en arbejdsordre skal relateres til det samme arbejdssted, for at dette arbejdssted kan føjes til arbejdsordren.  
 - Kladder, der bruges ved bogføring af forbrug på en arbejdsordre, kan vælges i oversigtspanelet **Generelt** i felterne **Time**, **Vare** og **Udgift**.  
 - I feltet **Produktsprogkilde** skal du vælge, hvilket sprog der skal bruges til produktnavne i Styring af aktiver-rapporter. Du kan vælge det sprog, der er angivet på firmakontoen, eller det sprog, der er angivet for den bruger, som aktuelt er logget på.  
@@ -99,7 +99,7 @@ De felter, der er beskrevet i følgende liste, relaterer alle til beregnede rang
 
 ## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
-Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæftede filer i forbindelse med en arbejdsordrerapport. Dette gøres ved at vælge en dokumenttype i sektionen **Tilgængelig** og vælge ![fremadrettet pil](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, skal du vælge dokumenttypen i sektionen **Valgt** og vælge ![tilbage-pil](media/16-setup-for-objects.png).
+Vælg de dokumenttyper, der skal være tilgængelige for udskrivning af vedhæftede filer i forbindelse med en arbejdsordrerapport. Dette gøres ved at vælge en dokumenttype i sektionen **Tilgængelig** og vælge ![fremadrettet pil.](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, skal du vælge dokumenttypen i sektionen **Valgt** og vælge ![tilbage-pil](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 

@@ -2,11 +2,9 @@
 title: Vælge datamodeldefinitioner, når du opretter formater
 description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 34e6c8df735976ca0f7805fe3e06f141d38abf12faf02ff66195339147aa5405
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684205"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720826"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Vælge datamodeldefinitioner, når du opretter formater
 
@@ -98,3 +96,6 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
     * Bemærk, at der nu kun findes ét rodelementet, som kan tilknyttes programdatakilderne. Når der introduceres mindst én modeltilknytning, er det kun modellens rodelementer, som er knyttet til programdatakilder, der kan vælges som modeldefinition, mens ER-formatet er tilføjet.   
 5. Luk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

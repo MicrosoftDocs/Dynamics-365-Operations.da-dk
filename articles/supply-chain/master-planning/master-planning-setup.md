@@ -1,12 +1,10 @@
 ---
 title: Definere varedisponering
 description: I dette emne beskrives forskellige vigtige strategier og parametre, der bruges til definition af varedisponering.
-author: t-benebo
-manager: tfehr
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 5e71cfd451a51a5dabd12419541202ecc39df631
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999950"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580714"
 ---
 # <a name="set-up-master-planning"></a>Definere varedisponering
 
@@ -108,11 +106,11 @@ For hver af planerne i oversigtspanelet **Generelt** på siden **Behovspalner** 
 
 ### <a name="operations-scheduling"></a>Grovplanlægning
 
-Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid. Grovplanlægning udfolder ikke operationerne til produktionsruten i job. Yderligere oplysninger om grovplanlægning finder du under [Grovplanlægning](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid. Grovplanlægning udfolder ikke operationerne til produktionsruten i job. Yderligere oplysninger om grovplanlægning finder du under [Grovplanlægning](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Finplanlægning
 
-Finplanlægning er en mere detaljeret planlægningsmetode, hvor hver operation inddeles i de enkelte opgaver eller job. Finplanlægning indeholder oplysninger om kapaciteten. Den bruges typisk til at planlægge individuelle job i produktionen til en aktuel eller kortsigtet tidsramme. Yderligere oplysninger om finplanlægning finder du under [Finplanlægning](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Finplanlægning er en mere detaljeret planlægningsmetode, hvor hver operation inddeles i de enkelte opgaver eller job. Finplanlægning indeholder oplysninger om kapaciteten. Den bruges typisk til at planlægge individuelle job i produktionen til en aktuel eller kortsigtet tidsramme. Yderligere oplysninger om finplanlægning finder du under [Finplanlægning](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Tidshorisonter i dage
 
@@ -160,7 +158,7 @@ Handlingsmeddelelser foreslår ændringer, der kan foretages i den eksisterende 
 
 Hvis du angiver indstillingen **Handlingsmeddelelse** til **Ja**, kan du tilsidesætte den handlingsmeddelelsestidshorisont, der er defineret for varen ved behovsplanlægning. I dette tilfælde skal du angive det antal dage, hvor behovsplanlægningen skal opretter handlingsmeddelelser for behov. Handlingsmeddelelsestidshorisonten beregnes fremad fra den aktuelle dato.
 
-Du kan finde flere oplysninger om handlingsmeddelelser under [Handlingsmeddelelser](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Du kan finde flere oplysninger om handlingsmeddelelser under [Handlingsmeddelelser](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Beregningen af handlingsmeddelelser medfører en længere kørselstid for varedisponering. Hvis handlingsmeddelelser ikke regelmæssigt analyseres og anvendes (dagligt, ugentligt osv.), skal du overveje at deaktivere beregningen under kørslen af varedisponeringen. Hvis du vil deaktivere beregningen fra, skal du på siden **Behovsplaner** angive tidshorisonten for **Handlingsmeddelelse** til **0** (nul) for den behovsplan, du kører. Kontroller også, at indstillingen **Handlingsmeddelelser** er slået fra for alle disponeringsgrupper.
@@ -225,4 +223,7 @@ Leveringstid + negative dage + dags dato – behovsdato
 
 Systemet bruger kun de planlagte forsyningsordrer, der ligger inden for denne tidshorisont, og opretter et nyt ordreforslag uden for det. Fordelen ved dynamiske negative dage er, at det vil medtage det enkelte produkts leveringstid for at genbruge eksisterende ordrer og undgå at oprette nye ordreforslag, der vil blive afsluttet på en dag i fremtiden på grund af forsinkelser, der skyldes leveringstidspunktet. 
 
-Du kan finde flere oplysninger [Negative dage og dynamiske negative dage](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Du kan finde flere oplysninger [Negative dage og dynamiske negative dage](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

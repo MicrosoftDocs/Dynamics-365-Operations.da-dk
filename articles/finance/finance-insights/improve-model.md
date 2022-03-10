@@ -1,5 +1,5 @@
 ---
-title: Gøre forudsigelsesmodellen bedre (prøveversion)
+title: Forbedre forudsigelsesmodellen
 description: I dette emne beskrives funktioner, som du kan bruge til at forbedre ydeevnen i forudsigelsesmodeller.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 0bf4dd0f7edc528393af628eb3776c32957c459d3eaa166b0bc54d9318b54916
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768789"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595031"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Gøre forudsigelsesmodellen bedre (prøveversion)
+# <a name="improve-the-prediction-model"></a>Forbedre forudsigelsesmodellen
 
 [!include [banner](../includes/banner.md)]
 
@@ -75,6 +75,6 @@ Følgende felt skal ikke vælges til oplæring:
 
 Du kan filtrere de fakturaer, der bruges til kurser, ved at angive filtreringskriterier for felter på fakturaen eller i kundetabellerne. Du kan for eksempel angive en grænseværdi, så den kun medtager fakturaer, hvor totalen er lig med eller overstiger et bestemt beløb. Du kan også udelukke fakturaer, der er knyttet til kunder i en bestemt kundegruppe.
 
-Du kan finde flere oplysninger om filtrering af dataene under [Oprette en forudsigelsesmodel](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Du kan finde flere oplysninger om filtrering af dataene under [Oprette en forudsigelsesmodel](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

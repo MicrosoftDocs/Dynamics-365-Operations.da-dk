@@ -1,26 +1,28 @@
 ---
 title: Startside for budgetplanlægning
 description: Dette emne indeholder en oversigt over budgetplanlægsningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner i Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 08/09/2017
-ms.topic: index-page
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 049388c66fae193d2e7f8758e8965634a97428ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822101"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983946"
 ---
 # <a name="budgeting-home-page"></a>Startside for budgetplanlægning
 
@@ -28,12 +30,11 @@ ms.locfileid: "5822101"
 
 Dette emne indeholder en oversigt over budgetplanlægningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner. 
 
-<a name="components-of-budgeting-functionality"></a>Komponenter til budgetplanlægningsfunktionalitet
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Komponenter til budgetplanlægningsfunktionalitet
 
 Ressourceplanlægningens cyklus for en virksomhed består typisk af planlægning, budgetplanlægning og prognoseaktiviteter.
 
-[![Komponenter til budgetplanlægningsfunktionalitet](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Komponenter til budgetplanlægningsfunktionalitet.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Processerne for både langsigtet strategisk planlægning og årlig budgetplanlægning understøttes via et budgetplandokument. Budgetplansdokumenter er tæt integreret med Microsoft Excel. Brugerne kan konfigurere ubegrænsede monetære og kvantitative scenarier og definere et organisationshierarki for budgetplanlægning for at understøtte budgetplanlægningsmetoder oppefra og ned og nedefra og op. Når et budget er oprettet og godkendt i ansøgningen, kan du konvertere budgetplanen til en budgetregisterpost. Budgetregisterposter indeholder værktøjer til vedligeholdelse af budgettet og til at opbevare beløb, der kan spores gennem budgetkoder. Med budgetregisterposter kan du revidere oprindelige budgetter, foretage overførsler og overføre budgetbeløb fra det foregående år. Baseret på det budget, der er etableret, kan en virksomhed aktivere budgetstyring. Kontrolniveauet afhænger af organisationskulturen og organisationens forfaldsniveau. Organisationer, der har et lavt forfaldsniveau, kan lade budgettet være "som det er" og måske være mere reaktive end proaktive, hvis et budget ikke lever op til forventningerne. Andre organisationer kan aktivere politikker for budgetstyring, der forhindrer brugere i at købe noget, hvis der ikke er tilgængelige midler i budgettet.
 
@@ -47,7 +48,7 @@ Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor m
 -   [Budgetplanlægningsskabeloner til Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgetplanlægningsværktøjer
-[![Budgetplanlægningsværktøjer](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budgetplanlægningsværktøjer.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Yderligere planlægnings- og budgetplanlægningsfunktioner er tilgængelige og er integreret med finansbudgetter.
 

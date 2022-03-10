@@ -1,7 +1,7 @@
 ---
 title: Arbejdsgang for kunde
 description: Dette emne indeholder oplysninger om arbejdsgangen for kunden. Du kan ændre bestemte felter for en kunde og derefter sende ændringerne til godkendelse ved hjælp af arbejdsgangen, inden de føjes til kunden.
-author: mikefalkner
+author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 208c2a422d130e076b7b31721328e95e0c514b015d2fc047b9ea613d03b8ce12
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728883"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753820"
 ---
 # <a name="customer-workflow"></a>Arbejdsgang for kunde
 

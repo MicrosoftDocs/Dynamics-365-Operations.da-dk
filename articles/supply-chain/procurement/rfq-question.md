@@ -1,27 +1,25 @@
 ---
 title: Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 description: Leverandører, der har spørgsmål til en RFP, kan sende deres spørgsmål og læse svarene på siden til **Kreditorsamarbejde**.
-author: velofog
-manager: tfehr
+author: Henrikan
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQVendQuestionAnswer
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 51b7c6de78eeb34f09c636c3e6ebbad828fc538e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 80ec7ae9e345f20344b48de39111532a9896b38d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237363"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777754"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
@@ -33,7 +31,7 @@ Brugerne kan udgive svar på leverandørspørgsmål mere end én gang. Kreditore
 
 ## <a name="turn-on-the-feature"></a>Slå funktionen til
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
 
 - **Modul:** *Indkøb og forsyning*
 - **Funktionsnavn:** *Spørgsmål og svar vedrørende tilbudsanmodninger*

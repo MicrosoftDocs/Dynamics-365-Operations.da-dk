@@ -3,7 +3,7 @@ title: Indsigt i debitorbetaling (prøveversion)
 description: I dette emne beskrives muligheden for indsigt i betalinger, der hjælper med at forbedre forståelsen af individuelle kunders typiske betalingsmetoder. Funktionen kan hjælpe dig med at identificere de omstændigheder, der berettiger start af indsamlingsprocesser tidligere end det, du måtte have udført.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737767"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983996"
 ---
 # <a name="customer-payment-insights-preview"></a>Indsigt i debitorbetaling (prøveversion)
 
@@ -69,7 +69,7 @@ Send email til [Customer payment insights (prøveversion)](mailto:fiap@microsoft
 
 ## <a name="privacy-notice"></a>Privatlivserklæring
 
-Forhåndsvisning (1) kan eksempler (1) anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance and Operations-tjeneste, (2) de er ikke inkluderet i serviceniveauaftalen for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
+Prøveversioner (1) kan anvende mindre beskyttelse af personlige oplysninger og sikkerhedsforanstaltninger end Dynamics 365 Finance og driftstjeneste, (2) de er ikke inkluderet i serviceniveauaftalen for denne tjeneste, (3) de må ikke bruges til at behandle personaleoplysninger eller andre data, der er underlagt lovgivning eller overholdelse af lovmæssige krav, og (4) de har begrænset support.
 
 
 

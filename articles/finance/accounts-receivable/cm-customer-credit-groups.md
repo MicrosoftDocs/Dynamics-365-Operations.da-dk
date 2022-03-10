@@ -1,12 +1,10 @@
 ---
 title: Kundekreditgrupper
 description: Dette emne indeholder oplysninger om arbejdsgangen for kundekreditgrupper.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb17a94cd4a472ad609a0c2f688c4a700f072072
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c8a007dcaaa9e10ab36dd3a7d0f80dd49b8e4d63
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979108"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753844"
 ---
 # <a name="customer-credit-groups"></a>Kundekreditgrupper
 
@@ -38,3 +36,6 @@ Du kan oprette kundekreditgrupper på siden **Kundekreditgrupper** (**Kreditstyr
 Når du er færdig med at oprette en kundekreditgruppe, kan du føje debitorer til den ved at angive deres juridiske enhed og kundekonto-id'et. Når du føjer en ny kunde til en kundekreditgruppe, søger systemet efter den samme kundekonto på tværs af alle juridiske enheder, og du bliver bedt om at føje den til kundekreditgruppen.
 
 Brug menuen **Aldersfordelte saldi** til at få vist detaljer om den aldersfordelte saldo for alle fakturakunder i en kundekreditgruppe. På siden **Aldersfordelt saldo** vises en oversigt over aldersfordelte saldi for debitorkontiene på fakturaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

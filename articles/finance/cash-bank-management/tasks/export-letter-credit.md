@@ -2,11 +2,9 @@
 title: Eksportér remburs
 description: Denne procedure fører dig gennem processen med at eksportrembursen.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 127f38e7db0a8c0703fd95274f45ff4ca49c131e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 87bcf161e385b66ad725fc0fd915368ed3120a1573d780bebfb48ff73cce7847
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766307"
 ---
 # <a name="export-letter-of-credit"></a>Eksportér remburs
 

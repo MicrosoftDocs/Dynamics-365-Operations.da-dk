@@ -1,39 +1,36 @@
 ---
 title: Synkronisere produkter direkte fra Supply Chain Management med produkter i Sales
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere produkter fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527308"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062457"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synkronisere produkter direkte fra Supply Chain Management med produkter i Sales
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!NOTE]
-> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere produkter direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
@@ -41,7 +38,7 @@ I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at
 
 Kundeemnet til kontant-løsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Supply Chain Management og Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data om konti, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Supply Chain Management og Sales. I følgende illustration vises, hvordan data synkroniseres mellem Supply Chain Management og Sales.
 
-[![Dataflow i kundeemne til kontant](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflow i kundeemne til kontant.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
@@ -80,7 +77,7 @@ Eksternt vedligeholdte produkter føjes automatisk til den første gyldige prisl
 
 > [!NOTE]
 > - Produktsynkronisering lykkes ikke, medmindre der er en prisliste, der har en tilsvarende valuta.
-> - Du kan styre den anvendte prisliste til integrationen ved at tilknytte pricelevelid.name [standardprisliste (navn)] i dataintegrationsprojektet. Inputtet skal skrives med små bogstaver. For eksempel vil standarden for en prisliste i Sales, der hedder 'Standard', være: Destinationsfelt: pricelevelid.name [standardprisliste (navn)] og tilknytningstype: [ { "transformType": "Default", "defaultValue": "standard" } ].
+> - Du kan styre den anvendte prisliste til integrationen ved at tilknytte pricelevelid.name [standardprisliste (navn)] i dataintegrationsprojektet. Inputtet skal skrives med små bogstaver. For eksempel vil standarden for en prisliste i Sales, der hedder 'Standard', være: Destinationsfelt: pricelevelid.name [standardprisliste (navn)] og tilknytningstype: [ { "transformType": "Standard", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Betingelserne og tilknytningsopsætning
 
@@ -107,7 +104,7 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 > [!NOTE]
 > Tilknytningen viser, hvilke oplysninger der synkroniseres fra Sales til Supply Chain Management.
 
-![Skabelontilknytning i dataintegrator](./media/products-direct-template-mapping-data-integrator-1.png)
+![Tilknytning af skabelon i dataintegrator.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Relaterede emner
@@ -124,3 +121,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Politik for omkostningstotaler og beregning af fast omkostning
 description: Dette emne indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b71dc9b5394ee35b76ead292b72951ece0d1d03d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779950"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -46,11 +44,11 @@ For at undgå disse virkninger kan du i Omkostningsregnskab konfigurere omkostni
 
 Forestil dig, at en organisation har følgende struktur med 4 bærere.
 
-![Eksempel på en organisationsstruktur](./media/dimension-hierarchy-org.png)
+![Eksempel på en organisationsstruktur.](./media/dimension-hierarchy-org.png)
 
 **Dimension for omkostningsobjekt**
 
-| Bærere | Beskrivelse          |
+| Bærere | Betegnelse          |
 |--------------|-----------|
 | CC001        | HR        |
 | CC002        | Finans   |
@@ -71,7 +69,7 @@ Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan ko
 
 | Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | Nr.                    |
+| Organisation             | Bærere | Klassifikationshierarki for dimension | Nej                    |
 
 **Dimensionshierarki**
 
@@ -151,8 +149,7 @@ Regler for omkostningsfordeling kan konfigureres på følgende måde.
 | CC001                                | Samlet         | **HR-tjenester**        |
 | CC002                                | Samlet         | **Finansielle tjenester** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan omkostninger flyder mellem bærere 
 
 Hvis du vil vide, hvordan omkostninger flyder mellem bærerne i organisationen, kan du oprette omkostningselementer af typen **Sekundær** for hver bærer. Disse omkostningselementer kan derefter bruges til at overføre saldi mellem bærerne under beregningen af faste omkostninger.
 

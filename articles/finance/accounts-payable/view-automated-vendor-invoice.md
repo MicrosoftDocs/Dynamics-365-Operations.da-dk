@@ -2,11 +2,9 @@
 title: Se automatiseringsresultater for kreditorfaktura (prøveversion)
 description: Dette emne forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces.
 author: abruer
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b87af4c64f8021a1b23cca5d8f38ac21c8efbd4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e7ec69177cdb4f6304b75016963f4111bbfde6ed975d66ffa702426a68dce640
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728955"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Få vist resultater af automatisering af kreditorfaktura
 

@@ -1,12 +1,10 @@
 ---
 title: Vedligeholdelsesanmodningsrapporter
 description: Dette emne forklarer, hvordan du opretter vedligeholdelsesanmodningsrapporter i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9e10327ad65b712cf7713eb3e25713ac5dae950e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773603"
 ---
 # <a name="maintenance-request-reports"></a>Vedligeholdelsesanmodningsrapporter
 
@@ -43,7 +41,7 @@ Rapporten **Detaljer for vedligeholdelsesanmodning** viser forskellige oplysning
 
 I følgende illustration vises et eksempel på rapporten **Detaljer for vedligeholdelsesanmodninger**.
 
-![Rapporten Detaljer for vedligeholdelsesanmodninger](media/09-manage-maintenance-requests.png)
+![Rapporten Detaljer for vedligeholdelsesanmodninger.](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Opret en listerapport for vedligeholdelsesanmodninger
 
@@ -56,7 +54,7 @@ Rapporten **Vedligeholdelsesanmodningsliste** viser en liste over alle vedligeho
 
 I følgende illustration vises et eksempel på rapporten **vedligeholdelses anmodnings liste** for alle aktive reparations anmodninger.
 
-![Listerapport over vedligeholdelsesanmodninger](media/10-manage-maintenance-requests.png)
+![Listerapport over vedligeholdelsesanmodninger.](media/10-manage-maintenance-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

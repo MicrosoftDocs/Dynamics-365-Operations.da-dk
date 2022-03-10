@@ -1,33 +1,35 @@
 ---
-title: Politikker for frynsegodeberettigelse
-description: Denne artikel indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Politikker for personalegodeberettigelse
+description: Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: fd4def17bf60ae2812927221c45547c5ac379f2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e1f64a0beffe12f6b4e0ad53d3bbaa96822dc7e8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4417726"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066037"
 ---
-# <a name="benefit-eligibility-policies"></a>Politikker for berettigelse til frynsegoder
+# <a name="benefit-eligibility-policies"></a>Politikker for personalegodeberettigelse
 
-Denne artikel indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
 
 Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige for hvilke medarbejdere. I følgende tabel vises eksempler på fordele, som du kan gøre tilgængelige for bestemte medarbejdere.
 
@@ -49,3 +51,6 @@ Du kan definere omfanget af reglen i politikken. For eksempel, hvis du opretter 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

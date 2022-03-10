@@ -1,34 +1,31 @@
 ---
-title: Opdater den sammensatte enhed Bankkladde
-description: Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
-author: ShylaThompson
-manager: panolte
+title: Opdatere den sammensatte bankkladdeenhed
+description: Dette emne indeholder en list over de trin, der skal bruges til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec196600a54a2aed4565cf422dc386d6646ff524
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0d4334e9aa333aad116f0a0291d9175268661f11
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441424"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595428"
 ---
-# <a name="update-the-bank-journal-composite-entity"></a>Opdater den sammensatte enhed Bankkladde
+# <a name="update-the-bank-journal-composite-entity"></a>Opdatere den sammensatte bankkladdeenhed
 
 [!include [banner](../includes/banner.md)]
 
-Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
+Dette emne indeholder en list over de trin, der skal bruges til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
 
 Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
 
@@ -55,3 +52,6 @@ Brug følgende trin til at føje det ekstra felt BankTransactionType til den sam
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

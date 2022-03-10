@@ -12,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344140"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778251"
 ---
 # <a name="work-split"></a>Arbejdsopdeling
+
+[!include [banner](../includes/banner.md)]
 
 Med arbejdsopdelingsfunktionen kan du opdele store arbejds-id'er (dvs. arbejdsordrer med flere linjer) i flere mindre arbejds-id'er, som du derefter kan tildele til flere lagermedarbejdere. På denne måde kan det samme arbejdsnummer plukkes samtidig af flere lagermedarbejdere.
 
@@ -31,9 +33,9 @@ Med arbejdsopdelingsfunktionen kan du opdele store arbejds-id'er (dvs. arbejdsor
 
 Før du kan bruge funktionen til opdeling af arbejde, skal du aktivere funktionen og dens forudsætning i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov.
 
-Først skal du aktivere den forudsætningsfunktionen *Blokering af arbejde i hele organisationen*, hvis den ikke allerede er aktiveret. I arbejdsområdet **Funktionsstyring** vises denne funktion på følgende måde:
+Først skal du aktivere den forudsætningsfunktionen *Blokering af arbejde i hele organisationen*, hvis den ikke allerede er aktiveret. Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen. I [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) vises funktionen dog stadig på følgende måde:
 
-- **Modul:** *Lokationsstyring*
+- **Modul:** *Warehouse Management*
 - **Funktionsnavn:** *Blokering af arbejde i hele organisationen*
 
 > [!NOTE]

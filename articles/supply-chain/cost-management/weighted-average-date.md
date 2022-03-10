@@ -2,11 +2,9 @@
 title: Gennemsnitskostdato
 description: Gennemsnitskostdato er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor lagerafgange værdisættes til den gennemsnitlige værdi af de varer, der modtages på lageret, for hver enkelt dag i lagerlukningsperioden.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f82a7b9f21d27ff368bc7c5824055bf29ce20e8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235478"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572019"
 ---
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
@@ -41,7 +39,7 @@ Vægtet gennemsnit = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 +
 
 Under lagerlukning udføres beregningen dagligt gennem lukningsperioden, som vist i nedenstående illustration. 
 
-![Daglig beregningsmodel med vægtet gennemsnit ud fra dato](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Daglig beregningsmodel med vægtet gennemsnit ud fra dato.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagerposteringer, der forlader lageret, f.eks. salgsordrer, lagerkladder og produktionsordrer, vil blive udført til en forkalkuleret kostpris på bogføringsdatoen. Den forkalkulerede kostpris kaldes også den løbende gennemsnitskostpris. På lagerlukningsdatoen analyserer systemet lagertransaktionerne for tidligere perioder, tidligere dage og den aktuelle dag. Denne analyse bruges til at bestemme, hvilket af følgende lukningsprincipper der skal bruges:
 
@@ -74,7 +72,7 @@ Følgende illustration viser disse posteringer:
 -   2b. Økonomisk lagerafgang er opdateret for et antal på 2 til en kostpris af kr. 10,00 pr. stk.
 -   3. Lagerlukningen er udført ved brug af den direkte udligningsmetode for at udligne den økonomiske lagertilgang med den økonomiske lagerafgang.
 
-![Direkte udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøgle til illustrationen:**
 
@@ -128,7 +126,7 @@ Systemet genererer og bogfører den summerede lageroverførselspostering. System
 
 I følgende illustration viser denne række posteringer, og effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for opsummeret udligning, men uden brug af indstillingen **Medtag fysisk værdi**. 
 
-![Opsummeret udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Opsummeret udligning for gennemsnitskostdato uden indstillingen Medtag fysisk værdi.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøgle til illustrationen**
 
@@ -177,7 +175,7 @@ Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. 
 
 Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede posteringer på kr. 27,50. I følgende illustration vises denne serie af posteringer, og virkningerne af at vælge lagermodellen for vægtet gennemsnitsdato og afmærkning.
 
-![Gennemsnitskostdato med afmærkning](./media/weightedaveragedatewithmarking.gif) 
+![Gennemsnitskostdato med afmærkning.](./media/weightedaveragedatewithmarking.gif) 
 
 **Nøgle til illustrationen:**
 

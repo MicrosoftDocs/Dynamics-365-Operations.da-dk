@@ -2,11 +2,9 @@
 title: Deadline for fakturaudstedelse
 description: Denne artikel forklarer, hvordan du konfigurerer parametre for at beregne forfaldsdatoerne for udstedelse af debitorfakturaer og kreditorfakturaer i Den Europæiske Union (EU).
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7109fa574bd05884fab4a4159999ee89bffe6e84
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a99f5dcd6296a0e001a5ab2a283501c93f8751a471594f0248fe61e09378bb23
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744271"
 ---
 # <a name="invoice-issue-deadline"></a>Deadline for fakturaudstedelse
 

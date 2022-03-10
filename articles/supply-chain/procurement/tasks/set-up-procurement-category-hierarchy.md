@@ -1,26 +1,23 @@
 ---
 title: Konfigurer et indkøbskategorihierarki
 description: Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorihierarki, og hvordan du konfigurerer en indkøbskategori, der skal bruges i en indkøbsproces.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e45c80718c73ad785643c2a5fc0e712b291104d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a625ae5acc6d47b40a31b986da25df8f2d3fdbc8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424922"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577066"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Konfigurer et indkøbskategorihierarki
 
@@ -45,3 +42,6 @@ Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorih
 4. Vælg de produkter, der skal føjes til indkøbskategorien.
 5. Vælg pilen for at tilføje produkter i tabellen **Valgte**.
 6. Vælg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

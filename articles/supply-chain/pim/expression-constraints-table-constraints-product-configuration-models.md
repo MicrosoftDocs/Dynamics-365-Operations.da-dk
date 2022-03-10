@@ -1,12 +1,10 @@
 ---
 title: Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
 description: I dette emne beskrives brugen af udtryksbegrænsninger og tabelbegrænsninger. Begrænsninger styrer de attributværdier, som du kan vælge, når du konfigurerer produkter til en salgsordre, et salgstilbud, en indkøbsordre eller en produktionsordre. Du kan bruge udtryksbegrænsninger eller tabelbegrænsninger, afhængigt af hvordan du foretrækker at udforme begrænsninger.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8775a9225313c0f5a132dbccbe583470fe23beab
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007693"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570723"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
 
@@ -244,8 +242,7 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 -   Mål
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oprette en udtryksbegrænsning](tasks/add-expression-constraint-product-configuration-model.md)
 
@@ -253,3 +250,6 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

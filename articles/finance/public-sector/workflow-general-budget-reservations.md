@@ -2,11 +2,9 @@
 title: Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
 description: I dette emne beskrives, hvordan du kan konfigurere generelle budgetreservationer og sende dem til en arbejdsgang for den offentlige sektor.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 573a31f1131a0ca46183e9c2c31b6ee5e74f1a96
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ea066a437868c4e5c0bdb28323bb7d5300b8c8cde8c3de0fcb0c7866d103c5ed
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766256"
 ---
 # <a name="set-up-general-budget-reservations-and-submit-them-to-a-workflow"></a>Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
 
@@ -31,7 +29,7 @@ Når en generel budgetreservation er konfigureret til at bruge en arbejdsgang, s
 
 Følgende illustration viser, hvordan du konfigurerer en arbejdsgang til generelle budgetreservationer. Hvert nummereret trin svarer til et afsnit i dette emne.
 
-![Konfiguration af en arbejdsgang for generel budgetreservation](media/gbr-workflow-process.jpg "Konfiguration af en arbejdsgang for generel budgetreservation")
+![Konfiguration af en arbejdsgang for generel budgetreservation.](media/gbr-workflow-process.jpg "Konfiguration af en arbejdsgang for generel budgetreservation")
 
 ## <a name="optional-set-up-reviewers-for-general-budget-reservations"></a>Valgfrit: Konfigurere validatorer til generelle budgetreservationer
 

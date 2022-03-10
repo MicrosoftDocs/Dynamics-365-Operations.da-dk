@@ -1,7 +1,7 @@
 ---
 title: Systemdefinerede og brugerdefinerede tabelbegrænsninger
 description: I denne artikel forklares de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel – brugerdefineret og systemdefineret. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier.
-author: cvocph
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ddc7b9f0ccaa787b2297a253a7fdd9de11e9eee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c4b484c99bc8f1cc830d4177460ec15a26714a56
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812669"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577378"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerede og brugerdefinerede tabelbegrænsninger
 
@@ -57,8 +57,7 @@ Når du opretter en systemdefineret tabelbegrænsning, skal du vælge en tabel, 
 
 Før en tabelbegrænsning kan træde i kraft på en model til produktkonfiguration, skal tabelbegrænsningen medtages i en begrænsning på en af modellens komponenter. Fremgangsmåden er at oprette en ny begrænsning, vælge typen af tabelbegrænsning og derefter vælge den tabelbegrænsningsdefinition, der skal bruges. Endelig skal alle felter i tabelbegrænsningen knyttes til attributterne i produktkonfigurationsmodellen.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over produktkonfigurationsmodeller](product-configuration-models.md)
 

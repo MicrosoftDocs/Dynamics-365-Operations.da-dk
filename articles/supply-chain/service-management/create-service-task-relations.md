@@ -1,29 +1,26 @@
 ---
 title: Oprette serviceopgaverelationer
 description: Du kan knytte serviceopgaver til serviceaftaler eller serviceordrer for at beskrive den serviceopgave, der skal udføres for aftalen eller ordren.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424751"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576538"
 ---
 # <a name="create-service-task-relations"></a>Oprette serviceopgaverelationer    
 
@@ -33,13 +30,13 @@ Du kan knytte serviceopgaver til serviceaftaler eller serviceordrer for at beskr
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Oprette en relation med en serviceaftale
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.
+1.  Gå til **Servicestyring** \> **Fælles** \> **Serviceaftaler** \> **Serviceaftaler**.
 
 2.  Vælg en eksisterende serviceaftale, eller opret en ny.
 
-3.  Klik på knappen **Serviceopgaver** i handlingsruden.
+3.  Vælg knappen **Serviceopgaver** i handlingsruden.
 
-4.  Tryk på CTRL+N i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaven til serviceaftalen.
+4.  Vælg **Ny** i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaven til serviceaftalen.
 
 5.  Angiv beskrivelser af evt. interne eller eksterne noter i fritekstfelterne under fanen **Beskrivelse**.
 
@@ -51,13 +48,13 @@ En serviceopgaverelation, der oprettes til en serviceaftale, kan vælges fra all
 
 ## <a name="create-a-relation-with-a-service-order"></a>Oprette en relation med en serviceordre
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Vælg en eksisterende serviceordre, eller opret en ny.
 
-3.  Klik på knappen **Serviceopgaver** i handlingsruden.
+3.  Vælg knappen **Serviceopgaver** i handlingsruden.
 
-4.  Tryk i formularen **Serviceopgaver** på CTRL+N for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaver til serviceordren.
+4.  Vælg **Ny** i formularen **Serviceopgaver** for at oprette en ny linje, og vælg derefter en serviceopgave på listen **Serviceopgave** for at knytte serviceopgaverne til serviceordren.
 
 5.  Angiv beskrivelser af evt. interne eller eksterne noter i fritekstfelterne under fanen **Beskrivelse**.
 
@@ -75,3 +72,6 @@ Serviceopgaverelationer, der oprettes til en serviceordre, kan vælges i den spe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

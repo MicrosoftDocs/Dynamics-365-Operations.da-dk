@@ -2,7 +2,6 @@
 title: Avancerede formateringsindstillinger i økonomirapportering
 description: Dette emne beskriver avancerede formateringsfunktioner, herunder filtre, begrænsninger, rækker, der ikke udskrives, og betingede sætninger i beregninger.
 author: panolte
-manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 08659bac84b07f6e95a83b84612cb035b51cf28d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760120"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 

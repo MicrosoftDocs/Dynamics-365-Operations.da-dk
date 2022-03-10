@@ -2,7 +2,7 @@
 title: Konfigurere en mailbeskedprofil
 description: Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771025"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109625"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurere en profil for mailbesked
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771025"
 
 Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
 
-Når du opretter kanaler, kan du oprette en mailbeskedprofil. På den måde kan der sendes e-mails til kunder for forskellige transaktionshændelser, som f.eks. ordreoprettelse, ordreforsendelsesstatus og betalingsfejl.
+Når du opretter kanaler, kan du oprette en mailbeskedprofil. Mailbeskedprofilen definerer hændelserne i en salgstransaktion (f.eks. en ordre, der oprettes, pakkes eller faktureres), som du vil sende beskeder om til dine kunder. 
 
 Du kan finde yderligere oplysninger om mailkonfiguration i [Konfigurere og sende e-mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Benyt følgende fremgangsmåde for at oprette en mailbeskedprofil.
 
 ### <a name="create-an-email-template"></a>Opret en mailskabelon
 
-Før en type mailbesked kan aktiveres, skal du oprette en mailskabelon til organisationen i Commerce Headquarters. Denne skabelon definerer mailemnet, afsenderen, standardsproget og mailbrødteksten for hvert sprog, du vil understøtte.
+Før en type mailbesked kan aktiveres, skal du oprette en mailskabelon til organisationen i Commerce Headquarters for hver beskedtype, du vil understøtte. Denne skabelon definerer mailemnet, afsenderen, standardsproget og mailbrødteksten for hvert sprog, der understøttes.
 
 Benyt følgende fremgangsmåde for at oprette en mailskabelon.
 
@@ -61,6 +61,8 @@ Følgende billede viser eksempler på indstillinger for mailskabeloner.
 
 ![Mailskabelonindstillinger.](media/email-template.png)
 
+Du kan finde flere oplysninger om, hvordan du opretter mailskabeloner, i [Oprette mailskabeloner til transaktionshændelser](email-templates-transactions.md). 
+
 ### <a name="create-an-email-event"></a>Opret en mailhændelse
 
 Benyt følgende fremgangsmåde for at oprette en mailhændelse.
@@ -76,10 +78,25 @@ Følgende billede viser eksempler på indstillinger for hændelsesbeskeder.
 
 ![Indstillinger for hændelsesbesked.](media/email-notification-profile.png)
 
+> [!NOTE]
+> Den beskedtype, du har oprettet for kunden, kræver, at der implementeres en tilpasning, før der kan sendes en mailbesked.
+
+### <a name="schedule-a-recurring-email-notification-process-job"></a>Planlægge et procesjob for en tilbagevendende mailmeddelelse
+
+Hvis du vil sende mailbeskeder, skal du køre jobbet **Behandling af email-besked om detailordre**.
+
+Hvis du vil konfigurere jobbet **Behandling af email-besked om detailordre** i Commerce-hovedkontoret, hvis du ikke allerede har gjort det, skal du følge disse trin.
+
+1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Mail og beskeder \> Send mailbesked**.
+1. Vælg **Gentagelse** i dialogboksen **Behandling af e-mail-besked om detailordre**.
+1. Vælg **Ingen slutdato** i dialogboksen **Definer gentagelse**.
+1. Vælg **Minutter** under **Gentagelsesmønster**, og angiv derefter feltet **Antal** til **1**. Med disse indstillinger sikres det, at mailbeskeder behandles så hurtigt som muligt.
+1. Vælg **OK** for at returnere til dialogboksen **Behandling af e-mail-besked om detailordre**.
+1. Vælg **OK** for at fuldføre jobopsætningen.
+
 ### <a name="next-steps"></a>Næste trin
 
 Før du kan sende mails, skal du konfigurere tjenesten til udgående mail og konfigurere et batchjob. Du kan få flere oplysninger under [Konfigurere og sende mail](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

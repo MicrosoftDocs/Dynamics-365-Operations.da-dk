@@ -1,12 +1,10 @@
 ---
 title: 200 % saldoafskrivning
-description: Denne artikel indeholder en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
-author: saraschi2
-manager: AnnBe
+description: Dette emne viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978733"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883487"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 % saldoafskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
+Dette emne viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
 
 Når du opretter en afskrivningsprofil til et anlægsaktiv og vælger **200% saldoværdi** i feltet **Metode** på siden **Afskrivningsprofiler**, bliver de anlægsaktiver, der er tildelt afskrivningsprofilen, afskrevet med den samme procent i hver afskrivningsperiode. Denne procentdel beregnes på basis af aktivets levetid. Hvis et aktiv f.eks. har en levetid på fem år, beregnes procentdelen som 40 % (200 % ÷ 5). 
 
@@ -68,7 +66,7 @@ Npr du har valgt **Regnskabsår** som afskrivningsår, er følgende indstillinge
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Eksempel på en 200 % saldoafskrivning
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffelsesomkostning               | 11.000 |
 | Restværdi                  | 1.000 |
@@ -89,3 +87,6 @@ Metoden med 200 % saldoafskrivning dividerer de 200 % med levetiden i år. Denne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

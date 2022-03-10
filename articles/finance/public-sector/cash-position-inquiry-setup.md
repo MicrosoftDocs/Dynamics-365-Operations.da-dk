@@ -2,11 +2,9 @@
 title: Konfigurer og køre forespørgslen Likviditet
 description: Dette emne indeholder oplysninger om forespørgslen Likviditet. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
 author: velofog
-manager: AnnBe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -15,12 +13,12 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a3986e6a1aa5d4af9b829b07a0b3a2486b28ba
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 60e0f721c9bcf6e966a91a66fcd0e05e85b4830015a0e26f9c3b558957c2d3d3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733578"
 ---
 # <a name="set-up-and-run-the-cash-position-inquiry"></a>Konfigurer og køre forespørgslen Likviditet
 [!include [banner](../includes/banner.md)]
@@ -86,3 +84,6 @@ Denne forespørgsel adskiller sig fra andre forespørgsler, fordi du kan tilpass
     - Valgmulighed: For at filtrere værdierne for en bestemt dimension, skal du i felterne under feltet **Økonomiske dimensionssæt** vælge, hvilke dimensioner der skal medtages. De tilgængelige valgmuligheder varierer afhængigt af det økonomiske dimensionssæt, du har valgt.
 
 3. Vælg **Beregn saldi** for at køre forespørgslen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187991"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551798"
 ---
 # <a name="overhead-calculation"></a>Beregning af fast omkostning
 
@@ -48,7 +48,7 @@ Beregning af faste omkostninger kører politikker for omkostningsregnskab i den 
 
 Beregning af faste omkostninger køres uafhængigt af versionen. Derfor kan du beregne Budget-versionen før den faktiske version. Beregning af faste omkostninger består af fire trin, som vist i følgende illustration. I hvert trin oprettes der et kladdehoved med poster. Dette kladdehoved indeholder inddataene for hvert trin i beregningen. Politikker og regler anvendes på hver kladdelinje, og der oprettes omkostningsposter som output. Derfor kan dataene altid spores. 
 
-[![Beregning af fast omkostning](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Beregning af faste omkostninger.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og fordele den faste omkostning for elektricitet
 I et finansregnskab registreres nogle omkostninger, f.eks. elektricitet, som et engangsbeløb. Derfor er der ikke angivet detaljeret ledelsesmæssig indsigt for omkostningsregnskab. I omkostningsregnskabet skal omkostningerne gennemløbe de organisatoriske enheder for at give korrekte ledelsesmæssig viden på tværs af alle afdelinger og niveauer. Denne proces skal være baseret på enten en præcis registrering af forbruget eller en rimelig vurdering. En omkostning for elektricitet kan bogføres i finans som vist i følgende tabel.
@@ -618,7 +618,7 @@ Du kan få flere oplysninger under [Udfør beregning af fast omkostning](cost-ro
 
 Fordeling bruges til at fordele saldoen for et omkostningsobjekt til andre omkostningsobjekter ved at anvende et fordelingsgrundlag. Finance understøtter den gensidige fordelingsmetode. I den gensidig fordelingsmetode anerkendes de gensidige tjenester, som ekstra omkostningsobjekter udveksler, fuldt ud. Systemet bestemmer automatisk den rigtige rækkefølge, som tildelingerne skal udføre i. Saldoen for et omkostningsobjekt tildeles af et enkelt fordelingsgrundlag. Tildelinger på tværs af omkostningsobjektdimensioner og deres respektive medlemmer understøttes. Fordelingsrækkefølgen styres af omkostningskontrolenheden. 
 
-[![Reciprok metode](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciprok metode.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definere omkostningstildelingen
 
@@ -1328,83 +1328,12 @@ Tabellen nedenfor viser resultatet, når Emballage-tjenester anvendes som fordel
 ## <a name="conclusion"></a>Konklusion
 I Finansregnskab bogføres en omkostning på 10.000,00 for elektricitet til et dummy-bærer-id. Derfor kan bogholdere se, at disse omkostninger skal fordeles. I Omkostningsregnskab passerer omkostningerne på tværs af afdelinger og niveauer, baseret på de politikker og regler, der anvendes. Hver omkostning er knyttet et fordelingsgrundlag, der giver den bedste vurdering af fordelingen af omkostninger.
 
-<table>
-<thead>
-<tr>
-<th colspan="2" rowspan="2">Omkostningselement</th>
-<th colspan="9">Omkostningsobjekt</th>
-<th rowspan="2">Samlet</th>
-</tr>
-<tr>
-<th>CC099</th>
-<th>CC001</th>
-<th>CC002</th>
-<th>CC003</th>
-<th>CC004</th>
-<th>Proj 1</th>
-<th>Proj 2</th>
-<th>Prod 1</th>
-<th>Prod 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">10001 Elektricitet</td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"><strong>0.00</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"><strong>30.00</strong></td>
-<td style="text-align: right;"><strong>10.00</strong></td>
-<td style="text-align: right;"><strong>7,770.57</strong></td>
-<td style="text-align: right;"><strong>2,189.43</strong></td>
-<td style="text-align: right;"><strong>10,000.00</strong></td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align: left;">Ikke-klassificerede</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Fast omkostning</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">776.36</td>
-<td style="text-align: right;">223.64</td>
-<td style="text-align: right;"><strong>1,000.00</strong></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Variabel omkostning</td>
-<td style="text-align: right;">000</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">30,00</td>
-<td style="text-align: right;">10,00</td>
-<td style="text-align: right;">6,994.21</td>
-<td style="text-align: right;">1,965.79</td>
-<td style="text-align: right;"><strong>9,000.00</strong></td>
-</tr>
-</tbody>
-</table>
+Omkostningselement | Omkostningsobjekt<br>CC099 | Omkostningsobjekt<br>CC001 | Omkostningsobjekt<br>CC002 | Omkostningsobjekt<br>CC003 | Omkostningsobjekt<br>CC004 | Omkostningsobjekt<br>Proj 1 | Omkostningsobjekt<br>Proj 2 | Omkostningsobjekt<br>Prod 1 | Omkostningsobjekt<br>Prod 2 | I alt
+---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
+10001 Elektricitet | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
+Ikke-klassificerede | 0,00 |  |  |  |  |  |  |  |  |  |
+Fast omkostning | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
+Variabel omkostning | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
 > Dette emne viser, hvordan et primært omkostningselement, 10001 Elektricitet, flyder gennem omkostningsobjekter. Derfor tildeles disse faste omkostninger til det laveste niveau i organisationen. Det vil sige, at omkostningsobjekter på laveste niveau bærer omkostningen. Hvis du har brug for en visuel tilførsel af omkostningen mellem omkostningsobjekter, kan du bruge politikreglerne for omkostningsakkumuleringen til at visualisere strømmen af omkostningerne. Du kan finde flere oplysninger i [Politikken for omkostningsakkumulering og beregning af indirekte omkostninger](cost-rollup.md).

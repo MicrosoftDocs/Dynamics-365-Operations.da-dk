@@ -1,32 +1,34 @@
 ---
 title: Oversigt over administration af frynsegoder
-description: Oversigt over funktionen Administration af frynsegoder i Dynamics 365 Human Resources. Tilbyd dine medarbejdere mulighed for ekstra frynsegoder via en brugervenlig onlineoplevelse.
-author: andreabichsel
-ms.date: 07/13/2021
-ms.topic: article
+description: Dette emne indeholder en oversigt over funktionen Frynsegodeadministration i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 12/06/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd3ffa08b7714d1c6019ea5987dc18ad717720a7
-ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
+ms.openlocfilehash: 696c7632fd8adda71b2b67d59fba7f7d83193f5b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6558315"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065937"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegoder for at tiltrække og holde på dine bedste medarbejdere. Ud over standardfrynsekoder som sundhedsforsikring og tandlægedækning kan det også være en god idé at tilbyde udvidede tjenester som hjælp til adoption, rekreative ordninger og beklædningsgodtgørelse. Administration af frynsegoder i Microsoft Dynamics 365 Human Resources giver dig en fleksibel løsning, som understøtter en lang række frynsegodemuligheder. Human Resources inkluderer også en brugervenlig medarbejderoplevelse, der viser det, du tilbyder.
+Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegoder for at tiltrække og holde på dine bedste medarbejdere. Ud over standardfrynsekoder som sundhedsforsikring og tandlægedækning kan det også være en god idé at tilbyde udvidede tjenester som hjælp til adoption, rekreative ordninger og beklædningsgodtgørelse. Frynsegodeadministration i Microsoft Dynamics 365 Human Resources er en fleksibel løsning, som understøtter en lang række frynsegodeindstillinger. Human Resources inkluderer også en brugervenlig medarbejderoplevelse, der viser det, du tilbyder.
 
 - Forbedrede frynsegodeplaner giver dig mulighed for at oprette og administrere unikke frynsegodeplaner og understøtte komplekse satstabeller for frynsegoder og indlejrede niveauer. Du kan nemt oprette frynsegodeprogrammer, pakker og regler for automatisk registrering, der gør det nemmere for medarbejderne.
 - Med flekskreditprogrammer kan du gøre det muligt at understøtte pension og andre levetidshændelser.
@@ -37,13 +39,13 @@ Hvis du vil forblive konkurrencedygtig, skal du tilbyde en lang række frynsegod
 Hvis du vil have adgang til demodataene, skal du geninstallere dit sandkassemiljø.
 
 > [!NOTE]
-> Du kan nu tilpasse formularer til administration af frynsegoder. Du kan nu føje brugerdefinerede felter, der vedrører disponeringsgrader, til formularen **Disponeringsindstilling** for frynsegodeplaner. Du kan finde flere oplysninger om arbejde med brugerdefinerede felter i [Brugerdefinerede felter](hr-developer-custom-fields.md).
+> Du kan nu tilpasse siderne for Frynsegodeadministration. Brugerdefinerede felter, der vedrører dækningssatser, kan føjes til siden **Dækningsindstilling** for frynsegodeplaner. Du kan finde flere oplysninger om arbejde med brugerdefinerede felter i [Brugerdefinerede felter](hr-developer-custom-fields.md).
 >
 > ![Brugerdefinerede felter for administration af frynsegoder](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivere Administration af frynsegoder
 
-I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Den angiver også, hvilke eksisterende funktioner i Human Resources erstattes af Frynsegodeadministration, eller hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
+I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Det forklarer også, hvilke eksisterende funktioner i Human Resources der erstattes af Frynsegodeadministration, og hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
 
 > [!IMPORTANT]
 > Når du aktiverer Administration af frynsegoder i et **produktionsmiljø**, kan du ikke deaktivere det. Vi anbefaler, at du aktiverer og tester Administration af frynsegoder i et **sandkassemiljø**, før du aktiverer det i et **produktionsmiljø**. Der er betydelige forskelle mellem den gamle frynsegodefunktionalitet og de nye funktioner til administration af frynsegoder, der kræver yderligere opsætning, og som skal testes, før de bringes i produktion.
@@ -109,21 +111,29 @@ Du kan bruge flekskreditprogrammer til at tilmelde medarbejdere til frynsegoder 
 
 ## <a name="configure-required-employee-information"></a>Konfigurere krævede medarbejderoplysninger
 
-Før du kan tilmelde medarbejdere til frynsegoder, skal du angive de nødvendige oplysninger om dem. Alle medarbejdere skal have en angivet stilling. Du skal tilmelde medarbejdere en fast kompensationsplan på deres respektive startdatoer, ellers skal de have et årligt lønbeløb for frynsegoder. I afsnittet **Detaljer om ansættelse** på siden **Arbejder** skal du desuden vælge en værdi i feltet **Betalingsfrekvens for frynsegoder**.
+Før du kan tilmelde medarbejdere til frynsegoder, skal du angive de nødvendige oplysninger om dem. 
 
-Hvis du har en medarbejder, der modtager supplerende kompensation såsom provision, kan du tilføje et beløb for **Årlig frynsegodeløn** fra medarbejderposten. Human Resources skal bruge beløbet for **Årlig frynsegodeløn** til bestemmelse af dækningsbeløb i stedet for det årlige beløb for fast løn. **Årlig løn for frynsegoder** skal være gyldig pr. medarbejderens startdato eller starten af frynsegodeperioden, afhængigt af hvad der er den seneste. Hvis der registreres både en fast løn og et årligt frynsegodebeløb for medarbejderen, vil de årlige frynsegoder blive brugt til at fastlægge dækningsbeløbene.
+Medarbejderen skal være tildelt en **stilling**. Du kan tildele en **stilling** til medarbejderen på siden **Arbejder** eller **Stilling** ved at opdatere **Medarbejdertildeling**. 
+
+Derefter skal medarbejdere tilmeldes en fast kompensationsplan på deres respektive startdatoer eller have et beløb for **Årlig frynsegodeløn**. Før der tildeles **Fast løn** til en medarbejder, skal der tildeles en **stilling**. 
+
+> [!NOTE] 
+> **Startdato for fast løn** kan ikke være før **Dato for stillingstildeling**.
+
+Eller hvis du har en medarbejder, der modtager supplerende kompensation såsom provision, kan du tilføje et beløb for **Årlig frynsegodeløn** fra medarbejderposten. Human Resources skal bruge beløbet for **Årlig frynsegodeløn** til bestemmelse af dækningsbeløb i stedet for beløbet for **Fast årsløn**. **Årlig løn for frynsegoder** skal være gyldig pr. medarbejderens startdato eller starten af frynsegodeperioden, afhængigt af hvad der er den seneste. Der kræves dog ikke en stilling for at tildele **Årlig løn som personalegoder**. Hvis du vil aktivere funktionen **Årlig løn som personalegoder**, skal du gå til siden **Delte HR-parametre** under fanen **Personalegodeadministration**. Denne funktion er som standard deaktiveret.
+
+> [!IMPORTANT]
+> Hvis der både er angivet et beløb for **Fast løn** og **Årlig løn som personalegoder** for en medarbejder, bruges **Årlig løn som personalegoder** til at fastlægge dækningsbeløbene. I afsnittet **Detaljer om ansættelse** på siden **Arbejder** skal du vælge en værdi i feltet **Betalingsfrekvens for frynsegoder**.
 
 ## <a name="configure-optional-employee-information"></a>Konfigurere valgfrie medarbejderoplysninger
-
 Når du opretter en frynsegodeplan, som bruger satser, der er baseret på køn eller alder, skal du angive medarbejderens fødselsdato og køn, som kan bruges til at beregne frynsegodeomkostningerne.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Behandle medarbejdere for at fastlægge berettigelse
+Før medarbejdere kan tilmeldes planer, køres berettigelsesbehandling for at bestemme, hvilke planer de er berettiget til. Du kan få vist resultaterne af berettigelsesprocessen i **resultatvisningen**. Du kan finde flere oplysninger under [Behandle tilmeldings berettigelse](hr-benefits-process-enrollment-eligibility.md).
 
-Før medarbejdere kan tilmeldes planer, køres berettigelsesbehandling for at bestemme, hvilke planer de er berettiget til. Du kan få vist resultaterne af berettigelsesprocessen i resultatvisningen. Du kan finde flere oplysninger under [Behandle tilmeldings berettigelse](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Medarbejderne vælger planer via **Medarbejderselvbetjening** (valgfrit)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Medarbejdere vælger planer via medarbejderselvbetjening (valgfrit)
-
-Når der er en åben tilmelding, medarbejdere er nyansatte, eller der indtræffer en livshændelse, kan medarbejdere vælge eller opdatere deres fryensegoder via medarbejderselvbetjeningen. Du kan finde flere oplysninger under [Konfigurere medarbejderselvbetjening](hr-benefits-setup-employee-self-service.md).
+Når der er en åben tilmelding, medarbejdere er nyansatte, eller der indtræffer en livshændelse, kan medarbejdere vælge eller opdatere deres fryensegoder via **Medarbejderselvbetjening**. Du kan finde flere oplysninger under [Konfigurere medarbejderselvbetjening](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Bekræfte valg af medarbejderplan
 
@@ -135,9 +145,9 @@ I løbet af medarbejderens livscyklus kan de enkelte medarbejdere opleve forskel
 
 Før du kan behandle livshændelser, skal du allerede have kørt åben tilmelding mindst én gang i en ansættelsesperiode. I USA foregår åbne tilmeldinger typisk én gang om året. Uden for USA kan åben tilmelding forekomme på ansættelsestidspunktet. Behandling af livshændelser kræver ikke, at arbejderne vælger en frynsegodeplan. Arbejderne skal imidlertid være medtaget i åben tilmeldingsbehandling. Du kan finde flere oplysninger under følgende emner:
 
-- [Behandle livsbegivenheder](hr-benefits-process-life-events.md)
-- [Behandle ændringer af livsbegivenheder](hr-benefits-process-life-event-changes.md)
-- [Behandle berettigelse til livsbegivenheder](hr-benefits-process-life-event-eligibility.md)
+- [Behandle livshændelser](hr-benefits-process-life-events.md)
+- [Behandle ændringer af livshændelser](hr-benefits-process-life-event-changes.md)
+- [Behandle berettigelse til livshændelser](hr-benefits-process-life-event-eligibility.md)
 
 ## <a name="rate-updates-optional"></a>Satsopdateringer (valgfrit)
 

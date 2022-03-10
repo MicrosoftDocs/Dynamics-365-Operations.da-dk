@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8650b24ac8e1c7feab2a9e5c4c4f98f7f573f340
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c4a5c0d758ecacce6433b13a2b2044d2417d018
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815518"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403859"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planlægge din kontoplan
 

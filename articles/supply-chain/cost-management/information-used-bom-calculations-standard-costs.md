@@ -2,11 +2,9 @@
 title: Oplysninger, der bruges i styklistekalkulationer med standardomkostninger
 description: Styklisteberegninger anvender data fra flere kilder ved beregning af standardomkostningerne for en produceret vare. Blandt kilderne er oplysninger om varer, styklisteruter, beregningsformler for indirekte omkostninger og efterkalkulationsversionen.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c6b84737c0e03870a0a40045451a816efdd94cc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56b1aa33c11f7cfbbde2a278bef25189ac697d19
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005471"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575117"
 ---
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Oplysninger, der bruges i styklistekalkulationer med standardomkostninger
 
@@ -83,3 +81,6 @@ Flere informationskilder kan angives, når du starter en styklistekalkulation. D
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

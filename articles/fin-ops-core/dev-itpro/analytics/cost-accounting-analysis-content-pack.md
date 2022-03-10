@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9253537b7d306384747ca1e492def13c48aa678
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747363"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
@@ -40,7 +40,7 @@ Du kan finde flere oplysninger om omkostningsregnskabet i [Startside for omkostn
 Ved at definere sikkerhed på brugerniveau i omkostningsregnskabet og kombinere det med sikkerhed på rækkeniveau i Power BI kan du tildele alle omkostningsobjektejere adgang til Power BI-indholdet til **Omkostningsregnskabsanalyse**. Alle data i visualiseringerne filtreres derefter baseret på det adgangsniveau, der styres i omkostningsregnskabet. Hvis du vil vide mere om sikkerhed på henholdsvis adgangsniveau og rækkeniveau, kan du finde flere oplysninger under [Konfigurer sikkerhed for Power BI-indholdet i analysen af Omkostningsregnskab](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
-Du kan finde Power BI-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Du kan finde Power BI-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Sørg for at downloade det **Omkostningsregnskabsanalyse**-indhold, der gælder for den version af Microsoft Dynamics 365, du bruger.
 

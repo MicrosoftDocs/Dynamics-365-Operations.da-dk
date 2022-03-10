@@ -1,27 +1,24 @@
 ---
 title: Konfigurere tilladelser til bestilling af produkter på vegne af en anden person
 description: I dette emne beskrives, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 145d8a0e341857bf238fc934cd668ff12b8505b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424676"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577114"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Konfigurere tilladelser til bestilling af produkter på vegne af en anden person
 
@@ -45,3 +42,6 @@ I dette emne beskrives, hvordan du kan give arbejdere tilladelse til at oprette 
 2. Brug Quick Filter til at finde den medarbejder, som du netop har tilføjet, som anmoder.
 3. Vælg anmoderen. Listen Klargører viser de personer, der har tilladelse til at bestille varer på vegne af den anmoder, der er valgt i venstre rude.  Du kan tilføje yderligere klargørere her. I denne visning kan du også give anmoderen tilladelse til at oprette indkøbsrekvisitioner i juridiske enheder og driftsenheder, der ikke er den pågældende persons primære juridiske enhed eller driftsenhed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

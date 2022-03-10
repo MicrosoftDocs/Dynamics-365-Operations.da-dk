@@ -1,7 +1,7 @@
 ---
 title: Styklisteskabeloner
 description: En styklisteskabelon indeholder en standardiseret liste over komponenter for serviceobjekter, der serviceres regelmæssigt.
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab8586f81dc4a897d243b9d289109f039c390fcbf90c5c205125cf49eb5e8e39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724742"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571301"
 ---
-# <a name="template-boms"></a>Styklisteskabeloner    
+# <a name="template-boms"></a>Styklisteskabeloner
 
 [!include [banner](../includes/banner.md)]
-
 
 En styklisteskabelon giver dig en standardiseret liste over komponenter for serviceobjekter, der serviceres regelmæssigt. Komponenterne i styklisteskabelonen repræsenterer de enkelte underkomponenter i serviceobjektet. Ved at anvende en styklisteskabelon på et serviceobjekt kan du registrere de underkomponenter, der er erstattet på serviceobjektet.
 
 Hvis du vil anvende en styklisteskabelon på en serviceaftale eller en serviceordre, skal du knytte den til en serviceobjektrelation.
 
-
 > [!NOTE]
-> <P>Du kan kun anvende én styklisteskabelon på et serviceobjekt.</P>
+> Du kan kun anvende én styklisteskabelon på et serviceobjekt.
 
 ## <a name="create-a-template-bom"></a>Oprette en styklisteskabelon
 
@@ -41,8 +39,8 @@ Følgende tabel indeholder oplysninger om de forskellige metoder, du kan bruge t
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +68,6 @@ Følgende tabel indeholder oplysninger om de forskellige metoder, du kan bruge t
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Anvende en styklisteskabelon på en serviceaftale eller en serviceordre
 
 Du kan anvende en styklisteskabelon på en serviceaftale, en serviceordre eller begge. Serviceaftalen omfatter normalt det langvarige forhold til en kunde. Historikken over udskiftninger, der registreres i servicestyklisten, kan med fordel registreres i serviceaftalen.
@@ -81,7 +78,7 @@ Du kan også anvende en styklisteskabelon på en serviceordre for at registrere 
 
 Du kan kopiere historikken for en servicestykliste fra én serviceaftale til en anden. Ved at kopiere servicehistorikken mellem serviceaftaler kan du registrere udskiftninger for en vare.
 
-**Eksempel**
+### <a name="example"></a>Eksempel
 
 Du har oprettet en treårig serviceaftale for en kundes bil. I denne periode bliver kunden vant til den gode service, som virksomheden yder. Så når aftalen udløber, ønsker kunden at indgå en ny. Du kan nu forhandle en mere fordelagtig aftale for firmaet. Da du kan få brug for registreringen af udskiftede komponenter i fremtiden, kopierer du historikken for servicestyklisten til den nye aftale.
 
@@ -99,26 +96,18 @@ Du kan ændre visningen af oplysninger for en styklistelinje for alle styklistes
 
 Hvis du vil bruge styklisteskabeloner, skal du oprette to nummerserier. Opret én nummerserie for styklisteskabelonen og én for linjenummeret for styklistehistorikken.
 
-
 > [!NOTE]
-> <P>Nummerserier bruges til at tildele identifikatorer til poster, der kræver dem. Før du kan tildele en nummerserie til en styklisteskabelon eller et linjenummer for styklistehistorikken, skal du angive nummerseriekoderne.</P>
-
+> Nummerserier bruges til at tildele identifikatorer til poster, der kræver dem. Før du kan tildele en nummerserie til en styklisteskabelon eller et linjenummer for styklistehistorikken, skal du angive nummerseriekoderne.
 
 ## <a name="set-up-number-sequences"></a>Oprette nummerserier
 
-1.  Opret nummerserier for styklisteskabeloner og linjenummeret for styklistehistorikken på listesiden **Nummerserier**. 
-
-2.  Klik på **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.
-
-3.  Klik på **Nummerserier**, og vælg derefter en nummerseriekode for de nummerseriereferencer, du oprettede i formularen **Nummerserier**.
-
-4.  Luk formen for at gemme ændringerne.
-
+1. Opret nummerserier for styklisteskabeloner og linjenummeret for styklistehistorikken på listesiden **Nummerserier**.
+1. Vælg **Servicestyring** \> **Opsætning** \> **Parametre for servicestyring**.
+1. Vælg **Nummerserier**, og vælg derefter en nummerseriekode for de nummerseriereferencer, du oprettede i formularen **Nummerserier**.
+1. Luk formen for at gemme ændringerne.
 
 > [!NOTE]
-> <P>Linjenummeret for styklistehistorikken bruges til at knytte posteringer i styklisteoversigten til en serviceaftale eller serviceordre. Nummeret vises ikke i brugergrænsefladen.</P>
-
-
+> Linjenummeret for styklistehistorikken bruges til at knytte posteringer i styklisteoversigten til en serviceaftale eller serviceordre. Nummeret vises ikke i brugergrænsefladen.
 
 ## <a name="see-also"></a>Se også
 
@@ -127,10 +116,5 @@ Hvis du vil bruge styklisteskabeloner, skal du oprette to nummerserier. Opret é
 [Administrere styklisteskabeloner på objektrelationer](manage-template-boms-on-object-relations.md)
 
 [Redigere en servicestykliste](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

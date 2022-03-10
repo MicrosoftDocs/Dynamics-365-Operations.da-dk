@@ -1,58 +1,50 @@
 ---
-title: Kontrollere konfiguration af dobbeltskrivning i Finance and Operations-apps og Dataverse
-description: I dette emne forklares det, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finance and Operations-apps og i Dataverse.
+title: Bekræfte dobbeltskrivningskonfiguration i Finans og drift-apps og Dataverse
+description: I dette emne forklares det, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0a1da32713f3d4d19b4d343c5b67b416a6c4ffbb
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566759"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062794"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Kontrollere konfiguration af dobbeltskrivning i Finance and Operations-apps og Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Bekræfte dobbeltskrivningskonfiguration i Finans og drift-apps og Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-Dette emne indeholder fejlfindingsoplysninger for integration med dobbeltskrivning mellem Finance and Operations-apps og Dataverse. Der redegøres specifikt for, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finance and Operations-apps og i Dataverse.
 
-## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Kontrollere, at dobbeltskrivning er konfigureret i en Finance and Operations-app
+Dette emne indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Der redegøres specifikt for, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
+
+## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Bekræfte, at dobbeltskrivning er konfigureret i Finans- og driftsapps
 
 Hvis du vil finde ud af, om de fejl, du ser, når du forsøger at gemme rækker til opdatering, kommer fra dobbeltskrivning, skal du først kontrollere, at dobbeltskrivning er konfigureret.
 
-+ Hvis du har administratorrettigheder i Finance and Operations-appen, skal du gå til **Arbejdsområder \> Datastyring** og vælge feltet **Dobbeltskrivning**. Hvis detaljerne for de sammenkædede miljøer og listen over tabeltilknytninger, der kører, vises, er dobbeltskrivning konfigureret.
++ Hvis du har administratorrettigheder i Finans- og driftsapps, skal du gå til **Arbejdsområder \> Datastyring** og vælge feltet **Dobbeltskrivning**. Hvis detaljerne for de sammenkædede miljøer og listen over tabeltilknytninger, der kører, vises, er dobbeltskrivning konfigureret.
 
-    ![Kontrollere Finance and Operations-appforbindelsen, når du har administratorrettigheder](media/verify_fin_ops_1.png)
+    ![Kontrollere forbindelsen til Finans- og driftsapps, når du har administratorrettigheder.](media/verify_fin_ops_1.png)
 
-+ Hvis du ikke har administratorrettigheder, modtager du fejlmeddelelsen *Der kan ikke skrives data til enheden \<entity name\>*. I eksemplet i følgende illustration kan du ikke oprette en kunderække i Finance and Operations-appen, fordi dobbeltskrivning er konfigureret, men referencedataene for debitorgruppen og betalingsbetingelser findes ikke i Dataverse.
++ Hvis du ikke har administratorrettigheder, modtager du fejlmeddelelsen *Der kan ikke skrives data til enheden \<entity name\>*. I eksemplet i følgende illustration kan du ikke oprette en kunderække i Finans- og driftsapps, fordi dobbeltskrivning er konfigureret, men referencedataene for debitorgruppen og betalingsbetingelser findes ikke i Dataverse.
 
-    ![Kontrollere Finance and Operations-appforbindelsen, når du ikke har administratorrettigheder](media/verify_fin_ops_2.png)
+    ![Kontrollere forbindelsen til Finans- og driftsapps, når du ikke har administratorrettigheder.](media/verify_fin_ops_2.png)
 
-Du kan finde flere oplysninger om, hvordan du løser problemer, når du opretter data i Finance and Operations-apps, under [Fejlfinding i forbindelse med problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
+Du kan finde flere oplysninger om, hvordan du løser problemer, når du opretter data i Finans- og driftsapps, under [Fejlfinding i forbindelse med problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Kontrollere, at dobbeltskrivning er konfigureret i Dataverse
 
 Når du opretter data, og du ser kolonnen **Firma** på siderne i Dataverse, er dobbeltskrivning konfigureret.
 
-![Kontrollere Dataverse-forbindelsen](media/verify_cds.png)
+![Kontrollere Dataverse-forbindelsen.](media/verify_cds.png)
 
 Du kan finde flere oplysninger om, hvordan du løser problemer, når du opretter data i Dataverse, under [Fejlfinding i forbindelse med problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
 

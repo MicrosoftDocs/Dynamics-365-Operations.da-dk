@@ -1,7 +1,7 @@
 ---
 title: Arbejdsprocesser for godkendelse af lagerkladder
 description: I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826005"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778299"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladder
 
@@ -31,7 +31,7 @@ I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funktionen til arbejdsgange for godkendelse af lagerkladde
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
 
 - **Modul:** *Under Lager- og lokationsstyring*
 - **Funktionsnavn:** *Arbejdsgang til godkendelse af lagerkladder*
@@ -55,7 +55,7 @@ Sådan opretter du dine arbejdsprocesser for godkendelse af lagerkladder:
     - **Lagerkladde for stykliste**
     - **Lagerreguleringskladde**
 
-    ![Dialogboksen Opret arbejdsproces](media/journal-workflow-create-workflow.png "Dialogboksen Opret arbejdsproces")
+    ![Dialogboksen Opret arbejdsproces.](media/journal-workflow-create-workflow.png "Dialogboksen Opret arbejdsproces")
 
 1. Appen med arbejdsproceseditor starter på din computer. (Du kan blive bedt om at godkende denne handling). Brug den til at designe arbejdsprocessen efter behov. Du kan finde flere oplysninger om, hvordan du bruger arbejdsproceseditoren, under [Oversigt i arbejdsprocessystem](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Når du har gemt og lukket arbejdsproceseditorens app, skal du vælge, om denne arbejdsprocesversion skal aktiveres, eller om den skal forblive inaktiv.
@@ -73,7 +73,7 @@ Sådan knytter du en lagerkladdearbejdsproces til et lagerkladdenavn:
 1. Vælg et kladdenavn i listekolonnen for at åbne siden Indstillinger.
 1. I oversigtspanelet **Generelt** skal du angive indstillingen **Godkendelsesarbejdsgang** til **Ja**. Vælg **Ja**, hvis du bliver bedt om at godkende handlingen.
 
-    ![Tildele et kladdenavn en arbejdsproces](media/journal-workflow-journal-name.png "Tildele et kladdenavn en arbejdsproces")
+    ![Tildele et kladdenavn en arbejdsproces.](media/journal-workflow-journal-name.png "Tildele et kladdenavn en arbejdsproces")
 
 1. Åbn rullelisten **Arbejdsproces**, og vælg den ønskede arbejdsproces. På listen vises de aktive arbejdsprocesser, du har oprettet ved hjælp af arbejdsproceseditorens app.
 
@@ -87,7 +87,7 @@ Når du har knyttet et lagerkladdenavn til den tilsvarende arbejdsproces for lag
 1. Fuldfør kladden efter behov.
 1. Når du opretter eller åbner en lagerkladde med en tilknyttet godkendelsesarbejdsproces, vil knappen **Arbejdsproces** være aktiv i handlingsruden. Når du er klar til at sende kladden til godkendelse, skal du vælge knappen **Arbejdsproces** for at åbne en rulleliste og derefter vælge **Send**. Godkendelsesanmodningen sendes til den relevante godkender, som vil blive påmindet ved hjælp af den beskedmetode, der er konfigureret for arbejdsprocessen.
 
-    ![Sende en kladde til godkendelse](media/journal-workflow-inventory-journal.png "Sende en kladde til godkendelse")
+    ![Sende en kladde til godkendelse.](media/journal-workflow-inventory-journal.png "Sende en kladde til godkendelse")
 
 Hvis du vil tilbagekalde en godkendelsesanmodning, skal du åbne den relevante kladde, vælge knappen **Arbejdsproces** og derefter vælge **Tilbagekald**. Dette vil nulstille arbejdsprocessen.
 

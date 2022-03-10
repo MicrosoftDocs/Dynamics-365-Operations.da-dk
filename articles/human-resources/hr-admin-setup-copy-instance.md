@@ -2,15 +2,12 @@
 title: Kopiér en forekomst
 description: Du kan bruge Microsoft Dynamics Lifecycle Services (LCS) til at kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkasse-miljø.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e38abf3537d88bb147fbf0030999953025e5820f
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466898"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060825"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan bruge Microsoft Dynamics Lifecycle Services (LCS) til at kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkasse-miljø. Hvis du har et andet sandkasse-miljø, kan du også kopiere databasen fra det pågældende miljø til et målrettet sandkasse-miljø.
 
@@ -41,7 +38,7 @@ Hvis du vil kopiere en forekomst, skal du huske at følge nedenstående tip:
 
 - Du skal være administrator i destinationsmiljøet, så du kan logge på, når du har kopieret forekomsten.
 
-- Når du kopierer Human Resources-databasen, kopierer du ikke de elementer (apps eller data), der er indeholdt i et Microsoft Power Apps-miljø. Yderligere oplysninger om kopiering af elementer i et Power Apps-miljø finder du i [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). Det Power Apps-miljø, du vil overskrive, skal være et sandkassemiljø. Du skal være global lejeradministrator for at kunne ændre et Power Apps-produktionsmiljø til et sandkassemiljø. Yderligere oplysninger om ændring af et Power Apps-miljø finder du [Skifte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance)forekomst.
+- Når du kopierer Human Resources-databasen, kopierer du ikke de elementer (apps eller data), der er indeholdt i et Microsoft Power Apps-miljø. Yderligere oplysninger om kopiering af elementer i et Power Apps-miljø finder du i [Kopiere et miljø](/power-platform/admin/copy-environment). Det Power Apps-miljø, du vil overskrive, skal være et sandkassemiljø. Du skal være global lejeradministrator for at kunne ændre et Power Apps-produktionsmiljø til et sandkassemiljø. Yderligere oplysninger om ændring af et Power Apps-miljø finder du [Skifte en forekomst](/dynamics365/admin/switch-instance)forekomst.
 
 - Hvis du kopierer en forekomst til dit sandkassemiljø og vil integrere dit sandkassemiljø med Dataverse, skal du genanvende brugerdefinerede felter på Dataverse-tabeller. Se [Anvende brugerdefinerede felter i Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
@@ -55,9 +52,9 @@ Følgende hændelser indtræffer, når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lager kopieres ikke fra ét miljø til et andet. Eventuelle dokumenter og skabeloner, der er vedhæftet, kopieres derfor ikke men forbliver i kildemiljøet.
 
-- Alle brugere undtagen administratorbrugere og andre interne tjenestebrugerkonti er derfor ikke tilgængelige. Administratorbrugeren kan derfor slette eller sløre data, før andre brugere får adgang til systemet igen.
+- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator" og andre interne tjenestebrugerkonti, vil ikke være tilgængelige. Administratorbrugeren kan derfor slette eller sløre data, før andre brugere får adgang til systemet igen.
 
-- Administratorbrugeren skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
+- Enhver bruger med sikkerhedsrollen "Systemadministrator" skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiere Human Resources-databasen
 
@@ -74,15 +71,15 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
 
 4. I opgaveruden **Kopier en forekomst** skal du markere den forekomst, der skal overskrives, og derefter vælge **Kopier**. Vent, indtil værdien i feltet **Kopieringsstatus** opdateres til **Fuldført**.
 
-   ![[Vælg forekomst, der skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Vælg forekomst, der skal overskrives.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Vælg **Power Platform**, og log på Microsoft Power Platform Administration.
 
-   ![[Vælg Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Vælg Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vælg det Power Apps-miljø, der skal kopieres, og vælg derefter **Kopier**.
 
-7. Når kopieringsprocessen er fuldført, skal du logge på destinationsforekomsten og aktivere Dataverse-integration. Du kan finde flere oplysninger og instruktioner under [Konfigurere Dataverse-integration](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Når kopieringsprocessen er fuldført, skal du logge på destinationsforekomsten og aktivere Dataverse-integration. Du kan finde flere oplysninger og instruktioner under [Konfigurere Dataverse-integration](./hr-admin-integration-common-data-service.md).
 
 ## <a name="data-elements-and-statuses"></a>Dataelementer og statusser
 
@@ -114,7 +111,7 @@ Nogle af disse elementer kopieres ikke, fordi de er miljøspecifikke. Eksempler 
 
 Følgende statusser ændres også, når du kopierer en forekomst:
 
-- Alle brugere undtagen administrator angives til **Deaktiveret**.
+- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator", er angivet til **Deaktiveret**.
 
 - Alle batchjob, bortset fra visse systemjob, angives til **Tilbagehold.**
 
@@ -144,7 +141,7 @@ Udfør følgende trin for hvert brugerdefineret felt, der vises i Dataverse-tabe
 
 Ved at fravælge, anvende ændringer, vælge igen og genanvende ændringer vil det skema, der opdateres i Dataverse, indeholde de brugerdefinerede felter.
 
-Du kan finde flere oplysninger om brugerdefinerede felter under [Oprette og arbejde med brugerdefinerede felter](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+Du kan finde flere oplysninger om brugerdefinerede felter under [Oprette og arbejde med brugerdefinerede felter](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ## <a name="see-also"></a>Se også
 

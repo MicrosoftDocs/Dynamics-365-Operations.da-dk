@@ -1,7 +1,7 @@
 ---
 title: Abonnementssalgspriser
 description: Når du opretter et abonnement, afledes salgsprisen fra den salgsprisopsætningen, der er oprettet i formularen Salgspris (abonnement).
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b4b02af0a535e67818751c437482c3663524474
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fd63fc290263babafabd6e29441f008d0cf10e13
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817407"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569979"
 ---
-# <a name="subscription-sales-prices"></a>Abonnementssalgspriser   
+# <a name="subscription-sales-prices"></a>Abonnementssalgspriser
 
 [!include [banner](../includes/banner.md)]
-
 
 Når du opretter et abonnement, afledes salgsprisen fra den salgsprisopsætningen, der er oprettet i formularen **Salgspris (abonnement)**.
 
@@ -33,14 +32,14 @@ I formularen **Salgspris (abonnement)** kan du oprette salgspriser til et bestem
 
 Hvis periodekoden og valutaen er ens for abonnementet og salgsprisen, vælges der salgspriser til abonnementet på basis af de prioriteter, der er angivet i tabellen nedenfor. En tom celle i tabellen angiver et tomt felt, og et X angiver en værdi, der er lig med værdien i det abonnement, som posteringen genereres fra.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -120,7 +119,6 @@ Hvis periodekoden og valutaen er ens for abonnementet og salgsprisen, vælges de
 </tbody>
 </table>
 
-
 Når der oprettes et abonnementsgebyr, vælges salgsprisen med det største detaljeringsniveau, som angivet i tabellen ovenfor, som salgspris til abonnementet.
 
 ## <a name="update-and-index-subscription-sales-prices"></a>Opdatere og indeksere abonnementssalgspriser
@@ -135,15 +133,15 @@ Når du opretter et abonnementsgebyr, baseres salgsprisen på abonnementets salg
 
 Du vil oprette abonnementssalgspriser på EUR 500 for et nyt projekt 9030. I formularen **Salgspris (abonnement)** opretter du en salgsprislinje for et abonnement, som angivet i følgende tabel:
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -174,14 +172,14 @@ Bemærk, at felterne **Kategori** og **Abonnement** er tomme.
 
 Derefter opretter du følgende abonnementer.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -226,14 +224,14 @@ Der oprettes abonnementsgebyrer med en salgspris på EUR 500 for begge abonnemen
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -274,15 +272,15 @@ Der oprettes abonnementsgebyrer med en salgspris på EUR 500 for begge abonnemen
 
 På et senere tidspunkt vil du angive salgspriser for arten Abn.art1 for projekt 9030. Derfor opretter du en ny salgsprislinje med en salgspris på EUR 550 til kombinationen af projekt 9030 og gebyrarten Abn.art1. Der er nu to linjer med abonnementssalgspriser for projekt 9030, som vist i følgende tabel:
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -317,19 +315,18 @@ På et senere tidspunkt vil du angive salgspriser for arten Abn.art1 for projekt
 </tbody>
 </table>
 
-
 Du gentager den fremgangsmåde, der er beskrevet ovenfor, for at oprette abonnementsgebyrer for begge abonnementer i abonnementsgruppen Abn1. Følgende tabeller viser de posteringer, der er oprettet for hvert abonnement, der knyttes til abonnementsgruppen.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -367,16 +364,10 @@ Du gentager den fremgangsmåde, der er beskrevet ovenfor, for at oprette abonnem
 </tbody>
 </table>
 
-
 I den første postering for abonnement 00020\_135 afledes salgsprisen på EUR 550 fra den abonnementssalgspris, der er oprettet for kombinationen af det specifikke projekt og den specifikke art. I den anden postering for abonnement 00021\_135 bruges salgsprisen på EUR 500 som projektets abonnementssalgspris, fordi der ikke er oprettet en pris til kombinationen af projekt 9030 og arten Abn.art2.
 
 ## <a name="see-also"></a>Se også
 
 [Opdatere og indeksere abonnementssalgspriser](update-and-index-subscription-sales-prices.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

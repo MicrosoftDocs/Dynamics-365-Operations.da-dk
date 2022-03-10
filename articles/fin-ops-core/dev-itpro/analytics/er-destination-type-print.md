@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712706"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Printerdestination
 
@@ -39,7 +39,7 @@ Hvis du vil gøre **Printer**-destinationen tilgængelig i den aktuelle forekoms
 1. Konverter udgående dokumenter for elektronisk rapportering fra Microsoft Office-formater til PDF
 2. Dokumentets ruteplanlægningsagent som elektronisk rapporteringsdestination for udgående dokumenter
 
-[![Aktivere funktionen til ER-printerdestination i Funktionsstyring](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivere funktionen til ER-printerdestination i Funktionsstyring.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Anvendelighed
 
@@ -55,7 +55,7 @@ Hvis du vil gøre **Printer**-destinationen tilgængelig i den aktuelle forekoms
 2. I feltet **Printernavn** skal du vælge den ønskede netværksprinter.
 3. Angiv indstillingen **Gem i udskriftsarkiv?** til **Ja** for at gemme det genererede output i udskriftsarkivet, så det er tilgængeligt til yderligere udskrivning. Hvis du senere vil have adgang til arkiveret, skal du gå til **Organisationsadministration** \> **Forespørgsler og rapporter** \> **Rapportarkiv**.
 
-[![Brug af printerdestinationen](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Brug af printerdestinationen.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Indstillingen **Konverter til PDF** behøver ikke at blive aktiveret, når du konfigurer destinationen **Printer**. PDF-konvertering til udskrivningsformål sker, også selvom indstillingen er slået fra.

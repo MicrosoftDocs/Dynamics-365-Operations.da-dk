@@ -2,11 +2,9 @@
 title: Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
 description: Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79b235af60e452b80d99c13a2fc80d322a02fc04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728025"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
 
@@ -52,3 +50,6 @@ Du kan opdatere tilknytningsdefinitionerne af en dimension med omkostningselemen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

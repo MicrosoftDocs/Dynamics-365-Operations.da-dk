@@ -2,11 +2,9 @@
 title: Tilføj en side med politik om beskyttelse af personlige oplysninger
 description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer en side med politik om beskyttelse af personlige oplysninger i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07a806ac040df9dee284e2466629221fbc3403a4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: faf2072a5c53aa84f0de2e6d2478557bf96b7832e3433ad4cba971bc3f6e5880
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729165"
 ---
 # <a name="add-a-privacy-policy-page"></a>Tilføje en side med politik om beskyttelse af personlige oplysninger
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af, hvordan du tilføjer en side med politik om beskyttelse af personlige oplysninger i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Overblik
 
 Overholdelse af privatlivets fred omfatter organisatoriske foranstaltninger, der informerer webstedets brugere om, hvordan deres data indsamles og håndteres. Brugerne kan derefter beslutte, hvordan de ønsker, at deres personlige data skal håndteres, og kan foretage de nødvendige handlinger.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c1cccccd2b20626dba14d9b0cb97bef10732fd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724437"
 ---
 # <a name="view-and-design-financial-reports"></a>Vise og designe økonomirapporter
 
@@ -151,7 +151,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du vil tilføj
 4. Vælg **Filer** &gt; **Gem som** og giv rapporten navnet **Konsolideret balance og resultatopgørelse side om side**.
 5. Ret basisåret til 2012.
 6. Klik på rullelisten Træ og vælg **Organisationshierarkier**.
-7. Klik på rullelisten Træ, og vælg **Contoso Holdings**.
+7. Klik på rullepilen Træ, og vælg **Contoso Holdings**.
 8. Gem ændringerne, og generer rapporten. Hvis du bliver bedt om det, kan du vælge alle rapporteringsenheder. Når rapporten færdiggøres, oprettes og åbnes, kan du gennemse rapporten.
 9. Vælg **Rapportindstillinger**.
 10. Vælg **Tilføj et dimensionsfilter**, og vælg **Afdeling**.

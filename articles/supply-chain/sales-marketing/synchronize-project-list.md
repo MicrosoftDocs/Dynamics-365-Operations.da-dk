@@ -1,12 +1,10 @@
 ---
 title: Synkronisere projektliste fra Supply Chain Management til Field Service
 description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 12708b35be87baf1ad13296b56507f3246f96394
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010866"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571587"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synkronisere projektliste fra Supply Chain Management til Field Service
 
@@ -31,7 +29,7 @@ ms.locfileid: "5010866"
 
 I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere projekter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 Følgende skabelon og underliggende opgaver bruges til at synkronisere projekter fra Supply Chain Management til Field Service.
@@ -65,4 +63,7 @@ Gør det muligt at spore ændringer for Dataenhed-projekter.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekter (Supply Chain Management til Field Service): Projekter
 
-[![Skabelontilknytning i dataintegration](./media/FSProject1.png)](./media/FSProject1.png)
+[![Skabelontilknytning i dataintegration.](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

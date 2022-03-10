@@ -1,29 +1,26 @@
 ---
 title: Manuel opdatering af aktivtællere
 description: I dette emne beskrives manuel opdatering af aktivtællere i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23a94415a662059ddbd41cc6a0ba9dab24aae44e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776428"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuel opdatering af aktivtællere
 
@@ -57,10 +54,13 @@ Vær opmærksom på følgende punkter:
 
 I illustrationen nedenfor vises et eksempel på siden **Aktivtællere**.
 
-![Figur 1](media/11-work-orders.png)
+![Figur 1.](media/11-work-orders.png)
 
 På siden **Aktivtællere** (**Styring af aktiver** > **Forespørgsler** > **Aktiver** > **Aktivtællere**) kan du foretage tællerregistreringer på flere aktiver på samme tid efter behov.
 
 >[!NOTE]
 >Du kan konfigurere et interval for at definere afvigelser i manuelle tællerregistreringer. Du kan også angive den type meddelelse, der vises, hvis registreringerne er uden for det angivne interval. Du kan finde flere oplysninger om, hvordan du konfigurerer tællere, i [Tællere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

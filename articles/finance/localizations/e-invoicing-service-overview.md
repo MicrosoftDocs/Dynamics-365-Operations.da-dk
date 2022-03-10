@@ -3,7 +3,7 @@ title: Oversigt over elektronisk fakturering
 description: Dette emne indeholder oplysninger om elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344752"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983843"
 ---
 # <a name="electronic-invoicing-overview"></a>Oversigt over elektronisk fakturering
 
@@ -50,8 +50,10 @@ I øjeblikket er Elektronisk fakturering tilgængelig for debitorer via programm
 
 Elektronisk fakturering er udrullet i følgende geografiske Azure-områder:
 
-- United States
+- USA
 - Europa
+- Storbritannien
+- Asien
 
 > [!NOTE]
 > Elektronisk fakturering understøtter ikke udrulninger i det lokale miljø.

@@ -1,30 +1,27 @@
 ---
 title: Formler og formelversioner
 description: Dette emne indeholder oplysninger om formler og formelversioner. En formel definerer materialerne, ingredienserne og udfaldet for en bestemt proces i procesproduktion. Formler, der bruges til at planlægge og fremstille produkter i procesproduktion.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424562"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570267"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler og formelversioner
 
@@ -71,3 +68,6 @@ Funktionen Skalerbar er kun tilgængelig, hvis alle varekomponenter i formlen er
 
 ## <a name="use-step-consumption"></a>Brug af trinforbrug
 Trinforbrug fjerner kravet om, at du skal angive en mængde under fanen **Formellinje** for en ingrediens. I stedet er trinforbrug konfigureret, så det har en **Fra serie**-værdi og en **Mængde**-værdi. Oplysningerne fra trinforbruget pr. seriepost, der opfylder mængden på batchordren vælges. Trinforbrug er nyttigt, når forbrugsraten ikke er lineær i forhold til batchordrestørrelsen og kun øger behovet, når en bestemt mængdetærskel er opfyldt. For at aktivere denne funktion for en ny formel under gruppen **Forbrugsberegning** skal du ændre formelindstillingen for den relevante ingrediens fra **Standard** til **Trin**. Du kan angive denne forbrugsmetode under fanen **Konfiguration** på siden **Formellinje**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

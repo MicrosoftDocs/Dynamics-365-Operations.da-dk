@@ -2,11 +2,9 @@
 title: Oversigt over sider med produktdetaljer
 description: Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 01/23/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b0f50b4e7b78f4a5b9fe674a101476879923e10d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979822"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986195"
 ---
 # <a name="product-details-pages-overview"></a>Oversigt over sider med produktdetaljer
 
@@ -29,13 +27,11 @@ ms.locfileid: "4979822"
 
 Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversigt
-
 En PDP viser detaljerede oplysninger om et produkt og gør det muligt for kunderne at vælge produktindstillinger, f.eks. størrelse, stil og farve. En PDP bør vise alle de produktoplysninger, en kunde har brug for til at kunne træffe en beslutning om køb.
 
 Følgende illustration viser et eksempel på en PDP.
 
-![Eksempel på en side med produktdetaljer](./media/pdp.PNG)
+![Eksempel på en side med produktdetaljer.](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Overskrifts- og sidefodsmoduler
 
@@ -87,3 +83,6 @@ Hvis marketingindhold er entydigt for et bestemt produkt, kan der føjes et mark
 [Oversigt over sider til kontostyring](quick-tour-account-management.md)
 
 [Forbedre en side med produktdetaljer](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

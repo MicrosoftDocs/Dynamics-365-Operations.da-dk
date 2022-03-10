@@ -2,11 +2,9 @@
 title: Konfigurere kreditorer til 1099-rapportering
 description: Dette emne forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto.
 author: v-kiarnd
-manager: Ann Beebe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7780746d5c3c7cbbc49a074bfdc167e6e3724a55
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 777983c7699a8a7e2c07297d767bed63f37103e1464b19b9afbbee16787a2c53
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727946"
 ---
 # <a name="set-up-vendors-for-1099-reporting"></a>Konfigurere kreditorer til 1099-rapportering
 

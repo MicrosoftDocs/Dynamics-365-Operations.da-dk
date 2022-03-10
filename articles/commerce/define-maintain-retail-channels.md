@@ -2,11 +2,9 @@
 title: Definere og vedligeholde detailkanaler
 description: Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes butikker i Dynamics 365 Commerce. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en butik.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a2ac4a4a42447e4ee57d24548a79f43b88b03927
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef06d79e1fa4d024dc1de0125cc72bdba5671aad384c7988dc63d407323b7abc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760196"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedligeholde detailkanaler
 

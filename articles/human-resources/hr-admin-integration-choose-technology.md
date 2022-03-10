@@ -1,8 +1,8 @@
 ---
 title: Vælg en dataintegrationsteknologi
-description: Denne artikel indeholder oplysninger om integration med data, der administreres Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Dette emne indeholder oplysninger om integration med data, der administreres af Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,29 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720462"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065035"
 ---
 # <a name="choose-a-data-integration-technology"></a>Vælg en dataintegrationsteknologi
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne artikel indeholder oplysninger om integration med data, der administreres af Dynamics 365 Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
+
+Dette emne indeholder oplysninger om integration med data, der administreres af Dynamics 365 Human Resources. Den beskriver forskellige integrationsteknologier, der kan hjælpe dig med at afgøre, hvilke teknologier der bedst opfylder dine behov.
 
 ## <a name="data-integration-background"></a>Baggrund for dataintegration
 
 Forretningsdata er et vigtigt aktiv, der gør dit firma unikt. Din virksomhedens data er yderst værdifulde. Du kan bruge relationerne mellem data, der indsamles i hele virksomheden, for at forbedre forretningsprocesser og Business Intelligence i hele organisationen. Vi bestræber os på at give dig nem, sikker og stabil adgang til dine forretningsdata, uanset hvilket system de kommer fra.
 
-Historisk set har integration af data mellem flere systemer altid været vanskelig.
-Microsoft er i færd med at gøre dataintegration nemmere og et stort skridt i forhold til dette mål realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+Historisk set har integration af data mellem flere systemer altid været vanskelig. Microsoft er i færd med at gøre dataintegration nemmere og et stort skridt i forhold til dette mål realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources gør Dataverse til den foretrukne offentlige brugergrænseflade for Human Resources-data. Med tiden forventer vi, at alle de vigtigste data, der administreres af Human Resources, vil blive vist i Dataverse. Vi anbefaler at vælge Dataverse som teknologi til de fleste former for integrering af programmer.
 
@@ -47,7 +49,7 @@ I følgende afsnit beskrives de forskellige teknologier til dataintegration, der
 
 ### <a name="dataverse-tables"></a>Dataverse-tabeller
 
-Dataverse er den foretrukne offentlige datagrænseflade til Human Resources. Det skyldes Dynamics 365 XRM-platformen, som bruges af [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-løsninger.
+Dataverse er den foretrukne offentlige datagrænseflade til Human Resources. Den er en videreudvikling af Dynamics 365 XRM-platformen, som bruges af [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-løsninger.
 
 Dataverse leverer en platform og en API til datatabeller. Når du implementerer Human Resources, opretter programmet forbindelse til en Dataverse-forekomst. Enhederne for Human Resources-data implementeres i den pågældende Dataverse-forekomst. Tabellerne og deres data er tilgængelige for alle applikationer, der kan oprette forbindelse til Dataverse-forekomsten. Human Resources synkroniserer data til og fra Dataverse-tabellerne.
 
@@ -69,7 +71,7 @@ Dataverse-tabellerne og deres tilknyttede API'er er den bedste mulighed for at f
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheder
 
-Human Resources, der primært bygger på samme platform som Finance and Operations-programmer, tilbyder en [DMF (Data Management Framework)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
+Human Resources, der primært bygger på samme platform som finans- og driftsprogrammer, tilbyder en [DMF (Data Management Framework)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
 
 - Dataverse-tabeller endnu ikke er tilgængelige.
 
@@ -112,7 +114,7 @@ BYOD er velegnet til rapporteringsløsninger, dataintegrationer, datamiks, som e
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverede enheder
 
-De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [Finance and Operations OData-tjenesten](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
+De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [OData-tjenesten i Finans og frift](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
 
 Selvom Dataverse og OData-implementeringen leveret af Dataverse (via [Dynamics 365 Web-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) foretrækkes i forhold til Human Resources-datatjenesten, har Human Resources-datatjenesten p.t. en mere komplet enhedsdækning for Human Resources-data.
 
@@ -128,9 +130,9 @@ Du kan bruge [Dataintegrator-tjenesten](/powerapps/administrator/data-integrator
 
 Data Integrator-projekter er egnede til Dataverse-batch-integrationer. De er et godt valg til integration mellem Dynamics 365-programmerne. Microsoft leverer f.eks. en Data Integrator-skabelon til integration af data fra Human Resources til Dynamics 365 Finance. Du kan få mere at vide om skabelonen i [Integration fra Dynamics 365 Human Resources til Dynamics 365 Finance](hr-admin-integration-finance.md).
 
-### <a name="power-query"></a>Power-forespørgsel
+### <a name="power-query"></a>Power Query
 
-Data Integrator understøtter [Power-forespørgsel](/power-query/power-query-what-is-power-query) via dens [Avanceret forespørgsel-funktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query indeholder en effektiv, fleksibel datafiltrering og -transformering, herunder det avancerede M-formelsprog. Du kender sikkert Power Query, hvis du har udviklet Power BI-rapporter.
+Data Integrator understøtter [Power Query](/power-query/power-query-what-is-power-query) via dens [Avanceret forespørgsel-funktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query indeholder en effektiv, fleksibel datafiltrering og -transformering, herunder det avancerede M-formelsprog. Du kender sikkert Power Query, hvis du har udviklet Power BI-rapporter.
 
 ## <a name="deciding-on-an-integration-technology"></a>Beslutning om en integrationsteknologi
 
@@ -144,7 +146,7 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 | BYOD                   | Ja, planlagt af administrator i Human Resources        | Asynkon, batch                                | Nej<sup>3</sup>                                    | Høj (hundredtusindvis af poster)                    | Understøtter alle DMF-enheder           |
 | OData-aktiverede enheder | Ja, ved hjælp af middleware                    | Synkroniser                                        | Ja, via Human Resources-datatjenesten (OData)  | Varierer efter brug (understøtter sideinddeling til interaktiv brug) | Høj                                |
 | Excel-tilføjelsesprogram           | Nej                                       | Synkroniser                                        | Nej                                        | Mellem (titusindvis af poster)                      | Understøtter alle OData-aktiverede enheder |
-| Dataintegrator        | Ja, planlagt i Dataintegrator        | Asynkon, batch                                | Ingen                                        | Varierer efter brug                                       | Understøtter alle Dataverse-tabeller           |
+| Dataintegrator        | Ja, planlagt i Dataintegrator        | Asynkon, batch                                | Nej                                        | Varierer efter brug                                       | Understøtter alle Dataverse-tabeller           |
 
 <sup>2</sup>Microsoft investerer meget for at øge datadækningen af Dataverse-tabeller. Vi anbefaler, at du bruger Dataverse, når dækningen er tilgængelig. I øjeblikket er Dataverse-datadækningen lav sammenlignet med DMF- og OData-aktiverede enheder.
 

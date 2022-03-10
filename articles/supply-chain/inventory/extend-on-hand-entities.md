@@ -1,25 +1,23 @@
 ---
 title: Udvide dataenheder for lagerbeholdning
 description: Dette emne indeholder et eksempel, der viser, hvordan du føjer udvidede felter til INVENTORSITEONHANDENTITY og INVENTWAREHOUSEONHANDENTITY, så funktionerne på dataenhederne for det disponible lager kan fungere sammen med udvidelserne.
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-27
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2e805b9379c73f7b7eb2820662fad70e28181ebf
-ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 8161d951c3296b63476c4e7b527efca163a4f4b3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5043387"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577690"
 ---
 # <a name="extend-inventory-on-hand-data-entities"></a>Udvide dataenheder for lagerbeholdning
 
@@ -68,3 +66,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Når du har gennemført disse trin, kan du udvide det disponible lager gennem dataenhederne efter lokation og disponibelt lager ved at tilføje de nye felter. På denne måde sikrer du dig, at de udvidede felter genkendes og medtages under dataoverflytning, som bruger de pågældende dataenheder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

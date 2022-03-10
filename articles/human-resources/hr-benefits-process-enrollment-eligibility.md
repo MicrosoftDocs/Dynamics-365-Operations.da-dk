@@ -1,33 +1,35 @@
 ---
-title: Behandle tilmeldingsberettigelse
-description: I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+title: Behandle berettigelse til tilmelding
+description: Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e8997cf24bf24097e46a05acffef8b3839056c57
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111957"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067623"
 ---
-# <a name="process-enrollment-eligibility"></a>Behandle tilmeldingsberettigelse
+# <a name="process-enrollment-eligibility"></a>Behandle berettigelse til tilmelding
 
-I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
 
 1. Vælg **Behandling af berettigelse til tilmelding** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -54,13 +56,13 @@ I denne artikel beskrives, hvordan du kan køre processen til berettigelse af ti
 
 ## <a name="view-process-results"></a>Vis procesresultater
 
-I denne artikel beskrives, hvordan du få vist resultater af berettigelsesprocessen.
+Dette emne beskriver, hvordan du få vist resultater af berettigelsesprocessen.
 
 1.  Vælg **Procesresultater** under **Behandling** i arbejdsområdet **Administration af frynsegoder**.
 
-2.  Følgende felter er angivet i formularen **Procesresultater**:
+2.  Følgende felter er angivet på siden **Procesresultater**:
 
-   | Felt | Beskrivende tekst |
+   | Felt | Betegnelse |
    | --- | --- |
    | **Proces-id** | Det entydige id for kombinationen af Arbejder, Juridisk enhed og Proceskørsel. |
    | **Procestype** | Det identificerer den proces, der blev kørt. Eksempel: Tilmelding. |
@@ -72,3 +74,6 @@ I denne artikel beskrives, hvordan du få vist resultater af berettigelsesproces
    | **Resultatstatus** | Det vil være Berettiget eller Ikke-berettiget. Resultatstatussen vil være Ikke-berettiget, hvis arbejderen ikke opfylder kriterierne for berettigelsesreglen, hvis arbejderen mangler påkrævede oplysninger som f.eks. en betalingsfrekvens eller fast løn, eller hvis der mangler oplysninger i frynsegodeplanen, der forhindrer, at arbejdere kan tilmeldes. |
    | **Resultatmeddelelse** | Angiver, hvorfor en arbejder ikke er berettiget til en frynsegodeplan, eller hvis berettigelsesreglen er overført. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

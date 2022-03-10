@@ -1,36 +1,37 @@
 ---
 title: Konfigurere uddannelseskurser
 description: Human Resourcesadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
-author: andreabichsel
-manager: tfehr
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8557416cee8ae23bb0e9d837677bf8140ecd8a3e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115144"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066744"
 ---
 # <a name="set-up-training-courses"></a>Konfigurere uddannelseskurser
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Human Resourcesadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 
- <a name="set-up-prerequisites"></a> Angiv forudsætninger
----------------------
+##  <a name="set-up-prerequisites"></a> Angiv forudsætninger
 
 Følgende oplysninger er påkrævet og skal konfigureres, før du opretter kurser.
 -   **Kursustyper**
@@ -82,7 +83,7 @@ For hvert kursus kan udføre følgende opgaver.
 - Angive det mindste og største antal deltagere
 - Tildel et kursussted og et lokale
 - Anbefal hoteller til kursusdeltagere
-- Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening
+- Oprette en kursusbeskrivelse, som derefter kan offentliggøres på **Medarbejderselvbetjening**
 
   >**Bemærk!** Du kan kun slette et kursus, hvis ingen har tilmeldt sig kurset. 
 
@@ -128,8 +129,7 @@ I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan 
 ## <a name="course-participants"></a>Kursusdeltagere
 Kursusdeltagere er arbejdere, der deltager i et kursus eller anden undervisning. Du kan kun melde deltagere til åbne kurser. Det laveste og højeste antal deltagere, du kan tilmelde et kursus, er angivet i oversigtspanelet **Generelt** på siden **Kurser**.
 
-<a name="workflow"></a>Arbejdsgang
---------
+## <a name="workflow"></a>Arbejdsgang
 
 Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen. Du kan tildele en arbejdsgang et kursus i oversigtspanelet **Generelt** på siden **Kurser**.
 
@@ -137,3 +137,6 @@ Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

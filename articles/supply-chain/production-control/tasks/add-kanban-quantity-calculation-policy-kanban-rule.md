@@ -1,26 +1,24 @@
 ---
 title: Føje en beregningspolitik for kanban-mængder til en kanban-regel
 description: Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kanban-mængde og føje den til en kanban-regel til optimering af kanban-størrelse og mængde.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab17ba5a6ee950c2d3977990123a8f9277f858ea
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a844d455b1e583f234ddc47280f5cac8ee0ab852
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998802"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579274"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Føje en beregningspolitik for kanban-mængder til en kanban-regel
 
@@ -62,3 +60,6 @@ Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kan
 8. Klik op linket i den valgte række på listen.
     * Vælg politikken, Speaker2016, du lige har oprettet i forrige underopgave.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

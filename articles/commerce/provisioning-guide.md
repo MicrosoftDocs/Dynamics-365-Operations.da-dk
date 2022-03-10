@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777494"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargøre et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -90,16 +90,16 @@ Følg disse trin for at installere miljøet.
 1. Vælg den seneste version i feltet **Programversion**. Hvis du har et specifikt behov for at vælge en anden programversion end den seneste version, skal du ikke vælge en version før **10.0.14**.
 1. I feltet **Platformsversion** skal du bruge den platformsversion, der automatisk vælges for den programversion, du har valgt. 
 
-    ![Valg af program- og platformsversioner](./media/project1.png)
+    ![Valg af program- og platformsversioner.](./media/project1.png)
 
 1. Vælg **Næste**.
 1. Vælg **Demo** miljøtopologi.
 
-    ![Valg af miljøtopologi 1](./media/project2.png)
+    ![Valg af miljøtopologi 1.](./media/project2.png)
 
 1. Angiv et miljønavn på side **Installer miljø**. Lad de avancerede indstillinger være, som de er.
 
-    ![Siden Installer miljø](./media/project4.png)
+    ![Siden Installer miljø.](./media/project4.png)
 
 1. Juster VM-størrelsen efter behov. (Vi anbefaler, at VM-lagerenheden \[SKU\] **D13 V2**.)
 1. Gennemgå prissætnings- og licensvilkårene, og markér derefter afkrydsningsfeltet for at angive, at du accepterer dem.

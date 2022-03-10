@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ac37858c68996c6c8140303327003d93bd357b512f9c634650b7e9df1284496
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769740"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Momsberegningsmetoderne i feltet Grundlag
 
@@ -52,8 +52,7 @@ Hvis nettobeløbet er 10,00, er AFGIFT 1 1,00 (10,00 x 10 %) og AFGIFT 2 = 2,00 
 | Kun én skattekode til Grundlag = Procentdel af bruttobeløb kan bruges til en transaktion. Hvis der bestemmes mere end én momskode for en transaktion, vises der en fejl om, at der ikke kan beregnes moms. |
 
 
-<a name="percentage-of-sales-tax"></a>Procent af moms
------------------------
+## <a name="percentage-of-sales-tax"></a>Procent af moms
 
 Når du vælger Procent af moms i feltet Grundlag, beregnes momsen som en procent af den moms, der er valgt i feltet Moms på moms. Den moms, der er valgt i feltet Moms på moms, beregnes først. Den næste moms beregnes derefter på grundlag af det første momsbeløb.
 ### <a name="example"></a>Eksempel
@@ -119,8 +118,7 @@ Dokument/kladde er angivet til Beløb inkl. moms = Nej Beløb på transaktionsli
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Momssatser baseret på beregningsgrundlaget og beregningsmåderne](marginal-base-field.md)
 

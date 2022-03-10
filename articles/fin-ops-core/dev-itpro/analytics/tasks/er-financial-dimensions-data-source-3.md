@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356313"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605179"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Bruge økonomiske dimensioner som en datakilde (del 3: Design rapporten)
 
@@ -92,7 +92,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 59. Klik på Tilføj attribut.
 60. Skriv 'Desc' i feltet Navn.
 61. Klik på OK.
-![Side med ER-operationsdesigner.](../media/er-financial-dimensions-guides-format1.png)
+![Siden Formatdesignertræ.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Knyt rapportelementer til datakilder
 1. Klik på fanen Tilknytning.
@@ -141,7 +141,7 @@ For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER
 44. Klik på Bind.
 45. Klik på Gem.
 46. Luk siden.
-![Side med ER-operationsdesigner.](../media/er-financial-dimensions-guides-format2.png)
+![Formatdesignerside, rapportelementer, der er knyttet til datakilder.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

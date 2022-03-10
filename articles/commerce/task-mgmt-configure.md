@@ -2,11 +2,9 @@
 title: Konfigurer opgavestyring
 description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere funktioner til opgavestyring i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: ba2283bbfa2fdce75d3fbef6fcff47dd872c7998
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730797"
 ---
 # <a name="configure-task-management"></a>Konfigurer opgavestyring
 
@@ -46,7 +44,7 @@ Udfør følgende trin for at konfigurere indstillinger for opgavestyring for but
 
 Følgende illustration viser, hvordan du konfigurerer indstillinger for opgavestyring for butikschefer.
 
-![Konfigurere indstillinger for opgavestyring for butikschefer](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurere indstillinger for opgavestyring for butikschefer.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurere rettigheder for medarbejdere
 
@@ -80,7 +78,7 @@ Du kan konfigurere POS-beskeder for opgaver ved at følge disse trin.
 
 I følgende illustration vises handlingen **Opgavestyring** på siden **POS-handlinger**.
 
-![Handlingen Opgavestyring på siden POS-handlinger](media/HQ-POS-Tasks-Notifications.png)
+![Handlingen Opgavestyring på siden POS-handlinger.](media/HQ-POS-Tasks-Notifications.png)
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer POS-beskeder, i [Vis ordrebeskeder på POS](notifications-pos.md).
 
@@ -97,7 +95,7 @@ Du konfigurerer feltet **Opgaver** på en startside for POS-programmet ved at f�
 
 Følgende illustration viser et eksempel på et **Opgave**-felt på en POS-startside.
 
-![Opgavefelt på en POS-startside](media/POS-home-screen-tasks-button-image.png)
+![Opgavefelt på en POS-startside.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

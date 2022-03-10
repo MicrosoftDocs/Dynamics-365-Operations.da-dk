@@ -1,12 +1,10 @@
 ---
 title: Afstemme fragt i transportstyring
 description: I dette emne beskrives fragtafstemningsprocessen.
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 89983
 ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7af7bbb500de25e0a796147fae42cd7d943be9df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a63bfd34860c6a7c34cbc526c6a621cbc9666efc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205219"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574899"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Afstemme fragt i transportstyring
 
@@ -37,13 +35,13 @@ Fragtafstemning kan udføres manuelt, eller det kan indstilles til at ske automa
 
 Fragtsatser beregnes af det satsprogram, der er knyttet til den relevante fragtmand. Når en belastning er bekræftet, oprettes der et fragtbrev, og fragtsatserne overføres til det. Fragtsatserne fordeles som diverse tillæg til det relevante kildedokument (indkøbsordre, salgsordre, og/eller flytteordre), afhængigt af den konfiguration, der bruges til den almindelige fakturering. Fragtafstemningsprocessen (der er også kaldes sammenholdelsesprocessen) kan begynde, så snart fragtfakturaen ankommer fra fragtmanden. Fakturaen kan modtages elektronisk eller på papir. Hvis fakturaen modtages på papir, kan du generere en elektronisk faktura ved at bruge fragtbrevet som skabelon.
 
-[![Fragtafstemningsproces](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Fragtafstemningsproces.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Manuel afstemning
 
 Hvis du afstemmer fragt manuelt, skal du sammenholde hver fakturalinje med fragtbrevlinjen eller -linjerne for den belastning, der skal faktureres. Du udfører afstemningen på siden **Sammenholdelse af fragtbrev og faktura**. Hvis beløbet på fakturalinjen ikke stemmer overens med beløbet i fragtbrevet, skal du vælge en afstemningsårsag for forskellen. Hvis der er flere grunde til afstemning, kan du opdele uafstemte beløb på tværs af dem. Årsagen til afstemningen bestemmer, hvordan de forskellige beløb bogføres i finansmodulet. Når afstemningen af hele fakturabeløbet er behandlet, sendes den til godkendelse, og derefter bogføres kladden. I følgende illustration vises, hvordan du opretter en fragtfaktura og udfører fragtafstemning.
 
-[![Fragtafstemningsopgaver](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Fragtafstemningsopgaver.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatisk afstemning
 

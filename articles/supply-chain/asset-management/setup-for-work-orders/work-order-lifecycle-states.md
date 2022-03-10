@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 04e0bb3b1b99299c344a393e72cbe6f380e380af
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768660"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscyklustilstande for arbejdsordre
 
@@ -35,9 +35,9 @@ De livscyklustilstande for arbejdsordrer, der skal være angivet for dine arbejd
 
 I følgende tabel beskrives indstillingerne i sektionerne **Arbejdsordre** og **Tidsplan** i oversigtspanelet **Generelt** på siden **Livscyklustilstande for arbejdsordre** (**Styring af aktiver** \> **Opsætning** \> **Arbejdsordrer** \> **Livscyklustilstande**).
 
-![Siden Livscyklustilstand for arbejdsordre](media/09-setup-for-work-orders.png)
+![Siden Livscyklustilstand for arbejdsordre.](media/09-setup-for-work-orders.png)
 
-| Navn på indstilling                   | Beskrivelse |
+| Navn på indstilling                   | Betegnelse |
 |-------------------------------|-------------|
 | Aktive                        | Vælg **Ja** i denne indstilling, hvis arbejdsordren skal være aktiv, mens den er i denne livscyklustilstand. |
 | Tilføj linje                      | Vælg **Ja** i denne indstilling, hvis der kan føjes arbejdsordrejob til en arbejdsordre, der er i denne livscyklustilstand. |
@@ -93,7 +93,7 @@ I følgende tabel beskrives indstillingerne i sektionerne **Arbejdsordre** og **
     - Hvis der er valgt **Ja** i indstillingen **Vedligeholdelsesnedetid** for den livscyklustilstand, som en arbejdsordre opdateres til, udføres der validering af vedligeholdelsesnedetid på det aktiv, der er knyttet til arbejdsordren. Hvis der er foretaget en registrering af vedligeholdelsesnedetid, men der ikke er en **Afsluttet** registrering, vises der en meddelelse, når arbejdsordren opdateres til denne livscyklustilstand.
     - Hvis standardprojektopsætningen ikke omfatter alle de stadier, du har brug for i opsætningen af Styring af aktiver, kan du oprette brugerdefinerede projektstadier under fanen **Projektstadie** på siden **Parametre for projektstyring og regnskab**. I følgende illustration vises fanen **Projektstadie** på siden **Parametre for projektstyring og regnskab**.
 
-    ![Siden Konfigurer projektstadier for forskellige projekttyper](media/10-setup-for-work-orders.png)
+    ![Siden Konfigurer projektstadier for forskellige projekttyper.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Hvis den livscyklustilstand, du opdaterer en arbejdsordre til, er inaktiv, slettes kladder, der er relateret til arbejdsordren, men som endnu ikke er bogført, automatisk. Denne funktionsmåde hjælper med at sikre automatisk oprydning i ubrugte data. (En livscyklustilstand er inaktiv, hvis indstillingen **Aktiv** for den er **Nej** i oversigtspanelet **Generelt** på siden **Livscyklustilstande for arbejdsordre**).
@@ -111,7 +111,7 @@ Livscyklusmodeller refererer til arbejdsgange, og livscyklustilstande vælges i 
 
 I følgende illustration vises relationen mellem arbejdsordretyper, livscyklusmodeller og livscyklustilstande.
 
-![Siden Arbejdsordretype sammenlignet med siden Livscyklusmodeller for arbejdsordre](media/11-setup-for-work-orders.png)
+![Siden Arbejdsordretype sammenlignet med siden Livscyklusmodeller for arbejdsordre.](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Livscyklusmodeller for arbejdsordre
 
@@ -126,16 +126,16 @@ Når du har oprettet de livscyklustilstande for arbejdsordrer, der kræves til d
 
 5. I oversigts panelet **Livscyklustilstande** skal du vælge de livscyklustilstande, der bør inkluderes i livscyklusmodellen:
 
-    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil](media/12-setup-for-work-orders.png) for at flytte den til sektionen med **Valgte livscyklustilstande**.
-    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige stadier** ![Vælg alle tilgængelige stadier](media/13-setup-for-work-orders.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
-    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil](media/14-setup-for-work-orders.png) for at flytte den til sektionen med **Resterende livscyklustilstande**.
+    - Hvis du vil inkludere en livscyklustilstand i livscyklusmodellen, skal du vælge den i sektionen **Resterende livscyklustilstande** og derefter vælge knappen med højre pil ![Højre pil.](media/12-setup-for-work-orders.png) for at flytte den til sektionen **Valgte livscyklustilstande**.
+    - Hvis du vil inkludere alle de tilgængelige livscyklustilstande i livscyklusmodellen, skal du vælge knappen **Vælg alle tilgængelige stadier** ![Vælg alle tilgængelige stadier.](media/13-setup-for-work-orders.png). Alle livscyklustilstande flyttes til sektionen **Valgte livscyklustilstande**.
+    - Hvis du vil fjerne en livscyklustilstand fra livscyklusmodellen, skal du vælge den i sektionen **Valgte livscyklustilstande** og derefter vælge knappen med venstre pil ![Venstre pil.](media/14-setup-for-work-orders.png) for at flytte den til sektionen **Resterende livscyklustilstande**.
 
 6. Vælg **Opdateringer til livscyklustilstande** for at definere de livscyklustilstande, der kan følge en valgt livscyklustilstand.
 7. I oversigtspanelet **Opdateringer** i feltet **Planlagt tilstand** skal du vælge den livscyklustilstand, der altid skal være valgt for en arbejdsordre, som du har fuldført arbejdsordreplanlægning for, uanset den tidligere livscyklustilstand for arbejdsordren.
 8. Vælg den livscyklustilstand, der altid skal være valgt for en arbejdsordre, hvis arbejdsordreplanlægning slettes, i feltet **Ikke-planlagt livscyklustilstand**.
 9. Gem livscyklusmodellen for arbejdsordren.
 
-![Siden Livscyklusmodeller for arbejdsordre](media/15-setup-for-work-orders.png)
+![Siden Livscyklusmodeller for arbejdsordre.](media/15-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

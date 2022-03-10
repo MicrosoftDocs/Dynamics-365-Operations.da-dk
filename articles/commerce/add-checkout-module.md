@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715500"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
@@ -33,7 +33,7 @@ Et betalingsmodul gengiver data på basis af indkøbsvogn-id'et. Dette indkøbsv
 
 Det følgende billede viser et eksempel på et Fabrikam-betalingsmodul på en betalingsside.
 
-![Eksempel på et betalingsmodul](./media/Checkout.PNG)
+![Eksempel på et betalingsmodul.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaber for betalingsmodul
 
@@ -52,13 +52,13 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Det følgende billede viser et eksempel på et leveringsadressemodul på en betalingsside.
 
-    ![Eksempel på et leveringsadressemodul](./media/ecommerce-shippingaddress.PNG)
+    ![Eksempel på et leveringsadressemodul.](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveringsindstillinger** – Dette modul giver en kunde mulighed for at vælge en leveringsmåde for en ordre. Yderligere oplysninger om dette modul finder du i [Leveringsindstillingsmodul](delivery-options-module.md).
 
     Det følgende billede viser et eksempel på et leveringsindstillingsmodul på en betalingsside.
  
-    ![Eksempel på et leveringsindstillingsmodul](./media/ecommerce-deliveryoptions.PNG)
+    ![Eksempel på et leveringsindstillingsmodul.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Container til betalingssektion** – dette modul er en container, hvor du kan placere flere moduler for at oprette en sektion i betalingsprocessen. Du kan f. eks. indsætte alle betalingsrelaterede moduler i denne container for at få dem vist som én sektion. Dette modul påvirker kun processens layout.
 
@@ -70,7 +70,7 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Det følgende billede viser et eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside.
 
-    ![Eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside](./media/ecommerce-payments.PNG)
+    ![Eksempel på moduler for gavekort, fordelskundepoint og betaling på en betalingsside.](./media/ecommerce-payments.PNG)
 
 - **Kontaktoplysninger** – dette modul giver en kunde mulighed for at tilføje eller ændre kontaktoplysningerne (mailadressen) for en ordre.
 
@@ -80,7 +80,7 @@ Et udtjekningsmodul viser en ordreoversigt og giver mulighed for at afgive en or
 
     Følgende billede viser et eksempel på vilkår og betingelser på en betalingsside.
 
-    ![Eksempel på vilkår og betingelser på en betalingsside](./media/ecommerce-checkout-terms.PNG)
+    ![Eksempel på vilkår og betingelser på en betalingsside.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Enhedsinteraktion i Commerce Scale
 

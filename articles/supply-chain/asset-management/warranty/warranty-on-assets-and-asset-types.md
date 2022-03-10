@@ -1,29 +1,26 @@
 ---
 title: Garantier for aktiver og aktivtyper
 description: I dette emne beskrives, hvordan du konfigurerer garantier for aktiver og aktivtyper i Styring af aktiver.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75de9a51560dcd8fea7998425fee14a27e891972
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcfbd56f5fa1491f13ea65c5fb3d70659c3b945276813d7c1c922c849bf8e3a3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751164"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Garantier for aktiver og aktivtyper
 
@@ -50,7 +47,10 @@ I dette emne beskrives, hvordan du konfigurerer garantier for aktiver og aktivty
     > [!IMPORTANT]
     > Hvis der er valgt en dato i feltet **Garantistart** på en arbejdsordre, bliver garantien gyldig for arbejdsordren på den pågældende dato. Når du opretter en arbejdsordre, indstilles feltet **Garantistart** automatisk til oprettelsesdatoen. Du kan dog ændre datoen, så den svarer til f.eks. startdatoen for en garantiaftale.
     >
-    > ![Siden Arbejdsordre](media/02-warranty.png)
+    > ![Siden Arbejdsordre.](media/02-warranty.png)
 
 > [!NOTE]
 > Når du opretter en arbejdsordre for et aktiv, der er dækket af en leverandørgaranti, modtager du en besked om garantiaftalen, hvis arbejdsordren har en forventet startdato i løbet af garantiperioden. Du kan derefter annullere arbejdsordren efter behov.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

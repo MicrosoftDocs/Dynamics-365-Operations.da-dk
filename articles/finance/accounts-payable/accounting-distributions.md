@@ -1,7 +1,7 @@
 ---
 title: Regnskabsfordelinger
 description: Dette emne indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem.
-author: ShylaThompson
+author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c17c2e00c8c3b32062f70baf1da76a04dcd5d924
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0f81444e0865715925dad2483e8c789221bccb2b
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820949"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595308"
 ---
 # <a name="accounting-distributions"></a>Regnskabsfordelinger
 

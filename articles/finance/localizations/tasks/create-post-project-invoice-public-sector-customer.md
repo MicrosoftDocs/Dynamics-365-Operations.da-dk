@@ -2,26 +2,23 @@
 title: Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor
 description: Denne opgave hjælper dig med at oprette og bogføre en projektfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjFundingSourceDetail, ContactPersonLookup, ProjSalesItemReq, ProjTableLookup, InventItemIdLookupSimple, SalesEditLines,  ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines, ProjInvoiceListPage, ERFormatMappingRunJobTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6524bf0a13c33d910bdd3357b80fb0c0cedabf8d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99b582f7587d9ec71c8e0c6237b5f77572f9d569f76c58b4b3e190011f0cd2aa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756212"
 ---
 # <a name="create-and-post-a-project-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor
 
@@ -92,3 +89,6 @@ Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Impo
 2. Klik på Vis filer.
 3. Klik på Åbn.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

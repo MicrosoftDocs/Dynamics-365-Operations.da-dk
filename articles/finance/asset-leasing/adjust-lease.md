@@ -2,11 +2,9 @@
 title: Justere leasingaftaler
 description: Emnet forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729648"
 ---
 # <a name="adjust-leases"></a>Justere leasingaftaler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Emnet forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres. Aktivleasing er i overensstemmelse med retningslinjerne for, at Accounting Standards Codification Topic 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) omhandler redigering af leasingaftaler. ASC-842-20-15-1 definerer en leasingændring, som enhver ændring af vilkårene og betingelserne i en kontrakt, der medfører en ændring i omfanget af eller overvejelser i forbindelse med en leasingaftale. Punkt 39 i IFRS 16 angiver, at en af modtagerne skal regulere leasingforpligtelsen, så den afspejler ændringer af betalinger af leasingaftalen.
 
@@ -134,3 +133,6 @@ Hvis en leasingaftale er blevet justeret, kan du få vist de forskellige version
 
 2. Hvis du vil se historikplanerne, skal du åbne den ændrede leasingaftale fra siden **Leasingoversigt**, vælge det ønskede kartotek og derefter vælge **Versionshistorik for kartotek** i handlingsruden.
 3. Vælg en version og en plan, der skal vises, på siden **Bogversion**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

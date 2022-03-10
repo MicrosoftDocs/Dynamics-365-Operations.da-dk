@@ -2,11 +2,9 @@
 title: Angive rentesatser for en rentekode
 description: Rentekoder omfatter indstillinger, der bestemmer, hvornår der opkræves rente, og hvordan det beregnes på forfaldne konti.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09808433140f71bf2d7bfaaca87b6c27adb56d86c4c14ad44b37592d416fa2b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716711"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Angive rentesatser for en rentekode
 
@@ -46,10 +44,19 @@ Du kan oprette rentesatser, der beregner en angivet procentdel.
 
 - Rentebeløb, der gælder for alle valutaer.
 - Valgfri rentebeløbsgrænser kan angives.
-- <strong>Procent</strong> vælges** <strong>i feltet **Beregn renten på baggrund af</strong> på siden <strong>Konfigurer rentekoder</strong>.
+- **Procent** vælges i feltet **Beregn renten på baggrund af** på siden **Konfigurer rentekoder**.
 
 Hvis du f.eks. vil oprette en rentekode, der opkræver 5 procent rente for hver to måneder, hvor fakturabetalingen overskrider posteringens forfaldsdato, skal du skrive 2 i feltet **Beregn rente hver** og vælge **Måned**.
 
+> [!NOTE] 
+> Den nye algoritme til beregning af rentenotaer tilføjes ved hjælp af funktionsstyring. Hvis du vil bruge denne algoritme, skal du aktivere funktionen **(GBL) Tillad beregning af rente pr. dag som en årsprocent divideret med funktionen 365**. Du kan finde flere oplysninger om aktivering af funktionen under [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Formlen til beregning af rentenotabeløbet er: 
+>  
+> Rentenotabeløb = Skyldige beløb * Årligt rentebeløb % / 365 * Antal dage for sent
+>  
+> Denne funktion er tilgængelig i version 10.0.18 eller nyere.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Rentesatser baseret på beløb
 Du kan oprette rentesatser, der beregner et bestemt beløb pr. valuta.
 - Der angives et rentebeløb for hver valuta i rentekoden.
@@ -83,7 +90,6 @@ Du angiver intervaloplysninger på følgende måde.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Eksempel 2: Renter efter interval = dage
---------------------------------------------------
 
 Du har oprettet en rentekode, der opkræver rente én gang for hver 15 dage, hvor fakturabetalingen overskrider posteringens forfaldsdato. Du vil basere beregningen på en beløbsmæssig renteværdi i henhold til de trinvise dagsintervaller. Renteværdien vil være 10,00 pr. 15 dage i de første 60 dage, 15,00 pr. 15 dag i dagene 61-90 og 20,00 pr. 15 dage fra dag 91 og efter. Indstil rentekodeværdierne på følgende måde.
 
@@ -104,7 +110,6 @@ Du angiver intervaloplysninger på følgende måde.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Eksempel 3: Renter efter interval = måneder
-----------------------------------------------------
 
 Du har oprettet en rentekode, der opkræver rente én gang for hver måned, hvor fakturabetalingen overskrider posteringens forfaldsdato. Du vil basere beregningen på en procentvis renteværdi i henhold til de trinvise månedsintervaller. Renteværdien vil være 1,5 procent pr. måned for de første tre måneder, 2,0 procent pr. måned for de næste tre måneder og 2,5 procent pr. måned for hver måned ud over de første seks måneder. Indstil rentekodeværdierne på følgende måde.
 
@@ -130,3 +135,6 @@ For at få vist forskellige versioner kan du bruge menupunktet **Pr. dato** til 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Udlign en delvis debitorbetaling med rabatter på kreditnotaer
 description: Denne artikel fører dig gennem et scenarie, hvor en kasserabat er anvendt på en kreditnota, når den oprindelige faktura også havde en kasserabat.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3823dd02f9bc2da935ac7e9845c6314d7cbfcfaa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6476fed0ac10888c51266128f950fc0e1418b13c743894ab0992d051e733c4e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740140"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Udlign en delvis debitorbetaling med rabatter på kreditnotaer
 
@@ -41,7 +39,7 @@ Debitor 4035 har en faktura på 1.000,00 og en kreditnota på 100,00. Hvert doku
 | CCRN-10050 | Kreditnota      | 28-6-2015 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Udlign en kreditnota med en faktura.
-Fra siden **Kundetransaktioner** åbner Arnie siden **Udlign transaktioner**. Han kan bruge siden **Udlign transaktioner** til at udligne fakturaen og kreditnotaen. Som en del af udligningsprocessen får han datoer og beløb for kasserabatten. Han markerer de to dokumenter og klikker derefter på **Bogfør** for at udligne posteringer. Der er en rabat på -1,00 på kreditnotaen, fordi Fabrikam guver rabatter på kreditnotaer.
+Fra siden **Kundetransaktioner** åbner Arnie siden **Udlign transaktioner**. Arnie kan bruge siden **Udlign transaktioner** til at udligne fakturaen og kreditnotaen. Som en del af udligningsprocessen får han datoer og beløb for kasserabatten. Han markerer de to dokumenter og klikker derefter på **Bogfør** for at udligne posteringer. Der er en rabat på -1,00 på kreditnotaen, fordi Fabrikam guver rabatter på kreditnotaer.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag    | Konto | Dato      | Forfaldsdato  | Faktura  | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -60,3 +58,6 @@ Udligningen er på 100,00 og indeholder en betaling på 99,00 og en rabat på 1,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

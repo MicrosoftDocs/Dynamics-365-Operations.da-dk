@@ -2,26 +2,23 @@
 title: Lukke regnskabsåret
 description: Denne procedure gennemgår processen for årsafslutning, som overfører saldi til et nyt regnskabsår.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441639"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902501"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskabsåret
 
@@ -39,7 +36,7 @@ Denne procedure gennemgår processen for årsafslutning, som overfører saldi ti
 
 4. Vælg 'Ja' eller 'Nej' for indstillingen **Opret ultimoposter ved overførsel**.
 
-    Hvis værdien angives til Ja, oprettes der to posteringer. Der oprettes et bilag i det regnskabsår, der afsluttes, for at bringe saldiene for P&L-finanskontiene til nul, og der oprettes et andet bilag i det næste regnskabsår for startsaldiene. Hvis værdien angives til Nej, oprettes der et enkelt bilag i det næste regnskabsår for startsaldiene.  
+    Hvis værdien angives til Ja, oprettes der to posteringer. Der oprettes et bilag i det regnskabsår, der afsluttes, for at bringe saldiene for alle finanskontiene til nul, og der oprettes et andet bilag i det næste regnskabsår for startsaldiene. Hvis værdien angives til Nej, oprettes der et enkelt bilag i det næste regnskabsår for startsaldiene.  
 
 5. Vælg 'Ja' eller 'Nej' for indstillingen **Indstil status til permanent afsluttet for regnskabsåret**.
 
@@ -83,3 +80,6 @@ Denne procedure gennemgår processen for årsafslutning, som overfører saldi ti
 23. Årsafslutningen køres som standarder i batch. Det er den bedste praksis for langvarige processer, der skal køres i batchtilstand. Det er typisk en af disse processer, hvilket er grunden til, at standarden er at bruge batchtilstand.  
 24. Klik på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

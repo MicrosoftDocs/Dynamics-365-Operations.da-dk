@@ -2,35 +2,34 @@
 title: Nyheder eller ændringer i Dynamics 365 Human Resources 2. december 2020
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 2. december 2020.
 author: marcelbf
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
-ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
+ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "5080032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782653"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 2. december 2020
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
-Yderligere oplysninger om nye funktioner og de forventede generelle tilgængelighedsdatoer finder du i [Oversigten over Dynamics 365 Human Resources 2020-udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Yderligere oplysninger om nye funktioner og de forventede generelle tilgængelighedsdatoer finder du i [Oversigten over Dynamics 365 Human Resources 2020-udgivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I denne frigivelse
 
@@ -42,10 +41,10 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 
 | Funktion | Frigivelsesplan | Dokument |
 | --- | --- | --- |
-| Ledere, der kan sende rekrutteringsanmodninger om stillinger | [Ledere, der kan sende en rekrutteringsanmodning om åbne stillinger](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Tilføje en rekrutteringsanmodning](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Udvidet kandidatprofil i Personalestyring | [Udvidet kandidatprofil i Personalestyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Tilføje eller redigere en kandidatprofil](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Muliggøre forenklet integration med rekrutteringsudbydere | [Muliggøre forenklet integration med rekrutteringsudbydere](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobkandidater](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
-| Brugerdefinerede links i selvbetjening for leder | [Brugerdefinerede links i selvbetjening for leder](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Brugerdefinerede links i selvbetjening for leder](https://aka.ms/MSSCustomLinks) |
+| Ledere, der kan sende rekrutteringsanmodninger om stillinger | [Ledere, der kan sende en rekrutteringsanmodning om åbne stillinger](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Tilføje en rekrutteringsanmodning](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Udvidet kandidatprofil i Personalestyring | [Udvidet kandidatprofil i Personalestyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Tilføje eller redigere en kandidatprofil](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Muliggøre forenklet integration med rekrutteringsudbydere | [Muliggøre forenklet integration med rekrutteringsudbydere](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobkandidater](./hr-personnel-recruit.md) |
+| Brugerdefinerede links i selvbetjening for leder | [Brugerdefinerede links i selvbetjening for leder](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Brugerdefinerede links i selvbetjening for leder](./hr-employee-manager-self-service-custom-links.md) |
 
 
 ### <a name="bug-fixes"></a>Fejlrettelser
@@ -55,7 +54,7 @@ Følgende fejlrettelser er inkluderet i denne version.
 > [!NOTE]
 > Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
 
-| Fejlnummer | Udsted | Betegnelse |
+| Fejlnummer | Udsted | Beskrivelse |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult skal omfatte datetime, der blev brugt til behandlingen. | Resultatet af BenefitEligibity-behandlingen omfatter nu datetimestamp for seneste behandling, som manglede tidligere. |
 | 526903 | Der kan ikke tilmeldes frynsegoder for planer med afhængige, når **Vælg automatisk udpegede modtagere** er aktiveret i **Delte parametre for personale**. | Problemet, når der ikke kunne registreres frynsegoder for de afhængige, når indstillingen **Vælg automatisk udpegede modtagere** var slået til for standard udpegede modtagere, er løst. |
@@ -72,22 +71,25 @@ Følgende nye funktioner findes som prøveversion. Du kan få flere oplysninger 
 
 | Funktion | Frigivelsesplan | Dokument |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Medarbejderorlovs- og -fraværsoplevelse i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Administrere fraværsanmodninger i Teams](hr-teams-leave-app.md) |
-| Udvidede anmodninger om og godkendelser af arbejdsprocesser | [Forbedringer af arbejdsprocesser for organisations- og personalestyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsindstilling til placering af listen Workflowopgaver, der er tildelt til mig](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Integration med LinkedIn Talent Hub | [Integration med LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrere med LinkedIn talent-hub](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-|Visning af orlov for ledere på tværs af firmaet | [Visning af orlov for medarbejdere på tværs af firmaet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere parametre for orlov og fravær](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|Give yderligere indsigt i orlovssaldi| [Give yderligere indsigt i orlovssaldi](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Administrere medarbejderorlov](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| Ledere, der kan sende rekrutteringsanmodninger om stillinger | [Ledere, der kan sende en rekrutteringsanmodning om åbne stillinger](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Tilføje en rekrutteringsanmodning](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Udvidet kandidatprofil i Personalestyring | [Udvidet kandidatprofil i Personalestyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Tilføje eller redigere en kandidatprofil](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Muliggøre forenklet integration med rekrutteringsudbydere | [Muliggøre forenklet integration med rekrutteringsudbydere](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobkandidater](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Human Resources-app i Microsoft Teams | [Medarbejderorlovs- og -fraværsoplevelse i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)<br>[Administrere fraværsanmodninger i Teams](hr-teams-leave-app.md) |
+| Udvidede anmodninger om og godkendelser af arbejdsprocesser | [Forbedringer af arbejdsprocesser for organisations- og personalestyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsindstilling til placering af listen Workflowopgaver, der er tildelt til mig](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Integration med LinkedIn Talent Hub | [Integration med LinkedIn Talent Hub](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrere med LinkedIn talent-hub](./hr-admin-integration-linkedin.md) |
+|Visning af orlov for ledere på tværs af firmaet | [Visning af orlov for medarbejdere på tværs af firmaet](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere parametre for orlov og fravær](./hr-leave-and-absence-parameters.md) |
+|Give yderligere indsigt i orlovssaldi| [Give yderligere indsigt i orlovssaldi](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Administrere medarbejderorlov](./hr-leave-and-absence-manage-employee-leave.md) |
+| Ledere, der kan sende rekrutteringsanmodninger om stillinger | [Ledere, der kan sende en rekrutteringsanmodning om åbne stillinger](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Tilføje en rekrutteringsanmodning](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Udvidet kandidatprofil i Personalestyring | [Udvidet kandidatprofil i Personalestyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Tilføje eller redigere en kandidatprofil](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Muliggøre forenklet integration med rekrutteringsudbydere | [Muliggøre forenklet integration med rekrutteringsudbydere](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobkandidater](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>Kommer snart
 
-Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivelser under [Oversigt over Dynamics 365 Human Resources 2020 udgivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivelser under [Oversigt over Dynamics 365 Human Resources 2020 udgivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="see-also"></a>Se også
 
 [Nyheder eller ændringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversigt over Dynamics 365 Human Resources 2020 frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Oversigt over Dynamics 365 Human Resources 2020 frigivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Opdater proces](hr-admin-setup-update-process.md)</br>
 [Administrere funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

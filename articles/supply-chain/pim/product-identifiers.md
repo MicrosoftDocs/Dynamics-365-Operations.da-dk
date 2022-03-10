@@ -16,16 +16,16 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569667"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063335"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ I Dynamics 365 Supply Chain Management er det primære id for et produkt produkt
 
 I mange tilfælde er produktnummeret ikke oprindeligt oprettet i Dynamics 365 Supply Chain Management. I stedet tilknyttes til et produkt i et system til administration af produktlivscyklus (PLM) eller et system til administration af produktoplysninger (PDM). I så fald skal du bruge dataenheder til at importere produkterne og produktvarianterne. I Supply Chain Management bruges numrene i alle operationer.
 
-Når du implementerer Supply Chain Management, skal du foretage specielle overvejelser med hensyn til din strategi for produktnumre. En godt nummereringssystem forbedrer logistikprocesser og hjælper med til at forhindre fejl. Et godt produkt-id må højst være på 15 tegn. Ideelt set har det mindre end 10 tegn og indeholder mere end fem klassificeringstegn. Du kan også bruge søgenavne til at aktivere hurtig søgning. Et søgenavn er et ekstra navn, der repræsenterer klassificeringer af et produkt.
+Når du implementerer Supply Chain Management, skal du foretage specielle overvejelser med hensyn til din strategi for produktnumre. En godt nummereringssystem forbedrer logistikprocesser og hjælper med til at forhindre fejl. Et produkt-id for et gode skal normalt have 20 tegn eller mindre, men det anbefales generelt at bruge mindre end 10 tegn, herunder ikke mere end 5 klassificeringstegn. Du kan også bruge søgenavne til at aktivere hurtig søgning. Et søgenavn er et ekstra navn, der repræsenterer klassificeringer af et produkt.
 
 Når du bruger Microsoft Dataverse, er produktnummeret i Supply Chain Management også produktnummeret i Microsoft Dataverse. Produktvarianter synkroniseres til Dataverse som specifikke produkter.
 

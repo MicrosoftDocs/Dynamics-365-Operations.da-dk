@@ -1,6 +1,6 @@
 ---
 title: Produktparathed
-description: I følgende emner forklares det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
+description: I følgende emne forklares det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -11,23 +11,25 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723545"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102983"
 ---
 # <a name="product-readiness"></a>Produktparathed
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge parathedskontroller til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data. Hvis der er en åben parathedskontrol af et produkt, kan produktet ikke frigives eller bruges i transaktioner.
+Du kan bruge parathedskontroller som hjælp til at sikre, at alle de nødvendige masterdata er angivet for et produkt, før det bruges i transaktioner. Når der bruges parathedskontrol, bliver en bruger eller et team ansvarlig for at validere specifikke foruddefinerede produktrelaterede data.
 
-Afkrydsningsfelt **Aktiv** for et teknisk produkt, en variant eller en version er kun tilgængeligt, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. På dette tidspunkt kan produktet, versionen eller varianten frigives til andre firmaer og bruges i transaktioner. Du kan oprette parathedskontroller for nye produkter, nye varianter og nye tekniske versioner.
+Du kan markere afkrydsningsfeltet **Aktiv** for et teknisk produkt, en variant eller en version, når alle nødvendige data er angivet og kontrolleret, og når alle parathedskontroller er blevet behandlet. Hvis en eller flere kontroller ikke er behandlet for produktet, versionen eller varianten, vil du få vist en advarsel om, at ikke alle kontroller er udført, når du prøver at markere afkrydsningsfeltet **Aktiv**.
 
-Du kan også anvende parathedskontroller på standardprodukter (ikke-tekniske). Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne.
+Du kan oprette parathedskontroller for nye tekniske produkter, varianter og versioner. Du kan også anvende parathedskontroller til standardprodukter (ikke-tekniske) (se også [Parathedskontrol af standardprodukter](#standard-products)). 
+
+Du kan bruge standardprodukter i transaktioner, selvom ikke alle parathedskontroller er fuldført. Hvis du skal spærre for, at et produkt kan bruges i transaktioner, skal du bruge dets livscyklustilstand. Du kan tildele en livscyklustilstand, der forhindrer, at et produkt bruges i transaktioner, og derefter tildele en ny livscyklustilstand, der tillader de påkrævede transaktioner, når alle parathedskontroller er fuldført.
 
 ## <a name="types-of-readiness-checks"></a>Typer af parathedskontrol
 
@@ -157,7 +159,7 @@ For hver række, du tilføjer, skal du angive følgende felter.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Tildele parathedspolitikker til standardprodukter og tekniske produkter
 
-Når du opretter et nyt produkt baseret på en teknisk kategori, opretter du både et *frigivet produkt* og et relateret *delt produkt*. Den måde, hvorpå parathedspolitikker fortolkes for et frigivet produkt, afhænger af, om du har aktiveret funktionen *Parathedskontroller af produkt*. (Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne).
+Når du opretter et nyt produkt baseret på en teknisk kategori, opretter du både et *frigivet produkt* og et relateret *delt produkt*. Den måde, som parathedspolitikkerne løses på for et frigivet produkt, afhænger af, om funktionen *Kontrol af produktparathed* er slået til for systemet (se afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne for at få oplysninger om denne funktion, og hvordan du kan slå den til eller fra).
 
 - Når funktionen *Parathedskontroller af produkt* er *deaktiveret* på systemet, angives parathedspolitikken, og den vises kun for poster i den [tekniske kategori](engineering-versions-product-category.md). For at vide, hvilken politik der gælder for et frigivet produkt, markerer systemet feltet **Parathedspolitik for produkt** for den relaterede tekniske kategori. Du kan ændre parathedspolitikken for et eksisterende produkt ved at redigere den relaterede tekniske kategori (ikke det delte produkt).
 - Når funktionen *Parathedskontroller af produkt* er *aktiveret*, føjes feltet **Politik for produktparathed** til siden **Produkt** (hvor delte produkter er konfigureret) og til siden **Frigivet produkt** (hvor værdien er skrivebeskyttet og hentes fra det relaterede delte produkt). Systemet finder parathedspolitikken for et frigivet produkt ved at kontrollere det relaterede delte produkt. Når du bruger en teknisk kategori til at oprette et nyt teknisk produkt, opretter systemet både et delt produkt og et frigivet produkt og kopierer alle indstillinger i **Politik for produktparathed** for den tekniske kategori til det nye delte produkt. Du kan derefter ændre parathedspolitikken for et eksisterende produkt ved at redigere det relaterede delte produkt (ikke den frigivne tekniske kategori).
@@ -180,30 +182,9 @@ Følg disse trin, hvis du vil tildele en parathedspolitik til en teknisk kategor
 
 Du kan aktivere parathedskontroller af produkter for standardprodukter (ikke-tekniske) ved at aktivere funktionen *Parathedskontroller af produkt* i Funktionsstyring. Denne funktion foretager et par små ændringer i systemet til parathedskontrol, så det understøtter standardprodukter.
 
-### <a name="enable-readiness-checks-on-standard-products"></a>Aktivere parathedskontroller af standardprodukter
+### <a name="enable-or-disable-readiness-checks-on-standard-products"></a>Aktivere eller deaktivere parathedskontroller af standardprodukter
 
-Følg disse trin for at gøre det muligt for systemet at udføre parathedskontroller af standardprodukter.
-
-- Aktivér Styring af tekniske ændringer i systemet, som beskrevet i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
-- Brug [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere den funktion, der kaldes *Parathedskontroller af produkt*.
-
-<!-- KFM: This section requires confirmation before publishing
-
-### How readiness checks are created for standard products
-
-When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
-
--->
+Denne funktion kræver, at både *Styring af tekniske ændringer* og *Kontroller af produktparathed* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Oprette parathedspolitikker for standardprodukter
 

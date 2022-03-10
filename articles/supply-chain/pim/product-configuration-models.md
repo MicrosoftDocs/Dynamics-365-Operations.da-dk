@@ -1,26 +1,28 @@
 ---
 title: Oversigt over produktkonfigurationsmodeller
 description: Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
-author: cvocph
+author: t-benebo
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 4031
+ms.custom:
+- "4031"
+- intro-internal
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8629c2af9d28d821996707532ae0c77b072a8f94
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820292"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984640"
 ---
 # <a name="product-configuration-models-overview"></a>Oversigt over produktkonfigurationsmodeller
 

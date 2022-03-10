@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd1906200038c27e63f9434bba27e7146f4c80c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575602"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103157"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåge kørsel af en varedisponering
 
@@ -28,12 +28,11 @@ ms.locfileid: "7575602"
 
 På siden **Vis varedisponeringens status** kan du få vist detaljer om den historiske varedisponeringskørsel i form af et Gantt-diagram. Denne funktionalitet kan hjælpe dig med at forstå den tid, der bruges på de forskellige faser i varedisponeringen. For et aktuelt aktivt planlægningsjob kan siden **Vis varedisponeringens status** bruges til at spore statussen og få vist den estimerede resterende tid.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Aktiver og anvend funktionen Visualisering af varedisponeringens status
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Visualisering af status for varedisponering
 
-For at anvende denne funktionalitet skal du følge disse trin.
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Visualisering af status for varedisponering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. I arbejdsområdet **Funktionsstyring** på fanen **Ny** skal du vælge **Visualisering af varedisponeringens status** fra listen. Hvis funktionen ikke vises under den fanen **Ny**, skal du se på fanerne **Ikke aktiverede** og **Alle**.
-1. Vælg **Aktiver nu**. Du kan også vælge **Planlæg** og derefter vælge det tidspunkt, hvor funktionen skal aktiveres.
+### <a name="use-the-master-plan-progress-visualization-feature"></a>Bruge funktionen Visualisering af status for varedisponering
 
 Siden **Vis varedisponeringens status** kan vise både tidligere planlægningsjobs og aktive planlægningsjobs. 
 

@@ -1,12 +1,10 @@
 ---
 title: Midler i den offentlige sektor
-description: Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
-author: ShylaThompson
-manager: AnnBe
+description: Dette emne beskriver, hvordan enheder i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed. Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav.
+author: v-kiarnd
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59ac067257b273dc8d778142a536c5035946acf1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 83f61fe55134565db18a930fe8cde99b2083143d
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992710"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817698"
 ---
 # <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
 
@@ -31,13 +29,12 @@ ms.locfileid: "4992710"
 
 Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
 
-<a name="what-general-ledger-parameters-should-be-set-for-funds"></a>Hvilke Finans-parametre skal angives for midler?
--------------------------------------------------------
+## <a name="what-general-ledger-parameters-should-be-set-for-funds"></a>Hvilke Finans-parametre skal angives for midler?
 
 Hvis du vil vide mere om de Finans-parametre, der er nødvendige for midler, skal du se under [Finans i den offentlige sektor](general-ledger-public-sector.md).
 
 ## <a name="what-fund-classes-and-fund-types-do-i-need-to-set-up"></a>Hvilke middelklasser og -typer skal jeg angive?
-GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder.  GAAP identificerer otte middeltyper, der er kategoriseret i de tre middelklasser:
+GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder. GAAP identificerer otte middeltyper, der er kategoriseret i de tre middelklasser:
 
 -   Offentlige midler
     -   Generelle midler
@@ -75,9 +72,8 @@ Her er en liste over nogle af de midler, der kan bruges af myndighederne i en by
 
 Følgende tabel viser disse midler grupperet efter klasse og middeltype.
 
-|                |                        |                 |                                  |
+| Finansieringskildeklasse | Finansieringskildetype          | Finansieringskildenummer | Navn på finansieringskilde                    |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Finansieringskildeklasse** | **Finansieringskildetype**          | **Finansieringskildenummer** | **Navn på finansieringskilde**                    |
 | Offentlig   | Generelt middel           | 1103            | Generelt middel                     |
 |                | Særlige indtægtsmidler  | 1343            | School of Technology             |
 |                |                        | 1372            | Informationsteknologi           |
@@ -108,3 +104,6 @@ Du kan finde flere oplysninger under følgende emner:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

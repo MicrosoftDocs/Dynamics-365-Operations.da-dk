@@ -1,27 +1,25 @@
 ---
 title: Tilføje en eksisterende aktivitet til en produktionsflowversion
 description: Når du opretter nye versioner af produktionsflow, kan du vælge at føje aktiviteter, der er oprettet for de ældre versioner, til den nye version.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff549fd6ed526eefc5514ce2013cc31a700510f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1f73274c6e102df3007793e027587793d87c4f83
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006935"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579298"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Tilføje en eksisterende aktivitet til en produktionsflowversion
 
@@ -55,3 +53,6 @@ Denne opgave kræver et produktionsflow, hvor version og aktiviteter allerede er
 3. Indtast eller vælg en værdi i feltet Aktivitet.
 4. Klik på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

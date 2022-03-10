@@ -2,8 +2,7 @@
 title: ER-funktionen DATETIMEVALUE
 description: Dette emne indeholder oplysninger om, hvordan funktionen DATETIMEVALUE til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
-ms.date: 12/03/2019
-ms.topic: article
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cec8f16e683c7eb808fc353830f2baa5c46e31d1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7a9da0b9461926b1033d6a97b37d4b43a86d8dad
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747005"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485516"
 ---
 # <a name="datetimevalue-er-function"></a>ER-funktionen DATETIMEVALUE
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen `DATETIMEVALUE` returnerer en værdi i form af *DatoKlokkeslæt*, som er konverteret fra en given tekst i det angivne format og i en eventuelt angivet [kultur](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) til en dato-/klokkeslætsværdi. Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
+Funktionen `DATETIMEVALUE` returnerer en værdi i form af *[DatoKlokkeslæt](er-formula-supported-data-types-primitive.md#datetime)*, som er konverteret fra en given tekst i det angivne format og i en eventuelt angivet [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) til en dato-/klokkeslætsværdi. Oplysninger om understøttede formater finder du under [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) og [brugerdefineret](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaks 1
 
@@ -42,21 +41,21 @@ DATETIMEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumenter
 
-`text`: *Streng*
+`text`: *[Streng](er-formula-supported-data-types-primitive.md#string)*
 
 Tekst, der repræsenterer den værdi, der skal formateres.
 
 `format`: *Streng*
 
-Den angivne tekst format.
+Den angivne tekst format. Oplysninger om understøttede formater finder du under [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) og [brugerdefineret](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *Streng*
 
-Den kultur, der bruges til formatering af den givne tekst.
+Den kultur, der bruges til formatering af den givne tekst. Du kan finde oplysninger om de understøttede kulturer under [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Returnerede værdier
 
-*DateTime*
+*Dato/klokkeslæt*
 
 Den returnerede dato-/klokkeslætsværdi.
 

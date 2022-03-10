@@ -2,7 +2,6 @@
 title: Forberede programspecifikke metadata til RCS og ER
 description: Dette emne forklarer, hvordan du forbereder programspecifikke metadata til Regulatory Configuration Service (RCS) og elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 37da06f4ba86594c6368dcd1049456c58bf87e3a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735592"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Forberede programspecifikke metadata til RCS og ER
 

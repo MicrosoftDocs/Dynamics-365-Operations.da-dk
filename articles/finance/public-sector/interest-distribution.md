@@ -1,8 +1,8 @@
 ---
 title: Konfigurere rentefordeling for kontantkonti
 description: I dette emne beskrives, hvordan du kan oprette dine bankkonti på siden for rentefordelingsregler. Du skal fuldføre denne opsætning, før du fordeler renten.
-author: velofog
-ms.date: 06/14/2019
+author: v-kiarnd
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,19 +11,20 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: v-kiarnd
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 1e368c56a40e9a8dc3a0b02dd238f163bc7c3a3f46acabfc7f2d4e70494b757e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2c85fff681be70f505e47a9e783284a5b1619fb
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780308"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890686"
 ---
 # <a name="set-up-interest-distribution-for-cash-accounts"></a>Konfigurere rentefordeling for kontantkonti
 
 [!include[banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Din institution kan tildele (fordele) renten på en bankkonto til bestemte finanskonti baseret på den gennemsnitlige daglige saldo for kontantkonti. Du kan bruge denne proces til at oprette en avanceret finanspost for rentebeløbene. Du kan også generere rentebeløbene til gennemsyn uden at bogføre dem.
 
@@ -67,6 +68,17 @@ Før du fordeler renten, skal du oprette dine bankkonti på siden **Rentefordeli
     - Vælg den bogføringsdefinition, der skal bruges til den avancerede finanspost, i feltet **Bogføringsdefinition**.
 
 6. Vælg **OK**. En meddelelse viser nummeret på den avancerede finanspost, der automatisk oprettes.
+
+## <a name="pre-processing-for-increased-performance"></a>Forbehandling for at øge ydeevnen
+
+Hvis din organisation ofte ændrer kontoplanen eller de konti, der er relateret til kontantkonti, kan det tage et godt stykke tid at køre rentefordelingsprocessen. Du kan dog hjælpe med at reducere tiden ved at bruge funktionen **Brug batchbehandling til at opdatere konti til rentedistribution** til at konfigurere forbehandling for disse konti. 
+ 
+Før du kan bruge funktionen, skal den være slået til i dit system. Administratorer kan bruge området **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+ 
+- **Modul:** Finans
+- **Funktionsnavn:** Brug batchbehandling til at opdatere konti til rentedistribution
+ 
+Når du aktiverer funktionen, konfigurerer systemet to batchjob. Der køres et indledende batchjob én gang for at forbehandle dataene og de regler, der bruges i rentedistributionsprocessen. Der oprettes også et tilbagevendende batchjob med navnet **Kør den planlagte forbehandling af finanskonti, der bruges til rentedistribution**. Som standard køres processen igen hver aften. Du kan dog ændre hyppigheden i området for batchjob.
 
 ## <a name="calculated-amounts"></a>Beregnede beløb
 

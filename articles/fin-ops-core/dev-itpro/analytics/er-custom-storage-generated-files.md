@@ -2,11 +2,9 @@
 title: Angive brugerdefinerede lagersteder til oprettede dokumenter
 description: I dette emne beskrives, hvordan du kan udvide listen over placering til lagring af dokumenter, som genereres ved elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680752"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594903"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angive brugerdefinerede lagersteder til oprettede dokumenter
 
@@ -29,7 +27,7 @@ Med API'en (application programming interface) i den elektroniske rapporteringss
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Installer en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal også have adgang til denne topologi for en af følgende roller:
+Installer en topologi, der understøtter fortløbende build. Du kan finde flere oplysninger under [Installere topologier, der understøtter fortløbende build og automatisering af test](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Du skal også have adgang til denne topologi for en af følgende roller:
 
 - Udvikler til elektronisk rapportering
 - Funktionel konsulent i elektronisk rapportering
@@ -43,7 +41,7 @@ Alle opgaverne i dette emne kan fuldføres i **USMF**-firmaet.
 
 Hvis du vil generere de dokumenter, som du planlægger at tilføje en brugerdefineret lagerplacering for, skal du [importere](er-download-configurations-global-repo.md) konfigurationen af ER-formatet **Rul anlægsaktiver fremad** til den aktuelle topologi.
 
-![Siden Konfigurationslager](./media/er-custom-storage-generated-files-import-format.png)
+![Siden Konfigurationslager.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Køre rapporten Rul anlægsaktiver fremad
 
@@ -54,7 +52,7 @@ Hvis du vil generere de dokumenter, som du planlægger at tilføje en brugerdefi
 5. Gå til feltet **Formattilknytning**, og vælg **Rul anlægsaktiver fremad**.
 6. Vælg **OK**.
 
-![Kørselsdialogboks for rapporten Rul anlægsaktiver fremad](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Kørselsdialogboks for rapporten Rul anlægsaktiver fremad.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 I Microsoft Excel skal du gennemse det udgående dokument, der er oprettet, og som kan hentes. Denne funktionsmåde er [standardfunktionsmåden](electronic-reporting-destinations.md#default-behavior) for et ER-format, der ikke er konfigureret [destinationer](electronic-reporting-destinations.md) for, og som kører i interaktiv tilstand.
 
@@ -257,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Rediger den eksisterende `AssetRollForwardService`-klasse, og skriv kode for at oprette en brugerdefineret destinationsfabrik for rapportkørslen. Bemærk, at når der er oprettet en brugerdefineret destinationsfabrik, overføres den applikationsbaserede parameter, der angiver en destinationsmappe. På denne måde bruges denne destinationsmappe til lagring af genererede filer.
 
     > [!NOTE] 
-    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-undtagelse ved kørsel.
+    > Kontroller, at den angivne mappe (**c:\\0** i dette eksempel) findes i det lokale filsystem på den server, der kører AOS-tjenesten. Ellers udløses der en [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-undtagelse ved kørsel.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -341,3 +339,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Destinationer for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startside for udvidelsesmuligheder](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

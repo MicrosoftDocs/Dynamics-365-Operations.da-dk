@@ -3,7 +3,7 @@ title: Oversigt over avanceret bankafstemning
 description: I denne artikel beskrives forløbet for den avancerede bankafstemningsproces. Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne.
 author: panolte
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93ba7c8dc29a50de4b4cec342a5a83efe03e6419
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 5ebddf6c77df227f896e6f275f741ea69fb68474
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336135"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983586"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>Oversigt over avanceret bankafstemning
 

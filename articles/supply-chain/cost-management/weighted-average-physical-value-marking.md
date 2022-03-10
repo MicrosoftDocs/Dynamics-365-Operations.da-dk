@@ -13,15 +13,15 @@ ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a9cdd16f0a1592690547a687a731de83a720018
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94e61384ad2d0880a6d62b963e9a99518a41db1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830118"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571995"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit med fysisk værdi og afmærkning
 
@@ -65,7 +65,7 @@ I eksemplerne i følgende afsnit er der bogført en økonomisk opdateret tilgang
 
 I følgende diagram illustreres denne række posteringer med effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for direkte udligning uden indstillingen Medtag fysisk værdi. 
 
-![Direkte udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 - Lagertransaktioner vises som lodrette pile.
@@ -99,7 +99,7 @@ De efterfølgende posteringer illustreres i nedenstående grafik:
 
 I følgende diagram illustreres denne række posteringer med effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for opsummerede udligning uden indstillingen Medtag fysisk værdi. 
 
-![Opsummeret udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Opsummeret udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 - Lagertransaktioner vises som lodrette pile.
@@ -128,7 +128,7 @@ De efterfølgende posteringer illustreres i nedenstående grafik:
 
 I følgende diagram illustreres denne række posteringer med effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for direkte udligning med indstillingen Medtag fysisk værdi. 
 
-![Direkte udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Direkte udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 - Lagertransaktioner vises som lodrette pile.
@@ -161,7 +161,7 @@ De efterfølgende posteringer illustreres i nedenstående grafik:
 
 I følgende diagram illustreres denne række posteringer med effekterne ved at vælge lagermodellen for vægtet gennemsnit og princippet for opsummerede udligning uden indstillingen Medtag fysisk værdi. 
 
-![Opsummeret udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Opsummeret udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
 - Lagertransaktioner vises som lodrette pile.
@@ -209,7 +209,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 
 I følgende diagram illustreres denne serie posteringer med virkningerne af at vælge lagermodellen for vægtet gennemsnit ved afmærkning. 
 
-![Vægtet gennemsnit med afmærkning](./media/weightedaveragewithmarking.gif) 
+![Vægtet gennemsnit med afmærkning.](./media/weightedaveragewithmarking.gif) 
 
 **Forklaring til diagram**
 - Lagertransaktioner vises som lodrette pile.

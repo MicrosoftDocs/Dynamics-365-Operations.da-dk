@@ -1,8 +1,8 @@
 ---
-title: Opret en app til tilbagevendende dataeksport
-description: Denne artikel viser, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Oprette en app for tilbagevendende dataeksport
+description: Dette emne beskriver, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 368eee6bb182f363f47467a5c5ad8208a57db7ec
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361213"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069776"
 ---
-# <a name="create-a-recurring-data-export-app"></a>Opret en app til tilbagevendende dataeksport
+# <a name="create-a-recurring-data-export-app"></a>Oprette en app for tilbagevendende dataeksport
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne artikel viser, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan. Selvstudiet benytter REST API for DMF-pakke (programmeringsgrænseflade til program) i Human Resources til at eksportere dataene. Når dataene er eksporteret, gemmer logikappen den eksporterede datapakke i en Microsoft OneDrive for Business-mappe.
+Dette emne beskriver, hvordan du opretter en Microsoft Azure-logikapp, der eksporterer data fra Microsoft Dynamics 365 Human Resources i en tilbagevendende tidsplan. Selvstudiet benytter REST API for DMF-pakke (programmeringsgrænseflade til program) i Human Resources til at eksportere dataene. Når dataene er eksporteret, gemmer logikappen den eksporterede datapakke i en Microsoft OneDrive for Business-mappe.
 
 ## <a name="business-scenario"></a>Forretningsscenarie
 

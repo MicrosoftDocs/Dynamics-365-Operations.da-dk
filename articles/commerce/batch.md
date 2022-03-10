@@ -1,12 +1,10 @@
 ---
 title: Forbedret håndtering af batchsporede varer
-description: I dette emne beskrives de forbedringer, der er foretaget i håndteringen af batches for batchsporede varer under bogføringsprocessen for opgørelsen.
+description: I dette emne beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +15,41 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 00e1fcb36d685798f3ad7d667805c97bddcceb36
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211147"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485777"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Forbedret håndtering af batchsporede varer
 
-
 [!include [banner](includes/banner.md)]
 
+I dette emne beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
 
-I POS kan batchnumre ikke hentes til batchsporede varer på tidspunktet for salget. For specifikke konfigurationer, når salg bogføres i hovedkontoret via kundeordrer eller opgørelsesbogføring, vil Microsoft Dynamics-systemet dog forvente, at der findes gyldige batchnumre til varer med batchsporing, og at de skal bruges i faktureringsprocessen.
+I Dynamics 365 Commerce POS kan batchnumre ikke hentes til batchsporede varer på tidspunktet for salget. For specifikke konfigurationer vil Commerce dog forvente, at der findes gyldige batchnumre til varer med batchsporing, når salg bogføres i Commerce-hovedkontoret via kundeordrer eller opgørelsesbogføring, og at de skal bruges i faktureringsprocessen.
 
-Hvis der er gyldige batchnumre for produkter, bruges de af faktureringsprocessen for kundeordren og faktureringsprocessen for salgsordren fra opgørelsesbogføring. Ellers kan faktureringsprocessen for kundeordren ikke bogføres, og POS-brugeren modtager en fejlmeddelelse. Opgørelsesbogføringen går derefter i fejltilstand. Denne fejltilstand forekommer, også selvom negativt lager er aktiveret for produkterne.
+Hvis der er gyldige batchnumre for produkter, bruges begge af faktureringsprocessen for kundeordren og faktureringsprocessen for salgsordren fra opgørelsesbogføring. Hvis gyldige batchnumre ikke er tilgængelige for produkter, kan debitorordre faktureringsprocessen ikke bogføres, og kassebrugeren modtager en fejlmeddelelse. Bogføringen af opgørelsen går derefter videre til fejltilstand, også selvom negativt lager er blevet slået til for produkterne.
 
-Forbedringer, der er foretaget i Retail version 10.0.4 og senere, er med til at sikre, at kundeordrefakturering og salgsordrefakturering via opgørelsesbogføring ikke spærres for batchsporede varer, når negativt lager er aktiveret for disse varer, hvis lageret er 0 (nul), eller et batchnummer ikke er tilgængeligt. Den nye funktionalitet bruger et standardbatch-id til salgslinjerne, når batchnumre ikke er tilgængelige.
+Forbedringer, der er foretaget i hjælpen til Commerce, sikrer, at kundeordrefakturering og salgsordrefakturering via opgørelsesbogføring ikke spærres for batchsporede varer, når negativt lager er aktiveret for disse varer, hvis lageret er 0 (nul), eller et batchnummer ikke er tilgængeligt. Den forbedrede funktionalitet bruger et standardbatch-id til salgslinjerne, når batchnumre ikke er tilgængelige.
 
-Hvis du vil definere det standardbatch-id, der bruges til kundeordrer, skal du gå til siden **Commerce-parametre**, åbne fanen **Kundeordrer** i oversigtspanelet **Ordre** og udfylde feltet **Standardbatch-id**.
+## <a name="define-the-default-batch-id-that-is-used-for-customer-orders"></a>Definere det standardbatch-id, der bruges til debitorordrer
 
-Hvis du vil definere det standardbatch-id, der bruges til salgsordrefakturering via opgørelsesbogføring, skal du gå til siden **Commerce-parametre**, åbne fanen **Postering** i oversigtspanelet **Opdatering af lager** og udfylde feltet **Standardbatch-id**.
+Du definerer det standardbatch-id, der bruges til debitorordrer, ved at følge disse trin.
+
+1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Commerce-parametre** i Commerce-hovedkontoret.
+1. Angiv en værdi i feltet **Standardbatch-id** på fanen **Debitorordrer** i oversigtspanelet **Ordre**.
+
+## <a name="define-the-default-batch-id-that-is-used-for-sales-order-invoicing-through-statement-posting"></a>Definer det standardbatch-id, der skal bruges til salgsordrefakturering via bogføring af opgørelser
+
+Du definerer det standardbatch-id, der skal bruges til salgsordrefakturering via bogføring af opgørelser, ved at følge disse trin.
+
+1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Commerce-parametre** i Commerce-hovedkontoret.
+1. Angiv en værdi i feltet **Standardbatch-id** på fanen **Bogføring** i oversigtspanelet **Opdatering af lager**.
 
 > [!NOTE]
-> Denne funktionalitet er kun tilgængelig, når avanceret lagerstyring er aktiveret for det specifikke lagersted og for varerne. I en senere version understøtter funktionen også de scenarier, hvor den avancerede lagerstyring ikke bruges.
-
-> [!NOTE]
-> Understøttelse af forbedret håndtering af batchsporede varer under opgørelsesbogføring af scenarier med ikke-avancerede lagerstyring blev introduceret i Retail version 10.0.5.
-
+> - Funktionen Standardbatch-id er kun tilgængelig, når avanceret lagerstyring er aktiveret for det specifikke lagersted og for varerne. I en fremtidig version understøtter funktionen Standardbatch-id også de scenarier, hvor den avanceret lagerstedsadministration ikke bruges.
+> - Understøttelse af den forbedrede håndtering af batchsporede varer under opgørelsesbogføring af scenarier med ikke-avancerede lagerstedsadministration blev introduceret i Commerce version 10.0.5 udgaven.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

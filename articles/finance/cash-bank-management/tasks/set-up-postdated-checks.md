@@ -2,26 +2,23 @@
 title: Oprette fremdaterede checks
 description: I dette emne beskrives, hvordan du angiver, om du vil bogføre journalposter for fremdaterede checks, og hvilke bogføringsjournaler, der skal bruges til at fjerne poster og kreditorbetalinger.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fc1798836d9b905d991adb4c87d55ddce41d260bdbfdad6bf0c4b4feb846ee57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4441625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743067"
 ---
 # <a name="set-up-postdated-checks"></a>Oprette fremdaterede checks
 
@@ -56,4 +53,12 @@ Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
     * Vælg den bankkonto, der bruges til at fratrække fakturabeløbet.  
 18. Klik på Gem.
 19. Luk siden.
+> [!NOTE]
+> Hvis du vil kunne bogføre en fremdateret check på en bankkonto, når sessionsdatoen er større end eller lig med forfaldsdatoen, skal du aktivere funktionen **Forfaldsdatovalidering af bogføring af betalingskladde med fremdaterede checks på bankkontoen**. Denne funktion giver dig mulighed for at bogføre betalingskladder for kreditorer eller debitorer med fremdaterede checks, når sessionsdatoen er større end eller lig med forfaldsdatoen.
+> 
+> Når du angiver **Betalingsmåde** (**Kreditor > Opsætning af betaling > Betalingsmåder**), skal du ikke udfylde **Mellemkonto**. I dette tilfælde udfyldes modkontoen med den bankkonto, der er angivet i **Betalingsmåde**.
+>  
+> Når funktionen er aktiveret, og sessionsdatoen er mindre end forfaldsdatoen, vises følgende fejlmeddelelse, når du bogfører en betalingskladde "Forfaldsdato skal være mindre eller lig med sessionsdatoen, hvis modkontotypen er Bank". Hvis funktionen ikke er aktiveret, kan du bogføre en betalingskladde med en fremdateret check, når sessionsdatoen er mindre end forfaldsdatoen.
+> Denne funktion er tilgængelig i version 10.0.21 eller nyere.    
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

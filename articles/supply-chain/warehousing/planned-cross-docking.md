@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911242"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573027"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -117,6 +117,9 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Løbenummer:** *1*
     - **Forsyningskilde:** *Indkøbsordre*
 
+> [!NOTE]
+> Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt cross-docking-skabelon bruges. Forespørgslen på cross-docking-skabeloner har kun tabellen *InventTable* (varer) og den indre join-tabel *WHSInventTable* (WHS-varer). Hvis du vil føje andre tabeller til forespørgslen, kan du sammenkæde dem ved kun at bruge *eksisterende joinforbindelser* eller *ikke-eksisterende joinforbindelser*. Når du filtrerer på de joinforbundne tabeller, hentes der en post fra hovedtabellen for hver tilsvarende post i den joinforbundne tabel. Hvis join-typen er *eksisterende joinforbindelse*, afsluttes søgningen, når det første match er fundet. Hvis du f.eks. joinforbinder tabellen med salgsordrelinjer til varetabellen, valideres og returneres varer, hvor mindst én salgsordrelinje har den definerede betingelse. Dataene hentes reelt fra den overordnede tabel (varer) og ikke fra den underordnede tabel (salgsordrelinjen). Derfor kan der ikke som standard foretages filtrering efter kildedokumenter som f.eks. salgsordrelinjer eller kunder.
+
 ### <a name="create-a-work-class"></a>Oprette en arbejdsklasse
 
 1. Gå til **Lokationsstyring \> Opsætning \> Arbejde \> Arbejdsklasser**.
@@ -151,6 +154,9 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Arbejdsklasse-id:** *CrossDock*
 
 1. Vælg **Gem**, og kontroller, at afkrydsningsfeltet **Gyldig** er markeret for skabelonen *51 Cross Dock*.
+1. Valgfrit: Vælg **Rediger forespørgsel**, hvis du vil angive kriterier, der styrer, hvornår og hvor arbejdsskabelonen anvendes.
+
+    Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt arbejdsskabelon bruges. Du kan f.eks. angive, at en skabelon kun kan bruges til arbejde et bestemt sted. Hvis arbejdsskabelonen til cross-docking skal anvendes på en bestemt lokation, skal du filtrere i feltet **Startlokation** og ikke i feltet **Lokation**, da arbejdsoprettelsen for de indgående processer (indkøb, cross-docking og genopfyldning) starter fra læg på-linjen. Når arbejdet oprettes, angiver lokationsvejledningen feltet **Lokation** til læg på lager-lokationen. Pluklokationen gemmes dog i feltet **Startlokation**.
 
 > [!NOTE]
 > Arbejdsklasse-id'erne for arbejdstyperne *Pluk* og *Læg på lager* skal være ens.
@@ -318,7 +324,7 @@ I øjeblikket har begge arbejds-id'er samme målnummerplade. Hvis du vil udføre
 
 I følgende illustration vises, hvordan det færdige arbejde til cross-docking kan blive vist i Microsoft Dynamics 365 Supply Chain Management.
 
-![Arbejde med cross-docking udført](media/PlannedCrossDockingWork.png "Arbejde med cross-docking udført")
+![Arbejde med cross-docking udført.](media/PlannedCrossDockingWork.png "Arbejde med cross-docking udført")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

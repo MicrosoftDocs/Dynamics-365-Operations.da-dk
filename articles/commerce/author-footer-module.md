@@ -2,11 +2,9 @@
 title: Sidefodsmodul
 description: Dette emne omhandler sidefodsmoduler og beskriver, hvordan du kan oprette dem i Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16c9ca145aff97f0af242da4cf662367f1f4ca3d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719980"
 ---
 # <a name="footer-module"></a>Sidefodsmodul  
 
@@ -33,7 +31,7 @@ Sidefodsmodulet er en særlig container, der bruges som vært for de moduler, de
 
 Det følgende billede viser et eksempel på et sidefodsmodul på en webstedside.
 
-![Eksempel på et sidefodsmodul](./media/ecommerce-footer.PNG)
+![Eksempel på et sidefodsmodul.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Egenskaber for sidefodsmodul 
 

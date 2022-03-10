@@ -2,7 +2,6 @@
 title: Tilføj nye felter til en skabelon for forretningsdokument i Microsoft Excel
 description: Dette emne indeholder oplysninger om, hvordan du kan tilføje nye felter til en skabelon til forretningsdokument i Microsoft Excel ved hjælp af funktionen Styring af forretningsdokument.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6368d763f44c015a6e85652b1880cfd86ff5ba09
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767236"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Tilføj nye felter til en skabelon for forretningsdokument i Microsoft Excel
 
@@ -51,14 +50,14 @@ ER-formatkonfigurationen af **Fritekstfakturaen (Excel)** indeholder skabelonen 
 
 Du kan finde flere oplysninger om, hvordan du importerer ER-konfigurationer under [Administrere livscyklus for ER-konfiguration](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Siden for Delt LCS-aktivbibliotek](./media/BDM-AddFldExcel-LCS.png)
+![Siden for Delt LCS-aktivbibliotek.](./media/BDM-AddFldExcel-LCS.png)
 
 ### <a name="edit-the-er-solution-template"></a>Rediger skabelonen for ER-løsningen
 
 1.  Log på som bruger med adgang til arbejdsområdet **Styring af forretningsdokumenter**.
 2.  Åbn arbejdsområdet til **Styring af forretningsdokumenter**.
 
-    ![Arbejdsområdet til Styring af forretningsdokumenter](./media/BDM-AddFldExcel-Workspace.png)
+    ![Arbejdsområdet til Styring af forretningsdokumenter.](./media/BDM-AddFldExcel-Workspace.png)
 
 3.  Vælg skabelonen til **Fritekstfakturaer (Excel)** i gitteret.
 4.  I højre rude skal du vælge **Ny skabelon** for at oprette en ny skabelon, der er baseret på den valgte skabelon.
@@ -67,20 +66,20 @@ Du kan finde flere oplysninger om, hvordan du importerer ER-konfigurationer unde
 
 Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den valgte skabelon online i det integrerede kontrolelement.
 
-![Siden med BDM-skabeloneditor](./media/BDM-AddFldExcel-EditableTemplate.png)
+![Siden med BDM-skabeloneditor.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### <a name="add-the-label-for-a-new-field-to-the-template"></a>Tilføj etiketten for et nyt felt til skabelonen
 
 1.  På siden med BDM-skabeloneditor skal du på Excel-båndet på fanen **Vis** vælge afkrydningsfelterne **Overskrifter og gitterlinjer** for den redigerbare Excel-skabelon.
 
-    ![Afkrydsningsfelterne Overskrifter og Gitterlinjer er markerede](./media/BDM-AddFldExcel-EditableTemplate2.png)
+    ![Afkrydsningsfelterne Overskrifter og Gitterlinjer er markerede.](./media/BDM-AddFldExcel-EditableTemplate2.png)
 
 2.  Marker cellerne **E8:F8**.
 3.  På Excel-båndet under fanen **Startside** skal du vælge **Flet & Centrer** for at flette de markerede celler ind i en sammenflettet **E8:F8**-celle.
 4.  I den sammenflettede celle **E8:F8** skal du indtaste **URL-adressen**.
 5.  Vælg flettet celle **E7:F7**, vælg **Formatpensel**, og vælg derefter den sammenflettede celle **E8:F8** for at formatere den på samme måde som den flettede celle **E7:F7**.
 
-    ![Etiketten "Nyt felt" er tilføjet til skabelonen](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![Etiketten "Nyt felt" er tilføjet til skabelonen.](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>Formater skabelonen for at reservere plads til et nyt felt
 
@@ -88,13 +87,13 @@ Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den v
 2.  På Excel-båndet under fanen **Startside** skal du vælge **Flet & Centrer** for at flette de markerede celler ind i en sammenflettet **G8:H8**-celle.
 3.  Vælg flettet celle **G7:H7**, vælg **Formatpensel**, og vælg derefter den sammenflettede celle **G8:H8** for at formatere den på samme måde som den flettede celle **G7:H7**.
 
-    ![Plads, der er reserveret til det nye felt](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Plads, der er reserveret til det nye felt.](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.  I afkrydsningsfeltet **Navn** skal du vælge **FirmaInfo**.
 
     Intervallet **FirmaInfo** i den aktuelle Excel-skabelon indeholder alle de felter, der bruges til at udfylde overskriften i en genereret rapport med detaljer om det aktuelle firma som sælgende part.
 
-    ![Interval for FirmaInfo er valgt](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![Interval for FirmaInfo er valgt.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### <a name="add-a-new-field-to-the-template"></a>Tilføj et nyt felt til skabelonen
 
@@ -104,7 +103,7 @@ Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den v
     > [!NOTE]
     > Du skal justere den sektion i skabelonen, du vil bruge som et nyt felt. Du har allerede gennemført denne justering ved at formatere den flettede celle **G8:H8**.
 
-    ![Sådan tilføjer du et nyt felt til skabelonen](./media/BDM-AddFldExcel-AddCell.png)
+    ![Sådan tilføjer du et nyt felt til skabelonen.](./media/BDM-AddFldExcel-AddCell.png)
 
 3.  Vælg **Excel\Celle** for at tilføje et nyt felt som en celle i skabelonen.
 
@@ -115,11 +114,11 @@ Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den v
 4.  I feltet **Excel-interval** skal du indtaste **FirmaURL_Værdi**.
 5.  Vælg **OK**.
 
-    ![Feltet FirmaURL_Værdi tilføjes til skabelonstrukturen](./media/BDM-AddFldExcel-EditableTemplate5.png)
+    ![Feltet FirmaURL_Værdi tilføjes til skabelonstrukturen.](./media/BDM-AddFldExcel-EditableTemplate5.png)
 
 6.  I ruden **Skabelonstruktur** skal du vælge ellipseknappen (...) og dernæst vælge **Vis bindinger**.
 
-    ![Vis valgte bindinger](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Vis valgte bindinger.](./media/BDM-AddFldExcel-ShowBindings.png)
 
     I ruden **Skabelonstruktur** vises nu de datakilder, der er tilgængelige i det underliggende ER-format.
 
@@ -127,21 +126,21 @@ Siden BDM-skabeloneditor vises. Du kan bruge Microsoft 365 til at redigere den v
 8.  I sektionen **Datakilder** i ruden **Skabelonstruktur** skal du udvide **Model \> FakturaGrundlag \> FirmaInfo**.
 9.  Under **FirmaInfo** skal du vælge elementet **WebsiteURL**.
 
-    ![Elementet WebsiteURL er valgt](./media/BDM-AddFldExcel-BindURL.png)
+    ![Elementet WebsiteURL er valgt.](./media/BDM-AddFldExcel-BindURL.png)
 
 10. Vælg **Bind**.
 11. I ruden **Skabelonstruktur** skal du vælge **Gem** og dernæst lukke siden med BDM-skabeloneditor.
 
 I arbejdsområdet **Styring af forretningsdokumenter** vises den opdaterede skabelon på fanen **Skabelon** i højre rude. Bemærk, at feltet **Status** for den redigerede skabelon er ændret til **Kladde** i gitteret, og at feltet **Revision** ikke længere er tomt. Disse ændringer betyder, at processen for redigering af denne skabelon er startet.
 
-![Redigeret skabelon i arbejdsområdet Styring af forretningsdokument](./media/BDM-AddFldExcel-Workspace2.png)
+![Redigeret skabelon i arbejdsområdet Styring af forretningsdokument.](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## <a name="review-company-settings"></a>Gennemgå firmaindstillinger
 
 1.  Gå til **Organisationsadministration \> Organisationer \> Juridiske enheder**.
 2.  I oversigtspanelet **Kontaktinformation** skal du verificere, at firmaets URL-adresse er angivet.
 
-![Firmaets URL-adresse angives på siden Juridiske enheder](./media/BDM-AddFldExcel-CompanyInfo.png)
+![Firmaets URL-adresse angives på siden Juridiske enheder.](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Generer forretningsdokumenter for at teste den opdaterede skabelon
 
@@ -151,13 +150,13 @@ I arbejdsområdet **Styring af forretningsdokumenter** vises den opdaterede skab
 4.  Under **Fritekstfaktura** skal du vælge niveauet for det **Originale dokument** for at angive, hvilke fakturaer der skal behandles.
 5.  I højre rude i feltet **Rapportformat** skal du vælge skabelonen **Fritekstfaktura (Excel) Contoso** for det angivne dokumentniveau.
 
-    ![Skabelonen Fritekstfaktura (Excel) Contoso er valgt](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Skabelonen Fritekstfaktura (Excel) Contoso er valgt.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Tryk på **Esc** for at lukke den aktuelle side.
 7.  Vælg **Udskriv \> Valgte**.
 8.  Hent det genererede dokument, og åbn det i Excel.
 
-    ![Fritekstfaktura i Excel](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Fritekstfaktura i Excel.](./media/BDM-AddFldExcel-PreviewReport.png)
 
 Den ændrede skabelon bruges til at generere rapporten med fritekstfaktura for den valgte vare. Hvis du vil analysere, hvordan denne rapport påvirkes af de ændringer, du har foretaget i skabelonen, skal du køre denne rapport i én programsession umiddelbart efter, at du har ændret skabelonen i en anden programsession.
 

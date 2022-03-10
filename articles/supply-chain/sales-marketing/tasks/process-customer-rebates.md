@@ -1,27 +1,24 @@
 ---
 title: Generere og behandle debitorrabatter
 description: Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kravet til punktet, hvor de godkendes som periodiseringer til debitor.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424755"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969081"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle debitorrabatter
 
@@ -72,7 +69,7 @@ Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kr
 2. Klik på **Opsaml**.
 3. Indtast eller vælg en værdi i feltet **Kunde**.
 4. Vælg dags dato i feltet **Startdato**.
-5. Klik på **OK**. Som et resultat af, at funktionen **Opsaml** køres, er det anslåede kravbeløb nu reguleret til at tage højde for det faktum, at kundens samlede salg i den relevante periode er højere end, da den første rabat blev genereret. Mere specifikt, fordi det samlede antal, der er købt, har nået 100 enheder, er kunden nu berettiget til 40 kr. pr. enhed (ifølge aftalens anden mængdereduktion) eller 400 kr. af det samlede rabatbeløb. Forskellen er registreret som en ny "kravregulering" for de ekstra 800 kr. Status for rabatkrav, der er medtaget i opdateringen Opsaml, er nu sat til Beregnet. 
+5. Klik på **OK**. Som et resultat af, at funktionen **Opsaml** køres, er det anslåede kravbeløb nu reguleret til at tage højde for det faktum, at kundens samlede salg i den relevante periode er højere end, da den første rabat blev genereret. Mere specifikt, fordi det samlede antal, der er købt, har nået 100 enheder, er kunden nu berettiget til 40 kr. pr. enhed (ifølge aftalens anden mængdereduktion) eller 4,000 kr. af det samlede rabatbeløb. Forskellen er registreret som en ny "kravregulering" for de ekstra 800 kr. Status for rabatkrav, der er medtaget i opdateringen Opsaml, er nu sat til Beregnet. 
 6. Markér alle poster på listen.
 7. Klik på **Godkend**.
 8. Klik på **Behandl**.
@@ -82,3 +79,6 @@ Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kr
     - Rabatperiodiseringskontoen er blevet krediteret som en repræsentation af det fremtidige passiv for kunden.
     - Rabatudgiftskontoen er blevet debiteret som anerkendelse af de omkostninger, der er påløbet i forbindelse med salg.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

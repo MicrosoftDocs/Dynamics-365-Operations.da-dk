@@ -2,11 +2,9 @@
 title: Oprette regler for rådgivningsværktøj til optimering
 description: I dette emne beskrives det, hvordan du føjer nye regler til rådgivningsværktøj til optimering.
 author: roxanadiaconu
-manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7052aeb4154cefe30a1935dfdca53085a035deb6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734658"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Oprette regler for rådgivningsværktøj til optimering
 
@@ -254,3 +252,6 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 ```
 
 Du kan få flere oplysninger ved at se den korte YouTube-video: [Optimeringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

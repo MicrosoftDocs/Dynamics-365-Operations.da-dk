@@ -1,12 +1,10 @@
 ---
 title: Konfigurer planlægningsteams
 description: Dette emne beskriver, hvordan et planlægningsteam oprettes.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchTeamTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa61c8dabf34e74f46147149d54f310d8a8277b8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48d35e4a49393a73f6c22c3ba78c65e72701d335
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256105"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571347"
 ---
 # <a name="set-up-dispatch-teams"></a>Konfigurer planlægningsteams 
 
@@ -49,7 +47,7 @@ Dette emne beskriver, hvordan et planlægningsteam oprettes. Når du har oprette
 
 
 > [!NOTE]
-> <P>Du kan tildele en arbejder til dette planlægningsteam i formularen <STRONG>Arbejder</STRONG>. Du kan finde oplysninger om tildeling af en arbejder til et planlægningsteam under <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Planlæg medarbejdere (formular)</A>.</P>
+> <P>Du kan tildele en arbejder til dette planlægningsteam i formularen <STRONG>Arbejder</STRONG>. Du kan finde oplysninger om tildeling af en arbejder til et planlægningsteam under <A href="/dynamicsax-2012//dispatch-workers-form">Planlæg medarbejdere (formular)</A>.</P>
 
 
 

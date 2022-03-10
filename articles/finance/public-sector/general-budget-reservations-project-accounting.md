@@ -2,11 +2,9 @@
 title: Projektregnskab med generelle budgetreservationer
 description: Dette emne indeholder oplysninger om projektregnskab, der bruger generelle budgetreservationer til den offentlige sektor.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetReservation_PSN
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: cf55723007580ec2e6e19deb23fff5b9795b54c6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dab3e00baefb92e83b8ede46e3ed233467d5609cdd261e6b17132d1fa375568e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754124"
 ---
 # <a name="project-accounting-with-general-budget-reservations"></a>Projektregnskab med generelle budgetreservationer
 

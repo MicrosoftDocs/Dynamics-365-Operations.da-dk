@@ -1,28 +1,25 @@
 ---
 title: Overvåge konsignationslager ved hjælp af kreditorsamarbejde
 description: Denne fremgangsmåde viser, hvordan du kan bruge leverandørsamarbejde til at få vist oplysninger om lagerbeholdning for det produkt, som du har i konsignation hos en kunde.
-author: mkirknel
-manager: tfehr
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mkirknel
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c74f09ee2056ce88442bf8f8ccba3985638525a6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0d194728805cd1eee741069538352b497867981
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424888"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571827"
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>Overvåge konsignationslager ved hjælp af kreditorsamarbejde
 
@@ -43,3 +40,6 @@ Denne fremgangsmåde viser, hvordan du kan bruge leverandørsamarbejde til at f�
 1. Gå til Kreditorsamarbejde > Konsignationslager > Disponibelt konsignationslager.
     * Siden Disponibelt konsignationslager viser det lager, du ejer på kundens lagersted. Du kan se yderligere dimensioner, såsom lokation og lagersted, ved at klikke på fanen Vis dimensioner.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

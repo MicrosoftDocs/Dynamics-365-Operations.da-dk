@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fdfe4d5042e0a6a7948a09334dc675e210e765a1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a1f1f83fbf4b7280aec579b17c96e8d9fc59e39bcea5d6d5d7366397cf8f2875
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773363"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.9 (april 2020)
 
@@ -71,7 +71,7 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 - [Emballage vs. lagringsdimensioner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [Parallel autorisation af ordreforslag](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Du kan få flere oplysninger under [Parallel autorisation](../master-planning/maintain-planned-orders.md#parallelize-firming) og i videoen [MPS-ydeevne og anvendelighedsforbedringer](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Parallel autorisation af ordreforslag](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Du kan få flere oplysninger i [Autorisere ordreforslag](../master-planning/planning-optimization/planned-order-firming.md) og i videoen [Forbedringer af MRP's ydeevne og anvendelighed](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
 - [Planlægningsoptimering til distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Du kan finde flere oplysninger under [Oversigt over planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).
 

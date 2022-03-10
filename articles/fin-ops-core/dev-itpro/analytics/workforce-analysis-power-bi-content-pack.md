@@ -2,11 +2,9 @@
 title: Power BI-indhold til Nøgletal for arbejdsstyrke
 description: Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757267"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Microsoft Power BI-indhold til **Nøgletal for arbejdsstyrke**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Dette emne beskriver **Nøgletal for arbejdsstyrke** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Nøgletal for arbejdsstyrke** vises i arbejdsområdet **Personalestyring**, hvis du bruger et af disse produkter:
@@ -86,3 +84,6 @@ Følgende tabel viser de enheder, som indholdet er baseret på.
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                 | Firma, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, ansættelse, job |
 | Masseansættelsesprojekt        | Antallet af masseansættelsesprojekter, projektejer og projektstatus                     | Firma, masseansættelseslinje. |
 | Masseansættelseslinje           | Afdeling, medarbejdertype og stilling                                           | Dato, job, masseansættelsesprojekt |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,8 +2,7 @@
 title: Økonomisk analyse
 description: Økonomisk analyse bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572360"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416299"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -37,9 +36,9 @@ ms.locfileid: "5572360"
 > - **Side** – En fane i en enkelt .pbix-fil. Hver side kan indeholde et eller flere visuelle elementer.
 > - **Visuelt element** – en enkelt datakilde, f.eks. et kort, KPI, diagram, grafik, matrix eller regnskab. En side med et regnskab som et visuelt element kan ikke have andre visuelle elementer på grund af størrelsen af de data, der rapporteres om.
 
-I øjeblikket bruges **økonomisk analyse** til at få vist data for enten den aktive juridiske enhed eller alle juridiske enheder. I fremtidige versioner kan arbejdsområdet kan udvikle sig til det sted, hvor du kan bruge Power BI til redigering og oprettelse af visuelle elementer.
+Arbejdsområdet **Økonomisk analyse** fokuserer på, at du kan få vist og filtrere dataene om eksisterende rapporter. Du kan tilføje nye visuelle elementer til arbejdsområdet **Økonomisk analyse**. Arbejdsområdet **Økonomiske analyse** er tilgængeligt for det aktuelle firma og alle firmaer, hvor de kan se data for alle juridiske enheder, uanset hvilke juridiske enheder rollen har adgang til.
 
-Arbejdsområdet **Regnskabsdirektørens oversigt** viser de samme visuelle elementer som **økonomisk analyse**, men fokuserer på, at du kan få vist og filtrere dataene i eksisterende rapporter. I fremtidige versioner vil du kunne tilføje nye visuelle elementer arbejdsområdet **Økonomisk analyse**. De nye visuelle elementer vil muligvis også være tilgængelige i arbejdsområder, der er fokuseret på andre roller, f.eks. projektledere eller kreditorchefer. Arbejdsområdet **Regnskabsdirektørens oversigt** fortsætter med at vise data for alle juridiske enheder, uanset hvilke juridiske enheder, som rollen har adgang til.
+- [Tilføje eller redigere Power BI-visualiseringer på dashboardet](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Opsætning af Dynamics 365 Finance
 **Finans**
@@ -61,14 +60,12 @@ For at kunne vises på regnskaberne og få at kunne inkluderes i forskellige and
 ## <a name="entity-store"></a>Enhedslager
 Dataene til **Økonomisk analyse** trækkes fra enhedslageret (**Systemadministration** \> **Konfiguration** \> **Enhedslager**). Hvis du åbner arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk analyse**, og følgende advarsel vises i de visuelle elementer, skal du opdatere enhederne.
 
-![Advarsel!](./media/Cantdisplay.png)
+![Advarsel.](./media/Cantdisplay.png)
 
 Du skal opdatere følgende enheder for at se data i arbejdsområdet **Økonomisk analyse**:
 
-- BudgetActivityMeasure
 - Transaktionsdata version 3 til økonomirapportering 
-- CustCollectionsBIMeasurements
-- LedgerActivityMeasure
+- Kredit V2
 - LedgerCovLiquidityMeasurement
 - Indkøbskube
 - Salgskube
@@ -90,18 +87,18 @@ Selvom **Økonomisk analyse** indeholder regnskaber, er det ikke en erstatning f
 I følgende diagram til sammenligning får du hjælp til at skelne mellem de to indstillinger:
 
 
-|                                                          | Financial Reporting                                               | Økonomisk analyse |
+| Funktion                                                   | Financial Reporting                                               | Økonomisk analyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Redigere standardrapporter**                                 | Ja                                                               | Ingen |
-| **Oprette nye rapporter**                                   | Ja                                                               | Ingen |
-| **Udskrivning af rapporter**                                        | Ja                                                               | Nr. |
+| **Redigere standardrapporter**                                 | Ja                                                               | Nej |
+| **Oprette nye rapporter**                                   | Ja                                                               | Nej |
+| **Udskrivning af rapporter**                                        | Ja                                                               | Nej |
 | **Eksportér til Excel**                                      | Ja                                                               | Rådata for begrænsede eksporter til Excel, ikke en formateret rapport |
-| **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nr. |
+| **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nej |
 | **Rapportere reskontrodata**                             | Ja Begrænset til kreditor, debitor                              | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv. |
 | **Rapporteringsvaluta**                                   | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta |
 | **Sikkerhed**                                             | Ja Overholder Finans-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
-| **Understøtte forskellige kontoplaner og regnskabsår** | Ja                                                               | Nr. |
-| **Rapportere eksterne data**                              | Nr.                                                                | Nr. |
+| **Understøtte forskellige kontoplaner og regnskabsår** | Ja                                                               | Nej |
+| **Rapportere eksterne data**                              | Nej                                                                | Nej |
 | **Understøtte konsolideringer**                               | Ja                                                               | Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta |
 
 Følgende regnskaber er tilgængelige:
@@ -127,7 +124,7 @@ Brugere kan filtrere rapporten ved hjælp af ruden **Filter** til venstre. Denne
 - **Filtre på visuelt niveau** – Disse filtre anvendes kun på det valgte visuelle element. Disse filtre anvendes oven på filtrene på sideniveau.
 - **Detaljeadgangsfilter** – Dette filter filtrerer fra et visuelt "kilde"-element, som er tilknyttet det aktuelle visuelle element, når du foretager detaljeadgang fra det visuelle kildeelement til det aktuelle visuelle element.
 
-![Filtreringsindstillinger](./media/filter.png)
+![Filtreringsindstillinger.](./media/filter.png)
 
 Vælg viskelædersymbolet ud for den for at fjerne en bestemt værdi. Fjern ikke et filter ved at vælge X. Hvis du vælger X, fjernes det felt, du filtrerer på, som en filtreringsindstilling. Hvis du ved et uheld fjerner et felt fra filteret, skal du lukke arbejdsområdet, og derefter åbne det igen. Standardindstillingerne for filter anvendes igen.
 
@@ -172,25 +169,25 @@ Forskellige niveauer af detailudledning er tilgængelig via Power BI. Hvert nive
 
 I følgende illustration er regnskabet **Råbalance** skjult i det højeste niveau i rækkehierarkiet, hovedkontotypen.
 
-![Råbalanceregnskab](./media/trial-balance.png)
+![Råbalanceregnskab.](./media/trial-balance.png)
 
 For at få vist næste niveau i hierarkiet, hovedkontokategorierne, kan du angive feltet **Detailudledning** til **Rækker** og derefter vælge knappen **Udvid** knap (den tredje knap efter feltet Detailudledning). Du kan nu se alle hovedkontokategorierne udvidet. I øjeblikket giver Power BI dig ikke mulighed for kun at udvide én række eller kolonne, men stadig se alle de andre rækker eller kolonner.
 
-![Råbalance i detaljer på rækker](./media/trial-balance2.png)
+![Råbalance i detaljer på rækker.](./media/trial-balance2.png)
 
 For at udvide til hovedkontiene for alle rækker, kan du igen bruge knappen **Udvid**. Men hvis du vil foretage detailudledning til hovedkontiene for kun én række, skal du først markere knappen **Detailudledning** (den enkelte nedadgående pil i højre side af vinduet), og derefter vælge rækken, der skal foretages detailudledning for. I følgende illustration vises resultatet, når rækken **Salg** er markeret, efter at knappen **Detailudledning** er valgt.
 
-![Knappen til udvidelse af råbalance](./media/trial-balance3.png)
+![Knappen til udvidelse af råbalance.](./media/trial-balance3.png)
 
 Når du ruller ned på en enkelt række, kræves flere klik for at vende tilbage til den fulde råbalance. Knappen **Rul op** (den første knap efter **Detailudledning** på feltet) ruller kun op i forbindelse med kategorien **Salg**, som vist i følgende illustration.
 
-![Knappen til oprulning af råbalance](./media/trial-balance4.png)
+![Knappen til oprulning af råbalance.](./media/trial-balance4.png)
 
 Du kan fortsat bruge knappen **Rul op** for at vende tilbage til det højeste niveau af opsummering for rækkerne.
 
 Power BI har også en knap, hvor du kan gå til næste niveau i hierarkiet (den anden knap efter feltet **Detailudledning**). Virkningen af denne knap adskiller sig fra resultatet af knappen **Udvid** (den tredje knap efter feltet **Detailudledning**), som bruges til at udvide hierarkiet. Når du udvider hierarkiet, bevares hierarkiet i rapporten. Som det for eksempel blev vist tidligere, hvis du udvider på hovedkontotypen, kan du stadig se hovedkontotypen på rapporten. Men når du går videre til næste niveau i hierarkiet, viser rapporten ikke længere det overordnede element i hierarkiet, som vist i følgende illustration.
 
-![Knappen til tilbagerulning af råbalance](./media/trial-balance5.png)
+![Knappen til tilbagerulning af råbalance.](./media/trial-balance5.png)
 
 For at få vist posteringsoplysningerne bag de opsummerede saldi, kan du vælge nogle beløb, der skal rulle tilbage i Financial and Operations.
 
@@ -229,7 +226,7 @@ I øjeblikket understøtter regnskabet ikke organisationshierarkier, så du kan 
 ## <a name="data-limitations"></a>Databegrænsninger
 Visuelle elementer til regnskab har en begrænsning på antallet af rækker, der kan vises. I øjeblikket er grænsen angivet til 30.000. Hvis du overskrider denne grænse, får de visuelle elementer et advarselssymbol, for at fortælle dig om denne situation.
 
-![Databegrænsninger](./media/data-limit.png)
+![Databegrænsninger.](./media/data-limit.png)
 
 Hvis det maksimale antal overskrides, vil totaler, der vises på regnskabet, være forkerte, fordi ikke alle rækker blev indlæst i det visuelle element.
 
@@ -241,9 +238,9 @@ Power BI giver ikke mulighed for at vise og skjule tomme rækker. Hvis en række
 
 Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integrerede rapporter til arbejdsområdet **Økonomisk analyse** i et produktionsmiljø. I stedet er de nyttige til udviklingsfelter, og hvis du vil integrere dine egne Power BI-rapporter.
 
-- [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Få adgang til analytiske arbejdsområder og rapporter i 1-box-miljøet](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

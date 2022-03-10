@@ -1,30 +1,27 @@
 ---
 title: Aktivitetsbaseret underleverandørarbejde
 description: I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule, PlanActivityServiceDetails, PlanActivityServiceWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48a1943833408767fe77456f66bbe109170a29e2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424918"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566786"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaseret underleverandørarbejde
 
@@ -106,3 +103,6 @@ Supply Chain Management understøtter nu styklisteberegning, der omfatter transp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

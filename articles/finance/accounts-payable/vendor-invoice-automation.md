@@ -2,11 +2,9 @@
 title: Fakturaautomatisering for scannede dokumenter
 description: Dette emne forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
 author: abruer
-manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e5c08fc09439ce3889ade4f1da44120275ee075
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722761"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for scannede dokumenter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
+Dette emne forklarer de dataenheder, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, herunder fakturaer med vedhæftede filer.
 
 Organisationer, der ønsker at strømline deres kreditorprocesser, identificerer ofte fakturabehandling som en af de vigtigste procesområder, der skal være mere effektive. I mange tilfælde overfører disse organisationer behandlingen af papirfakturaer til en tredjepartserviceudbyder af optisk tegngenkendelse (OCR). Derefter modtager de maskinlæsbare fakturametadata sammen med et scannet billede af hver faktura. Som hjælp til automatisering oprettes en sidste løsning derefter for at kunne forbruge disse artefakter i faktureringssystemet. Nu er denne sidste automatisering som standard aktiveret via en løsning til fakturaautomatisering.
 
@@ -36,7 +34,7 @@ Løsningen til fakturaautomatisering er en standardgrænseflade, der kan accepte
 
 I følgende illustration vises et eksempel på integrationsscenarie, hvor Contoso er gået sammen med en OCR-tjenesteudbyder til behandling af kreditorfakturaer. Contosos kreditorer sender fakturaer til tjenesteudbyderen via mail. Udbyderen genererer via OCR-behandling fakturametadata (hoved og/eller linjer) og et scannet billede af fakturaen. Et integrationslag transformerer derefter disse artefakter, så de kan forbruges.
 
-![Eksempel på integrationsscenarie](media/vendor_invoice_automation_01.png)
+![Eksempel på integrationsscenarie.](media/vendor_invoice_automation_01.png)
 
 Flere variationer af det foregående scenarie er mulige, hvis fakturaintegration er påkrævet. Overførsel af data er en anden metode, hvor denne grænseflade kan bruges til at oprette fakturaer og vedhæftede filer.
 
@@ -90,11 +88,11 @@ Fakturaer, der importeres via datapakker, kan knyttes til den juridiske enhed, d
 
 I scenarier, hvor kommer kreditorfakturaer kommer ind i Finance and Operations via integration, skal det være nemt for et kreditorteammedlem at behandle undtagelser eller mislykkede fakturaer og at oprette ventende fakturaer ud fra mislykkedes fakturaer. Denne undtagelsesbehandling for kreditorfakturaer er nu en del af Finance and Operations.
 
-### <a name="exceptions-list-page"></a>Listesiden Undtagelser
+### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Kreditorfakturaer, der ikke blev importeret, på listesiden
 
-Den nye listeside for fakturaundtagelser findes under **Kreditor** > **Fakturaer** > **Importfejl** > **Kreditorfakturaer, der blev ikke importeret**. Denne side viser alle kreditorfakturahoveders poster fra den midlertidige tabel i dataenheden Kreditorfakturahoved. Bemærk, at du kan få vist de samme poster fra **Datastyring**-arbejdsområdet, hvor du også kan udføre de samme handlinger, der findes i funktionen for undtagelseshåndtering. Dog er funktionen for undtagelseshåndtering i brugergrænsefladen optimeret til en funktionel bruger.
+Den nye listeside for fakturaundtagelser findes under **Kreditor** > **Fakturaer** > **Importfejl** > **Kreditorfakturaer, der blev ikke importeret**. Denne side viser alle kreditorfakturahoveders poster fra den midlertidige tabel i dataenheden Kreditorfakturahoved. Bemærk, at du kan få vist de samme poster fra arbejdsområdet **Datastyring**. Du kan også udføre de samme handlinger, der findes i funktionen for undtagelseshåndtering, fra **Datastyring**-arbejdsområdet. Funktionen til håndtering af undtagelser er optimeret for en funktionel bruger, hvilket gør det nemmere at bruge den.
 
-![Listesiden Undtagelser](media/vendor_invoice_automation_02.png)
+![Listesiden Undtagelser.](media/vendor_invoice_automation_02.png)
 
 Denne listeside indeholder følgende felter, der leveres via feedet:
 
@@ -118,24 +116,17 @@ Denne listeside indeholder følgende felter, der leveres via feedet:
 Denne listeside har også en indholdsrude, som du kan bruge på følgende måder:
 
 + Få vist hele fejlmeddelelsen, så du ikke behøver at udvide kolonnen **Fejlmeddelelse** i gitteret.
-+ Få vist hele listen over vedhæftede filer for fakturaen, hvis vedhæftede filer blev leveret med fakturaen.
 
 Listesiden understøtter følgende handlinger:
 
 + **Rediger** – Åbn undtagelsesposten i redigeringstilstand, så du kan løse problemerne.
 + **Indstillinger** – Få adgang til de standardindstillinger, der er tilgængelige på listesider. Du kan bruge **Føj til arbejdsområde**-indstillingen til at fastgøre listesiden med undtagelser til arbejdsområdet som en liste eller et felt.
 
-### <a name="exception-details-page"></a>Siden Undtagelsesoplysninger
+### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Siden Kreditorfakturaer, der ikke kunne importere detaljer
 
-Når du starter redigeringstilstand, vises siden Undtagelsesoplysninger for den faktura, der er problemer med. Hvis der er vedhæftede filer, vises fakturaen og den vedhæftede fil som standard ved siden af hinanden på siden Undtagelsesoplysninger.
+Når du starter redigeringstilstand, åbnes siden **Kreditorfaktura, der ikke kunne importere detaljer** for fakturaen med problemer. Hvis der er problemer med en faktura, der har en vedhæftet fil, vises den vedhæftede fil ikke. Den vedhæftede fil skal vedhæftes fakturaen igen.
 
-![Siden Undtagelsesoplysninger](media/vendor_invoice_automation_03.png)
-
-I foregående illustration er der ikke nogen linjer for kreditorfakturahoved, der fulgte med. Linjeafsnittet er derfor tomt.
-
-Siden Undtagelsesoplysninger understøtter følgende handling:
-
-+ **Opret ventende faktura** – Når du har løst problemerne på fakturaen som en del af undtagelsesbehandlingen, kan du klikke på denne knap for at oprette den ventende faktura. Oprettelse af ventende fakturaer foregår i baggrunden (som en asynkron handling).
+På siden **Kreditorfakturaer, der ikke kunne importere detaljer** kan du oprette en ventende faktura. Når du har løst problemerne på fakturaen som en del af undtagelsesbehandlingen, skal du vælge knappen **Opret ventende faktura** for at oprette den ventende faktura. Den ventende faktura oprettes i baggrunden. 
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Behandling af delt tjeneste vs. organisationsbaseret undtagelse
 
@@ -145,7 +136,7 @@ Listesiden med undtagelser understøtter standardsikkerhedskonstruktioner, som *
 + Pr. bruger
 + af juridisk enhed
 
-![Importjob, der er sikret af brugerrolle og juridisk enhed](media/vendor_invoice_automation_04.png)
+![Importjob, der er sikret af brugerrolle og juridisk enhed.](media/vendor_invoice_automation_04.png)
 
 Hvis sikkerhed er konfigureret for importjobbet til fakturaer, bruger listesiden med undtagelser disse indstillinger. Brugere vil kun kunne se fakturaundtagelsesposter, som denne konfiguration giver mulighed for at se.
 
@@ -187,7 +178,7 @@ Kun ét dokument kan angives som standardvedhæftning. Når du har oprettet et d
 
 Med en ny knap, der findes på forespørgselssiderne **Behandling af undtagelsen**, **Ventende faktura** og **Fakturajournal**, kan du vise eller skjule fremviseren af vedhæftede filer.
 
-### <a name="security"></a>Sikkerhed
+## <a name="security"></a>Sikkerhed
 
 Følgende handlinger i fremviseren styres via rollebaseret sikkerhed:
 
@@ -212,7 +203,7 @@ Følgende roller giver skrivebeskyttet adgang eller læse- og skriveadgang til f
 + **Kreditorassistent** og **Kreditorchef** – Opgaven Vedligehold kreditorfakturaer er tildelt disse roller.
 + **Kreditorassistent**, **Kreditorchef**, **Medarbejder for centraliserede kreditorbetalinger** og **Ansvarlig for kreditorbetalinger** – Opgaven Forespørg status for kreditorfaktura er tildelt til disse roller.
 
-### <a name="invoice-exception-details-page"></a>Siden med undtagelsesoplysninger om fakturaer
+### <a name="vendor-invoice-attachment"></a>Vedhæftet fil i kreditorfaktura
 
 Følgende rettigheder giver skrivebeskyttet adgang eller læse- og skriveadgang til fremviseren for fremhævnings-, blokerings- og anmærkningshandlinger.
 
@@ -231,3 +222,6 @@ Følgende roller giver skrivebeskyttet adgang til fremviseren for disse handling
 + **Kreditorassistent** og **Kreditorchef** – Opgaven Vedligehold kreditorfakturaer er tildelt disse roller.
 
 Som standard, hvis brugerrollen giver redigeringsrettigheder på enhver side, skal brugeren også have redigeringsrettigheder til fremviseren af vedhæftede filer for fremhævnings-, blokerings- og anmærkningshandlinger. Hvis der er situationer, hvor en bestemt rolle skal have redigeringsrettigheder på siden, men ikke i fremviseren, kan der dog bruges de nødvendige rettigheder fra den foregående liste for at opfylde behovet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Arbejde med lokationsvejledninger
 description: Dette emne beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963304"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103132"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -46,14 +44,14 @@ Før du kan oprette en lokationsvejledning, skal du følge disse trin for at sik
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
 1. Opret et lagersted.
 1. På oversigtspanelet **Lagersted** skal du for indstillingen **Brug lagerstedsstyringsprocesser** vælge *Ja*.
-1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) og [Konfigurere lokationer i et WMS-aktiveret lagersted](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbejdsordretyper for lokationsvejledninger
 
 Mange af de felter, der kan angives for lokationsvejledninger, er fælles for alle typer af arbejdsordrer. Andre felter er dog specifikke for bestemte arbejdsordretyper.
 
-![Arbejdsordretyper for lokationsvejledninger](media/Location_Directives_Work_Order_Types.png "Arbejdsordretyper for lokationsvejledninger")
+![Arbejdsordretyper for lokationsvejledninger.](media/Location_Directives_Work_Order_Types.png "Arbejdsordretyper for lokationsvejledninger")
 
 > [!NOTE]
 > To typer arbejdsordrer, *Annulleret arbejde* og *Cyklusoptælling*, bruges kun af systemet. Lokationsvejledninger kan ikke oprettes for disse arbejdsordretyper.
@@ -145,14 +143,14 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
 - **Vejledningskode** – Vælg den vejledningskode, der skal knyttes til en arbejds- eller genopfyldningsskabelon. På siden **Vejledningskode** kan du oprette nye koder, som kan bruges til at oprette forbindelse mellem arbejdsskabeloner eller genopfyldningsskabeloner og lokationsvejledninger. Vejledningskoder kan også bruges til at oprette forbindelse mellem enhver arbejdsskabelonlinje og en lokationsvejledning (f.eks. lagerporten eller den midlertidige lagerlokation).
 
     > [!TIP]
-    > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokationsskabelon, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
+    > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokalitetsvejledning, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
 
 - **Flere SKU'er** – Angiv denne indstilling til *Ja* for at bruge flere lagerenheder (SKU'er) på en lokation. F.eks. skal flere SKU'er aktiveres for placeringen af lagerporten. Hvis du aktiverer flere SKU'er, vil læg på lager-lokationen blive angivet i arbejde som forventet. Men læg på lager-lokationen kan dog kun håndtere en læg-flere-varer-på-lager (hvis arbejde indeholder forskellige SKU'er, der skal plukkes og placeres). Den kan ikke håndtere en enkelt SKU-læg-på-lager. Hvis du angiver denne indstilling til *Nej*, angives lokationen kun, hvis dit læg-på-lager kun har én slags SKU.
 
     > [!IMPORTANT]
     > Hvis du vil kunne udføre SKU'er med både læg-flere-varer-på-lager læg-enkelt-vare-på-lager, skal du angive to linjer med samme struktur og opsætning, men du skal angive indstillingen **Flere SKU'er** til *Ja* for én linje og *Nej* for den anden. I forbindelse med læg på lager skal du derfor have to lokationsvejledninger, der er identiske, selvom du ikke skal skelne mellem enkelte og flere SKU'er på en arbejds-id. Hvis du ofte ikke konfigurerer begge disse lokationsvejledninger, kommer der uventede forretningsproceslokationer fra den anvendte lokationsvejledning. Du skal bruge en lignende opsætning til lokationsvejledninger, der har **Arbejdstypen** *Pluk*, hvis du skal behandle ordrer, der omfatter flere SKU'er.
 
-    Brug indstillingen **Flere SKU'er** for arbejdslinjer, der håndterer mere end ét varenummer. (Varenummeret vil være tomt i arbejdsdetaljerne, og det vil blive vist som **Flere** på behandlingssiderne i lagerstedsappen).
+    Brug indstillingen **Flere SKU'er** for arbejdslinjer, der håndterer mere end ét varenummer. (Varenummeret vil være tomt i arbejdsdetaljerne, og det vil blive vist som **Flere** på behandlingssiderne i mobilappen Lokationsstyring).
 
     I et typisk eksempel scenario er der konfigureret en arbejdsskabelon, så den har mere end ét pluk/læg på lager-par. I dette tilfælde kan du søge efter en bestemt lokationen for midlertidig lagring til brug af linjer med **Arbejdstype** *Læg på lager*.
 
@@ -166,12 +164,12 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
     > [!NOTE]
     > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types) tidligere i dette emne.
 
-- **Find efter** – Angiv, om læg på lager-antallet skal være hele antallet på id'er, eller om det skal være vare pr. vare. Brug dette felt som en hjælp til at sikre, at alt indholdet på et id lægges på én lokation, og at systemet ikke foreslår, at du opdeler indholdet på flere lokationer for **ASN** (id-modtagelse), **Blandet id**-modtagelse og **Klynge**-modtagelsesprocesser. (Processen til modtagelse af **Klynge** kræver, at funktionen for *læg på lager-klynge* er aktiveret). Funktionsmåden for lokationsvejledningsforespørgslen, linjerne og lokationsvejledningens handlinger varierer afhængigt af den værdi, du vælger. Oversigtspanelet **Linjer** bruges kun, når feltet **Find efter** er angivet til *Vare*.
+- **Find efter** – Angiv, om læg på lager-antallet skal være hele antallet på id'er, eller om det skal være vare pr. vare. Brug dette felt som en hjælp til at sikre, at alt indholdet på et id lægges på én lokation, og at systemet ikke foreslår, at du opdeler indholdet på flere lokationer for **ASN** (id-modtagelse), **Blandet id**-modtagelse og **Klynge**-modtagelsesprocesser. (Processen til modtagelse af **Klynge** kræver, at funktionen for [læg på lager-klynge](putaway-clusters.md) er aktiveret). Funktionsmåden for lokationsvejledningsforespørgslen, linjerne og lokationsvejledningens handlinger varierer afhængigt af den værdi, du vælger. Oversigtspanelet **Linjer** bruges kun, når feltet **Find efter** er angivet til *Vare*.
 
     > [!NOTE]
     > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
 
-- **Dispositionskode** – Dette felt bruges til lokationsvejledninger, der har arbejdsordretypen *Indkøbsordrer*, *Færdige varer, læg på lager* eller *Returordrer* og arbejdstypen *Læg på lager*. Brug den til at vejlede flowet, så det bruger en bestemt lokationsvejledning, afhængigt af den dispositionskode, som en arbejder har valgt i lagerstedsappen. Du kan f.eks. sende returvarer til et inspektionssted, før de returneres til lageret. En dispositionskode kan knyttes til en lagerstatus. På denne måde kan den bruges til at ændre lagerstatussen som en del af en modtagelsesproces. Du har f.eks. dispositionskoden *Karantæne*, der angiver lagerstatussen til *Karantæne*. Du kan derefter have en separat lokationsvejledning, der flytter den pågældende lagerbeholdning til en karantænelokation.
+- **Dispositionskode** – Dette felt bruges til lokationsvejledninger, der har arbejdsordretypen *Indkøbsordrer*, *Færdige varer, læg på lager* eller *Returordrer* og arbejdstypen *Læg på lager*. Brug den til at vejlede flowet, så det bruger en bestemt lokationsvejledning, afhængigt af den dispositionskode, som en arbejder har valgt i mobilappen Lokationsstyring. Du kan f.eks. sende returvarer til et inspektionssted, før de returneres til lageret. En dispositionskode kan knyttes til en lagerstatus. På denne måde kan den bruges til at ændre lagerstatussen som en del af en modtagelsesproces. Du har f.eks. dispositionskoden *Karantæne*, der angiver lagerstatussen til *Karantæne*. Du kan derefter have en separat lokationsvejledning, der flytter den pågældende lagerbeholdning til en karantænelokation.
 
     > [!NOTE]
     > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types).
@@ -239,7 +237,7 @@ Du kan definere flere handlinger i lokationsvejledning for hver linje. Igen, et 
     - **Rund op til fuld LP og FEFO-batch** – Denne strategi kombinerer elementerne i strategierne *FEFO-batchreservationen* og *Rund op til fuld LP*. Den er kun gyldig for batchaktiverede varer og lokationsvejledninger, hvor arbejdstypen er *Pluk*. Linjen skal være batchaktiveret, hvis du vil bruge *FEFO-batchreservation*-strategien, og *Rund op til fuld LP*-strategien kan kun bruges til genopfyldning. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
     - **Rund op til en fuld LP** – Denne strategi runder op til lagerantallet, så det svarer til antallet af id-numre, som er tildelt de varer, der skal plukkes. Du kan kun bruge denne strategi til genopfyldning for lokationsvejledninger af typen *Pluk*. Hvis denne strategi konfigureres sammen med en lokationslagergrænse, kan den valgte læg på lager-arbejdslokation være overbelastet, og lagergrænser skal ignoreres.
     - **Nummerpladestyret** – Brug denne strategi, når du frigiver ordren til lagerstedet for at oprette pluk og læg-arbejdet. Du kan gøre dette for flere nummerplader. Denne strategi vil forsøge at reservere og oprette plukarbejde på de lokationer, hvor de anmodede nummerplader er knyttet til flytteordrelinjerne. Men hvis disse handlinger ikke kan fuldføres, men du stadig vil oprette plukarbejde, skal du gå tilbage til en anden strategi for handlinger i lokationsvejledningen. Afhængigt af dine krav til forretningsprocesser kan du også søge efter en lagerbeholdning i et andet område af lagerstedet.
-    - **Tom lokation uden indgående arbejde** – Brug denne strategi til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Du kan kun bruge denne strategi til lokationsvejledninger med arbejdstypen *Pluk*.
+    - **Tom lokation uden indgående arbejde** – Brug denne strategi til at finde tomme lokationer. En lokation anses som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde. Du kan kun bruge denne strategi til lokationsvejledninger med arbejdstypen *Læg på lager*.
     - **Lokation med aldersfordelt FIFO** – Brug strategien FIFO (First In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. FIFO-strategien finder den lokation, der indeholder den ældste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
     - **Lokation med aldersfordelt LIFO** – Brug strategien LIFO (Last In, First Out) til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen ankom på lagerstedet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering. LIFO-strategien finder den lokation, der indeholder den nyeste aldersfordelte dato, og fordeler så plukningen baseret på den pågældende aldersfordelte dato.
 
@@ -251,9 +249,12 @@ I dette scenarie skal du definere to handlinger i lokationsvejledningen. Den fø
 
 ## <a name="next-step"></a>Næste trin
 
-Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til en arbejdsskabelonkode med henblik på arbejdsoprettelse. Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til en arbejdsskabelonkode med henblik på arbejdsoprettelse. Få flere oplysninger under [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokationsvejledninger](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjælp-emne: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

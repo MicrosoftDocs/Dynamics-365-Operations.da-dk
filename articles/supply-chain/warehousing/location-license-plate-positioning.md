@@ -2,11 +2,9 @@
 title: Placering af lokations-id
 description: Med placering af nummerplader kan du se, hvor en nummerplade er placeret på en lokation med flere paller, f.eks. en lokation, der bruger en pallereol med dobbeltdybde.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6d94d37368b8fc3ff7dbe4c1845acd52bf2a64ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004671"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102783"
 ---
 # <a name="location-license-plate-positioning"></a>Placering af lokations-id
 
@@ -32,12 +30,9 @@ Funktionen tilføjer et løbenummer til hver nummerplade, der anbringes på en l
 
 Dette emne indeholder et scenarie, der viser, hvordan du kan konfigurere og bruge funktionen.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Aktivér funktionen til placering af nummerplade på lokation
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Placering af lokations-id
 
-Før du kan bruge funktionen til placering af nummerplads på lokation, skal den være aktiveret i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Placering af nummerplade på lokation*
+Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Placering af lokations-id* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Placering af lokations-id* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -90,7 +85,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
 1. Mens **Nummerplade** stadig er valgt, skal du vælge **Tilføj tabeljoin**.
 1. På listen over tabeller, der vises, skal du i kolonnen **Relation** vælge **Placering af nummerplade på lokation (nummerplade)**. Vælg derefter **Vælg** for at føje **Placering af nummerplads på lokation** til tabeljoinet **Lagerdimensioner**.
 
-    ![Tabeljoinforbindelser](media/LpTableJoin.png "Tabeljoinforbindelser")
+    ![Tabeljoinforbindelser.](media/LpTableJoin.png "Tabeljoinforbindelser")
 
 1. Vælg **OK** for at bekræfte de opdaterede joinforbundne tabeller og lukke forespørgselseditoren.
 1. I oversigtspanelet **Handlinger i lokationsvejledning** skal du vælge **Rediger forespørgsel** igen for at åbne forespørgselseditoren.
@@ -102,7 +97,7 @@ Funktionen skal være aktiveret i lokationsprofilen for hver lokation, hvor den 
     - **Felt:** *NP-position*
     - **Afgrænsning:** *1*
 
-    ![Nyt område](media/LpPositionCriteria.png "Nyt område")
+    ![Nyt område.](media/LpPositionCriteria.png "Nyt område")
 
 1. Vælg **OK** for at bekræfte dine ændringer og lukke forespørgselseditoren.
 
@@ -277,6 +272,9 @@ Nu, hvor funktionen *Placering af nummerplade på lokation* er oprettet, og lage
 1. Vælg feltet **Id** på siden **Scan et arbejds-id/nummerplade-id**, og angiv derefter arbejds-id'et fra salgslinjen.
 1. Bemærk, at plukarbejdet dirigerer dig til at plukke vare *A0002* fra lokation *01A01R1S2B*. Du modtager denne instruktion, fordi vare *A0002* er på en licensnummerplade i position *1* på den pågældende lokation.
 
-    ![Placering 1-lokation](media/LocationLicensePlatePositioning.png "Placering 1-lokation")
+    ![Placering 1-lokation.](media/LocationLicensePlatePositioning.png "Placering 1-lokation")
 
 1. Angiv det nummerplade-id, du har oprettet for lokationen, og følg derefter vejledningen for at plukke salgsordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

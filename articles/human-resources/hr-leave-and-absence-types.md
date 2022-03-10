@@ -1,8 +1,8 @@
 ---
 title: Konfigurere orlovs- og fraværstyper
 description: Konfigurer de orlovstyper, medarbejderne kan tage i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76b8661c4c6d8fe6cf0568be966f1652b95b5442
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730412"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067321"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -65,9 +68,9 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 
 1. Angiv afrundingsindstillinger for orlovstypen. Indstillingerne omfatter **Ingen**, **Op**, **Ned** og **Nærmeste**. Du kan også angive afrundingspræcision for orlovstypen.
 
-2. Angiv **Helligdagskorrektion** for orlovstypen. Når du vælger denne indstilling, bruger Human Resources det antal helligdage, der falder på en arbejdsdag, til at bestemme, hvordan der skal periodiseres tid for orlovstypen. Hvis juledag f.eks. falder på en mandag, trækker Human Resources én dag fra orlovstypen ved behandling af periodiseringer.
+2. Angiv **Helligdagskorrektion** for orlovstypen. Når du vælger denne indstilling, bruges det antal helligdage, der falder på en arbejdsdag, til at bestemme, hvordan der skal periodiseres tid for orlovstypen. Hvis juledag f.eks. falder på en mandag, trækker Human Resources én dag fra orlovstypen ved behandling af periodiseringer.
 
-   Du kan angive helligdage i arbejdstidskalenderen. Du kan finde flere oplysninger under [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md)
+   Du kan angive helligdage i arbejdstidskalenderen. Du kan finde flere oplysninger under [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md).
    
  3. Angiv **Overført orlovstype** for orlovstypen. Når du vælger denne indstilling, overføres eventuelle overførte saldi til den angivne orlovstype. Type overført orlov skal også medtages i orlovs- og fraværsplanen. 
  
@@ -76,7 +79,7 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurere den nødvendige vedhæftede fil pr. orlovstype
 
 > [!NOTE]
-> Hvis du vil bruge feltet **Vedhæftet fil påkrævet**, skal du først aktivere funktionen **(Forhåndsversion) Konfigurere påkrævet vedhæftet fil til orlovsanmodninger** i Funktionsstyring. Du kan få flere oplysninger om aktivering af prøveversionsfunktioner under [Administrere funktioner](hr-admin-manage-features.md).
+> Hvis du vil bruge feltet **Vedhæftet fil påkrævet**, skal du først aktivere funktionen **Konfigurer påkrævet vedhæftet fil til orlovsanmodninger** i Funktionsstyring. Du kan få flere oplysninger om aktivering af funktioner under [Administrere funktioner](hr-admin-manage-features.md).
 
 1. Vælg **Orlovs- og fraværstyper** under **Opsætning** under fanen **Links** på siden **Orlov og fravær**.
 
@@ -87,7 +90,7 @@ Medarbejdere skal overføre en vedhæftet fil, når de sender en ny anmodning om
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurere orlovsenheder (timer/dag) pr. orlovstype
 
 > [!NOTE]
-> Hvis du vil bruge funktionaliteten for orlovsenheder pr. orlovstype, skal du først aktivere funktionen **(Forhåndsvisning) Konfigurere orlovsenheder pr. orlovstype** i Funktionsstyring. Du kan få flere oplysninger om aktivering af prøveversionsfunktioner under [Administrere funktioner](hr-admin-manage-features.md).
+> Hvis du vil bruge funktionaliteten for orlovsenheder pr. orlovstype, skal du først aktivere funktionen **Konfigurer orlovsenheder pr. orlovstype** i Funktionsstyring. Du kan få flere oplysninger om aktivering af funktioner under [Administrere funktioner](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Orlovstyperne i en juridisk enhed bruger som standard orlovsenhederne fra konfigurationen af orlovsparametre på niveauet for den juridiske enhed.

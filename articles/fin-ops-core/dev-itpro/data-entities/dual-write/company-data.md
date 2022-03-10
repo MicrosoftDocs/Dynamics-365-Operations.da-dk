@@ -1,35 +1,35 @@
 ---
 title: Firmakoncept i Dataverse
-description: I dette emne beskrives integrationen af virksomhedsdata mellem Finance and Operations og Dataverse.
+description: I dette emne beskrives integrationen af firmadata mellem Finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 24cd936fd330ce2bdfc6aa7cac75ab5bacbbf3d0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416773"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061020"
 ---
 # <a name="company-concept-in-dataverse"></a>Firmakoncept i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-I Finance and Operations er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
+
+I Finans og drift er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
 
 Dataverse har ikke et tilsvarende koncept. Det tætteste koncept er *virksomhedsenhed*, som primært er en sikkerheds- og synlighedsgrænse for brugerdata. Dette koncept har ikke samme juridiske eller forretningsmæssige implikationer som firmakonceptet.
 
 Da virksomhedsenhed og firma ikke er tilsvarende koncepter, er det ikke muligt at gennemtvinge en en-til-en (1:1) tilknytning mellem dem med henblik på Dataverse-integration. Men da brugere som standard skal kunne se de samme rækker i programmet og Dataverse, har Microsoft introduceret en ny tabel i Dataverse, der hedder cdm\_Company. Denne tabel svarer til tabellen Firma i programmet. For at hjælpe med at sikre, at synlighed af rækker som standard er ens mellem programmet og Dataverse, anbefaler vi følgende opsætning af data i Dataverse:
 
-+ For hver firmarække i Finance and Operations, der er aktiveret til dobbeltskrivning, oprettes der en tilknyttet cdm\_Company-række.
++ For hver firmarække i Finans og drift, der er aktiveret til dobbeltskrivning, oprettes der en tilknyttet cdm\_Company-række.
 + Når en cdm\_Company-række oprettes og aktiveres til dobbeltskrivning oprettes der en standardvirksomhedsenhed med samme navn. Selvom der automatisk oprettes et standardteam for denne virksomhedsenhed, bruges virksomhedsenheden ikke.
 + Der oprettes et separat ejerteam med samme navn. Det er også tilknyttet virksomhedsenheden.
 + Som standard angives ejeren af enhver række, der oprettes og dobbeltskrives til Dataverse, til "DW-ejer"-teamet, der er knyttet til den tilknyttede virksomhedsenhed.
@@ -43,7 +43,7 @@ På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-fi
 + Rollen "Sales Manager" er tildelt medlemmer af teamet "USMF Sales".
 + Brugere, der har rollen "Sales Manager", kan få adgang til alle firmarækker, der er medlem af den samme virksomhedsenhed, som de er medlem af.
 + Teamet "USMF Sales" er knyttet til den USMF-virksomhedsenhed, der er nævnt tidligere.
-+ Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmatabellen i Finance and Operations.
++ Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmaenheden i Finans og drift.
 
 ![Sådan kan teams bruges.](media/dual-write-company-2.png)
 

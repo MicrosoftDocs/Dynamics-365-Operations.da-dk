@@ -1,37 +1,31 @@
 ---
 title: Forbedringer til funktioner til bogføring af opgørelse
 description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
-author: josaw1
-manager: AnnBe
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411151"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087597"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I dette emne beskrives det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
-Som standard under installationen af Finance and Operations 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
+Som standard under installationen af Finans og drift 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
 
 - Gå til **Systemadministration** \> **Opsætning** \> **Licenskonfiguration**, og ryd derefter afkrydsningsfeltet **Opgørelser (ældre)** under noden **Retail og Commerce**, og markér afkrydsningsfeltet **Opgørelser**.
 
@@ -56,12 +50,24 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 
 - **Deaktivering af optælling er påkrævet** – Når denne indstilling er sat til **Ja**, fortsætter bogføringsprocessen for en opgørelse, selvom forskellen mellem det optalte beløb og transaktionsbeløbet i opgørelsen er uden for grænsen, der er defineret i oversigtspanelet **Opgørelse** for butikker.
 
+> [!NOTE]
+> Fra og med Commerce version 10.0.14, når funktionen **Detailopgørelser – Sivende feed** er aktiveret, er batchjobbet **Bogfør lager** ikke længere anvendelige og kan ikke køres.
+
 Derudover er følgende parametre introduceret i oversigtspanelet **Batchbehandling** under fanen **Bogføring** på siden **Commerce-parametre**: 
 
 - **Det maksimale antal parallelle opgørelsesbogføringer** – Dette felt definerer antallet af batchopgaver, der skal bruges til at bogføre flere opgørelser. 
 - **Maks. antal tråde til ordrebehandling pr. opgørelse** – Dette felt repræsenterer det maksimale antal tråde, der bruges af batchjobbet for opgørelsesbogføringen til at oprette og fakturere salgsordrer for en enkelt opgørelse. Det samlede antal tråde, der bruges af bogføringsprocessen for opgørelser, beregnes på basis af værdien i denne parameter ganget med værdien i parameteren **Det maksimale antal parallelle opgørelsesbogføringer**. Hvis værdien af denne parameter er for høj, kan det have en negativ indvirkning på ydeevnen for opgørelsesprocessen.
 - **Maks. antal posteringslinjer, der er inkluderet i aggregeringen** – Dette felt definerer antallet af posteringslinjer, som skal medtages i en enkelt aggregeret transaktion, før der oprettes en ny. Aggregerede posteringer oprettes på basis af forskellige aggregeringskriterier, f.eks. debitor, forretningsdato eller økonomiske dimensioner. Det er vigtigt at bemærke, at linjerne fra en enkelt transaktion ikke bliver opdelt på tværs af forskellige aggregerede transaktioner. Det betyder, at der er mulighed for, at antallet af linjer i en aggregeret transaktion er lidt højere eller lavere baseret på faktorer som antallet af specifikke produkter.
 - **Maksimale antal tråde til at validere butikstransaktioner** – Dette felt definerer antallet af tråde, der skal bruges til validering af transaktioner. Validering af transaktioner er et påkrævet trin, der skal udføres, før transaktionerne kan trækkes ind i opgørelserne. Desuden skal du også definere et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Commerce-parametre**. Det skal defineres, selvom gavekort ikke bruges af organisationen.
+
+Følgende tabel indeholder de anbefalede værdier for de foregående parametre. Disse værdier skal testes og tilpasses konfigurationen af udrulning og den tilgængelige infrastruktur. En stigning i de anbefalede værdier kan påvirke andre batchafviklinger negativt og bør valideres.
+
+| Parameter | Anbefalet værdi | Detaljer |
+|-----------|-------------------|---------|
+| Det maksimale antal parallelle opgørelsesbogføringer | <p>Angiv denne parameter til det antal batchopgaver, der er tilgængelige for den batchgruppe, der kører jobbet **Opgørelse**.</p><p>**Generel regel:** Multiplicer antallet af virtuelle servere for applikationsobjektservere (AOS) med antallet af batchopgaver, der er tilgængelige pr. virtuel server til AOS.</p> | Denne parameter kan ikke anvendes, når funktionen **Detailopgørelser – Sivende feed** er aktiveret. |
+| Maksimalt antal tråde til ordrebehandling pr. opgørelse | Start med at teste værdier ved **4**. Normalt bør værdien ikke overstige **8**. | Denne parameter angiver det antal tråde, der bruges til at oprette og bogføre salgsordrer. Den repræsenterer det antal tråde, der er tilgængelige for bogføring pr. opgørelse. |
+| Maksimale antal transaktionslinjer, der er inkluderet i aggregering | Start med at teste værdier ved **1000**. Afhængigt af konfigurationen af hovedkontoret kan det være mere fordelagtigt med mindre ordrer for ydeevnen. | Denne parameter bestemmer det antal linjer, der medtages i hver salgsordre i forbindelse med bogføring af opgørelsen. Når dette antal er nået, fordeles linjerne til en ny ordre. Selvom antallet af salgslinjer ikke er nøjagtigt, da opdelingen finder sted på salgsordreniveau, vil det være tæt på det antal, der er angivet. Denne parameter bruges til at generere salgsordrer for detailtransaktioner, der ikke har en navngivet kunde. |
+| Maksimale antal tråde til at validere butikstransaktioner | Det anbefales, at du angiver denne parameter til **4**, og at du kun øger den, hvis du ikke opnår acceptabel ydeevne. Det antal tråde, som denne proces bruger, må ikke overstige det antal processorer, der er tilgængelige for batchserveren. Hvis du tildeler for mange tråde her, kan du påvirke en anden batchafvikling. | Denne parameter styrer antallet af transaktioner, der kan valideres på samme tid for en given butik. |
 
 > [!NOTE]
 > Alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i butikker og på siden **Commerce-parametre**, gælder for funktionen til forbedret bogføring af opgørelser.
@@ -119,9 +125,17 @@ En opgørelse, gennemgår forskellige handlinger (for eksempel Opret, Beregn, Fj
 
 ### <a name="aggregated-transactions"></a>Aggregerede transaktioner
 
-Under bogføringsprocessen aggregeres salgsposteringerne baseret på konfigurationen. Disse aggregerede transaktioner gemmes i systemet og bruges til at oprette salgsordrer. Hver aggregerede transaktion opretter én tilsvarende salgsordre i systemet. Du kan se de aggregerede tilstande ved hjælp af knappen **Aggregerede transaktioner** i gruppen **Detaljer om udførelse** i opgørelsen.
+Under bogføringsprocessen aggregeres cash-and-carry-transaktioner efter debitor og produkt. Derfor reduceres antallet af salgsordrer og oprettede linjer. De aggregerede transaktioner gemmes i systemet og bruges til at oprette salgsordrer. Hver aggregerede transaktion opretter én tilsvarende salgsordre i systemet. 
 
-Fanen **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følgende oplysninger:
+Hvis en opgørelse ikke er bogført helt, kan du få vist de aggregerede transaktioner i opgørelsen. Vælg **Aggregerede transaktioner** i gruppen **Detaljer om udførelse** under fanen **Opgørelse** i handlingsruden.
+
+![Knappen Aggregerede transaktioner for en opgørelse, der ikke er bogført helt.](media/aggregated-transactions.png)
+
+Hvis en opgørelse er bogført, kan du få vist de aggregerede transaktioner på siden **Bogførte opgørelser**. Vælg **Forespørgsler** i handlingsruden, og vælg derefter **Aggregerede transaktioner**.
+
+![Kommandoen Aggregerede transaktioner for bogførte opgørelser.](media/aggregated-transactions-posted-statements.png)
+
+Oversigtspanalet **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følgende oplysninger:
 
 - **Post-id** – Id'et for den aggregerede transaktion.
 - **Opgørelsesnummer** – Den opgørelse, som den aggregerede transaktion tilhører.
@@ -130,12 +144,28 @@ Fanen **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følg
 - **Antal aggregerede linjer** – Det samlede antal linjer til den aggregerede transaktion og salgsordre.
 - **Status** – Den sidste status for den aggregerede transaktion.
 - **Faktura-id** – Når salgsordren for den aggregerede transaktion er faktureret, er dette salgsfaktura-id'et. Hvis dette felt er tomt, er fakturaen for salgsordren ikke blevet bogført.
+- **Fejlkode** – Dette felt er angivet, hvis aggregeringen er i fejltilstand.
+- **Fejlmeddelelse** – Dette felt er angivet, hvis aggregeringen er i fejltilstand. Det viser detaljer om, hvad der var årsag til, at processen mislykkedes. Du kan bruge oplysningerne i fejlkoden til at løse problemet og derefter genstarte processen manuelt. Afhængigt af løsningstypen skal aggregeret salg måske slettes og behandles på en ny opgørelse.
 
-Fanen **Transaktionsdetaljer** i en aggregeret transaktion viser alle transaktioner, der er trukket ind i den aggregerede transaktion. De aggregerede linjer i den aggregerede transaktion viser alle de poster, der er aggregeret fra transaktionerne. De aggregerede linjer viser også oplysninger om f.eks. vare, variant, antal, pris, nettobeløb, enhed og lagersted. Grundlæggende svarer hver aggregerede linje til én salgsordrelinje.
+![Felter i oversigtspanelet Salgsordredetaljer for en aggregeret transaktion.](media/aggregated-transactions-error-message-view.png)
 
-Fra siden **Aggregerede transaktioner** kan du hente XML-filen til en bestemt aggregeret transaktion ved hjælp af knappen **Eksportér salgsordre-XML**. Du kan bruge XML-filen til fejlfinding af problemer, der vedrører oprettelse af salgsordrer og bogføring. Hent XML-filen, overfør den til et testmiljø, og foretag fejlfinding af problemet i testmiljøet. Funktionen til hentning af XML-filen til aggregerede transaktioner er ikke tilgængelig for opgørelser, der er bogført.
+Oversigtspanelet **Transaktionsdetaljer** i en aggregeret transaktion viser alle transaktioner, der er trukket ind i den aggregerede transaktion. De aggregerede linjer i den aggregerede transaktion viser alle de poster, der er aggregeret fra transaktionerne. De aggregerede linjer viser også oplysninger om f.eks. vare, variant, antal, pris, nettobeløb, enhed og lagersted. Grundlæggende svarer hver aggregerede linje til én salgsordrelinje.
 
-Den aggregerede transaktionsvisning giver følgende fordele:
+![Oversigtspanelet Transaktionsoplysninger for en aggregeret transaktion.](media/aggregated-transactions-sales-details.png)
+
+I nogle situationer kan aggregerede transaktioner muligvis ikke bogføre deres konsoliderede salgsordre. I disse situationer knyttes der en fejlkode til opgørelsesstatussen. Hvis du kun vil have vist aggregerede transaktioner, der har fejl, kan du aktivere filteret **Vis kun fejl** i visningen af aggregerede transaktioner ved at markere afkrydsningsfeltet. Hvis du aktiverer dette filter, begrænser du resultaterne til aggregerede transaktioner, der har fejl, og som kræver en rettelse. Du kan finde oplysninger om, hvordan du løser disse fejl, i [Redigere og overvågere onlineordre- og asynkrone kundeordretransaktioner](edit-order-trans.md).
+
+![Afkrydsningsfelt for filteret Vis kun fejl i visningen af aggregerede transaktioner.](media/aggregated-transactions-failure-view.png)
+
+På siden **Aggregerede transaktioner** kan du hente XML-filen til en bestemt aggregeret transaktion ved at vælge **Eksportér aggregerede data**. Du kan gennemse XML-filen i en hvilken som helst XML-editor for at se de faktiske dataoplysninger, der involverer oprettelse og bogføring af salgsordrer. Funktionen til hentning af XML-filen til aggregerede transaktioner er ikke tilgængelig for opgørelser, der er bogført.
+
+![Knappen Eksportér aggregeringsdata på siden Aggregerede transaktioner.](media/aggregated-transactions-export.png)
+
+Hvis du ikke kan rette fejlen ved at rette data på salgsordren eller de data, der understøtter salgsordren, er knappen **Slet kundeordre** tilgængelig. Hvis du vil slette en ordre, skal du vælge den aggregerede transaktion, der har en fejl, og derefter vælge **Slet kundeordre**. Både den aggregerede transaktion og den tilsvarende salgsordre slettes. Du kan nu gennemse transaktionerne ved hjælp af redigerings- og overvågningsfunktionerne. Alternativt kan de behandles igen via en ny opgørelse. Når alle fejl er løst, kan du genoptage bogføring af opgørelsen ved at køre funktionen til bogføring af opgørelse for den relevante opgørelse.
+
+![Knappen Slet kundeordre i visningen af aggregerede transaktioner.](media/aggregated-transactions-delete-cust-order.png)
+
+Visningen af aggregerede transaktioner giver følgende fordele:
 
 - Brugeren har indsigt i de aggregerede transaktioner, der mislykkedes under oprettelse af salgsordren, og de salgsordrer, der mislykkedes under faktureringen.
 - Brugeren har indsigt i, hvordan transaktioner bliver aggregeret.
@@ -174,3 +204,6 @@ Der er foretaget andre backend-forbedringer, som brugerne kan se, af funktionen 
 
     - Gå til **Retail og Commerce** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Commerce-parametre**. Vælg derefter **Oversigt** i feltet **Detaljeringsniveau** i oversigtspanelet **Opdatering af lager** under fanen **Bogføring**.
     - Gå til **Retail og Commerce** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Commerce-parametre**. Under fanen **Bogføring** i oversigtspanelet **Aggregering** skal du derefter vælge **Ja** i indstillingen **Posteringer på bilag**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

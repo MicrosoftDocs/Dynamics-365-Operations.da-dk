@@ -2,11 +2,9 @@
 title: 'ER Konfigurere format for at udføre optælling og sammenlægning (del 1: Oprettelsesformat)'
 description: Dette emne beskriver, hvordan du konfigurerer et format for elektronisk rapportering til optælling og opsummering baseret på data fra det allerede genererede tekstoutput. (Del 1)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a3639b5ac28f8a571642e983906d658dabf05b1
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: b0d1a90c0949e98b4c1e9ccb356d39de9c23b670c518ad14a99974ae2aed7301
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728183"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a>ER Konfigurere format for at udføre optælling og sammenlægning (del 1: Oprettelsesformat)
 
@@ -56,3 +54,6 @@ Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 f
 8. Udvid 'Intrastat-model' i træet.
 9. Vælg 'Intrastat-model\Intrastat (DE)' i træet.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

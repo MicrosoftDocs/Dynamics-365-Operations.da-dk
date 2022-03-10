@@ -1,7 +1,7 @@
 ---
 title: Lagerkladder
 description: I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
-author: perlynne
+author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe02a7b785b7d53763f314eec4d9b23fe723173a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910179"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573963"
 ---
 # <a name="inventory-journals"></a>Lagerkladder
 

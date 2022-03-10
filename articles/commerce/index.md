@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4f6dccb7c69eb5dc692ce9543ae31738e95e38fa
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 2fc5746d3a05eb85afbcb73079146fee899cebc7
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336828"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595354"
 ---
 # <a name="commerce-home-page"></a>Startside for Commerce
 
@@ -59,4 +59,4 @@ Vælg et funktionsområde, du vil vide mere om.
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 
-Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Commerce on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
+Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Commerce on Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

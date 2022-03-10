@@ -1,12 +1,10 @@
 ---
 title: Konfigurere overførselsdokumenter for varebevægelser inden for et firma
-description: Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed.
+description: Denne fremgangsmåde viser, hvordan du konfigurerer dokumenter til flytning af varer i en virksomhed.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 756b3568d1d43805a5786f0c90a0a198f89e7c2f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 80805bf30b4be753d7543ed4c6de30401d36e981
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205981"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601444"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Konfigurere overførselsdokumenter for varebevægelser inden for et firma
 

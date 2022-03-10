@@ -2,11 +2,9 @@
 title: Udelukke produkter, der har specifikke livscyklustilstande
 description: Dette emne forklarer, hvordan du kan udelukke produkter baseret på deres livscyklustilstand, når planlægningsoptimeringsfunktionen bruges.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a1e0c734db763ffa69e2d6540a07d5fa04c22ea1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 030bdea7c03dd5eb3347c1d43acd1aeabdf566602872dd8ef5aab6d16b06f503
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739029"
 ---
 # <a name="exclude-products-that-have-specific-product-lifecycle-states"></a>Udelukke produkter, der har specifikke livscyklustilstande
 

@@ -1,12 +1,10 @@
 ---
 title: Udligningsprioritet i den offentlige sektor
 description: Dette emne indeholder oplysninger om, hvordan den offentlige sektor automatisk eller manuelt kan prioritere udligninger ved hjælp af faktureringsklassifikationer.
-author: ShylaThompson
-manager: AnnBe
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19551
 ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88cd89f11b0f50b3d990568321c89712863a8562
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 854eeb429169a857de4dd0946d80ada229f74e14
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964458"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817707"
 ---
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 
@@ -31,8 +29,7 @@ ms.locfileid: "4964458"
 
 I Dynamics 365 Finance kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
 
-<a name="how-to-set-the-general-ledger-parameters-and-accounts-receivable-parameters-for-settlement-priority"></a>Sådan indstilles parametrene Finans og Debitor for udligningsprioritet
----------------------------------------------------------------------------------------------------
+## <a name="how-to-set-the-general-ledger-parameters-and-accounts-receivable-parameters-for-settlement-priority"></a>Sådan indstilles parametrene Finans og Debitor for udligningsprioritet
 
 Hvis du vil bruge faktureringsklassifikationer til at kontrollere udligningsprioriteter, skal du angive både parameteren moms i appen Finans og udligningsparametre i appen Debitor. 
 
@@ -74,3 +71,6 @@ Under udligningsprocessen kommer udligningsattributter i betragtning først, der
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

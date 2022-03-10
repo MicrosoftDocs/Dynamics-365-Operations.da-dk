@@ -2,9 +2,7 @@
 title: Liste over ER-funktioner i kategorien post
 description: Dette emne indeholder oplysninger om de postfunktioner, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a26318df71607fea2601c863072b20f5a67e8615
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2612222ce21e382dae13ee65fb9b9a1d9852e99ddd176bee9fcc3067f72e57db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718303"
 ---
 # <a name="list-of-er-functions-in-the-record-category"></a>Liste over ER-funktioner i kategorien post
 

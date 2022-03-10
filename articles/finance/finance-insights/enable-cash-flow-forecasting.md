@@ -1,8 +1,8 @@
 ---
-title: Aktivere likviditetsbudget (prøveversion)
+title: Aktivere likviditetsbudget
 description: Dette emne forklarer, hvordan du aktiverer funktionen likviditetsbudgetforslag i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5a4e1c3401c945df936258f0c97d2d406019438eb14a01d901f7777c8f0b7d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 763818f70095964d77ff82cf02178367d05eaf23
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768909"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109573"
 ---
-# <a name="enable-cash-flow-forecasting-preview"></a>Aktivere likviditetsbudget (prøveversion)
+# <a name="enable-cash-flow-forecasting"></a>Aktivere likviditetsbudget
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,33 +30,27 @@ Dette emne forklarer, hvordan du aktiverer funktionen likviditetsbudgetforslag i
 
 > [!NOTE]
 > Hvis du vil bruge kontantforudsigelser i likviditeten, skal du konfigurere funktionen til debitorbetalingsforudsigelser som beskrevet i [Aktiver debitorbetalingsforudsigelser](enable-cust-paymnt-prediction.md).
-
-1. Brug oplysninger fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til at oprette forbindelse til den primære forekomst af Azure SQL for det pågældende miljø. Kør følgende Transact-SQL (T-SQL)-kommando for at aktivere funktioner til sandkassemiljøet. (Du skal muligvis aktivere adgang til din IP-adresse i LCS, før du kan oprette fjernforbindelse til applikationsobjektserveren \[AOS\] .)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Spring dette trin over, hvis du bruger version 10.0.20 eller senere, eller hvis du bruger en installation af Service Fabric. Finance Insights-team burde allerede have aktiveret funktionen til dig. Hvis du ikke kan se funktionen i arbejdsområdet **Funktionsstyring**, eller hvis der opstår problemer, når du forsøger at aktivere den, skal du kontakte <fiap@microsoft.com>.
   
-2. Åbn arbejdsområdet **Funktionsstyring**, og udfør følgende trin:
+1. Åbn arbejdsområdet **Funktionsstyring**, og udfør følgende trin:
 
     1. Vælg **Søg efter opdateringer**.
-    2. Slå følgende funktioner til:
+    2. Søg efter **Likviditetsbudgetter** under fanen **Alle**. Hvis du ikke kan finde denne funktion, skal du søge efter **(Forhåndsversion) Likviditetsbudgetter**. 
+    3. Slå funktionen til.
 
-        - Nyt gitterkontrolelement
-        - Gruppering i gitre (prøveversion) 
-        - Forudsigelser for debitorbetaling (prøveversion)
-        - Likviditetsbudgetter (prøveversion)
-
-3. Gå til **Likviditet- og bankstyring \> Opsætning af likviditetsbudget**, og tilføj de likviditetskonti, der skal medtages i budgetterne.
+2. Gå til **Likviditet- og bankstyring \> Opsætning af likviditetsbudget**, og tilføj de likviditetskonti, der skal medtages i budgetterne. Konfigurer også likviditetskontoen til betalinger under fanerne **Debitor** og **Kreditor**. Sørg for at genberegne likviditetsbudgettet.
 
     > [!NOTE]
     > Hvis der ikke er konfigureret likviditetskonti, kan likviditeten ikke genereres.
+    >
+    > Du kan finde flere oplysninger om, hvordan du konfigurerer likviditetsbudgetter, i [Likviditetsbudget](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Gå til **Likviditet- og bankstyring \> Opsætning \> Finance Insights (prøveversion) \> Likviditetsbudgetter (prøveversion)**, og udfør disse trin:
+3. Gå til **Likviditet- og bankstyring \> Opsætning \> Finance Insights (prøveversion) \> Likviditetsbudgetter (prøveversion)**, og udfør disse trin:
 
     1. På fanen skal du vælge **Likviditetsbudget** og vælge **Aktiver funktion**.
     2. Vælg **Opret forudsigelsesmodel**.
+
+> [!NOTE]
+> Modeltræningen **Likviditetsbudget** kræver data med 100 eller flere transaktioner, der dækker mere end ét år. Det anbefales, at du har mindst to års data med mere end 1.000 transaktioner.
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer funktionen likviditetsbudgettering i [Likviditetsbudget](cash-flow-forecast-intro.md).
 

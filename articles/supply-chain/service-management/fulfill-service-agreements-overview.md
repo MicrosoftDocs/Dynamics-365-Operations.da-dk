@@ -1,33 +1,29 @@
 ---
 title: Oversigt over opfyldelse af serviceaftaler
 description: Dette afsnit indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca869f2de60ba7a73f61e16143876557ae1017dc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247340"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985880"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Oversigt over opfyldelse af serviceaftaler 
+# <a name="fulfill-service-agreements-overview"></a>Oversigt over opfyldelse af serviceaftaler
 
 [!include [banner](../includes/banner.md)]
-
 
 Dette afsnit indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler. I emnet vises også de formularer, der er knyttet til de enkelte forretningsproceskomponenter, og en beskrivelse af de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
 
@@ -43,9 +39,9 @@ Følgende tabel indeholder de forms, der understøtter forretningsproceskomponen
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

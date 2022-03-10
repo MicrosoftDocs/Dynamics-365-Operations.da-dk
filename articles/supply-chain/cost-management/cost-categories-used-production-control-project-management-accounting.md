@@ -2,16 +2,13 @@
 title: Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
 description: Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 78253
 ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26f4ce073528bf102a951d6fa002aeb0da9e380c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 374ff726673a2360ba05f931a80c4906eaec38b0df44e12c69898d77b819a4a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4424515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742746"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
 
@@ -44,3 +41,6 @@ De ekstra knapper på siden **Omkostningsart** giver adgang til projektrelatered
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

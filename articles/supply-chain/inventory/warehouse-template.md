@@ -1,12 +1,10 @@
 ---
 title: Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted
 description: I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -15,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7bf69ccec59f2c540d71d44347bd99dc2378dc4c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224972"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571083"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted. Der findes flere foruddefinerede konfigurationsskabeloner, som du kan bruge. Du kan finde oplysninger om, hvordan du kan bruge disse skabeloner, i [Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).
+I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted. Der findes flere foruddefinerede konfigurationsskabeloner, som du kan bruge. Du kan finde oplysninger om, hvordan du kan bruge disse skabeloner, i [Konfigurationsdataskabeloner](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenarier, hvor konfigurationsskabeloner kan være nyttige
 
@@ -90,13 +88,13 @@ Du kan hente en zip-fil til datapakken. Denne fil indeholder alle data i det val
 4. Vælg **+ Tilføj fil**, og overfør zip-filen til datapakken.
 5. Vælg **Importér**. I visningen **Udvidet** visning kan du bruge indstillingen **Filter** til at få hurtigt overblik over de problemer, der kan opstå under importen.
 
-Loggen **Vis udførelseslog** indeholder detaljerede oplysninger om hver dataenhed, der importeres. Du kan bruge den midlertidige datavisning til hurtigt at komme til måldataene. På denne måde kan du se, hvordan de importerede data ser ud på de relaterede sider i programmet. Når du bruger standarddataskabelonerne, fungerer importrækkefølgen for hver dataenhed på den foruddefinerede måde for at sikre, at alle afhængige data importeres først. Hvis brugerdefinerede dataenheder er del af projektet, skal du sikre dig, at den korrekte rækkefølge er defineret. Du kan finde flere oplysninger i [Konfigurere dataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).
+Loggen **Vis udførelseslog** indeholder detaljerede oplysninger om hver dataenhed, der importeres. Du kan bruge den midlertidige datavisning til hurtigt at komme til måldataene. På denne måde kan du se, hvordan de importerede data ser ud på de relaterede sider i programmet. Når du bruger standarddataskabelonerne, fungerer importrækkefølgen for hver dataenhed på den foruddefinerede måde for at sikre, at alle afhængige data importeres først. Hvis brugerdefinerede dataenheder er del af projektet, skal du sikre dig, at den korrekte rækkefølge er defineret. Du kan finde flere oplysninger i [Konfigurere dataskabeloner](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Hvis du vil vide mere om, hvordan du kan bruge lagerstedsskabelon til at kopiere konfigurationen af et lagersted fra ét firma til et nyt firma i den samme forekomst, kan du se denne 3 minutters video på YouTube om [hvordan du bruger lagerstedsskabelon til at kopiere konfigurationen til Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relateret emne
 
-[Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Konfigurationsdataskabeloner](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

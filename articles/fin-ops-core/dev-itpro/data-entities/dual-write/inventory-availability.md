@@ -1,29 +1,20 @@
 ---
 title: Lagertilgængelighed i dobbeltskrivning
 description: I dette emne får du oplysninger om, hvordan du kontrollerer lagertilgængelighed i dobbeltskrivning.
-author: yijialuan
-manager: AnnBe
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: riluan
-ms.dyn365.ops.version: ''
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4450979"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782523"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Lagertilgængelighed i dobbeltskrivning
 
@@ -57,3 +48,21 @@ Dialogboksen returnerer DTT-oplysningerne fra Supply Chain Management. Disse opl
 - Tilgangsantal
 - Afgangsantal
 - Beholdningsantal
+
+## <a name="how-it-works"></a>Sådan fungerer det
+
+Når du vælger knappen **Disponibel lagerbeholdning** på siden **Tilbud**, **Ordrer** eller **Fakturaer**, foretages der et direkte opkald om dobbeltskrivning til API'en **Disponibel lagerbeholdning**. API'en beregner den disponible beholdning for det givne produkt. Resultatet gemmes i tabellerne **InventCDSInventoryOnHandRequestEntity** og **InventCDSInventoryOnHandEntryEntity** og skrives derefter til Dataverse via dobbeltskrivning. Hvis du vil bruge denne funktion, skal du køre følgende dobbeltskrivningstilknytningerne. Spring den første synkronisering over, når du kører tilknytningerne.
+
+- CDS Poster for disponibel lagerbeholdning (msdyn_inventoryonhandentries)
+- CDS Anmodninger om disponibel lagerbeholdning (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Skabeloner
+
+Der findes følgende skabeloner til visning af de disponible lagerbeholdningsdata.
+
+Finance and Operations-apps | Kundeengagementapps     | Betegnelse
+---|---|---
+[Posteringer til disponibelt CDS-lager](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[Anmodninger om disponibelt CDS-lager](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

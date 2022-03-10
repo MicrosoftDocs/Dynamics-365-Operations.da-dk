@@ -2,11 +2,9 @@
 title: Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 description: I dette emne beskrives yderligere funktioner til beregning og anvendelse af automatiske gebyrer på Commerce-kanalordrer ved hjælp af den avancerede automatiske gebyrfunktion.
 author: hhaines
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f458ce6ea4fa3efdfa470e90efa1e267047a8e37
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774503"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
@@ -32,7 +30,7 @@ ms.locfileid: "5231121"
 
 I dette emne beskrives funktioner til gruppering af automatiske gebyrer på hovedniveau og til forholdsmæssig beregning af dem for handelssalgslinjer. Denne funktionalitet er tilgængelig for transaktioner, der oprettes på POS i Retail version 10.0.1, og salg, der oprettes i et callcenter i Retail version 10.0.2.
 
-Denne funktionalitet er kun tilgængelig, hvis den [avancerede automatiske gebyrfunktion](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) er aktiveret ved hjælp af indstillingen på siden **Commerce-parametre**. Desuden kan den forbedrede beregningsmåde for automatiske gebyrer kun anvendes til salgsordrer, der oprettes gennem handelskanaler (POS, et callcenter og Dynamics e-handelsplatformen).
+Denne funktionalitet er kun tilgængelig, hvis den [avancerede automatiske gebyrfunktion](/dynamics365/unified-operations/retail/omni-auto-charges) er aktiveret ved hjælp af indstillingen på siden **Commerce-parametre**. Desuden kan den forbedrede beregningsmåde for automatiske gebyrer kun anvendes til salgsordrer, der oprettes gennem handelskanaler (POS, et callcenter og Dynamics e-handelsplatformen).
 
 Denne nye funktion giver organisationer større fleksibilitet i den måde, som automatiske gebyrer på hovedniveau beregnes og anvendes i salgstransaktioner.
 
@@ -40,7 +38,7 @@ I versioner af appen, der er ældre end version 10.0.1, beregnes automatiske geb
 
 F.eks. defineres automatiske gebyrer på hovedniveau for levering **99** og leveringsmåden **11**. Der oprettes en salgsordre, og leveringsmåden **99** defineres i ordrehovedet. Men nogle af salgslinjerne er konfigureret, så de sendes ved hjælp af leveringsmåde **11**. I så fald tages kun gebyrer på hovedniveau, der er knyttet til leveringsmåde **99**, i betragtning og anvendes på salgsordren.
 
-I Commerce har gebyrer på hovedniveau en ekstra funktion, som du kan bruge til at definere en [konfiguration af lagdelte gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery), der er baseret på ordreværdien. Eksempelvis hvis ordreværdien er mellem $50,00 og $200,00, kan en organisation eventuelt opkræve et fragtgebyr på $5,00. Hvis ordreværdien er mellem $200,01 og $500,00, kan fragten dog være $4,00.
+I Commerce har gebyrer på hovedniveau en ekstra funktion, som du kan bruge til at definere en [konfiguration af lagdelte gebyrer](/dynamics365/unified-operations/retail/configure-call-center-delivery), der er baseret på ordreværdien. Eksempelvis hvis ordreværdien er mellem $50,00 og $200,00, kan en organisation eventuelt opkræve et fragtgebyr på $5,00. Hvis ordreværdien er mellem $200,01 og $500,00, kan fragten dog være $4,00.
 
 Nogle organisationer ønsker fordelene ved beregningen af lagdelte gebyrer, der følger med gebyrer på hovedniveau. Men i scenarier, der består af blandede leveringsmåder, skal de også sikre, at de gebyrer, der beregnes, passer til den leveringsmåde, der er defineret på hver salgslinje.
 
@@ -58,9 +56,9 @@ Dette scenario beskriver funktionsmåden, når indstillingen **Beregn forholdsm�
 
 I dette scenario har organisationen defineret gebyrer på hovedniveau for leveringsmåderelation **99** og leveringsmåderelation **11**. Ingen automatiske gebyrer er konfigureret for leveringsmåde **21**.
 
-![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået fra](media/99_disabled.png)
+![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået fra.](media/99_disabled.png)
 
-![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået fra](media/11_disabled.png)
+![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået fra.](media/11_disabled.png)
 
 Der oprettes en salgsordre i callcenteret, og leveringsmåden indstilles til **99**. Denne ordre indeholder fem varer. To ordrelinjer er konfigureret til at bruge leveringsmåde **99**, to linjer er konfigureret til at bruge leveringsmåde **11**, og én linje er konfigureret til at bruge leveringsmåde **21**, som vist i følgende tabel.
 
@@ -74,15 +72,15 @@ Der oprettes en salgsordre i callcenteret, og leveringsmåden indstilles til **9
 
 I dette scenario evalueres hele ordren i forhold til tabellen over automatiske gebyrer for leveringsmåde **99**. Hele summen af alle salgslinjer bruges til at bestemme et matchningstrin i konfigurationen af automatiske gebyrer, og dette gebyr anvendes på ordrehovedniveau. Den samlede ordrebeløb er $165,00 i dette eksempel, og fragtgebyret på $15,00 anvendes i ordrehovedet. Der refereres aldrig til eller anvendes automatiske gebyrer, der er konfigureret for leveringsmåde **11**.
 
-I dette scenario, hvis en kunde returnerer nogle af varerne i ordren, og hvis [gebyrkoden konfigureres, så den kan refunderes](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), anvendes det samlede gebyr på hovedniveau systematisk på refusionen, selvom kun nogle af varerne returneres.
+I dette scenario, hvis en kunde returnerer nogle af varerne i ordren, og hvis [gebyrkoden konfigureres, så den kan refunderes](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), anvendes det samlede gebyr på hovedniveau systematisk på refusionen, selvom kun nogle af varerne returneres.
 
 ### <a name="scenario-2"></a>Scenario 2
 
 I dette scenario defineres gebyrer på hovedniveau for leveringsmåderelation **99** og leveringsmåderelation **11**. Men indstillingen **Beregn forholdsmæssigt på matchende salgslinjer** er angivet til **Ja** for disse tabeller over automatiske gebyrer.
 
-![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået til](media/99_enabled.png)
+![Automatiske gebyrer for leveringsmåde 99, når forholdsmæssig beregning for linjematchning er slået til.](media/99_enabled.png)
 
-![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået til](media/11_enabled.png)
+![Automatiske gebyrer for leveringsmåde 11, når forholdsmæssig beregning for linjematchning er slået til.](media/11_enabled.png)
 
 I dette scenario bruges den samme salgsordre, der indeholder fem linjer. Leveringsmåden i ordrehovedet er indstillet til **99**, men leveringsmåden for de enkelte varer på salgsordren er konfigureret som vist i følgende tabel.
 
@@ -132,9 +130,9 @@ Da konfigurationen af automatiske gebyrer er indstillet til at bliver beregnet f
     - Samlet produktværdi = $15
     - **Gebyrværdi = $0** (ingen automatiske gebyrer er konfigureret for denne kombination af en kunde og en leveringsmåde).
 
-    ![Gebyrer for leveringsmåde 11 falder inden for det markerede niveau](media/step2mode11.png)
+    ![Gebyrer for leveringsmåde 11 falder inden for det markerede niveau.](media/step2mode11.png)
 
-    ![Gebyrer for leveringsmåde 99 falder inden for det markerede niveau](media/step2mode99.png)
+    ![Gebyrer for leveringsmåde 99 falder inden for det markerede niveau.](media/step2mode99.png)
 
 3. Systemet beregner den gebyrværdi, der skal anvendes på hver linje baseret på forholdsmæssig beregningslogik, der vurderer den proportionale værdi for linjen i forhold til gruppens samlede produktværdi.
 
@@ -165,7 +163,7 @@ Da konfigurationen af automatiske gebyrer er indstillet til at bliver beregnet f
 
 Derfor tildeles vare 81334 et fragtgebyr på $5,62 i dette eksempel. Du kan få vist disse gebyrer på siden **Vedligehold gebyrer** for salgslinjen. I følgende illustration vises, hvordan denne side ser ud for vare 81334.
 
-![Forholdsmæssigt beregnede gebyrer på salgslinje for vare 81334](media/proratedlinecharge.png)
+![Forholdsmæssigt beregnede gebyrer på salgslinje for vare 81334.](media/proratedlinecharge.png)
 
 Når denne beregningsmetode bruges til en delvis returnering, og hvis gebyrkoden kan refunderes, er det kun en del af det gebyr, som er allokeret til den pågældende linje, der refunderes, når varen er returneret.
 

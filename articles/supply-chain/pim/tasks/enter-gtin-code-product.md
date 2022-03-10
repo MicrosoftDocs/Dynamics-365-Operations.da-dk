@@ -1,7 +1,7 @@
 ---
 title: Angive GTIN-koden for et produkt
 description: GTIN-koder tildeles af GS1-organisationen.
-author: ShylaThompson
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18df36fe2d147ce395c113eacaf69d8016b38303
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1c442959e3fadd7ce9b9d8a7afadef7a492431a6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818055"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570425"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Angive GTIN-koden for et produkt
 
@@ -26,18 +26,17 @@ ms.locfileid: "5818055"
 
 GTIN-koder tildeles af GS1-organisationen. I dette eksempel skal du indtaste en kode for produktnummer M0001 i demodatafirmaet USMF.
 
-1. Klik på Vedligeholdelse af frigivet produkt.
-2. Klik på Frigivne produkter.
-3. Udvid faktaboksen Produktbillede.
-4. Find og vælg den ønskede post på listen.
-5. Klik på Styr lager i handlingsruden.
-6. Klik på GTIN-koder.
-7. Klik på Ny.
-8. Markér den valgte række på listen.
-9. Indtast eller vælg en værdi i feltet Enhed.
-10. Vælg en indstilling i feltet GTIN-kode.
-11. Skriv en værdi i feltet GTIN.
-12. Luk siden.
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Udvid faktaboksen **Produktbillede**.
+1. Find og vælg den ønskede post på listen.
+1. Vælg **Styr lager** i handlingsruden.
+1. Vælg **GTIN-koder**.
+1. Vælg **Ny**.
+1. Markér den valgte række på listen.
+1. Indtast eller vælg en værdi i feltet **Enhed**.
+1. Vælg en indstilling i feltet **GTIN-kode**.
+1. Skriv en værdi i **GTIN-feltet**.
+1. Luk siden.
 
 
 

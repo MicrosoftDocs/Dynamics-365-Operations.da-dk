@@ -3,24 +3,26 @@ title: Oversigt over finans og økonomirapportering
 description: Brug finansregnskabet til at definere og administrere finansposter for den juridiske enhed.
 author: ShylaThompson
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 403cd616faef2f856c21a771d46607c41987f0bb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897522"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985231"
 ---
 # <a name="general-ledger-home-page"></a>Startside for finans
 
@@ -37,7 +39,7 @@ Du kan fordele eller distribuere pengebeløb til en eller flere konti eller komb
 - [Kontosaldi i Finans](general-ledger-account-balances.md)
 - [Økonomiske dimensioner](financial-dimensions.md)
 
-[![Forretningsproces](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Forretningsproces.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Moms
 Alle virksomheder inddriver og betaler skatter til forskellige skattemyndigheder. Reglerne og satserne varierer afhængigt af land/område, stat, region og by.
@@ -59,7 +61,7 @@ Gå til emnet [Oversigt over økonomirapportering](../../fin-ops-core/dev-itpro/
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance og drift - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 

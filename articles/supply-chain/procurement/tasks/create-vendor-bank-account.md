@@ -1,26 +1,24 @@
 ---
 title: Oprette en bankkonto for kreditor
 description: Denne procedure viser dig, hvordan du skal oprette en bankkonto for en leverandør.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 425cce178c96097c8aa0a28345d4a9094b7970d9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5d24535035d26ca1313e293f9958b1b5000bb845
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262183"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575405"
 ---
 # <a name="create-a-vendor-bank-account"></a>Oprette en bankkonto for kreditor
 
