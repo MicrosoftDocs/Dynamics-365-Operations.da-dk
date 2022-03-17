@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068103"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384478"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
@@ -210,9 +210,9 @@ Følgende warehouse management-funktioner understøttes ikke i øjeblikket i arb
 - Behandling med varer, der kun er aktiveret til transportstyring (TMS).
 - Behandling med negativ disponibel lagerbeholdning.
 - Datadeling af produkter på tværs af firma. <!-- Planned -->
-- Behandling af lagerstedsarbejde med forsendelsesnotaer.
-- Behandling af lagerstedsarbejde med materialehåndtering/warehouse automation.
+- Behandling af lagerstedsarbejde med forsendelsesnoter (f.eks. følgesedler på pakkestation).
 - Billeder af produktmasterdata (f.eks. på mobilappen Warehouse Management).
+- Behandling af lagerstedsarbejde med materialehåndtering/warehouse automation.
 
 > [!WARNING]
 > Nogle af lagerstedsfunktionerne er ikke tilgængelige for lagersteder, der kører arbejdsbyrderne for Warehouse Management på en skaleringsenhed, og de understøttes heller ikke i hubben eller i arbejdsbyrden for skaleringsenheden.
@@ -236,8 +236,7 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 | Vedligeholde forsendelser for bølge                                  | Nej  | Ja|
 | Lagerstedsbehandling (inkl. udskrivning af nummerplade)        | Nej  | Ja, men kun for ovennævnte understøttede egenskaber |
 | Klyngepluk                                              | Nej  | Ja|
-| Manuel behandling af emballage, herunder arbejdet "Plukning af pakket container" | Nej <P>En del af behandlingen kan udføres efter den første plukproces, der håndteres af en skaleringsenhed, men det frarådes på grund af følgende blokerede operationer.</p>  | Nej |
-| Fjern container fra gruppe                                  | Nej  | Nej |
+| Manuel behandling af pakkestation  | Nej  | Nej |
 | Behandling af udgående sortering                                  | Nej  | Nej |
 | Udskrivning af lastrelaterede dokumenter                           | Ja | Ja|
 | Fragtseddel og ASN-generering                            | Nej  | Ja|
@@ -258,6 +257,7 @@ I følgende tabel vises, hvilke udgående funktioner der understøttes, og hvor 
 | Tilbagefør forsendelsesbekræftelse                                | Nej  | Ja|
 | Anmode om annullering af ordrelinjer på lagersted                      | Ja | Nej, men anmodningen godkendes eller afvises |
 | <p>Frigiv flytteordrer til modtagelse</p><p>Denne proces vil automatisk finde sted som en del af forsendelsesprocessen for flytteordren. Den kan dog bruges manuelt til at aktivere modtagelse af nummerplader med en skalaenhed, hvis indgående lagerstedsordrelinjer er blevet annulleret, eller som en del af en ny udrulningsproces for arbejdsbyrder.</p> | Ja | Nej|
+<!--| Manuel behandling på pakkestation, herunder arbejdet "Plukning af pakket container"  | Nej  | Ja, men uden TMS-forsendelsesmanifest og bogføring af salgsfølgesedlen og uden pakkenoter og produktbilleder |-->
 
 ### <a name="inbound"></a>Indgående
 
@@ -359,6 +359,7 @@ Under installationen af hub kan du vedligeholde følgende batchjob manuelt:
     - Skaleringsenhed til meddelelsesprocessors hub
     - Registrer kvitteringer på kildeordre
     - Fuldfør lagerstedsordrer
+    - Generér manglende udgående lagerstedsordrer
 
 - Administrer følgende batchjob i **Lokationsstyring \> Periodiske opgaver \> Styring af arbejdsbyrder**:
 

@@ -2,7 +2,7 @@
 title: Tilpasse brugeroplevelsen
 description: I dette emne beskrives, hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075416"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384637"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -158,6 +158,7 @@ For nogle sider, der indeholder lister, er tilpasningsfunktionen **Føj til arbe
 
 - Hvis du vil føje en liste til et arbejdsområde, skal du først sortere eller filtrere listen på siden, så den viser oplysningerne, som de skal vises i arbejdsområdet. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Liste** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan vælge de kolonner, der skal vises på listen i arbejdsområdet. Du kan også angive, hvilken label der bruges til listen i arbejdsområdet.
 - Hvis du vil føje et felt til et arbejdsområde, skal du først filtrere listen på siden, så den viser de data, du vil opsummere eller ønsker hurtig adgang til. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Felt** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til feltet i arbejdsområdet. Du kan også angive, om feltet skal vise en optælling. Når feltet er føjet til arbejdsområdet, kan du vælge det for at åbne den aktuelle side fra arbejdsområdet. Du kan derefter få vist den filtrerede liste, der er knyttet til feltet.
+    - Fra og med version 10.0.26, og hvis funktionen **Tillad, at brugerne vælger og ændrer feltstørrelser** er aktiveret, kan du vælge en af fire tilgængelige **Feltstørrelser** for det nye felt i dialogboksen **Konfigurer felt**. Denne funktion giver dig også mulighed for at justere feltstørrelsen, efter at den er oprettet direkte fra arbejdsområdet.   
 - Hvis du vil føje et link til et arbejdsområde, skal du først filtrere listen på siden, så den viser dataene, du er interesseret i. (Hvis funktionen **Gemte visninger** er slået til, kan du ikke fortsætte, før du har gemt en visning, der har disse betingelser). Vælg derefter **Føj til arbejdsområde**. Vælg et arbejdsområde, og vælg derefter **Link** i feltet **Præsentation**. Når du har valgt **Konfigurer**, åbnes en dialogboks, hvor du kan angive, hvilken label der skal bruges til linket. Du kan også vælge at angive en label til sektionen, der skal indeholde dette link. Hvis denne sektion ikke findes, oprettes der en ny sektion.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Når du har tilføjet en liste, et felt eller link i et arbejdsområde, kan du �
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Føje en oversigt fra et arbejdsområde til et dashboard
 
 Nogle arbejdsområder indeholder optællingsfelter (dvs. felter med angivelse af antal), og du kan også få vist disse felter i dashboardet. Højreklik på et antalsfelt i et arbejdsområde, vælg **Personaliser**, og vælg derefter **Fastgør til dashboard** i feltets egenskabsvindue. Næste gang du åbner og opdaterer dashboardet, vises optællingen under navigationsfeltet for dette arbejdsområde. Du kan vælge denne optælling for at gå direkte til de data, den repræsenterer.
+
+### <a name="changing-the-size-of-a-tile"></a>Ændring af størrelsen på et felt
+Fra og med version 10.0.26 giver funktionen **Tillad, at brugerne vælger og ændrer feltstørrelser** brugerne mulighed for at ændre størrelsen på de felter, der ikke er KPI, via personlig tilpasning. Højreklik på et felt i et arbejdsområde, og vælg derefter **Tilpas**. I vinduet med feltegenskaben skal du vælge den ønskede størrelse i indstillingerne **Feltstørrelse**. Feltstørrelsen justeres med det samme. Hvis funktionen **(Forhåndsvisning) Understøttelse af gemte visninger for arbejdsområder** er aktiveret, kan du gemme denne tilpasning i en visning af arbejdsområder.  
 
 ### <a name="personalizing-your-dashboard"></a>Tilpasning af dit dashboard
 

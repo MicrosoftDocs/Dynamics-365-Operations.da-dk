@@ -2,13 +2,13 @@
 title: Oversigt over kreditorfakturaer
 description: Dette emne indeholder generelle oplysninger om kreditorfakturaer.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985331"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358411"
 ---
 # <a name="vendor-invoices-overview"></a>Oversigt over kreditorfakturaer
 
@@ -51,10 +51,10 @@ Den følgende diskussion indeholder flere oplysninger om, hvordan du kan bruge s
 
 Når du åbner en kreditorfaktura fra en relateret indkøbsordre, opretter systemet fakturalinjer fra indkøbsordren. Systemet, der tager mængderne som standard fra produktkvitteringen. Du kan dog bruge en eller flere af følgende standardfunktionsmåder:
 
-- **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Systemet indstiller standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Modtag nu** på indkøbsordren.
-- **Bestilt antal** – Brug denne indstilling til fuldførte forsendelser. Systemet indstiller standardværdien i feltet **Antal** stammer fra det antal, der er angivet i feltet **Bestilt** på indkøbsordren.
+- **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Standardværdien i feltet **Antal** indstilles til det antal, der er angivet i feltet **Modtag nu** på indkøbsordren.
+- **Bestilt antal** – Brug denne indstilling til fuldførte forsendelser. Standardværdien i feltet **Antal** indstilles til det antal, der er angivet i feltet **Bestilt** på indkøbsordren.
 - **Registreret antal** – Brug denne indstilling, hvis varen kræver registrering, som angivet på siden **Varemodelgrupper**. Standardværdien i feltet **Antal** er det fysisk opdaterede antal, der er registreret.
-- **Antal produktkvitteringer** – Brug denne indstilling, hvis der allerede er modtaget en produktkvittering for ordren. Systemet tager standardværdien i feltet **Antal** stammer fra det samlede antal tilgængelige produktkvitteringer.
+- **Antal produktkvitteringer** – Brug denne indstilling, hvis der allerede er modtaget en produktkvittering for ordren. Standardværdien i feltet **Antal** er det samlede antal tilgængelige produktkvitteringer.
 - **Registreret antal og tjenester** – Brug denne indstilling, hvis der er registreret antal i modtagelseskladder for lagerførte varer eller ikke-lagerførte varer. Denne indstilling omfatter også tjenester, uanset om de er registreret.
 
 Hvis din juridiske enhed bruger sammenholdelse af kreditorfakturaer, kan du se resultaterne af den mængde, der passer i kolonnen **Antal afstemte produktkvitteringer**. Du kan også bruge knappen **Detaljer om sammenholdelse** under fanen **Gennemgang** i handlingsruden for at få vist resultaterne af den tilsvarende mængde.
@@ -65,7 +65,7 @@ Du kan tilføje en linje, der ikke var på indkøbsordren, til kreditorfakturaen
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Sende en kreditorfaktura til gennemsyn
 
-Din organisation bruger måske arbejdsgange til at administrere gennemsynsprocessen for kreditorfakturaer. Gennemsyn via arbejdsgang kan være påkrævet for fakturahovedet, fakturalinjen eller begge dele. Arbejdsgangskontrolelementerne gælder for hovedet eller linjen, afhængigt af hvor fokus er, når du vælger kontrolelementet. I stedet for knappen **Bogfør** får du vist knappen **Send**, som du kan bruge til at sende kreditorfakturaen gennem evalueringsprocessen.
+Din organisation bruger måske arbejdsgange til at administrere gennemsynsprocessen for kreditorfakturaer. Gennemsyn via arbejdsgang kan være påkrævet for fakturahovedet, fakturalinjen eller begge dele. Arbejdsgangskontrolelementerne gælder for hovedet eller linjen, afhængigt af hvor fokus er, når du vælger kontrolelementet. I stedet for knappen **Bogfør** findes knappen **Send**, som sender kreditorfakturaen gennem evalueringsprocessen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura i at blive sendt til arbejdsgang 
 
@@ -102,7 +102,7 @@ Du kan angive det antal fakturaer, der skal medtages i batchen, og det antal tim
 
 ## <a name="working-with-multiple-invoices"></a>Arbejde med flere fakturaer
 
-Du kan arbejde med flere fakturaer samtidig og bogføre dem alle på én gang. Hvis du skal oprette flere fakturaer, skal du bruge siden **Afventende kreditorfakturaer**. Hvis du skal bogføre og udskrive flere kreditorfakturaer, skal du bruge fakturagodkendelseskladde. Hvis du bruger fakturagodkendelseskladden, skal mindst én produktkvittering bogføres for indkøbsordren, og der skal bogføres en faktura for indkøbsordren i en indgangsbog. De økonomiske oplysninger for fakturaen stammer fra den faktura, der blev bogført i indgangsbogen.
+Du kan arbejde med flere fakturaer samtidig og bogføre dem alle på én gang. Hvis du skal oprette flere fakturaer, skal du bruge siden **Afventende kreditorfakturaer**. Hvis du skal bogføre og udskrive flere kreditorfakturaer, skal du bruge **Fakturagodkendelseskladde**. Hvis du bruger **Fakturagodkendelseskladde**, skal mindst én produktkvittering bogføres for indkøbsordren, og der skal bogføres en faktura for indkøbsordren i en indgangsbog. De økonomiske oplysninger for fakturaen stammer fra den faktura, der blev bogført i indgangsbogen.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Gendanne kreditorfakturaer, der er i brug
 

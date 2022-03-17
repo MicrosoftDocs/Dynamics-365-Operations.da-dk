@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83d0b6243efd802ffc959f8de14f6232736fc88c
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087568"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384423"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -67,7 +67,10 @@ Hvis du laver en fejl og ikke længere vil have vist en total i en bestemt kolon
 ### <a name="calculating-totals"></a>Beregner totaler
 Når du kommer til en side, hvor sidefoden er synlig, og der allerede er konfigureret kolonner for totaler, vises totalerne muligvis ikke i sidefoden. Funktionsmåden afhænger af størrelsen af datasættet på siden. Hvis datasættet er tilstrækkeligt lille, vises totaler automatisk sammen med antallet af rækker i datasættet. Hvis der er bindestreger i sidefoden under de kolonner, du har konfigureret til totaler, er datasættet for stort til, at systemet kan vise totaler med det samme, og der skal udføres en eksplicit handling for at beregne totalerne. Det gør du ved at klikke på knappen **Beregn** i sidefoden eller højreklikke på en kolonne, du vil beregne totalen for, og vælge **Total for denne kolonne**.
 
-Hvis beregningen tager for lang tid, kan du annullere operationen ved at klikke på knappen **Annuller**. Nogle gange vil datasættet imidlertid være for stort til at kunne beregne totaler (en begrænsning, der er pålagt af organisationen), og du vil i stedet blive mindet om at filtrere dine data mere.
+Hvis beregningen tager lang tid at fuldføre, kan du annullere operationen ved at klikke på knappen **Annuller**. Nogle gange vil datasættet være for stort til at kunne beregne totaler (en begrænsning, der er pålagt af organisationen), og du vil i stedet blive mindet om at filtrere dine data mere. 
+
+> [!NOTE]
+> Systemadministrationer kan ændre grænsen for det antal poster, der er tilgængelige til beregning af totaler, ved at justere det **maksimale antal lokale poster for hver gitter**-parameteren på siden **Indstillinger for klientydeevne**. Standardværdien er 25.000 poster. Administratorer skal være omhyggelige, når de justerer denne værdi, da en for stor værdi kan opbruge den ledige hukommelse på brugerens computer. Anbefalingen er ikke at overstige 50.000 poster.   
 
 Totaler opdateres automatisk, efterhånden som du opdaterer, sletter eller opretter rækker i datasættet.
 

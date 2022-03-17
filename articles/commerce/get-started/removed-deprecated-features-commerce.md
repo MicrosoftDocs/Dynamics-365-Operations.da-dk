@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559553"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384601"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet f
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 > [!NOTE]
-> Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+> Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.21-frigivelsen
 
@@ -44,7 +44,7 @@ Indstillingen for **håndtering af overlappende rabatter** på siden **Handelspa
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | <p>Indstillingen for **håndtering af overlappende rabatter** i parametre for handel styrer, hvordan programmet til handelsprissætning søger i og bestemmer den optimale kombination af overlappende rabatter. Det indeholder i øjeblikket tre muligheder:<p><ul><li> **Bedste performance** – Denne indstilling bruger en avanceret heuridisk algoritme og en [metode til rangering af beregningsværdi](../optimal-combination-overlapping-discounts.md) til at prioritere, evaluere og fastlægge den bedste rabatkombination i rette tid.</li><li>**Afbalanceret beregning** – I det aktuelle kodegrundlag fungerer denne indstilling på samme måde som indstillingen **Bedste performance**. Derfor er det egentlig en dubletindstilling.</li><li>**Udtømmende beregning** – Denne indstilling bruger en gammel algoritme, der gennemgår alle de mulige rabatkombinationer under prisberegningen. I forbindelse med ordrer, der har store linjer og mængder, kan denne indstilling forårsage problemer med ydeevnen.</li></ul><p>For at forenkle konfigurationen, forbedre ydeevnen og reducere antallet af hændelser, der forårsages af den gamle algoritme, vil vi helt fjerne indstillingen for håndtering af **overlappende rabatter** og opdatere den interne logik i programmet Handelsprissætning, så programmet nu kun bruger den avancerede algoritme (det vil sige algoritmen bag indstillingen **Bedste performance**).</p> |
-| **Erstattet af en anden funktion?**   | Nr. Det anbefales, at organisationer, der bruger indstillingen **Afbalanceret beregning** eller **Udtømmende beregning**, skifter til indstillingen **Bedste performance**, før denne funktion fjernes. |
+| **Erstattet af en anden funktion?**   | Nej Det anbefales, at organisationer, der bruger indstillingen **Afbalanceret beregning** eller **Udtømmende beregning**, skifter til indstillingen **Bedste performance**, før denne funktion fjernes. |
 | **Produktområder, der er berørt**         | Priser og rabatter |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Pr. version 10.0.21 fjernes indstillingen for **håndtering af overlappende rabatter** fra commerce-parametrene i oktober 2022. |
@@ -59,7 +59,7 @@ Retail SDK leveres i Lifecycle Services (LCS). Denne distributionsmåde er foræ
 | **Erstattet af en anden funktion?**   |  [Hente Retail SDK-eksempler og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Produktområder, der er berørt**         | Retail SDK |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Udgået: Fra og med version 10.0.21 vil levering af SDK via LCS VM'er blive fjernet i oktober 2022. |
+| **Status**                         | Udfaset: Fra og med version 10.0.21 vil levering af SDK via LCS VM'er blive fjernet i april 2023. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Retail-installationspakke og kombinerede installationsprogrammer for POS, Hardwarestation og Cloud Scale Unit
 
@@ -82,9 +82,9 @@ Du kan finde flere oplysninger i:
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [POS, CSU og Hardwarestation](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln og CloudPOs.sln i Retail SDK
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln og CloudPos.sln i Retail SDK
 
-Udvikling af POS-udvidelse ved hjælp af ModernPos.sln, CloudPOs.sln, POS. Extension.csproj, og POS-mappen udgår i version 10.0.21. Fremover skal du bruge den POS-uafhængige installationspakke til SDK for POS-udvidelser.
+Udvikling af POS-udvidelse ved hjælp af ModernPos.sln, CloudPos.sln, POS.Extension.csproj og POS-mappen udfases i version 10.0.21. Fremover skal du bruge den POS-uafhængige installationspakke til SDK for POS-udvidelser.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ Udvikling af POS-udvidelse ved hjælp af ModernPos.sln, CloudPOs.sln, POS. Exten
 | **Erstattet af en anden funktion?**   | [POS-uafhængige SDK-pakker](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Produktområder, der er berørt**         | Dynamics 365 Commerce POS-udvidelse og -installation |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Udgået: Pr. version 10.0.21 fjernes understøttelsen af kombinerede POS-pakker og udvidelsesmodellen ved hjælp af ModernPos.Sln, CloudPOs.sln og POS. Extensons.csproj i Retail SDK i oktober 2022. |
+| **Status**                         | Udfaset: Pr. version 10.0.21 fjernes understøttelsen af kombinerede POS-pakker og udvidelsesmodellen ved hjælp af ModernPos.Sln, CloudPOs.sln og POS.Extensons.csproj i Retail SDK i april 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.17-frigivelsen
 

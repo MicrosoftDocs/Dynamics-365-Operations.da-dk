@@ -2,7 +2,7 @@
 title: Oprette returneringer i POS
 description: Dette emne beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-programmet.
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715524"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349685"
 ---
 # <a name="create-returns-in-pos"></a>Oprette returneringer i POS
 
@@ -96,6 +96,13 @@ Hvis oplysningerne på kanalsiden af en eller anden grund ikke er opdateret, og 
 
 > [!NOTE]
 > Når funktionen **Samlet behandling af returneringer i POS** er aktiveret, bliver nye valgfrie funktioner, der understøtter valideringen af serialiserede produktreturneringer, tilgængelige. Du kan finde flere oplysninger under [Returnere serienummerstyrede produkter i POS](POS-serial-returns.md).
+
+## <a name="version-details"></a>Versionsdetaljer
+
+Følgende liste indeholder de mindste versionskrav for de forskellige komponenter.
+- Commerce-hovedkontor: Version 10.0.20
+- Commerce Scale Unit (CSU): Version 9.30
+- POS: Version 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivér beregning af passende moms for returneringer med delvist antal
 

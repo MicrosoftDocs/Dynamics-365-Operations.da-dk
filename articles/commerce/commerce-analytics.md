@@ -2,18 +2,18 @@
 title: Commerce-analyser (forhåndsversion)
 description: Dette emne forklarer, hvordan du installerer og bruger analysefunktionaliteten i Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
-ms.date: 11/23/2021
+ms.date: 02/24/2022
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 8cfe2af756315b5be3eb22d99376a96166fffc52
-ms.sourcegitcommit: f9fca3d55b47e615e5ef64669dab184e057ec234
+ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7862767"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349737"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyser (forhåndsversion)
 
@@ -29,7 +29,6 @@ Du kan prøve en [live demo af Commerce-analyser (forhåndsversion)](https://aka
 ![Commerce-analyser (forhåndsversion) Betalinger](media/CommerceAnalytics_Payments.png)
 ![Commerce-analyser (forhåndsversion) Web-aktivitet](media/CommerceAnalytics_WebActivity.png)
 
-
 ## <a name="commerce-analytics-preview-system-architecture"></a>Systemarkitektur i Commerce-analyser (forhåndsversion)
 
 ### <a name="key-components"></a>Nøglekomponenter
@@ -37,7 +36,7 @@ Du kan prøve en [live demo af Commerce-analyser (forhåndsversion)](https://aka
 Commerce-analyser (forhåndsversion) består af følgende nøglekomponenter:
 
 - Interaktive Power BI-rapporter, der er klar til brug
-- SQL-visninger i Azure Synapse-analyser
+- SQL-visninger i Azure Synapse Analytics
 - Enhedsdata og ontologidata i Azure Data Lake
 - Rådata i Data Lake
 
@@ -70,11 +69,11 @@ Når rådata er i din datasø, læser Commerce-analyser det, transformerer det, 
 
 #### <a name="step-4-querying"></a>Trin 4: Forespørgsel
 
-Azure Synapse-analyser bruges til at forespørge på data i datasøen via en Transact-SQL-grænseflade (T-SQL). Denne brugergrænseflade indeholder SQL-visninger. SQL-visninger gør det muligt at sammenkæde forespørgsler på data i datasøen, enten direkte via en T-SQL-klient (til ad hoc-analyse) eller via et visualiseringsværktøj som f.eks. Power BI.
+Azure Synapse Analytics bruges til at forespørge på data i datasøen via en Transact-SQL-grænseflade (T-SQL). Denne brugergrænseflade indeholder SQL-visninger. SQL-visninger gør det muligt at sammenkæde forespørgsler på data i datasøen, enten direkte via en T-SQL-klient (til ad hoc-analyse) eller via et visualiseringsværktøj som f.eks. Power BI.
 
 #### <a name="step-5-modeling-and-serving"></a>Trin 5: Modellering og betjening
 
-Data, der forespørges af Azure Synapse-analyser går til den semantiske model i Power BI. Afhængigt af datatypen importeres den enten periodisk i hukommelsen til Power BI eller forespørges direkte under kørslen.
+Data, der forespørges af Azure Synapse Analytics, går til den semantiske model i Power BI. Afhængigt af datatypen importeres den enten periodisk i hukommelsen til Power BI eller forespørges direkte under kørslen.
 
 Endelig gengives dataene i Power BI-visuelle billeder, så brugerne kan se og bruge dem.
 
@@ -98,7 +97,7 @@ Appen til skabelonen Commerce-analyser indeholder følgende hovedrapportsider:
 12. [Web-aktivitet](#WebActivityPage)
 13. [Webaktivitet - Filter på øverste niveau](#WebActivityTopLevelFilters)
 
-####  <a name="top-level-filters"></a><a name="TopLevelFilters"></a> Filtre på øverste niveau
+#### <a name="top-level-filters"></a><a name="TopLevelFilters"></a> Filtre på øverste niveau
 
 - Datoindstillinger
 
@@ -122,13 +121,13 @@ Appen til skabelonen Commerce-analyser indeholder følgende hovedrapportsider:
     - Kategorihierarki
     - Kategori
 
-####  <a name="products"></a><a name="ProductsPage"></a> Produkter
+#### <a name="products"></a><a name="ProductsPage"></a> Produkter
 
 - Sales
 - Avance
 - Returvarer
 
-####  <a name="customers"></a><a name="CustomersPage"></a> Kunder
+#### <a name="customers"></a><a name="CustomersPage"></a> Kunder
 
 - Sales
 - Avance
@@ -313,7 +312,7 @@ Hvis brugere gennemser dit e-handelswebsted, mens de er logget på, kan Commerce
 
 #### <a name="impressions"></a>Udtryk
 
-Et eksempel er et enkelt visning af en produkt-visual efter en e-handelsbesøgende. En e-handel går f.eks. til startsiden for e-handelswebstedet og ser et produkt på et yogamåtteprodukt i et modul med **Topsalgsliste**. På den måde vises det samme produkt på rullelisten i et listemodul **Udvalgt til dig**. I dette tilfælde er der to produktudtryk. 
+Et eksempel er et enkelt visning af en produkt-visual efter en e-handelsbesøgende. En e-handel går f.eks. til startsiden for e-handelswebstedet og ser et produkt på et yogamåtteprodukt i et modul med **Topsalgsliste**. På den måde vises det samme produkt på rullelisten i et listemodul **Udvalgt til dig**. I dette tilfælde er der to produktudtryk.
 
 Aktuelt spores det efter følgende fremgangsmåder:
 
@@ -349,32 +348,60 @@ Siden **Impressionsrapport** indeholder følgende målepunkter:
 ## <a name="commerce-analytics-preview-installation"></a>Commerce-analyser (forhåndsversion), installation
 
 > [!NOTE]
-> Commerce-analyser (forhåndsversion) er som forhåndsversion i USA, Canada, Storbritannien, Europa, Sydøstasien, Østasien, Australien og Japan. Hvis dit Finance and Operations-miljø findes i nogen af disse områder, kan du aktivere denne funktion i dit miljø ved hjælp af Microsoft Dynamics Lifecycle Services (LCS). Før du kan bruge denne funktion, skal du se [Konfigurere eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+> Commerce-analyser (forhåndsversion) er som forhåndsversion i USA, Canada, Storbritannien, Europa, Sydøstasien, Østasien, Australien og Japan. Hvis dit Finans- og driftsmiljø findes i nogen af disse områder, kan du aktivere denne funktion i dit miljø ved hjælp af Microsoft Dynamics Lifecycle Services (LCS). Før du kan bruge denne funktion, skal du se [Konfigurere eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Aktivere og konfigurere Commerce-analyser (forhåndsversion)
 
-Hvis du vil installere Commerce-analyser (forhåndsversion), skal du have rettigheder til at oprette ressourcer i et Azure-abonnement. Du skal også have rettigheder til at installere tilføjelsesprogram i LCS. Her er en oversigt over trinnene:
+Hvis du vil installere Commerce-analyser (forhåndsversion), skal du have rettigheder til at oprette ressourcer i et Azure-abonnement. Du skal også have rettigheder til at installere tilføjelsesprogram i LCS. 
 
-1. [Send formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)](#joinPreview).
-2. [Aktivere og konfigurere Eksportér til Data Lake](#enableExportToDataLake).
-3. [Aktivere og konfigurere tilføjelsesprogram for Commerce-analyser (forhåndsversion)](#enableCommerceAnalyticsAddin).
-4. [Generér et token for delt adgangsunderskrift (SAS) til din lagerkonto](#getSASToken).
-5. [Hent installationsscriptene til Azure Synapse-visninger](#downloadSynapseDeploymentScripts).
-6. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
-7. [Installere skabelonappen Power BI](#powerbi).
+Hvis du vil aktivere og konfigurere Commerce-analyser (forhåndsversion), skal du følge disse trin.
 
-### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Send formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)
+1. [Aktivere og konfigurere tilføjelsesprogrammet Eksportér til Data Lake](#enableExportToDataLake).
+1. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
+1. [Føj hemmeligheder til Key Vault](#addSecrets).
+1. [Aktivere og konfigurere tilføjelsesprogram for Commerce-analyser (forhåndsversion)](#enableCommerceAnalyticsAddin).
+1. [Installere skabelonappen Power BI](#powerbi).
 
-Send [Formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)](https://forms.office.com/r/vW5VLJGXZ2). Giv op til tre arbejdsdage til den form, der skal behandles. Når den er behandlet, sendes der en bekræftelses-mail til den e-mailadresse, du har angivet i formen.
+### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Aktivere og konfigurere tilføjelsesprogrammet Eksportér til Data Lake
 
-### <a name="enable-and-configure-export-to-data-lake"></a><a name="enableExportToDataLake"></a>Aktivere og konfigurere Eksportér til Data Lake
+> [!IMPORTANT]
+> Når du konfigurerer tilføjelsesprogrammet Eksportér til Data Lake, skal du fjerne markeringen i afkrydsningsfeltet **Ændringer af data i realtid** på siden Konfigurer tilføjelsesprogrammet Eksportér til Data Lake for at sikre, at dataændringer i realtid ikke er aktiveret. Funktionen **Ændringer af data i realtid** er i forhåndsversion, og den understøttes ikke i øjeblikket af Commerce-analyser. Hvis du aktiverer funktionen, vil Commerce-analyser ikke kunne behandle dine data i datasøen, og de fleste af Power BI-rapporterne indeholder ingen data.
 
-Commerce-analyser (Forhåndsversion) er baseret på funktionen Eksporter til Data Lake til at eksportere HQ-data (Commerce HQ-data) til Data Lake, og de skal være nye. Før du konfigurerer Commerce-analyser (Forhåndsversion), skal du aktivere og konfigurere Eksport til Data Lake ved at følge trinnene i [Konfigurer eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+Commerce-analyser (forhåndsversion) er baseret på funktionen Eksportér til Data Lake til at eksportere Commerce-hovedkontorets data til Data Lake og holde dataene opdateret. Før du konfigurerer Commerce-analyser (Forhåndsversion), skal du aktivere og konfigurere Eksport til Data Lake ved at følge trinnene i [Konfigurer eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
-Når du konfigurerer Eksporter til Data Lake, skal du notere følgende oplysninger, da du skal angive dem senere:
+Når du konfigurerer tilføjelsesprogrammet Eksportér til Data Lake, skal du notere følgende oplysninger, da du skal angive dem senere:
 
-- <a name="keyVault"></a>DNS-navnet (Domain Name System) for key vault og de hemmelige navne, hvor du gemmer program-id'et og applikationen. Du kan finde flere oplysninger i [Tilføj hemmeligheder til Key Vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets).
-- <a name="storageAccount"></a>Navnet på lagerkontoen for forekomsten af Data Lake. Du kan finde flere oplysninger under [Oprette et Data Lake-lager Gen2-konto i dit abonnement](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
+- <a name="keyVault"></a>DNS-navnet (Domain Name System) for den Key Vault, du har angivet.
+- De hemmelige navne, du har angivet, og som indeholder program-id'et og programhemmeligheden. Du kan finde flere oplysninger i [Tilføj hemmeligheder til Key Vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets).
+
+### <a name="install-and-configure-an-azure-synapse-workspace"></a><a name="configureAzureSynapse"></a>Installer og konfigurer et Azure Synapse workspace
+
+Commerce-analyser (forhåndsvisning) kræver, at Synapse SQL efter anmodning klargøres i Azure Synapse workspace. Hvis du vil installere og konfigurere et Azure Synapse workspace, skal du følge disse trin.
+
+1. Installer et Azure Synapse workspace i dit Azure-abonnement. Du kan finde flere oplysninger under [Hurtig start: Opret et Synapse-arbejdsområde](/azure/synapse-analytics/quickstart-create-workspace).
+1. <a name="serverlessep"></a>Når arbejdsområdet er klargjort, skal du åbne oversigtssiden for ressourcer og notere dig værdien af **Serverløst SQL-slutpunkt**. Denne værdi skal lagres i Key Vault i næste afsnit.
+1. Vælg linket **Åbn Synapse Studio** på oversigtssiden for at åbne Azure Synapse Studio til dit arbejdsområde.
+1. Vælg **Administrer** i menuen til venstre. Hvis du vil se menunavnene, skal du muligvis vælge udvid-linket i venstre menu.
+1. Vælg **Adgangskontrol** under **Sikkerhedsgruppe**. 
+1. Vælg **Tilføj**.
+1. I ruden **Tilføj rolletildeling** skal du angive indstillingerne som beskrevet i følgende tabel.
+
+    | Indstilling | Værdi |
+    |--------|-------|
+    | Område | Vælg **Arbejdsområde**. |
+    | Rolle | Vælg **Synapse SQL-administrator**.|
+    | Vælg bruger | Søg efter navnet på det program, du [oprettede under installationen af tilføjelsesprogrammet Eksportér til Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createapplication). Når programmet vises i søgeresultaterne, skal du vælge det. Programmet vises nu i sektionen **Valgte brugere, grupper eller tjenesteprincipaler**. |
+
+1. Vælg **Anvend** for at fuldføre rolletildelingen. Programmet tildeles rettigheder som Synapse SQL-administrator. Det kan derfor oprette de påkrævede visninger under konfigurationen af LCS-tilføjelsesprogrammet Commerce-analyser (forhåndsversion).
+
+### <a name="add-secrets-to-the-key-vault"></a><a name="addSecrets"></a>Føj hemmeligheder til Key Vault
+
+I den samme [Key Vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createkeyvault), som du brugte, da du konfigurerede tilføjelsesprogrammet Eksportér til Data Lake,skal du tilføje de hemmeligheder, der er vist i følgende tabel. Du skal angive et hemmeligt navn og den angivne værdi for hver hemmelighed.
+
+| Foreslået hemmeligt navn | Hemmelig værdi | Eksempel på hemmelig værdi |
+|---------|---------|---------|
+| synapse-sql-server | Den serverløse SQL-slutpunktsværdi, du noterede, da du [konfigurerede Azure Synapse workspace](#serverlessep). | `test-ondemand.sql.azuresynapse.net` |
+| <a name="roUser"></a>readonly-sql-pwd | Den adgangskode, der skal angives for den skrivebeskyttede SQL-bruger. Rapporten i Power BI bruger denne adgangskode til at oprette forbindelse til den serverløse SQL. Følg din organisations adgangskodepolitikker for at angive adgangskoden. | |
 
 ### <a name="enable-and-configure-the-commerce-analytics-preview-add-in"></a><a name="enableCommerceAnalyticsAddin"></a>Aktivere og konfigurere tilføjelsesprogram til Commerce-analyser (forhåndsversion)
 
@@ -385,147 +412,55 @@ Hvis du vil installere og konfigurere tilføjelsesprogram i Commerce-analyser (f
 1. Log på [LCS](https://lcs.dynamics.com/), og gå til dit miljø.
 2. Vælg **Installér et nyt tilføjelsesprogram** på fanen **Tilføjelsesprogrammer for miljø** på siden **Miljø**.
 3. Vælg **Handelsanalyser (forhåndsversion)** i dialogboksen.
-
-    Hvis **Commerce-analyser (Forhåndsversion)** ikke er angivet, skal du sørge for, at du har aktiveret Insider Program.
-
 4. I dialogboksen **Konfigurer tilføjelse** skal du angive følgende oplysninger.
 
     | Oplysninger | Kilde | Eksempelværdi |
     |---|---|---|
-    | Azure AD Lejer-id for dit miljø | Log på [Azure-portalen](https://portal.azure.com/), og åbn **Azure Active Directory**-tjenesten. Åbn derefter siden **Egenskaber**, og kopier værdien i feltet **Mappe-id**. | 72f988bf-0000-0000-00000-2d7cd011db47 |
-    | Angiv DNS-navn for Key Vault | Angiv [DNS-navn](#keyVault) for Key Vault. Du skulle have gjort opmærksom på denne værdi i det foregående afsnit. | `https://contosod365datafeedpoc.vault.azure.net/` |
-    | Tekst, der indeholder ansøgnings-id | Angiv [det hemmelige navn på den adresse, hvor program-id opbevares](#keyVault). Du skulle have gjort opmærksom på denne værdi i det foregående afsnit. | app-id |
-    | Tekst, der indeholder ansøgningshemmelighed | Angiv [det hemmelige navn på den adresse, hvor programhemmelighed opbevares](#keyVault). Du skulle have gjort opmærksom på denne værdi i det foregående afsnit. | app-hemmelighed |
+    | Azure Active Directory-lejer-id (Azure AD) | Log på [Azure-portalen](https://portal.azure.com/), og åbn **Azure Active Directory**-tjenesten. Åbn derefter siden **Egenskaber**, og kopiér værdien i feltet **Lejer-id**. | `72f988bf-0000-0000-00000-2d7cd011db47` |
+    | DNS-navn for din Azure Key Vault | Angiv DNS-navn for Key Vault. Du skulle have noteret dig denne værdi, da du [konfigurerede tilføjelsesprogrammet Eksportér til Data Lake](#keyVault). | `https://contosod365datafeedpoc.vault.azure.net/` |
+    | Hemmeligt navn, der indeholder program-id | Angiv det hemmelige navn på den adresse, hvor program-id opbevares. Du skulle have noteret dig denne værdi, da du [konfigurerede tilføjelsesprogrammet Eksportér til Data Lake](#keyVault). | `app-id` |
+    | Hemmeligt navn, der indeholder programhemmelighed | Angiv det hemmelige navn på den adresse, hvor programhemmelighed opbevares. Du skulle have noteret dig denne værdi, da du [konfigurerede tilføjelsesprogrammet Eksportér til Data Lake](#keyVault). | `app-secret` |
+    | Hemmeligt navn, der indeholder det serverløse SQL-slutpunkt til Azure Synapse | Angiv det hemmelige navn, hvor det serverløse SQL-slutpunkt opbevares. Du skulle have oprettet hemmeligheden, mens du [føjede hemmeligheder til nøgleværdien](#addSecrets). | `synapse-sql-server` |
+    | Hemmeligt navn, der indeholder den adgangskode, der skal angives for skrivebeskyttede SQL-brugere i Azure Synapse | Angiv det hemmelige navn, der gemmer den adgangskode, der skal angives for den serverløse, skrivebeskyttede SQL-bruger. Denne bruger oprettes for dig og skal bruges i Power BI-rapporten til at oprette forbindelse til den serverløse SQL-server. Du skulle have oprettet hemmeligheden, mens du [føjede hemmeligheder til nøgleværdien](#addSecrets). | `readonly-sql-pwd` |
 
-5. Accepter tilbuddets betingelser ved at markere afkrydsningsfeltet, og vælg derefter **Installer**.
+1. Accepter tilbuddets betingelser ved at markere afkrydsningsfeltet, og vælg derefter **Installer**.
 
     Systemet installerer og konfigurerer tilføjelsesprogrammet Commerce-analyse (forhåndsversion) for miljøet. Denne proces kan tage nogle få minutter. Når den er fuldført, skal **Commerce-analyse (Forhåndsversion)** vises på siden **Miljø**, og status skal være **Installeret**.
-
-### <a name="generate-a-sas-token-for-your-storage-account"></a><a name="getSASToken"></a>Generere et SAS-token til lagerkontoen
-
-Et SAS-token giver eksterne enheder adgang til din lagerkonto og har et bestemt sæt rettigheder til et begrænset tidsrum. Azure Synapse vil bruge SAS-token til at få adgang til de underliggende data i Data Lake.
-
-> [!NOTE]
-> På grund af en kendt begrænsning af Commerce-analyse (Forhåndsversion) mister Azure Synapse-forekomsten adgangen til datasøen, når SAS-token udløber. Når du genererer SAS-token, skal du derfor angive den maksimumudløbsdato, som organisationens sikkerhedspolitikker tillader.
-
-Benyt følgende fremgangsmåde for at generere SAS-token.
-
-1. På Azure-portalen skal du gå til den [lagerkonto](#storageAccount), du oprettede, da du konfigurerede Eksport til Data Lake.
-2. I venstre rude under lagerkontoen skal du vælge **Delt adgangsunderskrift**.
-3. På siden **SAS-indstillinger** skal du angive følgende felter.
-
-    | Felt | Værdi |
-    |---|---|
-    | Tilladte tjenester | Vælg **Blob**. |
-    | Tilladte ressourcetyper | Vælg **Service**, **Container** og **Objekt**. |
-    | Tilladte tilladelser | Vælg **Læs**, **Skriv**, **Slet**, **Liste**, **Tilføj** og **Opret**. |
-    | Tilladelser til Blob-version | Marker **Aktiverer sletning af versioner**. |
-    | Start-og udløbsdato/-klokkeslæt | Angiv en start- og slutdato og et tidspunkt for SAS-token efter behov. |
-    | Tilladte IP-adresser | Lad feltet være tomt. |
-    | Tilladte protokoller | Vælg kun **HTTPS**. |
-    | Foretrukket ruteniveau | Vælg **basis (standard)**. |
-    | Signeringsnøgle | Vælg **nøgle 1** eller **nøgle 2** efter behov. |
-
-4. Vælg **Generer SAS og forbindelsesstreng**.
-5. Kopiér værdien i **SAS-token**-feltet, og indsæt den i en teksteditor, f.eks. Notesblok.
-
-### <a name="download-the-deployment-scripts-for-azure-synapse-views"></a><a name="downloadSynapseDeploymentScripts"></a>Hent installationsscriptene til Azure Synapse-visninger
-
-Hvis du vil oprette og udgive de påkrævede visninger i et Azure Synapse workspace, skal du køre et sæt scripts. Følg disse trin for at hente scripts.
-
-1. På GitHub skal du gå til [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)-lageret.
-2. Download scriptene til den lokale computer ved at klone repo'en eller hente den som en zip-fil.
-
-### <a name="install-and-configure-an-azure-synapse-workspace"></a><a name="configureAzureSynapse"></a>Installer og konfigurer et Azure Synapse workspace
-
-Hvis du vil installere og konfigurere et Azure Synapse workspace, skal du følge disse trin.
-
-1. Installer et Azure Synapse workspace i dit Azure-abonnement. Du kan finde flere oplysninger under [Hurtig start: Opret et Synapse-arbejdsområde](/azure/synapse-analytics/quickstart-create-workspace).
-2. I Notesblok eller en anden teksteditor skal du åbne Scriptfilen **SetupSynapse.sql** fra mappen på den lokale computer, som du klonede eller hentede Dynamics365Commerce.Solutions-repo til i forrige afsnit. Scriptfilen findes under mappen /Pipeline/CommerceAnalyticsSynapse/. I scriptet skal du erstatte pladsholdertekst med værdier, som vist i følgende tabel.
-
-    | Pladsholdertekst | Erstatningsværdi |
-    |---|---|
-    | placeholder_storageaccount | Navnet på den [lagerkonto](#storageAccount), du oprettede, da du konfigurerede Eksport til Data Lake. |
-    | <a name="phContainer"></a>placeholder_container | Navnet på den lagercontainer, der blev oprettet i din forekomst af Data Lake, efter at du installerede tilføjelsesprogrammet Export to Data Lake i LCS. Hvis du vil hente containernavnet, skal du bruge Storage Explorer i Azure-portalen til at gennemse din lagerkonto. |
-    | placeholder_sastoken | Den [SAS-token](#getSASToken), som du genererede. Sørg for at fjerne spørgsmålstegnet (**?**) fra starten af SAS-token-værdien. |
-    | <a name="phUserPwd"></a>placeholder_password | En stærk adgangskode efter eget valg. Noter adgangskoden. Den angives som adgangskoden til den nye **reportreadonlyuser**-konto, som scriptet opretter. Angiv **ikke** adgangskoden til **sqladminuser**-kontoen. |
-
-3. Kopier det opdaterede indhold i scriptfilen.
-4. Gå til det nye Azure Synapse workspace i Azure-portalen. Vælg **Åbn Synapse Studio** på siden **Oversigt**.
-5. Vælg **Nyt \> SQL-script** i Synapse Studio, og indsæt indholdet af scriptfilen i SQL-scripteditoren.
-6. Kontrollér, at feltet **Brug database** er angivet til **master**.
-7. Vælg **Kør**, og vent på, at scriptet er færdig med at køre. Hvis scriptet udføres korrekt, oprettes databasen til handelsanalyser, legitimationsoplysningerne til adgang til datasøen og en skrivebeskyttet brugerkonto, som Power BI skal bruge til at oprette forbindelse til Azure Synapse-forekomsten.
-8. Åbn Windows PowerShell i admin-tilstand på din lokale computer, og gå til mappen /Pipeline/CommerceAnalyticsSynapse/ under den mappe, du klonede eller som du hentede Dynamics365Commerce.Solutions-repo til.
-9. Konfigurer udførelsespolitikken for Windows PowerShell ved at køre følgende kommando.
-
-    ```powershell
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    ```
-
-10. Hvis SQL Server PowerShell-modulet ikke allerede er installeret, kan du installere det ved at køre følgende kommando.
-
-    ```powershell
-    Install-Module sqlserver
-    ```
-
-    > [!NOTE]
-    > Under installationen af modulet bliver du måske bedt om at installere en NuGet-udbyder. I dette tilfælde skal du vælge **J** for at installere NuGet-udbyderen. Du kan også blive bedt om at bekræfte, at du er ved at geninstallere moduler fra et lager, der ikke er i brug. I dette tilfælde skal du vælge **J** for at fortsætte installationen. Du kan vælge at køre **Set-PSRepository** cmdlet for at have tillid til **PSGallery-lageret**.
-
-11. Udgiv Azure Synapse-visningerne ved at køre følgende kommando.
-
-    ```powershell
-    .\PublishSynapseViews.ps1 -serverName SERVER_NAME -password PASSWORD -storageAccount STORAGE_ACCOUNT -containerName CONTAINER_NAME -datarootpath DATA_ROOT_PATH
-    ```
-
-    Når du kører denne kommando, erstattes pladsholderværdier, som vist i følgende tabel.
-
-    | Pladsholderværdi | Erstatningsværdi |
-    |---|---|
-    | SERVER_NAME | Navnet på Azure Synapse Serverless SQL-slutpunkt. Du kan hente denne værdi fra **oversigtssiden** for Azure Synapse workspace i Azure-portalen. |
-    | ADGANGSKODE | Adgangskoden til **sqladminuser-kontoen**. |
-    | STORAGE_ACCOUNT | Navnet på lagerkontoen for forekomsten af Data Lake. |
-    | CONTAINER_NAME | Navnet på den container, der blev oprettet af funktionen Eksporter til Data Lake. Denne container er den samme container, som du angav [placeholder_container](#phContainer) i trin 2. |
-    | DATA_ROOT_PATH | Mappenavnet under den container, der indeholder alle dataene. |
-
-    > [!NOTE]
-    > Du kan finde navnet på lagringskontoen, containernavnet og datarodsstien ved hjælp af Azure-lagerbrowseren og din Data Lake-lagerkonto på Azure-portalen.
-
-12. Vent på, at scriptet er færdig med at køre. Hvis scriptet udføres korrekt, oprettes SQL-visninger i Azure Synapse-serverløse SQL-forekomsten.
 
 ### <a name="install-the-power-bi-template-app"></a><a name="powerbi"></a>Installér Power BI-skabelonapp
 
 Hvis du vil installere Power BI-skabelonapp til Commerce-analyser (forhåndsversion), skal du følge disse trin.
 
 1. Log på portalen [Power BI](https://powerbi.microsoft.com/) ved hjælp af dit organisations-id.
-2. Installer Commerce-analyser (Forhåndsversion) Power BI-skabelonappen ved at gå til [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp). Du kan modtage en advarsel, der viser, at appen ikke er vist på AppSource. Vælg **Installer**.
-3. Hvis du installerer appen første gang, skal du gå videre til trin 5. Hvis du har installeret denne app før, vises følgende indstillinger for opdatering af appen:
+1. Installer Commerce-analyser (Forhåndsversion) Power BI-skabelonappen ved at gå til [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp). Du kan også gå til [AppSource-siden for Dynamics 365 Commerce-analyser](https://appsource.microsoft.com/product/power-bi/dynamics-365-commerce.dydnamics-365-commerce-analytics) og vælge **Hent den nu**.
+1. Hvis du installerer appen første gang, skal du gå videre til trin 5. Hvis du har installeret den før, vises følgende indstillinger for opdatering af appen:
 
     - **Opdater arbejdsområdet og appen** – Opdater den eksisterende skabelonapp, og overskriv dine eksisterende appindstillinger, f.eks. konfigurationer af appforekomster og tilladelser.
     - **Opdater kun indholdet på arbejdsområdet uden at opdatere appen** – Opdater den eksisterende skabelonapp, men behold dine eksisterende appindstillinger. *Denne indstilling er den anbefalede indstilling for appopdateringer.*
     - **Installer en anden kopi af appen i et nyt arbejdsområde** – Opret et nyt arbejdsområde, og opret derefter en kopi af den eksisterende skabelonapp i det. Det eksisterende arbejdsområde bevares.
 
-4. Vælg en af opdateringsindstillingerne, og vælg derefter **Installer**.
-5. Åbn den installerede app ved at vælge **Apps** i venstre rude og derefter vælge appen.
-6. Opret forbindelse mellem appen og datakilden ved at vælge **Tilslut**. Hvis du har installeret appen før, skal du vælge linket **Tilknyt dit datalink** på den gule meddelelseslinje.
-7. Angiv følgende felter.
+1. Vælg en af opdateringsindstillingerne, og vælg derefter **Installer**.
+1. Åbn den installerede app ved at vælge **Apps** i venstre rude og derefter vælge appen.
+1. Opret forbindelse mellem appen og datakilden ved at vælge **Tilslut**. Hvis du har installeret appen før, skal du vælge linket **Tilknyt dit datalink** på den gule meddelelseslinje.
+1. Angiv følgende felter.
 
     | Felt | Værdi |
     |---|---|
-    | Server | Angiv navnet på Azure Synapse Serverless SQL-slutpunkt, du oprettede i forrige afsnit. Du kan hente denne værdi fra **oversigtssiden** for Azure Synapse workspace i Azure-portalen. |
+    | Server | Angiv det serverløse SQL-slutpunkt, du noterede, efter at du [oprettede Azure Synapse workspace](#serverlessep). |
     | Database | Angiv **CommerceAnalytics**. |
     | Sprog | Vælg en værdi fra listen. Dette felt bruges til lokale produkt- og kategorinavne. Værdien er følsom over for store og små bogstaver. |
     | Datointerval | Vælg en værdi fra listen. Data for det valgte antal måneder importeres til Power BI-datasættet. Den værdi, du vælger, har indflydelse på størrelsen på datasættet og den tid, der kræves til synkroniseringen. |
 
-8. Vælg **Næste**. Du bliver bedt om at angive legitimationsoplysningerne til oprettelse af forbindelse til Azure Synapse SQL-databasen. Indstil felterne som beskrevet i følgende tabel.
+1. Vælg **Næste**. Når du bliver bedt om at angive legitimationsoplysningerne til oprettelse af forbindelse til Azure Synapse SQL-databasen, skal du angive feltværdierne som vist i følgende tabel.
 
     | Felt | Værdi |
     |---|---|
     | Godkendelsesmetode | Vælg **Basis**. |
     | Brugernavn | Angiv **reportreadonlyuser**. |
-    | Adgangskode | Angiv den værdi, du har erstattet med [placeholder_password](#phUserPwd)-pladsholderen i setupSynapse.sql-scriptet. Denne adgangskode er adgangskoden til **reportreadonlyuser-kontoen**. |
+    | Adgangskode | Angiv den adgangskode, du har [gemt for den skrivebeskyttede SQL-bruger i Key Vault](#roUser). |
 
-9. Vælg **log på, og opret forbindelse**.
-10. Vent, indtil datasættet er opdateret. Vælg derefter knappen **Rediger app** for at åbne app-arbejdsområdet, hvor du kan få vist opdateringsstatus for datasættet. I apparbejdsområdet kan du også vælge at oprette automatiske opdateringsplaner for dit datasæt, administrere tilladelser og omdøbe app-forekomsten.
+1. Vælg **log på, og opret forbindelse**.
+1. Vent, indtil datasættet er opdateret korrekt. Vælg derefter **Rediger app** for at åbne App-arbejdsområdet, hvor du kan få vist opdateringsstatus for datasættet. I apparbejdsområdet kan du også vælge at oprette automatiske opdateringsplaner for dit datasæt, administrere tilladelser og omdøbe app-forekomsten.
 
 ### <a name="privacy"></a><a name="privacy"></a>Beskyttelse
 

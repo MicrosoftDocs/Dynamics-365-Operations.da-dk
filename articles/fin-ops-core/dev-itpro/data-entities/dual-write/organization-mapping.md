@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062080"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358358"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
@@ -36,11 +36,11 @@ Organisationshierarkiets tabeltilknytninger er tilgængelige for envejs synkroni
 
 ## <a name="templates"></a>Skabeloner
 
-Produktoplysninger indeholder alle de oplysninger, der er knyttet til produktet og dets definition, f. eks. produktdimensionerne eller sporings-og lagringsdimensionerne. Som følgende tabel viser, oprettes der en samling af tabeltilknytninger for at synkronisere produkter og relaterede oplysninger.
+En organisation er en grupper personer, der arbejder sammen for at udføre en forretningsproces eller nå et mål. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Du kan definere følgende typer interne organisationer: juridiske enheder, driftsenheder og team. Som det fremgår af tabellen nedenfor, oprettes der en samling tabeltilknytninger til synkronisering af juridiske enheder, driftsenheder og relaterede oplysninger om organisationshierarki.
 
-Finans og drift-apps | Kundeengagementapps     | Betegnelse
+Finans og drift-apps | Kundeengagementapps     | Beskrivelse
 -----------------------|--------------------------------|---
-[Juridiske enheder](mapping-reference.md#102) | cdm_companies | Giver mulighed for tovejssynkronisering af juridiske enhedsoplysninger (firma).
+[Juridiske enheder](mapping-reference.md#102) | cdm_companies | 
 [Juridiske enheder](mapping-reference.md#142) | msdyn_internalorganizations |
 [Driftsenhed](mapping-reference.md#143) | msdyn_internalorganizations |
 [Organisationshierarki - publiceret](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Denne skabelon giver mulighed for envejssynkronisering af tabellen Publiceret organisationshierarki.

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311973"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349711"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -159,7 +159,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 305 | Indløs kundefordelspoint | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ja |
 | 635 | Refunder forsendelsesgebyrer | Refunder forsendelsesgebyrer på en annulleret ordre. | Nej | Nej | Nej | Nej | Nej |
 | 644 | Fjern kuponkode | Bed brugeren om at fjerne kuponer ved at vælge dem på en liste over kuponer, der aktuelt er knyttet til transaktionen. | Ja | Ja | Nej | Ja | Nej |
-| 1057 | Udskriv Z igen | Udskrive Z-rapporten for det tidligere skift eller et valgt skift. | Ja | Ja | Ja | Nej | Nej |
+| 1057 | Udskriv Z igen | Udskriv Z-rapporten for det tidligere skifte igen. | Ja | Ja | Ja | Nej | Nej |
 | 1216 | Indtast en ny adgangskode | Med denne handling kan en bruger, som har tilladelse til at nulstille adgangskoder, nulstille adgangskoden for en anden medarbejder ved hjælp af en midlertidig adgangskode. | Ja | Ja | Ja | Nej | Nej |
 | 1219 | Åbne URL-adresse i POS | Åbn en URL-adresse, der er konfigureret af en administrator, i POS. | Ja | Ja | Ja | Ja | Nej |
 | 109 | Returprodukt | Returner individuelle produkter. Det næste scannede produkt vises som et returneret produkt, der har en negativ mængde og pris. | Ja | Ja | Nej | Ja | Nej |

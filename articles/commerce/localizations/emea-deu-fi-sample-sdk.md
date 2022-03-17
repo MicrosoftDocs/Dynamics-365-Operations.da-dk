@@ -2,23 +2,24 @@
 title: Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)
 description: Dette emne indeholder retningslinjer for implementering af eksempel på regnskabsintegration for Tyskland fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077059"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388178"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Tyskland fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Tyskland](emea-deu-fi-sample.md). 
 
@@ -85,11 +86,15 @@ CRT-udvidelseskomponenterne er inkluderet i CRT-eksemplerne. Du kan fuldføre f�
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
     ```
 
-### <a name="enable-hardware-station-extensions"></a>Aktivere hardwarestationsudvidelser
+### <a name="enable-fiscal-connector-extensions"></a>Aktivere regnskabsconnectorudvidelser
+
+Du kan aktivere regnskabsconnectorudvidelser på [hardwarestationen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) eller [POS-kasseapparatet](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+
+#### <a name="enable-hardware-station-extensions"></a>Aktivere hardwarestationsudvidelser
 
 Udvidelseskomponenterne for hardwarestationen er inkluderet i eksemplerne til Hardwarestation. Du kan fuldføre følgende procedurer ved at åbne løsningen **HardwareStationSamples.sln** under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### <a name="efrsample-component"></a>Komponenten EFRSample
+##### <a name="efrsample-component"></a>Komponenten EFRSample
 
 1. Find projektet **HardwareStation.Extension.EFRSample**, og opbyg det.
 2. Find følgende assembly-filer i mappen **Extension.EFRSample\\bin\\Debug**:
@@ -112,6 +117,30 @@ Udvidelseskomponenterne for hardwarestationen er inkluderet i eksemplerne til Ha
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### <a name="enable-pos-extensions"></a>Aktivere POS-udvidelser
+
+Eksemplet på POS-udvidelse findes i mappen **src\\FiscalIntegration\\PosFiscalConnectorSample** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+
+Udfør følgende trin for at bruge POS-udvidelseseksemplet i den ældre SDK.
+
+1. Kopiér mappen **Pos.Extension** til POS-mappen **Extensions** i det ældre SDK (f.eks. `C:\RetailSDK\src\POS\Extensions`).
+1. Omdøb kopien af **Pos.Extension**-mappen **PosFiscalConnector**.
+1. Fjern følgende mapper og filer fra mappen **PosFiscalConnector**:
+
+    - bin
+    - DataService
+    - devDependencies
+    - Biblioteker
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdmxModel.g.xml
+    - tsconfig.json
+
+1. Åbn løsningen **CloudPos.sln** eller **ModernPos.sln**.
+1. I projektet **Pos.Extensions** skal du medtage mappen **PosFiscalConnector**.
+1. Åbn filen **extensions.json**, og tilføj udvidelsen **PosFiscalConnector**.
+1. Opbyg SDK.
 
 ### <a name="production-environment"></a>Produktionsmiljø
 
@@ -210,3 +239,26 @@ Følgende indstillinger tilføjes:
 - **Slutpunktadresse** – URL-adressen for tjenesten til regnskabsregistrering.
 - **Timeout** – Den tid i millisekunder (ms), som driveren vil vente på et svar fra tjenesten til regnskabsregistrering.
 - **Vis beskeder om regnskabsregistrering** – Hvis denne parameter er aktiveret, vises beskeder fra regnskabstjenesten som brugermeddelelser i POS.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Design af udvidelsen POS-regnskabsconnector
+
+Formålet med POS-regnskabsconnector-udvidelsen er at kommunikere med tjenesten til regnskabsregistrering fra POS. Den bruger HTTPS-protokollen til kommunikation.
+
+#### <a name="fiscal-connector-factory"></a>Fabrik for regnskabsconnector
+
+Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce-hovedkontoret.
+
+#### <a name="efr-fiscal-connector"></a>EFR-regnskabsconnector
+
+EFR-regnskabsconnectoren er placeret i filen **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Den implementerer brugergrænsefladen **IFiscalConnector**, der understøtter følgende anmodninger:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Denne anmodning sender dokumenter til tjenesten for regnskabsregistrering og returnerer et svar fra den.
+- **FiscalRegisterIsReadyClientRequest** – Denne anmodning bruges til tilstandskontrol af tjenesten til regnskabsregistrering.
+- **FiscalRegisterInitializeClientRequest** – Denne anmodning bruges til at initialisere tjenesten til regnskabsregistrering.
+
+#### <a name="configuration"></a>Konfiguration
+
+Konfigurationsfilen findes i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i lageret [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Formålet med filen er at aktivere indstillinger for regnskabsconnectoren, der skal konfigureres fra Commerce Headquarters. Filformatet er tilpasset kravene til konfiguration af regnskabsintegration. Følgende indstillinger tilføjes:
+
+- **Slutpunktadresse** – URL-adressen for tjenesten til regnskabsregistrering.
+- **Timeout** – Den tid i millisekunder, som connectoren vil vente på et svar fra tjenesten til regnskabsregistrering.

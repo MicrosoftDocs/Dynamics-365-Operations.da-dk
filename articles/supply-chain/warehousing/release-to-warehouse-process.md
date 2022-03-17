@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428917"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376202"
 ---
 # <a name="release-to-warehouse"></a>Frigiv til lagersted
 
@@ -125,6 +125,7 @@ For at konfigurere et batchjob til frigivelse af salgsordrer, skal du gøre føl
     - **Antal til frigivelse** - Vælg om hele antallet skal frigives, eller om det fysisk reserverede antal skal frigives til lagerstedet.
     - **Tillad frigivelse af delvist frigivne ordrer** – Angiv, om restantal for delvist frigivne ordrer skal frigives til lagerstedet.
     - **Behold reservationer af frigivelsesfejl** – Angiv, om antal, der blev automatisk reserveret for en salgsordre, skal forblive reserveret, hvis processen for frigivelsen til lagerstedet mislykkes.
+    - **Gruppere udgivelser efter kunde** – Angiv, om systemet skal behandle udgivelse til lagerstedsoperationer separat for hver kunde, eller om alle salgsordrer skal udgives samtidig. Når denne indstilling er angivet til *Ja*, indsamler systemet alle salgsordrelinjer for en valgt kunde, udgiver disse ordrer til lagerstedet og behandler derefter næste kunde. Når denne indstilling er angivet til *Nej*, udgives alle tilgængelige salgsordrelinjer i én enkelt version til lagerstedshandlingen. Aktivering af denne indstilling forbedrer ydeevnen og robustheden af processen for udgivelse til lagersted. Du skal dog være forsigtig, når du bruger denne indstilling sammen med bølgeskabeloner, der er konfigureret til at behandle bølger ved udgivelse til lagerstedet, da denne kombination kan generere mange enkeltkundebølger, der hver især har arbejde, som kun er genereret for den pågældende kunde. Hvis du vil generere arbejde, der kombinerer forsendelser til flere kunder, skal du deaktivere indstillingen *Gruppere udgivelser efter kunde* eller konfigurere skabelonerne, så du kan bruge udskudt behandling.
     - **Låst ordrehåndtering** – Vælg, hvordan salgsordrer, der aktuelt er låst, skal behandles af andre brugere eller processer:
 
         - *Vent, indtil ordrer låses op* – systemet skal vente, indtil ordrerne låses op, før de frigives til lagerstedet. I dette tilfælde kan det tage mere tid at frigive til lagerstedet.

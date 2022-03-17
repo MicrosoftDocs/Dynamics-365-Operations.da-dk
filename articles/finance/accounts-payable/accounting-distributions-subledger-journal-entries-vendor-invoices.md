@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: f10ddf113f59da4800a97a48300ab1310bfb42dd
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325962"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358175"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdepostering for kreditorfakturaer
 
@@ -31,7 +31,7 @@ Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres f
 ## <a name="accounting-distributions"></a>Regnskabsfordelinger 
 
 Du kan bruge følgende knapper på siden Kreditorfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på kreditorfakturaen.
--   **Distribuer beløb** – vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
+-   **Distribuer beløb** – vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også se og redigere regnskabsfordelinger for den underordnede linje direkte fra siden **Momstransaktioner** eller siden **Gebyrtransaktioner**.
     -   Ændre beløb i fakturahoveder, f.eks. afgifter eller valutaafrundingsbeløb.
     -   Reducer linjebeløb i kreditorfakturaen.
 -   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjer i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
@@ -62,7 +62,7 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 <td>Lagerført produkt</td>
 <td><ol>
 <li>Regnskabsfordeling for indkøbsordrelinjen.</li>
-<li>Feltet **Hovedkonto**, når Udgifter til indkøb for produkt er markeret på siden **Bogføring**.</li>
+<li>Feltet <strong>Hovedkonto</strong>, når Udgifter til indkøb for produkt er markeret på siden <strong>Bogføring</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
@@ -73,35 +73,35 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 <td>En indkøbskategori eller et produkt, der ikke er på lager.</td>
 <td><ol>
 <li>Regnskabsfordelingen for købsordrelinjen, hvis kreditorfakturalinjen henviser til en købsordrelinje.</li>
-<li>Feltet **Hovedkonto**, når Udgifter til indkøb for udgift er markeret på siden **Bogføring**.</li>
+<li>Feltet <strong>Hovedkonto</strong>, når Udgifter til indkøb for udgift er markeret på siden <strong>Bogføring</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Hvis hovedkontoen er en fordelingskonto, skal du bruge standardværdien fra definitionen af fordelingskontoen.</li>
 <li>Brug de finansielle standarddimensionsværdier på kreditorfakturaen.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anlægsaktiv</td>
 <td><ol>
 <li>Regnskabsfordelingen for købsordrelinjen, hvis kreditorfakturalinjen henviser til en købsordrelinje.</li>
-<li>Hvis **Anskaffelse** er valgt i feltet **Posteringstype** på siden **Kreditorfaktura**, feltet **Hovedkonto**, når **Anskaffelse** er markeret på siden **Posteringsprofiler for anlægsaktiver**.</li>
-<li>Hvis **Anskaffelsesregulering** er valgt i feltet **Posteringstype**, feltet **Hovedkonto**, når **Anskaffelsesregulering** er markeret på siden **Posteringsprofiler for anlægsaktiver**.</li>
+<li>Hvis <strong>Anskaffelse</strong> er valgt i feltet <strong>Posteringstype</strong> på siden <strong>Kreditorfaktura</strong>, feltet <strong>Hovedkonto</strong>, når <strong>Anskaffelse</strong> er markeret på siden <strong>Posteringsprofiler for anlægsaktiver</strong>.</li>
+<li>Hvis <strong>Anskaffelsesregulering</strong> er valgt i feltet <strong>Posteringstype</strong>, feltet <strong>Hovedkonto</strong>, når <strong>Anskaffelsesregulering</strong> er markeret på siden <strong>Posteringsprofiler for anlægsaktiver</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Brug regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Projekt, der er defineret på kreditorfakturalinjen</td>
 <td><ol>
 <li>Regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
-<li>Hvis **Saldo** er valgt i feltet **Bogfør omkostninger - Vare** på siden **Projektgrupper**, feltet **Hovedkonto**, når **Omkostning** er valgt på siden **Opsætning af finanskontering**.</li>
-<li>Hvis **Drift** er valgt i feltet **Bogfør omkostninger - Vare** på siden **Projektgrupper**, feltet **Hovedkonto**, når **Omkostning - vare** er valgt på siden **Opsætning af finanskontering**.</li>
+<li>Hvis <strong>Saldo</strong> er valgt i feltet <strong>Bogfør omkostninger - Vare</strong> på siden <strong>Projektgrupper</strong>, feltet <strong>Hovedkonto</strong>, når <strong>Omkostning</strong> er valgt på siden <strong>Opsætning af finanskontering</strong>.</li>
+<li>Hvis <strong>Drift</strong> er valgt i feltet <strong>Bogfør omkostninger - Vare</strong> på siden <strong>Projektgrupper</strong>, feltet <strong>Hovedkonto</strong>, når <strong>Omkostning - vare</strong> er valgt på siden <strong>Opsætning af finanskontering</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
@@ -111,18 +111,18 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 <td>Linjerabat</td>
 <td><ol>
 <li>Regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
-<li>Feltet **Hovedkonto** når, **Rabat** er valgt på siden **Bogføring**.</li>
+<li>Feltet <strong>Hovedkonto</strong> når, <strong>Rabat</strong> er valgt på siden <strong>Bogføring</strong>.</li>
 <li>Hvis der ikke er defineret en primær konto til en rabat på posteringsprofilen, regnskabsfordelingen for den samlede pris på købsordrelinjen.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Bruge økonomiske dimensioner fra regnskabfordelingerne for den udvidede pris på kreditorfakturalinjen.</li>
 <li>Brug de finansielle dimensionsværdier for kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Indkøbstillæg, der angives under fanen **Pris og rabat** på indkøbsordrelinjen</td>
+<td>Indkøbstillæg, der angives under fanen <strong>Pris og rabat</strong> på indkøbsordrelinjen</td>
 <td><ol>
 <li>Regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
 <li>Regnskabsfordelinger af den udvidede pris på indkøbsordrelinjen.</li>
@@ -136,21 +136,21 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 <td>Linjetillæg</td>
 <td><ol>
 <li>Regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
-<li>Hvis **Finans**-konto er valgt i feltet **Debettype** på siden **Gebyrkode**, feltet **Debetkonto** på siden **Gebyrkode**.</li>
-<li>Hvis **Vare** er valgt i feltet **Debettype** på siden **Gebyrkode**, regnskabsfordelingen for den udvidede pris på indkøbsordrelinjen.</li>
-<li>Hvis **Debitor/Kreditor** er valgt i feltet **Debettype** på siden **Gebyrkode**, feltet **Kreditkonto** på siden **Gebyrkode**.</li>
+<li>Hvis <strong>Finanskonto</strong> er valgt i feltet <strong>Debettype</strong> på siden <strong>Gebyrkode</strong>, feltet <strong>Debetkonto</strong> på siden <strong>Gebyrkode</strong>.</li>
+<li>Hvis <strong>Vare</strong> er valgt i feltet <strong>Debettype</strong> på siden <strong>Gebyrkode</strong>, regnskabsfordelingen for den udvidede pris på indkøbsordrelinjen.</li>
+<li>Hvis <strong>Debitor/Kreditor</strong> er valgt i feltet <strong>Debettype</strong> på siden <strong>Gebyrkode</strong>, feltet <strong>Kreditkonto</strong> på siden <strong>Gebyrkode</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Bruge økonomiske dimensioner fra regnskabfordelingerne for den udvidede pris på kreditorfakturalinjen.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Moms med følgende betingelse:
 <ul>
-<li>Indstillingen Anvend amerikanske momsregler er valgt på siden **Finansparametre**.</li>
+<li>Indstillingen <strong>Anvend amerikanske momsregler</strong> er valgt på siden <strong>Finansparametre</strong>.</li>
 </ul></td>
 <td><ol>
 <li>Regnskabsfordelingen til købsordrelinjen, hvis fakturalinjen henviser til en købsordrelinje.</li>
@@ -165,61 +165,61 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 <tr class="odd">
 <td>Moms med følgende betingelser:
 <ul>
-<li>Indstillingen Anvend amerikanske momsregler er ikke valgt på siden **Finansparametre**.</li>
-<li>Feltet **Importmoms** for momsgruppen er ikke valgt på siden **Momsgrupper**.</li>
+<li>Indstillingen <strong>Anvend amerikanske momsregler</strong> er ikke valgt på siden <strong>Finansparametre</strong>.</li>
+<li>Feltet <strong>Importmoms</strong> for momsgruppen er ikke valgt på siden <strong>Momsgrupper</strong>.</li>
 </ul></td>
 <td><ol>
-<li>Hvis momsbeløbet kan refunderes, feltet **Indgående moms** på siden **Finanskonteringsgrupper**.</li>
+<li>Hvis momsbeløbet kan refunderes, feltet <strong>Indgående moms</strong> på siden <strong>Finanskonteringsgrupper</strong>.</li>
 <li>Hvis skattebeløbet ikke er refunderbart, den udvidede pris eller regnskabsfordelingen for gebyret.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Brug de økonomiske dimensioner fra den udvidede pris eller regnskabsfordelingerne for gebyret på kreditorfakturalinjen.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Moms med følgende betingelser:
 <ul>
-<li>Indstillingen Anvend amerikanske momsregler er ikke valgt på siden **Finansparametre**.</li>
-<li>Feltet **Importmoms** for momsgruppen er valgt på siden **Momsgrupper**.</li>
+<li>Indstillingen Anvend amerikanske momsregler er ikke valgt på siden <strong>Finansparametre</strong>.</li>
+<li>Feltet <strong>Importmoms</strong> for momsgruppen er valgt på siden <strong>Momsgrupper</strong>.</li>
 </ul></td>
 <td><ol>
-<li>Hvis momsbeløbet kan refunderes, feltet **Indgående moms** på siden **Finanskonteringsgrupper**.</li>
-<li>Hvis momsbeløbet ikke kan refunderes, feltet **Udgift for importmoms** på siden **Finanskonteringsgrupper**.</li>
+<li>Hvis momsbeløbet kan refunderes, feltet <strong>Indgående moms</strong> på siden <strong>Finanskonteringsgrupper</strong>.</li>
+<li>Hvis momsbeløbet ikke kan refunderes, feltet <strong>Udgift for importmoms</strong> på siden <strong>Finanskonteringsgrupper</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Brug de økonomiske dimensioner fra den udvidede pris eller regnskabsfordelingerne for gebyret på kreditorfakturalinjen.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Gebyr i overskrift</td>
 <td><ol>
-<li>Hvis **Finans**-konto er valgt i feltet **Debettype** på siden **Gebyrkode**, feltet **Debetkonto** på siden **Gebyrkode**.</li>
-<li>Hvis **Debitor/Kreditor** er valgt i feltet **Debettype** på siden **Gebyrkode**, feltet **Kreditkonto** på siden **Gebyrkode**.</li>
+<li>Hvis <strong>Finanskonto</strong> er valgt i feltet <strong>Debettype</strong> på siden <strong>Gebyrkode</strong>, feltet <strong>Debetkonto</strong> på siden <strong>Gebyrkode</strong>.</li>
+<li>Hvis <strong>Debitor/Kreditor</strong> er valgt i feltet <strong>Debettype</strong> på siden <strong>Gebyrkode</strong>, feltet <strong>Kreditkonto</strong> på siden <strong>Gebyrkode</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Hvis hovedkontoen er en fordelingskonto, skal du bruge standardværdien fra definitionen af fordelingskontoen.</li>
 <li>Brug standardskabelonværdierne for den økonomiske dimension fra kreditorfakturahovedet.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Ordrehovedrabat</td>
 <td><ol>
-<li>Feltet **Hovedkonto** for bogføringstype **Kreditor, fakturarabat** på siden **Konti til automatisk posteringer**.</li>
+<li>Feltet <strong>Hovedkonto</strong> for bogføringstype <strong>Kreditor, fakturarabat</strong> på siden <strong>Konti til automatisk posteringer</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen henviser til en købsordrelinje, skal du bruge kontodistributionen til købsordrelinjen.</li>
 <li>Bruge økonomiske dimensioner fra regnskabfordelingerne for den udvidede pris på kreditorfakturalinjen.</li>
 <li>Brug de finansielle dimensionsværdier fra kreditorfakturalinjen.</li>
-<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden **Kontoplan**.</li>
+<li>Brug de økonomiske standarddimensionsværdier fra hovedkontoen på siden <strong>Kontoplan</strong>.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -228,7 +228,7 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 
 ## <a name="distributing-taxes"></a>Fordeling af skatter
 
-Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver på siden Kreditorfaktura:
+Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver på siden **Kreditorfaktura**:
 -   Få vist fakturatotalen.
 -   Få vist momsen.
 -   Få vist reskontrokladden.

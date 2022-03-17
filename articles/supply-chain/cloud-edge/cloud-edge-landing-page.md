@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119181"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376176"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaler enheder i en distribueret hybridtopologi
 
@@ -40,7 +40,7 @@ Egenskaber til arbejdsbyrde frigives løbende via trinvise forbedringer.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalaenheder og dedikerede arbejdsbyrder
 
-Skalaenheder udvider dit centrale Supply Chain Management-hubmiljø ved at tilføje dedikeret behandlingskapacitet. Skalaenheder kan køre i skyen. Alternativt kan de køre på kanten, i dit lokale miljø eller din lokale facilitet.
+Skalaenheder udvider dit centrale Supply Chain Management-hubmiljø ved at tilføje dedikeret behandlingskapacitet. Skalaenheder kan køre i skyen. Alternativt kan de køre på [kanten](cloud-edge-edge-scale-units-lbd.md), i dit lokale miljø eller din lokale facilitet.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheder.":::
 
@@ -125,33 +125,27 @@ Når du aktiverer dit Dynamics 365-miljø for at understøtte den distribuerede 
 - Konfigurationer af arbejdsbyrder, herunder navne og fysiske adresser på juridiske enheder og faciliteter, så topologien kan vises på et geografisk kort
 - Indsamlede målepunkter (f.eks. ventetid og gennemløb), der vil blive vist på kortanalysesiden for at hjælpe dig med at vælge den mest fordelagtige brug af skalaenhederne
 
-Data, der overføres til og gemmes i de amerikanske datacentre, slettes i henhold til Microsofts politikker for dataopbevaring. Beskyttelse af personlige oplysninger er vigtig for Microsoft. Læs vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839) for at få mere at vide.
+Data, der overføres til og gemmes i de amerikanske datacentre, slettes i henhold til Microsofts politikker for dataopbevaring. Beskyttelse af personlige oplysninger er vigtig for Microsoft. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## <a name="onboarding-in-two-stages"></a>Onboarding i to stadier
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Onboarde til den distribuerede hybridtopologi for Supply Chain Management
 
-Processen for onboarding til distribueret hybridtopologi har to stadier. I første stadie skal du validere tilpasninger for at sikre, at de fungerer i den distribuerede topologi, der har skalaenheder. Sandkasse- og produktionsmiljøer flyttes kun i løbet af andet stadie.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Afprøve distribueret hybridtopologi
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Stadie 1: Evaluere tilpasninger i udviklingsmiljøer med én boks
+Processen for onboarding til distribueret hybridtopologi har to stadier. I første stadie skal du [afprøve](cloud-edge-try-out.md) løsningen og validere dine tilpasninger for at sikre, at de fungerer i den distribuerede topologi, der har skalaenheder. (Du kan bruge eksisterende udviklingsmiljøer til at udføre valideringen). Derefter kan du fortsætte til anden fase, hvor du anskaffer produktionsmiljøer.
 
-Før du starter onboarding af dine sandkasse- eller produktionsmiljøer, anbefales du at undersøge skalaenheder i en udviklingsopsætning, f.eks. et miljø med én boks (også kaldet niveau-1-miljø), så du kan validere processer, tilpasninger og løsninger. I dette stadie anvendes data og tilpasninger på miljøer med én boks. Det ene miljø får rollen som hub, og det andet indtager rollen som en skalaenhed. Denne konfiguration giver dig den bedste måde at identificere og løse problemer på. Den seneste build med tidlig adgang (PEAP) kan også bruges til at fuldføre dette stadie.
-
-I trin 1 skal du bruge [implementeringsværktøjerne til skalaenheden for udviklingsmiljøer med én boks](https://github.com/microsoft/SCMScaleUnitDevTools). Disse værktøjer giver dig mulighed for at konfigurere hub og skalaenheder i et eller to separate miljøer med én boks. Værktøjerne leveres som binær frigivelse og i kildekoden på GitHub. Undersøg projektets wiki, som inkluderer en [trinvis brugsvejledning](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), der beskriver, hvordan værktøjerne bruges.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Stadie 2: Anskaffe tilføjelsesprogrammer og implementere dem i dine sandkasse- og produktionsmiljøer
-
-Hvis du vil onboarde et af dine sandkasse- eller produktionsmiljøer i den nye topologi, skal du anskaffe tilføjelsesprogrammer til en eller flere skyskalaenheder (og senere til kantskalaenheder). Tilføjelsesprogrammerne giver tilsvarende projekt- og miljøpladser i [LCS](https://lcs.dynamics.com/), så skalaenhedsmiljøerne kan implementeres.
-
-> [!NOTE]
-> Tilføjelsesprogrammerne til skalaenheden kombineres ikke med et begrænset antal brugere, men kan bruges af enhver bruger i det eksisterende abonnement på baggrund af de roller, administratoren tildeler.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Vælge din LCS-projektlejer og den detaljerede onboardingproces
 
 Skalaenheder tilbydes i flere lagerenheder (SKU'er) og prisfastsættelsesindstillinger. Du kan derfor vælge den indstilling, der bedst opfylder dine planlagte månedlige krav til transaktionsvolumen og ydeevne.
+
+> [!TIP]
+> Hvis du vil identificere den størrelse, der passer bedst til dine behov, skal du samarbejde med din implementeringspartner og Microsoft om at forstå den månedlige transaktionsstørrelse, som du har brug for.
 
 Startniveau-SKU'en kaldes *Grundlæggende*, og den mere ydende SKU kaldes *Standard*. Hver SKU er forudindlæst med et bestemt antal månedlige transaktioner. Du kan dog øge det månedlige transaktionsbudget ved at tilføje tilføjelsesprogrammer til overforbrug for hver SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Tilføjelsesprogrammer til skyskalaenheder.":::
 
-> [!TIP]
-> Hvis du vil identificere den størrelse, der passer bedst til dine behov, skal du samarbejde med din partner og Microsoft om at forstå den månedlige transaktionsstørrelse, som du har brug for.
+> [!NOTE]
+> Tilføjelsesprogrammer med skalaenhed er ikke kombineret med et begrænset antal brugere. De er tilgængelige for alle brugere i dit eksisterende abonnement (forudsat, at administratoren har tildelt de nødvendige brugerroller til dem).
 
 Købet af hvert tilføjelsesprogram til skalaenhed giver dig ikke kun en månedlig transaktionsvolumen, men giver dig også mulighed for at bruge et bestemt antal miljøpladser i LCS. For hvert Cloud Scale Unit-tilføjelsesprogram er du berettiget til én ny produktionsplads og én ny sandkasseplads. Under onboarding-processen tilføjes et nyt LCS-projekt med disse pladser. Brugsrettighederne til pladserne er bundet, så pladserne skal bruges som skalaenheder, der har en skyhub.
 
@@ -159,9 +153,6 @@ Tilføjelsesprogrammer til overforbrug berettiger dig ikke til nye pladser.
 
 Hvis du vil have flere sandkassemiljøer, kan du købe ekstra almindelige sandkassepladser. Microsoft kan derefter hjælpe dig med at aktivere disse pladser som sandkasseskalaenheder for hybridtopologien.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Onboarde til den distribuerede hybridtopologi for Supply Chain Management
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Vælge din LCS-projektlejer og den detaljerede onboardingproces
 
 Når du er færdig med at planlægge, hvordan du vil onboarde til den distribuerede hybridtopologi for Supply Chain Management, skal du bruge [portalen til styring af skalaenhed](https://aka.ms/SCMSUM) til at starte onboardingprocessen. Vælg fanen **Dynamics 365-lejere** i portalen. Den viser listen over de lejere, som din konto er en del af, og hvor du er ejer eller miljøadministrator for et LCS-projekt.
 

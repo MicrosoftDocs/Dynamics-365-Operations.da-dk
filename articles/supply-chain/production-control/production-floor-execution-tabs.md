@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ee206ced76dbdd356c77d34a4b8f197879e9a3f0
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790860"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384766"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designe grænsefladen til kørsel af produktion
 
@@ -54,7 +54,7 @@ Følg disse trin for at oprette og konfigurere en ny fane:
 1. Foretag følgende indstillinger i overskriften på siden:
 
     - **Fanenavn** – Angiv et navn til fanen.
-    - **Hovedvisning** – Vælg mellem de foruddefinerede joblister (*Aktive job*, *Alle job* og *Min maskine*).
+    - **Hovedvisning** – Vælg mellem de foruddefinerede joblister (*Aktive job*, *Alle job*, *Mine job* og *Min maskine*).
     - **Detaljevisning** – Vælg mellem en tom værdi eller **Jobdetaljer**. Hvis du vælger den tomme værdi, vil der ikke være detaljeret visning under fanen. Hvis du vælger **Jobdetaljer**, indeholder detaljeret visning en detaljeret beskrivelse af det job, der er valgt på joblisten i hovedvisningen.
 
 1. Vælg, hvilke knapper der skal være tilgængelige på den primære værktøjslinje, i sektionen **Primær værktøjslinje**. I kolonnen **Tilgængelige handlinger** vises en liste over alle de knapper, der kan tilføjes. I kolonnerne **Valgte handlinger** vises en liste over alle de knapper, der er medtaget i den aktuelle konfiguration. Brug knapperne mellem kolonnerne til at flytte markerede elementer mellem kolonnerne efter behov. Brug op- og ned-knapperne ud for kolonnen **Valgte handlinger** til at styre den rækkefølge, som knapperne vises i i brugergrænsefladen.

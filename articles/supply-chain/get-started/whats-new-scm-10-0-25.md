@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 8a9b873b7b4bba43b7b3e6e83c389ac35b4e223e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102990"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384532"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 
@@ -34,10 +34,10 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
-| Lager&nbsp;og&nbsp;logistik | Forbedringer for farlige materialer | Disse forbedringer er baseret på eksisterende funktioner for farlige materialer for at sikre, at firmaer overholder de lokale regler, når der transporteres farlige materialer på tværs af forskellige geografiske områder. <!-- KFM: Update to 2022w1 link when published -->| Funktionsstyring:<br>*Forbedringer for farlige materialer* |
-| Lager&nbsp;og&nbsp;logistik | Pakkearbejde for pakkestationer | Denne funktion forbedrer i høj grad fleksibiliteten og kompleksiteten af dine emballerings- og forsendelsesoperationer. Under pakkeprocessen kan lagerarbejdere nu pakke og afsende individuelle pakker, der er relateret til samme forsendelse og last. Ordrelinjer, der er en del af samme forsendelse, behøver ikke nødvendigvis at blive afsendt sammen, hvis nogle varer er klar til afsendelse med det samme. En enkelt ordre kan pakkes og afsendes i flere pakker på forskellige afsendelsestidspunkter, hvilket reducerer ventetiderne og tilføjer fleksibilitet.<!-- KFM: Update to 2022w1 link when published --> | Funktionsstyring:<br>*Pakkearbejde for pakkestationer* |
-| Lager&nbsp;og&nbsp;logistik | [Scanne stregkoder på lagerstedet ved hjælp af GS1-formatstandarder](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [GS1-stregkoder og QR-koder](../warehousing/gs1-barcodes.md) | Funktionsstyring:<br>*Scan GS1-stregkoder* |
-| Fremstillingsvirksomhed | [Materialeforbrug og reservationer i grænsefladen for produktionsudførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)* |
+| Lager&nbsp;og&nbsp;logistik | [Forbedringer for farlige materialer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Kommer snart | Funktionsstyring:<br>*Forbedringer for farlige materialer* |
+| Lager&nbsp;og&nbsp;logistik | [Pakkearbejde for pakkestationer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Kommer snart | Funktionsstyring:<br>*Pakkearbejde for pakkestationer* |
+| Lager&nbsp;og&nbsp;logistik | [Scanne stregkoder på lagerstedet ved hjælp af GS1-formatstandarder](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-stregkoder og QR-koder](../warehousing/gs1-barcodes.md) | Funktionsstyring:<br>*Scan GS1-stregkoder* |
+| Fremstillingsvirksomhed | [Materialeforbrug og reservationer i grænsefladen for produktionsudførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*<br><br>Og/eller:<br><br>Funktionsstyring:<br>*(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)* |
 | Fremstillingsvirksomhed | [Registrere materialeforbrug på skalaenheder](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Produktionsarbejdsbyrder for sky- og kantskaleringsenheder](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionsstyring:<br>*Registrer materialeforbrug på mobilappen på en skalaenhed* |
 | Planlægning | [Forslag til planlægningsoptimering for at optimere eksisterende forsyning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Handlingsmeddelelser](../master-planning/action-messages.md) | Aktiveret som standard |
 | Planlægning | Planlagte ordrer forenklet | [Planlagte ordrer forenklet](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funktionsstyring:<br>*Planlagte ordrer forenklet* |

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103934"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384689"
 ---
 # <a name="inventory-value-reports"></a>Lagerværdirapporter
 
@@ -102,7 +102,7 @@ Du kan bruge siden **Lagerværdirapporter** til at konfigurere det indhold, der 
         - Modtagne og endnu ikke fakturerede varer, når indstillingen **Bogfør fysisk lager** er ryddet for den relevante varemodelgruppe.
         - Modtagne og endnu ikke fakturerede varer, når indstillingen **Bogfør produktkvittering i finans** er ryddet i oversigtspanelet **Produktkvittering** under fanen **Generelt** på siden **Kreditorparametre** (**Kreditor \> Konfiguration \> Kreditorparametre**).
 
-    - **Beregn gennemsnitlig enhedsomkostning** – Angiv denne indstilling til *Ja* for at få vist en kolonne med den gennemsnitlige enhedsomkostning. Den gennemsnitlige enhedsomkostning er det samlede antal divideret med det samlede beløb.
+    - **Beregn gennemsnitlig enhedsomkostning** – Angiv denne indstilling til *Ja* for at få vist en kolonne med den gennemsnitlige enhedsomkostning. Den gennemsnitlige enhedsomkostning er det samlede beløb divideret med det samlede antal.
     - **Samlet antal og værdi** – Angiv denne indstilling til *Ja* for at få vist kolonner med det samlede antal fysisk lager (og økonomiske antal) og det samlede beløb for fysisk lager (og økonomiske beløb). Du kan kun angive denne indstilling til *Ja*, hvis indstillingen **Opsummer fysiske og økonomiske værdier** er angivet til *Nej*.
     - **Lagerdimensioner** – I dette gitter skal du markere afkrydsningsfeltet **Vis** for hver dimension, der skal vises i rapporten. Kun dimensioner, hvor indstillingen **Økonomisk lager** er aktiveret, viser værdier i rapporten. Andre dimensioner viser kun tomme kolonner. For de dimensioner, du vælger at vise, kan du markere afkrydsningsfeltet **Total**, hvis du også vil medtage totaler.
     - **Ressource-id** – Angiv indstillingen **Vis** til *Ja* for at få vist en kolonne, der identificerer varen for hver række. Angiv indstillingen **Total** til *Ja*, så totaler også medtages. Afhængigt af den varetype, der er angivet i hver række, viser kolonnen en af følgende typer oplysninger:

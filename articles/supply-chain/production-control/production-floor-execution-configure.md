@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103382"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384741"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -78,6 +78,38 @@ Denne funktion gør det muligt at føje et søgefelt til joblisten. Arbejdere ka
 Denne funktion giver medarbejderne mulighed for at bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer. Denne rapportering inkluderer rapportering af samprodukter og biprodukter. Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Rapport over samprodukter og biprodukter fra grænsefladen for udførelse af produktion*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivere visningen af komplette serie-, batch- og id-numre
+
+Denne funktion giver en forbedret ydeevne, når du får vist lister over serie-, batch- og nummerpladenumre i brugergrænsefladen til produktionsudførelse. Visningen ændres fra en kortvisning med et begrænset antal tegn til en listevisning, der giver tilstrækkelig plads til at vise de fulde værdier. Listen giver dig også mulighed for at søge efter bestemte numre.
+
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan slå denne funktion til eller fra ved at søge efter funktionen *Vis fulde serie-, batch- og id-numre i grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### <a name="enable-registering-of-material-consumption"></a>Aktivere registrering af materialeforbrug
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
+
+Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af avancerede lagerstedsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion , skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
+
+- *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
+- *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
+
+> [!IMPORTANT]
+> Du kan bruge funktionen ikke-WMS alene. Hvis du bruger WMS, skal du dog aktivere begge funktioner.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Aktivere rapportering af fastvægtvarer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for fastvægtvarer i batchordrer. Batchordrer oprettes ud fra formler, som kan defineres til at have fastvægtvarer som formelvarer, samprodukter og biprodukter. En formel kan også defineres, så den indeholder formellinjer til ingredienser, der er defineret for fastvægt. Fastvægtvarer bruger to måleenheder til at spore lagerbeholdning: fastvægtantal og lagerantal. I fødevarebranchen kan kød i kasser f.eks. defineres som en fastvægtvare, hvor fastvægtantallet bruges til at spore antallet af kasser, og lagerantallet bruges til at spore kassernes vægt.
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Prøveversion) Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbejde med kørselskonfigurationer for produktionsudstyr
 

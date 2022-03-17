@@ -2,7 +2,7 @@
 title: Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 description: Dette emne indeholder oplysninger om, hvordan du kan designe et elektronisk rapporteringsformat (ER) for at udfylde en PDF-skabelon.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758282"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367811"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 
@@ -294,6 +294,20 @@ I følgende illustration vises et eksempel på den første side i den rapport, d
 I følgende illustration vises et eksempel på en anden side i den rapport, der genereres.
 
 ![Anden side i den genererede rapport.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Begrænsninger
+
+Navnene på felterne, der kan udfyldes, skal være entydige i den PDF-formular, som du planlægger at bruge som rapportskabelon. For hvert af disse felter oprettes et individuelt formatelement med det tilsvarende navn i det redigerbare ER-format, når der importeres en PDF-formular. Hvis en PDF-formular indeholder flere felter med samme navn, oprettes der et enkelt formatelement for de felter, der ikke tillader, at de udfyldes individuelt under kørslen.
+
+## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Når jeg kører ER-formatet for at generere en rapport i PDF-format, hvorfor får jeg følgende fejl: **Kan ikke håndtere iref-streams. Den aktuelle implementering af PDFSharp kan ikke håndtere denne PDF-funktion, der introduceres med Acrobat 6.** og **Et PDF-navn skal starte med skråstreg (/).**
+
+ER-strukturen bruger version 1.5 af PDFSharp-biblioteket til at generere disse PDF-rapporter. Nogle funktioner i PDF 1.5 (Adobe Reader 6.0) er endnu ikke implementeret i dette bibliotek. Derfor kan PDFSharp endnu ikke åbne nogle filer, der er markeret som **for PDF 1.5 eller højere** og kan resultere i de modtagne fejl. Brug en af følgende løsninger på dette problem:
+
+-   Når du bruger din egen PDF-skabelon: Nedgrader skabelonen til en tidligere version af Adobe, og start med at bruge en ny skabelon i dit ER-format.
+-   Når du bruger en ER-formatskabelon, der er delt med dig af en anden konfigurationsudbyder som del af en ER-løsning: Kontakt ejeren af denne ER-løsning, og angiv en beskrivelse af problemet.
+-   Når du bruger den softwareproducentløsning, der indeholder en tidligere version af biblioteket PDFSharp: Kontakt ejeren af løsningen, og foreslå en opgradering til den nyere PDFSharp-version.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

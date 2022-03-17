@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985650"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358419"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversigt over automatiske processer for kreditorfakturering
 
@@ -43,7 +43,7 @@ Automatiseringsprocesserne kan bruges til at udføre disse opgaver:
 
 ## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Overfør importerede fakturaer til arbejdsprocessystemet
 
-Som del af en berøringsfri kreditorfaktureringsproces kan du få systemet til automatisk at sende en importeret faktura til arbejdsgangssystemet. Processen kører i baggrunden, med en hyppighed, du angiver (enten hver time eller dagligt). Muligheden for automatisk afsendelse af importerede fakturaer til arbejdsgangssystemet kræver, at processen starter med en importeret faktura. Hvis du vil sikre, at fakturaen kan behandles fra start til slut uden manuel indgriben, skal du medtage en automatisk bogføringsopgave i konfigurationen af arbejdsprocessen.
+Som del af en berøringsfri kreditorfaktureringsproces kan der automatisk sendes en importeret faktura til arbejdsprocessystemet. Processen kører i baggrunden, med en hyppighed, du angiver (enten hver time eller dagligt). Muligheden for automatisk afsendelse af importerede fakturaer til arbejdsgangssystemet kræver, at processen starter med en importeret faktura. Hvis du vil sikre, at fakturaen kan behandles fra start til slut uden manuel indgriben, skal du medtage en automatisk bogføringsopgave i konfigurationen af arbejdsprocessen.
 
 
 Fakturaer, der er relateret til indkøbsordrer, og fakturaer, der indeholder en indkøbskategori uden for indkøbsordren og ikke-lagerførte linjer, kan automatisk sendes til arbejdsprocessystemet. De fakturaer, der angives manuelt, og fakturaer, der oprettes ved hjælp af arbejdsområdet **Fakturering af kreditorsamarbejde**, skal sendes manuelt til arbejdsgangssystemet. Behandlingen af programforudbetaling skal udføres manuelt for importerede fakturaer. Du kan anvende forudbetalinger manuelt før eller efter bogføring af den importerede faktura. Du kan anvende forudbetalinger på ikke-bogførte standardfakturaer manuelt ved hjælp af siden **Kreditorfakturaer**. Når den udlignede forudbetaling er bogført, kan den anvendes manuelt på andre fakturaer fra denne kreditor på siden **Kreditorer** (**Kreditor \> Common \> Kreditorer \> Alle kreditorer \> fanen Faktura \> Anvend**).
@@ -52,7 +52,7 @@ Automatiseringsfunktionen giver dig en fleksibel ramme med mulighed for at defin
 
 ## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Afstem bogførte produktkvitteringer til fakturalinjer med en trevejs-sammenholdelsespolitik
 
-Systemet kan automatisk afstemme bogførte produktkvitteringer med fakturalinjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. I denne proces kan du angive det maksimale antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Processen vil køre i baggrunden, enten hver time eller hver dag. Du kan køre den automatiske sammenholdelsesproces som en del af processen til afsendelse af fakturaer til arbejdsgangssystemet. Du kan også køre den som en enkeltstående proces.
+Bogførte produktkvitteringer kan automatisk afstemmes med fakturalinjer, som en trevejs-sammenholdelsespolitik er defineret for. Denne proces vil køre, indtil det afstemte produktkvitteringsantal er lig med fakturaantallet. I denne proces kan du angive det maksimale antal gange, systemet skal forsøge at afstemme produktkvitteringer med en fakturalinje, før det konkluderer, at processen er mislykket. Processen vil køre i baggrunden, enten hver time eller hver dag. Du kan køre den automatiske sammenholdelsesproces som en del af processen til afsendelse af fakturaer til arbejdsgangssystemet. Du kan også køre den som en enkeltstående proces.
 
 ## <a name="pre-validate-vendor-invoice-posting"></a>For-validering af kreditorfakturabogføring
 
@@ -60,7 +60,7 @@ Bogføringssimuleringen fuldfører de valideringstrin, der er udført under bogf
 
 ## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Forbedret erfaring med visning af arbejdsproces og automatisering af historiske oplysninger for kreditorfakturaer
 
-Der leveres en læsevenlig visning af historikken for kreditorfakturaer. Du kan få adgang til arbejdsgangshistorikken for kreditorfakturaer direkte fra kreditorfakturaen. Derfor kræves der færre klik for at finde disse oplysninger. Hvis din organisation har aktiveret muligheden for automatisk at sende importerede kreditorfakturaer til arbejdsgangen, vil automatiseringsoversigten blive medtaget i de importerede fakturaer. Automatiseringshistorikken hjælper dig med at identificere det aktuelle procestrin og de trin, der allerede er fuldført. Når et trin mislykkes, indeholder systemet detaljerede oplysninger, der kan hjælpe dig med at forstå årsagen til fejlen.
+Der leveres en læsevenlig visning af historikken for kreditorfakturaer. Du kan få adgang til arbejdsgangshistorikken for kreditorfakturaer direkte fra kreditorfakturaen. Derfor kræves der færre klik for at finde disse oplysninger. Hvis din organisation har aktiveret muligheden for automatisk at sende importerede kreditorfakturaer til arbejdsgangen, vil automatiseringsoversigten blive medtaget i de importerede fakturaer. Automatiseringshistorikken hjælper dig med at identificere det aktuelle procestrin og de trin, der allerede er fuldført. Når et trin mislykkes, vises detaljerede oplysninger, der kan hjælpe dig med at forstå årsagen til fejlen.
 
 ## <a name="analytics-and-metrics"></a>Analyser og målepunkter
 
@@ -78,9 +78,9 @@ Værdien for **Modtagelsesdato for faktura** angiver den dato, hvor virksomheden
 
 ## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Sporing af værdierne for det importerede fakturabeløb og det importerede momsbeløb
 
-Værdierne for det **importerede fakturabeløb** og de **importerede momsbeløb** for kreditorfakturaer kan leveres i importfilen til kreditorfakturaer. Typisk er disse værdier fra en faktura, der er scannet af en ekstern udbyder og inkluderet i importfilen. Efterhånden som fakturaen behandles i Kreditor, beregner systemet værdier baseret på fakturadataene. Fakturaen kan kun bogføres, hvis de importerede værdier svarer til de beregnede værdier. Sammenholdelsesværdier sikrer, at fakturaen nøjagtigt afspejler det beløb, kreditoren har tilfaldt. Hvis din organisation tillader, at importerede fakturaer sendes automatisk til arbejdsgangssystemet, kan du vælge at kræve, at de importerede totaler svarer til de beregnede totaler, før fakturaen kan sendes til arbejdsgangssystemet.
+Værdierne for det **importerede fakturabeløb** og de **importerede momsbeløb** for kreditorfakturaer kan leveres i importfilen til kreditorfakturaer. Typisk er disse værdier fra en faktura, der er scannet af en ekstern udbyder og inkluderet i importfilen. Efterhånden som fakturaen behandles i Kreditor, beregnes værdier baseret på fakturadataene. Fakturaen kan kun bogføres, hvis de importerede værdier svarer til de beregnede værdier. Sammenholdelsesværdier sikrer, at fakturaen nøjagtigt afspejler det beløb, kreditoren har tilfaldt. Hvis din organisation tillader, at importerede fakturaer sendes automatisk til arbejdsgangssystemet, kan du vælge at kræve, at de importerede totaler svarer til de beregnede totaler, før fakturaen kan sendes til arbejdsgangssystemet.
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering af kreditorfaktura - Genoptag automatisk behandling af flere fakturaer
-Når en importeret faktura ikke sendes gennem en arbejdsgang via den automatiserede proces, fjernes den af yderligere automatisk behandling. En kreditorassistent kan gennemse og redigere fakturaen, før den automatiserede proces sender den til arbejdsgangen igen. Når en fejlårsag kan løses med samme rettelse for flere fakturaer, kan du genstarte den automatiserede proces på siden **Genoptag automatisk fakturabehandling**. 
+Når en importeret faktura ikke sendes gennem en arbejdsgang via den automatiserede proces, fjernes den fra yderligere automatisk behandling. En kreditorassistent kan gennemse og redigere fakturaen, før den automatiserede proces sender den til arbejdsgangen igen. Når en fejlårsag kan løses med samme rettelse for flere fakturaer, kan du genstarte den automatiserede proces på siden **Genoptag automatisk fakturabehandling**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

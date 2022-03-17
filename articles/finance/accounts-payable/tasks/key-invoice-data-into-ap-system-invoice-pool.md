@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777258"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358283"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje
 
@@ -58,7 +58,7 @@ Dette emne beskriver, hvordan du kan bruge indgangsbogen til at oprette fakturae
 6. Vælg **Skift visning**.
 7. Vælg **Gittervisning**.
 8. Vælg **Bogfør**.
-9. Luk formularen.
+9. Luk siden.
 10. Gå i navigationsruden til **Moduler > Kreditor > Kreditorer > Kreditorer**.
 11. Vælg den kreditor, der stod i indkøbsordren. Vælg for eksempel kreditor **1001**.
 12. Vælg **Kreditor** i handlingsruden.

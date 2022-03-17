@@ -2,7 +2,7 @@
 title: Oversigt over skybaseret søgning
 description: Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/29/2020
+ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983663"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371423"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
@@ -26,13 +26,13 @@ ms.locfileid: "7983663"
 
 Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
 
-Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle kanaler.
+Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlende vurderer, at produktregistrering er et primært værktøj for kundeinteraktion på tværs af kanaler, der drives af Cloud Scale Unit (CSU), f.eks. e-handel og POS.
 
-Kunder er vant til de næsten øjeblikkelige svartider fra websøgemaskiner, sofistikerede e-handelswebsteder, sociale apps, automatiske forslag, der vises, når de skriver søgeord, filterbaseret navigation og fremhævning. Hvis kunderne ikke kan finde det produkt, som de leder efter hurtigt nok i én e-handelsbutik, går de straks videre til en anden e-handelsbutik.
+Kunder er vant til de næsten øjeblikkelige svartider fra websøgemaskiner, sofistikerede e-handelswebsteder, sociale apps, automatiske forslag, der vises, når de skriver søgeord, filterbaseret navigation og fremhævning. Hvis kunderne ikke hurtigt kan finde det produkt, som de leder efter, i én e-handelsbutik, går de straks videre til en anden e-handelsbutik.
 
-Den skybaserede produktregistrering i Dynamics 365 Commerce hjælper detailhandlerne med at holde på kunderne og øge omregningskurserne på tværs af alle kanaler, både e-handelskanaler og POS-kanaler.
+Den skybaserede produktregistrering i Commerce hjælper detailhandlerne med at holde på kunderne og øge omregningskurserne på tværs af alle kanaler, der er styret af CSU.
 
-Søgeoplevelsen i Dynamics 365 Commerce har forbedrede muligheder, som kan hjælpe forhandlerne med at opnå en bedre produktregistrering. Samtidig leverer disse funktioner den skalerbarhed og ydeevne, der kræves til e-handelstrafik.
+Søgeoplevelsen i Commerce har forbedrede muligheder, som kan hjælpe forhandlerne med at opnå en bedre produktregistrering. Samtidig leverer disse funktioner den skalerbarhed og ydeevne, der kræves til e-handelstrafik.
 
 ## <a name="browse-and-search"></a>Gennemsyn og søgning
 
@@ -54,9 +54,9 @@ I følgende illustration vises et eksempel, hvor der bruges filterbaseret naviga
 
 ## <a name="immersive-autosuggest"></a>Avancerede automatiske forslag
 
-Den aktuelle funktion til automatiske forslag viser kun nøgleord, der udløser en søgning efter det tilsvarende nøgleord. På grund af nye forbedringer i Dynamics 365 Commerce kan kunder ofte finde links til produkter, før de er færdige med at skrive.
+Den aktuelle funktion til automatiske forslag viser nøgleord, der udløser en søgning efter det tilsvarende nøgleord. På grund af nye forbedringer i Commerce kan kunder ofte finde links til produkter, før de er færdige med at skrive.
 
-Dynamics 365 Commerce understøtter også funktioner for nøgleordsforekomster i forskellige kategorier. Med denne funktion kan kunderne se antallet af nøgleord, der passer på tværs af kategorier, og udløse en søgning efter et nøgleord i andre kategorier.
+Commerce understøtter også funktioner for nøgleordsforekomster i forskellige kategorier. Med denne funktion kan kunderne se antallet af nøgleord, der passer på tværs af kategorier, og udløse en søgning efter et nøgleord i andre kategorier.
 
 I følgende illustration vises et eksempel, hvor der bruges avancerede automatiske forslag.
 
@@ -64,10 +64,10 @@ I følgende illustration vises et eksempel, hvor der bruges avancerede automatis
 
 ## <a name="sort"></a>Sortér
 
-Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efter og gennemse søgeresultater og begrænse dem efter kriterier som f.eks. pris, produktnavn og produktnummer. Kunderne kan også sortere resultater, afhængigt af om et produkt er nyt, mest sælgende eller tilføjet for nylig.
+Med forbedret sortering i Commerce kan kunderne sortere, søge efter og gennemse søgeresultater og begrænse dem efter kriterier som f.eks. pris, produktnavn og produktnummer. Kunderne kan også sortere resultater, afhængigt af om et produkt er nyt, mest sælgende eller tilføjet for nylig.
 
->[!NOTE]
->Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontroller, at der er en post for "ProductSearch.UseAzureSearch, der er indstillet til 'sand' under **Commerce-parametre > Konfigurationsparametre**. 
+> [!NOTE]
+> Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontrollér, at der er en post for "ProductSearch.UseAzureSearch", der er indstillet til 'true' i **Commerce-parametre > Konfigurationsparametre**. 
 ![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
@@ -77,4 +77,4 @@ Med forbedret sortering i Dynamics 365 Commerce kan kunderne sortere, søge efte
 [Administrere SEO-metadata](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

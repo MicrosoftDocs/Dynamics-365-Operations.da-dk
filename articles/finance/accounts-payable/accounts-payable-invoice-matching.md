@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "27361"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2959df58dbde71ba516c1a230e64d38b885c23f5
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984071"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358258"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Oversigt over fakturasammenholdelse for kreditorer
 
@@ -36,24 +36,24 @@ Det kan f.eks. være, at du indtaster en indkøbsordre med ét linjeelement til 
 
 Der modtages en faktura for 1.000 batterier til en pris af 1,10 pr. stk. Ifølge din juridiske enhedspolitik tillades en tolerance for nettoenhedspris på 5 procent for denne varekategori. En pris på 1,05 ville være acceptabel, men det er 1,10 ikke. Når du indtaster fakturaoplysningerne, identificeres en matchningafvigelse i pris, og du kan gemme fakturaen, indtil uoverensstemmelsen er løst.
 
-Du kan bruge følgende typer fakturasammenholdelse for kreditorer:
+Du kan bruge følgende typer af **Fakturasammenholdelse for kreditorer**:
 
--   Sammenholdelse af fakturatotaler – sammenlign de samlede beløb på fakturaen med de samlede beløb på indkøbsordren. Denne type fakturasammenholdelse involverer færrest detaljer, så du kan bruge denne indstilling til at definere kontrolelementer, der minimerer den tid, personalet skal bruge på at gennemgå oplysninger om fakturasammenholdelse.
--   Tovejs-sammenholdelse – sammenlign prisoplysningerne på fakturaen med prisoplysningerne på indkøbsordren.
--   Trevejs-sammenholdelse – sammenlign prisoplysningerne på fakturaen med prisoplysningerne på indkøbsordren. Sammenlign også oplysninger om antal på fakturaen med oplysningerne om antal på de produktkvitteringer, der er valgt til fakturaen.
--   Sammenholdelse af tillæg – sammenlign oplysninger om tillæg (beløb) på fakturaen med oplysningerne om tillæg (beløb) på indkøbsordren.
+-   **Sammenholdelse af fakturatotaler** – sammenlign de samlede beløb på fakturaen med de samlede beløb på indkøbsordren. Denne type fakturasammenholdelse involverer færrest detaljer, så du kan bruge denne indstilling til at definere kontrolelementer, der minimerer den tid, personalet skal bruge på at gennemgå oplysninger om fakturasammenholdelse.
+-   **Tovejs-sammenholdelse** – Sammenlign prisoplysningerne på fakturaen med prisoplysningerne på indkøbsordren.
+-   **Trevejs-sammenholdelse** – Sammenlign prisoplysningerne på fakturaen med prisoplysningerne på indkøbsordren. Sammenlign også oplysninger om antal på fakturaen med oplysningerne om antal på de produktkvitteringer, der er valgt til fakturaen.
+-   **Sammenholdelse af gebyrer** – Sammenlign oplysninger om tillæg (beløb) på fakturaen med oplysningerne om tillæg (beløb) på indkøbsordren.
 
 > [!NOTE]
 > Der kan udføres andre former for fakturavalidering med brug af politikker for kreditorfakturaer. 
 
 Ved tovejs- og trevejs-sammenholdelse sammenlignes prisoplysninger altid med enhedsprisen. Du kan også konfigurere disse sammenholdelsespolitikker, så du kan sammenligne prisoplysninger med den samlede pris.
--   Sammenholdelse af nettoenhedspris – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettoenhedsprisen for hver linje på fakturaen med den tilsvarende nettoenhedspris på indkøbsordren. Nettoenhedsprisen bestemmes af følgende formel: Nettobeløbet for linjen/antallet på linjen
--   Sammenholdelse af samlede priser – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: *(Enhedspris \* linjeantal) + linjetillæg - linjerabatter*. Når du sammenholder pristotaler med procentdel, sammenligner systemet værdier ved hjælp af transaktionsvalutaen. Når du sammenholder pristotaler med beløb, sammenligner systemet værdierne ved hjælp regnskabsvalutaen. Når du fakturerer en indkøbsordrelinje delvist, foretages valideringen af sammenholdelse af pristotaler på den sidste faktura for den pågældende linje. 
+-   **Sammenholdelse af nettoenhedspris** – Sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettoenhedsprisen for hver linje på fakturaen med den tilsvarende nettoenhedspris på indkøbsordren. Nettoenhedsprisen bestemmes af følgende formel: Nettobeløbet for linjen/antallet på linjen
+-   **Sammenholdelse af samlede priser** – Sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: *(Enhedspris \* linjeantal) + linjetillæg - linjerabatter*. Når du sammenholder pristotaler med procentdel, sammenligner systemet værdier ved hjælp af transaktionsvalutaen. Når du sammenholder pristotaler med beløb, sammenligner systemet værdierne ved hjælp regnskabsvalutaen. Når du fakturerer en indkøbsordrelinje delvist, foretages valideringen af sammenholdelse af pristotaler på den sidste faktura for den pågældende linje. 
 
-Beregninger af fakturasammenholdelse udføres som regel automatisk, når du redigerer kreditorfakturaer på siden Kreditorfaktura. Alternativt kan fakturasammenholdelse udføres efter behov. Fakturasammenholdelse ved behov styres for den juridiske enhed af Opdater status for fakturahoved automatisk på siden kontiene Kreditorparametre under fanen Fakturavalidering. Fakturasammenholdelse kan også udføres som del af en fakturavalidering. Du kan få vist resultaterne af fakturasammenholdelse på siden Kreditorfaktura og relaterede fakturasammenholdelsesformularer.
+Beregninger af fakturasammenholdelse udføres som regel automatisk, når du redigerer kreditorfakturaer på siden **Kreditorfaktura**. Alternativt kan fakturasammenholdelse udføres efter behov. Fakturasammenholdelse ved behov styres for den juridiske enhed af hovedstatus **Opdater faktura automatisk** på siden **Kreditorparametre** under fanen **Fakturavalidering**. Fakturasammenholdelse kan også udføres som del af en fakturavalidering. Du kan få vist resultaterne af fakturasammenholdelse på siden **Kreditorfaktura** og relaterede fakturasammenholdelsesformularer.
 
 ## <a name="invoice-totals-matching"></a>Sammenholdelse af fakturatotaler
-Du kan bruge sammenholdelse af fakturatotaler til at sikre, at de samlede fakturabeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelse. Seks totaler sammenholdes siden Fakturatotalers tilsvarende oplysninger, som vist i følgende tabel. Hvis den tilladte tolerance for sammenholdelse af fakturatotaler er 20 %, anses afvigelsesprocenten på 100 for det samlede rabatbeløb for at være en matchningafvigelse.
+Du kan bruge sammenholdelse af fakturatotaler til at sikre, at de samlede fakturabeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelse. Seks totaler sammenholdes siden **Fakturatotalers tilsvarende oplysninger**, som vist i følgende tabel. Hvis den tilladte tolerance for sammenholdelse af fakturatotaler er 20 %, anses afvigelsesprocenten på 100 for det samlede rabatbeløb for at være en matchningafvigelse.
 
 | Feltet Total    | Faktisk fakturatotal | Forventet fakturatotal | Afvigelsespct. | Matchstatus |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -64,7 +64,7 @@ Du kan bruge sammenholdelse af fakturatotaler til at sikre, at de samlede faktur
 | Afrunding      | 0,00                 | 0,00                   | 0 %                  | Bestået       |
 | Fakturabeløb | 699,88               | 687,50                 | 2 %                  | Bestået       |
 
-Sammenholdelse af fakturatotaler styres for den juridiske enhed af knappen Afstem fakturatotaler på siden Kreditorparametre. Sammenholdelse udføres på de forventede og faktiske fakturatotaler. De forventede fakturatotaler beregnes på grundlag af priser, tillæg og momsoplysninger fra indkøbsordren og antallene fra fakturaen.
+Sammenholdelse af fakturatotaler styres for den juridiske enhed af knappen **Afstem fakturatotaler** på siden **Kreditorparametre**. Sammenholdelse udføres på de forventede og faktiske fakturatotaler. De forventede fakturatotaler beregnes på grundlag af priser, tillæg og momsoplysninger fra indkøbsordren og antallene fra fakturaen.
 
 ## <a name="two-way-price-totals-matching"></a>Tovejs-sammenholdelse af pristotaler
 Brug tovejs-sammenholdelse til at sikre, at afvigelsen mellem prisoplysningerne på indkøbsordren og fakturaen ligger inden for acceptable tolerancer. Du kan sammenligne prisoplysninger for nettobeløbet på hver linje på fakturaen og alle ventende og tidligere bogførte fakturalinjer med nettobeløbet på den tilsvarende indkøbsordrelinje. Dette kaldes sammenholdelse af pristotaler. 
@@ -74,33 +74,33 @@ Sammenholdelse af pristotaler kan være baseret på en procent, et beløb eller 
 Hvis der er angivet en toleranceprocent for en indkøbspristotal, sammenlignes fem felter som vist i følgende tabel. Da toleranceprocenten for indkøbspristotalen er 10, repræsenterer afvigelsesprocenten for pristotalen på 50 en matchningafvigelse.
 
 | Matchstatus | Nettobeløb på faktura | Forventet nettobeløb | Procent for uafstemt indkøbspristotal (afvigelsesbeløb) | Procent for uafstemt indkøbspristotal (afvigelsesprocent) | Toleranceprocent for indkøbspristotaler |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Bestået       | 105,00             | 100,00              | 5,00                                             | 5 %                                                              | 10 %                                    |
-| Mislykkedes       | 150,00             | 100,00              | 50,00                                            | 50 %                                                             | 10 %                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Bestået       | 105,00             | 100,00              | 5,00                                             | 5 %                             | 10 %                 |
+| Mislykkedes       | 150,00             | 100,00              | 50,00                                            | 50 %                            | 10 %                     |
 
 Hvis der er angivet et tolerancebeløb for en indkøbspristotal, sammenlignes fem felter som vist i følgende tabel. Da tolerancebeløbet for indkøbspristotalen er 100,00, repræsenterer afvigelsesbeløbet for pristotalen på 105,00 en matchningafvigelse.
 
 | Matchstatus | Nettobeløb på faktura | Forventet nettobeløb | Procent for uafstemt indkøbspristotal (afvigelsesbeløb) | Uafstemt indkøbspristotal i regnskabsvalutaen (afvigelsesbeløb) | Tolerance for indkøbspristotaler |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Bestået       | 150,00             | 100,00              | 50,00                                            | 50,00                                                                   | 100,00                         |
-| Mislykkedes       | 205,00             | 100,00              | 105,00                                           | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Bestået       | 150,00             | 100,00              | 50,00                                            | 50,00                    | 100,00                         |
+| Mislykkedes       | 205,00             | 100,00              | 105,00                                           | 105,00                  | 100,00                         |
 
 Hvis der er konfigureret sammenholdelse af pristotaler med en procenttolerance og et tolerancebeløb, også kaldet et beløb, der ikke må overskrides, tages der højde for begge tolerancer, når det evalueres, om en linje har en matchningafvigelse. Hvis enten procenten eller beløbet overstiger tolerancen som vist på linjerne 150,00 og 205,00 i følgende tabel, har linjen en matchningafvigelse.
 
 | Matchstatus | Nettobeløb på faktura | Forventet nettobeløb | Procent for uafstemt indkøbspristotal (afvigelsesprocent) | Toleranceprocent for indkøbspristotaler | Uafstemt indkøbspristotal i regnskabsvalutaen (afvigelsesbeløb) | Tolerance for indkøbspristotaler |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Bestået       | 105,00             | 100,00              | 5 %                                                              | 10 %                                    | 5,00                                                                    | 100,00                         |
-| Mislykkedes       | 150,00             | 100,00              | 50 %                                                             | 10 %                                    | 50,00                                                                   | 100,00                         |
-| Mislykkedes       | 205,00             | 100,00              | 105 %                                                            | 10 %                                    | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Bestået       | 105,00             | 100,00              | 5 %                     | 10 %                         | 5,00           | 100,00                         |
+| Mislykkedes       | 150,00             | 100,00              | 50 %                   | 10 %                     | 50,00            | 100,00                         |
+| Mislykkedes       | 205,00             | 100,00              | 105 %                 | 10 %                      | 105,00                                  | 100,00                         |
 
-Tovejs-sammenholdelsespolitik styres for den juridiske enhed af feltet Sammenholdelsespolitik for linjer på siden Kreditorparametre. Afhængigt af det, der er valgt i feltet Tillad overstyring af sammenholdelsespolitik, kan du vælge tovejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden Sammenholdelsespolitik og for en bestemt indkøbsordre på siden Indkøbsordre.
+Tovejs-sammenholdelsespolitik styres for den juridiske enhed af feltet **Sammenholdelsespolitik for linjer** på siden **Kreditorparametre**. Afhængigt af det, der er valgt i feltet **Tillad overstyring af sammenholdelsespolitik**, kan du vælge tovejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden **Sammenholdelsespolitik** og for en bestemt indkøbsordre på siden **Indkøbsordre**.
 
-Sammenholdelse af pristotaler styres for den juridiske enhed af feltet Afstem pristotaler på siden Kreditorparametre. Toleranceprocenten og tolerancebeløbet for indkøbspristotalen (beløb, der ikke må overskrides) er også angivet på denne side.
+Sammenholdelse af pristotaler styres for den juridiske enhed af feltet **Afstem pristotaler** på siden **Kreditorparametre**. Toleranceprocenten og tolerancebeløbet for indkøbspristotalen (beløb, der ikke må overskrides) er også angivet på denne side.
 
 ## <a name="two-way-net-unit-price-matching"></a>Tovejs-sammenholdelse af nettoenhedspris
 Brug tovejs-sammenholdelse til at sikre, at afvigelsen mellem prisoplysningerne på indkøbsordren og fakturaen ligger inden for acceptable tolerancer. Du kan sammenligne prisoplysninger for nettoenhedsprisen for hver vare på fakturaen. Dette kaldes sammenholdelse af nettoenhedspris. 
 
-Ni linjebeløb sammenholdes siden Detaljer om fakturasammenholdelse, som vist i følgende tabel. Hvis den tilladte pristolerance for sammenholdelse af nettoenhedspris er 10 %, anses afvigelsen på 22,61 % for nettoenhedsprisen for at være en matchningafvigelse.
+Ni linjebeløb sammenholdes på siden **Detaljer om fakturasammenholdelse**, som vist i følgende tabel. Hvis den tilladte pristolerance for sammenholdelse af nettoenhedspris er 10 %, anses afvigelsen på 22,61 % for nettoenhedsprisen for at være en matchningafvigelse.
 
 | Feltet Linje                    | Fakturaværdi | Værdi af indkøbsordre | Afvigelsespct. | Matchstatus |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -114,9 +114,9 @@ Ni linjebeløb sammenholdes siden Detaljer om fakturasammenholdelse, som vist i 
 | Nettobeløb                    | 271,60        | 221,52               | 22,61 %              | Mislykkedes       |
 | Nettoenhedspris                | 67,9000       | 55,3800              | 22,61 %              | Mislykkedes       |
 
-Tovejs-sammenholdelsespolitik styres for den juridiske enhed af feltet Sammenholdelsespolitik for linjer på siden Kreditorparametre. Afhængigt af det, der er valgt i feltet Tillad overstyring af sammenholdelsespolitik, kan du vælge tovejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden Sammenholdelsespolitik og for en bestemt indkøbsordre på siden Indkøbsordre. 
+Tovejs-sammenholdelsespolitik styres for den juridiske enhed af feltet **Sammenholdelsespolitik for linjer** på siden **Kreditorparametre**. Afhængigt af det, der er valgt i feltet **Tillad overstyring af sammenholdelsespolitik**, kan du vælge tovejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden **Sammenholdelsespolitik** og for en bestemt indkøbsordre på siden **Indkøbsordre**. 
 
-Sammenholdelse af nettoenhedspris styres for den juridiske enhed af feltet Aktivér validering af fakturasammenholdelse på siden Kreditorparametre. Toleranceprocenter for nettoenhedsprisen kan konfigureres for varer, varegrupper, leverandører, leverandørgrupper, kombinationer af vare og leverandør eller juridisk enhed på siden Pristolerancer.
+Sammenholdelse af nettoenhedspris styres for den juridiske enhed af feltet **Aktivér validering af fakturasammenholdelse** på siden **Kreditorparametre**. Toleranceprocenter for nettoenhedsprisen kan konfigureres for varer, varegrupper, leverandører, leverandørgrupper, kombinationer af vare og leverandør eller juridisk enhed på siden **Pristolerancer**.
 
 ## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a>Tovejs-sammenholdelse af pristotaler og sammenholdelse af nettoenhedspris
 Du kan bruge sammenholdelse af pristotaler og sammenholdelse af nettoenhedspris sammen. I dette eksempel forudsættes følgende konfiguration:
@@ -162,10 +162,10 @@ Der sammenlignes samme linjebeløb på siden Detaljer om fakturasammenholdelse s
 | Fakturaantal               | 4,00          |              |
 | Sum af afstemte produktkvitteringer | 0,00          | Mislykkedes       |
 
-Trevejs-sammenholdelsespolitik styres for den juridiske enhed af feltet Sammenholdelsespolitik for linjer på siden Kreditorparametre. Afhængigt af det, der er valgt i feltet Tillad overstyring af sammenholdelsespolitik, kan du vælge trevejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden Sammenholdelsespolitik og for en bestemt indkøbsordre på siden Indkøbsordre.
+Trevejs-sammenholdelsespolitik styres for den juridiske enhed af feltet **Sammenholdelsespolitik for linjer** på siden **Kreditorparametre**. Afhængigt af det, der er valgt i feltet **Tillad overstyring af sammenholdelsespolitik**, kan du vælge trevejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden **Sammenholdelsespolitik** og for en bestemt indkøbsordre på siden **Indkøbsordre**.
 
 ## <a name="charges-matching"></a>Sammenholdelse af gebyrer
-Du kan bruge sammenholdelse af tillæg til at sikre, at tillægsbeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelsesprocent. De samlede beløb for hver tillægskode, der anvendes til fakturaen og indkøbsordren, sammenlignes på siden Sammenlign gebyrværdier – Faktura: som vist i følgende tabel. Hvis den tilladte tolerance for tillægskoden er 25 %, anses afvigelsesprocenten på 99.999.999.999,99 for licenstillægskoden for at være en matchningafvigelse.
+Du kan bruge sammenholdelse af tillæg til at sikre, at tillægsbeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelsesprocent. De samlede beløb for hver tillægskode, der anvendes til fakturaen og indkøbsordren, sammenlignes på siden **Sammenlign gebyrværdier – Faktura:** som vist i følgende tabel. Hvis den tilladte tolerance for gebyrkoden er 25 %, anses afvigelsesprocenten på 99.999.999.999,99 for **Licensgebyrkode** for at være en matchningsafvigelse.
 
 > [!NOTE] 
 > En afvigelsesprocent på 99.999.999.999,99 betyder, at det forventede beløb baseret på indkøbsordren er nul, og det faktiske beløb på fakturaen er en positiv værdi. 
@@ -176,10 +176,10 @@ Du kan bruge sammenholdelse af tillæg til at sikre, at tillægsbeløb ikke afvi
 | Bestået               | Fragt              | 200                           | 200                             | 0               | 0 %                  | 25 %                  |
 | Mislykkedes               | Fremskynd             | 4                             | 2                               | 2               | 100 %                | 25 %                  |
 
-Sammenholdelse af gebyrer styres for den juridiske enhed af knappen Sammenhold gebyrer på siden Kreditorparametre. Du kan konfigurere procenter for afvigelsestolerance for gebyrer på siden Gebyrtolerancer.
+Sammenholdelse af gebyrer styres for den juridiske enhed af knappen **Sammenhold gebyrer** på siden **Kreditorparametre**. Du kan konfigurere procenter for afvigelsestolerance for gebyrer på siden **Gebyrtolerancer**.
 
 > [!NOTE]
-> Sammenholdelse af tillæg udføres kun på gebyrkoder, hvor knappen Sammenlign værdier på indkøbsordre og faktura er valgt på siden Gebyrkode.
+> Sammenholdelse af gebyrer udføres kun på gebyrkoder, hvor knappen **Sammenlign værdier på indkøbsordre og faktura** er valgt på siden **Gebyrkode**.
 
 ## <a name="related-functionality"></a>Relaterede funktioner
 Kreditorfakturaer er ofte baseret på produktkvitteringer, der repræsenterer de faktiske forsendelser i stedet for indkøbsordrer. Somme tider stemmer de fakturerede beløb ikke overens med beløbene på indkøbsordren, og somme tider stemmer de afsendte antal ikke overens med de fakturerede antal. Du kan styre disse oplysninger på følgende måder:

@@ -2,7 +2,7 @@
 title: ER-destinationstype for printer
 description: Dette emne indeholder oplysninger om, hvordan du konfigurerer en printerdestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712706"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388282"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Printerdestination
 
@@ -43,7 +43,24 @@ Hvis du vil gøre **Printer**-destinationen tilgængelig i den aktuelle forekoms
 
 ### <a name="applicability"></a>Anvendelighed
 
-**Printer**-destinationen kan kun konfigureres for filkomponenter, der bruges til at generere output enten i PDF-format, der kan udskrives (PDF-fletning eller PDF-filformatelementer) eller Microsoft Office Excel/Word-format (Excel-fil). Når der genereres output i PDF-format, sendes det til en printer. Når der genereres output i Microsoft Office-format, konverteres det automatisk til PDF-format og sendes derefter til en printer.
+#### <a name="pdf-printing"></a>PDF-udskrivning
+
+I versioner af Finans før version 10.0.18 kan **Printer**-destinationen kun konfigureres for filkomponenter, der bruges til at generere output i PDF-format, der kan udskrives (**PDF-fletning** eller **PDF-fil**-formatelementer) eller Microsoft Office Excel- og Word-format (**Excel-fil**-formatelement). Når der genereres output i PDF-format, sendes det til en printer. Når der genereres output i Office-format ved hjælp af formatelementet **Excel-fil**, konverteres det automatisk til PDF-format og sendes derefter til en printer.
+
+Fra og med version 10.0.18 kan du dog konfigurere **Printer**-destinationen til formatelementet **Fælles fil**. Dette formatelement bruges oftest til at generere output i enten TXT- eller XML-format. Du kan konfigurere et ER-format , der indeholder formatelementet **Fælles fil** som rodformatelement og formatelementet **Binært indhold** som det eneste indlejrede element under det. I dette tilfælde producerer formatelementet **Fælles fil** output i det format, der er angivet af den binding, du konfigurerer til formatelementet **Binært indhold**. Du kan f.eks. konfigurere denne binding til at [udfylde](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) dette element med indholdet af en vedhæftet [Dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) i PDF- eller Office-format (Excel eller Word). Du kan udskrive outputtet ved hjælp af den konfigurerede **Printer**-destination. 
+
+> [!NOTE]
+> Når du vælger formatelementet **Fælles\\fil** for at konfigurere **Printer**-destinationen, kan du på designtidspunktet ikke garantere, at det valgte element vil producere output i PDF-format eller output, der kan konverteres til PDF-format. Du får derfor følgende advarselsmeddelelse: "Sørg for, at det output, der genereres af den valgte formatkomponent, kan konverteres til PDF. Ellers skal du fjerne markeringen i afkrydsningsfeltet 'Konverter til PDF'." Du skal hjælpe med at forhindre kørselsproblemer, når der ikke er angivet PDF- eller PDF-konverteringsbart output til udskrivning under kørsel. Hvis du forventer at modtage output i Office-format (Excel eller Word), skal indstillingen **Konverter til PDF** være valgt.
+>
+> I version 10.0.26 og senere skal du for at bruge **Konverter til PDF** vælge **PDF** for parameteren **Dokumentrutetype** for den konfigurerede **Printer**-destination.
+
+#### <a name="zpl-printing"></a>ZPL-udskrivning
+
+I version 10.0.26 og senere kan du konfigurere **Printer**-destinationen til formatelementet **Fælles\\fil** ved at vælge **ZPL** til parameteren **Dokumentrutetype**. I dette tilfælde ignoreres indstillingen **Konverter til PDF** ved kørsel, og TXT- eller XML-outputtet sendes direkte til en valgt printer ved hjælp af ZPL-kontrakten (Zebra Programming Language) for [dokumentets ruteplanlægningsagent (DRA)](install-document-routing-agent.md). Du kan bruge denne funktion til et ER-format, der repræsenterer et ZPL II-labellayout, til at udskrive forskellige labels.
+
+[![Konfigurere parameteren Dokumentrutetype i dialogboksen Destinationsindstillinger.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Du kan finde flere oplysninger om denne funktion i [Designe en ny ER-løsning til udskrivning af ZPL-labels](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Begrænsninger
 

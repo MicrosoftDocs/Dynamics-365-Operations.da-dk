@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102904"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384662"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -217,5 +217,15 @@ De fleste af felterne på tekniske ændringsordrer er de samme som felterne for 
 
 Du kan bruge knappen **Vedligehold/kopiér ændringsoplysninger** til at kopiere ændringsoplysninger mellem berørte produkter.
 
+## <a name="use-electronic-signatures-to-approve-and-active-boms-and-routes"></a>Bruge elektroniske signaturer til at godkende og aktivere styklister og ruter
+
+Hvis du vil bruge elektroniske signaturer til at godkende og/eller aktivere styklister og/eller ruteændringer, skal du gå til **Organisationsadministration \> Konfiguration \> Elektronisk signatur \> Elektronisk signatur-krav**. Sørg derefter for, at alle følgende elementer har **Signatur er påkrævet** angivet til *Ja*:
+
+- Aktivér teknisk ændringsordre til produktstykliste
+- Aktivér rute til teknisk ændringsordreprodukt
+- Godkend teknisk ændringsordre til produktstykliste
+- Godkend rute til teknisk ændringsordreprodukt
+- Godkend teknisk versionsstykliste og tekniske styklisteversioner
+- Godkende teknisk version og ruteversion
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

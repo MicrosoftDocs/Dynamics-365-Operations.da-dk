@@ -2,7 +2,7 @@
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067245"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384358"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20170"></a>Version 2.0.17.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Har løst et problem, hvor stregkoderne scannes forkert.
+- Har løst problem med GS1-scanningen til kamerascanneren.
+- Har løst problemet med GS1-scanningen for stregkodescanneren på Zebra-enheder.
+- Har forbedret omvejsflowet for forespørgsler, så valg af et kort i en omvej nu returnerer til hovedflowet.
+- Tilføjet understøttelse af et generisk dataforespørgselsflow.
+- Har tilføjet en meddelelse, der giver brugerne besked om ændringer i netværksforbindelsers status.
+- Justerede lagertilladelser med politikken for beskyttelse af personlige oplysninger for lagring i Android 10.
+- I forbindelse med flow, der har brug for det, inkluderer antalshjulet nu en position, der giver brugerne mulighed for at sende en tom numerisk værdi.
+- Har løst problemer med retningen af antalshjulet.
+- Har løst et problem, hvor antalshjulet ville springe til den forkerte værdi.
+- Har løst et problem, hvor input til den primære side ville gå tabt, når den blev udfyldt fra detaljesiden.
+- Har løst et problem, hvor pladsholdertekst behandles som den først valgte værdi på valglister.
+- Knappen "Send" ved bekræftelsestrin er nu automatisk aktiveret, hvis der er foruddefinerede værdier.
+- Har rettet detaljekortet, så der vises så mange linjer som muligt for tekstfelter med flere linjer.
+- Har rettet højden af knapperne "Send" og "Flere handlinger", så de nu optager mindre plads på skærmen.
+- Tilføjede manglende titler på valglisten.
+- Har løst et problem, hvor knappen Tilbage ikke virkede.
+- Har tilføjet flere rettelser og forbedringer af tastaturnavigation, herunder på følgende sider:
+  - Brugerlogon
+  - Vælg forbindelse
+  - Rediger forbindelse
+- Har rettet rulning ved brug af tastaturnavigation.
+- Forbedret tilgængelighed, herunder følgende forbedringer:
+  - Har rettet synlighed og kontrast.
+  - Har forhindret tab af tastaturfokusering, når pop op-sider lukkes.
+  - Der er føjet fejlmeddelelser til fortællingen.
+  - Forøgede størrelsen på pladsholderværdierne i trinbanneret.
+- Har rettet eksemplet på den tilpassede ældre side i demotilstand.
 
 ## <a name="version-20150"></a>Version 2.0.15.0
 
@@ -39,7 +72,7 @@ I denne version introduceres følgende nye funktioner, rettelser og forbedringer
 ## <a name="version-20130"></a>Version 2.0.13.0
 
 I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
- 
+
 - Forbedret rulning mellem sider med blødere animation.
 - Har rettet tællerintuitiv respons på strygebevægelser og lejlighedsvise skærmfrysninger.
 - Forbedret kombinationer af tekst i mørketilstand og baggrundsfarve, så de bliver mere læsbare.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075013"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384413"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -71,6 +71,18 @@ Listen med aktive job har følgende kolonner:
 - **Fuldført** – I denne kolonne vises det antal, der allerede er fuldført for et job.
 - **Kasseret** – I denne kolonne vises det antal, der allerede er kasseret for et job.
 - **Resterende** – I denne kolonne vises det antal, der mangler at blive fuldført for et job.
+
+## <a name="my-jobs-tab"></a>Fanen Mine job
+
+Fanen **Mine job** giver arbejderne mulighed for nemt at se alle ikke-startede og ikke-færdigmeldte job, der er tildelt specifikt til dem. Den er nyttig i firmaer, hvor job nogle gange eller altid tildeles bestemte arbejdere (personale) i stedet for andre typer ressourcer (f.eks. maskiner). 
+
+Planlægningssystemet tildeler automatisk hvert produktionsjob til en bestemt ressourcepost, og hver ressourcepost har en type (f.eks. maskine eller personale). Når du konfigurerer en medarbejder som produktionsarbejder, kan du knytte arbejderkontoen til en entydig personalepost. 
+
+Under fanen **Mine job** vises alle ikke-startede og ikke-færdigmeldte job, der er tildelt personaleposten for den arbejder, der er logget på, hvis en arbejder er logget på. Der vises aldrig job, der er tildelt til en maskine eller en anden type ressource, heller ikke selvom den arbejder, der er logget på, er begyndt at arbejde på disse job.
+
+Hvis du vil have vist alle job, der er startet af den arbejder, der er logget på, uanset den type ressource, som hvert job er tildelt, skal du bruge fanen **Aktive job**. Hvis du vil have vist alle ikke-færdigmeldte job, der svarer til konfigurationen af det lokale jobfilter, uanset arbejderens status eller startstatus, skal du bruge fanen **Alle job**.
+
+![Fanen Mine job.](media/pfei-my-jobs-tab.png "Fanen Mine job")
 
 ## <a name="my-machine-tab"></a>Fanen Min maskine
 
@@ -133,6 +145,13 @@ Hvis der oprettes en batchordre ud fra en formelversion, hvor indstillingen **Va
 
 I dette tilfælde kan arbejderen angive det samprodukt og det antal, der skal rapporteres, ved at vælge **Variationer af samprodukter** i dialogboksen til rapportering af status. Arbejderen kan derefter vælge mellem alle de frigivne produkter, der er defineret som samprodukter.
 
+### <a name="reporting-catch-weight-items"></a>Rapportering af fastvægtvarer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer, der er oprettet til fastvægtvarer. Batchordrer oprettes ud fra formler, som kan defineres til at have fastvægtvarer som formelvarer, samprodukter og biprodukter. En formel kan også defineres, så den indeholder formellinjer til ingredienser, der er defineret for fastvægt. Fastvægtvarer bruger to måleenheder til at spore lagerbeholdning: fastvægtantal og lagerantal. I fødevarebranchen kan kød i kasser f.eks. defineres som en fastvægtvare, hvor fastvægtantallet bruges til at spore antallet af kasser, og lagerantallet bruges til at spore kassernes vægt.
+
 ## <a name="reporting-scrap"></a>Rapportering af spild
 
 Når en arbejder fuldfører eller delvist fuldfører et job, kan han eller hun rapportere spild ved at vælge et job under fanen **Aktive job** og derefter vælge **Rapportér spild**. Derefter angiver arbejderen spildantallet ved at bruge det numeriske tastatur i dialogboksen **Rapportér spild**. Arbejderen vælger også en årsag (*Ingen*, *Maskine*, *Operatør* eller *Materiale*).
@@ -187,6 +206,13 @@ Følgende opgaver kan udføres:
 
 Knappen **Juster materiale** kan konfigureres, så den vises på værktøjslinjen til højre. (Du kan finde flere oplysninger i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md)). En arbejder kan vælge **Juster materiale** for et igangværende produktionsjob. I dette tilfælde vises dialogboksen **Juster materiale**, hvor arbejderen kan foretage de ønskede justeringer. Når dialogboksen åbnes, oprettes der en produktionsplukliste, der indeholder linjer til de justerede antal for produktionsordren. Hvis arbejderen vælger **Bogfør nu**, bekræftes reguleringen, og pluklisten bogføres. Hvis arbejderen vælger **Annuller**, slettes pluklisten uden regulering.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Justere materialeforbruget for fastvægtvarer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbejdere kan justere materialeforbruget for fastvægtvarer. Denne funktionalitet bruges i scenarier, hvor det faktiske antal af fastvægtmateriale, der blev forbrugt af et produktionsjob, var mere eller mindre end det planlagte antal. Den skal derfor reguleres for at holde lagerniveauerne aktuelle. Når en arbejder justerer forbruget af en fastvægtvare, kan de både justere fastvægtantallet og lagerantallet. Hvis et produktionsjob f.eks. er planlagt til at forbruge fem kasser med en forkalkuleret vægt på 2 kilo pr. kasse, kan arbejderen justere både antal kasser, der skal forbruges, og kassernes vægt. Systemet validerer, at den angivne vægt af kasserne ligger inden for den definerede minimum- og maksimumgrænse, der er defineret for det frigivne produkt.
+
 ### <a name="reserve-materials"></a>Reservere materialer
 
 I dialogboksen **Juster materiale** kan en arbejder foretage og justere materialereservationer ved at vælge **Reservér materiale**. I dialogboksen **Reservér materiale** vises den fysisk disponible lagerbeholdning for varen for hver lagrings- og sporingsdimension.
@@ -197,6 +223,8 @@ Du kan finde flere oplysninger om, hvordan du konfigurerer produktionsindlagring
 
 > [!NOTE]
 > De reservationer, en arbejder foretager i dialogboksen **Reservér materiale**, bevares , når arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**.
+>
+> Det er ikke muligt at justere reservationer for fastvægtvarer.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fuldførelse af et job og start af et nyt job
 

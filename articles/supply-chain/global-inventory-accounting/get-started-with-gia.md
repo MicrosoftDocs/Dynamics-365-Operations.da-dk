@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 88f1e9ef8c8b2aa494c44ea3b33713adc470eb96
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860502"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384791"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gang med Global Inventory Accounting
 
@@ -121,7 +121,7 @@ Følg disse trin for at konfigurere integrationen mellem Global Inventory Accoun
 1. Log på Supply Chain Management.
 1. Gå til **Systemadministration \> Funktionsstyring**.
 1. Vælg **Søg efter opdateringer**.
-1. Søg efter den funktion, der kaldes *Globalt lagerregnskab*, under fanen **Alle**.
+1. Søg efter den funktion, der kaldes *(Forhåndsversion) Globalt lagerregnskab*, under fanen **Alle**.
 1. Vælg **Aktiver nu**.
 1. Gå til **Globalt lagerregnskab \> Opsætning \> Parametre for globalt lagerregnskab \> Integrationsparametre**.
 1. I felterne **Datatjenesteslutpunkt** og **Slutpunkt for globalt lagerregnskab** skal du angive URL-adresserne fra den mail, som Global Inventory Accounting-teamet sendte, da du tilmeldte dig forhåndsversionen.

@@ -2,7 +2,7 @@
 title: Oversigt over momsberegning
 description: Dette emne forklarer det overordnede område og funktionerne for til momsberegning.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105431"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388489"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -58,8 +58,9 @@ Momsberegning implementeres i følgende Azure-geografiske områder. Der vil bliv
 - Canada
 - Europa
 - Japan
+- Schweiz
 - Storbritannien
-- United States
+- USA
 
 > [!NOTE]
 > Momsberegning understøtter ikke tidligere version af Dynamics 365, f.eks. Dynamics AX 2012 eller installationer af Dynamics 365 i lokale miljøer.
@@ -77,6 +78,7 @@ Det anbefales, at du importerer og indstiller konfigurationen af momsberegning m
 | 10.0.23         | Konfiguration af momsberegning 40.50.221 |
 | 10.0.24         | Konfiguration af momsberegning 40.50.225 |
 | 10.0.25         | Konfiguration af momsberegning 40.50.225 |
+| 10.0.26         | Konfiguration af momsberegning 40.54.234 |
 
 
 ## <a name="data-flow"></a>Dataflow
@@ -136,6 +138,11 @@ Følgende transaktioner understøttes i version 10.0.23:
 
 - Fritekstfaktura
 
+Følgende transaktioner understøttes i version 10.0.26: 
+
+- Finanskladder
+- kreditorfakturakladde
+
 ## <a name="supported-countriesregions"></a>Understøttede lande/områder
 
 Momsberegning kan aktiveres efter juridisk enhed. 
@@ -187,6 +194,12 @@ Følgende lande/områder til en juridisk enheds primære adresse understøttes i
 Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.24:
 
 - Mexico
+
+Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.26:
+
+- Kina
+- Tjekkiet
+- Spanien
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

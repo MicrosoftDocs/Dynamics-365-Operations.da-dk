@@ -2,27 +2,22 @@
 title: Eksterne enheder
 description: I dette emne forklares begreberne i forbindelse med eksterne Commerce-enheder.
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092478"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370970"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -45,7 +40,7 @@ Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud 
 
 ### <a name="modern-pos"></a>Moderne POS
 
-Modern POS er POS-programmet til Microsoft Windows. Det kan anvendes på Windows 10-operativsystemer (OSs).
+Modern POS er POS-programmet til Microsoft Windows. Det kan anvendes på Windows 10- og Windows 11-operativsystemer.
 
 ### <a name="cloud-pos"></a>Cloud POS
 
@@ -108,7 +103,7 @@ Tastaturer til PIN-koder understøttes via OPOS, men de skal administreres via e
 
 ### <a name="secondary-display"></a>Sekundær skærm
 
-Når en sekundær skærm er konfigureret, bruges nummer 2 Windows-skærm til at vise grundlæggende oplysninger. Formålet med den sekundære skærm er at understøtte udvidelser fra uafhængige softwareproducenter, for i leveringstilstand kan den sekundære skærm ikke konfigureres, og den viser begrænset indhold.
+Når en sekundær skærm er konfigureret, bruges nummer 2 Windows-skærm til at vise grundlæggende oplysninger. Som standard kan den sekundære visning ikke konfigureres og viser begrænset indhold. Formålet med den sekundære visning er at understøtte en uafhængig softwareleverandørudvidelse. 
 
 ### <a name="payment-device"></a>Betalingsenhed
 
@@ -132,7 +127,7 @@ OLE til POS-branchestandarden er den primære platform for eksterne enheder, der
 Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en tendens til at være meget hurtigere end udskrivning via Windows. Det er derfor en god ide at bruge OPOS, især i miljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig. Til de fleste enheder bruger du OPOS-kontrolelementer. Men nogle OPOS-bonprintere understøtter også Windows-drivere. Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater. Der er dog ulemper ved at bruge Windows-drivere. Her er nogle eksempler på disse ulemper:
 
 -   Når der bruges Windows-drivere, gengives billeder, før udskrivningen sker. Derfor har udskrivningen en tendens til at være langsommere end på printere, der bruger OPOS-kontrolelementer.
--   Enheder, der er tilsluttet via printeren ("sammenkoblet") fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
+-   Enheder, der er tilsluttet via printeren ("sammenkoblet") fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller kvitteringsprinteren fungerer muligvis ikke som forventet.
 -   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i handlen, f.eks. papirafskæring eller bilagsudskrivning.
 -   Windows-printere understøttes ikke via IIS-hardwarestationen. 
 
@@ -176,7 +171,7 @@ Hvis du vil bruge den dedikerede hardwarestation, skal du følge disse trin.
 1. Åbn Modern POS i ikke-kassetilstand, og brug handlingen **Administrer hardwarestationer** til at slå funktioner for hardwarestation til. Den dedikerede hardwarestation vil som standard være aktiv. 
 1. Log af Modern POS. Log derefter på igen, og åbn et skift. De eksterne enheder, der er konfigureret i hardwareprofilen, kan nu bruges. 
 
-### <a name="shared"></a>Delt 
+### <a name="shared"></a>Delt
 
 Det kaldes også "IIS"-hardwarestationen. "IIS" antyder, at POS-programmet opretter forbindelse til hardwarestationen via Microsoft Internet Information Services. POS-programmet opretter forbindelse til IIS-hardwarestationen via webtjenester, der kører på en computer, hvor enhederne er tilsluttet. Når du bruger den delte hardwarestation, kan de eksterne enheder, der er tilsluttet en hardwarestation, bruges af ethvert POS-kasseapparat, der er på samme netværk som IIS-hardwarestationen. Da kun Modern POS til Windows og Android indeholder indbygget understøttelse af eksterne enheder, skal alle andre Modern POS-programmer bruge IIS-hardwarestationen til at kommunikere med eksterne POS-enheder, der er konfigureret i hardwareprofilen. Hver forekomst af IIS hardware station kræver derfor, at en computer, der kører webtjenesten, og et program, der kommunikerer med enhederne. 
 
@@ -184,7 +179,7 @@ Den delte hardwarestation kan bruges til at tillade, at flere POS-klienter deler
 
 Når en hardwarestation bruges til at understøtte deling af eksterne enheder mellem flere POS-klienter, skal du kun bruge kontantskuffer, kvitteringsprintere og betalingsterminaler. Du kan ikke direkte forbinde enkeltstående stregkodescannere, MSR'er, linjeskærme, vægte eller andre enheder. Ellers kan der opstå konflikter, når flere POS-enheder gør krav på disse enheder på samme tid. Sådan håndteres konflikter for understøttede enheder:
 
--   **Pengeskuffe** – Pengeskuffen åbnes via en hændelse, der sendes til enheden. Det eneste problem, der kan opstå, når en pengeskuffen kaldes, er, at pengeskuffen allerede er åben. Når der er tale om fælles hardwarestationer, skal pengeskuffen indstilles til **Delt** i hardwareprofilen. Denne indstilling forhindrer, at POS-enheden kontrollerer, om kassen allerede er åben, når der sendes Åbn-kommandoer.
+-   **Pengeskuffe** – Pengeskuffen åbnes via en hændelse, der sendes til enheden. Problemer kan opstå, når en pengeskuffe kaldes, mens skuffen allerede er åben. En pengeskuffe, der bruges i en konfiguration af delt hardwarestation, skal indstilles til **Delt** i hardwareprofilen. Denne indstilling forhindrer, at POS-enheden kontrollerer, om kassen allerede er åben, når der sendes Åbn-kommandoer.
 -   **Bonprinter** – Hvis to kommandoer til bonudskrivning sendes til hardwarestationen på samme tid, kan en af kommandoerne gå tabt, afhængigt af enheden. Nogle enheder har intern hukommelse eller gruppering, der kan forhindre dette problem. Hvis en udskrivningskommando ikke lykkes, modtager kassereren en fejlmeddelelse og kan derefter gentage udskrivningskommandoen fra POS-enheden.
 -   **Betalingsterminal** – Hvis en kasserer forsøger at modtage betaling for en transaktion på en betalingsterminal, der allerede bruges, giver en meddelelse kassereren besked om, at terminalen bruges, og kassereren bliver bedt om at prøve igen senere. Normalt kan kasserere se, at en terminal allerede er i brug, og venter, indtil den anden transaktion er fuldført, inden de forsøger at modtage betaling igen.
 
@@ -205,7 +200,7 @@ Den logik, der styrer fysisk tilsluttede og netværksadresserbare eksterne enhed
 ## <a name="setup-and-configuration"></a>Installation og konfiguration
 ### <a name="hardware-station-installation"></a>Installation af hardwarestation
 
-Du kan finde flere oplysninger under [Konfigurere og installere hardwarestation](retail-hardware-station-configuration-installation.md).
+Du kan finde oplysninger om, hvordan du en IIS-hardwarestation, i [Konfigurere og installere hardwarestation](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Windows
 
@@ -431,7 +426,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Alle Modern POS-klienter delte en IIS-hardwarestation
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>Alle Modern POS-klienter, der deler en IIS-hardwarestation
 
 > [!NOTE]
 > Når IIS-hardwarestationen er "delt", kan flere enheder bruge hardwarestationen på samme tid. I dette scenarie skal du kun bruge de enheder, der er angivet i følgende tabel. Hvis du forsøger at dele enheder, der ikke er angivet her, f.eks. stregkodescannere og MSR'er, opstår der fejl, når flere enheder forsøger at gøre krav på den samme eksterne enhed. I fremtiden forhindres en sådan konfiguration udtrykkeligt.
@@ -487,7 +482,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration til understøttede scenarier
-Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md). 
+Du kan finde flere oplysninger om, hvordan du opretter hardwareprofiler i [Tilslutte ydre enheder til POS](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)
 
@@ -623,9 +618,8 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 | Producent | Model    | Interface | Bemærkninger                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Brugerdefineret    | Forbundet via netværket   |
-| HP           | F7M67AA  | OPOS      | Drevet via USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Drevet via USB             |
 | Star         | TSP650II | Brugerdefineret    | Forbundet via netværket   |
 | Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -637,26 +631,17 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 #### <a name="bar-code-scanner"></a>Stregkodescanner
 
 | Producent  | Model         | Interface | Bemærkninger |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Tegn        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Pinkodetastatur
+#### <a name="payment-terminals-and-pin-pads"></a>Betalingsterminaler og pinkodetastaturer
 
-| Producent | Model  | Interface | Bemærkninger                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
+Dynamics 365 Commerce indeholder en indbygget løsning til integration med Adyen til betalingstjenester. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) bruger enhedsagnostik [Adyen Payment Terminal Application Programming Interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) og kan bruge alle betalingsterminaler, som denne API understøtter. Du kan få en komplet liste over understøttede betalingsterminaler i [Adyen POS-terminaler](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Betalingsterminal
-
-| Producent | Model | Interface | Bemærkninger                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+Du kan også bruge andre betalingsudbydere sammen med Dynamics 365 Commerce ved at oprette en brugerdefineret connector. Alle betalingsterminaler, der understøttes af betalingsudbyderen, kan bruges sammen med Dynamics 365 Commerce. Dynamics 365 Commerce tillader ligeledes alle modeller til integration af betalingsenhed, der understøttes af betalingsudbyderen, f.eks. lokal IP, sky-API eller direkte forbindelse (f.eks. via USB) til POS. Du kan få flere oplysninger i [Oprette komplet integration af betaling for en betalingsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Pengeskuffe
 
@@ -670,10 +655,10 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 
 #### <a name="line-display"></a>Linjevisning
 
-| Producent  | Model   | Interface | Bemærkninger |
-|---------------|---------|-----------|----------|
-| HP integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Producent | Model    | Interface | Bemærkninger |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T-serie | OPOS      |          |
 
 #### <a name="signature-capture"></a>Signaturhentning
 
@@ -701,39 +686,29 @@ De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hard
 
 #### <a name="printer"></a>Printer
 
-| Producent | Model    | Interface | Bemærkninger              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Brugerdefineret    | Forbundet via netværket |
-| HP           | F7M67AA  | OPOS      | Drevet via USB           |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Producent | Model    | Interface | Bemærkninger                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Drevet via USB             |
+| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket   |
+| Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>Stregkodescanner
 
-| Producent  | Model   | Interface | Bemærkninger |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Tegn        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| Producent  | Model         | Interface | Bemærkninger |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>Pinkodetastatur
+#### <a name="payment-terminals-and-pin-pads"></a>Betalingsterminaler og pinkodetastaturer
 
-| Producent | Model  | Interface | Bemærkninger                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
+Dynamics 365 Commerce indeholder en indbygget løsning til integration med Adyen til betalingstjenester. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) bruger enhedsagnostik [Adyen Payment Terminal-API](https://www.adyen.com/blog/introducing-the-terminal-api) og kan bruge alle betalingsterminaler, som denne API understøtter. Du kan få en komplet liste over understøttede betalingsterminaler i [Adyen POS-terminaler](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Betalingsterminal
-
-| Producent | Model | Interface | Bemærkninger                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+Du kan også bruge andre betalingsudbydere sammen med Dynamics 365 Commerce ved at oprette en brugerdefineret connector. Alle betalingsterminaler, der understøttes af betalingsudbyderen, kan bruges sammen med Dynamics 365 Commerce. Dynamics 365 Commerce tillader ligeledes alle modeller til integration af betalingsenhed, der understøttes af betalingsudbyderen, f.eks. lokal IP, sky-API eller direkte forbindelse (f.eks. via USB) til POS. Du kan få flere oplysninger i [Oprette komplet integration af betaling for en betalingsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Pengeskuffe
 
@@ -780,22 +755,20 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 
 #### <a name="printer"></a>Printer
 
-| Producent | Model    | Interface | Bemærkninger              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Brugerdefineret    | Forbundet via netværket |
-| HP           | F7M67AA  | OPOS      | Drevet via USB           |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Producent | Model    | Interface | Bemærkninger                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Drevet via USB             |
+| Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>Betalingsterminal
 
-| Producent | Model | Interface | Bemærkninger                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+Dynamics 365 Commerce indeholder en indbygget løsning til integration med Adyen til betalingstjenester. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) bruger enhedsagnostik [Adyen Payment Terminal-API](https://www.adyen.com/blog/introducing-the-terminal-api) og kan bruge alle betalingsterminaler, som denne API understøtter. Du kan få en komplet liste over understøttede betalingsterminaler i [Adyen POS-terminaler](https://www.adyen.com/pos-payments/terminals).
+
+Du kan også bruge andre betalingsudbydere sammen med Dynamics 365 Commerce ved at oprette en brugerdefineret connector. Alle betalingsterminaler, der understøttes af betalingsudbyderen, kan bruges sammen med Dynamics 365 Commerce. Dynamics 365 Commerce tillader ligeledes alle modeller til integration af betalingsenhed, der understøttes af betalingsudbyderen, f.eks. lokal IP, sky-API eller direkte forbindelse (f.eks. via USB) til POS. Du kan få flere oplysninger i [Oprette komplet integration af betaling for en betalingsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Pengeskuffe
 
@@ -822,7 +795,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 
 **Løsning:** En af følgende faktorer kan forårsage dette problem:
 
--   Hardwarestationen er endnu ikke blevet konfigureret korrekt i hovedsædet. Brug trinnene tidligere i dette emne til at kontrollere, at hardwarestationsprofilen og hardwarestationen er angivet korrekt.
+-   Hardwarestationen er endnu ikke blevet konfigureret korrekt i hovedkontoret. Du kan finde flere oplysninger i [Konfigurer og installer hardwarestation til Retail](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   Job til opdatering af kanalkonfigurationen har ikke været kørt. I dette tilfælde skal du køre job 1070 til kanalkonfiguration.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Modern POS afspejle ikke nye indstillinger for kontantskuffe

@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Dette emne indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med Finans- og driftsapps.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119546"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384557"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -199,9 +199,12 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Gå til hovedsidens indhold (med fokus på en anden rude)                    | Alt+M, M                    |
 | Flytte til faktaboksruden (som kan inkludere at åbne den)                       | Alt+M, B eller Ctrl+F2         |
 
+> [!NOTE]
+> Funktionen **Strømlining af tabulatorfunktion i fuldside-formularer**, der blev introduceret i version 10.0.26, giver brugerne mulighed for at tabulere gennem alle områder af en side uden at kræve, at musen eller en dedikeret tastaturgenvej flyttes mellem områder. Du kan stadig bruge de eksisterende tastaturgenveje (f.eks. Alt+M som tasteakkorder), så du hurtigt kan flytte mellem områder på en side.
+
 ## <a name="personalization-shortcuts"></a>[Tilpasning](personalize-user-experience.md) af genveje 
 
-| Hvis du vil gøre dette                                                                                                             | Tryk på                               |
+| Hvis du vil gøre dette                                                                                                             | Tryk på                                |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Flyt siden til tilpasningstilstand                                                                          | Ctrl+Shift+P                        |
 | Brug værktøjet Marker (i tilpasningstilstand)                                                                     | V                                   |

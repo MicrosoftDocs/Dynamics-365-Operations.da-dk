@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182512"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331736"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserede kreditorbetalinger
 
 [!include [banner](../includes/banner.md)]
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Dette emne indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
-
-Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Derudover kan organisationen spare tid, fordi betalingsprocessen er strømlinet.
 
 I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne kreditorfakturaer. Betalinger for alle juridiske driftsenheder genereres fra én juridisk enhed, der kaldes betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der skal modtage posteringerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabatposteringer, der er relateret til en betaling for hele virksomheden, skal håndteres. På kladdelinjen for centraliserede betalinger skal **Kontotype** indstilles til Kreditor. **Modkontotype** skal indstilles til Bank eller Finans. Bankkontoen skal være i det aktuelle firma. 
 

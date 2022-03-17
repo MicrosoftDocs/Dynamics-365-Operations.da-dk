@@ -2,19 +2,19 @@
 title: Konfigurere regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076957"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388384"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
@@ -46,6 +46,7 @@ Regnskabsintegrationsprocessen består af følgende opgaver:
 - Konfigurer regnskabsregistreringsprocessen, der definerer en række trin i regnskabsregistreringen og regnskabsconnectorer og regnskabsdokumentudbydere, der bruges til hvert trin.
 - Tildel regnskabsregistreringsprocesser til POS-funktionalitetsprofiler.
 - Tildel tekniske connectorprofiler til hardwareprofiler.
+- Tildel tekniske connectorprofiler til POS-hardware- eller funktionalitetsprofiler.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Uploade konfigurationer af regnskabsdokumentudbydere
 
@@ -161,10 +162,12 @@ Tildel enheder i regnskabsregistreringsprocessen til POS-profiler ved at følge 
 1. Gå i Commerce-hovedkontoret til siden **POS-funktionalitetsprofiler** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**). 
 1. Tildel regnskabsregistreringsprocessen til POS-funktionalitetsprofilen.
 1. Vælg **Rediger**, og vælg en proces under fanen **Proces for regnskabsregistrering** i feltet **Procesnummer**.
+1. Under fanen **Regnskabsservices** skal du vælge connector-tekniske profiler med connectorplaceringen **Kasseapparat**.
 1. Gå til siden **POS-hardwareprofil** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Hardwareprofiler**).
 1. Tildel tekniske connectorprofiler til en hardwareprofil. 
 1. Vælg **Rediger**, og tilføj derefter en linje under fanen **Eksterne regnskabsenheder**. 
 1. Vælg en teknisk connectorprofil i feltet **Profilnummer**.
+1. Under fanen **Eksterne regnskabsenheder** skal du vælge connector-tekniske profiler med connectorplaceringen **Hardwarestation**.
 
 > [!NOTE]
 > Du kan føje flere tekniske profiler til en den samme hardwareprofil. Men en hardwareprofil eller POS-funktionalitetsprofil skal kun have ét skæringspunkt med en regnskabsconnectorgruppe.
@@ -175,6 +178,17 @@ Regnskabsregistreringsflowet defineres af regnskabsregistreringsprocessen og ogs
 - Udbyderen af regnskabsdokumenter er også ansvarlig for at identificere den regnskabsconnector, der bruges til regnskabsregistrering. Den sammenligner de funktionelle connectorprofiler, der indgår i den regnskabsconnectorgruppe, der er angivet for det aktuelle trin i regnskabsregistreringsprocessen, med den tekniske connectorprofil, der er tildelt til hardwareprofilen for den hardwarestation, der hører sammen med POS.
 - Udbyderen af regnskabsdokumenter bruger indstillingerne for datatilknytning fra konfigurationen af regnskabsdokumentudbyderen til at konvertere transaktions-/hændelsesdata som f.eks. moms og betalinger, mens der oprettes et regnskabsdokument.
 - Når regnskabsdokumentudbyderen genererer et regnskabsdokument, kan regnskabsconnectoren enten sende det til regnskabsenheden, som det er, eller opdele det og omdanne det til en sekvens af kommandoer for enhedens API (application programming interface), afhængigt af den kommunikation, der håndteres.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Konfigurere kasseapparater med begrænsninger for regnskabsregistrering
+
+Du kan vælge kasseapparater, hvor regnskabsregistrering ikke er tilladt, hvis du f.eks. kun skal levere ikke-regnskabsmæssige handlinger, f.eks. søgning i produktkatalog, kundeopslag eller oprettelse af transaktionskladde på disse enheder.
+
+Følg disse trin for at konfigurere kasseapparater med begrænsninger for regnskabsregistrering.
+
+1. Gå i Commerce-hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**.
+1. Vælg den ønskede proces.
+1. Vælg fanen **POS-kasseapparater med begrænsninger i regnskabsprocessen**.
+1. Tilføj kasseapparater med begrænsninger i regnskabsprocessen efter behov.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Validere processen til regnskabsregistrering
 

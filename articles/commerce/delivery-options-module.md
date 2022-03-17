@@ -2,7 +2,7 @@
 title: Leveringsindstillingsmodul
 description: Dette emne omhandler leveringsindstillingsmoduler og forklarer, hvordan du kan konfigurere dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760894"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349788"
 ---
 # <a name="delivery-options-module"></a>Leveringsindstillingsmodul
 
@@ -55,6 +55,9 @@ Følgende illustration viser et eksempel på et leveringsindstillingsmodul på e
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Føje et leveringsindstillingsmodul til en betalingsside og angive de krævede egenskaber
 
 Et leveringsindstillingsmodul kan kun føjes til et betalignsmodul. Du kan finde flere oplysninger om, hvordan du konfigurerer leveringsindstillingsmodulet og føjer det til en betalingsside, i [Betalingsmodul](add-checkout-module.md).
+
+> [!NOTE]
+> Du vil muligvis oplever uensartet håndtering af levering, eller du vil muligvis ikke se gebyrer på ikke-forholdsmæssigt overskriftsniveau i e-handelskanalen. Du kan få en vejledning i, hvordan du løser disse problemer, under [Aktivere ensartet håndtering af leveringsmåde i e-handelskanaler](consistent-delivery-mode-handling.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,7 +2,7 @@
 title: Oprette et websted for e-handel
 description: I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090763"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388205"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090763"
 I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 
 Når du licenserer Dynamics 365 Commerce-funktionerne til e-handel, vil webstedsgeneratoren blive klargjort til et startsted, som du kan bruge som udgangspunkt for dit eget websted. Men hvis du vil starte fra bunden, eller hvis du vil oprette endnu et websted, skal du oprette et nyt websted i området til oprettelse af websted. 
+
+## <a name="site-creation-prerequisites"></a>Forudsætninger for oprettelse af websted
+
+En webstedsgenerator-bruger skal have en Microsoft Azure Active Directory-brugerkonto (Azure AD) inkluderet i den Azure AD-sikkerhedsgruppe, der er tildelt til e-handlens systemadministratorer. Du kan finde flere oplysninger i [Implementere en ny e-handelslejer](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD-gæstebrugere kan have forskellige adgangsrettigheder i din Azure AD-lejer. Selv hvis den er inkluderet i den Azure AD-sikkerhedsgruppe, der er tildelt systemadministratorer af e-handel,vil en gæstebruger muligvis have brug for, at Azure AD-rettighedsindstillingerne af **Eksterne brugere** skal ændres for at kunne oprette et e-handelswebsted i Commerce. 
+
+Hvis du vil justere indstillinger for Azure AD **Eksterne brugere** , skal du følge disse trin.
+
+1. Naviger til din Azure AD-lejer i Azure-portalen.
+1. Gå til **Brugerindstillinger \> Eksterne brugere**, og vælg linket **Administrer eksterne samarbejdsindstillinger**. Derved åbnes siden **Indstillinger for eksternt samarbejde**, hvor gæstebrugeradgang, indstillinger for gæsteinvitationer og begrænsninger for samarbejde kan angives. 
+1. Juster indstillingerne for eksternt samarbejde i overensstemmelse med dit firmas sikkerhedspolitikker. 
 
 ## <a name="set-up-your-site"></a>Konfigurere dit websted
 

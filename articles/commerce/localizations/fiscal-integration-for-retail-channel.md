@@ -2,21 +2,21 @@
 title: Oversigt over regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077186"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388307"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -27,7 +27,7 @@ Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -t
 
 - Registrere et salg på en regnskabsenhed, der er knyttet til POS, f.eks. en bonprinter, og udskrive en regnskabskvittering til kunden.
 - Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
-- Hjælpe med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
+- Hjælp med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
 
 Regnskabsintegrationsfunktionen er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende scenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Commerce-komponenter og er medtaget i SDK'et (Software Development Kit). Du kan finde flere oplysninger om regnskabsintegrationseksempler i [Eksempler på regnskabsintegration i Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Commerce SDK'et, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -46,6 +46,9 @@ Et eksempel på regnskabsintegration kan indeholde Commerce Runtime (CRT), hardw
 - **Konfiguration af regnskabsconnectoren** – Denne konfiguration definerer den fysiske kommunikation med den ønskede regnskabsenhed eller -tjeneste.
 
 En regnskabsregistreringsproces for et bestemt POS-kasseapparat er defineret af en tilsvarende indstilling i POS-funktionalitetsprofilen. Du kan finde flere oplysninger om, hvordan du kan konfigurere en regnskabsregistreringsproces, overføre konfigurationer for regnskabsdokumentudbyderen og regnskabsconnectoren og ændre deres konfigurationsparametre, under [Konfigurere en regnskabsregistreringsproces](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Hvis du har brug for enheder til ikke-regnskabsmæssige handlinger, f.eks. søgning i produktkatalog, kundeopslag eller oprettelse af transaktionskladde, kan du vælge disse som kasseapparater med begrænsninger af regnskabsprocesser. Du kan finde flere oplysninger i [Konfigurere kasseapparater med begrænsninger for regnskabsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Følgende typiske regnskabsregistreringsflow starter med en hændelse i POS (f.eks. færdiggørelse af en salgstransaktion) og implementerer en foruddefineret trinsekvens, der omfatter andre Commerce-komponenter (f.eks. CRT og Hardwarestation).
 
