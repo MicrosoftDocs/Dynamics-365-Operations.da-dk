@@ -1020,6 +1020,8 @@
                   href: unit-of-measure.md
                 - name: Anvende visningsindstillinger for produktdimensioner
                   href: dimension-settings.md
+                - name: Aktivere vedligeholdelsestilstand for e-handel
+                  href: enable-maintenance-mode.md
             - name: Administrere dit webstedsindhold
               items:
                 - name: Metoder til at tilføje indhold
@@ -2100,6 +2102,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Fejlfinde datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurer datamodeller
+                  items:
+                    - name: Understøtte parameteriserede kald af ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere modeltilknytninger
                   items:
                     - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
@@ -2520,7 +2526,7 @@
                       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                     - name: Tillægspunkter for følgesedler under ordreopfyldning
                       href: dev-itpro/extensions-shipping-carrier-integration.md
-                - name: Emballage og implementering
+                - name: Emballage og udrulning
                   items:
                     - name: Fjerne udvidelser til enheder i skyen
                       href: dev-itpro/retail-sdk/remove-csu-package.md
@@ -2600,7 +2606,7 @@
                       href: dev-itpro/pos-custom-control.md
                     - name: Udvidelse af POS-betaling
                       href: dev-itpro/pos-payment-extension.md
-                - name: Emballage og implementering
+                - name: Emballage og udrulning
                   items:
                     - name: Oprette en udvidelsespakke til MPOS
                       href: dev-itpro/pos-extension/mpos-extension-packaging.md
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Udvide en moduldefinition
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Ændre statiske strenge i modulbiblioteket
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Datahandlinger
                       items:
                         - name: Tilsidesættelser af datahandlinger
@@ -2774,7 +2782,9 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Udvide et tema fra et basistema
                           href: e-commerce-extensibility/extend-theme.md
-                - name: Emballage og implementering
+                        - name: Ændre temaer i modulstrenge
+                          href: e-commerce-extensibility/change-theme-module-strings.md
+                - name: Emballage og udrulning
                   items:
                     - name: Pakke konfigurationer og implementere dem i et onlinemiljø
                       href: e-commerce-extensibility/package-deploy.md
@@ -2796,15 +2806,17 @@
                       items:
                         - name: Konfigurere sidelagring
                           href: e-commerce-extensibility/page-caching.md
-                        - name: Instanscache for datahandling
+                        - name: Forekomstcache for datahandling
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: Optimering af modul-CSS
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetri og analyse
                       items:
                         - name: Telemetri-logføring
                           href: e-commerce-extensibility/telemetry-logger.md
             - name: Commerce HQ
               items:
-                - name: Emballage og implementering
+                - name: Emballage og udrulning
                   items:
                     - name: Oprette Commerce-betalingspakker til Finans og drift-udrulning
                       href: dev-itpro/payment-connector-package.md
@@ -2836,7 +2848,7 @@
                       href: dev-itpro/configure-online-store.md
                     - name: Konfigurere godkendelsesudbydere
                       href: dev-itpro/configure-authentication-providers.md
-                - name: Emballage og implementering
+                - name: Emballage og udrulning
                   items:
                     - name: Oprette installerbare pakker
                       href: dev-itpro/retail-sdk/retail-sdk-packaging.md

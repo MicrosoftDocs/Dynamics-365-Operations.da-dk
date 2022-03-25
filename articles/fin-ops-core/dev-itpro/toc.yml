@@ -242,6 +242,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gøre enhedslageret tilgængeligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: 'Forretningshændelser, der genereres ved eksport til Azure Data Azure-servicen (forhåndsversion)'
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Ændre data i Azure Data Lake
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Handlinger til databaseflytning
@@ -1068,6 +1070,8 @@
                       href: data-entities/dual-write/sales-status-map.md
                     - name: Filtrere interne ordrer for at undgå synkronisering af ordrer og ordrelinjer
                       href: data-entities/dual-write/filtering-intercompany-orders.md
+                    - name: Fjerne applikations orkestreringsløsninger til dobbeltskrivning
+                      href: data-entities/dual-write/uninstall-solutions.md
                 - name: Administrere dobbeltskrivning
                   items:
                     - name: Tilpasse enheds- og felttilknytninger

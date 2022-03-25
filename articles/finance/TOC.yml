@@ -1528,6 +1528,10 @@
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: Rapportering i Danmark
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-dnk-vat-declaration-denmark.md
                         - name: Økonomisk rapportering
                           items:
                             - name: Momsopgørelse
@@ -2106,9 +2110,9 @@
                   href: localizations/emea-edit-invoice-id-sales-orders.md
                 - name: EU-postcertifikater
                   href: localizations/emea-entry-certificates.md
-                - name: Rapportering til EU-listesystemet
+                - name: Rapportering til EU-listesystem
                   href: localizations/emea-eu-sales-list.md
-                - name: Eksempel på generisk EU-listesystemet
+                - name: Eksempel på generisk EU-listesystem
                   href: localizations/emea-eu-sales-list-example.md
                 - name: Valutakursreguleringer
                   href: localizations/emea-exchange-rate-adjustments.md
@@ -2344,6 +2348,8 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU-listesystem
                   href: localizations/emea-deu-eu-sales-list.md
+                - name: Momsopgørelse
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungarn
               items:
                 - name: Oversigt for Ungarn
@@ -3566,7 +3572,7 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Dimensioner for momsafdeling
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Rapport om udgående moms
+                - name: Momsrapporter
                   href: localizations/apac-tha-sales-vat-report.md
                 - name: A-skat
                   href: localizations/apac-tha-withholding-tax.md
@@ -4285,6 +4291,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Fejlfinde datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurer datamodeller
+                  items:
+                    - name: Understøtte parameteriserede kald af ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere modeltilknytninger
                   items:
                     - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
@@ -4353,8 +4363,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere handlingsafhængige destinationer
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere postspecifikke ER-destinationer for udskriftsstyring
+                    - name: Konfigurere postspecifikke destinationer for udskriftsstyring
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Designe en ny ER-løsning til udskrivning af ZPL-labels
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere en reference til ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Validere genererede rapporter automatisk

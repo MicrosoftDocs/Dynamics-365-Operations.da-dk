@@ -747,8 +747,32 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Rapport over sammenligning af lagervarepriser
                   href: cost-management/compare-item-price.md
+            - name: Efterkalkulationsmetoder
+              items:
+                - name: Løbende gennemsnitskostpris
+                  href: cost-management/running-average-cost-price.md
+                - name: Spore løbende gennemsnitskostpris pr. lagerdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO med fysisk værdi og afmærkning
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: LIFO-dato med fysisk værdi og afmærkning
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO med fysisk værdi og afmærkning
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Vægtet gennemsnit med fysisk værdi og afmærkning
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Vægtet gennemsnitsdato med fysisk værdi og afmærkning
+                  href: cost-management/weighted-average-date.md
+                - name: Glidende gennemsnit
+                  href: cost-management/moving-average.md
+                - name: Reserveomkostningssekvens med glidende gennemsnit
+                  href: cost-management/moving-average-fallback.md
             - name: Lagerregnskab
               items:
+                - name: Fysiske og økonomiske opdateringer
+                  href: cost-management/physical-financial-updates.md
+                - name: Medtag fysisk værdi
+                  href: cost-management/include-physical-value.md
                 - name: Omkostningsobjekter
                   href: cost-management/cost-object.md
                 - name: Vise saldo for omkostningsobjekt
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Kostprisgrupper
                   href: cost-management/cost-groups.md
-                - name: FIFO med fysisk værdi og afmærkning
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Medtag fysisk værdi
-                  href: cost-management/include-physical-value.md
                 - name: Lagerobjektværdier
                   href: cost-management/physical-quantity.md
-                - name: LIFO-dato med fysisk værdi og afmærkning
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO med fysisk værdi og afmærkning
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Glidende gennemsnit
-                  href: cost-management/moving-average.md
-                - name: Reserveomkostningssekvens med glidende gennemsnit
-                  href: cost-management/moving-average-fallback.md
-                - name: Fysiske og økonomiske opdateringer
-                  href: cost-management/physical-financial-updates.md
-                - name: Løbende gennemsnitskostpris
-                  href: cost-management/running-average-cost-price.md
-                - name: Spore løbende gennemsnitskostpris pr. lagerdimension
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Gennemsnitskostdato
-                  href: cost-management/weighted-average-date.md
-                - name: Vægtet gennemsnit med fysisk værdi og afmærkning
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerlukning
                   href: cost-management/inventory-close.md
                 - name: Regulere omkostningsværdier for disponibel lagerbeholdning
@@ -1431,6 +1433,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Fejlfinde datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurer datamodeller
+                  items:
+                    - name: Understøtte parameteriserede kald af ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere modeltilknytninger
                   items:
                     - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Uventet difference mellem anmodnings- og sessionsdata under test
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: Tillidsanker til certificeringsstien blev ikke fundet ved oprettelse af appforbindelse
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Tillidsanker til certificeringsstien blev ikke fundet ved opdatering og overflytning til WMS
