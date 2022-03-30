@@ -2,19 +2,19 @@
 title: Opgradere til modellen med part- og globalt adressekartotek
 description: Dette emne indeholder en beskrivelse af, hvordan du opgraderer dobbeltskrivningsdata til modellen med part- og globalt adressekartotek.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060473"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407788"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
@@ -151,13 +151,19 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
 ## <a name="run-the-templates"></a>Køre skabelonerne
 
-1. Stop følgende dobbeltskrivningstilknytninger af **Konto**, **Kontakt** og **Leverandør** ved hjælp af appen Finans og drift:
+1. Stop følgende dobbeltskrivningstilknytninger af **Part**, **Konto**, **Kontakt** og **Leverandør**, der bruger programmer til finans og drift:
 
+    + CDS-parter (msdyn_parties) 
     + Debitorer V3 (konti)
     + Debitorer V3 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + Kreditor V2 (msdyn_vendor)
+    + Kontakter V2 (msdyn_contactforparties)
+    + Placeringer af CDS-partpostadresser (msdyn_partypostaladdresses)
+    + CDS-postadressehistorik V2 (msdyn_postaladdresses)
+    + Placeringer af CDS-postadresser (msdyn_postaladdresscollections)
+    + Partkontakter V3 (msdyn_partyelectronicaddresses)
 
 2. Kontrollér, at tilknytningerne er fjernet fra **msdy_dualwriteruntimeconfig** tabellen i Dataverse.
 3. Installer [Løsninger til part og globalt adressekartotek for dobbeltskrivning](https://aka.ms/dual-write-gab) fra AppSource.

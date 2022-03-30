@@ -2,7 +2,7 @@
 title: Økonomiske dimensionsopsætninger
 description: I dette emne beskrives økonomiske dimensionsopsætninger, og du kan få tip til optimering af deres brug.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739972"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392930"
 ---
 # <a name="financial-dimension-sets"></a>Økonomiske dimensionsopsætninger
 
@@ -61,6 +61,11 @@ Du kan bruge knappen **Gendan saldi** til at gendanne saldi fra bunden. På denn
 ## <a name="clear-balances"></a>Afstemme saldi
 
 Brug knappen **Afstem saldi** til at fjerne saldi og stoppe eventuelle yderligere opdateringer. Dimensionsopsætningen har ikke længere indflydelse på bogføringsaktiviteterne i Finans.
+
+## <a name="delete-a-dimension-set"></a>Slette en dimensionsgruppe
+
+Du må ikke **slette og genoprette** dimensionssæt som nogen form for løsning af potentielle problemer med saldodataene for et bestemt dimensionssæt. Det er dyrt at genoprette et dimensionssæt. Kontakt kundesupport, hvis du ønsker yderligere hjælp til problemer. 
+
 
 Du kan finde flere oplysninger under [Økonomiske dimensioner](financial-dimensions.md).
 

@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384714"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396543"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -31,6 +31,18 @@ Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Fjernelse af funktion gældende fra 14. marts 2022
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-scripting i Dataadministration
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Understøttelse af XSLT-scripting i Datastyring udfases at forbedre sikkerheden og databeskyttelsen i programmer til finans og drift.  |
+| **Erstattet af en anden funktion?**   | Nej Kunder og softwareleverandører bør overveje at genimplementere deres løsninger baseret på X++-sprog i stedet for XSLT-scripting. |
+| **Produktområder, der er berørt**         | Programmer til finans og drift. |
+| **Installationsindstilling**              | Alle. |
+| **Status**                         | Udfases: Planlagt dato for fjernelse er 14. marts 2022.<br><br>Undtagelse: Kunder, der aktuelt bruger XLST-scripting. De kan fortsætte med at bruge den, indtil de opdaterer til version 10.0.30 eller senere. Kunder med denne undtagelse har modtaget en besked i Meddelelsescenteret i Microsoft 365 Administrationen. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Fjernelse af funktion gældende fra oktober 2021
 

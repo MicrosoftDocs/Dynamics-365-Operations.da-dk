@@ -12,12 +12,12 @@ ms.search.region: Denmark
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b5080f4cdf8b47a7197f6f55ee535a88602c4b9e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5637825854ac822b7789b168add27b8aa86e589d
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985639"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402790"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 
@@ -37,6 +37,7 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Konfigurere elektronisk OIOUBL-fakturering](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Konfigurere indbetalingskortformat](tasks/set-up-payment-slip-format.md)
 - [Dansk Intrastat](emea-dnk-intrastat.md)
+- [Momsopgørelse](emea-dnk-vat-declaration-denmark.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

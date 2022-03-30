@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720414"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396518"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Dette emne opdateres, efterhånden som nye fjernede eller udfasede funktioner do
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning.
 
 > [!NOTE]
-> Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+> Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Fjernede eller udfasede funktioner i Supply Chain Management 10.0.19-udgaven
@@ -52,7 +52,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Gældende fra april 2021, *Dynamics 365 for Finance and Operations – Lagersted* (lagerstedsappen) bliver frarådet og vil ikke blive understøttet efter april 2022. Den er nu erstattet af *mobilappen Lokationsstyring*, som blev frigivet med version 10.0.17 af Supply Chain Management. Den nye app er en komplet erstatning, men bruger samme underliggende struktur, hvilket gør migreringen let. Hvis det er nødvendigt, kan de to apps bruges side om side, så brugerne kan tilpasse sig gradvist, efterhånden som de lærer at bruge den nye app.<br><br>Der er flere oplysninger om den nye mobilapp Lokationsstyring i [Mobilappen Lokationsstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md). |
+| **Årsagen til forældelsen/fjernelsen** | Gældende fra april 2021: *Dynamics 365 for Finance and Operations - Lagersted* (lagerstedsappen) bliver udfaset og vil ikke blive understøttet efter april 2022. Den er nu erstattet af *mobilappen Lokationsstyring*, som blev frigivet med version 10.0.17 af Supply Chain Management. Den nye app er en komplet erstatning, men bruger samme underliggende struktur, hvilket gør migreringen let. Hvis det er nødvendigt, kan de to apps bruges side om side, så brugerne kan tilpasse sig gradvist, efterhånden som de lærer at bruge den nye app.<br><br>Der er flere oplysninger om den nye mobilapp Lokationsstyring i [Mobilappen Lokationsstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md). |
 | **Erstattet af en anden funktion?**   | Ja, erstattet af den nye mobilapp Lokationsstyring. |
 | **Produktområder, der er berørt**         | Supply Chain Management – lagerstedsapp |
 | **Installationsindstilling**              | Cloud og det lokale miljø |
@@ -78,7 +78,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Erstattet af en anden funktion?**   | Ja, Planlægningsoptimering erstatter det eksisterende indbyggede Supply Chain Management-varedisponeringsprogram. |
 | **Produktområder, der er berørt**         | Supply Chain Management – varedisponering |
 | **Installationsindstilling**              | Kun skybaseret. Bemærk, at Planlægningsoptimering ikke understøttes med lokale installationer. |
-| **Status**                         | Forældet. Inden 1. april 2022 vil produktionsscenarier ikke længere være understøttet med det indbyggede Dynamics 365 Supply Chain Management-varedisponeringsprogram. For produktionsscenarier skal kunderne bruge Planlægningsoptimering til varedisponeringsberegninger. Du kan finde flere oplysninger under [Dokumention til Planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md). Kunder med lokale installationer af Dynamics 365 Supply Chain Management kan fortsætte med at bruge Supply Chain Management-varedisponeringsprogrammet til produktionsscenarier efter april 2022. Der kommer dog ikke flere funktionsforbedringer. |
+| **Status**                         | Forældet. Inden 1. april 2022 vil produktionsscenarier ikke længere være understøttet for det indbyggede Supply Chain Management-varedisponeringsprogram. På denne dato stopper Microsoft alle aktive udviklinger i produktionsscenarier for det indbyggede planlægningsprogram, vil ikke frigive nye funktioner og vil kun frigive kritiske rettelser. Efter denne dato skal alle firmaer, der har brug for understøttelse af produktionsscenarier, bruge Planlægningsoptimering til beregningerne af deres varedisponering. Planlægningsoptimering forventes at understøtte produktionsscenarier fuldt ud i oktober 2022. Du kan finde flere oplysninger i [dokumentationen til Planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmaer med lokale installationer af Supply Chain Management kan fortsætte med at bruge det indbyggede varedisponeringsprogram til produktionsscenarier efter april 2022. Der kommer dog ikke flere funktionsforbedringer. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Fjernede eller udfasede funktioner i Supply Chain Management 10.0.11-udgaven
 

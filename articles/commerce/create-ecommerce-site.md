@@ -2,7 +2,7 @@
 title: Oprette et websted for e-handel
 description: I dette emne beskrives de trin og oplysninger, der er nødvendige for at oprette et nyt e-handels-websted i Dynamics 365 Commerce-webstedsgeneratoren.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388205"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402769"
 ---
 # <a name="create-an-e-commerce-site"></a>Oprette et websted for e-handel
 
@@ -70,6 +70,14 @@ Hvis du vil omdøbe dit websted i webstedsgenerator, skal du følge disse trin.
 1. Hvis du vil åbne webstedslistevisning, skal du vælge **Webstedsskifter** øverst til højre og derefter vælge **Administrer websteder**. 
 1. Markér afkrydsningsfeltet ud for det websted, du vil omdøbe, og vælg derefter **Omdøb** på kommandolinjen.
 1. Angiv det nye navn på webstedet i dialogboksen **Nyt navn på websted**, og vælg derefter **OK**. Listen med websteder opdateres, så den viser det nye navn.
+
+## <a name="delete-a-site"></a>Slette et websted
+
+Udfør følgende trin for at slette et websted i webstedsgeneratoren.
+
+1. Hvis du vil åbne webstedslistevisning, skal du vælge **Webstedsskifter** øverst til højre og derefter vælge **Administrer websteder**.
+1. Vælg det websted, du vil slette, og vælg **Slet** på kommandolinjen.
+1. Angiv navnet på webstedet i dialogboksen **Slet \<site name\>**, og vælg derefter **Slet**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

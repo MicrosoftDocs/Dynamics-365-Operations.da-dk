@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344972"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408009"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -58,7 +58,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Funktion | Vist problem | Forklaring | Forventet tilgængelighed |
 | --- | --- | --- | --- |
 | Handlinger | Disponeringsgrupper med handlingsberegning aktiveret: _\#_ | Denne funktion afventer. Aktuelt oprettes handlinger ikke under varedisponering, når planlægningsoptimering er aktiveret, uanset denne indstilling. Hovedformålet med handlinger er at foreslå ændringer af eksisterende ordrer. Vurder, om handlinger anvendes aktivt som en del af dine forretningsprocesser, eller om forsinkelsesoplysningerne for ordrerne er tilstrækkelige. | 2022. april |
-| Basiskalendere | Kalendere, der bruger basiskalender: _\#_ | Denne funktion afventer. Basiskalenderen ignoreres i øjeblikket, når planlægningsoptimering er aktiveret. Vurder, om basiskalenderen skal bruges til dine forretningsprocesser, eller om direkte opsætning i kalendere er tilstrækkelig. | 2022. april | 
+| Basiskalendere | Kalendere, der bruger basiskalender: _\#_ | Denne funktion understøttes nu. | 2022. marts | 
 | Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: _\#_ | Denne funktion afventer. I øjeblikket ignoreres batchdispositionskoder, når planlægningsoptimering er aktiveret. | Oktober 2022 eller senere |
 | Leveringsevne (LE) | Standardindstillinger for ordre med leveringsdatokontrollen angivet til LE: _\#_ | Denne funktion afventer. I øjeblikket ignoreres LE, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022. oktober |
 | Kopiér statisk til dynamisk plan | Kopi af statisk til dynamisk plan er aktiveret på varedisponeringsparametrene. | Planlægningsoptimering kopierer ikke den statiske plan til den dynamiske plan, uanset denne indstilling. Generelt er dette koncept ikke så relevant på grund af hastigheden og den fuldstændige genopretning, som planlægningsoptimering giver. Hvis der bruges to eller flere planer, skal varedisponeringen udløses for hver enkelt plan. | 2022. oktober |

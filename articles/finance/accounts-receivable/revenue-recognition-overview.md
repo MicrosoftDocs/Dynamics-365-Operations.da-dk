@@ -2,7 +2,7 @@
 title: Oversigt over indtægtsføring (indeholder video)
 description: Dette emne indeholder oplysninger om funktionen Indtægtsføring. Denne funktion giver en fleksibel ramme, hvor du kan definere firmaspecifikke regler for genkendelse af både indtægtsprisen og indtægtstidsplanen for ordrer med flere elementer.
 author: kweekley
-ms.date: 11/11/2019
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
+ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982581"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8446172"
 ---
 # <a name="revenue-recognition-overview"></a>Oversigt over indtægtsføring
 
@@ -26,10 +26,7 @@ ms.locfileid: "7982581"
 
 Virksomheder i brancher, der sælger flere elementer, f. eks. produkter, tjenester, abonnementer osv., skal være i stand til at opdele ordrer med flere elementer, så omsætningen kan genkendes på grundlag af en række firmaspecifikke og branchespecifikke retningslinjer.
 
-> [!NOTE]
-> Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
-
-> Indtægtsføring, herunder bundtfunktionalitet, understøttes ikke til brug i Commerce-kanaler (e-handel, POS, callcenter). Varer, der er konfigureret med indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der er oprettet i Commerce-kanaler.
+Indtægtsføring, herunder bundtfunktionalitet, understøttes ikke til brug i Commerce-kanaler (e-handel, POS, callcenter). Varer, der er konfigureret med indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der er oprettet i Commerce-kanaler.
 
 Generelt kan processen til indtægtsføring bruges til at udføre disse opgaver:
 

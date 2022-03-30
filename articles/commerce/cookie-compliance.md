@@ -2,7 +2,7 @@
 title: Cookie-overholdelse
 description: Dette emne beskriver overvejelser om cookie-overholdelse og de standardpolitikker, der er inkluderet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747691"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403141"
 ---
 # <a name="cookie-compliance"></a>Cookieoverholdelse
 
@@ -58,6 +58,7 @@ I følgende tabel vises den aktuelle referenceliste over cookies, der er placere
 | \_msdyn365___aud_0                          | Gemmer segmentværdier, der bruges af mål og kun anvendes, hvis målretning er konfigureret på en side eller et fragment, som en webstedsbruger har anmodet om. Denne cookie placeres kun, når segmentværdierne kommer fra en tredjepartsudbyder af segmentering.      | 7 dage |
 | \_msdyn365___aud_1                           | Gemmer segmentværdier, der bruges af mål og kun anvendes, hvis målretning er konfigureret på en side eller et fragment, som en webstedsbruger har anmodet om. Denne cookie placeres kun, når segmentværdierne kommer fra en tredjepartsudbyder af segmentering.      | 7 dage |
 | \_msdyn365___aud_2                           | Gemmer segmentværdier, der bruges af mål og kun anvendes, hvis målretning er konfigureret på en side eller et fragment, som en webstedsbruger har anmodet om. Denne cookie placeres kun, når segmentværdierne kommer fra en tredjepartsudbyder af segmentering.      | 7 dage |
+| d365gi                                       | Denne cookie gemmer oplysninger om geografisk placering, når der bruges en tredjepartslokationstjeneste.      | 1 dag |
 
 Hvis en bruger vælger sociale medielinks på et websted, spores cookies i nedenstående tabel også i deres browser.
 
@@ -65,17 +66,17 @@ Hvis en bruger vælger sociale medielinks på et websted, spores cookies i neden
 | Domæne                      | Cookie               | Betegnelse                                                  | Kildetekst                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | Synkronisering af LinkedIn-annonce-id                                      | LinkedIn-feed og indsigtskode                                |
-| .linkedin.com               | li_sugr                  | Browseridentifikator                                           | LinkedIn-indsigtskode, hvis IP-adressen ikke er i et angivet land |
+| .linkedin.com               | li_sugr                  | Browseridentifikator                                           | LinkedIn Insight Tag, hvis IP-adressen ikke er i et angivet land/område |
 | .linkedin.com               | BizographicsOptOut       | Angiver frameldingsstatus for tredjepartssporing.              | LinkedIn-gæstekontrolelementer og sider til framelding i branche           |
 | .linkedin.com               | \_guid                    | Browseridentifikator for Google-annoncer.                            | LinkedIn-feed                                                |
 | .linkedin.com               | li_oatml                 | Medlem af indirekte identifikator til konverteringssporing, omdirigering og analyser. | LinkedIn-annoncer og indsigtskoder                                |
 | Forskellige førstepartsdomæner | li_fat_id                | Medlem af indirekte identifikator til konverteringssporing, omdirigering og analyser. | LinkedIn-annoncer og indsigtskoder                                |
-| .adsymptotic.com            | U                        | Browseridentifikator                                           | LinkedIn-indsigtskode, hvis IP-adressen ikke er i et angivet land |
+| .adsymptotic.com            | U                        | Browseridentifikator                                           | LinkedIn Insight Tag, hvis IP-adressen ikke er i et angivet land/område |
 | .linkedin.com                | bcookie                  | Browser-id-cookie                                            | Anmodninger til LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Sikker browser-cookie                                        | Anmodninger til LinkedIn                                         |
 | .linkedin.com               | lang                     | Angiver landestandard og standardsprog.                                 | Anmodninger til LinkedIn                                         |
 | .linkedin.com                | lidc                     | Bruges til ruteplanlægning.                                             | Anmodninger til LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Adobe-målgruppeadministrator-cookie                                                     | Angiv til id-synkronisering                                              |
+| .linkedin.com               | aam_uuid                 | Adobe Audience Manager-cookie                                                     | Angiv til id-synkronisering                                              |
 | .linkedin.com               | \_ga                      | Google Analytics-cookie                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google Analytics-cookie                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analytics-cookie                                             | Google Analytics                                             |

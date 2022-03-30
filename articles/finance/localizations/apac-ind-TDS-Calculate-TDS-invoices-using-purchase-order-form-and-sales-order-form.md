@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d0e6cce8f7a90cd1624e64023a1b51fd02d12152f874e13ce2e5d22af16fe173
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28f83b3d5aa028d819b837350fe69c2a9c9833ea
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782837"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407863"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>Beregne skattefakturaer ved hjælp af formularerne Indkøbsordre og Salgsordre
 
@@ -48,7 +47,7 @@ Dette emne angiver trinnene til beregning af kildeskat (TDS – Tax Deducted at 
 
 7. Vælg **A-skat** for at åbne siden **Midlertidige transaktioner for A-skat**. Få vist følgende felter i øverste rude på siden **Midlertidige transaktioner for A-skat**.
 
-   - **Samlet** **beløb** **af** **A-skat** – Det samlede skattebeløb beregnet for transaktionen for kildeskattegruppen.
+   - **Samlet** **beløb** **af** **A**-**skat** – Det samlede skattebeløb beregnet for transaktionen for kildeskattegruppen.
 
    - **Værdi** – Den samlede procentdel, der bruges til beregning af kildeskat for transaktionen. Den samlede procentdel er baseret på den formel, der er defineret for de kildeskattekoder, som er tilknyttet kildeskattegruppen.
 

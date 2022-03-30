@@ -2,7 +2,7 @@
 title: Oprette en debitorfaktura
 description: En debitorfaktura for en salgsordre er en regning, som er relateret til et salg, og som en organisation giver til en kunde.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087417"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392905"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
@@ -82,6 +82,9 @@ Se salgsordrernes status på listesiden **Alle salgsordrer**.
 Brug denne fremgangsmåde, når en eller flere salgsordrer, der er klar til at blive faktureret, og du vil konsolidere dem i én faktura. 
 
 Du kan vælge flere fakturaer på listesiden **Salgsordre** og derefter bruge **Generer fakturaer** for at sammenflette dem. På siden **Bogføring af faktura** kan du ændre indstillingen **Samleordre** til at opsummere ved ordrenummer (hvor der er flere følgesedler for en enkelt salgsordre) eller efter fakturakonto (hvor der er flere salgsordrer for en enkelt faktura). Brug knappen **Arranger** for at konsolidere salgsordrer til enkelte fakturaer, der er baseret på indstillingen **Samleordre**.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris
+Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har prisoplysninger, ikke på kontoen **Omsætning**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Yderligere indstillinger, der ændrer funktionsmåden for bogføring
 Følgende felter ændrer funktionaliteten af bogføringsprocessen.

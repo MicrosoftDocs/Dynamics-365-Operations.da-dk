@@ -2,19 +2,19 @@
 title: Momsangivelse (Tyskland)
 description: I dette emne beskrives, hvordan du kan konfigurere og generere en forudgående momsopgørelse for Tyskland i det officielle XML-format.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860877"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402797"
 ---
 # <a name="vat-declaration-germany"></a>Momsangivelse (Tyskland)
 
@@ -36,7 +36,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **Momspligtigt salg**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                                                                                                                      | Opslagsresultat                                                                             |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                                                                                                                      | Opslagsresultat                                                                             |
 |-----|----------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | 20  | 81             | Uden kode     | Momspligtigt salg til en momssats på 19 procent.                                                                                                       | 20-TaxableSalesStandard</br>73-BadDebtsWriteOffStandard (81/50) – med minusfortegn             |
 | 21  | 86             | Uden kode     | Momspligtigt salg til en momssats på 7 procent.                                                                                                        | 21-TaxableSalesReduced</br>73-BadDebtsWriteOffReduced (86/50) – med minusfortegn               |
@@ -46,7 +46,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **Momsfrit salg med indgående momsfradrag**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                                                       | Opslagsresultat                       |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                                                       | Opslagsresultat                       |
 |-----|----------------|------------------|-----------------------------------------------------------------------------------|-------------------------------------|
 | 26  | 41             | *Intet momsbeløb*  | Leveringer inden for EU til kunder, der har et moms-id.                       | 26-EUSales                          |
 | 27  | 44             | *Intet momsbeløb*  | Leveringer inden for EU af nye køretøjer til købere, der ikke har et moms-id.    | 27-EUSalesNewVehicles               |
@@ -55,13 +55,13 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **Momsfrit salg uden indgående momsfradrag**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                            | Opslagsresultat                           |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                            | Opslagsresultat                           |
 |-----|----------------|------------------|--------------------------------------------------------|-----------------------------------------|
 | 30  | 48             | *Intet momsbeløb*  | Skattefrit salg uden indgående momsfradrag. | 30-TaxFreeSalesWithoutInputTaxDeduction |
 
 **Fællesskabsanskaffelser**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                                                                                                   | Opslagsresultat                                                    |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                                                                                                   | Opslagsresultat                                                    |
 |-----|----------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | 33  | 91             | *Intet momsbeløb*  | Skattefrit anskaffelse af visse objekter og investeringsguld.                                                    | 33-TaxFreeEUPurchase                                             |
 | 34  | 89             | Uden kode     | Skattepligtig anskaffelse inden for EU til en momssats på 19 %.                                                             | 34-EUPurchaseStandard</br>34-UseTaxEUPurchaseStandard (89/61)        |
@@ -71,7 +71,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **SEKTION – MODTAGER SOM MOMSDEBITOR**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                                                        | Opslagsresultat                                                                                        |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                                                        | Opslagsresultat                                                                                        |
 |-----|----------------|------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | 40  | 46             | 47               | Andre tjenester, der er baseret på resten af community-området.        | 40-BeneficiaryTaxDebtor</br>40-UseTaxBeneficiaryTaxDebtor (46/47/66)                                                                              |
 | 41  | 73             | 74               | Salg, der falder under section 13b (2) nr. 3 af UStG.                               | 41-BeneficiaryTaxDebtorRealEstateTransfer</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
@@ -79,7 +79,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **SEKTION – SUPPLERENDE OPLYSNINGER OM SALG**
 
-| Række | Felt - momsbasis  | Felt - momsbeløb | Description                                                                                                | Opslagsresultat                                                                                    |
+| Række | Felt - momsbasis  | Felt - momsbeløb | Beskrivelse                                                                                                | Opslagsresultat                                                                                    |
 |-----|-----------------|------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | 48  | 42              | *Intet momsbeløb*  | Leveringer fra den første kunde i tilfælde af trekantstransaktioner inden for EU.                   | 48-DeliveriesFirstCustomerEUTriangular                                                           |
 | 49  | 60              | *Intet momsbeløb*  | Momspligtigt salg af den ydelse, som modtageren af tjenesten skylder momsen for. | 49-SalesServicesReverseCharge                                                                    |
@@ -89,7 +89,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **SEKTION – FRADRAGSBERETTIGET INDGÅENDE MOMS**
 
-| Række | Felt - momsbeløb | Description                                                                                                | Opslagsresultat                                                                                                                                                                |
+| Række | Felt - momsbeløb | Beskrivelse                                                                                                | Opslagsresultat                                                                                                                                                                |
 |-----|------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 55  | 66               | Indtast fakturaafgiftsbeløb fra andre firmaer, tjenester og trekantstransaktioner.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/66)</br>74-BadDebtsWriteOffInputTax (66/37) – med minustegn                                                                   |
 | 56  | 61               | Indgående momsbeløb fra anskaffelse af varer inden for EU.                                           | 56-InputTaxEUPurchase 34-UseTaxEUPurchaseStandard (89/61)</br>35-UseTaxEUPurchaseReduced (93/61)</br>36-UseTaxEUPurchaseOtherRates (95/98/61)</br>37-UseTaxEUPurchaseVehicles (94/96/61) |
@@ -102,7 +102,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **SEKTION – ANDRE MOMSBELØB**
 
-| Række | Felt - momsbeløb | Description                                                                                                                                                                                                                                                         | Opslagsresultat                                 |
+| Række | Felt - momsbeløb | Beskrivelse                                                                                                                                                                                                                                                         | Opslagsresultat                                 |
 |-----|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | 64  | 65               | Moms på grund af en ændring i form af moms og yderligere moms på skattebetalinger på grund af ændring af momssatsen.                                                                                                                                        | 64-AdditionalTaxDueChangeTaxRate              |
 | 65  | 69               | Ugyldige eller tilladte momsbeløb, der er vist på fakturaer, samt momsbeløb, der skyldes i henhold til section 6a (4) sætning 2, section 17 (1) sætning 7 eller section 25b (2) i UStG, eller som skyldes af et outsourcet firma eller lagerchef. | 65-TaxDecreaseCorrection                      |
@@ -111,7 +111,7 @@ Den forudgående momsopgørelse i Tyskland indeholder følgende oplysninger.
 
 **SEKTION – SUPPLERENDE OPLYSNINGER OM REDUKTIONER**
 
-| Række | Felt - momsbasis | Felt - momsbeløb | Description                                                            | Opslagsresultat                                                                                                                                                                                                    |
+| Række | Felt - momsbasis | Felt - momsbeløb | Beskrivelse                                                            | Opslagsresultat                                                                                                                                                                                                    |
 |-----|----------------|------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 73  | 50             | \-               | Reduktion af momsgrundlaget på linje 20 til og med 24.                      | 73-BadDebtsWriteOffStandard (81/50)</br>73-BadDebtsWriteOffReduced (86/50)</br>73-BadDebtsWriteOffOtherRates (35/36/50)</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50)</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50) |
 | 74  | \-             | 37               | Reduktion af de fradragsberettigede indgående momsbeløb på linje 55, 59 og 60. | 74-BadDebtsWriteOffInputTax (66/37)</br>74-BadDebtsWriteOffInputTaxAverageRates (63/37)</br>74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37)                                                                     |
@@ -164,6 +164,9 @@ Du kan finde flere oplysninger om, hvordan du konfigurerer registreringskategori
 
 Hvis der automatisk skal oprettes en momsopgørelse, skal du knytte momskoder i programmet og opslaget resulterer i ER-konfigurationen.
 
+> [!NOTE]
+> Vi anbefaler, at du aktiverer funktionen **Brug programspecifikke parametre fra tidligere versioner af ER-formater** i arbejdsområdet **Funktionsstyring**. Når denne funktion er aktiveret, anvendes parametre, der er konfigureret for den tidligere version af et ER-format, automatisk for den senere version af samme format. Hvis denne funktion ikke er aktiveret, skal du udtrykkeligt konfigurere programspecifikke parametre for hver enkelt formatversion. Funktionen **Brug programspecifikke parametre fra tidligere versioner af ER-formater** er tilgængelig i arbejdsområdet **Funktionsstyring** fra og med Finans version 10.0.23. Du kan finde flere oplysninger om, hvordan du konfigurerer parametrene for et ER-format for hver juridiske enhed, i [Konfigurere parametrene for et ER-format pr. juridisk enhed](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
 Benyt følgende fremgangsmåde for at definere, hvilke momskoder der genererer hvilke felter i momsopgørelsen.
 
 1. Gå til **Arbejdsområder** > **Elektronisk rapportering**, og vælg **Rapporteringskonfigurationer**.
@@ -171,7 +174,7 @@ Benyt følgende fremgangsmåde for at definere, hvilke momskoder der genererer h
 3. Vælg **opslag** i **rapportfeltet i oversigtspanelet Opslag** på siden **Applikationsspecifikke parametre**.
 4. I oversigtspanelet **Betingelser** kan du angive følgende felter for at tilknytte momskoder og rapportfelter.
 
-    | Felt                  | Description                                                                                                                                                                                                                                                                                                          |
+    | Felt                  | Beskrivelse                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Opslagsresultat          | Vælg værdien i rapportfeltet. Du kan finde flere oplysninger om værdierne og deres tilknytning til momsopgørelsesrækker i [oversigtsafsnittet for momsopgørelse](#vat-declaration-overview) tidligere i dette emne.                                                                                               |
     | Skattekode               | Vælg den momskode, der skal tilknyttes rapportfeltet. Bogførte momsposteringer, der bruger den valgte momskode, samles i det relevante momsfelt. Det anbefales, at du adskille momskoder på en sådan måde, at en momskode kun genererer beløb i én opgørelsesboks. |
@@ -316,9 +319,9 @@ Følg disse trin for at konfigurere elektroniske meddelelser, der indsamler data
 
 5. I gitteret til **opsætning af datakilder** skal du tilføje en linje for hver yderligere juridisk enhed, der skal medtages i rapporteringen. For hver ny linje skal du angive følgende felter.
 
-    | Felt                  | Description                                                                                                                   |
+    | Felt                  | Beskrivelse                                                                                                                   |
     |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-    | Name                   | Angiv en værdi, der kan hjælpe dig med at forstå, hvor denne post stammer fra. Du kan f.eks. angive **momsbetaling for Datterselskab 1**. |
+    | Navn                   | Angiv en værdi, der kan hjælpe dig med at forstå, hvor denne post stammer fra. Du kan f.eks. angive **momsbetaling for Datterselskab 1**. |
     | Typen af meddelelseselement      | Vælg **momsretur**. Denne værdi er den eneste værdi, der er tilgængelig for alle poster.                                    |
     | Kontotype           | Markér **Alt**.                                                                                                               |
     | Navn på overordnet tabel      | Angiv **TaxReportVoucher** for alle poster.                                                                             |

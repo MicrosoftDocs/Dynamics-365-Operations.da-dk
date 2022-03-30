@@ -1,23 +1,23 @@
 ---
 title: Oprette en fritekstfaktura
 description: Dette emne forklarer, hvordan du opretter fritekstfakturaer.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763280"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392879"
 ---
 # <a name="create-a-free-text-invoice"></a>Oprette en fritekstfaktura
 
@@ -68,6 +68,7 @@ Dette emne forklarer, hvordan du opretter fritekstfakturaer. I proceduren skal d
 
     * Du kan ændre tidspunktet for udskrivning af fakturaer. Vælg **Aktuel** for at udskrive hver faktura, når den opdateres. Vælg **Efter** for at udskrive alle fakturaer, der er blevet opdateret.
     * Hvis du vil ændre, hvordan debitors kreditmaksimum kontrolleres, før fakturaen bogføres, kan du ændre værdien i feltet **Kreditmaksimumtype**.
+    * Du kan vælge at stoppe bogføringen af fritekstfakturaer, når der opstår en fejl, under fanen **Opdateringer** på siden **Debitorparametre** (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** til **Stop bogføring af fritekstfakturaer ved første fejl** for at standse bogføringen af fritekstfakturaer, når der opstår fejl. Hvis der bogføres i et batch, stopper en fejl bogføringsprocessen, og batchstatus angives til **Fejl**. Hvis denne indstilling ikke er valgt, springes en faktura med bogføringsfejl over i bogføringsprocessen, og der bogføres fortsat yderligere fakturaer. Hvis der bogføres i et batch, forhindrer en bogføringsfejl ikke, at andre fakturaer bogføres. Batchstatussen vil være **Afsluttet**. En detaljeret rapport over bogføringsprocessen vil være tilgængelig til gennemsyn i batchjobhistorikken.
     * Vælg **Ja** i denne indstilling for at udskrive fakturaen.
     * Vælg **Ja** i denne indstilling for at bogføre fakturaen. Du kan udskrive fakturaen uden at bogføre den.
 
@@ -82,6 +83,12 @@ Når du har kopieret linjerne, kan du derefter redigere oplysningerne efter beho
 Du kan oprette en fritekstfaktura fra en skabelon. Når du vælger **Ny ud fra skabelon** under fanen **Faktura**, kan du vælge et skabelonnavn og debitorkontoen for den nye fritekstfaktura. Standardværdier, f.eks. betalingsbetingelserne og betalingsmåden, kan udfyldes automatisk fra debitoren, eller du kan bruge de værdier, der blev gemt i skabelonen.
 
 Der oprettes en ny fritekstfaktura, og du kan redigere værdierne efter behov.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Nulstiller arbejdsgangsstatus for fritekstfakturaer fra Uoprettelig til Kladde
+En arbejdsgangsforekomst, der er stoppet på grund af en uoprettelig fejl, har arbejdsgangsstatussen **Uoprettelig**. Når status for en arbejdsproces for en kreditorfritekstfaktura er **Uoprettelig**, kan du nulstille den til **Kladde** ved at vælge **Tilbagekald** i arbejdsprocessens handlinger. Derefter kan du redigere fritekstfakturaen for debitoren. Denne funktion er tilgængelig, hvis parameteren **Nulstil kladdestatus for fritekstfakturaer fra Uoprettelig til Kladde** på siden **Funktionsstyring** er aktiveret.
+
+Du kan bruge siden **Arbejdsgangshistorik** for at nulstille arbejdsgangsstatussen til **Kladde**. Du kan åbne denne side fra **Fritekstfaktura** eller fra **Almindelig > Forespørgsler > Arbejdsgang**. Hvis du vil nulstille arbejdsgangsstatussen til **Kladde**, skal du vælge **Tilbagekald**. Du kan også nulstille arbejdsgangsstatussen til **Kladde** ved at vælge handlingen **Tilbagekald** på siden **Fritekstfaktura** eller **Alle fritekstfakturaer**. Når arbejdsgangsstatus er nulstillet til **Kladde**, bliver den tilgængelig for redigering på siden **Fritekstfaktura**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

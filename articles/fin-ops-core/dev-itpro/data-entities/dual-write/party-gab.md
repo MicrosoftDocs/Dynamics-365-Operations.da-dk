@@ -2,19 +2,19 @@
 title: Part og globalt adressekartotek
 description: I dette emne beskrives funktionen til part og globalt adressekartotek for dobbeltskrivning.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060326"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407759"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -22,7 +22,7 @@ ms.locfileid: "8060326"
 
 
 
-*Part* og *globalt adressekartotek* er begreber i Finans- og driftsprogrammer. En part kan være en organisation eller en person. Det er en god ide at gemme og administrere egenskaberne for en part globalt, f.eks. navn, sprog, kontakter og adresser. Når en egenskabsværdi ændres ét sted, afspejles ændringen derefter alle de steder, hvor parten er involveret.
+*Part* og *globalt adressekartotek* er begreber i programmer til finans og drift. En part kan være en organisation eller en person. Det er en god ide at gemme og administrere egenskaberne for en part globalt, f.eks. navn, sprog, kontakter og adresser. Når en egenskabsværdi ændres ét sted, afspejles ændringen derefter alle de steder, hvor parten er involveret.
 
 ## <a name="party"></a>Part
 
@@ -46,7 +46,7 @@ Følgende illustration viser datamodellen for partsmodellen:
 > [!TIP]
 > Når du forsøger at oprette en ny kontopost, skal du bruge feltet **Part** til at søge efter posten ved hjælp af navnet. Hvis du finder posten, behøver du således kun vælge posten. Derefter udfylder systemet automatisk alle data fra parten. Du behøver ikke at angive alle krævede felter manuelt. Denne funktion er standard på siderne **Konto**, **Kontakt** og **Leverandør**.
 
-Dobbeltskrivning understøtter ikke alle partroller i Finans- og driftsapps. Du kan få vist en komplet liste over partroller i [Oversigten over globalt adressekartotek](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Dobbeltskrivning understøtter ikke alle partroller i programmer til finans og drift. Du kan få vist en komplet liste over partroller i [Oversigten over globalt adressekartotek](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Globalt adressekartotek
 
@@ -75,7 +75,7 @@ I tabellen **Kontakt** kan du gemme følgende typer rækker.
 |----------|-------------|
 | En person, der er en kunde (f.eks. en salgbar kontakt eller B2C-kunde) | En stribet kontaktpost, hvor feltet **Virksomhed** ikke er tomt, og feltet **Er kunde** er angivet til **Ja**. |
 | En person, der er leverandør (f.eks. en enkeltmandsvirksomhed, der er leverandør) | En stribet kontaktpost, hvor feltet **Virksomhed** ikke er tomt, og feltet **Er leverandør** er angivet til **Ja**. |
-| En person, der både er kunde og leverandør | En stribet kontaktpost, hvor feltet **Virksomhed** ikke er tomt, feltet **Er kunde** er angivet til **Ja**, og feltet **Er leverandør** er angivet til **Ja**. En person kan både være producent af ét produkt og en forbruger af et andet produkt. Både Finans- og driftsapps og dobbeltskrivning understøtter denne relation. |
+| En person, der både er kunde og leverandør | En stribet kontaktpost, hvor feltet **Virksomhed** ikke er tomt, feltet **Er kunde** er angivet til **Ja**, og feltet **Er leverandør** er angivet til **Ja**. En person kan både være producent af ét produkt og en forbruger af et andet produkt. Både programmer til finans og drift og dobbeltskrivning understøtter denne relation. |
 | En person, der er kontaktperson for en organisation, men ikke er kunde eller leverandør | En ikke-stribet kontaktpost, hvor feltet **Virksomhed** er tomt, feltet **Er kunde** er angivet til **Nej**, og feltet **Er leverandør** er angivet til **Nej**. |
 
 ## <a name="contact-for-party-table"></a>Tabellen Kontakt for part
@@ -142,7 +142,7 @@ Du kan bruge knappen **Ny elektronisk adresse** over gitteret til at oprette så
 Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versioner fjernes alle felter med postadresser og elektroniske adresser fra andre faner, f.eks. fanerne **Oversigt** og **Detaljer**. De kontaktoplysninger, der vises under fanen **Detaljer**, er skrivebeskyttede kopier af den primære elektroniske adresse, f.eks. primær telefon, primær email, primær telefon, primær fax og primært Twitter-id. Under kvalificeringsprocessen for potentielle kunder kan du både angive et firmatelefonnummer og et mobiltelefonnummer. Firmatelefonnummeret betragtes som den primære telefon, hvis **IsNøgle=No**, og mobiltelefonnummeret betragtes som den sekundære telefon, hvis **IsMobile=Yes**.
 
 > [!TIP]
-> Brug fanerne **Adresser** og **Elektroniske adresser** i formularerne **Konto** og **Kontakt** til at administrere postadresser og elektroniske adresser. Derved sikres det, at adressedata synkroniseres med Finans- og driftsapps.
+> Brug fanerne **Adresser** og **Elektroniske adresser** i formularerne **Konto** og **Kontakt** til at administrere postadresser og elektroniske adresser. Derved sikres det, at adressedata synkroniseres med programmer til finans og drift.
 
 ## <a name="setup"></a>Konfiguration
 
@@ -226,11 +226,11 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
     ![Dubletregel for kontakter.](media/duplicate-rule-2.PNG)
 
-11. Hvis du er en eksisterende bruger af dobbeltskrivning, skal du følge instruktionerne i [Opgrader til model for part og globalt adressekartotek](upgrade-party-gab.md) og opgradere dine data.
+11. Hvis du er en eksisterende bruger af dobbeltskrivning, skal du følge instruktionerne i [Opgrader til model for part og globalt adressekartotek](upgrade-party-gab.md) og opgradere dine data. **Fortsæt ikke til trin 12 uden at fuldføre dette trin.** Hvis du er ny bruger af dobbeltskrivning, skal du gå til trin 12.
 
-12. Kør tilknytninger i følgende rækkefølge. Hvis du får vist en fejl, der viser"Projektvalidering mislykkedes. Manglende destinationsfelt...", skal du åbne tilknytningen og vælge **Opdater tabeller**. Kør derefter tilknytningen.
+12. Hvis du er en eksisterende bruger af dobbeltskrivning, skal du fuldføre trin 11, og derefter kan du køre tilknytningerne i følgende rækkefølge. Hvis du er en ny kunde med dobbeltskrivning, kan du fortsætte direkte. Hvis du får vist en fejlmeddelelse om, at "Projektvalidering mislykkedes. Manglende destinationsfelt...", skal du åbne tilknytningen og vælge **Opdater tabeller** og derefter køre tilknytningen.
 
-    Finans- og driftsapp | Customer Engagement-app  
+    Program til finans og drift | Customer Engagement-app  
     ----------------------------|------------------------
     [CDS-parter](mapping-reference.md#220) | msdyn_parties
     [Lokaliteter for CDS-postadresse](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
 En samling af tabeltilknytninger arbejder sammen under interaktion med part og globalt adressekartotek, som vist i følgende tabel.
 
-| Finans- og driftsapp | Customer Engagement-app | Beskrivelse |
+| Program til finans og drift | Customer Engagement-app | Beskrivelse |
 |----------------------------|-------------------------|-------------|
 | [Titler på kontaktpersoner](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Debitorer V3](mapping-reference.md#101) | konti |
@@ -295,10 +295,10 @@ Du kan finde flere oplysninger i [referencen til tilknytning af dobbeltskrivning
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
-+ Når du opretter en kunde sammen med adressen og gemmer den, synkroniseres adressen muligvis ikke med tabellen **Adresse** i Finans- og driftsapps. Det skyldes et problem med rækkefølge på platformen for dobbeltskrivning. En løsning er først at oprette kunden og derefter gemme. Tilføj derefter adressen.
-+ Når en kundepost har en primær adresse i et apps, og du opretter en ny kontakt for den pågældende kunde, arver kontaktposten en primær adresse fra den tilknyttede kundepost i Finans- og driftsapps. Det sker også for leverandørkontakten. Dataverse understøtter ikke denne funktionsmåde i øjeblikket. Hvis dobbeltskrivning er aktiveret, synkroniseres en kundes kontakter, der er nedarvet med en primær adresse fra Finans- og driftsappen, med Dataverse sammen med adressen.
++ Når du opretter en kunde sammen med adressen og gemmer den, synkroniseres adressen muligvis ikke med tabellen **Adresse** i programmer til finans og drift. Det skyldes et problem med rækkefølge på platformen for dobbeltskrivning. En løsning er først at oprette kunden og derefter gemme. Tilføj derefter adressen.
++ Når en kundepost har en primær adresse i et apps, og du opretter en ny kontakt for den pågældende kunde, arver kontaktposten en primær adresse fra den tilknyttede kundepost i programmer til finans og drift. Det sker også for leverandørkontakten. Dataverse understøtter ikke denne funktionsmåde i øjeblikket. Hvis dobbeltskrivning er aktiveret, synkroniseres en kundes kontakter, der er nedarvet med en primær adresse fra programmet til finans og drift, med Dataverse sammen med adressen.
 + Elektroniske adresser, der er angivet under fanen for elektroniske adresser i formularerne **Konto**, **Kontakt** og **Leverandør** kommer fra tabellen `msdyn_partyelectronicaddress`. Disse oplysninger føres ikke til tilknyttede transaktioner som f.eks. salgsordre, tilbud og indkøbsordre. Vi planlægger at løse dette problem trinvist i næste versioner. De eksisterende data i de elektroniske adressefelter på kontoen og kontaktposterne vil fortsat fungere for transaktioner som f.eks. salgsordre, tilbud og indkøbsordre.
-+ I Finans- og driftsapps kan du oprette en kontaktpost fra formularen **Tilføj kontakt**. Når du forsøger at oprette en ny kontakt fra formularen **Vis kontakt**, mislykkes handlingen. Dette er et kendt problem.
++ I programmer til finans og drift kan du oprette en kontaktpost fra formularen **Tilføj kontakt**. Når du forsøger at oprette en ny kontakt fra formularen **Vis kontakt**, mislykkes handlingen. Dette er et kendt problem.
 
     ![Kendt problem med Tilføj kontakt.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Du kan finde flere oplysninger i [referencen til tilknytning af dobbeltskrivning
 
     ![Kendt problem med adresse.](media/party-gab-address-issue.png)
 
-+ Du kan ikke angive en fremdateret postadresse ved hjælp af en Finans- og driftsapp med dobbeltskrivning, da Dataverse ikke understøtter datogyldighed. Hvis du angiver en fremdateret postadresse ved hjælp af en Finans- og driftsapp, synkroniseres den fuldstændigt med Dataverse, og du vil straks kunne se adressen på brugergrænsefladen. Opdateringer af denne post resulterer i en fejl, da posten er fremdateret og ikke aktuel i Finans- og driftsappen.
++ Du kan ikke angive en fremdateret postadresse ved hjælp af et program til finans og drift med dobbeltskrivning, da Dataverse ikke understøtter datogyldighed. Hvis du angiver en fremdateret postadresse ved hjælp af et program til finans og drift, synkroniseres den fuldstændigt med Dataverse, og du vil straks kunne se adressen på brugergrænsefladen. Opdateringer af denne post resulterer i en fejl, da posten er fremdateret og ikke aktuel i programmer til finans og drift.

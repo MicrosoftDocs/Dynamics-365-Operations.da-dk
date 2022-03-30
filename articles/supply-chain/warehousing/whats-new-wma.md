@@ -2,7 +2,7 @@
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418634"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20190"></a>Version 2.0.19.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Har forbedret det generiske dataforespørgselsflow.
+- Har forbedret problemet med uregelmæssigheder på siderne **Arbejdsliste** og **Vareforespørgsel**.
+- Reduceret batteriforbrug.
+- Fjernede grænsen i antallet af felter til arbejdskort.
+- Justeret højden på arbejdskort, så de alle har samme størrelse, uanset antallet af felter i hvert kort.
+- Løst et problem, hvor mellemrum i stregkoder blev fjernet.
+- Tilføjet indstillingen **Knaptypografi**, som giver dig mulighed for at skifte mellem visning af knapper og visning af skyder på alle typer enheder.
+- Har løst forskellige problemer, der kunne få appen til at gå ned.
+- Fokuserer automatisk på det første tekstfelt på brugerdefinerede sider.
+- Forbedringer af tilgængelighedsfunktioner i forbindelse med lysstyrke, kontrast, fortælling og manglende pladsholdertekster.
 
 ## <a name="version-20170"></a>Version 2.0.17.0
 
