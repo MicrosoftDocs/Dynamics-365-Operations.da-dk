@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (februar)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (januar)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -410,17 +408,29 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
                 - name: Omplacering af indtægtsføring - scenarie 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
-            - name: Fakturering af abonnement
+            - name: Abonnementsfakturering
               items:
-                - name: Oversigt over faktureringsabonnement
+                - name: Oversigt over abonnementsfakturering
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Konfigurere faktureringsplaner
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Tilbagevendende kontraktfakturering
+                  items:
+                    - name: Opret faktureringstidsplaner
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Kopiere en faktureringstidsplan
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Milepælsfakturering
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Afslut faktureringstidsplaner
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Udskydelser af indtægter og udgifter
+                  items: null
+                - name: Indtægtsfordeling af flere varer
+                  items: null
             - name: Betalinger og udligninger
               items:
                 - name: Oversigt over debitorbetalinger
                   href: cash-bank-management/tasks/customer-payment-overview.md
-                - name: Centraliserede debitorbetalinger
+                - name: Centraliserede betalinger for debitor
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Deponere debitorbetalinger
                   href: accounts-receivable/tasks/deposit-customer-payments.md
@@ -1443,11 +1453,11 @@
                             - name: Konfigurere en SharePoint-kanal
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Konfigurere og bruge elektronisk fakturering med Finance og Supply Chain Management
-                          items: null
-                        - name: Aktivere og konfigurere integration med elektronisk fakturering
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurere parametre til elektronisk fakturering
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Aktivere og konfigurere integration med elektronisk fakturering
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Konfigurere parametre til elektronisk fakturering
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Arbejde med elektronisk fakturering
                           items:
                             - name: Indsende elektroniske dokumenter til elektronisk fakturering
@@ -1532,6 +1542,10 @@
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Rapportering i Finland
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Økonomisk rapportering
                           items:
                             - name: Momsopgørelse
@@ -1546,6 +1560,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-listesystem
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Rapportering i Norge
+                          items:
+                            - name: Momsopgørelse
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Rapportering i Spanien
                           items:
                             - name: 'Direkte levering af momsoplysninger (Suministro Inmediato de Información del IVA, SII)'
@@ -1564,10 +1582,6 @@
                           items:
                             - name: Momsopgørelse
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Rapportering for Norge
-                          items:
-                            - name: Momsopgørelse
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktivere momsberegning for flytteordre
                       items:
                         - name: Understøttelse af momsfunktion til flytteordrer
@@ -1694,9 +1708,7 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Emballagegebyrer
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Momsopgørelse
-                  href: localizations/emea-aut-vat-statement-details.md
-                - name: 'Servicerapport, der involverer udlandet'
+                - name: Servicerapport på tværs af grænser
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Østrigsk Intrastat
                   href: localizations/emea-aut-intrastat.md
@@ -2021,8 +2033,6 @@
                 - name: 'Opdatere, hvordan beløb vises på rapporter og dokumenter'
                   href: localizations/emea-amount-printing-forms.md
                 - name: Momsopgørelse
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: Momsopgørelse (Den Tjekkiske Republik)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Tjekkisk Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Dansk Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: Momsopgørelse
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egypten
               items:
                 - name: Oversigt over Egypten
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Finsk Intrastat
                   href: localizations/emea-fin-intrastat.md
+                - name: Momsopgørelse
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Frankrig
               items:
                 - name: Oversigt for Frankrig
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Momsopgørelse
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: Elektronisk overførsel for momsangivelse (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Momsopgørelse
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Rapport om elektroniske fakturaer til kunder
                   href: localizations/emea-deu-e-invoices.md
                 - name: Kladdelisterapport
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU-listesystem
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: Momsopgørelse
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungarn
               items:
                 - name: Oversigt for Ungarn
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: 'Importservices, der har GST'
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Fordeling af gebyrer på registreringsseddelside for importordrer
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: 'Eksportere varer, der er momsfrie'
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: 'Eksportere services, der er momsfrie'
@@ -3112,21 +3122,17 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Registreringsnumre for kreditorer
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Holland
+            - name: Nederlandene
               items:
                 - name: Oversigt for Nederlandene
                   href: localizations/netherlands.md
-                - name: Momsopgørelse
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektroniske momsangivelser (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Revisionsfil (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsangivelse (Nederlandene)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Hollandsk Intrastat
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: EU-listesystem
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3538,9 +3544,9 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: Importere betalingsformater
                   href: localizations/emea-swe-payment-formats-import.md
-                - name: Momsafregningsrapport for Sverige
+                - name: Momsbetalingsrapport for Sverige
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Momsopgørelse for Sverige
+                - name: Momsopgørelse
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svensk Intrastat
                   href: localizations/emea-swe-intrastat.md

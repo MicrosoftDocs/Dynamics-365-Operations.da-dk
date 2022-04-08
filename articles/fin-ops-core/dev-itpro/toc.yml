@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platformsopdateringer til version 10.0.24 (februar 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platformsopdateringer til version 10.0.23 (januar 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Programmer til finans og drift i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
+            - name: 'Data og metadata, der er gemt i Azure Data Lake'
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: Gøre enhedslageret tilgængeligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
             - name: 'Forretningshændelser, der genereres ved eksport til Azure Data Azure-servicen (forhåndsversion)'
@@ -410,6 +410,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Genbruge den samme AD FS-forekomst til flere miljøer
                       href: deployment/onprem-reuseadfs.md
+                    - name: Opgradere Windows Server på dine Microsoft Dynamics 365 Finance + Operations (on-premises)-miljøer
+                      href: deployment/onprem-upgrade-os.md
                     - name: Opgradere SQL Server-forekomst af Microsoft Dynamics 365 Finance + Operations (on-premises)-miljøer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Understøttede webbrowsere
+                  href: lifecycle-services/web-browsers.md
                 - name: RESTful API'er
                   items:
                     - name: Starte og stoppe miljøer
@@ -1490,6 +1494,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Opgradere parameterfilerne
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
+            - name: Prøvetilstand uden Azure DevOps
+              href: perf-test/rsat/rsat-trial-without-devops.md
             - name: Regression Suite Automation Tool-selvstudium
               href: perf-test/rsat/rsat-tutorial.md
             - name: 'Konfigurere brugere, der ikke er administratorer'
