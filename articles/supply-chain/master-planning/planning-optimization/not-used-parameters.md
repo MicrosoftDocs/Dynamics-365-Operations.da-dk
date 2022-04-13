@@ -1,22 +1,22 @@
 ---
 title: Parametre, der ikke bruges af planlægningsoptimering
 description: Dette emne viser de parametre, som planlægningsoptimering i øjeblikket ikke overvejer under driften.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408224"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469108"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametre, der ikke bruges af planlægningsoptimering
 
@@ -65,18 +65,6 @@ Planlægningsoptimering bruger ikke følgende parametre eller indstillinger på 
   - **Brug den angivne stykliste- eller formelversion** – Afventer understøttelse af *Formelversioner med sam-/biprodukt*.
   - **Brug den angivne ruteversion** – Afventer understøttelse af *Efterspørgsel, der har defineret specifikke stykliste- eller rutekrav*.
 
-- Oversigtspanelet **Handlinger**:
-
-  - **Handlingsmeddelelse** – Afventer understøttelse af *Handlinger*.
-  - **Handlingstidshorisont** – Afventer understøttelse af *Handlinger*.
-  - **Udskyd margen** – Afventer understøttelse af *Handlinger*.
-  - **Fremskynd margen** – Afventer understøttelse af *Handlinger*.
-  - **Basisdato** – Afventer understøttelse af *Handlinger*.
-  - **Fremskynd** – Afventer understøttelse af *Handlinger*.
-  - **Udskyd** – Afventer understøttelse af *Handlinger*.
-  - **Nedskriv** – Afventer understøttelse af *Handlinger*.
-  - **Opskriv** – Afventer understøttelse af *Handlinger*.
-  - **Afledte handlinger** – Afventer understøttelse af *Handlinger*.
 
 - Oversigtspanelet **Andet**:
 
@@ -149,7 +137,6 @@ Planlægningsoptimering bruger ikke følgende parametre eller indstillinger på 
   - **Hovedplan** – Afventer yderligere understøttelse af *Prognose*.
   - **Kapacitet** – Afventer understøttelse af *Planlægning*.
   - **Kontinuitetsplan** – Afventer understøttelse af *Kontinuitetsplanlægning*.
-  - **Handlingsmeddelelse** – Afventer understøttelse af *Handlinger*.
   - **Beregnede forsinkelser** – Afventer yderligere understøttelse af *Beregnede forsinkelser*.
   - **Rækkefølge** – Afventer understøttelse af *Produktion*.
 

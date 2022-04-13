@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062105"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524459"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
@@ -41,15 +41,17 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bogfør | [Angive/tilsidesætte disponibelt antal](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bogfør | [Oprette én reservationshændelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bogfør | [Oprette flere reservationshændelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Bogfør | [Oprette én planlagt ændring af disponibelt antal](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Bogfør | [Oprette flere planlagte ændringer af disponibelt antal](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hent | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
-
-Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > {environmentId}-delen af stien er miljø-id'et i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Masse-API'en kan maksimalt returnere 512 poster for hver anmodning.
+
+Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Find slutpunktet i overensstemmelse med Lifecycle Services-miljøet
 
@@ -517,6 +519,9 @@ Parameteren `groupByValues` skal følge din konfiguration til indeksering. Du ka
 
 Parameteren `returnNegative` bestemmer, om resultaterne indeholder negative poster.
 
+> [!NOTE]
+> Hvis du har aktiveret funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT), kan forespørgslen også indeholde den booleske `QueryATP`-parameter, der bestemmer, om forespørgselsresultaterne omfatter DTT-oplysninger. Du kan finde flere oplysninger og eksempler i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md).
+
 Følgende er et eksempel på brødtekst.
 
 ```json
@@ -572,5 +577,9 @@ Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er n
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Disponibel til tilsagn
+
+Du kan konfigurere lagersynlighed, så du kan planlægge fremtidige ændringer af disponibelt antal og beregne DTT-mængder. DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af DTT-beregningen kan øge ordreopfyldningsfunktionaliteten væsentligt. Du kan få oplysninger om, hvordan du aktiverer denne funktion, og hvordan du bruger lagersynlighed via API'en, når funktionen er aktiveret, i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

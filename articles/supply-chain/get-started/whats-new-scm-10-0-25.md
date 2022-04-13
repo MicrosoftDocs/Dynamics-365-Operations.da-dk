@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.25.
 author: kamaybac
 ms.date: 03/14/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 26f67be72948e33738cf805b541d3c7e701f8dba
-ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
+ms.openlocfilehash: 27f3233ebb3363abcbfc5b98b3786865fa32366c
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "8414114"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462433"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management-prøveversionen af version 10.0.25. Denne version har et build-nummer på 10.0.1149 og er tilgængelig som følger:
+I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.25. Denne version har et build-nummer på 10.0.1149 og er tilgængelig som følger:
 
 - **Forhåndsversion:** Februar 2022
 - **Generel tilgængelighed af version (selvopdatering):** Marts 2022

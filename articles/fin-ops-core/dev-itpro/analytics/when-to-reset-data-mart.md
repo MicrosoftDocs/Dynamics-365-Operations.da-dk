@@ -2,7 +2,7 @@
 title: Ofte stillede spørgsmål om nulstilling af datacenter
 description: Dette emne indeholder svar på nogle af de ofte stillede spørgsmål om nulstilling af datacenter.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119506"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466405"
 ---
 # <a name="data-mart-resets-faq"></a>Ofte stillede spørgsmål om nulstilling af datacenter
 
@@ -47,10 +47,14 @@ Hvis en eller flere af følgende forhold gælder for din situation, kan din orga
 Her er nogle af de situationer, hvor vi ikke anbefaler, at du nulstiller datacenteret:
 
 - Du har problemer med ydeevnen af dataintegration.
+- Din integration af Financial Reporter er ikke aktiveret. 
+
+    - Det betyder, at finansdata ikke længere synkroniseres til dit Financial Reporting-datacenter. Din Financial Reporter indeholder muligvis ikke opdaterede tal til dine regnskabsrapporter. Dette sker typisk, hvis du ikke har brugt Financial Reporter i lang tid.
+    - Du bliver bedt om at aktivere integration ved at nulstille datacenteret. Du kan fortsætte ved at vælge **Ja**. Du kan også vælge at nulstille datacenteret på et senere tidspunkt. Når integrationen er aktiveret, synkroniseres dine finansdata igen i Financial Reporter. 
 - Du har et tilbagevendende nulstillingsmønster af en af følgende årsager:
 
     - **Manglende eller uventede data i rapporten** – Hvis du bemærker, at der mangler data, skal du åbne en supportanmodning hos Microsoft for at gennemse rapportformatet og eventuelle problemer med datasynkronisering.
-    - **Låst integrationstilstand**
+    - **Låst integrationstilstand** – Hvis du bemærker, at integrationsstatussen ikke kører, kan det skyldes en stor mængde transaktioner i systemet. Denne tilstand løser sig selv. Hvis du bemærker, at intregrationsstatussen er låst i mere end fire timer, skal du åbne en supportanmodning hos Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Hvis jeg nulstiller datacenteret, mister jeg så rapporter, som jeg allerede har udarbejdet?
 

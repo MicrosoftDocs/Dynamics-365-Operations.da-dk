@@ -1,21 +1,21 @@
 ---
 title: Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 description: Dette emne indeholder oplysninger om frigivelsesprocessen og frigivelseshistorikken for Planlægningsoptimering.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 673543ff2c9abefbca0529f35ce20bb26156acc4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407838"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469695"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,7 +33,7 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdatoer |
 |---|---|---|
-| <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.<p>Vedligeholdelse af centraliseret kalender for planlægningsoptimering<p>Forslag til planlægningsoptimering for at optimere eksisterende forsyning | Der kræves ingen funktionsstyring. | 7.-11. marts 2022 |
+| <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.<p>[Vedligeholdelse af centraliseret kalender for planlægningsoptimering](../supply-chain-calendars-master-planning.md)<p>[Forslag til planlægningsoptimering for at optimere eksisterende forsyning](../action-messages.md)<p>[Understøttelse af planlægningsoptimering til underleverandørarbejde](../../production-control/manage-subcontract-work-production.md) | Der kræves ingen funktionsstyring. | 7.-11. marts 2022 |
 | <p>Tilføjet understøttelse af planlægningsprioritet for produktionsordrer. | Tilgængelig i version 10.0.25 som en del af funktionen med navnet *Prioritetsstyret MRP-understøttelse for planlægningsoptimering*. | 12. - 18. november 2021 |
 | <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 12. - 18. november 2021 |
 | <p>Ekstra understøttelse af beregningsformler til procestid, produktionsrute med overlap og produktionsoperationsnummer på behovsposteringer.</p><p>Bedre fejlmeddelelser for produktionsplanlægning, der er knyttet til timeout, kapacitet blev ikke fundet og cyklisk rute.</p><p>Forbedret konsistens ved beregning af tilgangsdatoer og afgangsdatoer på både ordreforslag og autoriserede ordrer.</p><p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Funktionsnavn: *Uendelig kapacitetsplanlægning til Planlægningsoptimering* | 22.- 27. oktober 2021 |

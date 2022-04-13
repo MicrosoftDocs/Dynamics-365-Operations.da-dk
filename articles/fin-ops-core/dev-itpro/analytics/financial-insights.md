@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416299"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464903"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -38,7 +38,7 @@ ms.locfileid: "7416299"
 
 Arbejdsområdet **Økonomisk analyse** fokuserer på, at du kan få vist og filtrere dataene om eksisterende rapporter. Du kan tilføje nye visuelle elementer til arbejdsområdet **Økonomisk analyse**. Arbejdsområdet **Økonomiske analyse** er tilgængeligt for det aktuelle firma og alle firmaer, hvor de kan se data for alle juridiske enheder, uanset hvilke juridiske enheder rollen har adgang til.
 
-- [Tilføje eller redigere Power BI-visualiseringer på dashboardet](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Tilføje eller redigere Power BI-visualiseringer på dashboardet](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Opsætning af Dynamics 365 Finance
 **Finans**
@@ -96,7 +96,7 @@ I følgende diagram til sammenligning får du hjælp til at skelne mellem de to 
 | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nej |
 | **Rapportere reskontrodata**                             | Ja Begrænset til kreditor, debitor                              | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv. |
 | **Rapporteringsvaluta**                                   | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta |
-| **Sikkerhed**                                             | Ja Overholder Finans-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
+| **Sikkerhed**                                             | Ja Overholder Finance-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
 | **Understøtte forskellige kontoplaner og regnskabsår** | Ja                                                               | Nej |
 | **Rapportere eksterne data**                              | Nej                                                                | Nej |
 | **Understøtte konsolideringer**                               | Ja                                                               | Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta |

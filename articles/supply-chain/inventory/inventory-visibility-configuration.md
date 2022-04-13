@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060995"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524515"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
 
@@ -39,22 +39,25 @@ Før du begynder at arbejde med Lagersynlighed, skal du fuldføre følgende konf
 
 Før du går i gang, skal du installere og konfigurere tilføjelsesprogrammet Lagersynlighed som beskrevet i [Installere og konfigurere lagersynlighed](inventory-visibility-setup.md).
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivere funktioner for lagersynlighed i Power Apps-funktionsstyring
-
-Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power Apps-installationen. Disse funktioner er som standard deaktiverede. Hvis du vil bruge dem, skal du åbne siden **Konfiguration** i Power Apps og derefter aktivere følgende funktioner under fanen **Funktionsstyring**.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackobjektService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finde tjenestens slutpunkt
-
-Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du åbne siden **Konfiguration** i Power Apps og derefter vælge **Vis tjenesteslutpunkt** i øverste højre hjørne. Siden viser det korrekte slutpunkt for tjenesten.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurationssiden for appen Lagersynlighed
 
 I Power Apps hjælper siden **Konfiguration** på [Lagersynlighed-app](inventory-visibility-power-platform.md) med at konfigurere konfigurationen af disponibel lagerbeholdning og konfigurationen af foreløbige reservationer. Når tilføjelsesprogrammet er installeret, indeholder standardkonfigurationen værdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gennemse standardindstillinger. Afhængigt af forretningsbehovene og det eksterne systems krav til lagerbogføring kan du desuden redigere konfigurationen for at standardisere, hvordan lagerændringer kan bogføres, organiseres og forespørges på på tværs af flere systemer. I de resterende afsnit af dette emne forklares, hvordan du kan bruge de enkelte dele af **konfigurationssiden**.
 
 Når konfigurationen er fuldført, skal du vælge **Opdater konfiguration** i appen.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivere funktioner for lagersynlighed i Power Apps-funktionsstyring
+
+Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power Apps-installationen. Disse funktioner er som standard deaktiverede. Hvis du vil bruge dem, skal du åbne siden **Konfiguration** og derefter aktivere følgende funktioner efter behov under fanen **Funktionsstyring**.
+
+| Funktionsstyringsnavn | Beskrivelse |
+|---|---|
+| OnHandReservation | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackobjektService | Den viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Funktionen aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT) (valgfrit). Du kan finde flere oplysninger i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finde tjenestens slutpunkt
+
+Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du åbne siden **Konfiguration** i Power Apps og derefter vælge **Vis tjenesteslutpunkt** i øverste højre hjørne. Siden viser det korrekte slutpunkt for tjenesten.
 
 ## <a name="data-source-configuration"></a>Konfiguration af datakilde
 
@@ -178,15 +181,21 @@ Hvis du vil konfigurere en brugerdefineret beregnet måling, skal du gøre følg
 
 1. Log på Power Apps-miljøet, og åbn **Lagersynlighed**.
 1. Åbn siden **Konfiguration**.
-1. Vælg **Ny beregnet måling** under fanen **Beregnet måling** for at tilføje en beregnet måling. Derefter skal du angive felterne som beskrevet i følgende tabel.
+1. Vælg **Ny beregnet måling** under fanen **Beregnet måling** for at tilføje en beregnet måling.
+1. Angiv følgende felter for den nye beregnede måling:
 
-    | Felt | Værdi |
-    |---|---|
-    | Navn på ny beregnet måling | Angiv navnet på den beregnede måling. |
-    | Datakilde | Forespørgselssystemet er en datakilde. |
-    | Modifikators datakilde | Angiv datakilden for modifikatoren. |
-    | Modifikator | Angiv modifikatorens navn. |
-    | Modifikatortype | Vælg modifikatortypen (*Addition* eller *Subtraktion*). |
+    - **Navn på ny beregnet måling** – Angiv navnet på den beregnede måling.
+    - **Datakilde** – Vælg den datakilde, der er tilknyttet den nye modifikator. Forespørgselssystemet er en datakilde.
+
+1. Vælg **Tilføj** for at føje en modifikator til den nye beregnede måling.
+1. Angiv følgende felter til den nye modifikator:
+
+    - **Modifikator** – Vælg modifikatortypen (*Addition* eller *Subtraktion*).
+    - **Datakilde** – Vælg den datakilde, hvor den måling, der angiver modifikatorværdien, findes.
+    - **Måling** – Vælg navnet på den måling (fra den valgte datakilde), der angiver værdien for modifikatoren.
+
+1. Gentag trin 5 til 6, indtil du har tilføjet alle nødvendige modifikatorer.
+1. Vælg **Gem**.
 
 Du kan f.eks. få følgende forespørgelsresultat.
 
@@ -465,6 +474,10 @@ I dette eksempel kan du foretage reservationer i følgende dimensionsserier. Nå
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 En gyldig dimensionsrækkefølge skal nøje følge reservationshierarkiet, dimension for dimension. Hierarkirækkefølgen `(SiteId, LocationId, SizeId)` er f.eks. ikke gyldig, fordi `ColorId` mangler.
+
+## <a name="available-to-promise-configuration-optional"></a>Konfiguration af disponibel til tilsagn (valgfrit)
+
+Du kan konfigurere lagersynlighed, så du kan planlægge fremtidige ændringer af disponibelt antal og beregne DTT-mængder for disponibel til tilsagn. DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af denne beregning kan øge ordreopfyldelsesfunktionaliteten væsentligt. Hvis du vil bruge denne funktion, skal du aktivere den under fanen **Funktionsstyring** og derefter konfigurere den under fanen **DTT-indstilling**. Du kan finde flere oplysninger i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Fuldføre og opdatere konfigurationen
 

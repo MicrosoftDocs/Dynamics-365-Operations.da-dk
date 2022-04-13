@@ -1,23 +1,23 @@
 ---
 title: Fjernede eller udfasede funktioner i Dynamics 365 Finance
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Finance.
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890947"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466828"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -31,7 +31,21 @@ Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet f
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 > [!NOTE]
-> Du kan finde detaljerede oplysninger om objekter i Finance and Operations-apps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations-apps.
+> Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.26 udgaven
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>Momsrapport for Finland (design baseret på rapporteringskoder)
+
+[Momsrapport for Finland](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Finland](../localizations/emea-fin-vat-declaration.md). |
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfases: Den 1. marts 2023 har vi planer om ikke længere at understøtte momsrapporten for Finland (finsk rapportlayout). Der introduceres nye ER-formater (elektronisk rapportering) for **Momsopgørelsestekst (FI**) og **Momsopgørelse Excel (FI)** under modellen **Momsopgørelse**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.24 udgaven
 

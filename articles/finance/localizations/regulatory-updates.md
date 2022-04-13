@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105558"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470087"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -39,36 +39,26 @@ De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabe
 
 |Land/område|Udstedelsesdato|Release-version|Lovmæssig opdatering|
 |--------------------|---------------|-------|-------| 
-|      Østrig         |   August 2021      | 10.0.22      |   Momsopgørelse i XML og forhåndsversion i Excel   |
-|      Østrig         |   2021. september      | 10.0.22HF      |   Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser   |
-|      Belgien        |   2021. oktober      | 10.0.22HF     |   Intrastat-transaktionskoder ændres til to cifre med start fra 2022  |
-|      Brasilien         |   August 2021      | 10.0.22      |   NF-e NT2020.006 – Identifikation af det digitale platformmellemled (opdatering af layout og valideringsregler)   |
-|      Brasilien         |   2021. december         | 10.0.22, 10.0.23, 10.0.24         |    SPED-regnskabslayout 2022  |
-|      Tjekkiet         |   2021. oktober         | 10.0.23HF         |     Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser  |
-|      Danmark         |   2021. december         | 10.0.22HF         |    Intrastat-formatet opdateres fra 2022  |
-|      Estland         |   2021. december      | 10.0.22HF      |   Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser  |
-|      Finland         |   November 2021         | 10.0.22HF         |    Intrastat-formatet opdateres fra 2022.  |
-|      Tyskland        |   August 2021       | 10.0.22HF      |   Intrastat-formatet INSTAT XML opdateres fra 2022. Intrastat-formatet TXT gælder ikke fra 07-01-2021  |
-|      Tyskland        |   2021. oktober       | 10.0.23      |   Momsopgørelse i XML og forhåndsversion i Excel (nyt design med beløb i momskodevaluta, hvor du straks kan arbejde med funktionen for modtagermoms, kan udføres i ikke-DE-juridiske enheder og kan opkræve momstransaktioner fra flere juridiske enheder)  |
-|      Italien         |   November 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Elektronisk fakturering af transaktioner, der krydser grænser  |
-|      Mexico         |   November 2021      | 10.0.22      |   Carta de Porte-supplement i CFDI-dokumenter   |
+|      Brasilien         |   2021. december         | 10.0.24, 10.0.25         |    SPED-regnskabslayout 2022  |
+|      Brasilien         |   Marts 2022    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL-indsamling i operationer, der henvender sig til ikke-skatteydere (Supplement til lovnr. 190/22)  |
+|      Danmark         |   Januar 2022  | 10.0.25HF         |    Forhåndsversion af momsopgørelse i Excel |
+|      Frankrig   |   November 2021 | 10.0.25         |    Fransk eksport af dataarkivering (FEC) - bilaget "Berettigelse af manglende numre" |
+|      Italien         |   November 2021         | 10.0.24         |    Elektronisk fakturering af transaktioner, der krydser grænser  |
+|      Italien         |   2022. februar | 10.0.24HF, 10.0.25HF| Entydig certificering - 2022 i Dynamics 365 Finance  |
+|      Litauen|   2022. februar | 10.0.24HF, 10.0.25HF | i.SAF-ændringer fra 2022-01-01 i Dynamics 365 Finance  |
 |      Mexico         |   2021. december      | 10.0.24      |   Supplement til Carta de Porte version 2.0  |
-|      Nederlandene        |   2021. oktober      | 10.0.22HF      |   Tocifrede transaktionskoder i Intrastat-filformat fra 2022  |
-|      New Zealand         |   August 2021      | 10.0.22    |   GST-opgørelsesformular GST101A  |
 |      Norge        |   November 2021      | 10.0.24      |   Momsopgørelsesformat 2022 med direkte indsendelse - Dynamics 365 Finance |
-|      Oman         |   August 2021      | 10.0.22      |   Momsopgørelse - Version 1 |
-|      Polen          |   2021. oktober     | 10.0.23, 10.0.24     |   JPK_V7M – ny skemaversion fra januar 2022 |
+|      Polen          |   2021. oktober     | 10.0.24     |   JPK_V7M – ny skemaversion fra januar 2022 |
 |      Polen          |   November 2021     | 10.0.24HF     |   Årsrapport om betalingsdatoer i handelstransaktioner |
 |      Polen          |   2021. oktober     | 10.0.24     |   Elektronisk format for EU-listesystemet (VAT-UE) |
-|      Rusland          |   2021. oktober     | 10.0.22HF, 10.0.23, 10.0.24    |   Ændringer i salgsbøger, købsbøger og fakturakladder|
+|      Rusland          |   2021. oktober     | 10.0.24    |   Ændringer i salgsbøger, købsbøger og fakturakladder|
 |      Rusland          |   2021. oktober     | 10.0.24HF    |   Ændring i formater af momsopgørelse med bilag|
 |      Rusland          |   November 2021     | 10.0.24    |   Federal Accounting Standards 6/2020 (anlægsaktiver)|
-|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23    |   Generering af elektronisk fakturering i Saudi-Arabien – fase 1|
-|      Saudi-Arabien          |   November 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Detail – Elektronisk fakturering i Saudi-Arabien – fase 1|
-|      Spanien          |   2021. oktober     | 10.0.23    |    Momsopgørelsesmodel 303 i txt og forhåndsversion i Excel|
-|      Spanien          |   2021. september     | 10.0.22    |    Intrastat-format opdateres for 2022-indberetning – Oprindelsesland og partnermoms-id bliver obligatoriske på afsendelser|
-|      Sverige          |   2021. oktober     | 10.0.22HF    |    Intrastat-format opdateres med start fra 2022 – Oprindelsesland og Partnermoms-id bliver obligatoriske på afsendelser. Der bruges tocifrede transaktionskoder.|
-|      Storbritannien          |   August 2021     | 10.0.22    |    UK - MTD-forebyggelse af bedrageri 2021)|
+|      Rusland          |   2022. januar     | 10.0.24HF, 10.0.25    |   Aktivere destination for elektronisk rapportering (ER) til lagring af russiske regnskabsdokumenter (primære dokumenter og regnskabsrapporter)|
+|      Rusland          |   2021. december     | 10.0.25    |   Integration af modul for anlægsaktiver (Rusland) med modulet Aktivstyring|
+|      Rusland          |   2022. februar     | 10.0.24HF, 10.0.25    |  Nyt format for transportfaktura (lovdekret N 2116 30.11.2021)|
+|      Saudi-Arabien          |   November 2021     | 10.0.24    |   Detail – Elektronisk fakturering i Saudi-Arabien – fase 1|
+|      Spanien      |   2022. marts| 10.0.24HF, 10.0.25HF | Spanien: Ændringer af momsopgørelsesmodel 303 1. januar 2022 i Dynamics 365 Finance|
 
 
 

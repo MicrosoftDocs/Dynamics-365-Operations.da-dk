@@ -1,22 +1,22 @@
 ---
 title: Planlægning med uendelig kapacitet
 description: Dette emne indeholder oplysninger om planlægning med uendelig kapacitet for planlægningsoptimering. Det beskriver også de aktuelle funktionsbegrænsninger.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b8f08af3b58e5c0f8480ae540478d60bb8d36193
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982144"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469919"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlægning med uendelig kapacitet
 

@@ -2,25 +2,27 @@
 title: Oversigt over økonomirapportering
 description: I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983971"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527307"
 ---
 # <a name="get-started-with-financial-reporting"></a>Start her med økonomirapportering 
 
@@ -174,7 +176,7 @@ Problem 1: Report Designer starter ikke, når du vælger **Ny** eller **Rediger*
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til, og vælg derefter **Websteder**. I **Føj dette websted til zone** skal du angive "\*\.dynamics.com" (uden anførselstegn) og derefter vælge **Tilføj**. 
 * I Internet Explorer skal du vælge **Indstillinger** og derefter vælge **Internetindstillinger**. Vælg fanen **Sikkerhed**. Vælg websteder, du har tillid til. I området, der er angivet med Sikkerhedsniveau for denne zone, skal du ændre indstillingen til **Mellem-Lav**.
 * Deaktiver blokering af pop op-vinduer i din browser.
-* Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.6.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Der kræves arbejdsstationer for at installere Microsoft .NET Framework 4.7.2 eller nyere. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * Hvis du bruger Chrome-browseren, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du kører Chrome i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan finde flere oplysninger om Chrome ClickOnce-udvidelsen i [Systemkrav til skyinstallationer](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Hvis du bruger Microsoft Edge med en Chrome-browser, behøver du ikke installere en ClickOnce-udvidelse til Edge Chromium. Du skal dog aktivere ClickOnce-indstillingen for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781957"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492914"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Selvstudium til Regression Suite Automation Tool
 
@@ -43,7 +43,7 @@ I følgende eksempel vises, hvordan du kan bruge denne funktion til at validere,
     5. Markér den valgte række på listen.
     6. Kontroller, at værdien af feltet **I alt disponibelt** er **411,0000000000000000**.
 
-2. Gem opgaveregistreringen som en **udviklerregistrering**, og knyt den til test casen i Azure Devops.
+2. Gem opgaveregistreringen som en **udviklerregistrering**, og knyt den til testsagen i Azure DevOps.
 3. Føj testsagen til testplanen, og Indlæs testsagen i RSAT.
 4. Åbn Excel-parameterfilen, og gå til fanen **TestCaseSteps**.
 5. Hvis du vil kontrollere, om den disponible lagerbeholdning altid er større end **0**, skal du gå til trinnet **Valider I alt disponibelt** og ændre værdien fra **411** til **0**. Rediger værdien i feltet **Operator** fra et lighedstegn (**=**) til et større end-tegn (**\>**).
@@ -91,7 +91,7 @@ Denne funktion bruger skærmbilleder af de trin, der blev udført under opgavere
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Når du kører test-cases, genererer RSAT snapshots (billeder) af trinnene og gemmer dem i afspilningsmappen i test cases i arbejdsbiblioteket. I mappen ved navn **StepSnapshots** oprettes en separat undermappe. Denne mappe indeholder øjebliksbilleder for de testsager, der køres.
+Når du kører testsager, genererer RSAT snapshots (billeder) af trinnene og gemmer dem i afspilningsmappen for testsager i arbejdsbiblioteket. I mappen ved navn **StepSnapshots** oprettes en separat undermappe. Denne mappe indeholder øjebliksbilleder for de testsager, der køres.
 
 ## <a name="assignment"></a>Tilknytning
 
@@ -172,6 +172,7 @@ RSAT kan kaldes fra et **Kommandoprompt**- eller **PowerShell**-vindue.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ RSAT kan kaldes fra et **Kommandoprompt**- eller **PowerShell**-vindue.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ RSAT kan kaldes fra et **Kommandoprompt**- eller **PowerShell**-vindue.
 
 #### <a name=""></a>?
 
-Viser hjælp om alle tilgængelige kommandoer og deres parametre.
+Viser alle kommandoer eller hjælp til en bestemt kommando sammen med de tilgængelige parametre.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: Valgfri parametre
 
-`command`: Hvor ``[command]`` er en af de kommandoer, der er angivet nedenfor.
+`command`: Hvor ``[command]`` er en af kommandoerne på den foregående liste.
 
-#### <a name="about"></a>om
+#### <a name="about"></a>about
 
-Viser den aktuelle version.
+Viser versionen af den installerede RSAT.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -214,25 +217,61 @@ Rydder skærmen.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
 
-#### <a name="download"></a>hent
+#### <a name="download"></a>download
 
-Downloader vedhæftede filer for den angivne testcase til outputmappen.
-Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+Downloader vedhæftede filer (optagelses-, udførelses- og parameterfiler) for den angivne testsag fra Azure DevOps til outputmappen. Du kan bruge kommandoen ``list`` til at hente alle tilgængelige testsager og bruge enhver værdi fra den første kolonne som parameteren **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>download: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter downloadprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
 
 ##### <a name="download-required-parameters"></a>download: påkrævede parametre
 
 + `test_case_id`: Repræsenterer testcase-id'et.
-+ `output_dir`: Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="download-optional-parameters"></a>download: valgfrie parametre
+
++ `output_dir`: Repræsenterer arbejdsmappen for output. Mappen skal eksistere. Arbejdsmappen fra indstillingerne bruges, hvis denne parameter ikke er angivet.
 
 ##### <a name="download-examples"></a>download: eksempler
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
 
-#### <a name="edit"></a>rediger
+#### <a name="downloadsuite"></a>downloadsuite
+
+Downloader vedhæftede filer (optagelses-, udførelses- og parameterfiler) for alle testsager i den angivne testpakke fra Azure DevOps til outputmappen. Du kan bruge kommandoen ``listtestsuitenames`` til at hente alle tilgængelige testpakker og bruge enhver værdi som parameteren **test_suite_name**.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter downloadprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/byid`: Denne parameter angiver, at den ønskede testpakke er identificeret med sit Azure DevOps-id i stedet for navnet på testpakken.
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: påkrævede parametre
+
++ `test_suite_name`: Repræsenterer testpakkenavnet. Denne parameter er påkrævet, hvis /byid-switch **ikke** er angivet. Dette er navnet på Azure DevOps-testpakken.
++ `test_suite_id`: Repræsenterer testpakke-id'et. Denne parameter er påkrævet, hvis /byid-switch **er** angivet. Dette id er testpakkens Azure DevOps-id.
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: valgfrie parametre
+
++ `output_dir`: Repræsenterer arbejdsmappen for output. Mappen skal eksistere. Arbejdsmappen fra indstillingerne bruges, hvis denne parameter ikke er angivet.
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: eksempler
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
+
+#### <a name="edit"></a>edit
 
 Giver dig mulighed for at åbne parameterfilen i Excel-programmet og redigere den.
 
@@ -244,7 +283,7 @@ Giver dig mulighed for at åbne parameterfilen i Excel-programmet og redigere de
 
 ##### <a name="edit-examples"></a>edit: eksempler
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
@@ -252,24 +291,41 @@ Giver dig mulighed for at åbne parameterfilen i Excel-programmet og redigere de
 
 Opretter testkørsels- og -parameterfiler for det angivne testcase i outputmappen. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### <a name="generate-optional-switches"></a>generate: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter generetingsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/dllonly`: Generér kun testudførelsesfiler. Generér ikke Excel-parameterfilen igen.
++ `/keepcustomexcel`: Opgrader den eksisterende parameterfil. Regenerer også udførelsesfiler.
 
 ##### <a name="generate-required-parameters"></a>generate: påkrævede parametre
 
 + `test_case_id`: Repræsenterer testcase-id'et.
-+ `output_dir`: Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="generate-optional-parameters"></a>generate: valgfrie parametre
+
++ `output_dir`: Repræsenterer arbejdsmappen for output. Mappen skal eksistere. Arbejdsmappen fra indstillingerne bruges, hvis denne parameter ikke er angivet.
 
 ##### <a name="generate-examples"></a>generate: eksempler
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-Genererer en ny testcase, der er afledt fra den leverede testcase. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+Genererer en ny afledt testsag (underordnet testsag) fra den leverede testsag. Den nye testsag føjes også til den angivne testpakke. Du kan bruge kommandoen ``list`` til at hente alle tilgængelige testsager og bruge enhver værdi fra den første kolonne som parameteren **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter generetingsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: påkrævede parametre
 
@@ -281,47 +337,71 @@ Genererer en ny testcase, der er afledt fra den leverede testcase. Du kan bruge 
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-Opretter kun testkørselsfilen for det angivne testcase i outputmappen. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+Opretter kun testkørselsfiler for den angivne testsag. Den genererer ikke Excel-parameterfilen. Filerne genereres i den angivne outputmappe. Du kan bruge kommandoen ``list`` til at hente alle tilgængelige testsager og bruge enhver værdi fra den første kolonne som parameteren **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter generetingsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: påkrævede parametre
 
 + `test_case_id`: Repræsenterer testcase-id'et.
-+ `output_dir`: Repræsenterer outputmappen. Biblioteket skal eksistere.
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: valgfrie parametre
+
++ `output_dir`: Repræsenterer arbejdsmappen for output. Mappen skal eksistere. Arbejdsmappen fra indstillingerne bruges, hvis denne parameter ikke er angivet.
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: eksempler
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-Opretter alle testcases for den angivne pakke i outputmappen. Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige testpakker. Brug en vilkårlig værdi fra første kolonne som en **test_suite_name**-parameter.
+Opretter testautomatiseringsfiler for alle testsager i den angivne testpakke. Du kan bruge kommandoen ``listtestsuitenames`` til at hente alle tilgængelige testpakker og bruge enhver værdi som parameteren **test_suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter generetingsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/dllonly`: Generér kun testudførelsesfiler. Generér ikke Excel-parameterfilen igen.
++ `/keepcustomexcel`: Opgrader eksisterende parameterfil. Regenerer også udførelsesfiler.
++ `/byid`: Denne parameter angiver, at den ønskede testpakke er identificeret med sit Azure DevOps-id i stedet for navnet på testpakken.
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: påkrævede parametre
 
-+ `test_suite_name`: Repræsenterer testpakkenavnet.
-+ `output_dir`: Repræsenterer outputmappen. Biblioteket skal eksistere.
++ `test_suite_name`: Repræsenterer testpakkenavnet. Denne parameter er påkrævet, hvis /byid-switch **ikke** er angivet. Dette er navnet på Azure DevOps-testpakken.
++ `test_suite_id`: Repræsenterer testpakke-id'et. Denne parameter er påkrævet, hvis /byid-switch **er** angivet. Dette id er testpakkens Azure DevOps-id.
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: valgfrie parametre
+
++ `output_dir`: Repræsenterer arbejdsmappen for output. Mappen skal eksistere. Arbejdsmappen fra indstillingerne bruges, hvis denne parameter ikke er angivet.
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: eksempler
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### <a name="help"></a>help
 
 Identisk med [?](#section) -kommandoen.
 
-#### <a name="list"></a>listen
+#### <a name="list"></a>list
 
-Viser alle tilgængelige testcases.
+Viser alle tilgængelige testsager i den aktuelle testplan.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Viser alle tilgængelige testplaner.
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-Viser testcases for den angivne testpakke. Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige pakker. Brug en vilkårlig værdi fra første kolonne som **suite_name**-parameter.
+Viser testcases for den angivne testpakke. Du kan bruge kommandoen ``listtestsuitenames`` til at hente alle tilgængelige testpakker og bruge enhver værdi fra listen som parameteren **suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: påkrævede parametre
 
-+ `suite_name`: Navnet på den ønskede pakke.
++ `test_suite_name`: Navnet på den ønskede pakke.
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: eksempler
 
@@ -347,39 +427,67 @@ Viser testcases for den angivne testpakke. Du kan bruge kommandoen ``listtestsui
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+Viser testcases for den angivne testpakke.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: påkrævede parametre
+
++ `test_suite_id`: Id'et på den ønskede pakke.
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: eksempler
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-Viser alle tilgængelige testpakker.
+Viser alle testpakker i den aktuelle testplan.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>playback
 
-Afspiller en testcase ved hjælp af en Excel-fil.
+Afspiller testsagen, der er knyttet til den angivne Excel-parameterfil. Denne kommando bruger eksisterende lokale automatiseringsfiler og downloader ikke filer fra Azure DevOps. Denne kommando understøttes ikke i POS-handelstestsager.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### <a name="playback-optional-switches"></a>playback: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter afspilningsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/comments[="comment"]`: Angiv en brugerdefineret informationsstreng, der skal medtages i feltet **Kommentarer** i oversigts- og testresultatsiderne for Azure DevOps-testsagskørsler.
 
 ##### <a name="playback-required-parameters"></a>playback: påkrævede parametre
 
-+ `excel_file`: En fuld sti til Excel-filen. Filen skal eksistere.
++ `excel_parameter_file`: Den fulde sti til en Excel-parameterfil. Filen skal eksistere.
 
 ##### <a name="playback-examples"></a>playback: eksempler
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-Afspiller flere testcases på én gang. Du kan bruge kommandoen ``list`` til at få vist alle tilgængelige testcases. Brug en vilkårlig værdi fra første kolonne som en **test_case_id**-parameter.
+Afspiller flere testsager på én gang. Testsagerne identificeres ved deres id. Denne kommando downloader filer fra Azure DevOps. Du kan bruge kommandoen ``list`` til at hente alle tilgængelige testsager og bruge enhver værdi fra den første kolonne som parameteren **test_case_id**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a>playbackbyid: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter afspilningsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/comments[="comment"]`: Angiv en brugerdefineret informationsstreng, der skal medtages i feltet **Kommentarer** i oversigts- og testresultatsiderne for Azure DevOps-testsagskørsler.
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: påkrævede parametre
 
-+ `test_case_id1`: Id for eksisterende testcase.
-+ `test_case_id2`: Id for eksisterende testcase.
-+ `test_case_idN`: Id for eksisterende testcase.
++ `test_case_id1`: Id for en eksisterende testsag.
++ `test_case_id2`: Id for en eksisterende testsag.
++ `test_case_idN`: Id for en eksisterende testsag.
 
 ##### <a name="playbackbyid-examples"></a>playbackbyid: eksempler
 
@@ -387,75 +495,132 @@ Afspiller flere testcases på én gang. Du kan bruge kommandoen ``list`` til at 
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Afspiller mange testcases på én gang ved hjælp af Excel-filer.
+Afspiller mange testsager på én gang. Testsagerne identificeres af Excel-parameterfilerne. Denne kommando bruger eksisterende lokale automatiseringsfiler og downloader ikke filer fra Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a>playbackmany: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter afspilningsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/comments[="comment"]`: Angiv en brugerdefineret informationsstreng, der skal medtages i feltet **Kommentarer** i oversigts- og testresultatsiderne for Azure DevOps-testsagskørsler.
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: påkrævede parametre
 
-+ `excel_file1`: Fuld sti til Excel-filen. Filen skal eksistere.
-+ `excel_file2`: Fuld sti til Excel-filen. Filen skal eksistere.
-+ `excel_fileN`: Fuld sti til Excel-filen. Filen skal eksistere.
++ `excel_parameter_file1`: Den fulde sti til Excel-parameterfilen. Filen skal eksistere.
++ `excel_parameter_file2`: Den fulde sti til Excel-parameterfilen. Filen skal eksistere.
++ `excel_parameter_fileN`: Den fulde sti til Excel-parameterfilen. Filen skal eksistere.
 
 ##### <a name="playbackmany-examples"></a>playbackmany: eksempler
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-Afspiller alle testcases fra den angivne testpakke.
-Du kan bruge kommandoen ``listtestsuitenames`` til at få vist alle tilgængelige pakker. Brug en vilkårlig værdi fra første kolonne som **suite_name**-parameter.
+Afspiller alle testsager fra en eller flere angivne testpakker. Hvis parameteren /local er angivet, bruges lokale vedhæftede filer til afspilning. Ellers downloades vedhæftede filer fra Azure DevOps. Du kan bruge kommandoen ``listtestsuitenames`` til at hente alle tilgængelige testpakker og bruge enhver værdi fra den første kolonne som parameteren **suite_name**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: valgfrie parametre
+
++ `/updatedriver`: Hvis denne parameter er angivet, opdateres webbrowserens WebDriver efter behov, før afspilningsprocessen køres.
++ `/local`: Denne parameter angiver, at lokale vedhæftede filer skal bruges til afspilning i stedet for at downloade filer fra Azure DevOps.
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter afspilningsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/comments[="comment"]`: Angiv en brugerdefineret informationsstreng, der skal medtages i feltet **Kommentarer** i oversigts- og testresultatsiderne for Azure DevOps-testsagskørsler.
++ `/byid`: Denne parameter angiver, at den ønskede testpakke er identificeret med sit Azure DevOps-id i stedet for navnet på testpakken.
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: påkrævede parametre
 
-+ `suite_name`: Navnet på den ønskede pakke.
++ `test_suite_name1`: Repræsenterer testpakkenavnet. Denne parameter er påkrævet, hvis /byid-switch **ikke** er angivet. Dette er navnet på Azure DevOps-testpakken.
++ `test_suite_nameN`: Repræsenterer testpakkenavnet. Denne parameter er påkrævet, hvis /byid-switch **ikke** er angivet. Dette er navnet på Azure DevOps-testpakken.
++ `test_suite_id1`: Repræsenterer testpakke-id'et. Denne parameter er påkrævet, hvis /byid-switch **er** angivet. Dette id er testpakkens Azure DevOps-id.
++ `test_suite_idN`: Repræsenterer testpakke-id'et. Denne parameter er påkrævet, hvis /byid-switch **er** angivet. Dette id er testpakkens Azure DevOps-id.
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: eksempler
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+Kører alle testsager i den angivne Azure DevOps-testpakke.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>playbacksuitebyid: valgfrie parametre
+
++ `/retry[=seconds]`: Hvis denne parameter er angivet, og testsager blokeres af andre RSAT-forekomster, venter afspilningsprocessen i det angivne antal sekunder og forsøger derefter en gang til. Standardværdien for \[seconds\] er 120 sekunder. Uden denne parameter annulleres processen med det samme, hvis testsager er blokeret.
++ `/comments[="comment"]`: Angiv en brugerdefineret informationsstreng, der skal medtages i feltet **Kommentarer** i oversigts- og testresultatsiderne for Azure DevOps-testsagskørsler.
++ `/byid`: Denne parameter angiver, at den ønskede testpakke er identificeret med sit Azure DevOps-id i stedet for navnet på testpakken.
+
+##### <a name="playbacksuitebyid-required-parameters"></a>playbacksuitebyid: påkrævede parametre
+
++ `test_suite_id`: Repræsenterer testpakke-id'et, som det findes i Azure DevOps.
+
+##### <a name="playbacksuitebyid-examples"></a>playbacksuitebyid: eksempler
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### <a name="quit"></a>quit
 
-Lukker programmet.
+Lukker programmet. Denne kommando kan kun bruges, når programmerne kører i interaktiv tilstand.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>quit: eksempler
+
+`quit`
+
 #### <a name="upload"></a>upload
 
-Uploader alle de filer, der hører til den angivne testpakke eller de angivne testcases.
+Uploader vedhæftede filer (optagelses-, kørsels- og parameterfiler), der tilhører en angivet testpakke eller testsager, til Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>upload: påkrævede parametre
+##### <a name="upload-required-parameters"></a>upload: påkrævede parametre
 
-+ `suite_name`: Alle de filer, der hører til den angivne testpakke, bliver uploadet.
-+ `testcase_id`: Alle de filer, der hører til den eller de angivne testcases, bliver uploadet.
++ `test_suite_name`: Alle filer, der tilhører den angivne testpakke, bliver uploadet.
++ `test_case_id1`: Repræsenterer det første testsags-id, der skal uploades. Brug kun denne parameter, når der ikke er angivet et navn på en testpakke.
++ `test_case_idN`: Repræsenterer det sidste testsags-id, der skal uploades. Brug kun denne parameter, når der ikke er angivet et navn på en testpakke.
 
 ##### <a name="upload-examples"></a>upload: eksempler
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-Uploader kun den optagne fil, der hører til de angivne testcases.
+Uploader kun den optagelsesfil, der tilhører en eller flere angivne testsager, til Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: påkrævede parametre
 
-+ `testcase_id`: Den optagne fil, der hører til de angivne testcases, bliver uploadet.
++ `test_case_id1`: Repræsenterer det første testsags-id for den optagelse, der skal uploades til Azure DevOps.
++ `test_case_idN`: Repræsenterer det sidste testsags-id for den optagelse, der skal uploades til Azure DevOps.
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: eksempler
 
@@ -465,9 +630,21 @@ Uploader kun den optagne fil, der hører til de angivne testcases.
 
 #### <a name="usage"></a>usage
 
-Viser to måder at aktivere dette program på: en, der bruger en fil med standardindstillinger, en anden, der angiver en fil med indstillinger.
+Viser de tre brugsmåder for dette program.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Kørsel af programmet interaktivt:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Kørsel af programmet ved at angive en kommando:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Kørsel af programmet ved at angive en indstillingsfil:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-eksempler
 

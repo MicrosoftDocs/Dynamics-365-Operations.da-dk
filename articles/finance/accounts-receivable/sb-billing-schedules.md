@@ -1,5 +1,5 @@
 ---
-title: Oversigt over faktureringsplan
+title: Oprette faktureringsplaner
 description: Dette emne forklarer, hvordan du opretter, sletter og redigerer faktureringsplaner.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182682"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462581"
 ---
-# <a name="billing-schedule-overview"></a>Oversigt over faktureringsplan
+# <a name="create-billing-schedules"></a>Oprette faktureringsplaner
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 På siden **Faktureringsplan** kan du oprette, slette eller redigere faktureringsplaner. Du kan også gennemse listen over faktureringsplaner. Når du opretter en faktureringsplan, bestemmes standardværdierne for den af den tilknyttede faktureringsgruppe. Der er konfigureret flere oplysninger på siden **Faktureringsparametre for tilbagevendende kontrakter**.
 

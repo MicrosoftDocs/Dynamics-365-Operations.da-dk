@@ -1,7 +1,7 @@
 ---
 title: Forbedre planlægningsprogrammets ydeevne
 description: Dette emne giver oplysninger om planlægningsprogrammet, og hvordan ydeevnen kan forbedres.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578434"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469000"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre planlægningsprogrammets ydeevne
 
@@ -60,7 +60,7 @@ Planlægningsprogrammet har en mere abstrakt datamodel end Supply Chain Manageme
 
 Overvej f.eks. en rute, der vises i følgende tabel og billede, som ser relativt enkel ud.
 
-| Opr. Nr. | Prioritet | Opstillingstid | Procestid | Køventetid efter | Antal ressourcer | Næste |
+| Opr. Nej | Prioritet | Opstillingstid | Procestid | Køventetid efter | Antal ressourcer | Næste |
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 | Primær | 1.00 | 2.00 | | 1 | 20 |
 | 10 | Sekundær&nbsp;1 | | | | 1 | 20 |

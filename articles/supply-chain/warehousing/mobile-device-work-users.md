@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902091"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462664"
 ---
 # <a name="mobile-device-user-accounts"></a>Brugerkonti til mobilenhed
 
@@ -90,8 +90,8 @@ Når en arbejder logger på en Warehouse Management-mobilapp, ændres sproget, n
 1. Vælg **Brugerindstillinger** i handlingsruden.
 1. Under fanen **Præferencer** skal du angive følgende felter:
 
-    - **Sprog** – Vælg det sprog, som arbejderen foretrækker. Dette felt styrer også det datoformat, der vises i lagerstedsappen.
-    - **Dato, klokkeslæt og nummerformat** – Vælg det sprog, der skal bestemme de nummerformater, der vises i lagerstedsappen. Bemærk, at dato- og klokkeslætsformater, der vises i lagerstedsappen, rent faktisk bestemmes af feltet **Sprog**, ikke af dette felt.
+    - **Sprog** – Vælg det sprog, som arbejderen foretrækker. Dette felt styrer også det talformat, der vises i lagerstedsappen.
+    - **Dato-, klokkeslæts- og talformat** – Vælg det dato- og klokkeslætsformat, som arbejderen foretrækker. I lagerstedsappen bruges det talformat, der er tilknyttet det sprog, der er valgt i feltet **Sprog**, i stedet for denne indstilling.
     - **Tidszone** – Vælg den tidszone, hvor arbejderen arbejder. Dette felt påvirker tidsstemplet for alle registreringer, som arbejderen foretager ved hjælp af appen.
 
 > [!NOTE]

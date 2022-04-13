@@ -13,193 +13,108 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b15667e0b5ade3601d385eeb87b9d80ea64620a0d56b55121cb5d0c2c758e884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11ed9929b329c910ca0b20d728edeeb6fcdcd73f
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779748"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462747"
 ---
 # <a name="trial-balance-with-transactional-detail-report"></a>Råbalance med detaljeret transaktionsrapport
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives standardrapporten til råbalancer. Her beskrives også de komponenter, der er knyttet til denne rapport, og hvordan du kan redigere rapporten, så den passer til virksomhedens behov.
+I dette emne beskrives standardrapporten til råbalancer. Rapporten **Råbalance med transaktionsoplysninger** genererer en råbalance og indeholder de detaljerede transaktioner, der er bogført på hver finanskonto. Hvis du vælger at medtage bestemte ikke-bogførte transaktioner, kan du bruge rapporten til at oprette en foreløbig råbalance sammen med detaljerede transaktioner.
 
-Du kan bruge **Råbalance med detaljeret transaktionsrapport**-rapporten til at få vist detaljer om hver enkelt transaktion for finanskonti. Rapporten indeholder følgende oplysninger: 
+Elektronisk rapportering (ER) blev brugt til at oprette rapporten **Råbalance med transaktionsoplysninger**. Derfor kan en organisation enten bruge den version af rapporten, der er medtaget i det globale lager, eller oprette sin egen version af rapporten.
 
-- Startsaldi
-- Debet- og kreditbeløb 
-- De resulterende saldi for et datointerval på 31 dage eller derunder
+## <a name="er-setup"></a>ER-opsætning
 
-I forbindelse med transaktioner indeholder rapporten følgende oplysninger: 
+Hvis du ikke har konfigureret det globale lager, skal du konfigurere det for den opdaterede version af rapporten **Råbalance med transaktionsoplysninger**. Du kan finde flere oplysninger i [Konfigurere det globale lager](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-- Posteringsdato
-- Bilagsnummer
-- Kontonummer
-- Dokumentnr.
-- Finansdimension
-- Finansdimensionsnavn
-- Posteringsbeskrivelse
-- Debet- eller kreditbeløb
-- En løbende saldo for året til dato baseret på det indeværende regnskabsår
+1. Gå til **Elektronisk rapportering**.
+2. Vælg **Lagre** for udbyderen **Microsoft**.
+3. Vælg **Åbn**.
+4. Rul ned, eller tilføj et filter for det konfigurationsnavn, der starter med **Prøveversion**.
+5. Vælg **Råbalance med transaktionsoplysninger (Excel)**, og vælg derefter **Importér**. 
 
-Du kan bruge råbalance til at identificere fejl i kontosaldi. Alle konti, der har debetsaldi, skal svare til alle konti, der har kreditsaldi. Rapporten indeholder oplysninger fra finanskladdens regnskabsposter.
+Du kan nu køre den opdaterede rapport, og resultaterne vil være tilgængelige i Microsoft Excel.
 
-Du kan filtrere dataene efter et af følgende punkter:
+## <a name="feature-management"></a>Administration af funktioner
+
+Rapporten **Råbalance med transaktionsoplysninger** aktiveres automatisk, når funktionen **Generér råbalance med transaktionsoplysninger** er aktiveret i **Funktionsstyring**. Hvis du vil medtage ikke-bogførte transaktioner i rapporten, skal du aktivere funktionen **Generér råbalance med ventende typetransaktioner**. Hvis du vil have vist oversigtsdata fra finanskontoposten, skal du aktivere funktionen **Beløbsdetaljer fra finanskontoposten vises på råbalancen med rapporten Råbalance med transaktionsoplysninger**.
+
+## <a name="report-options"></a>Rapportindstillinger
+
+Når du genererer rapporten, kan du medtage følgende detaljerede finanstransaktioner i den:
 
 - Bogførte posteringer
-- Ventende transaktioner (disse transaktioner omfatter alle transaktioner, der ikke er bogført). 
-- Alle transaktioner 
+- Ventende transaktioner
+- Alle transaktioner
 
-Hvis transaktionerne omfatter økonomiske dimensioner, vises disse oplysninger under en finanskonto i rapporten. Ellers grupperes oplysningerne for økonomiske dimensioner øverst på siden. 
+Når bogførte transaktioner medtages i rapporten, kan det medføre et stort sæt data.
 
-I øjeblikket eksporteres rapporten direkte til Microsoft Excel. 
+Alle detaljerede finanstransaktioner i rapportens datointerval udskrives på rapporten. Derfor kan rapporten kun genereres for 31 dage eller derunder.
+
+Hvis du medtager ventende transaktioner i rapporten, skal du vælge den type ikke-bogførte transaktionstyper, der skal medtages. Kun de ikke-bogførte transaktionstyper, der vises i rapportparametrene, kan medtages i den foreløbige rapport. Her er nogle af de ikke-bogførte transaktionstyper:
+
+- Avancerede finansposter
+- Fordelingskladder
+- Budgetkladder
+- Budgetposteringer
+- Debitorbetalingskladder
+- Kassekladder
+- Fritekstfakturaer
+- Projektfakturaer
+- Indkøbsordrer
+- Indkøbsrekvisitioner
+- Kreditorfakturaer
+- Kreditorfakturakladder
+- Kreditorindgangsbogskladder
+
+Ikke-bogførte interne transaktioner, der er angivet i finanskladden (kassekladde) eller kreditorfakturakladder, vises ikke i rapporten. De relevante "forfalden til" og "forfalden fra"-poster kan ikke genereres, før de bogføres. Hvis disse kontoposter ikke genereres, viser rapporten en uafstemt regnskabspost, da rapporten kun indeholder kontoposterne for den aktive juridiske enhed.
+
+Indstillingen **Primært økonomisk dimensionssæt** definerer, hvordan transaktioner grupperes for kombinationer af hovedkonti og økonomiske dimensioner. Hvis du f.eks. vælger et dimensionssæt , der indeholder dimensionerne **Hovedkonto** og **Afdeling**, vil rapporten vise startsaldoen, detaljerede transaktioner og slutsaldoen for hver kombination af en hovedkontoværdi og en afdelingsværdi. Uanset hvilken økonomisk dimensionsopsætning der er valgt, vises hele finanskontoen i kontokolonnen **Finansdimension**.
+
+Brug felterne **Fra dato** og **Til dato** til at definere et datointerval. Dette datointerval skal være 31 dage eller derunder. Denne begrænsning er på grund af det store antal transaktioner, der medtages i en detaljeret transaktionsrapport.
+
+Vælg det posteringslag, du vil have vist de detaljerede transaktioner for, i feltet **Posteringslag**. Der kan kun vælges ét posteringslag.
+
+Brug indstillingen **Medtag primobeløb for transaktion i detaljer** til at føje detaljerne for startsaldoen til rapporten.
+
+Brug indstillingen **Ultimopostering** til at medtage ultimoposteringer i rapporten. Hvis finansparameteren **Opret ultimoposter under overførsel** er angivet til **Ja**, oprettes ultimoposteringerne, når der køres en årsafslutning. Ultimoposteringer bogføres på den sidste dag i regnskabsåret og vises kun, når den sidste dag i regnskabsåret er medtaget i datointervallet.
+
+## <a name="report-details"></a>Rapportdetaljer
+
+Rapporten  **Råbalance med transaktionsoplysninger**  indeholder følgende oplysninger i rækkerne:
+
+- Startsaldo
+- Debet- eller kreditbeløb
+- Slutsaldo
+
+For transaktionsdetaljer indeholder rapporten følgende oplysninger i kolonnerne:
+
+- Dato
+- Bilag
+- Dokument
+- Kontonummer
+- Beskrivelse
+- Finansdimensionskonto
+- Finansdimensionsnavn
+- Debet
+- Kredit
+- Saldo
 
 ## <a name="transaction-information-on-the-report"></a>Transaktionsoplysninger i rapporten
 
-Afhængigt af transaktionstypen, f.eks. en avanceret finanspost (ALE) eller en indkøbsordre, vises følgende yderligere oplysninger i rapporten.
+De oplysninger, der vises i kolonnerne **Dokument** og **Beskrivelse**, varierer, afhængigt af transaktionstypen. Følgende tabel indeholder nogle eksempler på oplysninger, der vises i disse kolonner.
 
-<table> 
-<thead>
-<tr>
-<th>Konteringstype</th>
-<th>Yderligere dokumentoplysninger</th>
-<th>Yderligere beskrivelsesoplysninger</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<ul>
-<li>ALE-bilag</li>
-<li>Fordelingsregel</li>
-<li>Overførsel af finanskladde</li>
-<li>Kladden</li>
-</ul>
-</td>
-<td>ALE-nummer eller finanskladdenummer</td>
-<td>Beskrivelse af linjeelement</td>
-</tr>
-<tr>
-<td></td>
-<td>Ingen data</td>
-<td>Beskrivelse af overskrift i ALE eller finanskladde</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Fakturabilag</li>
-<li>Kreditnotabilag</li>
-</ul>
-</td>
-<td>Fakturanummer</td>
-<td>Kreditornummer og kreditornavn</td>
-</tr>
-<tr>
-<td></td>
-<td>Fakturadato</td>
-<td>Beskrivelse af linjeelement</td>
-</tr>
-<tr>
-<td></td>
-<td>Ingen data</td>
-<td>Indkøbsordrenummer og/eller PA-nummer</td>
-</tr>
-<tr>
-<td>Betalingsbilag for kreditor</td>
-<td>Checknummer eller nummer på elektronisk pengeoverførsel</td>
-<td>Kreditornummer – kreditornavn for "skal betales" eller faktureringskonto</td>
-</tr>
-<tr>
-<td></td>
-<td>Checkdato, elektronisk pengeoverførselsdato eller udligningsdato</td>
-<td>Kreditornummer og kreditornavn for den oprindelige ordrekonto</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Fritekstkreditnota</li>
-<li>Fritekstfakturabilag</li>
-</ul>
-</td>
-<td>Nummer på fritekstfaktura</td>
-<td>Kundenummer og kundenavn</td>
-</tr>
-<tr>
-<td></td>
-<td>Faktureringskode</td>
-<td>Beskrivelse af linjeelement i fritekstfaktura<br>
-(Feltet <strong>Beskrivelse</strong> i oversigtspanelet <strong>Fakturalinjer</strong> på siden <strong>Fritekstfakturaer</strong>)</td>
-</tr>
-<tr>
-<td>Betalingsbilag for debitor (AR)</td>
-<td>Kladdebatchnummer<br>
-(Feltet <strong>Kladdebatchnummer</strong> under fanen <strong>Oversigt</strong> på siden <strong>Betalingskladde</strong>)</td>
-<td>Kundenummer – kundenavn<br>
-(Felterne <strong>Konto</strong> og <strong>Kontonavn</strong> under fanen <strong>Oversigt</strong> på siden <strong>Kladdebilag</strong>)</td>
-</tr>
-<tr>
-<td></td>
-<td>Betalingsreference</td>
-<td>Betegnelse for linjen.<br>
-(Feltet <strong>Beskrivelse</strong> under fanen <strong>Oversigt</strong> på siden <strong>Kladdebilag</strong>)</td>
-</tr>
-<tr>
-<td>Budgetposteringer</td>
-<td>Budgetregisterpostens nummer</td>
-<td>Beskrivelse af budgetregisterpost</td>
-</tr>
-<tr>
-<td></td>
-<td>Budgetkode</td>
-<td>Årsagskode – Beskrivelse af overskrift for budgetregisterpost<br>
-(Feltet <strong>Kommentar</strong> i oversigtspanelet <strong>Oplysninger om budgetkontoposter</strong> på siden <strong>Budgetpost</strong> eller <strong>Budgetregisterpost </strong>)</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Indkøbsordrebekræftelse</li>
-<li>Bekræftelsesbilag på indkøbsordre</li>
-</ul>
-</td>
-<td>Indkøbsordrenummer</td>
-<td>Beskrivelse af linjeelement<br>
-(Feltet <strong>Tekst</strong> i oversigtspanelet <strong>Linjedetaljer</strong> på siden <strong>Indkøbsordre</strong>)</td>
-</tr>
-<tr>
-<td></td>
-<td>Nummer på indkøbsordrelinje</td>
-<td>Indkøbskategori</td>
-</tr>
-<tr>
-<td>Indkøbsrekvisitionsbilag</td>
-<td>Indkøbsrekvisitionsnummer</td>
-<td>Navn på indkøbsrekvisition</td>
-</tr>
-<tr>
-<td></td>
-<td>Indkøbsrekvisitionslinjenummer</td>
-<td>Beskrivelse af indkøbsrekvisitionslinje<br>
-(Feltet <strong>Produktnavn</strong> i oversigtspanelet <strong>Indkøbsrekvisitionslinjer</strong> på siden <strong>Indkøbsrekvisition</strong>)</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Projektfakturabilag</li>
-<li>Projektfaktura</li>
-</ul>
-</td>
-<td>Projektfakturanummer</td>
-<td>Fakturakonto og kontonavn</td>
-</tr>
-<tr>
-<td></td>
-<td>Finansieringskilde</td>
-<td>Projekt-id og projektnavn</td>
-</tr>
-</tbody>
-</table>
-
+| Transaktionstype | Dokument | Beskrivelse |
+|------------------|----------|-------------|
+| Finanskladde – kun finanskonti | Kladdebatchnummer | Finanskonto eller finansmodkonto |
+| Finanskladde – Kreditor-/finanskonto | **Betalingsnummer**: XXX **Betalingsdato**: xx/xx/xxxx | Hovedkontonavn |
+| Fritekstfaktura eller fritekstkreditnota | **Bogføringstype**: Debitorsaldo eller **Bogføringstype**: Kundeomsætning | Kladdenummer: XXXXXX Linjebeskrivelse |
+| Kreditorfaktura | **Bogføringstype:** Kreditorsaldo eller **Betalingsnummer**: XXX **Betalingsdato**: xx/xx/xxxx | Leverandørnavn |
+| Kreditorbetalingskladde eller debitorbetalingskladde | **Betalingsnummer**: XXX **Betalingsdato**: xx/xx/xxxx | Kreditornavn eller debitornavn |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

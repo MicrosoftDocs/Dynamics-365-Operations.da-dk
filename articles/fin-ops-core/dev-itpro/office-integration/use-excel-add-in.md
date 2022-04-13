@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068786"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464931"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -48,7 +48,7 @@ Hvis du vil vide mere om brug af tilføjelsesprogrammet til Excel, kan du se den
 2. Vælg en **Åbn i Excel**-indstilling, og åbn den projektmappe, der er genereret. Denne projektmappe har binding-oplysningerne for enheden, en pointer til dit miljø og en pointer til Excel-tilføjelsesprogrammet.
 3. I Excel skal du vælge **Aktivér redigering** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4. Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du vælge **Har tillid til dette tilføjelsesprogram**.
-5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finans- og driftsappen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
+5. Hvis du bliver bedt om at logge på, skal du vælge **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Finans- og driftsappen. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra browseren og logger dig automatisk på, hvis det er muligt. (Du kan finde oplysninger om den browser, der bruges baseret på operativsystemet, i [Browsere, der bruges af Office-tilføjelsesprogrammet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Du kan sikre, at det lykkedes at logge på ved at kontrollere brugernavnet øverst til højre i Excel-tilføjelsesprogrammet. 
 
 Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har valgt. Bemærk, at der ikke er nogen data i projektmappen, før Excel-tilføjelsesprogrammet læser dem ind.
 

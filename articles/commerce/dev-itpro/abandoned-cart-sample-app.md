@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353357"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489024"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Registrere forladte vogne og sende beskeder til kunder
 
@@ -127,7 +127,7 @@ Hvis du vil konfigurere eksempelappen for connectoren til forladte indkøbsvogne
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-Jobstatus for hentning af forladt indkøbsvogn, vogn-id'er og redigerede tidsstempler gemmes i Azure Cosmos DB. Indstillingerne i konfigurationsfilen peger som standard på den lokale emulatorforekomst af Azure Cosmos DB. Når du udruller connectoren i produktion, skal du opdatere disse indstillinger, så de peger på Azure Cosmos DB-forekomsten i dit Azure-abonnement. Ved lokale test eller sandkassetest kan du bruge [Azure Cosmos Emulator](/azure/cosmos-db/local-emulator).
+Jobstatus for hentning af forladt indkøbsvogn, vogn-id'er og redigerede tidsstempler gemmes i Azure Cosmos DB. Indstillingerne i konfigurationsfilen peger som standard på den lokale emulatorforekomst af Azure Cosmos DB. Når du udruller connectoren i produktion, skal du opdatere disse indstillinger, så de peger på Azure Cosmos DB-forekomsten i dit Azure-abonnement. Ved lokale test eller sandkassetest kan du bruge [Azure Cosmos DB Emulator](/azure/cosmos-db/local-emulator).
 
 | Egenskab    | Beskrivelse |
 | ----------- | ----------- |

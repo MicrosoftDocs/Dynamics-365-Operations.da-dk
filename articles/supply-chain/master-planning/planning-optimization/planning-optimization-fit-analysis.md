@@ -1,7 +1,7 @@
 ---
 title: Analyse af om Planlægningsoptimering passer til
 description: Dette emne beskriver, hvordan du kan kontrollere den aktuelle opsætning og de nuværende data i forhold til funktionerne i funktionen Planlægningsoptimering.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408009"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487636"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -84,7 +84,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Produktion | Stykliste/formellinjer med ressourceforbrug: _\#_ | Denne funktion afventer. I øjeblikket ignoreres styklister og formellinjer med ressourceforbrug, når planlægningsoptimering er aktiveret. Når denne funktion understøttes, vil materialebehovet blive angivet til startdatoen for produktionen. Før denne funktion understøttes, oprettes der ikke krav for materialer, der er markeret med et flag for ressourceforbrug. | 2022. oktober |
 | Produktion | Stykliste/formellinjer med trinforbrug: _\#_ | Denne funktion afventer. I øjeblikket ignoreres trinforbrug på styklister og formellinjer, når planlægningsoptimering er aktiveret. | 2022. oktober |
 | Produktion | Styklister med konstant spild eller variabelt spild defineret: _\#_ | Denne funktion afventer. I øjeblikket ignoreres konstant spild og variabelt spild, der defineres på styklister, når planlægningsoptimering er aktiveret. | 2022. oktober |
-| Produktion | Styklister med underleverandørarbejde: _\#_ | Denne funktion afventer. I øjeblikket ignoreres opsætningen af underleverandørarbejde på styklister, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022. april |
+| Produktion | Styklister med underleverandørarbejde: _\#_ | Denne funktion understøttes nu. | Understøttet |
 | Produktion | Styklister uden websted: _\#_ | Denne funktion understøttes nu. Yderligere oplysninger finder du i [Produktionsplanlægning](production-planning.md) | Understøttet |
 | Produktion | Efterspørgsel, der har defineret specifikke stykliste- eller rutekrav: _\#_ | Denne funktion afventer. Aktuelt ignoreres de specifikke stykliste- eller rutekrav, der er defineret for efterspørgslen (f.eks. en understykliste eller en underrute på en salgsordre), når planlægningsoptimering aktiveres. Standardstyklisten eller -ruten anvendes, uanset denne indstilling. | 2022. oktober |
 | Produktion | Formelversioner med sam-/biprodukter: _\#_ | Denne funktion afventer. I øjeblikket ignoreres samprodukter og biprodukter, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022. oktober |

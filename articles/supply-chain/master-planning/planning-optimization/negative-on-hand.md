@@ -1,7 +1,7 @@
 ---
 title: Planlægning med negative disponible lagerantal
 description: I dette emne beskrives, hvordan negative lagerbeholdninger håndteres, når du bruger planlægningsoptimering.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 97688e09aae9706dd85e7965aa08c7ea873a44d81391c39406e2e6367660e0d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758538"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469136"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planlægning med negative disponible lagerantal
 

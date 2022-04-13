@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024561"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487788"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources-infrastrukturfletning - Opdateringsversion 10.0.25
 
@@ -34,7 +34,7 @@ Fletningen giver konsistens for brugere af Human Resources på følgende måder:
     - Der findes en enkelt kodebase, hvor de nye funktioner til Human Resources frigives som del af den almindelige opdateringsproces One Version.
     - Den måde, som opgraderinger, opdateringer og hotfixes anvendes på i miljøer, er ensartet.
 
-- [Der er forbedrede udvidelsesmuligheder.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Der er forbedrede udvidelsesmuligheder.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - Du kan fortsætte med at bruge Microsoft Power Platform Tools til at udvide efter behov.
     - Du kan udvide funktionerne via formularer, tabeller, metoder og API'er (Application Programming Interface).
@@ -42,7 +42,7 @@ Fletningen giver konsistens for brugere af Human Resources på følgende måder:
 
     Du kan finde flere oplysninger om de tilgængelige udvidelsesmuligheder i [Oversigt over udvidelsesmuligheder i Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-- [Opret ét sæt Human Resources-egenskaber i Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Opret ét sæt Human Resources-egenskaber i Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     I version 10.0.25 er funktionsegenskaber, der kun fandtes i Human Resources, tilgængelige i infrastrukturen for Finans og drift. For at kunderne kan få glæde af disse funktioner i et Finans- og driftsmiljø, skal følgende Human Resources-funktioner være aktiveret i Funktionsstyring.
 

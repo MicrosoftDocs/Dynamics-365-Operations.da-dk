@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984563"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487762"
 ---
 # <a name="e-commerce-site-overview"></a>Oversigt over e-handelswebsted
 
@@ -86,7 +86,7 @@ Webstederne **standard** og **fabrikam** omfatter forudkonfigurerede skabeloner,
 Du kan finde flere oplysninger om, hvordan du administrerer dine webstedsindstillinger, i følgende emner:
 
 - [Administrere e-handelsbrugere og -roller](manage-ecommerce-users-roles.md)
-- [Overvejelser om optimering af søgeprogram (SEO) for webstedet](/search-engine-optimization-considerations.md)
+- [Overvejelser om optimering af søgeprogram (SEO) for webstedet](search-engine-optimization-considerations.md)
 - [Administrere sikkerhedspolitik for indhold (CSP)](manage-csp.md)
 - [Vælge et tema for webstedet](select-site-theme.md)
 

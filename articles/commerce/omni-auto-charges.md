@@ -2,7 +2,7 @@
 title: Avancerede automatiske gebyrer for omni-kanal
 description: I dette emne beskrives funktioner til styring af andre ordregebyrer for Commerce-kanalordrer ved hjælp af funktioner til avancerede automatiske gebyrer.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743425"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489612"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
@@ -187,6 +187,9 @@ Hvis der er hentet årsagskoder for tilsidesatte gebyrer, findes der også en ny
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Tilbagebetaling af gebyrer på en POS-returtransaktion
 
 Hvis parameteren **Brug avancerede automatiske gebyrer** er indstillet til **Ja**, gælder den eksisterende Commerce-parameter for **Refunder forsendelsesgebyrer** ikke længere. Du kan angive, hvilke gebyrer der systematisk skal refunderes til en kunde, når der bruges avancerede automatiske gebyrer, skal du sikre, at koden for relaterede gebyrer er konfigureret som **Kan refunderes** på opsætningssiden **Gebyrkode**. Sørg for, at indstillingerne er synkroniseret med Commerce-kanalens databaser via behandling af distributionsplanen.
+
+> [!TIP]
+> Som vejledning til at sikre, at gebyrer, der kan refunderes på linjeniveau, beregnes på basis af det returnerede antal, kan du se [Refunderbare gebyrer beregnes ikke baseret på det returnerede antal](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Tilbagebetaling af gebyrer på en returordretransaktion
 
