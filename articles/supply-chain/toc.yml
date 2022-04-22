@@ -1697,23 +1697,25 @@
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
             - name: Arkivere lagertransaktioner
               href: inventory/archive-inventory-transactions.md
-            - name: Tilføjelsesprogram for indsigt i lagerbeholdning
+            - name: Tilføjelsesprogram for Inventory Visibility
               items:
-                - name: Oversigt over tilføjelsesprogram for lagersynlighed
+                - name: Oversigt over tilføjelsesprogram for Inventory Visibility
                   href: inventory/inventory-visibility.md
-                - name: Installere og konfigurere lagersynlighed
+                - name: Installere og konfigurere Inventory Visibility
                   href: inventory/inventory-visibility-setup.md
-                - name: Konfigurere lagersynlighed
+                - name: Konfigurere Inventory Visibility
                   href: inventory/inventory-visibility-configuration.md
-                - name: Bruge App til lagersynlighed
+                - name: Understøttelse af Inventory Visibility for WHS-varer
+                  href: inventory/inventory-visibility-whs-support.md
+                - name: Bruge App til Inventory Visibility
                   href: inventory/inventory-visibility-power-platform.md
-                - name: Reservationer af lagersynlighed
+                - name: Reservationer af Inventory Visibility
                   href: inventory/inventory-visibility-reservations.md
-                - name: Tidsplan for ændring af lagerbeholdningssynlighed og disponibel til tilsagn
+                - name: Tidsplan for ændring af Inventory Visibility og disponibel til tilsagn
                   href: inventory/inventory-visibility-available-to-promise.md
-                - name: Offentlige API'er til lagersynlighed
+                - name: Offentlige API'er til Inventory Visibility
                   href: inventory/inventory-visibility-api.md
-                - name: Tip til lagersynlighed
+                - name: Tip til Inventory Visibility
                   href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligens
           items:
@@ -2921,13 +2923,13 @@
                   href: sales-marketing/customer-portal-setup.md
                 - name: Oprette og administrere debitorportalbrugere
                   href: sales-marketing/customer-portal-user-admin.md
-                - name: Tilpasse og bruge debitorportalen
+                - name: Tilpasse og bruge kundeportalen
                   href: sales-marketing/customer-portal-customize.md
             - name: Handelsrabat
               href: sales-marketing/trade-allowance.md
             - name: Oprette en ny samhandelsaftale
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: Forbedringer af ydeevnen for oprydning i salgshistorikken
+            - name: Planlæg oprydning af data i salgshistorik
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Servicestyring
           items:

@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Platformsopdateringer til version 10.0.25 (april 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Platformsopdateringer til version 10.0.24 (februar 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurere proxyer til lokale miljøer
                       href: deployment/onprem-reverseproxy.md
+                    - name: Installere netværksprinterenheder i lokale miljøer
+                      href: analytics/install-network-printer-onprem.md
                     - name: Diagnosticering i det lokale miljø
                       href: deployment/on-premises-diagnostics.md
                     - name: Gendanne lokal konfiguration for genoprettelse efter nedbrud
@@ -470,7 +470,7 @@
                   href: help/contributor-guide.md
             - name: Overvejelser i forbindelse med udrulning
               items:
-                - name: Indstillinger for selvstændig og lokal cloud-udrulning til Dynamics 365 Finance og Dynamics 365 Supply Chain Management
+                - name: Indstillinger for selvstændig og lokal sky-udrulning til Dynamics 365 Finance og Dynamics 365 Supply Chain Management
                   href: deployment/deployment-options-geo.md
                 - name: Finance og Supply Chain Management i den amerikanske Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: 'Ofte stillede spørgsmål om udviklings- og build-VM''er, der ikke tillader administratoradgang'
                   href: sysadmin/VMs-no-admin-access.md
+                - name: 'Konfigurere VHD, der kan hentes til første brug'
+                  href: dev-tools/vhd-setup.md
                 - name: Omdøbe lokale miljøer for at få adgang til Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Systemkrav til udvikling
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps-filtypenavn (offentlig forhåndsversion)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Azure DevOps-filtypenavn selvstudium (offentlig forhåndsversion)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Microsoft Power Platform-integration
           items:
             - name: Oversigt
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Kør Regression Suite Automation Tool (RSAT) med parallel afvikling
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: Integrer RSAT med Azure DevOps-pipelines
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Fejlfinding
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Frigive løsninger ved hjælp af Lifecycle Services

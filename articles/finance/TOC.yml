@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Startside for Dynamics 365 Finance
+        - name: Dynamics 365 Finance Startside
           href: index.md
         - name: Nyheder eller ændringer
           items:
@@ -16,8 +16,6 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (april)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (februar)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -336,13 +334,13 @@
           items:
             - name: Startside for debitor
               href: accounts-receivable/accounts-receivable.md
-            - name: Fastlægge betingelser for debitorbetaling
+            - name: Fastlægge betingelser for kundebetaling
               href: general-ledger/tasks/establish-customer-payment-terms.md
             - name: Fastlægge betalingsmåde for debitor
               href: accounts-receivable/tasks/establish-customer-method-payment.md
-            - name: Fastlægge gebyrer for debitorbetaling
+            - name: Fastlægge gebyrer for kundebetaling
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
-            - name: Indsigt i debitorbetaling (prøveversion)
+            - name: Indsigt i kundebetaling (prøveversion)
               href: accounts-receivable/payment-insights-overview.md
             - name: 'Debitor, posteringsprofiler'
               href: accounts-receivable/customer-posting-profiles.md
@@ -418,21 +416,37 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiere en faktureringstidsplan
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Funktioner i faktureringsplaner
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milepælsfakturering
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Support- og fornyelsesproces
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: Planer for forbrugerprisindeks
+                      href: accounts-receivable/cpischedules.md
                     - name: Afslut faktureringstidsplaner
                       href: accounts-receivable/terminate-billing-schedule.md
-                - name: Udskydelser af indtægter og udgifter
-                  items: null
-                - name: Indtægtsfordeling af flere varer
-                  items: null
+                - name: Udskydelser af omsætning og udgifter
+                  items:
+                    - name: Konfigurer udskydelser af omsætning og udgifter
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: Udskydelsesplaner
+                      items:
+                        - name: Opret udskydelsesplaner
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: Udskyde standardposteringer
+                          href: accounts-receivable/sb-deferral-transactions.md
+                - name: Omsætningsfordeling af flere varer
+                  items:
+                    - name: Konfigurer omsætningsfordeling af flere varer
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: Betalinger og udligninger
               items:
-                - name: Oversigt over debitorbetalinger
+                - name: Oversigt over kundebetalinger
                   href: cash-bank-management/tasks/customer-payment-overview.md
                 - name: Centraliserede betalinger for debitor
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
-                - name: Deponere debitorbetalinger
+                - name: Deponere kundebetalinger
                   href: accounts-receivable/tasks/deposit-customer-payments.md
                 - name: Oversigt over SEPA Direct Debit
                   href: accounts-receivable/sepa-direct-debit-overview.md
@@ -440,15 +454,15 @@
                   href: accounts-receivable/sepa-direct-debit-mandate.md
                 - name: Oprette en ny bemyndigelse til direkte debitering til en debitor
                   href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-                - name: 'Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder'
+                - name: 'Bruge en kundebetaling til at udligne flere fakturaer, der spænder over flere rabatperioder'
                   href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
-                - name: Udligne delvis debitorbetaling eller endelig betaling før rabat
+                - name: Udligne delvis kundebetaling eller endelig betaling før rabat
                   href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
-                - name: Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen
+                - name: Udligne en delvis kundebetaling før rabatdatoen med en endelig betaling efter rabatdatoen
                   href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
-                - name: Udligne en delvis debitorbetaling med rabatter på kreditnotaer
+                - name: Udligne en delvis kundebetaling med rabatter på kreditnotaer
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-                - name: 'Udligne en delvis debitorbetaling, der omfatter flere rabatperioder'
+                - name: 'Udligne en delvis kundebetaling, der omfatter flere rabatperioder'
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
                 - name: Debitorforudbetalinger
                   href: accounts-receivable/customer-prepayments.md
@@ -922,6 +936,8 @@
               items:
                 - name: Planlægge din kontoplan
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Planlægge din lokale kontoplan
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Hovedkonti
                   items:
                     - name: Hovedkontotyper
@@ -1194,7 +1210,7 @@
               items:
                 - name: Konfigurere Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Aktivere forudsigelser om debitorbetalinger
+                - name: Aktivere forudsigelser om kundebetalinger
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktivere likviditetsbudget
                   href: finance-insights/enable-cash-flow-forecasting.md
@@ -1208,7 +1224,7 @@
                   items:
                     - name: Resultater fra modeller til maskinel indlæring
                       href: finance-insights/confusion-matrix.md
-                    - name: Evaluer den indledende forudsigelsesmodel for debitorbetalinger
+                    - name: Evaluer den indledende forudsigelsesmodel for kundebetalinger
                       href: finance-insights/evaluate-payment-prediction.md
                     - name: Forbedre forudsigelsesmodellen
                       href: finance-insights/improve-model.md
@@ -1222,9 +1238,9 @@
                   href: finance-insights/cash-position.md
                 - name: Likviditetsbudget
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Forudsigelser om debitorbetalinger
+                - name: Forudsigelser om kundebetalinger
                   href: finance-insights/payment-insights-overview.md
-                - name: Bruge forudsigelser om debitorbetalinger
+                - name: Bruge forudsigelser om kundebetalinger
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Oversigt over øjebliksbilleder
                   href: finance-insights/payment-snapshots.md
@@ -1898,9 +1914,9 @@
                   href: localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
                 - name: Beregne rente og bøder for kreditorbetalinger
                   href: localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-                - name: Konfigurere rente og bøder for debitorbetalinger
+                - name: Konfigurere rente og bøder for kundebetalinger
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-                - name: Beregne rente og bøder for debitorbetalinger
+                - name: Beregne rente og bøder for kundebetalinger
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Opsætte bankkontonumre for Brasilien
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
@@ -1952,7 +1968,7 @@
                       href: localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
                     - name: Indeholdt skat
                       href: localizations/tasks/br-00009-brazilian-withholding-taxes.md
-                    - name: A-skat på debitorbetalinger
+                    - name: A-skat på kundebetalinger
                       href: localizations/tasks/br-00042-withholding-taxes-customers-payments.md
                     - name: A-skat på kreditorbetalinger
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: Konfigurere NAF-koder og Siret-numre
                   href: localizations/tasks/fr-00003-naf-codes-siret-numbers.md
-                - name: Bødestraf for forfaldne debitorbetalinger
+                - name: Bødestraf for forfaldne kundebetalinger
                   href: localizations/emea-fra-apply-penalty-customer-payment-past-due.md
                 - name: Bogføre kladde til udstedelse af veksel til protest
                   href: localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
@@ -2938,7 +2954,7 @@
                   href: localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
                 - name: Forringelsesregnskab
                   href: localizations/apac-jpn-impairment-accounting-fixed-assets.md
-                - name: Importere en debitorbetaling i JBA-filformat
+                - name: Importere en kundebetaling i JBA-filformat
                   href: localizations/tasks/import-customer-payment-jba-file-format.md
                 - name: Importere postnumre
                   href: localizations/apac-jpn-import-postal-codes.md
@@ -3092,6 +3108,8 @@
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: CFDI version 3.3
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: CFDI version 4.0
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: Registreringsnumre og andre oplysninger for debitorer
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT-opgørelsesstatus
@@ -3556,7 +3574,7 @@
               items:
                 - name: Oversigt for Schweiz
                   href: localizations/switzerland.md
-                - name: Importere debitorbetalinger i ESR
+                - name: Importere kundebetalinger i ESR
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: Schweizisk QR-regninger
                   href: localizations/emea-che-swiss-qr-bills.md
