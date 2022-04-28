@@ -2,7 +2,7 @@
 title: Opmærksomhed mellem finansudligning og årsafslutning
 description: Dette emne indeholder oplysninger om forbedringer, der påvirker finansudligninger og finansårsafslutninger.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462346"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553326"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Opmærksomhed mellem finansudligning og årsafslutning
 
@@ -48,12 +48,16 @@ For at understøtte de nye forbedringer blev der foretaget ændringer i finansud
 
 På grund af de ændrede funktioner og datamodellen er det vigtigt at overveje følgende, før du aktiverer funktionen:
 
+- Da det kun er udlignede transaktioner, der er hentet frem i startsaldoen, skal du fjerne udligningen af transaktioner fra det indeværende regnskabsår, som er udlignet med transaktioner i det forrige regnskabsår. Transaktionerne skal udlignes igen i forhold til transaktioner i indeværende regnskabsår. Dette kan gøres ved hjælp af en reguleringspost i indeværende regnskabsår. Reguleringen tilbagefører de opsummerede startsaldi og modposterer med den detaljerede transaktion, der er nødvendig for at udligne finansposterne i indeværende år. 
+
+  > [!IMPORTANT]
+  > Hvis dette ikke er gjort, vil du modtage en **balancerer ikke**-fejl, når du kører årsslutslutning for det indeværende regnskabsår. Hvis det ikke er muligt at fjerne udligning og gentage udligning af finanstransaktionerne med samme regnskabsår, skal du først aktivere denne funktion, når årsafslutningen er gennemført. Aktivér funktionen umiddelbart efter, at årsafslutningen er fuldført, og før nye finanstransaktioner udlignes i det næste regnskabsår. 
+  
 - Alle posteringer, der er markeret til udligning, men som ikke er udlignet, får fjernet markeringen automatisk, når funktionen aktiveres. Du kan forhindre arbejdstab ved at udligne alle markerede posteringer, før du aktiverer funktionen.
 - Nogle organisationer kører årsafslutningsprocessen flere gange for det samme regnskabsår. Du skal ikke aktivere funktionen, hvis årsafslutningen allerede er kørt en gang, og den vil blive kørt igen for samme regnskabsår. Funktionen skal være aktiveret, før du behandler den første årsafslutning, eller når du har behandlet den sidste årsafslutning for regnskabsåret.
 
   Hvis du vil aktivere funktionen, men årsafslutningen allerede er kørt en gang, skal du tilbageføre årsafslutningen, før du aktiverer funktionen.
 
-- Da udligning på tværs af regnskabsår ikke længere er tilladt, anbefales det, at du aktiverer funktionen, før du starter årsafslutningen. For at sikre, at det næste regnskabsårs startsaldi ikke påvirkes af tidligere udligninger på tværs af regnskabsåret, skal startsaldoposteringen derefter udlignes for det regnskabsår, der afsluttes.
 - Da udligning på tværs af hovedkonti ikke længere er tilladt, skal du justere kontoplanen eller processerne efter behov for at sikre, at finansudligning kan foretages på den samme hovedkonto.
 - Funktionen kan ikke aktiveres, hvis årsafslutningsprocessen for den offentlige sektor bruges.
 

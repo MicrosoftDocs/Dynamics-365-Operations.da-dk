@@ -4,7 +4,8 @@ description: Dette emne indeholder oplysninger om konfiguration af SQL Server Re
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3853158afdab545dacda996c984b265eb8947db7f90faf80319841eb01c14910
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16a35a8dae50cc1bc949f33de87b2beab8b528b3
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726351"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565911"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurere SQL Server Reporting Services for lokal installationer
 
 [!include [banner](../includes/banner.md)]
 
-Brug trinene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) for din Microsoft Dynamics 365 Finance + Operations-installation (lokal).
+Brug trinnene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) til din Microsoft Dynamics 365 Finance + Operations (on-premises)-installation.
 
 1. Åbn programmet Konfigurationsstyring til Reporting Services.
 2. Lad standard **Servernavn** stå, som bør være navnet på den aktuelle computer, og **Rapportserverforekomst**, **MSSQLSERVER**.

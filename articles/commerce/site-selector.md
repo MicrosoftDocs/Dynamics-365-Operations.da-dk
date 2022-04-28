@@ -2,7 +2,7 @@
 title: Webstedsvælgermodul
 description: Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109700"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551688"
 ---
 # <a name="site-picker-module"></a>Webstedsvælgermodul
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109700"
 
 Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
-Når en virksomhed har forskellige websteder på tværs af markeder, områder og landestandarder, skal webstedsbrugere have en nem metode til at skifte mellem websteder og vælge deres foretrukne indkøbssted. For at tage højde for dette scenario kan brugere gennemse flere websteder ved at bruge modulet til valg af websted.
+Når en virksomhed har forskellige websteder på tværs af markeder, områder og landestandarder, skal webstedsbrugere have en nem metode til at skifte mellem websteder og vælge deres foretrukne indkøbssted. For at tage højde for dette scenario kan brugere gennemse flere websteder ved at bruge modulet til valg af websted. En webstedsvælger anbefales også, når der er implementeret [geografisk registrering og omdirigering](geo-detection-redirection.md) til dit e-handelswebsted, så kunderne kan tilsidesætte den præference for websted, som de angiver ved hjælp af modulet [land/områdevælger](country-region-picker-module.md). 
 
-Modulet til valg af websted skal konfigureres med listen over websteder (markeder, områder eller landestandarder), som brugerne kan gennemse.
-
-> [!NOTE]
-> Modulet til valg af websted er tilgængeligt i Dynamics 365 Commerce version 10.0.14.
-
-I følgende illustration vises et eksempel på et modul til valg af websted, der findes i overskriften på en webside.
+Modulet til valg af websted skal konfigureres med listen over websteder (markeder, områder eller landestandarder), som brugerne kan gennemse. I følgende illustration vises et eksempel på et modul til valg af websted, der findes i overskriften på en webside.
 
 ![Eksempel på et modul til valg af websted i en overskrift på en webside.](./media/ecommerce-sitepicker.PNG)
 

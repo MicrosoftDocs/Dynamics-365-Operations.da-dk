@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986352"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565993"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Start her med elektronisk fakturering for Mexico
 
@@ -141,7 +141,7 @@ Hvis du vil sende en CFDI-fakturaannullering, kræves der funktionsopsætninger 
 1. På siden **Opsætning af funktionsversion** skal du under fanen **Variabler** vælge variabelnavnet **DigitalSignatureXSLT**.
 2. I feltet **Værdier** skal du angive: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    hvor: <RelativePath> = mappe\\mappe\\filnavn med dobbelte skråstreger, ContainerName skal angive den container, der bruges til tjenesten.
+    hvor: \<RelativePath\> = mappe\\mappe\\filnavn med dobbelte skråstreger, ContainerName skal angive den container, der bruges til tjenesten.
    
     Variablen kan f.eks. være:
     

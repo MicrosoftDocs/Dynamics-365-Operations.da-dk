@@ -2,7 +2,7 @@
 title: Tekniske versioner og tekniske produktkategorier
 description: Dette emne giver oplysninger om begrebet tekniske versioner. Tekniske versioner sikrer, at forskellige tilstande af et produkt og dets data holdes opdaterede og tydelige, og at de kan visualiseres i systemet.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572883"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553356"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versioner og tekniske produktkategorier
 
@@ -137,7 +137,7 @@ For hver række, du føjer til gitteret, skal du angive følgende felter.
 |---|---|
 | Navn | Vælg den attribut, der skal tilføjes. |
 | Værdi | Vælg standardværdien for attributten. |
-| Obligatorisk | I forbindelse med attributter af typen *Boolesk* skal brugere, hvis denne indstilling er angivet til *Ja*, angive attributten til *Ja*. Hvis denne indstilling er angivet til *Nej*, kan brugere angive attributten til enten *Ja* eller *Nej*. Denne indstilling er kun til orientering for andre datatyper. |
+| Obligatorisk | Vælg, om attributten er obligatorisk, hvilket betyder, at brugerne skal angive en gyldig værdi for attributten, før de kan gemme et produkt. Der kan være mindre forskelle i effekten af denne indstilling afhængigt af datatypen for den valgte attribut, som defineret i følgende liste.<ul><li>**Boolesk** – Angiv dette til *Ja* for at kræve, at attributten skal have værdien *Ja* (systemet afviser at gemme et produkt, hvor attributten er angivet til *Nej*). Angiv denne indstilling til *Nej* for at acceptere værdien *Ja* eller *Nej*. (Attributter af typen *Boolesk* kan ikke have en tom værdi).</li><li>**Heltal eller decimal** – Angiv dette til *Ja*, hvis brugere skal angive en værdi, der ikke er nul, for denne attribut. Angiv indstillingen til *Nej* for at tillade brugere at gemme med værdien nul.  (Attributter af disse typer kan ikke have en tom værdi).</li><li>**Liste** – Lister har datatypen *Tekst*, men omfatter også en foruddefineret liste over mulige værdier. Derfor er det ikke muligt at angive en tom værdi for attributter af denne type, så denne indstilling har ingen virkning og er kun til orientering.</li><li>**Alle andre datatyper** – Angiv dette til *Ja* for at gøre attributten obligatorisk. Angiv dette til *Nej* for at tillade brugere at gemme et produkt uden at angive en værdi for denne attribut.</li></ul> |
 | Batchattribut | Vælg, om attributten skal udbredes via batchfunktionen. |
 
 ### <a name="readiness-policy-fasttab"></a>Oversigtspanelet Parathedspolitik

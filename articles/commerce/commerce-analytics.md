@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349737"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550001"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyser (forhåndsversion)
 
@@ -352,15 +352,20 @@ Siden **Impressionsrapport** indeholder følgende målepunkter:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Aktivere og konfigurere Commerce-analyser (forhåndsversion)
 
-Hvis du vil installere Commerce-analyser (forhåndsversion), skal du have rettigheder til at oprette ressourcer i et Azure-abonnement. Du skal også have rettigheder til at installere tilføjelsesprogram i LCS. 
+Hvis du vil installere Commerce-analyser (forhåndsversion), skal du have rettigheder til at oprette ressourcer i et Azure-abonnement. Du skal også have rettigheder til at installere tilføjelsesprogram i LCS.
 
 Hvis du vil aktivere og konfigurere Commerce-analyser (forhåndsversion), skal du følge disse trin.
 
-1. [Aktivere og konfigurere tilføjelsesprogrammet Eksportér til Data Lake](#enableExportToDataLake).
-1. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
-1. [Føj hemmeligheder til Key Vault](#addSecrets).
-1. [Aktivere og konfigurere tilføjelsesprogram for Commerce-analyser (forhåndsversion)](#enableCommerceAnalyticsAddin).
-1. [Installere skabelonappen Power BI](#powerbi).
+1. [Send formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)](#joinPreview)
+2. [Aktivere og konfigurere tilføjelsesprogrammet Eksportér til Data Lake](#enableExportToDataLake).
+3. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
+4. [Føj hemmeligheder til Key Vault](#addSecrets).
+5. [Aktivere og konfigurere tilføjelsesprogram for Commerce-analyser (forhåndsversion)](#enableCommerceAnalyticsAddin).
+6. [Installere skabelonappen Power BI](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Send formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)
+
+Send [Formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)](https://forms.office.com/r/vW5VLJGXZ2). Når din anmodning er behandlet, sendes der en bekræftelsesmail til den mailadresse, du har angivet i formen.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Aktivere og konfigurere tilføjelsesprogrammet Eksportér til Data Lake
 

@@ -2,7 +2,7 @@
 title: Start her med momsberegning
 description: Dette emne beskriver, hvordan du konfigurerer momsberegning.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952515"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558307"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
@@ -36,7 +36,7 @@ Opsætningen består af tre hovedtrin.
 
 ## <a name="high-level-design"></a>Overordnet design
 
-### <a name="runtime-design"></a>Kørselsdesign
+### <a name="runtime-design"></a><a name="runtime"></a> Kørselsdesign
 
 I følgende illustration vises det overordnede kørselsdesign af momsberegning. Da momsberegning kan integreres med flere Dynamics 365-apps, bruger illustrationen integrationen med Finance som et eksempel.
 
@@ -95,6 +95,14 @@ Før du kan fuldføre trinnene de resterende procedurer i dette emne, skal følg
 - Følgende funktioner skal være aktiveret i arbejdsområdet **Funktionsstyring** i dit installerede RCS-miljø.
 
     - Globaliseringsfunktioner
+
+- Følgende roller skal tildeles brugerne i RCS-miljøet efter behov:
+
+    - Udvikler til elektronisk rapportering
+    - Udvikler af funktion til globalisering
+    - Udvikler af momsprogram
+    - Funktionel konsulent for momsprogram
+    - Tjenesteudvikler for moms
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Konfigurere momsberegning i LCS
 
@@ -203,6 +211,9 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | Sales            | DEU       | FRA     | DEU_EU       |
     | Sales            | BEL       | BEL     | BEL_Indland |
     | Sales            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Hvis standardmomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i dette emne.
 
 22. Under fanen **Anvendelse af varemomsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momskode, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Varemomsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen for varesalg på transaktionslinjen.
 
@@ -212,6 +223,9 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | --------- | -------------- |
     | D0001     | Fuld           |
     | D0003     | Reduceret        |
+
+    > [!NOTE]
+    > Hvis standardvaremomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i dette emne.
 
     Yderligere oplysninger om, hvordan momskoder fastsættes i Momsberegning, finder du i [Logik for fastlæggelse af momsgruppe og varemomsgruppe](global-sales-tax-group-determination.md).
 

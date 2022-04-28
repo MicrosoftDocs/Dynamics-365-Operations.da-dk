@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524515"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547782"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
 
@@ -51,9 +51,10 @@ Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power App
 
 | Funktionsstyringsnavn | Beskrivelse |
 |---|---|
-| OnHandReservation | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
-| OnHandMostSpecificBackobjektService | Den viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | Funktionen aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT) (valgfrit). Du kan finde flere oplysninger i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackobjektService* | Denne funktion viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Denne valgfrie funktion aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT). Du kan finde flere oplysninger i [Ændringsplan for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
+| *Aktivér lagerstedsvarer i lagersynlighed* | Denne valgfrie funktion gør det muligt for lagersynlighed at understøtte varer, der er aktiveret til avancerede lagerstedsprocesser (WHS-varer). Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WHS-varer](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finde tjenestens slutpunkt
 
@@ -61,7 +62,7 @@ Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du
 
 ## <a name="data-source-configuration"></a>Konfiguration af datakilde
 
-Datakilden repræsenterer det system, dataene kommer fra. Datakildenavne omfatter f.eks. `fno` (hvilket betyder "Dynamics 365 Finance og drift-apps") og `pos` (hvilket står for "point of sale" – salgssted). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
+Datakilden repræsenterer det system, dataene kommer fra. Datakildenavne omfatter f.eks. `fno` (hvilket står for "Dynamics 365-programmer til finans og drift") og `pos` (hvilket står for "point of sale" – salgssted). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
 
 > [!NOTE]
 > Datakilden `fno` er reserveret til Supply Chain Management. Hvis tilføjelsesprogrammet Lagersynlighed er integreret med et Supply Chain Management-miljø, anbefales det, at du ikke sletter konfigurationer, der er relateret til `fno` i datakilden.

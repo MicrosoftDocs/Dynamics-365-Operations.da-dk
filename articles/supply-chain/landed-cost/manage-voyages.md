@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570940"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570416"
 ---
 # <a name="manage-voyages"></a>Administrere fragter
 
@@ -66,9 +66,9 @@ I følgende tabel beskrives de handlinger, der er tilgængelige i handlingsruden
 | I transit | Opdater feltet **Fragtstatus** til den status for transit, der er oprettet på siden **[Parametre for landingsomkostninger](landed-cost-parameters.md)**. Der er ingen yderligere logik i denne proces. En fragt kan også opdateres automatisk til transitstatus på basis af indstillingerne i [Sporingskontrolcenteret](delivery-information-setup.md).
 | Klar til efterkalkulation | Opdater feltet **Fragtstatus** til Klar til efterkalkulation-status, der er oprettet på siden **[Parametre for landingsomkostninger](landed-cost-parameters.md)**. Det er muligt at efterkalkulere en fragt, når alle fakturaerne er behandlet (både lagerfakturaer og fragtomkostningsfakturaer), og varerne er modtaget. Hvis de forkalkulerede omkostninger, der er tilknyttet en fragt, ikke er blevet efterkalkuleret, opstår der en fejl, når du forsøger at behandle efterkalkulering af en fragt. |
 | Efterkalkuleret | Ryd op i eventuelle uregelmæssigheder i efterkalkulation, efter at der findes en faktura for alle indkøbsordrer og fragtomkostninger. Når du vælger denne knap, vises dialogboksen **Fragtopdatering - Efterkalkuleret**. Her kan du vælge at bogføre på den økonomiske standarddato eller angive en bogføringsdato og derefter køre handlingen. Du kan køre handlingen lige så mange gange, som du vil. Du kan også bruge dialogboksen **Fragtopdatering - Efterkalkuleret** til at oprette en tidsplan for kørsel af handlingen som en periodisk opgave (batchjob). Det anbefales, at handlingen køres regelmæssigt ved at konfigurere den som et batchjob. |
-| Bogfør tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i fragten. Hvis der bruges fragter for flere virksomheder, åbnes en dialogboks til bogføring af en ny tilgangsliste for hvert firma, som skal behandles i alle juridiske enheder. |
-| Bogfør produktkvittering | Bogfør en produktkvittering for alle indkøbsordrelinjer i fragten. Produktkvitteringsprocessen for de indkøbsordrelinjer, der er tilknyttet en fragt, bruges kun, hvis varerne **ikke** gennemgår behandling af varer undervejs. Hvis varerne skal gennemgå behandlingen af varer undervejs, modtager du en fejl, når du forsøger at bogføre produktkvitteringen for en indkøbsordrelinje. Hvis der bruges fragter for flere virksomheder, åbnes en ny dialogboks til bogføring af følgeseddel for hvert firma. |
-| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i fragten. Hvis varerne i fragtsen gennemgår behandlingen af varer undervejs, faktureres indkøbsordrelinjerne, før modtagelsesprocessen er udført. Når den oprindelige indkøbsordre faktureres, oprettes de varer undervejs, som er knyttet til de oprindelige indkøbsordrelinjer. Disse ordrer kan derefter modtages af lagerstedet. Hvis der bruges forsendelser for flere virksomheder, åbnes en ny dialogboks til fakturabogføring for hvert firma. |
+| Bogfør tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i fragten.  |
+| Bogfør produktkvittering | Bogfør en produktkvittering for alle indkøbsordrelinjer i fragten. Produktkvitteringsprocessen for de indkøbsordrelinjer, der er tilknyttet en fragt, bruges kun, hvis varerne **ikke** gennemgår behandling af varer undervejs. Hvis varerne skal gennemgå behandlingen af varer undervejs, modtager du en fejl, når du forsøger at bogføre produktkvitteringen for en indkøbsordrelinje.  |
+| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i fragten. Hvis varerne i fragtsen gennemgår behandlingen af varer undervejs, faktureres indkøbsordrelinjerne, før modtagelsesprocessen er udført. Når den oprindelige indkøbsordre faktureres, oprettes de varer undervejs, som er knyttet til de oprindelige indkøbsordrelinjer. Disse ordrer kan derefter modtages af lagerstedet.  |
 | Forsendelsesflytteordre | Bogfør en fragt af flytteordre for alle flytteordrelinjer i fragten. Når denne knap er valgt, er det kun flytteordrer, der kan opdateres. |
 | Modtag flytteordre | Bogfør en flytteordrekvittering for alle flytteordrelinjer i fragten. |
 | Modtag varer i transit | Modtag alle ordrelinjer, der er i transit, i fragten. Denne knap er en af de tre muligheder, der er tilgængelige for modtagelse af varer i transit i en fragt. (De to øvrige indstillinger er Knappen **Opret modtagelseskladde**, som beskrives senere i denne tabel, og mobilappen Lokationsstyring). Denne indstilling er den simpleste, og den bruges til at behandle varerne i transit ud fra lagerstedet for varer i transit og til det endelige destinationslagersted. Hvis du vil have mere kontrol over processen, skal du bruge modtagelseskladden eller en mobilenhed til at behandle varemodtagelsen. |
@@ -84,7 +84,7 @@ I følgende tabel beskrives de knapper, der er tilgængelige i handlingsruden un
 
 | Knap | Beskrivelse |
 |---|---|
-| Tilgangsliste | Åbn en liste over produktkvitteringer for alle indkøbsordrelinjer i fragten. Hvis der bruges fragter for flere virksomheder, åbnes en ny tilgangsliste for hvert firma. Hvis der ikke er behandlet nogen produktkvitteringslister, er denne knap ikke tilgængelig. |
+| Tilgangsliste | Åbn en liste over produktkvitteringer for alle indkøbsordrelinjer i fragten.  Hvis der ikke er behandlet nogen produktkvitteringslister, er denne knap ikke tilgængelig. |
 | Produktkvittering | Åbn produktkvitteringsposten for de indkøbsordrelinjer, der er tilknyttet fragten, hvis den pågældende post bruges. Hvis der ikke er bogført nogen produktkvitteringer, er denne knap ikke tilgængelig. Produktkvitteringsprocessen bruges ikke, hvis du bruger behandling af varer undervejs. |
 | Varemodtagelse | Åbn varemodtagelseskladden, hvis den bruges. |
 | Sporing | Åbn siden **Indgående sporing**, hvor du kan opdatere den forventede modtagelsesdato for varer i en forsendelsescontainer og en fragt og efterfølgende opdatere de forventede leveringsdatoer for indkøbsordrelinjer. |

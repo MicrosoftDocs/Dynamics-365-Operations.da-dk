@@ -2,7 +2,7 @@
 title: Opret salgsordrer
 description: Denne procedure viser, hvordan du opretter en salgsordre.
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566283"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551718"
 ---
 # <a name="create-sales-orders"></a>Opret salgsordrer
 
@@ -66,5 +66,7 @@ De produkter, der sælges af organisationen, kan findes i varianter, der er diff
     
 3. Vælg **OK**.
 
+## <a name="sales-order-creation-performance-enhancement"></a>Forbedringer af ydeevne for oprettelse af salgsordre
+Den nye funktion, der introduceres med versionen 10.0.26 af programmet, reducerer den ekstra postoprettelse til tabellerne **SourceDocumentHeader** og **SourceDocumentLine**. Ydeevnen er forbedret, og lagerstørrelsen reduceres, da disse poster ikke oprettes. Disse underliggende tabeller i kildedokumentets struktur bruges ikke til salgsordrer i produktet på nuværende tidspunkt, og der er ingen planer om at bruge dem. Aktivering af denne funktion betragtes som en sikker ændring for at forbedre ydeevnen. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 711681ab38fb24b57a83f008f86a8261176aa5a5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388584"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612339"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Designe et ER-format for at holde rækker sammen på samme Excel-side
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emne forklarer, hvordan en bruger i rollen Systemadministrator eller Funktionel konsulent i elektronisk rapportering kan konfigurere et [ER-format (elektronisk rapportering)](general-electronic-reporting.md) som et [format](er-overview-components.md#format-component), der genererer udgående dokumenter i Microsoft Excel og administrerer sideinddeling af dokumenter, så rækker, der oprettes, bevares på samme side.
 

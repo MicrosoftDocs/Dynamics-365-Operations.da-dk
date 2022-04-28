@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752802"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548074"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -816,7 +816,7 @@ Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program t
 | Som leverandør kan du få oplysninger om mængden konsignationslager, der er overført til kunden. | Når en kunde skal faktureres, skal leverandøren bruge oplysninger om de råvarer, der blev købt fra konsignationslager, og købsdatoen. Leverandøren kan også overvåge den disponible lagerbeholdning hos kunden ved hjælp af grænsefladen for leverandørsamarbejde. |
 | Flytte leverandørejet lager ved hjælp af en overførselskladde. | For at spore den fysiske placering af det lager, der ejes af leverandøren, skal du kunne registrere placeringen i systemet. Med en overførselskladde kan du registrere fysisk flytning af lageret, f.eks bevægelser fra én lokation i et lagersted til en anden lokation i det pågældende lagersted. |
 | Justere leverandørejet lager ved hjælp af en optællingskladde. | Det er vigtigt, at du holder systemets disponible lagerbeholdning synkroniseret med det faktiske fysiske lager. Det lager, der ejes af leverandøren, kan justeres ind og ud ved hjælp af optællingsprocesser som justering af antal og optællingskladdeprocesser. |
-| Få mere at vide om understøttelse af konsignation i Dynamics 365 for Operations | Find flere oplysninger om understøttelse af konsignationsprocesser i [Konsignation](../../../supply-chain/inventory/consignment.md), [Konfigurere konsignation](../../../supply-chain/inventory/set-up-consignment.md), [Oprette en genopfyldningsordre til konsignation (opgaveguide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Ændre ejerskabet af konsignationslager baseret på produktionsbehov (opgaveguide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Få mere at vide om understøttelse af konsignation i Dynamics 365 for Operations | Find flere oplysninger om understøttelse af konsignationsprocesser i [Konsignation](../../../supply-chain/inventory/consignment.md), [Konfigurere konsignation](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Oprette en genopfyldningsordre til konsignation (opgaveguide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Ændre ejerskabet af konsignationslager baseret på produktionsbehov (opgaveguide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Kreditorsamarbejde (tidligere kendt som leverandørportalen)
 
@@ -942,7 +942,7 @@ Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program t
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
+[Nyheder eller ændringer på startside for Finance and Operations](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

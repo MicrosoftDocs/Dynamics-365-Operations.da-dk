@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715224"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547976"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning
 
@@ -29,8 +29,8 @@ ms.locfileid: "7715224"
 Brugen af Microsoft Dynamics Lifecycle Services (LCS) som opbevaringslager for konfigurationer af elektronisk rapportering (ER) udfases. Denne udfasning omfatter følgende ændringer:
 
 - Microsoft-producerede konfigurationer, der bruges i Microsoft Dynamics 365-programmer, vil ikke længere blive publiceret til biblioteket Delte aktiver i LCS. De vil i stedet kun blive publiceret via RCS Global-lageret. Konfigurationer til Dynamics AX 2012 vil dog fortsat blive udgivet til det delte aktivbibliotek i LCS, indtil den understøttende livscyklussen for AX 2012 slutter.
-- De funktioner, du kan bruge til at uploade konfigurationer til biblioteket Projektaktiver i LCS fra Finance and Operations-apps og fra RCS, deaktiveres. Du kan dog stadig bruge browseren i LCS til at uploade konfigurationer til biblioteket Projektaktiver. Du vil derfor stadig kunne føje konfigurationer til LCS, så de kan indgå i løsningspakker.
-- Import af konfigurationer fra LCS vil fortsat være tilgængelig og understøttet i Finance and Operations-apps og i RCS i en periode. Men funktionen vil i sidste ende blive udfaset? (Den præcise udfasningsdato oplyses senere).
+- De funktioner, du kan bruge til at uploade konfigurationer til biblioteket Projektaktiver i LCS fra programmer til finans og drift og fra RCS, deaktiveres. Du kan dog stadig bruge browseren i LCS til at uploade konfigurationer til biblioteket Projektaktiver. Du vil derfor stadig kunne føje konfigurationer til LCS, så de kan indgå i løsningspakker.
+- Import af konfigurationer fra LCS vil fortsat være tilgængelig og understøttet i programmer til finans og drift og i RCS i en periode. Men funktionen vil i sidste ende blive udfaset? (Den præcise udfasningsdato oplyses senere).
 
 ## <a name="deprecation-notice"></a>Meddelelse om udfasning
 
@@ -52,7 +52,7 @@ Importér alle nødvendige konfigurationer fra LCS til RCS, og publicer dem dere
 
 1. Hvis en RCS-forekomst ikke allerede er tilgængelig, kan du klargøre den. Du kan finde flere oplysninger under [Oversigt over RCS](rcs-overview.md).
 2. I den klargjorte RCS-forekomst skal du registrere det relevante LCS-lager for alle LCS-projekter i aktivbiblioteket, som omfatter afledte ER-konfigurationer.
-3. Importér ER-konfigurationerne fra LCS-lageret til RCS. Du kan finde flere oplysninger under [Importere konfigurationer fra LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Importér ER-konfigurationerne fra LCS-lageret til RCS. Du kan finde flere oplysninger under [Importere konfigurationer fra LCS](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. Hvis det globale lager ikke leveres automatisk, skal du registrere det i RCS.
 5. Upload alle afledte konfigurationer fra den aktuelle RCS-forekomst til det globale lager. Brug funktionen **Konfigurationspakker** for at få hjælp til at uploade. Yderligere oplysninger finder du i [Uploade et globalt RCS-lager](rcs-global-repo-upload.md).
 
@@ -73,7 +73,7 @@ Brug globaliseringslageret til følgende formål:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Betyder denne ændring, at LCS ikke kan bruges som centrallager til konfigurationer?
 
-Ja. De funktioner, du kan bruge til at uploade konfigurationer til biblioteket Projektaktiver i LCS fra Finance and Operations-apps, udfases. Du kan dog stadig bruge browseren i LCS til at uploade konfigurationer til biblioteket Projektaktiver efter behov.
+Ja. De funktioner, du kan bruge til at uploade konfigurationer til biblioteket Projektaktiver i LCS fra programmer til finans og drift, udfases. Du kan dog stadig bruge browseren i LCS til at uploade konfigurationer til biblioteket Projektaktiver efter behov.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Jeg troede, at RCS var erstatningslager for import af globale skabelonfiler. Jeg vidste ikke, at det er brugt til butikskonfigurationer. Hvad er korrekt?
 
@@ -81,7 +81,7 @@ RCS er en designtjeneste til oprettelse og redigering af ER-konfigurationer. RCS
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Uden LCS hvad er så en foreslået metode til butikskonfigurationer, så konfigurationer af "test" og "produktion" nemt kan administreres og overføres?
 
-RCS bruger begrebet *tilsluttet applikation*. Et tilsluttet applikation danner en forbindelse mellem RCS og alle forekomster af Finance and Operations-apps. Da RCS kan bruges til at redigere konfigurationer, kan den tilsluttede applikation bruges til at overføre konfigurationerne direkte fra designeren til Finance and Operations-appmiljøer. Du kan derfor hurtigt ændre og teste konfigurationerne i stedet for at skulle gennemgå LCS-lagring på projektniveau.
+RCS bruger begrebet *tilsluttet applikation*. Et tilsluttet applikation danner en forbindelse mellem RCS og alle forekomster af programmer til finans og drift. Da RCS kan bruges til at redigere konfigurationer, kan den tilsluttede applikation bruges til at overføre konfigurationerne direkte fra designeren til miljøer for programmer til finans og drift. Du kan derfor hurtigt ændre og teste konfigurationerne i stedet for at skulle gennemgå LCS-lagring på projektniveau.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Er der nogen eksempler, der viser opsætningen og administrationen?
 
@@ -104,4 +104,4 @@ Du kan finde flere oplysninger om produktsupport i [oversigten Dynamics-globalis
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Hvad er omkostningerne for at bruge RCS?
 
-RCS og globaliseringslageret leveres gratis som en del af eksisterende Finance and Operations-applicenser. Der er ikke særlige omkostninger for brugen af RCS-designtjenesten eller lagring af konfigurationer i det globale lager. Der er i øjeblikket ingen grænser for antallet af konfigurationer eller tilknyttede programmer.
+RCS og globaliseringslageret leveres gratis som en del af eksisterende licenser til programmer til finans og drift. Der er ikke særlige omkostninger for brugen af RCS-designtjenesten eller lagring af konfigurationer i det globale lager. Der er i øjeblikket ingen grænser for antallet af konfigurationer eller tilknyttede programmer.

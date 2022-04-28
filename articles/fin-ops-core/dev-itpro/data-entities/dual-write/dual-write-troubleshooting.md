@@ -2,19 +2,19 @@
 title: Generel fejlfinding
 description: Dette emne indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062332"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554593"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -29,20 +29,31 @@ Dette emne indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mel
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivere og åbne plug-in-sporingslogge i Dataverse for at få vist oplysninger om fejl
 
+Sporingslogge kan være nyttige, når du foretager fejlfinding af problemer med dynamiske synkroniseringer af dobbeltskrivning mellem Finance & Operations og Dataverse. Logfilerne kan give specifikke oplysninger til de teams, der leverer teknisk support til Dynamics 365. I denne artikel beskrives det, hvordan sporingslogfiler aktiveres, og hvordan de kan vises. Sporingslogfiler administreres på siden Dynamics 365-indstillinger og kræver rettigheder på administratorniveau for at kunne ændre og se dem. 
+
 **Følgende rolle er påkrævet for at kunne aktivere sporingsloggen og få vist fejl:** systemadministrator
 
+### <a name="turn-on-the-trace-log"></a>Aktivere sporingsloggen
 Udfør følgende trin for at aktivere sporingsloggen.
 
-1. Log på Customer Engagement-appen, åbn siden **Indstillinger**, og vælg derefter **Administration** under **System**.
-2. På siden **Administration** skal du vælge **Systemindstillinger**.
-3. Under fanen **Tilpasning** i kolonnen **Plug-in og brugerdefineret sporing af arbejdsgangsaktivitet** skal du vælge **Alle** for at aktivere sporingslogfilen for plug-in'en. Hvis du kun vil logføre sporingslogge, når der opstår undtagelser, kan du vælge **Undtagelse** i stedet.
+1.  Log på Dynamics 365, og vælg **Indstillinger** på den øverste navigationslinje. Klik på **Administration** på siden Systemer.
+2.  På siden Administration skal du klikke på **Systemindstillinger**.
+3.  Vælg fanen **Tilpasning** og plug-in, og i sektionen for sporing af brugerdefineret arbejdsflow skal du ændre rullelisten til **Alle**. Dette sporer alle aktiviteter og leverer et omfattende sæt data til de teams, der skal gennemgå potentielle problemer.
 
+> [!NOTE]
+> Når du indstiller rullelisten til **Undtagelse**, leveres der kun sporingsoplysninger, når der opstår undtagelser (fejl).
 
+Når sporingslogfilerne i plug-in er aktiveret, fortsætter de med at blive indsamlet, indtil de er slået fra manuelt, ved at vende tilbage til dette sted og vælge **Fra**.
+
+### <a name="view-the-trace-log"></a>Se sporingsloggen
 Udfør følgende trin for at få vist sporingsloggen.
 
-1. Log på Customer Engagement-appen, åbn siden **Indstillinger**, og vælg derefter **Plug-in-sporingslogfil** under **Tilpasning**.
-2. Find sporingslogfilerne, hvor kolonnen **Typenavn** er indstillet til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Dobbeltklik på et element for at få vist hele loggen, og gennemse derefter **Message Block**-teksten i oversigtspanelet **Udførelse**.
+1. Vælg **Indstillinger** på den øverste navigationslinje på siden Dynamics 365-indstillinger. 
+2. Vælg **Plug-in-sporingslogfil** i sektionen **Tilpasninger** på siden.
+3. Du kan finde poster på listen over sporingslogfiler baseret på typenavn og/eller meddelelsesnavn.
+4. Åbn den ønskede post for at få vist hele loggen. Meddelelsesblokken i sektionen Udførelse har tilgængelige oplysninger til denne plug-in. Hvis det er tilgængeligt, vil der også være undtagelsesoplysninger. 
+
+Du kan kopiere indholdet af sporingslogfilerne og indsætte dem i et andet program, f.eks. Notesblok eller andre værktøjer, for at få vist logfiler eller tekstfiler, så det er nemmere at se alt indholdet. 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finans- og driftsapps
 
@@ -69,6 +80,34 @@ Dobbeltskrivningsfejl, der stammer fra Dataverse, kan forekomme i Finans- og dri
 5. Åbn Logbog.
 6. Vælg **Logfiler for programmer og tjenester \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operationel**.
 7. Gennemse listen over seneste fejl.
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>Landingsside for brugergrænseflade til dobbeltskrivning er blank
+Når du åbner siden til dobbeltskrivning i Microsoft Edge eller Google Chrome-browseren, indlæses startsiden ikke, og du får vist en tom side eller en fejl som f.eks. "Noget gik galt".
+I Devtools vises en fejl i konsollogfilerne:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Kunne ikke læse egenskaben 'sessionStorage' fra 'Vindue': Adgang er afvist for dette dokument. ved t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) ved ny t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) ved Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) ved jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) ved Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) ved Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) ved Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) ved vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) ved hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+Brugergrænsefladen bruger browserens 'sessionslager' til at gemme nogle egenskabsværdier til indlæsning af startsiden. For at dette kan fungere skal der være tilladt tredjeparts cookies i webstedets browser. Fejlen opstår, når brugergrænsefladen ikke kan få adgang til sessionslageret. Der kan være to scenarier, hvor dette problem kan opstå:
+
+1.  Du åbner brugergrænsefladen i inkognito-tilstand i Edge/Chrome og tredjeparts-cookies er blokeret i inkognito-tilstand.
+2.  Du har blokeret tredjeparts-cookies helt i Edge/Chrome.
+
+### <a name="mitigation"></a>Afhjælpning
+Tredjeparts cookies skal være tilladt i browserindstillingerne.
+
+### <a name="google-chrome-browser"></a>Google Chrome-browser
+1. mulighed:
+1.  Gå til indstillinger ved at indtaste chrome://settings/ på adresselinjen, og gå derefter til Sikkerhed og privatliv -> Cookies og andre websitedata.
+2.  Vælg 'Tillad alle cookies'. Hvis du ikke ønsker at gøre dette, skal du vælge den anden mulighed.
+
+2. mulighed:
+1.  Gå til indstillinger ved at indtaste chrome://settings/ på adresselinjen, og gå derefter til Sikkerhed og privatliv -> Cookies og andre websitedata.
+2.  Hvis der er valgt 'Bloker tredjeparts cookies i inkognito' eller 'Bloker tredjeparts cookies' er valgt, skal du gå til 'Websteder, der altid kan bruge cookies' og klikke på **Tilføj**. 
+3.  Tilføj navnet på dit websted for Finance & Operations-apps - https://<din_FinOp_forekomst>.cloudax.dynamics.com. Sørg for at markere afkrydsningsfeltet "Alle cookies, kun på dette websted". 
+
+### <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
+1.  Gå til Indstillinger - > Tilladelser for webstedet - > Cookies og webstedsdata.
+2.  Deaktiver 'Bloker cookies fra tredjepart'.  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Frakoble og tilknytte et andet Dataverse-miljø fra Finans- og driftsapps
 
@@ -97,14 +136,14 @@ Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge 
 
 Supportteamet skal muligvis gennemse netværksspor for at udføre fejlfinding af visse problemer. Hvis du vil oprette et netværksspor, skal du følge disse trin:
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Google Chrome-browser
 
 1. Tryk på **F12** under den åbne fane, eller vælg **Udviklingsværktøjer** for at åbne udviklingsværktøjerne.
 2. Åbn fanen **Netværk**, og skriv **integ** i filtertekstfeltet.
 3. Kør scenariet, og vær opmærksom på de anmodninger, der logføres.
 4. Højreklik på indtastningerne, og vælg **Gem alle som en HAR med indhold**.
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Microsoft Edge-browser
 
 1. Tryk på **F12** under den åbne fane, eller vælg **Udviklingsværktøjer** for at åbne udviklingsværktøjerne.
 2. Åbn fanen **Netværk**.

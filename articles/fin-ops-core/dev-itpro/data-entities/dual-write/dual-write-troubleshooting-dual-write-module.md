@@ -2,19 +2,19 @@
 title: Fejlfinde fejl med dobbeltskrivning i Finans og drift-apps
 description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finans- og driftsapps.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061802"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565960"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Fejlfinde fejl med dobbeltskrivning i Finans og drift-apps
 
@@ -70,6 +70,21 @@ Du kan få vist følgende fejlmeddelelse, når du forsøger at standse tabeltilk
 Denne fejl opstår, når det sammenkædede Dataverse-miljø ikke er tilgængeligt.
 
 Du kan løse problemet ved at oprette en supportanmodning til dataintegrationsteamet. Tilknyt netværkssporingen, så dataintegrationsteamet kan markere tilknytningerne som **Kører ikke** i backend.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktivere parallel behandling i programmer til finans og drift for at forbedre ydeevnen
+
+Hvis du aktiverer parallel behandling, kan det reducere den tid, det tager at importere data fra programmer til finans og drift til kundeengagementsapps og Microsoft Dataverse. 
+
+Følg disse trin for at aktivere parallel behandling i programmer til finans og drift.
+
+1. Log på dit finans- og driftsmiljø.
+2. Gå til **Datastyring > Rammeparametre**.
+3. Vælg **Enhedsindstillinger**, og vælg **Konfigurer parametre for enhedsudførelse**.
+4. Tilføj parametrene for parallel behandling:
+    - **Antal poster for importtærskel** – Det antal poster, der skal opfyldes, før parallel behandling aktiveres.
+    - **Antal importopgaver** – Det antal tråde (opgaver), der skal køres parallelt.
+5. Vælg **Gem**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Der opstod fejl under forsøg på at starte en tabeltilknytning
 

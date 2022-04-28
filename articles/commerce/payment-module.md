@@ -2,7 +2,7 @@
 title: Betalingsmodul
 description: Dette emne omhandler betalingsmodulet og forklarer, hvordan du kan konfigurere det i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952463"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565723"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -74,6 +74,8 @@ I følgende illustration vises et eksempel på den PayPal-iFrame, der aktiveres 
 | Tilsidesæt betalingstype | Kode for overlappende typografiark (CSS) | Da betalingsmodulet er knyttet til en iframe, er der begrænsede formateringsfunktioner. Du kan foretage en del formatering ved hjælp af denne egenskab. Hvis du vil tilsidesætte webstedets typografier, skal du indsætte CSS-koden som værdien for denne egenskab. Webstedsgeneratorens CSS-tilsidesættelser og -typografier gælder ikke for dette modul. |
 |Understøttede betalingsmiddeltyper| Streng| Hvis der er konfigureret flere betalingsconnectorer, skal du angive strengen for understøttede betalingsmiddeltype, som defineret i konfigurationen af Commerce Headquarters-betalingsconnectoren (se følgende billede). Hvis feltet er tomt, anvendes som standard Adyen-betalingsconnectoren. Tilføjet i Commerce version 10.0.14.|
 |Er primær betaling|  **Sand** eller **Falsk** | Hvis **Sand**, genereres eventuelle fejlmeddelelser fra den primære betalingsconnector på betalingssiden. Hvis både Adyen- og PayPal-betalingsconnectorer er konfigureret, skal du indstille Adyen til **Sand**, som blev tilføjet i Commerce-version 10.0.14.|
+|Brug connector-id| **Sand** eller **Falsk** | Brug denne egenskab, hvis der er konfigureret flere betalingsconnectorer for webstedet. Hvis **Sand**, skal connectorer bruge connector-id'et til betalingskorrelation.|
+|Brug browserangivet sprogkode til iFrame|  **Sand** eller **Falsk** | (Kun Adyen) Hvis **Sand** vil Adyen iFrame gengive sproget baseret på webstedsbrugerens browserkontekst i stedet for at bruge sprogkoden for den Commerce-kanal, der er konfigureret for webstedet. Tilføjet i Commerce version 10.0.27.|
 
 I følgende illustration vises et eksempel på den værdi for **Understøttede betalingsmiddeltype**, der er indstillet til "PayPal" i konfigurationen for betalingsconnectoren i Commerce Headquarters.
 ![Eksempel på understøttede betalingsmiddeltyper i Commerce Headquarters.](./media/ecommerce-paymenttendertypes.png)
