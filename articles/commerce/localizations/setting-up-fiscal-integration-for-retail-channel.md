@@ -2,29 +2,44 @@
 title: Konfigurere regnskabsintegration for Commerce-kanaler
 description: Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462151"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661743"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler. Du kan finde flere oplysninger om regnskabsintegrationen i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Aktivere funktionen i Commerce-hovedkontoret
+
+Hvis du vil aktivere funktioner, der er relateret til funktioner til regnskabsintegration for handelskanaler, skal du følge disse trin.
+
+1. I Commerce-hovedkvarteret skal du gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
+1. Find og aktiver følgende funktioner:
+
+    - **Direkte regnskabsintegration fra kasseapparater** – Denne funktion udvider struktur for regnskabsintegration ved at tilføje funktionen til oprettelse af regnskabsforbindelser, der vil blive kørt i POS. Denne type connector kommunikerer med en finansiel enhed eller tjeneste, der indeholder en API (HTTP Application Programming Interface), og kræver ikke en dedikeret fysisk maskine i butikken. Denne funktionalitet giver f.eks. mulighed for skattemæssig integration for mobile enheder uden at kræve delt hardwarestation.
+    - **Tilsidesættelser af teknisk profil for regnskabsintegration** – Denne funktion gør det muligt at udvide konfigurationen af regnskabsintegration og tilføjer muligheden for at kontrollere forbindelsesparametre på indstillingssiden i et kasseapparat. Når denne funktion er aktiveret, kan du overstyre parametrene for en teknisk profil.
+    - **Regnskabsregistreringstilstand for POS-registre** – Når denne funktion er aktiveret, kan du deaktivere processen til regnskabsregistrering for bestemte POS-registre. Hvis regnskabsregistrering er deaktiveret for et POS-register, kan salgstransaktioner ikke fuldføres på det pågældende kasseapparat.
+    - **Sikkerhedskopiering af lokal lagring af finansiel integration** – Denne funktion udvider funktionerne til håndtering af fejl i regnskabsintegration. Det giver også mulighed for automatisk sikkerhedskopiering af regnskabsregistreringsdata i tilfælde af tab af data, så dataene på det lokale lager gendannes, mens en enhed aktiveres.
+
 ## <a name="set-up-commerce-parameters"></a>Konfigurere Commerce-parametre
 
-1. På siden **Delte parametre for Commerce** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktivér regnskabsintegration** .
+Følg disse trin for at konfigurere Commerce-parametre.
+
+1. På siden **Delte parametre for Commerce** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktivér regnskabsintegration**.
 1. Definer nummerserierne for følgende referencer under fanen **Nummerserier**:
 
     - Regnskabsteknisk profilnummer
@@ -33,8 +48,8 @@ Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunk
 
 1. Definer nummerserien for regnskabsfunktionens profilnummer på siden **Commerce-parametre**.
 
-    > [!NOTE]
-    > Nummerserier er valgfrie. Der kan genereres numre til alle regnskabsintegrationsenheder fra nummerserier eller manuelt.
+> [!NOTE]
+> Nummerserier er valgfrie. Der kan genereres numre til alle regnskabsintegrationsenheder fra nummerserier eller manuelt.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Konfigurer en regnskabsregistreringsproces
 
@@ -43,7 +58,7 @@ Regnskabsintegrationsprocessen består af følgende opgaver:
 - Konfigurer regnskabsconnectorer, som repræsenterer regnskabsenheder eller -tjenester, der bruges til regnskabsmæssige registreringsformål, f.eks. bonprintere.
 - Konfigurer udbydere af dokumenter, der opretter regnskabsdokumenter, som bliver registreret i regnskabsenheder eller -tjenester ved hjælp af regnskabsconnectorer.
 - Konfigurer regnskabsregistreringsprocessen, der definerer en række trin i regnskabsregistreringen og regnskabsconnectorer og regnskabsdokumentudbydere, der bruges til hvert trin.
-- Tildel regnskabsregistreringsprocesser til POS-funktionalitetsprofiler.
+- Tildel regnskabsregistreringsprocessen til POS-funktionalitetsprofiler.
 - Tildel tekniske connectorprofiler til hardwareprofiler.
 - Tildel tekniske connectorprofiler til POS-hardware- eller funktionalitetsprofiler.
 
@@ -176,7 +191,7 @@ Regnskabsregistreringsflowet defineres af regnskabsregistreringsprocessen og ogs
 - Abonnementet på hændelser og transaktioner til regnskabsregistrering er foruddefineret i regnskabsdokumentudbyderen.
 - Udbyderen af regnskabsdokumenter er også ansvarlig for at identificere den regnskabsconnector, der bruges til regnskabsregistrering. Den sammenligner de funktionelle connectorprofiler, der indgår i den regnskabsconnectorgruppe, der er angivet for det aktuelle trin i regnskabsregistreringsprocessen, med den tekniske connectorprofil, der er tildelt til hardwareprofilen for den hardwarestation, der hører sammen med POS.
 - Udbyderen af regnskabsdokumenter bruger indstillingerne for datatilknytning fra konfigurationen af regnskabsdokumentudbyderen til at konvertere transaktions-/hændelsesdata som f.eks. moms og betalinger, mens der oprettes et regnskabsdokument.
-- Når regnskabsdokumentudbyderen genererer et regnskabsdokument, kan regnskabsconnectoren enten sende det til regnskabsenheden, som det er, eller opdele det og omdanne det til en sekvens af kommandoer for enhedens API (application programming interface), afhængigt af den kommunikation, der håndteres.
+- Når regnskabsdokumentudbyderen genererer et regnskabsdokument, kan regnskabs-connectoren enten sende det til regnskabsenheden, som det er, eller opdele det og omdanne det til en sekvens af kommandoer for enhedens API, afhængigt af den kommunikation, der håndteres.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Konfigurere kasseapparater med begrænsninger for regnskabsregistrering
 
@@ -283,4 +298,21 @@ For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du ti
     1. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Få vist forbindelsesparametre og andre oplysninger i POS
+
+Få vist forbindelsesparametre og andre oplysninger i POS ved at gøre følgende.
+
+1. Åbn MPOS (Modern POS) eller Cloud POS (CPOS).
+1. Vælg **Indstillinger**. Hvis regnskabsintegration er aktiveret, vises følgende oplysninger i sektionen **Finansiel integration** til højre:
+
+    - Status for regnskabsregistrering
+    - Tilstand i sidste regnskabstransaktion
+    - Antallet af afventende hændelser
+
+1. Vælg **Detaljer** for at få vist følgende oplysninger:
+
+    - Registreringsprocestrin
+    - Forbindelsesparametre
+    - Detaljer i revisionshændelser
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

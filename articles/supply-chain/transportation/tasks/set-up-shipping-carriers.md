@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567650"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660373"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurere fragtmænd
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567650"
 
 I dette emne beskrives, hvordan du kan konfigurere en fragtmand og definere detaljer som tjeneste, forsendelsestilstand, transporttilbud, transportbegrænsninger og forsendelsessats. Derefter kan en transportkoordinator tildele en fragtmand til en indgående eller udgående last.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Opret en ny fragtmand
+
 1. Gå til **Navigationsrude > Moduler > Transportstyring > Opsætning > Fragtmænd > Fragtmænd**.
 2. Vælg **Ny** i handlingsrude.
 3. Skriv en værdi i feltet **Fragtmand**.
@@ -36,6 +36,7 @@ I dette emne beskrives, hvordan du kan konfigurere en fragtmand og definere deta
 5. Vælg en indstilling på rullelisten i feltet **Måde**.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Udfyld generelle oplysninger om fragtmanden
+
 1. Slå udvidelsen af sektionen **Oversigt** til/fra.
 2. Markér eller fjern markeringen i afkrydsningsfeltet **Aktivér fragtmand**.
 3. Vælg en indstilling på rullelisten i feltet **Kreditorkonto**. Vælg kreditorkontoen, som fragtmanden skal tildeles.  
@@ -43,13 +44,16 @@ I dette emne beskrives, hvordan du kan konfigurere en fragtmand og definere deta
 5. Markér eller fjern markeringen i afkrydsningsfeltet **Aktivér fragtmandssatser**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Opret de nødvendige tjenester for fragtmanden
+
 1. Slå udvidelsen af sektionen afsnittet **Tjenester** til/fra.
 2. Vælg **Ny**.
 3. Skriv en værdi i feltet **Fragttjeneste**.
 4. Skriv en værdi i feltet **Navn**.
-5. Vælg en indstilling på rullelisten i feltet **Transportmetode**.
+5. Vælg en belastningsskabelon, der skal knyttes til tjenesten, i feltet **Belastnings-id**. Lastskabelonen definerer det maksimale mål for vægt og volumen af den samlede belastning. For eksempel kan lastskabelonen repræsentere størrelsen af en container eller lastbil. Der angives også belastningsskabelon-id'er i skabeloner til opbygning af belastninger, og når du bruger arbejdspanelet til [belastningsopbygning](load-building-workbench.md), kan du bruge belastningsopbygningsstrategier til at oprette belastninger. Som følge heraf vil systemet kunne sammenligne alle nye belastninger med en passende fragttjeneste ved at sammenligne de angivne belastningsskabelon-id'er.
+6. Vælg en indstilling på rullelisten i feltet **Transportmetode**.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Konfigurer adressen for fragtmanden (valgfrit)
+
 1. Slå udvidelsen af sektionen **Adresser** til/fra.
 2. Vælg **Ny**.
 3. Skriv en værdi i feltet **Navn eller beskrivelse**.
@@ -59,6 +63,7 @@ I dette emne beskrives, hvordan du kan konfigurere en fragtmand og definere deta
 7. Vælg **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Konfigurer vurderingsprofil for fragtmanden
+
 1. Slå udvidelsen af sektionen **Vurderingsprofiler** til/fra.
 2. Vælg **Ny**.
 3. Skriv en værdi i feltet **Vurderingsprofil**.

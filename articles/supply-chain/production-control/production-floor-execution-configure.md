@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384741"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644326"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -92,7 +92,7 @@ Fra og med Supply Chain Management version 10.0.25 er denne funktion som standar
 
 Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
 
-Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af avancerede lagerstedsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion , skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
+Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af avancerede lagerstedsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion, skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
 
 - *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
 - *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
@@ -111,26 +111,86 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 - *(Prøveversion) Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv*
 
+### <a name="enable-the-my-day-dialog"></a>Aktivere dialogboksen "Min dag"
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Dialogboksen **Min dag** giver arbejdere et overblik over deres daglige registreringer og aktuelle saldi for betalt tid, betalt overtid, fravær og betalt fravær.
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Visningen "Min dag" til grænsefladen til produktionsudførelse*
+
+### <a name="enable-teams"></a>Aktivere teams
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+På denne måde kan flere arbejdere arbejde som et team på samme produktionsjob. Teamet kan udpege én arbejder som pilot. De øvrige arbejdere bliver derefter automatisk assistenter for den pågældende pilot. Det er kun piloten, der skal registrere jobstatus for det resulterende team. Tidsposter gælder for alle teammedlemmer.
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Grænsefladen til produktionsteam i produktionsudførelse*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivere yderligere konfiguration af grænsefladen til produktionsudførelse
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Denne funktion føjer indstillinger til følgende funktioner på siden **Konfigurer produktionsudførelse**:
+
+- Åbn automatisk dialogboksen **Start job**, når en søgning er fuldført.
+- Åbn automatisk dialogboksen **Rapport i gang**, når en søgning er fuldført.
+- Udfyld det resterende antal på forhånd i dialogboksen **Rapportstatus**.
+- Aktiver materialeforbrugsjusteringer fra dialogboksen **Rapporter status**. (Denne funktion kræver også *Registrere materialeforbrug i produktionsudførelsesgrænsefladen (ikke-WMS)-funktionen*).
+- Aktivér søgninger efter projekt-id.
+
+Dette emne indeholder oplysninger om, hvordan du konfigurerer udbyderen senere.
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Yderligere konfiguration af grænsefladen til produktionsudførelse*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbejde med kørselskonfigurationer for produktionsudstyr
 
 Når du vil oprette og vedligeholde konfigurationer af produktionsudførelse, skal du gå til **Produktionsstyring \> Konfiguration \> Produktionsudførelse \> Konfigurer kørsel af produktionsudstyr**. På siden **Konfigurer kørsel af produktionsudstyr** vises en liste over eksisterende konfigurationer. Du kan udføre følgende opgaver på denne side:
 
 - Vælg en konfiguration for produktionsudstyr, der er angivet i venstre kolonne, for at få vist og redigere den.
-- Vælg **Ny** i handlingsruden for at føje en ny konfiguration til listen. Angiv et navn i feltet **Konfiguration** for at identificere den nye konfiguration. Det navn, du angiver, skal være entydigt blandt alle konfigurationer, og du kan ikke redigere det senere.
+- Vælg **Ny** i handlingsruden for at føje en ny konfiguration til listen. Angiv et navn i feltet **Konfiguration** for at identificere den nye konfiguration. Det navn, du angiver, skal være entydigt blandt alle konfigurationer, og du kan ikke redigere det senere. Angiv en detaljeret beskrivelse af transaktionen i feltet **Beskrivelse**.
 
-Konfigurer derefter de forskellige indstillinger for den valgte konfiguration. Følgende felter er tilgængelige:
+Konfigurer derefter de forskellige indstillinger for den valgte konfiguration som beskrevet i følgende undersektioner.
 
-- **Kun komme og gå-tid** – Angiv denne indstilling til *Ja* for at oprette en forenklet grænseflade, der kun indeholder en komme- og gå-funktion. Dette deaktiverer de fleste andre indstillinger på denne side. Du skal fjerne alle linjer i oversigtspanelet **Fanevalg**, før du kan aktivere denne indstilling.
+### <a name="the-general-fasttab"></a>Oversigtspanelet Generelt
+
+Følgende oplysninger er tilgængelige under oversigtspanelet **Generelt**:
+
+- **Kun komme og gå-tid** – Angiv denne indstilling til *Ja* for at oprette en forenklet grænseflade, der kun indeholder en komme- og gå-funktion. Denne indstilling deaktiverer de fleste andre indstillinger på denne side. Du skal fjerne alle linjer i oversigtspanelet **Fanevalg**, før du kan aktivere denne indstilling.
 - **Aktivér søgning** – Angiv denne indstilling til *Ja* for at medtage et søgefelt på joblisten. Arbejdere kan finde et bestemt job ved at angive job-id'et eller finde alle job for en bestemt ordre ved at angive ordre-id'et. Arbejdere kan angive id'et ved hjælp af et tastatur eller ved at scanne en stregkode.
+- **Aktiver søgning efter projekt-id** – Angiv denne indstilling til *Ja* for at give arbejdere mulighed for at søge efter projekt-id (ud over job-id og ordre-id) i søgefeltet i brugergrænsefladen til produktionsudførelse. Du kan kun angive denne indstilling til *Ja*, hvis indstillingen **Aktiver søgning** er angivet til *Ja*.
+- **Dialogboks til automatisk åbning af start** – Når denne indstilling er angivet til *Ja*, åbnes dialogboksen **Start job** automatisk, når arbejdere bruger søgelinjen til at finde jobbet.
+- **Automatisk åbning af dialogboksen Rapportér status** – Når denne indstilling er angivet til *Ja*, åbnes dialogboksen **Rapportér status** automatisk, når arbejdere bruger søgelinjen til at finde jobbet.
+- **Aktiver justering af** materiale – Angiv denne indstilling til *Ja* for at **aktivere knappen** Juster materiale i dialogboksen **Rapport** status. Arbejderne kan justere materialeforbruget for hvert produktionsjob.
 - **Afmelding ved gå** – Vælg *Ja* i denne indstilling for at bede arbejdere om at rapportere feedback om igangværende job, når de stempler ud. Når der er valgt *Nej* i denne indstilling, bliver arbejderne ikke bedt om at gøre dette.
 - **Lås medarbejder** – Når der er valgt *Nej* i denne indstilling, bliver arbejderne logget af umiddelbart efter, at de har foretaget en registrering (f.eks. et nyt job). Grænsefladen vender derefter tilbage til logonsiden. Når der er valgt *Ja* i denne indstilling, forbliver arbejderne logget på grænsefladen til produktionsudførelse. Men en arbejder kan logge af manuelt, så en anden arbejder kan logge på, mens grænsefladen til produktionsudførelse fortsætter med at køre under den samme systembrugerkonto. Du kan finde flere oplysninger om disse typer konti under [Tildelte brugere](config-job-card-device.md#assigned-users).
 - **Brug det faktiske registreringstidspunkt** – Vælg *Ja* i denne indstilling for at indstille tidspunktet for hver ny registrering til netop det tidspunkt, hvor arbejderen afsendte registreringen. Når der er valgt *Nej* i denne indstilling, bruges logontidspunktet i stedet. Du skal normalt vælge *Ja* i denne indstilling, hvis du har valgt **Ja** i indstillingerne **Lås medarbejder** og/eller *Enkelt arbejder*, i de tilfælde hvor arbejderne ofte forbliver logget ind i længere perioder.
 - **Enkelt arbejder** – Vælg *Ja* i denne indstilling, hvis kun én arbejder bruger en grænseflade til produktionsudførelse, hvor denne konfiguration er aktiv. Når der er valgt *Ja* i denne indstilling, er **Lås medarbejder** også automatisk indstillet til *Ja*. Derudover fjerner denne indstilling kravet (og muligheden) for, at arbejderen logger på ved hjælp af et kort-ID (eller anden lignende id). I stedet logger medarbejderen på Microsoft Dynamics 365 Supply Chain Management ved hjælp af en systembrugerkonto, der er knyttet til en *tidsregistreret arbejder* (fra tabellen *arbejdere*), og som bliver logget på grænsefladen til produktionsudførelse som den pågældende arbejder på samme tid.
 - **Tillad låsning af berøringsskærm** – Angiv denne indstilling til *Ja* for at give arbejderne mulighed for at låse berøringsskærmen på grænsefladen til produktionsudførelse, så de kan rense den. Når denne indstilling er angivet til *Ja*, tilføjes knappen **Lås skærm for rensning** på logonsiden. Når en arbejder vælger denne knap, låses berøringsskærmen midlertidigt for at forhindre utilsigtet input. Der vises også en nedtællingstimer. Arbejderen kan derefter rense enheden og skærmen på sikker vis. Når nedtællingen er fuldført, låses berøringsskærmen automatisk op.
 - **Varighed af låst skærm** – Når indstillingen **Tillad låsning af berøringsskærm** er sat til *Ja*, kan du bruge denne indstilling til at angive, hvor mange sekunder berøringsskærmen skal låses for rensning. Varigheden skal være mellem 5 og 120 sekunder.
-- **Generér nummerplade** – Angiv denne indstilling til *Ja* for at generere en ny nummerplade, hver gang en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Nummeret på nummerpladen genereres ud fra en nummerserie, der er konfigureret på siden **Parametre til lokationsstyring**. Når der er valgt *Nej* i denne indstilling, skal arbejderne angive en eksisterende nummerplade, når de rapporterer færdigmeldt.
+- **Generér nummerplade** – Angiv denne indstilling til *Ja* for at generere en ny nummerplade, hver gang en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Nummeret på nummerpladen genereres ud fra en nummerserie, der er konfigureret på siden **Parametre til Warehouse management**. Når der er valgt *Nej* i denne indstilling, skal arbejderne angive en eksisterende nummerplade, når de rapporterer færdigmeldt.
 - **Udskriv label** – Angiv denne indstilling til *Ja* for at udskrive en nummerpladelabel, når en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Konfigurationen af labelen foretages i dokumentruten som beskrevet i [Dokumentrutelayout for nummerpladelabels](../warehousing/document-routing-layout-for-license-plates.md).
-- **Valg af fane** – Brug indstillingerne i dette afsnit til at vælge, hvilke faner der skal vises i grænsefladen til kørsel af produktion, når den aktuelle konfiguration er aktiv. Du kan designe så mange faner, du har brug for, og derefter tilføje og arrangere dem efter behov. Du kan finde flere oplysninger om, hvordan du designer faner og arbejder med indstillingerne, under [Designe grænsefladen til kørsel af produktion](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Vælg Fane i oversigtspanelet
+
+Brug indstillingerne i oversigtspanelet **Valg af fane** til at vælge, hvilke faner der skal vises i grænsefladen til kørsel af produktion, når den aktuelle konfiguration er aktiv. Du kan designe lige så mange faner, du har brug for, og derefter tilføje og arrangere dem efter behov ved hjælp af knapperne på værktøjslinjen i oversigtspanelet. Du kan finde flere oplysninger om, hvordan du designer faner og arbejder med indstillingerne, under [Designe grænsefladen til kørsel af produktion](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Oversigtspanelet Status for rapport
+
+Følgende oplysninger er tilgængelige under oversigtspanelet **Rapportér status**:
+
+- **Aktiver justering af materiale** – Angiv denne indstilling til *Ja* for at inkludere knappen **Juster materiale** i dialogboksen **Rapporter status**. Arbejderne kan justere materialeforbruget for hvert produktionsjob.
+- **Standard-restantal** – Angiv denne indstilling til *Ja* for at udfylde det forventede restantal for et produktionsjob i dialogboksen **Rapportér status**.
 
 ## <a name="clean-up-job-configurations"></a>Rydde op i jobkonfigurationer
 

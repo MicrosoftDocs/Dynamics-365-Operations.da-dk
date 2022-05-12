@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388257"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645129"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -141,11 +141,16 @@ Du kan konfigurere Excel-skabelonen til at bruge celler til at vise tekstdata. F
 > [!NOTE]
 > På grund af en kendt [Excel-begrænsning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selvom du konfigurerer celler til at ombryde tekst, og du konfigurerer de rækker, der indeholder disse celler, til automatisk at justere deres højde, så de passer til den tekst, der ombrydes, kan du muligvis ikke bruge Excel-funktionerne **Autotilpas** og **Ombryd tekst** til flettede celler og rækker, der indeholder dem. 
 
-Fra og med Dynamics 365 Finance version 10.0.23 kan du tvinge ER til i et genereret dokument at beregne højden på hver række, der blev konfigureret, så den automatisk passer til indholdet af indlejrede celler, når den pågældende række indeholder mindst én flettet celle, der er konfigureret til at ombryde teksten i den. Den beregnede højde bruges derefter til at ændre størrelsen på rækken for at sikre, at alle celler i rækken er synlige i det genererede dokument. Benyt følgende fremgangsmåde, hvis du vil begynde at bruge denne funktion, når du kører ER-formater, der er konfigureret til at bruge Excel-skabeloner, til at generere udgående dokumenter.
+Fra og med Dynamics 365 Finance-version 10.0.23 kan du, når du arbejder i et genereret dokument, tvinge ER til i et genereret dokument at beregne højden på hver række, der blev konfigureret, så den automatisk passer til indholdet af indlejrede celler, når den pågældende række indeholder mindst én flettet celle, der er konfigureret til at ombryde teksten i den. Den beregnede højde bruges derefter til at ændre størrelsen på rækken for at sikre, at alle celler i rækken er synlige i det genererede dokument.
+
+> [!NOTE]
+> Vær opmærksom på, at denne funktionalitet muligvis ikke fungerer som forventet, når en brugerdefineret skrifttype bruges til at formatere en flettet celle. Da Excel ikke integrerer brugerdefinerede skrifttyper, indeholder programmet ikke oplysninger om brugerdefineret skriftstørrelse. Størrelsen på den flettede celle kan derfor forkalkuleret forkert.
+
+Benyt følgende fremgangsmåde, hvis du vil begynde at bruge denne funktion, når du kører ER-formater, der er konfigureret til at bruge Excel-skabeloner, til at generere udgående dokumenter.
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
-3. På siden **Parametre til elektronisk rapportering** under fanen **Kørsel** skal du vælge **Ja** i indstillingen **Tilpas rækkehøjde automatisk** .
+3. På siden **Parametre til elektronisk rapportering** under fanen **Kørsel** skal du vælge **Ja** i indstillingen **Tilpas rækkehøjde automatisk**.
 
 Når du vil ændre denne regel for et enkelt ER-format, skal du opdatere kladdeversionen af det pågældende format ved at følge disse trin.
 
@@ -224,7 +229,7 @@ Når du bruger **Side**-komponenten til Excel-sideinddeling, kender du ikke det 
 > [!TIP]
 > Du kan opnå dette resultat i Excel-sidehoved eller -sidefod ved hjælp af den særlige Excel-[formatering](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) af sidehoveder og sidefødder.
 
-Konfigurerede **Side**-komponenter tages ikke i betragtning, når du opdaterer en Excel-skabelon i det format, der kan redigeres, i Dynamics 365 Finance version 10.0.22. Denne funktionalitet tages i betragtning i yderligere versioner af Finance.
+Konfigurerede **Side**-komponenter tages ikke i betragtning, når du opdaterer en Excel-skabelon i det format, der kan redigeres, i Dynamics 365 Finance-version 10.0.22. Denne funktionalitet tages i betragtning i yderligere versioner af Finance.
 
 Hvis du konfigurerer Excel-skabelonen til at bruge [betinget formatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), vil det muligvis ikke fungere som forventet i nogle tilfælde.
 
@@ -341,7 +346,7 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 
         ![Gennemse ER-formatkomponenten på siden Formatdesigner for sidefod.](./media/er-fillable-excel-footer-3.png)
 
-    4. [Fuldfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) kladdeversionen af det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format .
+    4. [Fuldfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) kladdeversionen af det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format.
 
 5. [Konfigurer](er-generate-printable-fti-forms.md#configure-print-management) udskriftsstyring til at bruge det afledte **Fritekstfaktura (Excel) brugerdefineret** ER-format i stedet for prøve ER-format.
 6. Generer et FTI-dokument, der kan udskrives, og gennemse sidefoden i det oprettede dokument.

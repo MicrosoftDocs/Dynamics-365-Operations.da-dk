@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: d2fcc883cc87f785cad2e5f7efbf67888ca38d10
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388489"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644664"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -27,7 +27,7 @@ ms.locfileid: "8388489"
 
 Momsberegning er en særdeles skalerbar flerdimensional tjeneste, som gør det muligt for det globale momsprogram at automatisere og forenkle fastlæggelse og beregning af moms. Momsprogrammet kan konfigureres fuldt ud. De elementer, der kan konfigureres, omfatter, men er ikke begrænset til, den momspligtige datamodel, momskode, matrix for anvendelse af moms og momsberegningsformlen. Momsprogrammet kører på Microsoft Azure-kerneserviceplatformen og tilbyder moderne teknologi og eksponentiel skalerbarhed.
 
-Beregning af moms kan integreres med Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Senere vil det også blive integreret i , Dynamics 365 Project Operations, Dynamics 365 Commerce og andre programmer fra første part og tredjepart.
+Momsberegning integreres med Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Senere vil det også blive integreret i Dynamics 365 Project Operations, Dynamics 365 Commerce og andre programmer fra første part og tredjepart.
 
 > [!IMPORTANT]
 > Når du aktiverer Momsberegning, kan der udføres visse handlinger på relaterede data i et andet datacenter end det datacenter, der vedligeholder dine tjenestedata. Gennemse [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), før du aktiverer Momsberegning. Det er vigtigt for os at beskytte dine personlige oplysninger. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
@@ -79,6 +79,7 @@ Det anbefales, at du importerer og indstiller konfigurationen af momsberegning m
 | 10.0.24         | Konfiguration af momsberegning 40.50.225 |
 | 10.0.25         | Konfiguration af momsberegning 40.50.225 |
 | 10.0.26         | Konfiguration af momsberegning 40.54.234 |
+| 10.0.27         | Konfiguration af momsberegning 40.54.234 |
 
 
 ## <a name="data-flow"></a>Dataflow

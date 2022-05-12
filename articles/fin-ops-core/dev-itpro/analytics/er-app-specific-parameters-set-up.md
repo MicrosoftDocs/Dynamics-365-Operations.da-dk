@@ -2,7 +2,7 @@
 title: Konfigurer parametrene for et ER-format for hver juridisk enhed
 description: I dette emne forklares det, hvordan du kan konfigurere parametrene for det Elektroniske rapporteringsformat, der er angivet for den enkelte juridiske enhed.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927448"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644493"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Konfigurer parametrene for et ER-format for hver juridisk enhed
 
@@ -226,7 +226,7 @@ Hvis du konfigurerer programspecifikke parametre for én version af et ER-format
 Når du vælger en fil til import, sammenlignes strukturen for de programspecifikke parametre i den pågældende fil med strukturen i de tilsvarende datakilder for typen **Opslag** i det ER-format, der er valgt til import. Importen udføres som standard kun, hvis strukturen af de programspecifikke parametre stemmer overens med strukturen i den tilsvarende datakilde i det ER-format, der er valgt til import. Hvis strukturerne ikke stemmer overens, får du vist en advarselsmeddelelse om, at importen ikke bliver fuldført. Hvis du gennemtvinger importen, vil de eksisterende programspecifikke parametre for det valgte ER-format blive ryddet op, og du skal konfigurere dem forfra.
 
 
-Fra og med Dynamics 365 Finance version 10.0.24 kan du ændre standardfunktionsmåden og undgå at modtage en advarsel ved at aktivere de funktionen **Juster ER-programspecifikke parametre under import** i arbejdsområdet **Funktionsstyring**. Når denne funktion er aktiveret, og hvis strukturen for de programspecifikke parametre, du importerer, er forskellige fra strukturen i de tilsvarende datakilder i målets ER-format, der er valgt til import, fuldføres importen i følgende tilfælde:
+Fra og med Finance-version 10.0.24 kan du ændre standardfunktionsmåden og undgå at modtage en advarsel ved at aktivere de funktionen **Juster ER-programspecifikke parametre under import** i arbejdsområdet **Funktionsstyring**. Når denne funktion er aktiveret, og hvis strukturen for de programspecifikke parametre, du importerer, er forskellige fra strukturen i de tilsvarende datakilder i målets ER-format, der er valgt til import, fuldføres importen i følgende tilfælde:
 
 - Strukturen i målets ER-format er ændret ved at føje nye betingelseskolonner til eventuelle eksisterende datakilder af typen **Opslag**. Når importen er fuldført, opdateres de programspecifikke parametre. I alle importerede poster med programspecifikke parametre initialiseres værdierne i hver kolonne med tilføjede betingelser med standardværdien for den pågældende kolonnes [datatype](er-formula-supported-data-types-primitive.md).
 - Strukturen i målets ER-format er ændret ved at fjerne nogle betingelseskolonner fra eventuelle eksisterende datakilder af typen **Opslag**. Når importen er fuldført, opdateres de programspecifikke parametre. I alle importerede poster med programspecifikke parametre slettes værdierne i hver fjernet betingelseskolonne.
@@ -235,9 +235,33 @@ Fra og med Dynamics 365 Finance version 10.0.24 kan du ændre standardfunktionsm
 
 Når importen er fuldført, og i tillæg til de ændringer, der lige er beskrevet, ændres status for de importerede programspecifikke parametre til **I gang**. En advarsel fortæller dig, at de automatisk justerede programspecifikke parametre skal redigeres manuelt.
 
+#### <a name="replicate-parameters"></a>Repliker parametre
+
+Fra og med Finance-version 10.0.27 kan du kopiere de parametre, du har konfigureret i ét regnskab, til andre firmaer på samme tid.
+
+Hvis du vil kopiere parametre, skal du benytte følgende trin.
+
+1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+2. Vælg **Rapporteringskonfigurationer**.
+3. I konfigurationstræet skal du vælge elementet **Format for at lære, hvordan man slår LE-data op**.
+4. I handlingsruden på fanen **Konfigurationer** skal du i gruppen **Programspecifikke parametre** vælge **Opsætning**.
+5. Vælg version **1.1.1** af ER-formatet.
+6. Vælg **Repliker** i handlingsruden.
+7. Vælg de **regnskaber**, du vil kopiere parametre til under fanen Regnskaber i dialogboksen **Repliker**.
+
+    > [!NOTE]
+    > Listen over målfirmaer tilbydes kun til brugere, der er tildelt en [sikkerhedsrolle](../sysadmin/role-based-security.md#security-roles), der er konfigureret til at give adgang til alle organisationer.
+
+8. Vælg **OK**.
+
+    > [!NOTE]
+    > I bekræftelsesdialogboksen får du besked, hvis nogle målfirmaer indeholder tidligere konfigurerede parametre for den valgte version af et ER-format. Vælg **Ja**, hvis du vil tilsidesætte parametrene ved at kopiere dem fra det aktuelle regnskab.
+
+    Det konfigurerede sæt programspecifikke parametre kopieres nu til de valgte regnskaber.
+
 ### <a name="reuse-existing-parameters"></a>Genbruge eksisterende parametre
 
-Fra og med Dynamics 365 Finance version 10.0.23 kan du genbruge programspecifikke parametre, der er konfigureret til én version af et ER-format, når du kører en højere version af samme format. Det gør du ved at aktivere funktionen **Brug programspecifikke parametre fra tidligere versioner af ER-formater** i arbejdsområdet **Funktionsstyring**. Når denne funktion er aktiveret, og du kører én version af et ER-format, der forsøger at læse programspecifikke parametre, forsøger ER at finde programspecifikke parametre, der er konfigureret til den kørende version af dette format. Eller, når de ikke er tilgængelige, for den nærmeste lavere version af dette format.
+Fra og med Finance-version 10.0.23 kan du genbruge programspecifikke parametre, der er konfigureret til én version af et ER-format, når du kører en højere version af samme format. Du kan genbruge parametre ved at aktivere funktionen **Brug programspecifikke parametre fra tidligere versioner af ER-formater** i arbejdsområdet **Funktionsstyring**. Når denne funktion er aktiveret, og du kører én version af et ER-format, der forsøger at læse programspecifikke parametre, forsøger ER at finde programspecifikke parametre, der er konfigureret til den kørende version af dette format. Hvis de ikke er tilgængelige, vil ER forsøge at finde dem til den nærmeste lavere version af formatet.
 
 > [!NOTE]
 > Du kan kun genbruge programspecifikke parametre inden for omfanget af den aktuelle juridiske enhed.

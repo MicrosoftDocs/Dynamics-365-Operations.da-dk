@@ -2,7 +2,7 @@
 title: Administrere SEO-metadata
 description: I dette emne beskrives, hvordan du administrerer SEO-metadata (søgemaskineoptimering) i Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751561"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644753"
 ---
 # <a name="manage-seo-metadata"></a>Administrere SEO-metadata
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I dette emne beskrives, hvordan du administrerer SEO-metadata (søgemaskineoptimering) i Microsoft Dynamics 365 Commerce.
 
@@ -62,17 +63,21 @@ Med Dynamics 365 Commerce kan du administrere SEO-metadata for individuelle side
 ### <a name="modify-page-metadata"></a>Rediger sidemetadata
 
 Hvis du vil redigere sidemetadata, skal du følge disse trin.
-
 1. Vælg **Fabrikam** (eller navnet på dit websted) under **Websteder**.
 1. Vælg **Sider** i navigationsruden til venstre.
 1. Vælg startsiden for at åbne den i sideeditoren.
 1. Vælg **Rediger** på kommandolinjen.
-1. Udvid **Standardmetatags** i egenskabsruden til højre.
-1. Hvis du vil tilføje en ny metatag, skal du vælge **Tilføj** og derefter angive den pågældende tag i feltet. Hvis du vil fjerne en eksisterende metatag, skal du vælge skraldespandsymbolet til højre for den.
+1. I sideeditoren øverst på sidedispositionskontrollen til venstre skal du vælge indstillingen **Vis tilstand** (gearkassesymbol) og derefter vælge **Avanceret dispositionsvisning**.
+1. I dispositionsvisningen kan du udvide trækontrolelementerne for at få vist indholdet af **HTML-hoved**-plads.
+1. I **HTML-hoved** plads skal du vælge det ønskede SEO-modul (f.eks. **Sideoversigt**, **Produktsideoversigt**, **Oversigt over kategoriside** eller **Metatags**).
+1. I egenskabsruden til højre kan du redigere de ønskede SEO-data for det valgte SEO-modul(f.eks. **Titel**, **Beskrivelse** eller **Delebillede**).
 1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
-1. Angiv **Opdaterede metatags** i feltet **Kommentarer**, og vælg derefter **OK**.
+1. Angiv **Opdaterede SEO-data** i feltet **Kommentarer**, og vælg derefter **OK**.
 1. Vælg **Eksempel** for at få vist din side. Når du er færdig, skal du lukke eksempelfanen for at vende tilbage til oprettelsesværktøjet.
 1. Vælg **Publicer**.
+
+> [!TIP]
+> Forfattere kan bruge indstillingen **Dispositionstilstand** (gearkassesymbol) øverst i venstre dispositionsstyring i sideeditoren til at skifte mellem **Grundlæggende visning af disposition** og **Avanceret dispositionsvisning**. **Grundlæggende dispositionsvisning** er standardindstillingen og filtrerer dispositionen, så den kun viser moduler i pladsen **Tekst**-HTML til en side. **Den avancerede visning** viser hele sidemodulet, herunder **HTML-hoved**, **Tekststart** og **Tekstslut**. Denne visning er nyttig, når forfattere skal redigere bestemte SEO- eller scriptmodulindstillinger for en side.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

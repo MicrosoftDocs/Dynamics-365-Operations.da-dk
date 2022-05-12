@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
+ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469807"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648703"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -40,7 +40,7 @@ Før du slår Planlægningsoptimering til, anbefales det på det kraftigste, at 
 
 ## <a name="availability"></a>Tilgængelighed
 
-Planlægningsoptimering er i øjeblikket tilgængelig i følgende geografiske Azure-områder: USA, Canada, Europa, Storbritannien, Australien, Asien og Stillehavsområdet , Japan og Indien. Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil LCS vise en meddelelse om, at dette geografiske område ikke understøttes. Yderligere oplysninger om Azure-geografi og de relaterede områder finder du i [Azure-geografiske områder](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planlægningsoptimering er i øjeblikket tilgængelig i følgende geografiske Azure-områder: USA, Canada, Brasilien, Europa, Storbritannien, Australien, Asien og Stillehavsområdet, Japan og Indien. Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil LCS vise en meddelelse om, at dette geografiske område ikke understøttes. Yderligere oplysninger om Azure-geografi og de relaterede områder finder du i [Azure-geografiske områder](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Bemærk, at planlægningsoptimering ikke understøtter lokale installationer af Dynamics 365 Supply Chain Management.
 

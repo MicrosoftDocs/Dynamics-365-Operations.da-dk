@@ -2,7 +2,7 @@
 title: Justere leasingaftaler
 description: Emnet forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729648"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644549"
 ---
 # <a name="adjust-leases"></a>Justere leasingaftaler
 
@@ -134,5 +134,19 @@ Hvis en leasingaftale er blevet justeret, kan du få vist de forskellige version
 2. Hvis du vil se historikplanerne, skal du åbne den ændrede leasingaftale fra siden **Leasingoversigt**, vælge det ønskede kartotek og derefter vælge **Versionshistorik for kartotek** i handlingsruden.
 3. Vælg en version og en plan, der skal vises, på siden **Bogversion**.
 
+## <a name="adjust-a-lease-book"></a>Justere en leasingaftale
+
+Følg disse trin alene for at justere en leasingaftale.
+
+1. Gå til **Aktivleasing** \> **Leasingaftaler** \> **Leasingoversigt**.
+2. Vælg og åbn en leasingaftale.
+3. På siden **Leasingdetaljer** skal du vælge **Aftaler**.
+4. Vælg **Juster aftale** i gruppen **Vedligehold** på Handlingsruden på siden **Detaljer om aftaler**. 
+5. Fjern betalingstidsplanslinjer.
+6. Angiv ændringsdatoen i feltet **Dato for ændring af leasingaftale**. Overvej derefter at fjerne alle yderligere overvejelser vedrørende aktiv/passiv (første direkte omkostning, rettighedsincitament, forudbetaling af leje, efterstillede omkostninger og værdigaranti), hvis der findes en. 
+7. Du kan forhindre unøjagtige beregninger af lejereguleringen ved at tilføje nye betalingsplanlinjer for de nye betalingsdatoer, der svarer til ændringsdatoen. 
+
+> [!NOTE] 
+> Det anbefales, at du bruger guiden **Regulering af leasingaftale** til at justere en leasingaftale. Guiden reducerer antallet af manuelle trin, viser en forhåndsversion af saldi efter korrektionen og giver dig mulighed for at ændre beløb, før de bogføres.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

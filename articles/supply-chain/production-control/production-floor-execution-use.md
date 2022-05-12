@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384413"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644984"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -74,9 +74,9 @@ Listen med aktive job har følgende kolonner:
 
 ## <a name="my-jobs-tab"></a>Fanen Mine job
 
-Fanen **Mine job** giver arbejderne mulighed for nemt at se alle ikke-startede og ikke-færdigmeldte job, der er tildelt specifikt til dem. Den er nyttig i firmaer, hvor job nogle gange eller altid tildeles bestemte arbejdere (personale) i stedet for andre typer ressourcer (f.eks. maskiner). 
+Fanen **Mine job** giver arbejderne mulighed for nemt at se alle ikke-startede og ikke-færdigmeldte job, der er tildelt specifikt til dem. Den er nyttig i firmaer, hvor job nogle gange eller altid tildeles bestemte arbejdere (personale) i stedet for andre typer ressourcer (f.eks. maskiner).
 
-Planlægningssystemet tildeler automatisk hvert produktionsjob til en bestemt ressourcepost, og hver ressourcepost har en type (f.eks. maskine eller personale). Når du konfigurerer en medarbejder som produktionsarbejder, kan du knytte arbejderkontoen til en entydig personalepost. 
+Planlægningssystemet tildeler automatisk hvert produktionsjob til en bestemt ressourcepost, og hver ressourcepost har en type (f.eks. maskine eller personale). Når du konfigurerer en medarbejder som produktionsarbejder, kan du knytte arbejderkontoen til en entydig personalepost.
 
 Under fanen **Mine job** vises alle ikke-startede og ikke-færdigmeldte job, der er tildelt personaleposten for den arbejder, der er logget på, hvis en arbejder er logget på. Der vises aldrig job, der er tildelt til en maskine eller en anden type ressource, heller ikke selvom den arbejder, der er logget på, er begyndt at arbejde på disse job.
 
@@ -87,7 +87,7 @@ Hvis du vil have vist alle job, der er startet af den arbejder, der er logget p�
 ## <a name="my-machine-tab"></a>Fanen Min maskine
 
 Fanen **Min maskine** giver arbejderne mulighed for at vælge et aktiv, der er tilknyttet en maskinressource i filtersættet på fanen **Alle job**. Arbejderen kan derefter få vist tilstanden for det valgte aktiv ved at aflæse værdier for op til fire valgte tællere og lister over seneste vedligeholdelssanmodninger og registrerede nedetider. Arbejderen kan også anmode om vedligeholdelse for det valgte aktiv og registrere og redigere maskinnedetiden. (Dette fanenavn kan tilpasses og kan være forskelligt for dit system).
- 
+
 ![Fanen Min maskine.](media/pfei-my-machine-tab.png "Fanen Min maskine")
 
 Fanen **Min maskine** indeholder følgende kolonner. Tallene svarer til tallene i ovenstående illustration.
@@ -202,9 +202,9 @@ Følgende opgaver kan udføres:
 - Hvis arbejderen vælger **OK**, slettes pluklisten ikke. Den bogføres, når jobbet rapporteres i dialogboksen **Rapportér spild** eller **Rapportér status**.
 - Hvis arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**, slettes pluklisten.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justere materiale fra værktøjslinjen til højre
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Justere materiale fra den primære eller sekundære værktøjslinje
 
-Knappen **Juster materiale** kan konfigureres, så den vises på værktøjslinjen til højre. (Du kan finde flere oplysninger i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md)). En arbejder kan vælge **Juster materiale** for et igangværende produktionsjob. I dette tilfælde vises dialogboksen **Juster materiale**, hvor arbejderen kan foretage de ønskede justeringer. Når dialogboksen åbnes, oprettes der en produktionsplukliste, der indeholder linjer til de justerede antal for produktionsordren. Hvis arbejderen vælger **Bogfør nu**, bekræftes reguleringen, og pluklisten bogføres. Hvis arbejderen vælger **Annuller**, slettes pluklisten uden regulering.
+Knappen **Juster materiale** kan konfigureres, så den vises på første eller anden værktøjslinje. (Du kan finde flere oplysninger i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md)). En arbejder kan vælge **Juster materiale** for et igangværende produktionsjob. I dette tilfælde vises dialogboksen **Juster materiale**, hvor arbejderen kan foretage de ønskede justeringer. Når dialogboksen åbnes, oprettes der en produktionsplukliste, der indeholder linjer til de justerede antal for produktionsordren. Hvis arbejderen vælger **Bogfør nu**, bekræftes reguleringen, og pluklisten bogføres. Hvis arbejderen vælger **Annuller**, slettes pluklisten uden regulering.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Justere materialeforbruget for fastvægtvarer
 
@@ -222,7 +222,7 @@ Hvis materialet er aktiveret for processerne for avancerede lagersteder, viser l
 Du kan finde flere oplysninger om, hvordan du konfigurerer produktionsindlagringslokationen, i følgende blogpost: [Konfigurere produktionsindlagringslokation](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
 > [!NOTE]
-> De reservationer, en arbejder foretager i dialogboksen **Reservér materiale**, bevares , når arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**.
+> De reservationer, en arbejder foretager i dialogboksen **Reservér materiale**, bevares, når arbejderen vælger **Annuller** i dialogboksen **Rapportér status** eller **Rapportér spild**.
 >
 > Det er ikke muligt at justere reservationer for fastvægtvarer.
 
@@ -260,6 +260,42 @@ I begge scenarier, går Shannon, efter at have bekræftet sit valg, enten til lo
 Arbejderne kan registrere pauser. Pauser kan defineres fleksibelt, som det er beskrevet i [Løn på basis af registreringer](pay-based-on-registrations.md).
 
 En arbejder registrerer en pause ved at vælge **Pause** og derefter vælge det kort, der repræsenterer pausetypen (f.eks. frokost). Når arbejderen har bekræftet sit valg, viser enheden enten logonsiden eller en side, hvor arbejderen skal bekræfte, at han eller hun er returneret fra pausen. Hvilken side der vises afhænger af konfigurationen af grænsefladen til kørsel af produktionsudstyr. (Yderligere oplysninger finder du i [Konfigurere grænsefladen til kørsel af produktionsudstyr](production-floor-execution-configure.md)).
+
+## <a name="view-the-my-day-dialog"></a>Se dialogboksen "Min dag"
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Dialogboksen **Min dag** giver arbejdere et overblik over deres registreringer og saldi. Dialogboksen er opdelt i følgende tre afsnit:
+
+- I hovedsektionen vises de registreringer, som den aktuelle arbejder har foretaget på en valgt dato. Den vises med registreringer for den aktuelle dag, og der vises en datoplukker, som giver arbejderen mulighed for at få vist andre dage.
+- Sektionen med den **sidste beregnede daglige saldo** viser arbejderens aktuelle saldi for betalt tid, betalt overtid, fravær og lønfravær. Disse værdier er baseret på de registreringer, der er beregnet under godkendelsesprocessen.
+- Afsnittet **Saldi** indeholder en oversigt over saldi i en defineret periode for udvalgte kategorier af registreringer (f.eks. ferie, standardtid og overtid). Disse saldi er baseret på den måde, statistiske saldi er konfigureret i modulet **Tid og fremmøde**. Du kan finde flere oplysninger om, hvordan du kan konfigurere dette under [Vis feriesaldi i grænsefladen til kørsel af produktion](production-floor-execution-payroll-stats.md).
+
+Administratorer kan føje denne funktion til brugergrænsefladen ved at placere knappen **Min dag** på en værktøjslinje til hver relevant fane som beskrevet i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Arbejde i teams
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+På denne måde kan flere arbejdere arbejde som et team på samme produktionsjob. Teamet kan udpege én arbejder som pilot. De øvrige arbejdere bliver derefter automatisk assistenter for den pågældende pilot. Det er kun piloten, der skal registrere jobstatus for det resulterende team. Tidsposter gælder for alle teammedlemmer.
+
+### <a name="prerequisites"></a>Forudsætninger
+
+Hvis du vil bruge teams, skal en administrator aktivere **assistent**-handlingen for den primære værktøjslinje under fanen **Alle job** i brugergrænsefladen til produktionsudførelse. Der er vejledning i [Designe grænsefladen til kørsel af produktionsudstyr](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Oprette et nyt team, der har en pilot og en assistent
+
+En arbejder kan registrere sig som assistent ved at vælge **Assistent** under fanen **Alle job**. I dialogboksen **Vælg medarbejder for at hjælpe**-dialogboksen vises, hvor arbejderen kan vælge en pilot på en liste over arbejdere, der er kvalificerede til at arbejde på et job. Når arbejderen bekræfter sit valg, bliver de assistent for den valgte arbejder, som bliver pilot for det nye team.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Tildele en ny pilot til et eksisterende team
+
+Når et team vil vælge en ny pilot, skal den aktuelle pilot udpege en anden arbejder i teamet som den nye pilot. Hvis du vil udpege en ny pilot, vælger den aktuelle pilot **assistent** under fanen **Alle job**. I dialogboksen **Skift pilot**, der vises, kan piloten derefter vælge en ny pilot på en liste over arbejdere, der allerede er i teamet. Når den aktuelle pilot bekræfter deres valg, fjernes de helt fra teamet. De kan dog fryde teamet igen, som de har brug for.
+
+### <a name="assistant-clocks-out"></a>Assistent stempler ud
+
+Når en arbejder, der arbejder som assistent, stempler ud, forlader de teamet. Hvis indstillingerne for **Permanente teams** og **Genstart ved komme** er angivet til *Ja*, vises en arbejder, der stempler ud, automatisk igen i teamet, næste gang de stempler ind. Du kan finde disse indstillinger under fanen **Generelt** på siden **Parametre for tid og fremmøde**.
 
 ## <a name="opening-instructions"></a>Åbningsinstruktioner
 

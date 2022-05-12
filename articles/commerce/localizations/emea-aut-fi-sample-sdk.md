@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 65e2a64ed288fb0dcc05ec1ff2db8ed298ed3a76
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 7cb0e7b665add397b12e1a841b6a2e9565528d6d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388409"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613930"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Østrig (ældre)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emne indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Østrig fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Østrig](emea-aut-fi-sample.md). 
 

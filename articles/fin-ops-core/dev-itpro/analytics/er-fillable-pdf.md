@@ -2,7 +2,7 @@
 title: Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 description: Dette emne indeholder oplysninger om, hvordan du kan designe et elektronisk rapporteringsformat (ER) for at udfylde en PDF-skabelon.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367811"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645101"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Designe konfigurationer til elektronisk rapportering for at udfylde PDF-skabeloner
 
 [!include[banner](../includes/banner.md)]
 
-Procedurerne i dette emne er eksempler, der viser, hvordan en bruger i rollen **Systemadministrator** eller **Udvikler til elektronisk rapportering** kan konfigurere et elektronisk rapporteringsformat (ER), der genererer rapporter som PDF-filer ved at bruge PDF-dokumenter, der skal udfyldes, som rapportskabeloner. Disse trin kan udføres i ethvert regnskab af Dynamics 365 Finance eller Regulatory Configuration Service (RCS).
+Procedurerne i dette emne er eksempler, der viser, hvordan en bruger i rollen **Systemadministrator** eller **Udvikler til elektronisk rapportering** kan konfigurere et elektronisk rapporteringsformat (ER), der genererer rapporter som PDF-filer ved at bruge PDF-dokumenter, der skal udfyldes, som rapportskabeloner. Disse trin kan udføres i ethvert regnskab af Dynamics 365 Finance eller Regulatory Configuration Services (RCS).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -252,10 +252,14 @@ Da begge egenskaber er valgfri for et **Felt** formatelement, anvendes følgende
 - Hvis attributten **Navn** er defineret, og **Navn** udtrykket er konfigureret, er det PDF-felt, der har det samme navn som den værdi, der returneres af udtrykket **Navn** i formatelementet, udfyldt.
 
 > [!NOTE]
-> Et PDF-afkrydsningsfelt kan udfyldes som markeret på følgende måder:
+> Når et afkrydsningsfelt i PDF-skabelonen ikke tilhører en gruppe afkrydsningsfelter, vises det i det redigerbare ER-format som et **Feltelement**, der er indlejret under **PDF-fil**. Denne type PDF-afkrydsningsfelt kan angives som markeret på følgende måder:
 >
-> - Når det tilsvarende **Felt**-formatelement er bundet til et datakildefelt med datatypen **Boolesk**, der har værdien **Sand**.
-> - Når det tilsvarende **Felt**-formatelement indeholder et indlejret **Streng**-formatelement, der er bundet til et datakildefelt, der har tekstværdien **1**, **Sand** eller **ja**
+> - Når det tilsvarende **Felt**-formatelement er bundet til et datakildefelt med datatypen *[Boolesk](er-formula-supported-data-types-primitive.md#boolean)*, der har værdien **Sand**.
+> - Når det tilsvarende **Felt**-formatelement indeholder et indlejret **Streng**-formatelement, der er bundet til et datakildefelt, der har tekstværdien **1**, **Sand** eller **Ja**
+>
+> Skabelonen kan indeholde en gruppe afkrydsningsfelter, hvor der kun kan markeres ét afkrydsningsfelt ad gangen. Disse afkrydsningsfelter vises i en PDF-skabelon som flere formfelter af typen *AFKRYDSNINGSFELT*. Hvert felt har samme navn, men en anden eksportværdi. Når du importerer skabelonen til det redigerbare ER-format, vil hvert afkrydsningsfelt være repræsenteret i formatets hierarkiske struktur som et element i **afkrydsningsfeltgruppen**, der er indlejret under samme element i **afkrydsningsfeltgruppen**. Navnet på gruppeelementet **afkrydsningsfeltet** vil være lig med navnet på afkrydsningsfeltfelterne i PDF-skabelonen. Navnet på hvert **afkrydsningsfelt** vil være lig med eksportværdien for tilsvarende afkrydsningsfeltfelt i PDF-skabelonen.
+>
+> Du kan kun knytte et element for **afkrydsningsfeltgruppen** afkrydsningsfelt til et datakildefelt af typen *Boolesk*.
 
 ## <a name="run-the-format-configuration"></a>Køre formatkonfigurationen
 

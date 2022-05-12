@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577642"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644632"
 ---
 # <a name="costing-parameter-values-setup"></a>Konfigurere parameterværdier for efterkalkulation
 
@@ -123,9 +123,9 @@ I følgende tabel forklares de indstillinger, der er tilgængelige for hver skab
 
 ## <a name="volumetric-divisors"></a>Volumendivisorer
 
-Volumendivisorer bruges til at beregne den volumenvægten. Hvert fragtfirma formulerer egne volumendivisorer. Derudover varierer et firmas divisorer typisk, afhængigt af leveringsmåden. Der er f.eks. ofte meget forskellige divisorer for luft- og skibsfragt. Et firma kan også gøre reglerne mere komplekse, afhængigt af hvor det afsender fra.
+Volumendivisorer bruges til at beregne den volumenvægten. Hvert fragtfirma formulerer egne volumendivisorer. Derudover varierer et firmas divisorer typisk, afhængigt af leveringsmåden. Der er f.eks. ofte meget forskellige divisorer for luft- og skibsfragt. Et firma kan også gøre reglerne mere komplekse, afhængigt af hvor det afsender fra. Systemet bruger følgende formel til at finde den volumenmæssige vægt: VolumetricWeight = Volumen ÷ VolumetricDivisor.
 
-En pakke, der sendes med fly, har f.eks. en volumen på 3 kubikmeter (m³). Firmaet opkræver gebyrer efter volumenvægt og anvender en volumendivisor på 6. Denne divisor ganges med volumen for at bestemme volumenvægten. Volumenvægten i dette eksempel er derfor 3 × 6 = 18 kilogram (kg).
+En pakke, der sendes med fly, har f.eks. en volumen på 3 kubikmeter (m³). Firmaet opkræver gebyrer efter volumenvægt og anvender en volumendivisor på 6. Denne divisor divideres med volumen for at bestemme volumenvægten. Volumenvægten i dette eksempel er derfor 3 ÷ 6 = 0.5 kilogram (kg).
 
 Du kan konfigurere volumendivisorer ved at gå til **Landingsomkostninger \> Opsætning af efterkalkulation \> Volumendivisorer**. Siden **Volumendivisorer** indeholder et gitter, der viser alle eksisterende volumendivisorer. Du kan tilføje, fjerne og redigere rækker i gitteret ved at bruge knapperne i handlingsruden.
 
@@ -136,4 +136,7 @@ I følgende tabel forklares de felter, der er tilgængelige for hver række i gi
 | Fragtfirma | Vælg leverandørkontoen for det fragtfirma, der er knyttet til volumendivisoren. |
 | Omkostningstypekode | Vælg den omkostningstypekode, der er tilknyttet volumendivisoren. Brug dette felt til at placere omkostningstyper i rapporteringspuljer. Rapporter kan udskrives enten af rapporteringskategorier eller efter omkostningstype. |
 | Fra havn | Vælg den "fra"-havn som volumendivisoren gælder for. |
-| Volumendivisor | Angiv den værdi af volumendivisoren, som gælder for rækken. Den værdi, du angiver, vil blive *ganget* med volumen af hver pakke for at bestemme pakkens volumenvægt. |
+| Volumendivisor | Angiv den værdi af volumendivisoren, som gælder for rækken. Volumen for hver pakke vil blive divideret med den værdi du angiver her for at bestemme pakkens volumenvægt. |
+
+> [!NOTE]
+> Systemet bruger den maksimale værdi mellem den **faktiske vægt** og den **volumenmæssige vægt**.

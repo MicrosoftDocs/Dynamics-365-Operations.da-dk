@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533706"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644296"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodiser orlovs- og fraværsplaner
 
@@ -105,8 +105,10 @@ Slet periodiseringsposter for en specifik plan og et bestemt datointerval. Perio
 **Revision af orlovsperiodisering** vises, hver gang du kører eller sletter en periodisering for en eller flere medarbejdere. Datoen og den person, der udførte handlingen, vises også.
 
 1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
-
 2. Under **Administrer orlov** skal du vælge **Slet revision af orlovsperiodisering**.
+
+## <a name="leave-accrual-rounding"></a>Afrunding af orlovsperiodisering
+Når en medarbejder enten er tilmeldt eller ikke-tilmeldt, forholdsmæssig afrunding af orlov. Tidligere var afrunding kun tilladt, da en orlovsplan blev indstillet til fremskrivning, og en medarbejder var tilmeldt eller ikke tilmeldt i midt i perioden. Periodiseringer afrundes nu, uanset om der er tilmelding til eller afmelding i en periode eller i starten af en periode.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Revision af transaktion til orlovsperiodisering
 

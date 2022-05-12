@@ -2,7 +2,7 @@
 title: Oversigt over budgetstyring
 description: Dette emne introducerer budgetstyringsfunktionen og indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetstyring for at optimere administrationen af organisationens økonomiske ressourcer.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986050"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644841"
 ---
 # <a name="budget-control-overview"></a>Oversigt over budgetstyring
 
@@ -31,9 +31,9 @@ ms.locfileid: "7986050"
 
 Dette emne introducerer budgetstyringsfunktionen og indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetstyring for at optimere administrationen af organisationens økonomiske ressourcer.
 
-Budgetstyring understøtter administration af en organisations økonomiske ressourcer via kontoplanen, arbejdsgange, brugergrupper, kildedokumenter og kladder, konfigurerbar beregning af budgetmidler, budgetcyklusser og tærskler. Med kontrol på plads kan en organisation planlægge, måle, styre og forudse sine finansielle ressourcer i hele regnskabsåret. 
+Budgetstyring understøtter administrationen af en organisations økonomiske ressourcer via kontoplanen, arbejdsgange, brugergrupper, kildedokumenter og kladder, konfigurerbar beregning af budgetmidler, budgetcyklusser og tærskler. Med kontrol på plads kan en organisation planlægge, måle, styre og forudse sine finansielle ressourcer i hele regnskabsåret. 
 
-Når budgetter er blevet godkendt i systemet , kan du bruge budgetplaner til at generere budgetregisterposter for at registrere udgiftsbudgettet for en organisation. Du kan også oprette eller importere poster i budgetregisteret fra et tredjepartsprogram i stedet for ved hjælp af budgetplanlægningens funktioner. 
+Når budgetter er blevet godkendt i systemet, kan du bruge budgetplaner til at generere budgetregisterposter for at registrere udgiftsbudgettet for en organisation. Du kan også oprette eller importere poster i budgetregisteret fra et tredjepartsprogram i stedet for ved hjælp af budgetplanlægningens funktioner. 
 
 Udgifter kan registreres ved hjælp af hovedkonti og økonomiske dimensioner. Du kan konfigurere styring af de samlede udgifter til at opfylde organisationens politikker og behov ved at gruppere kombinationer af økonomiske dimensioner og hovedkonti. 
 
@@ -80,7 +80,9 @@ Dernæst kan du under fanen **Disponible budgetmidler** definere den formel, der
 > [!NOTE]
 > Hvis denne beregning ændres i løbet af en budgetcyklus, påvirker det ikke dokumenter, der tidligere er godkendt under budgetstyring og blev bogført eller fuldført. En funktion med navnet **Spor kun beløb i beregningen af disponible budgetmidler** giver dig mulighed for at ændre, hvilke data der spores i tabellerne BudgetSourceTracking. Når denne funktion er aktiveret, gemmes kun beløb, hvis de er valgt til at blive anvendt i beregningen af disponible budgetmidler. Du kan finde flere oplysninger i [Tilgængelige budgetmidler](budget-funds-available.md).
 
-Dernæst kan du under fanen **Dokumenter og journaler** vælge, hvilke kildedokumenter og journaler der skal underkastes budgetstyringskontroller, og om kontrollen sker for en linjepost eller for hele dokumentet. 
+### <a name="documents-and-journals"></a>Dokumenter og journaler
+
+Under fanen **Dokumenter og journaler** vælge, hvilke kildedokumenter og journaler der skal underkastes budgetstyringskontroller, og om kontrollen sker for en linjepost eller for hele dokumentet. Den nye funktion til **filtrering af budgetstyringsdokumenter**, som er tilgængelig pr. Microsoft Dynamics 365 Finance version 10.0.27, indeholder desuden en forespørgselsbaseret filterindstilling for hvert dokument, der er inkluderet i budgetstyring. Du kan derfor angive, hvilke budgetstyringsdokumenter der skal budgetkontrol. På denne måde gør funktionen det kun muligt at kontrollere budgettet for et undersæt af en dokumenttype. Du kan f.eks. kun kontrollere indkøbsordrer, hvor feltet **Pulje** er angivet til **01**. En ny kolonne, der føjes til fanen **Dokumenter og kladder**, angiver, om der er defineret en forespørgsel for den valgte dokumenttype. Derudover kan du tilføje, redigere eller slette filtrering ved at føje to nye knapper til værktøjslinjen over dokumentgitteret. 
 
 Du skal sammenholde de kildedokumenter, der er valgt, med de afkrydsningsfelter for balancer, der er medtaget i beregningen af de tilgængelige budgetmidler. Hvis du for eksempel har valgt **Budgetreservationer for behæftelser**, skal du vælge indstillingen **Indkøbsordrer**. Når der udføres en budgetkontrol for beløbene og kontiene i en indkøbslinje, er den budgetstyringskategori, der er tildelt reservationen **Behæftelse**. Når der udføres en budgetstyring for beløbene og kontiene i en indkøbsrekvisition, er den budgetstyringskategori, der tildeles reservationen, **Budgetreservation**. 
 

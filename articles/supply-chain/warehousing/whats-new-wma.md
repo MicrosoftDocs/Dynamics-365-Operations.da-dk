@@ -2,7 +2,7 @@
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
 description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487830"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644726"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20210"></a>Version 2.0.21.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Har løst flere problemer med nedbrud.
+- Løst et problem, hvor nogle tegn ikke genkendes, når der scannes eller skrives på standardsiden.
+- Fast et problem, hvor du kan skrive et backspace på standardsiden, sletter to tegn ad gangen.
+- Fast et problem, hvor feltet **Sorter efter** på **opgavelistesiden** vil vise en forkert værdi, der ikke svarer til den faktiske sorteringsrækkefølge af kortene.
+- har ordnet et problem, hvor der vises et forkert layout, efter at appvinduet er blevet omdannet, mens du kører på Microsoft Windows.
+- Løst et problem, hvor du kan rulle i en pop op-liste, kan resultere i, at nogle listeelementer forbliver skjulte eller bliver gemte.
+- Ændret logonsiden, så den viser felterne for brugernavn og adgangskode på samme side, når de kører på større visninger.
+- Forbedret den måde, kontrollerne reagerer på for hurtigt at kunne arbejde hurtigere.
+- Tilføjede en fejllogvisning i appen.
+- Yderligere flere forbedringer af handicapfunktioner (forbedret ydeevne, faste manglende pladsholdere på Android, aktiveret tastaturinput til kontrolelementer med mere).
 
 ## <a name="version-20200"></a>Version 2.0.20.0
 

@@ -2,19 +2,19 @@
 title: Generel fejlfinding
 description: Dette emne indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554593"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614089"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -131,6 +131,29 @@ Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge 
 2. Find formularen **Oplysninger** under formularernoden.
 3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**.
 4. Ret sikkerhedsindstillingen til **Vis for alle**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Sådan sikrer du, at dataintegration bruger det nyeste finans- og driftsskema
+
+Du kan komme ud for dataproblemer i dataintegrationen, hvis det mest opdaterede skema ikke bruges. Følgende trin hjælper dig med at opdatere enhedslisten i appsene Finans og Drift og enhederne i dataintegratoren.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Opdater enhedslisten i finans- og driftsmiljø
+1.  Log på dit finans- og driftsmiljø.
+2.  Vælg **Datastyring**.
+3.  I Datastyring skal du vælge **Rammeparametre**.
+4.  Vælg **Enhedsindstillinger** på siden Parametre for **dataimport/eksportstruktur**, og vælg derefter **Listen Opdater enhed**. Det kan tage mere end 30 minutter at opdatere, afhængigt af antallet af involverede enheder.
+5.  Naviger til **datastyring**, og vælg **dataenheder** for at validere, at de forventede enheder vises. Hvis de forventede enheder ikke findes på listen, skal du kontrollere, at enhederne vises i økonomi- og operationsmiljøet, og gendanne de manglende enheder efter behov.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Hvis problemet ikke kan løses af opdateringen, kan du slette enhederne og tilføje dem igen
+
+> [!NOTE]
+> Det kan være nødvendigt at standse alle behandlingsgrupper, der benytter enhederne, før de slettes.
+
+1.  Vælg **Datastyring** i økonomi- og operationsmiljøet, og vælg **dataenheder**.
+2.  Søg efter enheder med problemer og tag notat af destinationsenheden, den midlertidige tabel, enhedsnavnet og andre indstillinger. Slet enheden eller enhederne fra listen.
+3.  Vælg **Ny**, og tilføj enheden eller enhederne igen ved hjælp af dataene fra trin 2. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Opdatere enheder i Dataintegrator
+Log på Power Platform Administration, og vælg **dataintegration**. Åbn det projekt, hvor der opstår problemer, og vælg **Opdater enheder**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Sådan aktiveres og gemmes netværksspor, så der kan tilknyttes sporing til supportbilletter
 

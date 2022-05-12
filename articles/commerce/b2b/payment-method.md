@@ -2,7 +2,7 @@
 title: Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
 description: I dette emne beskrives, hvordan du kan konfigurere debitorkontobetalingsmåden i Microsoft Dynamics 365 Commerce. Det beskriver også, hvordan kreditmaks. påvirker registrering af acontobetaling på business-to-business (B2B)-e-handelswebsteder.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323349"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616826"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
 
@@ -82,7 +82,7 @@ De værdier, der understøttes af egenskaben **Kreditmaks.type**, er **Ingen**, 
 
 En anden egenskab, der påvirker acontobestillinger, er egenskaben **Tvungen kreditmaksimum**, der findes i oversigtspanelet **Kredit og rykkere** for debitorposten. Hvis du angiver denne egenskab til **Ja** for bestemte debitorer, kan du tvinge systemet til at kontrollere deres kreditmaksimum, selvom egenskaben **Kreditmaksimumtype** er angivet til **Ingen** for at angive, at kreditmaksimum ikke skal kontrolleres for nogen debitorer.
 
-Aktuelt har B2B-websteder, hvor egenskaben **Tvungen kreditmaksimum** er aktiveret, yderligere funktioner. Hvis egenskaben er aktiveret i en debitorpost, når kunden afgiver en ordre, forhindrer B2B-webstedet dem i at bruge acontobetalingsmåden til at betale mere end den resterende kreditsaldo. Hvis kundens resterende kreditsaldo f.eks. er $1.000, men ordren er $1.200, kan kunden kun betale $1.000 ved hjælp af acontometoden. De skal bruge en anden betalingsmåde for at betale saldoen. Hvis egenskaben **Obligatorisk kreditmaksimum** deaktiveres for en debitorpost, kan debitoren betale et vilkårligt beløb ved hjælp af acontobetalingsmåden. Men selvom en kunde kan afgive ordrer, vil systemet ikke tillade, at disse ordrer opfyldes, hvis de overskrider kreditmaksimum. Hvis du skal kontrollere kreditmaksimum for alle de debitorer, der er berettiget til acontobetalinger, anbefales det, at du angiver egenskaben **Kreditmaksimumtype** til **Saldo + følgeseddel eller produktseddel** og egenskaben **Tvungen kreditmaksimum** til **Nej**.
+En kunde, der bruger akontobetalingsmåden, kan i øjeblikket ikke betale mere end den resterende kreditsaldo for en ordre. Hvis kundens resterende kreditsaldo f.eks. er $1.000, men ordren er $1.200, kan kunden kun betale $1.000 ved hjælp af acontometoden. Kunden skal så bruge en anden betalingsmåde for at betale saldoen. I en fremtidig version vil en Commerce-konfiguration give brugerne mulighed for at bruge ud over deres kreditmaksimum ved afgivelse af ordrer.
 
 Modulet **Kredit og rykkere** har nye funktioner til kreditstyring. Hvis du vil aktivere disse egenskaber, skal du aktivere funktionen **Kreditstyring** i arbejdsområdet **Funktionsstyring**. En af de nye egenskaber gør det muligt at sætte salgsordrer på hold baseret på blokeringsregler. Kreditchefen kan derefter frigive eller afvise ordrerne efter nærmere analyse. Funktionen til at sætte salgsordrer på hold gælder dog ikke for Commerce-ordrer, da salgsordrer ofte indeholder en forudbetaling, og funktionen **Kreditstyring** ikke fuldt ud understøtter forudbetalingsscenarier. 
 
@@ -95,7 +95,7 @@ Muligheden for at sætte Commerce-salgsordrer på hold baseret på blokeringsreg
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Bemærk, at hvis flaget **CredManExcludeSalesOrder** er angivet til **Nej**, og en B2B-kunde kan købe hos butikker ved hjælp af POS-programmet, kan bogføringen af cash and carry-transaktioner mislykkes. Der er f.eks. en blokeringsregel for kontantbetalingstypen, og B2B-kunden har købt nogle varer i butikken ved hjælp af kontanter. I dette tilfælde kan den resulterende salgsordre ikke faktureres, da den bliver sat på hold. Derfor mislykkes bogføringen. Derfor anbefales det, at du gennemfører en totaltest, når du har implementeret denne tilpasning.
+Hvis flaget **CredManExcludeSalesOrder** er angivet til **Nej**, og en B2B-kunde kan købe hos butikker ved hjælp af POS-programmet, kan bogføringen af cash and carry-transaktioner mislykkes. Der er f.eks. en blokeringsregel for kontantbetalingstypen, og B2B-kunden har købt nogle varer i butikken ved hjælp af kontanter. I dette tilfælde kan den resulterende salgsordre ikke faktureres, da den bliver sat på hold. Derfor mislykkes bogføringen. Derfor anbefales det, at du gennemfører en totaltest, når du har implementeret denne tilpasning.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

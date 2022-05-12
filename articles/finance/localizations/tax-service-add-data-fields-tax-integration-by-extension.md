@@ -2,7 +2,7 @@
 title: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
 description: Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323517"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649095"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Tilføje datafelter i momsintegrationen ved hjælp af udvidelse
 
@@ -334,9 +334,10 @@ Udvid metoden `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObjec
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-I denne kode er `_destination` det ombryderobjekt, der bruges til at generere bogføringsanmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.
+I denne kode er `_destination` det ombryderobjekt, der bruges til at generere anmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.
 
 > [!NOTE]
-> Definer den nøgle, der bruges i anmodningsformularen, som **privat konstruktionsstreng**. Strengen skal være nøjagtig den samme som det målingsnavn, der tilføjes i emnet [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
-> Angiv feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjælp af metoden **SetField**. Datatypen for den anden parameter skal være **streng**. Hvis datatypen ikke er **streng**, skal du konvertere den.
-> Hvis en X++- **enumtype** udvides, skal du notere forskellen mellem dens værdi, label og navn.
+> Definer det feltnavn, der bruges i anmodningsformularen, som **privat konstruktionsstreng**. Strengen skal være nøjagtig den samme som det node-navn (ikke etiket), der tilføjes i emnet [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Angiv feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjælp af metoden **SetField**. Datatypen for den anden parameter skal være **streng**. Hvis datatypen ikke er **streng**, skal du konvertere den.
+> Hvis datatypen er X++ **enumtype**, anbefales det, at du bruger **enum2Symbol** til at konvertere enum-værdien til en streng. Den enum-værdi, der tilføjes i momskonfigurationen, skal være nøjagtig den samme som enum-navnet. Nedenfor vises en liste over forskelle mellem enumværdi, label og navn.
+> 
+>   - Navnet på enum er navnet på en kode, der angiver navnet på en kode. **enum2Symbol()** kan bruges til at konvertere enumværdi til navnet.
 >   - Enum-værdien er et heltal.
->   - Labelen i enum kan være forskellig på tværs af foretrukne sprog. Brug ikke **enum2Str** til at konvertere enum-typen til streng.
->   - Navnet på enum anbefales, fordi det er fast. **enum2Symbol** kan bruges til at konvertere enum til navnet. Den enum-værdi, der tilføjes i momskonfigurationen, skal være nøjagtig den samme som enum-navnet.
+>   - Labelen i enum kan være forskellig på tværs af foretrukne sprog. **enum2Str()** kan bruges til at konvertere enumværdi til etiket.
 
 ## <a name="model-dependency"></a>Modelafhængighed
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

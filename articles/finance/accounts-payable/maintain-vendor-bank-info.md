@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 ms.search.region: USA
@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2011-01-14
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3fbcba98ecc4cf2f177c39bdca0c47cd7d86540d9e7c117a891448816f8b1f83
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3270fcc8ce9f4807376ca9c5af8fb9d909c06a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737369"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644969"
 ---
 # <a name="maintain-vendor-bank-account-information"></a>Vedligeholde kreditors bankkontooplysninger
 
@@ -41,7 +41,7 @@ Du kan vedligeholde kreditorkontoen i arbejdsområdet **Kreditoroplysninger**. D
 - Udløbsdato
 - Kommentarer (valgfrit)
 
-Hvis den juridiske enhed ligger uden for USA, indeholder dialogboksen også felter til SWIFT-koden og IBAN (International Bank Account Number).
+SWIFT- og IBAN-koderne (International Bank Account Number) er obligatoriske for alle ikke-amerikanske virksomheder. Du kan opdatere parameteren for SWIFT- og IBAN-krav på **kreditorparametersiden**, når funktionen er aktiveret.
 
 Hvis der er dokumenter med relation til den specifikke certificering, kan du tilknytte dem ved at vælge **Dokument**.
 

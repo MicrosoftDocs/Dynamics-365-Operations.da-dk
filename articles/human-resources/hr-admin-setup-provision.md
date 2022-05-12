@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565622"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625356"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -41,7 +41,7 @@ Inden klargøringen af et nyt produktionsmiljø, skal følgende forudsætninger 
 ## <a name="provision-a-human-resources-trial-environment"></a>Klargøre et Human Resources-testmiljø
 
 >[!NOTE]
-> Fra og med april 2022 vil testmiljøerne i Human Resources ikke være tilgængelige i det enkeltstående program. Potentielle kunder, der er interesseret i at evaluere Human Resources-funktionerne i programmer til finans og drift, kan gøre dette ved hjælp af den gratis 30-dages prøve sammen med demodataene. Dynamics 365 Finance inkluderer de Human Resources-funktioner, der er hentet til finansinfrastrukturen via fletning af det enkeltstående program. Du kan finde flere oplysninger [Fletning af HR-tilbud samler funktioner for kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Yderligere oplysninger om Dynamics 365 Finance-prøver finder du i den trinvise [vejledning](/fin-ops/get-started/before-you-buy). 
+> Fra og med april 2022 vil testmiljøerne i Human Resources ikke være tilgængelige i det enkeltstående program. Potentielle kunder, der er interesseret i at evaluere Human Resources-funktionerne i programmer til finans og drift, kan gøre dette ved hjælp af den gratis 30-dages prøve sammen med demodataene. Dynamics 365 Finance inkluderer de Human Resources-funktioner, der er hentet til finansinfrastrukturen via fletning af det enkeltstående program. Du kan finde flere oplysninger [Fletning af HR-tilbud samler funktioner for kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Yderligere oplysninger om Dynamics 365 Finance-prøver finder du i den trinvise [vejledning](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Før du klargør dit første sandkasse- eller produktionsmiljø, kan det være en god ide at klargøre et [Human Resources-testmiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for at validere funktionen Human Resources. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Human Resources. 

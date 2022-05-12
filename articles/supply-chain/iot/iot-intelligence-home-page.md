@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b6c179052cdb9d1ca808d9cba089163bde0d5d5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5c587f4e6a1dd58a7b8c238fc5afb16774828b2a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782675"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644380"
 ---
 # <a name="iot-intelligence-home-page"></a>Startside for IoT-intelligens
 
@@ -37,32 +37,35 @@ IoT-intelligens er et tilføjelsesprogrammet til Microsoft Dynamics 365 Supply C
 
 IoT-intelligens understøtter følgende scenarier:
 
-+ **Produktionsforsinkelser** – I dette scenario sammenlignes faktisk cyklustid med den planlagte cyklustid. Supply Chain Management giver dig besked, når produktionen ikke kærer efter planen, så du kan maksimere driftseffektivitet og undgå ordreforsinkelser.
-+ **Nedetid for udstyr** – I dette scenarie sammenlignes målt oppetid med brugerdefinerede parametre. Supply Chain Management giver dig besked, når en nedetidsgrænse overskrides, så du kan udføre handlinger som f.eks. at ændre planlægningen af en produktionsordre eller oprette en arbejdsordre til vedligeholdelse.
-+ **Produktkvalitet** – I dette scenario sammenlignes føleraflæsninger som f.eks. fugtighed og temperatur med brugerdefinerede kvalitetsmålepunkter. Supply Chain Management giver dig besked, når der indtræffer en afvigelse, så du kan gribe ind og bevare kvalitetsstandarderne og minimere spild.
+- **Produktionsforsinkelser** – I dette scenario sammenlignes faktisk cyklustid med den planlagte cyklustid. Supply Chain Management giver dig besked, når produktionen ikke kærer efter planen, så du kan maksimere driftseffektivitet og undgå ordreforsinkelser.
+- **Nedetid for udstyr** – I dette scenarie sammenlignes målt oppetid med brugerdefinerede parametre. Supply Chain Management giver dig besked, når en nedetidsgrænse overskrides, så du kan udføre handlinger som f.eks. at ændre planlægningen af en produktionsordre eller oprette en arbejdsordre til vedligeholdelse.
+- **Produktkvalitet** – I dette scenario sammenlignes føleraflæsninger som f.eks. fugtighed og temperatur med brugerdefinerede kvalitetsmålepunkter. Supply Chain Management giver dig besked, når der indtræffer en afvigelse, så du kan gribe ind og bevare kvalitetsstandarderne og minimere spild.
 
 Følgende illustration viser interaktionen mellem Azure IoT Hub, IoT-intelligens og Supply Chain Management.
 
 ![IoT Hub, IoT-intelligens og Supply Chain Management.](media/iot_intelligence.png)
 
-## <a name="setup"></a>Konfiguration
+<!-- KFM: hide setup info for now
 
-Du kan opsætte og konfigurere IoT-intelligens uden at skrive nogen kode. Her er de grundlæggende trin.
+## Setup
 
-1. [Konfigurer Azure-ressourcer](iot-azure-setup.md) – Opret en IoT Hub, en Redis Cache og en Key Vault, der kan åbnes fra Supply Chain Management.
-2. [Meddelelsesskemaformater for IoT Hub](iot-schema-format.md) – Konfigurer dine enheder til at sende meddelelser til IoT Hub, og definer meddelelsesformatet JSON (JavaScript Object Notation).
-3. I funktionsstyring skal du aktivere flaget for funktionen IoT-intelligens. 
-4. [Installer IoT-intelligens-tilføjelsesprogrammet i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Installer tilføjelsesprogrammet i LCS, og konfigurer Azure-hemmeligheder.
-5. [Konfigurer målepunkter](iot-metrics-setup.md) – Konfigurer målepunkter i Supply Chain Management.
-6. [Opsætning af scenarie](iot-scenario-setup.md) – Konfigurer scenarierne i Supply Chain Management.
+You can set up and configure IoT Intelligence without writing any code. Here are the basic steps.
+
+1. [Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.
+2. [Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.
+3. In Feature Management, enable the IoT Intelligence feature flag. 
+4. [Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Install the add-in in LCS, and configure the Azure secrets.
+5. [Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.
+6. [Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.
+
+-->
 
 ## <a name="tracking-and-maintenance"></a>Sporing og vedligeholdelse
 
-+ [Overvågningsscenarier i Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
-+ [Deaktivere et scenarie](iot-scenario-setup.md#disable-a-scenario)
-+ [Fjern tilføjelsesprogrammet](iot-lcs-setup.md#uninstall-addin)
-+ [Redigere et kørende IoT-viden-scenarie](iot-management.md#modify-a-running-iot-intelligence-scenario)
-+ [Simuleringsindstillinger](iot-management.md#simulation-options)
+- [Overvågningsscenarier i Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
+- [Deaktivere et scenarie](iot-scenario-setup.md#disable-a-scenario)
+- [Redigere et kørende IoT-viden-scenarie](iot-management.md#modify-a-running-iot-intelligence-scenario)
+- [Simuleringsindstillinger](iot-management.md#simulation-options)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

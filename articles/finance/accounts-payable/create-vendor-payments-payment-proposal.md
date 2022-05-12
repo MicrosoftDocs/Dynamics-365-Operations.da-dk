@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749046"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629405"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Oprette kreditorbetalinger ved hjælp af et betalingsforslag
 
@@ -41,14 +41,14 @@ Forespørgslen om betalingsforslag indeholder forskellige faner, der hver især 
 
 ## <a name="advanced-options"></a>Avancerede indstillinger
 - **Kontroller kreditorsaldo** – Hvis denne indstilling er angivet til **Ja**, kontrollerer systemet, at en kreditor ikke har en debetsaldo, før fakturaen er betalt. Hvis en kreditor har en debetsaldo, oprettes der ingen betaling. Kreditoren har f.eks. måske kreditnotaer, eller betalinger, der er blevet bogført, men endnu ikke er udlignet. I disse tilfælde bør kreditoren ikke betales. I stedet skal kreditnotaer eller betalinger udlignes mod de udestående fakturaer.
-- **Slet negative betalinger** – Denne indstilling fungerer forskelligt, afhængigt af om betalinger er foretaget for enkelte fakturaer eller for summen af fakturaer, der opfylder kriterierne for betaling. Denne adfærd defineres på betalingsmåden .
+- **Slet negative betalinger** – Denne indstilling fungerer forskelligt, afhængigt af om betalinger er foretaget for enkelte fakturaer eller for summen af fakturaer, der opfylder kriterierne for betaling. Denne adfærd defineres på betalingsmåden.
 - **Betaling for hver faktura** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og der er en ikke-udlignet fakturaer og betaling for en kreditor, markeres kun fakturaen til betaling. Den eksisterende betaling udlignes i forhold til fakturaen. Hvis indstillingen **Slet negative betalinger** er angivet til **Nej**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling. En betaling oprettes for betalingen, og der oprettes en refusion (negativ betaling) til betaling.
 - **Betaling for summen af fakturaer** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og en ikke-udlignet faktura og betaling findes for en kreditor, vælges både den ikke-udlignede faktura og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb. Den eneste undtagelse opstår, hvis summen resulterer i en refusion. I så fald vælges hverken fakturaen eller betalingen. Hvis der er valgt **Nej** i indstillingen **Slet negative betalinger**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb.
 - **Udskriv kun rapport** – Angiv denne indstilling til **Ja** for at se resultatet af betalingsforslaget i en rapport, men uden at oprette betalinger.
 - **Medtag kreditorfakturaer fra andre juridiske enheder** – Hvis din organisation har en centraliseret proces til betaling og betalingsforslaget indeholder fakturaer fra andre juridiske enheder, der er inkluderet i søgekriterierne, skal denne indstilling angives til **Ja**.
 - **Foreslå separat kreditorbetaling pr. juridisk enhed** – Hvis denne indstilling er angivet til **Ja**, oprettes der en separat betaling for hver juridisk enhed pr. kreditor. Kreditoren på betalingen er kreditoren fra fakturaen fra hver juridisk enhed. Hvis denne indstilling er angivet til **Nej**, og den samme kreditor har fakturaer i flere juridiske enheder, oprettes en betaling for det samlede beløb af de valgte fakturaer. Kreditoren på betalingen er kreditoren i den aktuelle juridiske enhed. Hvis kreditorkontoen ikke findes i den aktuelle juridiske enhed, bruges kreditorkontoen for den første faktura, der skal betales.
 - **Betalingsvaluta** – Dette felt angiver den valuta, som alle betalinger er oprettet i. Hvis der ikke er defineret en valuta, betales hver faktura i fakturaens valuta.
-- **Betalingsugedag** – Angiv den ugedag, hvor betalingen skal foretages. Dette felt bruges kun, hvis betalingsmåden er konfigureret til samlede fakturaer til betaling på en bestemt dag på ugen.
+- **Betalingsdag** – Angiv den dag i ugen, hvor betalingen skal foretages, dette felt bruges kun, hvis betalingsmåden er angivet til **Uge**. Fakturabeløbet for betaling sammentalt på den angivne ugedag til betaling.
 - **Modkontotype** og **Modkonto** – Indstil disse felter til at definere en bestemt kontotype (f.eks. **Finans** eller **Bank**) og modkonto (f.eks. en bestemt bankkonto). Betalingsmåden for fakturaen definerer standardmodkontotypen og -modkontoen, men du kan bruge disse felter til at tilsidesætte standardværdierne.
 - **Opsummeret betalingsdato** – Bruges kun, når feltet **Periode** for betalingsmetoden er indstillet til **Samlet**. Hvis der er defineret en dato, oprettes alle betalinger på denne dato. Feltet **Dato for minimumsbetaling** ignoreres.
 - **Ekstra filtre** – I **Poster, der skal indgå**-oversigtspanelet kan du definere flere kriterieområder. Hvis du f.eks. kun vil betale et område af kreditorer, kan du definere et filter for kreditorområdet. Denne funktion bruges ofte til at vælge fakturaer for en bestemt betalingsmåde. Hvis du f.eks. definerer et filter, hvor **Betalingsmåde** = **Check**, vælges kun fakturaer, der har denne betalingsmåde valgt til betaling, forudsat at de også opfylder andre kriterier, der er angivet i forespørgslen.

@@ -2,7 +2,7 @@
 title: Oversigt over abonnementsfakturering
 description: I dette emne beskrives abonnementsfakturering i Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462463"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644521"
 ---
 # <a name="subscription-billing-overview"></a>Oversigt over abonnementsfakturering
 
@@ -33,6 +33,8 @@ Løsningen indeholder tre moduler, der kan bruges uafhængigt. Alternativt kan a
 - **Fakturering af tilbagevendende kontrakter** – Dette modul giver mulighed for tilbagevendende fakturering og prisstyring for at kunne styre pris- og faktureringsparametre, kontraktfornyelse og konsolideret fakturering.
 - **Indtægts- og udgiftsudskydelser** – Dette modul eliminerer manuelle processer og afhængigheder af eksterne systemer ved at administrere indtægter og aktivere indsigt i realtid i månedlige tilbagevendende indtægter.
 - **Indtægtsfordeling for flere elementer** – Dette modul hjælper med overholdelse af angivne standarder for omsætning ved at håndtere prissætning og indtægtsfordeling på tværs af flere varer.
+
+Du kan finde flere oplysninger om abonnementsfakturering i [abonnementsfakturering af Power BI-indhold](sub-bill-power-bi.md).
 
 Abonnementsfakturering aktiveres via **Funktionsstyring**. Den kan dog ikke bruges med funktionen **Indtægtsføring**. Du skal derfor deaktivere denne funktion, før du aktiverer abonnementsfakturering.
 

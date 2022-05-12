@@ -2,7 +2,7 @@
 title: Økonomiske dimensioner
 description: I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754188"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644333"
 ---
 # <a name="financial-dimensions"></a>Økonomiske dimensioner
 
@@ -31,7 +31,7 @@ Du kan bruge siden **Økonomiske dimensioner** til at oprette økonomiske dimens
 
 Når du har oprettet de økonomiske dimensioner, skal du bruge siden **Økonomiske dimensionsværdier** til at tildele hver økonomisk dimension yderligere egenskaber.
 
-Du kan bruge økonomiske dimensioner til at repræsentere juridiske enheder. Du behøver ikke at oprette de juridiske enheder i Dynamics 365 Finance. Økonomiske dimensioner kan dog ikke opfylde juridiske enheders handlings- eller forretningsmæssige behov. Funktionen for regnskab mellem enheder i Finance er kun udviklet til at håndtere de regnskabsposter, der oprettes ved hver transaktion.
+Du kan bruge økonomiske dimensioner til at repræsentere juridiske enheder. Du behøver ikke at oprette de juridiske enheder Dynamics 365 Finance. Økonomiske dimensioner kan dog ikke opfylde juridiske enheders handlings- eller forretningsmæssige behov. Funktionen for regnskab mellem enheder i Finance er kun udviklet til at håndtere de regnskabsposter, der oprettes ved hver transaktion.
 
 Før du kan konfigurere økonomiske dimensioner som juridiske enheder, skal du evaluere forretningsprocesserne på følgende områder for at afgøre, om denne installation vil fungere for organisationen:
 
@@ -79,8 +79,12 @@ Af hensyn til vedligeholdelsen af dataenes referenceintegritet kan økonomiske d
 - Bruges den økonomiske dimension i en aktiv kontostruktur, en avanceret regelstruktur eller et sæt økonomiske dimensioner?
 - Er den økonomiske dimension en del af et standardintegrationsformat for økonomiske dimensioner?
 - Er den økonomiske dimension konfigureret som en standarddimension?
+- Er den økonomiske dimension ikke valgt i opsætningen af Financial Reporting? 
 
 Hvis et af kriterierne er opfyldt, kan du ikke slette den økonomiske dimension.
+
+> [!NOTE]
+> Fra og med finansversion 10.0.27 vælges økonomiske dimensioner ikke længere til opsætningen af regnskabsaflæggelse, efterhånden som de oprettes. 
 
 ## <a name="default-dimension-values"></a>Standarddimensionsværdier
 

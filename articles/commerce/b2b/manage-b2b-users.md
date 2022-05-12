@@ -2,7 +2,7 @@
 title: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
 description: Dette emne beskriver, hvordan du kan tilføje, redigere og slette forretningspartnerbrugere på Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder og i Commerce-hovedkontoret.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323449"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616851"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrugere på B2B-e-handelswebsteder
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323449"
 Dette emne beskriver, hvordan du kan tilføje, redigere og slette forretningspartnerbrugere på Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder og i Commerce-hovedkontoret.
 
 > [!NOTE]
-> Emnet [Administrere B2B-forretningspartnere, der bruger kundehierarkier](partners-customer-hierarchies.md), er en forudsætning for dette dokument. 
+> - Emnet [Administrere B2B-forretningspartnere, der bruger kundehierarkier](partners-customer-hierarchies.md), er en forudsætning for dette dokument.
+> - Sørg for, at du initialiserer dokumenttyperne i Commerce Headquarters ved at åbne formen **Dokumenttyper** på **Organisationsadministration \> Dokumentstyring \> Dokumenttyper**.
 
 B2B-e-handelswebsteder kræver, at organisationer registrerer sig som forretningspartnere. Når en organisation har indsendt registreringsoplysninger til et B2B-e-handelswebsted, gennemgår registreringsanmodningen en kvalifikationsproces. Hvis organisationen er kvalificeret, er den startet som forretningspartner.
 

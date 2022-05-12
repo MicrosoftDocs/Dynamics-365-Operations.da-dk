@@ -2,7 +2,7 @@
 title: Modul til søgeresultater
 description: Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bae825ed7093494c48abac119c480be0dba4f951
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919468"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644920"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
@@ -88,51 +88,42 @@ Hvis du vil tilføje et søgeresultater-modul til en kategoriside, skal du følg
 
 Kunder forventer generelt, at et e-handelswebsted er lagerbaseret i hele søgeoplevelsen, så de kan beslutte, hvad de skal gøre, hvis et bestemt produkt ikke er på lager. Modulet med søgeresultater kan forbedres, så det omfatter lagerdata og giver følgende oplevelser:
 
-- Få vist en etiket for lagertilgængelighed sammen med produkter.
-- Skjul produkter, der ikke er på lager.
-- Få vist produkter, der ikke er på lager, nederst på listen over søgeresultater.
-    
-Hvis du vil aktivere disse oplevelser, skal du konfigurere følgende nødvendige indstillinger i Commerce Headquarters.
+- Få vist en etiket for lagertilgængelighed sammen med produktet.
+- Skjul produkter, der ikke er på lager, på produktlisten.
+- Få vist produkter, der ikke er på lager, nederst på produktlisten.
+- Filtrere produkter i søgeresultater efter lagerniveau.
 
-### <a name="enable-the-enhanced-e-commerce-product-discovery-to-be-inventory-aware-feature"></a>Aktivere funktionen Udvidet e-handelsproduktregistrering, der er lagerfølsom
+Hvis du vil aktivere disse erfaringer, skal du først aktivere **Udvidet funktion til registrering af e-commerce-produkter, så den er lagerbaseret** i arbejdsområdet til **funktionsstyring**.
 
 > [!NOTE]
-> Funktionen **Udvidet e-handelsproduktregistrering, der er lagerfølsom** er tilgængelig fra og med Commerce version 10.0.20.
+> Funktionen **Udvidet e-handelsproduktregistrering, der er lagerfølsom** er tilgængelig fra og med Commerce version 10.0.20 og senere.
 
-Hvis du vil aktivere funktionen **Udvidet e-handelsproduktregistrering, der er lagerfølsom** i Commerce Headquarters, skal du følge disse trin.
+Ved lagerbaseret produktsøgning bruges produktattributter til at få oplysninger om lagertilgængelighed. Inden funktionen er nødvendig, skal der oprettes dedikerede produktattributter, der skal angives lagerdata for dem, og de skal føjes til onlinekanalen. 
 
-1. Gå til **Arbejdsområder \> Funktionsstyring**.
-1. Søg efter funktionen **Udvidet e-handelsproduktregistrering, der er lagerfølsom**, og aktivér den.
-
-### <a name="configure-the-populate-product-attributes-with-inventory-level-job"></a>Konfigurere jobbet Udfyld produktattributter med lagerniveau
-
-Jobbet **Udfyld produktattributter med lagerniveau** opretter en ny produktattribut til registrering af lagertilgængelighed og angiver derefter den pågældende attribut til den seneste lagerværdi for de enkelte masterprodukter. Da lagerbeholdningen af et produkt eller et sortiment, der sælges, ændres konstant, anbefales det på det kraftigste, at du planlægger jobbet som en batchproces.
-
-Hvis du vil konfigurere jobbet **Udfyld produktattributter med lagerniveau** i Commerce Headquarters, skal du følge disse trin.
+Hvis du vil oprette dedikerede produktattributter, der understøtter modulet med lagerbaserede søgeresultater, skal du følge disse trin.
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Produkter og lager**.
-1. Vælg **Udfyld produktattributter med lagerniveau**.
-1. Benyt følgende fremgangsmåde i dialogboksen **Udfyld produktattributter med lagerniveau**:
+1. Vælg og åbn **Udfyld produktattributter med lagerniveau**.
+1. I dialogboksen skal du angive følgende oplysninger:
 
-    1. Under **Parametre** skal du gå til feltet **Produktattribut og typenavn** og angive et navn for den dedikerede produktattribut, der skal oprettes til registrering af lagertilgængelighed.
-    1. Under **Parametre** skal du gå til feltet **Lagertilgængelighed baseret på** og vælge det antal, som beregningen på lagerniveau skal baseres på (for eksempel **Fysisk disponibelt**).
-    1. Under **Kør i baggrunden** skal du konfigurere det job, der skal køres i baggrunden, og eventuelt slå indstillingen **Batchbehandling** til. 
+    1. Under Parametre skal du gå til feltet **Produktattribut og typenavn** og angive et navn for den dedikerede produktattribut, der skal oprettes til registrering af lagertilgængelighed.
+    1. Under Parametre skal du gå til feltet **Lagertilgængelighed baseret på** og vælge det antal, som beregningen på lagerniveau skal baseres på (for eksempel **Fysisk disponibelt**). 
 
-> [!NOTE]
-> Hvis du vil udføre ensartede beregninger af lagerniveau på tværs af PDP'er og produktlistesider på e-handelswebstedet, skal du sikre dig, at du vælger den samme indstilling for antal for både **Lagertilgængelighed baseret på** i Commerce Headquarters og indstillingen **Lagerniveau baseret på** i Commerce-webstedsgeneratoren. Du kan finde flere oplysninger om lagerindstillinger i webstedsgeneratoren under [Anvend lagerindstillinger](inventory-settings.md).
-
-### <a name="configure-the-new-product-attribute"></a>Konfigurere den nye produktattribut
-
-Når jobbet **Udfyld produktattributter med lagerniveau** er kørt, skal du konfigurere den netop oprettede produktattribut på det e-handelswebsted, hvor du vil aktivere lagervågenhed for modulet med søgeresultater.
-
-Følg disse trin for at konfigurere den nye produktattribut i Commerce Headquarters.
-
-1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**, og vælg et e-handelswebsted.
-1. Vælg og åbn en tilknyttet attributgruppe, føj den netop oprettede produktattribut til den, og luk derefter siden.
-1. Vælg **Angiv attributmetadata**, vælg den netop tilføjede produktattribut, og slå derefter indstillingerne **Vis attribut på kanal**, **Kan hentes**, **Kan redigeres** og **Kan forespørges** til.
+1. Klik på fanen Kør i baggrunden. Da lagerbeholdningen af et produkt eller et sortiment, der sælges, ændres konstant, anbefales det på det kraftigste, at du planlægger jobbet som en batchproces.
 
 > [!NOTE]
-> For produkter, der vises i modulet med søgeresultater, angives lagerniveauet på masterproduktniveau i stedet for på niveauet for de individuelle varianter. Det har kun to mulige værdier: "tilgængelig" og "ikke på lager". Den faktiske tekst til værdierne hentes fra definitionen på [lagerniveauprofilen](inventory-buffers-levels.md). Et masterprodukt anses kun for ikke at være på lager, når alle varianterne ikke er på lager. Lagerniveauet for en variant bestemmes på basis af produktets profildefinition på lagerniveau. 
+> Hvis du vil udføre ensartede beregninger af lagerniveau på tværs af sider og moduler på e-handelswebstedet, skal du sikre dig, at du vælger den samme indstilling for antal for både **Lagertilgængelighed baseret på** i Commerce Headquarters og indstillingen **Lagerniveau baseret på** i Commerce-webstedsgeneratoren. Du kan finde flere oplysninger om lagerindstillinger i webstedsgeneratoren under [Anvend lagerindstillinger](inventory-settings.md).
+
+Benyt følgende fremgangsmåde for at konfigurere produktattributterne for en onlinekanal. 
+
+1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**.
+2. Du kan finde flere oplysninger i Aktivere lagervågenhed for modulet til søgeresultater.
+3. Vælg og åbn en tilknyttet attributgruppe, føj den netop oprettede produktattribut til den, og luk derefter siden.
+4. I Commerce-versioner før 10.0.27-versionen skal du vælge **Angiv attributmetadata**, vælg den netop tilføjede produktattribut, og slå derefter indstillingerne **Vis attribut på kanal**, **Kan hentes**, **Kan redigeres** og **Kan forespørges** til.
+5. Gå derefter til **Detail og handel \> Detail og handels-it \> Dostributionsplan**, og kør job **1150 (Katalog)**. Hvis du planlægger jobbet **Udfyld produktattributter med lagerniveau** som en batchproces, anbefales det, at du også planlægger jobbet 1150 som en batchproces, der kører samtidigt.
+
+> [!NOTE]
+> For produkter, der vises i modulet med søgeresultater, angives lagerniveauet på masterproduktniveau i stedet for på niveauet for de individuelle varianter. Det har kun to mulige værdier: "tilgængelig" og "ikke på lager". Den faktiske tekst til værdierne hentes fra definitionen på [lagerniveauprofilen](inventory-buffers-levels.md). Et masterprodukt anses kun for ikke at være på lager, når alle varianterne ikke er på lager.
 
 Når alle de foregående konfigurationstrin er udført, viser afgrænsningerne på siden med søgeresultater et lagerbaseret filter, og modulet med søgeresultater henter lagerdataene bag fremgangsmåden. Du kan derefter konfigurere indstillingen **Lagerindstillinger for produktlistesider** i Commerce-webstedsgeneratoren til at styre, hvordan modulet med søgeresultater viser produkter, der ikke er på lager. Du finder flere oplysninger under [Anvendelse af lagerindstillinger](inventory-settings.md).
 

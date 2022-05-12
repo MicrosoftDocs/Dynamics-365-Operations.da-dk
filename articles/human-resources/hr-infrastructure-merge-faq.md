@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062719"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661452"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Ofte stillede spørgsmål om fletning af Dynamics 365 Human Resources-infrastruktur
 
@@ -43,7 +43,7 @@ Dynamics 365 Human Resources er et selvstændigt program, der bruger en anden in
 - De giver ensartethed mellem Dynamics 365 Human Resources og andre Finans- og driftsapps i form af Application Lifecycle Management (ALM), Microsoft Dynamics Lifecycle Services (LCS), geografisk tilgængelighed, udvidelsesmuligheder og meget mere.
 - De giver dig mulighed for at benytte delte tjenester og værktøjer og reducere omkostningerne.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance, Supply Chain Management, Commerce eller Project Operations. Hvilke fordele kan vi se i disse ændringer?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Hvilke fordele kan vi se i disse ændringer?
 
 De funktioner og investeringer, der er tilføjet i Dynamics 365 Human Resources, vil nu være tilgængelige for kunder, der bruger HR-modulet i Dynamics 365 Finance. Nogle af disse funktioner omfatter styring af orlov og fravær, styring af goder og opgavestyring.
 
@@ -69,7 +69,7 @@ Desuden findes der værktøjer, så du kan teste overflytningsprocessen og valid
 
 Hvis organisationen bruger både Dynamics 365 Human Resources og og andre Finans- og driftsapps, skal du planlægge mere tid til validering for at sikre, at dataene overflyttes korrekt til det nye miljø. Overflytningen til den nye infrastruktur fletter dataene fra Human Resources-miljøet med Finans- og driftsmiljøet. Datakonflikter kræver brugerinput for at afgøre, hvordan konflikten skal løses. Brugere og administratorer skal administrere de datatilknytninger, hvor der er konflikter, og teste overflytningen til sandkassemiljøer inden overflytningen af produktionsmiljøer.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance, Supply Chain Management, Commerce eller Project Operations. Hvad skal vi planlægge for at overflytte til den nye oplevelse?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Hvad skal vi planlægge for at overflytte til den nye oplevelse?
 
 For organisationer, der bruger HR-modulet i Finans- og driftsapps, anvendes den nye funktion fra Dynamics 365 Human Resources til dit miljø via standardprocessen for opdatering af One Version. Du kan forvente at få vist de nye funktioner i dit miljø, efterhånden som de bliver tilgængelige med de enkelte opdateringer. Du kan bruge Funktionsstyring til at aktivere nye funktioner, men du skal planlægge at validere disse funktioner. Følg de processer, du har etableret for validering af andre opdateringer af miljøet. Du kan finde flere oplysninger om, hvordan opdateringer anvendes i Finans- og driftsapps, i [Oversigt over One Version](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -223,7 +223,7 @@ Denne dokumentation tilsidesætter eller erstatter ingen juridisk dokumentation,
 
 Kunder, der har købt Dynamics 365 Human Resources-licenser, bliver ikke påvirket. Der sker ingen licensoverflytning for disse kunder. Den supplerende SKU-enhed (Stock Keeping Unit) for sandkassen, som var specifik for Human Resources, kan ikke længere bruges. Kunderne kan i stedet vælge at købe en sandkasse for Finans- og driftsapps Niveau 2 til en lidt lavere pris. Eksisterende kunder, som har købt en Human Resources-sandkasse, overflyttes til en sandkasse for Finans- og driftsapps Niveau 2 uden yderligere omkostninger.
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance, Supply Chain Management, Commerce eller Project Operations. Bliver mine licenser eller omkostninger ændret?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Bliver mine licenser eller omkostninger ændret?
 
 Eksisterende brugere af Dynamics 365-apps og brugere af selvstændige Dynamics 365 Finance, Supply Chain Management, Commerce og Project Operations kan få adgang til Human Resources som en del af disse licenser indtil februar 2025, eller indtil den aktuelle licensaftale udløber, hvad der end optræder først. Du kan vælge at flytte til Human Resources-licenser tidligere, hvis det hjælper dig med at opnå større besparelser. Fra og med februar 2025 skal alle eksisterende CSP- og EA-kunder rulle HR-modulet af og købe Human Resources-licenser for at udnytte de nye funktioner, der bliver tilføjet i Finans- og driftsapps.
 
@@ -231,6 +231,3 @@ Eksisterende brugere af Dynamics 365-apps og brugere af selvstændige Dynamics 3
 
 Der kræves ingen ekstra miljøer for at understøtte ændringen af infrastrukturen.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Hvem kan jeg henvende mig til, hvis jeg har flere spørgsmål om produktlicenser?
-
-Hvis du har spørgsmål om licenser, kan du finde flere oplysninger i [Biz Apps Hub – Priser og licenser for D365](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Hvis disse oplysninger ikke hjælper dig med dit problem, kan du åbne en anmodning med LicenseQ.

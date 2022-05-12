@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: I dette emne beskrives flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602956"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644351"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -106,7 +106,7 @@ Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil g
 - Antallet af datarækker i denne gruppe
 - Subtotaler for enhver kolonne, der er konfigureret til at vise totaler
 
-Når [Gemte visninger](saved-views.md) er aktiveret, kan denne gruppering gemmes via tilpasning som del af en visning for at få hurtig adgang, når du næste gang besøger siden.
+Når [Gemte visninger](saved-views.md) er aktiveret, kan du gemme gruppering som en del af en visning på sider, så forespørgsler kan gemmes i visninger. F.eks. personer med store visningsvælger. Du kan finde flere oplysninger i afsnittet [Skifte mellem visninger](saved-views.md#switching-between-views). 
 
 ### <a name="multiple-levels-of-grouping"></a>Flere grupperingsniveauer
 Når du har grupperet data efter en enkelt kolonne, kan du gruppere dataene efter en anden kolonne ved at vælge **Gruppér efter denne kolonne** i den ønskede kolonne. Denne proces kan gentages, indtil du har fem indlejrede grupperingsniveauer, hvilket er den maksimalt understøttede dybde. Derefter kan du ikke længere gruppere efter yderligere kolonner.

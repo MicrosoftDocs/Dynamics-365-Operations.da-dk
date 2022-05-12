@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 083748d4aecf551fd326b6c3cbf6d92cf3daf717
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547810"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625272"
 ---
 # <a name="gs1-bar-codes"></a>GS1-stregkoder
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- Preview until 10.0.25 GA -->
 
 Arbejdere på lagersteder skal ofte udføre flere opgaver, når de bruger en mobilenhedsscanner til at registrere bevægelser for et element, et produkt eller en container. Disse opgaver kan omfatte både scanning af stregkoder og manuel angivelse af oplysninger på mobilenheden. Stregkoderne bruger et firmaspecifikt format, som du kan definere og administrere ved hjælp af Microsoft Dynamics 365 Supply Chain Management.
 
@@ -131,7 +129,7 @@ Siden **Parametre for lagerstedsstyring** indeholder nogle få indstillinger, de
 
 Benyt følgende fremgangsmåde for at angive globale GS1-indstillinger.
 
-1. Gå til **Warehouse Management \> Opsætning \> Parametre til lagerstedsstyring**.
+1. Gå til **Warehouse Management \> Opsætning \> Parametre til Warehouse management**.
 1. Udfyld følgende ekstra felter i oversigtspanelet **Stregkoder**:
 
     - **FNC1-tegn**, **Datamatrix-tegn** og **QR-kodetegn** – Angiv tegn, der skal fortolkes som præfiks for hver type GS1-stregkode.
@@ -157,7 +155,7 @@ Du kan hurtigt komme i gang med at indlæse en liste over almindelige internatio
 
 Benyt følgende fremgangsmåde for at indlæse standardprogram-id'erne.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> GS1 \> GS1-program-id'er**.
+1. Gå til **Warehouse management \> Opsætning \> GS1 \> GS1-program-id'er**.
 1. Vælg **Opret standardkonfiguration** i handlingsruden.
 
 > [!WARNING]
@@ -169,7 +167,7 @@ Hvis nogle eller alle program-id'er, som din virksomhed bruger, adskiller sig fr
 
 Benyt følgende fremgangsmåde for at konfigurere og tilpasse dine egne GS1-program-id'er.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> GS1 \> GS1-program-id'er**.
+1. Gå til **Warehouse management \> Opsætning \> GS1 \> GS1-program-id'er**.
 1. Udfør ét af følgende trin:
 
     - Vælg **Ny** i handlingsruden for at oprette et nyt id.
@@ -179,7 +177,7 @@ Benyt følgende fremgangsmåde for at konfigurere og tilpasse dine egne GS1-prog
 
     - **Program-id** – Angiv identifikationskoden for program-id'et. Normalt er denne kode et tocifret heltal, men den kan være længere. Ved decimalværdier angiver det sidste ciffer antallet af decimaler. Du kan finde flere oplysninger under beskrivelsen af afkrydsningsfeltet **Decimal** senere på listen. Hvis funktionen *Udvidet parser til GS1-stregkoder* er aktiveret, kan du oprette en enkelt programidentifikator for alle varianter af decimaler ved at bruge bogstavet *n* som det sidste tegn i programidentifikatoren. Du kan f.eks. nøjes med at konfigurere én programidentifikator (*310n*) i stedet for en separat programidentifikator for hvert antal decimaler (*3101*, *3102*, *3103* osv.).
     - **Beskrivelse** – Angiv en kort beskrivelse af id'et.
-    - **Fast længde** – Markér dette afkrydsningsfelt, hvis værdier, der scannes med dette program-id, har et fast antal tegn. Fjern markeringen i afkrydsningsfeltet, hvis længden på værdier er variabel. I dette tilfælde skal du angive afslutningen på værdien ved at bruge det gruppeseparatortegn, du angav på siden **Parametre for lagerstedsstyring**.
+    - **Fast længde** – Markér dette afkrydsningsfelt, hvis værdier, der scannes med dette program-id, har et fast antal tegn. Fjern markeringen i afkrydsningsfeltet, hvis længden på værdier er variabel. I dette tilfælde skal du angive afslutningen på værdien ved at bruge det gruppeseparatortegn, du angav på siden **Parametre for Warehouse management**.
     - **Længde** – Angiv det maksimale antal tegn, der kan vises i de værdier, der scannes ved hjælp af dette program-id. Hvis afkrydsningsfeltet **Fast længde** er markeret, forventes præcist dette antal tegn.
     - **Type** – Vælg den type værdi, der scannes ved hjælp af dette program-id (*Numerisk*, *Alfanumerisk* eller *Dato*). Yderligere oplysninger om, hvordan datoer og tal vises i stregkodedata, finder du i afsnittet [Datoer og decimaltal](#dates-and-decimal-numbers).
     - **Decimal** – Marker dette afkrydsningsfelt, hvis værdien indeholder et stiltiende decimaltegn. Hvis dette afkrydsningsfelt er markeret, vil systemet bruge det sidste ciffer i program-id'et til at bestemme antallet af decimaler. Yderligere oplysninger om, hvordan datoer og tal vises i stregkodedata, finder du i afsnittet [Datoer og decimaltal](#dates-and-decimal-numbers).
@@ -188,7 +186,7 @@ Benyt følgende fremgangsmåde for at konfigurere og tilpasse dine egne GS1-prog
 > Selvom systemet giver dig mulighed for at angive afkrydsningsfeltet **Fast længde** for en programidentifikator, bør det kun bruges til undersættet af programidentifikatorer, der har en foruddefineret længde pr. GS1-generelle specifikationer. Den udvidede GS1-parser indeholder allerede listen over alle programidentifikatorer, der har foruddefinerede længder.
 
 > [!NOTE]
-> Den værdi af **Gruppeseparator**, der er angivet på siden **Parametre til lokationsstyring**, er valgfri, hvis en værdi, der efterfølges af en programidentifikator, har en fast længde.
+> Den værdi af **Gruppeseparator**, der er angivet på siden **Parametre til Warehouse management**, er valgfri, hvis en værdi, der efterfølges af en programidentifikator, har en fast længde.
 
 ## <a name="establish-the-generic-gs1-setup"></a><a name="generic-gs1-setup"></a>Oprette den generiske GS1-opsætning
 
@@ -202,7 +200,7 @@ Du kan finde flere oplysninger om GS1-politikker i næste afsnit.
 
 På siden **Generisk GS1-opsætning** kan du indlæse et standardsæt af tilknytninger mellem felter for mobilenheder og standardprogram-id'er, der er oprettet med standardopsætningen.
 
-Hvis du vil oprette den generiske GS1-opsætning, skal du gå til **Lagerstedsstyring \> Opsætning \> GS1 \> Generisk GS1-opsætning**. Vælg derefter **Opret standardopsætning** for automatisk at tildele et egnet program-id til hvert af de felter, der normalt bruges af menupunkter for mobilenheder.
+Hvis du vil oprette den generiske GS1-opsætning, skal du gå til **Warehouse management \> Opsætning \> GS1 \> Generisk GS1-opsætning**. Vælg derefter **Opret standardopsætning** for automatisk at tildele et egnet program-id til hvert af de felter, der normalt bruges af menupunkter for mobilenheder.
 
 > [!WARNING]
 > Hvis der allerede findes en generisk GS1-opsætning, sletter kommandoen **Opret standardopsætning** fuldstændigt og indlæser standardopsætningen.
@@ -211,7 +209,7 @@ Hvis du vil oprette den generiske GS1-opsætning, skal du gå til **Lagerstedsst
 
 Benyt denne fremgangsmåde for at tilpasse den generiske GS1-opsætning.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> GS1 \> Generisk GS1-opsætning**.
+1. Gå til **Warehouse management \> Opsætning \> GS1 \> Generisk GS1-opsætning**.
 1. Udfør ét af følgende trin:
 
     - Hvis du vil oprette en ny tilknytning; Vælg **Ny** i handlingsruden.
@@ -234,7 +232,7 @@ Du kan hurtigt indlæse et sæt af GS1-politikker. Du kan derefter udvide eller 
 
 Benyt følgende fremgangsmåde for at indlæse standardprogram-id'erne.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> GS1 \> GS1-poltik**.
+1. Gå til **Warehouse management \> Opsætning \> GS1 \> GS1-poltik**.
 1. Vælg **Opret standardkonfiguration** i handlingsruden.
 
 > [!WARNING]
@@ -247,7 +245,7 @@ Benyt følgende fremgangsmåde for at indlæse standardprogram-id'erne.
 
 Benyt følgende fremgangsmåde for at konfigurere og tilpasse GS1-politikkerne.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> GS1 \> GS1-poltik**.
+1. Gå til **Warehouse management \> Opsætning \> GS1 \> GS1-poltik**.
 1. Udfør ét af følgende trin:
 
     - Hvis du vil oprette en ny politik; Vælg **Ny** i handlingsruden.
@@ -279,7 +277,7 @@ Alle menupunkter for mobilenheder indeholder som standard inputfelter, hvor arbe
 
 Dette eksempel gælder for et system, hvor GS1-indstillingerne er angivet på følgende måde:
 
-- På siden **Parametre for lagerstedsstyring** angives følgende globale indstillinger:
+- På siden **Parametre for Warehouse management** angives følgende globale indstillinger:
 
     - **FNC1-tegn:** *\]C1*
     - **Gruppeseparator:** *\~*

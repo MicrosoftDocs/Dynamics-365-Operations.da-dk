@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396543"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644601"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -32,7 +32,19 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
 
-## <a name="feature-removal-effective-march-14-2022"></a>Fjernelse af funktion gældende fra 14. marts 2022
+## <a name="feature-deprecation-effective-april-2022"></a>Udfasning af funktioner, der træder i kraft i april 2022
+
+### <a name="xml-url-resolution-in-data-management"></a>Løsning af XML-URL-adresse i Datastyring 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi fjerner understøttelsen af XML-URL-løsningen, da dette er blevet identificeret som en potentiel sikkerhedsrisiko. Det betyder, at de eksterne ressourcer, der er tilknyttet XML-filer, ikke længere løses.  |
+| **Erstattet af en anden funktion?**   | Nej |
+| **Produktområder, der er berørt**         | Finans og drift-apps |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet. |
+
+## <a name="feature-deprecation-effective-march-14-2022"></a>Udfasning af funktioner, der træder i kraft i 14 marts 2022
 
 ### <a name="xslt-scripting-in-data-management"></a>XSLT-scripting i Dataadministration
 
@@ -40,9 +52,9 @@ Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Tech
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Understøttelse af XSLT-scripting i Datastyring udfases at forbedre sikkerheden og databeskyttelsen i programmer til finans og drift.  |
 | **Erstattet af en anden funktion?**   | Nej Kunder og softwareleverandører bør overveje at genimplementere deres løsninger baseret på X++-sprog i stedet for XSLT-scripting. |
-| **Produktområder, der er berørt**         | Programmer til finans og drift. |
-| **Installationsindstilling**              | Alle. |
-| **Status**                         | Udfases: Planlagt dato for fjernelse er 14. marts 2022.<br><br>Undtagelse: Kunder, der aktuelt bruger XLST-scripting. De kan fortsætte med at bruge den, indtil de opdaterer til version 10.0.30 eller senere. Kunder med denne undtagelse har modtaget en besked i Meddelelsescenteret i Microsoft 365 Administrationen. |
+| **Produktområder, der er berørt**         | Finans og drift-apps |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Forældet <br><br>**Undtagelse:** Kunder, der aktuelt bruger XLST-scripting. De kan fortsætte med at bruge den, indtil de opdaterer til version 10.0.30 eller senere. I forbindelse med tidligere versioner udløber undtagelsen den 31. januar 2023. Kunder med denne undtagelse har modtaget en besked i Meddelelsescenteret i Microsoft 365 Administrationen. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Fjernelse af funktion gældende fra oktober 2021
 

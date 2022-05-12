@@ -2,7 +2,7 @@
 title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071079"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644453"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -74,8 +74,11 @@ Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporte
 > [!NOTE]
 > Det er vigtigt at vælge den korrekte værdi for **Rækkeafgrænser**, **Kolonneafgrænser** og **Tekstoperator**, hvis indstillingen **Filformat** er angivet til **Afgrænset**. Sørg for, at dine data ikke indeholder det tegn, der bruges som afgrænser eller operator, da dette kan resultere i fejl under import og eksport.
 
+> [!NOTE]
+> I forbindelse med XML-baserede filformater skal du sørge for kun at bruge juridiske tegn. Yderligere oplysninger om gyldige tegn finder du i [Gyldige tegn i XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). I XML 1.0 må der ikke være kontroltegn med undtagelse af faner, returneringer af omst., og linjeangivelser. Eksempler på ugyldige tegn er kantede kantede parenteser, kantede parenteser og skråstreger. 
+
 ### <a name="sequence-the-entities"></a>Anbring enhederne i rækkefølge
-Enheder kan sorteres i en dataskabelon eller i import- og eksportjob. Når du kører et job, der indeholder mere end én dataenhed, skal du sikre dig, at dataenhederne er i korrekt rækkefølge. Du anbringer primært enheder rækkefølge, så du kan løse eventuelle funktionelle afhængigheder mellem enheder. Hvis enheder ikke har funktionelle afhængigheder, kan de planlægges til parallel import eller eksport.
+Enheder kan sorteres i en dataskabelon eller i import- og eksportjob. Når du kører et job, der indeholder mere end én dataenhed, skal du sikre dig, at dataenhederne er i korrekt rækkefølge. Du anbringer primært enheder rækkefølge, så du kan løse eventuelle funktionelle afhængigheder mellem enheder. Hvis enheder ikke har funktionelle afhængigheder, kan de planlægges til parallel import eller eksport. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Kørsel af enheder, niveauer og nummerserier
 Afviklingsenheden, niveauet i afviklingsenheden og rækkefølgen af en enhed hjælper med til at kontrollere den rækkefølge, data eksporteres eller importeres i.

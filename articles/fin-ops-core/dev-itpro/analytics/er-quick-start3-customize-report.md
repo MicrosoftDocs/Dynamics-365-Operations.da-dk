@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324081"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661652"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurationer af elektroniske rapporter for at generere et elektronisk dokument
 
 [!include[banner](../includes/banner.md)]
 
-Du kan bruge den [elektroniske rapporteringsstruktur (ER)](general-electronic-reporting.md) til at uploade de [ER-konfigurationer](general-electronic-reporting.md#Configuration), som Microsoft leverer til din Microsoft Dynamics 365 Finance-forekomst. På denne måde kan de konfigurationer, der leveres af Microsoft, fungere som den ER-løsning, der bruges til at generere elektroniske debitorfakturaer (e-fakturaer). Du kan bruge denne ER-løsning til at konfigurere din brugerdefinerede ER-løsning til at få adgang til dine brugerdefinerede databasefelter og generere e-fakturaer, der er kompatible med dine specifikke behov, uden at skulle redigere kildekoden.
+Du kan bruge den [elektroniske rapporteringsstruktur (ER)](general-electronic-reporting.md) til at uploade de [ER-konfigurationer](general-electronic-reporting.md#Configuration), som Microsoft leverer til din Microsoft Microsoft Dynamics 365 Finance-forekomst. På denne måde kan de konfigurationer, der leveres af Microsoft, fungere som den ER-løsning, der bruges til at generere elektroniske debitorfakturaer (e-fakturaer). Du kan bruge denne ER-løsning til at konfigurere din brugerdefinerede ER-løsning til at få adgang til dine brugerdefinerede databasefelter og generere e-fakturaer, der er kompatible med dine specifikke behov, uden at skulle redigere kildekoden.
 
 ## <a name="overview"></a>Overblik
 
@@ -61,8 +61,8 @@ Som bruger af den elektroniske rapporteringskonsulent eller den elektroniske rap
 ### <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
-3. På siden **Parametre til elektronisk rapportering** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktiver designtilstand** .
+2. På siden **Lokaliseringsplaner** skal du vælge feltet **Parametre til elektronisk rapportering** i sektionen **Relaterede links**.
+3. På siden **Parametre til elektronisk rapportering** under fanen **Generelt** skal du vælge **Ja** i indstillingen **Aktiver designtilstand**.
 4. Vælg **Fil** i feltet **Konfigurationer** under fanen **Vedhæftede filer**.
 5. I felterne **Jobarkiv**, **Midlertidig**, **Grundlag** og **Andre** skal du vælge typen **Fil**.
 
@@ -78,13 +78,13 @@ Alle ER-konfigurationer, der tilføjes, er markeret som ejet af en udbyder af ER
 #### <a name="review-the-list-of-er-configuration-providers"></a>Gennemse listen over udbydere af ER-konfigurationer
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Konfigurationsudbydere** i sektionen **Relaterede links**.
+2. På siden **Lokaliseringsplaner** skal du vælge feltet **Konfigurationsudbydere** i sektionen **Relaterede links**.
 3. På siden **Tabel over konfigurationsudbydere** har hver udbyderpost et entydigt navn og en entydig URL-adresse. Gennemse indholdet af denne side. Hvis der allerede findes en post for **Litware, Inc.** (`https://www.litware.com`), skal du springe den næste procedure over, [Tilføje en ny udbyder af ER-konfigurationer](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Tilføje en ny udbyder af ER-konfigurationer
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Konfigurationsudbydere** i sektionen **Relaterede links**.
+2. På siden **Lokaliseringsplaner** skal du vælge feltet **Konfigurationsudbydere** i sektionen **Relaterede links**.
 3. På siden **Konfigurationsudbydere** skal du vælge **Ny**.
 4. I feltet **Navn** skal du angive **Litware, Inc.**
 5. I feltet **Internetadresse** skal du angive `https://www.litware.com`.
@@ -93,7 +93,7 @@ Alle ER-konfigurationer, der tilføjes, er markeret som ejet af en udbyder af ER
 #### <a name="activate-an-er-configuration-provider"></a>Aktivere en udbyder af ER-konfigurationer
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. Gå til siden **Lokaliseringskonkfigurationer**, og vælg feltet **Litware, Inc.** i sektionen **Konfigurationsudbydere**, og vælg derefter **Angiv som aktive**.
+2. Gå til siden **Lokaliseringsplaner**, og vælg feltet **Litware, Inc.** i sektionen **Konfigurationsudbydere**, og vælg derefter **Angiv som aktive**.
 
 Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigura
 Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Finance, skal du importere dem fra det [ER-lager](general-electronic-reporting.md#Repository), der er konfigureret for den pågældende forekomst.
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** skal du i sektionen **Konfigurationsudbydere** vælge feltet **Microsoft** og derefter vælge **Lagre** for at få vist listen over lagre for Microsoft-udbyderen.
+2. På siden **Lokaliseringsplaner** skal du i sektionen **Konfigurationsudbydere** vælge feltet **Microsoft** og derefter vælge **Lagre** for at få vist listen over lagre for Microsoft-udbyderen.
 3. På siden **Konfigurationslagre** skal du vælge lageret for **Global**-typen og derefter vælge **Åbn**. Hvis du bliver bedt om at angive godkendelse for at oprette forbindelse til Regulatory Configuration Service, skal du følge godkendelsesvejledningen.
 4. På siden **Konfigurationslager** skal du i konfigurationstræet i venstre rude vælge formatkonfigurationen **Peppol Salgsfaktura**.
 5. I oversigtspanelet **Versioner** skal du vælge version **11.2.2**.
@@ -116,7 +116,7 @@ Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Fi
 ### <a name="review-the-imported-er-configurations"></a>Gennemse de importerede ER-konfigurationer
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** skal du vælge feltet **Rapporteringskonfigurationer** i sektionen **Konfigurationer**.
+2. På siden **Lokaliseringsplaner** skal du vælge feltet **Rapporteringskonfigurationer** i sektionen **Konfigurationer**.
 3. På siden **Konfigurationer** skal du udvide oversigtspanelet **Konfigurationskomponenter**.
 4. I konfigurationstræet i venstre rude skal du udvide **Fakturamodel** og derefter udvide **UBL-salgsfaktura**.
 
@@ -627,7 +627,7 @@ Statussen for version 206.132.2 ændres fra **Kladde** til **Fuldført**, og ver
 5. Vælg **Designer** i handlingsruden.
 6. For hver rebaseringskonflikt skal du vælge **Bevar egen værdi**, da du skal beholde versionsnummeret for den brugerdefinerede datamodel for hver komponent, der er nævnt.
 7. Vælg **Gem**.
-8. Vælg **Faktura** som datakilde for typen **Model** under fanen **Tilknytning** , og vælg derefter **Rediger**.
+8. Vælg **Faktura** som datakilde for typen **Model** under fanen **Tilknytning**, og vælg derefter **Rediger**.
 9. I feltet **Version** skal du vælge version **2** af din brugerdefinerede datamodel og derefter vælge **OK**.
 10. Vælg **Gem**.
 

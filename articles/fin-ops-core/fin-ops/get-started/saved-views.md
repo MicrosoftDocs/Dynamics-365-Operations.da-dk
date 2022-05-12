@@ -2,7 +2,7 @@
 title: Gemte visninger
 description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065700"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644781"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -45,7 +45,7 @@ Når visninger er blevet tilgængelige for et miljø, vil toppen af alle sider, 
 
 Visningsvælgeren har to størrelsesvariationer: 
 
-- **Store visningsvælgere** – Sider, der har en tydelig liste, har en større visningsvælger af forskellige årsager. Den vigtigste er, at den store visningsvælger angiver de sider, hvor visningen kan indeholde brugerdefinerede filtre. Der indgår filtre i visningerne, og derfor er den største vælger også påkrævet, fordi visningsnavnene ofte er den bedste beskrivelse af de data, der vises på skærmen, og forventningen er, at brugerne skifter mellem visninger ofte på disse sidetyper.
+- **Store visningsvælgere** – Sider, der har en tydelig liste, har en større visningsvælger af forskellige årsager. Den vigtigste er, at den store visningsvælger angiver de sider, hvor visningen kan indeholde brugerdefinerede filtre og sorter. Der indgår filtre og sorter i visningerne, og derfor er den største vælger også påkrævet, fordi visningsnavnene ofte er den bedste beskrivelse af de data, der vises på skærmen, og forventningen er, at brugerne skifter mellem visninger ofte på disse sidetyper. Gruppering i et gitter kan også gemmes for visninger på en side med store visningsvælger. 
 - **Små visningsvælgere** – Alle andre sider i fuld skærmstørrelse (med undtagelse af arbejdsområder og dashboardet) har en mindre visningsvælger, der vises ud for sidens billedtekst. Visningerne på disse sider indeholder kun brugertilpasninger, og ikke brugerdefinerede filtre. På disse sider er formularteksten eller posttitlen ofte de vigtigste oplysninger øverst på siden. Den mindre størrelse af visningsvælgeren afspejler også en lavere forventet frekvens for skift af visninger på disse sider. 
  
 Hvis du vælger visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.

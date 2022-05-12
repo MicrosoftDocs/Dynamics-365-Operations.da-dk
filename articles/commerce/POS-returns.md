@@ -2,24 +2,20 @@
 title: Oprette returneringer i POS
 description: Dette emne beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-programmet.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349685"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648982"
 ---
 # <a name="create-returns-in-pos"></a>Oprette returneringer i POS
 
@@ -107,9 +103,64 @@ Følgende liste indeholder de mindste versionskrav for de forskellige komponente
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivér beregning af passende moms for returneringer med delvist antal
 
 Denne funktion sikrer, at momsen i sidste ende er lig med det oprindeligt opkrævede momsbeløb, når en ordre returneres ved hjælp af flere fakturaer.
-1.  Gå til arbejdsområdet **Funktionsstyring**, og søg efter **Aktivér beregning af passende moms for returneringer med delvist antal**.
-2.  Vælg **Aktivér beregning af passende moms for returneringer med delvist antal**, og klik derefter på **Aktivér**.
 
+1. Gå til arbejdsområdet **Funktionsstyring**, og søg efter **Aktivér beregning af passende moms for returneringer med delvist antal**.
+1. Vælg **Aktivér beregning af passende moms for returneringer med delvist antal**, og klik derefter på **Aktivér**.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Konfigurere returneringslokaliteter for detailbutikker
+
+I Commerce kan du konfigurere returneringslokaliteter, der er baseret på detailinfokoder og årsagskoder for salg og marketing. Kassereren identificerer ofte årsagen til en returnering, når en kunde returnerer et køb. Du kan angive, at returnerede produkter skal tildeles til forskellige returneringslokaliteter på lageret ud fra kassererens svar på infokoder og årsagskoder, der vises på POS'en i -kasseapparatet.
+
+En kunde returnerer f.eks. et defekt produkt, og kassereren behandler returtransaktionen. Når Retail POS viser infokoden for returneringer, vælger kassereren underkoden for defekte returneringer. Det returnerede produkt tildeles derefter automatisk til en bestemt returlokation.
+
+En returneringsplacering kan være en butik, et lagersted, en lokalitet i en butik eller et lagersted eller en bestemt palle, afhængigt af de lokaliteter, som din organisation har oprettet. Du kan knytte de enkelte returneringslokaliteter til én eller flere detailinfokoder dog salg og marketing-årsagskoder.
+
+### <a name="prerequisites"></a>Forudsætninger
+
+Inden du kan konfigurere returneringslokaliteter, skal du konfigurere følgende elementer:
+
+- **Detailinfokoder** – Beskeder på POS-kasseapparatet, der er angivet i modulet **Detail**. Du kan finde flere oplysninger i [Konfigurere oplysningskoder](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Årsagskoder for salg og marketing** – Beskeder på POS-kasseapparatet, der er angivet i modulet **Salg og marketing**. Du kan finde flere oplysninger i [Konfigurere årsagskoder](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Lagerlokationer** – De steder, hvor lagerbeholdningen opbevares. Du kan finde flere oplysninger i [Konfigurere Lagerlokationer](/dynamicsax-2012/appuser-itpro/about-locations).
+    
+### <a name="set-up-return-locations"></a>Konfigurer returneringslokationer
+
+Benyt følgende fremgangsmåde for at konfigurere returneringslokaliteter.
+
+1. Gå til **Detail og Commerce \> Kanalkonfiguration \> Lagersteder**, og vælg et lagersted.
+1. I feltet **Standardreturlokation** i oversigtspanelet **Detail** skal du vælge den lagerlokation, der skal bruges til returneringer, hvor infokoderne eller årsagskoderne ikke er knyttet til returlokationerne.
+1. I feltet **Standardreturpalle** i oversigtspanelet Detail skal du vælge den palle, der skal bruges til returneringer, hvor infokoderne eller årsagskoderne ikke er knyttet til returlokationerne.
+1. Gå til **Detail og Commerce \> Lagerstyring \> Returlokationer**.
+1. Vælg **Ny** for at oprette en ny lagerreturneringspolitik.
+1. Angiv et entydigt navn og en beskrivelse for returneringslokaliteten.
+
+    > [!NOTE]
+    > Navnet angives automatisk, hvis der er oprettet en nummerserie for returneringslokaliteter.
+
+1. I oversigtspanelet **Generelt** skal du angive indstillingen **Udskriv labels** til **Ja**, hvis du vil udskrive labels for alle de produkter, der er tilknyttet returlokationer.
+1. Angiv **Bloker lager** til **Ja** for at tage de returnerede produkter i standardreturneringslokaliteten ud af lageret og forhindre, at de bliver solgt.
+1. Hvis du vil tilknytte specifikke detail infokoder og underkoder til returplaceringer, skal du følge disse trin:
+
+    1. Vælg **Tilføj** i oversigtspanelet **Detailoplysningskoder**.
+    1. Vælg en **Infokode** for returneringer i feltet.
+    1. I feltet **Underkode** skal du vælge en underkode for årsagen til returneringen. Angiv en beskrivelse af den valgte underkode i feltet **Beskrivelse**.
+    1. Vælg den butik, hvor infokoden bruges, i feltet **Butik**.
+    1. Brug felterne **Lagersted**, **Lokalitet** og **Palle-id** til at angive en returlokation. For eksempel hvis du vil angive et bestemt sted i en butik, skal du vælge en butik i feltet **Butik** og en lokalitet i feltet **Lokation**.
+    1. Marker afkrydsningsfeltet **Bloker lager** for at tage returnerede produkter ud fra lageret og forhindre, at de bliver solgt.
+
+1. Hvis du vil tilknytte specifikke salgs- og marketingårsagskoder til returplaceringer, skal du følge disse trin:
+
+    1. Vælg **Tilføj** i oversigtspanelet **Salgs- og marketing årsagskoder**.
+    1. Vælg en ny årsagskode for returneringer i feltet **Årsagskode**. Angiv en beskrivelse af den valgte årsagskode i feltet **Beskrivelse**.
+    1. Vælg den butik, hvor årsagskoden bruges, i feltet **Butik**.
+    1. Brug felterne **Lagersted**, **Lokalitet** og **Palle-id** til at angive en returlokation. For eksempel hvis du vil angive en bestemt palle på en lokalitet på et lagersted, skal du vælge et lagersted i feltet **Lagersted**, en lokalitet i feltet **Lokation** og en palle i feltet **Palle-id**.
+    1. Marker afkrydsningsfeltet **Bloker lager** for at tage returnerede produkter ud fra lageret og forhindre, at de bliver solgt.
+
+    > [!NOTE]
+    > Hvis der bruges en politik for returlokation for et element, men den returårsagen, som kassereren vælger, ikke svarer til nogen kode, der er angivet i oversigtspanelet **Detail infokoder** eller **årsagskoder for salg og marketing**, sendes varen til den standardreturlokation, der er defineret på **lagerstedssiden**. Indstillingen af afkrydsningsfeltet **Bloker lager** i oversigtspanelet **Generelt** på siden **Returlokation** bestemmer desuden, om den returnerede vare skal være lagerspærret.
+
+1. Gå til **Detail og Commerce \> Commerce-produkthierarki**.
+1. Vælg en returlokation i feltet **Returlokation** i oversigtspanelet **Administrer egenskaber for lagerkategorier**. Da der kan defineres flere politikker for returplacering for samme butik, bestemmer den værdi, du vælger her, den politik for returplacering, der bruges.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

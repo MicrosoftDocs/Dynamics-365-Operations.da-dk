@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468322"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618254"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskelle mellem indbygget behovsplanlægning og planlægningsoptimering
 
@@ -37,6 +37,7 @@ Resultater af planlægningsoptimering kan være forskellige fra resultaterne af 
 | Sikkerhedslagerudligning og nettobehov | *Sikkerhedslager*-behovstypen medtages ikke og vises ikke på siden **Nettobehov**. Sikkerhedslager repræsenterer ikke behov og har ikke en behovsdato tilknyttet. Den angiver i stedet en begrænsning på, hvor meget lager der altid skal være til stede. Der tages dog stadig højde for værdien af feltet **Minimum** ved beregning af ordreforslag under varedisponering. Vi foreslår, at du undersøger kolonnen **Akkumuleret antal** på siden **Nettobehov** for at se, at denne værdi blev taget i betragtning. |
 | Transportkalendere | Værdien i kolonnen **Transportkalender** på siden **Leveringsmåder** ignoreres. |
 | Min./maks. disponeringskode uden værdier| Med det indbyggede planlægningsprogram behandles disponeringskoden som et krav, når du bruger en minimal/maksimal disponeringskode, hvor der ikke er angivet nogen minimum- eller maksimumværdier, og det opretter én ordre for hvert krav. Med planlægningsoptimering vil systemet oprette én ordre pr. dag for at dække det fulde beløb for den pågældende dag.  |
+| Nettobehov og manuelt oprettede ordreforslag | Med det indbyggede planlægningsprogram vises manuelt oprettede forsyningsordrer for en vare automatisk blandt nettobehovet for den pågældende vare. Når der f.eks. oprettes en indkøbsordre fra en salgsordre, vises indkøbsordren på siden **Nettobehov** uden at kræve nogen forudgående handlinger. Det skyldes, at det indbyggede planlægningsprogram registrerer lagertransaktioner i `inventLogTTS`-tabellen og viser ændringer på siden **Nettobehov** for dynamiske planer. Med planlægningsoptimering vises manuelt oprettede ordrer dog ikke blandt nettobehovet for en vare, før planlægningsoptimering køres (ved hjælp af en plan, der omfatter varen), eller indtil du vælger **Opdater \> Varedisponering** i handlingsruden på siden **Nettobehov**, som vil køre varedisponering for varen. Yderligere oplysninger om, hvordan denne side fungerer med **Nettobehov**, finder du i [Nettobehov og udligningsoplysninger med Planlægningsoptimering](net-requirements.md). |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

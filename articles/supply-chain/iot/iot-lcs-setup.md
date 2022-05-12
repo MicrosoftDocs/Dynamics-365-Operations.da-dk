@@ -14,18 +14,27 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 89d2f53a761085949885c987d664654c3423524b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781583"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645071"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installere tilføjelsesprogrammet IoT-viden i LCS
 
 [!include [banner](../../includes/banner.md)]
 
 I dette emne forklares, hvordan du kan installere tilføjelsesprogrammet IoT-viden i Microsoft Dynamics Lifecycle Services (LCS). Bemærk, at tilføjelsesprogrammer ikke kan installeres i et demo- eller testmiljø. Før du kan installere tilføjelsesprogrammet, skal du [oprette Azure-ressourcerne](iot-azure-setup.md).
+
+Du kan opsætte og konfigurere IoT-intelligens uden at skrive nogen kode. Her er de grundlæggende trin.
+
+1. [Konfigurer Azure-ressourcer](iot-azure-setup.md) – Opret en IoT Hub, en Redis Cache og en Key Vault, der kan åbnes fra Supply Chain Management.
+2. [Meddelelsesskemaformater for IoT Hub](iot-schema-format.md) – Konfigurer dine enheder til at sende meddelelser til IoT Hub, og definer meddelelsesformatet JSON (JavaScript Object Notation).
+3. I funktionsstyring skal du aktivere flaget for funktionen IoT-intelligens.
+4. Installer IoT-intelligens-tilføjelsesprogrammet i Microsoft Dynamics Lifecycle Services (LCS) – Installer tilføjelsesprogrammet i LCS, og konfigurer Azure-hemmeligheder (som beskrevet i dette emne).
+5. [Konfigurer målepunkter](iot-metrics-setup.md) – Konfigurer målepunkter i Supply Chain Management.
+6. [Opsætning af scenarie](iot-scenario-setup.md) – Konfigurer scenarierne i Supply Chain Management.
 
 ## <a name="set-up-the-lcs-environment"></a>Konfigurere LCS-miljøet
 
