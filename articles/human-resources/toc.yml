@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheder eller ændringer i Human Resources
               items:
+                - name: Human Resources 10.0.27 (flettet infrastruktur)
+                  href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (flettet infrastruktur)
                   href: ./get-started/hr-whats-new-changed-10-0-26.md
                 - name: Human Resources 10.0.25 (flettet infrastruktur)
@@ -972,7 +974,7 @@
                   href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
                 - name: Status for medarbejderplan for frynsegode
                   href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
-    - name: Udvikling og administration af Økonomi og driftsapps
+    - name: Udvikling og administration af programmer til finans og drift
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

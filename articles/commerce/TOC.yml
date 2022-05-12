@@ -12,14 +12,12 @@
               items:
                 - name: Nyheder eller ændringer på Commerce-startsiden
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (juli 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (maj 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (april 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (februar 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (januar 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Konfigurere moms for onlineordrer
                           href: sales-tax-config.md
+                        - name: Skjule oplysninger om momsopdeling i ordreoversigter
+                          href: hide-taxes-breakup.md
                     - name: Konfigurere en profil for mailbesked
                       href: email-notification-profiles.md
                     - name: Nummerserier
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Vejledning til implementering af enhedsstyring
                       href: implementation-considerations-devices.md
-                    - name: Vælge mellem MPOS og Cloud POS
+                    - name: Vælge mellem Store Commerce og Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Online og offline POS-handlinger
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Oprette økonomiske dimensioner for detailkanaler og konfigurere værdier for butikker
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Konfigurer nummerserier for detailopgørelser
+                  href: retail-statements-number-sequences.md
                 - name: Aktivere ensartet leveringsmåde for håndtering i e-handelskanaler
                   href: consistent-delivery-mode-handling.md
             - name: Konfigurere en onlinekanal
@@ -884,6 +886,8 @@
           items:
             - name: Oversigt over opgørelser
               href: retail-statements.md
+            - name: Commerce-bogføringsparametre
+              href: commerce-posting-parameters.md
             - name: Validere butikstransaktioner til beregning af opgørelse
               href: valid-checker.md
             - name: Deaktivere regler i konsistenskontrol af detailtransaktion
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Installere Adventure Works-temaet
                       href: install-adventure-works.md
+                - name: Vejledning til Commerce-lokalisering
+                  href: e-commerce-localization-guide.md
             - name: Administrere digitale aktiver
               items:
                 - name: Oversigt over styring af digitale aktiver
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Angive produktantalsgrænser for B2B-e-handelswebsteder
               href: b2b/quantity-limits.md
+            - name: Commerce-kataloger til B2B-websteder
+              items:
+                - name: Oprette Commerce-kataloger til B2B-websteder
+                  href: catalogs-b2b-sites.md
+                - name: Udvidet virkning af Commerce-kataloger til B2B-tilpasninger
+                  href: catalogs-b2b-sites-dev.md
+                - name: Ofte stillede spørgsmål til Commerce-kataloger til B2B
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Overvågning og analyse
           items:
             - name: Overvåge salgs- og avanceudvikling
@@ -2474,15 +2488,19 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: Headless Commerce
               items:
+                - name: Oversigt
+                  items:
+                    - name: Introduktion til CSU-kerne (Commerce Scale Unit)
+                      href: dev-itpro/CSU-core.md
                 - name: API'er og reference
                   items:
-                    - name: Kunde og forbruger-API'er for Commerce Scale Unit
+                    - name: Kunde og forbruger-API'er til Commerce Scale Unit
                       href: dev-itpro/retail-server-customer-consumer-api.md
-                    - name: Bruge Retail Server-API'er i eksterne ansøgninger
+                    - name: Bruge Retail Server-API'er i eksterne programmer
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Typescript og C#-proxyer til Retail POS
+                    - name: TypeScript og C#-proxyer til Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
-                    - name: Commerce Runtime (CRT)-arkitektur og konfiguration
+                    - name: Commerce runtime (CRT)-arkitektur og -konfiguration
                       href: dev-itpro/commerce-runtime-overview.md
                     - name: Commerce runtime (CRT)-services
                       href: dev-itpro/crt-services.md
@@ -2490,7 +2508,7 @@
                   items:
                     - name: Oprette Commerce Scale Unit API
                       href: dev-itpro/retail-server-icontroller-extension.md
-                    - name: Udvidelse for CRT (Commerce Runtime)
+                    - name: Udvidelse for CRT (Commerce runtime)
                       href: dev-itpro/commerce-runtime-extensibility.md
                     - name: Logføre udvidelseshændelser i Application Insights
                       href: dev-itpro/commerce-application-insights.md
@@ -2526,9 +2544,11 @@
                       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                     - name: Tillægspunkter for følgesedler under ordreopfyldning
                       href: dev-itpro/extensions-shipping-carrier-integration.md
-                - name: Emballage og udrulning
+                - name: Pakning og udrulning
                   items:
-                    - name: Fjerne udvidelser til enheder i skyen
+                    - name: Oprette en udvidelsespakke til Cloud Scale Unit
+                      href: dev-itpro/CSU-packaging.md
+                    - name: Fjerne Cloud Scale Unit-udvidelser
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
               items:
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Overføre POS-udvidelser til Commerce SDK
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Fejlfinde Store Commerce-udvidelser ved hjælp af VS Code
+                      href: dev-itpro/sc-debug.md
                 - name: Miljøkonfiguration
                   items:
                     - name: Lokalt udviklingsmiljø
@@ -2606,7 +2628,7 @@
                       href: dev-itpro/pos-custom-control.md
                     - name: Udvidelse af POS-betaling
                       href: dev-itpro/pos-payment-extension.md
-                - name: Emballage og udrulning
+                - name: Pakning og udrulning
                   items:
                     - name: Oprette en udvidelsespakke til MPOS
                       href: dev-itpro/pos-extension/mpos-extension-packaging.md
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Oprette en udvidelsespakke til Cloud POS
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Oprette en installationsprogrampakke til Store Commerce-udvidelse
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: E-commerce
               items:
                 - name: Oversigt
@@ -2784,7 +2808,7 @@
                           href: e-commerce-extensibility/extend-theme.md
                         - name: Ændre temaer i modulstrenge
                           href: e-commerce-extensibility/change-theme-module-strings.md
-                - name: Emballage og udrulning
+                - name: Pakning og udrulning
                   items:
                     - name: Pakke konfigurationer og implementere dem i et onlinemiljø
                       href: e-commerce-extensibility/package-deploy.md
@@ -2814,9 +2838,13 @@
                       items:
                         - name: Telemetri-logføring
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
-                - name: Emballage og udrulning
+                - name: CDX-pakkeudvidelse
+                  items:
+                    - name: 'Udvid kunde-CDX-pakke, så der tilføjes brugerdefinerede data'
+                      href: dev-itpro/extend-customer-CDX-package.md
+                - name: Pakning og udrulning
                   items:
                     - name: Oprette Commerce-betalingspakker til Finans og drift-udrulning
                       href: dev-itpro/payment-connector-package.md
@@ -2848,7 +2876,7 @@
                       href: dev-itpro/configure-online-store.md
                     - name: Konfigurere godkendelsesudbydere
                       href: dev-itpro/configure-authentication-providers.md
-                - name: Emballage og udrulning
+                - name: Pakning og udrulning
                   items:
                     - name: Oprette installerbare pakker
                       href: dev-itpro/retail-sdk/retail-sdk-packaging.md

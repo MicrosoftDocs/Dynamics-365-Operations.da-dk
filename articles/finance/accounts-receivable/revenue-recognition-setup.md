@@ -2,7 +2,7 @@
 title: Opsætning af Indtægtsføring
 description: Dette emne beskriver opsætningsindstillingerne for Indtægtsføring og deres konsekvenser.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867214"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656715"
 ---
 # <a name="revenue-recognition-setup"></a>Opsætning af Indtægtsføring
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Angiv beskrivende værdier i felterne **Indtægtstidsplan** og **Beskrivelse**. 
     - **Forekomster** – Beløbet fordeles ligeligt på tværs af forekomsterne, men det kan inkludere en ekstra periode, hvis du vælger **Faktisk startdato** som registreringsprincip.
     - **Regnskabsperiode efter dage** – beløbet fordeles på grundlag af de faktiske dage i hver regnskabsperiode. 
 
-    Resultaterne af **Månedligt efter dage** og **Regnskabsperiode efter dage** er de samme, når regnskabsperioderne følger kalendermånederne. Den eneste undtagelse er, når registreringsprincippet er angivet til **Afslutning af måned/periode**, og felterne **Kontraktstartdato** og **Slutdato** er tomme på en salgsordrelinje.
+         - Resultaterne af **Månedligt efter dage** og **Regnskabsperiode efter dage** er de samme, når regnskabsperioderne følger kalendermånederne. Den eneste undtagelse er, når registreringsprincippet er angivet til **Afslutning af måned/periode**, og felterne **Kontraktstartdato** og **Slutdato** er tomme på en salgsordrelinje.
 
 - **Registreringsprincip** – Registreringsprincippet bestemmer de datoer, der er angivet i indtægtstidsplanen for fakturaen.
 
@@ -108,7 +108,7 @@ Angiv beskrivende værdier i felterne **Indtægtstidsplan** og **Beskrivelse**. 
     - **1. dage i måneden/perioden** – Datoen på den første linje i tidsplanen er kontraktens startdato (eller fakturadatoen). Alle efterfølgende linjer i tidsplanen oprettes dog for den første i måneden eller regnskabsperioden.
     - **Midt i måneden** – Datoen på den første linje i tidsplanen afhænger af fakturadatoen. Hvis fakturaen bogføres den første til den 15. i måneden, oprettes indtægtstidsplanen ved hjælp af den første dag i måneden. Hvis fakturaen bogføres den 16. i måneden eller senere, oprettes indtægtstidsplanen ved hjælp af den første dag i den næste måned.
 
-        **Midt i måneden** kan ikke vælges, hvis grundlaget for registrering er angivet til **Regnskabsperiode efter dage**.
+        - **Midt i måneden** kan ikke vælges, hvis grundlaget for registrering er angivet til **Regnskabsperiode efter dage**.
 
     - **1. i dag i næste måned/periode** – Den dato, som tidsplanen starter på, er den første dato i næste måned eller regnskabsperiode.
     - **Slut på måneden/perioden** – Datoen på den første linje i tidsplanen er kontraktens startdato (eller fakturadatoen). Alle efterfølgende linjer i tidsplanen oprettes dog for den sidste i måneden eller regnskabsperioden. 

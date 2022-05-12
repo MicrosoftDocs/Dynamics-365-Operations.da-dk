@@ -12,14 +12,12 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (juli 2022)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (maj 2022)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (april 2022)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (februar 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (januar 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1725,8 +1723,6 @@
               href: iot/iot-azure-setup.md
             - name: Meddelelsesskemaformater for IoT-hub
               href: iot/iot-schema-format.md
-            - name: Installere tilføjelsesprogrammet i LCS
-              href: iot/iot-lcs-setup.md
             - name: Konfigurere målepunkter
               href: iot/iot-metrics-setup.md
             - name: Konfigurere scenarie
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Sådan anvender arbejdere grænsefladen til produktionsudførelse
                   href: production-control/production-floor-execution-use.md
+                - name: Vis feriesaldi i grænsefladen til produktionsudførelse
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Designe grænsefladen til produktionsudførelse
                   href: production-control/production-floor-execution-styles.md
                 - name: Tilpasse grænsefladen til produktionsudførelse

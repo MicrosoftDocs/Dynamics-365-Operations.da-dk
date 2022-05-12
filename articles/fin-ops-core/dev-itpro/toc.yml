@@ -14,6 +14,8 @@
               items:
                 - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.27 (juli 2022)
+                  href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Platformsopdateringer til version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Platformsopdateringer til version 10.0.25 (april 2022)
@@ -66,6 +68,8 @@
                   href: data-entities/odata.md
                 - name: Udvikling af brugerdefinerede services
                   href: data-entities/custom-services.md
+                - name: Sporing af serviceanmodning
+                  href: data-entities/service-request-tracing.md
                 - name: Tilbagevendende integrationer
                   href: data-entities/recurring-integrations.md
                 - name: 'Testservices, der bruger værktøjer fra tredjepartsservices'
@@ -1714,6 +1718,22 @@
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Opgradere budgetplanlægning
                       href: migration-upgrade/upgrade-budget-planning.md
+                - name: Foretage fejlfinding af opgraderingen
+                  items:
+                    - name: Foretage fejlfinding af udviklingsmiljøer under opgradering
+                      href: migration-upgrade/troubleshoot-dev-env.md
+                    - name: Foretage fejlfinding af opgraderinger til selvbetjeningsmiljøer
+                      href: migration-upgrade/troubleshoot-self-service-env.md
+                    - name: Foretage fejlfinding af opgraderingsscripts til PreSync og PostSync
+                      href: migration-upgrade/pre-post-upgrade-scripts.md
+                - name: Miljøhandlinger
+                  items:
+                    - name: Overfør vedhæftede dokumenter
+                      href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+                    - name: Oprydning af kildedata for opgradering
+                      href: migration-upgrade/clean-up-source-data-upgrade.md
+                    - name: Komprimer tabeller i Dynamics AX 2012-miljøer
+                      href: migration-upgrade/compress-tables-ax-2012.md
             - name: Overflytte data fra AX 2009
               items:
                 - name: Overflytte data fra AX 2009 til Finance and Operations
@@ -2000,3 +2020,5 @@
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../../human-resources/index.md

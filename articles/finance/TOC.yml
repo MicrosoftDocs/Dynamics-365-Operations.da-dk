@@ -8,10 +8,12 @@
           items:
             - name: Nyheder eller ændringer i programmer til finans og drift
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-            - name: Nyheder eller ændringer i Finance
+            - name: Nyheder eller ændringer i Finans
               items:
-                - name: Nyheder eller ændringer på Finance-startsiden
+                - name: Nyheder eller ændringer på Finansstartsiden
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.27 (juli)
+                  href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (maj)
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (april)
@@ -412,6 +414,8 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Tilbagevendende kontraktfakturering
                   items:
+                    - name: Konfigurer tilbagevendende kontraktfakturering
+                      href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Opret faktureringstidsplaner
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiere en faktureringstidsplan
@@ -420,22 +424,26 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milepælsfakturering
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Indtægtsfordeling
+                      href: accounts-receivable/sb-rev-allocation.md
                     - name: Support- og fornyelsesproces
                       href: accounts-receivable/sb-support-renewals.md
+                    - name: Ikke-afregnet indtægt
+                      href: accounts-receivable/sb-unbilled-revenue.md
                     - name: Planer for forbrugerprisindeks
                       href: accounts-receivable/cpischedules.md
                     - name: Afslut faktureringstidsplaner
                       href: accounts-receivable/terminate-billing-schedule.md
+                    - name: Scenarier for reguleringsdato
+                      href: accounts-receivable/sb-alignment-date-examples.md
                 - name: Udskydelser af omsætning og udgifter
                   items:
                     - name: Konfigurer udskydelser af omsætning og udgifter
                       href: accounts-receivable/sb-deferrals.md
-                    - name: Udskydelsesplaner
-                      items:
-                        - name: Opret udskydelsesplaner
-                          href: accounts-receivable/sb-deferrals-schedules.md
-                        - name: Udskyde standardposteringer
-                          href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Opret udskydelsesplaner
+                      href: accounts-receivable/sb-deferrals-schedules.md
+                    - name: Udskyde standardposteringer
+                      href: accounts-receivable/sb-deferral-transactions.md
                 - name: Omsætningsfordeling af flere varer
                   items:
                     - name: Konfigurer omsætningsfordeling af flere varer
@@ -1429,7 +1437,7 @@
                             - name: Konfigurere Azure-ressourcer til elektronisk fakturering
                               href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
                             - name: Oprette en Azure Key Vault i Azure-portalen
-                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
                             - name: Oprette en Azure-datalagerkonto i Azure-portalen
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: Konfigurere en SharePoint-forbindelse
@@ -1460,6 +1468,8 @@
                           href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
                         - name: Dele med andre organisationer
                           href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Dashboard til brugsstyring
+                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                         - name: Behandl indgående elektroniske dokumenter
                           items:
                             - name: Behandle indgående elektroniske dokumenter
@@ -1468,12 +1478,12 @@
                               href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
                             - name: Konfigurere en SharePoint-kanal
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
-                        - name: Konfigurere og bruge elektronisk fakturering med Finance og Supply Chain Management
-                          items:
-                            - name: Aktivere og konfigurere integration med elektronisk fakturering
-                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                            - name: Konfigurere parametre til elektronisk fakturering
-                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurere og bruge elektronisk fakturering med Finance og Supply Chain Management
+                      items:
+                        - name: Aktivere og konfigurere integration med elektronisk fakturering
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurere parametre til elektronisk fakturering
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Arbejde med elektronisk fakturering
                           items:
                             - name: Indsende elektroniske dokumenter til elektronisk fakturering
@@ -1486,12 +1496,6 @@
                       items:
                         - name: Tilgængelighed af funktioner til elektronisk fakturering
                           href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-                        - name: Start her med serviceadministration i elektronisk fakturering
-                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: Start her med elektronisk fakturering
-                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Oprette en ny funktion til elektronisk fakturering
-                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Start her med elektronisk fakturering for Brasilien
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Start her med elektronisk fakturering for Egypten
@@ -1504,10 +1508,6 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: Konfigurere elektronisk fakturering
-                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Power Platform-plug-in-reference til administrator
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Ofte stillede spørgsmål om elektronisk fakturering
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Momsberegning
@@ -1618,6 +1618,12 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Tom momsfunktionsliste i momsberegningsparametre
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                        - name: Momskoden kan ikke bestemmes
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                        - name: Der blev ikke fundet noget matchende resultat
+                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                        - name: Aktivere fejlfindingstilstand i tjenesten Momsberegning
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: Ofte stillede spørgsmål om momsberegning
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Moms
@@ -3725,6 +3731,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Salgs og rentabilitetsperformance
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                - name: Abonnementsfakturering Power BI-indhold
+                  href: accounts-receivable/sub-bill-power-bi.md
                 - name: Kreditorbetalinger
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: Nøgletal for arbejdsstyrke
