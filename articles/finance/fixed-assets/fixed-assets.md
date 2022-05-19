@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "21481"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674845"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720440"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for anlægsaktiver
 
@@ -44,7 +44,7 @@ Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 

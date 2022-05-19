@@ -50,10 +50,6 @@
           items:
             - name: Integration mellem programmer til finans og drift og tredjepartsservices
               href: data-entities/integration-overview.md
-            - name: Prioritetsbaseret begrænsning
-              hreF: data-entities/priority-based-throttling.md
-            - name: Prioritetsbaseret begrænsning (Ofte stillede spørgsmål)
-              href: data-entities/throttling-faq.md
             - name: API'er for dataintegration
               items:
                 - name: REST API for datastyringspakke
@@ -72,9 +68,21 @@
                   href: data-entities/service-request-tracing.md
                 - name: Tilbagevendende integrationer
                   href: data-entities/recurring-integrations.md
-                - name: 'Testservices, der bruger værktøjer fra tredjepartsservices'
+                - name: 'Testservices, der bruger tredjepartsværktøjer'
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations-connector
+            - name: Servicebeskyttelsesgrænser
+              items:
+                - name: API-grænser for servicebeskyttelse
+                  href: data-entities/service-protection-api-limits.md
+                - name: Begrænsning af prioritering
+                  href: data-entities/priority-based-throttling.md
+                - name: Gentag handlinger
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Overvåge API-begrænsning
+                  href: data-entities/service-protection-monitoring.md
+                - name: Maksimere API-gennemløb
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: Finans og drift-connector
               href: data-entities/fin-ops-connector.md
             - name: Udvikling med henblik på integration
               items:
@@ -396,8 +404,10 @@
                       href: deployment/onprem-batchonly.md
                     - name: Konfigurere høj tilgængelighed til SQL Server Reporting Services-noder (SSRS-noder)
                       href: deployment/onprem-SSRSHA.md
-                    - name: Konfigurere proxyer til lokale miljøer
+                    - name: Konfigurere proxyer til det lokale miljø
                       href: deployment/onprem-reverseproxy.md
+                    - name: Konfigurere appen Lagersted til udrulninger i det lokale miljø
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Installere netværksprinterenheder i lokale miljøer
                       href: analytics/install-network-printer-onprem.md
                     - name: Diagnosticering i det lokale miljø
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Udvide, tilpasse og samarbejde med hjælp'
                   href: help/contributor-guide.md
-            - name: Overvejelser i forbindelse med udrulning
+            - name: Regionsservices i programmer til finans og drift
               items:
-                - name: Indstillinger for selvstændig og lokal sky-udrulning til Dynamics 365 Finance og Dynamics 365 Supply Chain Management
+                - name: Lokale geografiske områder
                   href: deployment/deployment-options-geo.md
-                - name: Finance og Supply Chain Management i den amerikanske Government Community Cloud (GCC)
+                - name: US Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: 'Finance og Supply Chain Management, som drives af 21Vianet i Kina'
+                - name: Drevet af 21Vianet i Kina
                   href: deployment/china-local-deployment.md
-                - name: Programmer til finans og drift i Frankrig
-                  href: deployment/france-local-deployment.md
         - name: Udvikle og tilpasse
           items:
             - name: Udvikle og tilpasse startside
@@ -559,7 +567,7 @@
                     - name: Oversigt over oprettelse af modeller og datamodelelementer
                       href: dev-tools/create-data-model-elements.md
                     - name: Retningslinjer for navngivning af udvidelser
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten
                       href: dev-tools/lock-models.md
                 - name: Tilpasningsanalyserapport

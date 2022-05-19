@@ -82,12 +82,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/finance/toc.json
                 - name: Lokal installation
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
-                - name: Systemkrav til lokale installationer
+                - name: Systemkrav til udrulninger i det lokale miljø
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Købe Finance + Operations (i det lokale miljø)
+                - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere lagersted for udrulninger i det lokale miljø
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
@@ -270,8 +268,10 @@
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Undersøge eller løse undtagelser
                   href: accounts-payable/tasks/research-resolve-exceptions.md
-            - name: Kreditorposteringsprofil
+            - name: Kreditorbogføringsprofil
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Oprette gebyrkoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Datoer for kreditorfaktura
               href: accounts-payable/vendor-invoice-dates.md
             - name: Værdiregulering af udenlandsk valuta for kreditor og debitor
@@ -292,9 +292,11 @@
               items:
                 - name: Centraliserede kreditorbetalinger
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Konfigurere og behandle mellembetalinger
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Konfigurere udligning
                   href: cash-bank-management/configure-settlement.md
-                - name: Udligne rest
+                - name: Udlign rest
                   href: cash-bank-management/settle-remainder.md
                 - name: Oversigt over kreditorbetalinger
                   href: cash-bank-management/tasks/vendor-payment-overview.md
@@ -344,7 +346,7 @@
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Indsigt i kundebetaling (prøveversion)
               href: accounts-receivable/payment-insights-overview.md
-            - name: 'Debitor, posteringsprofiler'
+            - name: 'Debitor, bogføringsprofiler'
               href: accounts-receivable/customer-posting-profiles.md
             - name: Kopiere debitorer ved hjælp af delte nummerserier
               href: accounts-receivable/copy-customer.md
@@ -352,10 +354,14 @@
               href: accounts-receivable/customer-workflow.md
             - name: Oprette og behandle tilbagevendende fakturaer
               href: accounts-receivable/set-up-process-recurring-invoices.md
-            - name: Regnskabsfordelinger og kladdepostering for reskontro til fritekstfakturaer
+            - name: Regnskabsfordelinger og kladdepostering for reskontrokladde til fritekstfakturaer
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-            - name: Debitorposteringsprofiler
+            - name: Debitorbogføring
+              href: general-ledger/accts-recvble-posting.md
+            - name: 'Debitor, bogføringsprofiler'
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Oprette gebyrkoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Oversigt over SEPA Direct Debit
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: Oprette bemyndigelse til SEPA Direct Debit
@@ -364,7 +370,7 @@
               href: accounts-receivable/credit-card-authorizations.md
             - name: Oprette en fritekstfaktura
               href: accounts-receivable/create-free-text-invoice-new.md
-            - name: Regnskabsfordelinger og kladdepostering for reskontro til fritekstfakturaer
+            - name: Regnskabsfordelinger og kladdepostering for reskontrokladde til fritekstfakturaer
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Oprette en skabelon til en fritekstfaktura
               href: accounts-receivable/create-free-text-invoice-template-new.md
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Scenarier for reguleringsdato
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Indtægtsopdelt
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Udskydelser af omsætning og udgifter
                   items:
                     - name: Konfigurer udskydelser af omsætning og udgifter
@@ -452,6 +460,8 @@
               items:
                 - name: Oversigt over kundebetalinger
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Konfigurere og behandle mellembetalinger
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Centraliserede betalinger for debitor
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Deponere kundebetalinger
@@ -606,7 +616,7 @@
               href: cash-bank-management/letters-of-credit.md
             - name: Oprette en bankfacilitetsaftale for en remburs
               href: cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-            - name: Oprette posteringsprofiler for bankfaciliteter til remburs
+            - name: Oprette bogføringsprofiler for bankfaciliteter til remburs
               href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Remburser og importinkassoer
               href: cash-bank-management/letters-of-credit-import-collections.md
@@ -620,7 +630,7 @@
               href: cash-bank-management/tasks/letter-guarantee-transaction.md
             - name: Oprette en bankfacilitetsaftale for garantien
               href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-            - name: Oprette posteringsprofiler for bankfaciliteter til garanti
+            - name: Oprette bogføringsprofiler for bankfaciliteter til garanti
               href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
             - name: Fremdaterede checks
               href: cash-bank-management/postdated-checks.md
@@ -804,7 +814,7 @@
               items:
                 - name: Konfigurere anlægsaktiver
                   href: fixed-assets/set-up-fixed-assets.md
-                - name: Oprette posteringsprofiler for anlægsaktiver
+                - name: Oprette bogføringsprofiler for anlægsaktiver
                   href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Integration af anlægsaktiver
                   href: fixed-assets/fixed-asset-integration.md
@@ -930,7 +940,7 @@
                   href: asset-leasing/dual-reporting.md
                 - name: Konfigurere en arbejdsproces for leasing
                   href: asset-leasing/set-up-lease-wrkflw.md
-                - name: Bruge arbejdsprocesser for leasinggodkendelse
+                - name: Bruge arbejdsgange for leasinggodkendelse
                   href: asset-leasing/use-create-lease-wrkflw.md
                 - name: Administrere leasinger via struktur for leasingimport
                   href: asset-leasing/manage-leases-thru-imprt-framewrk.md
@@ -1022,10 +1032,18 @@
                       href: general-ledger/example-posting-definitions.md
                 - name: Valuta
                   items:
-                    - name: Importere valutakurser
+                    - name: Importér valutakurser
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Dobbelt valuta
                       href: general-ledger/dual-currency.md
+                - name: Bogføringsprofiler
+                  items:
+                    - name: Oversigt over bogføringsprofiler
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Anbefalet praksis for bogføringsprofiler
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Konti til automatisk transaktioner
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Fordelingsregler
                   items:
                     - name: Finansfordelingsregler
@@ -1044,7 +1062,7 @@
                       href: general-ledger/tasks/create-validate-journals.md
                     - name: Kladdebogføringsfejl på grund af ubalance
                       href: general-ledger/posting-fail-imbalance.md
-                    - name: Tilbageføre kladdebogføring
+                    - name: Tilbageføre kladdepostering
                       href: general-ledger/reverse-journal-posting.md
                     - name: Hvorfor kan jeg ikke tilbageføre denne postering?
                       href: general-ledger/cant-reverse-transctns.md
@@ -2862,7 +2880,7 @@
                   href: localizations/emea-ita-exil-commission-settlement.md
                 - name: Finanssimuleringer (Italien)
                   href: localizations/emea-ita-exil-general-ledger-simulations.md
-                - name: Konfigurerbare posteringsprofiler for banker og remitteringstyper
+                - name: Konfigurerbare bogføringsprofiler for banker og remitteringstyper
                   href: localizations/emea-ita-exil-bank-remittance.md
                 - name: Entydig certificering
                   href: localizations/emea-ita-exil-unique-certification.md
@@ -3012,7 +3030,7 @@
                   href: localizations/tasks/set-up-asset-retirement-obligation.md
                 - name: Konfigurere konsoliderede fakturaer
                   href: localizations/tasks/set-up-consolidated-invoices.md
-                - name: Konfigurere fælles parametre for værdiforringelsesbeløb og posteringsprofil
+                - name: Konfigurere fælles parametre for værdiforringelsesbeløb og bogføringsprofil
                   href: localizations/tasks/impairment-accounting.md
                 - name: Konfigurere rapport for forbrugsskat i Japan
                   href: localizations/tasks/setup-japan-consumption-tax-report.md
@@ -4569,13 +4587,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/finance/toc.json
                 - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/finance/toc.json
-                - name: Handlinger i arbejdsprocesser
+                - name: Handlinger i arbejdsgange
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/finance/toc.json
-                - name: Oprette arbejdsprocesser
+                - name: Oprette arbejdsgange
                   items:
-                    - name: Oversigt over oprettelse af arbejdsprocesser
+                    - name: Oversigt over oprettelse af arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere egenskaber for arbejdsprocesser
+                    - name: Konfigurere egenskaber for arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/finance/toc.json
@@ -4595,7 +4613,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere arbejdsprocesser for linjeelementer
+                    - name: Konfigurere arbejdsgange for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/finance/toc.json
@@ -4603,7 +4621,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/finance/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/finance/toc.json
                 - name: Arbejdsprocestyper
                   items:

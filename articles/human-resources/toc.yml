@@ -284,7 +284,7 @@
                   href: hr-setup-parameters.md
                 - name: Konfigurere delte Human Resources-parametre
                   href: hr-setup-shared-parameters.md
-                - name: Konfigurere arbejdsprocesser for Human Resources
+                - name: Konfigurere arbejdsgange for Human Resources
                   href: hr-workflow-manage-employee-information.md
                 - name: Forstå dato- og tidsfelter
                   href: hr-setup-date-time-fields.md
@@ -336,13 +336,13 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
                     - name: Arbejdsproceselementer
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Handlinger i arbejdsprocesser
+                    - name: Handlinger i arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Oprette arbejdsprocesser
+                    - name: Oprette arbejdsgange
                       items:
-                        - name: Oversigt over oprettelse af arbejdsprocesser
+                        - name: Oversigt over oprettelse af arbejdsgange
                           href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Konfigurere egenskaber for arbejdsprocesser
+                        - name: Konfigurere egenskaber for arbejdsgange
                           href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
                         - name: Konfigurere manuelle opgaver
                           href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -360,7 +360,7 @@
                           href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
                         - name: Konfigurere parallelle grene
                           href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Konfigurere arbejdsprocesser for linjeelementer
+                        - name: Konfigurere arbejdsgange for linjeelementer
                           href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
@@ -368,7 +368,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Vise arbejdsproces historik
                       href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
+                    - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
                       href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
                     - name: Arbejdsprocestyper
                       items:
@@ -452,18 +452,16 @@
               href: hr-personnel-positions.md
             - name: Oprette en arbejdstidskalender
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekruttere jobkandidater
-              href: hr-personnel-recruit.md
             - name: Ofte stillede spørgsmål om personalehandlinger
               href: hr-personnel-actions-faq.md
-            - name: Bruge arbejdsprocesser til at administrere medarbejderoplysninger
+            - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
               href: hr-workflow-manage-employee-information.md
             - name: Få vist og administrer adresseændringer
               href: hr-personnel-view-address-changes.md
             - name: Redigere rapporteringsrelationerne for en stilling
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Strømlinet medarbejderindtastning
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Angive arbejderoplysninger
               href: hr-personnel-enter-worker-information.md
             - name: Arbejdere uden ansættelse
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Vedligeholde oplysninger om skade og sygdom for medarbejder
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Rekruttér kandidater
+            - name: Rekruttering
               items:
-                - name: Administrere rekrutteringsprocesser
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Masseansættelsesprojekter
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Oprette masseansættelsesprojekter
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Angive ansøger og ansøgningsdata manuelt
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Udarbejde og åbne jobansættelser
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Konfigurere stillinger
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Ansætte kandidater gennem rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Ansætte eksisterende medarbejdere gennem rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identificere og installere kandidatudvælgelsesværktøjer
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Oversigt
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Rekrutteringsprojekter
+                  items:
+                    - name: Administrere rekrutteringsprojektprocesser
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Angive ansøger og ansøgningsdata manuelt
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Udarbejde og åbne jobansættelser
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Konfigurere stillinger
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Ansætte kandidater gennem rekruttering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Ansætte eksisterende medarbejdere gennem rekruttering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Identificere og installere kandidatudvælgelsesværktøjer
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Masseansættelsesprojekter
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Oprette masseansættelsesprojekter
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Rekrutteringsanmodninger (flettet infrastruktur)
+                  items:
+                    - name: Rekruttere jobkandidater
+                      href: hr-personnel-recruit.md
         - name: Opgavestyring
           href: hr-task-mgmt.md
         - name: Orlov og fravær
@@ -546,7 +552,7 @@
               href: hr-configure-absence-manager.md
             - name: Administrere politikker for køb og salg af orlov
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-            - name: Oprette arbejdsprocesser for køb og salg af orlov
+            - name: Oprette arbejdsgange for køb og salg af orlov
               href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Køb og sælg orlov
               href: hr-employee-self-service-buy-sell-leave.md
@@ -710,13 +716,13 @@
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
             - name: Arbejdsproceselementer
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-            - name: Handlinger i arbejdsprocesser
+            - name: Handlinger i arbejdsgange
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-            - name: Oprette arbejdsprocesser
+            - name: Oprette arbejdsgange
               items:
-                - name: Oversigt over oprettelse af arbejdsprocesser
+                - name: Oversigt over oprettelse af arbejdsgange
                   href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere egenskaber for arbejdsprocesser
+                - name: Konfigurere egenskaber for arbejdsgange
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere manuelle opgaver
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -736,7 +742,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere parallelle grene
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Konfigurere arbejdsprocesser for linjeelementer
+                - name: Konfigurere arbejdsgange for linjeelementer
                   href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
             - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
@@ -744,7 +750,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
             - name: Vise arbejdsproces historik
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-            - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
+            - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
             - name: Arbejdsprocestyper
               items:
@@ -800,6 +806,8 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurere integration med Finance
               href: hr-admin-integration-finance.md
+            - name: Oprette link fra Human Resources til et andet miljø
+              href: configure-links.md
             - name: Konfigurere integration med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Oprette en app for tilbagevendende dataeksport

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
-ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
+ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "7947256"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725590"
 ---
 # <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål i forbindelse med aktiviteter i årsafslutningen 
 
@@ -168,11 +168,11 @@ Når denne betaling er betalt, er de DKK 500,00 det 1099-beløb, der er betalt. 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Kreditor: 1099 – Opret 1099-posteringer manuelt
 Det kan være nødvendigt for en organisation at oprette 1099-transaktioner manuelt, der ikke har tilknyttet en faktura. Du kan tilføje manuelle 1099-posteringer til **Kreditor > Periodiske opgaver > Moms 1099 > Kreditorudligning for 1099**. Vælg knappen **Manuelle 1099-transaktioner**. 
 
-Manuelt oprettede 1099-posteringer opdateres ikke med processen **Opdater alle** eller processen til **Genberegn eksisterende 1099-beløb** i **Opdateringsværktøj til 1099**.
+Manuelt oprettede 1099-transaktioner opdateres ikke med processen **Opdater alle** eller processen til **Genberegn eksisterende 1099-beløb** i **Opdateringsværktøj til 1099**.
 
 ## <a name="accounts-payable-1099--does-dynamics-365-finance-support-the-1096-form"></a>Kreditor: 1099 – Understøtter Dynamics 365 Finance 1096-formularen? 
 
-Dynamics 365 Finance udskriver ikke 1096 Annual Summary and Transmittal of US Information Returns-formlaren.
+Dynamics 365 Finance udskriver ikke 1096 Annual Summary and Transmittal of US Information Returns-formularen.
 
 ## <a name="accounts-payable-1099--are-there-any-new-features-that-support-1099-reporting-for-public-sector"></a>Kreditor: 1099 – Findes der nye funktioner, der understøtter 1099-rapportering for den offentlige sektor? 
 Der er tilføjet en ny funktion til den offentlige sektor, **Opdater 1099-oplysninger efter hovedkonto**, som du kan aktivere i arbejdsområdet til **Funktionsstyring**. Med denne funktion kan du tilknytte 1099-værdierne for en kreditor til hovedkontoen i regnskabsfordelingen og ikke standardkontoen i kreditorposten.

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 86690af303eb87335c980bd7dae3ae34ce06a2a0
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656715"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725505"
 ---
 # <a name="revenue-recognition-setup"></a>Opsætning af Indtægtsføring
 [!include [banner](../includes/banner.md)]
@@ -45,7 +45,7 @@ Modulet **Indtægtsføring** har følgende opsætningsindstillinger:
         - Definere indtægtstidsplan
         - Definere indtægtspris
 
-    - Posteringsprofiler
+    - Bogføringsprofiler
     - Bundter
 
         - Bundtkomponenter
@@ -165,7 +165,7 @@ Hvis indstillingen **Aktivér rabatfordelingsmetode** på siden **Finansparametr
 
 På siden **Opsætningsgrundlag** skal du tilføje en post for hver varegruppe, som varen understøtter. Når indtægtsfordelingen udføres, fordeles indtægtsprisen for de vigtige og mindre vigtige dele for PCS-varen.
 
-### <a name="posting-profiles"></a>Posteringsprofiler
+### <a name="posting-profiles"></a>Bogføringsprofiler
 
 Tre yderligere bogføringstyper understøtter muligheden for udskydelse af indtægt. Disse bogføringstyper oprettes under fanen **Salgsordre** på siden **Bogføring** (**Indtægtsføring \> Opsætning \> Lager- og produktopsætning \> Bogføring**).
 

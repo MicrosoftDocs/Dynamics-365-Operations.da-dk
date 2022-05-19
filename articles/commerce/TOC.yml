@@ -92,11 +92,11 @@
                   href: get-started/system-requirements.md
                 - name: Lokal installation
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
-                - name: Systemkrav til lokale installationer
+                - name: Systemkrav til udrulninger i det lokale miljø
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Købe Finance + Operations (i det lokale miljø)
+                - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange-vejledning til implementering
                   href: dev-itpro/implementation-considerations-cdx.md
@@ -600,6 +600,8 @@
                       href: wallets.md
                     - name: Udvidede betalinger ved kassen i storefront
                       href: dev-itpro/enhanced-sca.md
+                    - name: Konfigurere ekspresbetalinger til PayPal
+                      href: dev-itpro/express-payments-paypal.md
                     - name: Ofte stillede spørgsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: Mail og beskeder
@@ -958,6 +960,8 @@
               href: online-store-overview.md
             - name: Oprette et e-handelswebsted
               items:
+                - name: Knytte kanaler til e-handelswebsteder
+                  href: map-channels-sites.md
                 - name: Konfigurere dit domænenavn
                   href: configure-your-domain-name.md
                 - name: Implementere en ny e-handelslejer
@@ -2360,13 +2364,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/commerce/toc.json
                 - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/commerce/toc.json
-                - name: Handlinger i arbejdsprocesser
+                - name: Handlinger i arbejdsgange
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/commerce/toc.json
-                - name: Oprette arbejdsprocesser
+                - name: Oprette arbejdsgange
                   items:
-                    - name: Oversigt over oprettelse af arbejdsprocesser
+                    - name: Oversigt over oprettelse af arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere egenskaber for arbejdsprocesser
+                    - name: Konfigurere egenskaber for arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
@@ -2386,7 +2390,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere arbejdsprocesser for linjeelementer
+                    - name: Konfigurere arbejdsgange for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/commerce/toc.json
@@ -2394,7 +2398,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
                 - name: Arbejdsprocestyper
                   items:
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Overføre POS-udvidelser til Commerce SDK
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Oprette et POS-udvidelsespakkeprojekt
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Fejlfinde Store Commerce-udvidelser ved hjælp af VS Code
                       href: dev-itpro/sc-debug.md
+                    - name: Lukkede MPOS- og CPOS-udvidelser
+                      items:
+                        - name: Oprette en .appx-fil til udvidelsespakken Modern POS
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: Fejlfinde MPOS- (Lukkede) og CPOS-udvidelser
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Miljøkonfiguration
                   items:
                     - name: Lokalt udviklingsmiljø
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Oprette et POS-udvidelsespakkeprojekt
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Oprette en .appx-fil til udvidelsespakken Modern POS
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Fejlfinde POS-udvidelser
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: API'er og reference
                   items:
                     - name: Få vist oplysninger om POS-udvidelsespakke
@@ -2834,6 +2840,10 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Optimering af modul-CSS
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Optimere billeder på produktoplysningssider
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Optimere billeder på søge- og kategorisider
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetri og analyse
                       items:
                         - name: Telemetri-logføring

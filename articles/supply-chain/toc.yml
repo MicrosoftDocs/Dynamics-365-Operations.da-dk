@@ -82,12 +82,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lokal installation
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Systemkrav til lokale installationer
+                - name: Systemkrav til udrulninger i det lokale miljø
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Købe Finance + Operations (i det lokale miljø)
+                - name: Købe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere lagersted for udrulninger i det lokale miljø
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
@@ -2005,13 +2003,13 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Arbejdsproceselementer
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Handlinger i arbejdsprocesser
+                - name: Handlinger i arbejdsgange
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Oprette arbejdsprocesser
+                - name: Oprette arbejdsgange
                   items:
-                    - name: Oversigt over oprettelse af arbejdsprocesser
+                    - name: Oversigt over oprettelse af arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere egenskaber for arbejdsprocesser
+                    - name: Konfigurere egenskaber for arbejdsgange
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere manuelle opgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
@@ -2031,7 +2029,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere arbejdsprocesser for linjeelementer
+                    - name: Konfigurere arbejdsgange for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
@@ -2039,7 +2037,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vise arbejdsproces historik
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere systemet til at sende mail angående arbejdsprocessern til brugere
+                - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Arbejdsprocestyper
                   items:
@@ -2207,7 +2205,7 @@
                   href: procurement/tasks/create-vendor-account.md
                 - name: Oprette en bankkonto for kreditor
                   href: procurement/tasks/create-vendor-bank-account.md
-                - name: Kreditorposteringsprofil
+                - name: Kreditorbogføringsprofil
                   href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurationer for kreditoranmodning
                   href: procurement/vendor-request-configurations.md
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrere varer for en vare med aktiveret grundlæggende lagerstyring ved hjælp af en varemodtagelseskladde
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Importere indgående ASN'er via V2-dataenheden
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Importere indgående ASN'er via V3-dataenheden
+                  href: warehousing/import-asn-data-entity.md
                 - name: Levere produkter direkte fra modtagende lagersteder til butikker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
@@ -3649,7 +3647,7 @@
                   href: troubleshooting/inventory/cant-find-workflow-dropdown.md
                 - name: 'Arbejdsproces for lagerkladder fuldføres aldrig, og kladden kan ikke behandles'
                   href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: 'Lagerkladden er låst, og arbejdsprocesserns batchjob fungerer ikke'
+                - name: 'Lagerkladden er låst, og arbejdsgangens batchjob fungerer ikke'
                   href: troubleshooting/inventory/inventory-journal-locked-workflow.md
                 - name: Enheden og enhedsantallet fungerer ikke korrekt i lagerkladden
                   href: troubleshooting/inventory/journal-unit-quantity-incorrect.md

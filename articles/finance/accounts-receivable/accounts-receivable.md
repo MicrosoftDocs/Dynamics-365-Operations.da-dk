@@ -1,28 +1,28 @@
 ---
 title: Startside for debitor
 description: Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger.
-author: roschlom
+author: kfend
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "20671"
 - intro-internal
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 946a4e3cab6549af8b6c07248b6889e3b610f27f
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726936"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711848"
 ---
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
@@ -39,10 +39,10 @@ Du kan oprette debitorfakturaer baseret på salgsordrer eller følgesedler. Du k
 
 ## <a name="set-up-accounts-receivable"></a>Konfigurere Debitorer
 
-Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer. Du kan definere debitorgrupper, debitorer, posteringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer, gebyrer, leveringer og destinationer, veksler og andre typer debitoroplysninger. 
+Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer. Du kan definere debitorgrupper, debitorer, bogføringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer, gebyrer, leveringer og destinationer, veksler og andre typer debitoroplysninger. 
 
-- [Regnskabsfordelinger og kladdepostering for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-- [Debitorposteringsprofiler](customer-posting-profiles.md)
+- [Regnskabsfordelinger og kladdepostering for reskontrokladde til fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [Debitorbogføringsprofiler](customer-posting-profiles.md)
 - [Opsætning, godkendelse og verifikation af kreditkort](credit-card-authorizations.md)
 - [Oprette en debitorfaktura](configure-customer-invoices.md)
 - [Oprette og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
@@ -83,7 +83,7 @@ Gå til [Microsoft Dynamics 365 oversigten](/dynamics365/release-plans/) for at 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger om Debitorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger om Debitor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
