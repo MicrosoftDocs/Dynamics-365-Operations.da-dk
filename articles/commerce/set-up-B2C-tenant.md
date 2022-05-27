@@ -2,7 +2,7 @@
 title: Konfigurere en B2C-lejer i Commerce
 description: I dette emne beskrives, hvordan du konfigurerer dine Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) til godkendelse af brugerwebsteder i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109880"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714306"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurere en B2C-lejer i Commerce
 
@@ -137,9 +137,9 @@ Du kan vælge at bruge de standardbrugerstrømme, der leveres af Azure AD, og so
 
 Hvis du vil tilpasse brugerpolitiksiderne med indbyggede sider i Dynamics 365 Commerce, skal du se [Konfigurere brugerdefinerede sider til brugerlogon](custom-pages-user-logins.md). Du kan finde flere oplysninger under [Tilpasse grænsefladen af brugeroplevelser i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
-### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Oprette en tilmeldings- og login-politik for brugerstrøm
+### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Oprette en tilmeldings- og logonpolitik for brugerflow
 
-Gør følgende for at konfigurere en tilmeldings- og login-politik.
+Gør følgende for at konfigurere et brugerflow for en tilmeldings- og logonpolitik.
 
 1. Vælg **Brugerstrømme (politikker)** i navigationsruden til venstre i Azure-portalen.
 1. Vælg **Ny brugerstrøm** på siden **Azure AD B2C – Brugerstrømme (politikker)**.
@@ -159,7 +159,7 @@ Gør følgende for at konfigurere en tilmeldings- og login-politik.
 
 1. Vælg **Opret**.
 
-Følgende billede er et eksempel på brugerstrømmen i Azure AD B2C-tilmelding og -login.
+Følgende billede er et eksempel på brugerflowet i Azure AD B2C-tilmelding og -logon.
 
 ![Politikindstillinger for tilmelding og login.](./media/B2CImage_11.png)
 
@@ -239,15 +239,15 @@ Udfør følgende trin for at tilføje og konfigurere en social identitetsudbyder
 
 1. Naviger til **Identitetsudbydere** i Azure-portalen.
 1. Vælg **Tilføj**. Skærmbilledet **Tilføj identitetsudbyder** vises.
-1. Angiv det navn, der skal vises for brugere på din login-skærm, under **Navn**.
+1. Angiv det navn, der skal vises for brugere på din logonskærm, under **Navn**.
 1. Vælg en identitetsudbyder på listen under **Type identitetsudbyder**.
 1. Vælg **OK**.
 1. Vælg **Konfigurer denne identitetsudbyder** for at få adgang til skærmbilledet **Konfigurer den sociale identitetsudbyder** .
 1. Angiv det klient-id, der er hentet fra installationsprogrammet til identitetsudbyderen, under **Klient-id**.
 1. Angiv den klienthemmelighed, der er hentet fra installationsprogrammet til identitetsudbyderen, under **Klienthemmelighed**.
-1. Knyt brugerstrøm til tilmeldings- og login-politikker:
+1. Knyt brugerflow til tilmeldings- og logonpolitikker:
 1. Gå til **Azure AD B2C – Brugerstrømme (politikker) \> {din tilmeldings- og logon-politik} \> Identitetsudbydere**.
-1. Hvis du vil knytte brugerstrømmen til login/tilmeldingspolitikken, skal du vælge hver af de identitetsudbydere, du har konfigureret til din konto. Hvis du vil teste disse, skal du vælge **Kør brugerstrøm** for hver identitetsudbyder. Login-siden vises på en ny fane, og der vises et valgfelt til den nye identitetsudbyder.
+1. Hvis du vil knytte brugerflowet til logon-/tilmeldingspolitikken, skal du vælge hver af de identitetsudbydere, du har konfigureret til din konto. Hvis du vil teste disse, skal du vælge **Kør brugerstrøm** for hver identitetsudbyder. Login-siden vises på en ny fane, og der vises et valgfelt til den nye identitetsudbyder.
 
 I følgende billede vises eksempler på skærmbillederne **Tilføj identitetsudbyder** og **Konfigurerer sociale identitetsudbydere** i Azure AD B2C.
 
@@ -332,27 +332,28 @@ Udfør følgende trin for at føje Azure AD B2C-lejerens programoplysninger til 
 
 1. Log på som administrator af Commerce-webstedsgenerator for dit miljø.
 1. Vælg **Lejerindstillinger** i venstre navigationsrude for at udvide den.
-1. Vælg **B2C-indstillinger** under **Lejerindstillinger**. 
-1. Vælg **Administrer** i hovedvinduet ved siden af **B2C-programmer**. (Hvis lejeren vises på B2C-programlisten, er den allerede blevet tilføjet af en administrator. Kontrollér, at punkterne i trin 6 nedenfor svarer til dit B2C-program.)
-1. Vælg **Tilføj B2C-program**.
+1. Vælg **Konfiguration af webstedets godkendelse** under **Lejerindstillinger**. 
+1. Vælg **Administrer** i hovedvinduet ved siden af **Godkendelsesprofiler for websted**. (Hvis lejeren vises på profillisten til webstedsgodkendelse, er den allerede blevet tilføjet af en administrator. Kontrollér, at punkterne i trin 6 nedenfor svarer til din ønskede B2C-konfiguration. Der kan også oprettes en ny profil ved hjælp af Azure AD B2C-lejere eller programmer for at tage højde for mindre forskelle som f.eks. forskellige brugerpolitik-id'er).
+1. Vælg **Tilføj godkendelsesprofil for websted**.
 1. Angiv følgende påkrævede punkter i formularen, der vises, ved at bruge værdier fra B2C-lejeren og -programmet. Felter, der ikke er obligatoriske (dvs. uden en stjerne), kan være tomme.
 
     - **Programnavn**: Navnet på dit B2C-program, f.eks. "Fabrikam B2C".
     - **Navn på lejer**: Navnet på din B2C-lejer (f.eks. brug "fabrikam", hvis domænet vises som "fabrikam.onmicrosoft.com" for B2C-lejeren). 
     - **Glem adgangskodepolitik-id**: Politik-id for brugerstrømmen for glemt adgangskode, f.eks. "B2C_1_PasswordReset".
-    - **Politik-id for tilmelding og logon**: Politik-id for tilmelding og logon i brugerstrømmen, f.eks. "B2C_1_signup_signin".
+    - **Politik-id for tilmelding og logon**: Politik-id for tilmelding og logon i brugerflow, f.eks. "B2C_1_signup_signin".
     - **Klient-GUID**: B2C-program-id'et, f.eks. "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Rediger profilpolitik-id**: Politik-id'et for brugerstrømmen til profilredigering, f.eks. "B2C_1A_ProfileEdit".
 
 1. Vælg **OK**. Navnet på dit B2C-program vises nu på listen.
 1. Vælg **Gem** for at gemme ændringerne.
 
+Det valgfrie felt **Log på brugerdefineret domæne** bør kun bruges, hvis du konfigurerer et brugerdefineret domæne til Azure AD B2C-lejeren. Yderligere oplysninger om brugen af feltet **Log på brugerdefineret domæne** finder du i [Yderligere B2C-oplysninger](#additional-b2c-information) nedenfor.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Knyt B2C-programmet til dit websted og din kanal
 
 > [!WARNING]
-> Hvis dit websted allerede er knyttet til et B2C program, og du skifter til et andet B2C-program, fjernes de aktuelle referencer, der er oprettet for brugere, som allerede er tilmeldt i dette miljø. Hvis de ændres, vil alle legitimationsoplysninger, der er knyttet til det aktuelt tildelte B2C-program, ikke være tilgængelige for brugerne. 
-> 
-> Du skal kun opdatere kun B2C-programmet, hvis du konfigurerer kanalens B2C-program for første gang, eller hvis du vil have, at brugere skal tilmelde sig med nye legitimationsoplysninger til denne kanal med det nye B2C-program. Vær forsigtig, når du knytter kanaler til B2C-programmer, og navngiv programmer tydeligt. Hvis en kanal ikke er knyttet til et B2C-program i trinnene nedenfor, vil de brugere, der logger på den pågældende kanal til dit websted, blive angivet i B2C-programmet, der vises som **standard** på listen **Lejerindstillinger \> B2C-indstillinger** for B2C-programmer.
+> - Hvis dit websted allerede er knyttet til et B2C program, og du skifter til et andet B2C-program, fjernes de aktuelle referencer, der er oprettet for brugere, som allerede er tilmeldt i dette miljø. Hvis de ændres, vil alle legitimationsoplysninger, der er knyttet til det aktuelt tildelte B2C-program, ikke være tilgængelige for brugerne. 
+> - Du skal kun opdatere kun B2C-programmet, hvis du konfigurerer kanalens B2C-program for første gang, eller hvis du vil have, at brugere skal tilmelde sig igen med nye legitimationsoplysninger til denne kanal med det nye B2C-program. Vær forsigtig, når du knytter kanaler til B2C-programmer, og navngiv programmer tydeligt. Hvis en kanal ikke er knyttet til et B2C-program i trinnene nedenfor, vil de brugere, der logger på den pågældende kanal til dit websted, blive angivet i B2C-programmet, der vises som **standard** på listen **Lejerindstillinger \> B2C-indstillinger** for B2C-programmer.
 
 Gør følgende for at knytte B2C-programmet til dit websted og din kanal.
 
@@ -378,6 +379,23 @@ Du kan få yderligere oplysninger om tilpasning af Azure AD B2C-interaktioner og
 ### <a name="secondary-admin"></a>Sekundær administrator
 
 Du kan tilføje en valgfri, sekundær administratorkonto under afsnittet **Bruger** i din B2C-lejer. Det kan være en direkte konto eller en generel konto. Hvis du skal dele en konto på tværs af teamressourcer, kan du også oprette en fælles konto. På grund af følsomheden for de data der er lagret i Azure AD B2C, skal en fælles konto overvåges nøje i følge firmaets sikkerhedspraksis.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Oprette et brugerdefineret domæne til logon
+
+I Azure AD B2C kan du konfigurere et tilpasset domæne for logon til Azure AD B2C-lejeren. Du kan finde instruktioner i [Aktiver brugerdefinerede domæner for Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+
+Hvis du bruger et brugerdefineret domæne til logon, skal domænet angives i Commerce-webstedsgeneratoren.
+
+Hvis du angive et brugerdefineret domæne til logon i webstedgeneratoren, skal du følge disse trin.
+
+1. Vælg webstedsskifteren øverst til højre i webstedsgeneratoren, og vælg derefter **Administrer websteder**.
+1. Vælg **Lejerindstillinger \> Konfiguration af webstedets godkendelse** i venstre navigationsrude.
+1. Vælg **Administrer** i sektionen **Godkendelsesprofiler for websted**.
+1. I genvejsmenuen til højre skal du vælge knappen **Rediger** (blyantssymbol) ud for den webstedsgodkendelsesprofil, du vil angive et brugerdefineret domæne for.
+1. I dialogboksen **Rediger godkendelsesprofil for websted** skal du under **Log på brugerdefineret domæne** angive dit brugerdefinerede logondomæne (f.eks. 'login.fabrikam.com').
+
+> [!WARNING]
+> Når du opdaterer til et brugerdefineret domæne for Azure AD B2C-lejeren, påvirker ændringen lejerens udstederoplysninger for det genererede token. Udstederoplysninger inkluderer derefter det brugerdefinerede domæne i stedet for det standarddomæne, der leveres af Azure AD B2C. En anden konfiguration af **Udsteder** i Commerce headquarters (**Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Commerce-delte parametre \> Identitetsudbydere**) ændrer systemets interaktion med webstedsbrugere og kan muligvis oprette en ny kundepost, hvis en bruger godkender hos den nye udsteder. Eventuelle ændringer af brugerdefinerede domæne skal testes grundigt, før der skiftes til det brugerdefinerede domæne i et aktivt Azure AD B2C-miljø.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

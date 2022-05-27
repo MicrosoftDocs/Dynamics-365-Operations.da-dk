@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565273"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695557"
 ---
 # <a name="sales-returns"></a>Salgsreturneringer
 
@@ -76,7 +76,6 @@ Når du opretter en returordre, skal oplysningerne i følgende tabel medtages.
 | RMA-nummer (Return Materials Authorization-nummer)         | Det id, der er tilknyttet returordren.              | RMA-nummeret bruges som en alternativ nøgle under hele returordreprocessen. RMA-nummeret, der tildeles på basis af den RMA-nummerserie, der er konfigureret på siden **Debitorparametre**.                                                                                                                              |
 | Frist           | Den seneste dato, hvor en vare kan returneres               | Standardværdien beregnes som dags dato plus gyldighedsperioden. Hvis en returnering f.eks. kun er gyldig i 90 dage fra den dato, hvor returordren oprettes, og returordren blev oprettet den 1. maj, er værdien i feltet **30. juli**. Gyldighedsperioden angives på siden **Debitorparametre**. |
 | Årsagskode for returnering | Kundens årsag til at returnere produktet.          | Årsagskoden vælges på listen over brugerdefinerede årsagskoder. Du kan opdatere dette felt når som helst.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Opret returordrelinjer
 
 Når du har fuldført returneringshovedet, kan du oprette returlinjer ved hjælp af en af følgende metoder:
@@ -84,7 +83,8 @@ Når du har fuldført returneringshovedet, kan du oprette returlinjer ved hjælp
 -   Du kan angive oplysninger om varen, antal og andre oplysninger for hver returvarelinje manuelt.
 -   Opret en returlinje ved hjælp af funktionen **Find salgsordre**. Vi anbefaler, at du bruger denne funktion, når du opretter en returordre. Funktionen **Find salgsordre** opretter en reference fra returlinjen til den fakturerede salgsordrelinje og henter linjeoplysninger som varenummer, antal, pris, rabat og omkostningsværdier fra salgslinjen. Referencen er med til at sikre, at når produktet returneres til virksomheden, er det værdisat til samme kostpris, som det blev solgt til. Referencen validerer også, at der ikke oprettes returordrer for en mængde, der overstiger det antal, der blev solgt på fakturaen.
 
->[Bemærk:] Returlinjer, der har en reference til en salgsordre, skal håndteres som rettelser eller tilbageførsler af salget. Du kan finde flere oplysninger i afsnittet "Bogfør i finans" senere i dette emne.
+>[!NOTE] 
+>Returlinjer, der har en reference til en salgsordre, skal håndteres som rettelser eller tilbageførsler af salget. Du kan finde flere oplysninger i afsnittet "Bogfør i finans" senere i dette emne.
 
 ### <a name="charges"></a>Tillæg
 
@@ -189,8 +189,10 @@ Under ankomstprocessen integreres returneringer med den generelle proces til mod
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identificer produkter på listen Modtagelsesoversigt
 
-Siden **Modtagelsesoversigt** viser en liste over alle planlagte indgående modtagelser. 
->[Bemærk:] Modtagelser fra returordrer skal behandles separat i forhold til andre typer af transaktioner ved ankomsten. Når du har identificeret en indgående pakke på siden **Modtagelsesoversigt** (for eksempel ved hjælp af det ledsagende RMA-dokument), skal du i handlingsruden klikke på **Start modtagelse** for at oprette og initialisere en modtagelseskladde, der svarer til modtagelsen.
+Siden **Modtagelsesoversigt** viser en liste over alle planlagte indgående modtagelser.
+
+>[!NOTE] 
+>Modtagelser fra returordrer skal behandles separat i forhold til andre typer af transaktioner ved ankomsten. Når du har identificeret en indgående pakke på siden **Modtagelsesoversigt** (for eksempel ved hjælp af det ledsagende RMA-dokument), skal du i handlingsruden klikke på **Start modtagelse** for at oprette og initialisere en modtagelseskladde, der svarer til modtagelsen.
 
 ### <a name="edit-the-arrival-journal"></a>Rediger modtagelseskladden
 
@@ -232,7 +234,8 @@ Hvis du leverer en erstatningsvare til kunden, og du bruger dispositionshandling
 
 Erstatningsvaren leveres ved hjælp af en uafhængig salgsordre, udskiftningssalgsordren. Denne salgsordre oprettes, når følgesedlen for returordren genereres. Ordrehovedet bruger oplysninger fra kunden, der refereres til i returordrehovedet. Linjeoplysningerne indsamles fra de oplysninger, der er angivet på siden **Erstatningsvare**. Siden **Erstatningsvare** side skal være udfyldt for linjer, der har dispositionshandlinger, der starter med ordet "Erstat". Dog er hverken antallet eller identiteten af erstatningsvaren godkendt eller begrænset. På denne måde er der mulighed for tilfælde, hvor kunden ønsker den samme vare, men i en anden konfiguration eller størrelse, og også for tilfælde hvor kunderne ønsker en helt anden vare. Som standard angives en identisk vare på siden **Erstatningsvare**. Men du kan vælge en anden vare, forudsat at funktionen er konfigureret. 
 
->[Bemærk:] Du kan redigere og slette erstatningssalgsordren, når den er oprettet.
+>[!NOTE] 
+>Du kan redigere og slette erstatningssalgsordren, når den er oprettet.
 
 ## <a name="generate-a-packing-slip"></a>Generér en følgeseddel
 Før returnerede varer kan modtages på lager, skal du opdatere følgesedlen for den ordre, som varerne tilhører. Ligesom fakturaopdateringsprocessen er opdateringen af den økonomiske transaktion, er følgeseddelopdateringsprocessen den fysiske opdatering af lagerposten. Denne proces indfører med andre ord ændringerne på lageret. Ved returneringer bliver de trin, der tildeles dispositionshandlingen, implementeret under opdateringen af følgesedlen. Når du genererer følgesedlen, indtræffer følgende hændelser:
@@ -253,8 +256,10 @@ Selvom siden **Returordre** indeholder de oplysninger og handlinger, der er nød
 
 ### <a name="credit-correction"></a>Kreditrettelse
 
-Kontroller, at forskellige gebyrer er korrekte, som en del af faktureringsprocessen. For at få finansposterringerne til at blive rettelser (Storno), bør du overveje at bruge indstillingen **Kreditrettelse** under fanen **Andet** på siden **Bogføring af faktura**, når du bogfører fakturaen eller kreditnotaen. 
->[Bemærk:] Som standard er indstillingen **Kreditrettelse** aktiveret, hvis indstillingen **Kreditnota som rettelse** er blevet aktiveret på siden **Debitorparametre**. Vi anbefaler dog, at du ikke bogfører returneringer med Storno.
+Kontroller, at forskellige gebyrer er korrekte, som en del af faktureringsprocessen. For at få finansposterringerne til at blive rettelser (Storno), bør du overveje at bruge indstillingen **Kreditrettelse** under fanen **Andet** på siden **Bogføring af faktura**, når du bogfører fakturaen eller kreditnotaen.
+
+> [!NOTE]
+> Som standard er indstillingen **Kreditrettelse** aktiveret, hvis indstillingen **Kreditnota som rettelse** er blevet aktiveret på siden **Debitorparametre**. Vi anbefaler dog, at du ikke bogfører returneringer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Opret interne ordrer
 Returordrer kan udføres mellem to firmaer i organisationen. Følgende scenarier understøttes:
@@ -308,7 +313,8 @@ Returvareordren henviser ikke til en debitorfaktura. Den returnerede vare kredit
 
 ![Returordren henviser ikke til en debitorfaktura.](./media/SalesReturn09.png)  
 
->[Bemærk:] Varens stampris bruges som standardværdi for parameteren **Returkostpris**. Standardprisen er forskellig fra kostprisen på tidspunktet for lagerafgangen. Virkningen er derfor, at der opstår et tab på 3. Desuden indeholder returordren ikke den rabat, der blev givet til kunden på salgsordren. Der opstår derfor en for stor kreditering.
+> [!NOTE]
+> Varens stampris bruges som standardværdi for parameteren **Returkostpris**. Standardprisen er forskellig fra kostprisen på tidspunktet for lagerafgangen. Virkningen er derfor, at der opstår et tab på 3. Desuden indeholder returordren ikke den rabat, der blev givet til kunden på salgsordren. Der opstår derfor en for stor kreditering.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Eksempel 2: Kreditrettelse er valgt for returordren
 
@@ -316,7 +322,8 @@ Eksempel 2 er det samme som eksempel 1, men parameteren **Kreditrettelse** er ma
 
 ![Returordre, hvor kreditrettelse er markeret.](./media/SalesReturn10.png)  
 
->[Bemærk:] Finansposteringerne angives som negative rettelser.
+>[!NOTE] 
+>Finansposteringerne angives som negative rettelser.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Eksempel 3: Returordrelinjen er oprettet ved hjælp af funktionen Find salgsordre
 
@@ -324,7 +331,8 @@ I dette eksempel oprettes returordrelinjen ved hjælp af funktionen **Find salgs
 
 ![Returordrelinje, der er oprettet ved hjælp af Find salgsordre.](./media/SalesReturn11.png)  
 
->[Bemærk:] **Rabat** og **Returkostpris** er angivet korrekt. Der opstår derfor en præcis tilbageførsel af kundens faktura.
+> [!NOTE]
+> **Rabat** og **Returkostpris** er angivet korrekt. Der opstår derfor en præcis tilbageførsel af kundens faktura.
 
 
 

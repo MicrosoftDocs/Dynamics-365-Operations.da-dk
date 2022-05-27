@@ -2,7 +2,7 @@
 title: Oprette et dataintegrationsprojekt
 description: Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107281"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722877"
 ---
 # <a name="create-a-data-integration-project"></a>Oprette et dataintegrationsprojekt
 
@@ -55,11 +55,14 @@ Dette emne forklarer, hvordan du opretter et dataintegrationsprojekt.
 
 5. Åbn [Power Apps-miljøer](https://admin.powerapps.com/environments), og udfør følgende trin:  
 
-    1. Opret dataintegrationsprojekter til følgende skabeloner ved hjælp af det forbindelsessæt, du lige har oprettet:
+    1. Opret et enkelt dataintegrationsprojekt til hver af følgende skabeloner ved hjælp af det forbindelsessæt, du lige har oprettet:
 
         - Resultat af indsigt i kundebetaling (CDS til Fin og Ops 10.0.17+)
         - Pengestrømsresultater for likviditetsserier (CDS Fin og Ops)
         - Budgetresultater for tidsserier (CDS Fin og Ops)
+
+      > [!NOTE]
+      > Når du opretter flere dataintegrationsprojekter for hver enkelt skabelon, kan det medføre fejl, der blokerer opdateringerne.
 
     2. Angiv den relevante planlægning for hvert projekt.
 

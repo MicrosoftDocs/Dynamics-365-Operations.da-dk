@@ -2,7 +2,7 @@
 title: Webstedsvælgermodul
 description: Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/06/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551688"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710297"
 ---
 # <a name="site-picker-module"></a>Webstedsvælgermodul
 
@@ -43,7 +43,23 @@ Modulet til valg af websted skal konfigureres med listen over websteder (markede
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Føje et webstedsvælgermodul til en side
 
-Webstedsvælgermodulet kan føjes til pladsen **Webstedsvælger** i [overskriftsmodulet](author-header-module.md). Når et webstedsvælgermodul er tilføjet, kan du definere moduloverskriften og indstillinger for webstedet. Et overskriftsmodul findes generelt i et overskriftsfragment, der kan deles på tværs af e-handelssider for et websted. I følgende eksempel er webstedsvælgermodulet føjet til pladsen **Webstedsvælger** i et overskriftsmodul, der er indeholdt i et overskriftsfragment med navnet **HeaderContainer**.
+Webstedsvælgermodulet kan føjes til pladsen **Webstedsvælger** i [overskriftsmodulet](author-header-module.md). Når et webstedsvælgermodul er tilføjet, kan du definere moduloverskriften og indstillinger for webstedet. Et overskriftsmodul findes generelt i et overskriftsfragment, der kan deles på tværs af e-handelssider for et websted. 
+
+Følg disse trin for at føje et webstedsvælgermodul til et sidehovedmodul.
+
+1. På pladsen **Webstedsvælger** i sidehovedfragmentets sidehovedmodul skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Vælg moduler** skal du tilføje et **Webstedsvælger**-modul og derefter vælge **OK**.
+1. Vælg **Tilføj liste over webstedsindstillinger** i ruden med egenskaber for **Webstedsvælger**. Der vises en **Liste over webstedsindstillinger**, der kan redigeres.
+1. Vælg **Liste over webstedsindstillinger**. Dialogboksen **Liste over webstedsindstillinger** vises.
+1. Angiv den tekst for webstedsnavnet, der skal vises på rullelisten til webstedsvælger, under **Navn på sted**.
+1. Vælg **Tilføj et link** under **URL-adresse til omdirigeret til websted**. Ruden **Tilføj et link** vises.
+1. Vælg **Brugerdefineret side** i ruden **Tilføj et link**, og vælg derefter **Næste**.
+1. På listen over URL-adresser skal du vælge URL-adressen med den sti, du oprettede, da du føjer kanalen til webstedet (f.eks. `www.adventure-works.com/fr-ca`), og vælg derefter **Anvend**.
+1. Vælg **OK**.
+1. Vælg **Gem**, og vælg derefter **Afslut redigering**.
+1. Vælg **Publicer** for at publicere siden.
+
+I følgende eksempel er webstedsvælgermodulet føjet til pladsen **Webstedsvælger** i et overskriftsmodul, der er indeholdt i et overskriftsfragment med navnet **HeaderContainer**.
 
 ![Eksempel på et modul til valg af websted i et overskriftsfragment.](./media/ecommerce-sitepicker-2.png)
 

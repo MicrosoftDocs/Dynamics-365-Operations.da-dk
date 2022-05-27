@@ -1,7 +1,7 @@
 ---
 title: Behandle varer undervejs
 description: I dette emne beskrives, hvordan du kan arbejde med ordrer på varer undervejs. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, kan varer faktureres, før de er modtaget på lagerstedet til forbrug.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,16 @@ ms.technology: ''
 ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e85e3ba92b61e0208e1cf95d3f361d38772d83cb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694649"
 ---
 # <a name="goods-in-transit-processing"></a>Behandle varer undervejs
 

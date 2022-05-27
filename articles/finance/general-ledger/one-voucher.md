@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344052"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722486"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -72,7 +72,7 @@ På grund af de problemer, der kan forekomme, når der bruges ét bilag, vil den
 
 Når alle funktionelle kløfter er udfyldt, kommunikerer Microsoft, at det frarådes at bruge funktionen. Afskrivningen vil dog ikke være gældende i mindst ét år efter den pågældende kommunikation. Selvom Microsoft ikke kan give et præcist estimat over, hvornår funktionen Ét bilag frarådes, vil der højst sandsynligt gå to år, før afskrivningen finder sted. Microsofts politik er at holde mindst 12 måneder mellem ofring af forældet funktionalitet og den faktiske afskrivning, så kunder og uafhængige softwareleverandører har tid til at reagere på ændringen. For eksempel skal en organisation muligvis opdatere forretningsprocesser, enheder og integrationer.
 
-Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere dette emne, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere emnet "Fjernede eller forældet funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
+Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere dette emne, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere emnet "Fjernede eller forældede funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruge ét bilag?
 

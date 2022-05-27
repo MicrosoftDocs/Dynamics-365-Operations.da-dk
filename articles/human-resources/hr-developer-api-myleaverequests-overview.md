@@ -1,25 +1,24 @@
 ---
 title: Oversigt over MyLeaveRequests
-description: MyLeaveRequests-enheden i Microsoft Dynamics 365 Human Resources indeholder listen over orlovsanmodninger i systemet, beregnet (begrænset) til de anmodninger, der er tilgængelige for den aktuelle bruger, der forespørger om enheden.
-author: andreabichsel
+description: Enheden MyLeaveRequests i Microsoft Dynamics 365 Human Resources indeholder listen over anmodninger om orlov.
+author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 41ef8c6fc0e896e7f2cefd94801abab610083b81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 20cc53ec3bcf38444ccf75f81e28d5efd9fc4537
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070848"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717049"
 ---
 # <a name="myleaverequests-overview"></a>Oversigt over MyLeaveRequests
 

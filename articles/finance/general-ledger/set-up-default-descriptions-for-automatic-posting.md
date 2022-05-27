@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722689"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722430"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Angive standardbeskrivelser til automatisk bogføring
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722689"
 Dette emne forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
 
 > [!NOTE]
-> For visse transaktionstyper kan du i nogle lande/områder medtage tekst fra felter i Microsoft Dynamics AX-databasen, der er relateret til disse transaktionstyper. Du kan finde en liste over transaktionstyperne og lande og områder i afsnittet [Valgfrit: Føje anden tekst til standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i dette emne.
+> For visse transaktionstyper kan du i nogle lande eller områder medtage tekst fra felter, der er relateret til disse transaktionstyper. Du kan finde en liste over transaktionstyperne og lande og områder i afsnittet [Valgfrit: Føje anden tekst til standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i dette emne.
 
 ## <a name="set-up-default-descriptions"></a>Konfigurere standardbeskrivelser
 

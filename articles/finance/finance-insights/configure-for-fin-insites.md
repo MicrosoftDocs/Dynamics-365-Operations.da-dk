@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051364"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710608"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration til Finance Insights
 
@@ -32,11 +32,11 @@ Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sa
 > [!NOTE]
 > Følgende procedurer til opsætning af Finance Insights gælder for Dynamics 365 Finance version 10.0.21 og nyere.
 
-## <a name="deploy-dynamics-365-finance"></a>Installér Dynamics 365 Finance
+## <a name="deploy-dynamics-365-finance"></a>Udrulle Dynamics 365 Finance
 
 Følg disse trin for at udrulle miljøerne.
 
-1. Opret eller opdater et Dynamics 365 Finance-miljø i LCS. Miljøet kræver appversion 10.0.21 eller nyere.
+1. I LCS skal du oprette eller opdatere et Dynamics 365 Finance-miljø. Miljøet kræver appversion 10.0.21 eller nyere.
 
     > [!NOTE]
     > Miljøet skal være et miljø med høj tilgængelighed (HA). (Denne type miljø kaldes også et Niveau-2-miljø). Du kan finde flere oplysninger i [Miljøplanlægning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -90,9 +90,9 @@ Tilføjelsesprogrammet kan være flere minutter om at blive installeret.
 
 ## <a name="one-last-thing"></a>En sidste ting...
 
-Når tilføjelsesprogrammet er installeret korrekt, kan det tage op til en time, før du kan aktivere Finance Insights-funktioner i **Økonomistyring**- arbejdsområdet i Dynamics 365 Finance. Hvis du ikke vil vente så længe, kan du køre processen **Kontrol af status for klargøring af indsigt** manuelt. 
+Når tilføjelsesprogrammet er installeret korrekt, kan det tage op til en time, før du kan aktivere Finance Insights-funktioner i **Økonomistyring**-arbejdsområdet i Dynamics 365 Finance. Hvis du ikke vil vente så længe, kan du køre processen **Kontrol af status for klargøring af indsigt** manuelt. 
 
-1. Gå i Dynamics 365 Finance til **Systemadministration \> Opsætning \> Procesautomatisering**.
+1. Gå i Dynamics 365 Finance til **Systemadministration \> Konfiguration \> Procesautomatisering**.
 2. Find **Kontrol af status for klargøring af indsigt** under fanen **Baggrundsprocesser**, og vælg **Rediger**.
 3. Indstil feltet **Næste udførelse** til 30 minutter før det nuværende tidspunkt.
 

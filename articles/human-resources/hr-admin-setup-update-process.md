@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9552e518855711781c905514cae1cc25d33718c6
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533564"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722235"
 ---
 # <a name="update-process"></a>Opdater proces
 
@@ -38,7 +37,7 @@ Opdateringer udgives regelmæssigt til alle miljøer. Human Resources understøt
 
 Human Resources-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Human Resources:
 
-- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan få en ide om, hvornår der udgives opdateringer af platformen i [Tabel 3: Platformsversioner](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan finde flere oplysninger om platformsfrigivelser i [Nyheder eller ændringer i platformsopdateringer](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alle understøttede datacentre opdateres hver anden uge, medmindre andet er angivet. Områderne USA, Australien, Europa, Storbritannien, Asien og Canada medtages i opdateringer hver anden uge. 
 

@@ -2,20 +2,20 @@
 title: Separat orkestreringspakke med program til dobbeltskrivning
 description: Dobbeltskrivningsprogrammets orkestreringspakke er ikke længere en enkelt pakke, men er adskilt i mindre pakker. Dette emne indeholder en forklaring på de løsninger og tilknytninger, som hver enkelt pakke indeholder, og dens afhængighed af andre pakker.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063256"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716546"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat orkestreringspakke med program til dobbeltskrivning
 
@@ -26,19 +26,19 @@ ms.locfileid: "8063256"
 Tidligere var dobbeltskrivningsprogrammets orkestreringspakke en enkelt pakke, der indeholdt følgende løsninger:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance og drift - Fælles anker
-- Dynamics 365 Finance og drift - Enhedstilknytning for dobbeltskrivning
+- Dynamics 365 Finance and Operations Common Anchor
+- Dynamics 365 Finance and Operations Dual Write Entity Maps
 - Dynamics 365 Aktivadministration-app
 - Dynamics 365 Aktivadministration
 - HCM, fælles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance og drift - Fælles
+- Dynamics 365 Finance and Operations Common
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
 
-Da den var en enkelt pakke, oprettede denne pakke en "alt eller intet"-situation for kunderne. Men Microsoft har nu adskilt den i mindre pakker. Kunden kan derfor kun vælge pakkerne til de løsninger, de skal bruge. Hvis du f.eks. er kunde med Microsoft Dynamics 365 Supply Chain Management og ikke har brug for integration med Dynamics 365 Human Resources, noter og aktivstyring, kan du udelukke disse løsninger fra de løsninger, der er installeret. Da de underliggende løsningsnavne, udgivere og tilknyttede versioner forbliver de samme, er denne en ikkeforstyrrende ændring. Eksisterende installationer opgraderes.
+Da den var en enkelt pakke, oprettede denne pakke en "alt eller intet"-situation for kunderne. Men Microsoft har nu adskilt den i mindre pakker. Kunderne kan derfor kun vælge pakkerne til de løsninger, de skal bruge. Hvis du f.eks. er kunde med Microsoft Dynamics 365 Supply Chain Management og ikke har brug for integration med Dynamics 365 Human Resources, noter og aktivstyring, kan du udelukke disse løsninger fra de løsninger, der er installeret. Da de underliggende løsningsnavne, udgivere og tilknyttede versioner forbliver de samme, er denne en ikkeforstyrrende ændring. Eksisterende installationer opgraderes.
 
 ![Adskilt pakke.](media/separated-package-1.png)
 
@@ -51,7 +51,7 @@ Med pakken Programkerne til dobbeltskrivning kan brugerne installere og konfigur
 | Entydigt navn                           | Vist navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance og drift - Fælles |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhedstilknytninger for programkerne til dobbeltskrivning   |
 | msdyn_DualWriteAppCoreAnchor          | Programkerneanker til dobbeltskrivning        |
@@ -191,7 +191,7 @@ Pakken Dobbeltskrivning til Finance indeholder de løsninger og tilknytninger, d
 | Entydigt navn                            | Vist navn                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended-enhedstilknytninger |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended-enhedskort |
 | FieldServiceCommon                     | Field Service Common                      |
 | msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended-anker      |
 
@@ -300,3 +300,47 @@ Project Operations afhænger af følgende pakker. Du skal derfor installere diss
 - Pakken Dobbeltskrivning til forsyningskæde
 - Pakken Dobbeltskrivning til Aktivadministration
 - Pakken Dobbeltskrivning til Human Resources
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Løsninger til dobbeltskrivningspart og globalt adressekartotek
+
+Pakken til dobbeltskrivningspart og globalt adressekartotek indeholder følgende løsninger og kort, som er nødvendige for at synkronisere data til parten og det globale adressekartotek. 
+
+| Entydigt navn                       | Vist navn                            |
+|-----------------------------------|-----------------------------------------|
+| Part                             | Part                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB Extended               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB Dual Write Entity Maps |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB and Party              |
+
+Følgende tilknytninger er tilgængelige i denne pakke:
+
+| Finans og drift-apps | Kundeengagementapps | 
+|-----------------------------|--------------------------|
+| CDS-parter | msdyn_parties | 
+| Lokaliteter for CDS-postadresse | msdyn_postaladdresscollections | 
+| Oversigt over CDS-postadresse V2 | msdyn_postaladdresses | 
+| Lokaliteter for CDS-parts postadresse | msdyn_partypostaladdresses | 
+| Partkontakter V3 | msdyn_partyelectronicaddresses | 
+| Debitorer V3 | konti | 
+| Debitorer V3 | kontakter | 
+| Kreditorer V2 | msdyn_vendors | 
+| Titler på kontaktpersoner | msdyn_salescontactpersontitles | 
+| Afsluttende hilsner | msdyn_complimentaryclosings | 
+| Tiltaleformer | msdyn_salutations | 
+| Beslutningstagerrolle | msdyn_decisionmakingroles | 
+| Ansættelsesjobfunktioner | msdyn_employmentjobfunctions | 
+| Loyalitetsniveauer | msdyn_loyaltylevels | 
+| Personlige tegntyper | msdyn_personalcharactertypes | 
+| Kontakter V2 | msdyn_contactforparties | 
+| CDS-salgstilbudshoved | pristilbud | 
+| CDS-salgsordrehoveder | salesorders | 
+| Salgsfakturahoveder V2 | fakturaer | 
+| CDS-adresseroller | msdyn_addressroles |
+
+**Oplysninger om afhængighed**
+
+Løsningerne til dobbeltskrivningspart og den globale adressebog afhænger af følgende tre pakker. Du skal derfor installere disse pakker, før du installerer pakken med løsninger til dobbeltskrivningspart og globalt adressekartotek.
+
+- Pakken Programkerne til dobbeltskrivning
+- Pakken Dobbeltskrivning til Finance
+- Pakken Dobbeltskrivning til forsyningskæde

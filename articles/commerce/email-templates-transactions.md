@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919495"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722513"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Oprette e-mailskabeloner til transaktionshændelser
 
@@ -64,8 +64,8 @@ Beskedtypen for pakning fuldført understøtter følgende yderligere mailpladsho
 | ------------------- | ------- |
 | `pickupstorename`     | Navnet på den butik, hvor ordren kan afhentes. |
 | `pickupstoreaddress`  | Adressen på den butik, hvor ordren kan afhentes. |
-| `pickupstorehourfrom` | Åbningstiden i afhentningsbutikken. |
-| `pickupstorehourto`   | Lukketiden i afhentningsbutikken. |
+| `pickupstoreopenfrom` | Åbningstiden i afhentningsbutikken. |
+| `pickupstoreopento` | Lukketiden i afhentningsbutikken. |
 | `pickupchannelid`     | Id'et for butikskanalen for afhentningsbutikken. |
 | `packingslipid`      | Id'et for følgesedlen til den ordre, der skal afhentes. |
 | `confirmationid`      | Id'et for ordrebekræftelse af den ordre, der skal afhentes. (Dette id kaldes også kanalreference-id'et.) |
@@ -102,7 +102,7 @@ Beskedtypen udstedelse af gavekort understøtter følgende yderligere pladsholde
 | Pladsholdernavn      | Formål |
 | --------------------- | ------- |
 | `giftcardnumber`        | Nummeret på gavekortet, for produkter af typen gavekort. |
-| `giftcardbalance`       | Gavekortsaldoen, for produkter af typen gavekort. |
+| `availablebalance` | Den resterende saldo på gavekortet. |
 | `giftcardmessage`       | Gavekortmeddelelsen, for produkter af typen gavekort. |
 | `giftcardpin`         | Den personlige pinkode for gavekortet, for produkter af typen gavekort. (Denne pladsholder er specifik for eksterne gavekort). |
 | `giftcardexpiration`    | Udløbsdatoen for gavekortet, for produkter af typen gavekort. (Denne pladsholder er specifik for eksterne gavekort). |

@@ -2,19 +2,19 @@
 title: Part og globalt adressekartotek
 description: I dette emne beskrives funktionen til part og globalt adressekartotek for dobbeltskrivning.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407759"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717440"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -139,7 +139,7 @@ Gitteret indeholder følgende kolonner:
 
 Du kan bruge knappen **Ny elektronisk adresse** over gitteret til at oprette så mange adresser, du vil.
 
-Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versioner fjernes alle felter med postadresser og elektroniske adresser fra andre faner, f.eks. fanerne **Oversigt** og **Detaljer**. De kontaktoplysninger, der vises under fanen **Detaljer**, er skrivebeskyttede kopier af den primære elektroniske adresse, f.eks. primær telefon, primær email, primær telefon, primær fax og primært Twitter-id. Under kvalificeringsprocessen for potentielle kunder kan du både angive et firmatelefonnummer og et mobiltelefonnummer. Firmatelefonnummeret betragtes som den primære telefon, hvis **IsNøgle=No**, og mobiltelefonnummeret betragtes som den sekundære telefon, hvis **IsMobile=Yes**.
+Under kvalificeringsprocessen for potentielle kunder kan du både angive et firmatelefonnummer og et mobiltelefonnummer. Firmatelefonnummeret betragtes som det primære telefonnummer, hvis **IsMobile=No**, og mobiltelefonnummeret betragtes som den sekundære telefonnummer, hvis **IsMobile=Yes**.
 
 > [!TIP]
 > Brug fanerne **Adresser** og **Elektroniske adresser** i formularerne **Konto** og **Kontakt** til at administrere postadresser og elektroniske adresser. Derved sikres det, at adressedata synkroniseres med programmer til finans og drift.
@@ -148,7 +148,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
 1. Åbn Customer Engagement-appmiljøet.
 
-2. Installer den seneste version af (2.2.2.60 eller senere) af [Orkestreringsløsning til dobbeltskrivningsapplikation](https://aka.ms/dual-write-app).
+2. Installer alle nødvendige løsninger, som det er beskrevet i [Separat orkestreringspakke med program til dobbeltskrivning](separated-solutions.md).
 
 3. Installer [Løsninger til dobbeltskrivningspart og globalt adressekartotek](https://aka.ms/dual-write-gab).
 
@@ -163,10 +163,10 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 
 7. Følgende enhedstilknytninger opdateres for partfunktioner, så den seneste version skal anvendes på disse tilknytninger.
 
-    Map | Opdater til denne version | Ændringer
+    Kort | Opdater til denne version | Ændringer
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Customers V3 (accounts)` | 1.0.0.5 |Fjernede `PartyNumber` og andre felter, der vedrører parter, f.eks. navn, personlige oplysninger, postadresse og elektroniske kontaktadresser.
     `Customer V3 (contacts)` | 1.0.0.5 | Fjernede `PartyNumber` og andre felter, der vedrører parter, f.eks. navn, personlige oplysninger, postadresse og elektroniske kontaktadresser.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Fjernede `PartyNumber` og andre felter, der vedrører parter, f.eks. navn, personlige oplysninger, postadresse og elektroniske kontaktadresser.
@@ -174,16 +174,17 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Erstattede kontaktpersonen med reference til `ContactforParty`.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Erstattede kontaktpersonen med reference til `ContactforParty`.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Dette er en ny tilknytning., der er tilføjet som del af denne version.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Dette er en ny tilknytning., der er tilføjet som del af denne version.
 
 8. Før du kører ovenstående tilknytninger, skal du opdatere integrationsnøglerne manuelt som beskrevet i følgende trin. Vælg derefter **Gem**.
 
@@ -251,6 +252,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
     [CDS-salgstilbudshoved](mapping-reference.md#215) | pristilbud
     [CDS-salgsordrehoveder](mapping-reference.md#217) | salesorders
     [Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer
+    [CDS-adresseroller](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > Tilknytningen `CDS Contacts V2 (contacts)` er den tilknytning, du standsede i trin 1. Når du forsøger at køre andre tilknytninger, vises disse to tilknytninger muligvis på listen over afhængige. Du skal ikke køre disse tilknytninger.
@@ -258,7 +260,7 @@ Elektroniske adresser er kun tilgængelige i dette gitter. I fremtidige versione
 > Hvis løsningen for part og globalt adressekartotek er installeret, skal du deaktivere plug-in med navnet `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Hvis du fjerner løsningen for part og globalt adressekartotek, skal du genaktivere plug-in.
 >
 > Feltet `msdyn_*partynumber` (et enkelt linjetekstfelt), der er inkluderet i tabellerne **Konto**, **Kontakt** og **Leverandør**, bør ikke bruges fremover. Etiketnavnet har præfikset **(Frarådet)** for at specificere det. Brug i stedet feltet **msdyn_partyid**. Feltet er et opslag i tabellen **msdyn_party**.
-
+>
 > Tabelnavn | Gammelt felt | Nyt felt
 > --------|-------|--------
 > Konto | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ En samling af tabeltilknytninger arbejder sammen under interaktion med part og g
 | [Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer |
 | [Tiltaleformer](mapping-reference.md#228) | msdyn\_salutations |
 | [Kreditorer V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS-adresseroller](mapping-reference.md#301) |msdyn\_addressroles|
 
 Du kan finde flere oplysninger i [referencen til tilknytning af dobbeltskrivning](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Adresseroller som en rulleliste med flere valg
+En postadresse eller en elektronisk adresse kan tjene mere end ét formål. En postadresse kan f.eks. fungere som både faktureringsadresse og leveringsadresse. I disse tilfælde kan en bruger vælge både **Faktura** og **Levering** på rullelisten som vist i følgende illustration. 
+
+![Rullelisten Formål/rolle.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
 + Når du opretter en kunde sammen med adressen og gemmer den, synkroniseres adressen muligvis ikke med tabellen **Adresse** i programmer til finans og drift. Det skyldes et problem med rækkefølge på platformen for dobbeltskrivning. En løsning er først at oprette kunden og derefter gemme. Tilføj derefter adressen.
 + Når en kundepost har en primær adresse i et apps, og du opretter en ny kontakt for den pågældende kunde, arver kontaktposten en primær adresse fra den tilknyttede kundepost i programmer til finans og drift. Det sker også for leverandørkontakten. Dataverse understøtter ikke denne funktionsmåde i øjeblikket. Hvis dobbeltskrivning er aktiveret, synkroniseres en kundes kontakter, der er nedarvet med en primær adresse fra programmet til finans og drift, med Dataverse sammen med adressen.
-+ Elektroniske adresser, der er angivet under fanen for elektroniske adresser i formularerne **Konto**, **Kontakt** og **Leverandør** kommer fra tabellen `msdyn_partyelectronicaddress`. Disse oplysninger føres ikke til tilknyttede transaktioner som f.eks. salgsordre, tilbud og indkøbsordre. Vi planlægger at løse dette problem trinvist i næste versioner. De eksisterende data i de elektroniske adressefelter på kontoen og kontaktposterne vil fortsat fungere for transaktioner som f.eks. salgsordre, tilbud og indkøbsordre.
 + I programmer til finans og drift kan du oprette en kontaktpost fra formularen **Tilføj kontakt**. Når du forsøger at oprette en ny kontakt fra formularen **Vis kontakt**, mislykkes handlingen. Dette er et kendt problem.
 
     ![Kendt problem med Tilføj kontakt.](media/party-gab-contact-issue.png)
 
-+ **Første synkronisering** understøtter ikke tidsfelterne **Tilgængelig fra** og **Tilgængelig til** i **ContactForParty**, da DIXF konverterer værdien til en streng i stedet for et heltal. Konverteringen udløser fejlen `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ Når en postadresse bruges af mere end én årsag, f.eks. adresse til virksomheds kommunikation og fakturering, skal den vises som `Business;Invoice` som vist på følgende billede. Hvis du tilføjer et mellemrum mellem værdierne, vises en fejl.
-
-    ![Kendt problem med adresse.](media/party-gab-address-issue.png)
-
++ **Første synkronisering** understøtter ikke tidsfelterne **Tilgængelig fra** og **Tilgængelig til** i **ContactForParty**, da DIXF konverterer værdien til en streng i stedet for et heltal. Konverteringen udløser fejlen `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + Du kan ikke angive en fremdateret postadresse ved hjælp af et program til finans og drift med dobbeltskrivning, da Dataverse ikke understøtter datogyldighed. Hvis du angiver en fremdateret postadresse ved hjælp af et program til finans og drift, synkroniseres den fuldstændigt med Dataverse, og du vil straks kunne se adressen på brugergrænsefladen. Opdateringer af denne post resulterer i en fejl, da posten er fremdateret og ikke aktuel i programmer til finans og drift.

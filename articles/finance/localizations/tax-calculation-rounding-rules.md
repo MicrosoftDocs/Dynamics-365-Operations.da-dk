@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 38760879d84d8262cc1e8395c59bcbc0429bc753
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 167db4d836aa754509bb28677916a30901cebbbb
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7347679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694168"
 ---
 # <a name="tax-calculation-rounding-rules"></a>Regler for afrunding af momsberegning
 
@@ -39,7 +38,7 @@ Felterne **Afrundingpræcision** og **Afrundingsmetode** bestemmer, hvordan bere
 
 ## <a name="rounding-precision"></a>Afrundingspræcision
 
-Felterne for **Afrundingpræcision** understøtter en værdi med op til seks decimaler. Hvis du f.eks. angiver feltet **Afrundingpræcision** til **0,000000**, afrundes beregnede beløb til seks decimaler og sendes derefter til Microsoft Dynamics 365 Finance. Hvis der f.eks. anvendes afrundingsmetoden **Normal**, afrundes beløbet **987,1234567** til **987,123457**.
+Felterne for **Afrundingpræcision** understøtter en værdi med op til seks decimaler. Hvis du f.eks. angiver feltet **Afrundingspræcision** til **0,000000**, afrundes beregnede beløb til seks decimaler og sendes derefter til Microsoft Dynamics 365 Finance. Hvis der f.eks. anvendes afrundingsmetoden **Normal**, afrundes beløbet **987,1234567** til **987,123457**.
 
 > [!NOTE]
 > Finance-afrunder beløb ifølge valutaens afrundingsregler. De momsbeløb, der vises og registreres i transaktioner, påvirkes derfor både af afrundingsregler for momsberegning og valutaafrundingsregler.

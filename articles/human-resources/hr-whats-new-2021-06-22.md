@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 897c25df96017c5be1ae789027d178ca6b3ccc0410b4f65c7d2557b39e840134
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735345"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694418"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources, 22. juni 2021
 
@@ -83,7 +82,7 @@ Følgende nye funktioner findes som prøveversion. Du kan få flere oplysninger 
 
 | Funktion | Detaljer |
 | --- | --- |
-| Platform update 10.0.19 (43) | Platformsopdatering 10.0.19 er planlagt til at starte udrulning med servicefrigivelse den 28. juni 2021. Få flere oplysninger i [Platformsopdateringer for version 10.0.19 af Finance and Operations-apps (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform update 10.0.19 (43) | Platformsopdatering 10.0.19 er planlagt til at starte udrulning med servicefrigivelse den 28. juni 2021. Du kan få mere at vide i [Platformsopdateringer til version 10.0.19 af programmer til finans og drift (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Slå visning af Antal års tjeneste til/fra | Denne funktion giver mulighed for at bruge forskellige datoer til at beregne antal års tjeneste, der vises i formularerne **Strømlinet medarbejderindtastning** og **Personer**.  Det vil være tilgængeligt i Human Resources-parametre. |
 |  Give en fraværsadministrator mulighed for at administrere orlov | [Give en fraværsadministrator mulighed for at administrere orlov](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Vedhæftede bemyndigelser til specifikke orlovstyper | Denne funktion giver administratorer mulighed for at tilføje vedhæftede bemyndigelser ved afsendelse af anmodninger om orlov for bestemte orlovstyper. |

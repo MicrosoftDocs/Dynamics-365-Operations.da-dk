@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757213"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711314"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
@@ -969,7 +969,7 @@ Der er en forbedret "low-touch"-klientkomponentinstallation via selvbetjeningsin
 </tr>
 <tr>
 <td>Overvåge systemets tilstand og diagnosticere problemer og fejl.</td>
-<td>Denne funktion kræver <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack til Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Denne funktion kræver <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack til Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Overvågning og diagnosticering for Retail-komponenter er nu tilgængelig via den <strong>Driftsindsigt</strong> dashboardet i LCS.</td>
 <td>Dashboardet <strong>Driftsindsigt</strong> er en skybaseret overvågningsportal, som erstatter behovet for at installere SCOM-infrastruktur (System Center Operations Manager).</td>
 </tr>
@@ -1028,7 +1028,7 @@ Der er ikke blevet tilføjet nye funktioner.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Nyheder eller ændringer på Finance and Operations-startsiden](whats-new-changed.md)
+[Nyheder eller ændringer på startside for Finance and Operations](whats-new-changed.md)
 
 [Nye opgaveguider (februar 2016)](new-task-guides-available-february-2016.md)
 
