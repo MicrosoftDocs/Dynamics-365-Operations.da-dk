@@ -1,23 +1,23 @@
 ---
 title: Undervisningskatalog til brugere af Dynamics 365 Supply Chain Management
 description: Find alle uddannelsesmuligheder for brugere af Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402660"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673180"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Undervisningskatalog til brugere af Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 |---------|-------------|--------|--------|
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 8 timer |
 | [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
-| [Kom i gang med Finance and Operations-apps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
+| [Kom i gang med Finans- og driftsapps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finans- og driftsapps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finans- og driftsapps skal du være bekendt med dets funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Kom i gang med aktivstyring til Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Styring af aktiver er et modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management. Styring af aktiver giver dig mulighed for effektivt at administrere og udføre opgaver i forbindelse med styring og servicering af mange typer udstyr i din virksomhed, f.eks. maskiner, produktionsudstyr og køretøjer. Styring af aktiver understøtter løsninger på tværs af adskillige brancher. | Gratis onlinelæringsmodul i dit eget tempo | 1 time |
 | [Start her med tilføjelsesprogrammet Engineering Change Management til Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management giver medarbejdere og organisationer mulighed for at få en samlet visning af lager, lagersted, produktion, service og logistik med forudsigende analyser, der forvandler data til indsigt som en hjælp til at træffe bedre strategiske beslutninger. | Gratis onlinelæringsmodul i dit eget tempo | 2 timer |
 | [Kom i gang med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunder administrere orkestrering af ordrer til opfyldelse. Disse egenskaber giver organisationer mulighed for at orkestrere ordreflow på tværs af forskellige platforme og apps. | Gratis onlinelæringsmodul i dit eget tempo | 4 timer |
@@ -39,10 +39,10 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="core-platform-knowledge"></a>Viden om kerneplatformen<a name="core-platform-knowledge"></a>
 
-| Indhold | Beskrivende tekst | Formater | Længde |
+| Indhold | Beskrivende tekst | Format | Length |
 |---------|-------------|--------|--------|
-| [Konfigurere din organisation i Finance and Operations-apps](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionel konsulent, der arbejder med Finance and Operations-apps, skal du vide, hvordan du opretter en organisation til kunden. Denne undervisningssti viser dig, blandt andre opgaver, hvordan du konfigurerer juridiske enheder, implementerer sikkerhedsindstillinger, tilpasser brugergrænsefladen efter brugere, designer og bygger mobilapps og implementerer fælles integrationer. | Gratis onlinelæringssti i dit eget tempo | 12 timer |
-| [Konfigurere og arbejde med analyser og rapportering i Finance and Operations-apps](/learn/paths/configure-analytics-reporting-finance-operations/) | Erhvervsledere kan træffe vigtige beslutninger i deres firma, hvis de får en præcis indsigt i de underliggende økonomiske og driftsmæssige data. En forretningsbruger kan også konfigurere og bruge det elektroniske rapporteringsværktøj uden en eneste kodelinje for at overholde nye lovgivningsmæssige krav og generere forretningsdokumenter i det krævede format til elektronisk udveksling af oplysninger med offentlige myndigheder, banker og andre parter. | Gratis onlinelæringssti i dit eget tempo | 4 timer |
+| [Konfigurere din organisation i programmer til finans og drift](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionskonsulent, der arbejder med programmer til finans og drift, skal du vide, hvordan du opretter en organisation til kunden. Denne undervisningssti viser dig, blandt andre opgaver, hvordan du konfigurerer juridiske enheder, implementerer sikkerhedsindstillinger, tilpasser brugergrænsefladen efter brugere, designer og bygger mobilapps og implementerer fælles integrationer. | Gratis onlinelæringssti i dit eget tempo | 12 timer |
+| [Konfigurere og arbejde med analyser og rapportering i programmer til finans og drift](/learn/paths/configure-analytics-reporting-finance-operations/) | Erhvervsledere kan træffe vigtige beslutninger i deres firma, hvis de får en præcis indsigt i de underliggende økonomiske og driftsmæssige data. En forretningsbruger kan også konfigurere og bruge det elektroniske rapporteringsværktøj uden en eneste kodelinje for at overholde nye lovgivningsmæssige krav og generere forretningsdokumenter i det krævede format til elektronisk udveksling af oplysninger med offentlige myndigheder, banker og andre parter. | Gratis onlinelæringssti i dit eget tempo | 4 timer |
 
 ## <a name="supply-chain-management"></a>Administration af leveringskæde<a name="supply-chain-management"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: Arbejdsområdet Godkendelse af indkøbsordre til mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet Godkendelse af indkøbsordre til mobilenheder, hvor du får vist indkøbsordrer og reagere på dem med handlinger. Du kan f.eks. godkende eller afvise en indkøbsordre.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fc88f20b50e034f2f27b7e2576fe6a4bb3486e23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 32c22d582c0af03482767d335b824ccbe81ee607
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570555"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674303"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Arbejdsområdet Godkendelse af indkøbsordre til mobilenheder
 
@@ -70,7 +70,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Sådan downloades og installeres Finance and Operations-mobilappen:
+Download og installer Finance and Operations-mobilappen:
 
 - [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

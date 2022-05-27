@@ -1,7 +1,7 @@
 ---
 title: Frigiv til lagersted
 description: Dette emne indeholder oplysninger om processen for frigivelse til lagersted. Den beskriver enheder, der oprettes, når du frigiver en ordre til lagerstedet, og indstillinger, du kan bruge til at starte processen.
-author: mirzaab
+author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
-ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
+ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376202"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678345"
 ---
 # <a name="release-to-warehouse"></a>Frigiv til lagersted
 

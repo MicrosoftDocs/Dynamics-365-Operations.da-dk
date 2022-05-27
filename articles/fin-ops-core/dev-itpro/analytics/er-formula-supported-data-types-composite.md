@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323659"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689236"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Understøttede sammensatte datatyper til elektroniske rapporteringsformler
 
@@ -81,7 +81,7 @@ En *postliste* er en liste over elementer af *post*-typen. Normalt bruges en *po
 
 Posterne på en *postliste* giver som standard adgang i rækkefølge. Hvis du vil have adgang til en bestemt post, kan du bruge funktionen [INDEX](er-functions-list-index.md) og angive *heltal* som indeks.
 
-Standardværdien for en *postliste* er **tom**. Du kan bruge funktionen [ISEMPTY](/er-functions-list-isempty.md) til at evaluere, om en *postliste* er tom.
+Standardværdien for en *postliste* er **tom**. Du kan bruge funktionen [ISEMPTY](er-functions-list-isempty.md) til at evaluere, om en *postliste* er tom.
 
 > [!NOTE]
 > Hvis en *postliste* er tom, vil ethvert forsøg på at hente en feltværdi for en *post* forårsage, at der opstår en undtagelse under kørslen. Du kan få mere at vide om, hvordan du kan undgå kørselsundtagelser af denne type, under [Overvejelse i forbindelse med sager med tom liste](er-components-inspections.md#i9).
