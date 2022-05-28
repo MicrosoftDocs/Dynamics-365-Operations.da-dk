@@ -1,7 +1,7 @@
 ---
 title: Konfigurere og vedligeholde kreditorsamarbejde
 description: I dette emne forklares, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du klargør nye brugere af kreditorsamarbejde og administrerer sikkerhedsrollerne for disse brugere.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b635255fffa6fd3c6612cd248dc692df204aa76d
-ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7651960"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677556"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurere og vedligeholde kreditorsamarbejde
 
@@ -31,7 +31,7 @@ Grænsefladen for kreditorsamarbejde viser begrænsede oplysninger om indkøbsor
 I dette emne forklares, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du konfigurerer en arbejdsgang for at klargøre nye brugere af kreditorsamarbejde, og hvordan du administrerer sikkerhedsrollerne for disse brugere.
 
 > [!NOTE]
-> Oplysningerne om opsætning af sikkerhedsroller til kreditorsamarbejde gælder kun for den aktuelle version af Finance and Operations. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde oplysninger om brugerrettigheder for kreditorportalen i Microsoft Dynamics AX, under [Brugersikkerhed på kreditorportal](configure-security-vendor-portal-users.md).
+> Oplysningerne om opsætning af sikkerhedsroller til kreditorsamarbejde gælder kun for den aktuelle version af Finans og drift. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde oplysninger om brugerrettigheder for kreditorportalen i Microsoft Dynamics AX, under [Brugersikkerhed på kreditorportal](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Konfigurere sikkerhedsroller for kreditorsamarbejde
 

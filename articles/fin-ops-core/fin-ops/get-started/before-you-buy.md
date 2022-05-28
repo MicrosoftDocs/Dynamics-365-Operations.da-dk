@@ -1,7 +1,7 @@
 ---
 title: Før du køber
 description: Trinvis vejledning, som du kan bruge, når du overvejer at købe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874578"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713270"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -26,13 +26,13 @@ ms.locfileid: "7874578"
 
 Kender du ikke Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce? Vi har sammensat en trinvis vejledning, som du kan bruge, uanset om du stadig overvejer eller er klar til at købe.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Prøv Finance and Operations helt gratis i 30 dage
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Afprøv Finance and Operations gratis i 30 dage
 
-Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af Finance and Operations-programmerne indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Se detaljer under [Tilmelde dig prøveabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af Programmer til finans og drift indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Se detaljer under [Tilmelde dig prøveabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 
-Du kan nu implementere Finance and Operations-programmerne i skyen eller lokalt. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
+Du kan nu implementere Programmer til finans og drift i skyen eller lokalt. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
 
 Der skal tages følgende overvejelser, når du vælger lokalt som installationsmulighed:
 
@@ -62,13 +62,13 @@ Du kan samarbejde med en Microsoft Cloud Solution Provider for at forstå behove
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Køb via en Dynamics-partner (lokal installation)
 
-Du skal arbejde med en partner for at købe Finance and Operations lokalt. Du kan finde flere oplysninger under [Køb Finance + Operations (lokalt)](purchase-on-premises.md).
+Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger under [Køb Finance + Operations (lokalt)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Køb via volumenlicensering (installation i skyen eller lokalt)
 
 Hvis organisationen har 250 eller flere brugere af Dynamics 365, vil du muligvis være interesseret i en [Volumenlicensaftale](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-I volumenlicenser er Finance and Operations-programmer tilgængelige via:
+I Volumenlicensering er Programmer til finans og drift tilgængelig via:
 
 - Enterprise-aftale
 - Abonnement på Enterprise Agreement

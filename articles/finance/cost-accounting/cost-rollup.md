@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779950"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734423"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779950"
 Med omkostningsregnskab kan du få indsigt i, hvordan omkostningsforløbet er relateret til de produkter og tjenester, der leveres i en organisation. For at få vist gennemsigtigheden for omkostninger er det vigtigt at opnå omkostningsfordeling mellem omkostningsobjekter baseret på et passende fordelingsgrundlag. Som standard opnås omkostningstildelingen for det primære omkostningselement, der er behov for i nogle situationer, men det har nogle konsekvenser, som bør overvejes.
 
 -   Hjælpeomkostningsobjekter slutter med en saldo på nul for det primære omkostningselement efter beregning af faste omkostninger.
-
 -   Omfanget af omkostningsposter, der er genereret ved beregning af faste omkostninger, kan være meget omfattende.
-
 -   Det er ikke muligt at spore omkostningsforløbet mellem omkostningsobjekter.
 
 For at undgå disse virkninger kan du i Omkostningsregnskab konfigurere omkostningstildeling, så det passer til din organisations ledelsesmæssige rapporteringskrav. I dette emne beskrives, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.

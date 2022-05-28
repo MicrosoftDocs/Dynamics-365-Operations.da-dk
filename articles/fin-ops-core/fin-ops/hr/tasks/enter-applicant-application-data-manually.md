@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075444"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735312"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angive ansøger og ansøgningsdata manuelt
 
-> [!IMPORTANT]
-> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
+> [!NOTE]
+> Rekrutteringsfunktionen i dette emne kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter.  
 
 
 Denne fremgangsmåde viser, hvordan du manuelt vedligeholder oplysninger om ansøgere og deres ansøgninger. Du kan angive og vedligeholde personlige oplysninger, dato og klokkeslæt for jobsamtaler, referencer, kompetencer og tilpasningsanmodninger for ansøgere. Du kan også opdatere status for ansøgernes jobansøgninger og oprette breve eller e-mailmeddelelser for at kommunikere med ansøgerne. Når du opretter en ansøgningspost, oprettes en personpost for ansøgeren i det globale adressekartotek. Demodatafirmaet **USMF** bruges til at oprette denne procedure.

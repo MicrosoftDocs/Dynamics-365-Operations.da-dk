@@ -1,31 +1,31 @@
 ---
 title: Administrere rekrutteringsprocesser
 description: I dette emne beskrives et begreb, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075469"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735368"
 ---
 # <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprocesser
 
 > [!IMPORTANT]
-> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
+> Rekrutteringsfunktionen i dette emne kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter. 
 
 
 I dette emne beskrives et koncept, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces, herunder arbejdet med at annoncere ledige stillinger og rekruttere ansøgere, spore oplysninger om ansøgeren og ansøgningen, interviewe ansøgere og vælge en eller flere kandidater til at udfylde de ledige stillinger i organisationen.

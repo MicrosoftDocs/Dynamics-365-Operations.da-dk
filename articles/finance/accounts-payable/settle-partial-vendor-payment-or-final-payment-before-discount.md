@@ -1,6 +1,6 @@
 ---
 title: Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
-description: Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat.
+description: Dette emne gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14431
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46d5025af229c9002967973a0d897708cd3d67dd7d22d887cc611c5c8213d2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737059"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716237"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat.
+Dette emne gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat.
 
 Fabrikam køber varer fra leverandør 3064. Leverandøren giver Fabrikam en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Leverandøren giver desuden Fabrikam kasserabatter på delbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**. Den 25. juni skriver April en faktura på 1.000,00 til kreditor 3064.
 

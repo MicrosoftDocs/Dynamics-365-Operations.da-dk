@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392905"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756957"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
 [!include [banner](../includes/banner.md)]
 
-En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. Du kan finde flere oplysninger i [Oprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
+En **Debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. Du kan finde flere oplysninger i [Oprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
 
-En **fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordrelinjer, der omfatter finanskonti, fritekstbeskrivelser og et salgsbeløb, som du selv angiver. Du kan ikke angive et varenummer på en faktura af denne type. Du skal angive de relevante oplysninger om moms. Der er angivet en hovedkonto for salget på hver fakturalinje, som du kan fordele på flere forskellige finanskonti ved at klikke på **Distribuer beløb** på siden **Fritekstfaktura**. Derudover bogføres debitorsaldoen på samlekontoen fra den posteringsprofil, der bruges til fritekstfakturaen.
+En **Fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordrelinjer, der omfatter finanskonti, fritekstbeskrivelser og et salgsbeløb, som du selv angiver. Du kan ikke angive et varenummer på en faktura af denne type. Du skal angive de relevante oplysninger om moms. Der er angivet en hovedkonto for salget på hver fakturalinje, som du kan fordele på flere forskellige finanskonti ved at klikke på **Distribuer beløb** på siden **Fritekstfaktura**. Derudover bogføres debitorsaldoen på samlekontoen fra den posteringsprofil, der bruges til fritekstfakturaen.
 
-Du kan få flere oplysninger på:
+Du kan finde flere oplysninger i:
 
 [Opret fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Du kan få flere oplysninger på:
 [Generere og bogføre tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
-En **proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en proformafaktura for en debitorfaktura for en salgsordre eller for en fritekstfaktura.
+En **Proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en **Proformafaktura** for en debitorfaktura for en salgsordre eller for en fritekstfaktura. 
+
+>[!NOTE]
+> Hvis systemet bliver afbrudt under processen til salgsproformafakturaer, kan en proformafaktura ikke ændres. En tabt proformafaktura kan slettes ved at køre det periodiske job **Slet proformafakturaer manuelt**. Gå til **Salg og marketing > Periodiske opgaver > Ryd op > Slet proformafakturaer manuelt**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Bruge dataenheder for salgsordres debitorfaktura
 Du kan bruge dataenheder til at importere og eksportere oplysninger om en debitorfaktura for en salgsordre. Der er forskellige enheder til oplysningerne i salgsfakturahovedet og salgsfakturalinjerne.
@@ -70,7 +73,7 @@ Du kan få vist salgsordrernes status på listesiden **Alle salgsordrer**. Brug 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-packing-slips-and-the-date"></a>Bogføre og udskrive individuelle debitorfakturaer, der er baseret på følgesedler og datoen
 Brug denne proces, når der er bogført en eller flere følgesedler til salgsordren. Debitorfakturaen er baseret på disse følgesedler og afspejler antallene i dem. De økonomiske oplysninger til fakturaen er baseret på de oplysninger, der angives, når du bogfører fakturaen. 
 
-Du kan oprette en debitorfaktura, der er baseret på de linjeelementer på følgesedlen, som er afsendt til dato, selvom alle varerne i en bestemt salgsordre endnu ikke er afsendt. Det kan du f.eks. gøre, hvis din juridiske enhed udsteder én faktura pr. debitor pr. måned, som dækker alle de leverancer, du sender i den pågældende måned. Hver følgeseddel repræsenterer en dellevering eller en komplet levering af varerne i salgsordren. 
+Du kan oprette en debitorfaktura, der er baseret på de linjeelementer på følgesedlen, som er afsendt til dato, selvom alle varerne i en bestemt salgsordre ikke er afsendt. Det kan du f.eks. gøre, hvis din juridiske enhed udsteder én faktura pr. debitor pr. måned, som dækker alle de leverancer, du sender i den pågældende måned. Hver følgeseddel repræsenterer en dellevering eller en komplet levering af varerne i salgsordren. 
 
 Når du bogfører fakturaen, opdateres antallet **Fakturarestmængde** for hver vare med det samlede beløb for de leverede antal fra de valgte følgesedler. Hvis både antallet **Fakturarestmængde** og antallet **Levér rest** for alle varer i salgsordren er 0 (nul), ændres salgsordrens status til **Faktureret**. Hvis antallet for **Fakturarestmængde** ikke er 0 (nul), forbliver status for salgsordren uændret, og der kan bogføres ekstra fakturaer for den. 
 
@@ -82,6 +85,11 @@ Se salgsordrernes status på listesiden **Alle salgsordrer**.
 Brug denne fremgangsmåde, når en eller flere salgsordrer, der er klar til at blive faktureret, og du vil konsolidere dem i én faktura. 
 
 Du kan vælge flere fakturaer på listesiden **Salgsordre** og derefter bruge **Generer fakturaer** for at sammenflette dem. På siden **Bogføring af faktura** kan du ændre indstillingen **Samleordre** til at opsummere ved ordrenummer (hvor der er flere følgesedler for en enkelt salgsordre) eller efter fakturakonto (hvor der er flere salgsordrer for en enkelt faktura). Brug knappen **Arranger** for at konsolidere salgsordrer til enkelte fakturaer, der er baseret på indstillingen **Samleordre**.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Opdele salgsordrefakturaer efter lokation og leveringsoplysninger
+Du kan konfigurere opdelingen af salgsordrekundefakturaer efter lokation eller efter leveringsadresse under fanen **Samleopdatering** på siden **Debitorparametre**. 
+ - Vælg indstillingen **Opdel baseret på fakturasted** for at oprette én faktura pr. sted ved bogføring. 
+ - Vælg indstillingen **Opdel baseret på leveringsoplysninger om faktura** for at oprette én faktura pr. leveringsadresse for salgsordrelinjen ved bogføring. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris
 Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har prisoplysninger, ikke på kontoen **Omsætning**.

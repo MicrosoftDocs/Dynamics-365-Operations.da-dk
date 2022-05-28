@@ -2,7 +2,7 @@
 title: Arkivere lagertransaktioner
 description: Dette emne beskriver, hvordan du arkiverer lagertransaktionsdata for at forbedre systemets ydeevne.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99a7b61d9bd5e1e2bd8d2c7df34882646bb51270
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567457"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736055"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 
@@ -116,3 +116,110 @@ Værktøjslinjen over gitteret indeholder følgende knapper, du kan bruge til at
 - **Afbryd arkivering midlertidigt** – Afbryd et valgt arkiv midlertidigt, som er ved at blive behandlet. Denne pause træder først i kraft, når arkiveringsopgaven er oprettet. Derfor kan der være en kort forsinkelse, før pausen træder i kraft. Hvis et arkiv er blevet afbrudt midlertidigt, vises der en markering i feltet **Stop aktuel opdatering**.
 - **Fortsæt arkivering** – Fortsæt behandlingen af et valgt arkiv, som er afbrudt midlertidigt.
 - **Tilbagefør** – Tilbagefør det valgte arkiv. Du kan kun tilbageføre et arkiv, hvis feltet **Tilstand** er angivet til *Udført*. Hvis et arkiv er blevet tilbageført, vises der en markering i feltet **Tilbageført**.
+
+## <a name="extend-your-code-to-support-custom-fields"></a>Udvide koden, så den understøtter brugerdefinerede felter
+
+Hvis tabellen `InventTrans` indeholder et eller flere brugerdefinerede felter, skal du muligvis udvide koden, så den understøtter dem, afhængigt af hvordan de navngives.
+
+- Hvis de brugerdefinerede felter fra `InventTrans`-tabellen har samme feltnavne som i `InventtransArchive`-tabellen, betyder det, at de er 1:1 tilknyttet. Derfor kan du blot placere de brugerdefinerede felter i `InventoryArchiveFields`-feltgrupper i `inventTrans`-tabellen.
+- Hvis de brugerdefinerede feltnavne i `InventTrans`-tabellen ikke svarer til feltnavnene i `InventtransArchive`-tabellen, skal du tilføje kode for at tilknytte dem. Hvis du f.eks. har et systemfelt kaldet `InventTrans.CreatedDateTime`, skal du oprette et felt i tabellen `InventTransArchive` med et andet navn (f.eks. `InventtransArchive.InventTransCreatedDateTime`) og føje udvidelser til klasserne `InventTransArchiveProcessTask` og `InventTransArchiveSqlStatementHelper`, som vist i følgende eksempelkode.
+
+I følgende eksempelkode kan du se, hvordan du kan føje den påkrævede udvidelse til klassen `InventTransArchiveProcessTask`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+I følgende eksempelkode kan du se, hvordan du kan føje den påkrævede udvidelse til klassen `InventTransArchiveSqlStatementHelper`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

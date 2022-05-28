@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c3bf881f0f11d6d21d5f2e9d3132c2bea00b982411c9c5d76ae617b00a69fda
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c461c3d3e9b073b186e68ff1b0453fafe5da80e7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739329"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734861"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Konfigurere momsgrupper og varemomsgrupper
 
 [!include [banner](../../includes/banner.md)]
 
-Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsgrupper. Momsgrupper er grupper med momskoder, der er tilknyttet debitorer og kreditorer. De er også tilknyttet finanskonti for posteringer, der ikke er bogført for en bestemt kreditor eller debitor.  Varemomsgrupper er grupper af momskoder, der er knyttet til ressourcer som produkter.  Den momssats, der gælder for en bestemt postering, fastlægges af momskoden, som findes i momsgruppen og i varemomsgruppen for posteringen.  Der kan kun beregnes moms, hvis der er valgt en momsgruppe og en varemomsgruppe for hver postering, hvor der skal beregnes eller registreres moms.  
+Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsgrupper. Momsgrupper er grupper med momskoder, der er tilknyttet debitorer og kreditorer. De er også tilknyttet finanskonti for posteringer, der ikke er bogført for en bestemt kreditor eller debitor. Varemomsgrupper er grupper af momskoder, der er knyttet til ressourcer som produkter. Den momssats, der gælder for en bestemt postering, fastlægges af momskoden, som findes i momsgruppen og i varemomsgruppen for posteringen. Der kan kun beregnes moms, hvis der er valgt en momsgruppe og en varemomsgruppe for hver postering, hvor der skal beregnes eller registreres moms.  
 
 1. Gå til **Navigationsrude > Moduler > Skat > Indirekte skatter > Moms > Momsgrupper**.
 2. Klik på **Ny**.

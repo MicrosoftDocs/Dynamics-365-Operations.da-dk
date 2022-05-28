@@ -7,7 +7,6 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "221024"
 - intro-internal
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984740"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735717"
 ---
 # <a name="performance-management"></a>Performancestyring
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne give feedback og vejledning til medarbejderne.  
+Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne give feedback og vejledning til medarbejderne.
 
 Som følgende diagram viser, er der tre sider, der kan hjælpe dig med at administrere processen:
 
@@ -35,7 +34,7 @@ Som følgende diagram viser, er der tre sider, der kan hjælpe dig med at admini
 -   Mål
 -   Performance-gennemgang
 
-I følgende diagram vises, hvordan de primære komponenter i performancestyring er relateret til hinanden. [![Oversigt over performanceprocessen.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+I følgende diagram vises, hvordan de primære komponenter i performancestyring er relateret til hinanden. <!--note from editor: This alt text should describe the relationship among the boxes so a reader with low vision will understand. This will require using the :::image type="complex"::: tag and a long description. -->[![Oversigt over performanceprocessen.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Performancekladde
 
@@ -57,7 +56,7 @@ Du kan også sammenkæde performancekladden med et eksternt websted ved at gemme
 
 ### <a name="send-feedback"></a>Send tilbagemelding
 
-Performancekladden indeholder en ekstra funktion, der hedder **Tilbagemelding**. Når du klikker på **Send tilbagemelding**, kan du vælge en medarbejder og give tilbagemelding til den pågældende medarbejder via mail. Meddelelsen sendes til den medarbejder, der modtager tilbagemeldingen, og til den pågældende medarbejders chef, til den medarbejder, der sender tilbagemeldingen og til denne medarbejders chef. Der oprettes en performancekladdepostering for hver person, der modtager tilbagemeldingsmeddelelsen.
+Performancekladden indeholder en ekstra funktion, der hedder **Send tilbagemelding**. Når du vælger på **Send tilbagemelding**, kan du vælge en medarbejder og give tilbagemelding om den pågældende medarbejder via mail. Meddelelsen sendes til medarbejderen, som tilbagemeldingen vedrører,<!--note from editor: Suggested-->den pågældende medarbejders chef, den medarbejder, der sender tilbagemeldingen, og den pågældende medarbejders chef. Der oprettes en performancekladdepostering for hver person, der modtager tilbagemeldingsmeddelelsen.
 
 ## <a name="goals"></a>Mål
 
@@ -70,13 +69,13 @@ Et grundlæggende mål skal indeholde følgende oplysninger:
 -   Den forventede startdato for målet
 -   Den forventede slutdato for målet
 
-Du kan også angive en målkategori for at hjælpe dig med at organisere dine mål. Chefer får også vist navnet på den person, der er tilknyttet målet. 
+Du kan også angive en målkategori for at hjælpe dig med at organisere dine mål. Chefer får også vist navnet på den person, der er tildelt målet. 
 
-Hvis du har mere detaljerede instruktioner om et mål, kan du oprette målemner. Disse emner omfatter en titel og en beskrivelse. Du kan medtage så mange emner, som du har brug for til at sikre, at oplysninger om målet er klare for både medarbejderen og chefen. Både medarbejdere og chefer kan også angive kommentarer om forløbet af målene. 
+Hvis du har mere detaljerede instruktioner om et mål, kan du oprette målemner. Disse emner omfatter en titel og en beskrivelse. Du kan medtage så mange emner, som du har brug for til at sikre, at oplysninger om målet er klare for både medarbejderen og chefen. Både medarbejder og chef kan også angive kommentarer om forløbet af målene. 
 
 Mål har ofte målbare resultater. Du kan tilføje målinger for at spore de målsatte resultater og de faktiske resultater. Hvis målingen er et Stræk mål, kan du markere målingen ved hjælp af indstillingen **Stræk mål**. 
 
-Din performancekladde indeholder aktiviteter, der giver din chef yderligere oplysninger om, hvordan du har nået dit mål. Hvis du har sammenkædet en performancekladde med målet, vises den i afsnittet **Aktiviteter** for det pågældende mål. Du kan også tilføje en performancekladde fra siden **Ydeevnemål**. Den pågældende performancekladde knyttes automatisk til målet. 
+Din performancekladde vil beskrive<!--note from editor: Suggested.--> aktiviteter, der giver din chef yderligere oplysninger om, hvordan du har nået dit mål. Hvis du har sammenkædet en performancekladde med målet, vises den i afsnittet **Aktiviteter** for det pågældende mål. Du kan også tilføje en performancekladde fra siden **Ydeevnemål**. Den pågældende performancekladde knyttes automatisk til målet. 
 
 Hvis du vil vedhæfte et dokument til målet, f.eks. et bevis for afslutning, kan du vedhæfte det i afsnittet **Vedhæftede filer** på siden **Ydeevnemål**. Der medfølger en dokumentfremviser, så du hurtigt kan få vist indholdet af eventuelle vedhæftede dokumenter. 
 
@@ -84,17 +83,17 @@ Du kan oprette en skabelon ud fra et mål og derefter bruge skabelonen til at op
 
 ## <a name="performance-reviews"></a>Performanceevalueringer
 
-Performanceevalueringer er mere formelt kendt som diskussioner. De er nu fleksible nok til at understøtte kontinuerlig feedback, udviklingsplaner og mere formelle evalueringer. Du kan hurtigt oprette mindre møder for to personer, f.eks. et en til en-møde, eller du kan opbygge en mere kompleks evaluering, der svarer til evalueringsprocessen for din virksomhed. 
+Performanceevalueringer er mere formelt kendt som diskussioner. De er nu fleksible nok til at understøtte kontinuerlig feedback, udviklingsplaner og mere formelle evalueringer. Du kan hurtigt oprette mindre møder for to personer<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> eller du kan opbygge et mere komplekst gennemsyn, der passer til firmaets gennemsynsproces. 
 
-Et møde. f.eks. et en til en-møde er en simpel gennemgang og kræver et kort navn, en længere beskrivelse af indholdet af mødet, og datoen for mødet samt den anmeldelsesperiode, der diskuteres. Chefer får også vist navnet på den person, som evalueringen er oprettet for. 
+Et møde som f.eks. et en til en-møde er en simpel gennemgang,der kræver et kort navn, en længere beskrivelse af indholdet af mødet, og datoen for mødet samt den anmeldelsesperiode, der diskuteres. Chefer får også vist navnet på den person, som evalueringen er oprettet for. 
 
 Du kan trække i aktive og afsluttede mål og skrive bemærkninger om dem for at få mere detaljerede evalueringer. Alle performancekladdeaktiviteter og målinger, der er relateret til et mål, vises på evalueringen. Når evalueringen er afsluttet, gemmes et øjebliksbillede af målingerne for at bevare historikken for disse elementer på tidspunktet for evalueringen. 
 
 Du kan også bruge afsnittet **Kompetencer** til at drøfte, evaluere og vurdere medarbejderens kompetencer. Du kan tilføje så mange kompetencer, som du har brug for, og du kan vælge, om kompetencen skal bedømmes. 
 
-Du kan oprette nye anmeldelser, der er baseret på skabeloner, du har oprettet. Du kan f.eks. have en skabelon til en til en-møder, udviklingsplaner eller periodiske evalueringer. Du kan vælge skabelonen, når du opretter en ny evaluering.
+Du kan oprette nye gennemgange, der er baseret på skabeloner, du har oprettet. Du kan f.eks. have en skabelon til en til en-møder, udviklingsplaner eller periodiske evalueringer. Du kan vælge skabelonen, når du opretter en ny evaluering.
 
-Hvis du vil udskrive anmeldelserne, skal du vælge knappen **Udskriv anmeldelse**. Hvis du ikke kan se knappen på siden **Anmeldelse**, skal du sikre dig, at du har aktiveret funktionen i arbejdsområdet **Funktionsstyring**. Du kan finde flere oplysninger om Administration af funktioner under [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil udskrive anmeldelserne, skal du vælge knappen **Udskriv anmeldelse**. Hvis du ikke kan se knappen på siden **Gennemgang**, skal du sikre dig, at du har aktiveret funktionen i arbejdsområdet **Funktionsstyring**. Du kan finde flere oplysninger om funktionsstyring under [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Muligheden for at udskrive performancegennemgange er kun tilgængelig i Human Resources. Den er ikke tilgængelig i Dynamics 365 Finance.
@@ -105,9 +104,9 @@ Du kan medtage et antal forskellige typer oplysninger i performanceevalueringer.
 
 ### <a name="review-detail"></a>Evalueringsdetalje
 
-Du kan trække dine mål ind i evalueringsdetaljerne og kommentere dem. Du kan også konfigurere kompetencer og kommentere dem.
+Du kan trække dine mål ind i evalueringsdetaljerne og kommentere dem. Du kan også konfigurere kompetencer og kommentere dem.<!--note from editor: Suggested, in the spirit of using the fewest words to say the same thing.-->
 
-### <a name="measurements"></a>Målinger
+### <a name="measurements"></a>Måling
 
 Du kan få vist målinger, der er relateret til et mål eller en evaluering. Du kan også tilføje en ny måling, der er relateret til evalueringen.
 
@@ -115,13 +114,13 @@ Du kan få vist målinger, der er relateret til et mål eller en evaluering. Du 
 
 Du kan få vist performancekladdeposter, der er relateret til evalueringen. Du kan også tilføje en performancekladde, som automatisk knyttes sammen med evalueringen.
 
-### <a name="ratings"></a>Vurderinger
+### <a name="ratings"></a>Rangeringer
 
 Du kan anvende en vurdering på alle mål eller kompetencer, der er i evalueringen. Du kan definere vurderingsmodeller for hver evaluering. Standarderne for vurderinger findes på siden **Delte parametre for personale** under **Performance.**
 
 ### <a name="sign-offs"></a>Godkendelser
 
-Medarbejderen og/eller chefen vil blive vist på evalueringen baseret på de evalueringsparametre, du angiver. Evalueringerne kan være krævede eller valgfri. Når alle de nødvendige godkendelser er foretaget, markeres evalueringen med status **Fuldført**.
+Medarbejderen og/eller chefen vil blive vist på evalueringen baseret på de evalueringsparametre, du angiver. Evalueringerne kan være krævede eller valgfri. Efter<!--note from editor: Via Writing Style Guide.--> alle de nødvendige godkendelser er foretaget, markeres evalueringen med status **Fuldført**.
 
 ### <a name="attachments"></a>Vedhæftede filer
 
@@ -129,33 +128,33 @@ Du kan vedhæfte et dokument til en evaluering i afsnittet **Vedhæftede filer**
 
 ## <a name="workflow-for-performance-management"></a>Arbejdsgang for performancestyring
 
-Du kan bruge arbejdsgangen Arbejderevaluering til at styre godkendelsen af en evaluering. Du kan også vælge at springe over den automatiserede arbejdsgang og manuelt ændre status for evalueringen, det giver dig mulighed for at oprette enklere dokumenter, f.eks. et en til en-møde uden at skulle bruge arbejdsgangsprocessen. Adgang til en evaluering styres af status for evalueringen.
+Du kan bruge arbejdsgangen Arbejderevaluering til at styre godkendelsen af en evaluering. Du kan også vælge at springe over den automatiserede arbejdsgang og manuelt ændre status for evalueringen, det giver dig mulighed for at oprette enklere dokumenter, f.eks. et en til en-møde uden at skulle bruge arbejdsgangsprocessen. Adgang til en evaluering styres af status for evalueringen som følger:<!--note from editor: Suggested as an intro to the list.-->
 
-1.  Når evalueringen oprettes, skal den angives til status **Ikke startet**. Evalueringen kan redigeres af alle.
+1.  Når evalueringen oprettes, angives den til **Ikke startet**. Evalueringen kan redigeres af alle.
 
-2.  Når medarbejderen trykker på knappen **Start evaluering**, angives evalueringen til status **Igangværende**. Medarbejderen begynder derefter at tilføje indhold. Chefen kan på dette tidspunkt ikke længere se gennemse dokumentet.
+2.  Når medarbejderen vælger **Start evaluering**, angives evalueringen til **Igangværende**. Medarbejderen begynder derefter at tilføje indhold. Chefen kan på dette tidspunkt ikke længere se gennemse dokumentet.
 
 3.  Medarbejderen, ændres status til **Klar til evaluering**.
 
 4.  Chefen kan tilføje kommentarer og vurderinger. På dette tidspunkt er det kun chefen, der kan se evalueringen.
 
-5.  Chefen ændres status til **Endelig evaluering**, så både chefen og medarbejderen kan se evalueringen og diskutere den. Du kan angive i parametrene, hvorvidt evalueringen kan redigeres på nuværende tidspunkt. Dette trin er også valgfrit, hvis chefen blot ønsker at dele evalueringen med medarbejderen og markere den som **Fuldført**, når de er færdige.
+5.  Chefen ændres status til **Endelig evaluering**, så både chefen og medarbejderen kan se evalueringen og diskutere den. Du kan angive i parametrene, om evalueringen kan redigeres på nuværende tidspunkt. Dette trin er også valgfrit, hvis chefen blot ønsker at dele evalueringen med medarbejderen og markere den som **Fuldført**, når de er færdige.
 
 6.  Efter godkendelserne er fuldført, ændres status til **Fuldført**. På dette stadium kan evalueringen ikke ændres.
 
 Arbejdsgangen Arbejderevaluering har to elementer:
 
-1.  Godkend evaluering. Tilføj dette element for at styre statusændringen fra **Igangværende** til **Klar til evaluering**. Skift tildelingen til at bruge ledelseshierarkiet, hvor Employee.line-chefniveauet = 1.
+1.  Godkend evaluering. Tilføj dette element for at styre statusændringen fra **Igangværende** til **Klar til evaluering**. Skift tildelingen til at bruge ledelseshierarkiet, hvor **Employee.line-chefniveauet = 1**.<!--note from editor: Edit assumes that this is a UI string. -->
 
-2.  Slutevaluering. Tilføj dette element for at styre statusændringen fra **Klar til evaluering** til **Slutevaluering**. Rediger tildelingen til at bruge ledelseshierarkiet, hvor Employee.line manager-niveauet = 1, hvis du ønsker, at lederen skal godkende den endelige revision. Skift tildelingen til arbejdsgangsbruger, hvis du ønsker, at medarbejderen skal godkende den. Hvis du ønsker, at både chef og medarbejder skal godkende den, skal du tilføje to trin i arbejdsgangen og foretage den relevante tildeling for hvert enkelt trin i den rækkefølge, du ønsker, at godkendelserne skal følge.
+2.  Slutevaluering. Tilføj dette element for at styre statusændringen fra **Klar til evaluering** til **Slutevaluering**. Rediger tildelingen til at bruge ledelseshierarkiet, hvor **Employee.line-chefniveauet = 1**, hvis du ønsker, at lederen skal godkende den endelige revision. Skift tildelingen til **Arbejdsgangsbruger**, hvis du ønsker, at medarbejderen skal godkende den. Hvis du ønsker, at både chef og medarbejder skal godkende den, skal du tilføje to trin i arbejdsgangen og foretage den relevante tildeling for hvert enkelt trin i den rækkefølge, du ønsker, at godkendelserne skal følge.<!--note from editor: I like this, so succinct.-->
 
 ## <a name="setup"></a>Konfiguration
 
-Der er tre sider, der kan hjælpe dig med at angive oplysninger, der kræves for at fuldføre performanceprocessen: Siden **Målinger**, siden **Ydeevnekladdens kildetyper** og siden **Evalueringstyper**.
+Tre sider<!--note from editor: Suggested, to avoid "there are" (via Writing Style Guide).--> kan hjælpe dig med at angive oplysninger, der kræves for at fuldføre performanceprocessen: Siden **Målinger**, **Performancekladdens kildetyper** og **Evalueringstyper**.
 
 ### <a name="measurements"></a>Måling
 
-På siden **Målinger** har du oprette standardmålinger, der skal bruges på siderne **Ydeevnemål** og **Evalueringer**. Du kan oprette målinger, der kan være datoer, beløb, mængder eller procentdele eller målinger, der er baseret på en klassifikationsmodel.
+Brug siden **Målinger** til at<!--note from editor: Via Writing Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35221--> oprette standardmålinger, der skal bruges på siderne **Performancemål** og **Evalueringer**. Du kan oprette målinger, der kan være datoer, beløb, mængder, procentdele eller målinger, der er baseret på en klassifikationsmodel.
 
 ### <a name="performance-journal-source-types"></a>Performancekladdens kildetyper
 

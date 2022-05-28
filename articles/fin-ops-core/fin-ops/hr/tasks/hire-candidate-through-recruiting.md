@@ -13,20 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075367"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734654"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Ansætte en ansøger gennem rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
-
+> Rekrutteringsfunktionen i dette emne kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter.  
 
 Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som **Ansat**. Demodatafirmaet **USMF** bruges til at oprette denne procedure.
 

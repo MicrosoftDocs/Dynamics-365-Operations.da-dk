@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075293"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739381"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -130,8 +130,8 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 | Varedisponering | [Få vist planhistorik og planlægningslogfiler](../master-planning/planning-optimization/plan-history-logs.md) |
 | Lagerstedsstyring | [Containerpakningsstrategier](../warehousing/container-packing-strategy-overview.md) |
 | Lagerstedsstyring | [Eksempelscenarier for cyklusoptælling](../warehousing/cycle-counting-scenarios.md) |
-| Lagerstedsstyring | [Importere indgående ASN'er via V2-dataenheden](../warehousing/import-asn-v2-data-entity.md) |
-| Lagerstedsstyring | [Overpluk for salgsordrer og flytteordrer](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
+| Warehouse management | [Importere indgående ASN'er via V3-dataenheden](../warehousing/import-asn-data-entity.md) |
+| Warehouse management | [Overpluk for salgsordrer og flytteordrer](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Lagerstedsstyring | [Planlægge bølgeetiketudskrivning under bølgen](../warehousing/configure-task-based-wave-label-printing.md) |
 | Lagerstedsstyring | [Nyheder eller ændringer i Warehouse Management-mobilappen](../warehousing/whats-new-wma.md) |
 

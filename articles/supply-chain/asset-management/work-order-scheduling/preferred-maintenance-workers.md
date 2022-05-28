@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734421"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687663"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Opsæt foretrukne vedligeholdelsesarbejdere
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Du kan under planlægning af arbejdsordrer angive en præference for, hvilken vedligeholdelsesarbejder eller vedligeholdelsesgruppe der skal tildeles for at afslutte arbejdsordrer. Brugen af denne funktion er valgfri, men den kan hjælpe dig med at vælge den mest kvalificerede vedligeholdelsesarbejder til at fuldføre et job baseret på arbejderens færdigheder og kompetencer. Kun vedligeholdelsesarbejdere, der er tilgængelige på planlægningstidspunktet, indgår i planlægningen. Hvis opsætning for en foretrukken vedligeholdelsesarbejder stemmer overens med en arbejdsordre under planlægningen, men vedligeholdelsesarbejderen er allokeret til andre job, planlægges arbejdsordren for en anden tilgængelig vedligeholdelsesarbejder.
 
@@ -51,13 +49,15 @@ Jo flere valg du foretager for den samme post, jo mere specifik bliver din opsæ
 
 3. Start med at oprette en "standard"-vedligeholdelsesarbejder eller -arbejdergruppe. Det betyder, at du kun foretager valg i feltet **Foretrukken vedligeholdelsesarbejdergruppe** eller i feltet **Foretrukne vedligeholdelsesarbejdere**. I nedenstående skærmbillede kan du se et eksempel i den første post, hvor "Anmodninger" er valgt som **Foretrukken vedligeholdelsesarbejdergruppe**.
 
-    [!NOTE] Denne standardopsætning bruges i forbindelse med planlægningen af arbejdsordrer, hvis der ikke er angivet en mere specifik kombination, som svarer til indholdet af arbejdsordren.
+    > [!NOTE]
+    > Denne standardopsætning bruges i forbindelse med planlægningen af arbejdsordrer, hvis der ikke er angivet en mere specifik kombination, som svarer til indholdet af arbejdsordren.
 
 4. Gentag trin 2 for at oprette en ny post. Foretag de nødvendige valg, afhængigt af detaljeringsniveauet for den foretrukne arbejder eller arbejdergruppe. 
 
     *Eksempel:* skærmbilledet nedenfor er Shawn Richardson valgt som foretrukken arbejder. Han vil automatisk blive valgt under planlægning af en arbejdsordre, der omfatter aktivet "CH-BP1-03-02 og vedligeholdelsesjobtypen"Facilitetsvurdering ", hvis han er ledig på det planlagte tidspunkt.
 
-    [!NOTE] Når der vælges en foretrukken vedligeholdelsesarbejder under planlægningen af arbejdsordrer, gennemgår Styring af aktiver alle poster med **Foretrukne vedligeholdelsesarbejdere** for at søge efter et muligt match og kontrollere altid den mest specifikke kombination først. Hvis der ikke findes et match, bruges posten "standard" med et valg i enten feltet **Foretrukken vedligeholdelsesarbejdergruppe** eller feltet **Foretrukken vedligeholdelsesarbejder**.
+    > [!NOTE]
+    > Når der vælges en foretrukken vedligeholdelsesarbejder under planlægningen af arbejdsordrer, gennemgår Styring af aktiver alle poster med **Foretrukne vedligeholdelsesarbejdere** for at søge efter et muligt match og kontrollere altid den mest specifikke kombination først. Hvis der ikke findes et match, bruges posten "standard" med et valg i enten feltet **Foretrukken vedligeholdelsesarbejdergruppe** eller feltet **Foretrukken vedligeholdelsesarbejder**.
 
 ![Figur 1.](media/02-work-order-scheduling.png)
 

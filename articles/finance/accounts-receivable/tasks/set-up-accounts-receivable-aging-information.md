@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5b67c33f73a33721167cedde1a8d83a81aa77db3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753531"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735396"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Opsætte og generere aldersfordelte oplysninger om debitorer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne guide hjælper dig med at oprette en definition af forældelsesperiode, aldersfordele kundesaldi og få vist saldi på listen Aldersfordelt saldo og siden Rykkere. Denne registrering anvender demofirmaet USMF.
+Denne guide hjælper dig med at oprette en definition af forældelsesperiode, aldersfordele kundesaldi og få vist saldi på listen **Aldersfordelt saldo** og siden **Rykkere**. Denne registrering anvender demofirmaet USMF.
 
 
 ## <a name="create-an-aging-period-definition"></a>Opret en definition af forældelsesperioder

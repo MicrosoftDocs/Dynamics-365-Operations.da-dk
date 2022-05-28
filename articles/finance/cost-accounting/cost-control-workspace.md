@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763184"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734598"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -54,7 +54,7 @@ I oversigtspanelet **Filtrering af data** skal du definere datagrundlaget for ra
 | Finanspost for omkostningsregnskab                                            | Den **Finanspost for omkostningsregnskab**, som rapporten er baseret på. Den værdi, der er afledt af feltet **Omkostningskontrolenhed**. |
 | Omkostningskontrolenhed                                                 | Den værdi, du vælger, bestemmer den finanspostering for omkostningsregnskabet og de omkostningsobjekter, som rapporten skal baseres på. |
 | Statistisk dimensionshierarki, Dimensionshierarki for omkostningselement | Et konfigurationspost for **Omkostningsstyring**-arbejdsområdet kan rapportere enten ikke-pengemæssige værdier eller pengeværdier, men ikke i det samme layout. Vælg en værdi i feltet **Dimensionshierarki for omkostningselement** for at rapportere pengemæssige værdier. Vælg en værdi i feltet **Statistisk dimensionshierarki** for at rapportere ikke-pengemæssige værdier. Den dimensionshierarkipost, som du vælger, bestemmer strukturen i rapporterings- og aggregeringsniveauerne.<blockquote>[!NOTE]<br>For at få vist ikke-pengemæssige og pengemæssige værdier ved siden af hinanden kan du eksportere data til Microsoft Excel til Microsoft Power BI-indholdspakken.</blockquote> |
-| Dimensionshierarki for omkostningsobjekt                                   | Vælg dimensionshierarkiet for den omkostningsobjektdimension, der passer til formålet med den rapportering, som du definerer. |
+| Dimensionshierarki for omkostningsobjekt      | Vælg dimensionshierarkiet for den omkostningsobjektdimension, der passer til formålet med den rapportering, som du definerer. |
 | Oprindelig budgetversion                                           | Vælg det budgetversions-id, der fungerer som det oprindelige budget i forbindelse med denne rapport. |
 | Revideret budgetversion                                            | Vælg det budgetversions-id, der fungerer som det reviderede budget i forbindelse med denne rapport. |
 

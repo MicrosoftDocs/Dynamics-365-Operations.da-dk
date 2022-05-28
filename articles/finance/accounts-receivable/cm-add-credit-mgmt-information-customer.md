@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753964"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734451"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Tilføje kreditstyringsoplysninger for debitorer
 
@@ -32,7 +32,7 @@ Du kan tilføje debitoroplysningerne i oversigtspanelet **Kredit** på siden **A
 1. Vælg **Ja** i indstillingen **Ubegrænset kreditgrænse**, hvis kunden ikke skal være begrænset af nogen kreditmaksimumtest.
 2. Vælg **Ja** i indstillingen **Udeluk fra kreditstyring** for at udelukke debitoren fra handlinger, der sædvanligvis forekommer under kreditstyring.
 3. Vælg kreditstyringsgruppe for debitoren.
-4. Hvis du vil beregne kreditmaksimum i debitorens valuta, skal du angive debitorens kreditmaksimum i feltet **Kreditmaksimum i kundens valuta**. Kreditmaksimum i firmavalutaen omregnes ved hjælp af de valutakurser, der er defineret af den valutakurstype for kreditmaksimum, som er valgt i parametrene for kreditstyring.
+4. Hvis du vil beregne kreditmaksimum i debitorens valuta, skal du angive debitorens kreditmaksimum i feltet **Kreditmaksimum i kundens valuta**. Kreditmaksimum i firmavalutaen omregnes ved hjælp af de valutakurser, der er defineret af den valutakurstype for kreditmaksimum, som er valgt i **parametrene for kreditstyring**.
 5. Angiv den dato, hvor debitorens kreditmaksimum sidst blev gennemset af en kreditchef, i feltet **Dato for sidste gennemsyn**.
 6. I feltet **Næste planlagte dato for gennemsyn** skal du angive den dato, hvor der er planlagt kreditgennemsyn og -opdatering for debitoren.
 7. I feltet **Berettiget kreditmaksimum** skal du angive det højeste kreditmaksimum, der kan tildeles debitorens, baseret på din gennemgang af debitorens kredithistorik. Det berettigede kreditmaksimum kan afvige fra det kreditmaksimum, der vises i oversigtspanelet **Kredit**.
@@ -46,7 +46,8 @@ Du kan tilføje debitoroplysningerne i oversigtspanelet **Kredit** på siden **A
 15. Angiv den dato, hvor de første posteringer blev afviklet for debitoren, i feltet **Kunde siden**. Disse oplysninger bruges, når der oprettes risikovurderinger.
 16. Angiv noter, som kreditteamet kan bruge til yderligere at evaluere kundens kreditværdighed.
 
-Bemærk, at nogle af de oplysninger, der vises på siden **Kunder**, oprettes af en anden proces:
+> [!Note] 
+> Nogle af de oplysninger, der vises på siden **Kunder**, oprettes af en anden proces:
 
 - Feltet **Udløbsdato for kreditmaksimum** viser den dato, hvor kreditmaksimum udløber. Hvis du ikke indstiller dette felt, udløber kundens kreditmaksimum ikke.
 - Feltet **Dato for kreditmaksimum** viser den dato, hvor kreditmaksimum blev oprettet. Dette felt opdateres, når kreditmaksimum reguleres.

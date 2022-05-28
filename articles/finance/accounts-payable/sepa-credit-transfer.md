@@ -1,6 +1,6 @@
 ---
 title: Oversigt over SEPA-pengeoverførsel
-description: Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel.
+description: Dette emne indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "11124"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984021"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734510"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Oversigt over SEPA-pengeoverførsel
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel.
+Dette emne indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Hvad er en kreditoverførselsmeddelelse?
 Kreditoverførselsmeddelelsen er en anmodning, som en initierende part (din virksomhed) sender for at flytte midler fra sin egen konto til en kreditor. Der er mange lande-/områdespecifikke og bankspecifikke implementeringer af kreditoverførselsmeddelelser. Nogle af dem der anvendes inden for ét land/område, og nogle er ved at blive standarder. Én veletableret global standard er ISO 20022 og dens initieringsmeddelelser, f.eks. som kreditoverførsel. I følgende illustration vises forbindelserne og dækningen for udvalgte kreditoverførselsmeddelelser. 

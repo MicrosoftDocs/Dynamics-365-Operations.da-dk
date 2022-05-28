@@ -1,20 +1,20 @@
 ---
 title: Svensk Intrastat
 description: Dette emne indeholder oplysninger om Intrastat-rapportering i Sverige.
-author: andosip
+author: anasyash
 ms.date: 8/24/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1031b93950e44fe3b1b6254bf1503b4c09d6fd10
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486940"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727392"
 ---
 # <a name="swedish-intrastat"></a>Svensk Intrastat
 
@@ -43,7 +43,7 @@ Du kan finde flere oplysninger under [Downloade ER-konfigurationer fra det globa
 
 ## <a name="set-up-foreign-trade-parameters"></a>Konfigurer udenrigshandelsparametre
 
-1. I Microsoft Dynamics 365 Finance skal du gå til **Moms** > **Opsætning** > **Parametre for udenrigshandel**.
+1. I Microsoft Dynamics 365 Finance skal du gå til **Moms** > **Konfiguration** > **Parametre for udenrigshandel**.
 2. Under fanen **Intrastat** skal du i feltet **Tilknytning af filformat** vælge **Intrastat (SE)** i oversigtspanelet **Elektronisk rapportering**.
 3. Vælg **Intrastat-rapport** i feltet **Rapportformattilknytning**.
 4. Vælg **Intrastat** i feltet **Kategorihierarki** i oversigtspanelet **Varekodehierarki**.

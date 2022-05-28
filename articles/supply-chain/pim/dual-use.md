@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570747"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736027"
 ---
 # <a name="dual-use-goods"></a>Varer med dobbelt anvendelse
 
@@ -34,7 +34,7 @@ Overvej på følgende scenarie:
 2. Siden **Oplysninger om frigivne produkter** til produkt X-100 angiver, at det er en vare med dobbelt anvendelse. Tilsammen angiver kode, kategori, gruppe og ordning den eksportkontrolklassifikation, som produktet tilhører.
 3. Siden **Certifikater ved dobbelt anvendelse** indeholder et certifikat til produkt X-100, når det sendes til Frankrig. Dette certifikat udløber 1. januar 2020.
 4. D. 17. juni 2020 opretter du en salgsordre for en kunde, der bor i Frankrig, og ordren omfatter produkt X-100.
-5. Når du gemmer salgsordren, bestemmer systemet følgende oplysninger:
+5. Når du bekræfter salgsordren, bestemmer systemet følgende oplysninger:
 
     1. Indeholder ordren produkter, der er varer med dobbelt anvendelse?
     2. Hvis ordren omfatter varer med dobbelt anvendelse, kræver destinationslandet så certifikater for dobbelt anvendelse?

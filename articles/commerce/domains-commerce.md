@@ -2,7 +2,7 @@
 title: Domæner i Dynamics 365 Commerce
 description: Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733985"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737340"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733985"
 Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 
 Domæner er webadresser, der bruges til at navigere til Dynamics 365 Commerce-websteder i en webbrowser. Du styrer administrationen af dit domæne hos en valgt DNS-serverudbyder (Domain Name Server). Der henvises til domæner i hele Dynamics 365 Commerce-webstedsgeneratoren for at koordinere, hvordan der er adgang til et websted, når det udgives. I dette emne gennemgås, hvordan domæner håndteres og henvises til i hele livscyklussen for udviklingen og lanceringen af Commerce-webstedet.
+
+> [!NOTE]
+> Pr. 6. maj 2022 vil alle miljøer, der oprettes i Dynamics 365 Commerce, blive klargjort med `.dynamics365commerce.ms`-domænet, hvilket erstatter det tidligere mønster for `.commerce.dynamics.com`. De eksisterende miljøer, der er klargjort med `.commerce.dynamics.com`-domænet, vil fortsætte med at fungere.
 
 ## <a name="provisioning-and-supported-host-names"></a>Klargøring og understøttede værtsnavne
 
@@ -44,7 +47,7 @@ Du kan oprette en serviceanmodning for at føje flere domæner til et miljø, hv
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererede URL-adresser
 
-Ved klargøring af et Dynamics 365 Commerce-e-handelsmiljø vil Commerce generere en URL-adresse, der er arbejdsadressen for miljøet. Der henvises til denne URL-adresse i linket til e-handelwebstedet, som vises i LCS, efter at miljøet er klargjort. En Commerce-genereret URL-adresse har formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, hvor navnet på e-handelslejeren er det navn, der er angivet i LCS for Commerce-miljøet.
+Ved klargøring af et Dynamics 365 Commerce-e-handelsmiljø vil Commerce generere en URL-adresse, der er arbejdsadressen for miljøet. Der henvises til denne URL-adresse i linket til e-handelwebstedet, som vises i LCS, efter at miljøet er klargjort. En Commerce-genereret URL-adresse har formatet `https://<e-commerce tenant name>.dynamics365commerce.ms`, hvor navnet på e-handelslejeren er det navn, der er angivet i LCS for Commerce-miljøet.
 
 Du kan også bruge værtsnavne for produktionswebsteder i et sandkassemiljø. Denne mulighed er ideel, når du kopierer et websted fra et sandkassemiljø til produktion.
 
@@ -67,11 +70,11 @@ Feltet **Sti** kan være tomt, eller der kan tilføjes en ekstra stistreng, som 
 
 Hvis du f.eks. har et websted i webstedsgeneratoren kaldet "fabrikam" i en e-handelslejer med navnet "xyz", og hvis du konfigurerer webstedet med en tom sti, vil du få adgang til det udgivne websteds indhold i en webbrowser ved at gå direkte til den Commerce-genererede URL-basisadresse:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Hvis du også har tilføjet en sti til "fabrikam" under dette websteds opsætning, kan du få adgang til det udgivne websteds indhold i en webbrowser ved hjælp af følgende URL-adresse:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Sider og URL-adresser
 
@@ -92,16 +95,16 @@ De understøttede værdier for værtsnavne kan knyttes til et domæne, når der 
 Når du arbejder med websteder i webstedsgenerator, og du har to websteder konfigureret med to forskellige domæner, kan du føje attributten **?domain=** til din URL-arbejdsadresse for at få adgang til det udgivne websteds indhold i en browser.
 
 Miljøet "xyz" er f.eks. blevet klargjort, og to websteder er blevet oprettet og tilknyttet i webstedsgenerator: en med domænet `www.fabrikam.com` og det andet med domænet `www.constoso.com`. Hvert websted er konfigureret ved hjælp af en tom sti. Du kan få adgang til disse to websteder i en webbrowser på følgende måde ved hjælp af attributten **?domain=**:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Når der ikke er angivet en domæneforespørgselsstreng i et miljø med flere domæner, bruger Commerce det første domæne, du har angivet. Hvis f.eks. stien "fabrikam" blev angivet først under opsætningen af webstedet, kan URL-adressen `https://xyz.commerce.dynamics.com` bruges til at få adgang til det indhold, der er udgivet til webstedet for `www.fabrikam.com`.
+Når der ikke er angivet en domæneforespørgselsstreng i et miljø med flere domæner, bruger Commerce det første domæne, du har angivet. Hvis f.eks. stien "fabrikam" blev angivet først under opsætningen af webstedet, kan URL-adressen `https://xyz.dynamics365commerce.ms` bruges til at få adgang til det indhold, der er udgivet til webstedet for `www.fabrikam.com`.
 
 ## <a name="traffic-forwarding-in-production"></a>Videresendelse af trafik i produktion
 
-Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet. Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-commerce tenant name>.commerce.dynamics.com`.
+Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet. Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Slutpunktet `<e-commerce tenant name>.commerce.dynamics.com` understøtter ikke brugerdefinerede SSL'er (Secure Sockets Layer), så du skal konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller et Content Delivery Network (CDN). 
+Slutpunktet `<e-commerce tenant name>.dynamics365commerce.ms` understøtter ikke brugerdefinerede SSL'er (Secure Sockets Layer), så du skal konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller et Content Delivery Network (CDN). 
 
 Hvis du vil konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller CDN, har du to muligheder:
 

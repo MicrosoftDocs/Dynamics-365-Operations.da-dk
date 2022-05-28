@@ -1,6 +1,6 @@
 ---
 title: Konfigurere momsafregningsperioder
-description: I dette emne beskrives, hvordan du konfigurerer momsafregningsperioder i Dynamics 365 Finance.
+description: Dette emne beskriver, hvordan du konfigurerer momsafregningsperioder i Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732951"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735808"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>Konfigurere momsafregningsperioder
+# <a name="set-up-sales-tax-settlement-periods"></a>Konfigurer momsafregningsperioder
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,7 +28,7 @@ I dette emne beskrives, hvordan du konfigurerer momsafregningsperioder. Momsafre
 
 Denne opgave bruger demofirmaet USMF.
 
-1. I navigationsruden skal du gå til **Moduler > Moms > Indirekte skatter > Moms > Momsafregningsperioder**.
+1. Gå til **Moms > Indirekte skatter > Moms > Momsafregningsperioder**.
 2. Vælg **Ny**.
 3. Skriv en værdi i feltet **Afregningsperiode**.
 4. Indtast en værdi i feltet **Beskrivelse**.

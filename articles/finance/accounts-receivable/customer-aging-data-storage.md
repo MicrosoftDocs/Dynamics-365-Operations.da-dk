@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
-ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
+ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8557872"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735515"
 ---
 # <a name="customer-aging-data-storage"></a>Lager af aldersfordelte debitordata
 
 [!include [banner](../includes/banner.md)]
 
-
-Dette emne indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. Du kan køre processen til lagring af aldersfordelte debitordata i Microsoft Dynamics 365 Finance for at gøre outputtet tilgængeligt for eksport til et eksternt system. Når du kører processen, vil de samme indstillinger for aldersfordelte rapporter, som er tilgængelige i systemet, være tilgængelige for eksterne systemer. Oplysningerne medtages altid i de eksporterede data.
+Dette emne indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. I Microsoft Dynamics 365 Finance kan du køre processen **Lager af aldersfordelte debitordata** for at gøre outputtet tilgængeligt for eksport til et eksternt system. Når du kører processen, vil de samme indstillinger for aldersfordelte rapporter, som er tilgængelige i systemet, være tilgængelige for eksterne systemer. Oplysningerne medtages altid i de eksporterede data.
 
 Det kan være nyttigt at gøre aldersfordelte debitordata tilgængelige for et eksternt system til lagring i tilfælde, hvor outputtet indeholder mange debitorer og/eller mange transaktioner. Hvis der times ud af den eksisterende **aldersfordelte saldorapport for debitorer**, fordi der er for mange data til at blive udskrevet, kan denne funktion bruges som alternativ til at hente de samme data.
 

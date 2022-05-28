@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83f61fe55134565db18a930fe8cde99b2083143d
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 1f5b9bd2ac42b257ffe2c1cf7a00af4f13a356e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817698"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735593"
 ---
 # <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
 
@@ -48,7 +48,7 @@ GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepte
     -   Forvaltningsmidler
     -   Agenturmidler
 
-De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Dynamics 365 Finance. 
+De tre GAAP-finansieringskildeklasser, plus en **Notat**-klasse, er foruddefinerede indstillinger i Dynamics 365 Finance. 
 
 Middeltyper defineres i henhold til organisationens behov. I de fleste tilfælde skal du angive de otte typer af GAAP-midler. Middeltyperne grupperer midler til detaljeret finansiel opfølgning og rapportering. Mange midler kan indgå i en enkelt overordnet rapport, men de enkelte midler forbliver en særskilt finansiel og regnskabsmæssig enhed med sin egen finans, resultatopgørelse og egne balancerapporter. 
 

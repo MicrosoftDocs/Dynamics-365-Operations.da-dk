@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074907"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734917"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansætte eksisterende medarbejdere gennem rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> De funktioner, der nævnes i dette emne, er i øjeblikket tilgængelige for kunder med Human Resources på den økonomiske infrastruktur.  
+> Rekrutteringsfunktionen i dette emne kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter.  
 
 
 Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i din organisation. Denne fremgangsmåde fører dig gennem trinnene til at ansætte en eksisterende medarbejder gennem rekrutteringsprocessen. Et rekrutteringsprojekt allerede er oprettet i denne procedure, og en eksisterende medarbejder har allerede indsendt en ansøgning til rekrutteringsprojektet. Demodatafirmaet **USMF** bruges til at oprette denne procedure.

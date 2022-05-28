@@ -7,24 +7,24 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 60e0f721c9bcf6e966a91a66fcd0e05e85b4830015a0e26f9c3b558957c2d3d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ed160444647f9d82f2ead51a3e2401d468f6861
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733578"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734981"
 ---
 # <a name="set-up-and-run-the-cash-position-inquiry"></a>Konfigurer og køre forespørgslen Likviditet
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne indeholder oplysninger om forespørgslen Likviditet. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner. Det viser følgende elementer:
+Dette emne indeholder oplysninger om forespørgslen **Likviditet**. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner. Det viser følgende elementer:
 
 - Startsaldoen for kontantbeholdningen
 - Virkningen af tilførelsen af kasseboner

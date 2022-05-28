@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c60913bda66e5facdf05106f621005b06ac4cf9c2d13b9df36eef42615395fa9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 20a021ae4f713a74bdd565cc1470e5d95efc8b71
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729672"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735605"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Oprette momsposteringer på dokumenter
 
@@ -26,36 +26,36 @@ ms.locfileid: "6729672"
 
 Moms på dokumenter beregnes ved at angive en momsgruppe og en varemomsgruppe på dokumentlinjer. Disse hentes standard fra masterdata, men den kan ændres manuelt, hvis det er nødvendigt. Den beregnede moms kan kontrolleres på linje- og dokumentniveau. Denne opgave bruger demofirmaet USMF.
 
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Kundekonto for at åbne opslaget.
+1. Gå til **Debitor > Ordrer > Alle salgsordrer**.
+2. Klik på **Ny**.
+3. Klik på rullelisten i feltet **Kundekonto** for at åbne opslaget.
 4. Find og vælg den ønskede post på listen.
 5. Klik op linket i den valgte række på listen.
-6. Klik på OK.
+6. Klik på **OK**.
 7. Markér den valgte række på listen.
-8. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
+8. Klik på rullelisten i feltet **Varenummer** for at åbne opslaget.
 9. Klik op linket i den valgte række på listen.
-10. Angiv et nummer i feltet Enhedspris.
-11. Udvis eller skjul sektionen Linedetaljer.
-12. Klik på fanen Opsætning.
-13. Klik på rullelisten i feltet Varemomsgruppe for at åbne opslaget.
+10. Angiv et tal i feltet **Enhedspris**.
+11. Udvid eller skjul sektionen **Linjedetaljer**.
+12. Klik på fanen **Opsætning**.
+13. Klik på rullelisten i feltet **Varemomsgruppe** for at åbne opslaget.
 14. Find og vælg den ønskede post på listen.
 15. Klik op linket i den valgte række på listen.
-16. Klik på Finans.
-17. Klik på Moms.
-18. Klik på OK.
-19. Klik på Tilføj linje.
+16. Klik på **Finanser**.
+17. Klik på **Moms**.
+18. Klik på **OK**.
+19. Klik på **Tilføj linje**.
 20. Markér den valgte række på listen.
-21. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
+21. Klik på rullelisten i feltet **Varenummer** for at åbne opslaget.
 22. Find og vælg den ønskede post på listen.
 23. Klik op linket i den valgte række på listen.
-24. Angiv et nummer i feltet Enhedspris.
-25. Klik på rullelisten i feltet Varemomsgruppe for at åbne opslaget.
+24. Angiv et tal i feltet **Enhedspris**.
+25. Klik på rullelisten i feltet **Varemomsgruppe** for at åbne opslaget.
 26. Find og vælg den ønskede post på listen.
 27. Klik op linket i den valgte række på listen.
-28. Klik på Sælg i handlingsruden.
-29. Klik på Moms.
-30. Klik på OK.
+28. Klik på **Sælg** i handlingsruden.
+29. Klik på **Moms**.
+30. Klik på **OK**.
 
 
 

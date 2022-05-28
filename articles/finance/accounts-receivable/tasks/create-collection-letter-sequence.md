@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921193"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734152"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Oprette et rykkerforløb
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921193"
 
 Brug denne procedure til at oprette et rykkerforløb. Denne opgave bruger demofirmaet USMF.
 
-1. I navigationsruden skal du gå til **Moduler > Kredit og inkasso > Opsætning > Konfigurer rykkerforløb**.
+1. Gå til **Kredit og inkasso > Konfiguration > Konfigurer rykkerforløb**.
 2. Klik på **Ny**.
 3. Angiv et sekvens-id, der repræsenterer rækkefølgen, i feltet **Rykkerforløb**. Det vil blive brugt, når du opretter en posteringsprofil.
-4. Indtast en værdi i feltet **Beskrivelse**.  Betalingsbetingelserne er valgfrie. Hvis du indtaster en værdi her, vil rykkerens gebyrfaktura bruge disse betalingsbetingelser i stedet for betalingsbetingelserne, der er gemt sammen med kunden.  
+4. Indtast en værdi i feltet **Beskrivelse**. Betalingsbetingelserne er valgfrie. Hvis du indtaster en værdi her, vil rykkerens gebyrfaktura bruge disse betalingsbetingelser i stedet for betalingsbetingelserne, der er gemt sammen med kunden.  
 5. I feltet **Rykkerkode** skal du vælge koden for den første rykker, du vil sende. Den første rykker oprettes på grundlag af fakturaens forfaldsdato, den værdi, som du har angivet som frist i feltet Dage på denne linje, og andre oplysninger, som du angiver på denne linje.  
 6. Indtast en værdi i feltet **Beskrivelse**. 
 7. Standardvalutaen for gebyret er valutaen i den juridiske enhed. Valutakoden kan være forskellig fra fakturaens valuta.   
@@ -52,9 +52,9 @@ Brug denne procedure til at oprette et rykkerforløb. Denne opgave bruger demofi
 22. Klik op linket i den valgte række på listen.
 23. Skriv et tal i feltet **Mindste forsinkede saldo**.
 24. Angiv et tal i feltet **Dage**.
-25. Markér afkrydsningsfeltet **Spær**, hvis du vil spærre kunden mod yderligere leveringer og fakturaer. For at fjerne spærringen af kontoen skal du vælge **Nej** i feltet Fakturering og levering er sat på hold på siden Debitorer.  
+25. Markér afkrydsningsfeltet **Spær**, hvis du vil spærre kunden mod yderligere leveringer og fakturaer. For at fjerne spærringen af kontoen skal du vælge **Nej** i feltet **Fakturering og levering er sat på hold** på siden **Debitorer**.  
 26. Udvid oversigtspanelet **Note**.
-27. Angiv den tekst, der skal vises i rykkeren for den valgte rykkerkode. Du kan oversætte denne tekst til flere sprog ved hjælp af menuen Oversættelser over notefeltet.  
+27. Angiv den tekst, der skal vises i rykkeren for den valgte rykkerkode. Du kan oversætte denne tekst til flere sprog ved hjælp af menuen **Oversættelser** over notefeltet.  
 
 
 

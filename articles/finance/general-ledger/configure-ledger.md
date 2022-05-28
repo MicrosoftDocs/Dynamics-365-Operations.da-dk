@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712213"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711542"
 ---
 # <a name="configure-ledgers"></a>Konfigurering af Finans
 
@@ -28,7 +28,7 @@ Dette emne indeholder oplysninger om konfiguration af Finans for hver juridisk e
 
 ## <a name="selecting-the-chart-of-accounts"></a>Valg af kontoplan
 
-For hver juridisk enhed i Microsoft Dynamics 365 Finance skal der konfigureres oplysninger om Finans. På siden **Finans** kan du vælge den kontoplan og de kontostrukturer, der skal bruges til den valgte juridiske enhed. Du kan dele din kontoplan og kontostrukturer ved at konfigurere siden **Finans** i hver juridisk enhed til at bruge den samme kontoplan og de samme kontostrukturer. Du kan også dele en del af konfigurationen i de enkelte juridiske enheder og angive specifikke konfigurationer i de enkelte juridiske enheder.
+For hver juridiske enhed i Microsoft Dynamics 365 Finance skal der konfigureres oplysninger om Finans. På siden **Finans** kan du vælge den kontoplan og de kontostrukturer, der skal bruges til den valgte juridiske enhed. Du kan dele din kontoplan og kontostrukturer ved at konfigurere siden **Finans** i hver juridisk enhed til at bruge den samme kontoplan og de samme kontostrukturer. Du kan også dele en del af konfigurationen i de enkelte juridiske enheder og angive specifikke konfigurationer i de enkelte juridiske enheder.
 
 Hvis de juridiske enheder skal have forskellige kontoplaner eller forskellige regnskabsstrukturer, kan funktionen til tilsidesættelse af den juridiske enhed være nyttig. Ved at bruge samme kontoplan og kontostrukturer for flere juridiske enheder og derefter administrere eventuelle undtagelser ved tilsidesættelse af juridisk enheder, kan du forenkle vedligeholdelsen over tid.
 
@@ -38,7 +38,7 @@ Du kan finde flere oplysninger om, hvordan du planlægger og konfigurerer kontop
 
 ## <a name="selecting-account-structures"></a>Valg af kontostrukturer
 
-Hver juridisk enhed i Dynamics 365 Finance kan konfigureres til at bruge en eller flere kontostrukturer. Hver kontostruktur definerer de økonomiske dimensioner og kombinationer af hovedkonti og økonomiske dimensioner, der tillades, når posteringerne bogføres. Du kan bruge de samme kontostrukturer i mere end én juridisk enhed.
+Hver juridiske enhed i Dynamics 365 Finance kan konfigureres til at bruge en eller flere kontostrukturer. Hver kontostruktur definerer de økonomiske dimensioner og kombinationer af hovedkonti og økonomiske dimensioner, der tillades, når posteringerne bogføres. Du kan bruge de samme kontostrukturer i mere end én juridisk enhed.
 
 Bemærk, at hvis du har flere kontostrukturer, kan du kun vælge kontostrukturer, der ikke har overlappende kombinationer af hovedkonti og økonomiske dimensioner. En af dine kontostrukturer er f. eks. konfigureret til at tilføje en afdeling for hovedkonti mellem 1000 og 1999. I en anden kontostruktur har du tilføjet en afdeling for økonomisk dimension for hovedkonti, der begynder med 1. I dette tilfælde er det kun en af kontostrukturerne, der kan tilføjes i den samme juridiske enhed.
 

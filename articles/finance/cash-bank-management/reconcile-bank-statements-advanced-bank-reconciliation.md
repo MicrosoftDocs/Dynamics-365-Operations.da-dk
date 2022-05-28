@@ -1,26 +1,26 @@
 ---
 title: Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 description: Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 Finance. I dette emne beskrives afstemningsprocessen.
-author: saraschi2
+author: moaamer
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27956cbc4d51c1b907138b49947b57a570d98da1
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714442"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727560"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 

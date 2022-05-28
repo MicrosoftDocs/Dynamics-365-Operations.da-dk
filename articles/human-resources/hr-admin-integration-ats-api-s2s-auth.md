@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064916"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743535"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Server til server-godkendelse for ATS-integrations-API
 
@@ -89,7 +89,7 @@ For den nye rolle skal den relevante adgang som minimum tildeles til følgende e
 
 Det andet trin er at sikre, at programmet får de relevante tilladelser til dataene i Human Resources, ved at knytte det til en bruger i programmet Human Resources. For en applikationsbruger sker server til server-kald via virtuelle Dataverse-tabeller i forbindelse med identiteten for den bruger (app) i Dataverse, som aktiverer handlingen. Adaptertjenesten for den virtuelle tabel søger derefter efter den tilknyttede bruger i Human Resources og kører forespørgslen for den pågældende bruger. Det betyder, at en bruger skal oprettes i Human Resources med de korrekt tildelte roller for at give adgang til de data, som integrationsapplikationen har brug for.
 
-Human Resources-brugeren skal også tildeles de korrekte tilladelser til dataene i Human Resources. Rollen **Rekrutteringsprogram** (HcmRecruitingIntegrator) er tilgængelig med rettigheder til de primære enheder, der kræves for at integrere med rekrutteringsdata. Programbrugeren på siden **Brugere** kan tildeles denne rolle for at give den rette adgang til dataene. Du kan finde flere oplysninger om sikkerhedsroller i Human Resources i [Rollebaseret sikkerhed](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Human Resources-brugeren skal også tildeles de korrekte tilladelser til dataene i Human Resources. Rollen **Rekrutteringsprogram** (HcmRecruitingIntegrator) er tilgængelig med rettigheder til de primære enheder, der kræves for at integrere med rekrutteringsdata. Programbrugeren på siden **Brugere** kan tildeles denne rolle for at give den rette adgang til dataene. Du kan finde flere oplysninger om sikkerhedsroller i Human Resources i [Rollebaseret sikkerhed](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Oprette den nye bruger med de rette tilladelser
 
