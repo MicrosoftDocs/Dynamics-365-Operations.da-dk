@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766950"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716965"
 ---
 # <a name="establish-customer-payment-terms"></a>Fastlægge betingelser for debitorbetaling
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766950"
 
 Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opgaveguide anvender demofirmaet USMF.
 
-1. Gå til **Navigationsrude > Moduler > Debitor > Betalingsopsætning > Betalingsdage**. Opsætningen af **Betalingsbetingelser** er fælles for **Debitor** og **Kreditor**. Hvis du definerer den i modulet, bliver den også tilgængelig i det andet modul. Til denne opgaveguide angiver jeg alle betalingsbetingelserne under **Debitor**.
+1. Gå til **Navigationsrude > Moduler > Debitor > Betalingsopsætning > Betalingsdage**. Opsætningen af **Betalingsbetingelser** er fælles for **Debitor** og **Kreditor**. Hvis du definerer den i modulet, bliver den også tilgængelig i det andet modul. Til denne opgaveguide er alle betalingsbetingelserne konfigureret under **Debitor**.
 2. Klik på **Ny**. Opret en betalingsdag, hvis betalingsbetingelserne kræver en bestemt dag i ugen (mandag, tirsdag osv.) eller en bestemt dato i måneden (5., 10 osv). 
 3. Angiv et id i feltet **Betalingsdag**.
 4. Angiv en beskrivelse af betalingsdagen i feltet **Beskrivelse**.

@@ -2,7 +2,7 @@
 title: Tilpasse grænsefladen til produktionsudførelse
 description: Dette emne forklarer, hvordan du kan udvide aktuelle formularer eller oprette nye formularer og knapper til grænsefladen for produktionsudførelse.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066540"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712937"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Tilpasse grænsefladen til produktionsudførelse
 
@@ -60,7 +60,7 @@ Når du er færdig, vises den nye knap (handling) automatisk på siden **Designf
 1. Opret en udvidelse med navnet `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, hvor metoden `getMainMenuItemsList` udvides ved at føje det nye menupunkt til listen. Følgende kode viser et eksempel.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Føje kontrolelementer for en dato og et klokkeslæt til en formular eller dialogboks
+
+I dette afsnit vises, hvordan du føjer dato- og klokkeslætskontrolelementer til en formular eller dialogboks. De berøringsvenlige dato- og tidskontrolelementer gør det muligt for arbejdere at angive datoer og tidspunkter. Følgende skærmbilleder viser, hvordan kontrolelementerne typisk vises på siden. Klokkeslætskontrollen omfatter både versioner af 12 timer og 24 timer. Den viste version følger den præference, der er angivet for den brugerkonto, som brugergrænsefladen kører under.
+
+![Eksempel på datokontrolelement.](media/pfe-customize-date-control.png "Eksempel på datokontrolelement")
+
+![Eksempel på tidskontrolelement med 12-timers ur.](media/pfe-customize-time-control-12h.png "Eksempel på tidskontrolelement med 12-timers ur")
+
+![Eksempel på tidskontrolelement med 24-timers ur.](media/pfe-customize-time-control-24h.png "Eksempel på tidskontrolelement med 24-timers ur")
+
+I følgende procedure vises et eksempel på, hvordan du kan føje dato- og tidskontroller til en formular.
+
+1. Føj en controller til formularen for hver dato- og tidskontrol, som formularen skal indeholde. (Antallet af controllere skal være lig med antallet af dato- og tidskontroller i formularen).
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Angiv de nødvendige variabler (af typen `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Opret metoder, hvor datetime opdateres af datetime-controllerne. Følgende eksempel viser denne metode.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Konfigurer funktionaliteten for hver datetime-controller, og forbind hver enkelt controller til en formulardel. I følgende eksempel vises, hvordan du kan konfigurere data til dato fra- og tid fra-kontrolelementer. Du kan tilføje lignende kode for dato til og klokkeslæt til-kontrolelementer (vises ikke).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Hvis du blot har brug for et datokontrolelement, kan du springe opsætningen af tidsstyring over og i stedet bare oprette datokontrollen, som vist i følgende eksempel:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

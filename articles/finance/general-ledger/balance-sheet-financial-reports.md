@@ -1,6 +1,6 @@
 ---
-title: Balance - økonomiske rapporter
-description: I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter.
+title: Økonomiske balanceopgørelser
+description: I dette emne beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,32 +8,32 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 276e877db42361282ad2bf4a01dd971ec02e2af7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734508"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734300"
 ---
-# <a name="balance-sheet-financial-reports"></a>Balance - økonomiske rapporter
+# <a name="balance-sheet-financial-reports"></a>Økonomiske balanceopgørelser
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
+I dette emne beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
 
 ## <a name="default-balance-sheet-reports"></a>Standardbalancerapporter
 
 Der er to standardbalancerapporter. I den ene rapport er afsnittene stablet. I den anden er de placeret side om side.
 
 | Standardrapport                       | Hvad den gør                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------|----------------------------------------------------------------------------------------------|
 | Balance – standard              | Giver en oversigt over organisationens økonomiske situation for året.                                                                 |
 | Parallel balance – standard | Giver en oversigt over organisationens økonomiske situation for året. Aktiver og passiver og egenkapital ved siden af hinanden. |
 

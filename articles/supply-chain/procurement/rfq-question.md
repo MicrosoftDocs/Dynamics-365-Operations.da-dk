@@ -1,7 +1,7 @@
 ---
 title: Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 description: Leverandører, der har spørgsmål til en RFP, kan sende deres spørgsmål og læse svarene på siden til **Kreditorsamarbejde**.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 80ec7ae9e345f20344b48de39111532a9896b38d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 00801d406beb844bb693e8c148f721aec2a000a5
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777754"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676959"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 

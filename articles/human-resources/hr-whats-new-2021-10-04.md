@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641424"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695754"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 5. oktober 2021
 
@@ -42,7 +41,7 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 
 | Funktion | Frigivelsesplan | Dokumentation |
 |---|---|---|
-| Platform update 10.0.21 (45) | -- | [Platformsopdateringer til version 10.0.21 af Finance and Operations-apps (oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Platform update 10.0.21 (45) | -- | [Platformsopdateringer til version 10.0.21 af programmer til finans og drift (oktober 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>Fejlrettelser
@@ -87,7 +86,7 @@ Du kan se en komplet liste over planlagte funktioner og deres planlagte udgivels
 
 | Funktion | Detaljer |
 |---|---|
-| Platform update 10.0.22 (46) | Opdatering med platformsopdatering 10.0.22 er planlagt til at starte med servicefrigivelse den 1. november 2021. Få flere oplysninger under [Platformsopdateringer for version 10.0.22 af Finance and Operations-apps (november 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Platform update 10.0.22 (46) | Opdatering med platformsopdatering 10.0.22 er planlagt til at starte med servicefrigivelse den 1. november 2021. Du kan få mere at vide i [Platformsopdateringer til version 10.0.22 af programmer til finans og drift (november 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 

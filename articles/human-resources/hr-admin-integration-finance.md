@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3880601b40ce8ec544a1976f7f0ac7391dab32e1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065010"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687526"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integration med Finance
 
@@ -47,7 +46,7 @@ Human Resources til Finance-løsningen giver følgende typer datasynkronisering:
 Integrationsløsningen kræver følgende versioner af Human Resources og Finance: 
 
 - Dynamics 365 Human Resources på Dataverse
-- Dynamics 365 Finance version 7.2 og nyere
+- Dynamics 365 Finance version 7.2 og senere
 
 ## <a name="template-and-tasks"></a>Skabelon og opgaver
 

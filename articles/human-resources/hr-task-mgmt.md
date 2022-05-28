@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087211"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710215"
 ---
 # <a name="task-management"></a>Opgavestyring
 
@@ -57,18 +56,14 @@ Fanen **Offboarding** indeholder en liste over medarbejdere, der forlader firmae
 Fanen **Stillingsskift** indeholder en liste over **Alle opgaver**, der viser alle opgaver for alle medarbejdere, der skal skifte stilling, eller som har skiftet stilling for nylig. Der er også en liste over forfaldne opgaver og en liste over opgaver, der er tildelt den aktuelle bruger.
 
 Under alle tre faner kan HR-assistenter og -ledere udføre følgende aktiviteter:
-
-- Anvende en tjekliste på en medarbejder.
-- Opdatere statussen for en opgave.
-- Tildele en opgave til en anden.
-- Opdatere forfaldsdatoen for en opgave.
+- Anvende en tjekliste på en medarbejder
+- Opdatere statussen for en opgave
+- Tildele en opgave til en anden
+- Opdatere forfaldsdatoen for en opgave
 
 > [!NOTE]
 > Fanen **Onboarding** viser som standard medarbejdere, der er ansat inden for de seneste syv dage. Hvis du vil ændre denne indstilling, skal du angive en tidsramme i feltet **Nye ansættelser** på siden **Human Resources-parametre** under fanen **Generelt**. Dataene på listen **Nye ansættelser** kan vises for et bestemt antal dage, måneder eller år. Hvis du for eksempel vil have vist listen over medarbejdere, der er ansat inden for de seneste 14 dage, skal du angive feltet **Periode** til **14** og feltet **Enhed** til **Dage**.
->
-> På siden **Human Resources-parametre** kan du også opdatere datointervallet for listerne over fratrædende og fratrådte medarbejdere, der vises under fanen **Offboarding**.
->
-> Disse indstillinger gælder også for arbejdsområdet **Personalestyring**.
+> På siden **Human Resources-parametre** kan du også opdatere datointervallet for listerne over fratrædende og fratrådte medarbejdere, der vises under fanen **Offboarding**. Disse indstillinger gælder også for arbejdsområdet **Personalestyring**.
 
 ## <a name="setting-up-tasks"></a>Konfigurere opgaver
 
@@ -188,6 +183,13 @@ Du kan også anvende en tjekliste til en medarbejder ved at åbne dennes **Arbej
 ## <a name="completing-tasks"></a>Fuldførelse af opgaver
 
 På siden **Medarbejderselvbetjening** kan en medarbejder se alle de opgaver, der er knyttet til dem. For hver tildelte opgave vises værdier for **Opgave**, **Beskrivelse**, **Instruktioner** og **Kontaktperson**. Derudover kan medarbejderen for hver opgave åbne den tilknyttede eksterne webside eller den tilknyttede side i Dynamics 365-appen.
+
+Opgaver kan også vises på standarddashboardet. Sådan vises opgaver på standarddashboardet:
+1. Gå til **Brugerindstillinger – Indstillinger – Opgavestyring** 
+2. Angiv **Vis opgaver på standarddashboard** til **Til**:  
+
+>[!Note] 
+>Funktionen **Opgavestyring** skal være aktiveret i **Funktionsstyring**, for at indstillingen kan vises i **Brugerindstillinger**.
 
 Opgaver kan markeres som **Igangværende**, **Annulleret** eller **Fuldført**. Hvis en opgave er tildelt til en gruppe, markeres den som **Fuldført**, når én person i gruppen fuldfører den.
 

@@ -1,6 +1,6 @@
 ---
 title: Oversigt over Kreditor i den offentlige sektor
-description: I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 Finance. Denne funktionalitet for offentlige institutioner omhandler leverandørstyring, indkøb og rapportering.
+description: I dette emne beskrives den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 Finance. V
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -8,22 +8,22 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEntity, PurchAgreementListPage, PurchTableListPage, SrmParameters, VendCertificationType, VendCoverPageLayout, VendOpenInvoicesListPage, VendParametersVendParameters, VendTableListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "19661"
 - intro-internal
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2781c8f24f85012a554183fbe8388c1d64a5239
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1ddd7fed6177038860c861d4cd90e278d33fccfd
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982079"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735420"
 ---
 # <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 
@@ -43,21 +43,21 @@ Når du har konfigureret forudsætningerne, kan det være nødvendigt at konfigu
 
 - [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md) – Du kan oprette koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces. For eksempel tillader du en ikke-planlagt ordre ved hjælp af et indkøbsordrenummer på tidspunktet for et køb i stedet for ved hjælp af et dokument, der er leveret, før varen er påkrævet. 
   > [!NOTE]
-  > Dette gælder også for indkøb og forsyning.
+  > Dette gælder også for **indkøb og forsyning**.
 
 - [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md) – Du kan bruge bogføringsdefinitioner til at oprette kladdelinjer for oprindelige posteringer, der opfylder udvalgte kriterier. Du kan f.eks. bruge bogføringsdefinitioner til at oprette flere afstemte finansposter baseret på attributter som f.eks. posteringstyper og konti. 
   > [!NOTE]
-  > Dette gælder også for Finans, Budgettering og Debitor.
+  > Dette gælder også for **Finans**, **Budgettering** og **Debitor**.
 
 
 - [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor](plan-one-time-vendors-public-sector.md).
 - Oversigt over 1099-formular i den offentlige sektor – Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Offentlige organisationer bruger formular 1099-G og 1099-S.
 
 > [!NOTE]
-> Dette gælder også for indkøb og forsyning.
+> Dette gælder også for **indkøb og forsyning**.
 
 ## <a name="additional-public-sector-functionality"></a>Yderligere funktioner til den offentlige sektor
-De resterende afsnit i denne artikel beskriver de Kreditor-funktioner, der er tilgængelige for den offentlige sektor.
+De resterende afsnit beskriver de Kreditor-funktioner, der er tilgængelige for den offentlige sektor.
 
 -   **Kasserabatter** – Vælg den konto, der skal modregnes på, når kasserabatter anvendes.
 -   **Certificeringstyper for kreditor** – Definer en certificeringstype for eventuelle kreditorkrav, som du vil spore.

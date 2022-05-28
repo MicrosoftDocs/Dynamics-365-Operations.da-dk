@@ -2,7 +2,7 @@
 title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913721"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747631"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 
@@ -39,7 +39,9 @@ Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal
 1. Vælg dit miljø fra listen.
 1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce-hovedkontoret.
 1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.
-2. Gå til **Commerce-parametre > Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje denne post og køre **Kanaldatabase > Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit eCommerce-websted.
+1. Gå til **Commerce-parametre \> Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje den, angive værdien til **true** og derefter vælge **Kanaldatabase \> Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit websted for e-handel.
+1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Initialiser Commerce-planlægger**. I menuen **Initialiser Commerce-planlægger** skal du sikre, at indstillingen **Slet eksisterende konfiguration** er angivet til **Ja**, og derefter vælge **OK**.
+1. Hvis du vil føje kanaler til Commerce Scale Unit, skal du gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \>Kanaldatabase** og derefter vælge Commerce Scale Unit i venstre rude. I oversigtspanelet **Detailkanal** skal du tilføje **AW-onlinebutik**, **AW Business-onlinebutik** og **Fabrikams udvidede onlinebutik** som kanaler. Du kan også tilføje detailforretninger, hvis du bruger POS ( f.eks. **Seattle**, **San Francisco** og **San Jose**).
 
 Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
 
@@ -85,6 +87,7 @@ Følg disse trin for at begynde at konfigurere dit evalueringswebsted i Commerce
 1. Vælg **da-dk** som standardsprog.
 1. Lad værdien i feltet **Sti** være, som den er.
 1. Vælg **OK**. Listen over sider på webstedet vises.
+1. Gentag trin 2-7 for webstedet **AdventureWorks** (som er tilknyttet **AW-onlinebutik**-kanalen) og webstedet **AdventureWorks Business** (som er tilknyttet kanalen **AW Business-onlinebutik**). Hvis feltet **Sti** til Fabrikams websted er tom, skal du tilføje stier for de to AdventureWorks-websteder (f.eks. "aw" og "awbusiness").
 
 ## <a name="enable-jobs"></a>Aktivere job
 
@@ -149,6 +152,28 @@ Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, 
 
 > [!NOTE]
 > Commerce-evalueringsmiljøer har en forudindlæst Azure Active Directory (Azure AD) business-to-consumer-lejer (B2C) til demonstrationsformål. Det er ikke nødvendigt at konfigurere din egen Azure AD B2C-lejer for evalueringsmiljøer. Hvis du konfigurere evalueringsmiljøet for at bruge din egen Azure AD B2C-lejer, skal du tilføje ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som URL-svaradresse i Azure AD B2C-programmet via Azure Portal.
+
+## <a name="troubleshooting"></a>Fejlfinding
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Webstedsgeneratorens kanalliste er tom, når du konfigurerer websted
+
+Hvis webstedsgeneratoren ikke viser nogen onlinebutikskanaler, sikrer hovedkontoret, at kanalerne er føjet til Commerce Scale Unit som beskrevet i afsnittet [Før du begynder](#before-you-start) ovenfor. Du kan også køre **Initialiser Commerce planlægger** med værdien **Slet eksisterende konfiguration** angivet som **Ja**.  Når disse trin er fuldført skal du på siden **Kanaldatabase** (**Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Kanaldatabase**) køre **9999**-jobbet på Commerce Scale Unit.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Farveprøver gengives ikke på kategorisiden, men gengives på siden med produktdetaljer (PDP)
+
+Benyt følgende fremgangsmåde for at sikre, at farve- og størrelsesprøver er angivet til at være definerbare.
+
+1. Gå i hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**.
+1. Vælg onlinebutikskanalen i venstre rude, og vælg derefter **Angiv attributmetadata**.
+1. Angiv indstillingen **Vis attribut på kanal** til **Ja**, angiv indstillingen **Kan redigeres** til **Ja**, og vælg derefter **Gem**. 
+1. Vend tilbage til siden med onlinebutikskanalen, og vælg derefter **Publicer kanalopdateringer**.
+1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Kanaldatabase** og kør jobbet **9999** på Commerce Scale Unit.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Det ser ikke ud til, at forretningsfunktioner er aktiveret for forretningswebstedet AdventureWorks
+
+I hovedkontoret skal du sikre, at onlinebutikskanalen er konfigureret med **Kundetype** angivet til **B2B**. Hvis **Kundetype** er angivet til **B2C**, skal der oprettes en ny kanal, da den eksisterende kanal ikke kan redigeres. 
+
+Demodata, der er leveret i Commerce version 10.0.26, og som tidligere havde en fejl, hvor kanalen **AW Business-onlinebutik** var fejlkonfigureret. Løsningen er at oprette en ny kanal med de samme indstillinger og konfigurationer med undtagelse af **Kundetype**, som skal angives til **B2B**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647707"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689208"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Understøttelse af momsfunktion til flytteordrer
 
@@ -31,7 +30,7 @@ Dette emne indeholder oplysninger om momsberegning og bogføringsintegration i f
 Hvis du vil konfigurere og bruge denne funktion, skal du udføre tre hovedtrin:
 
 1. **RCS-konfiguration:** I Regulatory Configuration Service skal du konfigurere momsfunktionen, momskoder og momskoders anvendelighed for bestemmelse af momskode i flytteordrer.
-2. **Dynamics 365 Finance-opsætning**: I Finance kan du aktivere funktionen **Moms i flytteordre**, konfigurere parametrene for momsberegningstjenesten til lageret og konfigurere kernemomsparametre.
+2. **Dynamics 365 Finance-opsætning:** I Finance kan du aktivere funktionen **Moms i flytteordre**, konfigurere parametrene for momsberegningstjenesten til lageret og konfigurere kernemomsparametre.
 3. **Lageropsætning:** Konfigurer lagerkonfigurationen for flytteordreposteringer.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Konfigurere RCS til moms- og flytteordretransaktioner

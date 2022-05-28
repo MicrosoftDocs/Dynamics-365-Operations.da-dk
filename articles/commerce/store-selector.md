@@ -3,7 +3,7 @@ title: Modulet Butiksvælger
 description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772150"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710774"
 ---
 # <a name="store-selector-module"></a>Butiksvælgermodul
 
@@ -59,6 +59,16 @@ Følg disse trin for at angive længde- og breddegrad for butiksadressen i Comme
     ![Eksempel på konfiguration af breddegrad og længdegrad for en butik i hovedkontoret.](./media/Store-latitude-longitude.png)
 
 1. Vælg **Gem** i handlingsruden. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Skjule en butik fra modulet til butiksvælger
+
+Nogle butikker i en opfyldelsesgruppe er muligvis ikke gyldige afhentningssteder. Hvis du vil sikre, at der kun vises gyldige afhentningssteder som indstillinger i modulet til butiksvælger, skal du følge disse trin i Commerce Headquarters.
+
+1. Gå til **Retail og Commerce \> Konfiguration af Commerce \> Opfyldelsesgrupper \> Alle butikker**.
+1. Vælg **Rediger** i handlingsruden.
+1. Under **Konfiguration** skal du fjerne markeringen i afkrydsningsfeltet **Er afhentningslokation** for alle butikker, der ikke er en gyldig afhentningslokation.
+1. Vælg **Gem** i handlingsruden.
+1. Kør distributionstidsplanen 1070 **Kanalkonfiguration**.
 
 ## <a name="bing-maps-integration"></a>Bing Kort-integration
 

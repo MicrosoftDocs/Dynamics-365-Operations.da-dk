@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c213e742b9c89218dabcf3d953512062ee9b7fe198d84e883097f1500f4c5be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 128fa481940b21bbbc215cbff6086f5961d30ad4
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715880"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734349"
 ---
 # <a name="forecast-position-reports-for-the-public-sector"></a>Rapporter over budgetteret stilling for den offentlige sektor
 
@@ -30,7 +30,7 @@ Rapporten **Oversigt over budgetteret stilling** viser budgetterede stillingsomk
 
 Rapporten **Detaljer for budgetteret stilling** indeholder de fleste oplysninger, der vises i formularen for budgetteret stilling. De kontofordelinger, der er tilknyttet budgetstillingen via økonomiske dimensioner og økonomiske dimensionsskabeloner, vises sammen med de omkostninger, der er knyttet til den enkelte fordelingskombination for den budgetterede stilling. 
 
-Hvis du vil have vist flere oplysninger om en budgetteret stilling, skal du vælge stillingsnummeret for at åbne siden med budgetterede stillinger.
+Hvis du vil have vist flere oplysninger om en **Budgetteret stilling**, skal du vælge **stillingsnummeret** for at åbne siden **Budgetteret stilling**.
 
 ## <a name="filter-the-data-on-this-report"></a>Filtrere dataene i denne rapport
 

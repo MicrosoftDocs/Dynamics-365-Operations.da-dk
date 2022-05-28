@@ -2,7 +2,7 @@
 title: Lovmæssige opdateringer
 description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649123"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711908"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
@@ -29,11 +29,11 @@ Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på a
 
 Microsoft bestræber sig på at gennemføre nye lovkrav så tidligt som muligt. Den faktiske leveringsdato afhænger af datoen for lovens offentliggørelse, de lokale myndigheders tilvejebringelse af deltaljerede oplysninger om lovkravene, valideringsværktøjernes tilgængelighed samt af ændringens omfang og kompleksitet.
 
-Vi har planer om at levere lovgivningsmæssige opdateringer i One Version-tjenesteopdateringer, og at disse frigives i behørig tid til, at kunderne kan nå at opdatere og være klar inden ikrafttrædelsesdatoen (for opdateringer af transaktionslovgivning) eller den første obligatoriske frist for rapportering (for lovgivningsmæssige opdateringer relateret til rapportering). Kunder og partnere kan få forhåndsvist lovgivningsmæssige opdateringer i programmet Preview Early Adoption (PEAP).
+Vi har planer om at levere lovgivningsmæssige opdateringer i One Version-tjenesteopdateringer, og at disse frigives i behørig tid til, at kunderne kan nå at opdatere og være klar inden ikrafttrædelsesdatoen (for opdateringer af transaktionslovgivning) eller den første obligatoriske frist for rapportering (for lovgivningsmæssige opdateringer relateret til rapportering). Kunder og partnere kan få forhåndsvist lovgivningsmæssige opdateringer i forhåndsversionspakken, der leveres til hver tjenesteopdatering.
 
 Såfremt offentliggørelsen sker sent, adgangen til detaljerne om lovkravene eller valideringsværktøjerne tilvejebringes sent, eller der er tale om særligt store og komplekse ændringer, vil det måske ikke være muligt at stille en lovgivningsmæssig opdatering til rådighed inden datoen for en månedsopdaterings generelle tilgængelighed. I disse tilfælde vil de lovgivningsmæssige opdateringer leveres i form af hotfixes for relevante tilgængelige månedlige opdateringer.
 
-Lovmæssige opdateringer, der frigives som en del af den månedlige opdatering, angives kun med frigivelsesversion. Lovmæssige opdateringer, der leveres enten som hotfix eller som en del af en prøveversion, kan identificeres ved hjælp af henholdsvis forkortelsen HF og PEAP. 
+Lovmæssige opdateringer, der frigives som en del af den månedlige opdatering, angives kun med frigivelsesversion. Lovmæssige opdateringer, der leveres enten som hotfix eller som en del af en prøveversion, kan identificeres ved hjælp af henholdsvis forkortelsen HF og forhåndsversion. 
 
 De nyeste planer for lovgivningsmæssige opdateringer fremgår af følgende tabel.   
 

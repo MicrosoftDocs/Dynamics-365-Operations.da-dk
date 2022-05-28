@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649095"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695382"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Tilføje datafelter i momsintegrationen ved hjælp af udvidelse
 
@@ -383,7 +382,7 @@ Hvis projektet skal opbygges korrekt, skal du føje følgende referencemodeller 
 
 Når du har fuldført de foregående trin, kan du validere ændringerne.
 
-1. I Finans skal du gå til **Kreditor** og føje **&debug=vs%2CconfirmExit&** til URL-adressen. For eksempel https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Det sidste **&** er afgørende.
+1. I Finans skal du gå til **Kreditor** og føje **&debug=vs%2CconfirmExit&** til URL-adressen. For eksempel `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Det sidste **&** er afgørende.
 2. Åbn siden **Indkøbsordre**, og vælg **Ny** for at oprette en indkøbsordre.
 3. Angiv værdien for det brugerdefinerede felt, og vælg derefter **Moms**. En fejlfindingsfil med præfikset **TaxServiceTroubleshootingLog** downloades automatisk. Denne fil indeholder de transaktionsoplysninger, der er bogført til Momsberegningstjeneste. 
 4. Kontrollér, om det tilpassede felt, der er tilføjet, findes i afsnittet **Momsberegningstjenesteinput i JSON**, og om værdien er korrekt. Hvis værdien ikke er korrekt, skal du dobbelttjekke trinnene i dette dokument.
