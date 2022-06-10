@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487857"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789206"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -52,20 +52,20 @@ Vælg et funktionsområde, du vil vide mere om.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Du kan finde oplysninger om Dynamics 365 Finance ved at gå til siden [Startside for Finance](../finance/index.md).
+Du kan finde oplysninger om Dynamics 365 Finance ved at gå til [Startside for Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videoer
 
-Denne korte video opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
+Denne korte video opsummerer de nye funktioner til styring af forsyningskæden, der er føjet til Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
 
-- [Synkronisering af en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synkronisere en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
+Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæden, der er føjet til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).
 
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations Enterprise edition (juli 2017).
+Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
 - [Start her til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 - [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
@@ -73,7 +73,7 @@ Disse korte videoer opsummerer de nye funktioner til supply chain management, de
 - [Godkende indkøbsordrer på en mobilenhed](https://youtu.be/gZ-gOlJe7H8)
 - [Visuel planlægning med Gantt-diagram til produktions- og batchordrer](https://youtu.be/BtbuShkGj4I)
 
-Følgende optagelser af tekniske konferencer gennemgår funktionerne til supply chain management fra tidligere versioner af Finance and Operations. Denne funktionalitet er nu en del af Dynamics 365 Supply Chain Management. De samme begreber gælder stadig, og procedurerne er de samme i den aktuelle version.
+Følgende optagelser af tekniske konferencer gennemgår funktionerne til styring af forsyningskæde fra tidligere versioner af Finance and Operations. Denne funktionalitet er nu del af Dynamics 365 Supply Chain Management. De samme begreber gælder stadig, og procedurerne er de samme i den aktuelle version.
 
 - **Omkostningsstyring:**
   - [Oversigt over omkostningsstyring](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -98,7 +98,7 @@ Der er mange emner om styring af produktionen og supply chain management i [Dyna
 ## <a name="white-papers"></a>Whitepapers
 
 - [Lean Manufacturing: Leveringsevne og tidsplanlægning af kanban-job](/dynamics/s-e/)
-- [Styklistekalkulation ved hjælp af efterkalkulationsark](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Styklistekalkulation ved hjælp af efterkalkulationsark](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 

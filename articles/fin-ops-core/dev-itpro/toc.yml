@@ -10,13 +10,15 @@
           items:
             - name: Nyheder eller ændringer i programmer til finans og drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nyheder eller ændringer i platformsopdateringer
+            - name: Nyheder eller ændringer i Platformospdateringer
               items:
-                - name: Nyheder eller ændringer på startsiden for platformsopdateringer
+                - name: Nyheder eller ændringer på startsiden for Platformospdatering
                   href: get-started/whats-new-home-page.md
-                - name: Platformsopdateringer til version 10.0.27 (juli 2022)
+                - name: Platformospdateringer for version 10.0.28 (august 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: Platformospdateringer for version 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platformsopdateringer til version 10.0.26 (maj 2022)
+                - name: Platformospdateringer for version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Platformsopdateringer til version 10.0.25 (april 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
@@ -384,9 +386,9 @@
                   items:
                     - name: Konfigurere projekter i det lokale miljø i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdatering 41 og senere)
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformospdatering 41 og senere)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdateringer 12 til 40)
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformospdatering 12 til 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Genstarte miljøservices
               href: lifecycle-services/restart-environment-services.md
+            - name: Opdatere miljøadministrator
+              href: lifecycle-services/update-environment-admin.md
             - name: Rapportere en produktionsafbrydelse
               href: lifecycle-services/report-production-outage.md
             - name: Registrere brugerpålogninger
@@ -1266,6 +1270,8 @@
               items:
                 - name: Oversigt over tilføjelser
                   href: power-platform/add-ins-overview.md
+            - name: Opbygge mobiloplevelser
+              href: power-platform/build-mobile-experiences.md
             - name: Politikker og kommunikation
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobilplatform

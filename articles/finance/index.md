@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1018cb8c3279a27a55a415c23405571e23ab40e1
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: a442256797cb64d30a18268232a07b463bc0db36
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713692"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762589"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -45,7 +45,7 @@ Vælg et funktionsområde, du vil vide mere om.
         - [Anlægsaktiver](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Finans- og økonomirapportering](general-ledger/general-ledger.md) 
-        - [Offentlig sektor](public-sector/public-sector-functionality.md) 
+        - [Den offentlige sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
 
@@ -76,7 +76,7 @@ Funktioner i Supply Chain Management dækker dele af processen fra levering til 
    - Fakturering
    - Betaling for de varer og tjenester, som organisationen køber 
     
-Få oplysninger om funktionerne til administration af køb, lager og produktion på [Supply Chain Management-startsiden](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
+Få oplysninger om funktionerne til administration af køb, lager og produktion på [Supply Chain Management-startsiden](../supply-chain/index.md).
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 
