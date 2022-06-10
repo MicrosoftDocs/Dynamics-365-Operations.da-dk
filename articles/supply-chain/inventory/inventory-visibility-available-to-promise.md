@@ -2,7 +2,7 @@
 title: Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed
 description: Dette emne indeholder en beskrivelse af, hvordan du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn).
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525879"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763247"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed
 
@@ -24,7 +24,7 @@ ms.locfileid: "8525879"
 
 Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere funktionen *Ændringsplan for disponibelt antal*, så du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn). DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af denne beregning kan øge ordreopfyldelsesfunktionaliteten væsentligt.
 
-For mange producenter, detailforretninger eller sælgere er det ikke nok blot at vide, hvad der aktuelt er disponibelt. De skal have fuld synlighed af fremtidig tilgængelighed. I denne fremtidige tilgængelighed skal der tages højde for fremtidig forsyning, fremtidig efterspørgsel og DTT.
+For mange producenter, detailforhandlere eller sælgere er det ikke nok blot at vide, hvad der aktuelt er disponibelt. De skal have fuld synlighed af fremtidig tilgængelighed. I denne fremtidige tilgængelighed skal der tages højde for fremtidig forsyning, fremtidig efterspørgsel og DTT.
 
 ## <a name="enable-and-set-up-the-features"></a><a name="setup"></a>Aktivere og konfigurere funktionerne
 
@@ -32,9 +32,12 @@ Før du kan bruge DTT, skal du konfigurere en eller flere beregnede målinger fo
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Konfigurere beregnede målinger for DTT-mængder
 
-Det *beregnede DTT-målepunkt* er en foruddefineret beregnet måling, der typisk bruges til at finde det disponible antal, der aktuelt er tilgængeligt. Summen af additionsmodifikatorantal er forsyningsantallet, og summen af subtraktionsmodifikatorantal er efterspørgselsantallet.
+Det *beregnede DTT-målepunkt* er en foruddefineret beregnet måling, der typisk bruges til at finde det disponible antal, der aktuelt er tilgængeligt. *Leveringsantallet* er summen af antal for disse fysiske målinger, der har modifikatortypen *addition*, og *efterspørgselsantallet* er summen af antal fysiske målinger, der har modifikatortypen *subtraktion*.
 
-Du kan tilføje flere beregnede målinger til beregning af DTT-mængder. Det samlede antal modifikatorer på tværs af alle beregnede DTT-målinger skal dog være mindre end ni.
+Du kan tilføje flere beregnede målinger til beregning af flere DTT-mængder. Det samlede antal distinkte fysiske målinger på tværs af alle beregnede DTT-målinger skal være mindre end ni.
+
+> [!IMPORTANT]
+> En beregnet måling er en komposition af fysiske målinger. Formlen kan kun indeholde fysiske målinger uden dubletter, ikke beregnede målinger.
 
 Du kan f.eks. konfigurere følgende beregnet måling:
 
@@ -43,6 +46,12 @@ Du kan f.eks. konfigurere følgende beregnet måling:
 Summen (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) repræsenterer forsyning, og summen (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) repræsenterer efterspørgsel. Den beregnede måling kan derfor læses på følgende måde:
 
 **On-hand-available** = *Forsyning* – *Efterspørgsel*
+
+Du kan tilføje endnu en beregnet måling for at beregne det **disponible fysiske** DTT-antal.
+
+**On-hand-physical** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+Der er otte distinkte fysiske målinger på tværs af disse to DTT-beregnede målinger: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* og *Outbound*.
 
 Du kan finde flere oplysninger beregnede målinger i [Beregnede målinger](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Du kan f.eks. afgive en ordre på 10 cykler og forvente, at den ankommer i morge
 
 Når du forespørger på disponible antal og DTT-mængder i Lagersynlighed, returnerer den følgende oplysninger for hver dag i planlægningsperioden:
 
-- **Dato** – Den dato, som resultatet gælder for.
+- **Dato** – Den dato, som resultatet gælder for. Tidszonen er Coordinated Universal Time (UTC).
 - **Disponibelt antal** – Det faktiske disponible antal for den angivne dato. Denne beregning foretages i henhold til den DTT-beregnede måling, der er konfigureret til Lagersynlighed.
 - **Planlagt forsyning** – Summen af alle planlagte indgående antal, der ikke er fysisk disponible til direkte forbrug eller forsendelse på den angivne dato.
 - **Planlagt efterspørgsel** – Summen af alle planlagte udgående antal, der ikke er forbrugt eller afsendt på den angivne dato.
@@ -108,79 +117,79 @@ Resultaterne i dette eksempel viser en *projekteret disponibel* værdi. Denne v�
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | | | 17 | 17 |
-    | 2022/02/04 | 20 | | | 17 | 17 |
-    | 2022/02/05 | 20 | | | 17 | 17 |
-    | 2022/02/06 | 20 | | | 17 | 17 |
-    | 2022/02/07 | 20 | | | 17 | 17 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | | | 17 | 17 |
+    | 2022-02-04 | 20 | | | 17 | 17 |
+    | 2022-02-05 | 20 | | | 17 | 17 |
+    | 2022-02-06 | 20 | | | 17 | 17 |
+    | 2022-02-07 | 20 | | | 17 | 17 |
 
 1. På dags dato (1. februar 2022) sender du et planlagt forsyningsantal på 10 for 3. februar 2022. Resultatet vises i følgende tabel.
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | 10 | | 27 | 27 |
-    | 2022/02/04 | 20 | | | 27 | 27 |
-    | 2022/02/05 | 20 | | | 27 | 27 |
-    | 2022/02/06 | 20 | | | 27 | 27 |
-    | 2022/02/07 | 20 | | | 27 | 27 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | 10 | | 27 | 27 |
+    | 2022-02-04 | 20 | | | 27 | 27 |
+    | 2022-02-05 | 20 | | | 27 | 27 |
+    | 2022-02-06 | 20 | | | 27 | 27 |
+    | 2022-02-07 | 20 | | | 27 | 27 |
 
 1. På dags dato (1. februar 2022) sender du følgende planlagte antalsændringer:
 
     - Efterspørgselsantal på 15 for 4. februar 2022
     - Forsyningsantal på 1 for 5. februar 2022
-    - Efterspørgselsantal på 3 for 6. februar 2022
+    - Forsyningsantal på 3 for 6. februar 2022
 
     Resultatet vises i følgende tabel.
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 12 |
-    | 2022/02/02 | 20 | | | 17 | 12 |
-    | 2022/02/03 | 20 | 10 | | 27 | 12 |
-    | 2022/02/04 | 20 | | 15 | 12 | 12 |
-    | 2022/02/05 | 20 | 1 | | 13 | 13 |
-    | 2022/02/06 | 20 | 3 | | 16 | 16 |
-    | 2022/02/07 | 20 | | | 16 | 16 |
+    | 2022-02-01 | 20 | | 3 | 17 | 12 |
+    | 2022-02-02 | 20 | | | 17 | 12 |
+    | 2022-02-03 | 20 | 10 | | 27 | 12 |
+    | 2022-02-04 | 20 | | september | 12 | 12 |
+    | 2022-02-05 | 20 | 1 | | 13 | 13 |
+    | 2022-02-06 | 20 | 3 | | 16 | 16 |
+    | 2022-02-07 | 20 | | | 16 | 16 |
 
 1. På dags dato (1. februar 2022) sender du det planlagte efterspørgselsantal på 3. Du skal derfor bekræfte denne ændring, så den afspejles i den faktiske disponible beholdning. For at bekræfte ændringen skal du sende en ændringshændelse for disponibelt antal, der har et udgående antal på 3. Du skal derefter tilbageføre den planlagte ændring ved at sende en ændringsplan for disponibelt antal, der har et udgående antal på -3. Resultatet vises i følgende tabel.
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 17 | | 0 | 17 | 12 |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | september | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
+    | 2022-02-01 | 17 | | 0 | 17 | 12 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | september | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
 
 1. Den næste dag (2. februar 2022) skifter planlægningsperioden fremad med én dag. Resultatet vises i følgende tabel.
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
-    | 2022/02/08 | 17 | | | 16 | 16 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | september | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
+    | 2022-02-08 | 17 | | | 16 | 16 |
 
 1. To dage senere (4. februar 2022) er forsyningsantallet på 10, der var planlagt til 3. februar, dog stadig ikke ankommet. Resultatet vises i følgende tabel.
 
     | Dato | Disponibel | Planlagt forsyning | Planlagt efterspørgsel | Forventet disponibelt antal | DTT |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/04 | 17 | | 15 | 2 | 2 |
-    | 2022/02/05 | 17 | 1 | | 3 | 3 |
-    | 2022/02/06 | 17 | 3 | | 6 | 6 |
-    | 2022/02/07 | 17 | | | 6 | 6 |
-    | 2022/02/08 | 17 | | | 6 | 6 |
-    | 2022/02/09 | 17 | | | 6 | 6 |
-    | 2022/02/10 | 17 | | | 6 | 6 |
+    | 2022-02-04 | 17 | | september | 2 | 2 |
+    | 2022-02-05 | 17 | 1 | | 3 | 3 |
+    | 2022-02-06 | 17 | 3 | | 6 | 6 |
+    | 2022-02-07 | 17 | | | 6 | 6 |
+    | 2022-02-08 | 17 | | | 6 | 6 |
+    | 2022-02-09 | 17 | | | 6 | 6 |
+    | 2022-02-10 | 17 | | | 6 | 6 |
 
     Som du kan se, har de planlagte (men ikke bekræftede) ændringer i den disponible beholdning ingen indflydelse på det faktiske disponible antal.
 
@@ -190,8 +199,8 @@ Du kan bruge følgende API-URL-adresser (Application Programming Interface) til 
 
 | Sti | Metode | Beskrivelse |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Oprette én planlagt ændring af disponibelt antal. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Oprette flere planlagte ændringer af disponibelt antal. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Oprette én planlagt ændring af disponibelt antal. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Oprette flere planlagte ændringer af disponibelt antal. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Oprette en ændringshændelse for disponibelt antal. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Oprette flere ændringshændelser. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Forespørgsel ved hjælp af `POST`-metoden. |
@@ -199,31 +208,46 @@ Du kan bruge følgende API-URL-adresser (Application Programming Interface) til 
 
 Du kan finde flere oplysninger i [Offentlige API'er til lagersynlighed](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Sende ændringsplaner for disponibelt antal
+### <a name="create-one-on-hand-change-schedule"></a>Oprette én tidsplan for ændring af disponibelt antal
 
-Ændringsplaner for disponibelt antal foretages ved at sende en `POST`-anmodning til den relevante URL-adresse for lagersynlighedstjenesten (se [Sende ændringsplaner, ændringshændelser og DTT-forespørgsler via API](#api-urls)). Du kan også sende masseanmodninger.
+Ændringsplaner for disponibelt antal oprettes ved at sende en `POST`-anmodning til den relevante URL-adresse for lagersynlighedstjenesten (se [Sende ændringsplaner, ændringshændelser og DTT-forespørgsler via API](#api-urls)). Du kan også sende masseanmodninger.
 
-Hvis du vil sende en ændringsplan for disponibelt antal, skal brødteksten indeholde et organisations-id, et produkt-id, en planlagt dato og antal efter dato. Den planlagte dato skal være mellem dags dato og slutningen af den aktuelle planlægningsperiode.
+Ændringsplaner for disponibelt antal kan kun oprettes, hvis den planlagte dato er mellem dags dato og slutningen af den aktuelle planlægningsperiode. Datetime-formatet skal være *år-måned-dag* (f.eks. **2022-02-01**). Tidsformatet skal kun være nøjagtigt for dagen.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Eksempel på anmodningsbrødtekst, der indeholder en enkelt opdatering
+Denne API opretter en enkelt ændringsplan for disponibelt antal.
 
-Følgende eksempel viser en anmodningsbrødtekst, der indeholder en enkelt opdatering.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+Følgende er et eksempel på brødtekst uden `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Eksempel på anmodningsbrødtekst, der indeholder flere opdateringer (masse)
+### <a name="create-multiple-on-hand-change-schedules"></a>Oprette flere ændringsplaner for disponibelt antal
 
-Følgende eksempel viser en anmodningsbrødtekst, der indeholder flere opdateringer.
+Denne API kan oprette flere poster samtidigt. De eneste forskelle mellem denne API og API'en for enkelthændelser er værdierne `Path` og `Body`. For denne API leverer `Body` en række af poster. Det maksimale antal poster er 512. Derfor kan masse-API til ændringsplan for disponibelt antal understøtte op til 512 planlagte ændringer ad gangen.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+Følgende er et eksempel på brødtekst.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Sende ændringshændelser for disponibelt antal
+### <a name="create-on-hand-change-events"></a>Oprette ændringshændelser for disponibelt antal
 
 Ændringshændelser for disponibelt antal foretages ved at sende en `POST`-anmodning til den relevante URL-adresse for lagersynlighedstjenesten (se [Sende ændringsplaner, ændringshændelser og DTT-forespørgsler via API](#api-urls)). Du kan også sende masseanmodninger.
 
 > [!NOTE]
-> Ændringshændelser for disponibelt antal er ikke unikke for DTT-funktionaliteten, men er en del af standard-API til Lagersynlighed. Dette eksempel er medtaget, fordi hændelserne er relevante, når du arbejder med DTT. Ændringshændelser for disponibelt antal ligner ændringsreservationer, men hændelsesmeddelelser skal sendes til en anden API-URL-adresse, og hændelser bruger `quantities` i stedet for `quantityByDate` i meddelelsesteksten. Du kan finde flere oplysninger om ændringshændelser for disponibelt antal og andre funktioner i API'en til Lagersynlighed under [Offentlige API'er for Lagersynlighed](inventory-visibility-api.md).
-
-Hvis du vil sende en ændringshændelse for disponibelt antal, skal brødteksten indeholde et organisations-id, et produkt-id, en planlagt dato og antal efter dato. Den planlagte dato skal være mellem dags dato og slutningen af den aktuelle planlægningsperiode.
+> Ændringshændelser for disponibelt antal er ikke unikke for DTT-funktionaliteten, men er en del af standard-API til Lagersynlighed. Dette eksempel er medtaget, fordi hændelserne er relevante, når du arbejder med DTT. Ændringshændelser for disponibelt antal ligner ændringsreservationer, men hændelsesmeddelelser skal sendes til en anden API-URL-adresse, og hændelser bruger `quantities` i stedet for `quantityByDate` i meddelelsesteksten. Du kan finde flere oplysninger om ændringshændelser for disponibelt antal og andre funktioner i API'en til Lagersynlighed under [Offentlige API'er for Lagersynlighed](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Følgende eksempel viser en anmodningsbrødtekst, der indeholder en enkelt ændringshændelse for disponibelt antal.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ I din anmodning skal du angive `QueryATP` som *true*, hvis du vil forespørge p�
 - Hvis du sender anmodningen ved hjælp af metoden `POST`, skal du angive denne parameter i anmodningsteksten.
 
 > [!NOTE]
-> Uanset om parameteren `returnNegative` er angivet til *true* eller *false* i anmodningsteksten, vil resultatet indeholde negative værdier, når du forespørger på planlagte ændringer i disponibelt antal og DTT-resultaterne. Disse negative værdier inkluderes, fordi hvis der kun planlægges behovsordrer, eller hvis forsyningsantal er mindre end behovsantal, vil de planlagte disponible ændringer i disponibelt antal være negative. Hvis negative værdier ikke er medtaget, vil resultaterne være forvirrende. Du kan finde flere oplysninger om denne indstilling, og hvordan den fungerer for andre typer forespørgsler, under [Offentlige API'er for Lagersynlighed](inventory-visibility-api.md).
+> Uanset om parameteren `returnNegative` er angivet til *true* eller *false* i anmodningsteksten, vil resultatet indeholde negative værdier, når du forespørger på planlagte ændringer i disponibelt antal og DTT-resultaterne. Disse negative værdier inkluderes, fordi hvis der kun planlægges behovsordrer, eller hvis forsyningsantal er mindre end behovsantal, vil de planlagte disponible ændringer i disponibelt antal være negative. Hvis negative værdier ikke er medtaget, vil resultaterne være forvirrende. Du kan finde flere oplysninger om denne indstilling, og hvordan den fungerer for andre typer forespørgsler, under [Offentlige API'er for Lagersynlighed](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Eksempel på POST-metode
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 Følgende eksempel viser, hvordan du opretter en anmodningstekst, der kan sendes til Lagersynlighed ved hjælp af `POST`-metoden.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Eksempel på GET-metode
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 I følgende eksempel vises, hvordan du opretter en URL-adresse til anmodning som en `GET`-anmodning.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Resultatet af denne `GET`-anmodning er nøjagtigt det samme som resultatet af `POST`-anmodningen i forrige eksempel.

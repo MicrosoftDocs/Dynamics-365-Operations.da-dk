@@ -2,7 +2,7 @@
 title: Produktsamlingsmoduler
 description: Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984538"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780403"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
@@ -70,11 +70,14 @@ Modulet produktsamling understøtter [modulet Hurtig visning](quick-view-module.
 Hvis du vil føje et produktsamlingsmodul til en kategoriside skal du følge disse trin.
 
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
-1. Vælg den samme skabelon, som bruges på din standardkategoriside, i dialogboksen **Vælg en skabelon**. Under **Sidenavn** skal du angive et passende navn og derefter vælge **OK**.
+1. Angiv er passende sidenavn under **Sidenavn** i dialogboksen **Opret en ny side**, og vælg derefter **Næste**.
+1. Vælg den samme skabelon, som bruges på din standardkategoriside, i dialogboksen **Vælg en skabelon**, og vælg derefter **Næste**.
+1. Vælg et sidelayout (f.eks. **Fleksibelt layout**) under **Vælg et layout**, og vælg derefter **Næste**.
+1. Gennemse sidekonfigurationen under **Gennemse og afslut**. Hvis du vil redigere sideoplysningerne, skal du vælge **Tilbage**. Hvis sideoplysningerne er korrekte, skal du vælge **Opret side**. 
 1. På pladsen **Underordnet sidefod** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Container** og derefter **OK**.
 1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Produktsamling** og derefter **OK**.  
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Produktsamling** og derefter **OK**.  
 1. Vælg **Tilføj en produktliste** i egenskabsruden for produktsamlingsmodulet.
 1. Vælg listetypen, listekilden og angiv antallet af varer i dialogboksen **Vælg produktlistekonfiguration**. Konfigurer evt. andre indstillinger, der er tilgængelige for listetypen. Du kan finde flere oplysninger om listetyper i tabellen nedenfor. 
 1. Vælg **OK**.

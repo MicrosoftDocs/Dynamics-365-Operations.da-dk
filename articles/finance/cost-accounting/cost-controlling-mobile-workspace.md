@@ -2,7 +2,7 @@
 title: Arbejdsområde til omkostningsstyring på mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 author: AndersGirke
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1f5e0314678758849a787e6b3f7a67391c701046
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 75d8abaeec85b46f0fd0e430040bc7e3a8fd3042
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734045"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811318"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Omkostningsstyring** på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 
-Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
+Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen Finans og drift (Dynamics 365).
 
 ## <a name="overview"></a>Overblik
 Arbejdsområdet til **Omkostningsstyring** på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer.
@@ -113,7 +114,7 @@ Hvis version 1611 med Platform update 3 eller nyere er implementeret for organis
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Download og installer Finance and Operations-mobilappen:
+Download og installer Finans- og drifts-mobilappen (Dynamics 365):
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

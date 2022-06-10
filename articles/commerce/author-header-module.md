@@ -2,7 +2,7 @@
 title: Sidehovedmodul
 description: Dette emne omhandler sidehovedmoduler og beskriver, hvordan du kan oprette sidehoveder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2707173eb4d5525437c22a2f236c7d5c588ea7c3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712784"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780304"
 ---
 # <a name="header-module"></a>Overskriftsmodul
 
@@ -74,15 +74,15 @@ I emnet Adventure Works understøtter overskriftsmodulet egenskaben **Mobillogo*
 Følg disse trin for at oprette et sidehovedfragment.
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. I dialogboksen **Nyt fragment** skal du vælge modulet **Container**, angive et navn for fragmentet og derefter vælge **OK**.
+1. I dialogboksen **Vælg et fragment** skal du vælge modulet **Container**, angive et navn for fragmentet og derefter vælge **OK**.
 1. Vælg pladsen **Standardcontainer**, og angiv derefter egenskaben **Bredde** til **Udfyld skærm** i egenskabsruden til højre.
 1. På pladsen **Standardcontainer** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulerne **Cookie-samtykke**, **Sidehoved** og **Kampagnebanner**. Vælg derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulerne **Cookie-samtykke**, **Sidehoved** og **Kampagnebanner**. Vælg derefter **OK**.
 1. Vælg **Tilføj meddelelse** i ruden Egenskaber i modulet **Kampagnebanner**, og vælg derefter **Meddelelse**.
 1. Tilføj tekst og links i kampagneindholdet i dialogboksen **Meddelelse**, og vælg derefter **OK**.
 1. Tilføj og Konfigurer tekst og et link til websiden om beskyttelse af personlige oplysninger i ruden Egenskaber i modulet **Cookie-samtykke**.
 1. På pladsen **Navigationsmenu** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Navigationsmenu** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Navigationsmenu** og derefter **OK**.
 1. Vælg **Detailserver** under **Kilde til navigationsmenu** i egenskabsruden for modulet navigationsmenu.
 1. Vælg **Tilføj menupunkt** i egenskabsruden for modulet navigationsmenu under **Statiske menupunkter**, og vælg derefter **Menupunkt**. 
 1. Angiv "Kontakt" i dialogboksen **Menupunkt** under **Menupunkttekst**.
@@ -90,10 +90,10 @@ Følg disse trin for at oprette et sidehovedfragment.
 1. Vælg URL-adressen til websiden "Kontakt" i dialogboksen **Tilføj et link**, og vælg derefter **OK**.  
 1. Vælg **OK** i dialogboksen **Menupunkt**.
 1. På pladsen **Søg** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Søg** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Søg** og derefter **OK**.
 1. Konfigurer egenskaberne som påkrævet i egenskabsruden for søgemodulet.
-1. På pladsen **Indkøbskurvikon** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Indkøbskurvikon** og derefter **OK**.
+1. På pladsen **Kurv-ikon** i sidehovedmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Kurv-ikon** og derefter **OK**.
 1. Konfigurer egenskaberne som påkrævet i egenskabsruden for indkøbskurvikonmodulet. Hvis du ønsker, at indkøbsvognen skal vise en indkøbsvognoversigt (også kaldet en minivogn), når brugerne bevæger dig hen over den, skal du vælge **Vis minivogn**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 

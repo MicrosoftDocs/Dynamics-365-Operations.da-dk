@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dcfcd64ae24297c8e11f36629490ebe7cd063de53c717559e1b73743ccc61664
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc0020a7f7aa60305bfc7c66474e0bbc26f27bef
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758987"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809552"
 ---
 # <a name="create-an-operating-unit"></a>Opret en driftsenhed
 
@@ -37,7 +37,7 @@ En driftsenhed er en organisation, der bruges til at opdele administrationen af 
     + Angiv adresseoplysninger, som f.eks. gadenavn og husnummer, postnummer og by. Klik på **Tilføj** for at angive en ny adressepost, eller klik på Rediger for at ændre en eksisterende adressepost.   
     + Udvid sektionen **Kontaktoplysninger**, hvis det er nødvendigt.  
     + Angiv oplysninger om kommunikationsmåder, som f.eks. e-mail-adresser, URL-adresser og telefonnumre. Klik på Ny for at angive en ny kommunikationspost. Klik på **Flere indstillinger > Avanceret** for at ændre en eksisterende kommunikationspost.   
-6. Du kan evt. ændre **Driftsenhedsnummer**, hvis det er nødvendigt. Bemærk, at dette tal er en entydig idenitifikator for den tilsvarende **Part**-post og må ikke være det samme som en anden driftsenhed.
+6. Du kan evt. ændre **Driftsenhedsnummer**, hvis det er nødvendigt. Bemærk, at dette tal er en entydig identifikator for den tilsvarende **Part**-post og må ikke være det samme som en anden driftsenhed.
 7. Vælg **Gem**.
 
 

@@ -2,7 +2,7 @@
 title: POS-handlinger, online og offline
 description: Dette emne indeholder oplysninger om POS-handlinger i Dynamics 365 Commerce. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740676"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811196"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -44,7 +44,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 > [!NOTE]
 > De handlinger, der er angivet nedenfor, gælder for den nyeste version af Commerce. Nogle handlinger kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
 
-| ID   | Operation                                         | Beskrivende tekst                                                                                                                                                                                                    | Brugerhandling?    | Transaktionsskærm | Velkomstskærm | Tilgængelig offline? | Specifik for landestandard |
+| ID   | Operation                                         | Beskrivende tekst                                                                                                                                                                                                    | Brugerhandlinger    | Transaktionsskærm | Velkomstskærm | Tilgængelig offline? | Specifik for landestandard |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Produktsalg                                      | Føj et angivet produkt til transaktionen.                                                                                                                                                                    | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 101  | Pristjek                                       | Slå prisen op for et angivet produkt.                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nej              |
@@ -273,11 +273,11 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 1219 | Åbne URL-adresse i POS                                   | Åbn en administratorkonfigureret URL-adresse i POS.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1220 | Administrer pengeskab                                       | Administrer pengeskabet til forskellige kasseapparater.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1221 | Erklær udsatte transaktioner ugyldige                       | Erklær udsatte transaktioner ugyldige.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nej              |
-| 1300 | Spring regnskabsregistreringen over                          | Spring regnskabsregistrering over.                                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1301 | Marker finansiel hændelse som registreret                      |  Markér finansiel hændelse som registreret.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1302 | Fuldfør regnskabsregistreringsproces              | Fuldfør regnskabsregistreringsprocessen.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1303 | Spring over sundhedskontrolfejl                           | Spring over sundhedskontrolfejl.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1304 |  Udskyd regnskabsregistrering                     | Udskyd regnskabsregistrering.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
+| 1300 | Spring regnskabsregistreringen over                          | Spring regnskabsregistrering over.                                                                                                                                                                                       | Nej            | Nej                | Nej            | Ja               | Nej             |
+| 1301 | Marker finansiel hændelse som registreret                      |  Markér finansiel hændelse som registreret.                                                                                                                                                                                  | Nej            | Nej                | Nej            | Ja               | Nej             |
+| 1302 | Fuldfør regnskabsregistreringsproces              | Fuldfør regnskabsregistreringsprocessen.                                                                                                                                                                           | Nej            | Nej                | Ja            | Ja               | Ja             |
+| 1303 | Spring over sundhedskontrolfejl                           | Spring over sundhedskontrolfejl.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nej             |
+| 1304 |  Udskyd regnskabsregistrering                     | Udskyd regnskabsregistrering.                                                                                                                                                                                  | Nej            | Nej                | Nej            | Ja               | Nej             |
 | 1400 | Administrer kontrollister og opgaver                       | Administrer medarbejderkontrollisten og -opgaverne.                                                                                                                                                                        | Nej             | Nej                 | Ja            | Nej                | Nej              |
 | 2000 | Administration af tidsplaner                               | Denne handling understøttes endnu ikke.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nej                | Nej              |
 | 2001 | Planlægning af anmodninger                                 | Denne handling understøttes endnu ikke.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nej                | Nej              |

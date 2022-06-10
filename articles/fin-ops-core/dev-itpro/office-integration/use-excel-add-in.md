@@ -2,7 +2,7 @@
 title: Få vist og opdatere enhedsdata med Excel
 description: Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464931"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762619"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -110,7 +110,7 @@ Du kan bruge designeren til at justere de kolonner, der automatisk er føjet til
 5. Hvis du har tilføjet et felt (kolonne), skal du vælge **Opdater** for at trække et sæt opdaterede data ind.
 
 ## <a name="change-the-publish-batch-size"></a>Ændre størrelsen på publiceringsbatchen
-Når brugere publicerer ændringer til dataposter ved hjælp af Excel-tilføjelsesprogrammet, sendes opdateringerne i batches. Standardstørrelsen på publiceringsbatchen er 100 rækker. I version 10.0.17 og nyere giver funktionen den **Tillad konfiguration af publiceringsbatchstørrelsen i Excel-tilføjelsesprogrammet** dig fleksibel kontrol over publiceringsbatchstørrelsen.
+Når brugere publicerer ændringer til dataposter ved hjælp af Excel-tilføjelsesprogrammet, sendes opdateringerne i batches. Standardstørrelsen (og maksimum) på publiceringsbatch er 100 rækker. Men funktionen **Tillad konfiguration af publiceringsbatchstørrelsen i Excel-tilføjelsesprogrammet** giver dig fleksibel mulighed for at reducere størrelsen på publiceringsbatchen, særligt hvis der vises timeout, når du forsøger at publicere opdateringer fra Excel.
 
 Systemadministratorer kan angive en grænse på publiceringsbatchstørrelsen for "Åbn i Excel"-projektmapper for hele systemet ved at angive feltet **Publiceringsbatchgrænse** i sektionen **App-parametre** på siden **Parametre for Office-apps**.
 

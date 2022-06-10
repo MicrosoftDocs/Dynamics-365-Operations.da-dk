@@ -2,7 +2,7 @@
 title: Destinationer for elektronisk rapportering (ER)
 description: Dette emne indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647087"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780454"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -47,7 +47,7 @@ Du kan også vælge at installere en af følgende forudsætninger. Du skal dog v
 
 Der findes også en [Udskriv](er-destination-type-print.md)-destinationstype. Hvis du vil bruge den, skal du installere Microsoft Dynamics 365 Finance version 10.0.9 (april 2020).
 
-## <a name="overview"></a>Oversigt
+## <a name="overview"></a>Overblik
 
 Du kan kun konfigurere destinationer for ER-konfigurationer, der er [importeret](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) til aktuelle Finans-forekomst, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**. Funktionaliteten for ER-destinationsstyring er tilgængelig på **Organisationsadministration** \> **Elektronisk rapportering** \> **Destination for elektronisk rapportering**.
 
@@ -173,11 +173,11 @@ I versioner af Finance **før version 10.0.18** kan du kun aktivere indstillinge
 
 ### <a name="limitations"></a>Begrænsninger
 
-PDF-konverteringsindstillingen er kun tilgængelig for skyinstallationer.
+Fra og med Finans **version 10.0.9** er PDF-konverteringsindstillingen kun tilgængelig for skyinstallationer. Fra og med Finans version **10.0.27** er indstillingen PDF-konvertering tilgængelig for alle lokale installationer, der har [internetforbindelser](../user-interface/client-disconnected.md) aktiveret.
 
 Det fremstillede PDF-dokument er begrænset til maksimalt 300 sider.
 
-På nuværende tidspunkt understøttes kun liggende sideretning i det PDF-dokument, der fremstilles af et Excel-output, i Finans **version 10.0.9**. I Finans **version 10.0.10 (maj 2020) og nyere** kan du angive [sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
+Kun liggende sideretning understøttes i det PDF-dokument, der fremstilles af et Excel-output, fra og med Finans **version 10.0.9**. Fra og med Finans **version 10.0.10** kan du [angive sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
 
 Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
 

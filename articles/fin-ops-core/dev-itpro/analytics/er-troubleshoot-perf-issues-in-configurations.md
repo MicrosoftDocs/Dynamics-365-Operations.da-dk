@@ -2,7 +2,7 @@
 title: Fejlfinde problemer med ydeevnen i ER-konfigurationer
 description: Dette emne forklarer, hvordan du kan finde og rette problemer med ydeevne i ER-konfigurationer (elektronisk rapportering).
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744380"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811674"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Fejlfinde problemer med ydeevnen i ER-konfigurationer
 
@@ -82,7 +82,7 @@ Forbered et eksempel med en lille mængde data, så du kan indsamle en [ER-spori
 
 - Svarer antallet af forespørgsler og hentede poster til den overordnede mængde data? Hvis et dokument f.eks. indeholder 10 linjer, viser statistikken så, at rapporten udtrækker 10 linjer eller 1.000 linjer? Hvis du har stort antal hentede poster, skal du overveje en af følgende rettelser:
 
-    - [Brug **FILTER**-funktionen i stedet for funktionen **WHERE**](#filter) til at behandle data på SQL Server-siden.
+    - [Brug **FILTER**-funktionen i stedet for funktionen **WHERE**](#filter) til at behandle data på Microsoft SQL Server-siden.
     - Brug cachelagring for at undgå at hente de samme data.
     - [Brug indsamlede datafunktioner](#collected-data) for at undgå at hente de samme data til opsummering.
 
@@ -191,6 +191,10 @@ Der er nogle få begrænsninger for denne metode. Du skal have administrativ adg
 
 Selvom cachelagring reducerer den tid, der kræves for at hente data igen, koster den hukommelse. Brug cachelagring i tilfælde, hvor mængden af hentede data ikke er meget stor. Du kan finde flere oplysninger om og et eksempel på, hvordan du bruger cachelagring, i [Forbedre modeltilknytning baseret på oplysninger fra udførelsessporet](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Reducere mængden af hentede data
+
+Du kan reducere forbruget af hukommelse til cachelagring ved at begrænse antallet af felter i posterne i en programtabel, som du henter under kørslen. I dette tilfælde henter du kun de feltværdier i en programtabel, du skal bruge i ER-modeltilknytningen. Andre felter i denne tabel hentes ikke. Derfor reduceres den mængde hukommelse, der kræves for at cachelagre hentede poster. Yderligere oplysninger finder du i [Forbedret ydeevne af ER-løsninger ved at reducere antallet af tabelfelter, der hentes under kørsel](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Bruge et cachelagret, parameteriseret beregnet felt
 
 Sommetider skal værdier slås op gentagne gange. Det kan f.eks. være kontonavne og kontonumre. Du kan spare tid ved at oprette et beregnet felt med parametre på øverste niveau og derefter føje feltet til cachen.
@@ -218,4 +222,4 @@ ER kan forbruge data fra følgende kilder:
 - Klasser (datakilderne **objekt** og **klasse**)
 - Tabeller (datakilderne **tabel** og **tabelposter**)
 
-Med [ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) er det også muligt at sende forudberegnede data fra opkaldskoden. Programpakken indeholder adskillige eksempler på denne metode.
+Med [ER-API (Application Programming Interface)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) er det også muligt at sende forudberegnede data fra opkaldskoden. Programpakken indeholder adskillige eksempler på denne metode.

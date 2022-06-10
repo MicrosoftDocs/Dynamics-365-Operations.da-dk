@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547782"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786832"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
 
@@ -60,7 +60,7 @@ Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power App
 
 Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du åbne siden **Konfiguration** i Power Apps og derefter vælge **Vis tjenesteslutpunkt** i øverste højre hjørne. Siden viser det korrekte slutpunkt for tjenesten.
 
-## <a name="data-source-configuration"></a>Konfiguration af datakilde
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguration af datakilde
 
 Datakilden repræsenterer det system, dataene kommer fra. Datakildenavne omfatter f.eks. `fno` (hvilket står for "Dynamics 365-programmer til finans og drift") og `pos` (hvilket står for "point of sale" – salgssted). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
 
@@ -141,7 +141,7 @@ Hvis du vil tilføje dimensionstilknytninger, skal du følge disse trin.
 
 Hvis datakilden f.eks. indeholder en produktfarvedimension, kan du knytte den til basisdimensionen `ColorId` for at tilføje en brugerdefineret dimension for `ProductColor` i datakilden `exterchannel`. Den knyttes derefter til `ColorId`-basisdimensionen.
 
-### <a name="physical-measures"></a>Fysiske målinger
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fysiske målinger
 
 Når en datakilde bogfører en lagerændring til Lagersynlighed, bogføres ændringen ved hjælp af *fysiske målinger*. Fysiske målinger ændrer antallet og afspejler lagerstatussen. Du kan definere dine egne fysiske mål ud fra dine behov. Forespørgsler kan baseres på de fysiske målinger.
 
@@ -175,6 +175,9 @@ Hvis datakilden er Supply Chain Management, behøver du ikke oprette de fysiske 
 ### <a name="calculated-measures"></a>Beregnede målinger
 
 Du kan bruge Lagersynlighed til at forespørge på både fysiske målinger for lagerbeholdning og *brugerdefinerede beregnede målinger*. Beregnede målinger udgør en brugerdefineret beregningsformel, der består af en kombination af fysiske målinger. Denne funktion gør det muligt at definere et sæt fysiske målinger, der skal tilføjes, og/eller et sæt fysiske målinger, der skal trækkes fra, så de danner den tilpassede måling.
+
+> [!IMPORTANT]
+> En beregnet måling er en komposition af fysiske målinger. Formlen kan kun indeholde fysiske målinger uden dubletter, ikke beregnede målinger.
 
 Med konfigurationen kan du definere et sæt modifikatorer, der skal lægges til eller trækkes fra for at få det totale aggregerede outputantal.
 
@@ -297,7 +300,7 @@ Løsningen inkluderer som standard denne partitionskonfiguration. Du *behøver d
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfiguration af produktindekshierarki
 
-Lagerbeholdningsforespørgslen vil det meste af tiden ikke kun være på det højeste "totalniveau". I stedet vil du måske også at få vist resultater, der aggregeres baseret på lagerdimensionerne.
+Lagerbeholdningsforespørgslen vil det meste af tiden ikke kun være på det højeste "totalniveau". I stedet vil du måske også se resultater, der aggregeres baseret på lagerdimensionerne.
 
 Lagersynlighed giver fleksibilitet ved at lade dig konfigurere _indekserne_. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
 

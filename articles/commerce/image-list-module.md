@@ -2,7 +2,7 @@
 title: Modulet Billedliste
 description: Dette emne omhandler billedlistemoduler for social deling og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7df62fe426799905f9d6d412c4c510b8ce021b7ddd768a98b8180ca7e9b467a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67da83410d819d01396d0b7d421076ee3b0f17ec
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742382"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780837"
 ---
 # <a name="image-list-module"></a>Modulet Billedliste
 
@@ -54,11 +54,11 @@ Hvis du vil føje et billedlistemodul til en ny side og angive de påkrævede eg
 
 1. Gå til **Skabeloner**, og åbn marketingskabelonen for webstedets startside (eller opret en ny marketingskabelon).
 1. På pladsen **Hoved** på standardsiden skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Billedliste** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Billedliste** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og åbn webstedets startside (eller opret en ny startside ved hjælp af marketingskabelonen).
 1. Vælg pladsen **Hoved** på standardsiden, vælg ellipseknappen (**...**), og vælg derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge **Billedliste** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Billedliste** og derefter **OK**.
 1. Tilføj en overskrift (for eksempel **Vores mærker**) i egenskabsruden for billedlistemodulet.
 1. Tilføj et billedlisteelement, og angiv et billede, noget afsnitstekst og en URL-omdirigeringsadresse.
 1. Tilføj og konfigurer yderligere billedlistemoduler efter behov.

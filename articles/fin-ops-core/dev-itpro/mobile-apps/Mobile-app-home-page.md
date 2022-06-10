@@ -1,8 +1,8 @@
 ---
 title: Mobilapp-startside
-description: I dette emne beskrives Finance and Operations-mobilappen (Dynamics 365). Emnet indeholder links til ressourcer, der kan hjælpe dig med implementere appen i din organisation.
+description: I dette emne beskrives Finans- og drifts-mobilappen (Dynamics 365) med links til ressourcer, der kan hjælpe dig med at implementere den i din organisation.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729702"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811167"
 ---
 # <a name="mobile-app-home-page"></a>Mobilapp-startside
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-I dette emne beskrives **Finance and Operations-mobilappen (Dynamics 365)**. Emnet indeholder links til ressourcer, der kan hjælpe dig med implementere appen i din organisation.
+I dette emne beskrives **Finans- og drifts-mobilappen (Dynamics 365)** med links til ressourcer, der kan hjælpe dig med at implementere den i din organisation.
 
 ## <a name="overview"></a>Overblik
 
@@ -76,7 +77,7 @@ Tabellen nedenfor indeholder links til ressourcer, der kan hjælpe dig med at im
 <tr class="odd">
 <td>1</td>
 <td>Systemadministrator</td>
-<td>Implementer Finance and Operations-appen i organisationen.</td>
+<td>Implementer Finans- og drift-appen i din organisation.</td>
 <td><ul><li>Hvis du endnu ikke har installeret en version af Microsoft Dynamics 365, kan du se under <a href="../deployment/deploy-demo-environment.md">Installere et demomiljø</a>.</li><li>Du kan se en liste over arbejdsområder til mobilenheder, der kan bruges, under <a href="mobile-workspaces-released.md">Arbejdsområde til mobilenheder, der er udgivet for nylig</a>.</li></ul></td>
 </tr>
 <tr class="even">

@@ -2,7 +2,7 @@
 title: Arbejdsområdet Mit team til mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale.
 author: ShielaSogge
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,22 +12,23 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767106"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811051"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilarbejdsområdet Mit team
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 
 Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
 
-## <a name="overview"></a>Oversigt 
+## <a name="overview"></a>Overblik 
 I arbejdsområdet **Mit team** til mobilenheder kan ledere udføre disse opgaver:
 
 - Vis en oversigt over lederens direkte underordnede.
@@ -67,7 +68,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Sådan downloades og installeres Finance and Operations-mobilappen:
+Download og installer Finance and Operations-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

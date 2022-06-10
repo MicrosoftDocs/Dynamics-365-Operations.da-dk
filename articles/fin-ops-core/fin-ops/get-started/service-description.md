@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740646"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758763"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Servicebeskrivelse til finans og drift-apps
 
@@ -132,9 +132,9 @@ Dette afsnit indeholder en beskrivelse af nogle af de typiske hændelser i milj�
 
 LCS indeholder [værktøjer til selvbetjening](../../dev-itpro/deployment/infrastructure-stack.md) og [databasebevægelser](../../dev-itpro/database/dbmovement-operations.md), der bruges til at udføre miljø- og datastyringsopgaver. Her er nogle eksempler:
 
-**Hændelse:** [Anmode om en produktionsforekomst](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Hændelse:** [Anmode om en produktionsforekomst](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Fuldfør [Go-Live-checklisten](../imp-lifecycle/prepare-go-live.md), og send den til Microsoft [FastTrack-teamet](/dynamics365/fasttrack/).
+- Fuldfør [Gennemgå parathed til at blive udgivet](../imp-lifecycle/prepare-go-live.md), og send den til Microsoft [Microsoft FastTrack](/dynamics365/fasttrack/)-teamet.
 - Udfyld [vurderingen for LCS-abonnementet](../../dev-itpro/lifecycle-services/subscription-estimator.md), før du anmoder om en produktionsforekomst.
 - Fuldfør alle de implementeringsopgaver, der er angivet i [LCS-metoden](../../dev-itpro/lifecycle-services/create-methodology.md).
 

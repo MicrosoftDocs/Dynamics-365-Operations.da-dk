@@ -2,7 +2,7 @@
 title: Brødkrummemodul
 description: Dette emne omhandler brødkrummemoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109725"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780328"
 ---
 # <a name="breadcrumb-module"></a>Brødkrummemodul
 
@@ -64,11 +64,11 @@ Hvis du vil føje et brødkrummemodul til en PDP og angive de påkrævede egensk
 1. Gå til **Indstillinger for websted \> Udvidelser** og derefter til **Visningstype for brødkrumme på PDP**, vælg **Vis kategorihierarki**.
 1. Gå til **Skabeloner**, og vælg PDP-skabelonen.
 1. På pladsen **Container**, der indeholder købefeltmodulet, skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Brødkrumme** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Brødkrumme** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og åbn en PDP, der bruger PDP-skabelonen. Hvis der endnu ikke findes en PDP, skal du oprette en.
 1. På pladsen **Container**, der indeholder købefeltmodulet, skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Brødkrumme** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Brødkrumme** og derefter **OK**.
 1. I egenskabsruden for pladsen **Brødkrumme** skal du under **Rod** vælge **Linktekst**.
 1. I dialogboksen **Linktekst** skal du skrive **Start** og derefter under **Linkdestination** vælge **Tilføj et link**.
 1. I dialogboksen **Tilføj et link** skal du vælge et link for brødkrummeroden og derefter vælge **OK**.

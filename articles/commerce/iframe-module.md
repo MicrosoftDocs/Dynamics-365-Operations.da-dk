@@ -2,7 +2,7 @@
 title: iFrame-modul
 description: I dette emne dækkes iFrame-modulet, og det beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eeb9d76367be6b2d2153578f6358594b807382ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754008"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780228"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -56,12 +56,15 @@ Hvis du vil føje et iFrame-modul til en side, der viser en ekstern video, skal 
 1. I dialogboksen **Ny skabelon** skal du under **Skabelonnavn** angive **Marketingskabelon** og derefter klikke på **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
-1. I dialogboksen **Vælg en skabelon** skal du vælge skabelonen **Marketingskabelon**. Under **Sidenavn** skal du angive **Marketingside** og derefter vælge **OK**.
+1. Angiv **Marketingside** under **Sidenavn** i dialogboksen **Opret en ny side**, og vælg derefter **Næste**.
+1. Vælg den **Marketingskabelon**, du oprettede, under **Vælg en skabelon**, og vælg derefter **Næste**.
+1. Vælg et sidelayout (f.eks. **Fleksibelt layout**) under **Vælg et layout**, og vælg derefter **Næste**.
+1. Gennemse sidekonfigurationen under **Gennemse og afslut**. Hvis du vil redigere sideoplysningerne, skal du vælge **Tilbage**. Hvis sideoplysningerne er korrekte, skal du vælge **Opret side**. 
 1. På pladsen **Hoved** på den nye side skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Container** og derefter **OK**.
 1. Angiv **Bredde**-værdien til **Fuld container** i egenskabsruden for modulet.
 1. På pladsen **Container** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **iFrame** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **iFrame** og derefter **OK**.
 1. I ruden med egenskaber for modulet skal du indstille **Mål-URL-adresse** til en ekstern URL-adresse til en video.
 1. Angiv andre egenskaber, f.eks **Overskrift** og **Højde**, som du har brug for.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.

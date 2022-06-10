@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688114"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809607"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Ofte stillede spørgsmål om fletning af Dynamics 365 Human Resources-infrastruktur
 
@@ -131,6 +131,9 @@ Det afhænger af integrationens slutpunkt. Du kan finde flere oplysninger om de 
 Hvis Dynamics 365 Human Resources- og Finans- og driftsmiljøerne, der vil blive samlet i miljøet i den nye infrastruktur, er forbundet med samme Dataverse-miljø, vil de to apps fortsat være forbundet med samme Dataverse-miljø efter overflytningen. Der kræves ingen overflytning for Dataverse-udvidelser.
 
 Hvis Dynamics 365 Human Resources- og Finans- og driftsmiljøerne i øjeblikket er forbundet med separate Dataverse-miljøer, vil de to Dataverse-miljøer imidlertid skulle kombineres, så de er forbundet med ét enkelt miljø i den nye infrastruktur. For denne Dataverse-overflytning kan de Dataverse-tabeller, der er standard for Human Resources-løsningerne, oprette forbindelse til og gensynkroniseres med det nye Dataverse-miljø. Eventuelle udvidelser til Dataverse-miljøet overflyttes ikke automatisk, men skal geninstalleres i det nye miljø. Det anbefales at bruge administrerede løsninger til at administrere dine Dataverse-udvidelser. Du kan finde flere oplysninger i [Introduktion til løsninger](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Vi har anvendt den brugerdefinerede feltfunktionalitet i Dynamics 365 Human Resources. Vil disse brugerdefinerede felter blive overført automatisk?
+Ja, de brugerdefinerede felter, der er tilføjet, overflyttes til den nye infrastruktur.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Vi har konfigureret Microsoft Power Automate-flow og/eller Microsoft Power Apps til at fungere sammen med Dynamics 365 Human Resources. Vil disse Microsoft Power Platform-komponenter blive overflyttet og fungere automatisk, når ændringen af infrastrukturen er fuldført?
 

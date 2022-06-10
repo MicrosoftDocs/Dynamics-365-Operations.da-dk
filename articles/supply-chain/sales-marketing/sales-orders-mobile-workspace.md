@@ -2,7 +2,7 @@
 title: Arbejdsområde for salgsordrer på mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet for salgsordrer på mobilenheder. Dette arbejdsområde hjælper dig med at holde dig opdateret om salgsordrer hvor som helst og når som helst.
 author: Henrikan
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3a746ae5d7f0c6ca2fd8e69a23114cfcaa24b16b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: be9fd32f5f5d80bb9bce5f0de7e4ff92d6f5d28f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675003"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811561"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Arbejdsområde for salgsordrer på mobilenheder
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Salgsordrer** på mobilenheder. Dette arbejdsområde hjælper dig med at holde dig opdateret om salgsordrer hvor som helst og når som helst. 
 
-Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
+Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen Finans og drift (Dynamics 365).
 
 ## <a name="overview"></a>Overblik
 **Salgsordrer**-arbejdsområdet på mobilenheder viser detaljerede oplysninger om de enkelte salgsordrer. Disse oplysninger omfatter ordrestatus, kontaktoplysninger for debitoren og kontaktoplysninger for ordretageren. Arbejdsområdet **Salgsordrer** til mobilenheder giver en øjeblikkelig visning af salgsordrer. Du kan få vist alle salgsordrer, salgsordrer pr. kunde eller oplysninger om en bestemt salgsordre. 
@@ -117,7 +118,7 @@ Hvis Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller ny
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Download og installer Finance and Operations-mobilappen:
+Download og installer Finans- og drifts-mobilappen (Dynamics 365):
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

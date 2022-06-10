@@ -2,7 +2,7 @@
 title: Designe en konfiguration til at generere dokumenter i Excel-format
 description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645129"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811414"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -288,6 +288,16 @@ Du kan vælge **Opdater fra Excel** under fanen **Importer** i handlingsruden fo
 
 ![Indstillingen Opret Excel-arkformatelement i dialogboksen Opdater fra Excel.](./media/er-excel-format-update-template.png)
 
+I version 10.0.28 og senere kan du bruge indstillingen **Opdater formatelementer til Excel-sidehoved og Excel-sidefod**.
+
+- Når du angiver denne indstilling til **Nej**, forbliver formatelementerne i Excel-sidehovedet og Excel-sidefoden uændrede, selvom de tilsvarende sidehoveder eller sidefødder er blevet opdateret i regnearkene i den importerede skabelon i Excel-projektmappeformatet.
+- Når du angiver denne indstilling til **Ja**, ændres formatelementerne i Excel-sidehovedet og Excel-sidefoden, når de tilsvarende sidehoveder eller sidefødder er blevet opdateret i regnearkene i den importerede skabelon i Excel-projektmappeformatet.
+
+    - Hvis strukturen i et regnearks sidehoved eller sidefod ikke er ændret, eller hvis det kun er tilføjet, opdateres strukturen for det tilsvarende formatelement i Excel-sidehovedet eller Excel-sidefoden. Bindinger af formatelementer, der er indlejret under dette Excel-sidehoved- eller Excel-sidefodsformatelement, bevares.
+    - Hvis strukturen i et regnearks sidehoved eller sidefod er ændret, genoprettes det tilsvarende formatelement i Excel-sidehovedet eller Excel-sidefoden. Bindinger af formatelementer, der er indlejret under dette Excel-sidehoved- eller Excel-sidefodsformatelement, fjernes.
+
+![Indstillingen Opdater formatelementer til Excel-sidehoved og Excel-sidefod i dialogboksen Opdater fra Excel.](./media/er-excel-format-update-template2.png)
+
 Hvis du vil vide mere om denne funktion, skal du udføre trinnene i [Redigere elektronisk rapporteringsformat ved at genanvende Excel-skabeloner](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## <a name="validate-an-er-format"></a>Validere et ER-format
@@ -355,7 +365,7 @@ Når et udgående dokument i Microsoft Excel-projektmappeformat genereres, kan v
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Eksempel 2: Rettelse af EPPlus-problemet de sammenflettede celler
 
-Du kan køre et ER-format for at generere et udgående dokument i et Excel-projektmappeformat. Når funktionen **Aktivér brug af EPPlus-bibliotek i elektronisk rapporteringsstruktur** er aktiveret i arbejdsområdet **Funktionsstyring**, bruges [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til at oprette Excel-output. Men på grund af den kendte [Excel-funktionalitet](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og begrænsningen for EPPlus-biblioteket kan du komme ud for følgende undtagelse: "Kan ikke slette/overskrive flettede celler. Et interval flettes delvist sammen med et andet flettet område." Du kan finde ud af, hvilken type Excel-skabeloner der kan forårsage denne undtagelse, og hvordan du kan løse problemet, ved at fuldføre følgende eksempel.
+Du kan køre et ER-format for at generere et udgående dokument i et Excel-projektmappeformat. Når funktionen **Aktivér brug af EPPlus-bibliotek i elektronisk rapporteringsstruktur** er aktiveret i arbejdsområdet **Funktionsstyring**, bruges [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til at oprette Excel-output. Men på grund af den kendte [Excel-funktionalitet](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og begrænsningen for EPPlus-biblioteket kan du komme ud for følgende undtagelse: "Kan ikke slette/overskrive flettede celler. Et interval flettes delvist sammen med et andet flettet område." Du kan finde ud af, hvilken type Excel-skabeloner der kan forårsage denne undtagelse, og hvordan du kan løse problemet, ved at fuldføre følgende eksempel.
 
 1. I Excel-skrivebordsprogrammet skal du oprette en ny Excel-projektmappe.
 2. Tilføj navnet **ReportTitle** for celle **A2** i regnearket **Sheet1**.

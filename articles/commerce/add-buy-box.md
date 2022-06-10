@@ -2,7 +2,7 @@
 title: Købefeltmodul
 description: Dette emne omhandler købefeltmoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eba86cd0fe2790cabed1f091ddc59002d19ae228
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717789"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780428"
 ---
 # <a name="buy-box-module"></a>Boksmodul til køb
 
@@ -89,22 +89,25 @@ Hvis du vil føje et købefeltmodul til en ny side og angive de påkrævede egen
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
 1. Vælg modulet **Købefelt** i dialogboksen **Nyt fragment**.
 1. Under **Fragmentnavn** skal du angive navnet **Købefeltfragment** og derefter vælge **OK**.
-1. På pladsen **Media Gallery** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Media Gallery** og derefter **OK**.
+1. På pladsen **Mediegalleri** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Mediegalleri** og derefter **OK**.
 1. På pladsen **Butiksvælger** i købefeltmodulet skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Butiksvælger** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Butiksvælger** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv **PDP-skabelon** under **Skabelonnavn** i dialogboksen **Ny skabelon**, og vælg derefter **OK**.
 1. På pladsen **Brødtekst** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Standardside** og derefter **OK**.
 1. Vælg pladsen **Hoved** på standardsiden, vælg ellipsen (**...**) og derefter **Tilføj fragment**.
-1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
+1. I dialogboksen **Vælg et fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
-1. Vælg dialogboksen **Vælg en skabelon**, og vælg skabelonen **PDP-skabelon**. Under **Sidenavn** skal du angive **PDP-side** og derefter vælge **OK**.
+1. Angiv en **PDP-side** under **Sidenavn** i dialogboksen **Opret en ny side**, og vælg derefter **Næste**.
+1. Vælg **PDP-skabelon** under **Vælg en skabelon**, og vælg derefter **Næste**.
+1. Vælg et sidelayout (f.eks. **Fleksibelt layout**) under **Vælg et layout**, og vælg derefter **Næste**.
+1. Gennemse sidekonfigurationen under **Gennemse og afslut**. Hvis du vil redigere sideoplysningerne, skal du vælge **Tilbage**. Hvis sideoplysningerne er korrekte, skal du vælge **Opret side**.
 1. Vælg pladsen **Hoved** på den nye side, vælg ellipsen (**...**), og vælg derefter **Tilføj fragment**.
-1. I dialogboksen **Vælg fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
+1. I dialogboksen **Vælg et fragment** skal du vælge det **Købefeltfragment**, som du tidligere har valgt, og derefter vælge **OK**.
 1. Gem siden, og se en forhåndsvisning af den. Føj forespørgselsstrengparameteren **?productid=&lt;product id&gt;** til URL-adressen for eksempelsiden. På denne måde bruges produktkonteksten til at indlæse og gengive eksempelsiden.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den. Der vises et købefelt på siden med produktdetaljer.
 

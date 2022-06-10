@@ -2,7 +2,7 @@
 title: Betalingsmodul
 description: I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 author: anupamar-ms
-ms.date: 08/31/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715500"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780508"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
@@ -91,14 +91,14 @@ De fleste betalingsoplysninger, f. eks. leveringsadressen og leveringsmåden, ge
 Hvis du vil føje et betalingsmodul til en ny side og angive de påkrævede egenskaber, skal du følge disse trin.
 
 1. Gå til **Fragmenter**, og vælg **Nyt** for at oprette et nyt fragment.
-1. Vælg modulet **Betaling** i dialogboksen **Nyt fragment**.
+1. Vælg modulet **Betaling** i dialogboksen **Vælg fragment**.
 1. Under **Fragmentnavn** skal du angive navnet **Betalingsfragment** og derefter vælge **OK**.
 1. Vælg pladsen **Betalingsmodul**.
 1. Vælg blyantsymbolet i ruden Egenskaber til højre. Skriv overskriften i feltet, og vælg derefter markeringssymbolet.
 1. På pladsen **Betalingsoplysninger** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulerne **Leveringsadresse**, **Leveringsindstillinger**, **Container til betalingssektion** og **Kontaktoplysninger** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulerne **Leveringsadresse**, **Leveringsindstillinger**, **Container til betalingssektion** og **Kontaktoplysninger** og derefter vælge **OK**.
 1. I modulet **Container til betalingssektion** skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulerne **Gavekort**, **Fodelskunde** og **Betaling** og derefter **OK**. På denne måde sikrer du dig, at alle betalingsmåderne vises sammen i en sektion.
+1. I dialogboksen **Vælg moduler** skal du vælge modulerne **Gavekort**, **Fordelskunde** og **Betaling** og derefter **OK**. På denne måde sikrer du dig, at alle betalingsmåderne vises sammen i en sektion.
 1. I pladsen for **Vilkår og betingelser** skal du tilføje modulet **Vilkår og betingelser for betaling**, hvis det er nødvendigt. I ruden Egenskaber for modulet skal du konfigurere teksten for vilkårene og betingelserne efter behov.
 1. Vælg **Gem** og derefter **Vis** for at få vist fragmentet. Nogle moduler, som ikke har en indkøbsvognkontekst, gengives muligvis ikke i eksemplet.
 1. Vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.

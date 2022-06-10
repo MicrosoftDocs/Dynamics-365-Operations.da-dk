@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524459"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786859"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
 
@@ -41,17 +41,22 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bogfør | [Angive/tilsidesætte disponibelt antal](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bogfør | [Oprette én reservationshændelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bogfør | [Oprette flere reservationshændelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Bogfør | [Oprette én planlagt ændring af disponibelt antal](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Bogfør | [Oprette flere planlagte ændringer af disponibelt antal](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Bogfør | [Oprette én planlagt ændring af disponibelt antal](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Bogfør | [Oprette flere planlagte ændringer af disponibelt antal](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hent | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Bogfør | [Oprette én fordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Bogfør | [Oprette én ikke-fordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Bogfør | [Oprette én omfordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Bogfør | [Oprette én forbrugshændelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Bogfør | [Resultat af forespørgselsfordeling](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > {environmentId}-delen af stien er miljø-id'et i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Masse-API'en kan maksimalt returnere 512 poster for hver anmodning.
 
-Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Find slutpunktet i overensstemmelse med Lifecycle Services-miljøet
 
@@ -539,7 +544,7 @@ Følgende er et eksempel på brødtekst.
 }
 ```
 
-I følgende eksempler vises, hvordan du forespørger på alle produkter på en bestemt lokation og lokation.
+I følgende eksempel vises, hvordan du forespørger på alle produkter på en bestemt lokation og lokation.
 
 ```json
 {
@@ -580,6 +585,10 @@ Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er n
 
 ## <a name="available-to-promise"></a>Disponibel til tilsagn
 
-Du kan konfigurere lagersynlighed, så du kan planlægge fremtidige ændringer af disponibelt antal og beregne DTT-mængder. DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af DTT-beregningen kan øge ordreopfyldningsfunktionaliteten væsentligt. Du kan få oplysninger om, hvordan du aktiverer denne funktion, og hvordan du bruger lagersynlighed via API'en, når funktionen er aktiveret, i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md).
+Du kan konfigurere lagersynlighed, så du kan planlægge fremtidige ændringer af disponibelt antal og beregne DTT-mængder. DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af DTT-beregningen kan øge ordreopfyldningsfunktionaliteten væsentligt. Du kan få oplysninger om, hvordan du aktiverer denne funktion, og hvordan du bruger lagersynlighed via API'en, når funktionen er aktiveret, i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Tildeling
+
+Fordelingsrelaterede API'er findes i [Fordeling af lagersynlighed](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

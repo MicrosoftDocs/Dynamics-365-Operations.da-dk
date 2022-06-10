@@ -2,7 +2,7 @@
 title: Arbejdsområde for fakturagodkendelser på mobilenheder
 description: Dette emne indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder.
 author: abruer
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759974"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811352"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Arbejdsområde for fakturagodkendelser på mobilenheder
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet til **Fakturagodkendelse** på mobilenheder. Arbejdsområdet indeholder en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet. 
 
@@ -40,12 +41,12 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 <tr class="header">
 <th>Forudsætning</th>
 <th>Rolle</th>
-<th>Beskrivelse</th>
+<th>Beskrivende tekst</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 Finance skal være installeret i organisationen.</td>
+<td>Microsoft Dynamics 365 Finance skal udrulles i din organisation.</td>
 <td>Systemadministrator</td>
 <td>Se <a href="../deployment/deploy-demo-environment.md">Installere et demomiljø</a>.
 </td>
@@ -60,7 +61,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Sådan downloades og installeres Finance and Operations-mobilappen:
+Download og installer Finance and Operations-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -2,7 +2,7 @@
 title: Feltlistemodul
 description: Dette emne omhandler feltlistemoduler for social deling og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 513775afe325008ebd6cd18d2d9485a972984090da3803d255a1584b16b1e014
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dd714f29fe2f9acd459be7bda1c0bfac65b72cb0
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767845"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780787"
 ---
 # <a name="tile-list-module"></a>Feltlistemodul
 
@@ -67,14 +67,14 @@ Hvis du vil føje et feltlistemodul til en ny side og angive de påkrævede egen
 
 1. Gå til **Skabeloner**, og åbn marketingskabelonen for webstedets startside (eller opret en ny marketingskabelon).
 1. På pladsen **Hoved** på standardsiden skal du vælge ellipsen (**...**) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Feltliste** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Feltliste** og derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke skabelonen ind, og vælg derefter **Publicer** for at publicere den.
 1. Gå til **Sider**, og åbn webstedets startside (eller opret en ny startside ved hjælp af marketingskabelonen).
 1. Vælg pladsen **Hoved** på standardsiden, vælg ellipseknappen (**...**), og vælg derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Feltliste** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Feltliste** og derefter **OK**.
 1. Tilføj en overskrift i egenskabsruden for feltlistemodulet.
 1. Vælg ellipseknappen (**...**) i pladsen **Feltliste**, og vælg derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Feltmodul** og derefter vælge **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Feltmodul** og derefter **OK**.
 1. Tilføj et billede, en overskrift og et billede af et ikonsymbol i egenskabsruden for feltmodulet.
 1. Tilføj og konfigurer yderligere feltmoduler efter behov.
 1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.

@@ -2,24 +2,19 @@
 title: Overvejelser om optimering af søgeprogram (SEO) for webstedet
 description: I dette emne beskrives SEO-overvejelserne (søgemaskineoptimering) for dit websted fra udvikling til produktion.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716851"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806399"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Overvejelser om optimering af søgeprogram (SEO) for webstedet
 
@@ -30,11 +25,15 @@ I dette emne beskrives SEO-overvejelserne (søgemaskineoptimering) for dit webst
 
 ## <a name="a-site-that-is-under-development"></a>Et websted, der er under udvikling
 
-Mens et websted er under udvikling, skal alle websider have metakoderne **NOINDEX** og **NOFOLLOW**, så søgemaskinerne ikke indekserer siderne og gemmer udviklingsversionerne af webstedet i cachen. For at kunne foretage denne konfiguration skal du føje standardmetakodemodulet til webstedets sideskabelon. Standardegenskaberne for metakoder vil derefter være tilgængelige i området for SEO-egenskaber i sideeditoren. Du kan bruge disse egenskaber til at administrere metakoderne.
+For at sikre, at søgeprogrammet ikke indekserer et websted under udvikling, skal alle webstedssider have **noindex** og **nofollow** som metakoder. Det er en god ide at oprette et fragmentmodul baseret på [MetaTags-modulet](metatags-module.md), der indeholder følgende metakodepost, og sikre, at fragmentet føjes til HTML-afsnittet \<head\> for alle de skabeloner, der bruges på dit websted.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>Blød start af et websted
 
-Under en "blød start" stilles et websted til rådighed for et begrænset publikum eller marked, før hele lanceringen finder sted. Hvis du udfører en blød start af dit websted, skal du overveje at lade metakoderne for **NOINDEX** være på plads. På denne måde er du med til at sikre, at blød lancering forbliver begrænset til den mindre målgruppe, du ønsker at nå.
+Under en "blød start" stilles et websted til rådighed for et begrænset publikum eller marked, før hele lanceringen finder sted. Hvis du udfører en blød start af dit websted, skal du overveje at lade metakoderne for **noindex** være på plads. På denne måde er du med til at sikre, at blød lancering forbliver begrænset til den mindre målgruppe, du ønsker at nå.
 
 ## <a name="a-site-that-is-in-production"></a>Et websted, der er i produktion
 
@@ -44,7 +43,7 @@ For at optimere indekseringen af søgemaskiner bruger gengivelsesstrukturen begg
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Indstillinger for side-SEO til interne prøveversioner, begrænset målgruppe og alle målgrupper
 
-Da Dynamics 365 Commerce understøtter "what you see is what you get" (WYSIWYG) i godkendte eksempelvisninger i den visuelle sidegenerator, kan forfattere forberede deres sideindhold uden at være bange for, at oplysningerne bliver synlige for besøgende på webstedet. Hvis en side skal udgives, men eksponeringen skal være begrænset, skal den have metakoden **NOINDEX**, så den ikke vil blive indekseret af søgemaskiner. Når siden er klar til alle målgrupper, skal alle grundlæggende SEO-metadata være til stede for at maksimere effektiviteten af søgeprogrammers indeksering. Derudover bør metakoden **NOLIMIT** være fjernet.
+Da Dynamics 365 Commerce understøtter "what you see is what you get" (WYSIWYG) i godkendte eksempelvisninger i den visuelle sidegenerator, kan forfattere forberede deres sideindhold uden at være bange for, at oplysningerne bliver synlige for besøgende på webstedet. Hvis en side skal udgives, men eksponeringen skal være begrænset, skal den have metakoden **noindex**, så den ikke vil blive indekseret af søgemaskiner. Når siden er klar til alle målgrupper, skal alle grundlæggende SEO-metadata være til stede for at maksimere effektiviteten af søgeprogrammers indeksering. Derudover bør metakoden **nolimit** være fjernet.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

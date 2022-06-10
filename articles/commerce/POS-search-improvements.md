@@ -2,7 +2,7 @@
 title: Produkt- og kundesøgning i POS
 description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700083"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806421"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
@@ -106,6 +106,8 @@ For at angive søgekriterier som genveje skal administratoren åbne siden **Comm
 > Hvis du tilføjer for mange genveje, vil rullemenuen på søgelinjen på POS blive overfyldt, og medarbejderens søgeoplevelse kan blive påvirket. Det anbefales, at du kun tilføje så mange genveje, som du har brug for.
 
 Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises i POS. Det kriterie, der vises, er de standardegenskaber, som kundesøgningsalgoritmen bruger til at søge efter kunder. Partnere kan dog tilføje brugerdefinerede egenskaber som søgningsgenveje. For at tilføje brugerdefinerede egenskaber som søgningsgenveje skal systemadministratoren udvide den udvidelige fasttekst, der bruges som kundesøgningskriterie, og derefter markere partnerens brugerdefinerede egenskaber som genveje. Partnere har ansvaret for at skrive kode til at søge efter resultater, når deres brugerdefinerede genveje bruges til søgning.
+
+Oversættelser til genveje er obligatoriske, hvis du vil gengive genveje på POS. Hvis dit kanalsprog ikke er systemets standardsprog, skal du definere oversættelsen for hver genvej på det forventede sprog. Du kan definere oversættelser ved at vælge **Oversæt** for hver genvej. 
 
 > [!NOTE]
 > En brugerdefineret egenskab, der er føjet til fastteksten, påvirker ikke standardalgoritmen til kundesøgning. Med andre ord søger kundesøgningsalgoritmen ikke i den brugerdefinerede egenskab. Brugere kan kun bruge en brugerdefineret egenskab til søgninger, hvis den brugerdefinerede egenskab tilføjes som en genvej, eller hvis standardalgoritmen til søgning tilsidesættes.

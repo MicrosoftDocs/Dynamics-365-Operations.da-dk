@@ -2,7 +2,7 @@
 title: Konfigurer en detailkanal
 description: Dette emne beskriver, hvordan du opretter en ny detailkanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/23/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6a8db8bb4b42c7ad6c0c0e0c257bc03e356de7d525f524c22eab46e38c018d49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745400"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770215"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurere en detailkanal
 
@@ -90,6 +90,13 @@ Hvis du vil oprette betalingsmetoder, skal du udføre disse trin for hver af de 
 Følgende billede viser et eksempel på en metode til kontantbetaling.
 
 ![Eksempel på betalingsmetoder.](media/channel-setup-retail-5.png)
+
+Følgende billede viser et eksempel på en betalingsmåde for kontanter og konfigurationen af fanen **Beløb**.
+
+![Eksempel på opsætning af betalingsmetode for beløb.](media/payment-methods-recount.png)
+
+> [!NOTE]
+> Værdierne for fanen **Beløb** cachelagres i Retail Server og træder ikke i kraft med det samme, når du kører job i distributionsplanen. Du skal muligvis genstarte Cloud Scale Unit for at anvende disse værdier til test med det samme.
 
 ### <a name="set-up-cash-declaration"></a>Opsætning af kontantopgørelse
 

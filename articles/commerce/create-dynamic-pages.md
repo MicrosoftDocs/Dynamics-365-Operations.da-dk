@@ -2,35 +2,32 @@
 title: Oprette dynamiske e-handelssider baseret på URL-parametre
 description: Dette emne beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694334"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811025"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Oprette dynamiske e-handelssider baseret på URL-parametre
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emne beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
 
-En e-handelsside kan konfigureres til at have forskelligt indhold baseret på et segment i URL-stien. Derfor kaldes siden for en dynamisk side. Segmentet bruges som parameter til at hente sideindholdet. Der oprettes f.eks. en side med navnet **blog\_-fremviser**, som er tilknyttet URL-adressen `https://fabrikam.com/blog`. Denne side kan derefter bruges til at vise forskelligt indhold baseret på det sidste segment i URL-stien. Det sidste segment i URL-adressen er f.eks. `https://fabrikam.com/blog/article-1` **artikel-1**.
+En e-handelsside kan konfigureres til at have forskelligt indhold baseret på et segment i URL-stien. Derfor kaldes siden for en dynamisk side. Segmentet bruges som parameter til at hente sideindholdet. Hvis der f.eks. oprettes en side i webstedsgeneratoren med navnet **blog\_fremviser**, bliver den tilknyttet URL-adressen `https://fabrikam.com/blog`. Denne side kan derefter bruges til at vise forskelligt indhold baseret på det sidste segment i URL-stien. Det sidste segment i URL-adressen er f.eks. `https://fabrikam.com/blog/article-1` **artikel-1**.
 
-Separate brugerdefinerede sider, der tilsidesætter den dynamiske side, kan også tilknyttes segmenter i URL-stien. Der oprettes f.eks. en side med navnet **blog\_-oversigt**, som er tilknyttet URL-adressen `https://fabrikam.com/blog/about-this-blog`. Når der anmodes om denne URL-adresse, returneres den **blog\_oversigt**-side, der er knyttet til parameteren **/about-this-blog**, i stedet for **blog\_-fremviseren**.
+Du kan også tilsidesætte et parameteriseret URL-segment med en side i webstedsgeneratoren. Hvis der f.eks. oprettes en side i webstedsgeneratoren med navnet **blog\_oversigt**, kan den tilknyttes URL-adressen `https://fabrikam.com/blog/about-this-blog`. Når der anmodes om URL-adressen `https://fabrikam.com/blog` med segmentet `/about-this-blog` i slutningen, returneres sideindholdet af **blog\_oversigt** i stedet for det `/about-this-blog`-segment, der fortolkes som en parameter, der skal bruges af siden `https://fabrikam.com/blog`. 
+
+Når du vælger navne for de parametre, der skal overføres til den dynamiske side, kan navnet på den dynamiske side, som det vises i URL-adressen (`/blog` i eksemplet ovenfor) ikke bruges som et parameternavn eller en understreng af et parameternavn. 
 
 > [!NOTE]
 > Funktionerne til modtagelse, hentning og visning af dynamisk sideindhold implementeres ved hjælp af et brugerdefineret modul. Du kan finde flere oplysninger i [Udvidelsesmuligheder for onlinekanal](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Hvis du vil konfigurere ruten til den dynamiske side i Commerce Site Builder, sk
 1. Under **Parameteriserede URL-stier** skal du vælge **Tilføj** og derefter angive den URL-sti, du angav, da du oprettede URL-adressen (i dette eksempel, **/blog**).
 1. Vælg **Gem og udgiv**.
 
-Når ruten er konfigureret, returnerer alle anmodninger til den parameteriserede URL-sti den side, der er knyttet til URL-adressen. Hvis en anmodning indeholder et yderligere segment, returneres den tilknyttede side, og sideindholdet hentes ved hjælp af segmentet som parameter. F.eks. vil `https://fabrikam.com/blog/article-1` returnere **blog\_oversigt**-siden, og sideindholdet vil blive hentet ved hjælp af parameteren **/article-1**.
+Når ruten er konfigureret, returnerer alle anmodninger til den parameteriserede URL-sti den side, der er knyttet til URL-adressen. Hvis en anmodning indeholder et yderligere segment, returneres den tilknyttede side, og sideindholdet hentes ved hjælp af segmentet som parameter. F.eks. vil `https://fabrikam.com/blog/article-1` returnere siden `https://fabrikam.com/blog`, der viser indholdet, som er hentet ved hjælp af parameteren **/article-1**.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Tilsidesætte en parameteriseret URL-adresse med en brugerdefineret side
 

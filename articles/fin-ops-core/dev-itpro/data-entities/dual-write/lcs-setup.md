@@ -2,19 +2,19 @@
 title: Konfiguration af dobbeltskrivning fra Lifecycle Services
 description: Dette emne beskriver, hvordan du konfigurerer en forbindelse med dobbeltskrivning fra Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063666"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783195"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
@@ -26,12 +26,12 @@ Dette emne beskriver, hvordan du aktiverer dobbeltskrivning fra Microsoft Dynami
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Du skal fuldføre Power Platform-integrationen som beskrevet i følgende emner:
+Kunder skal fuldføre Power Platform-integrationen som beskrevet i følgende emner:
 
-+ [Power Platform-integration – Aktiveres under installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-integration – Aktivere efter installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Hvis du endnu ikke bruger Microsoft Power Platform og vil udvide Finans og drift-miljøer ved at tilføje platformegenskaber, skal du se [Power Platform-integration – Aktivér under installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Hvis du allerede har Dataverse- og Power Platform-miljøer, og du vil oprette forbindelse mellem dem i finans- og driftsmiljøer, skal du se [Power Platform-integration – Aktivere efter installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Konfigurere dobbeltskrivning for nye Dataverse-miljøer
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Konfigurere dobbeltskrivning for nye eller eksisterende Dataverse-miljøer
 
 Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplysninger**:
 
@@ -55,28 +55,19 @@ Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplys
 
 8. Når sammenkædningen er fuldført, vises der et link. Brug linket til at logge på administrationsområdet med dobbeltskrivning i Finans- og driftsmiljøet. Herfra kan du oprette objekttilknytninger.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Konfigurere dobbeltskrivning for et eksisterende Dataverse-miljø
-
-Hvis du vil konfigurere dobbeltskrivning for et eksisterende Dataverse-miljø, skal du oprette en Microsoft-[supportanmodning](../../lifecycle-services/lcs-support.md). Anmodningen skal indeholde:
-
-+ Dit Finans- og driftsmiljø-id.
-+ Dit miljønavn fra Lifecycle Services.
-+ Dataverse-organisations-id'et eller Power Platform-miljø-id'et fra Power Platform Administration. I din anmodning skal du anmode om, at id'et skal være den forekomst, der bruges til Power Platform-integration.
-
-> [!NOTE]
-> Du kan ikke fjerne sammenkædningen mellem miljøer ved hjælp af LCS. Hvis du vil fjerne forbindelsen til et miljø, skal du åbne arbejdsområdet **Dataintegration** i Finans- og driftsmiljøet og derefter vælge **Fjern sammenkædning**.
-
 ## <a name="linking-mismatch"></a>Uoverensstemmende sammenkædning
 
-Det er muligt, at LCS-miljøet er kædet sammen med én Dataverse-forekomst, mens dit dobbeltskrivningsmiljø er knyttet til en anden Dataverse-forekomst. Denne uoverensstemmende sammenkædning kan medføre uventede funktionsmåder, og det kan ende med, at der sendes data til det forkerte miljø. Det anbefalede miljø, der skal bruges til dobbeltskrivning, er det, der oprettes som en del af Power Platform-integrationen, som på sigt vil være den eneste forbindelse mellem miljøer.
+Det er muligt, at dit dobbeltskrivningsmiljø er kædet sammen med en forekomst af Dataverse, mens LCS ikke er konfigureret til Power Platform-integration. En sådan uoverensstemmelse kan forårsage uventet funktionalitet. Det anbefales, at LCS-miljødetaljerne stemmer overens med det, du er tilsluttet i dobbeltskrivning, så den samme forbindelse kan bruges af forretningshændelser, virtuelle tabeller og tilføjelsesprogrammer.
 
-Hvis dit miljø her uoverensstemmende sammenkædning, viser LCS en advarsel på siden med dine miljøoplysninger i stil med "Microsoft har registreret, at dit miljø er kædet sammen via dobbeltskrivning til en anden destination end den, der er angivet i Power Platform Integration, hvilket ikke anbefales":
+Hvis dit miljø har en uoverensstemmende sammenkædning, viser LCS en advarsel på siden med dine miljøoplysninger i stil med: "Microsoft har registreret, at dit miljø er kædet sammen via dobbeltskrivning til en anden destination end den, der er angivet i Power Platform-integration, hvilket ikke anbefales."
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-uoverensstemmelse mellem integrationslink.":::
 
-Hvis denne fejl opstår, er der to muligheder alt efter dine behov:
+Hvis du modtager denne advarsel, kan du prøve en af følgende løsninger:
 
-+ [Fjern og genopret linket til dobbeltskrivningsmiljøer (Nulstil eller rediger sammenkædning)](relink-environments.md#scenario-reset-or-change-linking), som det er angivet på siden med dine LCS-miljødetaljer. Dette er den ideelle løsning, da du kan køre den uden Microsoft support.  
-+ Hvis du vil beholde dit link i dobbeltskrivning, kan du bede Microsoft Support om hjælp til at ændre Power Platform-integrationen, så den bruger dit eksisterende Dataverse-miljø som dokumenteret i forrige afsnit.  
+- Hvis LCS-miljøet aldrig er konfigureret til Power Platform-integration, kan du oprette forbindelse til den forekomst af Dataverse, der er konfigureret i dobbeltskrivning, ved at følge instruktionerne i denne artikel.
+- Hvis LCS-miljøet allerede er konfigureret til Power Platform-integration, skal du fjerne tilknytningen til dobbeltskrivning og genoprette den til den, der er angivet af LCS , ved hjælp af [scenariet: Nulstil eller rediger sammenkædning](relink-environments.md#scenario-reset-or-change-linking).
+
+Tidligere var en manuel supportanmodning tilgængelig, men det var før mulighed 1 ovenfor eksisterede.  Microsoft understøtter ikke længere manuelle sammenkædningsanmodninger via supportanmodninger.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

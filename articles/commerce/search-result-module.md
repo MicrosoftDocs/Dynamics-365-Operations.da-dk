@@ -2,7 +2,7 @@
 title: Modul til søgeresultater
 description: Dette emne omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644920"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780912"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
@@ -65,23 +65,26 @@ Modulet søgeresultater understøtter [modulet Hurtig visning](quick-view-module
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Føje et modul med søgeresultater til en kategoriside
 
-Hvis du vil tilføje et søgeresultater-modul til en kategoriside, skal du følge disse trin.
+Hvis du vil tilføje et modul til søgeresultater på en kategoriside i webstedsgeneratoren, skal du benytte følgende fremgangsmåde.
 
 1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. Angiv **Nu skabelon** i dialogboksen, angiv navnet **Søgeresultater**, og vælg derefter **OK**.
 1. På pladsen **Brødtekst** skal du vælge ellipsen (...) og derefter **Tilføj modul**.
-1. dI dialogboksen **Tilføj modul** skal du vælge modulet **Standardside** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Standardside** og derefter **OK**.
 1. På pladsen **Hoved** i modulet **Standardside** skal du vælge ellipsen (...) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Container** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Container** og derefter **OK**.
 1. På pladsen **Container** skal du vælge ellipsen (...) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Brødkrumme** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Brødkrumme** og derefter **OK**.
 1. Angiv værdien **1** for **Min. indtræffer** i ruden **Brødkrumme**-egenskaber.
 1. På pladsen **Container** skal du vælge ellipsen (...) og derefter **Tilføj modul**.
-1. I dialogboksen **Tilføj modul** skal du vælge modulet **Søgeresultater** og derefter **OK**.
+1. I dialogboksen **Vælg moduler** skal du vælge modulet **Søgeresultater** og derefter **OK**.
 1. I ruden **Søgeresultater**-egenskaber skal du angive værdien **1** for **Min. indtræffer**, og derefter angive eventuelle andre nødvendige egenskaber for søgeresultaterne. Når du angiver disse egenskaber i skabelonen, sikrer du, at eventuelle tilpasninger af en bestemt kategoriside automatisk medtager disse indstillinger.
 1. Vælg **Afslut redigering**, og vælg derefter **Publicer** for at publicere skabelonen.
 1. Gå til **Sider**, og vælg **Ny** for at oprette en ny side.
-1. I dialogboksen **Vælg en skabelon** skal du vælge den **Søgeresultater**-skabelon, du har oprettet, angive **Kategoriside** for **Sidenavn** og vælge **OK**. Da alle værdier er angivet i skabelonen, er siden klar til at blive publiceret.
+1. Angiv **Kategoriside** under **Sidenavn** i dialogboksen **Opret en ny side**, og vælg derefter **Næste**.
+1. Vælg **Søgeresultater**-skabelonen, du oprettede, under **Vælg en skabelon**, og vælg derefter **Næste**.
+1. Vælg et sidelayout (f.eks. **Fleksibelt layout**) under **Vælg et layout**, og vælg derefter **Næste**.
+1. Gennemse sidekonfigurationen under **Gennemse og afslut**. Hvis du vil redigere sideoplysningerne, skal du vælge **Tilbage**. Hvis sideoplysningerne er korrekte, skal du vælge **Opret side**.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivere lagervågenhed for modulet til søgeresultater
@@ -102,7 +105,7 @@ Ved lagerbaseret produktsøgning bruges produktattributter til at få oplysninge
 
 Hvis du vil oprette dedikerede produktattributter, der understøtter modulet med lagerbaserede søgeresultater, skal du følge disse trin.
 
-1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Produkter og lager**.
+1. Gå i hovedkontoret til **Retail og Commerce \> Detail- og handels-it \> Produkter og lager**.
 1. Vælg og åbn **Udfyld produktattributter med lagerniveau**.
 1. I dialogboksen skal du angive følgende oplysninger:
 
@@ -116,11 +119,11 @@ Hvis du vil oprette dedikerede produktattributter, der understøtter modulet med
 
 Benyt følgende fremgangsmåde for at konfigurere produktattributterne for en onlinekanal. 
 
-1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**.
-2. Du kan finde flere oplysninger i Aktivere lagervågenhed for modulet til søgeresultater.
-3. Vælg og åbn en tilknyttet attributgruppe, føj den netop oprettede produktattribut til den, og luk derefter siden.
-4. I Commerce-versioner før 10.0.27-versionen skal du vælge **Angiv attributmetadata**, vælg den netop tilføjede produktattribut, og slå derefter indstillingerne **Vis attribut på kanal**, **Kan hentes**, **Kan redigeres** og **Kan forespørges** til.
-5. Gå derefter til **Detail og handel \> Detail og handels-it \> Dostributionsplan**, og kør job **1150 (Katalog)**. Hvis du planlægger jobbet **Udfyld produktattributter med lagerniveau** som en batchproces, anbefales det, at du også planlægger jobbet 1150 som en batchproces, der kører samtidigt.
+1. Gå i hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**.
+1. Du kan finde flere oplysninger i Aktivere lagervågenhed for modulet til søgeresultater.
+1. Vælg og åbn en tilknyttet attributgruppe, føj den netop oprettede produktattribut til den, og luk derefter siden.
+1. I Commerce-versioner før 10.0.27-versionen skal du vælge **Angiv attributmetadata**, vælg den netop tilføjede produktattribut, og slå derefter indstillingerne **Vis attribut på kanal**, **Kan hentes**, **Kan redigeres** og **Kan forespørges** til.
+1. Gå derefter til **Detail og handel \> Detail og handels-it \> Dostributionsplan**, og kør job **1150 (Katalog)**. Hvis du planlægger jobbet **Udfyld produktattributter med lagerniveau** som en batchproces, anbefales det, at du også planlægger jobbet 1150 som en batchproces, der kører samtidigt.
 
 > [!NOTE]
 > For produkter, der vises i modulet med søgeresultater, angives lagerniveauet på masterproduktniveau i stedet for på niveauet for de individuelle varianter. Det har kun to mulige værdier: "tilgængelig" og "ikke på lager". Den faktiske tekst til værdierne hentes fra definitionen på [lagerniveauprofilen](inventory-buffers-levels.md). Et masterprodukt anses kun for ikke at være på lager, når alle varianterne ikke er på lager.

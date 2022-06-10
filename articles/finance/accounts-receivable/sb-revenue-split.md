@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660450"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770148"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Skabelonen til indtægtsopdeling i abonnementsfakturering
 
@@ -99,3 +99,54 @@ Hvis du vil oprette en faktureringsplan, der indeholder en vare, der er konfigur
 > - De underordnede varer angives automatisk på salgsordren eller faktureringsplanlinjen.
 >
 > Hvis indstillingen **Opret automatisk opdeling af omsætning** er angivet til **Nej**, er funktionaliteten som forklaret tidligere.
+
+## <a name="additional-revenue-split-information"></a>Yderligere oplysninger om indtægtsopdeling
+
+Når du tilføjer en vare, der er en del af en indtægtsopdeling, skal du notere følgende oplysninger: 
+
+- Det overordnede beløb kan ikke udskydes.
+- Værdierne for startdato, slutdato, antal, enhed, lokation og lagersted for underordnede varer er baseret på den overordnede vare. Disse værdier kan ikke ændres for de underordnede varer. Alle ændringer skal foretages af den overordnede vare. 
+- Prissætningsmetoden er **Flad** og kan ikke ændres.
+- Underordnede varer kan tilføjes eller fjernes.
+- Overordnede og underordnede varer skal bruge samme varegruppe. 
+- Underordnede varer kan have en af følgende opsætninger:
+
+    - Felterne **Faktureringsfrekvens** og **Faktureringsintervaller** er angivet til samme værdi som den overordnede vare. 
+    - Feltet **Faktureringsfrekvens** er angivet til **Én gang**. I dette tilfælde angives feltet **Faktureringsintervaller** automatisk til **1**. 
+
+- Summen af nettobeløbene for de underordnede varer er lig med det overordnede beløb. Hvis fordelingsmetoden er **Nulbeløb**, er både summen af de underordnede varebeløb og det overordnede beløb 0 (nul). 
+
+    > [!NOTE]
+    > Hvis fordelingsmetoden er **Nul overordnet beløb** svarer summen (ikke-nul) af de underordnede varer ikke til det overordnede beløb, hvilket er 0 (nul). Denne fordelingsmetode bruges til interne formål, så medarbejderne kan se de underordnede varer. Men kunder kan kun se den overordnede vare.
+
+- Hvis MEA-typen (aftale med flere varer) for salgsordren er **Enkelt**, oprettes den tilsvarende transaktionslinje for indtægtsfordeling af flere varer, når de overordnede og underordnede varer tilføjes. 
+- Hvis fordelingsmetoden for en indtægtsfordeling er **Lige beløb**, og det overordnede beløb ændres, genberegnes beløbene for alle underordnede linjer. 
+- I forbindelse med en indtægtsopdeling, hvor fordelingsmetoden er **Variabelt beløb**, forekommer følgende funktionsmåde:
+
+    - Nettobeløbet af den overordnede vare vises i kolonnen **Overordnet beløb**. Denne værdi kan redigeres. Men enhedsprisen, nettobeløbet og rabatten er 0 (nul) og kan ikke redigeres.
+    - Enhedsprisen for underordnede varer er 0 (nul). Du kan redigere enhedsprisen eller nettobeløbet. Når du redigerer én værdi, opdateres den anden værdi automatisk.
+
+- I forbindelse med en indtægtsopdeling, hvor fordelingsmetoden er **Procent**, forekommer følgende funktionsmåde:
+
+    - Nettobeløbet af den overordnede vare vises i kolonnen **Overordnet beløb**. Denne værdi kan redigeres. Men enhedsprisen, nettobeløbet og rabatten er 0 (nul) og kan ikke redigeres. 
+    - Nettobeløbet for underordnede varer beregnes som *Procentbeløb* &times; *Procentbeløb*.
+
+- I forbindelse med en indtægtsopdeling, hvor fordelingsmetoden er **Lige beløb**, forekommer følgende funktionsmåde:
+
+    - Nettobeløbet af den overordnede vare vises i kolonnen **Overordnet beløb**. Denne værdi kan redigeres. Men enhedsprisen, nettobeløbet og rabatten er 0 (nul) og kan ikke redigeres. 
+    - Nettobeløbet for underordnede varer beregnes ved at dividere det overordnede beløb ligeligt mellem alle underordnede varer. 
+    - Hvis underordnede varer fjernes eller tilføjes, genberegnes nettobeløbet og enhedspriserne, så alle underordnede linjer har lige beløb. 
+    - Hvis det overordnede beløb ikke kan deles ligeligt, kan nettobeløbet og enhedsprisen for den sidste underordnede vare være en smule større eller mindre end nettobeløbet og enhedsprisen for de andre underordnede varer. 
+
+- I forbindelse med en indtægtsopdeling, hvor fordelingsmetoden er **Nulbeløb**, forekommer følgende funktionsmåde:
+
+    - Enhedsprisen, nettobeløbet og rabatten kan redigeres. Det overordnede beløb er 0 (nul) og kan ikke redigeres. 
+    - Værdierne for antal, enhed, lokation og lagersted for underordnede varer er baseret på den overordnede vare. Disse værdier kan ikke ændres for de underordnede varer. Alle ændringer skal foretages af den overordnede vare. 
+    - Enhedsprisen og nettoprisen for underordnede varer er 0 (nul) og kan ikke redigeres. 
+
+- I forbindelse med en indtægtsopdeling, hvor fordelingsmetoden er **Nul overordnet beløb**, forekommer følgende funktionsmåde:
+
+    - Enhedsprisen, det overordnede beløb og og nettobeløbet for den overordnede vare er 0 (nul).
+    - I en faktureringsplan vises de underordnede linjer, som om de er tilføjet manuelt, og alle værdier opdateres baseret på den valgte faktureringsplangruppe. Disse værdier kan redigeres. For underordnede varer kan du få adgang til indstillingerne **Eskalering og rabat** og **Avanceret prissætning** ved at bruge felterne **Antal angivet**, **Enhedspris**, **Rabat** og **Nettobeløb** i **Vis faktureringsoplysninger**. 
+    - I en salgsordre har de underordnede linjer en rabat og rabatprocent på 0 (nul). 
+    - Faktureringshyppigheden for de overordnede og underordnede varer kan ændres, og hver enkelt linje kan have en særskilt frekvens. Den overordnede vare opdateres dog automatisk, så den bruger den korteste frekvens blandt de underordnede linjer. En indtægtsopdeling har f.eks. to underordnede varer, hvoraf den ene bruger faktureringsfrekvensen **Månedlig**, og den anden bruger faktureringsfrekvensen **Årlig**. I dette tilfælde opdateres faktureringsfrekvensen for den overordnede vare til **Månedlig**.

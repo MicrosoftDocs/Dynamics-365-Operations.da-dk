@@ -2,7 +2,7 @@
 title: Tilgængelige arbejdsområder til mobile enheder
 description: Dette emne viser det arbejdsområde til mobilenheder, der er tilgængeligt til brug.
 author: sericks007
-ms.date: 10/01/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,33 +12,34 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ff9dee31130c3078aa35b7518f368fb5c782139858ac0bac5b7c498e357dc9f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4398bd8cf944ef11a0463d937aeaa3b5cc109142
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745142"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8810998"
 ---
 # <a name="available-mobile-workspaces"></a>Tilgængelige arbejdsområder til mobile enheder
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emne indeholder de arbejdsområder til mobilenheder, der er tilgængelige for brug i Dynamics 365 for Unified Operations-mobilappen.
+Dette emne indeholder de arbejdsområder til mobilenheder, der er tilgængelige for brug i Finans- og drifts-mobilappen (Dynamics 365). I nedenstående tabel angives udfasningsplanen for hvert af disse mobile arbejdsområder, hvad angår om der er planlagt en erstatningsoplevelse.  
 
 
-| Arbejdsområde til mobile enheder     | Beskrivelse   | Tilgængelighed   |
+| Arbejdsområde til mobile enheder     | Beskrivende tekst   | Udfasningsplan   |
 |----------------------|---------------|--------------|
-|[Firmaadressekartotek](company-directory-mobile-workspace.md)| Gør det muligt for dig at se og kontakte andre medarbejdere i din organisation.| 2017. juni |    
-|[Mit team](manager-self-service-mobile-workspace.md)| Du kan se dine direkte underordnede og udvidede personale og sende ros til personer i din rapporteringskæde.|2017. juni |     
-|[Godkendelse af faktura](invoice-approval-mobile-workspace.md)| Viser en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet.| 2017. juni   |
-| [Udgiftsstyring](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | Gør det muligt for dig at hente og sende en kvittering, så du senere kan knytte den til en udgiftsrapport. I arbejdsområdet til mobilenheder kan du også hurtigt oprette en udgiftslinje ved hjælp af en tilknyttet kvittering. | 2017. april |
-| [Godkendelse af indkøbsordre](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Se og reager på indkøbsordrer med handlinger som f.eks. godkende eller afvise. | 2017. april |
-| [Tidsregistrering for projekt](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | Du kan angive og gemme tider for et projekt ved hjælp af din mobilenhed. | 2017. marts |
-| [Omkostningsstyring](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Ledere af bærere kan se bærerydeevnen.                                                                                               |  2017. januar        |
-| [Disponibelt lager](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få indblik i reserveret og disponibelt lager.                                                                                                    |   2017. januar       |
-| [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde dig opdateret om salgsordrer.                                                                                                                          |  2017. januar                  |
-| [Kreditorsamarbejde](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Kreditorer kan holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner. |2017. januar    |
-| [Aktivadministration](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | I dette arbejdsområde kan brugerne se og oprette vedligeholdelsesanmodninger og arbejdsordrer. Brugere kan også få vist de tildelte job i arbejdsordrejob i en kalender- eller listevisning. Aktiver og arbejdssteder kan også ses og søges efter. |2019. oktober    |
+|[Firmaadressekartotek](company-directory-mobile-workspace.md)| Gør det muligt for dig at se og kontakte andre medarbejdere i din organisation.| Lad udgå |    
+|[Mit team](manager-self-service-mobile-workspace.md)| Du kan se dine direkte underordnede og udvidede personale og sende ros til personer i din rapporteringskæde.| Lad udgå |     
+|[Godkendelse af faktura](invoice-approval-mobile-workspace.md)| Viser en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet.| Erstat   |
+| [Udgiftsstyring](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | Gør det muligt for dig at hente og sende en kvittering, så du senere kan knytte den til en udgiftsrapport. I arbejdsområdet til mobilenheder kan du også hurtigt oprette en udgiftslinje ved hjælp af en tilknyttet kvittering. | Erstat |
+| [Godkendelse af indkøbsordre](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Se og reager på indkøbsordrer med handlinger som f.eks. godkende eller afvise. | Erstat |
+| [Tidsregistrering for projekt](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | Du kan angive og gemme tider for et projekt ved hjælp af din mobilenhed. | <p>Erstatning tilgængelig</p><p>[Microsoft Dynamics 365 Project Timesheet](/dynamics365/project-operations/prod-pma/project-timesheet)</p> |
+| [Omkostningsstyring](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md) | Ledere af bærere kan se bærerydeevnen.  |  Lad udgå |
+| [Disponibelt lager](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md) | Få indblik i reserveret og disponibelt lager. |  Erstat |
+| [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md) | Du kan holde dig opdateret om salgsordrer.  |  Lad udgå |
+| [Kreditorsamarbejde](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Kreditorer kan holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner. | Lad udgå  |
+| [Aktivadministration](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | I dette arbejdsområde kan brugerne se og oprette vedligeholdelsesanmodninger og arbejdsordrer. Brugere kan også få vist de tildelte job i arbejdsordrejob i en kalender- eller listevisning. Aktiver og arbejdssteder kan også ses og søges efter. | Erstat |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

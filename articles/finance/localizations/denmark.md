@@ -12,12 +12,12 @@ ms.search.region: Denmark
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5637825854ac822b7789b168add27b8aa86e589d
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: c86b0f1eb232b7666f7328d6777ea7a0006c6589
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402790"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786868"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 
@@ -29,6 +29,7 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor](tasks/create-post-customer-invoice-public-sector-customer.md)
 - [Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor](tasks/create-post-free-text-invoice-public-sector-customer.md)
 - [Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor](tasks/create-post-project-invoice-public-sector-customer.md)
+- [EU-listesystem for Danmark](emea-dnk-eu-sales-list.md)
 - [Importere konfigurationer for elektronisk OIOUBL-fakturering](tasks/import-oioubl-electronic-invoicing-configurations.md)
 - [Bogføre en fritekstfaktura med et indbetalingskort](tasks/post-free-text-invoice-payment-slip.md)
 - [Bogføre en projektfaktura med et indbetalingskort](tasks/post-project-invoice-payment-slip.md)

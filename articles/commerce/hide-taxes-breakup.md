@@ -2,19 +2,19 @@
 title: Skjule oplysninger om momsopbrydelser i ordreoversigter
 description: Dette emne beskriver, hvordan du kan skjule oplysninger om momsopbrydelse i ordreoversigter i indkøbsvogn, betaling ved kassen, ordrebekræftelse og ordredetaljer i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 04/21/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9890b5cd92f8c07e6feabb26f4fdd076cb7a02bc
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
+ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645214"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8767808"
 ---
 # <a name="hide-tax-breakup-information-in-order-summaries"></a>Skjule oplysninger om momsopbrydelser i ordreoversigter
 
@@ -46,6 +46,9 @@ Marker afkrydsningsfeltet **Vis momspauser i ordreoversigter** for at få vist o
 I følgende illustration vises afkrydsningsfeltet **Vis momspause i oversigtsafkrydsningsfeltet**, der er markeret og valgt i Site Builder.
 
 ![Indstillingen Vis momsopsummering i ordreoversigt er som standard aktiveret i Site Builder.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+
+> [!NOTE]
+> Hvis du har tilpasset ordreoversigtsmoduler og ikke vil arve funktionen til "skjul oplysninger om momsoprydning i ordreoversigter" i Commerce version 10.0.27 eller senere, skal du se [Subtotal for ordreoversigt inkluderer ikke moms på gebyrer, når du bruger tilpassede ordreoversigtsmoduler](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

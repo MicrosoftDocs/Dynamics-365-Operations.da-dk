@@ -2,19 +2,19 @@
 title: Forbedringer til funktioner til bogføring af opgørelse
 description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649013"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770134"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
@@ -151,6 +151,9 @@ Visningen af aggregerede transaktioner giver følgende fordele:
 - Brugeren har indsigt i, hvordan transaktioner bliver aggregeret.
 - Brugeren har et fuldstændigt revisionsspor, fra transaktioner til salgsordrer til salgsfakturaer. Dette revisionsspor var ikke tilgængeligt i den ældre funktionen til bogføring af opgørelser.
 - Den aggregerede XML-fil gør det nemmere at identificere problemer under oprettelse af salgsordrer og fakturering.
+
+> [!NOTE]
+> Når transaktioner samles, er den medarbejder, som er tildelt transaktionen, ikke længere tilgængelig for **Salgsrapport for bedste medarbejdere**, hvilket betyder, at ikke alle transaktioner vises i **Salgsrapport for bedste medarbejdere**. Det anbefales, at du ikke bruger rapporten **Salgsrapport for bedste medarbejdere** sammen med samlede transaktioner.
 
 ### <a name="journal-vouchers"></a>Kladdebilag
 
