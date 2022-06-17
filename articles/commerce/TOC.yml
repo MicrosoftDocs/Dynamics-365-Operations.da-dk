@@ -54,10 +54,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Anvende opdateringer i cloudmiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Anvende opdateringer til lokale installationer
+                - name: Anvende opdateringer til udrulninger i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Præ-servicering og eftersyn
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: Afbryde serviceopdateringer midlertidigt
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Få besked om serviceopdateringer
@@ -394,6 +396,8 @@
                   items:
                     - name: Store Commerce-app
                       href: dev-itpro/store-commerce.md
+                    - name: Migrere moderne POS til Store Commerce
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Vejledning til implementering af enhedsstyring
                       href: implementation-considerations-devices.md
                     - name: Vælge mellem Store Commerce og Cloud POS
@@ -908,7 +912,7 @@
                   href: create-excel-edit.md
                 - name: Føje felter til en Excel-projektmappe for at redigere detailtransaktioner
                   href: add-fields-excel.md
-            - name: Foretage sivende feedbaseret ordreoprettelse til transaktioner i detailbutik
+            - name: Oprette drypvis feedbaseret ordrer til transaktioner i detailbutik
               href: trickle-feed.md
             - name: 'Oprette, beregne og bogføre opgørelser for en detailbutik'
               href: tasks/create-calculate-post-statement-retail-store.md
@@ -1572,7 +1576,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/commerce/toc.json
-                    - name: Installere netværksprinterenheder i lokale miljøer
+                    - name: Installere netværksprinterenheder i det lokale miljø
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
@@ -2128,7 +2132,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Fejlfinde datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurer datamodeller
+                - name: Konfigurere datamodeller
                   items:
                     - name: Understøtte parameteriserede kald af ER-datamodeller
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
@@ -2222,6 +2226,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Foretage fejlfinding af problemer med ydeevnen i ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Reducere antallet af tabelfelter, der hentes under kørsel'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: Styring af forretningsdokumenter (BDM)
                   items:
                     - name: BDM-oversigt
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Ældre overflytning af Retail SDK
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 'Forældede og fjernede API''er, klasser og metoder'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Miljøkonfiguration
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Oprette en udvidelsespakke til Cloud Scale Unit
                       href: dev-itpro/CSU-packaging.md
+                    - name: Flette Cloud Scale Unit-udvidelsespakker til udrulning
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Fjerne Cloud Scale Unit-udvidelser
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Fejlfinding
           items:
+            - name: Store Commerce
+              items:
+                - name: Opsætnings- og installationsfejl
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Ydeevnefejl
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Udvidelsesfejl
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Ordrebehandling
               items:
                 - name: Betalingstypen skal være kreditkortfejl

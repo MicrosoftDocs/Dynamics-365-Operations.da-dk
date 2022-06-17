@@ -1,6 +1,6 @@
 ---
 title: Validere butikstransaktioner til beregning af opgørelse
-description: I dette emne beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce.
+description: I denne artikel beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 01/31/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4be40189777a37495f185467050b61af47b684d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890507"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Validere butikstransaktioner til beregning af opgørelse
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identificerer og markerer transaktioner, der kan medføre bogføringsfejl, inden de hentes af bogføringsprocessen for opgørelsen.
+I denne artikel beskrives funktionerne til validering af butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identificerer og markerer transaktioner, der kan medføre bogføringsfejl, inden de hentes af bogføringsprocessen for opgørelsen.
 
 Når du forsøger at bogføre en opgørelse, kan valideringsprocessen mislykkes på grund af uoverensstemmende data i tabellerne til handelstransaktioner. Her er nogle eksempler på faktorer, der kan forårsage disse uoverensstemmelser:
 

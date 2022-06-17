@@ -1,6 +1,6 @@
 ---
 title: Forbedret håndtering af batchsporede varer
-description: I dette emne beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
+description: I denne artikel beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881872"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Forbedret håndtering af batchsporede varer
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
+I denne artikel beskrives den forbedrede håndtering af batchsporede varer under processen til bogføring af opgørelsen i Microsoft Dynamics 365 Commerce.
 
 I Dynamics 365 Commerce POS kan batchnumre ikke hentes til batchsporede varer på tidspunktet for salget. For specifikke konfigurationer vil Commerce dog forvente, at der findes gyldige batchnumre til varer med batchsporing, når salg bogføres i Commerce-hovedkontoret via kundeordrer eller opgørelsesbogføring, og at de skal bruges i faktureringsprocessen.
 

@@ -1,6 +1,6 @@
 ---
 title: Startside for anlægsaktiver
-description: Dette emne giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance.
+description: Denne artikel giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880810"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance. Anlægsaktiver er enheder, der har en værdi, og som ejes af en person eller organisation. Enhederne omfatter bygninger, køretøjer, jord og udstyr. 
+Denne artikel giver adgang til ressourcer, der kan hjælpe dig med at bruge anlægsaktiver til Microsoft Dynamics 365 Finance. Anlægsaktiver er enheder, der har en værdi, og som ejes af en person eller organisation. Enhederne omfatter bygninger, køretøjer, jord og udstyr. 
 
 Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere aktiverne ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen. Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem. Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område. Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver. Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.
 

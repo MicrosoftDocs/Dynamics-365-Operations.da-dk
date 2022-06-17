@@ -1,6 +1,6 @@
 ---
 title: Ændre eller tildele en finanskalender igen
-description: I dette emne beskrives, hvordan du kan ændre den kalender, der aktuelt er knyttet til finans, og hvordan du tildeler en ny kalender til finans.
+description: I denne artikel beskrives, hvordan du kan ændre den kalender, der aktuelt er knyttet til finans, og hvordan du tildeler en ny kalender til finans.
 author: kweekley
 ms.date: 05/07/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-5-07
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25777a5b807921acc13338116627e9356fe62a20
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 751954e0dc5f682b99ab7fe349cd505dc9da7858
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848600"
 ---
 # <a name="change-or-reassign-a-ledger-calendar"></a>Ændre eller tildele en finanskalender igen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan ændre den kalender, der aktuelt er knyttet til finans, og hvordan du tildeler en ny kalender til finans.
+I denne artikel beskrives, hvordan du kan ændre den kalender, der aktuelt er knyttet til finans, og hvordan du tildeler en ny kalender til finans.
 
 ## <a name="issue"></a>Emne
 

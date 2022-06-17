@@ -1,6 +1,6 @@
 ---
 title: Omplacering af indtægtsføring - Scenarie 3
-description: Dette emne behandler omplacering af et scenarie, hvor der føjes en ny linje til en eksisterende faktureret salgsordre. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
+description: Denne artikel behandler omplacering af et scenarie, hvor der føjes en ny linje til en eksisterende faktureret salgsordre. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904810"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Omplacering af indtægtsføring - Scenarie 3
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne behandler omplacering af et scenarie, hvor der føjes en ny linje til en eksisterende faktureret salgsordre. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre. Dette scenario viser også, hvad der sker, når Debitor opdateres på grund af omplaceringen.
+Denne artikel behandler omplacering af et scenarie, hvor der føjes en ny linje til en eksisterende faktureret salgsordre. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre. Dette scenario viser også, hvad der sker, når Debitor opdateres på grund af omplaceringen.
 
 I dette scenarie er indstillingen **Bogfør fakturakorrektioner til debitor** angivet **Ja** på fanen **Indtægtsføring** på siden **Finansparametre** (**Indtægtsføring \> Opsætning \> Finansparametre**).
 

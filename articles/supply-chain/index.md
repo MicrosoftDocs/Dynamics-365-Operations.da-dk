@@ -1,6 +1,6 @@
 ---
 title: Startside for Supply Chain Management
-description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
+description: Denne side indeholder en liste over artiklerne i Hjælp og andre ressourcer til Supply Chain Management-funktioner.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879070"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer i Dynamics 365 Supply Chain Management.
+Denne artikel indeholder en liste over artiklerne i Hjælp og andre ressourcer i Dynamics 365 Supply Chain Management.
 
 ## <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
@@ -65,7 +65,7 @@ Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæden
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoer opsummerer de nye funktioner til supply chain management, der er føjet til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
+Disse korte videoer opsummerer de nye funktioner til styring af forsyningskæde, der er føjet til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
 - [Start her til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 - [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
@@ -93,7 +93,7 @@ Følgende optagelser af tekniske konferencer gennemgår funktionerne til styring
 
 ## <a name="blogs"></a>Blogs
 
-Der er mange emner om styring af produktionen og supply chain management i [Dynamics AX Manufacturing R&D-teamets blog](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste at disse er skrevet til den tidligere version, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
+Der er mange artikler om styring af produktionen og styring af forsyningskæde i [Dynamics AX Manufacturing R&D-teamets blog](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teamets blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste at disse er skrevet til den tidligere version, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
 
 ## <a name="white-papers"></a>Whitepapers
 

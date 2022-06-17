@@ -56,10 +56,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Anvende opdateringer i cloudmiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: Anvende opdateringer til lokale installationer
+                - name: Anvende opdateringer til udrulninger i det lokale miljø
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: Præ-servicering og eftersyn
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Afbryde serviceopdateringer midlertidigt
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Få besked om serviceopdateringer
@@ -1198,7 +1200,7 @@
                   href: general-ledger/set-up-balance-dimensions.md
                 - name: Åbne økonomikladdeskabeloner i Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
-                - name: Økonomiske standarddimensioner på finanskladder
+                - name: Økonomiske standarddimensioner på økonomikladder
                   href: general-ledger/dimension-default-values.md
                 - name: Kladdebogføringsfejl på grund af ubalance
                   href: general-ledger/posting-fail-imbalance.md
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Indstillinger for beregning af hele beløbet og intervaller for momskoder
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Beregning og afrunding af salgsmoms
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Beregning af moms på økonomikladdelinjer
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Beregne og justere moms på en kreditorfaktura
@@ -2168,6 +2172,8 @@
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Estisk Intrastat
                   href: localizations/emea-est-intrastat.md
+                - name: EU-listesystem
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Europa
               items:
                 - name: Oversigt for Europa
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Momsrapporter for Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Ungarsk Intrastat
+                  href: localizations/emea-hun-intrastat.md
                 - name: Udskudte momsberegninger
                   href: localizations/emea-hun-deferred-vat.md
             - name: Island
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Lettisk Intrastat
                   href: localizations/emea-lva-intrastat.md
+                - name: EU-listesystem
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litauen
               items:
                 - name: Oversigt for Litauen
@@ -3130,11 +3140,13 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Konfigurere overførselsdokumenter for varebevægelser inden for et firma
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: EU-listesystem
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malaysia
               items:
                 - name: Oversigt for Malaysia
                   href: localizations/malaysia.md
-                - name: Generere debitors kredit for projektsalg
+                - name: Generere kundes kredit for projektsalg
                   href: localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
                 - name: Generere debitors debet for projektsalg
                   href: localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
@@ -3825,7 +3837,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
-                    - name: Installere netværksprinterenheder i lokale miljøer
+                    - name: Installere netværksprinterenheder i det lokale miljø
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
                     - name: 'Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
@@ -4483,6 +4495,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Foretage fejlfinding af problemer med ydeevnen i ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Reducere antallet af tabelfelter, der hentes under kørsel'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Styring af forretningsdokumenter (BDM)
                   items:
                     - name: BDM-oversigt

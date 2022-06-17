@@ -1,6 +1,6 @@
 ---
 title: Ændre regnskabs- eller rapporteringsvalutaen
-description: I dette emne beskrives, hvordan du kan ændre regnskabs- eller rapporteringsvalutaen eller føje en rapporteringsvaluta til opsætningen af finansmodulet.
+description: I denne artikel beskrives, hvordan du kan ændre regnskabs- eller rapporteringsvalutaen eller føje en rapporteringsvaluta til opsætningen af finansmodulet.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904608"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Ændre regnskabs- eller rapporteringsvalutaen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan ændre regnskabs- eller rapporteringsvalutaen eller føje en rapporteringsvaluta til opsætningen af finansmodulet.
+I denne artikel beskrives, hvordan du kan ændre regnskabs- eller rapporteringsvalutaen eller føje en rapporteringsvaluta til opsætningen af finansmodulet.
 
 ## <a name="symptom"></a>Symptom
 
@@ -73,7 +73,7 @@ Benyt disse trin for at kopiere opsætningen og masterdataene fra den aktuelle j
 10. Vælg **Tilføj skabelon** i området **Valgte enheder**.
 11. Vælg den skabelon, du vil bruge. Foreslåede skabeloner til en ny juridisk enhed omfatter **025 – Finans** og **Finans**. Vi anbefaler, at du gennemser alle de andre tilgængelige skabeloner for at finde ud af, om nogen af dem gælder for dine behov.
 12. Vælg **Kopiér til juridisk enhed** for at starte en batchproces, der skal oprette de valgte enheder og kopiere dem til den juridiske destinationsenhed.
-13. Når processen er fuldført, men før der bogføres transaktioner, skal du gå til finans og opdatere regnskabs- og rapporteringsvalutaerne som beskrevet tidligere i dette emne.
+13. Når processen er fuldført, men før der bogføres transaktioner, skal du gå til finans og opdatere regnskabs- og rapporteringsvalutaerne som beskrevet tidligere i denne artikel.
 
 Hvis du har oprettet en ny juridisk enhed, så du kan ændre regnskabs- eller rapporteringsvalutaen, skal du kontrollere, at startsaldi er omsat fra valutaerne i den gamle juridiske enhed til de nye valutaer.
 

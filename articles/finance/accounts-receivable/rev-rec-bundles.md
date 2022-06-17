@@ -1,6 +1,6 @@
 ---
 title: Indtægtsføring i bundter
-description: Dette emne beskriver den bundtfunktionalitet, der er inkluderet i indtægtsføringsfunktionaliteten i Debitor. Et bundt omfatter en overordnet vare og flere komponentvarer.
+description: Denne artikel beskriver den bundtfunktionalitet, der er inkluderet i indtægtsføringsfunktionaliteten i Debitor. Et bundt omfatter en overordnet vare og flere komponentvarer.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876290"
 ---
 # <a name="revenue-recognition-bundles"></a>Indtægtsføring i bundter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver den bundtfunktionalitet, der er inkluderet i indtægtsføringsfunktionaliteten i Debitor. Et bundt omfatter en overordnet vare og flere komponentvarer. Den overordnede vare angives på en salgsordre, så ordreindtastningen bliver mere effektiv. Men det udfoldes derefter i komponentvarer. Interne dokumenter, f.eks. følgesedlen, viser en oversigt over komponentvarer. Eksterne dokumenter viser dog kun den overordnede vare.
+Denne artikel beskriver den bundtfunktionalitet, der er inkluderet i indtægtsføringsfunktionaliteten i Debitor. Et bundt omfatter en overordnet vare og flere komponentvarer. Den overordnede vare angives på en salgsordre, så ordreindtastningen bliver mere effektiv. Men det udfoldes derefter i komponentvarer. Interne dokumenter, f.eks. følgesedlen, viser en oversigt over komponentvarer. Eksterne dokumenter viser dog kun den overordnede vare.
 
 > [!NOTE]
 > Microsoft Dynamics 365 Commerce-kanaler, f.eks. online, POS (POS) og callcentre understøtter ikke indtægtsføring (herunder bundtfunktionaliteten). Det omfatter også løsningen Kundeemne til kontantløsningen til Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Varer, der er konfigureret til at bruge indtægtsføring, bør ikke føjes til ordrer eller transaktioner, der er oprettet i handelskanaler eller i Kundeemne til kontantløsningen.

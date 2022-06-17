@@ -1,6 +1,6 @@
 ---
 title: Opret checks, der har statussen Blank
-description: I dette emne beskrives, hvordan du kan oprette blankochecks for en bankkonto.
+description: I denne artikel beskrives, hvordan du kan oprette blankochecks for en bankkonto.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 834e11e0e359521c674e2b6fd78c93dcb23961a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861438"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Opret checks, der har statussen Blank
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan oprette blanke checks. Du kan f.eks. oprette en blank check for at registrere en check, der er blevet beskadiget og ikke kan bruges til betaling.
+Denne artikel beskriver, hvordan du kan oprette blankochecks. Du kan f.eks. oprette en blankocheck for at registrere en check, der er blevet beskadiget og ikke kan bruges til betaling.
 
 På siden **Checks** kan du udføre vedligeholdelsesopgaver for checks. Du kan f.eks. oprette nye checknumre og slette checks. Du kan også oprette checks med statussen **Blank**. Når blanke checks er oprettet, kan de ikke slettes eller genbruges i systemet.
 

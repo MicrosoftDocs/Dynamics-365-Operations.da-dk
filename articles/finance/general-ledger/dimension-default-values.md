@@ -1,6 +1,6 @@
 ---
-title: Økonomiske standarddimensioner på finanskladder
-description: Dette emne indeholder en beskrivelse af de regler, der definerer, hvordan økonomiske dimensionsværdier konfigureres på posteringer, der indtastes via finanskladder. Det indeholder også oplysninger om scenarier, hvor der bruges faste dimensioner.
+title: Økonomiske standarddimensioner på økonomikladder
+description: Denne artikel indeholder en beskrivelse af de regler, der definerer, hvordan økonomiske dimensionsværdier konfigureres på posteringer, der indtastes via økonomikladder. Det indeholder også oplysninger om scenarier, hvor der bruges faste dimensioner.
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907916"
 ---
-# <a name="default-financial-dimensions-on-financial-journals"></a>Økonomiske standarddimensioner på finanskladder
+# <a name="default-financial-dimensions-on-financial-journals"></a>Økonomiske standarddimensioner på økonomikladder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af de regler, der definerer, hvordan økonomiske dimensionsværdier konfigureres på posteringer, der indtastes via finanskladder (men ikke via lagerkladder eller projektkladder). Det indeholder også oplysninger om scenarier, hvor der bruges faste dimensioner.
+Denne artikel indeholder en beskrivelse af de regler, der definerer, hvordan økonomiske dimensionsværdier konfigureres på posteringer, der indtastes via økonomikladder (men ikke via lagerkladder eller projektkladder). Det indeholder også oplysninger om scenarier, hvor der bruges faste dimensioner.
 
 ## <a name="symptom"></a>Symptom
 

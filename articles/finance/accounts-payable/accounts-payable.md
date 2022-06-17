@@ -1,6 +1,6 @@
 ---
 title: Startside for kreditor
-description: Dette emne giver en oversigt over kreditor.
+description: Denne artikel giver en oversigt over kreditor.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595281"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946095"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne giver en oversigt over kreditor. 
+Denne artikel giver en oversigt over kreditor. 
 
 Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed. Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden **Kreditorfaktura**. Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsgange til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav, automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.
 
@@ -126,16 +126,16 @@ Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger om Kreditor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
 #### <a name="community-blogs"></a>Fællesskabsblogge
 
-[Sådan administreres kreditorer i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Sådan administreres skyldige beløb i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgaveguider i ansøgningen. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+Yderligere hjælp er tilgængelig som opgaveguider i applikationen. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
 #### <a name="videos"></a>Videoer
 

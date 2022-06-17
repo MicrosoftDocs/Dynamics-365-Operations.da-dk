@@ -1,6 +1,6 @@
 ---
 title: Indtægtsføring på salgsordrer
-description: I dette emne beskrives de grundlæggende funktioner til registrering af indtægt på salgsordrer og fakturaer. Indtægtsføring er tilgængelig på salgsordren og på den tilsvarende faktura, der oprettes ud fra salgsordren.
+description: I denne artikel beskrives de grundlæggende funktioner til registrering af indtægt på salgsordrer og fakturaer. Indtægtsføring er tilgængelig på salgsordren og på den tilsvarende faktura, der oprettes ud fra salgsordren.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899951"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Indtægtsføring på salgsordrer
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725478"
 > [!NOTE]
 > Funktionen Indtægtsføring kan ikke aktiveres via Funktionsstyring. I øjeblikket skal du bruge konfigurationsnøgler til at aktivere funktionen.
 
-I dette emne beskrives de grundlæggende funktioner til registrering af indtægt på salgsordrer og fakturaer. Indtægtsføring er tilgængelig på en salgsordre og på den tilsvarende faktura, der oprettes ud fra salgsordren. Salgsordren kan også oprettes via et Tid og materialer-projekt.
+I denne artikel beskrives de grundlæggende funktioner til registrering af indtægt på salgsordrer og fakturaer. Indtægtsføring er tilgængelig på en salgsordre og på den tilsvarende faktura, der oprettes ud fra salgsordren. Salgsordren kan også oprettes via et Tid og materialer-projekt.
 
 > [!NOTE]
-> I illustrationerne i dette emne er kolonner skjulte eller føjet til gitre, så de bedre viser begreberne. Derfor kan siderne og dataene i illustrationerne være forskellige fra det, du kan se i produktet.
+> I illustrationerne i denne artikel er kolonner skjulte eller føjet til gitre, så de bedre viser begreberne. Derfor kan siderne og dataene i illustrationerne være forskellige fra det, du kan se i produktet.
 
 ## <a name="enter-a-sales-order"></a>Angiv en salgsordre
 

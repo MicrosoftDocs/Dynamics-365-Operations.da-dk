@@ -1,6 +1,6 @@
 ---
 title: Årsafslutning mangler startsaldi
-description: I dette emne beskrives det, hvorfor der muligvis mangler startsaldi, når du lukker et år, og hvordan du kan gendanne disse saldi, hvis de mangler.
+description: I denne artikel beskrives det, hvorfor der muligvis mangler startsaldi, når du lukker et år, og hvordan du kan gendanne disse saldi, hvis de mangler.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894842"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Årsafslutning mangler startsaldi
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvorfor der muligvis mangler startsaldi, når du lukker et år, og hvordan du kan gendanne disse saldi, hvis de mangler.
+I denne artikel beskrives det, hvorfor der muligvis mangler startsaldi, når du lukker et år, og hvordan du kan gendanne disse saldi, hvis de mangler.
 
 ### <a name="symptom"></a>Symptom
 
@@ -36,7 +36,7 @@ Du skal kontrollere følgende, hvis du har lukket et år i Finans og derefter ge
 
 Hvis feltet **Fortryd forrige afslutning** er angivet til **Ja**, tilbageføres den forrige ultimoafslutning for det samme regnskabsår. Når du kører en proces til at fortryde årsafslutningen, slettes alle poster for ultimo- og startsaldierne, som om året aldrig er blevet lukket. Bilagene slettes også. Årsafslutningen køres ikke automatisk igen. Du skal starte processen igen, og denne gang skal du opdatere valget **Fortryd forrige lukning** til **Nej**.
 
-Dette scenario er dækket i emnet for ofte stillede spørgsmål om årsafslutning. Du kan finde yderligere oplysninger i [Ofte stillede spørgsmål om årsafslutning](faq-year-end-activities.md).
+Dette scenario er dækket i artiklen for ofte stillede spørgsmål om årsafslutning. Du kan finde yderligere oplysninger i [Ofte stillede spørgsmål om årsafslutning](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Symptom
 

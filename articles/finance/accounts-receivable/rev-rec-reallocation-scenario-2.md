@@ -1,6 +1,6 @@
 ---
 title: Omplacering af indtægtsføring - Scenarie 2
-description: Dette emne behandler omplaceringsscenariet, hvor to salgsordrer angives, og kunden føjer en vare til kontrakten, efter at den første salgsordre er faktureret. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
+description: Denne artikel behandler omplaceringsscenariet, hvor to salgsordrer angives, og kunden føjer en vare til kontrakten, efter at den første salgsordre er faktureret. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4026b8c69e51cb33c64bcf71a62a13b28b86bd49
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904838"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Omplacering af indtægtsføring - Scenarie 2
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne behandler omplaceringsscenariet, hvor to salgsordrer angives, og kunden føjer en vare til kontrakten, efter at den første salgsordre er faktureret. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
+Denne artikel behandler omplaceringsscenariet, hvor to salgsordrer angives, og kunden føjer en vare til kontrakten, efter at den første salgsordre er faktureret. Når en ny vare føjes til en kontrakt, kan den føjes til enten en ny salgsordre eller til en eksisterende salgsordre.
 
 I dette scenarie er indstillingen **Bogfør fakturakorrektioner til debitor** angivet **Nej** på fanen **Indtægtsføring** på siden **Finansparametre** (**Indtægtsføring \> Opsætning \> Finansparametre**).
 

@@ -1,6 +1,6 @@
 ---
 title: Fordelt ordrestyring (DOM)
-description: Dette emne beskriver funktionaliteten til fordelt ordrestyring (DOM) i Dynamics 365 Commerce.
+description: Denne artikel beskriver funktionaliteten til fordelt ordrestyring (DOM) i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878506"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver funktionaliteten til fordelt ordrestyring (DOM) i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver funktionaliteten til fordelt ordrestyring (DOM) i Microsoft Dynamics 365 Commerce.
 
 DOM er en optimeringsløsning til omnikanal-ordreopfyldning, der hjælper med at maksimere ordreopfyldning i et forsyningskædenetværk. DOM hjælper dig med at sikre, at produkterne leveres til kunderne i de rette mængder, fra de korrekte kilder, på de rigtige tidspunkter. DOM kan også hjælpe dig med at få det maksimale udbytte ud af overskuddet, minimere omkostningerne og opfylde kravene på serviceniveau.
 

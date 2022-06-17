@@ -1,6 +1,6 @@
 ---
 title: Omplacering af indtægtsføring
-description: Dette emne indeholder oplysninger om omplacering, der giver organisationer mulighed for at genberegne omsætningspriser, når betingelserne for kontraktmæssige salg ændres. Den indeholder links til andre emner, der beskriver, hvordan du kan genkende indtægter i flere scenarier.
+description: Denne artikel indeholder oplysninger om omplacering, der giver organisationer mulighed for at genberegne indtægtspriser, når betingelserne for kontraktmæssige salg ændres. Den indeholder links til andre emner, der beskriver, hvordan du kan genkende indtægter i flere scenarier.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903414"
 ---
 # <a name="revenue-recognition-reallocation"></a>Omplacering af indtægtsføring
 
@@ -58,7 +58,7 @@ En parameter har indflydelse på genallokeringsprocessen.
 
 Da der kan foretages omplacering på en salgsordre, som er delvist eller fuldt faktureret, skal eventuelle tidligere regnskabsposter for fakturaen rettes ved hjælp af de nye, omfordelte omsætningspriser. Denne rettelse kan du gøre ved at tilbagefør den oprindelige fakturas regnskabspost og bogføre en ny regnskabspost, der er baseret på de omfordelte omsætningspriser.
 
-Alle organisationer skal beslutte, om rettelsen kun skal opdatere Finans, eller om den også skal opdatere Debitor. Den beslutning, der nås, bestemmer den relevante indstilling i **Bogfør fakturakorrektioner til debitor**-indstillingen under fanen **Indtægtsføring** på siden **Finansparametre** (**Indtægtsføring \> Opsætning \> Finansparametre**). Den relevante indstilling afhænger af det specifikke scenario. Du kan få flere oplysninger om mulige scenarier ved at bruge linkene i afsnittet [Scenarier til genplacering](#scenarios-for-reallocation) i dette emne.
+Alle organisationer skal beslutte, om rettelsen kun skal opdatere Finans, eller om den også skal opdatere Debitor. Den beslutning, der nås, bestemmer den relevante indstilling i **Bogfør fakturakorrektioner til debitor**-indstillingen under fanen **Indtægtsføring** på siden **Finansparametre** (**Indtægtsføring \> Opsætning \> Finansparametre**). Den relevante indstilling afhænger af det specifikke scenario. Du kan få flere oplysninger om mulige scenarier ved at bruge linkene i afsnittet [Scenarier til genplacering](#scenarios-for-reallocation) i denne artikel.
 
 [![Fanen Indtægtsføring på siden Finansparametre.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Hvis du vil starte omfordelingsprocessen, skal du vælge **Omfordel pris med nye
 
 [![Genalloker pris med siden med nye ordrelinjer.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det øverste gitter på siden **Alloker pris med nye ordrelinjer** kaldes **Salg**. Den viser en oversigt over salgsordrerne for kunden. Vælg de salgsordrer, der skal genallokeres. Hvis en salgsordre har et genallokerings-id, er den allerede blevet markeret til genallokering af en anden bruger. Hvis en eller flere salgsordrer tidligere er blevet genallokeret og skal medtages i en anden genallokering, skal tildelingen af disse salgsordrer først fortrydes. Den kan derefter medtages i en ny genallokering. Du kan finde mere detaljerede oplysninger i afsnittene [Fortryd en genallokering](#undo-a-reallocation) og [Genalloker flere gange](#reallocate-multiple-times) senere i dette emne.
+Det øverste gitter på siden **Alloker pris med nye ordrelinjer** kaldes **Salg**. Den viser en oversigt over salgsordrerne for kunden. Vælg de salgsordrer, der skal genallokeres. Hvis en salgsordre har et genallokerings-id, er den allerede blevet markeret til genallokering af en anden bruger. Hvis en eller flere salgsordrer tidligere er blevet genallokeret og skal medtages i en anden genallokering, skal tildelingen af disse salgsordrer først fortrydes. Den kan derefter medtages i en ny genallokering. Du kan finde mere detaljerede oplysninger i afsnittene [Fortryd en genallokering](#undo-a-reallocation) og [Genalloker flere gange](#reallocate-multiple-times) senere i denne artikel.
 
 Det nederste gitter på siden kaldes **Linjer**. Når du har valgt en eller flere salgsordrer i gitteret **Salg**, viser gitteret **Linjer** salgsordrelinjerne. Vælg de salgsordrelinjer, der skal ændres. Hvis du kun har valgt én salgsordre, skal linjerne i den samme salgsordre genallokeres. Denne situation kan forekomme, når en af salgsordrelinjerne tidligere er faktureret, og derefter er tilføjet en ny linje, eller en eksisterende linje er fjernet eller annulleret. Hvis en linje er blevet fjernet, vises den ikke i gitteret. Det kan derfor ikke vælges. Det tages dog stadig i betragtning, når der køres en omplaceringsproces.
 

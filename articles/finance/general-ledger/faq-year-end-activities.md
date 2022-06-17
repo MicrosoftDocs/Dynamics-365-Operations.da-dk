@@ -1,6 +1,6 @@
 ---
-title: Ofte spurgte spørgsmål i forbindelse med aktiviteter i årsafslutningen
-description: Dette emne indeholder en oversigt over de spørgsmål, der kan opstå ved årsafslutningen, og de svar, der kan være en hjælp ved lukning af årets aktiviteter.
+title: Ofte spurgte spørgsmål om aktiviteter ved årsafslutningen
+description: Denne artikel indeholder en oversigt over de spørgsmål, der kan opstå ved årsafslutningen, og de svar, der kan være en hjælp ved lukning af årets aktiviteter.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865734"
 ---
-# <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål i forbindelse med aktiviteter i årsafslutningen 
+# <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål om aktiviteter ved årsafslutningen 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over de spørgsmål, der kan opstå ved årsafslutningen, og de svar, der kan være en hjælp ved lukning af årets aktiviteter. Oplysningerne i dette emne fokuserer primært på spørgsmål, der vedrører ultimoaktiviteter ved årsopgørelsen for Finans og Kreditor.
+Denne artikel indeholder en oversigt over de spørgsmål, der kan opstå ved årsafslutningen, og de svar, der kan være en hjælp ved lukning af årets aktiviteter. Oplysningerne i denne artikel fokuserer primært på spørgsmål, der vedrører ultimoaktiviteter ved årsopgørelsen for Finans og Kreditor.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Forbedringer af årsopgørelsen for Finans 
 Version 10.0.20 indeholder en forbedring af årsslutpunktet, som er aktiveret som standard og starter med version 10.0.25. Hvis organisationen bruger en version, der er ældre end 10.0.25, anbefales det, at du aktiverer denne funktion, før årsafslutningsprocessen startes. Før du kan bruge denne funktion, skal den være aktiveret i dit system. Administratorer kan bruge arbejdsområdet Funktionsstyring til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
@@ -75,7 +75,7 @@ De unødvendige dimensionsopsætninger har også indflydelse på batchjobbet **B
 [![Økonomiske dimensionsopsætninger.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguration af skabelon til årsafslutning
-I skabelonen til årsafslutning kan organisationer vælge det økonomiske dimensionsniveau, der skal vedligeholdes ved overførsel af driftssaldi til overført overskud. Indstillingerne giver en organisation mulighed for at vedligeholde de detaljerede økonomiske dimensioner (**Luk alle**) ved flytning af saldi til overført resultat eller vælger at opsummere beløbene til en enkelt dimensionsværdi (**Luk enkelt**). Dette kan defineres for hver økonomisk dimension. Yderligere oplysninger om disse indstillinger finder du i emnet [Årsafslutning](year-end-close.md).
+I skabelonen til årsafslutning kan organisationer vælge det økonomiske dimensionsniveau, der skal vedligeholdes ved overførsel af driftssaldi til overført overskud. Indstillingerne giver en organisation mulighed for at vedligeholde de detaljerede økonomiske dimensioner (**Luk alle**) ved flytning af saldi til overført resultat eller vælger at opsummere beløbene til en enkelt dimensionsværdi (**Luk enkelt**). Dette kan defineres for hver økonomisk dimension. Yderligere oplysninger om disse indstillinger finder du i artiklen [Årsafslutning](year-end-close.md).
 
 Det anbefales, at du evaluerer organisationens krav og, hvis det er muligt, lukker så mange dimensioner som muligt ved hjælp af indstillingen **Luk enkelt** for at forbedre ydeevnen. Ved at lukke til en enkelt dimensionsværdi (som også kan være en tom værdi), beregner systemet færre detaljer ved bestemmelse af saldi for poster på konti til overført overskud.
 

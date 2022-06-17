@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5f2aa0690279e82f94c37be2306a356b0c72075b57a02097224a3a7b9d06c67a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56a685c7bdc2cdbe61d34a7c14f0db2388d30ad4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864049"
 ---
 > [!IMPORTANT]
-> Nogle eller alle funktioner, der er angivet i dette emne, er tilgængelige som en del af en forhåndsversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> Nogle eller alle funktioner, der er angivet i denne artikel, er tilgængelige som en del af en forhåndsversion. Indholdet og funktionaliteten kan blive ændret. Du kan finde flere oplysninger om prøveversioner i [Ofte stillede spørgsmål om One Version-tjenesteopdateringer](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).

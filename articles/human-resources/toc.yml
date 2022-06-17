@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheder eller ændringer i Human Resources
               items:
+                - name: Human Resources 10.0.28 (flettet infrastruktur)
+                  href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (flettet infrastruktur)
                   href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (flettet infrastruktur)
