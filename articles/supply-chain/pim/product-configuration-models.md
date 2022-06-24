@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9bee2d68a2ed2aa339ddf8232bba4541f4fe52b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871914"
 ---
 # <a name="product-configuration-models-overview"></a>Oversigt over produktkonfigurationsmodeller
 
@@ -75,7 +75,7 @@ Hvis attributtypen er <strong>Boolesk</strong>, <strong>Heltal</strong> med et i
 <td>Begrænsninger</td>
 <td>Begrænsninger beskriver begrænsninger i produktmodelkonfigurationen. Begrænsninger bruges til at sikre, at der kun vælges gyldige værdier, når et produkt konfigureres. Begrænsninger kan enten være udtryksbegrænsninger eller tabelbegrænsninger:
 <ul>
-<li>Udtryksbegrænsninger kan kun anvendes til den komponent, som de er knyttet til. Udtryksbegrænsninger for en komponent kan dog henvise til attributter for komponentens underkomponenter. Produktkonfigurationsproblemløseren bruges til at løse begrænsningerne, og du bruge problemløsersyntaksen, når du skriver begrænsningerne. Du kan finde flere oplysninger under linket i emnet om udtryksbegrænsninger og tabelbegrænsninger.</li>
+<li>Udtryksbegrænsninger kan kun anvendes til den komponent, som de er knyttet til. Udtryksbegrænsninger for en komponent kan dog henvise til attributter for komponentens underkomponenter. Produktkonfigurationsproblemløseren bruges til at løse begrænsningerne, og du bruge problemløsersyntaksen, når du skriver begrænsningerne. Du kan finde flere oplysninger under linket i artiklen om udtryksbegrænsninger og tabelbegrænsninger.</li>
 <li>Tabelbegrænsninger skal defineres, før de kan anvendes til en komponent i en produktkonfigurationsmodel. Tabelbegrænsninger kan enten være brugerdefinerede eller systemdefinerede. En begrænsning for en brugerdefineret tabel er en matrixtype, der kan bruges til at beskrive sæt af kombinationer af de attributværdier, der er defineret af attributtyper. Hvis der f.eks. produceres højttalere, indeholder matricen for en brugerdefineret tabelbegrænsning muligvis kolonner for højttalerfinish og gitter.</li>
 </ul>
 <strong>Eksempel</strong> Højttalere fås med fire finishes: sort, egetræ, rosentræ og hvid. Højttalerne kan have et af tre frontgitre: sort, metal eller hvid. Sort finish er tilgængelig for alle gitre, men de andre overfladematerialer er begrænset til bestemte gitre. Følgende tabel viser et eksempel på de oplysninger, der vises under fanen <strong>Tilladte kombinationer</strong> på siden <strong>Rediger tabelbegrænsning</strong>.

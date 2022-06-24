@@ -1,6 +1,6 @@
 ---
 title: Lagerkladder
-description: I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
+description: Denne artikel beskriver, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
 author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c0ac9146c44b08698f8f9d15a3610bf0b7cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573963"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849410"
 ---
 # <a name="inventory-journals"></a>Lagerkladder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
+Denne artikel beskriver, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
 
 Lagerkladder i Supply Chain Management bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
 

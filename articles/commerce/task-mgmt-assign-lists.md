@@ -1,6 +1,6 @@
 ---
-title: Tildeling af opgavelister til butikker eller medarbejdere
-description: Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
+title: Tildele opgavelister til butikker eller medarbejdere
+description: Denne artikel beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 956ea206888b2bbbbaf2edaa006c84f6f050f379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909355"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tildele opgavelister til butikker eller medarbejdere
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
 
 Opgavestyring i Dynamics 365 Commerce giver dig mulighed for at tildele en opgaveliste til flere butikker eller medarbejdere eller til en kombination af butikker og medarbejdere. En regional chef for 20 butikker kan f.eks. vælge at tildele opgavelisten **Forberedelser til juleferien** til alle 20 butikker.
 

@@ -1,6 +1,6 @@
 ---
-title: Dedikerede betalingsterminaler og anmodninger om printer og kasseskuffe
-description: Dette emne indeholder oplysninger om muligheden for at have en dedikeret betalingsterminal og brugeranmodning om at vælge en pengeskuffe og en kvitteringsprinter.
+title: Dedikerede betalingsterminaler og anmodninger om printer og kasseterminal
+description: Denne artikel indeholder oplysninger om muligheden for at have en dedikeret betalingsterminal og brugeranmodning om at vælge en pengeskuffe og en kvitteringsprinter.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874915"
 ---
-# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerede betalingsterminaler og anmodninger om printer og kasseskuffe
+# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerede betalingsterminaler og anmodninger om printer og kasseterminal
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om muligheden for at have en dedikeret betalingsterminal og brugeranmodning om at vælge en pengeskuffe og en kvitteringsprinter.
+Denne artikel indeholder oplysninger om muligheden for at have en dedikeret betalingsterminal og brugeranmodning om at vælge en pengeskuffe og en kvitteringsprinter.
 
 ## <a name="overview"></a>Overblik
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce understøtter disse tendenser ved at muliggøre 
 
 ## <a name="supported-pos-clients-and-devices"></a>Understøttede POS-klienter og enheder
 
-Den funktionalitet, der beskrives i dette emne, understøttes af Modern POS til Windows- og Modern PSO til Android-POS-klienterne.
+Den funktionalitet, der beskrives i denne artikel, understøttes af Modern POS til Windows- og Modern POS til Android-POS-klienterne.
 
 Denne funktionalitet understøtter netværksaktiverede betalingsterminaler og kvitteringsprintere. Du kan understøtte pengeskuffen ved at slutte den til den netværksaktiverede kvitteringsprinter via d/k-porten.
 

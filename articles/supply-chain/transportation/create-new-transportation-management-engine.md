@@ -1,6 +1,6 @@
 ---
 title: Oprette et nyt transportstyringsprogram
-description: Dette emne beskriver, hvordan du opretter et nyt transportstyringsprogram i Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan du opretter et nyt transportstyringsprogram i Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857251"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Oprette et nyt transportstyringsprogram
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter et nyt transportstyringsprogram i Dynamics 365 Supply Chain Management. 
+Denne artikel beskriver, hvordan du opretter et nyt transportstyringsprogram i Dynamics 365 Supply Chain Management. 
 
 Transportstyringsprogrammer (TMS) definerer den logik, der bruges til at oprette og behandle transportsatser i Transportstyring. Supply Chain Management indeholder flere forskellige programtyper, der beregner forskellige parametre, f.eks. satser, transporttider og antallet af zoner, der vil blive passeret under transport. Denne artikel forklarer, hvordan du bruger Microsoft Visual Studio-udviklingsmiljøet sammen med udviklingsværktøjerne i Supply Chain Management til at oprette og installere et nyt TMS-program, og hvordan programmet konfigureres i Operations. Yderligere oplysninger om programmerne finder du i [Transportstyringsprogrammer](transportation-management-engines.md).
 

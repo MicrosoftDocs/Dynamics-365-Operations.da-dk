@@ -1,6 +1,6 @@
 ---
 title: Forskelle mellem indbygget behovsplanlægning og planlægningsoptimering
-description: Dette emne viser funktioner, som Planlægningsoptimering endnu ikke understøtter, og som ikke vises på siden for analyse af tilpasning af Planlægningsoptimering.
+description: Denne artikel viser funktioner, som Planlægningsoptimering endnu ikke understøtter, og som ikke vises på siden for analyse af tilpasning af Planlægningsoptimering.
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
-ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
+ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8618254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897568"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskelle mellem indbygget behovsplanlægning og planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Resultater af planlægningsoptimering kan være forskellige fra resultaterne af det indbyggede system til behovsplanlægning. Forskellene kan også skyldes ventende funktioner. Dette emne viser funktioner, som Planlægningsoptimering endnu ikke understøtter, og som ikke vises på siden **[Analyse af tilpasning af Planlægningsoptimering](planning-optimization-fit-analysis.md)]**.
+Resultater af planlægningsoptimering kan være forskellige fra resultaterne af det indbyggede system til behovsplanlægning. Forskellene kan også skyldes ventende funktioner. Denne artikel viser funktioner, som Planlægningsoptimering endnu ikke understøtter, og som ikke vises på siden **[Analyse af tilpasning af Planlægningsoptimering](planning-optimization-fit-analysis.md)]**.
 
 | Funktion | Aktuel funktionsmåde i Planlægningsoptimering |
 |---|---|

@@ -1,6 +1,6 @@
 ---
 title: Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
-description: Dette emne beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Field Service til salgsordrer i Supply Chain Management.
+description: Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Field Service til salgsordrer i Supply Chain Management.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860516"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkroniser arbejdsordrer i Field Service til salgsordrer i Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061303"
 
 
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Dynamics 365 Field Service med salgsordrer i Dynamics 365 Supply Chain Management.
+Denne artikel beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer i Dynamics 365 Field Service med salgsordrer i Dynamics 365 Supply Chain Management.
 
 [![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ For at holde styr på salgsordrer, der stammer fra arbejdsordrer, kan du oprette
 
 Som standard vælger tilknytningen salgsoprindelsen for salgoprindelsestypen **Arbejdsordreintegration** for alle salgsordrer, der er oprettet ud fra arbejdsordrer. Denne funktionsmåde kan være nyttig, når du arbejder med salgsordren i Supply Chain Management. Du skal sikre dig, at salgsordrer, der stammer fra arbejdsordrer, ikke synkroniseres tilbage til Field Service som arbejdsordrer.
 
-Oplysninger om, hvordan du opsætter salgsoprindelse korrekt i Supply Chain Management, finder du i afsnittet "Betingelserne og tilknytningsopsætning" i dette emne.
+Oplysninger om, hvordan du opsætter salgsoprindelse korrekt i Supply Chain Management, finder du i afsnittet "Betingelserne og tilknytningsopsætning" i denne artikel.
 
 ### <a name="status"></a>Status
 

@@ -1,6 +1,6 @@
 ---
-title: Introduktion til Planlægningsoptimering
-description: I dette emne beskrives, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
+title: Start her med planlægningsoptimering
+description: Denne artikel beskriver, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900964"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -99,7 +99,7 @@ Forbindelsesstatussen angiver den aktuelle status for forbindelsen mellem Supply
 |---|---|---|
 | Tilsluttet | Der er oprettet en forbindelse mellem Planlægningsoptimeringstjenesten og Supply Chain Management. | Ja |
 | Forbindelse aktiveres | En anmodning om at aktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nej |
-| Forbindelse afbrudt | Der er ingen forbindelse til Planlægningsoptimeringstjenesten. Forbindelsen kan slås til fra LCS, som beskrevet tidligere i dette emne. | Nej |
+| Forbindelse afbrudt | Der er ingen forbindelse til Planlægningsoptimeringstjenesten. Forbindelsen kan slås til fra LCS, som beskrevet tidligere i denne artikel. | Nej |
 | Forbindelse deaktiveres | En anmodning om at deaktivere forbindelsen til Planlægningsoptimeringstjenesten er i øjeblikket i gang. | Nej |
 | Henter status | Systemet venter på statusoplysninger fra Planlægningsoptimeringstjenesten. | Nej |
 

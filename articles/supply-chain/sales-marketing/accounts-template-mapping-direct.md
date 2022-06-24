@@ -1,6 +1,6 @@
 ---
 title: Synkronisere konti direkte fra Sales med kunder i Supply Chain Management
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere konti fra Dynamics 365 Sales med Supply Chain Management.
+description: Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere konti fra Dynamics 365 Sales med Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8d415174f62c511626852b91f3591f907b4a85ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851559"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisere konti direkte fra Sales med kunder i Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8063079"
 > [!NOTE]
 > Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere konti direkte fra Dynamics 365 Sales med Dynamics 365 Supply Chain Management.
+Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere konti direkte fra Dynamics 365 Sales med Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
@@ -101,7 +101,7 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 ![Skabelontilknytning i dataintegration.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 
 [Kundeemne til kontanter](prospect-to-cash.md)

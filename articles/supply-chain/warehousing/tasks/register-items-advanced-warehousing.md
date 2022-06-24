@@ -1,6 +1,6 @@
 ---
 title: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
-description: Dette emne præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.
+description: Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863615"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder.
+Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder.
 
 ## <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil gennemgå dette scenario ved hjælp af de eksempelposter og værdier, der er angivet i dette emne, skal du bruge et system, hvor standarddemodataene er installeret, og du skal vælge den juridiske enhed *USMF*, før du går i gang.
+Hvis du vil gennemgå dette scenario ved hjælp af de eksempelposter og værdier, der er angivet i denne artikel, skal du bruge et system, hvor standarddemodataene er installeret, og du skal vælge den juridiske enhed *USMF*, før du går i gang.
 
 Du kan i stedet gennemgå dette scenario ved at erstatte værdier fra dine egne data, hvis du har følgende tilgængelige data:
 

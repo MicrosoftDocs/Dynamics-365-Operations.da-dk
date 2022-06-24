@@ -1,6 +1,6 @@
 ---
 title: Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
-description: Dette emne viser, hvordan du indtaster svar på en tilbudsanmodning (RFQ), angiver score og sammenligner bud og derefter tildeler kontrakten en af leverandørerne.
+description: Denne artikel viser, hvordan du indtaster svar på en tilbudsanmodning (RFQ), angiver score og sammenligner bud og derefter tildeler kontrakten en af leverandørerne.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677360"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893375"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du indtaster svar på en tilbudsanmodning (RFQ), angiver score og sammenligner bud og derefter tildeler kontrakten en af leverandørerne. Du kan bruge denne procedure i **USMF**-demodatafirmaet.
+Denne artikel viser, hvordan du indtaster svar på en tilbudsanmodning (RFQ), angiver score og sammenligner bud og derefter tildeler kontrakten en af leverandørerne. Du kan bruge denne procedure i **USMF**-demodatafirmaet.
 
 Før du starter proceduren, skal du have en tilbudsanmodning, der har to linjer og er blevet sendt til mindst to leverandører. Hvis du vil oprette denne tilbudsanmodning, skal du [Oprette en tilbudsanmodningsprocedure](create-request-quotation.md). Der skal også være oprettet scorekriterier, før du kan fuldføre denne procedure.
 

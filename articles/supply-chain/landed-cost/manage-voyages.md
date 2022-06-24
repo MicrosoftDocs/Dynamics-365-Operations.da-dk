@@ -1,6 +1,6 @@
 ---
 title: Administrere fragter
-description: Dette emne beskriver, hvordan du kan arbejde med fragter. En fragt repræsenterer typisk et fartøj. Afhængigt af dine fremgangsmåder og procedurer kan den dog repræsentere en leverandør, en indkøbsordre eller et andet element, der kan give mening for din organisation.
+description: Denne artikel beskriver, hvordan du kan arbejde med fragter. En fragt repræsenterer typisk et fartøj. Afhængigt af dine fremgangsmåder og procedurer kan den dog repræsentere en leverandør, en indkøbsordre eller et andet element, der kan give mening for din organisation.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905857"
 ---
 # <a name="manage-voyages"></a>Administrere fragter
 
@@ -96,7 +96,7 @@ Hvis du vil åbne **Linjer**-visningen, skal du åbne en fragt og derefter vælg
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>Oplysninger i oversigtspanelet Fragtoverskrift
 
-Oversigtspanelet **Fragtoverskrift** i visningen **Linjer** for en fragt indeholder grundlæggende oplysninger, der beskriver fragten. Mange af de felter, der vises i dette oversigtspanel, vises også i **Overskrift**-visningen, som det beskrives senere i dette emne.
+Oversigtspanelet **Fragtoverskrift** i visningen **Linjer** for en fragt indeholder grundlæggende oplysninger, der beskriver fragten. Mange af de felter, der vises i dette oversigtspanel, vises også i **Overskrift**-visningen, som det beskrives senere i denne artikel.
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>Oplysninger i oversigtspanelet Fragtlinjer
 

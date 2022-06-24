@@ -1,6 +1,6 @@
 ---
 title: Flytte, erstatte og installere aktiver
-description: Dette emne forklarer, hvordan du flytter, erstatter og installerer aktiver i Styring af aktiver.
+description: Denne artikel forklarer, hvordan du flytter, erstatter og installerer aktiver i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872118"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiver
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769629"
 
  
 
-Dette emne forklarer, hvordan du flytter, erstatter og installerer aktiver i Styring af aktiver. Du kan oprette individuelle aktiver, der ikke har relationer til andre aktiver, eller du kan oprette en aktivstruktur, der omfatter et overordnet aktiv (aktiv på øverste niveau) og relaterede underordnede aktiver (underaktiver). I Styring af aktiver er der tre metoder til at flytte og ændre placeringen af et aktiv:
+Denne artikel forklarer, hvordan du flytter, erstatter og installerer aktiver i Styring af aktiver. Du kan oprette individuelle aktiver, der ikke har relationer til andre aktiver, eller du kan oprette en aktivstruktur, der omfatter et overordnet aktiv (aktiv på øverste niveau) og relaterede underordnede aktiver (underaktiver). I Styring af aktiver er der tre metoder til at flytte og ændre placeringen af et aktiv:
 
 - **Flyt** – flyt et aktiv til en anden aktivstruktur eller til et andet sted i samme aktivstruktur.
 - **Erstat** – fjern midlertidigt et aktiv fra en aktivstruktur, så det kan repareres eller renoveres, og føj derefter det renoverede aktiv til aktivstrukturen igen. Du kan også permanent erstatte et brugt aktiv med et nyt aktiv.
@@ -42,7 +42,7 @@ Dette emne forklarer, hvordan du flytter, erstatter og installerer aktiver i Sty
 Anvend funktionen **Flyt aktiv** for at flytte et aktiv til enten en anden aktivstruktur eller til et andet sted i samme aktivstruktur. Du kan også flytte et aktiv ud af en aktivstruktur, så det bliver et selvstændigt aktiv uden strukturrelationer.
 
 > [!NOTE]
-> Brug ikke denne funktion, hvis aktiverne repareres eller udskiftes midlertidigt. Brug i stedet funktionen **Erstat aktiv**, som beskrives senere i dette emne.
+> Brug ikke denne funktion, hvis aktiverne repareres eller udskiftes midlertidigt. Brug i stedet funktionen **Erstat aktiv**, som beskrives senere i denne artikel.
 
 1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
 2. Vælg hvilket aktiv, du ønsker at flytte, på listen. Hvis aktivet har underordnede aktiver, flytter du også disse aktiver.

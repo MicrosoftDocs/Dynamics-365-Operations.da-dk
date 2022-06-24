@@ -1,6 +1,6 @@
 ---
 title: Visuelle konfigurationer af POS-brugergrænseflade
-description: Dette emne indeholder oplysninger om skærmlayouts til Dynamics 365 Commerce POS-oplevelserne.
+description: Denne artikel indeholder oplysninger om skærmlayouts til Dynamics 365 Commerce POS-oplevelserne.
 author: boycezhu
 ms.date: 09/22/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22a35d69780a48415076dd70c21c33b1024c217d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871627"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurationer af POS-brugergrænseflade
 
 [!include [banner](includes/banner.md)]
 
 
-Brugergrænsefladen i Microsoft Dynamics 365 Commerce POS (Point Of Sale) kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og brugere. Dette emne indeholder oplysninger om disse konfigurationsvalg.
+Brugergrænsefladen i Microsoft Dynamics 365 Commerce POS (Point Of Sale) kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og brugere. Denne artikel indeholder generelle oplysninger om disse konfigurationsmuligheder.
 
 I følgende illustration vises forholdet mellem de forskellige enheder, der udgør de konfigurerbare elementer i POS-brugergrænsefladen.
 

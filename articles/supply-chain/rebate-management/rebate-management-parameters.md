@@ -1,6 +1,6 @@
 ---
-title: Parametre til rabatstyring
-description: I dette emne beskrives siden Parametre for rabatstyring. Denne side indeholder indstillinger, der påvirker bogføring, statusopdateringer, nummerserier og anden funktionalitet.
+title: Parametre til Rabatstyring
+description: Denne artikel beskriver siden Parametre for rabatstyring. Denne side indeholder indstillinger, der påvirker bogføring, statusopdateringer, nummerserier og anden funktionalitet.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895519"
 ---
 # <a name="rebate-management-parameters"></a>Parametre til rabatstyring
 
@@ -45,11 +45,11 @@ I følgende tabel beskrives de felter, der er tilgængelige under fanen **Rabats
 
 ## <a name="number-sequences-tab"></a>Fanen Nummerserier
 
-Brug fanen **Nummerserier** på siden **Parametre for rabatstyring** til at tildele nummerseriekoder til de forskellige nummerserier, som Rabatstyring bruger. I følgende tabel beskrives formålet med hver af disse nummerserier. Yderligere oplysninger om nummerserier finder du i [Oversigt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) og relaterede emner.
+Brug fanen **Nummerserier** på siden **Parametre for rabatstyring** til at tildele nummerseriekoder til de forskellige nummerserier, som Rabatstyring bruger. I følgende tabel beskrives formålet med hver af disse nummerserier. Yderligere oplysninger om nummerserier finder du i [Oversigt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) og relaterede artikler.
 
-| Reference | Betegnelse |
+| Reference | Beskrivende tekst |
 |---|---|
-| Rabatstyringshandel | Nummerserien tildeler en entydig nøgleværdi til hver rabataftale. Denne nøgle bruges, når der oprettes aftaler. |
+| Rabatstyringsaftale | Nummerserien tildeler en entydig nøgleværdi til hver rabataftale. Denne nøgle bruges, når der oprettes aftaler. |
 | Rabatstyringsnummer | Nummerserien tildeler en entydig nøgleværdi til hver rabat. Denne nøgle bruges til at identificere rabatrelationer. |
 | Rabattransaktionsnummer | Nummerserien tildeler en entydig nøgleværdi til hver rabattransaktion. Denne nøgle bruges til at identificere rabattransaktioner. |
 | Momsfaktura | Nummerserien tildeler en entydig nøgleværdi til hver rabatfaktura. Denne nøgle bruges, når rabatkladder bogføres automatisk. |

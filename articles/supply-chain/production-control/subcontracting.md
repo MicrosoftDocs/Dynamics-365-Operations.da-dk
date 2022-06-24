@@ -1,6 +1,6 @@
 ---
 title: Underleverandørarbejde
-description: Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Dynamics 365 Supply Chain Management.
+description: Med denne artikel kan du opbygge en gennemgang af underleverandørarbejde i produktion i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854171"
 ---
 # <a name="subcontracting"></a>Underleverandørarbejde
 
 [!include [banner](../includes/banner.md)]
 
-Med dette emne kan du opbygge en gennemgang af underleverandørarbejde i produktion i Microsoft Dynamics 365 Supply Chain Management. Den første del af dette emne beskriver opsætningen af dataene. Den anden del fører dig gennem trinnene i gennemgangen.
+Med denne artikel kan du opbygge en gennemgang af underleverandørarbejde i produktion i Microsoft Dynamics 365 Supply Chain Management. Den første del af denne artikel beskriver opsætningen af dataene. Den anden del fører dig gennem trinnene i gennemgangen.
 
 ## <a name="target-audience"></a>Målgruppe
 
-I dette emne lærer du, hvordan du konfigurerer underleverandørarbejde i produktion. Du skal bruge eksisterende data i den juridiske enhed HQUS til at foretage grundlæggende opsætning af et aktivitetsflow for underleverandørarbejde. Demodataene i den juridiske enhed HQUS omfatter opsætningsparametre, der er forudindstillet til at understøtte trinnene i gennemgangen. Selvom gennemgangen omhandler vigtige smertepunkter og udfordringer for forskellige roller, kan den fuldføres af systemadministratoren.
+I denne artikel lærer du, hvordan du konfigurerer underleverandørarbejde i produktion. Du skal bruge eksisterende data i den juridiske enhed HQUS til at foretage grundlæggende opsætning af et aktivitetsflow for underleverandørarbejde. Demodataene i den juridiske enhed HQUS omfatter opsætningsparametre, der er forudindstillet til at understøtte trinnene i gennemgangen. Selvom gennemgangen omhandler vigtige smertepunkter og udfordringer for forskellige roller, kan den fuldføres af systemadministratoren.
 
 ## <a name="demo-scenario"></a>Demoscenarie
 

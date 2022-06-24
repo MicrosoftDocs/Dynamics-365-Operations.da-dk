@@ -1,6 +1,6 @@
 ---
 title: Efterkalkuleret varetræk
-description: I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing.
+description: Denne artikel introducerer begrebet efterkalkuleret varetræk, der bruges til lean manufacturing.
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906089"
 ---
 # <a name="backflush-costing"></a>Efterkalkuleret varetræk
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing. 
+Denne artikel introducerer begrebet efterkalkuleret varetræk, der bruges til lean manufacturing. 
 
 Med efterkalkulation af lean manufacturing kan produktionsflowet bruge metoden til omkostningsakkumulering, også kaldet efterkalkuleret varetræk. I metoden til efterkalkuleret varetræk akkumuleres de direkte materialer, der forbruges, i produktionsflowets omkostningskonto for igangværende arbejde (IGVF). Lagermodelgruppen for standardkostprisen anvendes. De produkter, der modtages fra produktionsflowet, trækkes fra IGVF til deres standardkostpris. Den væsentligste forskel mellem efterkalkuleret varetræk og standardkostprisen er, at for efterkalkuleret varetræk beregnes afvigelser ikke pr. kanban eller færdigt produkt. I stedet beregnes afvigelser pr. produktionsflow over en periode. Denne metode medfører et virkeligt lean koncept til rapportering af materialeforbrug. Dedikerede plukkede mængder materiale rapporteres ikke til en kanban- eller produktionsordre. I stedet klargøres komplette batches eller materialehåndteringsenheder til produktionsflowet. Når batches eller materialehåndteringsenheder registreres som tomme, bliver de angivet som forbrugt. Avanceret forbrug kan bruges, afhængigt af [konfigurationen af produktionsflowet](../production-control/lean-manufacturing-modeling-lean-organization.md). Før avanceret forbrug kan anvendes, skal organisationer tillade sig at lade materiale forsvinde i produktionsflowets IGVF. Det periodiske efterkalkulerede varetræk bestemmer den faktiske værdi af IGVF til slutningen af perioden. Denne afgørelse er baseret på kanban-materialehåndteringsenhederne og kanban-jobbets status. Afvigelser mellem de gældende værdier og de faktiske værdier for IGVF pr. kostprisgruppe og vare efterkalkuleres og vises som afvigelser.
 

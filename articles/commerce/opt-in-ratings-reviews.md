@@ -1,6 +1,6 @@
 ---
-title: Tilvælge brug af vurderinger og anmeldelser
-description: I dette emne beskrives, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
+title: Tilvælge brug af bedømmelser og anmeldelser
+description: Denne artikel beskriver, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
 author: gvrmohanreddy
 ms.date: 02/16/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: b591799bd5bf00e74e782040bfdc1b678c4c87d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906906"
 ---
-# <a name="opt-in-to-use-ratings-and-reviews"></a>Tilvælge brug af vurderinger og anmeldelser
+# <a name="opt-in-to-use-ratings-and-reviews"></a>Tilvælge brug af bedømmelser og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
+Denne artikel beskriver, hvordan du kan tilvælge at bruge vurderinger og anmeldelser på dit Microsoft Dynamics 365 Commerce-websted.
 
 Vurderings- og anmeldelsesløsningen er en omnikanalløsning, du kan stille til rådighed i Dynamics 365 Commerce ved hjælp af Microsoft Dynamics Lifecycle Services (LCS). LCS er en administrationsportal, som detailhandlere kan bruger til at styre deres miljøer fra klargøring til nedlukning.
 

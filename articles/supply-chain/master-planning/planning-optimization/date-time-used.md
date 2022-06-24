@@ -1,6 +1,6 @@
 ---
 title: Dato- og klokkeslætsparametre, der bruges af planlægningsoptimering
-description: Dette emne indeholder oplysninger om parametrene for dato og klokkeslæt, som planlægningsoptimering bruger under driften.
+description: Denne artikel indeholder oplysninger om parametrene for dato og klokkeslæt, som planlægningsoptimering bruger under driften.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885893"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Dato- og klokkeslætsparametre, der bruges af planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne indeholder oplysninger om parametrene for dato og klokkeslæt, som planlægningsoptimering bruger under driften.
+Denne artikel indeholder oplysninger om parametrene for dato og klokkeslæt, som planlægningsoptimering bruger under driften.
 
 Mens det indbyggede program til varedisponering bruger transaktionsdatoer i alle beregninger, arbejder planlægningsoptimering med dato- og tidsværdier, der konverteres til datoer. Denne forskel i adfærd kan føre til situationer, hvor prognosetransaktioner, der f.eks. er oprettet ved midnat den dag, hvor der køres varedisponering, ikke er medtaget, da planlægningsoptimering mener, at de var oprettet før dags dato.
 

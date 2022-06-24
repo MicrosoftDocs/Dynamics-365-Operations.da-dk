@@ -1,6 +1,6 @@
 ---
-title: Offentlige API'er for Lagersynlighed
-description: Dette emne beskriver de offentlige API'er, der leveres via Lagersynlighed.
+title: Offentlige API'er til Inventory Visibility
+description: Denne artikel beskriver de offentlige API'er, der leveres via Lagersynlighed.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902018"
 ---
-# <a name="inventory-visibility-public-apis"></a>Offentlige API'er for Lagersynlighed
+# <a name="inventory-visibility-public-apis"></a>Offentlige API'er til Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne beskriver de offentlige API'er, der leveres via Lagersynlighed.
+Denne artikel beskriver de offentlige API'er, der leveres via Lagersynlighed.
 
 Den offentlige REST-API til tilføjelsesprogrammet Lagersynlighed viser flere specifikke slutpunkter for integration. Det understøtter fire overordnede interaktionstyper:
 
@@ -160,7 +160,7 @@ Hvis du vil hente et token for sikkerhedstjenesten, skal du følge disse trin.
    ```
 
 > [!IMPORTANT]
-> Når du bruger anmodningssamlingen *Postman* til at kalde offentlige API'er for lagersynlighed, skal du tilføje et ihændehaver-token for hver anmodning. Hvis du vil finde dit ihændehaver-token, skal du vælge fanen **Godkendelse** under URL-adressen til anmodningen, vælge typen **Ihændehaver-token** og kopiere det adgangstoken, der blev hentet i det sidste trin. I senere afsnit til dette emne bruges `$access_token` til at repræsentere det token, der blev hentet i sidste trin.
+> Når du bruger anmodningssamlingen *Postman* til at kalde offentlige API'er for lagersynlighed, skal du tilføje et ihændehaver-token for hver anmodning. Hvis du vil finde dit ihændehaver-token, skal du vælge fanen **Godkendelse** under URL-adressen til anmodningen, vælge typen **Ihændehaver-token** og kopiere det adgangstoken, der blev hentet i det sidste trin. I senere afsnit til denne artikel bruges `$access_token` til at repræsentere det token, der blev hentet i sidste trin.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Oprette ændringshændelser for disponibelt antal
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forskellig fra funktionsmåden for de API'er, der er beskrevet i afsnittet [Oprette ændringshændelser for disponibelt antal](#create-onhand-change-event) tidligere i dette emne. I dette eksempel vil antallat for produktet *T-shirt* blive angivet til 1.
+Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forskellig fra funktionsmåden for de API'er, der er beskrevet i afsnittet [Oprette ændringshændelser for disponibelt antal](#create-onhand-change-event) tidligere i denne artikel. I dette eksempel vil antallat for produktet *T-shirt* blive angivet til 1.
 
 ```json
 [

@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integration af regnskabsregistreringstjeneste i Den Tjekkiske Republik
-description: Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Den Tjekkiske Republik i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Den Tjekkiske Republik i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910492"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Eksempel på integration af regnskabsregistreringstjeneste i Den Tjekkiske Republik
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Den Tjekkiske Republik i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Den Tjekkiske Republik i Microsoft Dynamics 365 Commerce.
 
 For at opfylde lokale regnskabsmæssige krav til kasseapparater i Den Tjekkiske Republik omfatter Dynamics 365 Commerce-funktionaliteten for Den Tjekkiske Republik en eksempelintegration af POS med en ekstern tjeneste til regnskabsregistrering. Eksemplet udvider [funktionen til regnskabsintegration](fiscal-integration-for-retail-channel.md). Den er baseret på [EFR-løsningen (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) fra [EFSTA](https://efsta.org/) og giver mulighed for kommunikation med EFR-tjenesten via HTTPS-protokollen. EFR-tjenesten sikrer elektronisk registrering af salg (EET - Elektronická evidence tržeb), dvs. onlineoverførsel af salgsdataene til en finansiel webtjeneste for skattemyndigheder.
 
@@ -371,7 +371,7 @@ Formålet med POS-regnskabsconnector-udvidelsen er at kommunikere med tjenesten 
 
 #### <a name="fiscal-connector-factory"></a>Fabrik for regnskabsconnector
 
-Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce-hovedkontoret.
+Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce Headquarters.
 
 #### <a name="efr-fiscal-connector"></a>EFR-regnskabsconnector
 

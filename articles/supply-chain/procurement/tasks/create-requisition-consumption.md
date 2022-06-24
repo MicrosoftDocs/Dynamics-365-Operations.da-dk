@@ -1,6 +1,6 @@
 ---
 title: Oprette en forbrugsrekvisition
-description: I dette emne beskrives processen til oprettelse af en rekvisition.
+description: Denne artikel beskriver processen til oprettelse af en rekvisition.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888464"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Oprette en forbrugsrekvisition
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives processen til oprettelse af en rekvisition. Den viser forskellige måder at søge efter produkter i indkøbskataloget, og hvordan du tilføjer et produkt, der ikke findes i kataloget. Inden du begynder denne procedure, skal du have en indkøbspolitik, der er konfigureret med Forbrug som standardtypen for rekvisitionen. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Proceduren kan kun udføres af en brugerprofil, der er angivet som arbejder. Denne opgave vil normalt udføres af en medarbejder. **Medarbejder**-sikkerhedsrollen tillader, at du kan udføre opgaverne, eller hvis du bruger USMF, kan du logge på som **Alicia**.
+Denne artikel beskriver processen til oprettelse af en rekvisition. Den viser forskellige måder at søge efter produkter i indkøbskataloget, og hvordan du tilføjer et produkt, der ikke findes i kataloget. Inden du begynder denne procedure, skal du have en indkøbspolitik, der er konfigureret med Forbrug som standardtypen for rekvisitionen. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Proceduren kan kun udføres af en brugerprofil, der er angivet som arbejder. Denne opgave vil normalt udføres af en medarbejder. **Medarbejder**-sikkerhedsrollen tillader, at du kan udføre opgaverne, eller hvis du bruger USMF, kan du logge på som **Alicia**.
 
 
 ## <a name="create-a-new-requisition"></a>Opret en ny rekvisition

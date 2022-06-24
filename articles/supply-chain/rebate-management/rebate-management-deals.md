@@ -1,6 +1,6 @@
 ---
-title: Rabatstyringsaftaler
-description: Dette emne beskriver, hvordan du opretter rabatstyringsaftaler. Aftaler bruges til at styre forskellige metoder og grundlag for beregning af rabatter og royalties. De omfatter regler for inkludering og udelukkelser.
+title: Rabatstyringshandler
+description: Denne artikel beskriver, hvordan du opretter rabatstyringsaftaler. Aftaler bruges til at styre forskellige metoder og grundlag for beregning af rabatter og royalties. De omfatter regler for inkludering og udelukkelser.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851588"
 ---
 # <a name="rebate-management-deals"></a>Rabatstyringsaftaler
 
 [!include [banner](../includes/banner.md)]
 
-Rabatstyringsaftaler bruges til at styre forskellige metoder og grundlag for beregning af rabatter og royalties. De omfatter regler for inkludering og udelukkelser. Der er tre typer rabatstyringsaftaler: debitorrabatter, debitorroyalties og kreditorrabatter. Alle tre typer bruger samme indstillinger. I dette emne påpeges forskelle, hvor de findes.
+Rabatstyringsaftaler bruges til at styre forskellige metoder og grundlag for beregning af rabatter og royalties. De omfatter regler for inkludering og udelukkelser. Der er tre typer rabatstyringsaftaler: debitorrabatter, debitorroyalties og kreditorrabatter. Alle tre typer bruger samme indstillinger. Denne artikel påpeger forskelle, hvor de findes.
 
 ## <a name="create-a-deal"></a>Oprette en aftale
 
@@ -118,7 +118,7 @@ Fanen **Generelt** i oversigtspanelet **Rabatstyringsdetaljer** giver dig muligh
 
 | Felt | Betegnelse |
 |---|---|
-| Beregningsmåde | Vælg den metode, der skal bruges, når den valgte aftalelinje kombineres med andre aftalelinjer (*Trinvis*, *Akkumuleret*, *Glidende* eller *Total*). Værdien i dette felt kan påvirke udfaldet af rabatberegningerne markant. Du kan finde en detaljeret beskrivelse af de enkelte metoder og eksempler, der viser, hvordan det påvirker rabatberegningen, i afsnittet [Beregningsmetoder for aftalelinjer](#calc-methods) senere i dette emne. |
+| Beregningsmåde | Vælg den metode, der skal bruges, når den valgte aftalelinje kombineres med andre aftalelinjer (*Trinvis*, *Akkumuleret*, *Glidende* eller *Total*). Værdien i dette felt kan påvirke udfaldet af rabatberegningerne markant. Du kan finde en detaljeret beskrivelse af de enkelte metoder og eksempler, der viser, hvordan det påvirker rabatberegningen, i afsnittet [Beregningsmetoder for aftalelinjer](#calc-methods) senere i denne artikel. |
 | Basis | Vælg, om rabatten anvendes baseret på antal (dvs. det samlede antal enheder, der er købt eller solgt) eller værdi (dvs. den samlede pris for varer, der er købt eller solgt). |
 | Transaktionstype | <p>Vælg det punkt i processen, hvor beregningen skal finde sted:</p><ul><li>*Ordre* – Brug det bestilte antal eller den bestilte værdi som udgangspunkt for beregningen.</li><li>*Leveret* – Brug det leverede antal eller den leverede værdi som udgangspunkt for beregningen.</li><li>*Faktura* – Brug det fakturerede antal eller den fakturerede værdi som udgangspunkt for beregningen.</li></ul> |
 | Enhed | Hvis du valgte *Antal* i feltet **Basis**, skal du vælge den enhed, som antallet skal angives i. |

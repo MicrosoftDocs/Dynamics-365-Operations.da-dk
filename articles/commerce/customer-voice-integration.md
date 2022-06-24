@@ -1,6 +1,6 @@
 ---
-title: Integrere Customer Voice i e-handelswebsider
-description: Dette emne indeholder en beskrivelse af, hvordan du kan integrere Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-e-handelswebsider.
+title: Integrer Customer Voice i e-handelswebstedssider
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan integrere Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-e-handelswebsider.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850324"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrere Customer Voice i e-handelswebsider
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrer Customer Voice i e-handelswebstedssider
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan integrere Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-e-handelswebsider.
+Denne artikel indeholder en beskrivelse af, hvordan du kan integrere Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-e-handelswebsider.
 
 Du kan integrere [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) i dit e-handelswebsted for at indsamle, analysere og spore kundefeedback i realtid. For at komme i gang med integrationen skal du oprette en konto og vælge en projektskabelon til Customer Voice for den type feedback, du vil indsamle.
 
@@ -37,7 +37,7 @@ Benyt følgende fremgangsmåde for at vælge en projektskabelon til Customer Voi
 1. Vælg projektskabelonen for den type feedback, du vil indsamle, og vælg derefter **Næste**.
 1. Vælg et integrationsformat under **Vælg et integrationsformat** under fanen **Send**. Feltet **Integreret kode** viser den kode, der skal være integreret i Commerce-webstedsgeneratoren.
 
-Eksemplerne i dette emne bruger projektskabelonen **Periodisk kundeundersøgelse** og integreringsformatet **Knap**.
+Eksemplerne i denne artikel bruger projektskabelonen **Periodisk kundeundersøgelse** og integreringsformatet **Knap**.
 
 I følgende eksempelillustration vises siden med projektskabelonen **Periodisk kundeundersøgelse**, hvor indstillingen for integreringsformatet **Knap** er valgt, og integrationskoden for denne indstilling vises i feltet **Integreret kode**. Der kræves tre separate handlinger for at integrere den angivne kode i webstedets sider, som beskrevet i følgende afsnit.
 

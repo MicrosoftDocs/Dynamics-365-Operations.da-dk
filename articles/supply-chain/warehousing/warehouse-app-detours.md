@@ -1,6 +1,6 @@
 ---
 title: Konfigurere omveje til trin i menupunkter på mobilenheder
-description: Dette emne indeholder en beskrivelse af, hvordan du konfigurerer omveje til menupunkter, så arbejdere kan tilbageholde den aktuelle opgave, udføre en anden opgave og derefter vende tilbage til den oprindelige opgave uden at miste oplysninger.
+description: Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer omveje til menupunkter, så arbejdere kan tilbageholde den aktuelle opgave, udføre en anden opgave og derefter vende tilbage til den oprindelige opgave uden at miste oplysninger.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920342"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863586"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveje til trin i menupunkter på mobilenheder
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> De funktioner, der er beskrevet i dette emne, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
+> De funktioner, der er beskrevet i denne artikel, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
 
-Dette emne indeholder en beskrivelse af, hvordan du konfigurerer omveje til menupunkter, så arbejdere kan "tilbageholde" den aktuelle opgave, udføre en anden opgave og derefter vende tilbage til den oprindelige opgave uden at miste oplysninger.
+Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer omveje til menupunkter, så arbejdere kan "tilbageholde" den aktuelle opgave, udføre en anden opgave og derefter vende tilbage til den oprindelige opgave uden at miste oplysninger.
 
 En omvej er et separat menupunkt, der kan åbnes fra et trin i en hovedopgave. I slutningen af omvejen vender arbejderen tilbage til det sted, hvor han eller hun forlod hovedopgaven. Under konfigurationen skal du angive det menupunkt, der skal fungere som omvej. Du vælger også, hvilke feltværdier fra hovedopgaven, der automatisk skal videresendes (kopieres) til omvejen og angives der. Du skal derfor forstå, hvor i opgaveflowet du ønsker, at omvejen skal være tilgængelig for arbejdere. Du skal også sikre dig, at de oplysninger, der skal kopieres til omvejen, er tilgængelige for det pågældende trin i opgaveflowet.
 
@@ -46,7 +46,7 @@ Før du kan konfigurere omveje for trin i menupunkterne på mobilenheden, skal d
     - **Modul:** *Warehouse Management*
     - **Funktionsnavn:** *Omveje i Warehouse Management-app*
 
-    Denne funktion er den funktion, der er beskrevet i dette emne.
+    Denne funktion er den funktion, der er beskrevet i denne artikel.
 
 1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
@@ -57,7 +57,7 @@ Benyt følgende fremgangsmåde, hvis du vil konfigurere en omvej fra en menuspec
 
 1. Opret en menuspecifik tilsidesættelse for den relevante menu og det relevante trin som beskrevet i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
 1. Find kombinationen af værdier for **Trin-id** og **Menupunktnavn**, som du vil redigere, og vælg derefter værdien i kolonnen **Trin-id**.
-1. På den side, der vises, kan du angive det menupunkt, der skal fungere som omvej, i oversigtspanelet **Tilgængelige omveje (menupunkter)**. Du kan også vælge, hvilke feltværdier fra hovedopgaven, der automatisk skal kopieres til og fra omvejen. Du kan finde eksempler, der viser, hvordan du bruger disse indstillinger, i scenarierne senere i dette emne.
+1. På den side, der vises, kan du angive det menupunkt, der skal fungere som omvej, i oversigtspanelet **Tilgængelige omveje (menupunkter)**. Du kan også vælge, hvilke feltværdier fra hovedopgaven, der automatisk skal kopieres til og fra omvejen. Du kan finde eksempler, der viser, hvordan du bruger disse indstillinger, i scenarierne senere i denne artikel.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Eksempelscenarie 1: Salgspluk, hvor en forespørgsel om en lokation fungerer som en omvej
 

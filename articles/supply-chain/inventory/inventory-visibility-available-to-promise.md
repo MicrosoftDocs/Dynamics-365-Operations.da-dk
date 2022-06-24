@@ -1,6 +1,6 @@
 ---
 title: Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed
-description: Dette emne indeholder en beskrivelse af, hvordan du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn).
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn).
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856187"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere funktionen *Ændringsplan for disponibelt antal*, så du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn). DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af denne beregning kan øge ordreopfyldelsesfunktionaliteten væsentligt.
+Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere funktionen *Ændringsplan for disponibelt antal*, så du kan planlægge fremtidige ændringer i den disponible beholdning og beregne DTT-mængder (disponibel til tilsagn). DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde i den næste periode. Brug af denne beregning kan øge ordreopfyldelsesfunktionaliteten væsentligt.
 
 For mange producenter, detailforhandlere eller sælgere er det ikke nok blot at vide, hvad der aktuelt er disponibelt. De skal have fuld synlighed af fremtidig tilgængelighed. I denne fremtidige tilgængelighed skal der tages højde for fremtidig forsyning, fremtidig efterspørgsel og DTT.
 

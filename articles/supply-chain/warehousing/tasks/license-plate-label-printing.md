@@ -1,6 +1,6 @@
 ---
-title: Aktivere udskrivning af id-etiket
-description: Dette emne viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk.
+title: Aktivere udskrivning af id
+description: Denne artikel viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903660"
 ---
-# <a name="enable-license-plate-label-printing"></a>Aktivere udskrivning af id-etiket
+# <a name="enable-license-plate-label-printing"></a>Aktivere udskrivning af id
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk. Du kan bruge denne procedure i USMF-demodatafirmaet. Hvis du vil køre den med dine egne data, skal du have en nummerserie defineret for id'er. Du skal konfigurere en etiketprinter, før du begynder denne opgave. Gå til Virksomhedsadministration > Opsætning > Netværksprintere. I handlingsruden skal du klikke på indstillinger og derefter klikke på knappen til Download-installationsprogram for dokumentets ruteplanlægningsagent. Kør installationsprogrammet, og sørg for, at du har en fungerende netværksprinter, der er aktiveret, før du fortsætter med proceduren.
+Denne artikel viser, hvordan du aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk. Du kan bruge denne procedure i USMF-demodatafirmaet. Hvis du vil køre den med dine egne data, skal du have en nummerserie defineret for id'er. Du skal konfigurere en etiketprinter, før du begynder denne opgave. Gå til Virksomhedsadministration > Opsætning > Netværksprintere. I handlingsruden skal du klikke på indstillinger og derefter klikke på knappen til Download-installationsprogram for dokumentets ruteplanlægningsagent. Kør installationsprogrammet, og sørg for, at du har en fungerende netværksprinter, der er aktiveret, før du fortsætter med proceduren.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Angiv GS1-virksomhedspræfikset

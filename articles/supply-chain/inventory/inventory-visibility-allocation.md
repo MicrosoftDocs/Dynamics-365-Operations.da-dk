@@ -1,8 +1,8 @@
 ---
-title: Lagerfordeling for lagersynlighed
-description: Dette emne forklarer, hvordan du opretter og bruger lagerfordelingsfunktionen, hvilket giver dig mulighed for at sætte en dedikeret lagerbeholdning til side for at sikre, at du kan honorere de mest profitable kanaler eller kunder.
+title: Allokering af Inventory Visibility-slager
+description: Denne artikel forklarer, hvordan du opretter og bruger lagerfordelingsfunktionen, hvilket giver dig mulighed for at sætte en dedikeret lagerbeholdning til side for at sikre, at du kan honorere de mest profitable kanaler eller kunder.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852499"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagerfordeling for lagersynlighed
 
@@ -98,7 +98,7 @@ Her er de første beregnede målinger:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Føje andre fysiske måleenheder til den beregnede måling "available-to-allocate"
 
-Hvis du vil bruge fordeling, skal du konfigurere den beregnede måling available-to-allocate (`@iv`.`@available_to_allocate`). Du har f.eks. datakilden `fno` og målingen `onordered`, datakilden `pos` og målingen `inbound`, og du vil fordele den disponible beholdning for summen af `fno.onordered` og `pos.inbound`. I dette tilfælde skal `@iv.@available_to_allocate` indeholde `pos.inbound` og `fno.onordered` i formlen. Her er et eksempel:
+Hvis du vil bruge fordeling, skal du konfigurere den beregnede måling available-to-allocate (`@iv.@available_to_allocate`). Du har f.eks. datakilden `fno` og målingen `onordered`, datakilden `pos` og målingen `inbound`, og du vil fordele den disponible beholdning for summen af `fno.onordered` og `pos.inbound`. I dette tilfælde skal `@iv.@available_to_allocate` indeholde `pos.inbound` og `fno.onordered` i formlen. Her er et eksempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Du kan angive gruppenavnene på siden **Konfiguration af Power App for lagersynl
 
 Hvis du f.eks. bruger fire gruppenavne og angiver dem til \[`channel`, `customerGroup`, `region`, `orderType`\], gælder disse navne for fordelingsrelaterede anmodninger, når du kalder API til konfigurationsopdatering.
 
-### <a name="allcoation-using-tips"></a>Fordeling ved hjælp af tip
+### <a name="allocation-using-tips"></a>Fordeling ved hjælp af tip
 
-- For hvert produkt skal fordelingsfunktionen bruge samme dimensionsniveau i henhold til det produktindekshierarkiet, som du har angivet i [konfigurationen af produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration). Indekshierarkiet er f.eks. Sted, Lokation, Farve, Størrelse. Hvis du fordeler et antal til ét produkt på niveauet Sted, Lokation og Farve. Næste gang du bruger fordeling, skal det også være på niveauet Sted, Lokation og Farve. Hvis du bruger niveauet Sted, Lokation, Farve og Størrelse eller Sted, Lokation, vil dataene ikke være konsistente.
+- For hvert produkt skal fordelingsfunktionen bruge samme *dimensionsniveau* i henhold til det produktindekshierarkiet, som du har angivet i [konfigurationen af produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration). Forestil dig f.eks., at indekshierarkiet er \[`Site`, `Location`, `Color`, `Size`\]. Hvis du tildeler et antal for ét produkt på dimensionsniveau \[`Site`, `Location`, `Color`\]næste gang du vil tildele dette produkt, skal du også tildele det på samme niveau, \[`Site`, `Location`, `Color`\] Hvis du bruger niveauet \[`Site`, `Location`, `Color`, `Size`\] eller \[`Site`, `Location`\] vil dataene være uoverensstemmende.
 - Ændring af navnet på fordelingsgruppen har ikke indflydelse på de data, der gemmes i tjenesten.
 - Fordelingen skal ske, når produktet har det positive disponible antal.
+- Hvis du vil fordele produkter fra en gruppe på højt *tildelingsniveau* til en undergruppe, skal du bruge `Reallocate` API. Du har f.eks. et fordelingsgruppehierarki, \[`channel` `customerGroup`, `region`, `orderType`\], og du vil tildele et produkt fra tildelingsgruppen \[Online, VIP\] til underfordelingsgruppen \[Online, VIP, EU\], brug `Reallocate` API til at flytte antallet. Hvis du bruger `Allocate` API, vil den tildele antallet fra den virtuelle fælles pulje.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Brug af fordelings-API
 

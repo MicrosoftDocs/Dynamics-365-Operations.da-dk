@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675369"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846207"
 ---
 # <a name="compare-item-prices-storage-report"></a>Sammenlign lagerrapport over varepriser
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du kan køre en rapport over **Sammenligning af lagerets varepriser** og gøre outputtet digitalt tilgængeligt enten som en interaktiv side i Dynamics 365 Supply Chain Management eller som et eksporteret dokument i et af de flere tilgængelige formater.
+Denne artikel forklarer, hvordan du kan køre en rapport over **Sammenligning af lagerets varepriser** og gøre outputtet digitalt tilgængeligt enten som en interaktiv side i Dynamics 365 Supply Chain Management eller som et eksporteret dokument i et af de flere tilgængelige formater.
 
 Når du får vist rapporten i din browser, reguleres kolonner og aggregerede saldi dynamisk, afhængigt af det layout, du har konfigureret. Du kan sortere resultaterne, filtrere dem, gå mere i dybden i dataene og meget mere.
 

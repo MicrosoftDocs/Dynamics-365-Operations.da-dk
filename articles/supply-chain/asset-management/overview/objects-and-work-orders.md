@@ -1,6 +1,6 @@
 ---
 title: Aktiver og arbejdsordrer
-description: I dette emne beskrives aktiver og arbejdsordrer i Styring af aktiver.
+description: Denne artikel beskriver aktiver og arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718101"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869685"
 ---
 # <a name="assets-and-work-orders"></a>Aktiver og arbejdsordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718101"
 
  
 
-I dette emne beskrives aktiver og arbejdsordrer i Styring af aktiver. Aktiver og arbejdsordrer er de centrale dele af Styring af aktiver. Et *Aktiv* er en maskine eller en maskindel, der kræver kontinuerlig vedligeholdelse og service. Aktiver kan oprettes i en hierarkisk struktur, og de kan relateres til arbejdssteder. Vedligeholdelsesjob kan planlægges på alle niveauer i aktivstrukturen.
+Denne artikel beskriver aktiver og arbejdsordrer i Styring af aktiver. Aktiver og arbejdsordrer er de centrale dele af Styring af aktiver. Et *Aktiv* er en maskine eller en maskindel, der kræver kontinuerlig vedligeholdelse og service. Aktiver kan oprettes i en hierarkisk struktur, og de kan relateres til arbejdssteder. Vedligeholdelsesjob kan planlægges på alle niveauer i aktivstrukturen.
 
 Der oprettes forskellige data, såsom produktoplysninger og aktivspecifikation samt påkrævede vedligeholdelsesplaner, for hvert aktiv. I følgende illustration vises en oversigt over aktivdata og tilknytningen af aktiver til jobtyper. Rød tekst bruges til eksempler, der viser nedarvning og afhængigheder.
 

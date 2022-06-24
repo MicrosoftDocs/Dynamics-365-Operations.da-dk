@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
-description: I dette emne beskrives funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 04/27/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865260"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne opdateres, efterhånden som nye fjernede eller udfasede funktioner dokumenteres til Dynamics 365 Supply Chain Management.
+Denne artikel opdateres, efterhånden som nye fjernede eller udfasede funktioner dokumenteres til Dynamics 365 Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.

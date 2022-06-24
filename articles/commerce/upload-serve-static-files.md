@@ -1,6 +1,6 @@
 ---
 title: Overføre og håndtere statiske filer
-description: Dette emne beskriver, hvordan du overfører en statisk fil til Microsoft Dynamics 365 Commerce-webstedsgenerator, og hvordan du opretter en brugerdefineret URL-adresse og et filnavn, der kan bruges til at anmode om filen.
+description: Denne artikel beskriver, hvordan du overfører en statisk fil til Microsoft Dynamics 365 Commerce-webstedsgenerator, og hvordan du opretter en brugerdefineret URL-adresse og et filnavn, der kan bruges til at anmode om filen.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885316"
 ---
 # <a name="upload-and-serve-static-files"></a>Overføre og håndtere statiske filer
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du overfører en statisk fil til Microsoft Dynamics 365 Commerce-webstedsgenerator, og hvordan du opretter en brugerdefineret URL-adresse og et filnavn, der kan bruges til at anmode om filen.
+Denne artikel beskriver, hvordan du overfører en statisk fil til Microsoft Dynamics 365 Commerce-webstedsgenerator, og hvordan du opretter en brugerdefineret URL-adresse og et filnavn, der kan bruges til at anmode om filen.
 
-Nogle tredjepartsconnectorer kræver, at en fil hostes og behandles på e-handelswebstedet. Disse connectorer forventer, at filen returneres efter anmodninger til en bestemt URL-adressesti til tilbagekald og filnavn. I dette emne kan du derfor læse, hvordan du kan overføre og håndtere en statisk fil, der har en brugerdefinerbar URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelswebsted.
+Nogle tredjepartsconnectorer kræver, at en fil hostes og behandles på e-handelswebstedet. Disse connectorer forventer, at filen returneres efter anmodninger til en bestemt URL-adressesti til tilbagekald og filnavn. I denne artikel kan du derfor læse, hvordan du kan overføre og håndtere en statisk fil, der har en brugerdefinerbar URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelswebsted.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Oprette en URL-adresse til et websted, der returnerer en statisk fil
 
@@ -86,7 +86,7 @@ Når der er oprettet en URL-adresse, kan dens sti ikke ændres. Hvis du skal æn
 
 Benyt følgende fremgangsmåde for at ændre URL-adressestien.
 
-1. Hvis du vil oprette en ny URL-adresse og knytte den til den eksisterende fil eller en anden ressource, skal du følge instruktionerne i afsnittet [Oprette en URL-adresse til et websted, der returnerer en statisk fil](#create-a-site-url-that-returns-a-static-file) tidligere i dette emne.
+1. Hvis du vil oprette en ny URL-adresse og knytte den til den eksisterende fil eller en anden ressource, skal du følge instruktionerne i afsnittet [Oprette en URL-adresse til et websted, der returnerer en statisk fil](#create-a-site-url-that-returns-a-static-file) tidligere i denne artikel.
 1. Vælg den nye URL-adresse, og vælg **Publicer** på kommandolinjen. Den nye URL-adresse publiceres.
 1. Hvis du vil annullere publiceringen af den gamle URL-adresse, skal du markere den og derefter vælge **Annuller publicering** på kommandolinjen. Du kan nu evt. slette den gamle URL-adresse.
 

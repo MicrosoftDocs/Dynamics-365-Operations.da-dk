@@ -1,6 +1,6 @@
 ---
-title: Aktivers tjenesteniveauer
-description: I dette emne beskrives aktivtjenesteniveauer i Styring af aktiver.
+title: Serviceniveauer for aktiv
+description: Denne artikel beskriver aktivtjenesteniveauer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908679"
 ---
-# <a name="asset-service-levels"></a>Aktivers tjenesteniveauer
+# <a name="asset-service-levels"></a>Serviceniveauer for aktiv
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-I dette emne beskrives aktivtjenesteniveauer i Styring af aktiver. Aktivers tjenesteniveauer er relateret til aktiver og overføres til vedligeholdelsesanmodninger og arbejdsordrer. De bruges til at beregne prioriteringen af arbejdsordrer i forbindelse med arbejdsordreplanlægning. Aktivers tjenesteniveauer kan ændres, hvis der er behov for ændringer.
+Denne artikel beskriver aktivtjenesteniveauer i Styring af aktiver. Aktivers tjenesteniveauer er relateret til aktiver og overføres til vedligeholdelsesanmodninger og arbejdsordrer. De bruges til at beregne prioriteringen af arbejdsordrer i forbindelse med arbejdsordreplanlægning. Aktivers tjenesteniveauer kan ændres, hvis der er behov for ændringer.
 
 Du finder flere oplysninger om den opsætning, der er relateret til beregningen af rangeringsresultater for planlægning af arbejdsordre under [Parametre for Styring af aktiver](../setup-for-objects/enterprise-asset-management-parameters.md). Du skal oprette mindst én standardpost for tjenesteniveauet for aktivet. Denne standardpost bruges, hvis der ikke findes andre match under planlægning af arbejdsordren.
 

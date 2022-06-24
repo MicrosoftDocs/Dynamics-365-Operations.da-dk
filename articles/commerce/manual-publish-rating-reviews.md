@@ -1,6 +1,6 @@
 ---
-title: Aktiver manuel udgivelse af vurderinger og vurderinger af en dag
-description: Dette emne beskriver, hvordan du aktiverer manuel udgivelse af vurderinger fra et afsnit i Microsoft Dynamics 365 Commerce, og hvordan du manuelt udgiver vurderinger.
+title: Aktivere manuel udgivelse af bedømmelser og vurderinger af en dag
+description: Denne artikel beskriver, hvordan du aktiverer manuel udgivelse af vurderinger fra et afsnit i Microsoft Dynamics 365 Commerce, og hvordan du manuelt udgiver vurderinger.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 09/03/2021
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0709173b8c3dfb7018d0bd9a712554112722a1f3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7d90cbbdc1ac0368c6ccfbeef7ff8db9b65679a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892617"
 ---
-# <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktiver manuel udgivelse af vurderinger og vurderinger af en dag
+# <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktivere manuel udgivelse af bedømmelser og vurderinger af en dag
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du aktiverer manuel udgivelse af vurderinger fra et afsnit i Microsoft Dynamics 365 Commerce, og hvordan du manuelt udgiver vurderinger.
+Denne artikel beskriver, hvordan du aktiverer manuel udgivelse af vurderinger fra et afsnit i Microsoft Dynamics 365 Commerce, og hvordan du manuelt udgiver vurderinger.
 
 Dynamics 365 Commerce-løsningen med vurderinger bruger Azure Cognitive Services til automatisk at ændre bedømmelser og indhold og til at publicere vurderinger. Derfor behøver du ikke manuel handling for at gennemse og publicere vurderinger på dit e-handelswebsted.
 

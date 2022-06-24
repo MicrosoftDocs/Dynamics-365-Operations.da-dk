@@ -1,6 +1,6 @@
 ---
-title: Reservationspolitik for fleksibel dimension for lagerstedsniveau
-description: I dette emne beskrives politikken for lagerreservation, hvor virksomheder, der sælger batchsporede produkter og kører deres logistik som WMS-aktiverede operationer, kan reservere bestemte batches for kundesalgsordrer, selvom det reservationshierarki, der er tilknyttet produkterne, ikke tillader reservation af bestemte batches.
+title: Fleksibel reservationspolitik for dimension på lagerstedsniveau
+description: Denne artikel beskriver politikken for lagerreservation, hvor virksomheder, der sælger batchsporede produkter og kører deres logistik som WMS-aktiverede operationer, kan reservere bestemte batches for kundesalgsordrer, selvom det reservationshierarki, der er tilknyttet produkterne, ikke tillader reservation af bestemte batches.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885806"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel reservationspolitik for dimension på lagerstedsniveau
 
@@ -28,7 +28,7 @@ Når et lagerreservationshierarki af typen *Batch under\[lokation\]* er knyttet 
 
 På samme måde kan specifikke id'er ikke reserveres til produkter i salgsordrer, når disse produkter er knyttet til standardreservationshierarkiet.
 
-Dette emne beskriver den politik for lagerreservation, der giver disse virksomheder mulighed for at reservere bestemte batches eller id'er, selv når produkterne er knyttet til et reservationshierarki af typen *Batch under\[lokation\]*.
+Denne artikel beskriver den politik for lagerreservation, der giver disse virksomheder mulighed for at reservere bestemte batches eller id'er, selv når produkterne er knyttet til et reservationshierarki af typen *Batch under\[lokation\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Lagerreservationshierarki
 

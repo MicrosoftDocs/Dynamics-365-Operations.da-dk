@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og vedligeholde kreditorsamarbejde
-description: I dette emne forklares, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du klargør nye brugere af kreditorsamarbejde og administrerer sikkerhedsrollerne for disse brugere.
+description: Denne artikel forklarer, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du klargør nye brugere af kreditorsamarbejde og administrerer sikkerhedsrollerne for disse brugere.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890822"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurere og vedligeholde kreditorsamarbejde
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677556"
 
 Grænsefladen for kreditorsamarbejde viser begrænsede oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne kreditorbrugere. Fra denne brugergrænseflade kan en kreditor også besvare tilbudsanmodninger og få vist og redigere grundlæggende firmaoplysninger.
 
-I dette emne forklares, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du konfigurerer en arbejdsgang for at klargøre nye brugere af kreditorsamarbejde, og hvordan du administrerer sikkerhedsrollerne for disse brugere.
+Denne artikel forklarer, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du konfigurerer en arbejdsgang for at klargøre nye brugere af kreditorsamarbejde, og hvordan du administrerer sikkerhedsrollerne for disse brugere.
 
 > [!NOTE]
 > Oplysningerne om opsætning af sikkerhedsroller til kreditorsamarbejde gælder kun for den aktuelle version af Finans og drift. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde oplysninger om brugerrettigheder for kreditorportalen i Microsoft Dynamics AX, under [Brugersikkerhed på kreditorportal](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Rollen **Kreditoradministrator (ekstern)** kan bruges til eksterne kreditorer, d
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Konfigurere sikkerhedsroller, der bruges, når mulige kreditorer onboardes
 
-Hvis du vil onboarde kreditorer, der er startet via en anmodning om registrering som mulig kreditor, skal du konfigurere en ekstern sikkerhedsrolle. Denne rolle tildeles til nye brugere under den klargøringsproces, der styres af arbejdsgangen af typen **Brugeranmodningsarbejdsgang (platform)**. Du kan finde flere oplysninger i afsnittet [Konfigurere arbejdsgange til behandling af brugeranmodninger om kreditorsamarbejde](#set-up-workflows-to-process-vendor-collaboration-user-requests) senere i dette emne.
+Hvis du vil onboarde kreditorer, der er startet via en anmodning om registrering som mulig kreditor, skal du konfigurere en ekstern sikkerhedsrolle. Denne rolle tildeles til nye brugere under den klargøringsproces, der styres af arbejdsgangen af typen **Brugeranmodningsarbejdsgang (platform)**. Du kan finde flere oplysninger i afsnittet [Konfigurere arbejdsgange til behandling af brugeranmodninger om kreditorsamarbejde](#set-up-workflows-to-process-vendor-collaboration-user-requests) senere i denne artikel.
 
 Du kan finde flere oplysninger om, hvordan mulige kreditorer onboardes, under [Modtage kreditorer](vendor-onboarding.md).
 

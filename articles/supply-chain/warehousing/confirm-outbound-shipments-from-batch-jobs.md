@@ -1,6 +1,6 @@
 ---
-title: Bekræft udgående forsendelser fra batchjob
-description: Dette emne beskriver, hvordan du opretter et batchjob, der automatisk bekræfter udgående overførselsordre forsendelser, der er til klar til afsendelse.
+title: Bekræfte udgående forsendelser fra batchjob
+description: Denne artikel beskriver, hvordan du opretter et batchjob, der automatisk bekræfter udgående overførselsordre forsendelser, der er til klar til afsendelse.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 00749a69b17b0064290d7b41ccb2171386716302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875095"
 ---
-# <a name="confirm-outbound-shipments-from-batch-jobs"></a>Bekræft udgående forsendelser fra batchjob
+# <a name="confirm-outbound-shipments-from-batch-jobs"></a>Bekræfte udgående forsendelser fra batchjob
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter et batchjob, der automatisk bekræfter udgående overførselsordre forsendelser, der er til klar til afsendelse. Det batchjob, der er beskrevet her, gælder kun for flytteordreforsendelser, ikke for salgsordrer.
+Denne artikel beskriver, hvordan du opretter et batchjob, der automatisk bekræfter udgående overførselsordre forsendelser, der er til klar til afsendelse. Det batchjob, der er beskrevet her, gælder kun for flytteordreforsendelser, ikke for salgsordrer.
 
 ## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Bekræft udgående forsendelser fra batchjob
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Bekræft udgående forsendelser fra batchjob* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Bekræft udgående forsendelser fra batchjob* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge den funktionalitet, der er beskrevet i denne artikel, skal funktionen *Bekræft udgående forsendelser fra batchjob* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Bekræft udgående forsendelser fra batchjob* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Udfør behandling af udgående forsendelser
 

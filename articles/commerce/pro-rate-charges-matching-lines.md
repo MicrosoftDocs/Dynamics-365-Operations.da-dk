@@ -1,6 +1,6 @@
 ---
 title: Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
-description: I dette emne beskrives yderligere funktioner til beregning og anvendelse af automatiske gebyrer på Commerce-kanalordrer ved hjælp af den avancerede automatiske gebyrfunktion.
+description: Denne artikel beskriver yderligere funktioner til beregning og anvendelse af automatiske gebyrer på Commerce-kanalordrer ved hjælp af den avancerede automatiske gebyrfunktion.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886926"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Beregne hovedgebyrer forholdsmæssigt på matchende salgslinjer
 
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktioner til gruppering af automatiske gebyrer på hovedniveau og til forholdsmæssig beregning af dem for handelssalgslinjer. Denne funktionalitet er tilgængelig for transaktioner, der oprettes på POS i Retail version 10.0.1, og salg, der oprettes i et callcenter i Retail version 10.0.2.
+Denne artikel beskriver funktioner til gruppering af automatiske gebyrer på hovedniveau og til forholdsmæssig beregning af dem for handelssalgslinjer. Denne funktionalitet er tilgængelig for transaktioner, der oprettes på POS i Retail version 10.0.1, og salg, der oprettes i et callcenter i Retail version 10.0.2.
 
 Denne funktionalitet er kun tilgængelig, hvis den [avancerede automatiske gebyrfunktion](/dynamics365/unified-operations/retail/omni-auto-charges) er aktiveret ved hjælp af indstillingen på siden **Commerce-parametre**. Desuden kan den forbedrede beregningsmåde for automatiske gebyrer kun anvendes til salgsordrer, der oprettes gennem handelskanaler (POS, et callcenter og Dynamics e-handelsplatformen).
 

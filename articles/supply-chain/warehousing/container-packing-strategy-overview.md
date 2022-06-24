@@ -1,6 +1,6 @@
 ---
 title: Pakningsstrategier for containere
-description: I dette emne beskrives forskellene mellem pakningsstrategier for containere, og det indeholder eksempler.
+description: Denne artikel beskriver forskellene mellem pakningsstrategier for containere, og det indeholder eksempler.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862360"
 ---
 # <a name="container-packing-strategies"></a>Pakningsstrategier for containere
 
 [!include [banner](../includes/banner.md)]
 
-En *pakningsstrategi for containere* er en strategi, som du kan bruge til at definere varefordelinger på tværs af containere. I dette emne forklares forskellene mellem strategierne *Pak i alle åbne containere* og *Pak kun i aktuel container*.
+En *pakningsstrategi for containere* er en strategi, som du kan bruge til at definere varefordelinger på tværs af containere. Denne artikel forklarer forskellene mellem strategierne *Pak i alle åbne containere* og *Pak kun i aktuel container*.
 
 - **Pak i alle åbne containere** – Systemet skal kontrollere alle åbne containere, der allerede er oprettet under containeriseringscyklussen, for at sikre, at varen kan være i en af dem. Under pakning kontrollerer systemet hver vare for at finde ud af, om den kan være i en af de tidligere oprettede containere. Hvis varen ikke kan være i en eksisterende container, opretter systemet en ny container og fortsætter, indtil det er færdig med at pakke hele ordren.
 

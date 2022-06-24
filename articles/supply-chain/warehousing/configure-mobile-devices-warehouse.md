@@ -1,6 +1,6 @@
 ---
 title: Konfigurere mobilenheder til lagerstedsarbejde
-description: Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
+description: Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905567"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
+Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 
 > [!NOTE]
-> Dette emne vedrører funktioner i Lagerstedsstyring. Den gælder ikke for funktioner i Lagerstyring. De menupunkter, der vises i menuerne på en mobilenhed for lagersted, er konfigureret på siden **Menupunkter i mobilenhed**. Da menupunkterne kan anbringes i forskellige menuer, er det nemt at konfigurere menustrukturer, så kun bestemte typer arbejde vises for bestemte brugere. Du kan konfigurere menupunkter til at gøre følgende opgaver:
+> Denne artikel vedrører funktioner i Warehouse Management. Den gælder ikke for funktioner i Lagerstyring. De menupunkter, der vises i menuerne på en mobilenhed for lagersted, er konfigureret på siden **Menupunkter i mobilenhed**. Da menupunkterne kan anbringes i forskellige menuer, er det nemt at konfigurere menustrukturer, så kun bestemte typer arbejde vises for bestemte brugere. Du kan konfigurere menupunkter til at gøre følgende opgaver:
 
 - Behandle en forespørgsel eller udføre en aktivitet, f.eks. udskrive en etiket, generere id-numre, starte en produktionsordre eller hurtigt søge efter oplysninger om varer på en lokalitet.
 - Oprette arbejde, der udføres via en anden proces. Hvis der f.eks. modtages en vare for en indkøbsordre, kan det oprette læg på lager-arbejde for en anden arbejder.
@@ -38,7 +38,7 @@ Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere
 Når du vil oprettes et menupunkt for en aktivitet eller en undersøgelse, skal du indstille feltet **Tilstand** til **Indirekte**. En liste over **Aktivitetskode** indstillinger og bliver derefter tilgængelig, så du kan vælge typen af forespørgsel eller aktivitet, som menupunktet er til. Når du vil oprette et menupunkt for at generere lagerstedsarbejde, skal du indstille feltet **Tilstand** til **Arbejde**. En liste over **Arbejdsoprettelsesproces** indstillinger og bliver derefter tilgængelig. Hvis du vil oprette et menupunkt for at behandle eksisterende lagerstedsarbejde, skal du angive feltet **Tilstand** til **Arbejde** og derefter angive indstillingen **Brug eksisterende arbejde** til **Ja**. 
 
 > [!NOTE]
-> Flere felter kan være tilgængelige for menupunktet, afhængigt af den tilstand, du vælger for menupunktet, og om menupunktet bruges til at udføre eksisterende arbejde. Du kan finde oplysninger om valg af yderligere felter i afsnittet "Yderligere indstillinger for menupunkter" i dette emne.
+> Flere felter kan være tilgængelige for menupunktet, afhængigt af den tilstand, du vælger for menupunktet, og om menupunktet bruges til at udføre eksisterende arbejde. Du kan finde oplysninger om valg af yderligere felter i afsnittet "Yderligere indstillinger for menupunkter" i denne artikel.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menupunkter for aktiviteter og forespørgsler
 

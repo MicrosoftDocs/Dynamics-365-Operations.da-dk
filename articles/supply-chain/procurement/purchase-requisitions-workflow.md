@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849352"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
@@ -89,7 +89,7 @@ I dette eksempel omfatter arbejdsgangsprocessen for indkøbsrekvisitionslinjer f
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurere en arbejdsgang for indkøbsrekvisitioner
 Hvis du skal sende en indkøbsrekvisition til gennemsyn, skal du konfigurere arbejdsgangsprocesserne for indkøbsrekvisitioner. Den arbejdsgangsproces, du definerer, styrer udvekslingen mellem den bruger, der har rekvireret varerne (anmoderen), og validatoren og godkenderen i arbejdsgangen. Ruten for indkøbsrekvisitionen afhænger af de betingelser, der er angivet i arbejdsgangskonfigurationen. Disse betingelser bestemmer f.eks., hvornår indkøbsrekvisitionen skal distribueres, den bruger eller rolle, den skal distribueres til, og de handlinger, som brugerne kan tage.  
 
-Eksemplerne i dette emne viser en beskrivelse af, hvordan en indkøbsrekvisition kan sendes gennem en arbejdsgang som et enkelt dokument eller som individuelle indkøbsrekvisitionslinjer. Du kan også konfigurere en arbejdsgang for indkøbsrekvisitioner, der afspejler det interne kontrolgennemsyn af indkøbsrekvisitioner, som er defineret af organisationen.  
+Eksemplerne i denne artikel viser en beskrivelse af, hvordan en indkøbsrekvisition kan sendes gennem en arbejdsgang som et enkelt dokument eller som individuelle indkøbsrekvisitionslinjer. Du kan også konfigurere en arbejdsgang for indkøbsrekvisitioner, der afspejler det interne kontrolgennemsyn af indkøbsrekvisitioner, som er defineret af organisationen.  
 
 De deltagere eller validatorer, som en opgave er tildelt til i en arbejdsproces, kan være medlemmer af en bestemt brugergruppe, brugere, der har en bestemt sikkerhedsrolle, brugere, der er knyttet til afsenderen i et ledelseshierarki, eller navngivne brugere eller brugere, der har ansvar for bestemte udgifter.
 

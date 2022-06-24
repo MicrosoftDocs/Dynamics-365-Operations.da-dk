@@ -1,6 +1,6 @@
 ---
 title: Tilføje understøttelse af et netværk, der leverer indhold (CDN)
-description: Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
+description: Denne artikel beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2ed8f66d447e1d9e890c0885fd20e9b55c66ac0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855870"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tilføje understøttelse af et netværk, der leverer indhold (CDN)
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
+Denne artikel beskriver, hvordan du føjer et CDN (Content Delivery Network) til dit Microsoft Dynamics 365 Commerce-miljø.
 
 Når du konfigurerer et e-handels-miljø i Dynamics 365 Commerce, kan du konfigurere det til at arbejde sammen med CDN-tjenesten. 
 
@@ -60,7 +60,7 @@ CDN-konfigurationsprocessen består af følgende generelle trin:
 
 ### <a name="add-a-front-end-host"></a>Tilføj en front-end-vært
 
-Alle CDN-tjenester kan bruges, men i eksemplet i dette emne bruges Azure Front Door Service. 
+Alle CDN-tjenester kan bruges, men i eksemplet i denne artikel bruges Azure Front Door Service. 
 
 Du kan finde oplysninger om, hvordan du konfigurerer Azure Front Door Service, i [Hurtigstart: Opret en Front Door til et globalt webprogram med høj tilgængelighed](/azure/frontdoor/quickstart-create-front-door).
 
@@ -101,7 +101,7 @@ Benyt følgende fremgangsmåde for at konfigurere en ruteplanlægningsregel i Az
 
 
 > [!WARNING]
-> Hvis det domæne, du vil bruge, allerede er aktivt og live, kan du oprette en supportanmodning fra **Support**-feltet i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for at få hjælp til de næste trin. Du kan finde flere oplysninger i [Få support til Finance and Operations-apps eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+> Hvis det domæne, du vil bruge, allerede er aktivt og live, kan du oprette en supportanmodning fra **Support**-feltet i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for at få hjælp til de næste trin. Du kan finde flere oplysninger i [Få support til programmer til finans og drift eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 Hvis dit domæne er nyt og ikke er et eksisterende Live-domæne, kan du føje dit tilpassede domæne til konfigurationen for Azure Front Door Service. Dette gør det muligt for webtrafik at dirigere til dit websted via forekomsten af Azure Front Door. Hvis du vil tilføje det brugerdefinerede domæne (f.eks. `www.fabrikam.com`), skal du konfigurere et vedtaget navn (CNAME) for domænet.
 

@@ -1,6 +1,6 @@
 ---
 title: Digitale e-handelsgavekort
-description: Dette emne beskriver, hvordan digitale gavekort fungerer i e-handelsimplementeringen af Microsoft Dynamics 365 Commerce. Den giver også en oversigt over vigtige konfigurationstrin.
+description: Denne artikel beskriver, hvordan digitale gavekort fungerer i e-handelsimplementeringen af Microsoft Dynamics 365 Commerce. Den giver også en oversigt over vigtige konfigurationstrin.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884898"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale e-handelsgavekort
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan digitale gavekort fungerer i e-handelsimplementeringen af Microsoft Dynamics 365 Commerce. Den giver også en oversigt over vigtige konfigurationstrin.
+Denne artikel beskriver, hvordan digitale gavekort fungerer i e-handelsimplementeringen af Microsoft Dynamics 365 Commerce. Den giver også en oversigt over vigtige konfigurationstrin.
 
 I Dynamics 365 Commerce følger købet af digitale gavekort samme proces som købet af andre produkter i systemet. Der behøver ikke være konfigureret yderligere moduler. Hvis der føjes flere gavekort til indkøbsvognen, aggregeres gavekortvarerne ikke på en enkelt salgslinje. Denne funktionalitet er påkrævet, da hver salgslinje faktureres ved hjælp af et separat gavekortnummer.
 

@@ -1,6 +1,6 @@
 ---
 title: Registrere materialeforbrug ved hjælp af en mobilenhed
-description: I dette emne beskrives en arbejdsgang, der gør det muligt at registrere forbrug af råmaterialer i produktionen ved hjælp af en håndholdt enhed.
+description: Denne artikel beskriver en arbejdsgang, der gør det muligt at registrere forbrug af råmaterialer i produktionen ved hjælp af en håndholdt enhed.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e1dbc399eb06d1049950bbdd755b479ef275563
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849236"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialeforbrug ved hjælp af en mobilenhed
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives en arbejdsgang, der gør det muligt at registrere forbrug af råmaterialer i produktionen ved hjælp af en håndholdt enhed.
+Denne artikel beskriver en arbejdsgang, der gør det muligt at registrere forbrug af råmaterialer i produktionen ved hjælp af en håndholdt enhed.
 
 ## <a name="introduction"></a>Introduktion
 

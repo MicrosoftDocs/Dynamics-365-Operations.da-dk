@@ -1,6 +1,6 @@
 ---
-title: Aldersfordeling i lokalitetsvejledning til lagerpluk
-description: I dette emne forklares, hvordan du kan bruge lokalitetsvejledningsstrategierne FIFO (first in, First Out) og LIFO (last in, first out) under plukning.
+title: Lokalitetsvejledning til aldersfordelt lagerpluk
+description: Denne artikel forklarer, hvordan du kan bruge lokalitetsvejledningsstrategierne FIFO (first in, First Out) og LIFO (last in, first out) under plukning.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885690"
 ---
-# <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling i lokalitetsvejledning til lagerpluk
+# <a name="location-directive-inventory-picking-aging"></a>Lokalitetsvejledning til aldersfordelt lagerpluk
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan bruge lokalitetsvejledningsstrategierne FIFO (first in, First Out) og LIFO (last in, first out) under plukning. Disse strategier fungerer sammen med de aldersfordelingsdatoer, der registreres på lokationer, så lagervarer kan spores, når de først er kommet ind på lagerstedet. Funktionen *Aldersfordeling i lokalitetsvejledning til lagerpluk* bruger datoen på lokationen til at bestemme aldersfordeling. Funktionen *Lokationsstatus for lagersted* opdaterer datoen på lokationen ud fra datoen på nummerpladen.
+Denne artikel forklarer, hvordan du kan bruge lokalitetsvejledningsstrategierne FIFO (first in, First Out) og LIFO (last in, first out) under plukning. Disse strategier fungerer sammen med de aldersfordelingsdatoer, der registreres på lokationer, så lagervarer kan spores, når de først er kommet ind på lagerstedet. Funktionen *Aldersfordeling i lokalitetsvejledning til lagerpluk* bruger datoen på lokationen til at bestemme aldersfordeling. Funktionen *Lokationsstatus for lagersted* opdaterer datoen på lokationen ud fra datoen på nummerpladen.
 
 Du kan bruge strategierne FIFO og LIFO til at sende både batchsporede varer og varer, der ikke er batchsporede, baseret på den dato, hvor lagerbeholdningen blev angivet. Denne facilitet kan især være nyttig for ikke-batchsporet lager, hvor en udløbsdato ikke er tilgængelig til brug ved sortering.
 

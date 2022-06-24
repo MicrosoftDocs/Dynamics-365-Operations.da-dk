@@ -1,6 +1,6 @@
 ---
 title: Angive forskellige dimensioner for pakning og lagring
-description: I dette emne vises, hvordan du kan angive, hvilken proces (pakning, lagring eller indlejret emballage) hver enkelt dimension bruges til.
+description: Denne artikel viser, hvordan du kan angive, hvilken proces (pakning, lagring eller indlejret emballage) hver enkelt dimension bruges til.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905480"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angive forskellige dimensioner for pakning og lagring
 
@@ -33,7 +33,7 @@ Nogle varer er pakket eller lagret på en sådan måde, at du kan få brug for a
 *Lagringsdimensioner* understøttes også, selvom funktionen *Emballageproduktdimensioner* ikke er aktiveret. Du kan konfigurere disse ved hjælp af siden **Fysisk dimension** i Supply Chain Management. Disse dimensioner bruges af alle processer, hvor dimensionerne for pakning og indlejret emballage ikke er angivet.
 
 Dimensioner for *Emballage* og *indlejret emballage* konfigureres ved hjælp af siden **Fysiske produktdimensioner**, som tilføjes, når du aktiverer funktionen *Emballageproduktdimensioner*.
-Dette emne indeholder et eksempel på, hvordan denne funktion bruges.
+Denne artikel indeholder et eksempel på, hvordan denne funktion bruges.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Aktivere funktionen Emballageproduktdimensioner
 

@@ -1,6 +1,6 @@
 ---
 title: Arbejdspolitikker
-description: I dette emne forklares, hvordan du konfigurerer arbejdspolitikker.
+description: Denne artikel forklarer, hvordan du konfigurerer arbejdspolitikker.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855842"
 ---
 # <a name="work-policies"></a>Arbejdspolitikker
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan konfigurere systemet og mobilappen Lokationsstyring, så de understøtter arbejdspolitikker. Du kan bruge denne funktion til hurtigt at registrere lagerbeholdningen uden at oprette læg på lager-arbejde, når du modtager indkøbs- eller flytteordrer, eller når du fuldfører produktionsprocesser. Dette emne indeholder generelle oplysninger. Du kan finde detaljerede oplysninger, der er relateret til id-modtagelse, under [Modtagelse af id via mobilappen Lokationsstyring](warehousing-mobile-device-app-license-plate-receiving.md).
+Denne artikel forklarer, hvordan du kan konfigurere systemet og mobilappen Lokationsstyring, så de understøtter arbejdspolitikker. Du kan bruge denne funktion til hurtigt at registrere lagerbeholdningen uden at oprette læg på lager-arbejde, når du modtager indkøbs- eller flytteordrer, eller når du fuldfører produktionsprocesser. Denne artikel indeholder generelle oplysninger. Du kan finde detaljerede oplysninger, der er relateret til id-modtagelse, under [Modtagelse af id via mobilappen Lokationsstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
 En arbejdspolitik styrer, om der oprettes lagerstedsarbejde, når en produceret vare færdigmeldes, eller når varer modtages ved hjælp af mobilappen Lokationsstyring. Du konfigurerer hver arbejdspolitik ved at definere de betingelser, der gælder: arbejdsordretyper og processer, lagerlokation og (valgfrit) produkter. En indkøbsordre på produkt *A0001* skal f.eks. modtages på lokation *RECV* på lagersted *24*. Senere forbruges produktet i en anden proces på lokation *RECV*. I dette tilfælde kan du konfigurere en arbejdspolitik for at forhindre, at læg på lager-arbejde oprettes, når en arbejder rapporterer, at produkt *A0001* er modtaget på lokation *RECV*.
 
@@ -35,7 +35,7 @@ En arbejdspolitik styrer, om der oprettes lagerstedsarbejde, når en produceret 
 
 ## <a name="activate-the-features-in-your-system"></a>Aktivere funktionerne i systemet
 
-Hvis du vil gøre alle funktioner, der beskrives i dette emne, tilgængelige i systemet, skal du aktivere følgende to funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Hvis du vil gøre alle de funktioner, der beskrives i denne artikel, tilgængelige i systemet, skal du aktivere følgende to funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Forbedringer af modtagelse af id
 - Forbedringer af arbejdspolitikker for indgående arbejde

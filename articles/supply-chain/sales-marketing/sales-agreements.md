@@ -1,6 +1,6 @@
 ---
 title: Oversigt over salgsaftaler
-description: Dette emne indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
+description: Denne artikel indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903834"
 ---
 # <a name="sales-agreements-overview"></a>Oversigt over salgsaftaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
+Denne artikel indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
 
 En salgsaftale er en kontrakt, der forpligter kunden til at købe produkter til et bestemt beløb eller en bestemt mængde over tid, mod at få særlige priser, særlige rabatter og andre særlige betingelser, f.eks. særlige betalings- og leveringsbetingelser. Priserne og rabatterne i salgsaftalen tilsidesætter de priser og rabatter, der er angivet i de eventuelle samhandelsaftaler, der findes.  
 

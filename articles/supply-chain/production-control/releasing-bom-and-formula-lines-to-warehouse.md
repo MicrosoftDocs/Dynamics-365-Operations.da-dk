@@ -1,6 +1,6 @@
 ---
 title: Frigive stykliste- og formellinjer til lagerstedet
-description: I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet.
+description: Denne artikel beskriver processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860603"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet. Når du frigiver en stykliste- eller formellinje til lagerstedet, afgør systemet først, om materialet allerede findes på indlagringslokationen for produktionen i produktionsanlægget, hvor materialet skal forbruges i produktionsprocessen.
+Denne artikel beskriver processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet. Når du frigiver en stykliste- eller formellinje til lagerstedet, afgør systemet først, om materialet allerede findes på indlagringslokationen for produktionen i produktionsanlægget, hvor materialet skal forbruges i produktionsprocessen.
 
 - Hvis materialet er tilgængeligt på produktionsindlagringslokationen, plukkes det fra samme lokation umiddelbart efter, at der er givet signal om frigivelse af materialet til lagerstedet.
 - Hvis materialet ikke er tilgængeligt på produktionsindlagringslokationen, angiver materialefrigivelsen, at materiale skal flyttes fra lokationer på lagerstedet til indlagringslokationen. Materialet flyttes via lagerstedsarbejde til pluk af råvarer. Derfor skal lagerprocesser for pluk af råvarer konfigureres. Du kan finde flere oplysninger under [Oversigt over genopfyldning](../warehousing/replenishment.md) og [Styre lagerarbejde ved hjælp af arbejdsskabeloner og lokalitetsdirektiver](../warehousing/control-warehouse-location-directives.md).

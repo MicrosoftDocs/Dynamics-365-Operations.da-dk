@@ -1,6 +1,6 @@
 ---
-title: Genudskrive og annullere bølgeetiketter
-description: I dette emne forklares, hvordan du kan annullere og udskrive eksisterende bølgeetiketter.
+title: Genudskrive bølgeetiketter og erklære bølgeetiketter ugyldige
+description: Denne artikel forklarer, hvordan du kan annullere og udskrive eksisterende bølgeetiketter.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871827"
 ---
-# <a name="reprint-and-void-wave-labels"></a>Genudskrive og annullere bølgeetiketter
+# <a name="reprint-and-void-wave-labels"></a>Genudskrive bølgeetiketter og erklære bølgeetiketter ugyldige
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du håndterer etiketter, der genereres af bølgebehandling. (Du kan finde en detaljeret beskrivelse og konfigurationsvejledning i [Konfigurere udskrivning af bølgeetiketter](../warehousing/configure-wave-label-printing.md).)
+Denne artikel forklarer, hvordan du håndterer etiketter, der genereres af bølgebehandling. (Du kan finde en detaljeret beskrivelse og konfigurationsvejledning i [Konfigurere udskrivning af bølgeetiketter](../warehousing/configure-wave-label-printing.md).)
 
 Du kan til enhver tid udskrive bølgeetiketter igen. Det kan f.eks. være nødvendigt at udskrive en enkelt etiket, hvis en eksisterende etiket er gået tabt eller beskadiget. Alternativt kan en lagermedarbejder eller en leder have behov for at genudskrive en hel række etiketter, hvis antallet og/eller sammensætningen af en hel serie bølgeetiketter er blevet ændret (f.eks. på grund af manglende lager eller andre årsager). Ofte, selv om antallet af kartoner kun er ændret, skal hele rullen genudskrives for at holde det samlede antal nøjagtigt i afsnittet "Karton X af Y" i hver etiket.
 
@@ -32,10 +32,10 @@ Funktionen til genudskrivning af bølgeetiketter understøtter følgende funktio
 - Annuller etiketter og udskriv dem igen på samme tid. (Muligheden for at annullere etiketter er f.eks. integreret i korte plukscenarier).
 - Rydde op i historikken over bølgeetiketter.
 
-Dette emne indeholder en samling scenarier, der viser eksempler på, hvordan du kan arbejde med funktionen til genudskrivning af bølgeetiketter.
+Denne artikel indeholder en samling scenarier, der viser eksempler på, hvordan du kan arbejde med funktionen til genudskrivning af bølgeetiketter.
 
 > [!IMPORTANT]
-> Hvis du vil arbejde gennem de scenarier, der vises i dette emne, skal du først aktivere og konfigurere de relevante bølgeudskrivningsfunktioner som beskrevet under [Konfigurere udskrivning af bølgeetiketter](../warehousing/configure-wave-label-printing.md). Flere af scenarierne i dette emne kræver også, at du først arbejder i scenarierne i dette emne for at oprette de nødvendige eksempeldata.
+> Hvis du vil arbejde gennem de scenarier, der vises i denne artikel, skal du først aktivere og konfigurere de relevante bølgeudskrivningsfunktioner som beskrevet under [Konfigurere udskrivning af bølgeetiketter](../warehousing/configure-wave-label-printing.md). Flere af scenarierne i denne artikel kræver også, at du først arbejder i scenarierne i denne artikel for at oprette de nødvendige eksempeldata.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenarie 1: Genudskrive etiketter fra webklienten
 

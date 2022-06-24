@@ -1,6 +1,6 @@
 ---
 title: Listen Disponibel lagerbeholdning
-description: Dette emne beskriver, hvordan du bruger den disponible listeside til at inspicere oplysninger om disponibel lagerbeholdning. Det viser et par af de måder, som de forskellige filtrerings- og sorteringsindstillinger fungerer sammen på, og hvordan disse indstillinger undertiden kan give uventede resultater, når de kombineres.
+description: Denne artikel beskriver, hvordan du bruger den disponible listeside til at inspicere oplysninger om disponibel lagerbeholdning. Det viser et par af de måder, som de forskellige filtrerings- og sorteringsindstillinger fungerer sammen på, og hvordan disse indstillinger undertiden kan give uventede resultater, når de kombineres.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879042"
 ---
 # <a name="inventory-on-hand-list"></a>Listen Disponibel lagerbeholdning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du bruger siden **Beholdningsliste** til at inspicere oplysninger om disponibel lagerbeholdning. Det viser et par af de måder, som de forskellige filtrerings- og sorteringsindstillinger fungerer sammen på, og hvordan disse indstillinger undertiden kan give uventede resultater, når de kombineres.
+Denne artikel beskriver, hvordan du bruger den **disponible listeside** til at inspicere oplysninger om disponibel lagerbeholdning. Det viser et par af de måder, som de forskellige filtrerings- og sorteringsindstillinger fungerer sammen på, og hvordan disse indstillinger undertiden kan give uventede resultater, når de kombineres.
 
 ## <a name="query-your-on-hand-inventory"></a>Forespørgsel på dit disponible lager
 
@@ -35,9 +35,9 @@ Siden **Beholdningsliste** opdateres automatisk, når der foretages transaktione
 Brug følgende værktøjer til at finde frem til det sæt produkter, du søger efter:
 
 - I handlingsruden skal du vælge [**Dimensioner**](#dimensions) for at åbne en dialogboks, hvor du kan tilføje eller fjerne de kolonner, der vises i gitteret **Beholdning**.
-- I ruden [**Filtre**](#filters-pane) skal du angive værdier for bestemte felter, så der kun vises poster, der svarer til disse værdier. Bemærk, at filtre, som du definerer her, gælder for kildetabeller, der kan samles senere i henhold til de dimensioner, du har valgt at få vist. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+- I ruden [**Filtre**](#filters-pane) skal du angive værdier for bestemte felter, så der kun vises poster, der svarer til disse værdier. Bemærk, at filtre, som du definerer her, gælder for kildetabeller, der kan samles senere i henhold til de dimensioner, du har valgt at få vist. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i denne artikel.
 - I ruden **Filtre** skal du vælge **Anvend** for at generere en liste med tilsvarende disponibel lagerbeholdning i gitteret **Disponibel**.
-- I gitteret **Disponibel** skal du vælge en kolonneoverskrift for at sortere eller filtrere efter værdier i den pågældende kolonne. Et QuickFilter øverst i gitteret giver yderligere filtreringsmuligheder. Disse filtre gælder for resultaterne, ikke for kildetabellerne. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+- I gitteret **Disponibel** skal du vælge en kolonneoverskrift for at sortere eller filtrere efter værdier i den pågældende kolonne. Et QuickFilter øverst i gitteret giver yderligere filtreringsmuligheder. Disse filtre gælder for resultaterne, ikke for kildetabellerne. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i denne artikel.
 
 For hver tilsvarende vare indeholder gitteret **Beholdning** følgende kolonner med lageroplysninger.
 
@@ -64,7 +64,7 @@ Du kan bruge ruden **Filtre** til at filtrere den disponible lagerbeholdning, s�
 > [!IMPORTANT]
 > Siden **Beholdningsliste** samles fra en detaljeret disponibel lagerbeholdningstabel, der omfatter alle tilgængelige dimensioner. Listen på denne side er dog en oversigt. Derfor kan den kombinere rækker fra kildetabellen ved at aggregere værdier i henhold til de viste dimensioner.
 >
-> De filtre, du definerer i ruden **Filtre**, gælder for kildetabellen, ikke den samlede liste. Denne funktionsmåde kan undertiden give uventede resultater. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+> De filtre, du definerer i ruden **Filtre**, gælder for kildetabellen, ikke den samlede liste. Denne funktionsmåde kan undertiden give uventede resultater. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i denne artikel.
 > 
 > De [filtre, der findes i gitteret](#grid-filters), *bliver* anvendt på den samlede liste. Disse filtre omfatter både QuickFilter øverst i gitteret og filteret for hver kolonneoverskrift.
 
@@ -75,7 +75,7 @@ Du kan redigere det sæt filtre, der er tilgængeligt i ruden **Filtre**, ved at
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Vælg, hvilke dimensioner der skal vises
 
-Dimensioner fortæller dig mere om de enkelte varer på listen over disponible lagerbeholdninger og giver dig flere muligheder for at sortere og filtrere listen. De dimensioner, du vælger at få vist, har også indflydelse på, hvordan rækker samles på siden **Beholdningsliste**. Denne aggregering kan påvirke, hvordan rækker fra kildetabellerne kombineres i de resultater, du får vist. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+Dimensioner fortæller dig mere om de enkelte varer på listen over disponible lagerbeholdninger og giver dig flere muligheder for at sortere og filtrere listen. De dimensioner, du vælger at få vist, har også indflydelse på, hvordan rækker samles på siden **Beholdningsliste**. Denne aggregering kan påvirke, hvordan rækker fra kildetabellerne kombineres i de resultater, du får vist. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i denne artikel.
 
 Benyt følgende fremgangsmåde for at tilpasse det udvalg af lagerdimensioner, der vises.
 
@@ -89,7 +89,7 @@ Benyt følgende fremgangsmåde for at tilpasse det udvalg af lagerdimensioner, d
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrere på afgang fra lagerbeholdningslisten
 
-I gitteret **Disponibel** kan du vælge enhver kolonneoverskrift for at sortere eller filtrere efter værdier i den pågældende kolonne. Et QuickFilter øverst i gitteret giver yderligere filtreringsmuligheder. Disse filtre gælder for resultaterne, ikke for kildetabellerne. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i dette emne.
+I gitteret **Disponibel** kan du vælge enhver kolonneoverskrift for at sortere eller filtrere efter værdier i den pågældende kolonne. Et QuickFilter øverst i gitteret giver yderligere filtreringsmuligheder. Disse filtre gælder for resultaterne, ikke for kildetabellerne. Du kan finde oplysninger om, hvordan denne funktionsmåde kan påvirke resultaterne, under [eksemplerne](#examples) senere i denne artikel.
 
 > [!NOTE]
 > Du kan ikke filtrere og sortere efter alle kolonner. De fleste af antalskolonnerne inkluderer ikke sorterings- og filtreringskontrolelementer, fordi de er beregnede felter. Kolonnen **I bestilling** er en undtagelse.

@@ -1,6 +1,6 @@
 ---
 title: Rette fejlen "Ikke tilstrækkelig kapacitet kunne findes" i planlægningsprogrammet og kapacitetsbegrænsning
-description: Dette emne indeholder oplysninger om årsagerne til og løsningerne for 'Produktionsordren %1 kunne ikke planlægges. Fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes".
+description: Denne artikel indeholder oplysninger om årsagerne til og løsningerne for 'Produktionsordren %1 kunne ikke planlægges. Fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes".
 author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a3c08dc72c7133a2ebb148a2f88f83fee282717b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891025"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rette fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes"
 
@@ -26,7 +26,7 @@ Du kan få vist følgende fejlmeddelelse, når du forsøger at kære planlægnin
 
 > Produktionsordren %1 kan ikke planlægges. Der blev ikke fundet nok kapacitet.
 
-Der er flere årsager til, at planlægningsprogrammet kan mislykkes og udstede denne fejlmeddelelse. Dette emne indeholder retningslinjer, der kan hjælpe dig med at finde rodårsagen til fejlen og derefter reducere den.
+Der er flere årsager til, at planlægningsprogrammet kan mislykkes og udstede denne fejlmeddelelse. Denne artikel indeholder retningslinjer, der kan hjælpe dig med at finde rodårsagen til fejlen og derefter reducere den.
 
 ## <a name="review-the-applicable-resources"></a>Gennemse de relevante ressourcer
 

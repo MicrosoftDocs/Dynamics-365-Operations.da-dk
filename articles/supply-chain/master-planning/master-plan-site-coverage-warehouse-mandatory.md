@@ -1,6 +1,6 @@
 ---
 title: Varedisponering for lokalitetsdisponering, obligatorisk lagersted
-description: I dette emne beskrives det, hvordan en vare med lokationen som disponeringsdimension bliver planlagt. Lagerstedet er en obligatorisk dimension.
+description: Denne artikel beskriver, hvordan en vare med lokationen som disponeringsdimension bliver planlagt. Lagerstedet er en obligatorisk dimension.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bce0e43e43b4d8eee1c63912ce25e18ff23597a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b6e9cb9362fcafab5738e0a1887366e5fd1efbab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863963"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Varedisponering for lokalitetsdisponering, obligatorisk lagersted
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan en vare med lokationen som disponeringsdimension bliver planlagt. Lagerstedet er en obligatorisk dimension.
+Denne artikel beskriver, hvordan en vare med lokationen som disponeringsdimension bliver planlagt. Lagerstedet er en obligatorisk dimension.
 
 Dette behovsplanlægningsscenario omfatter følgende forhold:
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere hævede felter til trin i Warehouse Management-mobilappen
-description: I dette emne beskrives, hvordan du kan hæve og fremhæve bestemte oplysninger for et hvilket som helst trin i opgaveflow for mobilappen Warehouse Management.
+description: Denne artikel beskriver, hvordan du kan hæve og fremhæve bestemte oplysninger for et hvilket som helst trin i opgaveflow for mobilappen Warehouse Management.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857048"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere hævede felter til trin i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> De funktioner, der er beskrevet i dette emne, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
+> De funktioner, der er beskrevet i denne artikel, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
 
-I dette emne beskrives, hvordan du kan hæve og fremhæve bestemte oplysninger for et hvilket som helst trin i opgaveflow for mobilappen Warehouse Management. Denne egenskab kan hjælpe medarbejderne med at fokusere på de vigtigste felter, efterhånden som de gennemgår et flow. For hvert trin i hver proces kan administratorer vælge, hvilke felter der skal hæves, og hvilke felter der skal fremhæves.
+Denne artikel beskriver, hvordan du kan hæve og fremhæve bestemte oplysninger for et hvilket som helst trin i opgaveflow for mobilappen Warehouse Management. Denne egenskab kan hjælpe medarbejderne med at fokusere på de vigtigste felter, efterhånden som de gennemgår et flow. For hvert trin i hver proces kan administratorer vælge, hvilke felter der skal hæves, og hvilke felter der skal fremhæves.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivere hævede felter i systemet
 
@@ -44,7 +44,7 @@ Før du kan konfigurere hævede felter, skal du gennemføre følgende procedure 
     - **Modul:** *Warehouse Management*
     - **Funktionsnavn:** *Hævede felter i appen Warehouse*
 
-    Denne funktion er den funktion, der er beskrevet i dette emne.
+    Denne funktion er den funktion, der er beskrevet i denne artikel.
 
 1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
@@ -56,7 +56,7 @@ Benyt følgende fremgangsmåde til at definere hævede felter.
 1. Opret en menuspecifik tilsidesættelse for den relevante menu og det relevante trin som beskrevet i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
 1. Find kombinationen af værdier for **Trin-id** og **Menupunktnavn**, som du vil redigere, og vælg derefter værdien i kolonnen **Trin-id**.
 1. På den side, der vises, skal du gå til oversigtspanelet **Vælg hævede felter** og vælge **Vælg felter** på værktøjslinjen.
-1. Vælg de felter, du vil hæve, i dialogboksen **Hævede felter**. Du kan også fremhæve op til to af de valgte felter. Fremhævede felter vises med fed skrift i mobilappen Warehouse Management. Når du markerer felter, skal du tænke på, at visse skærmbilleder er så store, at der kun vises et eller to af de felter, der er hævet. Du kan finde et eksempel, der viser, hvordan du bruger disse indstillinger, i scenariet senere i dette emne.
+1. Vælg de felter, du vil hæve, i dialogboksen **Hævede felter**. Du kan også fremhæve op til to af de valgte felter. Fremhævede felter vises med fed skrift i mobilappen Warehouse Management. Når du markerer felter, skal du tænke på, at visse skærmbilleder er så store, at der kun vises et eller to af de felter, der er hævet. Du kan finde et eksempel, der viser, hvordan du bruger disse indstillinger, i scenariet senere i denne artikel.
 
     > [!NOTE]
     > Listen **Tilgængelige felter** er begrænset til de felter, der kan vises for menupunktet. Men andre faktorer (for eksempel varesammensætning) afgør, om et felt rent faktisk vises i mobilappen Warehouse Management. Hvis du har konfigureret hævede felter, er det kun de valgte felter, der vises på hovedsiden i mobilappen Warehouse Management. Men medarbejdere kan stadig se de resterende felter ved at trykke på detaljesiden.

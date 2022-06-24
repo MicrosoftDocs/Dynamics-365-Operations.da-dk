@@ -1,6 +1,6 @@
 ---
 title: Konfigurere eksempel på behandling af bølge
-description: Dette emne viser et eksempel på, hvordan du konfigurerer de kriterier, der bestemmer, hvilket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk.
+description: Denne artikel viser et eksempel på, hvordan du konfigurerer de kriterier, der bestemmer, hvilket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk.
 author: Mirzaab
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39c3fecf9250ee89c22003d5dff4ea662c3042e3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860342"
 ---
 # <a name="configure-wave-processing-example"></a>Konfigurere eksempel på behandling af bølge
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser et eksempel på, hvordan du konfigurerer de kriterier, der bestemmer, hvilket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk. Du angiver kriterierne ved at konfigurere bølgeskabeloner og forespørgsler, der svarer til en bølge med frigivne linjer i salgsordrer, produktionsordrer eller kanbanordrer.
+Denne artikel viser et eksempel på, hvordan du konfigurerer de kriterier, der bestemmer, hvilket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk. Du angiver kriterierne ved at konfigurere bølgeskabeloner og forespørgsler, der svarer til en bølge med frigivne linjer i salgsordrer, produktionsordrer eller kanbanordrer.
 
 ## <a name="enable-sample-data"></a>Aktivér eksempeldata
 

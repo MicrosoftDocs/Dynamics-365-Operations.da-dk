@@ -1,6 +1,6 @@
 ---
 title: Blanding af produktdimension for lokation
-description: Dette emne indeholder oplysninger om blanding af produktdimensioner på lokation. Denne lokationsprofilfunktion hjælper med at forbedre lokationsstyringen, når der bruges produktvarianter eller produkter med dimensioner, f.eks. i modebranchen. Den giver dig mulighed for at bestemme, om konfigurationer, farver, stilarter og størrelser kan blandes for en bestemt lokationsprofil, eller om kun en af disse dimensioner eller en kombination af dem kan placeres på samme lokation.
+description: Denne artikel indeholder oplysninger om blanding af produktdimensioner på lokation. Denne lokationsprofilfunktion hjælper med at forbedre lokationsstyringen, når der bruges produktvarianter eller produkter med dimensioner, f.eks. i modebranchen. Den giver dig mulighed for at bestemme, om konfigurationer, farver, stilarter og størrelser kan blandes for en bestemt lokationsprofil, eller om kun en af disse dimensioner eller en kombination af dem kan placeres på samme lokation.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103482"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885719"
 ---
 # <a name="location-product-dimension-mixing"></a>Blanding af produktdimension for lokation
 
@@ -28,7 +28,7 @@ Blanding af produktdimensioner på lokation er en lokationsprofilfunktion, der f
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Slå funktionen Blanding af produktdimension for lokation til eller fra
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Blanding af produktdimension for lokation* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Blanding af produktdimension for lokation* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge den funktionalitet, der er beskrevet i denne artikel, skal funktionen *Blanding af produktdimension for lokation* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Blanding af produktdimension for lokation* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Konfiguration
 
@@ -44,7 +44,7 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
     > [!NOTE]
     > Du kan kun angive denne indstilling til *Ja*, hvis indstillingen **Tillad blandede varer** er angivet til *Nej*.
 
-1. I oversigtspanelet **Tilladt blanding af produktdimensioner** skal du angive **Størrelse** til *Ja*. I det scenarie, der beskrives i dette emne, kan der kun foretages blanding for produkter med forskellige **størrelsesdimensioner**. Der findes dog også andre indstillinger.
+1. I oversigtspanelet **Tilladt blanding af produktdimensioner** skal du angive **Størrelse** til *Ja*. I det scenarie, der beskrives i denne artikel, kan der kun foretages blanding for produkter med forskellige **størrelsesdimensioner**. Der findes dog også andre indstillinger.
 1. Vælg **Gem**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Opret en ny produktmaster og produktvarianter

@@ -1,6 +1,6 @@
 ---
 title: Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen
-description: Dette emne beskriver, hvordan du kan oprette og få vist brugerdefinerede instruktioner for hvert trin i hvert opgaveflow, som du konfigurerer for Warehouse Management-mobilappen.
+description: Denne artikel beskriver, hvordan du kan oprette og få vist brugerdefinerede instruktioner for hvert trin i hvert opgaveflow, som du konfigurerer for Warehouse Management-mobilappen.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895490"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen
 
 > [!IMPORTANT]
-> De funktioner, der er beskrevet i dette emne, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
+> De funktioner, der er beskrevet i denne artikel, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
 
-Dette emne beskriver, hvordan du kan oprette og få vist brugerdefinerede instruktioner for hvert trin i hvert opgaveflow, som du konfigurerer for Warehouse Management-mobilappen. Når lagerarbejdere modtager velskrevne instruktioner, kan de med det samme begynde at bruge nye flow uden at skulle oplæres inden. Denne funktion indeholder følgende fordele:
+Denne artikel beskriver, hvordan du kan oprette og få vist brugerdefinerede instruktioner for hvert trin i hvert opgaveflow, som du konfigurerer for Warehouse Management-mobilappen. Når lagerarbejdere modtager velskrevne instruktioner, kan de med det samme begynde at bruge nye flow uden at skulle oplæres inden. Denne funktion indeholder følgende fordele:
 
 - **Kvalificer arbejdere hurtigere ved at lade dem følge simple instruktioner for hvert trin i opgaven.** Hvert trin i et flow indeholder instruktioner, der gør det muligt for frontlinjemedarbejdere at forstå opgaven.
 - **Angiv instruktioner, der stemmer overens med dine egne processer.** Skriv dine egne instruktioner, der passer til virksomheden og lagerstedsprocesserne. Du kan f.eks. tilpasse terminologien , så den passer til det fysiske område og de lokale forkortelser.

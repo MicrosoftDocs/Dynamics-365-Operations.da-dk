@@ -1,6 +1,6 @@
 ---
 title: Oversigt over sider til kontostyring
-description: Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cc70f48371fb90f4e3529173d30baffd6fe4e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868877"
 ---
 # <a name="account-management-pages-overview"></a>Oversigt over sider til kontostyring
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over sider til kontostyring i Microsoft Dynamics 365 Commerce.
 
 På sider til kontostyring kan kunderne se oplysninger, der er relateret til deres konto og deres ordrer. Sider til kontostyring omfatter landingssiden til kontostyring og sider til brugerens profil, adresser, ordrehistorik, ordreoplysninger, fordelskundepoint og ønskeliste.
 

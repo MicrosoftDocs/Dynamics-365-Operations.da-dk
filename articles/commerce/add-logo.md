@@ -1,6 +1,6 @@
 ---
 title: Tilføje et logo
-description: Dette emne indeholder en beskrivelse af, hvordan du tilføjer et logo til dit websted i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en beskrivelse af, hvordan du tilføjer et logo til dit websted i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 624cd6f7000f5038b9996eb94caf79719d07f99f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871774"
 ---
 # <a name="add-a-logo"></a>Tilføje et logo
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du tilføjer et logo til dit websted i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en beskrivelse af, hvordan du tilføjer et logo til dit websted i Microsoft Dynamics 365 Commerce.
 
 Når du bygger dit websted, er en af de første ting, du sandsynligvis vil gøre at tilføje dit virksomheds- eller brandlogo til webstedets header. Dynamics 365 Commerce-online modulbiblioteket indeholder et modul, der gør denne opgave nem.
 
-Du kan føje et logo direkte til en skabelon, et layout eller en side. På denne måde kan du nemt ændre det logo, der vises på bestemte sider eller grupper af sider. Dette emne dækker dog det hyppigst forekommende scenarie, hvor du føjer dit logo til et sidehovedfragment, der kan genbruges på tværs af alle siderne på dit websted.
+Du kan føje et logo direkte til en skabelon, et layout eller en side. På denne måde kan du nemt ændre det logo, der vises på bestemte sider eller grupper af sider. Denne artikel dækker dog det hyppigst forekommende scenarie, hvor du føjer dit logo til et sidehovedfragment, der kan genbruges på tværs af alle siderne på dit websted.
 
 ## <a name="prerequisites"></a>Forudsætninger
 

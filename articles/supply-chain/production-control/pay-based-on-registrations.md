@@ -1,6 +1,6 @@
 ---
 title: Løn på basis af registreringer
-description: Dette emne forklarer, hvordan løn beregnes baseret på arbejderregistreringer.
+description: Denne artikel forklarer, hvordan løn beregnes baseret på arbejderregistreringer.
 author: johanhoffmann
 ms.date: 03/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 729e2f6c7c2dac598154b342244ab3d8eccaf4d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844374"
 ---
 # <a name="pay-based-on-registrations"></a>Løn på basis af registreringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer detaljeret, hvordan løn beregnes baseret på arbejderregistreringer. Det indeholder eksempler på, hvordan de forskellige kombinationer af opsætningsindstillinger, der er tilgængelige for beregning, påvirker resultatet. Her er nogle af de områder, der behandles:
+Denne artikel forklarer detaljeret, hvordan løn beregnes baseret på arbejderregistreringer. Det indeholder eksempler på, hvordan de forskellige kombinationer af opsætningsindstillinger, der er tilgængelige for beregning, påvirker resultatet. Her er nogle af de områder, der behandles:
 
 - Flekstid
 - Overtid

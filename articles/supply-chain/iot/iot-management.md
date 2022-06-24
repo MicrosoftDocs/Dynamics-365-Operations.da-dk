@@ -1,6 +1,6 @@
 ---
 title: Overvåge og administrere IoT-viden
-description: Dette emne forklarer, hvordan du kan overvåge og administrere IoT-viden.
+description: Denne artikel forklarer, hvordan du kan overvåge og administrere IoT-viden.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e078f1895b44ca388b75f5cd3d19e0e8f7c36630
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a640b523adac619377e19d670f932d4d85cfb6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852412"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>Overvåge og administrere IoT-viden
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan overvåge og administrere IoT-viden.
+Denne artikel forklarer, hvordan du kan overvåge og administrere IoT-viden.
 
 ## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a>Overvågningsscenarier i Microsoft Dynamics 365 Supply Chain Management
 
@@ -54,7 +54,7 @@ Når et scenarie kører, er disse ændringer ikke tilladt:
 
 ## <a name="simulation-options"></a>Simuleringsindstillinger
 
-Du kan simulere fabriksmaskinsignaler. Du kan finde flere oplysninger i disse emner:
+Du kan simulere fabriksmaskinsignaler. Du kan finde flere oplysninger i disse artikler:
 
 + [Forbinde IoT DevKit AZ3166 til Azure IoT Hub](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Forbinde Raspberry Pi-onlinesimulator til Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)

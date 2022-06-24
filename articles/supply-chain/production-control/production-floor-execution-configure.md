@@ -1,6 +1,6 @@
 ---
-title: Konfigurere grænsefladen til kørsel af produktionsudstyr
-description: Dette emne beskriver, hvordan du opretter en eller flere konfigurationer til grænsefladen til kørsel af produktionsudstyr. Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den automatisk en udvalgt konfiguration og et jobfilter, der er specifikt for browseren og enheden. I konfigurationen skal du angive de politikker, der skal gælde for en bestemt anvendelse.
+title: Konfigurere grænsefladen til produktionsudførelse
+description: Denne artikel beskriver, hvordan du opretter en eller flere konfigurationer til grænsefladen til kørsel af produktionsudstyr. Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den automatisk en udvalgt konfiguration og et jobfilter, der er specifikt for browseren og enheden. I konfigurationen skal du angive de politikker, der skal gælde for en bestemt anvendelse.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899405"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -31,15 +31,15 @@ Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den aut
 - På en enhed i firmaets ankomsthallen stempler medarbejderne ind, når de ankommer til kontoret, og ud, når de går hjem.
 - På en enhed i produktionshallen registrerer maskinoperatørerne, hvornår de starter og afslutter job. De registrerer også pauser og indirekte aktiviteter.
 
-I dette emne beskrives de forskellige indstillinger til konfiguration af en grænseflade til produktionsudførelse for hver enhed, der bruges på dit sted.
+Denne artikel beskriver de forskellige indstillinger til konfiguration af en grænseflade til produktionsudførelse for hver enhed, der bruges på dit sted.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktivere grænsefladen til kørsel af produktion og dens relaterede valgfrie funktioner
 
-Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstillinger, der er beskrevet i dette emne, skal være aktiveret i systemet, før du kan bruge dem. Brug siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere nogle af eller alle de funktioner, der er beskrevet i følgende underafsnit, efter behov.
+Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstillinger, der er beskrevet i denne artikel, skal være aktiveret i systemet, før du kan bruge dem. Brug siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere nogle af eller alle de funktioner, der er beskrevet i følgende underafsnit, efter behov.
 
 ### <a name="the-production-floor-execution-interface"></a>Grænsefladen til kørsel af produktion
 
-Dette er den primære funktion, der er beskrevet i dette emne, og som er en forudsætning for alle de andre funktioner, der nævnes i dette afsnit. Fra og med Supply Chain Management version 10.0.25 er den obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Dette er den primære funktion, der er beskrevet i denne artikel, og som er en forudsætning for alle de andre funktioner, der nævnes i dette afsnit. Fra og med Supply Chain Management version 10.0.25 er den obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generere nummerplader
 
@@ -146,7 +146,7 @@ Denne funktion føjer indstillinger til følgende funktioner på siden **Konfigu
 - Aktiver materialeforbrugsjusteringer fra dialogboksen **Rapporter status**. (Denne funktion kræver også *Registrere materialeforbrug i produktionsudførelsesgrænsefladen (ikke-WMS)-funktionen*).
 - Aktivér søgninger efter projekt-id.
 
-Dette emne indeholder oplysninger om, hvordan du konfigurerer udbyderen senere.
+Denne artikel indeholder oplysninger om, hvordan du konfigurerer udbyderen senere.
 
 Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

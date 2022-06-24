@@ -1,6 +1,6 @@
 ---
 title: Oversigt over serviceobjekter
-description: Dette emne giver et overblik over, hvordan du kan arbejde med serviceobjekter.
+description: Denne artikel giver et overblik over, hvordan du kan arbejde med serviceobjekter.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cef4cf1222c4c66991069da72e3e6f5a7040153
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8150a94677fe38f4caa6f3e0b5fb5d1be5972eaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862405"
 ---
 # <a name="service-objects-overview"></a>Oversigt over serviceobjekter
 
@@ -39,7 +39,7 @@ Serviceobjekter er en kundes aktiver og produkter, som du kan udføre en service
 
 Firma A fører finansielle poster for flere små virksomheder. En af virksomhed A's kunder er det lokale fodboldhold, for hvem virksomhed A har den ugentlige bogføring og den årlige revision af klubbens konti. Klubbens konti er oprettet i formularen Serviceobjekter og angives som objektet i serviceaftalen. Der er to linjer i serviceaftalen for objektet. Linje 1 er den ugentlige bogføring med et ugentligt interval, der er knyttet til linjen, og linje 2 er den årlige revision med et årligt interval tilknyttet.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Oprette serviceobjekter](create-service-objects.md)
 

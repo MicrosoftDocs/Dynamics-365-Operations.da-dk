@@ -1,6 +1,6 @@
 ---
 title: Startside for indkøb og forsyning
-description: Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for indkøb og forsyning.
+description: Denne artikel indeholder en liste over artiklerne i Hjælp og andre ressourcer, der er tilgængelige for indkøb og forsyning.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885864"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for indkøb og forsyning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for indkøb og forsyning.
+Denne artikel indeholder en liste over artiklerne i Hjælp og andre ressourcer, der er tilgængelige for indkøb og forsyning.
 
 Indkøb og forsyning dækker alle trin fra identifikationen af et behov for produkter og tjenester til indkøb af produktet, modtagelse, fakturering og behandling af betalinger til kreditorer. Indkøbsprocesser kan konfigureres mod specifikke forretningsmæssige behov ved at definere indkøbspolitikker og arbejdsgange. Generelle oplysninger finder du under [Oversigt over indkøb og forsyning](procurement-sourcing-overview.md). Yderligere ressourcer er angivet nedenfor.
 

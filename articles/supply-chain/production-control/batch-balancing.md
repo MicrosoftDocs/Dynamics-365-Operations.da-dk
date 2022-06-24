@@ -1,6 +1,6 @@
 ---
 title: Batchtilpasning
-description: I dette emne beskrives batchtilpasningsprocessen.
+description: Denne artikel beskriver batchtilpasningsprocessen.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856042"
 ---
 # <a name="batch-balancing"></a>Batchtilpasning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan batchtilpasningsprocessen understøttes.
+Denne artikel beskriver, hvordan batchtilpasningsprocessen understøttes.
 
 Hvis du ønsker flere oplysninger, kan du se en [video om batchtilpasning](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -149,7 +149,7 @@ Den tilpassede mængde af fyldstoffet beregnes som forskellen mellem batchstørr
 Batchtilpasningsprocessen udføres fra siden **Batchtilpasning**.
 Vælg **Omkostningsstyring \> Batchordrer**, og vælg derefter **Batchtilpasning** under fanen **Proces**. Batchtilpasning er tilgængelig for batchordrer, der har status **Startet**.
 
-Generelt kan batchtilpasning anvendes på batchordrer, hvis formlen har mindst én formellinje, hvor **Stoftype** er *Aktiv*. (Du kan se en undtagelse fra denne regel i afsnittet "Batch ordrer, der ikke kan anvendes til batchtilpasning" senere i dette emne).
+Generelt kan batchtilpasning anvendes på batchordrer, hvis formlen har mindst én formellinje, hvor **Stoftype** er *Aktiv*. (Du kan se en undtagelse fra denne regel i afsnittet "Batch ordrer, der ikke kan anvendes til batchtilpasning" senere i denne artikel).
 
 Batchtilpasningsprocessen kan opdeles i to underprocesser:
 

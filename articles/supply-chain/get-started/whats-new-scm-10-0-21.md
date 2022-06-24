@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.21.
+description: Denne artikel beskriver funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
 ms.date: 10/28/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: a78b4c37bfca9fedbd46cd8a16b47bd4444fbfee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849526"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.21. Denne version har et build-nummer på 10.0.960 og er tilgængelig som følger:
+Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.21. Denne version har et build-nummer på 10.0.960 og er tilgængelig som følger:
 
 - **Forhåndsversion:** august 2021
 - **Generel tilgængelighed af version (selv-opdatering):** september 2021
@@ -119,9 +119,9 @@ I følgende tabel vises de funktioner, der som standard er slået til i 10.0.21.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 
-Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. De er ikke nødvendigvis relateret til de nye funktioner, der er tilføjet i denne version, som vist i forrige afsnit, men de kan måske hjælpe dig med at få mere ud af eksisterende funktioner.
+Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler. De er ikke nødvendigvis relateret til de nye funktioner, der er tilføjet i denne version, som vist i forrige afsnit, men de kan måske hjælpe dig med at få mere ud af eksisterende funktioner.
 
-| Funktionsområde | Nye eller opdaterede emner |
+| Funktionsområde | Nye eller opdaterede artikler |
 |---|---|
 | Varedisponering | [Lagerbudgetter](../master-planning/inventory-forecast.md) |
 | Varedisponering | [Parametre, der ikke bruges af planlægningsoptimering](../master-planning/planning-optimization/not-used-parameters.md) |
@@ -153,12 +153,12 @@ Undersøg [Dynamics 365 og brancheskyer: 2021 frigivelsesplan bølge 2](/dynamic
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

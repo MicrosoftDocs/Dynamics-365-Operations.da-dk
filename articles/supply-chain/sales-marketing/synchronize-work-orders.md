@@ -1,6 +1,6 @@
 ---
 title: Synkronisere arbejdsordrer med projekt fra Field Service til Supply Chain Management
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer med et projektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer med et projektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a43a7f7e900205bdb23fb9a35ca1518369683a42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860487"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Synkronisere arbejdsordrer med projekt fra Field Service til Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer med et projektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
+Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere arbejdsordrer med et projektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
 
 [![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 Den anvendte skabelon **Arbejdsordrer med projekt (Field Service til Supply Chain Management)** er baseret på skabelonen **Arbejdsordrer (Field Service til Supply Chain Management)**. Du kan finde flere oplysninger i [Synkronisere arbejdsordrer i Field Service med salgsordrer i Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
-I dette emne beskrives kun forskellene mellem de to skabeloner:
+Denne artikel beskriver kun forskellene mellem de to skabeloner:
 - **Arbejdsordrer med projekt (Field Service til Supply Chain Management)**
 - **Arbejdsordrer (Field Service til Supply Chain Management)**
 

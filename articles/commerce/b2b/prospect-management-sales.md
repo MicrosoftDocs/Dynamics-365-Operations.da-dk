@@ -1,6 +1,6 @@
 ---
 title: Administrere forretningspartnerbrugere på B2B-e-handelswebsteder ved hjælp af Dynamics 365 Sales
-description: Dette emne beskriver, hvordan du bruger Microsoft Dynamics 365 Sales til at administrere godkendelser af forretningspartnere for Dynamics 365 Commerce business-to-business-handelswebsteder (B2B).
+description: Denne artikel beskriver, hvordan du bruger Microsoft Dynamics 365 Sales til at administrere godkendelser af forretningspartnere for Dynamics 365 Commerce business-to-business-handelswebsteder (B2B).
 author: shajain
 ms.date: 2/16/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540e8f26d7f2a08060a3839f9e4f97bf8ddcafac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ac4aa15f2c6e7f557105254c2c8ce743a9466985
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878615"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites-using-dynamics-365-sales"></a>Administrere forretningspartnerbrugere på B2B-e-handelswebsteder ved hjælp af Dynamics 365 Sales
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du bruger Microsoft Dynamics 365 Sales til at administrere godkendelser af forretningspartnere for Dynamics 365 Commerce business-to-business-handelswebsteder (B2B). Organisationer, der allerede har købt Dynamics 365 Sales-løsningen, kan bruge de potentielle kunde- og salgsmulighedsbegreber til godkendelsesprocessen for B2B-e-handelsforretningspartner.
+Denne artikel beskriver, hvordan du bruger Microsoft Dynamics 365 Sales til at administrere godkendelser af forretningspartnere for Dynamics 365 Commerce business-to-business-handelswebsteder (B2B). Organisationer, der allerede har købt Dynamics 365 Sales-løsningen, kan bruge de potentielle kunde- og salgsmulighedsbegreber til godkendelsesprocessen for B2B-e-handelsforretningspartner.
 
 Du kan finde baggrundsoplysninger om godkendelsesprocessen for B2B-forretningspartnere i [Administrere forretningspartnerbrugere på B2B-e-handelswebsteder](manage-b2b-users.md).
 
-Potentielle forretningspartnere kan igangsætte onboardingprocessen på et B2B-e-handelswebsted ved at sende en anmodning om onboarding via et link til B2B-webstedet. Når anmodningen er sendt, og de relevante job (f.eks. **P-0001** og **Synkroniser ordrer og kanalanmodninger**) køres i Commerce-hovedkontoret, gemmes anmodningen om onboarding på siden **Alle kundeemner** i Commerce-hovedkontoret. Godkendelsesprocessen for forretningspartnerens kundeemne kan derefter fuldføres i Salg.
+Potentielle forretningspartnere kan igangsætte onboardingprocessen på et B2B-e-handelswebsted ved at sende en anmodning om onboarding via et link til B2B-webstedet. Når anmodningen er sendt, og de relevante job (f.eks. **P-0001** og **Synkroniser ordrer og kanalanmodninger**) køres i Commerce Headquarters, gemmes anmodningen om onboarding på siden **Alle kundeemner** i Commerce Headquarters. Godkendelsesprocessen for forretningspartnerens kundeemne kan derefter fuldføres i Salg.
 
 Når integration mellem Sales og Commerce er aktiveret, vil oprettelsen af et kundeemne for forretningspartneren i Commerce forårsage oprettelsen af et *kundeemne* i Sales.
 

@@ -1,6 +1,6 @@
 ---
 title: Administrere ændringer af tekniske produkter
-description: Dette emne indeholder oplysninger om styring af tekniske ændringer. Styring af tekniske ændringer omfatter strukturerede processer til administration af ændringer i tekniske produkter, fra forslag, anmodninger over ændringer til gennemgang og godkendelse af ændringer, vurdering af deres indflydelse på eksisterende transaktioner og opfølgning på dem.
+description: Denne artikel indeholder oplysninger om styring af tekniske ændringer. Styring af tekniske ændringer omfatter strukturerede processer til administration af ændringer i tekniske produkter, fra forslag, anmodninger over ændringer til gennemgang og godkendelse af ændringer, vurdering af deres indflydelse på eksisterende transaktioner og opfølgning på dem.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849584"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 

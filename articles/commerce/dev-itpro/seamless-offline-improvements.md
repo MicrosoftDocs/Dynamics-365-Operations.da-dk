@@ -1,6 +1,6 @@
 ---
 title: Problemfrit offline skift til gavekort- og kreditnotahandlinger
-description: Dette emne indeholder en oversigt over forbedringer, der giver en problemfri offline skift til bestemte betalingstyper.
+description: Denne artikel indeholder en oversigt over forbedringer, der giver en problemfri offline skift til bestemte betalingstyper.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869155"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Problemfrit offline skift til gavekort- og kreditnotahandlinger
 
 [!include [banner](../includes/banner.md)]
 
-Hvis en kasse enhed mister forbindelsen til kanaldatabasen, kan de fleste POS-handlinger og -transaktioner, der var i gang, fortsætte, når kassereren har modtaget en advarselsmeddelelse om tab af forbindelsen. I nogle tilfælde har transaktioner dog elementer, der er afhængige af realtids-service, og disse elementer understøttes ikke, når kasseapparatet er offline. I dette emne beskrives nogle funktioner, der hjælper med at reducere virkningen af tabte forbindelser i disse scenarier.
+Hvis en kasse enhed mister forbindelsen til kanaldatabasen, kan de fleste POS-handlinger og -transaktioner, der var i gang, fortsætte, når kassereren har modtaget en advarselsmeddelelse om tab af forbindelsen. I nogle tilfælde har transaktioner dog elementer, der er afhængige af realtids-service, og disse elementer understøttes ikke, når kasseapparatet er offline. Denne artikel beskriver nogle funktioner, der hjælper med at reducere virkningen af tabte forbindelser i disse scenarier.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Afslutning af gavekorttransaktioner i offlinetilstand
 
@@ -50,7 +50,7 @@ Hvis du vil aktivere funktionaliteten til at indgå kreditnotatransaktioner efte
 
 Commerce-parametrene lagres typisk i cachen. Når indstillingen af denne parameter opdateres, og distributionsplanen er startet for at synkronisere ændringen til kanalen, kan ændringen derfor tage op til 24 timer for at træde i kraft. Nulstil IIS, hvis ændringen skal træde i kraft øjeblikkeligt.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 - [Offline POS-funktionalitet (Point Of Sale)](../pos-offline-functionality.md)
 - [POS-handlinger, online og offline](../pos-operations.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd8ba10441c1300c913827122c09741c58a42973
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: af1e443078b6a7832388b38f2b99a438af461ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844289"
 ---
 # <a name="work-with-customer-service-overview"></a>Oversigt over arbejde med kundeservice
 
@@ -41,7 +41,7 @@ Kundeservice inkluderer følgende funktioner.
 
   - Serviceniveauaftaler, der understøtter et differentieret kundeunderlag
 
-Emnerne i dette afsnit indeholder en oversigt over forretningsprocesserne for kundeservice og de enkelte komponenter i forretningsprocessen. De viser også de forms, der er knyttet til de enkelte forretningsproceskomponenter, og de beskriver de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
+Artiklerne i dette afsnit indeholder en oversigt over forretningsprocesserne for kundeservice og de enkelte komponenter i forretningsprocessen. De viser også de forms, der er knyttet til de enkelte forretningsproceskomponenter, og de beskriver de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Refusionsbetalingsmetoder i callcentre
-description: Dette emne forklarer, hvordan refusion af betalinger genereres via callcentre, når der oprettes returneringer, eller når ordrer eller ordrelinjer annulleres.
+description: Denne artikel forklarer, hvordan refusion af betalinger genereres via callcentre, når der oprettes returneringer, eller når ordrer eller ordrelinjer annulleres.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944707"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880108"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refusionsbetalingsmetoder i callcentre
 
-Dette emne forklarer, hvordan refusion af betalinger genereres via callcentre, når der oprettes returneringer, eller når ordrer eller ordrelinjer annulleres.
+Denne artikel forklarer, hvordan refusion af betalinger genereres via callcentre, når der oprettes returneringer, eller når ordrer eller ordrelinjer annulleres.
 
 En bruger, der opretter en returordre for en kunde som callcenter-bruger i Microsoft Dynamics 365 Commerce, bruger siden **Returordre** til at oprette den første godkendelse af returneringsmateriale (RMA). RMA definerer de produkter, kunden ønsker at returnere eller udveksle, og det opretter en tilknyttet retursalgsordre, der har ordretypen **Returordre**. Denne tilknyttede returordre bruges til at spore bogføringen af den returnerede lagerbeholdning og eventuelle kreditnotaer eller betalingsrefusioner, der er bogført.
 
@@ -92,7 +92,7 @@ Indstillingen **Ja** til indstillingen **Anvend kredit** gælder kun, når retur
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Betalingsændring for callcenter-returneringer
 
-Selvom det systematisk er callcenter-logikken, der bestemmer refunderingsmetoden på den måde, der er beskrevet tidligere i dette emne, vil brugerne måske nogle gange ønske at tilsidesætte disse betalinger. En bruger kan f.eks. redigere eller fjerne eksisterende betalingslinjer til refundering og anvende nye betalingslinjer. Systemberegnerede refusionsbetalinger kan kun ændres af brugere, som har de korrekte tilladelser til ændring. Disse tilladelser kan konfigureres på siden **Tilsidesæt tilladelser** i Retail og Commerce. Hvis du vil udføre en tilsidesættelse af refusionsbetaling, skal brugeren være knyttet til en sikkerhedsrolle, hvor indstillingen **Tillad alternativ betaling** er angivet til **Ja** på siden **Tilsidesæt tilladelser**.
+Selvom det systematisk er callcenter-logikken, der bestemmer refunderingsmetoden på den måde, der er beskrevet tidligere i denne artikel, vil brugerne måske nogle gange ønske at tilsidesætte disse betalinger. En bruger kan f.eks. redigere eller fjerne eksisterende betalingslinjer til refundering og anvende nye betalingslinjer. Systemberegnerede refusionsbetalinger kan kun ændres af brugere, som har de korrekte tilladelser til ændring. Disse tilladelser kan konfigureres på siden **Tilsidesæt tilladelser** i Retail og Commerce. Hvis du vil udføre en tilsidesættelse af refusionsbetaling, skal brugeren være knyttet til en sikkerhedsrolle, hvor indstillingen **Tillad alternativ betaling** er angivet til **Ja** på siden **Tilsidesæt tilladelser**.
 
 ![Tillad alternativ betalingsmåde på siden Tilsidesæt tilladelser.](media/overridepermissions.png)
 

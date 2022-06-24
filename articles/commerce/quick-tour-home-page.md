@@ -1,6 +1,6 @@
 ---
 title: Oversigt over startside
-description: Dette emne indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844666"
 ---
 # <a name="home-page-overview"></a>Oversigt over startside
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over startsiden i Microsoft Dynamics 365 Commerce.
 
 Startsiden er den standardside, som kunderne går til, når de besøger et e-handels-websted. Denne side viser typisk produkter og kampagner ved at bruge en kombination af marketingmoduler. Startsiden skal være udstyret med billeder og tekst for at fange kundernes interesse.
 
@@ -33,7 +33,7 @@ I følgende illustration vises et eksempel på en startside, der er oprettet ved
 
 ![Eksempel på en startside.](./media/Homepage2.PNG)
 
-Den øverste del af en startside har et sidehoved, der viser alle produktkategorierne og andre sider, som forhandleren ønsker, at kunderne skal gennemse. Nederst på startsiden er der en sidefod, der indeholder hurtige links til forskellige emner, som kan have interesse for kunderne.
+Den øverste del af en startside har et sidehoved, der viser alle produktkategorierne og andre sider, som forhandleren ønsker, at kunderne skal gennemse. Nederst på startsiden er der en sidefod, der indeholder hurtige links til forskellige artikler, som kan have interesse for kunderne.
 
 Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagner ved at bruge forskellige Dynamics 365 Commerce-moduler:
 
@@ -49,8 +49,8 @@ Hovedsektionen på startsiden kan fremhæve produkter, kategorier eller kampagne
 
     ![Eksempler på funktionsmoduler.](./media/Feature.PNG)
 
-- **Felt** – Et feltlayout af et indholdsblokmodul bruges til at fremvise flere produkter eller produktkategorier ved hjælp af en kombination af billeder og tekst i et layout med flere kolonner. På illustrationen af en startside, der vises tidligere i dette emne, bruges et feltlayout til gengivelsen af tre kolonner med varetyperne **Shop Women**, **Shop Men** og **Shop Accessories**.
-- **Videoafspiller** – Et videoafspillermodul kan bruges til at vise videoindhold på startsiden. Illustrationen af en hjemmeside, der vises tidligere i dette emne, indeholder et videoafspillermodul.
+- **Felt** – Et feltlayout af et indholdsblokmodul bruges til at fremvise flere produkter eller produktkategorier ved hjælp af en kombination af billeder og tekst i et layout med flere kolonner. På illustrationen af en startside, der vises tidligere i denne artikel, bruges et feltlayout til gengivelsen af tre kolonner med varetyperne **Shop Women**, **Shop Men** og **Shop Accessories**.
+- **Videoafspiller** – Et videoafspillermodul kan bruges til at vise videoindhold på startsiden. Illustrationen af en hjemmeside, der vises tidligere i denne artikel, indeholder et videoafspillermodul.
 - **Tekstblok** – Et indholdsrigt blokmodul kan bruges til at vise tekstindhold på startsiden i et layout med en enkelt kolonne eller flere kolonner.
 - **Produktanbefalinger** – Produktanbefalingerne bruges til at vise lister som f.eks. **Nyhed**, **Mest populære** og **Mest solgte** på startsiden. Disse lister viser produkter baseret på indkøbstendenser, og de kan genereres algoritmisk eller oprettes manuelt. De hjælper kunder med hurtigt at finde de mest populære produkter, så de fortsætter med at handle.
 

@@ -1,6 +1,6 @@
 ---
 title: Behandle, gennemgå og bogføre rabatter
-description: I dette emne beskrives, hvordan du behandler dine rabatstyringsaftaler, beregner deres rabatter, gennemgår de posteringer, der er oprettet, bogfører posteringer og gennemgår posteringerne.
+description: Denne artikel beskriver, hvordan du behandler dine rabatstyringsaftaler, beregner deres rabatter, gennemgår de posteringer, der er oprettet, bogfører posteringer og gennemgår posteringerne.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901931"
 ---
 # <a name="process-review-and-post-rebates"></a>Behandle, gennemgå og bogføre rabatter
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du behandler dine rabatstyringsaftaler, beregner deres rabatter, gennemgår de posteringer, der er oprettet, bogfører posteringer og gennemgår posteringerne.
+Denne artikel beskriver, hvordan du behandler dine rabatstyringsaftaler, beregner deres rabatter, gennemgår de posteringer, der er oprettet, bogfører posteringer og gennemgår posteringerne.
 
 ## <a name="change-the-status-of-a-deal"></a>Ændre status for en aftale
 
@@ -45,7 +45,7 @@ Gå til **Rabatstyring \> Periodiske opgaver \> Beregn FIFO-købspris**. Vælg *
 
 Du kan oprette de salgsordrer eller indkøbsordrer, der har kildetransaktioner, enten før eller efter du har oprettet en relevant rabatstyringsaftale.
 
-Du kan konfigurere de enkelte aftalelinjer, så der automatisk oprettes en rabathensættelse ved at bogføre leveringen eller fakturaen for en salgsordre eller indkøbsordre. Angiv feltet **Transaktionstype** for aftalelinjen til *Levering* eller *Faktura*, og angiv indstillingen **Behandling ved bogføring** til *Ja*. Hvis feltet **Transaktionstype** er angivet til *Ordre*, deaktiveres behandling ved bogføring. I forbindelse med kildeposteringer, der er oprettet, efter at en aftale er blevet aktiveret, kan du stadig behandle hensættelsen som beskrevet i afsnittet [Behandle rabatstyringsaftaler](#process-deals) senere i dette emne.
+Du kan konfigurere de enkelte aftalelinjer, så der automatisk oprettes en rabathensættelse ved at bogføre leveringen eller fakturaen for en salgsordre eller indkøbsordre. Angiv feltet **Transaktionstype** for aftalelinjen til *Levering* eller *Faktura*, og angiv indstillingen **Behandling ved bogføring** til *Ja*. Hvis feltet **Transaktionstype** er angivet til *Ordre*, deaktiveres behandling ved bogføring. I forbindelse med kildeposteringer, der er oprettet, efter at en aftale er blevet aktiveret, kan du stadig behandle hensættelsen som beskrevet i afsnittet [Behandle rabatstyringsaftaler](#process-deals) senere i denne artikel.
 
 ### <a name="enable-price-details"></a>Aktivér prisdetaljer
 

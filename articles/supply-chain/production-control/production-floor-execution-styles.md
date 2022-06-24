@@ -1,6 +1,6 @@
 ---
 title: Designe grænsefladen til produktionsudførelse
-description: I emnet forklares, hvordan du konfigurerer formkontrolelementer, så standardtypografierne til produktionsudførelse anvendes på dem.
+description: Denne artikel forklarer, hvordan du konfigurerer formkontrolelementer, så standardtypografierne til produktionsudførelse anvendes på dem.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859134"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Designe grænsefladen til produktionsudførelse
 
 [!include [banner](../includes/banner.md)]
 
-I emnet forklares, hvordan du konfigurerer formkontrolelementer, så standardtypografierne til produktionsudførelse anvendes på dem.
+Denne artikel forklarer, hvordan du konfigurerer formkontrolelementer, så standardtypografierne til produktionsudførelse anvendes på dem.
 
 ## <a name="forms-and-dialogs"></a>Formularer og dialogbokse
 
@@ -31,7 +31,7 @@ Typografier kan kun anvendes på en formular eller dialogboks, hvis følgende kr
 - Hvis formularen skal ligne den eksisterende formular til rapportstatus, skal navnet på formularen eller dialogboksen starte med `JmgProductionFloorExecutionCustomInputDialog`.
 - Formularen eller dialogboksen kan indeholde en detaljeret formulardel. Hvis du vil anvende typografier på den, skal navnet på detaljeformulardelen starte med `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Hvis formularen eller dialogboksen skal have en simpel visning, skal navnet på den simple visning starte med `JmgProductionFloorExecutionCustomDialog`. Eksempler på formularer, der har en simpel visning, omfatter startformen og formularen med indirekte aktiviteter.
-- Alle kontrolelementer i dialogboksen skal være konfigureret som beskrevet i dette emne.
+- Alle kontrolelementer i dialogboksen skal være konfigureret som beskrevet i denne artikel.
 
 > [!IMPORTANT]
 > De funktioner, der nævnes i de første to punkttegn på denne liste, kræver Supply Chain Management version 10.0.19 eller nyere.

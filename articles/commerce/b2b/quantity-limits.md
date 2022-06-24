@@ -1,6 +1,6 @@
 ---
 title: Angive produktantalsgrænser for B2B-e-handelswebsteder
-description: Dette emne beskriver, hvordan du angiver produktantalsgrænser for business-to-business (B2B)-e-handelswebsteder.
+description: Denne artikel beskriver, hvordan du angiver produktantalsgrænser for business-to-business (B2B)-e-handelswebsteder.
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876999"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Angive produktantalsgrænser for B2B-e-handelswebsteder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du angiver produktantalsgrænser for business-to-business (B2B)-e-handelswebsteder.
+Denne artikel beskriver, hvordan du angiver produktantalsgrænser for business-to-business (B2B)-e-handelswebsteder.
 
 De fleste produkter har en måleenhed, der definerer gruppering af dem. Grupperingerne har indflydelse på, hvordan produkterne kan sælges. Nogle produkter kan have en yderligere gruppering for antal. Denne gruppe bestemmer, om produkterne kan sælges som individuelle enheder eller multiplum, og om der er en minimums- eller maksimumordreantalsgrænse, der skal overholdes.
 

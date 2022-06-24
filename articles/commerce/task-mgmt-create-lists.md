@@ -1,6 +1,6 @@
 ---
 title: Oprette opgavelister og tilføje opgaver
-description: Dette emne indeholder en beskrivelse af, hvordan du opretter opgavelister og føjer opgaver til dem i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en beskrivelse af, hvordan du opretter opgavelister og føjer opgaver til dem i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a299be239d911e4605ed26625a313c93bd3020b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881625"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Oprette opgavelister og tilføje opgaver
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du opretter opgavelister og føjer opgaver til dem i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en beskrivelse af, hvordan du opretter opgavelister og føjer opgaver til dem i Microsoft Dynamics 365 Commerce.
 
 En *opgave* definerer et bestemt arbejde eller en handling, som en anden skal udføre på eller før en angivet forfaldsdato. I Dynamics 365 Commerce kan en opgave indeholde detaljerede instruktioner og oplysninger om en kontaktperson. Den kan også indeholde links til bagbutikshandlinger, POS-handlinger eller webstedssider, som medvirker til at forbedre produktiviteten og levere den kontekst, som opgaveejeren kræver for at kunne fuldføre opgaven effektivt.
 

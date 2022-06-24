@@ -1,6 +1,6 @@
 ---
 title: Gennemgang af funktioner for styring af tekniske ændringer
-description: Dette emne indeholder en total gennemgang, der viser, hvordan du kan arbejde med styring af tekniske ændringer.
+description: Denne artikel indeholder en total gennemgang, der viser, hvordan du kan arbejde med styring af tekniske ændringer.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889629"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Gennemgang af funktioner for styring af tekniske ændringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en total gennemgang, der viser, hvordan du kan arbejde med styring af tekniske ændringer. Det gennemgår hvert af de vigtigste scenarier:
+Denne artikel indeholder en total gennemgang, der viser, hvordan du kan arbejde med styring af tekniske ændringer. Det gennemgår hvert af de vigtigste scenarier:
 
 - Grundlæggende konfiguration af funktioner
 - Sådan opretter et teknisk firma et nyt teknisk produkt
@@ -35,13 +35,13 @@ Dette emne indeholder en total gennemgang, der viser, hvordan du kan arbejde med
 - Sådan planlægger og implementerer du de ønskede ændringer ved at oprette en teknisk ændringsordre
 - Sådan frigiver du et produkt, der er ændret
 
-Alle øvelserne i dette emne bruger standardeksempeldataene, der er leveret til Microsoft Dynamics 365 Supply Chain Management. Desuden bygger hver øvelse på den forrige øvelse. Vi anbefaler derfor, at du arbejder gennem øvelserne i rækkefølge fra start til slut, især hvis du aldrig har brugt funktionen til teknisk ændringsstyring før. På denne måde får du en komplet forståelse af funktionen.
+Alle øvelserne i denne artikel bruger standardeksempeldataene, der er leveret til Microsoft Dynamics 365 Supply Chain Management. Desuden bygger hver øvelse på den forrige øvelse. Vi anbefaler derfor, at du arbejder gennem øvelserne i rækkefølge fra start til slut, især hvis du aldrig har brugt funktionen til teknisk ændringsstyring før. På denne måde får du en komplet forståelse af funktionen.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Konfigurere eksempelscenariet
 
-Hvis du vil følge eksempelscenariet i dette emne, skal du først forberede funktionen ved at gøre demodata tilgængelige og tilføje nogle få brugerdefinerede poster.
+Hvis du vil følge eksempelscenariet i denne artikel, skal du først forberede funktionen ved at gøre demodata tilgængelige og tilføje nogle få brugerdefinerede poster.
 
-Før du forsøger at udføre øvelserne i resten af dette emne, skal du følge instruktionerne i alle følgende underafsnit. Disse underafsnit introducerer også flere vigtige indstillingssider, som du kan bruge, når du konfigurerer styring af tekniske ændringer for din egen organisation.
+Før du forsøger at udføre øvelserne i resten af denne artikel, skal du følge instruktionerne i alle følgende underafsnit. Disse underafsnit introducerer også flere vigtige indstillingssider, som du kan bruge, når du konfigurerer styring af tekniske ændringer for din egen organisation.
 
 ### <a name="make-standard-demo-data-available"></a>Gøre standarddemodata tilgængelige
 

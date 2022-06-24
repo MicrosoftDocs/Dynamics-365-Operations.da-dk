@@ -1,6 +1,6 @@
 ---
 title: Administrere forsendelsescontainere
-description: Dette emne beskriver, hvordan du kan arbejde med forsendelsescontainere. Forsendelsescontainere bruges til at gruppere varer, der fysisk er grupperet samlet. De bruges også, hvis omkostningerne kun skal deles på tværs af disse varer, normalt fordi de er fysisk samlet.
+description: Denne artikel beskriver, hvordan du kan arbejde med forsendelsescontainere. Forsendelsescontainere bruges til at gruppere varer, der fysisk er grupperet samlet. De bruges også, hvis omkostningerne kun skal deles på tværs af disse varer, normalt fordi de er fysisk samlet.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac88f8e3b8cf305a5bd247e7ed6b14b23ad85499
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686763"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906147"
 ---
 # <a name="manage-shipping-containers"></a>Administrere forsendelsescontainere
 
@@ -142,7 +142,7 @@ Hvis du vil åbne **Linjer**-visningen, skal du åbne en forsendelsescontainer o
 
 ### <a name="information-on-the-shipping-container-fasttab"></a>Oplysninger i oversigtspanelet Forsendelsescontainer
 
-I oversigtspanelet **Forsendelsescontainer** i visningen **Linjer** vises oplysninger om forsendelsescontaineren. De fleste af disse oplysninger vises også i visningen **Overskrift** som beskrevet tidligere i dette emne.
+I oversigtspanelet **Forsendelsescontainer** i visningen **Linjer** vises oplysninger om forsendelsescontaineren. De fleste af disse oplysninger vises også i visningen **Overskrift** som beskrevet tidligere i denne artikel.
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>Oplysninger om knapper i oversigtspanelet Linjer
 

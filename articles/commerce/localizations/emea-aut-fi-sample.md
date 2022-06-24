@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integration af regnskabsregistreringsservice i Østrig
-description: Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Østrig i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Østrig i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873352"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Eksempel på integration af regnskabsregistreringsservice i Østrig
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Østrig i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Østrig i Microsoft Dynamics 365 Commerce.
 
 For at opfylde lokale regnskabsmæssige krav til kasseapparater i Østrig omfatter Dynamics 365 Retail-funktionaliteten for Østrig en eksempelintegration af POS med en ekstern tjeneste til regnskabsregistrering. Eksemplet udvider [funktionen til regnskabsintegration](fiscal-integration-for-retail-channel.md). Den er baseret på [EFR-løsningen (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) fra [EFSTA](https://www.efsta.eu/at/) og giver mulighed for kommunikation med EFR-tjenesten via HTTPS-protokollen. Tjenesten EFR skal være have enten Retail Hardwarestation eller en separat maskine som vært, der kan oprettes forbindelse til fra hardwarestationen. Eksemplet findes i form af kildekode og er en del af Retail SDK (Software Development Kit).
 
@@ -390,7 +390,7 @@ Formålet med POS-regnskabsconnector-udvidelsen er at kommunikere med tjenesten 
 
 #### <a name="fiscal-connector-factory"></a>Fabrik for regnskabsconnector
 
-Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce-hovedkontoret.
+Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce Headquarters.
 
 #### <a name="efr-fiscal-connector"></a>EFR-regnskabsconnector
 

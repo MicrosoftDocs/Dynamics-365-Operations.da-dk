@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.12.
+description: Denne artikel beskriver funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
 ms.date: 05/29/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 89959095eb64c66e92c9d93d0a3f4caabe7d14bf7121683a7d35d3719a3e36ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845019"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.12 (august 2020)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.12. Denne version har et build-nummer på 10.0.507 og er tilgængelig som følger:
+I denne artikel findes en liste over de funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.12. Denne version har et build-nummer på 10.0.507 og er tilgængelig som følger:
 
 - **Prøveversion:** maj 2020
 - **Generel tilgængelighed (selv-opdatering):** juli 2020
@@ -47,7 +47,7 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 - [Forbedringer af modtager-id med lagerstedsapp (fortsat)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Du kan finde flere oplysninger under [Modtagelse af id via mobilappen Lokationsstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Masseinstallation for Warehouse Mobile App](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
+- [Masseinstallation for Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Du kan finde flere oplysninger under [Installere og tilslutte mobilappen Lokationsstyring](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maksimal udførelsestid for jobbet i lokationsstyring til oprydning i disponible poster](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Du kan finde flere oplysninger under [Oprydningsjob for disponible poster for lokationsstyring](../warehousing/onhand-cleanup.md).
 
@@ -55,9 +55,9 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.12 af Finance and Operations-apps (august 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.12 af Finans- og driftsapps (august 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -71,12 +71,12 @@ Se [Dynamics 365: 2020-frigivelsesplan bølge 1](/dynamics365-release-plan/2020w
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

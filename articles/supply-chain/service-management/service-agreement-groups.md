@@ -1,6 +1,6 @@
 ---
 title: Oversigt over serviceaftaler
-description: Dette emne giver et overblik over, hvordan du kan arbejde med serviceaftaler.
+description: Denne artikel giver et overblik over, hvordan du kan arbejde med serviceaftaler.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5566f559da6340a82ca015fb5dee2dae7887202e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862447"
 ---
 # <a name="service-agreements-overview"></a>Oversigt over serviceaftaler
 
@@ -35,7 +35,7 @@ I feltet **Serviceaftalegruppe** på siden **Parametre for servicestyring** kan 
 - De tre aftalegrupper, du har oprettet i firmaet er Guld, Sølv og Bronze.
 - En ny servicechef har været ansat i firmaet. Servicechefen er ansvarlig for alle kunder i aftalegruppen Guld. Du kan filtrere aftaleposter for aftalegruppen Guld for at finde alle de aftaler, hvor du skal angive den nye servicechef som den ansvarlige.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Oprette serviceaftalegrupper](create-service-agreement-groups.md)
 

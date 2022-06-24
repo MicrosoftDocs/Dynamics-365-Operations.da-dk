@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integration med kontrolenhed for Sverige
-description: Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Sverige i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Sverige i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885396"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Eksempel på integration med kontrolenhed for Sverige
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Sverige i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Sverige i Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > Denne eksempelfunktionalitet til regnskabsintegration erstatter det tidligere [eksempel på POS-integration med kontrolenheder for Sverige](retail-sdk-control-unit-sample.md). Det tidligere eksempel kan ikke bruge [struktur til regnskabsintegration](./fiscal-integration-for-retail-channel.md) og bliver forældet i senere opdateringer. Du kan finde oplysninger om, hvordan du overgår fra det tidligere eksempel til det eksempel, der svarer til Dynamics 365 Commerce version **10.0.22 og tidligere**, i [Overføre fra det tidligere eksempel på integration](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -83,7 +83,7 @@ På siden **Brugerdefinerede felter** kan du tilføje følgende poster for de br
 
 For hvert påkrævet kvitteringsformat skal du ændre værdien i feltet **Udskriftsfunktion** til **Udskriv altid**.
 
-I designeren til kvitteringsformater skal du føje følgende brugerdefinerede felter til sektionen **Sidefod**. Bemærk, at feltnavnene svarer til de sprogtekster, du har defineret i forrige afsnit af dette emne.
+I designeren til kvitteringsformater skal du føje følgende brugerdefinerede felter til sektionen **Sidefod**. Bemærk, at feltnavnene svarer til de sprogtekster, du har defineret i forrige afsnit af denne artikel.
 
 - **Registrer kontrolkode** – Dette felt udskriver kontrolkoden.
 - **Registrer enhed** – Dette felt udskriver kontrolenhedens produktionsnummer.

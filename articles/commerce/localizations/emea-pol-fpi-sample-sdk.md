@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for installation af eksempel på integration af bonprinter for Polen (ældre)
-description: Dette emne indeholder retningslinjer for implementering af eksempel på bonprinter for Polen fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
+description: Denne artikel indeholder retningslinjer for implementering af eksempel på bonprinter for Polen fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 3de7559838a8d8caf64993a468f06ba2d50fff46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851151"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Retningslinjer for installation af eksempel på integration af bonprinter for Polen (ældre)
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder retningslinjer for implementering af eksempel på integration af bonprinter for Polen fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsbonprinter for Polen](emea-pol-fpi-sample.md). 
+Denne artikel indeholder retningslinjer for implementering af eksempel på integration af bonprinter for Polen fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsbonprinter for Polen](emea-pol-fpi-sample.md). 
 
-Eksemplet på regnskabsintegration for Polen er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT) og Hardwarestation. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT og Hardwarestationsprojekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i dette emne. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
+Eksemplet på regnskabsintegration for Polen er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT) og Hardwarestation. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT og Hardwarestationsprojekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
 
 ## <a name="development-environment"></a>Udviklingsmiljø
 

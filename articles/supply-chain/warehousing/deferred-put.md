@@ -1,6 +1,6 @@
 ---
 title: Udskudt behandling af lagerstedsarbejde
-description: I dette emne beskrives de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f4eeea0805c2cecedbd6b42926191ab02022df9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577858"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899289"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Udskudt behandling af lagerstedsarbejde
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
+Denne artikel beskriver de funktioner, der gør udskudt behandling af lagerstedets læg på lager-handlinger tilgængelig i Dynamics 365 Supply Chain Management.
 
 Med den udskudte behandlingsfunktion kan lagermedarbejderne fortsætte med at udføre andet arbejde, mens læg på lager-operationen behandles i baggrunden. Udskudt behandling er nyttig, når mange arbejdslinjer skal behandles, og arbejderen kan lade dette arbejde blive behandlet asynkront. Det er også nyttigt, når serveren kan have ad hoc eller ikke-planlagte stigninger i behandlingstiden, og den øgede behandlingstid kan påvirke brugerens produktivitet.
 

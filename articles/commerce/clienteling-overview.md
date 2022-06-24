@@ -1,6 +1,6 @@
 ---
-title: Oversigt over kundeaktiviteter
-description: Dette emne indeholder en oversigt over de nye egenskaber for kundeaktiviteter, der findes i butiksprogrammet.
+title: Kundeaktiviteter, oversigt
+description: Denne artikel indeholder en oversigt over de nye egenskaber for kundeaktiviteter, der findes i butiksprogrammet.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885605"
 ---
 # <a name="clienteling-overview"></a>Kundeaktiviteter, oversigt
 
@@ -81,7 +81,7 @@ Hvis du vil aktivere funktionen kundeaktiviteter i dit miljø, skal du følge di
     - Angiv visningsrækkefølgen for disse attributter. Denne visningsrækkefølge bestemmer, hvilke attributter der skal vises på kundekortet i klientbogen. En visningsrækkefølge på 1 anses for at være højere end en visningsrækkefølge på 2. Derfor vises den attribut, der har en visningsrækkefølge på 1, før til den attribut, der har en visningsrækkefølge på 2.
 
     > [!NOTE]
-    > Du kan gøre Customer Insights tilgængelige fra samme side. Der skal dog oprettes et Azure-program-ID og en hemmelighed til godkendelsesformål. Du kan finde flere oplysninger om kravene under afsnittet [Aktiver integration af Customer Insights med Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) senere i dette emne. Hvis Customer Insights er aktiveret, og du vælger en eller flere målpunkter, der skal vises på kundekortet, vises disse målpunkter først. Derefter vises attributgrupperne for klientbogen på baggrund af visningsrækkefølgen. Hvis du f.eks. vælger to målpunkter fra Customer Insights, vises disse to målpunkter og én attribut for klientbogen på kundekortet. (Den viste attribut for klientbogen vil være den attribut, der har den højeste visningsrækkefølge.)
+    > Du kan gøre Customer Insights tilgængelige fra samme side. Der skal dog oprettes et Azure-program-ID og en hemmelighed til godkendelsesformål. Du kan finde flere oplysninger om kravene under afsnittet [Aktiver integration af Customer Insights med Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) senere i denne artikel. Hvis Customer Insights er aktiveret, og du vælger en eller flere målpunkter, der skal vises på kundekortet, vises disse målpunkter først. Derefter vises attributgrupperne for klientbogen på baggrund af visningsrækkefølgen. Hvis du f.eks. vælger to målpunkter fra Customer Insights, vises disse to målpunkter og én attribut for klientbogen på kundekortet. (Den viste attribut for klientbogen vil være den attribut, der har den højeste visningsrækkefølge.)
 
 6. På siden **Commerce-parametre** under fanen **Kundeaktiviteter** skal du i feltet **Attributgruppe for klientbog** vælge den attributgruppe, som du netop har oprettet.
 

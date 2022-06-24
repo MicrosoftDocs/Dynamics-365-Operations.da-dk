@@ -1,6 +1,6 @@
 ---
 title: Eksempelscenarier for cyklusoptælling
-description: Dette emne indeholder en samling scenarier, der undersøger funktionerne til cyklusoptælling i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel indeholder en samling scenarier, der undersøger funktionerne til cyklusoptælling i Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899318"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Eksempelscenarier for cyklusoptælling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en samling scenarier, der undersøger funktionerne til cyklusoptælling i Microsoft Dynamics 365 Supply Chain Management. Den beskriver først kravene til dit eksisterende Supply Chain Management-miljø. Derefter forklares det, hvordan du kan konfigurere cyklusoptælling, og alle cyklusoptællingsstadierne beskrives. Når du er færdig, vil du have en god forståelse af cyklusoptælling, herunder vejledt cyklusoptælling, skjult cyklusoptælling, spotcyklusoptælling, tærskler for cyklusantal og planer for cyklusantal.
+Denne artikel indeholder en samling scenarier, der undersøger funktionerne til cyklusoptælling i Microsoft Dynamics 365 Supply Chain Management. Den beskriver først kravene til dit eksisterende Supply Chain Management-miljø. Derefter forklares det, hvordan du kan konfigurere cyklusoptælling, og alle cyklusoptællingsstadierne beskrives. Når du er færdig, vil du have en god forståelse af cyklusoptælling, herunder vejledt cyklusoptælling, skjult cyklusoptælling, spotcyklusoptælling, tærskler for cyklusantal og planer for cyklusantal.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
 ### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-De enkelte scenarier i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er leveret til Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du arbejder dig gennem scenarierne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed (firmaet) til **USMF**, før du går i gang.
+De enkelte scenarier i denne artikel indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er leveret til Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du arbejder dig gennem scenarierne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed (firmaet) til **USMF**, før du går i gang.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Slå understøttelse til for Warehouse Management-mobilappen
 
@@ -158,7 +158,7 @@ Benyt følgende fremgangsmåde for at oprette cyklusoptællingsarbejde for varen
 
 Når du har oprettet cyklusoptællingsarbejdet, skal du udføre arbejdet med at optælle varer på et lagersted og derefter bruge en mobilenhed til at angive resultaterne i Supply Chain Management. Følg disse trin for at udføre arbejdet med cyklusoptælling i mobilappen Warehouse Management.
 
-1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i dette emne. I eksemplet i dette emne hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
+1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i denne artikel. I eksemplet i denne artikel hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
 1. I hovedmenuen skal du vælge **Lager**.
 1. Vælg **Vejledt cyklusoptælling** i menuen **Lager**.
 1. Vælg feltet **Antal**, indtast *9* på det numeriske tastatur, og vælg derefter **OK** (knappen med markeringen).
@@ -227,7 +227,7 @@ Før der kan forekomme en blind cyklusoptælling, skal du oprette noget arbejde.
 
 Når du er færdig med cyklusoptællingsarbejdet, skal du følge disse trin for at udføre arbejdet i mobilappen Warehouse Management.
 
-1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i dette emne. I eksemplet i dette emne hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
+1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i denne artikel. I eksemplet i denne artikel hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
 1. I hovedmenuen skal du vælge **Lager**.
 1. Vælg **Blind cyklusoptælling** i menuen **Lager**.
 1. Vælg feltet **Zone-id**, angiv *BULK06*, og vælg derefter **OK** (knappen med markeringen).
@@ -259,7 +259,7 @@ I den registrerede varebeholdning kan du se, at der er et disponibelt antal af v
 
 Følg disse trin for at udføre arbejdet med cyklusoptælling i mobilappen Warehouse Management.
 
-1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i dette emne. I eksemplet i dette emne hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
+1. Log på Warehouse Management-mobilappen som den arbejdsbruger, du konfigurerede i afsnittet [Forberede demodata for scenarier](#prepare-demo-data) tidligere i denne artikel. I eksemplet i denne artikel hedder brugeren *Julia Funderburk* og er oprettet for lagersted *61*. (USMF-demodataene giver dig mulighed for at logge på som denne arbejdsbruger ved at angive *61* som bruger-id og *1* som adgangskode).
 1. I hovedmenuen skal du vælge **Lager**.
 1. Vælg **Spotoptælling** i menuen **Lager**.
 1. Vælg feltet **Lokation**, angiv *01A02R2S1B*, og vælg derefter **OK** (knappen med markeringen).

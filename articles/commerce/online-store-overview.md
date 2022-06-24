@@ -1,6 +1,6 @@
 ---
 title: Oversigt over e-handelswebsted
-description: Dette emne giver et overblik over understøttelsen af e-handelswebsteder i Microsoft Dynamics 365 Commerce.
+description: Denne artikel giver et overblik over understøttelsen af e-handelswebsteder i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899115"
 ---
 # <a name="e-commerce-site-overview"></a>Oversigt over e-handelswebsted
 
 [!include [banner](includes/banner.md)]
 
-Dette emne giver et overblik over understøttelsen af e-handelswebsteder i Microsoft Dynamics 365 Commerce. Det indeholder oplysninger om, hvordan onlinebutikker til e-handel initialiseres og administreres i Dynamics 365 Commerce. Det indeholder også link til flere oplysninger om onlinebutikker og om, hvordan du konfigurerer et e-handelswebsted. Selvom dette emne beskriver mange af de grundlæggende principper, dækker det ikke alt, hvad der kræves for at konfigurere et e-handels-produktionssted. Du kan finde flere avancerede emner i dokumentationen til Dynamics 365 Commerce.
+Denne artikel giver et overblik over understøttelsen af e-handelswebsteder i Microsoft Dynamics 365 Commerce. Det indeholder oplysninger om, hvordan onlinebutikker til e-handel initialiseres og administreres i Dynamics 365 Commerce. Det indeholder også link til flere oplysninger om onlinebutikker og om, hvordan du konfigurerer et e-handelswebsted. Selvom denne artikel beskriver mange af de grundlæggende principper, dækker det ikke alt, hvad der kræves for at konfigurere et e-handels-produktionssted. Du kan finde flere avancerede artikler i dokumentationen til Dynamics 365 Commerce.
 
 ## <a name="online-store-channel"></a>Onlinebutikskanal
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce bruger Azure Active Directory (Azure AD) B2C (business-to-
 
 ## <a name="overview-of-the-default-site-pages"></a>Oversigt over standardwebstedssiderne
 
-Webstederne **standard** og **fabrikam** omfatter forudkonfigurerede skabeloner, fragmenter og sider, der kan hjælpe dig med at komme i gang. Du kan finde flere oplysninger under følgende emner:
+Webstederne **standard** og **fabrikam** omfatter forudkonfigurerede skabeloner, fragmenter og sider, der kan hjælpe dig med at komme i gang. Du kan finde flere oplysninger i følgende artikler:
 
 - [Oversigt over startside](quick-tour-home-page.md)
 - [Oversigt over side med produktdetaljer](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Webstederne **standard** og **fabrikam** omfatter forudkonfigurerede skabeloner,
 
 ## <a name="manage-site-settings"></a>Administrere webstedsindstillinger
 
-Du kan finde flere oplysninger om, hvordan du administrerer dine webstedsindstillinger, i følgende emner:
+Du kan finde flere oplysninger om, hvordan du administrerer dine webstedsindstillinger, i følgende artikler:
 
 - [Administrere e-handelsbrugere og -roller](manage-ecommerce-users-roles.md)
 - [Overvejelser om optimering af søgeprogram (SEO) for webstedet](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Du kan finde flere oplysninger om, hvordan du administrerer dine webstedsindstil
 
 ## <a name="manage-site-content"></a>Administrere webstedsindhold
 
-Du kan finde flere oplysninger om, hvordan du administrerer webstedsindhold, i følgende emner:
+Du kan finde flere oplysninger om, hvordan du administrerer webstedsindhold, i følgende artikler:
 
 - [Ordliste til sidemodel](page-elements-overview.md)
 - [Dokumenttilstande og -livscyklus](document-states-overview.md)

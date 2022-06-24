@@ -1,6 +1,6 @@
 ---
 title: Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
-description: I dette emne beskrives, hvordan du kan konfigurere debitorkontobetalingsmåden i Microsoft Dynamics 365 Commerce. Det beskriver også, hvordan kreditmaks. påvirker registrering af acontobetaling på business-to-business (B2B)-e-handelswebsteder.
+description: Denne artikel beskriver, hvordan du kan konfigurere debitorkontobetalingsmåden i Microsoft Dynamics 365 Commerce. Det beskriver også, hvordan kreditmaks. påvirker registrering af acontobetaling på business-to-business (B2B)-e-handelswebsteder.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878641"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere debitorkontobetalingsmåden i Microsoft Dynamics 365 Commerce. Det beskriver også, hvordan kreditmaks. påvirker registrering af acontobetaling på business-to-business (B2B)-e-handelswebsteder.
+Denne artikel beskriver, hvordan du kan konfigurere debitorkontobetalingsmåden i Microsoft Dynamics 365 Commerce. Det beskriver også, hvordan kreditmaks. påvirker registrering af acontobetaling på business-to-business (B2B)-e-handelswebsteder.
 
 Detailhandlende kan acceptere forskellige former for betalinger for de produkter og tjenester, de sælger i en e-handelskanal. De enkelte betalingstyper, som en detailhandlende accepterer, skal konfigureres i Dynamics 365 Commerce, når systemet konfigureres. Betalingsmåden for debitorkontoen (eller "aconto") skal understøttes på B2B-e-handelswebsteder. 
 
@@ -33,7 +33,7 @@ Detailhandlende kan acceptere forskellige former for betalinger for de produkter
 
 1. Tilføj debitorkontobetalingsmåden i Commerce Headquarters.
 2. Tilknyt betalingsmåden for debitorkontoen til e-handelskanalen.
-3. Sørg for, at egenskaben **Tillad aconto** er aktiveret for kunden i **Retail og Commerce \> Kunder \> Alle kunder \> Betalingsstandarder** i Commerce-hovedkontoret.
+3. Sørg for, at egenskaben **Tillad aconto** er aktiveret for kunden i **Retail og Commerce \> Kunder \> Alle kunder \> Betalingsstandarder** i Commerce Headquarters.
 
     > [!NOTE]
     > Hvis alle kunder skal have mulighed for at få betalingsmåden aconto aktiveret, kan du angive **Tillad aconto**-egenskaben til **Ja** for standardkunden for den kanal, der er tilknyttet B2B-webstedet. 
@@ -68,9 +68,9 @@ Følg disse trin for at bekræfte, at betalingsmetoden for debitorkonti er aktiv
 
 ## <a name="work-with-credit-limits"></a>Arbejde med kreditmaksimum
 
-Når egenskaberne for debitorkontobetalinger er aktiveret på B2B-webstedet, ønsker organisationer normalt at få vist oplysninger om kreditmaksimum og saldi for kreditmaksimum under ordreregistreringsprocessen. En kundes kreditmaksimum defineres af egenskaben **Kreditmaks.** i oversigtspanelet **Kredit og rykkere** for debitorposten i Commerce-hovedkontoret. Men i B2B-scenarier skal en ordre, som en kunde afgiver, ofte faktureres til kontoen hos den organisation, som kunden tilhører. Du skal derfor angive egenskaben **Fakturakonto** i oversigtspanelet **Faktura og levering** for debitorposten til organisationens debitorkonto-id. Når kunden derefter afgiver en ordre på B2B-webstedet, faktureres ordren til organisationen. B2B-webstedet bruger også organisationens kreditmaksimum i stedet for det kreditmaksimum, der er angivet i debitorposten.
+Når egenskaberne for debitorkontobetalinger er aktiveret på B2B-webstedet, ønsker organisationer normalt at få vist oplysninger om kreditmaksimum og saldi for kreditmaksimum under ordreregistreringsprocessen. En kundes kreditmaksimum defineres af egenskaben **Kreditmaks.** i oversigtspanelet **Kredit og rykkere** for debitorposten i Commerce Headquarters. Men i B2B-scenarier skal en ordre, som en kunde afgiver, ofte faktureres til kontoen hos den organisation, som kunden tilhører. Du skal derfor angive egenskaben **Fakturakonto** i oversigtspanelet **Faktura og levering** for debitorposten til organisationens debitorkonto-id. Når kunden derefter afgiver en ordre på B2B-webstedet, faktureres ordren til organisationen. B2B-webstedet bruger også organisationens kreditmaksimum i stedet for det kreditmaksimum, der er angivet i debitorposten.
 
-Beregningen og saldoen for kreditmaksimum, der vises på B2B-webstedet, afhænger af indstillingen af egenskaben **Kreditmaks.type** i Commerce-hovedkontoret. Placeringen af denne egenskab varierer, afhængigt af om funktionen **Kreditstyring** er aktiveret i arbejdsområdet **Funktionsstyring**:
+Beregningen og saldoen for kreditmaksimum, der vises på B2B-webstedet, afhænger af indstillingen af egenskaben **Kreditmaks.type** i Commerce Headquarters. Placeringen af denne egenskab varierer, afhængigt af om funktionen **Kreditstyring** er aktiveret i arbejdsområdet **Funktionsstyring**:
 
 - Hvis funktionen **Kreditstyring** er aktiveret, findes egenskaben i oversigtspanelet **Kreditmaks.** på **Kredit og rykkere \> Opsætning \> Kredit og Rykkerparametre \> Kredit**. 
 - Hvis funktionen **Kreditstyring** er deaktiveret, findes egenskaben under **Kreditvurdering** i **Debitor \> Konfiguration \> Debitorparametre \> Kreditvurdering**.

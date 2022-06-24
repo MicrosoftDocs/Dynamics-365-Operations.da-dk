@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Østrig (ældre)
-description: Dette emne indeholder retningslinjer for implementering af eksempel på regnskabsintegration for Østrig fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
+description: Denne artikel indeholder retningslinjer for implementering af eksempel på regnskabsintegration for Østrig fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 7cb0e7b665add397b12e1a841b6a2e9565528d6d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 94fe6817358ae18126a30794fd52fe5eb01a5265
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885431"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Østrig (ældre)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Østrig fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Østrig](emea-aut-fi-sample.md). 
+Denne artikel indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Østrig fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Østrig](emea-aut-fi-sample.md). 
 
-Eksemplet på regnskabsintegration for Østrig er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Eksemplet på regnskabsintegration består af udvidelser til Commerce Runtime (CRT), Hardwarestation og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Hardwarestation og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i dette emne. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
+Eksemplet på regnskabsintegration for Østrig er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Eksemplet på regnskabsintegration består af udvidelser til Commerce Runtime (CRT), Hardwarestation og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Hardwarestation og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
 
 ## <a name="development-environment"></a>Udviklingsmiljø
 
@@ -298,7 +298,7 @@ Formålet med POS-regnskabsconnector-udvidelsen er at kommunikere med tjenesten 
 
 #### <a name="fiscal-connector-factory"></a>Fabrik for regnskabsconnector
 
-Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce-hovedkontoret.
+Fabrikken for regnskabsconnector knytter connectornavnet til implementeringen af regnskabsconnector og er placeret i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Navnet på connectoren skal svare til navnet på den regnskabsconnector, der er angivet i Commerce Headquarters.
 
 #### <a name="efr-fiscal-connector"></a>EFR-regnskabsconnector
 

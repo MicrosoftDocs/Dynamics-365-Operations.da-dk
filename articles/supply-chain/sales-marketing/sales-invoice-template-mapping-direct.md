@@ -1,6 +1,6 @@
 ---
 title: Synkronisere salgsfakturahoveder og -linjer direkte fra Supply Chain Management til Sales
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
+description: Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: de4bdd07127b65321540543040192eb7811850da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571635"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862534"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
+Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere salgsfakturahoveder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
@@ -124,7 +124,7 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 

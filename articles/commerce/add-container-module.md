@@ -1,6 +1,6 @@
 ---
-title: Modulet Container
-description: Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+title: Container-modul
+description: Denne artikel omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa4bf7523acee06e91f0ebb983dd8777dec4bac5
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 4406b6ee998f3094e5a8a36d4f721839ffb427e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867834"
 ---
 # <a name="container-module"></a>Container-modul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+Denne artikel omhandler containermoduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Et containermodul er et modul, der indeholder andre moduler, som det er vært for. Det primære formål med et containermodul er, via de egenskaber, der er angivet for det, at definere layoutet af de moduler, det indeholder. De pågældende moduler kan f. eks. vises ved siden af hinanden i et layout med to, tre, fire eller seks kolonner. De kan også være begrænset til containerens bredde, eller de kan udfylde skærmen. Der kan også føjes en overskrift til alle containermoduler.
 

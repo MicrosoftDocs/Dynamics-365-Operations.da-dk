@@ -1,6 +1,6 @@
 ---
 title: Eksterne enheder
-description: I dette emne forklares begreberne i forbindelse med eksterne Commerce-enheder.
+description: Denne artikel forklarer begreberne i forbindelse med eksterne Commerce-enheder.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462235"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880075"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
 [!include[banner](includes/banner.md)]
 
-I dette emne beskrives forklares begreberne i forbindelse med eksterne butiksenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
+Denne artikel beskriver begreberne i forbindelse med eksterne butiksenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
 
 ## <a name="concepts"></a>Begreber
 
@@ -55,7 +55,7 @@ Modern POS til Android er en Android-baseret version af Modern POS-programmet, d
 
 ### <a name="pos-peripherals"></a>Eksterne POS-enheder
 
-Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktioner. Disse eksterne enheder er typisk opdelt i bestemte klasser. Du kan finde yderligere oplysninger om disse klasser i afsnittet "Enhedsklasser" i dette emne.
+Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktioner. Disse eksterne enheder er typisk opdelt i bestemte klasser. Du kan finde yderligere oplysninger om disse klasser i afsnittet "Enhedsklasser" i denne artikel.
 
 ### <a name="hardware-station"></a>Hardwarestation
 

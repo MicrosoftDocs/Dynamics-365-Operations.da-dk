@@ -1,6 +1,6 @@
 ---
-title: Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
-description: Dette emne beskriver, hvordan grænsefladen til kørsel af produktionsudstyr anvendes af arbejderne.
+title: Sådan anvender arbejdere grænsefladen til produktionsudførelse
+description: Denne artikel beskriver, hvordan grænsefladen til kørsel af produktionsudstyr anvendes af arbejderne.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860661"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -34,7 +34,7 @@ Når enheden er blevet forberedt, vises logonsiden. På denne side vises oplysni
 
 ![Logonside i grænseflade til kørsel af produktionsudstyr.](media/pfei-sign-in-page.png "Logonside i grænseflade til kørsel af produktionsudstyr")
 
-I de resterende afsnit af dette emne beskrives, hvordan arbejderne kan interagere med grænsefladen.
+I de resterende afsnit af denne artikel beskrives, hvordan arbejderne kan interagere med grænsefladen.
 
 ## <a name="all-jobs-tab"></a>Fanen Alle job
 

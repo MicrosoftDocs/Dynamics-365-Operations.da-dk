@@ -1,6 +1,6 @@
 ---
 title: Produktionsplanlægning
-description: Dette emne beskriver produktionsplanlægning med en forklaring af, hvordan du redigerer planlagte produktionsordrer ved hjælp af Planlægningsoptimering.
+description: Denne artikel beskriver produktionsplanlægning med en forklaring af, hvordan du redigerer planlagte produktionsordrer ved hjælp af Planlægningsoptimering.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873776"
 ---
 # <a name="production-planning"></a>Produktionsplanlægning
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469052"
 
 Planlægningsoptimering understøtter flere produktionsscenarier. Hvis du migrerer fra det eksisterende, indbyggede varedisponeringsprogram, er det vigtigt, at du er opmærksom på ændret funktionsmåde.
 
-Følgende video indeholder en kort introduktion til nogle af de begreber, der beskrives i dette emne: [Dynamics 365 Supply Chain Management: Forbedringer af planlægningsoptimering](https://youtu.be/u1pcmZuZBTw).
+Følgende video indeholder en kort introduktion til nogle af de begreber, der beskrives i denne artikel: [Dynamics 365 Supply Chain Management: Forbedringer af planlægningsoptimering](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Produktionsordreforslag til planlægningsoptimering*.
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i denne artikel, skal du gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Produktionsordreforslag til planlægningsoptimering*.
 
 ## <a name="planned-production-orders"></a>Produktionsordreforslag
 
@@ -65,7 +65,7 @@ Hvis du vil ændre oplysningerne i et ordreforslag og se, hvordan det påvirker 
 2. Godkend ordreforslaget.
 3. Kør varedisponering.
 
-Når du kører varedisponering, skal du ikke bruge filtre, hvis produktionsordreforslag medtages. Du kan finde flere oplysninger i afsnittet [Filtre](#filters) nedenfor i dette emne.
+Når du kører varedisponering, skal du ikke bruge filtre, hvis produktionsordreforslag medtages. Du kan finde flere oplysninger i afsnittet [Filtre](#filters) nedenfor i denne artikel.
 
 > [!NOTE]
 > Hvis leveringsdatoen for ordreforslaget ændres til en senere dato, kan behovet udlignes i forhold til et nyt ordreforslag. Denne funktionsmåde forekommer, når den nye leveringsdato medfører forsinkelse for den udlignede efterspørgsel, men forsinkelsen kan undgås ifølge indstillingerne for leveringstiden.

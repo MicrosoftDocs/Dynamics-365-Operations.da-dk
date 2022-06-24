@@ -1,6 +1,6 @@
 ---
 title: Oversigt over sider med produktdetaljer
-description: Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7b7630a15f98da4a1454f7c9b0d3501d4f035649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986195"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884279"
 ---
 # <a name="product-details-pages-overview"></a>Oversigt over sider med produktdetaljer
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over sider med produktdetaljer (PDP'er) i Microsoft Dynamics 365 Commerce.
 
 En PDP viser detaljerede oplysninger om et produkt og gør det muligt for kunderne at vælge produktindstillinger, f.eks. størrelse, stil og farve. En PDP bør vise alle de produktoplysninger, en kunde har brug for til at kunne træffe en beslutning om køb.
 
@@ -35,9 +35,9 @@ Følgende illustration viser et eksempel på en PDP.
 
 ## <a name="header-and-footer-modules"></a>Overskrifts- og sidefodsmoduler
 
-Den øverste del af en PDP har et sidehoved, der viser alle produktkategorierne og andre sider, som forhandleren ønsker, at kunderne skal gennemse. Nederst på siden er der en sidefod, der indeholder hurtige links til forskellige emner, som kan have interesse for kunderne.
+Den øverste del af en PDP har et sidehoved, der viser alle produktkategorierne og andre sider, som forhandleren ønsker, at kunderne skal gennemse. Nederst på siden er der en sidefod, der indeholder hurtige links til forskellige artikler, som kan have interesse for kunderne.
 
-## <a name="buy-box-module"></a>Boksmodul til køb
+## <a name="buy-box-module"></a>Købefeltmodul
 
 Det vigtigste modul på en PDP er modulet med købsfeltet, som vises som det første element i hovedsektionen på siden. I et købsfeltmodul vises vigtige produktoplysninger, f.eks. produktnavn, produktbeskrivelse, produktpris, produktbilleder og produktvurderinger.
 

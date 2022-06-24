@@ -1,6 +1,6 @@
 ---
 title: Bruge sikkerhedslagerkladde for at opdatere minimumdisponering af varer
-description: Dette emne beskriver, hvordan sikkerhedslagerkladder bruges til at opdatere sikkerhedslagerantal for varer ved at beregne forslag til minimumdisponering baseret på historiske transaktioner.
+description: Denne artikel beskriver, hvordan sikkerhedslagerkladder bruges til at opdatere sikkerhedslagerantal for varer ved at beregne forslag til minimumdisponering baseret på historiske transaktioner.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851762"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Bruge sikkerhedslagerkladde for at opdatere minimumdisponering af varer
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468532"
 
 Et sikkerhedslager er et ekstra antal af en vare, der opbevares på lageret, for at reducere risikoen for, at varen udgår fra lageret. Sikkerhedslageret bruges som buffer i tilfælde af indgående salgsordrer, hvor leverandøren ikke er i stand til at opfylde kundens ønskede afsendelsesdato.
 
-Dette emne beskriver, hvordan du kan bruge sikkerhedslagerkladden til at beregne minimumdækningsforslaget baseret på historiske transaktioner og derefter opdatere varedisponeringen med forslagene.
+Denne artikel beskriver, hvordan du kan bruge sikkerhedslagerkladden til at beregne minimumdækningsforslaget baseret på historiske transaktioner og derefter opdatere varedisponeringen med forslagene.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Oversigt over brug af minimumdisponering
 
@@ -43,7 +43,7 @@ Værdien **Minimum** kan angives på tre måder:
 
 Sikkerhedslagerkladder bruges til at beregne et foreslået minimumsantal baseret på en varens historiske anvendelse, enten til min./maks. eller til lagerplanformål. Historisk forbrug repræsenterer alle afgangstransaktioner i en bestemt periode. Disse afgangstransaktioner omfatter salgsordretransaktioner og lagerreguleringer. I beregningerne identificeres også den virkning, som det foreslåede minimumsantal har på lagerværdien, og ændringen i lagerværdien sammenlignet med det aktuelle minimumsantal.
 
-Hver sikkerhedslagerkladdelinje repræsenterer en vare og dens disponeringsdimensioner. Disse kladdelinjer oprettes og vises på siden **Sikkerhedslagerkladdelinjer** (**Varedisponering \> Varedisponering \> Kør \> Sikkerhedslagerberegning**). Forretningsprocessen til brug af sikkerhedslagerkladder til beregning af de foreslåede minimumsantal beskrives senere i dette emne.
+Hver sikkerhedslagerkladdelinje repræsenterer en vare og dens disponeringsdimensioner. Disse kladdelinjer oprettes og vises på siden **Sikkerhedslagerkladdelinjer** (**Varedisponering \> Varedisponering \> Kør \> Sikkerhedslagerberegning**). Forretningsprocessen til brug af sikkerhedslagerkladder til beregning af de foreslåede minimumsantal beskrives senere i denne artikel.
 
 I planlægningen bruges en sikkerhedslagerkladde til at beregne foreslåede minimumantal for udvalgte varer baseret på historisk forbrug i udvalgte perioder. De foreslåede minimumværdier kan tilsidesættes manuelt, hvis det er nødvendigt, og du kan gennemgå de potentielle virkninger af det foreslåede minimum for lagerværdi. Når kladden bogføres, opdateres de tilknyttede minimumsantal i varedisponering automatisk.
 
@@ -89,7 +89,7 @@ Benyt følgende fremgangsmåde for at generere kladdelinjer automatisk.
 
     - **Fra dato** – Vælg startdatoen i den periode, som udstedelserne skal medtages i beregningen for.
     - **Til dato** – Vælg slutdatoen i den periode, som udstedelserne skal medtages i beregningen for. Der skal være mindst to måneder mellem start- og slutdatoen.
-    - **Beregn standardafvigelse** – Angiv denne indstilling til *Ja* for at beregne standardafvigelsen. Du skal angive denne indstilling til *Ja* for at bruge indstillingen **Brug serviceniveau**, når du beregner forslaget (som beskrevet senere i dette emne).
+    - **Beregn standardafvigelse** – Angiv denne indstilling til *Ja* for at beregne standardafvigelsen. Du skal angive denne indstilling til *Ja* for at bruge indstillingen **Brug serviceniveau**, når du beregner forslaget (som beskrevet senere i denne artikel).
 
 1. I oversigtspanelet **Poster, som skal medtages** kan du konfigurere filtre og begrænsninger for at definere, hvilke elementer der skal medtages. (Du kan f.eks. filtrere efter **Disponeringsgruppeværdi**). Vælg **Filter** for at åbne en standarddialogboks til forespørgselseditoren, hvor du kan definere udvælgelseskriterier, sorteringskriterier og join-forbindelser. Felterne fungerer på samme måde som for andre typer af forespørgsler i Microsoft Dynamics 365 Supply Chain Management.
 1. På oversigtspanelet **Kør i baggrunden** skal du vælge, om jobbet skal køres i batchtilstand, og/eller konfigurere en tilbagevendende tidsplan. Felterne fungerer på samme måde som for andre typer af [baggrundsjob](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management.
@@ -110,7 +110,7 @@ Dette trin beregner et foreslået minimum for hver kladdelinje og linjens potent
 De beregninger, der vises, påvirker ikke de faktiske minimumantalsværdier for hvert produkt, før du har valgt **Bogfør** i handlingsruden. På det tidspunkt anvendes værdierne af **Nyt minimumantal** for hvert produkt.
 
 1. Gå til **Varedisponering \> Varedisponering \> Kør \> Beregning af sikkerhedslager**.
-1. Åbn den kladde, der skal beregnes et forslag for. Du kan også oprette en ny kladde som beskrevet tidligere i dette emne.
+1. Åbn den kladde, der skal beregnes et forslag for. Du kan også oprette en ny kladde som beskrevet tidligere i denne artikel.
 1. Vælg **Opret forslag** på værktøjslinjen i oversigtspanelet **Kladdelinjer**. (Du behøver ikke vælge linjer).
 1. I dialogboksen **Beregn forslag for minimumslagerniveau** skal du angive følgende felter:
 

@@ -1,6 +1,6 @@
 ---
 title: Skaler enheder i en distribueret hybridtopologi
-description: Dette emne indeholder oplysninger om sky- og kantskalaenheder til styring af arbejdsbyrder i produktion og lagersted.
+description: Denne artikel indeholder oplysninger om sky- og kantskalaenheder til styring af arbejdsbyrder i produktion og lagersted.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893665"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaler enheder i en distribueret hybridtopologi
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676322"
 > [!IMPORTANT]
 > Skalaenhedsfunktionaliteten for Microsoft Dynamics 365 Supply Chain Management gøres tilgængelig for dig i henhold til de vilkår, der gælder for brugen af tjenesten. Yderligere oplysninger finder du i [Juridiske oplysninger om Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Når du aktiverer sky- og grænseskalaenheder, bliver du bedt om at bekræfte, at du forstår, at nogle af de data, der er relateret til konfigurationen og behandlingen af sky- og grænseskalaenheder, kan blive gemt i et datacenter, der ligger i USA. Du kan få mere at vide om databehandling af sky- og kantskalaenheder i afsnittet [Databehandling under administration af skalaenheder](#data-processing-management) senere i dette emne.
+> Når du aktiverer sky- og grænseskalaenheder, bliver du bedt om at bekræfte, at du forstår, at nogle af de data, der er relateret til konfigurationen og behandlingen af sky- og grænseskalaenheder, kan blive gemt i et datacenter, der ligger i USA. Du kan få mere at vide om databehandling af sky- og kantskalaenheder i afsnittet [Databehandling under administration af skalaenheder](#data-processing-management) senere i denne artikel.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Forslag til kerneværdi for en distribueret hybridtopologi
 
@@ -48,7 +48,7 @@ Skalaenheder giver modstandsdygtighed, pålidelighed og skalering for de tildelt
 
 En *arbejdsbyrde* er et defineret sæt forretningsfunktioner, der kan udtages og uddelegeres til en skalaenhed. Selvom arbejdsbyrden for Warehouse Management er frigivet, er arbejdsbyrden for produktionsudførelsen stadig en forhåndsversion.
 
-Du kan konfigurere dit hubmiljø og skyskalaenheder for udvalgte arbejdsbyrder ved hjælp af [portalen til styring af skalaenhed](https://sum.dynamics.com). Du kan også tildele flere arbejdsbyrder pr. skalaenhed. Du kan finde oplysninger om forudsætningerne og begrænsningerne for skalaenheder i skyen i den aktuelle version i afsnittet [Forudsætninger og begrænsninger for enheder i skyen](#cloud-scale-unit-prerequisites) senere i dette emne.
+Du kan konfigurere dit hubmiljø og skyskalaenheder for udvalgte arbejdsbyrder ved hjælp af [portalen til styring af skalaenhed](https://sum.dynamics.com). Du kan også tildele flere arbejdsbyrder pr. skalaenhed. Du kan finde oplysninger om forudsætningerne og begrænsningerne for skalaenheder i skyen i den aktuelle version i afsnittet [Forudsætninger og begrænsninger for enheder i skyen](#cloud-scale-unit-prerequisites) senere i denne artikel.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerede arbejdsbyrdefaciliteter for Warehouse Management i en skalaenhed
 

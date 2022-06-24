@@ -1,6 +1,6 @@
 ---
 title: Disponeringstidshorisonter
-description: Dette emne beskriver, hvordan disponeringstidshorisonter defineres, når du bruger Planlægningsoptimering. En disponeringstidshorisont angiver planlægningshorisonten og -grænsen.
+description: Denne artikel beskriver, hvordan disponeringstidshorisonter defineres, når du bruger Planlægningsoptimering. En disponeringstidshorisont angiver planlægningshorisonten og -grænsen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847927"
 ---
 # <a name="coverage-time-fences"></a>Disponeringstidshorisonter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan *disponeringstidshorisonter* defineres, når du bruger Planlægningsoptimering. Planlæggere kan definere planlægningshorisonten (disponeringstidshorisonten i dage) og udelukke udbud og efterspørgsel, der ligger uden for denne tidshorisont. Derfor medvirker disponeringstidshorisonter til at forhindre "støj", der forårsages af forsyningsforslag, som du ikke behøver at reagere på i flere måneder. Dette kan f.eks. omfatte prognose- og kundeordrer for næste år, som ligger langt ud over den normale gennemløbstid.
+Denne artikel beskriver, hvordan *disponeringstidshorisonter* defineres, når du bruger Planlægningsoptimering. Planlæggere kan definere planlægningshorisonten (disponeringstidshorisonten i dage) og udelukke udbud og efterspørgsel, der ligger uden for denne tidshorisont. Derfor medvirker disponeringstidshorisonter til at forhindre "støj", der forårsages af forsyningsforslag, som du ikke behøver at reagere på i flere måneder. Dette kan f.eks. omfatte prognose- og kundeordrer for næste år, som ligger langt ud over den normale gennemløbstid.
 
 En disponeringstidshorisont er det antal dage efter dags dato (eller mere præcist den dato, hvor planlægningen køres), hvor udbud og efterspørgsel udelukkes. Hvis du vil undgå forsinkelser, skal du sikre dig, at disponeringstidshorisonten er længere end den samlede leveringstid. Systemets standardværdi er 100 dage.
 

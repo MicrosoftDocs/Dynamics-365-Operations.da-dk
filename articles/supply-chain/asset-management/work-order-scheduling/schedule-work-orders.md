@@ -1,6 +1,6 @@
 ---
 title: Planlæg arbejdsordrer
-description: Dette emne beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver.
+description: Denne artikel beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845048"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718053"
 
  
 
-Dette emne beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver. 
+Denne artikel beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver. 
 
 Det nødvendige antal timer for en arbejdsordre defineres af summen af budgetterede timer minus bogførte timer. Hvis der kræves mere tid, skal prognosen justeres tilsvarende. I **Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer** kan du se eller redigere prognoser på en arbejdsordre ved at vælge arbejdsordren og klikke på **Prognose** under fanen **Arbejdsordre**. Når der er oprettet og forkalkuleret arbejdsordrer, er næste trin at allokere de påkrævede vedligeholdelsesarbejdere og -værktøjer, der skal til for at fuldføre arbejdsordrerne.
 

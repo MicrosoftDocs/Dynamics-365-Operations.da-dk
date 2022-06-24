@@ -1,6 +1,6 @@
 ---
 title: Vedligeholdelsesarbejdere og arbejdergrupper
-description: I dette emne forklares vedligeholdelsesarbejdere og arbejdergrupper i Styring af aktiver.
+description: Denne artikel forklarer vedligeholdelsesarbejdere og arbejdergrupper i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860893"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Vedligeholdelsesarbejdere og arbejdergrupper
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750118"
 
  
 
-I dette emne forklares vedligeholdelsesarbejdere og arbejdergrupper i Styring af aktiver. I Styring af aktiver kan du knytte vedligeholdelsesarbejdere til arbejdssteder. (Du finder flere oplysninger om arbejdssteder under [Opret arbejdssteder](../functional-locations/create-functional-locations.md).) Denne funktion kan være nyttig, hvis du eksempelvis planlægger et vedligeholdelsesjob på en maskine, der er placeret i arbejdssted 01, og du vil allokere vedligeholdelsesarbejdere fra samme sted til at udføre jobbet.
+Denne artikel forklarer vedligeholdelsesarbejdere og arbejdergrupper i Styring af aktiver. I Styring af aktiver kan du knytte vedligeholdelsesarbejdere til arbejdssteder. (Du finder flere oplysninger om arbejdssteder under [Opret arbejdssteder](../functional-locations/create-functional-locations.md).) Denne funktion kan være nyttig, hvis du eksempelvis planlægger et vedligeholdelsesjob på en maskine, der er placeret i arbejdssted 01, og du vil allokere vedligeholdelsesarbejdere fra samme sted til at udføre jobbet.
 
 Du kan også oprette vedligeholdelsesarbejdergrupper og knytte vedligeholdelsesarbejdere til dem. Denne funktion er nyttig, når du laver enkel arbejdsordreplanlægning, og du vil planlægge en gruppe vedligeholdelsesarbejdere på en arbejdsordre. Du kan bruge vedligeholdelsesarbejdere og vedligeholdelsesarbejdergrupper til at oprette foretrukne vedligeholdelsesarbejdere og ansvarlige vedligeholdelsesarbejdere. 
 

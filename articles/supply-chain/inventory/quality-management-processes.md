@@ -1,6 +1,6 @@
 ---
 title: Oversigt over styring af kvalitet og uoverensstemmelse
-description: Dette emne introducerer funktioner til styring af kvalitet og uoverensstemmelse i Microsoft Dynamics 365 Supply Chain Management og forklarer, hvordan de kan hjælpe med at forbedre produktkvaliteten i din forsyningskæde.
+description: Denne artikel introducerer funktioner til styring af kvalitet og uoverensstemmelse i Microsoft Dynamics 365 Supply Chain Management og forklarer, hvordan de kan hjælpe med at forbedre produktkvaliteten i din forsyningskæde.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907487"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Oversigt over styring af kvalitet og uoverensstemmelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne introducerer funktioner til styring af kvalitet og uoverensstemmelse i Microsoft Dynamics 365 Supply Chain Management og forklarer, hvordan de kan hjælpe med at forbedre produktkvaliteten i din forsyningskæde.
+Denne artikel introducerer funktioner til styring af kvalitet og uoverensstemmelse i Microsoft Dynamics 365 Supply Chain Management og forklarer, hvordan de kan hjælpe med at forbedre produktkvaliteten i din forsyningskæde.
 
 Kvalitetssikring omfatter test af produkter og håndteringen af uoverensstemmende materiale. Processer for kvalitetsstyring hjælper med at sikre et højt niveau af produkternes kvalitet i forsyningskæden. Disse processer kan også hjælpe med at optimere processer for forsyningskæden og øge kundetilfredsheden. Kvalitetsstyring kan hjælpe dig med at administrere behandlingstid, når du har med ikke-standardiserede produkter at gøre, uanset oprindelsessted for de pågældende produkter. Du kan sammenkæde diagnosticeringsresultater til korrektion af opgaver. Systemet kan planlægge opgaver til at løse problemer og derfor hjælpe med til at forhindre gentagelser af disse problemer i fremtiden. Kvalitetsstyring giver dig også mulighed for at spore problemer (herunder interne problemer) efter problemtype, og giver dig mulighed for at identificere løsninger som enten kortsigtede eller langsigtede. Statistik over nøgletal (KPI'er) giver indsigt i problemer med uoverensstemmelse, der er sket tidligere, og de løsninger, der anvendes til at rette dem. Du kan bruge historiske data til at gennemgå effektiviteten af kvalitetsmål, der tidligere er truffet, og fastlægge passende foranstaltninger i fremtiden.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere en arbejdsskabelon for indkøbsordrer
-description: I dette emne beskrives, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager.
+description: Denne artikel beskriver, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager.
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ee6bc896a979c326001e1596e4a463753005fabf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877357"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Konfigurere en arbejdsskabelon for indkøbsordrer
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager. Arbejdsskabeloner bestemmer det sæt instruktioner, der vises for lagermedarbejderen på en mobilenhed, når varer flyttes fra modtagelsesområdet. Du kan bruge denne procedure med de nævnte data i demodatafirmaet USMF. Før du starter denne vejledning, skal du oprette et arbejdspulje-id. I dette eksempel bruges arbejdspulje-id'et Indgående. Denne procedure er beregnet til lagerchefen.
+Denne artikel beskriver, hvordan du konfigurerer en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager. Arbejdsskabeloner bestemmer det sæt instruktioner, der vises for lagermedarbejderen på en mobilenhed, når varer flyttes fra modtagelsesområdet. Du kan bruge denne procedure med de nævnte data i demodatafirmaet USMF. Før du starter denne vejledning, skal du oprette et arbejdspulje-id. I dette eksempel bruges arbejdspulje-id'et Indgående. Denne procedure er beregnet til lagerchefen.
 
 1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Arbejde > Arbejdsskabeloner**.
 2. I feltet **Arbejdsordretype** skal du vælge **Indkøbsordrer**.

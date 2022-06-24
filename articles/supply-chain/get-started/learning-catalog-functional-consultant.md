@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672088"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851878"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Undervisningskatalog til funktionelle konsulenter for Dynamics 365 Supply Chain Management
 
@@ -68,7 +68,7 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 | [Kursus MB-300T01-A: Fælles kernefunktioner i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | I dette kursus diskuteres de fælles kernefunktioner i Microsoft Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
 | [Kursus MB-300T02-A: Kernekonfiguration i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | I dette kursus diskuteres kernekonfigurationsopgaver for Microsoft Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
 | [Kursus MB-300T03-A: Dataoverførsel og forberedelse til udgivelse med Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | I dette kursus gennemgås dataoverførslen og forberedelse af udgivelse for Microsoft Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
-| [Startside for implementering af Lifecycle](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | I disse emner beskrives de programmer, værktøjer og processer, der er tilgængelige i forbindelse med implementeringen af dit Microsoft Dynamics 365 for Finance and Operations- projekts livscyklus. | Dokument | |
+| [Startside for implementering af Lifecycle](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Disse artikler beskriver de programmer, værktøjer og processer, der er tilgængelige i forbindelse med implementeringen af dit Microsoft Dynamics 365 for Finance and Operations- projekts livscyklus. | Dokument | |
 
 ## <a name="migration-and-upgrade"></a>Overførsel og opgradering<a name="migration"></a>
 
@@ -105,7 +105,7 @@ I forbindelse med funktionelle konsulenter har vores analyse af arbejdsopgaver v
 | [Mobilappen Lagersted (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Denne tekniske samtale diskuterer det avancerede lagerstedssystem i Dynamics 365 for Operations, og hvad fremtiden byder på til den avancerede mobilgrænseflade for lagersted. Vi undersøger den nye mobilapp, der er udgivet, og hvordan den står i sammenligning med den ældre WMDP. Vi vil lære, hvad der kræves for at kunne installere, konfigurere og betjene denne mobilapp, og hvordan den kan bruges til at udnytte dine implementeringer. | Gratis optagelse af en webkonference | 54 minutter |
 | [Kreditorsamarbejde (DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | Denne tekniske samtale vil give dig en gennemgang af funktionen Kreditorsamarbejde, herunder forbruget funktionen Forbrug af svar fra leverandør, der er medtaget i juli-versionen (forår). | Gratis optagelse af en webkonference | 58 minutter |
 | [Vare- og lokalitetsoverførselsproces til brug i avanceret logistik (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | I denne tekniske samtale lærer du at overføre eksisterende lagerstedsopsætning og varer med åbne transaktioner til den avancerede lokationsstyring ved at bruge de nye muligheder for at ændre lagringsdimensionsgruppen for varer og sætte lagersteder i stand til at bruge den avancerede lokationsstyringsproces. | Gratis optagelse af en webkonference | 54 minutter |
-| [Startside for styring af forsyningskæder](/dynamics365/unified-operations/supply-chain/) | Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations. | Dokument | |
+| [Startside for styring af forsyningskæder](/dynamics365/unified-operations/supply-chain/) | Denne artikel indeholder en liste over artiklerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations. | Dokument | |
 | [Genopfyldning af behov for pluk af råvarer (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Denne tekniske samtale vil dække plukning af råmaterialer og behovsmæssig genopfyldning for råvareplukninger. | Gratis optagelse af en webkonference | 38 minutter |
 | [Kursus MB-330T01-A: Konfigurere og bruge Supply Chain Management i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | I dette kursus gennemgås, hvordan du kan konfigurere og bruge Supply Chain Management i Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 2 dage |
 | [Kursus MB-330T02-A: Bruge kvalitetsstyring, intern handel og varedisponering i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Dette kursus gennemgår, hvordan du kan bruge kvalitetsstyring, intern handel og varedisponering i Dynamics 365 for Finance and Operations. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |

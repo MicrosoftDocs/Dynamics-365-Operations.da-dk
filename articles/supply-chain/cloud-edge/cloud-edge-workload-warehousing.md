@@ -1,6 +1,6 @@
 ---
 title: Sky- og kantskaleringsenheder til arbejdsbyrder i warehouse management
-description: Dette emne indeholder oplysninger om funktionen, der gør det muligt for skaleringsenheder at køre udvalgte processer fra din arbejdsbyrde i warehouse management.
+description: Denne artikel indeholder oplysninger om funktionen, der gør det muligt for skaleringsenheder at køre udvalgte processer fra din arbejdsbyrde i warehouse management.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893491"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbejdsbelastninger i forbindelse med Warehouse Management for sky- og edge-skaleringsenheder
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ikke alle forretningsfunktioner i Warehouse Management understøttes fuldt ud på lagersteder, der kører en arbejdsbyrde på en skaleringsenhed. Sørg for kun at bruge de processer, som dette emne direkte beskriver som understøttede.
+> Ikke alle forretningsfunktioner i Warehouse Management understøttes fuldt ud på lagersteder, der kører en arbejdsbyrde på en skaleringsenhed. Sørg for kun at bruge de processer, som denne artikel direkte beskriver som understøttede.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerudførelse på skaleringsenheder
 
@@ -184,7 +184,7 @@ Ingen anden behandling af kildedokument eller lagerstedsarbejde understøttes i 
 >
 > Der kræves et par ekstra trin at konfigurere mobilappen Warehouse Management til at arbejde i en sky- eller edge-skalaenhed. Du kan finde flere oplysninger under [Konfigurere mobilappen Warehouse Management til sky- og edge-skaleringsenheder](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Når du kører en arbejdsbyrde i en skaleringsenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i dette emne dokumenterer de understøttede egenskaber.
+> Når du kører en arbejdsbyrde i en skaleringsenhed, kan du ikke køre processer, der ikke understøttes, for det specifikke lagersted på hubben. Tabellerne senere i denne artikel dokumenterer de understøttede egenskaber.
 >
 > Valgte arbejdstyper for lagersteder kan oprettes både på hubben og skaleringsenheder, men kan kun vedligeholdes af ejerhubben eller -skaleringsenheden (den installation, der har oprettet dataene).
 >

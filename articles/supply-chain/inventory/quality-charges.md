@@ -1,6 +1,6 @@
 ---
 title: Gebyrer for uoverensstemmelsesoperationer
-description: Dette emne beskriver, hvordan du opretter kvalitetsgebyrer, der kan bruges sammen med operationer for en uoverensstemmelse.
+description: Denne artikel beskriver, hvordan du opretter kvalitetsgebyrer, der kan bruges sammen med operationer for en uoverensstemmelse.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850722"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Gebyrer for uoverensstemmelsesoperationer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter kvalitetsgebyrer, der kan bruges sammen med operationer for en uoverensstemmelse.
+Denne artikel beskriver, hvordan du opretter kvalitetsgebyrer, der kan bruges sammen med operationer for en uoverensstemmelse.
 
 Du kan bruge siden **Kvalitetsgebyrer** til at definere de typer gebyrer, der kan tillægges operationer for en uoverensstemmelse. Gebyrer giver dig mulighed for at spore oplysninger om gebyrer eller gebyrer, som du skylder en kunde for uoverensstemmende produkter, eller som en kreditor skylder dig for uoverensstemmende produkter, du har modtaget. Du kan også bruge gebyrer til at spore omkostninger, der kræves af eksterne leverandører eller tjenester for at udføre en operation.
 

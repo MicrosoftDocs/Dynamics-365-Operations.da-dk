@@ -1,6 +1,6 @@
 ---
-title: Udnyttelse af varekonsolideringslokation
-description: Dette emne indeholder oplysninger om funktioner, der gør det nemt for lagerchefer at få vist og filtrere volumetrisk anvendelse af lokationer på tværs af lagerstedet. Ledere kan vælge lokationer og oprette lagerbevægelse direkte fra siden siden Varekonsolidering for at konsolidere varer og dermed udnytte lagerstedets areal bedre.
+title: Varekonsolidering – udnyttelse af adresse
+description: Denne artikel indeholder oplysninger om funktioner, der gør det nemt for lagerchefer at få vist og filtrere volumetrisk anvendelse af lokationer på tværs af lagerstedet. Ledere kan vælge lokationer og oprette lagerbevægelse direkte fra siden siden Varekonsolidering for at konsolidere varer og dermed udnytte lagerstedets areal bedre.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849178"
 ---
-# <a name="item-consolidation---location-utilization"></a>Udnyttelse af varekonsolideringslokation
+# <a name="item-consolidation---location-utilization"></a>Varekonsolidering – udnyttelse af adresse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om funktioner, der gør det nemt for lagerchefer at få vist og filtrere volumetrisk anvendelse af lokationer på tværs af lagerstedet. Ledere kan vælge lokationer og oprette lagerbevægelse direkte fra siden **Varekonsolidering** for at konsolidere varer og dermed udnytte lagerstedets areal bedre.
+Denne artikel indeholder oplysninger om funktioner, der gør det nemt for lagerchefer at få vist og filtrere volumetrisk anvendelse af lokationer på tværs af lagerstedet. Ledere kan vælge lokationer og oprette lagerbevægelse direkte fra siden **Varekonsolidering** for at konsolidere varer og dermed udnytte lagerstedets areal bedre.
 
 ## <a name="turn-on-the-features"></a>Slå funktionerne til
 
-Før du kan bruge de funktioner, der er beskrevet i dette emne, skal du aktivere dem i systemet. Administratorer kan bruge arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Slå begge af følgende funktioner til i den rækkefølge, de angives i. (Begge funktioner er til modulet **Lokationsstyring**).
+Før du kan bruge de funktioner, der er beskrevet i denne artikel, skal du aktivere dem i systemet. Administratorer kan bruge arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Slå begge af følgende funktioner til i den rækkefølge, de angives i. (Begge funktioner er til modulet **Lokationsstyring**).
 
 1. Placeringsstatus for lagersted
 2. Udnyttelse af varekonsolideringslokation
@@ -51,7 +51,7 @@ Disse felter giver lagerchefer mulighed for at få et bedre overblik over status
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Konfigurere varekonsolidering og lokationsudnyttelse
 
-I dette afsnit beskrives, hvordan du forbereder dit system til at bruge varekonsolidering og lokationsudnyttelse. Procedurerne bruger eksempelværdier fra standarddemodataene. Hvis du planlægger at arbejde dig gennem det eksempelscenarie, der er angivet senere i dette emne, skal du vælge den juridiske enhed **USMF** (som indeholder standarddemodataene) og oprette de enkelte poster, der er beskrevet i dette afsnit. Hvis du ikke planlægger at arbejde dig gennem eksempelscenariet, kan de værdier, der angives her, betragtes som eksempler på de typer af opsætning, du skal udføre for at kunne bruge funktionerne.
+I dette afsnit beskrives, hvordan du forbereder dit system til at bruge varekonsolidering og lokationsudnyttelse. Procedurerne bruger eksempelværdier fra standarddemodataene. Hvis du planlægger at arbejde dig gennem det eksempelscenarie, der er angivet senere i denne artikel, skal du vælge den juridiske enhed **USMF** (som indeholder standarddemodataene) og oprette de enkelte poster, der er beskrevet i dette afsnit. Hvis du ikke planlægger at arbejde dig gennem eksempelscenariet, kan de værdier, der angives her, betragtes som eksempler på de typer af opsætning, du skal udføre for at kunne bruge funktionerne.
 
 ### <a name="released-product"></a>Frigivet produkt
 

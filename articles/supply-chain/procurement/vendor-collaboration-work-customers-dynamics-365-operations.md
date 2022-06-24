@@ -1,6 +1,6 @@
 ---
 title: Kreditorsamarbejde med kunder
-description: Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager.
+description: Denne artikel beskriver, hvordan du kan bruge kreditorsamarbejde til at arbejde med indkøbsordrer og overvåge konsignationslager.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673768"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859163"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
+Denne artikel beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 
 - **Indkøbsordrebekræftelse** – Overvåge og reagere på indkøbsordrer (IO'er).
 - **Kreditorbud** – Få vist anmodninger om tilbud (tilbudsanmodninger) og reagere på dem ved at afgive bud.
 - **Kreditoroplysninger** – Få vist eller opdatere kreditormasterdata.
-- **Fakturering** – Arbejde med fakturaer. Dette emne dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturering** – Arbejde med fakturaer. Denne artikel dækker ikke arbejdsområdet **Fakturering**. Du kan finde flere oplysninger om dette arbejdsområde under [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Kreditorer kan også overvåge oplysninger om konsignationslager.
 
@@ -47,9 +47,9 @@ Der findes tre lister i **Indkøbsordrebekræftelse**-arbejdsområdet:
 
 Du kan bruge følgende sider til at arbejde med indkøbsordrer:
 
-- **Indkøbsordrer til gennemsyn** – Denne side indeholder de samme oplysninger som listen **Indkøbsordrer til gennemsyn** i arbejdsområdet. Se beskrivelsen tidligere i dette emne.
+- **Indkøbsordrer til gennemsyn** – Denne side indeholder de samme oplysninger som listen **Indkøbsordrer til gennemsyn** i arbejdsområdet. Se beskrivelsen tidligere i denne artikel.
 - **Historik over bekræftelse af kreditor for indkøbsordre** – Denne side indeholder alle indkøbsordrer og alle versioner af indkøbsordrer, der er sendt til kreditoren. Den indeholder også alle de reaktioner, der er returneret fra kreditoren.
-- **Åbn bekræftede indkøbsordrer** – Denne side indeholder de samme oplysninger som listen **Åbn bekræftede indkøbsordrer** i arbejdsområdet. Se beskrivelsen tidligere i dette emne.
+- **Åbn bekræftede indkøbsordrer** – Denne side indeholder de samme oplysninger som listen **Åbn bekræftede indkøbsordrer** i arbejdsområdet. Se beskrivelsen tidligere i denne artikel.
 - **Alle bekræftede indkøbsordrer** – Denne side indeholder alle indkøbsordrer, der er bekræftet. Indkøbsordrerne på denne side omfatter de indkøbsordrer, hvor produkter eller ydelser er modtaget. Du kan bruge denne liste til at overvåge de indkøbsordrer, du kan sende fakturaer for.
 
 ### <a name="responding-to-pos"></a>Reagere på indkøbsordrer

@@ -1,6 +1,6 @@
 ---
 title: Oversigt over skybaseret søgning
-description: Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850350"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over skybaseret søgning i Microsoft Dynamics 365 Commerce.
 
 Produktregistrering hjælper dig med at sikre, at kunder hurtigt og nemt kan finde produkter ved at gennemse kategorier, foretage søgninger og filtrere. Detailhandlende vurderer, at produktregistrering er et primært værktøj for kundeinteraktion på tværs af kanaler, der drives af Cloud Scale Unit (CSU), f.eks. e-handel og POS.
 

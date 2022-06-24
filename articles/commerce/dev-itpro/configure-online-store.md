@@ -1,6 +1,6 @@
 ---
 title: Konfigurer onlinebutikker
-description: Denne artikel indeholder links til emner, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt.
+description: Denne artikel indeholder links til artikler, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861873"
 ---
 # <a name="configure-online-stores"></a>Konfigurer onlinebutikker
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder links til emner, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt.
+Denne artikel indeholder links til artikler, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt.
 
-Emnerne i følgende tabel kan hjælpe dig med at konfigurere Commerce-komponenter og onlinebutikken på klienten.
+Artiklerne i følgende tabel kan hjælpe dig med at konfigurere Commerce-komponenter og onlinebutikken på klienten.
 
 ## <a name="configure-an-online-store"></a>Konfigurere en onlinebutik
 
-| Opgave                                                | Oplysninger                                                                                                                                                                                                                                                                                                                                                   | emner                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Opgave                                                | Detaljer                                                                                                                                                                                                                                                                                                                                                   | Artikler                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurer komponenter.                        | Opret og vedligehold oplysninger om handelsaktiviteter. Oplysningerne omfatter butikker, skatter, produkter, gavekort, kampagner og rabatter.                                                                                                                                                                                                          | [Konfigurere og vedligeholde Retail](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (TechNet-indhold til Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
 | Konfigurer et navigationshierarki for en kanal.    | Opret en navigationskategorihierarki for kanalen for at oprette en kategoristruktur for produkter, du kun tilbyder gennem en onlinebutik. Definer kategorihierarkiet, og tildele produkter, produktattributgrupper og attributværdier til kategorierne. Derefter tildeler du kategorihierarkiet til en onlinebutik.                            | [Konfigurer et detailhierarki](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (TechNet-indhold til AX 2012)</br> [Konfigurere attributter og attributtyper](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (TechNet-indhold til AX 2012)</br> [Konfigurere detailattributgrupper](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (TechNet-indhold til AX 2012) |
@@ -41,7 +41,7 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Commerce-komponente
 
 ## <a name="configure-online-store-products"></a>Konfigurere produkter i onlinebutik
 
-| Opgave                                 | Oplysninger                                                                                                                                           | emner                                                                                                                                                                                                                                                                            |
+| Opgave                                 | Detaljer                                                                                                                                           | Artikler                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Føj udvalg til onlinebutikken. | Tilføj de sortimenter, der omfatter de produkter, du har tilbudt i en onlinebutik.                                                                  | [Konfigurere en onlinebutik](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (TechNet-indhold til AX 2012)                                                                                                                                              |
 | Administrer kataloger.                     | Brug produktkataloger til at identificere de produkter, du vil tilbyde i dine butikker.                                                              | [Hovedopgaver: Oprette detailproduktkataloger](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (TechNet-indhold til AX 2012)                                                                                                                           |
@@ -52,7 +52,7 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Commerce-komponente
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Konfigurere dataudveksling mellem Commerce og onlinebutikken
 
-| Opgave                                 | Oplysninger                                                                                                                               | emner                                                                                                                                                                                                                                                                                  |
+| Opgave                                 | Detaljer                                                                                                                               | Artikler                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opret profiler for kanalintegration. | Profiler gør det muligt for komponenterne at kommunikere med hinanden. Opret profiler, før du konfigurerer indstillinger for udveksling af data. | [Oprette en Real-time Service-profil](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (TechNet-indhold til AX 2012)</br> [Oprette en kanalprofil](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (TechNet-indhold til AX 2012) |
 

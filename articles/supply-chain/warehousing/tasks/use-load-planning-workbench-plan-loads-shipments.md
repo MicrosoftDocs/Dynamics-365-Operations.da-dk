@@ -1,6 +1,6 @@
 ---
 title: Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet
-description: Dette emne beskriver, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre.
+description: Denne artikel beskriver, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre.
 author: Mirzaab
 ms.date: 07/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d641ece709d36d8f3ee29cde47918154835a5bb9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8ad9c91051c1a1140661c93d7c5e86a78de5ec3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877328"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre. Som en forudsætning skal vi skal oprette salgsordren. Denne procedure er en del af det daglige arbejde for transportkoordinatoren. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Denne artikel beskriver, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre. Som en forudsætning skal vi skal oprette salgsordren. Denne procedure er en del af det daglige arbejde for transportkoordinatoren. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
 
 ## <a name="create-a-sales-order"></a>Oprette en salgsordre

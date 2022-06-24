@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.23.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691464"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849468"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.23. Denne version har et build-nummer på 10.0.1037 og er tilgængelig som følger:
+Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.23. Denne version har et build-nummer på 10.0.1037 og er tilgængelig som følger:
 
 - **Prøveversion:** oktober 2021
 - **Generel tilgængelighed af version (selv-opdatering):** december 2021
@@ -29,7 +29,7 @@ I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funktioner, der er inkluderet i denne version
 
-Følgende tabel anfører de funktioner, der er inkluderet i denne version. Kolonnen *Funktion* indeholder links til [frigivelsesplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), hvor du kan se de officielle frigivelsesdatoer for hver funktion. Kolonnen *Flere oplysninger* indeholder flere oplysninger og/eller links til relateret dokumentation. Se kolonnen *Aktiveret efter*, hvis du vil have oplysninger om, hvordan du aktiverer funktionen. Du kan finde flere oplysninger om brug af administration af funktioner under [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Vi opdaterer muligvis dette emne for at medtage funktioner i det build, som er foretaget, efter dette emne blev udgivet.
+Følgende tabel anfører de funktioner, der er inkluderet i denne version. Kolonnen *Funktion* indeholder links til [frigivelsesplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), hvor du kan se de officielle frigivelsesdatoer for hver funktion. Kolonnen *Flere oplysninger* indeholder flere oplysninger og/eller links til relateret dokumentation. Se kolonnen *Aktiveret efter*, hvis du vil have oplysninger om, hvordan du aktiverer funktionen. Du kan finde flere oplysninger om brug af administration af funktioner under [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Vi opdaterer muligvis denne artikel for at medtage funktioner i det build, som er foretaget, efter denne artikel blev udgivet.
 
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
@@ -63,9 +63,9 @@ Hvis du vil slå nogen af disse funktioner til og fra, skal du gøre det i [funk
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 
-Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. Disse emner er ikke nødvendigvis knyttet til de nye funktioner, der er tilføjet for denne version, som vist i forrige afsnit. De kan dog hjælpe dig med at få mere ud af eksisterende funktioner.
+Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler. Disse artikler er ikke nødvendigvis knyttet til de nye funktioner, der er tilføjet for denne version, som vist i forrige afsnit. De kan dog hjælpe dig med at få mere ud af eksisterende funktioner.
 
-| Funktionsområde | Nye eller opdaterede emner |
+| Funktionsområde | Nye eller opdaterede artikler |
 |---|---|
 | Styring af tekniske ændringer | [Tekniske attributter og søgning efter tekniske attributter](../engineering-change-management/engineering-attributes-and-search.md) beskriver nu, hvordan teknikerattributarv fungerer. |
 | Varedisponering | [Varedisponering med behovsprognoser](../master-planning/planning-optimization/demand-forecast.md) og [Prognosereduktionsnøgler](../master-planning/reduction-keys.md) indeholder nu flere oplysninger om, hvordan du kan arbejde med reduktionsnøgler. |
@@ -74,9 +74,9 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 | Varedisponering | [Forsyningsplan](../master-planning/supply-schedule.md) |
 | Lagerstedsstyring | [Globale parametre for mobilenhed](../warehousing/mobile-device-parameters.md) |
 | Lagerstedsstyring | [Forankring](../warehousing/anchoring.md) |
-| Salg og marketing | Intern handel beskrives nu detaljeret med start fra [Konfigurere intern handel](../sales-marketing/intercompany-trade-set-up.md) og de relaterede emner. |
+| Salg og marketing | Intern handel beskrives nu detaljeret med start fra [Konfigurere intern handel](../sales-marketing/intercompany-trade-set-up.md) og de relaterede artikler. |
 | Salg og marketing | [Forbedringer af ydeevnen for oprydning i salgshistorikken](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Lagerstyring | Dokumentationen til Lagersynlighed er udvidet og opdateret med start fra [Oversigt over tilføjelsesprogram for lagersynlighed](../inventory/inventory-visibility.md) og de relaterede emner. |
+| Lagerstyring | Dokumentationen til Lagersynlighed er udvidet og opdateret med start fra [Oversigt over tilføjelsesprogram for lagersynlighed](../inventory/inventory-visibility.md) og de relaterede artikler. |
 | Warehouse management | [Brugerkonti til mobilenhed](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
@@ -97,12 +97,12 @@ Undersøg [Dynamics 365 og brancheskyer: 2021 frigivelsesplan bølge 2](/dynamic
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

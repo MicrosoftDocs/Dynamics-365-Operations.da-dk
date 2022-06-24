@@ -1,6 +1,6 @@
 ---
 title: Mindre end truckload-klasser (LTL)
-description: Dette emne forklarer, hvad mindre end truckload-klasser (LTL) er, og beskriver, hvordan de konfigureres i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel forklarer, hvad mindre end truckload-klasser (LTL) er, og beskriver, hvordan de konfigureres i Microsoft Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a6e05ea7534ee081778a899d5956e6ca7cd104cb
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678060"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857193"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>Mindre end truckload-klasser (LTL)
 
@@ -33,7 +33,7 @@ Med denne funktion kan du bruge systemet til at udføre følgende opgaver:
 - Fastlæg emballagekravene for hver LTL-klasse ved at kontrollere de internationale LTL-standarder. På denne måde sikrer du, at dine produkter bliver beskyttet korrekt og fragtet på sikker vis.
 - Etabler nøjagtige forsendelsesestimater baseret på LTL-fragtklassen for hvert produkt.
 
-Dette emne beskriver, hvordan du opretter LTL-klasser i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver, hvordan du opretter LTL-klasser i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="create-an-ltl-class"></a>Oprette en LTL-klasse
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere arbejdsområdet til aktivstyring på mobilenhed
-description: Dette emne beskriver, hvordan Microsoft Dynamics 365 Supply Chain Management og Finance and Operations (Dynamics 365)-mobilappen konfigureres til at køre et mobilarbejdsområde til aktivstyring, som arbejderne kan bruge til at udføre opgaver i forbindelse med aktivstyring.
+description: Denne artikel beskriver, hvordan Microsoft Dynamics 365 Supply Chain Management og Finance and Operations (Dynamics 365)-mobilappen konfigureres til at køre et mobilarbejdsområde til aktivstyring, som arbejderne kan bruge til at udføre opgaver i forbindelse med aktivstyring.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870836"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurere arbejdsområdet til aktivstyring på mobilenhed
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan Microsoft Dynamics 365 Supply Chain Management og Finance and Operations (Dynamics 365)-mobilappen konfigureres til at køre et mobilarbejdsområde til **aktivstyring**, som arbejderne kan bruge til at udføre opgaver i forbindelse med aktivstyring.
+Denne artikel beskriver, hvordan Microsoft Dynamics 365 Supply Chain Management og Finance and Operations (Dynamics 365)-mobilappen konfigureres til at køre et mobilarbejdsområde til **aktivstyring**, som arbejderne kan bruge til at udføre opgaver i forbindelse med aktivstyring.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Konfigurere vedligeholdelsesarbejderbrugere i Supply Chain Management
 

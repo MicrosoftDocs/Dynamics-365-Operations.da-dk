@@ -1,6 +1,6 @@
 ---
 title: Opsætning af arbejdsordreprojekt
-description: I dette emne beskrives projektopsætning for arbejdsordrer i Styring af aktiver.
+description: Denne artikel beskriver projektopsætning for arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874124"
 ---
 # <a name="work-order-project-setup"></a>Opsætning af arbejdsordreprojekt
 
@@ -80,7 +80,7 @@ Opsætningen giver fuldstændig integration med modulet **Projektstyring og regn
 ![Siden Opsætning af arbejdsordreprojekt, Tilføj arbejdsordre.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Hver gang der oprettes en linje i en arbejdsordre, søger Styring af aktiver efter en projektgruppe, der skal relateres til arbejdsordrejobprojektet. Søgningen er baseret på den opsætning, der er beskrevet i dette emne. Hver projektgruppe har en relateret projekttype. Projektgrupper, der har projekttypen **Tid og materiale** eller **Fastpris**, er kun gyldige for aktiver, der er relateret til en debitorkonto.
+> Hver gang der oprettes en linje i en arbejdsordre, søger Styring af aktiver efter en projektgruppe, der skal relateres til arbejdsordrejobprojektet. Søgningen er baseret på den opsætning, der er beskrevet i denne artikel. Hver projektgruppe har en relateret projekttype. Projektgrupper, der har projekttypen **Tid og materiale** eller **Fastpris**, er kun gyldige for aktiver, der er relateret til en debitorkonto.
 >
 > For overordnede projekter og projektgrupper, når systemet vælger det projekt eller den projektgruppe, der er tilgængeligt for arbejdsordren, baseres valget på de poster, du oprettede ved hjælp af den foregående procedure. Styring af aktiver gennemgår poster, der er relateret til arbejdsordreprojektet, for at finde et muligt match. Den kontrollerer altid den mest specifikke kombination først. Med andre ord for arbejdsordrens overordnede projekt kontrollerer Styring af aktiver først, om der er et muligt match for feltet **Arbejdsordretype**. Hvis der ikke findes et match, kontrolleres det, om der er et match for feltet **Aktivtype**. Hvis der ikke findes et match, kontrolleres det, om der er et match for feltet **Arbejdssted** osv. Som du kan se i layoutet for siden **Opsætning af arbejdsordreprojekt**, betyder denne adfærd, at Styring af aktiver kontrollerer hver enkelt post fra højre mod venstre for et match for at finde den mest specifikke kombination. Hvis der ikke findes et match, bruges standardposten, hvor der kun er valgt et projekt-id. Den relaterede projektgruppe findes på tilsvarende måde. Styring af aktiver kontrollerer først, om der er et muligt match i feltet **Aktiv**, derefter i feltet **Aktivtype** og derefter i feltet **Arbejdsordretype**. Hvis der ikke findes et match, bruges standardposten, hvor der kun er valgt projektgruppe.
 

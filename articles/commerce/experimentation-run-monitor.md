@@ -1,6 +1,6 @@
 ---
 title: Køre og overvåge et eksperiment
-description: Dette emne beskriver, hvordan du kører og overvåger et eksperiment i en tredjepartstjeneste. Det beskrives også, hvordan du foretager ændringer i variationer, efter at du har startet eksperimentet.
+description: Denne artikel beskriver, hvordan du kører og overvåger et eksperiment i en tredjepartstjeneste. Det beskrives også, hvordan du foretager ændringer i variationer, efter at du har startet eksperimentet.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777566"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909577"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Køre og overvåge et eksperiment
 
-Dette emne beskriver, hvordan du kører og overvåger dit eksperiment i en tredjepartsapp og eventuelt ændrer variationer. Før du udfører trinnene i dette emne, skal du først [publicere](experimentation-preview-publish.md) dit eksperimenter i Commerce. 
+Denne artikel beskriver, hvordan du kører og overvåger dit eksperiment i en tredjepartsapp og eventuelt ændrer variationer. Før du udfører trinnene i denne artikel, skal du først [publicere](experimentation-preview-publish.md) dit eksperimenter i Commerce. 
 
-I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate emner.
+I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate artikler.
 
 [ ![Eksperimenteringens brugerrejse - køre og overvåge.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

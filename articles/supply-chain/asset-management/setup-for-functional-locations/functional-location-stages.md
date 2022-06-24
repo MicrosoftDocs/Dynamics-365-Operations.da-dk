@@ -1,6 +1,6 @@
 ---
 title: Livscyklustilstande for arbejdssted
-description: Dette emne beskriver, hvordan du konfigurerer arbejdsstedstilstande og livscyklusmodeller i Styring af aktiver.
+description: Denne artikel beskriver, hvordan du konfigurerer arbejdsstedstilstande og livscyklusmodeller i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360964"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934657"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livscyklustilstande for arbejdssted
 
@@ -28,7 +28,7 @@ ms.locfileid: "6360964"
 
  
 
-Dette emne beskriver, hvordan du konfigurerer livscyklustilstande for arbejdssteder og livscyklusmodeller i Styring af aktiver. Livscyklustilstande for arbejdssted definerer de tilstande, som et arbejdssted kan gennemgå, for eksempel oprettet, aktiv og afsluttet. Du kan få vist alle arbejdssteder, uanset deres livscyklustilstand, på listesiden **Alle arbejdssteder**. Du kan ændre tilstanden for et arbejdssted ved at vælge det på listesiden **Alle arbejdssteder** og vælge **Opdater arbejdsstedets tilstand**.
+Denne artikel beskriver, hvordan du konfigurerer livscyklustilstande for arbejdssteder og livscyklusmodeller i Styring af aktiver. Livscyklustilstande for arbejdssted definerer de tilstande, som et arbejdssted kan gennemgå, for eksempel oprettet, aktiv og afsluttet. Du kan få vist alle arbejdssteder, uanset deres livscyklustilstand, på listesiden **Alle arbejdssteder**. Du kan ændre tilstanden for et arbejdssted ved at vælge det på listesiden **Alle arbejdssteder** og vælge **Opdater arbejdsstedets tilstand**.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Opsætning af livscyklustilstande for arbejdssted
 
@@ -39,6 +39,7 @@ Dette emne beskriver, hvordan du konfigurerer livscyklustilstande for arbejdsste
 5. Vælg "Ja" på til/fra-knappen **Opret aktiver**, hvis det skal være muligt automatisk at oprette et aktiv med samme navn som arbejdsstedet og installere det på arbejdsstedet i denne tilstand.  
 >[!NOTE]
 >Denne til/fra-knap relaterer til feltet **Aktivtype** i oversigtspanelet **Generelt** i formen **Arbejdsstedstyper** (**Styring af aktiver** > **Opsætning** > **Arbejdssteder** > **Arbejdsstedstyper**).
+
 6. Vælg "Ja" på til/fra-knappen **Omdøb sted**, hvis det skal være muligt at ændre navnet på arbejdsstedet i denne tilstand.
 7. Vælg "Ja" på til/fra-knappen **Nye underlokationer**, hvis det skal være muligt at føje nye underlokation til arbejdsstedet i denne tilstand.
 8. Vælg "Ja" på til/fra-knappen **Installer aktiver**, hvis det skal være muligt at installere aktiver på arbejdsstedet i denne tilstand.

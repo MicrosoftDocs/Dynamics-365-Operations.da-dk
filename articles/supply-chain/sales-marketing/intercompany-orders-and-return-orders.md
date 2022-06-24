@@ -1,6 +1,6 @@
 ---
 title: Interne ordrer og returordrer
-description: Dette emne forklarer interne ordrer og returordrer
+description: Denne artikel forklarer interne ordrer og returordrer
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1c22c021adce5f892ccb6c2ff8735f9e647e8b81
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 65d0dc6049969ff7d8f84ca4eb3baf486ddad660
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859021"
 ---
 # <a name="intercompany-orders-and-return-orders"></a>Interne ordrer og returordrer
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan interne indkøbsordrer, salgsordrer, returvareordrer, købsaftaler og salgsaftaler oprettes og opdateres.
+Denne artikel beskriver, hvordan interne indkøbsordrer, salgsordrer, returvareordrer, købsaftaler og salgsaftaler oprettes og opdateres.
 
 ## <a name="about-intercompany-orders"></a>Om interne ordrer
 

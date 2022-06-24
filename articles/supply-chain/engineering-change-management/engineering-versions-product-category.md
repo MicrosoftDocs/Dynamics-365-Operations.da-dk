@@ -1,6 +1,6 @@
 ---
 title: Tekniske versioner og tekniske produktkategorier
-description: Dette emne giver oplysninger om begrebet tekniske versioner. Tekniske versioner sikrer, at forskellige tilstande af et produkt og dets data holdes opdaterede og tydelige, og at de kan visualiseres i systemet.
+description: Denne artikel giver oplysninger om begrebet tekniske versioner. Tekniske versioner sikrer, at forskellige tilstande af et produkt og dets data holdes opdaterede og tydelige, og at de kan visualiseres i systemet.
 author: t-benebo
 ms.date: 04/07/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: a98ead81a61ceac2ed721848847164f76e758f80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872059"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versioner og tekniske produktkategorier
 
@@ -60,7 +60,7 @@ Bemærk, at et teknisk produkt kun kan være i én teknisk ændringsordre ad gan
 
 ## <a name="track-versions-in-transactions"></a>Spore versioner i transaktioner
 
-Når du bruger teknisk ændringsstyring, indeholder produktmasterdataene altid en eller flere tekniske versioner. I opsætningen af tekniske produkter kan du vælge, om den tekniske version også er en del af *logistiske transaktioner*. (Yderligere oplysninger finder du i afsnittet [Konfigurer tekniske produktkategorier](#product-category) senere i dette emne). Hvis logistikeffekten er relevant, varierer den pr. produkt og pr. firma. Nogle gange bruges kun den nyeste version af et produkt. Derfor kan den tidligere version ikke længere bruges, når du introducerer en ny version. I andre tilfælde kræves den tidligere version i logistiske transaktioner for at overvinde følgende udfordringer:
+Når du bruger teknisk ændringsstyring, indeholder produktmasterdataene altid en eller flere tekniske versioner. I opsætningen af tekniske produkter kan du vælge, om den tekniske version også er en del af *logistiske transaktioner*. (Yderligere oplysninger finder du i afsnittet [Konfigurer tekniske produktkategorier](#product-category) senere i denne artikel). Hvis logistikeffekten er relevant, varierer den pr. produkt og pr. firma. Nogle gange bruges kun den nyeste version af et produkt. Derfor kan den tidligere version ikke længere bruges, når du introducerer en ny version. I andre tilfælde kræves den tidligere version i logistiske transaktioner for at overvinde følgende udfordringer:
 
 - Logistikafdelingen skal levere to stykker af et produkt til en kunde. I dette tilfælde skal du beslutte, om du ønsker eller vil tillade, at to forskellige versioner afsendes.
 - Det opdages senere, at der opstår et problem, og at det er knyttet til en bestemt ændring. I dette tilfælde kan det være en fordel at bestemme, nøjagtigt hvilken version der er afsendt i hver ordre.
@@ -118,7 +118,7 @@ Angiv følgende felter i oversigtspanelet **Detaljer** på en teknisk produktkat
 | Produktdimensionsgruppe | Med indstillingen **Spor versioner i transaktioner** kan du lettere vælge produktdimensionsgruppen. Hvis du har angivet, at du vil spore versionen i transaktioner, vil de produktdimensionsgrupper, hvor dimensionen *version* bruges, blive vist. Ellers vises kun produktdimensionsgrupper, hvor *version*-dimensionen ikke bruges. |
 | Produktets livscyklustilstand ved oprettelse | Konfigurer den standard for produktlivscyklustilstand, som et teknisk produkt skal have, når det først oprettes. Du kan finde flere oplysninger i [Produktlivscyklustilstand og transaktioner](product-lifecycle-state-transactions.md). |
 | Regel for versionsnummer | Vælg den versionsnummerregel, som gælder for kategorien.<ul><li>**Manuel** – Du vælger versionsnummeret for hver ny version.</li><li>**Automatisk** – Systemet angiver det versionsnummer, der er baseret på et format, som du definerer. Når du konfigurerer formatet, skal du bruge et nummertegn (\#) til at angive et ciffer og eventuelle andre tegn, der skal repræsentere en konstant værdi. Hvis du f.eks. definerer formatet som *V-\#\#*, vil den første version være "V-01", den anden version vil være "V-02" osv.</li><li>**Liste** – Systemet tager det næste nummer fra en foruddefineret liste over værdier, som du definerer.</li></ul> |
-| Gennemtving gyldighedsdato | Vælg, om gyldighedsdatoerne for tekniske versioner skal være sammenhængende, eller om der kan være huller og overlap. Denne indstilling påvirker den måde, som du kan bruge felterne **Gyldig fra** og **Gyldig til** for hver af de tekniske versioner, hvor kategorien gælder.<ul><li>Hvis denne indstilling er angivet til *Ja*, skal der angives en **Gyldig fra**-værdi for hver version, og hverken overlap eller huller er tilladt mellem versioner. Datointervallet for hver enkelt tekniske version er direkte forbundet til de tidligere og næste tekniske versioner, hvis de findes. I dette scenario bruges den nyeste version altid, og ældre versioner bruges ikke længere.</li><li>Hvis denne indstilling er angivet til **Nej**, er der ingen begrænsninger for gyldighedsdatofelterne til tekniske versioner, og både overlap og huller er tilladt. I dette scenario kan flere versioner være aktive på samme tid, og du kan arbejde med en hvilken som helst aktiv version.</li></ul><p>Denne indstilling påvirker også de styklister og ruter, der er tilknyttet en produktversion. Du kan finde flere oplysninger i afsnittet [Oprette forbindelse mellem styklister og ruter til tekniske versioner](#boms-routes) senere i dette emne.</p> |
+| Gennemtving gyldighedsdato | Vælg, om gyldighedsdatoerne for tekniske versioner skal være sammenhængende, eller om der kan være huller og overlap. Denne indstilling påvirker den måde, som du kan bruge felterne **Gyldig fra** og **Gyldig til** for hver af de tekniske versioner, hvor kategorien gælder.<ul><li>Hvis denne indstilling er angivet til *Ja*, skal der angives en **Gyldig fra**-værdi for hver version, og hverken overlap eller huller er tilladt mellem versioner. Datointervallet for hver enkelt tekniske version er direkte forbundet til de tidligere og næste tekniske versioner, hvis de findes. I dette scenario bruges den nyeste version altid, og ældre versioner bruges ikke længere.</li><li>Hvis denne indstilling er angivet til **Nej**, er der ingen begrænsninger for gyldighedsdatofelterne til tekniske versioner, og både overlap og huller er tilladt. I dette scenario kan flere versioner være aktive på samme tid, og du kan arbejde med en hvilken som helst aktiv version.</li></ul><p>Denne indstilling påvirker også de styklister og ruter, der er tilknyttet en produktversion. Du kan finde flere oplysninger i afsnittet [Oprette forbindelse mellem styklister og ruter til tekniske versioner](#boms-routes) senere i denne artikel.</p> |
 | Brug nomenklatur for talregel | Angiv denne indstilling til *Ja* for at aktivere regler for definition af et produktnummer ved hjælp af nummerserier, tekniske attributnavne og -værdier samt tekstkonstanter som segmenter. Hvis du vil oprette eller redigere regler, skal du vælge knappen **Rediger**. |
 | Brug nomenklatur for navneregel | Angiv denne indstilling til *Ja* for at aktivere regler for definition af et navn ved hjælp af de tekniske attributnavne og -værdier samt tekstkonstanter som segmenter. Hvis du vil oprette eller redigere regler, skal du vælge knappen **Rediger**. |
 | Brug nomenklatur for beskrivelsesregel | Angiv denne indstilling til *Ja* for at aktivere regler for definition af beskrivelsen ved hjælp af de tekniske attributnavne og -værdier samt tekstkonstanter som segmenter. Hvis du vil oprette eller redigere regler, skal du vælge knappen **Rediger**. |

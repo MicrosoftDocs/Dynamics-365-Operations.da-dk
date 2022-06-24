@@ -1,6 +1,6 @@
 ---
 title: Parametre, der ikke bruges af planlægningsoptimering
-description: Dette emne viser de parametre, som planlægningsoptimering i øjeblikket ikke overvejer under driften.
+description: Denne artikel viser de parametre, som planlægningsoptimering i øjeblikket ikke overvejer under driften.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907342"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametre, der ikke bruges af planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser de parametre, som planlægningsoptimering i øjeblikket ikke overvejer under driften. Planlægningstjenesten kan springe en parameter over, for eksempel fordi relaterede funktioner endnu ikke understøttes. Alternativt kan parameteren være forældet på grund af funktionelle ændringer.
+Denne artikel viser de parametre, som planlægningsoptimering i øjeblikket ikke overvejer under driften. Planlægningstjenesten kan springe en parameter over, for eksempel fordi relaterede funktioner endnu ikke understøttes. Alternativt kan parameteren være forældet på grund af funktionelle ændringer.
 
 I følgende afsnit vises de parametre, som planlægningsoptimering ikke bruger på bestemte sider. De forklarer også, hvorfor de enkelte parametre ikke bruges.
 

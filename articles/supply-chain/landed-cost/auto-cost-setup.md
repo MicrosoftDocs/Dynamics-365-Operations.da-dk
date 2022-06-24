@@ -1,6 +1,6 @@
 ---
 title: Konfigurere automatiske omkostninger
-description: Dette emne beskriver, hvordan du konfigurerer omkostningsregler for forskellige indgående niveauer. Ud fra disse regler beregner systemet omkostningerne og tilføjer dem automatisk. Brugerne behøver derfor ikke tilføje omkostningerne manuelt.
+description: Denne artikel beskriver, hvordan du konfigurerer omkostningsregler for forskellige indgående niveauer. Ud fra disse regler beregner systemet omkostningerne og tilføjer dem automatisk. Brugerne behøver derfor ikke tilføje omkostningerne manuelt.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852383"
 ---
 # <a name="auto-costs-setup"></a>Konfigurere automatiske omkostninger
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695326"
 
 Du kan bruge siden **Automatiske omkostninger** til at definere omkostningsregler for forskellige omkostningsområder (f.eks. fragter, forsendelsescontainere, porteføljer, indkøbsordrer, varer eller flytteordrelinjer). Ud fra reglerne og de felter, brugerne vælger, når de opretter poster for et af omkostningsområderne, beregner systemet omkostningerne og tilføjer dem automatisk. Brugerne behøver derfor ikke tilføje omkostningerne manuelt.
 
-Du kan arbejde med automatiske omkostninger ved at gå til **Landingsomkostninger \> Opsætning af efterkalkulation \> Automatiske omkostninger**. Konfigurer derefter dine regler for automatiske omkostninger som beskrevet i resten af dette emne.
+Du kan arbejde med automatiske omkostninger ved at gå til **Landingsomkostninger \> Opsætning af efterkalkulation \> Automatiske omkostninger**. Konfigurer derefter dine regler for automatiske omkostninger som beskrevet i resten af denne artikel.
 
 ## <a name="work-with-cost-areas"></a>Arbejde med omkostningsområder
 

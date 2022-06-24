@@ -1,6 +1,6 @@
 ---
 title: Beskære billeder
-description: I dette emne beskrives, hvordan du beskærer billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: Denne artikel beskriver, hvordan du beskærer billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cb6049a1d98b7286658403b15a071f6f1389f725a9a7a146aab55d43796be60b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8618ef19593c362853fe8441c249dd4580d65737
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893055"
 ---
 # <a name="crop-images"></a>Beskære billeder
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du beskærer billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+Denne artikel beskriver, hvordan du beskærer billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 Med mediebiblioteket i Commerce-webstedsgenerator kan du beskære billeder for at optimere dem til forskellige modultyper og billeder.
 

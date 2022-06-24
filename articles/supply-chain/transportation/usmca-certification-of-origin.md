@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 9fed5f93441bbc29b039bd1562821b999a58e5e1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851356"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-certificering af oprindelse
 
@@ -53,7 +53,7 @@ USMCA-certificeringen af oprindelsesdokumentet indeholder følgende dataelemente
 - Certificerendes signatur
 - Antal sider
 
-Yderligere oplysninger om hvert af disse elementer og om, hvordan deres værdier findes, finder du i de resterende afsnit i dette emne.
+Yderligere oplysninger om hvert af disse elementer og om, hvordan deres værdier findes, finder du i de resterende afsnit i denne artikel.
 
 ## <a name="print-a-usmca-certification-of-origin-document"></a>Udskrive en USMCA-certificering af oprindelsesdokument
 

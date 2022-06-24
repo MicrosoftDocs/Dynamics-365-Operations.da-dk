@@ -1,6 +1,6 @@
 ---
 title: Indgående lagerhandling i POS
-description: I dette emne beskrives egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
+description: Denne artikel beskriver egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858876"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -215,7 +215,7 @@ Når kladdedokumentet er sendt til Commerce Headquarters, vises det under fanen 
 
 Når dokumentet har statussen **Anmodet**, vises det under fanen **Aktiv**. Det kan imidlertid endnu ikke modtages af det indgående lager eller lagersted. Når det udgående lagersted har afsendt nogle eller alle flytteordrer, kan det indgående lager eller lagersted bogføre kvitteringer i kasseapparatet. Når den udgående side behandler flytteordredokumenterne, opdateres deres status fra **Anmodet** til **Leveret** eller **Delvist leveret**. Når dokumenterne er i statussen **Leveret** eller **Delvist leveret**, kan det indgående lager eller lagersted bogføre kvitteringer i forhold til dem ved hjælp af den indgående handling for modtagelsesprocessen.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Udgående lagerhandling i POS](pos-outbound-inventory-operation.md)
 

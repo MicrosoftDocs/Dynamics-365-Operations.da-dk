@@ -1,6 +1,6 @@
 ---
 title: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
-description: I dette emne beskrives det, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+description: Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861908"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives det, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -57,7 +57,7 @@ Hvis du vil evaluere transaktionsfunktionerne for mail, skal følgende forudsæt
 
 ### <a name="update-the-media-base-url"></a>Opdater URL-basisadressen til mediet
 
-1. Log på Commerce-hovedkontor.
+1. Log på Commerce Headquarters.
 1. Anvend menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af kanal \> Kanalprofiler**.
 1. Vælg **Rediger**.
 1. Under **Profilegenskaber** skal du erstatte egenskabsværdien for **URL-basisadressen til medieserveren** med den URL-basisadresse til medie, som du oprettede tidligere.
@@ -71,7 +71,7 @@ Hvis du vil evaluere transaktionsfunktionerne for mail, skal følgende forudsæt
 > [!NOTE]
 > SMTP-serveren eller mailtjenesten, du angiver her, skal være tilgængelig fra det Azure-abonnement, som du bruger til miljøet.
 
-1. Log på Commerce-hovedkontor.
+1. Log på Commerce Headquarters.
 1. Brug menuen til venstre, og gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> E-mailparametre**.
 1. På fanen **SMTP-indstillinger** i feltet **Udgående mailserver** skal du indtaste FQDN- eller IP-adressen på din SMTP-server eller e-mailtjeneste.
 1. I feltet **SMTP-portnummer** skal du indtaste portnummeret. (Hvis du ikke bruger SSL-certifikater (Secure Sockets Layer) \[SSL\], er standardportnummeret **25**.)
@@ -86,7 +86,7 @@ Hvis du vil evaluere transaktionsfunktionerne for mail, skal følgende forudsæt
 
 For hver transaktionshændelse, du vil sende mails for, skal du opdatere mailskabelonen med en gyldig afsendermailadresse.
 
-1. Log på Commerce-hovedkontor.
+1. Log på Commerce Headquarters.
 1. Brug menuen til venstre, og gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Skabeloner til organisationsmail**.
 1. Vælg **Vis liste**.
 1. Benyt følgende fremgangsmåde for hver skabelon på listen:
@@ -108,7 +108,7 @@ Du ønsker måske at tilpasse e-mail-skabelonerne, så de bruger forskellige bil
     - Skabelon til pakkeordre
     - Skabelon til plukordre
 
-1. Tilpas skabelonerne ved hjælp af en tekst- eller HTML-editor. Se listen over [understøttede tokens](#supported-tokens-in-the-email-template) senere i dette emne.
+1. Tilpas skabelonerne ved hjælp af en tekst- eller HTML-editor. Se listen over [understøttede tokens](#supported-tokens-in-the-email-template) senere i denne artikel.
 1. Log på Commerce.
 1. Brug menuen til venstre for at gå til **Moduler \> Organisationsadministration \> Konfiguration \> Skabelon til organisationsmail**.
 1. Udvid listen til venstre for at få vist alle skabelonerne.

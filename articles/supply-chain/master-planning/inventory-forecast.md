@@ -1,6 +1,6 @@
 ---
 title: Lagerbudgetter
-description: I dette emne beskrives den funktion for udbuds- og efterspørgselsprognoser, der kan bruges til at oprette lagerbudgetter i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver den funktion for udbuds- og efterspørgselsprognoser, der kan bruges til at oprette lagerbudgetter i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844519"
 ---
 # <a name="inventory-forecasts"></a>Lagerbudgetter
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan se og oprette lagerbudgetter. Du kan oprette og se linjer i udbuds- og efterspørgselsprognosen for varer, varegrupper, varefordelingsnøgler, debitorkonti, debitorgrupper, kreditorkonti og kreditorgrupper.
+Denne artikel beskriver, hvordan du kan se og oprette lagerbudgetter. Du kan oprette og se linjer i udbuds- og efterspørgselsprognosen for varer, varegrupper, varefordelingsnøgler, debitorkonti, debitorgrupper, kreditorkonti og kreditorgrupper.
 
 For hver budgetlinje kan du vælge den budgetmodel, der bruges. Du kan derefter angive varen eller varegruppen samt antallet eller transaktionsbeløbet. Du kan også konfigurere en tidsplan for fordeling af budgetantallet.
 
@@ -60,7 +60,7 @@ Som tabellen i trin 1 viser, er der forskellige måder at få adgang til de side
     Afhængigt af dit valg vises siden **Forsyningsprognose** eller **Behovsprognose**. Den viser eventuelle eksisterende budgetlinjer for den post, du har valgt, før du åbnede siden.
 
 1. Vælg **Ny** i handlingsruden for at tilføje en budgetlinje i gitteret i øverste del af siden.
-1. Vælg den budgetmodel, der skal bruges, i feltet **Model** på den nye linje. Angiv derefter andre nødvendige oplysninger, f.eks. vare, varegruppe, debitor- eller kreditorkonto eller -gruppe, vareantal eller det samlede transaktionsbeløb. Du kan finde fuldstændige oplysninger om de felter, der er tilgængelige på siderne **Forsyningsprognose** og **Behovsprognose**, i de senere afsnit i dette emne.
+1. Vælg den budgetmodel, der skal bruges, i feltet **Model** på den nye linje. Angiv derefter andre nødvendige oplysninger, f.eks. vare, varegruppe, debitor- eller kreditorkonto eller -gruppe, vareantal eller det samlede transaktionsbeløb. Du kan finde fuldstændige oplysninger om de felter, der er tilgængelige på siderne **Forsyningsprognose** og **Behovsprognose**, i de senere afsnit i denne artikel.
 1. Hvis du vil fordele budgettet hen over perioden, skal du vælge **Fordel prognose** på værktøjslinjen under fanen **Oversigt**.
 1. I gitteret **Tildeling** skal du gennemgå den tidshorisont og de tidsintervaller, der bruges til at distribuere budgetantallene.
 
@@ -68,7 +68,7 @@ Som tabellen i trin 1 viser, er der forskellige måder at få adgang til de side
 
 Med forsyningsprognosen kan du oprette en plan for varer, der skal købes. Den fortæller indkøbs- og forsyningsassistenter, hvad de forventes at bestille.
 
-Du kan angive en forsyningsprognose efter vare, varegruppe, varefordelingsnøgle, kreditor og kreditorgruppe. Du kan finde flere oplysninger om alle de måder, du kan åbne siden **Forsyningsprognose** for forskellige enheder og poster på, i afsnittet [Se og manuelt angive budgetlinjer](#manual-entry) tidligere i dette emne.
+Du kan angive en forsyningsprognose efter vare, varegruppe, varefordelingsnøgle, kreditor og kreditorgruppe. Du kan finde flere oplysninger om alle de måder, du kan åbne siden **Forsyningsprognose** for forskellige enheder og poster på, i afsnittet [Se og manuelt angive budgetlinjer](#manual-entry) tidligere i denne artikel.
 
 Den øverste del af siden **Forsyningsprognose** indeholder et gitter med forsyningsprognoselinjer og et sæt faner, som du kan bruge til at se og angive flere oplysninger om en valgt budgetlinje. Den nederste del af siden indeholder et **Tildeling**-gitter.
 
@@ -94,9 +94,9 @@ I følgende tabel beskrives de kommandoer, der er tilgængelige på værktøjsli
 
 | Kommando | Betegnelse |
 |---|---|
-| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.) |
-| Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i dette emne). |
-| Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i dette emne). |
+| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i denne artikel.) |
+| Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i denne artikel.) |
+| Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i denne artikel.) |
 | Opret varebehov | Åbn en dialogboks, hvor du kan oprette varekrav, salgsordrer eller varekladdelinjer for projektrelaterede budgetposter. Selvom denne kommando kan bruges til både forsyningsprognoselinjer og behovsprognoselinjer, kan den ikke bruges på siden **Forsyningsprognose**. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Fanen Oversigt på siden Forsyningsprognose
@@ -173,7 +173,7 @@ Hvis du bruger en varefordelingsnøgle, eller hvis du har angivet et varebudget 
 
 Behovsprognosen giver dig mulighed for at angive eller generere behov for en kunde. Det hjælper salgs- og marketingassistenter med at informere varedisponeringsansatte om den forventede efterspørgsel i løbet af den kommende budgetperiode.
 
-Du kan angive en behovsprognose efter vare, varegruppe, varefordelingsnøgle, debitor og debitorgruppe. Du kan finde oplysninger om alle de måder, du kan åbne siden **Behovsprognose** for forskellige enheder og poster på, i afsnittet [Se og manuelt angive budgetlinjer](#manual-entry) tidligere i dette emne.
+Du kan angive en behovsprognose efter vare, varegruppe, varefordelingsnøgle, debitor og debitorgruppe. Du kan finde oplysninger om alle de måder, du kan åbne siden **Behovsprognose** for forskellige enheder og poster på, i afsnittet [Se og manuelt angive budgetlinjer](#manual-entry) tidligere i denne artikel.
 
 Den øverste del af siden **Behovsprognose** indeholder et gitter med behovsprognoselinjer og et sæt faner, som du kan bruge til at se og angive flere oplysninger om en valgt budgetlinje. Den nederste del af siden indeholder et **Tildeling**-gitter.
 
@@ -201,9 +201,9 @@ I følgende tabel beskrives de kommandoer, der er tilgængelige på værktøjsli
 
 | Kommando | Betegnelse |
 |---|---|
-| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.)|
-| Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i dette emne). |
-| Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i dette emne). |
+| Fordel prognose | Hvis du bruger en fordelingsmetode, skal du generere de enkelte planlægningslinjer til budgetposteringen. Linjens antal fordeles så efter dato (i overensstemmelse med de valgte tidsintervaller), antal og beløb for hele tidshorisonten. (Se afsnittet [Tildele budget](#allocate-forecast) senere i denne artikel.)|
+| Masseopdatering | Åbn siden **Rediger budgetposter**. (Se sektionen [Masseopdatere budgetposter](#bulk-update) senere i denne artikel.) |
+| Lagerbudget | Åbn en visning af siden **Lagerbudget**, der er filtreret for den valgte kombination af vare/model. (Se afsnittet [Lagerbudget](#inventory-forecast) senere i denne artikel.) |
 | Opret varebehov | Åbn en dialogboks, hvor du kan oprette varekrav, salgsordrer eller varekladdelinjer for projektrelaterede budgetposter. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Fanen Oversigt på siden Behovsprognose
@@ -296,7 +296,7 @@ Fanen **Lagerdimensioner** viser alle de lagerdimensionsværdier for den linje, 
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Gitteret Fordeling på siden Behovsprognose
 
-Hvis du bruger en varefordelingsnøgle, eller hvis du har angivet et varebudget for en eller flere fremtidige perioder, kan du fordele budgettet ved at vælge **Fordel budget** på værktøjslinjen under fanen **Oversigt**. Antallet fordeles derefter på den måde, der er angivet af linjerne i **Fordeling**-gitteret. (Se afsnittet [Tildele budget](#allocate-forecast) senere i dette emne.)
+Hvis du bruger en varefordelingsnøgle, eller hvis du har angivet et varebudget for en eller flere fremtidige perioder, kan du fordele budgettet ved at vælge **Fordel budget** på værktøjslinjen under fanen **Oversigt**. Antallet fordeles derefter på den måde, der er angivet af linjerne i **Fordeling**-gitteret. (Se afsnittet [Tildele budget](#allocate-forecast) senere i denne artikel.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerbudget
 

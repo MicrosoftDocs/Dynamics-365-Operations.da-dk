@@ -1,6 +1,6 @@
 ---
 title: Kvalitetskontrol
-description: Dette emne indeholder oplysninger om funktionen Kvalitetskontrol. Denne funktion giver lagermedarbejderne mulighed for hurtig spottjek af kvalitet, mens de modtager varer i modtagelsesområdet.
+description: Denne artikel indeholder oplysninger om funktionen Kvalitetskontrol. Denne funktion giver lagermedarbejderne mulighed for hurtig spottjek af kvalitet, mens de modtager varer i modtagelsesområdet.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855051"
 ---
 # <a name="quality-check"></a>Kvalitetskontrol
 
@@ -41,11 +41,11 @@ Denne proces kan også konfigureres, så alle scannede id'er straks omdirigeres 
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Kvalitetskontrol
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Kvalitetskontrol* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Kvalitetskontrol* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge den funktionalitet, der er beskrevet i denne artikel, skal funktionen *Kvalitetskontrol* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Kvalitetskontrol* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurere funktionen til eksempelscenariet
 
-Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan konfigurere funktionen *Kvalitetskontrol* og forberede eksempeldata til det eksempelscenario, der er angivet senere i dette emne.
+Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan konfigurere funktionen *Kvalitetskontrol* og forberede eksempeldata til det eksempelscenario, der er angivet senere i denne artikel.
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
@@ -270,7 +270,7 @@ Konfigurere et menupunkt, så mobilenheder kan udføre funktionen **Kvalitetskon
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Eksempelscenario
 
-Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfigureret dem, kan du arbejde gennem dette scenario for at afprøve funktionen *Kvalitetskontrol*. De værdier, der vises i dette scenarie, forudsætter, at du arbejder med standarddemodataene, at du har valgt **USMF** som juridisk enhed, og at du har forberedt de eksempelposter, der er beskrevet tidligere i dette emne. Dette scenario fungerer også som et eksempel, der viser, hvordan funktionen kan bruges i en produktionsopsætning.
+Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfigureret dem, kan du arbejde gennem dette scenario for at afprøve funktionen *Kvalitetskontrol*. De værdier, der vises i dette scenarie, forudsætter, at du arbejder med standarddemodataene, at du har valgt **USMF** som juridisk enhed, og at du har forberedt de eksempelposter, der er beskrevet tidligere i denne artikel. Dette scenario fungerer også som et eksempel, der viser, hvordan funktionen kan bruges i en produktionsopsætning.
 
 ### <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
 
@@ -357,7 +357,7 @@ I dette scenario vil palle 2 blive afvist.
 
 Du har nu fuldført kvalitetskontrollen og oprettet en kvalitetsordre for den afviste palle. Hvis du vil se den ordre, der er oprettet, skal du gå til **Lagerstyring \> Periodiske opgaver \> Kvalitetsstyring \> Kvalitetsordrer**.
 
-Test af kvalitetsordre kan nu behandles. Kvalitetstesten beskrives ikke i dette emne.
+Test af kvalitetsordre kan nu behandles. Kvalitetstesten beskrives ikke i denne artikel.
 
 Du kan finde flere oplysninger om kvalitetsstyring under [Oversigt over kvalitetsstyring](../inventory/enable-quality-management.md)
 

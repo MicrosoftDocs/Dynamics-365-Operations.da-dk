@@ -1,6 +1,6 @@
 ---
 title: Årsagskoder for lageroptælling
-description: Dette emne beskriver, hvordan du konfigurerer og anvender årsagskoder til optællingsopgaver.
+description: Denne artikel beskriver, hvordan du konfigurerer og anvender årsagskoder til optællingsopgaver.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857106"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsagskoder for lageroptælling
 
@@ -42,7 +42,7 @@ Før du konfigurerer systemet, anbefales det, at du definerer en strategi for at
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Aktivere årsagskodefunktioner i systemet
 
-Hvis du ikke kan se alle de funktioner, der er beskrevet i dette emne, i dit system, er du sandsynligvis nødt til at aktivere funktionen *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Hvis du ikke kan se alle de funktioner, der er beskrevet i denne artikel, i dit system, er du sandsynligvis nødt til at aktivere funktionen *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Bogfør reguleringer af disponible mængder ved hjælp af konfigurerbare årsagskoder, der er tilknyttet modkonti*
@@ -111,7 +111,7 @@ Benyt følgende fremgangsmåde for at konfigurere dine optællingsårsagskoder.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Konfigurere årsagskodegrupper for optælling
 
-*Optællingsårsagskodegrupper* kan bruges som en del af menupunkterne *Regulering ind* og *Regulering ud* i mobilappen Warehouse Management til at grænse listen over optællingsårsagskoder. (Du kan finde flere oplysninger om optællingsårsagskodegrupper i [Konfigurere menupunkter i mobilenhed for Regulering ind og Regulering ud](#setup-adjustment-in-out) senere i dette emne).
+*Optællingsårsagskodegrupper* kan bruges som en del af menupunkterne *Regulering ind* og *Regulering ud* i mobilappen Warehouse Management til at grænse listen over optællingsårsagskoder. (Du kan finde flere oplysninger om optællingsårsagskodegrupper i [Konfigurere menupunkter i mobilenhed for Regulering ind og Regulering ud](#setup-adjustment-in-out) senere i denne artikel).
 
 1. Gå til **Lagerstyring** \> **Konfiguration** \> **Lager** \> **Grupper for optællingsårsagskode**.
 1. Vælg **Ny** i handlingsruden for at tilføje en gruppe.
@@ -174,7 +174,7 @@ Du kan konfigurere et menupunkt for Regulering ind eller Regulering ud på en mo
         - *Skjul* – Vis ikke årsagskoden.
 
     - **Rediger optællingsårsagskode** – Angiv den til *Ja*, så arbejderen kan redigere årsagskoden, når den vises på mobileenheden under optælling. Angiv det til *Nej* for at forhindre arbejderen i at redigere koden.
-    - **Optællingsårsagskodegruppe** – Vælg en årsagskodegruppe, hvis du vil begrænse listen over indstillinger, som arbejdere kan se. Du kan finde flere oplysninger om opsætning af årsagskodegrupper i afsnittet [Konfigurere årsagskodegrupper for optælling](#reason-groups) tidligere i dette emne. 
+    - **Optællingsårsagskodegruppe** – Vælg en årsagskodegruppe, hvis du vil begrænse listen over indstillinger, som arbejdere kan se. Du kan finde flere oplysninger om opsætning af årsagskodegrupper i afsnittet [Konfigurere årsagskodegrupper for optælling](#reason-groups) tidligere i denne artikel. 
 
 > [!NOTE]
 > Når du tildeler en optællingsårsagskodegruppe til menupunkterne *Regulering ind* og *Regulering ud*, hvor indstillingen **Brug procesvejledning** er angivet til *Ja*, kan du få en begrænset liste over optællingsårsagskoder som en del af behandlingen i mobilappen Warehouse Management.

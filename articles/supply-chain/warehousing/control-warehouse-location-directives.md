@@ -1,6 +1,6 @@
 ---
 title: Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
-description: I dette emne beskrives, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
+description: Denne artikel beskriver, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877415"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
+Denne artikel beskriver, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
 
 De instruktioner, som lagermedarbejderne modtager på en mobilenhed, bestemmes af de arbejdsskabeloner, du konfigurerer i Dynamics 365 Supply Chain Management for at definere de forskellige lagerprocesser og -opgaver. Arbejdsskabeloner afgør, hvordan arbejdet udføres for hver proces på lagerstedet. Når du sammenkæder et lokalitetsdirektiv med arbejdsskabeloner, kan du sikre, at arbejdet forekommer i bestemte fysiske områder på lagerstederne.
 
@@ -73,7 +73,7 @@ Lokationsvejledninger bestemmer *, hvor* varer skal plukkes, og *hvor* de skal p
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjælp-emne: [Arbejde med lokationsdirektiver](create-location-directive.md)
+- Hjælp-artikel: [Arbejde med lokationsdirektiver](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

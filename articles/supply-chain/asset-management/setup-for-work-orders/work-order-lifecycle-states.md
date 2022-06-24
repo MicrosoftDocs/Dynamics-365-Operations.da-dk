@@ -1,6 +1,6 @@
 ---
 title: Livscyklustilstande for arbejdsordre
-description: Dette emne beskriver livscyklustilstande for arbejdsordrer i Styring af aktiver.
+description: Denne artikel beskriver livscyklustilstande for arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860864"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscyklustilstande for arbejdsordre
 
@@ -69,7 +69,7 @@ I følgende tabel beskrives indstillingerne i sektionerne **Arbejdsordre** og **
 
     I oversigtspanelet **Detaljer** viser feltet **Livscyklusmodeller** antallet af livscyklusmodeller for arbejdsordrer, der bruger denne livscyklustilstand.
 
-8. I oversigtspanelet **Generelt** i sektionen **Arbejdsordre** skal du vælge de funktioner, der skal være tilgængelige for denne livscyklustilstand, ved at vælge **Ja** i de relevante indstillinger. Se beskrivelser af disse indstillinger i tabellen senere i dette emne.
+8. I oversigtspanelet **Generelt** i sektionen **Arbejdsordre** skal du vælge de funktioner, der skal være tilgængelige for denne livscyklustilstand, ved at vælge **Ja** i de relevante indstillinger. Se beskrivelser af disse indstillinger i tabellen senere i denne artikel.
 9. Vælg det projektstadie, der skal knyttes til denne livscyklustilstand, i feltet **Stadie** i sektionen **Projekt**.
 10. I sektionen **Projekt** skal du vælge **Ja** i indstillingen **Luk aktiviteter**, hvis projektaktiviteter, der er relateret til hvert arbejdsordrejob, skal lukkes automatisk, når arbejdsordren er i denne levetidstilstand.
 
@@ -77,7 +77,7 @@ I følgende tabel beskrives indstillingerne i sektionerne **Arbejdsordre** og **
     > Hvis du vil finde nummeret på den projektaktivitet, der er relateret til et arbejdsordrejob, skal du vælge **Styring af aktiver** \> **Almindelig** \> **Arbejdsordrer** \> **Alle arbejdsordrer**, **Aktive arbejdsordrer** eller **Mine aktive arbejdsordrer**. Åbn arbejdsordren, og vælg derefter arbejdsordrejobbet. Aktivitetsnummeret vises i feltet **Aktivitetsnummer** i sektionen **Projekt** under fanen **Generelt** i oversigtspanelet **Linjedetaljer**.
 
 11. I sektionen **Budget** skal du vælge **ja** i indstillingen **Kopiér timebudget**, **Kopier varebudget** og/eller **Kopier udgiftsbudget**, hvis projektprognoser for arbejdsordrer automatisk skal kopieres til arbejdsordrekladder, når arbejdsordren er i denne livscyklustilstand.
-12. I sektionen **Tidsplan** skal du vælge **Ja** i en af indstillingerne, hvis planlægningsstatus for arbejdsordrejob skal opdateres, når arbejdsordren er i denne livscyklustilstand. Beskrivelser af indstillingerne **Klar**, **Start**, **Slut** og **Slet tidsplanlinjer** finder du i tabellen tidligere i dette emne.
+12. I sektionen **Tidsplan** skal du vælge **Ja** i en af indstillingerne, hvis planlægningsstatus for arbejdsordrejob skal opdateres, når arbejdsordren er i denne livscyklustilstand. eskrivelser af indstillingerne **Klar**, **Start**, **Slut** og **Slet tidsplanlinjer** finder du i tabellen tidligere i denne artikel.
 
     > [!NOTE]
     > Hvis du vil se tidsplanlinjer, der er relateret til arbejdsordrejob, skal du vælge **Styring af aktiver** \> **Almindelig** \> **Arbejdsordrer** \> **Alle arbejdsordrer**, **Aktive arbejdsordrer** eller **Mine aktive arbejdsordrer**. Åbn arbejdsordren, vælg jobbet for arbejdsordren i oversigtspanelet **Arbejdsordrejob**, og se relaterede oplysninger i oversigtspanelet **Linjedetaljer**. Feltet **Status** under fanen **Tidsplan** viser status for arbejdsordrejobbet. Feltet **Status** kan indstilles til følgende værdier: **Planlagt**, **Klar**, **Startet**, **Stoppet** og **Afsluttet**.

@@ -1,30 +1,24 @@
 ---
-title: Gennemse og publicere et eksperiment
-description: I dette emne beskrives, hvordan du gennemser og publicerer et eksperiment fra Dynamics 365 Commerce.
+title: Se prøveversion og publicere et eksperiment
+description: Denne artikel beskriver, hvordan du gennemser og publicerer et eksperiment fra Dynamics 365 Commerce.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740377"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946126"
 ---
-# <a name="preview-and-publish-an-experiment"></a>Gennemse og publicere et eksperiment
+# <a name="preview-and-publish-an-experiment"></a>Se prøveversion og publicere et eksperiment
 
-Dette emne beskriver, hvordan du gennemser og publicerer dit eksperiment i Dynamics 365 Commerce, når du har [tilsluttet dit eksperiment og redigeret dine variationer](experimentation-connect-edit.md). I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate emner.
+Denne artikel beskriver, hvordan du gennemser og publicerer dit eksperiment i Dynamics 365 Commerce, når du har [tilsluttet dit eksperiment og redigeret dine variationer](experimentation-connect-edit.md). I følgende diagram vises alle de trin, der er nødvendige for at konfigurere og køre et eksperiment på et e-handelswebsted i Dynamics 365 Commerce. Yderligere trin behandles i separate artikler.
 
 [ ![Eksperimenteringens brugerrejse - gennemse og publicere.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -52,8 +46,12 @@ Når du bruger publiceringsgrupper sammen med eksperimenter, er der nogle vigtig
 - Når du publicerer eller planlægger en publiceringsgruppe, publiceres alt indhold i publiceringsgruppen, uanset om der er et eksperiment knyttet til publiceringsgruppen.
 - Da en publiceringsgruppe fortsat vil være aktiv, efter at den er publiceret til et live websted, vil eksperimenter i publiceringsgruppen også fortsætte. Derfor kan du ikke knytte andre eksperimenter til den samme side eller det samme fragment. Hvis du vil undgå denne begrænsning, skal du slette alle publiceringsgrupper med vedvarende eksperimenter. Hvis du ligeledes vil slette et eksperiment på et live websted, der også findes i en publiceringsgruppe, skal du først slette det fra publiceringsgruppen.
 
+### <a name="force-variations-for-testing"></a>Gennemtvinge variationer i test
+
+Når forsøgene er live, kan du føje forsøgs-id'et og variant-id'et til standardside-URL-adressen for at gennemtvinge en variation til test- eller automatiseringsformål. Hvis URL-adressen for standardsiden f.eks. er `https://fabrikam.com/modern/homepage`, kan du gennemtvinge en variant med en URL-adresse som f.eks. `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. Du kan få prøve-id'et og variant-id'et for din forsøgsvariation fra forhåndsvisnings-URL-adressen i **Forhåndsversion** ovenfor.
+
 ## <a name="previous-step"></a>Forrige trin
-[Tilslutte og redigere et eksperiment](experimentation-connect-edit.md)
+[Oprette forbindelse til og redigere et eksperiment](experimentation-connect-edit.md)
 
 ## <a name="next-step"></a>Næste trin
 [Køre og overvåge et eksperiment](experimentation-run-monitor.md)

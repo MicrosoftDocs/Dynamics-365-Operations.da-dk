@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for installation af kasseapparater for Norge
-description: Dette emne indeholder en vejledning til, hvordan du aktiverer kasseapparatfunktionaliteten til Microsoft Dynamics 365 Commerce-lokalisering for Norge.
+description: Denne artikel indeholder en vejledning til, hvordan du aktiverer kasseapparatfunktionaliteten til Microsoft Dynamics 365 Commerce-lokalisering for Norge.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899061"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Retningslinjer for installation af kasseapparater for Norge
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en vejledning til, hvordan du aktiverer kasseapparatfunktionaliteten til Microsoft Dynamics 365 Commerce-lokalisering for Norge. Lokaliseringen består af flere udvidelser af komponenter. Med disse udvidelser kan du udføre handlinger som f.eks. at udskrive brugerdefinerede felter på kvitteringer, registrere yderligere revisionshændelser, salgstransaktioner og betalingstransaktioner i POS, signere salgstransaktioner digitalt og udskrive rapporter i lokale formater. Yderligere oplysninger om lokalisering for Norge finder du i [Kasseapparatfunktionalitet til Norge](./emea-nor-cash-registers.md). Du kan finde flere oplysninger om, hvordan du konfigurerer Commerce for Norge, i [Konfigurere Commerce for Norge](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Denne artikel indeholder en vejledning til, hvordan du aktiverer kasseapparatfunktionaliteten til Microsoft Dynamics 365 Commerce-lokalisering for Norge. Lokaliseringen består af flere udvidelser af komponenter. Med disse udvidelser kan du udføre handlinger som f.eks. at udskrive brugerdefinerede felter på kvitteringer, registrere yderligere revisionshændelser, salgstransaktioner og betalingstransaktioner i POS, signere salgstransaktioner digitalt og udskrive rapporter i lokale formater. Yderligere oplysninger om lokalisering for Norge finder du i [Kasseapparatfunktionalitet til Norge](./emea-nor-cash-registers.md). Du kan finde flere oplysninger om, hvordan du konfigurerer Commerce for Norge, i [Konfigurere Commerce for Norge](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til denne lokaliseringsfunktionalitet. Du skal bruge eksempelversionen af den digitale signering for Norge i den tidligere version af Retail SDK (Software Development Kit) på en virtuel maskine til udviklere (VM) i Microsoft Dynamics Lifecycle Services (LCS). Yderligere oplysninger finder du i [Retningslinjer for installation af kasseapparater for Norge (ældre)](./emea-nor-loc-deployment-guidelines.md).

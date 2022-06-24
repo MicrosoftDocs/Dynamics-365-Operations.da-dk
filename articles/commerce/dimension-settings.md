@@ -1,6 +1,6 @@
 ---
 title: Anvende visningsindstillinger for produktdimensioner
-description: I dette emne beskrives visningsindstillingerne for produktdimensioner, og det beskrives, hvordan de anvendes i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver visningsindstillingerne for produktdimensioner, og det beskrives, hvordan de anvendes i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899169"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Anvende visningsindstillinger for produktdimensioner
 
 [!include [banner](includes/banner.md)]
 
 
-I dette emne beskrives visningsindstillingerne for produktdimensioner, og det beskrives, hvordan de anvendes i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver visningsindstillingerne for produktdimensioner, og det beskrives, hvordan de anvendes i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce understøtter størrelses-, typografi- og farvedimensioner for at skelne mellem produktvarianter. Dimensioner vises typisk som tekstværdier, for eksempel "Lille", "Mellem" og "Stor" for størrelser og "Sort" og "Brun" for farver. Men hvis et produkt understøtter mange variationer, kan det være vanskeligt at gennemse produktvarianter, da der skal foretages flere valg for at få vist billedet for de enkelte varianter. For at gøre det nemmere at gennemse produktvarianter kan version 10.0.20 af Commerce bruge billeder og hexadecimale (hex) koder til at vise dimensioner som prøver.
 

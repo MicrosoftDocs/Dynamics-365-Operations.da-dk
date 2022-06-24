@@ -1,6 +1,6 @@
 ---
 title: Forespørgsler og rapporter om farligt materiale
-description: Dette emne forklarer, hvordan du kan arbejde med forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
+description: Denne artikel forklarer, hvordan du kan arbejde med forskellige rapporter, der er relateret til farlige materialer. Mange af disse rapporter er påkrævet, så du overholder angivne standarder i forordninger for forskellige farlige materialet under forsendelse og opbevaring på lager.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846034"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørgsler og rapporter om farligt materiale
 
@@ -63,7 +63,7 @@ Hvis du vil have vist denne rapport, skal du gå til **Administration af produkt
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer lagergrænser for en frigivet produkt, under [Angive lagerbeholdningsgrænser for farlige produkter](hazmat-items.md#stock-limits).
 
-Den forordning, der bruges til lagergrænser, defineres på siden **Parametre til lokationsstyring**. Gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**, og brug fanen **Rapporter** i **Grænse for farlig lagerbeholdning** til at angive en forordningskode. Yderligere oplysninger finder du i afsnittet [Konfigurere rapportering af farlige materialer](#set-up) tidligere i dette emne.
+Den forordning, der bruges til lagergrænser, defineres på siden **Parametre til lokationsstyring**. Gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**, og brug fanen **Rapporter** i **Grænse for farlig lagerbeholdning** til at angive en forordningskode. Yderligere oplysninger finder du i afsnittet [Konfigurere rapportering af farlige materialer](#set-up) tidligere i denne artikel.
 
 ## <a name="verified-gross-mass-report"></a>Rapporten Bekræftet bruttomasse
 

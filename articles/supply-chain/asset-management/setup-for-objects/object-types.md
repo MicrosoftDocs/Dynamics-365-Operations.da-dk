@@ -1,6 +1,6 @@
 ---
 title: Aktivtyper
-description: Dette emne beskriver, hvordan du opretter aktivtyper i Styring af aktiver. Det beskriver også de elementer, der er relateret til aktivtyper.
+description: Denne artikel beskriver, hvordan du opretter aktivtyper i Styring af aktiver. Det beskriver også de elementer, der er relateret til aktivtyper.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3a51fdb55e9158e88e89549e3d0049e699c233e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730364"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887625"
 ---
 # <a name="asset-types"></a>Aktivtyper
 
@@ -28,7 +28,7 @@ ms.locfileid: "6730364"
 
 
 
-Dette emner beskriver, hvordan du opretter aktivtyper. Det beskriver også de elementer, der er relateret til aktivtyper. Aktivtyper bruges som generelle kategorier for aktiver. Eksempelvis kan nævnes CNC-maskiner, måleudstyr og lastvognsmotorer. Aktivtyper bruges til at administrere vedligeholdelsesjobtyperne (vedligeholdelsesopgaver), aktivers livscyklustilstande, tællere, aktivattributter, skabeloner til tilstandsvurdering og de aktivmodeller, der kan vælges for et aktiv. Når du opretter et aktiv, skal du angive aktivtypen.
+Denne artikel beskriver, hvordan du opretter aktivtyper. Det beskriver også de elementer, der er relateret til aktivtyper. Aktivtyper bruges som generelle kategorier for aktiver. Eksempelvis kan nævnes CNC-maskiner, måleudstyr og lastvognsmotorer. Aktivtyper bruges til at administrere vedligeholdelsesjobtyperne (vedligeholdelsesopgaver), aktivers livscyklustilstande, tællere, aktivattributter, skabeloner til tilstandsvurdering og de aktivmodeller, der kan vælges for et aktiv. Når du opretter et aktiv, skal du angive aktivtypen.
 
 For hver aktivtype kan der oprettes variationer af aktivtypens opsætning. Hvis du for eksempel har en aktivtype, der hedder **Lastbiler**, kan du oprette variationer af den pågældende aktivtype for forskellige aktivproducenter og aktivmodeller. Til hver opsætning af aktivtyperne kan du tilføje de påkrævede reservedele og vedligeholdelsesplaner.
 

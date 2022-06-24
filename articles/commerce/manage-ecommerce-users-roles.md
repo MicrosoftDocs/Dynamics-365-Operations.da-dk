@@ -1,6 +1,6 @@
 ---
 title: Administrere e-handelsbrugere og -roller
-description: I dette emne beskrives, hvordan du giver brugere adgang til oprettelsesmiljøet for dit Microsoft Dynamics 365 Commerce-websted.
+description: Denne artikel beskriver, hvordan du giver brugere adgang til oprettelsesmiljøet for dit Microsoft Dynamics 365 Commerce-websted.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac4342e4439db229997d9d4a0ad32f3664a795b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868955"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Administrere e-handelsbrugere og -roller
 
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du giver brugere adgang til oprettelsesmiljøet for dit Microsoft Dynamics 365 Commerce-websted.
+Denne artikel beskriver, hvordan du giver brugere adgang til oprettelsesmiljøet for dit Microsoft Dynamics 365 Commerce-websted.
 
 Som en hjælp til at styre brugeradgang og tildele brugerrettigheder til at udføre bestemte opgaver, bruger miljøet til webstedsoprettelse sikkerhedsgrupper, som du opretter i Microsoft Azure Active Directory (Azure AD). Du skal først tildele en ny eller eksisterende sikkerhedsgruppe fra Azure AD til hver rolle i oprettelsesmiljøet. Derefter kan du tildele eller tilbagekalde individuelle brugeres rettigheder ved enten at føje disse brugere til en relevant sikkerhedsgruppe eller ved at fjerne dem fra en sikkerhedsgruppe.
 
@@ -50,7 +50,7 @@ Når du klargør Dynamics 365 Commerce i Microsoft Dynamics Lifecycle Services-m
 
 ## <a name="administrator-role"></a>Administratorrolle
 
-Når du opretter et nyt websted i Commerce, bliver du bedt om at angive en sikkerhedsgruppe for **Administrator**-rollen. Se tabellen tidligere i dette emne for at få en oversigt over de rettigheder, som denne rolle giver.
+Når du opretter et nyt websted i Commerce, bliver du bedt om at angive en sikkerhedsgruppe for **Administrator**-rollen. Se tabellen tidligere i denne artikel for at få en oversigt over de rettigheder, som denne rolle giver.
 
 ## <a name="add-or-update-security-groups"></a>Tilføje eller opdatere sikkerhedsgrupper
 

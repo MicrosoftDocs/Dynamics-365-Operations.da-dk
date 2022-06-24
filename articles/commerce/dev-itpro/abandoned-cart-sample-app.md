@@ -1,6 +1,6 @@
 ---
 title: Registrere forladte vogne og sende beskeder til kunder
-description: Dette emne beskriver, hvordan du tilpasser eksemplet med Microsoft Dynamics 365 Commerce-appen til forladte vogne for at registrere forladte vogne og sende påmindelsesmail til kunder.
+description: Denne artikel beskriver, hvordan du tilpasser eksemplet med Microsoft Dynamics 365 Commerce-appen til forladte vogne for at registrere forladte vogne og sende påmindelsesmail til kunder.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899204"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Registrere forladte vogne og sende beskeder til kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du tilpasser eksemplet med Microsoft Dynamics 365 Commerce-appen til forladte vogne for at registrere forladte vogne og sende påmindelsesmail til kunder.
+Denne artikel beskriver, hvordan du tilpasser eksemplet med Microsoft Dynamics 365 Commerce-appen til forladte vogne for at registrere forladte vogne og sende påmindelsesmail til kunder.
 
 Muligheden for at få indtægter og bevare kunderne via meddelelser om forladte vogne er en vigtig egenskab, som Dynamics 365 Commerce understøtter. Ved at tilpasse eksempelappen til Commerce-connectoren til forladte indkøbsvogne, kan detailhandlende få adgang til indkøbsvogne på Retail Server, som ikke er blevet ændret i løbet af et tidsvindue, som detailforretningerne definerer. Disse vogne kan derefter hentes, suppleres med produkt- og kundedata og overføres til en tredjeparts mailmarketingudbyder, der kan generere mailbeskeder og sende dem til kunder.
 
@@ -65,7 +65,7 @@ Før du kan udrulle og konfigurere eksempelkoden for connectoren til forladte in
 
 Hvis du vil konfigurere og udrulle connector-appen til forladte indkøbsvogne, skal du have adgang til følgende Commerce-ressourcer:
 
-- Administratoradgang til Commerce-hovedkontoret for dit miljø
+- Administratoradgang til Commerce Headquarters for dit miljø
 - Adgang til Microsoft Dynamics Lifecycle Services-projektet (LCS) for dit miljø
 
 ### <a name="azure-cosmos-db"></a>Azure Cosmos DB
@@ -120,7 +120,7 @@ Hvis du vil konfigurere eksempelappen for connectoren til forladte indkøbsvogne
 | AppIdKeyVaultSecretName                       | Navnet på hemmeligheden, du oprettede for program-id'et til eksempelappen for connectoren til forladte indkøbsvogne. |
 | AppSecretKeyVaultSecretName                   | Navnet på hemmeligheden, der opbevarer apphemmeligheden for program-id'et til eksempelappen for connectoren til forladte indkøbsvogne. |
 | RetailServerUrl                               | URL-adressen for din forekomst af Retail Server. Denne værdi findes i LCS. |
-| OperatingUnitNumber                           | Driftsenhedsnummeret (OUN). Denne værdi findes i Commerce-hovedkontoret. |
+| OperatingUnitNumber                           | Driftsenhedsnummeret (OUN). Denne værdi findes i Commerce Headquarters. |
 | IncludeAbandonedCartsModifiedSinceLastMinutes | Starten af tidsvinduet for de forladte indkøbsvogne, du vil hente. Værdien angives som et antal minutter før det nuværende tidspunkt. Angiv f.eks. denne egenskab til **120** for at hente alle de vogne, der senest er ændret for mellem 120 minutter siden og slutningen af det tidsvindue, der er defineret af egenskaben **ExcludeAbandonedCartsModifiedSinceLastMinutes**. |
 | ExcludeAbandonedCartsModifiedSinceLastMinutes | Slutningen af tidsvinduet for de forladte indkøbsvogne, du vil hente. Værdien angives som et antal minutter før det nuværende tidspunkt. Hvis egenskaben **IncludeAbandonedCartsModifiedSinceLastMinutes** f.eks. er angivet til **120**, skal du angive denne egenskab til **30** for at hente alle de indkøbsvogne, der er ændret for mellem 120 minutter siden og 30 minutter siden. I praksis definerer denne egenskab, hvor lang tid du vil vente, før en indkøbsvogn erklæres forladt. |
 | ReturnToCartUrl                               | URL-adressen på indkøbsvognen på e-handelswebstedet i det format, der bruges i filen **app.config**. |
@@ -155,7 +155,7 @@ Hvis du bruger funktionerne for e-handel i Commerce, kan du bruge Commerce-admin
 
 | Egenskab                             | Beskrivelse |
 | ------------------------------------ | ----------- |
-| ImageServerUrl                       | Rod-URL-adressen til webstedets styring af digitale aktiver. Du kan finde værdien i egenskabsnøglen **URL-basisadresse til medieserver** under **Retail og Commerce \> Konfiguration af kanal \> Kanalprofiler** i Commerce-hovedkontoret. |
+| ImageServerUrl                       | Rod-URL-adressen til webstedets styring af digitale aktiver. Du kan finde værdien i egenskabsnøglen **URL-basisadresse til medieserver** under **Retail og Commerce \> Konfiguration af kanal \> Kanalprofiler** i Commerce Headquarters. |
 | ImageViewPorts                       | Containernoden til individuelle billedkonfigurationer. |
 | ImageViewPorts/viewport              | Definitionen af visningsporten. Brug denne egenskab til at angive breddeintervallerne for visningsporten i pixel. Du kan finde et eksempel på, hvordan denne egenskab bruges, i konfigurationsfilen **appSettings.json**. |
 | ImageViewPorts/imageWidth            | Billedbredden af visningsporten i pixel. |

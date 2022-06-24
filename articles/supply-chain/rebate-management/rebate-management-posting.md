@@ -1,6 +1,6 @@
 ---
 title: Opsætning af bogføring af rabatstyring
-description: Dette emne beskriver, hvordan du konfigurerer posteringsprofiler. Posteringsprofiler bruges til at bestemme bogføringsposterne for beregningslinjer i Rabatstyring.
+description: Denne artikel beskriver, hvordan du konfigurerer posteringsprofiler. Posteringsprofiler bruges til at bestemme bogføringsposterne for beregningslinjer i Rabatstyring.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873573"
 ---
 # <a name="rebate-management-posting-setup"></a>Opsætning af bogføring af rabatstyring
 
@@ -30,7 +30,7 @@ Denne funktion fungerer på tværs af firmaer (juridiske enheder). Du kan angive
 
 Hvis du vil oprette posteringsprofiler for rabatstyring til debitorer og kreditorer, skal du gå til **Rabatstyring \> Opsætning af bogføring af rabatstyring \> Posteringsprofiler til rabatstyring**. Siden **Posteringsprofiler til rabatstyring** indeholder en listerude, der viser alle eksisterende profiler. Du kan tilføje eller fjerne profiler på listen ved at bruge knapperne i handlingsruden.
 
-I de resterende afsnit i dette emne beskrives, hvordan du kan bruge de tilgængelige felter, når du opretter eller redigerer en profil.
+I de resterende afsnit i denne artikel beskrives, hvordan du kan bruge de tilgængelige felter, når du opretter eller redigerer en profil.
 
 ## <a name="posting-profile-header"></a>Overskrift i posteringsprofil
 

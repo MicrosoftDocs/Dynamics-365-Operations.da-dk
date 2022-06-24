@@ -1,6 +1,6 @@
 ---
 title: 'Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning'
-description: Dette emne indeholder oplysninger om planlægning i blandet tilstand.
+description: Denne artikel indeholder oplysninger om planlægning i blandet tilstand.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a199d5ac7633aba894ffbc17db015100ae93d895
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857425"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Dynamics 365 Supply Chain Management sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
+Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Dynamics 365 Supply Chain Management sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
 
 Du kan vælge din overordnede strategi for at levere et produkt, uanset produktstrukturen.  
 

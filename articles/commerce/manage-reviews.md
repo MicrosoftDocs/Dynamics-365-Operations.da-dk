@@ -1,6 +1,6 @@
 ---
-title: Administrere vurderinger og anmeldelser
-description: I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+title: Administrere bedømmelser og anmeldelser
+description: Denne artikel beskriver, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: gvrmohanreddy
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 79738030d4e33ceaad105a404b8188384d5a320c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881317"
 ---
-# <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
+# <a name="manage-ratings-and-reviews"></a>Administrere bedømmelser og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+Denne artikel beskriver, hvordan du kan håndtere vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 Dynamics 365 Commerce bruger Microsoft Azure Cognitive Services til automatisk at moderere tekst i anmeldelser ved at bortredigere krænkende ord og udtryk. Derudover kan redaktører bruge Dynamics 365 Commerce-webstedsgenerator til at implementere følgende manuelle opgaver:
 

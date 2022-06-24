@@ -1,6 +1,6 @@
 ---
 title: Angiv tilføj produkt til indstillinger for indkøbsvogn
-description: Dette emne omhandler indstillinger for "Tilføj produkt til indkøbsvogn" og beskriver, hvordan du kan angiver dem i Microsoft Dynamics 365 Commerce.
+description: Denne artikel omhandler indstillinger for "Tilføj produkt til indkøbsvogn" og beskriver, hvordan du kan angiver dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6299a1c815978ab9f748b6110980e673e1fbae927ed08a5e2e080f89ef063115
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 336bea289b22e4f6f98077f915d7d35f2a48682d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712808"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866024"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Angiv tilføj produkt til indstillinger for indkøbsvogn
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler indstillinger for **Tilføj produkt til indkøbsvogn** og beskriver, hvordan du kan angiver dem i Microsoft Dynamics 365 Commerce.
+Denne artikel omhandler indstillinger for **Tilføj produkt til indkøbsvogn** og beskriver, hvordan du kan angiver dem i Microsoft Dynamics 365 Commerce.
 
 Forskellige arbejdsgange understøttes, når et produkt føjes til indkøbsvognen på et Dynamics 365 Commerce-e-handelswebsted. Webstedsbrugeren kan f.eks. blive taget med til indkøbsvognssiden. Alternativt kan brugeren forblive på den aktuelle side, men modtage en besked om, at produktet er føjet til indkøbsvognen.
 

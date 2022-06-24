@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e3476f1f25ac01d8740cce0442ac48ef25101a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903863"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditmaksimum for debitorer
 
@@ -126,7 +126,7 @@ Brug formularen **Debitorer** til at angive kreditmaksimumbeløbet for en bestem
 4.  Hvis det er nødvendigt, skal du angive et licensnummer eller anden identifikation, der er udstedt af myndighederne, i feltet **CPR**..
 
 > [!NOTE]
-> I formularen **Debitorparametre** vælges typisk en kreditmaksimumtype. Men, hvis kreditmaksimumtypen er angivet til **Ingen**, skal du også markere afkrydsningsfeltet **Tvungen kreditmaks.** i formularen **Debitorer** for at kontrollere debitorens kreditmaksimum i forhold til debitorsaldoen. Du kan finde flere oplysninger om kreditmaksimumtyper under "Hvilke dokumenter og processer kan jeg kontrollere kreditmaksimum for?" i dette emne. 
+> I formularen **Debitorparametre** vælges typisk en kreditmaksimumtype. Men, hvis kreditmaksimumtypen er angivet til **Ingen**, skal du også markere afkrydsningsfeltet **Tvungen kreditmaks.** i formularen **Debitorer** for at kontrollere debitorens kreditmaksimum i forhold til debitorsaldoen. Du kan finde flere oplysninger om kreditmaksimumtyper under "Hvilke dokumenter og processer kan jeg kontrollere kreditmaksimum for?" i denne artikel. 
 
 **Hvordan kontrollerer jeg manuelt kreditmaksimum i salgsordrer?**
 

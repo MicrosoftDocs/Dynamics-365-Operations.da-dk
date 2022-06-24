@@ -1,6 +1,6 @@
 ---
 title: Test for kvalitetsstyring
-description: I dette emne beskrives, hvordan du opretter test, som kan bruges til kvalitetsordrer i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan du opretter test, som kan bruges til kvalitetsordrer i Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10b67f86fc29b5e8c08081a9b789d4f42c24cf4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac67ee97a4890c646daefa6b09feae25c4f15d0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857599"
 ---
 # <a name="quality-management-tests"></a>Test for kvalitetsstyring
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opretter test, som kan bruges til kvalitetsordrer i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver, hvordan du opretter test, som kan bruges til kvalitetsordrer i Microsoft Dynamics 365 Supply Chain Management.
 
 Du kan bruge siden **Test** til at definere og få vist de individuelle test, der bestemmer, om produkterne opfylder kvalitetsspecifikationerne. Du kan tildele en eller flere individuelle test til en testgruppe. Når du gør det, skal du også angive testspecifikke oplysninger, f.eks. de acceptable måleværdier. Måleværdier bruges til kvantitative test. Til kvalitative test bruges testvariabler.
 

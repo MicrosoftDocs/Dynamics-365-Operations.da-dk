@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om styring af tekniske ændringer
-description: Dette emne indeholder svar på ofte stillede spørgsmål om funktionen til styring af tekniske ændringer.
+description: Denne artikel indeholder svar på ofte stillede spørgsmål om funktionen til styring af tekniske ændringer.
 author: t-benebo
 ms.date: 03/25/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: 16d29fa6485bae866a5209a855dfb928e8bc4783
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870776"
 ---
 # <a name="engineering-change-management-faq"></a>Ofte stillede spørgsmål om styring af tekniske ændringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder svar på ofte stillede spørgsmål om funktionen til styring af tekniske ændringer.
+Denne artikel indeholder svar på ofte stillede spørgsmål om funktionen til styring af tekniske ændringer.
 
 ## <a name="should-i-track-the-version-in-transactions"></a>Skal jeg spore versionen i transaktioner?
 

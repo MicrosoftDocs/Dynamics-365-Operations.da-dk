@@ -1,6 +1,6 @@
 ---
 title: Avancerede automatiske gebyrer for omni-kanal
-description: I dette emne beskrives funktioner til styring af andre ordregebyrer for Commerce-kanalordrer ved hjælp af funktioner til avancerede automatiske gebyrer.
+description: Denne artikel beskriver funktioner til styring af andre ordregebyrer for Commerce-kanalordrer ved hjælp af funktioner til avancerede automatiske gebyrer.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851125"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerede automatiske gebyrer for omni-kanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om konfiguration og implementering af funktionen til avancerede automatiske gebyrfunktion, der er tilgængelig i Dynamics 365 for Retail version 10.0.
+Denne artikel indeholder oplysninger om konfiguration og implementering af funktionen til avancerede automatiske gebyrfunktion, der er tilgængelig i Dynamics 365 for Retail version 10.0.
 
 Når de avancerede automatiske gebyrfunktioner er aktiveret, kan ordrer, der oprettes i en understøttet Commerce-kanal (POS, callcenter og online), udnytte de konfigurationer for [automatiske gebyrer](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services), der er defineret i ERP-programmet for gebyrer på både for ordrehoved- og -linjeniveau.
 

@@ -1,6 +1,6 @@
 ---
 title: Kasseapparatfunktionalitet til Norge
-description: Dette emne indeholder en oversigt over kasseapparatfunktionaliteten, der er tilgængelig for Norge i Microsoft Dynamics 365 Commerce, og indeholder retningslinjer for opsætning af funktionen.
+description: Denne artikel indeholder en oversigt over kasseapparatfunktionaliteten, der er tilgængelig for Norge i Microsoft Dynamics 365 Commerce, og indeholder retningslinjer for opsætning af funktionen.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906693"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kasseapparatfunktionalitet til Norge
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over kasseapparatfunktionaliteten, der er tilgængelig for Norge i Dynamics 365 Commerce. Det indeholder også retningslinjer for opsætning af funktionen. Funktionaliteten består af følgende dele:
+Denne artikel indeholder en oversigt over kasseapparatfunktionaliteten, der er tilgængelig for Norge i Dynamics 365 Commerce. Det indeholder også retningslinjer for opsætning af funktionen. Funktionaliteten består af følgende dele:
 
 - Almindelige POS-funktioner, der er tilgængelige for kunder i alle lande eller områder. Af eksempler kan nævnes en indstilling, der giver dig mulighed for at forhindre, at en kopi af en kvittering udskrives mere end én gang.
 - Norgesspecifikke funktioner som f.eks. digitale signaturer for salgstransaktioner.

@@ -1,6 +1,6 @@
 ---
 title: Gemte standardvisninger for Supply Chain Management
-description: Dette emne beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres.
+description: Denne artikel beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887552"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Gemte standardvisninger for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management indeholder adskillige gemte visninger, som du kan aktivere og bruge efter behov. Nogle af disse gemte standardvisninger er optimeret og navngivet til en bestemt rolle eller opgave (f.eks. "Kvalitetskontrol" eller "Modtagelse"). Andre er optimeret, så de kun inkluderer de felter og indstillinger, som Microsoft-brugsstatistikken angiver, at der oftest bruges af kunder. Disse gemte visninger kaldes typisk *forenklede* visninger. Dette emne beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres og tilpasses.
+Microsoft Dynamics 365 Supply Chain Management indeholder adskillige gemte visninger, som du kan aktivere og bruge efter behov. Nogle af disse gemte standardvisninger er optimeret og navngivet til en bestemt rolle eller opgave (f.eks. "Kvalitetskontrol" eller "Modtagelse"). Andre er optimeret, så de kun inkluderer de felter og indstillinger, som Microsoft-brugsstatistikken angiver, at der oftest bruges af kunder. Disse gemte visninger kaldes typisk *forenklede* visninger. Denne artikel beskriver de gemte standardvisninger, der er tilgængelige, og forklarer, hvordan de aktiveres og tilpasses.
 
 Du kan få detaljerede oplysninger om, hvordan du arbejder med gemte visninger, herunder standardvisninger, når du har aktiveret dem, under [Gemte visninger](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Du kan finde flere oplysninger om, hvordan du tilpasser og omdøber gemte visnin
 
 Hvis du vil bruge gemte visninger, uanset om du vil bruge de gemte standardvisninger, skal du aktivere funktionen *Gemte visninger* i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (fra og med version 10.0.21 er denne funktion som standard aktiveret).
 
-De resterende afsnit i dette emne indeholder tabeller, der beskriver de gemte standardvisninger, som aktuelt er tilgængelige for hvert relevant modul. Hver tabel viser navnet på hver enkelt gemt visning – den side, du kan finde den på, og en beskrivelse af den. Hver tabel viser også navnet på den funktion, der indeholder den gemte visning. Du kan få vist en gemt standardvisning i systemet ved at aktivere den angivne funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med version 10.0.25 er alle de anførte visninger som standard aktiverede.
+De resterende afsnit i denne artikel indeholder tabeller, der beskriver de gemte standardvisninger, som aktuelt er tilgængelige for hvert relevant modul. Hver tabel viser navnet på hver enkelt gemt visning – den side, du kan finde den på, og en beskrivelse af den. Hver tabel viser også navnet på den funktion, der indeholder den gemte visning. Du kan få vist en gemt standardvisning i systemet ved at aktivere den angivne funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med version 10.0.25 er alle de anførte visninger som standard aktiverede.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Gemte visninger for modulet Lagerstyring
 

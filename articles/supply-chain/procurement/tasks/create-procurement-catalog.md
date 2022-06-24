@@ -1,6 +1,6 @@
 ---
 title: Oprette et indkøbskatalog
-description: Dette emner beskriver, hvordan du opretter et indkøbskatalog.
+description: Denne artikel beskriver, hvordan du opretter et indkøbskatalog.
 author: GalynaFedorova
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e94f2ef23a3c4020f46138a10fcdf84552451515
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8e35e8c5b5c93fa9aac914f04e7ea658748cb052
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869540"
 ---
 # <a name="create-a-procurement-catalog"></a>Oprette et indkøbskatalog
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emner beskriver, hvordan du opretter et indkøbskatalog. Denne opgave vil normalt udføres af en professionel indkøber. Du lærer også, hvordan medarbejdere kan bruge kataloget, når de opretter en indkøbsrekvisition. Før du kan oprette et katalog, skal der være et indkøbskategorihierarki i systemet. Hierarkiet arves af det nye katalog sammen med alle de produkter, der er i hierarkiet. Du kan bruge denne vejledning i demodatafirmaet USMF, hvor indkøbskategorihierarkiet er tilgængeligt, såvel som de eksempler, der bruges i trinnene i proceduren.
+Denne artikel beskriver, hvordan du opretter et indkøbskatalog. Denne opgave vil normalt udføres af en professionel indkøber. Du lærer også, hvordan medarbejdere kan bruge kataloget, når de opretter en indkøbsrekvisition. Før du kan oprette et katalog, skal der være et indkøbskategorihierarki i systemet. Hierarkiet arves af det nye katalog sammen med alle de produkter, der er i hierarkiet. Du kan bruge denne vejledning i demodatafirmaet USMF, hvor indkøbskategorihierarkiet er tilgængeligt, såvel som de eksempler, der bruges i trinnene i proceduren.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Kontroller, at der findes et indkøbskategorihierarki

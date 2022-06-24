@@ -1,6 +1,6 @@
 ---
 title: Arbejde med lokationsvejledninger
-description: Dette emne beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
+description: Denne artikel beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903689"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103132"
 Lokationsvejledninger er regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser. I f.eks. en salgsordretransaktion bestemmer en lokationsvejledning, hvor varerne plukkes, og hvor de plukkede varer skal lægges på lager. Lokationsvejledninger består af en overskrift og tilknyttede linjer. De oprettes for bestemte *typer af arbejdsordrer*.
 
 > [!NOTE]
-> Dette emne gælder for funktioner i modulet **Lagerstedsstyring**. Det gælder ikke for funktioner i modulet [Lagerstyring](../inventory/inventory-home-page.md).
+> Denne artikel gælder for funktioner i modulet **Lagerstedsstyring**. Det gælder ikke for funktioner i modulet [Lagerstyring](../inventory/inventory-home-page.md).
 
 Du kan bruge lokationsvejledninger til at udføre følgende opgaver:
 
@@ -109,7 +109,7 @@ Følgende tabel indeholder de felter, der er specifikke for bestemte arbejdsordr
 
 Hvis du vil åbne siden **Lokationsvejledninger**, skal du gå til **Lokationsstyring \> Konfiguration \> Lokationsvejledninger**.
 
-Derfra kan du se, oprette og redigere lokationsvejledninger ved hjælp af kommandoerne i handlingsruden. Se de resterende afsnit i dette emne for at få oplysninger om, hvordan du bruger alle de felter, der er tilgængelige på siden.
+Derfra kan du se, oprette og redigere lokationsvejledninger ved hjælp af kommandoerne i handlingsruden. Se de resterende afsnit i denne artikel for at få oplysninger om, hvordan du bruger alle de felter, der er tilgængelige på siden.
 
 ## <a name="action-pane"></a>Handlingsrude
 
@@ -162,7 +162,7 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
 - **Gældende dispositionskode** – Angiv, om lokationsvejledningens dispositionskode skal svare til den dispositionskode, der er anvendt ved modtagelse af varen, eller om lokationsvejledningen kan vælges på basis af en hvilken som helst dispositionskode. Hvis du vælger *Nøjagtigt match* og feltet **Dispositionskode** er tomt, er det kun tomme dispositionskoder, der tages i betragtning til lokalitetsvejledningen.
 
     > [!NOTE]
-    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types) tidligere i dette emne.
+    > Dette felt er kun tilgængeligt for bestemte arbejdsordretyper, hvor genopfyldning er tilladt. Du kan finde en komplet liste i afsnittet [Felter, der er specifikke for arbejdsordretyper](#fields-specific-types) tidligere i denne artikel.
 
 - **Find efter** – Angiv, om læg på lager-antallet skal være hele antallet på id'er, eller om det skal være vare pr. vare. Brug dette felt som en hjælp til at sikre, at alt indholdet på et id lægges på én lokation, og at systemet ikke foreslår, at du opdeler indholdet på flere lokationer for **ASN** (id-modtagelse), **Blandet id**-modtagelse og **Klynge**-modtagelsesprocesser. (Processen til modtagelse af **Klynge** kræver, at funktionen for [læg på lager-klynge](putaway-clusters.md) er aktiveret). Funktionsmåden for lokationsvejledningsforespørgslen, linjerne og lokationsvejledningens handlinger varierer afhængigt af den værdi, du vælger. Oversigtspanelet **Linjer** bruges kun, når feltet **Find efter** er angivet til *Vare*.
 
@@ -254,7 +254,7 @@ Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til e
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjælp-emne: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)
+- Hjælp-artikel: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

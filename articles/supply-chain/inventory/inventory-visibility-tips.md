@@ -1,6 +1,6 @@
 ---
-title: Tip til lagersynlighed
-description: Dette emne indeholder et par tip, som du bør overveje, når du konfigurerer og bruger tilføjelsesprogrammet Lagersynlighed.
+title: Tip til Inventory Visibility
+description: Denne artikel indeholder et par tip, som du bør overveje, når du konfigurerer og bruger tilføjelsesprogrammet Lagersynlighed.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885951"
 ---
 # <a name="inventory-visibility-tips"></a>Tip til lagersynlighed
 
@@ -34,5 +34,6 @@ Her er et par tip, som du bør overveje, når du konfigurerer og bruger tilføje
 - Hvis du føjer en eller flere nye målinger til Supply Chain Management-miljøet, skal du også føje dem til Lagersynlighed. Alle ændringer af antal for nye målinger skal dog komme fra dit Supply Chain Management-miljø.
 - I øjeblikket består [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration) af to basisdimensioner (`SiteId` og `LocationId`), der angiver, hvordan dataene fordeles. Operationer under samme partition kan give en højere ydeevne og lavere omkostninger. Løsningen inkluderer som standard denne partitionskonfiguration. Du *behøver derfor ikke definere den selv*. Lad være med at tilpasse standardkonfigurationen af partitioner. Hvis du sletter eller ændrer den, opstår der højst sandsynligt en uventet fejl.
 - Basisdimensioner, der er defineret i partitionskonfigurationen, bør ikke defineres i [konfigurationen af produktindekshierarki](inventory-visibility-configuration.md#index-configuration).
+- Din [konfiguration af produktindekshierarki](inventory-visibility-configuration.md#index-configuration)skal have mindst ét indekshierarki (f.eks. med basisdimensionen `Empty`) – ellers mislykkes forespørgslerne med fejlen "Der er ikke angivet et indekshierarki".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

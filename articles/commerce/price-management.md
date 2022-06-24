@@ -1,6 +1,6 @@
 ---
 title: Styring af detailsalgspriser
-description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Dynamics 365 Commerce.
+description: Denne artikel beskriver begreberne for oprettelse og styring af salgspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887004"
 ---
-# <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
+# <a name="retail-sales-price-management"></a>Styring af detailsalgspriser
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om processen for oprettelse og styring af salgspriserne i Dynamics 365 Commerce. Der fokuseres på de begreber, der er involveret i processen, og om virkningerne af de forskellige konfigurationsindstillinger for salgspriser.
+Denne artikel indeholder oplysninger om processen for oprettelse og styring af salgspriserne i Dynamics 365 Commerce. Der fokuseres på de begreber, der er involveret i processen, og om virkningerne af de forskellige konfigurationsindstillinger for salgspriser.
 
 ## <a name="terminology"></a>Terminologi
 
-Følgende begreber anvendes i dette emne.
+Følgende begreber anvendes i denne artikel.
 
 | Periode | Definition, brug og noter |
 |---|---|
-| Pris | Beløbet for én enhed, som et produkt sælges til, til en kunde gennem et salgssted (POS) eller en salgsordre. I dette emne henviser begrebet *pris* altid til salgsprisen, ikke lagerprisen eller kostprisen. |
+| Pris | Beløbet for én enhed, som et produkt sælges til, til en kunde gennem et salgssted (POS) eller en salgsordre. i denne artikel henviser begrebet *pris* altid til salgsprisen, ikke lagerprisen eller kostprisen. |
 | Basispris | Den pris, der er angivet i feltet **Pris** for et frigivet produkt. |
 | Pris i samhandelsaftale | Den pris, der er angivet for et produkt eller en variant gennem en samhandelsaftale af typen **Pris (salg)**. |
-| Bedste pris | Når mere end én pris eller rabat kan gælde for et produkt, er prisen det mindste prisbeløb og/eller det største rabatbeløb, som giver det laveste mulige nettobeløb, som kunden skal betale. I dette emne betegnes den bedste pris altid "den bedste pris". Den bedste pris adskiller sig fra og bør ikke forveksles med tællerværdien for **Bedste pris** for en samtidig rabattilstand. |
+| Bedste pris | Når mere end én pris eller rabat kan gælde for et produkt, er prisen det mindste prisbeløb og/eller det største rabatbeløb, som giver det laveste mulige nettobeløb, som kunden skal betale. I denne artikel betegnes den bedste pris altid "den bedste pris". Den bedste pris adskiller sig fra og bør ikke forveksles med tællerværdien for **Bedste pris** for en samtidig rabattilstand. |
 
 ## <a name="price-groups"></a>Prisgrupper
 
@@ -97,7 +97,7 @@ Hvis du vil bruge prioriteter for prissætning til priser, skal du tildele en pr
 
 Funktionen til prioriteter for prissætning blev indført for at understøtte det scenarie, hvor en detailhandler ønsker at anvende højere priser i et bestemt række af butikker. Et eksempel er, når en detailhandler har defineret regionale priser for den amerikanske østkyst i USA, men ønsker højere priser for visse produkter i butikkerne i New York City, fordi det koster mere at sælge visse produkter i byen, og/eller fordi en højere pris er gælder på det lokale marked.
 
-Som beskrevet i afsnittet "Bedste pris" i dette emne, vælger programmet for prissætning typisk den mindste af to priser. Derfor forhindres detailhandleren normalt i at bruge den højeste af to priser i en butik, der har både har prisgrupper for østkysten og i New York. For at løse problemet, inden funktionen for prioriteter for prissætning blev indført, måtte detailhandleren definere priser for hvert produkt to gange og ikke tildele prisen til begge prisgrupper. Detailhandleren kunne også oprette ekstra prisgrupper for at isolere de produkter, der har højere priser, fra produkter med de normale, lavere priser.
+Som beskrevet i afsnittet "Bedste pris" i denne artikel, vælger programmet for prissætning typisk den mindste af to priser. Derfor forhindres detailhandleren normalt i at bruge den højeste af to priser i en butik, der har både har prisgrupper for østkysten og i New York. For at løse problemet, inden funktionen for prioriteter for prissætning blev indført, måtte detailhandleren definere priser for hvert produkt to gange og ikke tildele prisen til begge prisgrupper. Detailhandleren kunne også oprette ekstra prisgrupper for at isolere de produkter, der har højere priser, fra produkter med de normale, lavere priser.
 
 Funktionen til prioriteter for prissætning lader imidlertid detailhandleren oprette en prioritet for butikkens priser, som er højere end prioriteten for de regionale priser. Forhandleren kan også oprette en prioritet for prissætning, der kun gælder for butikspriser, mens de regionale priser får standardprioriteten for prissætning, dvs. 0 (nul). Begge opsætninger er med til at sikre, at butikspriser altid bruges før de regionale priser.
 
@@ -151,7 +151,7 @@ Ved hjælp af en samhandelsaftalekladde kan du oprette samhandelsaftaler om salg
 
 En samhandelsaftale for salgspriser af typen **Tabel** gælder for en enkelt kunde, som er angivet direkte i samhandelsaftalen. Dette scenario er ikke et typisk scenarie for salg fra virksomheder til forbrugere (B2C). Hvis det forekommer, anvender programmet for prissætning samhandelsaftaler af typen **Tabel** til at fastlægge prisen.
 
-En samhandelsaftale for salgspriser af typen **Gruppe** er den type, der bruges oftest. Uden for Commerce gælder samhandelsaftaler for salgspriser af typen **Gruppe** for en simpel debitorgruppe. I Commerce er begrebet for en debitorgruppe udvidet til en mere generel prisgruppe. En prisgruppe kan knyttes til en kanal, et tilhørsforhold, et fordelskundeprogram eller et katalog. Detaljerede oplysninger om prisgrupper finder du i afsnittet "Prisgrupper" tidligere i dette emne.
+En samhandelsaftale for salgspriser af typen **Gruppe** er den type, der bruges oftest. Uden for Commerce gælder samhandelsaftaler for salgspriser af typen **Gruppe** for en simpel debitorgruppe. I Commerce er begrebet for en debitorgruppe udvidet til en mere generel prisgruppe. En prisgruppe kan knyttes til en kanal, et tilhørsforhold, et fordelskundeprogram eller et katalog. Detaljerede oplysninger om prisgrupper finder du i afsnittet "Prisgrupper" tidligere i denne artikel.
 
 > [!NOTE]
 > En samhandelsaftale for priser bruges altid før basisprisen.

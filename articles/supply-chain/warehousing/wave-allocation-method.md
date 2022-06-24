@@ -1,6 +1,6 @@
 ---
 title: Bølgefordeling
-description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere trinnet til bølgefordeling, herunder hvordan du kan aktivere parallel behandling af den.
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere trinnet til bølgefordeling, herunder hvordan du kan aktivere parallel behandling af den.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906945"
 ---
 # <a name="wave-allocation"></a>Bølgefordeling
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695529"
 
 Bølgebehandling kan være tidskrævende, og den meste af behandlingstiden bruges på fordelingstrinnet og i trin til oprettelse af arbejde.
 
-Nu er det muligt at køre hvert af disse trin parallelt, hvilket kan forbedre ydeevnen af bølgebehandling og give mulighed for større gennemløb af bølger på samme lagersted. Dette emne forklarer, hvordan du kan konfigurere metode til tildeling af bølger, så den kører parallelt. Du kan finde flere oplysninger om, hvordan du konfigurerer arbejdsoprettelse til at køre parallelt, under [Planlægge oprettelse af arbejde under bølgen](configure-wave-schedule-work-creation.md).
+Nu er det muligt at køre hvert af disse trin parallelt, hvilket kan forbedre ydeevnen af bølgebehandling og give mulighed for større gennemløb af bølger på samme lagersted. Denne artikel forklarer, hvordan du kan konfigurere metode til tildeling af bølger, så den kører parallelt. Du kan finde flere oplysninger om, hvordan du konfigurerer arbejdsoprettelse til at køre parallelt, under [Planlægge oprettelse af arbejde under bølgen](configure-wave-schedule-work-creation.md).
 
 Tidligere var det kun muligt at tildele én bølge ad gangen på et lagersted. Denne begrænsning er blevet fjernet og erstattet af en ny begrænsning, der kun låser den vare og de dimensioner, der ligger over lokationen i reservationshierarkiet. Dimensioner over lokationen omfatter altid produktdimensioner. Hvis en vare f.eks. er konfigureret med *Farve*, kan varianterne *Rød*, *Blå* og *Gul* hver behandles parallelt.
 

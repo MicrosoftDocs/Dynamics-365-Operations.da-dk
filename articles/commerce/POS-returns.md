@@ -1,6 +1,6 @@
 ---
 title: Oprette returneringer i POS
-description: Dette emne beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-programmet.
+description: Denne artikel beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-programmet.
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856992"
 ---
 # <a name="create-returns-in-pos"></a>Oprette returneringer i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-appen.
+Denne artikel beskriver, hvordan du starter returneringer for cash and carry-transaktioner eller kundeordrer i Microsoft Dynamics 365 Commerce POS-appen.
 
 > [!NOTE]
 > I Commerce version 10.0.20 og senere findes der en ny funktion med navnet **Samlet behandling af returneringer i POS**. Denne funktion udgør en mere konsistent og ensartet returproces i POS, uanset transaktionstypen (cash-and-carry-transaktion eller kundeordre) eller den oprindelige kanal, som ordren blev oprettet i. Det anbefales, at alle organisationer aktiverer denne nye funktion for at forbedre den overordnede pålidelighed af returneringsbehandling via POS.
@@ -96,7 +96,7 @@ Hvis oplysningerne på kanalsiden af en eller anden grund ikke er opdateret, og 
 ## <a name="version-details"></a>Versionsdetaljer
 
 Følgende liste indeholder de mindste versionskrav for de forskellige komponenter.
-- Commerce-hovedkontor: Version 10.0.20
+- Commerce Headquarters: Version 10.0.20
 - Commerce Scale Unit (CSU): Version 9.30
 - POS: Version 9.30
 

@@ -1,6 +1,6 @@
 ---
 title: Sende ordrer som direkte leveringer
-description: Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre.
+description: Denne artikel beskriver, hvordan du opretter en direkte levering for en salgsordre.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875153"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter en direkte levering for en salgsordre. Du bruger direkte levering, når du vil levere varer til kunden direkte fra leverandøren, i stedet for at sende dem til dit eget lager først. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. For at fuldføre den anden underopgave "Oprette direkte leveringer fra panelet" skal du sikre dig, at der for den vare, du vælger på salgsordren, er angivet en standardleverandør i oversigtspanelet Køb i Frigivne produktmaster.
+Denne artikel beskriver, hvordan du opretter en direkte levering for en salgsordre. Du bruger direkte levering, når du vil levere varer til kunden direkte fra leverandøren, i stedet for at sende dem til dit eget lager først. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. For at fuldføre den anden underopgave "Oprette direkte leveringer fra panelet" skal du sikre dig, at der for den vare, du vælger på salgsordren, er angivet en standardleverandør i oversigtspanelet Køb i Frigivne produktmaster.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Angive en enkelt ordre til direkte levering
 1. Gå til **Navigationsrude > Moduler > Debitor > Ordrer > Alle salgsordrer**.

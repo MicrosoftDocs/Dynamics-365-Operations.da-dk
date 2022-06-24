@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om lagerefterkalkulation
-description: Dette emne besvarer nogle ofte stillede spørgsmål om lagerefterkalkulation i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel besvarer nogle ofte stillede spørgsmål om lagerefterkalkulation i Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850838"
 ---
 # <a name="inventory-costing-faq"></a>Ofte stillede spørgsmål om lagerefterkalkulation
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne besvarer nogle ofte stillede spørgsmål om lagerefterkalkulation i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel besvarer nogle ofte stillede spørgsmål om lagerefterkalkulation i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Lagerlukning, reguleringer og genberegning
 
@@ -359,7 +359,7 @@ Det anbefales, at du ofte overvåger og korrigerer negativt lager, når organisa
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Skal jeg oprette en ny vare, hvis mit lager er blevet negativt, og jeg bruger glidende gennemsnit?
 
-Nej Hvis din organisation tillader, at lageret bliver fysisk negativt, og du bruger det glidende gennemsnit som lagermodel, bruger systemet den reserveomkostningsrækkefølge, der er tildelt på siden **Parametre for lager- og lokationsstyring**, til at bestemme, hvordan omkostningerne skal tildeles til dine afgange. Generelt anbefales det, at du undgår at lade lageret blive fysisk negativ. Du kan finde flere oplysninger under de andre spørgsmål i afsnittet [Negativt lager](#negative-inventory) i dette emne.
+Nej Hvis din organisation tillader, at lageret bliver fysisk negativt, og du bruger det glidende gennemsnit som lagermodel, bruger systemet den reserveomkostningsrækkefølge, der er tildelt på siden **Parametre for lager- og lokationsstyring**, til at bestemme, hvordan omkostningerne skal tildeles til dine afgange. Generelt anbefales det, at du undgår at lade lageret blive fysisk negativ. Du kan finde flere oplysninger under de andre spørgsmål i afsnittet [Negativt lager](#negative-inventory) i denne artikel.
 
 ## <a name="not-stocked-products"></a>Ikke-lagerførte produkter
 
@@ -433,7 +433,7 @@ Hvis der er prisforskel mellem bogføringen af en fysisk opdatering og en økono
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Hvad sker der, når jeg bruger glidende gennemsnit, hvis der er en afgang før tilgangen?
 
-Der kan typisk være en afgang før tilgangen, enten fordi du tillader fysisk negativt lager for varemodelgruppen, eller fordi afgangen er dateret bagud. Du kan finde flere oplysninger i afsnittet [Negativt lager](#negative-inventory) i dette emne.
+Der kan typisk være en afgang før tilgangen, enten fordi du tillader fysisk negativt lager for varemodelgruppen, eller fordi afgangen er dateret bagud. Du kan finde flere oplysninger i afsnittet [Negativt lager](#negative-inventory) i denne artikel.
 
 Hvis du daterer transaktioner bagud, anbefales det, at du nøje overvejer forretningsprocesserne og -handlingerne for at finde ud af, om dette scenario kan undgås. Hvis du tilbagedaterer en transaktion for en vare, der bruger glidende gennemsnit, vil systemet tildele det aktuelle glidende gennemsnit til transaktionen. Senere afgange justeres ikke. Yderligere oplysninger om glidende gennemsnit med tilbagedaterede transaktioner finder du i [Glidende gennemsnit](moving-average.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.11. (juni 2020)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.11.
+description: Denne artikel beskriver funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.11.
 author: kamaybac
 ms.date: 04/17/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 76a28b9285bb8edfaaee7f9bc3cb4f03deb7a731abb55624394278d72398c748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0cde3da6f2894d6d0bbfe2e5842c055a120e348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857860"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.11. (juli 2020)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.11. Denne version har et build-nummer på 10.0.464 og er tilgængelig som følger:
+I denne artikel findes en liste over de funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.11. Denne version har et build-nummer på 10.0.464 og er tilgængelig som følger:
 
 - **Prøveversion:** april 2020
 - **Generel tilgængelighed (selv-opdatering):** maj 2020
@@ -49,9 +49,9 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.11 af Finance and Operations-apps (juli 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 indeholder platformopdateringer. Du kan få mere at vide i [Platformsopdateringer til version 10.0.11 af programmer til finans og drift (juli 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -65,12 +65,12 @@ Se [Dynamics 365: 2020-frigivelsesplan bølge 1](/dynamics365-release-plan/2020w
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

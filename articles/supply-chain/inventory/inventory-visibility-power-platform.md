@@ -1,8 +1,8 @@
 ---
 title: Appen Lagersynlighed
-description: Dette emne beskriver, hvordan du bruger appen Lagersynlighed.
+description: Denne artikel beskriver, hvordan du bruger appen Lagersynlighed.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 359f89f98ca6954a0bbafd63fffa1d505a43f0c8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895751"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Bruge App til lagersynlighed
+# <a name="use-the-inventory-visibility-app"></a>Bruge App til Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du bruger appen Lagersynlighed.
+Denne artikel beskriver, hvordan du bruger appen Lagersynlighed.
 
 Lagersynlighed indeholder en modelbaseret app til visualisering. Appen indeholder tre sider: **Konfiguration**, **Operationel synlighed** og **Lageroversigt**. Den har følgende funktioner:
 
@@ -70,7 +70,10 @@ Hvis du vil bogføre en reservationsanmodning, skal du angive en værdi i anmodn
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lageroversigt
 
-**Lageroversigt** er en tilpasset visning for enheden *Opsummering af disponibel lagerbeholdning*. Den giver en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Før du kan se data under fanen **Lageroversigt**, skal du aktivere funktionen *OnHandMostSpecificBackffaldshåndteringService* under fanen **Funktionsstyring**.
+**Lageroversigt** er en tilpasset visning for enheden *Opsummering af disponibel lagerbeholdning*. Den giver en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed hvert 15. minut. Før du kan se data under fanen **Lageroversigt**, skal du aktivere funktionen *OnHandMostSpecificBackgroundService* under fanen **Funktionsstyring** og vælge **Opdater konfiguration**.
+
+> [!NOTE]
+> Funktionen *OnHandMostSpecificBackgroundService* sporer kun de ændringer i produktlageret, der er foretaget, efter at du aktiverede funktionen. Data for produkter, der ikke er ændret, siden du aktiverede funktionen, synkroniseres ikke fra lagertjenestecachen til Dataverse-miljøet. Hvis **lageroversigtssiden** ikke viser alle de beholdningsoplysninger, du forventer, skal du gå til **Lagerstyring > Periodiske opgaver > integration af Lagersynlighed**, deaktivere batchjobbet og genaktivere det. Derved sker det første push, og alle data synkroniseres med enheden *Lager onHand Sum* i løbet af de næste 15 minutter. Hvis du vil bruge denne funktion, anbefales det, at du aktiverer den, før du opretter eventuelle ændringer i lagerbeholdningen, og aktiverer batchjobbet **lagersynlighedsintegration**.
 
 Ved hjælp af **Avanceret filter**, som findes i Dataverse, kan du oprette en tilpasset visning af de rækker, der er vigtige for dig. Med de avancerede filterindstillinger kan du oprette mange forskellige visninger, fra de mest simple til de mest komplekse. De gør det også muligt at føje grupperede og indlejrede betingelser til filtrene. Du kan få mere at vide om, hvordan du bruger **Avanceret filter**, i [Redigere eller oprette personlige visninger ved hjælp af avancerede gitterfiltre](/powerapps/user/grid-filters-advanced).
 

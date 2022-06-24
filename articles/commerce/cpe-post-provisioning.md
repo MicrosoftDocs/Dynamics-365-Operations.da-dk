@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
-description: I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
+description: Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 author: psimolin
 ms.date: 05/12/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892324"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives det, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
+Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
 
-Fuldfør kun procedurerne i dette emne, efter dit Commerce-evalueringsmiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).
+Fuldfør kun procedurerne i denne artikel, efter dit Commerce-evalueringsmiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).
 
 Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet. Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.
 
@@ -37,19 +37,19 @@ Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal
 1. Gå til dit projekt.
 1. Vælg **Skybaserede miljøer** øverst i menuen.
 1. Vælg dit miljø fra listen.
-1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce-hovedkontoret.
+1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce Headquarters.
 1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.
 1. Gå til **Commerce-parametre \> Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje den, angive værdien til **true** og derefter vælge **Kanaldatabase \> Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit websted for e-handel.
 1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Initialiser Commerce-planlægger**. I menuen **Initialiser Commerce-planlægger** skal du sikre, at indstillingen **Slet eksisterende konfiguration** er angivet til **Ja**, og derefter vælge **OK**.
 1. Hvis du vil føje kanaler til Commerce Scale Unit, skal du gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \>Kanaldatabase** og derefter vælge Commerce Scale Unit i venstre rude. I oversigtspanelet **Detailkanal** skal du tilføje **AW-onlinebutik**, **AW Business-onlinebutik** og **Fabrikams udvidede onlinebutik** som kanaler. Du kan også tilføje detailforretninger, hvis du bruger POS ( f.eks. **Seattle**, **San Francisco** og **San Jose**).
 
-Under klargøring af aktiviteter i Commerce-hovedkontoret skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
+Under klargøring af aktiviteter i Commerce Headquarters skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
 
 ## <a name="configure-the-point-of-sale"></a>Konfigurer POS 
 
 ### <a name="associate-a-worker-with-your-identity"></a>Tilknyt en arbejder til din identitet
 
-Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Commerce-hovedkontor.
+Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Commerce Headquarters.
 
 1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Medarbejdere \> Arbejdere**.
 1. Find og vælg følgende post i listen: **000713 - Andrew Collette**.
@@ -124,7 +124,7 @@ Du kan også vælge at angive gentagelsesintervallet til et (1) minut for følge
 
 ### <a name="run-full-data-synchronization"></a>Kør fuld datasynkronisering
 
-Følg disse trin for at køre fuld datasynkronisering i Commerce-hovedkontor.
+Følg disse trin for at køre fuld datasynkronisering i Commerce Headquarters.
 
 1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Konfiguration af hovedkontor \> Handelsplanlægger \> Kanaldatabase**.
 1. Vælg den kanal, der hedder **scXXXXXXXXX**.

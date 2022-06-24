@@ -1,8 +1,8 @@
 ---
-title: Konfigurere lagersynlighed
-description: Dette emne beskriver, hvordan du konfigurerer Lagersynlighed.
+title: Konfigurere Inventory Visibility
+description: Denne artikel beskriver, hvordan du konfigurerer Lagersynlighed.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786832"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895809"
 ---
-# <a name="configure-inventory-visibility"></a>Konfigurere lagersynlighed
+# <a name="configure-inventory-visibility"></a>Konfigurere Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du konfigurerer tilføjelsesprogrammet Lagersynlighed ved hjælp af lagersynlighed-app i Power Apps.
+Denne artikel beskriver, hvordan du konfigurerer tilføjelsesprogrammet Lagersynlighed ved hjælp af lagersynlighed-app i Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Start her
 
-Før du begynder at arbejde med Lagersynlighed, skal du fuldføre følgende konfiguration som beskrevet i dette emne:
+Før du begynder at arbejde med Lagersynlighed, skal du fuldføre følgende konfiguration som beskrevet i denne artikel:
 
 - [Konfiguration af datakilde](#data-source-configuration)
 - [Partitionskonfiguration](#partition-configuration)
@@ -41,7 +41,7 @@ Før du går i gang, skal du installere og konfigurere tilføjelsesprogrammet La
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurationssiden for appen Lagersynlighed
 
-I Power Apps hjælper siden **Konfiguration** på [Lagersynlighed-app](inventory-visibility-power-platform.md) med at konfigurere konfigurationen af disponibel lagerbeholdning og konfigurationen af foreløbige reservationer. Når tilføjelsesprogrammet er installeret, indeholder standardkonfigurationen værdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gennemse standardindstillinger. Afhængigt af forretningsbehovene og det eksterne systems krav til lagerbogføring kan du desuden redigere konfigurationen for at standardisere, hvordan lagerændringer kan bogføres, organiseres og forespørges på på tværs af flere systemer. I de resterende afsnit af dette emne forklares, hvordan du kan bruge de enkelte dele af **konfigurationssiden**.
+I Power Apps hjælper siden **Konfiguration** på [Lagersynlighed-app](inventory-visibility-power-platform.md) med at konfigurere konfigurationen af disponibel lagerbeholdning og konfigurationen af foreløbige reservationer. Når tilføjelsesprogrammet er installeret, indeholder standardkonfigurationen værdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gennemse standardindstillinger. Afhængigt af forretningsbehovene og det eksterne systems krav til lagerbogføring kan du desuden redigere konfigurationen for at standardisere, hvordan lagerændringer kan bogføres, organiseres og forespørges på på tværs af flere systemer. I de resterende afsnit af denne artikel forklares, hvordan du kan bruge de enkelte dele af **konfigurationssiden**.
 
 Når konfigurationen er fuldført, skal du vælge **Opdater konfiguration** i appen.
 
@@ -52,8 +52,9 @@ Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power App
 | Funktionsstyringsnavn | Beskrivelse |
 |---|---|
 | *OnHandReservation* | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackobjektService* | Denne funktion viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnHandMostSpecificBackgroundService* | Denne funktion viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Denne valgfrie funktion aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT). Du kan finde flere oplysninger i [Ændringsplan for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
+| *Tildeling* | Denne valgfrie funktion gør det muligt for lagersynlighed at have mulighed for lagerbeskyttelse (ringorganisering) og overstyring. Yderligere oplysninger finder du i [Fordeling af tilføjelsesprogrammet Lagersynlighed](inventory-visibility-allocation.md). |
 | *Aktivér lagerstedsvarer i lagersynlighed* | Denne valgfrie funktion gør det muligt for lagersynlighed at understøtte varer, der er aktiveret til avancerede lagerstedsprocesser (WHS-varer). Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WHS-varer](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finde tjenestens slutpunkt
@@ -318,7 +319,14 @@ Hvis du vil konfigurere produkthierarkiindekset, skal du følge disse trin.
 1. Der er som standard angivet en liste over indekser. Hvis du vil redigere et eksisterende indeks, skal du vælge **Rediger** eller **Tilføj** i sektionen for det relevante indeks. Hvis du vil oprette et nyt indekssæt, skal du vælge **Nyt indekssæt**. For hver række i hvert indekssæt skal du i feltet **Dimension** vælge fra listen over basisdimensioner. Der generes automatisk værdier for følgende felter:
 
     - **Sætnummer** – Dimensioner, der tilhører samme gruppe (indeks), grupperes sammen og tildeles det samme sætnummer.
-    - **Hierarki** – Hierarkiet bruges til at definere de understøttede dimensionskombinationer, der kan oprettes forespørgsler på i en dimensionsgruppe (indeks). Hvis du f.eks. konfigurerer en dimensionsgruppe, der har hierarkirækkefølgen *Typografi*, *Farve* og *Størrelse*, understøtter systemet resultatet af tre forespørgselsgrupper. Den første gruppe er kun typografi. Den anden gruppe er en kombination af typografi og farve. Og den tredje gruppe er en kombination af typografi, farve og størrelse. De andre kombinationer understøttes ikke.
+    - **Hierarki** – Hierarkiet bruges til at definere de understøttede dimensionskombinationer, der kan oprettes forespørgsler på i en dimensionsgruppe (indeks). Hvis du f.eks. konfigurerer en dimensionsgruppe, der har en hierarkirækkefølge *Typografi*, *Farve* og *Størrelse*, understøtter systemet resultatet af tre forespørgselsgrupper. Den første gruppe er kun typografi. Den anden gruppe er en kombination af typografi og farve. Og den tredje gruppe er en kombination af typografi, farve og størrelse. De andre kombinationer understøttes ikke.
+
+> [!TIP]
+> Du kan bruge et par tip, som du kan huske, når du konfigurerer indekshierarkiet:
+>
+> - Basisdimensioner, der er defineret i partitionskonfigurationen, bør ikke defineres i indekskonfigurationer. Hvis der igen defineres en basisdimension i indekskonfigurationen, kan du ikke forespørge på dette indeks.
+> - Hvis du kun skal forespørge på lager, der aggregeres af alle dimensionskombinationer, kan du konfigurere et enkelt indeks, der indeholder basisdimensionen `Empty`.
+> - Du skal have mindst ét indekshierarki (f.eks. med basisdimensionen `Empty`) – ellers mislykkes forespørgslerne med fejlen "Der er ikke angivet et indekshierarki".
 
 ### <a name="example"></a>Eksempel
 
@@ -372,11 +380,6 @@ Med indekset kan du forespørge på den disponible lagerbeholdning på følgende
     - T-shirt, Rød, Lille, Almindelig, 6
     - T-shirt, Rød, Stor, Almindelig, 7
 
-> [!NOTE]
-> Basisdimensioner, der er defineret i partitionskonfigurationen, bør ikke defineres i indekskonfigurationer.
-> 
-> Hvis du kun skal forespørge på lager, der aggregeres af alle dimensionskombinationer, kan du konfigurere et enkelt indeks, der indeholder basisdimensionen `Empty`.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguration af reservationer (valgfrit)
 
 Konfiguration af reservationer er påkrævet, hvis du vil bruge funktionen til foreløbig reservation. Konfigurationen består af to grundlæggende dele:
@@ -390,7 +393,7 @@ Når du foretager en reservation, vil du måske gerne vide, om den disponible la
 
 Når du opretter tilknytningen fra den fysiske måling til den beregnede måling, aktiverer du tjenesten Lagersynlighed til automatisk at validere reservationens tilgængelighed ud fra den fysiske måling.
 
-Før du konfigurerer denne tilknytning, skal de fysiske målinger, beregnede målinger og deres datakilder defineres under fanerne **Datakilde** og **Beregnet måling** på siden **Konfiguration** i Power Apps (som beskrevet tidligere i dette emne).
+Før du konfigurerer denne tilknytning, skal de fysiske målinger, beregnede målinger og deres datakilder defineres under fanerne **Datakilde** og **Beregnet måling** på siden **Konfiguration** i Power Apps (som beskrevet tidligere i denne artikel).
 
 Hvis du vil definere tilknytningen for en foreløbig reservation, skal du følge disse trin.
 
@@ -508,7 +511,7 @@ Under initialiseringsstadiet opretter Lagersynlighed en standardkonfiguration, s
 
 I dette afsnit beskrives, hvordan `iv`-datakilden konfigureres.
 
-##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fysiske mål, der er konfigureret for iv-datakilden
+##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Fysiske mål, der er konfigureret for "iv"-datakilden
 
 Der konfigureres følgende fysiske målinger for `iv`-datakilden:
 
@@ -651,11 +654,11 @@ Den beregnede måling for `InventoryDemand` konfigureres for `iv`-datakilden som
 | Addition | `iv` | `ReservPhysical` |
 | Addition | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>Konfiguration af fno-datakilden
+#### <a name="configuration-of-the-fno-data-source"></a>Konfiguration af "fno"-datakilden
 
 I dette afsnit beskrives, hvordan `fno`-datakilden konfigureres.
 
-##### <a name="dimension-mappings-for-the-fno-data-source"></a>Dimensionstilknytninger for fno-datakilden
+##### <a name="dimension-mappings-for-the-fno-data-source"></a>Dimensionstilknytninger for "fno"-datakilden
 
 De dimensionstilknytninger, der vises i følgende tabel, er konfigureret for `fno`-datakilden.
 
@@ -687,7 +690,7 @@ De dimensionstilknytninger, der vises i følgende tabel, er konfigureret for `fn
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fysiske målinger, der er konfigureret for fno-datakilden
+##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Fysiske målinger, der er konfigureret for "fno"-datakilden
 
 Der konfigureres følgende fysiske målinger for `fno`-datakilden:
 
@@ -699,11 +702,11 @@ Der konfigureres følgende fysiske målinger for `fno`-datakilden:
 - `ReservOrdered`
 - `OnOrder`
 
-#### <a name="configuration-of-the-pos-data-source"></a>Konfiguration af pos-datakilden
+#### <a name="configuration-of-the-pos-data-source"></a>Konfiguration af "pos"-datakilden
 
 I dette afsnit beskrives, hvordan `pos`-datakilden konfigureres.
 
-##### <a name="physical-measures-for-the-pos-data-source"></a>Fysiske målingeer for pos-datakilden
+##### <a name="physical-measures-for-the-pos-data-source"></a>Fysiske målinger for "pos"-datakilden
 
 Der konfigureres følgende fysiske målinger for `pos`-datakilden:
 
@@ -720,14 +723,14 @@ Den beregnede måling for `AvailQuantity` konfigureres for `pos`-datakilden som 
 | Addition | `pos` | `PosInbound` |
 | Subtraktion | `pos` | `PosOutbound` |
 
-#### <a name="configuration-of-the-iom-data-source"></a>Konfiguration af iom-datakilden
+#### <a name="configuration-of-the-iom-data-source"></a>Konfiguration af "iom"-datakilden
 
 Der konfigureres følgende fysiske mål for `iom`-datakilden (Intelligent Order Management):
 
 - `OnOrder`
 - `OnHand`
 
-#### <a name="configuration-of-the-erp-data-source"></a>Konfiguration af erp-datakilden
+#### <a name="configuration-of-the-erp-data-source"></a>Konfiguration af "erp"-datakilden
 
 Der konfigureres følgende fysiske mål for `erp`-datakilden (Enterprise Resource Planning):
 

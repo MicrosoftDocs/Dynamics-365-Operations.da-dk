@@ -1,6 +1,6 @@
 ---
 title: Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
-description: Dette emne indeholder en forklaring på, hvordan der klargøres edge-skaleringsenheder i det lokale miljø ved hjælp af tilpasset hardware og installation, der er baseret på lokale forretningsdata (LBD).
+description: Denne artikel indeholder en forklaring på, hvordan der klargøres edge-skaleringsenheder i det lokale miljø ved hjælp af tilpasset hardware og installation, der er baseret på lokale forretningsdata (LBD).
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882744"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Implementere edge-skaleringsenheder på brugerdefineret hardware ved hjælp af LBD
 
@@ -27,7 +27,7 @@ Edge-skaleringsenheder spiller en vigtig rolle i den distribuerede hybridtopolog
 
 Edge-skaleringsenheder implementeres ved at oprette lokale forretningsdata (LBD) [det lokale miljø](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) og derefter konfigurere dem, så de fungerer som en skaleringsenhed i den distribuerede hybridtopologi for Supply Chain Management. Dette kan du opnå ved at knytte det lokale LBD-miljø til et Supply Chain Management-miljø i skyen, der er konfigureret til at fungere som hub.  
 
-I dette emne beskrives, hvordan du kan konfigurere et lokalt LBD-miljø som en edge-skaleringsenhed og derefter knytte det til en hub.
+Denne artikel beskriver, hvordan du kan konfigurere et lokalt LBD-miljø som en edge-skaleringsenhed og derefter knytte det til en hub.
 
 ## <a name="infrastructure-considerations"></a>Overvejelser ved infrastrukturen
 
@@ -44,21 +44,21 @@ Her er en oversigt over installationstrinnene.
 
 1. **Konfigurer og implementer et LBD-miljø med en *tom* database.**
 
-    Brug LCS til at installere LBD-miljøet med den seneste topologi og en tom database. Du kan finde flere oplysninger i afsnittet [Konfigurere og implementere et LBD-miljø med tom database](#set-up-deploy) senere i dette emne. Du skal bruge Supply Chain Management version 10.0.21 eller højere på tværs af hub- og skaleringsenhedsmiljøer.
+    Brug LCS til at installere LBD-miljøet med den seneste topologi og en tom database. Du kan finde flere oplysninger i afsnittet [Konfigurere og implementere et LBD-miljø med tom database](#set-up-deploy) senere i denne artikel. Du skal bruge Supply Chain Management version 10.0.21 eller højere på tværs af hub- og skaleringsenhedsmiljøer.
 
 1. **Upload målpakker til LBD-projektaktiver i LCS.**
 
-    Forbered program-, platform- og tilpasningspakker, som du bruger på tværs af hubben og edge-skaleringsenheden. Du kan finde flere oplysninger i afsnittet [Uploade målpakker til LBD-projektaktiver i LCS](#upload-packages) senere i dette emne.
+    Forbered program-, platform- og tilpasningspakker, som du bruger på tværs af hubben og edge-skaleringsenheden. Du kan finde flere oplysninger i afsnittet [Uploade målpakker til LBD-projektaktiver i LCS](#upload-packages) senere i denne artikel.
 
 1. **Servicér LBD-miljøet med målpakkerne.**
 
-    Dette trin sikrer, at samme opbygning og tilpasninger implementeres på hubben og den nævnte skaleringsenhed. Du kan finde flere oplysninger i afsnittet [Servicere LBD-miljøet med målpakkerne](#service-target-packages) senere i dette emne.
+    Dette trin sikrer, at samme opbygning og tilpasninger implementeres på hubben og den nævnte skaleringsenhed. Du kan finde flere oplysninger i afsnittet [Servicere LBD-miljøet med målpakkerne](#service-target-packages) senere i denne artikel.
 
 1. **Fuldfør konfigurationen af skaleringsenheden og tildelingen af arbejdsbyrde.**
 
-    Du kan finde flere oplysninger i afsnittet [Tildele din LBD-edge-skaleringsenhed til en hub](#assign-edge-to-hub) senere i dette emne.
+    Du kan finde flere oplysninger i afsnittet [Tildele din LBD-edge-skaleringsenhed til en hub](#assign-edge-to-hub) senere i denne artikel.
 
-De resterende afsnit i dette emne indeholder flere oplysninger om, hvordan du fuldfører hvert trin.
+De resterende afsnit i denne artikel indeholder flere oplysninger om, hvordan du fuldfører hvert trin.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Konfigurere og implementere et LBD-miljø med en tom database
 
@@ -67,7 +67,7 @@ Dette trin opretter et funktionelt LBD-miljø. Men miljøet har ikke nødvendigv
 1. Følg vejledningen i [Konfigurere og installere miljøer i det lokale miljø (Platform update 41 og senere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du skal bruge Supply Chain Management version 10.0.21 eller højere på tværs af hub- og skaleringsenhedsmiljøer. Derudover skal du bruge version 2.12.0 eller en senere version af infrastrukturens scripts. 
 
     > [!IMPORTANT]
-    > Læs resten af dette afsnit, **før** du fuldfører trinnene i det pågældende emne.
+    > Læs resten af dette afsnit, **før** du fuldfører trinnene i det pågældende artikel.
 
 1. Før du beskriver din konfiguration i infrastrukturens\\ConfigTemplate.xml-fil, skal du køre følgende script:
 

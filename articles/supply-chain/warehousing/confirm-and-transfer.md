@@ -1,6 +1,6 @@
 ---
 title: Bekræft og flyt
-description: Dette emne forklarer, hvordan du bruger funktionen Bekræft og overfør, så brugerne kan sende laster ud af lagerstedet, før de fuldfører alt det arbejde, der er knyttet til disse laster.
+description: Denne artikel forklarer, hvordan du bruger funktionen Bekræft og overfør, så brugerne kan sende laster ud af lagerstedet, før de fuldfører alt det arbejde, der er knyttet til disse laster.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900558"
 ---
 # <a name="confirm-and-transfer"></a>Bekræft og flyt
 
@@ -55,11 +55,11 @@ Du kan kun opdele laster, der opfylder alle følgende kriterier:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivere eller deaktivere bekræftelses- og overførselsfunktionen
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Bekræft og overfør* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Bekræft og overfør* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge den funktionalitet, der er beskrevet i denne artikel, skal funktionen *Bekræft og overfør* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Bekræft og overfør* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfigurere Bekræft og overfør
 
-Hvis du vil bruge funktionen *Bekræft og overfør*, skal du slå aktivere den på alle relevante lastskabeloner. Afhængigt af dine krav kan det også være en god ide at forberede dine arbejdsskabeloner til at understøtte denne funktion. Hvis du vil arbejde i det eksempelscenarie, der er angivet senere i dette emne, skal du konfigurere systemet som beskrevet i dette afsnit. (Dette scenarie er baseret på **USMF**-demodata).
+Hvis du vil bruge funktionen *Bekræft og overfør*, skal du slå aktivere den på alle relevante lastskabeloner. Afhængigt af dine krav kan det også være en god ide at forberede dine arbejdsskabeloner til at understøtte denne funktion. Hvis du vil arbejde i det eksempelscenarie, der er angivet senere i denne artikel, skal du konfigurere systemet som beskrevet i dette afsnit. (Dette scenarie er baseret på **USMF**-demodata).
 
 ### <a name="prepare-your-load-templates"></a>Forberede lastskabeloner
 
@@ -69,7 +69,7 @@ Hvis du vil bruge funktionen *Bekræft og overfør*, skal du slå aktivere den p
 
 ### <a name="prepare-your-work-templates"></a>Forberede arbejdsskabeloner
 
-Denne opsætning er ikke påkrævet i alle situationer. Det eksempel, der vises her, sikrer, at arbejdet kan opdeles efter forsendelse for at understøtte det eksempelscenarie, der er angivet senere i dette emne. Der findes også andre måder at opnå dette resultat på.
+Denne opsætning er ikke påkrævet i alle situationer. Det eksempel, der vises her, sikrer, at arbejdet kan opdeles efter forsendelse for at understøtte det eksempelscenarie, der er angivet senere i denne artikel. Der findes også andre måder at opnå dette resultat på.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Arbejde \> Arbejdsskabeloner**.
 1. Vælg en eksisterende arbejdsskabelon, hvor du vil konfigurere funktionen *Bekræft og overfør*, i gitteret på den øverste del af siden. (Hvis du arbejder med **USMF**-demodata, skal du vælge arbejdsskabelonen **51 Pluk til midlertidigt lager**). Du kan også oprette en ny arbejdsskabelon.

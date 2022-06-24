@@ -1,6 +1,6 @@
 ---
 title: Introduktion til aktiver
-description: Dette emne indeholder en oversigt over aktiver i Styring af aktiver.
+description: Denne artikel indeholder en oversigt over aktiver i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874182"
 ---
 # <a name="introduction-to-assets"></a>Introduktion til aktiver
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767502"
 
  
 
-Dette emne indeholder en oversigt over aktiver i Styring af aktiver. Et *aktiv* er enhver type udstyr, såsom en maskine eller en del til en maskine, der kræver vedligeholdelse, service eller reparation.
+Denne artikel indeholder en oversigt over aktiver i Styring af aktiver. Et *aktiv* er enhver type udstyr, såsom en maskine eller en del til en maskine, der kræver vedligeholdelse, service eller reparation.
 
-Et aktiv opdateres automatisk med relaterede oplysninger. Eksempelvis kan disse relaterede oplysninger vedrøre nye eller opdaterede arbejdsordrer. Du kan oprette aktiver ved hjælp af enten menupunktet **Alle aktiver** eller menupunktet **Afventende aktiver**. I dette emne forklares det, hvordan du opretter aktiver ved hjælp af menupunktet **Alle aktiver**. Oplysninger om, hvordan du opretter aktiver ved hjælp af menupunktet **Afventende aktiver**, finder du under [Opret aktiver baseret på indkøbsordrer](../objects/create-objects-based-on-purchase-orders.md).
+Et aktiv opdateres automatisk med relaterede oplysninger. Eksempelvis kan disse relaterede oplysninger vedrøre nye eller opdaterede arbejdsordrer. Du kan oprette aktiver ved hjælp af enten menupunktet **Alle aktiver** eller menupunktet **Afventende aktiver**. Denne artikel forklarer, hvordan du opretter aktiver ved hjælp af menupunktet **Alle aktiver**. Oplysninger om, hvordan du opretter aktiver ved hjælp af menupunktet **Afventende aktiver**, finder du under [Opret aktiver baseret på indkøbsordrer](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Alle aktiver
 

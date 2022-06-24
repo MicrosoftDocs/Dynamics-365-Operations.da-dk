@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 106da56ed1de7d9e555cfdd63f19687d7e17599a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862563"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillinger for dimensioner og produktvarianter
 
@@ -38,7 +38,7 @@ Benyt følgende fremgangsmåde for at definere standardindstillingerne for produ
     - På fanen **Plan** i gruppen **Ordreindstillinger** skal du vælge **Standardordreindstillinger**.
     - På fanen **Administrer lager** i gruppen **Ordreindstillinger** skal du vælge **Standardordreindstillinger**.
 
-1. Konfigurer indstillingerne som beskrevet i resten af dette emne.
+1. Konfigurer indstillingerne som beskrevet i resten af denne artikel.
 
 ## <a name="default-order-settings"></a>Standardindstillinger for ordre
 

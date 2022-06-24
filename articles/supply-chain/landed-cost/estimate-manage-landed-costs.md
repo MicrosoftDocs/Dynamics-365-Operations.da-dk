@@ -1,6 +1,6 @@
 ---
 title: Estimere og administrere landingsomkostninger
-description: Systemet bruger din automatiske omkostningsopsætning til at fastlægge et estimat for dine landingsomkostninger. Dette emne forklarer, hvordan du kan definere forskellige scenarier for at få et mere præcist estimat.
+description: Systemet bruger din automatiske omkostningsopsætning til at fastlægge et estimat for dine landingsomkostninger. Denne artikel forklarer, hvordan du kan definere forskellige scenarier for at få et mere præcist estimat.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854435"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Estimere og administrere landingsomkostninger
 
@@ -50,7 +50,7 @@ I følgende tabel forklares de felter, der er tilgængelige for hver skabelon.
 
 Brug dialogboksen **Omkostningsestimat** til at generere et nyt omkostningsestimat, der er baseret på en valgt omkostningsskabelon, et valgt sæt af varer og andre detaljer om en rejse. Disse indstillinger bruges derefter til at bestemme de estimerede landingsomkostninger for varer. Disse omkostningsestimater bruges primært til at arbejde med varer med standardomkostninger. Hvis du lægger de forkalkulerede landingsomkostninger til standardomkostningerne for varer på lageret, skulle du opleve mindre afvigelsestransaktioner, når varerne føjes til en fragt, da standardomkostningen afspejler estimaterne for disse landingsomkostninger.
 
-Du kan åbne dialogboksen **Omkostningsestimat** ved at gå til **Landingsomkostninger \> Periodiske opgaver \> Omkostningsestimat**. Derefter skal du angive felterne som beskrevet i følgende underafsnit. Vælg til sidst **OK** for at oprette estimatet. Siden **Omkostningsestimat** (**Landingsomkostninger \> Forespørgsler \> Omkostningsestimater**) vises derefter med det nye estimat, som beskrevet senere i dette emne.
+Du kan åbne dialogboksen **Omkostningsestimat** ved at gå til **Landingsomkostninger \> Periodiske opgaver \> Omkostningsestimat**. Derefter skal du angive felterne som beskrevet i følgende underafsnit. Vælg til sidst **OK** for at oprette estimatet. Siden **Omkostningsestimat** (**Landingsomkostninger \> Forespørgsler \> Omkostningsestimater**) vises derefter med det nye estimat, som beskrevet senere i denne artikel.
 
 ### <a name="settings-on-the-parameters-tab"></a>Indstillinger under fanen Parametre
 
@@ -91,7 +91,7 @@ Hvis du vil se eller justere detaljer om volumen og/eller vægt for en vare, ska
 
 ## <a name="manage-estimated-costs"></a>Administrere forkalkulerede omkostninger
 
-Hvis du vil se og redigere de omkostningsestimater, du har oprettet, skal du gå til **Landingsomkostninger \> Forespørgsler \> Omkostningsestimater**. På siden **Omkostningsestimater** viser listeruden til venstre alle aktuelle omkostningsestimater. Du kan bruge knapperne i handlingsruden til at arbejde med et udvalgt estimat. Bemærk, at du ikke kan oprette et nyt omkostningsestimat fra siden **Omkostningsestimater**. Brug i stedet dialogboksen **Omkostningsestimat** (**Landingsomkostninger \> Periodiske opgaver \> Omkostningsestimater**) som beskrevet tidligere i dette emne.
+Hvis du vil se og redigere de omkostningsestimater, du har oprettet, skal du gå til **Landingsomkostninger \> Forespørgsler \> Omkostningsestimater**. På siden **Omkostningsestimater** viser listeruden til venstre alle aktuelle omkostningsestimater. Du kan bruge knapperne i handlingsruden til at arbejde med et udvalgt estimat. Bemærk, at du ikke kan oprette et nyt omkostningsestimat fra siden **Omkostningsestimater**. Brug i stedet dialogboksen **Omkostningsestimat** (**Landingsomkostninger \> Periodiske opgaver \> Omkostningsestimater**) som beskrevet tidligere i denne artikel.
 
 På siden **Omkostningsestimater** vises, hvordan hver enkelt forkalkulerede omkostning er afledt. Den viser også de forkalkulerede landingsomkostninger for hver enkelt vare. Du kan redigere et omkostningsestimat ved at ændre kostprisen og/eller valutaen, der er tilknyttet de forskellige varer. Du kan også redigere de tilknyttede fragtomkostninger på både fragtniveau og containerniveau. Når du bruger denne side til at ændre omkostningerne, bliver du bedt om at genberegne de forkalkulerede omkostninger for varerne i omkostningsestimatet. Når du er klar, kan du bruge estimaterne til at opdatere kostprisen for varerne i omkostningsskabelonen.
 

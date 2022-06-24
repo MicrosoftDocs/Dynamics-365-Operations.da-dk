@@ -1,6 +1,6 @@
 ---
-title: Eksempler og logik til rapport over aldersfordelt lager
-description: I dette emne vises nogle eksempler på, hvordan resultaterne af en rapport over aldersfordelt lager fortolkes.
+title: Eksempler på og logik om rapport om aldersfordelt lager
+description: Denne artikel viser nogle eksempler på, hvordan resultaterne af en rapport over aldersfordelt lager fortolkes.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848014"
 ---
-# <a name="inventory-aging-report-examples-and-logic"></a>Eksempler og logik til rapport over aldersfordelt lager
+# <a name="inventory-aging-report-examples-and-logic"></a>Eksempler på og logik om rapport om aldersfordelt lager
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises nogle eksempler på, hvordan resultaterne af rapporten **Aldersfordelt lager** fortolkes. Denne rapport kategoriserer det disponible antal og lagerværdier for en valgt vare eller varegruppe i flere perioder. I dette emne vises også rapportens interne logik.
+Denne artikel viser nogle eksempler på, hvordan resultaterne af en rapport over **aldersfordelt lager** fortolkes. Denne rapport kategoriserer det disponible antal og lagerværdier for en valgt vare eller varegruppe i flere perioder. Denne artikel viser også rapportens interne logik.
 
-Eksemplerne i dette emne viser resultater, der præsenteres i en rapport over standard **Aldersfordelt lager**. Generelt anbefales det dog, at du bruger [Lagerrapport over aldersfordelt lager](inventory-aging-report-storage.md)-versionen af denne rapport, specielt hvis du har mange varer og lagersteder, der skal behandles. Lagerrapport over aldersfordelt lager gemmer alle de rapporter, du genererer, viser resultaterne som en interaktiv side og et diagram og giver dig mulighed for at eksportere gemte rapporter.
+Eksemplerne i denne artikel viser resultater, der præsenteres i en rapport over standard **Aldersfordelt lager**. Generelt anbefales det dog, at du bruger [Lagerrapport over aldersfordelt lager](inventory-aging-report-storage.md)-versionen af denne rapport, specielt hvis du har mange varer og lagersteder, der skal behandles. Lagerrapport over aldersfordelt lager gemmer alle de rapporter, du genererer, viser resultaterne som en interaktiv side og et diagram og giver dig mulighed for at eksportere gemte rapporter.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Eksempeldata, der bruges i disse eksempler
 
-Eksemplerne i dette emne er baseret på de eksempeldata fra lagertransaktioner, der er beskrevet i dette afsnit.
+Eksemplerne i denne artikel er baseret på de eksempeldata fra lagertransaktioner, der er beskrevet i dette afsnit.
 
 ### <a name="storage-dimension-setup"></a>Konfiguration af lagringsdimension
 

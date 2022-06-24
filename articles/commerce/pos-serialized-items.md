@@ -1,6 +1,6 @@
 ---
 title: Arbejde med serienummererede varer i POS
-description: Dette emne forklarer, hvordan du kan håndtere serienummererede varer i POS-programmet.
+description: Denne artikel forklarer, hvordan du kan håndtere serienummererede varer i POS-programmet.
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880023"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbejde med serienummererede varer i POS
 
 [!include [banner](includes/banner.md)]
 
-Mange detailhandlere sælger produkter, der kræver en seriel kontrol. Disse produkter kaldes *serienummererede varer*. Nogle detailhandlere kan få brug for at bevare serienumre i et lager eller lagersted til sporingsformål. Andre detailhandlere kan få brug for at registrere serienumre under salgsprocessen mht. service- og garantiformål. Dette emne forklarer, hvordan du kan håndtere serienummererede varer i Microsoft Dynamics 365 Commerce POS-programmet.
+Mange detailhandlere sælger produkter, der kræver en seriel kontrol. Disse produkter kaldes *serienummererede varer*. Nogle detailhandlere kan få brug for at bevare serienumre i et lager eller lagersted til sporingsformål. Andre detailhandlere kan få brug for at registrere serienumre under salgsprocessen mht. service- og garantiformål. Denne artikel forklarer, hvordan du kan håndtere serienummererede varer i Microsoft Dynamics 365 Commerce POS-programmet.
 
 ## <a name="serial-number-configurations"></a>Serienummerkonfigurationer
 
@@ -124,7 +124,7 @@ I forbindelse med varer i serier, der sælges til fremtidig afhentning eller for
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Anvende serienumre under kundeordreopfyldning eller -afhentning
 
-Når du opfylder kundeordrelinjer for produkter i serier ved hjælp af funktionen **Ordreopfyldning** i POS, gennemtvinger POS hentning af serienummeret, før den endelige opfyldelse. Hvis et serienummer derfor ikke angives under den første ordreregistrering, skal det registreres under processen til pluk, pakning eller afsendelse i POS. Der udføres validering ved hvert trin, og brugeren bliver kun bedt om at angive serienummerdata, hvis den mangler eller ikke længere er gyldig. Hvis en bruger f.eks. springer pluk- eller pakketrinnene over, og der med det samme startes en forsendelse, og der ikke er registreret et serienummer for linjen, kræver POS, at serienummeret angives, før det endelige fakturatrin er fuldført. Når du gennemtvinger hentning af serienummeret under ordreopfyldningshandlinger i POS, gælder alle de regler, der tidligere er nævnt i dette emne, stadig. Kun varer i serier, der er konfigureret som **Aktiv**, gennemgår lagervalidering for serienummer. Varer, der er konfigureret som **Aktiv i salgsprocessen**, valideres ikke. Hvis **Fysisk negativt lager** er tilladt for **Aktive** produkter, accepteres et serienummer, uanset tilgængelig beholdning. Hvis **Blank afgang tilladt** er konfigureret for varer, der både er **Aktive** og **Aktive i salgsproces**, kan en bruger lade serienumrene være tomme, hvis det ønskes under pluk-, pakke- og afsendelsestrinnene.
+Når du opfylder kundeordrelinjer for produkter i serier ved hjælp af funktionen **Ordreopfyldning** i POS, gennemtvinger POS hentning af serienummeret, før den endelige opfyldelse. Hvis et serienummer derfor ikke angives under den første ordreregistrering, skal det registreres under processen til pluk, pakning eller afsendelse i POS. Der udføres validering ved hvert trin, og brugeren bliver kun bedt om at angive serienummerdata, hvis den mangler eller ikke længere er gyldig. Hvis en bruger f.eks. springer pluk- eller pakketrinnene over, og der med det samme startes en forsendelse, og der ikke er registreret et serienummer for linjen, kræver POS, at serienummeret angives, før det endelige fakturatrin er fuldført. Når du gennemtvinger hentning af serienummeret under ordreopfyldningshandlinger i POS, gælder alle de regler, der tidligere er nævnt i denne artikel, stadig. Kun varer i serier, der er konfigureret som **Aktiv**, gennemgår lagervalidering for serienummer. Varer, der er konfigureret som **Aktiv i salgsprocessen**, valideres ikke. Hvis **Fysisk negativt lager** er tilladt for **Aktive** produkter, accepteres et serienummer, uanset tilgængelig beholdning. Hvis **Blank afgang tilladt** er konfigureret for varer, der både er **Aktive** og **Aktive i salgsproces**, kan en bruger lade serienumrene være tomme, hvis det ønskes under pluk-, pakke- og afsendelsestrinnene.
 
 Validering af serienumre finder også sted, når en bruger udfører afhentningshandlingerne for kundeordrer i POS. POS-programmet tillader ikke, at en afhentning færdiggøres på et produkt i serier, medmindre det består valideringerne som nævnt tidligere. Valideringerne baseres altid på produktets sporingsdimension og konfigurationerne af salgslagersteder. 
 

@@ -1,6 +1,6 @@
 ---
 title: Frigiv til lagersted
-description: Dette emne indeholder oplysninger om processen for frigivelse til lagersted. Den beskriver enheder, der oprettes, når du frigiver en ordre til lagerstedet, og indstillinger, du kan bruge til at starte processen.
+description: Denne artikel indeholder oplysninger om processen for frigivelse til lagersted. Den beskriver enheder, der oprettes, når du frigiver en ordre til lagerstedet, og indstillinger, du kan bruge til at starte processen.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893172"
 ---
 # <a name="release-to-warehouse"></a>Frigiv til lagersted
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne indeholder oplysninger om processen for frigivelse til lagersted. Den beskriver enheder, der oprettes, når du frigiver en ordre til lagerstedet, og indstillinger, du kan bruge til at starte processen.
+Denne artikel indeholder oplysninger om processen for frigivelse til lagersted. Den beskriver enheder, der oprettes, når du frigiver en ordre til lagerstedet, og indstillinger, du kan bruge til at starte processen.
 
 ## <a name="release-to-warehouse-overview"></a>Regel for oversigt over lagersted
 
-Frigivelse til lagersted er den proces, der går ud på at gøre lageret klar til ekspedition. Når du frigiver en ordre til lagerstedet, opretter systemet belastningslinjer og forsendelser. Hvis der er konfigureret automatisk behandling af bølger, oprettes der også belastninger og påkrævet arbejde. Konfigurationen af de enheder, der er involveret, afhænger af systemindstillingerne. Dette afsnit i emnet gennemgår de enheder, der oprettes i løbet af frigivelsen til lagerstedsprocessen, og de systemindstillinger, der definerer dem.
+Frigivelse til lagersted er den proces, der går ud på at gøre lageret klar til ekspedition. Når du frigiver en ordre til lagerstedet, opretter systemet belastningslinjer og forsendelser. Hvis der er konfigureret automatisk behandling af bølger, oprettes der også belastninger og påkrævet arbejde. Konfigurationen af de enheder, der er involveret, afhænger af systemindstillingerne. Dette afsnit i artiklen gennemgår de enheder, der oprettes i løbet af frigivelsen til lagerstedsprocessen, og de systemindstillinger, der definerer dem.
 
 En *forsendelse* er en gruppe salgsordre- eller flytteordrelinjer til samme kunde eller samme leveringsadresse.
 
@@ -67,7 +67,7 @@ Når en ordre frigives til lagerstedet, fungerer den mest automatiske proces der
 
 Afhængigt af indstillinger for skabeloner til skabeloner, arbejdsskabeloner og lokalitetsdirektiver kan nogle trin i dette flow blive manuelle. Det overordnede flow forbliver dog det samme.
 
-Du har flere muligheder for, hvordan du frigiver en ordre til lagerstedet. Du kan udføre operationen manuelt, eller du kan konfigurere et batchjob. I de resterende afsnit af dette emne gennemgås de forskellige måder, du kan udføre en frigivelse til lagerstedsoperationen på.
+Du har flere muligheder for, hvordan du frigiver en ordre til lagerstedet. Du kan udføre operationen manuelt, eller du kan konfigurere et batchjob. I de resterende afsnit af denne artikel gennemgås de forskellige måder, du kan udføre en frigivelse til lagerstedsoperationen på.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuel frigivelse til lagerstedet fra siderne Salgsordrer og Flytteordrer
 

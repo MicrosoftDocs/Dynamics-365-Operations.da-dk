@@ -1,6 +1,6 @@
 ---
 title: Aktivitetsbaseret underleverandørarbejde
-description: I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
+description: Denne artikel beskriver i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890735"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaseret underleverandørarbejde
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
+Denne artikel beskriver i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 
 I Microsoft Dynamics 365 Supply Chain Management er der to metoder til underleverandørarbejde: produktionsordrer og lean manufacturing. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
 

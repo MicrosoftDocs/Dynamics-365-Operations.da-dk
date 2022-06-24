@@ -1,6 +1,6 @@
 ---
 title: Ændring af leveringsmetode i POS
-description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere og bruge ændringsmåden for leveringshandlinger i POS.
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere og bruge ændringsmåden for leveringshandlinger i POS.
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583f568164d0de70e22998bf5ded5f4616b00bd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855815"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Ændring af leveringsmetode i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere og bruge funktionen "Skift leveringsmåde" i dit POS-miljø. 
+Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere og bruge funktionen "Skift leveringsmåde" i dit POS-miljø. 
 
 I Dynamics 365 Commerce version 10.0.10 og nyere kan handlingen **Ændring af leveringsmetode** (647) føjes til dine POS-skærmlayout.
 

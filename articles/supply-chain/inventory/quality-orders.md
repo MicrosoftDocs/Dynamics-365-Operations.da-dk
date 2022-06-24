@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsordrer
-description: Dette emne beskriver, hvordan du opretter kvalitetsordrer manuelt eller automatisk, og hvordan du kan arbejde med dem for at udføre inspektioner og registrere testresultater i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan du opretter kvalitetsordrer manuelt eller automatisk, og hvordan du kan arbejde med dem for at udføre inspektioner og registrere testresultater i Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857773"
 ---
 # <a name="quality-orders"></a>Kvalitetsordrer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter kvalitetsordrer manuelt eller automatisk, og hvordan du kan arbejde med dem for at udføre inspektioner og registrere testresultater i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver, hvordan du opretter kvalitetsordrer manuelt eller automatisk, og hvordan du kan arbejde med dem for at udføre inspektioner og registrere testresultater i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="automatically-created-quality-orders"></a>Automatisk oprettede kvalitetsordrer
 
@@ -39,7 +39,7 @@ Benyt denne fremgangsmåde for at oprette en kvalitetsordre manuelt.
 
 1. Gå til **Lagerstyring \> Periodiske opgaver \> Kvalitetsstyring \> Kvalitetsordrer**.
 1. Vælg **Ny**.
-1. Vælg den lagerreference, som kvalitetsordren skal relateres til, i feltet **Referencetype** i dialogboksen **Kvalitetsordrer**. Du kan finde en beskrivelse af de referencetyper, der kan vælges, i afsnittet [Referencetyper for kvalitetsordre](#ref-types) senere i dette emne.
+1. Vælg den lagerreference, som kvalitetsordren skal relateres til, i feltet **Referencetype** i dialogboksen **Kvalitetsordrer**. Du kan finde en beskrivelse af de referencetyper, der kan vælges, i afsnittet [Referencetyper for kvalitetsordre](#ref-types) senere i denne artikel.
 
     > [!NOTE]
     > Det lager, der er knyttet til den valgte reference, skal være tilgængeligt. Hvis der ikke er nogen tilgængelig lagerbeholdning for kombinationen af referencetype, antal og lagerdimensioner, som du vælger, vises en fejlmeddelelse.
@@ -88,7 +88,7 @@ Du kan bruge kvalitetsordresiden til manuelt at oprette en ny kvalitetsordre ell
 
 ### <a name="from-the-quality-orders-page"></a>Fra siden Kvalitetsordrer
 
-Hvis du vil oprette kvalitetsordrer manuelt og have vist alle eksisterende kvalitetsordrer, skal du gå til **Lagerstyring \> Periodiske opgaver \> Kvalitetsstyring \> Kvalitetsordrer**. De resterende afsnit i dette emne indeholder flere oplysninger om, hvordan du kan arbejde med siden **Kvalitetsordrer**.
+Hvis du vil oprette kvalitetsordrer manuelt og have vist alle eksisterende kvalitetsordrer, skal du gå til **Lagerstyring \> Periodiske opgaver \> Kvalitetsstyring \> Kvalitetsordrer**. De resterende afsnit i denne artikel indeholder flere oplysninger om, hvordan du kan arbejde med siden **Kvalitetsordrer**.
 
 ### <a name="from-sales-orders"></a>Fras salgsordrer
 

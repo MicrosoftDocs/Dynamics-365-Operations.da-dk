@@ -1,6 +1,6 @@
 ---
 title: Parametre for styring af teknisk ændring
-description: I dette emne beskrives det, hvordan du konfigurerer teknisk ændringsstyring for Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan du konfigurerer teknisk ændringsstyring for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875504"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametre for styring af teknisk ændring
 
@@ -27,7 +27,7 @@ Siden **Parametre for styring af teknisk ændring** indeholder de opsætningspar
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>Åbn siden Parametre for styring af tekniske ændringer
 
-Hvis du vil åbne siden **Parametre for styring af tekniske ændringer**, skal du gå til **Teknisk ændringsstyring \> Konfiguration \> Parametre for styring af tekniske ændringer**. Du kan derefter angive felterne som beskrevet i de øvrige afsnit i dette emne.
+Hvis du vil åbne siden **Parametre for styring af tekniske ændringer**, skal du gå til **Teknisk ændringsstyring \> Konfiguration \> Parametre for styring af tekniske ændringer**. Du kan derefter angive felterne som beskrevet i de øvrige afsnit i denne artikel.
 
 ## <a name="release-control-tab"></a>Fanen Frigiv styring
 

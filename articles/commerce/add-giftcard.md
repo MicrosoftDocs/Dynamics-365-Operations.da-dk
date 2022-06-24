@@ -1,6 +1,6 @@
 ---
-title: Gavekortmodul
-description: I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+title: Gavekortsmodul
+description: Denne artikel dækker gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc3d51b9891469b8bb0fa38ae2bcd0b27eee56f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869484"
 ---
 # <a name="gift-card-module"></a>Gavekortsmodul
 
 [!include [banner](includes/banner.md)]
 
-I dette emne dækkes gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
+Denne artikel dækker gavekortmoduler, og det beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Gavekortmoduler kan bruges i betalingsmoduler til at acceptere gavekort og er en almindelig betalingsform i e-handelstransaktioner. Gavekortmodulet understøtter Dynamics 365-, SVS- og Givex-gavekort. SVS- og Givex-gavekort indløses via betalingsudbyderen Adyen. Du kan se flere oplysninger om understøttelse af eksterne gavekort som f.eks. SVS og Givex i emnet [Understøttelse af eksterne gavekort](./dev-itpro/gift-card.md).
 
@@ -82,7 +82,7 @@ Interne gavekort er som standard ikke optimeret til brug i udstillingsvinduer fo
 
 Som standard er gavekortbetalinger ikke aktiveret for gæsters (anonyme) betaling. Hvis du vil aktivere denne funktion, skal du benytte denne fremgangsmåde.
 
-1. I Commerce-hovedkvarteret skal du gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS \> POS-handlinger**.
+1. I Commerce headquarters skal du gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS \> POS-handlinger**.
 1. Vælg og hold (eller højreklik på) gitterhovedet, og vælg derefter **Indsæt kolonner**.
 1. Markér afkrydsningsfeltet **AllowChecknymousAccess** i dialogboksen **Indsæt kolonner**.
 1. Vælg **Opdater**.

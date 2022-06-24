@@ -1,6 +1,6 @@
 ---
 title: Commerce-analyser (forhåndsversion)
-description: Dette emne forklarer, hvordan du installerer og bruger analysefunktionaliteten i Microsoft Dynamics 365 Commerce.
+description: Denne artikel forklarer, hvordan du installerer og bruger analysefunktionaliteten i Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 02/24/2022
 audience: Application user
@@ -8,18 +8,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: 9ffa0affa0b80af65dd2aa37ef2fe969752ae332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887160"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyser (forhåndsversion)
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan du installerer Commerce-analyser (forhåndsversion), den funktionelle analysefunktionalitet, der findes i Microsoft Dynamics 365 Commerce.
+Denne artikel forklarer, hvordan du installerer Commerce-analyser (forhåndsversion), den funktionelle analysefunktionalitet, der findes i Microsoft Dynamics 365 Commerce.
 
 ## <a name="commerce-analytics-preview-live-demo"></a>Commerce-analyser (forhåndsversion) live demo
 
@@ -372,7 +372,7 @@ Send [Formen Forhåndsversionsindtagelse for Commerce-analyse (forhåndsversion)
 > [!IMPORTANT]
 > Når du konfigurerer tilføjelsesprogrammet Eksportér til Data Lake, skal du fjerne markeringen i afkrydsningsfeltet **Ændringer af data i realtid** på siden Konfigurer tilføjelsesprogrammet Eksportér til Data Lake for at sikre, at dataændringer i realtid ikke er aktiveret. Funktionen **Ændringer af data i realtid** er i forhåndsversion, og den understøttes ikke i øjeblikket af Commerce-analyser. Hvis du aktiverer funktionen, vil Commerce-analyser ikke kunne behandle dine data i datasøen, og de fleste af Power BI-rapporterne indeholder ingen data.
 
-Commerce-analyser (forhåndsversion) er baseret på funktionen Eksportér til Data Lake til at eksportere Commerce-hovedkontorets data til Data Lake og holde dataene opdateret. Før du konfigurerer Commerce-analyser (Forhåndsversion), skal du aktivere og konfigurere Eksport til Data Lake ved at følge trinnene i [Konfigurer eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+Commerce-analyser (forhåndsversion) er baseret på funktionen Eksportér til Data Lake til at eksportere Commerce Headquarters-data til Data Lake og holde dataene opdateret. Før du konfigurerer Commerce-analyser (Forhåndsversion), skal du aktivere og konfigurere Eksport til Data Lake ved at følge trinnene i [Konfigurer eksport til Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 Når du konfigurerer tilføjelsesprogrammet Eksportér til Data Lake, skal du notere følgende oplysninger, da du skal angive dem senere:
 

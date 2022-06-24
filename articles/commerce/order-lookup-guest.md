@@ -1,6 +1,6 @@
 ---
 title: Aktivere ordreopslag for gæsteudbetaling
-description: Dette emne beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891981"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivere ordreopslag for gæsteudbetaling
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan ordreopslag aktiveres i forbindelse med gæsteudbetaling i Microsoft Dynamics 365 Commerce.
 
 Med ordreopslagsfunktionen til betaling ved kassen som gæst kan de kunder, der foretager køb, slå deres ordrer op. Ordreopslagsfunktionaliteten er nyttig, når kunder skal udføre handlinger, f.eks. kontrol af produkternes opfyldelsesstatus på en ordre, bekræftelse af den adresse, en ordre er afsendt til, bestilling af et produkt eller bekræftelse af den butik, som en ordre bliver afhentet fra.
 

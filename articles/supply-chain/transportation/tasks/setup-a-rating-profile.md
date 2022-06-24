@@ -1,6 +1,6 @@
 ---
-title: Vurderingsprofiler
-description: Dette emne beskriver, hvordan du konfigurerer data til vurderingsprofiler.
+title: Bedømmelsesprofiler
+description: Denne artikel beskriver, hvordan du konfigurerer data til vurderingsprofiler.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,14 +14,14 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676433"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850461"
 ---
-# <a name="rating-profiles"></a>Vurderingsprofiler
+# <a name="rating-profiles"></a>Bedømmelsesprofiler
 
 [!include [banner](../../includes/banner.md)]
 
@@ -56,7 +56,7 @@ På siden **Vurderingsprofiler** kan du gennemse alle tilgængelige vurderingspr
 1. Gå til **Transportstyring \> Opsætning \> Fragtmænd \> Fragtmænd**.
 1. Vælg en fragtmand på listen.
 1. I oversigtspanelet **Vurderingsprofiler** skal du vælge **Ny** for at oprette en vurderingsprofil.
-1. Angiv felterne for den nye vurderingsprofil. Disse felter svarer til felterne på siden **Vurderingsprofiler** som beskrevet i det forrige afsnit i dette emne.
+1. Angiv felterne for den nye vurderingsprofil. Disse felter svarer til felterne på siden **Vurderingsprofiler** som beskrevet i det forrige afsnit i denne artikel.
 
 > [!NOTE]
 > Profiler, der oprettes på siden **Fragtmænd**, vises også på siden **Vurderingsprofiler**.

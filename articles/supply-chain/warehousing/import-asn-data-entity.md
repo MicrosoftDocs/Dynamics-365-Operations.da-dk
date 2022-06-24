@@ -1,6 +1,6 @@
 ---
 title: Importere indgående ASN'er via V3-dataenheden
-description: I dette emne forklares, hvordan du kan administrere importen af indgående ASN-meddelelser (Advanced Shipping Notices) via den indgående ASN-dataenhed.
+description: Denne artikel forklarer, hvordan du kan administrere importen af indgående ASN-meddelelser (Advanced Shipping Notices) via den indgående ASN-dataenhed.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907110"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Importere indgående ASN'er via V3-dataenheden
 
@@ -26,7 +26,7 @@ ASN'er (Advanced Shipping Notices) giver dig besked om leverandørleverancer. De
 
 ASN'er kan hjælpe lagerarbejdere med at finde ud af, hvad der ankommer hvornår. De kan derfor forberede sig. Derudover kan lagerarbejdere bruge ASN'er til at sammenligne detaljerne for en forsendelse med den relaterede indkøbsordre, der er oprettet tidligere.
 
-Dette emne indeholder en samling scenarier, der viser eksempler på, hvordan du kan arbejde med ASN-filer.
+Denne artikel indeholder en samling scenarier, der viser eksempler på, hvordan du kan arbejde med ASN-filer.
 
 > [!IMPORTANT]
 > *Indgående ASN*-import gælder kun for varer, der er aktiveret til avanceret lagerstedsstyring (WMS). Før du modtager en ASN, skal der være registreret en indkøbsordre i systemet for den leverandør, der sender ASN'en.

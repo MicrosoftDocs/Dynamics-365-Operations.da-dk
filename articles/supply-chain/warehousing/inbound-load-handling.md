@@ -1,6 +1,6 @@
 ---
-title: Lagerekspedition af indgående laster for indkøbsordrer
-description: I dette emne beskrives lagerekspeditionsprocessen for indgående laster for indkøbsordrer.
+title: Lagerstedshåndtering af indgående laster til indkøbsordrer
+description: Denne artikel beskriver lagerekspeditionsprocessen for indgående laster for indkøbsordrer.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855926"
 ---
-# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerekspedition af indgående laster for indkøbsordrer
+# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerstedshåndtering af indgående laster til indkøbsordrer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives lagerekspeditionsprocessen for indgående laster for indkøbsordrer.
+Denne artikel beskriver lagerekspeditionsprocessen for indgående laster for indkøbsordrer.
 
 For hver indgående last skal systemet allerede indeholde en relateret salgsordre, og det kan også indeholde en relateret lastspecifikation og/eller transportplan. Du kan få flere oplysninger om, hvordan du opretter og administrerer indgående laster, i [Forretningsproces: Planlægge transport for indgående laster](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -209,7 +209,7 @@ I følgende tabel vises en oversigt over effekterne af indstillingen **Tillad fl
 | Ja | Ingen opdateringer | _Modtaget_, hvis det samlede registrerede lastantal er lig med eller større end lastantallet | |
 | Ja | Ingen opdateringer | _Afsendt_ eller _Under behandling_, hvis det samlede registrerede lastantal er mindre end lastantallet | |
 
-Når feltet **Laststatus** er indstillet til _Modtaget_, kan der ikke foretages flere produktkvitteringsposteringer for den pågældende last. Arbejderen kan dog registrere det resterende ordreantal i forhold til den modtagne last under følgende betingelser. (Du kan finde flere oplysninger i afsnittet [Last over modtagelse](#load-over-receiving) tidligere i dette emne.)
+Når feltet **Laststatus** er indstillet til _Modtaget_, kan der ikke foretages flere produktkvitteringsposteringer for den pågældende last. Arbejderen kan dog registrere det resterende ordreantal i forhold til den modtagne last under følgende betingelser. (Du kan finde flere oplysninger i afsnittet [Last over modtagelse](#load-over-receiving) tidligere i denne artikel.)
 
 - Versionen af Supply Chain Management er ældre end version 10.0.11.
 - Funktionen _Overmodtagelse af lastantal_ er slået til, og feltet **Overmodtagelse af lastlinjeantal** i menupunktet på den mobile enhed for handlingen Modtagelse af varelast er angivet til _Tillad_.

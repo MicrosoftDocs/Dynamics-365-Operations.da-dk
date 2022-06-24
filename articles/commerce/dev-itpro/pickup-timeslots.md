@@ -1,6 +1,6 @@
 ---
 title: Oprette og opdatere tidsintervaller for kundeafhentning
-description: I dette emne beskrives, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
+description: Denne artikel beskriver, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882227"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Oprette og opdatere tidsintervaller for kundeafhentning
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
+Denne artikel beskriver, hvordan du opretter, konfigurerer og opdaterer tidsintervaller for kundeafhentning i Commerce Headquarters.
 
 Tidsintervalfunktionen giver detailhandlere mulighed for at definere et tidsinterval for varer, som leveringsmåden ved kundeafhentning er slået til for. Med tidsintervaller kan detailhandlere definere dage og tidspunkter, hvor ordrer kan afhentes fra en butik. Detailhandlende kan også definere antallet af ordrer, der kan afhentes i en given periode. På denne måde kan detailhandlerne begrænse antallet af ordrer, der kan afhentes på en given dag og på et givent tidspunkt. Resultatet er en bedre oplevelse for kunderne.
 

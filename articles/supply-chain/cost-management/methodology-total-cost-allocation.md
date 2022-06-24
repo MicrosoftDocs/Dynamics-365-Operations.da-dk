@@ -1,6 +1,6 @@
 ---
-title: Metode til samlet omkostningstildeling
-description: Dette emne indeholder retningslinjer for brug af samlet omkostningstildeling. Samlet omkostningstildeling er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen.
+title: Metode til samlet omkostningsfordeling
+description: Denne artikel indeholder retningslinjer for brug af samlet omkostningstildeling (TCA). Samlet omkostningstildeling er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen.
 author: JennySong-SH
 ms.date: 04/15/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948b2e91f8ab8ffe8d704159b60a281391e5bd6c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 213db8303c27934050f5b414a67f6e510486dc94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862679"
 ---
 # <a name="total-cost-allocation-method"></a>Metode til samlet omkostningsfordeling
 

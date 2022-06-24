@@ -1,6 +1,6 @@
 ---
-title: Modul med afhentningsoplysninger
-description: I dette emne beskrives afhentningsoplysningsmodulet, og det beskriver, hvordan du kan føje det til betalingssider i Microsoft Dynamics 365 Commerce.
+title: Modul til afhentningsoplysninger
+description: Denne artikel beskriver afhentningsoplysningsmodulet, og det beskriver, hvordan du kan føje det til betalingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892591"
 ---
 # <a name="pickup-information-module"></a>Modul til afhentningsoplysninger
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives afhentningsoplysningsmodulet, og det beskriver, hvordan du kan føje det til betalingssider i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver afhentningsoplysningsmodulet, og det beskriver, hvordan du kan føje det til betalingssider i Microsoft Dynamics 365 Commerce.
 
 Modulet med afhentningsoplysninger kan bruges i betalingsmodulet til at vise oplysninger om ordreafhentning. Kunder kan få vist de tilgængelige afhentningsdatoer og tidsintervaller og derefter vælge et passende tidspunkt at afhente ordren. En kunde kan f.eks. vælge at afhente en ordre kl. 15 den 21. marts i en butik i Slagelse.
 

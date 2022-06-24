@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integration af bonprinter for Italien
-description: Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Italien i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Italien i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 2aa1851fe5fe447ba2dd4640be9881b37e54216e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909384"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Eksempel på integration af bonprinter for Italien
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Italien i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Italien i Microsoft Dynamics 365 Commerce.
 
 Funktionaliteten af Commerce for Italien omfatter en eksempelintegration af POS med en bonprinter. Eksemplet udvider [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md), så den fungerer med [Epson FP-90III-seriens](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printere fra Epson, og det giver mulighed for kommunikation med en bonprinter i webservertilstand via webservicen EpsonFPMate ved hjælp af Fiscal ePOS-Print-API. Eksemplet understøtter kun tilstanden Registratore Telematico (RT). Eksemplet findes i form af kildekode og er en del af Retail SDK (Software Development Kit).
 

@@ -1,6 +1,6 @@
 ---
 title: Prioritetsbaseret planlægning
-description: Dette emne indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873805"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaseret planlægning
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i DDMRP (Demand Driven Material Requirements Planning). Ved hjælp af prioritetsbaseret planlægning kan Planlægningsoptimering generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
+Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i DDMRP (Demand Driven Material Requirements Planning). Ved hjælp af prioritetsbaseret planlægning kan Planlægningsoptimering generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbaseret planlægning kan du prioritere genopfyldningsordrer for at sikre, at hasteefterspørgsel prioriteres højere end knap så vigtig efterspørgsel. En lagergenopfyldningsordre prioriteres f.eks. højere end en standardgenopfyldningsordre. Systemet kan automatisk opdele større ordrer i mindre separate ordrer, hvor ordrelinjer grupperes efter prioritet. Derefter kan alle ordrer med høj prioritet behandles først.
 

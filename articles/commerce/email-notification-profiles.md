@@ -1,6 +1,6 @@
 ---
-title: Konfigurere en mailbeskedprofil
-description: Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
+title: Konfigurere en profil for mailbesked
+description: Denne artikel beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878480"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Konfigurere en profil for mailbesked
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du opretter en mailbeskedprofil i Microsoft Dynamics 365 Commerce.
 
 Når du opretter kanaler, kan du oprette en mailbeskedprofil. Mailbeskedprofilen definerer hændelserne i en salgstransaktion (f.eks. en ordre, der oprettes, pakkes eller faktureres), som du vil sende beskeder om til dine kunder. 
 
@@ -85,7 +85,7 @@ Følgende billede viser eksempler på indstillinger for hændelsesbeskeder.
 
 Hvis du vil sende mailbeskeder, skal du køre jobbet **Behandling af email-besked om detailordre**.
 
-Hvis du vil konfigurere jobbet **Behandling af email-besked om detailordre** i Commerce-hovedkontoret, hvis du ikke allerede har gjort det, skal du følge disse trin.
+Hvis du vil konfigurere jobbet **Behandling af email-besked om detailordre** i Commerce Headquarters, hvis du ikke allerede har gjort det, skal du følge disse trin.
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Mail og beskeder \> Send mailbesked**.
 1. Vælg **Gentagelse** i dialogboksen **Behandling af e-mail-besked om detailordre**.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867921"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -47,7 +47,7 @@ Der kan oprettes produktdimensionsværdier for størrelse, farve og typografi p�
 
 Produktets dimensionsværdier for konfigurationsdimensionen oprettes typisk ved hjælp af enten Variantstyring eller Dimensionsbaseret konfiguration. 
 
-Produktversioner oprettes normalt for bestemte versioner, efterhånden som produktet udvikler sig i løbet af sin livscyklus. Produktversioner beskrives i detaljer senere i dette emne.
+Produktversioner oprettes normalt for bestemte versioner, efterhånden som produktet udvikler sig i løbet af sin livscyklus. Produktversioner beskrives i detaljer senere i denne artikel.
 
 Produktdimensioner kan også oprettes og vedligeholdes på siden **Produktdimensioner**, der kan åbnes fra følgende steder:
 

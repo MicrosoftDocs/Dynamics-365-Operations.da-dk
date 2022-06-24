@@ -1,6 +1,6 @@
 ---
 title: Kundeordrer i POS
-description: Dette emne indeholder oplysninger om kundeordrer i POS. Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
+description: Denne artikel indeholder oplysninger om kundeordrer i POS. Kundeordrer kaldes også specialordrer. Denne artikel indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850376"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kan oprette og styre kundeordrer i appen POS. Kundeordrer kan bruges til at registrere salg, hvor kunder ønsker at afhente produkter på en senere dato, afhente produkter fra en anden adresse eller få varer leveret til dem. 
+Denne artikel indeholder oplysninger om, hvordan du kan oprette og styre kundeordrer i appen POS. Kundeordrer kan bruges til at registrere salg, hvor kunder ønsker at afhente produkter på en senere dato, afhente produkter fra en anden adresse eller få varer leveret til dem. 
 
 Med et hav af tilgængelige kanaler i handelsverdenen giver mange detailhandlere mulighed for kundeordrer eller specialordrer for at opfylde forskellige produkt- og opfyldelseskrav. Her er nogle typiske scenarier:
 

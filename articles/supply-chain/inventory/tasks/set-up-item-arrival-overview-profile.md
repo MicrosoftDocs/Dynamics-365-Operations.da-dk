@@ -1,6 +1,6 @@
 ---
 title: Konfigurere en oversigtsprofil for varemodtagelse
-description: Dette emne fokuserer på oprettelse af en modtagelsesoversigtsprofil.
+description: Denne artikel fokuserer på oprettelse af en modtagelsesoversigtsprofil.
 author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -15,18 +15,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a98c84c0dcc86e58b74f53a9061c4a0518ecbf
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 8517710f5d0be1859f86449152712d950281769a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872001"
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Konfigurere en oversigtsprofil for varemodtagelse
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne fokuserer på oprettelse af en modtagelsesoversigtsprofil. Profilen for modtagelsesoversigt er en samling af regler, der anvendes, når siden Modtagelsesoversigt åbnes af en bruger. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne procedure vil typisk blive udført af en modtagende medarbejder.
+Denne artikel fokuserer på oprettelse af en modtagelsesoversigtsprofil. Profilen for modtagelsesoversigt er en samling af regler, der anvendes, når siden Modtagelsesoversigt åbnes af en bruger. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne procedure vil typisk blive udført af en modtagende medarbejder.
 
 1. I navigationsruden skal du gå til **Moduler > Lagerstyring > Opsætning > Distribution > Profiler for oversigt over modtagelse**.
 2. Vælg **Ny**. Da du næsten altid vil arbejde på samme lagersted og aflaste fulde lastbillæs, bør du oprette en profil for modtagelsesoversigt for at forenkle processen med at registrere modtagne varer.  

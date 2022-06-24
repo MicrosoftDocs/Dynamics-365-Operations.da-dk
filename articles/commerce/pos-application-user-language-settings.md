@@ -1,6 +1,6 @@
 ---
 title: Indstillinger for POS-program og brugersprog
-description: Dette emne beskriver, hvordan du ændrer indstillinger for sprog i Modern POS (MPOS) og Cloud POS.
+description: Denne artikel beskriver, hvordan du ændrer indstillinger for sprog i Modern POS (MPOS) og Cloud POS.
 author: jblucher
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 099d16f63e03ecbc8bf911fe4385b35fac7c67f763c17379cdc6b6229abdea16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15490885b5ce366edbab669893f3c3e36585f308
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863341"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Indstillinger for POS-program og brugersprog
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du ændrer indstillinger for sprog i Modern POS (MPOS) og Cloud POS.
+Denne artikel beskriver, hvordan du ændrer indstillinger for sprog i Modern POS (MPOS) og Cloud POS.
 
 ## <a name="overview"></a>Oversigt
 Modern POS (MPOS) og Cloud POS understøtter miljøer, hvor indstillinger for sprog og oversættelser kan variere mellem butikken og brugerindstillingerne. Butikken kunne for eksempel være placeret i et område, hvor engelsk er mest almindelige for deres kunder, men nogle arbejdere foretrækker at bruge programmet med franske oversættelser.

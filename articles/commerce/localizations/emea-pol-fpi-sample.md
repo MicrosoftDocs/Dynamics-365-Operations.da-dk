@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integration af bonprinter i Polen
-description: Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876943"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Eksempel på integration af bonprinter i Polen
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
 
 Funktionaliteten af Dynamics 365 Commerce for Polen omfatter en eksempelintegration af POS med en bonprinter. Eksemplet udvider [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og understøtter POSNET THERMAL HD 2.02-protokol for bonprintere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet giver mulighed for at kommunikere med en bonprinter, der er tilsluttet via en COM-port med en indbygget softwaredriver. Den er implementeret og testet ved hjælp af en software-emulator, som Posnet har leveret til bonprinteren Posnet Thermal HD FV EJ. Eksemplet findes i form af kildekode og er en del af Retail SDK (Software Development Kit).
 

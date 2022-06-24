@@ -1,6 +1,6 @@
 ---
 title: Produktparathed
-description: I følgende emne forklares det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
+description: Denne artikel forklarer det, hvordan du kan bruge parathedskontroller til at sikre, at de nødvendige masterdata er fuldført for et produkt, før det bruges i transaktioner.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a8e76d5fc786b6f4cac7cd0430399ca3ad13a7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856216"
 ---
 # <a name="product-readiness"></a>Produktparathed
 
@@ -61,7 +61,7 @@ Hvis der oprettes en ny teknisk *version* for et produkt, kontrollerer systemet,
 - Den tekniske version angives til inaktiv, så produktet forhindres i at blive brugt.
 
 > [!NOTE]
-> Du kan også angive politikker for parathedskontroller for standardprodukter (ikke-tekniske). Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne.
+> Du kan også angive politikker for parathedskontroller for standardprodukter (ikke-tekniske). Du kan finde flere oplysninger i afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i denne artikel.
 
 ## <a name="view-readiness-checks"></a>Se parathedskontrol
 
@@ -151,7 +151,7 @@ For hver række, du tilføjer, skal du angive følgende felter.
 | Firma | Hvis du angiver feltet **Udfør i** til *Enkelt firma*, skal du vælge firmaet. |
 | Ejertype | Vælg, om parathedskontroller, som rækken genererer, skal tildeles til en person eller et team. |
 | Ejer | Vælg den person eller det team, som parathedskontrollerer den genererede række, skal tildeles. |
-| Spørgeskema | Vælg det spørgeskema, der skal bruges til kontrollisten. Kontrollisten er en lokal kontrolliste i det firma, hvor parathedskontrollen udføres. Systemet skal kunne evaluere, om kontrollisten er besvaret korrekt. Derfor skal kontrollisten konfigureres, så der udføres en evaluering ud fra korrekte svar. Yderligere oplysninger om, hvordan du opretter spørgeskemaer, finder du i [Bruge spørgeskemaer](/dynamicsax-2012/appuser-itpro/using-questionnaires) og relaterede emner. |
+| Spørgeskema | Vælg det spørgeskema, der skal bruges til kontrollisten. Kontrollisten er en lokal kontrolliste i det firma, hvor parathedskontrollen udføres. Systemet skal kunne evaluere, om kontrollisten er besvaret korrekt. Derfor skal kontrollisten konfigureres, så der udføres en evaluering ud fra korrekte svar. Yderligere oplysninger om, hvordan du opretter spørgeskemaer, finder du i [Bruge spørgeskemaer](/dynamicsax-2012/appuser-itpro/using-questionnaires) og relaterede artikler. |
 | Automatisk godkendelse | Poster til parathedskontrol omfatter et **Godkendt**-afkrydsningsfelt, der angiver godkendelsesstatus. Markér afkrydsningsfeltet **Automatisk godkendelse** for kontroller, der skal godkendes, umiddelbart efter at den tildelte bruger har afsluttet dem. Fjern markeringen i dette afkrydsningsfelt for at kræve udtrykkelig godkendelse som et ekstra trin. |
 | Obligatorisk | Markér dette afkrydsningsfelt for de kontroller, der skal udføres af den tildelte bruger. Obligatoriske kontroller kan ikke springes over. |
 
@@ -159,7 +159,7 @@ For hver række, du tilføjer, skal du angive følgende felter.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Tildele parathedspolitikker til standardprodukter og tekniske produkter
 
-Når du opretter et nyt produkt baseret på en teknisk kategori, opretter du både et *frigivet produkt* og et relateret *delt produkt*. Den måde, som parathedspolitikkerne løses på for et frigivet produkt, afhænger af, om funktionen *Kontrol af produktparathed* er slået til for systemet (se afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i dette emne for at få oplysninger om denne funktion, og hvordan du kan slå den til eller fra).
+Når du opretter et nyt produkt baseret på en teknisk kategori, opretter du både et *frigivet produkt* og et relateret *delt produkt*. Den måde, som parathedspolitikkerne løses på for et frigivet produkt, afhænger af, om funktionen *Kontrol af produktparathed* er slået til for systemet (se afsnittet [Parathedskontrol af standardprodukter](#standard-products) senere i denne artikel for at få oplysninger om denne funktion, og hvordan du kan slå den til eller fra).
 
 - Når funktionen *Parathedskontroller af produkt* er *deaktiveret* på systemet, angives parathedspolitikken, og den vises kun for poster i den [tekniske kategori](engineering-versions-product-category.md). For at vide, hvilken politik der gælder for et frigivet produkt, markerer systemet feltet **Parathedspolitik for produkt** for den relaterede tekniske kategori. Du kan ændre parathedspolitikken for et eksisterende produkt ved at redigere den relaterede tekniske kategori (ikke det delte produkt).
 - Når funktionen *Parathedskontroller af produkt* er *aktiveret*, føjes feltet **Politik for produktparathed** til siden **Produkt** (hvor delte produkter er konfigureret) og til siden **Frigivet produkt** (hvor værdien er skrivebeskyttet og hentes fra det relaterede delte produkt). Systemet finder parathedspolitikken for et frigivet produkt ved at kontrollere det relaterede delte produkt. Når du bruger en teknisk kategori til at oprette et nyt teknisk produkt, opretter systemet både et delt produkt og et frigivet produkt og kopierer alle indstillinger i **Politik for produktparathed** for den tekniske kategori til det nye delte produkt. Du kan derefter ændre parathedspolitikken for et eksisterende produkt ved at redigere det relaterede delte produkt (ikke den frigivne tekniske kategori).
@@ -188,14 +188,14 @@ Denne funktion kræver, at både *Styring af tekniske ændringer* og *Kontroller
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Oprette parathedspolitikker for standardprodukter
 
-Du opretter parathedspolitikker for standardprodukter på samme måde som for tekniske produkter. Se oplysningerne tidligere i dette emne.
+Du opretter parathedspolitikker for standardprodukter på samme måde som for tekniske produkter. Se oplysningerne tidligere i denne artikel.
 
 ### <a name="assign-readiness-policies-to-standard-products"></a>Tildele parathedspolitikker til standardprodukter
 
-Hvis du vil tildele en parathedspolitik til et standardprodukt, skal du åbne det relaterede delte produkt og angive feltet **Politik for produktparathed** til navnet på den politik, der skal gælde. Du kan finde flere oplysninger i afsnittet [Tildele parathedspolitikker til standardprodukter og tekniske produkter](#assign-policy) tidligere i dette emne.
+Hvis du vil tildele en parathedspolitik til et standardprodukt, skal du åbne det relaterede delte produkt og angive feltet **Politik for produktparathed** til navnet på den politik, der skal gælde. Du kan finde flere oplysninger i afsnittet [Tildele parathedspolitikker til standardprodukter og tekniske produkter](#assign-policy) tidligere i denne artikel.
 
 ### <a name="view-and-process-readiness-checks-on-standard-products"></a>Få vist og behandle parathedskontroller af standardprodukter
 
-Når denne funktion er aktiveret, kan du få vist og behandle parathedskontroller for standardprodukter på samme måde som for tekniske produkter. Se oplysningerne tidligere i dette emne.
+Når denne funktion er aktiveret, kan du få vist og behandle parathedskontroller for standardprodukter på samme måde som for tekniske produkter. Se oplysningerne tidligere i denne artikel.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

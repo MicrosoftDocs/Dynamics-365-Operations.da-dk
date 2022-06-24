@@ -1,6 +1,6 @@
 ---
 title: Oversigt over opfyldelse af serviceaftaler
-description: Dette afsnit indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler.
+description: Denne artikel indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler.
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c0331477a815c7404faa9bde43275415c3994fd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 920ac245c94d87ac692b173012e88dc8c1352f8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677192"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852093"
 ---
 # <a name="fulfill-service-agreements-overview"></a>Oversigt over opfyldelse af serviceaftaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette afsnit indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler. I emnet vises også de formularer, der er knyttet til de enkelte forretningsproceskomponenter, og en beskrivelse af de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
+Denne artikel indeholder en oversigt over de opgaver, der er forbundet med serviceaftaler. Denne artikel viser også de formularer, der er knyttet til de enkelte forretningsproceskomponenter, og en beskrivelse af de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
 
 ## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a>Forms til forretningsproceskomponenten for opfyldelse af servicekontrakter
 

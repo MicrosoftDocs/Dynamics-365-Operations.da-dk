@@ -1,6 +1,6 @@
 ---
 title: Oprette en indkøbsordre med en leveranceplan
-description: Dette emne viser, hvordan du opretter en leveranceplan til en indkøbsordre.
+description: Denne artikel viser, hvordan du opretter en leveranceplan til en indkøbsordre.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875240"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Oprette en indkøbsordre med en leveranceplan
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du opretter en leveranceplan til en indkøbsordre. En leveranceplan bruges, når der anmodes om et antal i en ordre eller en kladde, som skal leveres i flere leverancer. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Denne procedure vil normalt ske via en indkøbsagent.
+Denne artikel viser, hvordan du opretter en leveranceplan til en indkøbsordre. En leveranceplan bruges, når der anmodes om et antal i en ordre eller en kladde, som skal leveres i flere leverancer. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Denne procedure vil normalt ske via en indkøbsagent.
 
 ## <a name="create-a-delivery-schedule"></a>Oprette en leveranceplan
 1. Gå i navigationsruden til **Moduler > Indkøb og forsyning > Indkøbsordrer > Alle indkøbsordrer**.

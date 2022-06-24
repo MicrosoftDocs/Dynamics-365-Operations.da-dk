@@ -1,6 +1,6 @@
 ---
 title: Behandle varer undervejs
-description: I dette emne beskrives, hvordan du kan arbejde med ordrer på varer undervejs. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, kan varer faktureres, før de er modtaget på lagerstedet til forbrug.
+description: Denne artikel beskriver, hvordan du kan arbejde med ordrer på varer undervejs. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, kan varer faktureres, før de er modtaget på lagerstedet til forbrug.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854378"
 ---
 # <a name="goods-in-transit-processing"></a>Behandle varer undervejs
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan arbejde med ordrer på varer undervejs. Denne ordretype bruges kun i modulet **Landingsomkostninger**. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, skal du ikke vente på, at varer er modtaget på lagerstedet, før du kan fakturere dem. Varerne faktureres i stedet, når de forlader leverandørens lagersted eller oprindelseshavn, og de økonomiske omkostninger registreres, når fragten starter. Denne funktionalitet giver dig mulighed for at tage ejerskab over lageret, da varer ofte bliver organisationens ejendom, når de forlader forsendelseshavnen.
+Denne artikel beskriver, hvordan du kan arbejde med ordrer på varer undervejs. Denne ordretype bruges kun i modulet **Landingsomkostninger**. Når en ordre eller fragt er konfigureret til at bruge varer undervejs, skal du ikke vente på, at varer er modtaget på lagerstedet, før du kan fakturere dem. Varerne faktureres i stedet, når de forlader leverandørens lagersted eller oprindelseshavn, og de økonomiske omkostninger registreres, når fragten starter. Denne funktionalitet giver dig mulighed for at tage ejerskab over lageret, da varer ofte bliver organisationens ejendom, når de forlader forsendelseshavnen.
 
 Når der bruges varer undervejs, modtages de økonomisk opdaterede varer på et midlertidigt lagersted, der kaldes et lagersted for varer undervejs. Varerne bliver derefter på dette lagersted, indtil de kan modtages på det endelige destinationslagersted (det lagersted, der er defineret på indkøbslinjen). De kan ikke fjernes manuelt.
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurere konsignation
-description: Dette emne forklarer, hvordan du bruger indgående processer for konsignationslager.
+title: Konfigurer konsignation
+description: Denne artikel forklarer, hvordan du bruger indgående processer for konsignationslager.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872030"
 ---
-# <a name="set-up-consignment"></a>Konfigurere konsignation
+# <a name="set-up-consignment"></a>Konfigurer konsignation
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du bruger indgående processer for konsignationslager.
+Denne artikel forklarer, hvordan du bruger indgående processer for konsignationslager.
 
-Konsignationslager er lager, der ejes af en leverandør, men lagret på dit sted. Når du er klar til at forbruge eller bruge af lageret, overtager du ejerskabet af lageret. Dette emne indeholder oplysninger om, hvordan du får fysisk leverandørejet lager uden at oprette finanstransaktioner, hvordan du starter en produktionsproces, hvor leverandørejet lager kan reserveres fysisk. Og hvordan du ændrer ejerskab af råvarer for at kunne behandle forbrug som en del af behandlingen af produktionsordrer. Der er også nogle oplysninger om, hvordan leverandørerne kan overvåge forbruget af deres lager ved hjælp af grænsefladen for leverandørsamarbejde.
+Konsignationslager er lager, der ejes af en leverandør, men lagret på dit sted. Når du er klar til at forbruge eller bruge af lageret, overtager du ejerskabet af lageret. Denne artikel indeholder oplysninger om, hvordan du får fysisk leverandørejet lager uden at oprette finanstransaktioner, hvordan du starter en produktionsproces, hvor leverandørejet lager kan reserveres fysisk. Og hvordan du ændrer ejerskab af råvarer for at kunne behandle forbrug som en del af behandlingen af produktionsordrer. Der er også nogle oplysninger om, hvordan leverandørerne kan overvåge forbruget af deres lager ved hjælp af grænsefladen for leverandørsamarbejde.
 
 ## <a name="overview-of-the-consignment-process"></a>Oversigt over konsignationsprocessen
 

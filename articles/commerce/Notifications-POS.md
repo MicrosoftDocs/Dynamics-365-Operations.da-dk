@@ -1,6 +1,6 @@
 ---
 title: Vis ordrebeskeder på POS
-description: I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen.
+description: Denne artikel beskriver, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853949"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vis ordrebeskeder på POS
 
@@ -65,10 +65,10 @@ For både ordreopfyldning og tilbagekaldsmeddelelser kan nye ordrer, der afhente
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivere dynamisk indhold på POS-knapper
 
-POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvilke opgaver der kræver deres omgående opmærksomhed. For at vise dette nummer på en POS-knap skal du fuldføre opsætningen af beskeder, der er beskrevet tidligere i dette emne, (det vil sige, du skal aktivere beskeder for en operation, oprette et beskedinterval og opdatere POS-rettighedsgruppen for arbejderen). Derudover skal du åbne knapgitterdesigneren, se knappens egenskaber og markere afkrydsningsfeltet **Aktiver dynamisk indhold**. I feltet **Justering af indhold** kan du vælge, om antallet skal vises i øverste højre hjørne af knappen (**Øverst til højre**) eller i midten (**Centreret**).
+POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvilke opgaver der kræver deres omgående opmærksomhed. For at vise dette nummer på en POS-knap skal du fuldføre opsætningen af beskeder, der er beskrevet tidligere i denne artikel, (det vil sige, du skal aktivere beskeder for en operation, oprette et beskedinterval og opdatere POS-rettighedsgruppen for arbejderen). Derudover skal du åbne knapgitterdesigneren, se knappens egenskaber og markere afkrydsningsfeltet **Aktiver dynamisk indhold**. I feltet **Justering af indhold** kan du vælge, om antallet skal vises i øverste højre hjørne af knappen (**Øverst til højre**) eller i midten (**Centreret**).
 
 > [!NOTE]
-> Dynamisk indhold kan kun aktiveres for operationer, hvis afkrydsningsfeltet **Aktiver beskeder** er markeret for dem på siden **POS-handlinger** som beskrevet tidligere i dette emne.
+> Dynamisk indhold kan kun aktiveres for operationer, hvis afkrydsningsfeltet **Aktiver beskeder** er markeret for dem på siden **POS-handlinger** som beskrevet tidligere i denne artikel.
 
 I følgende illustration vises indstillingerne for dynamisk indhold i knapgitterdesigneren.
 

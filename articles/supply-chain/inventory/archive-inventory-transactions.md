@@ -1,6 +1,6 @@
 ---
 title: Arkivere lagertransaktioner
-description: Dette emne beskriver, hvordan du arkiverer lagertransaktionsdata for at forbedre systemets ydeevne.
+description: Denne artikel beskriver, hvordan du arkiverer lagertransaktionsdata for at forbedre systemets ydeevne.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874095"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivere lagertransaktioner
 
 [!include [banner](../../includes/banner.md)]
 
-Med tiden fortsætter tabellen med lagertransaktioner (`InventTrans`) med at stige og forbruge mere databaseplads. Derfor bliver de forespørgsler, der foretages mod tabellen, efterhånden langsommere. Dette emne beskriver, hvordan du kan bruge funktionen *Arkivér lagertransaktioner* til at arkivere data om lagertransaktioner for at forbedre systemets ydeevne.
+Med tiden fortsætter tabellen med lagertransaktioner (`InventTrans`) med at stige og forbruge mere databaseplads. Derfor bliver de forespørgsler, der foretages mod tabellen, efterhånden langsommere. Denne artikel beskriver, hvordan du kan bruge funktionen *Arkivér lagertransaktioner* til at arkivere data om lagertransaktioner for at forbedre systemets ydeevne.
 
 > [!NOTE]
 > Det er kun økonomisk opdaterede lagertransaktioner, der kan arkiveres i en valgt lukket finansperiode. Hvis du vil arkivere, skal økonomisk opdaterede udgående lagertransaktioner have afgangsstatussen *Solgt*, og indgående lagertransaktioner skal have tilgangsstatussen *Købt*.
@@ -35,7 +35,7 @@ Hvis en kombination af `itemId` og `inventDimId` kun indeholder én tilgangs- el
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Arkivér lagertransaktioner*. Bemærk, at denne funktion ikke kan deaktiveres, når den først er aktiveret.
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i denne artikel, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Arkivér lagertransaktioner*. Bemærk, at denne funktion ikke kan deaktiveres, når den først er aktiveret.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Ting, der skal overvejes, før du arkiverer lagertransaktioner
 

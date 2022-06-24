@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et menupunkt for en mobilenhed for at oprette en pluklinjeoversigt
-description: I dette emne forklares det, hvordan du definerer, hvornår der skal vises en liste over alle arbejdslinjer for lagermedarbejdere, der behandler lagerarbejde på en mobilenhed. Denne funktion kan være nyttig for lagermedarbejdere, der ofte kræver en oversigt over pluklinjerne i en arbejdsordre, så de kan optimere plukrækkefølgen.
+description: Denne artikel forklarer, hvordan du definerer, hvornår der skal vises en liste over alle arbejdslinjer for lagermedarbejdere, der behandler lagerarbejde på en mobilenhed. Denne funktion kan være nyttig for lagermedarbejdere, der ofte kræver en oversigt over pluklinjerne i en arbejdsordre, så de kan optimere plukrækkefølgen.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885661"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Konfigurere et menupunkt for en mobilenhed for at oprette en pluklinjeoversigt
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan konfigurere indstillinger, der er relateret til pluklinjeoversigten for menupunkter for mobilenheder, der bruges til at behandle plukarbejde. Med pluklinjeoversigten kan lagermedarbejderne få vist og vælge fra en liste over alle de arbejdslinjer, der er relateret til deres aktuelle opgave. Denne funktion kan hjælpe arbejdere med at optimere deres plukrækkefølge. Funktionen indeholder indstillinger, der erstatter standardknappen **Spring over**, så arbejderne kan gå gennem linjerne én ad gangen i en fast rækkefølge. (Det er dog stadig muligt at bruge denne knap).
+Denne artikel forklarer, hvordan du kan konfigurere indstillinger, der er relateret til pluklinjeoversigten for menupunkter for mobilenheder, der bruges til at behandle plukarbejde. Med pluklinjeoversigten kan lagermedarbejderne få vist og vælge fra en liste over alle de arbejdslinjer, der er relateret til deres aktuelle opgave. Denne funktion kan hjælpe arbejdere med at optimere deres plukrækkefølge. Funktionen indeholder indstillinger, der erstatter standardknappen **Spring over**, så arbejderne kan gå gennem linjerne én ad gangen i en fast rækkefølge. (Det er dog stadig muligt at bruge denne knap).
 
 Administratorer kan konfigurere de enkelte menupunkter individuelt for at styre, hvordan, hvornår og hvor mobilappen Lokationsstyring viser pluklinjeoversigten.
 

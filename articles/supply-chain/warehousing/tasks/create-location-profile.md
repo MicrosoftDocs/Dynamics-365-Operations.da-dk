@@ -1,6 +1,6 @@
 ---
-title: Oprette en lokalitetsprofil.
-description: Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management.
+title: Oprette en lokationsprofil
+description: Denne artikel forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 98537f3ad45d66e348ecd489c60d95ef875e5c07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875037"
 ---
-# <a name="create-a-location-profile"></a>Oprette en lokalitetsprofil.
+# <a name="create-a-location-profile"></a>Oprette en lokationsprofil
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management. Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
+Denne artikel forklarer, hvordan du opretter en lokalitetsprofil i Dynamics 365 Supply Chain Management. Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
 
 
 1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsprofiler**.

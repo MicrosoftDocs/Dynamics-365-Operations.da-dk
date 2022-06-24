@@ -1,6 +1,6 @@
 ---
 title: Overføre billeder
-description: I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: Denne artikel beskriver, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: e0f5cdd0381932cffc64f1c7e83eecd4662d8c9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892828"
 ---
 # <a name="upload-images"></a>Overføre billeder
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+Denne artikel beskriver, hvordan du overfører billeder i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 I Commerce-webstedsgeneratorens mediebibliotek kan du uploade billeder enkeltvist eller masseupload ved hjælp af mapper. Du bør altid uploade billedet med den højeste opløsning og kvalitet, da funktionen til tilpasning af billedstørrelsen optimerer automatisk billedet for forskellige billeder og pausepunkterne.
 

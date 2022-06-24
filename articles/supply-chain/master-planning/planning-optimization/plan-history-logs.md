@@ -1,8 +1,8 @@
 ---
 title: Få vist planhistorik og planlægningslogs
-description: Dette emne beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering.
+description: Denne artikel beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863934"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Få vist planhistorik og planlægningslogs
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 
 Hvis du vil have vist historikken for en plan, skal du åbne planen ved at gå til **Varedisponering** \> **Opsætning** \> **Planer** \> **Behovsplaner** og vælge **Historik**. Historikken viser alle job for den valgte plan. Listen omfatter afsluttede og aktive job.
 
-Historikken for job til varedisponering i Planlægningsoptimering beholder kun 60 poster pr. behovsplan. Når du kører en ny beregning af varedisponering, slettes den tidligste historikpost for planen.
+Systemet beholder maksimalt 60 historikposter pr. behovsplan og sletter poster, der er ældre end 30 dage. Hver gang du kører en ny beregning fra behovsplanlægningen, tilføjer systemet en ny historikpost og rydder derefter op i de ældste poster efter behov.
 
 Ud over at se starttidspunkt og status for job, kan du få vist loggen for et bestemt job. Loggen indeholder yderligere oplysninger og advarsler. Ikke alle job har en log. Hvis du vil have vist loggen for et job, skla du vælge **Log**. Logposter gemmes kun i 30 dage efter den dato, hvor jobbet er afsluttet, og derefter slettes de automatisk.
 

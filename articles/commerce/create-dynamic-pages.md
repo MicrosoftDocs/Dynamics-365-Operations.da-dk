@@ -1,6 +1,6 @@
 ---
 title: Oprette dynamiske e-handelssider baseret på URL-parametre
-description: Dette emne beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
+description: Denne artikel beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811025"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884657"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Oprette dynamiske e-handelssider baseret på URL-parametre
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emne beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
+Denne artikel beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
 
 En e-handelsside kan konfigureres til at have forskelligt indhold baseret på et segment i URL-stien. Derfor kaldes siden for en dynamisk side. Segmentet bruges som parameter til at hente sideindholdet. Hvis der f.eks. oprettes en side i webstedsgeneratoren med navnet **blog\_fremviser**, bliver den tilknyttet URL-adressen `https://fabrikam.com/blog`. Denne side kan derefter bruges til at vise forskelligt indhold baseret på det sidste segment i URL-stien. Det sidste segment i URL-adressen er f.eks. `https://fabrikam.com/blog/article-1` **artikel-1**.
 

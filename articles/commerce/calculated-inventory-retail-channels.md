@@ -1,6 +1,6 @@
 ---
 title: Beregne lagertilgængelighed for detailkanaler
-description: I dette emne beskrives det, hvordan et firma kan bruge Microsoft Dynamics 365 Commerce til at få vist den forkalkulerede disponible tilgængelighed for produkter i online- og butikskanalerne.
+description: Denne artikel beskriver det, hvordan et firma kan bruge Microsoft Dynamics 365 Commerce til at få vist den forkalkulerede disponible tilgængelighed for produkter i online- og butikskanalerne.
 author: hhainesms
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,28 +14,28 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 1b1e0ea264dd74f6583d3b7fd3ecce551c73fbae
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 952acf4cc26815822436bb7a5117775a5f12200c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884105"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgængelighed for detailkanaler
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan et firma kan bruge Microsoft Dynamics 365 Commerce til at få vist den forkalkulerede disponible tilgængelighed for produkter i online- og butikskanalerne.
+Denne artikel beskriver det, hvordan et firma kan bruge Microsoft Dynamics 365 Commerce til at få vist den forkalkulerede disponible tilgængelighed for produkter i online- og butikskanalerne.
 
 ## <a name="accuracy-of-inventory-availability"></a>Nøjagtighed for lagertilgængelighed
 
-I Commerce anvendes flere servere og databaser for at sikre skalerbarhed og ydeevne. Derfor er det vigtigt, at du forstår, at værdierne for den tilgængelige lagerbeholdning, som leveres gennem POS-programmet (Point Of Sale), API'er (Application Programming Interface) for e-Commerce-lagertilgængelighed og de disponible lagersider i Commerce-hovedkvarteret muligvis ikke er 100 procent nøjagtige i realtid. Hvis transaktioner, der er oprettet for produkter i online- eller butikskanalen, endnu ikke er synkroniseret med hovedkontoret, vil siderne for disponibel lagerbeholdning i hovedkvarteret muligvis ikke vise en præcis realtidsværdi for lagerbeholdningen for disse produkter. Hvis du derimod har konfigureret din virksomhed, så brugere i hovedkvarteret eller andre integrerede programmer kan sælge, modtage, returnere eller på anden måde justere lagerbeholdningen ud fra en butik eller et onlinelagersted, vil POS eller onlinekanalen muligvis ikke have alle de oplysninger, der kræves for at vise nøjagtige værdier i realtid for varerne.
+I Commerce anvendes flere servere og databaser for at sikre skalerbarhed og ydeevne. Derfor er det vigtigt, at du forstår, at værdierne for den tilgængelige lagerbeholdning, som leveres gennem POS-programmet (Point Of Sale), API'er (Application Programming Interface) for e-Commerce-lagertilgængelighed og de disponible lagersider i Commerce headquarters muligvis ikke er 100 procent nøjagtige i realtid. Hvis transaktioner, der er oprettet for produkter i online- eller butikskanalen, endnu ikke er synkroniseret med hovedkontoret, vil siderne for disponibel lagerbeholdning i hovedkvarteret muligvis ikke vise en præcis realtidsværdi for lagerbeholdningen for disse produkter. Hvis du derimod har konfigureret din virksomhed, så brugere i hovedkvarteret eller andre integrerede programmer kan sælge, modtage, returnere eller på anden måde justere lagerbeholdningen ud fra en butik eller et onlinelagersted, vil POS eller onlinekanalen muligvis ikke have alle de oplysninger, der kræves for at vise nøjagtige værdier i realtid for varerne.
 
 Det er vigtigt at forstå, at alle data om disponibel tilgængelighed, som er angivet i løbet af arbejdsdagen, anses for at være estimerede værdier. Hvis du derfor forsøger at sammenligne oplysningerne om den disponible lagerbeholdning, som programmet leverer, med den faktiske fysiske lagerbeholdning på hylderne, eller hvis du forsøger at sammenligne de disponible værdier, som vises i POS, med data om den disponible lagerbeholdning, som du finder for det samme lagersted i hovedkvarteret, kan værdierne være forskellige. Denne forskel i løbet af arbejdsdagen er forventelig og bør ikke betragtes som et problem. Hvis du vil revidere data og sikre, at de værdier, som leveres i POS, API'er og hovedkvarteret, svarer til de faktiske fysiske enheder, som du finder i din butik eller på lagerstedets hylder, er den bedste tidspunkt, når kanalhandlingerne er stoppet for dagen, og alle transaktioner er blevet korrekt synkroniseret mellem hovedkvarteret og kanalerne.
 
 ## <a name="channel-side-inventory-calculation"></a>Lagerberegning på kanalsiden
 
-Lagerberegning på kanalsiden er en mekanisme, der bruger de senest kendte kanallagerdata i Commerce-hovedkvarteret som udgangspunkt, og derefter indregner yderligere lagerændringer på kanalsiden, som ikke er inkluderet i dette grundlag med henblik på at beregne en estimeret disponibel lagerbeholdning næsten i realtid. 
+Lagerberegning på kanalsiden er en mekanisme, der bruger de senest kendte kanallagerdata i Commerce headquarters som udgangspunkt, og derefter indregner yderligere lagerændringer på kanalsiden, som ikke er inkluderet i dette grundlag med henblik på at beregne en estimeret disponibel lagerbeholdning næsten i realtid. 
 
 Følgende lagerændringer tages i øjeblikket i betragtning i lagerberegningslogikken på kanalsiden:
 
@@ -48,12 +48,12 @@ Hvis du vil bruge lagerberegning på kanalsiden, skal du aktivere funktionen **T
 
 Hvis dit handelsmiljø er i release **10.0.8 til 10.0.11**, skal du følge disse trin.
 
-1. I Commerce-hovedkvarteret gå til **Retail og Commerce** \> **Delte Commerce-parametre**.
+1. I Commerce headquarters gå til **Retail og Commerce** \> **Delte Commerce-parametre**.
 1. På fanen **Lager** i feltet **Produkttilgængelighedsjobbet** vælg **Brug optimeret proces for Produkttilgængelighedsjobbet**.
 
 Hvis dit handelsmiljø er i release **10.0.12 eller nyere**, skal du følge disse trin.
 
-1. I Commerce-hovedkvarter skal du gå til **Arbejdsområder \> Funktionsstyring** og aktivere funktionen **Beregning af optimeret produkttilgængelighed**.
+1. I Commerce headquarters skal du gå til **Arbejdsområder \> Funktionsstyring** og aktivere funktionen **Beregning af optimeret produkttilgængelighed**.
 1. Hvis dine online- og butikskanaler bruger samme opfyldningslagersted, skal du også aktivere den **udvidede funktion til lagerberegning på kanalsiden i e-handel**. På den måde vil beregningslogikken på kanalsiden overveje de ikke-bogførte transaktioner, der er oprettet i butikskanalen. (Disse transaktioner kan være kontant- og carry-transaktioner, kundeordrer og returneringer.)
 1. Kør jobbet **1070** (**Kanalkonfiguration**).
 
@@ -64,7 +64,7 @@ Hvis du vil bruge lagerberegning på kanalsiden, er forudsætningen at der sende
 - Hvis lagerbeholdningen for et produkt er solgt fra en butik via cash-and-carry eller et asynkront kundeordresalg i POS-programmet, vil hovedkvarteret ikke omgående få oplysninger om den relaterede lagerafgangstransaktion for salget. Hovedkvarteret vil først have oplysninger om den lagerbeholdning, der er solgt for disse typer butikssalg, efter P-jobbet har overført den relaterede transaktion fra butikkens kanaldatabase til hovedkvarteret, og de relaterede salgsordrer er oprettet via bogføring af opgørelsen eller sivende feedbaseret bogføring. Processen for oprettelsen af ordrer i hovedkvarteret opretter de relaterede lagertransaktioner. 
 - For e-handelskanalers ordrer indeholder hovedkvarteret kun oplysninger om lagertransaktionerne, når transaktionerne er sendt til hovedkvarteret via P-jobbet, og processen til synkronisering af ordren er fuldført.
 
-Hvis du vil tage et øjebliksbillede af lagerbeholdningen i Commerce-hovedkvarteret, skal du benytte denne fremgangsmåde.
+Hvis du vil tage et øjebliksbillede af lagerbeholdningen i Commerce headquarters, skal du benytte denne fremgangsmåde.
 
 1. Gå til **Retail og Commerce \> Retail og Commerce IT \> Produkter og lager \> Produkttilgængelighed**.
 1. Vælg **OK** for at køre jobbet **Produkttilgængelighed**. Du kan også planlægge dette job, så det køres i et batch.

@@ -1,6 +1,6 @@
 ---
 title: Udskyde nøjagtig pris- og rabatberegning for at få bedre ydeevne
-description: Dette emne beskriver funktionen til udskudt beregning af priser, som er tilgængelig i Microsoft Dynamics 365 Commerce POS og callcenter.
+description: Denne artikel beskriver funktionen til udskudt beregning af priser, som er tilgængelig i Microsoft Dynamics 365 Commerce POS og callcenter.
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 8c4264c3a4c71e6aab0e1ef8d7d8cfffad065a46
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6926c288a91dbe66b6ffc2e6c06f866d3ebd7652
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488357"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845891"
 ---
 # <a name="delay-exact-price-and-discount-calculation-for-improved-performance"></a>Udskyde nøjagtig pris- og rabatberegning for at få bedre ydeevne
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver funktionen til udskudt beregning af priser, som er tilgængelig i Microsoft Dynamics 365 Commerce POS og callcenter.
+Denne artikel beskriver funktionen til udskudt beregning af priser, som er tilgængelig i Microsoft Dynamics 365 Commerce POS og callcenter.
 
 Dynamics 365 Commerce understøtter oprettelse af samkøbsrabatter, der anvendes, når flere salgslinjer i en salgsordre eller et salgstilbud kombineres. Disse rabatter omfatter mix og match, grænseværdi og mængderabatter.
 
@@ -34,7 +34,7 @@ Det har længe været muligt at udskyde den nøjagtige pris- og rabatberegning i
 
 Følg disse trin for at aktivere udskudt pris- og rabatberegning for POS.
 
-1. I Commerce-hovedkontoret skal du gå til den funktionalitetsprofil, der er tilknyttet den fysiske butik.
+1. I Commerce Headquarters skal du gå til den funktionalitetsprofil, der er tilknyttet den fysiske butik.
 1. Aktivér konfigurationen **Beregn rabatter for flere varer manuelt** i oversigtspanelet **Beløb**.
 1. Åbn skærmlayoutdesigneren for de kasseapparater, hvor den udskudte beregning skal aktiveres.
 1. Tilføj en knap for handlingen **Beregn total** til det ønskede knapgitter.
@@ -46,7 +46,7 @@ Når der nu føjes varer til en transaktion, beregnes samkøbsrabatter ikke, med
 
 Følg disse trin for at aktivere udskudt pris- og rabatberegning for callcenter.
 
-1. Gå til **Arbejdsområder \> Funktionsstyring** i Commerce-hovedkontoret.
+1. Gå til **Arbejdsområder \> Funktionsstyring** i Commerce Headquarters.
 1. Aktivér funktionen **Undgå utilsigtet prisberegning for handelsordre**. Denne funktion er en forudsætning for funktionen til udskudt beregning af priser og rabatter.
 
     > [!NOTE]

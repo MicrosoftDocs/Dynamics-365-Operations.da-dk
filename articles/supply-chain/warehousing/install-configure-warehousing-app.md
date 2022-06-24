@@ -1,6 +1,6 @@
 ---
 title: Installere og tilslutte lagerstedsapp
-description: Dette emne forklarer, hvordan du installerer lagerstedsappen på de mobile enheder og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
+description: Denne artikel forklarer, hvordan du installerer lagerstedsappen på de mobile enheder og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
@@ -16,26 +16,26 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8ed770e45aa7f9909b98a92b493dd2931c6a3981
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885748"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og tilslutte lagerstedsapp
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer den gamle lagerstedsapp (som nu er frarådet). Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Warehouse Management, skal du se [Installere og forbinde mobilappen Warehouse Management](install-configure-warehouse-management-app.md).
+> Denne artikel beskriver, hvordan du konfigurerer den gamle lagerstedsapp (som nu er frarådet). Hvis du leder efter oplysninger om, hvordan du konfigurerer den nye mobilapp Warehouse Management, skal du se [Installere og forbinde mobilappen Warehouse Management](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer lagerstedsappen for skyinstallationer. Hvis du søger efter oplysninger om, hvordan du konfigurerer lagerstedsappen for installationer i det lokale miljø, skal du se [Lagersted for installationer i det lokale miljø](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Denne artikel beskriver, hvordan du konfigurerer lagerstedsappen for skyinstallationer. Hvis du søger efter oplysninger om, hvordan du konfigurerer lagerstedsappen for installationer i det lokale miljø, skal du se [Lagersted for installationer i det lokale miljø](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Lagerstedsappen er tilgængelig i Google Play Butik og Microsoft Store. Den udbydes som en enkeltstående komponent. Derfor skal du overføre den på hver enkelt enhed og derefter konfigurere den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
 
-Dette emne forklarer, hvordan du installerer lagerstedsappen på de mobile enheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
+Denne artikel forklarer, hvordan du installerer lagerstedsappen på de mobile enheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -76,11 +76,11 @@ For at aktivere lagerstedsappen til at kommunikere med en bestemt Supply Chain M
 
     ![Registrer en applikationsguide.](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
 
-1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i dette emne som *klient-id'et*.
+1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i denne artikel som *klient-id'et*.
 
     ![Program-id (klient).](media/app-connect-azure-app-id.png "Program-id (klient)")
 
-1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
+1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i denne artikel.)
 
     - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører lagerstedsappen på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
     - **Ny klienthemmelighed** – opret en nøgle ved at angive en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**, og vælg derefter **Tilføj**. Tag en kopi af nøglen, og opbevar den sikkert.
@@ -90,7 +90,7 @@ For at aktivere lagerstedsappen til at kommunikere med en bestemt Supply Chain M
 Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azure AD, i følgende ressourcer:
 
 - Du kan finde instruktioner, der viser, hvordan du bruger Windows PowerShell til at konfigurere webtjenesteapplikationer i Azure AD, i [Sådan bruger du Azure PowerShell til at oprette en tjenesteprincipal med et certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Få flere oplysninger om, hvordan du opretter en webtjenesteapplikation manuelt i Azure AD, i følgende emner:
+- Få flere oplysninger om, hvordan du opretter en webtjenesteapplikation manuelt i Azure AD, i følgende artikler:
 
     - [Hurtig start: Registrer et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app)
     - [Sådan bruges portalen til at oprette en Azure AD-applikation og tjenesteportal, der kan få adgang til ressourcer](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -117,7 +117,7 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkende ved hjælp af et certifikat eller en klienthemmelighed
 
-Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed med Supply Chain Management. Du kan godkende enten ved at bruge en klienthemmelighed eller et certifikat. Hvis du vil importere forbindelsesindstillinger, anbefales det, at du bruger et certifikat i stedet for en klienthemmelighed. Da klienthemmeligheden altid skal lagres på en sikker måde, kan du ikke importere den fra en fil med forbindelsesindstillinger eller en QR-kode, som beskrevet senere i dette emne.
+Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed med Supply Chain Management. Du kan godkende enten ved at bruge en klienthemmelighed eller et certifikat. Hvis du vil importere forbindelsesindstillinger, anbefales det, at du bruger et certifikat i stedet for en klienthemmelighed. Da klienthemmeligheden altid skal lagres på en sikker måde, kan du ikke importere den fra en fil med forbindelsesindstillinger eller en QR-kode, som beskrevet senere i denne artikel.
 
 Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor lagerstedsappen er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
 

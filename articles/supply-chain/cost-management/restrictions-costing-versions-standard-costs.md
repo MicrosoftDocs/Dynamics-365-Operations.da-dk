@@ -1,6 +1,6 @@
 ---
 title: Begrænsninger for en efterkalkulationsversioner for standardkostpriser
-description: I dette emne beskrives de begrænsninger, der gælder for en efterkalkulationsversion for standardkostpriser.
+description: Denne artikel beskriver de begrænsninger, der gælder for en efterkalkulationsversion for standardkostpriser.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11bf14b2926fd4ff053697bef8b7dad781948a2c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8c5c00ae8952e2c80d97d039271a6f5c63e9a72f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867979"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Begrænsninger for en efterkalkulationsversioner for standardkostpriser
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de begrænsninger, der gælder for en efterkalkulationsversion for standardkostpriser. 
+Denne artikel beskriver de begrænsninger, der gælder for en efterkalkulationsversion for standardkostpriser. 
 
 Følgende begrænsninger hjælper med til at sikre, at standardefterkalkulationsprincipperne overholdes:
 
@@ -37,9 +37,9 @@ Følgende begrænsninger hjælper med til at sikre, at standardefterkalkulations
 
 -  Styklisteberegninger skal udføres med udfoldning på enkeltniveau.
 
-Oplysninger om varens kostpris for standardkostpriser kan kopieres til andre efterkalkulationsversioner, som indeholder standardkostpriser eller planlagte omkostninger. Oplysninger om varekostpriser for planlagte omkostninger kan dog ikke kopieres til en efterkalkulationsversion, der indeholder standardkostpriser, da den begrænsning, der vises tidligere i dette emne, ikke ville kunne anvendes på planlagte omkostninger.
+Oplysninger om varens kostpris for standardkostpriser kan kopieres til andre efterkalkulationsversioner, som indeholder standardkostpriser eller planlagte omkostninger. Oplysninger om varekostpriser for planlagte omkostninger kan dog ikke kopieres til en efterkalkulationsversion, der indeholder standardkostpriser, da den begrænsning, der vises tidligere i denne artikel, ikke ville kunne anvendes på planlagte omkostninger.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Oversigt over efterkalkulationsversioner](costing-versions.md)
 

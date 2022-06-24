@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850635"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversigt over status for produktlivscyklus
 
@@ -74,7 +74,7 @@ Statusser for produktlivscyklus understøttes af dataenheder, og livscyklusstatu
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Finde forældede produkter og produktvarianter
 
-Du kan køre en simuleringsanalyse for at finde forældede frigivne produkter eller produktvarianter og derefter opdatere deres status for produktlivscyklus. For at finde forældede produkter skal du se [Finde forældede produktvarianter og tildele en status for produktlivscyklus](tasks/obsolete-product-variants.md). Dette emne viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter. Guiden viser også, hvordan du kan få vist resultaterne af simuleringen og vurdere, hvor mange produkter og produktvarianter der skal knyttes til en ny status for produktlivscyklus, når du kører opdateringen uden simulering.  
+Du kan køre en simuleringsanalyse for at finde forældede frigivne produkter eller produktvarianter og derefter opdatere deres status for produktlivscyklus. For at finde forældede produkter skal du se [Finde forældede produktvarianter og tildele en status for produktlivscyklus](tasks/obsolete-product-variants.md). Denne artikel viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter. Guiden viser også, hvordan du kan få vist resultaterne af simuleringen og vurdere, hvor mange produkter og produktvarianter der skal knyttes til en ny status for produktlivscyklus, når du kører opdateringen uden simulering.  
 
 Hvis du kører analysen i en simuleringstilstand, vises de produkter og produktvarianter, der er identificeret som forældet, i en bestemt formular, hvor de nemt kan evalueres. Analysen søges efter posteringer og bestemte masterdata for at identificere produkter, der ikke er behov for i en variabel periode, og som ikke har nogen masterdata, der kan medføre behov. Nye frigivne produkter inden for en variabel periode kan udelukkes fra analysen. Når analysesimuleringen returnerer det forventede resultat, kan brugeren køre analysen og indstille en ny status for produktlivscyklus til alle produkter, der er angivet som forældede af analysen.  
 
@@ -97,7 +97,7 @@ Brug følgende kriterier til at vælge og opdatere frigivne produkter og produkt
 - Der er ingen aktive eller fremtidige salgs- eller købsaftalelinjer for produktet eller produktvarianten.
 - Produktet eller produktvarianten bruges ikke i en stykliste, der er knyttet til en ikke-udløbet godkendt styklisteversion for et produkt eller variant, der er aktiv for planlægning.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 - [Oprette en ny status for produktlivscyklus](tasks/new-product-lifecycle-state.md)
 - [Oprette en standardstatus for produktlivscyklus](tasks/default-product-lifecycle-state.md)

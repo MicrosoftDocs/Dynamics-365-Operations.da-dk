@@ -1,6 +1,6 @@
 ---
 title: Varer med dobbelt anvendelse
-description: Dette emne forklarer, hvordan du kan holde styr på produkter, der er identificeret som varer med dobbelt anvendelse, gemme certifikatnumre for hvert af de relevante produkter og destinationslande og udskrive gyldige certifikatnumre på relevante fakturaer, følgesedler og/eller salgsordrer.
+description: Denne artikel forklarer, hvordan du kan holde styr på produkter, der er identificeret som varer med dobbelt anvendelse, gemme certifikatnumre for hvert af de relevante produkter og destinationslande og udskrive gyldige certifikatnumre på relevante fakturaer, følgesedler og/eller salgsordrer.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878897"
 ---
 # <a name="dual-use-goods"></a>Varer med dobbelt anvendelse
 
@@ -42,7 +42,7 @@ Overvej på følgende scenarie:
 
 6. Ordren omfatter produkt X-100, produktet leveres til Frankrig, og der findes et fransk certifikat for produktet. Certifikatet er dog udløbet. Derfor får du vist følgende advarselsmeddelelse: "Certifikater for dobbelt anvendelser for en eller flere varer med dobbelt anvendelse i denne salgsordre er ikke gyldige. Vil du fortsætte med bekræftelsen? "
 
-I dette emne forklares, hvordan du kan konfigurere alle de indstillinger, der skal bruges til opsætning af varer med dobbelt anvendelse, og dette scenarie understøttes ikke.
+Denne artikel forklarer, hvordan du kan konfigurere alle de indstillinger, der skal bruges til opsætning af varer med dobbelt anvendelse, og dette scenarie understøttes ikke.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definere krav for dobbelt anvendelse for hvert af de relevante lande
 

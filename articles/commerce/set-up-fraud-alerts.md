@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og arbejde med advarsler om svindel i callcentre
-description: Dette emne forklarer, hvordan du opretter regler for at advare kundeservicemedarbejdere om potentielt falske oplysninger ved behandling af ordrer. Du kan definere bestemte koder, der bruges til automatisk eller manuelt at sætte mistænkelige ordrer på hold.
+description: Denne artikel forklarer, hvordan du opretter regler for at advare kundeservicemedarbejdere om potentielt falske oplysninger ved behandling af ordrer. Du kan definere bestemte koder, der bruges til automatisk eller manuelt at sætte mistænkelige ordrer på hold.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885342"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurere og arbejde med advarsler om svindel i callcentre
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du definerer kriterier og regler for, hvordan potentielt falske salgsordrer sættes på hold, så de kan gennemgås yderligere. Funktionen til kontrol for svindel bruges til at bestemme gyldigheden af oplysningerne i en salgsordre. Hvis oplysningerne i salgsordren viser sig at være tvivlsomme baseret på en organisations svindelkriterier og -regler, kan ordren sættes på hold for fornyet gennemgang. I så fald kan ordren ikke frigives til lageret til yderligere behandling, før spærringen er blevet ryddet.
+Denne artikel beskriver, hvordan du definerer kriterier og regler for, hvordan potentielt falske salgsordrer sættes på hold, så de kan gennemgås yderligere. Funktionen til kontrol for svindel bruges til at bestemme gyldigheden af oplysningerne i en salgsordre. Hvis oplysningerne i salgsordren viser sig at være tvivlsomme baseret på en organisations svindelkriterier og -regler, kan ordren sættes på hold for fornyet gennemgang. I så fald kan ordren ikke frigives til lageret til yderligere behandling, før spærringen er blevet ryddet.
 
 > [!NOTE]
 > Denne funktion kan kun bruges i forbindelse med behandling af salgsordrer i Commerce-callcenterkanalen.

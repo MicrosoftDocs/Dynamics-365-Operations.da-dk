@@ -1,6 +1,6 @@
 ---
 title: Arbejdssteder og aktiver
-description: I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875649"
 ---
 # <a name="functional-locations-and-assets"></a>Arbejdssteder og aktiver
 
@@ -28,11 +28,11 @@ ms.locfileid: "6750142"
 
  
 
-I dette emne beskrives arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
+Denne artikel beskriver arbejdssteder og aktiver i Styring af aktiver. Styring af aktiver er et avanceret modul til administration af aktiver og vedligeholdsopgaver i Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Overblik
 
-Aktivadministration kan problemfrit integreres med flere moduler i andre Finance and Operations-apps. I følgende illustration vises grænsefladerne med andre moduler.
+Styring af aktiver kan problemfrit integreres med flere moduler i andre Finance and Operations-apps. I følgende illustration vises grænsefladerne med andre moduler.
 
 ![Diagram, der viser, hvordan aktivstyring integreres med andre moduler.](media/01-overview-image.png)
 

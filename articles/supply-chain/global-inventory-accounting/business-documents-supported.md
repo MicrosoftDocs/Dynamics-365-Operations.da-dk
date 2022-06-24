@@ -1,6 +1,6 @@
 ---
 title: Forretningsdokumenter, der understøttes af Global Inventory Accounting
-description: Dette emne indeholder en oversigt over de forretningsdokumenter, der understøttes af Global Inventory Accounting. Det indeholder også et detaljeret eksempel på indkøbsordredokumenter.
+description: Denne artikel indeholder en oversigt over de forretningsdokumenter, der understøttes af Global Inventory Accounting. Det indeholder også et detaljeret eksempel på indkøbsordredokumenter.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875417"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Forretningsdokumenter, der understøttes af Global Inventory Accounting
 
@@ -32,7 +32,7 @@ Der findes to typer forretningsdokumenter:
 - **Dokumenter, der har en kladde** – Disse dokumenter omfatter dokumenter af typen produktkvittering, indkøbsfaktura, følgeseddel og salgsfaktura.
 - **Dokumenter, der ikke har en kladde** – Disse dokumenter omfatter optællings-, bevægelses- og lagerreguleringsdokumenter.
 
-Senere i dette emne bruges indkøbsordrer som eksempel til at illustrere processen.
+Senere i denne artikel bruges indkøbsordrer som eksempel til at illustrere processen.
 
 Følgende tabel indeholder de dokumenter, som den aktuelle version understøtter.
 

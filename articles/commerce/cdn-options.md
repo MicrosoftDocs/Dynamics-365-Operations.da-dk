@@ -1,6 +1,6 @@
 ---
 title: Indstillinger for implementering af netværk for indholdslevering
-description: I dette emne gennemgås de forskellige indstillinger for CDN-implementering (Content Delivery Network), der kan bruges i Microsoft Dynamics 365 Commerce-miljøer. Disse indstillinger inkluderer oprindelige forekomster af Azure Front Door fra Commerce og forekomster, der ejes af kunden, på Azure Front Door.
+description: Denne artikel gennemgår de forskellige indstillinger for CDN-implementering (Content Delivery Network), der kan bruges i Microsoft Dynamics 365 Commerce-miljøer. Disse indstillinger inkluderer oprindelige forekomster af Azure Front Door fra Commerce og forekomster, der ejes af kunden, på Azure Front Door.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884411"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Indstillinger for implementering af netværk for indholdslevering
 
 [!include [banner](includes/banner.md)]
 
-I dette emne gennemgås de forskellige indstillinger for CDN-implementering (Content Delivery Network), der kan bruges i Microsoft Dynamics 365 Commerce-miljøer. Disse indstillinger inkluderer oprindelige forekomster af Azure Front Door fra Commerce og forekomster, der ejes af kunden, på Azure Front Door.
+Denne artikel gennemgår de forskellige indstillinger for CDN-implementering (Content Delivery Network), der kan bruges i Microsoft Dynamics 365 Commerce-miljøer. Disse indstillinger inkluderer oprindelige forekomster af Azure Front Door fra Commerce og forekomster, der ejes af kunden, på Azure Front Door.
 
 Handelskunder har adskillige valgmuligheder, når de overvejer, hvilken CDN-tjeneste der skal bruges sammen med deres handelsmiljø. Handel udgives med grundlæggende understøttelse af Azure Front Door, der dækker grundlæggende vært og brugerdefinerede domænekrav. For firmaer, der ønsker mere kontrol og mere specifikke sikkerhedsevner, som f.eks. en WAF (Web Application Firewall), kan den bedste løsning være enten at bruge en kundeejet forekomst af Azure Front Door eller en ekstern CDN-tjeneste.
 

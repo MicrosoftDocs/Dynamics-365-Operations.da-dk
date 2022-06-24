@@ -1,6 +1,6 @@
 ---
 title: Åbne URL-adresse i POS
-description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853956"
 ---
 # <a name="open-url-in-pos"></a>Åbne URL-adresse i POS
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere en knap i Dynamics 365 Commerce POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
+Denne artikel beskriver, hvordan du kan konfigurere en knap i Dynamics 365 Commerce POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. 
 
 Denne funktion gør det muligt ved hjælp af knapmatrixdesigneren at konfigurere en knap i POS til at åbne en URL-adresse. Dette understøttes i øjeblikket i følgende konfigurationer:
 

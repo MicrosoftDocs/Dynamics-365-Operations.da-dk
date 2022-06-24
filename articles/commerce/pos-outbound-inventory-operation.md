@@ -1,6 +1,6 @@
 ---
 title: Udgående lagerhandling i POS
-description: I dette emne beskrives egenskaberne for den udgående lagerhandling af POS (Point Of Sale).
+description: Denne artikel beskriver egenskaberne for den udgående lagerhandling af POS (Point Of Sale).
 author: hhaines
 ms.date: 07/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850217"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Udgående lagerhandling i POS
 
@@ -187,7 +187,7 @@ Når dokumentet har status **Anmodet**, er det klar til opfyldelse af behandling
 
 Fuldt afsendte flytteordrer flyttes til fanen **Fuldført** på dokumentlisten **Udgående handling**. Dér er de stadig synlige for brugere i det udgående lager eller lagersted i skrivebeskyttet tilstand i syv dage.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Indgående lagerhandling i POS](pos-inbound-inventory-operation.md)
 

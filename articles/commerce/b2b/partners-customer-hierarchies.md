@@ -1,6 +1,6 @@
 ---
 title: Administrere B2B-forretningspartnere ved hjælp af kundehierarkier
-description: Dette emne beskriver, hvordan du bruger kundehierarkier til at administrere forretningspartnere for Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
+description: Denne artikel beskriver, hvordan du bruger kundehierarkier til at administrere forretningspartnere for Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864975"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>Administrere B2B-forretningspartnere ved hjælp af kundehierarkier
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du bruger kundehierarkier til at administrere forretningspartnere for Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
+Denne artikel beskriver, hvordan du bruger kundehierarkier til at administrere forretningspartnere for Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
 
-I Commerce-hovedkontoret bruges en *kundehierarkienhed* til at repræsentere de forretningspartnerorganisationer, der skal bruge dit B2B-e-handelswebsted. Før du kan begynde at bruge kundehierarkier til at administrere forretningspartnere, skal du aktivere funktionerne for B2B-e-handel i Commerce-hovedkontoret og derefter definere en nummerserie til kundehierarkiet.
+I Commerce Headquarters bruges en *kundehierarkienhed* til at repræsentere de forretningspartnerorganisationer, der skal bruge dit B2B-e-handelswebsted. Før du kan begynde at bruge kundehierarkier til at administrere forretningspartnere, skal du aktivere funktionerne for B2B-e-handel i Commerce Headquarters og derefter definere en nummerserie til kundehierarkiet.
 
-## <a name="enable-the-b2b-e-commerce-feature-in-commerce-headquarters"></a>Aktivere funktionen til B2B-e-handel i Commerce-hovedkontoret
+## <a name="enable-the-b2b-e-commerce-feature-in-commerce-headquarters"></a>Aktivere funktionen til B2B-e-handel i Commerce Headquarters
 
-Hvis du vil bruge egenskaberne for B2B-e-handel, skal du først aktivere funktionen **Aktivér brugen af eCommerce-egenskaber** i Commerce-hovedkontoret.
+Hvis du vil bruge egenskaberne for B2B-e-handel, skal du først aktivere funktionen **Aktivér brugen af eCommerce-egenskaber** i Commerce Headquarters.
 
 1. Gå til **Arbejdsområder \> Funktionsstyring**.
 1. Brug filterfeltet til at søge efter **Modul: Retail og Commerce** under fanen **Alle** .
@@ -41,7 +41,7 @@ Hvis du vil bruge egenskaberne for B2B-e-handel, skal du først aktivere funktio
 
 Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. Du skal definere en nummerserie, der skal bruges til at generere id'et for kundehierarkiet. Du kan finde flere oplysninger om nummerserier i [Oversigt over nummerserier](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-Følg disse trin for at definere en nummerserie for kundehierarkiet i Commerce-hovedkontoret.
+Følg disse trin for at definere en nummerserie for kundehierarkiet i Commerce Headquarters.
 
 1. Gå til **Retail og Commerce \> Headquarters-opsætning \> Nummerserier \> Nummerserier**.
 1. Opret en ny nummerserie, eller vælg en eksisterende nummerserie for at genbruge den.
@@ -52,7 +52,7 @@ Følg disse trin for at definere en nummerserie for kundehierarkiet i Commerce-h
 
 ## <a name="how-the-approval-process-works"></a>Sådan fungerer godkendelsesprocessen
 
-Når en forretningspartner anmoder om at deltage i et B2B-e-handelswebsted, gemmer systemet anmodningen som et *kundeemne*. En person i Commerce-hovedkontoret som f.eks. en detaildriftschef kan godkende eller afvise partneranmodninger. Du kan finde flere oplysninger om, hvordan du administrerer forretningspartneranmodninger og godkendelse af kundeemner, i [Administrere forretningspartnerbrugere på B2B-e-handelswebsteder](manage-b2b-users.md).
+Når en forretningspartner anmoder om at deltage i et B2B-e-handelswebsted, gemmer systemet anmodningen som et *kundeemne*. En person i Commerce Headquarters som f.eks. en detaildriftschef kan godkende eller afvise partneranmodninger. Du kan finde flere oplysninger om, hvordan du administrerer forretningspartneranmodninger og godkendelse af kundeemner, i [Administrere forretningspartnerbrugere på B2B-e-handelswebsteder](manage-b2b-users.md).
 
 Når et kundeemne er godkendt, opretter systemet to nye kundeposter:
 
@@ -82,7 +82,7 @@ Når du skal afgøre, om en kunde er knyttet til et kundehierarki, skal du åbne
 
 I de fleste tilfælde skal egenskabsværdierne for alle kundeposter i et hierarki være ens. Da alle forretningspartnerbrugere f.eks. skal få ens priser for produkter, skal deres prisgruppe og tilknyttede konfigurationer stemmer overens. Systemet gennemtvinger dog ikke denne konsistens. De relevante brugere i handelshovedkvarteret er derfor ansvarlige for at sikre, at egenskabsværdierne og -konfigurationerne er ens for alle debitorer i et bestemt hierarki.
 
-Brugere i Commerce-hovedkontoret kan inspicere egenskabsværdierne for alle kundeposter i hierarkiet ved siden af hinanden. Som eksemplet i følgende illustration viser, kan du bruge indstillingen **Generelt** på rullelisten i oversigtspanelet **Hierarki** og derefter vælge et afsnit i kundeposten for at se de relaterede egenskaber. Brugerne kan redigere egenskabsværdierne direkte i denne visning. Hvis du vil kopiere alle værdierne fra en administratorkundepost til alle brugere, skal du vælge **Tilsidesæt** i oversigtspanelet **Hierarki**.
+Brugere i Commerce Headquarters kan inspicere egenskabsværdierne for alle kundeposter i hierarkiet ved siden af hinanden. Som eksemplet i følgende illustration viser, kan du bruge indstillingen **Generelt** på rullelisten i oversigtspanelet **Hierarki** og derefter vælge et afsnit i kundeposten for at se de relaterede egenskaber. Brugerne kan redigere egenskabsværdierne direkte i denne visning. Hvis du vil kopiere alle værdierne fra en administratorkundepost til alle brugere, skal du vælge **Tilsidesæt** i oversigtspanelet **Hierarki**.
 
 ![Eksempel på en kundehierarkipost med knappen Tilsidesæt og indstillingen på rullelisten.](../media/HierarchyDetails2.png)
 

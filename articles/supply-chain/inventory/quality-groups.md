@@ -1,6 +1,6 @@
 ---
 title: Varekvalitetsgrupper
-description: Dette emne beskriver, hvordan du kan bruge og oprette varekvalitetsgrupper til logisk gruppering af produkter, så de kan tildeles til kvalitetstilknytninger med henblik på automatisk generering af kvalitetsordrer.
+description: Denne artikel beskriver, hvordan du kan bruge og oprette varekvalitetsgrupper til logisk gruppering af produkter, så de kan tildeles til kvalitetstilknytninger med henblik på automatisk generering af kvalitetsordrer.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f7a4932c561c052bec1eb0094a390e315b9b1bb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bf1ce49fa58fd1a8a5aa07636e0b2bd7e2fc10e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875359"
 ---
 # <a name="item-quality-groups"></a>Varekvalitetsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-En kvalitetsgruppe repræsenterer almindelige testkrav til varer. Dette emne beskriver, hvordan du kan bruge og oprette varekvalitetsgrupper til logisk gruppering af produkter, så de kan tildeles til kvalitetstilknytninger med henblik på automatisk generering af kvalitetsordrer.
+En kvalitetsgruppe repræsenterer almindelige testkrav til varer. Denne artikel beskriver, hvordan du kan bruge og oprette varekvalitetsgrupper til logisk gruppering af produkter, så de kan tildeles til kvalitetstilknytninger med henblik på automatisk generering af kvalitetsordrer.
 
 Hvis du vil konfigurere, redigere og have vist de varer, der er tildelt en kvalitetsgruppe, eller de kvalitetsgrupper, der er tildelt en vare, skal du gå til **Lagerstyring \> Opsætning \> Kvalitetsgrupper**. Når du har defineret testkravene på siden **Testgrupper**, kan du definere reglerne for automatisk generering af kvalitetsordrer. For at forenkle processen skal du undlade at definere regler for de enkelte varer. I stedet kan du definere regler for en kvalitetsgruppe på siden **Kvalitetstilknytninger**.
 

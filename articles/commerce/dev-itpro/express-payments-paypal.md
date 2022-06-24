@@ -1,6 +1,6 @@
 ---
 title: Konfigurere ekspresbetalinger til PayPal
-description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurerer ekspresbetalinger til PayPal for at gøre det nemmere at foretage betaling ved kassen i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurerer ekspresbetalinger til PayPal for at gøre det nemmere at foretage betaling ved kassen i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743566"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905276"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Konfigurere ekspresbetalinger til PayPal
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan konfigurerer ekspresbetalinger til PayPal for at gøre det nemmere at foretage betaling ved kassen i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurerer ekspresbetalinger til PayPal for at gøre det nemmere at foretage betaling ved kassen i Microsoft Dynamics 365 Commerce.
 
 ## <a name="key-terms"></a>Vigtige termer
 
@@ -28,7 +28,7 @@ Dette emne indeholder en beskrivelse af, hvordan du kan konfigurerer ekspresbeta
 |---|---|
 | PayPal-tegnebog | Den kundeoplevelse og integration, der understøttes af PayPal-connectoren. Det kaldes også knappen PayPal. |
 | Tegnebog | En betalingstype, der ikke omfatter de traditionelle betalingskarakteristika som f.eks. BIN-området (Bank Identification Number) og udløbsdatoen, som bruges til at skelne mellem kredit- og debetkorttyper. |
-| Ekspresbetaling | Et Commerce-modul, der understøtter en hurtigere betaling ved kassen, når der bruges understøttede betalingsmåder. Dette emne dækker brugen af betalingsekspresmodulet sammen med PayPal. |
+| Ekspresbetaling | Et Commerce-modul, der understøtter en hurtigere betaling ved kassen, når der bruges understøttede betalingsmåder. Denne artikel dækker brugen af betalingsekspresmodulet sammen med PayPal. |
 
 Dynamics 365 Commerce tilbyder indbygget integration for PayPal-tegnebog. Når Dynamics 365 Payment Connector til PayPal er konfigureret, vises knappen PayPal som en betalingsmetode, der kan vælges, når onlineordren betales ved kassen. Når brugerne vælger PayPal, bliver de bedt om at fuldføre betalingen direkte via PayPal og returneres derefter til onlinebutikken for at fuldføre ordren. Ved kassen med PayPal-indkøbsvognen kan kunderne bruge deres betalingskontooplysninger til at udfylde formen til betaling ved kassen, så de hurtigere kan fuldføre processen til betaling ved kassen.
 

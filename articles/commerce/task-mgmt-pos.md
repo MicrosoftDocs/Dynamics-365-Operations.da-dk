@@ -1,6 +1,6 @@
 ---
 title: Opgavestyring i POS
-description: I dette emne beskrives opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e61456b7ae79a2c82c96b5b669e95ad1818f71d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878425"
 ---
 # <a name="task-management-in-pos"></a>Opgavestyring i POS
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver opgavestyring i POS-programmet i Microsoft Dynamics 365 Commerce.
 
 POS-programmet i Dynamics 365 Commerce indeholder funktioner til styring af opgaver, som giver butikschefer og arbejdere mulighed for at administrere opgaver og opdatere opgavestatus. Butiksmedarbejdere kan få adgang til opgaver ved at vælge feltet **Opgaver** på POS-startsiden eller ved at vælge opgavebeskeder. Som standard føres arbejdere til fanen **Mine opgaver**, hvor de kan få vist de opgaver, der er tildelt til dem. De kan imidlertid nemt skifte til fanerne **Forfaldne opgaver**, **Åbne opgaver** og **Opgavelister**.
 

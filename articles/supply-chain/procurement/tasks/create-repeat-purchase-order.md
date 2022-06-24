@@ -1,6 +1,6 @@
 ---
 title: Oprette en gentagen indkøbsordre
-description: Dette emne viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre.
+description: Denne artikel viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre.
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865086"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Oprette en gentagen indkøbsordre
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre. Du kan oprette tilbagevendende ordrer på to måder. Du kan bruge de tilgængelige handlinger på dokumentniveau fra handlingsruden, eller du kan bruge linjedetaljehandlinger. Handlingerne på dokumentniveau er primært beregnet til at oprette en ny købsordre ved at tilføje linjer og headeroplysninger fra en anden ordre, mens linjedetaljehandlingen især er beregnet til at føje linjer til en eksisterende ordre. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Denne opgave foretages typisk af en indkøber.
+Denne artikel viser, hvordan du opretter en gentagende indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre. Du kan oprette tilbagevendende ordrer på to måder. Du kan bruge de tilgængelige handlinger på dokumentniveau fra handlingsruden, eller du kan bruge linjedetaljehandlinger. Handlingerne på dokumentniveau er primært beregnet til at oprette en ny købsordre ved at tilføje linjer og headeroplysninger fra en anden ordre, mens linjedetaljehandlingen især er beregnet til at føje linjer til en eksisterende ordre. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Denne opgave foretages typisk af en indkøber.
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>Opret en ny gentagende indkøbsordre

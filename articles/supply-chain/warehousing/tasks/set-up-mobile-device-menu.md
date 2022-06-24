@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre
-description: I dette emne vises, hvordan du konfigurerer et menupunkt for en mobilenhed.
+description: Denne artikel viser, hvordan du konfigurerer et menupunkt for en mobilenhed.
 author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 09286e8e482780523b61006081205868be487755
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882280"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne vises, hvordan du konfigurerer et menupunkt for en mobilenhed. I dette eksempel bruges menupunktet til at udføre arbejde af typen Indkøbsordre. Det arbejde, der er gyldigt, bestemmes af den arbejdsklasse, der er knyttet til menupunktet. Du kan bruge denne guide i USMF-demodatafirmaet. Denne procedure udføres typisk af en lagerstedschef.
+Denne artikel viser, hvordan du konfigurerer et menupunkt for en mobilenhed. I dette eksempel bruges menupunktet til at udføre arbejde af typen Indkøbsordre. Det arbejde, der er gyldigt, bestemmes af den arbejdsklasse, der er knyttet til menupunktet. Du kan bruge denne guide i USMF-demodatafirmaet. Denne procedure udføres typisk af en lagerstedschef.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Oprette et menupunkt på en mobilenhed

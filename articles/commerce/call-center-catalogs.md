@@ -1,6 +1,6 @@
 ---
 title: Callcenter-kataloger
-description: I dette emne beskrives call center-specifikke funktioner for kataloger i Dynamics 365 Commerce.
+description: Denne artikel beskriver call center-specifikke funktioner for kataloger i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/15/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11af3c889e7e40e13f4aa8b3db97f544fbd20229
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884050"
 ---
 # <a name="call-center-catalogs"></a>Callcenter-kataloger
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives de callcenterspecifikke funktioner, der er knyttet til katalogfunktionerne i Dynamics 365 Commerce.
+Denne artikel beskriver de callcenterspecifikke funktioner, der er knyttet til katalogfunktionerne i Dynamics 365 Commerce.
 
 Katalogfunktionerne i Commerce kan bruges til flere formål. Oprindeligt blev katalogfunktionerne oprettet for at understøtte integration af e-handel med tredjepart. Under opsætning af kataloget kunne virksomheder oprette en gruppering af produkter og attributter, der kunne udgives eksternt med henblik på forbrug i en tredjeparts e-handelsløsning.
 

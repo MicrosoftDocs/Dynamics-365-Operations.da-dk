@@ -1,6 +1,6 @@
 ---
 title: Lagerstedsordrer til sky- og kantskalaenheder
-description: Dette emne indeholder oplysninger om lagerstedsordrefunktionaliteten, der bruges som en del af arbejdsbyrden for lagerstedsskalaenheden.
+description: Denne artikel indeholder oplysninger om lagerstedsordrefunktionaliteten, der bruges som en del af arbejdsbyrden for lagerstedsskalaenheden.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893520"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerstedsordrer til sky- og kantskalaenheder
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ikke alle forretningsfunktioner understøttes fuldt ud i den offentlige prøveversion, når der anvendes skalaenhed for arbejdsbyrder. Hvis du bruger skalaenheder, skal du sørge for kun at bruge de processer, som dette emne direkte beskriver som understøttede.
+> Ikke alle forretningsfunktioner understøttes fuldt ud i den offentlige prøveversion, når der anvendes skalaenhed for arbejdsbyrder. Hvis du bruger skalaenheder, skal du sørge for kun at bruge de processer, som denne artikel direkte beskriver som understøttede.
 
 ## <a name="what-are-warehouse-orders"></a>Hvad er lagerstedsordrer?
 

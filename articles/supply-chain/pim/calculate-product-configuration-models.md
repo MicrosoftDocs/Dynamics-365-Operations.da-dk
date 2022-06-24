@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
-description: I dette emne beskrives beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger.
+description: Denne artikel beskriver beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger.
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890938"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger.
+Denne artikel beskriver beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger.
 
 Beregninger kan bruges til aritmetiske eller logiske operationer. De supplerer udtryksbegrænsninger i produktkonfigurationsmodeller. Du kan definere beregninger på siden **Detaljer om begrænsningsbaseret model til produktkonfiguration** og derefter oprette udtryk til beregninger i udtrykseditoren. Yderligere oplysninger finder du i Opret beregninger.
 
@@ -79,7 +79,7 @@ Hvis du vil angive en attribut som skjult eller skrivebeskyttet, skal du følge 
 4.  På oversigtspanelet **Attributter** skal du vælge **Skjult** eller **Skrivebeskyttet**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Kan en beregning overskrive de værdier, jeg angiver?
-Nr. De værdier, du angiver, når du konfigurerer et produkt, er de værdier, der bruges. Den beregning, der foretages, når inputværdierne i en beregning er ændret, kan ikke overskrive de værdier, du angiver for en bestemt attribut.
+Nej De værdier, du angiver, når du konfigurerer et produkt, er de værdier, der bruges. Den beregning, der foretages, når inputværdierne i en beregning er ændret, kan ikke overskrive de værdier, du angiver for en bestemt attribut.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Hvad sker der, hvis jeg fjerner en inputværdi i en beregning?
 Hvis du fjerner en inputværdi i en beregning, fjernes også værdien af målattributten.

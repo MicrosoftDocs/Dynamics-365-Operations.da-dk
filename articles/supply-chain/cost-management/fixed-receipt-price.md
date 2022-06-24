@@ -1,6 +1,6 @@
 ---
 title: Fast tilgangspris
-description: Dette emne forklarer, hvordan du kan konfigurere og bruge faste tilgangspriser i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel forklarer, hvordan du kan konfigurere og bruge faste tilgangspriser i Microsoft Dynamics 365 Supply Chain Management.
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907574"
 ---
 # <a name="fixed-receipt-price"></a>Fast tilgangspris
 
 [!include [banner](../includes/banner.md)]
 
-**Fast tilgangspris** er en indstilling, som du kan vælge i en varemodelgruppe, når du bruger en anden lagermodel end *Standardomkostning* eller *Glidende vægtet gennemsnit*. I tidligere versioner af Microsoft Dynamics AX kaldtes denne indstilling **Standardomkostning**. Den blev omdøbt til **Fast tilgangspris**, da den nye lagermodel for standardomkostninger blev introduceret i Dynamics AX 2012. Dette emne forklarer, hvordan du kan konfigurere og bruge faste tilgangspriser i Dynamics 365 Supply Chain Management.
+**Fast tilgangspris** er en indstilling, som du kan vælge i en varemodelgruppe, når du bruger en anden lagermodel end *Standardomkostning* eller *Glidende vægtet gennemsnit*. I tidligere versioner af Microsoft Dynamics AX kaldtes denne indstilling **Standardomkostning**. Den blev omdøbt til **Fast tilgangspris**, da den nye lagermodel for standardomkostninger blev introduceret i Dynamics AX 2012. Denne artikel forklarer, hvordan du kan konfigurere og bruge faste tilgangspriser i Dynamics 365 Supply Chain Management.
 
 ## <a name="about-fixed-receipt-prices"></a>Om faste tilgangspriser
 

@@ -1,6 +1,6 @@
 ---
 title: Styklistekalkulationer
-description: Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Dette emne indeholder oplysninger om styklistekalkulationer.
+description: Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Denne artikel indeholder oplysninger om BOM-beregninger.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902796"
 ---
 # <a name="bom-calculations"></a>Styklistekalkulationer
 
 [!include [banner](../includes/banner.md)]
 
-Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Dette emne indeholder oplysninger om styklistekalkulationer.
+Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Denne artikel indeholder oplysninger om BOM-beregninger.
 
 Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklisteberegninger, og du starter dem fra siden **Beregninger**. Du skal bruge siden **Beregninger** til at udføre følgende opgaver:
 

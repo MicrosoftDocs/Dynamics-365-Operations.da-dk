@@ -1,6 +1,6 @@
 ---
 title: Betalingsmodul
-description: I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
+description: Denne artikel beskriver, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a30d56d7edf967a3afab7442338dd9f480ef7fd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869022"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives det, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
+Denne artikel beskriver, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 
 Et betalingsmodul er en særlig container, der er vært for alle moduler, som skal bruges til at oprette en ordre. Den indeholder en trinvis proces, som en kunde bruger til at angive alle de relevante oplysninger for at foretage et køb. Det henter leveringsadresse, forsendelsesmetode og faktureringsoplysninger. Den indeholder også en ordreoversigt og andre oplysninger vedrørende en kundeordre.
 

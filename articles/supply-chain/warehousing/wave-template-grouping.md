@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851240"
 ---
 # <a name="wave-template-grouping"></a>Bølgeskabelongruppering
 
@@ -41,7 +41,7 @@ Før du kan bruge funktionen *Gruppering af bølgeskabeloner*, skal den være ak
 Hvis du vil gøre gruppering af bølgeskabeloner tilgængelig, skal du følge disse trin til at konfigurere din [bølgeskabelon](tasks/configure-wave-processing.md).
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Bølger \> Bølgeskabeloner**.
-1. Vælg den bølgeskabelon, der skal konfigureres, i ruden til venstre. Hvis du forbedrer at arbejde via scenariet senere i dette emne ved hjælp af demodata, skal du vælge **62 Standard for forsendelse**.
+1. Vælg den bølgeskabelon, der skal konfigureres, i ruden til venstre. Hvis du forbedrer at arbejde via scenariet senere i denne artikel ved hjælp af demodata, skal du vælge **62 Standard for forsendelse**.
 1. Vælg **Rediger** for at sætte siden i redigeringstilstand.
 1. I oversigtspanelet **Generelt** kan du angive følgende værdier:
 
@@ -84,7 +84,7 @@ Du kan også bruge dette scenarie som vejledning til brug af funktionen, når du
 
 I dette scenarie vises, hvordan du kan bruge gruppering af bølgeskabeloner til automatisk at oprette flere bølger baseret på grupperingskriterier, der er defineret i en bølgeskabelon. I dette scenarie er bølgeskabelonen konfigureret i systemet, så der oprettes en bølge pr. fragttjeneste.
 
-Før du går i gang, skal du forberede din bølgeskabelon som beskrevet i afsnittet [Angiv en bølgeskabelon til at bruge gruppering af bølgeskabeloner](#set-up-template) tidligere i dette emne. Hvis du vil arbejde med demonstrationsdata i dette scenarie, skal du sørge for at bruge de demonstrationsdatasværdier, der er foreslået i den pågældende procedure. Denne indstilling vil gruppere dine bølger efter den fragtmand, der er angivet for hver salgsordre.
+Før du går i gang, skal du forberede din bølgeskabelon som beskrevet i afsnittet [Angiv en bølgeskabelon til at bruge gruppering af bølgeskabeloner](#set-up-template) tidligere i denne artikel. Hvis du vil arbejde med demonstrationsdata i dette scenarie, skal du sørge for at bruge de demonstrationsdatasværdier, der er foreslået i den pågældende procedure. Denne indstilling vil gruppere dine bølger efter den fragtmand, der er angivet for hver salgsordre.
 
 #### <a name="create-sales-order-1"></a>Opret salgsordre 1
 

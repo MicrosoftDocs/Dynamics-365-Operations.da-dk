@@ -1,6 +1,6 @@
 ---
 title: Lagerstedsallokering
-description: Dette emne indeholder oplysninger om lagerstedsallokering. Lagerstedsallokering gør det muligt at konsolidere efterspørgsel efter vare og måleenhed fra ordrer, der har statussen bestilt, reserveret eller frigivet. Den gør det lettere for lagerchefer at planlægge pluklokationer på en intelligent måde, før de frigiver ordrerne til lageret og opretter plukarbejde.
+description: Denne artikel indeholder oplysninger om lagerstedsallokering. Lagerstedsallokering gør det muligt at konsolidere efterspørgsel efter vare og måleenhed fra ordrer, der har statussen bestilt, reserveret eller frigivet. Den gør det lettere for lagerchefer at planlægge pluklokationer på en intelligent måde, før de frigiver ordrerne til lageret og opretter plukarbejde.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897249"
 ---
 # <a name="warehouse-slotting"></a>Lagerstedsallokering
 
@@ -156,7 +156,7 @@ For hver slagsordreskabelon, du opretter, skal du udføre disse trin for at tilf
 
     - **Måleenhedsniveau:** _EaBoxPl_
 
-        Dette felt definerer måleenheden for efterspørgsel, der er gyldig til linjen. (Få flere oplysninger i afsnittet i [Oprette måleenhedsniveauer for allokering](#unit-tiers) tidligere i dette emne.)
+        Dette felt definerer måleenheden for efterspørgsel, der er gyldig til linjen. (Få flere oplysninger i afsnittet i [Oprette måleenhedsniveauer for allokering](#unit-tiers) tidligere i denne artikel.)
 
     - **Tildel allokeringskriterier:** _Overvej antal_
 

@@ -1,6 +1,6 @@
 ---
 title: Installation af aktiver på arbejdssteder
-description: Dette emne forklarer, hvordan du installerer aktiver på arbejdssteder i Styring af aktiver
+description: Denne artikel forklarer, hvordan du installerer aktiver på arbejdssteder i Styring af aktiver
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894495"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installation af aktiver på arbejdssteder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775741"
 
  
 
-Når du har oprettet strukturerne for arbejdsstederne, er det næste trin at installere aktiverne på de relevante arbejdssteder. Dette emne forklarer, hvordan du installerer aktiver på de pågældende arbejdssteder i Styring af aktiver Du kan finde flere oplysninger om, hvordan du opretter aktiver i [Introduktion til aktiver](../objects/introduction-to-objects.md).
+Når du har oprettet strukturerne for arbejdsstederne, er det næste trin at installere aktiverne på de relevante arbejdssteder. Denne artikel forklarer, hvordan du installerer aktiver på de pågældende arbejdssteder i Styring af aktiver Du kan finde flere oplysninger om, hvordan du opretter aktiver i [Introduktion til aktiver](../objects/introduction-to-objects.md).
 
 Hvis du har oprettet en aktivstruktur, skal hele aktivets struktur være installeret på et arbejdssted. Derfor kan kun overordnede aktiver (aktiver på øverste niveau, der ikke har et overordnet aktiv) vælges på et arbejdssted. Alle tilknyttede underordnede aktiver (underaktiver) bliver også installeret på arbejdsstedet. Når du installerer aktiver på et arbejdssted, bliver de økonomiske dimensioner for arbejdsstedet muligvis automatisk overført til dem, afhængigt af opsætningen af typen af det valgte arbejdssted, som er valgt for arbejdsstedet. Du finder flere oplysninger om, hvordan du konfigurerer typer af arbejdssteder i [Typer af arbejdssteder](../setup-for-functional-locations/functional-location-types.md).
 

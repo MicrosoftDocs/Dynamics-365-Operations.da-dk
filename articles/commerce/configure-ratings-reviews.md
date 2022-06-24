@@ -1,6 +1,6 @@
 ---
-title: Konfigurere vurderinger og anmeldelser
-description: I dette emne beskrives, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
+title: Konfigurere bedømmelser og anmeldelser
+description: Denne artikel beskriver, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/17/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 56325eb0d6298f3b30316e104a4b3913ef860366
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862249"
 ---
-# <a name="configure-ratings-and-reviews"></a>Konfigurere vurderinger og anmeldelser
+# <a name="configure-ratings-and-reviews"></a>Konfigurere bedømmelser og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du konfigurerer dit e-handels-websted, så det kan vise kundevurderinger og -anmeldelser i Microsoft Dynamics 365 Commerce.
 
 Vurderinger og anmeldelser på e-Commerce-websteder gør det lettere for kunder at få oplysninger om produkter, før de træffer en beslutning om køb, fordi de kan se, hvad andre kunder mener om disse produkter. På e-handelswebsteder fungerer vurderinger og anmeldelser også som en mekanisme til indsamling af kundefeedback om produkter. 
 

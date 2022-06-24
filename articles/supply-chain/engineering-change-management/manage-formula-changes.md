@@ -1,6 +1,6 @@
 ---
 title: Administrere ændringer i formler og deres stoffer
-description: I dette emne beskrives, hvordan du udfører formelstyring og administrerer ændringer i behandling af produktionsmasterdata.
+description: Denne artikel beskriver, hvordan du udfører formelstyring og administrerer ændringer i behandling af produktionsmasterdata.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904066"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Administrere ændringer i formler og deres stoffer
 
@@ -29,7 +29,7 @@ Hvis du bruger funktionerne til procesproduktion i Microsoft Dynamics 365 Supply
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funktion
 
-Den funktionalitet, der beskrives i dette emne, kræver, at både *Styring af tekniske ændringer* og *Administrer ændringer af formler og deres ingredienser* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
+Den funktionalitet, der beskrives i denne artikel, kræver, at både *Styring af tekniske ændringer* og *Administrer ændringer af formler og deres ingredienser* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Navngivningskonventioner for funktioner
 
@@ -46,7 +46,7 @@ På følgende liste opsummeres, hvordan funktioner til teknisk ændringsstyring 
 - **Parathedskontrol** – Brug systemkontroller og brugervejledninger (spørgeskemaer og tjeklister) til at sikre, at alle nødvendige produktdata er angivet fuldt ud, før produktet frigives. Du kan finde flere oplysninger under [Produktparathed](product-readiness.md).
 - **Udvidede funktioner til produktfrigivelse** – Frigiv fuldt definerede versioner af et produkt og dets formel fra en organisation (juridisk enhed) til andre juridiske enheder. Du kan også beslutte, om produktoplysningerne skal gennemses eller redigeres, før de frigives. Yderligere oplysninger finder du under [Frigive produktstrukturer](release-product-structure.md).
 
-Bemærk, at de fleste af de emner, der linkes til på den foregående liste, indeholder eksempler, der er baseret på styklister. Formler fungerer dog på samme måde. Her er nogle yderligere begreber, som er nyttige at kende, når du bruger ændringsstyring (eller kun formelændringsstyring) til at administrere formler og styklister:
+Bemærk, at de fleste af de artikler, der linkes til på den foregående liste, indeholder eksempler, der er baseret på styklister. Formler fungerer dog på samme måde. Her er nogle yderligere begreber, som er nyttige at kende, når du bruger ændringsstyring (eller kun formelændringsstyring) til at administrere formler og styklister:
 
 - For hver [tekniske produktkategori](engineering-versions-product-category.md) kan du angive produktionstypen (stykliste, formel eller planlægningsvare). Du kan også angive, om fangstvægtsupport er påkrævet for produkter, der bruger den pågældende kategori.
 - Samprodukter og biprodukter er ikke tekniske produkter. De er derfor ikke versionerede. Hvis du skal ændre dem, skal du blot oprette et nyt produkt. Denne tilgang gør vedligeholdelse nemmere.

@@ -1,6 +1,6 @@
 ---
 title: Commerce-bogføringsparametre
-description: Dette emne beskriver de parametre, der gælder specifikt for bogføringen af økonomiske og fysiske posteringer i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver de parametre, der gælder specifikt for bogføringen af økonomiske og fysiske posteringer i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 1b49c893567d39f05e16cefee47407a424b7e139
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887108"
 ---
 # <a name="commerce-posting-parameters"></a>Commerce-bogføringsparametre
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emne beskriver de parametre, der gælder specifikt for bogføringen af økonomiske og fysiske posteringer i Microsoft Dynamics 365 Commerce. Parametre til handelsbogføring findes i Commerce headquarters i **Detail og handel \> Headquarters-konfiguration \> Parametre \> Commerce-parametre \> Bogføring**.
+Denne artikel beskriver de parametre, der gælder specifikt for bogføringen af økonomiske og fysiske posteringer i Microsoft Dynamics 365 Commerce. Parametre til handelsbogføring findes i Commerce headquarters i **Detail og handel \> Headquarters-konfiguration \> Parametre \> Commerce-parametre \> Bogføring**.
 
 ## <a name="periodic-discount-parameters"></a>Periodiske rabatparametre
 
@@ -71,7 +71,7 @@ Følgende tabel indeholder de anbefalede værdier for parametrene den foregåend
 |-----------|-------------------|---------|
 | Det maksimale antal parallelle opgørelsesbogføringer | <p>Angiv denne parameter til det antal batchopgaver, der er tilgængelige for den batchgruppe, der kører jobbet **Opgørelse**.</p><p>**Generel regel:** Multiplicer antallet af virtuelle servere for applikationsobjektservere (AOS) med antallet af batchopgaver, der er tilgængelige pr. virtuel server til AOS.</p> | Denne parameter kan ikke anvendes, når funktionen **Detailopgørelser – Sivende feed** er aktiveret. |
 | Maksimalt antal tråde til ordrebehandling pr. opgørelse | Start med at teste værdier ved **4**. Normalt bør værdien ikke overstige **8**. | Denne parameter definerer det antal tråde, der bruges til at oprette og bogføre salgsordrer. Den repræsenterer det antal tråde, der er tilgængelige for bogføring pr. opgørelse. |
-| Maksimale antal transaktionslinjer, der er inkluderet i aggregering | Start med at teste værdier ved **1000**. Afhængigt af Commerce-hovedkontorets konfiguration kan det være mere fordelagtigt med mindre ordrer for ydeevnen. | Denne parameter bestemmer det antal linjer, der medtages i hver salgsordre i forbindelse med bogføring af opgørelsen. Når dette antal er nået, fordeles linjerne til en ny ordre. Selvom antallet af salgslinjer ikke er nøjagtigt det antal, du angiver, da opdelingen finder sted på salgsordreniveau. Antallet vil dog være tæt på det antal, der er angivet. Denne parameter bruges til at generere salgsordrer for detailtransaktioner, der ikke har en navngivet kunde. |
+| Maksimale antal transaktionslinjer, der er inkluderet i aggregering | Start med at teste værdier ved **1000**. Afhængigt af Commerce Headquarters-konfiguration kan det være mere fordelagtigt med mindre ordrer for ydeevnen. | Denne parameter bestemmer det antal linjer, der medtages i hver salgsordre i forbindelse med bogføring af opgørelsen. Når dette antal er nået, fordeles linjerne til en ny ordre. Selvom antallet af salgslinjer ikke er nøjagtigt det antal, du angiver, da opdelingen finder sted på salgsordreniveau. Antallet vil dog være tæt på det antal, der er angivet. Denne parameter bruges til at generere salgsordrer for detailtransaktioner, der ikke har en navngivet kunde. |
 | Maksimale antal tråde til at validere butikstransaktioner | Det anbefales, at du angiver denne parameter til **4**, og at du kun øger den, hvis du ikke opnår acceptabel ydeevne. Det antal tråde, som denne proces bruger, må ikke overstige det antal processorer, der er tilgængelige for batchserveren. Hvis antallet af tråde er for højt, kan det påvirke en anden batchafvikling. | Denne parameter styrer antallet af transaktioner, der kan valideres på samme tid for en given butik. |
 
 > [!NOTE]
@@ -96,7 +96,7 @@ Følgende tabel viser de opgørelsesparametre, der gælder specifikt for bogfør
 | Parameter | Beskrivende tekst |
 |-----------|-------------|
 | Reservér lager under beregning | Når denne parameter er aktiveret, reserverer opgørelsesberegningen midlertidigt lager, indtil opgørelsen er bogført. Denne parameter er som standard deaktiveret for at forbedre beregningen af opgørelser. Opdaterede lageroplysninger kan beregnes ved hjælp af lagerbatchjobbet **Bogfør**. Bemærk, at lagerbatchjobbet **Bogfør** ikke længere bruges, når [sivende feedbaseret](trickle-feed.md) ordreoprettelse for detailbutikstransaktioner er aktiveret. |
-| Deaktivering af optælling er påkrævet | Dette flag deaktiverer optællingen under bogføring i Commerce-hovedkontoret. |
+| Deaktivering af optælling er påkrævet | Dette flag deaktiverer optællingen under bogføring i Commerce Headquarters. |
 | Genberegn økonomisk dimensioner ved fejl | Hvis denne parameter er aktiveret, genevalueres de økonomiske dimensioner på efterfølgende opgørelsesposteringer, når bogføring af opgørelsen mislykkes |
 | Brug økonomiske dimensioner fra returneringsbutikken | Når denne parameter er aktiveret, kan der oprettes sammenkædede retursalgsordrer, der bruger butikkens økonomiske dimensioner i stedet for de økonomiske dimensioner fra den oprindelige transaktion. |
 | Fjern sammenkædning af returneringer | Når denne parameter er aktiveret, kan opgørelsen oprette returneringer fra ikke-bogførte salg som skjulte returneringer. Denne parameter er som standard deaktiveret, og det anbefales, at du deaktiverer den. |

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
-description: I dette emne beskrives, hvordan du konfigurerer en enkel lokationsvejledning.
+description: Denne artikel beskriver, hvordan du konfigurerer en enkel lokationsvejledning.
 author: Weijiesa
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2275b2fd70e246955054930b13f29a6c0b287363
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873486"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer en enkel lokationsvejledning. Det viste eksemplet opretter en lokalitetsvejledning, som skal bruges til at bestemme, hvor du kan placere elementer, der er blevet modtaget for en indkøbsordre. Du kan afspille denne opgaveguide med de nævnte data ved hjælp af demodatafirmaet USMF. Forudsætninger: Du skal oprette en dispositionskode. I denne procedure bruger vi en dispositionskode kaldet Relabel. Hvis du opretter en lokalitetsvejledning i dine egne data, skal du havet oprettet avanceret lagerstedsstyring for dit lagersted og dine elementer. Denne procedure er beregnet til lagerchefen.
+Denne artikel beskriver, hvordan du konfigurerer en enkel lokationsvejledning. Det viste eksemplet opretter en lokalitetsvejledning, som skal bruges til at bestemme, hvor du kan placere elementer, der er blevet modtaget for en indkøbsordre. Du kan afspille denne opgaveguide med de nævnte data ved hjælp af demodatafirmaet USMF. Forudsætninger: Du skal oprette en dispositionskode. I denne procedure bruger vi en dispositionskode kaldet Relabel. Hvis du opretter en lokalitetsvejledning i dine egne data, skal du havet oprettet avanceret lagerstedsstyring for dit lagersted og dine elementer. Denne procedure er beregnet til lagerchefen.
 
 1. I navigationsruden skal du gå til **Moduler > Lokationsstyring > Opsætning > Lokationsvejledninger**.
 2. I feltet **Arbejdsordretype** skal du vælge **Indkøbsordrer**.

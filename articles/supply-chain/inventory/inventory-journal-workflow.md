@@ -1,6 +1,6 @@
 ---
-title: Arbejdsprocesser for godkendelse af lagerkladder
-description: I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
+title: Arbejdsprocesser for godkendelse af lagerkladde
+description: Denne artikel beskriver, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873979"
 ---
-# <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladder
+# <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladde
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner som f.eks. afgange og tilgange, lagerbevægelser, styklister og afstemning af det fysiske lager. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
+Denne artikel beskriver, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner som f.eks. afgange og tilgange, lagerbevægelser, styklister og afstemning af det fysiske lager. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
 
 > [!NOTE]
 > Godkendelsesarbejdsprocesser for lagerkladder gælder kun for transaktioner, der er registreret ved hjælp af modulet Lagerstyring. De fungerer ikke med de lagerkladder, der udløses fra modulet Lokationsstyring.

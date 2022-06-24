@@ -1,6 +1,6 @@
 ---
-title: Oprette handelskataloger til B2B-websteder
-description: Dette emne indeholder en beskrivelse af, hvordan du kan oprette handelskataloger for Microsoft Dynamics 365 Commerce business-to-business (B2B)-websteder.
+title: Oprette Commerce-kataloger til B2B-websteder
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan oprette handelskataloger for Microsoft Dynamics 365 Commerce business-to-business (B2B)-websteder.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848983"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>Oprette handelskataloger til B2B-websteder
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>Oprette Commerce-kataloger til B2B-websteder
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan oprette Commerce-produktkataloger for Microsoft Dynamics 365 Commerce business-to-business (B2B)-websteder. Du kan finde svar på ofte stillede spørgsmål om Commerce-kataloger til B2B-websteder i [Commerce-kataloger til B2B Ofte stillede spørgsmål](catalogs-b2b-sites-FAQ.md).
+Denne artikel indeholder en beskrivelse af, hvordan du kan oprette Commerce-produktkataloger for Microsoft Dynamics 365 Commerce business-to-business (B2B)-websteder. Du kan finde svar på ofte stillede spørgsmål om Commerce-kataloger til B2B-websteder i [Commerce-kataloger til B2B Ofte stillede spørgsmål](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Dette emne gælder for Dynamics 365 Commerce version 10.0.27 og senere.
+> Denne artikel gælder for Dynamics 365 Commerce version 10.0.27 og senere.
 
 Du kan bruge Commerce-kataloger til at identificere de produkter, du vil tilbyde i dine B2B-onlinebutikker. Når du opretter et katalog, skal du identificere de onlinebutikker, produkterne skal tilbydes i, tilføje de produkter, der skal medtages og forbedre produkttilbuddene ved at tilføje oplysninger. Du kan oprette flere kataloger til hver B2B-onlinebutik.
 

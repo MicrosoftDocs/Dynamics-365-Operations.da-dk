@@ -1,6 +1,6 @@
 ---
 title: Arbejde med publiceringsgrupper
-description: I dette emne beskrives funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76d447a5368cd5e342e8b1b934bb04d45e3378fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885104"
 ---
 # <a name="work-with-publish-groups"></a>Arbejde med publiceringsgrupper
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver funktionen publicering af grupper i Microsoft Dynamics 365 Commerce.
 
 E-Commerce-websteder opdateres konstant med nyt indhold i løbet af året. Opdateringer udgives ofte i batches omkring tidspunktet for travle e-Commerce-hændelser som helligdage, sæsonbetonede marketingkampagner eller salgsfremmende lanceringer. Disse opdateringer kræver ofte, at grupper af webstedsindhold (f.eks. sider, billeder, fragmenter og skabeloner) iscenesættes, valideres og udgives samtidigt i en enkelt handling.
 
@@ -126,7 +126,7 @@ Ja og nej. Publiceringsgrupper kan opfattes som forgrenede versioner af dit webs
 
 **Kan jeg planlægge at aktivere to publiceringsgrupper på samme tid?**
 
-Nr. Af hensyn til ydeevnen og konflikter tvinger systemet dig til at have forskudte planlagte publiceringsgrupper med mindst fem minutters mellemrum.
+Nej Af hensyn til ydeevnen og konflikter tvinger systemet dig til at have forskudte planlagte publiceringsgrupper med mindst fem minutters mellemrum.
 
 **Kan jeg bruge publiceringsgrupper til at planlægge flerkanalsadministrationselementer, såsom rabatter og produktopdateringer?**
 

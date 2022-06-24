@@ -1,6 +1,6 @@
 ---
 title: Produktionsparametre i Produktionsudførelse
-description: Dette emne indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
+description: Denne artikel indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873660"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametre i Produktionsudførelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
+Denne artikel indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
 
 Modulet **Produktionsudførelse** er primært beregnet til produktionsfirmaer. Det kan bruges til at registrere tids- og vareforbrug på produktionsjob eller projekter. Før du går i gang med at bruge modulet Produktionsudførelse til jobregistreringer, skal du konfigurere forskellige produktionsparametre, der definerer, hvordan og hvornår registreringer skal bogføres under produktionsprocessen. Indstillinger af produktionsparametre påvirker lagerstyring, produktionsstyring og omkostningsberegning.
 

@@ -1,6 +1,6 @@
 ---
 title: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
-description: Dette emne indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
+description: Denne artikel indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
 author: bebeale
 ms.date: 08/31/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 6e0c84dd6b173a111b70a8adb6036be946149f7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885165"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
+Denne artikel indeholder oplysninger om, hvordan der oprettes Azure Data Lake Storage-forbindelse mellem en Gen 2-løsning og et Dynamics 365 Commerce-miljøs enhedslager. Dette er et påkrævet trin, før du aktiverer produktanbefalinger.
 
 I Dynamics 365 Commerce-løsningen aggregeres de data, der er nødvendige for at beregne anbefalinger, produkter og transaktioner i miljøets enhedslager. For at gøre disse data tilgængelige for andre Dynamics 365-tjenester, f.eks. dataanalyse, business intelligence og personlige anbefalinger, er det nødvendigt at knytte miljøet til en kundeejet Azure Data Lake Storage Gen2-løsning.
 

@@ -1,6 +1,6 @@
 ---
 title: Forsendelse af småpakker
-description: Dette emne indeholder oplysninger om funktionen til forsendelse af småpakker (SPS). Denne funktion sætter Microsoft Dynamics 365 Supply Chain Management i stand til at sende oplysninger om en pakket container til fragtmanden og derefter modtage en forsendelseslabel, forsendelsessats og sporingsnummeret fra fragtmanden.
+description: Denne artikel indeholder oplysninger om funktionen til forsendelse af småpakker (SPS). Denne funktion sætter Microsoft Dynamics 365 Supply Chain Management i stand til at sende oplysninger om en pakket container til fragtmanden og derefter modtage en forsendelseslabel, forsendelsessats og sporingsnummeret fra fragtmanden.
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e8e2bda39b9de241d17fcf3cb9acce2b8015efd2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855897"
 ---
 # <a name="small-parcel-shipping"></a>Forsendelse af småpakker
 
@@ -54,7 +54,7 @@ Følg disse trin for at hente demosatsprogrammet.
 
 #### <a name="create-and-deploy-functional-rate-engines"></a>Oprette og implementere funktionelle satsprogrammer
 
-Du kan finde flere oplysninger om oprettelse og implementering af funktionelle satsprogrammer, så de kan bruges i en produktion eller et testmiljø, under følgende emner:
+Du kan finde flere oplysninger om oprettelse og implementering af funktionelle satsprogrammer, så de kan bruges i en produktion eller et testmiljø, under følgende artikler:
 
 - [Oprette et nyt transportstyringsprogram](../transportation/create-new-transportation-management-engine.md)
 - [Konfigurere transportstyringsprogrammer](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -77,7 +77,7 @@ Når du har oprettet og implementeret et satsprogram til SPS, skal du følge dis
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-I dette eksempelscenarie vises, hvordan du konfigurerer og bruger SPS, når du har forberedt systemet som beskrevet tidligere i dette emne. I dette scenarie bruges det tidligere nævnte demosatsprogram.
+I dette eksempelscenarie vises, hvordan du konfigurerer og bruger SPS, når du har forberedt systemet som beskrevet tidligere i denne artikel. I dette scenarie bruges det tidligere nævnte demosatsprogram.
 
 ### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
@@ -147,7 +147,7 @@ Følg disse trin for at konfigurere en fragttjenestekonto.
 
 Følg disse trin for at konfigurere en politik for containerpakning:
 
-1. Hvis du ikke allerede har konfigureret en ZPL-printerdefinition, skal du bruge programmet Dokumentets ruteplanlægningsagent til at konfigurere den. Yderligere oplysninger finder du i [Oversigt over udskrivning af dokumenter](../../fin-ops-core/dev-itpro/analytics/print-documents.md) og relaterede emner.
+1. Hvis du ikke allerede har konfigureret en ZPL-printerdefinition, skal du bruge programmet Dokumentets ruteplanlægningsagent til at konfigurere den. Yderligere oplysninger finder du i [Oversigt over udskrivning af dokumenter](../../fin-ops-core/dev-itpro/analytics/print-documents.md) og relaterede artikler.
 1. Gå til **Lokationsstyring \> Konfiguration \> Containere \> Politikker for containerpakning**.
 1. Gå til handlingsruden, og vælg **Ny** for at tilføje en politik for containerpakning.
 1. Angiv følgende værdier på hoveddelen for den nye politik:

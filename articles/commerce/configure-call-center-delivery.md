@@ -1,6 +1,6 @@
 ---
 title: Konfigurere callcenterets leveringsmåder og -gebyrer
-description: I dette emne beskrives, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888292"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
@@ -35,7 +35,7 @@ Commerce har funktioner, som brugerne kan bruge til at begrænse de leveringsmå
 
 Før du angiver, hvilke leveringsmåder der kan bruges til callcenterordrer, og definerer de tilknyttede regler og gebyrer, skal du definere leveringsmåderne. Gå til **Salg og marketing \> Konfiguration \> Distribution \> Leveringsmåder**. Vælg **Ny** for at oprette en ny leveringsmåde. Du kan også vælge en eksisterende leveringsmåde på listen og derefter vælge **Rediger** for at foretage ændringer.
 
-I feltet **Leveringsmåde** kan du angive en kombination af alfanumeriske tegn baseret på dine forretningsbehov. Du kan derefter bruge feltet **Beskrivelse** til at levere yderligere kontekst. Felterne **Gebyrgruppe** og **Fremskynd** er valgfri og beskrives mere detaljeret senere i dette emne.
+I feltet **Leveringsmåde** kan du angive en kombination af alfanumeriske tegn baseret på dine forretningsbehov. Du kan derefter bruge feltet **Beskrivelse** til at levere yderligere kontekst. Felterne **Gebyrgruppe** og **Fremskynd** er valgfri og beskrives mere detaljeret senere i denne artikel.
 
 I oversigtspanelet **Commerce-kanaler** kan du tilføje de kanaler, der skal kunne bruge leveringsmåden, når der oprettes salgstransaktioner i denne kanal.
 
