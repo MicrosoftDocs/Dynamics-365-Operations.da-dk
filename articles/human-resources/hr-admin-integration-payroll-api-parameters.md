@@ -1,6 +1,6 @@
 ---
 title: Parametre for lønintegration
-description: Dette emne beskriver parametrene for Dynamics 365 Human Resources-lønintegration.
+description: Denne artikel beskriver parametrene for Dynamics 365 Human Resources-lønintegration.
 author: marcelbf
 ms.date: 06/17/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-17
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37d4dc52e7fe5ddd95f43d98267db819a275bd92
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7d784909fc8c5fa05557566b62b19802cd2acece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896091"
 ---
 # <a name="payroll-integration-parameters"></a>Parametre for lønintegration
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069851"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Før du bruger lønintegration i Dynamics 365 Human Resources, skal du konfigurere de parametre, der er beskrevet i dette emne.
+Før du bruger lønintegration i Dynamics 365 Human Resources, skal du konfigurere de parametre, der er beskrevet i denne artikel.
 
 ## <a name="enable-payroll-address"></a>Aktivere lønadresse
 

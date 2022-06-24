@@ -1,6 +1,6 @@
 ---
 title: Få vist og administrere adresseændringer
-description: Dette emne forklarer, hvordan du kan få vist og administrere adresseændringer i Dynamics 365 Human Resources.
+description: Denne artikel forklarer, hvordan du kan se og administrere adresseændringer i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899579"
 ---
 # <a name="view-and-manage-address-changes"></a>Få vist og administrere adresseændringer
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695838"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne forklares det, hvordan du kan se og administrere adresseændringer på siden **Rediger personlige oplysninger** (åbnes i arbejdsområdet **Medarbejderselvbetjening**) eller detaljesiden for **Arbejder** i Dynamics 365 Human Resources.
+Denne artikel forklarer, hvordan du kan se og administrere adresseændringer på siden **Rediger personlige oplysninger** (åbnes i arbejdsområdet **Medarbejderselvbetjening**) eller detaljesiden for **Arbejder** i Dynamics 365 Human Resources.
 
 Mange virksomheder ønsker, at medarbejderne kan administrere deres egne personlige oplysninger via en selvbetjeningsløsning. Du kan give brugerne mulighed for at opdatere deres adresse i arbejdsområdet **Medarbejderselvbetjening**. Du kan derefter overvåge disse ændringer i arbejdsområdet **Personalestyring**. Hvis du vil bruge denne funktion, skal du angive det antal dage, du vil have vist ændringer på siden **Parametre for personale**.
 

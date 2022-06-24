@@ -1,6 +1,6 @@
 ---
 title: Få vist og opdatere enhedsdata med Excel
-description: Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel.
+description: Denne artikel forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel.
 author: jasongre
 ms.date: 05/16/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
-ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
+ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2022
-ms.locfileid: "8762619"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862149"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Få vist og opdatere enhedsdata med Excel 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8762619"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel. Når du vil åbne enhedsdataene, kan du starte fra enten Excel eller Finans- og driftsapps.
+Denne artikel forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics-tilføjelsesprogrammet til Excel. Når du vil åbne enhedsdataene, kan du starte fra enten Excel eller Finans- og driftsapps.
 
 Ved at åbne enhedsdata i Excel, kan du hurtigt og let få vist og redigere dataene ved hjælp af tilføjelsesprogrammet til Excel. Dette tilføjelsesprogram kræver Microsoft Excel 2016 eller nyere.
 

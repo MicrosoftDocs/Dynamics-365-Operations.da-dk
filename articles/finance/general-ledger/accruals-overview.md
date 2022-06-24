@@ -1,6 +1,6 @@
 ---
 title: Oversigt over periodiseringer
-description: I dette emne beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
+description: I denne artikel beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904695"
 ---
 # <a name="accruals-overview"></a>Oversigt over periodiseringer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
+I denne artikel beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
 
 Periodiseringer bruges i periodiseringsregnskab til at registrere indtægter, der er anerkendt i den periode, der er optjent i, ikke, når betalingen er modtaget, og til at spore udgifter (omkostninger), der registreres, når de opstår, ikke når betalingen foretages.
 

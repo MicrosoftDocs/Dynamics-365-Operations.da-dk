@@ -1,6 +1,6 @@
 ---
 title: Oprette planer for fast løn
-description: I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
+description: I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 05f4748f66f4027972aabf53e7a1c237b8dbb543
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f254afc37d5afae48c3b2b3b16bd86634ac9aa3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875736"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Oprette planer for fast løn
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693053"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fast løn henviser til en medarbejders normale bruttoløn eller løn. I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
+Fast løn henviser til en medarbejders normale bruttoløn eller løn. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 
 Fast løn-beløb kan beregnes for dine medarbejdere baseret på faktorer som ydeevne, område og øgede budgetter. Dynamics 365 Human Resources understøtter kompensationstyperne trin, lønklasse og omfang.
 

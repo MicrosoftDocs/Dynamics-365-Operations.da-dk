@@ -1,6 +1,6 @@
 ---
 title: 200 % saldoafskrivning
-description: Dette emne viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
+description: Denne artikel viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 831a99246f0a2d5f223e3624aace1c218c3c4ff4
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7abcf26f3e658e8a6f451f26240890d183547982
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870156"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 % saldoafskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
+Denne artikel viser en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
 
 Når du opretter en afskrivningsprofil til et anlægsaktiv og vælger **200% saldoværdi** i feltet **Metode** på siden **Afskrivningsprofiler**, bliver de anlægsaktiver, der er tildelt afskrivningsprofilen, afskrevet med den samme procent i hver afskrivningsperiode. Denne procentdel beregnes på basis af aktivets levetid. Hvis et aktiv f.eks. har en levetid på fem år, beregnes procentdelen som 40 % (200 % ÷ 5). 
 
@@ -43,7 +43,7 @@ Dit valg bestemmer, hvad der kan vælges i feltet **Periodefrekvens**. Dette fel
 
 Du kan vælge at beholde standardværdien i feltet **Afskrivningsår**, **Kalender**. 
 
-Indstillingen **Kalender** opdaterer afskrivningsgrundlaget d. 1. januar hvert år. Afskrivningen er typisk bogført nettoværdi minus scrapværdi. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
+Indstillingen **Kalender** opdaterer afskrivningsgrundlaget d. 1. januar hvert år. Afskrivningen er typisk bogført nettoværdi minus scrapværdi. I eksemplerne senere i denne artikel er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
 
 Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 

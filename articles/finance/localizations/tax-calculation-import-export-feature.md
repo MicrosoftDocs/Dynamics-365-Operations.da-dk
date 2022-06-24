@@ -1,6 +1,6 @@
 ---
 title: Importere og eksportere momsberegninger
-description: Dette emne indeholder oplysninger om import- og eksportfunktionen i tjenesten til momsberegning.
+description: Denne artikel indeholder oplysninger om import- og eksportfunktionen i tjenesten til momsberegning.
 author: Kai-Cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 02ad47b5f350969b4935a8f383ddf26a7ce7a46a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855167"
 ---
 # <a name="import-and-export-tax-calculations"></a>Importere og eksportere momsberegninger
 
-Dette emne indeholder oplysninger om import- og eksportfunktionen i tjenesten til momsberegning. Denne funktionalitet er med til at sikre en fleksibel og effektiv konfigurationsoplevelse.
+Denne artikel indeholder oplysninger om import- og eksportfunktionen i tjenesten til momsberegning. Denne funktionalitet er med til at sikre en fleksibel og effektiv konfigurationsoplevelse.
 
 ## <a name="import-and-export-tax-codes"></a>Importere og eksportere momskoder
 

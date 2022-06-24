@@ -1,6 +1,6 @@
 ---
 title: Arbejde med konfigurationer
-description: Dette emne indeholder en oversigt over hovedscenariet for arbejde med ER-konfigurationer (elektronisk rapportering) fra arbejdsområdet til globaliseringsfunktioner.
+description: Denne artikel indeholder en oversigt over hovedscenariet for arbejde med ER-konfigurationer (elektronisk rapportering) fra arbejdsområdet til globaliseringsfunktioner.
 author: dkalyuzh
 ms.date: 01/26/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4318399ee58ed54b29f8d360345b8930238ea9f2
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 359f00336811efd5f21463a325627df0e01a5f3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371587"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875936"
 ---
 # <a name="work-with-configurations"></a>Arbejde med konfigurationer
 

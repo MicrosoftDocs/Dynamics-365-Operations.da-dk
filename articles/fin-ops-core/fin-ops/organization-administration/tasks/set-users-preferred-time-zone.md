@@ -1,6 +1,6 @@
 ---
 title: Indstille en brugers foretrukne tidszone
-description: Dette emne beskriver, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
+description: Denne artikel beskriver, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
 author: pvillads
 ms.date: 07/08/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32417694e53600836370ecc5601d36057cc55de9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 211efa6bebd316f3daa7694f68ff53b6fe3147da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848658"
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Indstille en brugers foretrukne tidszone
 
@@ -27,7 +27,7 @@ ms.locfileid: "8065599"
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-Følgende emne beskriver, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
+Følgende artikel beskriver, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
 
 1. Gå til **Navigationsrude > Moduler > Systemadministration > Brugere > Brugere**.
 2. Find og vælg den ønskede post på listen.

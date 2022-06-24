@@ -1,6 +1,6 @@
 ---
 title: A-skatopgørelse for Egypten
-description: Dette emne forklarer, hvordan du konfigurerer og genererer A-skatopgørelse til Egypten.
+description: Denne artikel forklarer, hvordan du konfigurerer og genererer A-skatteopgørelse til Egypten.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907681"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>A-skatopgørelse for Egypten (EG-00005)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403885"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Overblik
-Dette emne forklarer, hvordan du opretter og genererer A-skatteopgørelsen og formularer til A-skatteopgørelsen 41 og 11 til juridiske enheder i Egypten 
+Denne artikel forklarer, hvordan du opretter og genererer A-skatteopgørelsen og formularer til A-skatteopgørelsen 41 og 11 til juridiske enheder i Egypten 
 
 Alle egyptiske enheder skal forberede formular 41, der opsummerer al skat, der tilbageholdes fra lokale leverandører og serviceudbydere. Ud over formular 41 skal formular 11 genereres med detaljer for alle tilbageholdte skatter fra udenlandske leverandører. 
 
@@ -58,7 +58,7 @@ Du kan finde flere oplysninger om, hvordan du importerer konfigurationer af elek
 
 Implementeringen af WHT-formularen til indberetning for Egypten er baseret på konfigurationen af Elektronisk rapportering (ER). Du kan finde flere oplysninger om egenskaberne og koncepterne ved konfigurerbar rapportering under [Elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-I forbindelse med produktions- og brugermodtagelsestestmiljøer (UAT) skal du følge vejledningen i emnet [Hent konfigurationer til elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+I forbindelse med produktions- og brugermodtagelsestestmiljøer (UAT) skal du følge vejledningen i artiklen [Hent konfigurationer til elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Hvis du vil generere A-opgørelserne i en egyptisk enhed medstyring, skal du overføre følgende konfigurationer:
 

@@ -1,6 +1,6 @@
 ---
 title: Reducere saldoafskrivning efter en opdeling
-description: I dette emne beskrives den metode, der bruges i anlægsaktiver til at beregne afskrivninger, efter at et aktiv er opsplittet ved hjælp af metoden til reduktion af saldoen.
+description: Denne artikel beskriver den metode, der bruges i anlægsaktiver til at beregne afskrivninger, efter at et aktiv er opsplittet ved hjælp af metoden til reduktion af saldoen.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883294"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Reducere saldoafskrivning efter en opdeling
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives den metode, der bruges i anlægsaktiver til at beregne afskrivninger, efter at et aktiv er opsplittet til et andet aktiv ved hjælp af metoden til reduktion af saldoen. Det afskrivningsår, der er konfigureret i anlægskartoteket, er regnskabsåret. Du kan finde flere oplysninger i [Reducere saldoafskrivning](reduce-balance-depreciation.md) og [Opdele et anlægsaktiv](tasks/split-fixed-asset.md).
+Denne artikel beskriver den metode, der bruges i anlægsaktiver til at beregne afskrivninger, efter at et aktiv er opsplittet til et andet aktiv ved hjælp af metoden til reduktion af saldoen. Det afskrivningsår, der er konfigureret i anlægskartoteket, er regnskabsåret. Du kan finde flere oplysninger i [Reducere saldoafskrivning](reduce-balance-depreciation.md) og [Opdele et anlægsaktiv](tasks/split-fixed-asset.md).
 
 Hvis du opdeler et anlægsaktiv i en regnskabsperiode, der ligger senere end den periode, hvor aktivet blev anskaffet, vil den reducerede saldoafskrivning være kontoen for aktivets bogførte nettoværdi (NBV) for det foregående år. Den vil også redegøre for de reguleringsposteringer for anskaffelse og afskrivning, der er genereret fra den postering, der opdeler aktivet. Det antages, at aktivet blev anskaffet i et regnskabsår og opdelt i et senere regnskabsår. Det beløb, der skal afskrives for det oprindelige aktiv, efter at opdelingen afspejler anlægsaktivets NBV, før aktivet blev opdelt, og den reguleringspostering for anskaffelse og afskrivning, der er bogført for opdelingen.
 

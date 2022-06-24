@@ -1,6 +1,6 @@
 ---
 title: Konfigurere hjælp-oplevelsen for Finans- og driftsapps
-description: Dette emne giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
+description: Denne artikel giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900123"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finans- og driftsapps
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071002"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne kan du finde en oversigt over komponenterne i Hjælp-systemet til Finans- og driftsapps, f.eks. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Dette emner forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
+Denne artikel har en oversigt over komponenterne i Hjælp-systemet til programmer til finans og drift, f.eks. Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Denne artikel forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 

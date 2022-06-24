@@ -1,6 +1,6 @@
 ---
 title: Tilføj nye felter til en skabelon for forretningsdokument i Microsoft Excel
-description: Dette emne indeholder oplysninger om, hvordan du kan tilføje nye felter til en skabelon til forretningsdokument i Microsoft Excel ved hjælp af funktionen Styring af forretningsdokument.
+description: Denne artikel indeholder oplysninger om, hvordan du kan tilføje nye felter til en skabelon til forretningsdokument i Microsoft Excel ved hjælp af funktionen Styring af forretningsdokument.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767236"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869396"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Tilføj nye felter til en skabelon for forretningsdokument i Microsoft Excel
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767236"
 
 Du kan tilføje nye felter til en skabelon, der bruges til at generere forretningsdokumenter i Microsoft Excel-format. Disse felter kan tilføjes som pladsholdere, der bruges til at udfylde genererede dokumenter med de nødvendige oplysninger fra programmet. For hvert felt, du tilføjer, kan du også angive en binding til datakilderne for at angive, hvilke programdata der skal indsættes i feltet, når skabelonen bruges til at generere forretningsdokumenter.
 
-Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne. I dette eksempel vises, hvordan du kan opdatere en skabelon for at udfylde de felter, der genereres i fritekstfakturaformler.
+Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i denne artikel. I dette eksempel vises, hvordan du kan opdatere en skabelon for at udfylde de felter, der genereres i fritekstfakturaformler.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Konfigurer Styring af forretningsdokumenter til at redigere skabeloner
 
 Da Styring af forretningsdokument (BDM) er bygget oven på [Oversigten over Elektronisk rapporteringsstrukturen (ER)](general-electronic-reporting.md), skal du konfigurere de krævede parametre ER og BDM, før du kan begynde at arbejde med BDM.
 
 1.  Log ind på forekomsten af Microsoft Dynamics 365 Finance som systemadministrator.
-2.  Fuldfør følgende trin i eksemplet i emnet [Oversigt over styring af forretningsdokumenter](er-business-document-management.md):
+2.  Fuldfør følgende trin i eksemplet i artiklen [Oversigt over styring af forretningsdokumenter](er-business-document-management.md):
 
     1.  Konfigurer ER-parametre.
     2.  Aktivér BDM.

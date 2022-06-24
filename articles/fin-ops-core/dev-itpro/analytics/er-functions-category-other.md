@@ -1,6 +1,6 @@
 ---
 title: Liste over ER-funktioner i kategorien forretningsdomænespecifik
-description: Dette emne indeholder oplysninger om de forretningsdomænespecifikke funktioner, der understøttes i elektronisk rapportering (ER).
+description: Denne artikel indeholder oplysninger om de forretningsdomænespecifikke funktioner, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9df826dcc0b672977d4d8af1feb985ab9a0ab7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879943"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Liste over ER-funktioner i kategorien forretningsdomænespecifik
 
 [!include [banner](../includes/banner.md)]
 
-De domænespecifikke til elektronisk rapportering (ER) kan bruges til at udføre beregninger og dataadgangsanmodninger, der er specifikke for implementeringen af Microsoft Dynamics 365 Finance. Dette emne indeholder en oversigt over disse funktioner.
+De domænespecifikke til elektronisk rapportering (ER) kan bruges til at udføre beregninger og dataadgangsanmodninger, der er specifikke for implementeringen af Microsoft Dynamics 365 Finance. Denne artikel indeholder en oversigt over disse funktioner.
 
 ## <a name="list-of-supported-functions"></a>Liste med understøttede funktioner
 

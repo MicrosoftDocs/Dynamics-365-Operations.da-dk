@@ -1,6 +1,6 @@
 ---
 title: Fransk Intrastat
-description: Dette emne indeholder oplysninger om Intrastat-opgørelse i Frankrig.
+description: Denne artikel indeholder oplysninger om Intrastat-opgørelse i Frankrig.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887847"
 ---
 # <a name="french-intrastat"></a>Fransk Intrastat
 
@@ -97,7 +97,7 @@ Tabellen angiver også feltets rapportniveau. Feltet kan være **4** (forenklet)
     3. Vælg **Intrastat** i feltet **Kategorihierarki** i oversigtspanelet **Varekodehierarki**.
     4. Vælg den kode, der bruges til vareoverførsler, i feltet **Transaktionskode** i oversigtspanelet **Generelt**.
     5. Vælg den kode, der skal bruges til returnering af varer, i feltet **Kreditnota**.
-    6. Angiv detaljeringsniveauet for eksportrapporten i feltet **Forpligtelsesniveau for eksport**. Det niveau, du vælger, påvirker de linjer, der vises i rapporten. Du kan finde yderligere oplysninger i tabellerne i begyndelsen af dette emne.
+    6. Angiv detaljeringsniveauet for eksportrapporten i feltet **Forpligtelsesniveau for eksport**. Det niveau, du vælger, påvirker de linjer, der vises i rapporten. Du kan finde yderligere oplysninger i tabellerne i begyndelsen af denne artikel.
 
 3. Gå til **Organisations administration** > **Organisationer** > **Juridiske enheder**, vælg din virksomhed, og følg derefter disse trin:
 

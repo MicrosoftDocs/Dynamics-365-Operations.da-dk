@@ -1,6 +1,6 @@
 ---
 title: Opgradere budgetplanlægning
-description: I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.
+description: Denne artikel beskriver, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890400"
 ---
 # <a name="upgrade-budget-planning"></a>Opgradere budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Dynamics 365 Finance. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
+Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Dynamics 365 Finance. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. Denne artikel beskriver, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
 
-Budgetplanlægning i Finance har mange forbedringer, der ikke var tilgængelige i Dynamics AX 2012. I dette emne beskrives de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i dette emne, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
+Budgetplanlægning i Finance har mange forbedringer, der ikke var tilgængelige i Dynamics AX 2012. Denne artikel beskriver de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i denne artikel, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
 
 ## <a name="overview-of-changes"></a>Oversigt over ændringer
-Der er foretaget mange væsentlige ændringer i Budgettering til Finance and Operations. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance:
+Der er foretaget mange væsentlige ændringer i Budgettering til Finans og drift. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance:
 
 -   Skabeloner til budgetplan (konfiguration af budgetplanlægning)
 -   Mapper til budgetplan (konfiguration af budgetplanlægning)
@@ -47,7 +47,7 @@ Kolonner er et nyt begreb, der erstatter dele af Excel-skabelonen og også matri
 
 ### <a name="layouts"></a>Layout
 
-Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i Finance and Operations-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når du indtaster data i Finance-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en transaktionsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
+Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i Finans og drift-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når du indtaster data i Finance-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en transaktionsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
 
 ### <a name="budget-planning-processes"></a>Budgetplanlægningsprocesser
 
@@ -58,7 +58,7 @@ Budgetplanlægningsprocesser er næsten som i AX 2012. Den væsentligste ændrin
 I AX 2012 blev berettigelsesdokumenter gemt i en mappe til vedhæftede filer. Ingen tidligere berettigelsesdokumenter opgraderes. Berettigelsesdokumenter gemmes nu i databasen. Hvis disse oplysninger skal gemmes i den opgraderede version, kan du sende berettigelsesdokumenter for hver enkelt plan som en vedhæftet fil ved hjælp af knappen **Berettigelse** i handlingsruden. I AX 2012 blev Excel-regneark for hver budgetplan oprettet ud fra skabelonen. I Finance åbner alle planer en kopi af layoutet. Men ingen ændringer af Excel-filen gemmes. Alle formler eller supplerende oplysninger, der blev brugt på pr. plan-basis, skal tilføjes via kommentarer, et berettigelsesdokument eller anden supplerende proces.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfiguration af et miljø, der er opgraderet fra AX 2012
-Følgende eksempel bruger en opgraderet budgetproces fra AX 2012 demo-data til at hjælpe dig med at bestemme, hvordan du konfigurerer det opgraderede system. Der er oprettet standardkonfigurationsdata for kolonner til opgraderingen. Du kan opdatere eller slette disse standarddata, hvis de ikke opfylder dine konfigurationskrav. **Bemærk!** Der er nye obligatoriske felter, der ikke angivet i systemet. Hvis du går i stå på en side, f.eks. siden **Budgetplanlægningskonfiguration** og ikke kan navigere væk, kan du lukke browseren og derefter åbne den igen på en anden side for at angive oplysninger i den rigtige rækkefølge. Der er obligatoriske felter, som endnu ikke er angivet. Derfor kan der opstå problemer, indtil alt er konfigureret, og alle obligatoriske felter er angivet. I dette emne forklares, hvordan du angiver disse felter efter behov. Her er nogle af disse obligatoriske felter:
+Følgende eksempel bruger en opgraderet budgetproces fra AX 2012 demo-data til at hjælpe dig med at bestemme, hvordan du konfigurerer det opgraderede system. Der er oprettet standardkonfigurationsdata for kolonner til opgraderingen. Du kan opdatere eller slette disse standarddata, hvis de ikke opfylder dine konfigurationskrav. **Bemærk!** Der er nye obligatoriske felter, der ikke angivet i systemet. Hvis du går i stå på en side, f.eks. siden **Budgetplanlægningskonfiguration** og ikke kan navigere væk, kan du lukke browseren og derefter åbne den igen på en anden side for at angive oplysninger i den rigtige rækkefølge. Der er obligatoriske felter, som endnu ikke er angivet. Derfor kan der opstå problemer, indtil alt er konfigureret, og alle obligatoriske felter er angivet. Denne artikel forklarer, hvordan du angiver disse felter efter behov. Her er nogle af disse obligatoriske felter:
 
 -   Siden **Budgetplanlægningsproces**: Feltet **Standardkontostruktur**
 -   Siden **Budgetplanlægningsproces**: Feltet **Layout** i oversigtspanelet **Stadieregler og layouts for budgetplanlægning**
@@ -69,7 +69,7 @@ Følgende eksempel bruger en opgraderet budgetproces fra AX 2012 demo-data til a
    -   Budgetplanscenarier: faktiske oplysninger, grundlag, budgetanmodning, godkendt budget
    -   Budgetplanlinjerne for alle scenarier i 2017 og faktiske værdier for både 2017 og 2016
 
-   Der oprettes følgende kolonner i Finance and Operations:
+   Der oprettes følgende kolonner i Finans og drift:
 
    | Kolonnenavn    | Budgetplansscenarie | Kolonnetidsperiode | Årsforskydning |
    |----------------|----------------------|--------------------|-------------|

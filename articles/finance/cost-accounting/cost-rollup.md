@@ -1,6 +1,6 @@
 ---
 title: Politik for omkostningstotaler og beregning af fast omkostning
-description: Dette emne indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
+description: Denne artikel indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874603"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
@@ -33,7 +33,7 @@ Med omkostningsregnskab kan du få indsigt i, hvordan omkostningsforløbet er re
 -   Omfanget af omkostningsposter, der er genereret ved beregning af faste omkostninger, kan være meget omfattende.
 -   Det er ikke muligt at spore omkostningsforløbet mellem omkostningsobjekter.
 
-For at undgå disse virkninger kan du i Omkostningsregnskab konfigurere omkostningstildeling, så det passer til din organisations ledelsesmæssige rapporteringskrav. I dette emne beskrives, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
+For at undgå disse virkninger kan du i Omkostningsregnskab konfigurere omkostningstildeling, så det passer til din organisations ledelsesmæssige rapporteringskrav. Denne artikel beskriver, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
 
 > [!NOTE]
 > Du kan ændre konfigurationer, hvis rapporteringskrav ændres.

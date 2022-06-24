@@ -1,6 +1,6 @@
 ---
 title: Tilføje datafelter i momsintegrationen ved hjælp af udvidelser
-description: Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.
+description: Denne artikel forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871043"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Tilføje datafelter i momsintegrationen ved hjælp af udvidelse
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen. Disse felter kan udvides til momsdatamodellen for momstjenesten og bruges til bestemmelse af momskoder. Du kan finde flere oplysninger i [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
+Denne artikel forklarer, hvordan du kan bruge X++ udvidelser til at tilføje datafelter i momsintegrationen. Disse felter kan udvides til momsdatamodellen for momstjenesten og bruges til bestemmelse af momskoder. Du kan finde flere oplysninger i [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Datamodel
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 I denne kode er `_destination` det ombryderobjekt, der bruges til at generere anmodningen, og `_source` er `TaxIntegrationLineObject`-objektet.
 
 > [!NOTE]
-> Definer det feltnavn, der bruges i anmodningsformularen, som **privat konstruktionsstreng**. Strengen skal være nøjagtig den samme som det node-navn (ikke etiket), der tilføjes i emnet [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
+> Definer det feltnavn, der bruges i anmodningsformularen, som **privat konstruktionsstreng**. Strengen skal være nøjagtig den samme som det node-navn (ikke etiket), der tilføjes i artiklen [Tilføje datafelter i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Angiv feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjælp af metoden **SetField**. Datatypen for den anden parameter skal være **streng**. Hvis datatypen ikke er **streng**, skal du konvertere den.
 > Hvis datatypen er X++ **enumtype**, anbefales det, at du bruger **enum2Symbol** til at konvertere enum-værdien til en streng. Den enum-værdi, der tilføjes i momskonfigurationen, skal være nøjagtig den samme som enum-navnet. Nedenfor vises en liste over forskelle mellem enumværdi, label og navn.

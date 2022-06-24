@@ -1,6 +1,6 @@
 ---
 title: Planlægge din lokale kontoplan
-description: Dette emne indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen, når du har krav til lovpligtige/lokale krav til din organisation.
+description: Denne artikel indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen, når du har krav til lovpligtige/lokale krav til din organisation.
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798290"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946239"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Planlægge din lokale kontoplan
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen, når din organisation omfatter juridiske enheder, der skal opfylde kravene for specifikke lokaliteter, hvor de gør forretning. I dette emne bruges følgende begreber til at beskrive kontoplaner:
+Denne artikel indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen, når din organisation omfatter juridiske enheder, der skal opfylde kravene for specifikke lokaliteter, hvor de gør forretning. Denne artikel bruger følgende begreber til at beskrive kontoplaner:
 
 - **Global** – Den kontoplan, som organisationen bruger globalt. I de fleste tilfælde konsoliderer du til denne kontoplan.
 - **Lokal** – En kontoplan, som juridiske enheder i et bestemt land eller område bruger.

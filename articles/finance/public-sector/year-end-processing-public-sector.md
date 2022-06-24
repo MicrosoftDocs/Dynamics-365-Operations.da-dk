@@ -1,6 +1,6 @@
 ---
 title: Årsafslutningen i den offentlige sektor
-description: Dette emne indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
+description: Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,28 +8,28 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchYearEndClose
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 19601
 ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ac994392fccf6db475b3bb3811573ac529bbc12
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 719a786bb11f57d559b3e79cfbe8b384ce837fd2
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817680"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946295"
 ---
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
+Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 
-I dette emne beskrives de årsafslutningsfunktioner, som er tilgængelige for den offentlige sektor. Ved udgangen af regnskabsåret skal du generere ultimoposter og forberede alle konti til det næste regnskabsår.  Kunder i den offentlige sektor har følgende muligheder:
+Denne artikel beskriver de årsafslutningsfunktioner, som er tilgængelige for den offentlige sektor. Ved udgangen af regnskabsåret skal du generere ultimoposter og forberede alle konti til det næste regnskabsår.  Kunder i den offentlige sektor har følgende muligheder:
 
 -   Vælg konti efter midler for ultimo ved årsafslutning.
 -   Luk midler til forskellige konti. For eksempel kan du lukke nominelle konti, der er knyttet til statslige midler til pengebalancer. Du kan også lukke nominelle konti, der er forbundet med egne midler til overførte resultater.

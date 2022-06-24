@@ -1,6 +1,6 @@
 ---
 title: Konfigurere A-skat-komponentgrupper for TDS-skattetypen
-description: Dette emne indeholder en forklaring på, hvordan du opretter komponentgrupper for A-skat, f.eks. leje og kontrahent, for skattetypen TDS, der fratrækkes ved kilden.
+description: Denne artikel indeholder en forklaring på, hvordan du opretter komponentgrupper for A-skat, f.eks. leje og kontrahent, for skattetypen TDS, der fratrækkes ved kilden.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ad4ac16d2618a99ba8ea5c2da010eb8e96447775
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e7b856be18618573408388fe0acbd702aeb4bcc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896248"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Konfigurere A-skat-komponentgrupper for TDS-skattetypen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du opretter komponentgrupper for A-skat, f.eks. **Leje** og **Kontrahent**, for skattetypen TDS, der fratrækkes ved kilden.
+Denne artikel indeholder en forklaring på, hvordan du opretter komponentgrupper for A-skat, f.eks. **Leje** og **Kontrahent**, for skattetypen TDS, der fratrækkes ved kilden.
 
 1. Gå til **Moms \> Opsætning \> A-skat \> A-skat-komponentgrupper**.
 

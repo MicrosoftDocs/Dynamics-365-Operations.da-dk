@@ -1,6 +1,6 @@
 ---
-title: Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
-description: I dette emne beskrives, hvordan du kan konfigurere generelle budgetreservationer og sende dem til en arbejdsgang for den offentlige sektor.
+title: Konfigurere generelle budgetreservationer og sende dem til en arbejdsproces
+description: Denne artikel beskriver, hvordan du kan konfigurere generelle budgetreservationer og sende dem til en arbejdsproces for den offentlige sektor.
 author: AlexRenney
 ms.date: 04/24/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 933d75513b87a2d41d3450b15b06835c3f42bb60
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 552109e086401bff3afc7c7fa6983ffbce86dd26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849665"
 ---
 # <a name="set-up-general-budget-reservations-and-submit-them-to-a-workflow"></a>Konfigurere generelle budgetreservationer og sende dem til en arbejdsgang
 
@@ -27,7 +27,7 @@ ms.locfileid: "8722196"
 
 Når en generel budgetreservation er konfigureret til at bruge en arbejdsgang, skal dokumentet først sendes og godkendes via arbejdsgangssystemet. Når arbejdsgangen er fuldført, og reservationen er godkendt, kan du stadig redigere dokumentet. Selvom det er muligt at bogføre dokumentet, er ingen andre kontrolelementer og felter på siden tilgængelige, medmindre du vælger indstillingen til redigering af dokumentet. Bemærk, at hvis du redigerer en godkendt reservation, nulstilles arbejdsgangsstatussen til **Kladde**, og det er ikke længere muligt at bogføre dokumentet. De andre kontrolelementer og felter på siden er dog tilgængelige. Når du har ændret en reservation, skal du sende den til godkendelse i arbejdsgangssystemet igen.
 
-Følgende illustration viser, hvordan du konfigurerer en arbejdsgang til generelle budgetreservationer. Hvert nummereret trin svarer til et afsnit i dette emne.
+Følgende illustration viser, hvordan du konfigurerer en arbejdsgang til generelle budgetreservationer. Hvert nummereret trin svarer til et afsnit i denne artikel.
 
 ![Konfiguration af en arbejdsgang for generel budgetreservation.](media/gbr-workflow-process.jpg "Konfiguration af en arbejdsgang for generel budgetreservation")
 

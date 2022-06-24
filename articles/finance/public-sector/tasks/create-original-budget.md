@@ -1,6 +1,6 @@
 ---
 title: Oprette et oprindeligt budget og derefter tilbageføre foreløbige budgetposter i den offentlige sektor
-description: Dette emne indeholder oplysninger om, hvordan du opretter og tilbagefører en oprindelig budgetpost ved hjælp af budgetmodel- og dimensionsværdier med foreløbige budgetbeløb.
+description: Denne artikel indeholder oplysninger om, hvordan du opretter og tilbagefører en oprindelig budgetpost ved hjælp af budgetmodel- og dimensionsværdier med foreløbige budgetbeløb.
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7758a1c9edfa129ba8b63a146b38ed3f119fd051
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 1efb6363be881b0a35f356c2cb2334e5a37e43ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119420"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848398"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>Oprette et oprindeligt budget og derefter tilbageføre foreløbige budgetposter i den offentlige sektor
 

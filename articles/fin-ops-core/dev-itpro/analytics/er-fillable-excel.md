@@ -1,6 +1,6 @@
 ---
 title: Designe en konfiguration til at generere dokumenter i Excel-format
-description: Dette emne giver beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
+description: Denne artikel beskriver, hvordan du kan designe et ER-format (elektronisk rapportering) til at udfylde en Excel-skabelon og derefter generere udgående Excel-formatdokumenter.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811414"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854808"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811414"
 
 Du kan designe en formatkonfiguration af [Elektronisk rapportering (ER)](general-electronic-reporting.md), der har en ER-formatkomponent, som du kan konfigurere til at generere et udgående dokument i et Microsoft Excel-projektmappeformat. Specifikke ER-formatkomponenter skal bruges til dette formål.
 
-Hvis du vil vide mere om denne funktion, skal du følge trinnene i emnet, [Designe en konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
+Hvis du vil vide mere om denne funktion, skal du følge trinnene i artiklen [Designe en konfiguration til generering af rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Tilføj et nyt ER-format
 
@@ -263,7 +263,7 @@ I forbindelse med en komponent i et enkelt **ark** kan du tilføje flere kompone
 
 Under den tilføjede **sidefod**-komponent skal du tilføje de nødvendige indlejrede komponenter i **Tekst\\Streng**, **Tekst\\Dato og tid** eller en anden type. Konfigurer bindingerne for disse komponenter for at angive, hvordan sidefoden skal udfyldes.
 
-Du kan også bruge særlige [formatteringskoder](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til at formatere indholdet af en genereret sidefod korrekt. Du kan få mere at vide om, hvordan du bruger denne indfaldsvinkel ved at følge trinnene i [Eksempel 1](#example-1) senere i dette emne.
+Du kan også bruge særlige [formatteringskoder](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til at formatere indholdet af en genereret sidefod korrekt. Du kan få mere at vide om, hvordan du bruger denne indfaldsvinkel ved at følge trinnene i [Eksempel 1](#example-1) senere i denne artikel.
 
 > [!NOTE]
 > Når du konfigurerer ER-formater, skal du huske at bruge Excel [grænsen](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) og det maksimale antal tegn i et enkelt sidehoved eller en enkelt sidefod.

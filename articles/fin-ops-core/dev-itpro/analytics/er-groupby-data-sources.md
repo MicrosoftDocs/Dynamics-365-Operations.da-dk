@@ -1,6 +1,6 @@
 ---
 title: Gruppere poster og aggregere beregninger ved hjælp af GROUPBY-datakilder
-description: I dette emne beskrives, hvordan du kan bruge datakilder af GROUPBY-typen i elektronisk rapportering (ER).
+description: Denne artikel beskriver, hvordan du kan bruge datakilder af GROUPBY-typen i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861781"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Gruppere poster og aggregere beregninger ved hjælp af GROUPBY-datakilder
 

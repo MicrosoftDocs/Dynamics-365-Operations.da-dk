@@ -1,6 +1,6 @@
 ---
 title: Bruge arbejdsprocesser til at administrere medarbejderoplysninger
-description: I dette emne forklares, hvordan du kan bruge arbejdsgange til at administrere medarbejderoplysninger.
+description: Denne artikel forklarer, hvordan du kan bruge arbejdsgange til at administrere medarbejderoplysninger.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7c416a82976bc39464006325f02f1af4d2f32ea4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fcbacc3cb891043560fabf28487bfeb12d1b77b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908795"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Bruge arbejdsprocesser til at administrere medarbejderoplysninger
 
@@ -27,7 +27,7 @@ ms.locfileid: "8691520"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne forklares, hvordan du kan bruge arbejdsgangsfunktionen i Personale til at administrere medarbejderoplysninger. Du kan f.eks. knytte en arbejdsgang til en stilling og konfigurere et godkendelsesforløb, der startes, når medarbejderne ændrer deres post.
+I denne artikel beskrives, hvordan du kan bruge arbejdsgangsfunktionen i Human Resources til at administrere medarbejderoplysninger. Du kan f.eks. knytte en arbejdsgang til en stilling og konfigurere et godkendelsesforløb, der startes, når medarbejderne ændrer deres post.
 
 Arbejdsgangsfunktionen til Human Resources indeholder adskillige arbejdsganger til administration af personaleaktiviteter. Desuden er der adgang til talrige indstillinger, så du kan ændre bestemte arbejdsgange og knytte dem til et rapporteringshierarki. Arbejdsgange er tilgængelige som en hjælp til at styre ændringer af flere standardtyper af medarbejderoplysninger. Du kan knytte en arbejdsgang til en stilling. Hvis medarbejderne derefter ændrer deres medarbejderpost, starter en arbejdsproces, der kræver godkendelse, før de nye oplysninger gemmes. Arbejdsgange er foruddefineret for følgende typer oplysninger for at hjælpe dig med effektivt at administrere ændringer og holde dine medarbejderdata nøjagtige:
 

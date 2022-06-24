@@ -1,6 +1,6 @@
 ---
 title: Generel finanskladdehåndtering
-description: I dette emne beskrives funktionerne i Microsoft Dynamics 365 Finance, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.
+description: Denne artikel beskriver funktionerne i Microsoft Dynamics 365 Finance, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 2055c028f7bfe8edc9faec8f791fff2fbfe08bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720021"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896370"
 ---
-# <a name="general-journal-processing"></a>Finanskladdehåndtering
+# <a name="general-journal-processing"></a>Generel finanskladdehåndtering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de funktioner, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.  
+Denne artikel beskriver de funktioner, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.  
 
 ## <a name="journal-names"></a>Kladdenavne
 

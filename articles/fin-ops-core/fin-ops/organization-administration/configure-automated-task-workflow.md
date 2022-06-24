@@ -1,6 +1,6 @@
 ---
 title: Konfigurere automatiserede opgaver i en arbejdsgang
-description: I dette emne forklares det, hvordan du konfigurerer egenskaberne for en automatiseret opgave.
+description: Denne artikel forklarer, hvordan du konfigurerer egenskaberne for en automatiseret opgave.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7346649108824eb4e7209a2476456a469affa1c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b482338c436ea9226d31f74c823ee1dc141b24cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066512"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891747"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>Konfigurere automatiserede opgaver i en arbejdsgang
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066512"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne forklares det, hvordan du konfigurerer egenskaberne for en automatiseret opgave.
+Denne artikel forklarer, hvordan du konfigurerer egenskaberne for en automatiseret opgave.
 
 Hvis du vil konfigurere en automatiseret opgave i arbejdsgangseditoren, skal du højreklikke på opgaven og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter følgende procedurer for at konfigurere egenskaberne for den automatiserede opgave.
 

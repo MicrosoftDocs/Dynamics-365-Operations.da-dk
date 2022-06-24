@@ -1,6 +1,6 @@
 ---
 title: Metode for halvårligt afskrivningsprincip
-description: I dette emne beskrives den metode, som anlægsaktiver bruger til at beregne afskrivning ved hjælp af halvårsprincippet, der beregner seks måneders afskrivning i et aktivs første og sidste år i brug.
+description: Denne artikel beskriver den metode, som anlægsaktiver bruger til at beregne afskrivning ved hjælp af halvårsprincippet, der beregner seks måneders afskrivning i et aktivs første og sidste år i brug.
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879589"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metode for halvårligt afskrivningsprincip
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I dette emne beskrives den metode, der bruges i anlægsaktiver til at beregne afskrivninger ved hjælp af halvårsprincippet. Det halvårlige princip beregner seks afskrivningsmåneder under et anlægs første og sidste år i brug. Du kan finde flere oplysninger om afskrivningsprincipper under [Afskrivningsmetoder og -principper](Fixed-asset-depreciation-conventions.md). 
+Denne artikel beskriver den metode, der bruges i anlægsaktiver til at beregne afskrivninger ved hjælp af halvårsprincippet. Det halvårlige princip beregner seks afskrivningsmåneder under et anlægs første og sidste år i brug. Du kan finde flere oplysninger om afskrivningsprincipper under [Afskrivningsmetoder og -principper](Fixed-asset-depreciation-conventions.md). 
 
 Når du bruger afskrivningsprincippet på seks måneder, bruger systemet anskaffelsesåret eller det år, hvor anlægsaktivet blev taget i brug, og beregner derefter fem års afskrivning fra det pågældende år og tilføjer derefter seks måneder. For at illustrere denne proces skal du forestille dig et aktiv, der er anskaffet til en pris af 50.000 og taget i brug i april 2020. Det antages også, at aktivet har en levetid på fem år.
 

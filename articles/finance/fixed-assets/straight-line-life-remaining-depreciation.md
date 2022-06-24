@@ -1,6 +1,6 @@
 ---
 title: Lineær afskrivning for den resterende levetid
-description: Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for den resterende levetid.
+description: Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for den resterende levetid.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853432"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Lineær afskrivning for den resterende levetid
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for den resterende levetid.
+Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for den resterende levetid.
 
 Når du opretter en afskrivningsprofil for et anlægsaktiv og vælger **Lineær afskrivning for den resterende levetid** i feltet **Metode** på siden **Afskrivningsprofiler**, er afskrivningen af anlægsaktiver, der er knyttet til afskrivningsprofilen, baseret på den resterende levetid for anlægsaktivet. Afskrivningsbeløbet er generelt det samme i hver afskrivningsperiode. Hvis du vil oprette en afskrivning for den resterende levetid, skal du også foretage valg i feltet **Afskrivningsår** og feltet **Periodefrekvens** på siden **Afskrivningsprofiler**. Hvilke indstillinger , der er tilgængelige i feltet **Periodefrekvens**, varierer, afhængigt af den værdi der er valgt i feltet **Afskrivningsår**.
 
@@ -35,7 +35,7 @@ Du kan vælge enten **Kalender** eller **Regnskabsår** i feltet **Afskrivnings�
 
 ### <a name="calendar"></a>Kalender
 
-Hvis du vælger **Kalender** i **_Afskrivningsår_*_ feltet, vises der som udgangspunkt et år fra d. 1. januar til og med 31. december, selvom du har defineret regnskabsåret anderledes. Indstillingen _* Kalender** opdaterer afskrivningsgrundlaget pr. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
+Hvis du vælger **Kalender** i **_Afskrivningsår_*_ feltet, vises der som udgangspunkt et år fra d. 1. januar til og med 31. december, selvom du har defineret regnskabsåret anderledes. Indstillingen _* Kalender** opdaterer afskrivningsgrundlaget pr. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i denne artikel er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 - **Årligt** bogfører et beløb d. 31. december.
 - **Månedligt** bogfører et månedligt beløb sidst i hver kalendermåned.

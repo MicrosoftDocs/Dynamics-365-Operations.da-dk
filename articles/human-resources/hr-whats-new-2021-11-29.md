@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources 19. november 2021
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i enkeltstående Microsoft Dynamics 365 Human Resources for 19. november 2021.
+description: Denne artikel beskriver funktioner, der enten er nye eller ændrede i enkeltstående Microsoft Dynamics 365 Human Resources for 19. november 2021.
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f28057c370b27dbdad4bfe1104e9289f7df65621
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3e08432a4ce4d73cd67ad839191abe9f6e691a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886067"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 19. november 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Microsoft Dynamics 365 Human Resources.
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -40,9 +40,9 @@ Denne version indeholder følgende fejlrettelser. Ændringerne gælder for build
 Følgende fejlrettelser er inkluderet i denne version.
 
 > [!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne for at medtage rettelser i buildet, som er foretaget, efter dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis denne artikel til at omfatte fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
-| Fejlnummer | Emne | Beskrivelse |
+| Fejlnummer | Problem | Beskrivende tekst |
 |---|---|---|
 | 626178 | Navigation mangler i arbejderfelterne i **Selvbetjening for leder** | Dette problem er nu løst. Navigationen er tilgængelig, så du kan se rapportdetaljerne i **Selvbetjening for leder**. |
 | 632573 | Der opstår ingen valideringsfejl, når du gemmer et **kursus** | Dette problem er nu løst. Når du oprettede et kursus, hvor **Mindste antal deltagere** var større end 0, blev det stadig tilladt at gemme det, selvom **Maksimalt antal deltagere** er 0. |

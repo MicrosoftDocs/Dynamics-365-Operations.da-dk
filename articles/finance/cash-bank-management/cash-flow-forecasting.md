@@ -1,6 +1,6 @@
 ---
 title: Likviditetsbudget
-description: Dette emne indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
+description: Denne artikel indeholder en oversigt over likviditetsbudgetteringsprocessen. I emnet beskrives også, hvordan likviditetsbudgettering er integreret med andre moduler i systemet.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904666"
 ---
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
@@ -110,7 +110,7 @@ Du kan finde flere oplysninger i [Eksterne data i likviditetsbudgetter](../../fi
 
 I version 10.0.17 giver en ny funktion mulighed for integration med projektstyring og regnskab og likviditetsbudgettering. I arbejdsområdet **Funktionsstyring** skal du aktivere funktionen **Likviditetsprojektbudget** for at medtage de budgetterede omkostninger og indtægter i likviditetsbudgettet. Vælg de projekttyper og posteringstyper, der skal medtages i likviditetsbudgettet, under fanen **Projektstyring og regnskab** på siden **Opsætning af likviditetsbudget**. Vælg derefter projektprognosemodellen. En undermodel af typen reduktion fungerer bedst. De likviditetskonti, der blev angivet i debitoropsætningen, bruges som standardlikviditetskonti. Du behøver derfor ikke angive standardlikviditetskonti, når du opretter likviditetsbudgettet. En budgetmodel kan også bruges, men der kan kun vælges én type på siden **Opsætning af likviditetsbudget** til projektstyring og regnskab. En budgetmodel giver mest fleksibilitet, når der bruges Projektstyring og regnskab eller Project Operations.
 
-Når funktionen til likviditetsprojektbudget er aktiveret, kan du få vist likviditetsbudgettet for hvert projekt på siden **Alle projekter**. Vælg **Likviditetsbudget** i gruppen **Prognose** under fanen **Planlæg** i handlingsruden. I arbejdsområderne **Oversigt over kontanter** (se afsnittet om [Rapportering](#reporting) senere i dette emne) viser posteringstypen Projektprognose indgående (projektbudgetindtægter) og udgående pengestrømme (projektbudgetomkostninger). Beløbene kan kun medtages, hvis feltet **Projektstadie** i arbejdsområderne **Oversigt over kontanter** er angivet til **I gang**.
+Når funktionen til likviditetsprojektbudget er aktiveret, kan du få vist likviditetsbudgettet for hvert projekt på siden **Alle projekter**. Vælg **Likviditetsbudget** i gruppen **Prognose** under fanen **Planlæg** i handlingsruden. I arbejdsområderne **Oversigt over kontanter** (se afsnittet om [Rapportering](#reporting) senere i denne artikel) viser posteringstypen Projektprognose indgående (projektbudgetindtægter) og udgående pengestrømme (projektbudgetomkostninger). Beløbene kan kun medtages, hvis feltet **Projektstadie** i arbejdsområderne **Oversigt over kontanter** er angivet til **I gang**.
 
 Projektposteringer medtages stadig i likviditetsbudgettet på flere måder, uanset om funktionen **Likviditetsprojektbudget** er aktiveret. Bogførte projektfakturaer medtages i budgettet som en del af åbne debitorposteringer. Projektdefinerede salgsordrer og indkøbsordrer medtages i budgettet som åbne ordrer, når de er angivet i systemet. Du kan også overføre projektbudgetter til en finansbudgetmodel. Denne finansbudgetmodel medtages derefter i likviditetsbudgettet som en del af posterne i budgetregisteret. Hvis du har aktiveret funktionen **Likviditetsprojektprognose**, skal du ikke overføre projektprognoser til en finansbudgetmodel, da denne handling bevirker, at projektprognoserne tælles to gange.
 

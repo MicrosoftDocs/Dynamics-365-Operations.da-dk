@@ -1,6 +1,6 @@
 ---
-title: Vise bogførte momstransaktioner
-description: I dette emne beskrives forskellige måder, du kan få vist bogførte momstransaktioner på.
+title: Vis bogførte momstransaktioner
+description: Denne artikel beskriver forskellige måder, du kan se bogførte momstransaktioner på.
 author: twheeloc
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c140f0565005120f57ba1c22bbdac50b3d0d3d4
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 028ebe44a639b32e45e0dd0af57887abc9b2af6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566125"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883236"
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Vise bogførte momstransaktioner
+# <a name="view-posted-sales-tax-transactions"></a>Vis bogførte momstransaktioner
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives forskellige måder, du kan få vist bogførte momstransaktioner på. Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
+Denne artikel beskriver forskellige måder, du kan se bogførte momstransaktioner på. Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
 
 ## <a name="posted-sales-tax-page"></a>Siden Bogført moms
 

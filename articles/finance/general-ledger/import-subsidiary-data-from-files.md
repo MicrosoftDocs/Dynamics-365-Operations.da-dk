@@ -1,6 +1,6 @@
 ---
 title: Importere datterselskabsdata fra filer
-description: Dette emne forklarer, hvordan du forbereder data fra eksterne systemer, så de kan importeres til Microsoft Dynamics 365 Finance.
+description: Denne artikel forklarer, hvordan du forbereder data fra eksterne systemer, så de kan importeres til Microsoft Dynamics 365 Finance.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846764"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importere datterselskabsdata fra filer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du forbereder data fra eksterne systemer, så de kan importeres til Microsoft Dynamics 365 Finance. Du kan bruge siden **Konsolider med import** (**Konsolideringer \> konsolideret med import**) til at forberede overførsel af datterselskabsdata fra eksterne systemer.
+Denne artikel forklarer, hvordan du forbereder data fra eksterne systemer, så de kan importeres til Microsoft Dynamics 365 Finance. Du kan bruge siden **Konsolider med import** (**Konsolideringer \> konsolideret med import**) til at forberede overførsel af datterselskabsdata fra eksterne systemer.
 
 1. Oprette en juridisk datterselskabsenhed til brug i konsolideringsprocessen. Du kan finde flere oplysninger om at oprette juridiske enheder i [Oprette juridisk enhed](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Du kan finde flere oplysninger i [Forberede en juridisk enhed til brug i konsolideringsprocessen](prepare-company-for-consolidation.md) og [Konfigurere en juridisk enhed til konsolidering](set-up-subsidiary-company-for-consolidation.md).
 

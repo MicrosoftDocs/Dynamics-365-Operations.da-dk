@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområde for kreditorsamarbejdsfakturering
-description: Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
+description: Denne artikel forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1d9415b7118efb06099b775f68ce7ca9fb6673ed
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 9ef4204e0be437b50af047704e07600653c877c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896544"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet **Kreditorsamarbejdsfakturaer**.
+Denne artikel forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for **Kreditorsamarbejdsfakturering**.
 
 Arbejdsområdet **Kreditorsamarbejdsfakturaer** kan bruges til at få vist oplysninger om kreditorfakturaer og sende fakturaer til systemet ved hjælp af arbejdsgangfunktioner.
 

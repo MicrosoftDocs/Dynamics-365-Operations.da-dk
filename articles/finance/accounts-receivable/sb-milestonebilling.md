@@ -1,6 +1,6 @@
 ---
 title: Skabeloner for milepæl
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere milepælsfakturering i Abonnementsfakturering.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere milepælsfakturering i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3c2cf751e4998c73bc3816e5b81e8d5963c8e53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856764"
 ---
 # <a name="milestone-billing"></a>Milepælsfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du definerer skabeloner til funktionen milepælsfakturering i Abonnementsfakturering. For hver linje i milepælsskabelonen kan du definere fordelingsprocenten eller -beløbet. Du kan derefter tildele milepælsskabelonen til faktureringsplanelementer, der bruger funktionen til milepælsfakturering.
+Denne artikel indeholder en forklaring på, hvordan du definerer skabeloner til funktionen milepælsfakturering i Abonnementsfakturering. For hver linje i milepælsskabelonen kan du definere fordelingsprocenten eller -beløbet. Du kan derefter tildele milepælsskabelonen til faktureringsplanelementer, der bruger funktionen til milepælsfakturering.
 
 ## <a name="add-a-template"></a>Tilføj en skabelon
 

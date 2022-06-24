@@ -1,6 +1,6 @@
 ---
-title: Undervisningskatalog for Dynamics 365 Finance-udviklere
-description: Find alle uddannelsesmuligheder for udviklere af Dynamics 365 Finance.
+title: Undervisningskatalog til udviklere i Dynamics 365 Finance
+description: Find alle uddannelsesmulighederne for udviklere i Dynamics 365 Finance.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903093"
 ---
-# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Undervisningskatalog for Dynamics 365 Finance-udviklere
+# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Undervisningskatalog til udviklere i Dynamics 365 Finance
 
 
 
@@ -47,7 +47,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 | [Finans og drift: Udvidelse af Dynamics 365 for Finance and Operations med PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Forstå enkelheden af Microsoft PowerApps, og hvordan den kan integreres i Dynamics 365 for Finance and Operations med henblik på at transformere virksomheder digitalt og øge brugernes produktivitet. | Gratis optagelse af en webkonference | 43 minutter |
 | [Finans og drift: Udvidelsesmuligheder (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Vi vil levere en oversigt og opdatering af Microsofts udvidelsesplaner. Vi diskuterer nærmere de forskellige metoder til udvidelse af en løsning og dykker dybt ned i funktionerne til udvidelse af metadata og muligheden for at forberede og udvide kode, herunder via den stærke kommandovejsfunktion. | Gratis optagelse af en webkonference | 50 minutter |
 | [Visual Studio Team Services-konfiguration (VSTS) (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Denne tekniske samtale gennemgår de nødvendige trin for at konfigurere en VSTS-forekomst og et projekt for at oprette forbindelse til LCS-implementeringsprojekt for konfiguration af udviklings- og testmiljø. | Gratis optagelse af en webkonference | 41 minutter |
-| [Dataverse Dataintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Vær med i denne tekniske samtale om mulighederne for Dataverse-dataintegrator. Vi vil diskutere integrationsmulighederne mellem andre Dynamics 365 Customer Engagement og Dynamics 365 Finance og drift samt integrering med andre løsninger fra tredjepartsleverandører. | Gratis optagelse af en webkonference | 61 minutter |
+| [Dataverse Dataintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Vær med i denne tekniske samtale om mulighederne for Dataverse-dataintegrator. Vi vil diskutere integrationsmulighederne mellem andre Dynamics 365 Customer Engagement og Dynamics 365 Finans og drift samt integrering med andre løsninger fra tredjepartsleverandører. | Gratis optagelse af en webkonference | 61 minutter |
 | [Integration mellem Dynamics 365 for Sales og Dynamics 365 til Finance & Operations via Dataverse (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | I denne tekniske samtale introducerer vi det integrationsscenarie, der kaldes for Kundeemne til kontanter, med salgs- og marketingaktiviteter i Dynamics 365 for Sales og udførelse i Dynamics 365 for Finance and Operations. Vi kigger også på dataintegratoren, og hvordan du ændrer integrationen. | Gratis optagelse af en webkonference | 54 minutter |
 | [Datastyring (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Vær med i denne tekniske samtale om dataadministration. Få mere at vide om de tilgængelige muligheder og de scenarier, de anbefales til. Vi vil dække datastyringsstrukturen, skabeloner, databasekopiering, datadeling og ydeevne i hele virksomheden. | Gratis optagelse af en webkonference | 58 minutter |
 | [Azure-integrationsværktøjer til Dynamics 365 for Finance and Operations (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Denne tekniske samtale vil omfatte de typer værktøjer, som kan være en hjælp, når der skal integreres med Dynamics 365 til Finans og drift, og hvornår du skal vælge hvilket integrationsværktøj. Sessionen gennemgår også nogle af integrationsscenarierne, der er under brug af Azure-integrationstjenester. | Gratis optagelse af en webkonference | 63 minutter |

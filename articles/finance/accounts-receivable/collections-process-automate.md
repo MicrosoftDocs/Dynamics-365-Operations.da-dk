@@ -1,6 +1,6 @@
 ---
-title: Automatiseret rykkerproces
-description: I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet eller et rykkerbrev, der sendes til kunden.
+title: Automatisering af opkrævningsproces
+description: Denne artikel beskriver processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet eller et rykkerbrev, der sendes til kunden.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486863"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946141"
 ---
 # <a name="collections-process-automation"></a>Automatisering af opkrævningsproces
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet (f.eks. et telefonopkald) eller et rykkerbrev, der sendes til kunden. 
+Denne artikel beskriver processen for opsætning af strategier for rykkerprocessen, der automatisk identificerer debitorfakturaer, der kræver en mailpåmindelse, en rykkeraktivitet (f.eks. et telefonopkald) eller et rykkerbrev, der sendes til kunden. 
 
 Organisationer bruger ofte en betydelig del af tiden på at søge efter aldersfordelte saldorapporter, debitorkonti og åbne fakturaer for at lære, hvilke kunder der bør kontaktes om en åben faktura eller kontosaldo. Denne eftersøgning stjæler tid fra en inkassators tidsforbrug på kommunikation med kunderne for at opkræve forfaldne saldi eller løse fakturatvister. Med en automatiseret rykkerproces kan du oprette en strategibaseret tilgang til din rykkerproces. Dette hjælper dig med at anvende rykkeraktiviteter på en ensartet måde ved at bruge tilpassede mailpåmindelser eller en programproces til at udsende rykkere. 
 

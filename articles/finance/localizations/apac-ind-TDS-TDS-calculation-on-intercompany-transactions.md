@@ -1,6 +1,6 @@
 ---
 title: Beregning af kildeskat for interne transaktioner
-description: Dette emne beskriver den proces, der bruges til at beregne kildeskat (TDS – Tax Deducted at Source) på interne transaktioner i faser.
+description: Denne artikel beskriver den proces, der bruges til at beregne kildeskat (TDS – Tax Deducted at Source) på interne transaktioner i faser.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888967"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>Beregning af kildeskat for interne transaktioner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver den proces, der bruges til at beregne kildeskat (TDS – Tax Deducted at Source) på interne transaktioner i faser.
+Denne artikel beskriver den proces, der bruges til at beregne kildeskat (TDS – Tax Deducted at Source) på interne transaktioner i faser.
 
 Når der oprettes en intern indkøbsordre eller salgsordre, bruges den standardgruppe for kildeskat, som er defineret for debitoren eller kreditoren, til at beregne skattebeløbet. Når fakturaen bogføres, bogføres skattebeløbet på de relevante konti for tilgodehavende eller skyldig skat.
 

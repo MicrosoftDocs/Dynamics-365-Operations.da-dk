@@ -1,6 +1,6 @@
 ---
 title: Tilbageføre en kreditorbetaling
-description: I dette emne beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor.
+description: I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d982fc224755e2b1421ce7721e245b89f9eff3cb
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6216aed10866dbd5d814ae7f6b5a16ee67874fda
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858550"
 ---
 # <a name="reverse-a-vendor-payment"></a>Tilbageføre en kreditorbetaling
 

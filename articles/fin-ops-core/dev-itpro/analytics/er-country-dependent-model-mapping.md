@@ -1,6 +1,6 @@
 ---
 title: Konfigurer ER-modeltilknytninger ud fra landeafhængighed
-description: Dette emne beskriver, hvordan du kan konfigurere ER-modeltilknytninger, så de afhænger af den juridiske enheds land/område-kontekst, der styrer brugen af dem.
+description: Denne artikel beskriver, hvordan du kan konfigurere ER-modeltilknytninger, så de afhænger af den juridiske enheds land/område-kontekst, der styrer brugen af dem.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883869"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurer ER-modeltilknytninger ud fra landeafhængighed
 
 [!include[banner](../includes/banner.md)]
 
-Du kan konfigurere modeltilknytninger for Elektronisk rapportering (ER), så de implementerer en generisk ER-datamodel, men er specifikke for Dynamics 365 Finance. Dette emne beskriver, hvordan du kan designe flere ER-modeltilknytninger for en ER-datamodel til at styre, hvordan de bruges af tilsvarende ER-formater, der køres fra firmaer, der har forskellige land/område-kontekster.
+Du kan konfigurere modeltilknytninger for Elektronisk rapportering (ER), så de implementerer en generisk ER-datamodel, men er specifikke for Dynamics 365 Finance. Denne artikel beskriver, hvordan du kan designe flere ER-modeltilknytninger for en ER-datamodel til at styre, hvordan de bruges af tilsvarende ER-formater, der køres fra firmaer, der har forskellige land/område-kontekster.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
+Før du kan følge eksemplerne i denne artikel, skal du have følgende adgang:
 
 - Adgang til Finance for en af følgende roller:
     - Udvikler til elektronisk rapportering
@@ -42,11 +42,11 @@ Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-Visse trin i dette emne kræver kørsel af et ER-format. I nogle tilfælde påvirkes udførelsen af et ER-format af den land/område-kontekst, som det firma, du aktuelt er logget på. Du kan køre et ER-format i den aktuelle RCS-forekomst, hvis det firma, der har den krævede land/område-kontekst, er tilgængelig i RCS. Ellers skal du overføre en fuldført version af den ER-modeltilknytning og ER-format, der bruger ER-datamodellen, til din Finance-forekomst, og derefter køre ER-formatet i den pågældende Finance-forekomst. Du kan finde oplysninger om, hvordan du importerer konfigurationer, der er placeret i RCS, til en Finance-forekomst under [Importer konfigurationer fra RCS](rcs-download-configurations.md).
+Visse trin i denne artikel kræver kørsel af et ER-format. I nogle tilfælde påvirkes udførelsen af et ER-format af den land/område-kontekst, som det firma, du aktuelt er logget på. Du kan køre et ER-format i den aktuelle RCS-forekomst, hvis det firma, der har den krævede land/område-kontekst, er tilgængelig i RCS. Ellers skal du overføre en fuldført version af den ER-modeltilknytning og ER-format, der bruger ER-datamodellen, til din Finance-forekomst, og derefter køre ER-formatet i den pågældende Finance-forekomst. Du kan finde oplysninger om, hvordan du importerer konfigurationer, der er placeret i RCS, til en Finance-forekomst under [Importer konfigurationer fra RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>En enkel modeltilknytningscase
 
-Følg trinnene i [Bilag 1](#appendix1) i dette emne for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationen **Tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
+Følg trinnene i [Bilag 1](#appendix1) i denne artikel for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationen **Tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
 ![ER-konfigurationssiden Format for at få mere at vide om tilknytningskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Bemærk, at webbrowseren tilbyder at hente den tekstfil, der blev genereret af d
 
 ## <a name="multiple-shared-model-mappings-case"></a>Case med delte modeltilknytninger
 
-Følg trinnene i [Bilag 2](#appendix2) i dette emne for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationerne **Tilknytning (generel)** og **Tilpasset tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
+Følg trinnene i [Bilag 2](#appendix2) i denne artikel for at designe de påkrævede ER-komponenter. Du har nu modeltilknytningskonfigurationerne **Tilknytning (generel)** og **Tilpasset tilknytning (generel)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
 ![ER-konfigurationsside, tilknytning af generel brugerdefineret konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Bemærk, at udførelsen af det valgte ER-format lykkedes. Webbrowseren tilbyder 
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Case med blandede modeltilknytninger
 
-Følg trinnene i [Bilag 3](#appendix3) i dette emne for at designe de påkrævede ER-komponenter. Du har nu konfigurationerne **Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Modeltilknytning (FR)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
+Følg trinnene i [Bilag 3](#appendix3) i denne artikel for at designe de påkrævede ER-komponenter. Du har nu konfigurationerne **Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Modeltilknytning (FR)**, der indeholder modeltilknytningen for definitionen **Indgangspunktet 1**.
 
 Bemærk, at version 1 af modeltilknytningskonfigurationen **Tilknytning (FR)** er konfigureret, så den kun gælder for ER-formater for **Model til at lære tilknytninger**, der køres i Finance-firmaer, som har fransk land/område-kontekst.
 
@@ -138,10 +138,10 @@ Bemærk, at udførelsen af det valgte ER-format lykkedes. Webbrowseren tilbyder 
 
 Som du har set, fungerer valget af en modeltilknytning til udførsel af et ER-format på følgende måde:
 
-- Den modeltilknytningsdefinition, som et ER-format bruger, er angivet (**Indgangspunkt 1** i eksemplerne i dette emne).
-- Alle tilknytningskonfigurationer, der indeholder en tilknytning, som har den angivne definition, og som opfylder eventuelle begrænsninger af land/område-kontekster, der er konfigureret, kan muligvis bruges til at køre ER-formatet (**Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Tilknytning (FR)** i eksemplerne i dette emne).
-- Enhver standardmodeltilknytning, der har begrænsninger for land/område-kontekst, har den højeste prioritet i forbindelse med udvælgelse (**Tilknytning (FR)** i eksemplerne i dette emne).
-- Enhver standardmodeltilknytning, der ikke har begrænsninger for land/område-kontekst, har den næsthøjeste prioritet i forbindelse med udvælgelse (**Tilpasset tilknytning (generel)** i eksemplerne i dette emne).
+- Den modeltilknytningsdefinition, som et ER-format bruger, er angivet (**Indgangspunkt 1** i eksemplerne i denne artikel).
+- Alle tilknytningskonfigurationer, der indeholder en tilknytning, som har den angivne definition, og som opfylder eventuelle begrænsninger af land/område-kontekster, der er konfigureret, kan muligvis bruges til at køre ER-formatet (**Tilknytning (generel)**, **Tilpasset tilknytning (generel)** og **Tilknytning (FR)** i eksemplerne i denne artikel).
+- Enhver standardmodeltilknytning, der har begrænsninger for land/område-kontekst, har den højeste prioritet i forbindelse med udvælgelse (**Tilknytning (FR)** i eksemplerne i denne artikel).
+- Enhver standardmodeltilknytning, der ikke har begrænsninger for land/område-kontekst, har den næsthøjeste prioritet i forbindelse med udvælgelse (**Tilpasset tilknytning (generel)** i eksemplerne i denne artikel).
 - Enhver modeltilknytning, der har begrænsninger for land/område-kontekst, har højere prioritet i forbindelse med udvælgelse end en modeltilknytning, der ikke har begrænsninger for land/område-kontekst.
 
 Følgende tabel viser oplysninger om resultaterne af valg af modeltilknytning for alle mulige modeltilknytningindstillinger:

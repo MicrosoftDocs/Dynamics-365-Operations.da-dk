@@ -1,6 +1,6 @@
 ---
 title: Liste over ER-funktioner i kategorien dataindsamling
-description: Dette emne indeholder oplysninger om de dataindsamlingsfunktioner, der understøttes i elektronisk rapportering (ER).
+description: Denne artikel indeholder oplysninger om de dataindsamlingsfunktioner, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760068"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908555"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>Liste over ER-funktioner i kategorien dataindsamling
 
 [!include [banner](../includes/banner.md)]
 
-Dataindsamlingsfunktionerne til elektronisk rapportering (ER) bruges til at tælle og opsummere i et ER-format, der køres, og som er baseret på data fra det output, der allerede er genereret i formatet **Tekst** eller **XML**. Denne fremgangsmåde bruges til at forbedre ydeevnen i et ER-format, der køres, til at angive værdier for fortløbende totaler i genererede dokumenter og til andre formål. Dette emne indeholder en oversigt over disse funktioner.
+Dataindsamlingsfunktionerne til elektronisk rapportering (ER) bruges til at tælle og opsummere i et ER-format, der køres, og som er baseret på data fra det output, der allerede er genereret i formatet **Tekst** eller **XML**. Denne fremgangsmåde bruges til at forbedre ydeevnen i et ER-format, der køres, til at angive værdier for fortløbende totaler i genererede dokumenter og til andre formål. Denne artikel indeholder en oversigt over disse funktioner.
 
 ## <a name="list-of-supported-functions"></a>Liste med understøttede funktioner
 

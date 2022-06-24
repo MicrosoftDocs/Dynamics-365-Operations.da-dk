@@ -1,6 +1,6 @@
 ---
 title: Sammenligning af funktioner i skyen og i det lokale miljø
-description: Emnet viser, hvilke funktioner der understøttes i skyen og lokalt.
+description: Denne artikel viser, hvilke funktioner der understøttes i skyen og lokalt.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879769"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser en sammenligning af funktioner, der er tilgængelige i skyen, med on-premises for følgende programmer:
+Denne artikel viser en sammenligning af funktioner, der er tilgængelige i skyen versus det lokale miljø for følgende programmer:
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
@@ -60,7 +60,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 |                                      | Integration med Power BI Desktop                                                          | Nej        | Ja             |
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Nej              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nej              |
-|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nej              |
+|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller Excel PowerQuery-værktøjer    | Ja       | Nej              |
 |                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Ja             |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Nej              |
 | Lifecycle Services                   |                                                                                           | Ja       | Ja             |
@@ -109,7 +109,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 |                                      | Integration med Power BI Desktop                                                          | Nej        | Ja             |
 |                                      | Analytiske arbejdsområder                                                                     | Ja       | Nej              |
 |                                      | Intelligent forretningsproces: anbefalinger                                             | Ja       | Nej              |
-|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery    | Ja       | Nej              |
+|                                      | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller Excel PowerQuery-værktøjer    | Ja       | Nej              |
 |                                      | SQL Server Reporting Services (SSRS) understøtter udskalering                                 | Ja       | Ja             |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Nej              |
 | Lagerstyring                 |                                                                                           | Ja       | Ja             |

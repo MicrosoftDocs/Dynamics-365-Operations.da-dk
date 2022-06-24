@@ -1,6 +1,6 @@
 ---
 title: Aktivere masterdataopslag til konfiguration af momsberegning
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879403"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivere masterdataopslag til konfiguration af momsberegning 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning. Der findes en rullemenu til valg af værdier i momsberegningskonfigurationen for felter som **Juridisk enhed**, **Kreditorkonto**, **Varekode** og **Leveringsbetingelse**. Disse værdier kommer fra det tilsluttede Microsoft Dynamics 365 Finance-miljø via Microsoft Dataverse-datakilden.
+Denne artikel indeholder en forklaring på, hvordan du kan konfigurere og aktivere funktionen til opslag af masterdata for momsberegning. Der findes en rullemenu til valg af værdier i momsberegningskonfigurationen for felter som **Juridisk enhed**, **Kreditorkonto**, **Varekode** og **Leveringsbetingelse**. Disse værdier kommer fra det tilsluttede Microsoft Dynamics 365 Finance-miljø via Microsoft Dataverse-datakilden.
 
 > [!NOTE] 
 > Funktionaliteten for opslag efter stamdata for momsberegning er valgfri. Du kan springe følgende trin over, hvis du deaktiverer funktionen **Understøttelse af Dataverse-datakilder i momstjenesten** i RCS (Regulatory Configuration Service). Men i dette tilfælde er rullelisten ikke tilgængelig i konfigurationen af momsberegningen.

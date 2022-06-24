@@ -1,6 +1,6 @@
 ---
 title: Konfigurere momsgrupper
-description: I dette emne beskrives, hvordan du konfigurerer momsgrupper i momsberegningstjenesten.
+description: Denne artikel beskriver, hvordan du konfigurerer momsgrupper i momsberegningstjenesten.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 50abafb958edfb8476434ff5842cd84cb186962f
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 89c5670ee7e78f2dc51f128c3ae8d284bb6b925b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883850"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862893"
 ---
 # <a name="set-up-tax-groups"></a>Konfigurere momsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer momsgrupper i momsberegningstjenesten. Det forklarer også, hvordan du konfigurerer matrixen for regler for anvendelse af momsgrupper og konfigurerer linjer i matrixen.
+Denne artikel beskriver, hvordan du konfigurerer momsgrupper i momsberegningstjenesten. Det forklarer også, hvordan du konfigurerer matrixen for regler for anvendelse af momsgrupper og konfigurerer linjer i matrixen.
 
 Begrebet momsgrupper i tjenesten Momsberegning minder om begrebet momsgrupper i Microsoft Dynamics 365 Finance. Det er grupper af momskoder. Tjenesten Momsberegning bruger skæringspunktet for en momsgruppe og en varemomsgruppe til at fastlægge momskoderne.
 

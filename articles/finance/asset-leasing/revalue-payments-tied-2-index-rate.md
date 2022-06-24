@@ -1,6 +1,6 @@
 ---
 title: Revaluere leasingbetalinger, der er knyttet til en indekssats
-description: Dette emne beskriver den justering, der er foretaget for at lease passivet for et ROU-aktiv, når de variable leasede betalinger ændres på grund af en ændring af indekssatsen.
+description: Denne artikel beskriver den justering, der er foretaget for at lease passivet for et ROU-aktiv, når de variable leasede betalinger ændres på grund af en ændring af indekssatsen.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903241"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leasingbetalinger, der er knyttet til en indekssats
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver den justering, der er foretaget i leasingforpligtelsen brugsretsaktiv (ROU)-aktiv, når de variable leasingbetalinger ændres på grund af en ændring af indekssatsen. Leasingforpligtelsen og ROU-aktiverne reguleres for at afstemme de nye betalinger. Under Accounting Standards Codification Topic 842 (ASC 842), som er standarden i almindeligt anerkendte regnskabsprincipper i USA (US GAAP), er det kun de variable betalinger, der ændres, når betalinger øges eller mindskes på grund af en ændring af indekseringshastigheden, medmindre der er flere ændringer i pengestrømme. Disse yderligere ændringer kan omfatte en ændring af de leasingbetingelser, der er knyttet til rentesatser. Yderligere oplysninger finder du under ASC 842-10-55-225 og stk. 42, litra b, i International Financial Reporting Standard 16 (IFRS 16).
+Denne artikel beskriver den justering, der er foretaget af leasingforpligtelsen for et brugsretsaktiv (ROU), når de variable leasingbetalinger ændres på grund af en ændring af indekssatsen. Leasingforpligtelsen og ROU-aktiverne reguleres for at afstemme de nye betalinger. Under Accounting Standards Codification Topic 842 (ASC 842), som er standarden i almindeligt anerkendte regnskabsprincipper i USA (US GAAP), er det kun de variable betalinger, der ændres, når betalinger øges eller mindskes på grund af en ændring af indekseringshastigheden, medmindre der er flere ændringer i pengestrømme. Disse yderligere ændringer kan omfatte en ændring af de leasingbetingelser, der er knyttet til rentesatser. Yderligere oplysninger finder du under ASC 842-10-55-225 og stk. 42, litra b, i International Financial Reporting Standard 16 (IFRS 16).
 
 ## <a name="adjust-lease-payments"></a>Justere leasingbetalinger
 

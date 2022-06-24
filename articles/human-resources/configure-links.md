@@ -1,6 +1,6 @@
 ---
 title: Oprette link fra Human Resources til et andet miljø
-description: Dette emne forklarer, hvordan du opretter et link fra Microsoft Dynamics 365 Human Resources til et andet Dynamics 365-miljø.
+description: Denne artikel forklarer, hvordan du opretter et link fra Microsoft Dynamics 365 Human Resources til et andet Dynamics 365-miljø.
 author: twheeloc
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d20eef4b4861d85ead1d47ca493c3a5c2d2d85e8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712622"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859660"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Oprette link fra Human Resources til et andet Finance-miljø
 
@@ -53,7 +53,7 @@ Hvert link, du opretter, har følgende definerede oplysninger:
 
    Sådan finder du det påkrævede menupunkt:
    1. Gå til Finance-miljøet, og åbn den side, der er destinationen for navigationen. 
-   2. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i Finance and Operations, skal du angive den værdi, der vises efter "&mi" i URL-adressen. 
+   2. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i Finans og drift, skal du angive den værdi, der vises efter "&mi" i URL-adressen. 
    3. Menupunktet, der bruges til at navigere til listesiden over medarbejdere, er i dette eksempel: HcmWorkerListPage_Employees.
 
  - **Link til datakilde**: Vælg datakilden, som linket refererer til. De mest almindelige kilder som f.eks. **Arbejder** og **Stilling** er tilgængelige.

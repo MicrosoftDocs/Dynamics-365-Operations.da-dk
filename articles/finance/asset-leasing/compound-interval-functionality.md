@@ -1,6 +1,6 @@
 ---
 title: Sammensætning af intervalfunktioner
-description: Dette emne indeholder oplysninger, der kan hjælpe dig med at vælge mellem måneds-, kvartårlige-, halvårlige og årlige sammensætningsintervaller.
+description: Denne artikel indeholder oplysninger, der kan hjælpe dig med at vælge mellem måneds-, kvartårlige-, halvårlige og årlige sammensætningsintervaller.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886405"
 ---
 # <a name="compounding-interval-functionality"></a>Sammensætning af intervalfunktioner
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emne indeholder oplysninger, der kan hjælpe dig med at vælge mellem måneds-, kvartårlige-, halvårlige og årlige sammensætningsintervaller. Sammensætningsintervalfunktionen bruges til at bestemme antallet af perioder pr. år i en leasingaftales betalingsplan. Hver af de fire eksempler i dette emne viser, hvordan en leasingaftales betalingsplan vil se ud for et andet interval.
+Denne artikel indeholder oplysninger, der kan hjælpe dig med at vælge mellem måneds-, kvartårlige-, halvårlige og årlige sammensætningsintervaller. Sammensætningsintervalfunktionen bruges til at bestemme antallet af perioder pr. år i en leasingaftales betalingsplan. Hver af de fire eksempler i denne artikel viser, hvordan en leasingaftales betalingsplan vil se ud for et andet interval.
 
 Du kan ikke vælge et sammensætningsinterval, der er mindre hyppig end leasingaftalens betalingsfrekvens. Et kvartårligt sammensætningsinterval kan f. eks. ikke bruges med en månedlig ydelsesfrekvens, og et årligt sammensætningsinterval kan ikke bruges med en halvårlig betalingsfrekvens. Hvis du prøver at vælge et sammensætningsinterval, der er mindre hyppig end leasingaftalens betalingsfrekvens, modtager du en fejlmeddelelse.
 
 > [!NOTE]
-> I alle fire eksempler i dette emne svarer sammensætningsintervallet til betalingsfrekvensen.
+> I alle fire eksempler i senne artikel svarer sammensætningsintervallet til betalingsfrekvensen.
 
 ## <a name="examples"></a>Eksempler
 

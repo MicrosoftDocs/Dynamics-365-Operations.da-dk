@@ -1,6 +1,6 @@
 ---
 title: ER-destinationstype for email
-description: Dette emne indeholder oplysninger om, hvordan du konfigurerer en emaildestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
+description: Denne artikel indeholder oplysninger om, hvordan du konfigurerer en maildestination for de enkelte MAPPE- eller FIL-komponenter i et ER-format (elektronisk rapportering).
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845651"
 ---
 # <a name="email-er-destination-type"></a>ER-destinationstype for email
 
@@ -120,7 +120,7 @@ I feltet **Formel** på siden **Formeldesigner** skal du angive en dokumentspeci
 
 ![Konfigurere emailens kildekonto.](./media/er_destinations-emaildefineaddresssource.gif)
 
-Hvis kontonumrene for den konfigurerede rolle er entydige for hele forekomsten af Microsoft Dynamics 365 Finance, kan feltet **Firma for emailkilde** i dialogboksen **Mail to** være tomt.
+Hvis kontonumrene for den konfigurerede rolle er entydige for hele forekomsten af Microsoft Dynamics 365 Finance, kan feltet **Firmaets mailkilde** i dialogboksen **Mail til** være tomt.
 
 Alternativt kan du have en situation, hvor forskellige parter i det [globale adressekartotek](../../fin-ops/organization-administration/overview-global-address-book.md) er blevet registreret i forskellige firmaer ([juridiske enheder](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på en sådan måde, at de alle bruger det samme kontonummer til at udfylde den konfigurerede rolle. I dette tilfælde er kontonumrene for den konfigurerede rolle ikke entydige for hele Finans-forekomsten. Hvis du udtrykkeligt vil vælge en part, kan du derfor ikke kun angive et kontonummer. Du skal også angive det regnskab, som parten er blevet registreret i for at kunne udfylde den konfigurerede rolle. Vælg knappen **Bind** (kædesymbolet) ud for feltet **Firma for emailkilde** i dialogboksen **Mail til** for at åbne siden [Formeldesigner](general-electronic-reporting-formula-designer.md). Du kan derefter bruge denne side til at konfigurere en formel, der under kørsel returnerer koden for det firma, som den ønskede kilde skal findes inden for.
 
@@ -162,7 +162,7 @@ I følgende illustration vises strukturen af et ER-format, der er konfigureret t
 
 [![Struktur af et ER-format, der genererer udgående dokumenter.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-I følgende illustration vises processen, som beskrevet i dette emne, til gruppering af de enkelte komponenter og aktivering af **mail** destinationen for den nye gruppe, så der sendes en rykker sammen med de relevante debitorfakturaer som vedhæftede filer i emails.
+I følgende illustration vises processen, som beskrevet i denne artikel, til gruppering af de enkelte komponenter og aktivering af **Mail**-destinationen for den nye gruppe, så der sendes en rykker sammen med de relevante debitorfakturaer som vedhæftede filer i mails.
 
 [![Gruppere de enkelte komponenter og aktivere emaildestinationen.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

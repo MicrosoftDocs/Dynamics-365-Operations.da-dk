@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860158"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644453"
 Når du vil oprette og administrere dataimport- og -eksportjob, skal du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
 > [!NOTE]
-> I dette emne antages det, at du er fortrolig med [dataenheder](data-entities.md).
+> Denne artikel antager, at du er fortrolig med [dataenheder](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Dataimport og -eksportproces
 Her er trinnene til import eller eksport af data.
@@ -48,7 +48,7 @@ Her er trinnene til import eller eksport af data.
 5. Kontroller, at jobbet kørte som forventet ved at gennemse jobhistorikken.
 6. Ryd op i de midlertidige tabeller.
 
-De resterende afsnit i dette emne indeholder flere oplysninger om hvert trin i processen.
+De resterende afsnit i denne artikel indeholder flere oplysninger om hvert trin i processen.
 
 > [!NOTE]
 > For at opdatere formen til dataimport og -eksport, så den viser den seneste status, skal du bruge ikonet for opdatering. Opdatering på browserniveau anbefales ikke, fordi det afbryder alle import- eller eksportjob, der ikke køres i batch.

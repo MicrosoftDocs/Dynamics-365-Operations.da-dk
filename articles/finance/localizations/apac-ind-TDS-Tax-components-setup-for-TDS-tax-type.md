@@ -1,6 +1,6 @@
 ---
 title: Konfigurere skattekomponenter for skattetypen Kildeskat
-description: Dette emne beskriver, hvordan du opretter komponenter for A-skat i forbindelse med kildeskat (TDS – Tax Deducted at Source). Det beskriver også, hvordan du definerer den grænseværdi, der bruges til at beregne kildeskatten for hver skattekomponent.
+description: Denne artikel beskriver, hvordan du opretter komponenter for A-skat i forbindelse med kildeskat (TDS – Tax Deducted at Source). Det beskriver også, hvordan du definerer den grænseværdi, der bruges til at beregne kildeskatten for hver skattekomponent.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9c86341f7528e2c85b813e4f825ae34f10680a9b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: df2eb10ce9e372bb1e984f6ae1a2e889bbd90ad0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871151"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Konfigurere skattekomponenter for skattetypen Kildeskat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter komponenter for A-skat i forbindelse med kildeskat (TDS – Tax Deducted at Source). Skattekomponenterne er Kildeskat, Tillægsafgift, PE-Cess og SHE Cess. Dette emne beskriver også, hvordan du definerer den tærskel, der bruges til at beregne kildeskatten for hver skattekomponent. Derudover kan du definere en tærskel for fritagelse, der bruges til at beregne kildeskat for hver skattekomponent.
+Denne artikel beskriver, hvordan du opretter komponenter for A-skat i forbindelse med kildeskat (TDS – Tax Deducted at Source). Skattekomponenterne er Kildeskat, Tillægsafgift, PE-Cess og SHE Cess. Denne artikel beskriver også, hvordan du definerer den tærskel, der bruges til at beregne kildeskatten for hver skattekomponent. Derudover kan du definere en tærskel for fritagelse, der bruges til at beregne kildeskat for hver skattekomponent.
 
 Følg disse trin for at konfigurere skattekomponenter.
 

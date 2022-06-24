@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846949"
 ---
 # <a name="cash-discounts"></a>Kasserabatter
 
@@ -30,7 +30,7 @@ Kasserabatter konfigureres og deles for kreditor og debitor.  Den tilgængelige 
 
 ## <a name="cash-discounts"></a>Kasserabatter
 
-Kasserabatter for både debitorer eller kreditorer kan oprettes på siden Kasserabatter. Du kan også bruge feltet Næste rabatkode til at definere en række kasserabatter, der følger efter hinanden, efterhånden som tidligere kasserabatdatoer udløber. Du kan finde flere oplysninger i "Eksempel: En række kasserabatter" senere i dette emne. Hvis fakturaen, kreditposteringen (enten en betaling eller en kreditnota) eller begge angives en anden valuta end regnskabsvalutaen for den juridiske enhed, beregnes kasserabatten ved hjælp af valutakursen baseret på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kreditdokumentet er angivet for forskellige juridiske enheder, og hvis regnskabsvalutaen for de juridiske enheder er forskellig, tages valutakursen fra den juridiske enhed for fakturaen på datoen for kreditdokumentet. Du kan finde flere oplysninger i "Eksempel: Valutakurser for kasserabatter" senere i dette emne.
+Kasserabatter for både debitorer eller kreditorer kan oprettes på siden Kasserabatter. Du kan også bruge feltet Næste rabatkode til at definere en række kasserabatter, der følger efter hinanden, efterhånden som tidligere kasserabatdatoer udløber. Du kan finde flere oplysninger i "Eksempel: En række kasserabatter" senere i denne artikel. Hvis fakturaen, kreditposteringen (enten en betaling eller en kreditnota) eller begge angives en anden valuta end regnskabsvalutaen for den juridiske enhed, beregnes kasserabatten ved hjælp af valutakursen baseret på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kreditdokumentet er angivet for forskellige juridiske enheder, og hvis regnskabsvalutaen for de juridiske enheder er forskellig, tages valutakursen fra den juridiske enhed for fakturaen på datoen for kreditdokumentet. Du kan finde flere oplysninger i "Eksempel: Valutakurser for kasserabatter" senere i denne artikel.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardrækkefølge af hovedkonto for kasserabat
 

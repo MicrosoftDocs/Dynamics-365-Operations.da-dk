@@ -1,6 +1,6 @@
 ---
 title: Angive parametre for kildeskat i Kreditor og Debitor
-description: Dette emne beskriver, hvordan du angiver parametre i Kreditor og Debitor, som understøtter fradrag af kildeskat (TDS – Tax Deducted at Source).
+description: Denne artikel beskriver, hvordan du angiver parametre i Kreditor og Debitor, som understøtter fradrag af kildeskat (TDS – Tax Deducted at Source).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d2cb434346dbbe5487522fe9f7110716c3a8c761
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e547b92f9f7e0ccc5b92df4cd991ce402369b568
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883144"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Angive parametre for kildeskat i Kreditor og Debitor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du angiver parametre i Kreditor og Debitor, som understøtter fradrag af kildeskat (TDS – Tax Deducted at Source).
+Denne artikel beskriver, hvordan du angiver parametre i Kreditor og Debitor, som understøtter fradrag af kildeskat (TDS – Tax Deducted at Source).
 
 1. Gå til **Skat \> Opsætning \> Parametre \> Debitorparametre**.
 2. Vælg **Opdater ordrelinjer** under fanen **Opdateringer** for at åbne dialogboksen **Opdater ordrelinjer**.

@@ -1,6 +1,6 @@
 ---
 title: Bruge stregkodedatakilder til at generere stregkodebilleder
-description: Dette emne forklarer, hvordan du kan bruge stregkodedatakilder til at generere stregkodebilleder.
+description: Denne artikel forklarer, hvordan du kan bruge stregkodedatakilder til at generere stregkodebilleder.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880306"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Bruge stregkodedatakilder til at generere stregkodebilleder
 
@@ -77,7 +77,7 @@ Når du konfigurerer en **Stregkode** som datakilde, kan du definere specifikke 
 >
 > Når du binder en **Stregkode**-datakilde til et celleelement i et format, og celleelementet repræsenterer enten et Word-indholdskontrolelement eller et Excel-billede, vises datakilden i denne binding som en funktion, der har en enkelt parameter af **Streng**-typen. Du skal bruge denne parameter til at angive den tekst, der skal omdannes til et stregkodebillede, og som læses, når en genereret stregkode scannes.
 
-Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i denne artikel.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Eksempel: Generér en betalingscheck, der indeholder en stregkode, som koder betalingsbeløbet.
 
@@ -112,7 +112,7 @@ For at fuldføre dette eksempel skal du have adgang til USMF-firmaet i Finans i 
 - Funktionel konsulent i elektronisk rapportering
 - Systemadministrator
 
-Hvis du endnu ikke har fuldført eksemplet i emnet [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md), skal du hente følgende konfigurationer af ER-eksempelløsningen.
+Hvis du endnu ikke har fuldført eksemplet i artiklen [Integrere billeder og figurer i de dokumenter, du opretter ved hjælp af ER](electronic-reporting-embed-images-shapes.md), skal du hente følgende konfigurationer af ER-eksempelløsningen.
 
 | Indholdsbeskrivelse         | Filnavn                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Hent desuden følgende Excel-fil, der indeholder den ændrede skabelon for den l
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivere en konfigurationsudbyder
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet **Litware, Inc.** er vist, og at den er markeret som aktiv. Hvis den ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet **Litware, Inc.** er vist, og at den er markeret som aktiv. Hvis den ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i artiklen [Opret en konfigurationsudbyder, og markér den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Angivelse af eksempelfirmaet til aktivt på siden Lokaliseringskonfigurationer.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ Kladdeversionen af det valgte format er markeret som tilgængelig til brug, når
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Konverter den genererede check til PDF
 
-Som beskrevet i emnet [Generere FTI-formularer, der kan udskrives](er-generate-printable-fti-forms.md#finland) kan du bruge en særlig skrifttype til oprettelse af stregkoder i et genereret dokument. I dette tilfælde kan yderligere transformationer af det genererede dokument afhænge af tilgængeligheden af den pågældende skrifttype i transformationsmiljøet. Hvis du f.eks. forsøger at konvertere et dokument til PDF-format eller se det i et miljø, hvor skrifttypen mangler, gengives stregkoderne ikke korrekt.
+Som beskrevet i artiklen [Generere FTI-formularer, der kan udskrives](er-generate-printable-fti-forms.md#finland) kan du bruge en særlig skrifttype til oprettelse af stregkoder i et genereret dokument. I dette tilfælde kan yderligere transformationer af det genererede dokument afhænge af tilgængeligheden af den pågældende skrifttype i transformationsmiljøet. Hvis du f.eks. forsøger at konvertere et dokument til PDF-format eller se det i et miljø, hvor skrifttypen mangler, gengives stregkoderne ikke korrekt.
 
 Men når du bruger **Stregkode**-datakilden til at producere stregkoder, afhænger gengivelsen af disse stregkoder ikke af nogen skrifttyper. Derfor kan du nemt konvertere dokumenter, der indeholder stregkoderne, til PDF-format. I følgende illustration vises eksemplet på en genereret betalingscheck, der er [konverteret](electronic-reporting-destinations.md#OutputConversionToPDF) til et PDF-dokument baseret på indstillingen af den konfigurerede ER-[destination](electronic-reporting-destinations.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Budgetanalyse i den offentlig sektor
-description: Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring.
+title: Budgetanalyse i den offentlige sektor
+description: Denne artikel beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring.
 author: v-kiarnd
 ms.date: 01/28/2022
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Public sector
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d102ba9ee809541db1bd7dd255591c24279406e
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 11606a25a2ea1e8b97536c266968dfe93501e296
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853123"
 ---
-# <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
+# <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogførte indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
+Denne artikel beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogførte indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
 
-I dette emne beskrives de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
+Denne artikel beskriver de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
 
-Før du læser dette emne, bør du også læse [Overblik over budgettering i den offentlige sektor](budgeting-public-sector.md). 
+Før du læser denne artikel, bør du også læse [Overblik over budgettering i den offentlige sektor](budgeting-public-sector.md). 
 
 Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist bogførte indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
 

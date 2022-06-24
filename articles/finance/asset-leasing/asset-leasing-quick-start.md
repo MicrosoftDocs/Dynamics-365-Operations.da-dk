@@ -1,6 +1,6 @@
 ---
 title: Kom i gang med aktivleasing
-description: Dette emne beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger.
+description: Denne artikel beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: df4343031b3b116318f798f31adb4d1f6bed1db9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895132"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gang med aktivleasing
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger. Emnet definerer også den terminologi, der bruges i brugergrænsefladen og dokumentationen. Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen. Aktivleasing integreres problemfrit med andre komponenter i Dynamics 365 Finance, herunder anlægsaktiver, kreditor og finans.
+Denne artikel beskriver aktivleasingkapaciteten og gennemgår trinnene til oprettelse af aktivleasing og visning af oplysninger for disse leasinger. Denne artikel definerer også den terminologi, der bruges i brugergrænsefladen og dokumentationen. Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen. Aktivleasing integreres problemfrit med andre komponenter i Dynamics 365 Finance, herunder anlægsaktiver, kreditor og finans.
 
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet i **Funktionsstyring** skal du finde og vælge den funktion, der hedder **Aktivleasing**, og derefter vælge knappen **Aktivér nu**.
 

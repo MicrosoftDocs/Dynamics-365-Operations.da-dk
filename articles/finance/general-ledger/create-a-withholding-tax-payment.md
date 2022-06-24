@@ -1,6 +1,6 @@
 ---
 title: Oprette en betaling af A-skat
-description: Jobproceduren betaling af A-skat afregner A-skatsaldi fra Kreditor på A-skatkonti og forskyder A-skat for en given periode. Dette emne indeholder en oversigt over trinene til opsætning af en betaling for A-skat.
+description: Jobproceduren betaling af A-skat afregner A-skatsaldi fra Kreditor på A-skatkonti og forskyder A-skat for en given periode. Denne artikel indeholder en oversigt over trinene til opsætning af en betaling for A-skat.
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 3d3619137ccb909eed31af3793c6cf2773cc9886
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855398"
 ---
 # <a name="create-a-withholding-tax-payment"></a>Oprette en betaling af A-skat
 
-Jobproceduren betaling af A-skat afregner A-skatsaldi fra Kreditor på A-skatkonti og forskyder A-skat for en given periode. Dette emne indeholder en oversigt over trinene til opsætning af en betaling for A-skat.
+Jobproceduren betaling af A-skat afregner A-skatsaldi fra Kreditor på A-skatkonti og forskyder A-skat for en given periode. Denne artikel indeholder en oversigt over trinene til opsætning af en betaling for A-skat.
 
 > [!NOTE] 
 > Der skal ikke tages højde for A-skat (fra debitorer), når der beregnes A-skat.

@@ -1,6 +1,6 @@
 ---
 title: A-skatterapport for Indonesien
-description: Dette emne forklarer, hvordan du konfigurerer og genererer A-skatteopgørelse for Indonesien.
+description: Denne artikel forklarer, hvordan du konfigurerer og genererer A-skatteopgørelse for Indonesien.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883175"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>A-skatterapport for Indonesien (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du konfigurerer og genererer den A-skattefil til PPH, som juridiske enheder i Indonesien bruger til at rapportere A-skatteposteringer i programmet e-Bupot.
+Denne artikel indeholder en forklaring på, hvordan du konfigurerer og genererer den A-skattefil til PPH, som juridiske enheder i Indonesien bruger til at rapportere A-skatteposteringer i programmet e-Bupot.
 
 Indonesiens skattemyndigheder (DGT) fastlægger, at momspligtige foretagender (PKP), der er registreret i KPP Pratama og tilbageholder/opkræver indkomstskat (PPh) Artikel 23 og/eller Artikel 26, elektronisk skal indberette indkomstskatteopgørelse Artikel 23 og 26 ved hjælp af programmet e-Bupot. 
 

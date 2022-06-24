@@ -1,6 +1,6 @@
 ---
 title: Oversigt over budgetplanlægning
-description: I dette emne beskrives budgetplanlægning. Det indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og budgetplanlægningsprocesser.
+description: Denne artikel beskriver budgetplanlægning. Det indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og budgetplanlægningsprocesser.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853548"
 ---
 # <a name="budget-planning-overview"></a>Oversigt over budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives budgetplanlægning. Det indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og budgetplanlægningsprocesser.
+Denne artikel beskriver budgetplanlægning. Det indeholder oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og budgetplanlægningsprocesser.
 
 ## <a name="overview-of-budget-planning"></a>Oversigt over budgetplanlægning
 
@@ -91,7 +91,7 @@ Arbejdsgangen for en budgetplanlægning består af et bestemt sæt stadier, som 
 
 Du opretter en arbejdsgang for budgetplanlægning i afsnittet **Arbejdsgangsstadier** på siden **Budgetplanlægningskonfiguration**. Der kan du vælge de stadier og den budgetteringsarbejdsgang, der skal bruges, og du kan konfigurere yderligere indstillinger.
 
-Det er en god idé at oprette en budgetplanlægningsarbejdsgang for hvert niveau i et budgetteringshierarki. Derefter kan du tildele en budgetteringsarbejdsgang, der indeholder elementer, som svarer til stadierne i arbejdsgangen i budgetplanlægningen. I eksempelskemaet, der blev vist tidligere i dette emne, vil der blive oprettet én arbejdsgang i budgetplanlægningen for salgsafdelingerne, og en anden vil blive oprettet for hovedkontoret. En arbejdsgang i budgettering flytter budgetplaner gennem stadierne.
+Det er en god idé at oprette en budgetplanlægningsarbejdsgang for hvert niveau i et budgetteringshierarki. Derefter kan du tildele en budgetteringsarbejdsgang, der indeholder elementer, som svarer til stadierne i arbejdsgangen i budgetplanlægningen. I eksempelskemaet, der blev vist tidligere i denne artikel, vil der blive oprettet én arbejdsgang i budgetplanlægningen for salgsafdelingerne, og en anden vil blive oprettet for hovedkontoret. En arbejdsgang i budgettering flytter budgetplaner gennem stadierne.
 
 Du opretter en arbejdsgang i budgettering for budgetplanlægning på siden **Arbejdsgange i budgettering**. Fremgangsmåden minder om processen til oprettelse af andre arbejdsgange. I følgende illustration vises et eksempel på en arbejdsgang i hovedkvartererne.
 
@@ -141,7 +141,7 @@ Stadiefordelinger bruges til automatisk at fordele budgetplanlinjer under behand
 
 Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet i budgetplanlægningen til fordelingstidsplanen. Arbejdsgangen i budgetplanlægningen skal være tilknyttet en arbejdsgang i budgettering, der bruger **Trinfordeling for budgetplanlægning** som automatiseret arbejdsgangsopgave. Når arbejdsgangen når det angivne stadie, sker fordelingen automatisk. Denne automatiserede opgave kan bruges til at oprette budgetplanlinjer i et nyt scenario.
 
-I eksempelskemaet, der vises tidligere i dette emne, foretages en fordeling for at overføre beløb fra en budgetplan og scenarier i hovedkvarterets "Oprindelige" stadie til en anden budgetplan og scenarier i stadiet "Estimat" for salgsafdelingen. Følgende illustration viser det relevante afsnit i eksempelskemaet.
+I eksempelskemaet, der vises tidligere i denne artikel, foretages en fordeling for at overføre beløb fra en budgetplan og scenarier i hovedkvarterets "Oprindelige" stadie til en anden budgetplan og scenarier i stadiet "Estimat" for salgsafdelingen. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 
 [![Stadiefordeling.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

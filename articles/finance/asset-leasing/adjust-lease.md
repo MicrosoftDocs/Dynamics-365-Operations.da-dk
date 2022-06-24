@@ -1,6 +1,6 @@
 ---
 title: Justere leasingaftaler
-description: Emnet forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres.
+description: Artiklen forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898321"
 ---
 # <a name="adjust-leases"></a>Justere leasingaftaler
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Emnet forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres. Aktivleasing er i overensstemmelse med retningslinjerne for, at Accounting Standards Codification Topic 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) omhandler redigering af leasingaftaler. ASC-842-20-15-1 definerer en leasingændring, som enhver ændring af vilkårene og betingelserne i en kontrakt, der medfører en ændring i omfanget af eller overvejelser i forbindelse med en leasingaftale. Punkt 39 i IFRS 16 angiver, at en af modtagerne skal regulere leasingforpligtelsen, så den afspejler ændringer af betalinger af leasingaftalen.
+Artiklen forklarer, hvordan du justerer en leasingaftale. Det kan være nødvendigt at foretage en justering, hvis betingelserne for leasingaftalen ændres, leasingaftalen forlænges, eller andre betingelser ændres. Aktivleasing er i overensstemmelse med retningslinjerne for, at Accounting Standards Codification Topic 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) omhandler redigering af leasingaftaler. ASC-842-20-15-1 definerer en leasingændring, som enhver ændring af vilkårene og betingelserne i en kontrakt, der medfører en ændring i omfanget af eller overvejelser i forbindelse med en leasingaftale. Punkt 39 i IFRS 16 angiver, at en af modtagerne skal regulere leasingforpligtelsen, så den afspejler ændringer af betalinger af leasingaftalen.
 
 For organisationer, der overholder ASC 842 eller IFRS 16, revurderes en leasingaftale, så den afspejler en ændring i den nuværende værdi af de fremtidige minimums leasingbetalinger (PVFMLP). Hvis PVFMLP øges, vil den oprettede kladdepost være en debitering af kontoen for brugsretsaktivkontoen (ROU) og en kreditering af leasingforpligtelseskontoen for forskellen mellem den nye PVFMLP og den tidligere PVFMLP. Hvis PVFMLP reduceres, vil kladdeposteringen være et debetbeløb af leasingforpligtelseskontoen og en kreditering til ROU-aktivkontoen for forskellen.
 

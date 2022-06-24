@@ -1,6 +1,6 @@
 ---
 title: Konfigurere avanceret import af bankafstemning ved hjælp af elektronisk rapportering
-description: Dette emne forklarer, hvordan du bruger elektronisk rapportering til at konfigurere importprocessen til avanceret bankafstemning.
+description: Denne artikel forklarer, hvordan du bruger elektronisk rapportering til at konfigurere importprocessen til avanceret bankafstemning.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889114"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurere avanceret import af bankafstemning ved hjælp af elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 Finance. Dette emne beskriver, hvordan du konfigurerer importfunktionen for dine bankkontoudtog. Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Microsoft Dynamics 365 Finance understøtter tre formater for bankkontoudtog: ISO20022, MT940 og BAI2. 
+Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 Finance. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Microsoft Dynamics 365 Finance understøtter tre formater for bankkontoudtog: ISO20022, MT940 og BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Konfigurere elektronisk rapportering
 

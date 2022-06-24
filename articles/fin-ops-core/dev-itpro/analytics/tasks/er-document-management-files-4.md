@@ -1,6 +1,6 @@
 ---
 title: ER Brug dokumentstyringsfiler i formatoutput (del 4 - Kørselsformat)
-description: Dette emne beskriver, hvordan du konfigurerer et format for elektronisk rapportering til at bruge dokumentstyringsfiler i ER-output. (Del 4)
+description: Denne artikel beskriver, hvordan du konfigurerer et format for elektronisk rapportering til at bruge dokumentstyringsfiler i ER-output. (Del 4)
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11b446d21a7ae57ffa2cccf983777beb882bf77de6b54c2d1aef810028a6d343
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc5352a8924dc0427faa1418a9db5f610a7451a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889279"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER Brug dokumentstyringsfiler i formatoutput (del 4 - Kørselsformat)
 

@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources 5. oktober 2021
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 5. oktober 2021.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 5. oktober 2021.
 author: marcelbf
 ms.date: 10/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cc8cd8616f1b82258fccbb2b41d5e72a90aaed63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845106"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 5. oktober 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Microsoft Dynamics 365 Human Resources.
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 Følgende fejlrettelser er inkluderet i denne version.
 
 > [!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne for at medtage rettelser i buildet, som er foretaget, efter dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis denne artikel til at omfatte fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
-| Fejlnummer | Emne | Beskrivelse |
+| Fejlnummer | Problem | Beskrivende tekst |
 |---|---|---|
 | 598896 | Medarbejderbeløbet vises først, når medarbejderen har fuldført tilmeldingen. | På siden **Medarbejderselvbetjening** blev medarbejderbeløbet for frynsegodet ikke vist. Siden **Frynsegodeselvbetjening** viser nu medarbejderbeløbet.  |
 | 613440 | Kan ikke eksportere data fra **Datastyring** | Når data eksporteres for et projekt i **Datastyring**, mislykkes eksporten uventet. |

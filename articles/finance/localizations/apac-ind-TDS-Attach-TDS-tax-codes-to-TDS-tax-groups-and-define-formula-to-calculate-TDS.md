@@ -1,6 +1,6 @@
 ---
 title: Knytte kildeskattekoder til kildeskattegrupper og definere formlen til beregning af kildeskat
-description: Dette emne forklarer, hvordan du kan oprette grupper for kildeskat (TDS – Tax Deducted at Source) og knytte kildeskattekoder til kildeskattegrupper. Hvis du vil beregne kildskat for en kildeskattegruppe, skal du definere formlen for de kildeskattekoder, der er tilknyttet den.
+description: Denne artikel forklarer, hvordan du kan oprette grupper for kildeskat (TDS – Tax Deducted at Source) og knytte kildeskattekoder til kildeskattegrupper. Hvis du vil beregne kildskat for en kildeskattegruppe, skal du definere formlen for de kildeskattekoder, der er tilknyttet den.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711230"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853308"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte kildeskattekoder til kildeskattegrupper og definere formlen til beregning af kildeskat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan oprette grupper for kildeskat (TDS – Tax Deducted at Source) og knytte kildeskattekoder til kildeskattegrupper. Hvis du vil beregne kildskat for en kildeskattegruppe, skal du definere formlen for de kildeskattekoder, der er tilknyttet den.
+Denne artikel forklarer, hvordan du kan oprette grupper for kildeskat (TDS – Tax Deducted at Source) og knytte kildeskattekoder til kildeskattegrupper. Hvis du vil beregne kildskat for en kildeskattegruppe, skal du definere formlen for de kildeskattekoder, der er tilknyttet den.
 
 Benyt følgende fremgangsmåde for at konfigurere en kildeskattegruppe, knytte kildeskattekoder til den og definere formlen til beregning af kildeskat.
 

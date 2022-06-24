@@ -1,6 +1,6 @@
 ---
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
-description: Dette emne forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
+description: Denne artikel forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864830"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -80,7 +80,7 @@ ER bruger følgende kategorier til at gruppere inspektioner af konsistenskontrol
 
 ## <a name="list-of-inspections"></a>Liste over inspektioner
 
-I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du kan finde flere oplysninger om disse inspektioner ved at bruge linkene i første kolonne til at gå til de relevante afsnit i dette emne. I disse afsnit forklares de komponenttyper, som ER tilbyder inspektion af, og hvordan du kan omkonfigurere ER-komponenter for at undgå problemer.
+I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du kan finde flere oplysninger om disse inspektioner ved at bruge linkene i første kolonne til at gå til de relevante afsnit i denne artikel. I disse afsnit forklares de komponenttyper, som ER tilbyder inspektion af, og hvordan du kan omkonfigurere ER-komponenter for at undgå problemer.
 
 <table>
 <thead>

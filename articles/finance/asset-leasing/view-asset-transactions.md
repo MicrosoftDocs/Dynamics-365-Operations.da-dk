@@ -1,6 +1,6 @@
 ---
 title: Få vist forpligtelses-, aktiv- og udgiftstransaktioner
-description: Dette emne forklarer, hvordan du får vist posteringer for et leaset aktiv. Disse posteringer omfatter leasede passivposteringer og faste posteringer, der er bogført.
+description: Denne artikel forklarer, hvordan du får vist posteringer for et leaset aktiv. Disse posteringer omfatter leasede passivposteringer og faste posteringer, der er bogført.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: be11250a85d160aa71ab76af9cfdb0258fd7bf11
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 552b5a6044950c4dd7547a5239c1b3f7d355dbce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906407"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Få vist forpligtelses-, aktiv- og udgiftstransaktioner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du får vist posteringer for et leaset aktiv. Disse posteringer omfatter leasede passivposteringer og faste posteringer, der er bogført. De opbrugte værdier for passiv- og ROUs-aktiverne bruges i flere rapporter. De bruges også til at beregne reguleringsværdier.
+Denne artikel forklarer, hvordan du får vist posteringer for et leaset aktiv. Disse posteringer omfatter leasede passivposteringer og faste posteringer, der er bogført. De opbrugte værdier for passiv- og ROUs-aktiverne bruges i flere rapporter. De bruges også til at beregne reguleringsværdier.
 
 ## <a name="liability-transactions"></a>Forpligtelsestransaktioner
 

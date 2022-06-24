@@ -1,6 +1,6 @@
 ---
 title: Administrere leasingaftaler via struktur for leasingimport
-description: Dette emne forklarer, hvordan du kan bruge leasingimportframework til at justere flere leasingaftaler på én gang.
+description: Denne artikel forklarer, hvordan du kan bruge leasingimportstrukturen til at justere flere leasingaftaler på én gang.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894958"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Administrere leasingaftaler via struktur for leasingimport
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan bruge leasingimportframework til at justere flere leasingaftaler i et trin. Når du bruger denne facilitet, kan du spare tid, og du kan også sikre dig mere præcise justeringer ved at reducere risikoen for menneskelige fejl. Desuden kan denne egenskab oprette forbindelse mellem Microsoft Dynamics 365 Finance og eksterne dataenheder for at overføre data effektivt.
+Denne artikel forklarer, hvordan du kan bruge leasingimportstrukturen til at justere flere leasingaftaler i et trin. Når du bruger denne facilitet, kan du spare tid, og du kan også sikre dig mere præcise justeringer ved at reducere risikoen for menneskelige fejl. Desuden kan denne egenskab oprette forbindelse mellem Microsoft Dynamics 365 Finance og eksterne dataenheder for at overføre data effektivt.
 
 Følgende dataenheder kan bruges til at integrere aktivleasing med eksterne systemer:
 

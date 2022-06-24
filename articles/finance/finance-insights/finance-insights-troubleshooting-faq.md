@@ -1,6 +1,6 @@
 ---
 title: Fejlfinde problemer med opsætningen af Finance Insights
-description: Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
+description: Denne artikel indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846909"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Fejlfinde problemer med opsætningen af Finance Insights
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
+Denne artikel indeholder en oversigt over problemer, der kan opstå, når du bruger funktionerne i Finance Insights. Den forklarer også, hvordan disse problemer kan afhjælpes.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Symptom: Hvorfor kan jeg ikke tilknytte destinationskolonnen Customer Payment Insights Data Integration-skabelon til destination?
 
@@ -121,4 +121,4 @@ Funktionen **Budgetforslag** kræver mindst tre års budgetdata eller faktiske d
 
 ### <a name="resolution"></a>Løsning
 
-Miljøet har nået maksimumtabelgrænsen for Data Lake-tjenester. Du kan finde flere oplysninger om grænsen i afsnittet **Aktivere dataændringer i næsten realtid** i emnet, [Oversigt over eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+Miljøet har nået maksimumtabelgrænsen for Data Lake-tjenester. Du kan finde flere oplysninger om grænsen i afsnittet **Aktivere dataændringer i næsten realtid** i artiklen [Oversigt over eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

@@ -1,6 +1,6 @@
 ---
 title: Tilføj eller Kopiér leasinger (prøveversion)
-description: Dette emne beskriver, hvordan du opretter en ny leasing ved at angive oplysninger om den i aktivleasing eller ved at kopiere oplysninger fra en eksisterende leasing.
+description: Denne artikel beskriver, hvordan du opretter en ny leasing ved at angive oplysninger om den i aktivleasing eller ved at kopiere oplysninger fra en eksisterende leasing.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880926"
 ---
 # <a name="add-or-copy-leases-preview"></a>Tilføj eller Kopiér leasinger (prøveversion)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan oprette en leasing fra bunden af aktivleasing, og hvordan du kan oprette en leasing ved at kopiere en eksisterende leasing. Processen til oprettelse af en leasing fra bunden omfatter angivelse af oplysninger til den nye leasing og oprettelse af en plan for leasing. Når der er konfigureret mindst én leasing, kan det være nemmere at kopiere oplysningerne fra en eksisterende leasing og derefter redigere disse oplysninger, når du har brug for at oprette en ny leasing.
+Denne artikel forklarer, hvordan du kan oprette en leasing fra bunden af aktivleasing, og hvordan du kan oprette en leasing ved at kopiere en eksisterende leasing. Processen til oprettelse af en leasing fra bunden omfatter angivelse af oplysninger til den nye leasing og oprettelse af en plan for leasing. Når der er konfigureret mindst én leasing, kan det være nemmere at kopiere oplysningerne fra en eksisterende leasing og derefter redigere disse oplysninger, når du har brug for at oprette en ny leasing.
 
 ## <a name="create-a-lease"></a>Oprette en leasing
 

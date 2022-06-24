@@ -1,6 +1,6 @@
 ---
 title: Funktion til opdeling af faktura
-description: Dette emne beskriver, hvordan du opsætter og bruger funktionen til opdeling af fakturaer efter leveringsadresse og skattekontonummer (TAN – Tax Account Number).
+description: Denne artikel beskriver, hvordan du opsætter og bruger funktionen til opdeling af fakturaer efter leveringsadresse og skattekontonummer (TAN – Tax Account Number).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1dac8d51c24009dcf0c4acbc49f06f32abf0dec
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7bbeb94429c2c69b7b8ea3089390db676a021b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874426"
 ---
 # <a name="split-invoice-functionality"></a>Funktion til opdeling af faktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opsætter og bruger funktionen til opdeling af fakturaer efter leveringsadresse og skattekontonummer (TAN – Tax Account Number).
+Denne artikel beskriver, hvordan du opsætter og bruger funktionen til opdeling af fakturaer efter leveringsadresse og skattekontonummer (TAN – Tax Account Number).
 
 På siden **Kreditorparametre** under fanen **Generelt** skal du markere afkrydsningsfeltet **Produktkvittering** eller **Faktura** for at bogføre og opdele en produktkvittering eller faktura, der har forskellige leveringsadresser og skattekontonumre på siden **Indkøbsordre**. Den bogførte faktura opdeles derefter efter leveringsadresse og skattekontonummer.
 

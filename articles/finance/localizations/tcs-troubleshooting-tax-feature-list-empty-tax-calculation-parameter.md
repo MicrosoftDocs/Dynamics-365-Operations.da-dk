@@ -1,6 +1,6 @@
 ---
 title: Tom momsfunktionsliste i momsberegningsparametre
-description: Dette emne forklarer, hvordan du foretager fejlfinding af et problem, hvor listen over momsfunktioner på siden Parametre for momsberegning er tom.
+description: Denne artikel forklarer, hvordan du foretager fejlfinding af et problem, hvor listen over momsfunktioner på siden Parametre for momsberegning er tom.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869946"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Tom momsfunktionsliste i momsberegningsparametre
 
@@ -46,7 +46,7 @@ Hvis du vil finde lejer-id'et for dit Finance-miljø, skal du følge de trin, du
 
 ## <a name="resolution"></a>Løsning
 
-Hvis de to lejer-id'er er forskellige, opstår der et problem, som beskrives i dette emne. Hvis de er ens, er der et ikke-relateret problem. I dette tilfælde anbefales du at kontakte Microsoft Support.
+Hvis de to lejer-id'er er forskellige, opstår der et problem, som beskrives i denne artikel. Hvis de er ens, er der et ikke-relateret problem. I dette tilfælde anbefales du at kontakte Microsoft Support.
 
 ### <a name="solution-1"></a>Løsning 1
 

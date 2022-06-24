@@ -14,12 +14,12 @@ ms.search.industry: public sector
 ms.author: gfedorova
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 00801d406beb844bb693e8c148f721aec2a000a5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ad8a99547e3822fa6042283741f8fb8c76f495ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889503"
 ---
 # <a name="responding-to-vendor-questions-on-request-for-quotations"></a>Svar på leverandørspørgsmål i forbindelse med tilbudsanmodninger
 
@@ -41,7 +41,7 @@ Fra og med Supply Chain Management version 10.0.21 er denne funktion som standar
 1. Gå til **Indkøb og forsyning \> Opsætning \> Indkøbs- og forsyningsparametre**.
 1. Åbn fanen **Tilbudsanmodning**.
 1. Angiv følgende indstillinger efter behov:
-    - **Tillad leverandørspørgsmål**: Aktiverer eller deaktiverer leverandørspørgsmål om tilbudsanmodningssager. Du skal indstille denne til *Ja*, hvis du vil bruge de funktioner, der er beskrevet i dette emne.
+    - **Tillad leverandørspørgsmål**: Aktiverer eller deaktiverer leverandørspørgsmål om tilbudsanmodningssager. Du skal indstille denne til *Ja*, hvis du vil bruge de funktioner, der er beskrevet i denne artikel.
     - **Direkte standardsvar**: Når du besvarer et spørgsmål, kan du vælge at besvare alle de leverandører, der har modtaget tilbudsanmodningen, eller kun at svare den bestemte leverandør, som har sendt spørgsmålet. Du kan vælge denne indstilling, hver gang du svarer, men denne indstilling styrer standardindstillingen. Hvis du normalt besvarer alle leverandører, skal du vælge *Nej*. Hvis du normalt besvarer leverandører hver for sig, skal du vælge *Ja*.
 
 ## <a name="setting-up-for-vendor-questions"></a>Opsætning af leverandørspørgsmål

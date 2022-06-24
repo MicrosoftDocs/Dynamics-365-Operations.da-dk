@@ -1,6 +1,6 @@
 ---
 title: Design ER-domænespecifik datamodel
-description: Dette emne beskriver, hvordan du opretter en ny ER-konfiguration (elektronisk rapportering), der indeholder en datamodel til elektroniske betalingsdokumenter.
+description: Denne artikel beskriver, hvordan du opretter en ny ER-konfiguration (elektronisk rapportering), der indeholder en datamodel til elektroniske betalingsdokumenter.
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d76d243779f83646f14418a12c9c895fdf043451d82bd7062289be6cd8014a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c923ed6ec817d1f4ae6cd956c06b2156a6a61311
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908436"
 ---
 # <a name="er-design-domain-specific-data-model"></a>Design ER-domænespecifik datamodel
 

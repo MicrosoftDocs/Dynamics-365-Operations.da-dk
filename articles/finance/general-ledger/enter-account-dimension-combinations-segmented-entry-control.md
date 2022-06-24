@@ -1,6 +1,6 @@
 ---
 title: Angiv kombinationer af konto og dimension (segmenteret postkontrolelement)
-description: I dette emne beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
+description: I denne artikel beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 779c455cb842fda941ce716eb644b9e3020f5e90
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 8bbe36bc42ca501cf3ff48aa4951a3959ea8056a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861352"
 ---
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angiv kombinationer af konto og dimension (segmenteret postkontrolelement)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
+I denne artikel beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
 
 Brugere angiver kombinationer af konto og dimension på forskellige sider, f.eks. sider til finanskladder, budgettering og bogføringsdefinitioner. Gyldige kombinationer af konto og dimension afhænger af de kontostrukturer, der er tildelt finans og de avancerede regler, der er tildelt kontostrukturerne. Når brugerne indtaster en kombination, kan de enten manuelt indtaste værdierne eller drage fordel af omfattende opslagsmuligheder. Når du angiver feltet, kan du begynde at skrive, og derefter søger det efter værdien og beskrivelsen. For eksempel hvis du skriver 180 søger det efter enhver værdi, der begynder med denne talkombination. Eller du kan skrive kontanter, hvorefter det søger efter enhver værdi, som har en beskrivelse, der begynder med kontanter. Du kan også bruge jokertegn, f.eks. \*kontant eller \*180 til at søge, hvis værdien eller beskrivelsen indeholder søgekriterierne. 
 

@@ -1,6 +1,6 @@
 ---
-title: Oprette en fritekstfaktura
-description: Dette emne forklarer, hvordan du opretter fritekstfakturaer.
+title: Opret en fritekstfaktura
+description: Denne artikel forklarer, hvordan du opretter fritekstfakturaer.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392879"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878154"
 ---
-# <a name="create-a-free-text-invoice"></a>Oprette en fritekstfaktura
+# <a name="create-a-free-text-invoice"></a>Opret en fritekstfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du opretter fritekstfakturaer. I proceduren skal du bruge **USMF**-demoregnskabet.
+Denne artikel forklarer, hvordan du opretter fritekstfakturaer. I proceduren skal du bruge **USMF**-demoregnskabet.
 
 ## <a name="create-a-free-text-invoice"></a>Opret en fritekstfaktura
 
@@ -37,7 +37,7 @@ Dette emne forklarer, hvordan du opretter fritekstfakturaer. I proceduren skal d
     * Hvis du bruger bemyndigelser af typen Fælles eurobetalingsområde (SEPA), angives bemyndigelsen til Direct Debit automatisk, når du vælger debitorkontoen.
 
 4. Indtast en værdi i feltet **Beskrivelse**.
-5. Angiv et kontonummer, der ikke har dimensioner, i feltet **Hovedkonto**. Du skal angive dimensioner senere i dette emne.
+5. Angiv et kontonummer, der ikke har dimensioner, i feltet **Hovedkonto**. Du skal angive dimensioner senere i denne artikel.
 
     Du kan også angive et eller flere tegn for hovedkontoen og bruge opslaget til at finde kontoen.
 

@@ -1,6 +1,6 @@
 ---
 title: Indtægts- og udgiftsudskydelser i abonnementsfakturering
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere udskydelse af indtægter og udgifter i Abonnementsfakturering.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere udskydelse af indtægter og udgifter i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908090"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Indtægts- og udgiftsudskydelser i abonnementsfakturering
 
-Dette emne indeholder en forklaring på, hvordan du konfigurerer og bruger udskydelse af indtægter og udgifter i Abonnementsfakturering. Udskydelsesplaner er altid baseret på og afhænger af et underliggende oprindeligt dokument eller en faktureringsplan. Da de oprettes på basis af standardværdier, kan de ikke angives eller oprettes separat.
+Denne artikel indeholder en forklaring på, hvordan du konfigurerer og bruger udskydelse af indtægter og udgifter i Abonnementsfakturering. Udskydelsesplaner er altid baseret på og afhænger af et underliggende oprindeligt dokument eller en faktureringsplan. Da de oprettes på basis af standardværdier, kan de ikke angives eller oprettes separat.
 
 Processen til opsætning og brug af indtægts- og udgiftsudskydelser findes på flere sider:
 

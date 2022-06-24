@@ -1,6 +1,6 @@
 ---
-title: Procesfordelinger
-description: Dette emne indeholder oplysninger om fordelinger, indstillinger for behandling af dem i Microsoft Dynamics 365 Finance, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
+title: Foretag fordelinger
+description: Denne artikel indeholder oplysninger om fordelinger, indstillinger for behandling af dem i Microsoft Dynamics 365 Finance, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d300654269ef0ad52140f160f918707397c843ad
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 0629b32d39f4d74ec37eebe92b92e0b186b5fce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877977"
 ---
 # <a name="process-allocations"></a>Procesfordelinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om fordelinger, indstillinger for behandling af dem, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
+Denne artikel indeholder oplysninger om fordelinger, indstillinger for behandling af dem, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
 
 Følgende funktioner understøtter denne proces:
 

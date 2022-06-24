@@ -1,6 +1,6 @@
 ---
-title: Beregning af fast omkostning
-description: I dette emne beskrives de typiske processer til beregning og tildeling af faste omkostninger.
+title: Beregning af faste omkostninger
+description: Denne artikel beskriver de typiske processer til beregning og tildeling af faste omkostninger.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881985"
 ---
-# <a name="overhead-calculation"></a>Beregning af fast omkostning
+# <a name="overhead-calculation"></a>Beregning af faste omkostninger
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de typiske processer til beregning og tildeling af faste omkostninger.
+Denne artikel beskriver de typiske processer til beregning og tildeling af faste omkostninger.
 
 ## <a name="term-definition"></a>Definition af begrebet
 
@@ -1333,10 +1333,10 @@ Omkostningselement | Omkostningsobjekt<br>CC099 | Omkostningsobjekt<br>CC001 | O
 10001 Elektricitet | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
 Ikke-klassificerede | 0,00 |  |  |  |  |  |  |  |  |  |
 Fast omkostning | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variabel omkostning | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+Variabel omkostning | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> Dette emne viser, hvordan et primært omkostningselement, 10001 Elektricitet, flyder gennem omkostningsobjekter. Derfor tildeles disse faste omkostninger til det laveste niveau i organisationen. Det vil sige, at omkostningsobjekter på laveste niveau bærer omkostningen. Hvis du har brug for en visuel tilførsel af omkostningen mellem omkostningsobjekter, kan du bruge politikreglerne for omkostningsakkumuleringen til at visualisere strømmen af omkostningerne. Du kan finde flere oplysninger i [Politikken for omkostningsakkumulering og beregning af indirekte omkostninger](cost-rollup.md).
+> Denne artikel viser, hvordan et primært omkostningselement, 10001 Elektricitet, flyder gennem omkostningsobjekter. Derfor tildeles disse faste omkostninger til det laveste niveau i organisationen. Det vil sige, at omkostningsobjekter på laveste niveau bærer omkostningen. Hvis du har brug for en visuel tilførsel af omkostningen mellem omkostningsobjekter, kan du bruge politikreglerne for omkostningsakkumuleringen til at visualisere strømmen af omkostningerne. Du kan finde flere oplysninger i [Politikken for omkostningsakkumulering og beregning af indirekte omkostninger](cost-rollup.md).
 
 
 

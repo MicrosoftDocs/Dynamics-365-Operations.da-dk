@@ -1,6 +1,6 @@
 ---
 title: Konfigurere anlægsaktiver
-description: Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver.
+description: Denne artikel indeholder en oversigt over opsætning af modulet Anlægsaktiver.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910136"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurere anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over opsætning af modulet **Anlægsaktiver**. 
+Denne artikel indeholder en oversigt over opsætning af modulet **Anlægsaktiver**. 
 
 Parametre styrer den generelle funktionsmåde i Anlægsaktiver. Anlægsaktivgrupper kan gruppere anlægsaktiverne og angive standardattributter for hvert aktiv, der er knyttet til en gruppe. Bøger knyttes til anlægsaktivgrupper. Bøger sporer den økonomiske værdi af et anlægsaktiv over tid ved hjælp af konfigurationen af afskrivning, der er defineret i afskrivningsprofilen.
 

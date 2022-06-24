@@ -1,6 +1,6 @@
 ---
 title: Konfigurere rentefordeling for kontantkonti
-description: I dette emne beskrives, hvordan du kan oprette dine bankkonti på siden for rentefordelingsregler. Du skal fuldføre denne opsætning, før du fordeler renten.
+description: Denne artikel beskriver, hvordan du kan oprette dine bankkonti på siden for rentefordelingsregler. Du skal fuldføre denne opsætning, før du fordeler renten.
 author: v-kiarnd
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 7aea8ae00cd2f3817631fc2aa810056fdc949a6e
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d1256534403b45e13c5c71fbb0ba4acb10466829
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899780"
 ---
 # <a name="set-up-interest-distribution-for-cash-accounts"></a>Konfigurere rentefordeling for kontantkonti
 

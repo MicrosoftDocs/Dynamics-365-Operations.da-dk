@@ -1,6 +1,6 @@
 ---
 title: Fordelingsbetingelser
-description: I dette emne kan du finde oplysninger om, hvordan du bruger fordelingsbetingelser på en hovedkonto.
+description: Denne artikel har oplysninger om, hvordan du bruger fordelingsbetingelser på en hovedkonto.
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859821"
 ---
 # <a name="allocation-terms"></a>Fordelingsbetingelser
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne kan du finde oplysninger om, hvordan du bruger fordelingsbetingelser på en hovedkonto. Fordelingsbetingelser bruges til at fordele beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
+Denne artikel har oplysninger om, hvordan du bruger fordelingsbetingelser på en hovedkonto. Fordelingsbetingelser bruges til at fordele beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
 
 Hver fordelingsbetingelse, du opretter på en hovedkonto, definerer procentdelen af et bilag, der skal fordeles fra en hovedkonto med en enkelt kilde og en kombination af økonomiske dimensioner. Desuden definerer du destinationens hovedkontoen og økonomiske dimensioner, hvor beløbet skal fordeles. 
 

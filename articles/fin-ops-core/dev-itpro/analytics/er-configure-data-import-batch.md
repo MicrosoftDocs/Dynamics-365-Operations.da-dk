@@ -1,6 +1,6 @@
 ---
 title: Importere data fra manuelt valgte filer i batchtilstand
-description: Dette emne forklarer, hvordan du importerer data fra manuelt valgte filer i batchtilstand.
+description: Denne artikel forklarer, hvordan du importerer data fra manuelt valgte filer i batchtilstand.
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.openlocfilehash: 8615b5a0623fd696c64f4ec03e481a2bcb16c0ac
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2dec838439876fd8e57ea4a7078d97267e5ea1a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890177"
 ---
 # <a name="import-data-from-manually-selected-files-in-batch-mode"></a>Importere data fra manuelt valgte filer i batchtilstand
 
@@ -31,11 +31,11 @@ Hvis du vil bruge strukturen til [elektronisk rapportering (ER)](general-electro
 
 Den nye ER-funktionalitet, der understøtter import af data i batchtilstand, gør det muligt at konfigurere denne proces uovervåget. Du kan bruge ER-konfigurationer til at udføre dataimport ved at planlægge et nyt batchjob fra ER-brugergrænsefladen.
 
-Dette emne forklarer, hvordan du importerer data fra en manuelt valgt fil i batchtilstand. I eksemplerne bruges kreditorposteringer som forretningsdata. Disse eksempeltrin kan fuldføres i firmaet **USMF**. Der kræves ingen kodning.
+Denne artikel forklarer, hvordan du importerer data fra en manuelt valgt fil i batchtilstand. I eksemplerne bruges kreditorposteringer som forretningsdata. Disse eksempeltrin kan fuldføres i firmaet **USMF**. Der kræves ingen kodning.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
+Før du kan følge eksemplerne i denne artikel, skal du have følgende adgang:
 
 - En af følgende roller:
 

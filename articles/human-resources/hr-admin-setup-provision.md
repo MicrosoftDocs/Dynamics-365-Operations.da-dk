@@ -1,6 +1,6 @@
 ---
 title: Klargøring af Human Resources
-description: Dette emne forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+description: Denne artikel forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858237"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -27,13 +27,13 @@ ms.locfileid: "8710857"
 
 
 
-Dette emne forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. 
+Denne artikel forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Forudsætninger
 
 Inden klargøringen af et nyt produktionsmiljø, skal følgende forudsætninger være opfyldt:
 
-- Du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
+- Du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Human Resources-serviceplanen, og du ikke kan udføre trinnene i denne artikel, kan du kontakte Support.
 
 - Den globale administrator er logget på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og har oprettet et nyt Human Resources-projekt. 
 

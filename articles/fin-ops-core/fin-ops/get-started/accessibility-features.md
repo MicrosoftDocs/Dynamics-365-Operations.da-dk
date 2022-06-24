@@ -1,6 +1,6 @@
 ---
 title: Tilgængelighedsfunktioner
-description: I dette emne beskrives den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap.
+description: Denne artikel beskriver den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881045"
 ---
-# <a name="accessibility-features"></a>Funktioner til øget tilgængelighed
+# <a name="accessibility-features"></a>Tilgængelighedsfunktioner
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne beskrives den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap med at bruge denne app. Der er f.eks. funktioner til personer, der bruger synsteknologiske hjælpemidler som f.eks. Microsoft Windows Oplæser.
+Denne artikel beskriver den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap med at bruge denne app. Der er f.eks. funktioner til personer, der bruger synsteknologiske hjælpemidler som f.eks. Microsoft Windows Oplæser.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows Oplæser og kun tastaturadgang
 
@@ -49,7 +49,7 @@ Du kan finde flere oplysninger i [Navigationssøgning](navigation-search.md).
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Handlingssøgning for brugere, der kun bruger tastaturet, eller for fokuseret dataindtastning
 
-Der er adgang til alle handlinger, der kan udføres på en side, fra et tastatur, via tabulatornavigation. Oplysninger om tabulatornavigation finder du senere i dette emne. Du kan udføre handlinger mere direkte ved hjælp af handlingssøgningsfunktionen.
+Der er adgang til alle handlinger, der kan udføres på en side, fra et tastatur, via tabulatornavigation. Oplysninger om tabulatornavigation finder du senere i denne artikel. Du kan udføre handlinger mere direkte ved hjælp af handlingssøgningsfunktionen.
 
 ### <a name="example"></a>Eksempel
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere godkendelsestrin i en arbejdsgang
-description: I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
+description: Denne artikel forklarer, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5d7491c690cce7014f1aca0fb30ff6c3f21f45f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070771"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848687"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkendelsestrin i en arbejdsgang
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070771"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
+Denne artikel forklarer, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 
 Hvis du vil konfigurere et godkendelsestrin i arbejdsgangseditoren, skal du højreklikke på godkendelsestrinnet og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter nedenstående procedurer til at konfigurere egenskaberne for godkendelsestrinnet.
 

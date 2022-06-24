@@ -1,6 +1,6 @@
 ---
 title: Tildele nummerserier
-description: Dette emne forklarer, hvordan du opretter nummerserier til leasingaftale-id'er. Det forklarer også, hvordan du opretter entydige id'er, der bruges i indeksværdireguleringsprocessen.
+description: Denne artikel forklarer, hvordan du opretter nummerserier til leasingaftale-id'er. Det forklarer også, hvordan du opretter entydige id'er, der bruges i indeksværdireguleringsprocessen.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 71a6f27b4067eadb3d17b6fc14de366fcc441230
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ee7547f9a46034238f2bd6c668c124852b3e0714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845310"
 ---
 # <a name="assign-number-sequences"></a>Tildele nummerserier
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du opretter nummerserier til leasingaftale-id'er. Det forklarer også, hvordan du opretter entydige id'er, der bruges i indeksværdireguleringsprocessen.
+Denne artikel forklarer, hvordan du opretter nummerserier til leasingaftale-id'er. Det forklarer også, hvordan du opretter entydige id'er, der bruges i indeksværdireguleringsprocessen.
 
 1. Gå til **Aktivleasing \> Opsætning \> Parametre til aktivleasing**.
 2. Vælg fanen **Nummerserier**.

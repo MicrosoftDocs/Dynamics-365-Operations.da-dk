@@ -1,6 +1,6 @@
 ---
 title: Bruge datakilder for BRUGERINPUTPARAMETRE til at angive parametre for en rapport
-description: Dette emne forklarer, hvordan du kan bruge datakilder for BRUGERINPUTPARAMETRE til at angive parametre for rapporter, du genererer.
+description: Denne artikel forklarer, hvordan du kan bruge datakilder for BRUGERINPUTPARAMETRE til at angive parametre for rapporter, du genererer.
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-ms.openlocfilehash: 4e431c9dd59080af17fa073547073037ba233288
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 62b7a8173416a1d36a2985823d186a7a0e6a7e60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872966"
 ---
 # <a name="use-user-input-parameter-data-sources-to-specify-parameters-for-a-report"></a>Bruge datakilder for BRUGERINPUTPARAMETRE til at angive parametre for en rapport
 
 [!include[banner](../includes/banner.md)]
 
-Når du designer [Elektronisk rapportering](general-electronic-reporting.md) (ER) som [modeltilknytning](er-overview-components.md#model-mapping-component) og komponenter i ER-[format](er-overview-components.md#format-component), kan du bruge datakilder fra en *BRUGERINPUTPARAMETER*-type til at finde de krævede værdier, der kan angives i dataindtastningsfelterne i dialogboksen under kørslen, før udførelsen af et ER-format begynder. I dette emne beskrives de datakilder for *BRUGERINPUTPARAMETER*, der aktuelt understøttes.
+Når du designer [Elektronisk rapportering](general-electronic-reporting.md) (ER) som [modeltilknytning](er-overview-components.md#model-mapping-component) og komponenter i ER-[format](er-overview-components.md#format-component), kan du bruge datakilder fra en *BRUGERINPUTPARAMETER*-type til at finde de krævede værdier, der kan angives i dataindtastningsfelterne i dialogboksen under kørslen, før udførelsen af et ER-format begynder. Denne artikel beskriver de datakilder for *BRUGERINPUTPARAMETER*, der aktuelt understøttes.
 
 ## <a name="mandatory-properties"></a><a name="mandatory-properties"></a>Obligatoriske egenskaber
 

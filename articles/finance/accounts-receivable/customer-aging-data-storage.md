@@ -1,6 +1,6 @@
 ---
 title: Lager af aldersfordelte debitordata
-description: Dette emne indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. Du kan køre processen til lagring af aldersfordelte debitordata for at gøre outputtet tilgængeligt for eksport til et eksternt system.
+description: Denne artikel indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. Du kan køre processen til lagring af aldersfordelte debitordata for at gøre outputtet tilgængeligt for eksport til et eksternt system.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894136"
 ---
 # <a name="customer-aging-data-storage"></a>Lager af aldersfordelte debitordata
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. I Microsoft Dynamics 365 Finance kan du køre processen **Lager af aldersfordelte debitordata** for at gøre outputtet tilgængeligt for eksport til et eksternt system. Når du kører processen, vil de samme indstillinger for aldersfordelte rapporter, som er tilgængelige i systemet, være tilgængelige for eksterne systemer. Oplysningerne medtages altid i de eksporterede data.
+Denne artikel indeholder en beskrivelse af processen til brug af eksternt lager til aldersfordelte kundedata. I Microsoft Dynamics 365 Finance kan du køre processen **Lager af aldersfordelte debitordata** for at gøre outputtet tilgængeligt for eksport til et eksternt system. Når du kører processen, vil de samme indstillinger for aldersfordelte rapporter, som er tilgængelige i systemet, være tilgængelige for eksterne systemer. Oplysningerne medtages altid i de eksporterede data.
 
 Det kan være nyttigt at gøre aldersfordelte debitordata tilgængelige for et eksternt system til lagring i tilfælde, hvor outputtet indeholder mange debitorer og/eller mange transaktioner. Hvis der times ud af den eksisterende **aldersfordelte saldorapport for debitorer**, fordi der er for mange data til at blive udskrevet, kan denne funktion bruges som alternativ til at hente de samme data.
 

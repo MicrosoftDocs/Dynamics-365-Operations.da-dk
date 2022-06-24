@@ -1,6 +1,6 @@
 ---
 title: Designe ER-konfigurationer til at udelade tegn for byterækkefølgemærke i genererede filer
-description: I dette emne forklares det, hvordan du kan konfigurere et ER-format (elektronisk rapportering), så der genereres rapporter, hvor tegn for byterækkefølgemærke udelades.
+description: Denne artikel forklarer, hvordan du kan konfigurere et ER-format (elektronisk rapportering), så der genereres rapporter, hvor tegn for byterækkefølgemærke udelades.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847424"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designe ER-konfigurationer til at udelade tegn for byterækkefølgemærke i genererede filer
 
@@ -38,7 +38,7 @@ Hvis du angiver **UTF-8**, **UTF-16** eller **UTF-32** som kodning, bliver indst
 
 ![Angive indstillingen Undertryk BOM-tegn på siden Formatdesigner.](./media/er-suppress-bom-characters-image2.gif)
 
-Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den relevante procedure. Udfør f.eks. trinnene i emnet [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md). Når du har fuldført trinnene i sektionen [Rediger formatet, så beregningen er baseret på genereret output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i dette emne, skal du følge disse ekstra trin.
+Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den relevante procedure. Udfør f.eks. trinnene i artiklen [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md). Når du har fuldført trinnene i sektionen [Rediger formatet, så beregningen er baseret på genereret output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i denne artikel, skal du følge disse ekstra trin.
 
 1. Angiv UTF-kodningen:
 
@@ -48,12 +48,12 @@ Hvis du vil gennemse funktionaliteten under kørslen, skal du gennemføre den re
 2. Opret en XML-fil, der indeholder et BOM-tegn:
 
     1. Angiv indstillingen **Undertryk BOM-tegn** til **Nej** for at medtage BOM-tegn i genererede XML-filer.
-    2. Udfør trinnene i sektionen [Udskyde udførelsen af oversigts-XML-elementet, så den beregnede total bruges](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) af emnet [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md), og gem den genererede fil som **SampleXmlReport.xml**.
+    2. Udfør trinnene i sektionen [Udskyde udførelsen af oversigts-XML-elementet, så den beregnede total bruges](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) af artiklen [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md), og gem den genererede fil som **SampleXmlReport.xml**.
 
 3. Opret en XML-fil, der ikke indeholder et BOM-tegn:
 
     1. Angiv indstillingen **Undertryk BOM-tegn** til **Ja** for at udelade BOM-tegn i genererede XML-filer.
-    2. Udfør trinnene i sektionen [Udskyde udførelsen af oversigts-XML-elementet, så den beregnede total bruges](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) af emnet [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md), og gem den genererede fil som **SampleXmlReport (1).xml**.
+    2. Udfør trinnene i sektionen [Udskyde udførelsen af oversigts-XML-elementet, så den beregnede total bruges](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) af artiklen [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md), og gem den genererede fil som **SampleXmlReport (1).xml**.
 
 4. Sammenlign de genererede filer i et filsammenligningsværktøj.
 

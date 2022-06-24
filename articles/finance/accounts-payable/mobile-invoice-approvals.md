@@ -1,42 +1,42 @@
 ---
 title: Mobilfakturagodkendelser
-description: Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder.
+description: Denne artikel er beregnet som en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737349"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946268"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
 [!include [banner](../includes/banner.md)]
 
-Virksomhedsbrugere kan designe mobiloplevelser med mobilfunktioner. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
+Virksomhedsbrugere kan designe mobiloplevelser med mobilfunktioner. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Denne artikel er beregnet som en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Denne artikel kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-| Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Forudsætning                                                                                            | Beskrivende tekst                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Et miljø, der har version 1611 og Platform update 3 (november 2016)                   |
 | Installer hotfix-KB 3204341.                                                                              | Arbejdsrutineoptager kan fejlagtigt optage to Luk-kommandoer til rullelistedialogbokse. Dette er medtaget i Platform update 3 (november 2016). |
 | Installer hotfix-KB 3207800.                                                                              | Dette hotfix gør det muligt at se vedhæftede filer på mobilklienten. Dette er medtaget i Platform update 3 (november 2016).           |
 | Installer hotfix-KB 3208224.                                                                              | Programkode til applikationen til godkendelse af kreditorfakturaer på mobilenheder. Dette er inkluderet i version 7.0.1 (maj 2016).                          |
-| En Android- eller iOS- eller en Windows-enhed, hvor mobilappen til er installeret. | Søg efter appen i den relevante appbutik.                                                                                                                     |
+| En Android- eller iOS- eller en Windows-enhed, hvor mobilappen til er installeret. | Søg efter appen i den relevante appbutik.                            |
 
 ## <a name="introduction"></a>Introduktion
 Godkendelser af kreditorfakturaer på mobilenheder kræver tre de hotfixes, der er nævnt i afsnittet "Forudsætninger". Disse hotfixes giver ikke et arbejdsområde til godkendelse af fakturaer. Hvis du vil vide, hvad er et arbejdsområde er i forbindelse med mobilenheder, skal du læse håndbogen til mobilenheder, der er nævnt i afsnittet "Forudsætninger". Arbejdsområdet til godkendelse af fakturaer skal udformes. 
@@ -51,11 +51,11 @@ Hver organisation organiserer og definerer sin forretningsproces for kreditorfak
     -   Har fakturaerne også regnskabsfordelinger i fakturahovedet? I så fald, skal disse regnskabsfordelinger være tilgængelige på enheden?
 
     > [!NOTE]
-    > Dette emne forklarer ikke, hvordan du redigerer regnskabsfordelinger, fordi denne funktion i øjeblikket ikke understøttes for mobilscenarier.
+    > Denne artikel forklarer ikke, hvordan du redigerer regnskabsfordelinger, fordi denne funktion i øjeblikket ikke understøttes for mobilscenarier.
 
 -   Ønsker brugere at se vedhæftede filer til fakturaen på enheden?
 
-Hvilke mobilfunktioner der skal bruges til godkendelse af fakturaer, afhænger af svarene på disse spørgsmål. Målet er at optimere brugeroplevelsen af forretningsprocessen på mobilenhederne i en organisation. I resten af dette emne ser vi på to scenarievariationer, der er baseret på forskellige svar på de foregående spørgsmål. 
+Hvilke mobilfunktioner der skal bruges til godkendelse af fakturaer, afhænger af svarene på disse spørgsmål. Målet er at optimere brugeroplevelsen af forretningsprocessen på mobilenhederne i en organisation. I resten af denne artikel ser vi på to scenarievariationer, der er baseret på forskellige svar på de foregående spørgsmål. 
 
 Som hovedregel når du arbejder med designeren til mobilenheder skal du sørge for at "publicere" ændringerne for at undgå at miste opdateringerne.
 

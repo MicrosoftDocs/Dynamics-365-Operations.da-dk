@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0510ab84b2b44dcadfbcaee25a3cd43e29ef44d582e0dc0e8281d993e4808c07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 329d5722d750afde2f18e410f7f8c3ffe7554578
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897978"
 ---
 # <a name="form-1099-in-the-public-sector"></a>1099-blanket i den offentlige sektor
 
@@ -29,7 +29,7 @@ ms.locfileid: "6729532"
 
 Denne artikel indeholder tip og oplysninger om opsætning af 1099-blanketfunktionalitet til Kreditor i den offentlige sektor.
 
-1099-skatteblanketten er obligatorisk, hvis du handler med leverandører, der er underlagt amerikansk 1099-skat. I dette emne beskrives de 1099-funktioner, som er tilgængelige for den offentlige sektor. Det anbefales også, at du gennemgår det amerikanske skattevæsens (IRS) regelændringer for det pågældende skatteår, før du opretter og behandler 1099-opgørelser. Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Leverandørerne er typisk virksomheder, der leverer ydelser til din organisation. Leverandørerne kan også være personer, der ikke er medarbejdere. Du skal også sende en opgørelse til hver 1099-leverandør, du handler med, for at oplyse leverandøren om det beløb, du indberetter til skattemyndighederne. Offentlige juridiske organisationer, der har en primær adresse i USA, kan sende blanketten 1099-G eller 1099-S til det amerikanske skattevæsen. 1099-G-indkomstskatteblanketten bruges til at rapportere indkomst fra myndighedskilder, som f.eks. statslige eller lokale skatterefusioner, ydelser ved arbejdsløshed eller tilskud. 1099-S indkomstskatteblanketten bruges til at rapportere indtægter fra salg eller skifte af visse typer af fast ejendom. I Dynamics 365 Finance skal 1099-opsætningsprocedurerne som regel kun fuldføres én gang. Du kan dog bruge oplysningerne senere, hvis du vil redigere eller få vist eksisterende poster.
+1099-skatteblanketten er obligatorisk, hvis du handler med leverandører, der er underlagt amerikansk 1099-skat. Denne artikel beskriver de 1099-funktioner, som er tilgængelige for den offentlige sektor. Det anbefales også, at du gennemgår det amerikanske skattevæsens (IRS) regelændringer for det pågældende skatteår, før du opretter og behandler 1099-opgørelser. Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Leverandørerne er typisk virksomheder, der leverer ydelser til din organisation. Leverandørerne kan også være personer, der ikke er medarbejdere. Du skal også sende en opgørelse til hver 1099-leverandør, du handler med, for at oplyse leverandøren om det beløb, du indberetter til skattemyndighederne. Offentlige juridiske organisationer, der har en primær adresse i USA, kan sende blanketten 1099-G eller 1099-S til det amerikanske skattevæsen. 1099-G-indkomstskatteblanketten bruges til at rapportere indkomst fra myndighedskilder, som f.eks. statslige eller lokale skatterefusioner, ydelser ved arbejdsløshed eller tilskud. 1099-S indkomstskatteblanketten bruges til at rapportere indtægter fra salg eller skifte af visse typer af fast ejendom. I Dynamics 365 Finance skal 1099-opsætningsprocedurerne som regel kun fuldføres én gang. Du kan dog bruge oplysningerne senere, hvis du vil redigere eller få vist eksisterende poster.
 
 ## <a name="tips"></a>Tip!
 -   Du har muligvis bemærket, at på mange sider findes feltet **s-2-bruttoudbytte** ikke. Dette felt vises ikke, hvis beløbet er det samme som beløbet i feltet **Afregnet 1099 på forbundsniveau**.

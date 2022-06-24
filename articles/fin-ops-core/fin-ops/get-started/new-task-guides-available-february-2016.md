@@ -1,6 +1,6 @@
 ---
 title: Nye opgaveguider (februar 2016)
-description: I dette emne vises de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.
+description: Denne artikel viser de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1947ec2ef0ef061323f904c739d49a5a2594b9d0e730f19e4d4da322148e473
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb74ce407bd98dbd650804ed337e48986d58911d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861728"
 ---
 # <a name="new-task-guides-february-2016"></a>Nye opgaveguider (februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016. De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-biblioteket til Microsoft Dynamics AX og (februar 2016) Introduktion.
+Denne artikel viser de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016. De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-biblioteket til Microsoft Dynamics AX og (februar 2016) Introduktion.
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek (februar 2016) til Microsoft Dynamics AX
 

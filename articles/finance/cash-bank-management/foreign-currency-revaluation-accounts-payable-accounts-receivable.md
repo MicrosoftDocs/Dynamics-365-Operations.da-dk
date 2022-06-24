@@ -1,6 +1,6 @@
 ---
 title: Valutaregulering af udenlandsk valuta for kreditor og debitor
-description: Dette emne indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor.
+description: Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906378"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Valutaregulering af udenlandsk valuta for kreditor og debitor
 
 [!include [banner](../includes/banner.md)]
 
-Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Dette emne indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor. 
+Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor. 
 
 Den teoretiske værdi, eller bogførte værdi, af åbne posteringer i udenlandsk valuta varierer over tid på grund af udsving i valutakurserne. Hvis du vil opdatere værdien af åbne posteringer i kreditor og debitor, skal du køre processen til værdiregulering af udenlandsk valuta. Værdiregulering af udenlandsk valuta kan køres for både kreditor og debitor. Processen bruger en ny valutakurs til at regulere de åbne, eller ikke-udlignede beløb, på en angivet dato. Forskelle mellem de oprindelige bogførte beløb og de revaluerede beløb vil medføre ikke-realiseret gevinst eller tab for hver åbne postering. Kreditor- og debitorreskontroposterne opdateres derefter for at afspejle det ikke-realiserede gevinst eller tab, og en regnskabspost bogføres til Finans.
 

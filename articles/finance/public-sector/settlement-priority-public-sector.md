@@ -1,6 +1,6 @@
 ---
 title: Udligningsprioritet i den offentlige sektor
-description: Dette emne indeholder oplysninger om, hvordan den offentlige sektor automatisk eller manuelt kan prioritere udligninger ved hjælp af faktureringsklassifikationer.
+description: Denne artikel indeholder oplysninger om, hvordan den offentlige sektor automatisk eller manuelt kan prioritere udligninger ved hjælp af faktureringsklassifikationer.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 19551
 ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 854eeb429169a857de4dd0946d80ada229f74e14
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: 0f64266b03b3a5b156907e079f27b1e8e8e67598
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817707"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946291"
 ---
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 

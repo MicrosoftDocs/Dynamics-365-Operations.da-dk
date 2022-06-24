@@ -1,6 +1,6 @@
 ---
-title: Fordelingsgrundlag
-description: Dette emne indeholder oplysninger om fordelingsgrundlag. Fordelingsgrundlag er centrale komponenter i omkostningsregnskabet og bruges oftest til at fordele faste omkostninger.
+title: Fordelingsbaser
+description: Denne artikel indeholder oplysninger om fordelingsgrundlag. Fordelingsgrundlag er centrale komponenter i omkostningsregnskabet og bruges oftest til at fordele faste omkostninger.
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894078"
 ---
 # <a name="allocation-bases"></a>Fordelingsgrundlag 
 
@@ -174,11 +174,11 @@ Omkostningsregnskabet understøtter en række statistiske målinger ved hjælp a
 - Værktøj til import/eksport i Datastyring
 - Statistiske målinger
 
-Når du vil udtrække statistiske målinger fra systemet, kræver det en skabelon til provider af statistisk målinger. Du kan finde flere oplysninger under Skabelon til providere af statistiske målinger. (Tilføjer et hyperlink, når dette emne er skrevet).
+Når du vil udtrække statistiske målinger fra systemet, kræver det en skabelon til provider af statistisk målinger. Du kan finde flere oplysninger under Skabelon til providere af statistiske målinger. (Tilføjer et link, når denne artikel er skrevet).
 
 **Skabeloner til providere af statistiske målinger**
 
-| Navn  | Funktion | Kildetabel  | Sumfelt      | Datofelt     |
+| Name  | Funktion | Kildetabel  | Sumfelt      | Datofelt     |
 |-------|----------|---------------|----------------|----------------|
 | Fuldtidsansatte | Antal    | HcmEmployment | Ikke tilgængelig | Ikke tilgængelig |
 

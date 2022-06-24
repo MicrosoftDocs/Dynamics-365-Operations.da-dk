@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål til integration with Finance
-description: Dette emne beskriver, hvilke data der synkroniseres i en integration af Human Resources og Finance.
+description: I denne artikel beskrives et, hvilke data der synkroniseres i en integration af Human Resources og Finance.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879273"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "8693998"
 
 
 
-Dette emne indeholder svar på almindelige spørgsmål om, hvilke data der synkroniseres, når Dynamics 365 Human Resources integreres med Dynamics 365 Finance.
+Denne artikel indeholder svar på almindelige spørgsmål om, hvilke data der synkroniseres, når Dynamics 365 Human Resources integreres med Dynamics 365 Finance.
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Kan jeg redigere Dynamics 365 Talent-programbrugeren i Power Apps?
 

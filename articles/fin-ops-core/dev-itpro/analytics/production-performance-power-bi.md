@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til produktionsperformance
-description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance.
+description: Denne artikel beskriver, hvad der er omfattet af Power BI-indhold til produktionsperformance.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881455"
 ---
 # <a name="production-performance-power-bi-content"></a>Power BI-indhold til produktionsperformance
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er omfattet af **Produktionsperformance** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Denne artikel beskriver, hvad der er omfattet af Microsoft Power BI-indhold til **Produktionsperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -63,7 +63,7 @@ Følgende data bruges til rapportsiderne i Power BI-indholdet til **Produktionsp
 
 Følgende tabel viser de samlede nøglemålinger, der bruges som grundlag af Power BI-indholdet.
 
-| Enhed                   | Samlede nøglemålinger  | Datakilde for Finance and Operations-apps | Felt              |
+| Enhed                   | Samlede nøglemålinger  | Datakilde til Finans og drift-apps | Felt              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

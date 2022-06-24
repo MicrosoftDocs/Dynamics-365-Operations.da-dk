@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources (6. oktober 2020)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 6. oktober 2020.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 6. oktober 2020.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887712"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nyheder eller ændringer i Dynamics 365 Human Resources (6. oktober 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062973"
 
 
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources. Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Dynamics 365 Human Resources. Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
 Yderligere oplysninger om nye funktioner og de forventede generelle tilgængelighedsdatoer finder du i [Oversigten over Dynamics 365 Human Resources 2020-udgivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ Følgende funktion er generelt tilgængelig med denne udgivelse.
 Følgende fejlrettelser er inkluderet i denne version.
 
 >[!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Der kan være opdateringer til dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Der kan være opdateringer til denne artikel, der omfatter fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
-| Fejlnummer | Fejl | Beskrivelse |
+| Fejlnummer | Fejl | Beskrivende tekst |
 | --- | --- | --- |
 | 448806 | **Standardidentifikationstype** eksporteres som **RecID** i HCM-parametre | Denne ændring af enheden Human Resources-parametre tilføjer en ekstra kolonne, der viser **Standardidentifikationstype**. |
 | 492923 | Opgaveregistreringer gemmes ikke i Lifecycle Services (LCS) | Opgaveregistreringer kan nu gemmes i LCS. |

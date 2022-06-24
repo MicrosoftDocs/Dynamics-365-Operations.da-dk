@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884135"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importere konfigurationer til at generere dokumenter, der har programdata
 
@@ -25,7 +25,7 @@ ms.locfileid: "6727479"
 
 For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv".
 
-I denne procedure forklares det, hvordan du designer elektroniske rapportering (ER) konfigurationer for at generere et elektronisk dokument. I denne procedure skal du importere de nødvendige ER-konfigurationer, der er oprettet til eksempelfirmaet Litware, Inc., og bruge dem til at generere elektroniske dokumenter. Denne procedure er til brugere, der er tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Disse trin kan udføres ved hjælp af DEMF-datasættet. Før du går i gang, skal du hente og gemme filerne i Hjælp-emnet "Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering" (generate-electronic-documents-update-application-data/). Filerne er Intrastat (model).xml, Intrastat (tilknytning).xml og Intrastat (format).xml.
+I denne procedure forklares det, hvordan du designer elektroniske rapportering (ER) konfigurationer for at generere et elektronisk dokument. I denne procedure skal du importere de nødvendige ER-konfigurationer, der er oprettet til eksempelfirmaet Litware, Inc., og bruge dem til at generere elektroniske dokumenter. Denne procedure er til brugere, der er tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Disse trin kan udføres ved hjælp af DEMF-datasættet. Før du går i gang, skal du hente og gemme filerne i Hjælp-artiklen "Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering" (generate-electronic-documents-update-application-data/). Filerne er Intrastat (model).xml, Intrastat (tilknytning).xml og Intrastat (format).xml.
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren Opret en konfigurationsudbyder, og markér den som aktiv.  

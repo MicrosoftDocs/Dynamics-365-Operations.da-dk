@@ -1,6 +1,6 @@
 ---
 title: Lagertilgængelighed i dobbeltskrivning
-description: I dette emne får du oplysninger om, hvordan du kontrollerer lagertilgængelighed i dobbeltskrivning.
+description: Denne artikel har oplysninger om, hvordan du kontrollerer lagertilgængelighed i dobbeltskrivning.
 author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: efd175dfbe49549561bdb7d697c8bc47016f1d5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908256"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Lagertilgængelighed i dobbeltskrivning
 
@@ -60,7 +60,7 @@ Når du vælger knappen **Disponibel lagerbeholdning** på siden **Tilbud**, **O
 
 Der findes følgende skabeloner til visning af de disponible lagerbeholdningsdata.
 
-Finance and Operations-apps | Kundeengagementapps     | Betegnelse
+Finans og drift-apps | Kundeengagementapps     | Betegnelse
 ---|---|---
 [Posteringer til disponibelt CDS-lager](mapping-reference.md#145) | msdyn_inventoryonhandentries |
 [Anmodninger om disponibelt CDS-lager](mapping-reference.md#147) | msdyn_inventoryonhandrequests |

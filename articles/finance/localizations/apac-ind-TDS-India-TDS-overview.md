@@ -1,6 +1,6 @@
 ---
 title: Oversigt over indisk kildeskat (TDS – Tax Deducted at Source)
-description: Dette emne indeholder detaljerede oplysninger om indisk kildeskat (TDS – Tax Deducted at Source) . Skattedokumentationen dækker denne funktion.
+description: Denne artikel indeholder detaljerede oplysninger om indisk kildeskat (TDS – Tax Deducted at Source). Skattedokumentationen dækker denne funktion.
 author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 0947481f27323a53d5ef9c7295d8dda078fb4254
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 7ddcf11013921b5d5e242c9026d332d319ed8169
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720190"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896277"
 ---
 # <a name="indian-tax-deducted-at-source-tds-overview"></a>Oversigt over indisk kildeskat (TDS – Tax Deducted at Source)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder detaljerede oplysninger om indisk kildeskat (TDS – Tax Deducted at Source) .
+Denne artikel indeholder detaljerede oplysninger om indisk kildeskat (TDS – Tax Deducted at Source).
 
 Skattedokumentationen dækker denne funktion. Den forklarer også, hvordan du foretager den grundlæggende opsætning af kildeskat, beregner kildeskat for transaktioner, fuldfører skatteudligningsprocessen, registrerer skattecertifikatnumre og genererer skatteforespørgsler, skatteopgørelser og skattecertifikater. Dokumentet dækker følgende emner:
 

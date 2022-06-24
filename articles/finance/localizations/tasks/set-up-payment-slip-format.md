@@ -1,6 +1,6 @@
 ---
 title: Konfigurere indbetalingskortformat
-description: Emnet forklarer, hvordan du vedhæfter udskrevne indbetalingskort til fakturaer og angiver en betalingsreference til brug ved bogføring og betaling.
+description: Denne artikel forklarer, hvordan du vedhæfter udskrevne indbetalingskort til fakturaer og angiver en betalingsreference til brug ved bogføring og betaling.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1956b41b0413537a8b813c9ba23b9a5af0d8baee
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: fffdd61a96078a4745013218000db90a3e7ae92b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846439"
 ---
 # <a name="set-up-payment-slip-format"></a>Konfigurere indbetalingskortformat
 

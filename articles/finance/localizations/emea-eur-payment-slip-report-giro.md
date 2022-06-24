@@ -1,6 +1,6 @@
 ---
 title: Indbetalingskortrapport for Europa
-description: Dette emne indeholder oplysninger om indbetalingskortrapporter for Europa.
+description: Denne artikel indeholder oplysninger om indbetalingskortrapporter for Europa.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 114d872ea939999afb6d3652f8cd6db34d0d99e1c303d6770d8613647a04f0c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9225e946fc3dd61eb0347a8f50561180f94ae589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889800"
 ---
 # <a name="payment-slip-report-for-europe"></a>Indbetalingskortrapport for Europa
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om indbetalingskortrapporter for Europa.
+Denne artikel indeholder oplysninger om indbetalingskortrapporter for Europa.
 
 Funktionerne for indbetalingskortrapporter er tilgængelige for juridiske enheder, der har deres primære adresse i Danmark, Belgien, Norge, Schweiz eller Finland. Virksomheder vedhæfter ofte udskrevne indbetalingskort til fakturaer for at angive en betalingsreference til brug ved bogføring og betaling. Indbetalingskortet kan bruges til projekt- eller servicefakturaer, rykkere, rentenotaer og kontoopgørelser samt til salgsfakturaer og fritekstfakturaer.
 

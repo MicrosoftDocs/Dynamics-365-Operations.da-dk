@@ -1,6 +1,6 @@
 ---
 title: Bogføring af standardomkostningsafvigelse
-description: Dette emne giver oplysninger om opsætning af bogføringsprofiler for standardefterkalkulation.
+description: Denne artikel giver oplysninger om opsætning af bogføringsprofiler for standardefterkalkulation.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894871"
 ---
 # <a name="standard-cost-variance-posting"></a>Bogføring af standardomkostningsafvigelse
 
-Når du bruger standardefterkalkulation for et eller flere produkter i organisationen, skal du konfigurere [forudsætningerne for standardefterkalkulation](/supply-chain/cost-management/prerequisites-standard-costs.md). I dette emne forklares de bogføringskonti, der kræves i trin 3 af forudsætningerne, "Tildele finanskonti til varebogføringer, der vedrører standardomkostningsafvigelser".
+Når du bruger standardefterkalkulation for et eller flere produkter i organisationen, skal du konfigurere [forudsætningerne for standardefterkalkulation](/supply-chain/cost-management/prerequisites-standard-costs.md). Denne artikel forklarer de bogføringskonti, der kræves i trin 3 af forudsætningerne, "Tildele finanskonti til varebogføringer, der vedrører standardomkostningsafvigelser".
 
 Der kan forekomme forskellige typer afvigelser for indkøbs- og produktionsordrer. Du kan se eksempler på produktionsafvigelser i [Almindelige kilder til produktionsafvigelser](/supply-chain/cost-management/common-sources-of-production-variances.md). Der opstår prisafvigelser i indkøbsordrer, når du bruger standardomkostninger for en købt vare, og der er forskel mellem produktets standardkostpris og det fakturerede beløb på indkøbsordren.
 

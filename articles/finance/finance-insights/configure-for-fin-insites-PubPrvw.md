@@ -1,6 +1,6 @@
 ---
 title: Konfiguration til Finance Insights - version 10.0.20 og nyere
-description: I dette emne beskrives de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights i version 10.0.20 og nyere.
+description: Denne artikel beskriver de konfigurationstrin, der sætter systemet i gang med at bruge de egenskaber, der er tilgængelige i Finance Insights i version 10.0.20 og nyere.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868512"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration til Finance Insights - version 10.0.20 og nyere
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711598"
 
 
 
-Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. I dette emne beskrives konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights for offentlig forhåndsversion.
+Finance Insights kombinerer funktionalitet fra Microsoft Dynamics 365 Finance sammen med Dataverse, Azure og AI Builder for at levere effektive prognoseværktøjer til din organisation. Denne artikel beskriver konfiguration af Dynamics 365 Finance version 10.0.20, så dit system kan bruge de egenskaber, der er tilgængelige i Finance Insights for offentlig forhåndsversion.
 
 > [!NOTE]
-> De konfigurationstrin, der er beskrevet i dette emne, gælder kun for Finans version 10.0.20 og senere. Hvis du vil konfigurere Finance Insights på version 10.0.19 og tidligere, skal du se [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
+> De konfigurationstrin, der er beskrevet i denne artikel, gælder kun for Finance version 10.0.20 og senere. Hvis du vil konfigurere Finance Insights på version 10.0.19 og tidligere, skal du se [Konfiguration for Finance insights - versioner op til 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Udrulle Finance
 

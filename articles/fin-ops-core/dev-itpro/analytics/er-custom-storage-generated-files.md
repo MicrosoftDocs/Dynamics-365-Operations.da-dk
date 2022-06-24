@@ -1,6 +1,6 @@
 ---
 title: Angive brugerdefinerede lagersteder til oprettede dokumenter
-description: I dette emne beskrives, hvordan du kan udvide listen over placering til lagring af dokumenter, som genereres ved elektronisk rapportering (ER).
+description: Denne artikel beskriver, hvordan du kan udvide listen over placering til lagring af dokumenter, som genereres ved elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898850"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angive brugerdefinerede lagersteder til oprettede dokumenter
 
 [!include[banner](../includes/banner.md)]
 
-Med API'en (application programming interface) i den elektroniske rapporteringsstruktur (ER) kan du udvide listen over lagerplaceringer til dokumenter, som ER-formater genererer. Dette emne forklarer, hvordan du kan føje en brugerdefineret lagerplacering til genererede dokumenter ved at delegere opgaven til oprettelse af ER-destinationer til standarddestinationsfabrikken og derefter implementere en brugerdefineret klasse, der har sin egen destinationslogik.
+Med API'en (application programming interface) i den elektroniske rapporteringsstruktur (ER) kan du udvide listen over lagerplaceringer til dokumenter, som ER-formater genererer. Denne artikel forklarer, hvordan du kan føje en brugerdefineret lagerplacering til genererede dokumenter ved at delegere opgaven til oprettelse af ER-destinationer til standarddestinationsfabrikken og derefter implementere en brugerdefineret klasse, der har sin egen destinationslogik.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -35,7 +35,7 @@ Installer en topologi, der understøtter fortløbende build. Du kan finde flere 
 
 Du skal også have adgang til udviklingsmiljøet for denne topologi.
 
-Alle opgaverne i dette emne kan fuldføres i **USMF**-firmaet.
+Alle opgaverne i denne artikel kan fuldføres i **USMF**-firmaet.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Importere ER-formatet Rul anlægsaktiver fremad
 

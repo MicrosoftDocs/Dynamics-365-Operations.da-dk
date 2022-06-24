@@ -1,6 +1,6 @@
 ---
 title: Startside for organisationsadministration
-description: Dette emne peger på ressourcer, der kan hjælpe dig med din organisation.
+description: Denne artikel peger på ressourcer, der kan hjælpe dig med din organisation.
 author: sericks007
 ms.date: 08/18/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04d188b0bf7d7fc7064467e1e05199d0eb90b4d0276a3c0c01ad8f9be78e76e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f6d4320fb22f0354b33b44e731d22f3f763789ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882043"
 ---
 # <a name="organization-administration-home-page"></a>Startside for organisationsadministration
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne peger på indhold, som kan hjælpe superbrugere og administratorer med at konfigurere systemet til at arbejde glat og effektivt i din organisation og virksomhed.
+Denne artikel peger på indhold, som kan hjælpe superbrugere og administratorer med at konfigurere systemet til at arbejde glat og effektivt i din organisation og virksomhed.
 
 Meget af indholdet, der vises her, gælder for funktioner i modulet **Virksomhedsadministration**. Der findes dog nogle opgaver, f.eks. oprettelse og brug af en postskabelon, der kan udføres i alle moduler for at hjælpe organisationen med at køre mere effektivt.
 

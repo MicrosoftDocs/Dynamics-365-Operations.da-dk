@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold for praksischef
-description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef.
+description: Denne artikel beskriver, hvad der er medtaget i Power BI-indhold for praksischef.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 31ca2841983d972194b55d91a6789fd84d62d890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898981"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er medtaget i **Praksischef** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
+Denne artikel beskriver, hvad der er medtaget i Microsoft Power BI-indhold for **Praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 

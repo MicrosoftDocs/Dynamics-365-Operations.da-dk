@@ -1,6 +1,6 @@
 ---
 title: Konfigurere egenskaber for arbejdsgang
-description: I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
+description: Denne artikel forklarer, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 author: ChrisGarty
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ec604ed9614b80b3b24c670911b4ea480d6131e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069242"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876435"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaber for arbejdsgang
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069242"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
+Denne artikel forklarer, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 
 Du kan konfigurere egenskaberne for en arbejdsgang ved at åbne arbejdsgangen i arbejdsgangseditoren. Klik på lærredet i arbejdsgangseditoren, og klik derefter på **Egenskaber** for at åbne siden **Egenskaber**. Du kan derefter bruge følgende procedurer til at konfigurere forskellige egenskaber for arbejdsgangen.
 

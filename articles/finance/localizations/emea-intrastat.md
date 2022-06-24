@@ -1,6 +1,6 @@
 ---
 title: Intrastat-oversigt
-description: Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU.
+description: Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU.
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 97c2b4068f3b8d38281e637ec80f04b19d19be61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894774"
 ---
 # <a name="intrastat-overview"></a>Intrastat-oversigt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU. Dette emne indeholder også en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
+Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/områder i EU. Denne artikel indeholder også en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 
 Intrastat er det system, der bruges til indsamling af oplysninger og generering af statistik over varehandel blandt lande/områder i EU. Intrastat-rapportering er påkrævet, når et produkt krydser grænsen til et andet EU-land/område. I nogle lande/områder gælder Intrastat-rapportering også for tjenester. Obligatoriske og fakultative elementer kan indsamles i Intrastat-rapportering. Følgende elementer er obligatoriske: momsnr. på den part, der er ansvarlig for at levere oplysninger, referenceperioden, strømmen (modtagelse eller forsendelse), den ottecifrede varekode, partnerens medlemsstat (afsendelsesmedlemsstaten på modtagelser) og bestemmelsesmedlemsstaten for forsendelser, varernes værdi, mængden af varer (nettomasse og supplerende enheder) og transaktionens art. Lande/regioner kan også indsamle valgfrie elementer i forskellige situationer. Nogle valgfrie elementer er land/region, leveringsbetingelserne, transportmåden, en mere detaljeret varekode end CN8, oprindelsesområdet for forsendelser og destinationsområdet for modtagelser, den statistiske procedure, den statistiske værdi, en beskrivelse af varerne og havn/lufthavn for lastning/losning.
 
@@ -152,7 +152,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 
 ### <a name="transaction-codes-and-miscellaneous-charges"></a><a name= "transaction-codes-and-miscellaneous-charges"></a>Transaktionskoder og diverse gebyrer
 
-Dette emne omhandler et scenario, hvor et firma i Tyskland skal købe varer fra et firma i Italien. For at kunne foretage dette køb skal det tyske firma oprette nye transaktionskoder og konfigurere beregningsregler for fakturabeløbet og det statistiske beløb for disse transaktionskoder. Når firmaet opretter en faktura, skal det desuden angive diverse gebyrer og deres procentsatser. Disse værdier tages i betragtning, når den statistiske værdi beregnes.
+Denne artikel omhandler et scenario, hvor et firma i Tyskland skal købe varer fra et firma i Italien. For at kunne foretage dette køb skal det tyske firma oprette nye transaktionskoder og konfigurere beregningsregler for fakturabeløbet og det statistiske beløb for disse transaktionskoder. Når firmaet opretter en faktura, skal det desuden angive diverse gebyrer og deres procentsatser. Disse værdier tages i betragtning, når den statistiske værdi beregnes.
 
 I scenariet bruges den juridiske enhed **DEMF**.
 

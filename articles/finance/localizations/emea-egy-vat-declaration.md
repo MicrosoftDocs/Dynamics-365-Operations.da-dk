@@ -1,6 +1,6 @@
 ---
 title: Momsopgørelse for Egypten
-description: Dette emne forklarer, hvordan du konfigurerer og genererer momsindberetningsformular til Egypten.
+description: Denne artikel forklarer, hvordan du konfigurerer og genererer momsindberetningsformular til Egypten.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870029"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsopgørelse for Egypten (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403942"
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du kan oprette og generere formularen til momsangivelse og salgs- og indkøbsbøger for juridiske enheder i Egypten.
+Denne artikel indeholder en forklaring på, hvordan du kan oprette og generere formularen til momsangivelse og salgs- og indkøbsbøger for juridiske enheder i Egypten.
 
 Formularen til momsindberetning i Egypten er det officielle dokument, der opsummerer det samlede udgående momsbeløb, det samlede indgående momsbeløb, der kan inddrives, og det relaterede skyldige momsbeløb. Formularen bruges til alle typer skatteydere og skal udfyldes manuelt via momsmyndighedsportalen. Formularen til momsindberetning kaldes normalt momsindberetningsregistrering.
 

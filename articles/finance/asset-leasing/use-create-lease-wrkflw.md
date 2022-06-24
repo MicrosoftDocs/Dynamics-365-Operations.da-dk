@@ -1,6 +1,6 @@
 ---
 title: Bruge arbejdsgange for leasinggodkendelse
-description: I dette emne forklares, hvordan du kan bruge arbejdsgange til at godkende aktivleasingaftaler, og hvordan du kan følge op på arbejdsgangernes status og historik.
+description: Denne artikel forklarer, hvordan du kan bruge arbejdsgange til at godkende aktivleasingaftaler, og hvordan du kan følge op på arbejdsgangernes status og historik.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906436"
 ---
 # <a name="use-lease-approval-workflows"></a>Bruge arbejdsgange for leasinggodkendelse
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan bruge arbejdsgange til at godkende aktivleasingaftaler, og hvordan du kan følge op på arbejdsgangernes status og historik. Arbejdsgange medvirker til administration af godkendelser af leasingaftaler ved at levere et standardsæt med godkendelsestrin og tildele bestemte brugere, der godkender hvert trin i processen. En godkender kan godkende en leasingaftale, afvise den, anmode om en ændring på den eller tildele den til en anden bruger til godkendelse. Arbejdsgange kan også give godkendelsesprocessen flere oplysninger ved at lade dig spore deres status og historik. Derudover kan du få vist en centraliseret arbejdsliste, der viser de opgaver og godkendelser, der er tildelt bestemte godkendere.
+Denne artikel forklarer, hvordan du kan bruge arbejdsgange til at godkende aktivleasingaftaler, og hvordan du kan følge op på arbejdsgangernes status og historik. Arbejdsgange medvirker til administration af godkendelser af leasingaftaler ved at levere et standardsæt med godkendelsestrin og tildele bestemte brugere, der godkender hvert trin i processen. En godkender kan godkende en leasingaftale, afvise den, anmode om en ændring på den eller tildele den til en anden bruger til godkendelse. Arbejdsgange kan også give godkendelsesprocessen flere oplysninger ved at lade dig spore deres status og historik. Derudover kan du få vist en centraliseret arbejdsliste, der viser de opgaver og godkendelser, der er tildelt bestemte godkendere.
 
 Før du bruger denne procedure, skal du kontrollere, at der er oprettet mindst en leasinggodkendelse til arbejdsgangen. Hvis der ikke findes en arbejdsgang, skal du oprette en. Du kan finde flere oplysninger om konfiguration af arbejdsgangen i [Konfigurere arbejdsgange for leasinggodkendelse](set-up-lease-wrkflw.md).
 

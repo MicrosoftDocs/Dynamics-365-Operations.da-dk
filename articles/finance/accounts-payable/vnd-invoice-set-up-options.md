@@ -1,6 +1,6 @@
 ---
 title: Konfigurere indstillinger for automatisering af kreditorfaktura (prøveversion)
-description: I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer.
+description: Denne artikel beskriver de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer.
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86ad68b3dc08bf2c57ab5f9bc6c65bc37c0901e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874835"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Opsætningsindstillinger for automatisering af kreditorfaktura
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer. Funktioner til fakturaautomatisering bruger følgende typer opsætningsparametre:
+Denne artikel beskriver de indstillinger, der er tilgængelige for opsætning og konfiguration af automatisering af kreditorfakturaer. Funktioner til fakturaautomatisering bruger følgende typer opsætningsparametre:
 
 - Parametre til automatisk anvendelse af forudbetalinger i importerede fakturaer.
 - Parametre for afsendelse af importerede kreditorfakturaer til arbejdsprocessystemet og tilsvarende bogførte produktkvitteringslinjer til ventende kreditorfakturalinjer.

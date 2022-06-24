@@ -1,6 +1,6 @@
 ---
 title: Notaintegration
-description: I dette emne beskrives integrationen af notadata i dobbeltskrivning.
+description: Denne artikel beskriver integrationen af notadata i dobbeltskrivning.
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876709"
 ---
 # <a name="note-integration"></a>Notaintegration
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062769"
 
 
 
-I løbet af Microsoft Dynamics 365-forretningsprocesserne indsamler brugere ofte oplysninger om deres kunder. Oplysningerne registreres som aktiviteter og notater. I dette emne beskrives integrationen af notadata i dobbeltskrivning.
+I løbet af Microsoft Dynamics 365-forretningsprocesserne indsamler brugere ofte oplysninger om deres kunder. Oplysningerne registreres som aktiviteter og notater. Denne artikel beskriver integrationen af notadata i dobbeltskrivning.
 
 Kundeoplysninger kan klassificeres på følgende måder:
 

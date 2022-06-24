@@ -1,6 +1,6 @@
 ---
 title: Mobilarbejdsområdet Firmaadressekartotek
-description: Dette emne indeholder oplysninger om mobilarbejdsområdet Firmaadressekartotek, hvor brugerne kan se og kontakte andre medarbejdere i organisationen.
+description: Denne artikel indeholder oplysninger om mobilarbejdsområdet Firmaadressekartotek, hvor brugerne kan se og kontakte andre medarbejdere i organisationen.
 author: jcart1106
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811533"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868721"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilarbejdsområdet Firmaadressekartotek
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emne indeholder oplysninger om arbejdsområdet **Firmaadressekartotek** på mobilenheder. I dette arbejdsområde kan brugerne se og kontakte andre medarbejdere i organisationen.
+Denne artikel indeholder oplysninger om arbejdsområdet **Firmaadressekartotek** på mobilenheder. I dette arbejdsområde kan brugerne se og kontakte andre medarbejdere i organisationen.
 
-Dette mobile arbejdsområde kan bruges sammen med Finance and Operations-mobilappen.
+Dette mobile arbejdsområde kan bruges sammen med Finans og drift-mobilappen.
 
 ## <a name="overview"></a>Overblik
 I mobilarbejdsområdet **Firmaadressekartotek** kan brugerne udføre disse opgaver:
@@ -50,12 +50,12 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 <tbody>
 <tr class="odd">
 <td>Et af følgende produkter skal være installeret i organisationen:
-<ul><li>En Finance and Operations-app</li>
+<ul><li>En Finans og drift-app</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Hvis en Finance and Operations-app ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
+<td>Hvis en Finans og drift-app ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Download og installer Finance and Operations-mobilappen:
+Download og installer Finans og drift-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

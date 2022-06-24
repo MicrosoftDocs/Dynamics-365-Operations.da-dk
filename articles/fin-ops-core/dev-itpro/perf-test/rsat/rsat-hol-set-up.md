@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og installere selvstudium til Regression Suite Automation Tool
-description: Dette emne er et selvstudium, der viser, hvordan du kan konfigurere og installere Regression Suite Automation Tool (RSAT).
+description: Denne artikel er et selvstudium, der viser, hvordan du kan konfigurere og installere Regression Suite Automation Tool (RSAT).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858584"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Konfigurere og installere selvstudium til Regression Suite Automation Tool
 
-Dette emne er et selvstudium, der hjælper dig med konfigurere og komme i gang med RSAT og de værktøjer, der er knyttet til brugen af RSAT.
+Denne artikel er et selvstudium, der hjælper dig med konfigurere og komme i gang med RSAT og de værktøjer, der er knyttet til brugen af RSAT.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ I dette selvstudium skal du bruge LCS som Forretningsmodeldesigner (BPM) til at 
 
 ## <a name="configure-the-lcs-project"></a>Konfigurere LCS-projektet
 
-Du skal bruge et LCS-projekt (Lifecycle Services) til mastertestbiblioteket. LCS Forretningsmodeldesigner (BPM) bruges som masterbibliotek for testsagerne. BPM bruges til at administrere og distribuere testbiblioteker på tværs af LCS-projekter. En Microsoft-partner eller en uafhængig softwareleverandør (ISV), der f.eks. bygger testsager, skal frigive testsagerne i form af BPM-biblioteker. I BPM er testsager organiseret efter forretningsproces. BPM definerer ikke udførelsesrækkefølgen eller hyppigheden af testforløb. Disse detaljer styres i Azure DevOps, som beskrevet senere i dette emne.  
+Du skal bruge et LCS-projekt (Lifecycle Services) til mastertestbiblioteket. LCS Forretningsmodeldesigner (BPM) bruges som masterbibliotek for testsagerne. BPM bruges til at administrere og distribuere testbiblioteker på tværs af LCS-projekter. En Microsoft-partner eller en uafhængig softwareleverandør (ISV), der f.eks. bygger testsager, skal frigive testsagerne i form af BPM-biblioteker. I BPM er testsager organiseret efter forretningsproces. BPM definerer ikke udførelsesrækkefølgen eller hyppigheden af testforløb. Disse detaljer styres i Azure DevOps, som beskrevet senere i denne artikel.  
 
 Til dit LCS-projekt kan du bruge et eksisterende kundeimplementerings- eller partnerprojekt.
 
@@ -517,7 +517,7 @@ I ældre versioner af RSAT skulle du installere Selenium- og browserdrivere. Du 
 
     - **Standardbrowser** – Vælg enten **Internet Explorer** eller **Google Chrome**. Sørg for, at de relevante browserdrivere er installeret.
     - **Timeout for testkørsel** – Angiv timeoutperioden i minutter for testkørsler. Når timeoutperioden udløber, lukkes alle aktive vinduer, og ventende testsager mislykkes.
-    - **Timeout for testhandling** – Dette felt kontrollerer timeoutperioden i minutter for Finance and Operations-miljøets serveranmodninger. Normalt skal standardværdien (2 minutter) være tilstrækkelig. Men i langsomme miljøer kan det være en god idé at øge værdien, hvis der opstår fejl, der er relateret til timeout.
+    - **Timeout for testhandling** – Dette felt kontrollerer timeoutperioden i minutter for Finans og drift-miljøets serveranmodninger. Normalt skal standardværdien (2 minutter) være tilstrækkelig. Men i langsomme miljøer kan det være en god idé at øge værdien, hvis der opstår fejl, der er relateret til timeout.
     - **Firmanavn** – Angiv det firmanavn, der skal bruges som standardfirma, når Excel-parameterfiler oprettes. Du kan ændre firmaet senere ved at redigere Excel-parameterfilen.
 
     ![Dialogboksen Indstillinger.](./media/setup_rsa_tool_62.png)

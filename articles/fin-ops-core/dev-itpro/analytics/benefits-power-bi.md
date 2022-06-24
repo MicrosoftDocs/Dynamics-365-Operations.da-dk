@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til Frynsegoder
-description: I dette emne beskrives Power BI-indhold til Frynsegoder.
+description: Denne artikel beskriver Power BI-indhold til Frynsegoder.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e7cadc16c5ed6c6eab8c90090cac017221f63f466115b04a6a3b843db44b1c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c78755946c7f07e1be7a57015e6c0c15317e6b76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848803"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-indhold til Frynsegoder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives **Frynsegoder** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Denne artikel beskriver **Frynsegoder** i Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet for **Frynsegoder** vises i arbejdsområdet **Frynsegodeadministration**, hvis du bruger et af følgende produkter:

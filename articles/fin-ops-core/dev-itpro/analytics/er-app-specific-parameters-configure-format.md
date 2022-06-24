@@ -1,6 +1,6 @@
 ---
-title: Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed
-description: I dette emne forklares det, hvordan du kan konfigurere Elektroniske rapporteringsformater til at bruge de parametre, der er angivet for den enkelte juridiske enhed.
+title: Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed
+description: Denne artikel forklarer, hvordan du kan konfigurere Elektroniske rapporteringsformater til at bruge de parametre, der er angivet for den enkelte juridiske enhed.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858822"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurer ER-formater for at bruge de parametre, der er angivet for den enkelte juridiske enhed
 
@@ -33,17 +33,17 @@ I mange af de Elektroniske rapporteringsformater, du kommer til at designe, skal
 -   Jo flere juridiske enheder der er, des flere ER-formatkonfigurationer skal der vedligeholdes.
 -   Vedligeholdelse af ER-konfigurationer kræver, at erhvervsbrugere er bekendt med ER.
 
-De ER-programspecifikke parametre gør det muligt for superbrugere at konfigurere datafiltreringen i et ER-format, så den er baseret på et sæt abstrakte regler. Dette sæt regler kan konfigureres til at bruge de datakilder, der er tilgængelige i et ER-format. Erhvervsbrugere kan derefter angive de rigtige regler ud over den bevarede ER-ramme ved hjælp af den brugergrænseflade (UI), der genereres automatisk på basis af indstillingerne for det tilsvarende ER-format og de aktuelle oplysninger om den juridiske enhed, du har adgang til i ER-formatets datakilder. Regelsættet, der er angivet for et ER-format, kan eksporteres fra Dynamics 365 Finance (Finance)'s aktuelle juridiske enhed for forekomsten. Det kan derefter importeres til en anden juridisk enhed af enten den samme Finance-forekomst eller en anden forekomst som et sæt regler for det samme ER-format.
+De ER-programspecifikke parametre gør det muligt for superbrugere at konfigurere datafiltreringen i et ER-format, så den er baseret på et sæt abstrakte regler. Dette sæt regler kan konfigureres til at bruge de datakilder, der er tilgængelige i et ER-format. Erhvervsbrugere kan derefter angive de rigtige regler ud over den bevarede ER-ramme ved hjælp af den brugergrænseflade (UI), der genereres automatisk på basis af indstillingerne for det tilsvarende ER-format og de aktuelle oplysninger om den juridiske enhed, du har adgang til i ER-formatets datakilder. Regelsættet, der er angivet for et ER-format, kan eksporteres fra den aktuelle juridiske enhed for forekomsten af Dynamics 365 Finance (Finance). Det kan derefter importeres til en anden juridisk enhed af enten den samme Finance-forekomst eller en anden forekomst som et sæt regler for det samme ER-format.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-For at gennemføre eksemplerne i dette emne, skal du have adgang til den forekomst af Regulatory Configuration Service (RCS), der er klargjort til den samme lejer som Finance, for en af følgende roller:
+For at gennemføre eksemplerne i denne artikel, skal du have adgang til den forekomst af Regulatory Configuration Services (RCS), der er klargjort til den samme lejer som Finance, for en af følgende roller:
 
 - Udvikler til elektronisk rapportering
 - Funktionel konsulent i elektronisk rapportering
 - Systemadministrator
 
-Vi anbefaler, at du udfører trinnene i emnet [Understøt parameteriserede opkald om ER-datakilder af typen BEREGNET FELT](er-calculated-field-type.md). Hvis du allerede har fuldført disse trin, kan du springe trinnene i den efterfølgende sektion **Importer ER-konfigurationer til RCS** over.
+Vi anbefaler, at du udfører trinnene i artiklen [Understøt parameteriserede opkald om ER-datakilder af typen BEREGNET FELT](er-calculated-field-type.md). Hvis du allerede har fuldført disse trin, kan du springe trinnene i den efterfølgende sektion **Importer ER-konfigurationer til RCS** over.
 
 ## <a name="import-er-configurations-into-rcs"></a>Importer ER-konfigurationer til RCS
 
@@ -58,7 +58,7 @@ Download og gem følgende ER-konfigurationer lokalt.
 
 Dernæst skal du logge på din RCS-forekomst.
 
-I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, Inc. Før du kan fuldføre denne procedure skal du fuldføre trinnene i emnet [Opret en konfigurationsudbyder og marker den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS.
+I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, Inc. Før du kan fuldføre denne procedure skal du fuldføre trinnene i artiklen [Opret en konfigurationsudbyder og marker den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS.
 
 1.  Vælg **Elektronisk rapportering** på standarddashboardet.
 2.  Vælg **Rapporteringskonfigurationer**.
@@ -300,7 +300,7 @@ Gentag trinnene i dette afsnit for overordnede elementer i formatet **Format til
 -   Tilknytning for at lære parameteriserede kald.xml
 -   Model til at lære parameteriserede kald.xml
 
-Du kan få mere at vide om konfigurationen af ER-formatet **Format til at lære, hvordan du søger efter LE-data** til at konfigurere juridisk enhedsafhængige sæt af momskoder for at filtrere momstransaktioner efter forskellige beskatningsniveauer ved at fuldføre trinnene i emnet [Konfigurer parametrene for et ER-format for hver juridisk enhed](er-app-specific-parameters-set-up.md).
+Du kan få mere at vide om konfigurationen af ER-formatet **Format til at lære, hvordan du søger efter LE-data** til at konfigurere juridisk enhedsafhængige sæt af momskoder for at filtrere momstransaktioner efter forskellige beskatningsniveauer ved at fuldføre trinnene i artiklen [Konfigurer parametrene for et ER-format for hver juridisk enhed](er-app-specific-parameters-set-up.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

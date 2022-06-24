@@ -1,6 +1,6 @@
 ---
 title: Separat orkestreringspakke med program til dobbeltskrivning
-description: Dobbeltskrivningsprogrammets orkestreringspakke er ikke længere en enkelt pakke, men er adskilt i mindre pakker. Dette emne indeholder en forklaring på de løsninger og tilknytninger, som hver enkelt pakke indeholder, og dens afhængighed af andre pakker.
+description: Dobbeltskrivningsprogrammets orkestreringspakke er ikke længere en enkelt pakke, men er adskilt i mindre pakker. Denne artikel indeholder en forklaring på de løsninger og tilknytninger, som hver enkelt pakke indeholder, og dens afhængighed af andre pakker.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716546"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874806"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat orkestreringspakke med program til dobbeltskrivning
 
@@ -26,14 +26,14 @@ ms.locfileid: "8716546"
 Tidligere var dobbeltskrivningsprogrammets orkestreringspakke en enkelt pakke, der indeholdt følgende løsninger:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations Dual Write Entity Maps
+- Dynamics 365 Finans og drift Common Anchor
+- Dynamics 365 Finans og drift Dual Write Entity Maps
 - Dynamics 365 Aktivadministration-app
 - Dynamics 365 Aktivadministration
 - HCM, fælles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 Finans og drift Common
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
@@ -42,7 +42,7 @@ Da den var en enkelt pakke, oprettede denne pakke en "alt eller intet"-situation
 
 ![Adskilt pakke.](media/separated-package-1.png)
 
-Dette emne indeholder en forklaring på de løsninger og tilknytninger, som hver enkelt pakke indeholder, og dens afhængighed af andre pakker.
+Denne artikel indeholder en forklaring på de løsninger og tilknytninger, som hver enkelt pakke indeholder, og dens afhængighed af andre pakker.
 
 ## <a name="dual-write-application-core"></a>Programkerne til dobbeltskrivning
 
@@ -51,7 +51,7 @@ Med pakken Programkerne til dobbeltskrivning kan brugerne installere og konfigur
 | Entydigt navn                           | Vist navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finans og drift Common |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhedstilknytninger for programkerne til dobbeltskrivning   |
 | msdyn_DualWriteAppCoreAnchor          | Programkerneanker til dobbeltskrivning        |

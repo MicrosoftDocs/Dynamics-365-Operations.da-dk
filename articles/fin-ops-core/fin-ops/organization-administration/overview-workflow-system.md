@@ -1,6 +1,6 @@
 ---
-title: Oversigt over arbejdsgangssystem
-description: I dette emne beskrives arbejdsgangssystemet.
+title: Oversigt over arbejdsprocessystem
+description: Denne artikel beskriver arbejdsprocessystemet.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 13dd4335a8b939a44ea7176a90f660999c32a83a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863182"
 ---
-# <a name="workflow-system-overview"></a>Oversigt over arbejdsgangssystem
+# <a name="workflow-system-overview"></a>Oversigt over arbejdsprocessystem
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I dette emne beskrives arbejdsgangssystemet.
+Denne artikel beskriver arbejdsprocessystemet.
 
 ## <a name="what-is-workflow"></a>Hvad er en arbejdsgang?
 

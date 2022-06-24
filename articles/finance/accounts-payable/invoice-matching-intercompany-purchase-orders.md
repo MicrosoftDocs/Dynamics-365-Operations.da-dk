@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879734"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturasammenholdelse og interne indkøbsordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109962"
 
 Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. Når feltet **Bogfør faktura med uoverensstemmelser** på siden **Kreditorparametre** er angivet til **Kræv godkendelse**, udføres validering af fakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres.
 
-I eksemplerne under dette emne benyttes følgende opsætning for intern handel:
+I eksemplerne i denne artikel benyttes følgende opsætning for intern handel:
 -   Fabrikam Purchase er den juridiske indkøbsenhed.
 -   Fabrikam Sales er den juridiske salgsenhed.
 -   Debitor 4020 findes i Fabrikam Sales.

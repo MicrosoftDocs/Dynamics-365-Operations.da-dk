@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområde til personalestyring
-description: Dette emne indeholder en beskrivelse af de grundlæggende elementer i arbejdsområdet til personalestyring.
+description: Denne artikel indeholder en beskrivelse af de grundlæggende elementer i arbejdsområdet til personalestyring.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8b7493aa2df65b42d0da8a451c40cccafbc1cda8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fc424905bc9311662859b900636a68de2f7ee3cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689460"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888753"
 ---
 # <a name="personnel-management-workspace"></a>Arbejdsområde til personalestyring
 
@@ -29,7 +29,7 @@ ms.locfileid: "8689460"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Arbejdsområdet **Personalestyring** indholder en stor mængde indhold. Det indeholder personalebevægelser, sporer medarbejderændringer, ledige stillinger, adresseændringer, udløbsposter og analyser, og det indeholder links til specifikke oplysninger. Dette emne indeholder detaljerede oplysninger om de enkelte dele i arbejdsområdet.
+Arbejdsområdet **Personalestyring** indholder en stor mængde indhold. Det indeholder personalebevægelser, sporer medarbejderændringer, ledige stillinger, adresseændringer, udløbsposter og analyser, og det indeholder links til specifikke oplysninger. Denne artikel indeholder detaljerede oplysninger om de enkelte dele i arbejdsområdet.
 
 ## <a name="activity-tab"></a>Fanen Aktivitet
 

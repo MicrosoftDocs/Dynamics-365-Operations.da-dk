@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693858"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886154"
 ---
 # <a name="process-compensation"></a>Kompensationsbehandling
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693858"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance. Dette emne drejer sig om den grundlæggende arbejdsgang ved kompensationsbehandling i forbindelse med faste lønplaner uden indregning af en medarbejderperformance.
+Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance. Denne artikel drejer sig om den grundlæggende arbejdsgang ved kompensationsbehandling i forbindelse med faste lønplaner uden indregning af en medarbejderperformance.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planlægge de nye kompensationsbeløb og budgetter
 For at give medarbejderne meritstigning skal du konfigurere et budget for fast stigning for hver af dine afdelinger: **Kompensationsstyring** > **Links** > **Meritstigningsmål**. (Du kan også åbne denne side via afdelingen: **Organisation** > **Afdelinger**). Her kan du angive, om medarbejdere i en bestemt fagforening eller lokalitet skal have en anden stigningsprocent. Felterne **Budget** og **Valuta** er til orientering og kan bruges til at notere et valutabeløb til budgettet.
@@ -41,7 +41,7 @@ Datoen for **Tidspunkt** i proceshændelsen bruges kun til behandling af visse v
 
 Når du har gemt parametrene for proceshændelsen, kan du klikke på knappen **Opsætning** for at angive de planer, der skal medtages, når denne proces køres, og hvilke fast løn-handlinger der skal udføres for hver enkelt plan.
 
-Klik på knappen **Tilføj** under fanen **Planer** for at føje en kompensationsplan til proceshændelsen. Kolonnerne **Brug anden regulering**, **Reguleringsfaktor** og **Reguleringsbeskrivelse** bruges kun til variable kompensationsplaner og er ikke medtaget i dette emne.
+Klik på knappen **Tilføj** under fanen **Planer** for at føje en kompensationsplan til proceshændelsen. Kolonnerne **Brug anden regulering**, **Reguleringsfaktor** og **Reguleringsbeskrivelse** bruges kun til variable kompensationsplaner og er ikke medtaget i denne artikel.
 
 Gem posten, og klik derefter på knappen **Tilføj** under fanen **Handlinger** for at tilføje en fast løn-handlinger for den valgte plan. Du kan bruge indstillingen **Aktiver anbefaling** til at angive et andet beløb end det beregnede resultattillæg for handlingen. Hvis du vil beregne en handling, der er baseret på resultatet af den foregående handling, så flere kompensationshandlinger tilknyttes, skal du markere indstillingen **Brug tidligere resultat**. Fast lønkompensation-handlinger er typer af kompensationslogikken, som du kan give sigende navne. For planer af typen **Klasse** og **Omfang** kan du kun tilføje fast løn-handlinger af følgende typer:
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere komponenterne i et job
-description: I dette emne beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation.
+description: I denne artikel beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afe100879a4f83e4ef16048bc4b1acace19b679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877708"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurere komponenterne i et job
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693578"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation. 
+I denne artikel beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation. 
 
 Når du vil oprette job, skal du først konfigurere visse referenceoplysninger. Du kan oprette et job, der kun har et navn. Du kan dog også medtage yderligere oplysninger, som f.eks. en stillingsbetegnelse, og derved angive standardværdier for de stillinger, der er tilknyttet jobbet. Desuden kan nogle af de oplysninger, du angiver, bruges til at filtrere kompensationsstrukturer til specifikke job. Hvis du vil oprette berettigelse, som du kan bruge til at filtrere lønstrukturer til et bestemt job, skal du konfigurere jobfunktioner og jobtyper, før du konfigurerer job. Når disse standardværdier er tilgængelige, sparer du tid, når du tilføjer stillinger til jobbet. 
 

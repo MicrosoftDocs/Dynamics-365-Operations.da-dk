@@ -1,6 +1,6 @@
 ---
 title: Enkelt bilag med flere debitor- eller kreditorposter
-description: Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 Finance, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling.
+description: Denne artikel indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 Finance, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889085"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere debitor- eller kreditorposter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling. 
+Denne artikel indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling. 
 
 Nogle almindelige eksempler på, hvor ét bilag bruges til flere debitorer eller kreditorer, omfatter saldooverførsler mellem debitorer og modregning mellem debitorer og kreditorer i samme organisation. 
 
@@ -35,7 +35,7 @@ Et bilag, der indeholder mere end én debitor eller kreditor, kan indtastes ved 
 -   Med et bilag, der indeholder flere linjer, hvor der ikke er nogen finansmodkonto, med mere end én debitor eller kreditor.
 -   Angivelse af et bilag med kontoen og modkontoen værende kreditor/kreditor, debitor/debitor, kreditor/debitor eller debitor/kreditor.
 
-Dette emne viser, hvordan udligning skal behandles, når der bogføres et bilag med flere poster for debitoren eller kreditoren. Dette emne indeholder desuden løsninger for at hjælpe dig med at forstå, hvordan du undgår at bruge ét bilag med flere debitorer eller kreditorer. Der findes eksempler, der illustrerer to almindelige scenarier med udligning, der er berørt af anvendelsen af et bilag med flere debitorer eller kreditorer:
+Denne artikel viser, hvordan udligning skal behandles, når der bogføres et bilag med flere poster for debitoren eller kreditoren. Denne artikel indeholder desuden løsninger for at hjælpe dig med at forstå, hvordan du undgår at bruge ét bilag med flere debitorer eller kreditorer. Der findes eksempler, der illustrerer to almindelige scenarier med udligning, der er berørt af anvendelsen af et bilag med flere debitorer eller kreditorer:
 
 -   Kasserabatregnskab
 -   Værdireguleringsregnskab

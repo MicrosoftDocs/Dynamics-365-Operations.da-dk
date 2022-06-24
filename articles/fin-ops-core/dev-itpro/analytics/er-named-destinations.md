@@ -1,6 +1,6 @@
 ---
 title: Konfigurere postspecifikke ER-destinationer for udskriftsstyring
-description: Dette emne forklarer, hvordan du kan konfigurere postspecifikke destinationer i udskriftsstyringen til et elektronisk rapporteringsformat (ER), som er konfigureret til at generere udgående dokumenter.
+description: Denne artikel forklarer, hvordan du kan konfigurere postspecifikke destinationer i udskriftsstyringen til et elektronisk rapporteringsformat (ER), som er konfigureret til at generere udgående dokumenter.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
-ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
+ms.openlocfilehash: 2972dc6a0b373cbc63b811c01ef7a5538810edbb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "8603048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872707"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurere postspecifikke ER-destinationer for udskriftsstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan en bruger med rollen Systemadministrator eller Debitorassistent kan udføre følgende opgaver:
+Denne artikel forklarer, hvordan en bruger med rollen Systemadministrator eller Debitorassistent kan udføre følgende opgaver:
 
 - Konfigurer navngivne destinationer for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til en ER-løsning, der genererer fritekstfakturaer.
 - Tildel en ER-destination til en enkelt post til [udskriftsstyring](document-reporting-services.md).

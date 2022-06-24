@@ -1,6 +1,6 @@
 ---
 title: Konfigurere hovedkontokategorier
-description: I dette emne beskrives, hvordan du konfigurerer hovedkontokategorier i Dynamics 365 Finance.
+description: Denne artikel beskriver, hvordan du konfigurerer hovedkontokategorier i Dynamics 365 Finance.
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879557"
 ---
 # <a name="set-up-main-account-categories"></a>Konfigurere hovedkontokategorier
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer hovedkontokategorier. Hovedkontokategorier bruges til standardrapporter i økonomisk rapportering og Power BI. Hovedkontokategorier, der oprettes som standard, kan omdøbes, men ikke slettes. Yderligere kontokategorier kan oprettes og bruges til rapportering og analyse. I dette emne demofirmaet USMF.
+Denne artikel beskriver, hvordan du konfigurerer hovedkontokategorier. Hovedkontokategorier bruges til standardrapporter i økonomisk rapportering og Power BI. Hovedkontokategorier, der oprettes som standard, kan omdøbes, men ikke slettes. Yderligere kontokategorier kan oprettes og bruges til rapportering og analyse. Denne artikel anvender demofirmaet USMF.
 
 ## <a name="create-a-main-account-category"></a>Opret en hovedkontokategori
 1. Gå i navigationsruden **Moduler > Finans > Kontoplan > Konti > Hovedkontokategorier**.

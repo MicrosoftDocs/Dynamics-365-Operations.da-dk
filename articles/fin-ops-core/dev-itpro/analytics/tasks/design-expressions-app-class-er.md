@@ -1,6 +1,6 @@
 ---
 title: Designe ER-udtryk til kald af programklassemetoder
-description: Dette emne indeholder oplysninger om, hvordan du genbruge den eksisterende programlogik i konfigurationer til elektronisk rapportering ved at kalde de krævede metoder for programklasser.
+description: Denne artikel indeholder oplysninger om, hvordan du genbruge den eksisterende programlogik i konfigurationer til elektronisk rapportering ved at kalde de krævede metoder for programklasser.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883619"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Designe ER-udtryk til kald af programklassemetoder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kan genbruge den eksisterende programlogik i konfigurationer af [elektronisk rapportering (ER)](../general-electronic-reporting.md) ved at kalde de påkrævede metoder for programklasser i ER-udtryk. Værdier af argumenter for kald af klasser kan defineres dynamisk under kørsel. Værdier kan f.eks. baseres på oplysningerne i fortolkningsdokumentet for at sikre, at de er korrekte.
+Denne artikel indeholder oplysninger om, hvordan du kan genbruge den eksisterende programlogik i konfigurationer af [elektronisk rapportering (ER)](../general-electronic-reporting.md) ved at kalde de påkrævede metoder for programklasser i ER-udtryk. Værdier af argumenter for kald af klasser kan defineres dynamisk under kørsel. Værdier kan f.eks. baseres på oplysningerne i fortolkningsdokumentet for at sikre, at de er korrekte.
 
-Til eksemplet i dette emne skal du designe en proces til fortolkning af indgående bankkontoudtog for en opdatering af programdata. Du modtager indgående bankkontoudtog som tekstfiler (.txt) med IBAN-koder (International Bank Account Number). Som en del af importprocessen for kontoudtog skal du validere rigtigheden af disse IBAN-koder ved brug af den logik, der allerede findes.
+Til eksemplet i denne artikel skal du designe en proces til fortolkning af indgående bankkontoudtog for en opdatering af programdata. Du modtager indgående bankkontoudtog som tekstfiler (.txt) med IBAN-koder (International Bank Account Number). Som en del af importprocessen for kontoudtog skal du validere rigtigheden af disse IBAN-koder ved brug af den logik, der allerede findes.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Procedurerne i dette emne er beregnet til brugere, der har fået tildelt rollen som **Systemadministrator** eller **Elektronisk rapporteringsudvikler**.
+Procedurerne i denne artikel er beregnet til brugere, der har fået tildelt rollen som **Systemadministrator** eller **Elektronisk rapporteringsudvikler**.
 
 Procedurerne kan udføres ved hjælp af et hvilket som helst datasæt.
 
 Du skal hente og gemme følgende fil lokalt: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-I dette emne opretter du de påkrævede ER-konfigurationer for Litware, Inc., eksempelvirksomheden. Du skal derfor fuldføre følgende trin, før du kan fuldføre procedurerne i dette emne.
+I denne artikel opretter du de krævede ER-konfigurationer for Litware, Inc., eksempelvirksomheden. Du skal derfor fuldføre følgende trin, før du kan fuldføre procedurerne i denne artikel.
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** skal du bekræfte, at konfigurationsudbyderen for eksempelfirmaet **Litware, Inc.** er tilgængeligt og markeret som aktivt. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i [Opret konfigurationsudbydere, og markér den som aktive](er-configuration-provider-mark-it-active-2016-11.md).

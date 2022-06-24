@@ -1,6 +1,6 @@
 ---
 title: Bruge grænser for kontantstyring
-description: I dette emne forklares det, hvordan du bruger kontantstyring til at definere transaktionsgrænser, når der ikke er nogen kontantsaldo, eller en transaktion vil medføre, at kontantsaldoen falder under et foruddefineret beløb.
+description: Denne artikel forklarer, hvordan du bruger kontantstyring til at definere transaktionsgrænser, når der ikke er nogen kontantsaldo, eller en transaktion vil medføre, at kontantsaldoen falder under et foruddefineret beløb.
 author: v-kiarnd
 ms.date: 09/21/2020
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 28f7eea32a558cd4f8bb099841663c56989063a9
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 01f60fd7877665842a7dc3d64a07600b0fd64a1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861206"
 ---
 # <a name="use-cash-control-limits"></a>Bruge grænser for kontantstyring
 
 [!include [banner](../includes/banner.md)]
 
 
-I dette emne forklares det, hvordan du bruger kontantstyring til at definere transaktionsgrænser, når der ikke er nogen kontantsaldo, eller en transaktion vil medføre, at kontantsaldoen falder under et foruddefineret beløb.
+Denne artikel forklarer, hvordan du bruger kontantstyring til at definere transaktionsgrænser, når der ikke er nogen kontantsaldo, eller en transaktion vil medføre, at kontantsaldoen falder under et foruddefineret beløb.
 
 Kontantstyring giver dig mulighed for at definere en grænse (tærskel) for at forhindre, at transaktioner bogføres, hvis der ikke er nogen kontantsaldo, eller hvis transaktionen vil medføre, at saldoen falder under den definerede grænse. Den konto, der er defineret i den anvendte bogføringsdefinition, evalueres, når transaktioner oprettes, redigeres og bogføres. Hvis der ikke er genereret en post, bruges den tilsvarende konto. Hvis bogføring af transaktionen vil medføre, at den relaterede kassekontosaldo falder under den grænse, der er defineret for kontoen, vises en fejlmeddelelse, og du skal ændre kontoen for at fortsætte. .
 

@@ -1,6 +1,6 @@
 ---
 title: Nummerering af dokumenter og bilag kronologisk
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876377"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Nummerering af dokumenter og bilag kronologisk
 
 [!include [banner](../includes/banner.md)]
 
 
-I nogle lande er der et juridisk krav om at nummerere dokumenter og relaterede bilag i kronologisk rækkefølge. Kronologien skal understøttes af perioder. Alle de tal, der tilhører tidligere perioder, skal være mindre end de tal, der tilhører senere perioder. For at opfylde dette krav er der implementeret kronologisk nummereringsfunktionalitet. Dette emne indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
+I nogle lande er der et juridisk krav om at nummerere dokumenter og relaterede bilag i kronologisk rækkefølge. Kronologien skal understøttes af perioder. Alle de tal, der tilhører tidligere perioder, skal være mindre end de tal, der tilhører senere perioder. For at opfylde dette krav er der implementeret kronologisk nummereringsfunktionalitet. Denne artikel indeholder en forklaring på, hvordan du kan konfigurere og bruge kronologiske numre til relevante dokumenter og relaterede bilag.
 
 ## <a name="prerequisites"></a>Forudsætninger
 

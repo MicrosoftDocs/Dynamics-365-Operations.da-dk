@@ -1,6 +1,6 @@
 ---
 title: Antal bøger pr. kladde
-description: Dette emne beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver anskaffelse, og til afskrivning.
+description: Denne artikel beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver anskaffelse, og til afskrivning.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e37d40c30d784eea5ba097447f2b2e69920830a
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2dbd50963cf13f00e09b82e884cd8ebc0b67d424
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722374"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883323"
 ---
 # <a name="number-of-books-per-journal"></a>Antal bøger pr. kladde
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver enkelt anskaffelse og for afskrivning ved hjælp af felterne i **Antal kartoteker pr. kladde** under fanen **Generelt** på siden **Parametre til anlægsaktiver** (**Anlægsaktiver \> Konfiguration \> Struktur for anlægsaktiver**). Du kan bruge disse felter til at fordele antallet af anlægskartoteker pr. anskaffelseskladde og en afskrivningskladde.
+Denne artikel beskriver forholdet mellem kladder og anlægsaktivbøger, når du opretter et anlægsaktivanskaffelse eller et afskrivningsforslag via et batchjob. Du kan definere det maksimale antal kartoteker, der er inkluderet for hver enkelt anskaffelse og for afskrivning ved hjælp af felterne i **Antal kartoteker pr. kladde** under fanen **Generelt** på siden **Parametre til anlægsaktiver** (**Anlægsaktiver \> Konfiguration \> Struktur for anlægsaktiver**). Du kan bruge disse felter til at fordele antallet af anlægskartoteker pr. anskaffelseskladde og en afskrivningskladde.
 
 I forbindelse med et anskaffelsesforslag er standardværdien mindst 10.000 bøger. I forbindelse med et afskrivningsforslag er standardværdien mindst 2.000 kartoteker.
 

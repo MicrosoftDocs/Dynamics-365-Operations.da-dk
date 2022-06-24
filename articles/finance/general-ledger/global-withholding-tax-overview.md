@@ -1,6 +1,6 @@
 ---
 title: Global A-skat
-description: Dette emne indeholder oplysninger om den globale funktion for A-skat og opsætningen af den. Funktionen til global A-skat er forbedret for leverandør- og debitorposteringer, så A-skat beregnes på vareniveau.
+description: Denne artikel indeholder oplysninger om den globale funktion for A-skat og opsætningen af den. Funktionen til global A-skat er forbedret for leverandør- og debitorposteringer, så A-skat beregnes på vareniveau.
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 9cb02ba77fa33c839bc2a74811131973d1e5877f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 49d5048b9df30e94d959cf9f22b8ae837b74abdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846822"
 ---
 # <a name="global-withholding-tax"></a>Global A-skat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om den globale funktion for A-skat og forklarer opsætningen af den. Den nye funktionalitet er tilgængelig i version 10.0.17 og nyere.
+Denne artikel indeholder oplysninger om den globale funktion for A-skat og forklarer opsætningen af den. Den nye funktionalitet er tilgængelig i version 10.0.17 og nyere.
 
 Funktionen til global A-skat er forbedret for leverandør- og debitorposteringer, så A-skat beregnes på vareniveau. Saldoen på kontoen for A-skat fra købsposteringer kan udlignes ved at køre betalingsjobbet for A-skat mod afregningskontoen for A-skat.
 

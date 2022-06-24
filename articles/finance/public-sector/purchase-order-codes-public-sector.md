@@ -1,6 +1,6 @@
 ---
 title: Indkøbsordrekoder i den offentlige sektor
-description: Dette emne indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer.
+description: Denne artikel indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 685dcc557c1b93c060eaa7a2993d45e7a2176d6d
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 84ef74caa33211bb14a5b3bd4fbe1415103f3678
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853125"
 ---
 # <a name="purchase-order-codes-in-the-public-sector"></a>Indkøbsordrekoder i den offentlige sektor
 

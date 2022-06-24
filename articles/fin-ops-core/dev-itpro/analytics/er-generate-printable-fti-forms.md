@@ -1,6 +1,6 @@
 ---
 title: Generere FTI-formularer, der kan udskrives
-description: Dette emne forklarer, hvordan du bruger strukturen i elektronisk rapportering (ER) til at generere fritekstfakturaformularer (FTI), der kan udskrives, som Microsoft Office-dokumenter.
+description: Denne artikel forklarer, hvordan du bruger strukturen i elektronisk rapportering (ER) til at generere fritekstfakturaformularer (FTI), der kan udskrives, som Microsoft Office-dokumenter.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868823"
 ---
 # <a name="generate-printable-fti-forms"></a>Generere FTI-formularer, der kan udskrives
 
 [!include[banner](../includes/banner.md)]
 
-Strukturen i elektronisk rapportering (ER) giver dig mulighed for at generere fritekstfakturaformularer (FTI), der kan udskrives, som Microsoft Office-dokumenter. Dette emne indeholder oplysninger om, hvordan du kan oprette dine egne konfigurationer samt oplysninger om tilgængelige konfigurationsskabeloner.
+Strukturen i elektronisk rapportering (ER) giver dig mulighed for at generere fritekstfakturaformularer (FTI), der kan udskrives, som Microsoft Office-dokumenter. Denne artikel indeholder oplysninger om, hvordan du kan oprette dine egne konfigurationer samt oplysninger om tilgængelige konfigurationsskabeloner.
 
 ## <a name="overview"></a>Overblik
 
 Ud over de eksisterende muligheder ved generering af FTI-formularer, der kan udskrives, ved hjælp af Microsoft SQL Server Reporting Services (SSRS), kan du nu bruge ER-strukturen. Du kan administrere FTI-formularer, der kan udskrives, i Microsoft Office Excel og Word. Du kan også ændre layoutet, dataflowet og formateringen for at imødekomme specifikke krav, uden at foretage ændringer i koden.
 
 > [!NOTE]
-> Hvis du vil starte med en oversigt over eksisterende ER-konfigurationer til denne prøve på løsningen til FTI-formularer, der kan udskrives, kan du gå direkte til afsnittet **Hent prøve på ER-konfigurationer til at generere FTI formularer, der kan udskrives** senere i dette emne.
+> Hvis du vil starte med en oversigt over eksisterende ER-konfigurationer til denne prøve på løsningen til FTI-formularer, der kan udskrives, kan du gå direkte til afsnittet **Hent prøve på ER-konfigurationer til at generere FTI formularer, der kan udskrives** senere i denne artikel.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Oprette tilpassede konfigurationer for FTI formularer, der kan udskrives
 Som en del af din tilpassede løsning for FTI-formularer, der kan udskrives, skal du oprette et sæt af ER-konfigurationer.
@@ -108,7 +108,7 @@ Du kan også generere FTI-formularer, når du bogfører en FTI, ved at aktivere 
 ER-strukturen understøtter i øjeblikket følgende destinationer for oprettede dokumenter:
 
 - **Hentet fil** – Genererede formularer tilbydes som overførsler, du kan gemme ved hjælp af webbrowseren.
-- **Skærm** – Microsoft 365 Excel bruges til at få vist oprettede FTI-formularer i Excel-format.
+- **Skærm** – Microsoft 365 Excel bruges til at få vist genererede FTI-formularer i Excel-format.
 - **SharePoint-mappe** – Genererede formularer gemmes baseret på indstillingerne for strukturen for dokumentstyring.
 - **Programarkiv** – Genererede formularer gemmes som vedhæftede filer i kørselslogposter i Microsoft Azure Storage.
 - **Mail** – Genererede formularer sendes som vedhæftede filer.

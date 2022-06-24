@@ -1,6 +1,6 @@
 ---
 title: Opnå forbedret sporing af resultaterne fra genererede ER-rapporter for at sammenligne med basisværdier
-description: Dette emne beskriver forbedringer af den grundlæggende ER-funktion i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
+description: Denne artikel beskriver forbedringer af den grundlæggende ER-funktion i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847395"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Opnå forbedret sporing af resultaterne fra genererede ER-rapporter for at sammenligne med basisværdier
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne beskriver det første sæt forbedringer, der er foretaget i grundlagsfunktionen i ER-strukturen (Electronic reporting). Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) og nyere.
+Denne artikel beskriver det første sæt forbedringer, der er foretaget i grundlagsfunktionen i ER-strukturen (Electronic reporting). Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) og nyere.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatiser indstillingen af regler for grundlag
 
-Emnet [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) forklarer, hvordan du kan konfigurere ER-strukturen til at indsamle oplysninger om udførelser af ER-formater og evaluering af resultaterne af disse udførelser. Eksemplet i dette emne beskriver de trin, der skal udføres.
+Artiklen [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) forklarer, hvordan du kan konfigurere ER-strukturen til at indsamle oplysninger om udførelser af ER-formater og evaluering af resultaterne af disse udførelser. Eksemplet i denne artikel beskriver de trin, der skal udføres.
 
 Her er nogle af trinnene:
 
@@ -45,7 +45,7 @@ Her er nogle af trinnene:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Eksempel: Automatiser indstillingen af regler for grundlag
 
-Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinenne i eksemplet [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) til og med afsnittet "Tilføj et nyt grundlag for designet ER-format".
+Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene i eksemplet i artiklen [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) til og med afsnittet "Tilføj et nyt grundlag for designet ER-format".
 
 ### <a name="review-added-baseline"></a>Gennemse tilføjet grundlag
 
@@ -80,7 +80,7 @@ Grundlaget er blevet tilføjet for det valgte **Format til at lære ER-grundlag*
 
 ### <a name="run-the-format"></a>Køre formatet
 
-Du er nu klar til at fuldføre de resterende trin i emnet [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) med start fra afsnittet "Kør det designede ER-format, og gennemse logfilen for at analysere resultaterne".
+Du er nu klar til at fuldføre de resterende trin i artiklen [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md) med start fra afsnittet "Kør det designede ER-format, og gennemse logfilen for at analysere resultaterne".
 
 > [!NOTE]
 > Når du sletter den automatisk tilføjede grundlagsregel på oversigtspanelet **Grundlag**, slettes den refererede vedhæftede fil ikke automatisk.
@@ -91,7 +91,7 @@ Når et ER-format er designet til at indeholde oplysninger, der ændres, når fo
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Eksempel: Konfigurer grundlaget, så det hele tiden ignorerer ændringer i dele af ER-outputtet
 
-Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene i eksemplet [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md).
+Hvis du vil udføre trinnene i dette eksempel, skal du først fuldføre trinnene i eksemplet i artiklen [Spore genererede rapportresultater og sammenligne dem med basisværdier](er-trace-reports-compare-baseline.md).
 
 ### <a name="modify-a-configured-er-format"></a>Rediger et konfigureret ER-format
 
@@ -142,7 +142,7 @@ Den valgte ER-formatkomponent er føjet til listen over komponenter i oversigtsp
 
 ### <a name="make-a-new-baseline-rule"></a>Opret en ny grundlagsregel
 
-Følg trinnene i afsnittet "Eksempel: Automatiser indstillingen af regler for grundlag" tidligere i dette emne. En besked advarer dig om, at den udgående fil er blevet oprettet ved hjælp af grundlagsindstillinger, og at der er foretaget en tvungen erstatning af formatbindingerne.
+Følg trinnene i afsnittet "Eksempel: Automatiser indstillingen af regler for grundlag" tidligere i denne artikel. En besked advarer dig om, at den udgående fil er blevet oprettet ved hjælp af grundlagsindstillinger, og at der er foretaget en tvungen erstatning af formatbindingerne.
 
 ![Besked på siden Konfigurationer.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skærmbillede af besked på siden Konfigurationer")
 

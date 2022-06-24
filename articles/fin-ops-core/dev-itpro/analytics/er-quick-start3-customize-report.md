@@ -1,6 +1,6 @@
 ---
 title: Tilpasse konfigurationer af elektroniske rapporter for at generere et elektronisk dokument
-description: Dette emne forklarer, hvordan du tilpasser konfigurationer af et elektronisk rapporteringsformat (ER) fra Microsoft, der bruges til at oprette et brugerdefineret elektronisk dokument.
+description: Denne artikel forklarer, hvordan du tilpasser konfigurationer af et elektronisk rapporteringsformat (ER) fra Microsoft, der bruges til at oprette et brugerdefineret elektronisk dokument.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661652"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854692"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurationer af elektroniske rapporter for at generere et elektronisk dokument
 
@@ -32,9 +32,9 @@ Du kan bruge den [elektroniske rapporteringsstruktur (ER)](general-electronic-re
 
 ## <a name="overview"></a>Overblik
 
-I eksemplet i dette emne skal du angive en momsidentifikationskode som en ny brugerdefineret attribut for hver debitor, du fakturerer. Du skal derfor tilpasse strukturen for den faktura, der aktuelt bruges, ved at tilføje en ny vare, der skal udfyldes med momskoden i alle e-fakturaer, der genereres.
+I eksemplet i denne artikel skal du angive en momsidentifikationskode som en ny brugerdefineret attribut for hver debitor, du fakturerer. Du skal derfor tilpasse strukturen for den faktura, der aktuelt bruges, ved at tilføje en ny vare, der skal udfyldes med momskoden i alle e-fakturaer, der genereres.
 
-Procedurerne i dette emne forklarer, hvordan en bruger med rollen Systemadministrator, Udvikler af elektronisk rapportering eller Funktionel konsulent i elektronisk rapportering kan udføre disse opgaver i din forekomst af Finance:
+Procedurerne i denne artikel forklarer, hvordan en bruger med rollen Systemadministrator, Udvikler af elektronisk rapportering eller Funktionel konsulent i elektronisk rapportering kan udføre disse opgaver i din forekomst af Finance:
 
 - [Konfigurer det minimale sæt af ER-parametre, der kræves for at begynde at bruge ER-strukturen](#ConfigureER).
 - [Importér de første versioner af ER-standardkonfigurationer, der leveres til generering af e-fakturaer](#ImportERConfigurations1).

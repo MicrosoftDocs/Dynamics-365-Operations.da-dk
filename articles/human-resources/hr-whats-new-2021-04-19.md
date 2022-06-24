@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources 19. april 2021
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 19. april 2021.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 19. april 2021.
 author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685736"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846294"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 19. april 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources.
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 Følgende fejlrettelser er inkluderet i denne version.
 
 > [!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis denne artikel til at omfatte fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
-| Fejlnummer | Udsted |  Betegnelse |
+| Fejlnummer | Problem |  Beskrivende tekst |
 | --- | --- | --- |
 | 552164 | **Gemt visning** for **Medarbejderselvbetjening > Åbne kurser** fungerer ikke for kurser, der indeholder en agenda | Hvis der bruges en gemt visning for åbne kurser (ESS), og et af kurserne har en tilknyttet agenda, vises der ikke flere linjer for dette kursus i visningen. |
 | 560614 | **Frynsegoder > Indstillinger for livshændelser** viser uoverensstemmelser i dokumentationen for værktøjstip og kodefunktionsmåden. | Opdaterede værktøjstip i **Indstillinger for livshændelser** for at vise en korrekt funktionsmåde. |

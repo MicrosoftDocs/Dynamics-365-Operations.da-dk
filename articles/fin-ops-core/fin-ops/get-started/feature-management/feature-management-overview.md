@@ -1,6 +1,6 @@
 ---
 title: Oversigt over funktionsstyring
-description: Dette emne beskriver funktionsstyring, og hvordan du kan bruge den.
+description: Denne artikel beskriver funktionsstyring, og hvordan du kan bruge den.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850045"
 ---
 # <a name="feature-management-overview"></a>Oversigt over funktionsstyring
 
@@ -41,7 +41,7 @@ Funktionslisten indeholder følgende oplysninger:
 - **Status** – Et symbol angiver, om en funktion er slået til (markeret), er slået fra (tom), er planlagt til at blive slået til (ur), er obligatorisk (lås), kræver handling, før du slår den til (advarselssymbol) eller ikke kan aktiveres (X). Den indstilling, der vises, bruges til alle juridiske enheder. Bemærk, at selv når en funktion er slået til, styres den stadig af sikkerhed. Derfor er funktionen kun tilgængelig for brugere, der har adgang til den, baseret på brugernes sikkerhedsrolle. Den vil også kun være tilgængelig i juridiske enheder, som brugeren har adgang til.
 - **Aktiveringsdato** – Den dato, hvor funktionen blev slået til eller er planlagt til at blive slået til.
 - **Tilføjelse af funktion** – Den dato, hvor funktionen blev føjet til dit miljø. Denne dato angives automatisk, når du opdaterer dit miljø under de månedlige frigivelsescyklusser.
-- **Funktionstilstand** – Den aktuelle livscyklustilstand for funktionen: **Forhåndsversion**, **Frigivet** (vist som tom), **Som standard slået til** og **Obligatorisk**. Der er flere detaljer om tilstande senere i dette emne. 
+- **Funktionstilstand** – Den aktuelle livscyklustilstand for funktionen: **Forhåndsversion**, **Frigivet** (vist som tom), **Som standard slået til** og **Obligatorisk**. Der er flere detaljer om tilstande senere i denne artikel. 
 - **Modul** – Det modul, der påvirkes af den nye funktion.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Kolonnen **Funktionstilstand** er tom for disse funktioner. Funktioner, der i f�
 
 ### <a name="on-by-default-features-optional"></a>Slået til som standard-funktioner (valgfrit)
 
-Funktioner, der opdateres til **Som standard slået til**, er aktiveret som standard, men de kan deaktiveres. Når funktioner, der kan deaktiveres, har været i **Frigivet** tilstand i mindst seks måneder, forventes de at flytte til denne tilstand i næste større version. Funktioner, som skifter til **Som standard slået til**, forventes at blive omtalt i emnet [Nyheder](../whats-new-changed.md) i frigivelsen. Opdateringen startes af ejerproduktteamet.
+Funktioner, der opdateres til **Som standard slået til**, er aktiveret som standard, men de kan deaktiveres. Når funktioner, der kan deaktiveres, har været i **Frigivet** tilstand i mindst seks måneder, forventes de at flytte til denne tilstand i næste større version. Funktioner, som skifter til **Som standard slået til**, forventes at blive omtalt i artiklen [Nyheder](../whats-new-changed.md) i frigivelsen. Opdateringen startes af ejerproduktteamet.
 
 > [!NOTE]
 > Da disse funktioner aktiveres automatisk, er det vigtigt, at du afgør, om din organisation er klar til at aktivere disse funktioner igen, eller om der kræves mere tid. Hvis der kræves mere tid, kan det være nødvendigt midlertidigt at deaktivere disse funktioner. Bemærk, at en funktions skifte til **Som standard slået til** typisk sker i den større version, før funktionen skal være **Obligatorisk**. På dette tidspunkt har du ikke mulighed for at deaktivere funktionen. 

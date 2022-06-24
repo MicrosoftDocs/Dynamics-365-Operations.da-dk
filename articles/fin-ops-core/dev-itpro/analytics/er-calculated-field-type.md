@@ -1,8 +1,8 @@
 ---
 title: Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
-description: Dette emne indeholder oplysninger om, hvordan du bruger typen Beregnet felt til ER-datakilder.
+description: Denne artikel indeholder oplysninger om, hvordan du bruger typen Beregnet felt til ER-datakilder.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934699"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan designe en elektronisk rapport (ER)-datakilde ved at bruge typen **Beregnet felt**. Denne datakilde kan indeholde et ER-udtryk, der, når det udføres, kan styres af værdierne for de parameterargumenter, der er konfigureret i en binding, som kalder denne datakilde. Ved at konfigurere parameteriserede kald af en sådan datakilde kan du genbruge en enkelt datakilde i mange bindinger, hvilket reducerer det samlede antal datakilder, der skal konfigureres i ER-modeltilknytninger eller ER-formater. Det forenkler også den konfigurerede ER-komponent, hvilket reducerer vedligeholdelsesomkostningerne og omkostningerne ved at bruge andre forbrugere.
+Denne artikel forklarer, hvordan du kan designe en elektronisk rapport (ER)-datakilde ved at bruge typen **Beregnet felt**. Denne datakilde kan indeholde et ER-udtryk, der, når det udføres, kan styres af værdierne for de parameterargumenter, der er konfigureret i en binding, som kalder denne datakilde. Ved at konfigurere parameteriserede kald af en sådan datakilde kan du genbruge en enkelt datakilde i mange bindinger, hvilket reducerer det samlede antal datakilder, der skal konfigureres i ER-modeltilknytninger eller ER-formater. Det forenkler også den konfigurerede ER-komponent, hvilket reducerer vedligeholdelsesomkostningerne og omkostningerne ved at bruge andre forbrugere.
 
 ## <a name="prerequisites"></a>Forudsætninger
-Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
+Før du kan følge eksemplerne i denne artikel, skal du have følgende adgang:
 
 - Adgang til en af disse roller:
 
@@ -36,7 +36,7 @@ Før du kan følge eksemplerne i dette emne, skal du have følgende adgang:
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-- Adgang til RCS (Regulatory Configuration Services), der er klargjort til den samme lejer som Finance and Operations for en af følgende roller:
+- Adgang til RCS (Regulatory Configuration Service), der er klargjort til den samme lejer som Finans og drift for en af følgende roller:
 
     - Udvikler til elektronisk rapportering
     - Funktionel konsulent i elektronisk rapportering
@@ -46,10 +46,10 @@ Du skal også hente og lokalt gemme følgende filer.
 
 | **Indhold**                           | **Filnavn**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Eksempler på ER-datamodelkonfiguration    | [Model til at lære parameteriserede calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Eksempler på ER-metadatakonfiguration      | [Metadata til at lære parameteriserede calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Eksempler på ER-modeltilknytningskonfiguration | [Tilknytning for at lære parameteriserede calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Eksempler på ER-formatkonfiguration        | [Format til at lære parameteriserede calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Eksempler på ER-datamodelkonfiguration    | [Model til at lære parameteriserede calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Eksempler på ER-metadatakonfiguration      | [Metadata til at lære parameteriserede calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Eksempler på ER-modeltilknytningskonfiguration | [Tilknytning for at lære parameteriserede calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Eksempler på ER-formatkonfiguration        | [Format til at lære parameteriserede calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Log på din RCS-forekomst
 I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware Inc. Først skal du i RCS fuldføre disse trin i proceduren [Opret konfigurationsudbydere, og markér dem som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -84,7 +84,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
             - Summen af momsværdier.
             - Minimumværdi for anvendt momssats.
 
-    Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finance and Operations. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
+    Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finans og drift. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
 
     ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder.](media/er-calculated-field-type-01.png)
 
@@ -306,7 +306,7 @@ Når et beregnet felt med parametre returnerer en post, skal du understøtte bin
 Du kan køre det første og det forbedrede ER-format for at sikre dig, at konfigurerede parameteriserede beregnede felter fungerer korrekt.
 
 ### <a name="import-er-configurations"></a>Importér ER-konfigurationer
-Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af typen **RCS**. Hvis du allerede har gennemgået trinnene i emnet, kan du [Importere konfigurationer af Elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md), og bruge det konfigurerede ER-lager til at importere konfigurationer, der er beskrevet tidligere i dette emne, for dit miljø. Ellers kan du udføre disse trin:
+Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af typen **RCS**. Hvis du allerede har gennemgået trinnene i artiklen, kan du [Importere konfigurationer af Elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md), og bruge det konfigurerede ER-lager til at importere konfigurationer, der er beskrevet tidligere i denne artikel, for dit miljø. Ellers kan du udføre disse trin:
 
 1. Vælg **DEMF**-firma, og vælg **Elektronisk rapportering** i standarddashboardet.
 2. Vælg **Rapporteringskonfigurationer**.

@@ -1,6 +1,6 @@
 ---
-title: Efterberegne genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
-description: Dette emne beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
+title: Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
+description: Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e01e0241117dc69cafb67aeb3f1d10249fe143a0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3b461438ca3fef36e69100379e84f4c0d402e53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853461"
 ---
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Efterberegne genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
+Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
 
 Måske får du jævnligt besked om, at de omkostninger, der skal bruges til at genanskaffe eller forsikre bestemte anlægsaktiver, er ændret. Din chef meddeler dig f.eks., at der var en inflation på 3 % sidste år, så du skal øge genanskaffelsesprisen for alle anlægsaktiver med 3 %. 
 

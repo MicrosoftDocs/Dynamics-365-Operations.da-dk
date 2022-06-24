@@ -1,6 +1,6 @@
 ---
 title: Lovmæssige opdateringer
-description: Dette emne indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Microsoft Dynamics 365 Finance.
+description: Denne artikel indeholder en oversigt over planlagte og frigivne lovmæssige opdateringer til Microsoft Microsoft Dynamics 365 Finance.
 author: VStamberg
 ms.date: 04/18/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904275"
 ---
 # <a name="regulatory-updates"></a>Lovmæssige opdateringer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de lovmæssige opdateringer, der er planlagt og frigivet i Dynamics 365 Finance-understøttede lokaliseringer. Leveringstidslinjer kan blive ændret og planlagte funktioner kan være anderledes eller måske ikke frigivet. Yderligere oplysninger findre du i [Microsofts politik](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+Denne artikel beskriver de lovmæssige opdateringer, der er planlagt og frigivet i Dynamics 365 Finance-understøttede lokaliseringer. Leveringstidslinjer kan blive ændret og planlagte funktioner kan være anderledes eller måske ikke frigivet. Yderligere oplysninger findre du i [Microsofts politik](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Lovgivningsmæssige opdateringer er funktioner, som integreres med henblik på at understøtte ny eller ændret lovgivning, der er specifik for det enkelte land/område. Du kan finde flere oplysninger om planlagte og frigivne funktioner, der gælder specifikt for det enkelte land/område, i [Produktbemærkninger til Dynamics 365 og Power Platform](/business-applications-release-notes/index).
 

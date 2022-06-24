@@ -1,6 +1,6 @@
 ---
 title: Oversigt over administration af frynsegoder
-description: Dette emne indeholder en oversigt over funktionen Frynsegodeadministration i Dynamics 365 Human Resources.
+description: Denne artikel indeholder en oversigt over funktionen Frynsegodeadministration i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901141"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
@@ -44,7 +44,7 @@ Hvis du vil have adgang til demodataene, skal du geninstallere dit sandkassemilj
 
 ## <a name="enable-benefits-management"></a>Aktivere Administration af frynsegoder
 
-I dette emne beskrives, hvordan du slår funktioner til i Human Resources. Det forklarer også, hvilke eksisterende funktioner i Human Resources der erstattes af Frynsegodeadministration, og hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
+I disse artikler beskrives, hvordan du slår funktioner til i Human Resources. Det forklarer også, hvilke eksisterende funktioner i Human Resources der erstattes af Frynsegodeadministration, og hvilke funktioner der deaktiveres, når du aktiverer Frynsegodeadministration.
 
 > [!IMPORTANT]
 > Når du aktiverer Administration af frynsegoder i et **produktionsmiljø**, kan du ikke deaktivere det. Vi anbefaler, at du aktiverer og tester Administration af frynsegoder i et **sandkassemiljø**, før du aktiverer det i et **produktionsmiljø**. Der er betydelige forskelle mellem den gamle frynsegodefunktionalitet og de nye funktioner til administration af frynsegoder, der kræver yderligere opsætning, og som skal testes, før de bringes i produktion.

@@ -1,6 +1,6 @@
 ---
 title: Plan for forbrugerprisindeks
-description: Dette emne forklarer, hvordan du opretter listen over CPI-planer (forbrugerprisindeks), som du får fra internettet, og som er med til at bestemme eskaleringsgebyret i abonnementsfakturering.
+description: Denne artikel forklarer, hvordan du opretter listen over CPI-planer (forbrugerprisindeks), som du får fra internettet, og som er med til at bestemme eskaleringsgebyret i abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904867"
 ---
 # <a name="consumer-price-index-schedule"></a>Plan for forbrugerprisindeks
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en forklaring på, hvordan du kan oprette, slette, gennemse og behandle CPI-planer (forbrugerprisindeks). En CPI-plan kan bruges til at fastlægge priserne på forbrugsvarer og -tjenester, som du tilføjer som faktureringsplanlinjer. CPI-planen kan derefter bruges til eskalering og rabatprissætning på en faktureringsplan, eller den kan behandles manuelt for at opdatere faktureringsbeløbene i faktureringsplaner. Du kan angive CPI-planer manuelt, eller du kan importere dem ved at bruge den sammensatte enhed til CPI-plan.
+Denne artikel indeholder en forklaring på, hvordan du kan oprette, slette, gennemse og behandle CPI-planer (forbrugerprisindeks). En CPI-plan kan bruges til at fastlægge priserne på forbrugsvarer og -tjenester, som du tilføjer som faktureringsplanlinjer. CPI-planen kan derefter bruges til eskalering og rabatprissætning på en faktureringsplan, eller den kan behandles manuelt for at opdatere faktureringsbeløbene i faktureringsplaner. Du kan angive CPI-planer manuelt, eller du kan importere dem ved at bruge den sammensatte enhed til CPI-plan.
 
 Hvis du vil tilføje en CPI-plan, skal du følge disse trin.
 

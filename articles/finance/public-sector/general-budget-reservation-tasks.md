@@ -1,6 +1,6 @@
 ---
 title: Vedligehold generelle budgetreservationer
-description: Dette emne indeholder trin til at arbejde med generelle budgetreservationer i den offentlige sektor i Microsoft Dynamics 365 Finance.
+description: Denne artikel indeholder trin til at arbejde med generelle budgetreservationer i den offentlige sektor i Microsoft Dynamics 365 Finance.
 author: AlexRenney
 ms.date: 04/25/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3d40750aaae1cfeb029723385f24efea81b1bae4
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f9802a366588bffcff8efd57c6bcbdb03f47f2cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735067"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862876"
 ---
 # <a name="maintain-general-budget-reservations"></a>Vedligehold generelle budgetreservationer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du udfører typiske opgaver i forbindelse med generelle budgetreservationer.
+Denne artikel forklarer, hvordan du udfører typiske opgaver i forbindelse med generelle budgetreservationer.
 
 ## <a name="create-and-encumber-a-general-budget-reservation"></a>Oprette og behæfte en ny generel budgetreservation
 

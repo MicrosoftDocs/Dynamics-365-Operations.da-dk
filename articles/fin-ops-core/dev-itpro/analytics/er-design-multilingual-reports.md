@@ -1,8 +1,8 @@
 ---
 title: Designe flersprogede rapporter i elektronisk rapportering
-description: I dette emne forklares det, hvordan du kan bruge elektroniske rapporteringsetiketter (ER) til at designe og generere flersprogede rapporter.
+description: Denne artikel forklarer, hvordan du kan bruge elektroniske rapporteringsetiketter (ER) til at designe og generere flersprogede rapporter.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845738"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designe flersprogede rapporter i elektronisk rapportering
 
@@ -142,6 +142,9 @@ Hvis du konfigurerer et ER-format på denne måde, oprettes rapporten ved hjælp
 
 Hvis en refereret etiket ikke har nogen oversættelse til sproget i konteksten af formatudførelsen, bruges etiketteksten på sproget EN-US i stedet.
 
+> [!TIP]
+> Du kan bruge **MAPPE** og de specifikke typer af **FIL**-komponenter i det ER-format, der kan redigeres, til at angive, hvordan en udgående fil genereres. Hvis du vil navngive en genereret fil, skal du konfigurere [ER-udtrykket](er-formula-language.md) for parameteren **Filnavn** for komponenten. Du kan bruge etiketter i det konfigurerede udtryk. Da parameteren **Filnavn** er sprogagnostisk som standard, vises teksten på alle de etiketter, du refererer til i dette udtryk vises på standardsproget EN-US under kørslen. Men i version 10.0.28 og senere kan du aktivere funktionen **Anvend parameteren "Sprogpræference" på udtrykket "Filnavn"**. I **Filnavn**-udtrykket tages der derefter højde for parameteren **Sprogindstillinger**, når den beregnes.
+
 ## <a name="language"></a>Sprog
 
 ER understøtter forskellige måder at angive et sprog til en genereret rapport på. I feltet **Sprogindstillinger** under fanen **Format** kan du vælge følgende værdier:
@@ -198,7 +201,7 @@ Konfiguration af en ER-komponent sker i kladdeversionen af ER-konfigurationen, s
 
 ![ER-konfigurationssiden giver adgang til konfigurationsversionen i kladdestatus.](./media/er-multilingual-labels-configurations.png)
 
-Som beskrevet tidligere i dette emne kan du føje de påkrævede ER-etiketter til en redigerbar ER-komponent. På denne måde kan du angive teksten i ER-etiketterne på sproget EN-US. Du kan derefter eksportere etiketterne for ER-komponenten ved hjælp af den indbyggede ER-funktion. Vælg kladdeversionen af en ER-konfiguration, der indeholder den redigerbare ER-komponent, og vælg derefter **Exchange \> Eksportér etiketter**.
+Som beskrevet tidligere i denne artikel kan du føje de påkrævede ER-etiketter til en redigerbar ER-komponent. På denne måde kan du angive teksten i ER-etiketterne på sproget EN-US. Du kan derefter eksportere etiketterne for ER-komponenten ved hjælp af den indbyggede ER-funktion. Vælg kladdeversionen af en ER-konfiguration, der indeholder den redigerbare ER-komponent, og vælg derefter **Exchange \> Eksportér etiketter**.
 
 ![ER-konfigurationsside, der tillader eksport af ER-etiketter fra den valgte konfigurationsversion.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ ER-versionsstyring kontrollerer etikettildeling til enhver attribut i en ER-komp
 
 Den indbyggede ER-funktion [LISTOFFIELDS](er-functions-list-listoffields.md) kan få adgang til ER-etiketter, der er konfigureret for nogle elementer af ER-komponenter.
 
-Som beskrevet tidligere i dette emne, kan attributterne **Etiket** og **Beskrivelse** for enhver [model](#LinkModelEnum) eller et [format](#LinkFormatEnum) være optællingsværdier, så de er knyttet til en ER-etiket, der er tilgængelig i den relevante ER-komponent. Du kan konfigurere et ER-udtryk, hvor du kalder funktionen **LISTOFFIELDS** ved hjælp af ER-optællingen som et argument. Dette udtryk returnerer en liste, der indeholder en post for hver værdi af en ER-optælling, der er defineret som et argument for denne funktion. Hver post indeholder værdien af en ER-etiket, der er knyttet til en ER-optællingsværdi:
+Som beskrevet tidligere i denne artikel, kan attributterne **Etiket** og **Beskrivelse** for enhver [model](#LinkModelEnum) eller et [format](#LinkFormatEnum) være optællingsværdier, så de er knyttet til en ER-etiket, der er tilgængelig i den relevante ER-komponent. Du kan konfigurere et ER-udtryk, hvor du kalder funktionen **LISTOFFIELDS** ved hjælp af ER-optællingen som et argument. Dette udtryk returnerer en liste, der indeholder en post for hver værdi af en ER-optælling, der er defineret som et argument for denne funktion. Hver post indeholder værdien af en ER-etiket, der er knyttet til en ER-optællingsværdi:
 
 - Værdien af en ER-etiket, der er sammenkædet med **Etiket**-attributter, gemmes i **Etiket**-feltet for den returnerede post.
 - Værdien af en ER-etiket, der er sammenkædet med **Beskrivelse**-attributter, gemmes i **Beskrivelse**-feltet for den returnerede post.

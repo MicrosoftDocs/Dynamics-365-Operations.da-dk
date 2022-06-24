@@ -1,6 +1,6 @@
 ---
 title: Hvorfor kan jeg ikke tilbageføre denne postering?
-description: I dette emne beskrives forskellige årsager til, at posteringer ikke kan tilbageføres. Den indeholder også en oversigt over løsninger på dette problem.
+description: Denne artikel beskriver forskellige årsager til, at posteringer ikke kan tilbageføres. Den indeholder også en oversigt over løsninger på dette problem.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876176"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Hvorfor kan jeg ikke tilbageføre denne postering?
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives forskellige årsager til, at posteringer ikke kan tilbageføres. Den indeholder også en oversigt over løsninger på dette problem.
+Denne artikel beskriver forskellige årsager til, at posteringer ikke kan tilbageføres. Den indeholder også en oversigt over løsninger på dette problem.
 
 ## <a name="symptom"></a>Symptom
 
@@ -35,14 +35,14 @@ Organisationer kan komme ud for situationer, hvor de skal tilbageføre en poster
 
 ## <a name="resolution"></a>Løsning
 
-Posteringer skal opfylde bestemte kriterier, før de kan tilbageføres. De resterende afsnit i dette emne indeholder validering for hvert modul. Selvom der i dette emne fokuseres på posteringer i Microsoft Dynamics 365 Finance, kan nogle af begreberne og valideringen anvendes i andre apps, f.eks. Dynamics 365 Supply Chain Management.
+Posteringer skal opfylde bestemte kriterier, før de kan tilbageføres. De resterende afsnit i denne artikel indeholder validering for hvert modul. Selvom der i denne artikel fokuseres på posteringer i Microsoft Dynamics 365 Finance, kan nogle af begreberne og valideringen anvendes i andre apps, f.eks. Dynamics 365 Supply Chain Management.
 
 Det sted, hvor en postering tilbageføres, kan desuden påvirke, om den kan tilbageføres. En kreditorbetaling, der bogføres som en check, kan f.eks. kun tilbageføres fra sektionen **Checks** på posteringssiden for bankkontiene. Den kan ikke tilbageføres fra siden **Posteringer på bilag** i Finans.
 
 Hvis **Massetilbageførsel for flere dokumenter** (også kaldet funktionen Massetilbageførsel) er aktiveret i arbejdsområdet **Funktionsstyring**, har det indflydelse på, hvor mange posteringer der kan tilbageføres, og hvor de kan tilbageføres. Denne funktion giver to fordele, når den er slået til:
 
 - Ved visse posteringstyper kan der vælges og tilbageføres mere end én postering ad gangen fra den kladde, den blev bogført fra, eller fra siden **Posteringer på bilag**. De enkelte posteringer skal dog være tilbageførselsberettigede, før funktionen blev aktiveret. Før denne funktion blev indført, skulle posteringer tilbageføres én ad gangen.
-- *Visse* posteringer for reskontro kan tilbageføres fra kladden (finanskladden) eller siden **Posteringer på bilag**. De behøver ikke at blive tilbageført fra reskontrosiden. En kreditorfakturakladde kunne f.eks. tidligere kun tilbageføres fra siden **Kreditorposteringer**. Den kan dog nu også tilbageføres fra Finans-siden fra kladden eller siden **Posteringer på bilag**. Hvert afsnit i dette emne indeholder en forklaring på de typer transaktioner, denne fordel ikke gælder for.
+- *Visse* posteringer for reskontro kan tilbageføres fra kladden (finanskladden) eller siden **Posteringer på bilag**. De behøver ikke at blive tilbageført fra reskontrosiden. En kreditorfakturakladde kunne f.eks. tidligere kun tilbageføres fra siden **Kreditorposteringer**. Den kan dog nu også tilbageføres fra Finans-siden fra kladden eller siden **Posteringer på bilag**. Hvert afsnit i denne artikel indeholder en forklaring på de typer transaktioner, denne fordel ikke gælder for.
 
 Funktionen til massetilbageførsel giver **ikke** mulighed for at tilbageføre flere posteringstyper. Hvis en posteringstype ikke tidligere kunne tilbageføres, kan den stadig ikke tilbageføres, efter at funktionen er aktiveret. Kreditorfakturaer for indkøbsordrer kan f.eks. ikke tilbageføres, uanset om funktionen Massetilbageførsel er aktiveret.
 
@@ -189,7 +189,7 @@ Følgende typer posteringer kan ikke tilbageføres:
 
 Flere posteringstyper opdaterer debitorreskontroer. Eksempler omfatter debitorfakturaer fra salgsordrer, debitorfakturaer, der er indtastet via finanskladden, fritekstfakturaer, debitorbetalinger og afskrivninger.
 
-Hvis funktionen Massetilbageførsel er deaktiveret, kan posteringer tilbageføres individuelt fra siden **Debitorposteringer** for fakturaer eller siden **Bankkonti** til indbetalinger. Du kan finde oplysninger om, hvordan du tilbagefører en betaling, i sektionen [Kontant- og bankstyring](cant-reverse-transctns.md#cash-and-bank-management) senere i dette emne.
+Hvis funktionen Massetilbageførsel er deaktiveret, kan posteringer tilbageføres individuelt fra siden **Debitorposteringer** for fakturaer eller siden **Bankkonti** til indbetalinger. Du kan finde oplysninger om, hvordan du tilbagefører en betaling, i sektionen [Kontant- og bankstyring](cant-reverse-transctns.md#cash-and-bank-management) senere i denne artikel.
 
 Hvis funktionen Massetilbageførsel er aktiveret, kan et eller flere debitorposteringer også tilbageføres fra siden **Posteringer på bilag** og fra den kladde, som de blev bogført fra. Men indbetalinger kan stadig kun tilbageføres fra bankkontoen, og fritekstfakturaer kan kun tilbageføres fra den oprindelige side (hvis funktionen, der tillader rettelser, er aktiveret). Derudover kan debitorposteringer stadig ikke tilbageføres fra siden **Posteringer for \<main account\>** til finans. De kan dog tilbageføres fra siden **Posteringer på bilag**.
 

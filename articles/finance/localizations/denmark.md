@@ -1,6 +1,6 @@
 ---
 title: Oversigt for Danmark
-description: Dette emne indeholder links til Microsoft Dynamics 365 Finance-dokumentationsressourcer for Danmark.
+description: Denne artikel indeholder links til Microsoft Dynamics 365 Finance-dokumentationsressourcer for Danmark.
 author: kfend
 ms.date: 01/10/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Denmark
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c86b0f1eb232b7666f7328d6777ea7a0006c6589
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: c8b9544b6e7aa9cb3a4f5f8bdece646385e1acfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855346"
 ---
 # <a name="denmark-overview"></a>Oversigt for Danmark
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder links til dokumentationsressourcer for Danmark. 
+Denne artikel indeholder links til dokumentationsressourcer for Danmark. 
 
 - [Tildele et indbetalingskortformat til en debitorkonto](tasks/assign-payment-slip-format-customer-account.md)
 - [Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor](tasks/create-post-customer-invoice-public-sector-customer.md)

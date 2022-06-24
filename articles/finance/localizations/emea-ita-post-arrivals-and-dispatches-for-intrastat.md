@@ -1,6 +1,6 @@
 ---
-title: Bogføre modtagelser og afsendelser for Intrastat
-description: Dette emne indeholder et eksempel, som viser, hvordan du bogfører modtagelser og afsendelser for Intrastat.
+title: Bogføre modtagelser og udsendelser for Intrastat
+description: Denne artikel indeholder et eksempel, som viser, hvordan du bogfører modtagelser og afsendelser for Intrastat.
 author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862958"
 ---
-# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Bogføre modtagelser og afsendelser for Intrastat
+# <a name="post-arrivals-and-dispatches-for-intrastat"></a>Bogføre modtagelser og udsendelser for Intrastat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder et eksempel, som viser, hvordan du bogfører modtagelser og afsendelser for Intrastat. I eksemplet bruges den juridiske enhed **ITCO**.
+Denne artikel indeholder et eksempel, som viser, hvordan du bogfører modtagelser og afsendelser for Intrastat. I eksemplet bruges den juridiske enhed **ITCO**.
 
 ## <a name="setup"></a>Konfiguration
 

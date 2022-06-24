@@ -1,6 +1,6 @@
 ---
 title: Komprimere store dokumenter, der er genereret i elektronisk rapportering
-description: Dette emne forklarer, hvordan du komprimerer store dokumenter, der genereres af et elektronisk rapporteringsformat (ER).
+description: Denne artikel forklarer, hvordan du komprimerer store dokumenter, der genereres af et elektronisk rapporteringsformat (ER).
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864801"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimere store dokumenter, der er genereret i elektronisk rapportering 
 
@@ -33,7 +33,7 @@ Når du konfigurerer en løsning, kan du justere dit ER-format i Operationsdesig
 > [!NOTE]
 > Filkomprimering tager ekstra procent af CPU-brugen.
 
-Hvis du vil vide mere om denne tilgang, skal du fuldføre eksemplet i dette emne.
+Hvis du vil vide mere om denne tilgang, skal du fuldføre eksemplet i denne artikel.
 
 ## <a name="example-compress-an-outbound-document"></a>Eksempel: Komprimer et udgående dokument
 
@@ -41,7 +41,7 @@ I dette eksempel vises, hvordan en bruger, der er tildelt rollen **Systemadminis
 
 ### <a name="prerequisites"></a>Forudsætninger
 
-Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i dette emne.
+Du skal fuldføre følgende trin, før du kan fuldføre procedurerne i denne artikel.
 
 1. [Aktivér en konfigurationsudbyder](er-defer-xml-element.md#activate-a-configuration-provider).
 2. [Importere ER-eksempelkonfigurationerne](er-defer-xml-element.md#import-the-sample-er-configurations).

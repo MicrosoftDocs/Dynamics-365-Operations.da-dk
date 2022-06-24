@@ -1,6 +1,6 @@
 ---
-title: Lukke Finans ved periodeafslutning
-description: I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans.
+title: Lukke finans ved periodeafslutning
+description: Denne artikel beskriver de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 42a5df1cd1a73462c93012b26f9b9b5c1631f2ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878035"
 ---
-# <a name="close-the-general-ledger-at-period-end"></a>Lukke Finans ved periodeafslutning
+# <a name="close-the-general-ledger-at-period-end"></a>Lukke finans ved periodeafslutning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans. 
+Denne artikel beskriver de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans. 
 
 I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukningsprocesser forberede systemet på en ny periode. Når du skal forberede dig til et nyt år, skal du køre årsafslutningsprocessen. Hver organisation har forskellige processer og trin, der udføres ved periodens udløb. Her er nogle valgfrie trin for periodeudløb:
 

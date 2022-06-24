@@ -1,28 +1,28 @@
 ---
-title: Fejlkoder for sundhedskontrol af tabeltilknytningen
-description: Dette emne indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilknytningen.
-author: nhelgren
-ms.date: 10/04/2021
+title: Fejlkoder for tabeltilknytningens sundhedskontrol
+description: Denne artikel indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilknytningen.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884077"
 ---
-# <a name="errors-codes-for-the-table-map-health-check"></a>Fejlkoder for sundhedskontrol af tabeltilknytningen
+# <a name="errors-codes-for-the-table-map-health-check"></a>Fejlkoder for tabeltilknytningens sundhedskontrol
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emne indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilknytningen.
+Denne artikel indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilknytningen.
 
 ## <a name="error-100"></a>Fejl 100
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Fejlmeddelelsen er "Tabel: \{datasourceTable.Key.subscribedTableName\} for enheden \{datasourceTable.Key.entityName\} spores for enheden \{origTableToEntityMaps.EntityName\}. De samme tabeller, der spores for flere enheder, kan have indflydelse på systemets ydeevne for transaktioner med live-synkronisering."
 
 Hvis den samme tabel spores af flere enheder, vil en eventuel ændring i tabellen udløse evaluering af dobbeltskrivning for de tilknyttede enheder. Selvom filtersætningerne kun sender de gyldige poster, kan evalueringen forårsage et ydeevneproblem, hvis der er forespørgsler, som kører længe, eller forespørgselsplaner, der ikke er optimeret. Dette problem kan muligvis ikke undgås ud fra et forretningsmæssigt perspektiv. Men hvis der er mange tabeller med skæringspunkter på tværs af flere enheder, skal du overveje at forenkle enheden eller kontrollere, om enhedsforespørgsler er optimeret.
+
+## <a name="error-1800"></a>Fejl 1800
+Fejlmeddelelsen er" "Datakilde: {} for enheden CustCustomerV3Entity omfatter en intervalværdi. Indgående postkonfigurationer fra Dataverse til Finans og drift kan påvirkes af intervalværdier på enheden. Test postopdateringerne fra Dataverse til Finans og drift med poster, der ikke opfylder filtrerkriterierne, for at validere dine indstillinger."
+
+Hvis der er angivet et interval for enheden i programmer til finans og drift, skal den indgående synkronisering fra Dataverse til programmer til finans og drift testes for opdateringsfunktionsmåden på poster, der ikke opfylder dette intervalkriterium. Enhver post, der ikke matcher intervallet, behandles som en indsættelseshandling af enheden. Hvis der er en eksisterende post i den underliggende tabel, mislykkes indsættelsen. Det anbefales, at du tester dette brugsmønster for alle scenarier, før du udruller til produktion.
+
+## <a name="error-1900"></a>Fejl 1900
+Fejlmeddelelsen er: "Enhed: har {} datakilder, som ikke spores for udgående dobbeltskrivning. Dette kan påvirke ydeevnen af live-synkroniseringsforespørgslen. Du skal redigere enheden i Finans og drift for at fjerne ubrugte datakilder og tabeller eller implementere getEntityRecordIdsImpactedByTableChange for at optimere kørselsforespørgslerne."
+
+Hvis der er mange datakilder, der ikke bruges til sporing i den faktiske live synkronisering fra programmer til finans og drift, er der en mulighed for, at enhedsydeevnen påvirker live-synkronisering. Hvis du vil optimere de sporede tabeller, skal du bruge metoden getEntityRecordIdsImpactedByTableChange.
+
+## <a name="error-5000"></a>Fejl 5000
+Fejlmeddelelsen er, "Synkrone plugins er registreret for datastyringshændelser for enhedskonti. Dette kan have indflydelse på den første synkronisering og ydeevnen for live-synkroniseringsimport i Dataverse. For at opnå den bedste ydeevne skal du ændre plugins til asynkron behandling. Liste over registrerede plugins {}."
+
+Synkrone plugins i en Dataverse-enhed kan påvirke ydeevnen for live synkronisering og indledende synkronisering, mens der føjes til transaktionsindlæsning. Den anbefalede fremgangsmåde er enten at deaktivere plugins eller gøre disse plugins asynkrone, hvis du har langsommere indlæsningstider i første synkronisering eller live synkronisering for en bestemt enhed.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

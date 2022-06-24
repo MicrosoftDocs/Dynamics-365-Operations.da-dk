@@ -1,6 +1,6 @@
 ---
 title: Oprette regler for rådgivningsværktøj til optimering
-description: I dette emne beskrives det, hvordan du føjer nye regler til rådgivningsværktøj til optimering.
+description: Denne artikel beskriver, hvordan du føjer nye regler til rådgivningsværktøj til optimering.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734658"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850899"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Oprette regler for rådgivningsværktøj til optimering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du oprette nye regler til **rådgivningsværktøj til optimering**. Du kan for eksempel oprette en ny regel, der identificerer, hvilke tilbudsanmodninger (RFQ) der har en tom titel. Brugen af titler på sager gør dem nemme at identificere og søge i. Selv om det er ret enkelt, viser dette eksempel, hvad der kan opnås med optimeringsregler. 
+Denne artikel forklarer, hvordan du oprette nye regler til **rådgivningsværktøj til optimering**. Du kan for eksempel oprette en ny regel, der identificerer, hvilke tilbudsanmodninger (RFQ) der har en tom titel. Brugen af titler på sager gør dem nemme at identificere og søge i. Selv om det er ret enkelt, viser dette eksempel, hvad der kan opnås med optimeringsregler. 
 
 En *regel* er et check af programdata. Hvis den betingelse, som reglen evaluerer, er opfyldt, oprettes der mulighed for at optimere processer eller forbedre data. Der kan reageres på salgsmulighederne, og eventuelt kan virkningen af handlingerne måles. 
 

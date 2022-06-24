@@ -1,6 +1,6 @@
 ---
 title: Designe en ny ER-løsning til udskrivning af ZPL-labels
-description: Dette emne forklarer, hvordan du kan designe en ny elektronisk rapporteringsløsning (ER) til udskrivning af ZPL-labels (Zebra Programming Language).
+description: Denne artikel forklarer, hvordan du kan designe en ny elektronisk rapporteringsløsning (ER) til udskrivning af ZPL-labels (Zebra Programming Language).
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845709"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Designe en ny ER-løsning til udskrivning af ZPL-labels
 
 [!include [banner](../includes/banner.md)]
 
 
-I dette emne forklares det, hvordan en bruger i rollen Systemadministrator, Udvikler af elektronisk rapportering eller Funktionel konsulent til elektronisk rapportering kan konfigurere parametre for [ER-strukturen](general-electronic-reporting.md), designe de krævede [konfigurationer](general-electronic-reporting.md#Configuration) af en ny ER-løsning for at få adgang til dataene i et bestemt Warehouse Management-system og generere brugerdefinerede lagerstedslabels i ZPL II-format. Disse trin kan udføres i **USRT**-virksomheden.
+Denne artikel forklarer, hvordan en bruger i rollen Systemadministrator, Udvikler af elektronisk rapportering eller Funktionel konsulent til elektronisk rapportering kan konfigurere parametre for [ER-strukturen](general-electronic-reporting.md), designe de krævede [konfigurationer](general-electronic-reporting.md#Configuration) af en ny ER-løsning for at få adgang til dataene i et bestemt Warehouse Management-system og generere brugerdefinerede lagerstedslabels i ZPL II-format. Disse trin kan udføres i **USRT**-virksomheden.
 
 ## <a name="business-scenario"></a>Forretningsscenarie
 

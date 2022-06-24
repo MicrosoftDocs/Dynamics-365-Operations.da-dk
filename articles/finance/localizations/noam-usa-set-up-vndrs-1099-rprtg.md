@@ -1,6 +1,6 @@
 ---
 title: Konfigurere kreditorer til 1099-rapportering
-description: Dette emne forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto.
+description: Denne artikel forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto.
 author: v-kiarnd
 ms.date: 09/11/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 777983c7699a8a7e2c07297d767bed63f37103e1464b19b9afbbee16787a2c53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96281720ed1f53dc61d69eafa24096b6629d9479
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868246"
 ---
 # <a name="set-up-vendors-for-1099-reporting"></a>Konfigurere kreditorer til 1099-rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto. Det anbefales, at du fuldfører disse opsætningstrin, før du bogfører kreditorposteringer. Du kan finde flere oplysninger under [1099-rapportering ved årsafslutning](noam-usa-year-end-1099-reporting.md).
+Denne artikel forklarer, hvordan du konfigurerer kreditorposter, så der knyttes en 1099-rubrik til en hovedkonto. Det anbefales, at du fuldfører disse opsætningstrin, før du bogfører kreditorposteringer. Du kan finde flere oplysninger under [1099-rapportering ved årsafslutning](noam-usa-year-end-1099-reporting.md).
 
 > [!NOTE]
 > Det anbefales, at du gennemgår det amerikanske skattevæsens (IRS) regelændringer for det pågældende skatteår, før du opretter og behandler 1099-opgørelser.

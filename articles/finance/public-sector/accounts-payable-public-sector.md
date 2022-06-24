@@ -1,6 +1,6 @@
 ---
 title: Oversigt over Kreditor i den offentlige sektor
-description: I dette emne beskrives den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 Finance. V
+description: Denne artikel beskriver den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 Finance. V
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ddd7fed6177038860c861d4cd90e278d33fccfd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 8b82d7b36ec361a8bbaded9e3b1fbdce970d1d35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735420"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853134"
 ---
 # <a name="accounts-payable-in-the-public-sector-overview"></a>Oversigt over Kreditor i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives den offentlige sektors funktioner for Kreditor, som er integreret i Dynamics 365 Finance. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer. 
+Denne artikel beskriver den offentlige sektors funktioner for Kreditor, som er integreret i Dynamics 365 Finance. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer. 
 
 ## <a name="what-are-the-prerequisites-for-setting-up-accounts-payable-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Kreditor i den offentlige sektor?
 

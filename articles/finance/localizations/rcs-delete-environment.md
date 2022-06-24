@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – Slette et RCS-miljø
-description: I dette emne forklares, hvordan en RCS-systemadministrator (Regulatory Configuration Service) kan slette et RCS-miljø og relaterede data.
+description: Denne artikel forklarer, hvordan en RCS-systemadministrator (Regulatory Configuration Service) kan slette et RCS-miljø og relaterede data.
 author: JaneA07
 ms.date: 06/14/2021
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: f9073a14143423676f23f9bf8dc9c17dbae18a6c3ad0d2f6d1e33919fd9162bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21e7ee546bb2b712d9424c6bd95e9f9227831bd1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908884"
 ---
 # <a name="regulatory-configuration-service-rcs---delete-an-rcs-environment"></a>Regulatory Configuration Service (RCS) – Slette et RCS-miljø
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan en RCS-systemadministrator (Regulatory Configuration Service) kan slette et RCS-miljø og relaterede data.
+Denne artikel forklarer, hvordan en RCS-systemadministrator (Regulatory Configuration Service) kan slette et RCS-miljø og relaterede data.
 
-Før du kan fuldføre trinnene i dette emne, skal du kontrollere, at følgende forudsætninger er opfyldt:
+Før du kan fuldføre trinnene i denne artikel, skal du kontrollere, at følgende forudsætninger er opfyldt:
 
 - Du skal have tildelt rollen **Systemadministrator** for RCS-miljøet.
 - Rollen **Systemadministrator** skal være tildelt rollen **RCSDeleteEnvironmentDuty**.

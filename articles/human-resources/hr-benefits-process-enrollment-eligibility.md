@@ -1,6 +1,6 @@
 ---
-title: Behandle berettigelse til tilmelding
-description: Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
+title: Behandle tilmeldingsberettigelse
+description: I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a7de6dbb8d8ed13392eb7eb9aa02b15db2e009
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c01d7a6f456514fc9da1889ccaff5af1ae7c0f52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877737"
 ---
-# <a name="process-enrollment-eligibility"></a>Behandle berettigelse til tilmelding
+# <a name="process-enrollment-eligibility"></a>Behandle tilmeldingsberettigelse
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmelding.
+I denne artikel beskrives, hvordan du kan køre processen til berettigelse af tilmelding.
 
 1. Vælg **Behandling af berettigelse til tilmelding** under **Behandling** i arbejdsområdet **Frynsegodeadministration**.
 
@@ -55,7 +55,7 @@ Dette emne forklarer, hvordan du kan køre processen for berettigelse af tilmeld
 
 ## <a name="view-process-results"></a>Vis procesresultater
 
-Dette emne beskriver, hvordan du få vist resultater af berettigelsesprocessen.
+I denne artikel beskrives, hvordan du få vist resultater af berettigelsesprocessen.
 
 1.  Vælg **Procesresultater** under **Behandling** i arbejdsområdet **Administration af frynsegoder**.
 

@@ -1,6 +1,6 @@
 ---
 title: Registrere afskrivning af brugsretsaktiver (prøveversion)
-description: I dette emne forklares det, hvordan du opretter kladdeposteringen til den amortisering, der kræves til rettigheder, som genkendes i en organisationsbalance.
+description: Denne artikel forklarer, hvordan du opretter kladdeposteringen til den amortisering, der kræves til rettigheder, som genkendes i en organisationsbalance.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ebac6c8d008babec93061071414579eec3a73223
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 93e521cf409af4c01d625f27bdd7a7564e471bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903270"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Registrere afskrivning af brugsretsaktiver (prøveversion)
 
@@ -28,13 +28,13 @@ ms.locfileid: "8727700"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-For rettigheder, der anerkendes i en organisationsbalance, amortiseres ROU-aktivet på månedsbasis. Dette emne forklarer, hvordan du opretter kladdeposteringen til amortiseringen. Amortisering debiterer udgiftsfinanskontoen og krediterer finanskontoen for den akkumulerede afskrivning ud fra opsætningen af posteringsprofilen og leasingaftaletypen. Disse poster kan oprettes for hver leasingaftale, eller de kan oprettes til flere leasingaftaler ved hjælp af batchkladdefunktionen.
+For rettigheder, der anerkendes i en organisationsbalance, amortiseres ROU-aktivet på månedsbasis. Denne artikel forklarer, hvordan du opretter kladdeposteringen til amortiseringen. Amortisering debiterer udgiftsfinanskontoen og krediterer finanskontoen for den akkumulerede afskrivning ud fra opsætningen af posteringsprofilen og leasingaftaletypen. Disse poster kan oprettes for hver leasingaftale, eller de kan oprettes til flere leasingaftaler ved hjælp af batchkladdefunktionen.
 
 ## <a name="asset-depreciation-schedule"></a>Afskrivningstidsplan for aktiv
 
 1. Vælg en leasingaftale på siden **Leasingoversigt**. Vælg derefter **Kartotek \> planlægning af afskrivningsplan** for at åbne siden **Aktivafskrivningsplan**.
 
-    Kladdeposten til ROU for aktivafskrivning er baseret på beløbet i kolonnen **Afskrivningsudgifter**. Du kan se et eksempel på retningslinjerne for kontering af standardoverholdelse under [Beregning af ROU for afskrivning af aktiver for finansieringsleasingaftaler](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i dette emne.
+    Kladdeposten til ROU for aktivafskrivning er baseret på beløbet i kolonnen **Afskrivningsudgifter**. Du kan se et eksempel på retningslinjerne for kontering af standardoverholdelse under [Beregning af ROU for afskrivning af aktiver for finansieringsleasingaftaler](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i denne artikel.
     
 2. Vælg afskrivningsperioden, og vælg derefter **Opret kladde**. Du får vist en meddelelse, hvor det angives, at den kladde, der skal bruges til registrering af afskrivningen, blev oprettet.
 3. Vælg **Kladder \> Aktivleasingkladder** for at åbne siden **Aktivleasingkladde**, hvor du kan få vist den kladdepost for afskrivning, der er oprettet.

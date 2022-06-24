@@ -1,6 +1,6 @@
 ---
 title: Forringe et brugsretsaktiver
-description: I dette emne beskrives de funktioner, der registrerer en forringelse og justerer aktivafskrivningsplanen for et regnskabsstandarder Codification Emne 842 (ASC 842) operationel leasing.
+description: Denne artikel beskriver de funktioner, der registrerer en forringelse og justerer aktivafskrivningsplanen for et regnskabsstandarder Codification Emne 842 (ASC 842) operationel leasing.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894107"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe brugsretsaktiver
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Hvis det ikke er muligt at genoprette et ROU aktivbeløb, skal du muligvis teste, om aktivet er forringet. Hvis du mener, at aktivet forringes, kan aktivleasing registrere forbrydelsen og justere afskrivningsplanen tilsvarende. I dette emne beskrives de funktioner, der registrerer forringelse og justerer aktivafskrivningsplanen for et regnskabsstandarder Codification Emne 842 (ASC 842) operationel leasing. Den samme metode gælder også for International Financial Reporting Standard 16 (IFRS 16) leasinger.
+Hvis det ikke er muligt at genoprette et ROU aktivbeløb, skal du muligvis teste, om aktivet er forringet. Hvis du mener, at aktivet forringes, kan aktivleasing registrere forbrydelsen og justere afskrivningsplanen tilsvarende. Denne artikel beskriver de funktioner, der registrerer forringelse og justerer aktivafskrivningsplanen for et regnskabsstandarder Codification Emne 842 (ASC 842) operationel leasing. Den samme metode gælder også for International Financial Reporting Standard 16 (IFRS 16) leasinger.
 
 Den resterende saldo på ROU-aktivet vil blive amortiseret på et lineært grundlag for det antal perioder, der er tilbage, uanset om rettigheden er klassificeret som en finansieringsleasing i henhold til IFRS 16 eller en driftsleasing under ASC 842.
 
@@ -83,7 +83,7 @@ Fanen **Generelt**
 
 ### <a name="steps"></a>Trin
 
-1. Når du har oprettet leasingaftalen som beskrevet tidligere i dette emne, skal du gå til leasingkartoteket og bekræfte betalingsplanen. Bogfør derefter kladdeposten for den oprindelige genkendelse. Det oprindelige ROU-aktiv og leasingansvar skal være $70.235,81. I dette eksempel blev rettigheden klassificeret som en driftsleasingaftale i henhold til ASC 842.
+1. Når du har oprettet leasingaftalen som beskrevet tidligere i denne artikel, skal du gå til leasingkartoteket og bekræfte betalingsplanen. Bogfør derefter kladdeposten for den oprindelige genkendelse. Det oprindelige ROU-aktiv og leasingansvar skal være $70.235,81. I dette eksempel blev rettigheden klassificeret som en driftsleasingaftale i henhold til ASC 842.
 2. Kør batchkladdeprocessen tre gange for at simulere passagen af tre år for leasingbetalingerne, renteudgifterne og afskrivningsudgifterne.
 3. Når du er færdig med at køre alle tre kørsler, skal du gå tilbage til leasingkartoteket og åbne tabellerne passiv- og aktivposteringer for at få vist den aktuelle værdi af ROU-aktivet og leasingforpligtelsen. Efter tre år bør ansvarsværdien være cirka $-53.893,00, og aktivets værdi skal være ca. $53.893,00. 
 

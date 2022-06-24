@@ -1,6 +1,6 @@
 ---
 title: Oprette en kreditorcertificeringstype i den offentlige sektor
-description: Dette emne indeholder oplysninger om, hvordan du opretter og tildeler typer af leverandørcertificeringer i den offentlige sektor.
+description: Denne artikel indeholder oplysninger om, hvordan du opretter og tildeler typer af leverandørcertificeringer i den offentlige sektor.
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 619152b3d2502026e073c490771d61ef38497983
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7f46cd488dc9f324fe1bf0a6d380d31c58b78ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883032"
 ---
 # <a name="create-a-vendor-certification-type-in-the-public-sector"></a>Oprette en kreditorcertificeringstype i den offentlige sektor
 

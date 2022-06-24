@@ -1,6 +1,6 @@
 ---
 title: Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering
-description: Dette emne forklarer, hvordan du kan foretage fejlfinding af datakilder i et udført ER-format for at få en bedre forståelse for det konfigurerede dataflow.
+description: Denne artikel forklarer, hvordan du kan foretage fejlfinding af datakilder i et udført ER-format for at få en bedre forståelse for det konfigurerede dataflow.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884222"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering
 
@@ -34,7 +34,7 @@ Nogle gange ser dataene i det genererede output anderledes ud end de samme data 
 
 Hvis du vil aktivere funktionen til fejlfinding af datakilder, skal du angive indstillingen **Aktivér datafejlfinding ved formatkørsel** til **Ja** i ER-brugerparametrene. Derefter kan du starte datakildefejlfinding, mens du kører et ER-format for at generere udgående dokumenter. Du kan også bruge indstillingen **Start fejlfinding** til at starte datakildefejlfinding for et ER-format, der er konfigureret i [ER-operationsdesigneren](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Dette emne indeholder retningslinjer for start af datakildefejlfinding for udførte ER-formater. Det forklarer, hvordan oplysningerne kan hjælpe dig med at forstå dataflow og datatransformationer. Eksemplerne i dette emne bruger forretningsprocessen for behandling af kreditorbetalinger.
+Denne artikel indeholder retningslinjer for start af datakildefejlfinding for udførte ER-formater. Det forklarer, hvordan oplysningerne kan hjælpe dig med at forstå dataflow og datatransformationer. Eksemplerne i denne artikel bruger forretningsprocessen for behandling af kreditorbetalinger.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -49,7 +49,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Hvis du vil fuldføre eksemplerne i dette emne, skal du have adgang til en af følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Hvis du vil fuldføre eksemplerne i denne artikel, skal du have adgang til en af følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Udvikler til elektronisk rapportering
     - Funktionel konsulent i elektronisk rapportering
@@ -57,12 +57,12 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 - Virksomheden skal angives til **DEMF**.
 
-- Følg trinnene i [Bilag 1](#appendix1) i dette emne for at downloade komponenterne for Microsoft ER-løsningen, der er nødvendige for at behandle kreditorbetalinger.
-- Følg trinnene i [Bilag 2](#appendix2) i dette emne for at forberede kreditoren til behandling af kreditorbetaling ved hjælp af den ER-løsning, du downloader.
+- Følg trinnene i [Bilag 1](#appendix1) i denne artikel for at downloade komponenterne for Microsoft ER-løsningen, der er nødvendige for at behandle kreditorbetalinger.
+- Følg trinnene i [Bilag 2](#appendix2) i denne artikel for at forberede kreditoren til behandling af kreditorbetaling ved hjælp af den ER-løsning, du downloader.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Behandle en kreditorbetaling for at få en betalingsfil
 
-1. Følg trinnene i [Bilag 3](#appendix3) i dette emne for at behandle kreditorbetalinger.
+1. Følg trinnene i [Bilag 3](#appendix3) i denne artikel for at behandle kreditorbetalinger.
 
     ![Igangværende behandling af kreditorbetaling.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Følgende indstillinger for ER-formater er i øjeblikket ikke tilgængelige for 
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Behandle en kreditorbetaling til fejlfinding
 
-1. Følg trinnene i [Bilag 3](#appendix3) i dette emne for at behandle kreditorbetalinger.
+1. Følg trinnene i [Bilag 3](#appendix3) i denne artikel for at behandle kreditorbetalinger.
 2. Vælg **Ja** i dialogboksen for at bekræfte, at du vil afbryde behandlingen af kreditorbetalinger, og start i stedet datakildefejlfinding på siden **Foretag fejlfinding af datakilder**.
 
     ![Bekræftelsesdialogboks.](./media/er-data-debugger-start-debugging.png)

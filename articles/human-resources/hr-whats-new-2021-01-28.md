@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources 28. januar 2021
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 28. januar 2021.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 28. januar 2021.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909753"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources 28. januar 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Dynamics 365 Human Resources.
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Følgende funktioner er generelt tilgængelige med denne udgivelse.
 Følgende fejlrettelser er inkluderet i denne version.
 
 > [!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne, der omfatter fejlrettelser, som blev udført i buildet, efter at dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis denne artikel til at omfatte fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
 
-| Fejlnummer | Udsted |  Beskrivelse |
+| Fejlnummer | Problem |  Beskrivende tekst |
 | --- | --- | --- |
 | 539456 | Kalenderen viser orlovstypen tekst, når **Vis kun fravær uden detaljer** er aktiveret. | Når indstillingen **Vis kun fravær uden detaljer** er aktiveret, vises datoen for anmodningen nu i fraværsformat. |
 | 528907 | Hvis medarbejdere får adgang til en juridisk enhed for medarbejderrollen, vil ledere ikke kunne se orlovsaktiviteten for medarbejdere i området til medarbejder-selvbetjening **My team**. |Indstilling af denne indstilling giver nu ledere mulighed for fortsat at se aktiviteten for orlovssaldoen. |

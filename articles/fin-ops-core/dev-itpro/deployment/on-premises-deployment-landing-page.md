@@ -1,6 +1,6 @@
 ---
 title: Startside for lokal installation
-description: Dette emne indeholder oplysninger og links til indhold om lokale installationer.
+description: Denne artikel indeholder oplysninger og links til indhold om lokale installationer.
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867406"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
 [!include [banner](../includes/banner.md)]
 
-Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.
+Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Denne artikel indeholder links til indhold med specifikke oplysninger om lokale installationer.
 
 ## <a name="get-started"></a>Introduktion
 - [Oversigt over lokal installation](on-premises-overview.md)
@@ -36,7 +36,7 @@ Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger 
 - [Systemkrav til lokale installationer](../../fin-ops/get-started/system-requirements-on-prem.md)
 - [Microsoft Dynamics 365 Finance + Operations (on-premises)-understøttet software](onprem-compatibility.md)
 - [Krav til tilpasning af hardware til lokale miljøer](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Købe Finance and Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
+- [Købe Finans og drift (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Sammenligning af funktioner i skyen og i det lokale miljø](../../fin-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Introducer
@@ -53,7 +53,7 @@ Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger 
 - [Importér konfigurationer for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurer proxyer til dine lokale miljøer](onprem-reverseproxy.md)
-- [Konfigurer teknisk support til Finance and Operations-apps](../lifecycle-services/support-experience.md)
+- [Konfigurer teknisk support til Finans og drift-apps](../lifecycle-services/support-experience.md)
 - [Klientens internetforbindelse](../user-interface/client-disconnected.md)
 - [Anvende opdateringer til lokale installationer](apply-updates-on-premises.md)
 - [Installere lokale miljøer på ny](redeploy-on-prem.md)
@@ -73,7 +73,7 @@ Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger 
 - [Scripts til løsning af problemer i lokale miljøer](onprem-tsg-implementations.md)
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Diagnosticering i det lokale miljø](on-premises-diagnostics.md)
-- [Fjernede eller udfasede funktioner for Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Fjernede eller udfasede funktioner for Finans og drift](../migration-upgrade/deprecated-features.md)
 - [Livscykluspolitik for software og lokale versioner](../migration-upgrade/on-prem-version-update-policy.md)
  
 

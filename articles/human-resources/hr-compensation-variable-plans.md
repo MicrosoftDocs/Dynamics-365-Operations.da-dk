@@ -1,6 +1,6 @@
 ---
 title: Oprette planer for variabel kompensation
-description: I dette emne beskrives de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
+description: I denne artikel beskrives de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853068"
 ---
 # <a name="create-variable-compensation-plans"></a>Oprette variable kompensationsstrukturer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688651"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. I dette emne beskrives, hvordan komponenter konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
+Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. Denne artikel beskriver, hvordan komponenter konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
 
 Beregning af beløb i variabel kompensation for dine medarbejdere kan være baseret på flere faktorer, f.eks. medarbejderens præstation, medarbejderens kompensationsniveau og afdelingens ydeevne.
 

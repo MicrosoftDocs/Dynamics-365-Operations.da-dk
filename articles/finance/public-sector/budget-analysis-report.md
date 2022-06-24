@@ -1,6 +1,6 @@
 ---
 title: Budgetanalyserapport
-description: Dette emne beskriver budgetanalyserapporten, som anvendes til at generere en opsummeret rapport, der sammenligner budgetterede beløb med faktiske udgifter og indtægtsaktiviteter i løbet af en periode, du angiver.
+description: Denne artikel beskriver budgetanalyserapporten, som anvendes til at generere en opsummeret rapport, der sammenligner budgetterede beløb med faktiske udgifter og indtægtsaktiviteter i løbet af en periode, du angiver.
 author: v-kiarnd
 ms.date: 07/08/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: public sector
 ms.author: twheeloc
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: cbe94424c3d196dba25650a0433ae28afbd525eb
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9045f39dad09f8b8697151eafcbe65f7e6fb6d8e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879383"
 ---
 # <a name="budget-analysis-report"></a>Budgetanalyserapport
 
@@ -34,9 +34,9 @@ Hvis du vil have vist flere oplysninger om en konto, skal du vælge kontonavnet 
 
 ## <a name="filter-the-data-on-this-report"></a>Filtrere dataene i denne rapport
 
-Når du opretter rapporten, vises følgende standardparametre. Du kan bruge disse parametre til at filtrere de data, der vises i rapporten. Du kan finde flere oplysninger i afsnittet "Sådan arbejder du med rapporter" i dette emne.
+Når du opretter rapporten, vises følgende standardparametre. Du kan bruge disse parametre til at filtrere de data, der vises i rapporten. Du kan finde flere oplysninger i afsnittet "Sådan arbejder du med rapporter" i denne artikel.
 
-| Felt | Beskrivelse |
+| Felt | Beskrivende tekst |
 |---|---|
 | Økonomisk dimensionsopsætning | Vælg dimensionsgruppen for de finanskonti, der skal vises i rapporten.<p>En økonomisk dimensionsopsætning er en navngivet gruppe konti eller dimensioner, der indeholder enten kontoværdier for kontoen eller dimensionsværdier for en enkelt dimension. Et sæt kan f.eks. omfatte hovedkonti, afdelinger og bærere. Alternativt kan det indeholde kombinationer, f.eks. en bærer og en hovedkonto eller en afdeling og en bærer.  |
 | Budgetmodel | Vælg den budgetmodel, der skal rapporteres budgetbeløb fra. |

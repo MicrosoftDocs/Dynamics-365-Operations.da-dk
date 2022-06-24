@@ -1,6 +1,6 @@
 ---
 title: Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
-description: Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter registreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
+description: Denne artikel forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter registreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
 author: josaw1
 ms.date: 03/24/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891808"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070520"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
+Denne artikel forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
 
 > [!IMPORTANT]
 > Du kan registrere dine egne opgaveguider til Dynamics 365 Human Resources, men du kan ikke gemme dem til et Forretningsmodeldesigner-bibliotek (BPM) eller åbne dem fra Hjælp-ruden på nuværende tidspunkt. Du kan gemme dem lokalt eller på en netværksplacering og derefter åbne og afspille dem igen ved hjælp af Arbejdsrutineoptager. 

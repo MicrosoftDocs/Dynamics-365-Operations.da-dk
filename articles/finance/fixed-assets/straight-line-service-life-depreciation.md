@@ -1,6 +1,6 @@
 ---
 title: Lineær afskrivning for levetiden
-description: Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
+description: Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896457"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineær afskrivning for levetiden
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
+Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
 
 Når du opretter en afskrivningsprofil for anlægsaktiver og vælger Lineær afskrivning over servicelevetiden i feltet Metode på siden Afskrivningsprofiler, baseres afskrivningen af aktiver med denne tilknyttede afskrivningsprofil, på baggrund af den samlede levetid for anlægsaktivet. Det vil normalt sige med det samme afskrivningsbeløb for hver afskrivningsperiode. 
 
@@ -41,7 +41,7 @@ Du kan vælge enten Kalender eller Regnskabsår i feltet Afskrivningsår på sid
 
 Hvis du vælger Kalender, vises der som standard et år fra d. 1. januar til d. 31. december, også selvom du har defineret regnskabsåret anderledes. 
 
-Indstillingen Kalender opdaterer afskrivningsgrundlaget (typisk bogført nettoværdi minus scrapværdi) d. 1. januar hvert år. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
+Indstillingen Kalender opdaterer afskrivningsgrundlaget (typisk bogført nettoværdi minus scrapværdi) d. 1. januar hvert år. I eksemplerne senere i denne artikel er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
 
 Hvis du vælger Kalender, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens, der definerer datoer og beløb for periodiseringen af afskrivningsposteringerne i hele kalenderåret.
 - Årligt bogfører et beløb d. 31. december.

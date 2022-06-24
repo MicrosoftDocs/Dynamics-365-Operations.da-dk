@@ -1,6 +1,6 @@
 ---
 title: Konfigurere udgiftsvalidatorer
-description: Dette emne beskriver, hvordan du bruger udgiftsvalidatorer til dynamisk valg af den bruger, som en arbejdsgangsopgave, godkendelse eller manuel beslutning er tildelt.
+description: Denne artikel beskriver, hvordan du bruger udgiftsvalidatorer til dynamisk valg af den bruger, som en arbejdsgangsopgave, godkendelse eller manuel beslutning er tildelt.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863217"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurere udgiftsvalidatorer
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Når indkøbsordren oprettes, skal feltet **Projekt** angives. Hvis du ikke kræ
 
 ## <a name="set-up-expenditure-reviewers"></a>Konfigurere udgiftsvalidatorer
 
-Dette eksempel viser, hvordan du konfigurerer en udgiftsevaluering af en indkøbsrekvisition. Hvis du vil konfigurere andre typer udgiftsvalidatorer, skal du erstatte navigationsstien i trin 1 med den relevante sti fra tabellen i afsnittet [Udgiftsgennemsynstyper tidligere i dette emne](configure-expenditure-reviewers.md#types-of-expenditure-reviewers).
+Dette eksempel viser, hvordan du konfigurerer en udgiftsevaluering af en indkøbsrekvisition. Hvis du vil konfigurere andre typer udgiftsvalidatorer, skal du erstatte navigationsstien i trin 1 med den relevante sti fra tabellen i afsnittet [Udgiftsgennemsynstyper](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) tidligere i denne artikel.
 
 1. Gå til **Indkøb og forsyning \> Konfiguration \> Politikker \> Validatorer af indkøbsrekvisitionsudgift**.
 2. Vælg **Ny** på siden **Udgiftsvalidatorer af indkøbsrekvisitioner**.

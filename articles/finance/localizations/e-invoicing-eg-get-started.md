@@ -1,6 +1,6 @@
 ---
 title: Elektronisk fakturering for Egypten
-description: Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Egypten i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
+description: Denne artikel indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Egypten i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904406"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronisk fakturering for Egypten
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Egypten. Det fører dig gennem de konfigurationstrin, der er lande-/områdeafhængige i Regulatory Configuration Service (RCS). Disse trin supplerer de trin, der er beskrevet i [Konfigurere elektronisk fakturering](e-invoicing-set-up-overview.md).
+Denne artikel indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Egypten. Det fører dig gennem de konfigurationstrin, der er lande-/områdeafhængige i Regulatory Configuration Service (RCS). Disse trin supplerer de trin, der er beskrevet i [Konfigurere elektronisk fakturering](e-invoicing-set-up-overview.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du indleder procedurerne i dette emne, skal du opfylde følgende forudsætninger:
+Før du indleder procedurerne i denne artikel, skal du opfylde følgende forudsætninger:
 
 - Bliver fortrolig med elektronisk fakturering, som den beskrives i [Oversigt over elektronisk fakturering](e-invoicing-service-overview.md).
 - Tilmeld dig RCS, og konfigurer elektronisk fakturering. Du kan finde flere oplysninger under følgende emner:

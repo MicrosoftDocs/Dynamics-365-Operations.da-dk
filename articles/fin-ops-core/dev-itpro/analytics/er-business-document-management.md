@@ -1,6 +1,6 @@
 ---
 title: Oversigt over styring af forretningsdokumenter
-description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
+description: Denne artikel indeholder oplysninger om, hvordan du kan bruge funktionen til styring af forretningsdokumenter i ER-strukturen.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903611"
 ---
 # <a name="business-document-management-overview"></a>Oversigt over styring af forretningsdokumenter
 
@@ -50,7 +50,7 @@ En komplet liste over alle rapporter, der er planlagt for udgaven i oktober 2020
 
 Der vil være flere tilgængelige rapporter i fremtidige versioner. Der vil blive udsendt særlige beskeder om flere rapporter separat. Du kan få mere at vide om, hvordan du gennemser listen over aktuelt tilgængelige rapporter, i afsnittet [Liste over ER-konfigurationer, der er udgivet i Finans for at understøtte konfigurerbare forretningsdokumenter](#list-of-configurations-cbd) nedenfor.
 
-Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i denne artikel.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametre
 
@@ -231,7 +231,7 @@ Forretningsbrugere kan få adgang til forretningsdokumentskabeloner til redigeri
 - Brugere, der er tildelt rollen **Systemadministrator**.
 - Brugere, der er tildelt en hvilken som helst rolle, der er konfigureret til at udføre pligten **Administrer forretningsdokumentskabeloner** (AOT-navn **ERBDManageTemplates**).
 
-Benyt følgende fremgangsmåde for at redigere skabeloner til fritekstfakturaer i arbejdsområdet til styring af forretningsdokumenter. Før du udfører denne procedure, skal du have fuldført alle de foregående procedurer i dette emne.
+Benyt følgende fremgangsmåde for at redigere skabeloner til fritekstfakturaer i arbejdsområdet til styring af forretningsdokumenter. Før du udfører denne procedure, skal du have fuldført alle de foregående procedurer i denne artikel.
 
 1. Log på som bruger med adgang til arbejdsområdet til styring af forretningsdokumenter.
 2. Åbn arbejdsområdet til styring af forretningsdokumenter.

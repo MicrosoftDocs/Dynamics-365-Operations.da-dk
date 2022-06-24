@@ -1,6 +1,6 @@
 ---
 title: Resultater fra modeller til maskinel indlæring
-description: I dette emne beskrives forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater.
+description: Denne artikel beskriver forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910165"
 ---
 # <a name="results-of-machine-learning-models"></a>Resultater fra modeller til maskinel indlæring
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater. Målgruppen omfatter ingeniører, analytikere og ledere, der vil opbygge deres viden og færdigheder inden for datavidenskab.
+Denne artikel beskriver forvekslingsmatrixer, klassificeringsproblemer og nøjagtighed inden for maskinel indlæringsmodeller (ML). Formålet er at forbedre din forståelse for nøjagtighed i ML-forudsigelsesresultater. Målgruppen omfatter ingeniører, analytikere og ledere, der vil opbygge deres viden og færdigheder inden for datavidenskab.
 
 ## <a name="confusion-matrix"></a>Forvekslingsmatrix
 Når et overvåget ML-problem oplæres i et sæt historiske data, testes de ved hjælp af data, der tilbageholdes fra uddannelsesprocessen. På denne måde kan du sammenligne forudsigelser fra den uddannede model med de faktiske værdier. Forvekslingsmatrixen er en metode til at evaluere, hvor vellykkede et klassifikationsproblem er, og hvor det medfører fejl (dvs. hvor det bliver "forvirret").
@@ -73,7 +73,7 @@ Nøjagtigheden er et vigtigt værktøj til kommunikation med domæneeksperter, d
 
 I forbindelse med betalingsprognosescenariet kan du angive et mål for den ML-model, der indeholder faktorer i forskellige betalingsmåder. Målet er, at modellen skal forbedres efter et naivt gæt ved at reducere antallet af forkerte svar med mindst 50 %. Med andre ord skal du bruge en nøjagtighed på målet, der adskiller sig mellem nøjagtigheden af et naivt gæt og 100 procent.
 
-I følgende tabel opsummeres dette princip for forvekslingsmatrixer i dette emne.
+I følgende tabel opsummeres dette princip for forvekslingsmatrixer i denne artikel.
 
 | Model   | Naivt gæt | Målsætning | Modelnøjagtighed | Er målet opfyldt?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
@@ -82,7 +82,7 @@ I følgende tabel opsummeres dette princip for forvekslingsmatrixer i dette emne
 
 ## <a name="classification-f1-accuracy"></a>Nøjagtighed i F1-klassifikation
 
-Den endelige overvejelse i dette emne er en mere avanceret måleenhed med en overskredet ydeevne, der kaldes f. eks. F1.
+Den endelige overvejelse i denne artikel er en mere avanceret måleenhed med en overskredet ydeevne, der kaldes F1-nøjagtighed.
 
 Før der kan defineres en nøjagtighed på F1, skal der angives to yderligere målepunkter: Præcision og tilbagekaldelse. Præcision angiver, hvor mange af det samlede antal forudsigelser, der er angivet som positive, der er korrekt tildelt. Denne metrikværdi kaldes også for den positive forudsigelige værdi. Tilbagekaldelse er det samlede antal af faktiske positive sager, der blev forudsagt korrekt. Denne metrikværdi kaldes også følsomhed.
 
@@ -97,7 +97,7 @@ Med F1-målpunktet kombineres præcision og tilbagekaldelse. Resultatet er den h
 
 - F1 = 2 × (præcision × tilbagekaldelse) ÷ (præcision + tilbagekaldelse)
 
-Lad os se på et konkret eksempel. Tidligere i dette emne var der et eksempel på en model, der forudsagde, om et dyr var en hund eller en kat. Illustrationen gentages her.
+Lad os se på et konkret eksempel. Tidligere i denne artikel var der et eksempel på en model, der forudsagde, om et dyr var en hund eller en kat. Illustrationen gentages her.
 
 [![Eksempel på forudsigelse af art (gentaget).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Som du kan se, er F1-værdien mellem værdierne for præcision og tilbagekaldels
 
 Selvom det ikke er så nemt at forstå F1, tilføjer det en nuance til det grundlæggende nøjagtighedsnummer. Det kan også hjælpe med oplysninger, der ikke stemmer, som følgende diskussion viser.
 
-Afsnittet [Modelpræcision](#model-accuracy) i dette emne sammenlignede følgende to forvekslingsmatrixer. Selvom den første model havde lavere nøjagtighed, blev den vurderet til at være en mere nyttig model, da den viste en større forbedring end standardgættet for betaling til tiden.
+Afsnittet [Modelpræcision](#model-accuracy) i denne artikel sammenlignede følgende to forvekslingsmatrixer. Selvom den første model havde lavere nøjagtighed, blev den vurderet til at være en mere nyttig model, da den viste en større forbedring end standardgættet for betaling til tiden.
 
 ![Eksempel på forudsigelse af forudbetaling vs. faktiske tal.](media/payment-prediction-matrix.png)
 

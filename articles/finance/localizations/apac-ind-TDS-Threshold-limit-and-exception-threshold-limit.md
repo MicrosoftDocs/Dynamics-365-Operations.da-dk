@@ -1,6 +1,6 @@
 ---
 title: Grænseværdi og grænseværdi for undtagelse
-description: Dette emne beskriver grænsen og undtagelsesgrænserne for afgifter fratrukket ved kilden (TDS).
+description: Denne artikel beskriver grænsen og undtagelsesgrænserne for afgifter fratrukket ved kilden (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877930"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Grænseværdi og grænseværdi for undtagelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver grænsen og undtagelsesgrænserne for afgifter fratrukket ved kilden (TDS). TDS på fakturaer og betalinger beregnes altid under hensyntagen til den grænseværdi og grænse for undtagelse, der er defineret for TDS-afgiftskomponenterne på siden **A-skat-komponenter**. TDS-afgiftskomponenterne er knyttet til TDS-afgiftskoder, som indgår i TDS-afgiftsgrupperne. TDS-afgiftsgrupperne er knyttet til leverandører og kunder, så TDS kan beregnes på faktura- eller betalingsniveau.
+Denne artikel beskriver grænsen og undtagelsesgrænserne for afgifter fratrukket ved kilden (TDS). TDS på fakturaer og betalinger beregnes altid under hensyntagen til den grænseværdi og grænse for undtagelse, der er defineret for TDS-afgiftskomponenterne på siden **A-skat-komponenter**. TDS-afgiftskomponenterne er knyttet til TDS-afgiftskoder, som indgår i TDS-afgiftsgrupperne. TDS-afgiftsgrupperne er knyttet til leverandører og kunder, så TDS kan beregnes på faktura- eller betalingsniveau.
 
 TDS beregnes, hvis beløbet for en postering eller de akkumulerede transaktioner, der er bogført med en bestemt TDS-gruppe for en kreditor, overskrider den grænse, der er angivet på siden for **A-skat-komponenter**. TDS beregnes ikke, før det akkumulerede transaktionsbeløb overskrider den angivne grænse.
 

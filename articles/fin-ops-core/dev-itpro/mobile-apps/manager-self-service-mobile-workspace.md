@@ -1,6 +1,6 @@
 ---
-title: Arbejdsområdet Mit team til mobilenheder
-description: Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale.
+title: Mobilarbejdsområdet Mit team
+description: Denne artikel indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale.
 author: ShielaSogge
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868692"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilarbejdsområdet Mit team
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emne indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
+Denne artikel indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 
-Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
+Dette mobile arbejdsområde er beregnet til brug sammen med Finans og drift-mobilappen.
 
 ## <a name="overview"></a>Overblik 
 I arbejdsområdet **Mit team** til mobilenheder kan ledere udføre disse opgaver:
@@ -50,12 +50,12 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 <tbody>
 <tr class="odd">
 <td>Et af følgende produkter skal være installeret i organisationen:
-<ul><li>En Finance and Operations-app</li>
+<ul><li>En Finans og drift-app</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Hvis en Finance and Operations-app ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
+<td>Hvis en Finans og drift-app ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Finance and Operations-mobilappen:
+Download og installer Finans og drift-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

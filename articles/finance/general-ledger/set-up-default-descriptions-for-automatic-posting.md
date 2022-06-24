@@ -1,6 +1,6 @@
 ---
 title: Angive standardbeskrivelser til automatisk bogføring
-description: Dette emne forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
+description: Denne artikel forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 71982a7d5b1bb08d3e238646ea0b15f17260bdcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722430"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904493"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Angive standardbeskrivelser til automatisk bogføring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
+Denne artikel forklarer, hvordan du kan konfigurere den standardtekst, der bruges til at beskrive de regnskabsposter, der bogføres automatisk i finans. Du kan angive standardbeskrivelsesteksten ved hjælp af en fritekst eller ved at vælge faste variabler.
 
 > [!NOTE]
-> For visse transaktionstyper kan du i nogle lande eller områder medtage tekst fra felter, der er relateret til disse transaktionstyper. Du kan finde en liste over transaktionstyperne og lande og områder i afsnittet [Valgfrit: Føje anden tekst til standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i dette emne.
+> For visse transaktionstyper kan du i nogle lande eller områder medtage tekst fra felter, der er relateret til disse transaktionstyper. Du kan finde en liste over transaktionstyperne og lande og områder i afsnittet [Valgfrit: Føje anden tekst til standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i denne artikel.
 
 ## <a name="set-up-default-descriptions"></a>Konfigurere standardbeskrivelser
 
@@ -78,7 +78,7 @@ Denne indstilling er kun tilgængelig for følgende lande og områder:
 
 ### <a name="add-text-to-default-descriptions"></a>Føje tekst til standardbeskrivelser
 
-Når du har fuldført trinnene i afsnittet [Konfigurere standardbeskrivelser](#set-up-default-descriptions) tidligere i dette emne, skal du følge disse trin for at føje anden tekst til standardbeskrivelserne.
+Når du har fuldført trinnene i afsnittet [Konfigurere standardbeskrivelser](#set-up-default-descriptions) tidligere i denne artikel, skal du følge disse trin for at føje anden tekst til standardbeskrivelserne.
 
 1. Vælg **Tilføj** i oversigtspanelet **Parametre**.
 2. I feltet **Referencetabel** skal du vælge den databasetabel, hvorfra der skal føjes parameterdata til beskrivelsen.

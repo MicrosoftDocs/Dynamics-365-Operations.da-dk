@@ -1,6 +1,6 @@
 ---
 title: Fakturaautomatisering for scannede dokumenter
-description: Dette emne forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
+description: Denne artikel forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716388"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883410"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for scannede dokumenter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer de dataenheder, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, herunder fakturaer med vedhæftede filer.
+Denne artikel forklarer de dataenheder, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, herunder fakturaer med vedhæftede filer.
 
 Organisationer, der ønsker at strømline deres kreditorprocesser, identificerer ofte fakturabehandling som en af de vigtigste procesområder, der skal være mere effektive. I mange tilfælde overfører disse organisationer behandlingen af papirfakturaer til en tredjepartserviceudbyder af optisk tegngenkendelse (OCR). Derefter modtager de maskinlæsbare fakturametadata sammen med et scannet billede af hver faktura. Som hjælp til automatisering oprettes en sidste løsning derefter for at kunne forbruge disse artefakter i faktureringssystemet. Nu er denne sidste automatisering som standard aktiveret via en løsning til fakturaautomatisering.
 
@@ -46,7 +46,7 @@ Løsningens fodaftryk består af følgende komponenter:
 + Undtagelsesbehandling af fakturaer
 + En side om side-fremviser af vedhæftede filer i fakturaer
 
-Resten af dette emne indeholder detaljerede beskrivelser af disse løsningskomponenter.
+Resten af denne artikel indeholder detaljerede beskrivelser af disse løsningskomponenter.
 
 ## <a name="data-entities"></a>Dataenheder
 
@@ -86,7 +86,7 @@ Fakturaer, der importeres via datapakker, kan knyttes til den juridiske enhed, d
 
 ## <a name="exception-processing"></a>Behandling af undtagelser
 
-I scenarier, hvor kommer kreditorfakturaer kommer ind i Finance and Operations via integration, skal det være nemt for et kreditorteammedlem at behandle undtagelser eller mislykkede fakturaer og at oprette ventende fakturaer ud fra mislykkedes fakturaer. Denne undtagelsesbehandling for kreditorfakturaer er nu en del af Finance and Operations.
+I scenarier, hvor kommer kreditorfakturaer kommer ind i Finans og drift via integration, skal det være nemt for et kreditorteammedlem at behandle undtagelser eller mislykkede fakturaer og at oprette ventende fakturaer ud fra mislykkedes fakturaer. Denne undtagelsesbehandling for kreditorfakturaer er nu en del af Finans og drift.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Kreditorfakturaer, der ikke blev importeret, på listesiden
 

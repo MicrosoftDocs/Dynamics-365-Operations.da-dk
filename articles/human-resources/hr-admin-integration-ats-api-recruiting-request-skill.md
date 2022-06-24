@@ -1,6 +1,6 @@
 ---
 title: Rekrutteringsanmodningsfærdighed
-description: Dette emne beskriver enheden til rekrutteringsanmodningsfærdigheden til Dynamics 365 Human Resources.
+description: Denne artikel beskriver enheden til rekrutteringsanmodningsfærdigheden til Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 245b9a1ff4f140b9288b79c70820204f3082568b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b17bbdfbc977112344302deada085681ceca9bb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856390"
 ---
 # <a name="recruiting-request-skill"></a>Rekrutteringsanmodningsfærdighed
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068603"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne beskriver enheden til rekrutteringsanmodningsfærdigheden til Dynamics 365 Human Resources.
+Denne artikel beskriver enheden til rekrutteringsanmodningsfærdigheden til Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmrecruitingrequestskillentity
 

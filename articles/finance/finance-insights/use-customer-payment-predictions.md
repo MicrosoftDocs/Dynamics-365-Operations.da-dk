@@ -1,6 +1,6 @@
 ---
-title: Bruge forudsigelser om debitorbetalinger
-description: Dette emne gennemgår forudsætningerne og de generelle trin, der er nødvendige for at kunne bruge en prøveversion af Finance Insights.
+title: Bruge forudsigelser om kundebetalinger
+description: Denne artikel gennemgår forudsætningerne og de generelle trin, der er nødvendige for at kunne bruge en prøveversion af Finance Insights.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740618"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901396"
 ---
-# <a name="use-customer-payment-predictions"></a>Bruge forudsigelser om debitorbetalinger
+# <a name="use-customer-payment-predictions"></a>Bruge forudsigelser om kundebetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan bruge debitorbetalingsforudsigelser. Før du bruger denne funktion, skal du sikre dig, at du har fuldført opsætningstrinnene for den. Du kan finde flere oplysninger under [Aktivere forudsigelser for debitorbetaling](enable-cust-paymnt-prediction.md).
+Denne artikel forklarer, hvordan du kan bruge debitorbetalingsforudsigelser. Før du bruger denne funktion, skal du sikre dig, at du har fuldført opsætningstrinnene for den. Du kan finde flere oplysninger under [Aktivere forudsigelser for debitorbetaling](enable-cust-paymnt-prediction.md).
 
 Du kan få vist forudsigelse af debitorbetalinger i arbejdsrådet **Administrer kundekredit og rykkere** og på to nye listesider: **Forudsigelser for transaktionsbetaling** og **Forudsigelser om debitorbetalinger**.
 

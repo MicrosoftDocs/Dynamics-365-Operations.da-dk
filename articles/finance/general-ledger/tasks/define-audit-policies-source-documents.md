@@ -1,6 +1,6 @@
 ---
 title: Definere revisionspolitikker for kildedokumenter
-description: Dette emne viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.
+description: Denne artikel viser, hvordan du kan konfigurere og køre regler for overvågningspolitik.
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b8aa106cd5a5596f6b9a6663390e03ebc3f91a7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872522"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definere revisionspolitikker for kildedokumenter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du kan konfigurere og køre regler for overvågningspolitik. I eksemplet bruges udgiftsrapporter med udgiftstypen hotel. Denne procedure bruger demofirmaet USMF. Rollen revisor indeholder de korrekte tilladelser til at kunne udføre disse opgaver.
+Denne artikel viser, hvordan du kan konfigurere og køre regler for overvågningspolitik. I eksemplet bruges udgiftsrapporter med udgiftstypen hotel. Denne procedure bruger demofirmaet USMF. Rollen revisor indeholder de korrekte tilladelser til at kunne udføre disse opgaver.
 
 1. Gå i navigationsruden til **Moduler > Revisionspanel > Opsætning > Regeltype**.
 2. Vælg **Ny**.

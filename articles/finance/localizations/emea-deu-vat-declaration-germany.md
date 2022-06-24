@@ -1,6 +1,6 @@
 ---
 title: Momsangivelse (Tyskland)
-description: I dette emne beskrives, hvordan du kan konfigurere og generere en forudgående momsopgørelse for Tyskland i det officielle XML-format.
+description: Denne artikel beskriver, hvordan du kan konfigurere og generere en forudgående momsopgørelse for Tyskland i det officielle XML-format.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879526"
 ---
 # <a name="vat-declaration-germany"></a>Momsangivelse (Tyskland)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere og generere en forudgående momsopgørelse for Tyskland i det officielle XML-format. I dette emne beskrives det også, hvordan du kan få vist en forhåndsversion af momsopgørelsen i Microsoft Excel.
+Denne artikel beskriver, hvordan du kan konfigurere og generere en forudgående momsopgørelse for Tyskland i det officielle XML-format. Denne artikel beskriver også, hvordan du kan få vist en forhåndsversion af momsopgørelsen i Microsoft Excel.
 
 Hvis rapporten skal genereres automatisk, skal du oprette nok momskoder til at føre et separat momsregnskab for hvert felt i den forudgående momsopgørelse. Derudover skal du i de applikationsspecifikke parametre i ER-formatet for den forudgående momsopgørelse knytte momskoder til opslagsresultatet af opslagene i felterne i momsopgørelsen.
 
-For Tyskland skal du konfigurere **opslag i rapportfelt**. Du kan finde flere oplysninger om, hvordan du konfigurerer programspecifikke parametre, i afsnittet [Konfigurere programspecifikke parametre for momsopgørelsesfelter](#set-up-application-specific-parameters-for-vat-declaration-fields) senere i dette emne.
+For Tyskland skal du konfigurere **opslag i rapportfelt**. Du kan finde flere oplysninger om, hvordan du konfigurerer programspecifikke parametre, i afsnittet [Konfigurere programspecifikke parametre for momsopgørelsesfelter](#set-up-application-specific-parameters-for-vat-declaration-fields) senere i denne artikel.
 
 I tabellen nedenfor viser kolonnen "Opslagsresultat" det opslagsresultat, der er forudkonfigureret til en bestemt momsopgørelsesrække i momsopgørelsesformatet. Brug disse oplysninger til korrekt at knytte momskoder til opslagsresultatet og derefter med rækken i momsopgørelsen.
 
@@ -176,7 +176,7 @@ Benyt følgende fremgangsmåde for at definere, hvilke momskoder der genererer h
 
     | Felt                  | Beskrivelse                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Opslagsresultat          | Vælg værdien i rapportfeltet. Du kan finde flere oplysninger om værdierne og deres tilknytning til momsopgørelsesrækker i [oversigtsafsnittet for momsopgørelse](#vat-declaration-overview) tidligere i dette emne.                                                                                               |
+    | Opslagsresultat          | Vælg værdien i rapportfeltet. Du kan finde flere oplysninger om værdierne og deres tilknytning til momsopgørelsesrækker i [oversigtsafsnittet for momsopgørelse](#vat-declaration-overview) tidligere i denne artikel.                                                                                               |
     | Skattekode               | Vælg den momskode, der skal tilknyttes rapportfeltet. Bogførte momsposteringer, der bruger den valgte momskode, samles i det relevante momsfelt. Det anbefales, at du adskille momskoder på en sådan måde, at en momskode kun genererer beløb i én opgørelsesboks. |
     | Transaktionsklasse | Hvis du har oprettet nok momskoder til at bestemme et opgørelsesfelt, skal du vælge **\*Ikke tom\***. Hvis du ikke har oprettet nok momskoder, så en momskode kun genererer beløb i ét opgørelsesfelt, kan du konfigurere en transaktionsklassifikator. Følgende transaktionsklassificeringer er tilgængelige:</br>-   **Køb**</br>-   **PurchaseExempt** (køb fritaget for moms)</br>-   **PurchaseReverseCharge** (Moms, der skal modtages fra køb med modtagermoms)</br>-   **Sales**</br>-   **SalesExempt** (momsfrit salg)</br>-   **SalesReverseCharge** (moms, der skal betales fra en modtager af køb eller modtagerbetaling)</br>-   **Brug moms**. </br>Der findes også en klassificering for hver transaktionsklasse for kreditnotaen. En af disse klassificeringer er f.eks. **PurchaseCreditNote** (købskreditnota).</br>Sørg for at oprette to linjer for hver momskode: En med transaktionsklasseværdien, og en med transaktionsklasse for kreditnotaværdien. |
 
@@ -212,7 +212,7 @@ Hvis du konfigurerer momsopgørelsen i en juridisk enhed, der har [flere momsreg
 Datapakken indeholder indstillinger for elektroniske meddelelser, der bruges til at generere momsopgørelsen i XML-format og derefter få vist den i Excel. Du kan forlænge disse indstillinger eller oprette dine egne. Du kan finde flere oplysninger om, hvordan du arbejder med elektroniske meddelelser og opretter dine egne indstillinger, i [Elektronisk meddelelse](../general-ledger/electronic-messaging.md).
 
 1. I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) skal du vælge **Data-pakken** som aktivtype i biblioteket Delte aktiver og derefter hente **DE-momsopgørelsespakken EM**. Det hentede filnavn er **DE VAT declaration EM-pakke.zip**.
-2. I Dynamics 365 Finance i arbejdsområdet **Datastyring** skal du vælge **Importér**.
+2. I Dynamics 365 Finance skal du vælge **Importér** i arbejdsområdet **Datastyring**.
 3. Indtast et navn for gruppen i feltet **Gruppenavn** i oversigtspanelet **Importér**.
 4. Vælg **Tilføj fil** i oversigtspanelet **Valgte enheder**.
 5. I dialogboksen **Tilføj fil** skal du kontrollere, at feltet **Kildedataformat** er angivet til **Pakke**, vælge **Overfør og tilføj**, og vælg derefter den zip-fil, du har hentet tidligere.
@@ -265,7 +265,7 @@ Datapakken indeholder indstillinger for elektroniske meddelelser, der bruges til
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Generere en momsopgørelse fra elektroniske meddelelser
 
-Når du bruger elektroniske meddelelser til generering af rapporten, kan du indsamle momsdata fra flere juridiske enheder. Du kan finde flere oplysninger i afsnittet [Køre en momsopgørelse for flere juridiske enheder](#run-a-vat-declaration-for-multiple-legal-entities) senere i dette emne.
+Når du bruger elektroniske meddelelser til generering af rapporten, kan du indsamle momsdata fra flere juridiske enheder. Du kan finde flere oplysninger i afsnittet [Køre en momsopgørelse for flere juridiske enheder](#run-a-vat-declaration-for-multiple-legal-entities) senere i denne artikel.
 
 Følgende procedure gælder for eksemplet på behandling af elektroniske meddelelser, som du har importeret fra LCS-biblioteket til delte aktiver.
 
@@ -277,7 +277,7 @@ Følgende procedure gælder for eksemplet på behandling af elektroniske meddele
     > [!NOTE]
     > Trin 5 til 7 er valgfrie.
 
-5. Valgfrit: Vælg **Indsamlingsdata** i oversigtspanelet **Meddelelser**, og vælg derefter **OK**. De momsbetalinger, der er genereret tidligere, føjes til meddelelsen. Du kan finde flere oplysninger i afsnittet [Afregn og bogfør moms](#settle-and-post-sales-tax) tidligere i dette emne. Hvis du springer dette trin over, kan du stadig generere en momsopgørelse ved hjælp af feltet **Momsopgørelsesversion** i dialogboksen **Momsopgørelse**.
+5. Valgfrit: Vælg **Indsamlingsdata** i oversigtspanelet **Meddelelser**, og vælg derefter **OK**. De momsbetalinger, der er genereret tidligere, føjes til meddelelsen. Du kan finde flere oplysninger i afsnittet [Afregn og bogfør moms](#settle-and-post-sales-tax) tidligere i denne artikel. Hvis du springer dette trin over, kan du stadig generere en momsopgørelse ved hjælp af feltet **Momsopgørelsesversion** i dialogboksen **Momsopgørelse**.
 6. Valgfrit: Gennemse de momsbetalinger, der er overført til behandling, i oversigtspanelet **Meddelelseselementer**. Alle momsbetalinger i den valgte periode, som ikke er inkluderet i andre meddelelser i samme behandling, inkluderes som standard.
 7. Valgfrit: Vælg det **originaldokument**, du vil gennemse momsafbetalingerne for, eller vælg **Slet** for at udelukke momsbetalinger fra behandling. Hvis du springer dette trin over, kan du stadig generere en momsopgørelse ved hjælp af feltet **Momsopgørelsesversion** i dialogboksen **Momsopgørelse**.
 8. I oversigtspanelet **Meddelelser** skal du vælge **Opdater status**. Vælg **Klar til generering** i dialogboksen **Opdater status**, og vælg derefter **OK**. Kontroller, at meddelelsens status er ændret til **Klar til generering**.

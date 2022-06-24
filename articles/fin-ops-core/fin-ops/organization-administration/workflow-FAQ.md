@@ -1,6 +1,6 @@
 ---
-title: Ofte stillede spørgsmål om arbejdsgang
-description: Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
+title: Ofte stillede spørgsmål om arbejdsproces
+description: Denne artikel besvarer ofte stillede spørgsmål om arbejdsprocessystemet.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896573"
 ---
-# <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsgang
+# <a name="workflow-faq"></a>Ofte stillede spørgsmål om arbejdsproces
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emne besvarer ofte stillede spørgsmål om arbejdsgangssystemet.
+Denne artikel besvarer ofte stillede spørgsmål om arbejdsprocessystemet.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Hvorfor modtages flere beskeder, når en workflowopgave afvises?
 Når en workflowopgave afvises, fuldføres den som afvist. Der oprettes en anden workflowopgave, som tildeles til igangsætteren. Det betyder, at der er en besked til igangsætteren af den afviste workflowopgave, og en særskilt besked til den bruger, der er tildelt til den nye workflowopgave med "ændringsanmodning". 

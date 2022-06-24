@@ -1,6 +1,6 @@
 ---
 title: Konfigurere parametre for automatisk rykkerproces
-description: Dette emne indeholder en beskrivelse af de parametre, der påvirker automatiserede rykkerprocesser, og vejledning i, hvordan du kan indstille dem, så den automatiserede proces afspejler dine hensigter og forventninger.
+description: Denne artikel indeholder en beskrivelse af de parametre, der påvirker automatiserede rykkerprocesser, og vejledning i, hvordan du kan indstille dem, så den automatiserede proces afspejler dine hensigter og forventninger.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734390"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900036"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Konfigurere parametre for automatisk rykkerproces
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af de parametre, der påvirker automatiserede rykkerprocesser, og vejledning i, hvordan du kan indstille dem, så den automatiserede proces afspejler dine hensigter og forventninger. Yderligere oplysninger om, hvordan du automatiserer rykkerprocesser, finder du i [Automatiseret opkrævningsproces](collections-process-automate.md).
+Denne artikel indeholder en beskrivelse af de parametre, der påvirker automatiserede rykkerprocesser, og vejledning i, hvordan du kan indstille dem, så den automatiserede proces afspejler dine hensigter og forventninger. Yderligere oplysninger om, hvordan du automatiserer rykkerprocesser, finder du i [Automatiseret opkrævningsproces](collections-process-automate.md).
 
 ## <a name="general"></a>Almindelig
 Angiv et antal i **Procentvis af kunder pr. batchopgave** for at bestemme antallet af batchopgaver pr. automatiseringsproces. Indstil **Bogfør rykkerbreve automatisk** til **Ja**, så rykkerhandlingstypen bogfører rykkeren under automatisering. Angiv **Opret aktiviteter for automatisering** til **Ja**, hvis du vil oprette og lukke aktiviteter for handlingstyper, der ikke er aktivitet, for at få vist alle automatiske trin, der er foretaget for en konto. Definer det antal dage, rykkerhistorikken skal gemmes, i **Opbevaringsdage for automatiseret rykkerproces**. Når en faktura når sidste trin i rykkerprocessen, bruges den ikke til at oprette handlingstyper for fremtidig procesautomatisering, hvis **Udelad faktura, når det sidste procestrin er aktiveret** er angivet til **Ja**. Den næstældste faktura er bestemmende for næste trin i proces-automatiseringen for at sikre, at automatiseringshandlingerne for rykkerprocessen fortsætter. 

@@ -1,6 +1,6 @@
 ---
 title: Italiensk Intrastat
-description: Dette emne indeholder oplysninger om Intrastat-rapportering i Italien.
+description: Denne artikel indeholder oplysninger om Intrastat-rapportering i Italien.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874357"
 ---
 # <a name="italian-intrastat"></a>Italiensk Intrastat
 
@@ -631,7 +631,7 @@ Benyt følgende fremgangsmåde for at konfigurere specifikke indstillinger for I
 
     Du kan finde flere oplysninger i [Downloade elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Gå i Dynamics 365 Finance til **Moms** > **Opsætning** > **Parametre for udenrigshandel**.
+2. I Dynamics 365 Finance skal du gå til **Moms** > **Konfiguration** > **Parametre for udenrigshandel**.
 3. På fanen **Intrastat** i oversigtspanelet **Generelt** skal du angive følgende felter:
 
     - **Oprindelsesområde/destination**: Vælg land for din virksomhed. Dette land bruges ved afsendelser.
@@ -650,7 +650,7 @@ Benyt følgende fremgangsmåde for at konfigurere specifikke indstillinger for I
 6. Angiv indstillingen **Udskriv og eksporter statistiske data** til **Ja** i oversigtspanelet **Statistisk værdi**, hvis det er nødvendigt. Denne indstilling aktiverer overførsel af statistiksektionen. Den statistike sektion består af data om vægt, supplerende enheder, statistikværdier, leveringsbetingelser, leveringsplaner, transportmåder og oprindelsesområder.
 
     > [!NOTE]
-    > Ved en kvartalsopgørelse vil Intrastat-rapporten ikke inkludere statistiksektionen eller oplysninger om leveringsbetingelser og transportmåder. Du kan finde flere oplysninger i tabellen i afsnittet [Oversigt](#overview) i dette emne.
+    > Ved en kvartalsopgørelse vil Intrastat-rapporten ikke inkludere statistiksektionen eller oplysninger om leveringsbetingelser og transportmåder. Du kan finde flere oplysninger i tabellen i afsnittet [Oversigt](#overview) i denne artikel.
 
 7. Under fanen **Lande-/områdeegenskaber** kan du angive alle de lande eller områder, som organisationen handler med. For hvert land eller område skal du angive følgende felter:
 

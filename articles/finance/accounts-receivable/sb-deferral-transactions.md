@@ -1,6 +1,6 @@
 ---
 title: Udskydelsestransaktioner i abonnementsfakturering
-description: Dette emne beskriver de forskellige transaktioner, der kan bruges i udskydelsestransaktioner som en del af indtægts- og udgiftsudskydelser i Abonnementsfakturering.
+description: Denne artikel beskriver de forskellige transaktioner, der kan bruges i udskydelsestransaktioner som en del af indtægts- og udgiftsudskydelser i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5913308d4ee9fdcb8cf2b862171078f27f651662
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c3862f1a250bf8e56303975b5c6a3560cd84c1e7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872580"
 ---
 # <a name="deferral-default-transactions"></a>Standardtransaktioner for udskydelse
 
-Dette emne beskriver de transaktioner, der giver mulighed for indtægts- og udgiftsudskydelser. Udskydelsesplaner er altid baseret på og afhænger af et oprindelige dokument eller en faktureringsplan. Udskydelsesplaner oprettes på basis af standarder og kan ikke angives eller oprettes separat.
+Denne artikel beskriver de transaktioner, der giver mulighed for indtægts- og udgiftsudskydelser. Udskydelsesplaner er altid baseret på og afhænger af et oprindelige dokument eller en faktureringsplan. Udskydelsesplaner oprettes på basis af standarder og kan ikke angives eller oprettes separat.
 
 ## <a name="sales-order-transaction-deferral"></a>Udskydelse af salgsordretransaktion
 

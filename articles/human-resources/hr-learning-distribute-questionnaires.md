@@ -1,6 +1,6 @@
 ---
-title: Udsende og planlægge spørgeskemaer.
-description: I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.
+title: Udsende og planlægge spørgeskemaer
+description: Denne artikel beskriver, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a543d9b85edd493f9b5d5a0449302769c3592f7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91b2c94c74fd51765a2545424504149fff1f4bfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908855"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer.
+# <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
+Denne artikel beskriver, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
 
 Der er flere måder at distribuere et spørgeskema på:
 

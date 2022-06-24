@@ -1,6 +1,6 @@
 ---
 title: Introduktion til API-integration for ansøgersporingssystem
-description: Dette emne beskriver Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System).
+description: Denne artikel beskriver Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System).
 author: andreabichsel
 ms.date: 02/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e16c781a6e51c57db8ae76dcfe0d28ec709428eb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6037d09fdc484753c7e90a896ce383bd71391356
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894695"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Introduktion til API-integration for ansøgersporingssystem
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069926"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne beskriver Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System). Formålet med API er at aktivere strømlinet integration mellem Dynamics 365 Human Resources og partner-ATS'er.
+Denne artikel beskriver Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System). Formålet med API er at aktivere strømlinet integration mellem Dynamics 365 Human Resources og partner-ATS'er.
 
 ![ATS-integrationsflow.](media/hr-admin-integration-ats-api-introduction-flow.png)
 

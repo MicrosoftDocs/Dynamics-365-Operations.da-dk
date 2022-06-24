@@ -1,6 +1,6 @@
 ---
-title: Konfigurer og køre forespørgslen Likviditet
-description: Dette emne indeholder oplysninger om forespørgslen Likviditet. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
+title: Konfigurere og køre forespørgslen Likviditet
+description: Denne artikel indeholder oplysninger om forespørgslen Likviditet. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
 author: velofog
 ms.date: 10/07/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: public sector
 ms.author: twheeloc
 ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 1ed160444647f9d82f2ead51a3e2401d468f6861
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6598143bade9996ffc9c606aeca2feaff01a8d61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849698"
 ---
-# <a name="set-up-and-run-the-cash-position-inquiry"></a>Konfigurer og køre forespørgslen Likviditet
+# <a name="set-up-and-run-the-cash-position-inquiry"></a>Konfigurere og køre forespørgslen Likviditet
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne indeholder oplysninger om forespørgslen **Likviditet**. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner. Det viser følgende elementer:
+Denne artikel indeholder oplysninger om forespørgslen **Likviditet**. Dette forespørgslen gør det muligt for dig at fastlægge den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner. Det viser følgende elementer:
 
 - Startsaldoen for kontantbeholdningen
 - Virkningen af tilførelsen af kasseboner

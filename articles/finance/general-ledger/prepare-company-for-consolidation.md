@@ -1,6 +1,6 @@
 ---
 title: Forberede en juridisk enhed til brug i konsolideringsprocessen
-description: Under en konsolidering indsamles transaktioner fra flere sæt juridiske enhedskonti til ét sæt juridiske enhedskonti. Dette emne forklarer, hvordan du forbereder en juridisk enhed til en konsolidering.
+description: Under en konsolidering indsamles transaktioner fra flere sæt juridiske enhedskonti til ét sæt juridiske enhedskonti. Denne artikel forklarer, hvordan du forbereder en juridisk enhed til en konsolidering.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894020"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Forberede en juridisk enhed til brug i konsolideringsprocessen
 
 [!include [banner](../includes/banner.md)]
 
-Under en konsolidering indsamles transaktioner fra flere sæt juridiske enhedskonti til ét sæt juridiske enhedskonti. Dette emne forklarer, hvordan du forbereder en juridisk enhed til en konsolidering.
+Under en konsolidering indsamles transaktioner fra flere sæt juridiske enhedskonti til ét sæt juridiske enhedskonti. Denne artikel forklarer, hvordan du forbereder en juridisk enhed til en konsolidering.
 
 > [!NOTE]
 > Det anbefales, at du bruger Management Reporter til Microsoft Dynamics 365 Finance til at kombinere de økonomiske resultater for flere juridiske enheder i et konsolideret format. Du kan bruge Management Reporter til at oprette konsoliderede regnskabsrapporter på tværs af juridiske enheder, bruge Excel til at importere konsolideringsdata fra andre kilder og oversætte beløb til et vilkårligt antal rapporteringsvalutaer uden at skulle køre konsolideringsprocessen i Dynamics 365 Finance.

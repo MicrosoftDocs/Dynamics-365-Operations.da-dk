@@ -13,19 +13,19 @@ ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0aa893c7c3435ac08e66888e2bab92d2eb24de72ab43a5964d3a575f53ecc7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7744dfedd742dd473602d413ac99bc26b2bce47b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865504"
 ---
 # <a name="corrective-invoicing"></a>Korrigerende fakturering
 
 [!include [banner](../includes/banner.md)]
 
  > [!NOTE]
- > Dette emne gælder for juridiske enheder med en primær adresse i Danmark, Tyskland, Frankrig, Irland, Nederlandene eller Storbritannien.
+ > Denne artikel gælder for juridiske enheder med en primær adresse i Danmark, Tyskland, Frankrig, Irland, Nederlandene eller Storbritannien.
 
 En kreditnota er et dokument, der reducerer eller eliminerer det beløb, som køberen skal at betale.
 

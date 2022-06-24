@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om personalehandlinger
-description: Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger.
+description: Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 0782f686c9c91d434214724e2f621225a9e268b3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8882fd00c68dc3cafcb4ecf1b2fe351a9e7f5741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692136"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874301"
 ---
 # <a name="personnel-actions-faq"></a>Ofte stillede spørgsmål om personalehandlinger
 
@@ -27,7 +27,7 @@ ms.locfileid: "8692136"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. 
+Denne artikel indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Human Resourceshandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. 
 
 Eksempler på opgaver, der kan kræve personalehandlinger, er:
  - Når du opretter nye stillinger. 

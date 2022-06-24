@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896399"
 ---
 # <a name="one-voucher"></a>Ét bilag
 
@@ -37,7 +37,7 @@ Den eksisterende funktion til økonomikladder (finanskladde, anlægsaktivkladde,
     [![Enkelt linje.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Definitionen af Ét bilag omfatter **ikke** tilfælde, hvor kladdenavne er angivet som **Kun ét bilagsnummer**, og hvor brugeren derefter angiver et bilag, som kun omfatter finanskontotyper. I dette emne betyder Ét bilag, at der er er et enkelt bilag, der indeholder mere end én kreditor, debitor, bank, ét anlægsaktiv eller projekt.
+    > Definitionen af Ét bilag omfatter **ikke** tilfælde, hvor kladdenavne er angivet som **Kun ét bilagsnummer**, og hvor brugeren derefter angiver et bilag, som kun omfatter finanskontotyper. I denne artikel betyder Ét bilag, at der er er et enkelt bilag, der indeholder mere end én kreditor, debitor, bank, ét anlægsaktiv eller projekt.
 
 - Angiv et bilag med flere linjer, hvor der ikke er nogen modkonto.
 
@@ -63,16 +63,16 @@ Du genererer derefter rapporten **Udgifter efter kreditor** i arbejdsområdet **
 
 På grund af de problemer, der kan forekomme, når der bruges ét bilag, vil denne funktion med tiden blive frarådet. Men da der er nogle funktionsmæssige kløfter, som er afhængige af denne funktion, udfases funktionen ikke på én gang. I stedet bruges følgende tidsplan:
 
-- **Versionen foråret 2018** – Denne funktion var deaktiveret som standard via parameteren **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen igen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige kløfter, der er angivet senere i dette emne.
+- **Versionen foråret 2018** – Denne funktion var deaktiveret som standard via parameteren **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen igen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige kløfter, der er angivet senere i denne artikel.
 
-    - Hvis der ikke kræves ét bilag i dit forretningsscenarie, anbefales det, at du lader funktionen være deaktiveret. Hvis denne funktion bruges, selvom der findes en anden løsning, retter Microsoft ikke "fejl" i de områder, der identificeres senere i dette emne.
+    - Hvis der ikke kræves ét bilag i dit forretningsscenarie, anbefales det, at du lader funktionen være deaktiveret. Hvis denne funktion bruges, selvom der findes en anden løsning, retter Microsoft ikke "fejl" i de områder, der identificeres senere i denne artikel.
     - Vi anbefaler, at du stopper med at bruge ét bilag til integrationer i , medmindre funktionen er påkrævet til et af de dokumenterede funktionelle kløfter.
 
 - **Senere versioner** – Flere af disse forretningskrav kan kun opfyldes ved hjælp af ét bilag. Microsoft skal sikre, at alle de identificerede forretningskrav stadig kan opfyldes i systemet, når funktionaliteten frarådes. Derfor vil der sandsynligvis skulle tilføjes nye funktioner for at udfylde funktionelle kløfter. Microsoft kan ikke tilbyde en bestemt løsning, da de enkelte funktionskløfter er forskellige og skal evalueres ud fra forretningsbehovet. Nogle funktionelle kløfter vil sandsynligvis blive erstattet af funktioner, der er med til at opfylde bestemte forretningsbehov. Andre huller kan dog udfyldes ved fortsat at gøre det muligt at angive oplysninger i en kladde, som ved anvendelse af ét bilag, men systemet kan efterhånden spore flere detaljer efter behov.
 
 Når alle funktionelle kløfter er udfyldt, kommunikerer Microsoft, at det frarådes at bruge funktionen. Afskrivningen vil dog ikke være gældende i mindst ét år efter den pågældende kommunikation. Selvom Microsoft ikke kan give et præcist estimat over, hvornår funktionen Ét bilag frarådes, vil der højst sandsynligt gå to år, før afskrivningen finder sted. Microsofts politik er at holde mindst 12 måneder mellem ofring af forældet funktionalitet og den faktiske afskrivning, så kunder og uafhængige softwareleverandører har tid til at reagere på ændringen. For eksempel skal en organisation muligvis opdatere forretningsprocesser, enheder og integrationer.
 
-Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere dette emne, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere emnet "Fjernede eller forældede funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
+Når ét bilag afskrives, er det en vigtig ændring, der kommunikeres i vidt omfang. Som en del af denne kommunikation vil Microsoft opdatere denne artikel, skrive et blog-opslag på Microsoft Dynamics 365 Finance-bloggen, opdatere artiklen "Fjernede eller forældede funktioner", kommunikere ændringen på det relevante Microsoft-websted osv.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruge ét bilag?
 

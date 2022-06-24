@@ -1,6 +1,6 @@
 ---
 title: Understøttelse af to momsvalutaer
-description: I dette emne forklares det, hvordan du udvider funktionen vedrørende regnskab for to valutaer på momsområdet og indvirkningen på momsberegning og bogføring
+description: Denne artikel forklarer, hvordan du udvider funktionen vedrørende regnskab for to valutaer på momsområdet og indvirkningen på momsberegning og bogføring
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909034"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Understøttelse af to momsvalutaer
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du udvider regnskabet for to momsvalutaer og indvirkningen på momsberegning, bogføring og udligninger.
+Denne artikel forklarer, hvordan du udvider regnskabet for to momsvalutaer og indvirkningen på momsberegning, bogføring og udligninger.
 
 Funktionen vedrørende to valutaer for Dynamics 365 Finance blev introduceret i version 8.1 (oktober 2018). Den ændrer den måde, som regnskabsposter i rapporteringsvalutaen beregnes på.
 
@@ -89,7 +89,7 @@ Denne funktion gælder kun for nye transaktioner. For så vidt angår momstransa
 
 Hvis du vil undgå ovenstående, anbefales det, at du ændrer denne parameterværdi i en ny (ren) momsafregningsperiode, der ikke indeholder nogen ikke-udlignede momstransaktioner. Hvis du vil ændre denne værdi midt i en momsafregningsperiode, skal du køre programmet "Udligning og bogføring af moms" for den aktuelle momsafregningsperiode, før du ændrer denne parameterværdi.
 
-Denne funktion tilføjer regnskabsposter, der tydeliggør gevinster og tab fra valutakurser. Posterne indføres i driftskontiene for realiseret valutaregulering, når værdireguleringen foretages under momsafregning. Du kan finde flere oplysninger i afsnittet [Automatisk saldo for momsafregning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i dette emne.
+Denne funktion tilføjer regnskabsposter, der tydeliggør gevinster og tab fra valutakurser. Posterne indføres i driftskontiene for realiseret valutaregulering, når værdireguleringen foretages under momsafregning. Du kan finde flere oplysninger i afsnittet [Automatisk saldo for momsafregning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i denne artikel.
 
 > [!NOTE]
 > Under afregningen hentes der oplysninger om økonomiske dimensioner fra momskonti, som er statuskonti, og de angives i driftskontiene for valutaregulering, som er driftsopgørelseskonti. Da begrænsninger for værdien af økonomiske dimensioner varierer mellem statuskonti og driftsopgørelseskonti, kan der opstå en fejl under processen Afregn og bogfør moms. Hvis du vil undgå at skulle ændre kontostrukturer, kan du aktivere funktionen "Udfyld økonomiske dimensioner i driftskontiene for realiseret valutaregulering til momsafregning". Denne funktion tvinger afledning af økonomiske dimensioner til driftskontiene for valutaregulering. 

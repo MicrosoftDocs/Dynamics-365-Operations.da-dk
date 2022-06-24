@@ -1,6 +1,6 @@
 ---
 title: ER-funktionen DATETODATETIME
-description: Dette emne indeholder oplysninger om, hvordan funktionen DATETODATETIME til elektronisk rapportering (ER) skal anvendes.
+description: Denne artikel indeholder oplysninger om, hvordan funktionen DATETODATETIME til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e5fa64b776ed2702ac65a2f6416adcf657c748caa1156a71b4c3e99ee188880
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba80c4c3eac703ba96a4f2741fcc19bceeb24ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898485"
 ---
 # <a name="datetodatetime-er-function"></a>ER-funktionen DATETODATETIME
 
@@ -47,7 +47,7 @@ Den returnerede dato-/klokkeslætsværdi.
 
 ## <a name="example-1"></a>Eksempel 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` returnerer datoen for den aktuelle Microsoft Dynamics 365 Finance-session, 24. december 2015, som **24/12/2015 12:00:00**. I dette eksempel er **CompInfo** en datakilde til elektronisk rapportering (ER) af typen **Finance and Operations/tabel** og refererer til tabellen CompanyInfo.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` returnerer datoen for den aktuelle Microsoft Dynamics 365 Finance-session, 24. december 2015, som **24/12/2015 12:00:00**. I dette eksempel er **CompInfo** en datakilde til elektronisk rapportering (ER) af typen **Finans og drift/tabel** og refererer til tabellen CompanyInfo.
 
 ## <a name="example-2"></a>Eksempel 2
 

@@ -1,6 +1,6 @@
 ---
 title: Udarbejde en kompensationsstruktur
-description: Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler.
+description: Denne artikel forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902958"
 ---
 # <a name="develop-a-compensation-structure"></a>Udarbejde en kompensationsstruktur
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693081"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler. Dette emne bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
+Denne artikel forklarer, hvordan du kan oprette en fast kompensationsplan og tilmelde medarbejdere i planen via berettigelsesregler. Denne artikel bruger USMF-demodata og gælder for styring af kompensation og frynsegoder.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Oprette en fast løn-struktur
 

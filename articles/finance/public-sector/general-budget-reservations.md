@@ -1,6 +1,6 @@
 ---
 title: Generelle budgetreservationer
-description: Dette emne indeholder oplysninger om generelle budgetreservationer i den offentlige sektor.
+description: Denne artikel indeholder oplysninger om generelle budgetreservationer i den offentlige sektor.
 author: TaylorVH
 ms.date: 08/29/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 571970bda6d90852754bdf5e5b495014b3942fbc
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: bcdd7352f5eacf4579fc4f80d8b8377d64f0d0bf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883036"
 ---
 # <a name="general-budget-reservations"></a>Generelle budgetreservationer
 

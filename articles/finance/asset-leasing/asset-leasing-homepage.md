@@ -1,6 +1,6 @@
 ---
 title: Hjemmeside for aktivleasing
-description: Dette emne giver et overblik over Aktivleasing-dokumentationen for og links til bestemte emner.
+description: leasede aktivergiver et overblik over Aktivleasing-dokumentationen for og links til bestemte emner.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710379"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889143"
 ---
 # <a name="asset-leasing-home-page"></a>Hjemmeside for aktivleasing
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en liste over de emner i hjælp, der er tilgængelige for aktivleasing, og som indeholder hyperlinks til bestemte emner. 
+leasede aktiverindeholder en liste over de emner i hjælp, der er tilgængelige for aktivleasing, og som indeholder hyperlinks til bestemte emner. 
 
 Aktivleasing er et avanceret funktion til styring, sporing og automatisering af finanstransaktioner for leasede aktiver i Microsoft Dynamics 365 Finance. Aktivleasing overholder internationale regnskabsstandarder (IFRS 16) og US GAAP-standarder (ASC 842). Aktivleasing registrerer og behandler leasingoplysninger og opretter kladdeposteringer for leasingens levetid fra den første registrering over månedlige kladdeposteringer til værdiforringelsen og afslutningen af leasingen.
 
 Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området **Funktionsstyring** til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet i **Funktionsstyring** skal du finde og vælge den funktion, der hedder **Aktivleasing**, og derefter vælge knappen **Aktivér nu**.
 
 ## <a name="asset-leasing-topics"></a>Aktivleasing, emner
-Følgende emne kan hjælpe dig med at konfigurere og bruge aktivleasing. 
+Følgende artikel kan hjælpe dig med at konfigurere og bruge aktivleasing. 
 
- - [Aktivleasing, start her](asset-leasing-quick-start.md) - Dette emne indeholder en beskrivelse af de generelle egenskaber for aktivleasing og viser og definerer de termer, der bruges i softwaren og i dokumentationen.
+ - [Aktivleasing, start her](asset-leasing-quick-start.md) - Denne artikel indeholder en beskrivelse af de generelle egenskaber for aktivleasing og viser og definerer de termer, der bruges i softwaren og i dokumentationen.
  
  ### <a name="set-up-asset-leasing"></a>Opsætning af aktivleasing
  Denne emnegruppe kan hjælpe dig med at konfigurere aktivleasing på en måde, der er velegnet til virksomhedens forretningssituation.  
@@ -77,7 +77,7 @@ Denne emnegruppe beskriver processen til tilføjelse af leasingaftaler, oprettel
  - [Administrere leasingaftaler via leasingsimportstruktur](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Aktivleasing, rapportere
-I dette emne beskrives de rapporter, der er tilgængelige for aktivleasing. 
+Denne artikel beskriver de rapporter, der er tilgængelige for aktivleasing. 
 
  - [Aktivleasing, rapportere](asset-leasing-rprts.md)
  
@@ -90,7 +90,7 @@ Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) 
 
 ### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finans og drift - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 

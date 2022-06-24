@@ -1,6 +1,6 @@
 ---
 title: Se automatiseringsresultater for kreditorfaktura (prøveversion)
-description: Dette emne forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces.
+description: Denne artikel forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces.
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1700f4c4748dc12bf000b25c0d51bc6ed069a97b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: dd9b74d2ed34399aff455563504c296a5a25a874
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717243"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895161"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Få vist resultater af automatisering af kreditorfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces. Detaljerede oplysninger om automatiseringshistorikken opretholdes for hver af de importerede kreditorfakturaer. Afhængigt af de forretningsprocesser, du har automatiseret, viser siden **Ventende kreditorfakturaer** **Status for automatisk kvitteringsafstemning** og **Status for automatisk afsendelse til arbejdsproces**. Du kan få vist detaljerne og oprette en plan for at fokusere på de fakturaer, der ikke kunne udføres i et automatiseret trin. Derefter kan du genoptage den automatiserede proces for den importerede faktura, når du har løst problemet.
+Denne artikel forklarer, hvordan du kan få vist status for kreditorfakturaer i den automatiske send-til-arbejdsgang-proces. Detaljerede oplysninger om automatiseringshistorikken opretholdes for hver af de importerede kreditorfakturaer. Afhængigt af de forretningsprocesser, du har automatiseret, viser siden **Ventende kreditorfakturaer** **Status for automatisk kvitteringsafstemning** og **Status for automatisk afsendelse til arbejdsproces**. Du kan få vist detaljerne og oprette en plan for at fokusere på de fakturaer, der ikke kunne udføres i et automatiseret trin. Derefter kan du genoptage den automatiserede proces for den importerede faktura, når du har løst problemet.
 
 Før du kan redigere en faktura, der er sendt, skal du afbryde den automatiserede behandling midlertidigt. Hvis en faktura i den automatiske afsendelse til arbejdsgang-proces skal afbrydes midlertidigt, skal du angive indstillingen **Medtag i automatisk behandling** til **Nej** på siden **Kreditorfakturaer**. Automatisering kører derefter ikke, før **Medtag i automatisk behandling** er angivet til **Ja**. En faktura kan afbrydes midlertidigt fra yderligere automatisering, hvis den endnu ikke er i arbejdsprocessystemet, og den ikke bruges af den automatiserede proces.
 

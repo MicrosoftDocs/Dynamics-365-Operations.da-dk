@@ -1,6 +1,6 @@
 ---
 title: Vejledning i opsætning af dobbeltskrivning
-description: I dette emne beskrives de scenarier, der understøttes til installation med to skrivninger.
+description: Denne artikel beskriver de scenarier, der understøttes til installation med to skrivninger.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873143"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Vejledning i opsætning af dobbeltskrivning
 
@@ -26,7 +26,7 @@ ms.locfileid: "8061598"
 
 Du kan oprette en forbindelse med dobbeltskrivning mellem et Finans- og driftsmiljø og et Dataverse-miljø.
 
-+ Et **Finans- og driftsmiljø** leverer den underliggende platform for **Finans- og driftsapps** (f.eks Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources).
++ Et **Finans- og driftsmiljø** leverer den underliggende platform for **Finans- og driftsapps** (f.eks Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources).
 + Et **Dataverse-miljø** giver den underliggende platform for **modelbaserede apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
@@ -78,11 +78,11 @@ Udfør følgende trin for at synkronisere Dataverse-data til Finans og drift-app
 3. [Bootstrap](bootstrap-company-data.md) Dataverse-dataene ved hjælp af en ISO-virksomhedskode (International Organization for Standardization) på tre bogstaver.
 4. Kør funktionen **Første synkronisering** for de tabeller, du vil synkronisere data for.
 
-Du kan finde links til et eksempel og en alternativ fremgangsmåde i afsnittet [Eksempel](#example) senere i dette emne.
+Du kan finde links til et eksempel og en alternativ fremgangsmåde i afsnittet [Eksempel](#example) senere i denne artikel.
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>En ny Finans- og driftsapp-forekomst, som har data, og en ny forekomst af kundeengagementsapp
 
-Hvis du vil oprette en forbindelse med dobbeltskrivning mellem en ny forekomst af en Finans og drift-app, der har data, og en ny forekomst af en kundeengagementsapp, skal du følge trinnene i afsnittet [En ny Finans og drift-app-forekomst og en ny forekomst af kundeengagementsapp](#new-new) tidligere i dette emne. Når opsætningen af forbindelsen er fuldført, skal du udføre følgende trin, hvis du vil synkronisere dataene til kundeengagementappen.
+Hvis du vil oprette en forbindelse med dobbeltskrivning mellem en ny forekomst af en Finans og drift-app, der har data, og en ny forekomst af en kundeengagementsapp, skal du følge trinnene i afsnittet [En ny Finans og drift-app-forekomst og en ny forekomst af kundeengagementsapp](#new-new) tidligere i denne artikel. Når opsætningen af forbindelsen er fuldført, skal du udføre følgende trin, hvis du vil synkronisere dataene til kundeengagementappen.
 
 1. Åbn Finans og drift-appen fra siden LCS, log på, og gå derefter til **Datastyring \> Dobbeltskrivning**.
 2. Kør funktionen **Første synkronisering** for de tabeller, du vil synkronisere data for.
@@ -91,7 +91,7 @@ Du kan finde links til et eksempel og en alternativ fremgangsmåde i afsnittet [
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>En ny Finans- og driftsapp-forekomst, som har data, og en eksisterende forekomst af kundeengagementsapp
 
-Hvis du vil oprette en forbindelse med dobbeltskrivning mellem en ny forekomst af en Finans og drift-app, der har data, og en eksisterende forekomst af en kundeengagementsapp, skal du følge trinnene i afsnittet [En ny Finans og drift-app-forekomst og en eksisterende forekomst af kundeengagementsapp](#new-existing) tidligere i dette emne. Når opsætningen af forbindelsen er fuldført, skal du udføre følgende trin, hvis du vil synkronisere dataene til kundeengagementappen.
+Hvis du vil oprette en forbindelse med dobbeltskrivning mellem en ny forekomst af en Finans og drift-app, der har data, og en eksisterende forekomst af en kundeengagementsapp, skal du følge trinnene i afsnittet [En ny Finans og drift-app-forekomst og en eksisterende forekomst af kundeengagementsapp](#new-existing) tidligere i denne artikel. Når opsætningen af forbindelsen er fuldført, skal du udføre følgende trin, hvis du vil synkronisere dataene til kundeengagementappen.
 
 1. Åbn Finans og drift-appen fra siden LCS, log på, og gå derefter til **Datastyring \> Dobbeltskrivning**.
 2. Kør funktionen **Første synkronisering** for de tabeller, du vil synkronisere data for.

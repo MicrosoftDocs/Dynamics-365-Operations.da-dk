@@ -1,6 +1,6 @@
 ---
-title: Politikker for personalegodeberettigelse
-description: Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
+title: Politikker for frynsegodeberettigelse
+description: Denne artikel indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e36235e089fef70bc0d33815cd855628836f58db
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f0b373679690715ddbc518e4df79b81dbb000059
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877768"
 ---
-# <a name="benefit-eligibility-policies"></a>Politikker for personalegodeberettigelse
+# <a name="benefit-eligibility-policies"></a>Politikker for frynsegodeberettigelse
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
+Denne artikel indeholder oplysninger om politikker for frynsegodeberettigelse, som definerer, hvem der er berettiget til særlige frynsegoder.
 
 Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige for hvilke medarbejdere. I følgende tabel vises eksempler på fordele, som du kan gøre tilgængelige for bestemte medarbejdere.
 

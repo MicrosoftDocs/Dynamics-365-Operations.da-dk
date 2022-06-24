@@ -1,6 +1,6 @@
 ---
 title: Automatisk udligning og prioritering
-description: I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
+description: I denne artikel beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855514"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk udligning og prioritering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
+I denne artikel beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 
 Du har to muligheder, når du udligner betalinger med fakturaer og andre transaktioner. Du kan manuelt vælge posteringerne, der skal udlignes, eller systemet kan vælge posteringerne automatisk ved hjælp af funktionen til automatisk udligning. Du kan også tilpasse, hvordan automatiske udligninger skal behandles, ved hjælp af indstillingen **Prioriter udligning**. Disse indstillinger er en del af de udligningsparametre, der er defineret på siden **Debitorparametre**. Den måde, posteringer automatisk udlignes på, kan variere, afhængigt af den metode, der bruges til automatisk udligning. Følgende metoder er tilgængelige:
 

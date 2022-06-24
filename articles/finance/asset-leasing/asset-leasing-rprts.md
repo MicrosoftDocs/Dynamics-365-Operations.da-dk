@@ -1,6 +1,6 @@
 ---
 title: Aktivleasingrapporter
-description: I dette emne beskrives kort de rapporter, der er tilgængelige for Aktivleasing.
+description: Denne artikel beskriver kort de rapporter, der er tilgængelige for Aktivleasing.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856706"
 ---
 # <a name="asset-leasing-reports"></a>Aktivleasingrapporter
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives kort de rapporter, der er tilgængelige for Aktivleasing. De fleste rapporter viser ved at udføre disse trin eller trin, der er næsten ens, som angivet). 
+Denne artikel beskriver kort de rapporter, der er tilgængelige for Aktivleasing. De fleste rapporter viser ved at udføre disse trin eller trin, der er næsten ens, som angivet). 
 
 - Hvis du vil have vist aktivleasingrapporter vedrørende aktivleasing, skal du gå til **Aktivleasing > Forespørgsler og rapporter > Leasingrapporter** og derefter vælge en rapport, der skal vises. I forbindelse med de rapporter, der kræver en anden udvælgelsessti, medtages de trin, der skal bruges til at åbne rapporten, i beskrivelsen af rapporten. 
 - Når du vælger en rapport, der skal udskrives, åbnes en parameterside, som du kan bruge til at filtrere de oplysninger, der medtages i rapporten. Angiv filterkriterier, og vælg derefter **OK** for at generere rapporten. Den genererede rapport indeholder oplysninger, der falder inden for de angivne filtre.

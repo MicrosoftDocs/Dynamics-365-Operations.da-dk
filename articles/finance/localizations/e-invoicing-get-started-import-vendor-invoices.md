@@ -1,6 +1,6 @@
 ---
 title: Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
-description: Dette emne indeholder oplysninger om, hvordan du importerer kreditorfakturaer ved hjælp af tjenesten Elektronisk fakturering.
+description: Denne artikel indeholder oplysninger om, hvordan du importerer kreditorfakturaer ved hjælp af tjenesten Elektronisk fakturering.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865578"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983817"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med at importere kreditorfakturaer med elektronisk faktureringsservice. Den fører dig gennem konfigurationstrinnene i RCS (Regulatory Configuration Services), Dynamics 365 Finance og Dynamics 365 Supply Chain Management, som du skal følge for at modtage elektroniske kreditorfakturaer fra leverandørerne.
+Denne artikel indeholder oplysninger, der hjælper dig med at komme i gang med at importere kreditorfakturaer med elektronisk faktureringsservice. Den fører dig gennem konfigurationstrinnene i RCS (Regulatory Configuration Services), Dynamics 365 Finance og Dynamics 365 Supply Chain Management, som du skal følge for at modtage elektroniske kreditorfakturaer fra leverandørerne.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Konfigurere import af kreditorfakturaer i RCS
 Benyt følgende fremgangsmåde for at konfigurere import af kreditorfakturaer i RCS:

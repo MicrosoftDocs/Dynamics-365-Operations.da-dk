@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858518"
 ---
 # <a name="collections-management-key-concepts"></a>Nøglebegreber for opkrævningsstyring
 
@@ -34,7 +34,7 @@ Før du begynder at oprette eller arbejde med rykkere, skal du kende følgende b
 - Afskrivningsposteringer kan oprettes i ét trin.
 - Betalinger med ikke tilstrækkelige midler – NSF-betalinger (Non-sufficient Funds – USA) – kan behandles i ét trin.
 
-I dette emne beskrives de enkelte begreber.
+Denne artikel beskriver de enkelte begreber.
 
 ## <a name="customer-aging-snapshots"></a>Aldersfordelte øjebliksbilleder for debitor
 
@@ -86,7 +86,7 @@ Handlingsruden indeholder knapper, som du kan bruge til at få vist relaterede o
 
 Du kan frafalde, genindføre eller tilbageføre hele rentenotaer eller de gebyrer og den posteringsrente, som indgår i rentenotaer. Under fanen **Indsaml** i handlingsruden på listen **Alle kunder** skal du vælge **Rentenota**, **Posteringsrente** eller **Gebyr**.
 
-Disse reguleringer påvirker kun rentenotaer og de renter og gebyrer, som de omfatter. Du kan finde flere oplysninger om, hvordan du kan afskrive alle de gebyrer, som en kunde skylder, i afsnittet [Oprettelse af afskrivningstransaktioner](#creating-write-off-transactions) i dette emne.
+Disse reguleringer påvirker kun rentenotaer og de renter og gebyrer, som de omfatter. Du kan finde flere oplysninger om, hvordan du kan afskrive alle de gebyrer, som en kunde skylder, i afsnittet [Oprettelse af afskrivningstransaktioner](#creating-write-off-transactions) i denne artikel.
 
 Yderligere oplysninger finder du under Oprette en rentekode med et interval og Behandle renter.
 

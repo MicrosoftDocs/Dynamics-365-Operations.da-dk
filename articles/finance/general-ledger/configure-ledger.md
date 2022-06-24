@@ -1,6 +1,6 @@
 ---
 title: Konfigurering af Finans
-description: Dette emne indeholder oplysninger om konfiguration af Finans for hver juridisk enhed. Det indeholder oplysninger om, hvordan du vælger valutaer, regnskabskalendere, kontoplaner og de kontostrukturer, der skal bruges sammen med de enkelte juridiske enheder.
+description: Denne artikel indeholder oplysninger om konfiguration af Finans for hver juridisk enhed. Det indeholder oplysninger om, hvordan du vælger valutaer, regnskabskalendere, kontoplaner og de kontostrukturer, der skal bruges sammen med de enkelte juridiske enheder.
 author: kweekley
 ms.date: 09/24/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864333"
 ---
 # <a name="configure-ledgers"></a>Konfigurering af Finans
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om konfiguration af Finans for hver juridisk enhed. Det indeholder oplysninger om, hvordan du vælger valutaer, regnskabskalendere, kontoplaner og de kontostrukturer, der skal bruges sammen med de enkelte juridiske enheder.
+Denne artikel indeholder oplysninger om konfiguration af Finans for hver juridisk enhed. Det indeholder oplysninger om, hvordan du vælger valutaer, regnskabskalendere, kontoplaner og de kontostrukturer, der skal bruges sammen med de enkelte juridiske enheder.
 
 ## <a name="selecting-the-chart-of-accounts"></a>Valg af kontoplan
 

@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller udfasede funktioner i tidligere versioner
-description: I dette emne beskrives funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner.
+description: Denne artikel beskriver funktioner, der er blevet fjernet, eller som er planlagt til fjernelse fra Dynamics 365 for Finance and Operations og tidligere versioner.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063231"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866179"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller udfasede funktioner i tidligere versioner
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063231"
 
 
 > [!IMPORTANT]
-> Dette emne opdateres ikke længere. Hvis du vil have vist en aktuel liste over funktioner, der er fjernet eller udfaset fra Finans- og driftsapps, skal du søge efter indhold i **Fjernede eller udfasede funktioner**, der er relateret til den app, du bruger.
+> Denne artikel opdateres ikke længere. Hvis du vil have vist en aktuel liste over funktioner, der er fjernet eller udfaset fra Finans- og driftsapps, skal du søge efter indhold i **Fjernede eller udfasede funktioner**, der er relateret til den app, du bruger.
 
-I dette emne beskrives funktioner, der er blevet fjernet eller er udfaset fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
+Denne artikel beskriver funktioner, der er blevet fjernet eller er udfaset fra Dynamics 365 for Finance and Operations og tidligere versioner af produktet.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.

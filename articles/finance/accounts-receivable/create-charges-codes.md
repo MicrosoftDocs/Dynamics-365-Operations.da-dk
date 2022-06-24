@@ -1,6 +1,6 @@
 ---
 title: Oprette gebyrkoder
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere gebyrkoder for både Kreditor og Debitor.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere gebyrkoder for både Kreditor og Debitor.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735021"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866077"
 ---
 # <a name="create-charges-codes"></a>Oprette gebyrkoder
 
-Dette emne indeholder en forklaring på, hvordan du kan konfigurere gebyrkoder for både Kreditor og Debitor. Hvis din organisation kræver, at salgs- eller købsbeløb kan spores i tillæg til linjeelementer i en salgsordre eller indkøbsordre, kan du bruge gebyrkoder til dette formål. For eksempel betaler du fragt og forsikring på en indkøbsordre, og disse beløb specificeres separat på indkøbsordren. Du kan i dette tilfælde angive, om beløbene skal bogføres til udgiftskonti eller lægges til vareomkostningerne.
+Denne artikel indeholder en forklaring på, hvordan du kan konfigurere gebyrkoder for både Kreditor og Debitor. Hvis din organisation kræver, at salgs- eller købsbeløb kan spores i tillæg til linjeelementer i en salgsordre eller indkøbsordre, kan du bruge gebyrkoder til dette formål. For eksempel betaler du fragt og forsikring på en indkøbsordre, og disse beløb specificeres separat på indkøbsordren. Du kan i dette tilfælde angive, om beløbene skal bogføres til udgiftskonti eller lægges til vareomkostningerne.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Oprette gebyrkoder for Debitor
 

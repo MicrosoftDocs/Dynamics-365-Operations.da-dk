@@ -1,6 +1,6 @@
 ---
 title: Integrerede lokationer og lagersteder
-description: I dette emne beskrives integrationen af lokations- og lagerstedsdata mellem Finans og drift og Dataverse.
+description: Denne artikel beskriver integrationen af lokations- og lagerstedsdata mellem Finans og drift og Dataverse.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cd1293094f670c43eb46bc14b8bfe0f2afe43047
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852592"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrerede lokationer og lagersteder
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063206"
 
 
 
-I dette emne beskrives integrationen af lokations- og lagerstedsdata mellem Finans og drift og Dataverse. Operationelle steder og lagersteder er almindelige begreber i et Supply Chain Management-program. De bruges til at modellere forsyningskæden i dit firma.
+Denne artikel beskriver integrationen af lokations- og lagerstedsdata mellem Finans og drift og Dataverse. Operationelle steder og lagersteder er almindelige begreber i et Supply Chain Management-program. De bruges til at modellere forsyningskæden i dit firma.
 
 ## <a name="templates"></a>Skabeloner
 

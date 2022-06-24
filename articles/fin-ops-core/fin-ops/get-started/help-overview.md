@@ -1,6 +1,6 @@
 ---
 title: Hjælp-system (indeholder video)
-description: Dette emne indeholder en oversigt over Hjælp-systemet for Finans- og driftsapps.
+description: Denne artikel indeholder en oversigt over Hjælp-systemet for programmer til finans og drift.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898363"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -70,7 +70,7 @@ Du kan også abonnere på et RSS-feed via app:
 
 ### <a name="leave-us-feedback"></a>Give os feedback
 
-Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til os i bunden af siden.
+Hvis du har feedback eller spørgsmål om en artikel, kan du sende en kommentar til os i bunden af siden.
 
 1. Vælg **Feedback** for at komme til kommentarerne i bunden af siden. Vælg derefter enten **Produktfeedback** eller **Log på for at give dokumentationsfeedback**.
 
@@ -83,7 +83,7 @@ Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til
 
 ## <a name="contribute-to-the-documentation"></a>Bidrag til dokumentationen
 
-Du kan bidrage til og foretage redigeringer til dokumentationen. For at komme i gang skal du vælge knappen **Rediger** (blyantsymbol) på et emne. Følgende video viser, hvordan du kan bidrage til vores dokumentation.
+Du kan bidrage til og foretage redigeringer til dokumentationen. For at komme i gang skal du vælge knappen **Rediger** (blyantsymbol) på en artikel. Følgende video viser, hvordan du kan bidrage til vores dokumentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Få flere oplysninger i [Docs-bidragyderguide](/contribute), der udgives af det 
 
 En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden **Hjælp**. Når du først vælger på en opgaveguide, viser ruden **Hjælp** de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider.
 
-Microsoft udgav opgaveguidebiblioteker til til produktversioner via december 2017-udgaven af Dynamics 365 for Finance and Operations. Afsnittet [Adgang til opgaveguider fra ruden Hjælp](#accessing-task-guides-from-the-help-pane) i dette emne forklarer, hvordan du finder de rigtige opgaveguider til dit produkt.
+Microsoft udgav opgaveguidebiblioteker til til produktversioner via december 2017-udgaven af Dynamics 365 for Finance and Operations. Afsnittet [Adgang til opgaveguider fra ruden Hjælp](#accessing-task-guides-from-the-help-pane) i denne artikel forklarer, hvordan du finder de rigtige opgaveguider til dit produkt.
 
 ![Opgaveguidens læsevisning.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Hvis du vil have adgang til hjælp-indhold, skal du vælge knappen **Hjælp** (*
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Adgang til emner i Hjælp fra ruden Hjælp
 
-Fra ruden **Hjælp** kan du få adgang til emner, der gælder for klienten. Når du først åbner **Hjælp**-ruden, viser fanen **Hjælp** de emner, der gælder for den aktuelle side. Hvis der ikke findes emner, kan du angive nøgleord for at indsnævre søgningen. Når du vælger et emne i **Hjælp**-ruden, åbnes det under en ny fane i din browser.
+Fra ruden **Hjælp** kan du få adgang til emner, der gælder for klienten. Når du først åbner **Hjælp**-ruden, viser fanen **Hjælp** de emner, der gælder for den aktuelle side. Hvis der ikke findes emner, kan du angive nøgleord for at indsnævre søgningen. Når du vælger en artikel i **Hjælp**-ruden, åbnes det under en ny fane i din browser.
 
 > [!IMPORTANT]
 > Dette afsnit gælder ikke for Dynamics 365 Human Resources. Hjælpesystemet til Personale er automatisk tilknyttet opgaveguider til produktet. Du kan ikke oprette brugerdefinerede opgaveguider til Personale.

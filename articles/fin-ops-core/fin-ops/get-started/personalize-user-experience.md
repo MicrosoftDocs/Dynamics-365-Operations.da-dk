@@ -1,8 +1,8 @@
 ---
 title: Tilpasse brugeroplevelsen
-description: I dette emne beskrives, hvordan du kan tilpasse appen.
+description: Denne artikel beskriver, hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845436"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602983"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emne forklarer, hvordan du kan tilpasse appen, og dækker følgende emner: 
+Denne artikel forklarer, hvordan du kan tilpasse appen, og dækker følgende emner: 
 
 - **Indstillinger for hele systemet** – Disse indstillinger for tilpasning foretages på en opsætningsside og er tilgængelige for alle brugere. Der er eksempler på farvetema og tidszone. 
 - **Begrænset adgang til brugertilpasning** – På dette adgangsniveau gemmes brugerhandlinger, der er tilknyttet typisk sideforbrug, automatisk af appen, og næste gang du besøger siden, er de gendannet. Appen gemmer f.eks. bredden af kolonnerne i gitteret, hvis du justerer dem, og tilstanden udvidet eller minimeret for oversigtspaneler. 
@@ -58,7 +58,7 @@ Her er en liste over de handlinger, der falder ind under typisk sideanvendelse, 
 
 - **Gitterkolonnebredder** – Du kan justere bredden på en kolonne i et gitter ved at markere størrelseslinjen til venstre eller højre for kolonneoverskriften og derefter skubbe den mod venstre eller højre, indtil kolonnen har den ønskede bredde. Appen gemmer den bredde, du angiver for en kolonne. Derefter ændres størrelsen på kolonnen til denne bredde, næste gang du åbner denne side.
 - **Gittersidefod og kolonnetotaler** - *(Kun tilgængelig med det nye gitterkontrol aktiveret)* Du kan bestemme, om der skal vises en total nederst i en numerisk kolonne i et gitter, og om sidefoden i gitteret er synlig. Appen gemmer disse indstillinger og anvende dem, næste gang du åbner siden. Du kan finde flere oplysninger under [Gitteregenskaber](grid-capabilities.md). 
-- **Oversigtspaneler** – Nogle sider har udvidelige sektioner, der kaldes *oversigtspaneler*. Appen gemmer oplysninger om de oversigtspaneler, som du har udvidet eller skjult. Næste gang du åbner siden, bliver de samme oversigtspaneler enten vist eller skjult baseret på din seneste interaktion med siden. I nogle tilfælde kan du forbedre systemets ydeevne ved at skjule et oversigtspanel, fordi appen ikke behøver at hente oplysningerne for oversigtspaneler, før de er udvidet. Som det forklares senere i dette emne, kan du også ændre rækkefølgen af oversigtspanelerne på en side.
+- **Oversigtspaneler** – Nogle sider har udvidelige sektioner, der kaldes *oversigtspaneler*. Appen gemmer oplysninger om de oversigtspaneler, som du har udvidet eller skjult. Næste gang du åbner siden, bliver de samme oversigtspaneler enten vist eller skjult baseret på din seneste interaktion med siden. I nogle tilfælde kan du forbedre systemets ydeevne ved at skjule et oversigtspanel, fordi appen ikke behøver at hente oplysningerne for oversigtspaneler, før de er udvidet. Som det forklares senere i denne artikel, kan du også ændre rækkefølgen af oversigtspanelerne på en side.
 - **Faktabokse** – Nogle sider indeholder en **Relaterede oplysninger**-rude, der viser skrivebeskyttede oplysninger, der er relateret til sidens aktuelle emne. Hver sektion i ruden **Relaterede oplysninger** kaldes en *Faktaboks*. Du kan udvide eller skjule ruden **Relaterede oplysninger**, og du kan også udvide eller skjule individuelle faktabokse. Appen gemmer disse indstillinger. Næste gang du åbner siden,vil ruden **Relaterede oplysninger** og de enkelte faktabokse enten være udvidet eller skjult baseret på din seneste interaktion med siden. I nogle tilfælde kan du forbedre systemets ydeevne ved at skjule ruden **Relaterede oplysninger** eller en faktaboks, fordi appen ikke behøver at hente oplysningerne for faktabokse, før de er udvidet.
 - **Handlingsruder** – Øverst på de fleste sider vises en *handlingsrude*. Handlingsruden indeholder knapper for mange af de handlinger, som du kan udføre på den aktuelle side. Disse knapper er ofte organiseret under faner. Du kan *fastgøre* hele den åbne handlingsrude, eller du kan lade den være skjult som standard. Næste gang du åbner siden, vil handlingsruden enten være open eller skjult baseret på din seneste interaktion med siden. Hvis du har fastgjort den åbne handlingsrude, vises den sidste fane, du har brugt.
 - **QuickFilters** – Der vises et *QuickFilter* over mange gitre. Med QuickFilter kan du filtrere gitteret baseret på en enkelt kolonne, du vælger. Appen gemmer den kolonne, du filtrerede på. Når du næste gang åbner denne side, vil gitteret som standard filtrere den samme kolonne. Du kan stadig vælge at filtrere gitteret på en anden kolonne.
@@ -173,14 +173,14 @@ Fra og med version 10.0.26 giver funktionen **Tillad, at brugerne vælger og æn
 
 ### <a name="personalizing-your-dashboard"></a>Tilpasning af dit dashboard
 
-Dashboardet er ofte den første side, du ser, når du åbner appen. Den kan tilpasses som enhver anden side i systemet ved hjælp af de samme mekanismer, der beskrives tidligere i dette emne. 
+Dashboardet er ofte den første side, du ser, når du åbner appen. Den kan tilpasses som enhver anden side i systemet ved hjælp af de samme mekanismer, der beskrives tidligere i denne artikel. 
 
 > [!WARNING]
 > Når du i øjeblikket skjuler indhold på dashboardet, er det vigtigt, at du tilpasser et felt direkte og ikke om afstanden omkring det. Hvis du skjuler gruppen omkring et felt, kan der være uventede resultater, hvis der tilføjes flere felter senere, eller hvis systemet skifter til et andet sprog.
 
 En entydig tilpasningsfunktion, der er tilgængelig på dashboardet, er muligheden for at tilføje felter. 
 
-- Hvis funktionen **Helsides apps** er deaktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj et arbejdsområde**. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Tilføje felter, lister og links i et arbejdsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i dette emne.
+- Hvis funktionen **Helsides apps** er deaktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj et arbejdsområde**. Der oprettes et nyt felt i arbejdsområdet i bunden af dashboardet. Du kan omdøbe dette nye arbejdsområdefelt, som du vil. Du kan også føje lister, felter og links til arbejdsområdet som beskrevet i sektionen [Tilføje felter, lister og links i et arbejdsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i denne artikel.
 - Hvis funktionen **Helsides apps** er aktiveret, tilføjer du et nyt felt ved at højreklikke på et element på dashboardet og derefter vælge **Tilføj en app**. Vælg i dialogboksen, om du vil tilføje et felt i et nyt arbejdsområde eller i et felt med indhold fra Power Apps eller et websted. Følg derefter trinnene for at konfigurere den valgte indstilling. Der oprettes et nyt felt i bunden af dashboardet. Du kan finde flere oplysninger om, hvordan du kan tilføje, redigere, slette og dele disse integrerede apps, i [Integrere lærredapps fra og Power Apps](embed-power-apps.md) og [Integrere tredjepartsapps](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Deling af tilpasninger
@@ -236,7 +236,7 @@ En anden metode til at dele tilpasninger foregår via eksport og import. Individ
 
 #### <a name="export"></a>Eksport
 
-Generelt kan du eksportere en af dine egne visninger eller tilpasninger ved at åbne den relevante side, åbne værktøjslinjen **Tilpasning** og derefter vælge **Eksportér**. Du kan finde flere oplysninger om værktøjslinjen i sektionen [Værktøjslinjen Tilpasning](#personalization-toolbar) tidligere i dette emne. Hvis [gemte visninger](saved-views.md) er aktiveret, kan du også gå til **Indstillinger \> Brugerindstillinger \> Tilpasning** for at få vist en liste over alle dine tilpasninger i systemet. Derfra kan du vælge de visninger eller tilpasninger, der skal eksporteres, og derefter vælge **Eksportér**.
+Generelt kan du eksportere en af dine egne visninger eller tilpasninger ved at åbne den relevante side, åbne værktøjslinjen **Tilpasning** og derefter vælge **Eksportér**. Du kan finde flere oplysninger om værktøjslinjen i sektionen [Værktøjslinjen Tilpasning](#personalization-toolbar) tidligere i denne artikel. Hvis [gemte visninger](saved-views.md) er aktiveret, kan du også gå til **Indstillinger \> Brugerindstillinger \> Tilpasning** for at få vist en liste over alle dine tilpasninger i systemet. Derfra kan du vælge de visninger eller tilpasninger, der skal eksporteres, og derefter vælge **Eksportér**.
 
 Administratorer kan desuden eksportere andre brugeres tilpasninger med denne fremgangsmåde.
 
@@ -277,7 +277,7 @@ Hvis gemte visninger ikke er aktiveret, skal du benytte følgende fremgangsmåde
 
 Siden **Tilpasning** er den centrale hub til administration af personlige indstillinger på et organisationsniveau. Indholdet og egenskaberne på denne side afhænger af, om funktionen **Gemte visninger** er blevet aktiveret.
 
-For kunder, der har aktiveret funktionen **Gemte visninger** skal du se afsnittet "Administrere visninger globalt" i emnet [Gemte visninger](saved-views.md).
+For kunder, der har aktiveret funktionen **Gemte visninger** skal du se afsnittet "Administrere visninger globalt" i artiklen [Gemte visninger](saved-views.md).
 
 For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-views.md), indeholder denne side fire faner:
 
@@ -285,6 +285,9 @@ For kunder, der endnu ikke har aktiveret funktionen [Gemte visninger](saved-view
 - **Slet** – Du kan slette alle tilpasninger for en side eller et arbejdsområde for en eller flere brugere. Vælg først en side eller et arbejdsområde for at se en liste over de brugere, der har tilpasset siden eller området. Vælg de brugere, der skal have ryddet tilpasninger for siden eller arbejdsområdet, og vælg derefter **Ryd**. Alle tilpasninger, som de valgte brugere har anvendt på den valgte side eller det valgte arbejdsområde, slettes. Denne handling kan ikke fortrydes. Hvis der er gemt en tilpasning for siden eller arbejdsområdet, kan denne tilpasning dog importeres igen.
 - **Brugere** – Vælg en bruger for at få vist listen over sider, som brugeren har tilpasset. Du kan derefter aktivere eller deaktivere den valgte brugers mulighed for at bruge personlige tilpasninger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller rydde en tilpasning for brugeren. Derudover kan du nulstille billedforklaringer til funktioner for brugeren. Hvis brugeren i så fald tidligere har lukket pop op-vinduer, der introducerede nye funktioner, vises de igen, næste gang brugeren støder på disse funktioner.
 - **System** - Du kan midlertidigt deaktivere tilpasninger for alle brugere i systemet. I dette tilfælde slettes alle tilpasninger for alle brugere, og alle sider nulstilles til deres standardtilstand. Hvis du senere aktiverer tilpasninger igen, anvendes alle tilpasninger igen. Du kan også permanent slette alle tilpasninger for alle brugere i systemet. Det er ikke muligt at gendanne tilpasninger, som er blevet slettet. Før du udfører denne opgave, skal du derfor sørge for at eksportere de brugertilpasninger, som du eventuelt vil bruge senere.
+
+### <a name="service-updates-and-personalization"></a>Serviceopdateringer og personlig tilpasning
+Det er ikke nødvendigt at rydde eller nulstille personlig tilpasning af data, når de flyttes til en ny version af produktet. Tilpasninger og gemte visningsdata fortsætter med at fungere på tværs af opdateringer. Undtagelser til dette kan omfatte ændringer af selve formularen, der gør en personlig tilpasning ugyldig (f.eks. et fjernet kontrolelement) eller ændringer i formularens basisforespørgsel, der ændrer datakildeundertræet, så det ikke længere svarer til det datakildeundertræ, der er knyttet til visningsforespørgslen.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasning af lagerdimensioner
 

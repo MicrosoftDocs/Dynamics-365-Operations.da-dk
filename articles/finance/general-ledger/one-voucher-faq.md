@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål til et bilag
-description: Dette emne besvar ofte stillede spørgsmål om arbejdsgangssystemet i funktionen Ét bilag. Ét bilag til økonomikladder (finanskladde, anlægsaktivkladde, kreditorbetalingskladde osv.) giver dig mulighed for at angive flere reskontrotransaktioner i forbindelse med et enkelt bilag.
+description: Denne artikel besvarer ofte stillede spørgsmål om arbejdsgangssystemet i funktionen Ét bilag. Ét bilag til økonomikladder (finanskladde, anlægsaktivkladde, kreditorbetalingskladde osv.) giver dig mulighed for at angive flere reskontrotransaktioner i forbindelse med et enkelt bilag.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859789"
 ---
 # <a name="one-voucher-faq"></a>Ofte stillede spørgsmål til et bilag
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne besvar ofte stillede spørgsmål om arbejdsgangssystemet i funktionen Ét bilag. Et bilag til finanskladder giver dig mulighed for at angive flere transaktioner for reskontro inden for rammerne af et enkelt bilag. De kladder, der kan medtages i bilaget, kan bl.a. være finanskladder, anlægsaktivkladder og kreditorbetalingskladder.
+Denne artikel besvarer ofte stillede spørgsmål om arbejdsgangssystemet i funktionen Ét bilag. Et bilag til finanskladder giver dig mulighed for at angive flere transaktioner for reskontro inden for rammerne af et enkelt bilag. De kladder, der kan medtages i bilaget, kan bl.a. være finanskladder, anlægsaktivkladder og kreditorbetalingskladder.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Hvornår frarådes funktionen Ét bilag?
 

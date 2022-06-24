@@ -1,6 +1,6 @@
 ---
 title: Startside for budgetplanlægning
-description: Dette emne indeholder en oversigt over budgetplanlægsningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner i Microsoft Dynamics 365 Finance.
+description: Denne artikel indeholder en oversigt over budgetplanlægningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner i Microsoft Dynamics 365 Finance.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e5ef283991cb7ccb990d7d687ab3964040d03ba
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712559"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864391"
 ---
 # <a name="budgeting-home-page"></a>Startside for budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over budgetplanlægningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner. 
+Denne artikel indeholder en oversigt over budgetplanlægningsfunktionens komponenter, budgetplanlægningsværktøjer og funktioner. 
 
 ## <a name="components-of-budgeting-functionality"></a>Komponenter til budgetplanlægningsfunktionalitet
 
@@ -38,7 +38,7 @@ Ressourceplanlægningens cyklus for en virksomhed består typisk af planlægning
 
 Processerne for både langsigtet strategisk planlægning og årlig budgetplanlægning understøttes via et budgetplandokument. Budgetplansdokumenter er tæt integreret med Microsoft Excel. Brugerne kan konfigurere ubegrænsede monetære og kvantitative scenarier og definere et organisationshierarki for budgetplanlægning for at understøtte budgetplanlægningsmetoder oppefra og ned og nedefra og op. Når et budget er oprettet og godkendt i ansøgningen, kan du konvertere budgetplanen til en budgetregisterpost. Budgetregisterposter indeholder værktøjer til vedligeholdelse af budgettet og til at opbevare beløb, der kan spores gennem budgetkoder. Med budgetregisterposter kan du revidere oprindelige budgetter, foretage overførsler og overføre budgetbeløb fra det foregående år. Baseret på det budget, der er etableret, kan en virksomhed aktivere budgetstyring. Kontrolniveauet afhænger af organisationskulturen og organisationens forfaldsniveau. Organisationer, der har et lavt forfaldsniveau, kan lade budgettet være "som det er" og måske være mere reaktive end proaktive, hvis et budget ikke lever op til forventningerne. Andre organisationer kan aktivere politikker for budgetstyring, der forhindrer brugere i at købe noget, hvis der ikke er tilgængelige midler i budgettet.
 
-Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor medarbejderne er uddannet i organisatoriske mål, og følge disse mål via politikker som "Overvej et onlinemøde i stedet for en rejse". Ansøgningen omfatter en budgetstyringsstruktur, der gør det muligt for virksomhedens ledelse at vælge enten stringent kontrol (der forhindrer posteringer, der vil overskride budgettet) eller blød kontrol (hvor brugere advares om, at de vil overskride de disponible budgetmidler, men selv kan bestemme, hvordan de vil fortsætte). Endelig kan du bruge rullende prognoser. En rullende prognose er en almindelig sammenligning af budget med faktiske oplysninger, der bruges til at definere, hvor godt virksomheden arbejder mod budgettet. En rullende prognose bruges også til at identificere tendenser. I Finance and Operations understøttes rullende prognose via et budgetplansdokument som første planlægningsaktiviteter. Rullende prognoser kan udføres parallelt med planlægning af den kommende budgetcyklus.
+Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor medarbejderne er uddannet i organisatoriske mål, og følge disse mål via politikker som "Overvej et onlinemøde i stedet for en rejse". Ansøgningen omfatter en budgetstyringsstruktur, der gør det muligt for virksomhedens ledelse at vælge enten stringent kontrol (der forhindrer posteringer, der vil overskride budgettet) eller blød kontrol (hvor brugere advares om, at de vil overskride de disponible budgetmidler, men selv kan bestemme, hvordan de vil fortsætte). Endelig kan du bruge rullende prognoser. En rullende prognose er en almindelig sammenligning af budget med faktiske oplysninger, der bruges til at definere, hvor godt virksomheden arbejder mod budgettet. En rullende prognose bruges også til at identificere tendenser. I Finans og drift understøttes rullende prognose via et budgetplansdokument som første planlægningsaktiviteter. Rullende prognoser kan udføres parallelt med planlægning af den kommende budgetcyklus.
 
 -   [Budgetplanlægningsoversigt](basic-budgeting-overview-configuration.md)
 -   [Budgetstyringsoversigt](budget-control-overview-configuration.md)

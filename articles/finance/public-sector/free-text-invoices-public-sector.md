@@ -1,6 +1,6 @@
 ---
 title: Fritekstfakturaer i den offentlige sektor
-description: I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
+description: Denne artikel beskriver funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a3d644328bc7156bfecfde714b2ce502e448853
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f17633a355dc46b64b49d710961be89ea4e78dbe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862880"
 ---
 # <a name="free-text-invoices-in-the-public-sector"></a>Fritekstfakturaer i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
+Denne artikel beskriver funktionen til fritekstfakturaer, som er tilgængelig for enheder i den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
 
 ## <a name="do-i-have-to-select-a-billing-classification-for-every-free-text-invoice"></a>Skal jeg vælge en faktureringsklassifikation for hver fritekstfaktura?
 

@@ -1,6 +1,6 @@
 ---
 title: Afskrivning af anlægsaktiv
-description: Dette emne indeholder en oversigt over afskrivning af anlægsaktiver.
+description: Denne artikel indeholder en oversigt over afskrivning af anlægsaktiver.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b4fedee481b4066c81671cf1fca3781c8c75aaeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874517"
 ---
 # <a name="fixed-asset-depreciation"></a>Afskrivning af anlægsaktiv
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emne indeholder en oversigt over afskrivning af anlægsaktiver.
+Denne artikel indeholder en oversigt over afskrivning af anlægsaktiver.
 
 Afskrivning er en periodisk transaktion, der normalt reducerer anlægsaktivets værdi i balancen og faktureres som en udgift på driftskontoen (resultatopgørelsen). Derfor bruges en hovedkonto normalt til kreditering af den periodiske afskrivning i balancen. En modkonto er en konto på driftskontodelen af kontoplanen.
 

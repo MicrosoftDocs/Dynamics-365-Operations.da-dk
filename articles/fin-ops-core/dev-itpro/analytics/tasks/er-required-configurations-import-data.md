@@ -1,6 +1,6 @@
 ---
 title: Oprette ER-krævede konfigurationer til at importere data fra en ekstern fil
-description: Dette emne beskriver, hvordan du kan designe konfigurationer af elektronisk rapportering for at importere data til Microsoft Dynamics 365 Finance-appen fra en ekstern fil.
+description: Denne artikel beskriver, hvordan du kan designe konfigurationer af elektronisk rapportering for at importere data til Microsoft Dynamics 365 Finance-appen fra en ekstern fil.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720850"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865887"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Oprette ER-krævede konfigurationer til at importere data fra en ekstern fil
 
@@ -241,7 +241,7 @@ Udfør denne formattilknytning af testformål. Brug filen 1099entries.xml, som d
 19. Luk siden.
 20. Klik på Rediger.
 
-    Hvis du installerede hotfix "KB 4012871 Understøttelse af TYSK modeltilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
+    Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK modeltilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
 
 21. Vælg Ja i feltet Standard for modeltilknytning.
 22. Vælg "1099-betalingsmodel" i træet.

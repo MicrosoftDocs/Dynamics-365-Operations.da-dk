@@ -1,6 +1,6 @@
 ---
 title: Bogføre en projektfaktura med et indbetalingskort
-description: Dette emne forklarer, hvordan du kan bogføre en projektfaktura med et indbetalingskort i det angivne format.
+description: Denne artikel forklarer, hvordan du kan bogføre en projektfaktura med et indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0bfb41978fab25c24f681d1f0e8c849b7be5499e
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 644e72962f46e9990b6d336b67bb5e6259b86be7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871069"
 ---
 # <a name="post-a-project-invoice-with-a-payment-slip"></a>Bogføre en projektfaktura med et indbetalingskort
 

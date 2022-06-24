@@ -1,6 +1,6 @@
 ---
 title: Beregne leveringsdatoen for en linje baseret på gennemløbstiden
-description: Dette emne indeholder en beskrivelse af, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalender med arbejdsdage.
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalender med arbejdsdage.
 author: velofog
 ms.date: 09/03/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: public sector
 ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f78909f926b8b7f2996a1cd137c3039bca14d579e829df9646fd1150b076f328
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cfd110b69006b182e3f2a55581e9381a89b587e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893920"
 ---
 # <a name="calculate-the-delivery-date-for-a-line-based-on-the-lead-time"></a>Beregne leveringsdatoen for en linje baseret på gennemløbstiden
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalendere for arbejdsdage, som de er angivet på fanen **Tilbud** på siden **Svar på tilbudsanmodning**. Leverandører kan angive en leveringstid for hver linje. Når en indkøbsordre er bekræftet, beregnes en leveringsdato for en linje fra bekræftelsesdatoen, baseret på leveringstiden og kalenderen med arbejdsdage. Hvis der ikke er angivet en leveringstid, bruges bekræftelsesdatoen som leveringsdato, medmindre leveringsdatoen automatisk beregnes.
+Denne artikel beskriver, hvordan du kan beregne en leveringsdato for en linje på baggrund af leverandørens gennemløbstid og din organisations kalendere for arbejdsdage, som de er angivet på fanen **Tilbud** på siden **Svar på tilbudsanmodning**. Leverandører kan angive en leveringstid for hver linje. Når en indkøbsordre er bekræftet, beregnes en leveringsdato for en linje fra bekræftelsesdatoen, baseret på leveringstiden og kalenderen med arbejdsdage. Hvis der ikke er angivet en leveringstid, bruges bekræftelsesdatoen som leveringsdato, medmindre leveringsdatoen automatisk beregnes.
 
 Leveringstiden for en linje er tilgængelig på følgende sider: **Svar på tilbudsanmodning**, **Indkøbsrekvisitioner**, **Købsaftaler** og **Indkøbsordre**.
 

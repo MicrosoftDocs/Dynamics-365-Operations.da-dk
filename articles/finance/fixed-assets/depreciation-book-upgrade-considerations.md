@@ -1,6 +1,6 @@
 ---
 title: Oversigt over opgradering af afskrivningsmodel
-description: Dette emne beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller.
+description: Denne artikel beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713636"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855485"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversigt over opgradering af afskrivningsmodel
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller. Funktionaliteten af værdimodellen og afskrivningsmodellen er blevet flettet ind i et enkelt bogkoncept. Modelfunktionen giver dig mulighed for at bruge et enkelt sæt sider, forespørgsler og rapporter til alle organisationens anlægsaktivprocesser. Dette emne indeholder nogle af de ting, du skal overveje, før du opgraderer. 
+Denne artikel beskriver den aktuelle bogfunktionalitet i Anlægsaktiver. Denne funktionalitet er baseret på den værdimodelfunktionalitet, der fandtes i tidligere versioner, men indeholder også alle de funktioner, der tidligere kun blev angivet i afskrivningsmodeller. Funktionaliteten af værdimodellen og afskrivningsmodellen er blevet flettet ind i et enkelt bogkoncept. Modelfunktionen giver dig mulighed for at bruge et enkelt sæt sider, forespørgsler og rapporter til alle organisationens anlægsaktivprocesser. Denne artikel indeholder nogle af de ting, du skal overveje, før du opgraderer. 
 
 Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende transaktioner til den nye modelstruktur. Værdimodeller forbliver, som de er i øjeblikket, som en model, der bogføres i finans. Afskrivningsmodeller flyttes til en model, der har Bogfør i finans-indstillingen angivet til Ingen. Navne på afskrivningskladder flyttes til et finanskladdenavn med posteringslag angivet til Ingen. Posteringer i afskrivningsmodellen skal flyttes til anlægsaktivposter.
 

@@ -1,6 +1,6 @@
 ---
 title: Refundere kunder
-description: I dette emne forklares, hvordan du kan oprette refusionsposteringer for en gruppe af kunder.
+description: I denne artikel beskrives det, hvordan du kan oprette refusionsposteringer for en gruppe af debitorer.
 author: JodiChristiansen
 ms.date: 09/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47d464dd23d70e1a340211eb83828550d807a543
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 892b089edb16ba560f588c086d37faafdf16958d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891776"
 ---
 # <a name="reimburse-customers"></a>Refundere kunder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan oprette refusionsposteringer for en gruppe af kunder. Hvis en kunde har en kreditsaldo, kan du refundere kunden beløbet svarende til saldoen. 
+I denne artikel beskrives det, hvordan du kan oprette refusionsposteringer for en gruppe af debitorer. Hvis en kunde har en kreditsaldo, kan du refundere kunden beløbet svarende til saldoen. 
 
 Følgende tabel viser de forudsætninger, der skal være på plads, før du starter.
 

@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om fletning af Dynamics 365 Human Resources-infrastruktur
-description: I dette emne besvares ofte stillede spørgsmål om fletningen af infrastruktur for Microsoft Dynamics 365 Human Resources og Finans- og driftsapps.
+description: Denne artikel besvarer ofte stillede spørgsmål om fletningen af infrastruktur for Microsoft Dynamics 365 Human Resources og programmer til finans og drift.
 author: twheeloc
 ms.date: 08/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 8c005f677624336b4194bebea6d69667182128b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880474"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Ofte stillede spørgsmål om fletning af Dynamics 365 Human Resources-infrastruktur
 
@@ -27,7 +27,7 @@ ms.locfileid: "8809607"
 
 
 
-I dette emne besvares ofte stillede spørgsmål om fletningen af infrastruktur for Microsoft Dynamics 365 Human Resources og Finans- og driftsapps.
+Denne artikel besvarer ofte stillede spørgsmål om fletningen af infrastruktur for Microsoft Dynamics 365 Human Resources og programmer til finans og drift.
 
 ## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Hvad er fletning af Dynamics 365 Human Resources-infrastruktur?
 

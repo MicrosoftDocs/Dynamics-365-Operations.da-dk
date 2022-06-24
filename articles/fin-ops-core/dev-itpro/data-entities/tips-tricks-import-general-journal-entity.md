@@ -1,6 +1,6 @@
 ---
 title: Importere bilag ved hjælp af enheden Finanskladde
-description: Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
+description: Denne artikel indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065064"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867605"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importere bilag ved hjælp af enheden Finanskladde
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065064"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
+Denne artikel indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
 
 Du kan bruge enheden Finanskladde til at importere bilag, der har kontotypen eller modkontotypen **Finans**, **Debitor**, **Kreditor** eller **Bank**. Bilaget kan angives som én linje, der bruger både feltet **Konto** og feltet **Modkonto**, eller som et flerlinjet bilag, hvor kun feltet **Konto** bruges (og **Modkonto** er tomt på hver linje). Enheden Finanskladde understøtter ikke alle kontotyper. I stedet findes andre enheder for scenarier, hvor der kræves forskellige kombinationer af kontotyper. Hvis du f.eks. vil importere en projekttransaktion, skal du bruge enheden Projektudgiftskladde. De enkelte enheder er udviklet til at understøtte specifikke scenarier. Det betyder, at yderligere felter kan være tilgængelige i enheder for de pågældende scenarier. Yderligere felter er dog muligvis ikke tilgængelige i enheder for forskellige scenarier.
 

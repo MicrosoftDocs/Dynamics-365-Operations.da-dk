@@ -1,6 +1,6 @@
 ---
-title: Konfigurere politikker for kreditorfakturaer
-description: I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer.
+title: Konfigurer politikker for kreditorfakturaer
+description: Denne artikel forklarer, hvordan du konfigurerer politikker for kreditorfakturaer.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904724"
 ---
-# <a name="set-up-vendor-invoice-policies"></a>Konfigurere politikker for kreditorfakturaer
+# <a name="set-up-vendor-invoice-policies"></a>Konfigurer politikker for kreditorfakturaer
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne forklares, hvordan du konfigurerer politikker for kreditorfakturaer. Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden **Kreditorfaktura**, og når du åbner siden **Overtrædelser af politik** til kreditorfaktura. Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen. 
+Denne artikel forklarer, hvordan du konfigurerer politikker for kreditorfakturaer. Du kan køre kreditorfakturapolitikker, når du bogfører en kreditorfaktura ved hjælp af siden **Kreditorfaktura**, og når du åbner siden **Overtrædelser af politik** til kreditorfaktura. Du kan også konfigurere arbejdsgangen for kreditorfakturaer til at køre politikker for kreditorfakturaer, hver gang du sender en faktura videre i arbejdsgangen. 
 
 - Kreditorfakturapolitikker gælder ikke for fakturaer, der er oprettet i indgangsbogen eller i fakturajournalen.  
 - Kreditorfakturapolitikker benyttes ikke til validering af fakturasammenholdelse, men er i stedet konfigureret på siden **Kreditorparametre**.  

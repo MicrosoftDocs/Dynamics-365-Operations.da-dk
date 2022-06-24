@@ -1,6 +1,6 @@
 ---
 title: Oversigt over økonomiske konsolideringer og valutaomregning
-description: I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans.
+description: Denne artikel beskriver økonomisk konsolideringer og valutaomregning i Finans.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846851"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne gennemgår den fremgangsmåde, som både Microsoft Dynamics 365 Finance og Økonomirapportering bruger til konsolideringer. Emnet indeholder scenarier, der vedrører rapportering i flere regnskaber, aggregering, eliminering og minoritetsinteresse. Det forklarer også, hvordan du håndterer særlige situationer, f.eks. scenarier, hvor juridiske enheder har forskellige regnskabsperioder eller forskellige kontoplaner.
+Denne artikel gennemgår den fremgangsmåde, som både Microsoft Dynamics 365 Finance og Økonomirapportering bruger til konsolideringer. Emnet indeholder scenarier, der vedrører rapportering i flere regnskaber, aggregering, eliminering og minoritetsinteresse. Det forklarer også, hvordan du håndterer særlige situationer, f.eks. scenarier, hvor juridiske enheder har forskellige regnskabsperioder eller forskellige kontoplaner.
 
-Dette emne er skrevet for brugere og funktionelle konsulenter, og det antages, at læserne har et generelt kendskab til Finance og Økonomirapportering. Grundlæggende opsætning er ikke omfattet.
+Denne artikel er skrevet for brugere og funktionelle konsulenter, og det antages, at læserne har et generelt kendskab til Finance og Økonomirapportering. Grundlæggende opsætning er ikke omfattet.
 
 > [!NOTE]
-> Betegnelsen *juridisk enhed* bruges i Finance, og udtrykket *regnskab* bruges i Økonomirapportering. Begge disse udtryk anvendes i dette emne. Men i dette emne har de samme betydning.
+> Betegnelsen *juridisk enhed* bruges i Finance, og udtrykket *regnskab* bruges i Økonomirapportering. Begge disse udtryk anvendes i denne artikel. Men i denne artikel har de samme betydning.
 
 ## <a name="audience"></a>Målgruppe
-Dette emne er beregnet til brugere af økonomi- og regnskabsbrugere og programkonsulenter, som vil bruge Finans og rapportering og Økonomirapportering til at konsolidere flere regnskaber og data med flere valutaer.
+Denne artikel er beregnet til brugere af økonomi- og regnskabsbrugere og programkonsulenter, som vil bruge Finans og rapportering og Økonomirapportering til at konsolidere flere regnskaber og data med flere valutaer.
 
 ## <a name="approach"></a>Fremgangsmåde
 Finance bruger en særskilt juridisk enhed til at behandle en konsolidering. Det anvender en enkelt forekomst til konsolidering, men giver mulighed for at hente data fra andre kilder. Konsolideringsprocessen skal køres, hver gang der foretages ændringer i kildens juridiske enheder.

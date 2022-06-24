@@ -1,6 +1,6 @@
 ---
 title: Økonomiske dimensioner
-description: I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet.
+description: Denne artikel beskriver de forskellige typer økonomiske dimensioner, og hvordan de er oprettet.
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1360139a06909c1df922570f6e577d1d310b1c48
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849983"
 ---
 # <a name="financial-dimensions"></a>Økonomiske dimensioner
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet.
+Denne artikel beskriver de forskellige typer økonomiske dimensioner, og hvordan de er oprettet.
 
 Du kan bruge siden **Økonomiske dimensioner** til at oprette økonomiske dimensioner, som du kan bruge som kontosegmenter i kontoplaner. Der er to typer økonomiske dimensioner: brugerdefinerede dimensioner og enhedsunderstøttede dimensioner. Brugerdefinerede dimensioner deles på tværs af juridiske enheder, og værdierne angives og vedligeholdes af brugerne. For enhedsunderstøttede dimensioner defineres værdierne andre steder i systemet, f.eks. i enheden Debitorer eller Butikker. Nogle enhedsunderstøttede dimensioner deles på tværs af juridiske enheder, mens andre enhedsunderstøttede dimensioner er firmaspecifikke.
 

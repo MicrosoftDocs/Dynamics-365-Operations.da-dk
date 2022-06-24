@@ -1,6 +1,6 @@
 ---
 title: Parametre for tilbagevendende kontraktfakturering
-description: Dette emne indeholder en forklaring på, hvordan du kan konfigurere standardværdierne for faktureringsplaner, der oprettes ved fakturering af tilbagevendende kontrakter. Det forklarer også, hvordan du opretter faktureringsplangrupper.
+description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere standardværdierne for faktureringsplaner, der oprettes ved fakturering af tilbagevendende kontrakter. Det forklarer også, hvordan du opretter faktureringsplangrupper.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903328"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametre for tilbagevendende kontraktfakturering
 
@@ -27,7 +27,7 @@ Brug siden **Faktureringsparametre for tilbagevendende kontrakter** til at konfi
 
 ## <a name="general-tab"></a>Fanen Generelt
 
-1. Vælg en faktureringsplangruppe i feltet **Faktureringsplangruppe** under fanen **Generelt** på siden **Faktureringsparametre for tilbagevendende kontrakter**. Du kan finde flere oplysninger om opsætning af faktureringsplangrupper i afsnittet [Fakturere plangrupper](#set-up-billing-schedule-groups) senere i dette emne.
+1. Vælg en faktureringsplangruppe i feltet **Faktureringsplangruppe** under fanen **Generelt** på siden **Faktureringsparametre for tilbagevendende kontrakter**. Du kan finde flere oplysninger om opsætning af faktureringsplangrupper i afsnittet [Fakturere plangrupper](#set-up-billing-schedule-groups) senere i denne artikel.
 2. Vælg i feltet **Fratrædelsestype**, hvordan den endelige faktura beregnes, når en faktureringsplan afsluttes:
 
     - **Juster plan** – Afskære faktureringsplanen på fratrædelsesdatoen, rediger status for planen til **Sidste fakturering**, og juster den tilknyttede ventende plan ved at tilbagefør det beløb, der ikke længere skal genkendes. Hvis faktureringsstartdatoen ligger efter ophørsdatoen, fjernes de resterende faktureringsperioder.

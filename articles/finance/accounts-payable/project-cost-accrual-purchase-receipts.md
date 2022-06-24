@@ -1,6 +1,6 @@
 ---
-title: Periodisering af projektomkostninger på købsleverancer
-description: Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 Finance.
+title: Periodisering af købsleverancer i projektomkostninger
+description: Denne artikel beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e435002bca8fd4deb58c16c50db55237a3e9053
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a138fd41269fad2e9ac489664ca81c3ee12f830d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856851"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering af købsleverancer i projektomkostninger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 Finance. 
+Denne artikel beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 Finance. 
 
 Fakturaer for et projekt ankommer ofte senere end varerne og tjenesterne er leveret, og det kan have betydelig indvirkning på projektets nøgletal (KPI'er). Det er vigtigt at være i stand til at spore disse transaktioner i både finansielle rapporter og projektrapporter.
 

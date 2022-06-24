@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Human Resources fra den 9. august 2021
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 9. august 2021.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Human Resources for 9. august 2021.
 author: marcelbf
 ms.date: 08/09/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c43ed654a07834ce31a1425762f29c53aa2a020
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ad1397084dd3eb210065fe6d8c20c5b8253cd206
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882860"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-9-2021"></a>Nyheder eller ændringer i Dynamics 365 Human Resources fra den 9. august 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emne beskrives funktioner, som er nye eller ændrede, eller som kommer snart i Microsoft Dynamics 365 Human Resources.
+I denne artikel beskrives funktioner, der enten er nye, ændrede eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Du kan finde flere oplysninger om vores opdateringsproces og tidsplan i [Opdateringsproces](hr-admin-setup-update-process.md).
 
@@ -40,9 +40,9 @@ Denne udgivelse indeholder følgende nye funktioner og fejlrettelser. Ændringer
 Følgende fejlrettelser er inkluderet i denne version.
 
 > [!NOTE]
-> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis dette emne for at medtage rettelser i buildet, som er foretaget, efter dette emne blev udgivet.
+> Vores målsætning er at få disse oplysninger ud til brugerne så hurtigt som muligt. Vi opdaterer muligvis denne artikel til at omfatte fejlrettelser, som blev udført i buildet, efter at denne artikel blev udgivet.
 
-| Fejlnummer | Emne | Betegnelse |
+| Fejlnummer | Problem | Beskrivende tekst |
 | --- | --- | --- |
 | 558385 | Når indstillingen **Vælg automatisk udvalgte modtagere** er aktiveret for standardudpegede, vælges den standardudpegede ikke. | Dette problem er nu løst. Der vælges automatisk flere standardudpegede i berettigede planer, når indstillingen **Vælg automatisk udpegede modtagere** på siden **Delte Human Resources-parametre** er aktiveret. |
 | 589617 | På siden **Fridag** er saldi for **Tilgængelig for køb** og **Tilgængelig for salg** tomme, når adgangen er begrænset til et bestemt firma. | Dette problem er nu løst. På siden **Fridag** vises de rette saldi for **Tilgængelig for køb** og **Tilgængelig for salg**, når brugeren er begrænset til et bestemt firma. |

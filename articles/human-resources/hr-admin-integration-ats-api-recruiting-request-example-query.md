@@ -1,6 +1,6 @@
 ---
 title: Eksempelforespørgsel til anmodning om rekruttering
-description: Dette emne indeholder en eksempelforespørgsel til rekrutteringsforespørgselsenheden i Dynamics 365 Human Resources.
+description: Denne artikel indeholder en eksempelforespørgsel til rekrutteringsanmodningsenheden i Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1cc7389403f0362cc005be1df320e63824a3ec3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 55dae805cf9bd1fc641cf6d0e8eb2cc4b6af5d00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858208"
 ---
 # <a name="example-query-for-recruiting-request"></a>Eksempelforespørgsel til anmodning om rekruttering
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066237"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne indeholder en eksempelforespørgsel til rekrutteringsforespørgselsenheden i Dynamics 365 Human Resources.
+Denne artikel indeholder en eksempelforespørgsel til rekrutteringsanmodningsenheden i Dynamics 365 Human Resources.
 
 Følgende forespørgsel viser, hvordan du kan bruge indstillingen $expand-forespørgsel i en GET-operation til at hente en angivet post med rekrutteringsanmodninger og alle tilknyttede stillinger, påkrævede færdigheder og uddannelseskrav til den angivne anmodning. Svaret på eksemplet viser en rekrutteringsanmodning til to stillinger og de påkrævede færdigheder og uddannelser til de ønskede stillinger.
 

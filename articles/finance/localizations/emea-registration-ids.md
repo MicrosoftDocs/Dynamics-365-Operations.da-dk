@@ -1,6 +1,6 @@
 ---
 title: Registrerings-id'er
-description: Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er.
+description: Denne artikel indeholder oplysninger om opsætning og brug af registrerings-id'er.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883069"
 ---
 # <a name="registration-ids"></a>Registrerings-id'er
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er.
+Denne artikel indeholder oplysninger om opsætning og brug af registrerings-id'er.
 
-Mange lande og områder har forskellig lovgivning og krav til registrering af registreringsnumre eller -id'er. Dette emne indeholder en oversigt over de nødvendige indstillinger og behandling af understøttede registreringstyper for parter i forskellige europæiske lande. Alle lande har deres krav til understøttelse af forskellige landespecifikke funktioner, der er relateret til registreringsnumre, der leveres af forskellige offentlige kontorer. Eksempler på registreringsnumre omfatter personnummer (SSN), identifikationsnummer for skat (TIN) og europæisk moms-id (EU-moms-id). Denne funktion indeholder fælles rammer for alle lande i alle områder under hensyntagen til landespecifikke krav i visse europæiske lande. I følgende afsnit beskrives den samlede strøm af oplysninger, der bruges til konfiguration og behandling af registrerings-id'er.
+Mange lande og områder har forskellig lovgivning og krav til registrering af registreringsnumre eller -id'er. Denne artikel indeholder en oversigt over de nødvendige indstillinger og behandling af understøttede registreringstyper for parter i forskellige europæiske lande/områder. Alle lande har deres krav til understøttelse af forskellige landespecifikke funktioner, der er relateret til registreringsnumre, der leveres af forskellige offentlige kontorer. Eksempler på registreringsnumre omfatter personnummer (SSN), identifikationsnummer for skat (TIN) og europæisk moms-id (EU-moms-id). Denne funktion indeholder fælles rammer for alle lande i alle områder under hensyntagen til landespecifikke krav i visse europæiske lande. I følgende afsnit beskrives den samlede strøm af oplysninger, der bruges til konfiguration og behandling af registrerings-id'er.
 
 ## <a name="registration-type-creation"></a>Konfiguration af registreringstype
 Før du kan angive registrerings-id, skal du oprette momsregistreringstyper for de forskellige typer registreringsnumre, hver part er underlagt. Gå til siden **Virksomhedsadministration** &gt; **Globalt adressekartotek** &gt; **Registreringstyper** &gt; **Registreringstyper** for at oprette og administrere registreringstyper for leverandører, kunder, medarbejdere og juridiske enheder i forskellige lande.
@@ -51,7 +51,7 @@ Registreringskategori er landets/områdets registrerings-identifikator, der er g
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i et bestemt land/område.|
 | Begrænset til         | Den type begrænsning, der gælder for momsregistreringstypen: Ingen, Person, Organisation.|
-| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den fuldstændige liste over understøttede kategorier vises senere i dette emne. |
+| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den fuldstændige liste over understøttede kategorier vises senere i denne artikel. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angiv registrering-id'er for poster i globalt adressekartotek
 

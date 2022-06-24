@@ -1,6 +1,6 @@
 ---
 title: Konfigurere handlingsafhængige ER-destinationer
-description: Dette emne forklarer, hvordan du kan konfigurere handlingsafhængige destinationer for et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter.
+description: Denne artikel forklarer, hvordan du kan konfigurere handlingsafhængige destinationer for et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876828"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323973"
 
 Du kan konfigurere [destinationer](electronic-reporting-destinations.md) for hver outputkomponent (mappe eller fil) til et [Elektronisk rapportering (ER)](general-electronic-reporting.md)-formats [konfiguration](general-electronic-reporting.md#Configuration), der bruges til at generere et udgående dokument. Brugere, som kører et ER-format af denne type, og som har de relevante adgangsrettigheder, kan også ændre de konfigurerede destinationsindstillinger under kørslen.
 
-I Microsoft Dynamics 365 Finance **version 10.0.17 og senere** kan der køres et ER-format ved at [klargøre](er-apis-app10-0-17.md) en handlingskode, som brugeren udfører ved at køre dette ER-format. I modulet **Debitor** kan du f.eks. vælge et ER-format i indstillingerne for udskriftsstyring, der genererer et bestemt forretningsdokument, f.eks. en fritekstfaktura. Du kan derefter vælge **Vis** for at få vist fakturaen eller **Udskriv** for at sende den til en printer. Hvis der sendes en brugerhandling for det kørende ER-format under kørsel, kan du konfigurere forskellige ER-destinationer til forskellige brugerhandlinger. Dette emne forklarer, hvordan du konfigurerer ER-destinationer for denne type ER-format.
+I Microsoft Dynamics 365 Finance **version 10.0.17 og senere** kan der køres et ER-format ved at [klargøre](er-apis-app10-0-17.md) en handlingskode, som brugeren udfører ved at køre dette ER-format. I modulet **Debitor** kan du f.eks. vælge et ER-format i indstillingerne for udskriftsstyring, der genererer et bestemt forretningsdokument, f.eks. en fritekstfaktura. Du kan derefter vælge **Vis** for at få vist fakturaen eller **Udskriv** for at sende den til en printer. Hvis der sendes en brugerhandling for det kørende ER-format under kørsel, kan du konfigurere forskellige ER-destinationer til forskellige brugerhandlinger. Denne artikel forklarer, hvordan du konfigurerer ER-destinationer for denne type ER-format.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gøre handlingsafhængige ER-destinationer tilgængelige
 
@@ -82,7 +82,7 @@ I følgende illustration vises, hvordan du også kan opnå dette ved at konfigur
 
 Når der køres et ER-format, og der er leveret brugerhandlinger for de brugere, som har de nødvendige [rettigheder](electronic-reporting-destinations.md#security-considerations) til at ændre konfigurerede destinationsindstillinger under kørslen, vises en dialogboks, der giver mulighed for at ændre de konfigurerede destinationsindstillinger. Denne dialogboks er valgfri, og dens udseende afhænger af, hvordan det kald, ER-strukturen foretager for at køre et ER-format, er blevet implementeret. Hvis denne dialogboks vises, aktiveres ER-destinationer i den i henhold til den brugerhandling, der er angivet.
 
-I følgende illustration vises et eksempel på dialogboksen **Destinationer for elektronisk rapporteringsformat**, der vises, når en fritekstfaktura [bogføres](../../../finance/accounts-receivable/create-free-text-invoice-new.md), og ER-formatet **Fritekstfaktura (Excel)** køres for at generere dette dokument, hvis handlingen **Printer** er klargjort, og der er konfigureret ER-destinationer for dette format, som vist tidligere i dette emne.
+I følgende illustration vises et eksempel på dialogboksen **Destinationer for elektronisk rapporteringsformat**, der vises, når en fritekstfaktura [bogføres](../../../finance/accounts-receivable/create-free-text-invoice-new.md), og ER-formatet **Fritekstfaktura (Excel)** køres for at generere dette dokument, hvis handlingen **Printer** er klargjort, og der er konfigureret ER-destinationer for dette format, som vist tidligere i denne artikel.
 
 ![Dialogboks, der giver mulighed for at ændre de oprindeligt konfigurerede ER-destinationer for det kørende ER-format.](./media/er-destination-action-dependent-02.gif)
 

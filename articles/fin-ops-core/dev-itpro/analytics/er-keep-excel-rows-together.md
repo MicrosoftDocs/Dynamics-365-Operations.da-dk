@@ -1,6 +1,6 @@
 ---
 title: Designe et ER-format for at holde rækker sammen på samme Excel-side
-description: Dette emne forklarer, hvordan du designer et elektronisk rapporteringsformat (ER), der holder rækker sammen på samme Microsoft Excel-side.
+description: Denne artikel forklarer, hvordan du designer et elektronisk rapporteringsformat (ER), der holder rækker sammen på samme Microsoft Excel-side.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854663"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Designe et ER-format for at holde rækker sammen på samme Excel-side
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan en bruger i rollen Systemadministrator eller Funktionel konsulent i elektronisk rapportering kan konfigurere et [ER-format (elektronisk rapportering)](general-electronic-reporting.md) som et [format](er-overview-components.md#format-component), der genererer udgående dokumenter i Microsoft Excel og administrerer sideinddeling af dokumenter, så rækker, der oprettes, bevares på samme side.
+Denne artikel forklarer, hvordan en bruger i rollen Systemadministrator eller Funktionel konsulent i elektronisk rapportering kan konfigurere et [ER-format (elektronisk rapportering)](general-electronic-reporting.md) som et [format](er-overview-components.md#format-component), der genererer udgående dokumenter i Microsoft Excel og administrerer sideinddeling af dokumenter, så rækker, der oprettes, bevares på samme side.
 
 I dette eksempel skal du redigere det ER-format, der leveres af Microsoft, og som bruges til at udskrive fritekstfakturaer i Excel. Dine ændringer giver dig mulighed for at administrere sideinddelingen i en genereret fritekstfakturarapport, så alle rækkerne i en enkelt fakturalinje bevares på samme side, når det er muligt.
 
-Procedurerne i dette emne kan fuldføres i **USMF**-firmaet. Der kræves ingen kodning.
+Procedurerne i denne artikel kan fuldføres i **USMF**-firmaet. Der kræves ingen kodning.
 
 I dette eksempel opretter du de krævede ER-[konfigurationer](general-electronic-reporting.md#Configuration) for **Litware, Inc.**- eksempelvirksomheden. Sørg for, at konfigurationsudbyderen for eksempelfirmaet **Litware, Inc.** (`http://www.litware.com`) er angivet for ER-strukturen og er markeret som **Aktiv**. Hvis denne konfigurationsudbyder ikke er angivet, eller hvis den ikke er markeret som **Aktiv**, skal du følge trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -73,7 +73,7 @@ Følg trinnene i [Konfigurer en formatdestination til eksempelvisning på skærm
 
     ![Gennemse sideinddelingen af den oprettede fritekstfaktura i Excel-skrivebordsprogrammet.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-De resterende procedurer i dette emne viser, hvordan du kan tilpasse standard ER-formatet for at forbedre fakturarapportens udseende og læsbarhed ved at beholde alt indholdet for en enkelt fakturalinje på samme side.
+De resterende procedurer i denne artikel viser, hvordan du kan tilpasse standard ER-formatet for at forbedre fakturarapportens udseende og læsbarhed ved at beholde alt indholdet for en enkelt fakturalinje på samme side.
 
 ## <a name="create-a-custom-format"></a>Oprette et brugerdefineret format
 

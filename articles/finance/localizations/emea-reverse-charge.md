@@ -1,6 +1,6 @@
 ---
 title: Modtagermomsmekanisme for momsskema (VAT/GST)
-description: I dette emne beskrives, hvordan du konfigurerer modtagermoms for europæiske lande, Saudi-Arabien og Singapore.
+description: Denne artikel beskriver, hvordan du konfigurerer modtagermoms for europæiske lande, Saudi-Arabien og Singapore.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861256"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Modtagermomsmekanisme for momsskema (VAT/GST)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives en generisk tilgang til opsætning af modtagermoms for lande/områder, der bruger momsskemaer (VAT eller GST).
+Denne artikel beskriver en generisk tilgang til opsætning af modtagermoms for lande/områder, der bruger momsskemaer (VAT eller GST).
                                                                                  
 Funktionalitetens tilgængelige lande/områder administreres af følgende funktioner i arbejdsområdet **Funktionsstyring**.
 
@@ -33,7 +33,7 @@ Funktionalitetens tilgængelige lande/områder administreres af følgende funkti
 | Modtagermoms for flere lande/områder            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Aktivér modtagermomsmekanisme for momsskema (VAT/GST) | Alle andre lande/områder undtagen:  </br>Brasilien  </br>Indien  </br>Rusland                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Du kan finde flere oplysninger i afsnittet [Aktivere modtagermomsmekanisme for momsskema (VAT/GST)](#enable-reverse-charge) senere i dette emne.
+ Du kan finde flere oplysninger i afsnittet [Aktivere modtagermomsmekanisme for momsskema (VAT/GST)](#enable-reverse-charge) senere i denne artikel.
 
 Modtagermoms er et momsskema, der flytter ansvaret for momsregnskab og rapportering af moms fra sælgeren til køberen af varer og/eller tjenesteydelser. Derfor registrerer modtagere af varer og/eller ydelser både udgående moms (i rollen som sælger) og indgående moms (i rollen som køber) i deres momsangivelse.
 

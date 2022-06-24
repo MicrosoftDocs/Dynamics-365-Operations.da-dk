@@ -1,6 +1,6 @@
 ---
 title: Oprette veksler
-description: I dette emne beskrives trinnene til oprettelse af veksler.
+description: Denne artikel beskriver trinnene til oprettelse af veksler.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874719"
 ---
 # <a name="set-up-bills-of-exchange"></a>Oprette veksler
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives trinnene til oprettelse af veksler.
+Denne artikel beskriver trinnene til oprettelse af veksler.
 
 En veksel er en skriftlig eller elektronisk anvisning fra en kunde, der angiver, at en anden part, normalt en bank, skal betale et angivet beløb til firmaet. Når du bruger en veksel som betaling for en salgsordrefaktura eller fritekstfaktura, krediterer du debitorkontoen. Denne kreditering sikres af vekslen, indtil kunden betaler vekslen til banken. Du udligner som regel fakturaen med vekslen på forfaldsdatoen. Når du modtager besked fra banken om, at vekslen er accepteret, kan du lukke vekslen. Du kan udstede en veksel via banken på et af følgende tidspunkter:
 

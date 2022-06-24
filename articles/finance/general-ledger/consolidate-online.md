@@ -1,6 +1,6 @@
 ---
 title: Økonomiske konsolideringer online
-description: I dette emne beskrives økonomiske onlinekonsolideringer i Finans.
+description: Denne artikel beskriver økonomiske onlinekonsolideringer i Finans.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848543"
 ---
 # <a name="online-financial-consolidations"></a>Økonomiske konsolideringer online
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives økonomiske onlinekonsolideringer i Finans. Inden du læser dette emne, skal du læse emnet [Oversigt over økonomiske konsolideringer og valutaomregning](financial-consolidations-currency-translation.md).
+Denne artikel beskriver økonomiske onlinekonsolideringer i Finans. Inden du læser denne artikel, skal du læse artiklen [Oversigt over økonomiske konsolideringer og valutaomregning](financial-consolidations-currency-translation.md).
 
 Når du har fuldført opsætningen, kan du angive detaljerne om konsolideringen på siden **Konsolider [Online]**. Når du er færdig, kan du klikke på **OK** eller **Batch** for at behandle konsolideringen.
 
@@ -90,7 +90,7 @@ Under fanen **Valutaomregning** kan du definere den juridiske enhed, kontoen og 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
+Du kan finde flere oplysninger om konsolidering og valutaomregning i den overordnede artikel til denne artikel, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Automatisere test med elektronisk rapportering
-description: I dette emne forklares det, hvordan du kan bruge grundlagsfunktionen for elektronisk rapporteringsstruktur (ER) til at automatisere test af nogle funktioner.
+description: Denne artikel forklarer, hvordan du kan bruge grundlagsfunktionen for elektronisk rapporteringsstruktur (ER) til at automatisere test af nogle funktioner.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892763"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisere test med elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du kan bruge den elektroniske rapporteringsstruktur (ER) til at automatisere test af nogle funktioner. I eksemplet i dette emne kan du se, hvordan du kan automatisere testen af kreditorbetalingsbehandling.
+Denne artikel forklarer, hvordan du kan bruge den elektroniske rapporteringsstruktur (ER) til at automatisere test af nogle funktioner. I eksemplet i denne artikel kan du se, hvordan du kan automatisere testen af kreditorbetalingsbehandling.
 
 Programmet bruger ER-strukturen til at generere betalingsfiler og tilsvarende dokumenter under behandling af leverandørbetalinger. ER-strukturen består af en datamodel, modeltilknytninger og formatkomponenter, der understøtter betalingsbehandling af forskellige betalingstyper og generering af dokumenter i forskellige formater. Disse komponenter kan downloades fra Microsoft Dynamics Lifecycle Services (LCS) og importeres til forekomsten.
 
@@ -54,15 +54,15 @@ Funktionelle superbrugere kan køre test af brugeraccept og -integration.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du kan fuldføre opgaverne i dette emne, skal du fuldføre følgende forudsætninger:
+Før du kan fuldføre opgaverne i denne artikel, skal du fuldføre følgende forudsætninger:
 
 - Implementer en topologi, der understøtter testautomatisering. Du skal have adgang til forekomsten af denne topologi for rollen **Systemadministrator**. Denne topologi skal indeholde de demodata, der vil blive brugt i dette eksempel. Du kan finde flere oplysninger under [Installer og anvend et miljø, som understøtter fortløbende build og automatisering af test](../perf-test/continuous-build-test-automation.md).
-- Hvis du vil køre test af brugergodkendelse og -integration automatisk, skal du installere RSAT i den topologi, du bruger, og konfigurere den på en passende måde. Du kan finde oplysninger om, hvordan du installerer og konfigurerer RSAT og konfigurerer den til at virke sammen Finance and Operations-apps og Azure DevOps, i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær opmærksom på forudsætningerne for at bruge værktøjet. I følgende illustration vises et eksempel på RSAT-indstillingerne. Det blå rektangel omgiver de parametre, der er angivet for adgang til Azure DevOps. Det grønne rektangel omgiver de parametre, der angiver adgangen til forekomsten.
+- Hvis du vil køre test af brugergodkendelse og -integration automatisk, skal du installere RSAT i den topologi, du bruger, og konfigurere den på en passende måde. Du kan finde oplysninger om, hvordan du installerer og konfigurerer RSAT og konfigurerer det til at fungere sammen med Finans og drift-apps og Azure DevOps, ved at se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær opmærksom på forudsætningerne for at bruge værktøjet. I følgende illustration vises et eksempel på RSAT-indstillingerne. Det blå rektangel omgiver de parametre, der er angivet for adgang til Azure DevOps. Det grønne rektangel omgiver de parametre, der angiver adgangen til forekomsten.
 
     ![RSAT-indstillinger.](media/GER-Configure.png "Skærmbillede af dialogboksen RSAT-indstillinger")
 
 - Hvis du vil organisere testsager i pakker for at hjælpe med at sikre den korrekte kørselssekvens, så du kan indsamle logfiler med testkørsler til yderligere rapportering og undersøgelse, skal du have adgang til Azure DevOps fra den installerede topologi.
-- Hvis du vil fuldføre eksemplet i dette emne, anbefales du at downloade [ER-brug for RSAT-test](https://go.microsoft.com/fwlink/?linkid=874684). Denne zip-fil indeholder følgende opgaveguider:
+- Hvis du vil fuldføre eksemplet i denne artikel, anbefales du at downloade [ER-brug for RSAT-test](https://go.microsoft.com/fwlink/?linkid=874684). Denne zip-fil indeholder følgende opgaveguider:
 
     | Indhold                                           | Filens navn og placering |
     |---------------------------------------------------|------------------------|

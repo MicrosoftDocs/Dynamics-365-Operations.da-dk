@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til Nøgletal for arbejdsstyrke
-description: Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke.
+description: Denne artikel beskriver Power BI-indhold til Nøgletal for arbejdsstyrke.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884482"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver **Nøgletal for arbejdsstyrke** Microsoft Power BI-indhold. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Denne artikel beskriver Microsoft Power BI-indhold til **Nøgletal for arbejdsstyrke**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Nøgletal for arbejdsstyrke** vises i arbejdsområdet **Personalestyring**, hvis du bruger et af disse produkter:
@@ -58,7 +58,7 @@ Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til
 Sørg for at downloade Power BI-indhold til **Nøgletal for arbejdsstyrke**, der gælder for den version af Microsoft Dynamics 365, du bruger.
 
 > [!NOTE]
-> De .pbix-filer, der er tilgængelige i Lifecycle Services, gælder kun for Finance and Operations-apps.
+> De .pbix-filer, der er tilgængelige i Lifecycle Services, gælder kun for Finans og drift-apps.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende tabel viser de enheder, som indholdet er baseret på.

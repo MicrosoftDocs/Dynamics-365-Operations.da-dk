@@ -1,6 +1,6 @@
 ---
 title: Samlet produktoplevelse
-description: I dette emne beskrives integrationen af produktdata mellem Finans og drift-apps og Dataverse.
+description: Denne artikel beskriver integrationen af produktdata mellem programmer til finans og drift og Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884992"
 ---
 # <a name="unified-product-experience"></a>Samlet produktoplevelse
 
@@ -126,7 +126,7 @@ Finans og drift-apps | Kundeengagementapps |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Standardindstillinger for ordrer og produktspecifikke standardindstillinger for ordrer
 
-Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Disse oplysninger er tilgængelige i Dataverse ved hjælp af standardindstillingerne for vareordrer og enheden for produktspecifikke standardindstillinger for vareordrer. Du kan finde flere oplysninger om funktionaliteten under [emnet Standardindstillinger for ordre](../../../../supply-chain/production-control/default-order-settings.md).
+Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Disse oplysninger er tilgængelige i Dataverse ved hjælp af standardindstillingerne for vareordrer og enheden for produktspecifikke standardindstillinger for vareordrer. Du kan finde flere oplysninger om funktionaliteten i [artiklen Standardindstillinger for ordre](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finans og drift-apps | Kundeengagementapps |
 ---|---

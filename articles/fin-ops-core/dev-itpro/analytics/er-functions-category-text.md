@@ -1,6 +1,6 @@
 ---
 title: Liste over ER-funktioner i kategorien tekst
-description: Dette emne indeholder oplysninger om tekstfunktionerne, der understøttes i elektronisk rapportering (ER).
+description: Denne artikel indeholder oplysninger om tekstfunktionerne, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 02/28/2022
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 502a68d51705114adc096a1cd2217210f4e925bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885537"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funktioner i kategorien tekst
 
 [!include [banner](../includes/banner.md)]
 
-Tekstfunktioner til elektronisk rapportering (ER) kan bruges til at udføre handlinger på datakilder af datatypen *Streng*. Dette emne indeholder en oversigt over disse funktioner.
+Tekstfunktioner til elektronisk rapportering (ER) kan bruges til at udføre handlinger på datakilder af datatypen *Streng*. Denne artikel indeholder en oversigt over disse funktioner.
 
 ## <a name="list-of-supported-functions"></a>Liste med understøttede funktioner
 

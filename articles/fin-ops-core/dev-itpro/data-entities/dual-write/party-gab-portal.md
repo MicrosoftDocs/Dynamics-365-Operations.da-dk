@@ -1,6 +1,6 @@
 ---
-title: Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
-description: I dette emne beskrives ændringerne af webrollerne for Microsoft Power Apps-portaler på grund af datamodellen for part i dobbeltskrivning.
+title: Bruge Microsoft Power Apps-portaler sammen med datamodellen for part
+description: Denne artikel beskriver ændringerne af webrollerne for Microsoft Power Apps-portaler på grund af datamodellen for part i dobbeltskrivning.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898940"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Brug af Microsoft Power Apps-portaler sammen med datamodellen for part
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060914"
 
 Dobbeltskrivningsprogrammets orkestreringsløsning version 2.0.999.0 og senere inkluderer datamodelændringer til part- og globalt adressekartotek for tabellerne Konto og Kontakt. Ændringerne giver mulighed for mange til mange-relationer, der understøtter avancerede forretningsscenarier. Disse ændringer understøttes ikke af portalwebroller, herunder kundeportalen, der medfølger som standard, eller som fandtes i dit miljø, før du installerede dobbeltskrivning. Hvis webrollerne skal fungere som forventet, skal du oprette nye webroller ved hjælp af den nye datamodel. 
 
-Kort sagt er den måde, som tabellerne fungerer sammen på, ændret, men tabeltilladelserne i kundeportalen er ikke ændret. Dette emne forklarer, hvordan du opretter nye webroller, der kan arbejde med den nye avancerede datamodel.
+Kort sagt er den måde, som tabellerne fungerer sammen på, ændret, men tabeltilladelserne i kundeportalen er ikke ændret. Denne artikel forklarer, hvordan du opretter nye webroller, der kan arbejde med den nye avancerede datamodel.
 
 Dette diagram viser tabelrelationen **uden** datamodellen for parten og det globale adressekartotek:
 

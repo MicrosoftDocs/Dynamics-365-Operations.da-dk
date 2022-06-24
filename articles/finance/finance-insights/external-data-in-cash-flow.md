@@ -1,6 +1,6 @@
 ---
 title: Eksterne data i likviditetsbudgetter
-description: I dette emne beskrives de opsætningstrin, der skal udføres, så eksterne data kan angives eller importeres i likviditetsbudgetter.
+description: Denne artikel beskriver de opsætningstrin, der skal udføres, så eksterne data kan angives eller importeres i likviditetsbudgetter.
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f7fac80b7ad0fde273fbd33aa5df146e569be46e
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f0cb05770dc2fbd4e13af261b5f0a0e117a2f6d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846938"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Eksterne data i likviditetsbudgetter
 
 [!include [banner](../includes/banner.md)]
 
-Eksterne data kan indtastes eller importeres i likviditetsbudgetter. I dette emne beskrives de opsætningstrin, der er specifikke for brugen af eksterne data, og som gør det muligt at inkludere de eksterne data i et likviditetsbudget.
+Eksterne data kan indtastes eller importeres i likviditetsbudgetter. Denne artikel beskriver de opsætningstrin, der er specifikke for brugen af eksterne data, og som gør det muligt at inkludere de eksterne data i et likviditetsbudget.
 
 ## <a name="external-data-setup"></a>Ekstern opsætning af data
 

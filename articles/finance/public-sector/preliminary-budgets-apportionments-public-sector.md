@@ -1,6 +1,6 @@
 ---
 title: Foreløbige budgetter og fordelinger i den offentlige sektor
-description: I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget.
+description: Denne artikel beskriver oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Public sector
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e849075d045225d48413aadf5010e66f83d2f95c
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: e271bbd5f8f5c1407d55fda8afb02ac2547701ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868234"
 ---
 # <a name="preliminary-budgets-and-apportionments-in-the-public-sector"></a>Foreløbige budgetter og fordelinger i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget. 
+Denne artikel beskriver oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget. 
 
-I de følgende afsnit i dette emne beskrives de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor.  Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md).
+I de følgende afsnit i denne artikel beskrives de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor.  Før du læser denne artikel, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md).
 
 -   Opsætning af budgettering og budgetstyring for fordelinger – Du kan definere en eller flere budgetkoder for fordelingsbudgettypen og konfigurere budgetstyring for fordelinger.
 -   Opsætning af budgettering og budgetstyring for et foreløbigt budget – Du kan definere en eller flere budgetkoder for den foreløbige budgettype og konfigurere budgetstyring for foreløbige budgetter.
@@ -61,7 +61,7 @@ I afsnittet **Disponible budgetmidler** når du vælger indstillingen **Brug kun
 
 Bemærk, at i afsnittet **Dokumenter og journaler** når du vælger **Indkøbsrekvisitioner**, er indstillingerne for indkøbsordrer og kreditorfakturaer valgt automatisk. 
 
-Når du har defineret budgetregisterposter for grundlæggende budgettering og konfigureret budgetstyring for fordelinger, kan du oprette budgetregisterposter for det oprindelige budget og fordelingsbudgettyper. Du kan finde flere oplysninger under "Hvordan opretter jeg og få vist et foreløbigt budget?" senere i dette emne.
+Når du har defineret budgetregisterposter for grundlæggende budgettering og konfigureret budgetstyring for fordelinger, kan du oprette budgetregisterposter for det oprindelige budget og fordelingsbudgettyper. Du kan finde flere oplysninger under "Hvordan opretter jeg og få vist et foreløbigt budget?" senere i denne artikel.
 
 ### <a name="tips"></a>Tip!
 

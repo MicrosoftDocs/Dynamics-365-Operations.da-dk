@@ -1,6 +1,6 @@
 ---
-title: Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format
-description: Dette emne indeholder en beskrivelse af, hvordan rapportformater, der er designet til at generere rapporter som Excel-projektmapper, kan konfigureres til generering af rapporter som Word-dokumenter.
+title: Genbruge Elektronisk rapporteringskonfigurationer med Excel-skabeloner til generering af rapporter i Word-format
+description: Denne artikel indeholder en beskrivelse af, hvordan rapportformater, der er designet til at generere rapporter som Excel-projektmapper, kan konfigureres til generering af rapporter som Word-dokumenter.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324056"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910380"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Genbruge ER-konfigurationer med Excel-skabeloner til generering af rapporter i Word-format
 
@@ -43,7 +43,7 @@ Disse procedurer er til en funktion, der er tilføjet i Dynamics 365 for Operati
 
 ## <a name="select-the-existing-er-report-configuration"></a>Vælg den eksisterende ER-rapportkonfiguration
 
-1. Gå i Dynamics 365 Finance til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+1. I Dynamics 365 Finance skal du gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. Sørg for, at konfigurationsudbyderen **Litware, Inc.** er valgt som **Aktiv**. Hvis den ikke er, skal du følge trinnene i opgavevejledningen [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).
 3. Vælg **Rapporteringskonfigurationer**. Du skal genbruge den eksisterende ER-konfiguration, der er udviklet til at generere rapportoutput i OPENXML-format.
 4. På siden **Konfigurationer** skal du i konfigurationstræet i venstre rude udvide **Betalingsmodel** og vælge **Eksempel på regnearksrapport**.

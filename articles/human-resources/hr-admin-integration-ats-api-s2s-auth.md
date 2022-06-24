@@ -1,6 +1,6 @@
 ---
 title: Server til server-godkendelse for ATS-integrations-API
-description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere server til server-godkendelse for integrationer med Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System).
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere server til server-godkendelse for integrationer med Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System).
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: de3dc29c5366996276c02576eba27f7e831e4ccf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879360"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Server til server-godkendelse for ATS-integrations-API
 
@@ -27,7 +27,7 @@ ms.locfileid: "8743535"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere server til server-godkendelse for programintegrationer med Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System). Der er et par sikkerhedslag, som skal administreres for tjenesteprincipalen for at få adgang til den virtuelle Microsoft Dataverse-tabel og tilknyttede data. Brugeren skal have adgang til den virtuelle Dataverse-tabel i Microsoft Power Platform og adgang til dataene i Dynamics 365 Human Resources.
+Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere server til server-godkendelse for programintegrationer med Dynamics 365 Human Resources ATS-integrations-API (Applicant Tracking System). Der er et par sikkerhedslag, som skal administreres for tjenesteprincipalen for at få adgang til den virtuelle Microsoft Dataverse-tabel og tilknyttede data. Brugeren skal have adgang til den virtuelle Dataverse-tabel i Microsoft Power Platform og adgang til dataene i Dynamics 365 Human Resources.
 
 ## <a name="enable-access-to-dataverse-virtual-tables-in-power-platform"></a>Give adgang til virtuelle Dataverse-tabeller i Power Platform
 

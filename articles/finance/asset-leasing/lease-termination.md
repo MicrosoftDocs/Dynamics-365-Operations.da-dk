@@ -1,6 +1,6 @@
 ---
 title: Forslag til leasingophør
-description: Dette emne forklarer, hvordan du foreslår en leasingtransaktion til opsigelse.
+description: Denne artikel forklarer, hvordan du foreslår en leasingtransaktion til opsigelse.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879647"
 ---
 # <a name="propose-a-lease-for-termination"></a>Foreslå en leasingaftale til opsigelse
 
 [!include [banner](../includes/banner.md)]
 
-Hvis en leasingaftale ophører før tid, kan aktivleasing registrere en fratrædelseskladdepost, der afskrives for det leasingforpligtelsen, ROU-forbrugsaktivet og akkumuleret afskrivning samt registrere vinding eller tab. I processen til tidlig fratrædelse afsluttes en leasingaftale, og dens tilknyttede leasingbøger. Det betyder ikke, at individuelle leasingbøger opsiges. Dette emne indeholder en beskrivelse af den funktionalitet, der giver dig mulighed for at foreslå en leasingaftale til fratrædelse og behandle kladdeposten til fratrædelsesposten.
+Hvis en leasingaftale ophører før tid, kan aktivleasing registrere en fratrædelseskladdepost, der afskrives for det leasingforpligtelsen, ROU-forbrugsaktivet og akkumuleret afskrivning samt registrere vinding eller tab. I processen til tidlig fratrædelse afsluttes en leasingaftale, og dens tilknyttede leasingbøger. Det betyder ikke, at individuelle leasingbøger opsiges. Denne artikel indeholder en beskrivelse af den funktionalitet, der giver dig mulighed for at foreslå en leasingaftale til fratrædelse og behandle kladdeposten til fratrædelsesposten.
 
 Hvis en leasingaftale ikke er klassificeret som en udskudt rettighed til lejebehandling af leasingaftale og ikke er tilknyttet et anlægsaktiv, medfører leasing af anlægsaktivet følgende fratrædelseskladdepostering.
 
@@ -121,7 +121,7 @@ Fanen **Generelt**
 
 ### <a name="steps-for-terminating-the-lease"></a>Trin til afslutning af leasingaftale
 
-1. Når du har oprettet leasingaftalen som beskrevet tidligere i dette emne, skal du gå til leasingkartoteket og bekræfte betalingsplanen. Bogfør derefter kladdeposten for den oprindelige genkendelse. Det oprindelige ROU-aktiv er $71.235,81, og leasingforpligtelse skal være $70.235,81. I dette eksempel blev leasingaftalen klassificeret som en driftsleasingaftale i henhold til Accounting Standards Codification Topic 842 (ASC 842).
+1. Når du har oprettet leasingaftalen som beskrevet tidligere i denne artikel, skal du gå til leasingkartoteket og bekræfte betalingsplanen. Bogfør derefter kladdeposten for den oprindelige genkendelse. Det oprindelige ROU-aktiv er $71.235,81, og leasingforpligtelse skal være $70.235,81. I dette eksempel blev leasingaftalen klassificeret som en driftsleasingaftale i henhold til Accounting Standards Codification Topic 842 (ASC 842).
 2. Kør batchkladdeprocessen tre gange for at simulere passagen af tre år for leasingbetalingerne, renteudgifterne og afskrivningsudgifterne.
 3. Når du er færdig med at køre alle tre kørsler, skal du gå tilbage til leasingkartoteket og åbne tabellerne Passiv- og Aktivposteringer for at få vist den aktuelle værdi af ROU-aktivet og leasingforpligtelsen. Efter tre år bør ansvarsværdien være cirka $-53.893,00, og aktivets værdi skal være ca. $54.593,00.
 

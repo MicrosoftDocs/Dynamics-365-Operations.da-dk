@@ -1,6 +1,6 @@
 ---
 title: Momskoden kan ikke bestemmes
-description: Dette emne forklarer, hvordan du kan rette fejlen "Der kunne ikke opnås adgang til momsservice" i momsberegningstjenesten.
+description: Denne artikel forklarer, hvordan du kan rette fejlen "Der kunne ikke opnås adgang til momsservice" i momsberegningstjenesten.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877853"
 ---
 # <a name="tax-code-cannot-be-determined"></a>Momskoden kan ikke bestemmes
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer de fejlfindingstrin, du kan udføre, hvis du modtager fejlen "Der blev ikke fundet nogen tilsvarende resultater" i tjenesten Momsberegning.
+Denne artikel forklarer de fejlfindingstrin, du kan udføre, hvis du modtager fejlen "Der blev ikke fundet nogen tilsvarende resultater" i tjenesten Momsberegning.
 
 ## <a name="symptom"></a>Symptom
 
@@ -121,7 +121,7 @@ Følg disse trin for at løse dette problem.
 
 ## <a name="mitigation"></a>Afhjælpning
 
-1. Gå gennem hvert trin i afsnittet [Fejlfinding](#troubleshoot) i dette emne, og ret installationen efter behov. Hvis momsgruppen og vareafgiftsgruppen ikke er fastlagt korrekt, kan du finde [Ingen tilsvarende resultater](tcs-troubleshooting-no-matching-result.md).
+1. Gå gennem hvert trin i afsnittet [Fejlfinding](#troubleshoot) i denne artikel, og ret installationen efter behov. Hvis momsgruppen og vareafgiftsgruppen ikke er fastlagt korrekt, kan du finde [Ingen tilsvarende resultater](tcs-troubleshooting-no-matching-result.md).
 2. Hvis der ikke er et skæringspunkt for momsgruppen og vareafgiftsgruppen, skal du oprette en ny funktionsversion i RCS og rette opsætningen.
 
     - Gå til **Momsfunktioner** \> **Momskoder og grupper** > **Varemomsgruppe**.

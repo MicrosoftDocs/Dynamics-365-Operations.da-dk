@@ -1,6 +1,6 @@
 ---
-title: Konfigurere validering af fakturasammenholdelse for kreditor
-description: Dette emne indeholder oplysninger om, hvordan validering af fakturasammenholdelse for kreditorer defineres.
+title: Konfigurere validering af kreditorfakturasammenholdelse
+description: Denne artikel indeholder oplysninger om, hvordan validering af fakturasammenholdelse for kreditorer defineres.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904953"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af fakturasammenholdelse for kreditor
 
@@ -44,7 +44,7 @@ Der findes fire forskellige typer sammenholdelsesvalideringer.
 5. Markér eller fjern markeringen i afkrydsningsfeltet **Afstem fakturatotaler** for at sammenholde faktiske fakturatotaler med forventede totaler.
     * Vælg, om der skal vises et ikon, hvis en uoverensstemmelse ved fakturasammenholdelse overstiger tolerancen. Du kan vælge at få vist ikonet, når en positiv uoverensstemmelse overstiger tolerancen, eller når enten en positiv eller en negativ uoverensstemmelse overstiger tolerancen.  
     * Tolerancen er f.eks. 5 procent, og det samlede fakturabeløb på indkøbsordren er 100,00. Derfor vises der et ikon for prisafstemning, hvis det samlede fakturabeløb på fakturaen overstiger 105,00. Hvis du vælger **Hvis større eller mindre end tolerance**, vises ikonet også, hvis fakturabeløbet er mindre end 95,00.  
-6. Angiv den procentvise afvigelse, der er acceptabel, i feltet **Toleranceprocent for fakturatotaler**. Denne værdi er standardværdien for firmaet. Denne værdi kan tilsidesættes for bestemte kreditorer ved hjælp af **Tolerancer for fakturatotaler**. Du kan finde flere oplysninger om, hvordan du tilsidesætter toleranceprocenten for fakturatotaler for en bestemt leverandør, i afsnittet "Konfigurer tolerance for sammenholdelse af fakturatotaler for kreditorer" senere i dette emne.
+6. Angiv den procentvise afvigelse, der er acceptabel, i feltet **Toleranceprocent for fakturatotaler**. Denne værdi er standardværdien for firmaet. Denne værdi kan tilsidesættes for bestemte kreditorer ved hjælp af **Tolerancer for fakturatotaler**. Du kan finde flere oplysninger om, hvordan du tilsidesætter toleranceprocenten for fakturatotaler for en bestemt leverandør, i afsnittet "Konfigurer tolerance for sammenholdelse af fakturatotaler for kreditorer" senere i denne artikel.
 7. Indstil **Sammenholdelse af pris og antal**.
 8. I feltet **Sammenholdelsespolitik for linjer** skal du vælge en værdi, der skal bruges som standardpolitik for den juridiske enhed, du arbejder med. **Kræves ikke** betyder, at der ikke kræves nogen kontrol af individuelle priser på fakturalinjer i forhold til indkøbsordrepris eller fakturaantal i forhold til antal på følgesedlen. **Tovejssammenholdelse** betyder, at kontrol af fakturalinjerne er påkrævet, men at kun indkøbsordren og leverandørens fakturadokumenter er inddraget i kontrollen. Produktkvitteringen medtages ikke i valideringerne af sammenholdelse. **Trevejsafstemning** betyder, at nettoenhedsprisen på fakturaen sammenlignes med nettoenhedsprisen på indkøbsordren, og det tilsvarende antal på produktkvitteringen sammenlignes med antallet på fakturaen.
 9. Hvis der skal kunne anvendes et andet sammenholdelsesniveau for en vare, kreditor, kombination af kreditor og vare eller indkøbsordrelinje, skal du vælge en værdi i feltet **Tillad overstyring af sammenholdelsespolitik**. Sammenholdelsespolitikken for linjer for den juridiske enhed kan overstyres for en bestemt kreditor, vare og kombination af kreditor og vare på siden **Sammenholdelsespolitik**.

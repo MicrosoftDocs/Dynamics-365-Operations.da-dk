@@ -1,6 +1,6 @@
 ---
 title: Budgetplanlægningsskabeloner til Excel
-description: I dette emne beskrives, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
+description: Denne artikel beskriver, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872493"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
+Denne artikel beskriver, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 
-I dette emne kan du se, hvordan du opretter Excel-skabeloner, der skal bruges med budgetplaner ved hjælp af standarddemodatasæt og logon som administratorbruger. Du kan finde flere oplysninger om budgetplanlægning under [Budgetplanlægningsoversigt](budget-planning-overview-configuration.md). Du kan også følge selvstudiet [Budgetplanlægning](budget-plan.md) for at lære grundlæggende principper for modulkonfiguration og -brug.
+Denne artikel viser, hvordan du opretter Excel-skabeloner, der skal bruges med budgetplaner ved hjælp af standarddemodatasæt og logon som administratorbruger. Du kan finde flere oplysninger om budgetplanlægning under [Budgetplanlægningsoversigt](budget-planning-overview-configuration.md). Du kan også følge selvstudiet [Budgetplanlægning](budget-plan.md) for at lære grundlæggende principper for modulkonfiguration og -brug.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Automatisk generere et regneark ved hjælp af dokumentlayout til budgetplan
 
-Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. Hvert layout kan have en tilknyttet skabelon til et budgetplandokument for at få vist og redigere budgetplandata i et Excel-regneark. I dette emne vil der blive genereret en skabelon til et budgetplandokument ved hjælp af en eksisterende layoutkonfiguration. 
+Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. Hvert layout kan have en tilknyttet skabelon til et budgetplandokument for at få vist og redigere budgetplandata i et Excel-regneark. I denne artikel vil der blive genereret en skabelon til et budgetplandokument ved hjælp af en eksisterende layoutkonfiguration. 
 
 1. Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). 
 2. Klik på **Ny** for at oprette et nyt budgetplandokument. 
@@ -79,7 +79,7 @@ Den markerede feltgruppe viser de kolonner, der er tilgængelige i skabelonen. K
 [![Tilføj og indsæt kolonne.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til Finance and Operations, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til Finans og drift, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Gentag disse trin for at indsætte kolonnen **Regulering**. Brug formlen = AxTable1\[Total request\]\*$I$ 1 for denne kolonne. Dette vil tage værdien i celle I1 og multiplicere værdierne i kolonnen **Anmodet i alt** for at beregne reguleringsbeløb.
 

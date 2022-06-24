@@ -1,6 +1,6 @@
 ---
-title: Firmakoncept i Dataverse
-description: I dette emne beskrives integrationen af firmadata mellem Finans og drift og Dataverse.
+title: Firmabegreb i Dataverse
+description: Denne artikel beskriver integrationen af firmadata mellem Finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873172"
 ---
 # <a name="company-concept-in-dataverse"></a>Firmakoncept i Dataverse
 
@@ -49,7 +49,7 @@ På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-fi
 
 Som den foregående illustration viser, er denne 1:1-tilknytning mellem virksomhedsenhed, firma og team blot et udgangspunkt. I dette eksempel oprettes der manuelt en ny "Europe"-virksomhedsenhed i Dataverse som overordnet til både DEMF og ESMF. Denne nye rodvirksomhedsenhed er ikke relateret til dobbeltskrivning. Den kan dog bruges til at give medlemmerne af "EUR Sales"-teamet adgang til kontodata i både DEMF og ESMF ved at indstille datasynlighed til **Parent/Child BU** i den tilknyttede sikkerhedsrolle.
 
-Et sidste emne, der skal omtales, er, hvordan dobbeltskrivning afgør, hvilket ejerteam det skal tildeles rækker. Denne funktionsmåde styres af kolonnen **Standardejerteam** på cdm\_Company-rækken. Når en cdm\_Company-række er aktiveret til dobbeltskrivning, opretter en plug-in automatisk den tilknyttede virksomhedsenhed og ejerteamet (hvis den ikke allerede findes) og indstiller kolonnen **Standardejerteam**. Administratoren kan ændre denne kolonne til en anden værdi. Men administratoren kan ikke rydde kolonnen, så længe tabellen er aktiveret til dobbeltskrivning.
+En sidste artikel, der skal omtales, er, hvordan dobbeltskrivning afgør, hvilket ejerteam det skal tildeles rækker. Denne funktionsmåde styres af kolonnen **Standardejerteam** på cdm\_Company-rækken. Når en cdm\_Company-række er aktiveret til dobbeltskrivning, opretter en plug-in automatisk den tilknyttede virksomhedsenhed og ejerteamet (hvis den ikke allerede findes) og indstiller kolonnen **Standardejerteam**. Administratoren kan ændre denne kolonne til en anden værdi. Men administratoren kan ikke rydde kolonnen, så længe tabellen er aktiveret til dobbeltskrivning.
 
 > [!div class="mx-imgBorder"]
 ![Kolonnen Standardejerteam.](media/dual-write-default-owning-team.jpg)

@@ -1,6 +1,6 @@
 ---
 title: Liste over ER-funktioner af kategorien typekonvertering
-description: Dette emne indeholder oplysninger om de konverteringsfunktioner, der understøttes i elektronisk rapportering (ER).
+description: Denne artikel indeholder oplysninger om de konverteringsfunktioner, der understøttes i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 12/05/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6d678c2a38039285bd835abcbbaf13ec00298c0660c62e7496a5d7405db8f61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37516ced402e0204ebd09d5b175ff56b040b9043
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889308"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Liste over ER-funktioner af kategorien typekonvertering
 
 [!include [banner](../includes/banner.md)]
 
-Typekonverteringsfunktioner til elektronisk rapportering (ER) kan bruges til at konvertere værdier mellem typer. Dette emne indeholder en oversigt over disse funktioner.
+Typekonverteringsfunktioner til elektronisk rapportering (ER) kan bruges til at konvertere værdier mellem typer. Denne artikel indeholder en oversigt over disse funktioner.
 
 ## <a name="type-conversion-functions"></a>Typekonverteringsfunktioner
 

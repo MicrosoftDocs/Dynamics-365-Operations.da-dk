@@ -1,6 +1,6 @@
 ---
-title: Anbefalet praksis for posteringsprofiler
-description: I dette emne beskrives de anbefalede fremgangsmåder til konfiguration af posteringsprofiler.
+title: Anbefalet praksis for bogføringsprofiler
+description: Denne artikel beskriver de anbefalede fremgangsmåder til konfiguration af posteringsprofiler.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 211dc42b80089eb1f59a435f09d6e9d9f956736b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: fb0e321f447b78b88c065e52bb7fad1c445e47b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849896"
 ---
 # <a name="recommended-practices-for-posting-profiles"></a>Anbefalet praksis for posteringsprofiler
 
-Der findes en række anbefalede fremgangsmåder, som du bør følge, når du konfigurerer posteringsprofiler i hele systemet. I dette emne beskrives forskellige scenarier og de tilsvarende anbefalede fremgangsmåder.
+Der findes en række anbefalede fremgangsmåder, som du bør følge, når du konfigurerer posteringsprofiler i hele systemet. Denne artikel beskriver forskellige scenarier og de tilsvarende anbefalede fremgangsmåder.
 
 ## <a name="setting-the-do-not-allow-manual-entry-flag"></a>Angive flaget Tillad ikke manuel indtastning
 

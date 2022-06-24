@@ -1,6 +1,6 @@
 ---
 title: Afledte finansielle hierarkier i den offentlige sektor
-description: I dette emne beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor.
+description: I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc00b2147bb606b6f2efd22cb0b59fe3a2669d54
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 95660051cadc4a4dedc13d1380b55209fd8d6a25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891454"
 ---
 # <a name="derived-financial-hierarchies-in-the-public-sector"></a>Afledte finansielle hierarkier i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor. 
+I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor. 
 
 For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier. 
 

@@ -1,6 +1,6 @@
 ---
 title: Udligningsoversigt
-description: Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
+description: Denne artikel indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887942"
 ---
 # <a name="settlement-overview"></a>Udligningsoversigt
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724891"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Dette emne indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
+Denne artikel indeholder generelle oplysninger om udligningsprocessen. Det beskriver, hvilke posteringstyper der kan udlignes, samt timingen og processen for at udligne dem. Det beskriver også resultaterne af udligningsprocessen.
 
 I udligningsprocessen udlignes posteringerne på et enkelt dokument med transaktionerne i et andet dokument for at øge eller reducere saldoen for hvert dokument. En betaling kan f.eks. udlignes med en faktura. Forskellige posteringstyper kan udlignes, på forskellige tidspunkter, og via forskellige metoder. Udligningsprocessen kan også generere nye posteringer.
 

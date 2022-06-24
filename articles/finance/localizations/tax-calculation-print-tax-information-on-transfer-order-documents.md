@@ -1,6 +1,6 @@
 ---
 title: Udskrive momsoplysninger på flytteordredokumenter
-description: I dette emne forklares, hvordan de momsoplysninger, der bestemmes af tjenesten til momsberegning, kan udskrives på flytteordredokumenter.
+description: Denne artikel forklarer, hvordan de momsoplysninger, der bestemmes af tjenesten til momsberegning, kan udskrives på flytteordredokumenter.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca7a610162c539a0ecd74cf9e663f08ea80a7e44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855196"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Udskrive momsoplysninger på flytteordredokumenter
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne forklares, hvordan du udskriver momsoplysninger i flytteordredokumenter. Du kan udskrive pro-forma-fakturadokumentet for en flytteordre for lageroverførsler, der opfattes som fællesskabsforsyninger og -anskaffelser inden for EU i henhold til EU's momsregler. 
+Denne artikel forklarer, hvordan du udskriver momsoplysninger i flytteordredokumenter. Du kan udskrive pro-forma-fakturadokumentet for en flytteordre for lageroverførsler, der opfattes som fællesskabsforsyninger og -anskaffelser inden for EU i henhold til EU's momsregler. 
 
 Følgende momsrelevante data føjes til flytteordredokumenterne:
 

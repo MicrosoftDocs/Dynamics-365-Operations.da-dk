@@ -1,6 +1,6 @@
 ---
 title: Hvordan konfigurerer jeg afstemning af økonomiske dimensioner?
-description: I dette emne beskrives indstillingerne for opsætning og brug af funktionen Afstemning af økonomisk dimension.
+description: Denne artikel beskriver indstillingerne for opsætning og brug af funktionen Afstemning af økonomisk dimension.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878006"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>Hvordan konfigurerer jeg afstemning af økonomiske dimensioner?
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives indstillingerne for opsætning og brug af funktionen Afstemning af økonomisk dimension.
+Denne artikel beskriver indstillingerne for opsætning og brug af funktionen Afstemning af økonomisk dimension.
 
 ## <a name="symptom"></a>Symptom
 
-Der er to indstillinger til opsætning af økonomiske dimensioner for afstemning. Den første indstilling er at bruge feltet **Udligning af økonomisk dimension** på opsætningssiden **Finans** (**Finans \> Finansopsætning \> Finans**). Den anden mulighed er at anvende feltet **Kræv, at dimensionen er udlignet** på siden **Økonomiske dimensioner** (**Finans > Kontoplan \> Dimensioner \> Økonomiske dimensioner**). Dette emne forklarer forskellen mellem disse to indstillinger.
+Der er to indstillinger til opsætning af økonomiske dimensioner for afstemning. Den første indstilling er at bruge feltet **Udligning af økonomisk dimension** på opsætningssiden **Finans** (**Finans \> Finansopsætning \> Finans**). Den anden mulighed er at anvende feltet **Kræv, at dimensionen er udlignet** på siden **Økonomiske dimensioner** (**Finans > Kontoplan \> Dimensioner \> Økonomiske dimensioner**). Denne artikel forklarer forskellen mellem disse to indstillinger.
 
 ## <a name="resolution"></a>Løsning
 

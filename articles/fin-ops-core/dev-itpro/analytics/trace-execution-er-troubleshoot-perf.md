@@ -1,6 +1,6 @@
 ---
 title: Spore kørslen af ER-formater til fejlfinding af problemer med ydeevnen
-description: Dette emne indeholder oplysninger om, hvordan du kan bruge funktionen til performancesporing i elektroniske rapporter (ER) til at foretage fejlfinding af problemer med ydeevnen.
+description: Denne artikel indeholder oplysninger om, hvordan du kan bruge funktionen til performancesporing i elektroniske rapporter (ER) til at foretage fejlfinding af problemer med ydeevnen.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851945"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore kørslen af ER-formater for at foretage fejlfinding af problemer med ydeevnen
 
@@ -98,7 +98,7 @@ Antag, at du er begyndt at designe en ny ER-løsning for at generere en ny rappo
 
 Antag, at du er færdig med at designe den første version af ER-løsningen. Du vil nu teste den i din forekomst og analysere kørselsydeevnen.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfigurationer fra RCS til Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfiguration fra RCS til Finans og drift
 
 1. Log på din programforekomst.
 2. I dette selvstudium skal du importere konfigurationer fra din RCS-forekomst (hvor du udformer dine ER-komponenter) i din forekomst (hvor du tester og til slut bruger dem). Du skal derfor sikre dig, at alle påkrævede artefakter er forberedt. Du kan finde instruktioner i proceduren [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -305,27 +305,27 @@ Det kan også være nyttigt at reducere antallet af kald, der foretages til Ledg
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importere konfigurationen af den ændrede modeltilknytning fra RCS til programmet
 
-Gentag trinnene i afsnittet [Importere en ER-konfiguration fra RCS til Finance and Operations](#import-configuration) tidligere i dette emne for at importere version 1.2 af **Tilknytning af performancesporing**-konfigurationen.
+Gentag trinnene i afsnittet [Importere en ER-konfiguration fra RCS til Finans og drift](#import-configuration) tidligere i denne artikel for at importere version 1.2 af **Tilknytning af performancesporing**-konfigurationen.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Køre den ændrede ER-løsning for at spore kørslen
 
 ### <a name="run-the-er-format"></a>Køre ER-formatet
 
-Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette emne for at generere en ny performancesporing.
+Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i denne artikel for at generere en ny performancesporing.
 
 ## <a name="work-with-the-execution-trace"></a>Arbejde med sporingen af udførelsen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Eksportere den genererede sporing fra programmet
 
-Gentag trinnene i afsnittet [Eksportere den genererede sporing fra programmet](#export-trace) tidligere i dette emne, hvis du vil gemme en ny performancesporing lokalt.
+Gentag trinnene i afsnittet [Eksportere den genererede sporing fra programmet](#export-trace) tidligere i denne artikel, hvis du vil gemme en ny performancesporing lokalt.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Import af den genererede sporing i RCS
 
-Gentag trinnene i afsnittet [Importere de genererede sporinger i RCS](#import-trace) tidligere i dette emne for at importere den nye performancesporing til RCS.
+Gentag trinnene i afsnittet [Importere de genererede sporinger i RCS](#import-trace) tidligere i denne artikel for at importere den nye performancesporing til RCS.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Bruge performancesporing til analyse i RCS – modeltilknytning
 
-Gentag trinnene i afsnittet [Bruge performancesporing til analyse i RCS – modeltilknytning](#use-trace) tidligere i dette emne for at analysere den seneste performancesporing.
+Gentag trinnene i afsnittet [Bruge performancesporing til analyse i RCS – modeltilknytning](#use-trace) tidligere i denne artikel for at analysere den seneste performancesporing.
 
 Bemærk, at de justeringer, du har foretaget for modeltilknytningen, har elimineret dubletter af forespørgsler til databasen. Antallet af kald til databasetabeller og datakilder for denne modeltilknytning er også blevet reduceret. Derfor er ydeevnen i hele ER-løsningen forbedret.
 
@@ -355,7 +355,7 @@ Hvis du bruger en af disse versioner, kan du analysere detaljerne for genererede
 
 ### <a name="run-the-er-format"></a>Køre ER-formatet
 
-Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette emne for at generere en ny performancesporing.
+Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i denne artikel for at generere en ny performancesporing.
 
 Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indeholder performancesporingen i PerfView-format. Du kan derefter bruge værktøjet PerfView-performanceanalyse til at analysere detaljerne i ER-formatkørslen.
 
@@ -379,7 +379,7 @@ På grund af de forbedringer, der er foretaget i ER-strukturen, indeholder den p
 
 ### <a name="run-the-er-format"></a>Køre ER-formatet
 
-Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette emne for at generere en ny performancesporing.
+Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i denne artikel for at generere en ny performancesporing.
 
 Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indeholder performancesporingen i PerfView-format. Du kan derefter bruge værktøjet PerfView-performanceanalyse til at analysere detaljerne i ER-formatkørslen. Denne sporing indeholder nu oplysninger om SQL-databaseadgang under udførelsen af ER-formatet.
 

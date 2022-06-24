@@ -1,6 +1,6 @@
 ---
 title: Integrere lærredapps fra Power Apps
-description: Dette emne beskriver, hvordan du kan integrere lærredapps fra Microsoft Power Apps i klienten for at øge produktets funktioner.
+description: Denne artikel beskriver, hvordan du kan integrere lærredapps fra Microsoft Power Apps i klienten for at øge produktets funktioner.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898392"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Integrere lærredapps fra Power Apps
 
@@ -33,7 +33,7 @@ Hvis du vil vide mere om integration af lærredapps, kan du se den korte video [
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Tilføjelse af en integreret lærredapp fra Power Apps til en side
 
-Før du integrerer en lærredapp fra Power Apps i klienten, skal du finde eller oprette en app, der har den ønskede grafik eller funktionalitet. Dette emne omfatter ikke en detaljeret beskrivelse af processen til oprettelse af apps. Hvis du ikke vant til at bruge Power Apps, kan du se [dokumentationen til Power Apps](/powerapps/).
+Før du integrerer en lærredapp fra Power Apps i klienten, skal du finde eller oprette en app, der har den ønskede grafik eller funktionalitet. Denne artikel omfatter ikke en detaljeret beskrivelse af processen til oprettelse af apps. Hvis du ikke vant til at bruge Power Apps, kan du se [dokumentationen til Power Apps](/powerapps/).
 
 Du kan integrere en lærredapp i en Finans- og driftsapp på tre måder. Du kan bruge den fremgangsmåde, der passer bedst til dit scenarie. 
 
@@ -60,7 +60,7 @@ Følgende procedure viser, hvordan du integrerer en lærredapp på en eksisteren
 
     - Hvis appen skal åbnes ved hjælp af **Power Apps**-menuknappen , kan du vælge **Power Apps**-menuknappen i standardhandlingsruden og derefter vælge **Tilføj en app**.
 
-3. Konfigurer den integrerede app. Du kan finde flere oplysninger i afsnittet [Konfiguration af en lærredapp](#configuring-a-canvas-app) senere i dette emne.
+3. Konfigurer den integrerede app. Du kan finde flere oplysninger i afsnittet [Konfiguration af en lærredapp](#configuring-a-canvas-app) senere i denne artikel.
 4. Når du bekræfter, at konfigurationen er korrekt, skal du vælge **Indsæt**.
 
     - Hvis funktionen **Gemte visninger** er deaktiveret, bliver du bedt om at opdatere browseren for at se den integrerede app.
@@ -76,7 +76,7 @@ Du kan også integrere en lærredapp fra dashboardet, hvis appen ikke er tilknyt
 1. Åbn dashboardet.
 2. Vælg og hold (eller højreklik) på siden, vælg **Tilpas**, og vælg derefter **Tilføj en side**.
 3. I ruden **Tilføj en side** skal du vælge **Power Apps**.
-4. Konfigurer den integrerede app. Du kan finde flere oplysninger i afsnittet [Konfiguration af en lærredapp](#configuring-a-canvas-app) senere i dette emne.
+4. Konfigurer den integrerede app. Du kan finde flere oplysninger i afsnittet [Konfiguration af en lærredapp](#configuring-a-canvas-app) senere i denne artikel.
 5. Vælg **Gem** for at føje appen til dashboardet som et nyt felt.
 6. Vælg det nye felt på dashboardet, og bekræft, at lærredappen vises som forventet.
 
@@ -86,7 +86,7 @@ Når du integrerer en lærredapp, skal du angive følgende parametre:
 
 - **Navn** – Angiv den tekst, der skal vises for knappen eller fanen, som vil indeholde den integrerede app. Ofte ønsker du at gentage navnet på appen i dette felt.
 - **App-id** – Angiv Globally Unique Identifier (GUID) for den lærredapp, du vil integrere. For at hente denne værdi skal du finde appen på [make.powerapps.com](https://make.powerapps.com) og derefter kigge i feltet **App-id** under **Detaljer**.
-- **Inputkontekst for appen** – Du kan eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i dette emne med titlen [Oprette en app, der anvender data fra Finans- og driftsapps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen får adgang til de data, der er sendt fra Finans- og driftsapps.
+- **Inputkontekst for appen** – Du kan eventuelt vælge det felt, der indeholder de data, du vil overføre til appen som input. Se afsnittet senere i denne artikel med titlen [Oprette en app, der anvender data fra Finans- og driftsapps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for at få oplysninger om, hvordan appen får adgang til de data, der er sendt fra Finans- og driftsapps.
 
     Fra version 10.0.19 overføres den aktuelle juridiske enhed også til lærredappen som kontekst via URL-parameteren **cmp**. Denne funktionsmåde påvirker ikke mållærredappen, før den pågældende app bruger oplysningerne.
 
@@ -145,7 +145,7 @@ Følg disse trin for at redigere konfigurationen af en integreret app:
 
 Når en app er integreret på en side, er der nogle få metoder til at fjerne den, hvis det er nødvendigt:
 
-- Gå til ruden **Rediger en app** ved at følge vejledningen fra afsnittet [Redigere en integreret app](#editing-an-embedded-app) tidligere i dette emne. Bekræft, at ruden vises oplysninger for den integrerede app, du vil fjerne, og klik derefter på knappen **Slet**.
+- Gå til ruden **Rediger en app** ved at følge vejledningen fra afsnittet [Redigere en integreret app](#editing-an-embedded-app) tidligere i denne artikel. Bekræft, at ruden vises oplysninger for den integrerede app, du vil fjerne, og klik derefter på knappen **Slet**.
 - Hvis den integrerede app er tilføjet fra dashboardet, skal du åbne dashboardet, vælge og holde (eller højreklikke på) det felt, der er tilknyttet lærredappen, vælge **Tilpas** og derefter vælge **Fjern side**. 
 - Eftersom den integrerede app er gemt som tilpasningsdata, vil fjernelse af din sides tilpasning også fjerne eventuelle integrerede apps på den pågældende side. Bemærk, at rydning af sidens tilpasning er permanent og ikke kan fortrydes. Hvis du vil fjerne dine tilpasninger på en side, skal du vælge **Indstillinger** og derefter klikke på **Tilpas denne side** og til sidst på knappen **Ryd**. Når du har opdateret din browser, fjernes alle de tidligere tilpasninger for denne side. Se [Tilpas brugeroplevelsen](personalize-user-experience.md) for at få flere oplysninger om, hvordan sider bruger tilpasninger.
 
@@ -153,7 +153,7 @@ Når en app er integreret på en side, er der nogle få metoder til at fjerne de
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Udvikler] Modellering af en lærredapp i en formular
 
-Mens dette emne fokuserer på integration af lærredapps gennem tilpasning, har udviklere også mulighed for at føje en lærredapp til en formular ved hjælp af Visual Studio-udviklingsløsningen. Det kan du gøre ved blot at føje en PowerAppsHostControl til formularen. De metadataegenskaber, der er tilgængelige i kontrolelementet, indeholder de samme egenskaber som tilpasningsfunktionen.
+Mens denne artikel fokuserer på integration af lærredapps gennem tilpasning, har udviklere også mulighed for at føje en lærredapp til en formular ved hjælp af Visual Studio-udviklingsløsningen. Det kan du gøre ved blot at føje en PowerAppsHostControl til formularen. De metadataegenskaber, der er tilgængelige i kontrolelementet, indeholder de samme egenskaber som tilpasningsfunktionen.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Udvikler] Angiver, hvor en app kan integreres
 

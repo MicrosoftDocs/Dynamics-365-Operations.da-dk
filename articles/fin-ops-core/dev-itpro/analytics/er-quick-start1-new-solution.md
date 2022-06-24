@@ -1,6 +1,6 @@
 ---
 title: Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
-description: Dette emne forklarer, hvordan du kan designe en elektronisk rapporteringsløsning (ER) til udskrivning af en brugerdefineret rapport.
+description: Denne artikel forklarer, hvordan du kan designe en elektronisk rapporteringsløsning (ER) til udskrivning af en brugerdefineret rapport.
 author: NickSelin
 ms.date: 08/10/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847482"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Designe en ny ER-løsning til udskrivning af en brugerdefineret rapport
 

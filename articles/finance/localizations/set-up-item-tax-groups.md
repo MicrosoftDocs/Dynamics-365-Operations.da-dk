@@ -1,6 +1,6 @@
 ---
 title: Konfigurere varemomsgrupper
-description: I dette emne beskrives, hvordan du konfigurerer varemomsgrupper i momsberegningstjenesten.
+description: Denne artikel beskriver, hvordan du konfigurerer varemomsgrupper i momsberegningstjenesten.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 88dd8e2fd9d4d4e5172dcc7b1bd27a70a2f59f03
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 3bc705bc8173ad2bc8ef883e6dc80b0a187314ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846457"
 ---
 # <a name="set-up-item-tax-groups"></a>Konfigurere varemomsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer varemomsgrupper i momsberegningstjenesten. Det forklarer også, hvordan du konfigurerer matrixen for regler for anvendelse af varemomsgrupper og konfigurerer linjer i matrixen.
+Denne artikel beskriver, hvordan du konfigurerer varemomsgrupper i momsberegningstjenesten. Det forklarer også, hvordan du konfigurerer matrixen for regler for anvendelse af varemomsgrupper og konfigurerer linjer i matrixen.
 
 Begrebet varemomsgrupper i tjenesten Momsberegning minder om begrebet varemomsgrupper i Microsoft Dynamics 365 Finance. Det er grupper af momskoder. Tjenesten Momsberegning bruger skæringspunktet for en momsgruppe og en varemomsgruppe til at fastlægge momskoderne.
 

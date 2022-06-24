@@ -1,6 +1,6 @@
 ---
 title: Kontosaldi i Finans
-description: 'I dette emne beskrives to metoder til visning af finanssaldi: listesiden Råbalance og økonomiske rapporter.'
+description: 'I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter.'
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f00f221765e757d8d4c82e1a0e4b8721e33dc321
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874487"
 ---
 # <a name="general-ledger-account-balances"></a>Kontosaldi i Finans
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives to metoder til visning af finanssaldi: listesiden Råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.
+I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.
 
 Der er en række måder, som brugerne kan få vist saldi i Finans på. Nogle af de mest almindelige muligheder er:
 

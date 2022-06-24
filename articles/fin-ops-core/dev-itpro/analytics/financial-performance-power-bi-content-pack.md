@@ -1,6 +1,6 @@
 ---
 title: PowerBI.com-løsning til driftsregnskab
-description: I dette emne beskrives PowerBI.com-løsning til Driftsregnskab.
+description: Denne artikel beskriver PowerBI.com-løsning til Driftsregnskab.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910409"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>PowerBI.com-løsning til driftsregnskab
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Denne PowerBI.com-løsning er forældet som dokumenteret i [Fjernede eller forældede funktioner til Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denne PowerBI.com-løsning er forældet som dokumenteret i [Fjernede eller forældede funktioner til Finans og drift](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-I dette emne beskrives PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
+Denne artikel beskriver PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
 
 ## <a name="main-account-setup"></a>Konfiguration af hovedkonto
 Da organisationer ønsker, at passiver og omsætningsbeløb skal vises som positive beløb i rapporter, er konfigurationen af hovedkonti vigtig. For at disse hovedkonti skal kunne vises som positive beløb, skal hovedkontotypen indstilles til **Passiv** eller **Indtægter**. Når disse kontotyper bruges, bruger rapportering via Power BI omvendte fortegn og viser beløbene som positive beløb.

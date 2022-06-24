@@ -1,6 +1,6 @@
 ---
 title: Importere filer i XML-format med valgfrie attributter
-description: Dette emne giver oplysninger om design af ER-formater, der angiver XML-attributter til fortolkning af indgående elektroniske dokumenter i XML-format.
+description: Denne artikel giver oplysninger om design af ER-formater, der angiver XML-attributter til fortolkning af indgående elektroniske dokumenter i XML-format.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873216"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importere filer i XML-format med valgfrie attributter
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757291"
 
 Du kan designe ER-formater for at parse indgående elektroniske dokumenter i XML-format. Visse attributter af XML-elementer kan angives i designet ER-format som valgfrie. Det giver dig mulighed for at håndtere indgående filer med og uden sådanne XML-attributter korrekt. Derefter kan du bruge indholdet fra disse filer til at opdatere programdata.
 
-Hvis du vil vide mere om denne funktion, skal du udføre trinnene i [(RCS) – Importere filer i XML-format med valgfrie attributter](tasks/import-files-xml-format-optional-attributes.md), der er en del af 7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677). Du kan hente denne opgaveguide og tilknyttede eksempelfiler i [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Hvis du vil vide mere om denne funktion, skal du udføre trinnene i artiklen [(RCS) – Importere filer i XML-format med valgfrie attributter](tasks/import-files-xml-format-optional-attributes.md), der er en del af 7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677). Du kan hente denne opgaveguide og tilknyttede eksempelfiler i [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Indholdsbeskrivelse       | Fil                                                         |
@@ -38,7 +38,7 @@ Hvis du vil vide mere om denne funktion, skal du udføre trinnene i [(RCS) – I
 Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan designe konfiguration af ER-format til at importere filer i XML-format, der indeholder valgfrie attributter. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md). Før du går i gang, kan du hente og gemme filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml lokalt i Microsoft Download Center (https://go.microsoft.com/fwlink/?linkid=874684 ).
 
 1. Gå til **Organisationsadministration** > **Arbejdsområder** > **Elektronisk rapportering**.
-2. Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis denne konfigurationsudbyder ikke vises, skal du fuldføre trinnene i emnet [Opret konfigurationsudbydere, og markér dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis denne konfigurationsudbyder ikke vises, skal du fuldføre trinnene i artiklen [Opret konfigurationsudbydere, og markér dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Klik på **Rapporteringskonfigurationer**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Opret en ny datamodelkonfiguration

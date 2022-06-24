@@ -1,6 +1,6 @@
 ---
 title: Klargøre programmetadata, der skal bruges i RCS
-description: Dette emne beskriver, hvordan du opretter en ny rapporteringskonfiguration, der indeholder applikationsmetadata.
+description: Denne artikel beskriver, hvordan du opretter en ny rapporteringskonfiguration, der indeholder applikationsmetadata.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,23 +13,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868791"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Klargøre programmetadata, der skal bruges i RCS
 [!include [banner](../../includes/banner.md)]
 
-Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny elektronisk rapporteringskonfiguration (ER), der indeholder programmetadata til udformning af ER-modeltilknytningskonfigurationer i RCS (Regulatory Configuration Service). Denne konfiguration bruges til udformning af en eksempel-ER-modeltilknytningskonfiguration for at få adgang til udenlandske handelstransaktioner. I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i enhver virksomhed. For at fuldføre disse trin skal du først fuldføre trinnene i emnet [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).
+Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny elektronisk rapporteringskonfiguration (ER), der indeholder programmetadata til udformning af ER-modeltilknytningskonfigurationer i RCS (Regulatory Configuration Service). Denne konfiguration bruges til udformning af en eksempel-ER-modeltilknytningskonfiguration for at få adgang til udenlandske handelstransaktioner. I dette eksempel skal du oprette en konfiguration til eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i enhver virksomhed. For at fuldføre disse trin skal du først fuldføre trinnene i artiklen [Oprette konfigurationsudbydere og markere dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
 1.    Gå til **Organisationsadministration** > **Arbejdsområder** > **Elektronisk rapportering**. 
 2.    Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som **Aktiv**. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren [Opret konfigurationsudbydere, og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). 
 3.    Klik på **Konfiguration af metadata**. 
-4.    Antag, at RCS bruges til at designe en ER-løsning for et Finance and Operation-program, der vil generere elektroniske dokumenter, der indeholder oplysninger om forretningsdomæe til udenrigshandel. Hvis du vil angive tilknytningen mellem ER-datamodellen og kilderne til de påkrævede data, har vi behov for at få adgang til Finance and Operations i RCS. Som en del af designet af ER-løsningen konfigurerer vi en ny ER-metadatakonfiguration, der indeholder alle de metadata, der i øjeblikket er påkrævet for at generere ER-rapporter for det valgte forretningsdomæne. 
+4.    Antag, at RCS bruges til at designe en ER-løsning for et Finance and Operation-program, der vil generere elektroniske dokumenter, der indeholder oplysninger om forretningsdomæe til udenrigshandel. Hvis du vil angive tilknytningen mellem ER-datamodellen og kilderne til de påkrævede data, har vi behov for at få adgang til Finans og drift i RCS. Som en del af designet af ER-løsningen konfigurerer vi en ny ER-metadatakonfiguration, der indeholder alle de metadata, der i øjeblikket er påkrævet for at generere ER-rapporter for det valgte forretningsdomæne. 
 
 ## <a name="add-metadata-configuration"></a>Tilføj konfiguration af metadata 
 1.    Klik på **Opret konfiguration** for at åbne dialogboksen. 

@@ -1,6 +1,6 @@
 ---
 title: Aktivere fejlfindingstilstand i tjenesten Momsberegning
-description: Dette emne forklarer, hvordan du aktiverer fejlfindingstilstand i tjenesten Momsberegning, så du kan undersøge problemer.
+description: Denne artikel forklarer, hvordan du aktiverer fejlfindingstilstand i tjenesten Momsberegning, så du kan undersøge problemer.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2f526a2341c7ef682209ed979fe686e31ad62a37
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887771"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Aktivere fejlfindingstilstand i tjenesten Momsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du aktiverer fejlfindingstilstand i tjenesten Momsberegning, så du kan undersøge problemer.
+Denne artikel forklarer, hvordan du aktiverer fejlfindingstilstand i tjenesten Momsberegning, så du kan undersøge problemer.
 
 1. Tilføj **&debug=vs%2CconfirmExit&** til URL-adressen til AOS (applikationsobjektserveren), og opdater derefter siden.
 2. Når du vælger **moms** til beregning af moms, åbnes en tekstfil med navnet **TaxServiceTroubleshootingLog.txt**. Filen **TaxServiceTroubleshootingLog.txt** indeholder **TaxableDocument** og beregningsparameteren. Disse resultater returneres fra skattetjenesten og undtagelsesoplysninger i forbindelse med fejlfinding.

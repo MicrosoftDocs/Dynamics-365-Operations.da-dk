@@ -1,6 +1,6 @@
 ---
 title: Microsoft Office-brugergrænsefladestil i styring af forretningsdokumenter (indeholder video)
-description: Dette emne indeholder oplysninger om, hvordan du kan bruge den nye brugergrænseflade til dokumenter i funktionen Styring af forretningsdokumenter i den elektroniske rapportering (ER).
+description: Denne artikel indeholder oplysninger om, hvordan du kan bruge den nye brugergrænseflade til dokumenter i funktionen Styring af forretningsdokumenter i den elektroniske rapportering (ER).
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892219"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office-brugergrænsefladestil for nyt dokument i styring af forretningsdokumenter
 
@@ -28,11 +28,11 @@ ms.locfileid: "8074735"
 
 Styring af forretningsdokumenter gør det muligt for erhvervsbrugere at redigere forretningsdokumentskabeloner ved at bruge en Microsoft Office 365-tjeneste eller det relevante Microsoft Office-skrivebordsprogram. Redigeringer kan omfatte designændringer eller nye installationer, eller brugerne kan tilføje pladsholdere for at medtage yderligere data uden at skulle ændre kildekoden. Du kan finde flere oplysninger om, hvordan du arbejder med Styring af forretningsdokumenter, i [Oversigt over styring af forretningsdokumenter](er-business-document-management.md).
 
-Den nye brugergrænseflade er klarere og mere praktisk at bruge. Området **forretningsdokument** viser kun de skabeloner, der ejes af den aktuelle [aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md) [udbyder](general-electronic-reporting.md#Provider) og findes i den aktuelle forekomst af Dynamics 365 Finance. På den tidligere brugergrænseflade har fanen **Skabelon** vist alle de skabeloner, der var tilgængelige for enhver udbyder. Den viste også alle de skabeloner, der blev oprettet og redigeret af enhver bruger, der havde samme rolle.
+Den nye brugergrænseflade er klarere og mere praktisk at bruge. Området **Forretningsdokument** viser kun de skabeloner, der ejes af den aktuelle [aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md) [udbyder](general-electronic-reporting.md#Provider) og findes i den aktuelle forekomst af Dynamics 365 Finance. På den tidligere brugergrænseflade har fanen **Skabelon** vist alle de skabeloner, der var tilgængelige for enhver udbyder. Den viste også alle de skabeloner, der blev oprettet og redigeret af enhver bruger, der havde samme rolle.
 
 Du kan bruge knappen **Nyt dokument** i arbejdsområdet **Forretningsdokumentstyring** til at oprette og redigere en skabelon i et [Elektronisk rapporteringsformats (ER)](general-electronic-reporting.md) [konfiguration](general-electronic-reporting.md#Configuration), der leveres af en anden udbyder og findes i den aktuelle finansforekomst, eller til at overføre en ny skabelon fra en Excel-projektmappe. Derudover kan du i version 10.0.25 og senere bruge knappen **Nyt dokument** til at oprette og redigere en skabelon i en ER-formatkonfiguration, der er gemt i det [Globale lager](general-electronic-reporting.md#Repository).
 
-I eksemplerne i dette emne er den aktive udbyder Contoso, og du kan bruge den til at oprette en skabelon, der er baseret på en skabelon, der leveres af Microsoft. Du kan også oprette en skabelon ved at overføre din egen skabelon i Excel-format.
+I eksemplerne i denne artikel er den aktive udbyder Contoso, og du kan bruge den til at oprette en skabelon, der er baseret på en skabelon, der leveres af Microsoft. Du kan også oprette en skabelon ved at overføre din egen skabelon i Excel-format.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

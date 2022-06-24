@@ -1,6 +1,6 @@
 ---
 title: Generere konsoliderede regnskaber
-description: I dette emne beskrives de forskellige scenarier, hvor du kan generere konsoliderede regnskaber.
+description: Denne artikel beskriver de forskellige scenarier, hvor du kan generere konsoliderede regnskaber.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846793"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de forskellige scenarier, hvor du kan generere konsoliderede regnskaber.
+Denne artikel beskriver de forskellige scenarier, hvor du kan generere konsoliderede regnskaber.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Konsolideringer på enkeltniveau og på flere niveauer på tværs af juridiske enheder
 Den mest enkle metode til konsolidering ved hjælp af Økonomirapportering er at bruge trædiagrammer til at indsamle data på tværs af regnskaber, der har samme kontoplan og regnskabsperioder. Her er de overordnede trin til at udføre konsolidering ved hjælp af et trædiagram.
@@ -153,7 +153,7 @@ I følgende illustration vises de indstillinger i rapportdefinitionen, hvor du k
 ![Indstillinger for rapportdefinitionens periodenummer.](./media/options-report-definition-period-number.png "Indstillinger for rapportdefinitionens periodenummer")
 
 ## <a name="business-unit-consolidations"></a>Konsolideringer af virksomhedsenheder
-Dette emne har fokuseret på at bruge trædiagramdefinitioner og organisationshierarkier i Økonomirapportering med henblik på konsolidering. Du kan også bruge trædiagrammet til at oprette konsolideringsrapporter for virksomhedsenheden, f.eks. rapporter om globalt salg eller operationer. Disse rapporter er et almindelig krav. Du kan oprette dem ved at vælge et firma og en dimension for hver enhed, som du vil konsolidere for. F.eks. i følgende illustration er akkumuleringen for virksomhedsenheden opnået ved at gentage hver virksomhed i kolonnen **Firma** (kolonne A) og identificere en gruppe af Dimensionsværdi for afdeling pr. firma i kolonnen **Dimensioner** (kolonne D).
+Denne artikel har fokuseret på at bruge trædiagramdefinitioner og organisationshierarkier i Økonomirapportering med henblik på konsolidering. Du kan også bruge trædiagrammet til at oprette konsolideringsrapporter for virksomhedsenheden, f.eks. rapporter om globalt salg eller operationer. Disse rapporter er et almindelig krav. Du kan oprette dem ved at vælge et firma og en dimension for hver enhed, som du vil konsolidere for. F.eks. i følgende illustration er akkumuleringen for virksomhedsenheden opnået ved at gentage hver virksomhed i kolonnen **Firma** (kolonne A) og identificere en gruppe af Dimensionsværdi for afdeling pr. firma i kolonnen **Dimensioner** (kolonne D).
 
 ![Konsolideringsrapporter for virksomhedsenheder.](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for virksomhedsenheder")
 
@@ -218,7 +218,7 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
+Du kan finde flere oplysninger om konsolidering og valutaomregning i den overordnede artikel til denne artikel, [Oversigt over økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Økonomiske konsolideringer online](./consolidate-online.md).
 

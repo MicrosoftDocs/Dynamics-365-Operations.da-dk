@@ -1,6 +1,6 @@
 ---
 title: Referencer til oprindelige fakturaer på kreditnotaer
-description: Dette emne indeholder en forklaring på, hvordan du opretter og udskriver de oprindelige fakturanumre i relaterede kreditnotaer.
+description: Denne artikel indeholder en forklaring på, hvordan du opretter og udskriver de oprindelige fakturanumre i relaterede kreditnotaer.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861525"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Referencer til oprindelige fakturaer på kreditnotaer
 
 [!include [banner](../includes/banner.md)]
 
 
-I nogle lande og områder er der et juridisk krav om, at udskrevne kreditnotaer skal indeholde referencer til de oprindelige fakturaer. Dette emne indeholder en forklaring på, hvordan du opretter og udskriver de oprindelige fakturanumre i relaterede kreditnotaer.
+I nogle lande og områder er der et juridisk krav om, at udskrevne kreditnotaer skal indeholde referencer til de oprindelige fakturaer. Denne artikel indeholder en forklaring på, hvordan du opretter og udskriver de oprindelige fakturanumre i relaterede kreditnotaer.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
 - Brug arbejdsområdet **Funktionsstyring** til at aktivere funktionen **Layout til fakturakreditering i salgs- og projektfakturarapporter**. Få flere oplysninger i [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - De formater til krævede dokumenter, der kan udskrives, skal konfigureres i Udskriftsstyring.
 
-De funktioner, der er beskrevet i dette emne, gælder for følgende dokumenter:
+De funktioner, der er beskrevet i denne artikel, gælder for følgende dokumenter:
 
 **Debitor**
 

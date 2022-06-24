@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til organisationsuddannelse
-description: Dette emne beskriver Power BI-indhold til Finance and Operations – Oversigt over kontanter.
+description: Denne artikel beskriver Finans og drift - Power BI-indhold til organisationsuddannelse.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892415"
 ---
 # <a name="organizational-training-power-bi-content"></a>Power BI-indhold til organisationsuddannelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Power BI-indhold til Finance and Operations – Oversigt over kontanter.
+Denne artikel beskriver Finans og drift - Power BI-indhold til organisationsuddannelse.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter, der er inkluderet i indholdspakken
 Når du har knyttet indholdspakken til dine data, viser rapporterne din organisations data. Hvis du aldrig har brugt Microsoft Power BI før, kan du finde oplysninger om det under [Guidet indføring i Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). De rapporter, der er inkluderet i indholdspakken, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.

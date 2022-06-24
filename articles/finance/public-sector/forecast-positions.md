@@ -1,6 +1,6 @@
 ---
-title: Distribution af budgetteret stilling
-description: Dette emne indeholder oplysninger om funktionen til budgettering af stillinger, der er tilgængelige for den offentlige sektor.
+title: Budgetplanlægning af fordeling af stillinger
+description: Denne artikel indeholder oplysninger om funktionen til budgettering af stillinger, der er tilgængelige for den offentlige sektor.
 author: velofog
 ms.date: 08/07/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: public sector
 ms.author: twheeloc
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dffbd2d05a21a73d25ec70082cfe16e8f023cbf2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 8f5ea56154731696cf3e066bf728f0611daa2f02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848421"
 ---
 # <a name="forecast-position-distribution"></a>Distribution af budgetteret stilling 
 

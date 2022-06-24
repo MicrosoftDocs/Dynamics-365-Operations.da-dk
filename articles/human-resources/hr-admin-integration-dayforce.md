@@ -1,6 +1,6 @@
 ---
 title: Konfigurere integration med Dayforce
-description: Dette emne beskriver de krævede konfigurationstrin for integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
+description: Denne artikel beskriver de krævede konfigurationstrin for integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896128"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurere integration med Dayforce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691326"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integration mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
+Integrationen mellem Microsoft Dynamics 365 Human Resources og Ceridian Dayforce er baseret på flere konfigurationstrin, der er beskrevet i dette emne. Du skal konfigurere integrationen i både Human Resources og Dayforce, før du kan behandle en lønkørsel.
 
 Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal du aktivere integrationen i Human Resources. Integrationen kræver bestemte data fra Human Resources. Du skal derfor kontrollere, at data, der er knyttet til Dayforce, er konfigureret i Human Resources på en måde, der understøtter integrationen. Integrationen bruger følgende brede kategorier af data.
 
@@ -37,7 +37,7 @@ Når du bruger en tjeneste, f.eks. Dayforce, til at fuldføre lønkørsler, skal
 - Lønoplysninger, f.eks. løncyklusser, betalingsperioder og lønkoder
 - Arbejderdata
 
-Dette emne beskriver den fremgangsmåde, du skal følge for at aktivere integrationen, og hvilke datatyper og konfigurationsdetaljer der kræves til integrationen.
+Denne artikel beskriver den fremgangsmåde, du skal følge for at aktivere integrationen, og hvilke datatyper og konfigurationsdetaljer der kræves til integrationen.
 
 ## <a name="enable-the-integration"></a>Aktivere integrationen.
 

@@ -1,6 +1,6 @@
 ---
-title: Importere valutakurser
-description: Dette emne indeholder oplysninger om kravene til import af referencekurser for udenlandsk valuta, der udgives af valutakursudbydere.
+title: Importér valutakurser
+description: Denne artikel indeholder oplysninger om kravene til import af referencekurser for udenlandsk valuta, der udgives af valutakursudbydere.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27f9b06646d9ce948a6b4528c38c5df9784b24b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894929"
 ---
 # <a name="import-currency-exchange-rates"></a>Importere valutakurser
 
 [!include [banner](../includes/banner.md)]
 
-Hvis en juridisk enhed har modtaget fakturaer i fremmed valuta, er det nødvendigt at omregne den udenlandske valuta til den lokale valuta. Det betyder, at der kræves opdaterede valutakurser for forskellige valutaer. Dette emne indeholder en oversigt over de nødvendige indstillinger og behandling for import af udenlandske valutakursreferencer, der udgives af valutakursudbydere som den Europæiske Centralbank og den russiske centralbank.
+Hvis en juridisk enhed har modtaget fakturaer i fremmed valuta, er det nødvendigt at omregne den udenlandske valuta til den lokale valuta. Det betyder, at der kræves opdaterede valutakurser for forskellige valutaer. Denne artikel indeholder en oversigt over de nødvendige indstillinger og behandling for import af udenlandske valutakursreferencer, der udgives af valutakursudbydere som den Europæiske Centralbank og den russiske centralbank.
 
 I følgende afsnit beskrives strømmen af oplysninger, der bruges til konfiguration og behandling af importen af udenlandske valutakurser.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurere en valutakursudbyder
-Før du kan importere valutakurser, skal du angive de oplysninger, der kræves af de udbydere, som tilbyder valutakurserne. Brug siden **Konfigurer valutakursudbydere** til at vælge valutakursudbyderne. Nogle udbydere er inkluderet i demodataene i Dynamics 365 Finance. Følgende tabel indeholder en beskrivelse af kontrolelementerne på denne side.
+Før du kan importere valutakurser, skal du angive de oplysninger, der kræves af de udbydere, som tilbyder valutakurserne. Brug siden **Konfigurer valutakursudbydere** til at vælge valutakursudbyderne. Nogle valutakursudbydere er inkluderet i demodataene i Dynamics 365 Finance. Følgende tabel indeholder en beskrivelse af kontrolelementerne på denne side.
 
 | Felt | Betegnelse                   |
 |-----------|-----------------------------------|

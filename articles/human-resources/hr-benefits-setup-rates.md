@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868153"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -47,7 +47,7 @@ Brug satser til at bestemme, hvor meget medarbejdere og arbejdsgiver betaler for
    | **Gyldig fra** | Den dato, hvor satsen træder i kraft. Den aktuelle systemdato er standardværdien. Denne dato skal være på eller før frynsegodeperioden. Det er god praksis at angive denne dato til datoen for frynsegodeplanen. |
    | **Udløb** | Satsens slutdato. 31-12-2154 (som repræsenterer aldrig) er standardværdien. |
    | **Brug lag** |  Brug dette felt, hvis du har logik, der skal bruges til bestemmelse af en sats. Hvis en sats f.eks. skal stige på baggrund af alder, skal du vælge en værdi her. Vælg **Enkelt niveau** for én frynsegodesats med enkelt niveau eller **Dobbeltniveau** for en frynsegodesats med to niveauer. Et eksempel på et dobbeltniveau er et niveau, der er baseret på køn og alder. Når du har valgt en værdi, skal du vælge **Handlinger** og derefter vælge **Niveausatser**. Hvis du har en flad sats, der ikke ændres, skal du lade dette felt være tomt. |
-   | **Betalingshyppighed** | Angiv, hvor ofte frynsegodetillægssatsen skal udbetales til frynsegodeudbyderen. De satser, du angiver på den side, der beskrives senere i dette emne, bliver baseret på den betalingsfrekvens, som du angiver her. Hvis du f.eks. angiver **Månedlig** i dette felt og angiver en medarbejdersats på **$100**, antages det, at frynsegodet vil koste medarbejderen $100 pr. måned. En medarbejder kan dog blive betalt to gange om måneden på baggrund af den betalingsfrekvens for frynsegodet, som er angivet i medarbejderposten. Når medarbejderen i dette tilfælde logger på **medarbejderens selvbetjening**, vil det beløb, de betaler, være $50, fordi den sats, som **medarbejderens selvbetjening** viser, er baseret på medarbejderens betalingsfrekvens. |
+   | **Betalingshyppighed** | Angiv, hvor ofte frynsegodetillægssatsen skal udbetales til frynsegodeudbyderen. De satser, du angiver på den side, der beskrives senere i denne artikel, bliver baseret på den betalingsfrekvens, som du angiver her. Hvis du f.eks. angiver **Månedlig** i dette felt og angiver en medarbejdersats på **$100**, antages det, at frynsegodet vil koste medarbejderen $100 pr. måned. En medarbejder kan dog blive betalt to gange om måneden på baggrund af den betalingsfrekvens for frynsegodet, som er angivet i medarbejderposten. Når medarbejderen i dette tilfælde logger på **medarbejderens selvbetjening**, vil det beløb, de betaler, være $50, fordi den sats, som **medarbejderens selvbetjening** viser, er baseret på medarbejderens betalingsfrekvens. |
    | **Afrunding af lønfrekvenssats** | Der findes følgende metoder til afrunding af satser: Standard, Afkortet, Normal, Nedad og Oprunding. </br></br><ul><li>**Standard** – Rund altid op. 10,611 afrundes for eksempel til 10,62. -10,231 afrundes til -10,23. </li><li>**Afkortet** – Rund altid ned. 10,619 afrundes for eksempel til 10,61. -10,231 afrundes til -10,24. </li><li>**Normal** – Decimalværdier, der slutter på eller er større end 5, afrundes fra nul. Decimalværdier, der slutter på eller er mindre end 4, afrundes mod nul. 10,615 afrundes for eksempel til 10,62. -10,235 afrundes til -10,24. 10,614 afrundes til 10,61. -10,234 afrundes til -10,23. </li><li>**Nedad** – Afrund mod nul. 10,619 afrundes for eksempel til 10,61. -10,231 afrundes til -10,23. </li><li>**Oprunding** – Afrund væk fra nul. 10,619 afrundes for eksempel til 10,62. -10,231 afrundes til -10,24. |
    | **Medarbejderbeløb for ikke-ryger** | Det beløb, som frynsegodeudbyderen fakturerer for en medarbejder, der ikke ryger. Det er det beløb, som arbejdsgiveren betaler til frynsegodeudbyderen og bør baseres på betalingsfrekvensen for satsopsætningen. |
    | **Arbejdsgiverbeløb for ikke-ryger** | Det beløb, som frynsegodeudbyderen fakturerer for en medarbejder, der ikke ryger. Det er det beløb, som arbejdsgiveren betaler til frynsegodeudbyderen, og det bør baseres på betalingsfrekvensen for satsopsætningen. |

@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål om elektronisk fakturering
-description: Dette emne indeholder oplysninger om ofte stillede spørgsmål om elektronisk fakturering.
+description: Denne artikel indeholder oplysninger om ofte stillede spørgsmål om elektronisk fakturering.
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2d4e7c79c83b9d60469c2b87a7b9120e0d4c13a695badfb2254a85cee629c933
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbb43438a9da567460eb744afb64dae5274f04a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904348"
 ---
 # <a name="electronic-invoicing-faq"></a>Ofte stillede spørgsmål om elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne besvarer ofte stillede spørgsmål om tjenesten Elektronisk fakturering. Elektronisk fakturering udvider de funktioner for elektronisk fakturering, der findes i Dynamics 365 Finance, Dynamics 365 Supply Chain Management og Dynamics 365 Project Operations. 
+Denne artikel besvarer ofte stillede spørgsmål om tjenesten Elektronisk fakturering. Elektronisk fakturering udvider de funktioner for elektronisk fakturering, der findes i Dynamics 365 Finance, Dynamics 365 Supply Chain Management og Dynamics 365 Project Operations. 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>Hvad er vigtigt ved elektronisk fakturering, og hvorfor skal det være en opgave for min organisation?
 
@@ -54,7 +54,7 @@ Den aktuelle platform tillader ikke brugen af versionen i det lokale miljø, og 
 
 ## <a name="does-electronic-invoicing-service-interface-with-the-vendor-import-automation-feature"></a>Rummer grænsefladen for tjenesten Elektronisk fakturering funktionen til automatisk kreditorimport?
 
-Nr. Der er planer for denne grænseflade, men der er ingen planlagt tidslinje. Når det er planlagt, oplyses datoerne på forhånd i [Frigivelsesplaner](/dynamics365/release-plans/).
+Nej Der er planer for denne grænseflade, men der er ingen planlagt tidslinje. Når det er planlagt, oplyses datoerne på forhånd i [Frigivelsesplaner](/dynamics365/release-plans/).
 
 ## <a name="how-does-electronic-invoicing-service-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>Hvordan håndterer tjenesten Elektronisk fakturering vedhæftede filer i den elektroniske faktura? Er der brug for en SharePoint-server, når der integreres PDF-filer i XML-filen?
 

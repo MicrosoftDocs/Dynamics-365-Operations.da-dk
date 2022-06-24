@@ -1,6 +1,6 @@
 ---
 title: Registrere certifikatnumre for skatterefundering
-description: Dette emne forklarer, hvordan du bruger siden Refusionscertifikater for at registrere certifikatnumrene og datoer på certifikater for kildeskat (TDS – Tax Deducted at Source), der er modtaget for en specifik kreditor-, debitor- og finanskonti.
+description: Denne artikel forklarer, hvordan du bruger siden Refusionscertifikater for at registrere certifikatnumrene og datoer på certifikater for kildeskat (TDS – Tax Deducted at Source), der er modtaget for en specifik kreditor-, debitor- og finanskonti.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853250"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Registrere certifikatnumre for skatterefundering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du bruger siden **Refusionscertifikater** for at registrere certifikatnumrene og datoer på certifikater for kildeskat (TDS – Tax Deducted at Source), der er modtaget for en specifik kreditor-, debitor- og finanskonti. Hvis du vil opdatere skattecertifikatnumre og -datoer, der er registreret for skattetransaktioner på denne side, skal du bruge siden **Opdater certifikat** (**Finans \> Periodisk \> A-skat \> Opdater certifikat**). Når du er færdig med at opdatere skattecertifikatnumre, skal du lukke dem.
+Denne artikel forklarer, hvordan du bruger siden **Refusionscertifikater** for at registrere certifikatnumrene og datoer på certifikater for kildeskat (TDS – Tax Deducted at Source), der er modtaget for en specifik kreditor-, debitor- og finanskonti. Hvis du vil opdatere skattecertifikatnumre og -datoer, der er registreret for skattetransaktioner på denne side, skal du bruge siden **Opdater certifikat** (**Finans \> Periodisk \> A-skat \> Opdater certifikat**). Når du er færdig med at opdatere skattecertifikatnumre, skal du lukke dem.
 
 Følg disse trin for at registrere numre og -datoer for skattecertifikater.
 

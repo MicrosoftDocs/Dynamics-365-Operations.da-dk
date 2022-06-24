@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og behandle mellembetalinger
-description: I dette emne beskrives, hvordan du kan konfigurere og behandle kunders mellembetalinger. En mellembetaling er en betaling, der bogføres i finans i to trin.
+description: Denne artikel beskriver, hvordan du kan konfigurere og behandle kunders mellembetalinger. En mellembetaling er en betaling, der bogføres i finans i to trin.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887971"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Konfigurere og behandle mellembetalinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734185"
 
 En mellembetaling er en betaling, der bogføres i finans i to trin. Denne metode bruges typisk, når betalingsmåden er angivet til **Bank**, og du kun skal bogføre transaktioner på bankkontoen, når transaktionen er clearet i banken. Du kan dog også bruge den til en finanskonto. I dette tilfælde flytter systemet beløbet fra én hovedkonto til en anden hovedkonto, når mellemkonteringen behandles.
 
-Du kan oprette mellembetalinger fra enten Kreditor eller Debitor. Selvom dette emne forklarer, hvordan du kan konfigurere mellemkontering for Debitor, er trinnene for kreditortransaktioner næsten ens.
+Du kan oprette mellembetalinger fra enten Kreditor eller Debitor. Selvom denne artikel forklarer, hvordan du kan konfigurere mellemkontering for Debitor, er trinnene for kreditortransaktioner næsten ens.
 
 ## <a name="set-up-bridging-posting"></a>Konfigurere mellemkontering
 

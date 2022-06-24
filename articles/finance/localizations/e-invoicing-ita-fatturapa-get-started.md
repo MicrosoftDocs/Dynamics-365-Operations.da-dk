@@ -1,6 +1,6 @@
 ---
 title: Konfigurere direkte integration af italiensk FatturaPA med SDI
-description: Dette emne indeholder oplysninger, der kan hjælpe dig med at komme i gang med elektronisk fakturering for Italien og oprette direkte integration af italiensk FatturaPA med udvekslingssystemet (SDI).
+description: Denne artikel indeholder oplysninger, der kan hjælpe dig med at komme i gang med elektronisk fakturering for Italien og oprette direkte integration af italiensk FatturaPA med udvekslingssystemet (SDI).
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853186"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Konfigurere direkte integration af italiensk FatturaPA med SDI
 
@@ -24,23 +24,23 @@ ms.locfileid: "7984797"
 > [!IMPORTANT]
 > Elektronisk fakturering for Italien understøtter i øjeblikket muligvis ikke alle de funktioner, der er tilgængelige for elektroniske fakturaer i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 
-Dette emne indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Italien i Finance og Supply Chain Management. Det fører dig gennem de konfigurationstrin, der er lande-/områdeafhængige i Regulatory Configuration Services (RCS). Disse trin supplerer de trin, der er beskrevet i [Kom i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne artikel indeholder oplysninger, der hjælper dig med at komme i gang med elektronisk fakturering for Italien i Finance og Supply Chain Management. Det fører dig gennem de konfigurationstrin, der er lande-/områdeafhængige i Regulatory Configuration Services (RCS). Disse trin supplerer de trin, der er beskrevet i [Kom i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Følgende forudsætninger skal være opfyldt, før du kan fuldføre trinnene i dette emne:
+Følgende forudsætninger skal være opfyldt, før du kan fuldføre trinnene i denne artikel:
 
 - Udfør trinnene i [Start her med elektronisk fakturering](e-invoicing-get-started.md).
-- Importer den elektroniske faktureringsfunktion **Italiensk FatturaPA (IT)** til RCS fra det globale lager. Yderligere oplysninger finder du i afsnittet [Importere en elektronisk faktureringsfunktion fra Microsoft-konfigurationsudbyder](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) i det tidligere nævnte emne "Kom i gang med elektronisk fakturering".
-- Tilføj links fra de påkrævede certifikater til servicemiljøet. De påkrævede certifikater omfatter certifikatet Digital signatur, nøglecenter og klientens certifikat. Der er flere oplysninger i [Oprette en digital certifikathemmelighed](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) i emnet "Start her med serviceadministration i elektronisk fakturering".
+- Importer den elektroniske faktureringsfunktion **Italiensk FatturaPA (IT)** til RCS fra det globale lager. Yderligere oplysninger finder du i afsnittet [Importere en elektronisk faktureringsfunktion fra Microsoft-konfigurationsudbyder](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) i den tidligere nævnte artikel "Kom i gang med elektronisk fakturering".
+- Tilføj links fra de påkrævede certifikater til servicemiljøet. De påkrævede certifikater omfatter certifikatet Digital signatur, nøglecenter og klientens certifikat. Der er flere oplysninger i [Oprette en digital certifikathemmelighed](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) i artiklen "Start her med serviceadministration i elektronisk fakturering".
 
 ## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Den landespecifikke konfiguration til den elektroniske fakturafunktion Italiensk FatturaPA (IT)
 
 Udfør følgende trin, før du installerer programopsætningen på din tilknyttede app Finance eller Supply Chain Management.
 
-Dette afsnit supplerer afsnittet [Landespecifik konfiguration af programopsætning](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) i emnet "Start her med elektronisk fakturering".
+Dette afsnit supplerer afsnittet [Landespecifik konfiguration af programopsætning](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) i artiklen "Start her med elektronisk fakturering".
 
-### <a name="create-a-new-feature"></a>Oprette en ny funktion
+### <a name="create-a-new-feature"></a>Opret en ny funktion
 
 1. Log på RCS.
 2. I afsnittet **Konfigurationsudbydere** i arbejdsområdet **Elektronisk rapportering** skal du markere dit firmas konfigurationsudbyder som aktiv.
@@ -87,8 +87,8 @@ Dette afsnit supplerer afsnittet [Landespecifik konfiguration af programopsætni
 
 ### <a name="deploy-the-feature"></a>Udrulle funktionen
 
-1. Fuldfør, publicer og udrul funktionen til servicemiljøet. Yderligere oplysninger finder du i afsnittet [Implementere funktionen Elektronisk fakturering i servicemiljøet](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) i emnet "Kom i gang med elektronisk fakturering".
-2. Udrul funktionen til det tilknyttede program. Yderligere oplysninger finder du i afsnittet [Implementere funktionen Elektronisk fakturering i tilknyttet program](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) i emnet "Kom i gang med elektronisk fakturering".
+1. Fuldfør, publicer og udrul funktionen til servicemiljøet. Yderligere oplysninger finder du i afsnittet [Implementere funktionen Elektronisk fakturering i servicemiljøet](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) i artiklen "Kom i gang med elektronisk fakturering".
+2. Udrul funktionen til det tilknyttede program. Yderligere oplysninger finder du i afsnittet [Implementere funktionen Elektronisk fakturering i tilknyttet program](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) i artiklen "Kom i gang med elektronisk fakturering".
 
 ### <a name="set-up-finance"></a>Konfigurere Finance
 

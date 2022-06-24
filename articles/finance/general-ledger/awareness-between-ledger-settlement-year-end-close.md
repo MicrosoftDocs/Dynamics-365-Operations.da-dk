@@ -1,6 +1,6 @@
 ---
 title: Opmærksomhed mellem finansudligning og årsafslutning
-description: Dette emne indeholder oplysninger om forbedringer, der påvirker finansudligninger og finansårsafslutninger.
+description: Denne artikel indeholder oplysninger om forbedringer, der påvirker finansudligninger og finansårsafslutninger.
 author: kweekley
 ms.date: 04/06/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: 30d3cc0bbd97cd006f12d06cda64ee63cb42252e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902510"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Opmærksomhed mellem finansudligning og årsafslutning
 

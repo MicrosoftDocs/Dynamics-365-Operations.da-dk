@@ -1,6 +1,6 @@
 ---
 title: Konfiguration af kreditstyringsparametre
-description: I dette emne beskrives de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
+description: Denne artikel beskriver de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
 author: JodiChristiansen
 ms.date: 12/10/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876348"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov. Når du vil begynde at bruge kreditstyringsfunktioner, skal du konfigurere parametrene på siden **Parametre for Kredit og inkasso** (**Kredit \> Konfiguration \> Parametre for Kredit og inkasso**).
+Denne artikel beskriver de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov. Når du vil begynde at bruge kreditstyringsfunktioner, skal du konfigurere parametrene på siden **Parametre for Kredit og inkasso** (**Kredit \> Konfiguration \> Parametre for Kredit og inkasso**).
 
 ## <a name="credit-parameters"></a>Kreditparametre
 

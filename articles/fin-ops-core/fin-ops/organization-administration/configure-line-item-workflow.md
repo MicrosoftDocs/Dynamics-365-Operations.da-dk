@@ -1,6 +1,6 @@
 ---
 title: Konfigurere arbejdsgange for linjeelementer
-description: Dette emne forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
+description: Denne artikel forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
 author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d6d9dcb99e00d4ce3f99e525a72421cb12af178
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 511493df4c897c0a8d2c53db2c9c893aa43d3589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889230"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurere arbejdsgange for linjeelementer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070115"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emne forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
+Denne artikel forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
 
 Hvis du vil konfigurere et element i en arbejdsgang for linjeelementer i arbejdsgangseditoren, skal du højreklikke på elementet og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter nedenstående procedure til at konfigurere egenskaberne for et element i en arbejdsgang for linjeelementer.
 

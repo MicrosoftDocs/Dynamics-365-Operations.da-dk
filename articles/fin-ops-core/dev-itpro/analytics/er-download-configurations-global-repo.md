@@ -1,6 +1,6 @@
 ---
 title: Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
-description: Dette emne forklarer, hvordan du kan hente ER-konfigurationer (elektronisk rapportering) fra det globale lager til Konfigurationstjenesten.
+description: Denne artikel forklarer, hvordan du kan hente ER-konfigurationer (elektronisk rapportering) fra det globale lager til Konfigurationstjenesten.
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891898"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Hente ER-konfigurationer fra det globale lager til Konfigurationstjenesten
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Denne artikel forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapportering)](general-electronic-reporting.md#Configuration) fra det globale lager til konfigurationstjenesten. Du kan finde flere oplysninger under [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurationstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Åbn konfigurationslageret
 
@@ -80,7 +80,7 @@ Dette emne forklarer, hvordan du kan hente [ER-konfigurationer (elektronisk rapp
     ![Siden Konfigurationslager, oversigtspanelet Versioner, knappen Import.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Før du kan bruge den importerede konfigurationsversion, skal du løse problemerne. Se listen over relaterede ressourcer i dette emne for at få flere oplysninger.
+> Konfigurationer valideres, efter de er importeret, afhængigt af ER-indstillingerne. Du kan blive underrettet om eventuelle uoverensstemmelsesproblemer, der er opdaget. Før du kan bruge den importerede konfigurationsversion, skal du løse problemerne. Se listen over relaterede ressourcer i denne artikel for at få flere oplysninger.
 
 > [!NOTE]
 > ER-konfigurationer kan konfigureres som værende afhængige af andre konfigurationer. Sammen med en valgt konfiguration kan andre konfigurationer derfor blive importeret automatisk. Yderligere oplysninger om konfigurationsafhængigheder finder du i [Definere afhængigheden for ER-konfigurationer af andre komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).

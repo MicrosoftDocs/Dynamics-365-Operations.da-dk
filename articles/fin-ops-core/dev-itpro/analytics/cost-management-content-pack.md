@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til omkostningsstyring
-description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring.
+description: Denne artikel beskriver, hvad der skal medtages i Power BI-indhold til omkostningsstyring.
 author: ShylaThompson
 ms.date: 03/16/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 98c0097c2df25bafc842c9828d8ff282f5f683a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876857"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
@@ -168,7 +168,7 @@ Data fra programmet bruges til at udfylde rapportsiderne i Power BI-indhold til 
 
 De vigtigste samlede målinger for følgende objekter bruges som grundlag af Power BI-indholdet.
 
-| Objekt                          | Samlede nøglemålinger | Datakilde for Finance and Operations | Felt               |
+| Objekt                          | Samlede nøglemålinger | Datakilde til Finans og drift | Felt               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Beløb                     | CostObjectStatementCache               | Beløb              |
 | CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Antal                 |

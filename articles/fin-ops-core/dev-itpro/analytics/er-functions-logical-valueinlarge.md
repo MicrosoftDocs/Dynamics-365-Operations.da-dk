@@ -1,6 +1,6 @@
 ---
 title: ER-funktionen VALUEINLARGE
-description: Dette emne indeholder oplysninger om, hvordan funktionen VALUEINLARGE til elektronisk rapportering (ER) skal anvendes.
+description: Denne artikel indeholder oplysninger om, hvordan funktionen VALUEINLARGE til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 ms.date: 08/17/2020
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 57b2246631b31cce10d086da29e76b729059a64aa6a3c2d8cf864dd70085dbfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 977c1cd7dac75781677461b288bc8e5e79d13e6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888139"
 ---
 # <a name="valueinlarge-er-function"></a>ER-funktionen VALUEINLARGE
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen `VALUEINLARGE` afgør, om det angivne input af typen *Int64* eller *Heltal* svarer til en værdi for et angivet element på den angivne liste. Funktionen returnerer en *Boolesk* værdi som værende **SAND**, hvis det angivne input svarer til resultatet af kørslen med det angivne udtryk for mindst én post på den angivne liste. Ellers returneres en *Boolesk* værdi på **FALSK**. Hvis du vil forstå forskellen med `VALUEIN`-funktionen, skal du se afsnittet [Bemærkninger til brug](#usage_note) senere i dette emne.
+Funktionen `VALUEINLARGE` afgør, om det angivne input af typen *Int64* eller *Heltal* svarer til en værdi for et angivet element på den angivne liste. Funktionen returnerer en *Boolesk* værdi som værende **SAND**, hvis det angivne input svarer til resultatet af kørslen med det angivne udtryk for mindst én post på den angivne liste. Ellers returneres en *Boolesk* værdi på **FALSK**. Hvis du vil forstå forskellen med `VALUEIN`-funktionen, skal du se afsnittet [Bemærkninger til brug](#usage_note) senere i denne artikel.
 
 ## <a name="syntax"></a>Syntaks
 

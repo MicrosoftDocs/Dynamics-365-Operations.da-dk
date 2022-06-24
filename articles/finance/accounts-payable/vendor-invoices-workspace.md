@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområde for automatisering af kreditorfakturaer
-description: Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI.
+description: Denne artikel forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2b74731a3283badad941e567e85f8a1644f6ad18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865795"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Arbejdsområde for automatisering af kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emne forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI. Oplysningerne om kreditorfakturaen i dette arbejdsområde filtreres for bestemte brugere og vises i grafisk format.
+Denne artikel forklarer, hvordan du konfigurerer det arbejdsområde, der er relateret til kreditorfakturaer, og som viser de oplysninger, der er tilgængelige via Microsoft Power BI. Oplysningerne om kreditorfakturaen i dette arbejdsområde filtreres for bestemte brugere og vises i grafisk format.
 
 ## <a name="overview"></a>Overblik
 

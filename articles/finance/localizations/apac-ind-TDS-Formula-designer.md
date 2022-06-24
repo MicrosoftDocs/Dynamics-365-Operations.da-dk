@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner til skatteberegninger
-description: Dette emne viser et eksempel på, hvordan kildeskat (TDS – Tax Deducted at Source) beregnes på basis af den formel, der er defineret for hver kildeskattekode i kildeskattegruppen, der er tilknyttet transaktionen.
+description: Denne artikel viser et eksempel på, hvordan kildeskat (TDS – Tax Deducted at Source) beregnes på basis af den formel, der er defineret for hver kildeskattekode i kildeskattegruppen, der er tilknyttet transaktionen.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e60db55fd3bbcfb8dc34670b3bbbd39336b04efb
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1196f7258c898a55f3f29ddce7457e6f527185d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889855"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Formeldesigner til skatteberegninger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser et eksempel på, hvordan kildeskat (TDS – Tax Deducted at Source) beregnes på basis af den formel, der er defineret for hver kildeskattekode. Kildeskattekoder defineres i den kildeskattegruppe, der er tilknyttet transaktionen. Før du designer skatteformler, skal du fuldføre den grundlæggende opsætning, der kræves for kildeskat, som angivet i følgende fremgangsmåde. 
+Denne artikel viser et eksempel på, hvordan kildeskat (TDS – Tax Deducted at Source) beregnes på basis af den formel, der er defineret for hver kildeskattekode. Kildeskattekoder defineres i den kildeskattegruppe, der er tilknyttet transaktionen. Før du designer skatteformler, skal du fuldføre den grundlæggende opsætning, der kræves for kildeskat, som angivet i følgende fremgangsmåde. 
 
 - Konfigurer grupper af skattekomponenter ved hjælp af siden **Komponentgrupper for A-skat**. 
 - Konfigurer skattekomponenter, og knyt skattekomponentgruppen til skattekomponenterne ved hjælp af siden **Komponenter for A-skat**. 

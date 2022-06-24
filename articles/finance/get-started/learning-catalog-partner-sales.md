@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 219380f2fe44caa56869da05317cbeb4377cc8be7336d01cd65dc5c7eda05442
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e49b63bf7c88b40010967a7f8c1de571e6d7485
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845252"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Undervisningskatalog til Microsoft Partner-salgs- og marketingroller for Dynamics 365 Finance
 
@@ -31,7 +31,7 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 |-------------|-----------------|-------------|------------|
 | [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 7 timer |
 | [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer |
-| [Kom i gang med Finance and Operations-apps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finance and Operations-apps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finance and Operations-apps skal du være bekendt med deres funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
+| [Kom i gang med Finans- og driftsapps](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan Finans- og driftsapps understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger. Som det første skridt i dit arbejdsforløb med Finans- og driftsapps skal du være bekendt med dets funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Kom i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance giver erhvervsbrugere mulighed for at tilpasse sig hurtigt til skiftende virksomhedsmiljøer. Det giver dem alt, hvad de skal bruge for at styre økonomien og styre midler med nøjagtige oplysninger når som helst i forbindelse med finansiel planlægning og budgettering og holde sig ajour med analyseværtøjer. Da økonomien er kernen i en hvilken som helst virksomhed, er det vigtigt at være bekendt med funktionerne i Dynamics 365 Finance. | Gratis onlinelæringsmodul i dit eget tempo | 1 time |
 | [Kursus MB-900T01-A: Grundlæggende funktioner i Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dette kursus giver kendskab til funktionerne i Dynamics 365 og forretningsværdien. Kurset dækker Dynamics 365-programmer, Power Platform, skybegreber, sikkerhedsmodellen og licensovervejelserne. | Instruktørstyret personlig eller online undervisning, hvor omkostninger varierer alt efter region og partner | 1 dag |
 

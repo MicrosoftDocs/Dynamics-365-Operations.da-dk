@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2964be0b02d6a5553bad9a1b3788a5f1efb208ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: be8001428cf2df111458fddd0ecbcdae0daf9b25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863066"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Oprette posteringsprofiler for anlægsaktiver
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure viser, hvordan du definerer posteringsprofiler for anlægsaktiver. Eksemplerne i emnet er for en grundlæggende posteringsprofil, men der skal oprettes posteringsprofiler for din specifikke kontoplan og på grund af krav til finansiel rapportering.
+Denne procedure viser, hvordan du definerer posteringsprofiler for anlægsaktiver. Eksemplerne i artiklen er for en grundlæggende posteringsprofil, men der skal oprettes posteringsprofiler for din specifikke kontoplan og på grund af krav til finansiel rapportering.
 
 1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Opsætning > Posteringsprofiler for anlægsaktiver**.
 2. Klik på **Ny**.

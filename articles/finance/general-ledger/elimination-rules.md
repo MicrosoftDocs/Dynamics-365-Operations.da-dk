@@ -1,6 +1,6 @@
 ---
 title: Elimineringsregler
-description: Dette emne indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
+description: Denne artikel indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722627"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864304"
 ---
 # <a name="elimination-rules"></a>Elimineringsregler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
+Denne artikel indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
 
 Der kræves elimineringsposteringer, når en juridisk enhed for et moderselskab har forretninger med en eller flere juridiske enheder for datterselskaber og bruger konsolideret regnskabsaflæggelse. Konsoliderede regnskaber må kun indeholde transaktioner, der opstår mellem den konsoliderede organisation og de andre enheder uden for de pågældende organisationer. Derfor skal transaktioner mellem de juridiske enheder, der er del af samme organisation, være fjernet, eller elimineret, fra Finans, så de ikke vises i regnskabsrapporter. Der er flere måder at rapportere om elimineringer på:
 
@@ -34,7 +34,7 @@ Der kræves elimineringsposteringer, når en juridisk enhed for et moderselskab 
 -   Regnskabsaflæggelse kan bruges til at vise elimineringskonti og -dimensioner for en bestemt række eller kolonne.
 -   En særskilt juridisk enhed kan bruges til at bogføre manuelle transaktionsposter for at spore elimineringer.
 
-I dette emne beskrives de elimineringsregler, der behandles i et konsolidering-s eller elimineringsregnskab. Du kan oprette elimineringsregler for at oprette elimineringsposteringer i en juridisk enhed, der er angivet som juridisk destinationsenhed for elimineringer. Denne juridiske destinationsenhed er kendt som juridisk enhed til elimineringen. Der kan oprettes elimineringskladder enten under konsolideringsprocessen eller ved hjælp af et elimineringskladdeforslag. Før du opretter elimineringsregler, skal du sætte dig ind i følgende begreber:
+Denne artikel beskriver de elimineringsregler, der behandles i et konsolidering-s eller elimineringsregnskab. Du kan oprette elimineringsregler for at oprette elimineringsposteringer i en juridisk enhed, der er angivet som juridisk destinationsenhed for elimineringer. Denne juridiske destinationsenhed er kendt som juridisk enhed til elimineringen. Der kan oprettes elimineringskladder enten under konsolideringsprocessen eller ved hjælp af et elimineringskladdeforslag. Før du opretter elimineringsregler, skal du sætte dig ind i følgende begreber:
 
 -   **Juridisk kildeenhed** – Den juridiske enhed, hvor de beløb, der elimineres, blev bogført.
 -   **Juridisk destinationsenhed** – Den juridiske enhed, hvor elimineringsregler bogføres.

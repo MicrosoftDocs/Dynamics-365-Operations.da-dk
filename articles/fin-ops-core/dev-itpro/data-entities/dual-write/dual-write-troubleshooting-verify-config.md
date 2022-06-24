@@ -1,6 +1,6 @@
 ---
-title: Bekræfte dobbeltskrivningskonfiguration i Finans og drift-apps og Dataverse
-description: I dette emne forklares det, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
+title: Bekræfte dobbeltskrivningskonfiguration i programmer til finans og drift og Dataverse
+description: Denne artikel forklarer, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884453"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Bekræfte dobbeltskrivningskonfiguration i Finans og drift-apps og Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Bekræfte dobbeltskrivningskonfiguration i programmer til finans og drift og Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8062794"
 
 
 
-Dette emne indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Der redegøres specifikt for, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
+Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Der redegøres specifikt for, hvordan du kan bestemme, om dobbeltskrivning er konfigureret i Finans- og driftsapps og i Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Bekræfte, at dobbeltskrivning er konfigureret i Finans- og driftsapps
 

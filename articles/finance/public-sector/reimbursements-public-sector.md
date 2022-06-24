@@ -1,6 +1,6 @@
 ---
 title: Refusioner i den offentlige sektor
-description: I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
+description: Denne artikel besvarer almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Public sector
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93c14ea9f4516cb601bfca56591f3a9837ffcd2f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: aaed0dd40b86e209e9e2ee8c368efe88eb1160c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846431"
 ---
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
+Denne artikel besvarer almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
 
 ## <a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
 

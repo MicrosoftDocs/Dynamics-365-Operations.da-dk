@@ -1,6 +1,6 @@
 ---
 title: Anskaffe aktiver via indkøb
-description: I dette emne beskrives det, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver.
+description: Denne artikel beskriver, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891574"
 ---
 # <a name="acquire-assets-through-procurement"></a>Anskaffe aktiver via indkøb
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver. En købslinje opretter ét aktiv, uanset antallet på købslinjen. Hvis du vil oprette flere anlægsaktiver, skal du oprette flere linjer for indkøb.
+Denne artikel beskriver, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver. En købslinje opretter ét aktiv, uanset antallet på købslinjen. Hvis du vil oprette flere anlægsaktiver, skal du oprette flere linjer for indkøb.
 
  Følgende metoder er tilgængelige til integration mellem Anlægsaktiver og Kreditor, og du skal bruge samme metode for alle anlægsaktiver:
 -   Du opretter et anlægsaktiv manuelt, før du føjer anlægsaktivnummeret til linjen på indkøbsordren eller kreditorfakturaen. Der bogføres automatisk en anskaffelsespostering for aktivet, når du bogfører kreditorfakturaen. Dette er standardmetoden.
@@ -38,7 +38,7 @@ Vælg en af de første to metoder, hvis du foretrækker at oprette anlægsaktive
 
 Uanset om du opretter anlægsaktiver manuelt eller bruger en mere fleksibel tilgang, skal du også beslutte, om en anskaffelsespostering kun kan bogføres i Anlægsaktiver, eller om den kan bogføres, når du bogfører en kreditorfaktura. Visse organisationer foretrækker, at brugere opretter anskaffelser og anskaffelsesposteringer manuelt i Anlægsaktiver ved hjælp af manuelle kladdeposteringer eller forslag. 
 
-I dette emne beskrives detaljerne ved de enkelte metoder.
+Denne artikel beskriver detaljerne ved de enkelte metoder.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a>Metoder til manuel oprettelse af anlægsaktiver
 Når du bogfører en kreditorfaktura, hvor der er angivet et anlægsaktivnummer på linjerne, og indstillingen Tillad aktivanskaffelse fra Indkøb er markeret på siden Anlægsaktivparametre, bogføres anskaffelsen automatisk, og anlægsaktivets status ændres til Åben. 

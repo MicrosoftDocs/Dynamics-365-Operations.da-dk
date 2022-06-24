@@ -1,6 +1,6 @@
 ---
 title: Anvende forudbetalinger automatisk for kreditorfakturaer
-description: Dette emne beskriver muligheden for automatisk anvendelse af forudbetalinger på kreditorfakturaer.
+description: Denne artikel beskriver muligheden for automatisk anvendelse af forudbetalinger på kreditorfakturaer.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900065"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Anvende automatisk på kreditorfakturaer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver muligheden for automatisk anvendelse af forudbetalinger på kreditorfakturaer. Der kan oprettes en forudbetaling for en indkøbsordre som del af en købsaftale. Når en kreditorfaktura er modtaget, kan forudbetalingen bruges til at udligne kreditor fra kreditorfakturaen. Den nye funktion gør det muligt for systemet automatisk at bruge indkøbsordrenumre på en kreditorfaktura til at søge efter tilsvarende forudbetalinger, når kreditorfakturaen importeres.
+Denne artikel beskriver muligheden for automatisk anvendelse af forudbetalinger på kreditorfakturaer. Der kan oprettes en forudbetaling for en indkøbsordre som del af en købsaftale. Når en kreditorfaktura er modtaget, kan forudbetalingen bruges til at udligne kreditor fra kreditorfakturaen. Den nye funktion gør det muligt for systemet automatisk at bruge indkøbsordrenumre på en kreditorfaktura til at søge efter tilsvarende forudbetalinger, når kreditorfakturaen importeres.
 
 Hvis der findes forudbetalinger, som kan anvendes, føjes der linjer til de eksisterende fakturalinjer for at anvende forudbetalingerne. Forudbetalingslinjerne tages aldrig i betragtning under processen til fakturasammenholdelse.
 

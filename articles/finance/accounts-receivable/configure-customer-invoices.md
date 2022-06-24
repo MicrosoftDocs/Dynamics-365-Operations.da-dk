@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876319"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
@@ -33,12 +33,9 @@ En **Fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordreli
 Du kan finde flere oplysninger i:
 
 [Opret fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
-
-[Oprette en skabelon til en fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
-
-[Tildel en fritekstfakturaskabelon til en debitor.](tasks/assign-free-text-invoice-template-customer.md)
-
-[Generere og bogføre tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
+[Opret en skabelon til en fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
+[Tildel en fritekstfakturaskabelon til en debitor](tasks/assign-free-text-invoice-template-customer.md)
+[Opret og bogfør tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
 En **Proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en **Proformafaktura** for en debitorfaktura for en salgsordre eller for en fritekstfaktura. 
@@ -91,8 +88,8 @@ Du kan konfigurere opdelingen af salgsordrekundefakturaer efter lokation eller e
  - Vælg indstillingen **Opdel baseret på fakturasted** for at oprette én faktura pr. sted ved bogføring. 
  - Vælg indstillingen **Opdel baseret på leveringsoplysninger om faktura** for at oprette én faktura pr. leveringsadresse for salgsordrelinjen ved bogføring. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris
-Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har prisoplysninger, ikke på kontoen **Omsætning**.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris eller omkostning
+Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris og omkostning. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris og nulomkostning** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris og omkostning. Hvis denne indstilling er valgt, indeholder bilaget 0,00 poster for bogføringstyperne **Debitorsaldo** og **Omsætning**. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har pris- eller omkostningsoplysninger, ikke på kontoen **Omsætning**. Bilaget vil i stedet indeholde en post på 0,00 for bogføringstypen **Debitorsaldo**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Yderligere indstillinger, der ændrer funktionsmåden for bogføring
 Følgende felter ændrer funktionaliteten af bogføringsprocessen.

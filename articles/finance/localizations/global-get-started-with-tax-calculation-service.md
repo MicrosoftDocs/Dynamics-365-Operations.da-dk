@@ -1,6 +1,6 @@
 ---
 title: Start her med momsberegning
-description: Dette emne beskriver, hvordan du konfigurerer momsberegning.
+description: Denne artikel beskriver, hvordan du konfigurerer momsberegning.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685905"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855277"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om, hvordan du kommer i gang med momsberegning. Sektionerne i dette emne fører dig gennem de overordnede design- og konfigurationstrin i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
+Denne artikel indeholder oplysninger om, hvordan du kommer i gang med momsberegning. Sektionerne i denne artikel fører dig gennem de overordnede design- og konfigurationstrin i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
 Opsætningen består af tre hovedtrin.
 
@@ -77,11 +77,11 @@ Når du har fuldført disse trin, synkroniseres følgende konfigurationer automa
 - Momsgrupper
 - Varemomsgrupper
 
-De resterende afsnit i dette emne indeholder flere detaljerede konfigurationstrin.
+De resterende afsnit i denne artikel indeholder flere detaljerede konfigurationstrin.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Før du kan fuldføre trinnene de resterende procedurer i dette emne, skal følgende forudsætninger være opfyldt:<!--TO HERE-->
+Før du kan fuldføre de resterende procedurer i denne artikel, skal følgende forudsætninger være opfyldt:<!--TO HERE-->
 
 - Du skal have adgang til din LCS-konto, og du skal have et aktivt LCS-projekt med et niveau 2-miljø eller derover, som kører Dynamics 365 version 10.0.21 eller senere.
 - Du skal oprette et RCS-miljø for din organisation, og du skal have adgang til din konto. Du kan finde flere oplysninger om, hvordan du opretter et RCS-miljø, i [Oversigt over Regulatory Configuration Service](rcs-overview.md).
@@ -212,7 +212,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | Sales            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Hvis standardmomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i dette emne.
+    > Hvis standardmomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i denne artikel.
 
 22. Under fanen **Anvendelse af varemomsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momskode, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Varemomsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen for varesalg på transaktionslinjen.
 
@@ -224,7 +224,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | D0003     | Reduceret        |
 
     > [!NOTE]
-    > Hvis standardvaremomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i dette emne.
+    > Hvis standardvaremomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i denne artikel.
 
     Yderligere oplysninger om, hvordan momskoder fastsættes i Momsberegning, finder du i [Logik for fastlæggelse af momsgruppe og varemomsgruppe](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Opsætningen i dette afsnit udføres efter juridisk enhed. Du skal konfigurere d
 2. Under fanen **Generelt** skal du angive følgende felter:
 
     - **Aktivér momsberegningstjeneste** – Markér dette afkrydsningsfelt for at aktivere Momsberegning for den juridiske enhed. Hvis momsberegning ikke er aktiveret for den aktuelle juridiske enhed, fortsætter den juridiske enhed med at bruge det eksisterende momsprogram til at fastlægge og beregne momsen.
-    - **Funktionsopsætning** – Vælg en publiceret momsfunktionsopsætning og -version for den juridiske enhed. Du kan finde flere oplysninger om, hvordan du konfigurerer og fuldfører en publiceret momsfunktion, i forrige afsnit i dette emne.
+    - **Funktionsopsætning** – Vælg en publiceret momsfunktionsopsætning og -version for den juridiske enhed. Du kan finde flere oplysninger om, hvordan du konfigurerer og fuldfører en publiceret momsfunktion, i forrige afsnit i denne artikel.
     - **Forretningsproces** – Vælg de forretningsprocesser, der skal aktiveres.
 
 3. Definer den forventede afrundingsregel for den juridiske enhed under fanen **Beregning**. Yderligere oplysninger om afrundingslogikken finder du i [Regler for afrunding i momsberegning](https://go.microsoft.com/fwlink/?linkid=2166988).

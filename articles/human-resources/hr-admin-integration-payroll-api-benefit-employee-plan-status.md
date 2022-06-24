@@ -1,6 +1,6 @@
 ---
 title: Frynsegodestatus for medarbejderplan
-description: Dette emne beskriver den frynsegodestatus for medarbejderplan, der er angivet for Dynamics 365 Human Resources.
+description: Denne artikel beskriver den frynsegodestatus for medarbejderplan, der er angivet for Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 07/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e038eebcb3c703ebf56c781a332edcd6a5badf1a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 82536210b1c7688e4841e8e4ef1fb43c29768dec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848278"
 ---
 # <a name="benefit-employee-plan-status"></a>Frynsegodestatus for medarbejderplan
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066162"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emne beskriver den indstilling af frynsegodestatus for medarbejderplan, der er angivet for Dynamics 365 Human Resources.
+Denne artikel beskriver den frynsegodestatus for medarbejderplan, der er angivet for Dynamics 365 Human Resources.
 
 ## <a name="option-set-process-type"></a>Angivet indstilling: Procestype
 

@@ -1,8 +1,8 @@
 ---
 title: Initialisere Commerce Scale Unit (sky)
-description: Dette emne forklarer, hvordan du initialiserer Commerce Scale Unit (sky) i Microsoft Dynamics 365 Commerce.
+description: Denne artikel forklarer, hvordan du initialiserer Commerce Scale Unit (sky) i Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
-ms.date: 02/04/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,18 +11,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092207"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942846"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du initialiserer Commerce Scale Unit (sky) i Microsoft Dynamics 365 Commerce.
+Denne artikel forklarer, hvordan du initialiserer Commerce Scale Unit (sky) i Microsoft Dynamics 365 Commerce.
 
 Hvis du bruger et sandkasse- eller produktionsmiljø på niveau 2, der har programversion 8.1.2.x eller senere, skal du initialisere Commerce Scale Unit (sky), før du kan bruge detailkanalfunktionalitet til POS-handlinger eller til handlinger for e-handel, der bruger Retail Server i skyen. Initialisering implementerer en Commerce Scale Unit (sky).
 
@@ -49,32 +49,34 @@ Hvis du bruger et sandkasse- eller produktionsmiljø på niveau 2, der har progr
 ## <a name="region-availability"></a>Områdetilgængelighed
 Commerce Scale Unit kan installeres i følgende områder.
 
-| Global placering | Land/område              | Tilgængelighed        |
-|-----------------|---------------------|---------------------|
-| Nord- og Sydamerika        | Det østlige USA             | Generelt tilgængelig |
-| Nord- og Sydamerika        | Det østlige USA 2           | Generelt tilgængelig |
-| Nord- og Sydamerika        | Den nordlige del af det centrale USA    | Generelt tilgængelig |
-| Nord- og Sydamerika        | Den sydlige del af det centrale USA    | Generelt tilgængelig |
-| Nord- og Sydamerika        | Det centrale USA          | Generelt tilgængelig |
-| Nord- og Sydamerika        | Det vestlige USA             | Generelt tilgængelig |
-| Nord- og Sydamerika        | Det vestlige USA 2           | Generelt tilgængelig |
-| Nord- og Sydamerika        | Det centrale Canada      | Begrænset kapacitet    |
-| Nord- og Sydamerika        | Det østlige Canada         | Begrænset kapacitet    |
-| Nord- og Sydamerika        | Det vestlige centrale USA     | Begrænset kapacitet    |
-| APAC            | Østaustralien      | Generelt tilgængelig |
-| APAC            | Sydøstasien      | Generelt tilgængelig |
-| APAC            | Østjapan          | Generelt tilgængelig |
-| APAC            | Vestjapan          | Generelt tilgængelig |
-| APAC            | Sydøstaustralien | Begrænset kapacitet    |
-| APAC            | Østasien           | Begrænset kapacitet    |
-| APAC            | Det sydlige Indien         | Begrænset kapacitet    |
-| APAC            | Det centrale Indien       | Begrænset kapacitet    |
-| EMEA            | Vesteuropa         | Generelt tilgængelig |
-| EMEA            | Nordeuropa        | Generelt tilgængelig |
-| EMEA            | Det sydlige Storbritannien            | Begrænset kapacitet    |
-| EMEA            | Det vestlige Storbritannien             | Begrænset kapacitet    |
+| Global placering | Område              | Tilgængelighed        | Bemærkninger                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| Nord- og Sydamerika        | Det østlige USA             | Generelt tilgængelig |                           |
+| Nord- og Sydamerika        | Det østlige USA 2           | Generelt tilgængelig |                           |
+| Nord- og Sydamerika        | Den nordlige del af det centrale USA    | Begrænset kapacitet    |                           |
+| Nord- og Sydamerika        | Den sydlige del af det centrale USA    | Begrænset kapacitet    |                           |
+| Nord- og Sydamerika        | Det centrale USA          | Generelt tilgængelig |                           |
+| Nord- og Sydamerika        | Det vestlige USA             | Generelt tilgængelig |                           |
+| Nord- og Sydamerika        | Det vestlige USA 2           | Generelt tilgængelig |                           |
+| Nord- og Sydamerika        | Det centrale Canada      | Begrænset kapacitet    |                           |
+| Nord- og Sydamerika        | Det østlige Canada         | Begrænset kapacitet    |                           |
+| Nord- og Sydamerika        | Det vestlige centrale USA     | Begrænset kapacitet    |                           |
+| APAC            | Østaustralien      | Generelt tilgængelig |                           |
+| APAC            | Sydøstasien      | Kapacitetsbegrænsede | Ingen installationer tilladt    |
+| APAC            | Østjapan          | Generelt tilgængelig |                           |
+| APAC            | Vestjapan          | Generelt tilgængelig |                           |
+| APAC            | Sydøstaustralien | Generelt tilgængelig |                           |
+| APAC            | Østasien           | Begrænset kapacitet    |                           |
+| APAC            | Det sydlige Indien         | Kapacitetsbegrænsede | Ingen installationer tilladt    |
+| APAC            | Det centrale Indien       | Begrænset kapacitet    | Kræver godkendelsesproces |
+| EMEA            | Vesteuropa         | Generelt tilgængelig |                           |
+| EMEA            | Nordeuropa        | Generelt tilgængelig |                           |
+| EMEA            | Det sydlige Storbritannien            | Begrænset kapacitet    |                           |
+| EMEA            | Det vestlige Storbritannien             | Begrænset kapacitet    |                           |
+| Schweiz     | Det nordlige Schweiz   | Begrænset kapacitet    | Kræver godkendelsesproces |
+| Forenede Arabiske Emirater             | Det nordlige Forenede Arabiske Emirater           | Begrænset kapacitet    | Kræver godkendelsesproces |
 
-Udrulningskapacitet i områder med begrænset kapacitet er særdeles begrænset. Anmodninger om udrulning evalueres fra sag til sag. Hvis du har et vigtigt forretningsbehov for udrulning i områder med begrænset kapacitet, kan du indsende en supportanmodning, der skal føjes til ventelisten.
+Udrulningskapacitet i områder med begrænset kapacitet er særdeles begrænset. Anmodninger om udrulning evalueres fra sag til sag. Hvis du har et vigtigt forretningsbehov for udrulning i områder med begrænset kapacitet, kan du indsende en supportanmodning, der skal føjes til ventelisten. Kapacitetsbegrænsede områder tillader i øjeblikket ikke udrulning af Commerce Scale Unit. 
 
 ![Kort, der viser tilgængelighed i området.](media/Commerce-Scale-Unit-Region-Availability.png "Kort, der viser tilgængelighed i området")
 

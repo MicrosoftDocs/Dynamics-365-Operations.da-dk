@@ -1,6 +1,6 @@
 ---
 title: Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
-description: I dette emne forklares det, hvordan du kan forbedre ydeevnen for løsninger til Elektronisk rapportering (ER) ved at tilføje parametre for BEREGNET FELT-datakilder.
+description: Denne artikel forklarer, hvordan du kan forbedre ydeevnen for løsninger til Elektronisk rapportering (ER) ved at tilføje parametre for BEREGNET FELT-datakilder.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850108"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ydeevnen af ER-løsninger ved at tilføje parameteriserede BEREGNET FELT-datakilder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares det, hvordan du kan tage [ydeevnespor](trace-execution-er-troubleshoot-perf.md) af [elektroniske rapporteringsformater (ER)](general-electronic-reporting.md), som er kørt, og derefter bruge oplysningerne fra disse spor til at forbedre ydeevnen ved at konfigurere en parameteriseret **Beregnet felt**-datakilde.
+Denne artikel forklarer, hvordan du kan tage [ydeevnespor](trace-execution-er-troubleshoot-perf.md) af [elektroniske rapporteringsformater (ER)](general-electronic-reporting.md), som er kørt, og derefter bruge oplysningerne fra disse spor til at forbedre ydeevnen ved at konfigurere en parameteriseret **Beregnet felt**-datakilde.
 
 Som en del af processen med at udvikle elektroniske rapporteringskonfigurationer (ER) til generering af forretningsdokumenter definerer du den metode, der bruges til at hente data fra programmet og indtaste dem i det output, der genereres. Ved at designe en parameteriseret datakilde af typen **Beregnet felt**, kan du mindske antallet af databasekald og reducere den tid og de omkostninger, der er involveret i indsamlingen af detaljer om udførelse af ER-format.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Hvis du vil fuldføre eksemplerne i dette emne, skal du have adgang til en af følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Hvis du vil fuldføre eksemplerne i denne artikel, skal du have adgang til en af følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Udvikler til elektronisk rapportering
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
 - Virksomheden skal angives til **DEMF**.
-- Følg trinnene i [Appendiks 1](#appendix1) i dette emne for at downloade komponenterne til Microsoft ER-eksempelløsningen, der er nødvendige for at fuldføre eksemplet i dette emne.
-- Følg trinnene i [Appendiks 2](#appendix2) i dette emne for at konfigurere det minimale sæt af ER-parametre, der kræves for at bruge ER-strukturen til at forbedre ydeevnen i eksemplet på Microsoft ER-løsningen.
+- Følg trinnene i [Appendiks 1](#appendix1) i denne artikel for at downloade komponenterne til Microsoft ER-eksempelløsningen, der er nødvendige for at fuldføre eksemplet i denne artikel.
+- Følg trinnene i [Appendiks 2](#appendix2) i denne artikel for at konfigurere det minimale sæt af ER-parametre, der kræves for at bruge ER-strukturen til at forbedre ydeevnen i eksemplet på Microsoft ER-løsningen.
 
 ## <a name="import-the-sample-er-solution"></a>Importere ER-eksempelløsningen
 
@@ -48,7 +48,7 @@ Antag, at du skal designe en ER-løsning for at generere en ny rapport, der vise
 Det første trin er at importere ER-løsningseksemplet for at generere en rapport over kreditorposteringer.
 
 1. Log på den forekomst af Microsoft Dynamics 365 Finance, der er klargjort for dit firma.
-2. I dette emne skal du oprette og ændre konfigurationerne for eksempelfirmaet **Litware Inc.**. Sørg for, at denne konfigurationsudbyder er føjet til din Finance-forekomst og markeret som aktiv. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I denne artikel skal du oprette og ændre ER-konfigurationerne for eksempelfirmaet **Litware Inc.**. Sørg for, at denne konfigurationsudbyder er føjet til din Finance-forekomst og markeret som aktiv. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. I arbejdsområdet **Elektronisk rapportering** skal du vælge feltet **Rapporteringskonfigurationer**.
 4. På siden **Konfigurationer** skal du importere de ER-konfigurationer, som du har hentet som en forudsætning i Finance, i følgende rækkefølge: datamodel, modeltilknytning, format. Benyt følgende fremgangsmåde for hver konfiguration:
 
@@ -220,7 +220,7 @@ Udfør følgende trin for at bruge cachelagring og en datakilde af typen **Bereg
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Køre den ændrede ER-løsning for at spore kørslen
 
-Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i dette emne for at generere en ny performancesporing.
+Gentag trinnene i afsnittet [Køre ER-formatet](#run-format) tidligere i denne artikel for at generere en ny performancesporing.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Brug performancesporing til at analysere justeringer af modeltilknytning 
 

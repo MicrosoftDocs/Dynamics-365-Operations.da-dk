@@ -1,6 +1,6 @@
 ---
-title: Planlægge funktioner til den offentlige sektor
-description: I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
+title: Planlæg funktioner til den offentlige sektor
+description: I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
 author: v-kiarnd
 ms.date: 02/18/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b770cbd02c3ad73b6d5f9a5133848f46a06b635
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: 6e752fbe084b87f7df990722ad4ec5bc24c4b003
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865432"
 ---
 # <a name="plan-for-public-sector-functionality"></a>Planlægge funktioner til den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
+I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor.
 
 ## <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 

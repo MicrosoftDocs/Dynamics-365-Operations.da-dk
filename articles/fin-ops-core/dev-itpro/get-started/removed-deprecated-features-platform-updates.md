@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller udfasede platformfunktioner
-description: Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
+description: Denne artikel beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811240"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945798"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
+Denne artikel beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
@@ -40,7 +40,7 @@ Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Tech
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi udfaser mobilappen Finans og drift (Dynamics 365) og platformen til konsolidering i en enkelt mobilplatform, som er Power Apps. |
-| **Erstattet af en anden funktion?**   | Ja, mobilerfaringer med Finans- og driftsappdata kan opbygges med Power Platform-integration. Se [Opbygning af mobilerfaringer](../power-platform/build-mobile-experiences.md) for at få flere detaljer. |
+| **Erstattet af en anden funktion?**   | Ja, mobilerfaringer med Finans- og driftsappdata kan opbygges med Power Platform-integration. Se [blogindlægget](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) og [Opbygning af mobilerfaringer](../power-platform/build-mobile-experiences.md) for at få flere detaljer. |
 | **Produktområder, der er berørt**         | Finans og drift-apps |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Forældet. Slutdato for support er sat til oktober 2024. |

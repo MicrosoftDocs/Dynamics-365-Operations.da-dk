@@ -1,6 +1,6 @@
 ---
 title: ER-funktionen FORMAT
-description: Dette emne indeholder oplysninger om, hvordan funktionen FORMAT til elektronisk rapportering (ER) skal anvendes.
+description: Denne artikel indeholder oplysninger om, hvordan funktionen FORMAT til elektronisk rapportering (ER) skal anvendes.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dbde3ebfd2670639a2fff19d83ea9bd8d15c22b09b43ab49ae1b9e35562625a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce9dd95dc347416f6f9c3024b0b1de3f60f88bfb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876770"
 ---
 # <a name="format-er-function"></a>ER-funktionen FORMAT
 
@@ -92,7 +92,7 @@ Hvis den samme rapport behandles den 17. december 2015 for kunden **Litware Reta
 >[!NOTE]
 > Følgende syntaks er anvendt i ER-formler for etiketter:
 >
-> - **For etiketter fra ressourcer i Microsoft Dynamics 365 Finance-app:** **\@X**, hvor **X** er etiket-id'et i applikationsobjekttræet (AOT)
+> - **For etiketter fra ressourcer i Microsoft Dynamics 365 Finance-appen:** **\@X**, hvor **X** er etiket-id'et i applikationsobjekttræet (AOT)
 > - **For etiketter, der er placeret i ER-konfigurationer:** **@GER_LABEL:X"**, hvor **X** er etiket-ID'et i ER-konfigurationen
 
 ## <a name="additional-resources"></a>Yderligere ressourcer

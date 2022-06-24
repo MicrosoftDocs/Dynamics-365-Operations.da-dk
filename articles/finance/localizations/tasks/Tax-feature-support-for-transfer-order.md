@@ -1,6 +1,6 @@
 ---
 title: Understøttelse af momsfunktion til flytteordrer
-description: Dette emne forklarer den nye understøttelse af momsfunktionen til flytteordrer ved hjælp af tjenesten til beregning af moms.
+description: Denne artikel forklarer den nye understøttelse af momsfunktionen til flytteordrer ved hjælp af tjenesten til beregning af moms.
 author: Kai-Cloud
 ms.date: 10/13/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689208"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869975"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Understøttelse af momsfunktion til flytteordrer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne indeholder oplysninger om momsberegning og bogføringsintegration i flytteordrer. Denne funktionalitet giver dig mulighed for at konfigurere momsberegning og bogføring i flytteordrer til lageroverførsler. I henhold til EU's regler om moms betragtes lageroverførsler som fællesskabsforsyninger og -anskaffelser inden for EU.
+Denne artikel indeholder oplysninger om momsberegning og bogføringsintegration i flytteordrer. Denne funktionalitet giver dig mulighed for at konfigurere momsberegning og bogføring i flytteordrer til lageroverførsler. I henhold til EU's regler om moms betragtes lageroverførsler som fællesskabsforsyninger og -anskaffelser inden for EU.
 
 Hvis du vil konfigurere og bruge denne funktion, skal du udføre tre hovedtrin:
 

@@ -1,6 +1,6 @@
 ---
 title: Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
-description: I dette emne beskrives, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
+description: Denne artikel beskriver, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i Anlægsaktivkladden.
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: bb930bd35aa86c6bc3b2e7a5577ff16e3feb151a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713552"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896428"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakturaen.
+Denne artikel viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakturaen.
 
 1. I navigationsruden skal du gå til **Moduler > Debitor > Fakturaer > Alle fritekstfakturaer**.
 2. Vælg **Ny**.

@@ -1,6 +1,6 @@
 ---
 title: Udskyde udførelse af sekvenselementer i ER-formater
-description: Dette emne forklarer, hvordan du udskyder udførelsen af et sekvenselement i et elektronisk rapporteringsformat (ER).
+description: Denne artikel forklarer, hvordan du udskyder udførelsen af et sekvenselement i et elektronisk rapporteringsformat (ER).
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5d4c5395c87c7bdc874f277a691e84081f68742d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323684"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880223"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Udskyde udførelse af sekvenselementer i ER-formater
 
@@ -32,7 +32,7 @@ Du kan bruge Operationsdesigner i den [elektroniske rapporteringsstruktur (ER)](
 
 Hvis du aktiverer indstillingen <a name="DeferredSequenceExecution"></a>**Udskudt udførelse** for et sekvensformatelement i det konfigurerede format, kan du udskyde udførelsen af det pågældende element. I dette tilfælde køres elementet ikke, før alle andre elementer af det overordnede element er blevet kørt.
 
-Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i dette emne.
+Hvis du vil vide mere om denne funktion, skal du fuldføre eksemplet i denne artikel.
 
 ## <a name="limitations"></a>Begrænsninger
 
@@ -53,7 +53,7 @@ For at fuldføre dette eksempel skal du have adgang til **USMF**-firmaet i Finan
 - Funktionel konsulent i elektronisk rapportering
 - Systemadministrator
 
-Hvis du endnu ikke har fuldført eksemplet i emnet [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md#Example), skal du hente følgende [konfigurationer](general-electronic-reporting.md#Configuration) af ER-eksempelløsningen.
+Hvis du endnu ikke har fuldført eksemplet i artiklen [Udskyde udførelse af XML-elementer i ER-formater](er-defer-xml-element.md#Example), skal du hente følgende [konfigurationer](general-electronic-reporting.md#Configuration) af ER-eksempelløsningen.
 
 | Indholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
@@ -93,7 +93,7 @@ Før du går i gang, skal du også hente og gemme følgende konfiguration af ER-
 ### <a name="activate-a-configurations-provider"></a>Aktivere en konfigurationsudbyder
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet Litware, Inc. (`http://www.litware.com`) er vist, og at det er markeret som aktivt. Hvis denne konfigurationsudbyder ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i emnet [Opret en konfigurationsudbyder, og markér den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. På siden **Lokaliseringskonfigurationer** i sektionen **Konfigurationsudbydere** skal du kontrollere, at [konfigurationsudbyderen](general-electronic-reporting.md#Provider) for eksempelfirmaet Litware, Inc. (`http://www.litware.com`) er vist, og at det er markeret som aktivt. Hvis denne konfigurationsudbyder ikke er angivet, eller hvis den ikke er markeret som aktiv, skal du følge trinnene i artiklen [Opret en konfigurationsudbyder, og markér den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Eksempelfirmaet Litware, Inc. på siden Lokaliseringskonfigurationer.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 

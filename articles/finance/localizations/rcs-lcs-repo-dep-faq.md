@@ -1,6 +1,6 @@
 ---
 title: RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning
-description: Dette emne indeholder oplysninger om den udfasning af Microsoft Dynamics Lifecycle Services-lager (LCS), der er planlagt som en del af udrulningen af det globale lager for Regulatory Configuration Service (RCS).
+description: Denne artikel indeholder oplysninger om den udfasning af Microsoft Dynamics Lifecycle Services-lager (LCS), der er planlagt som en del af udrulningen af det globale lager for Regulatory Configuration Service (RCS).
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849725"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>RCS (Regulatory Configuration Service) – Lifecycle Services (LCS)-lagerudfasning
 
@@ -85,7 +85,7 @@ RCS bruger begrebet *tilsluttet applikation*. Et tilsluttet applikation danner e
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Er der nogen eksempler, der viser opsætningen og administrationen?
 
-Der er ingen eksempler, men du kan udføre trinnene tidligere i dette emne for at overflytte dine konfigurationer til det globale RCS-lager.
+Der er ingen eksempler, men du kan udføre trinnene tidligere i denne artikel for at overflytte dine konfigurationer til det globale RCS-lager.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Er RCS en forudsætning for at kunne konfigurere elektronisk rapportering?
 

@@ -1,6 +1,6 @@
 ---
 title: Vedligeholde kreditors bankkontooplysninger
-description: Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Dette emne forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
+description: Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Denne artikel forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
 author: v-kiarnd
 ms.date: 04/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2011-01-14
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 624035874842fd1fd6b540bf0408d54bc1d068f2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 83be2ac95d07ba494e08c07606cdbe36eba9f99b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890007"
 ---
 # <a name="maintain-vendor-bank-account-information"></a>Vedligeholde kreditors bankkontooplysninger
 
 [!include [banner](../includes/banner.md)]
 
-Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Dette emne forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
+Kreditorer kan bruge funktionen Leverandørsamarbejde til at vedligeholde deres bankkontooplysninger. Denne artikel forklarer, hvordan du tilføjer og vedligeholder bankoplysninger for kreditorer, som du samarbejder med.
 
 Når du har givet adgang til kreditorer, kan de tilføje oplysninger om nye bankkonti. Du kan derefter gennemse disse oplysninger og fuldføre den forudgående notabehandling, så de nye konti bruges til betalinger til disse kreditorer.
 

@@ -1,6 +1,6 @@
 ---
 title: Datamodel til momsberegning
-description: Dette emne indeholder oplysninger om momsdatamodellen, og hvordan feltværdierne i hver enkelt datamodel bestemmes af konteksten for momsberegningstransaktioner.
+description: Denne artikel indeholder oplysninger om momsdatamodellen, og hvordan feltværdierne i hver enkelt datamodel bestemmes af konteksten for momsberegningstransaktioner.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859689"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodel til momsberegning
 
-Dette emne indeholder oplysninger om, hvordan feltværdierne i momsdatamodellen bestemmes i momsberegningstransaktioner.
+Denne artikel indeholder oplysninger om, hvordan feltværdierne i momsdatamodellen bestemmes i momsberegningstransaktioner.
 
 *Momsdatamodellen* består af felter, der skal bruges til momsberegninger. Microsoft leverer *datamodellen til momsberegning*, som indeholder overskriftsfelter og linjefelter i transaktionsdokumenter i Finans- og driftsapps. De felter, der defineres i datamodellen til momsberegning, er de tilgængelige kolonner i tabellerne med anvendelsesregler i konfigurationen af konfigurationen af funktionen til momsberegning.
 
@@ -99,7 +99,7 @@ Datamodellen til momsberegning er integreret med Finans- og driftsapps. Ved hver
 | Forsendelse til provins/stat          | <ul><li>**Salgsordre:**<ol><li>Overskrift &gt; Leveringsadresse &gt; stat</li></ol></li><li>**Indkøbsordre:**<ol><li>Overskrift &gt; Leveringsadresse &gt; stat</li></ol></li><li>**Flytteordre – send:**<ol><li>Overskrift &gt; Til lagersted &gt; primær adresse &gt; stat</li><li>Overskrift &gt; Til websted &gt; primær adresse &gt; stat</li></ol></li><li>**Flytteordre – modtag:**<ol><li>Overskrift &gt; Til lagersted &gt; primær adresse &gt; stat</li><li>Overskrift &gt; Til websted &gt; primær adresse &gt; stat</li></ol></li><li>**Tilbudsanmodning:**<ol><li>Overskrift &gt; Leveringsadresse &gt; stat</li></ol></li><li>**Salgstilbud:**<ol><li>Overskrift &gt; Leveringsadresse &gt; stat</li></ol></li><li>**Fritekstfaktura:**<ol><li>Overskrift &gt; debitorkonto &gt; Standardleveringsadresse &gt; stat</li><li>Overskrift &gt; debitorkonto &gt; primær adresse &gt; stat</li></ol></li><li>**Kladde (debitor):**<ol><li>Debitorkonto &gt; standardleveringsadresse &gt; stat</li><li>Debitorkonto &gt; primær adresse &gt; stat</li></ol></li><li>**Kladde (kreditor):**<ol><li>Juridisk enhed &gt; standardleveringsadresse &gt; stat</li><li>Juridisk enhed &gt; Primær adresse &gt; stat</li></ol></li></ul> |
 | Forsendelse til postnummer                 | <ul><li>**Salgsordre:**<ol><li>Overskrift &gt; Leveringsadresse &gt; postnummer</li></ol></li><li>**Indkøbsordre:**<ol><li>Overskrift &gt; Leveringsadresse &gt; postnummer</li></ol></li><li>**Flytteordre – send:**<ol><li>Overskrift &gt; Til lagersted &gt; primær adresse &gt; postnummer</li><li>Overskrift &gt; Til websted &gt; primær adresse &gt; postnummer</li></ol></li><li>**Flytteordre – modtag:**<ol><li>Overskrift &gt; Til lagersted &gt; primær adresse &gt; postnummer</li><li>Overskrift &gt; Til websted &gt; primær adresse &gt; postnummer</li></ol></li><li>**Tilbudsanmodning:**<ol><li>Overskrift &gt; Leveringsadresse &gt; postnummer</li></ol></li><li>**Salgstilbud:**<ol><li>Overskrift &gt; Leveringsadresse &gt; postnummer</li></ol></li><li>**Fritekstfaktura:**<ol><li>Overskrift &gt; debitorkonto &gt; Standardleveringsadresse &gt; postnummer</li><li>Overskrift &gt; debitorkonto &gt; primær adresse &gt; postnummer</li></ol></li><li>**Kladde (debitor):**<ol><li>Debitorkonto &gt; standardleveringsadresse &gt; postnummer</li><li>Debitorkonto &gt; primær adresse &gt; postnummer</li></ol></li><li>**Kladde (kreditor):**<ol><li>Juridisk enhed &gt; standardleveringsadresse &gt; postnummer</li><li>Juridisk enhed &gt; primær adresse &gt; postnummer</li></ol></li></ul> |
 | Websted                             | <ul><li>**Salgsordre:** websted</li><li>**Indkøbsordre:** websted</li><li>**Flytteordre - forsendelse:** websted fra lagersted</li><li>**Flytteordre - modtage:** websted til lagersted</li><li>**Tilbudsanmodning:** websted</li><li>**Salgstilbud:** websted</li></ul> |
-| Momsretning                    | <ul><li>**Salgsordre:** Output</li><li>**Indkøbsordre:** Input</li><li>**Forsendelsesordre - Send:** Output</li><li>**Flytteordre – modtag:** Input</li><li>**Indkøbsrekvisition:** Input</li><li>**Tilbudsanmodning:** Input</li><li>**Salgstilbud:** Output</li><li>**Fakturaadresse:** Output</li></ul> |
+| Momsretning                    | <ul><li>**Salgsordre:** Output</li><li>**Indkøbsordre:** Input</li><li>**Forsendelsesordre - Send:** Output</li><li>**Flytteordre – modtag:** Input</li><li>**Indkøbsrekvisition:** Input</li><li>**Tilbudsanmodning:** Input</li><li>**Salgstilbud:** Output</li><li>**Fakturaadresse:** Output</li><li>**Kladde:** Output</li></ul> |
 | Leverandørkonto                   | <ul><li>**Indkøbsordre:** kreditorkonto</li><li>**Kladde (kreditor):** Kreditorkonto</li></ul> |
 | Kreditorfakturakonto           | <ul><li>**Indkøbsordre:** fakturakonto</li><li>**Kladde (kreditor):**<ol><li>Kreditormaster &gt; Fakturakonto</li><li>Leverandørkonto</li></ol></li></ul> |
 | Lagersted                        | <ul><li>**Salgsordrekriterier:** Lagersted</li><li>**Indkøbsordre:** lagersted</li><li>**Flytteordre - forsendelse:** fra lagersted</li><li>**Flytteordre - Modtag:** Til lagersted</li><li>**Anmode om tilbud:** lagersted</li><li>**Salgstilbud:** Lagersted</li></ul> |

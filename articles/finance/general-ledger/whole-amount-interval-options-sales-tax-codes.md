@@ -1,6 +1,6 @@
 ---
 title: Indstillinger for beregning af hele beløbet og intervaller for momskoder
-description: I dette emne beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
+description: I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
 author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f06c92f2151f54a7d9b684b9687b786d1e4cd7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5b02a0ced8b556cfc5a984d24ceaf982629fd69c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874455"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Indstillinger for beregning af hele beløbet og intervaller for momskoder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives indstillingerne for feltet **Beregningsmåde** for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
+Denne artikel beskriver indstillingerne for feltet **Beregningsmetode** til momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
 
 Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden **Momskoder** skal du bruge feltet **Beregningsmåde** på oversigtspanelet **Beregning** til at vælge beregningsmetoden for en momskode.
 - Hele beløb – En momssats anvendes på hele det momspligtige beløb.

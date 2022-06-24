@@ -1,6 +1,6 @@
 ---
 title: Arbejdsområde for fakturagodkendelser på mobilenheder
-description: Dette emne indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder.
+description: Denne artikel indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder.
 author: abruer
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868663"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Arbejdsområde for fakturagodkendelser på mobilenheder
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emne indeholder oplysninger om arbejdsområdet til **Fakturagodkendelse** på mobilenheder. Arbejdsområdet indeholder en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet. 
+Denne artikel indeholder oplysninger om mobilarbejdsområdet **Fakturagodkendelser**. Arbejdsområdet indeholder en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet. 
 
-Dette mobile arbejdsområde er beregnet til brug sammen med Finance and Operations-mobilappen.
+Dette mobile arbejdsområde er beregnet til brug sammen med Finans og drift-mobilappen.
 
 ## <a name="overview"></a>Overblik
 
@@ -61,7 +61,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Finance and Operations-mobilappen:
+Download og installer Finans og drift-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

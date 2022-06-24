@@ -1,6 +1,6 @@
 ---
 title: Regnskabsrapport over resultatopgørelse
-description: I dette emne beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport.
+description: I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f664eeaa5cf40ce856b424d10ba2d1c3bd46e1c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: e9a1f20ed5e2a84e0d18101ede46ffffef4230c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868454"
 ---
 # <a name="income-statement-financial-report"></a>Regnskabsrapport over resultatopgørelse
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport. 
+I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport. 
 
 ## <a name="default-income-statement-report"></a>Standardrapport over resultatopgørelse
 

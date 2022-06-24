@@ -1,6 +1,6 @@
 ---
-title: Integreret debitormaster
-description: I dette emne beskrives integrationen af debitordata mellem Finans og drift og Dataverse.
+title: Integreret kundemaster
+description: Denne artikel beskriver integrationen af debitordata mellem Finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890450"
 ---
 # <a name="integrated-customer-master"></a>Integreret kundemaster
 

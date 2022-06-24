@@ -1,6 +1,6 @@
 ---
 title: Udvidet formatopslag for elektronisk rapportering (ER)
-description: Dette emne beskriver, hvordan en ER-formatreference kan konfigureres i ER-formatopslaget, når det krævede format er gemt i den globale lagermappe.
+description: Denne artikel beskriver, hvordan en ER-formatreference kan konfigureres i ER-formatopslaget, når det krævede format er gemt i den globale lagermappe.
 author: NickSelin
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2b69ba1b3b27f447b58cf98b1140a481b01b735a
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: ae544b8ed4e280ffcaf58d893056a4bf5169e379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901642"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillad brugere at konfigurerer en ER-formatreference, der forespørger om et format fra den globale lagermappe
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere formater til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din Dynamics 365 Finance-forekomst til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces.
+Du kan bruge strukturen [elektronisk rapportering](general-electronic-reporting.md) (ER) til at konfigurere formater for udgående dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Du kan også bruge ER-strukturen til at konfigurere formater til parsing af indgående dokumenter og bruge oplysningerne fra disse dokumenter til at tilføje eller opdatere programdata. Hvert af disse formater kan bruges i din forekomst af Dynamics 365 Finance til at håndtere indgående eller udgående forretningsdokumenter som del af en bestemt forretningsproces.
 
 Normalt skal du angive, hvilket ER-format der skal bruges i en bestemt forretningsproces. Hvis du vil gøre det, skal du vælge ER-formatet i et opslagsfelt, der er konfigureret som en del af forretningsprocesspecifikke parametre. Disse opslagsfelter implementeres normalt ved hjælp af den relevante API i ER-strukturen. Du kan finde flere oplysninger i [API til ER-struktur – kode til visning af et formattilknytningopslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 

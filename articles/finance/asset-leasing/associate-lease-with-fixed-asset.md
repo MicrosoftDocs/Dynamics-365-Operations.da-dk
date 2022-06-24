@@ -1,6 +1,6 @@
 ---
 title: Tilknytte anlægsaktiv med en leasingaftale
-description: I emnet forklares, hvordan et eksisterende anlægsaktiv knyttes til en ny leasingaftale.
+description: Denne artikel forklarer, hvordan et eksisterende anlægsaktiv knyttes til en ny leasingaftale.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0ae7a850ceb13cb41ee5adc406e71105cdad4fe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5cc341008d25da544ec35d5660b5ff0b38f2287b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895103"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Tilknytte anlægsaktiv med en leasingaftale
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I emnet forklares, hvordan et eksisterende anlægsaktiv knyttes til en ny leasingaftale. Når du knytter et anlægsaktiv til en rettighed, vil aktivets aktivværdi (ROU) ved første anerkendelse blive anskaffelsesomkostningen for anlægsaktivet.
+Denne artikel forklarer, hvordan et eksisterende anlægsaktiv knyttes til en ny leasingaftale. Når du knytter et anlægsaktiv til en rettighed, vil aktivets aktivværdi (ROU) ved første anerkendelse blive anskaffelsesomkostningen for anlægsaktivet.
 
 Før du kan knytte et anlægsaktiv til en leasingaftale, skal du oprette en post for anlægsaktivet i anlægsaktiver. Derefter skal du på siden **Leasingoversigt** oprette en leasingaftale og knytte aktivet til den pågældende leasingaftale.
 

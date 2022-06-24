@@ -1,6 +1,6 @@
 ---
-title: Fejlfinding i forbindelse med problemer med direkte synkronisering
-description: Dette emne indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med direkte synkronisering.
+title: Fejlfinde fejl ved aktiv synkronisering
+description: Denne artikel indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med direkte synkronisering.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,23 +9,23 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062357"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896699"
 ---
-# <a name="troubleshoot-live-synchronization-issues"></a>Fejlfinding i forbindelse med problemer med direkte synkronisering
+# <a name="troubleshoot-live-synchronization-issues"></a>Fejlfinde fejl ved aktiv synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emne indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Microsoft Dataverse. Specifikt indeholder emnet oplysninger, der kan hjælpe dig med at løse problemer med direkte synkronisering.
+Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Microsoft Dataverse. Specifikt indeholder emnet oplysninger, der kan hjælpe dig med at løse problemer med direkte synkronisering.
 
 > [!IMPORTANT]
-> Nogle af de problemer, som dette emne vedrører, kræver muligvis enten rollen systemadministrator eller Azure Active Directory (Azure AD) -legitimationsoplysninger fra lejeradministratoren. Hvert afsnit forklarer, om der kræves en bestemt rolle eller specifikke legitimationsoplysninger.
+> Nogle af de problemer, som denne artikel vedrører, kræver muligvis enten rollen systemadministrator eller Azure Active Directory (Azure AD) -legitimationsoplysninger fra lejeradministratoren. Hvert afsnit forklarer, om der kræves en bestemt rolle eller specifikke legitimationsoplysninger.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Live synkronisering viser en fejl, når du opretter en række
 

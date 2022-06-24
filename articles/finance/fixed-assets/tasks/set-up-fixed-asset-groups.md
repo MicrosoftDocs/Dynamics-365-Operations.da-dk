@@ -1,6 +1,6 @@
 ---
-title: Konfigurere anlægsaktivgrupper
-description: I dette emne beskrives, hvordan du opretter en ny anlægsaktivgruppe.
+title: Konfigurer anlægsaktivgrupper
+description: Denne artikel beskriver, hvordan du opretter en ny anlægsaktivgruppe.
 author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17f149f3815867e2b174e017dd6b4998e2d7c16f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7eef214142bab80f6754c74787e94c4e79a3e037
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870069"
 ---
-# <a name="set-up-fixed-asset-groups"></a>Konfigurere anlægsaktivgrupper
+# <a name="set-up-fixed-asset-groups"></a>Konfigurer anlægsaktivgrupper
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opretter en ny anlægsaktivgruppe. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+Denne artikel beskriver, hvordan du opretter en ny anlægsaktivgruppe. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
 
 1. I navigationsruden skal du gå til **Moduler > Anlægsaktiver > Opsætning > Anlægsaktivgrupper**.
 2. Vælg **Ny**.

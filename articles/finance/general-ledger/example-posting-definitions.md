@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865766"
 ---
 # <a name="posting-definition-examples"></a>Eksempler på bogføringsdefinitioner
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722543"
 
 Denne artikel indeholder eksempler på, hvordan bogføringsdefinitioner bruges for behæftelser i indkøbsordrer og budgetdisponeringer.
 
-Inden du læser dette emne, skal du være fortrolig med bogføringsdefinitioner og posteringsbogføringsdefinitioner. Du kan finde flere oplysninger i [Bogføringsdefinitioner](posting-definitions.md). Følgende eksempler kan konfigureres på siden **Bogføringsdefinitioner**. Hvert eksempel indeholder følgende områder:
+Inden du læser denne artikel, skal du være fortrolig med bogføringsdefinitioner og posteringsbogføringsdefinitioner. Du kan finde flere oplysninger i [Bogføringsdefinitioner](posting-definitions.md). Følgende eksempler kan konfigureres på siden **Bogføringsdefinitioner**. Hvert eksempel indeholder følgende områder:
 
 -   Bogføringsdefinition – søgekriterier
 -   Bogføringsdefinition – genererede poster

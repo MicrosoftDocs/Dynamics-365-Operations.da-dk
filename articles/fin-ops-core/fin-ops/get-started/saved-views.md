@@ -1,6 +1,6 @@
 ---
 title: Gemte visninger
-description: Dette emne beskriver, hvordan du bruger de gemte visningsfunktioner.
+description: Denne artikel beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644781"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845407"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -27,7 +27,7 @@ ms.locfileid: "8644781"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-## <a name="introduction"></a>Introduktion
+## <a name="introduction"></a>Start her
 
 Personlig tilpasning spiller en vigtig rolle, når brugere og organisationer skal have mulighed for at optimere brugeroplevelsen efter deres behov. Du kan finde oplysninger om brugertilpasning i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
 
@@ -196,7 +196,7 @@ Hvis du vil se listen over alle publicerede visninger for siden, kan du bruge f�
 
 ## <a name="managing-views-globally"></a>Administrere visninger globalt
 
-Selvom nogle administrationsmuligheder vises på alle sider som angivet i dette emne, kan **systemadministratorer** og **gemte visningsadministratorer** administrere visninger mere enkelt for systemet via siden **Brugertilpasning**. Denne side indeholder bl. a. følgende afsnit og funktioner: 
+Selvom nogle administrationsmuligheder vises på alle sider som angivet i denne artikel, kan **systemadministratorer** og **gemte visningsadministratorer** administrere visninger mere enkelt for systemet via siden **Brugertilpasning**. Denne side indeholder bl. a. følgende afsnit og funktioner: 
 
 - **Publicerede visninger** – i dette afsnit beskrives alle de visninger, der er publiceret for din organisation. Herfra kan du publicere en visning igen, efter at du har justeret de sikkerhedsroller eller juridiske enheder, som visningen er mål for. Du kan også eksportere, slette eller annullere publicering af visninger. Du kan bruge handlingen **Gem som personlig** til at oprette en personlig kopi af en visning, så du kan opdatere visningen eller få en bedre forståelse af dens indhold. 
 - **Ikke-publicerede visninger** – I dette afsnit vises alle organisationsvisninger i systemet, der ikke aktuelt er publiceret. Disse visninger kommer oftest ind i systemet via importfunktionen. Du kan publicere, eksportere eller slette disse visninger. Handlingen **Hurtig publicering**, der blev tilføjet i version 10.0.12, gør det muligt at publicere flere visninger fra dette afsnit i én handling ved hjælp af de eksisterende konfigurationer af sikkerhedsroller og juridiske enheder. Du kan bruge handlingen **Gem som personlig** til at oprette personlige kopier af disse visninger, så du kan få en bedre forståelse af deres indhold.

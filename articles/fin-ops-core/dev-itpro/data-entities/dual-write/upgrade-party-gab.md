@@ -1,6 +1,6 @@
 ---
 title: Opgradere til modellen med part- og globalt adressekartotek
-description: Dette emne indeholder en beskrivelse af, hvordan du opgraderer dobbeltskrivningsdata til modellen med part- og globalt adressekartotek.
+description: Denne artikel indeholder en beskrivelse af, hvordan du opgraderer dobbeltskrivningsdata til modellen med part- og globalt adressekartotek.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895270"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
@@ -40,7 +40,7 @@ I slutningen af processen genereres følgende kommaseparerede værdier (.csv).
 | ImportFONewPostalAddress.csv | Denne fil hjælper med at oprette nye **Postadresse**-poster i Finans- og driftsappen. |
 | ImportFONewElectronicAddress.csv | Denne fil hjælper med at oprette nye **Elektronisk adresse**-poster i Finans- og driftsappen. |
 
-Dette emne beskriver, hvordan du bruger Data Factory-skabeloner og opgraderer dine data. Hvis du ikke har tilpasninger, kan du bruge skabelonerne, som de er. Hvis du har tilpasninger af data i **Konto**, **Kontakt** og **Leverandør**, skal du redigere skabelonerne ved hjælp af følgende vejledning.
+Denne artikel beskriver, hvordan du bruger Data Factory-skabeloner og opgraderer dine data. Hvis du ikke har tilpasninger, kan du bruge skabelonerne, som de er. Hvis du har tilpasninger af data i **Konto**, **Kontakt** og **Leverandør**, skal du redigere skabelonerne ved hjælp af vejledningen i denne artikel.
 
 > [!IMPORTANT]
 > Der er specielle instruktioner for kørsel af skabeloner for partens postadresse og partens elektroniske adresse. Du skal køre partskabelonen først, derefter skabelonen for partpostadressen og derefter skabelonen for den elektroniske partadresse. Hver skabelon er designet til at blive importeret på en separat datafabrik.

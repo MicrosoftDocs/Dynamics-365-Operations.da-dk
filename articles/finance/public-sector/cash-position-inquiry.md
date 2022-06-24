@@ -1,6 +1,6 @@
 ---
 title: Forespørgsel på likviditet
-description: Dette emne indeholder oplysninger om, hvordan du fastlægger den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
+description: Denne artikel indeholder oplysninger om, hvordan du fastlægger den tilsvarende likviditet for økonomiske dimensionssæt, der indeholder selvafstemmende dimensioner.
 author: velofog
 ms.date: 10/24/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: public sector
 ms.author: twheeloc
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 521e8eefd29c312d4bfc8294508349ff507b0c98
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 51c8c7966a232a7dca83b1711870116975fc0b1d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891458"
 ---
 # <a name="cash-position-inquiry"></a>Forespørgsel på likviditet
 [!include [banner](../includes/banner.md)]

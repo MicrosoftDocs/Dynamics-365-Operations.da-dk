@@ -1,6 +1,6 @@
 ---
 title: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
-description: Dette emne forklarer, hvordan du justerer et elektronisk rapporteringsformat (ER) fra Microsoft og opretter et brugerdefineret elektronisk dokument.
+description: Denne artikel forklarer, hvordan du justerer et elektronisk rapporteringsformat (ER) fra Microsoft og opretter et brugerdefineret elektronisk dokument.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886785"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
 
 [!include[banner](../includes/banner.md)]
 
-Procedurerne i dette emne forklarer, hvordan en bruger med rollen Systemadministrator eller Funktionel konsulent i elektronisk rapportering kan udføre disse opgaver:
+Procedurerne i denne artikel forklarer, hvordan en bruger med rollen Systemadministrator eller Funktionel konsulent i elektronisk rapportering kan udføre disse opgaver:
 
 - Konfigurer parametre for den [Elektroniske rapporteringsstruktur (ER)](general-electronic-reporting.md).
 - Importer ER-konfigurationer, der leveres af Microsoft, og som bruges til at generere en betalingsfil, mens en [kreditorbetaling](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) behandles.
@@ -135,7 +135,7 @@ Få flere oplysninger om udbydere af ER-konfigurationer under [Oprette konfigura
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>Importere standardkonfigurationer af ER
 
-Hvis du vil føje standard-ER-konfigurationerne til din aktuelle forekomst af Microsoft Dynamics 365 Finance, skal du importere dem fra det ER-[lager](general-electronic-reporting.md#Repository), der er konfigureret for den pågældende forekomst.
+Hvis du vil føje ER-standardkonfigurationerne til din aktuelle forekomst af Microsoft Dynamics 365 Finance, skal du importere dem fra det [ER-lager](general-electronic-reporting.md#Repository), der er konfigureret for den pågældende forekomst.
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurationer** skal du i sektionen **Konfigurationsudbydere** vælge feltet **Microsoft** og derefter vælge **Lagre** for at få vist listen over lagre for Microsoft-udbyderen.

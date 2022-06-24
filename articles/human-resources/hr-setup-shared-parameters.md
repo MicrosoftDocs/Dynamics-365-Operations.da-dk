@@ -1,6 +1,6 @@
 ---
 title: Konfigurere delte parametre
-description: I dette emne beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder.
+description: I denne artikel beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e59745e01905be50e6908fb9587b8afc17604382
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c0d8dbca302d90cc402feb4715a6fcc2b935d8b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906176"
 ---
 # <a name="configure-shared-parameters"></a>Konfigurere delte parametre
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Du skal konfigurere delte parametre for poster, der deles på tværs af virksomheder, herunder **Stilling**-poster. I dette emne beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder.
+Du skal konfigurere delte parametre for poster, der deles på tværs af virksomheder, herunder **Stilling**-poster. I denne artikel beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder.
 
 Visse typer poster, f.eks. **Stilling**-poster, deles på tværs af firmaer. Du skal konfigurere delte parametre for disse poster. Du kan f.eks. bruge siden **Delte parametre for personale** for at konfigurere personaleparametre på tværs af juridiske enheder. 
 

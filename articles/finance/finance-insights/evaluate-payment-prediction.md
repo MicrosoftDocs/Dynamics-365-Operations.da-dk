@@ -1,6 +1,6 @@
 ---
-title: Evaluer den indledende forudsigelsesmodel for debitorbetalinger
-description: I dette emne beskrives de trin, du kan tage for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
+title: Evaluer den indledende forudsigelsesmodel for kundebetalinger
+description: Denne artikel beskriver de trin, du kan udføre for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846996"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den indledende forudsigelsesmodel for debitorbetalinger
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den indledende forudsigelsesmodel for kundebetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du evaluerer en forudsigelsesmodel, når du har aktiveret Finance Insights og derefter genererede og afprøvede din første model. Dette emne omhandler modeller til forudsigelse af debitorbetalinger. Dette emne beskrives de trin, du kan tage for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
+Denne artikel forklarer, hvordan du evaluerer en forudsigelsesmodel, når du har aktiveret Finance Insights og derefter genererede og afprøvede din første model. Denne artikel omhandler modeller til forudsigelse af debitorbetalinger. Dette emne beskrives de trin, du kan tage for at forstå forudsigelsesmodellen for debitorbetaling og evaluerer effektiviteten.
 
 ## <a name="getting-details-about-the-model"></a>Hente oplysninger om modellen
 

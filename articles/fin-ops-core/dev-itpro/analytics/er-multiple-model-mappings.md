@@ -1,6 +1,6 @@
 ---
 title: Administrere flere afledte tilknytninger for en enkelt modelrod
-description: Dette emne forklarer, hvordan du kan administrere flere afledte tilknytninger, der er konfigureret til en enkelt modelrod.
+description: Denne artikel forklarer, hvordan du kan administrere flere afledte tilknytninger, der er konfigureret til en enkelt modelrod.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892473"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Administrere flere afledte tilknytninger for en enkelt modelrod
 
@@ -32,9 +32,9 @@ Komponenterne til ER-modeltilknytning kan være i ER-datamodellens [konfiguratio
 
 Mange konfigurationsudbydere kan tilbyde ER-modeltilknytningskonfigurationer for samme ER-datamodel. Disse modeltilknytningskonfigurationer kan indeholde tilknytningskomponenter for forskellige roddefinitioner. Du kan bruge en modeltilknytning til én roddefinition, der tilbydes af én [udbyder](general-electronic-reporting.md#Provider), og bruge en modeltilknytning til en anden roddefinition, som tilbydes af en anden udbyder.
 
-Procedurerne i dette emne indeholder forklaring på, hvordan du kan administrere flere ER-modeltilknytningskonfigurationer for en ER-datamodel, når de indeholder forskellige modeltilknytningskomponenter, der er konfigureret til samme roddefinition. 
+Procedurerne i denne artikel indeholder forklaring på, hvordan du kan administrere flere ER-modeltilknytningskonfigurationer for en ER-datamodel, når de indeholder forskellige modeltilknytningskomponenter, der er konfigureret til samme roddefinition. 
 
-Procedurerne i dette emne kan kun udføres af brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler.
+Procedurerne i denne artikel kan kun udføres af brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler.
 
 Alle de følgende procedurer kan udføres i USMF-virksomheden. Der kræves ingen kodning.
 

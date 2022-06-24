@@ -1,6 +1,6 @@
 ---
 title: Adgangsrettigheder for controllere til omkostningsobjekt
-description: Dette emne indeholder oplysninger om adgangsrettigheder for controllere til omkostningsobjekter.
+description: Denne artikel indeholder oplysninger om adgangsrettigheder for controllere til omkostningsobjekter.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903183"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Adgangsrettigheder for controllere til omkostningsobjekt
 
@@ -35,10 +35,10 @@ Der er fire entydige roller i omkostningsregnskab.
 |-------------------------|--------------|
 | Vedligehold regnskabschef for omkostning | Aktivitet     |
 | Lagerbogholder         | Operations   |
-| Lagerregnskabsassistent   | Operations   |
-| Controller til omkostningsobjekt  | Teammedlemmer |
+| Bogholderiassistent   | Operationer   |
+| Controller for omkostningsobjekt  | Teammedlemmer |
 
-Dette emne forklarer, hvordan du tildeler rollen **Controller til omkostningsobjekt** til en leder.
+Denne artikel forklarer, hvordan du tildeler rollen **Controller til omkostningsobjekt** til en leder.
 
 Når rollen **Controller til omkostningsobjekt** tildeles til en leder, kan lederen udføre følgende opgaver:
 
@@ -95,7 +95,7 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
 
 > [!IMPORTANT]
 > - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - I dette emne beskrives de forudsætninger, der skal være opfyldt, før du kan bruge arbejdsområdet **Omkostningsstyring**.
+> - Denne artikel beskriver de forudsætninger, der skal være opfyldt, før du kan bruge arbejdsområdet **Omkostningsstyring**.
 
 Yderligere ressourcer
 

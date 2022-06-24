@@ -1,6 +1,6 @@
 ---
 title: Angive parametre for kildeskat
-description: Dette emne beskriver, hvordan du angiver parametre for at aktivere funktionen til kildeskat (TDS – Tax Deducted at Source) for angivne transaktioner. Det er et nødvendigt trin for at kunne bruge funktionen til kildeskat.
+description: Denne artikel beskriver, hvordan du angiver parametre for at aktivere funktionen til kildeskat (TDS – Tax Deducted at Source) for angivne transaktioner. Det er et nødvendigt trin for at kunne bruge funktionen til kildeskat.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f7c8802d10a065c60894e80c8ff3cb19163d5ffe
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3390cad6979858fbff73769d0d25132ba18a2157
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865607"
 ---
 # <a name="set-the-tds-parameters"></a>Angive parametre for kildeskat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du angiver parametre for at aktivere funktionen til kildeskat (TDS – Tax Deducted at Source) for angivne transaktioner. Det er et nødvendigt trin for at kunne bruge funktionen til kildeskat.
+Denne artikel beskriver, hvordan du angiver parametre for at aktivere funktionen til kildeskat (TDS – Tax Deducted at Source) for angivne transaktioner. Det er et nødvendigt trin for at kunne bruge funktionen til kildeskat.
 
 1. Gå til **Finans \> Opsætning Finans \> Finansparametre**.
 2. Under fanen **Direkte skatter** i sektionen **Kildeskat** skal du angive indstillingen **Aktivér kildeskat** til **Ja** for at aktivere funktionen til kildeskat samt de sider og felter, der hører under den.

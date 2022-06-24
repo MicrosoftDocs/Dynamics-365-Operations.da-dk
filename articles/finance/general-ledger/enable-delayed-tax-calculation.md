@@ -1,6 +1,6 @@
 ---
 title: Aktivere forsinket momsberegning på kladder
-description: I dette emne forklares det, hvordan du kan bruge funktionen Forsinket momsberegning til at forbedre ydeevnen af momsberegninger, når antallet af kladdelinjer er meget stort.
+description: Denne artikel forklarer, hvordan du kan bruge funktionen Forsinket momsberegning til at forbedre ydeevnen af momsberegninger, når antallet af kladdelinjer er meget stort.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887913"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket momsberegning på kladder
 [!include [banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan du kan forsinke momsberegningen på kladder. Denne facilitet hjælper med at forbedre ydeevnen af momsberegninger, når der er mange kladdelinjer.
+Denne artikel forklarer, hvordan du kan forsinke momsberegningen på kladder. Denne facilitet hjælper med at forbedre ydeevnen af momsberegninger, når der er mange kladdelinjer.
 
 Momsbeløb på kladdelinjer beregnes som standard, når momsrelaterede felter opdateres. Disse felter omfatter felterne til momsgrupper og varemomsgrupper. Enhver opdatering af en kladdelinje medfører, at momsbeløb genberegnes for alle kladdelinjer. Selvom denne funktionsmåde hjælper brugeren med at se momsbeløb beregnet i realtid, kan det også påvirke ydeevnen, hvis antallet af kladdelinjer er meget stort.
 

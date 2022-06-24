@@ -1,6 +1,6 @@
 ---
-title: Vise økonomirapporter
-description: I dette emne beskrives, hvordan du kan se og undersøge økonomirapporter i Microsoft Dynamics 365 Finance. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+title: Vis økonomiske rapporter
+description: Denne artikel beskriver, hvordan du kan se og undersøge økonomirapporter i Microsoft Dynamics 365 Finance. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
 ms.date: 03/25/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fec130ce7b05a8e0b8182a63679cf7b20983f1d0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907886"
 ---
-# <a name="view-financial-reports"></a>Vise økonomirapporter
+# <a name="view-financial-reports"></a>Vis økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan se og undersøge økonomirapporter. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+I denne artikel beskrives, hvordan du kan se og udforske økonomirapporter. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
 ## <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 

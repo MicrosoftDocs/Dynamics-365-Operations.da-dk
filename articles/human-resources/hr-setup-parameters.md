@@ -1,6 +1,6 @@
 ---
 title: Konfigurere personaleparametre
-description: Dette emne forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre i Dynamics 365 Human Resources.
+description: Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856274"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere personaleparametre
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Indstillingerne for nogle personaleparametre deles på tværs af firmaer, mens indstillingerne af andre parametre er firmaspecifikke. Dette emne forklarer, hvordan du konfigurerer firmaspecifikke personaleparametre.
+Indstillingerne for nogle personaleparametre deles på tværs af firmaer, mens indstillingerne af andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer firmaspecifikke personaleparametre.
 
 To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Human Resourcesparametre**.
 

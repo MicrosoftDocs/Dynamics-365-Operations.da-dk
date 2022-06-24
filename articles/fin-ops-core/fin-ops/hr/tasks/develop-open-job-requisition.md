@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876496"
 ---
 # <a name="develop-and-open-job-requisition"></a>Udarbejd og åbn jobansættelse
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Rekrutteringsfunktionen i dette emne kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter.  
+> Rekrutteringsfunktionen i denne artikel kaldes rekrutteringsprojekter og fokuserer på ansøgere, ansøgninger og rekrutteringsprojekter.  
 
 
 Rekrutteringsprojekter hjælper dig med at administrere rekrutteringsprocessen. For de enkelte rekrutteringsprojekter kan du angive oplysninger, f.eks. det job, du rekrutterer til, navnet på rekrutteringsmedarbejderen, status for projektet og den afdeling, som jobbet findes i. Når du har oprettet et rekrutteringsprojekt, kan du skrive en jobannonce for det, publicere annoncen på **Medarbejderselvbetjeningssiden**, knytte jobansøgninger til projektet og spore aktiviteter i det pågældende projekt. Demodatafirmaet **USMF** bruges til at oprette denne procedure.

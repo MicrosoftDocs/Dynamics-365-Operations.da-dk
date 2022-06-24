@@ -1,6 +1,6 @@
 ---
 title: Dobbelt valuta
-description: Dette emne indeholder oplysninger om såkaldt dobbelt valuta, hvor rapporteringsvalutaen bruges som en ekstra regnskabsvaluta i Microsoft Dynamics 365 Finance.
+description: Denne artikel indeholder oplysninger om såkaldt dobbelt valuta, hvor rapporteringsvalutaen bruges som en ekstra regnskabsvaluta i Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906349"
 ---
 # <a name="dual-currency"></a>Dobbelt valuta
 
@@ -36,7 +36,7 @@ En række moduler til registrering, rapportering og brug af rapporteringsvalutae
 - Anlægsaktiver 
 - Konsolideringer
 
-Efter en opgradering skal du fuldføre bestemte trin for Kontant- og bankstyring og Anlægsaktiver. Derfor skal du læse og forstå de relevante afsnit i dette emne omhyggeligt.
+Efter en opgradering skal du fuldføre bestemte trin for Kontant- og bankstyring og Anlægsaktiver. Derfor skal du læse og forstå de relevante afsnit i denne artikel omhyggeligt.
 
 ## <a name="posting-process"></a>Bogføringsproces
 
@@ -93,7 +93,7 @@ Følgende yderligere ændringer er foretaget i **Finans**-modulet:
 - En separat valutakurstype for rapporteringsvalutaen kan defineres i finans. Hvis en organisation ikke vil bruge en anden valutakurstype, kan du lade feltet for valutakurstypen for rapporteringsvalutaen være tomt. Du kan også vælge den samme valutakurstype som den, der bruges til regnskabsvalutaen. Hvis du lader feltet stå tomt, bruger systemet valutakurstypen for regnskabsvalutaen.
 - I en ny kladde, Reguleringskladde for rapporteringsvaluta, kan reguleringer kun bogføres på finanskonti i rapporteringsvalutaen. I kladden kan der kun bogføres til finanskonti. Kladden understøtter ikke interne bogføringer, og valutaen skal være rapporteringsvalutaen for den juridiske enhed, hvor kladden bogføres. Når kladden er bogført, er posteringsvaluta- og regnskabsvalutabeløbene 0 (nul), og rapporteringsvalutabeløbet bogføres med det beløb, der er angivet i posteringen. Da den måde rapporteringsvalutaen bruges i modulerne **Kreditor**, **Debitor** og **Anlægsaktiver** er ændret, kan du bruge denne kladde for reguleringer efter en opgradering. Eksempler på, hvordan du kan bruge denne kladde, finder du i afsnittene for disse moduler.
 - Processen for periodefordeling er blevet opdateret, så der kan allokeres beløb i transaktions-, regnskabs- og rapporteringsvalutaerne. Tidligere blev beløb tildelt i transaktions- og regnskabsvalutaerne, og derefter blev regnskabsvalutabeløbet oversat til rapporteringsvalutaen. Denne funktionsmåde kunne forårsage, at en saldo forblev i rapporteringsvalutaen på finanskontoen. Nu, når beløbene beregnes og anvendes i regnskabsposten, foregår der ingen oversættelse.
-- Processen til værdiregulering af udenlandsk valuta har allerede reguleret beløb i rapporteringsvalutaen. Dog beregnes rapporteringsvalutabeløbet nu via transaktionsvalutabeløbet som beskrevet i afsnittet [Bogføringsproces](#posting-process) tidligere i dette emne.
+- Processen til værdiregulering af udenlandsk valuta har allerede reguleret beløb i rapporteringsvalutaen. Dog beregnes rapporteringsvalutabeløbet nu via transaktionsvalutabeløbet som beskrevet i afsnittet [Bogføringsproces](#posting-process) tidligere i denne artikel.
 - Mange rapporter og forespørgsler i Finans havde allerede rapporteringsvalutaen, men nogle få havde den ikke. Et eksempel er listesiden **Råbalance**. Denne listeside omfatter nu kolonner til både regnskabsvalutaen og rapporteringsvalutaen. Bemærk, at kolonnerne til rapporteringsvalutaen er skjult, hvis regnskabsvalutaen og rapporteringsvalutaen er den samme, eller hvis der ikke blev defineret en rapporteringsvaluta i finans.
 
 ### <a name="financial-reporting"></a>Økonomirapportering

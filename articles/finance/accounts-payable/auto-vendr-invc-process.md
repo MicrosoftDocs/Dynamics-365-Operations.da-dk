@@ -1,6 +1,6 @@
 ---
 title: Oversigt over automatiske processer for kreditorfakturering
-description: I dette emne beskrives muligheden for at automatisere behandlingen af kreditorfakturaer og fordelene ved at bruge en automatiseret proces.
+description: Denne artikel beskriver muligheden for at automatisere behandlingen af kreditorfakturaer og fordelene ved at bruge en automatiseret proces.
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883439"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversigt over automatiske processer for kreditorfakturering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives muligheden for at automatisere behandlingen af kreditorfakturaer og fordelene ved at bruge en automatiseret proces. Denne egenskab består af funktioner, der aktiveres i funktionsstyring. Disse funktioner gælder kun for kreditorfakturaer, ikke for fakturaer, der behandles ved hjælp af siden **Fakturajournal** eller **Indgangsbogskladde**.
+Denne artikel beskriver muligheden for at automatisere behandlingen af kreditorfakturaer og fordelene ved at bruge en automatiseret proces. Denne egenskab består af funktioner, der aktiveres i funktionsstyring. Disse funktioner gælder kun for kreditorfakturaer, ikke for fakturaer, der behandles ved hjælp af siden **Fakturajournal** eller **Indgangsbogskladde**.
 
 I mange tilfælde samarbejder organisationer med tredjepart om behandlingen af papirfakturaer via en udbyder af optisk tegngenkendelse (OCR). Tjenesteudbyderen returnerer maskinlæsbare fakturametadata. For at hjælpe med automatisering kan du bruge funktionerne til automatisering af kreditorer til at forbruger disse artefakter fra kreditor.
 

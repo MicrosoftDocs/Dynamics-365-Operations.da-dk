@@ -1,6 +1,6 @@
 ---
 title: Bevare kreditorcertificering
-description: I dette emne beskrives den fremgangsmåde, som kreditorer kan bruge til at bevare deres certificeringer ved hjælp af arbejdsområdet Kreditorsamarbejde.
+description: Denne artikel beskriver den fremgangsmåde, som leverandører kan bruge til at bevare deres certificeringer ved hjælp af arbejdsområdet Kreditorsamarbejde.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891431"
 ---
 # <a name="maintain-vendor-certification"></a>Bevare kreditorcertificering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives den fremgangsmåde, som dine kreditorer kan bruge til at bevare deres certificeringer ved hjælp af **arbejdsområdet Kreditorsamarbejde**. Eksempler på certificeringer kan omfatte en virksomhed af typen Woman Business Enterprise (WBE) eller Leadership in Energy and Environment Design (LEED). Kreditorer skal angive certificeringsoplysninger i arbejdsområdet **Kreditoroplysninger**. Derfra vælger kreditorerne vælge **Flere detaljer** og derefter **Certificeringer**.
+Denne artikel beskriver den fremgangsmåde, som dine kreditorer kan bruge til at bevare deres certificeringer ved hjælp af **arbejdsområdet Kreditorsamarbejde**. Eksempler på certificeringer kan omfatte en virksomhed af typen Woman Business Enterprise (WBE) eller Leadership in Energy and Environment Design (LEED). Kreditorer skal angive certificeringsoplysninger i arbejdsområdet **Kreditoroplysninger**. Derfra vælger kreditorerne vælge **Flere detaljer** og derefter **Certificeringer**.
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>Aktivere funktionen til kreditorcertificering
 

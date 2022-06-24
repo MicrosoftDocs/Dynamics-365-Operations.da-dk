@@ -1,6 +1,6 @@
 ---
 title: Konfigurere elektroniske meddelelser
-description: Dette emne indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser (EM).
+description: Denne artikel indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser (EM).
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874545"
 ---
 # <a name="set-up-electronic-messages"></a>Konfigurere elektroniske meddelelser
 
@@ -66,7 +66,7 @@ I følgende tabel beskrives felterne på siden **Meddelelsesstatusser**.
 |---------------------|-------------|
 | Meddelelsesstatus      | Indtast et unikt navn for meddelelsens status. Meddelelsesstatusser anvendes til at karakterisere en elektronisk meddelelses tilstand på ethvert tidspunkt. Det indtastede navn fremgår af siden **Elektroniske meddelelser** og en log, der er tilknyttet elektroniske meddelelser. |
 | Beskrivelse         | Indtast en beskrivelse af meddelelsens status. |
-| Svartype       | Vælg svartypen for meddelelsens status. Visse handlinger i en behandling kan producere mere end én svartype. Eksempelvis kan handlinger af typen **Webtjeneste** producere svartyper i form af enten **Udført korrekt** eller **Teknisk fejl** afhængigt af resultatet af kørslen. I dette tilfælde skal meddelelsesstatus for begge svartyper være defineret. Du kan finde flere oplysninger om handlingstyper og de svartyper, der er forbundet hermed, under [Handlingstyper for behandling af meddelelser](#action-types) senere i dette emne. |
+| Svartype       | Vælg svartypen for meddelelsens status. Visse handlinger i en behandling kan producere mere end én svartype. Eksempelvis kan handlinger af typen **Webtjeneste** producere svartyper i form af enten **Udført korrekt** eller **Teknisk fejl** afhængigt af resultatet af kørslen. I dette tilfælde skal meddelelsesstatus for begge svartyper være defineret. Du kan finde flere oplysninger om handlingstyper og de svartyper, der er forbundet hermed, under [Handlingstyper for behandling af meddelelser](#action-types) senere i denne artikel. |
 | Status for meddelelseselement | Til tider skal statussen for en elektronisk meddelelse påvirke statussen for tilknyttede meddelelseselementer. Vælg i dette felt en status for et meddelelseselement for at knytte den til meddelelsens status. |
 | Tillad sletning        | Marker dette afkrydsningsfelt, hvis brugerne skal kunne slette elektroniske meddelelser med denne status på siden **Elektroniske meddelelser**. |
 
@@ -240,7 +240,7 @@ I følgende tabel beskrives felterne på siden **Handlinger ved meddelelsesbehan
 
 | Felt                                     | Betegnelse |
 |-------------------------------------------|-------------|
-| Aktionstype                               | Vælg handlingstypen. Du kan finde oplysninger om de tilgængelige indstillinger i sektionen [Typer af handlinger til behandling af meddelelser](#action-types) senere i dette emne. |
+| Aktionstype                               | Vælg handlingstypen. Du kan finde oplysninger om de tilgængelige indstillinger i sektionen [Typer af handlinger til behandling af meddelelser](#action-types) senere i denne artikel. |
 | Formattilknytning                            | Vælg det ER-format, der skal kaldes for handlingen. Dette felt er kun tilgængeligt for handlinger af typerne **Eksport af elektronisk rapportering**, **Import af elektronisk rapportering** og **Meddelelse om eksport af elektronisk rapportering**. |
 | Formattilknytning for URL-sti               | Vælg det ER-format, der skal kaldes for handlingen. Dette format anvendes til at angive stien til den URL-adresse, som bliver føjet til den basisinternetadresse, der er angivet for den valgte webserver. Dette felt er kun tilgængeligt for handlinger af typen **Webtjeneste**. |
 | Typen af meddelelseselement                         | Vælg den type poster, som handlingen skal evalueres for. Dette felt er tilgængeligt for handlinger af typen **Udførelsesniveau for meddelelseselement**, **Eksport af elektronisk rapportering**, **Import af elektronisk rapportering** og **Webtjeneste** samt visse andre typer. Hvis du lader feltet stå tomt, evalueres alle de meddelelseselementtyper, som er defineret for behandlingen af meddelelser. |

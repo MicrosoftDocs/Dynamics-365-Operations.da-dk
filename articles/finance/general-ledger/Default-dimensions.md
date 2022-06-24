@@ -1,6 +1,6 @@
 ---
 title: Økonomiske dimensioner og bogføring
-description: Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Dette emne forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
+description: Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Denne artikel forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910107"
 ---
 # <a name="financial-dimensions-and-posting"></a>Økonomiske dimensioner og bogføring 
 
 [!include [banner](../includes/banner.md)]
 
-Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Dette emne forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
+Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Denne artikel forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Komponenter i kontoplan og økonomisk dimension
 
@@ -46,7 +46,7 @@ Du kan vælge at angive en økonomisk udligningsdimension. På siden **Finans** 
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Standard/faste økonomiske dimensioner på hovedkontoen.
 
-Standarddimensioner kommer fra forskellige steder som f.eks. masterposter (f.eks. debitor- eller kreditorposter), dokumenthoveder og hovedkontoen. I dette emne beskrives standarddimensioner på hovedkontoen efter juridisk enhed. Du kan angive, om en hovedkonto har en **Ikke fast** eller **Fast** værdi for hver økonomisk dimension, der bruges i alle kontostrukturer til Finans. Hvis en økonomisk dimension er **Ikke fast**, bruger den en standardværdi, men denne værdi kan overskrives. Denne funktionsmåde gælder for alle standardværdier i systemet, selv standardværdier, der stammer fra masterposter. Hvis en økonomisk dimension, der er indstillet til en **Fast** værdi, anvendes denne værdi altid, uanset om den stammer fra et sted som standardværdi, eller brugeren har angivet den.
+Standarddimensioner kommer fra forskellige steder som f.eks. masterposter (f.eks. debitor- eller kreditorposter), dokumenthoveder og hovedkontoen. Denne artikel beskriver standarddimensioner på hovedkontoen efter juridisk enhed. Du kan angive, om en hovedkonto har en **Ikke fast** eller **Fast** værdi for hver økonomisk dimension, der bruges i alle kontostrukturer til Finans. Hvis en økonomisk dimension er **Ikke fast**, bruger den en standardværdi, men denne værdi kan overskrives. Denne funktionsmåde gælder for alle standardværdier i systemet, selv standardværdier, der stammer fra masterposter. Hvis en økonomisk dimension, der er indstillet til en **Fast** værdi, anvendes denne værdi altid, uanset om den stammer fra et sted som standardværdi, eller brugeren har angivet den.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Rækkefølge, som standarddimensioner anvendes i under bogføring
 

@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – globaliseringsfunktioner
-description: Dette emne forklarer, hvordan du bruger Microsoft Regulatory Configuration Services (RCS) og det globale lager for at oprette og bruge globaliseringsfunktioner.
+description: Denne artikel forklarer, hvordan du bruger Microsoft Regulatory Configuration Services (RCS) og det globale lager for at oprette og bruge globaliseringsfunktioner.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888888"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Service (RCS) – globaliseringsfunktioner
 
@@ -40,7 +40,7 @@ Før du fuldfører procedurerne, skal du udføre de trin, der er knyttet til fø
 - Adgang til en RCS-forekomst.
 - Oprettelse og aktivering af en konfigurationsudbyder. Få flere oplysninger i [Oprette konfigurationsudbydere og markere dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-I din Finance and Operations-appforekomst skal du følge disse trin:
+Følg disse trin i din forekomst af programmer til finans og drift.
 
 1. Gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. Hvis der ikke er klargjort noget RCS-miljø til dit firma, skal du vælge **Regulatory services – Konfiguration** og derefter følge vejledningen for at klargøre et miljø.
@@ -64,7 +64,7 @@ Hvis du vil bruge en globaliseringsfunktion, skal du importere den fra det globa
 
 ## <a name="access-globalization-features"></a>Tilgå globaliseringsfunktioner
 
-1. Sørg for, at funktionen **Globaliseringsfunktioner** er aktiveret i funktionsstyring, som beskrevet tidligere i dette emne.
+1. Sørg for, at funktionen **Globaliseringsfunktioner** er aktiveret i funktionsstyring, som beskrevet tidligere i denne artikel.
 2. Åbn det nye arbejdsområde **Globaliseringsfunktioner**, og under **Funktioner** skal du vælge feltet **e-fakturering**.
 
     ![Arbejdsområde til globale funktioner.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ De følgende handligner er tilgængelige for konfigurationer:
 - **Vis** – Få vist de underliggende funktionskonfigurationer, der ikke kræver opdatering.
 - **Rediger** – Opretfe en kladdeversion af en valgt konfiguration, så du kan redigere formatet eller formattilknytningen i formatdesigneren.
 - **Slet** – Slette en valgt konfiguration fra funktionen.
-- **Rebasér** – Rebasere funktionen. Du kan finde flere oplysninger i afsnittet [Rebasér delte globaliseringsfunktioner](#rebase) nedenfor i dette emne.
+- **Rebasér** – Rebasere funktionen. Du kan finde flere oplysninger i afsnittet [Rebasér delte globaliseringsfunktioner](#rebase) nedenfor i denne artikel.
 
 ### <a name="setups"></a>Konfigurationer
 
@@ -182,7 +182,7 @@ Følgende handlinger er tilgængelige for funkionsopsætninger:
 
 De følgende handlinger er tilgængelige for miljøer:
 
-- **Aktivér** – For en valgt funktionsversion skal du vælge et publiceret miljø og vælge en **Ikrafttrædelsesdato**, når den skal være tilgængelig. Du kan finde flere oplysninger i afsnittet [Konfigurer miljøer til aktivering](#configureenvironment) nedenfor i dette emne.
+- **Aktivér** – For en valgt funktionsversion skal du vælge et publiceret miljø og vælge en **Ikrafttrædelsesdato**, når den skal være tilgængelig. Du kan finde flere oplysninger i afsnittet [Konfigurer miljøer til aktivering](#configureenvironment) nedenfor i denne artikel.
 - **Annuller** – Fjerne et miljø for en funktionsopsætning.
 
 ### <a name="organizations"></a>Organisationer

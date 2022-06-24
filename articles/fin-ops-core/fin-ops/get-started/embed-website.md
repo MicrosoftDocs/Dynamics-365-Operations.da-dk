@@ -1,6 +1,6 @@
 ---
 title: Integrere tredjepartsapps
-description: Dette emne beskriver, hvordan du kan integrere tredjepartsapps for at forbedre produktets funktioner.
+description: Denne artikel beskriver, hvordan du kan integrere tredjepartsapps for at forbedre produktets funktioner.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488228"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868602"
 ---
 # <a name="embed-third-party-apps"></a>Integrere tredjepartsapps
 
 [!include [banner](../includes/banner.md)]
 
-Mange kunder bruger en række programmer til at køre deres virksomhed. Nogle af disse applikationer er webapps fra en tredjepart, som fungerer sammen med Finance and Operations-apps. For at opnå en mere problemfri brugeroplevelse kan du bruge funktionen **Fuld side-apps** til at integrere disse tredjepartsapps direkte i dine Finance and Operations-apps (forudsat at disse tredjepartsapps tillader, at de bliver integreret). På denne måde kan brugere få adgang til de websteder og apps, de kræver, uden at skulle skifte faner eller vinduer.
+Mange kunder bruger en række programmer til at køre deres virksomhed. Nogle af disse applikationer er webapps fra en tredjepart, som fungerer sammen med programmer til finans og drift. For at give en mere problemfri brugeroplevelse kan du bruge funktionen **Fuld side-apps** til at integrere disse tredjepartsapps direkte i dine programmer til finans og drift (forudsat at disse tredjepartsapps tillader, at de bliver integreret). På denne måde kan brugere få adgang til de websteder og apps, de kræver, uden at skulle skifte faner eller vinduer.
 
-Før du kan integrere tredjepartsapps i produktet, skal du aktivere funktionen **Fuld side-apps** i Funktionsstyring. Du kan derefter bruge en af følgende metoder til at integrere en tredjepartsapp eller et websted. Disse metoder svarer til de metoder, der bruges til at integrere lærredapps fra Microsoft Power Apps i Finance and Operations-apps.
+Før du kan integrere tredjepartsapps i produktet, skal du aktivere funktionen **Fuld side-apps** i Funktionsstyring. Du kan derefter bruge en af følgende metoder til at integrere en tredjepartsapp eller et websted. Disse metoder svarer til de metoder, der bruges til at integrere lærredapps fra Microsoft Power Apps i programmer til finans og drift.
 
 - Integrer appen eller webstedet på en eksisterende side som en ny fane (pivot-fane, oversigtspanel, blad eller arbejdsområdesektionen).
 - Opret en ny fuld side-oplevelse for appen eller webstedet fra dashboardet.
@@ -53,14 +53,14 @@ Brug denne procedure, hvis du vil supplere en eksisterende side i systemet med e
     > - Appen eller webstedet skal være konfigureret til at kunne blive integreret.
 
 6. Vælg **Gem** for at integrere appen på siden. Appen tilføjes som den sidste fane eller sektion i gruppen.
-7. Bekræft, at appen vises som forventet. Hvis appen ikke er gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i dette emne.
+7. Bekræft, at appen vises som forventet. Hvis appen ikke er gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i denne artikel.
 8. Åbn visningsvælgeren, og vælg enten **Gem** (hvis appen skal knyttes til den aktuelle visning) eller **Gem som** (for at gemme appen for en anden visning).
 
     Hvis siden ikke har en visningsvælger (f.eks. hvis siden er en dialogboks eller et arbejdsområde), kan du springe dette trin over.
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Integrere et websted som en fuld side-oplevelse fra dashboardet
 
-Brug denne procedure, hvis den app, du vil integrere, ikke er tilknyttet en eksisterende side, eller hvis du blot vil have en fuld side-oplevelse for appen i Finance and Operations-appen.
+Brug denne procedure, hvis den app, du vil integrere, ikke er tilknyttet en eksisterende side, eller hvis du blot vil have en fuld side-oplevelse for appen i programmet til finans og drift.
 
 1. Åbn dashboardet.
 2. Vælg og hold (eller højreklik på) dashboardet, vælg **Tilpas**, og vælg derefter **Tilføj en side**.
@@ -75,7 +75,7 @@ Brug denne procedure, hvis den app, du vil integrere, ikke er tilknyttet en eksi
     > - Appen eller webstedet skal være konfigureret til at kunne blive integreret.
 
 5. Vælg **Gem** for at føje appen til dashboardet som et nyt felt.
-6. Vælg det nye felt på dashboardet, og bekræft, at appen vises som forventet. Hvis appen ikke bliver gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i dette emne.
+6. Vælg det nye felt på dashboardet, og bekræft, at appen vises som forventet. Hvis appen ikke bliver gengivet, skal du se afsnittet [Fejlfinding](#troubleshooting) senere i denne artikel.
 
 ## <a name="sharing-embedded-apps"></a>Deling af integrerede apps
 
@@ -89,7 +89,7 @@ Når du har integreret en app ved hjælp af en af de metoder, der er beskrevet i
 
 ## <a name="viewing-embedded-apps"></a>Visning af integrerede apps
 
-For at få vist en integreret app på en side i Finance and Operations-apps skal du åbne den side, der har den integrerede app. Husk, at på nogle sider kan du åbne integrerede apps ved hjælp af **Power Apps**-knappen i standardhandlingsruden. Muligvis kan de også blive vist direkte på siden som en ny fane, et oversigtspanel, et blad eller som en ny sektion i et arbejdsområde.
+For at få vist en integreret app på en side i programmer til finans og drift skal du åbne den side, der har den integrerede app. Husk, at på nogle sider kan du åbne integrerede apps ved hjælp af **Power Apps**-knappen i standardhandlingsruden. Muligvis kan de også blive vist direkte på siden som en ny fane, et oversigtspanel, et blad eller som en ny sektion i et arbejdsområde.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Redigering eller fjernelse af integrerede apps
 
@@ -118,7 +118,7 @@ Når en app er blevet integreret på en side, skal du muligvis redigere konfigur
 
 ### <a name="troubleshooting"></a>Fejlfinding
 
-Hvis et websted ikke er gengivet korrekt, efter det er blevet integreret i en Finance and Operations-app, eller hvis du modtager en fejlmeddelelse, der angiver, at URL-adressen blev afvist at få en forbindelse, er webstedet sandsynligvis konfigureret til at forhindre, at det bliver integreret i en iframe. Benyt denne fremgangsmåde for at finde ud af, om webstedet kan integreres.
+Hvis et websted ikke er gengivet korrekt, efter det er blevet integreret i en Finans og drift-app, eller hvis du modtager en fejlmeddelelse, der angiver, at URL-adressen blev afvist at få en forbindelse, er webstedet sandsynligvis konfigureret til at forhindre, at det bliver integreret i en iframe. Benyt denne fremgangsmåde for at finde ud af, om webstedet kan integreres.
 
 1. Åbn udviklerværktøjerne for den browser, du bruger.
 2. Find og vælg svaret fra den integrerede websted under fanen **Netværk**.
@@ -126,6 +126,6 @@ Hvis et websted ikke er gengivet korrekt, efter det er blevet integreret i en Fi
 
 ### <a name="developer-modeling-a-website-on-a-form"></a>[Udvikler] Modellering af et websted i en formular
 
-Selvom dette emne fokuserer på integrationen af tredjepartsapps eller websteder via tilpasning, kan udviklere også integrere dem i en formular ved hjælp af Visual Studio-udviklingsløsningen. Tilføj et kontrolelement af typen **WebstedHostControl** til formularen. De metadataegenskaber, der er tilgængelige for kontrolelementet, indeholder de samme egenskaber som tilpasningsfunktionen.
+Selvom denne artikel fokuserer på integrationen af tredjepartsapps eller websteder via tilpasning, kan udviklere også integrere dem i en formular ved hjælp af Visual Studio-udviklingsløsningen. Tilføj et kontrolelement af typen **WebstedHostControl** til formularen. De metadataegenskaber, der er tilgængelige for kontrolelementet, indeholder de samme egenskaber som tilpasningsfunktionen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

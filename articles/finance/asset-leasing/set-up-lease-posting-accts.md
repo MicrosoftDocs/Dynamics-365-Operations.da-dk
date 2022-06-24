@@ -1,6 +1,6 @@
 ---
 title: Angive leasingbogføringskonti
-description: Dette emne indeholder de bogføringskonti, der kræves til Aktivleasingtransaktioner og forklarer, hvordan du kan definere bogføringskonti på siden Leasingbogføringsparametre.
+description: Denne artikel indeholder de bogføringskonti, der kræves til Aktivleasingtransaktioner, og forklarer, hvordan du kan definere bogføringskonti på siden Leasingbogføringsparametre.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726372"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859908"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Angive leasingbogføringskonti
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder de bogføringskonti, der kræves til Aktivleasingtransaktioner og forklarer, hvordan du kan definere bogføringskonti på siden **Leasingbogføringsparametre**.
+Denne artikel indeholder de bogføringskonti, der kræves til Aktivleasingtransaktioner og forklarer, hvordan du kan definere bogføringskonti på siden **Leasingbogføringsparametre**.
 
 For at overholde Accounting Standards Codification Topic 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16), kan det være nødvendigt at oprette konti i din kontoplan. Alle konti, som du opretter for at overholde ASC- og IFRS-standarder, er dog ikke anlægsaktivkonti. Under ASC 842 registreres et ROU (Right-of-Inuse)-aktivet for både finans- og driftsleasingaftaler. Disse leasingaftaler er adskilt fra anlægsaktiver. (Du kan stadig vedligeholde et ROU-aktiv ved hjælp af anlægsaktiver).
 

@@ -1,6 +1,6 @@
 ---
 title: Råbalance med detaljeret transaktionsrapport
-description: I dette emne beskrives standardrapporten til råbalancer. Her beskrives også de komponenter, der er knyttet til denne rapport, og hvordan du kan redigere rapporten, så den passer til virksomhedens behov.
+description: I denne artikel beskrives standardrapporten til råbalancer. Her beskrives også de komponenter, der er knyttet til denne rapport, og hvordan du kan redigere rapporten, så den passer til virksomhedens behov.
 author: v-kiarnd
 ms.date: 10/24/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: public sector
 ms.author: v-kiarnd
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 11ed9929b329c910ca0b20d728edeeb6fcdcd73f
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: f6fe3576df0c578ae6942c670cbb15969fb85be1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846435"
 ---
 # <a name="trial-balance-with-transactional-detail-report"></a>Råbalance med detaljeret transaktionsrapport
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives standardrapporten til råbalancer. Rapporten **Råbalance med transaktionsoplysninger** genererer en råbalance og indeholder de detaljerede transaktioner, der er bogført på hver finanskonto. Hvis du vælger at medtage bestemte ikke-bogførte transaktioner, kan du bruge rapporten til at oprette en foreløbig råbalance sammen med detaljerede transaktioner.
+I denne artikel beskrives standardrapporten til råbalancer. Rapporten **Råbalance med transaktionsoplysninger** genererer en råbalance og indeholder de detaljerede transaktioner, der er bogført på hver finanskonto. Hvis du vælger at medtage bestemte ikke-bogførte transaktioner, kan du bruge rapporten til at oprette en foreløbig råbalance sammen med detaljerede transaktioner.
 
 Elektronisk rapportering (ER) blev brugt til at oprette rapporten **Råbalance med transaktionsoplysninger**. Derfor kan en organisation enten bruge den version af rapporten, der er medtaget i det globale lager, eller oprette sin egen version af rapporten.
 
