@@ -1,6 +1,6 @@
 ---
 title: Produktsamlingsmoduler
-description: Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 05/18/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 02a3d6314729f51d6c1dced5037f78d12355c09a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871653"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 
 Produktregistrering er et primært værktøj, som forhandlere bruger til at skabe kundeengagement et e-handelswebsted. Produktsamlingsmoduler hjælper forhandlerne med at skabe overbevisende indkøbsoplevelser ved at levere en intuitiv visuel brugergrænseflade, der kan bruges til hurtigt at oprette produktsamlinger.
 

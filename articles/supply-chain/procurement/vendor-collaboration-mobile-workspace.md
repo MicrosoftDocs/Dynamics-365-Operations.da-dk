@@ -1,6 +1,6 @@
 ---
 title: Mobilarbejdsområde for kreditorsamarbejde
-description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
+description: Denne artikel indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851646"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Dette emne indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
+Denne artikel indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 
 Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen Finans og drift (Dynamics 365).
 
@@ -97,7 +97,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 </tr>
 <tr class="even">
 <td>Kreditorbrugeren skal have adgang til webgrænsefladen for kreditorsamarbejde i webklienten og skal konfigurere en bruger til kreditorsamarbejd.</td><td>Indkøbsmedarbejdere og systemadministratoren</td>
-<td>Følg trinnene i følgende emner for at oprette og arbejde med webgrænsefladen til kreditorsamarbejde.
+<td>Følg trinnene i følgende artikler for at oprette og arbejde med webgrænsefladen til kreditorsamarbejde.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">Brug kreditorsamarbejde til at arbejde sammen med eksterne kreditorer</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Administrere brugere af kreditorsamarbejde</a></li>

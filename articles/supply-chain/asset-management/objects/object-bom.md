@@ -1,6 +1,6 @@
 ---
 title: Aktivstyklister
-description: I dette emne beskrives aktivstyklister i Styring af aktiver.
+description: Denne artikel beskrives aktivstyklister i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882773"
 ---
 # <a name="asset-boms"></a>Aktivstyklister
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751979"
 
  
 
-I dette emne beskrives aktivstyklister i Styring af aktiver. På siden **Aktivstykliste** vises en oversigt over alle varer (reservedele og andre varer), der bruges på et aktiv i hele dets levetid. Når du opretter et nyt aktiv, bør du overveje at oprette en aktivstykliste som en del af opsætningsproceduren. På denne måde kan du spore varehistorikken for aktivet fra oprettelsesdatoen.
+Denne artikel beskrives aktivstyklister i Styring af aktiver. På siden **Aktivstykliste** vises en oversigt over alle varer (reservedele og andre varer), der bruges på et aktiv i hele dets levetid. Når du opretter et nyt aktiv, bør du overveje at oprette en aktivstykliste som en del af opsætningsproceduren. På denne måde kan du spore varehistorikken for aktivet fra oprettelsesdatoen.
 
 Når du har fuldført et vedligeholdelsesjob, og vareforbruget er registreret på en arbejdsordre, kan du spore forbruget af reservedele og andre varer, der bruges på aktivet. Denne funktion giver dig mulighed for at beholde en komplet vareforbrugspost for alle dine aktiver. Du kan for eksempel bruge posten til at overvåge, om en bestemt reservedel ofte udskiftes, eller til at holde styr på de reservedele eller andre elementer, der i øjeblikket bruges på et aktiv.
 

@@ -1,6 +1,6 @@
 ---
 title: Klargøre Microsoft Teams fra Dynamics 365 Commerce
-description: I dette emne beskrives, hvordan Microsoft Teams kan klargøres ved hjælp af organisationsdata fra Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan Microsoft Teams kan klargøres ved hjælp af organisationsdata fra Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 54c85d1b6b51b7b2608200a7fa8e343ac6d008d0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3dc9d0f20ec251f0908dda0017adaaeac1b43856
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868929"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Klargøre Microsoft Teams fra Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan Microsoft Teams kan klargøres ved hjælp af organisationsdata fra Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan Microsoft Teams kan klargøres ved hjælp af organisationsdata fra Dynamics 365 Commerce.
 
 Dynamics 365 Commerce er en nem måde at klargøre Teams på, hvis du endnu ikke har konfigureret teams til dine detailforretninger der. Ved at udnytte veldefinerede oplysninger fra Commerce, som du vil bruge i Teams, kan du hjælpe butiksmedarbejderne med at komme i gang i Teams. Disse oplysninger omfatter organisationshierarki, butiksnavne, medarbejderoplysninger og Azure Active Directory-konti (Azure AD). 
 
@@ -32,14 +32,14 @@ Klargøringsprocessen for Teams har to hovedtrin:
 1. I Teams skal du oprette et team for hver detailbutik og tilføje butiksmedarbejdere som medlemmer af det relevante team. Hvis en medarbejder er tilknyttet mere end én detailbutik, afspejler teammedlemskab dette. Der oprettes et kommunikationsteam, der omfatter lokale ledere som medlemmer, som kan hjælpe med at publicere opgaver fra Teams.
 1. Upload dit organisationshierarki fra Commerce til Teams.
 
-## <a name="provision-teams-in-commerce-headquarters"></a>Klargøre Teams i Commerce-hovedkontor
+## <a name="provision-teams-in-commerce-headquarters"></a>Klargøre Teams i Commerce Headquarters
 
 Udfør følgende opgaver, før du klargør Microsoft Teams:
 
 - Bekræft, at alle regionchefer er blevet gjort til kommunikationschefer.
-- Bekræft, at Azure-kontoen for hver butikschef og medarbejder er blevet knyttet til den pågældende chefs eller medarbejders arbejderpost i Commerce-hovedkontoret.
+- Bekræft, at Azure-kontoen for hver butikschef og medarbejder er blevet knyttet til den pågældende chefs eller medarbejders arbejderpost i Commerce Headquarters.
 
-Du kan klargøre Teams i Commerce-hovedkontoret ved at følge disse trin.
+Du kan klargøre Teams i Commerce Headquarters ved at følge disse trin.
 
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Konfiguration af Microsoft Teams-integration**.
 1. Vælg **Klargør Teams** i handlingsruden. Der oprettes et batchjob med navnet **Teams-klargøring**.
@@ -70,7 +70,7 @@ Commerce-organisationshierarkiet kan bruges i Microsoft Teams til at publicere o
 
 Følg disse trin for at uploade et Commerce-organisationshierarki til Teams.
     
-1. Gå i Commerce-hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Konfiguration af Microsoft Teams-integration**.
+1. Gå i Commerce Headquarters til **Retail og Commerce \> Konfiguration af kanal \> Konfiguration af Microsoft Teams-integration**.
 1. Vælg **Download målretningshierarki**, og vælg derefter **Detailbutikker efter område** for at downloade en kommasepareret fil (CSV) med organisationshierarkiet.
 1. Installer Microsoft Teams PowerShell-modulet ved at følge trinnene i [Installere Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
 1. Når du bliver bedt om det i Teams PowerShell-vinduet, skal du logge på med administratorkontoen for din Azure AD-lejer.

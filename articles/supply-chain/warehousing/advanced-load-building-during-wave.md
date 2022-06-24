@@ -1,6 +1,6 @@
 ---
 title: Avanceret bølgelastopbygning
-description: Dette emne giver oplysninger om avanceret bølgelastopbygning, der automatisk tildeler forsendelser til eksisterende bølger under bølgeudførelse. Derfor kan du oprette beskrivende laster, der repræsenterer lastvogne, uden at skulle bruge lastplanlægningspanelet.
+description: Denne artikel giver oplysninger om avanceret bølgelastopbygning, der automatisk tildeler forsendelser til eksisterende bølger under bølgeudførelse. Derfor kan du oprette beskrivende laster, der repræsenterer lastvogne, uden at skulle bruge lastplanlægningspanelet.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863760"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avanceret bølgelastopbygning
 
@@ -220,7 +220,7 @@ Du kan oprette så mange lastopbygningsskabeloner, som du har brug for. Men hvis
 
 ## <a name="scenario"></a>Scenario
 
-Dette scenarie viser, hvordan de indstillinger, der blev beskrevet tidligere i dette emne, påvirker lagerstedshandlinger, mens en salgsordre behandles. I dette scenarie bruges **USMF**-demodataene sammen med de andre demoværdier, der findes i installationsinstruktionerne.
+Dette scenarie viser, hvordan de indstillinger, der blev beskrevet tidligere i denne artikel, påvirker lagerstedshandlinger, mens en salgsordre behandles. I dette scenarie bruges **USMF**-demodataene sammen med de andre demoværdier, der findes i installationsinstruktionerne.
 
 ### <a name="create-sales-orders"></a>Oprette salgsordrer
 

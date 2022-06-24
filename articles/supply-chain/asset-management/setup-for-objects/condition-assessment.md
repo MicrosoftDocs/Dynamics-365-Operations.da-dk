@@ -1,6 +1,6 @@
 ---
 title: Tilstandsvurdering
-description: Dette emne forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver.
+description: Denne artikel forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872088"
 ---
 # <a name="condition-assessment"></a>Tilstandsvurdering
 
@@ -28,7 +28,7 @@ ms.locfileid: "6736058"
 
  
 
-Dette emne forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver. Tilstandsvurdering udføres med jævne mellemrum, og det primære formål er at oprette og vedligeholde tilstandsdata for aktiver. Set fra et forebyggende vedligeholdelsesperspektiv er det vigtigt at overvåge nøgleoplysninger såsom aktuel tilstand og resterende levetid. Desuden, hvis du udfører tilstandsvurdering med jævne mellemrum, vil du være i stand til at overvåge og sammenligne tilstande på maskinerne i din fabrik.
+Denne artikel forklarer, hvordan du opretter en skabelon til tilstandsvurdering og registrering af et aktiv i Styring af aktiver. Tilstandsvurdering udføres med jævne mellemrum, og det primære formål er at oprette og vedligeholde tilstandsdata for aktiver. Set fra et forebyggende vedligeholdelsesperspektiv er det vigtigt at overvåge nøgleoplysninger såsom aktuel tilstand og resterende levetid. Desuden, hvis du udfører tilstandsvurdering med jævne mellemrum, vil du være i stand til at overvåge og sammenligne tilstande på maskinerne i din fabrik.
 
 Tilstandsvurdering kan bruges til at måle og overvåge mange tilstande på dit udstyr. Eksempel: Du kan måle vibrationer på dine maskiner. Når du har registreret vibrationsmålinger i Styring af aktiver på forskellige typer udstyr, kan du søge efter den seneste registrerede vurdering og se vibrationsmålinger.
 

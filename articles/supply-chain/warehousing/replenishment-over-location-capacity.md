@@ -1,6 +1,6 @@
 ---
 title: Genopfyldning over lokationskapacitet
-description: Dette emne indeholder oplysninger om funktionen Genopfyldning over lokationskapacitet. Denne funktion aktiverer alt genopfyldningsarbejde, der kræves for dagen, der skal oprettes, og styrer tilgængeligheden af genbestillingsarbejdet for at sikre, at plukpladsen ikke løber tør for lager eller overstiger kapaciteten.
+description: Denne artikel indeholder oplysninger om funktionen Genopfyldning over lokationskapacitet. Denne funktion aktiverer alt genopfyldningsarbejde, der kræves for dagen, der skal oprettes, og styrer tilgængeligheden af genbestillingsarbejdet for at sikre, at plukpladsen ikke løber tør for lager eller overstiger kapaciteten.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899231"
 ---
 # <a name="replenishment-over-location-capacity"></a>Genopfyldning over lokationskapacitet
 
@@ -37,7 +37,7 @@ Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funkti
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurere funktionen til eksempelscenariet
 
-Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan konfigurere denne funktion og forberede eksempeldata til det eksempelscenario, der er angivet senere i dette emne.
+Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan konfigurere denne funktion og forberede eksempeldata til det eksempelscenario, der er angivet senere i denne artikel.
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
@@ -145,7 +145,7 @@ Genopfyldningsskabeloner er et sæt regler, der styrer, hvornår og hvordan en l
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfigureret dem, kan du arbejde gennem dette scenario for at afprøve funktionen *Genopfyldning over lokationskapacitet*. De værdier, der vises i dette scenarie, forudsætter, at du arbejder med standarddemodataene, at du har valgt **USMF** som juridisk enhed, og at du har forberedt de eksempelposter, der er beskrevet tidligere i dette emne. Dette scenario fungerer også som et eksempel, der viser, hvordan funktionen kan bruges i en produktionsopsætning.
+Når du har gjort alle de tidligere nævnte eksempeldata tilgængelige og konfigureret dem, kan du arbejde gennem dette scenario for at afprøve funktionen *Genopfyldning over lokationskapacitet*. De værdier, der vises i dette scenarie, forudsætter, at du arbejder med standarddemodataene, at du har valgt **USMF** som juridisk enhed, og at du har forberedt de eksempelposter, der er beskrevet tidligere i denne artikel. Dette scenario fungerer også som et eksempel, der viser, hvordan funktionen kan bruges i en produktionsopsætning.
 
 ### <a name="create-replenishment-work"></a>Opret genopfyldningsarbejde
 

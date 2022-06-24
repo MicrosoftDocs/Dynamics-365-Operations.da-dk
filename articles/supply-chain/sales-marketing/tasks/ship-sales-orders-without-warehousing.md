@@ -1,6 +1,6 @@
 ---
 title: Sende salgsordrer uden lagerstyring
-description: I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden.
+description: Denne artikel beskriver, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden.
 author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e21bcdef22caf4f4d97ba7dd36ebf1a6e6e055
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862476"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Sende salgsordrer uden lagerstyring
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden. Vejledningen gælder for den opfyldelsesstrøm, der ikke er konfigureret for lagerstedsstyring (hverken grundlæggende eller avancerede lagerfunktioner) og derfor ikke kræver, at produktplukning registreres før afsendelse. Du kan køre procedure på dine egne data eller i demofirmaet USMF. I begge tilfælde skal du, før du starter denne opgave, oprette en salgsordre for et lagerført produkt med et antal større end 1. For at undgå en bogføringsfejl skal du kontrollere, at produktets disponible antal i lokationen og på lagerstedet, som du har valgt i ordren, dækker ordreantallet.
+Denne artikel beskriver, hvordan du opdaterer en salgsordre, når varerne er afsendt til kunden. Vejledningen gælder for den opfyldelsesstrøm, der ikke er konfigureret for lagerstedsstyring (hverken grundlæggende eller avancerede lagerfunktioner) og derfor ikke kræver, at produktplukning registreres før afsendelse. Du kan køre procedure på dine egne data eller i demofirmaet USMF. I begge tilfælde skal du, før du starter denne opgave, oprette en salgsordre for et lagerført produkt med et antal større end 1. For at undgå en bogføringsfejl skal du kontrollere, at produktets disponible antal i lokationen og på lagerstedet, som du har valgt i ordren, dækker ordreantallet.
 
 ## <a name="post-packing-slip-for-an-order"></a>Bogføre følgeseddel for en ordre
 1. Gå til **Moduler > Salg og marketing > Salgsordrer > Alle salgsordrer** i navigationsruden.

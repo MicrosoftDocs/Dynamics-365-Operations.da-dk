@@ -1,6 +1,6 @@
 ---
 title: Lagersøgningshandling i POS
-description: Dette emne beskriver, hvordan du kan bruge lagersøgningshandlingen i Dynamics 365 Commerce POS til at få vist den disponible lagerbeholdning af produkter på tværs af butikker og lagersteder.
+description: Denne artikel beskriver, hvordan du kan bruge lagersøgningshandlingen i Dynamics 365 Commerce POS til at få vist den disponible lagerbeholdning af produkter på tværs af butikker og lagersteder.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850243"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersøgningshandling i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan bruge lagersøgningshandlingen i Dynamics 365 Commerce POS til at få vist den disponible lagerbeholdning af produkter på tværs af butikker og lagersteder.
+Denne artikel beskriver, hvordan du kan bruge lagersøgningshandlingen i Dynamics 365 Commerce POS til at få vist den disponible lagerbeholdning af produkter på tværs af butikker og lagersteder.
 
 En præcis visning af lageret for hele virksomheden hjælper lagermedarbejdere med at levere rettidig og effektiv kundeservice. Det vigtigste tidspunkt er det øjeblik, hvor en kunde er klar til at træffe en købsbeslutning. Det er vigtigt, at kasserere i en detailbutik har lageroplysninger i realtid eller næsten i realtid ved hånden, så de kan garantere præcis produktlevering og afhentning.
 

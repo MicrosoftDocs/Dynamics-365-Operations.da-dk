@@ -1,6 +1,6 @@
 ---
 title: Grænseflade for materialehåndteringsudstyr (MHAX)
-description: I dette emne beskrives, hvordan du kan konfigurere MHAX-grænsefladen til materialehåndtering, så du kan oprette forbindelse til eksterne MH-systemer for fysisk materialehåndtering.
+description: Denne artikel beskriver, hvordan du kan konfigurere MHAX-grænsefladen til materialehåndtering, så du kan oprette forbindelse til eksterne MH-systemer for fysisk materialehåndtering.
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907081"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grænseflade for materialehåndteringsudstyr (MHAX)
 
@@ -88,7 +88,7 @@ Du kan oprette et abonnement ved at gå til **Grænseflade for materialehåndter
 
 Der kan knyttes en forespørgsel til de enkelte abonnementer. Denne forespørgsel filtrerer arbejdslinjer og overskrifter for yderligere at begrænse det arbejde, der skal bruge abonnementet til at generere hændelser. Hvis du vil føje en forespørgsel til et abonnement, skal du markere afkrydsningsfeltet **Kør forespørgsel** for det relevante abonnement på siden **Abonnementer** og derefter vælge **Rediger forespørgsel** i handlingsruden. Forespørgselseditoren til Supply Chain Management vises som standard.
 
-Abonnementet indeholder desuden en *abonnementstilknytning*, som knytter felter fra enten arbejdshovedet eller arbejdslinjen til nogle af eller alle de ti gratis datafelter i den udgående hændelse efter behov. Hvis du vil returnere oplysninger til MHAX-tjenesten, skal du normalt medtage arbejdslinjepost-id'et eller *id'et for arbejdslinjens par*. (Arbejdslinjepar-id'et er en ny egenskab, der giver systemet mulighed for at bruge en enkelt returkommando til behandling af pluk- og læg-linjer). De resterende felter afhænger af brugstilfældet. Der findes nogle eksempler senere i dette emne.
+Abonnementet indeholder desuden en *abonnementstilknytning*, som knytter felter fra enten arbejdshovedet eller arbejdslinjen til nogle af eller alle de ti gratis datafelter i den udgående hændelse efter behov. Hvis du vil returnere oplysninger til MHAX-tjenesten, skal du normalt medtage arbejdslinjepost-id'et eller *id'et for arbejdslinjens par*. (Arbejdslinjepar-id'et er en ny egenskab, der giver systemet mulighed for at bruge en enkelt returkommando til behandling af pluk- og læg-linjer). De resterende felter afhænger af brugstilfældet. Der findes nogle eksempler senere i denne artikel.
 
 Hvis du vil oprette en abonnementstilknytning, skal du vælge det relevante abonnement på siden **Abonnementer** og derefter vælge **Abonnementstilknytning** i handlingsruden. I dialogboksen **Abonnementstilknytning**, der vises, kan du tildele en tabel og et felt til hvert tilgængelige datafelt efter behov.
 
@@ -161,7 +161,7 @@ Hvis id'et for arbejdslinjeparret er angivet, køres alle pluk-, læg- eller bru
 
 Pluklinjer fra nummerpladestyrede lokationer kræver, at **data03** angiver den nummerplade, der skal plukkes fra, uanset om linjerne er markeret med arbejdslinjepost-id eller arbejdslinjepar-id. Feltet **data04** skal angive arbejdshovedets målnummerplade for plukket.
 
-Læg-linjer accepterer ikke yderligere oplysninger. De køres kun på baggrund af den aktuelle arbejdslinjes lokation og arbejdets målnummerplade. Hvis lægningen skal angives på en anden lokation, skal du ændre arbejdslinjens lokation, som det beskrives i afsnittet [Tilsidesættelseshændelser](#override-events) senere i dette emne.
+Læg-linjer accepterer ikke yderligere oplysninger. De køres kun på baggrund af den aktuelle arbejdslinjes lokation og arbejdets målnummerplade. Hvis lægningen skal angives på en anden lokation, skal du ændre arbejdslinjens lokation, som det beskrives i afsnittet [Tilsidesættelseshændelser](#override-events) senere i denne artikel.
 
 Brugerdefinerede arbejdslinjer kræver ikke eller understøtter ikke yderligere oplysninger i den indgående hændelse.
 
@@ -220,7 +220,7 @@ I den sidste ende begynder din indgående kø at blive fuld af køelementer, der
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Få et hurtigt overblik ved hjælp af køstyring
 
-Du kan få et hurtigt overblik over alle de aktiviteter, der er relateret til dine indgående og udgående køer, ved at gå til **Grænseflade for materialehåndteringsudstyr \> Arbejdsområder \> Køstyring**. Siden **Køstyring** indeholder et sæt faner og felter, du kan bruge til at overvåge og undersøge køerne. Den giver også nyttige links til de fleste andre sider, der nævnes i dette emne.
+Du kan få et hurtigt overblik over alle de aktiviteter, der er relateret til dine indgående og udgående køer, ved at gå til **Grænseflade for materialehåndteringsudstyr \> Arbejdsområder \> Køstyring**. Siden **Køstyring** indeholder et sæt faner og felter, du kan bruge til at overvåge og undersøge køerne. Den giver også nyttige links til de fleste andre sider, der nævnes i denne artikel.
 
 ## <a name="connect-to-the-mhax-service"></a>Oprette forbindelse til MHAX-tjenesten
 

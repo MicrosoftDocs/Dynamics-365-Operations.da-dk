@@ -1,6 +1,6 @@
 ---
 title: Oprette indkøbspolitikker
-description: Dette emne viser, hvordan du opretter indkøbspolitikker, der skal justeres med dine forretningsprocesser til indkøb.
+description: Denne artikel viser, hvordan du opretter indkøbspolitikker, der skal justeres med dine forretningsprocesser til indkøb.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878839"
 ---
 # <a name="create-purchasing-policies"></a>Oprette indkøbspolitikker
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne viser, hvordan du opretter indkøbspolitikker, der skal justeres med dine forretningsprocesser til indkøb. Før du kan oprette indkøbspolitikker, skal du konfigurere parametrene for indkøbspolitikker. Det er muligt at oprette, redigere og trække en indkøbspolitik tilbage, men du kan ikke slette en indkøbspolitik. Denne procedure vil typisk blive udført af en indkøbschef. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.
+Denne artikel viser, hvordan du opretter indkøbspolitikker, der skal justeres med dine forretningsprocesser til indkøb. Før du kan oprette indkøbspolitikker, skal du konfigurere parametrene for indkøbspolitikker. Det er muligt at oprette, redigere og trække en indkøbspolitik tilbage, men du kan ikke slette en indkøbspolitik. Denne procedure vil typisk blive udført af en indkøbschef. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.
 
 
 ## <a name="set-up-policy-parameters"></a>Konfigurere politikparametre

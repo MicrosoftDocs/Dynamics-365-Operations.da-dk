@@ -1,6 +1,6 @@
 ---
 title: Karantænezoner for uoverensstemmelser
-description: Dette emne beskriver, hvordan du opretter og bruger karantænezoner til uoverensstemmelser.
+description: Denne artikel beskriver, hvordan du opretter og bruger karantænezoner til uoverensstemmelser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207950a2ff4057853488f75d0e302a049d228b76
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2e556d2aa078a76ff4f81b6763535c38ce1cca0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857700"
 ---
 # <a name="quarantine-zones-for-nonconformances"></a>Karantænezoner for uoverensstemmelser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter og bruger karantænezoner til uoverensstemmelser.
+Denne artikel beskriver, hvordan du opretter og bruger karantænezoner til uoverensstemmelser.
 
 Du kan bruge siden **Karantænezoner** til at definere de zoner, der kan tildeles til uoverensstemmelser. Når du opretter en uoverensstemmelse, kan du angive felterne **Karantænezone** og **Karantænetype** under fanen **Generelt** på siden **Uoverensstemmelser**. Feltet **Karantænezone** angiver typisk det område eller den lokation, hvor varen er placeret. Feltet **Karantænetype** definerer varen som enten *Begrænset brug* eller *Ubrugelig*.
 

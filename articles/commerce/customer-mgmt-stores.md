@@ -1,6 +1,6 @@
 ---
 title: Kundestyring i butikker
-description: Dette emne forklarer, hvordan detailforretninger kan aktivere kundestyringsegenskaber på POS i Microsoft Dynamics 365 Commerce.
+description: Denne artikel forklarer, hvordan detailforretninger kan aktivere kundestyringsegenskaber på POS i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5a352ba479ca5e635ef521b99f31bd26d5d837ac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 805d0b5894b18e2fc34f481bdc32ada7a4b1aee0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863481"
 ---
 # <a name="customer-management-in-stores"></a>Kundestyring i butikker
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan detailforretninger kan aktivere kundestyringsegenskaber på POS i Microsoft Dynamics 365 Commerce.
+Denne artikel forklarer, hvordan detailforretninger kan aktivere kundestyringsegenskaber på POS i Microsoft Dynamics 365 Commerce.
 
 Det er vigtigt, at butiksmedarbejdere kan oprette og redigere kundeposter i POS. På den måde kan de hente alle opdateringer til kundeoplysninger, f.eks. e-mail-adresse, telefonnummer og adresse. Disse oplysninger er nyttige i downstream-systemer, f.eks. marketing, da effektiviteten af disse systemer afhænger af nøjagtigheden af deres kundedata.
 

@@ -1,6 +1,6 @@
 ---
 title: Oprette arbejdssteder
-description: Dette emne beskriver, hvordan du opretter et arbejdssted i Styring af aktiver.
+description: Denne artikel beskriver, hvordan du opretter et arbejdssted i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869714"
 ---
 # <a name="create-functional-locations"></a>Oprette arbejdssteder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767526"
 
  
 
-Dette emne beskriver, hvordan du opretter et arbejdssted i Styring af aktiver.
+Denne artikel beskriver, hvordan du opretter et arbejdssted i Styring af aktiver.
 
 Når du opretter en arbejdsstedsstruktur, skal du være opmærksom på, at når du har oprettet et arbejdssted, kan du ikke flytte det fra det oprindelige sted. Det betyder, at du nøje bør overveje strukturen af dine arbejdssteder, før du begynder at oprette dem i Styring af aktiver. Hvis du fortryder et arbejdssted, kan du slette det, forudsat at det endnu ikke er taget i brug.
 

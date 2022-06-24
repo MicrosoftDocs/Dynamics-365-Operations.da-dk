@@ -1,6 +1,6 @@
 ---
 title: Oversigt over transportstyring
-description: Dette emne giver et overblik over funktionerne til transportstyring i Supply Chain Management.
+description: Denne artikel giver et overblik over funktionerne til transportstyring i Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897452"
 ---
 # <a name="transportation-management-overview"></a>Oversigt over transportstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne giver et overblik over funktionerne til transportstyring i Supply Chain Management.
+Denne artikel giver et overblik over funktionerne til transportstyring i Supply Chain Management.
 
 Med Transportstyring kan du bruge virksomhedens transport og også identificere kreditor- og routingløsninger for indgående og udgående ordrer. For eksempel kan du identificere den hurtigste rute eller den billigste sats for en forsendelse. Følgende tabel indeholder beskrivelser af hovedscenarierne for brug af transportstyring.
 

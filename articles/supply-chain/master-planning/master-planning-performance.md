@@ -1,7 +1,7 @@
 ---
 title: Forbedre ydeevne af varedisponering
-description: I dette emne forklares de forskellige indstillinger, der kan hjælpe dig med at forbedre varedisponeringen eller foretage fejlfinding af problemer.
-author: ChristianRytt
+description: Denne artikel forklarer de forskellige indstillinger, der kan hjælpe dig med at forbedre varedisponeringen eller foretage fejlfinding af problemer.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897597"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ydeevne af varedisponering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne forklares de forskellige indstillinger, der kan hjælpe dig med at forbedre varedisponeringen eller foretage fejlfinding af problemer. Det indeholder oplysninger om parametre og indstillinger samt om anbefalede konfigurationer og handlinger. Det indeholder endvidere en oversigt over alle de vigtige parametre, du bør overveje, når du har varedisponeringsjob, der kører i lang tid.
+Denne artikel forklarer de forskellige indstillinger, der kan hjælpe dig med at forbedre varedisponeringen eller foretage fejlfinding af problemer. Det indeholder oplysninger om parametre og indstillinger samt om anbefalede konfigurationer og handlinger. Det indeholder endvidere en oversigt over alle de vigtige parametre, du bør overveje, når du har varedisponeringsjob, der kører i lang tid.
 
-Dette emne henvender sig til systemadministratorer eller IT-brugere, der har mulighed for at foretage fejlfinding. Det er også beregnet til produktions- eller forsyningsplanlæggere, fordi det indeholder oplysninger om parametre, der vedrører forretningsmæssige planlægningsbehov. 
+Denne artikel henvender sig til systemadministratorer eller IT-brugere, der har mulighed for at foretage fejlfinding. Det er også beregnet til produktions- eller forsyningsplanlæggere, fordi det indeholder oplysninger om parametre, der vedrører forretningsmæssige planlægningsbehov. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parametre relateret til ydelsen af varedisponering
 
@@ -151,9 +151,9 @@ Før dækningstrinnet starter, er der et trin forud herfor, hvor varer, hvor dæ
 ## <a name="performance-checklist-summary"></a>Oversigt over performancetjekliste
 
 - **Antal tråde** – angiv en værdi, der er større end **0** (nul).
-- **Antal opgaver i bundt med hjælpefunktioner** – angiv til en værdi, der er større end **0** (nul). (Brug de formler, der er angivet tidligere i dette emne).
+- **Antal opgaver i bundt med hjælpefunktioner** – angiv til en værdi, der er større end **0** (nul). (Brug de formler, der er angivet tidligere i denne artikel).
 - **Brug af cache** – Angiv som **maksimum**, medmindre systemet mangler hukommelse.
-- **Antal ordrer i autorisationsbundt** – angiv til en værdi, der er større end **0** (nul). (Brug den formel, der er angivet tidligere i dette emne).
+- **Antal ordrer i autorisationsbundt** – angiv til en værdi, der er større end **0** (nul). (Brug den formel, der er angivet tidligere i denne artikel).
 - **Tidshorisonter** – juster efter dine forretningsbehov.
 - **Handlinger og terminer** – deaktiver aktioner og terminer, hvis du ikke bruger dem.
 - **Én tung rutine ad gangen** – kør ikke varedisponering sammen med andre tunge rutiner.

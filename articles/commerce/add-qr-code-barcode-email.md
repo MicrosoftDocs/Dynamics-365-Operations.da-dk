@@ -1,6 +1,6 @@
 ---
 title: Føje en QR-kode eller stregkode til transaktions- og kvitterings-mails
-description: Dette emne forklarer, hvordan du indsætter QR-koder og stregkoder, der repræsenterer ordre-d'er, i transaktions- og kvitteringsmails i Microsoft Dynamics 365 Commerce.
+description: Denne artikel forklarer, hvordan du indsætter QR-koder og stregkoder, der repræsenterer ordre-d'er, i transaktions- og kvitteringsmails i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872878"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Føje en QR-kode eller stregkode til transaktions- og kvitterings-mails
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan du indsætter QR-koder og stregkoder, der repræsenterer ordre-d'er, i transaktions- og kvitteringsmails i Microsoft Dynamics 365 Commerce.
+Denne artikel forklarer, hvordan du indsætter QR-koder og stregkoder, der repræsenterer ordre-d'er, i transaktions- og kvitteringsmails i Microsoft Dynamics 365 Commerce.
 
 Du kan nemt medtage QR-koder og stregkoder i transaktionsmails for at gøre ordreopslagsprocessen hurtigere i et detailmiljø. Hvis du vil indsætte QR-koder og stregkoder i mails, kan du bruge et HTML **\<img\>**-tag, der anmoder om en QR-kode eller et stregkodebillede fra en tjeneste til generering og gengivelse. Microsoft leverer ikke denne tjeneste. Der findes dog mange gratis tjenester eller tjenester, der fungerer som tjenester, der fungerer som tjenester, der kan fungere som koder for QR, eller stregkoder, som genereres dynamisk på grundlag af en værdi, som overføres i en forespørgselsstreng.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere tilladelser til bestilling af produkter på vegne af en anden person
-description: I dette emne beskrives, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere.
+description: Denne artikel beskriver, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere.
 author: GalynaFedorova
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1313ca01686e55d802716adf335e77ffeb1ece34
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3053f28fdf97637b1da5f644f64676bfd10fb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854204"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Konfigurere tilladelser til bestilling af produkter på vegne af en anden person
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere. Med andre ord kan "klargøreren" af en indkøbsrekvisition oprette en rekvisition for en anden "anmoder." Proceduren viser også, hvordan du kan tildele en arbejder rettigheder til at bestille varer og tjenester i forskellige juridiske enheder eller driftsenheder. Disse opgaver udføres typisk af en indkøbschef. Du kan enten bruge denne procedure dataene i USMF-demodatafirmaet eller dine egne data.
+Denne artikel beskriver, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere. Med andre ord kan "klargøreren" af en indkøbsrekvisition oprette en rekvisition for en anden "anmoder." Proceduren viser også, hvordan du kan tildele en arbejder rettigheder til at bestille varer og tjenester i forskellige juridiske enheder eller driftsenheder. Disse opgaver udføres typisk af en indkøbschef. Du kan enten bruge denne procedure dataene i USMF-demodatafirmaet eller dine egne data.
 
 
 ## <a name="grant-permission-to-enter-purchase-requisitions-on-behalf-of-another-worker"></a>Tildel tilladelse til at indtaste indkøbsrekvisitioner på vegne af en anden arbejder

@@ -1,6 +1,6 @@
 ---
 title: Administrere underleverandørarbejde i produktionen
-description: I dette emne beskrives, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
+description: Denne artikel beskriver, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863789"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Administrere underleverandørarbejde i produktionen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
+Denne artikel beskriver, hvordan underleverandøroperationer administreres i Dynamics 365 Supply Chain Management. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 
 I [produktionsprocesser](production-process-overview.md) kan arbejdet udføres af ressourcer, der ejes eller administreres af leverandører. Leverandørressourcer bruges typisk til at udjævne periodiske ekstra behov, der overgår den tilgængelige kapacitet for en virksomheds egne ressourcer. Leverandøren kan muligvis også tilbyde særlige [ressourceegenskaber](resource-capabilities.md) eller ressourcer til en lavere pris.  
 
@@ -63,7 +63,7 @@ Når du bruger denne konfiguration, oprettes en indkøbsordre for det relaterede
 En produktionsordre kan have mange operationer, og hver af dem kan allokeres til en anden leverandør. Derfor kan en produktionsordre fra start til slut udløse flere indkøbsordrer.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Underleverandørarbejde på produktionsflowaktiviteter
-Med [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodellerne fungerer underleverandørarbejdet som en service, der er relateret til en aktivitet i et [produktionsflow](tasks/create-production-flow-version.md) (emnet Opgaveguide). Derfor omtales denne type underleverandørarbejde også som [aktivitetsbaseret underleverandørarbejde.](activity-based-subcontracting.md) En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de servicer, der udføres af underleverandører, er ikke en del af styklisten for færdigvarerne. Når du bruger lean manufacturing, defineres alle aktiviteter af kanbans, der kan relateres til en eller flere produktionsflowaktiviteter. Denne beskrivelse kunne indtil videre lige så godt være en beskrivelse af produktionsordrer. Men mens produktionsordrer altid skal afsluttes med et færdigt produkt, kan du oprette kanbans for at levere et halvfabrikataprodukt. Du behøver ikke at indføre et nyt produkt og styklisteniveau.  
+Med [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodellerne fungerer underleverandørarbejdet som en service, der er relateret til en aktivitet i et [produktionsflow](tasks/create-production-flow-version.md) (artiklen Opgaveguide). Derfor omtales denne type underleverandørarbejde også som [aktivitetsbaseret underleverandørarbejde.](activity-based-subcontracting.md) En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de servicer, der udføres af underleverandører, er ikke en del af styklisten for færdigvarerne. Når du bruger lean manufacturing, defineres alle aktiviteter af kanbans, der kan relateres til en eller flere produktionsflowaktiviteter. Denne beskrivelse kunne indtil videre lige så godt være en beskrivelse af produktionsordrer. Men mens produktionsordrer altid skal afsluttes med et færdigt produkt, kan du oprette kanbans for at levere et halvfabrikataprodukt. Du behøver ikke at indføre et nyt produkt og styklisteniveau.  
 
 Da kanban-regler kan være meget dynamiske, kan du udforme forskellige forsyningsvarianter for samme produkt i et produktionsflow. Når du bruger lean underleverandørarbejde, er materialeflowet og det økonomiske flow strengt adskilt. Alle materialeflows repræsenteres af kanban-aktiviteter. Indkøbsordrerne for serviceprodukterne og bogføring af kvitteringer for disse servicer kan automatiseres, baseret på status for kanban-job i produktionsflowet. Kanban-job kan startes og fuldføres, inden der oprettes indkøbsordrer. Dokumenter vedrørende underleverandørarbejde (indkøbsordre og købskvittering for servicen) kan aggregeres efter periode og service. Derfor kan antallet af indkøbsdokumenter og -linjer holdes nede, selv i operationer, der gentages ofte, hvor leverandører leverer underleverandørydelser i et samlet flow.
 

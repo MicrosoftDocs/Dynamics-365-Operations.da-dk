@@ -1,6 +1,6 @@
 ---
-title: Handelskataloger for B2B Ofte stillede spørgsmål
-description: Dette emne indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 Commerce-kataloger.
+title: Ofte stillede spørgsmål til Commerce-kataloger til B2B
+description: Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 Commerce-kataloger.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849035"
 ---
-# <a name="commerce-catalogs-for-b2b-faq"></a>Handelskataloger for B2B Ofte stillede spørgsmål
+# <a name="commerce-catalogs-for-b2b-faq"></a>Ofte stillede spørgsmål til Commerce-kataloger til B2B
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emne indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 Commerce [business-to-business (B2B)-kataloger](catalogs-b2b-sites.md).
+Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 Commerce [business-to-business (B2B)-kataloger](catalogs-b2b-sites.md).
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Hvorfor kan jeg ikke konfigurere et katalogspecifikt navigationshierarki eller få vist en indstilling for at tilknytte et debitorhierarki?
 

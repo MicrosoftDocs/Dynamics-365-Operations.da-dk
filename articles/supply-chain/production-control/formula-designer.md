@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner
-description: I dette emne beskrives, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
+description: Denne artikel beskriver, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
 author: johanhoffmann
 ms.date: 06/01/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf45fdf44e6d060ee16edf1a6628c5ffd9920dcb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 247f41b43030d392df67275e6e7db1bea5df1847
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849265"
 ---
 # <a name="formula-designer"></a>Formeldesigner
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
+Denne artikel beskriver, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
 
 Når du åbner siden **Formeldesigner** fra siden **Frigivne produkter**, viser træet i venstre rude en liste over samprodukter og hierarkiet af stof til det frigivne produkt. Strukturen er afledt af hierarkiet af formler, der er aktive og godkendte for den valgte vare og dens stof, standardordrewebstedet for varen og den faktiske dato.
 

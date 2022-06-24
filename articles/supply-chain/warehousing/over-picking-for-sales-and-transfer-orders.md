@@ -1,6 +1,6 @@
 ---
 title: Overpluk for salgsordrer og flytteordrer
-description: Dette emne forklarer, hvordan du aktiverer overpluk af salgsordrer og flytteordrer.
+description: Denne artikel forklarer, hvordan du aktiverer overpluk af salgsordrer og flytteordrer.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897278"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Overpluk for salgsordrer og flytteordrer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises et scenario for, hvordan du enten kan aktivere en bestemt arbejder eller alle arbejdere til overpluk. Overplukprocessen giver mulighed for kontrolleret overpluk under plukarbejdet.
+Denne artikel viser et scenario for, hvordan du enten kan aktivere en bestemt arbejder eller alle arbejdere til overpluk. Overplukprocessen giver mulighed for kontrolleret overpluk under plukarbejdet.
 
 Lagerstedsoverpluk er et simpelt begreb. Systemet giver arbejdere mulighed for at plukke flere varer, end der er angivet for en ordre. Det tager dog stadig højde for den overleveringsgrænse, der er angivet på linjeniveau for flytteordren eller salgsordren. Hvis denne grænse overskrides, får arbejderne via appen Warehouse Management besked om, at de overskrider overleveringsgrænsen.
 
@@ -41,11 +41,11 @@ Funktionen til overpluk kan hjælpe arbejdere med at spare tid og kræfter, når
 > [!IMPORTANT]
 > Funktionen til overpluk gælder kun for salgsordrers og flytteordres pluk og behandling. Genopfyldning understøtter ikke overpluk. Når der køres genopfyldningsarbejde, vil brugerne ikke kunne overplukke.
 
-Dette emnes scenarie viser, hvordan du kan konfigurere og bruge funktionen til overpluk.
+Denne artikels scenarie viser, hvordan du kan konfigurere og bruge funktionen til overpluk.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forudsætninger for scenario: Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til *USMF*, før du går i gang.
+Scenariet i denne artikel indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til *USMF*, før du går i gang.
 
 ## <a name="scenario-setup"></a>Konfigurere scenarie
 

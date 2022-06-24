@@ -1,6 +1,6 @@
 ---
 title: Globale parametre for mobilenhed
-description: Dette emne forklarer, hvordan du konfigurerer indstillinger for mobilenheder på siden Parametre til lokationsstyring.
+description: Denne artikel forklarer, hvordan du konfigurerer indstillinger for mobilenheder på siden Parametre til lokationsstyring.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679159"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847753"
 ---
 # <a name="global-mobile-device-parameters"></a>Globale parametre for mobilenhed
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan konfigurere parametre til global lokationsstyring, der påvirker, hvordan systemet fungerer sammen med mobilenheder.
+Denne artikel forklarer, hvordan du kan konfigurere parametre til global lokationsstyring, der påvirker, hvordan systemet fungerer sammen med mobilenheder.
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer lagerarbejdere, i [Styre lagerarbejdere](manage-warehouse-workers.md). Du kan finde flere oplysninger om id-håndtering på mobilenheder under [Modtagelse af id via mobilappen Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md). Yderligere oplysninger om processer for cyklusoptælling finder du i [Cyklusoptælling](cycle-counting.md) og [Eksempelscenarier for cyklusoptælling](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Åbne siden Parametre til lokationsstyring
 
-Du kan åbne siden **Parametre til lokationsstyring** ved at gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**. Du kan derefter angive de felter, der er relateret til arbejdet på mobilenheden, som beskrevet i næste afsnit af dette emne.
+Du kan åbne siden **Parametre til lokationsstyring** ved at gå til **Lokationsstyring \> Konfiguration \> Parametre til lokationsstyring**. Du kan derefter angive de felter, der er relateret til arbejdet på mobilenheden, som beskrevet i næste afsnit af denne artikel.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Oversigtspanelet Mobilenhed under fanen Generelt
 

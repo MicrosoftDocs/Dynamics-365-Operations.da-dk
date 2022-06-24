@@ -1,6 +1,6 @@
 ---
 title: Krav til browser for Dynamics 365 Commerce-websteder
-description: I dette emne vises browserkravene til Microsoft Dynamics 365 Commerce-websteder.
+description: Denne artikel viser browserkravene til Microsoft Dynamics 365 Commerce-websteder.
 author: anupamar-ms
 ms.date: 12/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f97e5800785c84d7d804c7af8bffd7bfbccc95a5951d560996f4ca586069392e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c80bec4b4e40c904ef781893b6d695eda31cce92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869192"
 ---
 # <a name="browser-requirements-for-dynamics-365-commerce-sites"></a>Krav til browser for Dynamics 365 Commerce-websteder
 
 [!include [banner](includes/banner.md)]
 
-I dette emne vises browserkravene til Microsoft Dynamics 365 Commerce-websteder.
+Denne artikel viser browserkravene til Microsoft Dynamics 365 Commerce-websteder.
 
 Dynamics 365 Commerce-websteder understøttes bedst af følgende webbrowsere. Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 

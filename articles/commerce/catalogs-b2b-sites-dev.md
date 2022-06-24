@@ -1,6 +1,6 @@
 ---
 title: Udvidet virkning af Commerce-kataloger til B2B-tilpasninger
-description: Dette emne beskriver udvidelsespåvirkning af funktionen Commerce-kataloger til B2B-funktion i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver udvidelsespåvirkning af funktionen Commerce-kataloger til B2B-funktion i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849009"
 ---
 # <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Udvidet virkning af Commerce-kataloger til B2B-tilpasninger
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emne beskriver udvidelsespåvirkning af funktionen **Commerce-kataloger til B2B**-funktion i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver udvidelsespåvirkning af funktionen **Commerce-kataloger til B2B**-funktion i Microsoft Dynamics 365 Commerce.
 
 Hvis du er interesseret i at udvide katalogkonteksten til tilpassede scenarier, skal tilpasningerne måske opdateres. Denne opdatering følger den standardproces, som kunder skal følge, da tilpasningerne muligvis ikke automatisk understøtter de seneste funktioner, efter opgraderingerne er udført. Hvis tilpasningerne inkluderer nye funktioner eller rettelser i deres erfaringer, anbefales det, at du opdaterer tilpasningskoden tilsvarende. Denne opdatering svarer til de ændringer, Microsoft kan have foretaget for kernekoden.
 

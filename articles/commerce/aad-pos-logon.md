@@ -1,6 +1,6 @@
 ---
 title: Konfigurere Azure Active Directory-godkendelse for POS-login
-description: Dette emne forklarer, hvordan du kan konfigurere Azure Active Directory som godkendelsesmetode i POS i Microsoft Dynamics 365 Commerce.
+description: Denne artikel forklarer, hvordan du kan konfigurere Azure Active Directory som godkendelsesmetode i POS i Microsoft Dynamics 365 Commerce.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853922"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurere Azure Active Directory-godkendelse for POS-login
 
 [!include [banner](includes/banner.md)]
 
-Dette emne forklarer, hvordan du kan konfigurere Azure Active Directory (Azure AD) som godkendelsesmetode i POS i Microsoft Dynamics 365 Commerce.
+Denne artikel forklarer, hvordan du kan konfigurere Azure Active Directory (Azure AD) som godkendelsesmetode i POS i Microsoft Dynamics 365 Commerce.
 
-Detailhandlere, der bruger Dynamics 365 Commerce sammen med andre Microsoft-skytjenester, f.eks. Microsoft Azure, Microsoft 365 og Microsoft Teams, vil typisk bruge Azure AD til centraliseret administration af brugerlegitimationsoplysningerne for at opnå en sikker og problemfri logonoplevelse på tværs af programmer. Hvis du vil bruge Azure AD-godkendelse til Commerce POS, skal du først konfigurere Azure AD som godkendelsesmetoden i Commerce-hovedkvarteret.
+Detailhandlere, der bruger Dynamics 365 Commerce sammen med andre Microsoft-skytjenester, f.eks. Microsoft Azure, Microsoft 365 og Microsoft Teams, vil typisk bruge Azure AD til centraliseret administration af brugerlegitimationsoplysningerne for at opnå en sikker og problemfri logonoplevelse på tværs af programmer. Hvis du vil bruge Azure AD-godkendelse til Commerce POS, skal du først konfigurere Azure AD som godkendelsesmetoden i Commerce headquarters.
 
 ## <a name="configure-pos-authentication-method"></a>Konfigurere POS-godkendelsesmetode
 
-Benyt denne fremgangsmåde for at konfigurere POS-godkendelsesmetoden i Commerce-hovedkvarteret.
+Benyt denne fremgangsmåde for at konfigurere POS-godkendelsesmetoden i Commerce headquarters.
     
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**, og vælg den funktionalitetsprofil, du vil ændre.
 1. Vælg en ønsket godkendelsesmetode på rullelisten **Logongodkendelsesmetode** i sektionen **POS-marbejderlogon** i oversigtspanelet **Funktioner**.
@@ -48,9 +48,9 @@ Benyt denne fremgangsmåde for at konfigurere POS-godkendelsesmetoden i Commerce
 
 ## <a name="associate-azure-ad-accounts-with-pos-users"></a>Knytte Azure AD-konti til POS-brugere
 
-Hvis du vil bruge Azure AD som POS-godkendelsesmetode, skal du knytte Azure AD-konti til POS-brugere i Commerce-hovedkvarteret. 
+Hvis du vil bruge Azure AD som POS-godkendelsesmetode, skal du knytte Azure AD-konti til POS-brugere i Commerce headquarters. 
 
-Hvis du vil knytte Azure AD-konti til POS-brugere i Commerce-hovedkvarteret, skal du benytte denne fremgangsmåde.
+Hvis du vil knytte Azure AD-konti til POS-brugere i Commerce headquarters, skal du benytte denne fremgangsmåde.
     
 1. Gå til **Retail og Commerce > Medarbejdere > Arbejdere**, og åbn en arbejderpost.
 1. Vælg fanen **Commerce** i handlingsruden, og vælg derefter **Tilknyt eksisterende identitet** under **Ekstern identitet**. 
@@ -62,7 +62,7 @@ Efter konfigurationsmetoden ovenfor, skal du udfylde felterne **Alias**, **UPN**
 Du skal køre jobbet **1060 (personale)** i **Retail og Commerce > Retail og Commerce IT > Distributionsplan** for at synkronisere den seneste POS-bruger og Azure AD-kontodata til kanalen.
 
 > [!NOTE]
-> Efter du har opdateret arbejderoplysninger som f.eks. adgangskode, POS-tilladelse, tilknyttet Azure AD-konto eller medarbejderadressekartotek i Commerce-hovedkvarteret, anbefales det som bedste praksis at køre jobbet **1060 (personale)** for at synkronisere de seneste arbejderoplysninger med kanalen. POS-klienten kan derefter hente de korrekte data til brugergodkendelse og godkendelseskontroller.
+> Efter du har opdateret arbejderoplysninger som f.eks. adgangskode, POS-tilladelse, tilknyttet Azure AD-konto eller medarbejderadressekartotek i Commerce headquarters, anbefales det som bedste praksis at køre jobbet **1060 (personale)** for at synkronisere de seneste arbejderoplysninger med kanalen. POS-klienten kan derefter hente de korrekte data til brugergodkendelse og godkendelseskontroller.
 
 ## <a name="pos-lock-register-and-sign-out-with-azure-ad-authentication"></a>Låse kasseapparat for POS og logge af med Azure AD-godkendelse
 

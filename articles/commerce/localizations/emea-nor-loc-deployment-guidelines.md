@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for installation af kasseapparater for Norge (ældre)
-description: Dette emne indeholder en installationsvejledning, der viser, hvordan Microsoft Dynamics 365 Commerce-lokaliseringen for Norge aktiveres.
+description: Denne artikel indeholder en installationsvejledning, der viser, hvordan Microsoft Dynamics 365 Commerce-lokaliseringen for Norge aktiveres.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894456"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Retningslinjer for installation af kasseapparater for Norge (ældre)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en installationsvejledning, der viser, hvordan Microsoft Dynamics 365 Commerce-lokaliseringen for Norge aktiveres. Lokaliseringen består af flere udvidelser af Commerce-komponenter. Med disse udvidelser kan du f.eks. udskrive brugerdefinerede felter på kvitteringer, registrere yderligere revisionshændelser, salgstransaktioner og betalingstransaktioner i POS, signere salgstransaktioner digitalt og udskrive X- og Z-rapporter i lokale formater. Yderligere oplysninger om lokalisering for Norge finder du i [Kasseapparatfunktionalitet til Norge](./emea-nor-cash-registers.md).
+Denne artikel indeholder en installationsvejledning, der viser, hvordan Microsoft Dynamics 365 Commerce-lokaliseringen for Norge aktiveres. Lokaliseringen består af flere udvidelser af Commerce-komponenter. Med disse udvidelser kan du f.eks. udskrive brugerdefinerede felter på kvitteringer, registrere yderligere revisionshændelser, salgstransaktioner og betalingstransaktioner i POS, signere salgstransaktioner digitalt og udskrive X- og Z-rapporter i lokale formater. Yderligere oplysninger om lokalisering for Norge finder du i [Kasseapparatfunktionalitet til Norge](./emea-nor-cash-registers.md).
 
 Dette eksempel er en del af Retail SDK (Software Development Kit). Du kan finde oplysninger om SDK i [Arkitektur for Retail SDK (Software Development Kit)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Dette eksempel består af udvidelser til Commerce Runtime (CRT), Retail Server og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Retail Server og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i dette emne. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Microsoft Visual Studio Online (VSO), hvor ingen filer er ændret endnu.
+Dette eksempel består af udvidelser til Commerce Runtime (CRT), Retail Server og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Retail Server og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Microsoft Visual Studio Online (VSO), hvor ingen filer er ændret endnu.
 
 > [!NOTE]
-> I Commerce 10.0.8 og derover kaldes Retail Server for Commerce Scale Unit. Da dette emne gælder for flere tidligere versioner af appen, bruges *Retail Server* i hele emnet.
+> I Commerce 10.0.8 og derover kaldes Retail Server for Commerce Scale Unit. Da denne artikel gælder for flere tidligere versioner af appen, bruges *Retail Server* i hele artiklen.
 >
-> Der er forskellige trin i procedurerne i dette emne, afhængigt af hvilken version af Commerce du bruger. Du kan finde flere oplysninger i [Nyheder eller ændringer i Dynamics 365 Retail](../get-started/whats-new.md).
+> Der er forskellige trin i procedurerne i denne artikel, afhængigt af hvilken version af Commerce du bruger. Du kan finde flere oplysninger i [Nyheder eller ændringer i Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Brug af certifikatprofiler i Commerce-kanaler
 
@@ -1252,7 +1252,7 @@ Du kan finde flere oplysninger under [Kasseapparatfunktionalitet til Norge](./em
 
 Følg disse trin for at oprette installerbare pakker, der indeholder Commerce-komponenter, og for at anvende disse pakker i et produktionsmiljø.
 
-1. Gennemfør trinnene i afsnittet [Komponenter for udvidelse af Cloud POS](#cloud-pos-extension-components) eller [Komponenter til udvidelse af Modern POS](#modern-pos-extension-components) tidligere i dette emne.
+1. Gennemfør trinnene i afsnittet [Komponenter for udvidelse af Cloud POS](#cloud-pos-extension-components) eller [Komponenter til udvidelse af Modern POS](#modern-pos-extension-components) tidligere i denne artikel.
 2. Foretag følgende ændringer i pakkekonfigurationsfilerne under mappen **RetailSdk\\Assets**:
 
     1. I konfigurationsfilerne **commerceruntime.ext.config** og **CommerceRuntime.MPOSOffline.Ext.config** skal du føje følgende linjer til afsnittet **komposition**:

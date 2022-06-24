@@ -1,6 +1,6 @@
 ---
-title: Konfigurere et B2B-e-handelswebsted
-description: Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce.
+title: Oprette et B2B-e-handelswebsted
+description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881900"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Oprette et B2B-e-handelswebsted
 
 [!include [banner](../../includes/banner.md)]
 
-Business-to-business-e-handelswebsteder indeholder nogle af de vigtigste funktioner, der optimerer arbejdsgangen for en B2B-bruger. Dette emne indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce. Den gennemgår de moduler og lokationsindstillinger, der skal konfigureres for at aktivere B2B-specifikke scenarier.
+Business-to-business-e-handelswebsteder indeholder nogle af de vigtigste funktioner, der optimerer arbejdsgangen for en B2B-bruger. Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere et business-to-business (B2B)-e-handelswebsted i Microsoft Dynamics 365 Commerce. Den gennemgår de moduler og lokationsindstillinger, der skal konfigureres for at aktivere B2B-specifikke scenarier.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Hvis du vil konfigurere et B2B-e-handelswebsted, skal du aktivere og konfigurere specifikke funktioner i Commerce Headquarters som beskrevet i dette emne.
+- Hvis du vil konfigurere et B2B-e-handelswebsted, skal du aktivere og konfigurere specifikke funktioner i Commerce Headquarters som beskrevet i denne artikel.
 - Kerneerfaringer, f.eks. registrering af produkter, sider med produktoplysninger, indkøbsvognen og betaling ved kassen, drives af de samme moduler, der bruges til B2C-e-handelswebsteder (business-to-consumer). Webstedets forfattere skal kende til alle de moduler, der understøtter Dynamics 365 Commerce. Yderligere oplysninger finder du i [Modulbiblioteksoversigt](../starter-kit-overview.md).
-- I dette emne antages det, at forfattere af websteder forstår de grundlæggende funktioner i Commerce Site Builder, skabeloner, fragmenter og sider, så de kan aktivere B2B-funktionerne for e-handelswebsteder.
+- Denne artikel antager, at forfattere af websteder forstår de grundlæggende funktioner i Commerce Site Builder, skabeloner, fragmenter og sider, så de kan aktivere B2B-funktionerne for e-handelswebsteder.
 
 ## <a name="site-level-settings"></a>Indstillinger på lokationsniveau
 
