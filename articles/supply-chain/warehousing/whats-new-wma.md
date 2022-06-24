@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Warehouse Management-mobilappen
-description: Dette emne viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel viser de nye og ændrede funktioner for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661819"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945717"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20240"></a>Version 2.0.24.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Forbedret scannersider for at aktivere scanningsindstillingen på **detaljesider**.
+- Forbedret ydeevne, f.eks. touch-/trykskærm.
+- Forbedret ydeevne i forbindelse med Android.
+- Fast placering af flere overskrifter, så der kan vises flere kort på **forespørgselssiden**.
+- Forbedret rulning, så der er mindre afstand til siderulleinddeling.
+- Tilføjet lang tryk for at få vist yderligere tekst på **forespørgselssiden**.
+- Fast manglende oplysninger om enheds-id til Android.
+- Øget stabilitet.
+- Optimeret layout for logon.
+- Tilføjet højreklik for at lukke dialogboksens pop op-sider på numeriske tastatur, **detaljeside** og inputsider.
 
 ## <a name="version-20220"></a>Version 2.0.22.0
 

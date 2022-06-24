@@ -1,6 +1,6 @@
 ---
 title: Indstillinger for grovplanlægning
-description: I dette emne beskrives indstillingerne for grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
+description: Denne artikel beskriver indstillingerne for planlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb0ee3020c5cfd17e82282e8fddb8f9c6dcdfee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2f4d1e74855a0a8f73030c222c3f2fe27ce58a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907255"
 ---
 # <a name="operations-scheduling-options"></a>Indstillinger for grovplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives indstillingerne for grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
+Denne artikel beskriver indstillingerne for planlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 
 Grovplanlægning beregner følgende oplysninger for en produktionsordre:
 

@@ -1,6 +1,6 @@
 ---
 title: Aktiver på flere niveauer
-description: Dette emne forklarer, hvordan du opretter og sletter aktiver på flere niveauer.
+description: Denne artikel forklarer, hvordan du opretter og sletter aktiver på flere niveauer.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908766"
 ---
 # <a name="multi-level-assets"></a>Aktiver på flere niveauer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769605"
 
  
 
-Dette emne forklarer, hvordan du opretter og sletter aktiver på flere niveauer. Du kan oprette aktiver og relaterede under aktiver i en hierarkisk træstruktur. På denne måde kan du vise relationer og afhængigheder mellem aktiver. Vedligeholdelsesjob kan relateres til alle niveauer i træstrukturen. Der kan også oprettes statistikker for et individuelt niveau eller en sum af alle niveauer for underaktiver.
+Denne artikel forklarer, hvordan du opretter og sletter aktiver på flere niveauer. Du kan oprette aktiver og relaterede under aktiver i en hierarkisk træstruktur. På denne måde kan du vise relationer og afhængigheder mellem aktiver. Vedligeholdelsesjob kan relateres til alle niveauer i træstrukturen. Der kan også oprettes statistikker for et individuelt niveau eller en sum af alle niveauer for underaktiver.
 
 På listesiden **Alle aktiver** (**Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**) opregner kolonner **Aktiver** aktiverne i hierarkisk orden. Kolonnen **Overordnet** viser den relaterede overordnede. Hvis der derudover allerede er oprettet aktiver og underaktiver, vises aktiverne i en træstruktur i sektionen **Aktivtræ** i ruden **Relaterede oplysninger**.
 

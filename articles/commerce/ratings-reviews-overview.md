@@ -1,6 +1,6 @@
 ---
-title: Oversigt over vurderinger og anmeldelser
-description: Dette emne omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
+title: Oversigt over bedømmelser og anmeldelser
+description: Denne artikel omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/01/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9fff5100dd1bebdd19fb7306980e98ca84027acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898904"
 ---
-# <a name="ratings-and-reviews-overview"></a>Oversigt over vurderinger og anmeldelser
+# <a name="ratings-and-reviews-overview"></a>Oversigt over bedømmelser og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
+Denne artikel omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
 
 Vurderinger og anmeldelser er vigtige for e-handelskunder, der ønsker at vide, hvordan andre kunder opfatter et produkt. De kan også hjælpe forbrugerne med at foretage indkøbsbeslutninger. I Dynamics 365 Commerce kan forhandlerne bruge løsningen for vurderinger og anmeldelser til at registrere produktanmeldelser og -vurderinger fra kunderne. Detailhandlere kan derefter se gennemsnitsvurderinger og gennemgå oplysninger på deres e-handels-websted.
 

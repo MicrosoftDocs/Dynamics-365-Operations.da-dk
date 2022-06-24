@@ -1,6 +1,6 @@
 ---
 title: Tilknytte butikker og teams, hvis der er eksisterende teams i Microsoft Teams
-description: I dette emne kan du se, hvordan du kan tilknytte butikker og tilsvarende teams i Dynamics 365 Commerce-hovedkontoret, hvis din organisation allerede har oprettet teams i Microsoft Teams inden Commerce-integrationen.
+description: Denne artikel viser, hvordan du kan tilknytte butikker og tilsvarende teams i Dynamics 365 Commerce Headquarters, hvis din organisation allerede har oprettet teams i Microsoft Teams inden Commerce-integrationen.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902731"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Tilknytte butikker og teams, hvis der er eksisterende teams i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-I dette emne kan du se, hvordan du kan tilknytte butikker og tilsvarende teams i Dynamics 365 Commerce-hovedkontoret, hvis din organisation allerede har oprettet teams i Microsoft Teams inden Commerce-integrationen.
+Denne artikel viser, hvordan du kan tilknytte butikker og tilsvarende teams i Dynamics 365 Commerce Headquarters, hvis din organisation allerede har oprettet teams i Microsoft Teams inden Commerce-integrationen.
 
-Der kan være oprettet teams i din organisation for nogle af eller alle dine butikker, før Dynamics 365 Commerce og Microsoft Teams integreres. Hvis det er tilfældet, skal du oprette opgavesynkronisering mellem Commerce POS og Microsoft Teams, og du skal angive tilknytningen af butikker og det tilsvarende team i Commerce-hovedkontoret.
+Der kan være oprettet teams i din organisation for nogle af eller alle dine butikker, før Dynamics 365 Commerce og Microsoft Teams integreres. Hvis det er tilfældet, skal du oprette opgavesynkronisering mellem Commerce POS og Microsoft Teams, og du skal angive tilknytningen af butikker og det tilsvarende team i Commerce Headquarters.
 
-## <a name="map-stores-and-corresponding-teams-in-commerce-headquarters"></a>Tilknytte butikker og tilsvarende teams i Commerce-hovedkontor 
+## <a name="map-stores-and-corresponding-teams-in-commerce-headquarters"></a>Tilknytte butikker og tilsvarende teams i Commerce Headquarters 
 
-Følg disse trin for at tilknytte butikker og tilsvarende teams i Commerce-hovedkontor.
+Følg disse trin for at tilknytte butikker og tilsvarende teams i Commerce Headquarters.
 
 1. Gå til **Systemadministration \> Arbejdsområde \> Datastyring**.
 1. Vælg **Eksportér**. 

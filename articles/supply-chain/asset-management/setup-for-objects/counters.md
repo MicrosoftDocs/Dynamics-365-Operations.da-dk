@@ -1,6 +1,6 @@
 ---
 title: Aktivmålinger
-description: Dette emne beskriver, hvordan du opretter typer af aktivmålinger i Styring af aktiver.
+description: Denne artikel beskriver, hvordan du opretter typer af aktivmålinger i Styring af aktiver.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909666"
 ---
 # <a name="counters"></a>Tællere
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter tællertyper i Styring af aktiver. Tællertyper bruges til at foretage tællerregistreringer på aktiver, for eksempel antal produktionstimer eller antal, der produceres på aktivet. Aktivtyper er relateret til tællertyperne. Det betyder, at en tæller kun kan bruges på et aktiv, hvis tælleren er konfigureret på den aktivtype, der bruges på aktivet.
+Denne artikel beskriver, hvordan du opretter tællertyper i Styring af aktiver. Tællertyper bruges til at foretage tællerregistreringer på aktiver, for eksempel antal produktionstimer eller antal, der produceres på aktivet. Aktivtyper er relateret til tællertyperne. Det betyder, at en tæller kun kan bruges på et aktiv, hvis tælleren er konfigureret på den aktivtype, der bruges på aktivet.
 
 Før du kan foretage tællerregistreringer på aktiver, skal du først oprette de tællertyper, du vil bruge, i **Tællere**. Derefter kan du oprette tællerregistreringer for aktiver i **Tællere**. 
 

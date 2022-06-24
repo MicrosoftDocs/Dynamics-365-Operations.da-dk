@@ -1,6 +1,6 @@
 ---
-title: Modtagelse af nummerplade via mobilappen Lokationsstyring
-description: I dette emne beskrives, hvordan du konfigurerer mobilappen Lokationsstyring til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+title: Modtage id via Warehouse Management-mobilappen
+description: Denne artikel beskriver, hvordan du konfigurerer mobilappen Lokationsstyring til at understøtte brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906994"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtagelse af nummerplade via mobilappen Lokationsstyring
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtage id via Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer mobilappen Lokationsstyring, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
+Denne artikel beskriver, hvordan du konfigurerer mobilappen Lokationsstyring, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 
 Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
 

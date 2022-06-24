@@ -1,6 +1,6 @@
 ---
 title: Planlægge oprydning af data i salgshistorikken
-description: Dette emne beskriver, hvordan du kan hjælpe med at forbedre systemets ydeevne ved at planlægge den periodiske oprydning af salgsopdateringshistorikken, så den kører med et regelmæssigt interval.
+description: Denne artikel beskriver, hvordan du kan hjælpe med at forbedre systemets ydeevne ved at planlægge den periodiske oprydning af salgsopdateringshistorikken, så den kører med et regelmæssigt interval.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900819"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Planlægge oprydning af data i salgshistorikken
 
@@ -28,7 +28,7 @@ Hvis du bruger den periodiske opgave *Oprydning af salgsopdateringshistorik*, an
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Aktivere funktionerne til oprydning af salgshistorikken
 
-Hvis du vil konfigurere og bruge den periodiske opgave *Oprydning af salgsopdateringshistorik* sammen med alle de funktioner, der er beskrevet i dette emne, skal du aktivere *Forbedringer af ydeevnen for oprydning i salgshistorikken* og *Ryd op i historik for salgsopdatering baseret på alder* i Funktionsstyring, som beskrevet i følgende undersektioner.
+Hvis du vil konfigurere og bruge den periodiske opgave *Oprydning af salgsopdateringshistorik* sammen med alle de funktioner, der er beskrevet i denne artikel, skal du aktivere *Forbedringer af ydeevnen for oprydning i salgshistorikken* og *Ryd op i historik for salgsopdatering baseret på alder* i Funktionsstyring, som beskrevet i følgende undersektioner.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Forbedringer af ydeevnen for oprydning i salgshistorikken
 

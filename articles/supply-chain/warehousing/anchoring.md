@@ -1,6 +1,6 @@
 ---
 title: Forankring
-description: Dette emne indeholder en forklaring på, hvordan forankring aktiveres og bruges.
+description: Denne artikel indeholder en forklaring på, hvordan forankring aktiveres og bruges.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903805"
 ---
 # <a name="anchoring"></a>Forankring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om forankringsprocessen. Det beskriver den nødvendige konfiguration og den logik, der køres, når en arbejder på lagerstedet ændrer enten den midlertidige lokation eller lastlokaliteten.
+Denne artikel indeholder oplysninger om forankringsprocessen. Det beskriver den nødvendige konfiguration og den logik, der køres, når en arbejder på lagerstedet ændrer enten den midlertidige lokation eller lastlokaliteten.
 
 Forankringsfunktionen giver dig mulighed for at tilsidesætte den midlertidige lokation eller lastlokationen. Alle åbne anbringelser dirigeres derefter til den nye midlertidige lokation eller lastlokation, som du angiver.
 
@@ -36,11 +36,11 @@ Du kan konfigurere forankring til menupunkterne i mobilenheden ved hjælp af ind
 > [!IMPORTANT]
 > Lokationen for efterfølgende åbne anbringelser ændres kun på de arbejdslinjer, der genereres fra samme arbejdsskabelonlinje. Det vil sige, at systemet forankrer de anbringelseslinjer, som kommer fra samme arbejdsskabelonlinje.
 
-Dette emne indeholder et scenario, der viser, hvordan forankring fungerer. I løbet af scenariet opretter du et sæt af salgsordrer og frigiver dem til lagerstedet. Du skal derefter tilsidesætte den foreslåede midlertidige lokation og kontrollere, at alt resterende læg på-arbejde dirigeres til den nye lokation.
+Denne artikel indeholder et scenario, der viser, hvordan forankring fungerer. I løbet af scenariet opretter du et sæt af salgsordrer og frigiver dem til lagerstedet. Du skal derefter tilsidesætte den foreslåede midlertidige lokation og kontrollere, at alt resterende læg på-arbejde dirigeres til den nye lokation.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forudsætninger for scenario: Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til *USMF*, før du går i gang.
+Scenariet i denne artikel indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til *USMF*, før du går i gang.
 
 ## <a name="scenario-setup"></a>Konfigurere scenarie
 

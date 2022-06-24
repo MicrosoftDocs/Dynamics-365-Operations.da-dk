@@ -1,6 +1,6 @@
 ---
 title: Kreditorsamarbejde med eksterne kreditorer
-description: I dette emne forklares, hvordan indkøbere bruger kreditorportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
+description: I denne artikel forklares, hvordan indkøbere bruger kreditorportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907284"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
 [!include [banner](../includes/banner.md)]
 
-Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
+Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Denne artikel beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
 
 Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen for kreditorsamarbejde, i [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Oplysningerne om kreditorsamarbejde i dette emne gælder kun for den aktuelle version af Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
+> Oplysningerne om kreditorsamarbejde i denne artikel gælder kun for den aktuelle version af Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til ekstern
 <li>Erstat en vare.</li>
 </ul>
 Kreditoren kan ikke ændre oplysninger om pris og gebyrer. Kreditoren kan dog foreslå disse ændringer ved hjælp af noter.</td>
-<td>Kreditorens svar registreres som <strong>Accepteret med ændringer</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Statusangivelser viser de typer af ændringer kreditoren har foreslået. Oplysninger om automatisk forbrug af ændringerne kan du se i afsnittet &quot;Opdatere indkøbsordren, når en kreditor foreslår ændringer&quot; senere i dette emne. </td>
+<td>Kreditorens svar registreres som <strong>Accepteret med ændringer</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Statusangivelser viser de typer af ændringer kreditoren har foreslået. Oplysninger om automatisk forbrug af ændringerne kan du se i afsnittet &quot;Opdatere indkøbsordren, når en kreditor foreslår ændringer&quot; senere i denne artikel. </td>
 </tr>
 </tbody>
 </table>

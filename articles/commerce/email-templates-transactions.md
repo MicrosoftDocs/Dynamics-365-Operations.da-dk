@@ -1,6 +1,6 @@
 ---
-title: Oprette mailskabeloner til transaktionshændelser
-description: Dette emne beskriver, hvordan du opretter, overfører og konfigurerer mailskabeloner for transaktionshændelser i Microsoft Dynamics 365 Commerce.
+title: Oprette e-mailskabeloner til transaktionshændelser
+description: Denne artikel beskriver, hvordan du opretter, overfører og konfigurerer mailskabeloner for transaktionshændelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910544"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Oprette e-mailskabeloner til transaktionshændelser
 
 [!include [banner](includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du opretter, overfører og konfigurerer mailskabeloner for transaktionshændelser i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du opretter, overfører og konfigurerer mailskabeloner for transaktionshændelser i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce indeholder en indbygget løsning til afsendelse af mails, der giver kunder besked om transaktionshændelser. Mails kan f.eks. sendes, når en ordre afgives, er klar til afhentning eller er afsendt. I dette emne beskrives trinnene til oprettelse, upload og konfiguration af de mailskabeloner, der bruges til at sende transaktionsmails.
+Dynamics 365 Commerce indeholder en indbygget løsning til afsendelse af mails, der giver kunder besked om transaktionshændelser. Mails kan f.eks. sendes, når en ordre afgives, er klar til afhentning eller er afsendt. Denne artikel beskriver trinnene til oprettelse, upload og konfiguration af de mailskabeloner, der bruges til at sende transaktionsmails.
 
 ## <a name="notification-types"></a>Beskedtyper
 
@@ -38,25 +38,25 @@ Dynamics 365 Commerce understøtter følgende beskedtyper.
 
 ### <a name="order-created"></a>Der er oprettet en ordre
 
-Beskedtypen *ordre oprettet* udløses, når der oprettes en ny salgsordre i Commerce-hovedkontoret.
+Beskedtypen *ordre oprettet* udløses, når der oprettes en ny salgsordre i Commerce Headquarters.
 
 > [!NOTE]
 > Beskedtypen for ordre oprettet udløses ikke for cash-and-carry-transaktioner, der finder sted på en POS-terminal. I dette tilfælde genereres der en mail og/eller udskrevet kvittering. Yderligere oplysninger finder du i [Sende mailkvitteringer fra Modern POS (MPOS)](email-receipts.md).
 
 ### <a name="order-confirmed"></a>Bekræftet ordre
 
-Beskedtypen *ordre bekræftet* udløses, når der genereres et ordrebekræftelsesdokument for en salgsordre fra Commerce-hovedkontoret.
+Beskedtypen *ordre bekræftet* udløses, når der genereres et ordrebekræftelsesdokument for en salgsordre fra Commerce Headquarters.
 
 ### <a name="picking-completed"></a>Fuldført pluk
 
-Beskedtypen *pluk fuldført* udløses, når en plukliste for en ordre er markeret som fuldført i Commerce-hovedkontoret.
+Beskedtypen *pluk fuldført* udløses, når en plukliste for en ordre er markeret som fuldført i Commerce Headquarters.
 
 > [!NOTE]
 > Den beskedtypen pluk fuldført udløses ikke, når en vare er markeret som plukket i en POS-klient.
 
 ### <a name="packing-completed"></a>Fuldført emballage
 
-Beskedtypen *pakning fuldført* udløses, når et følgeseddeldokument oprettes for en ordre i Commerce-hovedkontoret på POS-klienten.
+Beskedtypen *pakning fuldført* udløses, når et følgeseddeldokument oprettes for en ordre i Commerce Headquarters på POS-klienten.
 
 Beskedtypen for pakning fuldført understøtter følgende yderligere mailpladsholdere for at facilitere "ordre klar til afhentning" og ordreopslag fra transaktionsmails.
 
@@ -88,14 +88,14 @@ Beskedtypen *ordre afsendt* udløses, når en ordre, hvis leveringsmåde ikke er
 
 ### <a name="order-invoiced"></a>Ordre faktureret
 
-Beskedtypen *ordre faktureret* udløses, når der faktureres en ordre i POS eller Commerce-hovedkontoret.
+Beskedtypen *ordre faktureret* udløses, når der faktureres en ordre i POS eller Commerce Headquarters.
 
 ### <a name="issue-gift-card"></a>Udsted gavekort
 
 Beskedtypen *udsted gavekort* udløses, når en salgsordre, der indeholder et produkt af typen gavekort, faktureres.
 
 > [!NOTE]
-> Beskedmailen for udsted gavekort sendes til modtageren af gavekortet. Modtageren af gavekortet angives i Commerce-hovedkontoret på en individuel salgsordrelinje under fanen **Emballage** under **Linjedetaljer**. Den kan angives manuelt eller via programmering.
+> Beskedmailen for udsted gavekort sendes til modtageren af gavekortet. Modtageren af gavekortet angives i Commerce Headquarters på en individuel salgsordrelinje under fanen **Emballage** under **Linjedetaljer**. Den kan angives manuelt eller via programmering.
 
 Beskedtypen udstedelse af gavekort understøtter følgende yderligere pladsholdere.
 
@@ -113,15 +113,15 @@ Du kan finde flere oplysninger om gavekort i [Digitale e-handelsgavekort](digita
 
 ### <a name="order-cancellation"></a>Ordreannullering
 
-Beskedtypen *ordreannullering* udløses, når der annulleres en ordre i POS eller Commerce-hovedkontoret.
+Beskedtypen *ordreannullering* udløses, når der annulleres en ordre i POS eller Commerce Headquarters.
 
 ### <a name="customer-created"></a>Kunden er oprettet
 
-Beskedtypen *kunde oprettet* udløses, når der oprettes en ny kundeenhed i Commerce-hovedkontoret.
+Beskedtypen *kunde oprettet* udløses, når der oprettes en ny kundeenhed i Commerce Headquarters.
 
 ### <a name="b2b-prospect-approved"></a>B2B-kundeemne er godkendt
 
-Beskedtypen *B2B-kundeemne godkendt* udløses, når en anmodning om onboarding af et kundeemne godkendes i Commerce-hovedkontoret. Du kan finde flere oplysninger om godkendelse eller afvisning af B2B-kundeemner i [Konfigurere administratorbrugeren til en ny forretningspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+Beskedtypen *B2B-kundeemne godkendt* udløses, når en anmodning om onboarding af et kundeemne godkendes i Commerce Headquarters. Du kan finde flere oplysninger om godkendelse eller afvisning af B2B-kundeemner i [Konfigurere administratorbrugeren til en ny forretningspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
 Beskedtypen B2B-kundeemne godkendt understøtter følgende yderligere pladsholdere.
 
@@ -138,7 +138,7 @@ Beskedtypen B2B-kundeemne godkendt understøtter følgende yderligere pladsholde
 
 ### <a name="b2b-prospect-rejected"></a>B2B-kundeemne blev afvist
 
-Beskedtypen *B2B-kundeemne afvist* udløses, når en anmodning om onboarding af et kundeemne afvises i Commerce-hovedkontoret. Du kan finde flere oplysninger om godkendelse eller afvisning af B2B-kundeemner i [Konfigurere administratorbrugeren til en ny forretningspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+Beskedtypen *B2B-kundeemne afvist* udløses, når en anmodning om onboarding af et kundeemne afvises i Commerce Headquarters. Du kan finde flere oplysninger om godkendelse eller afvisning af B2B-kundeemner i [Konfigurere administratorbrugeren til en ny forretningspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
 Beskedtypen B2B-kundeemne afvist understøtter følgende yderligere pladsholdere.
 

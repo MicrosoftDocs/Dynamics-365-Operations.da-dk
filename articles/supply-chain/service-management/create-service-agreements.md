@@ -1,6 +1,6 @@
 ---
 title: Oprette serviceaftaler
-description: I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servicestyring og Projektstyring og regnskab til at oprette serviceaftaler.
+description: Denne artikel beskriver det, hvordan du kan bruge funktionerne i modulerne Servicestyring og Projektstyring og regnskab til at oprette serviceaftaler.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901757"
 ---
 # <a name="create-service-agreements"></a>Oprette serviceaftaler
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servicestyring og Projektstyring og regnskab til at oprette serviceaftaler.
+Denne artikel beskriver det, hvordan du kan bruge funktionerne i modulerne Servicestyring og Projektstyring og regnskab til at oprette serviceaftaler.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Oprette en serviceaftale fra Service
 
@@ -51,10 +51,10 @@ I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servic
 2. Vælg **Alle projekter**.
 3. Vælg projektet på listen.
 4. Vælg **Administrer** i **handlingsruden**. I **Ny**-aktionsgruppen skal du vælge **Service** og vælge **Serviceaftale**.
-5. Følg trinnene i sektionen med titlen **Oprette en serviceaftale** som beskrevet tidligere i dette emne for at angive projektreferencen.
+5. Følg trinnene i sektionen med titlen **Oprette en serviceaftale** som beskrevet tidligere i denne artikel for at angive projektreferencen.
 
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Oversigt over udvikling og udfyldelse af serviceaftaler](service-agreements.md)
 

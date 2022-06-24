@@ -1,6 +1,6 @@
 ---
-title: Anvendelse af lagerindstillinger
-description: Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
+title: Anvend lagerindstillinger
+description: Denne artikel dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/15/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: df1d1283a7692336906550169bc77104a9118779
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909551"
 ---
 # <a name="apply-inventory-settings"></a>Anvend lagerindstillinger
 
 [!include [banner](includes/banner.md)]
 
-Dette emne dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
+Denne artikel dækker lagerindstillinger og beskriver, hvordan du anvender dem i Microsoft Dynamics 365 Commerce.
 
 Lagerindstillinger angiver, om lageret skal kontrolleres, før produkterne føjes til indkøbsvognen. De definerer også lagerrelaterede marketingsmeddelelser, f.eks. "på lager" og "kun et par tilbage". Disse indstillinger sikrer, at et produkt ikke kan købes, hvis det ikke er på lager.
 
@@ -51,7 +51,7 @@ I Commerce er lagerindstillingerne defineret i **Indstillinger for websted \> Ud
     > [!IMPORTANT] 
     > Indstillingen **Lagerniveau for flere lagersteder** er tilgængelig fra frigivelsen af Commerce version 10.0.19. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Lagerindstillinger for produktlistesider** – Denne indstilling definerer, hvordan produkter, der ikke er på lager, vises på produktlister, der gengives via moduler for produktsamling og søgeresultater. De tilgængelige værdier er **Vis i bestilling med andre produkter**, **Skjul produkter, der ikke er på lager, på listen** og **Vis produkter, der ikke er på lager, sidst på listen**. Hvis du vil bruge denne indstilling, skal du først konfigurere visse forudgående indstillinger i Commerce-hovedkontoret. Du kan finde flere oplysninger i [Aktivere lagervågenhed for modulet til søgeresultater](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Lagerindstillinger for produktlistesider** – Denne indstilling definerer, hvordan produkter, der ikke er på lager, vises på produktlister, der gengives via moduler for produktsamling og søgeresultater. De tilgængelige værdier er **Vis i bestilling med andre produkter**, **Skjul produkter, der ikke er på lager, på listen** og **Vis produkter, der ikke er på lager, sidst på listen**. Hvis du vil bruge denne indstilling, skal du først konfigurere visse forudgående indstillinger i Commerce Headquarters. Du kan finde flere oplysninger i [Aktivere lagervågenhed for modulet til søgeresultater](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
 
     > [!IMPORTANT] 
     > Indstillingen **Lagerindstillinger for produktlistesider** er tilgængelig fra og med frigivelsen af Commerce version 10.0.20. Hvis du opdaterer fra en ældre version af Commerce, skal du opdatere filen appsettings.json manuelt. Du kan finde instruktioner i [Opdateringer af SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).

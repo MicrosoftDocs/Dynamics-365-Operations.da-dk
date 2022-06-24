@@ -1,6 +1,6 @@
 ---
 title: Automatisk frigivelse af forsendelse til cross-docking
-description: I dette emne beskrives en strategi for cross-docking, hvor du kan frigive en behovsordre automatisk til lagerstedet, når den produktionsordre, der leverer behovsantallet, færdigmeldes, så antallet flyttes direkte fra udlagringslokationen for produktionen til forsendelsesområdet.
+description: Denne artikel beskriver en strategi for cross-docking, hvor du kan frigive en behovsordre automatisk til lagerstedet, når den produktionsordre, der leverer behovsantallet, færdigmeldes, så antallet flyttes direkte fra udlagringslokationen for produktionen til forsendelsesområdet.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903776"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse af forsendelse til cross-docking
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives en strategi for cross-docking, hvor du kan frigive en behovsordre automatisk til lagerstedet, når den produktionsordre, der leverer behovsantallet, færdigmeldes. På denne måde flyttes det antal, der kræves til opfyldelse af behovsordren, direkte fra udlagringslokationen for produktionen til forsendelsesområdet.
+Denne artikel beskriver en strategi for cross-docking, hvor du kan frigive en behovsordre automatisk til lagerstedet, når den produktionsordre, der leverer behovsantallet, færdigmeldes. På denne måde flyttes det antal, der kræves til opfyldelse af behovsordren, direkte fra udlagringslokationen for produktionen til forsendelsesområdet.
 
 Cross-docking er en lagerekspeditionsproces, hvor det antal, der kræves for at opfylde en udgående ordre, sendes til ordrens forsendelsesområde eller stadieinddelte område fra den lokation, hvor den indgående ordre blev modtaget. (Den indgående ordre kan være en indkøbsordre, en flytteordre eller en produktionsordre). Den avancerede funktion til cross-docking understøtter alle forsynings- og behovsordrer, og den kræver, at det udgående behov frigives, før muligheden for cross-docking er identificeret. Den automatiske forsendelsesfunktion har følgende karakteristika:
 

@@ -1,6 +1,6 @@
 ---
 title: Tilslutte ydre enheder til POS
-description: Dette emne dækker, hvordan du forbinder enheder med din Retail POS.
+description: Denne artikel dækker, hvordan du forbinder enheder med din Retail POS.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897102"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Tilslutte ydre enheder til POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne dækker, hvordan du forbinder enheder med din Retail POS.
+Denne artikel dækker, hvordan du forbinder enheder med din Retail POS.
 
 > [!NOTE]
 > Du kan finde bestemte installationsvejledninger i [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) og [Konfigurere, installere og aktivere Modern POS (MPOS)](retail-modern-pos-device-activation.md).
@@ -157,7 +157,7 @@ Kvitteringsprofiler tildeles til printere i hardwareprofilen. De bruges til at a
 
 #### <a name="hardware-profiles"></a>Hardwareprofiler
 
-Hardwareprofiler beskrives som en komponent til klientinstallation tidligere i dette emne. Hardwareprofiler tildeles direkte til POS-kasseapparatet eller til en delt hardwarestation og bruges til at angive de typer enheder, som et bestemt POS-kasseapparat eller hardwarestation bruger. Hardwareprofiler bruges også til at angive indstillinger for elektronisk pengeoverførsel, der bruges til at kommunikere med betalings-SDK'et.
+Hardwareprofiler beskrives som en komponent til klientinstallation tidligere i denne artikel. Hardwareprofiler tildeles direkte til POS-kasseapparatet eller til en delt hardwarestation og bruges til at angive de typer enheder, som et bestemt POS-kasseapparat eller hardwarestation bruger. Hardwareprofiler bruges også til at angive indstillinger for elektronisk pengeoverførsel, der bruges til at kommunikere med betalings-SDK'et.
 
 #### <a name="visual-profiles"></a>Visuelle profiler
 

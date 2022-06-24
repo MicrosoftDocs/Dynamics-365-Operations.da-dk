@@ -1,6 +1,6 @@
 ---
 title: Kritikalitetstyper for aktiver
-description: I emnet forklares kritikalitetstyper for aktiver i Styring af aktiver.
+description: Denne artikel forklarer kritikalitetstyper for aktiver i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899492"
 ---
 # <a name="asset-criticality-types"></a>Kritikalitetstyper for aktiver
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776914"
 
  
 
-I emnet forklares kritikalitetstyper for aktiver i Styring af aktiver. Aktivers kritikalitet er relateret til aktiver og overføres til arbejdsordrer. Den kan ikke ændres på en arbejdsordre. Aktivers kritikalitet bruges til at beregne arbejdsordrens kritikalitet i forbindelse med planlægningen af arbejdsordre. Det bruges med andre ord til at beregne, i hvilket omfang et vedligeholdelsesjob på et aktiv påvirker produktionsplanen og produktiviteten i virksomheden. Du finder flere oplysninger om den opsætning, der er relateret til beregningen af rangeringsresultater for planlægning af arbejdsordre under [Parametre for Styring af aktiver](../setup-for-objects/enterprise-asset-management-parameters.md).
+Denne artikel forklarer kritikalitetstyper for aktiver i Styring af aktiver. Aktivers kritikalitet er relateret til aktiver og overføres til arbejdsordrer. Den kan ikke ændres på en arbejdsordre. Aktivers kritikalitet bruges til at beregne arbejdsordrens kritikalitet i forbindelse med planlægningen af arbejdsordre. Det bruges med andre ord til at beregne, i hvilket omfang et vedligeholdelsesjob på et aktiv påvirker produktionsplanen og produktiviteten i virksomheden. Du finder flere oplysninger om den opsætning, der er relateret til beregningen af rangeringsresultater for planlægning af arbejdsordre under [Parametre for Styring af aktiver](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 Hvis du vil konfigurere kritikalitet, skal du først oprette de kritikalitetstyper, der bør bruges i opsætningen af aktiver. Du kan derefter oprette aktivkritikaliteter.
 

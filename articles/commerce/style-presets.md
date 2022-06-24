@@ -1,6 +1,6 @@
 ---
 title: Arbejde med forudindstillinger for typografi
-description: Dette emne beskriver, hvordan du kan arbejde med forudindstillede webstedstypografier i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: Denne artikel beskriver, hvordan du kan arbejde med forudindstillede webstedstypografier i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964847"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900354"
 ---
 # <a name="work-with-style-presets"></a>Arbejde med forudindstillinger for typografi
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan arbejde med forudindstillede webstedstypografier i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+Denne artikel beskriver, hvordan du kan arbejde med forudindstillede webstedstypografier i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 En forudindstillet typografi er et gemt sæt af alle tilladelige typografiværdier på tværs af et webstedstema. Den kan bruges til straks at ændre et websteds udseende fra webstedsgeneratoren. Forudindstillinger af typografier lader forfattere i Commerce-webstedsgeneratoren hurtigt ændre, få vist og aktivere et sæt typografiværdier på tværs af webstedet uden at skulle bruge overlappende typografiark (CSS – Cascading Style Sheets) eller installere temaer. Skrifttyper, knaptypografier og webstedsfarver er typiske eksempler på typografivariabler, der kan styres via forudindstillede typografier.
 
@@ -49,7 +49,7 @@ Hvis du vil have vist en forudindstillet typografi på dit websted i webstedgene
 
 1. Vælg **Forhåndsvisning** på kommandolinjen.
 1. Vælg en URL-adresse på dit websted, der skal bruges til at få vist den forudindstillede typografi, og vælg derefter **OK**.
-1. Vælg den kanalspecifikke og landespecifikke URL-adressevariant, du vil have vist, ved at vælge navnet på varianten. Der åbnes et nyt eksempelvindue i browseren, hvor den valgte formatindstillede typografi anvendes på den angivne side.
+1. Vælg den kanalspecifikke og landestandardspecifikke URL-adressevariant, du vil have vist, ved at vælge navnet på varianten. Der åbnes et nyt eksempelvindue i browseren, hvor den valgte formatindstillede typografi anvendes på den angivne side.
 
 > [!NOTE]
 > URL-adressen til forhåndsvisning er permanent og godkendt. Du kan derfor kopiere, indsætte og sende den til andre godkendte kolleger til gennemsyn, før du angiver den til "aktiv" på dit websted. URL-adressen for forhåndsvisning er også nyttig til at kontrollere typografier på forskellige enheder, i forskellige browsere og på forskellige skærmbilleder.

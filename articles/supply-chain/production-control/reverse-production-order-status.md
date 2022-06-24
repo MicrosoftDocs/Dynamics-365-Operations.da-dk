@@ -1,6 +1,6 @@
 ---
 title: Tilbagefør produktionsordrens status
-description: I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer.
+description: Denne artikel beskriver, hvordan du tilbagefører status for produktionsordrer.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903950"
 ---
 # <a name="reverse-the-production-order-status"></a>Tilbagefør produktionsordrens status
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer. 
+Denne artikel beskriver, hvordan du tilbagefører status for produktionsordrer. 
 
 Hvis du tilbagefører status for en produktionsordre, gendannes ordren og alle de operationer, der er tilknyttet ruterne, til et tidligere trin i produktionens levetid. En produktionsordrer har f.eks. statussen **Planlagt**, og du kan ændre status tilbage til **Oprettet**. Systemet skal i så fald først ændre status til **Estimeret**, som er den status, der er umiddelbart før **Planlagt**. Derefter kan status ændres til den status, du ønsker, **Oprettet**. **Bemærk!** Hvis ordren har nået statussen **Færdigmelding**, kan du stadig tilbageføre den til en tidligere status. Du skal imidlertid køre forkalkulation og grovplanlægning eller finplanlægning eller begge former for planlægning igen for at opdatere oplysningerne i ordren. Dette trin er påkrævet, da alle reservationer af resterende vareforbrug og forbrug af operationsressourcer også skal nulstilles. I resten af denne artikel forklares det, hvad der sker, når du tilbagefører status for en produktionsordre på følgende måder:
 

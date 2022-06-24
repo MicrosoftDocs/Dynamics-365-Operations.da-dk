@@ -1,6 +1,6 @@
 ---
 title: Skærmlayouts til demodata i Modern POS (MPOS) og Cloud POS
-description: Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Commerce.
+description: Denne artikel indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897219"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Skærmlayouts til demodata i Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Commerce.
+Denne artikel indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversigt
 
-De eksempelskærmlayouts, der følger med Commerce-demodata, leverer indhold, der er optimeret til forskellige detailsegmenter, butiksmedarbejderroller og enheder. Et enkelt layout kan indeholde flere layoutstørrelser og kombinationer af knapmatricer for at sikre dækning, når butiksmedarbejderne flytter mellem enheder og stationer. I dette emne beskrives forskellene mellem disse layouts, de operationer, de indeholder, og den samlede oplevelse, de leverer.
+De eksempelskærmlayouts, der følger med Commerce-demodata, leverer indhold, der er optimeret til forskellige detailsegmenter, butiksmedarbejderroller og enheder. Et enkelt layout kan indeholde flere layoutstørrelser og kombinationer af knapmatricer for at sikre dækning, når butiksmedarbejderne flytter mellem enheder og stationer. Denne artikel beskriver forskellene mellem disse layouts, de operationer, de indeholder, og den samlede oplevelse, de leverer.
 
 ![Layouts til demodata på tværs af enheder.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -47,13 +47,13 @@ Skærmlayout-id'er må være på op til 10 tegn. Id'et er en streng, der består
 2. Layoutversion
 3. Karakter
 
-### <a name="company"></a>Virksomhed
+### <a name="company"></a>Regnskab
 
-| Bogstav | Virksomhed         |
+| Bogstav | Regnskab         |
 |--------|-----------------|
 | T      | Adventure Works |
 | F      | Fabrikam        |
-| K      | Contoso         |
+| A      | Contoso         |
 
 ### <a name="layout-version"></a>Layoutversion
 
@@ -157,7 +157,7 @@ Der er angivet brugere til de forskellige skærmlayouts. Ved hjælp af tabellen 
 | Fabrikam        | F3STK            | Lagermedarbejder   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikschef | 000100, 000111         |
 | Contoso         | C3CSH            | Kasseassistent       | 000110, 000120         |
-| Contoso         | Ikke anvendelig   | Lagermedarbejder   | Ikke anvendelig         |
+| Contoso         | Ikke tilgængelig   | Lagermedarbejder   | Ikke tilgængelig         |
 
 > [!TIP]
 > For at få de bedste resultater skal du aktivere et register i den tilsvarende butikslokalitet og angive firmaet til firmaet for den karakter, som du vil bruge, når du logger på. På denne måde kan du hjælpe med til at garantere, at den visuelle profil og brandingbillederne justeres på tværs af oplevelsen. Hvis du f.eks. er interesseret i at se et layout til Fabrikam for en kasserer, skal du aktivere et register i butikken i Houston.

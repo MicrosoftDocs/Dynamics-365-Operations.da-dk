@@ -1,6 +1,6 @@
 ---
 title: Bølgeetiketudskrivning
-description: Dette emne beskriver udskrivning af bølgeetiketter og forklarer, hvordan du konfigurerer det.
+description: Denne artikel beskriver udskrivning af bølgeetiketter og forklarer, hvordan du konfigurerer det.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901815"
 ---
 # <a name="wave-label-printing"></a>Bølgeetiketudskrivning
 
@@ -49,7 +49,7 @@ Ved udskrivning af bølgeetiketter kan du vælge mellem følgende forbedringer:
 Disse forbedringer gør det mere effektivt at mærke kartoner før palletisering. De er særligt fordelagtige for firmaer, der leverer til store detailhandlere, der automatisk bekræfter ordretilgang ved at scanne hver enkelt karton separat.
 
 > [!NOTE]
-> Du kan implementere de konfigurationsscenarier, der er beskrevet i dette emne, enten enkeltvis eller i kombination, afhængigt af dine forretningskrav. Du kan designe flere bølgeetiketskabeloner, der fungerer i rækkefølge (som vist i scenarie 3). Du kan f.eks. bruge scenarie 1 til at udskrive kartoner og scenarie 2 til at udskrive palleetiketter (hvis paller på lager er forskellig i størrelse og sammensætning).
+> Du kan implementere de konfigurationsscenarier, der er beskrevet i denne artikel, enten enkeltvis eller i kombination, afhængigt af dine forretningskrav. Du kan designe flere bølgeetiketskabeloner, der fungerer i rækkefølge (som vist i scenarie 3). Du kan f.eks. bruge scenarie 1 til at udskrive kartoner og scenarie 2 til at udskrive palleetiketter (hvis paller på lager er forskellig i størrelse og sammensætning).
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Slå funktionen til udskrivning af bølgeetiketter til
 

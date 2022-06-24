@@ -1,6 +1,6 @@
 ---
 title: Synkroniser produktvurderinger i Dynamics 365 Commerce
-description: Dette emne beskriver, hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909329"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkroniser produktvurderinger i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
 
 Hvis du vil bruge produktvurderinger i omni-kanaler som f.eks. på POS og i callcentre, skal produktvurderinger fra vurderings- og anmeldelsestjenesten importeres til Commerce-kanalens database. Når produktvurderinger stilles til rådighed i omni-kanaler, kan de hjælpe kunder indirekte under deres interaktioner med salgsmedarbejdere.
 
-Dette emne beskriver følgende opgaver:
+Denne artikel beskriver følgende opgaver:
 
 1. Konfigurer **Synkroniseringsjob for produktvurderinger** som et batchjob for at synkronisere produktvurderinger fra **Tjenesten Vurderinger og anmeldelser**.
 1. Kontrollere, at batchjobbet til synkronisering af produktvurderinger er fuldført.

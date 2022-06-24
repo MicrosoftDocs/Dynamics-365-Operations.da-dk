@@ -1,6 +1,6 @@
 ---
-title: Installere og tilslutte mobilappen Warehouse Management
-description: Dette emne forklarer, hvordan du installerer mobilappen Warehouse Management og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
+title: Installere og oprette forbindelse til Warehouse Management-mobilappen
+description: Denne artikel forklarer, hvordan du installerer mobilappen Warehouse Management og konfigurerer den til at oprette forbindelse til dit Microsoft Dynamics 365 Supply Chain Management-miljø.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103407"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941760"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og tilslutte mobilappen Warehouse Management
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og oprette forbindelse til Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emne beskriver, hvordan du konfigurerer den nye mobilapp Warehouse Management. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp (nu frarådet), skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Denne artikel beskriver, hvordan du konfigurerer den nye mobilapp Warehouse Management. Hvis du søger efter oplysninger om, hvordan du konfigurerer den gamle lagerstedsapp (nu frarådet), skal du se [Installere og tilslutte lagerstedsappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Dette emne forklarer, hvordan du downloader og installerer mobilappen Warehouse Management på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
+Denne artikel forklarer, hvordan du downloader og installerer mobilappen Warehouse Management på dine mobilenheder og konfigurerer den til at oprette forbindelse til dit Supply Chain Management-miljø. Du kan konfigurere hver enkelt enhed manuelt, eller du kan importere forbindelsesindstillinger gennem en fil eller ved at scanne en QR-kode.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -39,7 +39,7 @@ mobilappen Warehouse Management er tilgængelig på både Windows- og Google And
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 Update 1809 (build 10.0.17763) eller senere
 - Android 4.4 eller senere
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Aktivere eller deaktivere mobilappfunktioner i Warehouse Management eller Supply Chain Management
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Aktivere eller deaktivere mobilappfunktioner i Warehouse Management eller Supply Chain Management
 
 Hvis du vil bruge mobilappen Warehouse Management, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret i systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -87,11 +87,11 @@ For at aktivere mobilappen Warehouse Management til at kommunikere med en bestem
 
     ![Registrer en applikationsguide.](media/app-connect-azure-register-wizard.png "Registrere en applikationsguide.").
 
-1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i dette emne som *klient-id'et*.
+1. Den nye appregistrering åbnes. Notér værdien i feltet **Applikations-id (klient)**, da du skal bruge den senere. Dette id henvises til senere i denne artikel som *klient-id'et*.
 
     ![Program-id (klient).](media/app-connect-azure-app-id.png "Applikations-id (klient)")
 
-1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i dette emne.)
+1. Gå til listen **Administrer**, og vælg **Certifikat og hemmeligheder**. Vælg derefter en af følgende knapper, afhængigt af hvordan du vil konfigurere appen til godkendelse. (Få flere oplysninger i afsnittet [Godkende ved at bruge et certifikat eller klienthemmelighed](#authenticate) senere i denne artikel.)
 
     - **Upload certifikat** – upload et certifikat, der skal bruges som en hemmelighed. Vi anbefaler denne fremgangsmåde, fordi den er mere sikker og også kan automatiseres mere fuldstændigt. Hvis du kører mobilappen Warehouse Management på Windows-enheder, skal du notere dig, hvilken **aftryksværdi** der vises, når du har uploadet certifikatet. Du skal bruge denne værdi, når du konfigurerer certifikatet på Windows-enheder.
     - **Ny klienthemmelighed** – opret en nøgle ved at angive en nøglebeskrivelse og en varighed i sektionen **Adgangskoder**, og vælg derefter **Tilføj**. Tag en kopi af nøglen, og opbevar den sikkert.
@@ -101,7 +101,7 @@ For at aktivere mobilappen Warehouse Management til at kommunikere med en bestem
 Få flere oplysninger om, hvordan du konfigurerer webtjenesteapplikationer i Azure AD, i følgende ressourcer:
 
 - Du kan finde instruktioner, der viser, hvordan du bruger Windows PowerShell til at konfigurere webtjenesteapplikationer i Azure AD, i [Sådan bruger du Azure PowerShell til at oprette en tjenesteprincipal med et certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Få flere oplysninger om, hvordan du opretter en webtjenesteapplikation manuelt i Azure AD, i følgende emner:
+- Få flere oplysninger om, hvordan du opretter en webtjenesteapplikation manuelt i Azure AD, i følgende artikler:
 
     - [Hurtig start: Registrer et program med platformen Microsoft-identitet](/azure/active-directory/develop/quickstart-register-app)
     - [Sådan bruges portalen til at oprette en Azure AD-applikation og tjenesteportal, der kan få adgang til ressourcer](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ Benyt følgende fremgangsmåde, hvis du vil give mulighed for, at Supply Chain M
     ![Azure Active Directory-applikationer.](media/app-connect-aad-apps.png "Azure Active Directory-applikationer")
 
 > [!TIP]
-> Du kan bruge disse indstillinger til at oprette et klient-id i Azure for hver af dine fysiske enheder og derefter føje hvert klient-id til siden **Azure Active Directory-programmer**. Hvis en enhed derefter bliver væk, kan du nemt fjerne dens adgang til Supply Chain Management ved at fjerne dens klient-id fra denne side. (Denne metode fungerer, fordi de legitimationsoplysninger til forbindelsen, der gemmes på de enkelte enheder, også angiver et klient-id som beskrevet senere i dette emne).
+> Du kan bruge disse indstillinger til at oprette et klient-id i Azure for hver af dine fysiske enheder og derefter føje hvert klient-id til siden **Azure Active Directory-programmer**. Hvis en enhed derefter bliver væk, kan du nemt fjerne dens adgang til Supply Chain Management ved at fjerne dens klient-id fra denne side. (Denne metode fungerer, fordi de legitimationsoplysninger til forbindelsen, der gemmes på de enkelte enheder, også angiver et klient-id som beskrevet senere i denne artikel.)
 >
 > Desuden fastlægges standardsprog, nummerformat og tidszoneindstillinger for hvert klient-id af de indstillinger, der er angivet for den værdi af **Bruger-id**, der tilknyttes her. Derfor kan du bruge disse indstillinger til at oprette standardindstillinger for hver enhed eller samling enheder baseret på klient-id'et. Disse standardindstillinger tilsidesættes dog, hvis de også er defineret for *brugerkontoen til lagerstedsappen*, som en arbejder bruger til at logge på enheden. (Yderligere oplysninger finder du i [Konfigurere brugerkonti til mobilenheder](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkende ved hjælp af et certifikat eller en klienthemmelighed
 
-Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed med Supply Chain Management. Du kan godkende enten ved at bruge en klienthemmelighed eller et certifikat. Hvis du vil importere forbindelsesindstillinger, anbefales det, at du bruger et certifikat i stedet for en klienthemmelighed. Da klienthemmeligheden altid skal lagres på en sikker måde, kan du ikke importere den fra en fil med forbindelsesindstillinger eller en QR-kode, som beskrevet senere i dette emne.
+Godkendelse med Azure AD giver en sikker metode til at forbinde en mobilenhed med Supply Chain Management. Du kan godkende enten ved at bruge en klienthemmelighed eller et certifikat. Hvis du vil importere forbindelsesindstillinger, anbefales det, at du bruger et certifikat i stedet for en klienthemmelighed. Da klienthemmeligheden altid skal lagres på en sikker måde, kan du ikke importere den fra en fil med forbindelsesindstillinger eller en QR-kode, som beskrevet senere i denne artikel.
 
 Certifikater kan bruges som hemmeligheder for at bevise applikationens identitet, når der anmodes om et token. Den offentlige del af certifikatet overføres til appregistreringen på Azure-portalen, hvorimod hele certifikatet skal installeres på hver enkelt enhed, hvor mobilappen Warehouse Management er installeret. Din organisation er ansvarlig for at administrere certifikatet i form af rotation osv. Du kan bruge selvsignerede certifikater, men du bør altid bruge certifikater, der ikke kan eksporteres.
 
@@ -266,7 +266,7 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere manuelt på enheden, s
 
 1. Angiv følgende oplysninger:
 
-    - **Brug klienthemmelighed** – angiv denne indstilling til _Ja_ for at bruge en klienthemmelighed til godkendelse med Supply Chain Management. Angiv den til _Nej_ for at bruge et certifikat til godkendelse. (Du kan finde flere oplysninger i [Oprette en webtjenesteapplikation i afsnittet Azure Active Directory](#create-service) tidligere i dette emne).
+    - **Brug klienthemmelighed** – angiv denne indstilling til _Ja_ for at bruge en klienthemmelighed til godkendelse med Supply Chain Management. Angiv den til _Nej_ for at bruge et certifikat til godkendelse. (Du kan finde flere oplysninger i [Oprette en webtjenesteapplikation i afsnittet Azure Active Directory](#create-service) tidligere i denne artikel.)
     - **Forbindelsesnavn** – angiv et navn til den nye forbindelse. Dette navn vises i feltet **Vælg forbindelse**, næste gang du åbner forbindelsesindstillingerne. Det navn, du angiver her, skal være entydigt. (Med andre ord skal det være forskelligt fra alle andre forbindelsesnavne, der er gemt på enheden, hvis der er gemt andre forbindelsesnavne dér).
     - **Active Directory-klient-id** – angiv det klient-id, du har noteret, mens du var i opsætningen af Azure AD i [Oprette en webtjenesteapplikation i afsnittet Azure Active Directory](#create-service).
     - **Active Directory-klienthemmelighed** – dette felt er kun tilgængeligt, hvis indstillingen **Brug klienthemmelig** er angivet til _Ja_. Angiv den klienthemmelighed, du har noteret, mens du var i opsætningen af Azure AD i afsnittet [Oprette en webtjenesteapplikation i Azure Active Directory](#create-service).

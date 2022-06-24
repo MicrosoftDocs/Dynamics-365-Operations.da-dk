@@ -1,6 +1,6 @@
 ---
 title: Knytte kanaler til e-handelswebsteder
-description: I dette emne beskrives nogle af de mest almindelige kanaltilknytningsscenarier i Microsoft Dynamics 365 Commerce, hvor de fleste andre forretningsbehov kan ekstrapoleres.
+description: Denne artikel beskriver nogle af de mest almindelige kanaltilknytningsscenarier i Microsoft Dynamics 365 Commerce, hvor de fleste andre forretningsbehov kan ekstrapoleres.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902757"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Knytte kanaler til e-handelswebsteder
 
-I dette emne beskrives nogle af de mest almindelige kanaltilknytningsscenarier i Microsoft Dynamics 365 Commerce, hvor de fleste andre forretningsbehov kan ekstrapoleres.
+Denne artikel beskriver nogle af de mest almindelige kanaltilknytningsscenarier i Microsoft Dynamics 365 Commerce, hvor de fleste andre forretningsbehov kan ekstrapoleres.
 
 Dynamics 365 Commerce understøtter mange forretningsscenarier for tilknytning af [onlinekanaler](#channels), der har et konfigureret sæt produkter, priser og rabatter, til kunders erfaringer med [e-handelswebsteder](#e-commerce-sites).
 
-Dette emne omhandler følgende scenarier:
+Denne artikel omhandler følgende scenarier:
 
 - **En kanal med ét sprog, der har en enkelt e-handelswebstedsoplevelse.** Dette scenario kan f.eks. omfatte en enkelt mærkevarewebsted, der er konfigureret til det amerikanske marked.
 - **En kanal med flere sprog, der har en enkelt lokaliseret webstedsoplevelse.** Dette scenario kan f.eks. omfatte en enkelt mærkevarewebsted, der er konfigureret til Canada med fransk og engelsk sprogunderstøttelse. I dette scenario har brugere, der vælger forskellige sprog, samme webstedsoplevelse, men som er oversat til hver brugers valgte sprog.
@@ -63,7 +63,7 @@ I følgende illustration vises et eksempel på en kanalkonfiguration i Commerce 
 
 ![Værdier for juridisk enhed, valuta og sprog til Adventure Works-onlinebutikken fremhævet i Commerce headquarters.](media/channel-mapping-3.png)
 
-Den ene onlinekanal kan knyttes til et enkelt e-handelswebsted i webstedsgenerator. Du kan finde oplysninger om, hvordan du opretter et nyt websted og knytter det til en kanal, under [Knytte en kanal til et websted i webstedsgeneratoren](#map-a-channel-to-a-site-in-site-builder) i dette emne.
+Den ene onlinekanal kan knyttes til et enkelt e-handelswebsted i webstedsgenerator. Du kan finde oplysninger om, hvordan du opretter et nyt websted og knytter det til en kanal, under [Knytte en kanal til et websted i webstedsgeneratoren](#map-a-channel-to-a-site-in-site-builder) i denne artikel.
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Kanal med flere sprog, der har en enkelt lokaliseret webstedsoplevelse
 
@@ -73,7 +73,7 @@ Begrænsningen i dette scenario er, at en enkelt kanal kun kan konfigureres med 
 
 Hvert sprog i en kanal kan konfigureres med sit eget domænenavn. Domænet `www.adventure-works.ca` kan f.eks. konfigureres til den engelske version i Canada, og `www.adventure-works-fr.ca`-domænet kan konfigureres til den franske version i Canada. Alternativt kan forskellige sprog i en kanal konfigureres i et enkelt domæne, og derefter kan der bruges en separat sti til hvert sprog. Domænet `www.adventure-works.ca` kan f.eks. konfigureres til den engelske version i Canada, og derefter kan stien til `www.adventure-works.ca/fr` bruges til den franske version i Canada. [Geografisk registrering](geo-detection-redirection.md) kan også aktiveres, så en bruger automatisk bliver omdirigeret til det rette websted baseret på brugerens opholdssted.
 
-Du kan finde flere oplysninger om, hvordan kunder kan skifte mellem sprog manuelt, i afsnittet [Tilføje og konfigurere webstedsvælgermodulet](#add-and-configure-the-site-picker-module) i dette emne. Du kan finde oplysninger om tilpasning af lokalisere sider og fragmenter i afsnittet [Administrere webstedsindhold , der har flere kanaler og sprog](#manage-site-content-that-has-multiple-channels-and-languages).
+Du kan finde flere oplysninger om, hvordan kunder kan skifte mellem sprog manuelt, i afsnittet [Tilføje og konfigurere webstedsvælgermodulet](#add-and-configure-the-site-picker-module) i denne artikel. Du kan finde oplysninger om tilpasning af lokalisere sider og fragmenter i afsnittet [Administrere webstedsindhold , der har flere kanaler og sprog](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Kanal med flere sprog, der har en separat webstedsoplevelse pr. sprog
 
@@ -87,7 +87,7 @@ Et brandet websted kan kræve flere onlinekanaler pr. websted for at understøtt
 
 I dette scenarie kan hvert sprog konfigureres med egne domænenavne. Domænet `www.adventure-works.com` kan f.eks. konfigureres til det amerikanske marked, og `www.adventure-works.de`-domænet kan konfigureres til det tyske marked. Alternativt kan hvert enkelt marked konfigureres til at bruge en separat sti. Domænet `www.adventure-works.com` kan f.eks. konfigureres til det amerikanske marked, og stien `www.adventure-works.com/de` kan bruges til det tyske marked. [Geografisk registrering](geo-detection-redirection.md) kan også aktiveres, så brugerne automatisk bliver omdirigeret til det rette websted baseret på deres geografiske område.
 
-Du vil måske også have, at dit websted indeholder en rulleliste, der giver brugerne mulighed for manuelt at skifte til et bestemt marked. Du kan finde flere oplysninger i afsnittet [Tilføje og konfigurere webstedsvælgermodulet](#add-and-configure-the-site-picker-module) i dette emne.
+Du vil måske også have, at dit websted indeholder en rulleliste, der giver brugerne mulighed for manuelt at skifte til et bestemt marked. Du kan finde flere oplysninger i afsnittet [Tilføje og konfigurere webstedsvælgermodulet](#add-and-configure-the-site-picker-module) i denne artikel.
 
 Oplysninger om, hvordan du konfigurerer flere kanaler på et enkelt websted, finder du i afsnittet [Konfigurere flere kanaler på et e-handelswebsted](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ I stedet for at oprette hver side og hvert fragment manuelt kan du eksportere hv
 
 Et websted, der har flere kanaler og/eller sprog, gemmer en entydig variant af hver side og et fragment for hver kombination af en kanal og et sprog. Denne funktionalitet gør det muligt for at sidevarianter at indeholde lokaliserede data, men giver dig også fleksibilitet til at ændre udseende og funktionsmåde for en side til en bestemt variant.
 
-Du kan finde oplysninger om, hvordan du kan arbejde med sidevarianter, under [Implementere sidevarianter for hvert sprog](#implement-page-variants-for-each-language) i dette emne.
+Du kan finde oplysninger om, hvordan du kan arbejde med sidevarianter, under [Implementere sidevarianter for hvert sprog](#implement-page-variants-for-each-language) i denne artikel.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Konfigurere flere kanaler på et e-handelswebsted
 

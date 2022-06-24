@@ -1,6 +1,6 @@
 ---
 title: Skift arbejdspulje på arbejde
-description: I dette emne forklares det, hvordan du kan bruge knappen Skift arbejdspulje for arbejdselementer til at ændre arbejdspuljen for eksisterende arbejde.
+description: Denne artikel forklarer, hvordan du kan bruge knappen Skift arbejdspulje for arbejdselementer til at ændre arbejdspuljen for eksisterende arbejde.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900616"
 ---
 # <a name="change-work-pool-on-work"></a>Skift arbejdspulje på arbejde
 
@@ -34,14 +34,14 @@ Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatoris
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Konfigurere funktionen Skift arbejdspulje på arbejde
 
-Hvis du vil bruge denne funktion, skal der være konfigureret nogle arbejdspuljer. Du kan også oprette arbejdsskabeloner, så de automatisk tildeler en pulje. Hvis du vil arbejde i det eksempelscenarie, der er angivet senere i dette emne, skal du konfigurere systemet som beskrevet i dette afsnit.
+Hvis du vil bruge denne funktion, skal der være konfigureret nogle arbejdspuljer. Du kan også oprette arbejdsskabeloner, så de automatisk tildeler en pulje. Hvis du vil arbejde i det eksempelscenarie, der er angivet senere i denne artikel, skal du konfigurere systemet som beskrevet i dette afsnit.
 
 ### <a name="set-up-work-pools"></a>Konfigurere arbejdspuljer
 
 Med arbejdspuljer kan du organisere arbejdselementer efter type. Hvis du vil arbejde med funktionen *Skift arbejdspulje på arbejde*, skal du have mindst to tilgængelige arbejdspuljer. Benyt følgende fremgangsmåde for at få vist og tilføje arbejdspuljer.
 
 1. Gå til **Lokationsstyring \> Opsætning \> Arbejde \> Arbejdspuljer**.
-1. Hvis du arbejder med demonstrationsdata fra **USMF**-firmaet og gerne vil arbejde dig gennem eksempelscenariet senere i dette emne, skal du tilføje to arbejdspulje, der skal have følgende indstillinger:
+1. Hvis du arbejder med demonstrationsdata fra **USMF**-firmaet og gerne vil arbejde dig gennem eksempelscenariet senere i denne artikel, skal du tilføje to arbejdspulje, der skal have følgende indstillinger:
 
     - Arbejdspulje 1:
 
@@ -57,7 +57,7 @@ Med arbejdspuljer kan du organisere arbejdselementer efter type. Hvis du vil arb
 
 ### <a name="set-up-work-templates"></a>Konfigurer arbejdsskabeloner
 
-For hver af dine arbejdsskabeloner kan du angive en standardarbejdspulje, som du har brug for. For hver relevant skabelon kan du tildele en arbejdspulje i kolonnen **Arbejdspulje-id**. I dette tilfælde arver alle de arbejdselementer, der genereres ved hjælp af en bestemt skabelon, automatisk den tildelte arbejdspulje. Hvis du arbejder med demonstrationsdataene fra **USMF**-firmaet og gerne vil arbejde dig gennem eksempelscenariet senere i dette emne, skal du følge disse trin.
+For hver af dine arbejdsskabeloner kan du angive en standardarbejdspulje, som du har brug for. For hver relevant skabelon kan du tildele en arbejdspulje i kolonnen **Arbejdspulje-id**. I dette tilfælde arver alle de arbejdselementer, der genereres ved hjælp af en bestemt skabelon, automatisk den tildelte arbejdspulje. Hvis du arbejder med demonstrationsdataene fra **USMF**-firmaet og gerne vil arbejde dig gennem eksempelscenariet senere i denne artikel, skal du følge disse trin.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Arbejde \> Arbejdsskabeloner**.
 1. Vælg **Rediger** i handlingsruden for at sætte siden i redigeringstilstand.
@@ -70,7 +70,7 @@ For hver af dine arbejdsskabeloner kan du angive en standardarbejdspulje, som du
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Dette scenarie viser, hvordan du kan ændre behandlingsstrømmen for et eksisterende arbejdselement ved at ændre dets arbejdspulje. Det bruger demodata fra **USMF**-firmaet og de indstillinger, der blev foreslået tidligere i dette emne.
+Dette scenarie viser, hvordan du kan ændre behandlingsstrømmen for et eksisterende arbejdselement ved at ændre dets arbejdspulje. Det bruger demodata fra **USMF**-firmaet og de indstillinger, der blev foreslået tidligere i denne artikel.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Oprette en salgsordre og frigive den til lagerstedet
 
