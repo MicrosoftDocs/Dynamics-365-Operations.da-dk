@@ -1,6 +1,6 @@
 ---
 title: Frigiv til lagerregel
-description: Dette emne indeholder oplysninger om funktionen Frigiv til lagerregel, der giver fleksibilitet under frigivelse til lagerstedet. Den tilføjer en konfigurationsindstilling, der bestemmer, om systemet tillader, at delvist reserverede ordrelinjer frigives.
+description: Denne artikel indeholder oplysninger om funktionen Frigiv til lagerregel, der giver fleksibilitet under frigivelse til lagerstedet. Den tilføjer en konfigurationsindstilling, der bestemmer, om systemet tillader, at delvist reserverede ordrelinjer frigives.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895461"
 ---
 # <a name="release-to-warehouse-rule"></a>Frigiv til lagerregel
 
@@ -78,7 +78,7 @@ Du kan også bruge disse scenarier som vejledning til funktionen, når du arbejd
 Dette scenarie viser, hvordan funktionen fungerer for lagersteder, der er angivet til **Kræv fuld reservation**.
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
-1. I forbindelse med lagersted _62_ skal du angive feltet **Krav til lagerreservation** til **Kræv fuld reservation** som beskrevet i afsnittet [Angiv Frigiv til lagerregel for hvert lagersted](#set-option-warehouse) tidligere i dette emne.
+1. I forbindelse med lagersted _62_ skal du angive feltet **Krav til lagerreservation** til **Kræv fuld reservation** som beskrevet i afsnittet [Angiv Frigiv til lagerregel for hvert lagersted](#set-option-warehouse) tidligere i denne artikel.
 1. Gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer**.
 1. Vælg **Ny** for at oprette en ny salgsordre.
 1. Angiv følgende værdier i dialogboksen **Opret salgsordre**:
@@ -112,7 +112,7 @@ Dette scenarie viser, hvordan funktionen fungerer for lagersteder, der er angive
 Dette scenarie viser, hvordan funktionen fungerer for lagersteder, der er angivet til **Tillad delvis frigivelse**.
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
-1. I forbindelse med lagersted _62_ skal du angive feltet **Krav til lagerreservation** til **Tillad delvis reservation** som beskrevet i afsnittet [Angiv Frigiv til lagerregel for hvert lagersted](#set-option-warehouse) tidligere i dette emne.
+1. I forbindelse med lagersted _62_ skal du angive feltet **Krav til lagerreservation** til **Tillad delvis reservation** som beskrevet i afsnittet [Angiv Frigiv til lagerregel for hvert lagersted](#set-option-warehouse) tidligere i denne artikel.
 1. Som det var tilfældet i det [forrige scenarie](#scenario1), skal du gå til **Salg og marketing \> Salgsordrer \> Alle salgsordrer** og oprette en salgsordre for kundekontoen _US-004_ fra lagerstedet _62_. Tilføj følgende to ordrelinjer:
 
     - **Linje 1:** Indstil feltet **Varenummer** til _A0001_, feltet **Antal** til _2_ og feltet **Enhed** til _Styk_.

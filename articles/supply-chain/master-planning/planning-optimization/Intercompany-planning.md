@@ -1,6 +1,6 @@
 ---
 title: Intern planlægning
-description: Dette emne beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850664"
 ---
 # <a name="intercompany-planning"></a>Intern planlægning
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468490"
 
 I nogle organisationer afhænger logistikdriften af andre juridiske enheder (firmaer) i organisationen. Denne drift håndteres ved hjælp af interne salg og indkøb, fordi hver juridiske enhed har en separat kontoplan.
 
-Dette emne beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 
-I dette emne anvendes følgende vigtige interne begreber:
+Denne artikel anvender følgende vigtige interne begreber:
 
 - **Upstream** – En relativ reference i en firma- eller forsyningskæde. Den angiver bevægelse i retning af råvareleverandøren.
 - **Downstream** – En relativ reference i en firma- eller forsyningskæde. Den angiver bevægelse i retning af kunden.

@@ -1,6 +1,6 @@
 ---
 title: Forudsætninger for en standardomkostningskonvertering
-description: Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering.
+description: Denne artikel indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering.
 author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa43c8e32c4af8fc7e3ad5f3eb457dbdae1d39e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9295269c9979fb693d6f2976d4960a799d88f5ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887539"
 ---
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forudsætninger for en standardomkostningskonvertering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering. 
+Denne artikel indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering. 
 
 Udfør følgende trin, før du kører en standardomkostningskonvertering:
 

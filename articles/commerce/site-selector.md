@@ -1,6 +1,6 @@
 ---
 title: Webstedsvælgermodul
-description: Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
+description: Denne artikel omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef7753658f878fdf76c6a6beb82ce54e9c12e212
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884597"
 ---
 # <a name="site-picker-module"></a>Webstedsvælgermodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
+Denne artikel omhandler modulet webstedsvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Når en virksomhed har forskellige websteder på tværs af markeder, områder og landestandarder, skal webstedsbrugere have en nem metode til at skifte mellem websteder og vælge deres foretrukne indkøbssted. For at tage højde for dette scenario kan brugere gennemse flere websteder ved at bruge modulet til valg af websted. En webstedsvælger anbefales også, når der er implementeret [geografisk registrering og omdirigering](geo-detection-redirection.md) til dit e-handelswebsted, så kunderne kan tilsidesætte den præference for websted, som de angiver ved hjælp af modulet [land/områdevælger](country-region-picker-module.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
-description: Dette emne fokuserer på opsætningen af et menupunkt på mobilenheden.
+description: Denne artikel fokuserer på opsætningen af et menupunkt på mobilenheden.
 author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 410a70294e5a417950ed5332ec5fdd7da321a31d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b59a78ef98215bec7610fe17ed56e6fc287004c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882309"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne fokuserer på opsætningen af et menupunkt på mobilenheden. Dette menupunkt bruges til registrering af modtagelsen af varer, der er bestilt via købsordrer. 
+Denne artikel fokuserer på opsætningen af et menupunkt på mobilenheden. Dette menupunkt bruges til registrering af modtagelsen af varer, der er bestilt via købsordrer. 
 
 Du kan bruge denne guide i USMF-demodatafirmaet. Denne procedure er beregnet til lagerchefen.
 

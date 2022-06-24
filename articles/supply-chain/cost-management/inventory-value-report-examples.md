@@ -1,6 +1,6 @@
 ---
 title: Eksempler og logik til rapport over lagerværdi
-description: Dette emne indeholder nogle eksempler på resultater, der vises i hver type lagerværdirapport. Lagerværdirapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb.
+description: Denne artikel indeholder nogle eksempler på resultater, der vises i hver type lagerværdirapport. Lagerværdirapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877647"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Eksempler og logik til rapport over lagerværdi
 
 [!include [banner](../includes/banner.md)]
 
-Lagerværdirapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb. Dette emne indeholder nogle eksempler på resultater, der vises i hver type lagerværdirapport.
+Lagerværdirapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb. Denne artikel indeholder nogle eksempler på resultater, der vises i hver type lagerværdirapport.
 
 Yderligere oplysninger om, hvordan du genererer og bruger de enkelte typer lagerværdirapporter, finder du i [Rapporter over lagerværdier](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Eksempeldata, der bruges i disse eksempler
 
-Eksemplerne i dette emne er baseret på de eksempeldata fra lagertransaktioner, der er beskrevet i dette afsnit.
+Eksemplerne i denne artikel er baseret på de eksempeldata fra lagertransaktioner, der er beskrevet i dette afsnit.
 
 ### <a name="storage-dimension-setup"></a>Konfiguration af lagringsdimension
 
@@ -70,9 +70,9 @@ Eksempelsystemet indeholder en konfiguration af en lagerværdirapport med følge
 
 ## <a name="inventory-value-report-example-1"></a>Eksempel 1 på lagerværdirapport
 
-Resultaterne vises i følgende tabel og illustrationer, når du bruger eksempeldata og rapportkonfiguration, der er beskrevet tidligere i dette emne.
+Resultaterne vises i følgende tabel og illustrationer, når du bruger eksempeldata og rapportkonfiguration, der er beskrevet tidligere i denne artikel.
 
-| Ressourcetype | Ressource | Websted | Reference | Lager: økonomisk antal | Lager: økonomisk beløb | Lager: bogført fysisk antal | Lager: bogført fysisk beløb | Lager: antal | Lager: beløb | Gennemsnitlig enhedskostpris |
+| Ressourcetype | Ressource | Sted | Reference | Lager: økonomisk antal | Lager: økonomisk beløb | Lager: bogført fysisk antal | Lager: bogført fysisk beløb | Lager: antal | Lager: beløb | Gennemsnitlig enhedskostpris |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Materiale | B0001 | 1 | Slutsaldo | 9.00 | 908.33 | 5.00 | 375.00 | 14,00 | 1,283.33 | 91.67 |
 | Materiale | B0001 | 2 | Slutsaldo | 10.00 | 2,000.00 | 0,00 | 0,00 | 10.00 | 2,000.00 | 200.00 |
@@ -91,7 +91,7 @@ I følgende illustration vises rapporten **Lagerværdirapportlager** til eksempe
 
 ## <a name="inventory-value-report-example-2"></a>Eksempel 2 på lagerværdirapport
 
-I nedenstående tabel og illustrationer vises resultaterne, når du bruger de eksempeldata, der er beskrevet tidligere i dette emne, men du ændrer værdien i feltet **Niveau** til *Posteringer* i rapportkonfigurationen, og du angiver feltet **Fra dato** til *15. marts*, når du kører rapporten.
+I nedenstående tabel og illustrationer vises resultaterne, når du bruger de eksempeldata, der er beskrevet tidligere i denne artikel, men du ændrer værdien i feltet **Niveau** til *Posteringer* i rapportkonfigurationen, og du angiver feltet **Fra dato** til *15. marts*, når du kører rapporten.
 
 | Ressourcetype | Ressource | Websted | Dato | Tal | Reference | Lager: økonomisk antal | Lager: økonomisk beløb | Lager: bogført fysisk antal | Lager: bogført fysisk beløb | Lager: antal | Lager: beløb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Følgende undersektioner viser de lagerværdirapporter, der genereres, efter at 
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Eksempel 3, når niveauet Totaler bruges
 
-Resultaterne vises i følgende tabel, når du bruger eksempeldata og rapportkonfiguration, der er beskrevet tidligere i dette emne. (I denne rapportkonfiguration er feltet **Niveau** angivet til *Totaler*).
+Resultaterne vises i følgende tabel, når du bruger eksempeldata og rapportkonfiguration, der er beskrevet tidligere i denne artikel. (I denne rapportkonfiguration er feltet **Niveau** angivet til *Totaler*).
 
 | Ressourcetype | Ressource | Websted | Reference | Lager: økonomisk antal | Lager: økonomisk beløb | Lager: bogført fysisk antal | Lager: bogført fysisk beløb | Lager: antal | Lager: beløb | Gennemsnitlig enhedskostpris |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Resultaterne vises i følgende tabel, når du bruger eksempeldata og rapportkonf
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Eksempel 3, når niveauet Transaktioner bruges
 
-Følgende tabel viser resultaterne, når du bruger de eksempeldata, der er beskrevet tidligere i dette emne, men du ændrer værdien i feltet **Niveau** til *Transaktioner* i rapportkonfigurationen.
+Følgende tabel viser resultaterne, når du bruger de eksempeldata, der er beskrevet tidligere i denne artikel, men du ændrer værdien i feltet **Niveau** til *Transaktioner* i rapportkonfigurationen.
 
 | Ressourcetype | Ressource | Websted | Dato | Tal | Reference | Lager: økonomisk antal | Lager: økonomisk beløb | Lager: bogført fysisk antal | Lager: bogført fysisk beløb | Lager: antal | Lager: beløb |
 |---|---|---|---|---|---|---|---|---|---|---|---|

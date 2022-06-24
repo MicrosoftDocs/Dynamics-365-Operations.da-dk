@@ -1,6 +1,6 @@
 ---
 title: Oversigt over regnskabsintegration for Commerce-kanaler
-description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 00c68155088ff2aabbe2fe0c4f431b665aebcd0a
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ea1de0791a0eaffa2a8b1ac57143bdfd753f855b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884838"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce. 
+Denne artikel indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce. 
 
 Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af salg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen:
 

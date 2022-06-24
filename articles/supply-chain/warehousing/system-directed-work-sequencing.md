@@ -1,6 +1,6 @@
 ---
 title: Systembaseret arbejdsrækkefølge
-description: Dette emne giver oplysninger om systembaseret arbejdsrækkefølge. Denne funktionalitet gør det muligt at sortere og filtrere de arbejdsordrer, som systemet fremsender til brugere til afvikling. Det er nyttigt i situationer, hvor der kræves yderligere kriterier for at drive plukprocessen på lagerstedet.
+description: Denne artikel giver oplysninger om systembaseret arbejdsrækkefølge. Denne funktionalitet gør det muligt at sortere og filtrere de arbejdsordrer, som systemet fremsender til brugere til afvikling. Det er nyttigt i situationer, hvor der kræves yderligere kriterier for at drive plukprocessen på lagerstedet.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849120"
 ---
 # <a name="system-directed-work-sequencing"></a>Systembaseret arbejdsrækkefølge
 
@@ -44,7 +44,7 @@ Før du kan bruge funktionen Systembaseret arbejdsrækkefølge, skal den være a
 
 ### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises i dette emne, skal du arbejde på et system, hvor standarddemodata er installeret. Derudover skal du vælge den juridiske enhed **USMF**. I scenariet bruges lagersted *51* fra demodata.
+Hvis du vil arbejde gennem scenariet ved hjælp af de værdier, der vises i denne artikel, skal du arbejde på et system, hvor standarddemodata er installeret. Derudover skal du vælge den juridiske enhed **USMF**. I scenariet bruges lagersted *51* fra demodata.
 
 > [!IMPORTANT]
 > Før du frigiver ordrerne til lageret, skal du sørge for, at pluklokationerne har tilstrækkelig lagerbeholdning af alle varerne på ordrerne.

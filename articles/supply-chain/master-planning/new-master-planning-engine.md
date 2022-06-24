@@ -1,6 +1,6 @@
 ---
 title: Migrering til planlægningsoptimering for varedisponering
-description: Dette emne giver oplysninger om det nye varedisponeringsprogram, Planlægningsoptimering, og om migrering fra det eksisterende program.
+description: Denne artikel giver oplysninger om det nye varedisponeringsprogram, Planlægningsoptimering, og om migrering fra det eksisterende program.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846092"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering til planlægningsoptimering for varedisponering
 
 [!include [banner](../includes/banner.md)]
 
-Det indbyggede varedisponeringsprogram er planlagt til at blive forældet (udfaset, frarådes). Det erstattes af tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management. Dette emne giver oplysninger om virkningen af nye og eksisterende installationer. Det indeholder oplysninger om nødvendige handlinger.
+Det indbyggede varedisponeringsprogram er planlagt til at blive forældet (udfaset, frarådes). Det erstattes af tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management. Denne artikel giver oplysninger om virkningen af nye og eksisterende installationer. Det indeholder oplysninger om nødvendige handlinger.
 
 Planlægningsoptimering giver dig mulighed for at beregne varedisponering udenfor Supply Chain Management og dens Azure SQL-database. De fordele, der er tilknyttet funktionen Planlægningsoptimering, omfatter forbedret ydeevne og minimeret påvirkning af SQL-databasen under kørsel af varedisponeringen. Da hurtige planlægningskørsler kan udføres selv i kontortiden, kan planlæggerne reagere øjeblikkeligt på ændringer i behov eller parametre.
 
@@ -63,7 +63,7 @@ I øjeblikket er undtagelser fra migrering til Planlægningsoptimering kun relev
 
 Når de påkrævede funktioner bliver tilgængelige, vil Microsoft give en frist, indtil undtagelsen udløber. Miljøadministratoren vil blive informeret, når de påkrævede funktioner er blevet tilgængelige, og fristen er påbegyndt.
 
-Følgende rutediagram opsummerer oplysningerne i dette emne, så du hurtigt kan finde ud af, om du skal anmode om en undtagelse. Hvis du har brug for at anmode om en undtagelse, skal du udfylde og sende [spørgeskemaet til migrering og undtagelse for planlægningsoptimering](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen er ansvarlig for at evaluere og godkende hver enkelt anmodning om undtagelser, og derfor skal du sende din anmodning direkte til produktgruppen ved hjælp af det link, der er angivet, og ikke oprette en supportanmodning til den. Hvis din anmodning afvises, skal du ikke oprette en supportanmodning, da Microsoft Support ikke kan reevaluere eller tildele undtagelser.
+Følgende rutediagram opsummerer oplysningerne i denne artikel, så du hurtigt kan finde ud af, om du skal anmode om en undtagelse. Hvis du har brug for at anmode om en undtagelse, skal du udfylde og sende [spørgeskemaet til migrering og undtagelse for planlægningsoptimering](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen er ansvarlig for at evaluere og godkende hver enkelt anmodning om undtagelser, og derfor skal du sende din anmodning direkte til produktgruppen ved hjælp af det link, der er angivet, og ikke oprette en supportanmodning til den. Hvis din anmodning afvises, skal du ikke oprette en supportanmodning, da Microsoft Support ikke kan reevaluere eller tildele undtagelser.
 
 ![Undtagelsesrutediagram.](media/exception-diagram.png "Undtagelsesrutediagram")
 

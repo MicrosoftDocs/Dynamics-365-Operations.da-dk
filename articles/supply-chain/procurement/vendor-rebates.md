@@ -1,6 +1,6 @@
 ---
 title: Kreditorrabatter
-description: Dette emne indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
+description: Denne artikel indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890793"
 ---
 # <a name="vendor-rebates"></a>Kreditorrabatter
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672956"
 
 Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
 
-Dette emne indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Oversigten omfatter følgende opgaver:
+Denne artikel indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Oversigten omfatter følgende opgaver:
 
 - Gennemgå detaljer om en rabataftale
 - Identificere ordrer, der er berettiget til rabatter, og oprette rabatkrav.
@@ -34,7 +34,7 @@ Dette emne indeholder en oversigt over de mest almindelige opgaver, du vil udfø
 
 ## <a name="audience-and-purpose"></a>Målgruppe og formål
 
-Oplysningerne i dette emne er beregnet til forretningsbeslutningstagere i større virksomheder, f.eks. i stillinger som indkøbschef, regnskabsdirektør (CFO) og regnskabschef, der har følgende ansvarsområder:
+Oplysningerne i denne artikel er beregnet til forretningsbeslutningstagere i større virksomheder, f.eks. i stillinger som indkøbschef, regnskabsdirektør (CFO) og regnskabschef, der har følgende ansvarsområder:
 
 - Forhandle leverandørpris, rabat og rabataftaler.
 - Administrere personale, der behandler rabatkrav og opkræver betalinger.

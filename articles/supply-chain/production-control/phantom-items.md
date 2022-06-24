@@ -1,6 +1,6 @@
 ---
 title: Fantomvarer
-description: Dette emne beskriver, hvordan fantomlinjetypen kan bruges til linjerne i en stykliste og en formel i Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan fantomlinjetypen kan bruges til linjerne i en stykliste og en formel i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893317"
 ---
 # <a name="phantom-items"></a>Fantomvarer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, i detaljer, hvordan fantomlinjetypen kan bruges til linjerne i en stykliste og en formel.
+Denne artikel beskriver, i detaljer, hvordan fantomlinjetypen kan bruges til linjerne i en stykliste og en formel.
 
 I figur 1 er (a) styklisten for produktet H og delene F og G, og (b) er rutearket for produkt H og del F.
 

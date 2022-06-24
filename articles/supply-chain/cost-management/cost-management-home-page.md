@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891141"
 ---
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
@@ -53,7 +53,7 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 
 #### <a name="white-paper"></a>Hvidbog
 
-[Styklistekalkulation ved hjælp af efterkalkulationsark](https://www.microsoft.com/download/details.aspx?id=101937) beskriver, hvordan du konfigurerer et efterkalkulationsark, der omfatter materiale og produktion, og hvordan konfigurationen påvirker resultaterne af styklistekalkulation. Emnerne illustreres gennem konkrete scenarier og data, der viser effekten af de forskellige indstillinger og konfigurationer.
+[Styklistekalkulation ved hjælp af efterkalkulationsark](https://www.microsoft.com/download/details.aspx?id=101937) beskriver, hvordan du konfigurerer et efterkalkulationsark, der omfatter materiale og produktion, og hvordan konfigurationen påvirker resultaterne af styklistekalkulation. Artiklerne illustreres gennem konkrete scenarier og data, der viser effekten af de forskellige indstillinger og konfigurationer.
 
 #### <a name="blogs"></a>Blogs
 

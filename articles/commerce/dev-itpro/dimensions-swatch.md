@@ -1,6 +1,6 @@
 ---
 title: Konfigurere produktdimensionsværdier, der skal vises som prøver
-description: I dette emne beskrives, hvordan du konfigurerer produktdimensionsværdier som prøver i Microsoft Dynamics 365 Commerce Headquarters.
+description: Denne artikel beskriver, hvordan du konfigurerer produktdimensionsværdier som prøver i Microsoft Dynamics 365 Commerce Headquarters.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892646"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurere produktdimensionsværdier, der skal vises som prøver
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du konfigurerer produktdimensionsværdier som prøver i Microsoft Dynamics 365 Commerce Headquarters. Du kan finde oplysninger om produktdimensioner under [Produktdimensioner](../../supply-chain/pim/product-dimensions.md).
+Denne artikel beskriver, hvordan du konfigurerer produktdimensionsværdier som prøver i Microsoft Dynamics 365 Commerce Headquarters. Du kan finde oplysninger om produktdimensioner under [Produktdimensioner](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce understøtter brugen af størrelses-, typografi- og farvedimensioner til at repræsentere produktvarianter. Produktdimensioner har fulde navne, der vises på sider med produktoplysninger (PDP'er), så produktvarianter kan vælges. Eksempler på disse fulde navne omfatter "Lille", "Mellem" og "Stor" for størrelser og "Sort" og "Brun" for farver. Men hvis et produkt understøtter mange variationer, skal der foretages flere valg for at få vist billedet for de enkelte produktvarianter. Det kan derfor være langsomt og kedeligt for kunderne at gennemse og vælge produktvarianter.
 
@@ -50,7 +50,7 @@ Hvis du vil aktivere funktionen til visning af dimensionerne som prøver i Comme
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Konfigurere dimensionsværdier i Commerce Headquarters
 
-Funktionen til visning af dimensionerne som prøver understøttes for størrelses-, typografi- og farvedimensioner. Værdier for hexkode- og URL-adresse til billede for de relevante dimensioner kan angives i Commerce-hovedkvarteret. Hvis der ikke er angivet en værdi for hexkode og URL-adresse til billede for en dimension, viser systemet som standard teksten til dimensionens fulde navn.
+Funktionen til visning af dimensionerne som prøver understøttes for størrelses-, typografi- og farvedimensioner. Værdier for hexkode- og URL-adresse til billede for de relevante dimensioner kan angives i Commerce headquarters. Hvis der ikke er angivet en værdi for hexkode og URL-adresse til billede for en dimension, viser systemet som standard teksten til dimensionens fulde navn.
 
 Konfigurationen kan udføres på et af følgende niveauer:
 
@@ -71,7 +71,7 @@ Konfigurationen kan udføres på et af følgende niveauer:
 
 ## <a name="configure-dimension-values-by-using-hex-codes"></a>Konfigurere dimensionsværdier ved hjælp af hexkoder
 
-For de fleste farvedimensioner skal der angives en farveværdi for hexkoden på dimensionssider i Commerce-hovedkvarteret. Farven sort skal for eksempel have hexkodeværdien **#00000**. Når Commerce gengiver en webstedsside, repræsenteres hexkoden af en farveprøve.
+For de fleste farvedimensioner skal der angives en farveværdi for hexkoden på dimensionssider i Commerce headquarters. Farven sort skal for eksempel have hexkodeværdien **#00000**. Når Commerce gengiver en webstedsside, repræsenteres hexkoden af en farveprøve.
 
 I følgende illustration vises et eksempel, hvor farvedimensioner konfigureres ved hjælp af hexkodeværdier.
 
@@ -107,13 +107,13 @@ Når du definerer en hexkode eller en URL-adresse til et billede for en dimensio
 
 Hvis værdierne for farvedimensionen for eksempel er "blå", "blåt tæppe", "blå vask" og "mørkeblå", knyttes de enkelte værdier til en forskellig hexkode eller URL-adresse til billeder. Derfor vises de enkelte værdier som en forskellige farve på PDP'er og produktkort for de relevante produkter. Men hvis du knytter alle disse farvedimensionsværdier til **RefinerGroup**-værdien **Blå**, genererer en søgning efter "blå" produkter søgeresultater på listesiden for produkter, der har dimensionsfarveværdierne "blå", "blåt tæppe", "blå vask" og "mørkeblå".
 
-Eksemplet i følgende illustration viser forholdet mellem egenskaberne **Farve** og **RefinerGroup** i Commerce-hovedkvarteret.
+Eksemplet i følgende illustration viser forholdet mellem egenskaberne **Farve** og **RefinerGroup** i Commerce headquarters.
 
 ![Eksempel på administration af afgrænsningsgruppe.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Administrere billeder i Commerce-webstedsgeneratoren
 
-Hvis der bruges URL-adresser til billeder til dimensionsværdier, skal de tilsvarende billeder overføres til Commerce-webstedsgeneratoren. Placeringen af de enkelte billeder skal svare til det filnavn og den mappesti, der er defineret for billedet i Commerce-hovedkvarteret. Billedfiler skal overføres til de relevante kategoriplaceringer i webstedsgeneratoren. Farvebilleder skal for eksempel overføres til kategorimappen **Farve**. Du kan finde flere oplysninger om, hvordan du overfører billeder til webstedsgeneratoren, under [Overføre billeder](../dam-upload-images.md).
+Hvis der bruges URL-adresser til billeder til dimensionsværdier, skal de tilsvarende billeder overføres til Commerce-webstedsgeneratoren. Placeringen af de enkelte billeder skal svare til det filnavn og den mappesti, der er defineret for billedet i Commerce headquarters. Billedfiler skal overføres til de relevante kategoriplaceringer i webstedsgeneratoren. Farvebilleder skal for eksempel overføres til kategorimappen **Farve**. Du kan finde flere oplysninger om, hvordan du overfører billeder til webstedsgeneratoren, under [Overføre billeder](../dam-upload-images.md).
 
 I følgende illustration vises et eksempel, hvor dialogboksen **Overfør filer** bruges til at overføre billeder til mediebiblioteket til webstedsgeneratoren. Den fremhæver kategorierne **Størrelse**, **Farve** og **Typografi**, der kan vælges.
 
@@ -121,7 +121,7 @@ I følgende illustration vises et eksempel, hvor dialogboksen **Overfør filer**
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Aktivere visning af prøve på webstedssider for e-handel
 
-Før prøver kan vises på webstedssider til e-handel, der kræver valg af dimension, for eksempel PDP'er og listesider, skal du konfigurere indstillinger for dimensionswebsteder i Commerce-hovedkvarteret. Du kan finde flere oplysninger under [Anvende webstedsindstillinger for dimensioner](../dimension-settings.md).
+Før prøver kan vises på webstedssider til e-handel, der kræver valg af dimension, for eksempel PDP'er og listesider, skal du konfigurere indstillinger for dimensionswebsteder i Commerce headquarters. Du kan finde flere oplysninger under [Anvende webstedsindstillinger for dimensioner](../dimension-settings.md).
 
 Derudover skal du aktivere egenskaben **Medtag produktattributter i søgeresultater** for søgeresultatmoduler. Hvis webstedet bruger brugerdefinerede kategorisider, skal du opdatere de søgeresultatmoduler, der bruges på disse sider, så egenskaben **Medtag produktattributter i søgeresultater** aktiveres. Du kan få flere oplysninger under [Modul til søgeresultater](../search-result-module.md).
 

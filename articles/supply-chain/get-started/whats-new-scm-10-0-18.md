@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.18.
+description: Denne artikel beskriver funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c68b8ed1703f2cd49d47fad73485e9e4093aa82b902a484fb79bad4dd2dcbfb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 484d791d7386599acca3579ab3a59fd6a17d155e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875446"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne vises funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Denne version har et build-nummer på 10.0.793 og er tilgængelig som følger:
+I denne artikel findes en liste over de funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Denne version har et build-nummer på 10.0.793 og er tilgængelig som følger:
 
 - **Forhåndsversion:** marts 2021
 - **Generel tilgængelighed af version (selvopdatering):** april 2021
@@ -57,7 +57,7 @@ De fleste af disse funktioner skal aktiveres ved hjælp af [Funktionsstyring](..
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 
-Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. De er ikke nødvendigvis relateret til de nye funktioner, der er tilføjet i denne version, som vist i forrige afsnit, men de kan måske hjælpe dig med at få mere ud af eksisterende funktioner.
+Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler. De er ikke nødvendigvis relateret til de nye funktioner, der er tilføjet i denne version, som vist i forrige afsnit, men de kan måske hjælpe dig med at få mere ud af eksisterende funktioner.
 
 - [Tilføjelsesprogram for indsigt i lagerbeholdning](../inventory/inventory-visibility.md)
 - [Modulet Landingsomkostninger](../landed-cost/landed-cost-overview.md)
@@ -66,9 +66,9 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-emner. D
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformopdateringer til Finance and Operations-apps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.18 indeholder platformopdateringer. Du kan få mere vide i [Platformopdateringer til version 10.0.18 af Finance and Operations-apps (maj 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.18 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.18 af programmer til finans og drift (maj 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -82,12 +82,12 @@ Se [Dynamics 365: 2021-frigivelsesplan bølge 1](/dynamics365-release-plan/2021w
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

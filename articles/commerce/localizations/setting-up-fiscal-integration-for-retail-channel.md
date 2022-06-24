@@ -1,6 +1,6 @@
 ---
 title: Konfigurere regnskabsintegration for Commerce-kanaler
-description: Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
+description: Denne artikel indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: EvgenyPopovMBS
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 13bdbcc2d52846b8b5d04773c986cd3a4a59e7b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889393"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Dette emne indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler. Du kan finde flere oplysninger om regnskabsintegrationen i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md).
+Denne artikel indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler. Du kan finde flere oplysninger om regnskabsintegrationen i [Oversigt over regnskabsintegration for Commerce-kanaler](fiscal-integration-for-retail-channel.md).
 
-## <a name="enable-features-in-commerce-headquarters"></a>Aktivere funktionen i Commerce-hovedkontoret
+## <a name="enable-features-in-commerce-headquarters"></a>Aktivere funktionen i Commerce Headquarters
 
 Hvis du vil aktivere funktioner, der er relateret til funktioner til regnskabsintegration for handelskanaler, skal du følge disse trin.
 
-1. I Commerce-hovedkvarteret skal du gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
+1. I Commerce headquarters skal du gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
 1. Find og aktiver følgende funktioner:
 
     - **Direkte regnskabsintegration fra kasseapparater** – Denne funktion udvider struktur for regnskabsintegration ved at tilføje funktionen til oprettelse af regnskabsforbindelser, der vil blive kørt i POS. Denne type connector kommunikerer med en finansiel enhed eller tjeneste, der indeholder en API (HTTP Application Programming Interface), og kræver ikke en dedikeret fysisk maskine i butikken. Denne funktionalitet giver f.eks. mulighed for skattemæssig integration for mobile enheder uden at kræve delt hardwarestation.
@@ -68,7 +68,7 @@ En regnskabsdokumentudbyder er ansvarlig for at generere regnskabsdokumenter, de
 
 Følg disse trin for at uploade konfigurationer af regnskabsdokumentudbydere.
 
-1. Gå i Commerce-hovedkontoret til siden **Udbydere af regnskabsdokumenter** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**).
+1. Gå i Commerce Headquarters til siden **Udbydere af regnskabsdokumenter** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**).
 1. Upload en XML-konfiguration for hver enhed eller tjeneste, du vil bruge.
 
 > [!TIP]
@@ -83,7 +83,7 @@ En regnskabsconnector er ansvarlig for kommunikationen med en regnskabsenhed ell
 
 Følg disse trin for at uploade konfigurationer af regnskabsconnectorer.
 
-1. Gå i Commerce-hovedkontoret til siden **Regnskabsconnectorer** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorer**).
+1. Gå i Commerce Headquarters til siden **Regnskabsconnectorer** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorer**).
 1. Upload en XML-konfiguration for hver enhed eller tjeneste, du vil bruge til regnskabsintegration.
 
 > [!TIP]
@@ -95,7 +95,7 @@ Du kan finde eksempler på konfigurationer af regnskabsconnectorer og regnskabsd
 
 Opret funktionelle connectorprofiler ved at følge disse trin.
 
-1. Gå i Commerce-hovedkontoret til siden **Funktionelle profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Funktionelle profiler for connector**).
+1. Gå i Commerce Headquarters til siden **Funktionelle profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Funktionelle profiler for connector**).
 1. For hver kombination af regnskabsconnector og regnskabsdokumentudbyder, der er relateret til denne regnskabsconnector, skal du oprette en funktionel connectorprofil ved at følge disse trin:
 
     1. Vælg et connectornavn.
@@ -120,7 +120,7 @@ Hvis du vil gendanne de standardparametre, der er defineret i konfigurationen af
 
 Opret tekniske connectorprofiler ved at følge disse trin.
 
-1. Gå i Commerce-hovedkontoret til siden **Tekniske profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Tekniske profiler for connector**).
+1. Gå i Commerce Headquarters til siden **Tekniske profiler for connector** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Tekniske profiler for connector**).
 1. Opret en teknisk profil for connector til hver regnskabsconnector ved at følge disse trin:
 
     1. Vælg et connectornavn.
@@ -161,7 +161,7 @@ En regnskabsregistreringsproces defineres af rækkefølgen af trinnene i registr
 
 Følg disse trin for at oprette en regnskabsregistreringsproces.
 
-1. Gå i Commerce-hovedkontoret til siden **Regnskabsregistreringsproces** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsregistreringsprocesser**).
+1. Gå i Commerce Headquarters til siden **Regnskabsregistreringsproces** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsregistreringsprocesser**).
 1. Opret en ny post for hver entydig regnskabsregistreringsproces.
 1. Føj registreringstrin til processen ved at følge disse trin:
 
@@ -173,7 +173,7 @@ Følg disse trin for at oprette en regnskabsregistreringsproces.
 
 Tildel enheder i regnskabsregistreringsprocessen til POS-profiler ved at følge disse trin.
 
-1. Gå i Commerce-hovedkontoret til siden **POS-funktionalitetsprofiler** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**). 
+1. Gå i Commerce Headquarters til siden **POS-funktionalitetsprofiler** (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**). 
 1. Tildel regnskabsregistreringsprocessen til POS-funktionalitetsprofilen.
 1. Vælg **Rediger**, og vælg en proces under fanen **Proces for regnskabsregistrering** i feltet **Procesnummer**.
 1. Under fanen **Regnskabsservices** skal du vælge connector-tekniske profiler med connectorplaceringen **Kasseapparat**.
@@ -199,7 +199,7 @@ Du kan vælge kasseapparater, hvor regnskabsregistrering ikke er tilladt, hvis d
 
 Følg disse trin for at konfigurere kasseapparater med begrænsninger for regnskabsregistrering.
 
-1. Gå i Commerce-hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**.
+1. Gå i Commerce Headquarters til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**.
 1. Vælg den ønskede proces.
 1. Vælg fanen **POS-kasseapparater med begrænsninger i regnskabsprocessen**.
 1. Tilføj kasseapparater med begrænsninger i regnskabsprocessen efter behov.
@@ -214,7 +214,7 @@ Det anbefales, at du validerer processen til regnskabsregistrering i følgende t
 
 Følg disse trin for at validere en regnskabsregistreringsproces.
 
-1. Gå i Commerce-hovedkontoret til siden **Regnskabsregistreringsproces** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsregistreringsprocesser**).
+1. Gå i Commerce Headquarters til siden **Regnskabsregistreringsproces** (**Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsregistreringsprocesser**).
 1. Vælg **Valider** for at validere processen til regnskabsregistrering.
 1. På siden **Distributionstidsplan** skal du køre jobbene **1070** og **1090** for at overføre data til kanaldatabasen.
 

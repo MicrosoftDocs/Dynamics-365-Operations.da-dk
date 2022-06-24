@@ -1,6 +1,6 @@
 ---
 title: Funktioner i styklistedesigneren
-description: I dette emne beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister.
+description: Denne artikel beskriver, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844201"
 ---
 # <a name="bom-designer-functionality"></a>Funktioner i styklistedesigneren
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet.
+Denne artikel beskriver, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet.
 
 Når du åbner siden **Styklistedesigner** fra siden **Frigivne produkter**, vises hierarkiet over styklister, der er aktive og godkendte for den valgte vare, standardordrewebstedet for varen og den faktiske dato.  
 

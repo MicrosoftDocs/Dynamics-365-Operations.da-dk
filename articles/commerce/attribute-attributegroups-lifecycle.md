@@ -1,6 +1,6 @@
 ---
 title: Styring af attributter og attributgrupper
-description: I dette emne beskrives, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter.
+description: Denne artikel beskriver, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876658"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Styring af attributter og attributgrupper
 
@@ -85,7 +85,7 @@ Attributterne baseres på *attributtyper*. Attributtypen identificerer den type 
 
 I *Attributmetadata* kan du vælge indstillinger for at angive, hvordan attributterne for hvert produkt skal fungere. Du kan f.eks. angive, om attributter er påkrævede, om de kan bruges til søgninger, og om de kan bruges som filter.
 
-For produkter kan metadataattributindstillingerne tilsidesættes på kanalniveau. Denne egenskab beskrives senere i dette emne.
+For produkter kan metadataattributindstillingerne tilsidesættes på kanalniveau. Denne egenskab beskrives senere i denne artikel.
 
 Som du har muligvis bemærket, indeholder siden **Attributter** indstillinger, der vedrører attributmetadata. Under **Attributmetadata for POS** påvirker indstillingen **Kan redigeres** attributværdiernes funktionsmåde i POS eller den måde, som systemet håndterer disse attributværdier på. Kun attributter, hvor du kan indstille **Kan redigeres** til **Ja**, kan bruges til forbedring eller filtrering af produkter i POS.
 

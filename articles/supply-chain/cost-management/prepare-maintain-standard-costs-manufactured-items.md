@@ -1,6 +1,6 @@
 ---
 title: Forberede at vedligeholde standardomkostninger for producerede varer
-description: I dette emne beskrives trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer.
+description: Denne artikel beskriver trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886009"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede at vedligeholde standardomkostninger for producerede varer
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer. Trinnene for producerede varer varierer en smule fra trinnene for købte varer.
+Denne artikel beskriver trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer. Trinnene for producerede varer varierer en smule fra trinnene for købte varer.
 
 Regler, der er knyttet til producerede varer, kan påvirke omkostningsberegningerne for de overordnede producerede varer. Benyt følgende fremgangsmåde, hvis du vil forberede vedligeholdelse af omkostninger for producerede varer.
 
@@ -63,7 +63,7 @@ Regler, der er knyttet til producerede varer, kan påvirke omkostningsberegninge
 
 Hvis du vil bruge ruteoplysninger i forbindelse med efterkalkulation, er der brug for flere trin i forberedelsen. Omkostningskategorier, der er knyttet til ruteoperationer, skal f.eks. være korrekte og fuldførte.
 
-## <a name="related-topics"></a>Relaterede emner
+## <a name="related-articles"></a>Relaterede artikler
 
 [Amortisere konstante omkostninger for en produceret vare](amortize-constant-costs-manufactured-item.md)
 

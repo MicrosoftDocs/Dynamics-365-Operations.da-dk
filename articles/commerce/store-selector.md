@@ -1,6 +1,6 @@
 ---
-title: Modulet Butiksvælger
-description: Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
+title: Butiksvælgermodul
+description: Denne artikel omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881677"
 ---
 # <a name="store-selector-module"></a>Butiksvælgermodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emne omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
+Denne artikel omhandler modulet Butiksvælger og beskriver, hvordan du kan føje det til sider på websteder i Microsoft Dynamics 365 Commerce.
 
 Kunder kan bruge butiksvælgermodulet til at hente et produkt i en valgt butik efter et onlineindkøb. I Commerce version 10.0.13 indeholder butiksvælgermodulet også yderligere egenskaber, der kan vise en **Find en butik**-side, der viser butikker i nærheden.
 
@@ -39,13 +39,13 @@ I butiksvælgermodulet kan brugerne angive en placering (by, stat, adresse osv.)
 - Et butiksvælgermodul kan bruges på en side med indkøbsvogn til at vælge en butik til afhentning.
 - Et butiksvælgermodul kan bruges på en enkeltstående side, der viser alle tilgængelige butikker.
 
-## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurere opfyldelsesgruppe i Commerce-hovedkontoret
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurere opfyldelsesgruppe i Commerce Headquarters
 
-For at butiksvælgeren kan vise tilgængelige butikker, skal opfyldelsesgruppen være konfigureret i Commerce-hovedkontoret. Du kan finde flere oplysninger under [Konfigurere opfyldelsesgrupper](customer-orders-overview.md#set-up-fulfillment-groups).
+For at butiksvælgeren kan vise tilgængelige butikker, skal opfyldelsesgruppen være konfigureret i Commerce Headquarters. Du kan finde flere oplysninger under [Konfigurere opfyldelsesgrupper](customer-orders-overview.md#set-up-fulfillment-groups).
 
 Derudover skal butikslokationens længdegrad og breddegrad defineres i hovedkontoret for hver butik i opfyldelsesgruppen.
 
-Følg disse trin for at angive længde- og breddegrad for butiksadressen i Commerce-hovedkontoret.
+Følg disse trin for at angive længde- og breddegrad for butiksadressen i Commerce Headquarters.
 
 1. Gå til **Lagerstyring \> Opsætning \> Lageropdeling**.
 1. Vælg lagerstedslokation i venstre rude.
@@ -72,7 +72,7 @@ Nogle butikker i en opfyldelsesgruppe er muligvis ikke gyldige afhentningssteder
 
 ## <a name="bing-maps-integration"></a>Bing Kort-integration
 
-Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce-hovedkontoret. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
+Butiksvælgermodulet er integreret med [Bing Kort REST-API'er (Application Programming Interfaces)](/bingmaps/rest-services/) der skal bruge funktionerne for Bings geokodnings- og automatiske forslagsfunktioner (Autosuggest). Der kræves en Bing Kort-API-nøgle, og den skal føjes til siden med delte parametre for Commerce Headquarters. Geokodnings-API'en bruges til at konvertere en placering til værdier for breddegrad og længdegrad. Integrationen med Autosuggest-API'en bruges til at vise søgeforslag, når brugerne angiver placeringer i søgefeltet.
 
 For Autosuggest-REST-API'en skal du sikre, at følgende URL-adresser er tilladte pr. webstedets sikkerhedspolitik for indhold (CSP). Denne opsætning udføres i Commerce-webstedsgeneratoren ved at tilføje tilladte URL-adresser i forskellige CSP-direktiver for webstedet (f.eks. **img-src**). Du kan finde flere oplysninger under [Sikkerhedspolitik for indhold](manage-csp.md). 
 
@@ -132,7 +132,7 @@ For **Afhent i butik**-tilstand kan modulet kun bruges på PDP'er og kortsider. 
 - Yderligere oplysninger om, hvordan du føjer et butiksvælgermodul til et købefeltmodul, finder du under [Købefeltmodul](add-buy-box.md). 
 - Oplysninger om, hvordan du føjer et butiksvælgermodul til et indkøbsvognmodul, finder du under [Indkøbsvognmodul](add-cart-module.md)
 
-Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker for en side med butiksadresser som i den illustration, der vises tidligere i dette emne, skal du følge disse trin.
+Hvis du vil konfigurere butiksvælgermodulet til at vise tilgængelige butikker for en side med butiksadresser som i den illustration, der vises tidligere i denne artikel, skal du følge disse trin.
 
 1. Gå til **Skabeloner**, og vælg **Ny** for at oprette en ny skabelon.
 1. I dialogboksen **Ny skabelon** skal du under **Skabelonnavn** angive **Marketingskabelon** og derefter klikke på **OK**.

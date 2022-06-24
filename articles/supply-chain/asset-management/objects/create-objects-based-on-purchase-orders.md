@@ -1,6 +1,6 @@
 ---
 title: Oprette aktiver baseret på indkøbsordrer
-description: Dette emne forklarer, hvordan du kan oprette en liste over aktivelementer, der kan bruges som grundlag for oprettelse af aktiver til vedligeholdelsesjob i Styring af aktiver.
+description: Denne artikel forklarer, hvordan du kan oprette en liste over aktivelementer, der kan bruges som grundlag for oprettelse af aktiver til vedligeholdelsesjob i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754101"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893694"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Oprette aktiver baseret på indkøbsordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754101"
 
  
 
-Dette emne forklarer, hvordan du kan oprette en liste over aktivelementer, der kan bruges som grundlag for oprettelse af aktiver til vedligeholdelsesjob i Styring af aktiver. På basis af aktivelementerne kan du få vist en oversigt over de indkøbsordrelinjer, der er oprettet på disse elementer. Formålet med denne funktion er nemt at kunne oprette et aktiv i Styring af aktiver baseret på en indkøbsordre.
+Denne artikel forklarer, hvordan du kan oprette en liste over aktivelementer, der kan bruges som grundlag for oprettelse af aktiver til vedligeholdelsesjob i Styring af aktiver. På basis af aktivelementerne kan du få vist en oversigt over de indkøbsordrelinjer, der er oprettet på disse elementer. Formålet med denne funktion er nemt at kunne oprette et aktiv i Styring af aktiver baseret på en indkøbsordre.
 
 Først skal du oprette de varer, der skal bruges til at oprette aktiver ud fra en indkøbsordre, i **Aktivelementer**. Når du har oprettet en indkøbsordrelinje, skal du oprette aktiverne i **Ventende aktiver**. Det er muligt at beslutte, på hvilket stadie af indkøbsordren aktivet skal oprettes.
 

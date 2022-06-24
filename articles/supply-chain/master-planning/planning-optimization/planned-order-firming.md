@@ -1,6 +1,6 @@
 ---
 title: Autoriser ordreforslag
-description: Dette emne indeholder en forklaring på, hvordan du kan autorisere ordreforslag. Når ordreforslag autoriseres, bliver de til faktiske indkøbsordrer, overførelsesordrer eller produktionsordrer.
+description: Denne artikel indeholder en forklaring på, hvordan du kan autorisere ordreforslag. Når ordreforslag autoriseres, bliver de til faktiske indkøbsordrer, overførelsesordrer eller produktionsordrer.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857512"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -29,11 +29,11 @@ Der findes tre metoder til autorisation af ordreforslag:
 - **Automatisk autorisation** – Definer en tidsgrænse for standardautorisation for disponeringsgrupper, individuelle varer og kombinationer af varer og behovsplaner. Under kørsler af behovsplanlægning bliver ordreforslag derefter automatisk spærret, hvis ordredatoen ligger inden for den angivne tidsgrænse for autorisation.
 - **Forespørgselsbaseret autorisation** – Definer en forespørgsel for at vælge ordreforslag ud fra deres egenskaber. Du kan oprette et batchjob, så du kan køre forespørgslen og autorisere tilsvarende ordrer regelmæssigt.
 
-I dette emne beskrives de enkelte metoder nærmere.
+Denne artikel beskriver de enkelte metoder nærmere.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Aktivere de funktioner, der er beskrevet i dette emne
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivere de funktioner, der er beskrevet i denne artikel
 
-De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallationer af Microsoft Dynamics 365 Supply Chain Management, som anvender Planlægningsoptimering. Nogle få af de funktioner, der beskrives i dette emne, skal dog være aktiveret i Funktionsstyring, før du kan bruge dem.
+De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallationer af Microsoft Dynamics 365 Supply Chain Management, som anvender Planlægningsoptimering. Nogle få af de funktioner, der beskrives i denne artikel, skal dog være aktiveret i Funktionsstyring, før du kan bruge dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallel autorisation af ordreforslag
 
@@ -97,7 +97,7 @@ Ved automatisk autorisation kan du autorisere ordreforslag som del af varedispon
 > Afledte ordrer (dvs. indkøbsordrer for underleverandører), som er autoriserede, har statussen *Til gennemsyn*, hvis sporing af ændringer er aktiveret.
 
 > [!IMPORTANT]
-> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret i systemet som beskrevet i starten af dette emne. Automatisk autorisation kan altid bruges med det indbyggede varedisponeringsprogram.
+> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret i systemet som beskrevet i starten af denne artikel. Automatisk autorisation kan altid bruges med det indbyggede varedisponeringsprogram.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisation med Planlægningsoptimering vs. det indbyggede planlægningsprogram
 
@@ -130,7 +130,7 @@ Med forespørgselsbaseret autorisation kan du planlægge autorisation ud fra kri
 Du kan kombinere automatisk autorisation med forespørgselsbaseret autorisation. Et forespørgselsbaseret autorisationsjob har f.eks. en fremskrevet tidsgrænse, der er længere end tidsgrænsent for en tilsvarende konfiguration af automatisk auto-autorisation af varedisponering. Derfor behandler det forespørgselsbaserede autorisationsjob ordreforslag, inden den automatiske autorisation startes. Du kan bruge denne funktion til at planlægge ordrer for bestemte leverandører på en anden måde end ordrer på lignende produkter fra andre leverandører.
 
 > [!IMPORTANT]
-> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med funktionen [*Autorisation af ordreforslag med filtrering*](#enable-features), skal den aktiveres i systemet som beskrevet i starten af dette emne.
+> Inden den funktion, der beskrives i denne artikel, kan bruges sammen med funktionen [*Autorisation af ordreforslag med filtrering*](#enable-features), skal den aktiveres i systemet som beskrevet i starten af dette emne.
 
 Hvis du vil autorisere et ordreforslag ved hjælp af den forespørgselsbaserede autorisationsproces, skal du benytte følgende fremgangsmåde.
 

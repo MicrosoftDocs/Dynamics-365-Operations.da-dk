@@ -1,6 +1,6 @@
 ---
 title: Aktivere ensartet leveringsmåde for håndtering i e-handelskanaler
-description: Dette emne beskriver, hvordan du kan aktivere håndtering af ensartet leveringsmåde for at løse eventuelle problemer, der er relateret til gebyrflow i Microsoft Dynamics 365 Commerce-e-handelskanaler.
+description: Denne artikel beskriver, hvordan du kan aktivere håndtering af ensartet leveringsmåde for at løse eventuelle problemer, der er relateret til gebyrflow i Microsoft Dynamics 365 Commerce-e-handelskanaler.
 author: gvrmohanreddy
 ms.date: 02/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 4cecd70dacd72572afc8e6cb65530bf2be4cc93d
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: f32f1915f8f7de1d5536b69b05bc74c6149dfda6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885579"
 ---
 # <a name="enable-consistent-delivery-mode-handling-in-e-commerce-channels"></a>Aktivere ensartet leveringsmåde for håndtering i e-handelskanaler 
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan aktivere håndtering af ensartet leveringsmåde for at løse eventuelle problemer, der er relateret til gebyrflow i Microsoft Dynamics 365 Commerce-e-handelskanaler.
+Denne artikel beskriver, hvordan du kan aktivere håndtering af ensartet leveringsmåde for at løse eventuelle problemer, der er relateret til gebyrflow i Microsoft Dynamics 365 Commerce-e-handelskanaler.
 
 I Dynamics 365 Commerce anvendes der ikke som standard gebyrer på ikke-forholdsmæssigt overskriftsniveau i e-handelskanaler. Denne funktionsmåde kan forårsage en eller begge disse problemer i e-handelskanaler:
 
@@ -31,7 +31,7 @@ Du kan løse disse problemer ved at aktivere funktionen **Aktivér ensartet hån
 
 ## <a name="turn-on-the-enable-consistent-delivery-mode-handling-in-channel-feature"></a>Aktivere funktionen Aktivér ensartet håndtering af leveringsmåde i kanal
 
-Hvis du vil aktivere funktionen **Aktivér ensartet håndtering af leveringsmåde i kanal** i Commerce-hovedkontoret, skal du følge disse trin.
+Hvis du vil aktivere funktionen **Aktivér ensartet håndtering af leveringsmåde i kanal** i Commerce Headquarters, skal du følge disse trin.
 
 1. Åbn arbejdsområdet **Funktionsstyring** (**Systemadministration \> Arbejdsområder \> Funktionsstyring**).
 1. Søg efter og vælg **Aktivér ensartet håndtering af leveringsmåde i kanal** på listen over tilgængelige funktioner.

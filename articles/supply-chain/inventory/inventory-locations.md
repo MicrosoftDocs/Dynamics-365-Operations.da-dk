@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c202a679e992c562772cbf6da6e17c4b8149760f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bd5ad086cadd2e49585614e7650bb7e30a4e7328
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888580"
 ---
 # <a name="inventory-locations"></a>Lagerlokationer
 
@@ -29,7 +29,7 @@ ms.locfileid: "7573939"
 
 Lagerlokationer bruges sammen med grundlæggende lagersted (WMS I) til at bestemme, hvor varerne opbevares, og hvor varerne plukkes fra i et WMS I-lagersted.
 
-Dette emne gælder for funktioner i modulet Lagerstyring. Det gælder ikke for funktioner i modulet Lagerstedsstyring.
+Denne artikel gælder for funktioner i modulet Lagerstyring. Det gælder ikke for funktioner i modulet Lagerstedsstyring.
 
 Betegnelsen lokalitet henviser til det sted, som varer opbevares på og trækkes fra.
 

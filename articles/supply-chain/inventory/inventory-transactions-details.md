@@ -1,6 +1,6 @@
 ---
 title: Detaljer om lagertransaktion
-description: Dette emne indeholder en oversigt over siden Transaktionsdetaljer, der indeholder detaljer om en valgt lagertransaktion.
+description: Denne artikel indeholder en oversigt over siden Transaktionsdetaljer, der indeholder detaljer om en valgt lagertransaktion.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859381"
 ---
 # <a name="inventory-transaction-details"></a>Detaljer om lagertransaktion
 
@@ -36,8 +36,8 @@ Siden **Transaktionsoplysninger** er opdelt i flere oversigtspaneler. Formålet 
 
 | Oversigtspanel | Beskrivende tekst |
 |---|---|
-| Almindelig | I dette oversigtspanel vises grundlæggende oplysninger om den valgte lagertransaktion. Ud over de felter, der vises på siden **Lagertransaktioner**, indeholder det de yderligere felter, der beskrives senere i dette emne. |
-| Opdateringer | I dette oversigtspanel vises der oplysninger, der vedrører de fysiske, økonomiske og udligningsmæssige aspekter af den valgte lagertransaktion. Visse felter er måske tomme, afhængigt af transaktionens aktuelle status. Disse felter angives dog automatisk, når transaktioner bogføres. Ud over de felter, der vises på siden **Lagertransaktioner**, indeholder dette oversigtspanel yderligere felter, der beskrives senere i dette emne. |
+| Almindelig | I dette oversigtspanel vises grundlæggende oplysninger om den valgte lagertransaktion. Ud over de felter, der vises på siden **Lagertransaktioner**, indeholder det de yderligere felter, der beskrives senere i denne artikel. |
+| Opdateringer | I dette oversigtspanel vises der oplysninger, der vedrører de fysiske, økonomiske og udligningsmæssige aspekter af den valgte lagertransaktion. Visse felter er måske tomme, afhængigt af transaktionens aktuelle status. Disse felter angives dog automatisk, når transaktioner bogføres. Ud over de felter, der vises på siden **Lagertransaktioner**, indeholder dette oversigtspanel yderligere felter, der beskrives senere i denne artikel. |
 | Finanskonteringer | I dette oversigtspanel vises den bogføringstype og finanskonto, der bruges til den fysiske opdatering, den økonomiske opdatering, den fysiske omsætning, de fysiske gebyrer, de økonomiske indtægter og de økonomiske gebyrer, der er knyttet til den valgte lagertransaktion. |
 | Referencer | I dette oversigtspanel vises yderligere oplysninger om den kildetransaktion, der har oprettet den valgte lagertransaktion. Disse oplysninger kan f.eks. omfatte detaljer fra indkøbsordren eller salgsordren. |
 | Relaterede oplysninger | I dette oversigtspanel vises flere oplysninger om den valgte lagertransaktion. Disse felter er muligvis ikke angivet, hvis du ikke bruger visse funktioner som f.eks. indkøbskategorier eller projekter. |

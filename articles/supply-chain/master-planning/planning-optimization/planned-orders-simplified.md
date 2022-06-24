@@ -1,6 +1,6 @@
 ---
 title: Planlagte ordrer forenklet
-description: I dette emne beskrives, hvordan du kan se, administrere og autorisere ordreforslag ved hjælp af den forenklede ordreforslagsside.
+description: Denne artikel beskriver, hvordan du kan se, administrere og autorisere ordreforslag ved hjælp af den forenklede ordreforslagsside.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887364"
 ---
 # <a name="planned-orders-simplified"></a>Planlagte ordrer forenklet
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan se, administrere og autorisere ordreforslag ved hjælp af siden **Planlagte ordrer forenklet**.
+Denne artikel beskriver, hvordan du kan se, administrere og autorisere ordreforslag ved hjælp af den **forenklede ordreforslagsside**.
 
 Siden **Planlagte ordrer forenklet** er en forenklet version af siden **Ordreforslag**. Den giver færre valgmuligheder, men er hurtigere at arbejde med, når du kun skal gennemse, godkende og autorisere ordreforslag.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i dette emne, skal du gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Planlagte ordrer forenklet*.
+Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i denne artikel, skal du gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Planlagte ordrer forenklet*.
 
 ## <a name="view-manage-and-firm-planned-orders"></a>Vise, administrere og autorisere ordreforslag
 

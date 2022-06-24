@@ -1,6 +1,6 @@
 ---
 title: Oversigt over tilbudsanmodninger
-description: Emnet giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe.
+description: Denne artikel giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895577"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversigt over tilbudsanmodninger
 
 [!include [banner](../includes/banner.md)]
 
-Emnet giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer.
+Denne artikel giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer.
 Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen.
 
 Tilbudsanmodningsprocessen består af følgende opgaver:
@@ -45,7 +45,7 @@ Du kan oprette en sag for en tilbudsanmodning ud fra planlagte ordrer, en indkø
 
 Når du forbereder tilbudsanmodningssagen og tilføjer kreditorer, skal du vælge **Send** (**Sende og udgiv** for offentlig sektor) for tilbudsanmodningssagen. Der oprettes en tilbudsanmodningskladde for hver leverandør, som du sendte tilbudsanmodningen til. Du kan konfigurere indstillingerne for Udskrivning for handlingen Send, så der enten udskrives en rapport for hver kreditor til et arkiv eller sendes en rapport til hver kreditors mailadresse. Du kan desuden bruge tilbudsanmodningskladden til hver leverandør til at generere en rapport, som du kan sende eller gensende til leverandøren senere. Du kan også konfigurere handlingen Send, så den opretter et svarark, som leverandøren kan udfylde.
 
-Dette emne beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
+Denne artikel beskriver processen til håndtering af tilbudsanmodninger, når der ikke bruges kreditorsamarbejde. Hvis systemet er konfigureret til samarbejde for leverandører, kan leverandører afgive tilbud direkte i Supply Chain Management. Du kan finde flere oplysninger under [Kreditorsamarbejde med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
 Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til kreditoren igen, når du er færdig, ved hjælp af to ændringshandlinger: Opret og Færdiggør.
 
@@ -59,7 +59,7 @@ Når du vælger et bud eller et antal linjer i et bud, kan du acceptere alle ell
 
 En tilbudsanmodningssag har to statusser: den laveste og den højeste. Du kan få vist status på listesiden for **Alle tilbudsanmodninger**. Den laveste status er det mindst fremskredne stadie for en linje i tilbudsanmodningssagen, mens den højeste status er det mest fremskredne stadie for en linje i tilbudsanmodningssagen. Antag f.eks., at en tilbudsanmodningssag med tre linjer sendes til to kreditorer, så der er to tilbudsanmodninger med tre linjer. Alle linjer er **Sendt**. Nu er der givet et bud fra en af kreditorerne, og linjerne i tilbudsanmodningen får statussen **Modtaget**. Det betyder, at ud af de tre linjer i tilbudsanmodningssagen er alle **Sendt** for en tilbudsanmodning og **Modtaget** for en anden tilbudsanmodning. Den laveste status bliver derefter **Sendt**, og den højeste status bliver **Modtaget.**
 
-Disse statusser beskrives mere detaljeret senere i dette emne.
+Disse statusser beskrives mere detaljeret senere i denne artikel.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurere funktioner for tilbudsanmodning
 

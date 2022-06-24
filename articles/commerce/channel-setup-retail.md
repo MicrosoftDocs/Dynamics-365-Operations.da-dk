@@ -1,6 +1,6 @@
 ---
 title: Konfigurer en detailkanal
-description: Dette emne beskriver, hvordan du opretter en ny detailkanal i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan du opretter en ny detailkanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: eccbbff33ddf967b000940a8ea9910c34232431f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847726"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurere en detailkanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter en ny detailkanal i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan du opretter en ny detailkanal i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce understøtter flere detailkanaler. Disse detailkanaler omfatter onlinebutikker, call centre og detailbutikker (også kaldet fysiske butikker). Hver detailbutikskanal kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer, for at du kan oprette en detailbutikskanal. 
 
@@ -193,7 +193,7 @@ Det nye formatfunktion for transaktions-id'er kan aktiveres fra arbejdsområdet 
 
 Benyt følgende fremgangsmåde, hvis du vil aktivere brugen af de nye transaktions-id'er:
 
-1. I Commerce-hovedkvarteret skal du gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
+1. I Commerce headquarters skal du gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
 1. Filtrer efter modulet "Retail og Commerce".
 1. Søg efter funktionsnavnet **Aktiver nyt transaktions-id for at undgå identiske transaktions-id'er**.
 1. Vælg funktionen, og vælg derefter **Aktiver nu** i højre rude.  

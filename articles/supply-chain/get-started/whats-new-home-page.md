@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management
-description: Dette emne peger på emner, der beskriver de nye og ændrede funktioner i hver version af Dynamics 365 Supply Chain Management.
+description: Denne artikel peger på artikler, der beskriver de nye og ændrede funktioner i hver version af Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 6c1cfcd7ccc39f2742fd237278f97b4d3d0ad4fd
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: b767f8ff8e9c9ef7ea1b4dee777f9e0c96f93aef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893433"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management
 
@@ -27,7 +27,7 @@ ms.locfileid: "8812966"
 
 ## <a name="releases-of-dynamics-365-supply-chain-management"></a>Versioner af Dynamics 365 Supply Chain Management
 
-Oplysninger om, hvad der er nyt eller ændret i hver version af Dynamics 365 Supply Chain Management, finder du i følgende emner.
+Oplysninger om, hvad der er nyt eller ændret i hver version af Dynamics 365 Supply Chain Management, finder du i følgende artikler.
 
 | Version | Build-nummer | Tilgængelighed af automatisk opdatering | Flere oplysninger |
 |---|---|---|---|
@@ -57,9 +57,9 @@ Oplysninger om, hvad der er nyt eller ændret i hver version af Dynamics 365 Sup
 
 ## <a name="releases-before-november-2019"></a>Frigivelser før november 2019
 
-Oplysninger om, hvad der er nyt eller ændret i frigivelser før november 2019, finder du i følgende emner.
+Oplysninger om, hvad der er nyt eller ændret i frigivelser før november 2019, finder du i følgende artikler.
 
-| Frigiv | Version | Build-nummer | Tilgængelighed | Få mere at vide |
+| Frigiv | Version | Build-nummer | Tilgængelighed | Flere oplysninger |
 |---|---|---|---|---|
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | 2019. oktober     | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 10.0.5. (oktober 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | Juli 2019        | [Nyheder eller ændringer i Dynamics 365 for Finance and Operations version 10.0.4 (juli 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |

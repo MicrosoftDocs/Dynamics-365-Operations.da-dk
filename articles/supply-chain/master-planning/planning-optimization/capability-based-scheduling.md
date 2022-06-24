@@ -1,6 +1,6 @@
 ---
 title: Planlægning med ressourcevalg baseret på egenskab
-description: Dette emne beskriver ressourcevalg under planlægning af ubegrænset kapacitet, når du angiver egenskaber som ressourcekrav til en operation.
+description: Denne artikel beskriver ressourcevalg under planlægning af ubegrænset kapacitet, når du angiver egenskaber som ressourcekrav til en operation.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469779"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847956"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlægning med ressourcevalg baseret på egenskab
 
 [!include [banner](../../includes/banner.md)]
 
-Ved at angive ressourcekrav til en operation i en produktionsrute definerer du, hvad der kræves for at udføre operationen. En operation kan f.eks. kræve en bestemt ressource eller en ressourcegruppe eller en kombination af færdigheder eller egenskaber. Dette emne beskriver ressourcevalg under planlægning af ubegrænset kapacitet, når du angiver egenskaber som ressourcekrav til en operation.
+Ved at angive ressourcekrav til en operation i en produktionsrute definerer du, hvad der kræves for at udføre operationen. En operation kan f.eks. kræve en bestemt ressource eller en ressourcegruppe eller en kombination af færdigheder eller egenskaber. Denne artikel beskriver ressourcevalg under planlægning af ubegrænset kapacitet, når du angiver egenskaber som ressourcekrav til en operation.
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>Aktivere funktionen til egenskabsbaseret planlægning
 

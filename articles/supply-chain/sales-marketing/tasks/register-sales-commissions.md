@@ -1,6 +1,6 @@
 ---
 title: Registrere salgskommissioner
-description: I dette emne beskrives, hvordan salgsprovisioner beregnes og registreres.
+description: Denne artikel beskriver, hvordan salgsprovisioner beregnes og registreres.
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b15ca78da14068fd2f3275e7aff04852625db7ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575357"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862505"
 ---
 # <a name="register-sales-commissions"></a>Registrere salgskommissioner
 
 [!include [banner](../../includes/banner.md)]
 
-I dette emne beskrives, hvordan salgsprovisioner beregnes og registreres. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Før du starter denne vejledning, skal du køre vejledningen "Konfigurer regler for salgsprovision" for at sikre, at du har den nødvendige provisionsberegningsopsætning.
+Denne artikel beskriver, hvordan salgsprovisioner beregnes og registreres. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Før du starter denne vejledning, skal du køre vejledningen "Konfigurer regler for salgsprovision" for at sikre, at du har den nødvendige provisionsberegningsopsætning.
 
 Notér de kunde- og varenumre, du har valgt til provisionsprocessen, og brug dem, når du bliver bedt om at oprette en salgsordre i denne vejledning.
 

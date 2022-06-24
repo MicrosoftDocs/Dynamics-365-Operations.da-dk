@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102783"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889422"
 ---
 # <a name="location-license-plate-positioning"></a>Placering af lokations-id
 
@@ -28,11 +28,11 @@ Med placering af nummerplader kan du se, hvor en nummerplade er placeret på en 
 
 Funktionen tilføjer et løbenummer til hver nummerplade, der anbringes på en lagerplacering. Dette løbenummer bruges til at bestille nummerpladerne på lagerstedet. Derfor understøtter funktionen intelligente scenarier, hvor kunder anvender et reolsystem og skal vide, hvilken nummerplade der er på forsiden af det af hensyn til plukning.
 
-Dette emne indeholder et scenarie, der viser, hvordan du kan konfigurere og bruge funktionen.
+Denne artikel indeholder et scenarie, der viser, hvordan du kan konfigurere og bruge funktionen.
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Placering af lokations-id
 
-Hvis du vil bruge den funktionalitet, der er beskrevet i dette emne, skal funktionen *Placering af lokations-id* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Placering af lokations-id* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge den funktionalitet, der er beskrevet i denne artikel, skal funktionen *Placering af lokations-id* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Placering af lokations-id* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -42,7 +42,7 @@ Hvis du vil arbejde gennem dette scenarie ved hjælp af de værdier, der er fore
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Konfigurer funktionen til dette scenarie
 
-Udfør følgende procedurer for at konfigurere funktionen til *placering af nummerplader på lokation* for det scenarie, der vises i dette emne.
+Udfør følgende procedurer for at konfigurere funktionen til *placering af nummerplader på lokation* for det scenarie, der vises i denne artikel.
 
 #### <a name="location-profiles"></a>Lokationsprofiler
 

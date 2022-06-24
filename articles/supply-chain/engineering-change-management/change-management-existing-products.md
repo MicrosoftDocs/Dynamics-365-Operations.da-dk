@@ -1,6 +1,6 @@
 ---
 title: Aktivér administration af ændringer på eksisterende produkter
-description: Dette emne forklarer, hvordan du aktiverer ændringsstyring for eksisterende produkter. Det beskriver også tilfælde, hvor muligheden for at aktivere ændringsstyring er begrænset.
+description: Denne artikel forklarer, hvordan du aktiverer ændringsstyring for eksisterende produkter. Det beskriver også tilfælde, hvor muligheden for at aktivere ændringsstyring er begrænset.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893462"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivér administration af ændringer på eksisterende produkter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne forklarer, hvordan du aktiverer ændringsstyring for eksisterende produkter. Det beskriver også tilfælde, hvor muligheden for at aktivere ændringsstyring er begrænset.
+Denne artikel forklarer, hvordan du aktiverer ændringsstyring for eksisterende produkter. Det beskriver også tilfælde, hvor muligheden for at aktivere ændringsstyring er begrænset.
 
 Når du aktiverer ændringsstyring for et eksisterende produkt, kan du oprette versioner af det pågældende produkt og spore de ændringer, der er foretaget af det, i hele dets levetid. Du kan derfor spore disse ændringer ved hjælp af ændringsordrer. Hvis du vil aktivere ændringsstyring, skal du konvertere de relevante produkter til *tekniske varer* (også kaldet tekniske produkter). Tekniske produkter er produkter, der er versionsstyret og administreret via ændringsstyring. Der findes en guide til konverteringsprocessen.
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funktion
 
-Den funktionalitet, der beskrives i dette emne, kræver, at både *Styring af tekniske ændringer* og *Aktivér administration af ændringer på eksisterende produkter* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
+Den funktionalitet, der beskrives i denne artikel, kræver, at både *Styring af tekniske ændringer* og *Aktivér administration af ændringer på eksisterende produkter* er aktiveret for systemet. Du kan finde flere oplysninger om, hvordan du aktiverer eller deaktiverer disse funktioner, i [Oversigt over styring af tekniske ændringer](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Restriktioner og begrænsninger
 
@@ -38,7 +38,7 @@ Ikke alle produkttyper kan konverteres til alle andre typer. Der gælder følgen
 - Når du konverterer et produkt til et teknisk produkt, forbliver det et *produkt*. Den bliver ikke en *produktmaster*.
 - Når du konverterer en produktmaster, der har et bestemt sæt dimensioner, vedligeholdes disse dimensioner efter ændringen. Hvis du f.eks. konverterer en produktmaster, der har størrelsesdimensionen, bevares størrelsesdimensionen.
 
-Hvis du har et specifikt produkt, kan du derfor kun ændre det til et teknisk produkt, der ikke sporer produktdimensionen i transaktioner (det vil sige, at versionsdimensionen ikke bruges). Du kan finde flere oplysninger om disse problemer i de resterende afsnit i dette emne.
+Hvis du har et specifikt produkt, kan du derfor kun ændre det til et teknisk produkt, der ikke sporer produktdimensionen i transaktioner (det vil sige, at versionsdimensionen ikke bruges). Du kan finde flere oplysninger om disse artikler i de resterende afsnit i dette emne.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Forberede konverteringen ved at oprette alle nødvendige tekniske produktkategorier
 
@@ -81,7 +81,7 @@ Benyt følgende fremgangsmåde for at køre guiden **Konvertér til teknisk prod
 
     - **Produktnummer** – Produktnummeret.
     - **Produktnavn** – Navnet på produktet.
-    - **Teknisk kategori** – Vælg den tekniske produktkategori, som produktet skal tilhøre, når det er konverteret. Der skal allerede findes en relevant kategori for hvert produkt, som det blev forklaret i forrige afsnit i dette emne. Du skal tildele en kategori til alle produkter.
+    - **Teknisk kategori** – Vælg den tekniske produktkategori, som produktet skal tilhøre, når det er konverteret. Der skal allerede findes en relevant kategori for hvert produkt, som det blev forklaret i forrige afsnit i denne artikel. Du skal tildele en kategori til alle produkter.
     - **Version** – Angiv den produktversion, der skal tildeles produktet efter konvertering. Du kan f.eks. vælge et nummer, der passer til den nummerserie, som din kategori allerede bruger. Hver enkelt tekniske version gemmer de teknisk relevante data, der er specifikke for den pågældende version. Du kan finde flere oplysninger under [Tekniske versioner og tekniske produktkategorier](engineering-versions-product-category.md).
     - **Produktlivscyklustilstand** – Vælg den produktlivscyklustilstand, som produktet skal være i, når det er konverteret. Produktlivscyklustilstanden giver dig mulighed for at styre, hvilke transaktioner der er tilladt for en bestemt teknisk version. Du kan finde flere oplysninger i [Produktlivscyklustilstand og transaktioner](product-lifecycle-state-transactions.md).
     - **Har stykliste** – Hvis afkrydsningsfeltet er markeret, angiver det, at produktet har en stykliste. Indstillingen af dette afkrydsningsfelt kan hjælpe dig med at bestemme, hvordan afkrydsningsfeltet **Aktuel stykliste vil være en del af det tekniske produkt** skal indstilles.

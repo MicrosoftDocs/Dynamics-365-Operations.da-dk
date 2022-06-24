@@ -1,6 +1,6 @@
 ---
 title: Aktivere og bruge deling på tværs af kanaler
-description: Dette emne beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+description: Denne artikel beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637149c088cb87301018868e680537eb58b17852
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865998"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruge deling på tværs af kanaler
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
+Denne artikel beskriver, hvordan du aktiverer og bruger funktionen til deling på tværs af kanaler i Microsoft Dynamics 365 Commerce-webstedsgenerator.
 
 Med deling på tværs af kanaler kan forhandlere genbruge og dele indhold mellem flere forskellige kanaler af et websted. Denne egenskab er nyttig, når der er et kompatibelt basissprog for webstedskanaler, eller når der er mange forskellige indholdsobjekter til fælles.
 

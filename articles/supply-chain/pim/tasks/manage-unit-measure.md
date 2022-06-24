@@ -1,6 +1,6 @@
 ---
 title: Administrere måleenheder
-description: Dette emne beskriver, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder.
+description: Denne artikel beskriver, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder.
 author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e13897396810507bb4b2cbb415b873eb3dd7f4e8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8e2c21756b270ef7d914dc74a0cf61727953206a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863905"
 ---
 # <a name="manage-units-of-measure"></a>Administrere måleenheder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder.
+Denne artikel beskriver, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder.
 
 ## <a name="open-the-units-page"></a>Åbne siden Enheder
 
 Hvis du vil oprette og arbejde med de måleenheder, der er tilgængelige i systemet, skal du gå til **Organisationsadministration \> Opsætning \> Enheder \> enheder**.
 
-I de resterende afsnit i dette emne beskriver, hvad du kan gøre på siden **Enheder**.
+I de resterende afsnit i denne artikel beskriver, hvad du kan gøre på siden **Enheder**.
 
 ## <a name="create-standard-units-and-conversions"></a>Oprette standardenheder og -omregninger
 

@@ -1,7 +1,7 @@
 ---
 title: Definere varedisponering
-description: I dette emne beskrives forskellige vigtige strategier og parametre, der bruges til definition af varedisponering.
-author: ChristianRytt
+description: Denne artikel beskriver forskellige vigtige strategier og parametre, der bruges til definition af varedisponering.
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888551"
 ---
 # <a name="set-up-master-planning"></a>Definere varedisponering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives forskellige vigtige strategier og parametre, der bruges til definition af varedisponering. Den indeholder en oversigt over de typer planer, der bruges af varedisponeringen, og forklarer, hvilken planstrategi du skal bruge, afhængigt af firmaets behov. Den beskriver også de hovedparametre, der påvirker planen, og forklarer, hvordan disse parametre påvirker de foreslåede ordreforslag.
+Denne artikel beskriver forskellige vigtige strategier og parametre, der bruges til definition af varedisponering. Den indeholder en oversigt over de typer planer, der bruges af varedisponeringen, og forklarer, hvilken planstrategi du skal bruge, afhængigt af firmaets behov. Den beskriver også de hovedparametre, der påvirker planen, og forklarer, hvordan disse parametre påvirker de foreslåede ordreforslag.
 
 ## <a name="types-of-master-plans"></a>Typer af behovsplaner
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere flere B2C-lejere i et Commerce-miljø
-description: I dette emne beskrives, hvornår og hvordan du konfigurerer flere Microsoft Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) pr. kanal til brugergodkendelse i et dedikeret Dynamics 365 Commerce-miljø.
+description: Denne artikel beskriver, hvornår og hvordan du konfigurerer flere Microsoft Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) pr. kanal til brugergodkendelse i et dedikeret Dynamics 365 Commerce-miljø.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736398"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890563"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurere flere B2C-lejere i et Commerce-miljø
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvornår og hvordan du konfigurerer flere Microsoft Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) pr. kanal til brugergodkendelse i et dedikeret Dynamics 365 Commerce-miljø.
+Denne artikel beskriver, hvornår og hvordan du konfigurerer flere Microsoft Azure Active Directory (Azure AD) B2C-lejere (Business-to-Consumer) pr. kanal til brugergodkendelse i et dedikeret Dynamics 365 Commerce-miljø.
 
 Dynamics 365 Commerce bruger Azure AD B2C cloud-identitetstjeneste til at understøtte brugerlegitimationsoplysninger og godkendelsesstrømme. Brugerne kan bruge godkendelsesstrømmene til at tilmelde sig, logge på og nulstille deres adgangskode. Azure AD B2C gemmer en brugers følsomme godkendelsesoplysninger, f.eks. brugernavn og adgangskode. Brugerposten er entydig for hver B2C-lejer, og den bruger brugernavnets legitimationsoplysninger (mailadressen) eller sociale identitetsudbyderes legitimationsoplysninger.
 

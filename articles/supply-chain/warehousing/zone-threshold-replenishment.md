@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893114"
 ---
 # <a name="zone-threshold-replenishment"></a>Tærskel for genopfyldning af zone
 
@@ -45,7 +45,7 @@ Før du kan bruge funktionen *Tærskel for genopfyldning af zone*, skal den vær
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Konfigurer zonebaseret genopfyldning
 
-Hvis du vil konfigurere zonebaseret genopfyldning, skal du konfigurere flere dele af systemet. I dette afsnit introduceres de forskellige indstillinger og de demodataværdier, du kan angive, hvis du vil arbejde dig gennem scenariet sidst i dette emne.
+Hvis du vil konfigurere zonebaseret genopfyldning, skal du konfigurere flere dele af systemet. I dette afsnit introduceres de forskellige indstillinger og de demodataværdier, du kan angive, hvis du vil arbejde dig gennem scenariet sidst i denne artikel.
 
 ### <a name="set-up-directive-codes"></a>Konfigurere vejledningskoder
 
@@ -57,7 +57,7 @@ Hvis du vil have vist eller redigere dine vejledningskoder, skal du gå til **Lo
 
 #### <a name="prepare-demo-data-directive-codes"></a>Forberede vejledningskoder til demodata
 
-I dette eksempel vises, hvordan du forbereder en vejledningskode. Hvis du planlægger at arbejde dig gennem scenariet i slutningen af dette emne, skal du bruge de demoværdier, der angives her. Ellers skal du bruge dine egne værdier.
+I dette eksempel vises, hvordan du forbereder en vejledningskode. Hvis du planlægger at arbejde dig gennem scenariet i slutningen af denne artikel, skal du bruge de demoværdier, der angives her. Ellers skal du bruge dine egne værdier.
 
 1. Vælg den juridiske enhed **USMF**, der skal bruges til at arbejde med demodataene.
 1. Gå til **Lokationsstyring \> Opsætning \> Vejledningskoder**.
@@ -79,7 +79,7 @@ En genopfyldningsskabelon er et sæt regler, der styrer, hvornår og hvordan en 
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Forberede en genopfyldningsskabelon til demodata
 
-I dette eksempel vises, hvordan du forbereder en genopfyldningsskabelon. Hvis du planlægger at arbejde dig gennem scenariet i slutningen af dette emne, skal du bruge de demoværdier, der angives her. Ellers skal du bruge dine egne værdier.
+I dette eksempel vises, hvordan du forbereder en genopfyldningsskabelon. Hvis du planlægger at arbejde dig gennem scenariet i slutningen af denne artikel, skal du bruge de demoværdier, der angives her. Ellers skal du bruge dine egne værdier.
 
 1. Vælg den juridiske enhed **USMF**, der skal bruges til at arbejde med demodataene.
 1. Gå til **Lokationsstyring \> Konfiguration \> Genopfyldning \> Genopfyldningsskabeloner**.
@@ -144,7 +144,7 @@ Du kan se eksempler, der viser, hvordan du kan bruge indstillingerne til at opre
 
 #### <a name="prepare-demo-data-location-directives"></a>Forberede lokationsvejledninger til demodata
 
-Hvis du vil forberede demodata, så de kan bruges i scenariet sidst i dette emne, skal du oprette to lokationsvejledninger: et til pluk og et til læg på lager.
+Hvis du vil forberede demodata, så de kan bruges i scenariet sidst i denne artikel, skal du oprette to lokationsvejledninger: et til pluk og et til læg på lager.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Oprette en plukkevejledning for genopfyldning
 
@@ -258,7 +258,7 @@ Dette afsnit indeholder et eksempel på et scenarie, der viser, hvordan du kan a
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Forbered de eksempeldata, der kræves i eksempelscenariet
 
-Før du går i gang med at arbejde med scenariet, skal du aktivere eksempeldata og konfigurere funktionen som beskrevet i dette afsnit og i forudgående afsnit i dette emne.
+Før du går i gang med at arbejde med scenariet, skal du aktivere eksempeldata og konfigurere funktionen som beskrevet i dette afsnit og i forudgående afsnit i denne artikel.
 
 #### <a name="use-the-usmf-legal-entity"></a>Brug den juridiske enhed USMF
 
@@ -266,7 +266,7 @@ Hvis du vil arbejde gennem scenariet ved hjælp af de eksempelposter og -værdie
 
 #### <a name="prepare-additional-sample-data"></a>Forberede yderligere eksempeldata
 
-Når du har valgt den juridiske enhed **USMF**, skal du tilføje de ekstra eksempeldata, der kræves, som beskrevet i afsnittet [Konfigurer zonebaseret genopfyldning](#setup) tidligere i dette emne.
+Når du har valgt den juridiske enhed **USMF**, skal du tilføje de ekstra eksempeldata, der kræves, som beskrevet i afsnittet [Konfigurer zonebaseret genopfyldning](#setup) tidligere i denne artikel.
 
 #### <a name="check-your-on-hand-inventory"></a>Kontrollér dit disponible lager
 

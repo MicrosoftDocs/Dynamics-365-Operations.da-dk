@@ -1,6 +1,6 @@
 ---
 title: Konsolidere forsendelser, når politikken for forsendelseskonsolidering tilsidesættes
-description: Dette emne viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden Frigiv til lager, og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen.
+description: Denne artikel viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden Frigiv til lager, og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878694"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidere forsendelser, når politikken for forsendelseskonsolidering tilsidesættes
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden **Frigiv til lager**, og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen. Der kræves muligvis en tilsidesættelse af politikken for forsendelseskonsolidering, hvis f.eks. en ordre, der ikke normalt konsolideres med åbne forsendelser, skal konsolideres med åbne forsendelser.
+Denne artikel viser et scenarie, hvor en eller flere salgslinjer skal frigives til lageret manuelt fra siden **Frigiv til lager**, og den systemdefinerede politik for forsendelseskonsolidering skal tilsidesættes før frigivelsen. Der kræves muligvis en tilsidesættelse af politikken for forsendelseskonsolidering, hvis f.eks. en ordre, der ikke normalt konsolideres med åbne forsendelser, skal konsolideres med åbne forsendelser.
 
 I løbet af scenariet opretter du et sæt salgsordrer og overskriver derefter standardpolitikken for konsolidering af forsendelser, før du frigiver ordrerne til lageret.
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Scenariet i dette emne indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
+Scenariet i denne artikel indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Konfigurere politikker for forsendelseskonsolidering og produktfiltre
 

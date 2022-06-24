@@ -1,6 +1,6 @@
 ---
-title: Arbejdsstedstyper
-description: Dette emne beskriver, hvordan du opretter arbejdsstedstyper i Styring af aktiver.
+title: Arbejdsstedtyper
+description: Denne artikel beskriver, hvordan du opretter arbejdsstedstyper i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879215"
 ---
-# <a name="functional-location-types"></a>Arbejdsstedstyper
+# <a name="functional-location-types"></a>Arbejdsstedtyper
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emne beskriver, hvordan du opretter arbejdsstedstyper i Styring af aktiver. Arbejdsstedstyper bruges til at administrere krav til arbejdssteder, herunder hvordan aktiver installeres på et arbejdssted. Du kan oprette aktivtyper, vedligeholdelsesplaner, attributter for arbejdssteder og attributkrav til aktiver, der skal bruges på et arbejdssted, som bruger den specifikke arbejdsstedstype. Når du opretter et arbejdssted, er arbejdsstedstypen obligatorisk.
+Denne artikel beskriver, hvordan du opretter arbejdsstedstyper i Styring af aktiver. Arbejdsstedstyper bruges til at administrere krav til arbejdssteder, herunder hvordan aktiver installeres på et arbejdssted. Du kan oprette aktivtyper, vedligeholdelsesplaner, attributter for arbejdssteder og attributkrav til aktiver, der skal bruges på et arbejdssted, som bruger den specifikke arbejdsstedstype. Når du opretter et arbejdssted, er arbejdsstedstypen obligatorisk.
 
 >[!NOTE] 
 >For at kunne arbejde med arbejdssteder skal du oprette et standardarbejdssted, der kun skal bruges til at oprette nye aktiver. For dette standardarbejdssted skal du oprette en standardarbejdsstedstype, der er virkelig enkel og tillader, at flere aktiver installeres på standardarbejdsstedet. Du finder flere oplysninger om, hvordan du konfigurerer arbejdssteder, under [Oprette arbejdssteder](../functional-locations/create-functional-locations.md).

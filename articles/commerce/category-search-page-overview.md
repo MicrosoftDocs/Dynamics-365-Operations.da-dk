@@ -1,6 +1,6 @@
 ---
 title: Oversigt over standardlandingsside for kategori og side for søgeresultater
-description: Dette emne indeholder en oversigt over standardlandingsside for kategori og side for søgeresultater i Dynamics 365 Commerce.
+description: Denne artikel indeholder en oversigt over standardlandingsside for kategori og side for søgeresultater i Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881846"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversigt over standardlandingsside for kategori og side for søgeresultater
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en oversigt over standardlandingssiden for kategorier og søgeresultatsiden for e-handel i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en oversigt over standardlandingssiden for kategorier og søgeresultatsiden for e-handel i Microsoft Dynamics 365 Commerce.
 
 ## <a name="default-category-landing-page"></a>Standardlandingsside for kategorier
 
@@ -32,7 +32,7 @@ Standardlandingssiden for kategorier er den side, som brugerne af et websted typ
 
 ![Standardlandingsside for kategorier.](./media/SimpleCategoryLandingDressCategory.png)
 
-Øverst på siden findes et sidehoved, der viser alle produktkategorierne og andre sider, som produktchefen har kategoriseret. Konfigurationen udføres som en del af konfigurationen af kanalnavigationshierarkiet. Nederst på startsiden findes en sidefod med hurtige links til forskellige emner, som kan have interesse for kunderne.
+Øverst på siden findes et sidehoved, der viser alle produktkategorierne og andre sider, som produktchefen har kategoriseret. Konfigurationen udføres som en del af konfigurationen af kanalnavigationshierarkiet. Nederst på startsiden findes en sidefod med hurtige links til forskellige artikler, som kan have interesse for kunderne.
 
 Følgende komponenter er vigtige for en kategori:
 

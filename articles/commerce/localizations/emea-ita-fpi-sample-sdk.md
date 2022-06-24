@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for installation af eksempel på integration af bonprinter for Italien (ældre)
-description: Dette emne indeholder retningslinjer for implementering af eksempel på bonprinter for Italien fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
+description: Denne artikel indeholder retningslinjer for implementering af eksempel på bonprinter for Italien fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: bb07ca91c9e5bf1a79f672f9ba29b7bcc21688c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848892"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Retningslinjer for installation af eksempel på integration af bonprinter for Italien (ældre)
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder retningslinjer for implementering af eksempel på integration af bonprinter for Italien fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md). 
+Denne artikel indeholder retningslinjer for implementering af eksempel på integration af bonprinter for Italien fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md). 
 
-Eksemplet på regnskabsintegration for Italien er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT) og Hardwarestation. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT og Hardwarestationsprojekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i dette emne. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
+Eksemplet på regnskabsintegration for Italien er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT) og Hardwarestation. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT og Hardwarestationsprojekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
 
 ## <a name="development-environment"></a>Udviklingsmiljø
 
@@ -86,7 +86,7 @@ Hardwarestation-udvidelseskomponenterne er inkluderet i Retail SDK. Du kan fuldf
 
 Følg disse trin for at oprette installerbare pakker, der indeholder Commerce-komponenter, og for at anvende disse pakker i et produktionsmiljø.
 
-1. Udfør de trin, der er beskrevet i afsnittet [Udviklingsmiljø](#development-environment) tidligere i dette emne.
+1. Udfør de trin, der er beskrevet i afsnittet [Udviklingsmiljø](#development-environment) tidligere i denne artikel.
 2. Foretag følgende ændringer i pakkekonfigurationsfilerne under mappen **RetailSdk\\Assets**:
 
     1. I konfigurationsfilerne **commerceruntime.ext.config** og **CommerceRuntime.MPOSOffline.Ext.config** skal du føje følgende linje til afsnittet **komposition**.

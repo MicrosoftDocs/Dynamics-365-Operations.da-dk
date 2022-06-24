@@ -1,6 +1,6 @@
 ---
 title: Varedisponering med behovsprognoser
-description: Dette emne forklarer, hvordan du kan inkludere behovsprognoser under varedisponering med Planlægningsoptimering.
+description: Denne artikel forklarer, hvordan du kan inkludere behovsprognoser under varedisponering med Planlægningsoptimering.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878984"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
@@ -42,7 +42,7 @@ Hvis du vil konfigurere en behovsplan, så den omfatter en behovsprognose, skal 
 
     - **Prognosemodel** – Vælg den prognosemodel, der skal anvendes. Denne model tages i betragtning, når der genereres et forsyningsforslag for den aktuelle behovsplan.
     - **Medtag behovsprognose** – Angiv denne indstilling til *Ja* for at medtage behovsprognosen i den aktuelle behovsplan. Hvis du angiver den til *Nej*, medtages der ikke behovsprognosetransaktioner i behovsplanen.
-    - **Metode, der bruges til at reducere prognosekrav** – Vælg den metode, der skal bruges til at reducere prognosekravet. Du kan finde flere oplysninger i afsnittet [Prognosereduktionsnøgler](#reduction-keys) senere i dette emne.
+    - **Metode, der bruges til at reducere prognosekrav** – Vælg den metode, der skal bruges til at reducere prognosekravet. Du kan finde flere oplysninger i afsnittet [Prognosereduktionsnøgler](#reduction-keys) senere i denne artikel.
 
 1. I oversigtspanelet **Tidshorisont i dage** kan du angive følgende felter for at angive den periode, som behovsprognosen er inkluderet under:
 
@@ -61,7 +61,7 @@ Hvis du vil konfigurere en disponeringsgruppe, så den omfatter en behovsprognos
 1. I oversigtspanelet **Andet** skal du indstille følgende felter:
 
     - **Hovedplanstidshorisont** – Angiv det antal dage (fra dags dato), som behovsprognosen skal gælde for. Denne værdi kan tilsidesættes ved at bruge indstillingen **Hovedplan** på behovsplanen som beskrevet i det forrige afsnit.
-    - **Reduktionsnøgle** – Vælg den reduktionsnøgle, der skal anvendes. Du kan finde flere oplysninger i sektionen [Oprette og konfigurere en prognosereduktionsnøgle](#create-reduction-key) og [Bruge en reduktionsnøgle](#use-reduction-key) senere i dette emne.
+    - **Reduktionsnøgle** – Vælg den reduktionsnøgle, der skal anvendes. Du kan finde flere oplysninger i sektionen [Oprette og konfigurere en prognosereduktionsnøgle](#create-reduction-key) og [Bruge en reduktionsnøgle](#use-reduction-key) senere i denne artikel.
     - **Reducer prognose med** – For behovsplaner, hvor feltet **Metode, der er brugt til at reducere prognosebehovet** er angivet til *Transaktioner – reduktionsnøgle* eller *Transaktioner – dynamisk periode*, skal du angive, hvilke transaktioner der skal reducere prognoses. Vælg en af følgende værdier:
 
         - **Alle transaktioner** – Alle transaktioner skal reducere prognosen.

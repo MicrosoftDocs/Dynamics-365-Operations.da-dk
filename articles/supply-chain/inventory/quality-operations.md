@@ -1,6 +1,6 @@
 ---
 title: Operationer for uoverensstemmelser
-description: Dette emne beskriver, hvordan du opretter og bruger operationer til uoverensstemmelser.
+description: Denne artikel beskriver, hvordan du opretter og bruger operationer til uoverensstemmelser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35619454af8b1cb1b7d383d393362f58d9dd0ea6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2e63156dd2b230da7f1ea89e2c2006c1b4f3eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847985"
 ---
 # <a name="operations-for-nonconformances"></a>Operationer for uoverensstemmelser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du opretter og bruger operationer til uoverensstemmelser.
+Denne artikel beskriver, hvordan du opretter og bruger operationer til uoverensstemmelser.
 
 Du kan bruge siden **Operationer** til at definere klassifikationer af det arbejde, der kan udføres for en godkendt uoverensstemmelse. Når du knytter en relateret operation til en uoverensstemmelse, kan du angive detaljer som f.eks. det tilknyttede materiale, de arbejdstimer og gebyrer, der kræves for at udføre operationen. Systemet bruger disse oplysninger bruges til at beregne en forkalkuleret omkostning for operationen. De detaljerede oplysninger og forkalkulerede omkostninger er til reference. De relaterede operationer for kvalitet er ikke de samme som de operationer, der kan angives for en produktionsrute.
 

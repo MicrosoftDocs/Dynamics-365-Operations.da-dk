@@ -1,6 +1,6 @@
 ---
 title: Planlæg lastningsudnyttelse
-description: I dette emne beskrives, hvordan du kan oprette og planlægge belastningen for et lagersted.
+description: Denne artikel beskriver, hvordan du kan oprette og planlægge belastningen for et lagersted.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 728cf6e0b1bce660328f970176c218f66646ec8a
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 30932630e4b02d926ee2e4dbeb376f890493cf56
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873457"
 ---
 # <a name="schedule-load-utilization"></a>Planlæg lastningsudnyttelse
 

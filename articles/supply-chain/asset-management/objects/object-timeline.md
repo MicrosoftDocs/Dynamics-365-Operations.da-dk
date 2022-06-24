@@ -1,6 +1,6 @@
 ---
-title: Hændelseshistorik for aktiver
-description: Dette emne beskriver, hvordan du får adgang til hændelseshistorik for aktiver i Styring af aktiver.
+title: Hændelseshistorik for aktiv
+description: Denne artikel beskriver, hvordan du får adgang til hændelseshistorik for aktiver i Styring af aktiver.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670fa5800efad99d913e96dee8c6883f150b86d2227143dbdf392c7b380e89a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63045cf2fc493144897b8a857f615105f6d7b50f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865289"
 ---
-# <a name="asset-event-history"></a>Hændelseshistorik for aktiver
+# <a name="asset-event-history"></a>Hændelseshistorik for aktiv
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emne beskriver, hvordan du får adgang til hændelseshistorik for aktiver i Styring af aktiver. Siden **Hændelseshistorik for aktiver** viser den registreringshistorik, der er foretaget i et aktivs levetid. Du kan få adgang til denne side fra menupunkterne **Alle aktiver**, **Aktive aktiver** og **Mine aktive aktiver**. Vælg et aktiv, og vælg derefter **Hændelseshistorik**.
+Denne artikel beskriver, hvordan du får adgang til hændelseshistorik for aktiver i Styring af aktiver. Siden **Hændelseshistorik for aktiver** viser den registreringshistorik, der er foretaget i et aktivs levetid. Du kan få adgang til denne side fra menupunkterne **Alle aktiver**, **Aktive aktiver** og **Mine aktive aktiver**. Vælg et aktiv, og vælg derefter **Hændelseshistorik**.
 
 I oversigtspanelet **Detaljer** på siden **Hændelseshistorik for aktiver** kan du søge efter alle tilgængelige oplysninger. Du kan for eksempel bruge hændelseshistorikken for aktiver til at finde følgende oplysninger:
 

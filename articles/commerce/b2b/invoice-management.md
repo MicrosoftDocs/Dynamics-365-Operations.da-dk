@@ -1,6 +1,6 @@
 ---
 title: Fakturastyring til B2B-e-handelswebsteder
-description: Dette emne beskriver funktionerne for fakturastyring i Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
+description: Denne artikel beskriver funktionerne for fakturastyring i Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854920"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Fakturastyring til B2B-e-handelswebsteder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emne beskriver funktionerne for fakturastyring i Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
+Denne artikel beskriver funktionerne for fakturastyring i Microsoft Dynamics 365 Commerce business-to-business (B2B)-e-handelswebsteder.
 
 Det er almindelig praksis, at firmaer, der håndterer B2B-transaktioner, accepterer ordrer på kundekredit og derefter sender en faktura til kunderne, når de har opfyldt ordren. Der er defineret betalingsbetingelser for kunder, og der kan være visse rabatter, der kan være med til at motivere kunderne til at betale til tiden eller før. For at øge sandsynligheden for, at betalinger vil blive modtaget til tiden, giver B2B-e-handelswebsteder kunderne mulighed for at se alle deres fakturaer. Kunden kan nemt filtrere fakturaerne for at få vist betalte, ubetalte og delvist betalte fakturaer sammen med forfaldsdatoerne.
 
 ![Siden Fakturaer på et B2B-websted.](../media/ViewInvoices.png)
 
 > [!NOTE]
-> En bruger, der er logget på, kan kun se og betale sine egne fakturaer. Hvis en organisationskonto er konfigureret på rullemenuen **Fakturakonto** i oversigtspanelet **Faktura og levering** for debitorposten i Commerce-hovedkontoret, vil brugeren kunne se og betale fakturaer for organisationskontoen.
+> En bruger, der er logget på, kan kun se og betale sine egne fakturaer. Hvis en organisationskonto er konfigureret på rullemenuen **Fakturakonto** i oversigtspanelet **Faktura og levering** for debitorposten i Commerce Headquarters, vil brugeren kunne se og betale fakturaer for organisationskontoen.
 
 På siden **Fakturaer** på et B2B-websted kan en bruger vælge en ubetalt eller delvist betalt faktura og derefter vælge **Betal faktura**. Den valgte faktura føjes til indkøbsvognen, og brugeren kan fortsætte med betalingen. Brugeren kan derefter beslutte, om fakturabeløbet skal betales fuldt ud eller en del af beløbet. Betalingsmetoden aconto kan ikke bruges til at betale for fakturaer.
 
@@ -45,6 +45,6 @@ På siden **Fakturaer** kan en bruger også vælge **Anmod om faktura** ud for e
 
 ![Dialogboksen Anmod om faktura.](../media/RequestInvoice2.png)
 
-Når en bruger anmoder om en faktura, flyttes anmodningen til sektionen **B2B-anmodninger** på siden **Min konto**. Når **P-0001** og **Synkroniser ordrer og kanalanmodninger** derefter køres i Commerce-hovedkontoret, udløses fakturamailen, og statussen for B2B-anmodningen markeres som fuldført.
+Når en bruger anmoder om en faktura, flyttes anmodningen til sektionen **B2B-anmodninger** på siden **Min konto**. Når **P-0001** og **Synkroniser ordrer og kanalanmodninger** derefter køres i Commerce Headquarters, udløses fakturamailen, og statussen for B2B-anmodningen markeres som fuldført.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

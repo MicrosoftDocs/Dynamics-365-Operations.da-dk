@@ -1,6 +1,6 @@
 ---
 title: Administrere fradrag i fradragspanelet
-description: Dette emne beskriver, hvordan du bruger fradragspanelet til at behandle kundebetalinger, der omfatter fradrag.
+description: Denne artikel beskriver, hvordan du bruger fradragspanelet til at behandle kundebetalinger, der omfatter fradrag.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873602"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Administrere fradrag i fradragspanelet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du bruger fradragspanelet til at behandle kundebetalinger, der omfatter fradrag.
+Denne artikel beskriver, hvordan du bruger fradragspanelet til at behandle kundebetalinger, der omfatter fradrag.
 
 En kunde, der skyldes en rabat, kan beslutte ikke at vente på at få en rabatudbetaling. I stedet kan kunden sende en betaling, der omfatter et fradrag for rabatbeløbet. For at håndtere denne type transaktion kan du bruge fradragspanelet til at matche fradrag med åbne kreditposteringer, opdele fradrag, nægte fradrag og afskrive fradrag.
 
 > [!NOTE]
-> Fradragspanelet har længe været en del af salgs- og marketingfunktionen i Microsoft Dynamics 365 Supply Chain Management. Det er nu blevet udvidet, så det også fungerer med det nyere modul **Rabatstyring**. Dette emne beskriver, hvordan du kan bruge både de ældre funktioner og funktioner til rabatstyring i fradragspanelet. Men hvis du ikke har [aktiveret modulet **Rabatstyring** for systemet](rebate-management-enable.md), vil nogle af de funktioner, der er beskrevet her, ikke være tilgængelige for dig.
+> Fradragspanelet har længe været en del af salgs- og marketingfunktionen i Microsoft Dynamics 365 Supply Chain Management. Det er nu blevet udvidet, så det også fungerer med det nyere modul **Rabatstyring**. Denne artikel beskriver, hvordan du kan bruge både de ældre funktioner og funktioner til rabatstyring i fradragspanelet. Men hvis du ikke har [aktiveret modulet **Rabatstyring** for systemet](rebate-management-enable.md), vil nogle af de funktioner, der er beskrevet her, ikke være tilgængelige for dig.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -159,11 +159,11 @@ Følg disse trin for at oprette et nyt fradrag i fradragspanelet.
         - *Antalsbaseret* – Der oprettes en negativ salgsordre eller returordre.
 
     - **Kravsdato** – Vælg datoen for kravet. Standardværdien er dags dato.
-    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i dette emne.
+    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i denne artikel.
     - **Noter** – Tilføj eventuelle relevante noter. Når kravet er godkendt, kan godkenderen redigere eller føje det til kravets noter.
     - **Opret kravkladde** – Angiv denne indstilling for at angive, om kravkladden skal oprettes, når kravet eller fradraget oprettes:
 
-        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i dette emne). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
+        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i denne artikel). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
         - *Nej* – Der oprettes ingen kravkladde på dette tidspunkt. Den oprettes, når kravet godkendes. Der kan stadig knyttes en faktura til det nye krav, selvom der ikke er oprettet en kravkladde. Udligning kan dog ikke foretages uden kravkladden.
 
 1. Vælg **OK**.
@@ -197,11 +197,11 @@ Processen til oprettelse af et fradrag ud fra en debitorudligning ligner process
         - *Antalsbaseret* – Der oprettes en negativ salgsordre eller returordre.
 
     - **Kravsdato** – Vælg datoen for kravet. Standardværdien er dags dato.
-    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i dette emne.
+    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i denne artikel.
     - **Noter** – Tilføj eventuelle relevante noter. Når kravet er godkendt, kan godkenderen redigere eller føje det til kravets noter.
     - **Opret kravkladde** – Angiv denne indstilling for at angive, om kravkladden skal oprettes, når kravet eller fradraget oprettes:
 
-        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i dette emne). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
+        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i denne artikel). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
         - *Nej* – Der oprettes ingen kravkladde på dette tidspunkt. Den oprettes, når kravet godkendes. Der kan stadig knyttes en faktura til det nye krav, selvom der ikke er oprettet en kravkladde. Udligning kan dog ikke foretages uden kravkladden.
 
 1. Vælg **OK**.
@@ -235,11 +235,11 @@ Processen til oprettelse af et fradrag ud fra en debitorside ligner processen ti
         - *Antalsbaseret* – Der oprettes en negativ salgsordre eller returordre.
 
     - **Kravsdato** – Vælg datoen for kravet. Standardværdien er dags dato.
-    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i dette emne.
+    - **Kravårsag** – Vælg den årsagskode, der gælder for det aktuelle fradrag. Det valgte kravgrundlag påvirker de gældende indstillinger. Du kan finde flere oplysninger om, hvordan du opretter og konfigurerer de kravårsager, der kan vælges her, i afsnittet [Oprette fradragsårsager](#deduction-reasons) tidligere i denne artikel.
     - **Noter** – Tilføj eventuelle relevante noter. Når kravet er godkendt, kan godkenderen redigere eller føje det til kravets noter.
     - **Opret kravkladde** – Angiv denne indstilling for at angive, om kravkladden skal oprettes, når kravet eller fradraget oprettes:
 
-        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i dette emne). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
+        - *Ja* – Systemet opretter og bogfører en finanskladde ved hjælp af den kravkladde, der er oprettet på siden **Debitorparametre**. (Du kan finde flere oplysninger i [Konfigurere debitorer og fradrag](#accounts-receivable-deductions) tidligere i denne artikel). Når der er knyttet en faktura til kravet, bruges kravkladden til at reducere saldoen på den gældende faktura. Hvis kravet senere afvises, tilbageføres kravskladden og udligningerne (hvis der er vedhæftet en faktura).
         - *Nej* – Der oprettes ingen kravkladde på dette tidspunkt. Den oprettes, når kravet godkendes. Der kan stadig knyttes en faktura til det nye krav, selvom der ikke er oprettet en kravkladde. Udligning kan dog ikke foretages uden kravkladden.
 
 1. Vælg **OK**.
@@ -280,7 +280,7 @@ Benyt følgende fremgangsmåde for at afstemme et fradrag med en kredit.
 1. Vælg **Vedligehold \> Afstem** i handlingsruden. Systemet afstemmer fradraget med kreditten. Hvis der resterer en saldo i fradraget, vises den i feltet **Restbeløb** under fanen **Fradrag**.
 
     > [!NOTE]
-    > For fradrag, der blev oprettet med kommandoen **Nyt fradrag** i fradragspanelet, debitorudligningen eller debitorsiden, er kommandoen **Vedligehold \> Afstem** kun tilgængelig, hvis feltet **Kravstatus** er angivet til *Accepteret*. Denne kommando kan bruges til manuelt at afstemme den prisbaserede eller antalsbaserede transaktion med den tilknyttede kredit i sektionen **Åbne transaktioner**. Denne kredit oprettes enten, når fradraget godkendes (ved hjælp af kommandoen **Vedligehold \> Godkend fradrag**), eller når det er knyttet til en eksisterende kredit som beskrevet i [Kreditter, der oprettes uden for godkendelsesprocessen for fradrag](#credits-outside-approval) senere i dette emne. Den periodiske opgave *Udlign godkendte fradrag* (**Salg og marketing \> Periodiske opgaver \> Udlign godkendte fradrag**) kan også bruges til automatisk at afstemme fradrag og kreditter, der har matchende værdier og beløb for **Fradrags-id**.
+    > For fradrag, der blev oprettet med kommandoen **Nyt fradrag** i fradragspanelet, debitorudligningen eller debitorsiden, er kommandoen **Vedligehold \> Afstem** kun tilgængelig, hvis feltet **Kravstatus** er angivet til *Accepteret*. Denne kommando kan bruges til manuelt at afstemme den prisbaserede eller antalsbaserede transaktion med den tilknyttede kredit i sektionen **Åbne transaktioner**. Denne kredit oprettes enten, når fradraget godkendes (ved hjælp af kommandoen **Vedligehold \> Godkend fradrag**), eller når det er knyttet til en eksisterende kredit som beskrevet i [Kreditter, der oprettes uden for godkendelsesprocessen for fradrag](#credits-outside-approval) senere i denne artikel. Den periodiske opgave *Udlign godkendte fradrag* (**Salg og marketing \> Periodiske opgaver \> Udlign godkendte fradrag**) kan også bruges til automatisk at afstemme fradrag og kreditter, der har matchende værdier og beløb for **Fradrags-id**.
 
 ### <a name="split-a-deduction"></a>Opdele et fradrag
 

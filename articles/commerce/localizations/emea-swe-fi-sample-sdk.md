@@ -1,6 +1,6 @@
 ---
 title: Retningslinjer for eksempel på integration af kontrolenhed for Sverige (ældre)
-description: Dette emne indeholder retningslinjer for implementering af eksempel på integration af kontrolenhed for Sverige fra Retail SDK
+description: Denne artikel indeholder retningslinjer for implementering af eksempel på integration af kontrolenhed for Sverige fra Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870541"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Retningslinjer for eksempel på integration af kontrolenhed for Sverige (ældre)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder retningslinjer for implementering af eksempel på integration af kontrolenhed for Sverige fra Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på integration ad kontrolenhed for Sverige](emea-swe-fi-sample.md). 
+Denne artikel indeholder retningslinjer for implementering af eksempel på integration af kontrolenhed for Sverige fra Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på integration ad kontrolenhed for Sverige](emea-swe-fi-sample.md). 
 
-Eksemplet på regnskabsintegration for Sverige er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT), Hardwarestation og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Hardwarestation og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i dette emne. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
+Eksemplet på regnskabsintegration for Sverige er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT), Hardwarestation og POS. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT, Hardwarestation og POS-projekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
 
 ## <a name="development-environment"></a>Udviklingsmiljø
 
@@ -257,7 +257,7 @@ Overflytningsprocessen bør omfatte følgende trin.
 1. Opdater komponenterne til POS og Hardwarestation, deaktiver de udvidelser, der findes i det tidligere eksempel, og aktivér udvidelserne for det aktuelle eksempel.
 
     > [!NOTE]
-    > Afhængigt af miljøtypen finder du mere tekniske detaljer om overflytningsprocessen i afsnittet [Overflytning i et udviklingsmiljø](#migration-in-a-development-environment) eller afsnittet [Overflytning i et produktionsmiljø](#migration-in-a-production-environment) i dette emne.
+    > Afhængigt af miljøtypen finder du mere tekniske detaljer om overflytningsprocessen i afsnittet [Overflytning i et udviklingsmiljø](#migration-in-a-development-environment) eller afsnittet [Overflytning i et produktionsmiljø](#migration-in-a-production-environment) i denne artikel.
 
 ### <a name="migration-in-a-development-environment"></a>Overflytning i et udviklingsmiljø
 

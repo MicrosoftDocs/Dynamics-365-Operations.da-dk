@@ -1,6 +1,6 @@
 ---
 title: Tilknytte et Dynamics 365 Commerce-websted med en onlinekanal
-description: I dette emne forklares det, hvordan du kan binde dit Microsoft Dynamics 365 Commerce-websted til en eller flere onlinebutikker.
+description: Denne artikel forklarer, hvordan du kan binde dit Microsoft Dynamics 365 Commerce-websted til en eller flere onlinebutikker.
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 006c8b60791e0176c808762025f3bfdeaff9c48d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878667"
 ---
 # <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Tilknytte et Dynamics 365 Commerce-websted med en onlinekanal
 
 [!include [banner](includes/banner.md)]
 
-I dette emne forklares det, hvordan du kan binde dit Microsoft Dynamics 365 Commerce-websted til en eller flere onlinebutikker. 
+Denne artikel forklarer, hvordan du kan binde dit Microsoft Dynamics 365 Commerce-websted til en eller flere onlinebutikker. 
 
 Når du har klargjort dit Dynamics 365 Commerce-e-handelsmiljø ved hjælp af Microsoft Dynamics Lifecycle Services-portalen (LCS), er du klar til at oprette dit første e-handelswebsted. Når du begynder at oprette et websted, kan du knytte webstedet til en onlinebutik, der er oprettet tidligere. Dette trin binder webstedet til en onlinekanal og lader webstedet vise navigationshierarkiet, produkter, kategorier, priser, forsendelsesindstillinger og alt andet, du har defineret i onlinebutikken.
 

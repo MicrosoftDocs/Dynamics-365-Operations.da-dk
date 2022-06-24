@@ -1,6 +1,6 @@
 ---
 title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.6. november 2019)
-description: I dette emne beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.6.
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Dynamics 365 Supply Chain Management 10.0.6.
 author: kamaybac
 ms.date: 10/28/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 87bcda25b89135e052a5a883b816ea0bb430479a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8c97e4e5544c49d2e6a13b34061abfbf50e2932a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844432"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.6. november 2019)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.6. Denne version har et build-nummer på 10.0.234. Når den generelle tilgængelighedsdato er november, er de nye funktioner tilgængelige til tidlig frigivelse i oktober. Du kan få flere oplysninger om version 10.0.6 i [Yderligere ressourcer](whats-new-scm-10-0-6.md#additional-resources).
+I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.6. Denne version har et build-nummer på 10.0.234. Når den generelle tilgængelighedsdato er november, er de nye funktioner tilgængelige til tidlig frigivelse i oktober. Du kan få flere oplysninger om version 10.0.6 i [Yderligere ressourcer](whats-new-scm-10-0-6.md#additional-resources).
 
 ## <a name="product-configuration-models-v2-data-entity"></a>V2-dataenhed i produktkonfigurationsmodeller
 
@@ -60,12 +60,12 @@ Se [Dynamics 365: 2019-frigivelsesplan bølge 2](/dynamics365-release-plan/2019w
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og udfasede Supply Chain Management-funktioner
 
-Emnet [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
+Artiklen [Fjernede eller udfasede funktioner Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver de funktioner, der er planlagt eller skal fjernes eller udfases for Supply Chain Management.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
 
-Før en funktion fjernes fra produktet, vil du få besked om udfasning i emnet [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
+Før en funktion fjernes fra produktet, vil du få besked om udfasning i artiklen [Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder, inden de fjernes.
 
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 

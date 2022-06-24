@@ -1,6 +1,6 @@
 ---
-title: Arbejd med CSS-tilsidesættelsesfiler
-description: Dette emne indeholder en beskrivelse af hvorfor, hvornår og hvordan du bruger CSS-tilsidesættelsesfiler (Cascading Style Sheets) i Microsoft Dynamics 365 Commerce.
+title: Arbejde med CSS-tilsidesættelsesfiler
+description: Denne artikel indeholder en beskrivelse af hvorfor, hvornår og hvordan du bruger CSS-tilsidesættelsesfiler (Cascading Style Sheets) i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892854"
 ---
 # <a name="work-with-css-override-files"></a>Arbejde med CSS-tilsidesættelsesfiler
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en beskrivelse af hvorfor, hvornår og hvordan du bruger CSS-tilsidesættelsesfiler (Cascading Style Sheets) i Microsoft Dynamics 365 Commerce.
+Denne artikel indeholder en beskrivelse af hvorfor, hvornår og hvordan du bruger CSS-tilsidesættelsesfiler (Cascading Style Sheets) i Microsoft Dynamics 365 Commerce.
 
 Permanente webstedstypografier skal normalt håndteres via et websteds tema. Temaerne indeholder de grundlæggende indstillinger for CSS og typografi, der er gældende for modulerne på siderne på dit websted. Temaer oprettes ved hjælp af det online SDK (Software Development Kit) til Dynamics 365 Commerce, og implementeres på dine websteder via Microsoft Dynamics Lifecycle Services (LCS). Temafejlfindingsfunktioner og modulgrænsefladekonfigurationer i SDK hjælper webstedsudviklere med at oprette tilpassede og sammenhængende webstedsdesignpakker. Når disse designpakker installeres på et websted, kan webstedsforfatterne fokusere på at oprette, redigere og udgive indhold i stedet for at udvikle webstederne.
 

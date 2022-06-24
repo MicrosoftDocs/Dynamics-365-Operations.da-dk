@@ -1,6 +1,6 @@
 ---
 title: Oversigt over produktionsproces
-description: Dette emne indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
+description: Denne artikel indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
 author: johanhoffmann
 ms.date: 09/13/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8ebf0418a7d8b93e2ac58f90a686c63fd859355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852209"
 ---
 # <a name="production-process-overview"></a>Oversigt over produktionsproces
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
+Denne artikel indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
 
 Produktionen af produkter, en proces, der også kaldes produktionslivscyklus, følger bestemte trin, der er nødvendige for at gennemføre fremstillingen af en vare. Livscyklussen begynder med oprettelsen af produktionsordre, batchordre eller kanban. Det slutter med en færdig produceret vare, der enten er klar til en kunde eller en anden fase i produktionen. Hvert enkelt trin i dette forløb kræver, at der angives forskellige former for oplysninger, så processen kan fuldføres. Når et trin er afsluttet, viser produktionsordren, batchordren eller kanban en ændring i produktionsstatus. Forskellige typer af produkter kræver forskellige fremstillingsprocesser.
 

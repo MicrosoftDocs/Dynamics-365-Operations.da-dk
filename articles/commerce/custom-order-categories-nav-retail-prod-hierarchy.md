@@ -1,6 +1,6 @@
 ---
 title: Ændre sorteringsrækkefølgen for merchandisingenheder
-description: I dette emne forklares de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder i Dynamics 365 Commerce.
+description: Denne artikel forklarer de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 08/05/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847648"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ændre sorteringsrækkefølgen for merchandisingenheder
 
@@ -29,7 +29,7 @@ ms.locfileid: "7779536"
 
 Detailhandlere regner produktopdagelse for et primært værktøj til kundeinteraktion på tværs af alle kanaler. Forskellige funktioner kan hjælpe kunderne med at finde produkter på en nem måde. De kan f.eks. gennemse kategorier, søge og filtrere.
 
-I dette emne forklares de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder. Det forklarer også, hvordan sorteringsrækkefølgen ændres.
+Denne artikel forklarer de begreber, der er relateret til styring af visningsrækkefølgen for forskellige merchandising-relaterede enheder. Det forklarer også, hvordan sorteringsrækkefølgen ændres.
 
 ## <a name="overview"></a>Overblik
 

@@ -1,6 +1,6 @@
 ---
-title: Vis feriesaldi i produktionsteam i produktionsudførelse
-description: Dette emne indeholder et eksempelscenario, der viser, hvordan Microsoft Dynamics 365 Supply Chain Management konfigureres, så programmet bruger lønstatistik for at give arbejdere et overblik over deres feriesaldo for det indeværende år.
+title: Vis feriesaldi i grænsefladen til produktionsudførelse
+description: Denne artikel indeholder et eksempelscenario, der viser, hvordan Microsoft Dynamics 365 Supply Chain Management konfigureres, så programmet bruger lønstatistik for at give arbejdere et overblik over deres feriesaldo for det indeværende år.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852267"
 ---
-# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Vis feriesaldi i produktionsteam i produktionsudførelse
+# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Vis feriesaldi i grænsefladen til produktionsudførelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder et eksempelscenario, der viser, hvordan Microsoft Dynamics 365 Supply Chain Management konfigureres, så programmet bruger lønstatistik for at give hver arbejder et overblik over deres feriesaldo for det indeværende år. Arbejdere vil kunne se deres feriesaldo i dialogboksen **Min dag** i brugergrænsefladen til produktionsudførelse.
+Denne artikel indeholder et eksempelscenario, der viser, hvordan Microsoft Dynamics 365 Supply Chain Management konfigureres, så programmet bruger lønstatistik for at give hver arbejder et overblik over deres feriesaldo for det indeværende år. Arbejdere vil kunne se deres feriesaldo i dialogboksen **Min dag** i brugergrænsefladen til produktionsudførelse.
 
 I dette scenario bruges den danske ferielov, hvor ferieåret går fra 1. september til og med 31. august. I dette scenario har dit firma ansat en ny arbejder og vil tildele denne arbejder en saldo på 10 feriedage resten af det indeværende ferieår.
 

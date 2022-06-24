@@ -1,6 +1,6 @@
 ---
 title: Synkronisere oplysninger på lagerniveau fra Supply Chain Management til Field Service
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
+description: Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 05/07/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fc14fc63bc1a69a57b10f39b2cb9fb8014e6f70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844787"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisere oplysninger på lagerniveau fra Supply Chain Management til Field Service 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060939"
 
 
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
+Denne artikel beskriver de skabeloner og underliggende opgaver, der bruges til at synkronisere oplysninger på lagerniveau fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
 [![Synkronisering af forretningsprocesser mellem Supply Chain Management og Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 

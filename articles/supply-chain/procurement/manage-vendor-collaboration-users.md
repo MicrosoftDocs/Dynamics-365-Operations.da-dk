@@ -1,6 +1,6 @@
 ---
 title: Administrere brugere af kreditorsamarbejde
-description: Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde.
+description: Denne artikel beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 515d995641f5bbe976643a38c26a46f7d8a115dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 823e92cadc36659264a70132ed1390c7bcf8bc5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852296"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brugere af kreditorsamarbejde
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde. 
+Denne artikel beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde. 
 
-Grænsefladen for kreditorsamarbejde i Dynamics 365 Supply Chain Management viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. I dette emne vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Supply Chain Management. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandørsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Grænsefladen for kreditorsamarbejde i Dynamics 365 Supply Chain Management viser oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne leverandører. Du kan oprette nye kontakter for kreditorsamarbejde og anmode om, at nye brugere forsynes, hvis du arbejder som en ekstern leverandør med de **Kreditoradministrator (ekstern)** som sikkerhedsrolle eller tilsvarende tilladelser. Du kan også udføre disse opgaver, hvis du arbejder som en professionel indkøber. Denne artikel vedrører denne rolle en professionel indkøber, der arbejder i virksomheden, som ejer forekomsten af Supply Chain Management. Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er ekstern leverandør, under [Leverandørsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Du kan finde flere oplysninger om, hvordan du bruger leverandørsamarbejde, hvis du er professionel indkøber, under [Leverandørsamarbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 

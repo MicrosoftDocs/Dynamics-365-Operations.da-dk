@@ -1,6 +1,6 @@
 ---
 title: Oversigt over registrering af tid og fremmøde
-description: Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I dette emne beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler.
+description: Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. Denne artikel beskriver registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler.
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af257427661cb9a0d976800b657d3eb4afe7feca
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f648663d81cd37a1df7794ee9d5ad6598fb16594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875211"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Oversigt over registrering af tid og fremmøde
 
 [!include [banner](../includes/banner.md)]
 
-Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I dette emne beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler.
+Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. Denne artikel beskriver registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler.
 
 ## <a name="registrations"></a>Registreringer
 

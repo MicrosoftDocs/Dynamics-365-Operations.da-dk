@@ -1,6 +1,6 @@
 ---
 title: Forsyningsplan
-description: Dette emne indeholder oplysninger om siden Forsyningsplan og dens funktioner.
+description: Denne artikel indeholder oplysninger om siden Forsyningsplan og dens funktioner.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851733"
 ---
 # <a name="supply-schedule"></a>Forsyningsplan
 
@@ -28,7 +28,7 @@ Siden **Forsyningsplan** viser en omfattende oversigt over udbud og efterspørgs
 
 Du kan åbne siden **Forsyningsplan** på en af følgende måder:
 
-- Gå til **Varedisponering \> Varedisponering \> Forsyningsplan**. I dialogboksen **Rediger filter** skal du angive den plan og det produkt, du leder efter, ved at angive filterværdier i de felter, der vises. (I resten af dette emne kaldes den samling filterværdier, du angiver, for "filteret" eller "det aktuelle filter"). Når du er færdig, skal du vælge **OK**.
+- Gå til **Varedisponering \> Varedisponering \> Forsyningsplan**. I dialogboksen **Rediger filter** skal du angive den plan og det produkt, du leder efter, ved at angive filterværdier i de felter, der vises. (I resten af denne artikel kaldes den samling filterværdier, du angiver, for "filteret" eller "det aktuelle filter"). Når du er færdig, skal du vælge **OK**.
 - Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**. Vælg eller åbn et produkt. Vælg derefter **Forsyningsplan** i gruppen **Vis** under fanen **Plan** i handlingsruden.
 - Gå til **Varedisponering \> Konfiguration \> Behovsprognose \> Varefordelingsnøgler**. Vælg en varefordelingsnøgle, der skal bruges som produktfamilie. Vælg derefter **Forsyningsplan** i handlingsruden.
 - Gå til **Varedisponering \> Varedisponering \> Ordreforslag**. Vælg eller åbn et ordreforslag. Vælg derefter **Forsyningsplan** i gruppen **Vis** under fanen **Vis** i handlingsruden.

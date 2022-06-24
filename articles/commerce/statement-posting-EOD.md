@@ -1,6 +1,6 @@
 ---
 title: Forbedringer til funktioner til bogføring af opgørelse
-description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
+description: Denne artikel beskriver de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886900"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Denne artikel beskriver det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 

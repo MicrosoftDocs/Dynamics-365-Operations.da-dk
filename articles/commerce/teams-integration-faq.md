@@ -1,6 +1,6 @@
 ---
 title: Ofte stillede spørgsmål til Dynamics 365 Commerce- og Microsoft Teams-integration
-description: Dette emne indeholder svar på ofte stillede spørgsmål vedrørende Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
+description: Denne artikel indeholder svar på ofte stillede spørgsmål vedrørende Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,28 +12,28 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 16ad6cec0fb852d863039740e9f2c3406467e899
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02f10e446349803ce5629fed0be4176f2df2be0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869121"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Ofte stillede spørgsmål til Dynamics 365 Commerce- og Microsoft Teams-integration
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder svar på ofte stillede spørgsmål vedrørende Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
+Denne artikel indeholder svar på ofte stillede spørgsmål vedrørende Microsoft Dynamics 365 Commerce- og Microsoft Teams-integration.
 
 ### <a name="who-in-the-store-becomes-an-owner-of-a-team-while-provisioning-teams-from-commerce"></a>Hvem i butikken bliver ejer af et team, når Teams klargøres fra Commerce? 
 
 Alle butikschefer føjes automatisk til den tilsvarende teamgruppe som ejere, så de kan udføre handlinger, f.eks. tilføjelse af en privat kanal og tilføjelse eller sletning af medlemmer. 
 
-### <a name="how-do-i-assign-the-communications-manager-role-to-an-employee-in-commerce-headquarters"></a>Hvordan tildeler jeg rollen "kommunikationschef" til en medarbejder i Commerce-hovedkontoret? 
+### <a name="how-do-i-assign-the-communications-manager-role-to-an-employee-in-commerce-headquarters"></a>Hvordan tildeler jeg rollen "kommunikationschef" til en medarbejder i Commerce Headquarters? 
 
-Kommunikationschefer har i Microsoft Teams mulighed for at oprette og publicere opgavelister. Organisationsmedarbejdere, der har brug for at blive kommunikationschefer, skal have rollen "detailopgaveadministrator" tildelt i Commerce-hovedkontoret.
+Kommunikationschefer har i Microsoft Teams mulighed for at oprette og publicere opgavelister. Organisationsmedarbejdere, der har brug for at blive kommunikationschefer, skal have rollen "detailopgaveadministrator" tildelt i Commerce Headquarters.
 
-Hvis du vil tildele rollen detailopgaveadministrator til en medarbejder i Commerce-hovedkontoret, skal du udføre følgende trin.
+Hvis du vil tildele rollen detailopgaveadministrator til en medarbejder i Commerce Headquarters, skal du udføre følgende trin.
 
 1. Gå til **Retail og Commerce \> Medarbejdere \> Brugere**.
 1. Vælg medarbejderen.
@@ -42,7 +42,7 @@ Hvis du vil tildele rollen detailopgaveadministrator til en medarbejder i Commer
 
 ### <a name="how-do-i-make-a-specific-organization-hierarchy-available-to-upload-into-microsoft-teams"></a>Hvordan gør jeg et bestemt organisationshierarki tilgængeligt for upload til Microsoft Teams?
 
-I Commerce-hovedkontoret er hver organisations hierarki tilknyttet et eller flere formål. Kontrollér, at det hierarki, du vil klargøre til Microsoft Teams, har formålet **Detailrapportering** tilknyttet, som vist i følgende billede af eksemplet nedenfor. 
+I Commerce Headquarters er hver organisations hierarki tilknyttet et eller flere formål. Kontrollér, at det hierarki, du vil klargøre til Microsoft Teams, har formålet **Detailrapportering** tilknyttet, som vist i følgende billede af eksemplet nedenfor. 
 
 ![Eksempel på et formål med organisationshierarki i Commerce Headquarters.](media/d365-commerce-organization-hierarchies-purpose.png)
 
@@ -50,7 +50,7 @@ I Commerce-hovedkontoret er hver organisations hierarki tilknyttet et eller fler
 
 Du kan finde oplysninger om, hvordan du konfigurerer Commerce POS-logon til at bruge Azure AD-godkendelse, i [Aktivere Azure Active Directory-godkendelse for POS-logon](aad-pos-logon.md).
 
-### <a name="how-do-i-map-stores-and-corresponding-teams-in-commerce-headquarters-if-my-organization-has-already-created-teams-in-microsoft-teams"></a>Hvordan tilknytter jeg butikker og tilsvarende teams i Commerce-hovedkontoret, hvis min organisation allerede har oprettet teams i Microsoft Teams?
+### <a name="how-do-i-map-stores-and-corresponding-teams-in-commerce-headquarters-if-my-organization-has-already-created-teams-in-microsoft-teams"></a>Hvordan tilknytter jeg butikker og tilsvarende teams i Commerce Headquarters, hvis min organisation allerede har oprettet teams i Microsoft Teams?
 
 Oplysninger om, hvordan du kan tilknytte butikker og teams, hvis der findes eksisterende teams, finder du i [Tilknytte butikker og tilsvarende teams, hvis organisationen har eksisterende teams i Microsoft Teams](map-stores-existing-teams.md).
 
@@ -67,7 +67,7 @@ Hvis en butik ikke har chefer, oprettes der ikke en teamgruppe for butikken elle
 
 ### <a name="what-happens-if-a-store-manager-leaves-the-company"></a>Hvad sker der, hvis en butikschef forlader firmaet?
 
-Alle med ejerrollen kan tilføje en ny butikschef i Commerce-hovedkontoret og klargøre Teams igen, så den nye chef får de nødvendige rettigheder i Teams for gruppen. 
+Alle med ejerrollen kan tilføje en ny butikschef i Commerce Headquarters og klargøre Teams igen, så den nye chef får de nødvendige rettigheder i Teams for gruppen. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

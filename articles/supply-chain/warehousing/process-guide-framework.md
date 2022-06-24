@@ -1,6 +1,6 @@
 ---
 title: Procesvejledningsstruktur
-description: Dette emne indeholder oplysninger om procesvejledningsstruktur til udviklere, der udvider vores mobilprocesser for lagersteder i X++.
+description: Denne artikel indeholder oplysninger om procesvejledningsstruktur til udviklere, der udvider vores mobilprocesser for lagersteder i X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860429"
 ---
 # <a name="process-guide-framework"></a>Procesvejledningsstruktur
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om procesvejledningsstruktur til udviklere, der udvider mobilprocesserne for lagersteder i X++. Mobilprocesserne for lagerstedet kan udvides, fordi processerne opdeles i små trin. Forretningslogikken og opbygningen af brugergrænsefladen for hvert trin er blevet udtrækket til individuelle klasser, hvilket gør det muligt at udvide dem.
+Denne artikel indeholder oplysninger om procesvejledningsstruktur til udviklere, der udvider mobilprocesserne for lagersteder i X++. Mobilprocesserne for lagerstedet kan udvides, fordi processerne opdeles i små trin. Forretningslogikken og opbygningen af brugergrænsefladen for hvert trin er blevet udtrækket til individuelle klasser, hvilket gør det muligt at udvide dem.
 
 ## <a name="overview-of-the-existing-design"></a>Oversigt over det eksisterende design
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Du kan finde samme kildekode til X++-metoderne i dette emne ved hjælp af Application Explorer. Filtrer på klassenavnet, højreklik på klassenavnet, og vælg derefter **Vis kode**.
+> Du kan finde samme kildekode til X++-metoderne i denne artikel ved hjælp af Application Explorer. Filtrer på klassenavnet, højreklik på klassenavnet, og vælg derefter **Vis kode**.
 
 ### <a name="step-3-start-the-production-order"></a>Trin 3: Starte produktionsordren
 
@@ -421,7 +421,7 @@ Når den gør det, beder den trinnet om at oprette en handlingsklasse for det ov
 
 ### <a name="summary"></a>Resumé
 
-Hvis du vil opsummere alt det, hvad der er forklaret i dette emne, findes der her en omfattende oversigt over den kode, der skal bruges til processen:
+Hvis du vil opsummere alt det, hvad der er forklaret i denne artikel, findes der her en omfattende oversigt over den kode, der skal bruges til processen:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Hvis du vil opsummere alt det, hvad der er forklaret i dette emne, findes der he
         ```
 
         > [!NOTE]
-        > Metoden **generateItemInfoForProdId()**, der bruges til generering af etiketter for vareoplysninger, er udeladt i dette emne. Denne metode forespørger et par tabeller for at hente vare-id, beskrivelse og dimensioner. Hvis du vil have en bedre forståelse af **generateItemInfoForProdId()**, skal du se på kildekoden.
+        > Metoden **generateItemInfoForProdId()**, der bruges til generering af etiketter for vareoplysninger, er udeladt i Denne artikel. Denne metode forespørger et par tabeller for at hente vare-id, beskrivelse og dimensioner. Hvis du vil have en bedre forståelse af **generateItemInfoForProdId()**, skal du se på kildekoden.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Hvis du vil opsummere alt det, hvad der er forklaret i dette emne, findes der he
 
 ### <a name="extending-a-business-process"></a>Udvide en forretningsproces
 
-Dette emne har indtil videre fremhævet, hvordan du kan opbygge en ny proces ved hjælp af **ProcessGuide**-strukturen. I dette sidste afsnit kan du finde nogle eksempler på, hvordan denne forretningsproces kan udvides.
+Denne artikel har indtil videre fremhævet, hvordan du kan opbygge en ny proces ved hjælp af **ProcessGuide**-strukturen. I dette sidste afsnit kan du finde nogle eksempler på, hvordan denne forretningsproces kan udvides.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Tilføje et trin i et flow (ved hjælp af ProcessGuideNavigationAgentDefault)
 

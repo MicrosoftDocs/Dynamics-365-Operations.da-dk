@@ -1,6 +1,6 @@
 ---
 title: Oprette arbejdsordrer
-description: Dette emne beskriver, hvordan du opretter arbejdsordrer i Styring af aktiver.
+description: Denne artikel beskriver, hvordan du opretter arbejdsordrer i Styring af aktiver.
 author: johanhoffmann
 ms.date: 02/01/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743692"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891199"
 ---
 # <a name="creating-work-orders"></a>Oprette arbejdsordrer
 
@@ -60,7 +60,7 @@ Hvis du vil oprette arbejdsordrer, der er baseret på din vedligeholdelsestidspl
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppere arbejdsordrelinjer, som oprettes automatisk, mens vedligeholdelsesplanen køres
 
-Denne funktion giver dig mulighed for at definere regler for gruppering af arbejdsordrelinjer under en enkelt arbejdsordre, når systemet er konfigureret til at generere arbejdsordrer automatisk på baggrund af en vedligeholdelsesplan. Tidligere kunne automatisk genererede arbejdsordrer kun indeholde én linje. Men du kan nu gruppere arbejdsordrer efter f.eks. aktiv, aktivtype eller arbejdssted. (Manuelt genererede arbejdsordrer kan allerede være grupperet på denne måde som beskrevet i forrige afsnit i dette emne).
+Denne funktion giver dig mulighed for at definere regler for gruppering af arbejdsordrelinjer under en enkelt arbejdsordre, når systemet er konfigureret til at generere arbejdsordrer automatisk på baggrund af en vedligeholdelsesplan. Tidligere kunne automatisk genererede arbejdsordrer kun indeholde én linje. Men du kan nu gruppere arbejdsordrer efter f.eks. aktiv, aktivtype eller arbejdssted. (Manuelt genererede arbejdsordrer kan allerede være grupperet på denne måde som beskrevet i forrige afsnit i denne artikel).
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivere gruppering for automatisk genererede arbejdsordrer
 

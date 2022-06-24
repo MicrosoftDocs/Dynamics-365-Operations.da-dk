@@ -1,6 +1,6 @@
 ---
 title: Domæner i Dynamics 365 Commerce
-description: Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
+description: Denne artikel beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848948"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emne beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
+Denne artikel beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 
-Domæner er webadresser, der bruges til at navigere til Dynamics 365 Commerce-websteder i en webbrowser. Du styrer administrationen af dit domæne hos en valgt DNS-serverudbyder (Domain Name Server). Der henvises til domæner i hele Dynamics 365 Commerce-webstedsgeneratoren for at koordinere, hvordan der er adgang til et websted, når det udgives. I dette emne gennemgås, hvordan domæner håndteres og henvises til i hele livscyklussen for udviklingen og lanceringen af Commerce-webstedet.
+Domæner er webadresser, der bruges til at navigere til Dynamics 365 Commerce-websteder i en webbrowser. Du styrer administrationen af dit domæne hos en valgt DNS-serverudbyder (Domain Name Server). Der henvises til domæner i hele Dynamics 365 Commerce-webstedsgeneratoren for at koordinere, hvordan der er adgang til et websted, når det udgives. Denne artikel gennemgår, hvordan domæner håndteres og henvises til i hele livscyklussen for udviklingen og lanceringen af Commerce-webstedet.
 
 > [!NOTE]
 > Pr. 6. maj 2022 vil alle miljøer, der oprettes i Dynamics 365 Commerce, blive klargjort med `.dynamics365commerce.ms`-domænet, hvilket erstatter det tidligere mønster for `.commerce.dynamics.com`. De eksisterende miljøer, der er klargjort med `.commerce.dynamics.com`-domænet, vil fortsætte med at fungere.
