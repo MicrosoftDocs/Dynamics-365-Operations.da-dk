@@ -10,18 +10,16 @@
           items:
             - name: Nyheder eller ændringer i programmer til finans og drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nyheder eller ændringer i Platformospdateringer
+            - name: Nyheder eller ændringer i Platformopdateringer
               items:
-                - name: Nyheder eller ændringer på startsiden for Platformospdatering
+                - name: Nyheder eller ændringer på startsiden for Platformopdatering
                   href: get-started/whats-new-home-page.md
-                - name: Platformospdateringer for version 10.0.28 (august 2022)
+                - name: Platformopdateringer for version 10.0.28 (august 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Platformospdateringer for version 10.0.27 (juli 2022)
+                - name: Platformopdateringer for version 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platformospdateringer for version 10.0.26 (maj 2022)
+                - name: Platformopdateringer for version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platformsopdateringer til version 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -108,11 +106,11 @@
                       items:
                         - name: Kundeemne til kontanter
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
+                        - name: Synkronisere konti fra Sales direkte med kunder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                         - name: Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
+                        - name: Synkronisere kontakter fra Sales direkte med kontakter eller kunder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
                         - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
@@ -376,19 +374,19 @@
                       href: deployment/on-premises-overview.md
                     - name: Planlægge og forberede udrulninger i det lokale miljø
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) understøttet software
+                    - name: 'Software, der understøttes i det lokale miljø'
                       href: deployment/onprem-compatibility.md
                     - name: Krav til tilpasning af hardware
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Godkendelse i Dynamics 365 Finance + Operations (on-premises)
+                    - name: Godkendelse af miljøer i det lokale miljø
                       href: deployment/authentication-onprem.md
-                - name: Konfigurere og udrulle miljøer i det lokale miljø
+                - name: Opsætte og udrulle miljøer i det lokale miljø
                   items:
-                    - name: Konfigurere projekter i det lokale miljø i LCS
+                    - name: Opsætte projekter i det lokale miljø i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformospdatering 41 og senere)
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdatering 41 og senere)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformospdatering 12 til 40)
+                    - name: Konfigurere og installere miljøer i det lokale miljø (Platformopdatering 12 til 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
                       href: deployment/deploy-retail-onprem.md
@@ -402,17 +400,17 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Klientens internetforbindelse
                       href: user-interface/client-disconnected.md
-                    - name: Konfigurere kun batch-AOS-noder og kun interaktive AOS-noder i lokale installationer
+                    - name: Konfigurere kun batch og kun interaktive AOS-noder i udrulninger i det lokale miljø
                       href: deployment/onprem-batchonly.md
                     - name: Konfigurere høj tilgængelighed til SQL Server Reporting Services-noder (SSRS-noder)
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurere proxyer til det lokale miljø
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurere appen Lagersted til udrulninger i det lokale miljø
+                    - name: Konfigurere appen Warehousing til udrulninger i det lokale miljø
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Aktiver RSAT i Finance + Operations (on-premises)-miljøer
+                    - name: Aktivere RSAT i miljøer i det lokale miljø
                       href: deployment/onprem-rsat-configuration.md
-                    - name: Installere netværksprinterenheder i det lokale miljø
+                    - name: Installere netværksprinterenheder i miljøer i det lokale miljø
                       href: analytics/install-network-printer-onprem.md
                     - name: Diagnosticering i det lokale miljø
                       href: deployment/on-premises-diagnostics.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Genbruge den samme AD FS-forekomst til flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Opgradere Windows Server på dine Microsoft Dynamics 365 Finance + Operations (on-premises)-miljøer
+                    - name: Opgradere Windows Server på dine miljøer i det lokale miljø
                       href: deployment/onprem-upgrade-os.md
-                    - name: Opgradere SQL Server-forekomst af Microsoft Dynamics 365 Finance + Operations (on-premises)-miljøer
+                    - name: Opgradere er erstatte forekomsten af SQL Server i miljøer i det lokale miljø
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -982,6 +980,8 @@
                   href: lifecycle-services/configuration-manager-lcs.md
                 - name: Opsætning af konfigurationsstyring
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: Kopiere konfigurationer
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: Konfigurere servicen for opgradering af kode
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Oprette eller opdatere metoder
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps-filtypenavn selvstudium (offentlig forhåndsversion)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Dynamics 365 Translation Service Visual Studio Code-udvidelse (offentlig forhåndsversion)
+                - name: Visual Studio-filtypenavn (personlig prøveversion)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Visual Studio Code-filtypenavn (offentlig forhåndsversion)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integration
           items:
@@ -1602,6 +1604,8 @@
               href: sysadmin/implement-b2b.md
             - name: Datavedligeholdelse
               href: sysadmin/DataMaintenancePortal.md
+            - name: Administrere adgangen til netværksprintere på tværs af juridiske enheder
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Sikkerhed
               items:
                 - name: Rollebaseret sikkerhed
@@ -1836,7 +1840,7 @@
               items:
                 - name: Oprette formularen Gebyrtyper for leje
                   href: user-interface/build-rental-charge-type-form.md
-                - name: Oprette formularen Debitor
+                - name: Oprette formularen Kunde
                   href: user-interface/build-customer-form.md
                 - name: Opbygge navigation
                   href: user-interface/build-navigation.md

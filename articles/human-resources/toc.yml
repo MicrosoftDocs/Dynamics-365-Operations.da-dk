@@ -496,6 +496,8 @@
                   items:
                     - name: Administrere rekrutteringsprojektprocesser
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Opsætte rekrutteringsprojekter
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: Angive ansøger og ansøgningsdata manuelt
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Udarbejde og åbne jobansættelser
@@ -624,9 +626,13 @@
                   href: hr-benefits-setup-employee-self-service.md
                 - name: Oprette frynsegodeplaner
                   items:
-                    - name: Konfigurere frynsegodeplaner
+                    - name: Opsætte frynsegodeplaner
                       href: hr-benefits-plans-setup.md
-                    - name: Konfigurere flekskreditprogrammer
+                    - name: Oprette frynsegodeplaner for medarbejder
+                      href: hr-benefits-plans-worker.md
+                    - name: Opsætte fremtidige livsbegivenheder
+                      href: hr-benefits-plans-future-life-events.md
+                    - name: Opsætte flekskreditprogrammer
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Behandle frynsegodeplaner
                   items:
@@ -836,6 +842,10 @@
               href: hr-developer-api-authentication.md
             - name: Enheder
               items:
+                - name: Stillingsdetaljer
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Valg for ansættelsestype
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: Oversigt over MyLeaveRequests

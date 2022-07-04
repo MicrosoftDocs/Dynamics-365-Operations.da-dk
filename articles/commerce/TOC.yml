@@ -18,8 +18,6 @@
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (maj 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
-                - name: Commerce 10.0.25 (april 2022)
-                  href: get-started/whats-new-commerce-10-0-25.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -70,23 +68,19 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Oprette og automatisere test af brugeraccept
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurere et Dynamics 365 Commerce-evalueringmiljø
+            - name: Opsætte et Dynamics 365 Commerce-sandkassemiljø
               items:
-                - name: Konfigurere en Dynamics 365 Commerce-oversigt
-                  href: cpe-overview.md
-                - name: Klargøre et Dynamics 365 Commerce-evalueringsmiljø
+                - name: Klargøre et Dynamics 365 Commerce-sandkassemiljø
                   href: provisioning-guide.md
-                - name: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
+                - name: Konfigurere et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-post-provisioning.md
-                - name: Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
+                - name: Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-bopis.md
-                - name: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
+                - name: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-optional-features.md
-                - name: Konfigurere Dynamics 365 Commerce-Ofte stillede spørgsmål
-                  href: cpe-faq.md
             - name: Overvejelser i forbindelse med udrulning
               items:
-                - name: Installationsindstillinger
+                - name: Udrulningsindstillinger
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
                 - name: Sammenligning af funktioner i skyen og i det lokale miljø
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
@@ -440,6 +434,8 @@
                           href: pos-healthcheck.md
                         - name: Understøttelse af eksterne netværksenheder
                           href: dev-itpro/network-peripherals.md
+                        - name: Ekstern kompatibilitet
+                          href: Compatible-peripherals.md
                     - name: Skærmlayout
                       items:
                         - name: Skærmlayouts til demodata i MPOS/CPOS
@@ -870,7 +866,7 @@
           items:
             - name: Kundestyring i butikker
               href: customer-mgmt-stores.md
-            - name: Asynkron oprettelsestilstand for debitor
+            - name: Asynkron oprettelsestilstand for kunde
               href: async-customer-mode.md
             - name: Konvertere asynkrone kunder til synkrone kunder
               href: convert-async-to-sync.md
@@ -986,7 +982,7 @@
                   href: set-up-B2C-tenant.md
                 - name: Konfigurere brugerdefinerede sider til brugerlogon
                   href: custom-pages-user-logins.md
-                - name: Aktivere automatisk sammenkædning af identitetsposter til debitorkonti
+                - name: Aktivere automatisk sammenkædning af identitetsposter til kundekonti
                   href: identity-record-linking.md
                 - name: Konfigurere flere B2C-lejere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
@@ -1328,7 +1324,7 @@
               href: b2b/quick-bulk-orders.md
             - name: Fakturastyring til B2B-e-handelswebsteder
               href: b2b/invoice-management.md
-            - name: Konfigurere betalingsmåden for debitorkonti for B2B-e-handelswebsteder
+            - name: Konfigurere betalingsmåden for kundekonti for B2B-e-handelswebsteder
               href: b2b/payment-method.md
             - name: Angive produktantalsgrænser for B2B-e-handelswebsteder
               href: b2b/quantity-limits.md
@@ -1400,9 +1396,11 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Østrig
               items:
-                - name: Eksempel på integration af regnskabsregistreringsservice i Østrig
+                - name: Prøve på integration af regnskabsregistreringsservice i Østrig
                   href: localizations/emea-aut-fi-sample.md
-                - name: Retningslinjer for installation for eksempel på regnskabsintegration i Østrig (ældre)
+                - name: Retningslinjer for udrulning af kasseapparater for Østrig
+                  href: localizations/emea-aut-deployment.md
+                - name: Retningslinjer for udrulning for prøve på regnskabsintegration i Østrig (ældre)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
@@ -1432,7 +1430,7 @@
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
                     - name: Administration af kontantbeholdning til Commerce til Østeuropa
                       href: localizations/emea-eeu-petty-cash-for-retail.md
-                    - name: Debitorfakturaer og -retursalgsordrer i østeuropæiske lande/områder
+                    - name: Kundefakturaer og -retursalgsordrer i østeuropæiske lande/områder
                       href: localizations/emea-eeu-retail-invoices.md
                     - name: 'Retningslinjer for installation af kasseapparater i Tjekkiet, Ungarn og Polen'
                       href: localizations/emea-eeu-deployment.md
@@ -1508,7 +1506,7 @@
                   href: localizations/rus-commerce-setup.md
                 - name: Forudbetalinger i Commerce for Rusland
                   href: localizations/rus-commerce-prepayments.md
-                - name: Forenklet adresseformat for debitorer i Commerce POS for Rusland
+                - name: Forenklet adresseformat for kunder i Commerce POS for Rusland
                   href: localizations/rus-simplified-address.md
                 - name: Eksempel på integration af bonprinter i Rusland
                   href: localizations/rus-fpi-sample.md
@@ -1576,7 +1574,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/commerce/toc.json
-                    - name: Installere netværksprinterenheder i det lokale miljø
+                    - name: Installere netværksprinterenheder i miljøer i det lokale miljø
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
@@ -2548,7 +2546,7 @@
                       href: dev-itpro/cdx-extensibility.md
                     - name: Udvide Commerce Store-kvitteringer
                       href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                    - name: Debitorattributter
+                    - name: Kundeattributter
                       href: dev-itpro/customer-attributes.md
                     - name: Ordreattributter
                       href: dev-itpro/order-attributes.md
@@ -2896,6 +2894,8 @@
                       href: dev-itpro/cloud-dev-box.md
                     - name: Detail SDK-build pipeline
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Opret en Visual Studio 2017-build-agent for at oprette MPOS
+                      href: dev-itpro/retail-sdk/mpos-build-agent.md
                     - name: Køre POS-eksempler
                       href: dev-itpro/pos-run-samples.md
                 - name: Reference
@@ -2962,7 +2962,7 @@
                   href: troubleshoot/restrict-access-storefront.md
                 - name: Log på link igen til e-handelswebsted
                   href: troubleshoot/sign-in-redirects-back.md
-                - name: Debitorposter vises ikke i Commerce-hovedkontoret
+                - name: Kundeposter vises ikke i Commerce-hovedkontoret
                   href: troubleshoot/customer-record-not-appearing.md
                 - name: Denne indstilling vises ikke
                   href: troubleshoot/pickup-store-link-missing.md
