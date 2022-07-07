@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858237"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015340"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
@@ -143,7 +143,9 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
 6. Funktioner til dobbeltskrivning for integration af Human Resources-data i Power Apps-miljøet kan kun bruges, hvis indstillingen **Aktivér Dynamics 365-apps** er valgt for miljøet. Se [Startside for dobbeltskrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for at få flere oplysninger om dobbeltskrivning.
 
     > [!NOTE]
-    > Indstillingen **Aktivér Dynamics 365-apps** skal være valgt, når Power Apps-miljøet oprettes. Hvis indstillingen ikke er valgt på det tidspunkt, hvor der klargøres, kan du ikke bruge dobbeltskrivning til integration af data mellem Dynamics 365 Human Resources og Power Apps-miljøet eller til at installere Dynamics 365-apps som f.eks. Dynamics 365 Sales og Field Service i miljøet. Denne indstilling kan ikke tilbageføres. Du kan finde flere oplysninger under [Nogle vigtige overvejelser, når du opretter et nyt miljø](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment), på Power Platform-dokumentationswebstedet.
+    > Indstillingen **Aktivér Dynamics 365-apps** skal være valgt, når Power Apps-miljøet oprettes. Hvis indstillingen ikke er valgt på det tidspunkt, hvor der klargøres, kan du ikke bruge dobbeltskrivning til integration af data mellem Dynamics 365 Human Resources og Power Apps-miljøet eller til at installere Dynamics 365-apps som f.eks. Dynamics 365 Sales og Field Service i miljøet. Denne indstilling kan ikke tilbageføres. 
+    > -  Human Resources understøtter ikke ændring af den tilknyttede Dataverse-forekomst, når Human Resources er implementeret i den. </br></br>
+    > Du kan finde flere oplysninger under [Nogle vigtige overvejelser, når du opretter et nyt miljø](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment), på Power Platform-dokumentationswebstedet.  
 
 7. Når du har besluttet, hvilket miljø der er bedst at anvende, kan du fortsætte klargøringsprocessen. 
 

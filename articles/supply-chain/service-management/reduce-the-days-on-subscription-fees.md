@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fe5726203ffc7fef12c02196f511bc4c3c9be2a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 370722d5c2f66e316d7c37f711cdd086bc53f6a8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674835"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014816"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>Reducere dagene på abonnementsgebyrer 
 
@@ -31,7 +31,7 @@ Hvis du vil reducere antallet af dage i et eksisterende abonnementsgebyr, kan du
 
 ## <a name="reduce-the-days-on-a-subscription-fee"></a>Reducere dagene i et abonnementsgebyr
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceabonnementer** \> **Alle serviceabonnementer**. Vælg serviceabonnementet, og klik på **Abonnementsgebyrer** i handlingsruden.
+1.  Klik på **Servicestyring** \> **Serviceabonnementer** \> **Alle serviceabonnementer**. Vælg serviceabonnementet, og klik på **Abonnementsgebyrer** i handlingsruden.
 
 2.  I feltet **Abonnementstype** skal du vælge **Reduktionsdage**.
 

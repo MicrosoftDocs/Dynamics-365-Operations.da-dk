@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856245"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016211"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk opdatering af aktivtællere
 
@@ -53,7 +53,7 @@ Som nævnt ovenfor kan automatiske tællere opdateres fra produktionsregistrerin
 
 5. Vælg **OK**. 
 
-Når den automatiske opdatering aktivtælleren er fuldført, kan du få vist de tællerregistreringer, der er relateret til aktivet på siden **Aktivtællere**. Vælge **Styring af aktiver** > **Almindelig** > **Aktiver** > **Alle aktiver**, vælg aktivet, og vælg derefter **Tællere** i handlingsrudegruppen **Forebyggende** under fanen **Aktiv**.
+Når den automatiske opdatering aktivtælleren er fuldført, kan du få vist de tællerregistreringer, der er relateret til aktivet på siden **Aktivtællere**. Vælge **Styring af aktiver** > **Aktiver** > **Alle aktiver**, vælg aktivet, og vælg derefter **Tællere** i gruppen **Forebyggende** under fanen **Aktiv**.
 
 På siden **Aktivaggregeret værdi** kan du få en oversigt over den seneste registrering, der er oprettet på alle tællertyper på alle aktiver. Vælg **Styring af aktiver** > **Forespørgsler** > **Aktiver** > **Aktivaggregeret værdi**. Denne side ligner siden **Aktivtællere**, men du kan ikke tilføje eller redigere registreringer. Den er kun til gennemsyn.
 

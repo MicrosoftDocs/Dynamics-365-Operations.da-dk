@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908766"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017139"
 ---
 # <a name="multi-level-assets"></a>Aktiver på flere niveauer
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908766"
 
 Denne artikel forklarer, hvordan du opretter og sletter aktiver på flere niveauer. Du kan oprette aktiver og relaterede under aktiver i en hierarkisk træstruktur. På denne måde kan du vise relationer og afhængigheder mellem aktiver. Vedligeholdelsesjob kan relateres til alle niveauer i træstrukturen. Der kan også oprettes statistikker for et individuelt niveau eller en sum af alle niveauer for underaktiver.
 
-På listesiden **Alle aktiver** (**Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**) opregner kolonner **Aktiver** aktiverne i hierarkisk orden. Kolonnen **Overordnet** viser den relaterede overordnede. Hvis der derudover allerede er oprettet aktiver og underaktiver, vises aktiverne i en træstruktur i sektionen **Aktivtræ** i ruden **Relaterede oplysninger**.
+På listesiden **Alle aktiver** (**Styring af aktiver** \> **Aktiver** \> **Alle aktiver**) viser kolonnen **Aktiver** aktiverne i hierarkisk orden. Kolonnen **Overordnet** viser den relaterede overordnede. Hvis der derudover allerede er oprettet aktiver og underaktiver, vises aktiverne i en træstruktur i sektionen **Aktivtræ** i ruden **Relaterede oplysninger**.
 
 Du kan finde flere oplysninger om, hvordan du opretter et aktiv i [Opret et aktiv](../objects/create-an-object.md). Hvis du vil oprette et underaktiv, skal du vælge det overordnede aktiv i feltet **Overordnet aktiv** på oversigtspanelet **Generelt**.
 
@@ -38,7 +38,7 @@ Du kan finde flere oplysninger om, hvordan du opretter et aktiv i [Opret et akti
 
 Hvis din virksomhed har flere ensartede aktivstrukturer, kan du bruge kopieringsfunktionen i Styring af aktiver til hurtigt at oprette dem.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver**.
 2. På listesiden **Alle aktiver** skal du vælge, hvilket aktiv, der skal kopieres. Hvis du for eksempel vil kopiere hele aktivstrukturen, herunder underaktiver, skal du vælge et overordnet aktiv.
 3. Vælg **Kopiér aktiv**. I sektionen **Kopiér fra** er feltet **Aktiv** angivet til det aktiv, du valgte på listesiden.
 4. Angiv navnet på det nye aktiv i feltet **Aktiv** i sektionen **Kopiér til**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902076"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015021"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt oprettede arbejdsordrer
 
@@ -34,7 +34,7 @@ Du kan oprette arbejdsordre manuelt på to måder:
 
 ## <a name="create-work-order"></a>Opret arbejdsordre
 
-1. Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg **Ny**.
 
@@ -82,7 +82,7 @@ Vær opmærksom på følgende punkter:
 
 Du kan oprette en arbejdsordre, der er relateret til en eksisterende arbejdsordre. Dette er nyttigt, hvis du f.eks. vil arbejde med primære og sekundære arbejdsordrer. En ny arbejdsordre er baseret på et arbejdsordrejob fra en eksisterende arbejdsordre.
 
-1. Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg den arbejdsordre, du vil oprette en relateret arbejdsordre for.
 
@@ -120,7 +120,7 @@ I illustrationen herunder vises et eksempel på dialogboksen **Opret relateret a
 
 Du kan hurtigt at oprette en ny arbejdsordre ud fra en eksisterende arbejdsordre. Denne måde at arbejde med arbejdsordrer på er ikke den samme, som når du opretter arbejdsordrer på basis af [vedligeholdelsesplaner](../preventive-and-reactive-maintenance/maintenance-plans.md). Den er nyttig, hvis du f.eks. har en arbejdsordre, der indeholder mange arbejdsordrejob, og de forskellige job skal udføres på forskellige aktiver med jævne mellemrum.
 
-1. Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg den arbejdsordre, du vil kopiere indhold fra.
 
@@ -142,7 +142,7 @@ I illustrationen nedenfor vises et eksempel på dialogboksen **Kopiér arbejdsor
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Oprette en arbejdsordre baseret på en vedligeholdelsesanmodning
 
-1. Vælg **Styring af aktiver** > **Almindeligt** > **Vedligeholdelsesanmodninger** > **Alle vedligeholdelsesanmodninger** eller **Aktive vedligeholdelsesanmodninger**.
+1. Vælg **Styring af aktiver** > **Vedligeholdelsesanmodninger** > **Alle vedligeholdelsesanmodninger** eller **Aktive vedligeholdelsesanmodninger**.
 
 2. Vælg de vedligeholdelsesanmodninger, du vil oprette en arbejdsordre for, og klik på **Rediger**.
 

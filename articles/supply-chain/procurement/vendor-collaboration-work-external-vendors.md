@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907284"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023782"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907284"
 Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 Supply Chain Management. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Denne artikel beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
 
 Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen for kreditorsamarbejde, i [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Oplysningerne om kreditorsamarbejde i denne artikel gælder kun for den aktuelle version af Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde flere oplysninger om modulet **Kreditorportal** under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ En administrator konfigurerer de generelle indstillinger for kreditorsamarbejdet
 
 Før du kan oprette brugerkonti til en ekstern kreditor, skal du konfigurere en kreditorkonto, så kreditoren kan bruge kreditorsamarbejde. Indstil feltet **Aktivering af samarbejde** under fanen **Generelt** på siden **Kreditorer**. Følgende valgmuligheder er tilgængelige:
 
-- **Aktiv (IO bekræftes automatisk)**– Indkøbsordrer bekræftes automatisk, hvis kreditoren accepterer dem uden ændringer.
+- **Aktiv (IO bekræftes automatisk)**– Indkøbsordrer bekræftes automatisk, hvis kreditoren accepterer dem uden ændringer. Hvis du bruger denne indstilling, skal du sørge for at planlægge batchjobbet *Bekræft accepterede indkøbsordrer fra kreditorsamarbejde*, som er ansvarlig for behandling af bekræftelserne. Du kan finde instruktioner i næste afsnit.
 - **Aktiv (IO bekræftes ikke automatisk)**– Din organisation skal manuelt bekræfte indkøbsordrer, når kreditoren har godkendt dem.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Planlægge batchjobbet til automatisk bekræftelse
+
+Hvis du bruger indstillingen **Aktiv (IO bekræftes automatisk)** for en eller flere af dine leverandører (som beskrevet i forrige afsnit), skal du planlægge batchjobbet *Bekræft accepterede indkøbsordrer fra kreditorsamarbejde*, som er ansvarlig for behandling og bekræftelse af dine indkøbsordrer. Ellers vises der aldrig automatiske bekræftelser. Du kan bruge følgende procedure for at planlægge dette job.
+
+1. Gå til **Indkøb og forsyning \> Indkøbsordrer \> Indkøbsordrebekræftelse \> Bekræft accepterede indkøbsordrer fra kreditorsamarbejde**.
+1. I dialogboksen **Bekræft accepterede indkøbsordrer fra kreditorsamarbejde** skal du i oversigtspanelet **Kør i baggrunden** vælge **Gentagelse**.
+1. Definer den tidsplan, som jobbet skal køre efter, i dialogboksen **Definer gentagelse**. Når du vælger din tidsplan, skal du overveje følgende:
+
+    - Hvis systemet behandler en stor mængde data og kører mange batchjob, kan ydeevnen være et problem. I dette tilfælde skal du sandsynligvis ikke køre dette job oftere end hvert 10. minut (afhængigt af de andre krav). Hvis ydeevne ikke er et problem for dig, kan du køre den så ofte som hvert eller hvert andet minut, hvis det er nødvendigt.
+    - Hvis leverandørerne ofte leverer varer hurtigt (den dag, de har accepteret det), skal gentagelsen ske ofte (ca. hvert 10. til 30. minut). På denne måde kan lagerarbejdere modtage varerne mod den bekræftede indkøbsordre, når bekræftelsen er sket.
+    - Hvis leverandørerne skal have en længere leveringstid (mere end 24 timer), kan du angive, at denne opgave kun skal køres én gang om dagen.
+
+1. Vælg **OK** for at anvende tidsplanen og vende tilbage til dialogboksen **Bekræft accepterede indkøbsordrer fra kreditorsamarbejde**.
+1. Angiv flere baggrundsindstillinger efter behov. Dialogboksen indeholder de normale indstillinger til opsætning af batchjob i Supply Chain Management.
+
+Du kan finde flere oplysninger om batchjob i [Oversigt over batchbehandling](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Angivelse af, om kreditoren skal se prisoplysninger
 

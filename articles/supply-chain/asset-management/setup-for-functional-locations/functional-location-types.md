@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879215"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015777"
 ---
 # <a name="functional-location-types"></a>Arbejdsstedtyper
 
@@ -57,7 +57,7 @@ Nu oprettes den standardarbejdsstedstype, der kun skal bruges til et standardarb
 7. Feltet **Aktivtype** bruges, hvis du automatisk vil oprette *ét* aktiv for arbejdsstedet med det samme id og navn som det arbejdssted, du opretter. Dette kan for eksempel være relevant, hvis du opretter et statisk arbejdssted, f.eks en bygning eller pipeline. I så fald skal du vælge den aktivtype, du vil bruge til det automatisk oprettede aktiv. Husk, at hvis du foretager et valg i dette felt, skal til/fra-knappen **Flere aktiver** være indstillet til "Nej".
 8. I oversigtspanelet **Aktivtyper** skal du vælge de aktivtyper, der skal relateres til arbejdsstedstypen. Vælg **Tilføj linje**, og vælg aktivtyperne. Hvis du tilføjer aktivtyper her, kan kun aktiver, der bruger disse aktivtyper, installeres på et arbejdssted ved hjælp af denne arbejdsstedstype. Hvis der ikke er valgt nogen aktivtyper i oversigtspanelet **Aktivtyper**, kan alle aktivtyper være installeret.
 9. I oversigtspanelet **Vedligeholdelsesplaner** skal du vælge de vedligeholdelsesplaner, der automatisk skal konfigureres på nye arbejdssteder ved hjælp af denne arbejdsstedstype. Vælg **Tilføj linje**, og vælg vedligeholdelsesplanerne. Hvis du tilføjer vedligeholdelsesplaner her, er det kun disse planer, der kan bruges på et arbejdssted ved hjælp af denne arbejdsstedstype.
-10. I oversigtspanelet **Krav til aktivattribut** skal du vælge de aktivattributter, der automatisk skal konfigureres på nye arbejdssteder ved hjælp af denne arbejdsstedstype. Vælg **Tilføj linje**, og vælg attributten. Disse attributkrav fungerer som retningslinjer. De valideres ikke i forhold til attributter, der er oprettet på et aktiv (**Styring af aktiver** > **Almindelig** > **Aktiver** > **Alle aktiver** > vælg aktiv på listesiden > **Generelt**-fane > **Attributter**-knap). Attributkravene vises, når du installerer aktiver på arbejdssteder.
+10. I oversigtspanelet **Krav til aktivattribut** skal du vælge de aktivattributter, der automatisk skal konfigureres på nye arbejdssteder ved hjælp af denne arbejdsstedstype. Vælg **Tilføj linje**, og vælg attributten. Disse attributkrav fungerer som retningslinjer. De valideres ikke i forhold til attributter, der er oprettet på et aktiv (**Styring af aktiver** > **Aktiver** > **Alle aktiver** > vælg aktiv på listesiden > **Generelt**-fane > **Attributter**-knap). Attributkravene vises, når du installerer aktiver på arbejdssteder.
 11. I oversigtspanelet **Tilladte typer** skal du vælge de arbejdsstedstyper, der skal være gyldige for underordnede arbejdsstedstyper, der er relateret til en overordnet arbejdsstedstype, som bruger den valgte arbejdsstedstype.
 12. I oversigtspanelet **Attributter** skal du vælge de arbejdsstedsattributter, der automatisk skal konfigureres på nye arbejdssteder ved hjælp af denne arbejdsstedstype. Vælg **Tilføj linje**, og vælg attributten.
 

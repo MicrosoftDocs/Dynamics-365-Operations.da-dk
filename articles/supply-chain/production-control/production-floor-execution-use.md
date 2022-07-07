@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860661"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022498"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -263,9 +263,6 @@ En arbejder registrerer en pause ved at vælge **Pause** og derefter vælge det 
 
 ## <a name="view-the-my-day-dialog"></a>Se dialogboksen "Min dag"
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Dialogboksen **Min dag** giver arbejdere et overblik over deres registreringer og saldi. Dialogboksen er opdelt i følgende tre afsnit:
 
 - I hovedsektionen vises de registreringer, som den aktuelle arbejder har foretaget på en valgt dato. Den vises med registreringer for den aktuelle dag, og der vises en datoplukker, som giver arbejderen mulighed for at få vist andre dage.
@@ -275,9 +272,6 @@ Dialogboksen **Min dag** giver arbejdere et overblik over deres registreringer o
 Administratorer kan føje denne funktion til brugergrænsefladen ved at placere knappen **Min dag** på en værktøjslinje til hver relevant fane som beskrevet i [Designe grænsefladen til produktionsudførelse](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Arbejde i teams
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 På denne måde kan flere arbejdere arbejde som et team på samme produktionsjob. Teamet kan udpege én arbejder som pilot. De øvrige arbejdere bliver derefter automatisk assistenter for den pågældende pilot. Det er kun piloten, der skal registrere jobstatus for det resulterende team. Tidsposter gælder for alle teammedlemmer.
 

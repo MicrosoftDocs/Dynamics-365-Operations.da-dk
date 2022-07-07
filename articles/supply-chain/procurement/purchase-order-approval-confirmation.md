@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907371"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016443"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkende og bekræfte indkøbsordrer
 
@@ -50,7 +50,7 @@ Når ændringsstyring er aktiveret, går IO'er gennem seks godkendelsesstatusser
 ## <a name="confirming-purchase-orders"></a>Bekræftelse af indkøbsordrer
 IO'er, der har godkendelsesstatus **Godkendt**, kan gennemgå flere trin, før de bliver bekræftet. For eksempel skal du muligvis sende en forespørgsel om indkøb til leverandøren for at få oplysninger om priser, rabatter eller leveringsdatoer. Skal du det, kan du give indkøbsordren statussen **Til eksternt gennemsyn** ved hjælp af handlingen **Købsforespørgsel**.
 
-Kreditorer, der er konfigureret til at bruge kreditorportalen, kan gennemse ordrer på portalen, og godkende eller afvise dem. Under denne revisionsproces har indkøbsordren statussen **Til eksternt gennemsyn**. Kreditorportalen kan konfigureres, så en bekræftelse fra kreditoren automatisk bekræfter ordren i Supply Chain Management. Du kan også manuelt bekræfte en indkøbsordre, når du har modtaget bekræftelse fra leverandøren. Hvis en leverandør afviser en IO, modtages afvisningen samt årsagen til afvisningen og forslag til ændringer. I dette tilfælde forbliver status for indkøbsordren **Til eksternt gennemsyn**.
+Kreditorer, der er konfigureret til at bruge modulet til kreditorsamarbejde, kan gennemse ordrer på portalen og godkende eller afvise dem. Under denne revisionsproces har indkøbsordren statussen **Til eksternt gennemsyn**. Modulet til kreditorsamarbejde kan konfigureres, så en bekræftelse fra kreditoren automatisk bekræfter ordren i Supply Chain Management. Du kan også manuelt bekræfte en indkøbsordre, når du har modtaget bekræftelse fra leverandøren. Hvis en leverandør afviser en IO, modtages afvisningen samt årsagen til afvisningen og forslag til ændringer. I dette tilfælde forbliver status for indkøbsordren **Til eksternt gennemsyn**.
 
 Der er også mulighed for at generere en proforma bekræftelse for en ordre, før den faktiske bekræftelse er blevet behandlet. Denne indstilling opretter kun en rapport, som du kan dele med leverandøren. Der oprettes ikke nogen kladdeoplysninger.
 

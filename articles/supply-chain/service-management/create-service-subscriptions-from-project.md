@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a57bc31a49c8671872ad02bc2721d42455a5217
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 38b0c28b013ef93c73b6963087d2d8e7787a77a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670926"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016914"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Oprette serviceabonnementer fra et projekt    
 
@@ -29,7 +29,7 @@ ms.locfileid: "8670926"
 
 Du kan oprette et serviceabonnement fra et projekt i **Projektstyring og regnskab**.
 
-1.  Klik på **Projektstyring og regnskab** \> **Generelt** \> **Projekter** \> **Alle projekter**. Åbn det projekt, du vil oprette et abonnement for.
+1.  Klik på **Projektstyring og regnskab** \> **Projekter** \> **Alle projekter**. Åbn det projekt, du vil oprette et abonnement for.
 
 2.  I formularen **Projekter** skal du i **handlingsruden** klikke på fanen **Administrer** og klikke på **Service** \> **Serviceabonnement**.
 

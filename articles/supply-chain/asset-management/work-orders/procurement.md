@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893636"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014946"
 ---
 # <a name="procurement"></a>Indkøb
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893636"
 
 I Styring af aktiver kan du få vist en oversigt over indkøbsrekvisitioner og indkøbsordrer, der er relateret til arbejdsordrer. Det er også muligt at oprette en indkøbsordre eller en indkøbsrekvisition fra en arbejdsordre.
 
-På listen **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Almindelig** > **Indkøb** > **Indkøbsrekvisition i arbejdsordre**) kan du se en liste over indkøbsrekvisitioner, der er relateret til arbejdsordrer. Når du vælger et arbejdsordrejob på denne side, kan du bruge knapperne i gruppen **Vis** under fanen **Indkøbsrekvisition for arbejdsordre** i handlingsruden til at udføre forskellige handlinger:
+På listen **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Indkøb** > **Indkøbsrekvisition i arbejdsordre**) kan du se en liste over indkøbsrekvisitioner, der er relateret til arbejdsordrer. Når du vælger et arbejdsordrejob på denne side, kan du bruge knapperne i gruppen **Vis** under fanen **Indkøbsrekvisition for arbejdsordre** i handlingsruden til at udføre forskellige handlinger:
 
 - Hvis du vil åbne den relaterede indkøbsrekvisition, skal du vælge **Indkøbsrekvisition**. 
 - Hvis du vil åbne den relaterede arbejdsordre , skal du vælge **Arbejdsordre**.
@@ -39,7 +39,7 @@ I illustrationen herunder vises et eksempel på listesiden **Indkøbsrekvisition
 ![Figur 1.](media/08-work-orders.png)
 
 
-På listesiden **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Almindelig** > **Indkøb** > **Indkøbsrekvisition i arbejdsordre**) kan du se en liste over indkøbsordrer, der er relateret til arbejdsordrer. Når du vælger et arbejdsordrejob på denne side, kan du bruge knapperne i gruppen **Vis** under fanen **Arbejdsordreindkøb** i handlingsruden til at udføre forskellige handlinger:
+På listesiden **Indkøbsrekvisition i arbejdsordre** (**Styring af aktiver** > **Indkøb** > **Arbejdsordreindkøb**) kan du se en liste over indkøbsordrer, der er relateret til arbejdsordrer. Når du vælger et arbejdsordrejob på denne side, kan du bruge knapperne i gruppen **Vis** under fanen **Arbejdsordreindkøb** i handlingsruden til at udføre forskellige handlinger:
 
 - Hvis du vil åbne den relaterede indkøbsordre, skal du vælge **Indkøbsordre**. 
 - Hvis du vil åbne den relaterede arbejdsordre , skal du vælge **Arbejdsordre**.
@@ -69,7 +69,7 @@ Foren indkøbsrekvisition findes den dato, der bruges til at beregne en mulig fo
 
 På listesiden **Alle arbejdsordrer** kan du vælge et job i en arbejdsordre og oprette en relateret indkøbsordre eller indkøbsrekvisition. Det er med til at sikre, at der findes projektrelationer mellem indkøbsordren eller indkøbsrekvisitionen og arbejdsordren.
 
-1. Vælg **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Vælg **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg den arbejdsordre, du vil oprette en indkøbsordre for, og vælg derefter **Rediger**.
 

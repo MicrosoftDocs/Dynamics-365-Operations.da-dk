@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 72813325c19c639c3c8e7ea9c7436730d23eb61b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849613"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017023"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Planlagte vedligeholdelsesjob i arbejdsordrer
 
@@ -32,7 +32,7 @@ Siden **Planlagte vedligeholdelsesjob for arbejdsordrer** viser en oversigt over
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Vise planlagte vedligeholdelsesjob for arbejdsordre
 
-1. Klik på **Aktivstyring** > **Almindeligt** > **Arbejdsordrer** > **Planlagte vedligeholdelsesjob for arbejdsordre**. Du får vist en liste over alle de arbejdsordrer, hvor livscyklustilstanden for arbejdsordren er indstillet til "planlagt" eller "i gang".
+1. Klik på **Styring af aktiver** > **Arbejdsordrer** > **Planlagte vedligeholdelsesjob for arbejdsordre**. Du får vist en liste over alle de arbejdsordrer, hvor livscyklustilstanden for arbejdsordren er indstillet til "planlagt" eller "i gang".
 
 2. Du kan sortere listen, f.eks. efter vedligeholdelsesarbejder. Du kan også bruge filteret til at begrænse listen, så den kun viser arbejdsordrer, der er tildelt en bestemt ressource eller vedligeholdelsesarbejder.
 

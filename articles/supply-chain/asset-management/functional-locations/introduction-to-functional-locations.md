@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882831"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016037"
 ---
 # <a name="introduction-to-functional-locations"></a>Introduktion til arbejdssteder
 
@@ -59,7 +59,7 @@ Når du har oprettet et arbejdsstedshierarki, er det næste trin at installere a
 
 ## <a name="all-functional-locations"></a>Alle arbejdssteder
 
-Vælg **Styring af aktiver** \> **Almindelig** \> **Arbejdssteder** \> **Alle arbejdssteder** for at åbne listesiden **Alle arbejdssteder**. Denne side viser alle arbejdssteder og nogle af de oplysninger, der er relateret til hver. Hvis du kun vil have vist aktive arbejdssteder, skal du vælge **Aktive arbejdssteder**. Hvis du kun vil have vist de arbejdssteder, du er relateret til som arbejder, skal du vælge **Mine aktive arbejdssteder**. (Denne relation er oprettet på siden **Arbejdere**. Du finder flere oplysninger i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Vælg **Styring af aktiver** \> **Arbejdssteder** \> **Alle arbejdssteder** for at åbne listesiden **Alle arbejdssteder**. Denne side viser alle arbejdssteder og nogle af de oplysninger, der er relateret til hver. Hvis du kun vil have vist aktive arbejdssteder, skal du vælge **Aktive arbejdssteder**. Hvis du kun vil have vist de arbejdssteder, du er relateret til som arbejder, skal du vælge **Mine aktive arbejdssteder**. (Denne relation er oprettet på siden **Arbejdere**. Du finder flere oplysninger i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 På listesiden **Alle arbejdssteder** skal du vælge et link i kolonnen **Arbejdssteder** for at få vist detaljerne for den valgte post. Hvis du vil redigere arbejdsstedet, skal du vælge knappen **Rediger**. Detaljeoversigten viser detaljerede oplysninger, der er relateret til stedet. Den indeholder også en rude for **Relaterede oplysninger** i højre side. I denne rude vises hierarkiet for arbejdsstedet. Du kan udvide og skjule ruden **Relaterede oplysninger**.
 

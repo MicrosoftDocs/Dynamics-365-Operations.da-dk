@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872118"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015573"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiver
 
@@ -44,7 +44,7 @@ Anvend funktionen **Flyt aktiv** for at flytte et aktiv til enten en anden aktiv
 > [!NOTE]
 > Brug ikke denne funktion, hvis aktiverne repareres eller udskiftes midlertidigt. Brug i stedet funktionen **Erstat aktiv**, som beskrives senere i denne artikel.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
 2. Vælg hvilket aktiv, du ønsker at flytte, på listen. Hvis aktivet har underordnede aktiver, flytter du også disse aktiver.
 3. Vælg **Flyt aktiv** for at flytte det.
 4. Hvis du vil flytte aktivet, så det bliver en del af en aktivstruktur, skal du vælge det nye overordnede aktiv i feltet **Overordnet aktiv**. Hvis du flytter et underordnet aktiv, og du vil gøre det til et selvstændigt aktiv uden strukturrelationer, skal du lade feltet **Overordnet aktiv** være tomt.
@@ -58,7 +58,7 @@ Brug funktionen **Erstat aktiv** i forbindelse med reparationer, renovering elle
 > [!NOTE]
 > Hvis et værksted er relateret til din produktionsafdeling, kan du oprette arbejdssteder såsom **Værksted**, **Skrot** og **Lager** til håndtering af reparationen og udskiftningen af aktiverne.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
 2. Du skal vælge det underordnede aktiv, der skal erstattes, på listen. Hvis aktivet har underordnede aktiver, erstatter du også disse aktiver.
 3. Vælg **Erstat aktiv**.
 
@@ -79,7 +79,7 @@ Brug funktionen **Installer aktiv** til at installere en aktivstruktur på et ar
 > [!NOTE]
 > Vælg altid et overordnet aktiv. Det overordnede aktiv og de relaterede underordnede aktiver flyttes til det valgte arbejdssted.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**.
 2. Vælg det overordnede aktiv, du vil installere på et andet arbejdssted, på listen.
 3. Vælg **Installer aktiv**.
 

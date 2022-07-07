@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4d9424b5678a6f37d46203e5d4e359b020fda7a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890648"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016908"
 ---
 # <a name="create-service-object-relations"></a>Oprette serviceobjektrelationer 
 
@@ -33,7 +33,7 @@ Denne artikel beskriver, hvordan du opretter serviceobjektrelationer for en serv
 
 Brug følgende trin til at oprette en serviceobjektrelation for en serviceaftale:
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.
+1.  Klik på **Servicestyring** \> **Serviceaftaler** \> **Serviceaftaler**.
 
 2.  På listen **Serviceaftaler** skal du vælge en eksisterende serviceaftale eller klikke på **Ny** for at oprette en ny serviceaftale.
 
@@ -47,7 +47,7 @@ Brug følgende trin til at oprette en serviceobjektrelation for en serviceaftale
 
 Brug følgende trin til at oprette en serviceobjektrelation for en serviceordre:
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klik på **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Vælg en eksisterende serviceordre på listen **Serviceordrer**, eller opret en ny serviceordre.
 

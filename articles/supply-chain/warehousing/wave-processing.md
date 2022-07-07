@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851269"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014613"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoprettelse og -behandling
 
@@ -60,9 +60,9 @@ Følg disse trin for at oprette en bølge manuelt:
 1. Sørg for, at de relevante [Bølgeskabeloner](wave-templates.md) ikke er angivet til automatisk at oprette en bølge til lagerstedet og ordretyperne, hvor du vil gøre det manuelt.
 1. Afhængigt af den type bølge du vil oprette, skal du gøre ét af følgende:
 
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
 
 1. Angiv en kort beskrivelse af bølgen i feltet **Beskrivelse**. Denne bør angive, hvad du behandler i bølgen.
 
@@ -87,9 +87,9 @@ Når der er oprettet en bølge, men endnu ikke frigivet, kan du manuelt angive, 
 
 1. Afhængigt af den type bølge du vil føje linjer til, skal du gøre ét af følgende:
 
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
-    - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
 
 1. Vælg bølgen. Vælg en af følgende i handlingsruden:
 
@@ -121,9 +121,9 @@ Hvis du vil behandle en bølge manuelt, der har alt det påkrævede indhold, ska
 
 1. Afhængigt af den type bølge du vil behandle, skal du gøre ét af følgende:
 
-    - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
-    - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
-    - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
+    - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
+    - Vælg **Lagerstedsstyring** \> **Udgående bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
+    - Vælg **Lagerstedsstyring** \> **Udgående bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
 
 1. Vælg den bølge, der skal behandles. Vælg **Behandl** i handlingsruden.
 
@@ -141,9 +141,9 @@ Følg disse trin for at frigive en bølge manuelt:
 
 1. Afhængigt af den type bølge du vil frigive, skal du gøre ét af følgende:
 
-      - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
-      - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
-      - Vælg **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
+      - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Vælg **Bølge** i handlingsruden.
+      - Vælg **Lagerstedsstyring** \> **Udgående bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**. Vælg **Produktionsbølge** i handlingsruden.
+      - Vælg **Lagerstedsstyring** \> **Udgående bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**. Vælg **Opret bølge** i handlingsruden.
 
 1. Vælg den bølge, der skal frigives. Vælg **Frigiv bølge** i handlingsruden.
 
@@ -179,9 +179,9 @@ Hvis det er nødvendigt, kan du annullere en bølge, der er blevet behandlet. Hv
 
 1. Afhængigt af den type bølge du vil annullere, skal du gøre ét af følgende:
 
-      - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**.
-      - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**.
-      - Gå til **Lokationsstyring** \> **Fælles** \> **Bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**.
+      - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**.
+      - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Produktionsbølger** \> **Alle produktionsbølger**.
+      - Gå til **Lagerstedsstyring** \> **Udgående bølger** \> **Kanban-bølger** \> **Alle kanban-bølger**.
 
 1. Vælg den bølge, du vil annullere. I handlingsruden skal du under fanen **Arbejde** vælge **Annuller**.
 

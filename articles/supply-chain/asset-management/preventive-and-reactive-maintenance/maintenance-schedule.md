@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4089400817d6dd8454c85e594eff05314d3fd72e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 782a8cc1f9e64b8c2d4364212c9c5755c103bbfb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858005"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017052"
 ---
 # <a name="maintenance-schedule"></a>Vedligeholdelsestidsplan
 
@@ -44,7 +44,7 @@ De fire visninger for vedligeholdelsestidsplanen er lidt forskellige, afhængigt
 
 Sådan åbnes en vedligeholdelsestidsplan:
 
-1. Klik på **Styring af aktiver** > **Generelt** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller **Åbne vedligeholdelsestidsplanslinjer** eller **Åbne vedligeholdelsestidsplanspuljer**.
+1. Klik på **Styring af aktiver** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller **Åbn vedligeholdelsestidsplanslinjer** eller **Åbn vedligeholdelsestidsplanspuljer**.
 
 2. Hvis du vil opdatere vedligeholdelsesplanen, skal du klikke på **Vedligeholdelsesplan** eller **Vedligeholdelsesrunder**. 
 

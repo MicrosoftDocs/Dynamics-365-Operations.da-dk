@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0c382efda81067ad4c0cd977e5cfbf37b4e3fc6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd7482cfe943347840e9fb070151d66fbe5ef9ca
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908708"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016530"
 ---
 # <a name="inbound-and-outbound-assets"></a>Indgående og udgående aktiver
 
@@ -37,7 +37,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 
 ## <a name="register-assets-as-inbound"></a>Registrer aktiver som indgående
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Vedligeholdelsesanmodninger** \> **Aktive vedligeholdelsesanmodninger**.
+1. Vælg **Styring af aktiver** \> **Vedligeholdelsesanmodninger** \> **Aktive vedligeholdelsesanmodninger**.
 2. Vælg vedligeholdelsesanmodningen.
 3. Vælg **Opdater vedligeholdelsesanmodningens tilstand**.
 4. Vælg **Indgående** (eller en anden livscyklustilstand, som du har oprettet for indgående aktiver), og vælg dernæst **OK**.
@@ -46,7 +46,7 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 
 ## <a name="register-inbound-assets-as-received"></a>Registrer indgående aktiver som modtaget
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Indgående/udgående** \> **Indgående aktiver**.
+1. Vælg **Styring af aktiver** \> **Indgående/udgående** \> **Indgående aktiver**.
 2. Vælg aktivet eller vedligeholdelsesanmodningen.
 3. Vælg **Modtag aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Modtaget**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Indgående aktiver**.
@@ -57,14 +57,14 @@ Opsætningen af "Styring af aktiver" afgør, om du kan arbejde med indgående og
 
 Når du har fuldført vedligeholdelses-eller reparationsopgaven, kan du registrere aktivet som returneret.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Vedligeholdelsesanmodninger** \> **Aktive vedligeholdelsesanmodninger**.
+1. Vælg **Styring af aktiver** \> **Vedligeholdelsesanmodninger** \> **Aktive vedligeholdelsesanmodninger**.
 2. Vælg vedligeholdelsesanmodningen.
 3. Vælg **Opdater vedligeholdelsesanmodningens tilstand**.
 4. Vælg **Udgående** (eller en anden livscyklustilstand, som du har oprettet for udgående aktiver), og vælg dernæst **OK**.
 
 ## <a name="register-outbound-assets-as-delivered"></a>Registrer udgående aktiver som leveret
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Indgående/udgående** \> **Udgående aktiver**.
+1. Vælg **Styring af aktiver** \> **Indgående/udgående** \> **Udgående aktiver**.
 2. Vælg aktivet eller vedligeholdelsesanmodningen.
 3. Vælg **Levér aktiver**.
 4. Angiv datoen og tidspunktet i feltet **Leveret**. Vælg derefter **OK**. Posten blev fjernet fra listesiden **Udgående aktiver**.

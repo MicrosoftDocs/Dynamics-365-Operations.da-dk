@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945717"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954657"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20250"></a>Version 2.0.25.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+
+- Forbedret ydeevne.
+- Øget stabilitet.
+- Forbedret **Forespørgsel**-side, så den understøtter længere tekster i underoverskrifter.
+- Introduceret muligheden for straks at annullere et flow med et enkelt tryk eller klik (når **Annuller** er den eneste handling, der er tilgængelig under **Flere handlinger**).
+- Løst et problem, hvor fokus nogle gange kan gå tabt mellem kontrolelementer for indtastning på siden **Rediger forbindelse** og brugerdefinerede sider.
+- Løst et problem, hvor knapper nogle gange kan blive inaktive og stadig vises som valgt, når de medtages i rullevisningen.
+- Løst et problem, hvor det forkerte layout nogle gange kunne bruges på hovedsiden.
 
 ## <a name="version-20240"></a>Version 2.0.24.0
 

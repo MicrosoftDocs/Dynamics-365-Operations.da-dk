@@ -2,7 +2,7 @@
 title: Oversigt over økonomirapportering
 description: Denne artikel beskriver, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 Finance, og hvordan du bruger funktionerne til økonomirapportering.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853403"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033654"
 ---
 # <a name="get-started-with-financial-reporting"></a>Start her med økonomirapportering 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853403"
 
 Denne artikel beskriver, hvor du kan få adgang til økonomirapportering, og hvordan du bruger funktionerne til økonomirapportering. Det indeholder også en beskrivelse af eksisterende standardøkonomirapporter.
 
+## <a name="enable-financial-reporting"></a>Aktivere økonomirapportering
+Hvis du vil bruge økonomirapporteringstjenesten for din organisation, skal en Lifecycle Services-administrator (LCS) aktivere denne tjeneste på LCS-portalen for din organisation. Hvis der ikke er klargjort økonomirapportering i dit miljø, skal du kontakte din LCS-administrator for at aktivere tjenesten. 
+
 ## <a name="accessing-financial-reporting"></a>Adgang til økonomirapportering
 
 Du kan finde menuen **Financial reporting** følgende steder:
 
-- **Finans** &gt; **Forespørgsler og rapporter**
-- **Budgettering** &gt; **Forespørgsler og rapporter** &gt; **Grundlæggende budgettering**
-- **Budgettering** &gt; **Forespørgsler og rapporter** &gt; **Budgetplanlægning**
-- **Budgettering** &gt; **Forespørgsler og rapporter** &gt; **Budgetstyring**
+- **Finans** > **Forespørgsler og rapporter**
+- **Budgettering** > **Forespørgsler og rapporter** > **Grundlæggende budgettering**
+- **Budgettering** > **Forespørgsler og rapporter** > **Budgetplanlægning**
+- **Budgettering** > **Forespørgsler og rapporter** > **Budgetstyring**
 - Konsolideringer
 
 Hvis du vil oprette og generere økonomiske rapporter for en juridisk enhed, skal du angive følgende oplysninger for den pågældende juridiske enhed:

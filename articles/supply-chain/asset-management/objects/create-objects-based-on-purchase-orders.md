@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893694"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015603"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Oprette aktiver baseret på indkøbsordrer
 
@@ -45,7 +45,7 @@ Først skal du oprette de varer, der skal bruges til at oprette aktiver ud fra e
 
 ## <a name="create-assets-from-pending-assets"></a>Oprette aktiver ud fra ventende aktiver
 
-1. Klik på **Styring af aktiver** > **Almindeligt** > **Aktiver** > **Ventende aktiver**.
+1. Klik på **Styring af aktiver** > **Aktiver** > **Ventende aktiver**.
 2. Du kan se en opdateret liste over indkøbsordrer baseret på de varer, som er valgt i **Aktivelementer**.
 3. Du kan filtrere statussen for indkøbsordrer for at vælge, i hvilken livscyklusstilstand aktivet skal oprettes. Du vil måske kun oprette aktiver, når der er bogført en produktkvittering på en indkøbsordre.
 4. Vælg **Referencenummer**-linket på en indkøbsordrelinje for at få vist detaljerede oplysninger om varen.

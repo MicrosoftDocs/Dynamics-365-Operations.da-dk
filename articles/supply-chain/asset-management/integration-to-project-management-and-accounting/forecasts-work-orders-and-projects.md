@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880445"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016791"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Budgetter, arbejdsordrer og projekter
 
@@ -60,7 +60,7 @@ Se f.eks. følgende illustration: På grund af den måde, hvorpå **lastbilsmoto
 
 ![Figur 1.](media/01-integration-to-pma.png)
 
-Formålet med projekt-id'et på arbejdsordrejobbet og det relaterede aktivitetsnummer er at spore omkostninger, der er relateret til arbejdsordrejobbet, og det aktiv, der er valgt på det, i modulet **Projektstyring og regnskab**. (Hvis du vil have vist projekt-id og aktivitetsnummer, skal du vælge **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** og derefter vælge arbejdsordren. I oversigtspanelet **Linjedetaljer** viser feltet **Projekt-id** projekt-id'et, og feltet **Aktivitetsnummer** viser aktivitetsnummeret). Du kan finde flere oplysninger om omkostningsstyring i Styring af aktiver ved at se [Omkostnings- og datokontrol](../controlling-and-reporting/cost-and-date-control.md).
+Formålet med projekt-id'et på arbejdsordrejobbet og det relaterede aktivitetsnummer er at spore omkostninger, der er relateret til arbejdsordrejobbet, og det aktiv, der er valgt på det, i modulet **Projektstyring og regnskab**. (Hvis du vil have vist projekt-id og aktivitetsnummer, skal du vælge **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** og derefter vælge arbejdsordren. I oversigtspanelet **Linjedetaljer** viser feltet **Projekt-id** projekt-id'et, og feltet **Aktivitetsnummer** viser aktivitetsnummeret). Du kan finde flere oplysninger om omkostningsstyring i Styring af aktiver ved at se [Omkostnings- og datokontrol](../controlling-and-reporting/cost-and-date-control.md).
 
 Følgende illustration viser en grafisk oversigt over projekter for arbejdsordrer og relaterede projektaktiviteter.
 

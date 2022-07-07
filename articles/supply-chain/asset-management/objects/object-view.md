@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 495f3dbf9bab9d550ebdbb7dda52aca80d5ea635
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882715"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017110"
 ---
 # <a name="asset-view"></a>Aktivoversigt
 
@@ -30,7 +30,7 @@ ms.locfileid: "8882715"
 
 Denne artikel beskriver visning af aktiver i Styring af aktiver. Siden **Visning af aktiver** viser aktive aktiver og arbejdssteder i en trævisning. Du kan derved nemt danne dig et overblik over aktivrelationer til arbejdssteder. Du kan også få vist detaljerede oplysninger om arbejdssteder, aktiver og relaterede styklister (BOM'er). Du kan også få et hurtigt overblik over aktive vedligeholdelsesanmodninger og arbejdsordrer, der er relateret til et aktiv.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Visning af aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Aktivoversigt**.
 2. Hvis du vil ændre den visning, der fremgår af siden, skal du vælge en ny værdi i feltet **Visning**.
 
     > [!NOTE]

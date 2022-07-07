@@ -1,8 +1,8 @@
 ---
-title: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
-description: Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+title: Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-sandkassemiljø
+description: Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-sandkassemiljø.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861908"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013232"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-evalueringsmiljø
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-sandkassemiljø
 
 [!include [banner](includes/banner.md)]
 
-Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+Denne artikel beskriver, hvordan du konfigurerer valgfrie funktioner for et Microsoft Dynamics 365 Commerce-sandkassemiljø.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-Hvis du vil evaluere transaktionsfunktionerne for mail, skal følgende forudsætninger være opfyldt:
+Hvis du vil have en demo af transaktionsfunktionerne for mail, skal følgende forudsætninger være opfyldt:
 
-- Du har en tilgængelig mailserver (Simple Mail Transfer Protocol \[SMTP\]-server), som kan bruges fra Microsoft Azure-abonnementet, hvor du har klargjort evalueringsmiljøet.
+- Du har en tilgængelig mailserver (Simple Mail Transfer Protocol \[SMTP\]-server), som kan bruges fra Microsoft Azure-abonnementet, hvor du har klargjort sandkassemiljøet.
 - Du har serverens fulde domænenavn (FQDN)/IP-adresse, SMTP-portnummer og godkendelsesdetaljer ved hånden.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurer backend-billedet
@@ -39,10 +39,10 @@ Hvis du vil evaluere transaktionsfunktionerne for mail, skal følgende forudsæt
 ### <a name="find-your-media-base-url"></a>Find din URL-basisadresse til dit medie
 
 > [!NOTE]
-> Før du kan fuldføre denne procedure, skal du udføre trinnene i [Konfigurer dit websted i Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
+> Før du kan fuldføre denne procedure, skal du udføre trinnene i [Konfigurer dit websted i Commerce](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Log på Commerce-webstedsgenerator ved hjælp af den URL-adresse, som du noterede ned, da du initialiserede e-Commerce i forbindelse med klargøring (jf. [Initialiser e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Åbn webstedet **Fabrikam**.
+1. Åbn det websted for **Fabrikam**, **Adventure Works** eller **Adventure Works Business**, som du vil arbejde med.
 1. Vælg **Mediebibliotek** i menuen til venstre.
 1. Vælg et enkelt billedaktiv.
 1. Find egenskaben **Offentlig URL-adresse** i egenskabsfremviseren til højre. Værdien er en URL-adresse. Her er et eksempel:
@@ -98,9 +98,9 @@ For hver transaktionshændelse, du vil sende mails for, skal du opdatere mailska
 
 ## <a name="customize-email-templates"></a>Tilpas mailskabeloner
 
-Du ønsker måske at tilpasse e-mail-skabelonerne, så de bruger forskellige billeder. Du kan også opdatere links i skabelonerne, så de fører til dit evalueringsmiljø. Denne procedure beskriver, hvordan du henter standardskabelonerne, tilpasser dem og opdaterer skabelonerne i systemet.
+Du ønsker måske at tilpasse e-mail-skabelonerne, så de bruger forskellige billeder. Du kan også opdatere links i skabelonerne, så de fører til dit sandkassemiljø. Denne procedure beskriver, hvordan du henter standardskabelonerne, tilpasser dem og opdaterer skabelonerne i systemet.
 
-1. I en browser kan du downloade [Microsoft Dynamics 365 Commerce-evalueringens .zip-fil med standardmailskabeloner](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til din lokale computer. Denne fil indeholder følgende HTML-dokumenter:
+1. I en browser kan du downloade [Microsoft Dynamics 365 Commerce-demoens .zip-fil med standardmailskabeloner](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til din lokale computer. Denne fil indeholder følgende HTML-dokumenter:
 
     - Skabelon til ordrebekræftelse
     - Skabelon til udstedelse af gavekort
@@ -167,15 +167,11 @@ For hvert produkt i ordren erstattes følgende tokens med værdier.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
+[Klargøre et Dynamics 365 Commerce-sandkassemiljø](provisioning-guide.md)
 
-[Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md)
+[Konfigurere et Dynamics 365 Commerce-sandkassemiljø](cpe-post-provisioning.md)
 
-[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
-
-[Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](cpe-bopis.md)
-
-[Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
+[Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

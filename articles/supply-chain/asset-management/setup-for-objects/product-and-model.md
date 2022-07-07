@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d0998bbacef7a4350d0fd0a58259ec35759d28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b00cb62926f3a482ec655235b6e2f5880edbcd04
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868037"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016269"
 ---
 # <a name="asset-manufacturers-and-models"></a>Aktivproducenter og -modeller
 
@@ -53,7 +53,7 @@ Denne artikel beskriver, hvordan du konfigurerer aktivproducenter og relaterede 
 
 ## <a name="select-a-manufacturer-and-model-on-an-object"></a>Vælge en producent og model på et objekt
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**.
+1. Vælg **Styring af aktiver** \> **_Aktiver_* \> **Alle aktiver**.
 2. I kolonnen **Aktiv** skal du vælge linket til aktivet. Siden med **Detaljer** vises.
 3. Vælg **Rediger**.
 4. I oversigtspanelet **Generelt** skal du vælge værdier i felterne **Producent** og **model**.

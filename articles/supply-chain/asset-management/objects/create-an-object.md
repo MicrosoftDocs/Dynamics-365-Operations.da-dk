@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860922"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016298"
 ---
 # <a name="create-an-asset"></a>Oprette et aktiv
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860922"
 
 Denne artikel beskriver, hvordan du opretter et aktiv i Styring af aktiver.
 
-1. Klik på **Styring af aktiver** > **Almindeligt** > **Aktiver** > **Alle aktiver** eller **Aktive aktiver**.
+1. Klik på **Styring af aktiver** > **Aktiver** > **Alle aktiver** eller **Aktive aktiver**.
 2. Klik på knappen **Nyt**.
 3. I dialog **Opret aktiver** skal du indsætte data vedrørende **Aktiv** (aktiv-id'et) og navnet på aktivet. Vælg dato og klokkeslæt for aktivet i feltet **Gyldig**. Fra denne dato kan du installere aktivet på et arbejdssted samt flytte og erstatte aktivet i en aktiv struktur.
 4. I feltet **Aktivtype** skal du vælge aktivtypen for aktivet (obligatorisk felt). Vælg om nødvendigt **Aktivproducent** og **Aktivmodel** for aktivet. Hvis der kun er oprettet ét produkt, vælges det pågældende produkt automatisk i feltet **Aktivproducent**. De valg, der er tilgængelige i felterne **Aktivproducent** og **Aktivmodel**, afhænger af opsætningen i [Aktivproducenter og -modeller](../setup-for-objects/product-and-model.md).

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 92f3a2bc3d2a4d5d1c3be0c6dda2674dc3e7d0bb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891228"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016820"
 ---
 # <a name="create-maintenance-requests"></a>Oprette vedligeholdelsesanmodninger
 
@@ -32,9 +32,9 @@ Vedligeholdelsesanmodninger kan bruges, hvis vedligeholdelsesarbejdere eller pro
 
 **Eksempel:** Mens en vedligeholdelsesarbejder foretager en reparation, opdager vedkommende, at et andet aktiv på samme sted skal serviceres. Vedligeholdelsesarbejderen har dog ikke tid eller de nødvendige reservedele til at udføre reparationsjobbet. Derfor opretter arbejderen en vedligeholdelsesanmodning på aktivet og indtaster en kort beskrivelse af problemet.
 
-Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninger** i højre side af siden **Alle aktiver** eller **Aktive aktiver** (**Styring af aktiver** \> **Fælles** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**) viser de aktive vedligeholdelsesanmodninger, der er knyttet til det valgte aktiv.
+Afsnittet **Aktive vedligeholdelsesanmodninger** i ruden **Relaterede oplysninger** i højre side af siden **Alle aktiver** eller **Aktive aktiver** (**Styring af aktiver** \> **Aktiver** \> **Alle aktiver** eller **Aktive aktiver**) viser de aktive vedligeholdelsesanmodninger, der er knyttet til det valgte aktiv.
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Vedligeholdelsesanmodninger** \> **Alle vedligeholdelsesanmodninger** eller **Aktive vedligeholdelsesanmodninger**.
+1. Vælg **Styring af aktiver** \> **Vedligeholdelsesanmodninger** \> **Alle vedligeholdelsesanmodninger** eller **Aktive vedligeholdelsesanmodninger**.
 2. Vælg **Ny**.
 3. Vælg typen af vedligeholdelsesanmodning i feltet **Vedligeholdelsesanmodningstype** i dialogboksen **Opret anmodning**. Der foreslås en standardtype.
 4. I feltet **Beskrivelse** skal du angive et navn eller en titel, der kort beskriver vedligeholdelsesanmodningen.

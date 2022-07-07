@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886038"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015079"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
@@ -35,7 +35,7 @@ Du kan muligvis tilføje eller slette prognoselinjer på en arbejdsordre i visse
 >[!NOTE]
 >Det er muligt at konfigurere automatisk bogføring af kladder på en livscyklustilstand for en arbejdsordre. Du kan finde flere oplysninger i [Livscyklustilstande for arbejdsordrer](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Klik på **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg arbejdsordren, og klik på **Kladder**.
 
@@ -61,7 +61,7 @@ Skærmbilledet nedenfor viser et eksempel på time- og vareregistreringer på en
 
 Hvis en arbejdsordre indeholder flere arbejdsordrejob, kan du registrere arbejdstimer ved hjælp af funktionen **Opdel timer**. Det betyder, at én timeregistreringslinje kan fordeles jævnt på hvert arbejdsordrejob.
 
-1. Klik på **Styring af aktiver** > **Generelt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
+1. Klik på **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer**.
 
 2. Vælg arbejdsordren, og klik på **Kladder**.
 

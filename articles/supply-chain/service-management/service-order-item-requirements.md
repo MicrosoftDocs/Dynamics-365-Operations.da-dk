@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882396"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015166"
 ---
 # <a name="service-order-item-requirements"></a>Varebehov på serviceordre
 
@@ -36,7 +36,7 @@ I samme øjeblik et varebehov oprettes til en serviceordre, kan du få det vist 
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Få vist et varebehov fra en serviceordre
 
-1. Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1. Gå til **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**.
 1. Vælg **Ekspedition**, og vælg derefter **Varebehov** for at åbne formularen **Varebehov**.
 1. Vælg fanen **Projekt**, og marker feltet **Serviceordre** for at se serviceordrerne for varebehovet.
 
@@ -44,13 +44,13 @@ I samme øjeblik et varebehov oprettes til en serviceordre, kan du få det vist 
 
 Hvis der oprettes et varebehov på en serviceordre, kan du ikke slette serviceordren. Du skal slette varebehovet, før du kan slette serviceordren.
 
-1. Gå til **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.
+1. Gå til **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**.
 1. Vælg **Ekspedition**, og vælg derefter **Varebehov** for at åbne formularen **Varebehov**. I denne form vises de varebehov, der er oprettet på serviceordren.
 1. Vælg det varebehov, der skal slettes, og vælg derefter **Slet**.
 
 eller
 
-1. Gå til **Projektstyring og regnskab** \> **Fælles** \> **Projekter** \> **Alle projekter**.
+1. Gå til **Projektstyring og regnskab** \> **Projekter** \> **Alle projekter**.
 1. Åbn det projekt, der har den serviceordre, hvor der er oprettet et varebehov.
 1. Vælg **Varebehov** i højre rude i formularen **Projekter**. Formularen **Varebehov** viser en oversigt over de varebehov, der er knyttet til det valgte projekt.
 1. Vælg det varebehov, der skal slettes, og vælg derefter **Slet**.

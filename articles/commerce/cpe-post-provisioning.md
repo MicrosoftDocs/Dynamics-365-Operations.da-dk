@@ -1,8 +1,8 @@
 ---
-title: Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
-description: Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
+title: Konfigurere et Dynamics 365 Commerce-sandkassemiljø
+description: Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-sandkassemiljø, efter at det er blevet klargjort.
 author: psimolin
-ms.date: 05/12/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,34 +14,34 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 259a580981003f135e234f66e9e93ceb18605412
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892324"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013103"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et Dynamics 365 Commerce-evalueringsmiljø
+# <a name="configure-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurere et Dynamics 365 Commerce-sandkassemiljø
 
 [!include [banner](includes/banner.md)]
 
-Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø, efter at det er blevet klargjort.
+Denne artikel beskriver, hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-sandkassemiljø, efter at det er blevet klargjort.
 
-Fuldfør kun procedurerne i denne artikel, efter dit Commerce-evalueringsmiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-evalueringsmiljø se [Klargøre et Commerce-evalueringsmiljø](provisioning-guide.md).
+Fuldfør kun procedurerne i denne artikel, efter dit Commerce-sandkassemiljø er klargjort. For yderligere oplysninger om, hvordan du klargør dit Commerce-sandkassemiljø, se [Klargøring af et Commerce-sandkassemiljø](provisioning-guide.md).
 
-Når dit Commerce-evalueringsmiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at evaluere miljøet. Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.
+Når dit Commerce-sandkassemiljø er blevet klargjort fra ende til anden, skal yderligere konfigurationstrin efter klargøring fuldføres, før du kan begynde at bruge miljøet. Hvis du vil fuldføre disse trin, skal du bruge Microsoft Dynamics Lifecycle Services (LCS) og Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Før du begynder
 
 1. Log på [LCS-portalen](https://lcs.dynamics.com).
 1. Gå til dit projekt.
-1. Vælg **Skybaserede miljøer** øverst i menuen.
 1. Vælg dit miljø fra listen.
 1. Vælg **Log på miljø** i miljøoplysningerne til højre. Du bliver sendt til Commerce Headquarters.
-1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne.
-1. Gå til **Commerce-parametre \> Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, kan du tilføje den, angive værdien til **true** og derefter vælge **Kanaldatabase \> Fuld synkronisering** for den Commerce Scale Unit, der er tilknyttet dit websted for e-handel.
+1. Kontrollér, at den juridiske enhed **USRT** er valgt i øverste højre hjørne. Denne juridiske enhed er forudkonfigureret i demodataene.
+1. Gå til **Commerce-parametre \> Konfigurationsparametre**, og sørg for, at der er en post for **ProductSearch.UseAzureSearch**, der er angivet til **true**. Hvis denne post mangler, skal du tilføje den og angive værdien til **true**.
 1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Initialiser Commerce-planlægger**. I menuen **Initialiser Commerce-planlægger** skal du sikre, at indstillingen **Slet eksisterende konfiguration** er angivet til **Ja**, og derefter vælge **OK**.
-1. Hvis du vil føje kanaler til Commerce Scale Unit, skal du gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \>Kanaldatabase** og derefter vælge Commerce Scale Unit i venstre rude. I oversigtspanelet **Detailkanal** skal du tilføje **AW-onlinebutik**, **AW Business-onlinebutik** og **Fabrikams udvidede onlinebutik** som kanaler. Du kan også tilføje detailforretninger, hvis du bruger POS ( f.eks. **Seattle**, **San Francisco** og **San Jose**).
+1. For at butikken og e-handelskanalerne kan fungere korrekt, skal de føjes til Commerce Scale Unit. Gå til **Detail og handel \> Konfiguration af hovedkontor \> Commerce-planlægger \> Kanaldatabase**, og vælg Commerce Scale Unit i venstre rude. I oversigtspanelet **Detailkanal** skal du tilføje **AW-onlinebutik**, **AW Business-onlinebutik** og **Fabrikams udvidede onlinebutik** som kanaler, hvis du skal bruge disse e-handelskanaler. Du kan også tilføje detailforretninger, hvis du bruger POS (f.eks. **Seattle**, **San Francisco** og/eller **San Jose**).
+1. Vælg **Kanaldatabase \> Fuld datasynkronisering** til Commerce Scale Unit for at sikre, at alle ændringer synkroniseres med kanaldatabasen.
 
 Under klargøring af aktiviteter i Commerce Headquarters skal du kontrollere, at den juridiske enhed **USRT** altid er markeret.
 
@@ -52,7 +52,7 @@ Under klargøring af aktiviteter i Commerce Headquarters skal du kontrollere, at
 Hvis du vil knytte en arbejder til din identitet, skal du følge disse trin i Commerce Headquarters.
 
 1. Brug menuen til venstre for at gå til **Moduler \> Retail og Commerce \> Medarbejdere \> Arbejdere**.
-1. Find og vælg følgende post i listen: **000713 - Andrew Collette**.
+1. Find og vælg følgende post i listen: **000713 - Andrew Collette**. Denne eksempelbruger er knyttet til den San Francisco-butik, der skal bruges i næste afsnit.
 1. Klik på **Commerce** i handlingsruden.
 1. Vælg **Tilknyt eksisterende identitet**.
 1. Skriv din emailadresse i feltet **Email** til højre for **Søg ved hjælp af email**.
@@ -76,24 +76,24 @@ Følg disse trin for at aktivere skybaseret POS.
 1. Vælg **Aktivér**. Du er logget ud og dirigeret til POS-login-siden.
 1. Du kan nu logge på den skybaserede POS-oplevelse ved hjælp af operatør-ID **000713** og adgangskoden **123**.
 
-## <a name="set-up-your-site-in-commerce"></a>Konfigurer dit websted i Commerce
+## <a name="set-up-your-e-commerce-sites"></a>Konfigurere dine e-handelswebsteder
 
-Følg disse trin for at begynde at konfigurere dit evalueringswebsted i Commerce.
+Der er tre tilgængelige demowebsteder til e-handel: Fabrikam, Adventure Works og Adventure Works Business. Følg trinnene nedenfor for at konfigurere hvert demowebsted.
 
 1. Log på Site Builder ved hjælp af den URL-adresse, som du noterede ned, da du initialiserede e-Commerce i forbindelse med klargøring (jf. [Initialiser e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Vælg webstedet **Fabrikam** for at åbne dialogboksen webstedsopsætning.
-1. Vælg det domæne, du angav, da du initialiserede e-Commerce.
-1. Som standardkanal skal du vælge **Udvidet Fabrikam-onlinebutik**. (Sørg for at vælge den **udvidede** onlinebutik.)
+1. Vælg webstedet (**Fabrikam**, **Adventure Works** eller **Adventure Works Business**), for at åbne dialogboksen til opsætning af websted.
+1. Vælg det domæne, du angav, da du initialiserede Commerce.
+1. I hovedkontoret skal du vælge den forudkonfigurerede onlinebutikskanal (**Fabrikams udvidede onlinebutik**, **AW-onlinebutik** eller **AW Business-onlinebutik**), der svarer til standardkanalen.
 1. Vælg **da-dk** som standardsprog.
-1. Lad værdien i feltet **Sti** være, som den er.
+1. Konfigurer stifelterne. Det kan være tomt for et enkelt websted, men det skal konfigureres, hvis du bruger samme domænenavn til flere websteder. Hvis domænenavnet f.eks. er `https://www.constoso.com`, kan du bruge en tom sti til Fabrikam (`https://contoso.com`) og derefter bruge "aw" for Adventure Works (`https://contoso.com/aw`) og "awbusiness" til Adventure Works-forretningswebstedet (`https://contoso.com/awbusiness`).
 1. Vælg **OK**. Listen over sider på webstedet vises.
-1. Gentag trin 2-7 for webstedet **AdventureWorks** (som er tilknyttet **AW-onlinebutik**-kanalen) og webstedet **AdventureWorks Business** (som er tilknyttet kanalen **AW Business-onlinebutik**). Hvis feltet **Sti** til Fabrikams websted er tom, skal du tilføje stier for de to AdventureWorks-websteder (f.eks. "aw" og "awbusiness").
+1. Du kan eventuelt gentage trin 2-7 for at konfigurere de andre demowebsteder efter behov.
 
 ## <a name="enable-jobs"></a>Aktivere job
 
 Følg disse trin for at aktivere job i Commerce.
 
-1. Log på miljøet (hovedkontor).
+1. Log på hovedkontormiljøet.
 1. Brug menuen til venstre for at gå til **Retail og Commerce \> Forespørgsler og rapporter \> Batchjobs**.
 
     De resterende trin i denne procedure skal fuldføres for hvert af følgende job:
@@ -146,12 +146,11 @@ Du kan bruge følgende disse testkreditkortoplysninger til at udføre testtransa
 
 ## <a name="next-steps"></a>Næste trin
 
-Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit evalueringsmiljø. Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen. Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.
+Når klargørings- og konfigurationstrinnene er fuldførte, kan du begynde at bruge dit sandkassemiljø. Brug Site Builder-URL-adressen for Commerce-webstedet til at gå til oprettelsesoplevelsen. Brug URL-adressen for Commerce-webstedet for at gå til detailkundewebstedet.
 
-Hvis du vil konfigurere valgfrie funktioner til dit Commerce-evalueringsmiljø, se [Konfigurere valgfrie funktioner til et Commerce-evalueringsmiljø](cpe-optional-features.md).
+Hvis du vil konfigurere valgfrie funktioner til dit Commerce-sandkassemiljø, se [Konfiguration af valgfrie funktioner til et Commerce-sandkassemiljø](cpe-optional-features.md).
 
-> [!NOTE]
-> Commerce-evalueringsmiljøer har en forudindlæst Azure Active Directory (Azure AD) business-to-consumer-lejer (B2C) til demonstrationsformål. Det er ikke nødvendigt at konfigurere din egen Azure AD B2C-lejer for evalueringsmiljøer. Hvis du konfigurere evalueringsmiljøet for at bruge din egen Azure AD B2C-lejer, skal du tilføje ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som URL-svaradresse i Azure AD B2C-programmet via Azure Portal.
+For at gøre det muligt for e-handelsbrugere at logge på e-handelswebstedet kræves der en ekstra konfiguration for at aktivere stedgodkendelse via Azure Active Directory business-to-consumer (B2C). Du finder flere instruktioner under [Konfigurere en B2C-lejer i Commerce](set-up-b2c-tenant.md).
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
@@ -177,15 +176,11 @@ Demodata, der er leveret i Commerce version 10.0.26, og som tidligere havde en f
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
+[Klargøre et Dynamics 365 Commerce-sandkassemiljø](provisioning-guide.md)
 
-[Klargøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md)
+[Konfigurere valgfrie funktioner for et Dynamics 365 Commerce-sandkassemiljø](cpe-optional-features.md)
 
-[Konfigurere valgfrie funktioner til et Dynamics 365 Commerce-evalueringsmiljø](cpe-optional-features.md)
-
-[Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø](cpe-bopis.md)
-
-[Ofte stillede spørgsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
+[Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

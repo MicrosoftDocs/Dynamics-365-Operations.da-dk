@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905018"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016393"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -818,7 +818,7 @@ Retail Modern POS er i øjeblikket kun tilgængelig som et Windows 8.1-program t
 | Justere leverandørejet lager ved hjælp af en optællingskladde. | Det er vigtigt, at du holder systemets disponible lagerbeholdning synkroniseret med det faktiske fysiske lager. Det lager, der ejes af leverandøren, kan justeres ind og ud ved hjælp af optællingsprocesser som justering af antal og optællingskladdeprocesser. |
 | Få mere at vide om understøttelse af konsignation i Dynamics 365 for Operations | Find flere oplysninger om understøttelse af konsignationsprocesser i [Konsignation](../../../supply-chain/inventory/consignment.md), [Konfigurere konsignation](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Oprette en genopfyldningsordre til konsignation (opgaveguide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Ændre ejerskabet af konsignationslager baseret på produktionsbehov (opgaveguide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Kreditorsamarbejde (tidligere kendt som leverandørportalen)
+### <a name="vendor-collaboration"></a>Kreditorsamarbejde
 
 | Hvad du kan gøre | Hvorfor dette er vigtigt |
 |-----------------|-----------------------|

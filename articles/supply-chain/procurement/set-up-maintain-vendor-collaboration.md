@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890822"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023754"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Konfigurere og vedligeholde kreditorsamarbejde
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890822"
 Grænsefladen for kreditorsamarbejde viser begrænsede oplysninger om indkøbsordrer, fakturaer og konsignationslager til eksterne kreditorbrugere. Fra denne brugergrænseflade kan en kreditor også besvare tilbudsanmodninger og få vist og redigere grundlæggende firmaoplysninger.
 
 Denne artikel forklarer, hvordan du konfigurerer kreditorsamarbejde i Dynamics 365 Supply Chain Management. Det forklares også, hvordan du konfigurerer en arbejdsgang for at klargøre nye brugere af kreditorsamarbejde, og hvordan du administrerer sikkerhedsrollerne for disse brugere.
-
-> [!NOTE]
-> Oplysningerne om opsætning af sikkerhedsroller til kreditorsamarbejde gælder kun for den aktuelle version af Finans og drift. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX-programversion 7.0.1 (maj 2016), samarbejder du med kreditorer ved hjælp af modulet **Kreditorportal**. Du kan finde oplysninger om brugerrettigheder for kreditorportalen i Microsoft Dynamics AX, under [Brugersikkerhed på kreditorportal](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Konfigurere sikkerhedsroller for kreditorsamarbejde
 
@@ -138,13 +135,7 @@ Opret en arbejdsgang af typen **Platform til deaktivering af brugeranmodningsarb
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Aktivere kreditorsamarbejde for en bestemt kreditor
 
-Før du opretter en brugerkonto til en person, der bruger kreditorsamarbejde, skal du konfigurere kreditoren til at bruge kreditorsamarbejde. Indstil feltet **Aktivering af samarbejde** under fanen **Generelt** på siden **Kreditorer**. Der findes følgende indstillinger:
-
-- **Aktiv (IO bekræftes automatisk)** – Indkøbsordrer bekræftes automatisk, hvis kreditoren accepterer dem uden at anmode om ændringer.
-- **Aktiv (IO bekræftes ikke automatisk)** – Din organisation skal manuelt bekræfte indkøbsordrer, når kreditoren har godkendt dem.
-
-> [!NOTE]
-> Indkøbsmedarbejdere i dit firma kan også udføre denne opgave.
+Før du opretter en brugerkonto til en person, der bruger kreditorsamarbejde, skal du konfigurere kreditoren til at bruge kreditorsamarbejde. Du kan finde flere oplysninger om dette under [Kreditorsamarbejde med eksterne kreditorer](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Foretage fejlfinding af klargøring af nye brugere af kreditorsamarbejde
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862302"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014714"
 ---
 # <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
 
@@ -74,9 +74,14 @@ Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af d
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Konfigurer varekontrol med klyngepluk
 
-1. I et menupunkt på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse:  **Lagerstedsstyring** \> **Lagerstedsstyring** \> **Opsætning** \>  **Mobilenhed** \> **Menupunkter i mobilenhed**.
+1. Gå til **Lagerstedsstyring** > **Opsætning** > **Mobilenhed** > **Menupunkter i mobilenhed**.
+1. Vælg det menupunkt, du vil konfigurere, i listeruden.
+1. Vælg **Konfiguration af arbejdsbekræftelse** i handlingsruden.
+1. Udfør en af følgende handlinger:
+    - Hvis der allerede findes en linje for den **Arbejdstype**, du vil konfigurere, skal du markere den og derefter vælge **Rediger** i handlingsruden.
+    - Hvis der ikke findes en relevant linje, skal du vælge **Ny** i handlingsruden og derefter angive **Arbejdstype** til den relevante type.
+1. Markér afkrydsningsfeltet **Bekræftelse af produkt** for den nye eller valgte linje. Så kan arbejderne kontrollere hver enkelt vare på lageret fra mobilenheden.
 
-1. Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden. Indstillingen **Bekræftelse af produkt** gør det muligt at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

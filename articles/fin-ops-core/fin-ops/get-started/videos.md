@@ -2,7 +2,7 @@
 title: Videoer
 description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487985"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958132"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -30,7 +30,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 > [!Note]
 > Nogle af de viste videoer blev udgivet under et tidligere produktnavn, men gælder stadig.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer om udvikling og administration af Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer til udvikling og administration af Finance and Operations
 
 ### <a name="data-integration"></a>Dataintegration
 
@@ -42,7 +42,6 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ### <a name="development"></a>Udvikling
 
-- [Sådan løser du konflikter i Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurere en udviklingsgren og et build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Opsætning af en computer til udvikling](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -51,8 +50,8 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 ### <a name="intelligence"></a>Intelligence
 
 - [Sådan redigerer du en integreret rapport i et analytisk arbejdsområde](https://youtu.be/_8WlwmSggcQ)
-- [Sådan integrerer du PowerBI.com-rapporter Finance and Operations-apps](https://youtu.be/gGWuNJDoi-M)
-- [Brug din egen database (BYOD) i Finance and Operations-apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Sådan integrerer du PowerBI.com-rapporter i Finance and Operations-apps](https://youtu.be/gGWuNJDoi-M)
+- [Bruge din egen database (BYOD - Bring Your Own Database) i Finance and Operations-apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Sådan bruges Power BI-indhold til omkostningsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)

@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850548"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015400"
 ---
 # <a name="product-related-translations-faq"></a>Ofte stillede spørgsmål til produktvariantoversættelser
 
@@ -43,20 +43,20 @@ Du kan få vist oversættelser af produkt-relaterede oplysninger i en ekstern ki
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Hvordan kan jeg oprette oversættelser for produkt-relaterede oplysninger?
 Hvis du vil oprette oversættelser for et projekt, skal du følge disse trin:
-1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Frigivne produkter**.
+1.  Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter**.
 2.  Vælg et produkt, og klik på **Oversættelser** i gruppen **Sprog** i handlingsruden.
 3.  På siden **Oversættelse af tekst** skal du i feltet **Sprog** vælge et sprog. Hvis du vil tilføje flere sprog, skal du udvide feltet **Sprog** og derefter klikke på **OK**.
 4.  Brug gruppen **Oversat tekst** til at indtaste oversættelser i felterne **Beskrivelse** og **Produktnavn**.
 
 Hvis du vil oprette oversættelser for produktattributter, skal du følge disse trin:
-1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Frigivne produkter**.
+1.  Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter**.
 2.  Under **Konfiguration** skal du klikke på **Attributter** og derefter klikke på **Attributter**.
 3.  På siden **Attributter** skal du klikke på **Oversæt**.
 4.  På siden **Oversættelse af tekst** skal du i feltet **Sprog** vælge et sprog. Hvis du vil tilføje flere sprog, skal du udvide feltet **Sprog** og derefter klikke på **OK**.
 5.  Brug gruppen **Oversat tekst** til at indtaste oversættelser i felterne **Beskrivelse** og **Fulde navn** og **Hjælpetekst**.
 
 Hvis du vil oprette oversættelser for produktdimensionsværdier, skal du følge disse trin:
-1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Frigivne produkter**.
+1.  Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter**.
 2.  Vælg et produkt, og klik derefter på **Produktdimensioner**.
 3.  Vælg et af linkene for produktdimensioner: **Konfigurationer**, **Størrelser**, **Farver** eller **Skabelon**.
 4.  Vælg en dimensionsværdi, og klik derefter på **Oversæt**.

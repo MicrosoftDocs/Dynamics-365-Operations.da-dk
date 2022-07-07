@@ -15,17 +15,16 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aa1ca9c057b8a1332cd52f73a24adf2089ebef3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852713"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027277"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 De fleste aktiviteter, som brugere udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Dynamics 365 Commerce-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Hvis du vil gøre en handling tilgængelig, så den kan føjes til et knapgitter i knapgitterdesigner, skal den først markeres som en brugerhandling på visningen POS-handlinger i Commerce headquarters (**Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS \> POS-handlinger**).
 

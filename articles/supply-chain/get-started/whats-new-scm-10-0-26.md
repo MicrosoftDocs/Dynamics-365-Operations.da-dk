@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850751"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954474"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.26. (maj 2022)
 
@@ -61,7 +61,6 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 | Funktionsområde | Nye eller opdaterede artikler |
 |---|---|
 | Omkostningsstyring | Der er føjet opdaterede eksempler og diagrammer til hvert af følgende artikler:<ul><li>[FIFO med fysisk værdi og afmærkning](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO med fysisk værdi og afmærkning](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-dato med fysisk værdi og mærkning](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Løbende gennemsnitskostpris](../cost-management/running-average-cost-price.md)</li><li>[Vægtet gennemsnit med fysisk værdi og afmærkning](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
-| Indkøb og forsyning | [Uoverensstemmelser i indkøbsordrelinjedata](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

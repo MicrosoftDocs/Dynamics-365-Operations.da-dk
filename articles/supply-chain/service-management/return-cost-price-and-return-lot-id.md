@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677080"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017234"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Returkostpris og returparti-id        
 
@@ -38,7 +38,7 @@ Hvis du vil bruge en anden kostpris end den aktuelle kostpris for returvarer fra
 
 Når du føjer varer til en returordre, returneres varerne som standard til lageret til den aktuelle kostpris. Følg disse trin for at angive en anden returkostpris.
 
-1.  Klik på **Salg og marketing** \> **Generelt** \> **Returordrer** \> **Alle returordrer**.
+1.  Klik på **Salg og marketing** \> **Salgsreturneringer** \> **Alle returordrer**.
 
 2.  Klik på **Returordre** i gruppen **Ny** i **handlingsruden**.
 
@@ -54,7 +54,7 @@ Når du føjer varer til en returordre, returneres varerne som standard til lage
 
 Dette er den foretrukne metode til at oprette returlinjer. Hvis du vil bruge den kostpris for produkterne, der var aktuel på det tidspunkt, hvor du solgte produkterne til kunden, skal du oprette en returordre og angive en salgslinje, der skal returneres.
 
-1.  Klik på **Salg og marketing** \> **Generelt** \> **Returordrer** \> **Alle returordrer**.
+1.  Klik på **Salg og marketing** \> **Salgsreturneringer** \> **Alle returordrer**.
 
 2.  Klik på **Returordre** i gruppen **Ny** i **handlingsruden**.
 

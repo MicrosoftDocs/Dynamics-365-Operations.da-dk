@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874182"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015980"
 ---
 # <a name="introduction-to-assets"></a>Introduktion til aktiver
 
@@ -36,7 +36,7 @@ Et aktiv opdateres automatisk med relaterede oplysninger. Eksempelvis kan disse 
 
 ## <a name="all-assets"></a>Alle aktiver
 
-Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**. På listesiden **Alle aktiver** vises alle aktiver og nogle af de oplysninger, der er relateret til dem. Hvis du kun vil have vist aktive aktiver, skal du vælge **Aktive aktiver**. Hvis du kun vil have vist de aktiver, der er installeret på arbejdssteder, som du er relateret til som vedligeholdelsesarbejder, skal du vælge **Mine aktive aktiver**. (Denne relation er oprettet på siden **Arbejdere**. Du finder flere oplysninger i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver**. På listesiden **Alle aktiver** vises alle aktiver og nogle af de oplysninger, der er relateret til dem. Hvis du kun vil have vist aktive aktiver, skal du vælge **Aktive aktiver**. Hvis du kun vil have vist de aktiver, der er installeret på arbejdssteder, som du er relateret til som vedligeholdelsesarbejder, skal du vælge **Mine aktive aktiver**. (Denne relation er oprettet på siden **Arbejdere**. Du finder flere oplysninger i [Vedligeholdelsesarbejdere og arbejdergrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 I gittervisningen **Alle aktiver** skal du vælge et link i kolonnen **Aktiver** for at få vist detaljerne for den valgte post. Hvis du vil redigere posten, skal du vælge knappen **Rediger**. Detaljeoversigten viser detaljerede oplysninger, der er relateret til aktivet. En rude med **Relaterede oplysninger** i højre side indeholder yderligere oplysninger relateret til aktivet. Udvid ruden for at se de relaterede oplysninger for det valgte aktiv.
 

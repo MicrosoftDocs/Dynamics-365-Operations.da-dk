@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869714"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015835"
 ---
 # <a name="create-functional-locations"></a>Oprette arbejdssteder
 
@@ -41,7 +41,7 @@ Hvis du vil kunne arbejde med arbejdssteder, skal du starte med at oprette to "k
 
 Når du bruger arbejdssteder, skal du starte med at oprette et standardsted, der skal bruges, når du opretter nye aktiver. Dette arbejdssted er det, du vælger i **Styring af aktiver** > **Opsætning** > **Parametre til aktivstyring** > **Aktiver**-link > feltet **Standardarbejdssted**. Standardarbejdsstedet kan bruges, når du opretter nye aktiver, og du endnu ikke har oprettet en arbejdsstedstruktur for disse aktiver.
 
-1. Vælg **Styring af aktiver** > **Almindeligt** > **Arbejdssteder** > **Alle arbejdssteder**.  
+1. Vælg **Styring af aktiver** > **Arbejdssteder** > **Alle arbejdssteder**.  
 2. Vælg **Nyt** i **Alle arbejdssteder**.
 3. Indsæt et id i feltet **Arbejdssted**, for eksempel "0000" eller "Standard", for at angive, at dette er et særligt arbejdssted.
 4. Angiv et navn til standardarbejdsstedet i feltet **Navn**.
@@ -53,7 +53,7 @@ Når du bruger arbejdssteder, skal du starte med at oprette et standardsted, der
 
 Følgende procedure beskriver, hvordan du opretter de arbejdssteder, der kræves til vedligeholdelsesstyring i din virksomhed.
 
-1. Vælg **Styring af aktiver** > **Almindeligt** > **Arbejdssteder** > **Alle arbejdssteder**. Du kan oprette et arbejdssted fra gittervisning eller detaljevisning.
+1. Vælg **Styring af aktiver** > **Arbejdssteder** > **Alle arbejdssteder**. Du kan oprette et arbejdssted fra gittervisning eller detaljevisning.
 2. Vælg knappen **Nyt**.
 3. Indsæt et id i feltet **Arbejdssted**.
 4. Angiv et navn til arbejdsstedet i feltet **Navn**.

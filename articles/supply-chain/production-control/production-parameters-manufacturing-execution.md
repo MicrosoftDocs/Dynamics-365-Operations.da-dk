@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873660"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016153"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametre i Produktionsudførelse
 
@@ -63,7 +63,7 @@ På siden **Produktionsparametre** konfigureres automatisk styklisteforbrug i tr
 
 For hvert stadie kan du i feltet **Auto-styklisteforbrug** vælge en af tre metoder til pluk af varer til en produktionsordre:
 
-- **Varetrækprincip** – Denne indstilling bruges sammen med en indstilling, der er defineret for styklisten i modulet **Produktion**. Klik på **Produktionsstyring** &gt; **Almindelige** &gt; **Produktionsordrer** &gt; **Alle produktionsordrer**. Vælg en produktionsordre i listen på siden **Alle produktionsordrer**, og klik derefter på **Stykliste** i handlingsruden. På siden **Stykliste** under fanen **Opsætning** skal du vælge i feltet **Varetrækprincip** vælge en af følgende indstillinger:
+- **Varetrækprincip** – Denne indstilling bruges sammen med en indstilling, der er defineret for styklisten i modulet **Produktion**. Klik på **Produktionsstyring** &gt; **Produktionsordrer** &gt; **Alle produktionsordrer**. Vælg en produktionsordre i listen på siden **Alle produktionsordrer**, og klik derefter på **Stykliste** i handlingsruden. På siden **Stykliste** under fanen **Opsætning** skal du vælge i feltet **Varetrækprincip** vælge en af følgende indstillinger:
 
   - **Igangsæt**
   - **Afslut**

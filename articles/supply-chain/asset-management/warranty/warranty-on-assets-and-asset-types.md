@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa4fe7af46996e8de76ea61d5395327e7617e736
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e63161aa32ecbc99baace9bb0cc649aedc600ed
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906118"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015986"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Garantier for aktiver og aktivtyper
 
@@ -39,7 +39,7 @@ Denne artikel beskriver, hvordan du konfigurerer garantier for aktiver og aktivt
 
 ## <a name="set-up-a-warranty-on-an-asset"></a>Konfigurere en garanti for et aktiv
 
-1. Vælg **Styring af aktiver** \> **Almindelig** \> **Aktiver** \> **Alle aktiver**.
+1. Vælg **Styring af aktiver** \> **Aktiver** \> **Alle aktiver**.
 2. Vælg aktivet, og vælg derefter **Rediger**.
 3. I oversigtspanelet **Leverandør** i sektionen **Leverandørgaranti** skal du vælge garantiaftalen i feltet **Garanti**.
 4. Vælg start- og slutdatoerne i felterne **Garantistart** og **Garantiafslutning**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671668"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017197"
 ---
 # <a name="set-up-a-preferred-technician"></a>Konfigurere en foretrukket tekniker 
 
@@ -31,13 +31,13 @@ Du kan vælge enhver arbejder som en foretrukket tekniker til en serviceaftale e
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Knytte en medarbejder til et planlægningsteam
 
-1.  Klik på **Personale** \> **Generelt** \> **Arbejdere** \> **Arbejdere**. Dobbeltklik på en arbejder for at åbne arbejderens side med detaljer. I **handlingsruden** skal du klikke på **Opsætning** \> **Planlægningsteam** for at åbne formularen **Planlæg medarbejdere**.
+1.  Klik på **Personale** \> **Arbejdere** \> **Arbejdere**. Dobbeltklik på en arbejder for at åbne arbejderens side med detaljer. I **handlingsruden** skal du klikke på **Opsætning** \> **Planlægningsteam** for at åbne formularen **Planlæg medarbejdere**.
 
 2.  Vælg det team, der skal tilknyttes arbejderen, i feltet **Planlægningsteam**.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Knytte en foretrukken tekniker til en serviceaftale
 
-1.  Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**. Dobbeltklik på en serviceaftale for at åbne formen med detaljer.
+1.  Klik på **Servicestyring** \> **Serviceaftaler** \> **Serviceaftaler**. Dobbeltklik på en serviceaftale for at åbne formen med detaljer.
 
 2.  Under fanen **Generelt** skal du vælge feltet **Foretrukken tekniker** for at knytte et medlem af det relevante planlægningsteam til serviceaftalen som den foretrukne tekniker.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899405"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022558"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -113,9 +113,6 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 ### <a name="enable-the-my-day-dialog"></a>Aktivere dialogboksen "Min dag"
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Dialogboksen **Min dag** giver arbejdere et overblik over deres daglige registreringer og aktuelle saldi for betalt tid, betalt overtid, fravær og betalt fravær.
 
 Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 ### <a name="enable-teams"></a>Aktivere teams
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 På denne måde kan flere arbejdere arbejde som et team på samme produktionsjob. Teamet kan udpege én arbejder som pilot. De øvrige arbejdere bliver derefter automatisk assistenter for den pågældende pilot. Det er kun piloten, der skal registrere jobstatus for det resulterende team. Tidsposter gælder for alle teammedlemmer.
 
 Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 - *Grænsefladen til produktionsteam i produktionsudførelse*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivere yderligere konfiguration af grænsefladen til produktionsudførelse
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Denne funktion føjer indstillinger til følgende funktioner på siden **Konfigurer produktionsudførelse**:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852865"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016501"
 ---
 # <a name="maintenance-rounds"></a>Vedligeholdelsesrunder
 
@@ -87,7 +87,7 @@ Illustrationen nedenfor viser et eksempel på en vedligeholdelsesrunde, der inde
 
 Når du har konfigureret en vedligeholdelsesrunde, skal du køre et tidsplanlægningsjob for at planlægge alle job, der er relateret til vedligeholdelsesrunden.
 
-1. Klik på **Styring af aktiver** > **Periodisk** > **Forebyggende vedligeholdelse** > **Planlæg vedligeholdelsesrunder** eller **Styring af aktiver** > **Almindeligt** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller på **Åbne vedligeholdelsestidsplanslinjer** eller **Åbne vedligeholdelsestidsplanspuljer** > vælg vedligeholdelsestidsplanslinje på listen > knappen **Vedligeholdelsesrunder**.
+1. Klik på **Styring af aktiver** > **Periodisk** > **Forebyggende vedligeholdelse** > **Planlæg vedligeholdelsesrunder** eller **Styring af aktiver** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller på **Åbne vedligeholdelsestidsplanslinjer** eller **Åbne vedligeholdelsestidsplanspuljer** > vælg vedligeholdelsestidsplanslinje på listen > knappen **Vedligeholdelsesrunder**.
 
 2. Vælg den periodetype, der skal bruges til planlægningsjobbet, i feltet **Periode**.
 
@@ -102,7 +102,7 @@ Når du har konfigureret en vedligeholdelsesrunde, skal du køre et tidsplanlæg
 
 6. Klik på **OK**.
 
-7. Du kan nu se vedligeholdelsesrundejob i **Styring af aktiver** > **Almindeligt** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller **Åbne vedligeholdelsestidsplanslinjer**. Hvis de planlagte runder er forbundet til en arbejdsordrepulje, kan du også se vedligeholdelsestidsplanslinjer i **Åbne vedligeholdelsestidsplanspuljer**. Vedligeholdelsestidsplanslinjer, der er oprettet ud fra en runde, har referencetypen "Vedligeholdelsesrunder".
+7. Du kan nu se vedligeholdelsesrundejob i **Styring af aktiver** > **Vedligeholdelsestidsplan** > **Alle vedligeholdelsestidsplaner** eller **Åbne vedligeholdelsestidsplanslinjer**. Hvis de planlagte runder er forbundet til en arbejdsordrepulje, kan du også se vedligeholdelsestidsplanslinjer i **Åbne vedligeholdelsestidsplanspuljer**. Vedligeholdelsestidsplanslinjer, der er oprettet ud fra en runde, har referencetypen "Vedligeholdelsesrunder".
 
 De to illustrationer nedenfor viser et planlægningsjob i dialogboksen **Planlæg vedligeholdelsesrunder** og vedligeholdelsestidsplanslinjer, der er oprettet i **Hele vedligeholdelsestidsplanen** baseret på det pågældende planlægningsjob.
 

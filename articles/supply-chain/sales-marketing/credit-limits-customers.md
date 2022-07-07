@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903863"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015312"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditmaksimum for debitorer
 
@@ -117,7 +117,7 @@ Brug formularen **Debitorparametre** til at angive, om der skal vises en advarse
 
 Brug formularen **Debitorer** til at angive kreditmaksimumbeløbet for en bestemt kunde. Du skal være medlem af en sikkerhedsrolle, der er tildelt rettigheden Vedligehold debitormaster(CustCustomersMaintain), for at foretage ændringer i denne form.
 
-1.  Klik på **Debitor** \> **Generelt** \> **Kunder** \> **Alle kunder**. Dobbeltklik på en debitorkonto.
+1.  Klik på **Debitor** \> **Kunder** \> **Alle kunder**. Dobbeltklik på en debitorkonto.
 
 2.  I formularen **Debitorer** skal du i handlingsruden klikke på **Rediger**.
 
@@ -132,7 +132,7 @@ Brug formularen **Debitorer** til at angive kreditmaksimumbeløbet for en bestem
 
 I visse tilfælde skal du kontrollere en debitors kreditmaksimum manuelt. Du kan f.eks. manuelt kontrollere en kundes kreditmaksimum, før du begynder at indtaste en salgsordre. Du kan bruge formularen **Salgsordre** til at kontrollere kreditmaksimum manuelt. Du skal være medlem af en sikkerhedsrolle, der er tildelt rettigheden (Vedligehold salgsordre SalesOrderMaintain), for at foretage ændringer i denne form.
 
-1.  Klik på **Salg og marketing** \> **Generelt** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklik på en salgsordre.
+1.  Klik på **Salg og marketing** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklik på en salgsordre.
 
 2.  I formularen **Salgsordre** skal du i handlingsruden under fanen **Administrer** klikke på **Kontrollér kreditmaks.**.
 

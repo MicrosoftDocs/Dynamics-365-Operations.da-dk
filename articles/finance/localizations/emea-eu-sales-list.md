@@ -2,7 +2,7 @@
 title: Rapportering til EU-listesystemet
 description: Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323470"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012494"
 ---
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
@@ -150,7 +150,7 @@ Transaktioner af følgende typer kan anses for handel inden for Fællesskabet:
 -   Projektfakturaer
 -   Kreditorfakturaer
 
-En transaktion anses en transaktion inden for fællesskabet, hvis leveringsadressen for transaktionen er i en medlemsstat i EU. For disse lande/områder bør der være en post på fanen **Lande/områdeparametre** på siden **Udenrigshandelsparametre**, og værdien **Lande-/områdetype** skal indstilles til **EU**. Handel inden for fællesskabet er markeret i feltet **Listekode**. Du kan også bruge dette felt til at adskille generelle handler inden for fælleskabet fra trekantshandelstransaktioner. Du kan indsamle oplysninger om handel inden for fællesskabet på siden **EU-listesystemet** (klik på **Moms** &gt; **Erklæringer** &gt; **Udenrigshandel** &gt; **EU-listesystemet**) ved hjælp af funktionen **Overførsel**. Denne funktion giver mulighed for at medtage transaktioner, der har beløb af forskellige rapporteringstyper (dvs., varer eller tjenesteydelser) i henhold til de varemomsgrupper, der er angivet på transaktionslinjer. Du kan også anvende andre filtre til at definere de transaktioner, der skal medtages. Funktionen **Overførsel** opretter en post på siden **EU-listesystemet** for hver transaktion inden for fællesskabet, der er inkluderet, og angiver en modparts kontonummer, et land/område, et SE-nummer, et fakturanummer og dato og det samlede beløb af linjer pr. rapporteringstype. Den kopierer også værdien **Listekode** fra transaktionen. Du kan manuelt ændre listekoden for en transaktion på siden **EU-listesystemet**. Funktionen **Overførsel** opretter poster, hvor værdien **Rapporteringsstatus** er angivet til **Medtaget**. Du kan kontrollere de oplysninger, der er indsamlet på siden **EU-listesystemet** ved hjælp af funktionen **Valider**.
+En transaktion anses en transaktion inden for fællesskabet, hvis leveringsadressen for transaktionen er i en medlemsstat i EU. For disse lande/områder bør der være en post på fanen **Lande/områdeparametre** på siden **Udenrigshandelsparametre**, og værdien **Lande-/områdetype** skal indstilles til **EU**. Handel inden for fællesskabet er markeret i feltet **Listekode**. Du kan også bruge dette felt til at adskille generelle handler inden for fælleskabet fra trekantshandelstransaktioner. Du kan indsamle oplysninger om handel inden for fællesskabet på siden **EU-listesystemet** (klik på **Moms** &gt; **Erklæringer** &gt; **Udenrigshandel** &gt; **EU-listesystemet**) ved hjælp af funktionen **Overførsel**. Denne funktion giver mulighed for at medtage transaktioner, der har beløb af forskellige rapporteringstyper (dvs., varer eller tjenesteydelser) i henhold til de varemomsgrupper, der er angivet på transaktionslinjer. Du kan også anvende andre filtre til at definere de transaktioner, der skal medtages. Funktionen **Overførsel** opretter en post på siden **EU-listesystemet** for hver transaktion inden for fællesskabet, der er inkluderet, og angiver en modparts kontonummer, et land/område, et SE-nummer, et fakturanummer og dato og det samlede beløb af linjer pr. rapporteringstype. Den kopierer også værdien **Listekode** fra transaktionen. Du kan manuelt ændre listekoden for en transaktion på siden **EU-listesystemet**. Funktionen **Overførsel** opretter poster, hvor værdien **Rapporteringsstatus** er angivet til **Medtaget**. Du kan kontrollere de oplysninger, der er indsamlet på siden **EU-listesystemet** ved hjælp af funktionen **Valider**. Du kan få detaljerede oplysninger om fakturaen (for salgsretningen) ved at bruge funktionen **Totaler**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generere EU-listesystemet-rapporten
 
@@ -160,8 +160,26 @@ Du kan generere en **EU-listesystemet**-rapport ved hjælp af funktionen **Rappo
 
 Når du har fuldført rapporteringsprocessen for en bestemt periode (f.eks. når skattemyndighederne har accepteret **EU-listesystemet** -rapporten), kan du markere ESL-poster, der er medtaget i rapporten for perioden, ved at angive **Rapporteringsstatus**-værdien til **Lukket**. Du kan angive denne status ved at bruge funktionen **Marker som lukket** på siden **EU-listesystemet**. Hvis du tilbagefører lukningen af perioden, kan du markere ESL-poster ved at angive **Rapporteringsstatus**-værdien til **Medtaget**. Disse poster kan derefter medtages i en **EU-listesystemet**-rapport igen. Du kan angive denne status ved at bruge funktionen **Marker som** **medtages** på siden **EU-listesystemet**.
 
+## <a name="list-of-country-specific-topics"></a>Liste over landespecifikke emner
 
-
+| Land/område          | Link      |
+|------------------|-----------|
+| Østrig          | [EU-listesystem for Østrig](emea-aut-eu-sales-list.md)| 
+| Belgien          |[EU-listesystem for Belgien](emea-bel-eu-sales-list.md)|
+| Tjekkiet          |[EU-listesystem for Tjekkiet](emea-cze-eu-sales-list.md)|
+| Danmark          |[EU-listesystem for Danmark](emea-dnk-eu-sales-list.md)|
+| Estland          |[EU-listesystem for Estland](emea-est-eu-sales-list.md)|
+| Finland          |[EU-listesystem for Finland](emea-fin-eu-sales-list.md)|
+| Frankrig          |[EU-listesystem for Frankrig](emea-fra-eu-sales-list.md)|
+| Tyskland          |[EU-listesystem for Tyskland](emea-deu-eu-sales-list.md)|
+| Ungarn          |[EU-listesystem for Ungarn](emea-hun-eu-sales-list.md)|
+| Letland          |[EU-listesystem for Letland](emea-lva-eu-sales-list.md)|
+| Litauen          |[EU-listesystem for Litauen](emea-ltu-eu-sales-list.md)|
+| Nederlandene          |[EU-listesystem for Nederlandene](emea-nl-eu-sales-list.md)|
+| Polen          |[EU-listesystem for Polen](emea-pol-eu-sales-list.md)|
+| Spanien          |[EU-listesystem for Spanien (rapport 349)](emea-esp-sales-list.md)|
+| Sverige          |[EU-listesystem for Sverige](emea-swe-eu-sales-list.md)|
+| Storbritannien (Nordirland)          |[EU-listesystem for Storbritannien (Nordirland)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

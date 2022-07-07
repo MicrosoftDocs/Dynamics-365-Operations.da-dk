@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870805"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015806"
 ---
 # <a name="asset-management-parameters"></a>Parametre til aktivstyring
 
@@ -37,7 +37,7 @@ Fanen **Aktiver** indeholder følgende indstillinger:
 
 - **Standardarbejdssted** er det standardarbejdssted, som automatisk vælges på aktiver, når du opretter nye aktiver.  
 - I feltet **Standardkalender** skal du vælge en kalender, der skal bruges til beregning af KPI'er for aktiver, hvis der ikke er valgt en ressource for et aktiv.  
-- I feltet **Vis** skal du vælge den standardvisning, der vises, når du åbner **Aktivvisning** (**Styring af aktiver** > **Almindeligt** > **Aktiver** > **Aktivvisning**).
+- I feltet **Vis** skal du vælge den standardvisning, der ses, når du åbner **Aktivvisning** (**Styring af aktiver** > **Aktiver** > **Aktivvisning**).
 - **Standardanmodningstype** er standardtypen for vedligeholdelsesanmodning, som vælges automatisk, når du opretter en ny anmodning.  
 - Budgetter for jobtyper gemmes på det projekt, der er valgt i feltet **Budgetprojekt**. For hver jobtype oprettes der automatisk en ny aktivitet på budgetprojektet. Budgetter for jobtypen gemmes derefter i budgetprojektet.  
 - I feltet **Model** skal du vælge den budgetmodel, der bruges på jobtype- og arbejdsordrebudgetter.

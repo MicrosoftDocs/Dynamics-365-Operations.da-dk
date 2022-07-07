@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6592b94105777525c777950132d5099d1e8abb0e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845048"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016733"
 ---
 # <a name="schedule-work-orders"></a>Planlæg arbejdsordrer
 
@@ -30,11 +30,11 @@ ms.locfileid: "8845048"
 
 Denne artikel beskriver, hvordan du planlægger arbejdsordrer i Styring af aktiver. 
 
-Det nødvendige antal timer for en arbejdsordre defineres af summen af budgetterede timer minus bogførte timer. Hvis der kræves mere tid, skal prognosen justeres tilsvarende. I **Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer** kan du se eller redigere prognoser på en arbejdsordre ved at vælge arbejdsordren og klikke på **Prognose** under fanen **Arbejdsordre**. Når der er oprettet og forkalkuleret arbejdsordrer, er næste trin at allokere de påkrævede vedligeholdelsesarbejdere og -værktøjer, der skal til for at fuldføre arbejdsordrerne.
+Det nødvendige antal timer for en arbejdsordre defineres af summen af budgetterede timer minus bogførte timer. Hvis der kræves mere tid, skal prognosen justeres tilsvarende. I **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer** eller **Aktive arbejdsordrer** kan du se eller redigere prognoser på en arbejdsordre ved at vælge arbejdsordren og klikke på **Prognose** under fanen **Arbejdsordre**. Når der er oprettet og forkalkuleret arbejdsordrer, er næste trin at allokere de påkrævede vedligeholdelsesarbejdere og -værktøjer, der skal til for at fuldføre arbejdsordrerne.
 
 Det er kun arbejdsordrer med en livscyklustilstand, der kan planlægges. Tillad planlægning er konfigureret i **Styring af aktiver** > **Opsætning** > **Arbejdsordrer** > **Livscyklustilstande** >  oversigtspanelet **Generelt** > til/fra-knappen **Tillad planlægning**.
 
-1. Klik på **Styring af aktiver** > **Almindeligt** > **Arbejdsordrer** > **Alle arbejdsordrer**.
+1. Klik på **Styring af aktiver** > **Arbejdsordrer** > **Alle arbejdsordrer**.
 
 2. Vælg de arbejdsordrer, du vil planlægge, på listen. Du kan sortere listen f.eks. efter **Aktuel livscyklustilstand**.
 

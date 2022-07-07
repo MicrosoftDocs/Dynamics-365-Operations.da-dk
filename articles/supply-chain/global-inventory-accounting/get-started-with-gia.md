@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891083"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013549"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gang med Global Inventory Accounting
 
@@ -69,37 +69,6 @@ Før du kan aktivere tilføjelsesprogrammets funktioner, skal du integrere det m
 
 Du kan finde flere oplysninger i [Aktivere efter installation af miljøet](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Konfigurer Dataverse
-
-Før du konfigurerer Dataverse, skal du føje Global Inventory Accounting-serviceprincipperne til din lejer ved at følge disse trin.
-
-1. Installer Azure AD-modul til Windows PowerShell v2 som beskrevet i [Installere Azure Active Directory PowerShell til Graph](/powershell/azure/active-directory/install-adv2).
-1. Kør følgende PowerShell-kommando.
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Derefter skal du oprette programbrugere til Global Inventory Accounting i Dataverse ved at følge disse trin.
-
-1. Åbn URL-adressen til dit Dataverse-miljø.
-1. Gå til **Avancerede indstillinger \> System \> Sikkerhed \> Brugere**, og opret en programbruger. Brug feltet **Vis** til at ændre sidevisningen til *Applikationsbrugere*.
-1. Vælg **Ny**.
-1. Indstil feltet **Program-id** til *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Vælg **Tildel rolle**, og vælg derefter *Systemadministrator*. Hvis der er en rolle med navnet *Common Data Service Bruger*, skal du også vælge den.
-1. Gentag de foregående trin, men angiv feltet **Program-id** til *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-Du kan finde flere oplysninger under [Oprette en programbruger](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Hvis standardsproget for installationen af Dataverse ikke er engelsk, skal du følge disse trin.
-
-1. Gå til **Avancerede indstillinger \> Administration \> Sprog**.
-1. Vælg *Engelsk* (*LanguageCode=1033*), og vælg derefter **Anvend**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Installer tilføjelsesprogrammet
 
 Benyt følgende fremgangsmåde for at installere tilføjelsesprogrammet, så du kan bruge Global Inventory Accounting.
@@ -109,11 +78,21 @@ Benyt følgende fremgangsmåde for at installere tilføjelsesprogrammet, så du 
 1. Gå til **Alle detaljer**.
 1. Gå til **Power Platform-integration**, og vælg **Opsætning**.
 1. I dialogboksen **Opsætning af Power Platform-miljø** skal du markere afkrydsningsfeltet og derefter vælge **Opsætning**. Det tager normalt mellem 60 og 90 minutter at udføre konfigurationen.
-1. Når opsætningen af Microsoft Power Platform-miljøet er fuldført, skal du vælge **Installer et nyt tilføjelsesprogram** i oversigtspanelet **Miljøtilføjelsesprogrammer**.
+1. Når miljøopsætningen af Microsoft Power Platform er fuldført, skal du logge på [Power Platform-administrationen](https://admin.powerplatform.microsoft.com) og derefter installere tilføjelsesprogrammet Globalt lagerregnskab ved at følge disse trin:
+   1. Vælg det miljø, hvor du vil installere tilføjelsesprogrammet.
+   1. Vælg **Dynamics 365-apps**.
+   1. Vælg **Installer app**.
+   1. Vælg **Globalt lagerregnskab til Dynamics 365**.
+   1. Vælg **Næste** for at installere.
+1. Gå tilbage til LCS-miljøet. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
 1. Vælg **Globalt lagerregnskab**.
 1. Følg installationsvejledningen, og accepter vilkårene og betingelserne.
 1. Vælg **Installer**.
 1. I oversigtspanelet **Miljøtilføjelsesprogrammer** kan du se, at Global Inventory Accounting er ved at blive installeret. Efter nogle få minutter skal status ændres fra *Installerer* til *Installeret*. (Du skal muligvis opdatere siden for at se ændringen). På dette tidspunkt er Global Inventory Accounting klar til brug.
+
+Hvis standardsproget for installationen af Dataverse ikke er engelsk, skal du følge disse trin:
+1. Gå til **Avancerede indstillinger \> Administration \> Sprog**.
+1. Vælg *Engelsk* (*LanguageCode=1033*), og vælg derefter **Anvend**.
 
 ## <a name="set-up-the-integration"></a>Konfigurere integrationen
 

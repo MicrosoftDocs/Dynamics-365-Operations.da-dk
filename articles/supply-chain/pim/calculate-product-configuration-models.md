@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4424ebbf64ccdcb9bffc840520952ac915606209
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890938"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015487"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
 
@@ -73,7 +73,7 @@ Du kan overskrive den værdi, der beregnes for målattributten, medmindre målat
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hvordan angiver jeg en målattribut som skjult eller skrivebeskyttet?
 Hvis du vil angive en attribut som skjult eller skrivebeskyttet, skal du følge disse trin.
 
-1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Produktkonfigurationsmodeller**.
+1.  Gå til **Administration af produktoplysninger** &gt; **Produkter** &gt; **Produktkonfigurationsmodeller**.
 2.  Vælg en produktkonfigurationsmodel, og derefter skal du i handlingsruden klikke på **Rediger**.
 3.  Vælg en attribut, der skal bruges som en målattribut på siden **Detaljer om begrænsningsbaseret model til produktkonfiguration**.
 4.  På oversigtspanelet **Attributter** skal du vælge **Skjult** eller **Skrivebeskyttet**.
@@ -96,7 +96,7 @@ Denne meddelelse vises, når en beregning indeholder en fejl, eller når der fin
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Hvorfor får jeg en fejlmeddelelse, selvom jeg har valideret min produktmodel?
 Beregninger er ikke inkluderet i valideringen. Du skal teste produktkonfigurationsmodellen for at finde fejl i beregninger. Følg disse trin for at teste en produktkonfigurationsmodel.
 
-1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Produktkonfigurationsmodeller**.
+1.  Gå til **Administration af produktoplysninger** &gt; **Produkter** &gt; **Produktkonfigurationsmodeller**.
 2.  Vælg en produktkonfigurationsmodel, og derefter skal du i handlingsruden klikke på **Test** i gruppen **Kør**.
 
 

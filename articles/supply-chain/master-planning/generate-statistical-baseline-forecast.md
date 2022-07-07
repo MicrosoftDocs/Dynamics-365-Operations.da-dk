@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c45d763a1f3d199c91f3cf6181c22f4b8130fabc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 98595d900f9e87a4ec6ed4c1f23971801d334487
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844932"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960137"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
@@ -70,10 +70,8 @@ Hvis prognosen ikke er oprettet for en lang r√¶kke varer, men for eksempel for √
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Konfigurere behovsprognoser](demand-forecasting-setup.md)
-
 - [Foretage manuelle justeringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
-
 - [Autorisere en justeret prognose](authorize-adjusted-forecast.md)
-
+- [Webinar: Behovsprognose med Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
