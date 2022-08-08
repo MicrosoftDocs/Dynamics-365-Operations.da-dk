@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef08d7880a0695527cbfb4ba4e11aae05aec7fc8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711848"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065359"
 ---
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
@@ -45,7 +45,7 @@ Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modta
 - [Debitorbogføringsprofiler](customer-posting-profiles.md)
 - [Opsætning, godkendelse og verifikation af kreditkort](credit-card-authorizations.md)
 - [Oprette en debitorfaktura](configure-customer-invoices.md)
-- [Oprette og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
+- [Konfigurere og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
 - [Korrigere en fritekstfaktura](correct-free-text-invoice.md)
 - [Oprette veksler](set-up-bills-exchange.md)
 - [Angive rentesatser for en rentekode](set-up-interest-rates-interest-code.md)
@@ -83,7 +83,7 @@ Gå til [Microsoft Dynamics 365 oversigten](/dynamics365/release-plans/) for at 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger om Debitor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger om Debitor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 finans og drift - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
@@ -103,3 +103,4 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

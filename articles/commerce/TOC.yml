@@ -7,7 +7,7 @@
         - name: Nyheder eller ændringer
           items:
             - name: Nyheder eller ændringer i programmer til finans og drift
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/commerce
             - name: Nyheder eller ændringer i Commerce
               items:
                 - name: Nyheder eller ændringer på Commerce-startsiden
@@ -16,58 +16,56 @@
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (juli 2022)
                   href: get-started/whats-new-commerce-10-0-27.md
-                - name: Commerce 10.0.26 (maj 2022)
-                  href: get-started/whats-new-commerce-10-0-26.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: Fjernede eller udfasede funktioner i Finance and Operations
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?context=/dynamics365/context/commerce
+                - name: Fjernede eller udfasede funktioner i finans og drift
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?context=/dynamics365/context/commerce
                 - name: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
                   href: get-started/removed-deprecated-features-commerce.md
             - name: 'AX 2012-funktioner, der er udsat'
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/commerce
             - name: Afslutning af almindelige understøttelse af Microsoft Dynamics AX 2009 og 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/commerce
         - name: Start her
           items:
             - name: Servicebeskrivelse
-              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/commerce
             - name: Før du køber
-              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
             - name: Opdateringer til One Version-servicen
               items:
                 - name: Oversigt over Opdateringer til One Version-servicen
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/commerce
                 - name: Ofte stillede spørgsmål om Opdateringer til One Version-servicen
-                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?context=/dynamics365/context/commerce
                 - name: 'Administrere opdateringer og livscyklus for brugerdefineret kode, herunder Dynamics 365 Commerce'
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/commerce
                 - name: Livscykluspolitik for software – Sky
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?context=/dynamics365/context/commerce
                 - name: Livscykluspolitik for software – I det lokale miljø
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/commerce
                 - name: Tilgængelighed af serviceopdatering
-                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?context=/dynamics365/context/commerce
                 - name: Anvende opdateringer i cloudmiljøer
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/commerce
                 - name: Anvende opdateringer til udrulninger i det lokale miljø
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?context=/dynamics365/context/commerce
                 - name: Konfigurere serviceopdateringer
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/commerce
                 - name: Præ-servicering og eftersyn
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/commerce
                 - name: Afbryde serviceopdateringer midlertidigt
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Få besked om serviceopdateringer
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
                 - name: Automatisering af dataopgave
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Levere ISV-løsninger ved brug af One Version
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/commerce
                 - name: Oprette og automatisere test af brugeraccept
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/commerce
             - name: Opsætte et Dynamics 365 Commerce-sandkassemiljø
               items:
                 - name: Klargøre et Dynamics 365 Commerce-sandkassemiljø
@@ -81,25 +79,25 @@
             - name: Overvejelser i forbindelse med udrulning
               items:
                 - name: Udrulningsindstillinger
-                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?context=/dynamics365/context/commerce
                 - name: Sammenligning af funktioner i skyen og i det lokale miljø
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
                 - name: Skyinstallation
-                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?context=/dynamics365/context/commerce
                 - name: Systemkrav til skyinstallationer
                   href: get-started/system-requirements.md
                 - name: Lokal installation
-                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?context=/dynamics365/context/commerce
                 - name: Systemkrav til udrulninger i det lokale miljø
-                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?context=/dynamics365/context/commerce
                 - name: Installationstrin for Retail-kanalkomponenter i det lokale miljø
-                  href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?context=/dynamics365/context/commerce
                 - name: Købe Finance + Operations (on-premises)
-                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?context=/dynamics365/context/commerce
                 - name: Commerce Data Exchange-vejledning til implementering
                   href: dev-itpro/implementation-considerations-cdx.md
             - name: Få support
-              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?context=/dynamics365/context/commerce
             - name: Opgradering og N-1 support
               items:
                 - name: Understøttelse af opgradering og N-1 for Commerce
@@ -111,19 +109,19 @@
             - name: Dokumentationsressourcer
               items:
                 - name: Hjælp-system
-                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?context=/dynamics365/context/commerce
                 - name: Oprette forbindelse til Hjælp-systemet
-                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?context=/dynamics365/context/commerce
                 - name: Brugerdefineret oversigt over hjælp
-                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/commerce
                 - name: Se og eksportere feltbeskrivelser
-                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?context=/dynamics365/context/commerce
                 - name: Arbejdsrutineoptager
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?context=/dynamics365/context/commerce
                 - name: Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
                 - name: Videoer
-                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
             - name: Undervisningskatalog
               items:
                 - name: Startside for undervisningskatalog
@@ -147,78 +145,78 @@
             - name: Undersøge brugergrænsefladen
               items:
                 - name: Brugergrænsefladeelementer
-                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/commerce
                 - name: Funktioner til øget tilgængelighed
-                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/commerce
                 - name: Oversigt over funktionsstyring
-                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?context=/dynamics365/context/commerce
                 - name: Ofte stillede spørgsmål om klienter
-                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?context=/dynamics365/context/commerce
                 - name: Handlingssøgning
-                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?context=/dynamics365/context/commerce
                 - name: Avanceret filtrering og forespørgselssyntaks
-                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?context=/dynamics365/context/commerce
                 - name: Konfigurere og filtrere arbejdsområder
-                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?context=/dynamics365/context/commerce
                 - name: Vise sider side om side ved hjælp af funktionen Åbn i nyt vindue
-                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?context=/dynamics365/context/commerce
                 - name: Tastaturgenveje
-                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?context=/dynamics365/context/commerce
                 - name: Ændre bannere eller logobilleder for juridiske enheder
-                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?context=/dynamics365/context/commerce
                 - name: Navigationssøgning
-                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?context=/dynamics365/context/commerce
                 - name: Tilpasse brugeroplevelsen
-                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?context=/dynamics365/context/commerce
                 - name: Gemte visninger
-                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?context=/dynamics365/context/commerce
                 - name: Gitteregenskaber
-                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?context=/dynamics365/context/commerce
                 - name: Oprette og arbejde med brugerdefinerede felter
-                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/commerce
                 - name: Integrere lærredsapps fra Power Apps
-                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?context=/dynamics365/context/commerce
                 - name: Integrere tredjepartsapps
-                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?context=/dynamics365/context/commerce
                 - name: Finde oplysninger ved hjælp af opslag
-                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?context=/dynamics365/context/commerce
                 - name: Ændre datoen for en session
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?context=/dynamics365/context/commerce
                 - name: Indstille en brugers foretrukne tidszone
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?context=/dynamics365/context/commerce
                 - name: Forstå Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?context=/dynamics365/context/commerce
             - name: Implementering af livscyklusstyring
               items:
                 - name: Startside for implementering af livscyklusstyring
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?context=/dynamics365/context/commerce
                 - name: Arkitektur for programmer til finans og drift
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?context=/dynamics365/context/commerce
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
                 - name: Onboarde et implementeringsprojekt
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/commerce
                 - name: Miljøplanlægning
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/commerce
                 - name: Forberede til udgivelse
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/commerce
                 - name: Ofte stillede spørgsmål om udgivelse
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/commerce
                 - name: Sende en serviceanmodning
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
                 - name: 'Ofte stillede spørgsmål om Abonnementer, LCS-projekter og Azure AD-lejere'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce
                 - name: Flytte miljøer mellem datacentre
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/commerce
                 - name: Flytte licenser mellem aftaletyper
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce
                 - name: Flytte LCS-implementeringsprojekter til forskellige Azure AD-lejere
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce
                 - name: Flyt LCS-implementeringsprojekter fra det lokale miljø til skyen
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/commerce
                 - name: Flere LCS-projekter og produktionsmiljøer på én Azure AD-lejer
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementere Commerce-projekter i Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce
+                - name: Implementere Commerce-projekter i finans og drift
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
                 - name: 'Konfigurere nye miljøer, Azure DevOps og forgreninger for projekter'
                   href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -257,7 +255,7 @@
                 - name: Publicere et onlinebutikskatalog
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-indhold
-                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?context=/dynamics365/context/commerce
                 - name: PA-DSS-certificering (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
                 - name: 'Commerce-egenskaber, der er tilgængelige i lokale installationer'
@@ -287,7 +285,7 @@
                 - name: Commerce-komponenthændelser for diagnosticering og fejlfinding
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Anvende en installerbar pakke
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/commerce
                 - name: Initialisere oprindelsesdata i nye Commerce-miljøer
                   href: enable-configure-retail-functionality.md
         - name: Implementering
@@ -306,7 +304,9 @@
                       href: go-live/performance-optimize-images.md
                     - name: Reducere JavaScript ved at udelukke ubrugte moduler
                       href: go-live/performance-reduce-javascript.md
-            - name: AX Faseoprulning i 2012
+                    - name: Tilføje eller opdatere en robots.txt-fil
+                      href: go-live/add-robots-txt.md
+            - name: AX 2012 faseopdelt udrulning
               items:
                 - name: Understøttelse af opgradering og N-1 for Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
@@ -325,15 +325,15 @@
                     - name: Organisationer og organisationshierarkier
                       items:
                         - name: Oversigt over organisationer og organisationshierarkier
-                          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?context=/dynamics365/context/commerce
                         - name: Planlægge dit organisationshierarki
-                          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?context=/dynamics365/context/commerce
                         - name: Oprette juridiske enheder
                           href: channels-legal-entities.md
                         - name: Konfigurere organisationshierarkier
                           href: channels-org-hierarchies.md
                         - name: Oprette en driftsenhed
-                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?context=/dynamics365/context/commerce
                         - name: Definere relationerne mellem organisationsenheder
                           href: tasks/design-relationships-between-organizational-units.md
                     - name: Konfigurere lagersted
@@ -341,13 +341,13 @@
                     - name: Momsopsætning
                       items:
                         - name: Momsoversigt
-                          href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/general-ledger/indirect-taxes-overview.md?context=/dynamics365/context/commerce
                         - name: Momsberegningsmetoder
-                          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?context=/dynamics365/context/commerce
                         - name: Tildeling og tilsidesættelser af moms
-                          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
+                          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?context=/dynamics365/context/commerce
                         - name: Indstillinger for beregning af hele beløbet og intervaller for momskoder
-                          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?context=/dynamics365/context/commerce
                         - name: Beregning af momsfritagelse
                           href: tax-exempt-price-inclusive.md
                         - name: Konfigurere moms for onlineordrer
@@ -405,7 +405,7 @@
                     - name: Produkt- og kundesøgning i POS
                       href: POS-search-improvements.md
                     - name: Søge efter produkter og produktvarianter under ordreindtastning
-                      href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
                     - name: Forbedringer af likviditetsstyring
                       href: cash-mgmt.md
                     - name: Afbryde og genoptage transaktioner i POS
@@ -557,7 +557,7 @@
                     - name: Behandling af refundering i opkaldscentre
                       href: call-center-refund-payments.md
                     - name: 'Opsætning, godkendelse og verifikation af kreditkort'
-                      href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
                     - name: Konfigurere kontantbeløbsangivelser for POS
                       href: cash-denominations.md
                     - name: Konfigurere kreditkortbehandling
@@ -572,6 +572,8 @@
                           href: dev-itpro/adyen-connector-setup.md
                         - name: 'Dynamics 365 Payment Connector til Adyen, ofte stillede spørgsmål'
                           href: dev-itpro/adyen-connector-faq.md
+                        - name: Konfigurere Google Pay med Adyen
+                          href: dev-itpro/google-pay-adyen.md
                         - name: Fejlfinde Dynamics 365 Payment Connector til Adyen
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Gemme onlinebetalingsmidler med Adyen-connector
@@ -623,7 +625,7 @@
             - name: 'Kategorier, produkter og udvalg'
               items:
                 - name: Oversigt over produktoplysninger
-                  href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/pim/product-information.md?context=/dynamics365/context/commerce
                 - name: Konfigurere detailprodukter
                   href: set-up-retail-products.md
                 - name: Produkthierarki
@@ -789,15 +791,15 @@
                 - name: Indkøbsordrer
                   items:
                     - name: Oversigt over indkøbsordrer
-                      href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/procurement/purchase-order-overview.md?context=/dynamics365/context/commerce
                     - name: Oprette indkøbsordrer
-                      href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/procurement/purchase-order-creation.md?context=/dynamics365/context/commerce
                     - name: Produktkvittering sammenlignet med indkøbsordrer
-                      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?context=/dynamics365/context/commerce
                     - name: Godkende og bekræfte indkøbsordrer
-                      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?context=/dynamics365/context/commerce
                     - name: Arbejdsområde for mobilenheder til godkendelse af indkøbsordrer
-                      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
                     - name: Oprette produktpakker til indkøbsordrer
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Administrere dine ordrer
@@ -1044,7 +1046,9 @@
                   href: publish-groups.md
                 - name: Aktivere og bruge deling på tværs af kanaler
                   href: cross-channel-sharing.md
-                - name: 'Indsætte dit eget websted, og tilføje butiksoplysninger'
+                - name: Kopiere indhold til en anden landestandard
+                  href: copy-content-locale.md
+                - name: 'Brand dit websted, og tilføj butiksoplysninger'
                   items:
                     - name: Tilføje et logo
                       href: add-logo.md
@@ -1098,11 +1102,13 @@
                       href: verify-accessibility.md
                     - name: Oprette dynamiske e-handelssider baseret på URL-parametre
                       href: create-dynamic-pages.md
+                    - name: Få vist versionshistorikken for at tilbageføre sider og fragmenter
+                      href: version-history-revert.md
                 - name: Navigation på websted
                   items:
                     - name: Tilpasse navigation på webstedet
                       href: customize-site-navigation.md
-                    - name: Oprette en side-URL-adresse
+                    - name: Oprette URL-adresse til en side
                       href: create-page-URL.md
                 - name: Adventure Works-tema
                   items:
@@ -1254,13 +1260,15 @@
                       href: nav-menu-module.md
                     - name: Webstedsvælgermodul
                       href: site-selector.md
-                    - name: Modul til pluk af land/område
+                    - name: Modul til vælger af land/område
                       href: country-region-picker-module.md
+                    - name: Modul til katalogvælger
+                      href: catalog-picker.md
                 - name: Søg efter moduler
                   items:
                     - name: Modul til søgeresultater
                       href: search-result-module.md
-                - name: Modul til overholdelse af angivne standarder
+                - name: Moduler til overholdelse af angivne standarder
                   items:
                     - name: Modul til cookie-samtykke
                       href: cookie-consent-module.md
@@ -1350,10 +1358,8 @@
               href: store-performance-information.md
             - name: 'Konfigurere RFM-analyse (Recency, Frekvens og Monetær)'
               href: set-up-rfm-analysis.md
-            - name: Konfigurere Microsoft Clarity i Dynamics 365 Commerce
+            - name: Konfigurere Microsoft Clarity i Dynamics 36 Commerce
               href: set-up-clarity.md
-            - name: Commerce-analyser (prøveversion)
-              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Oversigt over regnskabsintegration for Commerce-kanal
@@ -1367,33 +1373,33 @@
             - name: Regulatory Configuration Service (RCS)
               items:
                 - name: Oversigt over Regulatory Configuration Service (RCS)
-                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/commerce
                 - name: (RCS) Regulatory Configuration Service (RCS) – globaliseringsfunktioner
-                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/localizations/rcs-globalization-feature.md?context=/dynamics365/context/commerce
                 - name: Oprette ER-konfigurationer i Regulatory Configuration Service (RCS) og overføre dem til det globale lager
-                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
                 - name: Regulatory Configuration Service (RCS) – afskrivning af Lifecycle Services-lagring
-                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/commerce
                 - name: Downloade ER-konfigurationer til Commerce
                   items:
                     - name: Downloade konfigurationer fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/commerce
                     - name: Importere konfigurationer fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
                     - name: Globalt lager (GR)
                       items:
                         - name: Importere konfigurationer fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/commerce
                         - name: Importere opdaterede versioner af ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/commerce
                         - name: Udvidet filtrering til søgning efter konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
                         - name: Overføre konfigurationer til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
                         - name: Dele konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
                         - name: Afbryde konfigurationer i RCS Global-lageret
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
             - name: Østrig
               items:
                 - name: Prøve på integration af regnskabsregistreringsservice i Østrig
@@ -1489,7 +1495,7 @@
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer til Mexico
-                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?context=/dynamics365/context/commerce
             - name: Norge
               items:
                 - name: Kasseapparatfunktionalitet
@@ -1529,771 +1535,771 @@
         - name: Rapportering og Power BI-integration
           items:
             - name: Rapportering og analyser med Power BI
-              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?context=/dynamics365/context/commerce
             - name: Adgang til oplysninger og rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?context=/dynamics365/context/commerce
             - name: Muligheder for tilpasning med Power BI
               items:
                 - name: 'Funktioner, der er tilgængelige via Power BI-integration'
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?context=/dynamics365/context/commerce
                 - name: Fastgøre Power BI-indhold
-                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?context=/dynamics365/context/commerce
                 - name: Vælge analytiske arbejdsområder fra Power BI
-                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?context=/dynamics365/context/commerce
             - name: Power BI-indhold
               items:
                 - name: Startside for Power BI-indhold
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/commerce
                 - name: Læring
-                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/commerce
                 - name: Organisationsuddannelse
-                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/commerce
                 - name: Retail channel performance
-                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?context=/dynamics365/context/commerce
             - name: Analytiske arbejdsområder
               items:
                 - name: Analytiske arbejdsområder (ved hjælp af Power BI Embedded)
-                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?context=/dynamics365/context/commerce
                 - name: Power BI Embedded-integration
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?context=/dynamics365/context/commerce
                 - name: Tilpasse integrerede rapporter i analytiske arbejdsområder
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?context=/dynamics365/context/commerce
             - name: Rapportering og udskrivning af dokumenter
               items:
                 - name: Oversigt over dokumentrapporteringsservices
-                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?context=/dynamics365/context/commerce
                 - name: Understøttede skrifttyper
-                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?context=/dynamics365/context/commerce
                 - name: Konfigurere SSRS til lokale installationer
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?context=/dynamics365/context/commerce
                 - name: Udskrivning
                   items:
                     - name: Oversigt over udskrivning af dokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?context=/dynamics365/context/commerce
                     - name: Installere agenten for ruteplanlægning af dokumenter for at aktivere netværksudskrivning
-                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?context=/dynamics365/context/commerce
                     - name: Opgradere dokumentets ruteplanlægningsagent
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/commerce/toc.json
                     - name: Installere netværksprinterenheder i miljøer i det lokale miljø
-                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?context=/dynamics365/context/commerce
                     - name: 'Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer'
-                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?context=/dynamics365/context/commerce
                     - name: Køre agenten for ruteplanlægning af dokumenter som en Windows-service
-                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/commerce
                 - name: Tilgængelige rapporter vedrørende SQL Server-rapporteringsservices
-                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?context=/dynamics365/context/commerce
                 - name: Installere skabeloner for rapportdesign
-                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/commerce
             - name: Administrationsværktøjer for superbrugere
               items:
                 - name: Power BI-integration med enhedslager
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?context=/dynamics365/context/commerce
                 - name: Løse problemer efter vedligeholdelse af enhedslager
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
                 - name: Konfigurere Power BI-integration
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?context=/dynamics365/context/commerce
                 - name: Brug din egen database
-                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/commerce
                 - name: Prøveversion af PDF-dokumenter ved hjælp af en PDF-fremviser
-                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?context=/dynamics365/context/commerce
             - name: Udviklingsværktøjer til oprettelse og udvidelse af løsninger
               items:
                 - name: 'Analyser, samlede målinger og KPI-modellering'
-                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?context=/dynamics365/context/commerce
                 - name: Modellere samlede data
-                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?context=/dynamics365/context/commerce
                 - name: Føje økonomiske dimensioner til samlede målinger
-                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?context=/dynamics365/context/commerce
                 - name: Oprette analyserapporter ved hjælp af Power BI Desktop
-                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/commerce
                 - name: Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded
-                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?context=/dynamics365/context/commerce
                 - name: Hjælpe med til at sikre analysearbejdsområder og -rapporter ved hjælp af Power BI Embedded
-                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?context=/dynamics365/context/commerce
                 - name: Oprette rapporteringsløsninger
-                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?context=/dynamics365/context/commerce
                 - name: Tilpasse App Suite-rapporter ved hjælp af udvidelser
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?context=/dynamics365/context/commerce
                 - name: Udvide rapportdatasæt for programpakke
-                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?context=/dynamics365/context/commerce
                 - name: Udvide rapportmenupunkter for at omdirigere brugernavigation
-                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?context=/dynamics365/context/commerce
                 - name: Oprette brugerdefinerede design i forretningsdokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/commerce
                 - name: 'Forhindre, at der opstår timeout for langvarige rapporter'
-                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/commerce
         - name: Elektronisk rapportering
           items:
             - name: Oversigt over elektronisk rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/commerce
             - name: Elektroniske rapporteringskomponenter
-              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/commerce
             - name: Konfigurationer
               items:
                 - name: Oprette konfigurationer
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?context=/dynamics365/context/commerce
                 - name: Definere afhængigheden af ER-konfigurationer for andre komponenter
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/commerce
                 - name: Forberede komponenter i løsningen til elektronisk rapportering
                   items:
                     - name: Designe domænespecifik datamodel
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/commerce
                     - name: Forberede applikationsspecifikke metadata
                       items:
                         - name: 'Klargøre applikationsmetadata i ER, der skal bruges i RCS'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/commerce
                         - name: Få adgang til applikationsmetadata i RCS ved hjælp af ER-konfiguration
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/commerce
                         - name: Få adgang til applikationsmetadata i RCS ved hjælp af tilsluttede applikationer
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/commerce
                         - name: Definere modeltilknytninger og vælge datakilder
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/commerce
                         - name: Knytte datamodel til valgte datakilder
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/commerce
                         - name: Oprette en formatkonfiguration
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?context=/dynamics365/context/commerce
                         - name: Knytte komponenter i det oprettede format til datamodelelementer
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?context=/dynamics365/context/commerce
                     - name: Teste den forberedte ER-løsning i destinationsansøgningen
                       items:
                         - name: Importere konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
                         - name: Generere elektroniske dokumenter til betalinger ved hjælp af en formatkonfiguration
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/commerce
                     - name: Opgradere dit format ved at bruge en ny basisversion af det pågældende format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/commerce
             - name: Formeldesignere i ER
               items:
                 - name: Formeldesigner
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/commerce
                 - name: Avanceret formeldesigner
-                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/commerce
             - name: Formelsprog og -funktioner
               items:
                 - name: Formelsprog
-                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/commerce
                 - name: Understøttede datatyper til ER-formler
                   items:
                     - name: Basisdatatyper
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/commerce
                     - name: Sammensatte datatyper
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/commerce
                 - name: Funktioner
                   items:
                     - name: Container
                       items:
                         - name: Containerfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/commerce
                         - name: Base64StringToContainer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/commerce
                     - name: Dato og klokkeslæt
                       items:
                         - name: Dato- og klokkeslætsfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/commerce
                         - name: AddDays
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?context=/dynamics365/context/commerce
                         - name: ChangeTimeZone
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?context=/dynamics365/context/commerce
                         - name: DateFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?context=/dynamics365/context/commerce
                         - name: DateTimeFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?context=/dynamics365/context/commerce
                         - name: DateTimeValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/commerce
                         - name: DateToDateTime
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/commerce
                         - name: DateValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/commerce
                         - name: DayOfYear
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?context=/dynamics365/context/commerce
                         - name: Days
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?context=/dynamics365/context/commerce
                         - name: Now
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?context=/dynamics365/context/commerce
                         - name: NullDate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?context=/dynamics365/context/commerce
                         - name: NullDateTime
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?context=/dynamics365/context/commerce
                         - name: SessionNow
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/fcommerce/toc.json
                         - name: SessionToday
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?context=/dynamics365/context/commerce
                         - name: Today
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/commerce
                         - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/commerce
                     - name: List
                       items:
                         - name: Listefunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/commerce
                         - name: AllItems
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?context=/dynamics365/context/commerce
                         - name: AllItemsQuery
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?context=/dynamics365/context/commerce
                         - name: Count
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?context=/dynamics365/context/commerce
                         - name: EmptyList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?context=/dynamics365/context/commerce
                         - name: Enumerate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?context=/dynamics365/context/commerce
                         - name: Filter
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?context=/dynamics365/context/commerce
                         - name: First
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?context=/dynamics365/context/commerce
                         - name: FirstOrNull
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?context=/dynamics365/context/commerce
                         - name: Index
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?context=/dynamics365/context/commerce
                         - name: IsEmpty
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?context=/dynamics365/context/commerce
                         - name: List
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/commerce
                         - name: ListDistinct
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?context=/dynamics365/context/commerce
                         - name: ListJoin
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?context=/dynamics365/context/commerce
                         - name: ListOfFields
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/commerce
                         - name: ListOfFirstItem
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
                         - name: Reverse
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
                         - name: Split
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: SplitList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/commerce
                         - name: SplitListByLimit
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?context=/dynamics365/context/commerce
                         - name: StringJoin
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/commerce
                         - name: Where
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/commerce
                     - name: Logisk
                       items:
                         - name: Logiske funktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/commerce
                         - name: And
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?context=/dynamics365/context/commerce
                         - name: Case
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?context=/dynamics365/context/commerce
                         - name: Contains
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?context=/dynamics365/context/commerce
                         - name: EndsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?context=/dynamics365/context/commerce
                         - name: If
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?context=/dynamics365/context/commerce
                         - name: Not
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?context=/dynamics365/context/commerce
                         - name: Or
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?context=/dynamics365/context/commerce
                         - name: StartsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?context=/dynamics365/context/commerce
                         - name: ValueIn
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?context=/dynamics365/context/commerce
                         - name: ValueInLarge
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/commerce
                     - name: Matematisk
                       items:
                         - name: Matematiske funktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/commerce
                         - name: Abs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?context=/dynamics365/context/commerce
                         - name: Power
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?context=/dynamics365/context/commerce
                         - name: Round
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?context=/dynamics365/context/commerce
                         - name: RoundDown
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?context=/dynamics365/context/commerce
                         - name: RoundUp
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/commerce
                     - name: Poster
                       items:
                         - name: Postfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/commerce
                         - name: EmptyRecord
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?context=/dynamics365/context/commerce
                         - name: NullContainer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/commerce
                     - name: Tekst
                       items:
                         - name: Tekstfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/commerce
                         - name: Char
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/commerce
                         - name: Sammenkæde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?context=/dynamics365/context/commerce
                         - name: Format
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?context=/dynamics365/context/commerce
                         - name: GetEnumValueByName
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?context=/dynamics365/context/commerce
                         - name: GuidValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/commerce
                         - name: JsonValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?context=/dynamics365/context/commerce
                         - name: Left
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?context=/dynamics365/context/commerce
                         - name: Len
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?context=/dynamics365/context/commerce
                         - name: Lower
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?context=/dynamics365/context/commerce
                         - name: Mid
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?context=/dynamics365/context/commerce
                         - name: NewGUID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?context=/dynamics365/context/commerce
                         - name: NumberFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/commerce
                         - name: NumeralsToText
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?context=/dynamics365/context/commerce
                         - name: PadLeft
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?context=/dynamics365/context/commerce
                         - name: QrCode
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/commerce
                         - name: Replace
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?context=/dynamics365/context/commerce
                         - name: Right
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?context=/dynamics365/context/commerce
                         - name: Text
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/commerce
                         - name: Translate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?context=/dynamics365/context/commerce
                         - name: Trim
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?context=/dynamics365/context/commerce
                         - name: Upper
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/commerce
                     - name: Dataindsamling
                       items:
                         - name: Dataindsamlingsfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/commerce
                         - name: CollectedList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?context=/dynamics365/context/commerce
                         - name: CountIF
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?context=/dynamics365/context/commerce
                         - name: CountIFs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?context=/dynamics365/context/commerce
                         - name: FormatElementName
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?context=/dynamics365/context/commerce
                         - name: SumIF
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?context=/dynamics365/context/commerce
                         - name: SumIFs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/commerce
                     - name: Diverse
                       items:
                         - name: Andre (forretningsdomænespecifikke) funktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/commerce
                         - name: CH_Bank_Mod_10
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?context=/dynamics365/context/commerce
                         - name: CN_GBT_AdditionalDimensionID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?context=/dynamics365/context/commerce
                         - name: ConvertCurrency
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?context=/dynamics365/context/commerce
                         - name: CurCredRef
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?context=/dynamics365/context/commerce
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?context=/dynamics365/context/commerce
                         - name: FA_Sum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?context=/dynamics365/context/commerce
                         - name: GetCurrentCompany
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?context=/dynamics365/context/commerce
                         - name: ISOCredRef
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?context=/dynamics365/context/commerce
                         - name: IsValidCharacterISO7064
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?context=/dynamics365/context/commerce
                         - name: Mod_97
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?context=/dynamics365/context/commerce
                         - name: NumSeqValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?context=/dynamics365/context/commerce
                         - name: RoundAmount
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/commerce
                         - name: TableName2ID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/commerce
                     - name: Typekonvertering
                       items:
                         - name: Typekonverteringsfunktioner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/commerce
                         - name: 'Type: Int64Value'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?context=/dynamics365/context/commerce
                         - name: 'Type: IntValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?context=/dynamics365/context/commerce
                         - name: 'Type: NumberValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?context=/dynamics365/context/commerce
                         - name: 'Type: Value'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?context=/dynamics365/context/commerce
                         - name: 'Container: Base64StringToContainer'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/commerce
                         - name: 'Dato- og klokkeslæt: DateTimeValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/commerce
                         - name: 'Dato- og klokkeslæt: DateToDateTime'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/commerce
                         - name: 'Dato- og klokkeslæt: DateValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/commerce
                         - name: 'Liste: List'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/commerce
                         - name: 'Liste: ListOfFields'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/commerce
                         - name: 'Liste: Split'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: 'Liste: StringJoin'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/commerce
                         - name: 'Tekst: Char'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/commerce
                         - name: 'Tekst: GuidValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/commerce
                         - name: 'Tekst: NumberFormat'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/commerce
                         - name: 'Tekst: QrCode'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/commerce
                         - name: 'Tekst: Text'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/commerce
             - name: Designe ER-formater til generering af udgående dokumenter i forskellige formater
               items:
                 - name: Designe en konfiguration til generering af rapporter i OPENXML-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/commerce
                 - name: Designe konfigurationer til at generere udgående dokumenter i Excel-format
                   items:
                     - name: Designe en konfiguration til at generere dokumenter i Excel-format
-                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/commerce
                     - name: Redigere ER-formater ved at genanvende Excel-skabeloner
-                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/commerce
                     - name: 'Tilføje kolonner dynamisk til Excel-rapporter som vandrette områder, der kan udfoldes'
                       items:
                         - name: Designe formater til dynamisk tilføjelse af kolonner til Excel-rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?context=/dynamics365/context/commerce
                         - name: Køre formater til dynamisk tilføjelse af kolonner til Excel-rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/commerce
                     - name: Designe et ER-format til sideopgradere genererede dokumenter i Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/commerce
                     - name: Designe et ER-format for at holde rækker sammen på samme Excel-side
-                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/commerce
                 - name: Designe konfigurationer til generering af rapporter i Word-format
                   items:
                     - name: Designe ny ER-konfiguration til generering af rapporter i Word-format
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?context=/dynamics365/context/commerce
                     - name: Genbruge Elektronisk rapporteringskonfigurationer med Excel-skabeloner til generering af rapporter i Word-format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?context=/dynamics365/context/commerce
                     - name: Skjule Word-indhold i genererede rapporter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?context=/dynamics365/context/commerce
                 - name: Designe konfigurationer til udfyldelse af PDF-skabeloner
-                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?context=/dynamics365/context/commerce
                 - name: Integrere billeder og figurer
                   items:
                     - name: 'Integrere billeder og figurer i de dokumenter, du opretter'
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/commerce
                     - name: Eksempel på integrering af billeder og figurer
                       items:
                         - name: 'Designe konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/commerce
                         - name: 'Revidere konfigurationer til at generere rapporter i Office-formater, der har integrerede billeder'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?context=/dynamics365/context/commerce
                         - name: 'Generere rapporter i Office-formater, der har integrerede billeder'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?context=/dynamics365/context/commerce
                     - name: Design et ER-format til generering af en rapport i Excel med integrerede billeder i sidehoveder eller sidefødder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?context=/dynamics365/context/commerce
                 - name: Opdele genererede XML-filer ud fra filstørrelse og indholdsmængde
-                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?context=/dynamics365/context/commerce
                 - name: Ignorere styklistetegn i genererede filer
-                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?context=/dynamics365/context/commerce
             - name: Opdatere applikationsdata ved hjælp af ER
               items:
                 - name: Generere elektroniske dokumenter og opdatere applikationsdata
-                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?context=/dynamics365/context/commerce
                 - name: Importere konfigurationer for at generere dokumenter med ansøgningsdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?context=/dynamics365/context/commerce
                 - name: Designe konfigurationer til at generere dokumenter med ansøgningsdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?context=/dynamics365/context/commerce
                 - name: Redigere modeller og tilknytninger for at generere dokumenter med ansøgningsdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?context=/dynamics365/context/commerce
                 - name: Redigere formater for at generere dokumenter med ansøgningsdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?context=/dynamics365/context/commerce
                 - name: 'Generere dokumenter, der har ansøgningsdata'
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/commerce
             - name: Importere data fra indgående filer ved hjælp af ER-løsninger
               items:
                 - name: Analysere indgående dokumenter i forskellige formater
-                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/commerce
                 - name: Konfigurere dataimport fra manuelt valgte filer
                   items:
                     - name: Oprette konfigurationer for at importere data fra en ekstern XML-fil
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?context=/dynamics365/context/commerce
                     - name: Importere datamanuelt valgte filer i batchtilstand
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?context=/dynamics365/context/commerce
                 - name: 'Konfigurere dataimport i batchtilstand fra filer, der findes i SharePoint'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=/dynamics365/context/commerce
                 - name: Importere filer i XML-format
                   items:
                     - name: Importere filer i XML-format med valgfrie attributter
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?context=/dynamics365/context/commerce
                     - name: Konfigurere ER-formater til at importere XML-formatfiler med valgfrie attributter
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?context=/dynamics365/context/commerce
             - name: Livscyklus for konfiguration
               items:
                 - name: Administrere konfigurationslivscyklus
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/commerce
                 - name: Lifecycle Services (LCS)
                   items:
                     - name: Overføre konfigurationer til LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/commerce
                     - name: Importere konfigurationer fra LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/commerce
                     - name: Downloade konfigurationer fra LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/commerce
                     - name: Importere konfigurationer (LBD)
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/commerce
                 - name: Regulatory Configuration Service (RCS)
                   items:
                     - name: Oversigt over Regulatory Configuration Service (RCS)
-                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                      href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/commerce
                     - name: Downloade ER-konfigurationer til Commerce
                       items:
                         - name: Downloade konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/commerce
                         - name: Importere konfigurationer fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
                     - name: Globalt lager (GR)
                       items:
                         - name: Importere konfigurationer fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/commerce
                         - name: Importere opdaterede versioner af ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/commerce
                         - name: Udvidet filtrering til søgning efter konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
                         - name: Overføre konfigurationer til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
                         - name: Dele konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
                         - name: Afbryde konfigurationer i RCS Global-lageret
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
             - name: Hurtige introduktioner
               items:
                 - name: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/commerce
                 - name: Design en ny ER-løsning til udskrivning af en brugerdefineret rapport
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?context=/dynamics365/context/commerce
                 - name: Justere en ER-løsning for at oprette et brugerdefineret elektronisk dokument
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/commerce
             - name: Selvstudier
               items:
                 - name: 'Få mere at vide om, hvordan du bruger datakilder'
                   items:
                     - name: Bruge JOINFORBINDE til at hente data fra flere tabeller
-                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/commerce
                     - name: Bruge RAW XML til at tilføje indhold
-                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/commerce
                     - name: Understøtte parameteriserede opkald om datakilder af typen BEREGNET FELT
                       items:
                         - name: Forbedre brugeroplevelsen og vedligeholdelse af brugervenligheden
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?context=/dynamics365/context/commerce
                         - name: Forbedre ydeevnen for dataadgang
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?context=/dynamics365/context/commerce
                     - name: ER-datakilder på tværs af firmaer
-                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?context=/dynamics365/context/commerce
                     - name: Bruge DETALJER OM ØKONOMISKE DIMENSIONER-datakilder
                       items:
                         - name: Designe datamodeller
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?context=/dynamics365/context/commerce
                         - name: Tilknytte modeller til brug af økonomiske dimensioner
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?context=/dynamics365/context/commerce
                         - name: Designe rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?context=/dynamics365/context/commerce
                         - name: Køre rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?context=/dynamics365/context/commerce
                     - name: Bruge det genererede output som en datakilde til at udføre optælling og opsummering
                       items:
                         - name: Oprette formater
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?context=/dynamics365/context/commerce
                         - name: Konfigurere format til at udføre optælling og opsummering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?context=/dynamics365/context/commerce
                         - name: Generere output til optælling og opsummering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?context=/dynamics365/context/commerce
                         - name: Køre formater for at udføre optælling og opsummering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?context=/dynamics365/context/commerce
                     - name: Bruge relationer til DOKUMENTER til at få adgang til dokumentstyringsfiler
                       items:
                         - name: Forberede datamodeller
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?context=/dynamics365/context/commerce
                         - name: Udvide datamodeller til at bruge dokumentstyringsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?context=/dynamics365/context/commerce
                         - name: Oprette formater
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commercetoc.json
                         - name: Køre formater for at bruge dokumentstyringsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?context=/dynamics365/context/commerce
                         - name: Redigere og køre formater for at bruge dokumentstyringsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/commerce
                     - name: Bruge STREGKODE til at generere stregkodebilleder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/commerce
                     - name: Konfigurere OPSLAG-datakilder til at bruge ER-ansøgningsspecifikke parametre
-                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/commerce
                     - name: Bruge DATASAMLING-datakilder i ER-formater
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/commerce
                     - name: 'Bruge USER INPUT PARAMETER-datakilder til at angive parametre til en rapport, du vil generere'
-                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/commerce
                     - name: Fejlfinde datakilder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/commerce
                 - name: Konfigurere datamodeller
                   items:
                     - name: Understøtte parameteriserede kald af ER-datamodeller
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/commerce
                 - name: Konfigurere modeltilknytninger
                   items:
                     - name: Konfigurere landekontekstafhængige ER-modeltilknytninger
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
                     - name: Administrere ER-modeltilknytning i separate ER-konfigurationer
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
                     - name: Administrere flere afledte tilknytninger for en enkelt modelrod
-                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/commerce
                 - name: Konfigurere formater
                   items:
                     - name: 'Vælge modeldefinitioner, når du opretter formater'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/commerce
                     - name: 'Konfigurere ER-formater til at bruge de parametre, der er angivet for den enkelte juridiske enhed'
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?context=/dynamics365/context/commerce
                     - name: Konfigurere parametrene for et ER-format for hver juridisk enhed
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/commerce
                     - name: Udskyde udførelse af ER-formatelementer
                       items:
                         - name: Udskyde udførelse af et sekvenselement
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/commerce
                         - name: Udskyde udførelse af et XML-element
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?context=/dynamics365/context/commerce
                     - name: Designe flersprogede rapporter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?context=/dynamics365/context/commerce
                     - name: Komprimere store udgående dokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?context=/dynamics365/context/commerce
                 - name: Kontrollere konfigurerede ER-komponenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?context=/dynamics365/context/commerce
                 - name: Relativ sti i databindinger
-                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/commerce
             - name: Bruge ER-løsninger i Commerce
               items:
                 - name: Konfigurere strukturen
                   items:
                     - name: Konfigurere den elektroniske rapporteringsstruktur
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/commerce
                     - name: Sikkerhedskopiering og gendannelse af ER-skabeloner
                       items:
                         - name: Sikkerhedskopilager til ER-skabeloner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/commerce
                         - name: Oprydning i ER-overflytning
-                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?context=/dynamics365/context/commerce
                     - name: Oprette konfigurationsudbydere og markere dem som aktive
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/commerce
                 - name: Destinationer
                   items:
                     - name: Destinationsoversigt
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/commerce
                     - name: Destinationstyper
                       items:
                         - name: Arkivdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/commerce
                         - name: Maildestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/commerce
                         - name: Fildestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/commerce
                         - name: Power BI-destination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/commerce
                         - name: Printerdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/commerce
                         - name: Skærmdestination
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/commerce
                     - name: Konfigurere destinationer
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?context=/dynamics365/context/commerce
                     - name: Konfigurere handlingsafhængige destinationer
-                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/commerce
                     - name: Konfigurere postspecifikke ER-destinationer for udskriftsstyring
-                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/commerce
                 - name: Konfigurere en reference til ER-format
-                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/commerce
                 - name: Validere genererede rapporter automatisk
                   items:
                     - name: Spore genererede rapportresultater og sammenligne dem med basisværdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
                     - name: Forbedre sporingsresultaterne fra genererede ER-rapporter til sammenligning med basisværdier
-                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?context=/dynamics365/context/commerce
                     - name: Automatisere test med ER
-                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/commerce
                 - name: Automatisere forretningsprocesser ved hjælp af konfigurationer af elektroniske rapporter
                   items:
                     - name: Konfigurere ER til at trække data ind i Power BI
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/commerce
                     - name: 'Oprette formularer med fritekstfakturaer (FTI), der kan udskrives'
-                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/commerce
                 - name: Designe effektive ER-løsninger
                   items:
                     - name: Spore kørsel af ER-formater til fejlfinding af problemer med ydeevnen
-                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/commerce
                     - name: Foretage fejlfinding af problemer med ydeevnen i ER-konfigurationer
-                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?context=/dynamics365/context/commerce
                     - name: 'Reducere antallet af tabelfelter, der hentes under kørsel'
-                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?context=/dynamics365/context/commerce
                 - name: Styring af forretningsdokumenter (BDM)
                   items:
                     - name: BDM-oversigt
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/commerce
                     - name: Brugergrænseflade for nyt dokument i BDM
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/commerce
                     - name: Redigere forretningsdokumentskabeloner i BDM
                       items:
                         - name: Føje nye felter til en forretningsdokumentskabelon i Microsoft Excel
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/commerce
                         - name: Opdatere strukturen for en forretningsdokumentskabelon
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/commerce
             - name: API til ER-struktur
               items:
                 - name: Udvide listen over indbyggede funktioner
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/commerce
                 - name: API-ændringer
                   items:
                     - name: Applikationsopdatering 7.3
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.11
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.17
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.19
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.21
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.23
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/commerce
                     - name: Applikationsopdatering 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/commerce
                 - name: Angive et brugerdefineret lagersted til oprettede dokumenter
                   items:
                     - name: Abonnere på en hændelse for at anmode om et svar fra abonnerende handler
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/commerce
                     - name: Delegere oprettelsen af en ER-destination til en brugerdefineret destinationsfabrik
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?context=/dynamics365/context/commerce
                     - name: Implementere en brugerdefineret destination for oprettede dokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?context=/dynamics365/context/commerce
                 - name: Starte datakildeværdier for USER INPUT PARAMETER-typen fra kildekoden
-                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?context=/dynamics365/context/commerce
                 - name: 'Ændringskode, så brugere kan konfigurere og bruge navngivne ER-destinationer'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?context=/dynamics365/context/commerce
                 - name: Implementere en brugerdefineret ER-kilde til indgående dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations (Dynamics 365) mobilapp
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?context=/dynamics365/context/commerce
+        - name: Finans og drift (Dynamics 365) mobilapp
           items:
             - name: Mobilapp-startside
-              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/commerce
             - name: Arbejdsområder til mobilenheder
               items:
                 - name: Tilgængelige arbejdsområder til mobilenheder
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/commerce
                 - name: Aktivadministration
-                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Firmaadressekartotek
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Omkostningsstyring
-                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Udgiftsstyring
                   href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
                 - name: Disponibel lagerbeholdning
-                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Fakturagodkendelser
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Mit team
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Oversigt over Project-mobilprogrammer
                   href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
                 - name: Tidsregistrering for projekt
@@ -2301,175 +2307,175 @@
                 - name: Project Timesheet
                   href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
                 - name: Godkendelse af indkøbsordrer
-                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Salgsordrer
-                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Kreditorsamarbejde
-                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/commerce
             - name: Publicere arbejdsområder til mobilenheder
-              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Office-integration
           items:
             - name: Oversigt over Office-integration
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?context=/dynamics365/context/commerce
             - name: Selvstudium til Office-integration
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/commerce
             - name: Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel
-              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/commerce
             - name: Åbne i Excel-oplevelser – Ofte stillede spørgsmål
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/commerce
             - name: Føje skabeloner til menuen Åbn linjer i Excel
-              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?context=/dynamics365/context/commerce
             - name: Tilpasse menuen Åbn i Microsoft Office
-              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?context=/dynamics365/context/commerce
             - name: Konfigurere og sende mail
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/commerce
             - name: Oprette e-mailskabeloner til transaktionshændelser
               href: email-templates-transactions.md
             - name: Udvikle mailoplevelser
-              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/commerce
             - name: Fejlfinde Office-integration
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/commerce
         - name: Organisationsadministration
           items:
             - name: Startside for organisationsadministration
-              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?context=/dynamics365/context/commerce
             - name: Nummerserier
               items:
                 - name: Oversigt over nummerserier
-                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?context=/dynamics365/context/commerce
                 - name: Konfigurere individuelle nummerserier
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?context=/dynamics365/context/commerce
                 - name: Oprette nummerserier ved hjælp af en guide
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?context=/dynamics365/context/commerce
             - name: Organisationer og organisationshierarkier
               items:
                 - name: Oversigt over organisationer og organisationshierarkier
-                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?context=/dynamics365/context/commerce
                 - name: Planlægge dit organisationshierarki
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?context=/dynamics365/context/commerce
                 - name: Oprette et organisationshierarki
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?context=/dynamics365/context/commerce
                 - name: Oprette juridiske enheder
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?context=/dynamics365/context/commerce
                 - name: Oprette driftsenheder
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?context=/dynamics365/context/commerce
             - name: Globalt adressekartotek
               items:
                 - name: Oversigt over globalt adressekartotek
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?context=/dynamics365/context/commerce
                 - name: Planen for det globale adressekartotek og andre adressekartoteker
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?context=/dynamics365/context/commerce
                 - name: Konfigurere det globale adressekartotek
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?context=/dynamics365/context/commerce
                 - name: Adresseopsætning
-                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/commerce
                 - name: Ofte stillede spørgsmål om adressekartoteker
-                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/commerce
                 - name: Konfigurere adressekartoteker
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?context=/dynamics365/context/commerce
             - name: Arbejdsprocessystem
               items:
                 - name: Oversigt over arbejdsprocessystem
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?context=/dynamics365/context/commerce
                 - name: Arkitektur for arbejdsprocessystem
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/commerce
                 - name: Arbejdsproceselementer
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?context=/dynamics365/context/commerce
                 - name: Handlinger i arbejdsgange
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?context=/dynamics365/context/commerce
                 - name: Oprette arbejdsgange
                   items:
                     - name: Oversigt over oprettelse af arbejdsgange
-                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere egenskaber for arbejdsgange
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?context=/dynamics365/context/commerce
                     - name: Konfigurere manuelle opgaver
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere automatiserede opgaver
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere godkendelsesprocesser
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere godkendelsestrin
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere udgiftsvalidatorer
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?context=/dynamics365/context/commerce
                     - name: Konfigurere manuelle beslutninger
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere betingede beslutninger
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere parallelle aktiviteter
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere parallelle grene
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere arbejdsgange for linjeelementer
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/commerce
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/commerce
                 - name: Uddelegere arbejdselementer i en arbejdsproces
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/commerce
                 - name: Vise arbejdsproces historik
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/commerce
                 - name: Konfigurere systemet til at sende mail angående arbejdsgange til brugere
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/commerce
                 - name: Arbejdsprocestyper
                   items:
                     - name: Oprettelse af en arbejdsgangstype
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?context=/dynamics365/context/commerce
                     - name: Kontrolliste til arbejdsgangstype
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/commerce
                     - name: Oprette en arbejdsproceskategori
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?context=/dynamics365/context/commerce
                     - name: Oprette en forespørgsel for en arbejdsgangstype
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?context=/dynamics365/context/commerce
                     - name: Oprette en ny arbejdsgangstype
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/commerce
                     - name: Oprette en arbejdsprocesdokumentklasse
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/commerce
                     - name: Oprette en SubmitToWorkflow-klasse
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/commerce
                     - name: Knytte en arbejdsgangsdokumentklasse til en arbejdsgangstype
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/commerce
                 - name: Rapport om arbejdsgangstyper
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?context=/dynamics365/context/commerce
                 - name: Ofte stillede spørgsmål om arbejdsproces
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?context=/dynamics365/context/commerce
             - name: Påmindelser
               items:
                 - name: Oversigt over påmindelser
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?context=/dynamics365/context/commerce
                 - name: Oprette påmindelsesregler
-                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?context=/dynamics365/context/commerce
                 - name: Batchbehandling af påmindelser
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?context=/dynamics365/context/commerce
                 - name: Klientpåmindelsesbeskeder via mail
-                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?context=/dynamics365/context/commerce
             - name: Elektroniske signaturer
               items:
                 - name: Oversigt over elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?context=/dynamics365/context/commerce
                 - name: Konfigurere elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?context=/dynamics365/context/commerce
             - name: Sagsstyring
               items:
                 - name: Oversigt over sagsstyring
-                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?context=/dynamics365/context/commerce
                 - name: 'Planlægge sagssikkerhed, -processer og -kategorier'
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?context=/dynamics365/context/commerce
             - name: Postskabeloner
               items:
                 - name: Oversigt over postskabeloner
-                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?context=/dynamics365/context/commerce
                 - name: Oprette en postskabelon
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/commerce
                 - name: Bruge en postskabelon til at oprette en ny post
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/commerce/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?context=/dynamics365/context/commerce
             - name: Konfigurere dokumentstyring
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?context=/dynamics365/context/commerce
             - name: Konfigurere og sende mail
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/commerce
             - name: Data om dato/klokkeslæt og tidszoner
-              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/commerce
         - name: Udvikling
           items:
             - name: Krydsløsning
@@ -2874,7 +2880,7 @@
                       href: dev-itpro/extend-customer-CDX-package.md
                 - name: Pakning og udrulning
                   items:
-                    - name: Oprette Commerce-betalingspakker til Finans og drift-udrulning
+                    - name: Oprette Commerce-betalingspakker til finans og drift-udrulning
                       href: dev-itpro/payment-connector-package.md
             - name: Retail SDK (ældre)
               items:
@@ -2890,7 +2896,7 @@
                       href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Miljøkonfiguration
                   items:
-                    - name: Udvikling i skybaserede miljøer uden administratoradgang
+                    - name: Udvikling i cloudbaserede miljøer uden administratoradgang
                       href: dev-itpro/cloud-dev-box.md
                     - name: Detail SDK-build pipeline
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md

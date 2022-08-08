@@ -1,6 +1,6 @@
 ---
-title: Dokumentation for Finance and Operations-applikation
-description: Dokumentation for Finance and Operations-apps.
+title: Dokumentation for finans og drift-applikation
+description: Dokumentation for programmer til finans og drift.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865826"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067456"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation for Finance and Operations-applikation
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation for finans og drift-applikation
 
 [!include [banner](includes/banner.md)]
 
@@ -39,9 +39,9 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du køber</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig en prøveversion af et abonnement</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig en forhåndsversion af et abonnement</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælg en udrulningsindstilling</a></p>
- <p><a href="get-started/purchase-on-premises.md">Købe Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Købe finans og drift (i det lokale miljø)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementeringslivscyklus</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -55,7 +55,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 <p><a href="get-started/public-preview-releases.md">Serviceopdateringer til Standard og først version</a></p>
 <p><a href="get-started/whats-new-changed.md">Nyheder eller ændringer</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Opgraderinger, opdateringer og hotfixes</a></p>
-<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Anvende opdateringer i skybaserede miljøer</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Anvende opdateringer i cloudmiljøer</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurere serviceopdateringer</a></p>
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Afbryde serviceopdateringer midlertidigt</a></p>
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Få besked om serviceopdateringer</a></p>
@@ -143,3 +143,4 @@ Meget af dette indhold gælder også for de relaterede produkter: Dynamics 365 C
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

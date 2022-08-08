@@ -2,7 +2,7 @@
   items:
     - name: Udvikling og administration af programmer til finans og drift
       items:
-        - name: Dokumentation for Finance and Operations-applikation
+        - name: Dokumentation for finans og drift-applikation
           href: ../fin-ops/index.md
         - name: Udvikling og administration af programmer til finans og drift
           href: index.md
@@ -10,16 +10,14 @@
           items:
             - name: Nyheder eller ændringer i programmer til finans og drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nyheder eller ændringer i Platformopdateringer
+            - name: Nyheder eller ændringer i platformsopdateringer
               items:
-                - name: Nyheder eller ændringer på startsiden for Platformopdatering
+                - name: Nyheder eller ændringer på startsiden for platformsopdateringer
                   href: get-started/whats-new-home-page.md
                 - name: Platformopdateringer for version 10.0.28 (august 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Platformopdateringer for version 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platformopdateringer for version 10.0.26 (maj 2022)
-                  href: get-started/whats-new-platform-updates-10-0-26.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -106,39 +104,39 @@
                       items:
                         - name: Kundeemne til kontanter
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisere konti fra Sales direkte med kunder i Finance and Operations
+                        - name: Synkronisere konti direkte fra Salg med kunder i finans og drift
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
+                        - name: Synkronisere produkter direkte fra finans og drift med produkter i Salg
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisere kontakter fra Sales direkte med kontakter eller kunder i Finance and Operations
+                        - name: Synkronisere kontakter fra Salg direkte med kontakter eller kunder i finans og drift
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
+                        - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Salg til finans og drift
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
+                        - name: Synkronisering af salgsordrer direkte mellem Salg og finans og drift
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales
+                        - name: Synkronisere salgsfakturahoveder og linjer direkte fra finans og drift til Salg
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurere integration med Field Service
                       items:
                         - name: Oversigt over konfiguration af integration med Field Service
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synkronisere produkter fra Finance and Operations med produkter i Field Service
+                        - name: Synkronisere produkter fra finans og drift med produkter i Field Service
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations
+                        - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i finans og drift
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
+                        - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i finans og drift
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisere lageroverførsler og reguleringer fra Field Service til Finance and Operations
+                        - name: Synkronisere lageroverførsler og reguleringer fra Field Service til finans og drift
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisere lagerniveauoplysninger fra Finance and Operations til Field Service
+                        - name: Synkronisere lagerniveauoplysninger fra finans og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisere produkter med lagerenhed fra Finance and Operations til Field Service
+                        - name: Synkronisere produkter med lagerenhed fra finans og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisere projektliste fra Finance and Operations til Field Service
+                        - name: Synkronisere projektliste fra finans og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisere lagersteder fra Finance and Operations til Field Service
+                        - name: Synkronisere lagersteder fra finans og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisere arbejdsordrer med projekt fra Field Service til Finance and Operations
+                        - name: Synkronisere arbejdsordrer med projekt fra Field Service til finans og drift
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Konfigurere integration af Project Service Automation
                       items:
@@ -348,9 +346,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Afslutte onboardingsprocessen for Azure Resource Manager for de amerikanske offentlige myndigheders LCS-projekter
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute og Finance and Operations
+                - name: Azure ExpressRoute og finans og drift
                   href: deployment/expressroute.md
-                - name: Finance and Operations-arkitektur
+                - name: Finans og drift-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Anvende opdateringer i cloudmiljøer
                   href: deployment/apply-deployable-package-system.md
@@ -484,7 +482,7 @@
                   href: help/language-locale.md
                 - name: 'Udvide, tilpasse og samarbejde med hjælp'
                   href: help/contributor-guide.md
-            - name: Regionsservices i programmer til finans og drift
+            - name: Områdeservices i programmer til finans og drift
               items:
                 - name: Lokale geografiske områder
                   href: deployment/deployment-options-geo.md
@@ -584,7 +582,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller og pakker
                   href: dev-tools/models.md
-                - name: Projekttype for Finance and Operations
+                - name: Projekttype for finans og drift
                   href: dev-tools/projects.md
                 - name: Værktøjstilføjelsesprogrammer til Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1050,7 +1048,7 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps-filtypenavn selvstudium (offentlig forhåndsversion)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Visual Studio-filtypenavn (personlig prøveversion)
+                - name: Visual Studio-filtypenavn (offentlig forhåndsversion)
                   href: lifecycle-services/dts-visual-studio.md
                 - name: Visual Studio Code-filtypenavn (offentlig forhåndsversion)
                   href: lifecycle-services/dts-vscode-doc.md
@@ -1224,9 +1222,9 @@
                   href: power-platform/admin-reference.md
                 - name: Aktivere virtuelle objekter i Dataverse
                   href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Finance and Operations
+                - name: Power Apps-portaler med finans og drift
                   href: power-platform/power-portal-reference.md
-                - name: Ofte stillede spørgsmål med virtuelle Finance and Operations-enheder
+                - name: Ofte stillede spørgsmål om virtuelle finans og drift-enheder
                   href: power-platform/faq.md
             - name: Forretningshændelser
               items:
@@ -1574,11 +1572,11 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få support til Finance and Operations og Lifecycle Services
+            - name: Få support til finans og drift og Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Supportoversigt for Dynamics 365
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få support til Finance and Operations drevet af 21Vianet i Kina
+            - name: Få support til finans og drift drevet af 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
             - name: Konfigurere teknisk support til programmer til finans og drift
               href: lifecycle-services/support-experience.md
@@ -1698,7 +1696,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Opgradere fra AX 2012
               items:
-                - name: Opgradere fra AX 2012 til Finance and Operations
+                - name: Opgradere fra AX 2012 til finans og drift
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: Opgradering til AX 2012 – Planlægning med opgraderingsanalyseværktøjet
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1758,7 +1756,7 @@
                       href: migration-upgrade/compress-tables-ax-2012.md
             - name: Overflytte data fra AX 2009
               items:
-                - name: Overflytte data fra AX 2009 til Finance and Operations
+                - name: Overflytte data fra AX 2009 til finans og drift
                   href: migration-upgrade/data-migration-tool.md
                 - name: Overflytning af AX 2009 – installere dataoverflytningsværktøjet
                   href: migration-upgrade/install-dmt.md

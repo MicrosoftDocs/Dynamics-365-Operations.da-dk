@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866531"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067676"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressourcer
 
@@ -62,8 +62,8 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365-frigivelsesplaner
 [Dynamics 365-frigivelsesplanerne](/business-applications-release-notes/) indeholder beskrivelser af de nye og forbedrede funktioner, der er planlagt til Dynamics 365-virksomhedsprogrammer og -programplatforme. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Nyheder om Finance and Operations-apps
-[Nyheder eller ændringer på startside for Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) viser de funktioner, der er inkluderet i bestemte versioner af Finance and Operations-apps.
+#### <a name="finance-and-operations-apps-whats-new"></a>Nyheder om programmer til finans og drift
+[Nyheder eller ændringer på startside for finans og drift](../../fin-ops/get-started/whats-new-changed.md) viser de funktioner, der er inkluderet i bestemte versioner af programmer til finans og drift.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
@@ -133,3 +133,4 @@ Du kan finde flere oplysninger i [Hjælp-systemet](../../fin-ops/get-started/hel
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

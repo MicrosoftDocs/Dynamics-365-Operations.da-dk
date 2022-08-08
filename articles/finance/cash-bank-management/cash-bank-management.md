@@ -1,7 +1,7 @@
 ---
 title: Startside for Kontant- og bankstyring
 description: Du kan bruge Kontant- og bankstyring til at vedligeholde den juridiske enheds bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti.
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710719"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151963"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for Kontant- og bankstyring
 
@@ -89,7 +89,7 @@ Gå til [Microsoft Dynamics 365-frigivelsesplaner](/dynamics365/release-plans/) 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finde meninger, nyheder og andre oplysninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 finans og drift – Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i Dynamics 365.
 
@@ -102,3 +102,4 @@ Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTub
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
