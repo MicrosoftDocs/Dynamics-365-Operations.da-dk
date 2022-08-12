@@ -1,6 +1,6 @@
 ---
 title: Videoer
-description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende Finance and Operations-apps, som er tilgængelige på YouTube og andre websteder.
+description: Denne side viser Microsoft-oprettede "Sådan gør du"-videoer og tekniske videoer vedrørende programmer til finans og drift, som er tilgængelige på YouTube og andre websteder.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958132"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124945"
 ---
 # <a name="videos"></a>Videoer 
 
 [!include [banner](../includes/banner.md)]
 
-På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finde videoer, der er oprettet af Microsoft, som viser en lang række virksomhedsløsninger til Dynamics 365-produkter. I dette afsnit beskrives de "sådan gør du"-videoer til Finance and Operations-apps, der ligger på kanalen.
+På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finde videoer, der er oprettet af Microsoft, som viser en lang række virksomhedsløsninger til Dynamics 365-produkter. I dette afsnit beskrives de "sådan gør du"-videoer til programmer til finans og drift, der ligger på kanalen.
 
 > [!Note]
 > Nogle af de viste videoer blev udgivet under et tidligere produktnavn, men gælder stadig.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer til udvikling og administration af Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer til udvikling og administration af finans og drift
 
 ### <a name="data-integration"></a>Dataintegration
 
-- [Synkronisere en arbejdsordre mellem Dynamics 365 for Field Service og Finance and Operations-apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synkronisere en arbejdsordre mellem Dynamics 365 for Field Service og programmer til finans og drift](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datastyring
 
@@ -50,8 +50,8 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 ### <a name="intelligence"></a>Intelligence
 
 - [Sådan redigerer du en integreret rapport i et analytisk arbejdsområde](https://youtu.be/_8WlwmSggcQ)
-- [Sådan integrerer du PowerBI.com-rapporter i Finance and Operations-apps](https://youtu.be/gGWuNJDoi-M)
-- [Bruge din egen database (BYOD - Bring Your Own Database) i Finance and Operations-apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Sådan integrerer du PowerBI.com-rapporter i programmer til finans og drift](https://youtu.be/gGWuNJDoi-M)
+- [Bruge din egen database (BYOD - Bring Your Own Database) i programmer til finans og driftF](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Sådan bruges Power BI-indhold til omkostningsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

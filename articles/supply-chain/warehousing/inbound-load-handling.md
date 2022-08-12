@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855926"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070313"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerstedshåndtering af indgående laster til indkøbsordrer
 
@@ -56,7 +56,7 @@ I følgende illustration vises det typiske flow for håndtering af indgående la
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Registrere vareantallet, der ankommer til en indgående last
 
-Microsoft Dynamics 365 Supply Chain Management understøtter flere driftsmetoder til registrering af bestilte produkter. Derfor kan du konfigurere systemet, så det passer til dine specifikke forretningskrav. I dette afsnit beskrives, hvordan du registrerer antallet af indgående varer ved hjælp af en mobil enhed, når den avancerede lokationsstyring er slået til i systemet. Der er dog en alternativ rute, som er baseret på at bruge varemodtagelseskladden i stedet for en mobil enhed. Du kan få flere oplysninger i [Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management understøtter flere driftsmetoder til registrering af bestilte produkter. Derfor kan du konfigurere systemet, så det passer til dine specifikke forretningskrav. I dette afsnit beskrives, hvordan du registrerer antallet af indgående varer ved hjælp af en mobil enhed, når den lokationsstyringsprocesser (WMS) er slået til i systemet. Der er dog en alternativ rute, som er baseret på at bruge varemodtagelseskladden i stedet for en mobil enhed. Du kan få flere oplysninger i [Registrere varer for en vare med aktiveret lokationsstyringsprocesser ved hjælp af en varemodtagelseskladde](tasks/register-items-advanced-warehousing.md).
 
 Når der først ankommer en indgående last på lagerstedet, skal lagermedarbejderne registrere de vareantal, der er medtaget i forsendelsen. De bruger som regel håndholdte scannere. Denne arbejdsgang er kun tilgængelig, hvis følgende varer findes i systemet:
 

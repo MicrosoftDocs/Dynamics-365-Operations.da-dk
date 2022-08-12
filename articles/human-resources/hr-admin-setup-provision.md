@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015340"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178497"
 ---
 # <a name="provision-human-resources"></a>Klargøring af Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Anvendes på:** Human Resources i enkeltstående infrastruktur_ 
 
-
+> [!NOTE]
+> Fra og med juni 2022 kan Personale-miljøer kun implementeres på infrastrukturen i program til finans og drift-infrastruktur. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](hr-admin-setup-provision-fo.md).
 
 Denne artikel forklarer processen for klargøring af et nyt produktionsmiljø til Microsoft Dynamics 365 Human Resources. 
 
@@ -40,7 +41,7 @@ Inden klargøringen af et nyt produktionsmiljø, skal følgende forudsætninger 
 ## <a name="provision-a-human-resources-trial-environment"></a>Klargøre et Human Resources-testmiljø
 
 >[!NOTE]
-> Fra og med april 2022 vil testmiljøerne i Human Resources ikke være tilgængelige i det enkeltstående program. Potentielle kunder, der er interesseret i at evaluere Human Resources-funktionerne i programmer til finans og drift, kan gøre dette ved hjælp af den gratis 30-dages prøve sammen med demodataene. Dynamics 365 Finance inkluderer de Human Resources-funktioner, der er hentet til finansinfrastrukturen via fletning af det enkeltstående program. Du kan finde flere oplysninger [Fletning af HR-tilbud samler funktioner for kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Yderligere oplysninger om Dynamics 365 Finance-prøver finder du i den trinvise [vejledning](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Fra og med april 2022 vil testmiljøerne i Human Resources ikke være tilgængelige i det enkeltstående program. Potentielle kunder, der er interesseret i at evaluere Human Resources-funktionerne i programmer til finans og drift, kan gøre dette ved hjælp af den gratis 30-dages prøve sammen med demodataene. Dynamics 365 Finance inkluderer de Human Resources-funktioner, der er hentet til finansinfrastrukturen via fletning af det enkeltstående program. Du kan finde flere oplysninger i [fletning af hr-tilbud, der giver kunder egenskaber](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Du kan finde flere oplysninger om Dynamics 365 Finance i den trinvise [vejledning](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Før du klargør dit første sandkasse- eller produktionsmiljø, kan det være en god ide at klargøre et [Human Resources-testmiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for at validere funktionen Human Resources. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i Human Resources. 
@@ -60,10 +61,10 @@ Før du opretter dit første miljø med Human Resources, skal du planlægge milj
 
 Overvejelser i forbindelse med yderligere miljøer:
 
-- **Overflytning af data**: Du skal muligvis overveje et ekstra miljø, når der skal bruges dataoverførselsaktiviteter, så dit sandkassemiljø kan bruges til testformål i hele projektet. Et ekstra miljø gør det muligt at fortsætte dataoverflytningsaktiviteter, mens test- og konfigurationsaktiviteter finder sted samtidigt i et andet miljø.
-- **Integration**: Du skal muligvis overveje et yderligere miljø for at konfigurere og teste integration. Dette kan omfatte oprindelige integrationer, f.eks. Ceridian Dayforce eller LinkedIn Talent Hub-integrationer, eller brugerdefinerede integrationer, som f.eks. integration med løn, sporingssystemer for ansøgere eller benefit-systemer og -leverandører.
+- **Overflytning af data**: Dataoverførselsaktiviteter, så dit sandkassemiljø kan bruges til testformål i hele projektet. Et ekstra miljø gør det muligt at fortsætte dataoverflytningsaktiviteter, mens test- og konfigurationsaktiviteter finder sted samtidigt i et andet miljø.
+- **Integration**: Konfigurer og test integration, som kan omfatte indbyggede integrationer, f.eks. Ceridian Dayforce, eller brugerdefineret integration.
 - **Kursus**: Du har muligvis brug for et separat miljø, der er konfigureret med et sæt kursusdata, for at medarbejderne kan bruge det nye system. 
-- **Projekt i flere faser**: Du kan have brug for et yderligere miljø for at understøtte konfiguration, overflytning af data, test eller andre aktiviteter i en projektfase, der er planlagt efter projektets første start.
+- **Projekt i flere faser**: Understøt konfiguration, overflytning af data, test eller andre aktiviteter i en projektfase, der er planlagt efter projektets første start.
 
  > [!IMPORTANT]
  > Når du overvejer dit miljø, anbefales følgende:
@@ -111,7 +112,7 @@ Når du har oprettet et LCS-projekt, kan du klargøre Human Resources i et milj�
 
 6. Vælg **Ja** for at acceptere vilkårene og begynde installationen.
 
-   Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er opdateret til **Installeret**. Denne proces tager typisk få minutter. Hvis klargøringsprocessen mislykkes, skal du kontakte Support.
+   Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er **Installeret**. Denne proces tager typisk få minutter. Hvis klargøringsprocessen mislykkes, kan du kontakte Support.
 
 7. Vælg **Log på Human Resources** for at bruge det nye miljø.
 
@@ -140,7 +141,7 @@ Brug følgende retningslinjer til fastsættelse af, hvilket Power Apps-miljø so
    
     - **Ikke-understøttede geografier** – Miljøet skal være placeret i en understøttet geografi. Yderligere oplysninger finder du i [Understøttede geografier](hr-admin-setup-provision.md#supported-geographies).
 
-6. Funktioner til dobbeltskrivning for integration af Human Resources-data i Power Apps-miljøet kan kun bruges, hvis indstillingen **Aktivér Dynamics 365-apps** er valgt for miljøet. Se [Startside for dobbeltskrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for at få flere oplysninger om dobbeltskrivning.
+6. Funktioner til dobbeltskrivning for integration af Human Resources-data i Power Apps-miljøet kan kun bruges, hvis indstillingen **Aktivér Dynamics 365-apps** er valgt for miljøet. Du kan finde flere oplysninger på [Startside for Dobbeltskrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Indstillingen **Aktivér Dynamics 365-apps** skal være valgt, når Power Apps-miljøet oprettes. Hvis indstillingen ikke er valgt på det tidspunkt, hvor der klargøres, kan du ikke bruge dobbeltskrivning til integration af data mellem Dynamics 365 Human Resources og Power Apps-miljøet eller til at installere Dynamics 365-apps som f.eks. Dynamics 365 Sales og Field Service i miljøet. Denne indstilling kan ikke tilbageføres. 
@@ -175,3 +176,4 @@ Som standard har den globale administrator, der oprettede miljøet, adgang til d
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

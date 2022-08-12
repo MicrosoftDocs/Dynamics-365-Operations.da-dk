@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890400"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124022"
 ---
 # <a name="upgrade-budget-planning"></a>Opgradere budgetplanlægning
 
@@ -30,7 +30,7 @@ Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 20
 Budgetplanlægning i Finance har mange forbedringer, der ikke var tilgængelige i Dynamics AX 2012. Denne artikel beskriver de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i denne artikel, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
 
 ## <a name="overview-of-changes"></a>Oversigt over ændringer
-Der er foretaget mange væsentlige ændringer i Budgettering til Finans og drift. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance:
+Der er foretaget mange væsentlige ændringer i Budgettering til finans og drift. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance:
 
 -   Skabeloner til budgetplan (konfiguration af budgetplanlægning)
 -   Mapper til budgetplan (konfiguration af budgetplanlægning)
@@ -47,7 +47,7 @@ Kolonner er et nyt begreb, der erstatter dele af Excel-skabelonen og også matri
 
 ### <a name="layouts"></a>Layout
 
-Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i Finans og drift-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når du indtaster data i Finance-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en transaktionsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
+Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i finans og drift-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når du indtaster data i Finance-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en transaktionsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
 
 ### <a name="budget-planning-processes"></a>Budgetplanlægningsprocesser
 
@@ -69,7 +69,7 @@ Følgende eksempel bruger en opgraderet budgetproces fra AX 2012 demo-data til a
    -   Budgetplanscenarier: faktiske oplysninger, grundlag, budgetanmodning, godkendt budget
    -   Budgetplanlinjerne for alle scenarier i 2017 og faktiske værdier for både 2017 og 2016
 
-   Der oprettes følgende kolonner i Finans og drift:
+   Der oprettes følgende kolonner i finans og drift:
 
    | Kolonnenavn    | Budgetplansscenarie | Kolonnetidsperiode | Årsforskydning |
    |----------------|----------------------|--------------------|-------------|

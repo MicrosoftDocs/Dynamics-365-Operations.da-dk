@@ -1,6 +1,6 @@
 ---
-title: Nyheder eller ændringer på startside for Finans- og driftsapps
-description: Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Finans og drift-programmer.
+title: Nyheder eller ændringer på startside for programmer til finans og drift
+description: Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af programmer til finans og drift.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dc3b9b39fb5cb3aaae1247f0229d802410ea5f8
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908221"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125110"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nyheder eller ændringer på startside for Finans- og driftsapps
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nyheder eller ændringer på startside for programmer til finans og drift
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Programversioner
 
-Oplysninger om, hvad der er nyt eller ændret i hver version af Finans- og driftsapps, finder du i følgende emner:
+Oplysninger om, hvad der er nyt eller ændret i hver version af programmer til finans og drift, finder du i følgende emner:
 
 - **Finance:** [Nyheder eller ændringer i Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
 - **Human Resources (flettet infrastruktur):** [Nyheder og ændringer i Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
@@ -60,3 +60,4 @@ Du kan få vist nyheder eller ændringer i Lifecycle Services i følgende artike
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

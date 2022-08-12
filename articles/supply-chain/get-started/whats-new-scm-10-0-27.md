@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022615"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124094"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.27. (juli 2022)
 
@@ -66,7 +66,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.27 indeholder platformopdateringer. Du kan få mere at vide i [Platformsopdateringer til version 10.0.27 af programmer til finans og drift (juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
@@ -92,3 +92,4 @@ Før en funktion fjernes fra produktet, vil du få besked om udfasning i artikle
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

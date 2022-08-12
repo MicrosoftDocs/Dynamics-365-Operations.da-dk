@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844758"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103174"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Arbejdsområde for salgsordrer på mobilenheder
 
@@ -29,7 +29,7 @@ ms.locfileid: "8844758"
 
 Denne artikel indeholder oplysninger om arbejdsområdet for **salgsordrer** på mobilenheder. Dette arbejdsområde hjælper dig med at holde dig opdateret om salgsordrer hvor som helst og når som helst. 
 
-Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen Finans og drift (Dynamics 365).
+Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen finans og drift (Dynamics 365).
 
 ## <a name="overview"></a>Overblik
 **Salgsordrer**-arbejdsområdet på mobilenheder viser detaljerede oplysninger om de enkelte salgsordrer. Disse oplysninger omfatter ordrestatus, kontaktoplysninger for debitoren og kontaktoplysninger for ordretageren. Arbejdsområdet **Salgsordrer** til mobilenheder giver en øjeblikkelig visning af salgsordrer. Du kan få vist alle salgsordrer, salgsordrer pr. kunde eller oplysninger om en bestemt salgsordre. 
@@ -118,7 +118,7 @@ Hvis Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller ny
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
-Download og installer Finans- og drifts-mobilappen (Dynamics 365):
+Download og installer mobilappen finans og drift (Dynamics 365):
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Download og installer Finans- og drifts-mobilappen (Dynamics 365):
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

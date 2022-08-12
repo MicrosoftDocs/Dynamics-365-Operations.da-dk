@@ -1,6 +1,6 @@
 ---
 title: Firmabegreb i Dataverse
-description: Denne artikel beskriver integrationen af firmadata mellem Finans og drift og Dataverse.
+description: Denne artikel beskriver integrationen af firmadata mellem finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,29 +9,31 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873172"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205930"
 ---
-# <a name="company-concept-in-dataverse"></a>Firmakoncept i Dataverse
+# <a name="company-concept-in-dataverse"></a>Firmabegreb i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
 
 
 
-I Finans og drift er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
+I finans og drift er konceptet et *firma* både en juridisk konstruktion og en forretningskonstruktion. Det er også en sikkerheds- og synlighedsgrænse for data. Brugere arbejder altid i konteksten af et enkelt firma, og de fleste data stripes (spredes) af firmaet.
 
 Dataverse har ikke et tilsvarende koncept. Det tætteste koncept er *virksomhedsenhed*, som primært er en sikkerheds- og synlighedsgrænse for brugerdata. Dette koncept har ikke samme juridiske eller forretningsmæssige implikationer som firmakonceptet.
 
 Da virksomhedsenhed og firma ikke er tilsvarende koncepter, er det ikke muligt at gennemtvinge en en-til-en (1:1) tilknytning mellem dem med henblik på Dataverse-integration. Men da brugere som standard skal kunne se de samme rækker i programmet og Dataverse, har Microsoft introduceret en ny tabel i Dataverse, der hedder cdm\_Company. Denne tabel svarer til tabellen Firma i programmet. For at hjælpe med at sikre, at synlighed af rækker som standard er ens mellem programmet og Dataverse, anbefaler vi følgende opsætning af data i Dataverse:
 
-+ For hver firmarække i Finans og drift, der er aktiveret til dobbeltskrivning, oprettes der en tilknyttet cdm\_Company-række.
-+ Når en cdm\_Company-række oprettes og aktiveres til dobbeltskrivning oprettes der en standardvirksomhedsenhed med samme navn. Selvom der automatisk oprettes et standardteam for denne virksomhedsenhed, bruges virksomhedsenheden ikke.
-+ Der oprettes et separat ejerteam med samme navn. Det er også tilknyttet virksomhedsenheden.
++ For hver firmarække i finans og drift, der er aktiveret til dobbeltskrivning, oprettes der en tilknyttet cdm\_Company-række.
+
++ Når en cdm\_Company-række oprettes og aktiveres til dobbeltskrivning oprettes der en standardvirksomhedsenhed med samme navn. Selvom der automatisk oprettes en standardejer for denne virksomhedsenhed, bruges virksomhedsenheden ikke.
++ Der oprettes et separat ejerteam med samme navn med Dual Write-suffiks. Det er også tilknyttet virksomhedsenheden.
+
 + Som standard angives ejeren af enhver række, der oprettes og dobbeltskrives til Dataverse, til "DW-ejer"-teamet, der er knyttet til den tilknyttede virksomhedsenhed.
 
 I følgende illustration vises et eksempel på denne dataopsætning i Dataverse.
@@ -43,7 +45,7 @@ På grund af denne konfiguration ejes alle rækker, der er relateret til USMF-fi
 + Rollen "Sales Manager" er tildelt medlemmer af teamet "USMF Sales".
 + Brugere, der har rollen "Sales Manager", kan få adgang til alle firmarækker, der er medlem af den samme virksomhedsenhed, som de er medlem af.
 + Teamet "USMF Sales" er knyttet til den USMF-virksomhedsenhed, der er nævnt tidligere.
-+ Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmaenheden i Finans og drift.
++ Derfor kan medlemmer af teamet "USMF Sales" se enhver konto, der ejes af brugeren "USMF DW", som ville være kommet fra USMF-firmaenheden i finans og drift.
 
 ![Sådan kan teams bruges.](media/dual-write-company-2.png)
 

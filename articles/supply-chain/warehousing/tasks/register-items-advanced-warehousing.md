@@ -1,6 +1,6 @@
 ---
-title: Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
-description: Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.
+title: Registrere varer aktiveret til lagerstyringsprocesser ved hjælp af en varemodtagelseskladde
+description: Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger lokationsstyringsprocesser (WMS).
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863615"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066961"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Registrere varer aktiveret til lagerstyringsprocesser ved hjælp af en varemodtagelseskladde
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder.
+Denne artikel præsenterer et scenario, der viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger lokationsstyringsprocesser (WMS). Dette vil normalt blive udført af en modtagende medarbejder.
 
 ## <a name="enable-sample-data"></a>Aktivér eksempeldata
 
@@ -36,7 +36,7 @@ Du kan i stedet gennemgå dette scenario ved at erstatte værdier fra dine egne 
 - Du skal have en bekræftet indkøbsordre med en åben indkøbsordrelinje.
 - Varen på linjen skal være på lager. Den må ikke bruge produktvarianter og må ikke have sporingsdimensioner.
 - Varen skal være tilknyttet en lagringsdimensionsgruppe, hvor lagerstyringsproces er aktiveret.
-- Det lagersted, der bruges, skal være aktiveret for lagerstyringsprocesser og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret.
+- Det lagersted, der bruges, skal være aktiveret for WMS og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Oprette en overskrift til varemodtagelseskladde, der bruger lokationsstyring
 

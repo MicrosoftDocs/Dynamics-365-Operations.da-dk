@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027277"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146479"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -271,7 +271,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 1218 | Gennemtving oplåsning af ekstern enhed                           | Denne handling bruges internt af systemet til at låse op for eksterne POS-enheder.                                                                                                                                           | Ikke relevant | Ikke relevant     | Ikke relevant | Ikke relevant    | Nej              |
 | 1219 | Åbne URL-adresse i POS                                   | Åbn en administratorkonfigureret URL-adresse i POS.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nej              |
 | 1220 | Administrer pengeskab                                       | Administrer pengeskabet til forskellige kasseapparater.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nej              |
-| 1221 | Erklær udsatte transaktioner ugyldige                       | Erklær udsatte transaktioner ugyldige.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nej              |
+| 1221 | Erklær udsatte transaktioner ugyldige                       | Erklær udsatte transaktioner ugyldige.                                                                                                                                                                               | Ja            | Nej                | Nej            | Ja               | Nej              |
 | 1300 | Spring regnskabsregistreringen over                          | Spring regnskabsregistrering over.                                                                                                                                                                                       | Nej            | Nej                | Nej            | Ja               | Nej             |
 | 1301 | Marker finansiel hændelse som registreret                      |  Markér finansiel hændelse som registreret.                                                                                                                                                                                  | Nej            | Nej                | Nej            | Ja               | Nej             |
 | 1302 | Fuldfør regnskabsregistreringsproces              | Fuldfør regnskabsregistreringsprocessen.                                                                                                                                                                           | Nej            | Nej                | Ja            | Ja               | Ja             |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879273"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067610"
 ---
 # <a name="integration-with-finance-faq"></a>Ofte stillede spørgsmål til integration with Finance
 
@@ -88,7 +88,7 @@ Der kræves ingen speciel opsætning for undtagelseshåndtering. Dataintegrator 
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere tovejsintegration?
 
-Nej, integration går i øjeblikket kun én vej (Human Resources til Finans og drift). Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Human Resources til Finance.
+Nej, integration går i øjeblikket kun én vej (Human Resources til finans og drift). Der er dog en tilgængelig standardskabelon, som kan bruges til at sende data fra Human Resources til Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillade sletning af poster som en del af integrationen?
 
@@ -118,7 +118,7 @@ Ja, du kan tilføje felter i eller fjerne dem fra den eksisterende skabelon. Ska
 
 - Dataoverførslen resulterede i, at der blev udtrukket dubletposter ved kilden (Dataverse).
 
-- Dataoverførslen har null-værdier for felter, der kræves i Finans og drift. Kontroller de data, der er i Dataverse, og at de opfylder kravene i Finans og drift.
+- Dataoverførslen har null-værdier for felter, der kræves i finans og drift. Kontroller de data, der er i Dataverse, og at de opfylder kravene i Finans og drift.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Hvis der er kørselsfejl, og medarbejder-id'et ikke synkroniseres, hvordan finder jeg så historikjobbet med den mislykkede medarbejderpost?
 
@@ -150,7 +150,7 @@ Hvis enheden understøttes, og dataene er tilgængelige i Dataverse, skal du kon
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresserne for mine medarbejdere er forkerte, når jeg har importeret dem i Finance. Hvad skal jeg gøre?
 
-Nummerserien for **Lokations-id** bruger det samme mønster i både Human Resources og Finance. Nummerserien skal være unik på begge sider, så der ikke opstår adressekollisioner under integrationen af data fra Dataverse til Finans og drift.
+Nummerserien for **Lokations-id** bruger det samme mønster i både Human Resources og Finance. Nummerserien skal være entydig på begge sider, så der ikke opstår adressekollisioner under integration af data fra Dataverse til finans og drift.
 
 Ved implementering af Human Resources skal du kontrollere, at nummerserierne ikke de samme i Human Resources og Finance. Kontroller, at alle nummerserier ikke er ens, hvor data kan vedligeholdes i begge systemer.
 
@@ -184,3 +184,4 @@ Opdater dataenhederne i Finance ved at gå til **Datastyring \> Rammeparametre \
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

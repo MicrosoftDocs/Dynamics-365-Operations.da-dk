@@ -1,6 +1,6 @@
 ---
 title: Opret en fragtseddel
-description: Denne artikel beskriver, hvordan du opretter en fragtseddel, når du bruger lagerstyringsprocesser.
+description: Denne artikel beskriver, hvordan du opretter en fragtseddel, når du bruger lokationsstyringsprocesser (WMS).
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885777"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069690"
 ---
 # <a name="create-a-bill-of-lading"></a>Opret en fragtseddel
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver, hvordan du opretter en fragtseddel, når du bruger lagerstyringsprocesser.  
+Denne artikel beskriver, hvordan du opretter en fragtseddel, når du bruger lokationsstyringsprocesser (WMS).  
 
 En fragtseddel er et juridisk dokument mellem den virksomhed, der leverer varerne, og transportvirksomheden. Dokumentet ledsager de leverede varer, og den fungerer som en kvittering for levering, når varerne leveres til destinationen. Hvis du bruger lagerstyring, er der to metoder til at generere en fragtseddel:
 

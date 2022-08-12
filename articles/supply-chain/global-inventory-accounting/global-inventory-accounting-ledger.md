@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4d3779d7d335a903d7eabfadfed79e47652c6835
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f860e0c64573ccfe60e4854697c1e06feeed0c2
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897655"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135383"
 ---
 # <a name="global-inventory-accounting-ledger"></a>Global Inventory Accounting-finansmodul
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Global Inventory Accounting har sit eget sæt finansmoduler. Hver gang en lagerrelateret postering behandles for en relevant juridisk enhed, kan systemet tage højde for denne postering i et vilkårligt antal Global Inventory Accounting-finansmoduler efter behov.
 

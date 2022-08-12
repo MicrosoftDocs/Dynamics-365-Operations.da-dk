@@ -1,7 +1,7 @@
 ---
 title: Fejlfinding af filimport af bankkontoudtog
 description: I denne artikel beskrives, hvordan du kan løse problemer med små forskelle i bankkontoudtogsfilen.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711167"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151754"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Fejlfinding af filimport af bankkontoudtog
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Denne funktion udfases i september 2022, og nye brugere skal bruge elektronisk rapportering.
 
 Det er vigtigt, at kontoudtogsfilen fra banken matcher det layout, som Microsoft Dynamics 365 Finance understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
 
@@ -39,7 +42,7 @@ Når du forsøger at importere en bankkontoudtogsfil, skal du gå til jobhistori
 Sammenlign layoutdefinitionen for bankfilen med finansimportdefinitionen, og bemærk eventuelle forskelle i felter og elementer. Sammenlign kontoudtogsfilen fra banken med den relaterede finanseksempelfil. I ISO20022-filerne bør eventuelle forskelle være lette at se.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Tidszoneforskelle på importerede bankkontoudtog
-Dato- og klokkeslætsværdierne i importfilen kan være forskellige fra de dato- og klokkeslætsværdier, der vises i Finance and Operations. Hvis du vil undgå denne uoverensstemmelse, skal du angive en tidszoneindstilling på siden **Konfigurer datakilder**. Se [Konfigurere importprocessen for avanceret bankafstemning](set-up-advanced-bank-reconciliation-import-process.md) for at få flere oplysninger om angivelse af en indstilling for tidszone.
+Dato- og klokkeslætsværdierne i importfilen kan være forskellige fra de dato- og klokkeslætsværdier, der vises i finans og drift. Hvis du vil undgå denne uoverensstemmelse, skal du angive en tidszoneindstilling på siden **Konfigurer datakilder**. Se [Konfigurere importprocessen for avanceret bankafstemning](set-up-advanced-bank-reconciliation-import-process.md) for at få flere oplysninger om angivelse af en indstilling for tidszone.
 
 ## <a name="transformations"></a>Transformationer
 Ændringen foretages typisk i en af tre transformationer. Hver transformation er skrevet for en bestemt standard.
@@ -109,3 +112,4 @@ Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfil
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

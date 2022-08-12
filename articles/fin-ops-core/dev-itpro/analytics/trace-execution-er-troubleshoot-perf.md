@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851945"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108850"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore kørslen af ER-formater for at foretage fejlfinding af problemer med ydeevnen
 
@@ -98,7 +98,7 @@ Antag, at du er begyndt at designe en ny ER-løsning for at generere en ny rappo
 
 Antag, at du er færdig med at designe den første version af ER-løsningen. Du vil nu teste den i din forekomst og analysere kørselsydeevnen.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfiguration fra RCS til Finans og drift
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfiguration fra RCS til finans og drift
 
 1. Log på din programforekomst.
 2. I dette selvstudium skal du importere konfigurationer fra din RCS-forekomst (hvor du udformer dine ER-komponenter) i din forekomst (hvor du tester og til slut bruger dem). Du skal derfor sikre dig, at alle påkrævede artefakter er forberedt. Du kan finde instruktioner i proceduren [Importer konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -305,7 +305,7 @@ Det kan også være nyttigt at reducere antallet af kald, der foretages til Ledg
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importere konfigurationen af den ændrede modeltilknytning fra RCS til programmet
 
-Gentag trinnene i afsnittet [Importere en ER-konfiguration fra RCS til Finans og drift](#import-configuration) tidligere i denne artikel for at importere version 1.2 af **Tilknytning af performancesporing**-konfigurationen.
+Gentag trinnene i afsnittet [Importere en ER-konfiguration fra RCS til finans og drift](#import-configuration) tidligere i denne artikel for at importere version 1.2 af **Tilknytning af performancesporing**-konfigurationen.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Køre den ændrede ER-løsning for at spore kørslen
 
@@ -363,7 +363,7 @@ Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indehol
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Brug eksterne værktøjer til at gennemse en udførelsessporing, der indeholder databaseforespørgsler
 
-På grund af de forbedringer, der er foretaget i ER-strukturen, indeholder den performancesporing, der er genereret i PerfView-format, nu flere detaljer om udførelse af ER-format. I Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (juli 2019) kan denne sporing også omfatte oplysninger om udførte SQL-forespørgsler i programdatabasen.
+På grund af de forbedringer, der er foretaget i ER-strukturen, indeholder den performancesporing, der er genereret i PerfView-format, nu flere detaljer om udførelse af ER-format. I Microsoft Dynamics 365 Finance version 10.0.4 (juli 2019) kan denne sporing også omfatte oplysninger om udførte SQL-forespørgsler i programdatabasen.
 
 ### <a name="configure-user-parameters"></a>Konfigurere brugerparametre
 
@@ -392,3 +392,4 @@ Bemærk, at webbrowseren kan hente en zip-fil til overførsel. Denne fil indehol
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

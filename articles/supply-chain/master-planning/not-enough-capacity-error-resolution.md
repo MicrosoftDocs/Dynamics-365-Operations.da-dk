@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891025"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135593"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rette fejlen i planlægningsprogrammet "Ikke tilstrækkelig kapacitet kunne findes"
 
@@ -111,5 +111,41 @@ Hvis du vil se den tilgængelige kapacitet på ressourcegruppen, skal du følge 
 Når der anvendes grovplanlægning, planlægger varedisponering kapacitet i overensstemmelse med kalenderen for den primære ressourcegruppe. Den reserverer den sekundære operation samtidig med den primære operation og tager ikke højde for kalenderne eller kapaciteten af den sekundære operation. Det kan resultere i, at produktionsordren planlægges i en lukket kalender eller på et tidspunkt, hvor den sekundære operation ikke er tilgængelig (kalender lukket, ingen kapacitet).
 
 Når der anvendes finplanlægning, tages der i varedisponering højde for både den primære og den sekundære operations kapacitet og kalender ved planlægning af ordren. Hvis ordren skal planlægges, skal kalenderne for ressourcerne i begge operationer være åbne og have ledig kapacitet.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Maksimale jobgennemløbstid er for kort
+
+Planlægningsprogrammet kan ikke planlægge en ordre, hvis den **maksimale jobgennemløbstid**, der er angivet for lokationen, er mindre end den gennemløbstid, der er angivet for en vare i varens standardordreindstillinger eller disponeringsindstillinger.
+
+Hvis du vil have vist eller redigere indstillingen for **maksimal jobgennemløbstid** for lokationen, skal du gå til **Produktionskontrol \> Konfiguration \> Produktionskontrolparametre** og åbne fanen **Generelt**.
+
+Benyt følgende fremgangsmåde for at vise eller redigere standardindstillingerne for et element.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Find og vælg det relevante produkt på listen.
+1. I handlingsruden skal du åbne fanen **Administrer lager** og vælge **Standardordreindstillinger**.
+1. Udvid oversigtspanelet **Lager**, og få vist eller rediger indstillingen for **Leveringstid for lager** efter behov.
+
+Benyt følgende fremgangsmåde for at vise eller redigere indstillinger for varedisponering for et element.
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Find og vælg det relevante produkt på listen.
+1. Åbn fanen **Plan** i handlingsruden, og vælg **Varedisponering**.
+1. Åbn fanen **Gennemløbstid**, og få vist eller rediger værdien for **produktionstid** efter behov.
+
+## <a name="excessive-quantity-of-required-resources"></a>For mange påkrævede ressourcer
+
+Under planlægning forsøger programmet at matche den krævede ressourcemængde, der er angivet for en ruteoperation, med de relevante ressourcer i henhold til kravene til operationsressourcen. Hvis ressourceantallet angives for højt, kan det medføre, at en rute ikke kan tildeles, hvilket medfører planlægningsfejl.
+
+Benyt følgende fremgangsmåde for at kontrollere både det angivne antal og de relevante ressourcer for et valgt produkt, en rute og en ruteoperation:
+
+1. Gå til **Administration af produktoplysninger \> Produkter \> Frigivne produkter**.
+1. Find og vælg det relevante produkt på gitteret.
+1. Åbn fanen **Opret** i handlingsruden, og vælg **Rute**.
+1. Find og vælg det relevante rute i gitteret.
+1. Åbn fanen **Oversigt** nederst på siden.
+1. Vælg en operation på listen over de valgte ruteoperationer.
+1. Vælg **Tilgængelige ressourcer** for at åbne en dialogboks, hvor du kan få vist de relevante ressourcer for den valgte ruteoperation.
+1. Åbn fanen **Ressourcebelastning**. I feltet **Antal** vises det ressourceantal, der kræves til den valgte ruteoperation. Få vist og/eller rediger den efter behov.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692220"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070166"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimere forespørgsler til Dataverse-virtuelle tabeller
 
@@ -49,12 +49,12 @@ En af årsagerne til den langsomme ydeevne med Dataverse-virtuelle tabeller til 
 Et eksempel, hvor du kan se denne indvirkning, er forespørgsler på enheden Arbejder (**mshr_hcmworkerentity**) eller Basisarbejder (**mshr_hcmworkerbaseentity**). Du kan se, at ydeevneproblemet manifesterer sig på et par forskellige måder:
 
 - **Langsom udførelse af forespørgsler**: Forespørgslen på den virtuelle tabel kan returnere de forventede resultater, men det tager længere tid end forventet at fuldføre udførelsen af forespørgslen.
-- **Timeout for forespørgsel**: Forespørgslen får muligvis timeout og returnerer følgende fejl: "Der blev anskaffet et token til kald af Finans og drift, men Finans og drift returnerede en fejl af typen InternalServerError".
+- **Timeout for forespørgsel**: Forespørgslen får muligvis timeout og returnerer følgende fejl: "Der blev anskaffet et token til kald af finans og drift, men finans og drift returnerede en fejl af typen InternalServerError".
 - **Uventet fejl** : Forespørgslen kan returnere en fejltype 400 med følgende meddelelse: "Der opstod en uventet fejl".
 
   ![Fejltype 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Begrænsning**: Forespørgslen kan overforbruge serverressourcer og blive udsat for begrænsning. I dette tilfælde returnerer forespørgslen følgende fejl: "Der blev anskaffet et token til kald af Finans og drift, men Finans og drift returnerede en fejl af typen 429". Yderligere oplysninger om begrænsning af Human Resources finder du i [Ofte stillede spørgsmål om begrænsning](./hr-admin-integration-throttling-faq.md).
+- **Begrænsning**: Forespørgslen kan overforbruge serverressourcer og blive udsat for begrænsning. I dette tilfælde returnerer forespørgslen følgende fejl: "Der blev anskaffet et token til kald af finans og drift, men finans og drift returnerede en fejl af typen 429". Yderligere oplysninger om begrænsning af Human Resources finder du i [Ofte stillede spørgsmål om begrænsning](./hr-admin-integration-throttling-faq.md).
 
   ![Fejltype 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ Du kan finde flere oplysninger om sideinddeling i [Angive det antal enheder, der
 - [Ofte stillede spørgsmål om begrænsning](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

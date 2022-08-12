@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857222"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103588"
 ---
 # <a name="prospect-to-cash"></a>Kundeemne til kontanter
 
@@ -43,13 +43,13 @@ I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typ
 ## <a name="system-requirements-for-supply-chain-management"></a>Systemkrav til Supply Chain Management
 Kundeemne til kontant-integration understøttes iå følgende versioner:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 Finans og drift, Enterprise edition 7.3 (December 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (december 2017) - programbuild 7.3.11971.56116 med platformsopdatering 12 (7.0.4709.41129)
+- Dynamics 365 for Finans og drift, Enterprise Edition (december 2017) - Program-build 7.3.11971.56116 med platformopdatering 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance, Enterprise Edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) - med platformsopdatering 8 (programbuild 7.2.11792.56024 med platformsbuild 7.0.4565.16212).
+- Dynamics 365 Finans og drift, Enterprise Edition (juli 2017) - med platformsopdatering 8 (program-build 7.2.11792.56024 med platform-build 7.0.4565.16212).
 - De følgende hotfixes er obligatoriske:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Dette hotfix muliggør salgsordresynkronisering fra Sales til Supply Chain Management via funktionen Dataintegration. Det indeholder også flere andre forbedringer.
@@ -59,9 +59,9 @@ Kundeemne til kontant-integration understøttes iå følgende versioner:
     > [!NOTE]
     > Du behøver kun at installere KB4045570, fordi installationen omfatter ændringerne fra andre hotfixes. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 Finans og drift version 1611 (November 2016)
 
-- Dynamics 365 for Finance and Operations version 1611 (november 2016) med platformsopdatering 8 eller nyere
+- Dynamics 365 Finans og drift version 1611 (November 2016) med platformopdatering 8 eller derover
 
 - De følgende hotfixes er obligatoriske:
 

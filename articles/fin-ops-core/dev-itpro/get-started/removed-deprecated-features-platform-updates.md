@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945798"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069916"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -30,18 +30,18 @@ Denne artikel beskriver funktioner, der er blevet fjernet eller er planlagt til 
 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
-Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finans- og driftsapps.
+Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Udfasning af funktion træder i kraft i juni 2022
 
-### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finans- og drifts-mobilapp (Dynamics 365) og mobilplatform 
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finans- og drift (Dynamics 365) mobilappen og mobilplatform 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Vi udfaser mobilappen Finans og drift (Dynamics 365) og platformen til konsolidering i en enkelt mobilplatform, som er Power Apps. |
-| **Erstattet af en anden funktion?**   | Ja, mobilerfaringer med Finans- og driftsappdata kan opbygges med Power Platform-integration. Se [blogindlægget](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) og [Opbygning af mobilerfaringer](../power-platform/build-mobile-experiences.md) for at få flere detaljer. |
-| **Produktområder, der er berørt**         | Finans og drift-apps |
+| **Årsagen til forældelsen/fjernelsen** | Vi udfaser mobilappen finans og drift (Dynamics 365) og platformen til konsolidering i en enkelt mobilplatform, som er Power Apps. |
+| **Erstattet af en anden funktion?**   | Ja, mobilerfaringer med programmer til finans- og drift-data kan opbygges med Power Platform-integration. Se [blogindlægget](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) og [Opbygning af mobilerfaringer](../power-platform/build-mobile-experiences.md) for at få flere detaljer. |
+| **Produktområder, der er berørt**         | Programmer til finans og drift |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Forældet. Slutdato for support er sat til oktober 2024. |
 
@@ -67,7 +67,7 @@ Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Tech
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi fjerner understøttelsen af XML-URL-løsningen, da dette er blevet identificeret som en potentiel sikkerhedsrisiko. Det betyder, at de eksterne ressourcer, der er tilknyttet XML-filer, ikke længere løses.  |
 | **Erstattet af en anden funktion?**   | Nej |
-| **Produktområder, der er berørt**         | Finans og drift-apps |
+| **Produktområder, der er berørt**         | Programmer til finans og drift |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Forældet. |
 
@@ -79,7 +79,7 @@ Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Tech
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Understøttelse af XSLT-scripting i Datastyring udfases at forbedre sikkerheden og databeskyttelsen i programmer til finans og drift.  |
 | **Erstattet af en anden funktion?**   | Nej Kunder og softwareleverandører bør overveje at genimplementere deres løsninger baseret på X++-sprog i stedet for XSLT-scripting. |
-| **Produktområder, der er berørt**         | Finans og drift-apps |
+| **Produktområder, der er berørt**         | Programmer til finans og drift |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Forældet <br><br>**Undtagelse:** Kunder, der aktuelt bruger XLST-scripting. De kan fortsætte med at bruge den, indtil de opdaterer til version 10.0.30 eller senere. I forbindelse med tidligere versioner udløber undtagelsen den 31. januar 2023. Kunder med denne undtagelse har modtaget en besked i Meddelelsescenteret i Microsoft 365 Administrationen. |
 
@@ -196,7 +196,7 @@ Du kan finde detaljerede oplysninger om objekter i Finans- og driftsapps i [Tech
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er fjernet for at reducere de faste omkostninger ved drift, overvågning og vedligeholdelse af indeksstyringen af kunder. |
 | **Erstattet af en anden funktion?**   | Fremadrettet vil indeksvedligeholdelsen blive udført af Microsoft-tjenester. Dette sker løbende, uden at det påvirker brugerworkloads. |
-| **Produktområder, der er berørt**         | Finans og drift-apps|
+| **Produktområder, der er berørt**         | Programmer til finans og drift|
 | **Installationsindstilling**              | Skyinstallation – påvirker Microsoft-administrerede produktionsmiljøer og sandkassemiljøer på niveau 2 til og med niveau 5. |
 | **Status**                         | Denne funktion er fjernet. |
 
@@ -398,3 +398,4 @@ Hvis du vil vide mere om funktioner, der er blevet fjernet eller udfaset i tidli
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

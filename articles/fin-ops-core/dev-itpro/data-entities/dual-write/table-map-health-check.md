@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16c79a788b66830b77b2cdfb33fd2416c530f7d2
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884077"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111560"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Fejlkoder for tabeltilknytningens sundhedskontrol
 
@@ -26,37 +26,37 @@ Denne artikel indeholder en beskrivelse af fejlkoder for sundhedskontrol af tilk
 
 ## <a name="error-100"></a>Fejl 100
 
-Fejlmeddelelsen er "Der anbefales som minimum Finans- og driftsplatform version PU 43 for at køre Finans- og driftsanbefalinger".
+Fejlmeddelelsen er "Der anbefales som minimum finans og drift-platform version PU 43 for at køre finans og drift-anbefalinger".
 
-Funktionen kræver platformopdateringer til version 10.0.19 eller nyere af Finans- og driftsapps.
+Funktionen kræver platformopdateringer til version 10.0.19 eller nyere af programmer til finans og drift.
 
 ## <a name="error-400"></a>Fejl 400
 
-Fejlmeddelelsen er "Ingen registreringsdata for forretningshændelser blev fundet for enheden \{Finans og drift-UniqueEntityName\}, hvilket betyder, at tilknytningen enten ikke kører, eller alle felttilknytningerne er envejs."
+Fejlmeddelelsen er "Ingen registreringsdata for forretningshændelser blev fundet for enheden \{finans og drift-UniqueEntityName\}, hvilket betyder, at tilknytningen enten ikke kører, eller alle felttilknytningerne er envejs."
 
 ## <a name="error-500"></a>Fejl 500
 
-Fejlmeddelelsen er "Der blev ikke fundet nogen projektkonfigurationer for projektet \{projektnavn\}. Det kan enten skyldes, at projektet ikke er aktiveret, eller at alle felttilknytninger er envejs fra kundeengagement til Finans og drift."
+Fejlmeddelelsen er "Der blev ikke fundet nogen projektkonfigurationer for projektet \{projektnavn\}. Det kan enten skyldes, at projektet ikke er aktiveret, eller at alle felttilknytninger er envejs fra kundeengagement til finans og drift."
 
-Kontrollér tilknytningerne for tabeloversigten. Hvis de er envejs fra kundeengagementsapps til Finans- og driftsapps, genereres der ingen trafik til live-synkronisering fra Finans- og driftsapps til Dataverse.
+Kontrollér tilknytningerne for tabeloversigten. Hvis de er envejs fra kundeengagementsapps til programmer til finans og drift, genereres der ingen trafik til live-synkronisering fra programmer til finans og drift til Dataverse.
 
 ## <a name="error-900"></a>Fejl 900
 
-Fejlmeddelelsen er "Udyldigt kildefilter \{sourceFilter\}-format for enheden \{Finans og drift-UniqueEntityName\}."
+Fejlmeddelelsen er "Ugyldigt kildefilter \{sourceFilter\}-format for enheden \{finans og drift-UniqueEntityName\}."
 
-Det kildefilter, der er angivet i tabeltilknytningen for Finans- og driftsapps, er ikke korrekt syntaks. Se [Fejlfinde problemer med aktiv synkronisering](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps) for at validere filterkriterierne.
+Det kildefilter, der er angivet i tabeltilknytningen for programmer til finans og drift, er ikke korrekt syntaks. Se [Fejlfinde problemer med aktiv synkronisering](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps) for at validere filterkriterierne.
 
 ## <a name="error-1000"></a>Fejl 1000
 
-Fejlmeddelelsen er "Den enhedsforespørgsel \{Finans og drift-UniqueEntityName\}, der bruges til live-synkronisering af dobbeltskrivning, er \{Finans og drift-EntityFilterQueryString\}. Poster, der opfylder forespørgselskriterierne, anvendes til live-synkronisering."
+Fejlmeddelelsen er "Den enhedsforespørgsel \{finans og drift-UniqueEntityName\}, der bruges til live-synkronisering af dobbeltskrivning, er \{finans og drift-EntityFilterQueryString\}. Poster, der opfylder forespørgselskriterierne, anvendes til live-synkronisering."
 
 Den enhedsforespørgsel, der blev returneret, er den understøttende SQL-forespørgsel for enheden. Kontrollér, om der er indre joinforbindelser eller filtre i forespørgslen, som bestemmer, hvilke forretningsdata der anvendes til live-synkronisering. Indre joinforbindelser og filtre er obligatoriske betingelser, der skal være opfyldt for hver post, som vælges med henblik på live-synkronisering af dobbeltskrivning.
 
 ## <a name="error-1300"></a>Fejl 1300
 
-Fejlmeddelelsen er "Virtuelle felter \{s.EntityFieldName\} for enheden \{Finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} spores muligvis ikke med henblik på dobbeltskrivning."
+Fejlmeddelelsen er "Virtuelle felter \{s.EntityFieldName\} for enheden \{finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} spores muligvis ikke med henblik på dobbeltskrivning."
 
-Virtuelle felter fra Finans- og driftstabeller kan ikke spores. Live-synkronisering kan synkronisere dataene, men kan ikke registrere de ændringer, der er foretaget i kolonnerne.
+Virtuelle felter fra finans og drift-tabeller kan ikke spores. Live-synkronisering kan synkronisere dataene, men kan ikke registrere de ændringer, der er foretaget i kolonnerne.
 
 ## <a name="error-1500"></a>Fejl 1500
 
@@ -66,9 +66,9 @@ Datakilden fra enheden har ingen felter, der er knyttet til dobbeltskrivning. Æ
 
 ## <a name="error-1600"></a>Fejl 1600
 
-Fejlmeddelelsen er "Datakilde: \{datasource.DataSourceName\} for enheden \{Finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} har et område. Kun poster, der opfylder områdebetingelsen, anvendes som udgående."
+Fejlmeddelelsen er "Datakilde: \{datasource.DataSourceName\} for enheden \{finans og drift EntityMetadata.EntityProperties.LogicalEntityName\} har et område. Kun poster, der opfylder områdebetingelsen, anvendes som udgående."
 
-Enheder i Finans- og driftsapps kan have datakilder, hvor filterområder er aktiveret. Disse områder definerer de poster, der anvendes som en del af live-synkronisering. Hvis nogle af posterne springes over fra Finans- og driftsapps til Dataverse, skal du kontrollere, om posterne opfylder områdekriterierne på enheden. Det kan du ganske enkelt gøre ved at køre en SQL-forespørgsel, der ligner følgende eksempel.
+Enheder i programmer til finans og drift kan have datakilder, hvor filterområder er aktiveret. Disse områder definerer de poster, der anvendes som en del af live-synkronisering. Hvis nogle af posterne springes over fra programmer til finans og drift til Dataverse, skal du kontrollere, om posterne opfylder områdekriterierne på enheden. Det kan du ganske enkelt gøre ved at køre en SQL-forespørgsel, der ligner følgende eksempel.
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.
@@ -81,12 +81,12 @@ Fejlmeddelelsen er "Tabel: \{datasourceTable.Key.subscribedTableName\} for enhed
 Hvis den samme tabel spores af flere enheder, vil en eventuel ændring i tabellen udløse evaluering af dobbeltskrivning for de tilknyttede enheder. Selvom filtersætningerne kun sender de gyldige poster, kan evalueringen forårsage et ydeevneproblem, hvis der er forespørgsler, som kører længe, eller forespørgselsplaner, der ikke er optimeret. Dette problem kan muligvis ikke undgås ud fra et forretningsmæssigt perspektiv. Men hvis der er mange tabeller med skæringspunkter på tværs af flere enheder, skal du overveje at forenkle enheden eller kontrollere, om enhedsforespørgsler er optimeret.
 
 ## <a name="error-1800"></a>Fejl 1800
-Fejlmeddelelsen er" "Datakilde: {} for enheden CustCustomerV3Entity omfatter en intervalværdi. Indgående postkonfigurationer fra Dataverse til Finans og drift kan påvirkes af intervalværdier på enheden. Test postopdateringerne fra Dataverse til Finans og drift med poster, der ikke opfylder filtrerkriterierne, for at validere dine indstillinger."
+Fejlmeddelelsen er" "Datakilde: {} for enheden CustCustomerV3Entity omfatter en intervalværdi. Indgående postkonfigurationer fra Dataverse til finans og drift kan påvirkes af intervalværdier på enheden. Test postopdateringerne fra Dataverse til finans og drift med poster, der ikke opfylder filtrerkriterierne, for at validere dine indstillinger."
 
 Hvis der er angivet et interval for enheden i programmer til finans og drift, skal den indgående synkronisering fra Dataverse til programmer til finans og drift testes for opdateringsfunktionsmåden på poster, der ikke opfylder dette intervalkriterium. Enhver post, der ikke matcher intervallet, behandles som en indsættelseshandling af enheden. Hvis der er en eksisterende post i den underliggende tabel, mislykkes indsættelsen. Det anbefales, at du tester dette brugsmønster for alle scenarier, før du udruller til produktion.
 
 ## <a name="error-1900"></a>Fejl 1900
-Fejlmeddelelsen er: "Enhed: har {} datakilder, som ikke spores for udgående dobbeltskrivning. Dette kan påvirke ydeevnen af live-synkroniseringsforespørgslen. Du skal redigere enheden i Finans og drift for at fjerne ubrugte datakilder og tabeller eller implementere getEntityRecordIdsImpactedByTableChange for at optimere kørselsforespørgslerne."
+Fejlmeddelelsen er: "Enhed: har {} datakilder, som ikke spores for udgående dobbeltskrivning. Dette kan påvirke ydeevnen af live-synkroniseringsforespørgslen. Du skal redigere enheden i finans og drift for at fjerne ubrugte datakilder og tabeller eller implementere getEntityRecordIdsImpactedByTableChange for at optimere kørselsforespørgslerne."
 
 Hvis der er mange datakilder, der ikke bruges til sporing i den faktiske live synkronisering fra programmer til finans og drift, er der en mulighed for, at enhedsydeevnen påvirker live-synkronisering. Hvis du vil optimere de sporede tabeller, skal du bruge metoden getEntityRecordIdsImpactedByTableChange.
 
@@ -96,3 +96,4 @@ Fejlmeddelelsen er, "Synkrone plugins er registreret for datastyringshændelser 
 Synkrone plugins i en Dataverse-enhed kan påvirke ydeevnen for live synkronisering og indledende synkronisering, mens der føjes til transaktionsindlæsning. Den anbefalede fremgangsmåde er enten at deaktivere plugins eller gøre disse plugins asynkrone, hvis du har langsommere indlæsningstider i første synkronisering eller live synkronisering for en bestemt enhed.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883562"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111688"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer for andre komponenter
 
@@ -25,7 +25,7 @@ ms.locfileid: "8883562"
 
 For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS).
 
-Denne procedure viser, hvordan du designer en konfiguration af elektronisk rapportering (ER) og angiver dens afhængighed fra andre softwarekomponenter, så du kan hjælpe med at sikre, at konfigurationen er hentet korrekt til en bestemt version af Finans og drift. I dette eksempel skal du oprette de krævede ER-konfigurationer for eksempelfirmaet Litware Inc. 
+Denne procedure viser, hvordan du designer en konfiguration af elektronisk rapportering (ER) og angiver dens afhængighed fra andre softwarekomponenter, så du kan hjælpe med at sikre, at konfigurationen er hentet korrekt til en bestemt version af finans og drift. I dette eksempel skal du oprette de krævede ER-konfigurationer for eksempelfirmaet Litware Inc. 
 
 Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Trinene kan udføres i alle firmaer, fordi ER-konfigurationer deles mellem firmaer. 
 
@@ -46,7 +46,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 7. Vælg Microsoft Dynamics 365 for Operations (1611).
 8. Skriv '[7.1.1541.3036,8)' i feltet Version.
     * [7.1.1541.3036,8)  
-    * De afhængigheder, du angiver, evalueres, når denne konfiguration hentes fra ethvert ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Finans og drift, version 7.1.1541.3036 eller nyere, men ikke nyere end hovedversion 8.   
+    * De afhængigheder, du angiver, evalueres, når denne konfiguration hentes fra ethvert ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i finans og drift, version 7.1.1541.3036 eller nyere, men ikke nyere end hovedversion 8.   
 9. Klik på Gem.
 10. Luk siden.
 11. Klik på Skift status.
@@ -59,7 +59,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 18. Vælg Microsoft Dynamics AX 7.0 RTW.
 19. Skriv '[7.0.1265.3015,7.1)' i feltet Version.
     * [7.0.1265.3015,7.1)  
-    * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 for Finance and Operations Enterprise edition, version 7.0.1265.3015 eller nyere, men ikke nyere end mindre version 1.   
+    * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 Finance, Enterprise edition, version 7.0.1265.3015 eller nyere, men ikke nyere end mindre version 1.   
 20. Klik på Gem.
 21. Luk siden.
 22. Klik på Skift status.
@@ -136,10 +136,11 @@ Vi sletter de oprettede konfigurationer fra systemet og henter dem igen fra LCS-
 25. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
 26. Udvid 'Eksempeldatamodel' i træet.
     * Bemærk, at tilknytningskonfigurationen 'Eksempeltilknytning' for modellen hentes sammen med konfiguration for den valgte datamodel. De to filer hentes sammen, fordi 'Eksempeltilknytning' er konfigureret til at implementere den valgte datamodel, og fordi det er relevant for programmet. Konfigurationen 'Eksempeltilknytning (alternativ)' er ikke hentet, fordi betingelsen for den nødvendige programversion ikke er opfyldt.   
-    * Hvis du logger på Finans og drift, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
+    * Hvis du logger på finans og drift, registrerer den samme udbyder, åbner det samme LCS-projekt og henter den samme datamodelkonfiguration, hentes konfigurationen 'Eksempeltilknytning (alternativ)', mens konfigurationen 'Eksempeltilknytning' springes over.  
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

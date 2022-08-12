@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
+title: Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902047"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186513"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management forhåndsversion 10.0.28. Denne version har et build-nummer på 10.0.1264 og er tilgængelig i følgende plan:
+Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.28. Denne version har et build-nummer på 10.0.1264 og er tilgængelig i følgende plan:
 
 - **Forhåndsversion:** maj 2022
 - **Generel tilgængelighed af version (selvopdatering):** juli 2022
@@ -35,7 +34,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
 | Lager og logistik | [Enheder til integration af landingsomkostninger for tredjepartsspeditører](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Oversigt over enheder til landingsomkostninger](../landed-cost/landed-cost-entities-overview.md) | Aktiveret som standard |
-| Planlægning | [Planlægning af efterspørgselsbaseret materialebehov (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Kommer snart | Funktionsstyring:<br>*(Forhåndsversion) DDMRP til planlægningsoptimering* |
+| Planlægning | [Planlægning af efterspørgselsbaseret materialebehov (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Oversigt over planlægning af efterspørgselsbaseret materialebehov](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionsstyring:<br>*(Forhåndsversion) DDMRP til planlægningsoptimering* |
 | Planlægning | [Planlægningsoptimerings-understøttelse af CTP (leveringsevne)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Kommer snart | Funktionsstyring:<br>*(Forhåndsversion) CTP til planlægningsoptimering* |
 | Planlægning | [Understøttelse af hyldelevetid i planlægningsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Kommer snart | Aktiveret som standard |
 
@@ -66,7 +65,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.28 indeholder platformopdateringer. Du kan få mere at vide i [Platformsopdateringer til version 10.0.28 af programmer til finans og drift (juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
@@ -92,3 +91,4 @@ Før en funktion fjernes fra produktet, vil du få besked om udfasning i artikle
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

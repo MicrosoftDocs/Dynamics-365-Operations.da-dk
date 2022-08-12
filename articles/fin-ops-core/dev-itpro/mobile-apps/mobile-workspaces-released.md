@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 79abd22bab9ec88358fa039060a67006fc53cb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3c9b97d02532b05aac2b02851f1b7b705a047726
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868634"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068129"
 ---
 # <a name="available-mobile-workspaces"></a>Tilgængelige arbejdsområder til mobilenheder
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Denne artikel indeholder de arbejdsområder til mobilenheder, der er tilgængelige for brug i Finans- og drifts-mobilappen (Dynamics 365). I nedenstående tabel angives udfasningsplanen for hvert af disse mobile arbejdsområder, hvad angår om der er planlagt en erstatningsoplevelse.  
+Denne artikel indeholder de arbejdsområder til mobilenheder, der er tilgængelige for brug i finans og drift-mobilappen (Dynamics 365). I nedenstående tabel angives udfasningsplanen for hvert af disse mobile arbejdsområder, hvad angår om der er planlagt en erstatningsoplevelse.  
 
 
 | Arbejdsområde til mobile enheder     | Beskrivende tekst   | Udfasningsplan   |
@@ -43,3 +43,4 @@ Denne artikel indeholder de arbejdsområder til mobilenheder, der er tilgængeli
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

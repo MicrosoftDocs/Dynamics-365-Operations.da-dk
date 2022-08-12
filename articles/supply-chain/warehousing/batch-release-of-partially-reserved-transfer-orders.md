@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888377"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068625"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Batch-udgivelse af delvist reserverede flytteordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888377"
 Funktionen til batchfrigivelse af delvist reserveret overførselsordrer giver dig mulighed for delvist at frigive overførselsordrer til et lagersted ved hjælp af et batchjob.
 Da du har mulighed for at frigive en delmængde, behøver du ikke vente på, at hele ordreantallet er tilgængeligt på lageret, før du frigiver en ordre.
 
-Frigivelsen af ordrer til et lagersted er en proces til avanceret lagerstyring. Denne proces omfatter aktiviteter, f.eks. plukning, pakning og levering, som en lagermedarbejder kan udføre ved hjælp af en mobil enhed.
+Frigivelsen af ordrer til et lagersted er en proces til lagerstyring (WMS). Denne proces omfatter aktiviteter, f.eks. plukning, pakning og levering, som en lagermedarbejder kan udføre ved hjælp af en mobil enhed.
 
 ## <a name="where-it-applies"></a>Hvor det er relevant
 

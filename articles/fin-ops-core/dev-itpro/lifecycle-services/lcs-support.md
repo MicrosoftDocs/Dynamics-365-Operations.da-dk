@@ -1,5 +1,5 @@
 ---
-title: Få support til Finans og drift-apps eller Lifecycle Services (LCS)
+title: Få support til programmer til finans og drift eller Lifecycle Services (LCS)
 description: I denne artikel beskrives, hvordan du kan få hjælp til programmer til finans og drift eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866425"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103397"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til Finans og drift-apps eller Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support til programmer til finans og drift eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ I denne artikel beskrives, hvordan du kan få hjælp til programmer til finans o
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> kan du bruge værktøjet <strong>Problemsøgning</strong> til hurtigt at søge efter Microsoft Knowledge Base-artikler (KB), hotfixes og løsninger på rapporterede fejl. Du kan se, hvilke rapporterede problemer der er ved at blive rettet for et bestemt funktionsområde, og hvilke problemer der allerede er løst. Yderligere oplysninger finder du i <a href="issue-search-lcs.md">Problemsøgning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support i din Finans- og driftsapp.</td>
+<td>Få support i programmer til finans og drift.</td>
 <td>Vælg knappen <strong>Hjælp</strong> (<strong>?</strong>) i øverste højre hjørne af appen, og vælg derefter <strong>Support</strong>. Problemer rapporteres på fanen <strong>Aktuelle problemer</strong> i LCS. Her kan administratorer afgøre, om de skal tilbyde intern support eller sende problemerne til Microsoft.</td>
 </tr>
 <tr>
@@ -72,3 +72,4 @@ I denne artikel beskrives, hvordan du kan få hjælp til programmer til finans o
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

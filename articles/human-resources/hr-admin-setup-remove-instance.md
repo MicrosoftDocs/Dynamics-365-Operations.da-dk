@@ -1,6 +1,6 @@
 ---
 title: Fjern en forekomst
-description: Denne arikel fører dig gennem processen med at fjerne et testdrev eller produktionsmiljø til Microsoft Dynamics 365 Human Resources.
+description: Denne artikel forklarer processen, når du vil fjerne et testdrev eller et produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859627"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178466"
 ---
 # <a name="remove-an-instance"></a>Fjern en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Anvendes på:** Human Resources i enkeltstående infrastruktur_ 
+
+> [!NOTE]
+> Fra og med juli 2022 kan der ikke klargøres nye personalemiljøer på den enkeltstående infrastruktur for Personale, og der kan ikke oprettes nye Microsoft Dynamics Lifecycle Services-projekter (LCS) på den. Kunder kan udrulle Personale-miljøer på infrastrukturen i program til finans og drift. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastrukturen i program til finans og drift-infrastruktur understøtter sletning af et miljø. Yderligere oplysninger om sletning af et miljø finder du i [Slette et miljø](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 Denne artikel forklarer processen, når du vil fjerne et testdrev eller et produktionsmiljø til Microsoft Dynamics 365 Human Resources.
 
@@ -42,7 +48,10 @@ Det eksisterende testdrevmiljø fjernes. Når det er fjernet, kan du tilmelde di
 
 Det antages i artiklen, at du har købt Human Resources via en Cloud Solution Provider (CSP) eller en EA-aftale (Enterprise Architecture). 
 
-Da der er indeholdt et enkelt Human Resources-miljø i hvert enkelt Power Apps-miljø, er der to indstillinger, der skal overvejes. Den første indstilling omfatter fjernelse af hele Power Apps-miljøet, den anden mulighed omfatter kun fjernelse af Human Resources. Den første indstilling foretrækkes, når du har oprettet et Power Apps-miljø udtrykkeligt med henblik på klargøring af Human Resources, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer. Den anden mulighed er kun relevant, når du har et etableret Power Apps-miljø, der er udfyldt med omfattende data, som udnyttes i Power Apps og Power Automate.
+Da et enkelt Human Resources-miljø er indeholdt i et enkelt Power Apps-miljø, er der to indstillinger, der skal overvejes, når der skal fjernes et miljø: 
+- **Fjerne hele Power Apps-miljøet.** Den indstilling foretrækkes, når du har oprettet et Power Apps-miljø udtrykkeligt med henblik på klargøring af Human Resources, og du kun lige er begyndt implementeringen, eller du ikke har nogen etablerede integrationer.  
+- **Fjerne kun Human Resources.** Den mulighed er kun relevant, når du har et etableret Power Apps-miljø, der er udfyldt med omfattende data, som udnyttes i Microsoft Power Apps og Power Automate.
+
 
 > [!Important]
 > Før du fjerner Power Apps-miljøet, skal du sikre dig, at det ikke bruges til omfattende dataintegrationer, som ikke er omfattet af Human Resources. Bemærk også, at Power Apps-standardmiljøerne ikke kan fjernes. 

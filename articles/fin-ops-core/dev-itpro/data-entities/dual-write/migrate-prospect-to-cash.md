@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894260"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111888"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Overføre kundeemne til kontantdata fra dataintegrator til dobbeltskrivning
 
@@ -32,7 +32,7 @@ Du skal installere den manuelt. Efter installationen forbliver alt nøjagtigt de
 
 Du kan overføre dit kundeemne til kontantdata fra dataintegrator til dobbeltskrivning ved at følge disse trin.
 
-1. Kør jobsene for kundeemne til kontantdata fra dataintegrator for at udføre en sidste fuld synkronisering. På denne måde sikrer du, at begge systemer (Finans- og driftsapps og kundeengagementapps) har alle dataene.
+1. Kør jobsene for kundeemne til kontantdata fra dataintegrator for at udføre en sidste fuld synkronisering. På denne måde sikrer du, at begge systemer (program til finans og drift og kundeengagementapps) har alle dataene.
 2. Du kan hjælpe med at forhindre tab af potentielle data ved at eksportere kundeemne til kontantdata fra Microsoft Dynamics 365 Sales til en Excel-fil eller en kommasepareret fil (CSV). Eksportér data fra følgende enheder:
 
     - [Konto](#account-table)
@@ -47,25 +47,25 @@ Du kan overføre dit kundeemne til kontantdata fra dataintegrator til dobbeltskr
 
 3. Fjern kundeemne til kontantløsningen fra salgsmiljøet. Dette trin fjerner kolonnerne og de tilsvarende data, som kundeemne til kontantløsningen introducerede.
 4. Installér dobbeltskrivningsløsningen.
-5. Opret en dobbeltskrivningsforbindelse mellem Finans- og driftsappen og kundeengagementappen for én eller flere juridiske enheder.
+5. Opret en dobbeltskrivningsforbindelse mellem program til finans og drift og kundeengagementappen for én eller flere juridiske enheder.
 6. Aktivér dobbeltskrivningstabeltilknytninger, og kør den første synkronisering for de påkrævede referencedata. (Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md)). Eksempler på påkrævede data omfatter debitorgrupper, betalingsbetingelser og betalingsplaner. Aktivér ikke dobbeltskrivningstilknytningerne for tabeller, der kræver initialisering, som f.eks. konto-, tilbuds-, tilbudslinje-, ordre- og ordrelinjetabellerne.
 7. I kundeengagementappen skal du gå til **Avancerede indstillinger \> Systemindstillinger \> Dataadministration \> Regler for registrering af dubletter** og deaktivere alle reglerne.
 8. Initialiser de tabeller, der vises i trin 2. Yderligere oplysninger finder du i de resterende afsnit i denne artikel.
-9. Åbn Finans- og driftsappen, og aktivér tabeltilknytningerne som f.eks. konto-, tilbuds-, tilbudslinje-, ordre- og ordrelinjetabeltilknytninger. Kør derefter den første synkronisering. (Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md)). Denne proces synkroniserer flere oplysninger fra Finans- og driftsappen, f.eks. behandlingsstatus, forsendelses- og faktureringsadresser, websteder og lagersteder.
+9. Åbn program til finans og drift, og aktivér tabeltilknytningerne som f.eks. konto-, tilbuds-, tilbudslinje-, ordre- og ordrelinjetabeltilknytninger. Kør derefter den første synkronisering. (Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md)). Denne proces synkroniserer flere oplysninger fra programmet til finans og drift, f.eks. behandlingsstatus, forsendelses- og faktureringsadresser, websteder og lagersteder.
 
 ## <a name="account-table"></a>Kontotabel
 
 1. Angiv firmanavnet i kolonnen **Firma**, f.eks. **USMF**.
 2. I kolonnen **Relationstype** skal du angive **Debitor** som en statisk værdi. Det kan være en god ide at klassificere hver enkelt kontopost som en debitor i din forretningslogik.
-3. I kolonnen **Debitorgruppe-id** skal du angive debitorgruppenummeret fra Finans- og driftsappen. Standardværdien fra kundeemne til kontantløsningen er **10**.
-4. Hvis du bruger kundeemne til kontantløsningen uden tilpasning af **Kontonummer**, skal du angive en værdi for **Kontonummer** i kolonnen **Partnummer**. Hvis der er tilpasninger, og du ikke kender partnummeret, skal du hente disse oplysninger fra Finans- og driftsappen.
+3. I kolonnen **Debitorgruppe-id** skal du angive debitorgruppenummeret fra program til finans og drift. Standardværdien fra kundeemne til kontantløsningen er **10**.
+4. Hvis du bruger kundeemne til kontantløsningen uden tilpasning af **Kontonummer**, skal du angive en værdi for **Kontonummer** i kolonnen **Partnummer**. Hvis der er tilpasninger, og du ikke kender partnummeret, skal du hente disse oplysninger fra program til finans og drift.
 
 ## <a name="contact-table"></a>Tabellen Kontaktpersoner
 
 1. Angiv firmanavnet i kolonnen **Firma**, f.eks. **USMF**.
 2. Angiv følgende kolonner på baggrund af værdien **IsActiveCustomer** i CSV-filen:
 
-    - Hvis **IsActiveCustomer** er angivet til **Ja** i CSV-filen, skal du angive kolonnen **Salgbar** til **Ja**. I kolonnen **Debitorgruppe-id** skal du angive debitorgruppenummeret fra Finans- og driftsappen. Standardværdien fra kundeemne til kontantløsningen er **10**.
+    - Hvis **IsActiveCustomer** er angivet til **Ja** i CSV-filen, skal du angive kolonnen **Salgbar** til **Ja**. I kolonnen **Debitorgruppe-id** skal du angive debitorgruppenummeret fra program til finans og drift. Standardværdien fra kundeemne til kontantløsningen er **10**.
     - Hvis **IsActiveCustomer** er angivet til **Nej** i CSV-filen, skal du angive kolonnen **Salgbar** til **Nej** og angive kolonnen **Kontaktperson for** til **Debitor**.
 
 3. Hvis du bruger kundeemne til kontantløsningen uden tilpasning af **Kontaktnummer**, skal du angive følgende kolonner:
@@ -76,7 +76,7 @@ Du kan overføre dit kundeemne til kontantdata fra dataintegrator til dobbeltskr
 
 ## <a name="invoice-table"></a>Tabellen Faktura
 
-Da data fra tabellen **Faktura** er designet til at strømme én vej, fra Finans- og driftsappen til kundeengagementappen, er initialisering ikke nødvendig. Kør den første synkronisering for at overføre alle påkrævede data fra Finans- og driftsappen til kundeengagementappen. Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md).
+Da data fra tabellen **Faktura** er designet til at strømme én vej, fra program til finans og drift til kundeaftale-appen, er initialisering ikke nødvendig. Kør den første synkronisering for at overføre alle påkrævede data fra program til finans og drift til kundeaftale-appen. Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Ordretabel
 
@@ -94,7 +94,7 @@ Da data fra tabellen **Faktura** er designet til at strømme én vej, fra Finans
 
 ## <a name="products-table"></a>Tabellen Produkter
 
-Da data fra tabellen **Produkter** er designet til at strømme én vej, fra Finans- og driftsappen til kundeengagementappen, er initialisering ikke nødvendig. Kør den første synkronisering for at overføre alle påkrævede data fra Finans- og driftsappen til kundeengagementappen. Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md).
+Da data fra tabellen **Produkter** er designet til at strømme én vej, fra program til finans og drift til kundeaftale-appen, er initialisering ikke nødvendig. Kør den første synkronisering for at overføre alle påkrævede data fra program til finans og drift til kundeaftale-appen. Du kan finde flere oplysninger i [Overvejelser ved første synkronisering](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Tabellerne Tilbud og Tilbudsprodukter
 
@@ -102,3 +102,4 @@ For tabellen **Tilbud** skal du følge instruktionerne i afsnittet [Ordretabel](
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

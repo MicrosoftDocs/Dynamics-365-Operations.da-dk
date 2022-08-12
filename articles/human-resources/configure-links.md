@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859660"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065287"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Oprette link fra Human Resources til et andet Finance-miljø
 
@@ -53,7 +53,7 @@ Hvert link, du opretter, har følgende definerede oplysninger:
 
    Sådan finder du det påkrævede menupunkt:
    1. Gå til Finance-miljøet, og åbn den side, der er destinationen for navigationen. 
-   2. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i Finans og drift, skal du angive den værdi, der vises efter "&mi" i URL-adressen. 
+   2. Kopiér menupunktet fra URL-adressen. F.eks. hvis linket skal gå til listen over medarbejdere i finans og drift, skal du angive den værdi, der vises efter "&mi" i URL-adressen. 
    3. Menupunktet, der bruges til at navigere til listesiden over medarbejdere, er i dette eksempel: HcmWorkerListPage_Employees.
 
  - **Link til datakilde**: Vælg datakilden, som linket refererer til. De mest almindelige kilder som f.eks. **Arbejder** og **Stilling** er tilgængelige.
@@ -63,4 +63,5 @@ Hvert link, du opretter, har følgende definerede oplysninger:
 Systemadministratorer ser de nyoprettede links på de definerede sider, også selvom der i indstillingen **Aktivér dette link** er valgt **Nej**. Dette kan bruges til test af links, før de bliver gjort synlige for andre medarbejdere. Alle andre roller kan kun se de konfigurerede links, når der i indstillingen **Aktivér dette link** er valgt **Ja**. Medarbejdere, der har adgang til de sider, hvor linkene vises, har adgang til linksene.
 
 Brugere skal også have sikkerhedsrettigheder i det sekundære miljø defineret for at få adgang til siderne i det pågældende miljø. Hvis ikke, vises en sikkerhedsdialogboks, når linket bruges.
+
 

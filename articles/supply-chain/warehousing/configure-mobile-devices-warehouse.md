@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905567"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070343"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
@@ -123,13 +123,13 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 <td>Varemodtagelse i flytteordre</td>
 <td>Registrer modtagelsen af et antal af en vare, og opret læg på lager-arbejde for en anden arbejder.
 
-<strong>Bemærk!</strong> Brug denne indstilling, hvis varerne er leveret fra et lagersted, der ikke er aktiveret til lagerprocesser.</td>
+<strong>Bemærk!</strong> Brug denne indstilling, hvis varerne er leveret fra et lagersted, der ikke er aktiveret til lokationsstyringsprocesser (WMS).</td>
 </tr>
 <tr>
 <td>Modtagelse af vare i flytteordre og placering på lager</td>
 <td>Registrer modtagelsen af et antal af en vare, og læg varerne på lager. Den samme medarbejder udfører begge handlinger.
 
-<strong>Bemærk!</strong> Brug denne indstilling, hvis varerne er leveret fra et lagersted, der ikke er aktiveret til lagerprocesser.</td>
+<strong>Bemærk!</strong> Brug denne indstilling, hvis varerne er leveret fra et lagersted, der ikke er aktiveret til lokationsstyringsprocesser (WMS).</td>
 </tr>
 <tr>
 <td>Modtagelse af linje i flytteordre</td>

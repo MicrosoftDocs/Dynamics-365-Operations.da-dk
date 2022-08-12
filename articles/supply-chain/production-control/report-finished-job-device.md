@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857367"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070463"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Færdigmelde fra jobkortenheden
 
@@ -50,7 +50,7 @@ Du kan finde flere oplysninger om, hvordan du arbejder med siden **Produktionsor
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Færdigmelde batchstyrede varer
 
-Jobkortenheden understøtter tre scenarier til rapportering af batchvarer. Disse scenarier gælder både for varer, der er aktiveret til avancerede lagerprocesser, og for varer, der ikke er aktiveret til avancerede lagerprocesser.
+Jobkortenheden understøtter tre scenarier til rapportering af batchvarer. Disse scenarier gælder både for varer, der er aktiveret til lokationsstyringsprocesser (WMS), og for varer, der ikke er aktiveret til WMS.
 
 - **Manuelt tildelte batchnumre** - Arbejderne angiver et brugerdefineret batchnummer. Dette batchnummer kan komme fra en ekstern kilde, der ikke er kendt af systemet.
 - **Foruddefinerede batchnumre** - Arbejderne vælger et batchnummer på en liste over batchnumre, som systemet automatisk genererer, før produktionsordren frigives til jobkortenheden.
@@ -129,7 +129,7 @@ Når du bruger dette scenarie, viser feltet **Batchnummer**, som siden **Rapport
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Færdigmelde seriestyrede varer
 
-Jobkortenheden understøtter tre scenarier til rapportering af seriestyrede varer. Disse scenarier gælder både for varer, der er aktiveret til avancerede lagerprocesser, og for varer, der ikke er aktiveret til avancerede lagerprocesser.
+Jobkortenheden understøtter tre scenarier til rapportering af seriestyrede varer. Disse scenarier gælder både for varer, der er aktiveret til lokationsstyringsprocesser (WMS), og for varer, der ikke er aktiveret til WMS.
 
 - **Manuelt tildelte serienumre** - Arbejderne angiver et brugerdefineret serienummer. Dette serienummer kan komme fra en ekstern kilde, der ikke er kendt af systemet.
 - **Foruddefinerede serienumre** - Arbejderne vælger et serienummer på en liste over serienumre, som systemet automatisk genererer, før produktionsordren frigives til jobkortenheden.
@@ -212,7 +212,7 @@ Når du bruger dette scenarie, viser feltet **Serienummer**, som siden **Rapport
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Rapportere som færdig til en nummerplade
 
-Avancerede lagerprocesser kan bruge nummerpladedimensionen til at spore lager på lagersteder, der er konfigureret til dette formål. I dette tilfælde er nummeret på nummerpladen nødvendigt, når en arbejder rapporterer antal som færdige.
+Lokationsstyringsprocesser (WMS) kan bruge nummerpladedimensionen til at spore lager på lagersteder, der er konfigureret til dette formål. I dette tilfælde er nummeret på nummerpladen nødvendigt, når en arbejder rapporterer antal som færdige.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Aktivere nummerpladerapportering og labeludskrivning
 

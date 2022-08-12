@@ -1,5 +1,5 @@
 ---
-title: Konfigurere hjælp-oplevelsen for Finans- og driftsapps
+title: Konfigurere hjælp-oplevelsen for programmer til finans og drift
 description: Denne artikel giver oplysninger om komponenterne i Hjælp-system til nogle Microsoft Dynamics 365-apps.
 author: margoc
 ms.date: 08/11/2021
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900123"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123618"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for Finans- og driftsapps
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjælp-oplevelsen for programmer til finans og drift
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Denne artikel har en oversigt over komponenterne i Hjælp-systemet til programmer til finans og drift, f.eks. Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Denne artikel forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
+Denne artikel har en oversigt over komponenterne i Hjælp-systemet til programmer til finans og drift, f.eks. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Denne artikel forklarer også, hvordan disse komponenter tilknyttes, og indeholder en oversigt over den proces, der bruges til at oprette brugerdefineret hjælp.
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 
-Finans- og driftsapps indeholder konceptbaserede oversigter og andre emner, der er udgivet på [Microsoft Dynamics 365-dokumentationens](/dynamics365/) websted. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
+Programmer til finans og drift indeholder konceptbaserede oversigter og andre emner, der er udgivet på [Microsoft Dynamics 365-dokumentationens](/dynamics365/) websted. Du kan derefter få adgang til dette indhold fra ruden **Hjælp** i produktet. I følgende illustration vises delene i Hjælp-systemet.
 
 [![Hjælp-arkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -63,7 +63,7 @@ Hvis du vil konfigurere opgaveguides til en løsning, skal du følge disse trin 
 2. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 3. Angiv visningsrækkefølgen for BPM-bibliotekerne. Visningsrækkefølgen bestemmer den rækkefølge, som opgaveregistreringer fra bibliotekerne vises i på ruden **Hjælp**.
 
-Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og vælge fanen **Opgaveguider**. Nu kan du se de opgaveguider, der gælder for den aktuelle side i Finans og drift. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
+Når du har fuldført disse trin, kan du åbne ruden **Hjælp** og vælge fanen **Opgaveguider**. Nu kan du se de opgaveguider, der gælder for den aktuelle side i programmer til finans og drift. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen.
 
 ### <a name="showing-translated-task-guides"></a>Visning af oversatte opgaveguider
 
@@ -87,7 +87,7 @@ Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og
 
 ### <a name="connect-a-custom-help-site"></a>Oprette forbindelse til et brugerdefineret Hjælp-websted
 
-Finans- og driftsapps bruges sjældent i den form, de leveres i fra starten. Løsningen bliver i stedet tilpasset og udvidet, så den passer til organisationens behov. Du kan også tilpasse og udvide Hjælp-funktionerne. Du kan f.eks. føje brugerdefineret Hjælp til ruden **Hjælp** i produktet.
+Programmer til finans og drift bruges sjældent i den form, de leveres i fra starten. Løsningen bliver i stedet tilpasset og udvidet, så den passer til organisationens behov. Du kan også tilpasse og udvide Hjælp-funktionerne. Du kan f.eks. føje brugerdefineret Hjælp til ruden **Hjælp** i produktet.
 
 Microsoft har stiller en værktøjskasse til rådighed, der hjælper dig med at implementere og forbinde brugerdefineret hjælp til ruden **Hjælp**. Få flere oplysninger om, hvordan du kan konfigurere en brugerdefineret Hjælp-løsning, der er forbundet til ruden **Hjælp**, i [Oversigt over brugerdefineret hjælp](../../dev-itpro/help/custom-help-overview.md).
 
@@ -103,3 +103,4 @@ Hvis du vil samarbejde med Microsoft om værktøjer og processer til tilpasning 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

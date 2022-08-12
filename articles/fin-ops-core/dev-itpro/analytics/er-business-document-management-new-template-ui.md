@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 208cfc91f11d4893785538ce4874e85a5725e993
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892219"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109254"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office-brugergrænsefladestil for nyt dokument i styring af forretningsdokumenter
 
@@ -36,7 +36,7 @@ I eksemplerne i denne artikel er den aktive udbyder Contoso, og du kan bruge den
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-Videoen [Oprette et nyt forretningsdokument ved hjælp af Styring af forretningsdokumenter](https://youtu.be/gAIYl-mM_pw) (vist ovenfor) er medtaget i den [Finans- og driftsafspilningsliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
+Videoen [Oprette et nyt forretningsdokument ved hjælp af Styring af forretningsdokumenter](https://youtu.be/gAIYl-mM_pw) (vist ovenfor) er medtaget i afspilningslisten [finans og drift](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), der er tilgængelig på YouTube.
 
 ## <a name="make-the-new-document-ui-in-business-document-management-available"></a>Gøre den nye brugergrænseflade i dokumenter i Styring af forretningsdokumenter tilgængeligt
 
@@ -145,3 +145,4 @@ Dette eksempel viser, hvordan du kan bruge knappen **Nyt dokument** i arbejdsomr
 7. Vælg **OK** for at bekræfte starten af redigeringsprocessen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

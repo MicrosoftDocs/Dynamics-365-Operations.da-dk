@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722235"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178436"
 ---
 # <a name="update-process"></a>Opdater proces
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Anvendes på:** Human Resources i enkeltstående infrastruktur_ 
 
+> [!NOTE]
+> Fra og med juli 2022 kan der ikke klargøres nye personalemiljøer på den enkeltstående infrastruktur for Personale, og der kan ikke oprettes nye Microsoft Dynamics Lifecycle Services-projekter (LCS) på den. Kunder kan udrulle Personale-miljøer på infrastrukturen i program til finans og drift. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> Opdaterings- og hotfixprocessen i infrastrukturen i finans- og operationsappen er forskellig fra den enkeltstående Personale-opdaterings- og hotfixproces. Du kan finde flere oplysninger om opdateringsprocessen i [Proces for overførsel til den seneste opdatering af finans og drift](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Du kan finde flere oplysninger om hotfixes i [Download opdateringer fra Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS), der tilbyder kontinuerlige serviceopdateringer uden manuel indgriben. Disse opdateringer indeholder både program- og platformsændringer, der ofte giver vigtige forbedringer af tjenesten, herunder lovpligtige opdateringer.
 
@@ -37,9 +41,7 @@ Opdateringer udgives regelmæssigt til alle miljøer. Human Resources understøt
 
 Human Resources-opdateringer anvendes automatisk til alle miljøer. Der frigives to typer versioner af Human Resources:
 
-- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan finde flere oplysninger om platformsfrigivelser i [Nyheder eller ændringer i platformsopdateringer](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om opdateringer hver anden uge i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
-
-    Alle understøttede datacentre opdateres hver anden uge, medmindre andet er angivet. Områderne USA, Australien, Europa, Storbritannien, Asien og Canada medtages i opdateringer hver anden uge. 
+- **Serviceopdateringer**: Opdateringer foretages hver anden uge og omfatter fejlrettelser og nye funktioner. Serviceopdateringer omfatter også relevante platformsopdateringer, når de frigives. Du kan finde flere oplysninger om platformsfrigivelser i [Nyheder eller ændringer i platformsopdateringer](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Opdateringer hver anden uge sker i en midlertidigt global udrulning på tværs af områder. Du kan finde flere oplysninger om ugentlige opdateringer i [Nyheder eller ændringer i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Dataverse-løsningsopdateringer**: Disse opdateringer forekommer ca. hver 6. uge efter behov. De omfatter nye enheder og ændringer af eksisterende objekter i Dataverse. Disse opdateringer frigives til samme regioner som de opdateringer hver anden uge, og de tager ca. seks uger at replikere gennem alle datacentre. Løsningsopdateringer kan muligvis blive justeret efter serviceopdateringer hver anden uge.
 
@@ -83,11 +85,11 @@ Du kan finde ud af, hvad der planlægges for Human Resources, og hvad vi har udg
 
 Du kan validere funktioner i prøveversioner i et sandkassemiljø, før du aktiverer dem i produktionsmiljøet. Du kan finde flere oplysninger om aktivering af nye funktioner under [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Alle nye funktioner vises i forhåndsvisning i mindst 30 dage og typisk 30-60 dage. De vigtigste funktioner er normalt tilgængelige i oktober og april hvert år efter forhåndsvisningsperioden. Så snart du ser nye egenskaber i arbejdsområdet Administration af funktioner, kan du slå dem til. Nogle funktioner er muligvis som slået til som standard.
+Alle nye funktioner vises i forhåndsvisning i mindst 30 dage og typisk 30-60 dage. De vigtigste funktioner er normalt tilgængelige i oktober og april hvert år efter forhåndsvisningsperioden. Så snart du ser nye egenskaber i arbejdsområdet **Administration af funktioner**, kan du slå dem til. Nogle funktioner er muligvis som slået til som standard.
 
 På visse tidspunkter er en integreret funktion som standard slået til og kan ikke slås fra (f.eks. arbejdsområdet Administration af funktioner).
 
-Når en funktion er generelt tilgængelig, kan den slås til eller fra i produktionsmiljøer. Arbejdsområdet Administration af funktioner angiver, hvornår en visningsfunktion skal være obligatorisk. Denne dato er som regel den 1. oktober eller 1. april for at tilpasse det med de halvårlige frigivelsesplaner. Du kan ikke slå de obligatoriske funktioner fra. Indtil den bliver obligatorisk, kan du slå en funktion til og fra i alle miljøer.
+Når en funktion er generelt tilgængelig, kan den slås til eller fra i produktionsmiljøer. Arbejdsområdet **Administration af funktioner** angiver, hvornår en visningsfunktion skal være obligatorisk. Denne dato er som regel den 1. oktober eller 1. april for at tilpasse det med de halvårlige frigivelsesplaner. Du kan ikke slå de obligatoriske funktioner fra. Indtil den bliver obligatorisk, kan du slå en funktion til og fra i alle miljøer.
 
 Vi anbefaler, at du får vist funktioner i prøveversioner i et sandkassemiljø. Det er bedst at oprette en kopi af dit aktuelle produktionsmiljø eller database i et sandkassemiljø, så du kan få den fulde erfaring med de nye funktioner sammen med dine data.
 

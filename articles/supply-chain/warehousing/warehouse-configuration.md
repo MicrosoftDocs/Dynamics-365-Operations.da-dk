@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982993"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065176"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversigt over konfiguration af lagersted
 
@@ -31,10 +31,10 @@ ms.locfileid: "7982993"
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 
 > [!NOTE]
-> Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
+> Denne artikel gælder for funktioner i modulet **Lagerstedsstyring**. Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
-Lokationsstyringssystemet i Supply Chain Management giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
+Lokationsstyringssystemet (WMS) i Supply Chain Management giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
 
 -   Du kan oprette opbevaringssteder med høj prioritet og lav prioritet til optimal placering af varer.
 -   Du kan opdele lageret i områder, der passer til forskellige opbevaringsbehov, som temperaturkrav eller forskellige omsætningssatser for varer.
@@ -42,7 +42,7 @@ Lokationsstyringssystemet i Supply Chain Management giver dig fleksible mulighed
 -   Du kan gruppere lokationer ved hjælp af indstillingerne for begrænsning af fysisk kapacitet.
 -   Du kan styre, hvordan varer opbevares og plukkes, baseret på regler, der er defineret af forespørgslen.
 
-Hvis du vil bruge styring af lagersted i Supply Chain Management, skal du oprette et lagersted og aktivere det til styring af mere avancerede eller specialiserede lageraktiviteter. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
+Hvis du vil bruge WMS i Supply Chain Management, skal du oprette et lagersted og aktivere det for WMS. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonegrupper, zoner, lokationstyper og lokationer
 

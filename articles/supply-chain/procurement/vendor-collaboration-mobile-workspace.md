@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 75c044d1133e1c4765cd97f4ab7e2a08ba998c35
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851646"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112144"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
@@ -28,7 +28,7 @@ ms.locfileid: "8851646"
 
 Denne artikel indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 
-Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen Finans og drift (Dynamics 365).
+Dette mobile arbejdsområde er beregnet til brug sammen med mobilappen finans og drift (Dynamics 365).
 
 ## <a name="overview"></a>Overblik 
 Mobilarbejdsområdet **Kreditorsamarbejde** holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og derefter reagere på dem i webklienten. 
@@ -110,7 +110,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Finans- og drifts-mobilappen (Dynamics 365):
+Download og installer mobilappen finans og drift (Dynamics 365):
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -171,3 +171,4 @@ Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for køb
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

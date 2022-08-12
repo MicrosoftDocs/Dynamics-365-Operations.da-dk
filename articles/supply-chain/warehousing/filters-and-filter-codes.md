@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850432"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067522"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre til lagerstedstransaktioner
 
@@ -95,7 +95,7 @@ Hvis du vil konfigurere filterkoder på varegrupper, skal du følge disse trin.
     Hvis f.eks. **Brug filterkode 1** og **Brug filterkode 2** er markeret, skal både filterkode 1 og filterkode 2 for varen svare til opsætningen af filtergruppen for varegruppen, før filtergruppen kan vælges. Når du opretter en ny vare, er den valgte filtergruppe standardfiltergruppen i felterne **Gruppe 1** og **Gruppe 2** i oversigtspanelet **Lagersted** på siden **Oplysninger om frigivne produkter**.
 
 > [!IMPORTANT]
-> Produktfilterkoder er kun aktiveret for varer, der bruger avanceret lokationsstyring.
+> Produktfilterkoder er kun aktiveret for varer, der bruger avanceret lokationsstyringsprocesser (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Angive filterkoder for frigivne produkter
 
@@ -158,7 +158,7 @@ Benyt følgende fremgangsmåde for at konfigurere kreditorfilterkoder.
 1. Vælg de filterkoder, der skal bruges som kriterier, i felterne **Kode 1** til og med **Kode 10**, for at begrænse de varer, der er tilgængelige for leverandører i den valgte varegruppe. Du skal angive et valg for hver filterkode, der er konfigureret for varegruppen.
 
 > [!NOTE]
-> Opsætningen af kreditorproduktfiltre gælder for frigivne produkter, hvor processer til lokationsstyring er aktiveret for den tilknyttede lagringsdimensionsgruppe. Filterkoderne bruges til at bestemme, om systemet tillader brugere at købe en bestemt vare hos en bestemt leverandør, når de opretter indkøbsordrelinjer. Microsoft Dynamics 365 Supply Chain Management har to metoder til håndtering af kreditorgodkendelse. Hvis der findes en eller flere frigivne produkter, hvor feltet **Godkendt kontrolmetode for kreditorer** er angivet til *Kun advarsel* eller *Ikke tilladt*, kan begge metoder til kreditorgodkendelse være aktiveret for disse varer. Denne situation kan forårsage problemer, når brugerne opretter indkøbsordrelinjer.
+> Opsætningen af kreditorproduktfiltre gælder for frigivne produkter, hvor processer til lokationsstyring (WMS) er aktiveret for den tilknyttede lagringsdimensionsgruppe. Filterkoderne bruges til at bestemme, om systemet tillader brugere at købe en bestemt vare hos en bestemt leverandør, når de opretter indkøbsordrelinjer. Microsoft Dynamics 365 Supply Chain Management har to metoder til håndtering af kreditorgodkendelse. Hvis der findes en eller flere frigivne produkter, hvor feltet **Godkendt kontrolmetode for kreditorer** er angivet til *Kun advarsel* eller *Ikke tilladt*, kan begge metoder til kreditorgodkendelse være aktiveret for disse varer. Denne situation kan forårsage problemer, når brugerne opretter indkøbsordrelinjer.
 
 ## <a name="see-also"></a>Se også
 

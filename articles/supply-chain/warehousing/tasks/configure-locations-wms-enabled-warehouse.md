@@ -1,6 +1,6 @@
 ---
 title: Konfigurere lokationer på et WMS-aktiveret lagersted
-description: Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser).
+description: Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lokationsstyringsprocesser (WMS)).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067267"
 ---
-# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokationer på et WMS-aktiveret lagersted
+# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere placeringer på et WMS-aktiveret lagersted
 
 [!include [banner](../../includes/banner.md)]
 
-Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser). Processen udføres typisk af en lagerchef. Du kan køre denne guide i demofirmaet USMF eller på dine egne data. En forudsætning er, at du har konfigureret mindst ét websted.
+Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lokationsstyringsprocesser (WMS)). Processen udføres typisk af en lagerchef. Du kan køre denne guide i demofirmaet USMF eller på dine egne data. En forudsætning er, at du har konfigureret mindst ét websted.
 
 
 ## <a name="create-a-new-warehouse"></a>Opret et nyt lagersted
@@ -35,7 +35,7 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 4. Skriv en værdi i feltet **Navn**.
 5. Vælg eller angiv en eksisterende lokationsværdi i feltet **Websted**.
 6. Udvid afsnittet **Lagersted**.
-7. Angiv indstillingen **Brug lagerstedsstyringsprocesser** til Ja. Denne indstilling giver dig mulighed at køre avancerede lagerprocesser ved hjælp af lagerstedsarbejde og mobilenheder.
+7. Angiv indstillingen **Brug lagerstedsstyringsprocesser** til Ja. Denne indstilling giver dig mulighed at køre lokationsstyringsprocesser (WMS) ved hjælp af lagerstedsarbejde og mobilenheder.
 8. Luk siden.
 
 ## <a name="define-a-location-format"></a>Definere et lokalitetsformat
@@ -68,7 +68,7 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 5. Luk siden.
 
 ## <a name="define-location-profile"></a>Definere lokalitetsprofil
-1. Gå til **Navigationsrude > Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsprofiler**. Definitionen af lokationsprofiler er meget vigtigt. Grupperede lokaliteters kapacitet kan styres her, og de politikker, der er relateret til, hvilket lager der gemmes, og hvordan det gemmes. Lokationprofiler kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser. Som minimum skal du oprette en brugerlokationsprofil for at aktivere lagerstedsstyringsprocesser.
+1. Gå til **Navigationsrude > Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsprofiler**. Definitionen af lokationsprofiler er meget vigtigt. Grupperede lokaliteters kapacitet kan styres her, og de politikker, der er relateret til, hvilket lager der gemmes, og hvordan det gemmes. Lokationprofiler kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser. Som minimum skal du oprette en brugerlokationsprofil for at aktivere WMS.
 2. Klik på **Ny**.
 3. Skriv en værdi i feltet **Id for lokationsprofil**.
 4. Skriv en værdi i feltet **Navn**.

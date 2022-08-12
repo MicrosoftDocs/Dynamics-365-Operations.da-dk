@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879798"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111964"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfiguration af dobbeltskrivning fra Lifecycle Services
 
@@ -28,8 +28,8 @@ Denne artikel beskriver, hvordan du aktiverer dobbeltskrivning fra Microsoft Dyn
 
 Kunder skal fuldføre Power Platform-integrationen som beskrevet i følgende emner:
 
-- Hvis du endnu ikke bruger Microsoft Power Platform og vil udvide Finans og drift-miljøer ved at tilføje platformegenskaber, skal du se [Power Platform-integration – Aktivér under installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Hvis du allerede har Dataverse- og Power Platform-miljøer, og du vil oprette forbindelse mellem dem i finans- og driftsmiljøer, skal du se [Power Platform-integration – Aktivere efter installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Hvis du endnu ikke bruger Microsoft Power Platform og vil udvide finans og drift-miljøer ved at tilføje platformegenskaber, skal du se [Power Platform-integration – Aktivér under installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Hvis du allerede har Dataverse- og Power Platform-miljøer, og du vil oprette forbindelse mellem dem i finans og drift-miljøer, skal du se [Power Platform-integration – Aktivere efter installation af miljøet](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Konfigurere dobbeltskrivning for nye eller eksisterende Dataverse-miljøer
 
@@ -53,7 +53,7 @@ Følg disse trin for at konfigurere dobbeltskrivning fra LCS-siden **Miljøoplys
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link til Power Platform-miljø.":::
 
-8. Når sammenkædningen er fuldført, vises der et link. Brug linket til at logge på administrationsområdet med dobbeltskrivning i Finans- og driftsmiljøet. Herfra kan du oprette objekttilknytninger.
+8. Når sammenkædningen er fuldført, vises der et link. Brug linket til at logge på administrationsområdet med dobbeltskrivning i finans og drift-miljøet. Herfra kan du oprette objekttilknytninger.
 
 ## <a name="linking-mismatch"></a>Uoverensstemmende sammenkædning
 
@@ -71,3 +71,4 @@ Hvis du modtager denne advarsel, kan du prøve en af følgende løsninger:
 Tidligere var en manuel supportanmodning tilgængelig, men det var før mulighed 1 ovenfor eksisterede.  Microsoft understøtter ikke længere manuelle sammenkædningsanmodninger via supportanmodninger.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

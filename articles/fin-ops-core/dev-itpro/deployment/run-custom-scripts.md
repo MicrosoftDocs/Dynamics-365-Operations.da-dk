@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867323"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103514"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Køre brugerdefinerede X++ scripts med nul nedetid
 
@@ -120,7 +120,7 @@ Følgende liste indeholder en beskrivelse af nogle af de bedste fremgangsmåder 
 
 Brug følgende procedure til at uploade og køre et script.
 
-1. I din Finans- og driftsapp skal du gå til **Systemadministration \> Periodiske opgaver \> Database \> Brugerdefinerede scripts**.
+1. I programmet til finans og drift skal du gå til **Systemadministration \> Periodiske opgaver \> Database \> Brugerdefinerede scripts**.
 1. Vælg **Overfør**.
 1. Vælg den pakke, der kan installeres, og som er oprettet som beskrevet tidligere i denne artikel. Du bliver bedt om at angive formålet med scriptet.
 1. Scriptet skal nu godkendes af en anden bruger end den bruger, der har uploadet det. Godkenderen skal følge disse trin:
@@ -149,6 +149,7 @@ Dit valg i det sidste trin definerer scriptets sluttilstand. Du kan gentage proc
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Uploade og køre en pakke, der kan installeres, via LCS
 
-I stedet for at implementere den pakke, der kan installeres, via brugergrænsefladen i din Finans- og driftsapp, som det beskrives i forrige afsnit, kan du uploade den til LCS og bruge den almindelige procedure til at udrulle den. Yderligere oplysninger finder du i [Installere installerbare pakker fra kommandolinjen](../deployment/install-deployable-package.md).
+I stedet for at implementere den pakke, der kan installeres, via brugergrænsefladen i programmet til finans og drift, som det beskrives i forrige afsnit, kan du uploade den til LCS og bruge den almindelige procedure til at udrulle den. Yderligere oplysninger finder du i [Installere installerbare pakker fra kommandolinjen](../deployment/install-deployable-package.md).
 
 Selvom der er færre begrænsninger i denne tilgang, giver den mindre fejlbeskyttelse. Da den kræver genstart af alle servere, medfører det desuden en vis nedetid.
+

@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013549"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177142"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gang med Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Med Global Inventory Accounting kan du udføre flere lagerregnskaber i de Global Inventory Accounting-finansposter, som du har oprettet. Du skal knytte hver Global Inventory Accounting-finanspost til et *princip*. En konvention er en samling af følgende typer regnskabspolitikker:
 
@@ -69,9 +67,14 @@ Før du kan aktivere tilføjelsesprogrammets funktioner, skal du integrere det m
 
 Du kan finde flere oplysninger i [Aktivere efter installation af miljøet](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Installer tilføjelsesprogrammet
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Installere eller opdatere tilføjelsesprogrammet og løsningen
 
-Benyt følgende fremgangsmåde for at installere tilføjelsesprogrammet, så du kan bruge Global Inventory Accounting.
+Du kan bruge følgende procedure til at installere eller opdatere tilføjelsesprogrammet og løsningen til Global Lagerregnskab. Den del af proceduren, du skal følge, afhænger af, om du installerer første gang, eller om du kun skal opdatere løsningen til en eksisterende installation.
+
+- Hvis du aldrig har installeret tilføjelsesprogrammet før, skal du følge den fulde procedure for at installere både tilføjelsesprogrammet og løsningen.
+- Hvis du allerede bruger Global Inventory Accounting, men har brug for at opdatere løsningen i [Power Platform Administration](https://admin.powerplatform.microsoft.com), skal du kun udføre trin 6 og springe alle de andre trin over.
+
+Installere eller opdatere tilføjelsesprogrammet og løsningen:
 
 1. Log på [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Åbn det LCS-miljø, hvor du vil tilføje tjenesten.
@@ -79,18 +82,19 @@ Benyt følgende fremgangsmåde for at installere tilføjelsesprogrammet, så du 
 1. Gå til **Power Platform-integration**, og vælg **Opsætning**.
 1. I dialogboksen **Opsætning af Power Platform-miljø** skal du markere afkrydsningsfeltet og derefter vælge **Opsætning**. Det tager normalt mellem 60 og 90 minutter at udføre konfigurationen.
 1. Når miljøopsætningen af Microsoft Power Platform er fuldført, skal du logge på [Power Platform-administrationen](https://admin.powerplatform.microsoft.com) og derefter installere tilføjelsesprogrammet Globalt lagerregnskab ved at følge disse trin:
-   1. Vælg det miljø, hvor du vil installere tilføjelsesprogrammet.
+   1. Vælg det miljø, hvor du vil installere eller opdatere løsningen.
    1. Vælg **Dynamics 365-apps**.
    1. Vælg **Installer app**.
    1. Vælg **Globalt lagerregnskab til Dynamics 365**.
    1. Vælg **Næste** for at installere.
-1. Gå tilbage til LCS-miljøet. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
+1. Når løsningen er helt installeret, skal du gå tilbage til LCS-miljøet. Vælg **Installér et nyt tilføjelsesprogram** i oversigtspanelet **Tilføjelsesprogrammer for miljø**.
 1. Vælg **Globalt lagerregnskab**.
 1. Følg installationsvejledningen, og accepter vilkårene og betingelserne.
 1. Vælg **Installer**.
 1. I oversigtspanelet **Miljøtilføjelsesprogrammer** kan du se, at Global Inventory Accounting er ved at blive installeret. Efter nogle få minutter skal status ændres fra *Installerer* til *Installeret*. (Du skal muligvis opdatere siden for at se ændringen). På dette tidspunkt er Global Inventory Accounting klar til brug.
 
 Hvis standardsproget for installationen af Dataverse ikke er engelsk, skal du følge disse trin:
+
 1. Gå til **Avancerede indstillinger \> Administration \> Sprog**.
 1. Vælg *Engelsk* (*LanguageCode=1033*), og vælg derefter **Anvend**.
 

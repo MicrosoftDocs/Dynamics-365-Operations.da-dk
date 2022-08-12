@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869251"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109574"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -66,7 +66,7 @@ ER understøtter i øjeblikket TEXT, XML, JSON, PDF, Microsoft Word, Microsoft E
 
 ER-programmet har følgende funktioner:
 
-- Det repræsenterer et enkelt fælles værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i Finans og drift.
+- Det repræsenterer et enkelt fælles værktøj til elektronisk indberetning i forskellige domæner og erstatter mere end 20 forskellige programmer, der foretager en eller anden form for elektronisk rapportering i finans og drift.
 - Det isolerer en rapports format fra den aktuelle implementering. Med andre ord kan formatet anvendes i forskellige versioner.
 - Det understøtter oprettelse af et brugerdefineret format, der er baseret på et oprindeligt format. Det indeholder også funktioner til automatisk at opgradere det tilpassede format, når det oprindelige format ændres pga. lokaliserings-/tilpasningskrav.
 - Det bliver det primære standardværktøj til understøttelse af lokaliseringskrav i forbindelse med elektronisk rapportering, for både Microsoft og MS-partnere.
@@ -126,7 +126,7 @@ En ER-konfiguration deles for firmaer i programmet.
 
 #### <a name="provider"></a><a name="Provider"></a>Udbyder
 
-ER-udbyderen er den partsidentifikator, der bruges til at angive forfatteren (ejeren) af hver ER-konfiguration. Med ER kan du administrere listen over udbydere af konfigurationen. Formatkonfigurationer, der frigives for elektroniske dokumenter som del af Finans og drift-løsningen, markeres som ejet af **Microsoft**-konfigurationsudbyderen.
+ER-udbyderen er den partsidentifikator, der bruges til at angive forfatteren (ejeren) af hver ER-konfiguration. Med ER kan du administrere listen over udbydere af konfigurationen. Formatkonfigurationer, der frigives for elektroniske dokumenter som del af finans og drift-løsningen, markeres som ejet af **Microsoft**-konfigurationsudbyderen.
 
 Du kan få oplysninger om, hvordan du registrerer en ny ER-udbyder, ved at afspille opgaveguiden **Oprette en ER-konfigurationsudbyder og markere den som aktiv** (en del af forretningsprocessen **7.5.4.3 Anskaf/udarbejd komponenter til it-ydelser og -løsninger (10677)**).
 
@@ -143,7 +143,7 @@ Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understø
 
 Et **Delt LCS-bibliotek**-lager giver adgang til listen med konfigurationer i biblioteket for delte aktiver i Lifecycle Services (LCS). Denne type ER-lager kan alene registreres for Microsoft-udbydere. Fra LCS-biblioteket for delte aktiver kan du importere de seneste versioner af ER-konfigurationer til den aktuelle forekomst.
 
-Et **LCS-projektlager** giver adgang til listen over konfigurationer af et bestemt LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt, da lageret blev registreret. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle forekomst af dine Finans- og driftsapps.
+Et **LCS-projektlager** giver adgang til listen over konfigurationer af et bestemt LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt, da lageret blev registreret. Med ER kan du overføre delte konfigurationer fra den aktuelle forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle forekomst af dine programmer til finans og drift.
 
 Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle forekomst. 
 
@@ -270,3 +270,4 @@ Listen over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

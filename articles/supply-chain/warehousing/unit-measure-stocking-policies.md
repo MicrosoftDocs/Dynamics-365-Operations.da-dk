@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714830"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069116"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Måleenhed og lagerføringspolitikker
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714830"
 
 I denne artikel beskrives det, hvordan standardenheder, enhedssekvenser og enhedsomregninger bruges i lagerprocesser.
 
-Enhedsseriegrupperne definerer rækkefølgen af de enheder, der kan bruges i lageraktiviteter. De oprettes på siden **Enhedsseriegrupper**. Serien viser forholdet mellem de forskellige enheder. Du kan f.eks. gemme paller, der indeholder kasser, der indeholder de enkelte varer. I dette tilfælde skal du angive de tre forskellige enheder og den logiske rækkefølge af lagene. Med enhedsseriegrupper kan du definere politikker for gruppering af nummerplader og de standardenheder, der skal bruges til forskellige lagerprocesser. Denne artikel gælder for både den avancerede lagerstedsløsning, der er tilgængelige i Lagerstedsstyring og den mere grundlæggende lagerstedsløsning, der findes i Lagerstyring.
+Enhedsseriegrupperne definerer rækkefølgen af de enheder, der kan bruges i lageraktiviteter. De oprettes på siden **Enhedsseriegrupper**. Serien viser forholdet mellem de forskellige enheder. Du kan f.eks. gemme paller, der indeholder kasser, der indeholder de enkelte varer. I dette tilfælde skal du angive de tre forskellige enheder og den logiske rækkefølge af lagene. Med enhedsseriegrupper kan du definere politikker for gruppering af nummerplader og de standardenheder, der skal bruges til forskellige lagerprocesser. Denne artikel gælder for både den lokationsstyringsprocesser (WMS), der er tilgængelige i Lagerstedsstyring og den mere grundlæggende lagerstedsløsning, der findes i lagerstyringsmodul.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Enhedsseriegrupper for frigivne produkter
 Hvis du vil bruge frigivne produkter i processer for lagerstedsarbejde, skal en enhedsseriegruppe tildeles til dem. Hvis du validerer et produkt, der er knyttet til en lagringsdimensionsgruppe, og indstillingen **Brug lokationsstyringsprocesser** for lagerdimensionsgruppen er angivet til **Ja**, modtager du en fejlmeddelelse, hvis der ikke er defineret et enhedsseriegruppe-id for produktet. Hvis den enhedsseriegruppe, som du bruger, indeholder flere linjer (og derfor flere enheder), skal du angive en enhedsomregning mellem enhederne. Du fuldfører konfigurationen på siden **Enhedsomregninger**. Den mindste enhed i en seriegruppe, du knytter til et frigivet produkt, skal svare til den lagerenhed, der er defineret for det tilsvarende produkt. Lagerenheden er den enhed, der bruges til grundlæggende beregninger af den disponible lagerbeholdning. Du kan også oprette konvertering af måleenheder for produktvarianter for produktmastere ved hjælp af indstillingen **Aktivér konverteringer af måleenheder**.

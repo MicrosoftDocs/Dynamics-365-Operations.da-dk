@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898363"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124188"
 ---
 # <a name="help-system"></a>Hjælp-system
 
@@ -53,7 +53,7 @@ Du kan finde indhold på docs.microsoft.com ved hjælp af en søgemaskine. For a
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få besked om ændringer via et RSS-feed
 
-Hvis du vil abonnere på et RSS-feed af alle opdateringer, der er foretaget til indholdet på docs.microsoft.com på tværs af Finans- og driftsapps, skal du bruge følgende link:
+Hvis du vil abonnere på et RSS-feed af alle opdateringer, der er foretaget til indholdet på docs.microsoft.com på tværs af programmer til finans og drift, skal du bruge følgende link:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ Få flere oplysninger i [Docs-bidragyderguide](/contribute), der udgives af det 
 
 En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden **Hjælp**. Når du først vælger på en opgaveguide, viser ruden **Hjælp** de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider.
 
-Microsoft udgav opgaveguidebiblioteker til til produktversioner via december 2017-udgaven af Dynamics 365 for Finance and Operations. Afsnittet [Adgang til opgaveguider fra ruden Hjælp](#accessing-task-guides-from-the-help-pane) i denne artikel forklarer, hvordan du finder de rigtige opgaveguider til dit produkt.
+Microsoft udgav opgaveguidebiblioteker til til produktversioner via december 2017-udgaven af Dynamics 365 Finance and Operations. Afsnittet [Adgang til opgaveguider fra ruden Hjælp](#accessing-task-guides-from-the-help-pane) i denne artikel forklarer, hvordan du finder de rigtige opgaveguider til dit produkt.
 
 ![Opgaveguidens læsevisning.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

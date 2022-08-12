@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3916e70e4c9e3bc4ceae3a82e58bc4b0697ddb9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7fd1cf208b9bae86bf25b19f4652890c15a617c9
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888666"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124981"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 
@@ -53,9 +53,9 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.13 af Finans- og driftsapps (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.13 af programmer til finans og drift (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 

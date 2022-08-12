@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 53f1670454ef505e61e96b16990d913473b46bf4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849497"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124784"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.22. november 2021)
 
@@ -58,9 +58,9 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.22 af Finans- og driftsapps (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.22 af programmer til finans og drift (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 
@@ -84,3 +84,4 @@ Før en funktion fjernes fra produktet, vil du få besked om udfasning i artikle
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

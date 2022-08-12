@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713270"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123976"
 ---
 # <a name="before-you-buy"></a>Før du køber
 
@@ -26,13 +26,13 @@ ms.locfileid: "8713270"
 
 Kender du ikke Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce? Vi har sammensat en trinvis vejledning, som du kan bruge, uanset om du stadig overvejer eller er klar til at købe.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Afprøv Finance and Operations gratis i 30 dage
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Afprøv finans og drift gratis i 30 dage
 
-Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af Programmer til finans og drift indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Se detaljer under [Tilmelde dig prøveabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Du kan afprøve Dynamics 365 for Finance and Operations, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dage via en enkel mailtilmelding. Prøveversionen af programmer til finans og drift indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Se detaljer under [Tilmelde dig prøveabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 
-Du kan nu implementere Programmer til finans og drift i skyen eller lokalt. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
+Du kan nu implementere programmer til finans og drift i skyen eller lokalt. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
 
 Der skal tages følgende overvejelser, når du vælger lokalt som installationsmulighed:
 
@@ -62,13 +62,13 @@ Du kan samarbejde med en Microsoft Cloud Solution Provider for at forstå behove
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Køb via en Dynamics-partner (lokal installation)
 
-Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger under [Køb Finance + Operations (lokalt)](purchase-on-premises.md).
+Du skal arbejde med en partner for at købe Finance + Operations (on-premises). Du kan finde flere oplysninger under [Køb Finance + Operations (lokalt)](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Køb via volumenlicensering (installation i skyen eller lokalt)
 
 Hvis organisationen har 250 eller flere brugere af Dynamics 365, vil du muligvis være interesseret i en [Volumenlicensaftale](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-I Volumenlicensering er Programmer til finans og drift tilgængelig via:
+I volumenlicensering er programmer til finans og drift tilgængelig via:
 
 - Enterprise-aftale
 - Abonnement på Enterprise Agreement
@@ -94,3 +94,4 @@ Hvis du som kunde opgraderer fra Microsoft Dynamics AX 2012 eller overfører fra
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900500"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065113"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Job til oprydning i disponible poster til lokationsstyring
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900500"
 
 Ydeevnen af forespørgsler, der bruges til at beregne den disponible lagerbeholdning, påvirkes af antallet af poster i de tabeller, der er involveret. Én måde at forbedre ydeevnen på er at reducere antallet af poster, som databasen skal overveje.
 
-Denne artikel beskriver jobbet til oprydning i disponible poster, som sletter unødvendige poster i tabellerne InventSum og WHSInventReserve. Disse tabeller bruges til opbevaring af beholdningsoplysninger for varer, der er aktiveret til behandling i lokationstyring. (Disse varer kaldes WHS-varer). Sletning af disse poster kan forbedre ydeevnen for beregninger af den disponible lagerbeholdning betydeligt.
+Denne artikel beskriver jobbet til oprydning i disponible poster, som sletter unødvendige poster i tabellerne `InventSum` og `WHSInventReserve`. Disse tabeller bruges til opbevaring af beholdningsoplysninger for varer, der er aktiveret til behandling i lokationstyring. (Disse varer kaldes WMS-varer). Sletning af disse poster kan forbedre ydeevnen for beregninger af den disponible lagerbeholdning betydeligt.
 
 ## <a name="what-the-cleanup-job-does"></a>Dette gør oprydningsjobbet
 
-Jobbet til opryding i disponible poster sletter eventuelle poster i tabellen WHSInventReserve og InventSum, hvor alle feltværdier er *0* (nul). Disse poster kan slettes, fordi de ikke bidrager til oplysninger om den disponible lagerbeholdning. Jobbet sletter kun poster, der er under **Lokations**-niveauet.
+Jobbet til oprydning i disponible poster sletter eventuelle poster i tabellen `WHSInventReserve` og `InventSum`, hvor alle feltværdier er *0* (nul). Disse poster kan slettes, fordi de ikke bidrager til oplysninger om den disponible lagerbeholdning. Jobbet sletter kun poster, der er under **Lokations**-niveauet.
 
 Hvis negativt fysisk lager er tilladt, kan oprydningsjobbet måske ikke slette alle de relevante poster. Grunden til denne begrænsning er, at jobbet skal tillade et særligt scenarie, hvor en nummerplade har flere serienumre, og et af disse serienumre er blevet negative. For eksempel vil systemet blive sat til nul disponibel på nummerpladeniveau, når en nummerplade har +1 stk. af serienummer 1 og -1 stk. af serienummer 2. I dette særlige scenarie foretager jobbet en bredde-først-sletning, hvor det forsøger at slette fra lavere niveauer først.
 

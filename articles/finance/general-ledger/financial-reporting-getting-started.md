@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033654"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066411"
 ---
 # <a name="get-started-with-financial-reporting"></a>Start her med økonomirapportering 
 
@@ -151,7 +151,7 @@ Du kan oprette et ubegrænset antal rapporteringstræer for at få vist virksomh
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Opdatere versionen af Økonomirapportering via slipstreaming
 
-Finans- og driftsapps opdateres hver måned. Økonomirapportering bliver dog ikke nødvendigvis opdateret i samme tempo. Kunderne har desuden flere valgmuligheder, når de implementerer opdateringer til Finans- og driftsapps. Opdateringer af Økonomirapportering installeres automatisk. Økonomirapportering har en angivet version, der forbruges i et kundemiljø, når der implementeres en serviceopdatering, når nedetiden startes, eller når kundens miljø er i vedligeholdelsestilstand. Denne proces kaldes *slipstreaming* eller *true-up*, fordi alle kundeimplementeringen er konfigureret til samme version af Økonomirapportering.
+Programmer til finans og drift opdateres hver måned. Økonomirapportering bliver dog ikke nødvendigvis opdateret i samme tempo. Kunderne har desuden flere valgmuligheder, når de implementerer opdateringer til programmer til finans og drift. Opdateringer af Økonomirapportering installeres automatisk. Økonomirapportering har en angivet version, der forbruges i et kundemiljø, når der implementeres en serviceopdatering, når nedetiden startes, eller når kundens miljø er i vedligeholdelsestilstand. Denne proces kaldes *slipstreaming* eller *true-up*, fordi alle kundeimplementeringen er konfigureret til samme version af Økonomirapportering.
 
 Du kan finde ændringer, der udgives i de enkelte versioner, i [Nyheder eller ændringer i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platformsopdateringer og fejlrettelser findes i afsnittet "Yderligere ressourcer" nederst på siden for hver version.
 
@@ -254,3 +254,4 @@ Problem: Du modtager fejlen "Det er ikke muligt at oprette forbindelse til Finan
 - [Rapportering af trædefinitioner i økonomiske rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

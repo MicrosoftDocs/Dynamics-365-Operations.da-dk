@@ -1,6 +1,6 @@
 ---
 title: Generel fejlfinding
-description: Denne artikel indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse.
+description: Denne artikel indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem programmer til finans og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853649"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112358"
 ---
 # <a name="general-troubleshooting"></a>Generel fejlfinding
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853649"
 
 
 
-Denne artikel indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse.
+Denne artikel indeholder generelle fejlfindingsoplysninger for dobbeltskrivning mellem programmer til finans og drift og Dataverse.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som denne artikel vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
@@ -55,28 +55,28 @@ Udfør følgende trin for at få vist sporingsloggen.
 
 Du kan kopiere indholdet af sporingslogfilerne og indsætte dem i et andet program, f.eks. Notesblok eller andre værktøjer, for at få vist logfiler eller tekstfiler, så det er nemmere at se alt indholdet. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i Finans- og driftsapps
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere fejlfindingstilstand for at foretage fejlfinding af problemer med direkte synkronisering i programmer til finans og drift
 
 **Påkrævet rolle for at få vist fejl** : Systemadministrator
 
-Dobbeltskrivningsfejl, der stammer fra Dataverse, kan forekomme i Finans- og driftsapps. Hvis du vil aktivere detaljeret logføring for fejlene, skal du følge disse trin.
+Dobbeltskrivningsfejl, der stammer fra Dataverse, kan forekomme i programmer til finans og drift. Hvis du vil aktivere detaljeret logføring for fejlene, skal du følge disse trin.
 
-1. For alle projektkonfigurationer i Finans- og driftsapps er flaget **IsDebugMode** angivet i tabellen **DualWriteProjectConfiguration**.
-2. Åbn **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel. Hvis du vil bruge tilføjelsesprogrammet, skal du aktivere designtilstand i Excel-tilføjelsesprogrammet Finans og drift og føje **DualWriteProjectConfiguration** til arket. Du kan finde flere oplysninger i [Få vist og opdatere enhedsdata med Excel](../../office-integration/use-excel-add-in.md).
+1. For alle projektkonfigurationer i programmer til finans og drift er flaget **IsDebugMode** angivet i tabellen **DualWriteProjectConfiguration**.
+2. Åbn **DualWriteProjectConfiguration** ved hjælp af tilføjelsesprogrammet til Excel. Hvis du vil bruge tilføjelsesprogrammet, skal du aktivere designtilstand i Excel-tilføjelsesprogrammet finans og drift og føje **DualWriteProjectConfiguration** til arket. Du kan finde flere oplysninger i [Få vist og opdatere enhedsdata med Excel](../../office-integration/use-excel-add-in.md).
 3. Angiv **IsDebugMode** til **Ja** på projektet.
 4. Kør det scenario, der genererer fejl.
 5. De detaljerede logfiler lagres i tabellen **DualWriteErrorLog**.
 6. Hvis du vil slå data op i en tabels browser, skal du bruge følgende link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, hvor du erstatter `999` efter behov.
 7. Opdater igen efter [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), som er tilgængelig for platformopdateringer 37 og senere. Hvis du har denne rettelse installeret, vil fejlfindingstilstanden registrere flere logfiler.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for Finans- og driftsapps
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfejl på den virtuelle maskine for programmer til finans og drift
 
 **Påkrævet rolle for at få vist fejl:** Systemadministrator
 
 1. Log på Microsoft Dynamics LifeCycle Services (LCS).
 2. Åbn det LCS-projekt, du har valgt til at udføre dobbeltskrivningstesten for.
 3. Vælg titlen **Skybaserede miljøer**.
-4. Brug Fjernskrivebord til at logge på den virtuelle maskine (VM) for Finans- og driftsapps. Brug den lokale konto, der vises i LCS.
+4. Brug Fjernskrivebord til at logge på den virtuelle maskine (VM) for programmer til finans og drift. Brug den lokale konto, der vises i LCS.
 5. Åbn Logbog.
 6. Vælg **Logfiler for programmer og tjenester \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operationel**.
 7. Gennemse listen over seneste fejl.
@@ -109,11 +109,11 @@ Tredjeparts cookies skal være tilladt i browserindstillingerne.
 1.  Gå til Indstillinger - > Tilladelser for webstedet - > Cookies og webstedsdata.
 2.  Deaktiver 'Bloker cookies fra tredjepart'.  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Frakoble og tilknytte et andet Dataverse-miljø fra Finans- og driftsapps
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Frakoble og tilknytte et andet Dataverse-miljø fra programmer til finans og drift
 
-**Påkrævet rolle for at fjerne miljøtilknytningen**: Systemadministrator for enten Finans- og driftsapp eller Dataverse.
+**Påkrævet rolle for at fjerne miljøtilknytningen**: Systemadministrator for enten programmer til finans og drift eller Dataverse.
 
-1. Log på Finans og drift-appen.
+1. Log på programmer til finans og drift.
 2. Gå til **Arbejdsområder \> Datastyring**, og vælg feltet **Dobbeltskrivning**.
 3. Vælg alle kørende tilknytninger, og vælg derefter **Stop**.
 4. Vælg **Ophæv sammenkædning af miljø**.
@@ -132,23 +132,23 @@ Hvis du vil aktivere formularindstillingen **Oplysninger** igen, skal du følge 
 3. Vælg formularen **Oplysninger**, og klik på **Aktivér sikkerhedsroller**.
 4. Ret sikkerhedsindstillingen til **Vis for alle**.
 
-## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Sådan sikrer du, at dataintegration bruger det nyeste finans- og driftsskema
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Sådan sikrer du, at dataintegration bruger det nyeste finans og driftsskema
 
-Du kan komme ud for dataproblemer i dataintegrationen, hvis det mest opdaterede skema ikke bruges. Følgende trin hjælper dig med at opdatere enhedslisten i appsene Finans og Drift og enhederne i dataintegratoren.
+Du kan komme ud for dataproblemer i dataintegrationen, hvis det mest opdaterede skema ikke bruges. Følgende trin hjælper dig med at opdatere enhedslisten i programmer til finans og drift og enhederne i dataintegratoren.
 
-### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Opdater enhedslisten i finans- og driftsmiljø
-1.  Log på dit finans- og driftsmiljø.
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Opdater enhedslisten i finans og drift-miljø
+1.  Log på dit finans og driftsmiljø.
 2.  Vælg **Datastyring**.
 3.  I Datastyring skal du vælge **Rammeparametre**.
 4.  Vælg **Enhedsindstillinger** på siden Parametre for **dataimport/eksportstruktur**, og vælg derefter **Listen Opdater enhed**. Det kan tage mere end 30 minutter at opdatere, afhængigt af antallet af involverede enheder.
-5.  Naviger til **datastyring**, og vælg **dataenheder** for at validere, at de forventede enheder vises. Hvis de forventede enheder ikke findes på listen, skal du kontrollere, at enhederne vises i økonomi- og operationsmiljøet, og gendanne de manglende enheder efter behov.
+5.  Naviger til **datastyring**, og vælg **dataenheder** for at validere, at de forventede enheder vises. Hvis de forventede enheder ikke findes på listen, skal du kontrollere, at enhederne vises i finans og drift-miljøet, og gendanne de manglende enheder efter behov.
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Hvis problemet ikke kan løses af opdateringen, kan du slette enhederne og tilføje dem igen
 
 > [!NOTE]
 > Det kan være nødvendigt at standse alle behandlingsgrupper, der benytter enhederne, før de slettes.
 
-1.  Vælg **Datastyring** i økonomi- og operationsmiljøet, og vælg **dataenheder**.
+1.  Vælg **Datastyring** i finans- og drift-miljøet, og vælg **dataenheder**.
 2.  Søg efter enheder med problemer og tag notat af destinationsenheden, den midlertidige tabel, enhedsnavnet og andre indstillinger. Slet enheden eller enhederne fra listen.
 3.  Vælg **Ny**, og tilføj enheden eller enhederne igen ved hjælp af dataene fra trin 2. 
 
@@ -174,3 +174,4 @@ Supportteamet skal muligvis gennemse netværksspor for at udføre fejlfinding af
 4. Vælg **Gem** for at eksportere resultaterne som HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

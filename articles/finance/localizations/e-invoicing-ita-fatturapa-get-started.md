@@ -2,7 +2,7 @@
 title: Konfigurere direkte integration af italiensk FatturaPA med SDI
 description: Denne artikel indeholder oplysninger, der kan hjælpe dig med at komme i gang med elektronisk fakturering for Italien og oprette direkte integration af italiensk FatturaPA med udvekslingssystemet (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853186"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203163"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Konfigurere direkte integration af italiensk FatturaPA med SDI
 
@@ -69,10 +69,13 @@ Dette afsnit supplerer afsnittet [Landespecifik konfiguration af programopsætni
     - I feltet **Certifikatnavn** for handlingen **Underskriv dokument** skal du angive certifikatet for digital signatur.
     - Angiv felterne **URL-adresse** og **Certifikater** for handlingen **Send**. Værdien i feltet **Certifikater** er en kæde af certifikater, hvoraf det første er rod-CA-certifikatet (caentrate.cer), mens det andet er certifikatet Klienter.
 
-4. Vælg **Valider** for at sikre, at alle påkrævede felter er indstillet.
-5. Gem ændringerne, og luk siden.
-6. Under fanen **Opsætninger** skal du vælge **Projektfakturaer** og derefter vælge **Rediger**.
-7. Gentag trin 3 til 5 for projektfakturaer.
+4. I afsnittet **Anvendelighedsregler** skal du gennemgå afsnittene og gennemse eller angive de påkrævede felter:
+    - Gennemse **LegalEntityID**-sætningen, og opdater den med den korrekte værdi fra den juridiske enhed.
+
+5. Vælg **Valider** for at sikre, at alle påkrævede felter er indstillet.
+6. Gem ændringerne, og luk siden.
+7. Under fanen **Opsætninger** skal du vælge **Projektfakturaer** og derefter vælge **Rediger**.
+8. Gentag trin 3 til 6 for projektfakturaer.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Konfigurere en behandlingspipeline til import
 

@@ -9,22 +9,22 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 33b4f17cd46338b62bed96f0a285e7b9634cc87a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886900"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067813"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include [banner](includes/banner.md)]
 
-Denne artikel beskriver det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Denne artikel beskriver det første sæt af forbedringer, der er foretaget af funktionen til bogføring af opgørelsen. Disse forbedringer er tilgængelige i Microsoft Dynamics 365 Finance 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
-Som standard under installationen af Finans og drift 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
+Som standard under installationen af finans og drift 7.3.2 konfigureres programmet til at bruge den tidligere funktion til bogføring af opgørelser. Hvis du vil aktivere den forbedrede funktionen til bogføring af opgørelsen, skal du aktivere konfigurationsnøglen til den.
 
 - Gå til **Systemadministration** \> **Opsætning** \> **Licenskonfiguration**, og ryd derefter afkrydsningsfeltet **Opgørelser (ældre)** under noden **Retail og Commerce**, og markér afkrydsningsfeltet **Opgørelser**.
 
@@ -190,3 +190,4 @@ Der er foretaget andre backend-forbedringer, som brugerne kan se, af funktionen 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

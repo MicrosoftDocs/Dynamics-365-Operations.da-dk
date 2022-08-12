@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d8d155b8bbf981408f6f15e914fc3bb1da25c9c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875649"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111070"
 ---
 # <a name="functional-locations-and-assets"></a>Arbejdssteder og aktiver
 
@@ -32,7 +32,7 @@ Denne artikel beskriver arbejdssteder og aktiver i Styring af aktiver. Styring a
 
 ## <a name="overview"></a>Overblik
 
-Styring af aktiver kan problemfrit integreres med flere moduler i andre Finance and Operations-apps. I følgende illustration vises grænsefladerne med andre moduler.
+Styring af aktiver kan problemfrit integreres med flere moduler i andre programmer til finans og drift. I følgende illustration vises grænsefladerne med andre moduler.
 
 ![Diagram, der viser, hvordan aktivstyring integreres med andre moduler.](media/01-overview-image.png)
 

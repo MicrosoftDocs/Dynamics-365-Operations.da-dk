@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867406"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103966"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
@@ -52,8 +52,8 @@ Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger 
 - [Konfigurer dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importér konfigurationer for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, -udgivelse og -udskrivning i lokale installationer](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurer proxyer til dine lokale miljøer](onprem-reverseproxy.md)
-- [Konfigurer teknisk support til Finans og drift-apps](../lifecycle-services/support-experience.md)
+- [Konfigurere proxyer til lokale miljøer](onprem-reverseproxy.md)
+- [Konfigurere teknisk support til programmer til finans og drift](../lifecycle-services/support-experience.md)
 - [Klientens internetforbindelse](../user-interface/client-disconnected.md)
 - [Anvende opdateringer til lokale installationer](apply-updates-on-premises.md)
 - [Installere lokale miljøer på ny](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Du kan udrulle Dynamics 365 Finance + Operations (on-premises). Når du vælger 
 - [Scripts til løsning af problemer i lokale miljøer](onprem-tsg-implementations.md)
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Diagnosticering i det lokale miljø](on-premises-diagnostics.md)
-- [Fjernede eller udfasede funktioner for Finans og drift](../migration-upgrade/deprecated-features.md)
+- [Fjernede eller udfasede funktioner for finans og drift](../migration-upgrade/deprecated-features.md)
 - [Livscykluspolitik for software og lokale versioner](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

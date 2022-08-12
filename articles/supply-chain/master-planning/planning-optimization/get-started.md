@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900964"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112174"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -40,7 +40,7 @@ Før du slår Planlægningsoptimering til, anbefales det på det kraftigste, at 
 
 ## <a name="availability"></a>Tilgængelighed
 
-Planlægningsoptimering er i øjeblikket tilgængelig i følgende geografiske Azure-områder: USA, Canada, Brasilien, Europa, Storbritannien, Australien, Asien og Stillehavsområdet, Japan og Indien. Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil LCS vise en meddelelse om, at dette geografiske område ikke understøttes. Yderligere oplysninger om Azure-geografi og de relaterede områder finder du i [Azure-geografiske områder](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planlægningsoptimering er i øjeblikket tilgængelig i følgende geografiske Azure-områder: USA, Canada, Brasilien, Europa, Frankrig, Storbritannien, Australien, Asien og Stillehavsområdet, Japan og Indien. Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil LCS vise en meddelelse om, at dette geografiske område ikke understøttes. Yderligere oplysninger om Azure-geografi og de relaterede områder finder du i [Azure-geografiske områder](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Bemærk, at planlægningsoptimering ikke understøtter lokale installationer af Dynamics 365 Supply Chain Management.
 
@@ -135,3 +135,4 @@ Hvis Planlægningsoptimering er aktiveret, foretages varedisponering ved hjælp 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890052"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124704"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -35,10 +35,10 @@ Det nye gitterkontrolelement omfatter en række nyttige og effektive funktioner,
 - Kolonner, der kan strækkes
 
 ## <a name="calculating-totals"></a>Beregner totaler
-I Finans- og driftsapps har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
+I programmer til finans og drift har brugerne mulighed for at få vist totaler nederst i numeriske kolonner i gitre. Disse totaler vises i en sektion med sidefod nederst i gitteret. 
 
 ### <a name="showing-the-grid-footer"></a>Visning af gitterets sidefod
-Der er et sidefodsområde i bunden af alle tabelgitre i Finans- og driftsapps. Sidefoden kan vise værdifulde oplysninger, der er relateret til de data, der vises i gitteret. Her er nogle eksempler på sådanne oplysninger:
+Der er et sidefodsområde i bunden af alle tabelgitre i programmer til finans og drift. Sidefoden kan vise værdifulde oplysninger, der er relateret til de data, der vises i gitteret. Her er nogle eksempler på sådanne oplysninger:
 
 - Antallet af markerede rækker i tabellen (når du markerer mere end én post)
 - Samlede beløb nederst i konfigurerede og numeriske kolonner
@@ -86,7 +86,7 @@ For at understøtte denne nye funktionsmåde er der tilføjet en ny kolonne for 
 Når brugerne indtaster data før det sted, hvor serveren behandler data, kan de forvente en række degraderinger i dataindtastningsoplevelsen, f.eks. manglende opslag, validering på kontrolniveau og indtastning af standardværdier. Brugere, der har brug for en rulleliste til at finde en værdi, anbefales at vente på, at serveren når til den aktuelle række. Validering på kontrolniveau og angivelse af standardværdier vil også finde sted, når serveren behandler den pågældende række.
 
 ### <a name="pasting-from-excel"></a>Indsætning fra Excel
-Brugerne har altid været i stand til at eksportere data fra gitre i Finans- og driftsapps til Microsoft Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i Finans- og driftsapps. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
+Brugerne har altid været i stand til at eksportere data fra gitre i programmer til finans og drift til Microsoft Excel ved hjælp af mekanismen **Eksportér til Excel**. Muligheden for at indtaste data forud i systemet gør det dog muligt for det nye gitter at understøtte kopiering af tabeller fra Excel og indsætning af dem direkte i gitre i programmer til finans og drift. Den gittercelle, som indsætningen er initieret fra, bestemmer, hvor den kopierede tabel begynder at blive indsat. Indholdet af gitteret overskrives med indholdet af den kopierede tabel, undtagen i to tilfælde:
 
 - Hvis antallet af kolonner i den kopierede tabel overstiger antallet af kolonner, der er tilbage i gitteret, startende fra indsætningens sted, får brugeren besked om, at de ekstra kolonner er blevet ignoreret. 
 - Hvis antallet af rækker i den kopierede tabel overstiger antallet af rækker i gitteret med start fra indsætningens sted, overskrives de eksisterende celler af det indsatte indhold, og eventuelle ekstra rækker fra den kopierede tabel indsættes som nye rækker nederst i gitteret. 
@@ -97,7 +97,7 @@ Som en produktivitetsbooster kan brugerne indtaste matematiske formler i numeris
 Hvis du vil have systemet til at genkende en værdi som et udtryk, skal du starte værdien med et lighedstegn (**=**). Du kan få flere oplysninger om de understøttede operatorer og den understøttede syntaks i [Understøttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere data i tabelformat
-Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i Finans- og driftsapps. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
+Forretningsbrugere har ofte brug for at udføre ad hoc-analyse af data. Dette kan gøres ved at eksportere data til Microsoft Excel og bruge pivottabeller, men funktionen **Gruppering i gitre**, der er afhængig af den nye gitterkontrol, tillader brugere at organisere deres tabeldata på interessante måder i programmer til finans og drift. Da denne funktion udvider funktionen **Totaler**, giver **Gruppering** også mulighed for at få meningsfuld indsigt i dataene ved at levere subtotaler på gruppeniveau.
 
 Hvis du vil bruge denne funktion, skal du højreklikke på den kolonne, du vil gruppere efter, og vælge **Gruppér efter denne kolonne**. Denne handling sorterer dataene efter den valgte kolonne, føjer en ny **Gruppér efter**-kolonne til starten af gitteret og indsætter "overskriftsrækker" i starten af hver gruppe. Disse kolonneoverskrifter indeholder følgende oplysninger om hver enkelt gruppe:
 
@@ -168,7 +168,7 @@ Hvis du har valgt en enkelt side fra til brug af det nye gitter, kan du senere a
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Udvikler] Vælge individuelle gitre uden for funktionaliteten af Skrive forud i forhold til systemet
 Der er opstået scenarier, der ikke egner sig til at fungere godt sammen med *Skrive forud i forhold til systemet* i gitteret. (F.eks. vil en kode, der udløses, når en række valideres, udløse en datakildeundersøgelse, og undersøgelsen kan derefter ødelægge ikke-bekræftede redigeringer på eksisterende rækker). Hvis din organisation opdager et sådant scenario, findes der en API, som giver en udvikler mulighed for at vælge et individuelt gitter ud af den asynkrone rækkevalidering og gå tilbage til den tidligere funktionalitet.
 
-Når asynkron rækkevalidering er deaktiveret i et gitter, kan brugere ikke oprette en ny række eller flytte til en anden eksisterende række i gitteret, mens der er valideringsproblemer for den aktuelle række. Som en sidevirkning af denne handling kan tabeller ikke indsættes fra Excel i finans- og driftsgitre.
+Når asynkron rækkevalidering er deaktiveret i et gitter, kan brugere ikke oprette en ny række eller flytte til en anden eksisterende række i gitteret, mens der er valideringsproblemer for den aktuelle række. Som en sidevirkning af denne handling kan tabeller ikke indsættes fra Excel i finans og drift-gitre.
 
 Hvis du fjerne en enkelt side fra asynkron rækkevalidering, skal du tilføje følgende kald efter `super()` i `run()`-metoden for formularen.
 
@@ -200,3 +200,4 @@ I dette afsnit vedligeholdes en liste over kendte problemer for det nye gitterko
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

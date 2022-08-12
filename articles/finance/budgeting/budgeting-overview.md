@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864391"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067423"
 ---
 # <a name="budgeting-home-page"></a>Startside for budgetplanlægning
 
@@ -38,7 +38,7 @@ Ressourceplanlægningens cyklus for en virksomhed består typisk af planlægning
 
 Processerne for både langsigtet strategisk planlægning og årlig budgetplanlægning understøttes via et budgetplandokument. Budgetplansdokumenter er tæt integreret med Microsoft Excel. Brugerne kan konfigurere ubegrænsede monetære og kvantitative scenarier og definere et organisationshierarki for budgetplanlægning for at understøtte budgetplanlægningsmetoder oppefra og ned og nedefra og op. Når et budget er oprettet og godkendt i ansøgningen, kan du konvertere budgetplanen til en budgetregisterpost. Budgetregisterposter indeholder værktøjer til vedligeholdelse af budgettet og til at opbevare beløb, der kan spores gennem budgetkoder. Med budgetregisterposter kan du revidere oprindelige budgetter, foretage overførsler og overføre budgetbeløb fra det foregående år. Baseret på det budget, der er etableret, kan en virksomhed aktivere budgetstyring. Kontrolniveauet afhænger af organisationskulturen og organisationens forfaldsniveau. Organisationer, der har et lavt forfaldsniveau, kan lade budgettet være "som det er" og måske være mere reaktive end proaktive, hvis et budget ikke lever op til forventningerne. Andre organisationer kan aktivere politikker for budgetstyring, der forhindrer brugere i at købe noget, hvis der ikke er tilgængelige midler i budgettet.
 
-Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor medarbejderne er uddannet i organisatoriske mål, og følge disse mål via politikker som "Overvej et onlinemøde i stedet for en rejse". Ansøgningen omfatter en budgetstyringsstruktur, der gør det muligt for virksomhedens ledelse at vælge enten stringent kontrol (der forhindrer posteringer, der vil overskride budgettet) eller blød kontrol (hvor brugere advares om, at de vil overskride de disponible budgetmidler, men selv kan bestemme, hvordan de vil fortsætte). Endelig kan du bruge rullende prognoser. En rullende prognose er en almindelig sammenligning af budget med faktiske oplysninger, der bruges til at definere, hvor godt virksomheden arbejder mod budgettet. En rullende prognose bruges også til at identificere tendenser. I Finans og drift understøttes rullende prognose via et budgetplansdokument som første planlægningsaktiviteter. Rullende prognoser kan udføres parallelt med planlægning af den kommende budgetcyklus.
+Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor medarbejderne er uddannet i organisatoriske mål, og følge disse mål via politikker som "Overvej et onlinemøde i stedet for en rejse". Ansøgningen omfatter en budgetstyringsstruktur, der gør det muligt for virksomhedens ledelse at vælge enten stringent kontrol (der forhindrer posteringer, der vil overskride budgettet) eller blød kontrol (hvor brugere advares om, at de vil overskride de disponible budgetmidler, men selv kan bestemme, hvordan de vil fortsætte). Endelig kan du bruge rullende prognoser. En rullende prognose er en almindelig sammenligning af budget med faktiske oplysninger, der bruges til at definere, hvor godt virksomheden arbejder mod budgettet. En rullende prognose bruges også til at identificere tendenser. IfFinans og drift understøttes rullende prognose via et budgetplansdokument som første planlægningsaktiviteter. Rullende prognoser kan udføres parallelt med planlægning af den kommende budgetcyklus.
 
 -   [Budgetplanlægningsoversigt](basic-budgeting-overview-configuration.md)
 -   [Budgetstyringsoversigt](budget-control-overview-configuration.md)
@@ -72,3 +72,4 @@ Du kan f.eks. definere, hvem der udfører budgetplanlægning, hvad der er budget
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

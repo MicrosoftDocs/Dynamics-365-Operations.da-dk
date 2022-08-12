@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6f8f43bcdaae9a14350c66039d204caf38d33768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906936"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069022"
 ---
 # <a name="wave-execution-notifications"></a>Beskeder om udførelse af bølge
 
@@ -28,7 +28,7 @@ Funktionen *Beskeder om bølgeudførelse* bruger forretningshændelser og handli
 
 Knappen **Vis meddelelser** (klokkesymbol) i højre side af navigationslinjen angiver, hvornår en meddelelse fra handlingscenteret er tilgængelig for den aktuelle bruger. Brugeren kan vælge knappen **Vis meddelelser** for at åbne handlingscenteret og gennemse meddelelserne.
 
-Forretningshændelser forekommer, når der køres forretningsprocesser. Forretningsprocesser består af opgaver. I løbet af en forretningsproces udfører de brugere, der deltager i den, forretningshandlinger for at udføre disse opgaver. Forretningshændelser udgør en mekanisme, der giver de eksterne systemer mulighed for at modtage beskeder fra Finans- og driftsapps. På denne måde kan systemerne udføre forretningshandlinger som svar på forretningshændelser. Yderligere oplysninger finder du under [Oversigt over forretningshændelser](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Forretningshændelser forekommer, når der køres forretningsprocesser. Forretningsprocesser består af opgaver. I løbet af en forretningsproces udfører de brugere, der deltager i den, forretningshandlinger for at udføre disse opgaver. Forretningshændelser udgør en mekanisme, der giver de eksterne systemer mulighed for at modtage beskeder fra programmer til finans og drift. På denne måde kan systemerne udføre forretningshandlinger som svar på forretningshændelser. Yderligere oplysninger finder du under [Oversigt over forretningshændelser](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Slå funktionen Beskeder om bølgeudførelse til eller fra
 
@@ -125,3 +125,4 @@ Afhængigt af opsætningen af dine forretningshændelser modtager du i sidste en
 > Åbn bølgedetaljer
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

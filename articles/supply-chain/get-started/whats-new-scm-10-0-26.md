@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954474"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124488"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.26. (maj 2022)
 
@@ -33,7 +33,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
-| Lager og logistik | [Forespørgsel om lagerbeholdning med lagersynlighed for at understøtte avancerede varer i Warehouse management](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Understøttelse af lagersynlighed for WHS-varer](../inventory/inventory-visibility-whs-support.md) | Funktionsstyring:<br>*Aktivér lagerstedsvarer i lagersynlighed* |
+| Lager og logistik | [Forespørgsel om lagerbeholdning med lagersynlighed for at understøtte avancerede varer i Warehouse management](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Understøttelse af lagersynlighed for WMS-varer](../inventory/inventory-visibility-whs-support.md) | Funktionsstyring:<br>*Aktivér lagerstedsvarer i lagersynlighed* |
 | Lager og logistik | [Disponibel til tilsagn for tilføjelsesprogrammet Lagersynlighed](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](../inventory/inventory-visibility-available-to-promise.md) | Aktiveret af servicekonfiguration |
 | Fremstillingsvirksomhed | [Fastvægtvarer til udførelse af grænsefladen til produktionen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*(Prøveversion) Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv* |
 | Fremstillingsvirksomhed | Fanen Mine job i grænsefladen til produktionsudførelse <!-- KFM: Add link to release plan when available --> | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*Fanen Mine job i grænsefladen til produktionsudførelse* |
@@ -47,9 +47,9 @@ Hvis du vil slå en af disse funktioner til eller fra, skal du gøre det i [funk
 | Modul | Funktionsnavn i funktionsstyring | Flere oplysninger |
 |---|---|---|
 | Indkøb og forsyning | Bogfør registrerede antal lagerbaserede produkter og rester af ikke-lagerbaserede produkter for modtagelser og kreditorfakturaer | Denne funktion ændrer, hvordan antal ikke-lagerbaserede produkter (som f.eks. tjenester) bogføres, når der behandles kreditorfakturaer og indgående forsendelser i forhold til indkøbsordrer. Funktionen ændrer funktionsmåden for indstillingen af *Registreret antal og tjenester* for bogføring af tilgange og kreditorfakturaer ved at ændre den, så den stemmer overens med funktionaliteten af *Registreret antal og ikke-lagerførte produkter* der allerede er angivet, når der bogføres antal for salgsfølgesedler.<br><br>Når du bogfører en produktkvittering eller kreditorfaktura ved hjælp af indstillingen *Registreret antal og tjenester*, bogfører systemet det registrerede antal lagervarer og bogfører det resterende antal ikke-lagerbaserede produkter (herunder både tjenester og ikke-tjenester). Uden denne funktion bogfører systemet stadig den registrerede mængde lagervarer (herunder tjenester, der er konfigureret som lagervarer), men bogfører altid det fulde bestilte antal ikke-lagerførte serviceprodukter (og ignorerer ikke-lagerførte produkter, der ikke er af typen *Service*). |
-| Indkøb og forsyning | Synkronisere sporingsdimensioner på interne salgs- og indkøbsordrelinjer | Denne funktion giver dig mulighed for at styre, om sporingsdimensionerne for serienumre og batchnumre synkroniseres på tværs af interne salgs- og indkøbsordrelinjer. Den føjer nye indstillinger til både **Politikker for indkøbsordrer** og fanerne **Salgsordrepolitikker** på siden **Intern** opsætning for debitorer og kreditorer. Det opdaterer også navnene på nogle få relaterede, nærliggende indstillinger for klarheds skyld.<br><br>Hvis du bruger avanceret Warehouse management (WMS), skal du være opmærksom på, at denne funktion kun synkroniserer batch- og serienumre, når disse dimensioner ligger over lokationen i hierarkiet for destinationsreservationer. |
+| Indkøb og forsyning | Synkronisere sporingsdimensioner på interne salgs- og indkøbsordrelinjer | Denne funktion giver dig mulighed for at styre, om sporingsdimensionerne for serienumre og batchnumre synkroniseres på tværs af interne salgs- og indkøbsordrelinjer. Den føjer nye indstillinger til både **Politikker for indkøbsordrer** og fanerne **Salgsordrepolitikker** på siden **Intern** opsætning for debitorer og kreditorer. Det opdaterer også navnene på nogle få relaterede, nærliggende indstillinger for klarheds skyld.<br><br>Hvis du bruger avanceret lokationsstyringsprocesser (WMS), skal du være opmærksom på, at denne funktion kun synkroniserer batch- og serienumre, når disse dimensioner ligger over lokationen i hierarkiet for destinationsreservationer. |
 | Administration af produktoplysninger | Ryd op i produktattributværdier | Denne funktion tilføjer en periodisk opgave med navnet **Ryd op i produktattributværdier**, der rydder op i poster for produktattributværdier, som ikke længere er knyttet til et produkt via en produktkategori. |
-| Lager- og Warehouse management | (Rusland) Undgå afvigelser ved udstedelse af GTD'er for indkøbsordrer, der omfatter WMS-aktiverede varer | Denne funktion er kun til russisk lokalisering. Det forhindrer uoverensstemmelse, der opstår, når der udstedes russiske tolddeklarationsnumre (GTD'er) til import af indkøbsordrer, der omfatter varer, der er aktiveret til avanceret lagerstyring (WMS). GTD-processen til udstedelse ændrer nogle lagerdimensionsværdier for de relaterede lagertransaktioner for fakturaer, der er medtaget i den brugerdefinerede kladde, hvilket medfører uoverensstemmelser mellem arbejdsposterne for indkøbsordren og lagertransaktionerne for indkøbet. Når denne funktion er aktiveret, genererer GTD-udstedelsesprocessen reguleringsarbejde, der eliminerer sådanne uoverensstemmelser. |
+| Lager- og Warehouse management | (Rusland) Undgå afvigelser ved udstedelse af GTD'er for indkøbsordrer, der omfatter WMS-aktiverede varer | Denne funktion er kun til russisk lokalisering. Det forhindrer uoverensstemmelse, der opstår, når der udstedes russiske tolddeklarationsnumre (GTD'er) til import af indkøbsordrer, der omfatter varer, der er aktiveret til lokationsstyringsprocesser (WMS). GTD-processen til udstedelse ændrer nogle lagerdimensionsværdier for de relaterede lagertransaktioner for fakturaer, der er medtaget i den brugerdefinerede kladde, hvilket medfører uoverensstemmelser mellem arbejdsposterne for indkøbsordren og lagertransaktionerne for indkøbet. Når denne funktion er aktiveret, genererer GTD-udstedelsesprocessen reguleringsarbejde, der eliminerer sådanne uoverensstemmelser. |
 | Warehouse management | Udvidet parser til GS1-stregkoder | Denne funktion tilføjer en forbedret parser til GS1-symboldata. Den nye parser implementerer GS1-algoritmen Generel specifikation til fortolkning af GS1-symboler og giver stærkere validering af data. Du kan finde flere oplysninger under [GS1-stregkodescanning](../warehousing/gs1-barcodes.md). |
 | Warehouse management | Nye sider med lastplanlægningspanel | Tilføjer to nye sider i lastplanlægningspanelet: **Indgående lastplanlægningspanel** og **Udgående lastplanlægningspanel**. |
 | Warehouse management | Applikation til Warehouse management – tom GTD | Denne funktion er kun til russisk lokalisering. Det giver arbejdere, der bruger mobilappen Warehouse Management, mulighed for at lade russiske tolddeklarationsnumre (GTD'er) være tomme, hvis det er nødvendigt. Hvis GTD-sporingsdimensionen er konfigureret til at tillade tomme værdier, accepterer systemet tomme værdier til GTD for lageroperationer, hvis den disponible lagerbeholdning er tilgængelig. |
@@ -64,7 +64,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.26 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.26 af programmer til finans og drift (maj 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
@@ -90,3 +90,4 @@ Før en funktion fjernes fra produktet, vil du få besked om udfasning i artikle
 For ændringer, der kun påvirker kompileringstiden, men som er binære, som er kompatible med sandkasse- og produktionsmiljøer, vil tidsrummet for udfasningen være mindre end 12 måneder. Det er typisk funktionelle opdateringer, der skal foretages i compileren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

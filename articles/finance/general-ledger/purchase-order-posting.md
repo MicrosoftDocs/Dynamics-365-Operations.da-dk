@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849925"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151026"
 ---
 # <a name="purchase-order-posting"></a>Bogføring af indkøbsordre
 
@@ -93,10 +93,10 @@ I følgende tabel vises eksempler på standardbogføringstyper med eksempler på
 
 | Bogføringstype | Eksempel på hovedkonto | Eksempel på hovedkontonavn | Kontotype | Debet/Kredit? | Clearingkonto | P/F | Følg | Beskrivende tekst |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Omkostning til købte materialer, der er modtaget | 140100</br>140101 | Materialelager</br>Materialer, der er afsendt, ikke faktureret | Aktiv | Debet | Ja | P | Omkostning til købte materialer, der er faktureret | Bruges, når produktkvitteringen bogføres for en indkøbsordre. Modkontoen er Udgifter til indkøb, ikke-faktureret. Beløbet på denne konto tilbageføres, når der bogføres en indkøbsordrefaktura. |
+| Omkostning til købte materialer, der er modtaget | 140100</br>140101 | Materialelager</br>Materialer, der er afsendt, ikke faktureret | Aktiv | Debet | Ja | P | Omkostning til købte materialer, der er faktureret | Bruges, når en købskvittering for en indkøbsordre bogføres, er modkontoen til denne konto udgifter til indkøb ikke faktureret. Beløbet på denne konto tilbageføres, når der bogføres en indkøbsordrefaktura. |
 | Udgifter til indkøb, ikke-faktureret | 600180 | Materialetilgange | Udgift | Debet | Ja | P | |Bruges, når produktkvitteringen bogføres for en indkøbsordre. Der oprettes to bilag til tilgangen for at spore afvigelser i indkøbsprisen, når standardomkostningen bruges. Modkontoen på det første bilag er Indkøb, periodisering. Modkontoen på det andet bilag er summen af kontiene Omkostning til købte materialer, der er modtaget og Afvigelse i købspris. De beløb, der bogføres på denne konto, tilbageføres, når der bogføres en indkøbsordrefaktura. |
 | Omkostning til købte materialer, der er faktureret | 140100 | Materialelager | Aktiv | Debet | Nej | F  |Omkostning til købte materialer, der er modtaget | Bruges, når fakturaen for en indkøbsordre bogføres. Modkontoen til denne konto er Udgifter til indkøb for produkt. Denne konto repræsenterer lageret i balancen. Den anvendte konto er typisk den samme konto, som bruges til Omkostninger ved leverede enheder og Omkostninger ved fakturerede enheder for salgsordren. |
-| Udgifter til indkøb for produkt | 600180 | Materialetilgang | Udgift | Kredit | Nej | F  | |Bruges, når fakturaen for en indkøbsordre bogføres. Modkontoe til denne konto er Omkostning til købte materialer. Denne konto repræsenterer lageret i balancen. |
+| Udgifter til indkøb for produkt | 600180 | Materialetilgang | Udgift | Kredit | Ja | F  | |Bruges, når fakturaen for en indkøbsordre bogføres. Der oprettes to bilag til fakturaen for at spore afvigelser i indkøbsprisen, når standardomkostningen bruges. Modkontoen til denne konto er den konto for indkøb, der ikke er faktureret, og som bruges på tilgangsbogføringen og tilbageføres under fakturabogføringen. Repræsenterer omkostninger for det lager, der er købt ved fakturering, og som ikke afspejles på lagerkontoen i balancen. Dette er bogføring af drift for afvigelse i købspris, som oftest ses ved varekøb med standardomkostninger.|
 | Vind ved fast tilgangspris (Indkøb, vind ved fast tilgangspris*) | 510310 | Afvigelse i købspris | Udgift | Kredit | Nej | F | Tab ved fast tilgangspris | Bruges, når en indkøbsordrefaktura bogføres, og der er forskel mellem den fakturerede pris og standardomkostningen for varen. Denne konto bruges, når forskellen er større. Modkontoen til denne konto er Modposteret fast tilgangspris. |
 | Tab ved fast tilgangspris (Indkøb, tab ved fast tilgangspris*) | 510310 | Afvigelse i købspris | Udgift | Debet | Nej | F | Vind ved fast tilgangspris | Bruges, når en indkøbsordrefaktura bogføres, og der er forskel mellem den fakturerede pris og standardomkostningen for varen. Denne konto bruges, når forskellen er lavere. Modkontoen til denne konto er Modposteret fast tilgangspris. |
 | Modposteret fast tilgangspris (Indkøb, modposteret fast tilgangspris*) | 140900 | Lagerafvigelse | Aktiv | Begge | Nej | F  | |Bruges, når en indkøbsordrefaktura bogføres, og der er forskel mellem den fakturerede pris og standardomkostningen for varen. Denne konto er modkontoen til driftskontiene for den faste tilgangspris. |

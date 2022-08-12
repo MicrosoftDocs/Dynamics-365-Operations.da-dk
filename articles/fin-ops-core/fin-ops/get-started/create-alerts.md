@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853611"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124218"
 ---
 # <a name="create-alert-rules"></a>Oprette påmindelsesregler
 
@@ -75,7 +75,7 @@ I oversigtspanelet **Vis påmindelse med** i dialogboksen **Opret påmindelsesre
 
 ## <a name="alerts-as-business-events"></a>Påmindelser som forretningshændelser
 
-Du kan sende påmindelser eksternt ved hjælp af rammen for forretningshændelser. Når du opretter en påmindelse, skal du angive **Hele organisationen** til **Nej** og angive **Send eksternt** til **Ja**. Når du har den påmindelse, som skal udløse forretningshændelsen, kan du udløse et i Power Automate indbygget flow, som anvender udløseren **Når der indtræffer en forretningshændelse** på Finans og drift-connectoren, eller eksplicit sender hændelsen til en forretningshændelses slutpunkt via **Forretningshændelseskataloget**.
+Du kan sende påmindelser eksternt ved hjælp af rammen for forretningshændelser. Når du opretter en påmindelse, skal du angive **Hele organisationen** til **Nej** og angive **Send eksternt** til **Ja**. Når du har den påmindelse, som skal udløse forretningshændelsen, kan du udløse et i Power Automate indbygget flow, som anvender udløseren **Når der indtræffer en forretningshændelse** på finans og drift-connectoren, eller eksplicit sender hændelsen til en forretningshændelses slutpunkt via **Forretningshændelseskataloget**.
 
 ## <a name="create-an-alert-rule"></a>Opret en påmindelsesregel
 

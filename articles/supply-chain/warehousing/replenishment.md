@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893085"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069176"
 ---
 # <a name="replenishment-overview"></a>Oversigt over genopfyldning
 
@@ -70,8 +70,8 @@ I stedet for at opsummere behov i slutningen af en fordelingsproces og foretage 
 
 |      Forudsætning       |                                                                                                                                Beskrivelse                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Vare           |                                                                                                        Varen skal være aktiveret for lagerprocesser for lagersted.                                                                                                        |
-|        Lagersted        | Lagerstedet skal være aktiveret for lagerprocesser for lagersted. Hvis du vil aktivere et lagersted for lagerstedsstyringsprocesser, skal du på siden <strong>Lagersteder</strong> vælge lagerstedet og derefter vælge indstillingen <strong>Brug lagerstedsstyringsprocesser</strong>. |
+|          Vare           |                                                                                                        Varen skal være aktiveret for lokationsstyringsprocesser (WMS).                                                                                                        |
+|        Lagersted        | Lagerstedet skal være aktiveret for lokationsstyringsprocesser (WMS). Hvis du vil aktivere et lagersted for WMS, skal du på siden <strong>Lagersteder</strong> vælge lagerstedet og derefter vælge indstillingen <strong>Brug lagerstedsstyringsprocesser</strong>. |
 | Genopfyldningsskabeloner |                                                                   Mindst én genopfyldningsskabelon skal sættes op til Min/Maks genopfyldning, Genopfyldning baseret på bølgebehov eller Genopfyldning for lastbehov.                                                                   |
 |        Lokationer        |                                                                                                       Lokationer skal oprettes og forbindes til en lokationsprofil.                                                                                                       |
 |    Lokationsprofiler    |                                                                                                        Lokationsprofiler er nødvendige for at oprette lokationer.                                                                                                        |

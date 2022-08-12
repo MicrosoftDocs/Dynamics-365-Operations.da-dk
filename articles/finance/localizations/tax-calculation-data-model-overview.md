@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859689"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068842"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodel til momsberegning
 
 Denne artikel indeholder oplysninger om, hvordan feltværdierne i momsdatamodellen bestemmes i momsberegningstransaktioner.
 
-*Momsdatamodellen* består af felter, der skal bruges til momsberegninger. Microsoft leverer *datamodellen til momsberegning*, som indeholder overskriftsfelter og linjefelter i transaktionsdokumenter i Finans- og driftsapps. De felter, der defineres i datamodellen til momsberegning, er de tilgængelige kolonner i tabellerne med anvendelsesregler i konfigurationen af konfigurationen af funktionen til momsberegning.
+*Momsdatamodellen* består af felter, der skal bruges til momsberegninger. Microsoft leverer *datamodellen til momsberegning*, som indeholder overskriftsfelter og linjefelter i transaktionsdokumenter i programmer til finans og drift. De felter, der defineres i datamodellen til momsberegning, er de tilgængelige kolonner i tabellerne med anvendelsesregler i konfigurationen af konfigurationen af funktionen til momsberegning.
 
 > [!NOTE] 
 > Nogle noder, der er defineret i datamodellen, f.eks. **post-id** og **tabel-id**, er til tekniske formål. De er ikke tilgængelige kolonner i konfigurationen af momsberegningsfunktionen.
@@ -54,7 +54,7 @@ Du kan også få vist datamodellen for momsberegning og de tilgængelige kolonne
 
     [![Administrer kolonner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen til momsberegning er integreret med Finans- og driftsapps. Ved hver postering, der er relateret til momsberegningen, indsamles værdierne i de felter, der er defineret i tabellerne med anvendelsesregler, og de sendes til tjenesten tax calculation for beregning. I version 40.46 er der 57 foruddefinerede datamodeller tilgængelige for følgende transaktionstyper: indkøbsordrer, salgsordrer, flytteordrer, indkøbsrekvisitioner, tilbudsanmodninger og salgstilbud.
+Datamodellen til momsberegning er integreret med programmer til finans og drift. Ved hver postering, der er relateret til momsberegningen, indsamles værdierne i de felter, der er defineret i tabellerne med anvendelsesregler, og de sendes til tjenesten tax calculation for beregning. I version 40.46 er der 57 foruddefinerede datamodeller tilgængelige for følgende transaktionstyper: indkøbsordrer, salgsordrer, flytteordrer, indkøbsrekvisitioner, tilbudsanmodninger og salgstilbud.
 
 ## <a name="version-updates-and-restrictions"></a>Versionsopdateringer og begrænsninger
 
@@ -134,3 +134,4 @@ Seksogtyve datamodeller kan medtages som felter i transaktionens linjer. Angåen
 | Enhed                          | <ul><li>**Salgsordre:** enhed</li><li>**Indkøbsordre:** enhed</li><li>**Flytteordre – send:** enhed</li><li>**Flytteordre – modtag:** enhed</li><li>**Indkøbsrekvisition:** enhed</li><li>**Tilbudsanmodning:** enhed</li><li>**Salgstilbud:** enhed</li></ul> |
 | Variantnummer                | <ul><li>**Salgsordre:** Variantnummer</li><li>**Indkøbsordre:** variantnummer</li><li>**Salgstilbud:** Variantnummer</li></ul> |
 | Lagersted                     | <ul><li>**Salgsordre:**<ol><li>Linje &gt; Lagersted</li><li>Produkt &gt; lagersted</li></ol></li><li>**Indkøbsordre:**<ol><li>Linje &gt; Lagersted</li><li>Produkt &gt; lagersted</li></ol></li><li>**Flytteordre - forsendelse:** fra lagersted</li><li>**Flytteordre - Modtag:** Til lagersted</li><li>**Indkøbsrekvisition:** Linje &gt; lagersted</li><li>**Anmode om tilbud:** Linje &gt; lagersted</li><li>**Salgstilbud:**<ol><li>Linje &gt; Lagersted</li><li>Produkt &gt; lagersted</li></ol></li></ul> |
+

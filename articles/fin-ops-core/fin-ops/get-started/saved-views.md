@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845407"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125144"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -215,7 +215,7 @@ Du kan få vist en liste over kendte problemer med gemte visninger ved at se [Op
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan kan jeg aktivere gemte visninger i mit miljø?
 
 > [!NOTE]
-> Funktionen **Gemte visninger** kræver, at tilpasningssystemet i Finans og drift er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
+> Funktionen **Gemte visninger** kræver, at tilpasningssystemet i programmer til finans og drift er aktiveret. Hvis brugertilpasning er slået fra for hele miljøet, deaktiveres visningerne, også selvom du følger nedenstående trin. 
 
 Du kan aktivere og deaktivere funktionen **Gemte visninger** via Funktionsstyring i alle miljøer. Når den er aktiveret, aktiveres gemte visninger i alle efterfølgende brugersessioner.
 
@@ -255,3 +255,4 @@ Hvis publicerer en visning for en bestemt juridisk enhed, men du ikke publicerer
 - **Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder. Denne funktionsmåde forekommer, fordi funktionen giver mulighed for at sammenkæde visninger (herunder personlige visninger) med bestemte juridiske enheder.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

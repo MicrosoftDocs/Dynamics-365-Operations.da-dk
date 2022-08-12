@@ -2,19 +2,19 @@
 title: Fejlfinde problemer under den indledende synkronisering
 description: Denne artikel indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer, der kan opstå under den første synkronisering.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8fb27a6af2962be31288a3d2260110e5fe6a201
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892351"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112076"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Fejlfinde problemer under den indledende synkronisering
 
@@ -22,12 +22,12 @@ ms.locfileid: "8892351"
 
 
 
-Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer, der kan opstå under den første synkronisering.
+Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem programmer til finans og drift og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer, der kan opstå under den første synkronisering.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som denne artikel vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Kontrollere for indledende synkroniseringsfejl i en Finans og drift-app
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Kontrollere for indledende synkroniseringsfejl i programmer til finans og drift
 
 Når du har aktiveret tilknytningsskabelonerne, skal status for tilknytningerne være **Kører**. Hvis status er **Kører ikke**, er der opstået fejl under den første synkronisering. Hvis du vil have vist fejlene, skal du vælge fanen **Oplysninger om første synkronisering** på siden **Dobbeltskrivning**.
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Hvis denne fejl opstår konsekvent, og du ikke kan fuldføre den første synkronisering, skal du følge disse trin for at løse problemet.
 
-1. Log på den virtuelle maskine (VM) for Finans- og driftsapps.
+1. Log på den virtuelle maskine (VM) for programmer til finans og drift.
 2. Åbn Microsoft Management Console.
 3. I ruden **Services** skal du sikre dig, at Microsoft Dynamics 365 Dataimport/eksportstruktur-tjenesten kører. Genstart, hvis den er stoppet, fordi den første synkronisering kræver det.
 
@@ -75,7 +75,7 @@ Du kan få vist følgende fejlmeddelelse under første synkronisering:
 
 Følg disse trin for at løse dette problem.
 
-1. Log på Finans og drift-appen.
+1. Log på programmer til finans og drift.
 2. Slet **DtAppID**-klienten på siden **Azure Active Directory-programmer**, og tilføj den derefter igen.
 
 ![DtAppID-klient på listen over Azure AD-programmer.](media/aad_applications.png)
@@ -102,9 +102,9 @@ Her er nogle eksempler:
 
 Hvis der er rækker i kreditortabellen med værdier i kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, skal du følge disse trin for at fuldføre den første synkronisering.
 
-1. I Finans og drift-appen skal du slette kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilknytningen og derefter gemme tilknytningen.
+1. I programmer til finans og drift skal du slette kolonnerne **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilknytningen og derefter gemme tilknytningen.
 
-    1. Gå til siden dobbeltskrivning-tilknytning for **Kreditorer V2 (msdyn\_vendors)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **Finans- og driftsapps.Kreditorer V2**. I højre filter skal du vælge **Sales.Vendor**.
+    1. Gå til siden dobbeltskrivning-tilknytning for **Kreditorer V2 (msdyn\_vendors)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **programmer til finans og drift.Kreditorer V2**. I højre filter skal du vælge **Sales.Vendor**.
     2. Søg efter **primarycontactperson** for at finde kildekolonnen **PrimaryContactPersonId**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
@@ -149,9 +149,9 @@ Her er nogle eksempler:
 
 Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonID** og **InvoiceAccount**, skal du følge disse trin for at fuldføre den første synkronisering. Du kan bruge denne fremgangsmåde til alle indbyggede tabeller, f.eks. **Konti** og **Kontakter**.
 
-1. I appen Finans og drift skal du slette kolonnerne **ContactPersonID** og **InvoiceAccount** fra tilknytningen **Debitorer V3 (konti)** og derefter gemme tilknytningen.
+1. I programmer til finans og drift skal du slette kolonnerne **ContactPersonID** og **InvoiceAccount** fra tilknytningen **Debitorer V3 (konti)** og derefter gemme tilknytningen.
 
-    1. Gå til siden med dobbeltskrivning-tilknytning for **Debitorer V3 (konti)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **Finans og driftsapps.Debitorer V3**. I højre filter skal du vælge **Dataverse.Account**.
+    1. Gå til siden med dobbeltskrivning-tilknytning for **Debitorer V3 (konti)**, og vælg fanen **Tabeltilknytninger**. I venstre filter skal du vælge **programmer til finans og drift.Debitorer V3**. I højre filter skal du vælge **Dataverse.Account**.
     2. Søg efter **contactperson** for at finde kildekolonnen **ContactPersonID**.
     3. Vælg **Handlinger**, og vælg derefter **Slet**.
 
@@ -182,16 +182,16 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
     > Der er to tilknytninger med samme navn. Vælg tilknytningen med følgende beskrivelse under fanen **Detaljer**: **Dobbeltskrivningsskabelon for synkronisering mellem FO.CDS Kreditorkontakter V2 til CDS.Contacts. Kræver ny pakke \[Dynamics365SupplyChainExtended\].**
 
 5. Tilføj kolonnerne **InvoiceAccount** og **ContactPersonId** igen i tilknytningen **Debitorer V3 (konti)**, og gem tilknytningen. Nu er både kolonnen **InvoiceAccount** og kolonnen **ContactPersonId** igen en del af den direkte synkroniseringstilstand. I det næste trin udfører du den første synkronisering for disse kolonner.
-6. Kør den første synkronisering igen for tilknytningen **Debitorer V3 (konti)**. Da ændringssporing er slået fra, bliver dataene for **InvoiceAccount** og **ContactPersonId** synkroniseret fra appen Finans og drift til Dataverse.
-7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til appen Finans og drift, skal du bruge et dataintegrationsprojekt.
+6. Kør den første synkronisering igen for tilknytningen **Debitorer V3 (konti)**. Da ændringssporing er slået fra, bliver dataene for **InvoiceAccount** og **ContactPersonId** synkroniseret fra programmer til finans og drift til Dataverse.
+7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til programmer til finans og drift, skal du bruge et dataintegrationsprojekt.
 
-    1. I Power Apps skal du oprette et dataintegrationsprojekt mellem tabellerne **Sales.Account** og **Finans- og driftsapps.Debitorer V3**. Dataretningen skal ligge fra Dataverse til appen Finans og drift. Da **InvoiceAccount** er en ny attribut i dobbeltskrivning, kan det være en god idé at springe den første synkronisering over for den. Du kan finde flere oplysninger under [Integrere data i Dataverse](/power-platform/admin/data-integrator).
+    1. I Power Apps skal du oprette et dataintegrationsprojekt mellem tabellerne **Sales.Account** og **programmer til finans og drift.Debitorer V3**. Dataretningen skal ligge fra Dataverse til programmer til finans og drift. Da **InvoiceAccount** er en ny attribut i dobbeltskrivning, kan det være en god idé at springe den første synkronisering over for den. Du kan finde flere oplysninger under [Integrere data i Dataverse](/power-platform/admin/data-integrator).
 
         Følgende illustration viser et projekt, der opdaterer **CustomerAccount** og **ContactPersonId**.
 
         ![Dataintegrationsprojektet, der skal opdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
-    2. Tilføj firmakriterierne i filteret på Dataverse-siden, så kun de rækker, der opfylder filterkriterierne, opdateres i appen Finans og drift. Hvis du vil tilføje et filter, skal du vælge filterknappen. I dialogboksen **Rediger forespørgsel** kan du tilføje en filterforespørgsel som **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Tilføj firmakriterierne i filteret på Dataverse-siden, så kun de rækker, der opfylder filterkriterierne, opdateres i programmer til finans og drift. Hvis du vil tilføje et filter, skal du vælge filterknappen. I dialogboksen **Rediger forespørgsel** kan du tilføje en filterforespørgsel som **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [BEMÆRK] Hvis filterknappen ikke er til stede, skal du oprette en supportanmodning for at bede dataintegrationsteamet om at aktivere filtreringsfunktionen på din lejer.
 
@@ -201,7 +201,7 @@ Hvis der er rækker i debitortabellen med værdier i kolonnerne **ContactPersonI
 
     Den første synkronisering af rækkerne er nu fuldført.
 
-8. Aktivér ændringssporing igen i appen Finans og drift for tabellen **Debitorer V3**.
+8. Aktivér ændringssporing igen i programmer til finans og drift for tabellen **Debitorer V3**.
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Første synkroniseringsfejl på oversigter med mere end 10 opslagsfelter
 
@@ -227,12 +227,21 @@ Du kan få vist følgende fejlmeddelelse, når du prøver at køre den første s
 
 *Partnummer blev ikke fundet i Dataverse.*
 
-Der er angivet et interval på **DirPartyCDSEntity** i Finans og driftsapps, der filtrerer parter af typen **Person** og **Organisation**. Som følge heraf vil en første synkronisering af tilknytningen **CDS-parter – msdyn_parties** ikke synkronisere parter af andre typer, herunder **Juridisk enhed** og **Driftsenhed**. Når den første synkronisering køres for **CDS-parts postadresser (msdyn_partypostaladdresses)** eller **Partkontakter V3 (msdyn_partyelectronicaddresses)**, kan du få modtage fejlmeddelelsen.
+Der er angivet et interval på **DirPartyCDSEntity** i programmer til finans og drift, der filtrerer parter af typen **Person** og **Organisation**. Som følge heraf vil en første synkronisering af tilknytningen **CDS-parter – msdyn_parties** ikke synkronisere parter af andre typer, herunder **Juridisk enhed** og **Driftsenhed**. Når den første synkronisering køres for **CDS-parts postadresser (msdyn_partypostaladdresses)** eller **Partkontakter V3 (msdyn_partyelectronicaddresses)**, kan du få modtage fejlmeddelelsen.
 
-Vi arbejder på en rettelse for at fjerne parttypeintervallet på Finans og drift-enheden, så parter af alle typer kan synkroniseres med Dataverse uden problemer.
+Vi arbejder på en rettelse for at fjerne parttypeintervallet på finans og drift-enheden, så parter af alle typer kan synkroniseres med Dataverse uden problemer.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Er der problemer med ydeevnen under den første synkronisering af debitor- eller kontaktdata?
 
 Hvis du har kørt den første synkronisering af data for **Debitor** og har aktive tilknytninger af typen **Debitor**, og du derefter kører den første synkronisering af data for **Kontakter**, kan der være problemer med ydeevnen under indsættelser og opdateringer til tabellerne **LogisticsPostalAddress** og **LogisticsElectronicAddress** for adresser for **Kontakter**. Samme globale postadresse og elektroniske adressetabeller spores for **CustCustomerV3Entity** og **VendVendorV2Entity**, og dobbeltskrivning forsøger at oprette flere forespørgsler for at skrive data til en anden side. Hvis du allerede har kørt den første synkronisering for **Debitor**, skal du stoppe den tilsvarende oversigt, mens du kører den første synkronisering af data for **Kontakter**. Gør det samme med data for **Kreditor**. Når den første synkronisering er fuldført, kan du køre alle oversigterne ved at springe over den første synkronisering.
 
+## <a name="float-data-type-that-has-a-zero-value-cant-be-synchronized"></a>Floatdatatype, der har en nulværdi, kan ikke synkroniseres
+
+Den første synkronisering kan mislykkes for poster, der har en nulværdi for et prisfelt, f.eks. **Fast betalingsbeløb** eller **Beløb** i transaktionsvalutaen. Her vil du så modtage en fejlmeddelelse, der ligner følgende eksempel:
+
+*Der opstod en fejl under validering af inputparametrene: Microsoft.OData.ODataException: Kan ikke konvertere konstanten '000000' til den forventede type'Edm. Decimaltal,...*
+
+Problemet er med værdien for **Landestandard for sprog** under **Kildedataformater** i modulet **Datastyring**. Rediger værdien i feltet **Landestandard for sprog** for **en-us**, og prøv derefter igen.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

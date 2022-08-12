@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2c32ef546a5bc74e090591c0ac9d51529299041
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905309"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112188"
 ---
 # <a name="integrated-vendor-master"></a>Integreret kreditormaster
 
@@ -37,13 +37,13 @@ Hvis du fortsat vil gemme kreditordata i tabellen **Konto/Kontaktperson**, kan d
 ![Udvidet kreditordataflow.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Hvis du bruger Power Apps-portaler til leverandørselvbetjening, kan kreditoroplysningerne flyde direkte til Finans- og driftsapps.
+> Hvis du bruger Power Apps-portaler til leverandørselvbetjening, kan kreditoroplysningerne flyde direkte til programmer til finans og drift.
 
 ## <a name="templates"></a>Skabeloner
 
 Kreditordata indeholder alle oplysninger om kreditoren, f.eks kreditorens gruppe, adresser, kontaktoplysninger, betalingsprofil og fakturaprofil. En samling af tabeltilknytninger arbejder sammen under interaktion med kreditordata, som vist i følgende tabel.
 
-Finans og drift-apps | Kundeengagementapps     | Betegnelse
+Programmer til finans og drift | Kundeengagementapps     | Betegnelse
 ----------------------------|-----------------------------|------------
 [CDS kontakter V2](mapping-reference.md#115) | kontakter | Denne skabelon synkroniserer alle primære, sekundære og tertiære kontaktoplysninger for både kunder og leverandører.
 [Foranstillede navne](mapping-reference.md#155) | msdyn_nameaffixes | Denne skabelon synkroniserer referencedata for foranstillede navne for både kunder og leverandører.
@@ -52,8 +52,9 @@ Finans og drift-apps | Kundeengagementapps     | Betegnelse
 [Betalingsplanlinjer](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkroniserer betalingsdagsskemalinjers referencedata for både kunder og leverandører.
 [Betalingsplan](mapping-reference.md#160) | msdyn_paymentschedules | Denne skabelon synkroniserer referencedata for betalingsskemaer for både kunder og leverandører.
 [Betalingsbetingelse](mapping-reference.md#161) | msdyn_paymentterms | Denne skabelon synkroniserer referencedata for betalingsbetingelser (betalingsvilkår) for både kunder og leverandører.
-[Kreditorer V2](mapping-reference.md#202) | msdyn_vendors | Virksomheder, der bruger en tilpasset løsning til leverandører, kan drage fordel af det standardkoncept for leverandører, der introduceres i Dataverse på grund af integrationen af Finans og drift-apps.
+[Kreditorer V2](mapping-reference.md#202) | msdyn_vendors | Virksomheder, der bruger en tilpasset løsning til leverandører, kan drage fordel af det standardkoncept for leverandører, der introduceres i Dataverse på grund af integrationen af programmer til finans og drift.
 [Kreditorgrupper](mapping-reference.md#200) | msdyn_vendorgroups | Denne skabelon synkroniserer oplysninger om leverandørgrupper.
 [Kreditorbetalingsmetode](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Denne skabelon synkroniserer oplysninger om leverandørers betalingsmetoder.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

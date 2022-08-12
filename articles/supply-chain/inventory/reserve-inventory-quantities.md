@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899434"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201860"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantal
 
@@ -75,7 +75,7 @@ Ved en salgsordre, der skal reserveres automatisk og leveres den 4. april 2016, 
 
 Der er to indstillinger, der er relateret til reservationer på siden **Parametre til lager- og lokationsstyring**:
 -   Med indstillingen **Reserver bestilte varer** under fanen **Generelt** kan du reservere varetilgange, som kun bestilles ud fra vareafgange i Debitor, Projektstyring og regnskab og Produktionsstyring. Hvis du fravælger denne indstilling, kan du kun reservere varer, som fysisk er modtaget på lageret. Hvis en bestemt vare er konfigureret til at acceptere negativt lager, er dette felt ikke relevant.
--   Indstillingen **Reserver varer automatisk** under fanen **Transport** bestemmer standardindstillingen, hvis varerne er reserveret automatisk til flytteordrer. Indstillingen kan tilsidesættes for enkelte flytteordrer.
+-   Indstillingen **Reserver varer automatisk** under fanen **Overførsel** bestemmer standardindstillingen, hvis varerne er reserveret automatisk til flytteordrer. Indstillingen kan tilsidesættes for enkelte flytteordrer.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Politikker for lagerreservation på siden Produktionsparametre
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876319"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129506"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
@@ -90,6 +90,14 @@ Du kan konfigurere opdelingen af salgsordrekundefakturaer efter lokation eller e
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris eller omkostning
 Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris og omkostning. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris og nulomkostning** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris og omkostning. Hvis denne indstilling er valgt, indeholder bilaget 0,00 poster for bogføringstyperne **Debitorsaldo** og **Omsætning**. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har pris- eller omkostningsoplysninger, ikke på kontoen **Omsætning**. Bilaget vil i stedet indeholde en post på 0,00 for bogføringstypen **Debitorsaldo**.
+
+## <a name="line-creation-sequence-number-information"></a>Oplysninger om nummerserie til linjeoprettelse
+Når du bogfører debitorfakturalinjer, har du mulighed for at oprette sekvensnumre til oprettelse af linjer i rækkefølge. Der tildeles sekvensnumre til linjeoprettelse under bogføringsprocessen. Hvis du tillader ikke-fortløbende nummerering, kan du forbedre ydeevnen for bogføring af debitorfakturaer. Sekvensnumre til linjeoprettelse kan bruges af tredjepartsintegrationer, der forventer fortløbende bestillinger. Spørg it-afdelingen om eventuelle udvidelser, der kan integreres med nummerserier til oprettelse af linjer.
+
+Hvis du vil oprette eller have vist disse oplysninger, skal du under fanen **Opdateringer** på siden **Debitorparametre** angive indstillingen **Tildel fortløbende linjenumre ved bogføring af debitorfakturalinjer**:
+
+- Angiv indstillingen **Nej** for at bruge ikke-fortløbende nummerering til nummerserier til linjeoprettelse.
+- Angiv denne indstilling til **Ja**, hvis du vil bruge fortløbende nummerering. Du skal angive indstillingen til **Ja** for juridiske enheder, der har en primær adresse i Italien. Du skal også angive den til **Ja**, hvis en flybillet til **CustInvoiceTransRandLineCreationSeqNumFlight** er deaktiveret.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Yderligere indstillinger, der ændrer funktionsmåden for bogføring
 Følgende felter ændrer funktionaliteten af bogføringsprocessen.

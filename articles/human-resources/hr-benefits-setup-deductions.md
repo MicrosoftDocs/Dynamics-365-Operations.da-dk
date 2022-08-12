@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694901"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066786"
 ---
 # <a name="configure-deductions"></a>Konfigurere fradrag
 
@@ -45,7 +45,7 @@ Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hv
    | **Overskrift** | Overskriftskoden fra det lønsystem, som dette fradrag vil bruge til medarbejderdelen af fradraget ved behandling af frynsegoder i forbindelse med løn. Den bruges, når du bruger en tredjepartslønudbyder. |
    | **Reference for medarbejders lønfradrag** | Fradragskoden fra det lønsystem, som dette fradrag bruger for medarbejderdelen af fradraget, når der behandles frynsegoder til løn. |
    | **Beløbsoverskrift** | Overskriftskoden fra det lønsystem, som dette fradragsbeløb vil bruge til medarbejderdelen af fradraget ved behandling af frynsegoder i forbindelse med løn. Den bruges normalt, når du bruger en tredjepartslønudbyder. |
-   | **Kan slette** | Angiver, om en eksporteret værdi fra Dynamics 365 for Finance and Operations kan forårsage, at værdien slettes i lønsystemet. |
+   | **Kan slette** | Angiver, om en eksporteret værdi fra Dynamics 365 Finance kan forårsage, at værdien slettes i lønsystemet. |
    | **Parrede kolonner** | Angiver, om der skal eksporteres overskrifts- og fradragsbeløb i parrede tilstødende kolonner til lønsystemet. |
    | **Skift ikrafttrædelsesdato** | Den dato, hvor ændringen af frynsegodefradraget træder i kraft. På denne dato ændrer systemet automatisk frynsegodefradraget og opdaterer alle de frynsegodeplaner, der er tilknyttet fradraget, hvis du kører processen **Opdatering af ændret fradrag**. |
    | **Ændring af fradrag fuldført** | Afkrydsningsfeltet **Ændret fradrag er fuldført** markeres automatisk, når ændringen af frynsegodefradraget er fuldført af fradrag af behandlingen af opdatering af ændret fradrag. |
@@ -56,3 +56,4 @@ Du kan bruge fradrag i Microsoft Dynamics 365 Human Resources til at afgøre, hv
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

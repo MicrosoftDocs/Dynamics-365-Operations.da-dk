@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960166"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065591"
 ---
 # <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
@@ -56,7 +56,7 @@ Tre overordnede temaer er implementeret i behovsprognoser:
 - **Modularitet** – behovsprognoser er modulære og lette at konfigurere. Du kan slå funktionen til og fra ved at ændre konfigurationsnøglen under **Handel** &gt; **Lagerbudget** &gt; **Behovsprognoser**.
 - **Genbrug af Microsoft Stack** – Med Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt lave forsøg med fremtidsanalyser, f.eks. forsøg med behovsestimeringer, ved at bruge algoritmerne R eller Python-programmeringssprogene og en enkel grænseflade med træk og slip.
   - Du kan downloade forsøg med behovsprognoser, ændre dem, så de svarer til dine forretningsmæssige behov, udgive dem som en webtjeneste på Azure og bruge dem til at generere behovsprognoser. Eksperimenterne kan downloades, hvis du har købt et abonnement på Supply Chain Management til en produktionsplanlægger som bruger på enterprise-niveau.
-  - Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Hvor forsøg med behovsprognoser automatisk integreres i Supply Chain Management, skal kunder og partnere kunne håndtere integrationen af de forsøg, de downloader fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Forsøg fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) er derfor ikke ligetil at bruge som forsøg med behovsprognoser i Finance and Operations. Du skal ændre koden for forsøg, så de bruger Finance and Operations' API (application programming interface).
+  - Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Hvor forsøg med behovsprognoser automatisk integreres i Supply Chain Management, skal kunder og partnere kunne håndtere integrationen af de forsøg, de downloader fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Forsøg fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) er derfor ikke ligetil at bruge som forsøg med behovsprognoser i finans og drift. Du skal ændre koden for forsøg, så de bruger finans og drift-API (application programming interface).
   - Du kan oprette dine egne forsøg i Microsoft Azure Machine Learning Studio (klassisk), udgive dem som tjenester på Azure og bruge dem til at generere behovsprognoser.
   - Hvis du ikke har brug for høj ydeevne, eller hvis du ikke kræver, at en stor mængde data skal behandles, kan du bruge det gratis Machine Learning-niveau. Vi anbefaler, at du altid starter fra dette niveau, især under implementerings- og testfaserne. Hvis du kræver højere ydeevne og ekstra lagerplads, kan du bruge Machine Learning-standardniveauet. Dette niveau kræver et Azure-abonnement og indebærer ekstra omkostninger. Få oplysninger om priser på Machine Learning under [Machine Learning Studio-prisssætning](https://aka.ms/machine-learning-price-info).
 - **Prognosereduktion ved ethvert afkoblingspunkt** – Behovsprognoser bygger på denne funktion, hvor du kan forudsige både afhængigt og uafhængigt behov ved et hvilket som helst afkoblingspunkt.
@@ -101,3 +101,4 @@ Bemærk, at måleenheden for efterspørgselsprognose ikke har nogen specifik men
 - [Webinar: Behovsprognose med Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856042"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066540"
 ---
 # <a name="batch-balancing"></a>Batchtilpasning
 
@@ -165,22 +165,22 @@ I underprocesserne til afstemning af batchstofferne beregnes mængden af stoffer
 
 ### <a name="confirm-and-release-the-formula"></a>Bekræft og frigiv formlen
 
-Når stofmængderne er beregnet, kan du bekræfte og frigive formlen. Frigivelsesprocessen varierer, afhængigt af om produkterne er aktiveret til lokationsstyringsprocesserne:
+Når stofmængderne er beregnet, kan du bekræfte og frigive formlen. Frigivelsesprocessen varierer, afhængigt af om produkterne er aktiveret til lokationsstyringsprocesserne (WMS):
 
-- Hvis et produkt er aktiveret til lokationsstyringsprocesserne, frigives formellinjen til lagerstedet i overensstemmelse med principperne for lokationsstyringsprocesserne. Formellinjen frigives i mængder, der svarer til de mængder, der er afstemt, og den er frigives for bestemte batchkørsler, der er valgt for de aktive stoffer.
+- Hvis et produkt er aktiveret til WMS, frigives formellinjen til lagerstedet i overensstemmelse med principperne for WMS. Formellinjen frigives i mængder, der svarer til de mængder, der er afstemt, og den er frigives for bestemte batchkørsler, der er valgt for de aktive stoffer.
 
     > [!NOTE]
     > Formellinjer kan kun frigives til lagerstedet som del af batchtilpasningsprocessen. Selvom der er andre muligheder for frigivelse af produktionsmaterialer til lagerstedet, kan de ikke bruges til formellinjerne.
 
-- Hvis et produkt ikke er aktiveret til lokationsstyringsprocesserne, oprettes en plukliste til produktion for produktet, når du bekræfter og frigiver formlen.
+- Hvis et produkt ikke er aktiveret til WMS, oprettes en plukliste til produktion for produktet, når du bekræfter og frigiver formlen.
 
-I en enkelt formel kan du kombinere produkter, der er aktiveret til lokationsstyringsprocesser, og produkter, der ikke er aktiveret til lokationsstyringsprocesser. Når de to typer produkter medtages i én formel, frigives de produkter, der er aktiveret til lokationsstyringsprocesser, til lagerstedet. For de produkter, der ikke er aktiveret til lokationsstyringsprocesserne, oprettes en plukliste, når formlen er bekræftet og frigivet.
+I en enkelt formel kan du kombinere produkter, der er aktiveret til lokationsstyringsprocesser, og produkter, der ikke er aktiveret til lokationsstyringsprocesser. Når de to typer produkter medtages i én formel, frigives de produkter, der er aktiveret til WMS, til lagerstedet. For de produkter, der ikke er aktiveret til WMS, oprettes en plukliste, når formlen er bekræftet og frigivet.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Batchordrer, der ikke kan anvendes til batchtilpasning
 
 Der er to undtagelser til reglen om, at batchordrer kan anvendes til batchtilpasning, hvis formlen har mindst én formellinje, hvor **Stoftype** er *Aktiv*.
 
-1. Hvis en formel indeholder et aktivt stof for et produkt, der er aktiveret til lokationsstyringsprocesser, men batchnummeret er under lokation i reservationshierarkiet, kan batchtilpasning ikke bruges på batchordren.
+1. Hvis en formel indeholder et aktivt stof for et produkt, der er aktiveret til WMS, men batchnummeret er under lokation i reservationshierarkiet, kan batchtilpasning ikke bruges på batchordren.
 1. Hvis formelmåleenheden er forskellig fra det aktive stofs lagermåleenhed, kan batchordren ikke anvendes til batchjustering.
 
 En batchordre, der ikke er tilgængelig for batchtilpasning, gennemgår den almindelige procescyklus for batchordrer.

@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874806"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111654"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat orkestreringspakke med program til dobbeltskrivning
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874806"
 Tidligere var dobbeltskrivningsprogrammets orkestreringspakke en enkelt pakke, der indeholdt følgende løsninger:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finans og drift Common Anchor
-- Dynamics 365 Finans og drift Dual Write Entity Maps
+- Dynamics 365 Finance and operations Common Anchor
+- Dynamics 365 finans og drift Dual Write Entity Maps
 - Dynamics 365 Aktivadministration-app
 - Dynamics 365 Aktivadministration
 - HCM, fælles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finans og drift Common
+- Dynamics 365 Finance and operations Common
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
@@ -51,14 +51,14 @@ Med pakken Programkerne til dobbeltskrivning kan brugerne installere og konfigur
 | Entydigt navn                           | Vist navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finans og drift Common |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhedstilknytninger for programkerne til dobbeltskrivning   |
 | msdyn_DualWriteAppCoreAnchor          | Programkerneanker til dobbeltskrivning        |
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps     | Kundeengagementapps                    |
+| Programmer til finans og drift     | Kundeengagementapps                    |
 |---------------------------------|---------------------------------------------|
 | Driftsenhed                  | msdyn_internalorganizations                 |
 | Organisationshierarki          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Pakken Dobbeltskrivning til Human Resources indeholder de løsninger og tilknytn
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps | Kundeengagementapps         |
+| Programmer til finans og drift | Kundeengagementapps         |
 |-----------------------------|----------------------------------|
 | Etnisk oprindelse              | cdm_ethnicorigins                |
 | Kompensation - jobfunktion   | cdm_jobfunctions                 |
@@ -119,9 +119,9 @@ Pakken Dobbeltskrivning til forsyningskæde indeholder de løsninger og tilknytn
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps                 | Kundeengagementapps                      |
+| Programmer til finans og drift                 | Kundeengagementapps                      |
 |---------------------------------------------|-----------------------------------------------|
-| Objekter                                       | uoms                                          |
+| Enheder                                       | uoms                                          |
 | CDS-salgsordrehoveder                     | salesorders                                   |
 | CDS-salgsordrelinjer                       | salesorderdetails                             |
 | CDS-salgstilbudshoved                  | pristilbud                                        |
@@ -197,9 +197,9 @@ Pakken Dobbeltskrivning til Finance indeholder de løsninger og tilknytninger, d
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps             | Kundeengagementapps        |
+| Programmer til finans og drift             | Kundeengagementapps        |
 |-----------------------------------------|---------------------------------|
-| Grupper for indeholdt skat                  | msdyn_withholdingtaxgroups      |
+| Grupper for A-skat                  | msdyn_withholdingtaxgroups      |
 | CDS kontakter V2 (kunde)              | kontakter                        |
 | CDS kontakter V2 (leverandør)                | kontakter                        |
 | Debitorer V3                            | kontakter                        |
@@ -274,7 +274,7 @@ Pakken Dobbeltskrivning til Aktivadministration indeholder de løsninger og tilk
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps                           | Kundeengagementapps                |
+| Programmer til finans og drift                           | Kundeengagementapps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Garanti af Aktivadministration                             | msdyn_warranties                        |
 | Modeller i Aktivadministration                               | msdyn_models                            |
@@ -314,7 +314,7 @@ Pakken til dobbeltskrivningspart og globalt adressekartotek indeholder følgende
 
 Følgende tilknytninger er tilgængelige i denne pakke:
 
-| Finans og drift-apps | Kundeengagementapps | 
+| Programmer til finans og drift | Kundeengagementapps | 
 |-----------------------------|--------------------------|
 | CDS-parter | msdyn_parties | 
 | Lokaliteter for CDS-postadresse | msdyn_postaladdresscollections | 
@@ -344,3 +344,4 @@ Løsningerne til dobbeltskrivningspart og den globale adressebog afhænger af f�
 - Pakken Programkerne til dobbeltskrivning
 - Pakken Dobbeltskrivning til Finance
 - Pakken Dobbeltskrivning til forsyningskæde
+

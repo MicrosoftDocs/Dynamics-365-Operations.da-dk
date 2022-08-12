@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070403"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling af fastvægtprodukter med lokationsstyring
 
@@ -82,7 +82,7 @@ Hvis den faktiske vægt registreres på pakkestationen under containerpakningspr
 > [!NOTE]
 > Da indstillingen **Emballage** medfører, at lageret opdateres med den gennemsnitlige plukkede vægt, kan det udløse en uoverensstemmelse, der kan forårsage en regulering af fastvægtprofit/tab og/eller en difference mellem den disponible lagervægt og fastvægtkoden.
 
-Ved interne lokationsstyringsprocesser, som f.eks. rettelser til optælling og regulering, kan du angive, om vægten skal registreres. Hvis den ikke registreres, bruges den nominelle vægt. Andre indstillinger giver dig mulighed for at registrere vægt pr. fastvægtenhed og pr. optællingsantal.
+Ved interne processer, som f.eks. rettelser til optælling og regulering, kan du angive, om vægten skal registreres. Hvis den ikke registreres, bruges den nominelle vægt. Andre indstillinger giver dig mulighed for at registrere vægt pr. fastvægtenhed og pr. optællingsantal.
 
 Du kan også definere, hvordan vægten registreres. I et af de to vigtigste flows spores fastvægtkoder og bruges til at registrere vægten. I det andet flow spores fastvægtkoder ikke.
 
@@ -183,7 +183,7 @@ Ikke alle arbejdsgange understøtter behandling af fastvægtprodukter med lokati
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andre begrænsninger og funktionsmåder for fastvægtproduktbehandling med lokationsstyring
 
 - Under plukprocesser, hvor brugeren ikke bliver bedt om at identificere sporingsdimensioner, udføres vægttildelingen ud fra den gennemsnitlige vægt. Dette sker, når f.eks. en kombination af sporingsdimensioner bruges på samme sted, og når der kun er en sporingsdimensionsværdi tilbage på stedet, efter at en bruger har behandlet pluk.
-- Når lageret er reserveret et fastvægtprodukt, der er konfigureret til lokationsstyringsprocesser, foretages reservationen ud fra den mindste vægt, der er defineret, selvom dette antal er det sidste antal til håndtering af beholdningen. Denne funktionsmåde adskiller sig fra funktionsmåden for varer, der ikke er konfigureret til lokationsstyringsprocesser. Der er én undtagelse til denne begrænsning. Ved produktionsplukning, når det sidste håndteringsantal for et fastvægtprodukt, der er serienummerstyret, plukkes, bruges den faktiske vægt.
+- Når lageret er reserveret et fastvægtprodukt, der er konfigureret til lokationsstyringsprocesser (WMS), foretages reservationen ud fra den mindste vægt, der er defineret, selvom dette antal er det sidste antal til håndtering af beholdningen. Denne funktionsmåde adskiller sig fra funktionsmåden for varer, der ikke er konfigureret til WMS. Der er én undtagelse til denne begrænsning. Ved produktionsplukning, når det sidste håndteringsantal for et fastvægtprodukt, der er serienummerstyret, plukkes, bruges den faktiske vægt.
 - Processer, der bruger vægten som en del af kapacitetsberegninger (bølgegrænser, maksimale arbejdspauser, containermaksimumværdier, lokalitetsbelastningskapaciteter osv.), bruger ikke den faktiske vægt af lageret. I stedet er processerne baseret på den fysiske håndteringsvægt, der er defineret for produktet.
 - Generelt understøttes Commerce-funktioner ikke for fastvægtprodukter.
 - For fastvægtprodukter kan lagerstatus ikke opdateres fra **Ændring af status for lagersted**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022558"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167755"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -92,9 +92,9 @@ Fra og med Supply Chain Management version 10.0.25 er denne funktion som standar
 
 Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
 
-Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af avancerede lagerstedsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion, skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
+Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af lokationsstyringsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion, skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
 
-- *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
+- *Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
 - *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
 
 > [!IMPORTANT]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b81eb8e0be4c7d7357a6b8b7b5f0ac025b9ab8ca
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850058"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124252"
 ---
 # <a name="alerts-overview"></a>Oversigt over påmindelser
 
@@ -77,13 +77,13 @@ En påmindelsesregel har fem komponenter
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Videoen [Sådan bruges påmindelser til at overvåge filtrerede data](https://youtu.be/ZYKMcv6kl9s) (vises ovenfor) er inkluderet på [Finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
+Videoen [Sådan bruges påmindelser til at overvåge filtrerede data](https://youtu.be/ZYKMcv6kl9s) (vises ovenfor) er inkluderet på [finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
 
 ### <a name="alert-rule-options"></a>Indstillinger for påmindelsesregel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Videoen [Indstillinger for påmindelsesregel](https://youtu.be/cpzimwOjicM) (vist ovenfor) er inkluderet på [Finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
+Videoen [Indstillinger for påmindelsesregel](https://youtu.be/cpzimwOjicM) (vist ovenfor) er inkluderet på [finans- og driftsafspilningslisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgængelig på YouTube.
 
 
 

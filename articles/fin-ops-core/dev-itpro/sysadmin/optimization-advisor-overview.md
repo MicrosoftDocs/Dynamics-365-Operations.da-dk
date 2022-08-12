@@ -1,6 +1,6 @@
 ---
 title: Oversigt over optimeringsrådgiver
-description: Denne artikel beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Finans og drift.
+description: Denne artikel beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af finans og drift.
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865855"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109034"
 ---
 # <a name="optimization-advisor-overview"></a>Oversigt over optimeringsrådgiver
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Finans og drift.
+Denne artikel beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af finans og drift.
 
 ## <a name="overview"></a>Overblik
 
@@ -44,7 +44,7 @@ Der gælder standardsikkerhedspolitikker for optimeringsmuligheder. Optimeringsm
 
 Når du udfører en handling i forbindelse med visse optimeringsmuligheder, beregner systemet virkningen af muligheden med hensyn til reduktionen i kørselstiden for forretningsprocesser. Desværre er denne funktion ikke tilgængelig for alle optimeringsmuligheder.
 
-Hvis du vil vide mere om optimeringsrådgiver, kan du se den korte video om [Optimeringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Hvis du vil vide mere om optimeringsrådgiver, kan du se den korte video [Optimeringsrådgiver i Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Optimeringsregler
 
@@ -90,7 +90,7 @@ Hvis du vil deaktivere evalueringen af bestemte regler, skal du vælge den mulig
 
 [Oprette regler for optimeringsrådgiver](./create-rules-optimization-advisor.md)
 
-[Optimeringsrådgiver i Dynamics 365 for Finance and Operations (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimeringsrådgiver i Dynamics 365 Finance (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

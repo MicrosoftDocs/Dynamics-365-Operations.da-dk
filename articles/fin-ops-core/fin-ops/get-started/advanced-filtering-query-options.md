@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856912"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123942"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
@@ -122,9 +122,9 @@ I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der 
 <td>To på hinanden følgende dobbelte anførselstegn (<strong>""</strong>) finder rækker uden værdi for den aktuelle kolonne.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finans- og driftsforespørgsel</span>) (Finans- og driftsforespørgsel mellem parenteser)</td>
+<td>(<span class="code">Finans- og driftsforespørgsel</span>) (finans- og driftsforespørgsel mellem parenteser)</td>
 <td>Svarende til en defineret forespørgsel</td>
-<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af Finans- og driftsforespørgselssproget.</td>
+<td>Skriv en forespørgsel som en SQL-sætning mellem parenteser ved hjælp af finans- og driftsforespørgselssproget.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        som et eksempel på en filterbetingelse i et felt fra rodens datakilden samt et felt fra en anden datakilde (for siden Alle kunder)</td>
 </tr>

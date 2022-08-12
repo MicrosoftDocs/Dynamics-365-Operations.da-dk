@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849294"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065548"
 ---
 # <a name="flushing-principles"></a>Rydningsprincipper
 
@@ -50,7 +50,7 @@ Rydningsprincipperne konfigureres i et hierarki af standardværdier. Hierarkiet 
 ## <a name="description-of-the-flushing-principles"></a>Beskrivelse af rydningsprincipperne
 
 ### <a name="manual"></a>Manuelt
-Det manuelle rydningsprincippet angiver, at registreringen af materialeforbrug er en manuel handling. Dette princip er relevant, hvis du f.eks. vil kunne registrere tid, og antallet af anvendte batchnumre eller serienumre skal tages i betragtning med henblik på sporing. Manuelt forbrug registreres i en produktionspluklistekladde. For varer, der er aktiveret til avancerede lagerprocesser, kan der anvendes en håndholdt proces.
+Det manuelle rydningsprincippet angiver, at registreringen af materialeforbrug er en manuel handling. Dette princip er relevant, hvis du f.eks. vil kunne registrere tid, og antallet af anvendte batchnumre eller serienumre skal tages i betragtning med henblik på sporing. Manuelt forbrug registreres i en produktionspluklistekladde. For varer, der er aktiveret til lokationsstyringsprocesser (WMS), kan der anvendes en håndholdt proces.
 
 ### <a name="start"></a>Start
 Startrydningsprincippet angiver, at materialer forbruges automatisk, når produktionsordren startes. Mængden af materiale, der forbruges, er proportional med det antal, der startes. Når startrydningsprincippet bruges sammen med produktionsudførelsessystemet, kan det også bruges til at rydde materialer, når en handling eller et procesjob startes. Dette princip er relevant, hvis f.eks. afvigelsen i forbruget er lav, materialerne er af lav værdi, der ikke er nogen krav til sporing, eller der er en kort kørselstid på handlinger. 

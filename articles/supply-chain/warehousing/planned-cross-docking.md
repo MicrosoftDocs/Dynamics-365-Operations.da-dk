@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070283"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -118,7 +118,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
     - **Forsyningskilde:** *Indkøbsordre*
 
 > [!NOTE]
-> Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt cross-docking-skabelon bruges. Forespørgslen på cross-docking-skabeloner har kun tabellen *InventTable* (varer) og den indre join-tabel *WHSInventTable* (WHS-varer). Hvis du vil føje andre tabeller til forespørgslen, kan du sammenkæde dem ved kun at bruge *eksisterende joinforbindelser* eller *ikke-eksisterende joinforbindelser*. Når du filtrerer på de joinforbundne tabeller, hentes der en post fra hovedtabellen for hver tilsvarende post i den joinforbundne tabel. Hvis join-typen er *eksisterende joinforbindelse*, afsluttes søgningen, når det første match er fundet. Hvis du f.eks. joinforbinder tabellen med salgsordrelinjer til varetabellen, valideres og returneres varer, hvor mindst én salgsordrelinje har den definerede betingelse. Dataene hentes reelt fra den overordnede tabel (varer) og ikke fra den underordnede tabel (salgsordrelinjen). Derfor kan der ikke som standard foretages filtrering efter kildedokumenter som f.eks. salgsordrelinjer eller kunder.
+> Du kan konfigurere en forespørgsel til at styre, hvornår en bestemt cross-docking-skabelon bruges. Forespørgslen på cross-docking-skabeloner har kun tabellen *InventTable* (varer) og den indre join-tabel *WHSInventTable* (WMS-varer). Hvis du vil føje andre tabeller til forespørgslen, kan du sammenkæde dem ved kun at bruge *eksisterende joinforbindelser* eller *ikke-eksisterende joinforbindelser*. Når du filtrerer på de joinforbundne tabeller, hentes der en post fra hovedtabellen for hver tilsvarende post i den joinforbundne tabel. Hvis join-typen er *eksisterende joinforbindelse*, afsluttes søgningen, når det første match er fundet. Hvis du f.eks. joinforbinder tabellen med salgsordrelinjer til varetabellen, valideres og returneres varer, hvor mindst én salgsordrelinje har den definerede betingelse. Dataene hentes reelt fra den overordnede tabel (varer) og ikke fra den underordnede tabel (salgsordrelinjen). Derfor kan der ikke som standard foretages filtrering efter kildedokumenter som f.eks. salgsordrelinjer eller kunder.
 
 ### <a name="create-a-work-class"></a>Oprette en arbejdsklasse
 

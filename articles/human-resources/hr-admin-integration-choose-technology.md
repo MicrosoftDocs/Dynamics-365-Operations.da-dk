@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887786"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068872"
 ---
 # <a name="choose-a-data-integration-technology"></a>Vælg en dataintegrationsteknologi
 
@@ -70,7 +70,7 @@ Dataverse-tabellerne og deres tilknyttede API'er er den bedste mulighed for at f
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheder
 
-Human Resources, der primært bygger på samme platform som finans- og driftsprogrammer, tilbyder en [DMF (Data Management Framework)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
+Human Resources, der primært bygger på samme platform som programmer til finans og drift, tilbyder en [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kendt som DIXF (Data Import Export Framework). Human Resources omfatter et sæt dataenheder, du kan bruge til at importere og eksportere Human Resources-data. Selvom Dataverse-tabeller er den foretrukne grænseflade til dataintegration for Human Resources, vil DMF-enhederne stadig være nyttige i nogle situationer, f.eks. når:
 
 - Dataverse-tabeller endnu ikke er tilgængelige.
 
@@ -113,7 +113,7 @@ BYOD er velegnet til rapporteringsløsninger, dataintegrationer, datamiks, som e
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverede enheder
 
-De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [OData-tjenesten i Finans og frift](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
+De fleste DMF-enheder er også aktiveret til at få adgang via datatjenesten Human Resources (OData). Dokumentationen til [OData-tjenesten i Finans og drift](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gælder for Human Resources, bortset fra når du opretter dine egne enheder, der vises i OData.
 
 Selvom Dataverse og OData-implementeringen leveret af Dataverse (via [Dynamics 365 Web-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) foretrækkes i forhold til Human Resources-datatjenesten, har Human Resources-datatjenesten p.t. en mere komplet enhedsdækning for Human Resources-data.
 
@@ -153,3 +153,4 @@ Med så mange forskellige integrationsteknologier, der er til rådighed, kan bes
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

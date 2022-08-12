@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e98b9d772c3b42162566fe666c3eeba5d1fb2392
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881545"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108980"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Regnskabsdirektørens oversigt over Power BI-indhold
 
 [!include [banner](../includes/banner.md)] 
 
-Denne artikel beskriver Microsoft Power BI-indhold i **Regnskabsdirektørens oversigt**. Dette Power BI-indhold gælder for brugere af Microsoft Dynamics 365 for Finance and Operations version 7.2. Hvis du bruger version 7.3 eller en nyere version, skal du se under [Økonomisk indsigt](financial-insights.md).
+Denne artikel beskriver Microsoft Power BI-indhold i **Regnskabsdirektørens oversigt**. Dette Power BI-indhold gælder for brugere af Microsoft Dynamics 365 Finance version 7.2. Hvis du bruger version 7.3 eller en nyere version, skal du se under [Økonomisk indsigt](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 
@@ -44,3 +44,4 @@ I følgende tabel vises det Power BI-indhold, som rapporterne kopieres fra, og d
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

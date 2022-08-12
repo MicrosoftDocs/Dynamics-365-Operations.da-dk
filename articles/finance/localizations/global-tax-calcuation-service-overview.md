@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954515"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166833"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -29,7 +29,7 @@ Momsberegning er en særdeles skalerbar flerdimensional tjeneste, som gør det m
 Momsberegning integreres med Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Senere vil det også blive integreret i Dynamics 365 Project Operations, Dynamics 365 Commerce og andre programmer fra første part og tredjepart.
 
 > [!IMPORTANT]
-> Når du aktiverer Momsberegning, kan der udføres visse handlinger på relaterede data i et andet datacenter end det datacenter, der vedligeholder dine tjenestedata. Gennemse [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), før du aktiverer Momsberegning. Det er vigtigt for os at beskytte dine personlige oplysninger. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Når du aktiverer Momsberegning, kan der udføres visse handlinger på relaterede data i et andet datacenter end det datacenter, der vedligeholder dine tjenestedata. Gennemse [Vilkår og betingelser](https://go.microsoft.com/fwlink/?linkid=2156043), før du aktiverer Momsberegning. Det er vigtigt for os at beskytte dine personlige oplysninger. Du kan få mere at vide ved at læse vores [erklæring om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Momsberegning er et mikrotjenestebaseret momdprogram, der tilbyder eksponentiel skalerbarhed og letter opgaverne på følgende måder:
 

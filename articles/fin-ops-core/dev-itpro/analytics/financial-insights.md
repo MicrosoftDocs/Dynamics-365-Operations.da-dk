@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464903"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109106"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -41,7 +41,7 @@ Arbejdsområdet **Økonomisk analyse** fokuserer på, at du kan få vist og filt
 - [Tilføje eller redigere Power BI-visualiseringer på dashboardet](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Opsætning af Dynamics 365 Finance
-**Finans**
+**Økonomi**
 
 Kategorierne hovedkontotype og hovedkonto bruges til at udfylde relevante standardhovedkonti i regnskabet **Balance** og de forskellige regnskaber **Resultatopgørelse** i **Økonomisk analyse**.
 
@@ -78,7 +78,7 @@ På nuværende tidspunkt kan dataene i integrerede Power BI-rapporter ikke begr�
 | Programadgangsrettighed                                    | Roller | Betegnelse |
 |-----------------------------------------|-------|------------|
 | Vis økonomisk analyse i aktuelt firma | <ul><li>Bogholder</li><li>Regnskabschef</li><li>Regnskabsansvarlig</li><li>Revisor</li><li>Budgetchef</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Finansinspektør</li></ul> | Denne pligt giver adgang til økonomisk analyse. Som standard bruges det aktive firma som et filter. Du kan ikke tilføje andre juridiske enheder. |
-| Vis hele firmaets økonomisk analyse   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
+| Vis hele firmaets økonomisk analyse   | I Microsoft Dynamics 365 Finance, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Økonomirapportering vs. Økonomisk analyse
@@ -96,7 +96,7 @@ I følgende diagram til sammenligning får du hjælp til at skelne mellem de to 
 | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                                                               | Nej |
 | **Rapportere reskontrodata**                             | Ja Begrænset til kreditor, debitor                              | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv. |
 | **Rapporteringsvaluta**                                   | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta |
-| **Sikkerhed**                                             | Ja Overholder Finance-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
+| **Sikkerhed**                                             | Ja Overholder Finans-sikkerhed i trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for finans og drift) eller kun aktivt firma |
 | **Understøtte forskellige kontoplaner og regnskabsår** | Ja                                                               | Nej |
 | **Rapportere eksterne data**                              | Nej                                                                | Nej |
 | **Understøtte konsolideringer**                               | Ja                                                               | Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta |
@@ -244,3 +244,4 @@ Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: Opnå forbedret sporing af resultaterne fra genererede ER-rapporter for at sammenligne med basisværdier
-description: Denne artikel beskriver forbedringer af den grundlæggende ER-funktion i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
+description: Denne artikel beskriver forbedringer af den grundlæggende ER-funktion i Microsoft Dynamics 365 Finance version 10.0.3 (juni 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb2e76492ac9f6feb71811d0fbfd25919b59ac4d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847395"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109136"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Opnå forbedret sporing af resultaterne fra genererede ER-rapporter for at sammenligne med basisværdier
 
 [!include[banner](../includes/banner.md)]
 
-Denne artikel beskriver det første sæt forbedringer, der er foretaget i grundlagsfunktionen i ER-strukturen (Electronic reporting). Disse forbedringer er tilgængelige i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) og nyere.
+Denne artikel beskriver det første sæt forbedringer, der er foretaget i grundlagsfunktionen i ER-strukturen (Electronic reporting). Disse forbedringer er tilgængelige i Microsoft Dynamics 365 Finance version 10.0.3 (juni 2019) og nyere.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatiser indstillingen af regler for grundlag
 
@@ -208,3 +208,4 @@ Hvis du vil importere grundlagsindstillinger fra en XML-fil, der er gemt på Mic
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

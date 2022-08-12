@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771866"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108758"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 
@@ -42,7 +42,7 @@ Det er også vigtigt at overveje forholdet mellem organisationshierarkiet og øk
 
 Du skal have mindst én juridisk enhed til at repræsentere din virksomhed. En juridisk enhed kan indgå juridisk bindende kontrakter og skal udarbejde regnskaber med afrapportering af deres præstation.
 
-Juridiske enheder kan bruges til transaktioner eller til konsolidering. Det betyder, at en juridisk enhed i Finance and Operations ikke nødvendigvis repræsenterer en reel enhed i virksomheden. En virksomhed, der deltager i transaktioner, kan f.eks. eje juridiske enheder for datterselskaber. I dette scenarie kræves der en juridisk enhed transaktioner, og en virtuel juridisk enhed kræves for at konsolidere resultaterne og saldiene for juridiske enheder for datterselskaber.
+Juridiske enheder kan bruges til transaktioner eller til konsolidering. Det betyder, at en juridisk enhed i finans og drift ikke nødvendigvis repræsenterer en reel enhed i virksomheden. En virksomhed, der deltager i transaktioner, kan f.eks. eje juridiske enheder for datterselskaber. I dette scenarie kræves der en juridisk enhed transaktioner, og en virtuel juridisk enhed kræves for at konsolidere resultaterne og saldiene for juridiske enheder for datterselskaber.
 
 Interne organisationer i virksomheden, f.eks. regionale kontorer, kan repræsenteres som yderligere juridiske enheder eller driftsenheder i den primære juridiske enhed. Det kræves ikke, at en driftsenhed er en juridisk defineret organisation. Driftsenheder bruges til at styre økonomiske ressourcer og driftsprocesser i virksomheden. Afdelinger og bærere er f.eks. driftsenheder.
 
@@ -171,7 +171,7 @@ For lande/områder, der understøttes, kan de fleste lovpligtige rapporter opret
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Hvis organisationen er udformet som en driftsenhed
 
-Lovpligtige rapporter skal oprettes ved hjælp af et andet program. Du skal sikre, at data er hentet i Finance and Operations-apps for at understøtte kravene i hver driftsenhed, hvor de adskiller sig fra kravene til hovedkvarter.
+Lovpligtige rapporter skal oprettes ved hjælp af et andet program. Du skal sikre, at data er hentet i programmer til finans og drift for at understøtte kravene i hver driftsenhed, hvor de adskiller sig fra kravene til hovedkvarter.
 
 ### <a name="currency"></a>Valuta
 
@@ -242,3 +242,4 @@ Overvej følgende bedste fremgangsmåder, når du implementerer et organisations
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

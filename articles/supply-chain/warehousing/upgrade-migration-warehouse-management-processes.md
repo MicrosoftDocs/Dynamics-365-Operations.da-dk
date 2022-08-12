@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857077"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065802"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Opgradere lokationsstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
@@ -37,11 +37,11 @@ Under en opgradering identificeres alle produkter, der er knyttet til en lagring
 Efter opgraderingen kan du bruge et sæt af indstillinger i formularen **Ændre lagringsdimensionsgruppen for varer** for at fjerne blokeringen af produkter, der blev blokeret under opgraderingen, og derefter behandle transaktioner for disse produkter.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Aktivere varer i Supply Chain Management 
-Denne ændring er påkrævet, fordi i Supply Chain Management er varesporing en del af processerne for lokationsstyring. For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge processer for lokationsstyring, skal følgende konfigureres:
--   Eksisterende lagersteder skal være aktiverede til at bruge lokationsstyringsprocesser 
--   Eksisterende frigivne produkter skal være tilknyttet en lagringsdimensionsgruppe, der bruger lokationsstyringsprocesser 
+Denne ændring er påkrævet, fordi i Supply Chain Management er varesporing en del af lokationsstyringsprocesser (WMS) For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge WMS, skal følgende konfigureres:
+-   Eksisterende lagersteder skal være aktiverede til at bruge WMS 
+-   Eksisterende frigivne produkter skal være tilknyttet en lagringsdimensionsgruppe, der bruger WMS 
 
-Hvis kildelagringsdimensionsgrupper bruger lagerdimensionen Palle-id, skal lokationen af eksisterende disponibel lagerbeholdning, der bruger Palle-id som lagerdimension, være tilknyttet en lokationsprofil, hvor **Brug nummerpladesporing**-parameteren markeres. Hvis de eksisterende lagersteder ikke skal bruges til lokationsstyringsprocesser, kan du ændre lagringsdimensionsgrupper for den eksisterende disponible lagerbeholdning til grupper, der kun håndterer Lokation-, Lagersted- og Sted-lagerdimensioner. 
+Hvis kildelagringsdimensionsgrupper bruger lagerdimensionen Palle-id, skal lokationen af eksisterende disponibel lagerbeholdning, der bruger Palle-id som lagerdimension, være tilknyttet en lokationsprofil, hvor **Brug nummerpladesporing**-parameteren markeres. Hvis de eksisterende lagersteder ikke skal bruges til WMS, kan du ændre lagringsdimensionsgrupper for den eksisterende disponible lagerbeholdning til grupper, der kun håndterer Lokation-, Lagersted- og Sted-lagerdimensioner. 
 
 > [!NOTE] 
 >  Du kan ændre lagringsdimensionsgruppen for varer, også selv om åbne lagertransaktioner findes.
@@ -56,12 +56,12 @@ En vare, der skal bruges som en del af en proces for lokationsstyring, skal vær
 For at fjerne blokeringen af produkter, der blev blokeret under opgraderingen, skal du vælge en ny lagringsdimensionsgruppe for produkterne. Bemærk, at du kan ændre lagringsdimensionsgruppen, også selv om åbne lagertransaktioner findes. Hvis du vil bruge varer, der blev blokeret under opgraderingen, har du to muligheder:
 
 -   Skift lagringsdimensionsgruppen for varen til en lagringsdimensionsgruppe, der kun bruger Sted, Lagersted og Lokation som lagerdimensioner. Efter denne ændring bruges lagerdimensionen Palle-id ikke længere.
--   Skift lagringsdimensionsgruppen for varen til en lagringsdimensionsgruppe, der bruger processer for lokationsstyring. Efter denne ændring bruges lagerdimensionen Nummerplade.
+-   Skift lagringsdimensionsgruppen for varen til en lagringsdimensionsgruppe, der bruger WMS. Efter denne ændring bruges lagerdimensionen Nummerplade.
 
-## <a name="configure-warehouse-management-processes"></a>Konfigurere lokationsstyringsprocesser
+## <a name="configure-wms"></a>Konfigurer WMS
 Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produkterne bruge en llagringsdimensionsgruppe, hvor **Brug lokationsstyringsprocesser**-parameteren er valgt.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Aktivere lagersteders brug af lokationsstyringsprocesser.
+### <a name="enable-warehouses-to-use-wms"></a>Aktivér lagersted til WMS
 
 1.  Opret mindst én ny lokationsprofil.
 2.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Aktivér opsætning af lagersted**.
@@ -70,7 +70,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 5.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 6.  Få behandlet ændringerne.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Ændre lagringsdimensionsgruppen for varer, så der anvendes lokationsstyringsprocesser
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Ændre lagringsdimensionsgruppen for varer, så der anvendes WMS
 
 1.  Opret en ny **Lagerstatus**-værdi, og tildel den som **Standard-id for lagerstatus**-værdi i **Parametre til lokationsstyring**-indstillinger.
 2.  Opret en ny lagringsdimensionsgruppe, hvor **Brug lokationsstyringsprocesser**-parameteren vælges.

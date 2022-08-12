@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867267"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103932"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management og Commerce i US Government Community Cloud (GCC)
 
@@ -38,9 +38,9 @@ Når den første start er fuldført, skal du følge instruktionerne i [Projekt-o
 
 ## <a name="environment-deployment"></a>Miljøinstallation
 
-Når du har fuldført onboarding af projektet, kan du gennemse de ekstra egenskaber i LCS, der er beskrevet i [Lifecycle Services (LCS) for Finans- og driftsapps-kunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå derefter videre til installation af miljøet.
+Når du har fuldført onboarding af projektet, kan du gennemse de ekstra egenskaber i LCS, der er beskrevet i [Lifecycle Services (LCS) for programmer i finans og drift-kunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå derefter videre til installation af miljøet.
 
-- Hvis du vil implementere Microsoft-administrerede miljøer via LCS, skal du følge instruktionerne i [Lifecycle Services (LCS) for Finans- og driftsapps-kunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Hvis du vil implementere Microsoft-administrerede miljøer via LCS, skal du følge instruktionerne i [Lifecycle Services (LCS) for kunder i programmer til finans og drift](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - Du kan finde oplysninger om miljøer, der er tilknyttet skyen, i [Implementere og få adgang til udviklingsmiljøer](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Du skal også fuldføre processen for onboarding af Resource Manager for dine forbindelser, som det er beskrevet i [fuldførelse af Azure Resource Manager-processen til onboarding i de amerikanske myndigheders Lifecycle Services-projekter](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Ja. Hvis din partner bruger en ikke-GCC-identitet, vil supportbilletten dog bliv
 - [Oversigt over skyinstallation](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

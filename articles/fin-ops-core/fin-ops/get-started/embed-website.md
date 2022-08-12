@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef5ed6c3c99d62010643940f3e2f158963ff0dc2
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868602"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123712"
 ---
 # <a name="embed-third-party-apps"></a>Integrere tredjepartsapps
 
@@ -129,3 +129,4 @@ Hvis et websted ikke er gengivet korrekt, efter det er blevet integreret i en Fi
 Selvom denne artikel fokuserer på integrationen af tredjepartsapps eller websteder via tilpasning, kan udviklere også integrere dem i en formular ved hjælp af Visual Studio-udviklingsløsningen. Tilføj et kontrolelement af typen **WebstedHostControl** til formularen. De metadataegenskaber, der er tilgængelige for kontrolelementet, indeholder de samme egenskaber som tilpasningsfunktionen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

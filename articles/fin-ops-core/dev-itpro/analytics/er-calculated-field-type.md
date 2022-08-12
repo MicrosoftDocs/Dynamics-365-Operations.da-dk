@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934699"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108323"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Understøtte parameteriserede kald af ER-datakilder for typen Beregnet felt
 
@@ -36,7 +36,7 @@ Før du kan følge eksemplerne i denne artikel, skal du have følgende adgang:
     - Funktionel konsulent i elektronisk rapportering
     - Systemadministrator
 
-- Adgang til RCS (Regulatory Configuration Service), der er klargjort til den samme lejer som Finans og drift for en af følgende roller:
+- Adgang til RCS (Regulatory Configuration Services), der er klargjort til den samme lejer som finans og drift for en af følgende roller:
 
     - Udvikler til elektronisk rapportering
     - Funktionel konsulent i elektronisk rapportering
@@ -84,7 +84,7 @@ I dette eksempel skal du oprette en konfiguration for eksempelfirmaet, Litware I
             - Summen af momsværdier.
             - Minimumværdi for anvendt momssats.
 
-    Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i Finans og drift. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
+    Modeltilknytningen i denne konfiguration implementerer basisdatamodellen for ethvert af de ER-formater, der er oprettet for denne model, og udføres i finans og drift. Derfor vises indholdet af **Moms**- og **Gr**-datakilderne for ER-formater, f. eks. abstrakte datakilder.
 
     ![Siden Modeltilknytningsdesigner, der viser moms- og gr-datakilder.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Du kan importere evaluerede konfigurationer fra RCS ved hjælp af ER-lageret af 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

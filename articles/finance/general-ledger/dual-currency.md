@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906349"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065740"
 ---
 # <a name="dual-currency"></a>Dobbelt valuta
 
 [!include [banner](../includes/banner.md)]
 
-Funktioner, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) giver mulighed for at bruge rapporteringsvalutaen til andre formål og som endnu en regnskabsvaluta. Denne funktion kaldes *dobbelt valuta*. Ændringerne i forbindelse med den dobbelte valuta kan ikke deaktiveres via en konfigurationsnøgle eller parameter. Da rapporteringsvalutaen bruges som en ekstra regnskabsvaluta, er den måde, som rapporteringsvalutaen beregnes i bogføringslogikken, blevet ændret.
+Funktioner, der blev introduceret i Microsoft Dynamics 365 Finance version 8.1 (oktober 2018) giver mulighed for at bruge rapporteringsvalutaen til andre formål og som endnu en regnskabsvaluta. Denne funktion kaldes *dobbelt valuta*. Ændringerne i forbindelse med den dobbelte valuta kan ikke deaktiveres via en konfigurationsnøgle eller parameter. Da rapporteringsvalutaen bruges som en ekstra regnskabsvaluta, er den måde, som rapporteringsvalutaen beregnes i bogføringslogikken, blevet ændret.
 
 En række moduler til registrering, rapportering og brug af rapporteringsvalutaen i de forskellige processer er desuden blevet forbedret. De påvirkede moduler omfatter:
 
@@ -209,3 +209,4 @@ I finanskonsolidering er der tilføjet en ny indstilling til konsolidering af en
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

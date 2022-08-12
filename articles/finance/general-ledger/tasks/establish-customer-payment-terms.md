@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716965"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065702"
 ---
 # <a name="establish-customer-payment-terms"></a>Fastlægge betingelser for debitorbetaling
 
@@ -35,11 +35,11 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
 7. Klik på **Gem**.
 8. Luk siden.
 9. Gå til **Navigationsrude > Moduler > Debitor > Betalingsopsætning > Betalingsbetingelser**.
-10. Klik på **Ny**. Betalingsbetingelser bruges til at definere, hvordan forfaldsdatoer beregnes. Opsætningen af datoen for kasserabatten er defineret på en separat side. 
+10. Klik på **Ny**. **Betalingsbetingelser** bruges til at definere, hvordan forfaldsdatoer beregnes. Opsætningen af datoen for kasserabatten er defineret på en separat side. 
 11. Angiv et id i feltet **Betalingsbetingelser**.
 12. Indtast en beskrivelse i feltet **Beskrivelse**.
-13. Vælg en **Betalingsmetode**, f.eks. pr. efterkrav, netto, indeværende måned osv. Betalingsmetoden bruges til at definere starten på, hvordan forfaldsdatoen skal beregnes. Net bruges for eksempel, hvis forfaldsdatoen altid er et angivet antal måneder eller dage efter fakturadatoen. Efterkrav kan bruges i tilfælde, hvor betalingen skal falde ved fakturering, så der ikke beregnes en forfaldsdato. Vælg 'Aktuel måned' for denne opgaveguide.  
-14. Vælg en **betalingsdag**, hvis en bestemt dag i ugen eller dato medtages i beregningen. Du kan angive et antal i måneder eller dage, afhængigt af dine betalingsbetingelser. Eller du kan bruge **betalingsplanen** eller **betalingsdagen**, som skal 'føjes' til slutningen af betalingsmåden. Hvis forfaldsdatoen altid vil være den 10. i næste måned, skal du vælge den 10. som **betalingsdag**. 
+13. Vælg en **Betalingsmetode**, f.eks. **pr. efterkrav**, **Netto**, **Indeværende måned** osv. **Betalingsmetoden** bruges til at definere starten på, hvordan forfaldsdatoen skal beregnes. **Net** bruges for eksempel, hvis forfaldsdatoen altid er et angivet antal måneder eller dage efter fakturadatoen. **Pr efterkrav** kan bruges i tilfælde, hvor betalingen skal falde ved fakturering, så der ikke beregnes en forfaldsdato. Vælg **Aktuel måned** for denne opgaveguide.  
+14. Vælg en **betalingsdag**, hvis en bestemt dag i ugen eller dato medtages i beregningen. Du kan angive et antal i måneder eller dage, afhængigt af dine betalingsbetingelser. Eller du kan bruge **betalingsplanen** eller **betalingsdagen**, som skal 'føjes' til slutningen af **betalingsmåden**. Hvis forfaldsdatoen altid vil være den 10. i næste måned, skal du vælge den 10. som **betalingsdag**. Hvis du bruger en **betalingskalender**, kan du definere, hvordan forfaldsdatoen skal bestemmes, når den beregnede dato lander på en ikke-arbejdsdag. Den første forfaldsdato beregnes ved hjælp af kalenderdage. Hvis den beregnede dato lander på en arbejdsdag, kan du justere den beregnede forfaldsdato til enten den næste eller en tidligere arbejdsdag.
 15. Klik på **Gem**.
 16. Luk siden.
 17. Gå til **Debitor > Betalingsopsætning > Kasserabatter**.
@@ -50,7 +50,7 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
 22. I feltet **Dage** skal du angive antallet af dage, der bruges til at beregne kasserabatdatoen. Hvis der vælges **Nettoprincip**, føjes antallet af dage til fakturadatoen for at beregne kasserabatdatoen.  
 23. Angiv procenten af kasserabatten i feltet **Rabatprocent**.
 24. I **Hovedkonto til debitorrabatter** skal du angive den hovedkonto, som kasserabatten skal bogføres på for debitorfakturaer.
-25. Vælg en indstilling i feltet **Rabatmodkonti**. Hvis du vælger "Konti på fakturalinjer", bogføres kasserabatten til samme aktiv/udgiftshovedkonto på linjerne i kreditorfakturaen. Kasserabatten"Brug hovedkonto til kreditorfakturaer", bogføres kasserabatten til den hovedkonto, du definerer i "Hovedkonto for kreditorfakturaer". I dette eksempel skal du vælge "Brug hovedkonto til kreditorfakturaer". 
+25. Vælg en indstilling i feltet **Rabatmodkonti**. Hvis du vælger "Konti på fakturalinjer", bogføres kasserabatten til samme aktiv/udgiftshovedkonto på linjerne i kreditorfakturaen. Kasserabatten **Brug hovedkonto til kreditorfakturaer**, bogføres kasserabatten til den hovedkonto, du definerer i **Hovedkonto for kreditorfakturaer**. I dette eksempel skal du vælge **Brug hovedkonto til kreditorfakturaer**. 
 26. I **Hovedkonto til kreditorrabatter** skal du angive den hovedkonto, som kasserabatten skal bogføres på for kreditorfakturaer.
 27. Klik på **Gem**.
 

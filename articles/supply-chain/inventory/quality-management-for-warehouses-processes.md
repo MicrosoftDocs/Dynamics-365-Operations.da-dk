@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsstyring for lagerstedsprocesser.
-description: Denne artikel indeholder oplysninger om kvalitetsstyring af funktionen for lagerstedsprocesser. Denne funktion udvider funktionerne til kvalitetsstyring og giver brugerne mulighed for at integrere kontrolelementer til vareprøver i modtagelsesprocessen på lagerstedet ved hjælp af den avancerede lokationsstyring.
+description: Denne artikel indeholder oplysninger om kvalitetsstyring af funktionen for lagerstedsprocesser. Denne funktion udvider funktionerne til kvalitetsstyring og giver brugerne mulighed for at integrere kontrolelementer til vareprøver i modtagelsesprocessen på lagerstedet ved hjælp af lokationsstyringsprocesser (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857831"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069236"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerstedsprocesser.
 
 [!include [banner](../includes/banner.md)]
 
-Med funktionen _Kvalitetsstyring for lagerstedsprocesser_ kan du integrere kontrolelementer til vareprøver i modtagelsesprocessen på lagerstedet ved hjælp af den avancerede lokationsstyring. Lagerstedsarbejde kan genereres til automatisk at flytte lager til kvalitetskontrolstedet på basis af en procentdel eller et fast antal eller baseret på hver af *n*'te id. Når en kvalitetsordre er fuldført, kan arbejde automatisk genereres for at flytte lageret til det næste sted i processen, afhængigt af kvalitetsresultaterne.
+Med funktionen _Kvalitetsstyring for lagerstedsprocesser_ kan du integrere kontrolelementer til vareprøver i modtagelsesprocessen på lagerstedet ved hjælp af lokationsstyringsprocesser (WMS). Lagerstedsarbejde kan genereres til automatisk at flytte lager til kvalitetskontrolstedet på basis af en procentdel eller et fast antal eller baseret på hver af *n*'te id. Når en kvalitetsordre er fuldført, kan arbejde automatisk genereres for at flytte lageret til det næste sted i processen, afhængigt af kvalitetsresultaterne.
 
 Funktionen _Kvalitetsstyring for lagerstedsprocesser_ udvider funktionerne i forhold til grundlæggende kvalitetsstyring. Den giver mulighed for at oprette kvalitetsordrer for det lager, der sendes til kvalitetskontrolstedet, selvom der ikke altid kræves kvalitetsordrer. Derfor giver det mulighed for en let kvalitetskontrolproces, der er baseret på lagerstedsarbejde.
 
@@ -77,7 +77,7 @@ Før funktionen _Kvalitetsstyring for lagerstedsprocesser_ kan anvendes på et b
 
 1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
 1. Vælg det lagersted, du vil aktivere til kvalitetsstyring.
-1. I oversigtspanelet **Lagersted** skal du angive indstillingen **Aktivér kvalitetsordre for lagerstedsprocesser** til _Ja_. (Bemærk, at denne indstilling kun kan angives til _Ja_ for lagersteder, der bruger lagerstyringsprocesser).
+1. I oversigtspanelet **Lagersted** skal du angive indstillingen **Aktivér kvalitetsordre for lagerstedsprocesser** til _Ja_. (Bemærk, at denne indstilling kun kan angives til _Ja_ for lagersteder, der bruger lokationsstyringsprocesser (WMS).)
 
 Når indstillingen **Aktivér kvalitetsordre for lagerstedsprocesser** er angivet til _Ja_, styrer opsætningen af kvalitetstilknytningen, om funktionen til _Kvalitetsstyring af lagerstedsprocesser_ faktisk anvendes for det valgte lagersted. Du kan til enhver tid ændre indstillingen til _Nej_. Hvis dette er tilfældet, gælder funktionen ikke længere for lagerstedet, uanset opsætningen af kvalitetstilknytningen.
 
@@ -97,7 +97,7 @@ De enkelte [kvalitetstilknytningsposter](enable-quality-management.md) definerer
     - **Alle** – Deaktiver funktionen _Kvalitetsstyring for lagerstedsprocesser_. Vælg denne værdi for alle referencetyper undtagen *Indkøb* og *Produktion*.
 
 > [!NOTE]
-> Funktionen _Kvalitetsstyring for lagerstedsprocesser_ træder kun i kraft, hvis varen på kildedokumentlinjen bruger avancerede lokationsstyringsprocesser, og hvis indstillingen **Aktivér kvalitetsordre for lagerstedsprocesser** er angivet til _Ja_ for lagerstedet på kildedokumentlinjen.
+> Funktionen _Kvalitetsstyring for lagerstedsprocesser_ træder kun i kraft, hvis varen på kildedokumentlinjen bruger avancerede lokationsstyringsprocesser (WMS), og hvis indstillingen **Aktivér kvalitetsordre for lagerstedsprocesser** er angivet til _Ja_ for lagerstedet på kildedokumentlinjen.
 
 Efterhånden som hver vare registreres (eller færdigmeldes), bestemmer systemet, hvilke kvalitetstilknytninger der gælder for den.
 

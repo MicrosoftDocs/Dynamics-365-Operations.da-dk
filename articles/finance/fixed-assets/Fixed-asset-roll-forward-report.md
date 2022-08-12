@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9adbf8f5baa829fb28977d618a4f8beee31ef080
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4d423b149957e624269231aede510190f0c14c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870127"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068774"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapporten Rul anlægsaktiver fremad
 
@@ -30,7 +30,7 @@ Rapporten **Rul anlægsaktiver fremad** indeholder, i et letlæseligt Microsoft 
 
 Rapporten **Rul anlægsaktiver fremad** bruger strukturen til elektronisk rapportering (ER). Før du kan køre rapporten, skal modellen for anlægsaktiver og konfigurationer for fremadrulning af anlægsaktiver importeres fra Microsoft Dynamics Lifecycle Services (LCS). Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Denne rapport er tilgængelig i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, eller som et hotfix til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017). Tre hotfixes, der skal anvendes på miljøer, der har versionen fra juli 2017:
+Denne rapport er tilgængelig i Microsoft Dynamics 365 Finance, Enterprise Edition 7.3, eller som et hotfix til Microsoft Dynamics 365 Finance, Enterprise Edition (juli 2017). Tre hotfixes, der skal anvendes på miljøer, der har versionen fra juli 2017:
 
 - **KB 4041754:** Konfiguration af elektronisk rapportering (ER) kan ikke hentes fra LCS, da det ikke er relevant for den aktuelle version efter anvendelse af platform update-pakken
 - **KB 4056107:** Elektronisk indberetning (TYSK) kumulativ opdatering 5
@@ -67,3 +67,4 @@ I følgende tabel forklares de felter, der er tilgængelige på rapporten.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

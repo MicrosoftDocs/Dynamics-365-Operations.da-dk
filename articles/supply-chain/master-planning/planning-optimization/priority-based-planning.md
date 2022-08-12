@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873805"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186477"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaseret planlægning
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i DDMRP (Demand Driven Material Requirements Planning). Ved hjælp af prioritetsbaseret planlægning kan Planlægningsoptimering generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
+Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i [DDMRP (Demand Driven Material Requirements Planning)](ddmrp-overview.md). Ved hjælp af prioritetsbaseret planlægning kan Planlægningsoptimering generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbaseret planlægning kan du prioritere genopfyldningsordrer for at sikre, at hasteefterspørgsel prioriteres højere end knap så vigtig efterspørgsel. En lagergenopfyldningsordre prioriteres f.eks. højere end en standardgenopfyldningsordre. Systemet kan automatisk opdele større ordrer i mindre separate ordrer, hvor ordrelinjer grupperes efter prioritet. Derefter kan alle ordrer med høj prioritet behandles først.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903747"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067875"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske opdateringer af forsendelser
 
@@ -30,7 +30,7 @@ Funktionen til automatisk opdatering af forsendelser opdaterer automatisk mængd
 
 Når funktionen til automatisk opdatering af forsendelser ikke bruges, er det kun antallet, der reduceres, indtil der oprettes lagerstedsarbejde. Brugere skal opdatere eller slette linjer manuelt, og de skal derefter genfrigive linjer, hvis ordreantallet øges, eller der tilføjes nye ordrelinjer. Ved at bruge funktionen til automatisk opdatering af forsendelser kan virksomheder uden problemer foretage opdateringer af lagerstedet uden at skulle bekymre sig om, at relaterede forsendelser og laster ikke afspejler opdateringer af ordrelinjer.
 
-Funktionaliteten til automatisk opdatering af forsendelser gælder for både salgsordrelinjer og flytteordrelinjer, og den er aktiveret for et bestemt lagersted. Virksomheder kan derfor anvende forskellige politikker til automatisk opdatering af forsendelser på lagersteder efter behov. Som standard anvendes politikken for automatisk opdatering af forsendelser for reduktioner af antal for alle lagersteder, der bruger lokationsstyringsprocesser. Når denne standardpolitikindstilling bruges, er det kun antallet, der reduceres for en forsendelse og en last, indtil der oprettes lagerstedsarbejde. Denne funktionsmåde ligner den funktionsmåde, der blev brugt, før funktionen til automatisk opdatering af forsendelse blev introduceret.
+Funktionaliteten til automatisk opdatering af forsendelser gælder for både salgsordrelinjer og flytteordrelinjer, og den er aktiveret for et bestemt lagersted. Virksomheder kan derfor anvende forskellige politikker til automatisk opdatering af forsendelser på lagersteder efter behov. Som standard anvendes politikken for automatisk opdatering af forsendelser for reduktioner af antal for alle lagersteder, der bruger lokationsstyringsprocesser (WMS). Når denne standardpolitikindstilling bruges, er det kun antallet, der reduceres for en forsendelse og en last, indtil der oprettes lagerstedsarbejde. Denne funktionsmåde ligner den funktionsmåde, der blev brugt, før funktionen til automatisk opdatering af forsendelse blev introduceret.
 
 ## <a name="main-elements-of-the-functionality"></a>Hovedelementer i funktionaliteten
 

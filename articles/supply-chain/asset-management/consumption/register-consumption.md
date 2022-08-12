@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015079"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111748"
 ---
 # <a name="register-consumption"></a>Registrere forbrug
 
@@ -90,7 +90,7 @@ Når du foretager registreringer af forbrug, føjes økonomiske dimensioner, der
 - *Vareregistreringer:* Først tilføjes økonomiske dimensioner fra kladdehovedet, hvis det er relevant. Derefter tilføjes økonomiske dimensioner fra det relaterede arbejdsordreprojekt. Så tilføjes økonomiske dimensioner fra stedet. Til sidst tilføjes økonomiske dimensioner fra varen.
 
 >[!NOTE]
->For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Dette er standardopsætning i andre Finance and Operations-apps.
+>For alle tre registreringstyper valideres den økonomiske dimensionskombination, og ugyldige kombinationer står tomme. Dette er standardopsætning i andre programmer til finans og drift.
 
 
 

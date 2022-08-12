@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d2632ed1f5c733e45f5d927643bdaef430bc4009
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850403"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065458"
 ---
 # <a name="warehouse-location-status"></a>Placeringsstatus for lagersted
 
@@ -165,7 +165,7 @@ Eksempelscenariet kræver, at du forbereder to lokationsprofiler.
 1. Bemærk, at feltet **Lokationsstatus** for den lokation, som salgsordrearbejdet er plukket fra, nu er indstillet til *Pluk*, og at feltet **Dato og klokkeslæt for seneste aktivitet** er opdateret.
 
 > [!NOTE]
-> Lokationsfelterne opdateres kun ved lagertransaktioner. Hvis du flytter lager ved hjælp af en kladde eller andre ikke-WHS-processer, opdateres felterne ikke.
+> Lokationsfelterne opdateres kun ved lagertransaktioner. Hvis du flytter lager ved hjælp af en kladde eller andre ikke-WMS-processer, opdateres felterne ikke.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

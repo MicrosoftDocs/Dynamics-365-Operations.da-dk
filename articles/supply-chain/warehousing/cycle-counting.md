@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902215"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065922"
 ---
 # <a name="cycle-counting"></a>Cyklusoptælling
 
@@ -52,11 +52,11 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du kan 
 <tbody>
 <tr class="odd">
 <td>Vare</td>
-<td>Varen skal være aktiveret for lagerprocesser for lagersted.</td>
+<td>Varen skal være aktiveret for lokationsstyringsprocesser (WMS).</td>
 </tr>
 <tr class="even">
 <td>Lagersted</td>
-<td>Lagerstedet skal være aktiveret for lagerprocesser for lagersted. Hvis du vil aktivere lagerstedet for lagerstedsstyringsprocesser, skal du på siden <strong>Lagersteder</strong> vælge lagerstedet og derefter vælge indstillingen <strong>Brug lagerstedsstyringsprocesser</strong>. Hvis du vil gøre det muligt for arbejdere at flytte paller under en cyklusoptælling, skal du vælge indstillingen <strong>Tillad palleflytninger under cyklusoptælling</strong> i oversigtspanelet <strong>Lagerstedsstyring</strong>.</td>
+<td>Lagerstedet skal være aktiveret for lokationsstyringsprocesser (WMS). Hvis du vil aktivere lagerstedet for WMS, skal du på siden <strong>Lagersteder</strong> vælge lagerstedet og derefter vælge indstillingen <strong>Brug lagerstedsstyringsprocesser</strong>. Hvis du vil gøre det muligt for arbejdere at flytte paller under en cyklusoptælling, skal du vælge indstillingen <strong>Tillad palleflytninger under cyklusoptælling</strong> i oversigtspanelet <strong>Lagerstedsstyring</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Arbejdspuljer</td>

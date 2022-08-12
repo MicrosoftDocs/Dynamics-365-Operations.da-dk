@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577762"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069720"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurere en min.-maks. genopfyldningsproces
 
 [!include [banner](../../includes/banner.md)]
 
-Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne nedenfor, eller du kan køre den på dine egne data. Hvis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lagerstedsstyringsprocesser.
+Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne nedenfor, eller du kan køre den på dine egne data. vis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lokationsstyringsprocesser (WMS).
 
 
 ## <a name="create-a-fixed-picking-location"></a>Oprette en fast plukplads

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897626"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066634"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Oversigt over tilføjelsesprogram for lagersynlighed
 
@@ -61,9 +61,9 @@ Det er vigtigt, at du får overblik over den nærmeste fremtidige forventede lag
 
 DTT-funktionen er let at optage i den daglige ordreopfyldelsesproces. Ligesom andre tilbud om lagersynlighed er DTT-funktionen vigtigst af alt *global og i realtid*. Du kan derfor konfigurere flere DTT-beregningsformler for at have forespørgsler om fuld lagertilgængelighed, der dækker alle din virksomheds kanaler og datakilder. Du kan finde flere oplysninger i [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitet med varer i avanceret lokationsstyring
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Kompatibilitet med varer i lokationsstyringsprocesser (WMS)
 
-Microsoft sigter efter at levere standardintegration med avanceret lokationsstyring (WHS), så WHS-kunder også kan få glæde af tjenesten Lagersynlighed. Fra og med frigivelsesbøgle 1 i 2022 (offentlig forhåndsversion i marts) understøtter lagertjenesten WHS-vareforespørgsler og DTT. Funktionen til foreløbig reservation og fordeling understøttes til WHS-kunder i næste bølge. Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WHS-varer](inventory-visibility-whs-support.md).
+Microsoft sigter efter at levere standardintegration med lokationsstyringsprocesser (WMS), så WMS-kunder også kan få glæde af tjenesten Lagersynlighed. Fra og med frigivelsesbølge 1 i 2022 (offentlig forhåndsversion i marts) understøtter lagertjenesten WMS-vareforespørgsler og ATP. Funktionen til foreløbig reservation og fordeling understøttes til WMS-kunder i næste bølge. Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WMS-varer](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licensering
 

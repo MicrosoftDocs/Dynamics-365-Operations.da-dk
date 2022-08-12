@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83e20d9fc655a474a11521ec61d0b64d30603181
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884657"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9169124"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Oprette dynamiske e-handelssider baseret på URL-parametre
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Denne artikel beskriver, hvordan du kan konfigurere en Microsoft Dynamics 365 Commerce-e-handelsside, der kan have dynamisk indhold baseret på URL-parametre.
 
@@ -42,7 +41,7 @@ Hvis du vil oprette en side, der kan vise dynamisk indhold, skal du følge trinn
 
 ### <a name="create-the-base-url-for-the-dynamic-page"></a>Oprette basis-URL-adressen til den dynamiske side
 
-Hvis du vil oprette basis-URL-adressen til den dynamiske side i Commerce Site Builder, skal du følge disse trin.
+Hvis du vil oprette basis-URL-adressen til den dynamiske side i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **URL**-adresser, og vælg **Ny \> Ny URL**-adresse.
 1. I dialogboksen **Opret ny URL-adresse** vælges **Intern side**. Angiv den **URL-sti**, der skal fungere som rod for den dynamiske side (i dette eksempel **/blog**). Vælg derefter **Næste**.
@@ -51,7 +50,7 @@ Hvis du vil oprette basis-URL-adressen til den dynamiske side i Commerce Site Bu
 
 ### <a name="configure-the-route-to-the-dynamic-page"></a>Konfigurere ruten til den dynamiske side
 
-Hvis du vil konfigurere ruten til den dynamiske side i Commerce Site Builder, skal du følge disse trin.
+Hvis du vil konfigurere ruten til den dynamiske side i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **Webstedsindstillinger \> Udvidelser**.
 1. Under **Parameteriserede URL-stier** skal du vælge **Tilføj** og derefter angive den URL-sti, du angav, da du oprettede URL-adressen (i dette eksempel, **/blog**).
@@ -61,7 +60,7 @@ Når ruten er konfigureret, returnerer alle anmodninger til den parameteriserede
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Tilsidesætte en parameteriseret URL-adresse med en brugerdefineret side
 
-Hvis du vil tilsidesætte en parameteriseret URL-adresse med en brugerdefineret side i Commerce Site Builder, skal du følge disse trin.
+Hvis du vil tilsidesætte en parameteriseret URL-adresse med en brugerdefineret side i Commerce-webstedsgenerator, skal du følge disse trin.
 
 1. Gå til **URL**-adresser, og vælg **Ny \> Ny URL**-adresse.
 1. I dialogboksen **Opret ny URL-adresse** vælges **Intern side**. Under **URL-stien** skal du angive den sti, der indeholder det segment, der skal tilsidesættes (i dette eksempel **/blog/about-this-blog**). Vælg derefter **Næste**.

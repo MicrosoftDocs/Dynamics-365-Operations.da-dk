@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692416"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178527"
 ---
 # <a name="copy-an-instance"></a>Kopiér en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Anvendes på:** Human Resources i enkeltstående infrastruktur_ 
 
+> [!NOTE]
+> Fra og med juni 2022 kan Personale-miljøer kun implementeres på infrastrukturen i program til finans og drift-infrastruktur. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Finans og drift-infrastrukturen understøtter ikke en funktion til kopieringsforekomst. Du kan implementere nye miljøer og bruge databasebevægelser til at oprette kopier. Du kan finde flere oplysninger om opsætning af medarbejderselvbetjening i [Oversigt over medarbejder- og lederselvbetjening](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Yderligere oplysninger om databasebevægelser på infrastrukturen i finans og operationer finder du på [startsiden for databasebevægelsesoperationer](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Du kan bruge Microsoft Dynamics Lifecycle Services (LCS) til at kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkasse-miljø. Hvis du har et andet sandkasse-miljø, kan du også kopiere databasen fra det pågældende miljø til et målrettet sandkasse-miljø.
 
@@ -50,7 +55,7 @@ Følgende hændelser indtræffer, når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lager kopieres ikke fra ét miljø til et andet. Eventuelle dokumenter og skabeloner, der er vedhæftet, kopieres derfor ikke men forbliver i kildemiljøet.
 
-- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator" og andre interne tjenestebrugerkonti, vil ikke være tilgængelige. Administratorbrugeren kan derfor slette eller sløre data, før andre brugere får adgang til systemet igen.
+- Alle brugere med undtagelse af dem, der har sikkerhedsrollen "Systemadministrator" og andre interne tjenestebrugerkonti, vil ikke være tilgængelige. Administratorbrugeren kan derfor slette data, før andre brugere får adgang til systemet igen.
 
 - Enhver bruger med sikkerhedsrollen "Systemadministrator" skal foretage påkrævede konfigurationsændringer, f.eks. genoprette forbindelse mellem integrationsslutpunkter og bestemte tjenester eller URL-adresser.
 
@@ -76,6 +81,8 @@ Hvis du vil fuldføre denne opgave, skal du først kopiere en forekomst og deref
    ![[Vælg Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Vælg det Power Apps-miljø, der skal kopieres, og vælg derefter **Kopier**.
+
+Du kan finde flere oplysninger om kopiering af Power Apps-miljøer i [Kopier et miljø](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Når kopieringsprocessen er fuldført, skal du logge på destinationsforekomsten og aktivere Dataverse-integration. Du kan finde flere oplysninger og instruktioner under [Konfigurere Dataverse-integration](./hr-admin-integration-common-data-service.md).
 

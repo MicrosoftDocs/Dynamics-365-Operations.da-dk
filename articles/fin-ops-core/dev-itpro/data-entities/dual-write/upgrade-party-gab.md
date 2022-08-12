@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895270"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111812"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
@@ -24,7 +24,7 @@ ms.locfileid: "8895270"
 
 [Microsoft Azure Data Factory-skabeloner](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) hjælper dig med at opgradere følgende eksisterende data i dobbeltskrivning til part- det globale adressekartoteks model: Data i **Konto**-, **Kontakt**- og **Leverandør**-tabeller og elektroniske adresser.
 
-Der findes følgende tre Data Factory-skabeloner. De afstemmer dataene fra både Finans- og driftsapps og apps til kundeengagement.
+Der findes følgende tre Data Factory-skabeloner. De afstemmer dataene fra både programmer til finans og drift og apps til kundeengagement.
 
 - **[Partskabelon](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (opgradering af data til skemaer for leverandør-styklister til part-GAB skema/arm_template.json)** – denne skabelon hjælper med at opgradere oplysninger om **part**- og **kontaktperson**, der er knyttet til **konto**-, **kontakt**- og **kreditordata**.
 - **[Skabelon til partpostadresse](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (opgradering af data i dobbeltskrivning til part-GAB-skema/opgradering til part-postadresse - GAB/arm_template.json)** – Denne skabelon hjælper med at opgradere de postadresser, der er tilknyttet **konto**-, **kontaktperson**- og **kreditordata**.
@@ -34,11 +34,11 @@ I slutningen af processen genereres følgende kommaseparerede værdier (.csv).
 
 | Filnavn | Formål |
 |---|---|
-| FONewParty.csv | Denne fil opretter nye **Part**-poster i Finans- og driftsappen. |
-| ImportFONewPostalAddressLocation.csv | Denne fil hjælper med at oprette nye **Postadresseplacering**-poster i Finans- og driftsappen. |
-| ImportFONewPartyPostalAddress.csv | Denne fil hjælper med at oprette nye **Partpostadresse**-poster i Finans- og driftsappen. |
-| ImportFONewPostalAddress.csv | Denne fil hjælper med at oprette nye **Postadresse**-poster i Finans- og driftsappen. |
-| ImportFONewElectronicAddress.csv | Denne fil hjælper med at oprette nye **Elektronisk adresse**-poster i Finans- og driftsappen. |
+| FONewParty.csv | Denne fil opretter nye **Part**-poster i programmet til finans og drift. |
+| ImportFONewPostalAddressLocation.csv | Denne fil hjælper med at oprette nye **Postadresseplacering**-poster i programmet til finans og drift. |
+| ImportFONewPartyPostalAddress.csv | Denne fil hjælper med at oprette nye **Partpostadresse**-poster i programmet til finans og drift. |
+| ImportFONewPostalAddress.csv | Denne fil hjælper med at oprette nye **Postadresse**-poster i programmet til finans og drift. |
+| ImportFONewElectronicAddress.csv | Denne fil hjælper med at oprette nye **Elektronisk adresse**-poster i Programmet til finans og drift. |
 
 Denne artikel beskriver, hvordan du bruger Data Factory-skabeloner og opgraderer dine data. Hvis du ikke har tilpasninger, kan du bruge skabelonerne, som de er. Hvis du har tilpasninger af data i **Konto**, **Kontakt** og **Leverandør**, skal du redigere skabelonerne ved hjælp af vejledningen i denne artikel.
 
@@ -61,7 +61,7 @@ En opgradering kræver følgende forberedelse:
 + **Integrationsnøgler:** **Konto (kunde)**, **Kontakt** og **Leverandør** tabeller i kundeengagementapps bruger de integrationsnøgler, der leveres som standard. Hvis du har tilpasset integrationsnøglerne, skal du tilpasse skabelonen.
 + **Partnummer:** Alle **Konto (kunde)**-, **kontakt**- og **Leverandør**-poster, der skal opgraderes, har et part-nummer. Poster, der ikke har et partnummer, ignoreres. Hvis du vil opgradere disse poster, skal du føje et part-nummer til dem, før du starter opgraderingsprocessen.
 + **Systemnedlukning:** Under opgraderingsprocessen skal både Finans- og driftsmiljøet og kundeengagementsmiljøet være offline.
-+ **Øjebliksbillede:** Tag øjebliksbilleder af både Finans- og driftsapps og kundeengagementapps. Du kan bruge øjebliksbillederne til at gendanne den forrige tilstand, hvis det er nødvendigt.
++ **Øjebliksbillede:** Tag øjebliksbilleder af både programmer til finans og drift og kundeengagementapps. Du kan bruge øjebliksbillederne til at gendanne den forrige tilstand, hvis det er nødvendigt.
 
 ## <a name="deployment"></a>Udrulning
 
@@ -120,7 +120,7 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Opsætning af, hvordan skabelonen til partspostadresse køres
 
-1. Log på kundedementeringsapps, og gå til **Indstillinger** \> **Personlige indstillinger**. Konfigurer derefter på fanen **Generelt** tidszoneindstillingen for systemadministrationskontoen. Tidszonen skal være i Coordinated Universal Time (UTC) for at opdatere datoerne for "gyldig fra" og "gyldig til" for postadresser fra Finans- og driftsapps.
+1. Log på kundedementeringsapps, og gå til **Indstillinger** \> **Personlige indstillinger**. Konfigurer derefter på fanen **Generelt** tidszoneindstillingen for systemadministrationskontoen. Tidszonen skal være i Coordinated Universal Time (UTC) for at opdatere datoerne for "gyldig fra" og "gyldig til" for postadresser fra programmer til finans og drift.
 
     ![Tidszoneindstillingen for systemadministratorkontoen.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
     | Tal | Navn | Type | Værdi |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | streng | Denne parameter føjer et serienummer til nyoprettede postadresser som præfiks. Sørg for at angive en streng, der ikke er i konflikt med postadresser i Finans- og driftsapps og kundeengagement-apps. Du kan for eksempel bruge **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | streng | Denne parameter føjer et serienummer til nyoprettede postadresser som præfiks. Sørg for at angive en streng, der ikke er i konflikt med postadresser i programmer til finans og drift og kundeengagement-apps. Du kan for eksempel bruge **ADF-PAD-**. |
 
     ![Den globale parameter PostalAddressIdPrefix, der er oprettet under fanen Administrer.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
     | Tal | Navn | Type | Værdi |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Denne parameter bestemmer, hvilke primære systemadresser der erstattes i tilfælde af konflikter. Hvis værdien er **sand**, erstatter den primære adresse i Finans- og driftsapps de primære adresser i kundeengagementsapps. Hvis værdien er **falsk**, erstatter den primære adresse i kundeengagementsapps de primære adresser i Finans- og driftsapps. |
-    | 2 | ElectronicAddressIdPrefix | streng | Denne parameter føjer et serienummer til nyoprettede elektroniske adresser som præfiks. Sørg for at angive en streng, der ikke er i konflikt med elektroniske adresser i Finans- og driftsapps og kundeengagement-apps. Du kan for eksempel bruge **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Denne parameter bestemmer, hvilke primære systemadresser der erstattes i tilfælde af konflikter. Hvis værdien er **sand**, erstatter den primære adresse i programmer til finans og drift de primære adresser i kundeengagementsapps. Hvis værdien er **falsk**, erstatter den primære adresse i kundeengagementsapps de primære adresser i programmer til finans og drift. |
+    | 2 | ElectronicAddressIdPrefix | streng | Denne parameter føjer et serienummer til nyoprettede elektroniske adresser som præfiks. Sørg for at angive en streng, der ikke er i konflikt med elektroniske adresser i programmer til finans og drift og kundeengagement-apps. Du kan for eksempel bruge **ADF-EAD-**. |
 
     ![Globale parametre for IsFOSource og ElectronicAddressIdPrefix, der er oprettet under fanen Administrer.](media/ADF-4.png)
 
@@ -167,7 +167,7 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
 2. Kontrollér, at tilknytningerne er fjernet fra **msdy_dualwriteruntimeconfig** tabellen i Dataverse.
 3. Installer [Løsninger til part og globalt adressekartotek for dobbeltskrivning](https://aka.ms/dual-write-gab) fra AppSource.
-4. Hvis følgende tabeller indeholder data i Finans- og driftsappen, skal du køre **Første synkronisering**.
+4. Hvis følgende tabeller indeholder data i programmet til finans og drift, skal du køre **Første synkronisering**.
 
     + Tiltaleformer
     + Personlige tegntyper
@@ -267,10 +267,10 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
     > [!NOTE]
     > Hvis du har tilpasninger af **Konto**, **Kontakt** og **Leverandør**, skal du redigere skabelonen.
 
-8. Importér de nye **Part**-poster i appen Finans og drift.
+8. Importér de nye **Part**-poster i programmet til finans og drift.
 
     1. Download filen **FONewParty.csv** fra Azure Blob Storage. Stien er **partybootstrapping/output/FONewParty.csv**.
-    2. Konverter filen **FONewParty.csv** til en Excel-fil, og importér Excel-filen til Finans- og driftsappen. Hvis CSV-importen fungerer for dig, kan du importere .csv-filen direkte. Det kan tage et par timer, før denne proces er fuldført, afhængigt af datavolumen. Du kan finde flere oplysninger i [Oversigt over dataimport og eksportjob](../data-import-export-job.md).
+    2. Konverter filen **FONewParty.csv** til en Excel-fil, og importér Excel-filen til programmet til finans og drift. Hvis CSV-importen fungerer for dig, kan du importere .csv-filen direkte. Det kan tage et par timer, før denne proces er fuldført, afhængigt af datavolumen. Du kan finde flere oplysninger i [Oversigt over dataimport og eksportjob](../data-import-export-job.md).
 
     ![Importere Dataverse-partposterne.](media/data-factory-import-party.png)
 
@@ -281,7 +281,7 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
     ![Køre skabeloner til partspostadresse og partelektroniske adresser.](media/ADF-7.png)
 
-10. Hvis du vil opdatere Finans- og driftsappen med disse data, skal du konvertere .csv-filerne til en Excel-projektmappe og [importere den til Finans- og driftsappen](../data-import-export-job.md). Hvis CSV-importen fungerer for dig, kan du importere .csv-filer direkte. Det kan tage et par timer, før denne proces er fuldført, afhængigt af volumen.
+10. Hvis du vil opdatere programmet til finans og drift med disse data, skal du konvertere .csv-filerne til en Excel-projektmappe og [importere den til programmet til finans og drift](../data-import-export-job.md). Hvis CSV-importen fungerer for dig, kan du importere .csv-filer direkte. Det kan tage et par timer, før denne proces er fuldført, afhængigt af volumen.
 
     ![Vellykket import.](media/ADF-8.png)
 
@@ -364,9 +364,9 @@ I dette afsnit gennemgås trinnene i hver Data Factory-skabelon.
 ### <a name="steps-in-the-party-template"></a>Trin i part-skabelonen
 
 1. Trin 1 til 6 identificerer de firmaer, der er aktiveret til dobbeltskrivning og bygger en filtersætning til dem.
-2. Trin 7-1 til og med 7-9 henter data fra både Finans- og driftsappen og kundeengagement-app og trindata til opgradering.
-3. Trin 8 til 9 sammenligner partnummeret for posterne **Konto**, **Kontakt** og **Leverandør** mellem Finans- og driftsappen og kundeengagementsappen. Alle poster, der ikke har et partnummer, ignoreres.
-4. Trin 10 genererer to .csv-filer til de partposter, der skal oprettes i kundeengagements-appen og Finans- og driftsappen.
+2. Trin 7-1 til og med 7-9 henter data fra både programmet til finans og drift og kundeengagement-app og trindata til opgradering.
+3. Trin 8 til 9 sammenligner partnummeret for posterne **Konto**, **Kontakt** og **Leverandør** mellem programmet til finans og drift og kundeengagementsappen. Alle poster, der ikke har et partnummer, ignoreres.
+4. Trin 10 genererer to .csv-filer til de partposter, der skal oprettes i kundeengagements-appen og programmet til finans og drift.
 
     - **FOCDSParty.csv** – Denne fil indeholder alle partposter i begge systemer, uanset om firmaet er aktiveret til dobbeltskrivning.
     - **FONewParty.csv** – Denne fil indeholder et undersæt af de partposter, der er opmærksom på Dataverse (f.eks. konti af typen **Kundeemne**).
@@ -382,12 +382,12 @@ I dette afsnit gennemgås trinnene i hver Data Factory-skabelon.
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Trin i skabelonen til partspostadresse
 
-1. Trin 1-1 til og med 1-10 henter data fra både Finans- og driftsappen og kundeengagement-app og trindata til opgradering.
-2. Trin 2 af-normaliserer postadressedataene i Finans- og driftsappen ved at sammensætte postadressen og partpostadressen.
+1. Trin 1-1 til og med 1-10 henter data fra både programmet til finans og drift og kundeengagement-app og trindata til opgradering.
+2. Trin 2 af-normaliserer postadressedataene i programmet til finans og drift ved at sammensætte postadressen og partpostadressen.
 3. Trin 3 de-duplikerer og fletter konto-, kontakt- og leverandøradressedata fra kundeengagement-appen.
-4. Trin 4 opretter .csv-filer til appen Finans og drift for at oprette nye adressedata, der er baseret på konto-, kontakt- og kreditoradresser.
-5. Trin 5-1 opretter .csv-filer til kundeengagement-app, så alle adressedata oprettes baseret på både Finans- og driftsapp og kundeengagement-appen.
-6. Trin 5-2 konverterer .csv-filerne til Finans- og driftsimportformat til manuel import.
+4. Trin 4 opretter .csv-filer til programmet til finans og drift for at oprette nye adressedata, der er baseret på konto-, kontakt- og kreditoradresser.
+5. Trin 5-1 opretter .csv-filer til kundeengagement-app, så alle adressedata oprettes baseret på både programmet til finans og drift og kundeengagement-appen.
+6. Trin 5-2 konverterer .csv-filerne til finans og drift-importformat til manuel import.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -401,13 +401,13 @@ I dette afsnit gennemgås trinnene i hver Data Factory-skabelon.
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Trin i skabelonen til partelektronikadresse
 
-1. Trin 1-1 til og med 1-5 henter data fra både Finans- og driftsappen og kundeengagement-app og trindata til opgradering.
+1. Trin 1-1 til og med 1-5 henter data fra både programmet til finans og drift og kundeengagement-app og trindata til opgradering.
 2. Trin 2 konsoliderer elektroniske adresser i kundeengagement-appen fra konto-, kontaktperson- og leverandørenheder.
-3. Trin 3 fletter primære elektroniske adressedata fra kundeengagement-app og Finans- og driftsapp.
+3. Trin 3 fletter primære elektroniske adressedata fra kundeengagement-app og program til finans og drift.
 4. Trin 4 opretter .csv-filer.
 
-    - Opret nye elektroniske adressedata for Finans- og driftsapp på baggrund af konto-, kontakt- og leverandøradresser.
-    - Opret nye elektroniske adressedata til kundens aftale-app på baggrund af elektroniske adresse-, konto-, kontakt- og leverandøradresser i Finans- og driftsappen.
+    - Opret nye elektroniske adressedata for programmet til finans og drift på baggrund af konto-, kontakt- og leverandøradresser.
+    - Opret nye elektroniske adressedata til kundens aftale-app på baggrund af elektroniske adresse-, konto-, kontakt- og leverandøradresser i programmet til finans og drift.
 
 5. Trin 5-1 importerer elektroniske adresser til kundeengagement-app.
 6. Trin 5-2 opretter .csv-filer for at opdatere primære adresser til konti og kontaktpersoner i kundeengagement-appen.
@@ -425,3 +425,4 @@ I dette afsnit gennemgås trinnene i hver Data Factory-skabelon.
 ## <a name="learn-more-about-the-template"></a>Få mere at vide om skabelonen
 
 Du kan finde flere oplysninger om skabelonen i [Kommentarer til filen vigtige oplysninger til Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+

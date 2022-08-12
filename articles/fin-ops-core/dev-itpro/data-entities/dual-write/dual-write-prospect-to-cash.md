@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860103"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112106"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemner til kontanter og dobbeltskrivning
 
@@ -29,7 +29,7 @@ I-app-grænsefladerne kan du få adgang til behandlingsstatus og fakturaoplysnin
 Du kan finde oplysninger om integration af kunder og kontakter i [Integreret kundemaster](customer-mapping.md). Du kan finde oplysninger om produktintegration i [Samlet produktoplevelse](product-mapping.md).
 
 > [!NOTE]
-> I Dynamics 365 Sales refererer både kundeemne og kunde til en post i tabellen **Konto**, hvor kolonnen **RelationshipType** er enten **Kundeemne** eller **Kunde**. Hvis din forretningslogik omfatter en **Konto**-kvalificeringsproces, hvor posten **Konto** oprettes og kvalificeres som et kundeemne først og derefter som en kunde, synkroniseres denne post kun til Finans og drift-appen, når den er en kunde (`RelationshipType=Customer`). Hvis rækken **Konto** skal synkroniseres som et kundeemne, skal du have en brugerdefineret tilknytning til integration af kundeemnedataene.
+> I Dynamics 365 Sales refererer både kundeemne og kunde til en post i tabellen **Konto**, hvor kolonnen **RelationshipType** er enten **Kundeemne** eller **Kunde**. Hvis din forretningslogik omfatter en **Konto**-kvalificeringsproces, hvor posten **Konto** oprettes og kvalificeres som et kundeemne først og derefter som en kunde, synkroniseres denne post kun til programmer til finans og drift, når den er en kunde (`RelationshipType=Customer`). Hvis rækken **Konto** skal synkroniseres som et kundeemne, skal du have en brugerdefineret tilknytning til integration af kundeemnedataene.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forudsætninger og tilknytningsopsætning
 
@@ -111,7 +111,7 @@ Salgsfakturaer oprettes i Supply Chain Management og synkroniseres til Sales. V�
 
 Kundeemne til kontant omfatter en samling af centrale tabeltilknytninger, der arbejder sammen under datainteraktion, som vist i følgende tabel.
 
-| Finans og drift-apps | Kundeengagementapps | Beskrivende tekst |
+| Programmer til finans og drift | Kundeengagementapps | Beskrivende tekst |
 |-----------------------------|-----------------------------------|-------------|
 [Alle produkter](mapping-reference.md#138) | msdyn_globalproducts | |
 [Debitorer V3](mapping-reference.md#101) | konti | |
@@ -122,7 +122,7 @@ Kundeemne til kontant omfatter en samling af centrale tabeltilknytninger, der ar
 [CDS-salgstilbudshoved](mapping-reference.md#215) | pristilbud | |
 [CDS-salgstilbudslinjer](mapping-reference.md#214) | quotedetails | |
 [Frigivne produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoveder V2 i Finans og drift-appen indeholder fakturaer for salgsordrer og fritekstfakturaer. Der anvendes et filter i Dataverse for dobbeltskrivning, der filtrerer alle dokumenter med fritekstfakturaer ud. |
+[Salgsfakturahoveder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoveder V2 i programmer til finans og drift indeholder fakturaer for salgsordrer og fritekstfakturaer. Der anvendes et filter i Dataverse for dobbeltskrivning, der filtrerer alle dokumenter med fritekstfakturaer ud. |
 [Salgsfakturalinjer V2](mapping-reference.md#117) | invoicedetails | |
 [Koder for salgsordreoprindelse](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
@@ -135,3 +135,4 @@ Du kan finde oplysninger om prislister i [Samlet produktoplevelse](product-mappi
 - Økonomiske dimensioner skal angives for masterdata, f.eks. debitor og kreditor. Når en kunde føjes til et tilbud eller en salgsordre, flyttes de økonomiske dimensioner, der er knyttet til kundeposten, automatisk til ordren. Aktuelt omfatter dobbeltskrivning ikke økonomiske dimensionsdata for masterdata.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

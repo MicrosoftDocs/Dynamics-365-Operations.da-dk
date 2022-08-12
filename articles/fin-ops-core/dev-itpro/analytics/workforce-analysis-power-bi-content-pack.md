@@ -6,21 +6,22 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom: 264084
-ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "264084"
+ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.search.form: HcmWorkforceWorkspace
+ms.openlocfilehash: 156657e5f9876bd051f317f0bbcd8664807dd7d3
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884482"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206613"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
@@ -58,7 +59,7 @@ Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til
 Sørg for at downloade Power BI-indhold til **Nøgletal for arbejdsstyrke**, der gælder for den version af Microsoft Dynamics 365, du bruger.
 
 > [!NOTE]
-> De .pbix-filer, der er tilgængelige i Lifecycle Services, gælder kun for Finans og drift-apps.
+> De .pbix-filer, der er tilgængelige i Lifecycle Services, gælder kun for programmer til finans og drift.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende tabel viser de enheder, som indholdet er baseret på.

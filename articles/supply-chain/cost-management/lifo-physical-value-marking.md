@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670434"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135563"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk værdi og afmærkning
 
@@ -128,7 +128,7 @@ I følgende illustration vises disse posteringer:
 - 6a. Fysisk lagerafgang for et antal på 1 til en kostpris af USD 23,00 (løbende gennemsnit af økonomisk bogførte posteringer)
 - 7\. Lagerlukningen udføres. På baggrund af afmærkningsprincippet, der bruger LIFO-metoden, udlignes de markerede posteringer mod hinanden. I dette eksempel udlignes 3b mod 2b, og der bogføres en regulering på USD 6,00 for 3b for at få værdien til at blive USD 22,00. I dette eksempel foretages der ingen yderligere udligninger, da lukningen kun opretter udligninger for økonomisk opdaterede posteringer.
 
-Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 27,50.
+Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 17,50.
 
 I følgende illustration vises effekterne af LIFO-lagermodellen på denne række af posteringer, når afmærkning mellem afgange og tilgange anvendes.
 

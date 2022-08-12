@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070628"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planlægge din kontoplan
 
@@ -43,7 +43,7 @@ Her er nogle af de faktorer, du bør overveje, når du planlægger strukturen af
 Du kan oprette kontoplanen på siden **Kontoplan**. Du kan oprette hovedkonti fra siden **Kontoplan** eller **Hovedkonti**. Dine hovedkonti bør ikke omfatte specialtegn, der bruges som afgrænsningstegn i kontoplaner. Ellers kan funktionerne være ustabile, eller du er nødt til at bruge opslag eller dialogboksen, når du angiver kombinationer af konti og dimensioner. Du kan finde flere oplysninger i [Oprette en hovedkonto](tasks/create-main-account.md).
 
 > [!NOTE]
-> I Dynamics 365 for Finance and Operations version 8.0 (april 2018) kan du redigere afgrænsningstegnet for kontoplanen fra siden **Finansparametre**.
+> I Dynamics 365 Finance, version 8.0 (april 2018) kan du redigere afgrænsningstegnet for kontoplanen fra siden **Finansparametre**.
 
 Det er en god ide at knytte hovedkontiene til hovedkontokategorier, så du kan drage fordel af økonomiske standardrapporter uden at skulle foretage ændringer. Derfor kan du hurtigere og nemmere designe og vedligeholde rapporter.
 
@@ -60,3 +60,4 @@ Du kan finde flere oplysninger under følgende emner:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

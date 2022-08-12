@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850838"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068387"
 ---
 # <a name="inventory-costing-faq"></a>Ofte stillede spørgsmål om lagerefterkalkulation
 
@@ -112,11 +112,11 @@ Nej, du kan ikke aktivere indstillingen **Økonomisk lager** for dimensionen **L
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Bør jeg aktivere indstillingen Brug lokationsstyringsprocesser for lagringsdimensionsgruppen?
 
-Hvis du mener, at du vil bruge funktionerne til avanceret lokationsstyring i fremtiden, skal du aktivere indstillingen **Brug lokationsstyringsprocesser**. Når du har gemt en lagringsdimensionsgruppe, kan du ikke længere ændre indstillingen af **Brug lokationsstyringsprocesser** for den. Hvis du beslutter dig for at bruge lokationsstyringsprocesser senere, skal du oprette et nyt lagersted, hvor indstillingen er aktiveret. Der findes ingen automatiske processer, som du kan bruge til at flytte hele lageret fra et lagersted til et andet eller til at kopiere relaterede konfigurationer til et nyt lagersted.
+Hvis du mener, at du vil bruge funktionerne til lokationsstyringsprocesser (WMS) i fremtiden, skal du aktivere indstillingen **Brug lokationsstyringsprocesser**. Når du har gemt en lagringsdimensionsgruppe, kan du ikke længere ændre indstillingen af **Brug lokationsstyringsprocesser** for den. Hvis du beslutter dig for at bruge lokationsstyringsprocesser senere, skal du oprette et nyt lagersted, hvor indstillingen er aktiveret. Der findes ingen automatiske processer, som du kan bruge til at flytte hele lageret fra et lagersted til et andet eller til at kopiere relaterede konfigurationer til et nyt lagersted.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Kan jeg aktivere Brug lokationsstyringsprocesser for lagringsdimensionsgruppen, selvom jeg ikke planlægger at bruge avancerede lagersteder?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Kan jeg aktivere Brug lokationsstyringsprocesser for lagringsdimensionsgruppen, selvom jeg ikke planlægger at bruge lokationsstyringsprocesser (WMS)?
 
-Ja, selvom du ikke har planer om at bruge funktionerne til avanceret lokationsstyring, kan du aktivere indstillingen **Brug lokationsstyringsprocesser** for lagringsdimensionsgruppen. Hvis du vil oprette og behandle transaktioner, skal du udføre minimumkonfigurationen som f.eks. reservationshierarkier og enhedsseriegrupper. Indstillingerne for avanceret lagersted ignoreres dog generelt, når du behandler pluklister, følgesedler og produktkvittering manuelt (f.eks. på salgsordre- og indkøbsordresider).
+Ja, selvom du ikke har planer om at bruge funktionerne til lokationsstyringsprocesser (WMS), kan du aktivere indstillingen **Brug lokationsstyringsprocesser** for lagringsdimensionsgruppen. Hvis du vil oprette og behandle transaktioner, skal du udføre minimumkonfigurationen som f.eks. reservationshierarkier og enhedsseriegrupper. Indstillingerne for WMS ignoreres dog generelt, når du behandler pluklister, følgesedler og produktkvittering manuelt (f.eks. på salgsordre- og indkøbsordresider).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Hvornår skal jeg aktivere indstillingen Fysisk lager for en lager- eller sporingsdimensionsgruppe?
 

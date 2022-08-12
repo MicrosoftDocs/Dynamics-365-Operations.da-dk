@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595380"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103319"
 ---
 # <a name="create-new-users"></a>Oprette nye brugere
 
 [!include [banner](../../includes/banner.md)]
 
-Før du kan få adgang til Finance and Operations-apps, skal du først føjes til siden **Brugere** (**Systemadministration \> Brugere \> Brugere**). Brugere omfatter interne medarbejdere i din organisation eller eksterne kunder og leverandører. Brugere kan importeres eller tilføjes manuelt. Alle brugere skal have korrekt licens for at få kompatibel brug.
+Før du kan få adgang til programmer til finans og drift, skal du først føjes til siden **Brugere** (**Systemadministration \> Brugere \> Brugere**). Brugere omfatter interne medarbejdere i din organisation eller eksterne kunder og leverandører. Brugere kan importeres eller tilføjes manuelt. Alle brugere skal have korrekt licens for at få kompatibel brug.
 
-Du kan finde flere oplysninger om, hvordan du køber og får licens til Finance and Operations-apps, i [licensvejledningen til Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+Du kan finde flere oplysninger om, hvordan du køber og får licens til programmer til finans og drift, i [Microsoft Dynamics 365-licensvejledning](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Tildele en bruger licens
 Systemadministratorer kan [tildele licenser til brugere](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [Microsoft 365 Administration](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Tilføje en ekstern bruger i Azure AD og tildele en licens 
-Eksterne brugere skal være repræsenteret i dit lejerbibliotek (Azure Active Directory (Azure AD)), så de kan tildeles licenser. Disse eksterne brugere skal føjes til lejeren i Azure AD som gæstebrugere og derefter tildeles de relevante licenser. Et krav til Finance and Operations-apps er, at gæstebrugerens firma skal bruge Azure AD. Du kan finde flere oplysninger under [Tilføje Azure Active Directory B2B-samarbejdsbrugere i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
+Eksterne brugere skal være repræsenteret i dit lejerbibliotek (Azure Active Directory (Azure AD)), så de kan tildeles licenser. Disse eksterne brugere skal føjes til lejeren i Azure AD som gæstebrugere og derefter tildeles de relevante licenser. Et krav til programmer til finans og drift er, at gæstebrugerens firma skal bruge Azure AD. Du kan finde flere oplysninger under [Tilføje Azure Active Directory B2B-samarbejdsbrugere i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importere nye brugere fra Azure AD 
 1. Gå til **Systemadministration** \> **Bruger** \> **Brugere**.

@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Denne artikel indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med programmer til finans og drift.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866111"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140433"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -27,7 +27,7 @@ ms.locfileid: "8866111"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i Finans og drift-apps. 
+Tastaturgenveje kan hjælpe dig med hurtigt og effektivt at indtaste data i programmer til finans og drift. 
 
 > [!NOTE]
 > De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
@@ -197,6 +197,7 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Lukke navigationslisten oplysningsformularen (med fokus på navigationslisten) | Esc                        |
 | Gå til hovedsidens indhold (med fokus på en anden rude)                    | Alt+M, M                    |
 | Flytte til faktaboksruden (som kan inkludere at åbne den)                       | Alt+M, B eller Ctrl+F2         |
+| Flyt til den næste billedforklaring til funktion                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Funktionen **Strømlining af tabulatorfunktion i fuldside-formularer**, der blev introduceret i version 10.0.26, giver brugerne mulighed for at tabulere gennem alle områder af en side uden at kræve, at musen eller en dedikeret tastaturgenvej flyttes mellem områder. Du kan stadig bruge de eksisterende tastaturgenveje (f.eks. Alt+M som tasteakkorder), så du hurtigt kan flytte mellem områder på en side.
@@ -259,13 +260,14 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Vise flere/færre oplysninger i den animerede pop op-prompt (under afspilning af en opgaveguide) | Alt + R,M                    |
 
 ## <a name="focus-management"></a>Fokusstyring 
-Fokusstyring beskriver, hvordan brugerfokus håndteres i et program. Finans og drift-apps har specielle fokuseringsmåder, der har til formål at optimere brugerproduktiviteten, især i forbindelse med dataindtastningsscenarier. Fokuseringsmåder omfatter følgende:  
+Fokusstyring beskriver, hvordan brugerfokus håndteres i et program. Programmer til finans og drift har specielle fokuseringsmåder, der har til formål at optimere brugerproduktiviteten, især i forbindelse med dataindtastningsscenarier. Fokuseringsmåder omfatter følgende:  
 
 -  Når en side indlæses, vil det første redigerbare inputkontrolelement på siden være i fokus og kan acceptere brugerinput med det samme. Hvis der ikke er noget redigerbart inputkontrolelement på siden, er reserveindstillingen for første fokusering det første inputkontrolelement på siden efterfulgt af det første fokuserbare kontrolelement på siden.   
--  Når der er valgt en knap, behandles handlingen typisk, og fokusering kan vende tilbage til siden. Når det sker, fokuseres der typisk på det valgte knapkontrolelement. Det gælder i Finans og drift-apps, **undtagen** når knappen findes i handlingsruden eller på en værktøjslinje. I disse tilfælde, når handlingen er fuldført, vender fokus tilbage til det sidste kontrolelement *uden for* handlingsruden (eller værktøjslinjen), der var i fokus, før knappen blev valgt.
+-  Når der er valgt en knap, behandles handlingen typisk, og fokusering kan vende tilbage til siden. Når det sker, fokuseres der typisk på det valgte knapkontrolelement. Det gælder i programmer til finans og drift, **undtagen** når knappen findes i handlingsruden eller på en værktøjslinje. I disse tilfælde, når handlingen er fuldført, vender fokus tilbage til det sidste kontrolelement *uden for* handlingsruden (eller værktøjslinjen), der var i fokus, før knappen blev valgt.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Tastaturgenveje til manglende kontoanalyse](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ef6a1574f55ad8a4222658887249db4a5490042
+ms.sourcegitcommit: 9cfccb5c260ce56a3457f9ea12e80f54ea55a3b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879769"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183834"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
@@ -118,7 +118,7 @@ I følgende tabel vises programområderne. Understøttelse af skyen og lokalt er
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
 | Produktion                        |                                                                                           | Ja       | Ja             |
 | Varedisponering og prognose      |                                                                                           | Ja       | Ja             |
-| Planlægningsoptimering                |                                                                                           | Ja       | Nej              |
+|                                      | Planlægningsoptimering                                                                     | Ja       | Nej              |
 | Mobilapp, arbejdsområder og platform |                                                                                           | Ja       | Ja             |
 | Office-integration                   |                                                                                           | Ja       | Ja             |
 | Organisationsadministration          |                                                                                           | Ja       | Ja             |

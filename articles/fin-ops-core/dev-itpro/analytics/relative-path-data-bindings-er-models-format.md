@@ -13,18 +13,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: be2c0f921fde13598685553ea01bfcf3f8255362
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313561"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108665"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Brug en relativ sti i databindinger for ER-modeller og -formater
 
 [!include[banner](../includes/banner.md)]
 
-ER-værktøjet (Electronic Reporting) giver brugerne mulighed for at definere elektroniske formatstrukturer og derefter beskrive, hvordan disse strukturer skal udfyldes ved hjælp af de data og algoritmer, der findes i programmet. Du kan finde flere oplysninger under [Oprette ER-konfigurationer (Electronic reporting)](electronic-reporting-configuration.md). Hvis du vil angive dataflowet til hentning af Finance and Operations-data og bruge dem til at generere et elektronisk dokument, skal du gøre følgende:
+ER-værktøjet (Electronic Reporting) giver brugerne mulighed for at definere elektroniske formatstrukturer og derefter beskrive, hvordan disse strukturer skal udfyldes ved hjælp af de data og algoritmer, der findes i programmet. Du kan finde flere oplysninger under [Oprette ER-konfigurationer (Electronic reporting)](electronic-reporting-configuration.md). Hvis du vil angive dataflowet til hentning af finans og drift-data og bruge dem til at generere et elektronisk dokument, skal du gøre følgende:
 
 - Bind konfigurerede datakilder til elementer i den domænespecifikke datamodel, der er designet. Modelstrukturen og de valgte datakilder kan være en del af en kompleks hierarkisk struktur. Derfor kan endelige bindinger være temmelig store og indeholde mange elementer af forskellige typer (f.eks. relationer, tabeller og metoder). Bindingerne kan blive mindre læselige og ret komplekse at gennemgå og forstå, især for ikke-ejere. 
 - Bind datamodelelementer med formateringskomponenter for at definere, hvilke data der udfyldes fra datamodellen til det genererede output.
@@ -58,3 +58,4 @@ Denne funktion bryder ikke bagud-kompatibiliteten for ER-strukturen. Alle tidlig
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

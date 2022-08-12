@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876118"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135837"
 ---
-# <a name="posting-profiles-overview"></a>Oversigt over posteringsprofiler
+# <a name="posting-profiles-overview"></a>Oversigt over bogføringsprofiler
 
-I Finans- og driftsapps bruges udtrykket *posteringsprofiler* til at beskrive de konfigurationer, der styrer, hvordan konto for reskontro konverteres til hovedkonti, så de kan bruges i transaktioner, der bogføres i finansmodulet. De styrer f.eks., hvordan kunden konverteres til en hovedkonto i Debitor, når en faktura bogføres.
+I programmer til finans og drift bruges udtrykket *posteringsprofiler* til at beskrive de konfigurationer, der styrer, hvordan konto for reskontro konverteres til hovedkonti, så de kan bruges i transaktioner, der bogføres i finansmodulet. De styrer f.eks., hvordan kunden konverteres til en hovedkonto i Debitor, når en faktura bogføres.
 
 Nogle moduler og funktioner har en side, der indeholder ordene "posteringsprofil" i navnet (f.eks. **Debitorposteringsprofil** og **Kreditorposteringsprofil**). Visse moduler indeholder desuden flere indstillinger til konfiguration af finanskontering for transaktioner, der genereres fra reskontroen. I modulet **Produktionsstyring** kan du f.eks. konfigurere posteringen efter produktionsgruppe, ressource eller ressourcegruppe.
 
@@ -34,7 +34,7 @@ Før du kan konfigurere posteringsprofiler, bogføringsdefinitioner eller siden 
 
 ## <a name="posting-types"></a>Bogføringstyper
 
-I Finans- og driftsapps bruges en bogføringstype til at definere en generel kategori for en debitering eller kreditering. Denne kategori er uafhængig af hovedkontoen i Finans. Der er bogføringstyper for de enkelte debiteringer eller krediteringer i Finans.
+I programmer til finans og drift bruges en bogføringstype til at definere en generel kategori for en debitering eller kreditering. Denne kategori er uafhængig af hovedkontoen i Finans. Der er bogføringstyper for de enkelte debiteringer eller krediteringer i Finans.
 
 Et enkelt bilag kan have en eller flere bogføringstyper. En transaktion, der bogføres via en finanskladde, hvor kontoen og modkontoen angives til **Finans**, vil f.eks. have bogføringstypen **Finans** for både debet og kredit. Modsat vil en kreditorfaktura have flere bogføringstyper. Disse bogføringstyper omfatter én linje for kreditorsaldoen og yderligere linjer til modposteringen, f.eks. **Finanskladde**.
 
@@ -111,13 +111,14 @@ Mange moduler i Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 - Bogføring af udgiftsstyring (kommer snart)
 - [Posteringsprofil for anlægsaktiver](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Bogføring af mellemregninger (kommer snart)
-- Lagerposteringsprofil (kommer snart)
+- [Lagerpostering](inventory-posting.md)
 - [Bogføring af landingsomkostninger](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Oversigt over bogføringsdefinitioner](posting-definitions.md)
-- Bogføring af produktionsstyring (kommer snart)
+- [Produktionsbogføring](production-posting.md)
 - Bogføring af projektstyring og regnskab (kommer snart)
 - Bogføring af servicestyring (kommer snart)
 - Momsbogføring (kommer snart)
 - Bogføring af tid og fremmøde (kommer snart)
 - Bogføring af transportstyring (kommer snart)
 - Posteringsprofiler for rabatstyring (kommer snart)
+

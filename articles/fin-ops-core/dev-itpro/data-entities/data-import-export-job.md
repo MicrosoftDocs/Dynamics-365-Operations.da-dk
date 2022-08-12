@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860158"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109456"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -209,7 +209,7 @@ Når oprydningsprocessen planlægges, skal følgende parametre angives for at de
 ## <a name="job-history-clean-up-and-archival"></a>Oprydning og arkivering af jobhistorik 
 Funktionen til oprydning og arkivering af jobhistorik erstatter de tidligere versioner af oprydningsfunktionen. I dette afsnit forklares disse nye funktioner.
 
-En af de vigtigste ændringer i oprydningsfunktionen er brugen af systembatchjobbet til oprydning af historikken. Brugen af systembatchjobbet giver Finans- og driftsapps mulighed for automatisk planlægning og kørsel af oprydningsbatchjobbet, så snart systemet er klart. Det er ikke længere nødvendigt at planlægge batchjobbet manuelt. I denne standardkørselstilstand køres batchjobbet hver time fra og med midnat, og kørselshistorikken bevares for de seneste 7 dage. Den slettede oversigt arkiveres, så den kan hentes senere. Fra og med version 10.0.20 er denne funktion altid aktiveret.
+En af de vigtigste ændringer i oprydningsfunktionen er brugen af systembatchjobbet til oprydning af historikken. Brugen af systembatchjobbet giver programmer til finans og drift mulighed for automatisk planlægning og kørsel af oprydningsbatchjobbet, så snart systemet er klart. Det er ikke længere nødvendigt at planlægge batchjobbet manuelt. I denne standardkørselstilstand køres batchjobbet hver time fra og med midnat, og kørselshistorikken bevares for de seneste 7 dage. Den slettede oversigt arkiveres, så den kan hentes senere. Fra og med version 10.0.20 er denne funktion altid aktiveret.
 
 Den anden ændring i oprydningsprocessen er arkiveringen af den slettede kørselshistorik. Oprydningsjobbet arkiverer de slettede poster i det blob-lager, som DIXF bruger til almindelige integrationer. Den arkiverede fil vil være i DIXF-pakkeformatet og vil være tilgængelig i 7 dage i blob'en, hvor den kan hentes. Standardvarigheden på 7 dage for den arkiverede fil kan ændres til højst 90 dage i parametrene.
 
@@ -235,3 +235,4 @@ Hvis du vil hente den arkiverede kørselshistorik, skal du gå til arbejdsområd
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

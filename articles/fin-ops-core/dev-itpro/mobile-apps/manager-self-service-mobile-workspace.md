@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11a4b1667e3d97b651b8019c9dbe577ab30aed67
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868692"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068193"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilarbejdsområdet Mit team
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868692"
 
 Denne artikel indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 
-Dette mobile arbejdsområde er beregnet til brug sammen med Finans og drift-mobilappen.
+Dette mobile arbejdsområde er beregnet til brug sammen med finans og drift-mobilappen.
 
 ## <a name="overview"></a>Overblik 
 I arbejdsområdet **Mit team** til mobilenheder kan ledere udføre disse opgaver:
@@ -50,12 +50,12 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 <tbody>
 <tr class="odd">
 <td>Et af følgende produkter skal være installeret i organisationen:
-<ul><li>En Finans og drift-app</li>
+<ul><li>Et program til finans og drift</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Hvis en Finans og drift-app ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
+<td>Hvis et program til finans og drift ikke allerede er udrullet i organisationen, kan du se <a href="../deployment/deploy-demo-environment.md">Installere er demomiljø</a>. Hvis du ikke allerede har installeret Personale i organisationen, kan systemadministratoren få adgang til en prøveversion fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Personale-websiden</a>.
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 
 ## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-Download og installer Finans og drift-mobilappen:
+Download og installer finans og drift-mobilappen:
 
 -   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -99,3 +99,4 @@ Download og installer Finans og drift-mobilappen:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

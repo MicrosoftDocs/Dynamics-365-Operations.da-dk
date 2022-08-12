@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ad9c91051c1a1140661c93d7c5e86a78de5ec3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e53b7667dd4589a7c6c14b8aaf8ba51017eee0d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877328"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068324"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet
 
@@ -38,7 +38,7 @@ Denne artikel beskriver, hvordan lastplanlægningspanelet bruges til at oprette 
 7. Vælg vare **A0001**. **A0001** er aktiveret for transportstyring.  
 8. Klik på rullelisten i feltet **Sted** for at åbne opslaget, og vælg derefter en vare.
 9. Angiv et tal i feltet **Antal**.
-10. Skriv i dette eksempel "24" i feltet **Lagerlokation**. Dette lagersted er aktiveret for transportstyring og avanceret lagerstedsstyring.  
+10. Skriv i dette eksempel "24" i feltet **Lagerlokation**. Dette lagersted er aktiveret for transportstyring og lokationsstyringsprocesser (WMS).  
 11. Vælg **Gem**.
 12. Luk siden.
 

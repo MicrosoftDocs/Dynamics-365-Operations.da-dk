@@ -14,222 +14,97 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c005f677624336b4194bebea6d69667182128b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd71d728f9c97dc9e2c44a7e7a0e773be891b818
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880474"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203193"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Ofte stillede spørgsmål om fletning af Dynamics 365 Human Resources-infrastruktur
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+## <a name="what-is-dynamics-365-human-resources"></a>Hvad er Dynamics 365 Human Resources?
 
+Microsoft Dynamics 365 Human Resources leverer værktøjer, der kan hjælpe personaleteam med at øge organisationens fleksibilitet, transformere medarbejdernes erfaring og optimere personaleprogrammer for at oprette en arbejdsplads, hvor medarbejdere og virksomheden kan blive ansat. Du kan finde flere oplysninger om Dynamics 365 Human Resources i [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/).
 
-Denne artikel besvarer ofte stillede spørgsmål om fletningen af infrastruktur for Microsoft Dynamics 365 Human Resources og programmer til finans og drift.
-
-## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Hvad er fletning af Dynamics 365 Human Resources-infrastruktur?
-
-Dynamics 365 Human Resources er et selvstændigt program, der bruger en anden infrastruktur end andre Finans- og driftsapps, f.eks. Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Project Operations. Fletningen af infrastrukturen placerer Dynamics 365 Human Resources i samme infrastruktur som andre Finans- og driftsapps.
+- **Transformere medarbejdererfaringer.** Fastholdelse af de bedste medarbejdere ved at styrker ledere og medarbejdere via connectede selvbetjeningserfaringer, der er med til at skabe ansættelse og vækst.
+- **Optimer HR-programmer.** Reducer driftsomkostningerne, og opret medarbejderfokuseret orlov og fravær, tid, gode og kompensationsstyringsprogrammer.
+- **Øg organisationsuligheden.** Gør HR i stand til at arbejde med den færdighed, som virksomheden har brug for, ved at bruge Dataverse og Microsoft Power Platform til at centralisere persondata, så de nemt kan udvide Dynamics 365 Human Resources.
+- **Få indsigt i arbejdsstyrken.** Foretag databaserede beslutninger ved hjælp af muligheden for at analysere og visualisere persondata på detaljerede dashboards, der er tilgængelige på alle enheder.
 
 ## <a name="value-and-benefits-of-the-infrastructure-merge"></a>Værdi og fordele ved infrastrukturens fletning
 
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-what-benefits-will-we-see-from-these-changes"></a>Min organisation bruger Dynamics 365 Human Resources til at administrere HR-handlinger. Hvilke fordele kan vi se i disse ændringer?
+### <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Hvad er fletning af Dynamics 365 Human Resources-infrastruktur?
 
-- Disse ændringer fjerner den forvirring som skyldes flere sæt personalefunktioner (HR) i Dynamics 365.
-- De muliggør både udvidelse af Microsoft Power Platform og en metode til at udvide forretningslogik og funktionsmuligheder.
-- De giver ensartethed mellem Dynamics 365 Human Resources og andre Finans- og driftsapps i form af Application Lifecycle Management (ALM), Microsoft Dynamics Lifecycle Services (LCS), geografisk tilgængelighed, udvidelsesmuligheder og meget mere.
-- De giver dig mulighed for at benytte delte tjenester og værktøjer og reducere omkostningerne.
+Der er i øjeblikket to separate grupper af personalefunktioner i to forskellige infrastrukturen i Dynamics 365:
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Hvilke fordele kan vi se i disse ændringer?
+- **Dynamics 365 Human Resources** – En uafhængig app, der kører på en uafhængig infrastruktur. Da denne app blev sendt, blev infrastrukturen adskilt fra andre apps til Dynamics 365-handlinger. Vores kunder bruger denne app til at øge forståelsen af organisationen, optimere HR-programmer, transformere medarbejdererfaringer og få indsigt i arbejdsstyrken.
+- **HR-modul** – Et ældre sæt egenskaber, der tidligere var en del af SKU (Unified Operations licensing stock keeping unit). HR-modulet kører på den finans og drift-infrastruktur, hvilket er det samme på tværs af alle operationsapps. Disse apps inkluderer Dynamics 365 Finance, Dynamics 365 Project Operations og Dynamics 365 Supply Chain Management. Kunder fik HR-funktionerne som en del af Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
 
-De funktioner og investeringer, der er tilføjet i Dynamics 365 Human Resources, vil nu være tilgængelige for kunder, der bruger HR-modulet i Dynamics 365 Finance. Nogle af disse funktioner omfatter styring af orlov og fravær, styring af goder og opgavestyring.
+I løbet af de seneste tre år har Microsoft ikke føjet nye egenskaber eller forbedringer til personalemodulet. I stedet har vores investeringsaktiver fokuseret på Dynamics 365 Human Resources-appen.
 
-### <a name="will-i-lose-any-features-or-capabilities-that-i-currently-use"></a>Mister jeg funktioner eller muligheder, som jeg har i øjeblikket?
+Hvis disse to egenskaber bliver sporet på samme infrastruktur, kan vi hjælpe kunder med at få følgende fordele:
 
-Der vil være funktionel paritet mellem Dynamics 365 Human Resources og HR-modulet i Finans- og driftsapps. Dynamics 365 Human Resources vil have forrang for lignende funktioner. Få flere oplysninger i [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Forbedringer, der er blevet føjet til Dynamics 365 Human Resources de seneste tre år, herunder forbedret orlovs- og fraværsstyring og -rapportering.
+- Forbedret udvidelse via Microsoft Power Platform og muligheden for at udvide forretningslogik til at personalisere sider.
+- Forbedret udrulning, forbedrede opdateringer og vedligeholdelse, der er vedvarende i form af Application Lifecycle Management (ALM), Lifecycle Services, geografisk tilgængelighed og meget mere.
+- Mere effektiv, efterhånden som vores teknikerteam bruger delte tjenester, værktøj og reducerede platformomkostninger.
 
-### <a name="will-the-experience-change-for-my-users"></a>Vil mine brugere få en anden oplevelse?
+Denne overførsel påvirker kunder, som aktuelt bruger enten Dynamics 365 Human Resources eller det ældre HR-modul.
 
-De nye HR-funktioner administreres via Funktionsstyring. Debitorerne skal beslutte, om de vil konfigurere dem. I nogle tilfælde kan funktioner være blevet ændret. I disse tilfælde vil der blive leveret dokumentation.
+## <a name="glossary-of-terms-used-in-this-faq"></a>Ordliste til begreber, der bruges i denne Ofte stillede spørgsmål
 
-### <a name="how-does-this-change-affect-me-if-i-am-an-existing-customer-and-i-use-both-the-hr-module-on-the-finance-and-operations-infrastructure-and-dynamics-365-human-resources-through-custom-integrations"></a>Hvordan påvirker denne ændring mig, hvis jeg er en eksisterende kunde, og jeg bruger både HR-modulet i Finans- og driftsinfrastrukturen og Dynamics 365 Human Resources gennem brugerdefinerede integrationer?
+- **Dynamics 365 Human Resources** – Vores aktuelle og fremtidige produkt, der tilbyder HR-egenskaber på markedet.
+- **HR-modul** – Et ældre sæt egenskaber, der tidligere var licenseret med Unified Operations-tilbud. Egenskaberne aktiveres, når en kunde ejer Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
+- **Finans og drift-infrastruktur** – Den udviklingsarkitektur, der bruges af operationerne, herunder Dynamics 365 Finance, Dynamics 365 Supply Chain Management og Dynamics 365 Project Operations. Denne infrastruktur er den, der vil blive brugt fremadrettet. I denne Ofte stillede spørgsmål henviser termen *flettet infrastruktur* til finans og drift-miljøet.
+- **Human resources-infrastruktur –** Den udviklingsarkitektur, der tidligere er brugt til Dynamics 365 Human Resources-appen. Fletningen af infrastrukturen placerer Dynamics 365 Human Resources i samme infrastruktur som finans og drifts. Den selvstændig infrastruktur afbrydes ikke.
 
-Der kræves ikke længere brugerdefinerede integrationer mellem Dynamics 365 Human Resources og HR-modulet i Dynamics 365 Finance. Alle HR-data findes i samme database som andre Finans- og driftsapps.
+## <a name="general-questions-about-the-infrastructure-merge"></a>Generelle spørgsmål om fletningen af infrastrukturen
 
-## <a name="migration-from-dynamics-365-human-resources-to-finance-and-operations-apps"></a>Overflytte data fra Dynamics 365 Human Resources til Finans- og driftsapps
+### <a name="will-customers-lose-any-features-or-capabilities"></a>Mister kunder nogen funktioner eller egenskaber?
 
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-hr-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Min organisation bruger Dynamics 365 Human Resources til at administrere HR-handlinger. Hvad skal vi planlægge for at overflytte til den nye oplevelse?
+Vores målsætning er at minimere den effekt, denne overførsel har på kunder. Vi fjerner ikke nogen funktioner eller egenskaber. Der vil være funktionel paritet mellem Dynamics 365 Human Resources og HR-modulet. Hvis der findes en funktion i begge infrastrukturen, anvendes Dynamics 365 Human Resources-erfaringen.
 
-Hvis din organisation bruger Dynamics 365 Human Resources, men ikke bruger andre Finans- og driftsapps, overflyttes Human Resources-miljøet til den nye infrastruktur. En stor del af denne overflytningsproces vil være automatiseret. Der vil være processer for overflytning af databasen og synkronisering af den med den nye infrastruktur.
+### <a name="will-the-user-experience-change"></a>Vil min brugeroplevelse ændre sig?
 
-Desuden findes der værktøjer, så du kan teste overflytningsprocessen og validere dataene og oplevelsen, før du overflytter produktionsmiljøet.
+Brugeroplevelsen vil være konsistent med standardoplevelsen i Dynamics 365-platformen. Selvom den generelle erfaring for dashboardet og menuerne stadig er den samme, vil den blive tilpasset den almindelige oplevelse i Dynamics 365 Finance-app. Navigation inkluderer både moduler og arbejdsområder, giver mulighed for foretrukne med mere. Arbejdsområderne Dynamics 365 Human Resources, f.eks. **Personalestyring** og **Personer**, flettes sammen med den økonomiske og driftsmæssige infrastruktur. I fremtiden vil nye egenskaber blive leveret via Funktionsstyring, som giver kunderne mulighed for at se nye funktioner og bestemme, hvilke funktioner de vil bruge. Yderligere oplysninger finder du i [oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og [dokumentation til brugergrænsefladen](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json).
 
-Hvis organisationen bruger både Dynamics 365 Human Resources og og andre Finans- og driftsapps, skal du planlægge mere tid til validering for at sikre, at dataene overflyttes korrekt til det nye miljø. Overflytningen til den nye infrastruktur fletter dataene fra Human Resources-miljøet med Finans- og driftsmiljøet. Datakonflikter kræver brugerinput for at afgøre, hvordan konflikten skal løses. Brugere og administratorer skal administrere de datatilknytninger, hvor der er konflikter, og teste overflytningen til sandkassemiljøer inden overflytningen af produktionsmiljøer.
+### <a name="when-will-the-dynamics-365-human-resources-infrastructure-merge-be-completed"></a>Hvornår skal Dynamics 365 Human Resources-infrastrukturfletning være fuldført?
 
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Hvad skal vi planlægge for at overflytte til den nye oplevelse?
+Infrastrukturen vil blive rullet ud i faser, så kunderne får tid til at planlægge og udføre de nødvendige trin. Vi begyndte at få udrullet egenskaber i Dynamics 2021-udgivelsesbølge 2. Vi planlægger at fuldføre alle produktudviklingsindsatser for dette projekt ved udgangen af 2022 udgivelsesbølge 2. Bemærk, at tidslinjer kan ændres. De fleste opdaterede oplysninger findes i [udgivelsesplanerne](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
-For organisationer, der bruger HR-modulet i Finans- og driftsapps, anvendes den nye funktion fra Dynamics 365 Human Resources til dit miljø via standardprocessen for opdatering af One Version. Du kan forvente at få vist de nye funktioner i dit miljø, efterhånden som de bliver tilgængelige med de enkelte opdateringer. Du kan bruge Funktionsstyring til at aktivere nye funktioner, men du skal planlægge at validere disse funktioner. Følg de processer, du har etableret for validering af andre opdateringer af miljøet. Du kan finde flere oplysninger om, hvordan opdateringer anvendes i Finans- og driftsapps, i [Oversigt over One Version](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+### <a name="what-training-and-resources-will-be-available-to-help-with-the-infrastructure-merge"></a>Hvilken uddannelse og hvilke ressourcer er tilgængelige som hjælp i infrastrukturfletning?
 
-### <a name="when-will-my-organization-be-migrated"></a>Hvornår bliver organisationen overflyttet?
+Der leveres dokumentation, som beskriver hvert enkelt trin i infrastrukturfletteprocessen i detaljer. Vi vil levere yderligere uddannelsesressourcer, som f.eks. kursusressourcer, alt efter hvad der er nødvendigt for at hjælpe kunder og partnere med en problemfri overførsel.
 
-Overflytningen for hver organisation afhænger af den aktuelle konfiguration og parathed med hensyn til overflytning til den nye infrastruktur. Disse datoer kan blive ændret.
+### <a name="will-there-be-changes-in-development-capabilities-after-the-infrastructure-merge-is-completed"></a>Vil der ske ændringer i udviklingsfunktionerne, når infrastrukturfletningen er fuldført?
 
-- Organisationer, der i øjeblikket bruger HR-modulet i Finans- og driftsapps, modtager HR-funktionen til Dynamics 365 Human Resources som del af den almindelige opdateringsproces for One Version. Der planlægges nye funktioner til at blive generelt tilgængelige fra januar 2022.
-- Organisationer, der kun bruger Dynamics 365 Human Resources, vil have adgang til overflytningsværktøjet, så de kan påbegynde test og starte overflytningen fra midt i 2022. Den dato, hvor overflytningen til den nye infrastruktur skal være fuldført, inden den ikke er fastlagt endnu. Det vil dog være mindst ét år efter den dato, hvor overflytningsværktøjet bliver tilgængeligt.
-- Organisationer, der i øjeblikket bruger både Dynamics 365 Human Resources og andre Finans- og driftsapps, vil have adgang til overflytningsværktøjet, så de kan påbegynde test og starte overflytningen sidst i 2022. Den dato, hvor overflytningen til den nye infrastruktur skal være fuldført, inden den ikke er fastlagt endnu. Det vil dog være mindst ét år efter den dato, hvor overflytningsværktøjet bliver tilgængeligt.
+Du kan få mere at vide om udviklingsegenskaber i [Startside for udvikling og tilpasning](../fin-ops-core/dev-itpro/dev-tools/developer-home-page.md).
 
-Du kan finde flere oplysninger om de nye funktioner til Dynamics 365 Human Resources i [Nyheder eller ændringer i Human Resources](./hr-admin-whats-new.md).
+## <a name="feature-availability-questions"></a>Spørgsmål om tilgængelighed af funktioner
 
-### <a name="my-organization-has-not-yet-gone-live-on-dynamics-365-human-resources-should-we-go-live-with-the-human-resources-module-in-the-finance-and-operations-apps-or-with-the-dynamics-365-human-resources-app-on-the-legacy-infrastructure"></a>Min organisation kører ikke Dynamics 365 Human Resources endnu. Skal vi arbejde med modulet Human Resources i Finans- og driftsapps eller med Dynamics 365 Human Resources-appen i den ældre infrastruktur?
+### <a name="will-the-linkedin-talent-hub-integration-work-on-the-finance-and-operations-infrastructure"></a>Vil integrationen af LinkedIn Talent Hub fungerer i finans og drift-infrastruktur?
 
-Det er vigtigt at overveje, hvilke HR-funktioner der er behov for, og hvornår funktionen bliver tilgængelig i den nye infrastruktur. Hvis organisationen skal bruge kernefunktionaliteten til personalestyring, er den i øjeblikket tilgængelig i HR-modulet i Finans- og driftsapps i den nye infrastruktur. Funktionsparitet mellem HR-modulet i Finans- og driftsapps og Dynamics 365 Human Resources-appen forventes i version 10.0.25, som er planlagt til at blive generelt tilgængelig i marts 2022. Integrationsfunktioner som Teams-appen og Dataverse-enhedsintegrationer vil være tilgængelige i senere versioner.
+Nej, LinkedIn Talent Hub-integrationen bliver ikke en del af den sammenflettede infrastruktur. Public Application Programming Interface (API'er) er tilgængelige til integration med sporingsløsninger til rekruttering og ansøgere. Kunder, der planlægger at bruge LinkedIn Talent Hub, skal samarbejde med deres Microsoft-partner for at blive integreret ved hjælp af de leverede API'er. Yderligere oplysninger om ATS-integrations-API'er [(Applicant Tracking System) finder du i introduktionen til API-systemet for ansøgere](./hr-admin-integration-ats-api-introduction.md).
 
-Hvis organisationens behov for HR-funktionaliteten vil være tilgængelige i den nye infrastruktur inden for den tidsramme, hvor organisationen vil køre den, kan det være nemmere at køre HR-modulet i Finans- og driftsapps. Det vil resultere i en nemmere overflytning, da det vil være en standardprogramopgradering til Dynamics 365 Human Resources-applikationen, og kunden vil allerede benytte den nye infrastruktur. Hvis organisationen beslutter at køre Dynamics 365 Human Resources-applikationen i den ældre infrastruktur, skal en overflytning af miljøet flyttes til den nye infrastruktur. Det kan undgås ved at køre i den nye infrastruktur.
+### <a name="will-the-capabilities-that-are-currently-available-only-in-dynamics-365-human-resources-for-example-leave-management-and-benefits-management-be-available-after-the-merge-is-completed"></a>Vil de egenskaber, der aktuelt kun er tilgængelige i Dynamics 365 Human Resources (f.eks. orlovsstyring og styring af goder) være tilgængelige, når fletningen er fuldført?
 
-### <a name="i-am-using-new-capabilities-that-are-available-only-in-dynamics-365-human-resources-such-as-leave-and-absence-and-benefits-management-will-these-capabilities-now-be-available-in-the-human-resources-module-on-the-finance-and-operations-infrastructure-too"></a>Jeg bruger nye funktioner, der kun er tilgængelige i Dynamics 365 Human Resources (f.eks. **Orlov og fravær** og **Frynsegodeadministration**). Vil disse funktioner nu også være tilgængelige i Human Resources-modulet i Finans- og driftsinfrastrukturen?
+Ja. Alle Dynamics 365 Human Resources-programegenskaber kommer til finans- og operationsinfrastrukturen. Funktionerne gøres tilgængelige i en trinvis tilgang. Hvis du vil have opdaterede oplysninger om den flettede infrastrukturs tilgængelighed med funktioner, kan du jævnligt gennemse [frigivelsesplanerne](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
-Ja, alle moduler fra Dynamics 365 Human Resources vil fungere som i Finans- og driftsapps, og der vil være en funktionsparitet på 100 procent. Som en del af den overordnede overflytningsstrategi for kunder, der i øjeblikket bruger disse funktioner i HR, vil kundedata blive overflyttet, så de fortsat fungerer i Finans- og driftsinfrastrukturen.
+### <a name="will-ceridian-integrations-with-dynamics-365-human-resources-be-available-after-the-infrastructure-merge-is-completed"></a>Vil Ceridian-integration med Dynamics 365 Human Resources være tilgængelig, når infrastrukturfletningen er fuldført?
 
-### <a name="i-use-the-new-dynamics-365-human-resources-benefits-management-capabilities-ive-built-custom-integrations-with-the-hr-module-on-the-finance-and-operations-infrastructure-so-that-i-can-take-advantage-of-the-payroll-capabilities-by-using-benefits-data-will-these-custom-integrations-be-required-going-forward"></a>Jeg bruger de nye funktioner til administration af frynsegoder i Dynamics 365 Human Resources. Jeg har opbygget brugerdefinerede integrationer med HR-modulet i Finans- og driftsinfrastrukturen, så jeg kan udnytte lønfunktionerne ved at bruge frynsegodedata. Vil disse brugerdefinerede integrationer være påkrævet fremover?
+Ceridian er ved at oprette en V2-integration med Dynamics 365 Human Resources, der benytter løn-API'erne. Den filbaserede integration, der aktuelt findes i Dynamics 365 Human Resources, overføres ikke til finans og drift-infrastrukturen. Du kan finde flere oplysninger i [Introduktion til Løn-API](./hr-admin-integration-payroll-api-introduction.md).
 
-Som en del af fletningen af infrastrukturen oprettes HR-data i samme database som andre Finans- og driftsapps. Det er ikke længere være nødvendigt at integrere modulerne i Finans- og driftsapps.
+### <a name="will-applicant-tracking-or-onboardingoffboarding-of-employees-functionality-be-included"></a>Medtages ansøgersporing eller -onboarding/offboarding af medarbejderens funktioner?
 
-### <a name="my-organization-uses-one-or-more-isv-solutions-with-dynamics-365-human-resources-will-our-isv-solutions-be-migrated-automatically"></a>Min organisation bruger en eller flere ISV-løsninger sammen med Dynamics 365 Human Resources. Vil vores ISV-løsninger blive overflyttet automatisk?
+I tidligere versioner har vi oprettet ATS Integration API for at sætte partnere og kunder i stand til at oprette ATS-integration med Personale. Yderligere ATS-relaterede funktioner blev tilgængelige i 2022 meter 1. Vi vil fortsætte med at forbedre disse API'er i fremtidige versioner.
 
-Overflytningsoplevelsen for den enkelte uafhængige softwareleverandør (ISV) vil variere, afhængigt af løsningens integrationsmetode. Microsoft vil fungere tæt sammen med ISV'er for at sikre en problemfri overgang til den nye infrastruktur.
+Den personalefunktionalitet, der aktuelt findes i infrastrukturen i finans og drift, omfatter nogle rekrutteringsstyringsfunktionaliteter, der ikke findes i Dynamics 365 Human Resources. Når infrastrukturfletningen er fuldført, er denne funktionalitet tilgængelige for alle Human Resources-kunder. Denne funktionalitet giver lightweight ATS-funktionalitet. Vi planlægger dog ikke at udvide denne funktionalitet i fremtiden. Kunder, der har brug for mere avancerede funktioner, kan få fordel af integration med ATS. Yderligere oplysninger om ATS-integration af API'er findes i [Applicant Tracking System-integration til API-introduktion](./hr-admin-integration-ats-api-introduction.md).
 
-### <a name="my-organization-uses-linkedin-talent-hub-integration-with-dynamics-365-human-resources-will-this-integration-continue-to-work-after-the-infrastructure-change-is-completed"></a>Min organisation bruger LinkedIn Talent Hub-integration sammen med Dynamics 365 Human Resources. Vil denne integration fortsat fungere, når ændringen af infrastrukturen er fuldført?
+### <a name="will-the-dynamics-ax-2012-upgrade-tools-be-used-to-upgrade-the-hr-module-in-ax-2012-to-the-dynamics-365-human-resources-app"></a>Vil de Dynamics AX 2012-opgraderingsværktøjer, der i øjeblikket er tilgængelige, blive brugt til opgradering af HR-modulet i AX 2012 til Dynamics 365 Human Resources-app?
 
-Nej, integrationen af LinkedIn Talent Hub fungerer fortsat ikke efter overflytningen til den nye infrastruktur. Tjenesten til integration af LinkedIn Talent Hub udgår med den ældre Dynamics 365 Human Resources-infrastruktur.
+Ja. Opgrader fra Dynamics AX 2012 til Dynamics 365 Human Resources vil bruge samme opgraderingssti og -værktøj, som bruges til at opgradere til den seneste version af andre Dynamics 365 rift-apps, f.eks. Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
 
-### <a name="my-organization-uses-the-human-resources-app-for-teams-will-the-app-continue-to-work-after-the-infrastructure-change-is-completed"></a>Min organisation bruger Human Resources-appen til Teams. Vil appen fortsat fungere, når ændringen af infrastrukturen er fuldført?
-
-Ja, Human Resources-appen til Teams vil fortsat fungere efter overflytningen til den nye infrastruktur.
-
-### <a name="my-organization-has-configured-custom-security-in-dynamics-365-human-resources-will-our-custom-security-still-be-applied-after-the-infrastructure-change-is-completed"></a>Min organisation har konfigureret brugerdefineret sikkerhed i Dynamics 365 Human Resources. Vil vores brugerdefinerede sikkerhed stadig blive anvendt, når ændringen af infrastrukturen er fuldført?
-
-Ja, brugerdefinerede sikkerhedskonfigurationer bliver inkluderet i overflytningen af data til den nye infrastruktur.
-
-### <a name="we-are-using-data-integrator-to-move-data-between-dynamics-365-human-resources-and-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected"></a>Vi bruger dataintegrator til at flytte data mellem Dynamics 365 Human Resources og Finans- og driftsapps. Hvordan påvirkes de data, der er ved at blive integreret?
-
-HR-data, der findes i øjeblikket i Dynamics 365 Human Resources, synkroniseres med Dataverse. Dataintegrator kan derefter bruges til envejssynkronisering med Finans- og driftsapps. Efter overflytningen til den nye infrastruktur vil HR-data være indbyggede i Finans- og driftsapps. Dataintegrator vil ikke længere være nødvendig for at synkronisere dataene mellem Finans- og driftsapps og Human Resources.
-
-De aktuelle indbyggede Dataverse-datatabeller til Human Resources vil fortsat synkronisere dataene fra miljøet med den nye infrastruktur. Enhederne konverteres til at understøtte dobbeltskrivning. Alle andre dataintegrationer, der er konfigureret via Dataintegrator i forhold til disse tabeller for andre Dynamics 365-apps, vil fortsat fungere, som de er konfigureret i øjeblikket.
-
-### <a name="we-are-using-dual-write-to-move-hr-data-between-dataverse-and-other-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected-by-the-migration-to-the-new-infrastructure"></a>Vi bruger dobbeltskrivning til at flytte HR-data mellem Dataverse og andre Finans- og driftsapps. Hvordan påvirkes de data, der i øjeblikket bliver integreret, af overflytningen til den nye infrastruktur?
-
-HR-data vil være indbyggede i Finans- og driftsapps i den nye infrastrukturs miljø. Dobbeltskrivning bruges til at flytte HR-data mellem det nye miljø og Dataverse-miljøet.
-
-### <a name="we-have-built-custom-integrations-from-dynamics-365-human-resources-to-one-or-more-external-systems-will-we-have-to-develop-new-integrations-after-the-infrastructure-change-is-completed"></a>Vi har opbygget brugerdefinerede integrationer fra Dynamics 365 Human Resources til et eller flere eksterne systemer. Vil vi skulle udvikle nye integrationer, når ændringen af infrastrukturen er fuldført?
-
-Det afhænger af integrationens slutpunkt. Du kan finde flere oplysninger om de integrationsteknologier, der findes i Finans- og driftsapps, og hvordan du vælger den bedste integrationsteknologi, i [Oversigt over integration](../fin-ops-core/dev-itpro/data-entities/integration-overview.md).
-
-### <a name="we-have-extended-dataverse-for-dynamics-365-human-resources-will-these-extensions-be-migrated-automatically"></a>Vi har udvidet Dataverse til Dynamics 365 Human Resources. Vil disse udvidelser blive overflyttet automatisk?
-
-Hvis Dynamics 365 Human Resources- og Finans- og driftsmiljøerne, der vil blive samlet i miljøet i den nye infrastruktur, er forbundet med samme Dataverse-miljø, vil de to apps fortsat være forbundet med samme Dataverse-miljø efter overflytningen. Der kræves ingen overflytning for Dataverse-udvidelser.
-
-Hvis Dynamics 365 Human Resources- og Finans- og driftsmiljøerne i øjeblikket er forbundet med separate Dataverse-miljøer, vil de to Dataverse-miljøer imidlertid skulle kombineres, så de er forbundet med ét enkelt miljø i den nye infrastruktur. For denne Dataverse-overflytning kan de Dataverse-tabeller, der er standard for Human Resources-løsningerne, oprette forbindelse til og gensynkroniseres med det nye Dataverse-miljø. Eventuelle udvidelser til Dataverse-miljøet overflyttes ikke automatisk, men skal geninstalleres i det nye miljø. Det anbefales at bruge administrerede løsninger til at administrere dine Dataverse-udvidelser. Du kan finde flere oplysninger i [Introduktion til løsninger](/powerapps/developer/data-platform/introduction-solutions).
-
-### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Vi har anvendt den brugerdefinerede feltfunktionalitet i Dynamics 365 Human Resources. Vil disse brugerdefinerede felter blive overført automatisk?
-Ja, de brugerdefinerede felter, der er tilføjet, overflyttes til den nye infrastruktur.
-
-### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Vi har konfigureret Microsoft Power Automate-flow og/eller Microsoft Power Apps til at fungere sammen med Dynamics 365 Human Resources. Vil disse Microsoft Power Platform-komponenter blive overflyttet og fungere automatisk, når ændringen af infrastrukturen er fuldført?
-
-Power Apps, Power Automate-flow og andre Microsoft Power Platform-tilpasninger ligner Dataverse-udvidelser. Om de fungerer automatisk efter overflytningen til den nye infrastruktur, afhænger af, om Human Resources-appen og Finans- og driftsapps er forbundet med samme Power Apps-miljø før overflytningen.
-
-Hvis appsene har forbindelse til det samme Power Apps-miljø, fortsætter de med at være tilsluttet det pågældende Power Apps-miljø efter overflytningen til den nye infrastruktur. I dette tilfælde vil Power Apps, Power Automate-flow og andre Microsoft Power Platform-tilpasninger fortsat fungere uden yderligere konfiguration. Det anbefales at bruge administrerede løsninger til at administrere dine applikationsudvidelser i Dataverse. Du kan finde flere oplysninger i [Introduktion til løsninger](/powerapps/developer/data-platform/introduction-solutions).
-
-Men hvis Human Resources-appen og Finans- og driftsapps er forbundet med separate Power Apps-miljøer, skal de kombineres som en del af overflytningen. Denne opgave kræver, at Power Apps og andre tilpasninger geninstalleres i det nye miljø.
-
-### <a name="we-have-enabled-dataverse-virtual-tables-for-dynamics-365-human-resources-what-will-happen-to-these-tables-during-the-migration"></a>Vi har aktiveret virtuelle Dataverse-tabeller for Dynamics 365 Human Resources. Hvad sker der med disse tabeller under overflytningen?
-
-Hvis miljøet i den nye infrastruktur forbliver forbundet med det Dataverse-miljø, der aktuelt er forbundet med Dynamics 365 Human Resources, vil de virtuelle Dataverse-tabeller, der er genereret i det pågældende miljø, fungere efter overflytningen uden yderligere konfiguration.
-
-Men hvis miljøet i den nye infrastruktur er forbundet med et andet Dataverse-miljø efter overflytningen, skal de virtuelle tabeller genereres igen i det nye Dataverse-miljø.
-
-### <a name="we-have-developed-an-integration-by-using-the-applicant-tracking-system-ats-api-payroll-api-dataverse-virtual-tables-for-dynamics-365-human-resources-or-other-entities-in-the-dataverse-web-api-will-these-integrations-continue-to-work-after-the-infrastructure-change-is-completed"></a>Vi har udviklet en integration ved hjælp af ATS-API (Applicant Tracking System), Løn-API, virtuelle Dataverse-tabeller for Dynamics 365 Human Resources eller andre enheder i Web-API'en for Dataverse. Vil disse integrationer fortsat fungere, når ændringen af infrastrukturen er fuldført?
-
-Hvis miljøet i den nye infrastruktur forbliver forbundet med det -miljø, der aktuelt er forbundet med Dynamics 365 Human Resources, vil de virtuelle Dataverse-tabeller, vil alle integrationer, der er udviklet i forhold til Web-API'en for Dataverse fortsat fungere efter overflytningen er fuldført.
-
-Hvis miljøet i den nye infrastruktur er forbundet med et andet Dataverse-miljø efter overflytningen, vil alle integrationer, der er udviklet i forhold til Web-API'en for Dataverse imidlertid skulle omkonfigureres, for at de kan oprette forbindelse til det nye Dataverse-miljø.
-
-### <a name="is-there-an-impact-on-the-azure-region-when-my-environment-is-migrated"></a>Påvirkes Azure-området, når mit miljø overflyttes?
-
-Det forventes, at Human Resources-miljøet typisk vil forblive i samme Azure-område under overflytningen. Den eneste undtagelse er, hvis Human Resources-miljøet flettes sammen med et Finans- og driftsmiljø, der er i et andet område. I dette tilfælde overflyttes Human Resources-miljøet til Azure-området i Finans- og driftsmiljøet.
-
-### <a name="my-organization-depends-on-workflows-in-dynamics-365-human-resources-for-one-or-more-business-processes-will-the-workflows-be-migrated-automatically"></a>Min organisation er afhængig af arbejdsgange i Dynamics 365 Human Resources for en eller flere forretningsprocesser. Vil arbejdsgange automatisk blive overflyttet?
-
-Ja, konfigurationer, historik og igangværende arbejdsgange vil blive overflyttet.
-
-### <a name="what-training-and-resources-will-be-available-to-help-with-the-migration-process"></a>Hvilken uddannelse og hvilke ressourcer er tilgængelige som hjælp i overflytningsprocessen?
-
-Der leveres komplet dokumentation, som beskriver hvert enkelt trin i overflytningsprocessen i detaljer. Der kan også være yderligere uddannelsesressourcer som f.eks. videoer og workshops tilgængelige afhængigt af behovet.
-
-### <a name="my-organization-has-created-saved-views-in-dynamics-365-human-resources-to-improve-the-usability-of-the-interface-will-the-saved-views-be-migrated-automatically"></a>Min organisation har oprettet gemte visninger i Dynamics 365 Human Resources for at forbedre anvendeligheden af brugergrænsefladen. Vil de gemte visninger blive overflyttet automatisk?
-
-Ja, gemte visninger vil blive overflyttet til den nye infrastruktur.
-
-### <a name="we-are-using-ceridian-with-dynamics-365-human-resources-will-the-ceridian-integration-be-available-after-the-infrastructure-change-is-completed"></a>Vi bruger Ceridian sammen med Dynamics 365 Human Resources. Vil Ceridian-integration være tilgængelig, når ændringen af infrastrukturen er fuldført? 
-
-Integrationen med Ceridian vil blive overflyttet til Løn-API-baseret integration. Den filbaserede integration, der aktuelt findes i Dynamics 365 Human Resources, overføres ikke til Finans- og driftsinfrastrukturen. Du kan finde flere oplysninger i [Introduktion til Løn-API](./hr-admin-integration-payroll-api-introduction.md).
-
-### <a name="how-will-the-migration-affect-the-service-update-process"></a>Hvordan påvirker overflytningen tjenesteopdateringsprocessen?
-
-Efter overflytningen vil kunderne have meget større fleksibilitet i forhold til ALM- og tjenesteopdateringer. Der vil ikke længere blive anvendt tjenesteopdateringer til Human Resources-miljøer. Tjenesten vil i stedet følge processer og funktioner for opdatering af Èn version-tjenesten. Derfor vil konfigurationsindstillinger for opdateringer være tilgængelige via LCS. Du kan finde flere oplysninger i [Oversigt over En version](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="how-will-the-migration-affect-my-lcs-project-for-dynamics-365-human-resources"></a>Hvordan vil overflytningen påvirke mit LCS-projekt for Dynamics 365 Human Resources?
-
-Overflytningen til den nye infrastruktur vil flytte administrationen af dine Dynamics 365 Human Resources-miljøer til et Finans- og driftsimplementeringsprojekt. Hvis overflytningen fletter Dynamics 365 Human Resources med et eksisterende Finans- og driftsmiljø, flettes dit LCS-projekt for Human Resources i LCS-implementeringsprojektet for Finans- og driftsappen. Hvis du i øjeblikket kun bruger Dynamics 365 Human Resources, oprettes der et nyt LCS-implementeringsprojekt, og det eksisterende LCS-projekt for Human Resources overflyttes til det nye projekt.
-
-Det nye projekt vil være af samme projekttype, som Finans- og driftsapps bruger. Det vil have de samme funktioner og muligheder for miljøstyring. Du kan finde flere oplysninger i [Ressourcer til Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
-
-### <a name="we-have-linked-our-task-recordings-to-the-business-process-modeler-in-human-resources-how-will-the-business-process-modeler-be-migrated-and-merged-into-lcs"></a>Vi har knyttet vores opgaveregistreringer til Forretningsmodeldesigner i Human Resources. Hvordan overflyttes og flettes Forretningsmodeldesigner i LCS?
-
-Forretningsprocesbiblioteker til LCS-projektet overflyttes til det nye LCS-projekt for Human Resources.
-
-### <a name="my-organization-currently-uses-only-dynamics-365-human-resources-what-resources-are-available-so-that-we-can-learn-more-about-the-development-capabilities-after-the-infrastructure-change-is-completed"></a>Min organisation bruger i øjeblikket kun Dynamics 365 Human Resources. Hvilke ressourcer er tilgængelige, så vi kan få mere at vide om udviklingsfunktionerne, når ændringen i infrastrukturen er fuldført?
-
-Der vil være udvidelsesmuligheder både til Microsoft Power Platform og Finans- og driftsapps, som kan bruges til udvikling. Du kan finde flere oplysninger under [Udvikle og tilpasse startside](../fin-ops-core/dev-itpro/dev-tools/developer-home-page.md).
-
-### <a name="we-have-enabled-features-in-dynamics-365-human-resources-will-these-features-be-enabled-automatically-during-the-migration"></a>Vi har aktiverede funktioner i Dynamics 365 Human Resources. Vil disse funktioner automatisk blive aktiveret under overflytningen?
-
-Om en funktion aktiveres automatisk i den nye infrastruktur, bestemmes for hver enkelt funktion. Disse oplysninger vil blive medtaget i funktionsdokumentationen.
-
-### <a name="what-happens-to-my-byod-database-during-the-migration"></a>Hvad sker der med min BYOD-database under overflytningen?
-
-Import- og eksportkonfigurationer for din egen database (BYOD) vil blive overflyttet til den nye infrastruktur.
-
-### <a name="what-happens-to-my-azure-data-lake-during-the-migration"></a>Hvad sker der med min Azure Data Lake under overflytningen?
-
-Enhver eksport, der aktuelt er konfigureret til Azure Data Lake Storage i Finans- og driftsapps, vedligeholder den samme konfiguration efter overflytningen.
-
-### <a name="we-are-currently-using-dynamics-ax-2012-will-the-upgrade-tools-that-are-currently-available-be-used-to-upgrade-the-hr-module-in-ax-2012-to-dynamics-365-human-resources"></a>Vi bruger i øjeblikket Dynamics AX 2012. Vil de opgraderingsværktøjer, der i øjeblikket er tilgængelige, blive brugt til opgradering af HR-modulet i AX 2012 til Dynamics 365 Human Resources?
-
-Ja. Dynamics 365 Human Resources vil blive inkluderet i den flettede kodebase og infrastruktur for Finans- og driftsapps. En opgradering fra Dynamics AX 2012 til Dynamics 365 Human Resources vil bruge samme opgraderingssti og -værktøj, som bruges til at opgradere til den seneste version af Finans- og driftsapps.
-
-### <a name="we-use-document-handling-with-dynamics-365-human-resources-what-will-happen-to-the-documents-during-the-migration"></a>Vi bruger Dokumenthåndtering sammen med Dynamics 365 Human Resources. Hvad sker der med dokumenterne under overflytningen?
-
-Dokumenterne forbliver i det eksisterende dokumentlager. De skal tilknyttes på ny til miljøet i den nye infrastruktur.
-
-### <a name="what-happens-to-the-batch-jobs-that-we-have-configured-in-dynamics-365-human-resources-after-the-migration"></a>Hvad sker der med de batchjob, som vi har konfigureret i Dynamics 365 Human Resources efter overflytningen?
-
-Relevante batchjob migreres automatisk til den nye infrastruktur.
-
-## <a name="licensing-impact"></a>Påvirkning af licenser
-
-Denne dokumentation tilsidesætter eller erstatter ingen juridisk dokumentation, som omhandler brugsrettighederne.
-
-### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-does-our-licensing-or-cost-change"></a>Min organisation bruger Dynamics 365 Human Resources til at administrere HR-handlinger. Bliver vores licenser eller omkostninger ændret?
-
-Kunder, der har købt Dynamics 365 Human Resources-licenser, bliver ikke påvirket. Der sker ingen licensoverflytning for disse kunder. Den supplerende SKU-enhed (Stock Keeping Unit) for sandkassen, som var specifik for Human Resources, kan ikke længere bruges. Kunderne kan i stedet vælge at købe en sandkasse for Finans- og driftsapps Niveau 2 til en lidt lavere pris. Eksisterende kunder, som har købt en Human Resources-sandkasse, overflyttes til en sandkasse for Finans- og driftsapps Niveau 2 uden yderligere omkostninger.
-
-### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Min organisation bruger Human Resources-modulet i Dynamics 365 Finance,, Supply Chain Management, Commerce eller Project Operations. Bliver mine licenser eller omkostninger ændret?
-
-Eksisterende brugere af Dynamics 365-apps og brugere af selvstændige Dynamics 365 Finance, Supply Chain Management, Commerce og Project Operations kan få adgang til Human Resources som en del af disse licenser indtil februar 2025, eller indtil den aktuelle licensaftale udløber, hvad der end optræder først. Du kan vælge at flytte til Human Resources-licenser tidligere, hvis det hjælper dig med at opnå større besparelser. Fra og med februar 2025 skal alle eksisterende CSP- og EA-kunder rulle HR-modulet af og købe Human Resources-licenser for at udnytte de nye funktioner, der bliver tilføjet i Finans- og driftsapps.
-
-### <a name="my-organization-is-live-with-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-will-we-be-required-to-purchase-an-additional-environment-to-support-the-infrastructure-merge"></a>Min organisation er i gang med Dynamics 365 Finance, Supply Chain Management, Commerce eller Project Operations. Vil vi skulle købe et supplerende miljø for at understøtte fletningen af infrastrukturen?
-
-Der kræves ingen ekstra miljøer for at understøtte ændringen af infrastrukturen.
-
+Du kan finde flere oplysninger om overflytningen til finans og drift-infrastrukturen i [Human Resource-kundemigration, ofte stillede spørgsmål](./customer-migration.md).

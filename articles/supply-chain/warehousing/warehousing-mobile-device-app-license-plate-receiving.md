@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657c29ec6ddfb2be918424e06eaf219f51a30a02
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906994"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069056"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Modtage id via Warehouse Management-mobilappen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8906994"
 
 Denne artikel beskriver, hvordan du konfigurerer mobilappen Lokationsstyring, så den understøtter brug af en nummerplademodtagelsesproces for at modtage fysisk lager.
 
-Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
+Du kan bruge denne funktion til hurtigt at registrere modtagelsen af det indgående lager, der er knyttet til en ASN (Advance Ship Notice). Systemet opretter automatisk en ASN, når der bruges lokationsstyringsprocesser (WMS) til at levere en flytteordre. I forbindelse med indkøbsordreprocessen kan en ASN registreres manuelt, eller den kan importeres automatisk ved hjælp af en indgående ASN-dataenhedsproces.
 
 ASN-dataene er knyttet til laster og forsendelser via *pakkestrukturerne*, hvor paller (overordnede nummerplader) kan indeholde kasser (indlejrede nummerplader).
 

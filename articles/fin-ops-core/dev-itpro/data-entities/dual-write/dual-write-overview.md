@@ -1,6 +1,6 @@
 ---
 title: Oversigt over dobbeltskrivning
-description: Denne artikel indeholder en oversigt over dobbeltskrivning, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finans- og driftsapps.
+description: Denne artikel indeholder en oversigt over dobbeltskrivning, der giver næsten realtidsinteraktion mellem kundeengagementapps og programmer til finans og drift.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 599cfdab8232cab28c59c5098094c4afd351df77
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872934"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112388"
 ---
 # <a name="dual-write-overview"></a>Oversigt over dobbeltskrivning
 
@@ -26,9 +26,9 @@ ms.locfileid: "8872934"
 
 ## <a name="what-is-dual-write"></a>Hvad er dobbeltskrivning?
 
-Dobbeltskrivning er et indbygget infrastrukturprodukt, der giver næsten realtidsinteraktion mellem kundeengagementapps og Finans- og driftsapps. Når data om kunder, produkter, personer og handlinger går ud over programgrænserne, styrkes alle afdelinger i en organisation.
+Dobbeltskrivning er et indbygget infrastrukturprodukt, der giver næsten realtidsinteraktion mellem kundeengagementapps og programmer til finans og drift. Når data om kunder, produkter, personer og handlinger går ud over programgrænserne, styrkes alle afdelinger i en organisation.
 
-Dobbeltskrivning giver en tæt tovejsintegration mellem Finans- og driftsapps og Dataverse. Alle dataændringer i Finans- og driftsapps forårsager ændringer i Dataverse, og alle dataændringer i Dataverse medfører ændringer i Finans- og driftsapps. Dette automatiserede dataflow giver en integreret brugeroplevelse på tværs af apps.
+Dobbeltskrivning giver en tæt tovejsintegration mellem programmer til finans og drift og Dataverse. Alle dataændringer i programmer til finans og drift forårsager ændringer i Dataverse, og alle dataændringer i Dataverse medfører ændringer i programmer til finans og drift. Dette automatiserede dataflow giver en integreret brugeroplevelse på tværs af apps.
 
 ![Datarelation mellem apps.](media/dual-write-overview.jpg)
 
@@ -51,7 +51,7 @@ Dobbeltskrivningsinfrastrukturen kan udvides og er pålidelig og indeholder føl
 
 ### <a name="application"></a>Applikation
 
-Dobbeltskrivning opretter en tilknytning mellem koncepter i Finans- og driftsapps og koncepter i kundeengagementapps. Denne integration understøtter følgende scenarier:
+Dobbeltskrivning opretter en tilknytning mellem koncepter i programmer til finans og drift og koncepter i kundeengagementapps. Denne integration understøtter følgende scenarier:
 
 + Integreret kundemaster
 + Adgang til kundefordelskundekort og belønningspoint
@@ -80,15 +80,15 @@ Dobbeltskrivning giver dataintegration på tværs af Microsoft Dynamics 365-prog
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hvad betyder dobbeltskrivning for udviklere og arkitekter af kundeengagementapps?
 
-Dobbeltskrivning automatiserer datastrømmen mellem Finans- og driftsapps og kundeengagementapps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Dataverse. Løsningerne udvider tabelskemaet, plug-ins og arbejdsprocesser på Dataverse, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af kundeengagementapps forstå disse ændringer og samarbejde med deres kolleger på Finans- og driftsapps.
+Dobbeltskrivning automatiserer datastrømmen mellem programmer til finans og drift og kundeengagementapps. Dobbeltskrivning består af to AppSource-løsninger, der er installeret på Dataverse. Løsningerne udvider tabelskemaet, plug-ins og arbejdsprocesser på Dataverse, så de kan skaleres til ERP-størrelse. For at opnå en vellykket implementering skal udviklere og arkitekter af kundeengagementapps forstå disse ændringer og samarbejde med deres kolleger på programmer til finans og drift.
 
-For at skabe paritet med Finans- og driftsprogrammer foretager dobbeltskrivning vigtige ændringer i Dataverse-skemaet. Hvis du forstår planen, kan du slippe for at ændre noget design og udvikling fremover.
+For at skabe paritet med programmer til finans og drift foretager dobbeltskrivning vigtige ændringer i Dataverse-skemaet. Hvis du forstår planen, kan du slippe for at ændre noget design og udvikling fremover.
 
-+ Når AppSource-pakken til dobbeltskrivning er installeret, vil Dataverse have nye begreber som f.eks. firma og part. Disse koncepter hjælper programmer, der bygger på Dataverse, herunder Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service, med problemfri interaktion med Finans- og driftsapps.
++ Når AppSource-pakken til dobbeltskrivning er installeret, vil Dataverse have nye begreber som f.eks. firma og part. Disse koncepter hjælper programmer, der bygger på Dataverse, herunder Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service, med problemfri interaktion med programmer til finans og drift.
 
 + Aktiviteter og noter samles og udvides til at understøtte både C1s (brugere af systemet) og C2s (systemkunder).
 
-+ Hvis du vil undgå tab af data i forbindelse med valutaoverførsel mellem Finans- og driftsapps og Dataverse, kan du udvide antallet af decimaler i valutadatatypen for kundeengagementapps. Med denne funktion oversættes eksisterende rækker automatisk til den nye udvidede tilstand på metadatalaget. I løbet af denne proces oversættes valutaværdien til decimaldata og ikke til pengedata, og valutaværdien understøtter 10 decimalpladser. Denne funktion er et tilvalg, og organisationer, der ikke har brug for mere end 4 decimaler, behøver ikke at tilmelde sig. Du kan finde flere oplysninger under [Migrering af valutadatatype til dobbeltskrivning](currrency-decimal-places.md).
++ Hvis du vil undgå tab af data i forbindelse med valutaoverførsel mellem programmer til finans og drift og Dataverse, kan du udvide antallet af decimaler i valutadatatypen for kundeengagementapps. Med denne funktion oversættes eksisterende rækker automatisk til den nye udvidede tilstand på metadatalaget. I løbet af denne proces oversættes valutaværdien til decimaldata og ikke til pengedata, og valutaværdien understøtter 10 decimalpladser. Denne funktion er et tilvalg, og organisationer, der ikke har brug for mere end 4 decimaler, behøver ikke at tilmelde sig. Du kan finde flere oplysninger under [Migrering af valutadatatype til dobbeltskrivning](currrency-decimal-places.md).
 
 + [Gyldighedsdato](../../dev-tools/date-effectivity.md) vil blive føjet til Dataverse. Den understøtter tidligere, nuværende og fremtidige data på samme tabel.
 
@@ -99,3 +99,4 @@ Yderligere oplysninger om kommende ændringer finder du i [Nyheder eller ændrin
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -1,22 +1,22 @@
 ---
 title: Initialisere Commerce Scale Unit (sky)
 description: Denne artikel forklarer, hvordan du initialiserer Commerce Scale Unit (sky) i Microsoft Dynamics 365 Commerce.
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942846"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183357"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
@@ -51,30 +51,30 @@ Commerce Scale Unit kan installeres i følgende områder.
 
 | Global placering | Område              | Tilgængelighed        | Bemærkninger                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| Nord- og Sydamerika        | Det østlige USA             | Generelt tilgængelig |                           |
-| Nord- og Sydamerika        | Det østlige USA 2           | Generelt tilgængelig |                           |
-| Nord- og Sydamerika        | Den nordlige del af det centrale USA    | Begrænset kapacitet    |                           |
-| Nord- og Sydamerika        | Den sydlige del af det centrale USA    | Begrænset kapacitet    |                           |
-| Nord- og Sydamerika        | Det centrale USA          | Generelt tilgængelig |                           |
-| Nord- og Sydamerika        | Det vestlige USA             | Generelt tilgængelig |                           |
-| Nord- og Sydamerika        | Det vestlige USA 2           | Generelt tilgængelig |                           |
-| Nord- og Sydamerika        | Det centrale Canada      | Begrænset kapacitet    |                           |
-| Nord- og Sydamerika        | Det østlige Canada         | Begrænset kapacitet    |                           |
-| Nord- og Sydamerika        | Det vestlige centrale USA     | Begrænset kapacitet    |                           |
-| APAC            | Østaustralien      | Generelt tilgængelig |                           |
-| APAC            | Sydøstasien      | Kapacitetsbegrænsede | Ingen installationer tilladt    |
-| APAC            | Østjapan          | Generelt tilgængelig |                           |
-| APAC            | Vestjapan          | Generelt tilgængelig |                           |
-| APAC            | Sydøstaustralien | Generelt tilgængelig |                           |
-| APAC            | Østasien           | Begrænset kapacitet    |                           |
-| APAC            | Det sydlige Indien         | Kapacitetsbegrænsede | Ingen installationer tilladt    |
-| APAC            | Det centrale Indien       | Begrænset kapacitet    | Kræver godkendelsesproces |
-| EMEA            | Vesteuropa         | Generelt tilgængelig |                           |
-| EMEA            | Nordeuropa        | Generelt tilgængelig |                           |
-| EMEA            | Det sydlige Storbritannien            | Begrænset kapacitet    |                           |
-| EMEA            | Det vestlige Storbritannien             | Begrænset kapacitet    |                           |
-| Schweiz     | Det nordlige Schweiz   | Begrænset kapacitet    | Kræver godkendelsesproces |
-| Forenede Arabiske Emirater             | Det nordlige Forenede Arabiske Emirater           | Begrænset kapacitet    | Kræver godkendelsesproces |
+| Nord- og Sydamerika        | Det østlige USA             | Generelt tilgængelig |  Ingen kommentarer.                         |
+| Nord- og Sydamerika        | Det østlige USA 2           | Generelt tilgængelig |  Ingen kommentarer.                          |
+| Nord- og Sydamerika        | Den nordlige del af det centrale USA    | Begrænset kapacitet    |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Den sydlige del af det centrale USA    | Begrænset kapacitet    |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Det centrale USA          | Generelt tilgængelig |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Det vestlige USA             | Generelt tilgængelig |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Det vestlige USA 2           | Generelt tilgængelig |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Det centrale Canada      | Begrænset kapacitet    |  Ingen kommentarer.                            |
+| Nord- og Sydamerika        | Det østlige Canada         | Begrænset kapacitet    |   Ingen kommentarer.                           |
+| Nord- og Sydamerika        | Det vestlige centrale USA     | Begrænset kapacitet    |   Ingen kommentarer.                           |
+| APAC            | Østaustralien      | Generelt tilgængelig |   Ingen kommentarer.                           |
+| APAC            | Sydøstasien      | Kapacitetsbegrænsede | Ingen installationer tilladt.    |
+| APAC            | Østjapan          | Generelt tilgængelig |  Ingen kommentarer.                            |
+| APAC            | Vestjapan          | Generelt tilgængelig |   Ingen kommentarer.                           |
+| APAC            | Sydøstaustralien | Generelt tilgængelig |   Ingen kommentarer.                           |
+| APAC            | Østasien           | Begrænset kapacitet    |   Ingen kommentarer.                           |
+| APAC            | Det sydlige Indien         | Kapacitetsbegrænsede | Ingen installationer tilladt.    |
+| APAC            | Det centrale Indien       | Begrænset kapacitet    | Kræver godkendelsesproces. |
+| EMEA            | Vesteuropa         | Begrænset kapacitet    | Ingen tilgængelige i LCS i øjeblikket. |
+| EMEA            | Nordeuropa        | Begrænset kapacitet    | Ingen tilgængelige i LCS i øjeblikket. |
+| EMEA            | Det sydlige Storbritannien            | Generelt tilgængelig |    Ingen kommentarer.                          |
+| EMEA            | Det vestlige Storbritannien             | Generelt tilgængelig |    Ingen kommentarer.                          |
+| Schweiz     | Det nordlige Schweiz   | Begrænset kapacitet    | Kræver godkendelsesproces. |
+| Forenede Arabiske Emirater             | Det nordlige Forenede Arabiske Emirater           | Begrænset kapacitet    | Kræver godkendelsesproces. |
 
 Udrulningskapacitet i områder med begrænset kapacitet er særdeles begrænset. Anmodninger om udrulning evalueres fra sag til sag. Hvis du har et vigtigt forretningsbehov for udrulning i områder med begrænset kapacitet, kan du indsende en supportanmodning, der skal føjes til ventelisten. Kapacitetsbegrænsede områder tillader i øjeblikket ikke udrulning af Commerce Scale Unit. 
 
@@ -96,7 +96,7 @@ Når Commerce Scale Unit er blevet implementeret, skal du sikre dig, at dine kan
 
 Hvis du vil konfigurere kanalerne til at bruge Commerce Scale Unit-databasen, skal du følge disse trin.
 
-1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-planlægger \> Kanaldatabase**.
+1. Gå til **Retail og Commerce \> Commerce headquarters \> Commerce-planlægger \> Kanaldatabase**.
 1. Vælg en kanaldatabase i venstre rude.
 1. Vælg **Tilføj** i oversigtspanelet **Detailkanal**, og vælg derefter din detailkanal på rullelisten.
 1. Vælg **Tilføj**, og vælg derefter onlinekanalen på rullelisten. 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872493"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070658"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
@@ -79,7 +79,7 @@ Den markerede feltgruppe viser de kolonner, der er tilgængelige i skabelonen. K
 [![Tilføj og indsæt kolonne.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til Finans og drift, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til finans og drift, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Gentag disse trin for at indsætte kolonnen **Regulering**. Brug formlen = AxTable1\[Total request\]\*$I$ 1 for denne kolonne. Dette vil tage værdien i celle I1 og multiplicere værdierne i kolonnen **Anmodet i alt** for at beregne reguleringsbeløb.
 
@@ -129,3 +129,4 @@ Du kan også oprette og bruge pivottabeller og -diagrammer til supplerende grupp
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

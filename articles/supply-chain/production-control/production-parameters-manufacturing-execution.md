@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016153"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070373"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametre i Produktionsudførelse
 
@@ -71,7 +71,7 @@ For hvert stadie kan du i feltet **Auto-styklisteforbrug** vælge en af tre meto
   - Tom (der er ikke valgt nogen indstilling).
   - **Disponibel på lokation**
 
-    I Produktionsudførelse, hvis **Varetrækprincip** er valgt i feltet **Auto-styklisteforbrug** under fanen **Start**, trækkes alle materialer, der er indstillet til **Start** i styklisten fra lageret, når operationen startes. Indstillingen **Disponibel på lokation** bruges til produkter, der er aktiveret til avancerede lagerprocesser. Hvis du vælger dette varetrækprincip, ryddes materialet, når lagerstedsarbejde til pluk af råmateriale er fuldført. Materiale ryddes også, når en styklistelinje, bruger dette varetrækprincip, frigives til lagerstedet, og materialet disponibelt på produktionsindlagringsstedet.
+    I Produktionsudførelse, hvis **Varetrækprincip** er valgt i feltet **Auto-styklisteforbrug** under fanen **Start**, trækkes alle materialer, der er indstillet til **Start** i styklisten fra lageret, når operationen startes. Indstillingen **Disponibel på lokation** bruges til produkter, der er aktiveret til lokationsstyringsprocesser (WMS). Hvis du vælger dette varetrækprincip, ryddes materialet, når lagerstedsarbejde til pluk af råmateriale er fuldført. Materiale ryddes også, når en styklistelinje, bruger dette varetrækprincip, frigives til lagerstedet, og materialet disponibelt på produktionsindlagringsstedet.
 
     > [!NOTE]
     > Hvis feltet **Varetrækprincip** er angivet under fanen **Start** i Produktionsudførelse, skal du vælge det samme princip under fanen **Operationer** eller under fanen **Færdigmeld**. Dette krav er med til at sikre, at materialer fratrækkes på lageret for de styklister, der bruger **Afslut** som varetrækprincip på produktionsordren. Hvis det samme varetrækprincip ikke er valgt under fanen **Operationer** eller fanen eller **Færdigmeld**, kan materialer blive trukket fra lageret to gange.

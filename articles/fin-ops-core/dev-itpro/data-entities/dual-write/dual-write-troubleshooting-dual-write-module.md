@@ -1,6 +1,6 @@
 ---
 title: Fejlfinde fejl med dobbeltskrivning i programmer til finans og drift
-description: Denne artikel indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i Finans- og driftsapps.
+description: Denne artikel indeholder fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med dobbeltskrivningsmodulet i programmer til finans og drift.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864566"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111164"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Fejlfinde fejl med dobbeltskrivning i programmer til finans og drift
 
@@ -22,12 +22,12 @@ ms.locfileid: "8864566"
 
 
 
-Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem Finans- og driftsapps og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med **dobbeltskrivningsmodulet** i Finans- og driftsapps.
+Denne artikel indeholder fejlfindingsoplysninger for dobbeltskrivning mellem programmer til finans og drift og Dataverse. Specifikt indeholder emnet fejlfindingsoplysninger, der kan hjælpe dig med at løse problemer med **dobbeltskrivningsmodulet** i programmer til finans og drift.
 
 > [!IMPORTANT]
 > Nogle af de problemer, som denne artikel vedrører, kræver muligvis enten rollen systemadministrator eller legitimationsoplysninger fra Microsoft Azure Active Directory (Azure AD)-lejeradministratoren. I afsnittet for hvert spørgsmål forklarer, om der kræves en bestemt rolle eller legitimationsoplysninger.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke indlæse dobbeltskrivningsmodulet i Finans- og driftsapps
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke indlæse dobbeltskrivningsmodulet i programmer til finans og drift
 
 Hvis du ikke kan åbne **Dobbeltskrivning**-siden ved at vælge titlen **Dobbeltskrivning** i **Datastyring**-arbejdsområdet, er dataintegrationstjenesten sandsynligvis nede. Opret en supportanmodning for at anmode om genstart af dataintegrationstjenesten.
 
@@ -49,7 +49,7 @@ Du kan løse problemet ved at logge på ved hjælp af et InPrivate-vindue i Micr
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fejl under sammenkædning af miljøet ved dobbeltskrivning eller tilføjelse af en ny tabeltilknytning
 
-**Påkrævet rolle for at løse problemet:** Systemadministrator i både Finans- og driftsapps og Dataverse.
+**Påkrævet rolle for at løse problemet:** Systemadministrator i både programmer til finans og drift og Dataverse.
 
 Der kan opstå følgende fejl under sammenkædning eller oprettelse af tilknytninger:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Dataverse-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både Finans- og driftsapps og Dataverse kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye tabeltilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
+Denne fejl kan forekomme, hvis du ikke har de nødvendige rettigheder til at sammenkæde dobbeltskrivning eller oprette tilknytninger. Denne fejl kan også opstå, hvis Dataverse-miljøet blev nulstillet uden at fjerne tilknytningen til dobbeltskrivning. Enhver bruger med rollen Systemadministrator i både programmer til finans og drift og Dataverse kan sammenkæde miljøerne. Kun den bruger, der har konfigureret dobbeltskrivningsforbindelsen, kan tilføje nye tabeltilknytninger. Efter installationen kan enhver bruger med rollen Systemadministrator overvåge status og redigere tilknytningerne.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fejl, når du stopper tabeltilknytningen
 
@@ -73,11 +73,11 @@ Du kan løse problemet ved at oprette en supportanmodning til dataintegrationste
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktivere parallel behandling i programmer til finans og drift for at forbedre ydeevnen
 
-Hvis du aktiverer parallel behandling, kan det reducere den tid, det tager at importere data fra Dynamics 365 customer engagement-apps og Microsoft Dataverse til Finans og drift-apps. 
+Hvis du aktiverer parallel behandling, kan det reducere den tid, det tager at importere data fra Dynamics 365 customer engagement-apps og Microsoft Dataverse til programmer til finans og drift. 
 
 Følg disse trin for at aktivere parallel behandling i programmer til finans og drift.
 
-1. Log på dit finans- og driftsmiljø.
+1. Log på dine programmer til finans og drift.
 2. Gå til **Datastyring > Rammeparametre**.
 3. Vælg **Enhedsindstillinger**, og vælg **Konfigurer parametre for enhedsudførelse**.
 4. Tilføj parametrene for parallel behandling:
@@ -97,7 +97,7 @@ Du kan få vist en fejlmeddelelse som den følgende, når du forsøger at køre 
 Når du forsøger at angive denne tilstand for en tilknytning til **Kører**, kan du modtage denne fejlmeddelelse: Rettelsen afhænger af årsagen til fejlen:
 
 + Hvis tilknytningen har afhængige tilknytninger, skal du sørge for at aktivere de afhængige tilknytninger for denne tabeltilknytning.
-+ Tilknytningen mangler muligvis kilde- eller destinationskolonner. Hvis der mangler en kolonne i Finans- og driftsapps, skal du følge trinnene i afsnittet [Problemer med manglende tabelkolonner i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis der mangler en kolonne i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så kolonnerne automatisk udfyldes i tilknytningen.
++ Tilknytningen mangler muligvis kilde- eller destinationskolonner. Hvis der mangler en kolonne i programmer til finans og drift, skal du følge trinnene i afsnittet [Problemer med manglende tabelkolonner i tilknytninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis der mangler en kolonne i Dataverse, skal du klikke på knappen **Opdater tabeller** på tilknytningen, så kolonnerne automatisk udfyldes i tilknytningen.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Fejl pga. uoverensstemmelse mellem versioner og opgradering af dobbeltskrivningsløsninger
 
@@ -112,3 +112,4 @@ Du kan få vist følgende fejlmeddelelser, når du forsøger at køre tabeltilkn
 Du kan løse problemerne ved at opdatere løsningerne til dobbeltskrivning i Dataverse. Sørg for at opgradere til den seneste løsning, som svarer til den ønskede løsningsversion.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

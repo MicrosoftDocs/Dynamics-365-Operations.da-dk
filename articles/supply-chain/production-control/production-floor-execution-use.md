@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022498"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069780"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -217,7 +217,7 @@ Arbejdere kan justere materialeforbruget for fastvægtvarer. Denne funktionalite
 
 I dialogboksen **Juster materiale** kan en arbejder foretage og justere materialereservationer ved at vælge **Reservér materiale**. I dialogboksen **Reservér materiale** vises den fysisk disponible lagerbeholdning for varen for hver lagrings- og sporingsdimension.
 
-Hvis materialet er aktiveret for processerne for avancerede lagersteder, viser listen kun den fysisk tilgængelige lagerbeholdning for materialets produktionsindlagringslokation. Produktionsindlagringslokationen defineres på den ressource, hvor produktionsjobbet er planlagt. Hvis varenummeret er batch- eller serienummerkontrolleret, vises hele oversigten over de fysisk tilgængelige batch- og serienumre. Arbejderen kan vælge **Reservér materiale** for at angive et antal, der skal reserveres. Hvis en eksisterende reservation skal fjernes, kan arbejderen vælge **Fjern reservation**.
+Hvis materialet er aktiveret for processerne for lokationsstyringsprocesser (WMS), viser listen kun den fysisk tilgængelige lagerbeholdning for materialets produktionsindlagringslokation. Produktionsindlagringslokationen defineres på den ressource, hvor produktionsjobbet er planlagt. Hvis varenummeret er batch- eller serienummerkontrolleret, vises hele oversigten over de fysisk tilgængelige batch- og serienumre. Arbejderen kan vælge **Reservér materiale** for at angive et antal, der skal reserveres. Hvis en eksisterende reservation skal fjernes, kan arbejderen vælge **Fjern reservation**.
 
 Du kan finde flere oplysninger om, hvordan du konfigurerer produktionsindlagringslokationen, i følgende blogpost: [Konfigurere produktionsindlagringslokation](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

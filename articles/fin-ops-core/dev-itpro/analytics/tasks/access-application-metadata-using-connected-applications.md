@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b24d865bff0e81f79e7edde360fd5115d8637b42
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906762"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111225"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få adgang til programmetadata ved hjælp af tilsluttede programmer
 
 [!include [banner](../../includes/banner.md)]
 
-Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i Finans og drift. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. For at fuldføre disse trin skal du i RCS først fuldføre trinnene i artiklen [Opret konfigurationsudbydere og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i artiklen [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du downloade [Eksempler for elektronisk rapportering](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
+Følgende trin beskriver, hvordan en RCS-bruger (Regulatory Configuration Service) i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe en ny ER-modeltilknytning ved hjælp af metadataene i finans og drift. Du kan få adgang til programmetadata online ved hjælp af det RCS-tilsluttede program. Eksempel på ER-modeltilknytning konfigureres til at give adgang til udenrigshandelstransaktioner. For at fuldføre disse trin skal du i RCS først fuldføre trinnene i artiklen [Opret konfigurationsudbydere og markér dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fuldført trinnene i artiklen [Få adgang til programmetadata ved hjælp af ER-konfiguration](access-application-metadata-er-configuration.md), skal du downloade [Eksempler for elektronisk rapportering](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) og gemme følgende ER-konfigurationer: Udenrigshandelmetadata.xml, Udenrigshandelmodel.xml, Tilknytning af udenrigshandel.xml og derefter udføre trinnene i proceduren.
 
 ## <a name="prerequisites"></a>Forudsætninger
 1. Gå til **Alle arbejdsområder** > **Elektronisk rapportering**. 
@@ -114,3 +114,4 @@ Når du har brug for at evaluere denne modeltilknytning ved hjælp af metadata f
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

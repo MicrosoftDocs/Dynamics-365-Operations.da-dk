@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888917"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068742"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dele ER-konfiguration (Electronic reporting) i Regulatory Configuration Services (RCS)/det globale lager med eksterne organisationer.
 
@@ -36,7 +36,7 @@ I følgende procedurer forklares det, hvordan en RCS-bruger kan dele en version 
 
 Du skal også sikre dig, at der er klargjort et RCS-miljø til dit firma.
 
-1. I en Finans- og driftsapp skal du gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
+1. I program til finans og drift skal du gå til **Organisationsadministration** \> **Arbejdsområder** \> **Elektronisk rapportering**.
 2. Hvis der ikke er klargjort noget RCS-miljø til dit firma, skal du vælge **Regulatory services – ekstern konfiguration** og derefter følge instruktionerne for at klargøre et.
 
 Hvis der allerede er klargjort et RCS-miljø til dit firma, kan du bruge side-URL-adressen til at få adgang til det ved at vælge indstillingen til logon.

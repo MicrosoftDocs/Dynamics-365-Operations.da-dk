@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853068"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070552"
 ---
 # <a name="create-variable-compensation-plans"></a>Oprette variable kompensationsstrukturer
 
@@ -42,7 +42,11 @@ Beregning af beløb i variabel kompensation for dine medarbejdere kan være base
 Virksomheder kan vælge at konfigurere **Fordelingsregler**. **Fordelingsregler** beskriver, hvordan den variable bonus skal fordeles over tid. En fordelingsregel kan for eksempel angive, at medarbejderen får 25 % af den samlede bonus hvert år i de næste fire år. Fordelingsregler er kun til orientering.
 
 ## <a name="variable-compensation-plans"></a>Variabel løn-strukturer
-Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardværdier for beregningen af variabel kompensation for tilmeldte medarbejdere. Når du opretter en variabel lønstruktur, skal du angive den variable kompensationstype. Den variable kompensationstype bestemmer, om systemet beregner bonussen som et valutabeløb eller et antal enheder. Du skal også angive beregningsmetoden:
+Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardværdier for beregningen af variabel kompensation for tilmeldte medarbejdere. Når du opretter en variabel lønstruktur, skal du angive den variable kompensationstype. Den variable kompensationstype bestemmer, om systemet beregner bonussen som et valutabeløb eller et antal enheder. 
+
+**Begrænsningen af adgangen til valgte roller**-parameter begrænser adgangen til kompensationsplanen til de valgte sikkerhedsroller, der er tildelt den pågældende plan i Personale. Når du f.eks. opretter lønstrukturer, der er for ledere og ikke bør være synlige for alle hr-specifikke roller, kan du bruge denne parameter til at begrænse adgangen til de pågældende lønstrukturer. 
+
+Du skal også angive beregningsmetoden:
 
 -   **Tidspunkt** – Beregningen af den variable bonus er baseret på den faste løn, medarbejderen havde på en bestemt dato. Denne dato angives i proceshændelsen, når nye kompensationsbeløb behandles.
 -   **Sammensat** – Et bonusbeløb beregnes for hver entydig fast løn-lønsats, som medarbejderen havde mellem cyklussens startdato og cyklussens slutdato på proceshændelsen. Derefter lægges satserne sammen for at bestemme den endelige bonus. For eksempel blev en medarbejder under cyklussen overført til en anden placering, der havde en anden lønsats. I dette tilfælde reguleres den variable bonus for det tidsrum, hvor medarbejderen havde hver enkelt lønsats.
