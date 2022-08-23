@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aae3d53c1005f096551b107c46ddafb37357f03c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868153"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219832"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -84,7 +84,7 @@ Du kan også bruge dobbelte niveauer. Hvis du vælger **Dobbelt niveau** for væ
    | **Beskrivelse** | Værdien i feltet **Beskrivelse** anvendes fra beskrivelsen i posten for satsopsætningen. Dette hjælper dig med at identificere, hvilken satsopsætning niveausatserne er knyttet til. |
    | **Lagkode** | Vælg en niveaukode. Niveaukoder defineres i siden **Niveaukoder**. Systemet vil automatisk vise beskrivelsen af niveaukoden i gitteret til venstre. |
    | **Lagtype** | Angiver, hvilket felt der skal bruges som valgkriterie for processen til beregning af niveausatsen. F.eks.:</br></br><ul><li>Hvis der bruges **Alder**, vil systemet bruge medarbejderens fødselsdato til at behandle beregningen af frynsegodesatsen.</li><li>Hvis der bruges **Løn**, vil systemet bruge medarbejderens årlige frynsegodeløn i processen for beregning af frynsegodesatsen.</li><li>Hvis der bruges **Jobtype**, vil systemet bruge medarbejderens aktuelle aktive stillingspost til at bestemme jobtypen, afhængigt af den post der er knyttet til stillingen.</li></ul></br></br>Niveautyperne er **Alder**, **Løn**, **Fysisk**, **Køn**, **Fuldtidsækvivalent**, **Jobtype**, **Kompensationsområde** og **Niveau**. | 
-   | **Niveau** | Den værdi, der skal bruges sammen med niveautypen i processen til beregning af frynsegodesats. F.eks.:</br></br><ul><li>Hvis niveautypen er **Alder**, er dette aldersværdien.</li><li>Hvis niveautypen er **Løn**, er dette lønbeløbet.</li><li> Hvis niveautypen er **Jobtype**, er dette jobtypen.</li></ul></br></br>Med niveautypen **Alder** eller **Løn** repræsenterer værdien i feltet **Niveau** den øvre grænse for niveauet. Hvis niveauet er **Jobtype**, bruger systemet en tilgang med et nøjagtig match under valg af niveausats. |
+   | **Niveau** | Den værdi, der skal bruges sammen med niveautypen i processen til beregning af frynsegodesats. F.eks.:</br></br><ul><li>Hvis niveautypen er **Alder**, er dette aldersværdien.</li><li>Hvis niveautypen er **Løn**, er dette lønbeløbet.</li><li> Hvis niveautypen er **Jobtype**, er dette jobtypen.</li></ul></br></br>Med niveautypen **Alder** eller **Løn** repræsenterer værdien i feltet **Niveau** den nedre grænse for niveauet. Hvis niveauet er **Jobtype**, bruger systemet en tilgang med et nøjagtig match under valg af niveausats. |
    | **Kalkulationstype** | Angiver, hvordan beløbet i feltet med beregningsbeløb skal bruges, og hvilken matematisk beregning der skal udføres, hvis det er nødvendigt. Hvis beregningstypen er et fladt beløb, bruger systemet beløbsfelterne, som de er. Hvis beregningstypen er pr. $ løn- eller dækningsbeløb, bruger systemet beregningsbeløbet og beregningsretning i beregningen af matematiske beregninger.</br></br>Hvis beregningstypen er pr. $ lønbeløb, bruger systemet følgende matematiske ligning:</br></br>Årlig frynsegodeløn divideret med beregningsbeløb (rundet op eller ned) gange beløbene for rygere eller ikke-rygere for medarbejder eller arbejdsgiver.</br></br>Hvis beregningstypen er pr. $ lønbeløb, bruger systemet følgende matematiske ligning:</br></br>Dækningsbeløb divideret med beregningsbeløb (rundet op eller ned) gange beløbene for rygere eller ikke-rygere for medarbejder eller arbejdsgiver.</br></br>I begge beregninger bruges beregningsretning til at bestemme, om det årlige frynsegode- eller dækningsbeløb, der er divideret med beregningsbeløbet, skal rundes op eller ned. |
    | **Beregningsbeløb** | Det beløb, der skal bruges under processen til beregning af frynsegodesatsen. Dette beløb vil være divisoren under den matematiske beregning af niveausatsen. |
    | **Beregningsretning** | Den retning, som det beregnede resultatbeløb skal afrundes til. Systemet understøtter tre beregningsretninger: Tom (nøjagtig metode), **Forøg** og **Formindsk**.</br></br><ul><li>Hvis feltet ikke udfyldes, vil systemet bruge den nøjagtige beregning af løn-/dækningsbeløbet divideret med beregningsbeløbet. Hvis denne værdi har en brøkdel, vil systemet bruge dette i beregningen.</li><li>Hvis **Forøg** er valgt, vil systemet øge den matematiske beregning af løn-/dækningsbeløbet divideret med beregningsbeløbet til det nærmeste heltal, hvilket betyder, at 12,25 vil stige til 13.</li><li>Hvis **Formindsk** er valgt, vil systemet formindske den matematiske beregning af løn-/dækningsbeløbet divideret med beregningsbeløbet til det aktuelle heltal, hvilket betyder, at 12,25 vil formindskes til 12.</li></ul> |

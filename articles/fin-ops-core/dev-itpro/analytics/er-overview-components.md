@@ -1,26 +1,26 @@
 ---
 title: Komponenter i elektronisk rapportering
 description: Denne artikel indeholder en beskrivelse af ER-komponenterne (Elektronisk rapportering).
-author: nselin
+author: kfend
 ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.topic: overview
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b8b197fdea0cd49fc5161a12b8f547cc1a27bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: 4851374ca4943a84d35f063e0ee65b537ec3b6cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892444"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285025"
 ---
 # <a name="electronic-reporting-components"></a>Komponenter i elektronisk rapportering
 
@@ -123,15 +123,37 @@ Versioner, der har status som enten **Fuldført** eller **Delt** er tilgængelig
 - Komponenten kan serialiseres i XML-format og eksporteres som en fil i XML-format.
 - Komponenten kan reserialiseres fra en XML-fil og importeres til programmet som en ny version af en ER-komponent.
 
+Du kan finde flere oplysninger under [Importere en ny datamodelkonfiguration](er-quick-start1-new-solution.md#ImportDataModel) og [Eksportere den fuldførte version af et afledt format](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### <a name="draft-versions-at-runtime"></a>Kladdeversioner under kørsel
+
+I dine personlige brugerparametre til ER-strukturen kan du aktivere den indstilling, der giver dig mulighed for at angive, om kladdeversionen af en ER-konfiguration skal bruges under kørslen. Du kan finde oplysninger om, hvordan du gør indstillingen **Kør kladde** tilgængelig for dine ER-konfigurationer, under [Markere et brugerdefineret format som kørbart](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> ER-brugerparametre er brugerspecifikke og firmaspecifikke.
+
+### <a name="draft-format-versions-at-runtime"></a>Kladdeformatversioner under kørsel
+
+Når du kører en ER-løsning, ignoreres som standard kladdeversionerne af dens formatkomponenter. I stedet er det kun den relevante version, der har en anden status end **Kladde**, der bruges. Af og til vil du måske tvinge ER til at bruge kladdeversionen af ER-formatkonfigurationen under kørslen. Når du f.eks. har introduceret nødvendige ændringer i kladdeversionen, kan du bruge denne kladdeversion til at udføre testkørslen. På denne måde kan du validere gyldigheden af ændringerne. [Angiv](er-quick-start2-customize-report.md#MarkFormatRunnable) indstillingen **Kør kladde** for den relevante ER-konfiguration til **Ja** for at begynde at bruge kladdeversionen af formatet.
+
+### <a name="draft-model-mapping-versions-at-runtime"></a>Kladdeversioner af modeltilknytning under kørsel
+
+Når du kører en ER-løsning, bruges som standard kladdeversionerne af dens modeltilknytningskomponenter. Af og til vil du måske tvinge ER til at ignorere kladdeversionen af ER-modeltilknytningen under kørslen. I **version 10.0.29 og senere** kan du aktivere funktionen **Tag altid indstillingen "Kør kladde" i betragtning for ER-modeltilknytninger** for at styre den modeltilknytningsversion, der bruges under kørslen. Når denne funktion er aktiveret, forekommer følgende funktionsmåde:
+
+- Når indstillingen **Kør kladde** er angivet til **Nej** for en konfiguration af modeltilknytning, bruges den højeste version, der ikke er kladde, af denne konfiguration under kørslen. En undtagelse opstår, hvis konfigurationen ikke er tilgængelig i den aktuelle Finance-forekomst.
+- Når indstillingen **Kør kladde** er angivet til **Ja** for en konfiguration af modeltilknytning, bruges kladdeversionen af denne konfiguration under kørslen.
+
 ## <a name="component-date-effectivity"></a>Komponentens datogyldighed
 
-ER-komponentversioner har en ikrafttrædelsesdato. Du kan indstille datoen "Gyldig fra" for en ER-komponent for at angive startdatoen, hvor komponenten træder i kraft for rapporteringsprocesser. Programsessionsdatoen bruges til at definere, om en komponent er gyldig til udførelse. Hvis mere end én version er gyldig for en bestemt dato, bruges den nyeste version til rapporteringsprocesser.
+ER-formatkomponentversioner har en ikrafttrædelsesdato. Du kan indstille datoen "Gyldig fra" for en ER-formatkomponent for at angive startdatoen, hvor komponenten træder i kraft for rapporteringsprocesser. Programsessionsdatoen bruges til at definere, om en komponent er gyldig til udførelse. Hvis mere end én version er gyldig for en bestemt dato, bruges den nyeste version til rapporteringsprocesser.
 
 ## <a name="component-access"></a>Komponentadgang
 
-Adgangen til ER-formatkomponenter afhænger af indstillingen for ISO-lande-/områdekoden (International Organization for Standardization). Hvis denne indstilling er tom for en valgt version af en formatkonfiguration, kan en formatkomponent åbnes fra ethvert firma på kørselstidspunktet. Hvis denne indstilling indeholder ISO-land/område-koder, er en formatkomponent kun tilgængelig fra firmaer, der har en primær adresse, som er defineret for en af en formatkomponents ISO-land/område-koder.
+Adgangen til ER-format- og modeltilknytningskomponenter ved kørsel afhænger af indstillingen for ISO-lande-/områdekoden (International Organization for Standardization). Hvis denne indstilling er tom for en valgt version af en format- eller modeltilknytningskonfiguration, kan en format- eller modeltilknytningskomponent åbnes fra ethvert firma på kørselstidspunktet. Hvis denne indstilling indeholder ISO-land/område-koder, er en format- eller modeltilknytningskomponent kun tilgængelig fra firmaer, der har en primær adresse, som er defineret for en af en formatkomponents ISO-land/område-koder.
 
-Forskellige versioner af en dataformatkomponent kan have forskellige indstillinger for ISO-land/område-koder.
+Forskellige versioner af en format- eller modeltilknytningskomponent kan have forskellige indstillinger for ISO-land/område-koder.
+
+Du kan få flere oplysninger i [Konfigurere landekontekstafhængige ER-modeltilknytninger](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

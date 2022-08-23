@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede platformfunktioner
 description: Denne artikel beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet i platformopdateringer af programmer til finans og drift.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069916"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262292"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -31,6 +31,50 @@ Denne artikel beskriver funktioner, der er blevet fjernet eller er planlagt til 
 Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og forældelser for din egen planlægning. 
 
 Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
+
+## <a name="feature-deprecation-effective-august-2022"></a>Udfasning af funktioner, der træder i kraft i august 2022
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>Udfasede funktioner i Lifecycle Services (LCS) i august 2022
+
+Som et led i arbejdet med [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) er følgende LCS-funktioner udfaset.
+
+| Funktionsnavn | Bruges sammen med AX 2012? | Bruges sammen med programmer til finans og drift? | Erstattet af en anden funktion? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Annonceringer | Ja | Ja | Ja: Bannere findes på individuelle projekt- og miljøsider til beskeder. |
+| Konfigurationsstyring | Ja | Nej | Nej |
+| Analyse af nedbrud og dump | Ja | Nej | Nej |
+| Feedback og fejl | Ja | Ja | Nej |
+| Mit abonnement | Ja | Ja | Nej |
+| Office 365 | Ja | Ja | Ja: Azure Active Directory eller Microsoft-administrationsportalen. |
+| Effektanalyse | Nej | Ja | Nej |
+| Estimator for samlet økonomisk virkning | Nej | Ja | Nej |
+| Serviceanmodninger | Nej | Ja | Ja: [Selvbetjeningsinstallation](../deployment/infrastructure-stack.md) |
+| SharePoint-integration | Ja | Ja | Nej |
+| Konfiguration og datastyring | Nej | Ja | Nej |
+| Procesdatapakker | Nej | Ja | Ja: struktur til dataimport/-eksport (DIXF) |
+| Miljøopgradering | Nej | Ja | Ja: [One Version](../lifecycle-services/oneversion-overview.md)-tjenesteopdateringer er tilgængelige. |
+| Estimator for infrastruktur | Ja | Nej | Nej |
+| Licensvolumen | Ja | Nej | Nej |
+| Anvendelsesprofilgenerator | Ja | Nej | Nej |
+| Tilpasningsanalyse | Ja | Nej | Nej |
+| Systemdiagnosticering | Ja | Ja | Nej |
+| Visio-styring af forretningsmodeldesigner | Ja | Ja | Nej |
+| AX 2012-skymiljøstyring | Ja | Nej | Nej |
+| RDFE Azure-connectorer | Ja | Ja | Nej |
+| AX 2012-versioner | Ja | Nej | Nej |
+| Workflowopgaver, der opbevares i LCS-lager | Ja | Ja | Nej |
+| Hotfix-anmodninger | Ja | Ja | Nej |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Transport Layer Security (TLS) RSA cipher-suiter
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi fjerner følgende liste over cipher-suiter for at overholde de aktuelle sikkerhedsprotokoller.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Erstattet af en anden funktion?**   | Fra og med den 30. november 2022 kan kunderne kun bruge vores  [standard-cipher-suiter](/power-platform/admin/server-cipher-tls-requirements). Denne ændring påvirker dine klienter og servere, der kommunikerer med vores servere, f.eks. det kan påvirke din tredjepartsintegration, der ikke følger vores standardversioner af cipher-suiter. |
+| **Produktområder, der er berørt**         | Programmer til finans og drift |
+| **Installationsindstilling**              | Skyinstallationer |
+| **Status**                         | Forældet. Kunder skal opgradere deres servere inden den 30. november 2022. Yderligere oplysninger om konfiguration af TLS Cipher Suite-ordre finder du i [Administrere Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Udfasning af funktion træder i kraft i juni 2022

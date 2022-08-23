@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901141"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227891"
 ---
 # <a name="benefits-management-overview"></a>Oversigt over administration af frynsegoder
 
@@ -147,6 +147,16 @@ Før du kan behandle livshændelser, skal du allerede have kørt åben tilmeldin
 - [Behandle livshændelser](hr-benefits-process-life-events.md)
 - [Behandle ændringer af livshændelser](hr-benefits-process-life-event-changes.md)
 - [Behandle berettigelse til livshændelser](hr-benefits-process-life-event-eligibility.md)
+
+Når behandlingen af livshændelser er fuldført, og så længe tilmeldingsperioden for livshændelser er åben, kan medarbejderne foretage ændringer i de planindstillinger, der påvirkes af livshændelsen. Administratorer kan foretage ændringerne på vegne af medarbejdere. Når tilmeldingsperioden er afsluttet, og der ikke er knyttet nogen ubekræftede plantyper til livshændelsestransaktionen, lukkes transaktionen.
+
+Alle de planer, der påvirkes af livshændelsen, skal enten vælges eller frafaldes, og de skal derefter bekræftes. Hvis en plan ikke er valgt, ikke er frafaldet og derfor ikke er bekræftet, bliver livshændelsestransaktionen ikke lukket.
+
+Administratorer kan lukke en livshændelsestransaktion manuelt efter behov ved at markere den og derefter vælge **Luk**. Hvis der er ikke-bekræftede planer i transaktionen, og en administrator vil lukke den, kan lukning af livshændelsen begrænse redigeringer af disse planer.
+
+Lukkede livshændelser kan ikke slettes.
+
+Administratorer kan genåbne en livshændelsestransaktion efter behov ved at markere den og derefter vælge **Åbn igen**.
 
 ## <a name="rate-updates-optional"></a>Satsopdateringer (valgfrit)
 

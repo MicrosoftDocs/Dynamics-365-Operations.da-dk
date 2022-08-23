@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111812"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242976"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Opgradere til modellen med part- og globalt adressekartotek
 
@@ -274,7 +274,7 @@ Dette afsnit indeholder en beskrivelse af den opsætning, der kræves, før du k
 
     ![Importere Dataverse-partposterne.](media/data-factory-import-party.png)
 
-9. På Data Factory skal du køre skabelonen for partpostadresser og elektroniske partadresser én ad hinanden.
+9. Kør skabelonen for partpostadresser og elektroniske partadresser i datafabrikken én ad hinanden.
 
     + Partpostadresseskabelonen konfigurerer alle postadresseposter i kundeengagement-appen og knytter dem til de tilsvarende **konto**-, **kontaktperson**- og **kredit**-poster. Der genereres også tre .csv-filer: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv og ImportFONewPostalAddress.csv.
     + Part-elektroniske adresseskabelonen konfigurerer alle elektroniske adresser i kundeengagement-appen og knytter dem til de tilsvarende **konto**-, **kontaktperson**- og **kredit**-poster. Der genereres også en .csv-fil: ImportFONewElectronicAddress.csv.

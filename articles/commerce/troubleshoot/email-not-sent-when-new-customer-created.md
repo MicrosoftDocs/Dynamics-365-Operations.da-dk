@@ -2,21 +2,21 @@
 title: Velkomstmail sendes ikke, når nye kunder oprettes
 description: Denne artikel indeholder en vejledning i fejlfinding, der kan hjælpe, hvis der ikke sendes en velkomstbesked via mail, når der oprettes en ny kunde i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/24/2022
+ms.date: 08/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 8e95b33d4b8a9af13c613ab89dd33de6b4934694
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5aa7d864555f96194500989e2d7ad200d8892121
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853677"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219398"
 ---
-# <a name="welcome-email-is-not-sent-when-new-customers-are-created"></a>Velkomstmail sendes ikke, når nye kunder oprettes
+# <a name="welcome-email-isnt-sent-when-new-customers-are-created"></a>Velkomstmail sendes ikke, når nye kunder oprettes
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,13 +28,15 @@ Når der oprettes en ny kunde i Commerce Headquarters, sendes en velkomstmail ik
 
 ## <a name="resolution"></a>Løsning
 
-### <a name="set-the-correct-email-id-value-for-the-customer-created-email-notification-type"></a>Angiv den korrekte værdi for mail-id'et for mailbeskedtypen Kunde er oprettet
+### <a name="associate-an-email-notification-profile-under-commerce-parameters"></a>Tilknytte en mailbeskedprofil under Handelsparametre
 
-Hvis du vil angive den korrekte værdi for **Mail-id** for **Kunde er oprettet** i mailbeskedtype i hovedkontoret, skal du følge disse trin.
+1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Handelsparametre \> Generelt** i hovedkontoret.
+2. På rullelisten **Profil til e-mail-besked** skal du vælge den mailbeskedprofil, der indeholder en tilknytning mellem den kundeoprettede beskedtype og en kundeoprettet mailskabelon.  
 
-1. Gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Commerce-profil for mailbesked**.
-1. Vælg mailbeskedprofilen i navigationsruden til venstre.
-1. Angiv feltet **Mail-id** til **NewCust** under **Indstillinger for hændelsesbesked** for **Kunde er oprettet**.
+> [!NOTE] 
+> Når du aktiverer beskeder, der er oprettet af kunder, vil kunder, der er oprettet i alle kanaler i den juridiske enhed,, modtage en kundeoprettet mail. Aktuelt kan kundeoprettede beskeder ikke være begrænset til en enkelt kanal.
+
+Du kan få flere oplysninger i [Oprette mailskabeloner til transaktionshændelser](../email-templates-transactions.md). 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

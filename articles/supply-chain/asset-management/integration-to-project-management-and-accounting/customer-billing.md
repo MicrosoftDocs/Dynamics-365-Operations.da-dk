@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887683"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220416"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Fakturere for vedligeholdelse af aktiver, der ejes af kunder
 
@@ -49,7 +49,7 @@ Før du kan bruge denne funktion, skal den være slået til i dit system. Admini
 
 Du kan få mere at vide om, hvordan funktionen fungerer, ved at følge nedenstående eksempelscenarie.
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Du skal vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Du skal vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge dette scenarie som vejledning til brug af funktionen, når du arbejder i et produktionssystem. Du skal dog i det tilfælde erstatte dine egne værdier, og du mangler muligvis nogle typer påkrævede poster, som standarddemodataene giver.
 

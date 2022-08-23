@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Finance
 description: Denne artikel beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068916"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219562"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.29 udgaven
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Overføre lagerbeholdningsordrer, der har moms på overførselsprisen
+
+[Overføre lagerbeholdningsordrer, der har moms på overførselsprisen](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af forbedret funktionalitet, [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt** | Applikation |
+| **Installationsindstilling** | Alt |
+| **Status** | Udfases: Efter april 2023 understøttes funktionen **Flytteordrer til lagerbeholdning, der har moms på flytteprisen** ikke længere med rettelser og sikkerhedsrettelser. Kunderne bliver bedt om at bruge den forbedrede funktion, [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md). Efter oktober 2023 vil funktionen **Flytteordrer til lagerbeholdning, der har moms på flytteprisen** ikke længere være tilgængelig, og kunderne vil blive bedt om at gå til den forbedrede funktion. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.26 udgaven
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068664"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219466"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Lokalitetsvejledning til aldersfordelt lagerpluk
 
@@ -34,8 +34,8 @@ Når lageret først modtages eller oprettes på lagerstedet, opdaterer systemet 
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i denne rækkefølge:
 
-1. Placeringsstatus for lagersted
-1. Aldersfordeling i lokalitetsvejledning til lagerpluk
+1. *Placeringsstatus for lagersted* (fra og med version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger under [Placeringsstatus for lagersted](warehouse-location-status.md).)
+1. *Aldersfordeling i lokalitetsvejledning til lagerpluk*
 
 ## <a name="feature-requirements"></a>Funktionskrav
 
@@ -50,7 +50,7 @@ Dette afsnit indeholder eksempler, der viser, hvordan du kan konfigurere og brug
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem disse scenarier ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem disse scenarier ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge disse scenarier som vejledning i at bruge funktionen i et produktionssystem. I dette tilfælde skal du dog erstatte dine egne værdier for hver af de indstillinger, der beskrives her.
 

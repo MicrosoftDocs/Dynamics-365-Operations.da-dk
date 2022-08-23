@@ -2,7 +2,7 @@
 title: Gemte visninger
 description: Denne artikel beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125144"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220326"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "9125144"
 
 Personlig tilpasning spiller en vigtig rolle, når brugere og organisationer skal have mulighed for at optimere brugeroplevelsen efter deres behov. Du kan finde oplysninger om brugertilpasning i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
 
-Med traditionel brugertilpasning kan brugerne kun have et enkelt sæt tilpasninger pr. side. **Gemte visninger** udvides ved tilpasning på flere vigtige måder:
+Med traditionel personlig tilpasning kan brugerne kun have et enkelt sæt tilpasninger pr. side. **Gemte visninger** udvides ved tilpasning på flere vigtige måder:
 
 - I visningerne kan brugerne have flere navngivne sæt tilpasninger pr. formular, som de hurtigt kan skifte mellem efter behov. Det giver brugeren mulighed for at oprette flere optimerede visninger af en side, hvor hver visning er tilpasset til behovet, når brugeren udfører en bestemt forretningsopgave. 
 - Visninger, der oprettes til bestemte sidetyper, kan også indeholde brugertilføjede filtre eller sorteringer, som giver brugerne mulighed for hurtigt at vende tilbage til almindeligt filtrerede datasæt. Se afsnittet [Hvilke sider understøtter visninger](saved-views.md#what-pages-support-views) for at få yderligere oplysninger. 
@@ -46,7 +46,12 @@ Når visninger er blevet tilgængelige for et miljø, vil toppen af alle sider, 
 Visningsvælgeren har to størrelsesvariationer: 
 
 - **Store visningsvælgere** – Sider, der har en tydelig liste, har en større visningsvælger af forskellige årsager. Den vigtigste er, at den store visningsvælger angiver de sider, hvor visningen kan indeholde brugerdefinerede filtre og sorter. Der indgår filtre og sorter i visningerne, og derfor er den største vælger også påkrævet, fordi visningsnavnene ofte er den bedste beskrivelse af de data, der vises på skærmen, og forventningen er, at brugerne skifter mellem visninger ofte på disse sidetyper. Gruppering i et gitter kan også gemmes for visninger på en side med store visningsvælger. 
+    
+    [![Stor visningsvælger, der understøtter ændringer af forespørgsler i visningen.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Små visningsvælgere** – Alle andre sider i fuld skærmstørrelse (med undtagelse af arbejdsområder og dashboardet) har en mindre visningsvælger, der vises ud for sidens billedtekst. Visningerne på disse sider indeholder kun brugertilpasninger, og ikke brugerdefinerede filtre. På disse sider er formularteksten eller posttitlen ofte de vigtigste oplysninger øverst på siden. Den mindre størrelse af visningsvælgeren afspejler også en lavere forventet frekvens for skift af visninger på disse sider. 
+    
+    [![Lille visningsvælger, der ikke understøtter ændringer af forespørgsler i visningen.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Hvis du vælger visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.
 
@@ -64,6 +69,8 @@ Hvis du vil skifte til en anden visning, skal du først åbne visningsvælgeren 
 I modsætning til traditionelle brugertilpasninger gemmes visninger ikke automatisk, når en bruger tilpasser siden, eller når en bruger anvender et filter på en liste eller sorterer den. Der kræves en eksplicit handling for at gemme disse ændringer i en visning. Dette krav giver brugerne fleksibiliteten til at oprette en visning før eller efter de ændringer, der er knyttet til den pågældende visning, er foretaget. Det sikrer også, at visningsdefinitioner ændres utilsigtet med engangsfiltre eller brugertilpasninger. Bemærk, at elementer i det typiske sideforbrug (f.eks. kolonnebredder eller den udvidede eller skjulte sektionstilstand) gemmes automatisk i den aktuelle visning, selv for låste visninger.
 
 Hvis du vil sikre, at visningens aktuelle tilstand er kendt, når du begynder at ændre en visning ved at tilpasse eller filtrere den, vises der en stjerne (\*) ud for navnet på den aktuelle visning. Dette symbol angiver, at du kigger på en ikke-gemt, ændret version af denne visning.
+
+[![Ikke-gemte ændringer i en visning.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
 
@@ -225,7 +232,7 @@ Når visninger er aktiveret, gemmes eventuelle eksisterende tilpasninger af en b
 
 ### <a name="what-pages-support-views"></a>Hvilke sider understøtter visninger? 
 
-Visninger er tilgængelige på de fleste, men ikke på alle sider. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards og arbejdsområder. Sider, der ikke vises som fuldskærmssider, og som omfatter dialogbokse, rullelister, opslag, udvidede eksempler, understøtter i øjeblikket ikke visninger. Understøttelse af visninger for yderligere sidetyper, f.eks. arbejdsområder og dialogbokse, kan komme i betragtning ved en senere opdatering.
+Visninger er tilgængelige på de fleste, men ikke på alle sider. Visninger er især aktuelt tilgængelige på alle fuldskærmssider bortset fra dashboards. Visningsunderstøttelse af arbejdsområder er tilgængelig via funktionen **Understøttelse af gemte visninger for arbejdsområder**. De fleste fuldskærmssider, som omfatter dialogbokse med rullelister, opslag og udvidede eksempler, understøtter i øjeblikket ikke visninger. Visningsunderstøttelse af dialogbokse er tilgængelig via funktionen **Understøttelse af gemte visninger for dialogbokse**.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem har tilladelse til at publicere visninger?
 

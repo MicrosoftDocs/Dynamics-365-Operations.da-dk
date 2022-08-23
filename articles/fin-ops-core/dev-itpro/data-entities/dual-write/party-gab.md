@@ -2,19 +2,19 @@
 title: Part og globalt adressekartotek
 description: Denne artikel beskriver funktionen til part og globalt adressekartotek for dobbeltskrivning.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892187"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228984"
 ---
 # <a name="party-and-global-address-book"></a>Part og globalt adressekartotek
 
@@ -119,11 +119,11 @@ Gitteret indeholder følgende kolonner:
 
 Du kan bruge knappen **Ny adresse** over gitteret til at oprette så mange postadresser, du vil.
 
-Felterne **Adresse 1** og **Adresse 2** under fanen **Oversigt** på siden **Konto** svarer adresser for henholdsvis **Levering** og **Faktura**.
+Når en bruger indtaster adresserne under fanen **Oversigt** på siden **Konti** i en kundeengagementsapps, svarer felterne **Adresse 1** og **Adresse 2** til henholdsvis **leverings**- og **fakturaadresserne**. Når en bruger opretter en postadresse i programmer til finans og drift, vises de første to adresser i kundeposten i felterne **Adresse1** og **Adresse2**, og brugeren har mulighed for at ændre formålet med adressen til **Levering** og **Faktura**.
 
 ![Fanen Oversigt for postadresser.](media/party-gab-image5.png)
 
-Felterne **Adresse 1**, **Adresse 2** og **Adresse 3** under fanen **Oversigt** på siden **Kontakt** svarer henholdsvis til adresserne for **Virksomhed**, **Levering** og **Faktura**.
+Felterne **Adresse 1**, **Adresse 2** og **Adresse 3** under fanen **Oversigt** på siden **Kontakt** svarer ligeledes henholdsvis til adresserne for **Virksomhed**, **Levering** og **Faktura**.
 
 ## <a name="electronic-addresses"></a>Elektroniske adresser
 

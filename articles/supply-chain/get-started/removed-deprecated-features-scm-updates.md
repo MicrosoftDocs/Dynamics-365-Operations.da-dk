@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
 description: Denne artikel beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171509"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218796"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Fjernede eller udfasede funktioner i Supply Chain Management 10.0.29-udgaven
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Overføre lagerbeholdningsordrer, der har moms på overførselsprisen
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsagen til forældelsen/fjernelsen** | Funktionen [Flytteordrer til lagerbeholdning, der har moms på flytteprisen](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) erstattes af funktionen [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Erstattet af en anden funktion?**   | Ja, funktionen [Flytteordrer til lagerbeholdning, der har moms på flytteprisen](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) erstattes af funktionen [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Produktområder, der er berørt** | Supply Chain Management - lager |
+| **Installationsindstilling** | Cloud og det lokale miljø |
+| **Status** | <p>Udfases. Funktionen *Flytteordrer til lagerbeholdning, der har moms på flytteprisen* vil ikke længere understøttes af rettelser og sikkerhedsrettelser.</p><p>Efter april 2023 bliver kunderne bedt om at bruge den forbedrede funktion, *Ordrer til overførsler af lagerbeholdning for Indien*, som standard. Efter oktober 2023 vil funktionen *Flytteordrer til lagerbeholdning, der har moms på flytteprisen* ikke længere være tilgængelig, og kunderne vil blive bedt om at gå til den forbedrede funktion *Ordrer til overførsler af lagerbeholdning for Indien*.</p><p>Du kan finde flere oplysninger i [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Fjernede eller udfasede funktioner i Supply Chain Management 10.0.19-udgaven
 

@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: ed80ff42ea5c6e6a904ea2855953d006f66aad37
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850350"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273660"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversigt over skybaseret søgning
 
@@ -64,11 +64,14 @@ I følgende illustration vises et eksempel, hvor der bruges avancerede automatis
 
 ## <a name="sort"></a>Sortér
 
-Med forbedret sortering i Commerce kan kunderne sortere, søge efter og gennemse søgeresultater og begrænse dem efter kriterier som f.eks. pris, produktnavn og produktnummer. Kunderne kan også sortere resultater, afhængigt af om et produkt er nyt, mest sælgende eller tilføjet for nylig.
+Med sortering kan kunderne sortere, søge efter og gennemse kategoriresultater og begrænse dem efter kriterier som f.eks. pris, produktnavn og produktnummer. Hvis du aktiverer [Produktanbefalinger](product-recommendations.md) i dit miljø, kan kunder også sortere resultater ud fra avancerede sorteringskriterier som f.eks. nye, mest sælgende og mest populære.
+
 
 > [!NOTE]
 > Disse cloud-aktiverede søgemuligheder er tilgængelige fra og med version 10.0.8. Kontrollér, at der er en post for "ProductSearch.UseAzureSearch", der er indstillet til 'true' i **Commerce-parametre > Konfigurationsparametre**. 
 ![Konfigurationsparametre for cloud-baseret søgning.](./media/CloudPoweredSearchConfigurationParameters.png)
+>Der findes avancerede sorteringsindstillinger som f.eks. nye, mest sælgende og mest populære i Commerce SSK version 9.35+ og Dynamics 365 Commerce 10.0.20 release.  
+
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -1,25 +1,25 @@
 ---
 title: Generelle budgetreservationer
 description: Denne artikel indeholder oplysninger om generelle budgetreservationer i den offentlige sektor.
-author: TaylorVH
+author: brpotter
 ms.date: 08/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: BudgetReservation_PSN
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: bcdd7352f5eacf4579fc4f80d8b8377d64f0d0bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Public sector
+ms.search.form: BudgetReservation_PSN
+ms.openlocfilehash: 61fb3e48ac177be9cb0a2be2a89511d79788c5e3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883036"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275863"
 ---
 # <a name="general-budget-reservations"></a>Generelle budgetreservationer
 

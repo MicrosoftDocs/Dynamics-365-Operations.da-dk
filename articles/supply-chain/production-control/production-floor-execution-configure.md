@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167755"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220356"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -87,29 +87,23 @@ Fra og med Supply Chain Management version 10.0.25 er denne funktion som standar
 
 ### <a name="enable-registering-of-material-consumption"></a>Aktivere registrering af materialeforbrug
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
 
 Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af lokationsstyringsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion, skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
 
 - *Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
-- *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
+- *Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
 
 > [!IMPORTANT]
 > Du kan bruge funktionen ikke-WMS alene. Hvis du bruger WMS, skal du dog aktivere begge funktioner.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Aktivere rapportering af fastvægtvarer
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for fastvægtvarer i batchordrer. Batchordrer oprettes ud fra formler, som kan defineres til at have fastvægtvarer som formelvarer, samprodukter og biprodukter. En formel kan også defineres, så den indeholder formellinjer til ingredienser, der er defineret for fastvægt. Fastvægtvarer bruger to måleenheder til at spore lagerbeholdning: fastvægtantal og lagerantal. I fødevarebranchen kan kød i kasser f.eks. defineres som en fastvægtvare, hvor fastvægtantallet bruges til at spore antallet af kasser, og lagerantallet bruges til at spore kassernes vægt.
 
 Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Prøveversion) Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv*
+- *Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv*
 
 ### <a name="enable-the-my-day-dialog"></a>Aktivere dialogboksen "Min dag"
 

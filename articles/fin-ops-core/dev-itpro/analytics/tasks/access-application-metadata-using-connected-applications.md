@@ -1,24 +1,24 @@
 ---
 title: Få adgang til programmetadata ved hjælp af tilsluttede programmer
 description: Fremgangsmåden i denne artikel forklarer, hvordan en Regulatory Configuration Service-bruger kan designe en ny elektronisk rapporteringsmodel ved hjælp af metadata.
-author: NickSelin
+author: kfend
 ms.date: 06/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b24d865bff0e81f79e7edde360fd5115d8637b42
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.search.form: ''
+ms.openlocfilehash: 1a935b96e247978fc2b2f9449d403c92bff35f17
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111225"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267866"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få adgang til programmetadata ved hjælp af tilsluttede programmer
 

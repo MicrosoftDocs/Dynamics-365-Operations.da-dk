@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845918"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219526"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -61,7 +61,6 @@ Benyt følgende fremgangsmåde for at oprette standardpolitikker for forsendelse
 1. Gå til oversigtspanelet **Lagersted**, og angiv indstillingen **Konsolider forsendelse ved frigivelse til lagersted** til *Ja*.
 1. Gentag trin 2 til 4 for alle andre lagersteder, hvor der kræves konsolidering.
 1. Luk siden.
-1. Brug [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at slå funktionen *Politikker for forsendelseskonsolidering* til. I arbejdsområdet **Funktionsstyring** hedder funktionen *Konsolider afsendelse*.
 1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**. Du skal muligvis opdatere browseren for at få vist det nye menupunkt **Politikker for forsendelseskonsolidering**, når du har aktiveret funktionen.
 1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
 
@@ -81,7 +80,6 @@ Benyt følgende fremgangsmåde for at oprette standardpolitikker for forsendelse
 
 Udfør følgende trin for at oprette standardpolitikker for forsendelseskonsolidering i et helt nyt miljø.
 
-1. Brug [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at slå funktionen *Politikker for forsendelseskonsolidering* til, hvis du ikke allerede har gjort det. I arbejdsområdet **Funktionsstyring** hedder funktionen *Konsolider afsendelse*.
 1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**.
 1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
 

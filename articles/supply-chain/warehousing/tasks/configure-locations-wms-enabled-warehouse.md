@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4cce7ea0c06938d2ce038853a262f843ec76fe4c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067267"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219652"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere placeringer på et WMS-aktiveret lagersted
 
@@ -39,7 +39,7 @@ Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt
 8. Luk siden.
 
 ## <a name="define-a-location-format"></a>Definere et lokalitetsformat
-1. Gå til **Navigationsrude > Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsformater**. Placering-formater er et navngivningssystem, der bruges til at oprette entydige og konsekvent navne for de forskellige placeringpositioner på et lagersted. Det kan være nyttigt at bruge separatorer som en del af placeringsformatet for at gøre det nemmere at identificere komponenter på lokationen som gangnummeret. I dette eksempel skal vi oprette et navn med fire komponenter. Disse kan for eksempel være gang, reol, hylde og placering.
+1. Gå til **Navigationsrude > Moduler > Lokationsstyring > Opsætning > Lagersted > Lokationsformater**. Lokationsformater er et navngivningssystem, der bruges til at oprette entydige og konsekvent navne for de forskellige positioner for lokationsbeholder på et lagersted. Det kan være nyttigt at bruge separatorer som en del af placeringsformatet for at gøre det nemmere at identificere komponenter på lokationen som gangnummeret. I dette eksempel skal vi oprette et navn med fire komponenter. Disse kan for eksempel være gang, reol, hylde og placering.
 2. Klik på **Ny**.
 3. Skriv en værdi i feltet **Lokationsformat**.
 4. Skriv en værdi i feltet **Navn**.

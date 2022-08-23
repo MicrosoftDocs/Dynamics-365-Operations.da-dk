@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b881f9c6f872061864d4254ce880d981ca71c479
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857570"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219028"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Inspicere varers kvalitet
 
@@ -27,7 +27,7 @@ ms.locfileid: "8857570"
 
 Denne artikel beskriver, hvordan du behandler kvalitetsordrer. Kvalitetskontroller er udføres typisk af en kvalitetsmedarbejder.
 
-Hvis standarddemodataene er installeret, kan du bruge dem til at gennemføre procedurerne i denne artikel. Hvis du vil bruge demodataene, skal du vælge den juridiske enhed *USMF*, før du starter. Du skal derefter bekræfte indkøbsordre *000016* og bogføre en produktmodtagelse. En kvalitetsordre genereres automatisk.
+Hvis [standarddemodataene](../../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret, kan du bruge dem til at gennemføre procedurerne i denne artikel. Hvis du vil bruge demodataene, skal du vælge den juridiske enhed *USMF*, før du starter. Du skal derefter bekræfte indkøbsordre *000016* og bogføre en produktmodtagelse. En kvalitetsordre genereres automatisk.
 
 ## <a name="step-1-select-a-quality-order"></a>Trin 1: Vælg en kvalitetsordre
 

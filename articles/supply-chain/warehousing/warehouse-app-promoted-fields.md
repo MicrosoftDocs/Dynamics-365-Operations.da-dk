@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857048"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218968"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere hævede felter til trin i Warehouse Management-mobilappen
 
@@ -32,13 +32,7 @@ Denne artikel beskriver, hvordan du kan hæve og fremhæve bestemte oplysninger 
 Før du kan konfigurere hævede felter, skal du gennemføre følgende procedure for at aktivere de påkrævede funktioner og generere de nødvendige feltnavne i mobilappen Warehouse Management.
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-1. I [arbejdsområdet **Funktionsstyring**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere funktionen, der vises, på følgende måde:
-
-    - **Modul:** *Warehouse Management*
-    - **Funktionsnavn:** *Trininstruktioner for lagerstedsappen*
-
-    Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Hævede felter i appen Warehouse*.
-
+1. Sørg for, at funktionen *Vejledninger til trin i lagerstedsapp* er aktiveret for systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Hævede felter i appen Warehouse*.
 1. Aktivér funktionen, der vises, på følgende måde:
 
     - **Modul:** *Warehouse Management*
@@ -67,7 +61,7 @@ Benyt følgende fremgangsmåde til at definere hævede felter.
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor standarddemodataene er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfigurere salgspluk med hævede trin i id-trinnet
 

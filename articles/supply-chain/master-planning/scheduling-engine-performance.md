@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854291"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219901"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre planlægningsprogrammets ydeevne
 
@@ -294,7 +294,9 @@ Et alternativ til at bruge parallelle operationer er enten at udforme parrene so
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Rute med et antal ressourcer, der er større end 1
 
-Hvis du angiver det antal ressourcer, der skal bruges til en operation, til over ét, giver det i praksis de samme primære/sekundære operationer, da der sendes flere parallelle job til programmet. I dette tilfælde er der dog ikke mulighed for at bruge bestemte ressourcetildelinger, da et større antal end ét kræver, at mere end én ressource kan anvendes til operationen.
+Hvis du det antal ressourcer, der skal bruges til en operation, er større end ét, giver det i praksis de samme primære/sekundære operationer, da der sendes flere parallelle job til programmet. I dette tilfælde er der dog ikke mulighed for at bruge bestemte ressourcetildelinger, da et større antal end ét kræver, at mere end én ressource kan anvendes til operationen.
+
+En sekundær operation, der har en ressourcebelastningsmængde, der er større end én, betyder, at det angivne antal sekundære ressourcer er påkrævet for hver ressource i den primære operation. Hvis f.eks. den primære operation har antallet af ressourcer angivet til to, og dens sekundære operation har ressourceantallet angivet til tre, skal der bruges i alt seks ressourcer til den sekundære operation.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Overdreven brug af kapacitetsbegrænsning
 

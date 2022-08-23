@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895190"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227769"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
@@ -78,6 +78,8 @@ Forudbetalingen kan fjernes fra indkøbsordren, medmindre du allerede har udlign
 Hvis du vil registrere kreditorens forudbetalingsfaktura, skal du gå til siden **Kreditorfaktura** ved at vælge indstillingen **Forudbetalingsfaktura** på siden **Indkøbsordrer** (fanen **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer \> fanen Faktura \> Forudbetalingsfaktura**). Angiv oplysninger om forudbetalingsfakturaen, herunder fakturanummeret. Du kan ikke ændre antal i en forudbetalingsfaktura. Hvis kreditoren har faktureret et delvist beløb af den forudbetalingsværdi, der er defineret på indkøbsordren, kan du opdatere enhedsprisen, så den afspejler delværdien.
 
 Når forudbetalingsfakturaen bogføres, opdateres kreditorsaldoen og forudbetalingskontoen. Værdien **Anvendelse af forudbetaling** i forudbetalingsdefinitionen, som findes på indkøbsordren, opdateres også. De økonomiske standarddimensionsposter for det bogførte forudbetalingsbilag tages fra overskriftsoplysningerne på indkøbsordren.
+
+Hvis funktionen **Lås økonomiske dimensioner på fakturalinjer på kreditorforudbetalingsfaktura** på siden **Funktionsstyring** er aktiveret, kan dimensionerne i forudbetalingshovedet eller -linjerne ikke opdateres. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Bogføre og udligne betalinger for forudbetalingsfakturaen
 Derefter betales forudbetalingsfakturaen fra siden **Betalingskladde**. Klik på **Kreditor \> Kladder \> Betalinger \> Betalingskladde** for at få adgang til betalingskladder. Når udligningen af betalingen er bogført på forudbetalingsfakturaen, opdateres indkøbsordrens **Restværdi for anvendelse af forudbetaling**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dc24fed1ec71432d9e2a3e1cb5b366267c2938b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905448"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218736"
 ---
 # <a name="warehouse-app-event-processing"></a>Hændelsesbehandling i lagerstedsapp
 
@@ -28,7 +28,7 @@ Batchjob, der kører i Supply Chain Management, kan bruge data fra en kø til be
 
 ## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Slå funktionen Hændelsesbehandling i lagerstedsapp til eller fra
 
-Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Hændelsesbehandling i lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk. Derfor er den som standard slået til og kan ikke deaktiveres igen. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Proces for hændelser for lagerapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Konfigurere et batchjob, der skal behandle hændelser i lagerstedsapp
 

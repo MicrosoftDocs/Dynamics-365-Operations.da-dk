@@ -2,7 +2,7 @@
 title: Startside for IoT-intelligens
 description: Denne artikel indeholder links til oplysninger om IoT-intelligens.
 author: johanhoffmann
-ms.date: 12/09/2020
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b43681b036379a6f95103d4bb17cbde018724552
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d8b2be25abaeff7404d7f4ef3cd825a50147fef
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877618"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228351"
 ---
 # <a name="iot-intelligence-home-page"></a>Startside for IoT-intelligens
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 > [!IMPORTANT]
 > Denne funktion er aktuelt kun tilgængelig i følgende lande/områder:

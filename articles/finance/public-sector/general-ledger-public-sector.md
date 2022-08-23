@@ -6,24 +6,22 @@ ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
 audience: Application User
-ms.reviewer: kfend
-ms.custom:
-- "27211"
-- intro-internal
-ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: kfend
+ms.author: v-kiarnd
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd294242db320ebd3f0742fbf8e4f2eabab0cede
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27211,  ""intro-internal
+ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
+ms.search.industry: Public sector
+ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
+ms.openlocfilehash: 786f3dc0d175eebde20183614a845bcc51850266
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865439"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279754"
 ---
 # <a name="general-ledger-in-the-public-sector-overview"></a>Oversigt over finans i den offentlige sektor
 

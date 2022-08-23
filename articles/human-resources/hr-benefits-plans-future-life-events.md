@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888848"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227979"
 ---
 # <a name="configure-future-life-events"></a>Konfigurere fremtidige livshændelser
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Du kan planlægge fremtidige livshændelser i Dynamics 365 Human Resources.
 
@@ -39,11 +40,12 @@ Du kan planlægge fremtidige livshændelser i Dynamics 365 Human Resources.
    | Livshændelse logført | Dato og klokkeslæt, hvor livshændelsen blev logført. |
    | Logtype | Viser, om handlingen er en af følgende:</br></br>- **Opdater** – en ændring af en eksisterende post, der sporer livshændelser</br></br>- **Indsæt** – oprettelse af en ny livshændelsespost |
    | Livshændelsestype-id | Det entydige id for livshændelsestypen. |
-   | Livshændelsestype | En katalysator til opdatering af en medarbejders tilmelding til frynsegoder. Du kan finde flere oplysninger i afsnittet om udløsning af livshændelser. |
+   | Livshændelsestype | En katalysator til opdatering af en medarbejders tilmelding til frynsegoder. Du kan finde flere oplysninger i afsnittet om udløsere af livshændelser. |
    | Status | Angiver, om livshændelsen er behandlet eller ej. |
-   | Type | Linjenummeret for den fremtidige livshændelse. |
+   | Linje | Linjenummeret for den fremtidige livshændelse. |
 
 4. Vælg **Gem**. 
 
+Du kan slette fremtidige livshændelser. Hvis en behandlet fremtidig livshændelse slettes, slettes den fremtidige post også. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

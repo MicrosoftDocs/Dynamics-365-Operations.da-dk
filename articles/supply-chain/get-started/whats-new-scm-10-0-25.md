@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167725"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219088"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 
@@ -34,7 +34,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
 | Lager&nbsp;og&nbsp;logistik | [Forbedringer for farlige materialer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Kommer snart | Funktionsstyring:<br>*Forbedringer for farlige materialer* |
-| Lager&nbsp;og&nbsp;logistik | [Pakkearbejde for pakkestationer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Kommer snart | Funktionsstyring:<br>*Pakkearbejde for pakkestationer* |
+| Lager&nbsp;og&nbsp;logistik | [Pakkearbejde for pakkestationer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [Pakkearbejde til pakning af udgående containere og behandling af forsendelser](../warehousing/packing-work.md) | Funktionsstyring:<br>*Pakkearbejde for pakkestationer* |
 | Lager&nbsp;og&nbsp;logistik | [Scanne stregkoder på lagerstedet ved hjælp af GS1-formatstandarder](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-stregkoder og QR-koder](../warehousing/gs1-barcodes.md) | Funktionsstyring:<br>*Scan GS1-stregkoder* |
 | Fremstillingsvirksomhed | [Materialeforbrug og reservationer i grænsefladen for produktionsudførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*<br><br>Og/eller:<br><br>Funktionsstyring:<br>*(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)* |
 | Planlægning | [Vedligeholdelse af centraliseret kalender for planlægningsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendere og varedisponering](../master-planning/supply-chain-calendars-master-planning.md) | Aktiveret som standard |

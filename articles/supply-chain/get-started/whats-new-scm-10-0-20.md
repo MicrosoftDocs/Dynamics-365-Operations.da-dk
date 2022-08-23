@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123802"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219148"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.20 (august 2021)
 
@@ -49,7 +49,7 @@ Følgende tabel indeholder de funktionsforbedringer, der er inkluderet i denne v
 | Modul | &nbsp;Funktionsnavn&nbsp;i&nbsp;funktionsstyring | Flere oplysninger |
 |---|---|---|
 | Varedisponering | Parallel godkendelse til justeret behovsprognose | Denne funktion muliggør parallel godkendelse af justeret efterspørgselsprognose fra siden **Justeret efterspørgselsprognose**. Formålet med denne funktion er at øge ydeevnen, når et stort antal budgetter godkendes. Under godkendelse kan brugeren angive **Antal tråde** i dialogboksen til godkendelse. |
-| Varedisponering | (Forhåndsversion) Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |
+| Varedisponering | Godkendelse og konsolidering, der kan køre i batch, for planlagte bulk- og pakkebatchordrer | Med denne funktion kan du bruge batchjob til at bekræfte og konsolidere planlagte bulk- og pakkeordrer. |
 | Produktionsstyring | Kopiér generiske ruter | Denne funktion forbedrer kopieringsrutefunktionen, så brugerne kan kopiere ruter, der ikke er varespecifikke. Det giver systemet mulighed for at opdatere alle relevante oplysninger (f.eks. lokation, rutegruppe, ressourcebehov og forskellige tider), når kopieringsrutefunktionen er blevet brugt til at overskrive en rute, der endnu ikke er tildelt en vare. |
 | Produktionsstyring | Opdater relaterede ressourcekrav, når en ruteoperation ændres | Denne funktion giver systemet mulighed for at opdatere de relaterede ressourcekrav, når en bruger ændrer driften af et eksisterende rutetrin. |
 | Administration af produktoplysninger | Behandling af styklisterapport på forhånd for at forhindre timeout | Denne funktion medfører, at styklisterapporten behandles på forhånd. Derved undgår du timeoutproblemer, når der er en stor databelastning for rapporten. |

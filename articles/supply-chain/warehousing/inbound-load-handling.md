@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070313"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219496"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerstedshåndtering af indgående laster til indkøbsordrer
 
@@ -279,7 +279,7 @@ Disse scenarier kræver funktionen _Flere produktkvitteringsbogføringer pr. las
 
 #### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil arbejde gennem disse scenarier ved hjælp af de angivne eksempelposter og -værdier, skal du bruge et system, hvor standarddemodataene er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem disse scenarier ved hjælp af de angivne eksempelposter og -værdier, skal du bruge et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Tilføj et menupunkt til modtagelse af varelast, når der bruges en mobil enhed
 
