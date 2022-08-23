@@ -1,24 +1,24 @@
 ---
 title: Administrere flere afledte tilknytninger for en enkelt modelrod
 description: Denne artikel forklarer, hvordan du kan administrere flere afledte tilknytninger, der er konfigureret til en enkelt modelrod.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892473"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277502"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Administrere flere afledte tilknytninger for en enkelt modelrod
 
@@ -106,7 +106,7 @@ I dette afsnit beskrives det, hvordan du kan [tilpasse](er-quick-start3-customiz
 3. I dialogboksen skal du på rullelisten **Opret konfiguration** i feltet **Ny** vælge **Afledt fra Navn: Tilknytning af fakturamodel, Microsoft**.
 4. Angiv **Tilknytning af fakturamodel Litware** i feltet **Navn**.
 5. Vælg **Opret konfiguration**.
-6. [Markér](er-quick-start2-customize-report.md#MarkFormatRunnable) [kladdeversionen](general-electronic-reporting.md#component-versioning) af den afledte tilknytning som tilgængelig for brug under kørslen:
+6. [Markér](er-quick-start2-customize-report.md#MarkFormatRunnable) [kladdeversionen](general-electronic-reporting.md) af den afledte tilknytning som tilgængelig for brug under kørslen:
 
     1. I handlingsruden under fanen **Konfigurationer** skal du i gruppen **Avancerede indstillinger** vælge **Brugerparametre**.
     2. I dialogboksen **Brugerparametre** skal du angive indstillingen **Kørselsindstillinger** til **Ja** og derefter vælge **OK**.

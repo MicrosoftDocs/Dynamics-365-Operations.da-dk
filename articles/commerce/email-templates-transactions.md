@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910544"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279562"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Oprette e-mailskabeloner til transaktionshændelser
 
@@ -117,7 +117,29 @@ Beskedtypen *ordreannullering* udløses, når der annulleres en ordre i POS elle
 
 ### <a name="customer-created"></a>Kunden er oprettet
 
-Beskedtypen *kunde oprettet* udløses, når der oprettes en ny kundeenhed i Commerce Headquarters.
+Beskedtypen *kunde oprettet* udløses, når der oprettes en ny kundeenhed i Commerce Headquarters. 
+
+Du kan aktivere kundeoprettede beskeder i Commerce headquarters ved at gå til **Retail og Commerce \> Konfiguration af hovedkontor \> Parametre \> Handelsparametre \> Generelt**. På rullelisten **Profil til e-mail-besked** skal du vælge en mailbeskedprofil, der indeholder den kundeoprettede beskedtype. 
+
+Hændelser, der er oprettet af kunder, overføres som standard til hovedkontoret med batchjobbet **Synkroniser kunder og kanalanmodninger**. Hvis du vil bruge et serviceopkald i realtid til at sende disse hændelser, skal du angive mail-id'et for den kundeoprettede skabelon til **newCust**. Dette frarådes ikke, da servicekald i realtid er nemme at glemme og ikke indeholder den reserve- eller forsøgslogik, som batchjobbene har.
+
+> [!NOTE] 
+> Når du aktiverer beskeder, der er oprettet af kunder, vil kunder, der er oprettet i alle kanaler i den juridiske enhed,, modtage en kundeoprettet mail. Aktuelt kan kundeoprettede beskeder ikke være begrænset til en enkelt kanal.  
+
+Når batchjobbet aktiveres, understøtter den kundeoprettede beskedtype følgende pladsholder.
+
+| Pladsholdernavn | Beskrivende tekst                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | Fornavnet og efternavnet på den kunde, der har oprettet en konto. |
+
+Når det aktiveres via et serviceopkald i realtid, understøtter den kundeoprettede beskedtype følgende pladsholdere.
+
+| Pladsholdernavn | Beskrivende tekst                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Name             | Fornavnet og efternavnet på den kunde, der har oprettet en konto. |
+| E-mail            | Mailadressen på den kunde, der har oprettet en konto.    |
+| Telefon            | Telefonnummeret på den kunde, der har oprettet en konto.      |
+| URL-adresse              | Den URL-adresse, kunden har angivet, da kunden oprettede kontoen. |
 
 ### <a name="b2b-prospect-approved"></a>B2B-kundeemne er godkendt
 

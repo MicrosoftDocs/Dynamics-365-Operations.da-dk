@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865115"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219961"
 ---
 # <a name="delay-tolerance-negative-days"></a>Forsinkelsestolerance (negative dage)
 
 [!include [banner](../../includes/banner.md)]
 
-Funktionen til forsinkelsestolerance giver planlægningsoptimering mulighed for at overveje den værdi for **Negative dage**, der er angivet for disponeringsgrupper. Den bruges til at forlænge den forsinkelsestoleranceperiode, der anvendes under behovsplanlægning. På denne måde kan du undgå at oprette nye forsyningsordrer, hvis eksisterende forsyninger kan dække behovet med kort forsinkelse. Formålet med funktionen er at bestemme, om det giver mening at oprette en ny forsyningsordre for en given efterspørgsel.
+Funktionen til forsinkelsestolerance giver planlægningsoptimering mulighed for at overveje den værdi for **Negative dage**, der er angivet for disponeringsgrupper, varedisponering og/eller behovsplaner. Den bruges til at forlænge den forsinkelsestoleranceperiode, der anvendes under behovsplanlægning. På denne måde kan du undgå at oprette nye forsyningsordrer, hvis eksisterende forsyninger kan dække behovet med kort forsinkelse. Formålet med funktionen er at bestemme, om det giver mening at oprette en ny forsyningsordre for en given efterspørgsel.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
 
-Du kan gøre funktionen til forsinkelsestolerance tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Negative dage for Planlægningsoptimering*.
+Du kan gøre funktionen til forsinkelsestolerance tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner:
+
+- *Negative dage for planlægningsoptimering* – Denne funktion aktiverer indstillinger for negative dage for disponeringsgrupper og varedisponering.
+- *Automatisering af forsyning af levering til ordre* – Denne funktion aktiverer negative dage for behovsplaner. (Du kan finde flere oplysninger i [Automatisering af forsyning af levering til ordre](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Forsinkelsestolerance i planlægningsoptimering
 
 Forsinkelsestolerance er det antal dage efter leveringstiden, du er villig til at vente, før du bestiller ny genopfyldning, når der allerede er planlagt en eksisterende forsyning. Forsinkelsestolerance defineres ved hjælp af kalenderdage og ikke arbejdsdage.
 
-Når systemet beregner forsinkelsestolerancen, tages indstillingen af **Negative dage** med i beregningen på tidspunktet for behovsplanlægning. Du kan enten angive værdien for **Negative dage** på siden **Disponeringsgrupper** eller på siden **Varedisponering**.
+Når systemet beregner forsinkelsestolerancen, tages indstillingen af **Negative dage** med i beregningen på tidspunktet for behovsplanlægning. Du kan enten angive værdien for **Negative dage** på siden **Disponeringsgrupper**, siden **Varedisponering** eller på siden **Behovsplaner**. Hvis negative dage tildeles på mere end ét niveau, anvender systemet følgende hierarki til at bestemme, hvilken indstilling der skal bruges:
+
+- Hvis negative dage er aktiveret på siden **Behovsplaner**, tilsidesætter denne indstilling alle andre indstillinger for negative dage, når planen kører.
+- Hvis negative dage konfigureres på siden **Varedisponering**, tilsidesætter denne indstilling disponeringsgruppen.
+- Negative dage, der er konfigureret på siden **Disponeringsgrupper**, gælder kun, hvis der ikke er konfigureret negative dage for en relevant vare eller plan.
 
 Systemet knytter beregningen af forsinkelsestolerancen til den *tidligste genopfyldningsdato*, hvilket er lig med dags dato plus gennemløbstiden. Forsinkelsestolerancen beregnes ved at bruge følgende formel, hvor *max()* finder den største af to værdier:
 

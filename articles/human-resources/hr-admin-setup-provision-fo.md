@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178404"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221586"
 ---
 # <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Klargøre Human Resources i infrastruktur til finans og drift
 
@@ -52,8 +52,8 @@ Overvejelser i forbindelse med yderligere valgfri miljøer:
 - **Integration** – Konfigurer og test integrationer, der kan omfatte oprindelige integrationer eller brugerdefinerede integrationer, som f.eks. integration med løn, sporingssystemer for ansøgere eller benefit-systemer og -leverandører.
 - **Kursus** - Du har muligvis brug for et separat miljø, der er konfigureret med et sæt kursusdata, for at medarbejderne kan bruge det nye system. 
 - **Projekt i flere faser** - Du kan have brug for et yderligere miljø for at understøtte konfiguration, overflytning af data, test eller andre aktiviteter i en projektfase, der er planlagt efter projektets første start.
-- **Udvikling** – I finans og drift-infrastruktur kan du nu udvide løsningen og udvikle dine egne tilpasninger. Hver udvikler skal bruge deres eget udviklingsmiljø. Du kan finde oplysninger i [Implementere og få adgang til udviklingsmiljøer](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **GULD** – Til nye installationer er det en almindelig praksis at bruge et separat GOLD-miljø, der holdes uafhængigt af konfiguration og overflytning af data. Dette miljø kan bruges i hele implementeringen til at opdatere andre miljøer. Den bruges til at oprette et nyt produktionsmiljø med grundlæggende konfiguration og overflytning af data. Du kan ikke implementere et produktionsmiljø på finans og drift-infrastrukturen, før du har fuldført go-live-parathedsprocessen. Du kan finde flere oplysninger i [Klargøring til go-live](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Udvikling** – I finans og drift-infrastruktur kan du nu udvide løsningen og udvikle dine egne tilpasninger. Hver udvikler skal bruge deres eget udviklingsmiljø. Du kan finde oplysninger i [Implementere og få adgang til udviklingsmiljøer](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GULD** – Til nye installationer er det en almindelig praksis at bruge et separat GOLD-miljø, der holdes uafhængigt af konfiguration og overflytning af data. Dette miljø kan bruges i hele implementeringen til at opdatere andre miljøer. Den bruges til at oprette et nyt produktionsmiljø med grundlæggende konfiguration og overflytning af data. Du kan ikke implementere et produktionsmiljø på finans og drift-infrastrukturen, før du har fuldført go-live-parathedsprocessen. Du kan finde flere oplysninger i [Klargøring til go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ Overvejelser i forbindelse med yderligere valgfri miljøer:
 
 ## <a name="create-an-lcs-project"></a>Oprette et LCS-projekt
 
-Når du vil bruge LCS til at administrere dine Human Resources-miljøer, skal du først oprette et LCS-projekt. Hvis du vil overføre personalemiljøet til finans og drift-infrastruktur, skal du oprette et nyt LCS-projekt til finansierings- og operationsapps. Yderligere oplysninger finder du i [Overflytning af Human Resources-miljø](hr-admin-migrate-overview). Hvis du allerede har et LCS-projekt til andre apps til finans og handlinger, kan du aktivere personalefunktionerne i arbejdsområdet til **funktionsstyring**. Få flere oplysninger i [Oversigt over funktionsstyring](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Når du vil bruge LCS til at administrere dine Human Resources-miljøer, skal du først oprette et LCS-projekt. Hvis du vil overføre personalemiljøet til finans og drift-infrastruktur, skal du oprette et nyt LCS-projekt til finansierings- og operationsapps. Hvis du allerede har et LCS-projekt til andre apps til finans og handlinger, kan du aktivere personalefunktionerne i arbejdsområdet til **funktionsstyring**. Få flere oplysninger i [Oversigt over funktionsstyring](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Når en ny kunde logger på Personale, omfatter abonnementet et arbejdsområde til implementeringsprojekt. Når kunden har aktiveret servicen, skal lejeradministratoren logge på <https://lcs.dynamics.com> ved hjælp af lejerkontoen. Projektarbejdsområdet oprettes automatisk for organisationen. Du kan finde flere oplysninger i [Lifecycle Services (LCS) til programmer til finans og drift](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+Når en ny kunde logger på Personale, omfatter abonnementet et arbejdsområde til implementeringsprojekt. Når kunden har aktiveret servicen, skal lejeradministratoren logge på <https://lcs.dynamics.com> ved hjælp af lejerkontoen. Projektarbejdsområdet oprettes automatisk for organisationen. Du kan finde flere oplysninger i [Lifecycle Services (LCS) til programmer til finans og drift](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > For at sikre en vellykket klargøring skal den konto, du bruger til klargøring af Human Resources-miljøet, enten tildeles rollen **Systemadministrator** eller **Systemtilpasser** i det Power Apps-miljø, der er tilknyttet Human Resources-miljøet. Se [Konfigurere brugersikkerhed for ressourcer](/power-platform/admin/database-security) for at få flere oplysninger om tildeling af sikkerhedsroller til brugere i Microsoft Power Platform.
 
-Du skal fuldføre processen til start af LCS-projektet, før du kan begynde at implementere miljøer. Du kan finde flere oplysninger under [Projekt-onboarding](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Du kan finde flere oplysninger om, hvordan du bruger LCS, i [brugervejledningen til Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+Du skal fuldføre processen til start af LCS-projektet, før du kan begynde at implementere miljøer. Du kan finde flere oplysninger under [Projekt-onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Du kan finde flere oplysninger om, hvordan du bruger LCS, i [brugervejledningen til Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## <a name="deploy-human-resources-environments"></a>Planlægge miljøer i Human Resources
 
 Implementering af økonomi- og operationsapps, herunder Personale, i skyen, kræver, at du forstår miljøet og det abonnement, du implementerer på, hvem der kan udføre hvilke opgaver og hvilke data og tilpasninger, du skal administrere. Det anbefales, at du bruger en tjenestekonto i stedet for en navngivet bruger, når du implementerer nye miljøer. Du kan finde flere oplysninger om, hvordan du implementerer miljøer i infrastrukturen i finans og drift, i [Oversigt over implementering i skyen](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Du kan implementere et produktionsmiljø til Human Resources på finans og drift-infrastruktur, når du har fuldført go-live-parathedsprocessen. Du kan finde flere oplysninger i [Klargøring til go-live](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Denne proces omfatter estimator for abonnement i LCS. Du kan finde flere oplysninger i [Abonnementsvurdering](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Du kan implementere et produktionsmiljø til Human Resources på finans og drift-infrastruktur, når du har fuldført go-live-parathedsprocessen. Du kan finde flere oplysninger i [Klargøring til go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Denne proces omfatter estimator for abonnement i LCS. Du kan finde flere oplysninger i [Abonnementsvurdering](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integrere Microsoft Power Platform med Human Resources
 
-Microsoft Power Platform indeholder en række egenskaber til Dynamics 365-programmer via Power Platform Administration. Du kan integrere og udvide brugen af Human Resources-data ved hjælp af Microsoft Power Platform. Oplysninger om, hvordan du integrerer Personale med Microsoft Power Platform, finder du i [Microsoft Power Platform-integration med programmer til finans og drift](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform indeholder en række egenskaber til Dynamics 365-programmer via Power Platform Administration. Du kan integrere og udvide brugen af Human Resources-data ved hjælp af Microsoft Power Platform. Oplysninger om, hvordan du integrerer Personale med Microsoft Power Platform, finder du i [Microsoft Power Platform-integration med programmer til finans og drift](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Understøttede geografier
 
@@ -96,8 +96,8 @@ Som standard har den globale administrator, der oprettede miljøet, adgang til d
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Du kan få mere at vide om, hvordan du bruger og administrerer projekter i LCS i programmet til finans og drift-infrastruktur ved hjælp af følgende ressourcer:
 
-- [Ressourcer til Lifecycle Services](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Brugervejledning til Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Ressourcer til Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Brugervejledning til Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Oversigt over selvbetjeningsinstallation](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Startside til handlinger til databaseflytning](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

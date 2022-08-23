@@ -1,25 +1,25 @@
 ---
 title: Liste over ER-funktioner i kategorien liste
 description: Denne artikel indeholder oplysninger om listefunktionerne, der understøttes i elektronisk rapportering (ER).
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869049"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277686"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Liste over ER-funktioner i kategorien liste
 
@@ -47,6 +47,7 @@ Listefunktioner til elektronisk rapportering (ER) kan bruges til at udtrække op
 | [ListOfFields](er-functions-list-listoffields.md)         | Denne funktion returnerer en *Postliste*-værdi, der er oprettet på baggrund af strukturen af det angivne argument i typen *Optælling* eller *Container (post)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Denne funktion returnerer en ny *Postliste*-værdi, der udelukkende består af de første poster på den angivne liste.|
 | [OrderBy](er-functions-list-orderby.md)                   | Denne funktion returnerer den angivne liste som en *Postliste*-værdi, efter at den er sorteret i henhold til de angivne argumenter. Disse argumenter kan defineres som udtryk. |
+| [Gentag](er-functions-list-repeat.md)                     | Denne funktion opbygger en post, der indeholder det felt, som har en værdi, der svarer til det angivne input. Derefter returneres en ny *Postliste* for en post, der gentages et bestemt antal gange. |
 | [Tilbagefør](er-functions-list-reverse.md)                   | Denne funktion returnerer den angivne liste som en *Postliste*-værdi i omvendt sorteringsrækkefølge. |
 | [Opdel](er-functions-list-split.md)                       | Denne funktion opdeler den angivne inputstreng i understrenge og returnerer resultatet som en ny *Postliste*-værdi. |
 | [SplitList](er-functions-list-splitlist.md)               | Denne funktion opdeler den angivne liste i underlister (eller batches), som hver især indeholder det angivne antal poster. Derefter returneres resultatet som en ny *Postliste*-værdi, der består af batches. |

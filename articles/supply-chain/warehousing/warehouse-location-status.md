@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065458"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220051"
 ---
 # <a name="warehouse-location-status"></a>Placeringsstatus for lagersted
 
@@ -42,10 +42,7 @@ Følgende fire felter på siden **Lokationer** sporer oplysninger om den aktuell
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>Aktivér funktionen til status for lagersted
 
-Før du kan bruge funktionen *Status for lagersted*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Status for lagersted*
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Placeringsstatus for lagersted* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-warehouse-location-status"></a>Konfigurere status for lagersted
 
@@ -55,7 +52,7 @@ Før du går i gang med at arbejde med scenariet, skal du aktivere eksempeldata 
 
 #### <a name="use-the-usmf-legal-entity"></a>Brug den juridiske enhed USMF
 
-Hvis du vil arbejde dig gennem eksempelscenariet ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde dig gennem eksempelscenariet ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 #### <a name="set-up-location-profiles"></a>Konfigurer lokationsprofiler
 

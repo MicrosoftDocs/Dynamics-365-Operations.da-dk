@@ -1,26 +1,26 @@
 ---
 title: Designe et ER-format til sideinddeling af genererede dokumenter i Excel
 description: Denne artikel forklarer, hvordan du designer en et elektronisk rapporteringsformat (ER), der sideinddeler et genereret dokument i Microsoft Excel.
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e4a34dffda9e9b95f5d6c7ee382723663817ec6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909272"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284995"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Designe et ER-format til sideinddeling af genererede dokumenter i Excel
 
@@ -58,11 +58,11 @@ I dette scenario er du repræsentant for Litware, Inc. som aktuelt er valgt som 
 5. I feltet **Navn** skal du angive **Intrastat-rapport Litware**.
 6. Vælg **Opret konfiguration** for at oprette det nye format.
 
-Version 1.9.1 af **Intrastat-rapport Litware** ER-formatkonfiguration er oprettet. Denne version har [statussen](general-electronic-reporting.md#component-versioning) **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
+Version 1.9.1 af **Intrastat-rapport Litware** ER-formatkonfiguration er oprettet. Denne version har statussen **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
 
 ### <a name="make-the-custom-format-runnable"></a>Gøre det brugerdefineret format kørbart
 
-Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre formatet til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt** der [tages i betragtning](general-electronic-reporting.md#component-versioning), når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
+Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre formatet til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt**, der tages i betragtning, når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
 
 Hvis du vil bruge kladdeversionen af et ER-format, skal du eksplicit markere ER-formatet.
 

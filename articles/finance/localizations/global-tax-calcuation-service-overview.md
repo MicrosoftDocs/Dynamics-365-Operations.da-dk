@@ -1,24 +1,24 @@
 ---
 title: Oversigt over momsberegning
 description: Denne artikel forklarer det overordnede område og funktionerne til momsberegning.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166833"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270659"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -54,12 +54,17 @@ Momsberegning implementeres i følgende Azure-geografiske områder. Der vil bliv
 
 - Stillehavsområdet
 - Australien
+- Brasilien
 - Canada
 - Europa
+- Frankrig
+- Indien
 - Japan
+- Sydafrika
 - Schweiz
+- Forenede Arabiske Emirater
 - Storbritannien
-- USA
+- United States
 
 > [!NOTE]
 > Momsberegning understøtter ikke tidligere version af Dynamics 365, f.eks. Dynamics AX 2012 eller installationer af Dynamics 365 i lokale miljøer.
@@ -149,11 +154,15 @@ Følgende transaktioner understøttes i version 10.0.28:
 - Kreditorbetalingskladde
 - Debitorbetalingskladde
 
+Følgende transaktioner understøttes i version 10.0.29: 
+
+- Periodisk kladde
+
 ## <a name="supported-countriesregions"></a>Understøttede lande/områder
 
-Momsberegning kan aktiveres efter juridisk enhed. 
+Momsberegning kan køres med de understøttede lokaliseringsfunktioner i følgende lande/områder for en juridisk enheds primære adresse: 
 
-Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.21:
+Understøttes i version 10.0.21:
 
 - Østrig
 - Belgien
@@ -174,9 +183,9 @@ Følgende lande/områder til en juridisk enheds primære adresse understøttes i
 - Sverige
 - Schweiz
 - Storbritannien
-- USA
+- United States
 
-Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.22:
+Understøttes i version 10.0.22:
 
 - Australien
 - Bahrain
@@ -191,22 +200,24 @@ Følgende lande/områder til en juridisk enheds primære adresse understøttes i
 - Sydafrika
 - Forenede Arabiske Emirater
 
-Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.23:
+Understøttes i version 10.0.23:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapore
 
-Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.24:
+Understøttes i version 10.0.24:
 
 - Mexico
 
-Følgende lande/områder til en juridisk enheds primære adresse understøttes i version 10.0.26:
+Understøttes i version 10.0.26:
 
 - Kina
 - Tjekkiet
 - Spanien
+
+Hvis et land/område ikke er lokaliseret af Microsoft, kan Momsberegning også aktiveres og køres med andre globale funktioner.
 
 ## <a name="related-resources"></a>Tilknyttede ressourcer
 

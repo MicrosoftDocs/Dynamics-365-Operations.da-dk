@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844461"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219931"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Lagerafmærkning med planlægningsoptimering
 
@@ -43,9 +43,15 @@ Udligningen starter ved at inkludere relevant afmærkning, reservation af dispon
 
 Når du autoriserer et ordreforslag, indeholder dialogboksen **Autorisation** feltet **Opdater afmærkning**, som du bruger til at angive afmærkningsindstillinger for de ordrer, der oprettes under autorisation. Vælg en af følgende værdier:
 
-- **Nej** – Der anvendes ikke lagerafmærkning.
-- **Standard** – Lagerafmærkning opdateres i henhold til udligningen. En behovsordre (efterspørgsel) afmærkes i forhold til en opfyldningsordre (udbud). Hvis der er et restantal på opfyldningsordren, er det ikke afmærket, og referenceoplysningerne er tomme. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne kun til salgsordren.
-- **Udvidet** – Både behovsordren (efterspørgsel) og opfyldningsordren (udbud) afmærkes, uafhængigt af om der er et restantal i opfyldningsordren. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne både til salgsordren og indkøbsordren.
+- *Nej* – Der anvendes ikke lagerafmærkning.
+- *Standard* – Lagerafmærkning opdateres i henhold til udligningen. En behovsordre (efterspørgsel) afmærkes i forhold til en opfyldningsordre (udbud). Hvis der er et restantal på opfyldningsordren, er det ikke afmærket, og referenceoplysningerne er tomme. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne kun til salgsordren.
+- *Udvidet* – Både behovsordren (efterspørgsel) og opfyldningsordren (udbud) afmærkes, uafhængigt af om der er et restantal i opfyldningsordren. Hvis en salgsordre på 100 styk f.eks. udlignes mod en indkøbsordre på 150 styk, tildeles referenceoplysningerne både til salgsordren og indkøbsordren.
+- *Enkelt niveau, standard* – Der bruges markering på enkelt niveau. Markering på enkelt niveau markerer kun hovedvaren og ikke styklistekomponenterne. Du kan derfor sikre, at komponenttildelingen for produktionsordrer er fleksibel efter autorisation. Markering på enkelt niveau giver systemet mulighed for at optimere for sidste minuts efterspørgselsændringer. Ved *standard*-markering på et enkelt niveau markeres behovsordrer i forhold til deres opfyldningsordrer, men opfyldningsordrer markeres ikke, hvis de har et restantal.
+- *Enkelt niveau, udvidet* – Der bruges markering på enkelt niveau. Ved *udvidet*-markering på et enkelt niveau markeres behovsordrer i forhold til deres opfyldningsordrer, og opfyldningsordrer markeres altid, uanset om de har et restantal.
 
+Hvis du vil angive standardmarkeringsindstillingen for systemet, skal du gå til **Varedisponering \> Konfiguration \> Varedisponeringsparametre**. Angiv derefter feltet **Opdater markering** til den foretrukne indstilling under fanen **Standardopdatering**.
+
+> [!NOTE]
+> Indstillingerne *Enkelt niveau, standard* og *Enkelt niveau, udvidet* er kun tilgængelige, hvis funktionen *Automatisering af forsyning af levering til ordre* er aktiveret i systemet. Du kan finde flere oplysninger om denne funktion, og hvordan du aktiverer den, i [Automatisering af forsyning af levering til ordre](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

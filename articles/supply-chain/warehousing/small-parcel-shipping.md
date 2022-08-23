@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855897"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219712"
 ---
 # <a name="small-parcel-shipping"></a>Forsendelse af småpakker
 
@@ -81,7 +81,7 @@ I dette eksempelscenarie vises, hvordan du konfigurerer og bruger SPS, når du h
 
 ### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de demoposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de demoposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="set-up-the-scenario"></a>Konfigurere scenariet
 

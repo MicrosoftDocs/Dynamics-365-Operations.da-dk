@@ -1,7 +1,7 @@
 ---
 title: Foretage fejlfinding af problemer ved opsætning og installation af Store Commerce
 description: Denne artikel forklarer, hvordan du kan fejlfinde konfigurations- og installationsproblemer i Microsoft Dynamics 365 Commerce Store Commerce-appen.
-author: mugunthanm
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 8af2c476ced05fc159a53131f8b51ad914a6c7c3
-ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
+ms.openlocfilehash: e3d115e84af1aaf5266eff6588ca6996a333e51a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "9168941"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286324"
 ---
 # <a name="troubleshoot-store-commerce-setup-and-installation-issues"></a>Foretage fejlfinding af problemer ved opsætning og installation af Store Commerce
 

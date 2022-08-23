@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687101"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228954"
 ---
 # <a name="plan-type-overview"></a>Oversigt over plantype
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687101"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 En plantype er en overordnet gruppering af bestemte typer frynsegoder. Hver plantype har en plantypekode, der bestemmer reglerne for plantypen. Plantypen **Basisliv** har f.eks. plantypekoden **Liv**, fordi den er en slags livsforsikringsplan og skal overholde de regler, der er fastsat for plantypekoden **Liv**. En anden plantype kan være **Supplerende liv**. Denne plantype vil også have plantypekoden **Liv**.
 
@@ -67,12 +69,12 @@ En plantype kan definere dækningsindstillinger. Dækningsindstillingerne define
    | --- | --- |
    | **Plantype** | Den plantype, der skal konfigureres indstillinger for livshændelser for. |
    | **Livshændelsestype-id** | Id'et for livshændelsestypen. |
-   | **Tillad annullering** | Angiver, om en medarbejder kan annullere en frynsegodeplan under livshændelsen. |
    | **Skift dækningsindstilling** | Angiver, om en medarbejder kan ændre dækningsindstillinger under livshændelsen. |
    | **Skift til en ny plan** | Angiver, om en medarbejder kan ændre planer under livshændelsen. |
-   | **Annuller plan automatisk** | Angiver, om planen automatisk skal annulleres under livshændelsen. |
-   | **Åbn automatisk kontrol af berettigelse** | Angiver, om kontrollen for berettigelse til frynsegoder ved tilmelding skal genåbnes automatisk under livshændelsen. |
-   | **Rapporteringsvindue** | Angiver rapporteringsvinduet, i dage, for livshændelsen. **Bemærk!** Hvis du ikke indtaster et beløb, antager systemet, at rapporteringsvinduet skal være nul, og livshændelsen behandles ikke. |
+   | **Åbn automatisk kontrol af berettigelse** | Angiver, om kontrollen for berettigelse til personalegoder ved tilmelding skal genåbnes automatisk under livshændelsen. |
+   | **Tilmeldingsperiode for livshændelse** | Angiver rapporteringsvinduet, i dage, for livshændelsen. **Bemærk!** Hvis du ikke indtaster et beløb, antager systemet, at rapporteringsvinduet skal være nul, og livshændelsen behandles ikke. |
+   | **Kan kun redigeres af administratorer** | Angiver, om administratorer kan annullere eller redigere en plan under en livshændelse. Medarbejderen kan ikke foretage ændringer i arbejdsområdet **Medarbejderselvbetjening**. |
+   | **Annuller plan automatisk** | Angiver, om planen automatisk skal annulleres under en livshændelse. Når ændringerne i livshændelserne er behandlet, bevares valget af **Annuller plan automatisk**. Det er kun statussen **Bekræftet** eller **Checket ud**, der fjernes. Planen forbliver valgt. Medarbejdere, der ikke foretager planvalg i løbet af tilmeldingsperioden for livshændelsen, mister derfor ikke planvalget. 
 
 5. Vælg **Gem**. 
 

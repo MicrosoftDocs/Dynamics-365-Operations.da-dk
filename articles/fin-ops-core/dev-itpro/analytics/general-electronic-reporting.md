@@ -1,28 +1,26 @@
 ---
 title: Oversigt over elektronisk rapportering (ER)
 description: Denne artikel indeholder en oversigt over værktøjet Elektronisk rapportering. Det indeholder en beskrivelse af nøglebegreber, understøttede scenarier og formater, der er en del af løsningen.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109574"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269685"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversigt over elektronisk rapportering (ER)
 
@@ -78,7 +76,7 @@ ER-programmet har følgende funktioner:
 
 [![ER-hoveddataflow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponenter
+### <a name="component"></a>Komponent
 
 Elektronisk rapportering (ER) understøtter følgende komponenttyper:
 
@@ -89,32 +87,7 @@ Elektronisk rapportering (ER) understøtter følgende komponenttyper:
 
 Du kan finde flere oplysninger under [Elektronisk rapporteringskomponenter](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Komponentversioner
-
-Versionering understøttes for ER-komponenter. Der findes følgende arbejdsgang til håndtering af ændringer i ER-komponenter:
-
-1. Den oprindelige version, der blev oprettet, er markeret som en **Kladde**-version. Denne version kan redigeres og er tilgængelig for testkørsler.
-2. **Kladde** versionen kan konverteres til en **Fuldført** version. Denne version kan bruges i lokale rapporteringsprocesser.
-3. Versionen **Fuldført** kan konverteres til en **Delt** version. Denne version udgives på LCS og kan bruges i globale rapportingsprocesser.
-4. Versionen **Delt** kan konverteres til en **Annulleret** version. Denne version kan derefter slettes.
-
-Versioner, der har status som enten **Fuldført** eller **Delt** er tilgængelige for anden dataudveksling. Følgende handlinger kan udføres på en komponent, der har disse statusser:
-
-- Komponenten kan serialiseres i XML-format og eksporteres som en fil i XML-format.
-- Komponenten kan reserialiseres fra en XML-fil og importeres til programmet som en ny version af en ER-komponent.
-
-#### <a name="component-date-effectivity"></a>Komponentens datogyldighed
-
-ER-komponentversioner har en ikrafttrædelsesdato. Du kan indstille datoen **Gyldig fra** for en ER-komponent for at angive startdatoen, hvor komponenten træder i kraft for rapporteringsprocesser. Programsessionsdatoen bruges til at definere, om en komponent er gyldig til udførelse. Hvis mere end én version er gyldig for en bestemt dato, bruges den nyeste version til rapporteringsprocesser.
-
-#### <a name="component-access"></a>Komponentadgang
-
-Adgang til ER-formatkomponenter afhænger af indstilling af ISO-land/område-koden. Når denne indstilling er tom for en valgt version af en formatkonfiguration, kan en formatkomponent åbnes fra ethvert firma på kørselstidspunktet. Når denne indstilling indeholder ISO-land/område-koder, er en formatkomponent kun tilgængelig fra firmaer, der har en primær adresse, som er defineret for en af en formatkomponents ISO-land/område-koder.
-
-Forskellige versioner af en dataformatkomponent kan have forskellige indstillinger for ISO-land/område-koder.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
+### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
 
 En ER-konfiguration er wrapperen for en bestemt ER-komponent. Denne komponent kan enten være en datamodelkomponent eller en formatkomponent. En konfiguration kan omfatte forskellige versioner af en ER-komponent. Hver konfiguration er markeret som ejet af en bestemt konfigurationsudbyder. **Kladde**-versionen af en komponent i en konfiguration kan redigeres, når ejeren af konfigurationen er valgt som aktiv udbyder i ER-indstillingerne i programmet.
 
@@ -124,13 +97,13 @@ Den formatkonfiguration, der oprettes, indeholder en formatkomponent. Datamodelk
 
 En ER-konfiguration deles for firmaer i programmet.
 
-#### <a name="provider"></a><a name="Provider"></a>Udbyder
+### <a name="provider"></a><a name="Provider"></a>Udbyder
 
 ER-udbyderen er den partsidentifikator, der bruges til at angive forfatteren (ejeren) af hver ER-konfiguration. Med ER kan du administrere listen over udbydere af konfigurationen. Formatkonfigurationer, der frigives for elektroniske dokumenter som del af finans og drift-løsningen, markeres som ejet af **Microsoft**-konfigurationsudbyderen.
 
 Du kan få oplysninger om, hvordan du registrerer en ny ER-udbyder, ved at afspille opgaveguiden **Oprette en ER-konfigurationsudbyder og markere den som aktiv** (en del af forretningsprocessen **7.5.4.3 Anskaf/udarbejd komponenter til it-ydelser og -løsninger (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Lager
+### <a name="repository"></a><a name="Repository"></a>Lager
 
 Et ER-lager indeholder ER-konfigurationer. Følgende typer af ER-lagre understøttes i øjeblikket: 
 
@@ -265,6 +238,7 @@ Listen over ER-konfigurationer for Finans opdateres konstant. Åbn det [globale 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
+- [Komponenter i elektronisk rapportering](er-overview-components.md)
 - [Oprette en konfiguration af elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
 

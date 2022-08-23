@@ -1,26 +1,26 @@
 ---
 title: Destinationer for elektronisk rapportering (ER)
 description: Denne artikel indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851071"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281961"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -118,7 +118,7 @@ Når du konfigurerer fildestinationer for et valgt format, skal du konfigurere d
 
 [![Konfigurationslink.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Samtidig kan du have flere [versioner](general-electronic-reporting.md#component-versioning) af det format, der er importeret til den aktuelle forekomst af Finans. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
+Samtidig kan du have flere versioner af det format, der er importeret til den aktuelle forekomst af Finans. Du kan få vist dem, hvis du vælger linket **Konfiguration**, der tilbydes, når du vælger feltet **Reference**.
 
 [![Konfigurationsversioner.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Det fremstillede PDF-dokument er begrænset til maksimalt 300 sider.
 Kun liggende sideretning understøttes i det PDF-dokument, der fremstilles af et Excel-output, fra og med Finans **version 10.0.9**. Fra og med Finans **version 10.0.10** kan du [angive sideretningen](#SelectPdfPageOrientation) i det PDF-dokument, der oprettes ud fra et Excel-output, mens du konfigurerer en ER-destination.
 
 Det er kun de almindelige systemskrifttyper i Windows-operativsystemet, der bruges til konvertering af et output, der ikke indeholder integrerede skrifttyper.
+
+### <a name="resources"></a>Ressourcer
+
+Før Finance version 10.0.29 kunne PDF-konverteringen kun ske uden for den aktuelle Finance -forekomst. En genereret fil blev sendt ud af Finance til konverteringstjenesten, og denne tjeneste returnerede derefter det konverterede dokument. Men i version **10.0.29 og senere**, i tillæg til **Konverter udgående dokumenter for elektronisk rapportering fra Microsoft Office-formater til PDF**, kan du aktivere funktionen **Brug applikationsressourcer til at udføre CBD-dokumentkonvertering fra Word til PDF-format**. Denne funktion giver dig mulighed for at konvertere genererede Word-dokumenter til PDF-format lokalt ved hjælp af programserverressourcer i den aktuelle Finance-forekomst. 
+
+Her er fordelene ved lokal PDF-konvertering, når funktionen **Brug programressourcer til at udføre konvertering af CBD-dokumenter fra Word til PDF-format** er aktiveret:
+
+- Det fremstillede PDF-dokument er ikke [begrænset](#limitations) til et maksimalt antal sider.
+- Det Word-dokument, der konverteres, kan indeholde [en lang række indholdskontrolelementer](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Det er ikke nødvendigt at bruge internetforbindelser til udrulninger i det lokale miljø.
 
 ### <a name="use-the-pdf-conversion-option"></a>Bruge PDF-konverteringsindstillingen
 

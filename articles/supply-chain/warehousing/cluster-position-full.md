@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9361448ba7993ba7cc126d6dd60a45fe497b2e84
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857135"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218764"
 ---
 # <a name="cluster-position-full"></a>Klyngeplacering fuld
 
@@ -38,7 +38,7 @@ Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge dette eksempelscenarie som vejledning til brug af funktionen i et produktionssystem. I dette tilfælde skal du dog erstatte dine egne værdier for hver af de indstillinger, der beskrives her.
 

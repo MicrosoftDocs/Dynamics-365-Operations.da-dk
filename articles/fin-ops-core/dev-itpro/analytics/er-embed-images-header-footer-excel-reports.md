@@ -1,26 +1,26 @@
 ---
 title: Design et ER-format til generering af en rapport i Excel-format med integrerede billeder i sidehoveder eller sidefødder
 description: Denne artikel forklarer, hvordan du bruger elektronisk rapportering (ER) til at generere forretningsdokumenter, der har billeder og figurer integreret i sidehoveder og sidefødder.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854837"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281806"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Design et ER-format til generering af en rapport i Excel-format med integrerede billeder i sidehoveder eller sidefødder
 
@@ -196,7 +196,7 @@ I dette tilfælde skal du som repræsentant for Litware, Inc. oprette (aflede) e
 
 ![Oprettelse af en konfiguration til et brugerdefineret betalingsformat i dialogboksen Opret konfiguration.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Version 240.112.1 af den **Fritekstfaktura (Excel) brugerdefineret** ER-formatkonfiguration oprettes. Denne version har [statussen](general-electronic-reporting.md#component-versioning) **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
+Version 240.112.1 af den **Fritekstfaktura (Excel) brugerdefineret** ER-formatkonfiguration oprettes. Denne version har statussen **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
 
 ![Ny version af den redigerbare ER-konfiguration på siden Konfigurationer.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Konfigurer dit brugerdefinerede format, så der vises et firmalogobillede i side
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Markere det brugerdefineret format som kørbart
 
-Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre formatet til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt** der [tages i betragtning](general-electronic-reporting.md#component-versioning), når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
+Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre formatet til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt**, der tages i betragtning, når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
 
 Hvis du vil bruge kladdeversionen af et ER-format, skal du eksplicit markere ER-formatet.
 

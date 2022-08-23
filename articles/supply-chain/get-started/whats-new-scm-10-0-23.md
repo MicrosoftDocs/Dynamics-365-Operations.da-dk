@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124522"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219118"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
@@ -55,7 +55,7 @@ Hvis du vil slå nogen af disse funktioner til og fra, skal du gøre det i [funk
 | Lager- og lokationsstyring | (Rusland) Brug oversættelser til lokalt sprog i lande- eller områdespecifikke primære formularer i Lagerstyring | For russiske oversættelser af Supply Chain Management gør denne funktion det muligt at bruge russiske oversættelser af produkt-/varenavne og måleenheder i følgende russiske specifikke lagerudskrifter: Optællingsliste (INV-3), Optællingsliste (INV-5) og Optællingsliste (INV-6). |
 | Varedisponering | Behovsprognose i Azure Machine Learning Service | Denne funktion gør det muligt for Azure Machine Learning Service at generere efterspørgselsbudgetter baseret på historikdata. Du kan finde flere oplysninger under [Konfigurere behovsprognoser](../master-planning/demand-forecasting-setup.md). |
 | Indkøb og forsyning | Ryd op i historik for indkøbsordreopdatering | Med denne funktion kan du rydde op i midlertidige historikposter, der er relateret til opdateringer af indkøbsordrer. Den tilføjer en ny knap med navnet **Ryd op i historik for købsordreopdatering** i handlingsruden på siden **Alle indkøbsordrer**. Denne funktion er som standard aktiveret. |
-| Produktionsstyring | (Forhåndsversion) Automatisk pluk af materialer, der er aktiveret til lagersted, til automatisk bogførte pluklister | Med denne funktion kan du automatisk plukke og løse lagerdimensioner for automatisk bogførte og afledte/varetrækspluklistekladder. |
+| Produktionsstyring | Automatisk pluk af materialer, der er aktiveret til lagersted, til automatisk bogførte pluklister | Med denne funktion kan du automatisk plukke og løse lagerdimensioner for automatisk bogførte og afledte/varetrækspluklistekladder. |
 | Produktionsstyring | Valider udløb af råmaterialer i forhold til planlagt forbrugsdato | Denne funktion ændrer den måde, som batchudløbsdatoer valideres på, når der reserveres en råvarebatch, som skal bruges under produktionen. Når denne funktion er aktiveret, valideres batchudløbsdatoen i forhold til den planlagte forbrugsdato (råvaredatoen), som angivet på produktionsstyklistelinjen eller batchordreformellinjen. Når denne funktion er deaktiveret, valideres batchudløbsdatoen i forhold til den planlagte leveringsdato for produktionen eller batchordren (som tidligere). |
 | Salg og marketing | Ryd op i historik for salgsopdatering baseret på alder | Med denne funktion kan du angive den maksimale alder for poster, der skal beholdes, når du kører den periodiske opgave **Oprydning af salgsopdateringshistorikken**. Ældre poster slettes. Dette er nyttigt, når du angiver, at opgaven skal køres periodisk, da alderen altid beregnes i forhold til den dato, hvor opgaven køres. Uden denne funktion kan du kun angive en bestemt dato for de ældste poster, der skal beholdes. Der er flere oplysninger i [Planlægge oprydning af data i salgshistorikken](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og marketing | Forbedr ydeevne for rapport med "Top 100" kunder | Denne funktion forbedrer ydeevnen for rapporten med **Top 100**-kunder ved altid at køre rapporten på tværs af alle kunder (som den er beregnet til) i stedet for at tillade brugerdefinerede forespørgsler. Når denne funktion er aktiveret, deaktiveres alle indstillinger for **Poster, der skal indgå** i dialogboksen med **Top 100**-rapporten. |

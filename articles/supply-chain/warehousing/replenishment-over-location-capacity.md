@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 543afe2e689fa787158551bec64e2458141be71c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899231"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220081"
 ---
 # <a name="replenishment-over-location-capacity"></a>Genopfyldning over lokationskapacitet
 
@@ -41,7 +41,7 @@ Dette afsnit indeholder retningslinjer og et eksempel, der viser, hvordan du kan
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde dig gennem [eksempelscenariet](#example-scenario) ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="location-profile"></a>Lokationsprofil
 

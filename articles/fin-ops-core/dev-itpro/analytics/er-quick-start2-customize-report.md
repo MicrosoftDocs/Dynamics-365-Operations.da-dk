@@ -1,28 +1,26 @@
 ---
 title: Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
 description: Denne artikel forklarer, hvordan du justerer et elektronisk rapporteringsformat (ER) fra Microsoft og opretter et brugerdefineret elektronisk dokument.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886785"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283552"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Justere et ER-format for at oprette et brugerdefineret elektronisk dokument
 
@@ -271,7 +269,7 @@ I dette tilfælde skal du som repræsentant for Litware, Inc. oprette (aflede) e
 
 6. Vælg **Opret konfiguration**.
 
-Version 1.1.1 af **BACS (UK – brugerdefineret)** ER-formatkonfiguration er oprettet. Denne version har [statussen](general-electronic-reporting.md#component-versioning) **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
+Version 1.1.1 af **BACS (UK – brugerdefineret)** ER-formatkonfiguration er oprettet. Denne version har statussen **Kladde** og kan redigeres. Det aktuelle indhold af det brugerdefinerede ER-format svarer til indholdet af det format, der er leveret af Microsoft.
 
 ![Konfigurationsside med Version 1.1.1 af BACS (UK – brugerdefineret) ER-formatkonfiguration.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Du skal konfigurere det brugerdefinerede format, så det opfylder de bankspecifi
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Markere et brugerdefineret format som kørbart
 
-Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre den til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt** der [tages i betragtning](general-electronic-reporting.md#component-versioning), når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
+Nu, hvor den første version af det brugerdefinerede format er blevet oprettet og har statussen **Kladde**, kan du køre den til testformål. Hvis du vil køre rapporten, skal du behandle en kreditorbetaling ved hjælp af den betalingsmåde, der refererer til det brugerdefinerede ER-format. Som standard er det kun versioner, der har statussen **Fuldført** eller **Delt**, der tages i betragtning, når du kalder et ER-format fra applikationen. Denne funktionsmåde er med til at forhindre, at ER-formater med uafsluttede design bliver brugt. Men når det gælder dine testkørsler, kan du tvinge programmet til at bruge den version af dit ER-format, der har statussen **Kladde**. På denne måde kan du justere den aktuelle formatversion, hvis der kræves ændringer. Du kan finde flere oplysninger under [Anvendelighed](electronic-reporting-destinations.md#applicability).
 
 Hvis du vil bruge kladdeversionen af et ER-format, skal du eksplicit markere ER-formatet.
 

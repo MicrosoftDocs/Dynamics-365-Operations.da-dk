@@ -1,24 +1,26 @@
 ---
 title: Designe en ny ER-konfigurationer til generering af rapporter i Word-format
 description: Denne artikel forklarer, hvordan brugere kan konfigurere et nyt ER-format (elektronisk rapportering) for at oprette rapporter som Microsoft Word-dokumenter.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893006"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273332"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Designe en ny ER-konfigurationer til generering af rapporter i Word-format
 
@@ -35,7 +37,7 @@ Hvis du vil bruge et Word-dokument som skabelon til rapporter i Word-format, kan
 
 ![Oprettelse af en formatkonfiguration på siden Konfigurationer.](./media/er-design-configuration-word-image2.gif)
 
-Løsningens ER-formatkomponent skal indeholde formatelementet **Excel\\Fil**, og det pågældende formatelement skal knyttes til Word-dokumentet, der skal bruges som skabelon for genererede rapporter under kørslen. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne [kladde](general-electronic-reporting.md#component-versioning)-versionen af den oprettede ER-konfiguration i ER-formatdesigneren. Tilføj derefter elementet **Excel\\Fil**, knyt Word-skabelonen til det ER-format, der kan redigeres, og knyt skabelonen til det **Excel\\File**-element, du har tilføjet.
+Løsningens ER-formatkomponent skal indeholde formatelementet **Excel\\Fil**, og det pågældende formatelement skal knyttes til Word-dokumentet, der skal bruges som skabelon for genererede rapporter under kørslen. Hvis du vil konfigurere ER-formatkomponenten, skal du åbne kladde-versionen af den oprettede ER-konfiguration i ER-formatdesigneren. Tilføj derefter elementet **Excel\\Fil**, knyt Word-skabelonen til det ER-format, der kan redigeres, og knyt skabelonen til det **Excel\\File**-element, du har tilføjet.
 
 > [!NOTE]
 > Når du manuelt tilknytter en skabelon, skal du bruge en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), der er [konfigureret](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrene til lagring af skabeloner i ER-formater.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 741377a43e2bfe702b213647cc6460a3d6ad93fb
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068625"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218676"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Batch-udgivelse af delvist reserverede flytteordrer
 
@@ -42,25 +42,22 @@ Inden en ordre kan frigives delvist til et lagersted i en batch, skal opfyldelse
 
 Opfyldelsespolitikker for overførselsordrer og salgsordrer angives på firmaniveau. Afhængigt af konfigurationen af opfyldelsespolitikken kan frigivelse af ordrer i en batch accepteres eller afvises. Ordrerne behandles derefter i overensstemmelse hermed.
 
--   Hvis du vil oprette opfyldelsespolitikker for overførsels- og salgsordrer, skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Frigiv til lagersted** \> **Opfyldelsespolitik** og derefter oprette en opfyldelsespolitik ved at angive et navn og en beskrivelse.
-
--   Hvis du vil angive en opfyldelsessats, en værditype og den meddelelse, der vises, hvis opfyldelsespolitikken overtrædes, skal du klikke på **Lokationsstyring** \> **Konfiguration** \> **Frigiv til lagersted** \> **Opfyldelsespolitik** og derefter angive felterne **Opfyldelsessats**, **Værditype** og **Meddelelser om opfyldelsesovertrædelse**.
+- Hvis du vil oprette opfyldelsespolitikker for overførsels- og salgsordrer, skal du gå til **Lokationsstyring \> Konfiguration \> Frigiv til lagersted \> Opfyldelsespolitik** og derefter oprette en opfyldelsespolitik ved at angive et navn og en beskrivelse.
+- Hvis du vil angive en opfyldelsessats, en værditype og den meddelelse, der vises, hvis opfyldelsespolitikken overtrædes, skal du gå til **Lokationsstyring \> Konfiguration \> Frigiv til lagersted \> Opfyldelsespolitikker** og derefter angive felterne **Opfyldelsessats**, **Værditype** og **Meddelelser om opfyldelsesovertrædelse**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Angive opfyldelsespolitikker for overførsels- og salgsordrer
 
--   Hvis du vil angive opfyldelsespolitikkerne for overførselsordrer, skal du klikke på **Lagerstyring** \> **Konfiguration** \> **arametre til lager- og lokationsstyring** \> **Flytteordrer** \> **Lokationsstyring** og derefter vælge en opfyldelsespolitik for flytteordrer.
+- Hvis du vil angive opfyldelsespolitikkerne for overførselsordrer, skal du gå til **Lagerstyring \> Konfiguration \> Parametre til lager- og lokationsstyring** fanen **Flytteordrer** i sektionen **Lokationsstyring** og derefter vælge en opfyldelsespolitik for flytteordrer.
+- Hvis du vil angive opfyldelsespolitikker for salgsordrer, skal du gå til **Debitor \> Konfiguration \> Debitorparametre** fanen **Lokationsstyring** og derefter vælge en opfyldelsespolitik for salgsordrer.
 
--   Hvis du vil angive opfyldelsespolitikker for salgsordrer, skal du klikke på **Debitor** \> **Konfiguration** \> **Debitorparametre** \> **Lokationsstyring** og derefter vælge en opfyldelsespolitik for salgsordrer.
-
-## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Tillade frigivelse i en batch og angive det antal, der skal frigives i en batch
+## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-released-in-a-batch"></a>Tillade frigivelse i en batch og angive det antal, der skal frigives i en batch
 
 Et batchjob bruges til at frigive ordrer til et lagersted i en batch. De parametre, som adskiller de ordrer, der skal køres i et batchjob, angives i selve batchjobbet.
 
 Parameteren **Antal** angiver, om hele antallet skal frigives, eller om det fysisk reserverede antal skal frigives i en batch. Parameteren **Tillad frigivelse af delvis frigivne ordrer** bestemmer, om ordrer i batchen skal godkendes eller afvises, hvis de tidligere er frigivet delvist.
 
--   Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for flytteordrer, skal du klikke på **Lokationsstyring** \> **Frigiv til lagersted** \> **Frigiv flytteordrer automatisk**.
-
--   Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for salgsordrer, skal du klikke på **Lokationsstyring** \> **Frigiv til lagersted** \> **Frigiv salgsordrer automatisk**.
+- Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for flytteordrer, skal du gå til **Lokationsstyring \> Frigiv til lagersted \> Frigiv flytteordrer automatisk**.
+- Hvis du vil angive parametrene **Antal** og **Tillad frigivelse af delvis frigivne ordrer** for salgsordrer, skal du klikke gå til **Lokationsstyring \> Frigiv til lagersted \> Frigiv salgsordrer automatisk**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

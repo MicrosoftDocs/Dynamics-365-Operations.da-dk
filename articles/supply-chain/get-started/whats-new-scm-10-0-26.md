@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124488"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219058"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.26. (maj 2022)
 
@@ -35,7 +35,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 |---|---|---|---|
 | Lager og logistik | [Forespørgsel om lagerbeholdning med lagersynlighed for at understøtte avancerede varer i Warehouse management](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Understøttelse af lagersynlighed for WMS-varer](../inventory/inventory-visibility-whs-support.md) | Funktionsstyring:<br>*Aktivér lagerstedsvarer i lagersynlighed* |
 | Lager og logistik | [Disponibel til tilsagn for tilføjelsesprogrammet Lagersynlighed](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed](../inventory/inventory-visibility-available-to-promise.md) | Aktiveret af servicekonfiguration |
-| Fremstillingsvirksomhed | [Fastvægtvarer til udførelse af grænsefladen til produktionen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*(Prøveversion) Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv* |
+| Fremstillingsvirksomhed | [Fastvægtvarer til udførelse af grænsefladen til produktionen](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv* |
 | Fremstillingsvirksomhed | Fanen Mine job i grænsefladen til produktionsudførelse <!-- KFM: Add link to release plan when available --> | [Sådan anvender arbejdere grænsefladen til kørsel af produktion](../production-control/production-floor-execution-use.md) | Funktionsstyring:<br>*Fanen Mine job i grænsefladen til produktionsudførelse* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsforbedringer, der er inkluderet i denne version

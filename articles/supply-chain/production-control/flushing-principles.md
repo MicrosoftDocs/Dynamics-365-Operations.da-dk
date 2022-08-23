@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065548"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266422"
 ---
 # <a name="flushing-principles"></a>Rydningsprincipper
 
@@ -56,7 +56,10 @@ Det manuelle rydningsprincippet angiver, at registreringen af materialeforbrug e
 Startrydningsprincippet angiver, at materialer forbruges automatisk, når produktionsordren startes. Mængden af materiale, der forbruges, er proportional med det antal, der startes. Når startrydningsprincippet bruges sammen med produktionsudførelsessystemet, kan det også bruges til at rydde materialer, når en handling eller et procesjob startes. Dette princip er relevant, hvis f.eks. afvigelsen i forbruget er lav, materialerne er af lav værdi, der ikke er nogen krav til sporing, eller der er en kort kørselstid på handlinger. 
 
 ### <a name="finish"></a>Afslut
-Rydningsprincippet Afslut angiver, at materialer automatisk forbruges, når produktionsordren er færdigmeldt, eller når en operation, der er konfigureret til at forbruge materialerne, registreres som fuldført. Mængden af materiale, der forbruges, er proportional med det antal, der færdigmeldes. Når rydningsprincippet Afslut bruges sammen med produktionsudførelsessystemet, kan det også bruges til at rydde materialer, når en handling eller et procesjob er fuldført. Dette princip er relevant i de samme tilfælde som Start-princippet. Afslut-princippet gælder imidlertid for handlinger, der har en længere operationstid, hvor materialer ikke må indstilles til IGVA, før operationen er fuldført. 
+Rydningsprincippet Afslut angiver, at materialer automatisk forbruges, når produktionsordren er færdigmeldt, eller når en operation, der er konfigureret til at forbruge materialerne, registreres som fuldført. Mængden af materiale, der forbruges, er proportional med det antal, der færdigmeldes. Når rydningsprincippet Afslut bruges sammen med produktionsudførelsessystemet, kan det også bruges til at rydde materialer, når en handling eller et procesjob er fuldført. Dette princip er relevant i de samme tilfælde som Start-princippet. Afslut-princippet gælder imidlertid for handlinger, der har en længere operationstid, hvor materialer ikke må indstilles til IGVA, før operationen er fuldført.
+
+> [!NOTE]
+> Du kan ikke bruge rydningsprincippet Udfør sammen med planlægningsvarer. Det anbefales, at du i stedet bruger startrydningsprincippet. Planlægningsvarer har produktionstypen *Planlægningsvare*, og kun samprodukter og biprodukter kan færdigmeldes på batchordrer, der er oprettet til planlægningsvarer.
 
 ### <a name="available-at-location"></a>Disponibel på lokation
 Rydningsprincippet Disponibel på lokation angiver, at materialet forbruges automatisk, når det er registreret som plukket til produktion. Materialet registreres som plukket fra lokation, når arbejdet for råvareplukningen er fuldført, eller når materialet er tilgængeligt på produktionens indlagringslokation, og materialelinjen er frigivet til lageret. Pluklisten, der oprettes under processen, bogføres i et batchjob. Dette princip er relevant, hvis du f.eks. har mange plukaktiviteter for én produktionsordre. Hvis det er tilfældet, behøver du ikke at foretage en manuel opdatering af pluklisten, og du kan få en aktuel visning af IGVA-saldoen.

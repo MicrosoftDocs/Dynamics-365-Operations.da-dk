@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f0419f1a109f043cb1af6a575704c24420639f1
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851240"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218908"
 ---
 # <a name="wave-template-grouping"></a>Bølgeskabelongruppering
 
@@ -76,7 +76,7 @@ Dette afsnit indeholder et script, som du kan arbejde med for at finde ud af, hv
 
 ### <a name="make-sample-data-available"></a>Gøre eksempeldata tilgængelige
 
-Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil arbejde gennem dette scenarie ved hjælp af de eksempelposter og -værdier, der er angivet her, skal du være på et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Derudover skal du vælge den juridiske enhed **USMF**, før du starter.
 
 Du kan også bruge dette scenarie som vejledning til brug af funktionen, når du arbejder i et produktionssystem. Du skal dog i det tilfælde erstatte dine egne værdier, og du mangler muligvis nogle typer påkrævede poster, som standarddemodataene giver.
 

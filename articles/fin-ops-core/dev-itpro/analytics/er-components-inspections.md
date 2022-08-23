@@ -1,26 +1,26 @@
 ---
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Denne artikel forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864830"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277844"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -30,8 +30,8 @@ Alle konfigurerede komponenter i ER-[format](er-overview-components.md#format-co
 
 Som standard anvendes valideringen automatisk i følgende tilfælde for en ER-konfiguration, der indeholder de tidligere nævnte ER-komponenter:
 
-- Du [importerer](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) en ny [version](general-electronic-reporting.md#component-versioning) af en ER-konfiguration til din forekomst af Microsoft Dynamics 365 Finance.
-- Du ændrer [status](general-electronic-reporting.md#component-versioning) for den redigerbare ER-konfiguration fra **Kladde** til **Fuldført**.
+- Du [importerer](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) en ny version af en ER-konfiguration til din forekomst af Microsoft Dynamics 365 Finance.
+- Du ændrer status for den redigerbare ER-konfiguration fra **Kladde** til **Fuldført**.
 - Du [rebaserer](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) en redigerbar ER-konfiguration ved at anvende en ny basisversion.
 
 Du kan køre denne validering eksplicit. Vælg en af følgende tre muligheder, og følg de trin, der er angivet:
@@ -770,7 +770,7 @@ Rediger det konfigurerede format ved at fjerne en binding for formatelementet **
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Ikke sammenkædet skabelon
 
-Når du [manuelt](er-fillable-excel.md#manual-entry) konfigurerer en ER-formatkomponent for at bruge en skabelon til at generere et udgående dokument, skal du tilføje elementet **Excel\\Fil** manuelt, tilføje den ønskede skabelon som en vedhæftet fil til den redigerbare komponent og markere den vedhæftede fil i det tilføjede **Excel\\Fil**-element. På denne måde angiver du, at det tilføjede element vil udfylde den valgte skabelon på kørselstidspunktet. Når du konfigurerer en version af formatkomponenten i **Kladde** [Status](general-electronic-reporting.md#component-versioning), kan du føje flere skabeloner til den redigerbare komponent og derefter vælge hver skabelon i elementet **Excel\\Fil** for at køre ER-formatet. På denne måde kan du se, hvordan de forskellige skabeloner udfyldtes på kørselstidspunktet. Hvis du har skabeloner, der ikke er valgt i nogen **Excel\\Fil**-elementer, advarer ER-formatdesigneren dig om, at disse skabeloner slettes fra den version af ER-formatkomponenten, der kan redigeres, når dens status ændres fra **Kladde** til **Fuldført**.
+Når du [manuelt](er-fillable-excel.md#manual-entry) konfigurerer en ER-formatkomponent for at bruge en skabelon til at generere et udgående dokument, skal du tilføje elementet **Excel\\Fil** manuelt, tilføje den ønskede skabelon som en vedhæftet fil til den redigerbare komponent og markere den vedhæftede fil i det tilføjede **Excel\\Fil**-element. På denne måde angiver du, at det tilføjede element vil udfylde den valgte skabelon på kørselstidspunktet. Når du konfigurerer en version af formatkomponenten i **Kladde**-status, kan du føje flere skabeloner til den redigerbare komponent og derefter vælge hver skabelon i elementet **Excel\\Fil** for at køre ER-formatet. På denne måde kan du se, hvordan de forskellige skabeloner udfyldtes på kørselstidspunktet. Hvis du har skabeloner, der ikke er valgt i nogen **Excel\\Fil**-elementer, advarer ER-formatdesigneren dig om, at disse skabeloner slettes fra den version af ER-formatkomponenten, der kan redigeres, når dens status ændres fra **Kladde** til **Fuldført**.
 
 Følgende fremgangsmåde viser, hvordan dette problem kan opstå.
 

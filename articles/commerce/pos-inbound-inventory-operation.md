@@ -1,27 +1,27 @@
 ---
 title: Indgående lagerhandling i POS
 description: Denne artikel beskriver egenskaberne for den indgående lagerhandling af POS (Point Of Sale).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858876"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288346"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Indgående lagerhandling i POS
 
@@ -155,15 +155,13 @@ Du kan vælge **Modtag alle** på applinjen efter behov for hurtigt at opdatere 
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Modtagelse af ikke-planlagte varer på indkøbsordrer
 
-I Commerce version 10.0.14 og nyere kan brugere modtage et produkt, der ikke oprindeligt var på indkøbsordren. Hvis du vil aktivere denne funktion, skal du aktivere **Føj linjer til indkøbsordre under POS-modtagelse**.  
-
-Denne funktion fungerer kun i forbindelse med modtagelse af indkøbsordrer. Det er ikke muligt at modtage varer mod flytteordrer, når varerne ikke tidligere er bestilt og afsendt fra det udgående lagersted.
+I Commerce version 10.0.14 og nyere kan brugere modtage et produkt, der ikke oprindeligt var på indkøbsordren. Denne funktion fungerer kun i forbindelse med modtagelse af indkøbsordrer. Det er ikke muligt at modtage varer mod flytteordrer, når varerne ikke tidligere er bestilt og afsendt fra det udgående lagersted.
 
 Brugere kan ikke føje nye produkter til indkøbsordren under POS-modtagelse, hvis indkøbsordrens [arbejdsgang for ændringsstyring](../supply-chain/procurement/purchase-order-approval-confirmation.md) er aktiveret i Commerce Headquarters (HQ). Hvis du vil aktivere ændringsstyring, skal alle ændringer af en indkøbsordre først godkendes, før modtagelse kan tillades. Da denne proces gør det muligt for en modtager at føje nye linjer til indkøbsordren, mislykkes modtagelsen, hvis arbejdsgangen for ændringsstyring er aktiveret. Hvis ændringsstyring er aktiveret for alle indkøbsordrer eller den leverandør, der er knyttet til indkøbsordren, der aktivt modtages på POS, kan brugeren ikke føje nye produkter til indkøbsordren under modtagelse i POS.
 
 Den funktionalitet, der gør det muligt at tilføje linjer, kan ikke bruges som en løsning til at modtage yderligere mængder af produkter, der allerede findes på indkøbsordren. Overmodtagelse administreres via de standardindstillinger for [overmodtagelse](#over-receiving-validations) for produktlinjen på indkøbsordren.
 
-Hvis **Føj linjer til indkøbsordren under POS-modtagelse** er aktiveret, og en bruger modtager med den **Indgående handling** i POS, og brugeren scanner eller indtaster en produktstregkode eller et produktnummer, der ikke genkendes som en vare på den aktuelle indkøbsordre, men genkendes som en gyldig vare, vises der en meddelelse for brugeren om tilføjelse af varen på indkøbsordren. Hvis brugeren føjer varen til indkøbsordren, betragtes det antal, der er angivet under **Modtages nu**, for det bestilte antal på indkøbsordrelinjen.
+Når en bruger modtager med den **Indgående handling** i POS, og brugeren scanner eller indtaster en produktstregkode eller et produktnummer, der genkendes som en gyldig vare, men ikke genkendes som en vare på den aktuelle indkøbsordre, bliver brugeren bedt om at tilføje varen på indkøbsordren. Hvis brugeren føjer varen til indkøbsordren, betragtes det antal, der er angivet under **Modtages nu**, for det bestilte antal på indkøbsordrelinjen.
 
 Når modtagelsen af indkøbsordren er fuldført og sendt til behandling i HQ, oprettes de tilføjede linjer på indkøbsordrens hoveddokumentet. På indkøbsordrelinjen i HQ vil der være et **Tilføjet af POS**-flag under fanen **Generelt** på indkøbsordrelinjen. **Tilføjet af POS**-flaget angiver, at indkøbsordrelinjen blev tilføjet af POS-modtagelsesprocessen og ikke var en linje, der stod på indkøbsordren inden modtagelsen.
 

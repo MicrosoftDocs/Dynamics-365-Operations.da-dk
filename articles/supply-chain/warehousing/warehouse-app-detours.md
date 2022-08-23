@@ -4,19 +4,19 @@ description: Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863586"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218998"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveje til trin i menupunkter på mobilenheder
 
@@ -34,20 +34,8 @@ En omvej er et separat menupunkt, der kan åbnes fra et trin i en hovedopgave. I
 Før du kan konfigurere omveje for trin i menupunkterne på mobilenheden, skal du gennemføre følgende procedure for at aktivere de påkrævede funktioner og generere de nødvendige feltnavne i mobilappen Warehouse Management.
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-1. I [arbejdsområdet **Funktionsstyring**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere funktionen, der vises, på følgende måde:
-
-    - **Modul:** *Warehouse Management*
-    - **Funktionsnavn:** *Trininstruktioner for lagerstedsappen*
-
-    Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Omveje i Warehouse Management-app*.
-
-1. Aktivér funktionen, der vises, på følgende måde:
-
-    - **Modul:** *Warehouse Management*
-    - **Funktionsnavn:** *Omveje i Warehouse Management-app*
-
-    Denne funktion er den funktion, der er beskrevet i denne artikel.
-
+1. Sørg for, at funktionen *Vejledninger til trin i lagerstedsapp* er aktiveret for systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Omveje i Warehouse Management-app*.
+1. Aktivér funktionen *Omveje i Warehouse Management-app*. Denne funktion er den, der er beskrevet i denne artikel.
 1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
 
@@ -65,7 +53,7 @@ Dette scenarie viser, hvordan du kan konfigurere en forespørgsel om en lokation
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor standarddemodataene er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Oprette en menuspecifik tilsidesættelse og konfigurere omvejen til scenarie 1
 
@@ -118,7 +106,7 @@ Du kan erstatte lokationsforespørgslen med en id-forespørgsel eller en varefor
 
 ### <a name="enable-sample-data"></a>Aktivér eksempeldata
 
-Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor standarddemodataene er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
+Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i dette scenarie, skal du bruge et system, hvor [standarddemodataene](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installeret. Du skal også vælge den juridiske enhed **USMF**, før du starter.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Oprette en menuspecifik tilsidesættelse og konfigurere omvejen til scenarie 2
 
