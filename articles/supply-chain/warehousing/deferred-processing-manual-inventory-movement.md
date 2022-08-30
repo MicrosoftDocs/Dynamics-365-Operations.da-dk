@@ -2,7 +2,7 @@
 title: Udskudt behandling af manuelle lagerbevægelser
 description: Denne artikel beskriver, hvordan du bruger udskudt behandling af manuelle lagerbevægelser i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219802"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336389"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Udskudt behandling af manuelle lagerbevægelser
 
@@ -32,10 +32,10 @@ Baggrundsbehandling udføres med [funktionen Behandl app-hændelser for lagerste
 
 Hvis du vil gøre denne funktion tilgængelig, skal du aktivere følgende funktioner i [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Du skal aktivere dem i følgende rækkefølge:
 
-1. *Blokering af arbejde i hele organisationen*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
-1. *Proces for hændelser for lagerapp*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk. Derfor er den som standard slået til og kan ikke deaktiveres igen.)
-1. *Udskudte læg på lager-handlinger*
-1. *Udskudt behandling af manuel lagerbevægelseshandling*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
+1. *Blokering af arbejde i hele organisationen*<br>(Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. *Proces for hændelser for lagerapp*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. *Udskudte læg på lager-handlinger*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. *Udskudt behandling af manuel lagerbevægelseshandling*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurere politikker for arbejdsbehandling
 

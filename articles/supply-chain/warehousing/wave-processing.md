@@ -2,7 +2,7 @@
 title: Bølgeoprettelse og -behandling
 description: Denne artikel beskriver, hvordan du opretter, behandler og frigiver en bølge for at oprette plukkearbejde for en last, forsendelse, produktionsordre eller kanban-ordre.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014613"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335999"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoprettelse og -behandling
 
@@ -191,7 +191,7 @@ Brug siden **Detaljer om bølgebatchjob** til at undersøge batchjob og relatere
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivere eller deaktivere siden Detaljer om bølgebatchjob
 
-Fra og med Supply Chain Management version 10.0.25 er funktionen **Detaljer om bølgebatchjob** som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Detaljer om bølgebatchjob* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Oplysninger om bølgebatchjob* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Bruge siden Detaljer om bølgebatchjob
 

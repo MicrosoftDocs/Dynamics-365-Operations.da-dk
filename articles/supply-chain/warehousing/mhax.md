@@ -2,7 +2,7 @@
 title: Grænseflade for materialehåndteringsudstyr (MHAX)
 description: Denne artikel beskriver, hvordan du kan konfigurere MHAX-grænsefladen til materialehåndtering, så du kan oprette forbindelse til eksterne MH-systemer for fysisk materialehåndtering.
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068353"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334349"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grænseflade for materialehåndteringsudstyr (MHAX)
 
@@ -41,12 +41,13 @@ Her er en forklaring på interaktionerne, der vises i foregående illustration:
 
 Før du kan bruge MHAX-funktionen, skal du aktivere både funktionen og dens konfigurationsnøgle.
 
-1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-2. I arbejdsområdet **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** skal du aktivere den funktion, der hedder *Grænseflade for materialehåndteringsudstyr*.
-3. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
-5. Udvid **Handel \> Lagersteds- og transportstyring**, og markér derefter afkrydsningsfeltet **Grænseflade for materialehåndteringsudstyr**.
-6. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. hvis du kører Supply Chain Management-version 10.0.28 eller tidligere, skal du udføre et af følgende trin:
+    1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
+    1. I arbejdsområdet **[Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** skal du aktivere den funktion, der hedder *Grænseflade for materialehåndteringsudstyr*. (Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. Sæt systemet i vedligeholdelsestilstand som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Gå til **Systemadministration \> Opsætning \> Licenskonfiguration**.
+1. Udvid **Handel \> Lagersteds- og transportstyring**, og markér derefter afkrydsningsfeltet **Grænseflade for materialehåndteringsudstyr**.
+1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## <a name="set-mhax-parameters"></a>Angive MHAX-parametre
 

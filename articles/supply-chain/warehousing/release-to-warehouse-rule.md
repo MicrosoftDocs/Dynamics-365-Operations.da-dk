@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d39ce6e07a789ff4d605a01b1d5053be150d2727
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219742"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336239"
 ---
 # <a name="release-to-warehouse-rule"></a>Frigiv til lagerregel
 
@@ -30,14 +30,14 @@ Funktionen *Frigiv til lagerregel* giver fleksibilitet under frigivelse til lage
 
 ### <a name="turn-on-the-feature"></a>Slå funktionen til
 
-Før du kan bruge funktionen *Frigiv til lagerregel*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Frigiv til lagerregel*, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Frigiv til lagerregel*
 
 ### <a name="initialize-the-feature"></a>Initialisere funktionen
 
-Når funktionen er aktiveret i systemet, skal du initialisere den for at angive reglen til den korrekte starttilstand for alle lagersteder.
+Når funktionen er aktiveret for systemet, skal du initialisere den for at angive reglen til den korrekte starttilstand for alle lagersteder.
 
 - Når det gælder lagersteder, der ikke er aktiveret til lokationsstyring, er reglen som udgangspunkt angivet til **Ikke tilgængelig**.
 - Når det gælder lagersteder, der er aktiveret til lokationsstyring, er reglen som udgangspunkt angivet til **Tillad delvis reservation**

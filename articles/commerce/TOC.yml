@@ -12,6 +12,8 @@
               items:
                 - name: Nyheder eller ændringer på Commerce-startsiden
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (juli 2022)
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Få besked om serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktive kvalitetsopdateringer
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Levere ISV-løsninger ved brug af One Version
@@ -422,6 +426,8 @@
                       href: hide-non-carrier-modes.md
                     - name: Arbejdsrutineoptager og Hjælp til MPOS og Cloud POS
                       href: task-recorder-retail-pos.md
+                    - name: Konfigurere CPOS til at bruge en brugerdefineret Azure AD-app
+                      href: cpos-custom-aad.md
                     - name: Eksterne hardwareenheder
                       items:
                         - name: Eksterne enheder
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Betalingsmiddelbaserede rabatter
                   href: tender_based_discounts.md
-                - name: Oversigt over forsendelsesrabat
-                  href: retail-shipping-discount.md
+                - name: Forsendelsesrabat
+                  href: shipping-discount.md
                 - name: Konfigurere gave sammen med købskampagner
                   href: gift-with-purchase.md
                 - name: Konfigurere kuponer
@@ -714,6 +720,10 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Præcis pris- og rabatberegning for forsinkelse
                   href: delayed-price-calculation.md
+                - name: Prissætningsfunktioner i POS
+                  href: pos-pricing-functions.md
+                - name: API'er til Commerce-prisfastsættelse
+                  href: pricing-apis.md
             - name: Anbefalinger
               items:
                 - name: Oversigt over produktanbefalinger
@@ -872,13 +882,15 @@
               href: async-customer-mode.md
             - name: Konvertere asynkrone kunder til synkrone kunder
               href: convert-async-to-sync.md
+            - name: Ofte stillede spørgsmål om asynkron oprettelsestilstand for kunde
+              href: async-customer-mode-faq.md
             - name: Kundeaktiviteter
               items:
                 - name: 'Kundeaktiviteter, oversigt'
                   href: clienteling-overview.md
-            - name: Loyalitet
+            - name: Fordelskunde
               items:
-                - name: Oversigt over loyalitet
+                - name: Oversigt over fordelskunde
                   href: set-up-customer-loyalty-program.md
                 - name: Definere fordelskundeprogrammer
                   href: tasks/define-loyalty-programs.md
@@ -1252,6 +1264,10 @@
                       href: product-collection-module-overview.md
                     - name: Modul til hurtig visning
                       href: quick-view-module.md
+                - name: Produktsammenligningsmoduler
+                  items:
+                    - name: Produktsammenligningsmoduler
+                      href: product-comparison-modules.md
                 - name: Navigationsmoduler
                   items:
                     - name: Brødkrummemodul
@@ -1272,7 +1288,11 @@
                   items:
                     - name: Modul til cookie-samtykke
                       href: cookie-consent-module.md
-            - name: Søg
+                - name: Chatmoduler
+                  items:
+                    - name: Commerce-chatmodul
+                      href: commerce-chat-module.md
+            - name: Søge
               items:
                 - name: Oversigt over standardlandingsside for kategori og side for søgeresultater
                   href: category-search-page-overview.md
@@ -1402,11 +1422,9 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
             - name: Østrig
               items:
-                - name: Prøve på integration af regnskabsregistreringsservice i Østrig
+                - name: Eksempel på integration af regnskabsregistreringsservice i Østrig
                   href: localizations/emea-aut-fi-sample.md
-                - name: Retningslinjer for udrulning af kasseapparater for Østrig
-                  href: localizations/emea-aut-deployment.md
-                - name: Retningslinjer for udrulning for prøve på regnskabsintegration i Østrig (ældre)
+                - name: Retningslinjer for installation for eksempel på regnskabsintegration i Østrig (ældre)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
@@ -1462,7 +1480,7 @@
                   href: localizations/emea-fra-fi-deployment.md
                 - name: Kontrollere regnskabsarkiv og dataintegritet
                   href: localizations/emea-fra-fiscal-archive.md
-                - name: Overføre fra tidligere funktioner for Frankrig
+                - name: Overføre fra ældre funktioner for Frankrig
                   href: localizations/emea-fra-fi-migration.md
                 - name: Retningslinjer for installation af kasseapparater (ældre)
                   href: localizations/emea-fra-deployment.md
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for installation af kasseapparater
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Overføre fra ældre funktioner for Norge
+                  href: localizations/emea-nor-fi-migration.md
                 - name: Retningslinjer for installation af kasseapparater (ældre)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Rusland
@@ -1764,6 +1784,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
                         - name: Split
@@ -2482,7 +2504,7 @@
               items:
                 - name: Oversigt over Commerce SDK
                   items:
-                    - name: Prøver og referencepakker
+                    - name: Hent Commerce SDK-prøver og referencepakker
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Ældre overflytning af Retail SDK
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

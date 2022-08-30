@@ -2,7 +2,7 @@
 title: Autoriser ordreforslag
 description: Denne artikel indeholder en forklaring på, hvordan du kan autorisere ordreforslag. Når ordreforslag autoriseres, bliver de til faktiske indkøbsordrer, overførelsesordrer eller produktionsordrer.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857512"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335339"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -37,19 +37,21 @@ De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallati
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallel autorisation af ordreforslag
 
-Parallel autorisation gør det muligt at gennemføre autorisationsprocessen hurtigere ved at parallelisere den over flere tråde. Denne metode kan være nyttig, når mange ordreforslag skal autoriseres. Hvis du vil bruge denne funktion, skal funktionen *Parallel autorisation af ordreforslag* være slået til for systemet. Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan du slå denne funktion til eller fra ved at gå til arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søge efter funktionen *Parallel autorisation af ordreforslag*.
+Parallel autorisation gør det muligt at gennemføre autorisationsprocessen hurtigere ved at parallelisere den over flere tråde. Denne metode kan være nyttig, når mange ordreforslag skal autoriseres. Hvis du vil bruge denne funktion, skal funktionen *Parallel autorisation af ordreforslag* være slået til for systemet. 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisation af ordreforslag med filtrering
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan du slå denne funktion til eller fra ved at gå til arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søge efter funktionen *Parallel autorisation af ordreforslag*.
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>Slå autorisation af ordreforslag med filtrering til eller fra
 
 Med autorisation af ordreforslag med filtrering kan du definere logiske kriterier for valg af, hvilke ordreforslag der skal autoriseres. Du kan også få vist, hvilke ordreforslag der er valgt, køre processen i baggrunden og/eller planlægge den som et batchjob.
 
-Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Autorisation af ordreforslag med filtrering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Autorisation af ordreforslag med filtrering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivere automatisk autorisation for Planlægningsoptimering
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>Slå automatisk autorisation for Planlægningsoptimering til eller fra
 
 Med automatisk autorisation kan du autorisere ordreforslag som en del af varedisponeringsprocessen inden for tidsgrænsen for autorisation. Automatisk autorisation understøttes altid i det planlægningsprogram, der er indbygget Supply Chain Management. Hvis du også vil bruge Planlægningsoptimering, skal du aktivere funktionen.
 
-Du kan gøre denne funktion tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Automatisk autorisation for Planlægningsoptimering*. (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret.)
+Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan du slå denne funktion til eller fra ved at gå til arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søge efter funktionen *Automatisk autorisation til planlægningsoptimering*.
 
 ## <a name="manually-firm-planned-orders"></a>Autorisere ordreforslag manuelt
 
@@ -67,8 +69,8 @@ Hvis du vil autorisere ordreforslag manuelt, kan du finde og vælge de ordrefors
 
     - **Opdater markering** – Vælg den politik for lagermarkering, der skal bruges ved autorisation af ordreforslag.
     - **Stop autorisation, hvis der opstår en fejl** – Angiv denne indstilling til *Ja*, hvis du ikke længere vil autorisere alle valgte ordreforlag, hvis der opstår en fejl i et af dem. Denne indstilling skal være angivet til *Nej*, hvis indstillingen **Paralleliser autorisation** er angivet til *Ja*.
-    - **Paralleliser autorisation** – Denne indstilling er kun tilgængelig, hvis funktionen [*Parallel autorisation af ordreforslag*](#enable-features) er aktiveret i systemet, og hvis du har valgt to eller flere ordreforslag til autorisation. Angiv det til *Ja*, hvis du vil køre autorisationsprocesserne parallelt. Parallel autorisation kan være med til at forbedre ydeevnen.
-    - **Antal tråde** – Denne indstilling er kun tilgængelig, hvis funktionen [*Parallel autorisation af ordreforslag*](#enable-features) er aktiveret i systemet, og hvis du har angivet **Paralleliser autorisation** til *Ja*. Angiv det antal tråde, der skal bruges til parallelisering af autorisationsprocessen. Du kan få flere oplysninger om, hvordan du bruger denne indstilling i varedisponeringen, i [Forbedre ydeevne for varedisponering](../master-planning-performance.md#number-of-threads).
+    - **Paralleliser autorisation** – Denne indstilling er kun tilgængelig, hvis funktionen [*Parallel autorisation af ordreforslag*](#enable-features) er aktiveret for systemet, og hvis du har valgt to eller flere ordreforslag til autorisation. Angiv det til *Ja*, hvis du vil køre autorisationsprocesserne parallelt. Parallel autorisation kan være med til at forbedre ydeevnen.
+    - **Antal tråde** – Denne indstilling er kun tilgængelig, hvis funktionen [*Parallel autorisation af ordreforslag*](#enable-features) er aktiveret for systemet, og hvis du har angivet **Paralleliser autorisation** til *Ja*. Angiv det antal tråde, der skal bruges til parallelisering af autorisationsprocessen. Du kan få flere oplysninger om, hvordan du bruger denne indstilling i varedisponeringen, i [Forbedre ydeevne for varedisponering](../master-planning-performance.md#number-of-threads).
 
         > [!NOTE]
         > En værdi på *0* (nul) for feltet **Antal tråde** øger kørselstiden for varedisponeringen. Det anbefales derfor, at du altid angiver dette felt til en værdi, der er mere end 0.
@@ -97,7 +99,7 @@ Ved automatisk autorisation kan du autorisere ordreforslag som del af varedispon
 > Afledte ordrer (dvs. indkøbsordrer for underleverandører), som er autoriserede, har statussen *Til gennemsyn*, hvis sporing af ændringer er aktiveret.
 
 > [!IMPORTANT]
-> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret i systemet som beskrevet i starten af denne artikel. Automatisk autorisation kan altid bruges med det indbyggede varedisponeringsprogram.
+> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret for systemet som beskrevet i starten af denne artikel. Automatisk autorisation kan altid bruges med det indbyggede varedisponeringsprogram.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisation med Planlægningsoptimering vs. det indbyggede planlægningsprogram
 
@@ -130,7 +132,7 @@ Med forespørgselsbaseret autorisation kan du planlægge autorisation ud fra kri
 Du kan kombinere automatisk autorisation med forespørgselsbaseret autorisation. Et forespørgselsbaseret autorisationsjob har f.eks. en fremskrevet tidsgrænse, der er længere end tidsgrænsent for en tilsvarende konfiguration af automatisk auto-autorisation af varedisponering. Derfor behandler det forespørgselsbaserede autorisationsjob ordreforslag, inden den automatiske autorisation startes. Du kan bruge denne funktion til at planlægge ordrer for bestemte leverandører på en anden måde end ordrer på lignende produkter fra andre leverandører.
 
 > [!IMPORTANT]
-> Inden den funktion, der beskrives i denne artikel, kan bruges sammen med funktionen [*Autorisation af ordreforslag med filtrering*](#enable-features), skal den aktiveres i systemet som beskrevet i starten af dette emne.
+> Inden den funktion, der beskrives i denne artikel, kan bruges sammen med funktionen [*Autorisation af ordreforslag med filtrering*](#enable-features), skal den aktiveres for systemet som beskrevet i starten af dette emne.
 
 Hvis du vil autorisere et ordreforslag ved hjælp af den forespørgselsbaserede autorisationsproces, skal du benytte følgende fremgangsmåde.
 

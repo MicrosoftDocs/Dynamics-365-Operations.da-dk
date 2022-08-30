@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 description: Denne artikel beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287617"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337590"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Fjernede eller udfasede funktioner i Dynamics 365 Commerce
 
@@ -33,6 +33,38 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.29-frigivelsen
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Commerce-parameterindstilling - Tillad prisjusteringer at øge produktprisen
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi havde denne indstilling til at kontrollere, om prisjusteringsfunktionen tillader prisstigning på produktprisen. Når denne parameter deaktiveres, når organisationer med funktionen til prisjustering kun kan angive et produkts enhedspris, der er lavere end basisprisen og samhandelsaftalens salgspris. Denne indstilling udfases, fordi funktionen til prisjustering er opdateret, så den understøtter tovejs-justeringer (forøgelse eller reduktion) ud af feltet. |
+| **Erstattet af en anden funktion?**   | Nej |
+| **Produktområder, der er berørt**         | Priser og rabatter |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfaset: Denne indstilling er som standard slået til, da Commerce version 10.0.29 og vil blive fjernet i oktober 2023. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Indstilling af handelsparametre – Aktiver prisrapport for detailbutik
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi havde denne indstilling til at styre, om prisrapportfunktionen er tilgængelig og kan bruges i formularen Butikskonfiguration. Denne indstilling udfases, fordi formularen Butikskonfiguration er opdateret, så prisrapportfunktionen altid vises som standardfunktion. |
+| **Erstattet af en anden funktion?**   | Nej |
+| **Produktområder, der er berørt**         | Priser og rabatter |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfaset: Denne indstilling fjernes i oktober 2023. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Indstilling af handelsparametre – Brug dags dato til at beregne priser
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Prissætningsprogrammet i Supply Chain Management understøtter prisberegningen baseret på "ønsket afsendelsesdato" og "ønsket modtagelsesdato" sammen med dags dato. Programmet for Commerce-prissætning understøtter kun prisberegning baseret på dags dato. Til kunder, der bruger både SCM- og commerce-egenskaber, har vi angivet denne indstilling og anbefaler, at kunder altid angiver den til **Ja**, så de to prissætningsfunktioner kan arbejde sammen. Denne indstilling frarådes, fordi den ikke ændrer beregningsmåden og er overflødig. |
+| **Erstattet af en anden funktion?**   | Nej |
+| **Produktområder, der er berørt**         | Priser og rabatter |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfaset: Denne indstilling er som standard slået til, da Commerce version 10.0.29 og vil blive fjernet i oktober 2023. |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>Udfasning af funktion træder i kraft i juli 2022
 
 ### <a name="commerce-analytics-preview"></a>Commerce-analyser (forhåndsversion)
@@ -44,21 +76,6 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Produktområder, der er berørt**         | Commerce-analyser (forhåndsversion) |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Vi vil se på deaktivering af denne funktion senest 30. august 2022.  Fra denne dato frem vil der ikke ske opdatering i de aktuelle Power BI-rapporter, der leveres af Commerce Analytics (Forhåndsversion).     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.25-frigivelsen
-
-### <a name="modern-point-of-sale-mpos"></a>MPOS (Modern Point-of-Sale)
-
-MPOS-programmet (Modern Point of Sale) frarådes i commerce version 10.0.25-versionen og erstattes med Store Commerce-appen.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | I butiksapps kan du få hjælp ved Dynamics 365 Commerce-tilbuddet om omnikanal. Vi ønsker løbende at levere tidssvarende og intelligente butikserfaringer og til yderligere at færdiggøre vores løsning, ved at udrulle nye sæt ændringer, der i høj grad vil forbedre it-operationer og brugererfaringer med vores eksisterende programmer i butikken i Windows. Det nye Store Commerce-program er en teknologiopgradering af det eksisterende MPOS. Den giver forbedret ydeevne, pålidelighed og langsigtet understøttelse på Windows-platformen og overflødigt behov for at ompakke appen med hver opdatering. |
-| **Erstattet af en anden funktion?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Produktområder, der er berørt**         | MPOS (Modern Point-of-Sale) |
-| **Installationsindstilling**              | Alt |
-| **Status**                         | Udfaset: Fra og med versionen af Commerce version 10.0.25 fjernes den MPOS-installationsprogrammet, der er leveret via VMs (virtual machines– LCS) i 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller udfasede funktioner i Commerce 10.0.21-frigivelsen
 
@@ -198,7 +215,7 @@ Udvikling af POS-udvidelse ved hjælp af ModernPos.sln, CloudPos.sln, POS.Extens
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Nye optimerede API'er er oprettet for at erstatte GetProductAvailabilities- og GetAvailableInventoryNearby-API'erne. |
-| **Erstattet af en anden funktion?**   | Ja: Det erstattes af GetEstimatedAvailability- og GetEstimatedProductWarehouseAvailability-API'er. |
+| **Erstattet af en anden funktion?**   | Ja: Det erstattes af GetEstimatedAvailabilty- og GetEstimatedProductWarehouseAvailability-API'er. |
 | **Produktområder, der er berørt**         | SDK til e-handelsprogrammer |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Frarådes: Fra og med version 10.0.7 foretages der ikke længere tekniske investeringer for GetProductAvailabilities og GetAvailableInventoryNearby. Organisationer, der bruger disse API'er i deres e-handelsinstallationer, skal konvertere til de nye GetEstimatedAvailability- og GetEstimatedProductWarehouseAvailability-API'er og aktivere [funktionen Beregning af optimeret produkttilgængelighed](../calculated-inventory-retail-channels.md).  |

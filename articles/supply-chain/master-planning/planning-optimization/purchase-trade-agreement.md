@@ -2,7 +2,7 @@
 title: Varedisponering med handelsaftaler om indkøb
 description: Denne artikel beskriver, hvordan planlægningsoptimering kan finde leverandøren og/eller gennemløbstiden for et ordreforslag baseret på den bedste pris eller leveringstid, der er fundet i handelsaftaler om indkøb.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873747"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335219"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Varedisponering med handelsaftaler om indkøb
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873747"
 
 Denne artikel beskriver, hvordan planlægningsoptimering kan finde leverandøren og/eller leveringstiden for et ordreforslag baseret på den bedste pris eller leveringstid, der er fundet blandt alle handelsaftaler om indkøb, som er blevet specificeret for et givet produkt.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Aktivér funktionen Handelsaftaler om indkøb til planlægningsoptimering
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Slå funktionen Handelsaftaler om indkøb til planlægningsoptimering til eller fra
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** *Varedisponering*
-- **Funktionsnavn:** *Handelsaftaler om indkøb til planlægningeoptimering*
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Samhandelsaftaler for indkøb til planlægningsoptimering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Forbered systemet til evaluering af handelsaftaler om indkøb under varedisponering
 

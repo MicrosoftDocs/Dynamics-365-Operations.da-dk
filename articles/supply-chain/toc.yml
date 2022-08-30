@@ -12,6 +12,8 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (august 2022)
                   href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (juli 2022)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
                 - name: Få besked om serviceopdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+                - name: Proaktive kvalitetsopdateringer
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
                 - name: Automatisering af dataopgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
                 - name: Levere ISV-løsninger ved brug af One Version
@@ -330,6 +334,8 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Start her med elektronisk fakturering for Egypten
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                        - name: Start her med elektronisk fakturering for Frankrig
+                          href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Start her med elektronisk fakturering for Mexico
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Start her med elektronisk fakturering for Saudi-Arabien
@@ -1053,6 +1059,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
                         - name: Split
@@ -1763,6 +1771,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanlægning
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Varedisponering for produkter med begrænset hyldelevetid
+                  href: master-planning/planning-optimization/shelf-life.md
                 - name: Planlægning med ubegrænset kapacitet
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Planlægning med ressourcevalg baseret på egenskab
@@ -1809,6 +1819,8 @@
                   href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: Handlingsmeddelelser
                   href: master-planning/action-messages.md
+                - name: Beregne leveringsdatoer for salgsordrer ved hjælp af LE
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Fejlfinde planlægningsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Udvidelse til planlægningsoptimering
@@ -1879,6 +1891,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Oplysninger om nettobehov og udligning med indbygger varedisponering
                   href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Automatisering af forsyning af levering til ordre
+                  href: master-planning/make-to-order-supply-automation.md
             - name: Budgettering
               items:
                 - name: Behovs- og forsyningsprognoser
@@ -2467,6 +2481,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Administrere underleverandørarbejde i produktion
               href: production-control/manage-subcontract-work-production.md
+            - name: Gør færdigvarer fysisk tilgængelige før bogføring i kladder
+              href: production-control/deferred-posting.md
             - name: Samlet nummerserie for job-id'er
               href: production-control/unified-job-ids.md
             - name: Aktivere procesautomatiseringsflow for at oprette kvalitetsordrer
@@ -2809,6 +2825,8 @@
               items:
                 - name: Ordretilsagn
                   href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Beregne leveringsdatoer for salgsordrer ved hjælp af LE
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Ordreindtastningsfrister
                   href: sales-marketing/order-entry-deadlines.md
                 - name: Leveringsalternativer
@@ -2945,6 +2963,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Oprette en ny samhandelsaftale
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Genberegn linjenettobeløb ved import
+              href: sales-marketing/calc-line-net-amounts-import.md
             - name: Planlæg oprydning af data i salgshistorik
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Servicestyring
@@ -3387,8 +3407,10 @@
                       href: warehousing/piece-picking-confirmation.md
                     - name: Emballage og gebyrer
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: Konfigurere manuel emballering (kun februar og maj 2016)
-                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Pak containere til forsendelse
+                      href: warehousing/packing-containers.md
+                    - name: Pakkearbejde til pakning af udgående containere og behandling af forsendelser
+                      href: warehousing/packing-work.md
                     - name: Konfigurere vareomfordeling for kort plukning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Annullere lagerstedsarbejde for undtagelseshåndtering
@@ -3545,6 +3567,8 @@
                       href: warehousing/warehouse-app-promoted-fields.md
                     - name: Konfigurere omveje til trin i menupunkter med mobilenheder
                       href: warehousing/warehouse-app-detours.md
+                    - name: Forespørge på data ved brug af omveje i Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-data-inquiry.md
                     - name: Modtage id via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre

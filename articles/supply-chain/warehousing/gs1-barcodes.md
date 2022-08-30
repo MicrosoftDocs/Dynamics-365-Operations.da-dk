@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 34f74c2a889b3a659831897897e2086b277256e0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: e1c1c274054ed1c14c9b3fc0595baa029bf3124d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219772"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336359"
 ---
 # <a name="gs1-bar-codes"></a>GS1-stregkoder
 
@@ -108,7 +108,7 @@ Når dataene er blevet registreret fra stregkoden, bliver de indkodet i flowstyr
 
 ## <a name="turn-on-the-gs1-feature"></a>Slå GS1-funktionen til
 
-Før du kan bruge denne funktion, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Warehouse Management*
 - **Funktionsnavn:** *Scan GS1-stregkoder*
@@ -134,7 +134,7 @@ Benyt følgende fremgangsmåde for at angive globale GS1-indstillinger.
 
     - **FNC1-tegn**, **Datamatrix-tegn** og **QR-kodetegn** – Angiv tegn, der skal fortolkes som præfiks for hver type GS1-stregkode.
     - **Gruppeseparator** – Angiv det tegn, der erstatter ASCII-gruppeseparatortegnet.
-    - **Maks. længde på id** – Angiv det maksimale antal tegn, der er tilladt for program-id'et. Dette felt er ikke obligatorisk, hvis funktionen *Udvidet parser til GS1* er aktiveret i systemet.
+    - **Maks. længde på id** – Angiv det maksimale antal tegn, der er tilladt for program-id'et. Dette felt er ikke obligatorisk, hvis funktionen *Udvidet parser til GS1* er aktiveret for systemet.
 
 > [!NOTE]
 > Præfikser fortæller systemet, at en stregkode er kodet ifølge GS1-standarden. Der kan bruges op til tre præfikser (**FNC1-tegn**, **Datamatrix-tegn** og **QR-kodetegn**) samtidigt og til forskellige formål.

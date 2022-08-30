@@ -2,7 +2,7 @@
 title: Sikkerhedsmargener
 description: Denne artikel beskriver, hvordan sikkerhedsmargener kan bruges sammen med tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854233"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335189"
 ---
 # <a name="safety-margins"></a>Sikkerhedsmargener
 
@@ -79,12 +79,9 @@ Bemærk, at de relaterede udbud og efterspørgselskrav ikke stemmer overens, nå
 
 ## <a name="set-up-safety-margins"></a>Angive sikkerhedsmargener
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Slå sikkerhedsmargener til i Funktionsstyring
+### <a name="turn-safety-margins-on-or-off"></a>Slå sikkerhedsmargen til eller fra
 
-Før du kan bruge denne funktion sammen med Planlægningsoptimering, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
-
-- **Modul:** _Varedisponering_
-- **Funktionsnavn:** _Margener for planlægningsoptimering_
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Margener for Planlægningsoptimering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="define-safety-margins"></a>Definere sikkerhedsmargener
 
