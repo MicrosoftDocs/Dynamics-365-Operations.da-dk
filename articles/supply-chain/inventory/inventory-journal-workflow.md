@@ -2,7 +2,7 @@
 title: Arbejdsprocesser for godkendelse af lagerkladde
 description: Denne artikel beskriver, hvordan du kan konfigurere og bruge arbejdsprocesser for godkendelse af lagerkladder til forskellige typer fysiske lagertransaktioner. Arbejdsprocesser for lagerkladder sikrer, at kun godkendte lagerkladder kan bogføres på transaktioner.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873979"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334649"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Arbejdsprocesser for godkendelse af lagerkladde
 
@@ -29,12 +29,9 @@ Denne artikel beskriver, hvordan du kan konfigurere og bruge arbejdsprocesser fo
 > [!NOTE]
 > Godkendelsesarbejdsprocesser for lagerkladder gælder kun for transaktioner, der er registreret ved hjælp af modulet Lagerstyring. De fungerer ikke med de lagerkladder, der udløses fra modulet Lokationsstyring.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funktionen til arbejdsgange for godkendelse af lagerkladde
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Slå funktionen til arbejdsgange for godkendelse af lagerkladde til eller fra
 
-Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Administratorer kan bruge siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere eller deaktivere den, hvis det er nødvendigt. Her er funktionen angivet som:
-
-- **Modul:** *Under Lager- og lokationsstyring*
-- **Funktionsnavn:** *Arbejdsgang til godkendelse af lagerkladder*
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.21 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Arbejdsgang for godkendelse af lagerkladde* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Oprette dine arbejdsprocesser for godkendelse af lagerkladder
 

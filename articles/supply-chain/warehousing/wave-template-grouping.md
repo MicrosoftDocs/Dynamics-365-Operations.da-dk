@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0f0419f1a109f043cb1af6a575704c24420639f1
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: a48e6a81299badf4b811e1cf905beb06099e5a24
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218908"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335969"
 ---
 # <a name="wave-template-grouping"></a>Bølgeskabelongruppering
 
@@ -31,7 +31,7 @@ Gruppering af bølgeskabeloner gør, at systemet kan bruge opsætninger af [bøg
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>Slå funktionen til gruppering af bølgeskabeloner til
 
-Før du kan bruge funktionen *Gruppering af bølgeskabeloner*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Gruppering af bølgeskabeloner*, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Gruppering af bølgeskabeloner*

@@ -2,27 +2,28 @@
 title: Eksempel på integration af regnskabsregistreringsservice i Tyskland
 description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Tyskland i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-05-29
-ms.openlocfilehash: 40f2b7ece62c495e4a719121019070a9961fa915
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c3fdc0c378ad57300213357eccd50d817e06789a
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280300"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313935"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Eksempel på integration af regnskabsregistreringsservice i Tyskland
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Tyskland i Microsoft Dynamics 365 Commerce.
 
-For at opfylde lokale regnskabsmæssige krav til kasseapparater i Tyskland omfatter Microsoft Dynamics 365 Commerce-funktionaliteten for Tyskland en eksempelintegration af POS med en ekstern tjeneste til regnskabsregistrering. Eksemplet udvider [funktionen til regnskabsintegration](fiscal-integration-for-retail-channel.md). Den er baseret på [EFR-løsningen (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) fra [EFSTA](https://www.efsta.eu/de/) og giver mulighed for kommunikation med EFR-tjenesten via HTTPS-protokollen. Tjenesten EFR skal være have enten Retail Hardwarestation eller en separat computer som vært, der kan oprettes forbindelse til fra hardwarestationen. Eksemplet findes i form af kildekode og er en del af Retail SDK (Software Development Kit).
+For at opfylde lokale regnskabsmæssige krav til kasseapparater i Tyskland omfatter Dynamics 365 Commerce-funktionaliteten for Tyskland en eksempelintegration af POS med en ekstern tjeneste til regnskabsregistrering. Eksemplet udvider [funktionen til regnskabsintegration](fiscal-integration-for-retail-channel.md). Den er baseret på [EFR-løsningen (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) fra [EFSTA](https://www.efsta.eu/de/) og giver mulighed for kommunikation med EFR-tjenesten via HTTPS-protokollen. Tjenesten EFR skal være have enten Retail Hardwarestation eller en separat computer som vært, der kan oprettes forbindelse til fra hardwarestationen. Eksemplet findes i form af kildekode og er en del af Commerce SDK (Software Development Kit).
 
 Microsoft frigiver ikke hardware, software eller dokumentation fra EFSTA. Du kan få oplysninger om, hvordan du henter EFR-løsningen og bruger den, ved at kontakte [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
 
@@ -163,7 +164,7 @@ Konfigurer POS-funktionalitetsprofiler. I oversigtspanelet **Kvitteringsnummerer
 
 Du kan konfigurere sprogteksten og brugerdefinerede felter, der bruges i POS-kvitteringsformaterne. Standardfirmaet for den bruger, der opretter kvitteringsopsætningen, skal være den samme juridiske enhed, hvor opsætningen af sprogtekster oprettes. Du kan også oprette de samme sprogtekster i både brugerens standardfirma og den juridiske enhed for den butik, som opsætningen oprettes for.
 
-På siden **Sprogtekst** kan du tilføje følgende poster for etiketterne i de brugerdefinerede felter til kvitteringslayout. Bemærk, at værdierne for **Sprog-id**, **Tekst-id** og **Tekst**, der vises i tabellen, kun er eksempler. Du kan nemt ændre dem, så de opfylder dine behov. Men de værdier for **Tekst-id**, du bruger, skal dog være entydige, og de skal være lig med eller større end 900001.
+På siden **Sprogtekst** kan du tilføje følgende poster for etiketterne i de brugerdefinerede felter til kvitteringslayout. Bemærk, at værdierne for **Sprog-id**, **Tekst-id** og **Tekst**, der vises i tabellen, kun er eksempler. Du kan ændre dem, så de opfylder dine behov. Men de værdier for **Tekst-id**, du bruger, skal dog være entydige, og de skal være lig med eller større end 900001.
 
 Føj følgende POS-etiketter til sektionen **POS** på siden **Sprogtekst**.
 
@@ -248,12 +249,10 @@ Du kan finde flere oplysninger om, hvordan du arbejder med kvitteringsformater, 
 
 ## <a name="set-up-fiscal-integration-for-germany"></a>Konfigurere regnskabsintegration for Tyskland
 
-Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\Efr** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) af en regnskabsdokumentudbyder, som er en udvidelse af Commerce Runtime (CRT), og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
+Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Commerce SDK. Eksemplet på POS-udvidelse findes i mappen **src\\FiscalIntegration\\Efr** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består af en regnskabsdokumentudbyder, som er en udvidelse af Commerce Runtime (CRT), og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Commerce SDK, finder du i [Download Commerce SDK-prøver og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [oprette en build-pipeline til den uafhængige emballage SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere (VM) i Microsoft Dynamics Lifecycle Services (LCS). Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md).
->
-> Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> Eksempel på integration af regnskabsregistreringstjeneste for Tyskland tilgængelig i Commerce Software Development Kit (SDK) pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere (VM) i Microsoft Dynamics Lifecycle Services (LCS). Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md).
 
 Fuldfør trinnene til opsætning af regnskabsintegration som beskrevet i [Konfigurere regnskabsintegration for Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -276,18 +275,16 @@ Hvis du vil aktivere registreringsprocessen, skal du følge disse trin for at ko
 1. Download konfigurationsfiler for regnskabsconnectoren og regnskabsdokumentudbyderen:
 
     1. Åbn lageret il [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion (f.eks. **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion.
     1. Åbn **src \> FiscalIntegration \> Efr**.
-    1. Hent konfigurationsfilen til regnskabsdokumentudbyderen på **Konfigurationer \> DocumentProviders \> DocumentProviderFiscalEFRSampleGermany.xml** (for eksempel [filen til frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleGermany.xml)).
-    1. Hent konfigurationsfilen til regnskabsconnectoren på **Konfigurationer \> Connectorer \> ConnectorEFRSample.xml** (for eksempel [filen til frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Hent konfigurationsfilen til regnskabsdokumentudbyderen på **Konfigurationer \> DocumentProviders \> DocumentProviderFiscalEFRSampleGermany.xml**.
+    1. Hent konfigurationsfilen til regnskabsconnectoren på **Konfigurationer \> Connectors \> ConnectorEFRSample.xml**.
 
-    > [!WARNING]
-    > På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Konfigurationsfilerne til dette eksempel på regnskabsintegration findes i følgende mapper i Retail SDK på en udvikler VM i LCS:
+    > [!NOTE]
+    > I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Konfigurationsfilerne til dette eksempel på regnskabsintegration findes i følgende mapper i Retail SDK på en udvikler VM i LCS:
     >
     > - **Konfigurationsfilen til regnskabsdokumentudbyder:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleGermany.xml
     > - **Konfigurationsfil til regnskabsconnector:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml
-    > 
-    > Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
 
 1. Gå til **Retail og Commerce \> Konfiguration af Headquarters \> Parametre \> Delte Commerce-parametre**. Under fanen **Generelt** skal du angive indstillingen **Aktivér regnskabsintegration** til **Ja**.
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**, og indlæs den konfigurationsfil til regnskabsdokumentudbyderen, du hentede tidligere.
@@ -297,7 +294,7 @@ Hvis du vil aktivere registreringsprocessen, skal du følge disse trin for at ko
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Regnskabsconnectorgrupper**. Opret en ny regnskabsconnector-gruppe for den funktionsprofil for connector, som du oprettede tidligere.
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Processer for regnskabsregistrering**. Opret en ny regnskabsregistreringsproces og et trin i processen til regnskabsregistrering, og vælg den regnskabsconnector-gruppe, du oprettede tidligere.
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Funktionalitetsprofiler**. Vælg en funktionalitetsprofil, der er knyttet til den butik, hvor registreringsprocessen skal aktiveres. Vælg den regnskabsregistreringsproces, du oprettede tidligere, i oversigtspanelet **Regnskabsregistreringsproces**.
-1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Hardwareprofiler**. Vælg en hardwareprofil, der er tilknyttet den hardwarestation, som bonprinteren skal være tilknyttet. Vælg den tekniske profil for connectoren, du oprettede tidligere, i oversigtspanelet **Eksterne regnskabsenheder**.
+1. Gå til **Retail og Commerce \> Konfiguration af kanal \> POS-opsætning \> POS-profiler \> Hardwareprofiler**. Vælg en hardwareprofil, der er tilknyttet den hardwarestation, som regnskabsregistreringstjenesten skal være tilknyttet. Vælg den tekniske profil for connectoren, du oprettede tidligere, i oversigtspanelet **Eksterne regnskabsenheder**.
 1. Åbn distributionsplanen (**Retail og Commerce \> Retail og Commerce IT \> Distributionsplan**), og vælg job **1070** og **1090** for at overføre data til kanaldatabasen.
 
 #### <a name="default-data-mapping"></a>Tilknytning af standarddata
@@ -364,16 +361,15 @@ Følgende indstillinger er inkluderet i konfigurationen af regnskabsconnectoren 
 
 ### <a name="configure-channel-components"></a>Konfigurere kanalkomponenter
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md).
->
-> Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> - Eksempel på integration af regnskabsregistreringstjeneste for Tyskland tilgængelig i Commerce Software Development Kit (SDK) pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md).
+> - Handelsprøver, der implementeres i dit miljø, opdateres ikke automatisk, når du anvender tjeneste- eller kvalitetsopdateringer på Commerce-komponenter. Du skal opdatere de påkrævede prøver manuelt.
 
 #### <a name="set-up-the-development-environment"></a>Konfigurere udviklingsmiljøet
 
 Følg disse trin for at konfigurere et udviklingsmiljø, så du kan teste og udvide eksemplet.
 
-1. Klon eller download lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion. Yderligere oplysninger finder du i [Hente Retail SDK-eksempler og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Klon eller download lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion. Yderligere oplysninger finder du i [Hente Commerce SDK-eksempler og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Åbn EFR-løsningen på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, og opbyg den.
 1. Installere Commerce Runtime-udvidelser:
 
@@ -425,10 +421,10 @@ Følg trinnene i [Konfigurere en build-pipeline til et eksempel på regnskabsint
 
 ## <a name="design-of-extensions"></a>Design af udvidelser
 
-Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\Efr** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) af en regnskabsdokumentudbyder, som er en udvidelse af CRT, og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
+Regnskabsintegrationstjenestens eksempel til Tyskland er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Commerce SDK. Eksemplet på POS-udvidelse findes i mappen **src\\FiscalIntegration\\Efr** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består af en regnskabsdokumentudbyder, som er en udvidelse af CRT, og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Commerce SDK, finder du i [Download Commerce SDK-prøver og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [oprette en build-pipeline til den uafhængige emballage SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md). Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> Eksempel på integration af regnskabsregistreringstjeneste for Tyskland tilgængelig i Commerce Software Development Kit (SDK) pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Tyskland (ældre)](emea-deu-fi-sample-sdk.md).
 
 ### <a name="crt-extension-design"></a>Design af CRT-udvidelse
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219562"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313877"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -46,6 +46,17 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Produktområder, der er berørt** | Applikation |
 | **Installationsindstilling** | Alt |
 | **Status** | Udfases: Efter april 2023 understøttes funktionen **Flytteordrer til lagerbeholdning, der har moms på flytteprisen** ikke længere med rettelser og sikkerhedsrettelser. Kunderne bliver bedt om at bruge den forbedrede funktion, [Ordrer til overførsler af lagerbeholdning for Indien](../../finance/localizations/apac-ind-stock-transfer.md). Efter oktober 2023 vil funktionen **Flytteordrer til lagerbeholdning, der har moms på flytteprisen** ikke længere være tilgængelig, og kunderne vil blive bedt om at gå til den forbedrede funktion. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Import og eksport af bankkontoudtog for positiv lønfil
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsagen til forældelsen/fjernelsen** |Erstattes af forbedret funktionalitet, importer bankkontoudtog, og eksporter positive lønfiler.| 
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Frarådet: XSLT-funktionalitet til import og eksport af filer vil ikke længere få understøttelse af rettelser og sikkerhedsrettelser. Kunderne bliver bedt om at bruge den forbedrede funktion: [Opret positive betalingsfiler ved at bruge elektronisk rapportering](../../finance/accounts-payable/set-up-positive-pay-er.md) og [Konfigurere avanceret import af bankafstemning ved hjælp af elektronisk rapportering](../../finance/accounts-payable/import-bai2-er.md). Efter september 2022 vil XSLT-funktionen ikke længere være tilgængelig, og kunderne vil blive bedt om at flytte til den forbedrede funktionalitet.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.26 udgaven
 

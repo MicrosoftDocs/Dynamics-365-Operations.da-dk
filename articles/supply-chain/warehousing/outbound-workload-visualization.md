@@ -2,7 +2,7 @@
 title: Visualisering af udgående arbejdsbyrde
 description: Denne artikel indeholder oplysninger om visualisering af udgående arbejdsbyrde. Denne funktion giver lagerchefer og tilsynsførende mulighed for at oprette brugerdefinerede arbejdsbyrdediagrammer, der kan bruges til at overvåge forløbet af det aktuelle arbejde og den mængde, der mangler. Lagerchefer kan oprette flere visninger og konfigurere automatisk opdatering efter behov.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851327"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334409"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering af udgående arbejdsbyrde
 
@@ -29,7 +29,7 @@ Denne funktion kan bruges til at spore status for plukarbejde. Funktionen er int
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Visualisering af udgående arbejdsbyrde
 
-Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Visualisering af udgående arbejdsbyrde* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Visualisering af udgående arbejdsbyrde* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Konfigurere visualiseringer af udgående arbejdsbyrde
 

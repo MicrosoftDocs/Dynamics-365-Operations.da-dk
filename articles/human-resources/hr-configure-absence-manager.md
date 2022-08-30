@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886096"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336926"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurere rollen Fraværsadministrator
 
->[!Important]
->De funktioner, der nævnes i denne artikel, er i øjeblikket tilgængelige for kunder med enkeltstående Dynamics 365 Human Resources. Nogle eller alle funktionerne vil være tilgængelige som en del af en fremtidig version af Finance-infrastrukturen efter Finance-frigivelse 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ I nogle organisationer administrerer personalechefer muligvis ikke orlov for der
 ## <a name="turn-on-the-feature"></a>Slå funktionen til
 
 1. I arbejdsområdet **Systemadministration** skal du vælge **Funktionsstyring**.
-
 2. Aktivér **Fraværsadministrator for at administrere orlov** under fanen **Funktionsstyring**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definere et brugerdefineret hierarki
@@ -45,37 +42,26 @@ I nogle organisationer administrerer personalechefer muligvis ikke orlov for der
 Funktionen for fraværsadministrator bruger et brugerdefineret hierarki, der skal konfigureres.
 
 1. Vælg **Stillingshierarkityper** i arbejdsområdet **Organisationsadministration**.
-
 2. Opret en stillingshierarkitype med navnet **Orlov**.
-
 3. Vælg **Parametre for orlov og fravær** under **Links** i arbejdsområdet **Orlov og fravær**.
-
 4. Vælg den hierarkitype **Orlov**, som du oprettede tidligere, på rullelisten **Fraværshierarki** under fanen **Generelt**. Denne tilknytning af orlovshierarki skal fuldføres for hver juridisk enhed, hvor funktionen til fraværsstyring anvendes.
 
 Når hierarkitypen er defineret, skal stillingshierarkirapporten tildeles stillingen.
 
 1. Vælg **Alle stillinger** i arbejdsområdet **Organisationsadministration**.
-
 2. Vælg den stilling, som orlovshierarkiet skal føjes til.
-
 3. Vælg **Tilføj** på fanen **Relationer**.
-
 4. I feltet **Hierarkinavn** skal du vælge **Orlov**.
-
 5. Vælg en stilling i feltet **Rapporter til stilling**. Arbejderens navn udfyldes automatisk, når du har valgt en stilling.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Tildele rollen Fraværsadministrator til en bruger
 
 Rollen Fraværsadministrator skal tildeles medarbejdere, for at de kan godkende eller afvise orlovsanmodninger.
 
-1. Vælg **Links** i arbejdsområdet **Systemadministrator**.
-
+1. Vælg **Links** i arbejdsområdet **Systemadministration**.
 2. Vælg linket **Brugere** under **Brugere**.
-
 3. Vælg den bruger på listen, der skal tildeles rollen Fraværsadministrator.
-
 4. Vælg **Tildel roller** på fanen **Brugers rolle**.
-
 5. Vælg rollen **Fraværsadministrator** på listen. Vælg derefter **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Rollen Fraværsadministrator skal tildeles medarbejdere, for at de kan godkende 
 6. Når du har oprettet orlovshierarkiet, kan du få vist den ved at følge disse trin:
 
     1. Vælg **Stillingshierarki** i arbejdsområdet **Organisationsadministration**.
-    
     2. I feltet **Hierarkitype** skal du vælge **Orlov**.
 
 ## <a name="absence-manager-workspace"></a>Arbejdsområde for fraværsadministrator
@@ -115,9 +100,7 @@ Fraværsadministratorer kan godkende eller afvise anmodninger om fridage for med
 > Du kan finde flere oplysninger om oprettelse af arbejdsgangen for orlovsanmodninger i [Oprette en arbejdsgang for orlovsanmodning](hr-leave-and-absence-workflow.md).
 
 1. Vælg fanen **Orlovsstyring** i arbejdsområdet **Medarbejderselvbetjening**.
-
 2. Under fanen **Anmodninger om fravær** skal du vælge de anmodninger om fravær, som du vil gøre noget ved. Du kan vælge flere poster i denne listevisning.
-
 3. Brug handlingsknapperne øverst i gitteret til at godkende, afvise eller uddelegere anmodningen om fravær. 
 
 Alternativt kan brugeren også bruge feltet **Anmodninger om fravær** til venstre til at navigere til listen over alle arbejdselementer for anmodninger om fravær. 
@@ -130,9 +113,7 @@ Brugere i rollen Fraværsadministrator kan få vist anmodninger om fridage i kal
 > En systemadministrator skal konfigurere visningsindstillingerne i kalenderen for fraværsadministratorer. På siden **Parametre for orlov og fravær** under fanen **Kalender** findes der indstillinger til at skjule eller vise fødselsdage, fravær uden detaljer, fraværsanmodninger og ventende orlovsanmodninger. Der er også en indstilling til filtrering af kalendervisningen efter arbejdertype.
 
 1. I arbejdsområdet **Medarbejderselvbetjening** skal du vælge **Orlovsstyring** og derefter **Kalender for fraværsadministratorer**.
-
 2. Angiv de ønskede datoer i feltet **Dato**.
-
 3. Opdater visningsindstillingerne efter behov.
 
 Kalenderen for fraværsadministratorer viser alle poster for de medarbejdere, der rapporterer til fraværsadministratoren i orlovshierarkiet.

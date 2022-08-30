@@ -2,7 +2,7 @@
 title: Konfigurere hævede felter til trin i Warehouse Management-mobilappen
 description: Denne artikel beskriver, hvordan du kan hæve og fremhæve bestemte oplysninger for et hvilket som helst trin i opgaveflow for mobilappen Warehouse Management.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218968"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336059"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere hævede felter til trin i Warehouse Management-mobilappen
 
@@ -29,19 +29,12 @@ Denne artikel beskriver, hvordan du kan hæve og fremhæve bestemte oplysninger 
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivere hævede felter i systemet
 
-Før du kan konfigurere hævede felter, skal du gennemføre følgende procedure for at aktivere de påkrævede funktioner og generere de nødvendige feltnavne i mobilappen Warehouse Management.
+Hvis du kører Supply Chain Management version 10.0.28 eller tidligere, skal du, før du kan konfigurere hævede felter, gennemføre følgende procedure for at aktivere de påkrævede funktioner og generere de nødvendige feltnavne i mobilappen Warehouse Management. Hvis du kører Supply Chain Management version 10.0.29 eller senere, er funktionerne obligatoriske og kan ikke deaktiveres, så du kan springe denne procedure over.
 
-1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-1. Sørg for, at funktionen *Vejledninger til trin i lagerstedsapp* er aktiveret for systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Hævede felter i appen Warehouse*.
-1. Aktivér funktionen, der vises, på følgende måde:
-
-    - **Modul:** *Warehouse Management*
-    - **Funktionsnavn:** *Hævede felter i appen Warehouse*
-
-    Denne funktion er den funktion, der er beskrevet i denne artikel.
-
-1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
-1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
+1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**. (Se [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for at få yderligere oplysninger.)
+1. Sørg for, at funktionen *Vejledninger til trin i lagerstedsapp* er aktiveret for systemet. Denne funktion er en forudsætning for funktionen *Hævede felter i appen Warehouse*. Fra og med Supply Chain Management version 10.0.29 er den obligatorisk og kan ikke deaktiveres. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
+1. Sørg for, at funktionen *Hævede felter i lagerstedsapp* er aktiveret for systemet. Dette er den funktion, der er beskrevet i denne artikel. Fra og med Supply Chain Management version 10.0.29 er den obligatorisk og kan ikke deaktiveres.
+1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Gentag dette trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfigurere hævede felter fra en menuspecifik tilsidesættelse
 

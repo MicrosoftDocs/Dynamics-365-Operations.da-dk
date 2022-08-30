@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aeadca6f3c31d5d8c1ef9d334b0e531896ac99b1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885661"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336299"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Konfigurere et menupunkt for en mobilenhed for at oprette en pluklinjeoversigt
 
@@ -30,7 +30,7 @@ Administratorer kan konfigurere de enkelte menupunkter individuelt for at styre,
 
 ## <a name="turn-on-the-work-pick-line-overview-feature"></a>Aktivere funktionen Arbejdspluklinje, oversigt
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** _Lokationsstyring_
 - **Funktionsnavn:** _Arbejdspluklinje, oversigt_

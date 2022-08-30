@@ -2,7 +2,7 @@
 title: Forsinkelsestolerance (negative dage)
 description: Denne artikel indeholder oplysninger om beregning af forsinkelsestolerance, og hvordan det påvirker oprettelsen af ordreforslag i planlægningsoptimering.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219961"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335369"
 ---
 # <a name="delay-tolerance-negative-days"></a>Forsinkelsestolerance (negative dage)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219961"
 
 Funktionen til forsinkelsestolerance giver planlægningsoptimering mulighed for at overveje den værdi for **Negative dage**, der er angivet for disponeringsgrupper, varedisponering og/eller behovsplaner. Den bruges til at forlænge den forsinkelsestoleranceperiode, der anvendes under behovsplanlægning. På denne måde kan du undgå at oprette nye forsyningsordrer, hvis eksisterende forsyninger kan dække behovet med kort forsinkelse. Formålet med funktionen er at bestemme, om det giver mening at oprette en ny forsyningsordre for en given efterspørgsel.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funktionen i systemet
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Slå tolerancefunktioner til eller fra
 
 Du kan gøre funktionen til forsinkelsestolerance tilgængelig i systemet ved at gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner:
 
-- *Negative dage for planlægningsoptimering* – Denne funktion aktiverer indstillinger for negative dage for disponeringsgrupper og varedisponering.
+- *Negative dage for planlægningsoptimering* – Denne funktion aktiverer indstillinger for negative dage for disponeringsgrupper og varedisponering. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.
 - *Automatisering af forsyning af levering til ordre* – Denne funktion aktiverer negative dage for behovsplaner. (Du kan finde flere oplysninger i [Automatisering af forsyning af levering til ordre](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Forsinkelsestolerance i planlægningsoptimering

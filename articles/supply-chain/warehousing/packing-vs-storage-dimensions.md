@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: e2cfcc13f397f57413be1773683daf1f828beaf8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220236"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334439"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angive forskellige dimensioner for pakning og lagring
 
@@ -37,7 +37,7 @@ Denne artikel indeholder et eksempel på, hvordan denne funktion bruges.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Aktivere funktionen Emballageproduktdimensioner
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Emballageproduktdimensioner*

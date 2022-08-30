@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181118"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306197"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivere masterdataopslag til konfiguration af momsberegning 
 
@@ -108,7 +108,7 @@ Dataverse bruger det Azure AD-program, du har oprettet til at ringe til programm
     - **Udbyder** - Angiv dette felt til **NonAAD**.
     - **E-mail** – Angiv **dataverse-integration** eller en anden værdi. (Værdien behøver ikke at være en gyldig e-mail-konto).
 
-3. Tildel sikkerhedsrollen **Virtuel CDS-enhedsprogram** til brugeren.
+3. Tildel sikkerhedsrollen **Dataverse Virtual-enhedsintegrationsapp** til brugeren.
 4. Fjern alle andre roller, herunder **systembruger**.
 5. Gå til **Systemadministration** \> **Opsætning** \> **Azure Active Directory-applikationer** for at registrere Dataverse. 
 6. Tilføj en række, og angiv derefter i feltet **Klient-id** den værdi for **applikations-id**, som du noterede tidligere.
@@ -199,17 +199,11 @@ Du kan finde flere oplysninger i [Aktivere virtuelle Microsoft Dataverse-enheder
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Konfigurer det tilknyttede program til momsberegning
 
-1. I RCS skal du åbne arbejdsområdet **Funktionsstyring** og aktivere følgende funktioner:
-
-    - Understøttelse af Dataverse-datakilder for elektronisk rapportering
-    - Understøttelse af Dataverse-datakilder i momstjenesten
-    - Globaliseringsfunktioner
-
-2. Gå til **Elektronisk rapportering**, og vælg **Tilsluttede applikationer** i sektionen **Relaterede links**.
+1. Gå til **Elektronisk rapportering**, og vælg **Tilsluttede applikationer** i sektionen **Relaterede links**.
 
     [![Tilsluttede applikationer.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Vælg **Ny** for at tilføje en post, og angiv følgende oplysninger.
+2. Vælg **Ny** for at tilføje en post, og angiv følgende oplysninger.
 
     - **Navn** – Angiv et navn.
     - **Type** – Vælg **Dataverse**.
@@ -217,12 +211,18 @@ Du kan finde flere oplysninger i [Aktivere virtuelle Microsoft Dataverse-enheder
     - **Lejer** – Angiv din lejer.
     - **Brugerdefineret URL-adresse** – Angiv din Dataverse URL, og tilføj **/api/data/v9.1**.
 
-4. Vælg **Kontroller forbindelsen**, og vælg derefter **Klik her i den dialogboks, der vises, for at oprette forbindelse til den valgte fjernapplikation**.
+3. Vælg **Kontroller forbindelsen**, og vælg derefter **Klik her i dialogboksen for at oprette forbindelse til den valgte fjernapplikation**.
 
     [![Kontrollere forbindelsen.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Sørg for, at du får modtager "Succes" meddelelse, der angiver, at forbindelsen blev oprettet.
+4. Sørg for, at du får modtager "Succes" meddelelse, der angiver, at forbindelsen blev oprettet.
 
     [![Meddelelse om fuldført.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. I RCS skal du åbne arbejdsområdet **Funktionsstyring** og aktivere følgende funktioner:
+
+    - Globaliseringsfunktioner
+    - Understøttelse af Dataverse-datakilder for elektronisk rapportering
+    - Understøttelse af Dataverse-datakilder i momstjenesten
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Importér og konfigurer Dataverse-konfigurationsmodeltilknytningen
 

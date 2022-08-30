@@ -2,7 +2,7 @@
 title: Integrere med produktionsudførelsessystemer fra tredjeparter
 description: Denne artikel forklarer, hvordan du kan integrere Microsoft Dynamics 365 Supply Chain Management med et MES-system (produktionsudførelsessystem fra tredjepart).
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 8629ef2581a114609d14999a3c1fc48b49c988e0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068025"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336209"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrere med produktionsudførelsessystemer fra tredjeparter
 
@@ -45,9 +45,7 @@ Før du kan bruge denne funktion, skal en administrator aktivere den i systemet 
     1. Markér afkrydsningsfeltet **Tid og fremmøde** på siden **Licenskonfiguration**.
     1. Slå vedligeholdelsestilstand fra som beskrevet under [Vedligeholdelsestilstand](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
-1. Aktivér funktionen, der vises på følgende måde (se også [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Modul:** *Produktionsstyring*
-    - **Funktionsnavn:** *Integration af produktionsudførelsessystem*
+1. Brug arbejdsområdet [til funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere integration af *systemet til produktionsudførelse*. (Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret.)
 
 ## <a name="processes-available-for-mes-integration"></a>Processer til MES-integration
 

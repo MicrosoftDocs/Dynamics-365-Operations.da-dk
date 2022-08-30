@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266392"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334739"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -74,10 +74,7 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 
 | Modul | Funktionsnavn | Ny funktionstilstand |
 | --- | --- | --- |
-| Aktivstyring | [Anvend regler for gruppering af arbejdsordrer, mens en vedligeholdelsesplan køres](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Obligatorisk |
 | Aktivstyring | [Funktion til aktivstyring af grænsefladen til produktionsudførelse](../production-control/production-floor-execution-configure.md) | Obligatorisk |
-| Aktivstyring | [Tællerbaserede forbedringer af vedligeholdelse](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Til som standard |
-| Aktivstyring | [Arbejdsordrefakturering](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Obligatorisk |
 | Omkostningsstyring | [Skift label til annullering ved lukning og regulering til tilbageførsel](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Obligatorisk |
 | Omkostningsstyring | Rydde op i oplysninger om styklisteberegning i krydsefterkalkulationsversioner | Obligatorisk |
 | Omkostningsstyring | [Sammenlign varepriser - lager](../cost-management/compare-item-price.md) | Obligatorisk |
@@ -102,7 +99,7 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 | Lager- og Warehouse management | Brug af måleenhed og enhedsantal i lagerkladder | Obligatorisk |
 | Lager- og Warehouse management | Låse lagerkladde op | Obligatorisk |
 | Fremstillingsvirksomhed | [Automatisk pluk af materialer, der er aktiveret til lagersted, til automatisk bogførte pluklister](whats-new-scm-10-0-23.md) | Generelt tilgængelig |
-| Fremstillingsvirksomhed | Aktivér visning af lagerdimensioner på materialelisten for produktionsruteoperationer | Til som standard |
+| Fremstillingsvirksomhed | Aktivér visning af lagerdimensioner på materialelisten for produktionsruteoperationer | Obligatorisk |
 | Fremstillingsvirksomhed | [Aktivere for at angive batch- og serienumre, når der færdigmeldes fra jobkortenheden](../production-control/report-finished-job-device.md) | Til som standard |
 | Fremstillingsvirksomhed | Forbedret pluk af fastvægtantal til produktion | Til som standard |
 | Fremstillingsvirksomhed | [Jobsøgning til grænsefladen til produktionen](../production-control/production-floor-execution-configure.md) | Obligatorisk |
@@ -127,20 +124,19 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 | Varedisponering | [Autorisation af ordreforslag med filtrering](../master-planning/planning-optimization/planned-order-firming.md) | Obligatorisk |
 | Varedisponering | [Produktionsordreforslag for planlægning af optimering](../master-planning/planning-optimization/production-planning.md) | Obligatorisk |
 | Varedisponering | [Samhandelsaftaler for indkøb til planlægningsoptimering](../master-planning/planning-optimization/purchase-trade-agreement.md) | Obligatorisk |
-| Varedisponering | Ressourceplanlægning med vedligeholdelse | Obligatorisk |
 | Varedisponering | [Gemte visninger for ordreforslag](saved-views-scm.md) | Obligatorisk |
 | Indkøb og forsyning | Gebyrer fra og til beløb på indkøbsordrer | Obligatorisk |
 | Indkøb og forsyning | Deaktivere knappen Nulstil for distribution af indkøbsrekvisition | Til som standard |
 | Indkøb og forsyning | [Aktivér nulstilling af indkøbsrelaterede arbejdsgange](whats-new-scm-10-0-20.md) | Til som standard |
 | Indkøb og forsyning | [Begræns antallet af indkøbsordrelinjer pr. batchopgave](whats-new-scm-10-0-27.md) | Til som standard |
 | Indkøb og forsyning | [Flet økonomiske dimensioner fra kreditoren med det aktive dimensionslink til økonomisk dimension på indkøbsordren](whats-new-scm-10-0-25.md) | Obligatorisk |
+| Indkøb og forsyning | [Bogfør registrerede antal lagerbaserede produkter og rester af ikke-lagerbaserede produkter for modtagelser og kreditorfakturaer](whats-new-scm-10-0-26.md) | Generelt tilgængelig |
 | Indkøb og forsyning | [Undgå overforbrug af generelle budgetreservationer, når der er flere indkøbsrekvisitioner i arbejdsgang](whats-new-scm-10-0-21.md) | Til som standard |
 | Indkøb og forsyning | [Ansvarlig part for købsaftale](../procurement/purchase-agreements.md) | Obligatorisk |
 | Indkøb og forsyning | [Gemte visninger af indkøbsordrer](saved-views-scm.md) | Obligatorisk |
 | Administration af produktoplysninger | Forbehandling af styklisterapporten for at undgå timeout | Obligatorisk |
 | Administration af produktoplysninger | Økonomiske standarddimensioner separat ved brug af vareskabeloner | Obligatorisk |
 | Administration af produktoplysninger | Aktivér produktdimensionsgrupper for vareskabeloner | Obligatorisk |
-| Administration af produktoplysninger | [Forbedret attributnedarvning for Administration af tekniske ændringer](../engineering-change-management/engineering-attributes-and-search.md) | Obligatorisk |
 | Administration af produktoplysninger | Forbedringer af vare-stregkodeobjekt | Obligatorisk |
 | Administration af produktoplysninger | Regenerer produktvariantnavne baseret på nomenklatur | Obligatorisk |
 | Administration af produktoplysninger | [Gemte visninger af frigivne produkter](saved-views-scm.md) | Obligatorisk |
@@ -161,27 +157,30 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 | Salg og marketing | [Salgsordrebekræftelse med et enkelt klik](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Obligatorisk |
 | Transportstyring | Tillad fjernelse af tilknytning mellem fragtfakturaer og fragtfakturalinjer i fraværet af en bogført kreditorfakturakladde | Til som standard |
 | Transportstyring | [Aktivér oprettelse af en kreditorfakturakladde, når en fragtregning kasseres](whats-new-scm-10-0-20.md) | Til som standard |
-| Transportstyring | [Forsendelse af lille pakke](../warehousing/small-parcel-shipping.md) | Til som standard |
+| Transportstyring | [Forsendelse af lille pakke](../warehousing/small-parcel-shipping.md) | Obligatorisk |
 | Transportstyring | [USMCA-certificering af oprindelsesdokument](../transportation/usmca-certification-of-origin.md) | Til som standard |
 | Warehouse management | [Flere lokationszoner](../warehousing/additional-location-zones.md) | Obligatorisk |
 | Warehouse management | [Annuller arbejde](../warehousing/cancel-warehouse-work.md) | Obligatorisk |
-| Warehouse management | [Konsolider forsendelse](../warehousing/configure-shipment-consolidation-policies.md) | Til som standard |
+| Warehouse management | [Konsolider forsendelse](../warehousing/configure-shipment-consolidation-policies.md) | Obligatorisk |
 | Warehouse management | [Opret, og behandl overførselsordrer fra lagersteds-appen](../warehousing/create-transfer-order-from-warehouse-app.md) | Obligatorisk |
 | Warehouse management | Skabeloner til cross-docking med lokationsvejledninger | Til som standard |
-| Warehouse management | [Afkobl læg på lager-arbejde fra ASN'er](whats-new-scm-10-0-21.md) | Til som standard |
-| Warehouse management | [Udskudte læg på lager-handlinger](../warehousing/deferred-processing-manual-inventory-movement.md) | Til som standard |
+| Warehouse management | [Afkobl læg på lager-arbejde fra ASN'er](whats-new-scm-10-0-21.md) | Obligatorisk |
+| Warehouse management | [Udskudte læg på lager-handlinger](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatorisk |
 | Warehouse management | Udskudt læg-på-lager – container | Til som standard |
 | Warehouse management | Udskudt læg-på-lager behandling – aktivér for overvågningsskabelonfunktion med udløserhændelse angivet til Tidligere | Obligatorisk |
 | Warehouse management | [Deaktiver forventede tilgange fra kvalitetsordrer, der vælger spærret lager](../inventory/inventory-blocking.md) | Til som standard |
 | Warehouse management | Aktivér hurtig validering for mobilenheder til lagersted | Obligatorisk |
-| Warehouse management | [Fleksibel reservation af dimension på lagerstedsniveau](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Til som standard |
-| Warehouse management | [Fleksibel ordrebekræftet id-reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Til som standard |
-| Warehouse management | [Visualisering af udgående arbejdsbyrde](../warehousing/outbound-workload-visualization.md) | Obligatorisk |
+| Warehouse management | [Udvidet parser til GS1-stregkoder](../warehousing/gs1-barcodes.md) | Generelt tilgængelig |
+| Warehouse management | [Fleksibel ordrebekræftet id-reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisk |
+| Warehouse management | [Fleksibel reservation af dimension på lagerstedsniveau](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisk |
 | Warehouse management | [Udnyttelse af varekonsolideringslokation](../warehousing/item-consolidation-location-utilization.md) | Til som standard |
 | Warehouse management | Historik for modtagelse af nummerplade | Til som standard |
 | Warehouse management | [Manuel forsendelseskonsolidering](../warehousing/consolidate-shipments-manual-workbench.md) | Til som standard |
+| Warehouse management | [Manuel udvalgstjeneste for overførselslinjer for administratorer eller lignende betroede brugere](whats-new-scm-10-0-28.md) | Generelt tilgængelig |
 | Warehouse management | [Grænseflade for materialehåndteringsudstyr](../warehousing/mhax.md) | Obligatorisk |
-| Warehouse management | [Planlagt direkte levering](../warehousing/planned-cross-docking.md) | Til som standard |
+| Warehouse management | [Nye sider med lastplanlægningspanel](whats-new-scm-10-0-24.md) | Generelt tilgængelig |
+| Warehouse management | [Visualisering af udgående arbejdsbyrde](../warehousing/outbound-workload-visualization.md) | Obligatorisk |
+| Warehouse management | [Planlagt direkte levering](../warehousing/planned-cross-docking.md) | Obligatorisk |
 | Warehouse management | [Proces for hændelser for lagerapp](../warehousing/warehouse-app-events.md) | Obligatorisk |
 | Warehouse management | Forbedring af forespørgsel om læg på lager-arbejdsskabelonen for samprodukt og biprodukt | Obligatorisk |
 | Warehouse management | [Afrund antal ned til nærmeste salgsenhed ved frigivelse til lagersted](whats-new-scm-10-0-19.md) | Obligatorisk |
@@ -190,13 +189,14 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 | Warehouse management | [Gemt visning til bølgebehandling](saved-views-scm.md) | Obligatorisk |
 | Warehouse management | [Gemte visninger til lastbehandling](saved-views-scm.md) | Obligatorisk |
 | Warehouse management | [Gemte visninger til forsendelsesbehandling](saved-views-scm.md) | Obligatorisk |
-| Warehouse management | Etiketdetaljer om forsendelsesbølge | Til som standard |
+| Warehouse management | [Scan GS1-stregkoder](../warehousing/gs1-barcodes.md) | Generelt tilgængelig |
+| Warehouse management | Etiketdetaljer om forsendelsesbølge | Obligatorisk |
 | Warehouse management | [Enheder blandet på slot](whats-new-scm-10-0-21.md) | Obligatorisk |
 | Warehouse management | [Brug hurtigere API til containere, der lukker/genåbner på pakkestation](whats-new-scm-10-0-21.md) | Til som standard |
 | Warehouse management | [Valider skabeloner, der er valgt til genopfyldningsjob](whats-new-scm-10-0-20.md) | Til som standard |
-| Warehouse management | [Hævede felter i lagerstedsapp](../warehousing/warehouse-app-promoted-fields.md) | Til som standard |
-| Warehouse management | [Vejledninger til trin i lagerstedsapp](../warehousing/mobile-app-titles-instructions.md) | Til som standard |
-| Warehouse management | [Placeringsstatus for lagersted](../warehousing/warehouse-location-status.md) | Til som standard |
+| Warehouse management | [Hævede felter i lagerstedsapp](../warehousing/warehouse-app-promoted-fields.md) | Obligatorisk |
+| Warehouse management | [Vejledninger til trin i lagerstedsapp](../warehousing/mobile-app-titles-instructions.md) | Obligatorisk |
+| Warehouse management | [Placeringsstatus for lagersted](../warehousing/warehouse-location-status.md) | Obligatorisk |
 | Warehouse management | [Omveje i Warehouse Management-app](../warehousing/warehouse-app-detours.md) | Til som standard |
 | Warehouse management | [Oplysninger om bølgebatchjob](../warehousing/wave-processing.md) | Obligatorisk |
 | Warehouse management | [Beskeder om udførelse af bølge](../warehousing/wave-execution-notifications.md) | Obligatorisk |

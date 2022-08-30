@@ -2,7 +2,7 @@
 title: Oversigt over teknisk ændringsstyring (indeholder video)
 description: Denne artikel giver en oversigt over teknisk ændringsstyring, som hjælper dig med at planlægge og administrere produktversioner og administrere produktlivscyklusser og tekniske ændringer.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067386"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334859"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -76,16 +76,16 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin. Som 
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivere styringen af tekniske yderligere funktionsændringer for systemet
 
-Når du har aktiveret de grundlæggende funktioner til ændringsstyring for teknikerarbejde og aktiverer konfigurationsnøglerne, føjes flere ekstra og valgfri funktioner til ændringsstyring for teknikerarbejde til funktionsstyring. Hver af disse funktioner er angivet i modulet **Teknisk ændringsstyring**. I følgende tabel beskrives de enkelte valgfrie funktioner, og der er hyperlinks, som du kan finde flere oplysninger i. Fra og med Supply Chain Management version 10.0.25 er alle disse funktioner som standard aktiverede, men du kan stadig vælge at deaktivere dem.
+Når du har aktiveret de grundlæggende funktioner til ændringsstyring for teknikerarbejde og aktiverer konfigurationsnøglerne, føjes flere ekstra og valgfri funktioner til ændringsstyring for teknikerarbejde til funktionsstyring. Hver af disse funktioner er angivet i modulet **Teknisk ændringsstyring**. I følgende tabel beskrives de enkelte valgfrie funktioner, og der er hyperlinks, som du kan finde flere oplysninger i.
 
-| Funktionsnavn i funktionsstyring | Beskrivelse | Funktionstilstand |
+| Funktionsnavn i funktionsstyring | Beskrivende tekst | Funktionstilstand |
 |---|---|---|
-| Aktivér administration af ændringer på eksisterende produkter | <p>Med denne funktion kan du konvertere eksisterende produkter til teknikere produkter, så du kan begynde at administrere dem ved hjælp af styring af engineering-ændringer.</p><p>Yderligere oplysninger finder du i [Aktivere administration af ændringer på eksisterende produkter](change-management-existing-products.md).</p> |
-| Tekniske beskeder til produktion | <p>Når et produkt ændres inden for teknikerarbejde, kan det være vigtigt at give produktionen besked om disse ændringer. På den måde kan produktionsmedarbejdere træffe de relevante handlinger, f.eks. komponentsubstitution, styklisteerstatning eller ruteerstatning. Denne funktion giver dig mulighed for at give produktion besked om ændringer af produkter, der produceres.</p><p>Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).</p> |
-| Forbedret attributnedarvning for Administration af tekniske ændringer | <p>Denne funktion forenkler administrationen af attributter for færdigvarer eller mellemvarer. Når denne funktion er aktiveret, er det lettere at identificere alle de attributter, der hører til en vare, og du kan vælge de attributter, der skal overføres fra den pågældende vare til den overordnede vare. Denne funktion er nyttig, når én komponent i en færdig gode f.eks. er sårbar, giftig eller antændelig, da du nemt kan identificere den sårbar, giftige eller antændelige attribut og overføre den ud til den færdige vare.</p><p>Yderligere oplysninger finder du i [Tekniske attributter og søgning efter tekniske attributter](engineering-attributes-and-search.md).</p> |
-| Kontroller af produktparathed | <p>Denne funktion giver også mulighed for at angive politikker for parathedskontroller for standardprodukter (ikke-tekniske). Brug parathedskontrol af produkter til at sikre, at hvert produkt er fuldt defineret, og at alle de nødvendige politikker er konfigureret, før produktet bliver tilgængeligt og bruges i transaktioner. Hvis du deaktiverer denne funktion, efter at du har brugt den et stykke tid, slettes alle eksisterende parathedskontroller for standardprodukter.</p><p>Du kan finde flere oplysninger under [Produktparathed](product-readiness.md).</p> |
-| Administrer ændringer af formler og deres ingredienser | <p>Denne funktion giver dig mulighed for at spore ændringer af formelingredienser, ko-produkter og biprodukter.</p><p>Du kan finde flere oplysninger under [Administrere ændringer i formler og deres stoffer](manage-formula-changes.md).</p> |
-| Variantgenerering af tekniske produkter | <p>Med denne funktion kan du generere varianter til teknikere produkter baseret på tilgængelige dimensionsværdier.</p><p>Du kan finde flere oplysninger i [Generere varianter for teknikprodukter](engineering-variants.md).</p> |
+| Aktivér administration af ændringer på eksisterende produkter | <p>Med denne funktion kan du konvertere eksisterende produkter til teknikere produkter, så du kan begynde at administrere dem ved hjælp af styring af engineering-ændringer.</p><p>Yderligere oplysninger finder du i [Aktivere administration af ændringer på eksisterende produkter](change-management-existing-products.md).</p> | Som standard aktiveret fra og med version 10.0.25. |
+| Tekniske beskeder til produktion | <p>Når et produkt ændres inden for teknikerarbejde, kan det være vigtigt at give produktionen besked om disse ændringer. På den måde kan produktionsmedarbejdere træffe de relevante handlinger, f.eks. komponentsubstitution, styklisteerstatning eller ruteerstatning. Denne funktion giver dig mulighed for at give produktion besked om ændringer af produkter, der produceres.</p><p>Yderligere oplysninger finder du i [Administrere ændringer af tekniske produkter](engineering-change-management.md).</p> |  Som standard aktiveret fra og med version 10.0.25. |
+| Forbedret attributnedarvning for Administration af tekniske ændringer | <p>Denne funktion forenkler administrationen af attributter for færdigvarer eller mellemvarer. Når denne funktion er aktiveret, er det lettere at identificere alle de attributter, der hører til en vare, og du kan vælge de attributter, der skal overføres fra den pågældende vare til den overordnede vare. Denne funktion er nyttig, når én komponent i en færdig gode f.eks. er sårbar, giftig eller antændelig, da du nemt kan identificere den sårbar, giftige eller antændelige attribut og overføre den ud til den færdige vare.</p><p>Yderligere oplysninger finder du i [Tekniske attributter og søgning efter tekniske attributter](engineering-attributes-and-search.md).</p> |  Som standard aktiveret fra og med version 10.0.25. |
+| Kontroller af produktparathed | <p>Denne funktion giver også mulighed for at angive politikker for parathedskontroller for standardprodukter (ikke-tekniske). Brug parathedskontrol af produkter til at sikre, at hvert produkt er fuldt defineret, og at alle de nødvendige politikker er konfigureret, før produktet bliver tilgængeligt og bruges i transaktioner. Hvis du deaktiverer denne funktion, efter at du har brugt den et stykke tid, slettes alle eksisterende parathedskontroller for standardprodukter.</p><p>Du kan finde flere oplysninger under [Produktparathed](product-readiness.md).</p> |  Som standard aktiveret fra og med version 10.0.25. |
+| Administrer ændringer af formler og deres ingredienser | <p>Denne funktion giver dig mulighed for at spore ændringer af formelingredienser, ko-produkter og biprodukter.</p><p>Du kan finde flere oplysninger under [Administrere ændringer i formler og deres stoffer](manage-formula-changes.md).</p> |  Som standard aktiveret fra og med version 10.0.25. |
+| Variantgenerering af tekniske produkter | <p>Med denne funktion kan du generere varianter til teknikere produkter baseret på tilgængelige dimensionsværdier.</p><p>Du kan finde flere oplysninger i [Generere varianter for teknikprodukter](engineering-variants.md).</p> |  Som standard aktiveret fra og med version 10.0.25. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

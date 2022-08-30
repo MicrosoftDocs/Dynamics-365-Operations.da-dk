@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219058"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334709"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.26. (maj 2022)
 
@@ -51,7 +51,6 @@ Hvis du vil slå en af disse funktioner til eller fra, skal du gøre det i [funk
 | Administration af produktoplysninger | Ryd op i produktattributværdier | Denne funktion tilføjer en periodisk opgave med navnet **Ryd op i produktattributværdier**, der rydder op i poster for produktattributværdier, som ikke længere er knyttet til et produkt via en produktkategori. |
 | Lager- og Warehouse management | (Rusland) Undgå afvigelser ved udstedelse af GTD'er for indkøbsordrer, der omfatter WMS-aktiverede varer | Denne funktion er kun til russisk lokalisering. Det forhindrer uoverensstemmelse, der opstår, når der udstedes russiske tolddeklarationsnumre (GTD'er) til import af indkøbsordrer, der omfatter varer, der er aktiveret til lokationsstyringsprocesser (WMS). GTD-processen til udstedelse ændrer nogle lagerdimensionsværdier for de relaterede lagertransaktioner for fakturaer, der er medtaget i den brugerdefinerede kladde, hvilket medfører uoverensstemmelser mellem arbejdsposterne for indkøbsordren og lagertransaktionerne for indkøbet. Når denne funktion er aktiveret, genererer GTD-udstedelsesprocessen reguleringsarbejde, der eliminerer sådanne uoverensstemmelser. |
 | Warehouse management | Udvidet parser til GS1-stregkoder | Denne funktion tilføjer en forbedret parser til GS1-symboldata. Den nye parser implementerer GS1-algoritmen Generel specifikation til fortolkning af GS1-symboler og giver stærkere validering af data. Du kan finde flere oplysninger under [GS1-stregkodescanning](../warehousing/gs1-barcodes.md). |
-| Warehouse management | Nye sider med lastplanlægningspanel | Tilføjer to nye sider i lastplanlægningspanelet: **Indgående lastplanlægningspanel** og **Udgående lastplanlægningspanel**. |
 | Warehouse management | Applikation til Warehouse management – tom GTD | Denne funktion er kun til russisk lokalisering. Det giver arbejdere, der bruger mobilappen Warehouse Management, mulighed for at lade russiske tolddeklarationsnumre (GTD'er) være tomme, hvis det er nødvendigt. Hvis GTD-sporingsdimensionen er konfigureret til at tillade tomme værdier, accepterer systemet tomme værdier til GTD for lageroperationer, hvis den disponible lagerbeholdning er tilgængelig. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852499"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306108"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagerfordeling for lagersynlighed
 
@@ -63,12 +63,11 @@ Lagerfordelingsfunktionen består af følgende komponenter:
 - Den foruddefinerede, fordelingsrelaterede datakilde, fysiske målinger og beregnede målinger.
 - Brugerdefinerbare fordelingsgrupper, der maksimalt har otte niveauer.
 - Et sæt fordelings-API'er (Application Programming Interfaces):
-
-    - allocate (fordele)
-    - reallocate (omfordele)
-    - unallocate (ikke-fordele)
-    - consume (forbruge)
-    - query (forespørgsel)
+  - allocate (fordele)
+  - reallocate (omfordele)
+  - unallocate (ikke-fordele)
+  - consume (forbruge)
+  - query (forespørgsel)
 
 Der er to trin til konfiguration af fordelingsfunktionen:
 
@@ -84,23 +83,26 @@ Datakildens navn er `@iv`.
 Her er de første fysiske målinger:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Her er de første beregnede målinger:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Føje andre fysiske måleenheder til den beregnede måling "available-to-allocate"
 
 Hvis du vil bruge fordeling, skal du konfigurere den beregnede måling available-to-allocate (`@iv.@available_to_allocate`). Du har f.eks. datakilden `fno` og målingen `onordered`, datakilden `pos` og målingen `inbound`, og du vil fordele den disponible beholdning for summen af `fno.onordered` og `pos.inbound`. I dette tilfælde skal `@iv.@available_to_allocate` indeholde `pos.inbound` og `fno.onordered` i formlen. Her er et eksempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Datakilde `@iv` er en foruddefineret datakilde, og de fysiske målinger, der er defineret i `@iv` med præfikset `@`, er foruddefinerede mål. Disse foranstaltninger er en foruddefineret konfiguration af fordelingsfunktionen, så du skal ikke ændre eller slette dem, eller du vil sandsynligvis komme til at møde uventede fejl, når du bruger fordelingsfunktionen.
+>
+> Du kan føje nye fysiske måleenheder til den foruddefinerede beregnede måleenhed `@iv.@available_to_allocate`, men du må ikke ændre navnet.
 
 ### <a name="change-the-allocation-group-name"></a>Ændre fordelingsgruppenavnet
 
@@ -136,7 +138,7 @@ Kald `Allocate`-API for at tildele et produkt, der har bestemte dimensioner. Her
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Du ønsker f.eks. at fordele et antal på 10 for produkt *Cykel*, sted *1*, loka
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Brug API'en `Reallocate` til at flytte et tildelt antal til en anden gruppekombi
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Du kan f.eks. flytte to cykler med dimensionerne \[sted=1, lokation=11, farve=r�
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Brug API'en `Consume` til at bogføre forbrugsantallet i forhold til fordeling. 
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Nu er tre cykler solgt, og de tages fra fordelingspuljen. For at registrere denn
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Når du vil forbruge et antal på 3 og reservere dette antal direkte, kan du for
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

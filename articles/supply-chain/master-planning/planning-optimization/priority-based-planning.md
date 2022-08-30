@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186477"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335279"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaseret planlægning
 
@@ -30,7 +30,7 @@ Du kan få et hurtigt overblik over denne funktion i følgende video: [Understø
 
 ## <a name="turn-on-priority-based-planning-in-your-system"></a>Aktivere prioritetsbaseret planlægning i systemet
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Varedisponering*
 - **Funktionsnavn:** *Prioritetsstyret MRP-understøttelse af planlægningsoptimering*

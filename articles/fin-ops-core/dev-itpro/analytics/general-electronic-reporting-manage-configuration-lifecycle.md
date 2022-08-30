@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
-ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0209679c9882d87edab68d043fba9e7b3400a2a2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271577"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337190"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
 
@@ -84,7 +84,7 @@ ER-konfigurationer, der designet i udviklingsmiljøet, kan [uploades](#data-pers
 
 ## <a name="data-persistence-consideration"></a>Overvejelse af datafastholdelse
 
-Du kan [importere](tasks/er-import-configuration-lifecycle-services.md) forskellige [versioner](general-electronic-reporting.md#component-versioning) af en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuelt til din Finance-forekomst. Når en ny version af en ER-konfiguration importeres, styrer systemet indholdet af kladdeversionen af denne konfiguration:
+Du kan individuelt [importere](tasks/er-import-configuration-lifecycle-services.md) forskellige versioner af en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuelt til din Finance-forekomst. Når en ny version af en ER-konfiguration importeres, styrer systemet indholdet af kladdeversionen af denne konfiguration:
 
 - Når den importerede version er lavere end den højeste version af denne konfiguration i den aktuelle Finance-forekomst, forbliver indholdet af kladdeversionen af denne konfiguration uændret.
 - Når den importerede version er højere end nogen anden version af denne konfiguration i den aktuelle Finance-forekomst, kopieres indholdet af den importerede version til kladdeversionen af denne konfiguration, så du kan fortsætte med at redigere den sidste fuldførte version.
@@ -112,7 +112,7 @@ ER-konfigurationer kan konfigureres som værende [afhængige](er-download-config
 
 ![Afledt ER-formatkonfiguration på siden Konfigurationer.](./media/ger-configuration-lifecycle-img1.png)
 
-Når du er færdig med at designe formatet, kan du ændre status for den første [version](general-electronic-reporting.md#component-versioning) af ER-formatkonfigurationen fra **Kladde** til **Fuldført**. Derefter kan du dele den fuldførte version af ER-formatkonfigurationen ved at [publicere](../../../finance/localizations/rcs-global-repo-upload.md) den til det globale lager. Derefter kan du få adgang til det globale lager fra enhver forekomst af RCS eller Finance i skyen. Du kan derefter importere enhver ER-konfigurationsversion, der gælder for programmet, fra det globale lager til det pågældende program.
+Når du er færdig med at designe formatet, kan du ændre status for den første version af ER-formatkonfigurationen fra **Kladde** til **Fuldført**. Derefter kan du dele den fuldførte version af ER-formatkonfigurationen ved at [publicere](../../../finance/localizations/rcs-global-repo-upload.md) den til det globale lager. Derefter kan du få adgang til det globale lager fra enhver forekomst af RCS eller Finance i skyen. Du kan derefter importere enhver ER-konfigurationsversion, der gælder for programmet, fra det globale lager til det pågældende program.
 
 ![Publiceret ER-formatkonfiguration på siden Konfigurationslager.](./media/ger-configuration-lifecycle-img2.png)
 

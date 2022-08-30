@@ -2,25 +2,29 @@
 title: Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Den Tjekkiske Republik (ældre)
 description: Denne artikel indeholder retningslinjer for implementering af eksempel på regnskabsintegration for Den Tjekkiske Republik fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: d689e5b48fb8274a58d0c3a18e70b598aca2c310
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8338b1e11e1bd4fe7482b914ac6bf5f60ebc2e36
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287532"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313823"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Den Tjekkiske Republik (ældre)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Denne artikel indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Den Tjekkiske Republik fra Microsoft Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Den Tjekkiske Republik](emea-cze-fi-sample.md). 
+> [!IMPORTANT]
+> Du skal kun følge retningslinjerne i denne artikel, hvis du bruger Microsoft Dynamics 365 Commerce-version 10.0.28 eller tidligere. Pr. Commerce-version 10.0.29 er eksempel på integration af regnskabsregistreringstjeneste for Tjekkiet tilgængelig i Commerce Software Development Kit (SDK). Du kan finde flere oplysninger i [Konfigurere kanalkomponenter](./emea-cze-fi-sample.md#configure-channel-components).
+
+Denne artikel indeholder retningslinjer for implementering af eksempel på integration af regnskabsregistreringstjeneste for Den Tjekkiske Republik fra Dynamics 365 Commerce Retail SDK (Software Development Kit) på en virtuel maskine (VM) til udviklere i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om regnskabsintegrationseksemplet i [Eksempel på regnskabsintegrationsservice for Den Tjekkiske Republik](emea-cze-fi-sample.md). 
 
 Eksemplet på regnskabsintegration for Den Tjekkiske Republik er en del af Retail SDK. Du kan finde oplysninger om, hvordan du installerer og bruger SDK, i [Arkitektur for udviklingsværktøjskasse (SDK) til Retail](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksempel består af udvidelser til Commerce Runtime (CRT) og Hardwarestation. Hvis du vil køre dette eksempel, skal du redigere og bygge CRT og Hardwarestationsprojekter. Det anbefales, at du bruger en ikke-ændret Retail SDK til at foretage de ændringer, der er beskrevet i denne artikel. Det anbefales også, at du bruger et kildekontrolsystem som f.eks. Azure DevOps, hvor ingen filer er ændret endnu.
 

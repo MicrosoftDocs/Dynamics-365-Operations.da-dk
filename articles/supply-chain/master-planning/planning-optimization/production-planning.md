@@ -2,7 +2,7 @@
 title: Produktionsplanlægning
 description: Denne artikel beskriver produktionsplanlægning med en forklaring af, hvordan du redigerer planlagte produktionsordrer ved hjælp af Planlægningsoptimering.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873776"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335249"
 ---
 # <a name="production-planning"></a>Produktionsplanlægning
 
@@ -26,9 +26,9 @@ Planlægningsoptimering understøtter flere produktionsscenarier. Hvis du migrer
 
 Følgende video indeholder en kort introduktion til nogle af de begreber, der beskrives i denne artikel: [Dynamics 365 Supply Chain Management: Forbedringer af planlægningsoptimering](https://youtu.be/u1pcmZuZBTw).
 
-## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
+## <a name="turn-this-feature-on-or-off-for-your-system"></a>Slå denne funktion til/fra i dit system
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i denne artikel, skal du gå til [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funktionen *Produktionsordreforslag til planlægningsoptimering*.
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Produktionsordreforslag for planlægning af optimering* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="planned-production-orders"></a>Produktionsordreforslag
 

@@ -2,7 +2,7 @@
 title: Forespørge på data ved brug af omveje i Warehouse Management-mobilappen
 description: Denne artikel beskriver, hvordan du konfigurerer menupunkter i dataforespørgsler på mobilenheder og bruger dem som en del af omveje.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220535"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336599"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Forespørge på data ved brug af omveje i Warehouse Management-mobilappen
 
@@ -35,19 +35,19 @@ I modtagelsesflowet for indkøbsordren skal der f.eks. kræves et indkøbsordren
 Før du kan bruge de funktioner, der er beskrevet i denne artikel, skal du gennemføre følgende procedure for at aktivere de påkrævede funktioner.
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**. (Du kan finde flere oplysninger om brug af administration af arbejdsområdet **Funktionsstyring** under [Oversigt over funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)).
-1. Aktivér funktionen, der vises, på følgende måde:
+1. Hvis du kører Supply Chain Management version 10.0.28 eller tidligere, skal du aktivere er funktionen, der er angivet på følgende måde:
 
     - **Modul:** *Warehouse Management*
     - **Funktionsnavn:** *Trininstruktioner for lagerstedsappen*
 
-    Denne funktion er en forudsætning for funktionen *Dataforespørgselsflow til app til Warehouse Management*. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
+    Denne funktion er en forudsætning for funktionen *Dataforespørgselsflow til app til Warehouse Management*. Fra og med Supply Chain Management version 10.0.29 er den obligatorisk og kan ikke deaktiveres. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md).
 
 1. Aktivér funktionen, der vises, på følgende måde:
 
     - **Modul:** *Warehouse Management*
     - **Funktionsnavn:** *Omveje i Warehouse Management-app*
 
-    Denne funktion er en forudsætning for funktionen *Dataforespørgselsflow til app til Warehouse Management*. Yderligere oplysninger om funktionen *Omveje i Warehouse Management-app* finder du i [Konfigurere omveje til trin i menupunkter på mobilenheder](warehouse-app-detours.md).
+    Denne funktion er en forudsætning for funktionen *Dataforespørgselsflow til app til Warehouse Management*. Fra og med Supply Chain Management version 10.0.29 er den som standard aktiveret. Yderligere oplysninger om funktionen *Omveje i Warehouse Management-app* finder du i [Konfigurere omveje til trin i menupunkter på mobilenheder](warehouse-app-detours.md).
 
 1. Hvis funktionen *Omveje i Warehouse Management-app* allerede er aktiveret, skal du opdatere feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Gentag dette trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 1. Aktivér funktionen, der vises, på følgende måde:

@@ -2,7 +2,7 @@
 title: Konfigurere omveje til trin i menupunkter på mobilenheder
 description: Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer omveje til menupunkter, så arbejdere kan tilbageholde den aktuelle opgave, udføre en anden opgave og derefter vende tilbage til den oprindelige opgave uden at miste oplysninger.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218998"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336119"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveje til trin i menupunkter på mobilenheder
 
@@ -35,9 +35,8 @@ Før du kan konfigurere omveje for trin i menupunkterne på mobilenheden, skal d
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
 1. Sørg for, at funktionen *Vejledninger til trin i lagerstedsapp* er aktiveret for systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger om trinnet *Vejledninger til trin i lagerstedsapp* i [Tilpasse trintitler og instruktioner til Warehouse Management-mobilappen](mobile-app-titles-instructions.md). Denne funktion er en forudsætning for funktionen *Omveje i Warehouse Management-app*.
-1. Aktivér funktionen *Omveje i Warehouse Management-app*. Denne funktion er den, der er beskrevet i denne artikel.
-1. Opdater feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
-1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
+1. Aktivér funktionen *Omveje i Warehouse Management-app*. Denne funktion er den, der er beskrevet i denne artikel. Fra og med Supply Chain Management version 10.0.29 er den som standard aktiveret.
+1. Hvis funktionen *Omveje i Warehouse Management-app* allerede er aktiveret, skal du opdatere feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse Management \> Opsætning \> Mobilenhed \> Feltnavne for lagerstedsapp** og vælge **Opret standardkonfiguration**. Gentag dette trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurere en omvej fra en menuspecifik tilsidesættelse
 

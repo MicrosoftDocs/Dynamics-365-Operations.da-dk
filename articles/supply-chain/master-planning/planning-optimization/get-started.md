@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112174"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295922"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
 
@@ -29,7 +29,7 @@ ms.locfileid: "9112174"
 
 Som [tidligere annonceret](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) er planlægningsoptimering planlagt til at erstatte det eksisterende indbyggede varedisponeringsprogram.
 
-Hvis du i øjeblikket bruger det indbyggede varedisponeringsprogram, skal du starte med at planlægge din migrering til planlægningsoptimering nu. Det er vigtigt at starte migreringsprocessen med det samme, fordi dine handlinger kan blive påvirket, når udfasning gennemtvinges. For at undgå problemer i sidste øjeblik, når udfasning gennemtvinges, anbefaler vi kraftigt, at du fuldfører migreringen før 1. december 2020. 
+Hvis du i øjeblikket bruger det indbyggede varedisponeringsprogram, skal du starte med at planlægge din migrering til planlægningsoptimering nu. Det er vigtigt at starte med det samme, da det ellers kan have indflydelse på dine handlinger, når afskrivning gennemtvinges (selvom gennemtvingelse ikke er planlagt i øjeblikket). Vi opfordrer dig på det kraftigste til at fuldføre overflytningen, så snart Planlægningsoptimering understøtter de funktioner, du skal bruge, så du kan begynde at få fordel af de mange forbedringer af ydeevnen og andre nye egenskaber, der leveres af den nye tjeneste.
 
 Funktionen Planlægningsoptimering understøtter i øjeblikket ikke alle de funktioner, der er tilgængelige i det planlægningsprogram, der er indbygget i Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt i Planlægningsoptimering, opfylder dine behov. Planlægningsoptimeringsfunktionen er i øjeblikket ikke aktiveret som standard i Dynamics Lifecycle Services (LCS), så du har mulighed for at foretage din evaluering, før funktionen er slået til.
 

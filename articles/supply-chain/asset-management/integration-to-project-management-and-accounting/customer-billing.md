@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c0d067ec4f2110b1c146ef0229b90e309578eaa7
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220416"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335069"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Fakturere for vedligeholdelse af aktiver, der ejes af kunder
 
@@ -40,7 +40,7 @@ Funktionen har desuden følgende egenskaber:
 
 ## <a name="turn-on-the-customer-billing-feature"></a>Slå funktionen for kundefakturering til
 
-Før du kan bruge denne funktion, skal den være slået til i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Projektstyring og regnskab*
 - **Funktionsnavn:** *Fakturering af arbejdsordre*

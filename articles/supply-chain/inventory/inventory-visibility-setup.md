@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895693"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306048"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installere og konfigurere Inventory Visibility
 
@@ -88,20 +88,6 @@ Når du har registreret et program og føjet en klienthemmelighed til Azure AD, 
 >
 > 1. Når installationen er fuldført, skal du gå tilbage til LCS-siden og prøve igen at geninstallere tilføjelsesprogrammet **Lagersynlighed**.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Fjerne installationen af tilføjelsesprogrammet Lagersynlighed
-
-Hvis du vil fjerne installationen af tilføjelsesprogrammet Lagersynlighed, skal du vælge **Afinstaller** på LCS-siden. Afinstallationsprocessen afslutter tilføjelsesprogrammet Lagersynlighed, fjerner registreringen af tilføjelsesprogrammet fra LCS og sletter eventuelle midlertidige data, der er gemt i datacachen for tilføjelsesprogrammet Lagersynlighed. De primære lagerdata, der er lagret i Dataverse-abonnementet, slettes dog ikke.
-
-Hvis du vil afinstallere lagerdata, der er gemt i Dataverse-abonnementet, skal du åbne [Power Apps](https://make.powerapps.com), vælge **Miljø** på navigationslinjen og vælge det Dataverse-miljø, der er forbundet med LCS-miljøet. Gå derefter til **Løsninger**, og slet følgende fem løsninger i denne rækkefølge:
-
-1. Fastgøre løsning til applikationen Lagersynlighed i Dynamics 365-løsninger
-1. Løsning til Dynamics 365 FNO SCM Inventory Visibility-applikationer
-1. Inventory Configuration Service
-1. Lagersynlighedstjeneste
-1. Basisløsning til Dynamics 365 FNO SCM Inventory Visibility
-
-Når du har slettet disse løsninger, slettes også de data, der er gemt i tabeller.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Oprette lagersynlighed i Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Implementere integrationspakken Lagersynlighed
@@ -135,10 +121,45 @@ Når du har installeret tilføjelsesprogrammet, kan du forberede Supply Chain Ma
 
 1. Hvis du har aktiveret den valgfrie funktion til *lagersynlighedsintegration med reservationsmodkonto*, skal du åbne fanen **Reservationsmodkonto** og foretage følgende indstillinger:
     - **Aktiver reservationsmodkonto** – Angiv til *Ja* for at aktivere denne funktion.
-    - **Modifikator for reservation** – Vælg den lagertransaktionsstatus, der skal modpostere reservationer, der foretages ved lagersynlighed. Denne indstilling bestemmer det ordrebehandlingstrin, der udløser modregninger. Stadiet spores af ordrens lagerposteringsstatus. Vælg en af følgende muligheder:
+    - **Modifikator for reservation** – Vælg den lagertransaktionsstatus, der skal modpostere reservationer, der foretages ved lagersynlighed. Denne indstilling bestemmer det ordrebehandlingstrin, der udløser modregninger. Stadiet spores af ordrens lagerposteringsstatus. Vælg en af følgende indstillinger:
         - *I bestilling* – For statussen *I transaktion* sender en ordre en anmodning om modkontering, når den oprettes. Modantallet er antallet for den oprettede ordre.
         - *Reserver* – For statussen *Reservér bestilt transaktion* sender en ordre en anmodning om modkontering, når den reserveres, plukkes, følgesedlen bogføres eller faktureres. Anmodningen udløses kun én gang for det første trin, når den nævnte proces finder sted. Modantallet er det antal, hvor lagertransaktionens status ændres fra *I bestilling* til *Reserveret bestilt* (eller senere status) på den tilsvarende ordrelinje.
 
 1. Gå til **Lagerstyring \> Periodisk \> Integration af lagersynlighed**, og aktivér jobbet. Alle hændelser med lagerændringer fra Supply Chain Management vil nu blive bogført i Lagersynlighed.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Fjerne installationen af tilføjelsesprogrammet Lagersynlighed
+
+For at afinstallere tilføjelsesprogrammet Lagersynlighed skal du gøre følgende:
+
+1. Log på Supply Chain Management.
+1. Gå til **Lagerstyring \> Periodisk \> Integration af lagersynlighed**, og deaktivér jobbet.
+1. Gå til LCS, og åbn siden i det miljø, hvor du vil afinstallere tilføjelsesprogrammet ( [se også Installere tilføjelsesprogrammet Lagersynlighed](#install-add-in)).
+1. Vælg **afinstaller**.
+1. Afinstallationsprocessen afslutter nu tilføjelsesprogrammet Lagersynlighed, fjerner registreringen af tilføjelsesprogrammet fra LCS og sletter eventuelle midlertidige data, der er gemt i datacachen for tilføjelsesprogrammet Lagersynlighed. De primære lagerdata, der er lagret i Dataverse-abonnementet, slettes dog ikke. Slet disse data ved at fuldføre denne procedure.
+1. Åbn [Power Apps](https://make.powerapps.com).
+1. Vælg **miljø** på navigationslinjen
+1. Vælg det Dataverse-miljø, der er bundet sammen med dit LCS-miljø.
+1. Gå derefter til **Løsninger**, og slet følgende løsninger i denne rækkefølge:
+    1. Fastgøre løsning til applikationen Lagersynlighed i Dynamics 365-løsninger
+    1. Løsning til Dynamics 365 FNO SCM Inventory Visibility-applikationer
+    1. Inventory Configuration Service
+    1. Lagersynlighedstjeneste
+    1. Basisløsning til Dynamics 365 FNO SCM Inventory Visibility
+
+    Når du har slettet disse løsninger, slettes også de data, der er gemt i tabeller.
+
+> [!NOTE]
+> Hvis du gendanner en Supply Chain Management-database efter afinstallering af tilføjelsesprogrammet Lagersynlighed og derefter vil geninstallere tilføjelsesprogrammet, skal du kontrollere, at du har slettet de gamle data for Lagersynlighed, der er gemt i dit Dataverse-abonnement (som beskrevet i forrige procedure), før du geninstallerer tilføjelsesprogrammet. På den måde undgås problemer med uoverensstemmelser i data, der ellers kunne forekomme.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Rense data for lagersynlighed fra Dataverse, før du gendanner Supply Chain Management-databasen
+
+Hvis du har brugt lagersynlighed og derefter gendanner Supply Chain Management-databasen, kan den gendannede database indeholde data, der ikke længere er i overensstemmelse med data, der tidligere er synkroniseret med Lagersynlighed til Dataverse. Denne uoverensstemmelse med data kan forårsage systemfejl og andre problemer. Det er derfor vigtigt, at du altid rydder alle data for lagersynlighed, fra Dataverse, før du gendanner en Supply Chain Management-database.
+
+Hvis du har brug for at gendanne en Supply Chain Management-database, skal du benytte følgende fremgangsmåde:
+
+1. Afinstaller tilføjelsesprogrammet Lagersynlighed og fjern alle relaterede data i Dataverse, som beskrevet i [Afinstallere tilføjelsesprogrammet Lagersynlighed](#uninstall-add-in)
+1. Gendan din Database Supply Chain Management, f.eks. som det beskrives i [PITR (Database point-in-time restore)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) eller [tidsbestemt gendannelse af produktionsdatabasen i et sandkassemiljø](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. Hvis du stadig vil bruge den, kan du geninstallere og konfigurere tilføjelsesprogrammet Lagersynlighed som beskrevet i [Installere tilføjelsesprogrammet Lagersynlighed](#install-add-in) og [Konfigurere integration af Lagersynlighed](#setup-inventory-visibility-integration)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

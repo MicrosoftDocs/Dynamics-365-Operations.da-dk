@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895751"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306167"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruge App til Inventory Visibility
 
@@ -70,10 +70,24 @@ Hvis du vil bogføre en reservationsanmodning, skal du angive en værdi i anmodn
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lageroversigt
 
-**Lageroversigt** er en tilpasset visning for enheden *Opsummering af disponibel lagerbeholdning*. Den giver en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed hvert 15. minut. Før du kan se data under fanen **Lageroversigt**, skal du aktivere funktionen *OnHandMostSpecificBackgroundService* under fanen **Funktionsstyring** og vælge **Opdater konfiguration**.
+Denne funktion viser en **lageroversigt** for produkter sammen med alle dimensioner. Lageroversigt er en tilpasset visning for enheden *Sum af OnHand-lagerbeholdning*. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Aktivere lageroversigten og angive synkroniseringsfrekvensen
+
+Aktivere **lageroversigten** og angive synkroniseringsfrekvensen ved at følge disse trin:
+
+1. Åbn siden **Konfiguration**.
+1. Åbn fanen **Funktionsadministration og indstillinger**.
+1. Angiv skift for funktionen **OnHandMostSpecificBackgroundService** til *Ja*.
+1. Når funktionen er aktiveret, bliver afsnittet **Servicekonfiguration** tilgængelig og indeholder en række til konfiguration af funktionen **OnHandMostSpecificBackgroundService**. Med denne indstilling kan du vælge, hvor ofte lageroversigtsdata synkroniseres. Brug knapperne **Op** og **Ned** i kolonnen **Værdi** til at ændre tiden mellem synkroniseringer (som kan være så lav som 5 minutter). Vælg derefter **Gem**.
+1. Vælg **Opdater konfiguration** for at gemme alle ændringerne.
+
+![OnHandMostSpecificBackgroundService-indstilling](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService-indstilling")
 
 > [!NOTE]
 > Funktionen *OnHandMostSpecificBackgroundService* sporer kun de ændringer i produktlageret, der er foretaget, efter at du aktiverede funktionen. Data for produkter, der ikke er ændret, siden du aktiverede funktionen, synkroniseres ikke fra lagertjenestecachen til Dataverse-miljøet. Hvis **lageroversigtssiden** ikke viser alle de beholdningsoplysninger, du forventer, skal du gå til **Lagerstyring > Periodiske opgaver > integration af Lagersynlighed**, deaktivere batchjobbet og genaktivere det. Derved sker det første push, og alle data synkroniseres med enheden *Lager onHand Sum* i løbet af de næste 15 minutter. Hvis du vil bruge denne funktion, anbefales det, at du aktiverer den, før du opretter eventuelle ændringer i lagerbeholdningen, og aktiverer batchjobbet **lagersynlighedsintegration**.
+
+### <a name="work-with-the-inventory-summary"></a>Arbejde med lageroversigten
 
 Ved hjælp af **Avanceret filter**, som findes i Dataverse, kan du oprette en tilpasset visning af de rækker, der er vigtige for dig. Med de avancerede filterindstillinger kan du oprette mange forskellige visninger, fra de mest simple til de mest komplekse. De gør det også muligt at føje grupperede og indlejrede betingelser til filtrene. Du kan få mere at vide om, hvordan du bruger **Avanceret filter**, i [Redigere eller oprette personlige visninger ved hjælp af avancerede gitterfiltre](/powerapps/user/grid-filters-advanced).
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 17e336fb059880e54a1cba7c0079e7452925c24d
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 44e7dfdbc980c5df6b9426515365611bc0de45c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219991"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335939"
 ---
 # <a name="zone-threshold-replenishment"></a>Tærskel for genopfyldning af zone
 
@@ -38,7 +38,7 @@ I modsætning til lokationsbaseret min./maks.-genopfyldning kræver zonebaseret 
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>Aktivér funktionen til tærskel for genopfyldning af zone
 
-Før du kan bruge funktionen *Tærskel for genopfyldning af zone*, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge funktionen *Tærskel for genopfyldning af zone*, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Tærskel for genopfyldning af zone*

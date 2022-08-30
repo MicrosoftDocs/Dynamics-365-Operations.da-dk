@@ -2,7 +2,7 @@
 title: Oprette flytteordrer fra lagerstedsappen
 description: Denne artikel beskriver, hvordan du opretter og behandler flytteordrer fra funktionen i mobilappen Lokationsstyring
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877444"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336449"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Oprette flytteordrer fra lagerstedsappen
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877444"
 
 Denne funktion giver lagermedarbejderne mulighed for at oprette og behandle flytteordrer direkte fra mobilappen Lokationsstyring. Arbejderen starter med at vælge destinationslagerstedet og kan derefter scanne et eller flere id'er ved hjælp af appen for at tilføje id'er i flytteordren. Når lagermedarbejderen vælger **Fuldfør ordre**, opretter et batchjob den krævede flytteordre og ordrelinjer, der er baseret på den disponible lagerbeholdning, som er registreret for disse id'er.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere eller deaktivere denne funktion
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere denne funktion og dens forudsætninger
 
 Før du kan bruge denne funktion, skal både den og dens forudsætninger være aktiveret i dit system. Administratorer kan bruge siden [funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionsstatus og aktivere den, hvis det er nødvendigt.
 
 1. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere følgende to funktioner (i rækkefølge): Fra og med Supply Chain Management version 10.0.25 er begge disse funktioner som standard aktiveret.
-    1. *Proces for hændelser for lagerapp*
-    1. *Opret, og behandl overførselsordrer fra lagersteds-appen*
-1. Hvis du vil automatisere behandlingen af udgående forsendelser, skal du også aktivere funktionen [Bekræft udgående forsendelser fra batchjob](confirm-outbound-shipments-from-batch-jobs.md).
+    1. *Proces for hændelser for lagerapp*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+    1. *Opret, og behandl overførselsordrer fra lagersteds-appen*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. Hvis du vil automatisere behandlingen af udgående forsendelser, skal du også aktivere funktionen [*Bekræft udgående forsendelser fra batchjob*](confirm-outbound-shipments-from-batch-jobs.md). (Fra og med Supply Chain Management version 10.0.21 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Konfigurere et menupunkt for mobilenheden til oprettelse af flytteordrer
 
@@ -307,11 +307,11 @@ Nej, du kan ikke føje flere nummerplader til en flytteordre, der har en **Fuldf
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finde eksisterende flytteordrer, der skal bruges via knappen "Vælg flytteordre" i mobilappen Lokationsstyring, hvis ordren endnu ikke er oprettet i backend-systemet?
 
-I øjeblikket kan du ikke slå flytteordrer op i appen, men du kan finde flytteordrenumrene på siden **Hændelser for lagerstedsapp**. Du kan finde flere oplysninger under [Forespørge på lagerstedsappens hændelser](#inquire-the-warehouse-app-events).
+Du kan gøre det muligt for arbejdere at slå numre på flytteordre op i mobilappen Lokationsstyring ved at bruge [dataforespørgsel](warehouse-app-data-inquiry.md)-egenskab. Du kan f.eks. oprette en [omvej](warehouse-app-detours.md)-menupunkt på mobilenhed for lagersted, der vises på webklientens **Hændelser for lagerapp**-side (`WHSMobileDeviceQueueMessageCollection`) som del af trinnet *Vælg ordre - MobileDeviceQueueMessageCollectionIdentifierId*. Overførselsnummeret svarer til den værdi, der vises i feltet **Id**. Se også [Forespørge om hændelser i lagerstedsapp](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kan jeg manuelt vælge det flytteordrenummer, der skal bruges, fra mobilappen Lokationsstyring?
 
-Kun automatisk genererede flytteordrenumre via nummerserier understøttes.
+Kun automatisk genererede flytteordrenumre via nummerserier understøttes. Se også svaret på det forrige spørgsmål om, hvordan du definerer knappen **Vælg flytteordre**. Du kan finde oplysninger om, hvordan du finder overførselsordrenumre, under [Forespørge på lagerstedappens hændelser](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Baggrundsbehandling
 

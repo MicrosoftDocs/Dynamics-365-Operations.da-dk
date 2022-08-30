@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4c8cd4e32880df771a4a72237d212e061f849ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848246"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336916"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere berettigelsesregler og -indstillinger 
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Når du har konfigureret de krævede parametre for Frynsegodeadministration , kan du oprette de berettigelsesregler, bundter, perioder og programmer, som du vil knytte til dine frynsegodeplaner.
 

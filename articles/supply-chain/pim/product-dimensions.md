@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a8deb71713619b4be6c875223ab3b1f08499dfb2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867921"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335129"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -108,7 +108,7 @@ Når du tester løsningerne for at sikre kompatibilitet med versionsdimensionen,
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivere versionsdimensionen
 
-Før du kan bruge versionsdimensionen, skal den være aktiveret i dit system. Denne opgave kræver administratorrettigheder.
+Før du kan bruge versionsdimensionen, skal den være aktiveret for dit system. Denne opgave kræver administratorrettigheder.
 
 1. Gå til **Systemadministration \> Arbejdsområder \> Funktionsstyring**.
 1. Aktiver den funktion, der hedder *Produktdimension for version*. (Få flere oplysninger i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)

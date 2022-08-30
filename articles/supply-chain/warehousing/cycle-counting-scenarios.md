@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4f6f3f2db6efcc4d4d6ae3d278751a230fca9a64
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 91a18b6deade6d67fce6b90308671910a4196104
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068590"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335729"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Eksempelscenarier for cyklusoptælling
 
@@ -32,7 +32,7 @@ De enkelte scenarier i denne artikel indeholder referencer til værdier og poste
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Slå understøttelse til for Warehouse Management-mobilappen
 
-Hvis du vil bruge mobilappen Warehouse Management, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret i systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge mobilappen Warehouse Management, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Forberede demodata til scenarierne
 

@@ -2,7 +2,7 @@
 title: Oprette foruddefinerede produktvarianter
 description: Denne procedure fører dig gennem oprettelsen af produktvarianter for en produktmaster ved hjælp af kombinationer af produktdimensioner.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6d3a4ae8efd438e01c263af1c0a1746d9484e491
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a26439b8c7346cdce2b4c9804493fea94c29ac31
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103083"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335909"
 ---
 # <a name="predefined-product-variants"></a>Foruddefinerede produktvarianter
 
@@ -86,7 +86,7 @@ Følgende forbedringer tilføjes af denne funktion:
 
 ### <a name="turn-the-variant-suggestions-page-improvements-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Forbedringer på side med variantforslag
 
-Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Forbedringer af siden Variantforslag* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Forbedringer af siden Variantforslag* i arbejdsområdet [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="work-with-the-improved-variant-suggestions"></a>Arbejde med de forbedrede variantforslag
 

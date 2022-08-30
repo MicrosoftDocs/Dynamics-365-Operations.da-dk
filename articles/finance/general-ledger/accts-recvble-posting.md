@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874568"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324323"
 ---
 # <a name="accounts-receivable-posting"></a>Debitorbogføring
 
 [!include [banner](../includes/banner.md)]
 
 Den primære posteringsprofil for modulet **Debitor** er debitorposteringsprofilen. Denne posteringsprofil bestemmer, hvilken samlekonto der bruges, når debitorsaldi bogføres i finansmodulet. En samlekonto er en hovedkonto. Den kaldes også handelskontoen for Debitor.
+
+Rapporten **Debitor-til-finansafstemning** kan bruges efter bogføringen til at afstemme saldi for debitor- og finanskonti. Rapporten bruger de oplysninger, der findes i samlekontoen til debitorens posteringsprofil. Den bruger ikke samlekontoen fra det regnskab, der er oprettet til dokumentet. Hvis du foretager ændringer i debitorposteringsprofilen eller den debitorgruppe, der er tildelt debitoren, efter at du har bogført posteringer, kan rapporten vise forskelle mellem debitor- og finanskontosaldoen. Hvis du kun vil have vist linjer med forskelle og linjer, som debitorkontiene og finanskontoen begge er nul for, skal du kun vælge parameteren **Forskelle**, når rapporten udskrives.
 
 Du kan finde flere oplysninger i [Debitorposteringsprofiler](../accounts-receivable/customer-posting-profiles.md).
 

@@ -2,7 +2,7 @@
 title: Varekonsolidering – udnyttelse af adresse
 description: Denne artikel indeholder oplysninger om funktioner, der gør det nemt for lagerchefer at få vist og filtrere volumetrisk anvendelse af lokationer på tværs af lagerstedet. Ledere kan vælge lokationer og oprette lagerbevægelse direkte fra siden siden Varekonsolidering for at konsolidere varer og dermed udnytte lagerstedets areal bedre.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219436"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336417"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – udnyttelse af adresse
 
@@ -30,8 +30,8 @@ Denne artikel indeholder oplysninger om funktioner, der gør det nemt for lagerc
 
 Før du kan bruge de funktioner, der er beskrevet i denne artikel, skal du aktivere dem i systemet. Administratorer kan bruge arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Slå begge af følgende funktioner til i den rækkefølge, de angives i. (Begge funktioner er til modulet **Lokationsstyring**).
 
-1. *Placeringsstatus for lagersted* (fra og med version 10.0.29 er denne funktion som standard aktiveret. Du kan finde flere oplysninger under [Placeringsstatus for lagersted](warehouse-location-status.md).)
-2. *Udnyttelse af varekonsolideringslokation*
+1. *Placeringsstatus for lagersted*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Du kan finde flere oplysninger under [Placeringsstatus for lagersted](warehouse-location-status.md).)
+2. *Udnyttelse af varekonsolideringslokation*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret.)
 
 ## <a name="warehouse-location-status"></a>Placeringsstatus for lagersted
 

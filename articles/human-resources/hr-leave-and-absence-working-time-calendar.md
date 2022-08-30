@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861067"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323538"
 ---
 # <a name="create-a-working-time-calendar"></a>Oprette en arbejdstidskalender
 
-
-> [!Important]
-> De funktioner, der nævnes i denne artikel, er i øjeblikket tilgængelige for kunder med enkeltstående Dynamics 365 Human Resources. Nogle eller alle funktionerne vil være tilgængelige som en del af en fremtidig version af Finance-infrastrukturen efter Finance-frigivelse 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Konfigurer mindst én arbejdstidskalender, der viser arbejdsdagene og -timerne. 
 
 3. Under **Oprettelsesindstillinger** kan du vælge arbejdsdage for din organisation og angive arbejdstider. 
    - Hvis du vil tilføje en helligdag eller en lukning, skal du vælge knappen **Tilføj** ud for **Helligdage og lukninger**.
-   - Hvis du vil tilføje ikke-arbejdstider, f.eks. frokostpauser, skal du vælge **Tilføj** under **Fritid** og angive navnet og tids intervallet.
+   - Hvis du vil tilføje ikke-arbejdstider, f.eks. frokostpauser, skal du vælge **Tilføj** under **Ikke-arbejdstid** og angive navnet og tidsintervallet.
 
 4. Under **Dage** skal du vælge **Generér** for at generere dagene i kalenderen. Angiv datointervallet for kalenderen, og vælg derefter **Generér dage**.
 

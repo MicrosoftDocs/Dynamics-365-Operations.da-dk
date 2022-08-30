@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59fe5ece00500f7dafab282c00d572575706f790
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894579"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323952"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
-
-> [!Important]
-> De funktioner, der nævnes i denne artikel, er i øjeblikket tilgængelige for kunder med enkeltstående Dynamics 365 Human Resources. Nogle eller alle funktionerne vil være tilgængelige som en del af en fremtidig version af Finance-infrastrukturen efter Finance-frigivelse 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,31 +38,21 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 
 ## <a name="add-a-leave-type"></a>Tilføje en orlovstype
 
-1. På siden **Orlov og fravær** skal du vælge fanen **Links**.
-
+1. På arbejdsområdet **Orlov og fravær** skal du vælge fanen **Links**.
 2. Vælg **Orlovs- og fraværstyper** under **Konfiguration**.
-
 3. Vælg **Ny**.
-
 4. Angiv et navn til orlovstypen under **Type**, vælg en arbejdsgang fra **Arbejdsgangs-id**, og indtast en **Beskrivelse**.
-
 5. I **Generelt** skal du vælge **Ingen**, **Planlagt** eller **Ikke planlagt** på rullelisten **Kategori**.
-
 6. Vælg en lønkode på rullelisten **Lønkode**.
-
 7. Under **Årsagskode skal angives** skal du vælge, om du vil kræve en årsagskode. Hvis du vil kræve årsagskoder, skal du muligvis tilføje dem. Under **Årsagskoder** skal du vælge **Tilføj**, vælge en årsagskode og derefter markere afkrydsningsfeltet **Aktiveret** ved siden af.
-
 8. Under **Begræns adgangen til valgte roller** skal du vælge, om du vil begrænse adgangen. Vælg derefter sikkerhedsrollerne under **Sikkerhedsroller for denne orlovstype**. Sikkerhedsrollerne defineres i den arbejdsgang, du valgte under **Arbejdsgangs-id** tidligere i denne procedure.
-
 9. Vælg den farve, der skal vises på orlovs- og fraværskalendere for denne orlovstype, under **Kalenderfarve**. 
-
 10. Under **Suspensionsforhold** skal du vælge, om du ønsker, at denne orlovstype enten skal suspendere en anden orlovstype, eller den skal suspenderes af en anden orlovstype. Når der sendes en orlovsanmodning for den suspenderende orlovstype, oprettes der automatisk en orlovssuspendering for den suspenderede orlovstype. 
-
-10. Vælg **Gem**.
+11. Vælg **Gem**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurere regler for orlovstype
 
-1. Angiv afrundingsindstillinger for orlovstypen. Indstillingerne omfatter **Ingen**, **Op**, **Ned** og **Nærmeste**. Du kan også angive afrundingspræcision for orlovstypen.
+1. Angiv afrundingsindstillinger for typen **Orlov og fravær**. Indstillingerne omfatter **Ingen**, **Op**, **Ned** og **Nærmeste**. Du kan også angive afrundingspræcision for orlovstypen.
 
 2. Angiv **Helligdagskorrektion** for orlovstypen. Når du vælger denne indstilling, bruges det antal helligdage, der falder på en arbejdsdag, til at bestemme, hvordan der skal periodiseres tid for orlovstypen. Hvis juledag f.eks. falder på en mandag, trækker Human Resources én dag fra orlovstypen ved behandling af periodiseringer.
 

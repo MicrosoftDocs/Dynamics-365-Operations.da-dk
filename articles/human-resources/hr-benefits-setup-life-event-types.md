@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691716"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336907"
 ---
 # <a name="configure-life-event-types"></a>Konfigurere livshændelsestyper
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources bruger **livshændelsestyper**, når det er relevant at opdatere tilmelding til medarbejderfrynsegoder, f.eks. i forbindelse med bryllup eller barsel. Hvert livshændelsestype-id kan kun knyttes til én livshændelsestype. Hvis du f.eks. opretter et **livshændelses-id**, der kaldes **Adresseændring**, som er knyttet til livshændelsestypen **Medarbejderens adresseændring**, kan du ikke oprette et nyt id med navnet **Medarbejderens adresseændring** og knytte det til livshændelsen **Medarbejderens adresseændring**. Hvis en levetidshændelsestype ikke er knyttet til en plantype, udløser levetidshændelsestypen ikke en levetidshændelse. Yderligere oplysninger finder du i [Oprette plantyper](hr-benefits-setup-plan-types.md).
 

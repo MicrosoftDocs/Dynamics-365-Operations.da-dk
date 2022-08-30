@@ -2,7 +2,7 @@
 title: Konfigurere grænsefladen til produktionsudførelse
 description: Denne artikel beskriver, hvordan du opretter en eller flere konfigurationer til grænsefladen til kørsel af produktionsudstyr. Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den automatisk en udvalgt konfiguration og et jobfilter, der er specifikt for browseren og enheden. I konfigurationen skal du angive de politikker, der skal gælde for en bestemt anvendelse.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220356"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336179"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -35,7 +35,7 @@ Denne artikel beskriver de forskellige indstillinger til konfiguration af en gr�
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktivere grænsefladen til kørsel af produktion og dens relaterede valgfrie funktioner
 
-Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstillinger, der er beskrevet i denne artikel, skal være aktiveret i systemet, før du kan bruge dem. Brug siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere nogle af eller alle de funktioner, der er beskrevet i følgende underafsnit, efter behov.
+Selve grænsefladen til kørsel af produktion, plus flere af de valgfrie indstillinger, der er beskrevet i denne artikel, skal være aktiveret for systemet, før du kan bruge dem. Brug siden [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at aktivere nogle af eller alle de funktioner, der er beskrevet i følgende underafsnit, efter behov.
 
 ### <a name="the-production-floor-execution-interface"></a>Grænsefladen til kørsel af produktion
 
@@ -63,29 +63,32 @@ Fra og med Supply Chain Management version 10.0.21 er denne funktion som standar
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktion til aktivstyring af grænsefladen til produktionsudførelse
 
-Denne funktion føjer en fane for aktivstyring til grænsefladen for produktionsudførelse. Arbejdere kan bruge denne fane til at vælge et aktiv, der er tilknyttet en maskinressource, som findes inden for det valgte filter på joblisten. For det valgte maskinaktiv kan arbejderen få vist aktivets tilstand fra tællerværdier for op til fire udvalgte tællere. Hvis du vil bruge denne funktion, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
+Denne funktion føjer en fane for aktivstyring til grænsefladen for produktionsudførelse. Arbejdere kan bruge denne fane til at vælge et aktiv, der er tilknyttet en maskinressource, som findes inden for det valgte filter på joblisten. For det valgte maskinaktiv kan arbejderen få vist aktivets tilstand fra tællerværdier for op til fire udvalgte tællere.
 
-- *Funktion til aktivstyring af grænsefladen til produktionsudførelse*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret.)
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Funktion til aktivstyring af grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-job-search"></a>Aktivere jobsøgning
+### <a name="job-search"></a>Jobsøgning
 
-Denne funktion gør det muligt at føje et søgefelt til joblisten. Arbejdere kan finde et bestemt job ved at angive job-id'et eller finde alle job for en bestemt ordre ved at angive ordre-id'et. Arbejdere kan angive id'et ved hjælp af et tastatur eller ved at scanne en stregkode. Hvis du vil bruge den, skal du i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktivere følgende funktion:
+Denne funktion gør det muligt at føje et søgefelt til joblisten. Arbejdere kan finde et bestemt job ved at angive job-id'et eller finde alle job for en bestemt ordre ved at angive ordre-id'et. Arbejdere kan angive id'et ved hjælp af et tastatur eller ved at scanne en stregkode.
 
-- *Jobsøgning til grænsefladen til produktionen*<br>(Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret.)
+Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Jobsøgning til grænsefladen til produktionen* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivere rapportering af samprodukter og biprodukter
+### <a name="report-on-co-products-and-by-products"></a>Rapportere om samprodukter og biprodukter
 
-Denne funktion giver medarbejderne mulighed for at bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer. Denne rapportering inkluderer rapportering af samprodukter og biprodukter. Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Denne funktion giver medarbejderne mulighed for at bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer. Denne rapportering inkluderer rapportering af samprodukter og biprodukter.
 
-- *Rapport over samprodukter og biprodukter fra grænsefladen for udførelse af produktion*
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er funktionen som standard aktiveret. Administratorer kan slå denne funktion til eller fra ved at søge efter funktionen *Rapport over samprodukter og biprodukter fra grænsefladen for udførelse af produktion* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivere visningen af komplette serie-, batch- og id-numre
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Vise komplette serie-, batch- og id-numre
 
 Denne funktion giver en forbedret ydeevne, når du får vist lister over serie-, batch- og nummerpladenumre i brugergrænsefladen til produktionsudførelse. Visningen ændres fra en kortvisning med et begrænset antal tegn til en listevisning, der giver tilstrækkelig plads til at vise de fulde værdier. Listen giver dig også mulighed for at søge efter bestemte numre.
 
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Vis fulde serie-, batch- og id-numre i grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
 Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan slå denne funktion til eller fra ved at søge efter funktionen *Vis fulde serie-, batch- og id-numre i grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-registering-of-material-consumption"></a>Aktivere registrering af materialeforbrug
+### <a name="register-material-consumption"></a>Registrer materialeforbrug
 
 Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
 
@@ -97,7 +100,7 @@ Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er
 > [!IMPORTANT]
 > Du kan bruge funktionen ikke-WMS alene. Hvis du bruger WMS, skal du dog aktivere begge funktioner.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Aktivere rapportering af fastvægtvarer
+### <a name="report-on-catch-weight-items"></a>Rapportering om fastvægtvarer
 
 Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for fastvægtvarer i batchordrer. Batchordrer oprettes ud fra formler, som kan defineres til at have fastvægtvarer som formelvarer, samprodukter og biprodukter. En formel kan også defineres, så den indeholder formellinjer til ingredienser, der er defineret for fastvægt. Fastvægtvarer bruger to måleenheder til at spore lagerbeholdning: fastvægtantal og lagerantal. I fødevarebranchen kan kød i kasser f.eks. defineres som en fastvægtvare, hvor fastvægtantallet bruges til at spore antallet af kasser, og lagerantallet bruges til at spore kassernes vægt.
 
@@ -105,15 +108,13 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 - *Rapport over fastvægtvarer fra grænsefladen for udførelse af produktionsgulv*
 
-### <a name="enable-the-my-day-dialog"></a>Aktivere dialogboksen "Min dag"
+### <a name="the-my-day-dialog"></a>Dialogboksen "Min dag"
 
 Dialogboksen **Min dag** giver arbejdere et overblik over deres daglige registreringer og aktuelle saldi for betalt tid, betalt overtid, fravær og betalt fravær.
 
-Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er funktionen som standard aktiveret. Administratorer kan slå denne funktion til eller fra ved at søge efter funktionen *Visningen "Min dag" til grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Visningen "Min dag" til grænsefladen til produktionsudførelse*
-
-### <a name="enable-teams"></a>Aktivere teams
+### <a name="teams"></a>Teams
 
 På denne måde kan flere arbejdere arbejde som et team på samme produktionsjob. Teamet kan udpege én arbejder som pilot. De øvrige arbejdere bliver derefter automatisk assistenter for den pågældende pilot. Det er kun piloten, der skal registrere jobstatus for det resulterende team. Tidsposter gælder for alle teammedlemmer.
 
@@ -121,7 +122,7 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 - *Grænsefladen til produktionsteam i produktionsudførelse*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivere yderligere konfiguration af grænsefladen til produktionsudførelse
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Yderligere konfiguration af grænsefladen i produktionsudførelse
 
 Denne funktion føjer indstillinger til følgende funktioner på siden **Konfigurer produktionsudførelse**:
 
@@ -136,7 +137,6 @@ Denne artikel indeholder oplysninger om, hvordan du konfigurerer udbyderen sener
 Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Yderligere konfiguration af grænsefladen til produktionsudførelse*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbejde med kørselskonfigurationer for produktionsudstyr
 

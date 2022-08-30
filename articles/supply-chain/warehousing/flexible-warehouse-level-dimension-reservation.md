@@ -2,7 +2,7 @@
 title: Fleksibel reservationspolitik for dimension på lagerstedsniveau
 description: Denne artikel beskriver politikken for lagerreservation, hvor virksomheder, der sælger batchsporede produkter og kører deres logistik som WMS-aktiverede operationer, kan reservere bestemte batches for kundesalgsordrer, selvom det reservationshierarki, der er tilknyttet produkterne, ikke tillader reservation af bestemte batches.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065892"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335699"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel reservationspolitik for dimension på lagerstedsniveau
 
@@ -196,12 +196,12 @@ I dette scenario bruger en virksomhed Warehouse Management og arbejdsbehandling 
 - Et id kan registreres og reserveres, når ordren udtages af salgsbehandleren, og det kan ikke ændres af andre behov. Denne funktionsmåde er en hjælp til at sikre, at det id, der blev planlagt, sendes til kunden.
 - Hvis id'et ikke allerede er tilknyttet en salgsordrelinje, kan lagermedarbejderne vælge et id under plukarbejdet, når salgsordreregistrering og -reservation er fuldført.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Aktivere fleksibel reservation af id
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Slå fleksibel reservation af id til eller fra
 
-Før du kan bruge fleksibel reservation af id, skal to funktioner være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Du skal aktivere funktionerne i følgende rækkefølge:
+Før du kan bruge fleksibel reservation af id, skal to funktioner være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere statussen for funktionerne og aktivere dem, hvis de skal bruges. Du skal aktivere funktionerne i følgende rækkefølge:
 
-1. **Funktionsnavn:** *Fleksibel reservation for dimension på lagerstedsniveau*
-1. **Funktionsnavn:** *Fleksibel reservation af ordrebekræftet id*
+1. *Fleksibel reservation af dimension på lagerstedsniveau*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. *Fleksibel ordrebekræftet id-reservation*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Reservere et bestemt id på salgsordren
 

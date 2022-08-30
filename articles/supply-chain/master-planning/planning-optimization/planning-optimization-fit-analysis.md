@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262322"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347283"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -77,10 +77,10 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Låsningstidshorisont | Varedisponeringsposter med låsningstidshorisont angivet: *\#* | Denne funktion afventer. I øjeblikket ignoreres opsætningen af låsningstidshorisont, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
 | Låsningstidshorisont | Behovsplaner med låsningstidshorisont angivet: *\#* | Denne funktion afventer. I øjeblikket ignoreres opsætningen af låsningstidshorisont, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
 | Intern handel | Behovsplaner, der inkluderer planlagt downstream-efterspørgsel: *\#* | Denne funktion understøttes nu. Yderligere oplysninger finder du i [Planlægning af intern handel](Intercompany-planning.md) | Understøttet |
-| Kanban | Varedisponeringsposter med ordreforslagstypen kanban: *\#* | Denne funktion afventer. Aktuelt vil varedisponering, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-ordreforslagstypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | 2023 eller senere |
-| Kanban | Varer med standardordretypen kanban: *\#* | Aktuelt vil en standardordretype, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-standardordretypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | 2023 eller senere |
+| Kanban | Varedisponeringsposter med ordreforslagstypen kanban: *\#* | Denne funktion afventer. Aktuelt vil varedisponering, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-ordreforslagstypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | Fremtidig bølge |
+| Kanban | Varer med standardordretypen kanban: *\#* | Aktuelt vil en standardordretype, der er angivet til kanban, blive ignoreret, når planlægningsoptimering er aktiveret. Kanban-standardordretypen opretter en advarsel under varedisponeringen, og der oprettes indkøbsordreforslag for at dække det relaterede behov. | Fremtidig bølge |
 | Status for produktlivscyklus | Status for produktlivscyklus er ikke aktive for disponering: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger under [Udelade produkter, der har specifikke statusser for produktlivscyklus](product-lifecycle-state.md) | Understøttet |
-| Produktion | Styklistelinjer med afrunding eller flere opsætninger: *\#* | Denne funktion afventer. I øjeblikket ignoreres afrunding og flere opsætninger på styklistelinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2023 eller senere |
+| Produktion | Styklistelinjer med afrunding eller flere opsætninger: *\#* | Denne funktion afventer. I øjeblikket ignoreres afrunding og flere opsætninger på styklistelinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | Fremtidig bølge|
 | Produktion | Stykliste/formellinjer med formelmåling: *\#* | Denne funktion afventer. I øjeblikket ignoreres formelmål på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
 | Produktion | Stykliste/formellinjer med erstatningsvare (plangrupper): *\#* | Denne funktion afventer. I øjeblikket ignoreres erstatningsvare (plangrupper) på styklister og formellinjer, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
 | Produktion | Stykliste/formellinjer med negativt antal: *\#* | Denne funktion afventer. Styklister og formellinjer, der har et negativt antal, medtages med et antal på 0 (nul), og der udstedes en advarsel, når planlægningsoptimering aktiveres. Opdater masterdata for at undgå advarsler. | 2022 udgivelsesbølge 2 |
@@ -93,11 +93,11 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Produktion | Formelversioner med sam-/biprodukter: *\#* | Denne funktion afventer. I øjeblikket ignoreres samprodukter og biprodukter, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022 udgivelsesbølge 2 |
 | Produktion | Formelversioner med udbytte: *\#* | Denne funktion afventer. I øjeblikket ignoreres udbytte, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022 udgivelsesbølge 2 |
 | Produktion | Planer, som inkluderer rækkefølge: *\#* | Denne funktion afventer. I øjeblikket ignoreres rækkefølge, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
-| Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: *\#* | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | 2023 eller senere |
+| Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: *\#* | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | Fremtidig bølge |
 | Produktion | Ressourcer, der er planlagt med kapacitetsbegrænsning: *\#* | Denne funktion afventer. I øjeblikket ignoreres ressourcer, der er planlagt med kapacitetsbegrænsning, når planlægningsoptimering er aktiveret. Planlægningen udføres på basis af standardleveringstiden fra produktet. | 2022 udgivelsesbølge 2 |
 | Produktion | Ruter, der bruges i planlægning: *\#* | Denne funktion understøttes. | Understøttet |
-| Produktion | Reservation af salgslinje ved hjælp af udfoldning: *\#* | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | 2023 eller senere |
-| Produktion | Planlægning med udfoldning af produktionsordrer: *\#* | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | 2023 eller senere |
+| Produktion | Reservation af salgslinje ved hjælp af udfoldning: *\#* | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | Fremtidig bølge |
+| Produktion | Planlægning med udfoldning af produktionsordrer: *\#* | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | Fremtidig bølge |
 | Tilbudsanmodning | Behovsplaner med tilbudsanmodninger aktiveret: *\#* | Denne funktion afventer. På nuværende tidspunkt betragtes tilbudsanmodninger ikke som efterspørgsel, når planlægningsoptimering aktiveres. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 |
 | Rekvisitioner | Behovsplaner med rekvisitioner aktiveret: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger under [Indkøbsrekvisitioner](purchase-requisitions.md) | Understøttet |
 | Sikkerhedsmargener | Disponeringsgrupper med sikkerhedsmargen: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Understøttet |

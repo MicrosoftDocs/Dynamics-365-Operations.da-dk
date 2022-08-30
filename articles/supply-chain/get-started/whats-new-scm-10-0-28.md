@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 09a01a9100b5fc17317d40a8b3e4dbd1aae92e8b
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228475"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334769"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
 
@@ -36,7 +36,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Lager og logistik | [Enheder til integration af landingsomkostninger for tredjepartsspeditører](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Oversigt over enheder til landingsomkostninger](../landed-cost/landed-cost-entities-overview.md) | Aktiveret som standard |
 | Planlægning | [Planlægning af efterspørgselsbaseret materialebehov (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Oversigt over planlægning af efterspørgselsbaseret materialebehov](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionsstyring:<br>*(Forhåndsversion) DDMRP til planlægningsoptimering* |
 | Planlægning | [Planlægningsoptimerings-understøttelse af CTP (leveringsevne)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [Beregne leveringsdatoer for salgsordrer ved hjælp af LE](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Funktionsstyring:<br>*(Forhåndsversion) CTP til planlægningsoptimering* |
-| Planlægning | [Understøttelse af hyldelevetid i planlægningsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Kommer snart | Aktiveret som standard |
+| Planlægning | [Understøttelse af hyldelevetid i planlægningsoptimering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | [Overordnet planlægning for produkter med begrænset hyldelevetid](../master-planning/planning-optimization/shelf-life.md) | Aktiveret som standard |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsforbedringer, der er inkluderet i denne version
 

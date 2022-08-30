@@ -2,7 +2,7 @@
 title: Forhåndsversion af Dynamics 365 Commerce 10.0.29 (oktober 2022)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c1f85fcd8f79106a3af93489d3bef608b9840bf3
-ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
+ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9224232"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306226"
 ---
 # <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Forhåndsversion af Dynamics 365 Commerce 10.0.29 (oktober 2022)
 
@@ -38,6 +38,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Customer Service | [Aktivér kundeservice med Dynamics 365 Omnikanal til Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | En førsteklasses supportoplevelse for kunder er nøglen til at give en personlig og tilfredsstillende handelserfaring for forbrugere. Der findes i øjeblikket flere berøringspunkter for handel, f.eks. fysiske butikker, onlinekanaler og sociale kanaler. Forbrugere forventer en personlig supportoplevelse på alle disse berøringspunkter. Denne funktion hjælper dig med at øge konverteringer af indkøbsvogn til salg, øge personlig kontakt med forbrugere og forbedre kundeservice ved at integrere med Dynamics 365 Omnikanal til Customer Service. | Aktiveres af administratorer/beslutningstagere |
 | E-commerce | Understøttelse af produktsammenligning i e-handel | Gør det muligt for køberne at sammenligne produkter på tværs af en lang række kategorier, så de kan træffe den rigtige købsbeslutning for sig selv. Denne funktion er tilgængelig både for business-to-consumer (B2C) og B2B-websteder. | Webstedsgenerator | 
 | Gavekort | Understøttelse af tabeller med detailgavekort til deling af data på tværs af virksomheder | Dynamics headquarters understøtter muligheden for at aktivere deling af data på tværs af virksomheder for bestemte tabeller i Dynamics-arkitekturen. I denne funktion tilføjer Dynamics 365 Commerce understøttelse af tabeller med detailgavekort til deling af data på tværs af virksomheder. Derfor kan et gavekort i ét firma nu få dataene duplikeret til et andet firma i miljøet. Ændringer, der foretages i tabellen med oprindelige firmagavekort, deles med tabellen med duplikerede firmagavekort. | Udviklere |
+| Globalisering | [Aktivere Commerce-lokaliseringsfunktioner til ny Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Den nye funktion giver mulighed for at aktivere funktioner til lokalisering af handel fra Commerce Headquarters ved hjælp af funktionsstyringsstruktur eller -parametre. Regnskabsintegration er nu inkluderet i det nye Commerce SDK og understøtter uafhængig emballage. Denne funktion aktiverer også den internationale handel i Store Commerce-appen af globale handelskunder.<p><p>Denne version indeholder funktioner til udtagning af handel og regnskabsintegration i [Østrig](../localizations/emea-aut-fi-sample.md), [Tjekkiet](../localizations/emea-cze-fi-sample.md), [Frankrig](../localizations/emea-fra-cash-registers.md), [Tyskland](../localizations/emea-deu-fi-sample.md), [Italien](../localizations/emea-ita-fpi-sample.md), [Norge](../localizations/emea-nor-cash-registers.md) og [Polen](../localizations/emea-pol-fpi-sample.md). | Aktiveres af administratorer/beslutningstagere |
 | Ydeevne | Fjerne RTS-afhængighed for scenarier med "rediger kunde" | Høj tilgængelighed og høj ydeevne er standardforventninger til POS- og e-handelskanaler. For at imødekomme disse forventninger behøver Dynamics 365 Commerce-kanaler ikke længere at være afhængige af realtidskommunikation med Commerce headquarters, når kundeoplysninger redigeres. Muligheden for at redigere kundeoplysninger asynkront for asynkrone og ikke-asynkrone kunder kan være med til at reducere antallet af opkald i realtid til Commerce headquarters. | Aktiveres af administratorer/beslutningstagere |
 
 ## <a name="feature-state-changes-in-this-release"></a>Ændringer af funktionstilstand i denne version

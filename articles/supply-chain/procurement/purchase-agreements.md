@@ -2,7 +2,7 @@
 title: Købsaftaler
 description: Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669539"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335879"
 ---
 # <a name="purchase-agreements"></a>Købsaftaler
 
@@ -41,7 +41,7 @@ For at forhindre, at din købsaftale bliver brugt og bekræftet, skal du markere
 Du kan identificere en primær ansvarlig arbejder og sekundær ansvarlig arbejder i købsaftaleklassifikationen. Disse værdier nedarves af den resulterende købsaftale. Du er ikke forpligtet til at føje ansvarlige arbejdere til købsaftalen, og de kan ændres direkte for hver enkelt sag på selve købsaftalen. Du kan ikke angive en sekundær ansvarlig arbejder uden en primær ansvarlig arbejder, selvom du ikke behøver at have en sekundær ansvarlig arbejder. Du kan ikke angive den samme arbejder som både den primære og sekundære ansvarlige arbejder.
 
 > [!IMPORTANT]
-> Før du kan bruge funktionen Ansvarlig part, skal den være slået til i dit system. Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Ansvarlig part for købsaftale* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> Før du kan bruge funktionen Ansvarlig part, skal den være slået til for dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Ansvarlig part for købsaftale* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en købsaftale er en forpligtelse til at købe noget. Du kan bruge linjer fra flere købsordrer (IO'er) til at opfylde forpligtelsen. Der findes fire typer forpligtelser:

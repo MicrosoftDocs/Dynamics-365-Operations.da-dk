@@ -2,27 +2,28 @@
 title: Eksempel på integration af bonprinter i Polen
 description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2019-02-01
-ms.openlocfilehash: 1466532099820abcdf4496db80f9a34682e2ed5a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274226"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336653"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Eksempel på integration af bonprinter i Polen
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
 
-Funktionaliteten af Dynamics 365 Commerce for Polen omfatter en eksempelintegration af POS med en bonprinter. Eksemplet udvider [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og understøtter POSNET THERMAL HD 2.02-protokol for bonprintere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet giver mulighed for at kommunikere med en bonprinter, der er tilsluttet via en COM-port med en indbygget softwaredriver. Den er implementeret og testet ved hjælp af en software-emulator, som Posnet har leveret til bonprinteren Posnet Thermal HD FV EJ. Eksemplet findes i form af kildekode og er en del af Retail SDK (Software Development Kit).
+Funktionaliteten af Dynamics 365 Commerce for Polen omfatter en eksempelintegration af POS med en bonprinter. Eksemplet udvider [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og understøtter POSNET THERMAL HD 2.02-protokol for bonprintere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet giver mulighed for at kommunikere med en bonprinter, der er tilsluttet via en COM-port med en indbygget softwaredriver. Den er implementeret og testet ved hjælp af en software-emulator, som Posnet har leveret til bonprinteren Posnet Thermal HD FV EJ. Eksemplet findes i form af kildekode og er en del af Commerce SDK (Software Development Kit).
 
 Microsoft frigiver ikke hardware, software eller dokumentation fra Posnet. Oplysninger om, hvordan du henter bonprinteren og bruger den, får du ved at kontakte [Posnet Polska S.A.](https://www.posnet.com.pl)
 
@@ -97,12 +98,10 @@ I eksemplet med integration af bonprinter implementeres følgende regler, der er
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>Konfigurere regnskabsintegration for Polen
 
-Bonprinterintegrationens eksempel til Polen er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\Posnet** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) af en regnskabsdokumentudbyder, som er en udvidelse af Commerce Runtime (CRT), og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
+Bonprinterintegrationens eksempel til Polen er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Commerce SDK. Eksemplet på POS-udvidelse findes i mappen **src\\FiscalIntegration\\Posnet** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består af en regnskabsdokumentudbyder, som er en udvidelse af Commerce Runtime (CRT), og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Commerce SDK, finder du i [Download Commerce SDK-prøver og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [oprette en build-pipeline til den uafhængige emballage SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere (VM) i Microsoft Dynamics Lifecycle Services (LCS). Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md).
->
-> Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> Integration af regnskabsprinter for Polen er tilgængelig i Commerce SDK som pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere (VM) i Microsoft Dynamics Lifecycle Services (LCS). Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md).
 
 Fuldfør trinnene til opsætning af regnskabsintegration som beskrevet i [Konfigurere regnskabsintegration for Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -119,18 +118,16 @@ Hvis du vil aktivere registreringsprocessen, skal du følge disse trin for at ko
 1. Download konfigurationsfiler for regnskabsconnectoren og regnskabsdokumentudbyderen:
 
     1. Åbn lageret il [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion (f.eks. **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion.
     1. Åbn **src \> FiscalIntegration \> Posnet**.
-    1. Hent konfigurationsfilen til regnskabsdokumentudbyderen på **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** (for eksempel [filen til frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
-    1. Hent konfigurationsfilen til regnskabsconnectoren på **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (for eksempel [filen til frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Hent konfigurationsfilen til regnskabsdokumentudbyderen på **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfiguration \> DocumentProviderPosnetSample.xml**.
+    1. Hent konfigurationsfilen til regnskabsconnectoren på **HardwareStation \> ThermalDeviceSample \> Konfiguration \> ThermalDeviceSample.xml**.
 
-    > [!WARNING]
-    > På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Konfigurationsfilerne til dette eksempel på regnskabsintegration findes i følgende mapper i Retail SDK på en udvikler VM i LCS:
+    > [!NOTE]
+    > I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Konfigurationsfilerne til dette eksempel på regnskabsintegration findes i følgende mapper i Retail SDK på en udvikler VM i LCS:
     >
     > - **Konfigurationsfilen til regnskabsdokumentudbyder:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml
     > - **Konfigurationsfil til regnskabsconnector:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml
-    > 
-    > Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
 
 1. Gå til **Retail og Commerce \> Konfiguration af Headquarters \> Parametre \> Delte Commerce-parametre**. Under fanen **Generelt** skal du angive indstillingen **Aktivér regnskabsintegration** til **Ja**.
 1. Gå til **Retail og Commerce \> Konfiguration af kanal \> Regnskabsintegration \> Udbydere af regnskabsdokumenter**, og indlæs den konfigurationsfil til regnskabsdokumentudbyderen, du hentede tidligere.
@@ -173,16 +170,15 @@ Følgende indstillinger er inkluderet i konfigurationen af regnskabsconnectoren 
 
 ### <a name="configure-channel-components"></a>Konfigurere kanalkomponenter
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md).
->
-> Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> - Integration af regnskabsprinter for Polen er tilgængelig i Commerce SDK som pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md).
+> - Handelsprøver, der implementeres i dit miljø, opdateres ikke automatisk, når du anvender tjeneste- eller kvalitetsopdateringer på Commerce-komponenter. Du skal opdatere de påkrævede prøver manuelt.
 
 #### <a name="set-up-the-development-environment"></a>Konfigurere udviklingsmiljøet
 
 Følg disse trin for at konfigurere et udviklingsmiljø, så du kan teste og udvide eksemplet.
 
-1. Klon eller download lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion. Yderligere oplysninger finder du i [Hente Retail SDK-eksempler og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Klon eller download lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Vælg en korrekt version af frigivelsesafdelingen i overensstemmelse med din SDK/programversion. Yderligere oplysninger finder du i [Hente Commerce SDK-eksempler og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Åbn løsningen til integration af regnskabsprinter på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln**, og opbyg den.
 1. Installer CRT-udvidelser:
 
@@ -220,10 +216,10 @@ Følg trinnene i [Konfigurere en build-pipeline til et eksempel på regnskabsint
 
 ## <a name="design-of-extensions"></a>Design af udvidelser
 
-Bonprinterintegrationens eksempel til Polen er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Retail SDK. Eksemplet findes i mappen **src\\FiscalIntegration\\Posnet** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (f.eks. [eksemplet i frigivelse/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) af en regnskabsdokumentudbyder, som er en udvidelse af CRT, og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Retail SDK, finder du i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en build-pipeline til uafhængige SDK-pakker](../dev-itpro/build-pipeline.md).
+Bonprinterintegrationens eksempel til Polen er baseret på [funktionaliteten af regnskabsintegration](fiscal-integration-for-retail-channel.md) og er en del af Commerce SDK. Eksemplet på POS-udvidelse findes i mappen **src\\FiscalIntegration\\Posnet** i lageret til [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består af en regnskabsdokumentudbyder, som er en udvidelse af CRT, og en regnskabsconnector, som er en udvidelse af Commerce Hardware Station. Yderligere oplysninger om, hvordan du bruger Commerce SDK, finder du i [Download Commerce SDK-prøver og -referencepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [oprette en build-pipeline til den uafhængige emballage SDK](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grund af begrænsningerne ved den [nye uafhængige pakke- og udvidelsesmodel](../dev-itpro/build-pipeline.md) kan den ikke aktuelt bruges til dette eksempel på regnskabsintegration. Du skal bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md). Understøttelse af den nye uafhængige pakke- og udvidelsesmodel til eksempler på regnskabsintegration er planlagt til senere versioner.
+> [!NOTE]
+> Integration af regnskabsprinter for Polen er tilgængelig i Commerce SDK som pr. Commerce-version 10.0.29. I Commerce-version 10.0.28 eller tidligere skal du bruge den tidligere version af Retail SDK på en virtuel maskine til udviklere i LCS. Du kan få flere oplysninger i [Retningslinjer for installation af eksempel på integration af bonprinter i Polen (ældre)](emea-pol-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Design af Commerce Runtime-udvidelse
 

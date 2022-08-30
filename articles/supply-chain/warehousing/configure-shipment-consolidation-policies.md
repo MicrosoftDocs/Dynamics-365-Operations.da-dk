@@ -2,7 +2,7 @@
 title: Konfigurere politikker for forsendelseskonsolidering
 description: Denne artikel forklarer, hvordan du konfigurerer standard- og brugerdefinerede politikker for forsendelseskonsolidering.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219526"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336486"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -33,10 +33,7 @@ De scenarier, der vises i denne artikel, viser, hvordan du konfigurerer standard
 > [!IMPORTANT]
 > I det [første scenarie](#scenario-1), der beskrives i denne artikel, skal du først konfigurere et lagersted, så det bruger den tidligere funktion til forsendelseskonsolidering. Derefter gør du politikker for forsendelseskonsolidering tilgængelige. På denne måde kan du opleve, hvordan opgraderingsscenariet fungerer. Hvis du planlægger at bruge et demonstrationsdatamiljø til at gå gennem det første scenarie, skal du ikke aktivere funktionen, før du udfører scenariet.
 
-Før du kan bruge funktionen *Politikker for forsendelseskonsolidering*, skal du slå den til i systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Lokationsstyring*
-- **Funktionsnavn:** *Konsolider forsendelses*
+Før du kan bruge funktionen *Politikker for forsendelseskonsolidering*, skal du slå den til i systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Forsendelseskonsolideringspolitikker* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 

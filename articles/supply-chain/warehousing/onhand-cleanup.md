@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: df20f00a639d237bf8446f24a2ad4cbbfcf36615
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065113"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334379"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Job til oprydning i disponible poster til lokationsstyring
 
@@ -39,7 +39,7 @@ Hvis negativt fysisk lager er tilladt, kan oprydningsjobbet måske ikke slette a
 Oprydningsjobbet for disponible poster finder du i **Lagerstyring \> Periodiske opgaver \> Oprydning \> Oprydning i disponible poster til lokationsstyring**. Brug standardindstillingerne for jobbet til at styre omfanget af og planen for kørsel af jobbet. Desuden findes der følgende indstillinger:
 
 - **Slet, hvis der ikke er opdateret i så mange dage** – Angiv det mindste antal dage, jobbet skal vente, før det sletter en disponibel post, der er faldet til nul antal. Brug denne indstilling til at reducere risikoen for at slette de disponible poster, der stadig bruges. Hvis oprydningen skal finde sted så hurtigt som muligt, skal du enten indtaste *0* (nul) eller lade feltet være tomt.
-- **Maksimal kørselstid (timer)** – Angiv den maksimale kørselstid for oprydningsjobbet i timer. Hvis jobbet ikke fuldføres indenfor dette tidsrum, gemmes det arbejde, det har fuldført indtil nu, og lukkes derefter. Denne funktion er især relevant for implementeringer, der krævet stort lager. I disse tilfælde bør du planlægge, at jobbet skal køres på tidspunkter, hvor systembelastningen er så lille som muligt. Hvis du vil have, at batchjobbet skal fortsætte med at køre, indtil det er fuldført, skal du enten indtaste *0* (nul) eller lade feltet være tomt. Denne indstilling er kun tilgængelig, hvis den relaterede funktion er [aktiveret i systemet](#max-execution-time).
+- **Maksimal kørselstid (timer)** – Angiv den maksimale kørselstid for oprydningsjobbet i timer. Hvis jobbet ikke fuldføres indenfor dette tidsrum, gemmes det arbejde, det har fuldført indtil nu, og lukkes derefter. Denne funktion er især relevant for implementeringer, der krævet stort lager. I disse tilfælde bør du planlægge, at jobbet skal køres på tidspunkter, hvor systembelastningen er så lille som muligt. Hvis du vil have, at batchjobbet skal fortsætte med at køre, indtil det er fuldført, skal du enten indtaste *0* (nul) eller lade feltet være tomt. Denne indstilling er kun tilgængelig, hvis den relaterede funktion er [aktiveret for systemet](#max-execution-time).
 
 Selvom du kan køre jobbet inden for normal arbejdstid, anbefales det, at du kører det uden for arbejdstiden. På denne måde er du med til at forhindre konflikter, der kan opstå, hvis en bruger arbejder med en post, der også ryddes op i.
 

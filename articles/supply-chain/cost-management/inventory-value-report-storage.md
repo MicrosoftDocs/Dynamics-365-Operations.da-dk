@@ -2,7 +2,7 @@
 title: Lagerværdirapporter
 description: Denne artikel beskriver, hvordan du konfigurerer, genererer og bruger lagerværdirapporter. Disse rapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb.
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854552"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334919"
 ---
 # <a name="inventory-value-reports"></a>Lagerværdirapporter
 
@@ -55,7 +55,7 @@ Rapportresultater gemmes i dataenheden **Lagerværdi**. Du kan derfor filtrere o
 
 ## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Aktivere eller deaktivere funktionen Lagerværdirapportlager
 
-Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktion ved at søge efter funktionen *Lagerværdirapportlager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Lagerværdirapportlager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Definere konfigurationer af lagerværdirapport
 

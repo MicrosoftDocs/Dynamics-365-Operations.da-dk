@@ -2,7 +2,7 @@
 title: Domæner i Dynamics 365 Commerce
 description: Denne artikel beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288443"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336668"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Slutpunktet `<e-commerce tenant name>.dynamics365commerce.ms` understøtter ikke
 Hvis du vil konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller CDN, har du to muligheder:
 
 - Konfigurer en Front Door Service som Azure Front Door for at håndtere frontend-trafik og oprette forbindelse til Commerce-miljøet. Det giver større kontrol over domæne- og certifikatstyring og mere detaljerede sikkerhedspolitikker.
+
+> [!NOTE]
+> Hvis du bruger en ekstern CDN- eller front door-tjeneste, skal du sikre dig, at anmodningen lander på Commerce-platformen med værtsnavnet Commerce angivet, men med X-Forwarded-Host (XFH)-overskriften \<custom-domain\>. Hvis f.eks. din Commerce-slutpunkt er `xyz.dynamics365commerce.ms` og det brugerdefinerede domæne er `www.fabrikam.com`, skal værtsoverskriften for den videresendte forespørgsel skulle være `xyz.dynamics365commerce.ms`, og XFH-overskriften skal være `www.fabrikam.com`.
+
 - Brug den Commerce-leverede Azure Front Door-forekomst. Det kræver en handling til koordinering med Dynamics 365 Commerce-teamet i forbindelse med domænebekræftelse og anskaffelse af SSL-certifikater til dit produktionsdomæne.
 
 Du kan finde oplysninger om, hvordan du konfigurerer en CDN-tjeneste direkte, under [Tilføje understøttelse af et netværk, der leverer indhold (CDN)](add-cdn-support.md).
@@ -141,14 +145,18 @@ For eksisterende/aktive domæner:
 
 ## <a name="apex-domains"></a>Toppunktdomæner
 
-Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdomæner (roddomæner, der ikke indeholder underdomæner). Toppunktdomæner kræver en IP-adresse for at kunne fortolkes, og der findes kun virtuelle slutpunkter for Commerce Azure Front Door-forekomsten. Hvis du vil bruge et toppunktdomæne, har du to muligheder:
+Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdomæner (roddomæner, der ikke indeholder underdomæner). Toppunktdomæner kræver en IP-adresse for at kunne fortolkes, og der findes kun virtuelle slutpunkter for Commerce Azure Front Door-forekomsten. Hvis du vil bruge et toppunktdomæne, har du følgende muligheder:
 
 - **Mulighed 1** - Brug DNS-udbyderen til at omdirigere toppunktdomænet til et "www"-domæne. F.eks. omdirigerer fabrikam.com til `www.fabrikam.com`, hvor `www.fabrikam.com` er den CNAME-post, der peger på den Commerce-tilknyttede Azure Front Door-forekomst.
 
-- **Mulighed 2** - Konfigurer selv en CDN/front door-forekomst som vært for toppunktdomænet.
+- **Indstilling 2** – Hvis DNS-udbyderen understøtter ALIAS-poster, kan du pege på apex-domænet til front door-slutpunktet. Dette sikrer, at IP-ændringen via front door-slutpunktet afspejles.
+  
+- **Indstilling 3** – Hvis DNS-udbyderen ikke understøtter ALIAS-poster, skal du konfigurere et CDN eller front door-forekomst på din egen for at være vært for apex-domænet.
 
 > [!NOTE]
 > Hvis du bruger Azure Front Door, skal du også konfigurere en Azure DNS i det samme abonnement. Toppunktdomænet, der har Azure DNS som vært, kan pege på din Azure Front Door som en aliaspost. Dette er den eneste løsning, da toppunktdomæner altid skal pege på en IP-adresse.
+  
+Hvis du har spørgsmål om Apex-domæner, er du velkommen til at kontakte [Microsoft Support](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Yderligere ressourcer
 

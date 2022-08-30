@@ -2,7 +2,7 @@
 title: Planlagt direkte levering
 description: Denne artikel beskriver et avanceret planlagt cross-docking, hvor det lagerantal, der kræves til en ordre, anvises direkte ved modtagelse eller oprettelse til den korrekte dock i forsendelsesområde eller det midlertidige område. Alt restlager fra den indgående kilde sendes til den korrekte lagerplacering via den almindelige læg på lager-proces.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070283"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334559"
 ---
 # <a name="planned-cross-docking"></a>Planlagt cross-docking
 
@@ -37,10 +37,10 @@ På tidspunktet for modtagelse af indgående ordrer identificerer opsætningen a
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Slå funktionerne til planlagt cross-docking til
 
-Hvis systemet ikke allerede indeholder de funktioner, der er beskrevet i Denne artikel, skal du gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funktioner i denne rækkefølge:
+Hvis du kører Supply Chain Management version 10.0.28 eller tidligere, skal du muligvis aktivere planlagt direkte levering, før du kan bruge den. Gå til [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), og aktiver følgende funktioner i følgende rækkefølge:
 
-1. *Planlagt direkte levering*
-1. *Skabeloner til cross-docking med lokationsvejledninger*
+1. *Planlagt direkte levering*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres.)
+1. *Skabeloner til cross-docking med lokationsvejledninger*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret.)
     > [!NOTE]
     > Denne funktion gør det muligt at angive feltet **Vejledningskode** i skabelonen til cross-docking, ligesom du konfigurerer genopfyldningsskabeloner. Hvis du aktiverer denne funktion, kan du ikke føje en vejledningskode til linjerne i arbejdsskabelonen til cross-docking for den endelige *Læg*-linje. Derved sikres, at den endelige læg-placering kan bestemmes under oprettelsen af arbejdet, før du overvejer arbejdsskabeloner.
 
@@ -92,7 +92,7 @@ Planlagt cross-docking implementeres som en lastbogføringsmetode. Når du har a
 
     - **Vejledningskode:** Lad feltet være tomt
 
-        Denne indstilling aktiveres med funktionen *Skabeloner til cross-docking med lokationsvejledninger*. Systemet bruger lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. Hvis der er angivet en vejledningskode, når arbejde genereres, søger systemet i lokationsvejledninger ved hjælp af vejledningskoden. På denne måde kan du begrænse lokationsvejledninger, der bruges til en bestemt cross-docking-skabelon.
+        Denne indstilling aktiveres med funktionen *Direkte leveringsskabeloner med lokationsdirektiver* (pr. Supply Chain Management-version 10.0.29 er funktionen som standard aktiveret). Systemet bruger lokationsvejledninger som en hjælp til at bestemme, hvilken lokation cross-docking-lager skal flyttes til. Du kan definere den ved at tildele en vejledningskode til hver relevante cross-docking-skabelon. Hvis der er angivet en vejledningskode, når arbejde genereres, søger systemet i lokationsvejledninger ved hjælp af vejledningskoden. På denne måde kan du begrænse lokationsvejledninger, der bruges til en bestemt cross-docking-skabelon.
 
     - **Valider tidsvindue:** *Ja*
 

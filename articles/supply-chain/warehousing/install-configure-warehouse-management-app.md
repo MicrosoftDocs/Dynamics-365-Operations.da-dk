@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: d6131d205e650c0de88b85434629ed9537c2a0b1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171449"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335639"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og oprette forbindelse til Warehouse Management-mobilappen
 
@@ -38,7 +38,7 @@ mobilappen Warehouse Management er tilgængelig på både Windows- og Google And
 
 ## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>Aktivere eller deaktivere mobilappfunktioner i Warehouse Management eller Supply Chain Management
 
-Hvis du vil bruge mobilappen Warehouse Management, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret i systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil bruge mobilappen Warehouse Management, skal funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* være aktiveret for systemet. Fra og med Supply Chain Management version 10.0.25 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.25, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Brugerindstillinger, ikoner og trintitler til den nye lagerstedsapp* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Hent mobilappen Warehouse Management
 

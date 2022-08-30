@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166869"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334799"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.24 (februar 2022)
 
@@ -48,7 +48,7 @@ Hvis du vil slå en af disse funktioner til eller fra, skal du gøre det i [funk
 | Produktionsstyring | Kontrol af materialers tilgængelighed efter behov for produktionsordrer | Denne funktion gør det hurtigere at åbne siden **Produktionsordrer, der skal frigives**, som er tilgængelig fra arbejdsområdet **Administration af produktion**. Uden denne funktion kontrollerer systemet automatisk, om materialerne er tilgængelige for alle produktionsordrer på listen, så snart du åbner siden, hvilket kan tage lang tid, hvis du har et stort antal ordrer. Når denne funktion er aktiveret, leverer systemet i stedet en værktøjslinjeknap, som du kan bruge til kun at starte materialekontrollen for udvalgte ordrer, og hvis det er nødvendigt. |
 | Produktionsstyring | Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS) | Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Denne funktion understøtter kun varer, der ikke er aktiveret til brug af lokationsstyringsprocesser (WMS). Understøttelse af WMS-aktiverede varer er planlagt til en fremtidig frigivelse.<p>Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer har disse organisationer også brug for at registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter. |
 | Produktionsstyring | Færdigmelding af arbejdsbelastninger i lagerstyring for sky- og grænseskaleringsenheder | Med denne funktion kan arbejderne bruge mobilappen Warehouse Management til at færdigmelde en produktions- eller batchordre, når appen køres i forhold til en arbejdsbyrde for lagerstyring i en sky- eller grænseskalaenhed. Du kan finde flere oplysninger i [Færdigmelde og lægge på lager på en skaleringsenhed](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Lagerstedsstyring | Nye sider med lastplanlægningspanel | Aktiverer to nye sider i lastplanlægningspanelet: **Indgående lastplanlægningspanel** og **Udgående lastplanlægningspanel**. |
+| Warehouse management | Nye sider med lastplanlægningspanel | Tilføjer to nye sider i lastplanlægningspanelet: **Indgående lastplanlægningspanel** og **Udgående lastplanlægningspanel**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 

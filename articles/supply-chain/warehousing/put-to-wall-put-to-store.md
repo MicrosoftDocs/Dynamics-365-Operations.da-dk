@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af6dcb6d822ab14b0b4b881ca32626ea6eae4c28
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909637"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334500"
 ---
 # <a name="put-to-wall---put-to-store"></a>Sæt til væg – læg til butik
 
@@ -32,7 +32,7 @@ Denne lagerfunktion kaldes også for andre ting, f. eks. læg-på-let og brud å
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Aktivere funktionen for udgående sortering
 
-Før du kan bruge funktionaliteten *Sæt til væg – læg til butik*, skal funktionen *Udgående sortering* være aktiveret i systemet. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
+Før du kan bruge funktionaliteten *Sæt til væg – læg til butik*, skal funktionen *Udgående sortering* være aktiveret for systemet. Administratorer kan bruge området [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til efter behov. Dér vises funktionen på følgende måde:
 
 - **Modul:** *Lokationsstyring*
 - **Funktionsnavn:** *Udgående sortering*

@@ -2,7 +2,7 @@
 title: Lagerspærring
 description: Denne artikel indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Supply Chain Management. Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857802"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334679"
 ---
 # <a name="inventory-blocking"></a>Lagerspærring
 
@@ -96,11 +96,11 @@ Når **Reservér bestilte varer** er deaktiveret, kan de forventede tilgange ikk
 
 Bemærk forskellen i transaktionsstatus og dimensioner mellem de to sager. Derfor anbefales det, at du aktiverer indstillingen **Reservér bestilte varer**.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Deaktivere funktionen til forventede tilgange fra kvalitetsordrer, der vælger spærret lager
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Deaktiver forventede tilgange fra kvalitetsordrer, der vælger spærret lager
 
 For at forenkle lagertransaktionerne i tilfælde af kvalitetsordrer, der tager lagerbeholdning, som er blokeret, som en konsekvens af lagerstatus, indeholder systemet en funktion, der deaktiverer forventede tilgange fra sådanne kvalitetsordrer. Da den forventede tilgang med det samme blokeres af blokering af lagerstatus, sker der ingen reduktion af lagerbeholdningen på grund af denne ændring.
 
-Denne funktion er som standard slået fra. Administratorer kan aktivere eller deaktivere den ved at søge efter funktionen *Deaktiver forventede tilgange fra kvalitetsordrer, der vælger spærret lager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er funktionen som standard aktiveret. Administratorer kan aktivere eller deaktivere denne funktionalitet ved at søge efter funktionen *Deaktiver forventede tilgange fra kvalitetsordrer, der vælger spærret lager* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

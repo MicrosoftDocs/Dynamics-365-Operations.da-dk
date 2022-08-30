@@ -2,7 +2,7 @@
 title: Planlægge oprydning af data i salgshistorikken
 description: Denne artikel beskriver, hvordan du kan hjælpe med at forbedre systemets ydeevne ved at planlægge den periodiske oprydning af salgsopdateringshistorikken, så den kører med et regelmæssigt interval.
 author: myvakalo
-ms.date: 03/21/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e9a4dd5372afa8a0452449d1cb9121107e6e1610
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900819"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335497"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Planlægge oprydning af data i salgshistorikken
 
@@ -42,7 +42,7 @@ Funktionen forbedrer det eksisterende oprydningsjob på følgende måder:
 
 Når funktionen er aktiveret, køres **oprydningen af historikken for salgsopdatering** (**Salgs og marketing \> Periodiske opgaver \> Oprydning \> Oprydning af salgsopdateringhistorik**) som før, men med bedre ydeevne og højst 2 timer. Det betyder, at det kan være nødvendigt at køre flere gange for at rydde op i alle data for en bestemt tidsramme til tilbageholdelse.
 
-Før du kan bruge denne funktion, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+Før du kan bruge denne funktion, skal den være aktiveret for dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Salg og marketing*
 - **Funktionsnavn:** *Forbedringer af ydeevnen i oprydningssalgshistorik*
@@ -51,10 +51,7 @@ Før du kan bruge denne funktion, skal den være aktiveret i dit system. Adminis
 
 Med funktionen *Ryd op i historik for salgsopdatering baseret på alder* kan du angive den maksimale alder for poster, der skal beholdes, når du kører den periodiske opgave *Oprydning af salgsopdateringshistorik*. Ældre poster slettes. Dette er nyttigt, når du konfigurerer, at opgaven skal køres periodisk, da alderen altid beregnes i forhold til den dato, hvor opgaven køres. Uden denne funktion kan du kun angive en bestemt dato for de ældste poster, der skal beholdes.
 
-Før du kan bruge denne funktion, skal den være aktiveret i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
-
-- **Modul:** *Salg og marketing*
-- **Funktionsnavn:** *Ryd op i historik for salgsopdatering baseret på alder*
+Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Ryd op i historik for salgsopdatering baseret på alder* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-and-schedule-the-sales-history-cleanup-periodic-task"></a>Konfigurere og planlægge den periodiske opgave til oprydning af salgshistorik
 
