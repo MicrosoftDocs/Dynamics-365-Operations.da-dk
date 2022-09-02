@@ -466,6 +466,8 @@
                           items:
                             - name: Understøttelse af eksterne gavekort
                               href: dev-itpro/gift-card.md
+                            - name: Datadeling til gavekort på tværs af virksomhed
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
                         - name: Testoptager og Regression Suite Automation Tool for Cloud POS
