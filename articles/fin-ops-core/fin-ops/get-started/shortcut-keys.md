@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Denne artikel indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med programmer til finans og drift.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140433"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357571"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -135,10 +135,10 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Vandret rulning                                                                                                   | Skift + Musehjulet             |
 | Flytte til næste/forrige kolonne                                                                                       | Tabulator/Skift+tabulator                 |
 | Flytte til næste/forrige række                                                                                          | Pil op/pil ned           |
-| Flyt til den næste/forrige række uden at vælge<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote> | Ctrl+pil op/Ctrl+pil ned |
-| Vælg/ryd den aktuelle række<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>                    | Ctrl+mellemrum/Ctrl+klik         |
-| Føj den næste/forrige række til det valgte sæt<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>   | Shift+Space                     |
-| Tilføje et interval af rækker til det valgte sæt<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>         | Skift+klik                     |
+| Flyt til den næste/forrige række uden at vælge<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg. | Ctrl+pil op/Ctrl+pil ned |
+| Vælg/ryd den aktuelle række<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.                   | Ctrl+mellemrum/Ctrl+klik         |
+| Føj den næste/forrige række til det valgte sæt<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.  | Shift+Space                     |
+| Tilføje et interval af rækker til det valgte sæt<br><br>**Bemærk:**  Denne genvej vedrører kun scenarier med flere valg.         | Skift+klik                     |
 | Gå til næste/forrige side med data                                                                                   | Page up/Page down             |
 | Opret en ny række nederst i gitteret                                                                             | Pil ned (fra den sidste række)  |
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
@@ -148,7 +148,7 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Flyt til den næste markerede række                                                                                            | Alt+Shift+M, L                  |
 | Flyt til den forrige markerede række                                                                                        | Alt+Shift+M, P                  |
 | Flyttet til den sidst markerede række                                                                                           | Alt+Shift+M, N                  |
-| Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
+| Udføre standardhandlingen i et gitter<br><br>**Bemærk:** Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links. | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
 | Flyt den aktuelle kolonne til næste/forrige placering (med fokus på overskriftsrækken)                                   | Ctrl+Skift+højre pil/Ctrl+Skift+venstre pil |

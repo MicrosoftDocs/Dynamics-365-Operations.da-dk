@@ -2,7 +2,7 @@
 title: Destinationer for elektronisk rapportering (ER)
 description: Denne artikel indeholder oplysninger om styring af destinationer for elektronisk rapportering, de forskellige typer destinationer, der understøttes, og sikkerhedsovervejelser.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281961"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360973"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
@@ -247,6 +247,52 @@ Vælg en af følgende værdier i feltet **Send mappe som** i oversigtspanelet **
 ### <a name="limitations"></a>Begrænsninger
 
 Hvis du angiver feltet **Send mappe som** til **Separate filer** for en **mappe** komponent, der indeholder andre indlejrede **mappe** komponenter, anvendes indstillingen ikke rekursivt på de indlejrede **mappe** komponenter.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Ændre en skabelons egenskaber for sidelayout
+
+Du kan konfigurere en ER-destination til en ER-formatkomponent, der er beregnet til at bruge en skabelon i et Microsoft Office (Excel- eller Word)-format til generering af rapporter. Hvis du ikke er ejeren af dette format, og du er nødt til at ændre egenskaberne for sidelayoutet for formatets skabelon, skal du i versioner af Finans før version 10.0.29 oprette et afledt format og redigere skabelonegenskaberne. Derefter skal du vedligeholde konfigurationen af det afledte format. Men i version 10.0.29 og senere kan du ændre egenskaberne for sidelayoutet for skabelonen under kørslen for at undgå at oprette og vedligeholde den afledte formatkonfiguration. Dette kan du gøre ved at konfigurere de ønskede egenskaber som en del af indstillingerne for den konfigurerede ER-destination. Når du kører et ER-format og kører en ER-destination, der er konfigureret til at bruge bestemte egenskaber for sidelayout, anvendes værdierne for sidelayoutegenskaberne for den udførte destination på den skabelon, du bruger, og erstatter egenskaberne for den oprindelige skabelon. Du kan konfigurere forskellige destinationer for komponentkomponenten i det samme format og konfigurere forskellige egenskaber for sidelayout for den skabelon, der anvendes.
+
+Følgende egenskaber kan konfigureres i en ER-destination til en formatkomponent, der er beregnet til at bruge en skabelon i Excel- eller Word-format:
+
+- Sideretning
+    - Stående
+    - Liggende
+- Papirstørrelse
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Legal
+    - Letter
+    - Statement
+    - Tabloid
+- Sidemargener
+    - Top
+        - Overordnet
+    - Bund
+        - Sidefod
+    - Venstre
+    - Højre
+
+> [!NOTE]
+> Sideretningen for den skabelon, der konfigureres på denne måde, skal være justeret efter [sideretningen for PDF-konvertering](#select-a-page-orientation-for-pdf-conversion), hvis PDF-konverteringen er konfigureret.
+
+Du skal vælge længden på enheden for angivelse af sidemargener:
+
+- Tommer
+- Centimeter
+- Millimeter
+
+![Konfigurer egenskaber for sidelayout på destinationssiden Elektronisk rapportering.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Hvis der angives en marginværdi i centimeter og angives med flere decimaler, afrundes den ved kørslen til nærmeste værdi med 1 decimaltegn.
+>
+> Hvis der angives en marginværdi i millimeter og angives med flere decimaler, afrundes den ved kørslen til Excel til nærmeste værdi uden decimaltegn.
+>
+> Hvis der angives en marginværdi i millimeter og angives med flere decimaler, afrundes den ved kørslen til Word til nærmeste værdi mede et decimaltegn.
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 

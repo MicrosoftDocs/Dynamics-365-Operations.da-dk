@@ -2,7 +2,7 @@
 title: Oversigt over dataimport- og -eksportjob
 description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109456"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357585"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -76,6 +76,19 @@ Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporte
 
 > [!NOTE]
 > I forbindelse med XML-baserede filformater skal du sørge for kun at bruge juridiske tegn. Yderligere oplysninger om gyldige tegn finder du i [Gyldige tegn i XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). I XML 1.0 må der ikke være kontroltegn med undtagelse af faner, returneringer af omst., og linjeangivelser. Eksempler på ugyldige tegn er kantede kantede parenteser, kantede parenteser og skråstreger. 
+
+Brug Unicode i stedet for en bestemt kodeside til at importere eller eksportere data. På den måde får du de mest ensartede resultater, og datastyringsjob undgås, fordi de inkluderer Unicode-tegn. De systemdefinerede kildedataformater, der bruger Unicode, har alle **Unicode** i kildenavnet. Unicode-formatet anvendes ved at vælge en Unicode-kodningsside med ANSI-kode som **Kodeside** i fanen **Regionale indstillinger**. Vælg en af følgende kodesider for Unicode:
+
+| Tegntabel | Vist navn                |
+|-----------|-----------------------------|
+| 1200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+Yderligere oplysninger om kodesider finder du under [Identifikation af kodeside](/windows/win32/intl/code-page-identifiers/).
 
 ### <a name="sequence-the-entities"></a>Anbring enhederne i rækkefølge
 Enheder kan sorteres i en dataskabelon eller i import- og eksportjob. Når du kører et job, der indeholder mere end én dataenhed, skal du sikre dig, at dataenhederne er i korrekt rækkefølge. Du anbringer primært enheder rækkefølge, så du kan løse eventuelle funktionelle afhængigheder mellem enheder. Hvis enheder ikke har funktionelle afhængigheder, kan de planlægges til parallel import eller eksport. 

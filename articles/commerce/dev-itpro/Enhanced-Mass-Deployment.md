@@ -2,19 +2,19 @@
 title: Masseinstallation af forseglede Commerce-selvbetjeningskomponenter
 description: Denne artikel indeholder en forklaring på, hvordan du kan bruge strukturen til installation af selvbetjeningskomponenter til uovervåget installation og tjenesteudrulninger.
 author: jashanno
-ms.date: 05/11/2022
+ms.date: 08/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898573"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387013"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Masseinstallation af forseglede Commerce-selvbetjeningskomponenter
 
@@ -34,53 +34,53 @@ Følgende tabel viser de afgrænsningstegn, der kan bruges i udførelse af komma
 
 | Separator                 | Beskrivende tekst |
 |---------------------------|-------------|
-| --AadTokenIssuerPrefix | Præfikset for Microsoft Azure Active Directory-tokenudstederen (Azure AD). |
-| --AsyncClientAadClientId | Det Azure AD-klient-id, som Async Client skal bruge under kommunikation med hovedkontoret. |
-| --AsyncClientAppInsightsInstrumentationKey | Instrumenteringsnøgle for Async Client AppInsights. |
-| --AsyncClientCertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrikværdi for Async Client Identity-certifikatplaceringen, der skal bruges til godkendelse i Azure AD til kommunikation med hovedkontoret. F.eks. er `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` en korrekt formateret URN. Værdien **\<MyThumbprint\>** erstattes med det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-AsyncClientCertThumbprint**. |
-| --AsyncClientCertThumbprint | Aftrykket af Async Client Identity-certifikatet, der skal bruges til godkendelse hos Azure AD til kommunikation med hovedkontoret. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-AsyncClientCertFullPath**. |
-| --ClientAppInsightsInstrumentationKey | Instrumenteringsnøgle for Client AppInsights. |
-| --CloudPosAppInsightsInstrumentationKey | Instrumenteringsnøgle for Cloud POS AppInsights. |
-| --Config | Den konfigurationsfil, der skal bruges under installationen. **Contoso.CommerceScaleUnit.xml** er et eksempel på et filnavn. |
-| --CposAadClientId | Det Azure AD-klient-id, som Cloud POS skal bruge under enhedsaktivering. Denne parameter er ikke påkrævet i forbindelse med udrulninger i det lokale miljø. |
-| --Device | Enheds-id'et, som det vises på siden **Enheder** i hovedkontoret. |
-| --EnvironmentId | Miljø-id'et. |
-| --HardwareStationAppInsightsInstrumentationKey | Instrumenteringsnøgle for Hardware Station AppInsights. |
-| --Install | En parameter, der angiver, om den komponent, som dette installationsprogram leverer, skal installeres. Denne parameter er ikke påkrævet. |
-| --InstallOffline | I forbindelse med Modern POS angiver denne parameter, at offlinedatabasen også skal installeres og konfigureres. Brug også parameteren **-SQLServerName**. Ellers forsøger installationsprogrammet at finde en standardforekomst, der opfylder forudsætningerne. |
-| --Port | Den port, der skal knyttes til og bruges af den virtuelle mappe i Retail Server. Standardporten, 443, bruges, hvis der ikke angives en port. |
-| --Register | Kasseapparat-id'et, som det vises på siden **Kasseapparater** i hovedkontoret. |
-| --RetailServerAadClientId | Det Azure AD-klient-id, som Retail Server skal bruge under kommunikation med hovedkontoret. |
-| --RetailServerAadResourceId | Det ressource-id for Retail Server-appen Azure AD, der skal bruges under enhedsaktivering. Denne parameter er ikke påkrævet i forbindelse med udrulninger i det lokale miljø. |
-| --RetailServerCertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrikværdi for Retail Server Identity-certifikatplaceringen, der skal bruges til godkendelse i Azure AD til kommunikation med hovedkontoret. F.eks. er `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` et korrekt formateret URN, hvor værdien **\<MyThumbprint\>** erstattes af det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-RetailServerCertThumbprint**. |
-| --RetailServerCertThumbprint | Aftrykket af Retail Server Identity-certifikatet, der skal bruges til godkendelse hos Azure AD til kommunikation med hovedkontoret. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-RetailServerCertFullPath**. |
-| --RetailServerURL | URL-adressen på den Retail Server, som installationsprogrammet skal bruge. (Denne URL-adresse kaldes også Commerce Scale Unit \[CSU\] URL). I forbindelse med Modern POS bruges denne værdi under enhedsaktivering. |
-| --SkipAadCredentialsCheck| En switch, der angiver, om kontrol af Azure AD-legitimationsoplysninger skal springes over. Standardværdien er **falsk**. |
-| --SkipCertCheck | En switch, der angiver, om kontrol af certifikatforudsætninger skal springes over. Standardværdien er **falsk**. |
-| --SkipIisCheck | En switch, der angiver, om kontrol af IIS-forudsætninger (Internet Information Services) skal springes over. Standardværdien er **falsk**. |
-| --SkipNetFrameworkCheck | En switch, der angiver, om kontrol af .NET Framework-forudsætninger skal springes over. Standardværdien er **falsk**. |
-| --SkipScaleUnitHealthcheck | En switch, der angiver, om tilstandskontrol på installerede komponenter skal springes over. Standardværdien er **falsk**. |
-| --SkipSChannelCheck | En switch, der angiver, om kontrol af sikker kanal-forudsætninger skal springes over. Standardværdien er **falsk**. |
-| --SkipSqlFullTextCheck | En switch, der angiver, om validering af den forudsætning for SQL Server, der kræver fuldtekstsøgning, skal springes over. Standardværdien er **falsk**. |
-| --SkipSqlServerCheck | En switch, der angiver, om kontrol af SQL Server-forudsætning skal springes over. Standardværdien er **falsk**. |
-| --SqlServerName | SQL Server-navnet. Hvis navnet ikke er angivet, forsøger installationsprogrammet at finde standardforekomsten. |
-| --SslcertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrik for den certifikatplacering, der skal bruges til at kryptere HTTP-trafik til skalaenheden. F.eks. er `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` et korrekt formateret URN, hvor værdien **\<MyThumbprint\>** erstattes af det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-SslCertThumbprint**. |
-| --SslCertThumbprint | Aftrykket af det certifikat, der skal bruges til at kryptere HTTP-trafik til skalaenheden. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-SslCertFullPath**. |
-| --StoreSystemAosUrl | Hovedkontorets URL-adresse (AOS) |
-| --StoreSystemChannelDatabaseId | Id'et for kanaldatabasen (navn). |
-| --TenantId | Azure AD-lejer-id. |
-| --TransactionServiceAzureAuthority | Transaction Service Azure AD-myndigheden. |
-| --TransactionServiceAzureResource | Transaction Service Azure AD-ressourcen. |
-| --TrustSqlServerCertificate | En switch, der angiver, om der skal være tillid til Server-certifikatet, mens der oprettes forbindelse til SQL Server. Med henblik på at undgå sikkerhedsrisici bør produktionsinstallationer aldrig her angive en **sand** værdi. Standardværdien er **falsk**. |
-| --Verbosity | Det logføringsniveau, der anmodes om under installationen. Normalt bør denne værdi ikke bruges. |
-| --WindowsPhoneAppInsightsInstrumentationKey | Instrumenteringsnøgle for Hardware Station AppInsights. |
+| -AadTokenIssuerPrefix | Præfikset for Microsoft Azure Active Directory-tokenudstederen (Azure AD). |
+| -AsyncClientAadClientId | Det Azure AD-klient-id, som Async Client skal bruge under kommunikation med hovedkontoret. |
+| -AsyncClientAppInsightsInstrumentationKey | Instrumenteringsnøgle for Async Client AppInsights. |
+| -AsyncClientCertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrikværdi for Async Client Identity-certifikatplaceringen, der skal bruges til godkendelse i Azure AD til kommunikation med hovedkontoret. F.eks. er `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` en korrekt formateret URN. Værdien **\<MyThumbprint\>** erstattes med det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-AsyncClientCertThumbprint**. |
+| -AsyncClientCertThumbprint | Aftrykket af Async Client Identity-certifikatet, der skal bruges til godkendelse hos Azure AD til kommunikation med hovedkontoret. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-AsyncClientCertFullPath**. |
+| -ClientAppInsightsInstrumentationKey | Instrumenteringsnøgle for Client AppInsights. |
+| -CloudPosAppInsightsInstrumentationKey | Instrumenteringsnøgle for Cloud POS AppInsights. |
+| -Config | Den konfigurationsfil, der skal bruges under installationen. **Contoso.CommerceScaleUnit.xml** er et eksempel på et filnavn. |
+| -CposAadClientId | Det Azure AD-klient-id, som Cloud POS skal bruge under enhedsaktivering. Denne parameter er ikke påkrævet i forbindelse med udrulninger i det lokale miljø. |
+| -Device | Enheds-id'et, som det vises på siden **Enheder** i hovedkontoret. |
+| -EnvironmentId | Miljø-id'et. |
+| -HardwareStationAppInsightsInstrumentationKey | Instrumenteringsnøgle for Hardware Station AppInsights. |
+| Installér | En parameter, der angiver, om den komponent, som dette installationsprogram leverer, skal installeres. Denne parameter er påkrævet for at udføre en installation og har ikke et foranstillet bindestregtegn. |
+| -InstallOffline | I forbindelse med Modern POS angiver denne parameter, at offlinedatabasen også skal installeres og konfigureres. Brug også parameteren **-SQLServerName**. Ellers forsøger installationsprogrammet at finde en standardforekomst, der opfylder forudsætningerne. |
+| -Port | Den port, der skal knyttes til og bruges af den virtuelle mappe i Retail Server. Standardporten, 443, bruges, hvis der ikke angives en port. |
+| -Register | Kasseapparat-id'et, som det vises på siden **Kasseapparater** i hovedkontoret. |
+| -RetailServerAadClientId | Det Azure AD-klient-id, som Retail Server skal bruge under kommunikation med hovedkontoret. |
+| -RetailServerAadResourceId | Det ressource-id for Retail Server-appen Azure AD, der skal bruges under enhedsaktivering. Denne parameter er ikke påkrævet i forbindelse med udrulninger i det lokale miljø. |
+| -RetailServerCertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrikværdi for Retail Server Identity-certifikatplaceringen, der skal bruges til godkendelse i Azure AD til kommunikation med hovedkontoret. F.eks. er `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` et korrekt formateret URN, hvor værdien **\<MyThumbprint\>** erstattes af det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-RetailServerCertThumbprint**. |
+| -RetailServerCertThumbprint | Aftrykket af Retail Server Identity-certifikatet, der skal bruges til godkendelse hos Azure AD til kommunikation med hovedkontoret. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-RetailServerCertFullPath**. |
+| -RetailServerURL | URL-adressen på den Retail Server, som installationsprogrammet skal bruge. (Denne URL-adresse kaldes også Commerce Scale Unit \[CSU\] URL). I forbindelse med Modern POS bruges denne værdi under enhedsaktivering. |
+| -SkipAadCredentialsCheck| En switch, der angiver, om kontrol af Azure AD-legitimationsoplysninger skal springes over. Standardværdien er **falsk**. |
+| -SkipCertCheck | En switch, der angiver, om kontrol af certifikatforudsætninger skal springes over. Standardværdien er **falsk**. |
+| -SkipIisCheck | En switch, der angiver, om kontrol af IIS-forudsætninger (Internet Information Services) skal springes over. Standardværdien er **falsk**. |
+| -SkipNetFrameworkCheck | En switch, der angiver, om kontrol af .NET Framework-forudsætninger skal springes over. Standardværdien er **falsk**. |
+| -SkipScaleUnitHealthcheck | En switch, der angiver, om tilstandskontrol på installerede komponenter skal springes over. Standardværdien er **falsk**. |
+| -SkipSChannelCheck | En switch, der angiver, om kontrol af sikker kanal-forudsætninger skal springes over. Standardværdien er **falsk**. |
+| -SkipSqlFullTextCheck | En switch, der angiver, om validering af den forudsætning for SQL Server, der kræver fuldtekstsøgning, skal springes over. Standardværdien er **falsk**. |
+| -SkipSqlServerCheck | En switch, der angiver, om kontrol af SQL Server-forudsætning skal springes over. Standardværdien er **falsk**. |
+| -SqlServerName | SQL Server-navnet. Hvis navnet ikke er angivet, forsøger installationsprogrammet at finde standardforekomsten. |
+| -SslcertFullPath | Den fuldt formaterede URN-sti, der bruger aftrykket som søgemetrik for den certifikatplacering, der skal bruges til at kryptere HTTP-trafik til skalaenheden. F.eks. er `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` et korrekt formateret URN, hvor værdien **\<MyThumbprint\>** erstattes af det certifikataftryk, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-SslCertThumbprint**. |
+| -SslCertThumbprint | Aftrykket af det certifikat, der skal bruges til at kryptere HTTP-trafik til skalaenheden. Dette aftryk bruges til at søge i placeringen af og navnet på **LocalMachine/Min butik** for at finde det rette certifikat, der skal bruges. Du må ikke bruge denne parameter sammen med parameteren **-SslCertFullPath**. |
+| -StoreSystemAosUrl | Hovedkontorets URL-adresse (AOS) |
+| -StoreSystemChannelDatabaseId | Id'et for kanaldatabasen (navn). |
+| -TenantId | Azure AD-lejer-id. |
+| -TransactionServiceAzureAuthority | Transaction Service Azure AD-myndigheden. |
+| -TransactionServiceAzureResource | Transaction Service Azure AD-ressourcen. |
+| -TrustSqlServerCertificate | En switch, der angiver, om der skal være tillid til Server-certifikatet, mens der oprettes forbindelse til SQL Server. Med henblik på at undgå sikkerhedsrisici bør produktionsinstallationer aldrig her angive en **sand** værdi. Standardværdien er **falsk**. |
+| -Verbosity | Det logføringsniveau, der anmodes om under installationen. Normalt bør denne værdi ikke bruges. |
+| -WindowsPhoneAppInsightsInstrumentationKey | Instrumenteringsnøgle for Hardware Station AppInsights. |
 
 ## <a name="general-overview"></a>Generel oversigt
 
 Den nye struktur for installationsprogrammer til selvbetjening har forskellige funktioner og forbedringer. Den nye struktur genererer i øjeblikket kun installationsprogrammer til Modern POS, hardwarestation og CSU (selvhostet). Det er vigtigt at forstå den grundlæggende brug af kommandolinjer til forseglede installationsprogrammer, som skal ligne dem, der bruges i følgende eksempel. 
  
 ```Console
-<Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
+<Component Installer Name>.exe install -<Parameter Name> "<Parameter Information>"
 ```
 
 Installationsprogrammet kræver parameteren **install** (eller **uninstall** for at fjerne installationen) og eventuelle parametre, der er specifikke for den pågældende installation. **Parameternavn** skal indeholde eventuelle parametre, der skal bruges, f.eks. til kasseapparat, CSU-URL-adresse eller certifikatoplysninger. **Parameteroplysninger** skal omfatte eventuelle yderligere oplysninger om parametrene.
@@ -110,6 +110,9 @@ Migrering fra de gamle selvbetjeningskomponenter for installationsprogrammer til
 
 Det er vigtigt, at du fjerner den gamle selvbetjeningskomponent til Modern POS. Du kan finde flere oplysninger i migreringstrin tidligere i denne artikel.
 
+> [!NOTE]
+> På et system med en enkelt computer, f.eks. udviklertopologi eller et demomiljø, eller når Commerce Scale Unit og Modern POS er installeret på samme computer, kan Store Commerce ikke fuldføre enhedsaktivering. Dette problem opstår, fordi Store Commerce ikke kan foretage netværksopkald til samme computer (det vil sige opkald til sig selv). Selvom dette aldrig skal være et scenarie i en produktionsindstilling, kan problemet reduceres ved at aktivere en undtagelse i tilbageføring af AppContainer, så kommunikation kan foregå på samme computer. Der findes forskellige programmer, der er tilgængelige for alle, og som er med til at aktivere denne tilbageførsel. Du kan få flere oplysninger om tilbagekobling i [Aktivere tilbagekobling og fejlfinding af netværksisolation](/previous-versions/windows/apps/hh780593(v=win.10)). Det er vigtigt at forstå, at en tilbagekobling kan være en sikkerhedsrisiko, så det anbefales ikke at bruge en tilbagekobling, medmindre det er nødvendigt at bruge tilbagekobling.
+
 ### <a name="examples-of-silent-deployment"></a>Eksempler på uovervåget installation
 
 Dette afsnit indeholder eksempler på kommandoer, der bruges til at installere Modern POS.
@@ -121,7 +124,7 @@ Følgende kommando installerer (eller opdaterer) Modern POS uovervåget. Den har
 Følgende grundlæggende kommando viser de tilgængelige muligheder, hvis der anmodes om en installation. Det anbefales kraftigt, at denne kommando bruges, når installationsprogrammet testes eller bruges første gang.
 
 ```Console
-CommerceModernPOS.exe --help install
+CommerceModernPOS.exe -help install
 ```
 
 > [!NOTE]
@@ -130,13 +133,13 @@ CommerceModernPOS.exe --help install
 Følgende kommando angiver alle de parametre, der skal bruges under enhedsaktivering, efter at programmet Modern POS er installeret. I dette eksempel bruges kasseapparatet **Houston-3**, som er en almindeligt anvendt værdi i Dynamics 365 Commerce-demodata.
 
 ```Console
-CommerceModernPOS.exe install --Register "Houston-3" --Device "Houston-3" --RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
+CommerceModernPOS.exe install -Register "Houston-3" -Device "Houston-3" -RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
 ```
 
 Følgende kommando angiver de parametre, der skal bruges til at installere og konfigurere offlinedatabasen. SQL Server angives sammen med den konfigurationsfil, der skal bruges.
 
 ```Console
-CommerceModernPOS.exe install --InstallOffline --SQLServerName "SQLExpress" --Config "ModernPOS.Houston-3.xml"
+CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml"
 ```
 
 Du kan mikse og matche disse begreber for at opnå de ønskede installationsresultater.
@@ -148,7 +151,7 @@ Du kan mikse og matche disse begreber for at opnå de ønskede installationsresu
 Det er vigtigt, at du fjerner den gamle selvbetjeningskomponent til hardwarestationen. Du kan finde flere oplysninger i migreringstrin tidligere i denne artikel. Der er ikke længere et værktøj til forhandleres kontooplysninger. Oplysningerne om forhandlerens konto installeres i stedet, når en POS-terminal parres med hardwarestationen. Det anbefales kraftigt at køre følgende kommando, når installationsprogrammet testes første gang:
 
 ```Console
-CommerceHardwareStation.exe --help install
+CommerceHardwareStation.exe -help install
 ```
 
 ### <a name="examples-of-silent-deployment"></a>Eksempler på uovervåget installation
@@ -162,7 +165,7 @@ Følgende kommando installerer (eller opdaterer) hardwarestation uovervåget. De
 Følgende grundlæggende kommando kører installationsprogrammets eksekverbare fil.
 
 ```Console
-HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics365CommerceURL.dynamics.com/" --StoreSystemChannelDatabaseID "Houston" --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers"
+HardwareStation.exe install -Port 443 -StoreSystemAOSURL "https://MyDynamics365CommerceURL.dynamics.com/" -StoreSystemChannelDatabaseID "Houston" -SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers"
 ```
 
 > [!NOTE]
@@ -174,7 +177,7 @@ Følgende kommando angiver alle de parametre, der kræves for at springe de nød
 > Det frarådes at springe kontroller over, hvis der ikke er foretaget grundige test i forvejen eller i udviklingssituationer.
 
 ```Console
-HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
+HardwareStation.exe install -SkipFirewallUpdate -SkipOPOSCheck -SkipVersionCheck -SkipURLCheck -Config "HardwareStation.Houston.xml"
 ```
 
 Det er almindelig praksis at mikse og matche disse begreber for at opnå de ønskede installationsresultater.
@@ -184,7 +187,7 @@ Det er almindelig praksis at mikse og matche disse begreber for at opnå de øns
 Det anbefales kraftigt at køre følgende kommando, når installationsprogrammet testes første gang:
 
 ```Console
-CommerceStoreScaleUnitSetup.exe --help install
+CommerceStoreScaleUnitSetup.exe -help install
 ```
 
 ### <a name="before-you-begin"></a>Før du begynder
@@ -202,7 +205,7 @@ Følgende kommando installerer (eller opdaterer) CSU (selvhostet) uovervåget. D
 Sammenlignet med de andre selvbetjeningsinstallationer er CSU (Commerce Scale Unit) mere kompliceret og kræver mange flere oplysninger. Følgende kommando er den minimumkommando (med parametre), der skal bruges til at køre installationsprogrammets eksekverbare fil, når der ikke findes en konfigurationsfil.
 
 ```Console
-CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --TrustSqlServerCertificate --Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install -port 446 -SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate -Config "Contoso.StoreSystemSetup.xml"
 ```
 
 > [!NOTE]
@@ -211,7 +214,7 @@ CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateTh
 Følgende kommando er en mere grundig kommando, der kører installationsprogrammets eksekverbare fil med visse alternative parametre.
 
 ```Console
-CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --TrustSqlServerCertificate --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install -Port 446 -SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate -Verbosity 0 -Config "Contoso.StoreSystemSetup.xml"
 ```
 
 Følgende kommando angiver de parametre, der kræves for at springe de forudsættende kontroller over under en standardinstallation. 
@@ -221,7 +224,7 @@ Følgende kommando angiver de parametre, der kræves for at springe de forudsæt
 
 
 ```Console
-CommerceScaleUnit.exe installer --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --TrustSqlServerCertificate
+CommerceScaleUnit.exe installer -skipscaleunithealthcheck -skipcertcheck -skipaadcredentialscheck -skipschannelcheck -skipiischeck -skipnetcorebundlecheck -skipsqlservercheck -skipnetframeworkcheck -skipversioncheck -skipurlcheck -Config "Contoso.StoreSystemSetup.xml" -SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate
 ```
 
 Du kan mikse og matche disse begreber for at opnå de ønskede installationsresultater.
