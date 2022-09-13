@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306048"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388534"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installere og konfigurere Inventory Visibility
 
@@ -56,7 +56,9 @@ Når du har registreret et program og føjet en klienthemmelighed til Azure AD, 
 1. Rul ned på miljøsiden, indtil sektionen **Miljøtilføjelsesprogrammer** vises i sektionen **Power Platform-integration**. Her kan du finde Dataverse-miljønavnet. Bekræft, at Dataverse-miljønavnet er det, du vil bruge til lagersynlighed.
 
     > [!NOTE]
-    > I øjeblikket understøttes kun Dataverse-miljøer, der er oprettet ved hjælp af LCS. Hvis dit Dataverse-miljø er blevet oprettet på en anden måde (f.eks. ved hjælp af Power Apps Administration), og hvis det er knyttet til dit Supply Chain Management-miljø, skal du først kontakte produktteamet for Lagersynlighed på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for at rette tilknytningsfejlen. Derefter kan du installere Lagersynlighed.
+    > I øjeblikket understøttes kun Dataverse-miljøer, der er oprettet ved hjælp af LCS. Hvis dit Dataverse-miljø er blevet oprettet på en anden måde (f.eks. ved hjælp af PowerApps Administration), og hvis det er knyttet til dit Supply Chain Management-miljø, skal du først rette tilknytningsfejlen, før du installerer Lagersynlighed.
+    >
+    > Det er muligt, at dit dobbeltskrivningsmiljø er kædet sammen med en forekomst af Dataverse, mens LCS ikke er konfigureret til Power Platform-integration. En sådan uoverensstemmelse kan forårsage uventet funktionalitet. Vi anbefaler, at LCS-miljøoplysningerne stemmer overens med det, du er tilsluttet i forbindelse med dobbeltskrivning, så den samme forbindelse kan bruges af forretningshændelser, virtuelle tabeller og tilføjelsesprogrammer. Se [Uoverensstemmende sammenkædning](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) for oplysninger om løsning af tilknytningsproblemet. Når tilknytningsproblemet er løst, kan du fortsætte med at installere Lagersynlighed.
 
 1. Vælg **Installér et nyt tilføjelsesprogram** i afsnittet **Tilføjelsesprogrammer for miljø**.
 
@@ -140,11 +142,11 @@ For at afinstallere tilføjelsesprogrammet Lagersynlighed skal du gøre følgend
 1. Vælg **miljø** på navigationslinjen
 1. Vælg det Dataverse-miljø, der er bundet sammen med dit LCS-miljø.
 1. Gå derefter til **Løsninger**, og slet følgende løsninger i denne rækkefølge:
-    1. Fastgøre løsning til applikationen Lagersynlighed i Dynamics 365-løsninger
-    1. Løsning til Dynamics 365 FNO SCM Inventory Visibility-applikationer
-    1. Inventory Configuration Service
-    1. Lagersynlighedstjeneste
-    1. Basisløsning til Dynamics 365 FNO SCM Inventory Visibility
+    1. Dynamics 365 Inventory Visibility - Anker
+    1. Dynamics 365 Inventory Visibility - Program
+    1. Dynamics 365 Inventory Visibility - Kontrolelementer
+    1. Dynamics 365 Inventory Visibility - Plug-ins
+    1. Dynamics 365 Inventory Visibility - Grundlag
 
     Når du har slettet disse løsninger, slettes også de data, der er gemt i tabeller.
 

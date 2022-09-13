@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306312"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423563"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere Inventory Visibility
 
@@ -303,13 +303,13 @@ Løsningen inkluderer som standard denne partitionskonfiguration. Du *behøver d
 
 Lagerbeholdningsforespørgslen vil det meste af tiden ikke kun være på det højeste "totalniveau". I stedet vil du måske også se resultater, der aggregeres baseret på lagerdimensionerne.
 
-Lagersynlighed giver fleksibilitet ved at lade dig konfigurere _indekserne_. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
+Lagersynlighed giver fleksibilitet ved at lade dig konfigurere _indekserne_ for at forbedre ydeevnen af dine forespørgsler. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
 
 | Navn | Beskrivelse |
 |---|---|
 | Sætnummer | Dimensioner, der tilhører samme sæt (indeks), grupperes sammen, og det samme sætnummer tildeles dem. |
 | Dimension | Basisdimensioner, som resultatet af forespørgslen aggregeres på. |
-| Hierarki | Hierarkiet bruges til at definere de understøttede dimensionskombinationer, der kan oprettes forespørgsler på. Du kan f.eks. konfigurere en dimensionssæt med en hierarkisekvens af `(ColorId, SizeId, StyleId)`. I dette tilfælde understøtter systemet forespørgsler på fire kombinationer af dimensioner. Den første kombination er tom, den anden er `(ColorId)`, den tredje er `(ColorId, SizeId)`, og den fjerde er `(ColorId, SizeId, StyleId)`. De andre kombinationer understøttes ikke. Du kan finde flere oplysninger i eksemplet, der følger. |
+| Hierarki | Hierarkiet giver dig mulighed for at øge ydeevnen for bestemte kombinationer af dimension, når de bruges i filter- og grupper efter-forespørgselsparametre. Hvis du f.eks. konfigurerer et dimensionssæt med en hierarkisekvens af `(ColorId, SizeId, StyleId)`, kan systemet behandle forespørgsler, der er relateret til fire dimensionskombinationer hurtigere. Den første kombination er tom, den anden er `(ColorId)`, den tredje er `(ColorId, SizeId)`, og den fjerde er `(ColorId, SizeId, StyleId)`. Andre kombinationer kan ikke blive hurtigere. Filtrene er ikke begrænset af rækkefølgen, men skal være i disse dimensioner, hvis du vil forbedre deres ydeevne. Du kan finde flere oplysninger i eksemplet, der følger. |
 
 Hvis du vil konfigurere produkthierarkiindekset, skal du følge disse trin.
 
@@ -319,14 +319,13 @@ Hvis du vil konfigurere produkthierarkiindekset, skal du følge disse trin.
 1. Der er som standard angivet en liste over indekser. Hvis du vil redigere et eksisterende indeks, skal du vælge **Rediger** eller **Tilføj** i sektionen for det relevante indeks. Hvis du vil oprette et nyt indekssæt, skal du vælge **Nyt indekssæt**. For hver række i hvert indekssæt skal du i feltet **Dimension** vælge fra listen over basisdimensioner. Der generes automatisk værdier for følgende felter:
 
     - **Sætnummer** – Dimensioner, der tilhører samme gruppe (indeks), grupperes sammen og tildeles det samme sætnummer.
-    - **Hierarki** – Hierarkiet bruges til at definere de understøttede dimensionskombinationer, der kan oprettes forespørgsler på i en dimensionsgruppe (indeks). Hvis du f.eks. konfigurerer en dimensionsgruppe, der har en hierarkirækkefølge *Typografi*, *Farve* og *Størrelse*, understøtter systemet resultatet af tre forespørgselsgrupper. Den første gruppe er kun typografi. Den anden gruppe er en kombination af typografi og farve. Og den tredje gruppe er en kombination af typografi, farve og størrelse. De andre kombinationer understøttes ikke.
+    - **Hierarki** – Hierarkiet øger ydeevnen for bestemte kombinationer af dimension, når de bruges i filter- og grupper efter-forespørgselsparametre.
 
 > [!TIP]
 > Du kan bruge et par tip, som du kan huske, når du konfigurerer indekshierarkiet:
 >
 > - Basisdimensioner, der er defineret i partitionskonfigurationen, bør ikke defineres i indekskonfigurationer. Hvis der igen defineres en basisdimension i indekskonfigurationen, kan du ikke forespørge på dette indeks.
 > - Hvis du kun skal forespørge på lager, der aggregeres af alle dimensionskombinationer, kan du konfigurere et enkelt indeks, der indeholder basisdimensionen `Empty`.
-> - Du skal have mindst ét indekshierarki (f.eks. med basisdimensionen `Empty`) – ellers mislykkes forespørgslerne med fejlen "Der er ikke angivet et indekshierarki".
 
 ### <a name="example"></a>Eksempel
 

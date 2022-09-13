@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
+ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357626"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427070"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
@@ -73,8 +73,6 @@ Commerce Scale Unit kan installeres i følgende områder.
 | EMEA            | Nordeuropa        | Generelt tilgængelig    |  Ingen kommentarer. |
 | EMEA            | Det sydlige Storbritannien            | Generelt tilgængelig |    Ingen kommentarer.                          |
 | EMEA            | Det vestlige Storbritannien             | Generelt tilgængelig |    Ingen kommentarer.                          |
-| Schweiz     | Det nordlige Schweiz   | Begrænset kapacitet    | Kræver godkendelsesproces. |
-| Forenede Arabiske Emirater             | Det nordlige Forenede Arabiske Emirater           | Begrænset kapacitet    | Kræver godkendelsesproces. |
 
 Udrulningskapacitet i områder med begrænset kapacitet er særdeles begrænset. Anmodninger om udrulning evalueres fra sag til sag. Hvis du har et vigtigt forretningsbehov for udrulning i områder med begrænset kapacitet, kan du indsende en supportanmodning, der skal føjes til ventelisten. Kapacitetsbegrænsede områder tillader i øjeblikket ikke udrulning af Commerce Scale Unit. 
 

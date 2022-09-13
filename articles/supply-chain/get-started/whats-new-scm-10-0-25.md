@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219088"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403658"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 
@@ -161,7 +161,7 @@ Tabellen indeholder også funktioner, der tidligere var med i offentlig forhånd
 | Lagerstedsstyring | [Placering af lokations-id](../warehousing/location-license-plate-positioning.md) | Obligatorisk |
 | Lagerstedsstyring | [Blanding af produktdimension for lokation](../warehousing/location-product-dimension-mixing.md) | Obligatorisk |
 | Lagerstedsstyring | Gør feltet Lagerstatus for lagerbevægelse redigerbart på mobilenhed | Obligatorisk |
-| Lagerstedsstyring | Manuel udvalgstjeneste for salgslinjer for administratorer eller lignende betroede brugere | Obligatorisk |
+| Lagerstedsstyring | [Manuel udvalgstjeneste for salgslinjer for administratorer eller lignende betroede brugere](../warehousing/manual-order-line-picking-exception-handling.md) | Obligatorisk |
 | Lagerstedsstyring | [Undgå, at id'er for afsendte flytteordrer bliver brugt på andre lagersteder end destinationslagerstedet](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatorisk |
 | Lagerstedsstyring | Spørg, om tvetydige 'Lok.-/Id'-navne skal fortolkes | Obligatorisk |
 | Lagerstedsstyring | [Kvalitetskontrol](../warehousing/quality-check.md) | Obligatorisk |

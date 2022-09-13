@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334769"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403661"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
 
@@ -50,7 +50,7 @@ Hvis du vil slå en af disse funktioner til eller fra, skal du gøre det i [funk
 | Lager- og Warehouse management | (Indien) Ignorer lokation for regler for overførselspris, når "Fra lagerstedskode" er indstillet til "Alle" | <p>Denne funktion gælder kun for lokaliseringer til Indien. Det gør det nemmere at oprette overførselspriser for varer i lageroverførsler.</p><p>Du kan oprette overførselspriser ved at konfigurere hver vare med regler for overførselsprissætning. Du kan f.eks. oprette denne konfiguration ved at medtage en regellinje, hvor feltet **Fra-lagerstedskode** er angivet til *Alle*. Denne indstilling angiver, at overførselsprisen, der defineres af linjen, skal gælde, uanset hvilket lagersted varen plukkes fra. Når denne funktion er aktiveret, ignoreres **Lokation**-indstillingen i regler for overførselspris, hvor feltet *Fra lagerstedskode* er angivet til **Alle**. Derfor gælder reglen, uanset hvilken lokation der er angivet i flytteordren. Denne funktionsmåde er sandsynligvis forventet, fordi lokationen ligger under lagerstedet i hierarkiet for lagringsdimensionen.</p><p>Uden denne funktion vil systemet kun anvende regler af denne type, når lokationen på flytteordren svarer nøjagtigt til den lokation, der er angivet for reglen. (Hvis reglen indeholder en tom lokation, anvender systemet kun reglen på flytteordrer, der også har en tom værdi for lokationen).</p> |
 | Lager- og Warehouse management | Rapporten Disponibelt lager – oprydning i data | Denne funktion gør det muligt at rydde op i data, der bruges til at oprette *Lagring af rapporten Disponibelt lager*-rapporter. |
 | Produktionsstyring | Tildel projektaktiviteter for serviceaftale og serviceordrelinjer | Denne funktion føjer et felt med navnet **Projektaktivitet** til serviceaftale- og serviceordrelinjer, så du kan angive en projektaktivitet for dem. Denne funktion kan hjælpe med at forhindre blokeringsfejl, når du bogfører projektkladder under servicestyring, der kræver, at der angives en projektaktivitet.  |
-| Warehouse management | Manuel udvalgstjeneste for overførselslinjer for administratorer eller lignende betroede brugere | Denne funktion giver administratorer mulighed for manuelt at plukke lagertransaktioner, der er relateret til flyttelinjer. Disse linjer omfatter linjer, der allerede er frigivet til lagerstedet. Administratorer bør kun foretage dette pluk i særlige tilfælde, f.eks. hvis systemet er i ødelagt tilstand. |
+| Warehouse management | Manuel udvalgstjeneste for overførselslinjer for administratorer eller lignende betroede brugere | Denne funktion giver administratorer mulighed for manuelt at plukke lagertransaktioner, der er relateret til flyttelinjer. Disse linjer omfatter linjer, der allerede er frigivet til lagerstedet. Administratorer bør kun foretage dette pluk i særlige tilfælde, f.eks. hvis systemet er i ødelagt tilstand. Du kan finde flere oplysninger under [Manuelt håndtere undtagelser for pluk af salgs- og flyttelinjer](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og opdaterede dokumentationsressourcer
 

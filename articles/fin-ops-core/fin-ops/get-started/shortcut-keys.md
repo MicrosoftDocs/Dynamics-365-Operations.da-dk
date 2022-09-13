@@ -2,7 +2,7 @@
 title: Tastaturgenveje
 description: Denne artikel indeholder en oversigt over de genvejstastekombinationer, du kan bruge, når du arbejder med programmer til finans og drift.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357571"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405431"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,10 +88,12 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Åbne filterruden (eller skifte fokus mellem filterruden og hovedformularen, hvis filterruden allerede er åben) | Alt+M, F eller Ctrl+F3       |
 | Lukke filterruden (med fokus i filterruden)                                                               | Esc                      |
 | Åbne avanceret filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
+| Anvende Quick Filter (når der er fokus i Quick Filter)                                                              | Enter                    |
+| Anvende gitterfilteret (når fokus er i filterfeltet i kolonneoverskriften)                                             | Enter                    |
 
 ## <a name="form-shortcuts"></a>Formulargenveje
 
-| For at gøre det                                    | Tryk på             |
+| Hvis du vil gøre dette                                    | Tryk på              |
 |-----------------------------------------------|-------------------|
 | Opret en ny post                           | Alt+N             |
 | Slette en post                               | Alt+Del eller Alt+F9 |
@@ -160,9 +163,10 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Hvis du vil gøre dette                                                                   | Tryk på                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åbn linket                                                           | Ctrl+Enter                    |
+| Åbn hyperlinket (når der er fokus på et skrivebeskyttet kontrolelement)<br><br>**Bemærk:** Denne genvej gælder kun, når funktionen **Standardiser tastaturinteraktion for kombinationsbokse og opslagskontrolelementer** er aktiveret                   | Enter    |
 | Angive sessionsdatoen i et datofelt                                       | N                             |
 | Indtaste den aktuelle dato i et datofelt                                       | T                             |
-| Åbne opslag, kombinationsboks, datovælger, dialogboks                         | Alt+pil ned                |
+| Åbne opslag, kombinationsboks, datovælger, dialogboks                         | Alt+pil ned<br><br>Enter (når funktionen **Standardiser tastaturinteraktion for kombinationsbokse og opslagskontrolelementer** er aktiveret)                |
 | Lukke opslag, kombinationsboks, datovælger, dialogboks                        | Esc                           |
 | Flytte fokus til et opslag (når opslaget er allerede åbnet)                   | Alt+pil ned                |
 | Åbn kontrolelementets udvidede forhåndsvisning                                          | Alt+pil op                  |

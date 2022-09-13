@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873718"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403664"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesproces og frigivelseshistorik for Planlægningsoptimering
 
@@ -33,6 +33,7 @@ Da der ikke vises beskeder, når Planlægningsoptimering opdateres i dit miljø,
 
 | Ændringer | Detaljer om funktionsstyring | Udstedelsesdatoer |
 |---|---|---|
+| <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 29. august - 3. september 2022 |
 | <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet.<p>[Vedligeholdelse af centraliseret kalender for planlægningsoptimering](../supply-chain-calendars-master-planning.md)<p>[Forslag til planlægningsoptimering for at optimere eksisterende forsyning](../action-messages.md)<p>[Understøttelse af planlægningsoptimering til underleverandørarbejde](../../production-control/manage-subcontract-work-production.md) | Der kræves ingen funktionsstyring. | 7.-11. marts 2022 |
 | <p>Tilføjet understøttelse af planlægningsprioritet for produktionsordrer. | Tilgængelig i version 10.0.25 som en del af funktionen med navnet *Prioritetsstyret MRP-understøttelse for planlægningsoptimering*. | 12. - 18. november 2021 |
 | <p>Generelle forbedringer af ydeevne, kvalitet og stabilitet. | Der kræves ingen funktionsstyring. | 12. - 18. november 2021 |

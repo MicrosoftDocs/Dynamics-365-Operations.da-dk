@@ -1,23 +1,23 @@
 ---
 title: Undervisningskatalog til brugere af Dynamics 365 Finance
 description: Find alle uddannelsesmulighederne for brugere af Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 99a672e4fd0bfe270f0cd1bfa421b7bd6feca9e1
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069278"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424507"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Undervisningskatalog til brugere af Dynamics 365 Finance
 
@@ -25,11 +25,10 @@ Har du netop fået et nyt program, du skal til at bruge?
 
 Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de mest grundlæggende til de mest avancerede. Hvis der findes indhold i flere formater, giver vi dig besked, så du kan vælge det kursusformat, der bedst opfylder dine behov.
 
-## <a name="get-started"></a>Introduktion<a name="get-started"></a>
+## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Indhold | Beskrivende tekst | Formater | Længde |
+| Indhold | Beskrivende tekst | Format | Længde |
 |---------|-------------|--------|--------|
-| [Få mere at vide om forretningsværdien af Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interesseret i at lære noget om forretningsprogrammer? Måske ved du ikke, hvor du skal begynde med Microsoft Dynamics 365 og Power Platform-programmer? Hør, hvordan forretningsprogrammer kan være med til at transformere din virksomhed. | Gratis onlinelæringssti i dit eget tempo | 8 timer |
 | [Grundlæggende funktioner i Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interesseret i at lære noget om forretningsprogrammer? Start med denne læringssti for at se, hvordan Dynamics 365-apps bruges. Få mere at vide om skybegreber, Power Platform, og hvordan du kommer i gang med Dynamics 365-apps. | Gratis onlinelæringssti i dit eget tempo | 5.5 timer   |
 | [Kom i gang med programmer til finans og drift](/learn/paths/get-started-finance-operations/) | Få mere at vide om, hvordan programmer til finans og drift understøtter firmaer i at administrere deres globale økonomisystemer, driftsprocesser og strømlinede forsyningskæder, der giver brugerne mulighed for at træffe hurtige og velfunderede beslutninger.   Som det første skridt i dit arbejdsforløb med programmer til finans og drift skal du være bekendt med dets funktioner og funktionalitet, uanset din tiltænkte rolle. | Gratis onlinelæringssti i dit eget tempo | 2 timer |
 | [Kom i gang med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunder administrere orkestrering af ordrer til opfyldelse. Disse egenskaber giver organisationer mulighed for at orkestrere ordreflow på tværs af forskellige platforme og apps. | Gratis onlinelæringsmodul i dit eget tempo | 30 minutter |
@@ -37,14 +36,14 @@ Følgende katalog er organiseret fra kerneviden til bestemte domæner og fra de 
 
 ## <a name="core-platform-knowledge"></a>Viden om kerneplatformen<a name="core-platform-knowledge"></a>
 
-| Indhold | Beskrivende tekst | Format | Length |
+| Indhold | Beskrivende tekst | Format | Længde |
 |---------|-------------|--------|--------|
 | [Konfigurere din organisation i programmer til finans og drift](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionskonsulent, der arbejder med programmer til finans og drift, skal du vide, hvordan du opretter en organisation til kunden. Denne undervisningssti viser dig, blandt andre opgaver, hvordan du konfigurerer juridiske enheder, implementerer sikkerhedsindstillinger, tilpasser brugergrænsefladen efter brugere, designer og bygger mobilapps og implementerer fælles integrationer. | Gratis onlinelæringssti i dit eget tempo | 12 timer  |
 | [Konfigurere og arbejde med analyser og rapportering i programmer til finans og drift](/learn/paths/configure-analytics-reporting-finance-operations/) | Erhvervsledere kan træffe vigtige beslutninger i deres firma, hvis de får en præcis indsigt i de underliggende økonomiske og driftsmæssige data. En forretningsbruger kan også konfigurere og bruge det elektroniske rapporteringsværktøj uden en eneste kodelinje for at overholde nye lovgivningsmæssige krav og generere forretningsdokumenter i det krævede format til elektronisk udveksling af oplysninger med offentlige myndigheder, banker og andre parter. | Gratis onlinelæringssti i dit eget tempo | 4 timer   |
 
 ## <a name="financial-management"></a>Økonomistyring<a name="financial-management"></a>
 
-| Indhold | Beskrivende tekst | Format | Length |
+| Indhold | Beskrivende tekst | Format | Længde |
 |---------|-------------|--------|--------|
 | [Konfigurere og bruge finans i Dynamics 365 Finance](/learn/paths/configure-use-general-ledger-dyn365-finance/) | Dynamics 365 Finance giver erhvervsbrugere mulighed for at styre økonomien og styre midler med nøjagtige oplysninger når som helst i forbindelse med finansiel planlægning og budgettering og holde sig ajour med analyser. Da økonomi er den centrale del af virksomheden, og finansmodulet er hjertet i økonomistyringen, viser denne læringssti dig, hvordan du opretter funktionalitet i modulet Finans. Den dækker også gennemførelse af lukningsprocedurer for en periode eller et år.    | Gratis onlinelæringssti i dit eget tempo | 13.5 timer  |
 | [Konfigurere og bruge Kontant- og bankstyring samt moms i Dynamics 365 Finance](/learn/paths/configure-use-cash-bank-management-tax-dyn365-finance/)    | Du kan bruge modulet Kontant- og bankstyring i Dynamics 365 Finance til at vedligeholde en organisations bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti. Alle firmaer skal opkræve og betale moms til forskellige skattemyndigheder. I dette læringsforløb lærer du, hvordan du kan konfigurere og bruge disse områder af Dynamics 365 Finance | Gratis onlinelæringssti i dit eget tempo | 7,5 timer |

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313877"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410444"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.30 udgaven
+
+### <a name="revenue-recognition"></a>Indtægtsføring
+
+[Indtægtsføring](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsagen til forældelsen/fjernelsen** |Erstattet af forbedret funktionalitet, [Abonnementsfakturering](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt** | Applikation |
+| **Installationsindstilling** | Alt |
+| **Status** | Udfaset: Efter april 2023 understøttes funktionen Indtægtsføring i Dynamics 365 Finance ikke længere med modtagelse af programrettelser. Kunderne bliver bedt om at bruge den forbedrede funktion, [Fakturering af abonnement](../../finance/accounts-receivable/subscription-billing-summary.md). I oktober 2023 er funktionen Indtægtsføring ikke længere tilgængelig. Kunderne bliver bedt om at bruge den forbedrede funktionalitet, Fakturering af abonnement.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.29 udgaven
 

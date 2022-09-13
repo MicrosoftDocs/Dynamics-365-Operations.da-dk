@@ -2,7 +2,7 @@
 title: Modul til søgeresultater
 description: Denne artikel omhandler søgeresultater-moduler og beskriver, hvordan du kan føje dem til sider på websteder i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: eeb7cd0769fcb866a3d7dcc03e8e87daf24b2c5d
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286804"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405287"
 ---
 # <a name="search-results-module"></a>Modul til søgeresultater
 
@@ -86,48 +86,16 @@ Hvis du vil tilføje et modul til søgeresultater på en kategoriside i websteds
 1. Gennemse sidekonfigurationen under **Gennemse og afslut**. Hvis du vil redigere sideoplysningerne, skal du vælge **Tilbage**. Hvis sideoplysningerne er korrekte, skal du vælge **Opret side**.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
 
-## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivere lagervågenhed for modulet til søgeresultater
+## <a name="inventory-aware-search-results-module"></a>Modul med lagerbaserede søgeresultater
 
-Kunder forventer generelt, at et e-handelswebsted er lagerbaseret i hele søgeoplevelsen, så de kan beslutte, hvad de skal gøre, hvis et bestemt produkt ikke er på lager. Modulet med søgeresultater kan forbedres, så det omfatter lagerdata og giver følgende oplevelser:
+Modulet med søgeresultater kan forbedres, så det omfatter lagerdata og giver følgende oplevelser:
 
-- Få vist en etiket for lagertilgængelighed sammen med produktet.
+- Vis lagerniveaulabels sammen med produkter.
 - Skjul produkter, der ikke er på lager, på produktlisten.
-- Få vist produkter, der ikke er på lager, nederst på produktlisten.
-- Filtrere produkter i søgeresultater efter lagerniveau.
+- Vis produkter, der ikke er på lager, nederst på produktlisten.
+- Understøt lagerbaseret produktfiltrering.
 
-Hvis du vil aktivere disse erfaringer, skal du først aktivere **Udvidet funktion til registrering af e-commerce-produkter, så den er lagerbaseret** i arbejdsområdet til **funktionsstyring**.
-
-> [!NOTE]
-> Funktionen **Udvidet e-handelsproduktregistrering, der er lagerfølsom** er tilgængelig fra og med Commerce version 10.0.20 og senere.
-
-Ved lagerbaseret produktsøgning bruges produktattributter til at få oplysninger om lagertilgængelighed. Inden funktionen er nødvendig, skal der oprettes dedikerede produktattributter, der skal angives lagerdata for dem, og de skal føjes til onlinekanalen. 
-
-Hvis du vil oprette dedikerede produktattributter, der understøtter modulet med lagerbaserede søgeresultater, skal du følge disse trin.
-
-1. Gå i hovedkontoret til **Retail og Commerce \> Detail- og handels-it \> Produkter og lager**.
-1. Vælg og åbn **Udfyld produktattributter med lagerniveau**.
-1. I dialogboksen skal du angive følgende oplysninger:
-
-    1. Under Parametre skal du gå til feltet **Produktattribut og typenavn** og angive et navn for den dedikerede produktattribut, der skal oprettes til registrering af lagertilgængelighed.
-    1. Under Parametre skal du gå til feltet **Lagertilgængelighed baseret på** og vælge det antal, som beregningen på lagerniveau skal baseres på (for eksempel **Fysisk disponibelt**). 
-
-1. Klik på fanen Kør i baggrunden. Da lagerbeholdningen af et produkt eller et sortiment, der sælges, ændres konstant, anbefales det på det kraftigste, at du planlægger jobbet som en batchproces.
-
-> [!NOTE]
-> Hvis du vil udføre ensartede beregninger af lagerniveau på tværs af sider og moduler på e-handelswebstedet, skal du sikre dig, at du vælger den samme indstilling for antal for både **Lagertilgængelighed baseret på** i Commerce Headquarters og indstillingen **Lagerniveau baseret på** i Commerce-webstedsgeneratoren. Du kan finde flere oplysninger om lagerindstillinger i webstedsgeneratoren under [Anvend lagerindstillinger](inventory-settings.md).
-
-Benyt følgende fremgangsmåde for at konfigurere produktattributterne for en onlinekanal. 
-
-1. Gå i hovedkontoret til **Retail og Commerce \> Konfiguration af kanal \> Kanalkategorier og produktattributter**.
-1. Du kan finde flere oplysninger i Aktivere lagervågenhed for modulet til søgeresultater.
-1. Vælg og åbn en tilknyttet attributgruppe, føj den netop oprettede produktattribut til den, og luk derefter siden.
-1. I Commerce-versioner før 10.0.27-versionen skal du vælge **Angiv attributmetadata**, vælg den netop tilføjede produktattribut, og slå derefter indstillingerne **Vis attribut på kanal**, **Kan hentes**, **Kan redigeres** og **Kan forespørges** til.
-1. Gå derefter til **Detail og handel \> Detail og handels-it \> Dostributionsplan**, og kør job **1150 (Katalog)**. Hvis du planlægger jobbet **Udfyld produktattributter med lagerniveau** som en batchproces, anbefales det, at du også planlægger jobbet 1150 som en batchproces, der kører samtidigt.
-
-> [!NOTE]
-> For produkter, der vises i modulet med søgeresultater, angives lagerniveauet på masterproduktniveau i stedet for på niveauet for de individuelle varianter. Det har kun to mulige værdier: "tilgængelig" og "ikke på lager". Den faktiske tekst til værdierne hentes fra definitionen på [lagerniveauprofilen](inventory-buffers-levels.md). Et masterprodukt anses kun for ikke at være på lager, når alle varianterne ikke er på lager.
-
-Når alle de foregående konfigurationstrin er udført, viser afgrænsningerne på siden med søgeresultater et lagerbaseret filter, og modulet med søgeresultater henter lagerdataene bag fremgangsmåden. Du kan derefter konfigurere indstillingen **Lagerindstillinger for produktlistesider** i Commerce-webstedsgeneratoren til at styre, hvordan modulet med søgeresultater viser produkter, der ikke er på lager. Du finder flere oplysninger under [Anvendelse af lagerindstillinger](inventory-settings.md).
+Hvis du vil aktivere disse oplevelser, skal du først aktivere funktionen **Udvidet e-handels-produktregistrering, der er lagerfølsom** og derefter konfigurere forudsætningsindstillinger i Commerce headquarters. Du finder flere oplysninger under [Lagerbaseret produktliste](inventory-aware-product-listing.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a5c0cc988141b102cf3659ab4599e025f8f4640
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b1e2036e4e7a8a47d6df029f285df7aca0fa74e6
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907168"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403655"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Annullere lagerstedsarbejde for undtagelseshåndtering
 
@@ -32,7 +32,7 @@ Du kan få adgang til funktionen Annuller arbejde via **Lokationsstyring** \> **
 
 Under pluk af lagersted kan arbejdere støde på situationer, hvor de har registreret antal som plukket fra en lagerlokation til deres brugerlokation, men de kan ikke registrere Læg på lager-handlingen. Inkonsekvente lagerdata er ofte, men ikke altid, årsagen til, at arbejdet er blokeret.
 
-I modsætning til den almindelige annullerings funktion, der kan åbnes med knappen **Annuller** i arbejdshovedet, kræver funktionen Annuller arbejde ikke, at den sidste fuldførte arbejdslinje er en linje af typen **Læg på lager**. Med andre ord kan funktionen Annuller arbejde køres med annulleringslogik, selvom vareantallet på en arbejdslinje befinder sig på en brugerlokation.
+I modsætning til den almindelige annulleringsfunktion, der kan åbnes med knappen **Annuller** i arbejdshovedet, kræver funktionen Annuller arbejde ikke, at den sidste fuldførte arbejdslinje er en linje af typen **Læg på lager**. Med andre ord kan funktionen Annuller arbejde køres med annulleringslogik, selvom vareantallet på en arbejdslinje befinder sig på en brugerlokation.
 
 > [!NOTE]
 > For arbejde, der skal annulleres af driftsårsager, skal lagerstedsbrugerne fortsætte med at bruge den almindelige annulleringsfunktion på arbejdssiden.

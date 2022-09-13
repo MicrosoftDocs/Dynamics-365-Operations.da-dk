@@ -2,7 +2,7 @@
 title: Gitteregenskaber
 description: Denne artikel beskriver flere stærke funktioner i gitterkontrolelementet. Den nye gitterfunktion skal være aktiveret for at få adgang til disse egenskaber.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258941"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405459"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -178,20 +178,22 @@ Funktionen **Nyt gitterkontrolelement** er tilgængelig direkte i funktionsstyri
 
 Denne funktion begyndte at blive aktiveret som standard i version 10.0.21. Den er planlagt til at blive obligatorisk i oktober 2022.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
+## <a name="developer-topics"></a>Udvikleremner
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Udvikler] Framelde enkelte sider brug af det nye gitter 
 Hvis din organisation finder en side, der har nogle problemer med at bruge det nye gitter, er der en API, der giver mulighed for, at en individuel formular kan benytte det ældre gitter, samtidig med at det stadig tillader resten af systemet at anvende det nye gitterkontrolelement. Hvis du framelder en enkelt side fra det nye gitter, skal du tilføje følgende opkaldspost `super()` i `run()`-metoden for formularen.
 
 ```this.forceLegacyGrid();```
 
 Denne API vil blive udfaset for at tillade fjernelse af det tidligere gitterkontrolelement. Den vil dog være tilgængelig i mindst 12 måneder, efter at dens udfasning er offentliggjort. Hvis der er problemer, der kræver, at denne API bruges, skal du rapportere dem til Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til at bruge det nye gitter, når gitteret tidligere er fravalgt
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til at bruge det nye gitter, når gitteret tidligere er fravalgt
 Hvis du har valgt en enkelt side fra til brug af det nye gitter, kan du senere aktivere det nye gitter igen, når de underliggende problemer er løst. Hvis du vil gøre dette, skal du blot fjerne kaldet til `forceLegacyGrid()`. Ændringen træder først i kraft, når en af følgende ting er sker:
 
 - **Geninstallation af miljøet**: Når et miljø opdateres og geninstalleres, ryddes den tabel, der gemmer de sider, der er valgt ud af det nye gitter (FormControlReactGridState), automatisk.
 - **Manuel rydning af tabellen**:Til udviklingsscenarier skal du bruge SQL til at rydde tabellen FormControlReactGridState og derefter genstarte AOS. Denne kombination af handlinger nulstiller den cachelagring af sider, der er valgt ud af det nye gitter.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Udvikler] Vælge individuelle gitre uden for funktionaliteten af Skrive forud i forhold til systemet
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Udvikler] Vælge individuelle gitre uden for funktionaliteten af Skrive forud i forhold til systemet
 Der er opstået scenarier, der ikke egner sig til at fungere godt sammen med *Skrive forud i forhold til systemet* i gitteret. (F.eks. vil en kode, der udløses, når en række valideres, udløse en datakildeundersøgelse, og undersøgelsen kan derefter ødelægge ikke-bekræftede redigeringer på eksisterende rækker). Hvis din organisation opdager et sådant scenario, findes der en API, som giver en udvikler mulighed for at vælge et individuelt gitter ud af den asynkrone rækkevalidering og gå tilbage til den tidligere funktionalitet.
 
 Når asynkron rækkevalidering er deaktiveret i et gitter, kan brugere ikke oprette en ny række eller flytte til en anden eksisterende række i gitteret, mens der er valideringsproblemer for den aktuelle række. Som en sidevirkning af denne handling kan tabeller ikke indsættes fra Excel i finans og drift-gitre.
@@ -204,13 +206,18 @@ Hvis du fjerne en enkelt side fra asynkron rækkevalidering, skal du tilføje f�
 > - Dette kald skal kun startes i særlige tilfælde og bør ikke være normen for alle gitre.
 > - Det anbefales ikke, at du skifter API under kørslen, efter at formularen er indlæst.
 
-## <a name="developer-size-to-available-width-columns"></a>[Udvikler] "Tilpas størrelsen til tilgængelig bredde"-kolonner
+### <a name="developer-size-to-available-width-columns"></a>[Udvikler] "Tilpas størrelsen til tilgængelig bredde"-kolonner
 Hvis en udvikler angiver egenskaben **WidthMode** til **SizeToAvailable** for kolonner i det nye gitter, har disse kolonner som udgangspunkt samme bredde, som de ville have, hvis egenskaben var angivet til **SizeToContent**. De strækkes dog for at bruge eventuel ekstra tilgængelig bredde i gitteret. Hvis egenskaben er angivet til **SizeToAvailable** for flere kolonner, deler alle kolonnerne eventuel ekstra tilgængelig bredde i gitteret. Men hvis en bruger manuelt tilpasser størrelsen på en af disse kolonner, bliver kolonnen statisk. Den forbliver på denne bredde og kan ikke længere strækkes for at bruge den ekstra tilgængelige gitterbredde.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Udvikler] Du kan angive den kolonne, der får den første fokusering, når der oprettes nye rækker med tasten Pil ned.
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Udvikler] Du kan angive den kolonne, der får den første fokusering, når der oprettes nye rækker med tasten Pil ned.
 Som det blev nævnt i afsnittet [Forskelle, når der indtastes data forud for systemet](#differences-when-entering-data-ahead-of-the-system), hvis funktionen "Skrive forud i forhold til systemet" er aktiveret, og en bruger opretter en ny række ved hjælp af tasten **Pil ned**, vil standardfunktionsmåden være at sætte fokus i den første kolonne i den nye række. Dette kan være forskelligt fra erfaringen i det tidligere gitter, eller når der er valgt en **Ny**-knap.
 
 Brugere og organisationer kan oprette gemte visninger, der er optimeret til dataindtastning. (Du kan f.eks. omarrangere kolonner, så den første kolonne er den, du vil starte med at indtaste data i). Derudover kan organisationer fra og med version 10.0.29 regulere denne funktionsmåde ved at bruge metoden **selectedControlOnCreate()**. Med denne metode kan en udvikler angive den kolonne, der får den første fokusering, når der oprettes en ny række med tasten **Pil ned**. Som input har denne API det kontrol-id, der svarer til den kolonne, som skal have den første fokusering.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Udvikler] Håndteringsgitre med ikke-React-kontrolelementer, der kan udvides
+Når et gitter indlæses, og systemet opdager et ikke-React-baseret kontrolelement, der kan udvides, vil det tvinge det tidligere gitter til at blive gengivet. Når en bruger først støder på denne situation, vises der en meddelelse om, at siden skal opdateres. Efterfølgende indlæses det ældre gitter automatisk på denne side uden yderligere beskeder til brugerne frem til den næste systemopdatering. 
+
+For at undgå denne situation permanent kan oprettere af et kontrolelement, der kan udvides, oprette en React-version af kontrolelementet til brug i gitteret.  Når det er udviklet, kan X++ klassen for kontrolelementet dekoreres med attributten **FormReactControlAttribute** for at angive placeringen af det React-bundt, der skal indlæses for det pågældende kontrolelement. Se klassen `SegmentedEntryControl` som et eksempel.  
 
 ## <a name="known-issues"></a>Kendte problemer
 I dette afsnit vedligeholdes en liste over kendte problemer for det nye gitterkontrol.
@@ -218,9 +225,12 @@ I dette afsnit vedligeholdes en liste over kendte problemer for det nye gitterko
 ### <a name="open-issues"></a>Aktuelle problemer
 - Når funktionen **Nyt gitterkontrolelement** er aktiveret, vil nogle sider fortsat anvende det eksisterende gitterkontrolelement. Det sker i følgende situationer:
  
-    - Der findes en kortliste på siden, som gengives i flere kolonner.
-    - Der findes en grupperet kortliste på siden.
-    - En gitterkolonne med et ikke-reagerende kontrolelement, der kan udvides.
+    - [Løst] Der findes en kortliste på siden, som gengives i flere kolonner.
+        - Denne type kortliste understøttes af **Nyt gitterkontrolelement** fra og med version 10.0.30. Enhver brug af forceLegacyGrid() til dette formål kan fjernes. 
+    - [Løst] Der findes en grupperet kortliste på siden.
+        - Denne type kortliste understøttes af **Nyt gitterkontrolelement** fra og med version 10.0.30. Enhver brug af forceLegacyGrid() til dette formål kan fjernes. 
+    - [Løst] En gitterkolonne med et ikke-React kontrolelement, der kan udvides.
+        - Udvidelige kontrolelementer kan angive en React-version af kontrolelementet, som indlæses, når de placeres i gitteret, og justere kontroldefinitionen, så dette kontrolelement indlæses, når det bruges i gitteret. Yderligere oplysninger finder du i den tilsvarende udviklersektion. 
 
     Når en bruger først støder på en af disse situationer, vises der en meddelelse om opdatering af siden. Når denne meddelelse vises, vil siden fortsat anvende det eksisterende gitter for alle brugere indtil den næste opdatering af produktversionen. En bedre håndtering af disse scenarier, så det nye gitter kan anvendes, vil blive betragtet som en fremtidig opdatering.
 

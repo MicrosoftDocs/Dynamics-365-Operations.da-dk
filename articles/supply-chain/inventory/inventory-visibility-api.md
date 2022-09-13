@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357635"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423589"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er til Inventory Visibility
 
@@ -41,6 +41,8 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bogfør | [Angive/tilsidesætte disponibelt antal](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bogfør | [Oprette én reservationshændelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bogfør | [Oprette flere reservationshændelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Bogfør | [Tilbagefør én reservationshændelse](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Bogfør | [Tilbagefør flere reservationshændelser](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Bogfør | [Oprette én planlagt ændring af disponibelt antal](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Bogfør | [Oprette flere planlagte ændringer af disponibelt antal](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
@@ -56,7 +58,7 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 > 
 > Masse-API'en kan maksimalt returnere 512 poster for hver anmodning.
 
-Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+Microsoft har leveret den brugsklare anmodningssamling *Postman*. Du kan importere denne samling til softwaren *Postman* med følgende delte link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Find slutpunktet i overensstemmelse med Lifecycle Services-miljøet
 
@@ -168,9 +170,9 @@ Der findes to API'er til oprettelse af ændringshændelser for disponibelt antal
 
 I følgende tabel opsummeres betydningen af hvert felt i JSON-brødteksten.
 
-| Felt-id | Beskrivelse |
+| Felt-id | Beskrivende tekst |
 |---|---|
-| `id` | Et entydigt id for den specifikke ændringshændelse. Dette id bruges til at sikre, at hvis kommunikationen med tjenesten mislykkes under bogføringen, vil hændelsen ikke blive talt med to gange i systemet, hvis den sendes igen. |
+| `id` | Et entydigt id for den specifikke ændringshændelse. Dette id bruges til at sikre, at hvis genafsendelse forekommer på grund af en servicefejl, vil hændelsen ikke blive talt med to gange i systemet. |
 | `organizationId` | Identifikatoren for den organisation, der er knyttet til hændelsen. Denne værdi er tilknyttet et organisations-id eller et dataområde-id i Supply Chain Management. |
 | `productId` | Id'et for produktet. |
 | `quantities` | Det antal, som det disponible antal skal ændres med. Hvis der f.eks. føjes 10 nye bøger til en hylde, vil denne værdi være `quantities:{ shelf:{ received: 10 }}`. Hvis der fjernes tre bøger fra hylden eller de sælges, er denne værdi `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ I følgende tabel opsummeres betydningen af hvert felt i JSON-brødteksten.
 | `dimensions` | Et dynamisk nøgle/værdi-par. Værdierne knyttes til nogle af dimensionerne i Supply Chain Management. Du kan dog også tilføje brugerdefinerede dimensioner (f.eks. _Kilde_) for at angive, om hændelsen kommer fra Supply Chain Management eller et eksternt system. |
 
 > [!NOTE]
-> Parametrene `SiteId` og `LocationId` opbygger [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Du skal derfor angive dem i dimensioner, når du opretter hændelser med disponible ændringer, angiver eller tilsidesætter disponible antal eller opretter reservationshændelser.
+> Parametrene `siteId` og `locationId` opbygger [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Du skal derfor angive dem i dimensioner, når du opretter hændelser med disponible ændringer, angiver eller tilsidesætter disponible antal eller opretter reservationshændelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Oprette en ændringshændelse for disponibelt antal
 
@@ -216,14 +218,14 @@ Følgende er et eksempel på brødtekst. I dette eksempel kan du bogføre en æn
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId&quot;: &quot;Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId&quot;: &quot;red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Følgende er et eksempel på brødtekst uden `dimensionDataSource`. I dette tilf
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Følgende er et eksempel på brødtekst.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Følgende er et eksempel på brødtekst.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ Følgende er et eksempel på brødtekst. Funktionsmåden for denne API er forske
 
 ## <a name="create-reservation-events"></a>Oprette reservationshændelser
 
-Hvis du vil bruge API'en for *Reservér*, skal du åbne reservationsfunktionen og fuldføre reservationskonfigurationen. Du kan finde flere oplysninger i [Konfiguration af reservationer (valgfri)](inventory-visibility-configuration.md#reservation-configuration).
+Hvis du vil bruge API'en for *Reservér*, skal du aktivere reservationsfunktionen og fuldføre reservationskonfigurationen. Du kan finde flere oplysninger i [Konfiguration af reservationer (valgfri)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Oprette én reservationshændelse
 
@@ -389,7 +391,7 @@ Der kan foretages en reservation i forhold til de forskellige datakildeindstilli
 
 Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. Værdien `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at valideringen ikke er nødvendig. Standardværdien er `True`.
 
-Hvis du vil annullere en reservation eller ikke-reservere angivne lagerantal, skal du angive antallet til en negativ værdi og angive parameteren `ifCheckAvailForReserv` til `False` for at springe valideringen over.
+Hvis du vil tilbageføre en reservation eller ikke-reservere angivne lagerantal, skal du angive antallet til en negativ værdi og angive parameteren `ifCheckAvailForReserv` til `False` for at springe valideringen over. Der findes også en dedikeret API, der ikke reserverer, til at gøre det samme. Forskellen er kun, hvordan de to API'er kaldes. Det er lettere at tilbageføre en bestemt reservationshændelse ved at bruge `reservationId` med API'en *unreserve*, der annullerer reservation. Du kan finde flere oplysninger i afsnittet [_Annullere reservation af én reservationshændelse_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Følgende er et eksempel på brødtekst.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+I følgende eksempel vises et korrekt svar.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Oprette flere reservationshændelser
 
-Denne API er en bulkversion af [API'en for enkelthændelser](#create-one-reservation-event).
+Denne API er en bulkversion af [API'en for enkelthændelser](#create-reservation-events).
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Tilbageføre reservationshændelser
+
+API'en *Unreserve* fungerer som tilbageførselshandling for [*Reservation*](#create-reservation-events)-hændelser. Den giver dig mulighed for at tilbageføre en reservationshændelse, der er angivet af `reservationId`, for at mindske reservationsantallet.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Tilbagefør én reservationshændelse
+
+Når der oprettes en reservation, medtages `reservationId` i svarteksten. Du skal angive det samme `reservationId` for at annullere reservationen og medtage det samme `organizationId` og `dimensions`, der bruges til API-kaldet af reservation. Endelig skal du angive en `OffsetQty`-værdi, der angiver det antal varer, der skal frigøres fra den forrige reservation. En reservation kan enten tilbageføres helt eller delvist afhængigt af den angivne `OffsetQty`. Hvis der f.eks. . er reserveret *100* vareenheder, kan du angive `OffsetQty: 10` for at afreservere *10* af det oprindeligt reserverede antal.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Følgende kode viser et eksempel på brødtekstens indhold.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Følgende kode viser et eksempel på et korrekt svarindhold.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> Når `OffsetQty` i svaret er mindre end eller lig med reservationsantallet, vil `processingStatus` være "*success*", og `totalInvalidOffsetQtyByReservId` vil være *0*.
+>
+> Hvis `OffsetQty` er større end det reserverede antal, vil `processingStatus` være "*partialSuccess*", og `totalInvalidOffsetQtyByReservId` vil være forskellen mellem `OffsetQty` og det reserverede antal.
+>
+>Hvis reservationen f.eks. har et antal på *10* og `OffsetQty` har en værdi på *12*, vil værdien af `totalInvalidOffsetQtyByReservId` være *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Tilbagefør flere reservationshændelser
+
+Denne API er en bulkversion af [API'en for enkelthændelser](#reverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Forespørg om disponibelt antal
 
-Brug API'en _Forespørg om disponibelt antal_ til at hente aktuelle data om disponibelt antal for dine produkter. API'en understøtter i øjeblikket forespørgsler på op til 100 individuelle varer efter `ProductID`-værdi. Der kan også angives flere `SiteID`- og `LocationID`-værdier i hver forespørgsel. Maksimumgrænsen er defineret som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Brug API'en *Forespørg om disponibelt antal* til at hente aktuelle data om disponibelt antal for dine produkter. API'en understøtter i øjeblikket forespørgsler på op til 5000 individuelle varer efter `productID`-værdi. Der kan også angives flere `siteID`- og `locationID`-værdier i hver forespørgsel. Maksimumgrænsen defineres af følgende ligning:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Forespørgsel ved hjælp af opslagsmetoden
 
@@ -517,7 +629,7 @@ I brødteksten i denne anmodning er `dimensionDataSource` stadig en valgfri para
 - `productId` kan indeholde en eller flere værdier. Hvis det er en tom matrix, returneres alle produkter.
 - `siteId` og `locationId` bruges i partitionering i Lagersynlighed. Du kan angive mere end én `siteId` og `locationId`-værdi i en *Forespørgselsanmodning*. I den aktuelle version skal du angive både `siteId` og `locationId`-værdier.
 
-Parameteren `groupByValues` skal følge din konfiguration til indeksering. Du kan få flere oplysninger i [Konfiguration af produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
+Vi foreslår, at du bruger parameteren `groupByValues` til at følge din konfiguration til indeksering. Du kan få flere oplysninger i [Konfiguration af produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
 
 Parameteren `returnNegative` bestemmer, om resultaterne indeholder negative poster.
 
@@ -530,13 +642,13 @@ Følgende er et eksempel på brødtekst.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ I følgende eksempel vises, hvordan du forespørger på alle produkter på en be
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Her er et eksempel på en URL-adresse for hentningsmetoden. Denne anmodning er nøjagtigt den samme som det opslagseksempel, som blev angivet tidligere.
+Her er et eksempel på en URL-adresse. Denne anmodning er nøjagtigt den samme som det opslagseksempel, som blev angivet tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Disponibel til tilsagn
