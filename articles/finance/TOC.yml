@@ -10,11 +10,13 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
             - name: Nyheder eller ændringer i Finance
               items:
-                - name: Nyheder eller ændringer på Finance-startsiden
+                - name: Nyheder eller ændringer på startsiden til Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (november)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (oktober)
                   href: get-started/whats-new-changed-10-0-29.md
-                - name: Finance 10.0.28 (August)
+                - name: Finance 10.0.28 (august)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (juli)
                   href: get-started/whats-new-changed-10-0-27.md
@@ -388,7 +390,7 @@
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Oprette salgsordrefakturaer
               href: accounts-receivable/tasks/create-sales-order-invoices.md
-            - name: Oprette en kundefaktura
+            - name: Oprette en debitorfaktura
               href: accounts-receivable/configure-customer-invoices.md
             - name: Listeside med kundetransaktioner
               href: accounts-receivable/customer-transactions-list-page.md
@@ -568,7 +570,7 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Nummerering af dokumenter og bilag kronologisk
               href: accounts-receivable/chrono-numbers.md
-            - name: Arkivér udskrevne kundefakturaer med hash-numre
+            - name: Arkivér udskrevne debitorfakturaer med hash-numre
               href: accounts-receivable/archive-printed-invoices.md
         - name: Budgetplanlægning
           items:
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Sporing af regnskabskilde
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: 'Dokumenter, der afventer regnskab'
+                      href: general-ledger/documents-pending-accounting.md
             - name: Rapporter og forespørgsler
               items:
                 - name: Se kladdeposteringer og -transaktioner
@@ -2126,7 +2130,7 @@
                   href: localizations/apac-chn-negative-debits-credits.md
                 - name: Brugerbetjeningslog efter kinesisk arbejdsregel
                   href: localizations/tasks/user-operation-log-china-working-rule.md
-                - name: Ofte stillede spørgsmål om kundefakturaer med moms
+                - name: Ofte stillede spørgsmål om debitorfakturaer med moms
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
                 - name: Eksport af GB/T 24589-2010
                   href: localizations/apac-chn-gbt-24589-2010.md
@@ -2174,7 +2178,7 @@
                   href: localizations/denmark.md
                 - name: Tildele et indbetalingskortformat til en kundekonto
                   href: localizations/tasks/assign-payment-slip-format-customer-account.md
-                - name: Oprette og bogføre en kundefaktura for en kunde i den offentlige sektor
+                - name: Oprette og bogføre en debitorfaktura for en kunde i den offentlige sektor
                   href: localizations/tasks/create-post-customer-invoice-public-sector-customer.md
                 - name: Oprette og bogføre en fritekstfaktura for en kunde i den offentlige sektor
                   href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
@@ -2446,7 +2450,7 @@
                   href: localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
                 - name: Bogføre kladde til genudstedelse af veksel
                   href: localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
-                - name: Udskrive tekst for opkrævning af engangsbeløb på en kundefaktura
+                - name: Udskrive tekst for opkrævning af engangsbeløb på en debitorfaktura
                   href: localizations/emea-fra-print-lump-sum-recovery-text.md
                 - name: Afskrivning af saldo- og lineærværdi (RB/SL)
                   href: localizations/emea-fra-rbsl-depreciation.md
@@ -3150,9 +3154,9 @@
                   href: localizations/tasks/vendor-master-po.md
                 - name: Udligne en påtegnet veksel
                   href: localizations/tasks/settle-endorsed-bill-exchange.md
-                - name: Udligne konsoliderede kundefakturaer ved hjælp af en betalingskladde
+                - name: Udligne konsoliderede debitorfakturaer ved hjælp af en betalingskladde
                   href: localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
-                - name: Udligne konsoliderede kundefakturaer ved hjælp af udligningsposteringer
+                - name: Udligne konsoliderede debitorfakturaer ved hjælp af udligningsposteringer
                   href: localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
                 - name: Udligne konsoliderede kreditorfakturaer ved hjælp af en betalingskladde
                   href: localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
@@ -3220,7 +3224,7 @@
                   href: localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
                 - name: Administrere kreditors debet og kredit for GST
                   href: localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: Udskrive GST-kundefakturaer med en afhjælpningssætning
+                - name: Udskrive GST-debitorfakturaer med en afhjælpningssætning
                   href: localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
                 - name: Udskrive GST-momsfakturaer
                   href: localizations/tasks/my-00005-print-gst-tax-invoices.md

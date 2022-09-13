@@ -3413,8 +3413,6 @@
                       href: warehousing/packing-work.md
                     - name: Konfigurere vareomfordeling for kort plukning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: Annullere lagerstedsarbejde for undtagelseshåndtering
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Systembaseret arbejdsrækkefølge
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Pluklinjegruppering
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Visualisering af udgående arbejdsbyrde
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Håndtere undtagelser af salgs- og overførselslinjepluk manuelt
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: Annullere lagerstedsarbejde for undtagelseshåndtering
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Genopfyldning
                   items:
                     - name: Oversigt over genopfyldning

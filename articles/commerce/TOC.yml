@@ -12,6 +12,8 @@
               items:
                 - name: Nyheder eller ændringer på Commerce-startsiden
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (november 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (oktober 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
@@ -702,18 +704,16 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: Definere kanalspecifikke rabatter
                   href: define-channel-specific-discounts.md
-                - name: Indstillinger til forhindring af rabatter for detailprodukter
-                  href: prevent-discounts.md
                 - name: Betalingsmiddelbaserede rabatter
                   href: tender_based_discounts.md
                 - name: Forsendelsesrabat
                   href: shipping-discount.md
                 - name: Konfigurere gave sammen med købskampagner
                   href: gift-with-purchase.md
-                - name: Konfigurere kuponer
-                  href: retail-coupons.md
-                - name: Få vist rabatter i POS
-                  href: discounts-pos.md
+                - name: Kuponer
+                  href: coupons.md
+                - name: Prisfastsættelsesindstillinger
+                  href: price-settings.md
                 - name: Prisrapporter
                   href: price-report.md
                 - name: Oprette kanalspecifikke samhandelsaftaler
@@ -800,6 +800,8 @@
                       href: calculated-inventory-retail-channels.md
                     - name: Lageropslagshandling i POS
                       href: pos-inventory-lookup-operation.md
+                    - name: Lagerbaseret produktoversigt
+                      href: inventory-aware-product-listing.md
                 - name: Indkøbsordrer
                   items:
                     - name: Oversigt over indkøbsordrer
