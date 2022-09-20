@@ -12,6 +12,8 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (november 2022)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (oktober 2022)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (august 2022)
@@ -1703,13 +1705,13 @@
                   href: inventory/inventory-visibility.md
                 - name: Installere og konfigurere Inventory Visibility
                   href: inventory/inventory-visibility-setup.md
-                - name: Konfigurere Lagersynlighed
+                - name: Konfigurere Inventory Visibility
                   href: inventory/inventory-visibility-configuration.md
                 - name: Understøttelse af Inventory Visibility for WMS-varer
                   href: inventory/inventory-visibility-whs-support.md
-                - name: Bruge appen Lagersynlighed
+                - name: Bruge appen Inventory Visibility
                   href: inventory/inventory-visibility-power-platform.md
-                - name: Reservationer i Lagersynlighed
+                - name: Reservationer i Inventory Visibility
                   href: inventory/inventory-visibility-reservations.md
                 - name: Allokering af Inventory Visibility-slager
                   href: inventory/inventory-visibility-allocation.md
@@ -1719,6 +1721,28 @@
                   href: inventory/inventory-visibility-api.md
                 - name: Tip til Inventory Visibility
                   href: inventory/inventory-visibility-tips.md
+        - name: Sensor Data Intelligence
+          items:
+            - name: Startside til Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Aktivere Sensor Data Intelligence for dit system
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: Installere en IoT-løsning på Azure
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Parametre til Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: Oprette en simuleret sensor til test
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: Scenariet for aktivnedetid
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: Scenariet for aktivvedligeholdelse
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: Scenariet for maskinstatus
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: Scenariet for produktkvalitet
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: Scenariet for produktionsforsinkelser
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -1940,7 +1964,7 @@
                 - name: Omkostningsstyring
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Udgiftsstyring
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Disponibel lagerbeholdning
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Fakturagodkendelser
@@ -1948,11 +1972,11 @@
                 - name: Mit team
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Oversigt over Project-mobilprogrammer
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: Tidsregistrering for projekt
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: Godkendelse af indkøbsordrer
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Salgsordrer
@@ -3463,11 +3487,11 @@
                       href: warehousing/small-parcel-shipping.md
                 - name: Forsendelseskonsolideringspolitikker
                   items:
-                    - name: Forsendelseskonsolideringspolitikker
+                    - name: Oversigt over forsendelseskonsolideringspolitikker
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurere forsendelseskonsolideringspolitikker
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: 'Eksempel 1 – Konsolidere forsendelser, der er frigivet til lagerstedet ved hjælp af automatisk frigivelse af salgsordrer'
+                    - name: 'Scenarie 1 – Konsolidere forsendelser, der er frigivet til lagerstedet ved hjælp af automatisk frigivelse af salgsordrer'
                       href: warehousing/consolidate-shipments-automatic.md
                     - name: 'Eksempel 2 – Konsolidere forsendelser, når forsendelseskonsolideringpolitikken er tilsidesat'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
