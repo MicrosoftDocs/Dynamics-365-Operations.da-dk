@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893172"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428030"
 ---
 # <a name="release-to-warehouse"></a>Frigiv til lagersted
 
@@ -34,7 +34,7 @@ En *belastning* er en gruppe salgsordre- eller flytteordrelinjer, der grupperes 
 
 *Lagerstedsarbejde* er en hvilken som helst lagerstedsoperation, der udføres af en lagerarbejder. Arbejdshandlinger på lagersted består typisk af mindst to efterfølgende handlinger: en lagerarbejder plukker disponibel lagerbeholdning på ét sted og sætter derefter det plukkede lager ned på en anden placering.
 
-Når du frigiver en ordre til lagerstedet, opretter systemet *belastningslinjer* og grupperer dem i forsendelser. Processen til konsolidering af forsendelse giver mulighed for automatisk konsolidering af forsendelser under processen for frigivelse til lagersted. Du kan finde flere oplysninger under [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md).
+Når du frigiver en ordre til lagerstedet, opretter systemet *belastningslinjer* og grupperer dem i forsendelser. Processen til konsolidering af forsendelse giver mulighed for automatisk konsolidering af forsendelser under processen for frigivelse til lagersted. Du kan finde flere oplysninger under [Politikker for forsendelseskonsolidering](about-shipment-consolidation-policies.md).
 
 Systemet bruger *bølger* til at oprette plukarbejde og belastninger til forsendelse. Der skal være en *bølgeskabelon* tilgængelig for den type bølge, du vil oprette, og for ordrelinjens lagersted. Bruge bølgeskabelonen til typen *Forsendelse* til salgsordrer og flytteordrer.
 

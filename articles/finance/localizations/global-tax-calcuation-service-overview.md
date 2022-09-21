@@ -2,7 +2,7 @@
 title: Oversigt over momsberegning
 description: Denne artikel forklarer det overordnede område og funktionerne til momsberegning.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295985"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465160"
 ---
 # <a name="tax-calculation-overview"></a>Oversigt over momsberegning
 
@@ -74,18 +74,10 @@ Det anbefales, at du importerer og indstiller konfigurationen af momsberegning m
 
 | Version af Finance eller Supply Chain Management | Version af momskonfiguration               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Momskonfiguration – Europe 30.12.82     |
-| 10.0.19         | Konfiguration af momsberegning 36.38.193 |
-| 10.0.20         | Konfiguration af momsberegning 40.43.208 |
-| 10.0.21         | Konfiguration af momsberegning 40.48.215 |
-| 10.0.22         | Konfiguration af momsberegning 40.48.215 |
-| 10.0.23         | Konfiguration af momsberegning 40.50.221 |
-| 10.0.24         | Konfiguration af momsberegning 40.50.225 |
-| 10.0.25         | Konfiguration af momsberegning 40.50.225 |
-| 10.0.26         | Konfiguration af momsberegning 40.54.234 |
-| 10.0.27         | Konfiguration af momsberegning 40.54.234 |
-| 10.0.28         | Konfiguration af momsberegning 40.54.234 |
+| 10.0.30         | Konfiguration af momsberegning 40.55.239 |
 | 10.0.29         | Konfiguration af momsberegning 40.55.236 |
+| 10.0.28         | Konfiguration af momsberegning 40.54.234 |
+| 10.0.27         | Konfiguration af momsberegning 40.54.234 |
 
 
 ## <a name="data-flow"></a>Dataflow
@@ -104,120 +96,27 @@ Her er en oversigt over dataflowprocessen til momsberegning.
 
 Momsberegning kan aktiveres via transaktioner. 
 
-Følgende transaktioner understøttes i version 10.0.21: 
+Følgende tabel indeholder de posteringer, der understøttes i den tilsvarende version.
 
-- Sales
-
-    - Salgstilbud
-    - Salgsordre
-    - Bekræftelse
-    - Plukliste
-    - Følgeseddel
-    - Salgsfaktura
-    - Kreditnota
-    - Returordre
-    - Overskrift til diverse gebyrer
-    - Linje til diverse gebyrer
-
-- Indkøb
-
-    - Indkøbsordre
-    - Bekræftelse
-    - Tilgangsliste
-    - Produktkvittering
-    - Indkøbsfaktura
-    - Overskrift til diverse gebyrer
-    - Linje til diverse gebyrer
-    - Kreditnota
-    - Returordre
-    - Indkøbsrekvisition
-    - Diverse gebyrer til indkøbsrekvisitionslinje
-    - Tilbudsanmodning
-    - Diverse gebyrer i overskrift til tilbudsanmodning
-    - Diverse gebyrer i linje til tilbudsanmodning
-
-- Lager
-
-    - Flytteordre – send
-    - Flytteordre – modtag
-
-Følgende transaktioner understøttes i version 10.0.23: 
-
-- Fritekstfaktura
-
-Følgende transaktioner understøttes i version 10.0.26: 
-
-- Finanskladder
-- kreditorfakturakladde
-
-Følgende transaktioner understøttes i version 10.0.28: 
-
-- Kreditorbetalingskladde
-- Debitorbetalingskladde
-
-Følgende transaktioner understøttes i version 10.0.29: 
-
-
-- Periodiske kladder
+| Version | Transaktioner |
+|---------|--------------|
+| 10.0.29 | Periodiske kladder |
+| 10.0.28 | Kreditorbetalingskladde<br> Debitorbetalingskladde | 
+| 10.0.26 | Finanskladder<br> kreditorfakturakladde |
+| 10.0.23 | Fritekstfaktura |
+| 10.0.21| Sales<br><ul><li>Salgstilbud</li><li>Salgsordre</li><li>Bekræftelse</li><li>Plukliste</li><li>Følgeseddel</li><li>Salgsfaktura</li><li>Kreditnota</li><li>Returordre</li><li>Overskrift til diverse gebyrer</li><li>Linje til diverse gebyrer</li></ul>Indkøb<br><ul><li>Indkøbsordre</li><li>Bekræftelse</li><li>Tilgangsliste</li><li>Produktkvittering</li><li>Indkøbsfaktura</li><li>Overskrift til diverse gebyrer</li><li>Linje til diverse gebyrer</li><li>Kreditnota</li><li>Returordre</li><li>Indkøbsrekvisition</li><li>Diverse gebyrer til indkøbsrekvisitionslinje</li><li>Tilbudsanmodning</li><li>Diverse gebyrer i overskrift til tilbudsanmodning</li><li>Diverse gebyrer i linje til tilbudsanmodning</li></ul>Lagerbeholdning<ul><li>Flytteordre – send</li><li>Flytteordre – modtag</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Understøttede lande/områder
 
-Momsberegning kan køres med de understøttede lokaliseringsfunktioner i følgende lande/områder for en juridisk enheds primære adresse: 
+Momsberegning kan køres med understøttede funktioner til lokalisering. Den følgende tabel indeholder en liste over lande/områder for den primære adresse for den juridiske enhed.
 
-Understøttes i version 10.0.21:
-
-- Østrig
-- Belgien
-- Danmark
-- Estland
-- Finland
-- Frankrig
-- Tyskland
-- Ungarn
-- Island
-- Irland
-- Italien
-- Letland
-- Litauen
-- Nederlandene
-- Norge
-- Polen
-- Sverige
-- Schweiz
-- Storbritannien
-- United States
-
-Understøttes i version 10.0.22:
-
-- Australien
-- Bahrain
-- Canada
-- Egypten
-- Hong Kong SAR
-- Kuwait
-- New Zealand
-- Oman
-- Qatar
-- Saudi-Arabien
-- Sydafrika
-- Forenede Arabiske Emirater
-
-Understøttes i version 10.0.23:
-
-- Thailand
-- Japan
-- Malaysia
-- Singapore
-
-Understøttes i version 10.0.24:
-
-- Mexico
-
-Understøttes i version 10.0.26:
-
-- Kina
-- Tjekkiet
-- Spanien
+| Version | Land/område |
+|---------|----------------|
+| 10.0.26 | - Kina <br>- Tjekkiet<br>- Spanien |
+| 10.0.24 | Mexico |
+| 10.0.23 | - Thailand <br>- Japan <br>- Malaysia <br>- Singapore |
+| 10.0.22 | - Australien<br>- Bahrain <br>- Canada<br>- Egypten <br>- Hong Kong SAR <br>- Kuwait <br>- New Zealand <br>- Oman <br>- Qatar <br>- Saudi-Arabien <br>- Sydafrika <br>- Forenede Arabiske Emirater |
+| 10.0.21 | - Østrig <br>- Belgien <br>- Danmark <br>- Estland <br>- Finland <br>- Frankrig <br>- Tyskland <br>- Ungarn <br>- Island <br>- Irland <br>- Italien <br>- Letland <br>- Litauen <br>- Nederlandene <br>- Norge <br>- Polen <br>- Sverige <br>- Schweiz <br>- Storbritannien <br>- United States |
 
 Hvis et land/område ikke er lokaliseret af Microsoft, kan Momsberegning også aktiveres og køres med andre globale funktioner.
 

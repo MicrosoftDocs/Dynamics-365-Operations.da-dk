@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec214ef4ebb6ecb72c1684c515df25d3c2403c14
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027130"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475632"
 ---
 # <a name="administration-overview"></a>Administrationsoversigt
 
@@ -46,10 +46,10 @@ Denne artikel indeholder en liste over emnerne i Hjælp og andre ressourcer til 
   - [Konfigurere integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Oprette en app for tilbagevendende dataeksport](hr-admin-integration-recurring-data-export.md)
   - Integrere med Office
-    - [Selvstudium til Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Opdatere enhedsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Oprette Åbn i Excel-oplevelser](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Fejlfinding af Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Selvstudium til Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Opdatere enhedsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Oprette Åbn i Excel-oplevelser](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Fejlfinding af Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Administrere funktioner](hr-admin-manage-features.md)
 
@@ -100,7 +100,7 @@ Denne artikel indeholder en liste over emnerne i Hjælp og andre ressourcer til 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 ### <a name="elearning-courses"></a>eLearning-kurser
-Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Human Resources on Microsoft Learn](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+Du kan se onlinekurser og uddannelsesmuligheder på [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videoer
 

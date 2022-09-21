@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 8338b1e11e1bd4fe7482b914ac6bf5f60ebc2e36
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 7406a6443f851fcfa9757deed57c108ba7b6e069
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313823"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473898"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Retningslinjer for installation af eksempel på integration af regnskabsregistreringsservice i Den Tjekkiske Republik (ældre)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Du skal kun følge retningslinjerne i denne artikel, hvis du bruger Microsoft Dynamics 365 Commerce-version 10.0.28 eller tidligere. Pr. Commerce-version 10.0.29 er eksempel på integration af regnskabsregistreringstjeneste for Tjekkiet tilgængelig i Commerce Software Development Kit (SDK). Du kan finde flere oplysninger i [Konfigurere kanalkomponenter](./emea-cze-fi-sample.md#configure-channel-components).

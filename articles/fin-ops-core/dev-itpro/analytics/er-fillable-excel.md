@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280918"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476808"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Designe en konfiguration til generering af dokumenter i Excel-format
 
@@ -186,6 +186,9 @@ Når en **Celle**-komponent er konfigureret til at angive en værdi i et Excel-b
 
 > [!NOTE]
 > Alle Excel-billeder og -figurer betragtes som forankret af dets øverste venstre hjørne til en bestemt Excel-celle eller et specifikt celleområde. Hvis du vil replikere et Excel-billede eller -figur, skal du konfigurere den celle eller det område, det eller den er forankret til, som en replikeret celle eller et celleområde.
+
+> [!TIP]
+> Hvis du planlægger at bruge et billede med brugerdefineret skalering og størrelsesforhold under kørsel, anbefales det, at du angiver indstillingen **Skaler billeder** med den overordnede [Excel-filkomponent](#excel-file-component) til **Ja** for at anvende skalering og størrelsesforhold som pladsholder på det billede i den Excel-skabelon, du bruger.
 
 Du kan få mere at vide om, hvordan du integrerer billeder og figurer, under [Integrere billeder og figurer i et dokumenter, du genererer ved hjælp af ER](electronic-reporting-embed-images-shapes.md).
 

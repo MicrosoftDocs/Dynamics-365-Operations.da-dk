@@ -2,7 +2,7 @@
 title: Tilføje produktanbefalinger på POS
 description: Denne artikel beskriver brugen af produktanbefalinger på en POS-enhed.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872793"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460050"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Tilføje produktanbefalinger på POS
 
@@ -37,7 +37,7 @@ Produktanbefalinger er aktiveret for følgende POS-scenarier. De er tilgængelig
 
 1. På siden **Produktdetaljer**:
 
-    - Hvis en medarbejder går ind på siden **Produktdetaljer**, når vedkommende ser på tidligere transaktioner på tværs af forskellige kanaler, foreslår anbefalingstjenesten flere varer, det er sandsynligt at købe sammen.
+    - Hvis en medarbejder går ind på siden **Produktdetaljer**, når de ser på tidligere transaktioner på tværs af forskellige kanaler, foreslår anbefalingstjenesten flere varer, det er sandsynligt at købe sammen. Afhængigt af tilføjelsesprogrammet til tjenesten kan detailforretninger vise **Shop lignende udseende** og **shop lignende beskrivelsesanbefalinger** for produkter samt personaliserede anbefalinger for brugere, der har en tidligere købshistorik.
 
     [![Anbefalinger på siden Produktdetaljer.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Produktanbefalinger er aktiveret for følgende POS-scenarier. De er tilgængelig
 
     [![Anbefalinger på siden Transaktion.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurere Commerce til aktivering af POS-anbefalinger
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurere Commerce til aktivering af POS-anbefalinger 
 
-Benyt følgende fremgangsmåde for at konfigurere produktanbefalinger:
+Hvis du vil oprette produktanbefalinger, skal du bekræfte, at du har fuldført klargøringsprocessen til handelsproduktanbefalinger ved at følge trinnene i [Aktivér produktanbefalinger](../commerce/enable-product-recommendations.md). Som standard vises anbefalinger både på siden **Produktdetaljer** og på siden **Kundeoplysninger**, når du har fuldført klargøringstrinnene, og dataene er færdige. 
 
-1. Kontrollér, at din tjeneste er blevet opdateret til **10.0.6-buildet.**
-2. Følg instruktionerne i, hvordan du kan [aktivere produktanbefalinger](../commerce/enable-product-recommendations.md) for din virksomhed.
-3. Valgfrit: For at få vist anbefalinger på skærmbilledet Transaktion, skal du gå til **Skærmlayout**, vælge dit skærmlayout, starte **skærmlayoutdesigneren** og derefter slippe kontrolelementet med **anbefalinger**, hvor der er behov for det.
-4. Gå til **Commerce-parametre**, vælg **Maskinel indlæring**, og vælg **Ja** under **Aktivér POS-anbefalinger**.
-5. For at se anbefalinger på et POS skal du kører det globale konfigurationsjob **1110**. For at afspejle ændringer i POS-skærmlayoutdesigneren skal du køre kanalkonfigurationsjobbet **1070**.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Føje anbefalinger til transaktionsskærmen
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Foretage fejlfinding af problemer, hvor produktanbefalingerne allerede er aktiveret
+1. Hvis du vil føje anbefalinger til transaktionsskærmbilledet, skal du følge trinnene i [Føj anbefalinger til transaktionsskærmbilledet](add-recommendations-control-pos-screen.md).
+1. Kør kanalkonfigurationsjobbet **1070** i Commerce Headquarters for at afspejle de ændringer, der er foretaget i POS-skærmlayoutdesigneren.
 
-- Gå til **Commerce-parametre** \> **Anbefalingslister** \> **Deaktiver produktanbefalinger**, og kør **Globalt konfigurationsjob \[9999\]**. 
-- Hvis du har føjet **Kontrolelement til anbefalinger** til din transaktionsskærm ved hjælp af **Designer for skærmlayout**, skal du også fjerne det.
-- Hvis du har flere spørgsmål, kan du se [Ofte stillede spørgsmål om produktanbefalinger](../commerce/faq-recommendations.md) for at få yderligere oplysninger.
+> [!NOTE] 
+> Hvis du vil aktivere POS-anbefalinger ved at bruge CSV-filen (RecoMock kommaseparerede værdier), skal du implementere CSV-filen på Microsoft Dynamics-anlægsaktivbiblioteket Lifecycle Services (LCS), før du konfigurerer layoutstyringen. Hvis du bruger filen RecoMock CSV, behøver du ikke aktivere anbefalinger. CSV-filen er kun tilgængelig til demonstrationsformål. Den anbefales af kunder eller løsningsarkitekter, der ønsker at bevare udseendet af anbefalede lister til demonstrationsformål uden at skulle købe en enhed til vedligeholdelse af et lager (SKU).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

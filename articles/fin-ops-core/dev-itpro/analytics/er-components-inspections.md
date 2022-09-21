@@ -2,7 +2,7 @@
 title: Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 description: Denne artikel forklarer, hvordan du inspicerer de konfigurerede ER-komponenter (elektronisk rapportering) for at forhindre kørselsproblemer, der kan opstå.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277844"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476848"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Inspicere den konfigurerede ER-komponent for at undgå kørselsproblemer
 
@@ -243,6 +243,15 @@ I nedenstående tabel vises en oversigt over de inspektioner, ER tilbyder. Du ka
 <td>
 <p>Der kan ikke forespørges om ORDERBY-funktionens listeudtryk.</p>
 <p><b>Kørselsfejl:</b> Sortering understøttes ikke. Valider konfigurationen for at få flere oplysninger om dette.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Forældet applikationsgenstand</a></td>
+<td>Dataintegritet</td>
+<td>Alarm</td>
+<td>
+<p>Elementet &lt;sti&gt; er markeret som forældet.<br>eller<br>Elementet &lt;sti&gt; er markeret som forældet med meddelelsen &lt;meddelelsestekst&gt;.</p>
+<p><b>Eksempel på kørselsfejl:</b> Klasse '&lt;sti&gt;' blev ikke fundet.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ I stedet for at føje et indlejret felt af typen **Beregnet felt** til datakilde
 #### <a name="option-2"></a>Indstilling 2
 
 Rediger udtrykket i datakilden **FilteredVendors** fra `ORDERBY("Query", Vendor, Vendor.AccountNum)` til `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Det anbefales ikke, at du ændrer udtrykket for en tabel, der har en stor mængde data (transaktionstabel), fordi alle poster hentes, og sortering af de nødvendige poster sker i hukommelsen. Denne fremgangsmåde kan derfor forårsage dårlig ydeevne.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Forældet applikationsgenstand
+
+Når du designer en ER-modeltilknytningskomponent eller en ER-formatkomponent, kan du konfigurere et ER-udtryk til at kalde en applikationsgenstande i ER, f.eks. en databasetabel, en klassemetode osv. I Finans-version 10.0.30 og senere kan du tvinge ER til at advare dig om, at den applikationsgenstande, der henvises til, er markeret som forældet i kildekoden. Denne advarsel kan være nyttig, fordi forældede genstande til sidst fjernes fra kildekoden. Når du får besked om statussen for en genstand, kan det stoppe dig at bruge den forældede genstand i ER-komponenten, før den fjernes fra kildekoden, hvilket hjælper dig med at forhindre fejl i at kalde ikke-eksisterende applikationsgenstande fra en ER-komponent under kørslen.
+
+Aktiver funktionen **Valider forældede elementer i datakilder for elektronisk rapportering** i arbejdsområdet til **funktionsstyring** for at begynde at evaluere den forældede attribut af programgenstande under inspektionen af en ER-komponent, der kan redigeres. Den forældede attribut evalueres i øjeblikket for følgende typer applikationsgenstande:
+
+- Databasetabel
+    - Tabelfelt
+    - Tabelmetode
+- Programklasse
+    - Klassemetode
+
+> [!NOTE]
+> Der vises en advarsel under inspektionen af den redigerbare ER-komponent for en datakilde, der kun henviser til en forældet genstand, når denne datakilde bruges i mindst én binding af denne ER-komponent.
+
+> [!TIP]
+> Når [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute)-klassen bruges til at give kompileren besked om at udstede advarselsmeddelelser i stedet for fejl, viser inspektionsadvarslen den, der er angivet i kildekodeadvarslen på designtid i oversigtspanelet **Detaljer** på **på modeltilknytningsdesigner** eller **Formatdesigner**-siden.
+
+I følgende illustration vises den valideringsadvarsel, der vises, når det forældede `DEL_Email`-felt i `CompanyInfo`-programtabellen er bundet til et datamodelfelt ved hjælp af den konfigurerede `company`-datakilde.
+
+![Gennemgå advarsler om validering i Oversigtspanelet Detaljer på siden Designer for modeltilknytning.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Det er ikke muligt at løse dette problem automatisk.
+
+### <a name="manual-resolution"></a>Manuel løsning
+
+Rediger den konfigurerede modeltilknytning eller det konfigurerede format ved at fjerne alle bindinger til en datakilde, der henviser til en forældet applikationsgenstande.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

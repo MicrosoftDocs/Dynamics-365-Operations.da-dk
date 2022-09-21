@@ -2,7 +2,7 @@
 title: Konfigurere politikker for forsendelseskonsolidering
 description: Denne artikel forklarer, hvordan du konfigurerer standard- og brugerdefinerede politikker for forsendelseskonsolidering.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336486"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427976"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere politikker for forsendelseskonsolidering
 
@@ -28,75 +28,49 @@ Processen til forsendelseskonsolidering, der bruger politikker for forsendelsesk
 
 De scenarier, der vises i denne artikel, viser, hvordan du konfigurerer standard- og brugerdefinerede politikker for forsendelseskonsolidering.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Slå funktionen Politikker for forsendelseskonsolidering til
+> [!WARNING]
+> Hvis du opgraderer et Microsoft Dynamics 365 Supply Chain Management-system, hvor du har brugt den tidligere funktion til forsendelseskonsolidering, kan konsolideringen ophøre med at fungere som forventet, medmindre du følger de råd, der er angivet her.
+>
+> På installationer af Supply Chain Management, hvor funktionen *Politikker for forsendelseskonsolidering* er deaktiveret, aktiverer du forsendelseskonsolidering ved at bruge indstillingen **Konsolider forsendelse ved frigivelse til lagersted** for hvert enkelt lagersted. Denne funktion er obligatorisk pr. version 10.0.29. Når den er slået til, skjules indstillingen **Konsolider forsendelse ved frigivelse til lagersted**, og funktionaliteten erstattes af de *politikker for forsendelseskonsolidering*, der er beskrevet i denne artikel. Hver politik opretter regler for konsolidering og indeholder en forespørgsel, der skal styre, hvor politikken gælder. Når du først aktiverer funktionen, defineres der ingen politikker for forsendelseskonsolidering på siden **Politikker for forsendelseskonsolidering**. Når der ikke er defineret politikker, bruger systemet den tidligere funktionalitet. Derfor fortsætter alle eksisterende lagersteder med at overholde deres **Konsolider forsendelse ved frigivelse til lagerstedsindstilling**, selvom den indstilling nu er skjult. Når du har oprettet mindst én politik for forsendelseskonsolidering, har **Konsolider forsendelse ved frigivelse til lagerstedsindstilling** dog ikke længere nogen virkning, og konsolideringsfunktionaliteten styres fuldstændigt af politikkerne.
+>
+> Når du har defineret mindst én politik for forsendelseskonsolidering, kontrollerer systemet konsolideringspolitikkerne, hver gang en ordre frigives til lagerstedet. Systemet behandler politikkerne ved at bruge den rangering, der er defineret af den enkelte politiks værdi for **politikrækkefølge**. Den anvender den første politik, hvor forespørgslen svarer til den nye ordre. Hvis igen forespørgsler matcher ordren, vil hver ordrelinje generere en separat forsendelse, der indeholder en enkelt lastlinje. Som reserve anbefales det derfor, at du opretter en standardpolitik, der gælder for alle lagersteder og grupper efter ordrenummer. Giv denne reservepolitik den højeste værdi for **politikrækkefølge**, så den behandles til sidst.
+>
+> Hvis du vil genskabe den ældre funktionsmåde, skal du oprette en politik, der ikke er grupperet efter ordrenummer, og som har forespørgselskriterier, der omfatter alle de relevante lagersteder.
 
-> [!IMPORTANT]
-> I det [første scenarie](#scenario-1), der beskrives i denne artikel, skal du først konfigurere et lagersted, så det bruger den tidligere funktion til forsendelseskonsolidering. Derefter gør du politikker for forsendelseskonsolidering tilgængelige. På denne måde kan du opleve, hvordan opgraderingsscenariet fungerer. Hvis du planlægger at bruge et demonstrationsdatamiljø til at gå gennem det første scenarie, skal du ikke aktivere funktionen, før du udfører scenariet.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Slå funktionen Politikker for forsendelseskonsolidering til
 
 Før du kan bruge funktionen *Politikker for forsendelseskonsolidering*, skal du slå den til i systemet. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Forsendelseskonsolideringspolitikker* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Konfigurere politikker for indledende konsolidering
 
-Hvert scenariet i denne artikel indeholder referencer til værdier og poster, der er inkluderet i de standarddemodata, der er angivet for Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til **USMF**, før du går i gang.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenarie 1: Konfigurer standardpolitikker for forsendelseskonsolidering
-
-Der er to situationer, hvor du skal konfigurere minimumantallet af standardpolitikker, når du har aktiveret funktionen *Politikker for forsendelseskonsolidering*:
-
-- Du er ved at opgradere et miljø, der allerede indeholder data.
-- Du er ved at installere et helt nyt miljø.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Opgradere et miljø, hvor der allerede er konfigureret lagersteder til konsolidering på tværs af ordrer
-
-Når du starter denne procedure, skal *Politikker for forsendelseskonsolidering* være slået fra, hvis du vil simulere et miljø, hvor den grundlæggende funktion til konsolidering på tværs af flere ordrer allerede er brugt. Derefter bruger du funktionsstyring til at aktivere funktionen, så du kan lære, hvordan du opretter politikker for forsendelseskonsolidering efter opgraderingen.
-
-Benyt følgende fremgangsmåde for at oprette standardpolitikker for forsendelseskonsolidering i et miljø, hvor der allerede er konfigureret lagersteder til konsolidering på tværs af ordrer.
-
-1. Gå til **Lokationsstyring \> Konfiguration \> Lagersted \> Lagersteder**.
-1. Find og Åbn den ønskede lagerstedspost på listen (f.eks. lagersted *24* i **USMF**-demodataene).
-1. Vælg **Rediger** i handlingsruden.
-1. Gå til oversigtspanelet **Lagersted**, og angiv indstillingen **Konsolider forsendelse ved frigivelse til lagersted** til *Ja*.
-1. Gentag trin 2 til 4 for alle andre lagersteder, hvor der kræves konsolidering.
-1. Luk siden.
-1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**. Du skal muligvis opdatere browseren for at få vist det nye menupunkt **Politikker for forsendelseskonsolidering**, når du har aktiveret funktionen.
-1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
-
-    - En **Krydsordre**-politik for politiktypen *Salgsordrer* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
-    - En **Standard**-politik for politiktypen *Salgsordrer*
-    - En **Standard**-politik for politiktypen *Flytteafgang*
-    - En **Krydsordre**-politik for politiktypen *Flytteafgang* (hvis du har mindst ét lagersted, der er konfigureret til at bruge den tidligere konsolideringsfunktion)
-
-    > [!NOTE]
-    > - Begge **Krydsordre**-politikker tager højde for det samme sæt af felter som den tidligere logik, bortset fra feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. lagersted, leveringsmåde for transporten og adresse).
-    > - Begge **Standard**-politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
-
-1. Vælg **Krydsordre**-politik for politiktypen *Salgsordrer*, og vælg derefter **Rediger forespørgsel** i handlingsruden.
-1. Bemærk, at lagersteder, hvor indstillingen **Konsolider forsendelse ved frigivelse til lagersted** er angivet til *Ja*, vises i dialogboksen for forespørgselseditor. Derfor medtages de i forespørgslen.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Oprette standardpolitikker til et nyt miljø
-
-Udfør følgende trin for at oprette standardpolitikker for forsendelseskonsolidering i et helt nyt miljø.
+Hvis du arbejder med et nyt system eller et nyt system, hvor du lige har aktiveret funktionen *politikker for konsolidering af forsendelse* for første gang, skal du følge disse trin for at konfigurere de politikker, du oprindeligt har konfigureret for forsendelseskonsolidering.
 
 1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**.
 1. Gå til handlingsruden, og vælg **Opret standardopsætning** for at oprette følgende politikker:
 
-    - En **Standard**-politik for politiktypen *Salgsordrer*
-    - En **Standard**-politik for politiktypen *Flytteafgang*
+    - En politik med betegnelsen *Standard* for politiktypen *Salgsordrer*.
+    - En politik med betegnelsen *Standard* for politiktypen *Flytteafgang*.
+    - En politik med betegnelsen *CrossOrder* for politiktypen *Flytteafgang*. (Denne politik oprettes kun, hvis du har mindst ét lagersted, hvor den tidligere **Konsolider forsendelse ved frigivelse til lagerstedsindstilling** blev aktiveret.)
+    - En politik med betegnelsen *CrossOrder* for politiktypen *Salgsordrer*. (Denne politik oprettes kun, hvis du har mindst ét lagersted, hvor den tidligere **Konsolider forsendelse ved frigivelse til lagerstedsindstilling** blev aktiveret.)
 
     > [!NOTE]
-    > Begge **Standard**-politikker tager højde for det samme sæt af felter som den tidligere logik, herunder feltet for ordrenummeret. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
+    > - Begge *CrossOrder*-politikker tager højde for det samme sæt af felter som den tidligere logik. De vil dog også tage ordrenummerfeltet med i betragtning. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. lagersted, leveringsmåde for transporten og adresse).
+    > - Begge *Standard*-politikker tager højde for det samme sæt af felter som den tidligere logik. De vil dog også tage ordrenummerfeltet med i betragtning. (Dette felt bruges til at konsolidere linjer i forsendelser, baseret på faktorer som f.eks. ordrenummer, leveringsmåde for transporten og adresse).
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenarie 2: Konfigurer brugerdefinerede politikker for forsendelseskonsolidering
+1. Hvis systemet genererede *CrossOrder*-politik for politiktypen *Salgsordrer*, vælges den derefter **Rediger forespørgsel** i handlingsruden. I forespørgselseditoren kan du se, hvilke af lagerstederne indstillingen **Konsolider forsendelse ved frigivelse til lagersted** tidligere er aktiveret for. Derfor genskaber denne politik de tidligere indstillinger for disse lagersteder.
+1. Tilpas de nye standardpolitikker efter behov ved at tilføje eller fjerne felter og/eller redigere forespørgslerne. Du kan også tilføje lige så mange nye politikker, du har brug for. Du kan finde eksempler, der viser, hvordan du tilpasser og konfigurerer politikker, i eksempelscenariet senere i denne artikel.
 
-I dette scenarie vises, hvordan du opretter brugerdefinerede politikker for forsendelseskonsolidering. Brugerdefinerede politikker kan understøtte komplekse virksomhedskrav, når forsendelseskonsolidering afhænger af flere betingelser. For hver eksempelpolitik, du ser senere i dette scenarie, er der inkluderet en kort beskrivelse af virksomhedseksemplet. Disse eksempelpolitikker skal oprettes i en rækkefælge, der sikrer en pyramidelignende evaluering af forespørgslerne. (Med andre ord skal de politikker, der har de fleste betingelser, evalueres med den højeste prioritet).
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Scenarie: Konfigurer brugerdefinerede politikker for forsendelseskonsolidering
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Aktivere funktionen og forberede stamdata til dette scenarie
+Dette scenario indeholder et eksempel på, hvordan du kan konfigurere brugerdefinerede politikker for forsendelseskonsolidering og derefter teste dem ved hjælp af demodata. Brugerdefinerede politikker kan understøtte komplekse virksomhedskrav, når forsendelseskonsolidering afhænger af flere betingelser. For hver eksempelpolitik, du ser senere i dette scenarie, er der inkluderet en kort beskrivelse af virksomhedseksemplet. Disse eksempelpolitikker skal oprettes i en rækkefælge, der sikrer en pyramidelignende evaluering af forespørgslerne. (Med andre ord skal de politikker, der har de fleste betingelser, evalueres med den højeste prioritet).
 
-Før du kan gennemgå øvelserne i dette scenarie, skal du aktivere funktionen og forberede de stamdata, der skal bruges til filtrering, som beskrevet i det følgende underafsnit. (Disse forudsætninger gælder også for de scenarier, der er angivet i [Eksemplerscenarier på, hvordan du bruger politikker til forsendelseskonsolidering](#example-scenarios).)
+### <a name="make-demo-data-available"></a>Gøre demodata tilgængelige
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Aktivere funktionen, og opret standardpolitikkerne
+Dette scenario indeholder referencer til værdier og poster, der er inkluderet i de standard-[demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md), der er leveret til Supply Chain Management. Hvis du vil bruge de værdier, der er angivet her, når du udfører øvelserne, skal du arbejde i et miljø, hvor demodataene er installeret, og angive den juridiske enhed til *USMF*, før du går i gang.
 
-Du kan bruge funktionsstyringen til at aktivere funktionen, hvis du ikke allerede har slået den til, og oprette de standardkonsolideringspolitikker, der er beskrevet i [scenarie 1](#scenario-1).
+### <a name="prepare-master-data-for-this-scenario"></a>Forbered stamdata til dette scenarie
+
+Før du kan gennemgå øvelserne i dette scenarie, skal du forberede de stamdata, der skal bruges til filtrering, som beskrevet i det følgende underafsnit. (Disse forudsætninger gælder også for de scenarier, der er angivet i [Eksempelscenarier på, hvordan du bruger politikker til forsendelseskonsolidering](#example-scenarios)-afsnittet.)
 
 #### <a name="create-two-new-product-filter-codes"></a>Oprette to nye produktfilterkoder
 
@@ -152,7 +126,7 @@ Du kan bruge funktionsstyringen til at aktivere funktionen, hvis du ikke allered
 1. Gå til **Salg og marketing \> Kunder \> Alle kunder**.
 1. Åbn debitoren med kontonummer *US-003*.
 1. Gå til oversigtspanelet **Salgsordrestandarder**, og angiv feltet **Salgsordrepulje** til den ordrepulje, du lige har oprettet.
-1. Luk siden, og gentag derefter trin 4 og 5 for debitoren, der har kontonummer *US-004*.
+1. Luk siden, og gentag derefter trinnene 4 og 5 for debitoren, der har kontonummer *US-004*.
 
 ### <a name="create-example-policy-1"></a>Oprette eksempelpolitik 1
 
@@ -300,13 +274,13 @@ I dette eksempel skal du oprette en *Lagersted tillader konsolidering*-politik, 
 - Konsolidering med åbne forsendelser er deaktiveret.
 - Konsolidering sker på tværs af ordrer ved hjælp af de felter, der er valgt som i standard-krydsordre-pdsolitikken (for at replikere det tidligere afkrydsningsfelt **Konsolider forsendelse ved frigivelse til lagersted**).
 
-Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitikker, du har oprettet i [scenarie 1](#scenario-1). Du kan dog også oprette ensartede politikker manuelt ved at følge disse trin.
+Dette forretningseksempel kan typisk håndteres ved hjælp af de standardpolitikker, du har oprettet i [Konfigurere politikker for indledende konsolidering](#initial-policies). Du kan dog også oprette ensartede politikker manuelt ved at følge disse trin.
 
 1. Gå til **Lagerstyringssted \> Opsætning \> Frigiv til lagersted \> Politikker for forsendelseskonsolidering**.
 1. Angiv feltet **Politiktype** til *Salgsordrer*.
 1. Gå til handlingsruden, og vælg **Ny** for at oprette en politik, der har følgende indstillinger:
 
-    - **Politiknavn:** *Krydsordre*
+    - **Politiknavn:** *CrossOrder*
     - **Politikbeskrivelse:** *Konsolidering på tværs af ordrer for bestemte lagersteder*
 
 1. Lad indstillingen **Konsolider med åbne forsendelser** være angivet til *Nej*.
@@ -329,7 +303,7 @@ Nu, hvor du har oprettet alle politikker, skal du oprette den ordre, som de skal
     1. Varetype
     1. Kundeordrenr.
     1. Ordrepulje
-    1. Krydsordre
+    1. CrossOrder
     1. Standard
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Eksempelscenarier for, hvordan du kan bruge politikker for forsendelseskonsolidering
@@ -345,7 +319,7 @@ Følgende scenarier illustrerer, hvordan du kan bruge de politikker for forsende
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
+- [Oversigt over forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: b56890b546c3cd74b75cf447e62495733ea8d288
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: bc0df6c4aac72907e8523069e3f1ae100780dc3c
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387063"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473925"
 ---
 # <a name="cross-company-data-sharing-for-gift-cards"></a>Datadeling til gavekort på tværs af virksomhed
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Denne artikel beskriver, hvordan du konfigurerer funktionen Microsoft Dynamics 365 Commerce så det bruger Dynamics 365 Finance-data på tværs af dataområder til synkronisering af gavekortdata. Funktionen til deling af datapost kan derefter bruges til deling af data på tværs af virksomheder mellem to dataområder. På denne måde kan den interne Commerce-gavetabel dele data mellem to firmaenheder. Yderligere oplysninger om Dynamics 365 Finance-deling af data på tværs af virksomheder finder du i [datadeling på tværs af virksomheder](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 

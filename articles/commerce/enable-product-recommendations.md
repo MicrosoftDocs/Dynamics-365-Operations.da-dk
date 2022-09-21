@@ -2,7 +2,7 @@
 title: Aktivér produktanbefalinger
 description: Denne artikel beskriver, hvordan du kan lave produktanbefalinger, der er baseret på kunstig intelligens-maskinel læring (AI-ML), som er tilgængelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892065"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460015"
 ---
 # <a name="enable-product-recommendations"></a>Aktivér produktanbefalinger
 
@@ -36,12 +36,19 @@ Denne artikel beskriver, hvordan du kan lave produktanbefalinger, der er baseret
 1. Bekræft, at Azure AD-identitetskonfiguration indeholder en indtastning til anbefalinger. Du kan få flere oplysninger om, hvordan denne handling udføres, nedenfor.
 1. Sørg for, at den daglige opdatering af enhedslageret til Azure Data Lake Storage Gen2 er planlagt. Du kan finde flere oplysninger i [Sørg for, at opdatering af enhedslageret er automatiseret](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Aktivér RetailSale-målinger for enhedsbutik. Du kan få mere at vide om denne opsætning i [Arbejde med målpunkter](/dynamics365/ai/customer-insights/pm-measures).
+1. Kontrollér, at miljøet har konfigureret de områder, der understøttes i øjeblikket, på følgende måde:
+
+    - **Understøttede områder:** EU/USA/CA/AU.
+    - **Understøttede betjeningsområder:** USA/CA/AU. Hvis betjeningsområdet ikke svarer til en af de eksisterende understøttede områder, vælger anbefalingstjenesten det nærmeste understøttede område.
 
 Når trinnene ovenfor er udført, kan du aktivere anbefalinger.
 
+> [!NOTE]
+> Der er et kendt problem, hvor anbefalingerne ikke vises, når følgende trin er udført. Dette problem skyldes dataflowproblemer i miljøet. Hvis miljøet ikke viser anbefalede resultater, kan du konfigurere de alternative data for anbefalingstjenesten ved at følge trinnene i [Konfigurere et alternativt dataflow for anbefalinger](set-up-alternate-data-flow.md). Du skal have Azure-administratorrettigheder for at udføre disse trin. Hvis du har brug for hjælp, kan du kontakte FastTrack-repræsentanten.
+
 ## <a name="azure-ad-identity-configuration"></a>Azure AD-identitetskonfiguration
 
-Dette trin er kun obligatorisk for alle kunder, der kører en infrastruktur som en IaaS-konfiguration (Infra-Structure as a Service). Azure AD Id-konfiguration sker automatisk for kunder, der kører på Azure Service Fabric, men det anbefales, at du kontrollerer, at indstillingen er konfigureret som forventet.
+Dette trin er kun obligatorisk for kunder, der kører en infrastruktur som en IaaS-konfiguration (Infrastructure as a Service). Azure AD-identitetskonfiguration sker automatisk for kunder, der kører på Azure Service Fabric, men det anbefales, at du kontrollerer, at indstillingen er konfigureret som forventet.
 
 ### <a name="setup"></a>Konfiguration
 
@@ -94,9 +101,11 @@ Du kan få flere oplysninger om tilpassede anbefalinger i [Aktivere personlige a
 
 [Aktivér Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
+[Konfigurere alternativt dataflow for anbefalinger](set-up-alternate-data-flow.md)
+
 [Aktivere tilpassede anbefalinger](personalized-recommendations.md)
 
-[Aktivere anbefalinger af "Køb tilsvarende"](shop-similar-looks.md)
+[Aktivér anbefalinger af "Køb tilsvarende"](shop-similar-looks.md)
 
 [Fravælge tilpassede anbefalinger](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Du kan få flere oplysninger om tilpassede anbefalinger i [Aktivere personlige a
 [Oprette anbefalinger med demonstrationsdata](product-recommendations-demo-data.md)
 
 [Ofte stillede spørgsmål om produktanbefalinger](faq-recommendations.md)
+
 
 
 

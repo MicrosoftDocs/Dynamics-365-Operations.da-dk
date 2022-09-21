@@ -2,19 +2,19 @@
 title: Domæner i Dynamics 365 Commerce
 description: Denne artikel beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405490"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465187"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -144,9 +144,9 @@ Den Commerce-leverede Azure Front Door-forekomst understøtter ikke toppunktdom�
 
 - **Mulighed 1** - Brug DNS-udbyderen til at omdirigere toppunktdomænet til et "www"-domæne. F.eks. omdirigerer fabrikam.com til `www.fabrikam.com`, hvor `www.fabrikam.com` er den CNAME-post, der peger på den Commerce-tilknyttede Azure Front Door-forekomst.
 
-- **Indstilling 2** – Hvis DNS-udbyderen understøtter ALIAS-poster, kan du pege på apex-domænet til front door-slutpunktet. Dette sikrer, at IP-ændringen via front door-slutpunktet afspejles.
+- **Mulighed 2** – Hvis din DNS-udbyder understøtter ALIAS-poster, kan du pege på apex-domænet til Azure Front Door-slutpunktet, hvilket sikrer, at IP-ændringen fra slutpunktet afspejles. Du skal selv være vært for Azure Front Door-forekomsten.
   
-- **Indstilling 3** – Hvis DNS-udbyderen ikke understøtter ALIAS-poster, skal du konfigurere et CDN eller front door-forekomst på din egen for at være vært for apex-domænet.
+- **Mulighed 3** – Hvis din DNS-udbyder ikke understøtter ALIAS-poster, skal du selv ændre DNS-udbyderen til Azure DNS og være vært for både Azure DNS og Azure Front Door.
 
 > [!NOTE]
 > Hvis du bruger Azure Front Door, skal du også konfigurere en Azure DNS i det samme abonnement. Toppunktdomænet, der har Azure DNS som vært, kan pege på din Azure Front Door som en aliaspost. Dette er den eneste løsning, da toppunktdomæner altid skal pege på en IP-adresse.

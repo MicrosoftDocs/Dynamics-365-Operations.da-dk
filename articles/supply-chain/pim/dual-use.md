@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878897"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460542"
 ---
 # <a name="dual-use-goods"></a>Varer med dobbelt anvendelse
 
@@ -85,7 +85,14 @@ Udfør følgende trin for at identificere et produkt som et med dobbelt anvendel
 1. Gå til oversigtspanelet **Udenrigshandel**, angiv indstillingen **Produkter med dobbelt anvendelse** til **Ja** for at identificere det aktuelle produkt som en vare med dobbelt anvendelse.
 1. Indstil feltet **Kode for dobbelt anvendelse** til den kode, der gælder for det aktuelle produkt. (Du har defineret denne kode på siden **Kategorier for dobbelt anvendelse**).
 
-Denne opsætning kontrolleres, når du opretter en salgsordre.
+> [!NOTE]
+>
+> Systemet kontrollerer automatisk følgende måde, når der genereres en salgsbekræftelse:
+>
+> 1. Indeholder ordren varer med dobbelt anvendelse?
+> 1. Hvis ja, kræver destinationslandet så certifikater for dobbelt anvendelse?
+> 1. Hvis ja, findes der certifikater for dobbelt anvendelse for destinationslandet og er disse certifikater gyldige for de bekræftede afsendelsesdatoer?
+> 1. Hvis svarene på spørgsmål 1 og 2 er "Ja", og svaret på spørgsmål 3 er "Nej", viser systemet en advarsel for at oplyse brugeren om, at der mangler certifikater for en eller flere varer, der bruges i salgsordren. Brugeren skal sandsynligvis have de nødvendige certifikater og prøve igen, men kunne i stedet tilsidesætte advarslen og fortsætte med salgsbekræftelsen, hvis det er nødvendigt.
 
 ## <a name="set-up-dual-use-certificates"></a>Konfigurere certifikater for dobbelt anvendelse
 

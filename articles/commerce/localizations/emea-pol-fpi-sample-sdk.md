@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 178301e6d8e5f87376ed893e4bf5f966260cad62
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: b19c8d7a80ac772ae238191d1285a1ad80e6f611
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336669"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473952"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Retningslinjer for installation af eksempel på integration af bonprinter for Polen (ældre)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Du skal kun følge retningslinjerne i denne artikel, hvis du bruger Microsoft Dynamics 365 Commerce-version 10.0.28 eller tidligere. Pr. Commerce-version 10.0.29 er eksempel på integration af regnskabsprinter for Polen tilgængelig i Commerce Software Development Kit (SDK). Du kan finde flere oplysninger i [Konfigurere kanalkomponenter](./emea-pol-fpi-sample.md#configure-channel-components).

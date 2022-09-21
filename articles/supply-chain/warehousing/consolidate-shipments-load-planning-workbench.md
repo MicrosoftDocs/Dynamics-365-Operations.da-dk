@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 36a68328ddd1b19e116598fb93ac17405a9c5ed4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 862b4b4121effa3ed0a2134924b2152c8a982110
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888348"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428084"
 ---
 # <a name="consolidate-shipments-by-releasing-to-warehouse-from-the-load-planning-workbench"></a>Konsolidere forsendelser ved at frigive til lagersted fra panelet for lastplanlægning
 
@@ -252,11 +252,11 @@ Der skal være oprettet fire forsendelser:
 - Linjer fra to ordrer på kundekonto *US-003* blev grupperet i én forsendelse ved hjælp af politikken *Ordrepulje* for forsendelseskonsolidering.
 - Linjer fra to ordrer på kundekonto *US-004* blev grupperet i én forsendelse ved hjælp af politikken *Ordrepulje* for forsendelseskonsolidering.
 - Linjer fra salgsordrer 4-5 og 4-6 for kundekonto *US-007* blev grupperet i én forsendelse ved hjælp af politikken *Ordrepulje* for forsendelseskonsolidering.
-- Linjer fra salgsordrer 4-7 og 4-8 for kundekonto *US-007* blev grupperet i én forsendelse ved hjælp af politikken *Krydsordre* for forsendelseskonsolidering.
+- Linjer fra salgsordrer 4-7 og 4-8 for kundekonto *US-007* blev grupperet i én forsendelse ved hjælp af politikken *CrossOrder* for forsendelseskonsolidering.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-- [Forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
+- [Oversigt over forsendelseskonsolideringspolitikker](about-shipment-consolidation-policies.md)
 - [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
 
 

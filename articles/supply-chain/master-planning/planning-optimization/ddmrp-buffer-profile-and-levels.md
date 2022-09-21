@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186660"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428138"
 ---
 # <a name="buffer-profile-and-levels"></a>Bufferprofil og -niveauer
 
@@ -77,6 +77,14 @@ I ovenstående illustration, hvis i dag er om morgenen den 11. juni, er ADU for 
 
 - **ADU (tidligere)** = (29 + 11 + 23) ÷ 3 = 21
 
+Der tages højde for følgende posteringer ved beregning af gennemsnitlig daglig brug:
+
+- Transaktioner, der reducerer antallet af varer (i tabellen `inventtrans`, hvor antallet er mindre end nul)
+- Transaktioner med status *I bestilling*, *Reserveret bestilt*, *Reserveret fysisk*, *Plukket*, *Fratrukket* eller *Solgt*
+- Posteringer, der er dateret inden for den valgte periode bagud (den gennemsnitlige brug tidligere periode)
+- Andre transaktioner end lagerstedsarbejde, karantæne, salgstilbud eller kontoudtog (`WHSWork`, `WHSQuarantine`, `SalesQuotation` eller `Statement`)
+- Andre posteringer end overførselskladder, der findes inden for samme disponeringsdimension
+
 ### <a name="average-daily-usage-forward"></a>Beregn gennemsnitlig daglig brug (fremadrettet)
 
 I forbindelse med et nyt produkt har du muligvis ikke tidligere brugsdata. Derfor kan du i stedet bruge det forventede ADU, fremadrettet (f.eks. baseret på budgetteret efterspørgsel). I følgende illustration vises, hvordan denne fremgangsmåde fungerer, når beregningen kigger tre dage ind i fortiden (herunder i dag).
@@ -86,6 +94,11 @@ I forbindelse med et nyt produkt har du muligvis ikke tidligere brugsdata. Derfo
 I ovenstående illustration, hvis i dag er om morgenen den 11. juni, er ADU for de næste tre dage (11., 12. og 13. juni) er 21.66.
 
 - **ADU (fremadrettet)** = (18 + 18 + 29) ÷ 3 = 21.66
+
+Der tages højde for følgende posteringer ved (fremadrettet) beregning af gennemsnitlig daglig brug:
+
+- Budgetposter for den vare, hvor budgettet er valgt i behovsplanen
+- Posteringer, der er dateret inden for den valgte periode fremadrettet (den gennemsnitlige brug tidligere periode)
 
 ### <a name="average-daily-usage-blended"></a>Gennemsnitlig daglig brug (blandet)
 

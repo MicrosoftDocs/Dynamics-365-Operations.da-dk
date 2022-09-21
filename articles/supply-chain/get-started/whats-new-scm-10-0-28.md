@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
-ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
+ms.openlocfilehash: 184da494b9998e3e1cf6bd1639b452192d7e7857
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9403661"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427788"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
 
@@ -67,7 +67,7 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til programmer til finans og drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 indeholder platformopdateringer. Du kan få mere at vide i [Platformsopdateringer til version 10.0.28 af programmer til finans og drift (juni 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.28 af programmer til finans og drift (august 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 

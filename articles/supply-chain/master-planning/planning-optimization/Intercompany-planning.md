@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850664"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475605"
 ---
 # <a name="intercompany-planning"></a>Intern planlægning
 
@@ -45,8 +45,8 @@ Hvis du kører varedisponering fra en behovsplan, der omfatter planlagt downstre
 
 Hvis du vil bruge intern planlægning, skal du forberede systemet på følgende måde:
 
-1. De relevante produkter skal frigives i alle relevante firmaer. Yderligere oplysninger finder du i [Konfigurere og bruge intern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
-1. Downstream-behov skal være dækket af indkøb fra en leverandør, der har en intern relation til upstream-firmaet, og relevante standardlagerdimensioner (lokation og lagersted) på kunden. Yderligere oplysninger finder du i [Konfigurere og bruge intern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. De relevante produkter skal frigives i alle relevante firmaer. Yderligere oplysninger finder du i [Konfigurere og bruge intern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Downstream-behov skal være dækket af indkøb fra en leverandør, der har en intern relation til upstream-firmaet, og relevante standardlagerdimensioner (lokation og lagersted) på kunden. Yderligere oplysninger finder du i [Konfigurere og bruge intern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. Behovsplanen i upstream-firmaet skal indeholde planlagt downstream-efterspørgsel, og det relevante firma og behovsplanen skal være angivet i de downstream-planerne.
 
 ## <a name="include-planned-downstream-demand"></a>Inkluder planlagt downstream-efterspørgsel
@@ -85,6 +85,5 @@ I dette eksempel oprettes der et indkøbsordreforslag i USMF-firmaet, der dække
 I følgende illustration vises, hvordan dette eksempel kan se ud på siden **Udligning på flere niveauer** for den planlagte produktionsordre.
 
 ![Internt eksempel, der involverer tre firmaer.](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

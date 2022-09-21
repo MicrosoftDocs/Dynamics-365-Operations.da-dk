@@ -2,7 +2,7 @@
 title: Eksterne enheder
 description: Denne artikel forklarer begreberne i forbindelse med eksterne Commerce-enheder.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880075"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459986"
 ---
 # <a name="peripherals"></a>Eksterne enheder
 
@@ -141,6 +141,9 @@ Hvad angår ydre POS-enheder, kan mange USB-enheder tilsluttes og genkendes af W
 Modern POS understøtter UWP MSR'er og scannere. Når Modern POS er klar til input fra en af disse enheder, og en enhed, der hører til en af disse enhedsklasser, er tilsluttet, kan enheden bruges. Hvis en plug and play-stregkodescanner f.eks. er tilsluttet en computer med Windows 10, og stregkodelogon er konfigureret til Modern POS, bliver stregkodescanneren aktiv på logonsiden. Der kræves ikke yderligere opsætning.
 
 Der føjes yderligere klasser af eksterne POS-enheder til Windows, f.eks. klasser for kasseskuffer og kvitteringsprintere. Understøttelse af disse nye enhedsklasser i Modern POS afventer.
+
+> [!NOTE] 
+> Visse USB-enheder kan blive upålidelige eller upålidelige, når de administreres af en Windows 10-strømstyringsfunktion, der kaldes [USB Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend). Hvis en ekstern USB-enhed ikke længere kan reagere, kan det være nødvendigt at deaktivere den selektive suspenderingsfunktion for den pågældende enhed. Du kan finde flere oplysninger i [Aktivering af Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### <a name="keyboard-wedge"></a>Kreditkortlæser
 

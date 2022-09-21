@@ -2,7 +2,7 @@
 title: Proaktive kvalitetsopdateringer
 description: Denne artikel indeholder oplysninger om proaktiv levering af kvalitetsopdateringer.
 author: rashmansur
-ms.date: 08/23/2022
+ms.date: 09/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9d81cb15e9a127e7bea7ad9b5e0f50a1ee543f71
-ms.sourcegitcommit: 78e85ad49634cd31459fdb7325cb273352bf1501
+ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
+ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9338130"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473599"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -58,12 +58,67 @@ Der implementeres et sæt procesændringer før aktiveringen af proaktiv impleme
 - **Udvidet antal ændringer** - Aktuelt er der allerede et ekstra procestrin til godkendelse af ændringer, så de medtages i en kvalitetsopdatering. Den trinvise reduktion i det ekstra trin øges for at reducere regressionsmulighederne. Det er ikke tilladt at ændre noget i kvalitetsopdateringerne, og den øgede ændring er med til at sikre, at vi opfylder dette mål.
 - **Synlighed** – Vi sender beskeder via e-mail og Lifecycle Services (LCS) om kommende proaktive kvalitetsopdateringer. Desuden vil supportteams og hændelsesemner have synlighed for, hvor kvalitetsopdateringer er blevet implementeret proaktivt.
 - **Version reserve** - Flybillet bruges til at gruppere alle ændringer i en proaktiv kvalitetsopdatering. Hvis reservesystem er påkrævet efter en proaktiv implementering, kan det ske via flysystemet.
-- **Synkroniseringsangivelse for sandkasse** – Mindre end 20 procent af kunderne har i dag flere sandbokse, og én sandboks anvendes, hvor versionen matcher produktionen, som en hjælp ved fejlfinding. I den nærmeste tid vil vi introducere kundernes mulighed for at angive et sandkassemiljø, der ikke bør modtage den proaktive implementering af kvalitetsopdatering sammen med andre sandkasser, men som i stedet skal modtage det senere sammen med produktionsmiljøet. Bemærk, at hvis en kunde bruger en sandkasse til at teste en nyere version end produktionen, vil denne sandkasse modtage kvalitetsopdateringer til den nyere version.
-- 
-## <a name="when-will-proactive-quality-updates-start"></a>Hvornår starter proaktive kvalitetsopdateringer?
+- **Synkroniseringsangivelse for sandkasse** – Mindre end 20 procent af kunderne har i dag flere sandbokse, og én sandboks anvendes, hvor versionen matcher produktionen, som en hjælp ved fejlfinding. Hvis en kunde bruger en sandkasse til at teste en nyere version end produktionen, vil denne sandkasse modtage kvalitetsopdateringer til den nyere version.
+
+## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Hvad er rullelisten for kvalitetsopdateringer?
 
 Distributionen af proaktive kvalitetsopdateringer til sandkasse-miljøer forventes at begynde i slutningen af september eller oktober 2022 for Azure-kunder i skyen. Forsøgsmiljøer begynder også at modtage proaktiv opdateringsinstallation på det tidspunkt. I september vil der blive sendt en besked til hver kunde for at informere dem om den forventede tidsplan for deres miljøer. Der tillades kun undtagelser til den proaktive opdaterede distributionsproces for FDA-regulerede kunder. Vi arbejder stadig med, hvordan regulerede miljøer og regulerede og offentlige skykunder skal håndteres.
 
 I løbet af de næste seks måneder vil vi øge procentdelen af sandboksmiljøer, der modtager proaktive opdateringer, indtil alle angivne miljøer er medtaget, og de skrider frem til opdatering af produktionsmiljøer. I løbet af perioden overvåger vi for at sikre, at installationsprocessen fungerer uden problemer, og at vi igen får brug for ikke-forstyrrende nyttelast.
 
 Da kunderne jævnligt modtager mindre nyttelast, forventer vi, at processen med aktuelle arbejde bliver simplere. Vi vil justere frekvensen for opdateringsinstallation, efterhånden som vi viser, hvordan vi kan køre processen uden afbrydelser. Denne proces fungerer allerede effektivt for vores Dataverse-platform og programmer og leverer de forventede forbedringer af servicekvaliteten. Vi gør det samme i forbindelse med finans- og driftsprogrammer.
+
+## <a name="when-will-quality-updates-start-for-production-environments"></a>Hvornår starter kvalitetsopdateringerne for produktionsmiljøer?
+På dette tidspunkt er kvalitetsopdateringer kun målsandbokse. Opdateringer til produktionsmiljøer starter efter november 2022.
+
+## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Hvad er planlægningen for kvalitetsopdateringer?
+Du kan finde oplysninger om de mørke timer for hver region i [Hvad er planen for proaktive kvalitetsopdateringer?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
+
+## <a name="how-are-the-dark-hours-handled-for-customers-that-have-one-finance-and-operations-apps-instance-but-are-active-in-multiple-time-zones"></a>Hvordan håndteres de mørke timer for kunder, der har én finans- og operationsappforekomst, men er aktive i flere tidszoner? 
+Der findes ingen særlige planer uden for de mørke timer, hvor der findes en forekomst af finansierings- og driftsapps, da vi planlægger at udrulle kvalitetsopdateringer på en minimalt afbrydende måde med [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+
+## <a name="how-will-microsoft-ensure-the-quality-of-these-updates"></a>Hvordan vil Microsoft sikre kvaliteten af disse opdateringer?
+Microsoft gør det muligt at holde release-pipelinen effektiv nok til at levere små nyttelast til at holde valideringsomkostningen lav. Alle ret i en kvalitetsopdatering gennemgår en omhyggelig og sikker implementeringsproces, der hjælper med at forbedre kvaliteten og pålideligheden, hvilket reducerer kundens indflydelse. Installation sker i stadier i sandbox-miljøer først, efterfulgt af produktion. Trindelte installationer giver mulighed for passende overvågning for at finde ud af, om yderligere implementering er sikker. Vi stopper udrulningen, hvis der registreres problemer med hver enkelt gruppe kunder, der implementeres, og sikrer, at hvert trin i rullen har tilstrækkelig tid til, at problemerne kan opstå. Ved hver kommende kvalitetsopdatering vil vi give overblik over planen via opdateringer af offentlig dokumentation og e-mails, så kunderne kan planlægge for fremtiden.
+
+## <a name="can-customers-delay-reschedule-or-pause-a-quality-update"></a>Kan kunder forsinke, ændre eller sætte en kvalitetsopdatering på pause?
+Nej. Hovedmålet med kvalitetsopdateringer er at sikre grundlæggende oplysninger som sikkerhed, beskyttelse af personlige oplysninger, pålidelighed, tilgængelighed og ydeevne bliver løbende forbedret for vores kunder. Hvis en opdatering forsinkes eller pauser, er sikkerhed, tilgængelighed og pålidelighed i fare.
+
+## <a name="how-can-one-know-the-set-of-changes-that-went-into-a-quality-update-payload"></a>Hvordan kan man kende sættet af ændringer, der blev ind i en kvalitetsopdatering af nyttelast?
+Du kan se på alle KB-artiklerne i en kvalitetsopdatering baseret på siden **Miljødetaljer** i LCS ved at navigere til afsnittet **Kvalitetsopdatering**. 
+
+## <a name="what-is-the-process-if-a-critical-issue-is-found-after-a-quality-update"></a>Hvad er processen, hvis der bliver fundet et kritisk problem efter en kvalitetsopdatering?
+Et vigtigt problem eller nyt område er en eller flere hændelser, der typisk medfører, at flere kunder får en forringet erfaring med en eller flere af vores tjenester. Disse problemer kan medføre ikke-planlagt nedetid, herunder utilgængeligheden, forringelse af ydeevne og interferens med servicestyring. Hvis der er en bred indflydelse på kunderne, fordi sådanne genvurderinger har betydning, stopper vi med at rulle ud af en kvalitetsopdatering, indtil vi kan kommunikere og løse problemet. Den næste kvalitetsopdatering vil typisk have den nødvendige rettelse til at fortsætte nedrulningen.
+
+Hvis det påvirkes af et enkelt kundemiljø, kan du kontakte Microsoft support for at åbne en flybillet. På baggrund af berettigelse stopper vi rullen for kvalitetsopdateringen til alle andre miljøer i det pågældende projekt, indtil problemet reduceres.
+
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>Kan kunder stadig anvende hotfix-opdateringer fra LCS manuelt?
+Ja. For at sikre løbende paritet med den måde, hotfixes fungerer på, kan der stadig anvendes hotfix-opdateringer til kundemiljøer i LCS. Det er dog vigtigt at bemærke, at hotfixes, der implementeres som del af en kvalitetsopdatering, gennemgår standard SDP, før opdateringen implementeres. Dette reducerer risikoen for regressioner på grund af højere kvalitet. Det anbefales, at du vælger en kvalitetsopdatering via manuel brug af hotfixes for at forbedre pålideligheden.
+
+## <a name="can-customers-self-install-a-quality-update-build-by-themselves-ahead-of-the-schedule"></a>Kan kunder installere en kvalitetsopdatering selv før planen?
+Ja. Du kan installere en kvalitetsopdatering proaktivt. Microsoft springer opdateringen over, hvis den aktuelle build-version for miljøet er den samme som eller højere end den aktuelle kvalitetsopdatering.
+
+## <a name="if-an-environment-has-an-upcoming-scheduled-monthly-service-update-within-a-week-will-it-still-receive-quality-updates"></a>Hvis et miljø har en kommende planlagt månedlig serviceopdatering inden for en uge, modtager det så stadig kvalitetsopdateringer?
+- Der anvendes ikke kvalitetsopdateringer, hvis der er en forestående serviceopdatering planlagt inden for en uge fra det tidspunkt, hvor kvalitetsopdateringen er planlagt til at finde sted.
+- Hvis et sandbox-miljø har samme eller højere build-version end den forestående kvalitetsopdatering, springes det over.
+- Hvis et produktionsmiljø har samme eller højere build-version end den forestående kvalitetsopdatering, springes det over.
+- Hvis en sandkasse har samme eller højere build-version på grund af en kvalitetsopdatering eller en manuel opdatering af produktionen, vil produktionen stadig få den planlagte version af den månedlige serviceopdatering. Hvis det planlagte produktionsmiljø ikke skal opdateres til versionen af serviceopdateringen, kan du midlertidigt afbryde serviceopdateringen fra LCS. 
+- Det anbefales, at du bruger den seneste kvalitetsopdatering til at teste dine ændringer til en kommende serviceopdatering for at opnå større stabilitet og resultater.
+
+## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Kan et miljø ændres til tidligere tilstand, hvis der er problemer, efter at der er anvendt en kvalitetsopdatering?
+Når der er anvendt en kvalitetsopdatering, er der ingen tilbageførsel under nogen omstændigheder. Der findes kun indstillinger for programrettelser, der kan reducere problemer.
+
+## <a name="what-about-fda-regulation-and-gpx"></a>Hvad med FDA-regulering og GPX?
+Planen for kunder, der er underlagt FDA-validering og -regulering, er stadig dynamisk. Forvent flere opdateringer i dette område snart. I øjeblikket er alle sådanne kunder undtaget fra kvalitetsopdateringer.
+
+## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>Hvilke versioner af serviceopdateringer understøttes for disse kvalitetsopdateringer?
+Kunder på versioner, der er N-2 ikke vil modtage kvalitetsopdateringer. 
+
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>Implementeringer af økonomi- og operationsapps med detailkomponenter kræver typisk ekstra arbejde, udover at de skal implementere MPOS igen. Hvordan påvirker disse kvalitetsopdateringer RetailSDK? 
+Da arten af hotfixes i sig selv ikke ændres i betalingsbelastningen af kvalitetsopdateringerne, forventer vi ikke på dette tidspunkt yderligere indflydelse, der specifikt vedrører detailkomponenter.
+
+## <a name="is-there-any-impact-to-cloud-hosted-environments-che-"></a>Har det indflydelse på CHE (Cloud Hosted Environments)? ? 
+Nej.
+
+## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Er der nogen integrationsproblemer med Microsoft Dataverse? 
+Nej.
+

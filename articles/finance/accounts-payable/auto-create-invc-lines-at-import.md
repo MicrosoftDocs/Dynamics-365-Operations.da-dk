@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903501"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462268"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Oprette fakturalinjer, når du importerer kreditorfakturaer
 
@@ -45,7 +45,7 @@ Benyt følgende fremgangsmåde for at aktivere automatisk oprettelse af faktural
 For at understøtte de funktioner, der er beskrevet i denne artikel, er dataenheden **Kreditorfakturahoved** blevet udvidet. Der er tilføjet tre felter:
 
 - **HeaderOnlyImport** – Dette felt skal angives til **Ja** for at generere linjer til fakturahoveder.
-- **PurchIdRange** – Listen over indkøbsordrenumre. Fakturanumrene kan være inden for et interval, f.eks. **INV0001. INV0009** (hvor to prikker adskiller start og afslutning af intervallet) eller adskilte værdier, f.eks. **INV0001, INV0003, INV0006**. Alle indkøbsordrer skal tilhøre samme kreditorkonto i fakturahovedet. Ellers vises følgende fejlmeddelelse: "Der kunne ikke oprettes fakturalinjer. Indkøbsordrer har forskellige kreditorkonti."
+- **PurchIdRange** – Listen over indkøbsordrenumre. Fakturanumrene kan være inden for et interval, f.eks. **PO0001..PO0009** (hvor to prikker adskiller start og afslutning af intervallet) eller adskilte værdier, f.eks. **PO0001, PO0003, PO0006**. Alle indkøbsordrer skal tilhøre samme kreditorkonto i fakturahovedet. Ellers vises følgende fejlmeddelelse: "Der kunne ikke oprettes fakturalinjer. Indkøbsordrer har forskellige kreditorkonti."
 - **PackingslipRange** – Listen over produktkvitteringsnumre. Kreditorfakturalinjer kan oprettes ud fra produktkvitteringer. Produktkvitteringsnumre indgår dog ikke typisk på kreditorfakturaer. Du skal kun angive produktkvitteringsnumrene i dette felt, hvis du tydeligt kan identificere, hvilke produktkvitteringer der er specifikke fakturaer for. Fakturalinjer kan oprettes ud fra produktkvitteringer. Hvis dette felt bruges, ignoreres indstillingen af feltet **Vælg standardantal til automatisk oprettelse af fakturalinjer** på siden **Kreditorparametre**. 
 
 **Begrænsning**: Hvis du angiver flere produktkvitteringsnumre, oprettes der flere ventende kreditorfakturaer med samme fakturanummer. Du skal konsolidere dem manuelt, før du behandler fakturaen yderligere. I fremtidige versioner planlægger vi at konsolidere fakturaerne automatisk, så begrænsningen fjernes.

@@ -1,5 +1,5 @@
 ---
-title: Forsendelseskonsolideringspolitikker
+title: Oversigt over forsendelseskonsolideringspolitikker
 description: Denne artikel giver en oversigt over den funktionalitet, der giver en fleksibel konfiguration af politikker for forsendelseskonsolidering.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903892"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427922"
 ---
-# <a name="shipment-consolidation-policies"></a>Forsendelseskonsolideringspolitikker
+# <a name="shipment-consolidation-policies-overview"></a>Oversigt over forsendelseskonsolideringspolitikker
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Før der blev introduceret politikker for forsendelseskonsolidering, var konsoli
 
 Forespørgsler bruges til at identificere den politik for forsendelseskonsolidering, der gælder, og derefter bestemmer et redigerbart sæt felter, hvordan lastlinjerne grupperes på forsendelsesniveau. (Dette mønster ligner det mønster, som bølgeskabeloner følger). Derudover er indstillingen **Konsolider med eksisterende forsendelser** føjet til hver politik. Når denne indstilling er aktiveret, finder proceduren *Frigiv til lagersted* forsendelser til konsolidering ved at søge blandt eksisterende forsendelser, der er blevet oprettet på baggrund af samme konsolideringspolitik. I dette tilfælde vil systemet vælge en eksisterende forsendelse eller last i stedet for at oprette en ny. Systemet vil dog kun konsolidere med eksisterende forsendelser, der har statussen *Åben*. Forsendelser, der tilhører en bølgefrigivelse med statussen *Frigivet* eller højere, betragtes ikke som mål for konsolideringen.
 
-Når politikkerne for forsendelseskonsolidering er gjort tilgængelige, skjules indstillingen **Konsolider forsendelse ved frigivelse til lagersted**, der tidligere var tilgængelig på siden **Lagersted**. For at hjælpe dig med at overføre til den nye funktion til konsolidering af forsendelser opretter en funktion på siden **Politikker for forsendelseskonsolidering** en standardpolitik, der automatisk medtager den gamle indstilling for eksisterende lagersteder. Når standardpolitikken er oprettet, tages der ikke længere højde for indstillingen **Konsolider forsendelse ved frigivelse til lagersted** på konfigurationssiden **Lagersteder**.
+Når funktionen *Politikker for forsendelseskonsolidering* er gjort tilgængelig, skjules indstillingen **Konsolider forsendelse ved frigivelse til lagersted**, der tidligere var tilgængelig på siden **Lagersted**. For at hjælpe dig med at overføre til den nye funktion til konsolidering af forsendelser kan du oprette en funktion på siden **Politikker for forsendelseskonsolidering** en standardpolitik, der automatisk medtager den gamle indstilling for eksisterende lagersteder. Når standardpolitikken er oprettet, tages der ikke længere højde for indstillingen **Konsolider forsendelse ved frigivelse til lagersted** på konfigurationssiden **Lagersteder**. Du kan finde flere oplysninger under [Konfigurere politikker for forsendelseskonsolidering](configure-shipment-consolidation-policies.md).
 
 Du kan bruge siden **Frigiv til lager** til manuelt at tilsidesætte den relevante konsolideringspolitik på samme måde, som du kan tilsidesætte opfyldningspolitikker.
 

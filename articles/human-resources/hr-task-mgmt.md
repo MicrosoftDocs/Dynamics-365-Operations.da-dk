@@ -2,7 +2,7 @@
 title: Opgavestyring
 description: Denne artikel forklarer den opgavestyringsfunktionalitet, der findes i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897858"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445888"
 ---
 # <a name="task-management"></a>Opgavestyring
 
@@ -69,7 +69,13 @@ Under alle tre faner kan HR-assistenter og -ledere udføre følgende aktiviteter
 
 Du kan oprette opgaver enkeltvist og derefter genbruge dem på flere tjeklister. Hvis du vil oprette en opgave, skal du vælge **Ny** under fanen **Opgaver** på siden **Opsætning af onboarding**.
 
+Du kan tildele en oprettet opgave til flere checklister ved at markere opgaven og derefter vælge **Anvend på checklister** i menuen.
+
 Du kan også føje opgaver direkte til tjeklisten. Hvis du vil føje en opgave til en tjekliste, skal du enten oprette en ny tjekliste, som opgaven skal føjes til, på siden **Opsætning af onboarding** under fanen **Tjekliste** eller føje opgaven til en eksisterende tjekliste.
+
+Hvis du vil redigere en opgave i biblioteket, skal du vælge **Rediger** i menuen Opgavebibliotek. Hvis opgaven er knyttet til nogen checklister, vises disse checklister på siden **Rediger opgave**. Hvis opgaverne i checklisterne skal opdateres med redigeringerne, skal du markere disse checklister i afsnittet **Anvend på checklister**.
+
+Hvis du vil slette opgaver fra biblioteket, skal du vælge indstillingen **Slet**. Hvis der er knyttet en opgave til en checkliste, slettes opgaven ikke fra checklisten. Opgaven skal fjernes fra checklisten i en separat handling.
 
 > [!NOTE]
 > Hvis du føjer en opgave direkte til en tjekliste, kan du ikke genbruge den på andre tjeklister.
@@ -133,7 +139,15 @@ Komplekse opgaver kan kræve flere trin, eller den person, der udfører opgaven,
 
 ## <a name="setting-up-checklists"></a>Konfigurere tjeklister
 
-En tjekliste er en gruppe opgaver. Du kan oprette lige så mange tjeklister, du har brug for, og du kan tildele de samme opgaver til flere tjeklister. Når du opretter en tjekliste, skal du angive en ejer og en kalender.
+En tjekliste er en gruppe opgaver. Du kan oprette lige så mange tjeklister, du har brug for, og du kan tildele de samme opgaver til flere tjeklister.
+
+Hvis du vil oprette en ny opgave på en kontrolliste, skal du vælge **Ny** på menulinjen **Opgaver**. Når du opretter en ny opgave, kan du vælge at føje den til opgavebiblioteket, så den kan deles på tværs af flere checklister. Du kan kun føje opgaven til biblioteket, hvis indstillingen **Anvend opgave på biblioteket** er angivet til **Ja**. Hvis du føjer opgaven til opgavebiblioteket, kan du også føje den til andre checklister samtidig ved at vælge disse checklister i afsnittet **Anvend på checklister**. Hvis du ikke føjer opgaven til biblioteket, findes den kun på den checkliste, du opretter den i.
+
+Hvis du vil redigere en opgave på kontrollisten, skal du vælge **Rediger**. Hvis opgaven er knyttet til nogen checklister, vises disse checklister på siden **Rediger opgave**. Hvis opgaverne i andre checklister skal opdateres med redigeringerne, skal du markere disse checklister i afsnittet **Anvend på checklister**.
+
+Hvis du vil fjerne opgaver fra checklisten, skal du vælge **Fjern**. Denne handling fjerner blot opgaver fra checklisten. De slettes ikke fra opgavebiblioteket. Hvis du vil slette en opgave fra biblioteket, skal du gå til opgavebiblioteket og vælge **Slet**.
+
+Når du opretter en tjekliste, skal du angive en ejer og en kalender.
 
 Hvis feltet **Tildelingstype** for en opgave er angivet til **Stilling**, **Leder** eller **Gruppe**, men der ikke kan udledes nogen bestemt person af tildelingstypen, tildeles opgaven til ejeren af tjeklisten. Her vises nogle eksempler på situationer, hvor ejeren af tjeklisten tildeles opgaver:
 
