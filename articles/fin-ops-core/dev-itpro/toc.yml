@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Platformopdateringer til version 10.0.28 (august 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Platformopdateringer til version 10.0.27 (juli 2022)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -510,6 +508,8 @@
                   href: dev-tools/access-instances.md
                 - name: Installere udviklingsmiljøer med én boks
                   href: dev-tools/configure-developer-vm.md
+                - name: Sikre udviklingsmiljøer med én boks
+                  href: dev-tools/secure-developer-vm.md
                 - name: 'Ofte stillede spørgsmål om udviklings- og build-VM''er, der ikke tillader administratoradgang'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: 'Konfigurere VHD, der kan hentes til første brug'

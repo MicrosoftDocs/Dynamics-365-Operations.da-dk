@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (august)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Finance 10.0.27 (juli)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1450,8 +1448,10 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Beregne harmoniseret moms i Canada
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Globalisering
+        - name: Globalization Studio
           items:
+            - name: Oversigt over Globalization Studio
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globaliseringsressourcer
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: Globaliseringsservices
@@ -1734,6 +1734,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Beregne og justere moms på en kreditorfaktura
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Løse momsdifferencer
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: Justere moms via finanskladder
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Aktivere forsinket momsberegning af kladde
@@ -2514,6 +2516,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Onlinefaktureringssystem
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Momsopgørelse (Ungarn)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
                 - name: Momsrapporter for Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: Ungarsk Intrastat
