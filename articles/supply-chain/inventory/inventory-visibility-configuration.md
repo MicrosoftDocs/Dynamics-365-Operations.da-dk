@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423563"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542266"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere Inventory Visibility
 
@@ -53,6 +53,7 @@ Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power App
 |---|---|
 | *OnHandReservation* | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Denne funktion viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Standardsynkroniseringsfrekvensen er en gang hvert 15. minut og kan angives som højt som en gang hvert 5. minut. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
+| *onHandIndexQueryPreloadBackgroundService* | Denne funktion gør det muligt at forudindlæse forespørgsler om synlighed for disponibel lagerbeholdning, så du kan samle lister over disponible lagerbeholdninger med foruddefinerede dimensioner. Standardhyppigheden for synkronisering er en gang hvert 15. minut. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
 | *OnhandChangeSchedule* | Denne valgfrie funktion aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT). Du kan finde flere oplysninger i [Ændringsplan for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
 | *Tildeling* | Denne valgfrie funktion gør det muligt for lagersynlighed at have mulighed for lagerbeskyttelse (ringorganisering) og overstyring. Yderligere oplysninger finder du i [Fordeling af tilføjelsesprogrammet Lagersynlighed](inventory-visibility-allocation.md). |
 | *Aktivér lagerstedsvarer i lagersynlighed* | Denne valgfrie funktion gør det muligt for lagersynlighed at understøtte varer, der er aktiveret til lokationsstyringsprocesser (WMS). Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WMS-varer](inventory-visibility-whs-support.md). |

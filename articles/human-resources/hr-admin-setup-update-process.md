@@ -2,7 +2,7 @@
 title: Opdater proces
 description: Microsoft Dynamics 365 Human Resources er en ægte Software som en service (SaaS), der tilbyder kontinuerlige serviceopdateringer til program- og platformændringer.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178436"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520804"
 ---
 # <a name="update-process"></a>Opdater proces
 
 _**Anvendes på:** Human Resources i enkeltstående infrastruktur_ 
 
 > [!NOTE]
-> Fra og med juli 2022 kan der ikke klargøres nye personalemiljøer på den enkeltstående infrastruktur for Personale, og der kan ikke oprettes nye Microsoft Dynamics Lifecycle Services-projekter (LCS) på den. Kunder kan udrulle Personale-miljøer på infrastrukturen i program til finans og drift. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](/hr-admin-setup-provision-fo.md).
+> Fra og med juli 2022 kan der ikke klargøres nye personalemiljøer på den enkeltstående infrastruktur for Personale, og der kan ikke oprettes nye Microsoft Dynamics Lifecycle Services-projekter (LCS) på den. Kunder kan udrulle Personale-miljøer på infrastrukturen i program til finans og drift. Du kan finde flere oplysninger i [Klargøre Human Resources i infrastruktur til finans og drift](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Opdaterings- og hotfixprocessen i infrastrukturen i finans- og operationsappen er forskellig fra den enkeltstående Personale-opdaterings- og hotfixproces. Du kan finde flere oplysninger om opdateringsprocessen i [Proces for overførsel til den seneste opdatering af finans og drift](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Du kan finde flere oplysninger om hotfixes i [Download opdateringer fra Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

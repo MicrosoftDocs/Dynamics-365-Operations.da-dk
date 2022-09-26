@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427868"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520744"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -35,7 +35,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
 | Lager og logistik | [Fordele og reservere WMS-varer i Lagersynlighed](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Kommer snart | Aktiveret som standard |
-| Lager og logistik | [Forudindlæse strømlinede lagerbeholdningslister](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Kommer snart | Aktiveret som standard |
+| Lager og logistik | [Forudindlæse strømlinede lagerbeholdningslister](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Bruge appen Inventory Visibility](../inventory/inventory-visibility-power-platform.md) | Aktiveret af servicekonfiguration |
 | Automatisering af forsyning af levering til ordre | [Automatisering af forsyning af levering til ordre](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Automatisering af forsyning af levering til ordre](../master-planning/make-to-order-supply-automation.md) | Funktionsstyring:<br>*Automatisering af forsyning af levering til ordre* |
 | Planlægning | [Se og anvende detaljeret indsigt for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Oversigt over planlægning af efterspørgselsbaseret materialebehov](../master-planning/planning-optimization/ddmrp-overview.md) | Funktionsstyring:<br>*(Forhåndsversion) DDMRP til planlægningsoptimering* |
 | Produktionsstyring | [Gøre færdigvarer fysisk tilgængelige før bogføring i kladder](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Gøre færdigvarer fysisk tilgængelige før bogføring i kladder](../production-control/deferred-posting.md) | Funktionsstyring:<br>*(Forhåndsversion) Gør færdigvarer fysisk tilgængelige før bogføring i kladder* |

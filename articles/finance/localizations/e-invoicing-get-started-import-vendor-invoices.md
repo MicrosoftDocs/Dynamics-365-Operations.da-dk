@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283139"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524739"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Bruge den elektroniske faktureringsservice til at importere kreditorfakturaer
 
@@ -107,7 +107,8 @@ Gennemfør trinnene i følgende to afsnit for at konfigurere forskellige typer i
 2. Vælg en **kontekstmodel for debitorfaktura**, og vælg derefter **Opret konfiguration** > **Afledt fra navn: Kundefakturakontekstmodel, Microsoft** for at oprette en afledt konfiguration.
 3. I **Kladde**-versionen skal du vælge **Designer** og i **Datamodel**-træet skal du vælge **Tilknyt model til datakilde**.
 4. Vælg **DataChannel** i træet **Definitioner**, og vælg derefter **Designer**.
-5. I træet **Datakilder** udvides containeren **$Context\_Kanal**. Vælg **Rediger**, og angiv navnet på datakanalen i feltet **Værdi**. Det er navnet på den kanal, der er angivet i konfigurationen af datakanalen til funktionen Elektronisk fakturering i RCS. 
+5. I træet **Datakilder** udvides containeren **$Context\_Kanal**. 
+6. Vælg **Rediger** > **Rediger formel** i feltet **Værdi**, og angiv navnet på datakanalen. Det er navnet på den kanal, der er angivet i konfigurationen af datakanalen til funktionen Elektronisk fakturering i RCS. 
 7. Vælg **Gem**, og luk siden.
 8. Luk siden.
 9. Vælg den afledte konfiguration, du netop har oprettet fra **kontekstmodellen for debitorfakturaen**, og vælg **Ændringsstatus**  > **Fuldført** i oversigtspanelet **Versioner**.

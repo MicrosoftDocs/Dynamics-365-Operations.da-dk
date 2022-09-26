@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277325"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524683"
 ---
 # <a name="connected-applications"></a>Tilsluttede programmer
 
@@ -35,7 +35,7 @@ Det er nyttigt, at Finans- eller Supply Chain Management-parametrene er tilgæng
 ## <a name="create-a-connected-application"></a>Opret en tilsluttet applikation.
 
 1. Log på din RCS-konto.
-2. I arbejdsområdet **Globaliseringsfunktionen** i sektionen **Miljø** skal du vælge feltet **Elektronisk fakturering**.
+2. I arbejdsområdet **Globaliseringsfunktioner** i sektionen **Relaterede links** skal du vælge **Miljøkonfiguration**.
 3. På siden **Miljøopsætning** skal du vælge **Tilsluttede programmer** i handlingsruden.
 4. Vælg **Ny** for at oprette en tilsluttet applikation.
 5. Angiv navnet på den applikation, der skal tilsluttes i feltet **Navn**.

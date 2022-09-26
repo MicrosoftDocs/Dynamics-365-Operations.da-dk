@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6963a65481f8e7f23cc94cbeba8f40e91451e2f9
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: ef4849ee9fd62662541eef35c59d281dd9057a4c
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423793"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538891"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-commerce"></a>Undervisningskatalog for projektlederens implementeringsarbejde med Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ Du kan finde oplysninger om undervisning i funktioner, der deles med andre progr
 
 | Indhold | Beskrivende tekst | Format | Længde |
 |---------|-------------|--------|--------|
-| [Kom i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)  | Dynamics 365 Commerce, der bygger på de gennemprøvede Dynamics 365 Retail-funktioner, leverer en omfattende flerkanalsløsning, der forener administrations-, butiks-, callcenter- og digitale erfaringer. Dynamics 365 Commerce giver dig mulighed for at opbygge varemærkeloyalitet gennem personlige kundeaftaler, øge indtjeningen med forbedret medarbejderproduktivitet, optimere operationer for at reducere omkostninger og fremme effektivitet i forsyningskæden og i sidste ende levere bedre virksomhedsresultater. | Gratis onlinelæringssti i dit eget tempo   | 2 timer   |
-| [Kom i gang med Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybaseret løsning, der er udviklet til e-handel, fysiske butikker og omnikanal-forhandlere for at beskytte deres indtægt og omdømme ved at levere værktøjer og funktioner til at mindske bedrageri og misbrug, reducere driftsudgifterne og øge acceptraterne og samtidig beskytte brugerkonti mod eksponering for bedrageri. | Gratis onlinelæringssti i dit eget tempo | 35 minutter |
+| [Kom i gang med Dynamics 365 Commerce](/training/paths/get-started-dynamics-365-commerce/)  | Dynamics 365 Commerce, der bygger på de gennemprøvede Dynamics 365 Retail-funktioner, leverer en omfattende flerkanalsløsning, der forener administrations-, butiks-, callcenter- og digitale erfaringer. Dynamics 365 Commerce giver dig mulighed for at opbygge varemærkeloyalitet gennem personlige kundeaftaler, øge indtjeningen med forbedret medarbejderproduktivitet, optimere operationer for at reducere omkostninger og fremme effektivitet i forsyningskæden og i sidste ende levere bedre virksomhedsresultater. | Gratis onlinelæringssti i dit eget tempo   | 2 timer   |
+| [Kom i gang med Dynamics 365 Fraud Protection](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybaseret løsning, der er udviklet til e-handel, fysiske butikker og omnikanal-forhandlere for at beskytte deres indtægt og omdømme ved at levere værktøjer og funktioner til at mindske bedrageri og misbrug, reducere driftsudgifterne og øge acceptraterne og samtidig beskytte brugerkonti mod eksponering for bedrageri. | Gratis onlinelæringssti i dit eget tempo | 35 minutter |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

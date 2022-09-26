@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347283"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542346"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -62,7 +62,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | --- | --- | --- | --- |
 | Handlinger | Disponeringsgrupper med handlingsberegning aktiveret: *\#* | Denne funktion understøttes nu. | Understøttet |
 | Basiskalendere | Kalendere, der bruger basiskalender: *\#* | Denne funktion understøttes nu. | Understøttet | 
-| Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: *\#* | Denne funktion afventer. I øjeblikket ignoreres batchdispositionskoder, når planlægningsoptimering er aktiveret. | 2022 udgivelsesbølge 2 |
+| Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: *\#* | Denne funktion afventer. I øjeblikket ignoreres batchdispositionskoder, når planlægningsoptimering er aktiveret. | 2022 udgivelsesbølge 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Leveringsevne (LE) | Standardindstillinger for ordre med leveringsdatokontrollen angivet til LE: *\#* | I Supply Chain Management 10.0.28 og nyere gør en proces kaldet *CTP for Planlægningsoptimering* bekræftede afsendelses- og tilgangsdatoer tilgængelige, når den dynamiske plan er kørt. I ældre versioner af Supply Chain Management ignoreres den tidligere CTP-indstilling, når Planlægningsoptimering er aktiveret. | Understøttet |
 | Kopiér statisk til dynamisk plan | Kopi af statisk til dynamisk plan er aktiveret på varedisponeringsparametrene. | Planlægningsoptimering kopierer ikke den statiske plan til den dynamiske plan, uanset denne indstilling. Generelt er dette koncept ikke så relevant på grund af hastigheden og den fuldstændige genopretning, som planlægningsoptimering giver. Hvis der bruges to eller flere planer, skal varedisponeringen udløses for hver enkelt plan. | I/T |
 | Autorisation | Disponeringsgrupper med automatisk autorisationstidshorisont angivet: *\#* | I version 10.0.7 og nyere understøttes autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen *Automatisk autorisation med planlægningsoptimering* er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
