@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542346"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591844"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -94,7 +94,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Produktion | Formelversioner med udbytte: *\#* | Denne funktion afventer. I øjeblikket ignoreres udbytte, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022 udgivelsesbølge 2 |
 | Produktion | Planer, som inkluderer rækkefølge: *\#* | Denne funktion afventer. I øjeblikket ignoreres rækkefølge, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
 | Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: *\#* | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | Fremtidig bølge |
-| Produktion | Ressourcer, der er planlagt med kapacitetsbegrænsning: *\#* | Denne funktion afventer. I øjeblikket ignoreres ressourcer, der er planlagt med kapacitetsbegrænsning, når planlægningsoptimering er aktiveret. Planlægningen udføres på basis af standardleveringstiden fra produktet. | 2022 udgivelsesbølge 2 |
+| Produktion | Ressourcer, der er planlagt med kapacitetsbegrænsning: *\#* | Denne funktion understøttes nu.| Understøttet |
 | Produktion | Ruter, der bruges i planlægning: *\#* | Denne funktion understøttes. | Understøttet |
 | Produktion | Reservation af salgslinje ved hjælp af udfoldning: *\#* | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | Fremtidig bølge |
 | Produktion | Planlægning med udfoldning af produktionsordrer: *\#* | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | Fremtidig bølge |

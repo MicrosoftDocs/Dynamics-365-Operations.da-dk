@@ -1,7 +1,7 @@
 ---
 title: Råbalance med detaljeret transaktionsrapport
 description: I denne artikel beskrives standardrapporten til råbalancer. Her beskrives også de komponenter, der er knyttet til denne rapport, og hvordan du kan redigere rapporten, så den passer til virksomhedens behov.
-author: v-kiarnd
+author: TaylorVH
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: TaylorVH
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
 ms.search.industry: public sector
-ms.openlocfilehash: 1b54408da4bb29b1a2f0fcfcff6eb0ab3c2af126
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 54bcfa1f3c55d485fa0f379584ad5057f6c6ccf8
+ms.sourcegitcommit: 1a7729a6ce4f3fcf68bdc4cfdad746a5553da3c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291539"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9572959"
 ---
 # <a name="trial-balance-with-transactional-detail-report"></a>Råbalance med detaljeret transaktionsrapport
 

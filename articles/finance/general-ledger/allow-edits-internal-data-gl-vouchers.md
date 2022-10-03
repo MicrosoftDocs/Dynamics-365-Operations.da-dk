@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 26fc6518f0b4eae815e047db1dbaadd7c56a2e67
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 6e346c6ff881d3a33743196b45247493fd19ed1d
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220648"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573245"
 ---
 # <a name="allow-edits-to-internal-data-on-general-ledger-vouchers"></a>Tillad redigering af interne data på finansbilag
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 
 Når du bogfører regnskabsposter i Finans, bruges feltet **Beskrivelse** ofte til at gemme interne notater eller dokumentation. Hvis oplysningerne ikke er korrekte, kan det medføre forvirring og gøre lukningen af perioder mere besværlig. Denne funktion giver regnskabschefen eller den regnskabsansvarlige mulighed for at rette fejl ved at redigere feltet **Beskrivelse** på bogførte bilag i finansmodulet.

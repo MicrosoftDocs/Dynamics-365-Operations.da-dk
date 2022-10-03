@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473599"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592040"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -57,7 +57,7 @@ Der implementeres et sæt procesændringer før aktiveringen af proaktiv impleme
 - **Skema** – Værktøj sikrer, at kvalitetsopdaterings builds kun omfatter skemaændringer, der kan anvendes, mens tjenesten er online. Denne indfaldsvinkel hjælper med at bevare muligheden for at anvende opdateringen med nedetid tæt på nul.
 - **Udvidet antal ændringer** - Aktuelt er der allerede et ekstra procestrin til godkendelse af ændringer, så de medtages i en kvalitetsopdatering. Den trinvise reduktion i det ekstra trin øges for at reducere regressionsmulighederne. Det er ikke tilladt at ændre noget i kvalitetsopdateringerne, og den øgede ændring er med til at sikre, at vi opfylder dette mål.
 - **Synlighed** – Vi sender beskeder via e-mail og Lifecycle Services (LCS) om kommende proaktive kvalitetsopdateringer. Desuden vil supportteams og hændelsesemner have synlighed for, hvor kvalitetsopdateringer er blevet implementeret proaktivt.
-- **Version reserve** - Flybillet bruges til at gruppere alle ændringer i en proaktiv kvalitetsopdatering. Hvis reservesystem er påkrævet efter en proaktiv implementering, kan det ske via flysystemet.
+- **Fejlsikret via flighting** – Flighting bruges til ændringer af beskyttelseskode, hvor det er relevant i en kvalitetsopdateringsrettelse eller ved hjælp af den eksisterende funktions-flighting, der er relevant for rettelsen. Hvis der kræves en reserve eller et deaktiveret skift efter en proaktiv installation, kan den udføres via flighting-systemet for at undgå yderligere fejl.
 - **Synkroniseringsangivelse for sandkasse** – Mindre end 20 procent af kunderne har i dag flere sandbokse, og én sandboks anvendes, hvor versionen matcher produktionen, som en hjælp ved fejlfinding. Hvis en kunde bruger en sandkasse til at teste en nyere version end produktionen, vil denne sandkasse modtage kvalitetsopdateringer til den nyere version.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Hvad er rullelisten for kvalitetsopdateringer?
@@ -69,7 +69,7 @@ I løbet af de næste seks måneder vil vi øge procentdelen af sandboksmiljøer
 Da kunderne jævnligt modtager mindre nyttelast, forventer vi, at processen med aktuelle arbejde bliver simplere. Vi vil justere frekvensen for opdateringsinstallation, efterhånden som vi viser, hvordan vi kan køre processen uden afbrydelser. Denne proces fungerer allerede effektivt for vores Dataverse-platform og programmer og leverer de forventede forbedringer af servicekvaliteten. Vi gør det samme i forbindelse med finans- og driftsprogrammer.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Hvornår starter kvalitetsopdateringerne for produktionsmiljøer?
-På dette tidspunkt er kvalitetsopdateringer kun målsandbokse. Opdateringer til produktionsmiljøer starter efter november 2022.
+På dette tidspunkt er kvalitetsopdateringer kun målsandbokse. Dette område opdateres med en startdato for produktionsmiljøer, når der er mere konkrete data og måleværdier fra proaktive opdateringer for sandkasser til målere af parathed til produktion.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Hvad er planlægningen for kvalitetsopdateringer?
 Du kan finde oplysninger om de mørke timer for hver region i [Hvad er planen for proaktive kvalitetsopdateringer?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

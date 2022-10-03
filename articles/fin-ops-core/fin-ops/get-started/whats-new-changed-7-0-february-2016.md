@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e69fddf1acd9a9388f62da63e0ca6a19c7a95f55
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 4cd59d5ea2ef8d280a927fd9e9fe3b9af7974d7c
+ms.sourcegitcommit: 0a5885dc792fc608ae59d0ef9b36fb61790b24de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287074"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "9593981"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
@@ -319,7 +319,7 @@ Denne funktion fungerer uafhængigt af andre efterkalkulationsmetoder, der er kn
 <tr>
 <td>Få adgang til automatiseret hjælp (opgaveguider) og emner ved at klikke på <strong>Hjælp</strong>.</td>
 <td>Hjælpesystemet i AX 2012 leder til HTML-emner, der er gemt på en lokal webserver. Kunder og partnere kan oprette deres egen Hjælp.</td>
-<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). Hjælp-systemet viser også emner fra webstedet Microsoft Docs. Yderligere oplysninger finder du i <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hjælp-system</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Nye opgaveguides (februar 2016)</a>.</td>
+<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). I Hjælp-systemet vises også emner fra Microsoft Learn. Yderligere oplysninger finder du i <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hjælp-system</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Nye opgaveguides (februar 2016)</a>.</td>
 <td>Opgaveguider indeholder en automatiseret, interaktive oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan downloade og tilpasse opgavehjælpelinjer, som Microsoft leverer. Artiklen viser en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen. Derfor hjælper den med at sikre, at du har adgang til de seneste tekniske oplysninger.</td>
 </tr>
 </tbody>
