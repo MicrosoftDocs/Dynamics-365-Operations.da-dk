@@ -1745,22 +1745,12 @@
               href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
             - name: Scenariet for produktkvalitet
               href: sensor-data-intelligence/sdi-scenario-product-quality.md
-            - name: Scenariet for produktionsforsinkelser
+            - name: Scenarie til produktionsforsinkelser
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT-intelligens
           items:
-            - name: Startside for IoT-intelligens
+            - name: IoT-intelligens erstattes nu af Sensor Data Intelligence
               href: iot/iot-intelligence-home-page.md
-            - name: Konfigurere Azure-ressourcer
-              href: iot/iot-azure-setup.md
-            - name: Meddelelsesskemaformater for IoT-hub
-              href: iot/iot-schema-format.md
-            - name: Konfigurere målepunkter
-              href: iot/iot-metrics-setup.md
-            - name: Konfigurere scenarie
-              href: iot/iot-scenario-setup.md
-            - name: Overvåge og administrere
-              href: iot/iot-management.md
         - name: Varedisponering
           items:
             - name: Startside for varedisponering
@@ -1799,10 +1789,12 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanlægning
                   href: master-planning/planning-optimization/production-planning.md
-                - name: Varedisponering for produkter med begrænset hyldelevetid
+                - name: Overordnet planlægning for produkter med begrænset hyldelevetid
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Planlægning med ubegrænset kapacitet
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Planlægning og planlægning af kapacitetsbegrænsning
+                  href: master-planning/planning-optimization/finite-capacity.md
                 - name: Planlægning med ressourcevalg baseret på egenskab
                   href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Prioriteret planlægning
