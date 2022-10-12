@@ -2,7 +2,7 @@
 title: Nyheder og ændringer i Dynamics 365 Commerce 10.0.29 (Oktober 2022)
 description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475897"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601565"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Nyheder eller ændringer i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 
@@ -39,6 +39,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | E-commerce | Understøttelse af produktsammenligning i e-handel | Gør det muligt for køberne at sammenligne produkter på tværs af en lang række kategorier, så de kan træffe den rigtige købsbeslutning for sig selv. Denne funktion er tilgængelig både for business-to-consumer (B2C) og B2B-websteder. | Webstedsgenerator | 
 | Gavekort | Understøttelse af tabeller med detailgavekort til deling af data på tværs af virksomheder | Dynamics headquarters understøtter muligheden for at aktivere deling af data på tværs af virksomheder for bestemte tabeller i Dynamics-arkitekturen. I denne funktion tilføjer Dynamics 365 Commerce understøttelse af tabeller med detailgavekort til deling af data på tværs af virksomheder. Derfor kan et gavekort i ét firma nu få dataene duplikeret til et andet firma i miljøet. Ændringer, der foretages i tabellen med oprindelige firmagavekort, deles med tabellen med duplikerede firmagavekort. | Udviklere |
 | Globalisering | [Aktivere Commerce-lokaliseringsfunktioner til ny Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Den nye funktion giver mulighed for at aktivere funktioner til lokalisering af handel fra Commerce Headquarters ved hjælp af funktionsstyringsstruktur eller -parametre. Regnskabsintegration er nu inkluderet i det nye Commerce SDK og understøtter uafhængig emballage. Denne funktion aktiverer også den internationale handel i Store Commerce-appen af globale handelskunder.<p><p>Denne version indeholder funktioner til udtagning af handel og regnskabsintegration i [Østrig](../localizations/emea-aut-fi-sample.md), [Tjekkiet](../localizations/emea-cze-fi-sample.md), [Frankrig](../localizations/emea-fra-cash-registers.md), [Tyskland](../localizations/emea-deu-fi-sample.md), [Italien](../localizations/emea-ita-fpi-sample.md), [Norge](../localizations/emea-nor-cash-registers.md) og [Polen](../localizations/emea-pol-fpi-sample.md). | Aktiveres af administratorer/beslutningstagere |
+| Offline | [Komprimering af POS-offlinedatabase](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Denne nye funktion reducerer offline-databasestørrelser ved at aktivere automatisk indekskomprimering uden for kanalens [åbningstimer](../dev-itpro/store-hours.md). | Administration af funktioner<p>*Komprimering af POS-offlinedatabase* |
 | Ydeevne | Fjerne RTS-afhængighed for scenarier med "rediger kunde" | Høj tilgængelighed og høj ydeevne er standardforventninger til POS- og e-handelskanaler. For at imødekomme disse forventninger behøver Dynamics 365 Commerce-kanaler ikke længere at være afhængige af realtidskommunikation med Commerce headquarters, når kundeoplysninger redigeres. Muligheden for at redigere kundeoplysninger asynkront for asynkrone og ikke-asynkrone kunder kan være med til at reducere antallet af opkald i realtid til Commerce headquarters. | Aktiveres af administratorer/beslutningstagere |
 
 ## <a name="feature-state-changes-in-this-release"></a>Ændringer af funktionstilstand i denne version

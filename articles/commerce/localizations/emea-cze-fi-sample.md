@@ -2,19 +2,19 @@
 title: Eksempel på integration af regnskabsregistreringstjeneste i Den Tjekkiske Republik
 description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Den Tjekkiske Republik i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313742"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631279"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Eksempel på integration af regnskabsregistreringstjeneste i Den Tjekkiske Republik
 
@@ -48,7 +48,7 @@ Følgende scenarier dækkes af eksemplet på integration af tjenesten til regnsk
 - Fejlhåndtering som f.eks. følgende muligheder.
 
     - Forsøg at registrere et regnskab igen, hvis et nyt forsøg er muligt, f.eks. hvis tjenesten til regnskabsregistrering ikke er tilgængelig, ikke er klar eller ikke svarer.
-    - Udskyd regnskabsregistrering.
+    - Udskyd regnskabsregistreringen.
     - Undlad regnskabsregistrering, eller markér transaktionen som registreret, og inkluder infokoder for at registrere årsagen til fejlen og flere oplysninger.
     - Kontrollér, om tjenesten til regnskabsregistrering er tilgængelig, før en ny salgstransaktion åbnes, eller en salgstransaktion færdiggøres.
 
@@ -188,7 +188,7 @@ Fuldfør trinnene til opsætning af regnskabsintegration som beskrevet i [Konfig
 
 1. [Konfigurer en regnskabsregistreringsproces](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Du skal også notere dig indstillingerne for den regnskabsregistreringsproces, der er [specifik for dette eksempel til integration af regnskabsregistreringstjenesten](#set-up-the-registration-process).
 1. [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktiver manuel udførelse af udsatte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktiver manuel udførelse af udskudt regnskabsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurere kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Konfigurere registreringsprocessen

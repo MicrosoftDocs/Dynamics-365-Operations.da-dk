@@ -2,19 +2,19 @@
 title: Konfigurere regnskabsintegration for Commerce-kanaler
 description: Denne artikel indeholder retningslinjer for opsætning af regnskabsintegrationsfunktionen for Commerce-kanaler.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276123"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631417"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Konfigurere regnskabsintegration for Commerce-kanaler
 
@@ -30,9 +30,10 @@ Hvis du vil aktivere funktioner, der er relateret til funktioner til regnskabsin
 1. Find og aktiver følgende funktioner:
 
     - **Direkte regnskabsintegration fra kasseapparater** – Denne funktion udvider struktur for regnskabsintegration ved at tilføje funktionen til oprettelse af regnskabsforbindelser, der vil blive kørt i POS. Denne type connector kommunikerer med en finansiel enhed eller tjeneste, der indeholder en API (HTTP Application Programming Interface), og kræver ikke en dedikeret fysisk maskine i butikken. Denne funktionalitet giver f.eks. mulighed for skattemæssig integration for mobile enheder uden at kræve delt hardwarestation.
-    - **Tilsidesættelser af teknisk profil for regnskabsintegration** – Denne funktion gør det muligt at udvide konfigurationen af regnskabsintegration og tilføjer muligheden for at kontrollere forbindelsesparametre på indstillingssiden i et kasseapparat. Når denne funktion er aktiveret, kan du overstyre parametrene for en teknisk profil.
+    - **Tilsidesættelser af teknisk profil for regnskabsintegration** – Denne funktion gør det muligt at udvide konfigurationen af regnskabsintegration og tilføjer muligheden for at tilsidesætte parametre for en teknisk profil. Det er f.eks. muligt at angive forbindelsesstrenge til regnskabsenhed på individuelt POS-niveau. Denne funktion giver også mulighed for at kontrollere forbindelsesparametrene på siden **Indstillinger** på POS. 
     - **Regnskabsregistreringstilstand for POS-registre** – Når denne funktion er aktiveret, kan du deaktivere processen til regnskabsregistrering for bestemte POS-registre. Hvis regnskabsregistrering er deaktiveret for et POS-register, kan salgstransaktioner ikke fuldføres på det pågældende kasseapparat.
-    - **Sikkerhedskopiering af lokal lagring af finansiel integration** – Denne funktion udvider funktionerne til håndtering af fejl i regnskabsintegration. Det giver også mulighed for automatisk sikkerhedskopiering af regnskabsregistreringsdata i tilfælde af tab af data, så dataene på det lokale lager gendannes, mens en enhed aktiveres.
+    - **Sikkerhedskopiering af lokallager for regnskabsmæssig integration** – Denne funktion udvider fejlhåndteringskapaciteter i regnskabsintegrationsstrukturen ved at aktivere automatisk sikkerhedskopiering af regnskabsregistreringsdataene, så data i det lokale lager kan gendannes, når en enhed aktiveres.
+    - **Udskudt registrering af dokumenter** – Denne funktion udvider egenskaberne til håndtering af fejl i struktur for regnskabsintegration ved at gøre det muligt at udskyde regnskabsregistrering, hvis der opstår fejl i en regnskabsregistrering, og bruge en indstilling til sikkerhedskopiering af regnskabsregistrering eller fuldføre regnskabsregistrering senere på anden måde end regnskabsintegrationsstruktur.
 
 ## <a name="set-up-commerce-parameters"></a>Konfigurere Commerce-parametre
 
@@ -286,16 +287,15 @@ Hvis du vil køre X/Z-regnskabsrapporter fra POS, skal du føje nye knapper til 
     1. Tilføj en ny knap, og indstil **Udskriv regnskab Z**-knapegenskaben.
     1. På siden **Distributionsplan** skal du køre jobbet **1090** for at overføre ændringer til kanaldatabasen.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktiver manuel udførelse af udsatte regnskabsregistreringer
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Aktiver manuel udførelse af udskudte regnskabsregistreringer
 
-For at aktivere manuel udførelse af en udsat regnskabsregistreringer skal du tilføje en ny knap til POS-layoutet.
+For at aktivere manuel udførelse af en udskudte regnskabsregistreringer skal du tilføje en ny knap til POS-layoutet.
 
 - På siden **Knapmatricer** skal du følge vejledningen i [Tilføj POS-operationer til POS-layout ved at anvende Knapmatricedesigneren](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for at installere designeren og opdatere et POS-layout.
 
     1. Vælg det layout, der skal opdateres.
     1. Tilføj en ny knap, og indstil knappens egenskaber for **Fuldfør regnskabsregistreringsprocessen**.
     1. På siden **Distributionstidsplan** skal du køre jobbet **1090** for at overføre dine ændringer til kanaldatabasen.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Få vist forbindelsesparametre og andre oplysninger i POS
 

@@ -2,19 +2,19 @@
 title: Oversigt over regnskabsintegration for Commerce-kanaler
 description: Denne artikel indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286493"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631230"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
@@ -95,16 +95,20 @@ Denne konfiguration bruges, når der findes en fysisk regnskabsenhed eller regns
 
 Regnskabsintegrationen struktur indeholder følgende indstillinger til håndtering af fejl under regnskabsregistreringen:
 
-- **Prøv igen** – Operatører kan bruge denne indstilling, så fejlen kan rettes hurtigt og regnskabsregistreringen kan køre igen. Denne indstilling kan f.eks. bruges, når regnskabsenheden ikke er tilsluttet, bonprinteren mangler papir, eller der er papirstop i bonprinteren.
-- **Annuller** – Med denne indstilling kan operatører udskyde regnskabsregistreringen af den aktuelle transaktion eller hændelse, hvis noget mislykkes. Når registreringen udsættes, kan operatøren fortsat arbejde på POS og kan udføre alle handlinger, som regnskabsregistreringen ikke indgår i. Når en hændelse, der kræver brug af regnskabsregistreringen, indtræffer i POS (f.eks. når en ny transaktion åbnes), åbnes dialogboksen til håndtering af fejlen automatisk med besked til operatøren om, at den tidligere transaktion ikke blev registreret korrekt, og at fejlhåndteringsindstillingerne skal angives.
-- **Spring over** – Operatører kan bruge denne indstilling, når regnskabsregistreringen kan udelades under bestemte betingelser og normal drift kan fortsættes på POS. F.eks. kan denne indstilling bruges, når en salgstransaktion, som regnskabsregistreringen mislykkedes for, kan registreres i en særlig papirkladde.
-- **Markér som registreret** – Operatører kan bruge denne indstilling, når transaktionen er blevet registreret i regnskabsenheden (f.eks. når en regnskabskvittering et blevet udskrevet), men der opstod en fejl, da regnskabssvaret blev gemt i kanaldatabasen.
-- **Udskyd** – Operatørerne kan bruge denne indstilling, når transaktionen ikke er registreret, fordi registreringstjenesten ikke var tilgængelig. 
+- **Prøv igen** – Operatøren kan bruge denne indstilling, så fejlen kan rettes hurtigt og regnskabsregistreringen kan køre igen. Denne indstilling kan f.eks. bruges, når regnskabsenheden ikke er tilsluttet, bonprinteren mangler papir, eller der er papirstop i bonprinteren.
+- **Annuller** – Med denne indstilling kan operatøren udskyde regnskabsregistreringen af den aktuelle transaktion eller hændelse, hvis noget mislykkes. Når registreringen udsættes, kan operatøren fortsat arbejde på POS og kan udføre alle handlinger, som regnskabsregistreringen ikke indgår i. Når en hændelse, der kræver brug af regnskabsregistreringen, indtræffer i POS (f.eks. når en ny transaktion åbnes), åbnes dialogboksen til håndtering af fejlen automatisk med besked til operatøren om, at den tidligere transaktion ikke blev registreret korrekt, og at fejlhåndteringsindstillingerne skal angives.
+- **Spring over** – Operatøren kan anvende denne indstilling, når det ikke er muligt at fuldende regnskabsregistreringen for den aktuelle transaktion eller hændelse, for eksempel hvis bonprinteren ikke virker, **og** regnskabsregistreringen kan udelades i særlige tilfælde. F.eks. kan denne indstilling bruges, når en salgstransaktion, som regnskabsregistreringen mislykkedes for, kan registreres i en særlig papirkladde. Når regnskabsregistreringen springes over, kan de almindelige funktioner fortsættes i POS. 
+- **Markér som registreret** – Operatører kan bruge denne indstilling, når den aktuelle transaktion eller hændelse er blevet registreret i regnskabsenheden (f.eks. når en regnskabskvittering et blevet udskrevet), men der opstod en fejl, da regnskabssvaret blev gemt i kanaldatabasen. Når den aktuelle transaktion eller hændelse er afmærket som registreret, kan den normale drift fortsættes på POS.
+- **Udskyd** – Operatøren kan bruge denne indstilling, når transaktionen ikke er registreret, fordi registreringsenheden eller tjenesten ikke er tilgængelig **og** et af følgende gælder.
+    - Der er en indstilling for sikkerhedskopiering af regnskabsregistrering, og det er muligt at fortsætte processen til regnskabsregistrering for den aktuelle transaktion. En lokal [regnskabsenhed](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) kan f.eks. være en sikkerhedskopi af en onlinetjeneste til regnskabsregistrering, når tjenesten ikke er tilgængelig.
+    - Regnskabsregistreringen kan fuldføres senere på anden måde end ved regnskabsintegration. Udskudte posteringer kan f.eks. senere registreres i en batch efter en [separat funktion](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    Når den aktuelle transaktion eller hændelse er udskudt, kan den normale drift fortsættes på POS.
 
-> [!NOTE]
-> Indstillingerne **Spring over**, **Markér som registreret** og **Udskyd** skal aktiveres i regnskabsregistreringsprocessen, før de bruges. Desuden skal operatørerne have tildelt tilsvarende rettigheder.
+> [!WARNING]
+> Indstillingerne **Spring over**, **Marker som registreret** og **Udskyd** skal betragtes som nødsindstillinger og bruges kun i særlige tilfælde. Diskuter disse indstillinger til håndtering af fejl med din juridiske enhed eller skat, og anvend god vurdering, før du aktiverer dem. Indstillingerne skal aktiveres i regnskabsregistreringsprocessen, før de bruges. For at sikre, at operatorerne ikke bruger dem regelmæssigt, skal operatørerne tildeles de relevante tilladelser.
 
-Indstillingerne **Spring over**, **Markér som registreret** og **Udskyd** gør det muligt for infokoder at hente nogle specifikke oplysninger om fejlen, f.eks. årsagen til fejlen eller en begrundelse for at springe regnskabsregistreringen over eller markere transaktionen som registreret. Du kan finde flere oplysninger om, hvordan du konfigurerer fejlhåndteringsparametre, i [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Der oprettes en [regnskabstransaktion](#storing-fiscal-response-in-fiscal-transaction), når indstillingerne **Spring over**, **Markér som registreret** eller **Udskyd** er valgt, men regnskabsposteringen indeholder ikke et økonomisk svar. Dette giver dig mulighed for at registrere hændelsen med fejl i regnskabsregistreringen. Disse indstillinger gør det også muligt for infokoder at hente nogle specifikke oplysninger om fejlen, f.eks. årsagen til fejlen eller en begrundelse for at springe regnskabsregistreringen over eller markere transaktionen som registreret. Du kan finde flere oplysninger om, hvordan du konfigurerer fejlhåndteringsparametre, i [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valgfri regnskabsregistrering
 
@@ -112,11 +116,7 @@ Regnskabsregistrering kan være obligatorisk for visse operationer, men valgfri 
 
 ### <a name="manually-rerun-fiscal-registration"></a>Manuel kørsel igen af regnskabsregistrering
 
-Såfremt regnskabsregistreringen af en transaktion eller hændelse er blevet udsat som følge af en fejl (eksempelvis hvis operatøren har valgt **Annuller** i dialogboksen til fejlhåndtering), kan du manuelt køre regnskabsregistreringen igen ved at anvende en tilsvarende operation. Du kan finde flere oplysninger under [Aktiver manuel udførelse af udsatte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Indstillingen Udskyd
-
-Du kan bruge indstillingen **Udskyd** til at fortsætte processen med regnskabsregistrering, hvis det aktuelle trin mislykkes. Den kan bruges, når der er en indstilling til sikkerhedskopiering af regnskabsregistrering.
+Såfremt regnskabsregistreringen af en transaktion eller hændelse er blevet udskudt som følge af en fejl (eksempelvis hvis operatøren har valgt **Annuller** i dialogboksen til fejlhåndtering), kan du manuelt køre regnskabsregistreringen igen ved at anvende en tilsvarende operation. Du kan finde flere oplysninger under [Aktiver manuel udførelse af udskudte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Sundhedskontrol af regnskabsregistreringen
 
@@ -138,7 +138,7 @@ Hvis sundhedskontrollen er mangelfuld, viser POS dialogboksen for sundhedskontro
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagring af regnskabssvar i regnskabstransaktion
 
-Når regnskabsregistrering af en transaktion eller en hændelse er foretaget, oprettes en regnskabstransaktion i kanaldatabasen og knyttes til den oprindelige transaktion eller hændelse. På samme måde, hvis indstillingen **Spring over** eller **Markér som registreret** er valgt for en mislykket regnskabsregistrering, gemmes disse oplysninger i en regnskabstransaktion. En regnskabstransaktion indeholder regnskabssvaret fra regnskabsenheden eller -tjenesten. Hvis regnskabsregistreringsprocessen består af flere trin, oprettes der en regnskabstransaktion for hvert trin i processen, der resulterede i en fuldført eller mislykket regnskabsregistrering.
+Når regnskabsregistrering af en transaktion eller en hændelse er foretaget, oprettes en regnskabstransaktion i kanaldatabasen og knyttes til den oprindelige transaktion eller hændelse. På samme måde, hvis indstillingen **Spring over**, **Markér som registreret** eller **Udskyd** er valgt for en mislykket regnskabsregistrering, gemmes disse oplysninger i en regnskabstransaktion. En regnskabstransaktion indeholder regnskabssvaret fra regnskabsenheden eller -tjenesten. Hvis regnskabsregistreringsprocessen består af flere trin, oprettes der en regnskabstransaktion for hvert trin i processen, der resulterede i en fuldført eller mislykket regnskabsregistrering.
 
 Regnskabstransaktionerne overføres til Headquarters af *P-job*, sammen med transaktioner. I oversigtspanelet **Regnskabstransaktioner** på siden **Transaktioner i butik** kan du se de regnskabstransaktioner, der er knyttet til detailtransaktioner.
 

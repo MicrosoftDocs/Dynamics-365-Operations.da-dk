@@ -2,19 +2,19 @@
 title: Produktsammenligningsmoduler
 description: Denne artikel beskriver moduler til produktsammenligning og implementering af dem, så kunder kan foretage produktsammenligninger på Microsoft Dynamics 365 Commerce-e-handelswebsteder.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474120"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618379"
 ---
 # <a name="product-comparison-modules"></a>Produktsammenligningsmoduler
 
@@ -91,6 +91,19 @@ Tilføj en knap til produktsammenligning i produktfelter på sider med søge- og
 1. Angiv egenskaber for modulet i ruden Egenskaber til højre ved at konfigurere **Knap til produktsammenligning**.
 1. Vælg **Gem**, og vælg derefter **Vis** for at få vist siden.
 1. Vælg **Afslut redigering** for at tjekke siden ind, og vælg derefter **Publicer** for at publicere den.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Føje et forhåndsversionspanelmodul til produktsammenligning til sider på dit websted
+
+Et forhåndsversionsmodul til produktsammenligning viser kunder og kunder mulighed for at gennemse produkter, som de føjer til eller fjerner fra sammenligningen. Forhåndsversionspanelet indeholder også mulighed for at navigere til sammenligningssiden direkte eller rydde hele produktlisten. 
+
+Det anbefales, at du aktiverer forhåndsversionspanelet på alle sider, hvor knappen **produktsammenligning** er aktiveret. Modulet kan føjes til knappen **Produktsammenligning** som et interval, eller det kan bruges som et enkeltstående modul, som du kan konfigurere på en hvilken som helst side, selv når der ikke er nogen funktioner til tilføjelse eller fjernelse af produkter, som kan sammenlignes. 
+
+Du skal manuelt tilføje forhåndsversionspanelmodul til produktsammenligning til en side. Du skal kun tilføje ét forhåndsversionspanelmodul på en side. Hvis du føjer flere forekomster af modulet til en side, gengives det første modul, og resten ignoreres.
+
+![Forhåndsversionspanel til produktsammenligning](./media/product-comparison-preview-panel-2.png)
+
+Hvis du angiver en produktsammenligningsgrænse, har du mulighed for at aktivere grå pladsholdere for forhåndsversionspanelet, der angiver, hvor mange flere produkter der kan føjes til sammenligningen. De grå pladsholdere erstattes af produkter, når de føjes til sammenligningen. Hvis du vil konfigurere en grænse for produktsammenligning og aktivere grå pladsholdere i Site Builder, skal du gå til **Webstedsindstillinger > Udvidelser** og foretage dine ændringer i afsnittet **Produktsammenligninger**. Konfigurationen anvendes for alle forhåndsversionspaneler af alle sider. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Angiv det maksimale antal produkter, der skal vises i sammenligningen.
 

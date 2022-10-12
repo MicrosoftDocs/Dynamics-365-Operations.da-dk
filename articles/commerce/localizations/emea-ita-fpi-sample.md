@@ -2,19 +2,19 @@
 title: Eksempel på integration af bonprinter for Italien
 description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Italien i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336684"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631390"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Eksempel på integration af bonprinter for Italien
 
@@ -67,7 +67,7 @@ Følgende scenarier dækkes af eksemplet på integration af bonprinter for Itali
 - Fejlhåndtering som f.eks. følgende muligheder:
 
     - Forsøg at registrere et regnskab igen, hvis der kan udføres et nyt forsøg, f.eks. hvis bonprinteren ikke er tilsluttet, eller hvis printeren ikke er klar eller ikke svarer, printeren er løbet tør for papir, eller der er papirstop.
-    - Udskyd regnskabsregistrering.
+    - Udskyd regnskabsregistreringen.
     - Undlad regnskabsregistrering, eller markér transaktionen som registreret, og inkluder infokoder for at registrere årsagen til fejlen og flere oplysninger.
     - Kontrollér, om bonprinteren er tilgængelig, før en ny salgstransaktion åbnes, eller en salgstransaktion færdiggøres.
 
@@ -111,7 +111,7 @@ Fuldfør trinnene til opsætning af regnskabsintegration som beskrevet i [Konfig
 1. [Oprette regnskabstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Oprette X/Z-regnskabsrapporter fra POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Aktiver manuel udførelse af udsatte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktiver manuel udførelse af udskudt regnskabsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurer funktionaliteten til administration af kundeoplysninger i POS](emea-ita-customer-information.md#setup).
 1. [Konfigurere kanalkomponenter](#configure-channel-components).
 

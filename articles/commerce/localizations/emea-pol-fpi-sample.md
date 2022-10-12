@@ -2,19 +2,19 @@
 title: Eksempel på integration af bonprinter i Polen
 description: Denne artikel indeholder en oversigt over eksemplet på regnskabsintegration for Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-01.
-ms.openlocfilehash: d4e99854f5e3ab9a6ae802f4f6bcde7918f72e6d
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 2f27e5fdcd2b26a0a1651f21436cb4caad501cf8
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473761"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631365"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Eksempel på integration af bonprinter i Polen
 
@@ -64,7 +64,7 @@ Følgende scenarier dækkes af eksemplet på integration af bonprinter for Polen
 - Fejlhåndtering som f.eks. følgende muligheder:
 
     - Forsøg at registrere et regnskab igen, hvis der kan udføres et nyt forsøg, f.eks. hvis bonprinteren ikke er tilsluttet, eller hvis printeren ikke er klar eller ikke svarer, printeren er løbet tør for papir, eller der er papirstop.
-    - Udskyd regnskabsregistrering.
+    - Udskyd regnskabsregistreringen.
     - Undlad regnskabsregistrering, eller markér transaktionen som registreret, og inkluder infokoder for at registrere årsagen til fejlen og flere oplysninger.
     - Kontrollér, om bonprinteren er tilgængelig, før en ny salgstransaktion åbnes, eller en salgstransaktion færdiggøres.
 
@@ -107,7 +107,7 @@ Fuldfør trinnene til opsætning af regnskabsintegration som beskrevet i [Konfig
 1. [Konfigurer en regnskabsregistreringsproces](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Du skal også notere dig indstillingerne for den regnskabsregistreringsproces, der er [specifik for dette eksempel på integration af bonprinter](#set-up-the-registration-process).
 1. [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Oprette X/Z-regnskabsrapporter fra POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Aktiver manuel udførelse af udsatte regnskabsregistreringer](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktiver manuel udførelse af udskudt regnskabsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurere kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Konfigurere registreringsprocessen
