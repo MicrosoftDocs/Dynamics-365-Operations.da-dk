@@ -2,7 +2,7 @@
 title: Ikke-afregnet indtægt
 description: Denne artikel indeholder en forklaring på, hvordan du konfigurerer varer og konti og bruger udskydelse af indtægter og udgifter i Abonnementsfakturering.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879676"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644162"
 ---
 # <a name="unbilled-revenue"></a>Ikke-afregnet indtægt
 
@@ -123,15 +123,15 @@ Fordelingerne genberegnes på basis af den valgte fordelingstype (**Procent**, *
 
 Der angives en faktureringsplan for tre år, og fakturaerne faktureres én gang om året over en treårig periode. Hele kontraktbeløbet registreres på kontoen for ikke-faktureret omsætning, som de årlige fakturaer oprettes ud fra. Modkontoen er indtægts- eller udskudt omsætningskonto.
 
-Bemærk, at topfakturering og ikke-faktureret omsætning ikke fungerer sammen, da der kan forekomme afstemningsproblemer i finansmodulet. På opsætningssiden **Varegruppe er** varegruppe A f.eks. konfigureret, så feltet **Antal øverste linjer** angives til **2**. Der tilføjes tre elementer på siden **Faktureringsplaner**. Alle tre varer tilhører varegruppe A. Når den første kladdepostering oprettes for funktionen for ikke-faktureret omsætning, behandles beløbet for alle tre varer til den ikke-fakturerede konto. Når fakturaen for faktureringsplanen oprettes, er det kun beløbene for de to øverste elementer, der medtages. Derfor stemmer fakturabeløbet ikke overens med det beløb, der blev behandlet på kontoen for ikke-faktureret omsætning, og der opstår afstemningsproblemer i finansmodulet.
+Topfakturering og ikke-faktureret omsætning ikke fungerer sammen, da der kan forekomme afstemningsproblemer i finansmodulet. På opsætningssiden **Varegruppe er** varegruppe A f.eks. konfigureret, så feltet **Antal øverste linjer** angives til **2**. Der tilføjes tre elementer på siden **Faktureringsplaner**. Alle tre varer tilhører varegruppe A. Når den første kladdepostering oprettes for funktionen for ikke-faktureret omsætning, behandles beløbet for alle tre varer til den ikke-fakturerede konto. Når fakturaen for faktureringsplanen oprettes, er det kun beløbene for de to øverste elementer, der medtages. Derfor stemmer fakturabeløbet ikke overens med det beløb, der blev behandlet på kontoen for ikke-faktureret omsætning, og der opstår afstemningsproblemer i finansmodulet.
 
 Hvis du vil bruge ikke-faktureret omsætning, skal du lade siden til **opsætning af varegrupper** være tom eller konfigurere alle varegrupper, så feltet **Antal øverste linjer** angives til **0** (nul). Hvis du vil bruge topfakturering, er ingen handlinger for ikke-faktureret omsætning tilgængelige.
 
 ### <a name="examples"></a>Eksempler
 
-Fra og med version 10.0.27 introduceres en ny konto, når der bruges ikke-genereret omsætning. Når den første proces til **oprettelse af kladdepostering** bogføres, udføres kreditten på en ny konto til modregning af ikke-bogført omsætning. Denne konto bruges i stedet for omsætningskontoen, da samme værdi skal tilbageføres, når faktureringsplanen faktureres. Hvis der opstår valutakurs- eller afrundingsdifferencer, kan de beløb, der beregnes under processen **Generér faktura**, være forskellige. Denne adfærd sikrer, at nettobeløbet på kontiene er 0 (nul).
+Fra og med version 10.0.29 føjes der en ny parameter til faktureringsparametrene for tilbagevendende kontrakter. Når indstillingen Er angivet til Ja, aktiverer parameteren **Brug ikke-udlignede modkonti** to nye konti i opsætningen af **Ikke-genereret omsætning**. Konti til modregning af ikke-faktureret omsætning og ikke-fakturerede rabatmodkonti bliver tilgængelige og bruges bedst ved oprettelse af faktureringsplaner i en anden valuta end regnskabsvalutaen. Hvis du bruger modkontiene, kan du sikre, at de ikke-bogførte omsætnings- og ikke-bogførte rabatkonti tilbageføres ved hjælp af de samme valutakurser som de oprindelige poster. Den første proces **Opret kladdepost** er den samme som processen til debet til ikke-krediteret omsætning og kreditering til omsætning. Hvis du bruger en rabat, er den første kladdepost den samme som med en debet til Rabat og kreditering af ikke-frafaktureret rabat. 
 
-Dette eksempel viser, hvordan du kan bruge ikke-faktureret omsætning til at anerkende hele beløbet i en kontrakt på statussen som ikke-genereret omsætning. Den anden side af posten er modkontoen for ikke-faktureret omsætning. Når du fakturerer debitoren, tilbageføres den ikke-fakturerede omsætning og modregnede ikke-fakturerede omsætning. Indtægtsføring sker enten på faktureringstidspunktet eller i overensstemmelse med den plan for indtægtsføring, der er konfigureret.
+Dette eksempel viser, hvordan du kan bruge ikke-faktureret omsætning til at anerkende hele beløbet i en kontrakt på statussen som ikke-genereret omsætning. Den anden side af posten er omsætning eller udskudt indtægt. Når du fakturerer debitoren, tilbageføres den ikke-fakturerede omsætning. Indtægtsføring sker enten på faktureringstidspunktet eller i overensstemmelse med den plan for indtægtsføring, der er konfigureret.
 
 #### <a name="assumptions"></a>Forudsætninger
 
@@ -151,47 +151,38 @@ Dette eksempel viser, hvordan du kan bruge ikke-faktureret omsætning til at ane
 
     | Element | Igangsæt dato | Slutdato | Antal | Faktureringsfrekvens | Udskyd vare | Ikke-afregnet indtægt | Beskrivende tekst |
     |---|---|---|---|---|---|---|---|
-    | Licens | 01. januar, CY | 31. december CY+2 | $100,00 | Årligt | Nej | Ja | Kunden faktureres $100,00 hvert år. Totalen $300,00 vil på forhånd blive registreret som ikke-faktureret omsætning på balancen og som indtægt i driftsopgørelsen. Hver faktura reducerer det ikke-fakturerede beløb. |
-    | Vedligeholdelse | 01. januar, CY | 31. december CY+2 | $30,00 | Årligt | Ja | Ja | Kunden faktureres $30,00 hvert år. Totalen $90,00 vil på forhånd blive registreret som ikke-faktureret omsætning og udskudt indtægt på balancen. Hver faktura reducerer det ikke-fakturerede beløb. Den udskudte indtægt registreres en gang om måneden over 36 måneder. |
+    | Licens | 01. januar 2022 | 31. december 2024 | $100,00 | Årligt | Nej | Ja | Kunden faktureres $100,00 hvert år. Totalen $300,00 vil på forhånd blive registreret som ikke-faktureret omsætning på balancen og som indtægt i driftsopgørelsen. Hver faktura reducerer det ikke-fakturerede beløb. |
+    | Vedligeholdelse | 01. januar 2022 | 31. december 2024 | $30,00 | Årligt | Ja | Ja | Kunden faktureres $30,00 hvert år. Totalen $90,00 vil på forhånd blive registreret som ikke-faktureret omsætning og udskudt indtægt på balancen. Hver faktura reducerer det ikke-fakturerede beløb. Den udskudte indtægt registreres en gang om måneden over 36 måneder. |
 
 6. På siden **Alle faktureringsplaner** skal du bruge processen **Opret kladdepost** til at bogføre kontraktværdien på statussen som ikke-faktureret omsætning.
 
 Der oprettes to kladdeposteringer, én for hver linje i faktureringsplanen.
 
-| Ikke-afregnet indtægtskonto | Modkonto til ikke-faktureret indtægt | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| Ikke-afregnet indtægtskonto | | $300,00 | |
-| | Modkonto til ikke-faktureret indtægt | | $300,00 |
+| Konto | Debetbeløb | Kreditbeløb |
+|---|---|---|
+| Ikke-afregnet indtægtskonto | $300,00 | |
+| Omsætningskonto | | $300,00 |
 
-| Ikke-afregnet indtægtskonto | Udskudt indtægt | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| Ikke-afregnet indtægtskonto | | $90,00 | |
-| |Udskudt vedligeholdelsesindtægt | | $90,00 |
+| Konto | Debetbeløb | Kreditbeløb |
+|---|---|---|
+| Ikke-afregnet indtægtskonto | $90,00 | |
+| Udskudt indtægt | | $90,00 |
 
-Den første kladdepostering bogføres på en konto for ikke-bogført omsætningsmodkonto, og den anden bogføres på en konto til udskudt omsætning. Hvis faktureringslinjen både har ikke-faktureret omsætning og udskudt omsætning, bruges kontoen til udskudt omsætning og ikke modkontoen for ikke-faktureret omsætning. Kontrakten kræver, at fakturaen for kunden oprettes ved begyndelsen af hvert år. Brug processen **Opret faktura** til at oprette fakturaen. Når fakturaen oprettes, oprettes følgende kladdeposteringer.
+Kontrakten kræver, at fakturaen for kunden oprettes ved begyndelsen af hvert år. Brug processen **Opret faktura** til at oprette fakturaen. Når fakturaen er oprettet, bogføres følgende fakturabilag.
 
-| Hovedkonto | Ikke-afregnet indtægtskonto | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| Modkonto til ikke-faktureret indtægt | | $100,00 | |
-| | Ikke-afregnet indtægtskonto | | $100,00 |
-| Debitor | | $100,00 | |
-| | Omsætningskonto | | $100,00 |
+| Konto| Debetbeløb | Kreditbeløb |
+|---|---|---|
+| Ikke-afregnet indtægtskonto | | $130,00 |
+| Debitor | $130,00 | |
 
-| Hovedkonto | Ikke-afregnet indtægtskonto | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| Indtægtskonto for udskudt vedligeholdelse | | $30,00 | |
-| | Ikke-afregnet indtægtskonto | | $30,00 |
-| Debitor | | $30,00 | |
-| | Indtægtskonto for udskudt vedligeholdelse | | $30,00 |
+Denne kladdepost oprettes af fakturaer, der bogføres i begyndelsen af de næste to år. Kontoen Ikke-faktureret omsætning reduceres hvert år under processen **Opret faktura**. Kontoen Modkonto for ikke-faktureret omsætning bruges til at afbalancere kontoen for ikke-faktureret omsætning, når der bruges forskellige valutakurser. 
 
-Denne kladdepost oprettes af fakturaer, der bogføres i begyndelsen af de næste to år. Nettobeløbet på kontoen for udskudt omsætning er 0 (nul), fordi der ikke er nogen afrundings- eller valutakursforskel. Den udskudte omsætning skal tilbageføres nøjagtigt, som den blev krediteret under processen **Opret kladdepost**. Da omsætningen stadig er udskudt og registreres senere, sker kreditten på kontoen for udskudt omsætning igen.
+I sidste trin oprettes kladdeposten for indtægtsføring hver måned for at genkende indtægten af den udskudte indtægt fra vedligeholdelsesgebyr. Kladdeposten kan oprettes ved hjælp af siden **Behandling af genkendelse**. Alternativt kan den oprettes ved at vælge **Genkend** for linjerne på siderne **Udskudt plan**.
 
-I sidste trin oprettes kladdeposten for indtægtsføring hver måned for at genkende indtægten af det udskudte vedligeholdelsesgebyr. Kladdeposten kan oprettes ved hjælp af siden **Behandling af genkendelse**. Alternativt kan den oprettes ved at vælge **Genkend** for linjerne på siderne **Udskudt plan**.
-
-| Udskudt indtægtskonto | Omsætningskonto | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| Udskudt vedligeholdelsesindtægt | | $2,50 | |
-| | Vedligeholdelsesindtægt | | $2,50 |
+| Hovedkonto | Debetbeløb | Kreditbeløb |
+|---|---|---|
+| Udskudt indtægt | $2,50 | |
+| Omsætning | | $2,50 |
 
 Denne kladdepost oprettes, hver gang der køres en registreringsproces for denne udskudte vare (i alt 36 gange).
 
@@ -269,18 +260,18 @@ Da begge varer bruger ikke-faktureret omsætning og indtægtsfordeling, er det s
 
 I følgende tabel vises den første kladdepostering for varerne og fakturaen.
 
-| Ikke-afregnet indtægtskonto | Udskudt indtægtskonto | Debetbeløb | Kreditbeløb |
-|---|---|---|---|
-| **Vare 1000 kladdepostering** | | | |
-| Debet ikke-afregnet indtægtskonto (401250) | | $1.465,26 | |
-| | Kreditudskudt indtægtskonto (250600) | | $1.465,26 |
-| **Vare 0021 kladdepostering** | | | |
-| Debet ikke-afregnet indtægtskonto (401250) | | $274,74 | |
-| | Kreditudskudt indtægtskonto (250600) | | $274,74 |
-| **Fakturaer** | | | |
-| | Ikke-afregnet kreditindtægtskonto | | $1.465,26 |
-| | Ikke-afregnet kreditindtægtskonto | | $274,74 |
-| Debetkonto AR (130100) | | $1.488,16 | |
+| Hovedkonto | Debetbeløb | Kreditbeløb |
+|---|---|---|
+| **Vare 1000 kladdepostering** | | | 
+| Ikke-afregnet indtægtskonto (401250) | $1.465,26 | |
+| Udskudt indtægtskonto (250600) | | $1.465,26 |
+| **Vare 0021 kladdepostering** | | | 
+| Ikke-afregnet indtægtskonto (401250) | $274,74 | |
+| Udskudt indtægtskonto (250600) | | $274,74 |
+| **Fakturaer** | | |
+| Ikke-afregnet indtægtskonto | | $1.465,26 |
+| Ikke-afregnet indtægtskonto | | $274,74 |
+| AR-konto (130100) | $1.488,16 | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Ændringer i faktureringsplanlinjen, faktureringsdetaljelinjen eller indtægtsfordelingen
 

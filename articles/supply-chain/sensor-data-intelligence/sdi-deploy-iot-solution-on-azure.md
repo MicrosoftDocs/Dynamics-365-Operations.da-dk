@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 284aba91aa436ed1dfc02b5a93b4358ffc518017
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5026f234f1b2f38e7041098421d0261fd468db96
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428330"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643707"
 ---
 # <a name="deploy-an-iot-solution-on-azure"></a>Installer en IoT-eksempelløsning på Azure
 
@@ -26,6 +26,14 @@ ms.locfileid: "9428330"
 Data intelligence bruger data fra det, som man ellers har forbindelse til Microsoft Azure. Hvis du vil gøre det muligt for Azure at hente data fra din aftale og dele dem med Dynamics 365 Supply Chain Management, skal du implementere en IoT-løsning (Internet of Things) på dit Azure-abonnement. Følgende arkitekturdiagram indeholder en oversigt over løsningen og dens komponenter.
 
 ![Diagram over arkitekturen for dataoplysninger.](media/sdi-architecture.png "Diagram over arkitekturen for dataoplysninger")
+
+## <a name="video-instructions"></a>Videovejledning
+
+I følgende video kan du se, hvordan [du aktiverer Sensor Data Intelligence-funktionen](sdi-enable-feature.md) og installerer de nødvendige Azure-ressourcer. Det andet afsnit i denne artikel indeholder de samme instruktioner i et tekstbaseret format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## <a name="procedure"></a>Procedure
 
 Følg disse trin for at anvende de nødvendige ressourcer i Azure.
 

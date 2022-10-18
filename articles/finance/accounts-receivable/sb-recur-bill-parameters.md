@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903328"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643997"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Parametre for tilbagevendende kontraktfakturering
 
@@ -46,7 +46,8 @@ Brug siden **Faktureringsparametre for tilbagevendende kontrakter** til at konfi
 8. Vælg standardfakturaposteringstypen for nye faktureringsplaner i feltet **Fakturaposteringstype**.
 9. Indstil indstillingen **Juster deltid til fakturering** til **Ja** for at justere den tilsvarende udskydelsesplan, så den bruger de samme datoer som faktureringsplanen. Angiv det til **Nej** for at bruge forskellige datoer.
 10. Hvis du bruger funktionen til opdeling af omsætning, skal du angive indstillingen **Opret automatisk omsætningsopdeling** til **Ja**, når der føjes varer til en faktureringsplan. Afkrydsningsfeltet **Splitning af omsætning** markeres automatisk på faktureringsplanlinjen, hvis varen er konfigureret som en opdelt omsætningsvare. Angiv indstillingen **Nej**, hvis du manuelt vil markere afkrydsningsfeltet **Indtægtssplitning**.
-11. Angiv felterne til oprettelse af salgsordrer:
+11. Angiv indstillingen **Debitoropdeling** til **Ja**, hvis du vil tillade, at en faktureringsplan faktureres til forskellige debitorer. Når indstillingen er angivet til **Ja**, er indstillingen **Debitoropdelt** tilgængelig i faktureringsplanhovedet og faktureringsplanlinjen. 
+12. Angiv felterne til oprettelse af salgsordrer:
 
     - Fakturaer kan konsolideres efter periode, debitor eller vare. Du kan angive en hvilken som helst kombination af **Ja** og **Nej**. Fakturaer kan også opdeles efter varegruppe.
     - Følgende indstillinger er tilgængelige for faktura:
@@ -92,6 +93,9 @@ Brug siden **Faktureringsparametre for tilbagevendende kontrakter** til at konfi
     - **Udsted kredit** – Opret en kreditnota, når en faktureringsplan eller faktureringsplanlinje afsluttes.
     - **Kreditregulering** – Opret en kreditregulering for en faktureringsplan, når en linje afsluttes. Kreditreguleringen vises i en fremtidig faktureringsperiode for faktureringsplanen. Kreditreguleringen opdaterer fakturabeløbet for den næste faktureringsperiode, indtil kreditten er anvendt færdig på faktureringsplanen.
     - **Ingen kredit** – Opret ikke en kreditregulering eller kreditnota, når en faktureringsplan eller faktureringsplanlinje afsluttes. Denne indstilling er kun tilgængelig, når du bruger et ophør af typen **Ingen regulering** til at afslutte en faktureringsplan.
+18. Når indstillingen **Én gang kan afsluttes med refusion** er angivet til **Nej**, og en faktureringsplan med faktureringsfrekvensen **Én gang** ændres status for faktureringsplanlinjen til **Fratrådt**, når faktureringsplanen er faktureret. Denne faktureringsplan kan ikke afsluttes, og der kan ikke udstedes kredit. Når indstillingen **Én gang kan afsluttes med refusion** er angivet til **Ja**, og en faktureringsplan med faktureringsfrekvensen **Én gang** kan have status **Aktiv**, når faktureringsplanen er faktureret. Faktureringsplanlinjen kan afsluttes, og en refusion behandles. 
+19. Indstillingen **Beregn daglig**, der angives i parametre, angives som standard til masseafslutningssiden og dialogboksen til faktureringsoverskrift og afslutning. Den kan ændres under aftrædelsesprocessen. Når beløbet er angivet til **Ja**, beregnes ethvert refusionsbeløb ved hjælp af en dagssats. Når det er angivet til **Nej**, krediteres det på baggrund af fratrædelsesdatoen og faktureringshyppigheden. Hvis der f.eks. bruges månedlig frekvens, og faktureringsbeløbet er $100 pr. måned, er kreditbeløbet i trin af $100. Hvis faktureringsfrekvensen er engangshyppigheden, $0,00. Prorate skal angives dagligt til Ja for at få en refusion for engangsfaktureringsfrekvens. 
+20. Angiv Indstillingen **Opret udsættelse for kredit** til **Ja** for at oprette en ny udskydelsesplan, hvis du krediterer en eksisterende udskydelsesplan. Lad indstillingen være angivet til **Nej** for at oprette kreditnotaen i den eksisterende udskydelsesplan.
 
 ## <a name="sequence-number-tab"></a>Fanen Sekvensnummer
 

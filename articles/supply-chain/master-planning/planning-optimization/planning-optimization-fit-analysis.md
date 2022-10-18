@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591844"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643722"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -104,7 +104,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Sikkerhedsmargener | Behovsplaner med sikkerhedsmargen: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) |  Understøttet |
 | Opfyldning af sikkerhedslager | Varedisponeringsposter med en anden "Opfyld minimum" end fra "Dags dato + fremskaffelsestid": *\#* | Planlægningsoptimering bruger altid *Dags dato + fremskaffelsestid*. Denne ændring er foretaget for at forberede en forenklet planlægningsopsætning i fremtiden og for at give et resultat, der kan handles ud fra. Hvis indkøbstiden ikke indgår i sikkerhedslageret, vil ordreforslag, der oprettes for den aktuelle begrænsede disponible lagerbeholdning, altid blive forsinket grundet leveringstiden. Denne funktionsmåde kan forårsage betydelige problemer og uønskede ordreforslag. Den bedste praksis er at ændre indstillingen, så *Dags dato + fremskaffelsestid* bruges. Opdater masterdata for at undgå advarsler. | I/T |
 | Salgstilbud | Behovsplaner med salgstilbud aktiveret: *\#* | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 eller senere |
-| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion afventer. I øjeblikket ignoreres hyldelevetid, når planlægningsoptimering er aktiveret, uanset denne indstilling. | Understøttet |
+| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion understøttes nu. | Understøttet |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,7 +2,7 @@
 title: Fjernede eller udfasede funktioner i Dynamics 365 Finance
 description: Denne artikel beskriver funktioner, der er blevet fjernet eller vil blive fjernet fra Dynamics 365 Finance.
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462295"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643788"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -32,6 +32,18 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!NOTE]
 > Du kan finde detaljerede oplysninger om objekter i programmer til finans og drift i [Technical Reference-rapporterne](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af programmer til finans og drift.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.31 udgaven
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>EDIFACT PAYMUL-konfiguration (AT) under Betalingsmodel
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt format, der er baseret på ISO 20022 pain.001.001.09. | 
+| **Erstattet af en anden funktion?**   | Ja |
+| **Produktområder, der er berørt**         | Applikation |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Udfaset: Banker i Østrig vil udfase EDICFACT-PAYMUL for betalinger ved grænsebetalinger senest i november 2022 og vil erstatte den med XML-version pain.001.001.09N. Der er tilføjet en ny konfiguration under det globale konfigurationslager, som giver brugerne mulighed for at fuldføre betalingsanmodningen, der går ud på tværs af grænser. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.30 udgaven
 

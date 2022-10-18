@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357585"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671452"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversigt over dataimport- og -eksportjob
 
@@ -64,6 +64,9 @@ Du kan føje bestemte objekter til et import- eller eksportjob eller vælge en s
 
 ### <a name="set-the-data-format-for-the-job"></a>Angiv jobbets dataformat
 Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporteres eller importeres. Du kan definere formater ved hjælp af feltet **Opsætning af datakilder**. Et dataformat for kilden er en kombination af **Type**, **Filformat**, **Rækkeafgrænser** og **Kolonneafgrænser**. Der findes også andre attributter, men disse er dem, der er vigtige at forstå. Følgende tabel viser de gyldige kombinationer.
+
+> [!NOTE]
+> Excel-filformatet er ikke aktuelt tilgængeligt i Datastyringsarbejdsområdet til Government Community Cloud (GCC).
 
 | Filformat            | Række/kolonneafgrænser                       | XML-typografi                 |
 |------------------------|--------------------------------------------|---------------------------|

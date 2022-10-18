@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: ff3944b987314a688a5829b05f8627479e3e79ed
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428304"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644051"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scenariet for aktiv-vedligeholdelse
 
@@ -24,6 +24,12 @@ ms.locfileid: "9428304"
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 I scenariet til *vedligeholdelse af aktiver* kan du bruge oplysninger til at oprette tællerposter. Tællerposter sporer brugen af et maskinaktiv og bruges som input til at generere vedligeholdelsesplanen for maskinaktiver.
+
+## <a name="video-instructions"></a>Videovejledning
+
+Følgende video viser, hvordan du kan konfigurere og afprøve scenariet til vedligeholdelse af aktiver ved hjælp af [standarddemodata](../../fin-ops-core/fin-ops/get-started/demo-data.md). De resterende afsnit i denne artikel indeholder de samme instruktioner i et tekstbaseret format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
 
 ## <a name="prepare-demo-data-for-the-asset-maintenance-scenario"></a>Forberede demodata til scenariet til vedligeholdelse af aktiver
 
