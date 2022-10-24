@@ -888,6 +888,8 @@
               href: async-customer-mode.md
             - name: Konvertere asynkrone kunder til synkrone kunder
               href: convert-async-to-sync.md
+            - name: Overvåge synkronisering af kundehandlinger
+              href: audit-async-customer-operations.md
             - name: Ofte stillede spørgsmål om asynkron oprettelsestilstand for kunde
               href: async-customer-mode-faq.md
             - name: Kundeaktiviteter
@@ -1296,8 +1298,14 @@
                       href: cookie-consent-module.md
                 - name: Chatmoduler
                   items:
-                    - name: Commerce-chatmodul
+                    - name: Oversigt over Commerce-chatchatfunktioner
+                      href: commerce-chat-overview.md
+                    - name: Commerce-chat med Omnikanal til Customer Service-modul
                       href: commerce-chat-module.md
+                    - name: Commerce-chat med Power Virtual Agents-modul
+                      href: chat-module-pva.md
+                    - name: Commerce-chatmodul med proaktive chatparametre
+                      href: chat-proactive-chat-parameters.md
             - name: Søge
               items:
                 - name: Oversigt over standardlandingsside for kategori og side for søgeresultater

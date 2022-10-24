@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheder eller ændringer i platformopdateringer
               items:
-                - name: Nyheder eller ændringer på startsiden for platformopdateringer
+                - name: Nyheder eller ændringer på startsiden for Platformopdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Platformsopdateringer til version 10.0.31 (februar 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Platformsopdateringer til version 10.0.30 (november 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
-                - name: Platformopdateringer til version 10.0.29 (oktober 2022)
+                - name: Platformsopdateringer til version 10.0.29 (oktober 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Platformopdateringer til version 10.0.28 (august 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: Spore ændringer i en enhed
                   href: data-entities/entity-change-track.md
+                - name: Tillad sporing af ændringer af rækkeversioner for en enhed
+                  href: data-entities/rowversion-change-track.md
                 - name: Finde oplysninger om standarddataenheder
                   href: data-entities/data-entities-report.md
                 - name: Dataskabeloner med flere regneark
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Aktivere virtuelle objekter i Dataverse
                   href: power-platform/enable-virtual-entities.md
+                - name: Spore ændringer for virtuelle tabeller i Dataverse
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps-portaler med finans og drift
                   href: power-platform/power-portal-reference.md
                 - name: Ofte stillede spørgsmål om virtuelle finans og drift-enheder
@@ -1624,8 +1630,6 @@
                   href: sysadmin/security-reports.md
                 - name: Oprette nye brugere
                   href: sysadmin/tasks/create-new-users.md
-                - name: Sessionsstyring for bruger
-                  href: sysadmin/user-session-management.md
                 - name: Blokere adgang efter lokation med Azure AD Betinget adgang
                   href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Masseimportere brugere

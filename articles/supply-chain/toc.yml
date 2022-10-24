@@ -12,14 +12,12 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.31 (februar 2022)
+                  href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (november 2022)
                   href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (oktober 2022)
                   href: get-started/whats-new-scm-10-0-29.md
-                - name: Supply Chain Management 10.0.28 (august 2022)
-                  href: get-started/whats-new-scm-10-0-28.md
-                - name: Supply Chain Management 10.0.27 (juli 2022)
-                  href: get-started/whats-new-scm-10-0-27.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1775,10 +1773,14 @@
                   href: master-planning/supply-schedule.md
                 - name: Anvende filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
-                - name: Varedisponering med behovsprognose
+                - name: Varedisponering med behovsprognoser
                   href: master-planning/planning-optimization/demand-forecast.md
+                - name: Varedisponering med forsyningsprognoser
+                  href: master-planning/planning-optimization/supply-forecast.md
                 - name: Varedisponering med samhandelsaftaler vedrørende indkøb
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Planlægge på baggrund af tilbud og tilbudsanmodninger
+                  href: master-planning/planning-optimization/quotation-planning.md
                 - name: 'Dato- og tidsparametre, der ikke bruges af Planlægningsoptimering'
                   href: master-planning/planning-optimization/date-time-used.md
                 - name: Sikkerhedsmargener
@@ -2323,6 +2325,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Oprette foruddefinerede produktvarianter
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Vis oversatte produktnavne og beskrivelser i brugergrænsefladen
+                  href: pim/show-translated-product-info.md
                 - name: Administrere måleenheder
                   href: pim/tasks/manage-unit-measure.md
                 - name: Måleenhedskonvertering pr. produktvariant
@@ -3633,6 +3637,8 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Arbejde med lokationsdirektiver
                       href: warehousing/create-location-directive.md
+                    - name: Test lokationsdirektiver med accepttest
+                      href: warehousing/location-directive-acceptance-tests.md
                     - name: Konfigurere produktfiltre for lagerstedsposteringer
                       href: warehousing/filters-and-filter-codes.md
                     - name: Grænser for lokationslagring
