@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671419"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689194"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -56,7 +56,9 @@ Der implementeres et sæt procesændringer før aktiveringen af proaktiv impleme
 
 - **Skema** – Værktøj sikrer, at kvalitetsopdaterings builds kun omfatter skemaændringer, der kan anvendes, mens tjenesten er online. Denne indfaldsvinkel hjælper med at bevare muligheden for at anvende opdateringen med nedetid tæt på nul.
 - **Udvidet antal ændringer** - Aktuelt er der allerede et ekstra procestrin til godkendelse af ændringer, så de medtages i en kvalitetsopdatering. Den trinvise reduktion i det ekstra trin øges for at reducere regressionsmulighederne. Det er ikke tilladt at ændre noget i kvalitetsopdateringerne, og den øgede ændring er med til at sikre, at vi opfylder dette mål.
-- **Synlighed** – Vi sender beskeder via e-mail og Lifecycle Services (LCS) om kommende proaktive kvalitetsopdateringer. Desuden vil supportteams og hændelsesemner have synlighed for, hvor kvalitetsopdateringer er blevet implementeret proaktivt.
+- **Synlighed** – Vi sender beskeder via Administration, Lifecycle Services (LCS) og andre tilgængelige kanaler om kommende proaktive kvalitetsopdateringer. Desuden vil supportteams og hændelsesemner have synlighed for, hvor kvalitetsopdateringer er blevet implementeret proaktivt.
+ > [!NOTE]
+ > Microsoft Communications-teamet undersøger løbende forringet ydeevne af mailværktøjet, der forhindrer levering af mailbeskeder. Fortsæt med at overvåge Microsoft 365 Meddelelsescenter for onboarding- og beskedrelaterede meddelelser.
 - **Fejlsikret via flighting** – Flighting bruges til ændringer af beskyttelseskode, hvor det er relevant i en kvalitetsopdateringsrettelse eller ved hjælp af den eksisterende funktions-flighting, der er relevant for rettelsen. Hvis der kræves en reserve eller et deaktiveret skift efter en proaktiv installation, kan den udføres via flighting-systemet for at undgå yderligere fejl.
 - **Synkroniseringsangivelse for sandkasse** – Mindre end 20 procent af kunderne har i dag flere sandbokse, og én sandboks anvendes, hvor versionen matcher produktionen, som en hjælp ved fejlfinding. Hvis en kunde bruger en sandkasse til at teste en nyere version end produktionen, vil denne sandkasse modtage kvalitetsopdateringer til den nyere version.
 
@@ -80,10 +82,10 @@ Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planla
 
 | Station | Områder | Fuldført tidsplan| Kommende sandkasseplan
 |---|---|---|---|
-| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 15. september til 18. september 2022 og 19. september til 22. september 2022 | 7. oktober til 10. oktober 2022 |
-| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 25. september til 28. september 2022 | 7. oktober til 10. oktober 2022 |
-| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 26. september til 29. september 2022 | 7. oktober til 10. oktober 2022 |
-| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 28. september til 1. oktober 2022 | 7. oktober til 10. oktober 2022 |
+| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 15. september til 18. september 2022, 19. september til 22. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
+| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 25. september til 28. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
+| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 26. september til 29. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
+| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 28. september til 1. oktober 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
 | Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktiv udgivelses af kvalitetsopdatering: 10.0.29

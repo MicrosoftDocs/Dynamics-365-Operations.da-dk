@@ -2,7 +2,7 @@
 title: Importere og eksportere momsberegninger
 description: Denne artikel indeholder oplysninger om import- og eksportfunktionen i tjenesten til momsberegning.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855167"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690227"
 ---
 # <a name="import-and-export-tax-calculations"></a>Importere og eksportere momsberegninger
 
@@ -98,3 +98,21 @@ Det Excel-regneark, du har hentet, indeholder strukturen i gitteret **Opsætning
 2. I RCS skal du vælge **Tilføj** under fanen **Anvendelse af momsgruppe** på siden med funktionen **Momsberegning** for at indsætte en tom post nederst i gitteret **Opsætning af anvendelighed af momsgruppe**.
 3. Vælg **Ctrl+V** for at indsætte de kopierede rækker i gitteret.
 4. Vælg **Gem**.
+
+## <a name="import-feature-demo-data"></a>Importere demodata til funktion
+
+Følg disse trin for at importere demodata til funktioner.
+
+1. Log på [RCS](https://marketing.configure.global.dynamics.com/).
+2. I arbejdsområdet **Globaliseringsfunktioner** skal du vælge **Funktioner** og derefter markere feltet **Momsberegning**.
+3. Vælg **Importér**, og vælg derefter **Synkroniser** på siden **Importér funktion fra den globale lagermappe**. 
+4. Vælg funktionen **tax-calculation-feature-demo-data** i tabellen, og vælg derefter **Importér**.
+5. Vælg **Vis** for at gennemse de momskoder, grupper og anvendelsesregler, der er defineret i den importerede funktion.
+6. I Finance skal du gå til den juridiske enhed **DEMF** og gå til **Moms** \> **Opsætning** \> **Momskonfiguration** \> **Momsberegningsparametre**.
+7. Under fanen **Generelt** skal du vælge **Aktivér momsberegningstjeneste**.
+8. Vælg **tax-calculation-feature-demo-data** i feltet **Navn på funktionskonfiguration**.
+9. Vælg en **Afregningsperiode** og en **Finanskonteringsgruppe** til de nye demomomskoder, og vælg derefter **Bekræft**.
+10. Vælg **Gem**.
+
+> [!NOTE]
+> Demofunktionen **tax-calculation-feature-demo-data** er baseret på funktionsversionen **40.54.234**, der er udviklet til den juridiske demoenhed **DEMF**. Kontrollér, at Finance og RCS er opgraderet til version 10.0.26 eller senere.

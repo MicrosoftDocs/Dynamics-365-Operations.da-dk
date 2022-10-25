@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643722"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689988"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
@@ -62,7 +62,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | --- | --- | --- | --- |
 | Handlinger | Disponeringsgrupper med handlingsberegning aktiveret: *\#* | Denne funktion understøttes nu. | Understøttet |
 | Basiskalendere | Kalendere, der bruger basiskalender: *\#* | Denne funktion understøttes nu. | Understøttet | 
-| Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: *\#* | Denne funktion afventer. I øjeblikket ignoreres batchdispositionskoder, når planlægningsoptimering er aktiveret. | 2022 udgivelsesbølge 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Bruge batchdispositionskoder til at markere batches som disponible eller ikke til rådighed](../../inventory/batch-disposition-codes.md) | Understøttet |
 | Leveringsevne (LE) | Standardindstillinger for ordre med leveringsdatokontrollen angivet til LE: *\#* | I Supply Chain Management 10.0.28 og nyere gør en proces kaldet *CTP for Planlægningsoptimering* bekræftede afsendelses- og tilgangsdatoer tilgængelige, når den dynamiske plan er kørt. I ældre versioner af Supply Chain Management ignoreres den tidligere CTP-indstilling, når Planlægningsoptimering er aktiveret. | Understøttet |
 | Kopiér statisk til dynamisk plan | Kopi af statisk til dynamisk plan er aktiveret på varedisponeringsparametrene. | Planlægningsoptimering kopierer ikke den statiske plan til den dynamiske plan, uanset denne indstilling. Generelt er dette koncept ikke så relevant på grund af hastigheden og den fuldstændige genopretning, som planlægningsoptimering giver. Hvis der bruges to eller flere planer, skal varedisponeringen udløses for hver enkelt plan. | I/T |
 | Autorisation | Disponeringsgrupper med automatisk autorisationstidshorisont angivet: *\#* | I version 10.0.7 og nyere understøttes autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen *Automatisk autorisation med planlægningsoptimering* er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
@@ -104,7 +104,7 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Sikkerhedsmargener | Behovsplaner med sikkerhedsmargen: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) |  Understøttet |
 | Opfyldning af sikkerhedslager | Varedisponeringsposter med en anden "Opfyld minimum" end fra "Dags dato + fremskaffelsestid": *\#* | Planlægningsoptimering bruger altid *Dags dato + fremskaffelsestid*. Denne ændring er foretaget for at forberede en forenklet planlægningsopsætning i fremtiden og for at give et resultat, der kan handles ud fra. Hvis indkøbstiden ikke indgår i sikkerhedslageret, vil ordreforslag, der oprettes for den aktuelle begrænsede disponible lagerbeholdning, altid blive forsinket grundet leveringstiden. Denne funktionsmåde kan forårsage betydelige problemer og uønskede ordreforslag. Den bedste praksis er at ændre indstillingen, så *Dags dato + fremskaffelsestid* bruges. Opdater masterdata for at undgå advarsler. | I/T |
 | Salgstilbud | Behovsplaner med salgstilbud aktiveret: *\#* | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 eller senere |
-| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion understøttes nu. | Understøttet |
+| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion afventer. | 2022 udgivelsesbølge 2 |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,19 +2,19 @@
 title: Commerce-chat med Omnikanal til Customer Service-modulet
 description: Denne artikel beskriver Commerce-chat med Omnikanal til Customer Service-modulet i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473803"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690310"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Commerce-chat med Omnikanal til Customer Service-modulet
 
@@ -82,6 +82,9 @@ Følg disse trin, hvis du til tilføje chatmodulet til webstedets overskriftsfra
 1. Vælg det fragment for chat, du oprettede tidligere, i dialogboksen **Vælg moduler**, og vælg derefter **OK**.
 1. Vælg **Gem**, vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 
+> [!NOTE]
+> Du kan få en komplet liste over konfigurationsparametre i [Proaktive chatparametre til Commerce-chatmodulet](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Tilføj Commerce Headquarters som en fanen Program til Omnikanal til Customer Service
 
 Du kan tilføje Commerce Headquarters som fanen Program til Omnikanal til Customer Service. Live helpdesk-medarbejdere kan derefter bruge brugergrænsefladen for Omnikanal til Customer Service-helpdesk-medarbejderoplevelsen til let at få adgang til Dynamics 365 Commerce-modulet Kundeservice, der indeholder kontekstoplysninger om kunden sammen med oplysningerne om salgsordrer. Kundeservicemedarbejdere kan desuden oprette nye ordrer, starte returneringer og kontrollere oplysninger om ordrestatus.
@@ -115,6 +118,9 @@ Aktivere en ny programfane for kundemedarbejdere i Dynamics 365 Omnikanal til Cu
 1. Åbn den arbejdsstrøm, du har oprettet til dine medarbejdere, og vælg derefter **sessionsstandard** under **Avancerede indstillinger**.
 1. Under **faner til ansøgninger** skal du vælge **Tilføj eksisterende programfane** og derefter tilføje den nye programfane, du oprettede tidligere. Dette trin sikrer, at der vises en programfan, der indlæser Commerce Headquarters i et iFrame-modul, når en medarbejder modtager et indgående chat-opkald fra dit e-handelswebsted.
 
+> [!NOTE]
+> Du kan ikke redigere standardskabelonen for chatsessioner i arbejdsstrømmen. Derfor vil du måske oprette en ny skabelon eller duplikere den eksisterende skabelon for at opdatere den. Du kan finde flere oplysninger i [Tilknytte skabeloner med arbejdsstrøm](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Tilføj kontekstvariabler i Dynamics 365 Omnikanal til Customer Service
 
 Tilføj kontekstvariabler i Dynamics 365 Omnikanal til Customer Service ved at følge disse trin.
@@ -128,3 +134,11 @@ Tilføj kontekstvariabler i Dynamics 365 Omnikanal til Customer Service ved at f
 
 > [!NOTE]
 > Hvis du vil læse e-mail-adresserne og navnene på brugere, der er logget på fra en e-handelskanal, kan du tilføje **E-mail** og **Navn** som kontekstvariabler af **teksttypen** samt kontekstvariablen **AccountNumber**.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Oversigt over Commerce-chatfunktioner](commerce-chat-overview.md)
+
+[Commerce-chat med Power Virtual Agents-modul](chat-module-pva.md)
+
+[Proaktive chatparametre til Commerce-chatmodulet](chat-proactive-chat-parameters.md)

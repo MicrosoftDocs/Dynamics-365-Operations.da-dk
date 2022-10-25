@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334859"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682500"
 ---
 # <a name="engineering-change-management-overview"></a>Oversigt over teknisk ændringsstyring
 
@@ -73,6 +73,9 @@ Du skal derefter aktivere konfigurationsnøglerne ved at følge disse trin. Som 
 1. Databasen skal synkroniseres for at sikre, at konfigurationsnøglerne er opdateret korrekt til at afspejle dine ændringer. Udfør et af følgende trin, afhængigt af den type miljø du arbejder på:
     - **Til Niveau 1-miljøer (udvikling)**: Åbn dit projekt i Microsoft Visual Studio, og vælg derefter **Dynamics 365 \> Synkroniser database \> Synkroniser**.
     - **Til Niveau 2-miljøer (og højere)**: Databasen synkroniseres automatisk, når du har sat miljøet i og uden for vedligeholdelsestilstand, så du kan springe dette trin over.
+
+> [!NOTE]
+> Hvis du vil bruge teknisk ændringsstyring, skal både styklistenummerserien og formelnummerserien (hvis du bruger formler) indstilles til *Automatisk* på siden **Nummerserier**.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivere styringen af tekniske yderligere funktionsændringer for systemet
 

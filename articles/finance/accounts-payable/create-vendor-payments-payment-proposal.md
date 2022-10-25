@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845368"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682866"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Oprette kreditorbetalinger ved hjælp af et betalingsforslag
 
@@ -111,7 +111,7 @@ Dimensionskontrolelementet styrer gruppering af linjer, der er genereret af beta
 -   Feltet **Dimensionskontrol** aktiveres uden yderligere definition af dimensioner. Der oprettes et betalingsforslag uden hensyntagen til dimensioner. Den oprettede postering arver ingen dimensioner fra den anvendte post.
 -   Feltet **Dimensionskontrol** aktiveres, og yderligere dimensioner aktiveres. Nu kan du definere, hvordan dimensionerne skal kopieres til kladden. For eksempel: • Marker afkrydsningsfeltet **BusinessUnit** for at oprette et betalingsforslag pr. virksomhedsenhed for betalingsmåden • Marker afkrydsningsfeltet **CostCenter** for at oprette et betalingsforslag pr. bærer for betalingsmåden
 
-> [[!NOTE]
+>[!NOTE]
 > Hvis du vælger mere end én dimension i den tredje indstilling, oprettes der et betalingsforslag for dimensionskombinationen.
 
 #### <a name="bank-account-selection"></a>Valg af bankkonto

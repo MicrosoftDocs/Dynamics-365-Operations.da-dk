@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388442"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682582"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20340"></a>Version 2.0.34.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+- Forbedret stabilitet.
+- Forbedret ydeevne.
+- Forbedret skærmlayoutet, så der er mere plads til detaljekortet.
+- Har føjet en søgefunktion til siden **Opgaveliste**. Arbejderne kan nu scanne eller skrive for at søge i alle felter og titler på siden.
+- Listen over tilgængelige forbindelser er nu sorteret alfabetisk.
+- Har løst et problem, hvor der blev vist dubletter af kort for varer, der har flere lagerstatusser på samme lokation.
+- Løste et problem, hvor siden med den **store valgliste** ikke rullede for at vise det valgte element.
+- Rettede farverne på søgelinjen på siden med **stor valgliste**.
+- Der er løst et problem, hvor den standardknap, der er defineret i XML-koden, ikke bruges som knappen Send.
+- Der blev løst et problem, hvor knapperne i multiscanning- og hurtigvalideringsflowene ikke blev opdateret, når nye id'er blev scannet.
+- Der er tilføjet understøttelse af flere sprog.
 
 ## <a name="version-20320"></a>Version 2.0.32.0
 

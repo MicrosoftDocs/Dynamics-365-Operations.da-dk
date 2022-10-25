@@ -1,7 +1,7 @@
 ---
 title: Indbetalingskortrapport for Europa
 description: Denne artikel indeholder oplysninger om indbetalingskortrapporter for Europa.
-author: EvgenyPopovMBS
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 264604
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9225e946fc3dd61eb0347a8f50561180f94ae589
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 99e06f383c94db6d2a1585d33d9f183b0984f5a3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889800"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689588"
 ---
 # <a name="payment-slip-report-for-europe"></a>Indbetalingskortrapport for Europa
 
@@ -58,7 +58,7 @@ Når du har oprettet formatet for et indbetalingskort til vedhæftning til salgs
 4.  Luk formen for at gemme ændringerne.
 
 
-
+Du kan få flere oplysninger om opsætning og vedligeholdelse af betalings-id'er i [NO-00002 Kundebetaling baseret på betalings-id](tasks/no-00002-customer-payment-based-payment-id.md).
 
 
 

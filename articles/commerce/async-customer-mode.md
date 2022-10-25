@@ -2,19 +2,19 @@
 title: Oprettelsestilstand for asynkron kunde
 description: Denne artikel beskriver den asynkrone oprettelsestilstand for kunder i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473700"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690283"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Oprettelsestilstand for asynkron kunde
 
@@ -46,6 +46,7 @@ For at hjælpe organisationer med at bruge oprettelsestilstanden asynkron kunde 
 | Aktivér paritet mellem synkron og asynkron oprettelse af kunder. | 10.0.24 og nyere | <p>Funktionsskift: **Aktivér udvidet asynkron kundeoprettelse**</p><p>Funktionsoplysninger: Mulighed for at hente yderligere oplysninger, f.eks. titel, tilknytninger fra standardkunden og sekundære kontaktoplysninger (telefonnummer og mailadresse), mens du opretter kunder asynkront</p> |
 | Brugervenlige fejlmeddelelser | 10.0.28 og nyere | Disse forbedringer er med til at højne brugervenlige fejlmeddelelser, hvis en bruger ikke kan redigere oplysningerne med det samme under synkroniseringen. Du aktiverer disse forbedringer ved at bruge **Tillad, at visse brugergrænsefladeelementer ikke kan ændres af en asynkron kunde** ved **Webstedsindstillinger \> Udvidelser** i Commerce-webstedsgenerator. |
 | Mulighed for at redigere kundeoplysninger asynkront | 10.0.29 og nyere | <p>Funktionsskift: **Aktivér redigering af kunder i asynkron tilstand**</p><p>Funktionsdetaljer: Mulighed for at redigere kundedata asynkront</p><p>Du kan finde svar på almindelige spørgsmål om problemer, der vedrører redigering af kundeoplysninger asynkront, under [Ofte stillede spørgsmål om asynkron oprettelsestilstand for kunde](async-customer-mode-faq.md).</p> |
+| Mulighed for at overvåge synkronisering af kundestyringsoperationer | 10.0.31 og nyere | Denne forbedring giver brugerne mulighed for at overvåge synkroniseringen af operationer i kundestyring i Commerce headquarters. Det giver også brugerne mulighed for at foretage ændringer, hvis det er nødvendigt, og synkronisere dataene. |
 
 ### <a name="feature-switch-hierarchy"></a>Hierarki for funktionsskift
 

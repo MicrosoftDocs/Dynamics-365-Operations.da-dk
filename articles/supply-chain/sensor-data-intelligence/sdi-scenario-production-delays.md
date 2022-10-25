@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428310"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690015"
 ---
 # <a name="the-production-delays-scenario"></a>Scenarie til produktionsforsinkelser
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Scenariet *Produktionsforsinkelser* genererer en besked, hvis produktions gennemløb falder under en specifik tærskelværdi. I dette scenarie sendes et *part-out*-signal til Microsoft Azure IoT Hub for hver fremstillet vare. I Dynamics 365 Supply Chain Management beregnes ordreforsinkelsen på basis af den mængde tid, som produktionsordren er planlagt til at køre, det antal varer, der skal produceres, den tid, jobbet har kørt, og antallet af *part-out*-signaler, der er blevet modtaget. Der genereres en forsinkelsesbesked, hvis antallet af *Part-Out*-signaler for jobbet falder under tærskelværdien.
 

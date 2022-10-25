@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 477b27bf77d2a3ef91a5c2d39f2dfb06d8ad4e59
-ms.sourcegitcommit: 562ea02e1f7409f18ee1cc4750a838bff4381e91
+ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429117"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689180"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10030-november-2022"></a>Forhåndsversion af Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.30. november 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management forhåndsversion 10.0.30. Denne version har et build-nummer på 10.0.1362 og er tilgængelig i følgende plan:
+Denne artikel viser funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 Supply Chain Management version 10.0.30. Denne version har et build-nummer på 10.0.1362 og er tilgængelig i følgende plan:
 
 - **Udgivelse af forhåndsversion:** September 2022
 - **Generel tilgængelighed af version (selv-opdatering):** oktober 2022
@@ -35,7 +34,7 @@ Følgende tabel anfører de funktioner, der er inkluderet i denne version. Vi op
 | Funktionsområde | Funktion | Flere oplysninger | Aktiveret af   |
 |---|---|---|---|
 | Fremstillingsvirksomhed | [Overvåge udstyr med Sensordataintelligens](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensordataintelligens-startside](../sensor-data-intelligence/sdi-home-page.md) | Funktionsstyring:<br>*(Forhåndsversion) Sensordataintelligens* |
-| Warehouse management | Omveje i flere niveauer til Warehouse Management-mobilappen <!-- KFM: Add link when RP updates --> | [Konfigurere omveje til trin i menupunkter på mobilenheder](../warehousing/warehouse-app-detours.md) | Funktionsstyring:<br>*Omveje i flere niveauer til Warehouse Management-mobilappen* |
+| Warehouse management | [Omveje i flere niveauer til Warehouse Management-mobilappen](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Konfigurere omveje til trin i menupunkter på mobilenheder](../warehousing/warehouse-app-detours.md) | Funktionsstyring:<br>*Omveje i flere niveauer til Warehouse Management-mobilappen* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsforbedringer, der er inkluderet i denne version
 
@@ -52,7 +51,7 @@ Hvis du vil slå en af disse funktioner til eller fra, skal du gøre det i [funk
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformsopdateringer til Finans- og driftsapps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.30 af Finans- og driftsapps (november 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 indeholder platformopdateringer. Du kan få mere vide i [Platformsopdateringer til version 10.0.30 af Finans- og driftsapps (november 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### <a name="bug-fixes"></a>Fejlrettelser
 

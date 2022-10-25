@@ -2,7 +2,7 @@
 title: Arbejde med lokationsvejledninger
 description: Denne artikel beskriver, hvordan du kan arbejde med lokationsvejledninger. Lokationsvejledninger er brugerdefinerede regler, der hjælper med at identificere pluk og læg-lokationer for lagerbevægelser.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903689"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689660"
 ---
 # <a name="work-with-location-directives"></a>Arbejde med lokationsvejledninger
 
@@ -47,6 +47,20 @@ Før du kan oprette en lokationsvejledning, skal du følge disse trin for at sik
 1. Opret lokationer, lokationstyper, lokationsprofiler og lokationsformater. Yderligere oplysninger finder du i afsnittet [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Opret steder, zoner og zonegrupper. Yderligere oplysninger finder du i [Konfigurere lagersted](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokationer i et WMS-aktiveret lagersted](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Slå funktionen Lokationsvejlednings omfang til eller fra
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Funktionen *Lokationsvejlednings omfang* giver dig flere muligheder, når du designer lokationsvejledninger, og hjælper dig med at reducere de overflødige konfigurationer. Den tilføjer en indstilling for **Omfang**, som erstatter den tidligere indstilling **Flere SKU'er**. Mens indstillingen **Flere SKU'er** kun kan angives til *Ja* eller *Nej*, har indstillingen **Omfang** ikke kun disse to indstillinger (via værdierne for *Enkelt vare* og *Flere varer*), men også to mere (via værdierne for *Enkelt vare eller ordre* og *Alle*). Du kan finde flere oplysninger om disse indstillinger i [oversigtspanelet Lokationsvejledninger](#location-directives-tab).
+
+Når indstillingen **Omfang** er aktiveret, tilsidesætter den indstillingen **Flere SKU'er** og er 100 procent kompatibel med eksisterende konfigurationer.
+
+Før du kan bruge denne funktion, skal du aktivere den i dit system. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til og fra. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+
+- **Modul:** *Warehouse Management*
+- **Funktionsnavn:** *Lokationsvejlednings omfang*
+
 ## <a name="work-order-types-for-location-directives"></a>Arbejdsordretyper for lokationsvejledninger
 
 Mange af de felter, der kan angives for lokationsvejledninger, er fælles for alle typer af arbejdsordrer. Andre felter er dog specifikke for bestemte arbejdsordretyper.
@@ -68,7 +82,7 @@ Følgende tabel indeholder de felter, der er fælles for alle arbejdsordretyper.
 | Lokationsvejledninger | Lokation |
 | Lokationsvejledninger | Lagersted |
 | Lokationsvejledninger | Vejledningskode |
-| Lokationsvejledninger | Flere SKU'er |
+| Lokationsvejledninger | Omfang *eller* Flere SKU'er |
 | Linjer | Løbenummer |
 | Linjer | Fra antal |
 | Linjer | Antal til |
@@ -117,7 +131,9 @@ Handlingsruden på siden **Lokationsvejledninger** indeholder knapper, du kan br
 
 - **Flyt op** – Flyt den valgte lokationsvejledning op i rækkefølgen. Du kan f.eks. flytte den fra sekvensnummer 4 til sekvensnummer 3.
 - **Flyt ned** – Flyt den valgte lokationsvejledning ned i rækkefølgen. Du kan f.eks. flytte den fra sekvensnummer 4 til sekvensnummer 5.
+- **Kopiér** – Åbn en dialogboks, hvor du kan oprette en nøjagtig kopi af den aktuelle lokationsvejledning.
 - **Rediger forespørgsel** – Åbn en dialogboks, hvor du kan definere de betingelser, som den valgte lokationsvejledning skal behandles under. Det kan f.eks. være, at du ønsker, at den kun gælder for et bestemt lagersted.
+- **Accepttest** – Åbn en side, hvor du kan oprette automatiske tests for at bestemme, hvordan lokationsvejledninger skal fungere under forskellige startbetingelser. På den måde kan du hurtigt validere dine retningslinjer, efterhånden som du opretter og vedligeholder dem. Du kan finde flere oplysninger i [Teste lokationsvejledninger med accepttest](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Overskrift til lokalitetsvejledninger
 
@@ -126,7 +142,7 @@ Overskriften til lokationsvejledningen indeholder følgende felter for sekvensnu
 - **Sekvensnummer** – Dette felt angiver den rækkefølge, som systemet prøver at anvende hver lokationsvejledning i for den valgte arbejdsordretype. Der anvendes lave numre først. Du kan ændre rækkefølgen ved hjælp af knapperne **Flyt op** og **Flyt ned** i handlingsruden.
 - **Navn** – Angiv et sigende navn for lokationsvejledningen. Dette navn skal hjælpe med at identificere det generelle formål med lokationsvejledningen. Du kan f.eks. angive *Salgsordrepluk på lagersted 24*.
 
-## <a name="location-directives-fasttab"></a>Oversigtspanelet Lokationsvejledninger
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Oversigtspanelet Lokationsvejledninger
 
 Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbejdsordretype, der er valgt i feltet **Arbejdsordretype** i listeruden.
 
@@ -145,7 +161,29 @@ Felterne i oversigtspanelet **Lokationsvejledninger** er specifikke for den arbe
     > [!TIP]
     > Hvis der er angivet en vejledningskode, søger systemet ikke i lokationsvejledninger efter sekvensnummer, når der skal genereres arbejde. Det vil i stedet søge efter vejledningskode. På denne måde kan du være mere præcis om den lokalitetsvejledning, der bruges til et bestemt trin i en arbejdsskabelon , f.eks. trinnet for midlertidig lagring af materialer.
 
-- **Flere SKU'er** – Angiv denne indstilling til *Ja* for at bruge flere lagerenheder (SKU'er) på en lokation. F.eks. skal flere SKU'er aktiveres for placeringen af lagerporten. Hvis du aktiverer flere SKU'er, vil læg på lager-lokationen blive angivet i arbejde som forventet. Men læg på lager-lokationen kan dog kun håndtere en læg-flere-varer-på-lager (hvis arbejde indeholder forskellige SKU'er, der skal plukkes og placeres). Den kan ikke håndtere en enkelt SKU-læg-på-lager. Hvis du angiver denne indstilling til *Nej*, angives lokationen kun, hvis dit læg-på-lager kun har én slags SKU.
+- **Omfang** – Brug denne indstilling til at angive de scenarier, som lokationsvejledningen skal anvendes på. Denne indstilling erstatter **Flere SKU'er** og er kun tilgængelige, hvis funktionen *Lokationsvejlednings omfang* er aktiveret i systemet. (Du kan finde flere oplysninger i [Aktivere eller deaktivere funktionen Lokationsvejlednings omfang](#scopes-feature).)
+
+    | Indstilling af omfang | Enkelt ordre med én vare | Flere ordrer med samme vare | Enkelt ordre med flere varer | Flere ordrer med flere varer |
+    |---|---|---|---|---|
+    | Enkelt vare | Ja | Ja | Nej | Nej |
+    | Flere varer | Nej | Nej | Ja | Ja |
+    | Enkelt vare eller ordre | Ja | Ja | Ja | Nej |
+    | Alt | Ja | Ja | Ja | Ja |
+
+    I følgende tabel beskrives, hvornår omfang er tilgængelige, og om de tillader funktionen **Rediger forespørgsel**.
+
+    | Omfang | Understøttet arbejdstype | Understøttede arbejdsordretyper | Tillad for Rediger forespørgsel |
+    |---|---|---|---|
+    | Enkelt vare | Alt | Alt | Ja |
+    | Flere varer | Alt | Alt | Nej |
+    | Enkelt vare eller ordre | Læg på lager | Samprodukt og biprodukt, der er lagt på lager, færdigvarer, der er lagt på lager, kanban, der er lagt på lager, indkøbsordrer, kvalitetsordrer, genopfyldning, returordrer, salgsordrer, flytteafgang og overførselskvittering | Ja |
+    | Alt | Læg på lager | Alt | Nej |
+
+    > [!NOTE]
+    > - Hvis du vil lægge både flere varer og enkelte varer på lager, skal du sikre dig, at der findes lokationsvejledninger, der dækker begge scenarier. Du kan f.eks. oprette en eller flere lokationsvejledninger for *Enkelt vare eller ordre* for at dække scenarier, der kræver finjustering (f.eks. via redigering af forespørgslen), og derefter et eller flere *Alle*-lokationsvejledninger for at dække de resterende scenarier.
+    > - Selvom omfanget *Enkelt vare* og *Flere varer* kan lægges på lager, medfører denne tilgang typisk overflødige konfigurationer. Overvej i stedet at bruge omfanget *Enkelt vare eller ordre* og *Alle*, da denne metode vil give en renere opsætning.
+
+- **Flere SKU'er** – Brug denne indstilling til at angive det scenarie, som lokationsvejledningen skal anvendes på. Denne indstilling erstattes af indstillingen **Omfang**, hvis funktionen *Lokationsvejlednings omfang* er aktiveret i systemet. (Du kan finde flere oplysninger i [Slå funktionen Lokationsvejlednings omfang til eller fra](#scopes-feature)). Angiv denne indstilling til *Ja*, hvis du vil aktivere, at der kan bruges flere lagerenheder (SKU'er) på en lokation. F.eks. skal flere SKU'er aktiveres for placeringen af lagerporten. Hvis du aktiverer flere SKU'er, vil læg på lager-lokationen blive angivet i arbejde som forventet. Men læg på lager-lokationen kan dog kun håndtere en læg-flere-varer-på-lager (hvis arbejde indeholder forskellige SKU'er, der skal plukkes og placeres). Den kan ikke håndtere en enkelt SKU-læg-på-lager. Hvis du angiver denne indstilling til *Nej*, angives lokationen kun, hvis dit læg-på-lager kun har én slags SKU.
 
     > [!IMPORTANT]
     > Hvis du vil kunne udføre SKU'er med både læg-flere-varer-på-lager læg-enkelt-vare-på-lager, skal du angive to linjer med samme struktur og opsætning, men du skal angive indstillingen **Flere SKU'er** til *Ja* for én linje og *Nej* for den anden. I forbindelse med læg på lager skal du derfor have to lokationsvejledninger, der er identiske, selvom du ikke skal skelne mellem enkelte og flere SKU'er på en arbejds-id. Hvis du ofte ikke konfigurerer begge disse lokationsvejledninger, kommer der uventede forretningsproceslokationer fra den anvendte lokationsvejledning. Du skal bruge en lignende opsætning til lokationsvejledninger, der har **Arbejdstypen** *Pluk*, hvis du skal behandle ordrer, der omfatter flere SKU'er.
@@ -255,6 +293,5 @@ Når du opretter lokationsvejledninger, kan du knytte hver vejledningskode til e
 
 - Video: [Detaljeret konfiguration af lokationsstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjælp-artikel: [Styre lagerarbejde ved at bruge arbejdsskabeloner og lokationsvejledninger](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

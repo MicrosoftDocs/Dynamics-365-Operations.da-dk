@@ -11,16 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c5eebe9ef6258b43daa7c7007ee28b0278fe5b09
-ms.sourcegitcommit: 1a7729a6ce4f3fcf68bdc4cfdad746a5553da3c5
+ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573131"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689687"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Tidsplan og planlægning af kapacitetsbegrænsning
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 Kapacitetsbegrænsning er en metode, der gør det nemmere at forstå, hvor meget arbejde der kan produceres i en bestemt periode, når der tages højde for begrænsninger på forskellige ressourcer. Formålet med planlægning af kapacitetsbegrænsning er at sikre, at arbejdet fortsætter i et jævnt og effektivt tempo i hele anlægget.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853490"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682878"
 ---
 # <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring 
 
@@ -53,7 +53,7 @@ I oversigtspanelet **Filtrering af data** skal du definere datagrundlaget for ra
 |-------------------------------------------------------------------|-------------|
 | Finanspost for omkostningsregnskab                                            | Den **Finanspost for omkostningsregnskab**, som rapporten er baseret på. Den værdi, der er afledt af feltet **Omkostningskontrolenhed**. |
 | Omkostningskontrolenhed                                                 | Den værdi, du vælger, bestemmer den finanspostering for omkostningsregnskabet og de omkostningsobjekter, som rapporten skal baseres på. |
-| Statistisk dimensionshierarki, Dimensionshierarki for omkostningselement | Et konfigurationspost for **Omkostningsstyring**-arbejdsområdet kan rapportere enten ikke-pengemæssige værdier eller pengeværdier, men ikke i det samme layout. Vælg en værdi i feltet **Dimensionshierarki for omkostningselement** for at rapportere pengemæssige værdier. Vælg en værdi i feltet **Statistisk dimensionshierarki** for at rapportere ikke-pengemæssige værdier. Den dimensionshierarkipost, som du vælger, bestemmer strukturen i rapporterings- og aggregeringsniveauerne.<blockquote>[!NOTE]<br>For at få vist ikke-pengemæssige og pengemæssige værdier ved siden af hinanden kan du eksportere data til Microsoft Excel til Microsoft Power BI-indholdspakken.</blockquote> |
+| Statistisk dimensionshierarki, Dimensionshierarki for omkostningselement | Et konfigurationspost for **Omkostningsstyring**-arbejdsområdet kan rapportere enten ikke-pengemæssige værdier eller pengeværdier, men ikke i det samme layout. Vælg en værdi i feltet **Dimensionshierarki for omkostningselement** for at rapportere pengemæssige værdier. Vælg en værdi i feltet **Statistisk dimensionshierarki** for at rapportere ikke-pengemæssige værdier. Den dimensionshierarkipost, som du vælger, bestemmer strukturen i rapporterings- og aggregeringsniveauerne.<blockquote>**BEMÆRK:**<br>For at få vist ikke-pengemæssige og pengemæssige værdier ved siden af hinanden kan du eksportere data til Microsoft Excel til Microsoft Power BI-indholdspakken.</blockquote> |
 | Dimensionshierarki for omkostningsobjekt      | Vælg dimensionshierarkiet for den omkostningsobjektdimension, der passer til formålet med den rapportering, som du definerer. |
 | Oprindelig budgetversion                                           | Vælg det budgetversions-id, der fungerer som det oprindelige budget i forbindelse med denne rapport. |
 | Revideret budgetversion                                            | Vælg det budgetversions-id, der fungerer som det reviderede budget i forbindelse med denne rapport. |
@@ -64,7 +64,7 @@ Beregningen af faste omkostninger udfører flere beregningstrin på kildedataene
 
 | Felt                  | Beskrivelse |
 |------------------------|-------------|
-| Regnskabskalenderperiode | Vælg den regnskabskalenderperiode, du vil tildele et id for beregning af faste omkostninger til.<blockquote>[!NOTE]<br>De regnskabsperioder, der er angivet i feltet, stammer fra den regnskabskalender, der er knyttet til finansposteringer for omkostningsregnskab.</blockquote> |
+| Regnskabskalenderperiode | Vælg den regnskabskalenderperiode, du vil tildele et id for beregning af faste omkostninger til.<blockquote>**BEMÆRK:**<br>De regnskabsperioder, der er angivet i feltet, stammer fra den regnskabskalender, der er knyttet til finansposteringer for omkostningsregnskab.</blockquote> |
 | Aktuel version         | Vælg den relevante id for beregning af faste omkostninger. |
 | Budgetversion         | Vælg den relevante id for beregning af faste omkostninger. |
 | Revideret budgetversion | Vælg den relevante id for beregning af faste omkostninger. |
@@ -77,10 +77,10 @@ Værdierne i de markerede kolonner skal ganges med de valgte værdier i oversigt
 
 | Felt                | Beskrivelse |
 |----------------------|-------------|
-| Aktuel periode       | Saldoen for den aktuelle regnskabsperiode vises.<blockquote>[!NOTE]<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode.</blockquote> |
-| Forrige periode      | Saldoen for den forrige regnskabsperiode vises. Følgende formel bruges:<br>Aktuel regnskabsperiode – 1<blockquote>[!NOTE]<br>Som standard afledes den forrige periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode som den aktuelle periode. **Forrige periode** genberegnes derefter i overensstemmelse hermed.</blockquote> |
-| År til dato         | År til dato vises. Følgende formel bruges:<br>YearToDate (aktuel regnskabsperiode)<blockquote>[!NOTE]<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode, og **År til dato**-værdien opdateres tilsvarende.</blockquote> |
-| Gennemsnit år til dato | Gennemsnit for år til dato vises. Følgende formel bruges:<br>(YearToDate [aktuel regnskabsperiode]) ÷ (Antal [aktuel regnskabsperiode])<p><strong>Eksempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Fuldtidsmedarbejdere</li><li>**Dags dato:** 21-3-2017</li><li>**Periode:** Regnskabsperiode 1, regnskabsperiode 2, regnskabsperiode 3</li><li>**Størrelsesorden:** 10, 10, 12</li></ul>I dette tilfælde er **Gennemsnit år til dato** = (10 + 10 + 12) ÷ 3 = 10,67<p>Værdien i **Gennemsnit år til dato** kan beregnes for omkostningselements dimensionsmedlemmer og statistiske dimensionsmedlemmer.</p><blockquote>[!NOTE]<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode, og **År til dato** og **Gennemsnit år til dato**-værdierne opdateres tilsvarende.</blockquote> |
+| Aktuel periode       | Saldoen for den aktuelle regnskabsperiode vises.<blockquote>**BEMÆRK:**<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode.</blockquote> |
+| Forrige periode      | Saldoen for den forrige regnskabsperiode vises. Følgende formel bruges:<br>Aktuel regnskabsperiode – 1<blockquote>**BEMÆRK:**<br>Som standard afledes den forrige periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode som den aktuelle periode. **Forrige periode** genberegnes derefter i overensstemmelse hermed.</blockquote> |
+| År til dato         | År til dato vises. Følgende formel bruges:<br>YearToDate (aktuel regnskabsperiode)<blockquote>**BEMÆRK:**<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode, og **År til dato**-værdien opdateres tilsvarende.</blockquote> |
+| Gennemsnit år til dato | Gennemsnit for år til dato vises. Følgende formel bruges:<br>(YearToDate [aktuel regnskabsperiode]) ÷ (Antal [aktuel regnskabsperiode])<p><strong>Eksempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Fuldtidsmedarbejdere</li><li>**Dags dato:** 21-3-2017</li><li>**Periode:** Regnskabsperiode 1, regnskabsperiode 2, regnskabsperiode 3</li><li>**Størrelsesorden:** 10, 10, 12</li></ul>I dette tilfælde er **Gennemsnit år til dato** = (10 + 10 + 12) ÷ 3 = 10,67<p>Værdien i **Gennemsnit år til dato** kan beregnes for omkostningselements dimensionsmedlemmer og statistiske dimensionsmedlemmer.</p><blockquote>**BEMÆRK:**<br>Som standard afhænger den aktuelle periode af sessionsdatoen. I arbejdsområdet **Omkostningsstyring** kan du vælge en bestemt regnskabsperiode. Den valgte værdi repræsenterer derefter den aktuelle periode, og **År til dato** og **Gennemsnit år til dato**-værdierne opdateres tilsvarende.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolonner, der skal vises for omkostninger
 
@@ -88,11 +88,11 @@ I oversigtspanelet **Kolonner, der skal vises for omkostninger** angiver boghold
 
 | Felt                 | Beskrivelse |
 |-----------------------|-------------|
-| Fast omkostning            | Denne kolonnetype viser de faste omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>[!NOTE]<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
-| Variabel omkostning         | Denne kolonnetype viser de variable omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>[!NOTE]<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
-| Fast + variabel omkostning | Denne kolonnetype viser de faste omkostninger og variable omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>[!NOTE]<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
-| Totalomkostning            | Denne kolonne viser de samlede omkostninger (ikke-klassificerede omkostninger, faste omkostninger og variable omkostninger).<blockquote>[!NOTE]<br>Kolonnetypen viser den til enhver tid gældende saldo.</blockquote> |
-| Ikke-klassificeret omkostning     | Denne kolonnetype viser de ikke-klassificerede omkostninger.<blockquote>[!NOTE]<br>Denne kolonne kan bruges til at validere, om alle omkostninger er blevet klassificeret korrekt ved beregningen af faste omkostninger, eller om reglerne for omkostningsfunktionalitet skal justeres.</blockquote> |
+| Fast omkostning            | Denne kolonnetype viser de faste omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>**BEMÆRK:**<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
+| Variabel omkostning         | Denne kolonnetype viser de variable omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>**BEMÆRK:**<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
+| Fast + variabel omkostning | Denne kolonnetype viser de faste omkostninger og variable omkostninger baseret på det valgte id for beregning af faste omkostninger.<blockquote>**BEMÆRK:**<br>Denne kolonnetype viser kun en saldo, når der er valgt et id for beregning af faste omkostninger for regnskabsperioden.</blockquote> |
+| Totalomkostning            | Denne kolonne viser de samlede omkostninger (ikke-klassificerede omkostninger, faste omkostninger og variable omkostninger).<blockquote>**BEMÆRK:**<br>Kolonnetypen viser den til enhver tid gældende saldo.</blockquote> |
+| Ikke-klassificeret omkostning     | Denne kolonnetype viser de ikke-klassificerede omkostninger.<blockquote>**BEMÆRK:**<br>Denne kolonne kan bruges til at validere, om alle omkostninger er blevet klassificeret korrekt ved beregningen af faste omkostninger, eller om reglerne for omkostningsfunktionalitet skal justeres.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Kolonner, der skal vises for budgetterede omkostninger
 
@@ -103,12 +103,12 @@ I oversigtspanelet **Kolonner, der skal vises for budgetterede omkostninger** an
 
 | Felt                     | Beskrivelse |
 |---------------------------|-------------|
-| Budget                    | Budgetsaldi vises pr. de markerede kolonner.<blockquote>[!NOTE]<br>Saldiene baseres på de budgetversioner, der er valgt i oversigtspanelet **Filtrering af data**.</blockquote> |
+| Budget                    | Budgetsaldi vises pr. de markerede kolonner.<blockquote>**BEMÆRK:**<br>Saldiene baseres på de budgetversioner, der er valgt i oversigtspanelet **Filtrering af data**.</blockquote> |
 | Budgetafvigelse           | Beregn og vis forskellen mellem de budgetterede og de faktiske værdier. Følgende formel bruges:<br>Budgetsaldo – faktisk saldo |
 | Budgetafvigelse i %      | Beregn og vis forskellen mellem de budgetterede og de faktiske værdier i procent. Følgende formel bruges:<br>(Budgetsaldo – faktisk saldo) ÷ budgetsaldo |
-| Grænse for afvigelsesperiode | Angiv en grænse for afvigelsen i pengebeløb for den aktuelle periode. Hvis grænsen overskrides, markeres linjen med rødt i arbejdsområdet **Omkostningsstyring**.<blockquote>[!NOTE]<br>Dette felt gælder kun for de omkostningselementer, der repræsenterer udgifter.</blockquote> |
+| Grænse for afvigelsesperiode | Angiv en grænse for afvigelsen i pengebeløb for den aktuelle periode. Hvis grænsen overskrides, markeres linjen med rødt i arbejdsområdet **Omkostningsstyring**.<blockquote>**BEMÆRK:**<br>Dette felt gælder kun for de omkostningselementer, der repræsenterer udgifter.</blockquote> |
 | Grænse for afvigelsesår   | Angiv en grænse for afvigelsen i pengebeløb for det aktuelle år. Hvis grænsen overskrides, markeres linjen med rødt i arbejdsområdet **Omkostningsstyring**. |
-| Grænse for afvigelse i %      | Angiv en grænse for afvigelsen i procent. Hvis grænsen overskrides, markeres linjen med rødt i arbejdsområdet **Omkostningsstyring**.<blockquote>[!NOTE]<br>Den samme grænseprocent gælder for den aktuelle periode og det aktuelle år.</blockquote> |
+| Grænse for afvigelse i %      | Angiv en grænse for afvigelsen i procent. Hvis grænsen overskrides, markeres linjen med rødt i arbejdsområdet **Omkostningsstyring**.<blockquote>**BEMÆRK:**<br>Den samme grænseprocent gælder for den aktuelle periode og det aktuelle år.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Arbejdsområde for omkostningsstyring
 

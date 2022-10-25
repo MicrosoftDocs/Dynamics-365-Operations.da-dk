@@ -4,23 +4,25 @@ description: Denne artikel indeholder en beskrivelse af, hvordan du konfigurerer
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428057"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689304"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveje til trin i menupunkter på mobilenheder
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > De funktioner, der er beskrevet i denne artikel, gælder kun for den nye Warehouse Management-mobilapp. De påvirker ikke den gamle lagerstedsapp, der nu er udgået og frarådes.
@@ -38,6 +40,7 @@ Før du kan konfigurere omveje for trin i menupunkterne på mobilenheden, skal d
 1. Aktiver følgende funktioner, der giver de funktioner, der er beskrevet i denne artikel:
     - *Omveje i Warehouse Management-app*<br>(Fra og med Supply Chain Management version 10.0.29 er denne funktion som standard aktiveret.)
     - *Omveje i flere niveauer til Warehouse Management-mobilappen*
+    - *Send automatisk omvejstrin til Warehouse Management-mobilappen*
 1. Hvis funktionen *Omveje i Warehouse Management-app* og/eller *Omveje i flere niveauer til Warehouse Management-mobilappen* ikke allerede er aktiveret, skal du opdatere feltnavnene i Warehouse Management-mobilappen ved at gå til **Warehouse management \> Opsætning \> Mobilenhed \> Feltnavne for lagersteds-app** og vælge **Opret standardopsætning**. Du kan finde flere oplysninger i [Konfigurere felter til mobilappen Lokationsstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gentag det forrige trin for hver juridisk enhed (firma), hvor du bruger mobilappen Warehouse Management.
 
@@ -49,7 +52,7 @@ Benyt følgende fremgangsmåde, hvis du vil konfigurere en omvej fra en menuspec
 1. Find kombinationen af værdier for **Trin-id** og **Menupunktnavn**, som du vil redigere, og vælg derefter værdien i kolonnen **Trin-id**.
 1. På den side, der vises, kan du angive det menupunkt, der skal fungere som omvej, i oversigtspanelet **Tilgængelige omveje (menupunkter)**. Du kan også vælge, hvilke feltværdier fra hovedopgaven, der automatisk skal kopieres til og fra omvejen. Du kan finde eksempler, der viser, hvordan du bruger disse indstillinger, i scenarierne senere i denne artikel.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Eksempelscenarie 1: Salgspluk, hvor en forespørgsel om en lokation fungerer som en omvej
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Eksempelscenarie 1: Salgspluk, hvor en forespørgsel om en lokation fungerer som en omvej
 
 Dette scenarie viser, hvordan du kan konfigurere en forespørgsel om en lokation som en omvej i et arbejderstyret opgaveflow for salgspluk. Denne omvej giver arbejdere mulighed for at søge efter alle id'er på den lokation, de plukker fra, og plukke det id, de vil bruge til at udføre plukket. Denne type omvej kan være nyttig, hvis stregkoden er beskadiget og derfor ikke kan læses af scannerenheden. Alternativt kan det være nyttigt, hvis en arbejder skal finde ud af, hvad lagerbeholdningen rent faktisk er i systemet. Bemærk, at dette scenario kun fungerer, hvis du plukker fra id-styrede lokationer.
 
@@ -59,7 +62,7 @@ Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i det
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Oprette en menuspecifik tilsidesættelse og konfigurere omvejen til scenarie 1
 
-I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i id-trinnet.
+I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i nummerpladetrinnet.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Mobilenhed \> Trin for mobilenhed**.
 1. Find det trin-id, der hedder *LicensePlateId*, og vælg det.
@@ -74,11 +77,13 @@ I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i id-tr
 
     - **Kopiér fra salgspluk:** *Lokation*
     - **Indsæt i lokationsforespørgsel:** *Lokation*
+    - **Send automatisk:** *Valgt* (siden opdateres med den indsatte værdi *Lokation*)
 
 1. Da omvejen i dette scenario er konfigureret i id-trinnet, vil det være nyttigt, hvis arbejderne kan føre id'et fra forespørgslen tilbage til hovedflowet. Derfor skal du vælge **Tilføj** på værktøjslinjen i sektionen **Før tilbage fra lokationsforespørgsel** for at føje en række til gitteret. Angiv følgende værdier for den nye række:
 
     - **Kopiér fra lokationsforespørgsel:** *Id*
     - **Indsæt i salgspluk:** *Id*
+    - **Send automatisk:** *Ryddet* (der vil ikke forekomme automatisk opdatering, når der returneres fra omvejen med en værdi af *Nummerplade*)
 
 1. Vælg **OK**.
 
@@ -86,7 +91,7 @@ Omvejen er nu fuldt konfigureret. Der vises nu en knap, du kan bruge til at star
 
 ### <a name="complete-a-sales-pick-on-a-mobile-device-and-use-the-detour"></a>Fuldføre et salgspluk på en mobilenhed og bruge omvejen
 
-I denne procedure skal du fuldføre et salgspluk ved hjælp af mobilappen Warehouse Management. Du skal bruge den omvej, du netop har konfigureret, til at finde det id, du vil bruge til at udføre pluktrinnet.
+I denne procedure skal du fuldføre et salgspluk ved hjælp af mobilappen Warehouse Management. Du skal bruge den omvej, du netop har konfigureret, til at finde den nummerplade, du vil bruge til at udføre pluktrinnet.
 
 1. I Microsoft Dynamics 365 Supply Chain Management kan du oprette en salgsordre, der skal bruge et pluktrin til at plukke fra en placering, som id'et har sporet. Frigiv derefter salgsordren til lagerstedet. Notér det arbejds-id, der genereres.
 1. Åbn mobilappen Warehouse Management, og log på lagersted 24. (I standarddemodataene skal du logge på ved at bruge *24* som bruger-id og *1* som adgangskode.)
@@ -112,7 +117,7 @@ Hvis du vil bruge de angivne eksempelposter og -værdier, når du arbejder i det
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Oprette en menuspecifik tilsidesættelse og konfigurere omvejen til scenarie 2
 
-I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i id-trinnet.
+I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i nummerpladetrinnet.
 
 1. Gå til **Lagerstedsstyring \> Opsætning \> Mobilenhed \> Trin for mobilenhed**.
 1. Find og vælg det trin-id, der hedder *LocationInquiryList*.
@@ -131,6 +136,7 @@ I denne procedure konfigurerer du en omvej til menupunktet **Salgspluk** i id-tr
 
     - **Kopiér fra lokationsforespørgsel:** *Lokation*
     - **Indsæt i Bevægelse:** *Loc/LP*
+    - **Send automatisk:** *Ryddet* (der vil ikke forekomme nogen automatisk opdatering)
 
     I denne omvej forventer du ikke, at oplysninger kopieres tilbage, fordi hovedflowet var en forespørgsel, hvor der ikke kræves yderligere trin.
 
@@ -153,3 +159,5 @@ I denne procedure skal du udføre en lokationsforespørgsel ved hjælp af mobila
 
 > [!NOTE]
 > Med *Omveje i flere niveauer til Warehouse Management-mobilappen*-funktionen kan du definere omveje på flere niveauer (omveje i omveje), der giver arbejdere mulighed for at springe fra en eksisterende omvej to og derefter tilbage igen. Funktionen understøtter to niveauer af omveje ud af boksen, og hvis det er nødvendigt, kan du tilpasse systemet, så det understøtter tre eller flere niveauer af omveje ved at oprette kodeudvidelser på `WHSWorkUserSessionState`-tabellen.
+>
+> Du kan bruge funktionen *Send automatisk omvejstrin til Warehouse Management-mobilappen* til at gøre det hurtigere og nemmere for arbejdere at udføre omvejsflow i mobilappen Warehouse Management. Det gør det muligt at springe nogle flowtrin over, da appen udfylder omvejsdata i back-end og derefter automatisk går til næste trin ved automatisk at sende siden som vist i [*Eksempelscenarie 1: Salgspluk, hvor en forespørgsel om en lokation fungerer som en omvej*](#scenario-1).

@@ -2,7 +2,7 @@
 title: Start her med momsberegning
 description: Denne artikel beskriver, hvordan du konfigurerer momsberegning.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573299"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690377"
 ---
 # <a name="get-started-with-tax-calculation"></a>Start her med momsberegning
 
@@ -124,6 +124,10 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
 7. Gå til **Datamodel for moms**, udvid filtræet, og vælg derefter **Momskonfiguration**.
 8. Vælg den korrekte [momskonfigurationsversion](global-tax-calcuation-service-overview.md#versions) på baggrund af din Finance-version, og vælg derefter **Importér**.
 9. I arbejdsområdet **Globaliseringsfunktioner** skal du vælge **Funktioner**, markere feltet **Momsberegning** og derefter vælge **Tilføj**.
+
+    > [!NOTE]
+    > I version 10.0.26 og senere kan du importere en demofunktion til den juridiske demoenhed **DEMF**. Du kan finde flere oplysninger under [Demodata til importfunktion](tax-calculation-import-export-feature.md).
+
 10. Vælg en af følgende funktionstyper:
 
     - **Ny funktion** – Opret en funktionsopsætning, der har tomt indhold.
@@ -154,8 +158,8 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     - **Anvendelse af kreditors momsregistreringsnummer** – Hvis der er flere momsregistreringsnumre for samme kreditor, kan Momsberegning automatisk bestemme det korrekte momsregistreringsnummer. I matrixen under denne fane kan du definere de regler, som skal bruges til at fastlægge det. Ellers vil Finance og Supply Chain Management fortsætte med at bruge standardmomsregistreringsnummeret på momspligtige dokumenter til købstransaktioner.
     - **Anvendelse af listekode** – Bestem automatisk værdien i feltet **Listekode** ved hjælp af mere fleksible og konfigurerbare regler. I matrixen under denne fane kan du definere de regler, som skal bruges til at fastlægge det. Ellers vil Finance og Supply Chain Management fortsætte med at bruge standardkoden på momspligtige dokumenter.
 
-14. Under fanen **Momskoder** skal du vælge **Tilføj** og angive momskoden samt en beskrivelse.
-15. Vælg **Momskomponent**. Momskomponenten er en gruppe af metoder, der blev defineret i den forrige version af den valgte momskonfiguration. Følgende momskomponenter er tilgængelige:
+15. Under fanen **Momskoder** skal du vælge **Tilføj** og angive momskoden samt en beskrivelse.
+16. Vælg **Momskomponent**. Momskomponenten er en gruppe af metoder, der blev defineret i den forrige version af den valgte momskonfiguration. Følgende momskomponenter er tilgængelige:
 
     - Efter nettobeløb
     - Efter bruttobeløb
@@ -163,8 +167,8 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     - Efter margen
     - Moms på moms
 
-16. Vælg **Gem**. Flere felter bliver tilgængelige baseret på den momskomponent, du har valgt.
-17. Benyt følgende indstillinger til at identificere momskodens art:
+17. Vælg **Gem**. Flere felter bliver tilgængelige baseret på den momskomponent, du har valgt.
+18. Benyt følgende indstillinger til at identificere momskodens art:
 
     - Er momsfri
     - Er importmoms
@@ -179,8 +183,8 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
 
     Vedligehold momssatser og momsbeløbsgrænser for denne momskode.
 
-18. Gentag trin 14 til og med 17 for at tilføje alle andre momskoder, du har brug for.
-19. Under fanen **Momsgruppe** skal du vælge kolonnen **Momsgruppe**, tilføje den i matrixen som inputbetingelse og derefter tilføje linjer for at bevare masterdata for momsgruppen.
+19. Gentag trin 15 til og med 18 for at tilføje alle andre momskoder, du har brug for.
+20. Under fanen **Momsgruppe** skal du vælge kolonnen **Momsgruppe**, tilføje den i matrixen som inputbetingelse og derefter tilføje linjer for at bevare masterdata for momsgruppen.
 
     Her er et eksempel.
 
@@ -191,7 +195,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Momsfri          |
 
-20. Under fanen **Varemomsgruppe** skal du vælge kolonnen **Varemomsgruppe**, tilføje den i matrixen som inputbetingelse og derefter tilføje linjer for at bevare masterdata for momsgruppen for varesalg.
+21. Under fanen **Varemomsgruppe** skal du vælge kolonnen **Varemomsgruppe**, tilføje den i matrixen som inputbetingelse og derefter tilføje linjer for at bevare masterdata for momsgruppen for varesalg.
 
     Her er et eksempel.
 
@@ -200,7 +204,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     | Fuld           | DEU_VAT19; BEL_VAT21; DEU_Momsfri; BEL_Momsfri |
     | Reduceret        | DEU_VAT7; BEL_VAT6; DEU_Momsfri; BEL_Momsfri   |
 
-21. Under fanen **Anvendelse af momsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momsgruppe, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Momsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen på transaktionslinjen.
+22. Under fanen **Anvendelse af momsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momsgruppe, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Momsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen på transaktionslinjen.
 
     Her er et eksempel.
 
@@ -214,7 +218,7 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
     > [!NOTE]
     > Hvis standardmomsgruppen på de momspligtige dokumentlinjer er korrekt, skal du lade denne matrix være tom. Du kan finde flere oplysninger i afsnittet [Kørselsdesign](#runtime) i denne artikel.
 
-22. Under fanen **Anvendelse af varemomsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momskode, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Varemomsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen for varesalg på transaktionslinjen.
+23. Under fanen **Anvendelse af varemomsgruppe** skal du vælge de kolonner, der skal bruges til at bestemme den korrekte momskode, og derefter vælge **Tilføj**. Angiv eller vælg værdier for hver kolonne. Feltet **Varemomsgruppe** vil være outputtet for denne matrix. Hvis denne fane ikke er konfigureret, anvendes momsgruppen for varesalg på transaktionslinjen.
 
     Her er et eksempel.
 
@@ -228,10 +232,10 @@ Trinnene i dette afsnit er ikke relateret til en bestemt juridisk enhed. Du skal
 
     Yderligere oplysninger om, hvordan momskoder fastsættes i Momsberegning, finder du i [Logik for fastlæggelse af momsgruppe og varemomsgruppe](global-sales-tax-group-determination.md).
 
-23. Konfigurer anvendelsen af debitorers momsregistreringsnumre, kreditorers momsregistreringsnumre og listekoder baseret på forretningsbehovet.
-24. Vælg **Gem**, og luk derefter siden.
-25. Vælg **Skift status** \> **Fuldfør**. Når status er ændret til **Fuldført**, kan versionen ikke længere redigeres.
-26. Vælg **Skift status** \> **Publicer**. Denne version af konfigurationen af momsfunktionen skubbes til det globale lager og vil være synlig for hver juridiske enhed i Finance.
+24. Konfigurer anvendelsen af debitorers momsregistreringsnumre, kreditorers momsregistreringsnumre og listekoder baseret på forretningsbehovet.
+25. Vælg **Gem**, og luk derefter siden.
+26. Vælg **Skift status** \> **Fuldfør**. Når status er ændret til **Fuldført**, kan versionen ikke længere redigeres.
+27. Vælg **Skift status** \> **Publicer**. Denne version af konfigurationen af momsfunktionen skubbes til det globale lager og vil være synlig for hver juridiske enhed i Finance.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Konfigurere Momsberegning i Dynamics 365
 

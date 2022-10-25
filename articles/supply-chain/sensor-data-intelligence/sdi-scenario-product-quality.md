@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 8c4808ea3a0389c2a8699f0e11ea154705a6916d
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: c0f1c57251234921779f67faf61d47cdde119e64
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428313"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690042"
 ---
 # <a name="the-product-quality-scenario"></a>Scenariet for produktkvalitet
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 I *produktkvalitetsscenariet* er der konfigureret en opsætning til at måle kvaliteten af et produkt-batch i produktionen. Hvis en måling falder uden for en defineret grænse for produktet, vises der en besked på den tilsynsførendes dashboard. Det kan f.eks. være en måling af fugtigheden i et fødevareprodukt, der kommer ud af produktionslinjen. Hvis målingen ligger uden for den tilladte minimum- eller maksimumværdi for fugtighed for produktet, genereres der en besked.
 

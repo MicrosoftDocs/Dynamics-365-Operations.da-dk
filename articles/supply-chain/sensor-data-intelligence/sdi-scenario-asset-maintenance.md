@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 2d103406118be4385177b678de424df12af69c2e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9644051"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689394"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scenariet for aktiv-vedligeholdelse
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 I scenariet til *vedligeholdelse af aktiver* kan du bruge oplysninger til at oprette tællerposter. Tællerposter sporer brugen af et maskinaktiv og bruges som input til at generere vedligeholdelsesplanen for maskinaktiver.
 
@@ -115,6 +116,9 @@ Når dataene er udarbejdet, og scenariet *aktiv vedligeholdelse* er konfigureret
 1. Gå til **Aktivstyring \> Aktiver \> Alle aktiver**.
 1. Find og vælg det aktiv, du vil inspicere. (Hvis du bruger de demodata, du har oprettet tidligere i denne artikel, skal du vælge *AKA-101*.)
 1. I handlingsruden under fanen **Aktiv** i gruppen **Forebyggende** skal du vælge **Tællere** for at åbne siden for tællerposter for aktiv *AK-101*.
+
+> [!NOTE]
+> Tællerposterne konfigureres som standard til at blive indsat hver tredje time, hvilket betyder, at sensordata samles i det pågældende interval. Du kan ændre intervallet ved at redigere forespørgslen i komponenten Azure Stream Analytics.
 
 ### <a name="generate-maintenance-work-orders"></a>Generer arbejdsordrer for vedligeholdelse
 
