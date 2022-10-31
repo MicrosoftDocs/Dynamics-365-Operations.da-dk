@@ -2,7 +2,7 @@
 title: Redigere og overvåge onlineordre- og asynkrone kundeordretransaktioner
 description: Denne artikel beskriver, hvordan du redigerer og overvåger onlineordre- og asynkrone kundeordretransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.industry: Retail
-ms.openlocfilehash: dac7ffe6d62aaea11f2f5af0476db446b091938b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dbeeff47446c1617da44f34ae56f333717f577a1
+ms.sourcegitcommit: 18b7a02c497709e8d9c7b943d82f1fcc3dafa4cd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287671"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9712102"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Redigere og overvåge onlineordre- og asynkrone kundeordretransaktioner
 
@@ -34,12 +34,13 @@ Fra Commerce-version 10.0.5 til 10.0.6 er der tilføjet understøttelse for redi
 
 ## <a name="edit-and-audit-order-transactions"></a>Redigere og overvåge ordretransaktioner
 
-Hvis du vil redigere og overvåge ordretransaktioner i hovedkontoret Commerce, skal du følge disse trin.
+Hvis du vil redigere og overvåge ordretransaktioner i Commerce headquarters, skal du følge disse trin.
 
 1. Installér [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. På siden **Detailparametre** på fanen **Kundeordrer** i oversigtspanelet **Ordre** skal du angive en holdkode for **Holdkode for ordresynkroniseringsfejl**.
-1. Åbn arbejdsområdet **Butiksregnskab**. Felterne **Onlineordresynkroniseringsfejl** og **Kundeordresynkronisering** indeholder en forudfiltreret visning af detailtransaktionssiden. Hver enkelt viser de transaktionsposter, hvor synkroniseringen mislykkedes for den tilsvarende ordretype.
-1. Åbn enten siden **Onlineordresynkroniseringsfejl** eller siden **Kundeordresynkroniseringsfejl**. Vælg en post for at få vist oplysninger om synkroniseringsfejlen. Oversigtspanelet **Synkroniseringsstatus** viser følgende fejloplysninger:
+1. På siden **Commerce-parametre** på fanen **Kundeordrer** i oversigtspanelet **Ordre** skal du angive en holdkode for **Holdkode for ordresynkroniseringsfejl**.
+2. Afbryd andre ordresynkroniseringsjob, der er i konflikt med tidspunktet for redigering og overvågning.
+3. Åbn arbejdsområdet **Butiksregnskab**. Felterne **Onlineordresynkroniseringsfejl** og **Kundeordresynkronisering** indeholder en forudfiltreret visning af detailtransaktionssiden. Hver enkelt viser de transaktionsposter, hvor synkroniseringen mislykkedes for den tilsvarende ordretype.
+4. Åbn enten siden **Onlineordresynkroniseringsfejl** eller siden **Kundeordresynkroniseringsfejl**. Vælg en post for at få vist oplysninger om synkroniseringsfejlen. Oversigtspanelet **Synkroniseringsstatus** viser følgende fejloplysninger:
 
     - Ventende ordrestatus
     - Oplysninger om ordrefejl
@@ -66,8 +67,16 @@ Hvis du vil redigere og overvåge ordretransaktioner i hovedkontoret Commerce, s
         - **Gebyrer** – dette regneark indeholder de gebyrrelaterede data for transaktionen.
 
 1. I Excel-filen i feltet **Ventende ordrestatus** skal du angive **Redigering** og derefter publicere ændringen. På denne måde forhindrer du, at jobbet **Synkroniser ordre**, der kører i batchtilstand, springer denne post over under behandlingen.
-1. I Excel-filen redigerer du de relevante felter og overfører derefter dataene tilbage til hovedkontoret Commerce ved hjælp af publiceringsfunktionen i Dynamics Excel-tilføjelsesprogrammet. Når dataene er publiceret, afspejles ændringerne i systemet. Under publiceringen sker der ingen validering for de ændringer, brugerne foretager.
-1. Du kan få vist et komplet revisionsspor for ændringerne ved at vælge **Vis revisionsspor** i hovedet på **detailtransaktionen** for ændringerne på hovedniveau og i den relevante sektion og post på den relevante transaktionsside. Alle ændringer, der f.eks. er relateret til salgslinjer, vises på siden **Salgstransaktioner**, og alle ændringer, der er relateret til betalinger, vises på siden **Betalingstransaktioner**. Følgende revisionsoplysninger bevares for ændringerne:
+1. I Excel-filen redigerer du de relevante felter og overfører derefter dataene tilbage til Commerce headquarters ved hjælp af publiceringsfunktionen i Dynamics Excel-tilføjelsesprogrammet. Når dataene er publiceret, afspejles ændringerne i systemet. Under publiceringen sker der ingen validering for de ændringer, brugerne foretager.
+    > [!NOTE]
+    > Hvis du ikke kan finde det felt, du skal redigere, skal du følge trinnene nedenfor for at tilføje det manglende felt i regnearket.
+    >   1. Vælg **Design** i Data Connector.
+    >   1. Vælg blyantsikonet ud for den tabel, du vil føje et felt til.
+    >   1. Markér feltet i sektionen **Tilgængelige felter**, og vælg derefter **Tilføj**.
+    >   1. Tilføj så mange felter, du har brug for, og vælg derefter **Opdater**.
+    >   1. Når opdateringen er fuldført, skal du muligvis vælge **Opdater** for at opdatere værdierne.
+
+3. Du kan få vist et komplet revisionsspor for ændringerne ved at vælge **Vis revisionsspor** i hovedet på **detailtransaktionen** for ændringerne på hovedniveau og i den relevante sektion og post på den relevante transaktionsside. Alle ændringer, der f.eks. er relateret til salgslinjer, vises på siden **Salgstransaktioner**, og alle ændringer, der er relateret til betalinger, vises på siden **Betalingstransaktioner**. Følgende revisionsoplysninger bevares for ændringerne:
 
     - Dato og klokkeslæt for ændring
     - Felt

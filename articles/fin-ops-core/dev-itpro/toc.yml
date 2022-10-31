@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Platformsopdateringer til version 10.0.29 (oktober 2022)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Platformopdateringer til version 10.0.28 (august 2022)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Fjernede eller udfasede funktioner
               items:
                 - name: Fjernede eller udfasede funktioner på startsiden
@@ -1605,7 +1603,11 @@
             - name: Rapport over licenskoder og konfigurationsnøgler
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Datadeling på tværs af firma
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: 'Tabeller, der understøttes til deling af data'
+              href: sysadmin/drs-srs-tables.md
+            - name: Datadeling for udviklere
+              href: sysadmin/drs-srs-dev.md
             - name: Vedligeholdelsestilstand
               href: sysadmin/maintenance-mode.md
             - name: Forudkonfigurerede systemkonti

@@ -12,7 +12,7 @@
               items:
                 - name: Nyheder eller ændringer i Supply Chain Management-startside
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (februar 2022)
+                - name: Supply Chain Management 10.0.31 (februar 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (november 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: USMCA-certificering af oprindelse
               href: transportation/usmca-certification-of-origin.md
+            - name: Handelsfakturaer
+              href: transportation/commercial-invoice.md
             - name: Oprette en fragtseddel
               href: transportation/create-bill-of-lading.md
             - name: Planlægge fragttransportruter
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Pak containere til forsendelse
                       href: warehousing/packing-containers.md
+                    - name: Udskriv etiketter for container
+                      href: warehousing/print-container-labels.md
                     - name: Pakkearbejde til pakning af udgående containere og behandling af forsendelser
                       href: warehousing/packing-work.md
+                    - name: Pakke containere med Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Eksempelscenarie – Pakke containere med Warehouse Management-mobilappen
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Konfigurere vareomfordeling for kort plukning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Systembaseret arbejdsrækkefølge
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Systemgruppering på en åben opgaveliste
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Dokumentruteplanlægning for layout til id-etiketter
+                    - name: Layout af dokumentruteetiket
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-stregkoder og QR-koder
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: Opgradere lagerstyringsprocesser fra Microsoft Dynamics AX 2012 til finans og drift
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Lagerstedstelemetri
+              items:
+                - name: Aktivér lagerstedstelemetri med Application Insights
+                  href: warehousing/application-insights-warehousing.md
+                - name: Overvåge brugen af og ydeevnen for mobilenhed
+                  href: warehousing/application-insights-wma.md
         - name: Supply Chain Management-udvikling
           items:
             - name: Udviklingsvejledning til Gantt-kontrolelementer
