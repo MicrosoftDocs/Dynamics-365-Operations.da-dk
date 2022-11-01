@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849584"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714730"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Administrere ændringer af tekniske produkter
 
@@ -141,6 +141,8 @@ Når du gennemser beskeder om produktionsordrer på siden **Tekniske beskeder**,
 ### <a name="create-a-change-order-from-a-change-request"></a>Oprette en ændringsordre ud fra en ændringsanmodning
 
 En tekniker, der gennemgår en anmodning om teknisk ændring, kan oprette en teknisk ændringsordre direkte fra siden **Tekniske ændringsanmodninger**. Vælg **Kopiér link og produkter** i gruppen **Teknisk ændringsordre** under fanen **Ændringsanmodning** i handlingsruden.
+
+Sørg for at vælge det korrekte firma til den nye ændringsordre til teknikere. Hvis ændringsordren medfører, at selve det tekniske produkt ændres (ny version, nyt produkt eller ny variant), skal ændringsordren tildeles den tekniske virksomhed. Hvis der kun kræves en lokal ændring (**Effekt** er angivet til *Ingen*), kan ændringsordren tildeles et lokalt firma, så ændringerne gælder for det aktuelle produkt.
 
 ## <a name="engineering-change-orders"></a>Tekniske ændringsordrer
 

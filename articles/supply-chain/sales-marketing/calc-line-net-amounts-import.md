@@ -1,6 +1,6 @@
 ---
-title: Genberegne nettobeløb for linjer ved import af salgsordrer, tilbud og returneringer
-description: I denne artikel beskrives det, om og hvordan systemet genberegner nettobeløb for linjen, når salgsordrer, tilbud og returneringer importeres. Det forklarer også, hvordan du kan styre funktionsmåden i forskellige versioner af Microsoft Dynamics 365 Supply Chain Management.
+title: Genberegne nettobeløb for linjer ved import af salgsordrer og tilbud
+description: I denne artikel beskrives det, om og hvordan systemet genberegner nettobeløb for linjen, når salgsordrer og tilbud importeres. Det forklarer også, hvordan du kan styre funktionsmåden i forskellige versioner af Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335549"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719328"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Genberegne nettobeløb for linjer ved import af salgsordrer, tilbud og returneringer
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Genberegne nettobeløb for linjer ved import af salgsordrer og tilbud
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives det, om og hvordan systemet genberegner nettobeløb for linjen, når salgsordrer, tilbud og returneringer importeres. Det forklarer også, hvordan du kan styre funktionsmåden i forskellige versioner af Microsoft Dynamics 365 Supply Chain Management.
+I denne artikel beskrives det, om og hvordan systemet genberegner nettobeløb for linjen, når salgsordrer og tilbud importeres. Det forklarer også, hvordan du kan styre funktionsmåden i forskellige versioner af Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Hvordan opdateringer til nettolinjebeløb beregnes ved import
 
-Supply Chain Management version 10.0.23 introduceret [fejlrettelse 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Denne fejlrettelse har ændret de betingelser, hvor feltet **Nettobeløb** på en linje kan opdateres eller genberegnes, når opdateringer til eksisterende salgsordrer, returordrer og tilbud importeres. I version 10.0.29 kan du erstatte denne fejlrettelse ved at deaktivere funktionen *Beregn linjenettobeløb ved import*. Denne funktion har en lignende effekt, men den indeholder en global indstilling, der giver dig mulighed for at vende tilbage til den gamle funktionsmåde, hvis det er nødvendigt. Selvom den nye funktionsmåde gør, at systemet fungerer mere effektivt, kan det give uventede resultater i specifikke scenarier, hvor følgende betingelser er opfyldt:
+Supply Chain Management version 10.0.23 introduceret [fejlrettelse 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Denne fejlrettelse har ændret de betingelser, hvor feltet **Nettobeløb** på en linje kan opdateres eller genberegnes, når opdateringer til eksisterende salgsordrer og tilbud importeres. I version 10.0.29 kan du erstatte denne fejlrettelse ved at deaktivere funktionen *Beregn linjenettobeløb ved import*. Denne funktion har en lignende effekt, men den indeholder en global indstilling, der giver dig mulighed for at vende tilbage til den gamle funktionsmåde, hvis det er nødvendigt. Selvom den nye funktionsmåde gør, at systemet fungerer mere effektivt, kan det give uventede resultater i specifikke scenarier, hvor følgende betingelser er opfyldt:
 
 - Data, der opdaterer eksisterende poster, importeres via *Salgsordrelinjer V2*, *Salgstilbudslinjer V2* eller *Returordrelinjer* ved hjælp af Open Data Protocol (OData), herunder situationer, hvor du bruger dobbeltskrivning, import/eksport via Excel og tredjepartsintegration.
-- [Politikker for evaluering af samhandelsaftale](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper), som er på plads, etablerer en ændringspolitik, der begrænser opdateringer til feltet **Nettobeløb** på salgsordrelinjer, salgstilbudslinjer og/eller returordrelinjer.
+- [Politikker for evaluering af samhandelsaftale](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper), som er på plads, etablerer en ændringspolitik, der begrænser opdateringer til feltet **Nettobeløb** på salgsordrelinjer, salgstilbudslinjer og/eller returordrelinjer. Bemærk, at feltet **Nettobeløb** altid beregnes for returordrelinjer og ikke kan angives manuelt.
 - De importerede data omfatter ændringer i feltet **Nettobeløb** på linjer eller ændringer (f.eks. enhedspris, antal eller rabat), der vil medføre, at værdien i feltet **Nettobeløb** på linjer genberegnes for en eller flere eksisterende linjeposter.
 
 I disse specifikke scenarier er virkningen af evalueringspolitikken for samhandelsaftalen, at der bliver sat en begrænsning på opdateringer af feltet **Nettobeløb** på linjen. Denne begrænsning kaldes en *ændringspolitik*. På grund af denne politik bliver du af systemet bedt om at bekræfte, om du vil foretage ændringen, når du bruger brugergrænsefladen til at redigere eller genberegne feltet. Når du importerer en post, skal systemet dog foretage et valg for dig. Før version 10.0.23 blev nettobeløbet for linjen uændret, medmindre nettobeløbet på den indgående linje var 0 (nul). I nyere versioner opdaterer eller genberegner systemet dog altid nettobeløbet efter behov, medmindre det udtrykkeligt bliver bedt om ikke at gøre det. Selvom den nye funktionsmåde er mere logisk, kan det give problemer for dig, hvis du allerede kører processer eller integrationer, der antager den ældre funktionsmåde. I denne artikel beskrives, hvordan du kan vende tilbage til den gamle metode, hvis det er nødvendigt.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336179"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708718"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -164,7 +164,7 @@ Følgende oplysninger er tilgængelige under oversigtspanelet **Generelt**:
 - **Tillad låsning af berøringsskærm** – Angiv denne indstilling til *Ja* for at give arbejderne mulighed for at låse berøringsskærmen på grænsefladen til produktionsudførelse, så de kan rense den. Når denne indstilling er angivet til *Ja*, tilføjes knappen **Lås skærm for rensning** på logonsiden. Når en arbejder vælger denne knap, låses berøringsskærmen midlertidigt for at forhindre utilsigtet input. Der vises også en nedtællingstimer. Arbejderen kan derefter rense enheden og skærmen på sikker vis. Når nedtællingen er fuldført, låses berøringsskærmen automatisk op.
 - **Varighed af låst skærm** – Når indstillingen **Tillad låsning af berøringsskærm** er sat til *Ja*, kan du bruge denne indstilling til at angive, hvor mange sekunder berøringsskærmen skal låses for rensning. Varigheden skal være mellem 5 og 120 sekunder.
 - **Generér nummerplade** – Angiv denne indstilling til *Ja* for at generere en ny nummerplade, hver gang en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Nummeret på nummerpladen genereres ud fra en nummerserie, der er konfigureret på siden **Parametre til Warehouse management**. Når der er valgt *Nej* i denne indstilling, skal arbejderne angive en eksisterende nummerplade, når de rapporterer færdigmeldt.
-- **Udskriv label** – Angiv denne indstilling til *Ja* for at udskrive en nummerpladelabel, når en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Konfigurationen af labelen foretages i dokumentruten som beskrevet i [Dokumentrutelayout for nummerpladelabels](../warehousing/document-routing-layout-for-license-plates.md).
+- **Udskriv label** – Angiv denne indstilling til *Ja* for at udskrive en nummerpladelabel, når en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Konfigurationen af labelen foretages i dokumentruteplanlægning som beskrevet i [Labellayout i dokumentruteplanlægning](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>Vælg Fane i oversigtspanelet
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279894"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710829"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Fuldføre, publicere og udrulle en globaliseringsfunktion
 
@@ -59,8 +59,8 @@ I RCS bruger du kommandoen **Udrul** til at publicere en version af funktionen E
 2. Under fanen **Versioner** i højre side skal du vælge den elektroniske faktureringsfunktionsversion, du vil udrulle i servicemiljøet eller det tilknyttede program. Den valgte version skal have status som **Fuldført** eller **Publiceret**.
 3. Vælg **Udrul**, og vælg derefter en af eller begge følgende indstillinger for at definere destinationen for installationen:
 
-    - **Tilknyttet program** – Den konfiguration, der leveres af programopsætningen, skrives i den forekomst af Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management, som tidligere er knyttet til det.
-    - **Servicemiljø** – Versionen af funktionen til elektronisk fakturering udrulles til servicemiljøet. Elektronisk fakturering er derefter klar til at modtage og behandle elektroniske dokumenter, som Finans eller Supply Chain Management sender.
+    - **Tilknyttet program** – Det er valgfrit, men skal bruges, hvis den konfiguration, der leveres af programopsætningen, skal skrives i den forekomst af Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management, som tidligere er knyttet til det. Hvis du springer denne installationstype over, kræver det manuel konfiguration af de parametre, der er defineret i programopsætningen af Finance eller Supply Chain Management.
+    - **Servicemiljø** – Installerer funktionen til elektronisk fakturering i servicemiljøet. Elektronisk fakturering er derefter klar til at modtage og behandle elektroniske dokumenter, som Finans eller Supply Chain Management sender.
 
 > [!NOTE]
 > Normalt skal du ændre parametrene for den ER-funktion (elektronisk rapportering), der skal implementeres i servicemiljøet. Der vil sjældent være ændringer af det tilknyttede program. Du skal kun udrulle nye versioner til det tilknyttede program, når du ændrer de tilsvarende parametre i programmet.

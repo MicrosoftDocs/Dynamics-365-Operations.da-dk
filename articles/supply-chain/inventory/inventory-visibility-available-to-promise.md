@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856187"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719285"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Ændringsplaner for disponibelt antal og disponibel til tilsagn i lagersynlighed
 
@@ -205,6 +205,7 @@ Du kan bruge følgende API-URL-adresser (Application Programming Interface) til 
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Oprette flere ændringshændelser. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Forespørgsel ved hjælp af `POST`-metoden. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Forespørgsel ved hjælp af `GET`-metoden. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Nøjagtig forespørgsel ved hjælp af `POST`-metoden. |
 
 Du kan finde flere oplysninger i [Offentlige API'er til lagersynlighed](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ I din anmodning skal du angive `QueryATP` som *true*, hvis du vil forespørge p�
 > [!NOTE]
 > Uanset om parameteren `returnNegative` er angivet til *true* eller *false* i anmodningsteksten, vil resultatet indeholde negative værdier, når du forespørger på planlagte ændringer i disponibelt antal og DTT-resultaterne. Disse negative værdier inkluderes, fordi hvis der kun planlægges behovsordrer, eller hvis forsyningsantal er mindre end behovsantal, vil de planlagte disponible ændringer i disponibelt antal være negative. Hvis negative værdier ikke er medtaget, vil resultaterne være forvirrende. Du kan finde flere oplysninger om denne indstilling, og hvordan den fungerer for andre typer forespørgsler, under [Offentlige API'er for Lagersynlighed](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Forespørgsel ved hjælp af POST-metoden
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-Følgende eksempel viser, hvordan du opretter en anmodningstekst, der kan sendes til Lagersynlighed ved hjælp af `POST`-metoden.
+Følgende eksempel viser, hvordan du opretter en anmodningstekst til en indeksforespørgsel, der kan sendes til Inventory Visibility ved hjælp af `POST`-metoden.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ Følgende eksempel viser, hvordan du opretter en anmodningstekst, der kan sendes
 }
 ```
 
-### <a name="get-method-example"></a>Eksempel på GET-metode
+### <a name="query-by-using-the-get-method"></a>Forespørgsel ved hjælp af GET-metoden
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-I følgende eksempel vises, hvordan du opretter en URL-adresse til anmodning som en `GET`-anmodning.
+I følgende eksempel vises, hvordan du opretter en URL-adresse til anmodning om indeksforespørgsel som en `GET`-anmodning.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 Resultatet af denne `GET`-anmodning er nøjagtigt det samme som resultatet af `POST`-anmodningen i forrige eksempel.
 
+### <a name="exact-query-by-using-the-post-method"></a>Nøjagtig forespørgsel ved hjælp af POST-metoden
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+Følgende eksempel viser, hvordan du opretter en nøjagtig anmodningstekst til en forespørgsel, der kan sendes til Inventory Visibility ved hjælp af `POST`-metoden.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Eksempel på forespørgselsresultat
 
-Begge ovenstående eksempler på forespørgsler kan give følgende svar. I dette eksempel er systemet konfigureret med følgende indstillinger:
+Enhver af ovenstående eksempler på forespørgsler kan give følgende svar. I dette eksempel er systemet konfigureret med følgende indstillinger:
 
 - **Beregnet DTT-måling:** *iv.onhand = pos.inbound – pos.outbound*
 - **Planlægningsperiode:** *7*

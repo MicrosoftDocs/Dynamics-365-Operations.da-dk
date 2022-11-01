@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: a837b85d4893f2915b5fbb5ffaae8eb95f19bc0e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 938b00192acc0ff5534239f2f280792471181fad
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272250"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710802"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Installere tilføjelsesprogrammet til mikroservices i Lifecycle Services
 
@@ -35,7 +35,7 @@ Følg disse trin for at registrere et miljø.
 2. I projektet skal du vælge dit implementeringsmiljø på **Miljøer**-dashboardet. Det miljø, du vælger, skal køre.
 3. Under fanen **Power Platform Integration** i sektionen **Tilføjelsesprogrammer for miljø** skal du vælge **Installer et nyt tilføjelsesprogram**.
 4. Vælg **Elektronisk fakturering**.
-5. Angiv i feltet **AAD-program-id** **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er en fast værdi. Sørg for kun at angive en Globally Unique Identifier (GUID). Medtag ikke andre symboler, f.eks. mellemrum, kommaer, punktummer eller anførselstegn.
+5. I feltet **AAD-program-id** skal du angive den faste værdi **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne værdi er altid fastlagt. Sørg for kun at angive en Globally Unique Identifier (GUID). Medtag ikke andre symboler, f.eks. mellemrum, kommaer, punktummer eller anførselstegn.
 6. Angiv lejer-id for din Azure-abonnementskonto i feltet **AAD-lejer-id**. Den Azure Active Directory (Azure AD) lejer, du angiver, skal være den samme lejer, som bruges til Regulatory Configuration Service (RCS).
 7. Gennemse vilkår og betingelser, og markér derefter afkrydsningsfeltet.
 8. Vælg **Installer**. Efter nogle få minutter skal status ændres fra **Installerer** til **Installeret**. Du skal måske opdatere siden for at se denne ændring.

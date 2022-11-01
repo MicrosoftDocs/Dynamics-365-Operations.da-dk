@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423589"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719309"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API'er til Inventory Visibility
 
@@ -47,6 +47,7 @@ I følgende tabel vises de API'er, der er tilgængelige i øjeblikket:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Bogfør | [Oprette flere planlagte ændringer af disponibelt antal](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bogfør | [Forespørgsel ved hjælp af opslagsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hent | [Forespørgsel ved hjælp af hentningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Bogfør | [Nøjagtig forespørgsel ved hjælp af POST-metoden](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation/allocate | Bogfør | [Oprette én fordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/unallocate | Bogfør | [Oprette én ikke-fordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/reallocate | Bogfør | [Oprette én omfordelingshændelse](inventory-visibility-allocation.md#using-allocation-api) |
@@ -690,6 +691,80 @@ Her er et eksempel på en URL-adresse. Denne anmodning er nøjagtigt den samme s
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a>Nøjagtig forespørgsel ved hjælp af bogføringsmetoden
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+I brødteksten i denne anmodning er `dimensionDataSource` en valgfri parameter. Hvis den ikke er angivet, behandles `dimensions` i `filters` som *basisdimensioner*. Der er fire obligatoriske felter til `filters`: `organizationId`, `productId`, `dimensions` og `values`.
+
+- `organizationId` skal kun indeholde én værdi, men det er stadig en matrix.
+- `productId` kan indeholde en eller flere værdier. Hvis det er en tom matrix, returneres alle produkter.
+- I matrixen `dimensions` er `siteId` og `locationId` påkrævet, men kan blive vist med andre elementer i vilkårlig rækkefølge.
+- `values` kan indeholde en eller flere specifikke tupler af værdier, der svarer til `dimensions`.
+
+`dimensions` i `filters` bliver automatisk føjet til `groupByValues`.
+
+Parameteren `returnNegative` bestemmer, om resultaterne indeholder negative poster.
+
+Følgende er et eksempel på brødtekst.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+I følgende eksempel vises, hvordan du forespørger på alle produkter på flere steder og lokationer.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## <a name="available-to-promise"></a>Disponibel til tilsagn

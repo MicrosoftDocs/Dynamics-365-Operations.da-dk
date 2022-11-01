@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ee87eee382263897d97512f6b01c786734a8f27
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
+ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682528"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714752"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og oprette forbindelse til Warehouse Management-mobilappen
 
@@ -63,6 +63,8 @@ Som et alternativ til at installere fra en appbutik kan du i stedet hente appen 
 
 - **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](/appcenter/distribution/testers/testing-android).
+
+Du kan finde oplysninger om, hvordan du installerer en build, som er hentet fra App Center, i [Installer et build](/appcenter/distribution/installation).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Oprette en webtjenesteapplikation i Azure Active Directory
 

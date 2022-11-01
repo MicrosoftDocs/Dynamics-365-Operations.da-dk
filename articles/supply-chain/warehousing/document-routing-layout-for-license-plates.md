@@ -1,5 +1,5 @@
 ---
-title: Dokumentruteplanlægning for layout til id-etiketter
+title: Labellayout i dokumentruteplanlægning
 description: Denne artikel beskriver, hvordan du bruger formateringsmetoder til at udskrive værdier på etiketter.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847869"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708638"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutelayout for id-nummeretiketter
+# <a name="document-routing-label-layout"></a>Labellayout i dokumentruteplanlægning
 
 [!include [banner](../includes/banner.md)]
 
+I denne artikel beskrives, hvordan der oprettes layout for nummerplade-, container- og bølgelabels. Den indeholder også retningslinjer for brug af ZPL (Zebra Programming Language), der bruges til at oprette layout.
 
-I dokumentrutelayoutet defineres layoutet for id-nummeretiketter og de data, der udskrives på dem. Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.
+Labellayout i dokumentruteplanlægning definerer layoutet for labels og de data, der udskrives på dem. Du kan konfigurere udløsningspunkterne for udskrivning, når du konfigurerer menupunkter i mobilenheder og arbejdsskabeloner.
 
-I et typisk scenarie vil de lagermedarbejdere, som modtager varen, udskrive id-nummeretiketter, umiddelbart efter at de har registreret indholdet af paller, der ankommer i modtagelsesområdet. De fysiske etiketter påsættes pallerne. De kan derefter bruges til validering som del af den læg-på-lager-proces, der følger efter, og fremtidige udgående pluk-handlinger.
+Oplysningerne i denne artikel gælder for alle labellayout til dokumentruteplanlægning, herunder layout for [nummerpladelabels](tasks/license-plate-label-printing.md), [containerlabels](print-container-labels.md) og [bølgelabels](configure-wave-label-printing.md).
 
-Du kan udskrive meget komplekse etiketter, hvis udskrivningsenheden kan fortolke den tekst, der sendes til den. Et ZPL-layout (Zebra Programming Language), der indeholder en stregkode, kan f.eks. ligne følgende eksempel.
+Du kan udskrive meget komplekse etiketter, hvis udskrivningsenheden kan fortolke den tekst, der sendes til den. Et ZPL-layout, der indeholder en stregkode, kan f.eks. ligne følgende eksempel.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Du kan udskrive meget komplekse etiketter, hvis udskrivningsenheden kan fortolke
 ^PQ1,,,Y^XZ
 ```
 
-Teksten `$LicensePlateId$` i dette eksempel vil blive erstattet af en dataværdi som del af etiketudskrivningen.
+Teksten `$LicensePlateId$` i dette eksempel vil blive erstattet af en dataværdi som del af etiketudskrivningen. Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet. Mange af disse værktøjer understøtter `$FieldName$`-formatet. Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.
 
 Hvis du vil have vist de værdier, der vil blive udskrevet, skal du gå til **Lokationsstyring \> Forespørgsler og rapporter \> Id-nummeretiketter**.
-
-Flere meget tilgængelige værktøjer til oprettelse af etiketter kan hjælpe dig med at formatere teksten til etiketlayoutet. Mange af disse værktøjer understøtter `$FieldName$`-formatet. Microsoft Dynamics 365 Supply Chain Management bruger desuden en særlig formateringslogik som del af felttilknytningen for dokumentrutelayoutet.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funktion i dit system
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Flere oplysninger om, hvordan du udskriver etiketter
 
-Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive etiketter, i [Aktivere udskrivning af id-etiket](tasks/license-plate-label-printing.md).
+Du kan få flere oplysninger om, hvordan du kan opsætte og udskrive labels, i følgende artikler:
 
+- [Udskrivning af nummerpladelabel](tasks/license-plate-label-printing.md)
+- [Udskrive containerlabels](print-container-labels.md)
+- [Bølgeetiketudskrivning](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

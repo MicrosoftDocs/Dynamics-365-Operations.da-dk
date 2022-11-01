@@ -2,7 +2,7 @@
 title: Momssatser baseret på beregningsgrundlaget og beregningsmåderne
 description: Denne artikel beskriver, hvordan værdierne i felterne Beregningsgrundlag og Beregningsmetode bestemmer momssatserne for salgs- og købstransaktioner.
 author: kailiang
-ms.date: 10/26/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00cdc470397cedfd951e4c3a05a32f048775a4b9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2920d81d486f247b2d0cadfad6c54c543e497e8a
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903125"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715311"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Momssatser baseret på beregningsgrundlaget og beregningsmåderne
 

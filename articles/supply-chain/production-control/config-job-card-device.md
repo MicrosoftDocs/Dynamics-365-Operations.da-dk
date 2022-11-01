@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860719"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708611"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobkort for enheder
 
@@ -73,7 +73,7 @@ I oversigtspanelet **Generelt** kan du konfigurere hver af de forskellige indsti
 - **Ressourcegruppe** – Vælg en ressourcegruppe, der skal anvendes som standardfilterkriterium for den liste over job, der vises for hver arbejder. Det er kun job, der er planlagt på ressourcer, som er grupperet under den valgte ressourcegruppe, der vises af enheden til at begynde med. Hvis **Tillad, at arbejdere angiver personlige filtre** er aktiveret, vil arbejderne kunne redigere denne værdi, ellers vil dette filter altid gælde, når denne enhedskonfiguration er aktiv.
 - **Ressource** – Vælg en ressource, der skal anvendes som standardfilterkriterium for den liste over job, der vises for hver arbejder. Det er kun job, der er planlagt på den valgte ressource, der vises af enheden til at begynde med. Hvis **Tillad, at arbejdere angiver personlige filtre** er aktiveret, vil arbejderne kunne redigere denne værdi, ellers vil dette filter altid gælde, når denne enhedskonfiguration er aktiv.
 - **Generér nummerplade** – Angiv denne indstilling til **Ja** for at generere en ny nummerplade, hver gang en arbejder bruger jobkortenheden til færdigmelding. Nummeret på nummerpladen genereres ud fra en nummerserie, der er konfigureret på siden **Parametre til lokationsstyring**. Når den er angivet til **Nej**, skal arbejderne angive en eksisterende nummerplade, når de er færdigmeldt.
-- **Udskriv label** – Angiv denne indstilling til **Ja** for at udskrive en nummerpladelabel, når en arbejder bruger jobkortenheden til færdigmelding. Konfigurationen af labelen foretages i dokumentruten som beskrevet i [Dokumentrutelayout for nummerpladelabels](../warehousing/document-routing-layout-for-license-plates.md).
+- **Udskriv label** – Angiv denne indstilling til **Ja** for at udskrive en nummerpladelabel, når en arbejder bruger jobkortenheden til færdigmelding. Konfigurationen af labelen foretages i dokumentruteplanlægning som beskrevet i [Labellayout i dokumentruteplanlægning](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

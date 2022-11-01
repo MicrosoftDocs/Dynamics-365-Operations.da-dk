@@ -10,18 +10,23 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
+ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682582"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702189"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20350"></a>Version 2.0.35.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+- Løste et problem på Android, hvor programmet ville gå ned, hvis **Opgaveliste**-siden blev åbnet, når der ikke skulle vises kort.
 
 ## <a name="version-20340"></a>Version 2.0.34.0
 
