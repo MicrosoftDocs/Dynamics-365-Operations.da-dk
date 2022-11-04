@@ -334,12 +334,16 @@
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: Ofte stillede spørgsmål om installation
                       href: deployment/deploymentFAQ.md
+                    - name: Overføre et miljø
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Kendte problemer med selvbetjeningsinstallation
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Vedligeholdelsesoperationer for installationer
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Opdatere et miljø
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Overføre et miljø
+                      href: deployment/geo-to-geo-migrations.md
                     - name: 'Fejlfinding i miljøer, der er installeret via selvbetjeningsinstallation'
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Ofte stillede spørgsmål om planlagt vedligeholdelse i selvbetjeningsmiljøer
@@ -972,6 +976,8 @@
               href: lifecycle-services/lcs-user-guide.md
             - name: Projektonboarding
               href: lifecycle-services/project-onboarding.md
+            - name: Leder af projektoverførsel
+              href: lifecycle-services/project-migration-manager.md
             - name: Abonnementsestimator
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurere sikkerhed

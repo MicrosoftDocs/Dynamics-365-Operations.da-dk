@@ -254,10 +254,8 @@
                       href: CDX-package-sort.md
                 - name: Modern POS-arkitektur
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
+                - name: Modernisering af Commerce-teknologistak i butik (whitepaper)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Offline implementering og fejlfinding af handel
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Publicere et onlinebutikskatalog
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-indhold
@@ -396,12 +394,16 @@
                   items:
                     - name: Store Commerce-app
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce-appfunktioner
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce-app til mobilplatforme
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Migrere moderne POS til Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Vejledning til implementering af enhedsstyring
                       href: implementation-considerations-devices.md
+                    - name: Implementering og fejlfinding af Commerce-offline
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: Vælge mellem Store Commerce og Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Online og offline POS-handlinger
@@ -2532,7 +2534,7 @@
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                     - name: 'Forældede og fjernede API''er, klasser og metoder'
                       href: dev-itpro/obsolete-apis-classes-methods.md
-                    - name: Modernisering af Commerce-teknologistak i butik (hvidbog)
+                    - name: Modernisering af Commerce-teknologistak i butik (whitepaper)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Miljøkonfiguration
                   items:

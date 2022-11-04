@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: Konfigurere politikker for indkøbskategorihierarkier
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Vurdering af forsyningsrisiko
+              items:
+                - name: Oversigt over vurdering af forsyningsrisiko
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Konfigurere vurdering af forsyningsrisiko
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Handlingsarbejdsområde til at opdage og håndtere leverandørrisici
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI-rapporter over analyser af risici og rangordning af ydeevne
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Produktkvitteringer og fakturering
               items:
                 - name: Produktkvittering sammenlignet med indkøbsordrer

@@ -692,20 +692,14 @@
               items:
                 - name: Konfiguration af proces for avanceret bankafstemning
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Konfigurere importprocessen for avanceret bankafstemning
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Konfigurere importprocessen for avanceret bankafstemning vha. elektronisk rapportering
                   href: accounts-payable/import-bai2-er.md
                 - name: Konfigurere sammenholdningsregler for bankafstemning
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Avanceret bankafstemning MT940-import - opgradering af sammensat dataenhed
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Oversigt over avanceret bankafstemning
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Fejlfinding af filimport for bankkontoudtog
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Opdatere den sammensatte bankkladdeenhed
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Omkostningsregnskab
