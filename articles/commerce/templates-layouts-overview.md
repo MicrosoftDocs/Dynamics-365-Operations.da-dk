@@ -2,7 +2,7 @@
 title: Oversigt over skabeloner og layout
 description: Denne artikel omhandler skabeloner og layout i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277927"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733378"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversigt over skabeloner og layout
 
@@ -66,6 +66,12 @@ Skabelonen i dette eksempel definerer en simpel struktur og et sæt indstillinge
 
 Et vigtigt første trin for websteds- og brandadministratorer er at bestemme den korrekte balance mellem begrænsning og fleksibilitet af underordnede layout- og sideforfattere. Når der bruges skabeloner, kan denne balance konfigureres fuldt ud. Det påvirker, om sideelementer opdateres centralt (låst i skabelonen) eller overlades til individuelle underordnede niveauer, der er lavere i sidehierarkiet.
 
+### <a name="relationship-between-template-defaults-and-page-content"></a>Relationen mellem standardskabeloner og sideindhold
+
+En skabelons primære funktion er at strømline moduloprettelsesoplevelsen, når der oprettes en side. Selv når modulstandarder er angivet eller måske låst i en skabelon, er der ikke længere nogen dataforbindelse fra modulkonfigurationerne for en side til skabelonstandarderne, undtagen når siden redigeres. Skabeloner styrer redigeringsoplevelsen af sidestrukturen, og når en side er oprettet, sammenkædes skabelonstandarden ikke længere med det indhold, der kan lokaliseres på den pågældende side. Det vil sige, at modulstandarderne, der angives i en skabelon, styrer oprettelsesoplevelsen for underordnede sider. De styrer ikke indholdet på disse sider, efter siderne er blevet oprettet og redigeret.
+
+Den eneste undtagelse i den tidligere beskrevne funktionsmåde forekommer, når der føjes et [fragment](work-with-fragments.md) til en skabelon. Du kan bruge fragmenter til dynamisk at tilføje eller redigere indhold, der kan lokaliseres, på tværs af alle underordnede sider i en skabelon eller et layout når som helst, selv når der er oprettet mange sider ud fra en bestemt skabelon. Det er bedste praksis at bruge fragmenter i skabeloner og layout, når lokaliseret indhold skal tilføjes, fjernes eller redigeres dynamisk på tværs af alle underordnede sider. Der skal f.eks. bruges fragmenter til sidehoveder, sidefødder, fælles metadata/scripts eller andet indhold, der skal redigeres centralt og ensartet på tværs af alle underordnede sider. Fragmenter giver dig mulighed for at bruge skabeloner og layout til at styre indhold på tværs af alle underordnede sider.
+
 Hvis du vil begynde at bruge skabeloner, skal du se [Arbejde med skabeloner](work-with-templates.md).
 
 ## <a name="layouts"></a>Layouts
@@ -96,7 +102,7 @@ Layout på dit websted kan enten være *forudindstillede* eller *brugerdefinered
 
 Forudindstillede layout og brugerdefinerede layout redigeres i forskellige dele af oprettelsesværktøjssættet. Da brugerdefinerede layout ikke har nogen afhængigheder på andre sider, redigeres de direkte i sideeditoren. I dette tilfælde er tilstedeværelsen af et layout hovedsageligt transparent for brugeren og vises kun i egenskaber på sideniveau og via handlinger for layoutindstillinger. Men da ændringer af forudindstillede layout kan påvirke mange underordnede sider, skal de redigeres i layouteditoren, hvor udgivelseshandlinger tager højde for den fulde downstream-virkning på underordnede sider.
 
-I følgende illustrationer vises scenarier for forudindstillede og brugerdefinerede layout.
+I følgende illustration vises scenarier for forudindstillede og brugerdefinerede layout.
 
 ![Scenarier med forudindstillede og tilpassede layout.](../commerce/media/template-figure1.png)
 

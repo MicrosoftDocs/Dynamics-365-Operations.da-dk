@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871972"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725515"
 ---
 # <a name="landed-cost-parameters-setup"></a>Opsætning af parametre for landingsomkostninger
 
@@ -125,14 +125,11 @@ Indstillingerne under denne fane opretter standarddimensionerne for hver angivet
 
 Fanen **Nummerserier** på siden **Parametre for landingsomkostninger** viser de enkelte typer referencenummerserier, som landingsomkostninger kræver, men som ikke deles på tværs af juridiske enheder. Vælg en nummerseriekode for hver reference på listen.
 
-> [!NOTE]
-> I en konfiguration med flere virksomheder skal der oprettes forskellige nummerserier for hver virksomhed (juridisk enhed).
 
 ## <a name="shared-number-sequences-tab"></a>Fanen Delte nummerserier
 
 Fanen **Delte nummerserier** på siden **Parametre for landingsomkostninger** viser de enkelte typer referencenummerserier, som deles på tværs af juridiske enheder for landingsomkostninger. Der findes i øjeblikket kun én nummerserie på listen. Denne nummerserie bruges til fragt-id'et.
 
-På siden **Alle fragter** kan brugere se alle fragter på tværs af alle juridiske enheder. Hvis du vil redigere og behandle en fragt, skal du dog være i den juridiske enhed for den valgte post.
 
 ## <a name="feature-visibility-tab"></a>Fanen Funktionssynlighed
 

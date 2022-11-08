@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 8c60ed0c334bf09916dd633302c6d813ea6f16b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a891de4a1da6641a02b8316d16ac2e9a8180fac1
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281448"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734240"
 ---
 # <a name="order-lookup-module"></a>Modulet Ordreopslag
 
@@ -44,6 +44,12 @@ I følgende illustration vises et eksempel på den form, der gengives af ordreop
 ## <a name="add-an-order-lookup-module-to-a-page"></a>Føj et ordreopslagmodul til en side
 
 Ordreopslagsmodulet kan føjes til brødteksten på enhver side på e-handelswebstedet. Hvis du vil bruge ordreopslagsmodulet til at aktivere ordreopslag for gæsteudbetaling, skal du sørge for at føje den til en side, der ikke kræver, at brugeren er logget på. Hvis du vil finde indstillingen For en sides **Kræver log på?** i trævisningen Commerce site builder, skal du vælge **standardsiden (Obligatorisk)** og se nederst i højre rude.
+
+
+> [!NOTE]
+> Hvis du vil aktivere funktionen til ordreopslag, skal du sikre dig, at nøglen **Tilbud** er aktiveret under **Licenskonfiguration** > **Konfigurationsnøgler**.
+>
+> ![Konfiguration af tilbudslicensnøglen skal være aktiveret](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

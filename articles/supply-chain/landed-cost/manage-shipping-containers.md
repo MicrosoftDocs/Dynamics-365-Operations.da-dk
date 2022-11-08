@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906147"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725435"
 ---
 # <a name="manage-shipping-containers"></a>Administrere forsendelsescontainere
 
@@ -40,9 +40,9 @@ I følgende tabel beskrives de knapper, der er tilgængelige i handlingsruden un
 
 | Knap | Beskrivelser |
 |---|---|
-| Bogfør tilgangsliste | Bogfør en tilgangsliste, eller få vist produktkvitteringslisterne for alle indkøbsordrelinjer i forsendelsescontaineren. Hvis der bruges forsendelser for flere virksomheder, åbnes en ny dialogboks til bogføring af tilgangslisten for hvert firma. |
+| Bogfør tilgangsliste | Bogfør en tilgangsliste, eller få vist produktkvitteringslisterne for alle indkøbsordrelinjer i forsendelsescontaineren.  |
 | Bogfør produktkvittering | Bogfør en produktkvittering for alle indkøbsordrelinjer i forsendelsescontaineren. |
-| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i forsendelsescontaineren. Hvis der bruges forsendelser for flere virksomheder, åbnes en ny dialogboks til fakturabogføring for hvert firma. |
+| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i forsendelsescontaineren.  |
 | Forsendelsesflytteordre | Bogfør en forsendelse af flytteordre for alle flytteordrelinjer i forsendelsescontaineren. Det er kun de linjer i forsendelsescontaineren, der er af typen flytteordre, der vises i dialogboksen. |
 | Modtag flytteordre | Bogfør en modtagelse af flytteordre for alle flytteordrelinjer i forsendelsescontaineren. Modtagelsesdialogboksen er den korteste vej til modtagelse af varer i en forsendelsescontainer eller fragt, og den er en af tre tilgængelige valgmuligheder. Du kan også modtage via modtagelseskladder eller behandling på mobilenheder. |
 | Opret modtagelseskladde | Du kan generere en modtagelseskladde for organisationer ved hjælp af avancerede lagerstedsfunktioner. Du kan vælge _Initialiser antal_ (anbefales) og enten _Opret fra varer i transit_ eller _Opret fra indkøbsordrer_. De to sidste indstillinger afhænger af, om der bruges behandling af varer undervejs. |
@@ -56,7 +56,7 @@ I følgende tabel beskrives de knapper, der er tilgængelige i handlingsruden un
 
 | Knap | Beskrivelser |
 |---|---|
-| Tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i forsendelsescontaineren. Hvis der bruges fragter for flere virksomheder, åbnes en dialogboks til bogføring af en ny tilgangsliste for hvert firma. |
+| Tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i forsendelsescontaineren.  |
 | Produktkvittering | Se produktkvitteringsposten, hvis den bruges. Produktkvitteringsprocessen bruges kun, hvis varerne ikke bruger funktionerne for varer undervejs. |
 | Varemodtagelse | Få vist varemodtagelseskladden for forsendelsescontaineren, hvis den pågældende kladde bruges. |
 | Etaper | Etaper bruges til at identificere forskellige dele af en rejse. Leveringstiderne kan knyttes til de enkelte etaper som en hjælp ved forsendelsessporing. Yderligere oplysninger finder du i [Opsætning af rejse i flere etaper](multi-leg-journey-setup.md). |

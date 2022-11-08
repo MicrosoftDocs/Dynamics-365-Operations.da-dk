@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689194"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731604"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -40,13 +40,13 @@ Der er allerede implementeret flere forskud, som giver mulighed for proaktiv lev
 
 - **Opdatering af nedetid ved nul** – Hvis du vil køre mere hyppige miljøer, er det vigtigt, at tilgængeligheden af ressourcer i miljøet reduceres, så Dynamics 365 Service Level Agreements bevares. Der blev oprindeligt introduceret opdatering af Ved nul-nedetid for at forbedre den månedlige programrettelse af operativsystemet ved hjælp af en cluster failover for at aktivere det opdaterede billede med minimale afbrydelser. Mekanismen til anvendelse af opdateringer bliver udvidet, så den er endnu mindre afbrydende, og den dækker både programrettelse af operativsystemet og implementering af kvalitetsopdatering.
 
-    For interaktive brugere kan en aktiv session blive afbrudt, og forsøge at fortsætte til det nu opdaterede miljø. Med introduktionen af [prioriteret batchplanlægning](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), der nu er tilgængeligt på basis af tilvalg, vil batchplanlægning og batchafvikling blive genoprettet og genoptaget umiddelbart efter opdateringen. Der findes prioriteret batchplanlægning for kunderne, før de begynder at deltage i proaktiv distribution af kvalitetsopdateringer til deres produktionsmiljøer.
+For interaktive brugere kan en aktiv session blive afbrudt, og forsøge at fortsætte til det nu opdaterede miljø. Med introduktionen af [prioriteret batchplanlægning](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) vil batchplanlægning og batchafvikling blive genoprettet og genoptaget umiddelbart efter opdateringen. Der findes prioriteret batchplanlægning for kunderne, før de begynder at deltage i proaktiv distribution af kvalitetsopdateringer til deres produktionsmiljøer.
 
 - **Mørke timer** – Der er defineret mørke timer for hver Azure-region, og der vil forekomme næsten nul-nedetidsopdateringer i løbet af perioden med mørke timer.
 
 ## <a name="the-proactive-update-process"></a>Den proaktive opdateringsproces
 
-Implementering af proaktive kvalitetsopdateringer vil følge en sikker implementeringsproces (SDP). SDP'ens specifikke oplysninger udvikler sig, men kvalitetsopdateringer vil først blive implementeret i sandboksmiljøer. Processen starter med miljøer, hvor der kan installeres før tid. Efterhånden som procentdelen af installerede sandbokse stiger, vil implementering i produktionsmiljøer begynde. Processen starter igen med miljøer, hvor der kan installeres før tid. Lyttesystemer vil overvåge system telemetry og Livesite-hændelser og stopper rollout af en bestemt version, hvis der registreres regression. Kunderne vil stadig kunne trække kvalitetsopdateringerne før proaktiv implementering, hvis det er nødvendigt.
+Implementering af proaktive kvalitetsopdateringer vil følge en sikker implementeringsproces (SDP). SDP'ens specifikke oplysninger udvikler sig, men kvalitetsopdateringer vil først blive implementeret i sandboksmiljøer. Efterhånden som procentdelen af installerede sandbokse stiger, vil implementering i produktionsmiljøer begynde. Lyttesystemer vil overvåge system telemetry og Livesite-hændelser og stopper rollout af en bestemt version, hvis der registreres regression. Kunderne vil stadig kunne trække kvalitetsopdateringerne før proaktiv implementering, hvis det er nødvendigt.
 
 De aktuelle data for frigivelsesstyring viser, at mindre end 3 procent af generne introduceres i kvalitetsopdateringer. Med øget fokus på eliminering af genstigning og et udvidet SDP vil den potentielle virkning af genvurdering være betydeligt lavere end den kvalitetsvind, der opnås, hvis de bliver implementeret overordnet på kunderne.
 
@@ -92,13 +92,13 @@ Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planla
 **App-version: 10.0.1326.70**
 **Tilsvarende seneste KB-artikel: 748926**
 
-| Station | Områder | Kommende sandkasseplan
-|---|---|---|
-| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 14. oktober til 17. oktober 2022 |
-| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 15. oktober til 18. oktober 2022 |
-| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 16. oktober til 19. oktober 2022 |
-| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022 |
-| Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt |
+| Station | Områder | Fuldført tidsplan | Kommende sandkasseplan|
+|---|---|---|---|
+| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 14. oktober til 17. oktober 2022 | 2. november til 5. november 2022 |
+| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 15. oktober til 18. oktober 2022 | 2. november til 5. november 2022 |
+| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 16. oktober til 19. oktober 2022 | 2. november til 5. november 2022 |
+| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022 | 2. november til 5. november 2022 |
+| Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
 
 > [!IMPORTANT] 
 > Fem dage i forvejen opdaterer Microsoft den foregående plan og sender e-mail-beskeder til det sæt miljøer, der er planlagt til at modtage disse kvalitetsopdateringer. Den foregående plan gælder kun for miljøer, der er blevet gjort besked om en forestående opdatering. Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planlagte vedligeholdelsesvinduer efter region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

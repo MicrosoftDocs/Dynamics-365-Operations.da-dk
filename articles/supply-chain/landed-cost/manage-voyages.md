@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905857"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725463"
 ---
 # <a name="manage-voyages"></a>Administrere fragter
 
@@ -29,7 +29,8 @@ En fragt repræsenterer typisk et fartøj. Afhængigt af dine fremgangsmåder og
 Siden **Alle fragter** indeholder oplysninger om fragt, levering og efterkalkulation samt oplysninger om varer, indkøbsordrer og flytteordrer. Du kan åbne siden **Alle fragter** ved at gå til **Landingsomkostninger \> Fragter \> Alle fragter**. På denne side vises en liste over alle aktuelle fragter. Du kan oprette, slette og arbejde med fragter ved at bruge knapperne i handlingsruden. Vælg en fragt på listen for at få vist detaljerne.
 
 > [!NOTE]
-> Forsendelsescontainere og folioer er kædet sammen med en fragt. Indkøbslinjer er knyttet til en forsendelsescontainer. Hvis forsendelsescontainere og folioer er deaktiveret, kan de også knyttes direkte til en fragt. Derudover er de omkostninger, der angives her, fordelt på alle tilknyttede indkøbslinjer.
+> Forsendelsescontainere og folioer er kædet sammen med en fragt. Indkøbslinjer er knyttet til en forsendelsescontainer. Derudover er de omkostninger, der angives her, fordelt på alle tilknyttede indkøbslinjer.
+> Projektindkøbsordre understøttes ikke i Landingsomkostninger.
 
 ## <a name="action-pane"></a>Handlingsrude
 

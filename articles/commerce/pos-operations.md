@@ -2,7 +2,7 @@
 title: POS-handlinger, online og offline
 description: Denne artikel indeholder oplysninger om POS-handlinger i Dynamics 365 Commerce. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272843"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728270"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
@@ -101,7 +101,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 212  | Oplysninger om flådekort                                   | Denne handling understøttes ikke.                                                                                                                                                                                | Ikke relevant | Ikke relevant     | Ikke relevant | Ikke relevant    | Ikke relevant  |
 | 213  | Kreditnotabetaling                                   | Acceptér en kreditnota (bilag), som butikken udstedte.                                                                                                                                                          | Ja            | Ja                | Nej             | Nej                | Nej              |
 | 214  | Gavekortbetaling                                     | Accepter et gavekort, der er udstedt af butikken.                                                                                                                                                                      | Ja            | Ja                | Nej             | Nej                | Nej              |
-| 215  | Gavekort til udbetaling                                | Denne handling understøttes ikke.                                                                                                                                                                                | Ja            | Ja                | Nej             | Nej                | Nej              |
+| 215  | Gavekort til udbetaling                                | Kredittransaktion med det fulde beløb for resterende gavekortsaldo, hvis det er inden for den konfigurerede udbetalingsgrænse.                                                                                                                                                                              | Ja            | Ja                | Nej             | Nej                | Nej              |
 | 216  | Præcis betaling med kort                                    | Denne handling understøttes ikke.                                                                                                                                                                                | Ikke relevant | Ikke relevant     | Ikke relevant | Ikke relevant    | Ikke relevant  |
 | 217  | Præcis betaling med check                                   | Denne handling understøttes ikke.                                                                                                                                                                                | Ikke relevant | Ikke relevant     | Ikke relevant | Ikke relevant    | Ikke relevant  |
 | 218  | Præcis betaling med kundekonto                        | Denne handling understøttes ikke.                                                                                                                                                                                | Ikke relevant | Ikke relevant     | Ikke relevant | Ikke relevant    | Ikke relevant  |

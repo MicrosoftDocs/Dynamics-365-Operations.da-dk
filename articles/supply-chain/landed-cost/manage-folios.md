@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905886"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725471"
 ---
 # <a name="manage-folios"></a>Administrere folioer
 
@@ -48,9 +48,9 @@ I følgende tabel beskrives de knapper, der er tilgængelige i handlingsruden un
 
 | Knap | Beskrivelse |
 |---|---|
-| Bogfør tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i folioen. Hvis der bruges forsendelser for flere virksomheder, åbnes en ny dialogboks til bogføring af tilgangslisten for hvert firma. |
-| Bogfør produktkvittering | Bogfør en produktkvittering for alle indkøbsordrelinjer i folioen. Hvis der bruges fragter for flere virksomheder, åbnes en ny produktkvittering til bogføring for hvert firma. |
-| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i folioen. Hvis der bruges fragter for flere virksomheder, åbnes en ny dialogboks til fakturabogføring for hvert firma. |
+| Bogfør tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i folioen.  |
+| Bogfør produktkvittering | Bogfør en produktkvittering for alle indkøbsordrelinjer i folioen. |
+| Bogfør faktura | Bogfør en faktura for alle indkøbsordrelinjer i folioen.  |
 | Forsendelsesflytteordre | Bogfør en flytteordre for alle flytteordrelinjer, der er relateret til den aktuelle folio i den relaterede forsendelse. |
 | Modtag flytteordre | Bogfør en flytteordrekvittering for alle flytteordrelinjer, der er relateret til den aktuelle folio i den relaterede forsendelse. |
 | Modtag varer i transit | Modtag alle ordrelinjer, der er i transit, i folioen. |
@@ -65,7 +65,7 @@ I følgende tabel beskrives de knapper, der er tilgængelige i handlingsruden un
 
 | Knap | Beskrivelse |
 |---|---|
-| Tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i folioen. Hvis der bruges fragter for flere virksomheder, åbnes en dialogboks til bogføring af en ny tilgangsliste for hvert firma. |
+| Tilgangsliste | Bogfør en tilgangsliste for alle indkøbsordrelinjer i folioen.  |
 | Produktkvittering | Se produktkvitteringsposten, hvis den bruges. |
 | Varemodtagelse | Se varemodtagelseskladden, hvis den bruges. |
 | Omkostningsforespørgsel | Åbn forespørgselssiden for omkostninger for at få vist alle omkostningerne for en fragt, herunder forsendelsescontaineren, folioen og indkøbsordren. Du kan justere den nøjagtige visning af siden ved hjælp af handlingen Vis. På forespørgselssiden med omkostninger kan du få vist et hvilket som helst område samt koden for varen og omkostningstypen. Hvis du fjerner disse varer, kan du justere siden ved at gruppere omkostninger. Denne egenskab kan være nyttig, hvis du bruger størrelser og farver. Du kan ændre de dimensioner, der vises på siden. På siden **Omkostninger** vises kun omkostningstypekoder, hvor posten **Dr** under fanen **Bogføring** er angivet til *Vare*. |

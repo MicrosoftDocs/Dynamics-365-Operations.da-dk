@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151077"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734352"
 ---
 # <a name="human-resources-customer-migration"></a>Overførsel af Human Resources-kunde
 
@@ -40,7 +40,7 @@ Kunder, der bruger andre apps i finans og drift-infrastrukturen, får mulighed f
 Overflytningen for hver organisation afhænger af den aktuelle konfiguration og parathed med hensyn til overflytning til finans og drift-infrastrukturen. Det anbefales, at kunder arbejder sammen med deres Microsoft-partner for at finde den bedste sti fremad.
 
 - Organisationer, der bruger **Human Resources**-modulet i Dynamics 365 Finance, vil kunne aktivere nye egenskaber fra Dynamics 365 Human Resources som en del af den almindelige proces til opdatering af Én version. Der planlægges nye funktioner til at blive generelt tilgængelige fra januar 2022.
-- Organisationer, der bruger Dynamics 365 Human Resources, har adgang til værktøjer, som de kan bruge til at fuldføre fletningen af infrastrukturen. Microsoft vil arbejde sammen med kunderne om overførsel for at hjælpe med at forhindre, at der opstår problemer med servicen. Kunderne har 12-18 måneder til at foretage overførslen med start fra det tidspunkt, hvor overflytningsværktøjet bliver tilgængeligt.
+- Organisationer, der bruger Dynamics 365 Human Resources, har adgang til værktøjer, som de kan bruge til at fuldføre fletningen af infrastrukturen. Microsoft vil arbejde sammen med kunderne om overførsel for at hjælpe med at forhindre, at der opstår problemer med servicen. Kunderne har 12 måneder til at foretage overførslen med start fra det tidspunkt, hvor overflytningsværktøjet bliver tilgængeligt.
 - Organisationer, som både Dynamics 365 Human Resources og **Human Resources** bruger modulet kan flytte deres enkeltstående Human Resources-infrastruktur til finans og drift-infrastrukturen. En anden mulighed er at bruge fletteværktøjet til at få miljøet i ét enkelt miljø. Der er ingen krav eller tidsramme for fletning af de to miljøer.
 
 Du kan finde opdaterede oplysninger ved jævnligt at kontrollere [frigivelsesplanerne](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ Microsoft definerer stadig, hvilke værktøjer og ressourcer der skal være tilg
 
 ## <a name="licensing-impact"></a>Påvirkning af licenser
 
-Yderligere oplysninger om, hvordan licenserne påvirker finder du i [Ofte stillede spørgsmål om Dynamics 365 Human Resources-infrastrukturfletning](hr-infrastructure-merge-faq.md#licensing-impact).
+Yderligere oplysninger om, hvordan licenserne påvirkes, finder du i [Dynamics 365 Human Resources-infrastrukturfletning](hr-infrastructure-merge.md#licensing).

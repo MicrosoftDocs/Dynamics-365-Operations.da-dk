@@ -2,19 +2,19 @@
 title: Referencekoder til fejl i betalingsmodulet
 description: Denne artikel beskriver referencekoder for fejl i betalingsmodulet, der vises som fejlmeddelelser for brugeren i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709652"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728239"
 ---
 # <a name="checkout-module-error-reference-codes"></a>Referencekoder til fejl i betalingsmodulet
 
@@ -31,9 +31,13 @@ Afhængigt af den fejl, der opstår, indeholder tabellen i denne artikel følgen
 - Oplysninger, der skal overvejes i konfigurationer af miljøet eller betalings-connector
 - Oplysninger, der kan refereres til i en supportsag, hvis der kræves yderligere hjælp
 
+## <a name="prerequisites"></a>Forudsætninger
+
+Hvis du vil aktivere referencekoder for fejl i modulet til betaling ved kassen, skal du gå til **Indstillinger for websted \> Udvidelser**, og i sektionen **Indkøbsvogn og betaling** skal du vælge **Aktivér udvidet visning af fejlmeddelelser i onlinekanal**. 
+
 ## <a name="checkout-module-error-reference-codes"></a>Referencekoder til fejl i betalingsmodulet
 
-Du kan bruge tabellen nedenfor til at få flere detaljer om fejlkodereferencer, der leveres af kunder eller opleves i onlinebutikken.
+Du kan bruge tabellen nedenfor til at få flere detaljer om fejlkodereferencer, der leveres af kunder eller opleves i onlinebutikken. Rul til højre for at få vist kolonnen **Fejlbeskrivelse**.
 
 | Fejlkode | Dynamics-korreleret fejlkode | Fejlbeskrivelse |
 | ---------- | ------------------------------ | ----------------- |

@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286885"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734239"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivere ordreopslag for gæsteudbetaling
 
@@ -73,6 +73,11 @@ Før gæstebrugere kan få vist deres ordredetaljer, skal siden med ordredetalje
 I ordrerelaterede mails kan du angive et link eller en knap, der fører kunder til siden med ordredetaljerne for deres ordre. Hvis du vil tilføje dette link eller denne knap, skal du oprette et HTML-link, der peger på siden med ordredetaljer på e-handelswebstedet, og overføre ordrebekræftelses-id'et og kundens mailadresse som URL-parametre, som vist i følgende eksempel.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> Hvis du vil aktivere funktionen til ordreopslag, skal du sikre dig, at nøglen **Tilbud** er aktiveret under **Licenskonfiguration** > **Konfigurationsnøgler**.
+>
+>![Konfiguration af tilbudslicensnøglen skal være aktiveret](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -1,50 +1,33 @@
 ---
 title: Refusioner i den offentlige sektor
 description: Denne artikel besvarer almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
-author: velofog
-ms.date: 06/20/2017
+author: JodiChristiansen
+ms.date: 11/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: velofog
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 27311
 ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
 ms.search.industry: Public sector
 ms.search.form: CustBillingClassification
-ms.openlocfilehash: c13d30c879c0544191b89acaa325cef317248e71
-ms.sourcegitcommit: 1a7729a6ce4f3fcf68bdc4cfdad746a5553da3c5
+ms.openlocfilehash: 4155d2a0ceb4e9b55bb1c9b2f04d15f43add8cc3
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573074"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734310"
 ---
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel besvarer almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
-
-## <a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
-
-Når du opretter en separat refusionspostering for hver faktureringsklassifikation, samles kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har samme faktureringsklassifikation til en enkelt refusionspostering. Der oprettes separate refusionsposteringer for kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har forskellige faktureringsklassifikationer. Lad os f.eks. antage, du behandler refusioner til tre kreditnotaer. Alle tre kreditnotaer er $1000.
-
--   Første kreditnota har faktureringsklassifikation UTL, er fordelt på tre firmaer, med 15 % til konto 1110, 30 % til konto 2210 og 55 % til konto 3210.
--   Den anden kreditnota har også faktureringsklassifikation UTL. Den er distribueret 100 % til konto 3210.
--   Den tredje kreditnota med faktureringsklassifikationen GEN er distribueret 100 % til konto 1110.
-
-Hvis du opretter en separat refusionspostering for hver faktureringsklassifikation, vil fire refusionsposteringer blive oprettet, på følgende måde:
-
--   $150 til konto 1110
--   $1000 til konto 1110
--   $300 til konto 2210
--   $1550 til konto 3210
-
-De beløb, der går til konto 3210, kombineres, fordi de begge bruger samme faktureringsklassifikation. De beløb, der går til konto 1110, kombineres ikke, fordi de ikke bruger samme faktureringsklassifikation. Hvis du ikke opretter en separat refusion for hver faktureringsklassifikation, vil posteringerne for konto 1110 blive kombineret, og kun tre refusionsposteringer vil blive oprettet.
 
 ## <a name="how-do-billing-classifications-affect-reimbursements-for-overpayments"></a>Hvordan påvirker faktureringsklassifikationer refusioner for overbetalinger?
 Det gør de ikke. Faktureringsklassifikationer anvendes aldrig til debitorbetalinger, så de bruges ikke ved behandling af refusioner for overbetalinger.
