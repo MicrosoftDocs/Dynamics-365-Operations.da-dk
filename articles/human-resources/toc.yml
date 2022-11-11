@@ -541,7 +541,11 @@
                     - name: Rekruttere jobkandidater
                       href: hr-personnel-recruit.md
         - name: Opgavestyring
-          href: hr-task-mgmt.md
+          items:
+            - name: Oversigt
+              href: hr-task-mgmt.md
+            - name: Opgrader opgavestyring
+              href: hr-task-update.md
         - name: Orlov og fravær
           items:
             - name: Oversigt
@@ -822,7 +826,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
             - name: Administrere tilpasninger for arbejdere
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: HR-udvikling
+    - name: Human Resources-udvikling
       items:
         - name: Oversigt
           href: hr-developer-overview.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Brugerdefinerede felter
           href: hr-developer-custom-fields.md
+        - name: Udvikle og tilpasse
+          items:
+            - name: Enum for kønsbasis
+              href: enum-exten.md
         - name: Konfigurer dataintegration
           items:
             - name: Vælg en dataintegrationsteknologi

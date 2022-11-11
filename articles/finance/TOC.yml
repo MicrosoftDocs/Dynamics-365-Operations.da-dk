@@ -450,7 +450,9 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiere en faktureringstidsplan
                       href: accounts-receivable/sb-copy-schedules-items.md
-                    - name: Funktioner i faktureringsplaner
+                    - name: Debitoropdeling med en faktureringstidsplan
+                      href: accounts-receivable/sb-customer-split.md
+                    - name: Funktioner i faktureringstidsplaner
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milepælsfakturering
                       href: accounts-receivable/sb-milestonebilling.md
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Arbejdsområde til afslutning på regnskabsperiode
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Optimer årsafslutning
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Årsafslutning
                   href: general-ledger/year-end-close.md
                 - name: Lukke regnskabsåret
@@ -4661,7 +4665,7 @@
               items:
                 - name: Tilgængelige arbejdsområder til mobilenheder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/finance
-                - name: Aktivadministration
+                - name: Aktivstyring
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
                 - name: Firmaadressekartotek
                   href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
