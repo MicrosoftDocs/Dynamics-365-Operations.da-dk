@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689770"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740817"
 ---
 # <a name="visual-and-collaborative-execution"></a>Udførelse af visuel grafik og samarbejde
 
@@ -34,7 +34,7 @@ I Microsoft Dynamics 365 Supply Chain Management kan du visuelt spore, hvordan b
 1. Vælg en frigivet vare, der er konfigureret som et afkoblingspunkt. (Du finder flere oplysninger under [Lagerpositionering](ddmrp-inventory-positioning.md).)
 1. Vælg **Plan** i handlingsruden, og vælg derefter **Varedisponering**.
 1. Vælg en varedisponeringspost, der opretter et disponeringspunkt på siden **Varedisponering**. (Denne post viser navnet på en disponeringsgruppe, der er konfigureret til at oprette disponeringspunkter).
-1. Vælg fanen **Disponibel**. Denne fane indeholder et diagram, der viser, hvordan disponible antal er ændret over tid, sammen med værdien af det disponible niveau, der er registreret for en bestemt periode, hver gang planlægningsoptimering køres. Fanen indeholder også en tabel, der viser, hvilke af følgende kategorier hver af de registrerede sikkerhedsniveau falder i:
+1. Vælg fanen **Disponibel**. Denne fane indeholder et diagram, der viser, hvordan disponible antal er ændret over tid, sammen med værdien af det disponible niveau, der er registreret for en bestemt periode, hver gang varedisponering køres. Fanen indeholder også en tabel, der viser, hvilke af følgende kategorier hver af de registrerede sikkerhedsniveau falder i:
 
     - **Kritisk lav** – Mindre end halvdelen af minimum for perioden.
     - **Lav** – Mellem halv minimum og minimum.

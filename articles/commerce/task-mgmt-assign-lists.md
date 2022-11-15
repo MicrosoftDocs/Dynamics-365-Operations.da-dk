@@ -2,23 +2,23 @@
 title: Tildele opgavelister til butikker eller medarbejdere
 description: Denne artikel beskriver, hvordan du tildeler opgavelister til butikker eller medarbejdere i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 8aa1d61e235244ee9400419e51da638c059892e5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: faff772051738f624b86fd23fb6bf29173e909ea
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284651"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746188"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tildele opgavelister til butikker eller medarbejdere
 
@@ -30,7 +30,7 @@ Opgavestyring i Dynamics 365 Commerce giver dig mulighed for at tildele en opgav
 
 ## <a name="start-the-task-list-assignment-process"></a>Start tildelingsprocessen for opgavelisten
 
-Benyt følgende fremgangsmåde for at starte tildelingen af en opgaveliste.
+Før du går i gang med at tildele opgaver, skal du sørge for at oprette en opgaveliste ved at følge trinnene i artiklen [Oprette opgavelister og tilføje opgaver](task-mgmt-create-lists.md). Benyt følgende fremgangsmåde for at starte tildelingen af en opgaveliste.
 
 1. Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.
 1. Vælg den opgaveliste, der skal tildeles.

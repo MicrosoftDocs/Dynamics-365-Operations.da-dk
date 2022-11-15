@@ -1,6 +1,6 @@
 ---
 title: Disponeringstidshorisonter
-description: Denne artikel beskriver, hvordan disponeringstidshorisonter defineres, når du bruger Planlægningsoptimering. En disponeringstidshorisont angiver planlægningshorisonten og -grænsen.
+description: Denne artikel beskriver, hvordan du konfigurerer disponeringstidshorisonter. En disponeringstidshorisont angiver planlægningshorisonten og -grænsen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847927"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740107"
 ---
 # <a name="coverage-time-fences"></a>Disponeringstidshorisonter
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel beskriver, hvordan *disponeringstidshorisonter* defineres, når du bruger Planlægningsoptimering. Planlæggere kan definere planlægningshorisonten (disponeringstidshorisonten i dage) og udelukke udbud og efterspørgsel, der ligger uden for denne tidshorisont. Derfor medvirker disponeringstidshorisonter til at forhindre "støj", der forårsages af forsyningsforslag, som du ikke behøver at reagere på i flere måneder. Dette kan f.eks. omfatte prognose- og kundeordrer for næste år, som ligger langt ud over den normale gennemløbstid.
+Denne artikel beskriver, hvordan du konfigurerer *disponeringstidshorisonter*. Planlæggere kan definere planlægningshorisonten (disponeringstidshorisonten i dage) og udelukke udbud og efterspørgsel, der ligger uden for denne tidshorisont. Derfor medvirker disponeringstidshorisonter til at forhindre "støj", der forårsages af forsyningsforslag, som du ikke behøver at reagere på i flere måneder. Dette kan f.eks. omfatte prognose- og kundeordrer for næste år, som ligger langt ud over den normale gennemløbstid.
 
 En disponeringstidshorisont er det antal dage efter dags dato (eller mere præcist den dato, hvor planlægningen køres), hvor udbud og efterspørgsel udelukkes. Hvis du vil undgå forsinkelser, skal du sikre dig, at disponeringstidshorisonten er længere end den samlede leveringstid. Systemets standardværdi er 100 dage.
 
@@ -82,9 +82,9 @@ Når du konfigurerer disponeringstidshorisonter, skal du overveje følgende:
 - Behovstransaktioner genereres ikke for noget behov og efterspørgsel, der ligger uden for disponeringstidshorisonten.
 - Hvis godkendt behov og efterspørgsel falder uden for disponeringstidshorisonten, indlæses den ikke i programmet. Derfor udløser den ikke genopfyldninger, og der beregnes ikke forsinkelser. Dette udbud og efterspørgsel bør dog ikke fjernes fra systemet.
 - Variationer i sikkerhedslagermængder (fra minimumnøgler) ignoreres, hvis de falder uden for disponeringstidshorisonten.
-- Internt behov ignoreres, hvis den ønskede afsendelsesdato, der beregnes, ikke er inden for disponeringstidshorisonten. Bemærk, at den interne efterspørgsel i forbindelse med indbygget varedisponering ikke er begrænset til disponeringstidshorisonten.
-- Behovsprognoser ignoreres, hvis budgetdatoen ikke ligger inden for disponeringstidshorisonten. Bemærk, at behovsprognoser for indbygget varedisponering ikke er begrænset til disponeringstidshorisonten.
-- Planlægningsoptimering er tidszonebaseret. Den tager højde for tidszonen på udbuds- og efterspørgselsstederne samt tidspunktet for planlægningskørslen. Varedisponering udløses f.eks. den 15. oktober kl. 11 fra et sted i Danmark (GMT+1 tidszone), og der bruges en disponeringstidshorisont på ti dage. I dette tilfælde medtages behov og efterspørgsel fra et sted i Seattle (GMT-8 tidszone) indtil 25. oktober kl 2 (= ti 24-timers dage efter, at varedisponering blev udløst, minus tidszonedifferencen på ni timer). Bemærk, at det indbyggede varedisponeringsprogram kun tager højde for datoen i tidshorisonten. Resultatet kan derfor variere.
+- Internt behov ignoreres, hvis den ønskede afsendelsesdato, der beregnes, ikke er inden for disponeringstidshorisonten. Bemærk, at den interne efterspørgsel i forbindelse med det udfasede varedisponeringsprogram ikke er begrænset af disponeringstidshorisonten.
+- Behovsprognoser ignoreres, hvis budgetdatoen ikke ligger inden for disponeringstidshorisonten. Bemærk, at behovsprognoser i forbindelse med det udfasede varedisponeringsprogram ikke er begrænset af disponeringstidshorisonten.
+- Planlægningsoptimering er tidszonebaseret. Den tager højde for tidszonen på udbuds- og efterspørgselsstederne samt tidspunktet for planlægningskørslen. Varedisponering udløses f.eks. den 15. oktober kl. 11 fra et sted i Danmark (GMT+1 tidszone), og der bruges en disponeringstidshorisont på ti dage. I dette tilfælde medtages behov og efterspørgsel fra et sted i Seattle (GMT-8 tidszone) indtil 25. oktober kl 2 (= ti 24-timers dage efter, at varedisponering blev udløst, minus tidszonedifferencen på ni timer). Bemærk, at det udfasede varedisponeringsprogram kun tager højde for datoen i tidshorisonten. Resultatet kan derfor variere.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

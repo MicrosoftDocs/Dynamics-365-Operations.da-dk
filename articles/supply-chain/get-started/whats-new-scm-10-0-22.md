@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124784"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740404"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management (10.0.22. november 2021)
 
@@ -53,8 +53,8 @@ Vi har for nylig tilføjet eller væsentligt opdateret følgende Hjælp-artikler
 |---|---|
 | Styring af tekniske ændringer | [Oversigt over ændringsstyring for teknikere](../engineering-change-management/product-engineering-overview.md) viser nu alle relaterede valgfrie funktioner, der findes i funktionsstyring |
 | Varedisponering | [Konfigurere behovsprognoser](../master-planning/demand-forecasting-setup.md) |
-| Varedisponering | [Oplysninger om nettobehov og udligning med planlægningsoptimering](../master-planning/planning-optimization/net-requirements.md) |
-| Lagerstedsstyring | [Udgivelse til lagersted](../warehousing/release-to-warehouse-process.md) giver en detaljeret oversigt over den fulde frigivelse til lagerstedsproces |
+| Varedisponering | [Nettobehov og udligningsoplysninger](../master-planning/planning-optimization/net-requirements.md) |
+| Warehouse management | [Udgivelse til lagersted](../warehousing/release-to-warehouse-process.md) giver en detaljeret oversigt over den fulde frigivelse til lagerstedsproces |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f36459e21d96325151aa7fe90f3824b07c2536c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 6f7289e7ecee49353ca8ee4554914a08074401df
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469975"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740489"
 ---
 # <a name="master-planning-home-page"></a>Startside for varedisponering
 
@@ -83,7 +83,6 @@ Du kan finde yderligere hjælp i form af opgaveguider. Du kan få adgang til opg
 ### <a name="tech-conference-recordings"></a>Optagelser af tekniske konferencer
 
 - [Udvide behovsprognosefunktionen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Varedisponering – tip og trick til forbedring af ydeevnen](https://youtu.be/7v8BPmEs9Dg)
 - [Justering af MRP-ydeevne](https://youtu.be/RLXybx20B5o)
 
 

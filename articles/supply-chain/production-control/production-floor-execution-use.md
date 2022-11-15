@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069780"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748707"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Sådan bruges grænsefladen til kørsel af produktionsudstyr af arbejdere
 
@@ -146,9 +146,6 @@ Hvis der oprettes en batchordre ud fra en formelversion, hvor indstillingen **Va
 I dette tilfælde kan arbejderen angive det samprodukt og det antal, der skal rapporteres, ved at vælge **Variationer af samprodukter** i dialogboksen til rapportering af status. Arbejderen kan derefter vælge mellem alle de frigivne produkter, der er defineret som samprodukter.
 
 ### <a name="reporting-catch-weight-items"></a>Rapportering af fastvægtvarer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Medarbejdere kan bruge grænsefladen til produktionsudførelse til at rapportere status for batchordrer, der er oprettet til fastvægtvarer. Batchordrer oprettes ud fra formler, som kan defineres til at have fastvægtvarer som formelvarer, samprodukter og biprodukter. En formel kan også defineres, så den indeholder formellinjer til ingredienser, der er defineret for fastvægt. Fastvægtvarer bruger to måleenheder til at spore lagerbeholdning: fastvægtantal og lagerantal. I fødevarebranchen kan kød i kasser f.eks. defineres som en fastvægtvare, hvor fastvægtantallet bruges til at spore antallet af kasser, og lagerantallet bruges til at spore kassernes vægt.
 

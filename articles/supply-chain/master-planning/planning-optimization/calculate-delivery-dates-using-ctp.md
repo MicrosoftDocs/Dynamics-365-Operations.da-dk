@@ -1,6 +1,6 @@
 ---
 title: Beregne leveringsdatoer for salgsordrer ved hjælp af LE
-description: Med leveringsevnen LE kan du give kunder realistiske datoer for, hvornår du kan love bestemte varer. Denne artikel beskriver, hvordan du kan konfigurere og bruge LE til hvert planlægningsprogram (Planlægningsoptimering og det indbyggede program).
+description: Med leveringsevnen LE kan du give kunder realistiske datoer for, hvornår du kan love bestemte varer. Denne artikel beskriver, hvordan du kan konfigurere og bruge LE til hvert planlægningsprogram (Planlægningsoptimering og det udfasede varedisponeringsprogram).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714854"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741197"
 ---
 # <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Beregne leveringsdatoer for salgsordrer ved hjælp af LE
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Med leveringsevnen LE kan du give kunder realistiske datoer for, hvornår du kan love bestemte varer. For hver salgslinje kan du angive en dato, der tager højde for eksisterende lagerbeholdning, produktionskapacitet og transporttider.
 
 LE udvider DTT-funktionaliteten [available-to-promise](../../sales-marketing/delivery-dates-available-promise-calculations.md) ved at tage kapacitetsoplysninger med i betragtning. Mens DTT kun tager højde for materialetilgængelighed og forudsætter ressourcer med ubegrænset kapacitet, tager LE højde for tilgængeligheden af både materialer og kapacitet. Det giver derfor et mere realistisk billede af, om efterspørgslen kan opfyldes inden for en given tidsramme.
 
-LE fungerer lidt anderledes baseret på den brugte varedisponering (Planlægningsoptimering eller det indbyggede program). Denne artikel beskriver, hvordan du konfigurerer den til hvert program. LE til Planlægningsoptimering understøtter i øjeblikket kun et undersæt af LE-scenarier, der understøttes af det indbyggede program.
+LE fungerer lidt anderledes baseret på den brugte varedisponering (Planlægningsoptimering eller det udfasede varedisponeringsprogram). Denne artikel beskriver, hvordan du konfigurerer den til hvert program. LE til Planlægningsoptimering understøtter i øjeblikket kun et undersæt af LE-scenarier, der understøttes af det udfasede varedisponeringsprogram.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Aktivere LE til planlægningsoptimering
 
-LE til det indbyggede program til varedisponering er altid tilgængelig. Hvis du vil bruge LE til planlægningsoptimering, skal det dog være slået til for systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
+LE til det udfasede varedisponeringsprogram er altid tilgængelig. Hvis du vil bruge LE til planlægningsoptimering, skal det dog være slået til for systemet. Administratorer kan bruge indstillingerne i [Funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til at kontrollere funktionens status og slå den til. I arbejdsområdet **Funktionsstyring** vises funktionen på følgende måde:
 
 - **Modul:** *Varedisponering*
 - **Funktionsnavn:** *(Forhåndsversion) LE til planlægningsoptimering*
@@ -47,9 +48,9 @@ En LE-beregning, der tager højde for både materialer og ressourcer, kan vise e
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>Hvordan LE varierer afhængigt af, hvilket varedisponeringsprogram du bruger
 
-I følgende tabel opsummeres forskellene mellem LE til Planlægningsoptimering og LE til det indbyggede varedisponeringsprogram.
+I følgende tabel opsummeres forskellene mellem LE til Planlægningsoptimering og LE til det udfasede varedisponeringsprogram.
 
-| Applikationsobjekt | Planlægningsoptimering | Indbygget varedisponeringsprogram |
+| Applikationsobjekt | Planlægningsoptimering | Udfaset varedisponeringsprogram |
 |---|---|---|
 | **Leveringsdatokontrol** for ordrer, ordrelinjer og produkter | *LE til planlægningsoptimering* | *LE* |
 | Beregningstidspunkt | Beregningen udløses ved at køre en dynamisk plan som en planlagt opgave. | Beregningen udløses med det samme, hver gang du angiver eller opdaterer en salgsordrelinje. |
@@ -70,8 +71,8 @@ Standardmetoden for leveringsdatokontrol anvendes på alle nye ordrelinjer, hvor
     - *Salgsleveringstid* – Salgsleveringstid er tiden mellem oprettelse af salgsordren og forsendelse af varerne. Beregningen af leveringsdatoen er baseret på antal dage og tager ikke hensyn til varernes tilgængelighed, kendte behov eller planlagte leveringer.
     - *DTT* – DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde på en bestemt dato. DTT-beregningen omfatter leveringstider, der ikke er bindende, planlagte tilgange og afgange.
     - *DTT + Afgangsmargen*– Afsendelsesdatoen er lig med DTT-datoen plus varens afgangsmargen. Afgangsmargenen er den tid, der kræves for at klargøre varerne til afsendelse.
-    - *CTP* – Brug den LE-beregning, der er angivet af det indbyggede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er det ikke tilladt at bruge *LE*-leveringsdatokontrolmetoden, og hvis den er valgt, opstår der en fejl, når beregningen køres.
-    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det indbyggede varedisponeringsprogram.
+    - *CTP* – Brug den LE-beregning, der er angivet af det udfasede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er det ikke tilladt at bruge *LE*-leveringsdatokontrolmetoden, og hvis den er valgt, opstår der en fejl, når beregningen køres.
+    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det udfasede varedisponeringsprogram.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Angive tilsidesættelser af leveringsdatokontrol for individuelle produkter
 
@@ -85,7 +86,7 @@ Du kan tildele tilsidesættelser for bestemte produkter, hvor du vil bruge en an
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a>Planlægge LE for beregninger af planlægningsoptimering
 
-Når du bruger LE til planlægningsoptimering, skal du køre en dynamisk plan for at udløse systemet til at udføre LE-beregningerne og derefter angive de bekræftede afsendelses- og tilgangsdatoer for alle relevante ordrer. Planen skal indeholde alle varer, der er nødvendige for bekræftede afsendelses- og modtagelsesdatoer. (Når du bruger LE til det indbyggede planlægningsprogram, udføres LE-beregningerne med det samme lokalt. Derfor behøver du ikke køre en dynamisk plan for at se LE-resultaterne).
+Når du bruger LE til planlægningsoptimering, skal du køre en dynamisk plan for at udløse systemet til at udføre LE-beregningerne og derefter angive de bekræftede afsendelses- og tilgangsdatoer for alle relevante ordrer. Planen skal indeholde alle varer, der er nødvendige for bekræftede afsendelses- og modtagelsesdatoer. (Når du bruger LE til det udfasede varedisponeringsprogram, udføres LE-beregningerne med det samme lokalt. Derfor behøver du ikke køre en dynamisk plan for at se LE-resultaterne).
 
 Hvis du vil sikre, at datoerne er tilgængelige i god tid for alle brugere, anbefales det, at du konfigurerer batchjob til at køre de relevante planer på gentagende basis. Et batchjob, der er konfigureret til at køre en dynamisk plan hvert 30. minut, angiver f.eks. de bekræftede afsendelses- og modtagelsesdatoer hvert 30. minut. Derfor skal brugere, der indtaster og importerer ordrer, vente maks. 30 minutter på at få de bekræftede afsendelses- og modtagelsesdatoer.
 
@@ -98,17 +99,17 @@ Hvis du vil konfigurere et batchjob til at køre en dynamisk plan regelmæssigt,
 1. Vælg **OK** for at gemme tidsplanen.
 1. Vælg **OK** for at oprette batchjobbet og lukke dialogboksen.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>Bruge LE til indbygget varedisponering
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>Bruge LE til det udfasede varedisponeringsprogram
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Oprette en ny ordre ved hjælp af LE til indbygget varedisponering
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Oprette en ny ordre ved hjælp af LE til det udfasede varedisponeringsprogram
 
 Hver gang du tilføjer en ny salgsordre eller ordrelinje, tildeles den en standardkontrolmetode for leveringsdato. Ordrehovedet starter altid med den globale standardmetode. Hvis der er knyttet en tilsidesættelse til en bestilt vare, bruger den nye ordrelinje denne tilsidesættelse. Ellers bruger den nye ordrelinje også den globale standardmetode. Du skal derfor angive standardmetoder, så de matcher den metode til leveringsdatokontrol, du bruger oftest. Når du har oprettet en ordre, kan du tilsidesætte standardmetoden på ordrehoved- og/eller ordrelinjeniveau efter behov. Yderligere oplysninger finder du i [Angive standardmetoder for leveringsdatokontrol](#default-methods) og [Ændre eksisterende salgsordrer, så de bruger LE](#change-orders).
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Se bekræftede leveringsdatoer, når du bruger LE til indbygget varedisponering
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Se bekræftede leveringsdatoer, når du bruger LE til det udfasede varedisponeringsprogram
 
-Hvis du bruger det indbyggede varedisponeringsprogram, anvendes LE-beregninger på ordrer og/eller ordrelinjer, hvor feltet **Leveringsdatokontrol** er angivet til *LE*.
+Hvis du bruger det udfasede varedisponeringsprogram, anvendes LE-beregninger på ordrer og/eller ordrelinjer, hvor feltet **Leveringsdatokontrol** er angivet til *LE*.
 
-Til salgslinjer, der bruger LE til indbygget varedisponering, indstiller systemet automatisk felterne **Bekræftet afsendelsesdato** og **Bekræftet modtagelsesdato**, hver gang du gemmer en salgslinje. Hvis du senere foretager en relevant ændring af en salgslinje (f.eks. ved at ændre antallet eller stedet), genberegnes datoerne med det samme.
+Til salgslinjer, der bruger LE til det udfasede varedisponeringsprogram, indstiller systemet automatisk felterne **Bekræftet afsendelsesdato** og **Bekræftet modtagelsesdato**, hver gang du gemmer en salgslinje. Hvis du senere foretager en relevant ændring af en salgslinje (f.eks. ved at ændre antallet eller stedet), genberegnes datoerne med det samme.
 
 - Hvis du vil have vist de bekræftede leveringsdatoer for en salgsordrelinje, skal du åbne salgsordren og vælge salgslinjen. I oversigtspanelet **Linjedetaljer** skal du under fanen **Levering** gennemgå felterne **Bekræftet afsendelsesdato** og **Bekræftet modtagelsesdato**.
 - Hvis du vil have vist de bekræftede leveringsdatoer for en hel ordre, skal du åbne salgsordren og vælge **Overskrift**. I oversigtspanelet **Levering** skal du gennemgå værdierne af felterne **Bekræftet afsendelsesdato** og **Bekræftet modtagelsesdato**.
@@ -155,8 +156,8 @@ Hvis du vil ændre en ordre, så den bruger LE på ordreoverskriftsniveau, skal 
 1. Vælg **Overskrift** for at åbne overskriftsoplysningerne på siden **Oplysninger om salgsordre**.
 1. I oversigtspanelet **Levering** skal du angive feltet **Leveringsdatokontrol** til en af følgende værdier, afhængigt af det planlægningsprogram du bruger:
 
-    - *CTP* – Brug den LE-beregning, der er angivet af det indbyggede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er metoden *LE* for leveringsdatokontrol ikke tilladt. Hvis du vælger denne værdi, opstår der derfor en fejl, når beregningen køres.
-    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det indbyggede varedisponeringsprogram.
+    - *CTP* – Brug den LE-beregning, der er angivet af det udfasede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er metoden *LE* for leveringsdatokontrol ikke tilladt. Hvis du vælger denne værdi, opstår der derfor en fejl, når beregningen køres.
+    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det udfasede varedisponeringsprogram.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Vælg **OK** for at anvende ændringerne.
@@ -165,15 +166,15 @@ Hvis du vil ændre en ordre, så den bruger LE på ordreoverskriftsniveau, skal 
 
 Hvis du har oprettet en ordrelinje ved at bruge en anden kontrolmetode for leveringsdato, kan du når som helst skifte til LE. Ændringer, du foretager på linjeniveau, påvirker ikke andre linjer. De kan dog medføre, at de overordnede leveringsdatoer for ordren flyttes frem eller tilbage, afhængigt af hvordan de enkelte opdaterede linjeberegninger ændres. <!-- KFM: Confirm this intro at next revision -->
 
-Hvis du vil ændre en ordre, så den bruger LE til indbygget varedisponering på linjeniveau, skal du følge disse trin.
+Hvis du vil ændre en ordre, så den bruger LE til det udfasede varedisponeringsprogram på linjeniveau, skal du følge disse trin.
 
 1. Gå til **Debitor \> Ordrer \> Alle salgsordrer**.
 1. Åbn den salgsordre, du vil konfigurere, eller opret en ny.
 1. Vælg den salgsordrelinje, du vil konfigurere, i oversigtspanelet **Salgsordrelinje** på siden **Salgsordredetaljer**.
 1. Under fanen **Levering** i oversigtspanelet **Linjedetaljer** skal du angive feltet **Leveringsdatokontrol** til en af følgende værdier, afhængigt af det planlægningsprogram du bruger:
 
-    - *CTP* – Brug den LE-beregning, der er angivet af det indbyggede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er metoden *LE* for leveringsdatokontrol ikke tilladt. Hvis du vælger denne værdi, opstår der derfor en fejl, når beregningen køres.
-    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det indbyggede varedisponeringsprogram.
+    - *CTP* – Brug den LE-beregning, der er angivet af det udfasede varedisponeringsprogram. Hvis du bruger Planlægningsoptimering, er metoden *LE* for leveringsdatokontrol ikke tilladt. Hvis du vælger denne værdi, opstår der derfor en fejl, når beregningen køres.
+    - *LE til planlægningsoptimering* – Brug den LE-beregning, der er leveret af Planlægningsoptimering. Denne indstilling har ingen virkning, hvis du bruger det udfasede varedisponeringsprogram.
 
     Dialogboksen **Tilgængelige afsendelses- og modtagelsesdatoer** vises med de tilgængelige afsendelses- og modtagelsesdatoer. Denne dialogboks fungerer på samme måde for ordrelinjer som i ordreoverskriften som beskrevet i forrige afsnit.
 

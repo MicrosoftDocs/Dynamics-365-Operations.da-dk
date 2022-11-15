@@ -2,7 +2,7 @@
 title: Oversigt over omnikanalbetalinger
 description: Denne artikel giver en oversigt over omni-kanalbetalinger i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881703"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746119"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversigt over omnikanalbetalinger
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikel giver en oversigt over omni-kanalbetalinger i Dynamics 365 Commerce. Det indeholder en omfattende liste over understøttede scenarier, oplysninger om funktionalitet, opsætning og fejlfinding samt beskrivelser af nogle typiske problemer.
 
@@ -43,7 +44,7 @@ Denne artikel giver en oversigt over omni-kanalbetalinger i Dynamics 365 Commerc
 
 ## <a name="overview"></a>Overblik
 
-Generelt beskriver begrebet *omni-kanalbetalinger* muligheden for at oprette en ordre i én kanal og udføre den i en anden kanal. Nøglen til understøttelse af omni-kanalbetalinger er at opbevare betalingsoplysninger sammen med resten af ordredetaljerne og derefter bruge disse betalingsoplysninger, når ordren tilbagekaldes eller behandles i en anden kanal. Et klassisk eksempel er scenariet "Køb online, og afhent i butikken". I dette scenario tilføjes betalingsoplysningerne, når ordren oprettes online. De kaldes derefter ved POS for at debitere kundens betalingskort på afhentningstidspunktet. 
+Generelt beskriver begrebet *omni-kanalbetalinger* muligheden for at oprette en ordre i én kanal og udføre den i en anden kanal. Nøglen til understøttelse af omni-kanalbetalinger er at opbevare betalingsoplysninger sammen med resten af ordredetaljerne og derefter bruge disse betalingsoplysninger, når ordren tilbagekaldes eller behandles i en anden kanal. Et klassisk eksempel er scenariet "Køb online, og afhent i butikken". I dette scenario tilføjes betalingsoplysningerne, når ordren oprettes online. De tilbagekaldes derefter ved POS for at debitere kundens betalingskort på afhentningstidspunktet. 
 
 Alle de scenarier, der er beskrevet i denne artikel, kan implementeres ved hjælp af standard-SDK'et (Software Development Kit), der leveres med Commerce. [Dynamics 365-betalingsconnector til Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) indeholder en out-of-box-implementering af hvert af de scenarier, der beskrives her. 
 
@@ -169,9 +170,9 @@ Følg disse trin for at køre scenariet.
 6. Skriv **Seattle** i søgepanelet, og vælg derefter afhenting i **Seattle**-butikken. 
 7. Vælg **OK** for at acceptere dags dato som datoen for afhentning.
 9. Vælg **Kortbetaling** for at starte betalingen.
-10. Betal det beløb, der er forfaldent for indbetalingen, via kortbetalingen. 
+10. Betal det beløb, der er forfaldent for indbetalingen, via kortbetalingen.
 11. Fuldfør betalingen af indbetalingen på betalingsterminalen. 
-12. Når indbetalingen er foretaget, skal du vælge indstillingen for at bruge samme kort til opfyldelse og vente på, at ordren færdiggøres. 
+12. Når indbetalingen er foretaget, skal du vælge indstillingen for at bruge samme kort til opfyldelse og vente på, at ordren færdiggøres. Hvis 100 % af indbetalingen er betalt (fra trin 10 ovenfor), registreres midlerne med det samme på kortet, og der vil ikke være et godkendelsestoken tilgængeligt ved fakturering, da midlerne allerede er registreret og sporet som betalte.
 13. Start POS for Seattle-butikken.
 14. Vælg handlingen **Ordrer til afhentning** på velkomstsiden i POS for at se ordrerne til afhentning i butik. 
 15. Vælg en eller flere linjer fra den ordre, der blev oprettet i referencebutikken, og vælg derefter **Hent**.
@@ -198,7 +199,7 @@ Følg disse trin for at køre scenariet.
 8. Vælg **Kortbetaling** for at starte betalingen.
 9. Betal det beløb, der er forfaldent for indbetalingen, via kortbetalingen. 
 10. Fuldfør betalingen af indbetalingen på betalingsterminalen. 
-11. Når indbetalingen er foretaget, skal du vælge indstillingen for at bruge samme kort til opfyldelse og vente på, at ordren færdiggøres.
+11. Når indbetalingen er foretaget, skal du vælge indstillingen for at bruge samme kort til opfyldelse og vente på, at ordren færdiggøres. Hvis 100 % af indbetalingen er betalt (fra trin 9 ovenfor), registreres midlerne med det samme på kortet, og der vil ikke være et godkendelsestoken tilgængeligt ved fakturering, da midlerne allerede er registreret og sporet som betalte.
 
 Når ordren er plukket, pakket og faktureret på administrationskontoret, bruges de betalingsoplysninger, der findes på POS, til at registrere betalingsmidlerne for de varer, der skal leveres til kunden. 
 
@@ -225,7 +226,7 @@ En kunde, der kommer med butikken for at afhente sin ordre, har mulighed for at 
 
 ### <a name="invalid-authorizations"></a>Ugyldige godkendelser
 
-Hvis det kort, der blev brugt til at oprette en ordre, ikke længere er gyldigt, når der er valgt produkter til afhentning, vil anmodningen om hentning af betaling mislykkes. POS-betalingsconnectoren vil derefter forsøge at oprette en ny godkendelse og hentning ved hjælp af de samme kortdetaljer. Hvis den nye godkendelse eller hentning mislykkes, bliver kassereren informeret om, at betalingen ikke kan behandles. Kassereren skal derefter få en ny betaling fra kunden. 
+Hvis det kort, der blev brugt til at oprette en ordre, ikke længere er gyldigt, når der er valgt produkter til afhentning, vil anmodningen om hentning af betaling mislykkes. POS-betalingsconnectoren vil derefter forsøge at oprette en ny godkendelse og hentning ved hjælp af de samme kortdetaljer. Hvis den nye godkendelse eller indlæsning mislykkes, bliver kassereren informeret om, at betalingen ikke kan behandles. Kassereren skal derefter få en ny betaling fra kunden. 
 
 ### <a name="multiple-available-payments"></a>Flere tilgængelige betalinger
 

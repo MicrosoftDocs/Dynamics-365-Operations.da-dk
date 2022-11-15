@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 22a71fe66042a9ad189fd6a83a2666dfa64d35d0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 595a51eba1d0cd432d4f4de9405bf9f30a1ae00c
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281990"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746029"
 ---
 # <a name="task-management-in-pos"></a>Opgavestyring i POS
 
@@ -36,6 +36,7 @@ Butikschefer kan udføre følgende opgavehandlinger i POS-programmet ved hjælp 
 - **Opgavestatus** – Ret statussen af de markerede opgaver.
 - **Filter** – Som standard er det kun aktive opgaver, der vises. Ved at anvende filtre kan ledere imidlertid få vist alle opgaver, også opgaver, der er fuldført eller annulleret.
 - **Ny opgave** – Opret en opgave under en eksisterende opgaveliste, eller opret en opgave med et enkelt formål.
+- **Rediger opgave** – Rediger detaljerne om en opgave.
 
 Butiksmedarbejdere kan udføre følgende opgavehandlinger i POS-programmet ved hjælp af knapperne på kommandolinjen:
 

@@ -2,7 +2,7 @@
 title: Betalingsmodul
 description: Denne artikel beskriver, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280468"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746219"
 ---
 # <a name="checkout-module"></a>Betalingsmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Denne artikel beskriver, hvordan du føjer et købefeltmodul til en side og angiver de påkrævede egenskaber.
 
@@ -104,6 +105,8 @@ Hvis du vil føje et betalingsmodul til en ny side og angive de påkrævede egen
 1. Vælg **Afslut redigering** for at tjekke fragmentet ind, og vælg derefter **Publicer** for at publicere det.
 1. Opret en skabelon, der bruger det nye betalingsfragment.
 1. Opret en betalingsside, der bruger den nye skabelon.
+
+> [BEMÆRK] Når du bruger enkeltbetalingsgodkendelse som beskrevet i [Udvidede betalinger ved kassen i storefront](./dev-itpro/enhanced-sca.md), skal du i sektionen **Oplysninger om udtjekning** på betalingssiden bekræfte, at containeren i betalingssektionen er placeret sidst. Derved sikres, at alle nødvendige oplysninger indsamles på siden til betaling ved kassen, før handlingerne til endelig betaling og ordreudførelse fuldføres. 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

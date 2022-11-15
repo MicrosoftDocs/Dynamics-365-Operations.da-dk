@@ -1,6 +1,6 @@
 ---
 title: Sikkerhedsmargener
-description: Denne artikel beskriver, hvordan sikkerhedsmargener kan bruges sammen med tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver, hvordan sikkerhedsmargener fungerer under varedisponering.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335189"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740435"
 ---
 # <a name="safety-margins"></a>Sikkerhedsmargener
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel beskriver, hvordan sikkerhedsmargener kan bruges sammen med tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver, hvordan sikkerhedsmargener fungerer under varedisponering.
 
 ## <a name="safety-margins-overview"></a>Oversigt over sikkerhedsmargener
 
@@ -165,12 +165,5 @@ Alle tre typer sikkerhedsmargener medtages, når systemet bestemmer, om en ordre
 En vare har f.eks. en leveringstid på én dag og en modtagelsesmargen på tre dage. En salgsordre for denne vare angives som påkrævet i dag. I dette tilfælde beregnes forsinkelsen som *leveringstid* + *modtagelsesmargen* = fire dage. Hvis dags dato f.eks. er 14. august, skaber de fire dages forsinkelse en levering den 18. august. Følgende illustration viser dette eksempel.
 
 ![Eksempelberegning af forsinkelse.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Start her med planlægningsoptimering](get-started.md)
-
-[Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

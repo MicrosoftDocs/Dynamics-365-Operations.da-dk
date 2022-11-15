@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337561"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752714"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurere avanceret import af bankafstemning ved hjælp af elektronisk rapportering
 
@@ -34,7 +34,7 @@ Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog o
 2. På feltet for **Microsoft**-konfigurationsudbyderen skal du vælg **Lagre**.
 3. Vælg **Global**, og vælg derefter **Åbn**.
 4. Hvis der skal oprettes en forbindelse til lageret, skal du vælge det blå link i dialogboksen.
-5. Find **Bankkontoudtogsmodel \> Bankkontoudtogsmodel for BAI2** på konfigurationslisten.
+5. Find **Avanceret bankafstemningskontoudtogsmodel \> ABR BAI2-format** på konfigurationslisten.
 6. Vælg formatet **BAI2**.
 7. I oversigtspanelet **Versioner** skal du vælge den seneste version og derefter vælge **Importér**.
 

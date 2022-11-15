@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 327bb259cc108f1fad068c847441229dcaee7ff1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6b03bd1970aa7a2f3276186a0a9f8c2cd2880956
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859221"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741143"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Varedisponering for lokalitetsdisponering, lagersted er ikke obligatorisk
 
@@ -47,15 +47,11 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
-
-[Varedisponering for lokalitets- og lagerdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
-
-[Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-
-[Varedisponering for lokalitetsdisponering, lagersted ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-
-[Bestemme styklisteversionen](master-plan-bom-version-determined.md)
+- [Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+- [Varedisponering for lokalitets- og lagerdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
+- [Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+- [Varedisponering for lokalitetsdisponering, lagersted ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+- [Bestemme styklisteversionen](master-plan-bom-version-determined.md)
 
 
 

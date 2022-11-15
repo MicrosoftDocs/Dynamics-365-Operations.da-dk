@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335279"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740586"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaseret planlægning
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i [DDMRP (Demand Driven Material Requirements Planning)](ddmrp-overview.md). Ved hjælp af prioritetsbaseret planlægning kan Planlægningsoptimering generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
+Denne artikel indeholder en beskrivelse af den prioritetsbaserede planlægningsfunktion i Microsoft Dynamics 365 Supply Chain Management. Denne funktion giver understøttelse af efterspørgselsbaseret planlægning, som er et trin i [DDMRP (Demand Driven Material Requirements Planning)](ddmrp-overview.md). Ved hjælp af prioritetsbaseret planlægning kan systemet generere ordreforslag, der er baseret på planlægningsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbaseret planlægning kan du prioritere genopfyldningsordrer for at sikre, at hasteefterspørgsel prioriteres højere end knap så vigtig efterspørgsel. En lagergenopfyldningsordre prioriteres f.eks. højere end en standardgenopfyldningsordre. Systemet kan automatisk opdele større ordrer i mindre separate ordrer, hvor ordrelinjer grupperes efter prioritet. Derefter kan alle ordrer med høj prioritet behandles først.
 
@@ -37,11 +37,11 @@ Før du kan bruge denne funktion, skal den være aktiveret for dit system. Admin
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Hvor og hvordan planlægningsprioriteter tildeles
 
-*Planlægningsprioritet*-oplysninger om udbud og efterspørgsel er rygraden for prioritetsbaseret planlægning. Planlægningsprioritet definerer vigtigheden af en efterspørgsels- eller udbudslinje. Planlægningsoptimering bruger det, når feltet **Dækningskode** er angivet til *Prioritet*.
+*Planlægningsprioritet*-oplysninger om udbud og efterspørgsel er rygraden for prioritetsbaseret planlægning. Planlægningsprioritet definerer vigtigheden af en efterspørgsels- eller udbudslinje. Varedisponering bruger det, når feltet **Dækningskode** er angivet til *Prioritet*.
 
 Planlægningsprioriteten er normalt et tal mellem 0 (nul) og 100, hvor 0 repræsenterer den største vigtighed. Den vises og angives i feltet **Planlægningsprioritet**. Dette felt findes på følgende sider: **Behovsprognoselinjer**, **Salgsordredetaljer**, **Indkøbsordredetaljer**, **Flytteordredetaljer** og **Oplysninger om ordreforslag**.
 
-Når feltet **Dækningskode** for den relevante vare eller disponeringsgruppe er angivet til *Prioritet*, afstemmer Planlægningsoptimering udbud med efterspørgsel ved hjælp af en efterspørgselsbaseret tilgang, når planlægningsprioriteten beregnes, og for hvert frigivet produkt tages der højde for de værdier, der er angivet for felterne **Minimum**, **Genbestillingspunkt** og **Maksimum** på **Varedisponering**-siden.
+Når feltet **Dækningskode** for den relevante vare eller disponeringsgruppe er angivet til *Prioritet*, afstemmer varedisponering udbud med efterspørgsel ved hjælp af en efterspørgselsbaseret tilgang, når planlægningsprioriteten beregnes, og for hvert frigivet produkt tages der højde for de værdier, der er angivet for felterne **Minimum**, **Genbestillingspunkt** og **Maksimum** på **Varedisponering**-siden.
 
 > [!NOTE]
 > Værdien *Prioritet* er kun tilgængelig for feltet **Dækningskode**, når Planlægningsoptimering er aktiveret.

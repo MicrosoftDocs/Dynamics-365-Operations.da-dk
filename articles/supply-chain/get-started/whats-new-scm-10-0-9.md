@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 421f17402a2f3b37a9ccce9d747e2c0ec865ee39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d7035a7034d084a9bec453557694ce7f29ad347
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854465"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740365"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Nyheder eller ændringer i Dynamics 365 Supply Chain Management 10.0.9 (april 2020)
 
@@ -73,7 +73,7 @@ Følgende funktioner er inkluderet i denne version. Funktionen indeholder links 
 
 - [Parallel autorisation af ordreforslag](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Du kan få flere oplysninger i [Autorisere ordreforslag](../master-planning/planning-optimization/planned-order-firming.md) og i videoen [Forbedringer af MRP's ydeevne og anvendelighed](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Planlægningsoptimering til distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Du kan finde flere oplysninger under [Oversigt over planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planlægningsoptimering til distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Du kan finde flere oplysninger under [Startside for varedisponering](../master-planning/master-planning-home-page.md).
 
 - [Forbedringer af købsaftaler](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Du kan finde flere oplysninger under [Købsaftaler](../procurement/purchase-agreements.md).
 

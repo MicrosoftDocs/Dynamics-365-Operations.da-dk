@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220556"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740188"
 ---
 # <a name="make-to-order-supply-automation"></a>Automatisering af forsyning af levering til ordre
 
@@ -32,12 +32,6 @@ Funktionen *Automatisering af forsyning af levering til ordre* tilføjer flere f
 - Få bedre flow af interne oplysninger. Indkøbsordrer opdateres, så de indeholder felter for leveringsmåde, leveringsbetingelser og eksternt varenummer. Denne ændring sikrer, at der kan opnås detaljerede efterspørgselsoplysninger til leverandørfirmaet.
 
 Denne artikel beskriver, hvordan du konfigurerer og bruger hver enkelt forbedring.
-
-> [!NOTE]
-> Alle de forbedringer, der er beskrevet i denne artikel, gælder for systemer, der bruger indbygget varedisponering. Følgende to forbedringer understøttes også af tilføjelsesprogrammet Planlægningsoptimering til Microsoft Dynamics 365 Supply Chain Management:
->
-> - Forsinkelsestolerance på behovsplaner
-> - Styre den udligningsrækkefølge, der bruges under varedisponering
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Aktivere funktionen Automatisering af forsyning af levering til ordre
 
@@ -73,7 +67,7 @@ Hvis du vil åbne siden **Kapacitetsbelastning**, så du kan gennemse den tilgæ
 
 Disse indstillinger er også tilgængelige i feltet **Opdater markering** under fanen **Standardopdatering** på siden **Varedisponeringsparametre**, hvor du definerer standardvalget i dialogboksen **Autorisation**.
 
-Du kan finde flere oplysninger under [Lagermarkering med Planlægningsoptimering](planning-optimization/marking.md).
+Du finder flere oplysninger under [Lagermarkering](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Angive forsinkelsestolerance (negative dage) på behovsplanniveau
 

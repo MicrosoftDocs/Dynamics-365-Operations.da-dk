@@ -2,7 +2,7 @@
 title: Konfigurere grænsefladen til produktionsudførelse
 description: Denne artikel beskriver, hvordan du opretter en eller flere konfigurationer til grænsefladen til kørsel af produktionsudstyr. Når du åbner grænsefladen til kørsel af produktionsudstyr, indlæser den automatisk en udvalgt konfiguration og et jobfilter, der er specifikt for browseren og enheden. I konfigurationen skal du angive de politikker, der skal gælde for en bestemt anvendelse.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708718"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748680"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grænsefladen til kørsel af produktionsudstyr
 
@@ -85,17 +85,19 @@ Denne funktion giver en forbedret ydeevne, når du får vist lister over serie-,
 
 Før du kan bruge denne funktion, skal den være aktiveret i dit system. Fra og med Supply Chain Management version 10.0.25 er funktionen som standard aktiveret. Fra og med Supply Chain Management version 10.0.29 er denne funktion obligatorisk og kan ikke deaktiveres. Hvis du kører en version, der er ældre end 10.0.29, kan administratorer slå denne funktion til eller fra ved at søge efter funktionen *Vis fulde serie-, batch- og id-numre i grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-
 Fra og med Supply Chain Management version 10.0.25 er denne funktion som standard aktiveret. Administratorer kan slå denne funktion til eller fra ved at søge efter funktionen *Vis fulde serie-, batch- og id-numre i grænsefladen til produktionsudførelse* i arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="register-material-consumption"></a>Registrer materialeforbrug
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Denne funktion giver arbejdere mulighed for at bruge brugergrænsefladen til produktionsudførelse til at registrere materialeforbrug, batchnumre og serienumre. Visse producenter, især dem inden for procesindustrien, skal udtrykkeligt kunne registrere den mængde materiale, der forbruges for de enkelte batch- eller produktionsordrer. Arbejdere kan for eksempel bruge en vægt til at veje mængden af materiale, der forbruges, når de arbejder. For at sikre fuld sporbarhed af materialer skal disse organisationer også registrere, hvilke batchnumre der blev forbrugt ved fremstillingen af de enkelte produkter.
 
 Der er to versioner af denne funktion. Den ene understøtter varer, der *ikke er* aktiveret til brug af lokationsstyringsprocesser (WMS). Den anden understøtter varer, der *er* aktiveret til at bruge WMS. Hvis du vil bruge denne funktion, skal du aktivere en af eller begge følgende funktioner i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rækkefølge), afhængigt af om du har varer, der er aktiveret for WMS:
 
 - *Registrer materialeforbrug i grænsefladen for produktionsudførelse (ikke-WMS)*
-- *Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
+- *(Forhåndsversion) Registrer materialeforbrug i grænsefladen for produktionsudførelse (WMS-aktiveret)*
 
 > [!IMPORTANT]
 > Du kan bruge funktionen ikke-WMS alene. Hvis du bruger WMS, skal du dog aktivere begge funktioner.
@@ -138,6 +140,25 @@ Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktio
 
 - *Yderligere konfiguration af grænsefladen til produktionsudførelse*
 
+### <a name="enable-the-my-jobs-tab"></a>Aktivere fanen Mine job
+
+Fanen **Mine job** giver arbejderne mulighed for nemt at se alle ikke-startede og ikke-færdigmeldte job, der er tildelt specifikt til dem. Den er nyttig i firmaer, hvor job nogle gange eller altid tildeles bestemte arbejdere (personale) i stedet for andre typer ressourcer (f.eks. maskiner).
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Fanen Mine job i grænsefladen til produktionsudførelse*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Aktivér brugen af et numerisk tastatur på logonsiden
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Med denne funktion kan administratorer tilføje et numerisk tastatur på logonsiden i grænsefladen til produktionsudførelse. Arbejdere kan derefter logge på ved at bruge det numeriske tastatur til at angive deres kort-id eller personlige nummer.
+
+Hvis du vil bruge denne funktion, skal du aktivere følgende funktion i [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Aktivér brugen af et numerisk tastatur på loginsiden*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbejde med kørselskonfigurationer for produktionsudstyr
 
 Når du vil oprette og vedligeholde konfigurationer af produktionsudførelse, skal du gå til **Produktionsstyring \> Konfiguration \> Produktionsudførelse \> Konfigurer kørsel af produktionsudstyr**. På siden **Konfigurer kørsel af produktionsudstyr** vises en liste over eksisterende konfigurationer. Du kan udføre følgende opgaver på denne side:
@@ -161,6 +182,7 @@ Følgende oplysninger er tilgængelige under oversigtspanelet **Generelt**:
 - **Lås medarbejder** – Når der er valgt *Nej* i denne indstilling, bliver arbejderne logget af umiddelbart efter, at de har foretaget en registrering (f.eks. et nyt job). Grænsefladen vender derefter tilbage til logonsiden. Når der er valgt *Ja* i denne indstilling, forbliver arbejderne logget på grænsefladen til produktionsudførelse. Men en arbejder kan logge af manuelt, så en anden arbejder kan logge på, mens grænsefladen til produktionsudførelse fortsætter med at køre under den samme systembrugerkonto. Du kan finde flere oplysninger om disse typer konti under [Tildelte brugere](config-job-card-device.md#assigned-users).
 - **Brug det faktiske registreringstidspunkt** – Vælg *Ja* i denne indstilling for at indstille tidspunktet for hver ny registrering til netop det tidspunkt, hvor arbejderen afsendte registreringen. Når der er valgt *Nej* i denne indstilling, bruges logontidspunktet i stedet. Du skal normalt vælge *Ja* i denne indstilling, hvis du har valgt **Ja** i indstillingerne **Lås medarbejder** og/eller *Enkelt arbejder*, i de tilfælde hvor arbejderne ofte forbliver logget ind i længere perioder.
 - **Enkelt arbejder** – Vælg *Ja* i denne indstilling, hvis kun én arbejder bruger en grænseflade til produktionsudførelse, hvor denne konfiguration er aktiv. Når der er valgt *Ja* i denne indstilling, er **Lås medarbejder** også automatisk indstillet til *Ja*. Derudover fjerner denne indstilling kravet (og muligheden) for, at arbejderen logger på ved hjælp af et kort-ID (eller anden lignende id). I stedet logger medarbejderen på Microsoft Dynamics 365 Supply Chain Management ved hjælp af en systembrugerkonto, der er knyttet til en *tidsregistreret arbejder* (fra tabellen *arbejdere*), og som bliver logget på grænsefladen til produktionsudførelse som den pågældende arbejder på samme tid.
+- **Aktivér numerisk tastatur** – Angiv denne indstilling til *Ja*, hvis du vil føje et numerisk tastatur til logonskærmen, der gør det muligt for arbejderne at angive deres kort-id eller personlige nummer på et numerisk tastatur med berøringsskærm. Angiv denne indstilling til *Nej* for at skjule det numeriske tastatur.
 - **Tillad låsning af berøringsskærm** – Angiv denne indstilling til *Ja* for at give arbejderne mulighed for at låse berøringsskærmen på grænsefladen til produktionsudførelse, så de kan rense den. Når denne indstilling er angivet til *Ja*, tilføjes knappen **Lås skærm for rensning** på logonsiden. Når en arbejder vælger denne knap, låses berøringsskærmen midlertidigt for at forhindre utilsigtet input. Der vises også en nedtællingstimer. Arbejderen kan derefter rense enheden og skærmen på sikker vis. Når nedtællingen er fuldført, låses berøringsskærmen automatisk op.
 - **Varighed af låst skærm** – Når indstillingen **Tillad låsning af berøringsskærm** er sat til *Ja*, kan du bruge denne indstilling til at angive, hvor mange sekunder berøringsskærmen skal låses for rensning. Varigheden skal være mellem 5 og 120 sekunder.
 - **Generér nummerplade** – Angiv denne indstilling til *Ja* for at generere en ny nummerplade, hver gang en arbejder bruger grænsefladen til produktionsudførelse til færdigmelding. Nummeret på nummerpladen genereres ud fra en nummerserie, der er konfigureret på siden **Parametre til Warehouse management**. Når der er valgt *Nej* i denne indstilling, skal arbejderne angive en eksisterende nummerplade, når de rapporterer færdigmeldt.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689687"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740080"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Tidsplan og planlægning af kapacitetsbegrænsning
 
@@ -28,9 +28,8 @@ Kapacitetsbegrænsning er en metode, der gør det nemmere at forstå, hvor meget
 
 Hvis der planlægges kapacitetsbegrænsning, oprettes der en mere realistisk tidsplan for produktionsprocesserne, end den ubegrænsede indlæsningsmetode opretter. Hvis der ikke er tilstrækkelig kapacitet på ressourcerne, rykkes leveringsdatoen, og jobbet planlægges, når der er tilstrækkelig kapacitet.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Understøttelse af planlægningsoptimering til kapacitetsbegrænsning
-
-Planlægning af kapacitetsbegrænsning og tidsplaner fungerer næsten på samme måde, uanset om du bruger Planlægningsoptimering eller det indbyggede planlægningsprogram. Planlægningsoptimering bruger dog ikke parameteren **Flaskehalshorisont**. Når du bruger planlægningsoptimering, planlægges flaskehalsressourcer altid med brug af samme tidshorisont som ikke-flaskehalsressourcer (som angivet i tidshorisonten for kapacitetsbegrænsning).
+> [!NOTE]
+> Planlægning af kapacitetsbegrænsning og tidsplaner fungerer næsten på samme måde, uanset om du bruger Planlægningsoptimering eller det udfasede varedisponeringsprogram. Planlægningsoptimering bruger dog ikke parameteren **Flaskehalshorisont**. Når du bruger planlægningsoptimering, planlægges flaskehalsressourcer altid med brug af samme tidshorisont som ikke-flaskehalsressourcer (som angivet i tidshorisonten for kapacitetsbegrænsning).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Konfigurere funktionalitet af kapacitetsbegrænsning
 

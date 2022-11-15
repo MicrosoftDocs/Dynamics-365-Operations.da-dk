@@ -1,6 +1,6 @@
 ---
 title: Intern planlægning
-description: Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6ef551e1c2c4d90510f967855a5aa61646dc8eab
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 3d1c82aa3810b37b06b9d9157e73588fc1727348
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9538559"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740026"
 ---
 # <a name="intercompany-planning"></a>Intern planlægning
 
@@ -29,7 +29,7 @@ ms.locfileid: "9538559"
 
 I nogle organisationer afhænger logistikdriften af andre juridiske enheder (firmaer) i organisationen. Denne drift håndteres ved hjælp af interne salg og indkøb, fordi hver juridiske enhed har en separat kontoplan.
 
-Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning med Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel beskriver den interne planlægning og forklarer, hvordan du konfigurerer intern planlægning i Microsoft Dynamics 365 Supply Chain Management.
 
 Denne artikel anvender følgende vigtige interne begreber:
 

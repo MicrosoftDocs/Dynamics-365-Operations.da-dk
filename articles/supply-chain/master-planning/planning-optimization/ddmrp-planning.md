@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689153"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740296"
 ---
 # <a name="demand-driven-planning"></a>Efterspørgselsbaseret planlægning
 
@@ -55,4 +55,4 @@ Hvis du kører behovsplanlægning nu, genererer den et ordreforslag, hvis nettof
 I dette eksempel produceres et indkøbsordreforslag for et antal på 130, hvilket er lig med maksimumniveauet minus nettoflowet. Ordreforslaget tildeles en prioritet på 53,07 baseret på dets procentdel af det maksimale antal. Da disse værdier blev fundet d. 20. juni, opretter systemet et ordreforslag, der er dateret 20. juni plus den udskudte leveringstid for varen (fem arbejdsdage i dette eksempel). Da fem arbejdsdage er en uge fra i dag, er ordreforslaget derfor dateret 27. juni.
 
 > [!NOTE]
-> Planlægningsoptimering beregner kun varedisponerede varer ved hjælp af DDMRP. Alle andre varer beregnes ved hjælp af MRP (Standard Material Requirements Planning).
+> Varedisponering beregner kun afkoblede varer ved hjælp af DDMRP. Alle andre varer beregnes ved hjælp af MRP (Standard Material Requirements Planning).

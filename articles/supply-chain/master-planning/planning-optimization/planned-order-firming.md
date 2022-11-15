@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335339"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740516"
 ---
 # <a name="firm-planned-orders"></a>Autoriser ordreforslag
 
@@ -33,7 +33,7 @@ Denne artikel beskriver de enkelte metoder nærmere.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivere de funktioner, der er beskrevet i denne artikel
 
-De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallationer af Microsoft Dynamics 365 Supply Chain Management, som anvender Planlægningsoptimering. Nogle få af de funktioner, der beskrives i denne artikel, skal dog være aktiveret i Funktionsstyring, før du kan bruge dem.
+De fleste funktioner for ordreforslag er tilgængelige i alle standardinstallationer af Microsoft Dynamics 365 Supply Chain Management. Nogle få af de funktioner, der beskrives i denne artikel, skal dog være aktiveret i Funktionsstyring, før du kan bruge dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallel autorisation af ordreforslag
 
@@ -91,7 +91,7 @@ Hvis du vil autorisere ordreforslag manuelt, kan du finde og vælge de ordrefors
 
 ## <a name="auto-firm-planned-orders"></a>Autorisere ordreforslag automatisk
 
-Ved automatisk autorisation kan du autorisere ordreforslag som del af varedisponeringsprocessen. Du kan definere en tidsgrænse for autorisationen af disponeringsgrupper, individuelle varer og kombinationer af varer og behovsplaner. Under kørsler af behovsplanlægning bliver ordreforslag derefter automatisk spærret, hvis ordredatoen ligger inden for den angivne tidsgrænse for autorisation. Ordreforslag, der genereres via Planlægningsoptimering, og den indbyggede varedisponeringssoperation håndterer ordredatoen (dvs. startdatoen) forskelligt.
+Ved automatisk autorisation kan du autorisere ordreforslag som del af varedisponeringsprocessen. Du kan definere en tidsgrænse for autorisationen af disponeringsgrupper, individuelle varer og kombinationer af varer og behovsplaner. Under kørsler af behovsplanlægning bliver ordreforslag derefter automatisk spærret, hvis ordredatoen ligger inden for den angivne tidsgrænse for autorisation. Ordreforslag, der genereres via Planlægningsoptimering og det udfasede varedisponeringsprogram, håndterer ordredatoen (dvs. startdatoen) forskelligt.
 
 > [!NOTE]
 > Automatisk autorisation af indkøbsordreforslag kan kun forekomme for varer, der er knyttet til en leverandør.
@@ -99,13 +99,13 @@ Ved automatisk autorisation kan du autorisere ordreforslag som del af varedispon
 > Afledte ordrer (dvs. indkøbsordrer for underleverandører), som er autoriserede, har statussen *Til gennemsyn*, hvis sporing af ændringer er aktiveret.
 
 > [!IMPORTANT]
-> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret for systemet som beskrevet i starten af denne artikel. Automatisk autorisation kan altid bruges med det indbyggede varedisponeringsprogram.
+> Inden den funktion, der beskrives i dette afsnit, kan bruges sammen med Planlægningsoptimering, skal funktionen [*Automatisk autorisation for Planlægningsoptimering*](#enable-features) være aktiveret for systemet som beskrevet i starten af denne artikel. Automatisk autorisation kan altid bruges med det udfasede varedisponeringsprogram.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisation med Planlægningsoptimering vs. det indbyggede planlægningsprogram
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatisk autorisation med Planlægningsoptimering vs. det udfasede varedisponeringsprogram
 
-Både Planlægningsoptimering og det indgbyggede planlægningsprogram kan bruges til automatisk autorisation af ordreforslag. Der er dog nogle vigtige forskelle. I Planlægningsoptimering bruges ordredatoen (dvs. startdatoen) til at bestemme, hvilke ordreforslag der skal autoriseres, mens det indbyggede planlægningsprogram bruger behovsdatoen (dvs. slutdatoen). I følgende tabel vises en oversigt over forskellene.
+Både Planlægningsoptimering og det udfasede varedisponeringsprogram kan bruges til automatisk autorisation af ordreforslag. Der er dog nogle vigtige forskelle. I Planlægningsoptimering bruges ordredatoen (dvs. startdatoen) til at bestemme, hvilke ordreforslag der skal autoriseres, mens det udfasede varedisponeringsprogram bruger behovsdatoen (dvs. slutdatoen). I følgende tabel vises en oversigt over forskellene.
 
-| Funktion | Planlægningsoptimering | Indbygget planlægningsprogram |
+| Funktion | Planlægningsoptimering | Udfaset varedisponeringsprogram |
 |---|---|---|
 | **Datobasis** | Automatisk autorisation er baseret på ordredatoen (startdato). | Automatisk autorisation er baseret på behovsdatoen (slutdatoen). |
 | **Leveringstid** | Da ordredatoen (startdato) udløser en autorisation, behøver du ikke at overveje leveringstiden som en del af autorisations tidshorisonten. | For at sikre, at ordrer autoriseres rettidigt, skal tidsgrænsen for autorisation være længere end leveringstiden. |

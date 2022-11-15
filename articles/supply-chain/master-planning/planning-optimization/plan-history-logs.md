@@ -1,6 +1,6 @@
 ---
-title: Få vist planhistorik og planlægningslogs
-description: Denne artikel beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering.
+title: Vise planhistorik og planlægningslogge
+description: Denne artikel forklarer, hvordan du får vist historikken for planlægningsjobs.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863934"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740925"
 ---
-# <a name="view-plan-history-and-planning-logs"></a>Få vist planhistorik og planlægningslogs
+# <a name="view-plan-history-and-planning-logs"></a>Vise planhistorik og planlægningslogge
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel beskriver, hvordan du kan få vist historikken for planlægningsjobs, der udløses af funktionen Planlægningsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikel forklarer, hvordan du får vist historikken for planlægningsjobs i Microsoft Dynamics 365 Supply Chain Management.
 
 Hvis du vil have vist historikken for en plan, skal du åbne planen ved at gå til **Varedisponering** \> **Opsætning** \> **Planer** \> **Behovsplaner** og vælge **Historik**. Historikken viser alle job for den valgte plan. Listen omfatter afsluttede og aktive job.
 
@@ -47,14 +47,6 @@ Hvis du vil se fejl og andre advarsler eller fejl, der er opstået under en kør
     - Hvis du bruger den ældre formular: Vælg **Log** på fanen **Batchjob** i handlingsruden.
 
 1. Vælg **Meddelelsesdetaljer** for at åbne ruden **Meddelelsesdetaljer**, hvor du kan få vist alle de advarsler og fejl, du har registreret under behandlingen.
-
-## <a name="related-resources"></a>Tilknyttede ressourcer
-
-- [Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-- [Start her med planlægningsoptimering](get-started.md)
-- [Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
-- [Anvend filtre på en plan](plan-filters.md)
-- [Annullere et planlægningsjob](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

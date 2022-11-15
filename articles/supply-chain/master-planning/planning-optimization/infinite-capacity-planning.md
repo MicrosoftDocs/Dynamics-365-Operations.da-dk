@@ -1,6 +1,6 @@
 ---
 title: Planlægning med uendelig kapacitet
-description: Denne artikel indeholder oplysninger om planlægning med uendelig kapacitet for planlægningsoptimering. Det beskriver også de aktuelle funktionsbegrænsninger.
+description: Denne artikel indeholder en beskrivelse af uendelig kapacitetsplanlægning. Det beskriver også de aktuelle funktionsbegrænsninger.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7249734e5d2644145a36276dbc818a40b5962805
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335309"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739999"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlægning med uendelig kapacitet
 
 [!include [banner](../../includes/banner.md)]
 
-Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* introducerer en planlægning, der er baseret på ruteoplysninger. Det giver dig mulighed for at planlægge job ud fra en lang række ruteopsætninger. Planlægning for planlægningsoptimering dækker ofte anvendte ruteindstillinger, herunder rækkefølgen af ruteoperationer eller krav til ruteoperationsressourcer.
+Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* introducerer en planlægning, der er baseret på ruteoplysninger. Det giver dig mulighed for at planlægge job ud fra en lang række ruteopsætninger. Planlægning dækker ofte anvendte ruteindstillinger, herunder rækkefølgen af ruteoperationer eller krav til ruteoperationsressourcer.
 
 ## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Slå funktionen til planlægning med uendelig kapacitet til eller fra
 
@@ -32,7 +32,7 @@ Yderligere oplysninger om denne funktion finder du i [Planlægning med ressource
 
 ## <a name="added-functionality"></a>Tilføjet funktonalitet
 
-Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* muliggør finplanlægning, der er baseret på ruteoplysninger. Derfor kan en ruteopsætning bruges til at planlægge produktionsprocesser. Selvom denne funktion har visse begrænsninger, som den indbyggede varedisponering ikke har, understøtter den de mest almindelige funktioner, der kræves til fremstillingsscenarier.
+Funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* muliggør finplanlægning, der er baseret på ruteoplysninger. Derfor kan en ruteopsætning bruges til at planlægge produktionsprocesser. Selvom denne funktion har visse begrænsninger, som det udfasede varedisponeringsprogram ikke har, understøtter den de mest almindelige funktioner, der kræves til fremstillingsscenarier.
 
 Denne funktion tager både højde for *simple ruter* og *rutenetværk*. Ved at bruge feltet **Næste** på en ruteoperation kan du konfigurere komplekse ruter med flere startpunkter og flere operationer, der kører parallelt. Systemet tager højde for komplekse rutestrukturer af denne type under planlægning.
 
@@ -52,15 +52,13 @@ Under planlægningsprocessen tager systemet også højde for de *ressourcekrav*,
 
 Funktionen understøtter også de operationelle egenskaber **Opstillingstid** og **Kørselstid**. Når du angiver disse egenskaber i en ruteoperation, opretter planlægningsprocessen de relevante opstillings- og procesjob.
 
-Kort sagt understøtter planlægning for planlægningsoptimering de scenarier, der anvendes oftest. Du kan oprette ruten, tilføje primære og sekundære operationer, definere næste operationer, tilføje ressourcekrav og tilføje opstillingstid og kørselstid. Der tages derefter højde for disse oplysninger under planlægningen.
+Kort sagt understøtter planlægning de scenarier, der anvendes oftest. Du kan oprette ruten, tilføje primære og sekundære operationer, definere næste operationer, tilføje ressourcekrav og tilføje opstillingstid og kørselstid. Der tages derefter højde for disse oplysninger under planlægningen.
 
 ## <a name="limitations"></a>Begrænsninger
 
-Der gælder følgende begrænsninger, når du bruger planlægning til planlægningsoptimering:
+Der gælder følgende begrænsninger, når du bruger *Uendelig kapacitetsplanlægning til planlægningsoptimering*:
 
 - Funktionen understøtter kun uendelig kapacitet.
 - Funktionen understøtter ikke funktioner til ressourcebelastning.
 - Funktionen tager ikke højde for rutespild.
 - Funktionen understøtter kun *Varighed* som det primære ressourcevalg.
-
-Bemærk, at funktionen *Planlægning med uendelig kapacitet for planlægningsoptimering* forbedres løbende. Microsoft forventer at introducere understøttelse af flere planlægningsindstillinger i fremtidige versioner.
