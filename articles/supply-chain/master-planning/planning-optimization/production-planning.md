@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335249"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740543"
 ---
 # <a name="production-planning"></a>Produktionsplanlægning
 
 [!include [banner](../../includes/banner.md)]
-
-Planlægningsoptimering understøtter flere produktionsscenarier. Hvis du migrerer fra det eksisterende, indbyggede varedisponeringsprogram, er det vigtigt, at du er opmærksom på ændret funktionsmåde.
 
 Følgende video indeholder en kort introduktion til nogle af de begreber, der beskrives i denne artikel: [Dynamics 365 Supply Chain Management: Forbedringer af planlægningsoptimering](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Produktionsordreforslag omfatter det rute-id, der kræves ved produktionsplanlæ
 
 - **Produktionsordreforslag** – Leveringstiden er baseret på den statiske leveringstid fra det frigivne produkt.
 - **Autoriseret produktionsordre** – Leveringstiden er baseret på planlægning, der bruger ruteoplysninger og relaterede ressourcebegrænsninger.
-
-Yderligere oplysninger om forventet tilgængelighed af funktioner finder du i [Analyse af tilpasning af Planlægningsoptimering](planning-optimization-fit-analysis.md).
-
-Hvis du er afhængig af, at produktionsfunktionaliteten endnu ikke er tilgængelig for Planlægningsoptimering, kan du fortsætte med at bruge det indbyggede varedisponeringsprogram. Der kræves ingen undtagelse.
 
 ## <a name="delays"></a>Forsinkelser
 
@@ -76,15 +70,15 @@ Du kan bruge siden **Udfoldning** til at analysere den efterspørgsel, der kræv
 
 ## <a name="filters"></a><a name="filters"></a>Filtre
 
-Hvis du vil sikre, at Planlægningsoptimering har de oplysninger, der er nødvendige for at beregne det korrekte resultat, skal du medtage alle produkter, der har relation til produkter, i hele styklistestrukturen i ordreforslaget. I forbindelse med planlægningsscenarier, der omfatter produktion, anbefaler vi derfor, at du undgår filtrerede varedisponeringskørsler.
+Hvis du vil sikre, at varedisponering har de oplysninger, der er nødvendige for at beregne det korrekte resultat, skal du medtage alle produkter, der har relation til produkter, i hele styklistestrukturen i ordreforslaget. I forbindelse med planlægningsscenarier, der omfatter produktion, anbefaler vi derfor, at du undgår filtrerede varedisponeringskørsler.
 
-Selvom afhængige underordnede varer registreres og medtages i varedisponeringskørsler, når det indbyggede varedisponeringsprogram bruges, udfører Planlægningsoptimering ikke denne handling i øjeblikket.
+Selvom afhængige underordnede varer registreres og medtages i varedisponeringskørsler, når det udfasede varedisponeringsprogram bruges, udfører Planlægningsoptimering ikke denne handling i øjeblikket.
 
 Hvis f.eks. en enkelt rulle fra styklistestrukturen i produkt A også bruges til at producere produkt B, skal alle produkter i styklistestrukturen for produkter A og B medtages i filteret. Da det kan være kompliceret at sikre, at alle produkter indgår i filteret, anbefales det, at du undgår filtrerede varedisponeringskørsler, når der er produktionsordrer involveret. Ellers giver behovsplanlægningen uønskede resultater.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Årsager til at undgå filtrerede behovsplanlægningskørsler
 
-Når du kører filtreret varedisponering for et produkt, registrerer Planlægningsoptimering (i modsætning til det indbyggede varedisponeringsprogram) ikke alle underproduktionerne og råvarerne i styklistestrukturen for det pågældende produkt og medtager dem derfor ikke i varedisponeringskørslen. Selvom Planlægningsoptimering identificerer det første niveau i produktets styklistestruktur, indlæses der ingen produktindstillinger (f.eks. standardordretypen eller varedisponering) fra databasen.
+Når du kører filtreret varedisponering for et produkt, registrerer Planlægningsoptimering (i modsætning til det udfasede varedisponeringsprogram) ikke alle underproduktionerne og råvarerne i styklistestrukturen for det pågældende produkt og medtager dem derfor ikke i varedisponeringskørslen. Selvom Planlægningsoptimering identificerer det første niveau i produktets styklistestruktur, indlæses der ingen produktindstillinger (f.eks. standardordretypen eller varedisponering) fra databasen.
 
 I Planlægningsoptimering indlæses dataene for kørslen på forhånd og anvender filtrene. Det betyder, at hvis et underprodukt eller et råmateriale i et bestemt produkt ikke er en del af filteret, registreres der ikke oplysninger om det under kørslen. Hvis underproduktet eller råvaren også indgår i et andet produkt, vil en filtreret kørsel, der kun indeholder det oprindelige produkt og dets komponenter, fjerne det eksisterende planlagte behov, der blev oprettet for det andet produkt.
 

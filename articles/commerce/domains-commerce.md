@@ -2,19 +2,19 @@
 title: Domæner i Dynamics 365 Commerce
 description: Denne artikel beskriver, hvordan domæner håndteres i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465187"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750674"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domæner i Dynamics 365 Commerce
 
@@ -95,6 +95,12 @@ Miljøet "xyz" er f.eks. blevet klargjort, og to websteder er blevet oprettet og
 
 Når der ikke er angivet en domæneforespørgselsstreng i et miljø med flere domæner, bruger Commerce det første domæne, du har angivet. Hvis f.eks. stien "fabrikam" blev angivet først under opsætningen af webstedet, kan URL-adressen `https://xyz.dynamics365commerce.ms` bruges til at få adgang til det indhold, der er udgivet til webstedet for `www.fabrikam.com`.
 
+Du kan også tilføje brugerdefinerede domæner. Dette kan du gøre ved at vælge **+ Tilføj brugerdefineret domæne** under **e-handel**-underoverskriften på miljøsiden Commerce-administration for projektet. I skyderen vises de eksisterende brugerdefinerede domæner, og her kan du tilføje et nyt brugerdefineret domæne.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Opdatere, hvilken Commerce Scale Unit der bruges
+
+Den CSU (Commerce Scale Unit), der bruges af Commerce, vælges typisk, når der oprettes et miljø første gang. Med Commerce kan du ændre, hvilken CSU-forekomst dit miljø bruger, så du bedre kan vedligeholde arkitekturen via selvbetjeningsfunktionalitet og reducere behovet for support. Hvis du vil opdatere forekomsten af CSU, skal du gå til miljøets Commerce-administrationsside for projektet og derefter vælge **Opdater Scale Unit**. Brug skyderen **Ny Commerce Scale Unit** til at vælge en ny CSU-forekomst på listen over CSU'er, der er tilgængelige for dit miljø.
+
 ## <a name="traffic-forwarding-in-production"></a>Videresendelse af trafik i produktion
 
 Du kan simulere flere domæner ved hjælp af parametre for domæneforespørgselsstrenge på selve commerce.dynamics.com slutpunktet. Men når du skal aktivere det i produktionen, skal du videresende trafikken for dit brugerdefinerede domæne til slutpunktet for `<e-commerce tenant name>.dynamics365commerce.ms`.
@@ -103,9 +109,9 @@ Slutpunktet `<e-commerce tenant name>.dynamics365commerce.ms` understøtter ikke
 
 Hvis du vil konfigurere brugerdefinerede domæner ved hjælp af en Front Door Service eller CDN, har du to muligheder:
 
-- Konfigurer en Front Door Service som Azure Front Door for at håndtere frontend-trafik og oprette forbindelse til Commerce-miljøet. Det giver større kontrol over domæne- og certifikatstyring og mere detaljerede sikkerhedspolitikker.
+- Opret en Front Door Service som f.eks. Azure Front Door for at håndtere front-end-trafik og oprette forbindelse til dit Commerce-miljø, hvilket giver større kontrol over domæne- og certifikatstyring og flere detaljerede sikkerhedspolitikker.
 
-- Brug den Commerce-leverede Azure Front Door-forekomst. Det kræver en handling til koordinering med Dynamics 365 Commerce-teamet i forbindelse med domænebekræftelse og anskaffelse af SSL-certifikater til dit produktionsdomæne.
+- Brug den Commerce-leverede Azure Front Door-forekomst, som kræver en handling til koordinering med Dynamics 365 Commerce-teamet i forbindelse med domænebekræftelse og anskaffelse af SSL-certifikater til dit produktionsdomæne.
 
 > [!NOTE]
 > Hvis du bruger en ekstern CDN- eller front door-tjeneste, skal du sikre dig, at anmodningen lander på Commerce-platformen med værtsnavnet Commerce angivet, men med X-Forwarded-Host (XFH)-overskriften \<custom-domain\>. Hvis f.eks. din Commerce-slutpunkt er `xyz.dynamics365commerce.ms` og det brugerdefinerede domæne er `www.fabrikam.com`, skal værtsoverskriften for den videresendte forespørgsel skulle være `xyz.dynamics365commerce.ms`, og XFH-overskriften skal være `www.fabrikam.com`.
@@ -115,7 +121,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer en CDN-tjeneste direkte, un
 Hvis du vil bruge den Commerce-leverede Azure Front Door forekomst, skal du oprette en serviceanmodning til CDN-opsætningen fra Commerce-onboarding-teamet. 
 
 - Du skal angive firmanavn, produktionsdomæne, miljø-id og produktionens e-handelslejernavn. 
-- Du skal bekræfte, om dette er et eksisterende domæne (bruges til et aktuelt aktivt websted) eller et nyt domæne. 
+- Du skal bekræfte, om denne serviceanmodning er til et eksisterende domæne (bruges til et aktuelt aktivt websted) eller et nyt domæne. 
 - I forbindelse med et nyt domæne kan domænebekræftelse og SSL-certifikatet foretages i et enkelt trin. 
 - I forbindelse med et domæne, der betjener et eksisterende websted, kræves der en proces med flere trin for at fastlægge domænebekræftelse og SSL-certifikat. Denne proces har en 7-dages serviceniveauaftale (SLA) for et domæne, der skal være aktivt, fordi det omfatter flere sekventielle trin.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690075"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740135"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Varedisponering med forsyningsprognoser
 
@@ -168,13 +168,13 @@ Når du kører en behovsplan, der er konfigureret til at bruge *Ingen* som reduk
 
 Du skal nu redigere det indkøbsordreforslag, der blev oprettet efter den seneste planlægningskørsel, og du skal ændre antallet til *15 styk*. Godkend derefter indkøbsordren. Næste gang du kører behovsplanen, opretter den et indkøbsordreforslag for leverandør *US-101*, sted *1*, lagersted *11*, et antal på *10 styk* og datoen *10/10/22*. Denne gang reduceres antallet, så det afspejler antallet i den eksisterende godkendte ordre fra den forrige planlægningskørsel.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Forskelle mellem Planlægningsoptimering og det indbyggede planlægningsprogram
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Forskelle mellem planlægningsoptimering og det udfasede program til varedisponering
 
-Forsyningsprognoser fungerer lidt anderledes alt efter den brugte varedisponering (Planlægningsoptimering eller det indbyggede program). I dette afsnit beskrives forskellene.
+Forsyningsprognoser fungerer lidt anderledes alt efter den brugte varedisponering (Planlægningsoptimering eller det udfasede varedisponeringsprogram). I dette afsnit beskrives forskellene.
 
 ### <a name="vendor-groups"></a>Kreditorgrupper
 
-Når du tilføjer en prognoselinje, kan du angive en kreditor og en kreditorgruppe. I det indbyggede planlægningsprogram grupperes de oprettede ordreforslag efter kombinationen af værdierne for kreditor- og kreditorgruppe. I Planlægningsoptimering grupperes ordreforslag efter kreditor.
+Når du tilføjer en prognoselinje, kan du angive en kreditor og en kreditorgruppe. I det udfasede varedisponeringsprogram grupperes de oprettede ordreforslag efter kombinationen af værdierne for kreditor- og kreditorgruppe. I Planlægningsoptimering grupperes ordreforslag efter kreditor.
 
 Følgende tabel indeholder nogle eksempler på forsyningsprognoselinjer for en vare.
 
@@ -186,7 +186,7 @@ Følgende tabel indeholder nogle eksempler på forsyningsprognoselinjer for en v
 
 Leverandør *VendorA* er standardleverandøren for leverandørgruppen *VendorGroupA*. Det er også standardleverandøren af varen.
 
-Det indbyggede planlægningsprogram opretter følgende ordrer:
+Det udfasede varedisponeringsprogram opretter følgende ordrer:
 
 - Et indkøbsordreforslag for leverandør *VendorA*, leverandørgruppe *VendorGroupA* og et antal på *11*
 - Et indkøbsordreforslag for leverandør *VendorA* og et antal på *7*
@@ -197,7 +197,7 @@ Planlægningsoptimering opretter kun én ordre:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Reduktion af generelle prognoser med mere specifikke prognoser
 
-I det indbyggede program til varedisponering vil resultatet være uforudsigeligt, hvis nogle prognoser har en leverandør, mens andre ikke har.
+I det udfasede varedisponeringsprogram vil resultatet være uforudsigeligt, hvis nogle prognoser har en leverandør, mens andre ikke har.
 
 I Planlægningsoptimering reduceres generelle prognoser altid med mere specifikke prognoser, som det fremgår af følgende eksempel.
 
@@ -218,15 +218,15 @@ Den generelle prognose (for 15 styk) reduceres med de mere specifikke prognoser 
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Overholdelse af standardordreindstillinger, når der genereres ordreforslag
 
-Hver vare kan have standardordreindstillinger som f.eks. et minimumsantal på indkøbsordren. I det indbyggede planlægningsprogram ignoreres disse indstillinger, og prognoser ændres derfor til ordreforslag, der har samme antal. Planlægningsoptimering overholder disse indstillinger, når der genereres ordreforslag ud fra forsyningsprognoser. 
+Hver vare kan have standardordreindstillinger som f.eks. et minimumsantal på indkøbsordren. I det udfasede varedisponeringsprogram ignoreres disse indstillinger, og prognoser ændres derfor til ordreforslag, der har samme antal. Planlægningsoptimering overholder disse indstillinger, når der genereres ordreforslag ud fra forsyningsprognoser. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Aggregering af ordreforslag som følge af reduktion med godkendte ordrer
 
-Det indbyggede varedisponeringsprogram antager, at kun én ordre reducerer den eksisterende forsyningsprognose. Hvis flere ordrer matcher en forsyningsprognoselinje, er det derfor kun den første ordre, der reducerer den. I Planlægningsoptimering reduceres den af alle ordrer, der matcher forsyningsprognoselinjen.
+Det udfasede varedisponeringsprogram antager, at kun én ordre reducerer den eksisterende forsyningsprognose. Hvis flere ordrer matcher en forsyningsprognoselinje, er det derfor kun den første ordre, der reducerer den. I Planlægningsoptimering reduceres den af alle ordrer, der matcher forsyningsprognoselinjen.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Reduktion af prognoser ved kun at matche leverandører
 
-Når det indbyggede varedisponeringsprogram reducerer en prognose med eksisterende frigivne indkøbsordrer, sikrer det ikke, at leverandøren på indkøbsordren matcher leverandøren fra prognosen. Planlægningsoptimering reducerer kun prognoser med indkøbsordrer, der har en tilsvarende værdi i leverandørfeltet.
+Når det udfasede varedisponeringsprogram reducerer en prognose med eksisterende frigivne indkøbsordrer, sikrer det ikke, at leverandøren på indkøbsordren matcher leverandøren fra prognosen. Planlægningsoptimering reducerer kun prognoser med indkøbsordrer, der har en tilsvarende værdi i leverandørfeltet.
 
 Ved flytteordrer og produktionsordrer ignoreres leverandørfeltet altid, da det ikke er relevant for disse ordretyper.
 
@@ -234,4 +234,4 @@ Ved flytteordrer og produktionsordrer ignoreres leverandørfeltet altid, da det 
 
 Hvis standardordretypen for en vare er *Flytning*, kan prognoser kun reduceres af eksisterende planlagte flytteordrer. Men det er kun frigivne ordrer, der reducerer forsyningsprognosen for produktionsordrer og indkøbsordrer.
 
-Det indbyggede planlægningsprogram reducerer for alle flytteordretilstande, hvorimod Planlægningsoptimering kun reducerer prognoser med flytteordrer i tilstanden *Frigivet*.
+Det udfasede varedisponeringsprogram reducerer for alle flytteordretilstande, hvorimod Planlægningsoptimering kun reducerer prognoser med flytteordrer i tilstanden *Frigivet*.
