@@ -1,6 +1,6 @@
 ---
 title: Varedisponering med behovsprognoser
-description: Denne artikel forklarer, hvordan du kan inkludere behovsprognoser under varedisponering med Planlægningsoptimering.
+description: Denne artikel forklarer, hvordan du kan inkludere behovsprognoser under varedisponering.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878984"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739777"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Varedisponering med behovsprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan bruge en behovsprognose sammen med Planlægningsoptimering til at tage højde for forventet efterspørgsel i varedisponeringen. Du kan oprette en behovsprognose manuelt, importere den eller generere den ved hjælp af behovsprognosefunktionen i Microsoft Dynamics 365 Supply Chain Management. Yderligere oplysninger om behovsprognose finder du i [Oversigt over behovsprognose](../introduction-demand-forecasting.md).
+Du kan bruge en behovsprognose til at tage højde for forventet efterspørgsel i varedisponeringen. Du kan oprette en behovsprognose manuelt, importere den eller generere den ved hjælp af behovsprognosefunktionen i Microsoft Dynamics 365 Supply Chain Management. Yderligere oplysninger om behovsprognose finder du i [Oversigt over behovsprognose](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Separat prognoseplanlægning understøttes ikke med Planlægningsoptimering. Den har indstillingen **Aktuel prognoseplan** på siden **Varedisponeringsparametre** ingen effekt, når du bruger Planlægningsoptimering.

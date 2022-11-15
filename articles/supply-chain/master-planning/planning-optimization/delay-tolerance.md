@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335369"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740462"
 ---
 # <a name="delay-tolerance-negative-days"></a>Forsinkelsestolerance (negative dage)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ Systemet knytter beregningen af forsinkelsestolerancen til den *tidligste genopf
 Denne formel sikrer, at varedisponering ikke opretter nye leveringsordrer, når den eksisterende forsyning er tilstrækkelig under produktets gennemløbstid.
 
 > [!NOTE]
-> Beregningen af forsinkelsestolerance i Planlægningsoptimering bruger altid beregningen af dynamiske negative dage fra en indbygget behovsplanlægning. Indstillingen **Brug dynamiske negative dage** på siden **Parametre for behovsplanlægning** har ingen indflydelse på denne funktionsmåde.
+> Beregningen af forsinkelsestolerance i Planlægningsoptimering bruger altid beregningen af dynamiske negative dage fra det udfasede varedisponeringsprogram. Indstillingen **Brug dynamiske negative dage** på siden **Parametre for behovsplanlægning** har ingen indflydelse på denne funktionsmåde.
 
 Hvis den eksisterende forsyning medfører en forsinkelse i efterspørgsel, der er mindre end eller lig med den beregnede forsinkelsestolerance, udligner Planlægningsoptimering den eksisterende forsyning med efterspørgslen. I nogle tilfælde er det bedre at udskyde behovet end at ende med for stor forsyning.
 

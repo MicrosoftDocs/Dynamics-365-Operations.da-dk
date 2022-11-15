@@ -2,23 +2,23 @@
 title: Konfigurer opgavestyring
 description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere funktioner til opgavestyring i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282755"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746056"
 ---
 # <a name="configure-task-management"></a>Konfigurer opgavestyring
 
@@ -80,7 +80,11 @@ I følgende illustration vises handlingen **Opgavestyring** på siden **POS-hand
 
 ![Handlingen Opgavestyring på siden POS-handlinger.](media/HQ-POS-Tasks-Notifications.png)
 
-Du kan finde flere oplysninger om, hvordan du konfigurerer POS-beskeder, i [Vis ordrebeskeder på POS](notifications-pos.md).
+Du kan finde flere oplysninger om, hvordan du konfigurerer POS-beskeder, i artiklen [Vise ordrebeskeder på POS](notifications-pos.md).
+
+> [!NOTE]
+> Når du gemmer ændringer, vises følgende advarsel: **Operationsparameteren bliver ikke aktiveret i designeren til knapgitteret for operations-id'er lig med eller mindre end 4000. Hvis du opretter brugerdefineret operation og vil overføre parameter fra designeren til knapgitteret, skal du bruge operations-id'er større end 4000.** Vælg **Luk** for at lukke dialogboksen.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Konfigurere feltet Opgaver på en startside for POS-programmet
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900935"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741170"
 ---
 # <a name="cancel-a-planning-job"></a>Annullere et planlægningsjob
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900935"
 
 I Microsoft Dynamics 365 Supply Chain Management kan du annullere et aktivt planlægningsjob, der bruger funktionen Planlægningsoptimering. Når du vælger **Annuller** i dialogboksen, når et planlægningsoptimeringsjob udløses direkte fra brugergrænsefladen (ikke i baggrunden), annullerer dette ikke planlægningsoptimeringsjobbet. Selvom du får vist en advarsel såsom "Handlingen er annulleret", skal du stadig bruge følgende trin for at annullere et planlægningsjob med planlægningsoptimering.
 
-
-Benyt følgende fremgangsmåde for at annullere et aktivt planlægningsjob. 
+Benyt følgende fremgangsmåde for at annullere et aktivt planlægningsjob.
 
 > [!NOTE]
 > Kun aktive jobs kan annulleres.
@@ -45,18 +44,6 @@ Jobstatussen angives til **Annulleres** indtil planlægningsoptimeringstjenesten
 
 > [!NOTE]
 > Hvis du vil have vist statusændringerne, skal du opdatere siden ved at klikke på knappen **Opdater**.
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-
-[Kom i gang med planlægningsoptimering](get-started.md)
-
-[Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
-
-[Få vist planhistorik og planlægningslogs](plan-history-logs.md)
-
-[Anvend filtre på en plan](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

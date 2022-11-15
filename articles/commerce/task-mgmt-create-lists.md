@@ -2,24 +2,24 @@
 title: Oprette opgavelister og tilføje opgaver
 description: Denne artikel indeholder en beskrivelse af, hvordan du opretter opgavelister og føjer opgaver til dem i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: f754ee78547e785fa2386dee6c3d89371bc0de41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b81f27f79362516f8a25766c1f663a7691ebb42a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268913"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746153"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Oprette opgavelister og tilføje opgaver
 
@@ -35,7 +35,7 @@ Både ledere og arbejdere kan oprette opgavelister på Commerce-bagkontor og der
 
 ## <a name="create-a-task-list"></a>Opret en opgaveliste
 
-Brug følgende trin for at oprette en opgaveliste.
+Før du går i gang med at oprette en opgaveliste, skal du sørge for at udføre konfigurationerne i artiklen [Konfigurere opgavestyring](task-mgmt-configure.md). Brug følgende trin for at oprette en opgaveliste.
 
 1. Gå til **Retail og Commerce \> Opgavestyring \> Administration af opgavestyring**.
 1. Vælg **Ny**, og angiv derefter værdier i felterne **Navn**, **Beskrivelse** og **Ejer**.

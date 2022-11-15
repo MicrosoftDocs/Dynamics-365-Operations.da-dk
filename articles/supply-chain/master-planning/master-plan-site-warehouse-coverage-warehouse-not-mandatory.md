@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb1f486406df22b4e9b92a0302e4e7ce7816517f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4989a05f4647ac836b78692da7f63396dbef788
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878955"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741006"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Varedisponering for lokations- og lagerdisponering, lagersted er ikke obligatorisk
 
@@ -47,15 +47,11 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
-
-[Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-
-[Varedisponering for lokalitets- og lagerdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
-
-[Varedisponering for lokalitets- og lagerdisponering, lagersted ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
-
-[Bestemme styklisteversionen](master-plan-bom-version-determined.md)
+- [Oversigt over varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+- [Varedisponering for lokalitetsdisponering, obligatorisk lagersted](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+- [Varedisponering for lokalitets- og lagerdisponering, obligatorisk lagersted](master-plan-site-coverage-warehouse-mandatory.md)
+- [Varedisponering for lokalitets- og lagerdisponering, lagersted ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
+- [Bestemme styklisteversionen](master-plan-bom-version-determined.md)
 
 
 

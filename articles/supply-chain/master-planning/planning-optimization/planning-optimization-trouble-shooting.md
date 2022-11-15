@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889513"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739723"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Fejlfinde planlægningsoptimering 
 
@@ -37,13 +37,13 @@ Planlægningsoptimering er et LCS (Lifecycle Services) med høj tilgængelighed 
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Planlægning af batchjob mislykkes, når planlægningsoptimering er aktiveret.
 
-Når du aktiverer Planlægningsoptimering, deaktiveres det indbyggede varedisponeringsprogram automatisk. Varedisponeringsbatchjob, der blev oprettet til det indbyggede planlægningsprogram for Supply Chain Management mislykkes, hvis de udløses, når Planlægningsoptimering er aktiveret. Der vises muligvis en fejlmeddelelse, f.eks. *Denne handling har udløst varedisponering, der ikke understøttes, når Planlægningsoptimering er aktiveret*.
+Når du aktiverer Planlægningsoptimering, deaktiveres det udfasede varedisponeringsprogram automatisk. Varedisponeringsbatchjob, der blev oprettet til det udfasede varedisponeringsprogram, mislykkes, hvis de udløses, når Planlægningsoptimering er aktiveret. Der vises muligvis en fejlmeddelelse, f.eks. *Denne handling har udløst varedisponering, der ikke understøttes, når Planlægningsoptimering er aktiveret*.
 
-**Rettelse** : Annuller alle varedisponeringsbatchjob, der blev oprettet for det indbyggede planlægningsprogram for Supply Chain Management.
+**Rettelse** : Annuller alle varedisponeringsbatchjob, der blev oprettet for det udfasede varedisponeringsprogram.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Resultater fra Planlægningsoptimering adskiller sig fra tidligere resultater.
 
-Planlægningsoptimering adskiller sig fra det indbyggede planlægningsprogramdesign på visse områder. Dette kan også skyldes ventende funktioner.
+Planlægningsoptimering adskiller sig fra det udfasede varedisponeringsprogram på visse områder. Dette kan også skyldes ventende funktioner.
 
 **Rettelse**: Kør analyse af tilpasning af planlægningsoptimering, og analysér derefter resultaterne, mens der henvises til den relaterede dokumentation for at forstå virkningen. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Dette er knyttet til en ventende funktion, der er planlagt som en del af underst
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Kom i gang med planlægningsoptimering](get-started.md)
-
-[Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
+- [Start her med varedisponering](get-started.md)
+- [Analyse af tilpasning af planlægningsoptimering](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

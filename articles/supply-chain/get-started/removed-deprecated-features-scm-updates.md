@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218796"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739864"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Fjernede eller udfasede funktioner i Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Erstattet af en anden funktion?**   | Ja, Planlægningsoptimering erstatter det eksisterende indbyggede Supply Chain Management-varedisponeringsprogram. |
 | **Produktområder, der er berørt**         | Supply Chain Management – varedisponering |
 | **Installationsindstilling**              | Kun skybaseret. Bemærk, at Planlægningsoptimering ikke understøttes med lokale installationer. |
-| **Status**                         | Forældet. Inden 1. april 2022 vil produktionsscenarier ikke længere være understøttet for det indbyggede Supply Chain Management-varedisponeringsprogram. På denne dato stopper Microsoft alle aktive udviklinger i produktionsscenarier for det indbyggede planlægningsprogram, vil ikke frigive nye funktioner og vil kun frigive kritiske rettelser. Efter denne dato skal alle firmaer, der har brug for understøttelse af produktionsscenarier, bruge Planlægningsoptimering til beregningerne af deres varedisponering. Planlægningsoptimering forventes at understøtte produktionsscenarier fuldt ud i oktober 2022. Du kan finde flere oplysninger i [dokumentationen til Planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmaer med lokale installationer af Supply Chain Management kan fortsætte med at bruge det indbyggede varedisponeringsprogram til produktionsscenarier efter april 2022. Der kommer dog ikke flere funktionsforbedringer. |
+| **Status**                         | Forældet. Inden 1. april 2022 vil produktionsscenarier ikke længere være understøttet for det indbyggede Supply Chain Management-varedisponeringsprogram. På denne dato stopper Microsoft alle aktive udviklinger i produktionsscenarier for det indbyggede planlægningsprogram, vil ikke frigive nye funktioner og vil kun frigive kritiske rettelser. Efter denne dato skal alle firmaer, der har brug for understøttelse af produktionsscenarier, bruge Planlægningsoptimering til beregningerne af deres varedisponering. Planlægningsoptimering forventes at understøtte produktionsscenarier fuldt ud i oktober 2022. Du kan finde flere oplysninger i [Oversigt over det udfasede varedisponeringsprogram](../master-planning/deprecated-master-planning-overview.md).<br><br>Firmaer med lokale installationer af Supply Chain Management kan fortsætte med at bruge det indbyggede varedisponeringsprogram til produktionsscenarier efter april 2022. Der kommer dog ikke flere funktionsforbedringer. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Fjernede eller udfasede funktioner i Supply Chain Management 10.0.11-udgaven
 
@@ -101,7 +101,7 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Erstattet af en anden funktion?**   | Ja, Planlægningsoptimering erstatter det eksisterende indbyggede Supply Chain Management-varedisponeringsprogram. |
 | **Produktområder, der er berørt**         | Supply Chain Management – varedisponering |
 | **Installationsindstilling**              | Kun skybaseret. Bemærk, at Planlægningsoptimering ikke understøttes med lokale installationer. |
-| **Status**                         | Forældet. Inden 1. april 2021 vil distributionsscenarier ikke længere være understøttet med det indbyggede Dynamics 365 Supply Chain Management-varedisponeringsprogram. For distributionsscenarier skal kunderne bruge Planlægningsoptimering til varedisponeringsberegninger. Du kan finde flere oplysninger under [Dokumention til Planlægningsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md). Kunder med lokale installationer af Dynamics 365 Supply Chain Management kan fortsætte med at bruge Supply Chain Management-varedisponeringsprogrammet til distributionsscenarier efter april 2021. Der kommer dog ikke flere funktionsforbedringer. |
+| **Status**                         | Forældet. Inden 1. april 2021 vil distributionsscenarier ikke længere være understøttet med det indbyggede Dynamics 365 Supply Chain Management-varedisponeringsprogram. For distributionsscenarier skal kunderne bruge Planlægningsoptimering til varedisponeringsberegninger. Du kan finde flere oplysninger i [Oversigt over det udfasede varedisponeringsprogram](../master-planning/deprecated-master-planning-overview.md). Kunder med lokale installationer af Dynamics 365 Supply Chain Management kan fortsætte med at bruge Supply Chain Management-varedisponeringsprogrammet til distributionsscenarier efter april 2021. Der kommer dog ikke flere funktionsforbedringer. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere meddelelser om fjernede eller udfasede funktioner
 

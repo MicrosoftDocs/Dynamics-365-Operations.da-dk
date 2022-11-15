@@ -2,22 +2,19 @@
 title: Konfigurere CPOS til en brugerdefineret Azure AD-app
 description: Denne artikel forklarer, hvordan du konfigurerer CPOS (Cloud POS) til en brugerdefineret Azure Active Directory-app (Azure AD).
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222964"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746254"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>Konfigurere CPOS til en brugerdefineret Azure AD-app
 
@@ -52,6 +49,9 @@ Hvis du vil oprette og konfigurere en brugerdefineret Retail Server-app i Azure 
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Konfigurere en brugerdefineret CPOS-app i Azure AD
 
+> [!IMPORTANT]
+> Hvis du opgraderer en eksisterende brugerdefineret CPOS Azure AD-app, der blev oprettet før Commerce version 10.0.21, skal du følge trinnene i [Opgradere en eksisterende brugerdefineret CPOS Azure AD-app , der er oprettet før Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Hvis du vil oprette og konfigurere en brugerdefineret CPOS-app i Azure AD, skal du følge disse trin.
 
 1. Log på [Azure Active Directory Administration](https://aad.portal.azure.com) med den relevante Azure AD-brugerkonto. Brugerkontoen behøver ikke at have administratorrettigheder.
@@ -68,12 +68,25 @@ Hvis du vil oprette og konfigurere en brugerdefineret CPOS-app i Azure AD, skal 
 1. Angiv parametrene **oauth2AllowIdTokenImplicitFlow** og **oauth2AllowImplicitFlow** til **true** i afsnittet **Manifest**, og vælg derefter **Gem**.
 1. I afsnittet **Tokenkonfiguration** skal du benytte følgende fremgangsmåde for at tilføje to krav:
 
-    - Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **id**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
-    - Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **Adgang**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
+    1. Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **id**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
+    1. Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **Adgang**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
 
 1. Vælg **Tilføj en rettighed** under **API-rettigheder**.
 1. Under fanen **API'er, som min organisation bruger**, skal du søge efter den Retail Server-app, du har oprettet i afsnittet [Konfigurere en brugerdefineret Retail Server-app i Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Vælg derefter **Tilføj tilladelser**.
 1. I afsnittet **Oversigt** skal du notere værdien i feltet **Program-id (klient-id)**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Opgradere en eksisterende brugerdefineret CPOS Azure AD-app, der er oprettet før Commerce version 10.0.21
+
+Følg disse trin for at opgradere en eksisterende brugerdefineret CPOS Azure AD-app, der er oprettet før Commerce version 10.0.21. 
+
+1. Åbn din brugerdefinerede CPOS Azure AD-app i Azure-portalen.
+1. Vælg fanen **Godkendelse**.
+1. Kopiér og gem den oprindelige omdirigerings-URI fra **Web**-typen til brug senere, og slet den derefter.
+1. Vælg **Tilføj en platform**, og vælg derefter **Enkeltsidet ansøgning (SPA)**.
+1. Tilføj den oprindelige webomdirigerings-URI, der er kopieret ovenfor, til SPA-platformen.
+1. I afsnittet **Tokenkonfiguration** skal du benytte følgende fremgangsmåde for at tilføje to krav:
+    1. Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **id**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
+    1. Vælg **Tilføj valgfrit krav**. Indstil feltet **Tokentype** til **Adgang**, og vælg derefter kravet **sid**. Vælg **Tilføj**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Opdatere CPOS-konfigurationsfilen
 
