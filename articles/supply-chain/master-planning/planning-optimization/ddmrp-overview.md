@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: cf5ca3996a882111b840e3acb5e2a4f3f26ec4b7
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689482"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740844"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Planlægning af efterspørgselsbaseret materialebehov (DDMRP)- oversigt
 
@@ -44,6 +44,6 @@ DDMRP bruges typisk af producenter af styklister med flere niveauer. Det kan dog
 
 ## <a name="ddmrp-in-dynamics-365-supply-chain-management"></a>DDMRP i Dynamics 365 Supply Chain Management
 
-DDMRP følger med Microsoft Dynamics 365 Supply Chain Management kræver ingen yderligere licensgebyrer. I Supply Chain Management er funktionen DDMRP føjet til det eksisterende modulet **Behovsplanlægning**. Det kræver dog, at du bruger tilføjelsesprogrammet Planlægningsoptimering. 
+DDMRP følger med Microsoft Dynamics 365 Supply Chain Management kræver ingen yderligere licensgebyrer. I Supply Chain Management er funktionen DDMRP føjet til det eksisterende modulet **Behovsplanlægning**. Det kræver dog, at du bruger tilføjelsesprogrammet Planlægningsoptimering.
 
 DDMRP er integreret med de eksisterende planlægningsopsætninger i Supply Chain Management og bruges sammen med disse opsætninger til at nå frem til den korrekte planlægningskonfiguration til din virksomhed. Det styres af en ny disponeringskode, der er helt forskellig fra periode, min./maks., behov osv. Det er ikke et nyt modul, og den erstatter ikke eksisterende planlægningsfunktionalitet. Det giver dig dog flere funktioner at bruge.

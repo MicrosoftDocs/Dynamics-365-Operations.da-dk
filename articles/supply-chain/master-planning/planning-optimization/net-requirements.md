@@ -1,6 +1,6 @@
 ---
-title: Nettobehov og udligningsoplysninger med Planlægningsoptimering
-description: Denne artikel indeholder oplysninger om beregnede nettobehov og udligningsoplysninger i Planlægningsoptimering.
+title: Nettobehov og udligningsoplysninger
+description: Denne artikel indeholder oplysninger om beregnede nettobehov og udligningsoplysninger.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888522"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748432"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettobehov og udligningsoplysninger med Planlægningsoptimering
+# <a name="net-requirements-and-pegging-information"></a>Nettobehov og udligningsoplysninger
 
 [!include [banner](../../includes/banner.md)]
 
-Når du kører varedisponering i Planlægningsoptimering, er det vigtigt, at du forstår dets output, hvordan eksisterende forsyning dækker behovet, og hvorfor der er genereret specifik forsyning. Du kan bruge siden **Nettobehov** til bedre at forstå de beregnede behov, som varedisponeringen medfører.
+Når du kører varedisponering, er det vigtigt, at du forstår dets output, hvordan eksisterende forsyning dækker behovet, og hvorfor der er genereret specifik forsyning. Du kan bruge siden **Nettobehov** til bedre at forstå de beregnede behov, som varedisponeringen medfører.
 
-På siden **Nettobehov** vises de nettobehov, som Planlægningsoptimering har beregnet for produktet. Den viser også de disponeringsindstillinger, der blev anvendt under kørslen af varedisponeringen, en oversigt over behovstotalerne efter transaktionstype og oplysninger om udligning.
+På siden **Nettobehov** vises de nettobehov, som varedisponering har beregnet for produktet. Den viser også de disponeringsindstillinger, der blev anvendt under kørslen af varedisponeringen, en oversigt over behovstotalerne efter transaktionstype og oplysninger om udligning.
 
 ## <a name="open-the-net-requirements-page"></a>Åbne siden Nettobehov
 
@@ -64,8 +64,8 @@ I den nedre del af siden vises følgende faner:
 De følgende kommandoer er tilgængelige i handlingsruden:
 
 - **Opdater \> Varedisponering** – Kør Varedisponering direkte fra siden **Nettobehov**.
-- **Opdater \> Hovedplanlægning** – Kør hovedplanlægning direkte fra siden **Nettobehov**. Planlægningsoptimering understøtter endnu ikke denne handling.
-- **Opdater \> Kontinuitetsplanlægning** – Kør kontinuitetsplanlægning direkte fra siden **Nettobehov**. Planlægningsoptimering understøtter endnu ikke denne handling.
+- **Opdater \> Hovedplanlægning** – Kør hovedplanlægning direkte fra siden **Nettobehov**. Planlægningsoptimering understøtter ikke denne handling.
+- **Opdater \> Kontinuitetsplanlægning** – Kør kontinuitetsplanlægning direkte fra siden **Nettobehov**. Planlægningsoptimering understøtter ikke denne handling.
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -133,8 +133,6 @@ Derefter åbner du siden **Nettobehov** for produkt *1000* for at gennemse, hvor
     ![Udligningsoplysninger til salgsordre](media/pegging-planned-purchase-order.png "Udligningsoplysninger til salgsordre")
 
 > [!NOTE]
-> Da planlægningsoptimering endnu ikke understøtter visse funktioner, er typerne *Sikkerhedslager* og *Udløbet batch* ikke medtaget på siden **Nettobehov**. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
->
-> Hvis du bruger det indbyggede varedisponeringsprogram, understøttes batchstyrede produkter. Ved batchstyrede produkter vises udløbet beholdning på siden **Nettobehov**, men er ikke udlignet med efterspørgselskravene. Udløbne disponible linjer af denne type vises som *Udløbet batch*-behovslinjer på siden **Nettobehov**.
+> *Sikkerhedslager*-behovet medtages ikke på siden **Nettobehov**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885893"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740898"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Dato- og klokkeslætsparametre, der bruges af planlægningsoptimering
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885893"
 
 Denne artikel indeholder oplysninger om parametrene for dato og klokkeslæt, som planlægningsoptimering bruger under driften.
 
-Mens det indbyggede program til varedisponering bruger transaktionsdatoer i alle beregninger, arbejder planlægningsoptimering med dato- og tidsværdier, der konverteres til datoer. Denne forskel i adfærd kan føre til situationer, hvor prognosetransaktioner, der f.eks. er oprettet ved midnat den dag, hvor der køres varedisponering, ikke er medtaget, da planlægningsoptimering mener, at de var oprettet før dags dato.
+Mens det udfasede varedisponeringsprogram bruger transaktionsdatoer i alle beregninger, arbejder planlægningsoptimering med dato- og tidsværdier, der konverteres til datoer. Denne forskel i adfærd kan føre til situationer, hvor prognosetransaktioner, der f.eks. er oprettet ved midnat den dag, hvor der køres varedisponering, ikke er medtaget, da planlægningsoptimering mener, at de var oprettet før dags dato.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametre for afgangs- og efterspørgselsposteringer
 

@@ -1,6 +1,6 @@
 ---
 title: Genopfyldningsmetoder og ændring af antal
-description: Denne artikel indeholder oplysninger om genopfyldningmetoder i Planlægningsoptimering. Det forklares også, hvordan antallet på flere ordrer på et produkt påvirker resultatet.
+description: Denne artikel indeholder oplysninger om genopfyldningmetoder. Det forklares også, hvordan antallet på flere ordrer på et produkt påvirker resultatet.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873689"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739750"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Genopfyldningsmetoder og ændring af antal
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om genopfyldningmetoder i Planlægningsoptimering. Det forklares også, hvordan antallet på flere ordrer på et produkt påvirker resultatet.
+Denne artikel indeholder oplysninger om genopfyldningmetoder. Det forklares også, hvordan antallet på flere ordrer på et produkt påvirker resultatet.
 
 Genopfyldningsmetoder kaldes også disponeringsmetoder og metoder til angivelse af partistørrelse.
 
 ## <a name="coverage-codes"></a>Disponeringskoder
 
-Planlægningsoptimering kan konfigureres til at bruge forskellige genopfyldningsmetoder. Genopfyldningsmetoderne er de teknikker, som systemet bruger til at beregne behov for et produkt. Genopfyldningsmetoder defineres ud fra disponeringskoder, du kan angive for enten disponeringsgruppen eller produktet.
+Varedisponering kan konfigureres til at bruge forskellige genopfyldningsmetoder. Genopfyldningsmetoderne er de teknikker, som systemet bruger til at beregne behov for et produkt. Genopfyldningsmetoder defineres ud fra disponeringskoder, du kan angive for enten disponeringsgruppen eller produktet.
 
-Følgende disponeringskoder kan bruges i Planlægningsoptimering:
+Følgende disponeringskoder kan bruges:
 
 - **Periode** – Genopfyldningsmetoden kombinerer alle behov for en periode til én ordre for produktet. Ordren planlægges for den første dag i perioden, og dens antal vil opfylde nettobehovet i den oprettede periode. Perioden starter med det første behov for produktet og dækker den definerede varighed i tiden. Den næste periode vil starte med de næste behov for produktet. Disponeringskoden for *periode* bruges ofte til ikke-forudsigelige lagertræk, sæsonafhængige produkter eller produkter med høje omkostninger. Følgende illustration viser et eksempel.
 
@@ -64,13 +64,13 @@ På siden **Standardordreindstilling** for et frigivet produkt kan du angive hve
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Eksempler på genopfyldning, hvor disponeringskoden Min./Maks. bruges
 
-Hvis du ikke angiver en værdi i feltet **Flere** for et produkt på siden **Standardordreindstilling**, og hvis du bruger genopfyldningsmetoden *Min./Maks.*, foretager Planlægningsoptimering genopfyldning af lageret op til et bestemt niveau, når den forventede beholdning er under en bestemt grænseværdi.
+Hvis du ikke angiver en værdi i feltet **Flere** for et produkt på siden **Standardordreindstilling**, og hvis du bruger genopfyldningsmetoden *Min./Maks.*, foretager varedisponering genopfyldning af lageret op til et bestemt niveau, når den forventede beholdning er under en bestemt grænseværdi.
 
 Hvis du definerer en multiplummængde for et produkt, vil genopfyldningsmetoden *Min./Maks.* ændrer funktionaliteten og tage værdien af **Flere** med i beregningen.
 
-Med andre ord genopfylder Planlægningsoptimering stadig lageret op til det definerede maksimumniveau, når den forventede beholdning er mindre end det definerede minimumniveau. Genopfyldningsantallet skal dog være et multiplum af værdien for **Flere**.
+Med andre ord genopfylder varedisponering stadig lageret op til det definerede maksimumniveau, når den forventede beholdning er mindre end det definerede minimumniveau. Genopfyldningsantallet skal dog være et multiplum af værdien for **Flere**.
 
-Hvis genopfyldningsantallet (forskellen mellem det maksimale niveau og det forventede beholdningsniveau) ikke er et multiplum af den definerede multiplummængde, bruger Planlægningsoptimering den første mulige værdi, der sammen med den forventede beholdning vil være under det maksimale niveau. Hvis summen er mindre end minimumniveauet, bruger Planlægningsoptimering den første værdi, der sammen med den forventede beholdning vil være over maksimumniveauet.
+Hvis genopfyldningsantallet (forskellen mellem det maksimale niveau og det forventede beholdningsniveau) ikke er et multiplum af den definerede multiplummængde, bruger varedisponering den første mulige værdi, der sammen med den forventede beholdning vil være under det maksimale niveau. Hvis summen er mindre end minimumniveauet, bruger varedisponering den første værdi, der sammen med den forventede beholdning vil være over maksimumniveauet.
 
 Følgende undersektioner indeholder nogle eksempler, der viser, hvordan multiplummængden for ordrer på et produkt påvirker resultatet af genopfyldningsmetoden *Min./Maks.* .
 

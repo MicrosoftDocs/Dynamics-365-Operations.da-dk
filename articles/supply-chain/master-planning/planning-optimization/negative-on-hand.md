@@ -1,6 +1,6 @@
 ---
 title: Planlægning med negative disponible lagerantal
-description: Denne artikel beskriver, hvordan negative lagerbeholdninger håndteres, når du bruger planlægningsoptimering.
+description: Denne artikel forklarer, hvordan negativ disponibel lagerbeholdning håndteres.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856129"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741116"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planlægning med negative disponible lagerantal
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856129"
 
 Hvis systemet viser et negativt samlet disponibelt lagerantal, behandler planlægningsmotoren antallet som 0 (nul) for at undgå overforsyning. Funktionen fungerer på følgende måde:
 
-1. Planlægningsoptimeringsfunktionen aggregerer de disponible antal i det laveste niveau af disponeringsdimensioner. (Hvis f.eks. *sted* ikke er en disponeringsdimension, aggregerer planlægningsoptimering antallet på *lagersteds*-niveau.)
+1. Varedisponering aggregerer de disponible antal på det laveste niveau af disponeringsdimensioner. (Hvis f.eks. *lokation* ikke er en disponeringsdimension, aggregerer varedisponering de disponible antal på *lagersteds*-niveau.)
 1. Hvis det samlede disponible antal på det laveste niveau af disponeringsdimensionen er negativt, antager systemet, at den disponible mængde er 0 (nul).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ Systemet konfigureres på følgende måde:
 - Der findes en salgsordre på et antal af *10* stk. af produkt *FG*.
 - Salgsordreantallet reserveres fysisk i forhold til den eksisterende disponible lagerbeholdning.
 
-Du skal derefter justere antallet af produkt *FG*, så den disponible lagerbeholdning bliver 5. Da den disponible produktbeholdning er 5, reserveres salgsordreantallet nu i forhold til antal, der ikke er tilgængeligt i beholdningen (det ville være ens, hvis den disponible lagerbeholdning var 0. I så fald ville salgsordren blive reserveret mod negativt lager). Hvis du kører varedisponering nu, oprettes der planlagt ordre for antallet 5 for *FG* til forsyning af salgsordren, da Planlægningsoptimering altid anvender eksisterende lagerbeholdning eller opretter en ny planlagt ordre til at supplere den fysiske reservation.
-
-## <a name="related-resources"></a>Tilknyttede ressourcer
-
-- [Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-- [Start her med planlægningsoptimering](get-started.md)
-- [Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
-- [Få vist planhistorik og planlægningslogs](plan-history-logs.md)
-- [Annullere et planlægningsjob](cancel-planning-job.md)
+Du skal derefter justere antallet af produkt *FG*, så den disponible lagerbeholdning bliver 5. Da den disponible produktbeholdning er 5, reserveres salgsordreantallet nu i forhold til antal, der ikke er tilgængeligt i beholdningen (det ville være ens, hvis den disponible lagerbeholdning var 0. I så fald ville salgsordren blive reserveret mod negativt lager). Hvis du kører varedisponering nu, oprettes der planlagt ordre for antallet 5 for *FG* til forsyning af salgsordren, da varedisponering altid anvender eksisterende lagerbeholdning eller opretter en ny planlagt ordre til at supplere den fysiske reservation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

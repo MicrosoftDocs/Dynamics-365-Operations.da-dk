@@ -1,6 +1,6 @@
 ---
-title: Start her med planlægningsoptimering
-description: Denne artikel beskriver, hvordan du kommer i gang med at bruge funktionen Planlægningsoptimering.
+title: Start her med varedisponering
+description: Denne artikel beskriver, hvordan du kommer i gang med at bruge varedisponeringsfunktionen i Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295922"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740323"
 ---
-# <a name="get-started-with-planning-optimization"></a>Kom i gang med planlægningsoptimering
+# <a name="get-started-with-master-planning"></a>Start her med varedisponering
 
 [!include [banner](../../includes/banner.md)]
 
-Som [tidligere annonceret](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) er planlægningsoptimering planlagt til at erstatte det eksisterende indbyggede varedisponeringsprogram.
-
-Hvis du i øjeblikket bruger det indbyggede varedisponeringsprogram, skal du starte med at planlægge din migrering til planlægningsoptimering nu. Det er vigtigt at starte med det samme, da det ellers kan have indflydelse på dine handlinger, når afskrivning gennemtvinges (selvom gennemtvingelse ikke er planlagt i øjeblikket). Vi opfordrer dig på det kraftigste til at fuldføre overflytningen, så snart Planlægningsoptimering understøtter de funktioner, du skal bruge, så du kan begynde at få fordel af de mange forbedringer af ydeevnen og andre nye egenskaber, der leveres af den nye tjeneste.
-
-Funktionen Planlægningsoptimering understøtter i øjeblikket ikke alle de funktioner, der er tilgængelige i det planlægningsprogram, der er indbygget i Supply Chain Management. Det er derfor vigtigt, at du evaluerer, om det funktionssæt, der aktuelt er tilgængeligt i Planlægningsoptimering, opfylder dine behov. Planlægningsoptimeringsfunktionen er i øjeblikket ikke aktiveret som standard i Dynamics Lifecycle Services (LCS), så du har mulighed for at foretage din evaluering, før funktionen er slået til.
-
-> [!NOTE]
-> Du skal anmode om en undtagelse fra migrering til planlægningsoptimering, hvis din varedisponeringsproces ikke omfatter produktion (varedisponeringsgenererede produktionsordreforslag), og du har brug for det indbyggede varedisponeringsprogram ud over version 10.0.15. Startende med version 10.0.16 vises der en fejl i miljøer, når der køres indbygget varedisponering uden generering af produktionsordreforslag. Planlægningsoptimering skal bruges til alle nye installationer, der ikke genererer produktionsordreforslag under varedisponering. Ejere af eksisterende miljøer, der kører det indbyggede varedisponeringsprogram uden generering af produktionsordreforslag, modtager en mail med detaljer om undtagelsesprocessen. Det anbefales, at du arbejder med en partner for at evaluere og planlægge migreringen til planlægningsoptimering.
-
-Før du slår Planlægningsoptimering til, anbefales det på det kraftigste, at du evaluerer resultaterne af analysen af om Planlægningsoptimering passer. Du kan finde flere oplysninger under [Analyse af om Planlægningsoptimering passer](planning-optimization-fit-analysis.md).
+Varedisponering i Supply Chain Management leveres af en ekstern tjeneste, der kaldes tilføjelsesprogrammet Planlægningsoptimering for Dynamics 365 Supply Chain Management. I dette emne beskrives, hvordan du anskaffer og konfigurerer denne tjeneste.
 
 ## <a name="availability"></a>Tilgængelighed
 
@@ -108,31 +99,15 @@ Forbindelsesstatussen angiver den aktuelle status for forbindelsen mellem Supply
 Indstillingen af indstillingen **Brug Planlægningsoptimering** bestemmer, hvilket planlægningsprogram der bruges til varedisponering:
 
 - **Ja** – Planlægningsoptimering bruges til varedisponering.
-- **Nej** – Det indbyggede planlægningsprogram for Supply Chain Management bruges til varedisponering.
+- **Nej** – Det udfasede varedisponeringsprogram bruges til varedisponering.
 
-Denne indstilling gælder for alle juridiske enheder (firmaer). Det er ikke muligt at bruge planlægningsoptimering i visse juridiske enheder og den indbyggede varedisponering i andre juridiske enheder.
+Denne indstilling gælder for alle juridiske enheder (firmaer). Det er ikke muligt at bruge planlægningsoptimering i visse juridiske enheder og det udfasede varedisponeringsprogram i andre juridiske enheder.
 
 > [!NOTE]
-> Hvis de eksisterende planlægningsbatchjob, der blev oprettet til det indbyggede planlægningsprogram for Supply Chain Management, udløses mens indstillingen **Brug Planlægningsoptimering** er angivet til **Ja**, vil disse job ikke blive udført.
+> Hvis de eksisterende planlægningsbatchjob, der blev oprettet til det udfasede varedisponeringsprogram, udløses mens indstillingen **Brug Planlægningsoptimering** er angivet til **Ja**, vil disse job ikke blive udført.
 
 ### <a name="integration-with-the-setup"></a>Integration med opsætningen
 
 Hvis Planlægningsoptimering er aktiveret, foretages varedisponering ved hjælp af tilføjelsesprogrammet Planlægningsoptimering. I dette tilfælde påvirkes resultaterne af og funktionerne for varedisponering.
 
-## <a name="additional-resources"></a>Yderligere ressourcer
-
-[Vilkår og betingelser for forhåndsvisning](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-
-[Analyse af om Planlægningsoptimering passer til](planning-optimization-fit-analysis.md)
-
-[Få vist planhistorik og planlægningslogs](plan-history-logs.md)
-
-[Anvend filtre på en plan](plan-filters.md)
-
-[Annullere et planlægningsjob](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

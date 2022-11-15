@@ -2,7 +2,7 @@
 title: Fastlægge betingelser for debitorbetaling
 description: Denne procedure definerer opsætning af en kasserabat og forfaldsdato.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065702"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752770"
 ---
 # <a name="establish-customer-payment-terms"></a>Fastlægge betingelser for debitorbetaling
 
@@ -34,7 +34,11 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
 6. Angiv en dato i feltet **Dag i måned**. Datoen skal angives som et tal, f.eks "10" og ikke "10.". 
 7. Klik på **Gem**.
 8. Luk siden.
-9. Gå til **Navigationsrude > Moduler > Debitor > Betalingsopsætning > Betalingsbetingelser**.
+9. Gå til **Navigationsrude > Moduler > Debitor > Betalingsopsætning > Betalingsbetingelser**. 
+
+>[!NOTE] 
+>Hvis **Betalingsbetingelser** er **Kontant**, skal feltet **Kontantbetaling** på siden **Betalingsbetingelser** være **Nej**.
+
 10. Klik på **Ny**. **Betalingsbetingelser** bruges til at definere, hvordan forfaldsdatoer beregnes. Opsætningen af datoen for kasserabatten er defineret på en separat side. 
 11. Angiv et id i feltet **Betalingsbetingelser**.
 12. Indtast en beskrivelse i feltet **Beskrivelse**.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335399"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739892"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlægning med ressourcevalg baseret på egenskab
 
@@ -43,7 +43,7 @@ Hvis du vil tildele egenskaber til en operationsressource, skal du bruge oversig
 - **Gyldig fra** – Angiv den første dato, hvor ressourcen eller egenskabstildelingen gælder. Under planlægning vil systemet ikke bruge en ressource eller egenskab, der har en udløbet egenskabstildeling, heller ikke hvis ressourcen ellers opfylder kravene.
 - **Udløb** – Angiv den sidste dato, hvor ressourcen eller egenskabstildelingen gælder. Under planlægning vil systemet ikke bruge en ressource eller egenskab, der har en udløbet egenskabstildeling, heller ikke hvis ressourcen ellers opfylder kravene.
 - **Niveau** – Angiv det færdighedsniveau, ressourcen skal have for egenskaben. Hvis du derefter angiver en værdi af **Minimumsniveau, der kræves** for ressourcen eller egenskabskravet, tager planlægningsprogrammet højde for færdighedsniveauet ved valg af ressource. Systemet vælger derefter kun ressourcer, der har den nødvendige egenskab på et niveau, der er lig med eller overstiger minimumsniveauet, der er angivet i kildeforudsætningen.
-- **Prioritet** – Dette felt er endnu ikke understøttet af Planlægningsoptimering. Hvis du bruger det indbyggede planlægningsprogram, kan du dog bruge feltet **Prioritet** i ressource- eller egenskabstildelingen til at definere ressourceprioriteten. Hvis *Prioritet* er valgt i feltet **Valg af primær ressource** på siden **Planlægningsparametre** side, så vælger systemet først den ressource, der har den højeste prioritet (dvs. den laveste numeriske værdi i feltet **Prioritet**) under planlægning.
+- **Prioritet** – Dette felt er endnu ikke understøttet af Planlægningsoptimering. Hvis du bruger det udfasede varedisponeringsprogram, kan du dog bruge feltet **Prioritet** i ressource- eller egenskabstildelingen til at definere ressourceprioriteten. Hvis *Prioritet* er valgt i feltet **Valg af primær ressource** på siden **Planlægningsparametre** side, så vælger systemet først den ressource, der har den højeste prioritet (dvs. den laveste numeriske værdi i feltet **Prioritet**) under planlægning.
 
 ## <a name="example"></a>Eksempel
 

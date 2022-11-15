@@ -1,6 +1,6 @@
 ---
-title: Lagerafmærkning med planlægningsoptimering
-description: Denne artikel indeholder oplysninger om de indstillinger, der er tilgængelige for at afmærke lagerbeholdningen i autoriserede ordrer, når du bruger Planlægningsoptimering.
+title: Lagermarkering
+description: Denne artikel indeholder oplysninger om de indstillinger, der er tilgængelige for at afmærke lagerbeholdningen i autoriserede ordrer.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219931"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740570"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Lagerafmærkning med planlægningsoptimering
+# <a name="inventory-marking"></a>Lagermarkering
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om de indstillinger, der er tilgængelige for at afmærke lagerbeholdningen i autoriserede ordrer, når du bruger Planlægningsoptimering.
+Denne artikel indeholder oplysninger om de indstillinger, der er tilgængelige for at afmærke lagerbeholdningen i autoriserede ordrer.
 
 *Afmærkning* bruges til at sammenkæde udbud og efterspørgsel. Det ligner *udligning*, som angiver, hvordan varedisponering forventer at dække behov. Fra et planlægningssynspunkt er den væsentligste forskel, at afmærkning er mere permanent end udligning.
 
