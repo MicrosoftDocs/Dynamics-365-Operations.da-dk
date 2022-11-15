@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287505"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751910"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Konfigurere og administrere billeder til Modern POS MPOS
 
@@ -160,7 +160,7 @@ For alle enheder med undtagelse af produkter gælder det, at du kan overskrive b
     [![Galleriside med katalogbilleder.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Galleriet viser i øjeblikket ikke billedeksempler for billed-URL-adresser til medieskabeloner. For enhederne Katalog, Arbejder, Debitor og Kategori og gælder det, at hvis brugeren eksplicit angiver en URL-adresse via denne side, anbefaler vi, at du angiver, hvilket billede der er standardbilledet, da Commerce Scale Unit-klienter kun ét billede pr. katalog, debitor, arbejder og kategori. Hvis brugeren ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender det til Commerce-tjenestekaldefunktionen (MPOS eller Ecommerce).
+> Det er kun for offentligt og anonymt tilgængelige billeder, der kan gengives på POS. POS understøtter gengivelse af billeder, der har ekstern vært, med kravet om, at billederne skal returneres som inline oktet-stream til GET-anmodninger uden overskrifter. Med politikken for anonym adgang, og specifikt for SharePoint-billeder, der kræver, at anmodningsoverskrifter indeholder både værts- og brugeragenthoveder, returneres svaret "Forbudt". Billedstyring, der bruger SharePoint som vært, understøttes derfor i øjeblikket ikke som standard. Galleriet **Katalogbilleder** viser ikke billedeksempler for billed-URL-adresser til medieskabeloner. Da Commerce Scale Unit-klienter kun viser ét billede pr. katalog, kunde, arbejder og kategori, så hvis du eksplicit angiver en URL-adresse via denne side til katalog, kunde, arbejder og kategori, anbefaler vi, at du angiver, hvilket billede der er standardbilledet. Hvis du ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender det til Commerce-tjenestekaldefunktionen (MPOS eller e-handel).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Overskrive billedets URL-adresse for katalogbilleder fra eksempelsiden
 

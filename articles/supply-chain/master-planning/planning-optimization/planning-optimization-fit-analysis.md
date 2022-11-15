@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689988"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750701"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse af tilpasning af planlægningsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Du skal analysere resultatet fra planlægningsoptimeringen og tilpasse analysen som en del af migreringsprocessen. Bemærk, at omfanget af planlægningsoptimering ikke er lig med den aktuelle indbyggede funktionalitet for varedisponering. Det anbefales, at du samarbejder med partneren og læser dokumentationen for at forberede migreringen. 
+Du skal analysere resultatet fra planlægningsoptimeringen og tilpasse analysen som en del af migreringsprocessen. Bemærk, at omfanget af planlægningsoptimering ikke er lig med funktionaliteten af det udfasede varedisponeringsprogram. Det anbefales, at du samarbejder med partneren og læser dokumentationen for at forberede migreringen.
 
-Tilpasset analyse af planlægningsoptimering hjælper dig med at identificere, hvor resultatet kan være anderledes mellem det indbyggede varedisponeringsprogram og planlægningsoptimering. Denne analyse foretages på basis af den aktuelle opsætning og dine data. 
+Tilpasset analyse af planlægningsoptimering hjælper dig med at identificere, hvor resultatet kan være anderledes mellem det udfasede varedisponeringsprogram og planlægningsoptimering. Denne analyse foretages på basis af den aktuelle opsætning og dine data. 
 
 Hvis du vil have vist analyseresultatet for tilpasning af planlægningsoptimering, skal du gå til **Varedisponering** \> **Konfiguration** \> **Analyse af tilpasning af planlægningsoptimering** og derefter vælge **Kør analyse**. Hvis analysen finder nogen uoverensstemmelser, vises de på samme side. (Det kan tage et par minutter at køre analysen).
 
@@ -64,7 +64,6 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Basiskalendere | Kalendere, der bruger basiskalender: *\#* | Denne funktion understøttes nu. | Understøttet | 
 | Batchdispositionskoder | Ikke-tilgængelige batchdispositionsmaster: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Bruge batchdispositionskoder til at markere batches som disponible eller ikke til rådighed](../../inventory/batch-disposition-codes.md) | Understøttet |
 | Leveringsevne (LE) | Standardindstillinger for ordre med leveringsdatokontrollen angivet til LE: *\#* | I Supply Chain Management 10.0.28 og nyere gør en proces kaldet *CTP for Planlægningsoptimering* bekræftede afsendelses- og tilgangsdatoer tilgængelige, når den dynamiske plan er kørt. I ældre versioner af Supply Chain Management ignoreres den tidligere CTP-indstilling, når Planlægningsoptimering er aktiveret. | Understøttet |
-| Kopiér statisk til dynamisk plan | Kopi af statisk til dynamisk plan er aktiveret på varedisponeringsparametrene. | Planlægningsoptimering kopierer ikke den statiske plan til den dynamiske plan, uanset denne indstilling. Generelt er dette koncept ikke så relevant på grund af hastigheden og den fuldstændige genopretning, som planlægningsoptimering giver. Hvis der bruges to eller flere planer, skal varedisponeringen udløses for hver enkelt plan. | I/T |
 | Autorisation | Disponeringsgrupper med automatisk autorisationstidshorisont angivet: *\#* | I version 10.0.7 og nyere understøttes autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen *Automatisk autorisation med planlægningsoptimering* er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
 | Autorisation | Varedisponeringsposter med automatisk autorisation angivet: *\#* | I version 10.0.7 og nyere understøttes automatisk autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen *Automatisk autorisation med planlægningsoptimering* er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
 | Autorisation | Behovsplaner med automatisk autorisation angivet: *\#* | I version 10.0.7 og nyere understøttes automatisk autorisation som et separat autorisationsbatchjob, efter at varedisponering er fuldført (hvis funktionen *Automatisk autorisation med planlægningsoptimering* er blevet aktiveret i [funktionsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Bemærk, at automatisk autorisation med planlægningsoptimering er baseret på ordredatoen (startdato), og ikke behovsdatoen (slutdato). Denne funktionsmåde sikrer, at der sker en rettidig autorisation af ordreforslag, uden at leveringstiden i autorisationstidshorisonten skal medtages. | Understøttet |
@@ -93,34 +92,27 @@ Følgende tabel viser de forskellige resultater, der kan vises efter en tilpasni
 | Produktion | Formelversioner med sam-/biprodukter: *\#* | Denne funktion afventer. I øjeblikket ignoreres samprodukter og biprodukter, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022 udgivelsesbølge 2 |
 | Produktion | Formelversioner med udbytte: *\#* | Denne funktion afventer. I øjeblikket ignoreres udbytte, der er tilknyttet formelversionen, når planlægningsoptimering aktiveres. | 2022 udgivelsesbølge 2 |
 | Produktion | Planer, som inkluderer rækkefølge: *\#* | Denne funktion afventer. I øjeblikket ignoreres rækkefølge, når planlægningsoptimering er aktiveret, uanset denne indstilling. | 2022 udgivelsesbølge 2 |
-| Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: *\#* | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | Fremtidig bølge |
+| Produktion | Frigivne produktionsordrer, der ikke er startet, hvor den planlagte start er tidligere end i dag: *\#* | Denne funktion afventer. Hvis en produktionsordre er forsinket, antager varedisponeringen i øjeblikket, at den fuldføres i dag. Dette er relevant for frigivne produktionsordrer, hvor en leveringsdato er passeret, men ikke er fuldført endnu. | 2022 udgivelsesbølge 2 |
 | Produktion | Ressourcer, der er planlagt med kapacitetsbegrænsning: *\#* | Denne funktion understøttes nu.| Understøttet |
 | Produktion | Ruter, der bruges i planlægning: *\#* | Denne funktion understøttes. | Understøttet |
-| Produktion | Reservation af salgslinje ved hjælp af udfoldning: *\#* | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | Fremtidig bølge |
-| Produktion | Planlægning med udfoldning af produktionsordrer: *\#* | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | Fremtidig bølge |
+| Produktion | Reservation af salgslinje ved hjælp af udfoldning: *\#* | Salgslinjereservation, der bruger udfoldning, understøttes ikke, når planlægningsoptimering er aktiveret. | 2022 udgivelsesbølge 2 |
+| Produktion | Planlægning med udfoldning af produktionsordrer: *\#* | Planlægning, der bruger udfoldning af produktionsordrer, understøttes ikke, når planlægningsoptimering er aktiveret. Produktionsordrer kan planlægges individuelt. | 2022 udgivelsesbølge 2 |
 | Tilbudsanmodning | Behovsplaner med tilbudsanmodninger aktiveret: *\#* | Denne funktion afventer. På nuværende tidspunkt betragtes tilbudsanmodninger ikke som efterspørgsel, når planlægningsoptimering aktiveres. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 |
 | Rekvisitioner | Behovsplaner med rekvisitioner aktiveret: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger under [Indkøbsrekvisitioner](purchase-requisitions.md) | Understøttet |
 | Sikkerhedsmargener | Disponeringsgrupper med sikkerhedsmargen: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) | Understøttet |
 | Sikkerhedsmargener | Behovsplaner med sikkerhedsmargen: *\#* | Denne funktion understøttes nu. Du kan finde flere oplysninger i [Sikkerhedsmargener](safety-margins.md) |  Understøttet |
-| Opfyldning af sikkerhedslager | Varedisponeringsposter med en anden "Opfyld minimum" end fra "Dags dato + fremskaffelsestid": *\#* | Planlægningsoptimering bruger altid *Dags dato + fremskaffelsestid*. Denne ændring er foretaget for at forberede en forenklet planlægningsopsætning i fremtiden og for at give et resultat, der kan handles ud fra. Hvis indkøbstiden ikke indgår i sikkerhedslageret, vil ordreforslag, der oprettes for den aktuelle begrænsede disponible lagerbeholdning, altid blive forsinket grundet leveringstiden. Denne funktionsmåde kan forårsage betydelige problemer og uønskede ordreforslag. Den bedste praksis er at ændre indstillingen, så *Dags dato + fremskaffelsestid* bruges. Opdater masterdata for at undgå advarsler. | I/T |
-| Salgstilbud | Behovsplaner med salgstilbud aktiveret: *\#* | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 eller senere |
-| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion afventer. | 2022 udgivelsesbølge 2 |
+| Salgstilbud | Behovsplaner med salgstilbud aktiveret: *\#* | Denne funktion afventer. I øjeblikket ignoreres tilbud, når planlægningsoptimering er aktiveret. De ignoreres, uanset hvilken indstilling der er angivet. | 2022 udgivelsesbølge 2 |
+| Hyldelevetid | Behovsplaner med hyldelevetid aktiveret: *\#* | Denne funktion understøttes nu. | Understøttet |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over planlægningsoptimering](planning-optimization-overview.md)
-
-[Start her med planlægningsoptimering](get-started.md)
-
-[Forskelle mellem klassisk behovsplanlægning og planlægningsoptimering](planning-optimization-differences-with-built-in.md)
-
-[Parametre, der ikke bruges af planlægningsoptimering](not-used-parameters.md)
-
-[Få vist planhistorik og planlægningslogfiler](plan-history-logs.md)
-
-[Anvend filtre på en plan](plan-filters.md)
-
-[Annullere et planlægningsjob](cancel-planning-job.md)
+- [Systemarkitektur i varedisponering](../master-planning-architecture.md)
+- [Start her med varedisponering](get-started.md)
+- [Forskelle mellem klassisk behovsplanlægning og planlægningsoptimering](planning-optimization-differences-with-built-in.md)
+- [Parametre, der ikke bruges af planlægningsoptimering](not-used-parameters.md)
+- [Få vist planhistorik og planlægningslogfiler](plan-history-logs.md)
+- [Køre planlægning for et undersæt af varer](plan-filters.md)
+- [Annullere et planlægningsjob](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
