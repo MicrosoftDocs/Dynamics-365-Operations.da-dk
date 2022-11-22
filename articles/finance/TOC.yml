@@ -416,27 +416,27 @@
               href: accounts-receivable/set-up-bills-exchange.md
             - name: Lukke Debitor
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Indtægtsføring
+            - name: Omsætningsføring
               items:
-                - name: Oversigt over indtægtsføring
+                - name: Oversigt over omsætningsføring
                   href: accounts-receivable/revenue-recognition-overview.md
-                - name: Opsætning af Indtægtsføring
+                - name: Opsætning af omsætningsføring
                   href: accounts-receivable/revenue-recognition-setup.md
-                - name: Registrere udskudt indtægt
+                - name: Registrere udskudt omsætning
                   href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-                - name: Indtægtsføring på salgsordrer
+                - name: Omsætningsføring på salgsordrer
                   href: accounts-receivable/revenue-recognition-so-basics.md
-                - name: Indtægtsføring i bundter
+                - name: Omsætningsføring i bundter
                   href: accounts-receivable/rev-rec-bundles.md
-                - name: Omplacering af indtægtsføring
+                - name: Omplacering af omsætningsføring
                   href: accounts-receivable/rev-rec-reallocation.md
-                - name: Omplacering af indtægtsføring - scenarie 1
+                - name: Omplacering af omsætningsføring - scenarie 1
                   href: accounts-receivable/rev-rec-reallocation-scenario-1.md
-                - name: Omplacering af indtægtsføring - scenarie 2
+                - name: Omplacering af omsætningsføring - scenarie 2
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
-                - name: Omplacering af indtægtsføring - scenarie 3
+                - name: Omplacering af omsætningsføring - scenarie 3
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
-                - name: Omplacering af indtægtsføring - scenarie 4
+                - name: Omplacering af omsætningsføring - scenarie 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: Abonnementsfakturering
               items:
@@ -456,11 +456,11 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milepælsfakturering
                       href: accounts-receivable/sb-milestonebilling.md
-                    - name: Indtægtsfordeling
+                    - name: Omsætningsfordeling
                       href: accounts-receivable/sb-rev-allocation.md
                     - name: Support- og fornyelsesproces
                       href: accounts-receivable/sb-support-renewals.md
-                    - name: Ikke-afregnet indtægt
+                    - name: Ikke-afregnet omsætning
                       href: accounts-receivable/sb-unbilled-revenue.md
                     - name: Planer for forbrugerprisindeks
                       href: accounts-receivable/cpischedules.md
@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Opmærksomhed mellem finansudligning og årsafslutning
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatiser finansudligninger
+                  href: general-ledger/auto-settle.md
                 - name: Værdiregulering af udenlandsk valuta i Finans
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Kontosaldi i Finans
@@ -4785,7 +4787,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?context=/dynamics365/context/finance
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?context=/dynamics365/context/finance
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/finance
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/finance

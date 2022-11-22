@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878506"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764173"
 ---
 # <a name="distributed-order-management-dom"></a>Fordelt ordrestyring (DOM)
 
@@ -68,7 +68,7 @@ Følgende illustration viser livscyklussen for en salgsordre i et DOM-system.
         > [!NOTE]
         > Forenklet problemløser leveres, så detailhandlere kan afprøve DOM-funktionen uden at skulle installere den særlige licens. Organisationer bør ikke anvende Forenklet problemløser i produktionsmiljøer.
         >
-        > Problemløser for produktion øger ydeevnen (f.eks. det antal ordrer og ordrelinjer, der kan håndteres i en kørsel) og konvergens af resultater (eftersom et batch af ordrer giver muligvis ikke de bedste resultat i visse scenarier). Visse regler som f.eks. reglerne **Delordrer** og **Maks. antal lokationer** kræver Problemløser for produktion.
+        > Problemløser for produktion øger ydeevnen (f.eks. det antal ordrer og ordrelinjer, der kan håndteres i en kørsel) og konvergens af resultater (eftersom et batch af ordrer giver muligvis ikke de bedste resultat i visse scenarier). Reglen **Delordrer** kræver, at der oprettes en Problemløser for produktion.
 
 6. Gå tilbage til **Retail og Commerce \> Fordelt ordrestyring \> Opsætning \> DOM-parametre**.
 7. På fanen **Nummerserier** kan du tildele de nødvendige nummerserier til forskellige DOM-enheder.

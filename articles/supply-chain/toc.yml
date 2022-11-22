@@ -2087,7 +2087,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?context=/dynamics365/context/supply-chain
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?context=/dynamics365/context/supply-chain
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/supply-chain
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/supply-chain
@@ -3245,7 +3245,7 @@
                           href: service-management/cancel-service-orders.md
                         - name: Oprette serviceordrer manuelt
                           href: service-management/create-service-orders-manually.md
-                        - name: Periodisere abonnementsindtægt
+                        - name: Periodisere abonnementsomsætning
                           href: service-management/accrue-subscription-revenue.md
                         - name: Slette serviceordrer
                           href: service-management/delete-service-orders.md
@@ -3395,9 +3395,11 @@
           items:
             - name: Oversigt over lagerstedsstyring
               href: warehousing/warehouse-management-overview.md
-            - name: Indgående lagerstedsoperationer
+            - name: Start her med at konfigurere modulet Lagerstedsstyring
+              href: warehousing/get-started-with-setting-up-module.md
+            - name: Indgående lagerstedshandlinger
               items:
-                - name: Lagerstedshåndtering af indgående laster til indkøbsordrer
+                - name: Lagerstedshåndtering af indgående belastninger til indkøbsordrer
                   href: warehousing/inbound-load-handling.md
                 - name: Registrere varer aktiveret til lagerstyringsprocesser ved hjælp af en varemodtagelseskladde
                   href: warehousing/tasks/register-items-advanced-warehousing.md

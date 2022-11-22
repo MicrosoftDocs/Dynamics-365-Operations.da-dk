@@ -586,10 +586,12 @@
                           href: dev-itpro/adyen-connector.md
                         - name: Konfigurere Dynamics 365 Payment Connector til Adyen
                           href: dev-itpro/adyen-connector-setup.md
-                        - name: 'Dynamics 365 Payment Connector til Adyen, ofte stillede spørgsmål'
+                        - name: Ofte stillede spørgsmål om Dynamics 365 Payment Connector til Adyen
                           href: dev-itpro/adyen-connector-faq.md
                         - name: Konfigurere Google Pay med Adyen
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Opsætning af Apple Pay med Adyen
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Fejlfinde Dynamics 365 Payment Connector til Adyen
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Gemme onlinebetalingsmidler med Adyen-connector
@@ -602,6 +604,8 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Konfigurere scenarier for betaling af fakturaer
                       href: payinvoice.md
+                    - name: Forudbetalinger i Dynamics 365 Commerce
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Forhindre duplikerede betalinger
                       href: duplicate-payment-protection.md
                     - name: Oversigt over omnikanalbetalinger
@@ -2332,7 +2336,7 @@
               items:
                 - name: Tilgængelige arbejdsområder til mobilenheder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/commerce
-                - name: Aktivadministration
+                - name: Aktivstyring
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?context=/dynamics365/context/commerce
                 - name: Firmaadressekartotek
                   href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/commerce
@@ -2454,7 +2458,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?context=/dynamics365/context/commerce
                     - name: Konfigurere parallelle grene
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?context=/dynamics365/context/commerce
-                    - name: Konfigurere arbejdsgange for linjeelementer
+                    - name: Konfigurere arbejdsprocesser for linjeelementer
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/commerce
                 - name: Konfigurere batchjob for behandling af arbejdsprocesmeddelelser som vigtige
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/commerce

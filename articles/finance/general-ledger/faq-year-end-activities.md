@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
-ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
+ms.openlocfilehash: a25f20c320b905a2cdd3091e76e3c5e73f1a845a
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9751925"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752742"
 ---
 # <a name="year-end-activities-faq"></a>Ofte spurgte spørgsmål om aktiviteter ved årsafslutningen 
 
@@ -94,6 +94,23 @@ Før du kan bruge denne funktion, skal den være aktiveret i dit system. Adminis
  
 - Modul: Finans
 - Funktionsnavn: Forbedringer af ydeevne til gendannelse af økonomiske dimensionsopsætninger
+
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2022"></a>Kreditor: Hvilke ændringer er der foretaget for at understøtte 1099-årsafslutningsrapportering for 2022?
+
+#### <a name="update-to-all-1099-forms"></a>Opdater til alle 1099-formularer
+Følgende ændringer er foretaget i alle 1099-formularer for 2022-skatteåret:
+
+  - I 2021 blev året fastlagt på 1099-formularer. Fra og med 2022 udfyldes året af rapporten. 
+
+#### <a name="1099-misc"></a>1099-MISC
+Følgende opdateringer er foretaget på formularen 1099-MISC for 2022-skatteåret:
+
+ - Felt 13: Angiver nu indsendelseskravet til lovgivningen om efterrettelighed vedrørende beskatning af konti i udlandet (FATCA – Foreign Account Tax Compliance Act). 
+ - Felt 14: Bruges nu til at rapportere de overskydende gylden faldskærm-betalinger. 
+ - Boks 15: Bruges nu til at rapportere betalingen under ikke-kvalificerede, udskudte kompensationsplaner (NQDC). 
+ - Boks 16: Bruges nu til at rapportere tilbageholdt moms på statsniveau.
+ - Felt 17: Bruges nu til at rapportere betalerens statsnummer.
+ - Boks 18: Bruges nu til at rapportere indkomsten på statsniveau. 
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Kreditor: Hvilke ændringer er der foretaget for at understøtte 1099-årsafslutningsrapportering for 2021?
 
