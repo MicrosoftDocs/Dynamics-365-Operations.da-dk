@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129506"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780463"
 ---
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
@@ -31,11 +31,10 @@ En **Debitorfaktura for en salgsordre** er en regning, som er relateret til et s
 En **Fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordrelinjer, der omfatter finanskonti, fritekstbeskrivelser og et salgsbeløb, som du selv angiver. Du kan ikke angive et varenummer på en faktura af denne type. Du skal angive de relevante oplysninger om moms. Der er angivet en hovedkonto for salget på hver fakturalinje, som du kan fordele på flere forskellige finanskonti ved at klikke på **Distribuer beløb** på siden **Fritekstfaktura**. Derudover bogføres debitorsaldoen på samlekontoen fra den posteringsprofil, der bruges til fritekstfakturaen.
 
 Du kan finde flere oplysninger i:
-
-[Opret fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
-[Opret en skabelon til en fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Tildel en fritekstfakturaskabelon til en debitor](tasks/assign-free-text-invoice-template-customer.md)
-[Opret og bogfør tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
+ - [Opret fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Oprette en skabelon til en fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Tildel en fritekstfakturaskabelon til en debitor.](tasks/assign-free-text-invoice-template-customer.md)
+ - [Generere og bogføre tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
 En **Proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en **Proformafaktura** for en debitorfaktura for en salgsordre eller for en fritekstfaktura. 
@@ -89,7 +88,13 @@ Du kan konfigurere opdelingen af salgsordrekundefakturaer efter lokation eller e
  - Vælg indstillingen **Opdel baseret på leveringsoplysninger om faktura** for at oprette én faktura pr. leveringsadresse for salgsordrelinjen ved bogføring. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bogføre på omsætningskonto for salgsordrefakturalinjer, der ikke har nogen pris eller omkostning
-Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris og omkostning. Hvis du vil konfigurere eller se disse oplysninger, skal du gå til parameteren **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris og nulomkostning** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris og omkostning. Hvis denne indstilling er valgt, indeholder bilaget 0,00 poster for bogføringstyperne **Debitorsaldo** og **Omsætning**. Der defineres en omsætningskonto på parametersiden **Lagerbogføring** under fanen **Kontodefinition for salgsordre**. Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke har pris- eller omkostningsoplysninger, ikke på kontoen **Omsætning**. Bilaget vil i stedet indeholde en post på 0,00 for bogføringstypen **Debitorsaldo**.
+Du har mulighed for at opdatere kontoen **Omsætning** i **Finans** for salgsordrelinjer uden pris og omkostning. 
+
+Sådan konfigureres eller vises disse oplysninger:
+1. Gå til **Bogfør på omsætningskonto for salgsordrefakturalinjer med nulpris og nulomkostning** under fanen **Finans og moms** på siden **Debitorparametre**. (**Debitor > Opsætning > Debitorparametre**). 
+2. Vælg **Ja** for at opdatere kontoen **Omsætning** for salgsordrefakturalinjer uden pris og omkostning. 
+ - Hvis denne indstilling er valgt, indeholder bilaget 0,00 poster for bogføringstyperne **Debitorsaldo** og **Omsætning**. Der defineres en omsætningskonto på parametersiden **lagerbogføring** under fanen **Kontodefinition** for salgsordre. 
+ - Hvis denne indstilling ikke er valgt, bogføres linjer, der ikke indeholder pris- eller omkostningsoplysninger, ikke på **indtægtskontoen**. Bilaget vil i stedet indeholde en post på 0,00 for bogføringstypen **Debitorsaldo**.
 
 ## <a name="line-creation-sequence-number-information"></a>Oplysninger om nummerserie til linjeoprettelse
 Når du bogfører debitorfakturalinjer, har du mulighed for at oprette sekvensnumre til oprettelse af linjer i rækkefølge. Der tildeles sekvensnumre til linjeoprettelse under bogføringsprocessen. Hvis du tillader ikke-fortløbende nummerering, kan du forbedre ydeevnen for bogføring af debitorfakturaer. Sekvensnumre til linjeoprettelse kan bruges af tredjepartsintegrationer, der forventer fortløbende bestillinger. Spørg it-afdelingen om eventuelle udvidelser, der kan integreres med nummerserier til oprettelse af linjer.

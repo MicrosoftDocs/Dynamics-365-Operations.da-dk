@@ -2,24 +2,19 @@
 title: Oversigt over bedømmelser og anmeldelser
 description: Denne artikel omhandler vurderinger og anmeldelser i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268994"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785129"
 ---
 # <a name="ratings-and-reviews-overview"></a>Oversigt over bedømmelser og anmeldelser
 
@@ -42,6 +37,11 @@ Løsningen til vurderinger og anmeldelser i Dynamics 365 Commerce bruger Azure C
 Vurderings- og anmeldelsesløsningen indeholder widgets, der viser vurderingsoversigter på produktlister, i søgeresultater, på siden med produktdetaljer og andre steder. Widgets viser de fulde anmeldelseslister, og de indeholder også sorterings- og filtreringsvalg.
 
 Vurderings- og anmeldelsesløsningen indeholder også en Business Intelligence-skabelon (BI), der indeholder et sæt målepunkter, der giver indsigt i vurderinger og anmeldelser. Vurderings- og anmeldelsesdata kan eksporteres til yderligere analyse.
+
+Følgende video indeholder en oversigt over vurderinger og anmeldelsesfunktioner i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

@@ -2,26 +2,22 @@
 title: Oversigt over fordelskunde
 description: Denne artikel beskriver fordelskundefunktionerne i Dynamics 365 Commerce og de tilsvarende konfigurationstrin, der kan hjælpe detailhandlere i gang med deres fordelskundeprogram.
 author: josaw1
-ms.date: 07/21/2020
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 16201,  ""intro-internal
+ms.custom: 16201, "intro-internal"
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-ms.openlocfilehash: e1b2a5ec6d1a2b925ccae07b5217fbb24a2e6a10
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 17742bb5c0091804fc6f43bb2aabb7af73229890
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277982"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784958"
 ---
 # <a name="loyalty-overview"></a>Oversigt over fordelskundeprogrammer
 
@@ -36,6 +32,11 @@ Du kan konfigurere fordelskundeprogrammet, så det inkluderer følgende indstill
 - Angiv optjeningsregler for at identificere de aktiviteter, en kunde skal udføre for at optjene belønninger. Du kan også definere indløsningsregler for at identificere, hvornår og hvordan en kunde kan indløse belønninger.
 - Udsted fordelskundekort fra enhver kanal, der deltager i dine fordelskundeprogrammer, og knyt fordelskundekort til et eller flere fordelskundeprogrammer, som kunden kan deltage i. Du kan også sammenkæde en kundepost med et fordelskundekort, så kunden kan samle fordelskundepoint fra flere kort og indløse dem.
 - Juster manuelt fordelskundekort, eller overfør fordelsbelønningssaldoen fra ét kort til et andet for at tilpasse den til og belønne en kunde.
+
+Følgende video indeholder en oversigt og demo over loyalitetsfunktioner i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurere loyalitetsprogrammer
 

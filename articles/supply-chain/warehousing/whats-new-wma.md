@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702189"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764233"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20370"></a>Version 2.0.37.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+- Tilføjede en brugerindstilling, som giver arbejderne mulighed for at vælge, hvor appen skal vise produktskærme (i både kort og trinhoveder, kun i trinhoveder eller slet ikke). 
+- Forbedret skærmlayout for detaljer ved at reducere størrelsen på trin-banner og antalsinputudbyder, hvilket giver mere plads til andet indhold. 
+- Forbedret brugergrænsefladen, når der køres på en Honeywell Thor-enhed. 
+- Forbedret tilstand med fuld skærm (gælder kun for enheder med hardwaretastatur). 
+- Forbedret resultater, når du sorterer oplysninger om kort og brugerdefinerede sider efter prioritet eller underprioritet (DataPriority eller DisplaySubPriority). 
+- Der er tilføjet understøttelse af flere sprog. 
+- Forbedret stabilitet. 
+- Forbedret flere billeder og ikoner. 
 
 ## <a name="version-20350"></a>Version 2.0.35.0
 
