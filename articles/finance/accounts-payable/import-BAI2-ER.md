@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752714"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759594"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurere avanceret import af bankafstemning ved hjælp af elektronisk rapportering
 
@@ -37,6 +37,9 @@ Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog o
 5. Find **Avanceret bankafstemningskontoudtogsmodel \> ABR BAI2-format** på konfigurationslisten.
 6. Vælg formatet **BAI2**.
 7. I oversigtspanelet **Versioner** skal du vælge den seneste version og derefter vælge **Importér**.
+
+>[!NOTE]
+>**BAI2-kontoudtogsmodellen** frarådes på et senere tidspunkt. 
 
 ## <a name="set-up-the-bank-statement-format"></a>Konfigurere formatet af bankkontoudtog
 

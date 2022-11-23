@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405431"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757161"
 ---
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
@@ -50,7 +50,7 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Lukke en fane i handlingsruden eller en menu        | Esc                              |
 | Simulere højreklik                          | Skift+F10                        |
 | Åbne genvejsmenuen    | Ctrl+F10                         |
-| Udføre standardknappen i en formular/dialogboks | Alt+Enter                        |
+| Udføre standardknappen i en side/dialogboks | Alt+Enter                        |
 | Klikke på en knap eller et felt                          | Enter eller mellemrum                   |
 | Vise opdaterede oplysninger for et antalsfelt       | Alt+pil op                     |
 | Vis genveje, der er tilgængelige i øjeblikket              | Alt+Skift+K                      |
@@ -85,13 +85,13 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Åbne gitterfiltrering for den aktuelle kolonne                                                                          | Ctrl+G                   |
 | Lukke gitterfiltrering for den aktuelle kolonne                                                                         | Esc                      |
-| Åbne filterruden (eller skifte fokus mellem filterruden og hovedformularen, hvis filterruden allerede er åben) | Alt+M, F eller Ctrl+F3       |
+| Åbne filterruden (eller skifte fokus mellem filterruden og hovedsiden, hvis filterruden allerede er åben) | Alt+M, F eller Ctrl+F3       |
 | Lukke filterruden (med fokus i filterruden)                                                               | Esc                      |
 | Åbne avanceret filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
 | Anvende Quick Filter (når der er fokus i Quick Filter)                                                              | Enter                    |
 | Anvende gitterfilteret (når fokus er i filterfeltet i kolonneoverskriften)                                             | Enter                    |
 
-## <a name="form-shortcuts"></a>Formulargenveje
+## <a name="page-shortcuts"></a>Sidegenveje
 
 | Hvis du vil gøre dette                                    | Tryk på              |
 |-----------------------------------------------|-------------------|
@@ -100,21 +100,21 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Gemme posten                                   | Alt+S eller Ctrl+S   |
 | Gendindlæse (gendanne)                              | Ctrl+Skift+F5     |
 | Opdatere data                                  | Skift+F5          |
-| Flytte til det første felt, der vises i formularen   | Alt+Skift+F       |
+| Flytte til det første felt, der vises i siden   | Alt+Skift+F       |
 | Slå redigeringstilstand til/fra                              | F2                |
-| Vedhæfte et dokument                             | Ctrl+Skift+A      |
+| Tilknyt et dokument                             | Ctrl+Skift+A      |
 | Eksportér til Excel                               | Ctrl+Skift+E      |
 | Flytte til den forrige post (uden for et gitter)  | Ctrl+pil op     |
 | Flytte til den næste post (uden for et gitter)      | Ctrl+pil ned   |
 | Flytte til den første post (uden for et gitter)     | Ctrl+Home         |
 | Flytte til den sidste post (uden for et gitter)      | Ctrl+End          |
-| Lukke formularen (klikke på Tilbage)                   | Esc               |
-| Lukke formen og gemme den eksplicit             | Skift+Esc         |
-| Lukke formen, uanset om der er ugemte ændringer | Alt+Skift+Q       |
+| Luk siden (vælg knappen Tilbage)<br><br>**Bemærk:** Hvis der er et popup-vindue (værktøjstip, datoplukker, rulleliste osv.) åbent, vil den første brug af Esc få vist popup-vinduet.       | Esc               |
+| Lukke siden og gemme den eksplicit             | Skift+Esc         |
+| Luk siden, og kassér eventuelle ændringer, der ikke er gemt | Alt+Skift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Navigationsgenveje i formular
+## <a name="page-navigation-shortcuts"></a>Navigationsgenveje i side
 
-| Hvis du vil gøre dette                                          | Tryk på                                        |
+| Hvis du vil gøre dette                                          | Tryk på                                         |
 |-----------------------------------------------------|----------------------------------------------|
 | Flytte til næste/forrige felt                     | Tabulator/Skift+tabulator                              |
 | Flytte til næste/forrige tabulator                       | Alt+Skift+højre pil/Alt+Skift+venstre pil |
@@ -141,7 +141,7 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Flyt til den næste/forrige række uden at vælge<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg. | Ctrl+pil op/Ctrl+pil ned |
 | Vælg/ryd den aktuelle række<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.                   | Ctrl+mellemrum/Ctrl+klik         |
 | Føj den næste/forrige række til det valgte sæt<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.  | Shift+Space                     |
-| Tilføje et interval af rækker til det valgte sæt<br><br>**Bemærk:**  Denne genvej vedrører kun scenarier med flere valg.         | Skift+klik                     |
+| Tilføje et interval af rækker til det valgte sæt<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.         | Skift+klik                     |
 | Gå til næste/forrige side med data                                                                                   | Page up/Page down             |
 | Opret en ny række nederst i gitteret                                                                             | Pil ned (fra den sidste række)  |
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
@@ -192,11 +192,11 @@ Brugerne kan finde de genveje, der er tilgængelige i øjeblikket, direkte fra b
 | Åbn Hjælp-vinduet                                                            | Ctrl+?                     |
 | Åbn sporingsparseren                                                         | Alt+Shift+T                |
 | Flyt til navigationsruden                                                   | Alt+F1                     |
-| Tilføj/fjern formular som favorit (med fokus på en formular i navigationsruden)   | Skift+F                    |
+| Tilføj/fjern side som favorit (med fokus på en side i navigationsruden)   | Skift+F                    |
 | Flytte til standardhandlingsruden                                              | Alt+M, A eller Ctrl+F6         |
 | Flytte til filterruden (som kan inkludere at åbne den)                        | Alt+M, F eller Ctrl+F3         |
 | Flyt fokus til sideindholdet (med fokus på filterruden)                | Alt+M, M eller Ctrl+F3         |
-| Flyt til navigationslisten på formularen Detaljer (som kan inkludere at åbne den)    | Alt+M, S eller Ctrl+F8         |
+| Flytte til navigationslisten (som kan inkludere at åbne den)    | Alt+M, S eller Ctrl+F8         |
 | Flyt fokus til sideindholdet (med fokus på navigationslisten)            | Alt+M, M eller Ctrl+F8         |
 | Lukke navigationslisten oplysningsformularen (med fokus på navigationslisten) | Esc                        |
 | Gå til hovedsidens indhold (med fokus på en anden rude)                    | Alt+M, M                    |
