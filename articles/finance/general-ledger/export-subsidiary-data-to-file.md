@@ -2,23 +2,23 @@
 title: Eksporter datterselskabsdata til filer
 description: Denne artikel forklarer, hvordan du forbereder eksport af data fra Microsoft Dynamics 365 Finance og derefter importerer dem til en konsolideret juridisk enhed.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876147"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779955"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Eksporter datterselskabsdata til filer
 
@@ -32,14 +32,14 @@ Brug siden **Eksport** (**Systemadministration \> Arbejdsområder \> Import/eksp
 
     | Felt                             | Betegnelse |
     |-----------------------------------|-------|
-    | Hovedkonto                      | Angiv de konti, der skal konsolideres. Hvis du vil medtage alle konti, skal du lade dette felt være tomt. |
-    | Brug koncernkonto         | Hvis du har angivet koncernkonti, skal du angive denne indstilling til **Ja**. |
-    | Vælg koncernkonto fra | Vælg enten **Hovedkonto** eller **Konsolideringskontogruppe**. |
-    | Koncernkontogruppe       | Vælg en koncernkontogruppe, du vil klassificere koncernkontoen efter. |
-    | Konsolideringsperiode              | Angiv "fra" og "til" datointerval til konsolideringen. |
-    | Medtag faktiske beløb            | Angiv denne indstilling til **Ja**, hvis du vil medtage faktiske beløb. |
-    | Medtag budgetbeløb            | Angiv denne indstilling til **Ja**, hvis du vil medtage budgetbeløb i konsolideringer. |
-    | Budgetmodeller                     | Angiv den budgetmodel, der skal medtages. |
+    | **Hovedkonto**                      | Angiv de konti, der skal konsolideres. Hvis du vil medtage alle konti, skal du lade dette felt være tomt. |
+    | **Brug koncernkonto**         | Hvis du har angivet koncernkonti, skal du angive denne indstilling til **Ja**. |
+    | **Vælg koncernkonto fra** | Vælg enten **Hovedkonto** eller **Konsolideringskontogruppe**. |
+    | **Koncernkontogruppe**       | Vælg en koncernkontogruppe, du vil klassificere koncernkontoen efter. |
+    | **Konsolideringsperiode**              | Angiv "fra" og "til" datointerval til konsolideringen. |
+    | **Medtag faktiske beløb**            | Angiv denne indstilling til **Ja**, hvis du vil medtage faktiske beløb. |
+    | **Medtag budgetbeløb**            | Angiv denne indstilling til **Ja**, hvis du vil medtage budgetbeløb i konsolideringer. |
+    | **Budgetmodeller**                     | Angiv den budgetmodel, der skal medtages. |
 
 3. Angiv på fanen **Økonomiske dimensioner** detaljerne i konsolideringen.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9022051ce1c99da7ff62e30583a20656c77d89f9
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908148"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778667"
 ---
 # <a name="process-collection-letters-example"></a>Behandle eksempel på rykkere
 
@@ -32,11 +32,11 @@ Når du er færdig, skal du følge disse trin.
 
 1. Gå til **Kredit og rykkere \> Rykker \> Konfigurer rykkerforløb**, og konfigurer rykkersekvensen, som vist i følgende tabel, som er tildelt debitorens posteringsprofil.
 
-|     Rykkerkode      |     Betegnelse                           |     Valuta      |     Hovedkonto        |     Gebyr i valuta     |     Minimum for over        |     Antal dage      |
-|---------------------------------  |---------------------------------------    |-----------------  |-----------------------    |-------------------------- |-----------------------    |---------------------  |
-|     Rykker 1         |     Anden besked med gebyr        |     USD           |                           |     0,00                  |     0,00                  |     2                 |
-|     Rykker 2         |     Anden besked med gebyr        |     USC           |     403150                |     20.00                 |     10.00                 |     3                 |
-|     Incasso                    |     Sidste besked med gebyr         |     USD           |     403150                |     50.00                 |     100.00                |     15                |
+|   Rykkerkode      |     Betegnelse       |     Valuta      |     Hovedkonto        |     Gebyr i valuta       |   Minimum for over  |   Antal dage        |
+|-----------------------------  |--------------------   |-----------------  |-----------------------    |--------------------   |-----------------------    |------------------ |
+|  Rykker 1          |     Første besked |     USD          |                   |     0,00              |     0,00                  |     2                 |
+|  Rykker 2          |     Anden besked med gebyr      |     USD      |     403150         |     20.00         |     10.00     |     3                 |
+|  Kollektion                   |     Sidste besked med gebyr       |     USD           |     403150    |     50.00         |     100.00                |     15            |
 
 I følgende illustration vises de oplysninger, der vises i tabellen, som de vises på siden **Rykkere**. 
 

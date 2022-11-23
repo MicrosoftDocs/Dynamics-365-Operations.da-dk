@@ -2,28 +2,23 @@
 title: Kundeaktiviteter, oversigt
 description: Denne artikel indeholder en oversigt over de nye egenskaber for kundeaktiviteter, der findes i butiksprogrammet.
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "260624"
 - intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc7daeb27c25efa21fd34b0456af8892074056d5
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885605"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785039"
 ---
 # <a name="clienteling-overview"></a>Kundeaktiviteter, oversigt
 
@@ -31,6 +26,11 @@ ms.locfileid: "8885605"
 
 
 Mange detailhandlere, især højkvalitets specialdetailhandlere, vil have deres salgsmedarbejdere til at danne langsigtede relationer med deres centrale kunder. Medarbejderne forventes at have kendskab til, hvad disse kunder kan og ikke kan lide, deres indkøbshistorik, produktpræferencer og vigtige datoer, f.eks. jubilæer og fødselsdage. Medarbejderne skal bruge et sted, hvor de kan hente disse oplysninger, og hvor det er let finde dem, når det er påkrævet. Hvis disse oplysninger er tilgængelige i en enkelt visning, kan medarbejderne nemt gå målrettet efter kunder, der opfylder bestemte kriterier. De kan f.eks. finde alle kunder, der foretrækker at købe håndtasker, eller kunder, hvor en vigtig hændelse nærmer sig, som f.eks. en fødselsdag eller mærkedag.
+
+I følgende video gennemgås et eksempelscenario for kundeaktiviteter i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
 
 ## <a name="client-book"></a>Klientkartotek
 

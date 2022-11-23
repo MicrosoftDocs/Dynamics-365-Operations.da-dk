@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 59372
 ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c73c4fef561bc6d6640d4d20dec05b2ca68f1c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 801f086cb0a7c7269abad720c848d2b1ab09cd76
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855456"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9777991"
 ---
 # <a name="close-accounts-receivable"></a>Luk Debitor
 
@@ -36,15 +36,15 @@ Lukke perioder i finansregnskabet
 
 | Sidenavn                            | Anvendelse                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|Batchjob                             | Få vist eller opret batchjob. Kørslerne kan ikke fuldføres, og du vil sikre, at al bogføring er udført.                                                                                                               |
-|Bekræft salgsordre                   | Opdater salgsordrer.                                                                       |
-|Kursregulering          | Opret posteringer, som opdaterer værdien af åbne debitorposteringer i udenlandsk valuta.                                                                                                                         |
-| Journal                              | Bogfør fakturaer, betalinger og egenveksler.                                             |
-| Kladdebilag                      |<ul><li>**Betalingskladde** – Opret, behandl og bogfør betalinger.</li><li>**Udsted vekseljournal** – Bogfør veksler.</li><li>**Protester vekseljournal** – Bogfør protesterede veksler.</li><li>**Genudsted vekseljournal** – Bogfør genudstedte veksler.</li><li>**Remitteringskladde** – Bogfør remitteringer.</li><li>**Udlign vekseljournal** – Bogfør udlignede veksler</li></ul>                   |
-| Bogføring af følgeseddel                 | Opdater følgesedler for salgsordrer.                                                     |
-| Bogfør fritekstfaktura               | Bogfør fritekstfakturaer.                                                                   |
-| Bogføring af faktura                      | Bogfør fakturaer for salgsordrer.                                                            |
-| Bogføring af plukliste                 |Opdater pluklister for salgsordrer.                                                      |
+|**Batchjob**                          | Få vist eller opret batchjob. Kørslerne kan ikke fuldføres, og du vil sikre, at al bogføring er udført.     |
+|**Bekræft salgsordre**                   | Opdater salgsordrer.                                                                       |
+|**Kursregulering**    | Opret posteringer, som opdaterer værdien af åbne debitorposteringer i udenlandsk valuta.                          |
+| **Journal**                              | Bogfør fakturaer, betalinger og egenveksler.                                             |
+| **Kladdebilag**                      |<ul><li>**Betalingskladde** – Opret, behandl og bogfør betalinger.</li><li>**Udsted vekseljournal** – Bogfør veksler.</li><li>**Protester vekseljournal** – Bogfør protesterede veksler.</li><li>**Genudsted vekseljournal** – Bogfør genudstedte veksler.</li><li>**Remitteringskladde** – Bogfør remitteringer.</li><li>**Udlign vekseljournal** – Bogfør udlignede veksler</li></ul>                   |
+| **Bogføring af følgeseddel**                 | Opdater følgesedler for salgsordrer.                                                     |
+| **Bogfør fritekstfaktura**               | Bogfør fritekstfakturaer.                                                                   |
+| **Bogføring af faktura**                      | Bogfør fakturaer for salgsordrer.                                                            |
+| **Bogføring af plukliste**                 |Opdater pluklister for salgsordrer.                                                      |
 
 **Opgave for forretningsproceskomponent**   
 
@@ -52,7 +52,7 @@ Oprette og indsende EU-listesystemet
 
 | Sidenavn                            | Anvendelse                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|EU-listesystem                         | Indberet EU-salg til skattemyndighederne til momsopgørelse.                                                                                                                           |
+|**EU-listesystem**                        | Indberet EU-salg til skattemyndighederne til momsopgørelse.               |
 
 
 

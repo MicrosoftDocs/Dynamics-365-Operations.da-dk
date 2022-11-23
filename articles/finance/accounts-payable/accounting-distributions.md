@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
-ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
+ms.openlocfilehash: 4330c86ee9ae35ce0f2c7bb85db533a39eafac46
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588947"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779575"
 ---
 # <a name="accounting-distributions"></a>Regnskabsfordelinger
 
@@ -51,7 +51,7 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
     -   Du kan se den aktuelle regnskabsstatus i **Reference**. Status er for hele dokumentet, og angiver, om dokumentet er i gang eller afsluttet.
 -   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjerne og pengebeløbene i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
 
-I version 10.0.13 er der tilføjet en funktion, der validerer regnskabsfordelingstabellen for at sikre, at nye felter konfigureres korrekt. Denne funktion kaldes **Aktivér yderligere validering af data for dokumenter ved hjælp af kildedokumentets regnskabsstruktur**. Denne funktion vil være aktiveret som standard i version 10.0.29. 
+Der er tilføjet en funktion, der validerer regnskabsfordelingstabellen for at sikre, at nye felter konfigureres korrekt. Denne funktion kaldes **Aktivér yderligere validering af data for dokumenter ved hjælp af kildedokumentets regnskabsstruktur**. Denne funktion blev aktiveret som standard i version 10.0.29. 
 
 Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 

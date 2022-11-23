@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109912"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778672"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Registrere kreditorfaktura og sammenligne med modtaget antal
 
@@ -32,7 +32,7 @@ Denne procedure bruger demofirmaet USMF. Rollen kreditorchef eller rollen regnsk
 
 
 ## <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
-1. Gå til Alle indkøbsordrer.
+1. Gå til **Alle indkøbsordrer**.
 2. Klik på **Ny**.
 3. I feltet **Kreditorkonto** skal du klikke på rullelisten for at åbne opslaget.
 4. Skriv en værdi i feltet **Kreditorkonto**.

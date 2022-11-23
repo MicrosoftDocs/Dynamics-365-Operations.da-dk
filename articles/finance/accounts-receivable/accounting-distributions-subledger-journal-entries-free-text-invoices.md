@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712280"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778405"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Regnskabsfordelinger og posteringer for reskontro til fritekstfakturaer
 
@@ -30,9 +30,9 @@ Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres f
 
 ## <a name="accounting-distributions"></a>Regnskabsfordelinger
 
-Du kan bruge følgende knapper på siden Fritekstfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på fritekstfakturaen.
+Du kan bruge følgende knapper på siden **Fritekstfaktura** til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på fritekstfakturaen.
 
--   **Distribuer beløb** – Vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
+-   **Distribuer beløb** – Vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også se og ændre regnskabsfordelinger for den underordnede linje direkte fra siden **Momstransaktioner** eller siden **Gebyrtransaktioner**.
     -   Ret overskriftsbeløb i fritekstfakturaer, f.eks. afgifter eller valutaafrundingsbeløb.
     -   Ret linjebeløb i fritekstfaktura.
 -   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjer i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
@@ -120,7 +120,7 @@ Når du indtaster en fritekstfaktura, fordeles hvert beløb på følgende måde.
 </table>
 
 ## <a name="distributing-taxes"></a>Fordeling af skatter
-Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver i formularen Fritekstfaktura:
+Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis du vil beregne moms, skal du fuldføre en af følgende opgaver i formularen **Fritekstfaktura**:
 -   Få vist momsen.
 -   Få vist fakturatotalen.
 -   Få vist pengestrømmen.

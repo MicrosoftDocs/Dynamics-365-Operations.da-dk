@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 674adb70cc4372a8c5ca8c75ed3ef840d8ec7b79
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520855"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762694"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruge App til Inventory Visibility
 
@@ -30,44 +30,73 @@ Lagersynlighed indeholder en modelbaseret app til visualisering. Appen indeholde
 - Den understøtter forespørgsler om disponibel lagerbeholdning i realtid for forskellige dimensionskombinationer.
 - Den indeholder en brugergrænseflade til bogføring af reservationsanmodninger.
 - Den tilbyder en visning af den disponible lagerbeholdning for produkter sammen med alle dimensioner.
-- Den tilbyder en visning af en disponible lagerbeholdningsliste for produkter sammen med foruddefinerede dimensioner.
-
+- Den tilbyder en visning af en disponible lagerbeholdningsliste for produkter sammen med foruddefinerede dimensioner. Visningen af den eksisterende liste kan enten være en fuld opsummering eller et forudindlæst resultat af en forespørgsel.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
 Før du går i gang, skal du installere og konfigurere tilføjelsesprogrammet Lagersynlighed som beskrevet i [Installere og konfigurere lagersynlighed](inventory-visibility-setup.md).
 
-## <a name="open-the-inventory-visibility-app"></a>Åbne en app til lagersynlighed
+## <a name="open-and-authenticate-the-inventory-visibility-app"></a><a name="open-authenticate"></a>Åbne og godkende appen Lagersynlighed
 
-Hvis du vil åbne appen Lagersynlighed, skal du logge på dit Power Apps-miljø og åbne **Lagersynlighed**.
+Du kan åbne og godkende lagersynlighedsappen ved at følge disse trin.
 
-## <a name="configuration"></a><a name="configuration"></a>Variantkonfiguration
+1. Log på dit Power Apps-miljø.
+1. Åbne en app til **lagersynlighed**.
+1. Åbn siden **Driftssynlighed** fra venstre rude.
+1. Vælg knappen **Indstillinger** (tandhjulsikonet) øverst på siden.
+1. I dialogboksen **Indstillinger** skal du angive værdier for **Klient-id**, **Lejer-id** og **Klienthemmelighed**, som du noterede, da du [installerede og konfigurerede lagersynlighed](inventory-visibility-setup.md).
+1. Vælg knappen **Opdater** ud for feltet **Token for bærer**. Systemet genererer et nyt ihændehaver-token baseret på de oplysninger, du har angivet.
 
-Siden **Konfiguration** på Lagersynlighed-appen hjælper med at konfigurere konfigurationen af disponibel lagerbeholdning og konfigurationen af foreløbige reservationer. Når tilføjelsesprogrammet er installeret, indeholder standardkonfigurationen en standardopsætning fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gennemse standardindstillingen. Afhængigt af forretningsbehovene og det eksterne systems krav til lagerbogføring kan du herefter redigere konfigurationen for at standardisere, hvordan lagerændringer kan bogføres, organiseres og forespørges på på tværs af flere systemer.
+    ![Indstillinger for forespørgsel om disponibel lagerbeholdning.](media/inventory-visibility-query-settings.png "Indstillinger for forespørgsel om disponibel lagerbeholdning")
+
+1. Når du modtager et gyldigt ihændehaver-token, skal du lukke dialogboksen. Ihænderhaver-token udløber efter et stykke tid. Derfor skal du fra tid til anden opdatere den, når du skal opdatere konfigurationen, bogføre data eller forespørgselsdata.
+
+## <a name="configure-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurere Lagersynlighed-app
+
+Siden **Konfiguration** på Lagersynlighed-appen hjælper med at konfigurere den generelle datastyringskonfiguration og funktionskonfiguration. Når tilføjelsesprogrammet er installeret, indeholder standardkonfigurationen en standardopsætning fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gennemse standardindstillingen. Derefter, afhængigt af forretningsbehovene og det eksterne systems krav til lagerbogføring kan du herefter redigere konfigurationen for at standardisere, hvordan lagerændringer kan bogføres, organiseres og forespørges på på tværs af flere systemer.
 
 Du kan finde alle oplysninger om, hvordan du konfigurerer løsningen, under [Konfigurere lagersynlighed](inventory-visibility-configuration.md).
 
 ## <a name="operational-visibility"></a>Driftssynlighed
 
-Siden **Driftssynlighed** indeholder resultaterne af en forespørgsel om lagerbeholdning i realtid baseret på forskellige dimensionskombinationer. Når funktionen *OnHandReservation* er aktiveret, kan du også bogføre reservationsanmodninger fra siden **Driftssynlighed**.
+Siden **Driftssynlighed** indeholder resultaterne af en forespørgsel om lagerbeholdning i realtid, reservationsregistrering og allokering baseret på forskellige dimensionskombinationer. Når funktionen *OnHandReservation* er [aktiveret](inventory-visibility-configuration.md), kan du også bogføre reservationsanmodninger fra siden **Driftssynlighed**.
 
 ### <a name="on-hand-query"></a>Forespørgsel om disponibel lagerbeholdning
 
-Fanen **Forespørgsel om disponibel lagerbeholdning** viser resultaterne af en forespørgsel om den disponible lagerbeholdning i realtid.
+Fanen **Forespørgsel** om **disponibel lagerbeholdning** viser resultaterne af en forespørgsel om den disponible lagerbeholdning i realtid. Følg disse trin for at konfigurere og køre en forespørgsel.
 
-Når du åbner fanen **Disponibel forespørgsel** på siden **Driftssynlighed**, beder systemet om dine legitimationsoplysninger, så det kan hente det ihændebærertoken, der kræves for at kunne forespørge på tjenesten Lagersynlighed. Du kan nøjes med at indsætte i ihændehavertokenet i feltet **Ihændehavertoken** og lukke dialogboksen. Du kan derefter bogføre en anmodning om en forespørgsel på disponibel lagerbeholdning.
+1. Åbne en app til **lagersynlighed**.
+1. Åbn siden **Driftssynlighed** fra venstre rude.
+1. Angiv de værdier for **organisations-id**, **websteds-id** og **lokations-id**, du vil forespørge på, under fanen **Onhand-forespørgsel**.
+1. Angiv et eller flere produkt-id'er i feltet **Produkt-id** for at få nøjagtigt match til forespørgslen. Hvis du lader feltet **Produkt-id** være tomt, omfatter resultaterne alle produkter på den angivne websted og lokation.
+1. Hvis du vil have et mere detaljeret resultat (f.eks. en visning efter dimensionsværdier, f.eks. farve og størrelse), skal du vælge grupper efter dimensioner i feltet **Grupperesultat efter**.
+1. Hvis du vil finde varer med en bestemt dimensionsværdi (f.eks. farve = rød), skal du vælge dimensionen i feltet **Filterdimensioner** og derefter angive en dimensionsværdi.
+1. Vælg **Forespørgsel**. Du modtager enten en grøn (grøn) meddelelse eller en mislykket (rød) meddelelse. Hvis forespørgslen mislykkes, skal du kontrollere forespørgselskriterierne og sikre dig, at dit [ihændehaver-token](#open-authenticate) ikke er udløbet.
 
-Hvis indhændehavertokenet ikke er gyldigt, eller hvis det er udløbet, skal du indsætte et nyt i feltet **Ihændehavertoken**. Angiv de korrekte værdier for **Klient-id**, **Lejer-id**, **Klienthemmelighed**, og vælg derefter **Opdater**. Systemet henter automatisk et nyt gyldigt ihændehavertoken.
-
-Hvis du vil bogføre en forespørgsel om disponibel lagerbeholdning, skal du angive forespørgslen i brødteksten. Brug det mønster, der er beskrevet i [Forespørgsel ved hjælp af bogføringsmetoden](inventory-visibility-api.md#query-with-post-method).
-
-![Indstillinger for forespørgsel om disponibel lagerbeholdning](media/inventory-visibility-query-settings.png "Indstillinger for forespørgsel om disponibel lagerbeholdning")
+Du kan også foretage direkte API-anmodninger ved at foretage en on-hand-forespørgsel. Du kan bruge `/api/environment/{environmentId}/onhand/indexquery` eller `/api/environment/{environmentId}/onhand`. Du kan finde flere oplysninger i [Offentlige API'er til lagersynlighed](inventory-visibility-api.md).
 
 ### <a name="reservation-posting"></a>Reservationsbogføring
 
 Brug fanen **Reservationsbogføring** på siden **Driftssynlighed** til at bogføre en reservationsanmodning. Før du kan bogføre en reservationsanmodning, skal du aktivere funktionen *OnHandReservation*. Du kan finde flere oplysninger om denne funktion, og hvordan du slår den til, i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md).
 
-Hvis du vil bogføre en reservationsanmodning, skal du angive en værdi i anmodningsteksten. Brug det mønster, der er beskrevet i [Oprette én reservationshændelse](inventory-visibility-api.md#create-one-reservation-event). Vælg derefter **Bogfør**. Hvis du vil have vist oplysninger om svaret på anmodningen, skal du vælge **Vis detaljer**. Du kan også hente værdien for `reservationId` fra svaroplysningerne.
+> [!NOTE]
+> Muligheden for at foretage en forhåndsreservation via brugergrænsefladen er beregnet til, at du kan teste funktionen. Hver anmodning om forhåndsreservation skal knyttes til en linjeændring i en posteringsordre (oprettelse, redigering, sletning, så videre). Det anbefales derfor, at du kun foretager blød reservationer, der er knyttet til en back-end-ordre. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md).
+
+Følg disse trin for at bogføre en anmodning om forhåndsreservation ved hjælp af brugergrænsefladen.
+
+1. Åbne en app til **lagersynlighed**.
+1. Åbn siden **Driftssynlighed** fra venstre rude.
+1. Angiv det antal, du vil forhåndsreservere i feltet **Antal** under fanen **Reservationsbogføring**.
+1. Fjern markeringen i afkrydsningsfeltet **Aktivér negativt lager for at understøtte oversalg** for at forhindre, at lageret oversælges eller der reserveres for meget.
+1. Vælg datakilden og den fysiske måling, der gælder for det forhåndsreserverede antal, i feltet **Operator**.
+1. Angiv de værdier for **organisations-id**, **websteds-id** , **lokations-id** og **Produkt-id**, du vil forespørge på.
+1. Hvis du vil have et mere detaljeret resultat, skal du vælge en datakilde, dimensioner og dimensionsværdier.
+
+Du kan også bogføre en forhåndsreservation ved at foretage direkte API-anmodninger. Brug det mønster, der er beskrevet i [Oprette én reservationshændelse](inventory-visibility-api.md#create-one-reservation-event). Vælg derefter **Bogfør**. Hvis du vil have vist oplysninger om svaret på anmodningen, skal du vælge **Vis detaljer**. Du kan også hente værdien for `reservationId` fra svaroplysningerne.
+
+### <a name="allocation"></a>Fordeling
+
+Oplysninger om, hvordan fordelinger administreres fra brugergrænsefladen og API'er, finder du i [lagerfordelingen for lagersynlighed](inventory-visibility-allocation.md).
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lageroversigt
 
@@ -84,19 +113,15 @@ Aktivere **lageroversigten** og angive synkroniseringsfrekvensen ved at følge d
 
 1. Vælg **Opdater konfiguration** for at gemme alle ændringerne.
 
-
 > [!NOTE]
 > Funktionen *OnHandMostSpecificBackgroundService* sporer kun de ændringer i den disponible lagerbeholdning, der er foretaget, efter at du aktiverede funktionen. Data for produkter, der ikke er ændret, siden du aktiverede funktionen, synkroniseres ikke fra lagertjenestecachen til Dataverse-miljøet. Hvis **lageroversigtssiden** ikke viser alle de beholdningsoplysninger, du forventer, skal du åbne Supply Chain Management, gå til **Lagerstyring > Periodiske opgaver > integration af Lagersynlighed**, deaktivere batchjobbet og genaktivere det. Derved sker det første push, og alle data synkroniseres med enheden *Sum af disponibel lagerbeholdning* i løbet af de næste 15 minutter. Hvis du vil bruge funktionen *OnHandMostSpecificBackgroundService*, anbefales det, at du aktiverer den, før du opretter eventuelle ændringer i lagerbeholdningen, og aktiverer batchjobbet **Integration af lagersynlighed**.
 
-## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-the-inventory-visibility-onhand-query"></a>Forudindlæse en strømlinet forespørgsel på disponibel lagerbeholdning
+## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-streamlined-onhand-query"></a>Forudindlæse en strømlinet forespørgsel på disponibel lagerbeholdning
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 Supply Chain Management gemmer mange oplysninger om din aktuelle disponible lagerbeholdning og gør den tilgængelig til en lang række formål. Men mange daglige operationer og tredjepartsintegrationer kræver kun en lille del af disse oplysninger, og hvis systemet forespørges efter dem alle, kan det resultere i store datasæt, der tager tid at samle og overføre. Lagersynlighedstjenesten kan derfor jævnligt hente og gemme et strømlinet sæt af disponible lagerdata, så optimerede oplysninger altid er tilgængelige. De gemte oplysninger om disponibel lagerbeholdning filtreres ud fra konfigurerbare forretningskriterier for at sikre, at kun de mest relevante oplysninger er inkluderet. Da de filtrerede lagerbeholdningslister gemmes lokalt i lagersynlighedstjenesten og opdateres jævnligt, understøtter de hurtig adgang, eksport af data efter behov og strømlinet integration med eksterne systemer.
-
-> [!NOTE]
-> Den aktuelle forhåndsversion af denne funktion kan kun give forudindlæste resultater, herunder lokation og placering. Den endelige version af funktionen forventes at give dig mulighed for at vælge andre dimensioner, som skal forudindlæses med resultaterne.
 
 På siden **Forudindlæs oversigten over lagersynlighed** kan du se enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks*. I modsætning til enheden *Lageroversigt* indeholder enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks* en liste over lagerbeholdning for produkter sammen med valgte dimensioner. Lagersynlighed synkroniserer de forudindlæste oversigtsdata hvert 15. minut.
 

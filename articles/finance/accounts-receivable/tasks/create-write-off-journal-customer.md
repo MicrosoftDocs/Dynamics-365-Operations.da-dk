@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713665"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775293"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Oprette en afskrivningskladde for en debitor
 
@@ -48,9 +48,9 @@ Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger 
 7. Gå til **Navigationsrude > Moduler > Finans > Kladdeposteringer > Finanskladder**.
 8. Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning. Der oprettes én linje for at tilbageføre debitorens saldo. En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.  
 9. Luk siden.
-10. Luk siden.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Afskriv transaktioner fra formen Rykkere.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Afskriv transaktioner fra siden Rykkere
 1. Gå til **Kredit > Rykkere > Aldersfordelte saldi**.
 2. Vælg navnet på den kunde, som har de posteringer, du vil afskrive. Vælg for eksempel Cave Wholesales (US-004).
 3. Markér rækken for den første transaktion.
@@ -63,7 +63,7 @@ Denne opgaveguide viser, hvordan du kan konfigurere parametre for afskrivninger 
 10. Gå til **Finans > Kladdeposteringer > Finanskladder**.
 11. Vælg kladdebatchnummeret for den kladde, der indeholder din afskrivning. Der oprettes én linje for at tilbageføre debitorens saldo. En eller flere linjer oprettes for at bogføre afskrivningen på afskrivningskontoen.  
 12. Luk siden.
-13. Luk siden.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Afskriv en faktura fra siden Åbne debitorfakturaer
 1. Gå til **navigationsruden > Moduler > Debitor > Fakturaer > Åbne debitorfakturaer**.

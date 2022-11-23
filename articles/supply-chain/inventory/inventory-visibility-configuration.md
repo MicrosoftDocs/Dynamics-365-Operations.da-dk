@@ -2,7 +2,7 @@
 title: Konfigurere Inventory Visibility
 description: Denne artikel beskriver, hvordan du konfigurerer Lagersynlighed.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542266"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9765704"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurere Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-
 
 Denne artikel beskriver, hvordan du konfigurerer tilføjelsesprogrammet Lagersynlighed ved hjælp af lagersynlighed-app i Power Apps.
 
@@ -53,18 +52,23 @@ Tilføjelsesprogrammet Lagersynlighed tilføjer flere nye funktioner i Power App
 |---|---|
 | *OnHandReservation* | Med denne funktion kan du oprette reservationer, forbruge reservationer og/eller annullere reservationen af angivne lagerantal ved hjælp af Lagersynlighed. Du kan finde flere oplysninger i [Reservationer i Lagersynlighed](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Denne funktion viser en lageroversigt for produkter sammen med alle dimensioner. Lageroversigtsdataene synkroniseres periodisk fra Lagersynlighed. Standardsynkroniseringsfrekvensen er en gang hvert 15. minut og kan angives som højt som en gang hvert 5. minut. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Denne funktion gør det muligt at forudindlæse forespørgsler om synlighed for disponibel lagerbeholdning, så du kan samle lister over disponible lagerbeholdninger med foruddefinerede dimensioner. Standardhyppigheden for synkronisering er en gang hvert 15. minut. Du finder flere oplysninger under [Lageroversigt](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
+| *onHandIndexQueryPreloadBackgroundService* | Denne funktion gør det muligt at forudindlæse forespørgsler om synlighed for disponibel lagerbeholdning, så du kan samle lister over disponible lagerbeholdninger med foruddefinerede dimensioner. Standardhyppigheden for synkronisering er en gang hvert 15. minut. Du kan finde flere oplysninger i [Forudindlæs en strømlinet forespørgsel](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Denne valgfrie funktion aktiverer funktionerne til ændringsplan for disponibelt antal og disponibel til tilsagn (DTT). Du kan finde flere oplysninger i [Ændringsplan for disponibelt antal og disponibel til tilsagn i lagersynlighed](inventory-visibility-available-to-promise.md). |
 | *Tildeling* | Denne valgfrie funktion gør det muligt for lagersynlighed at have mulighed for lagerbeskyttelse (ringorganisering) og overstyring. Yderligere oplysninger finder du i [Fordeling af tilføjelsesprogrammet Lagersynlighed](inventory-visibility-allocation.md). |
 | *Aktivér lagerstedsvarer i lagersynlighed* | Denne valgfrie funktion gør det muligt for lagersynlighed at understøtte varer, der er aktiveret til lokationsstyringsprocesser (WMS). Du kan finde flere oplysninger i [Understøttelse af lagersynlighed for WMS-varer](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finde tjenestens slutpunkt
 
-Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du åbne siden **Konfiguration** i Power Apps og derefter vælge **Vis tjenesteslutpunkt** i øverste højre hjørne. Siden viser det korrekte slutpunkt for tjenesten.
+Hvis du ikke kender det korrekte slutpunkt for tjenesten Lagersynlighed, skal du åbne siden **Konfiguration** i Power Apps og derefter vælge **Vis tjenestedetaljer** i øverste højre hjørne. Siden viser det korrekte slutpunkt for tjenesten. Du kan også finde slutpunktet i Microsoft Dynamics Lifecycle Services, som det er beskrevet i [Find slutpunktet i overensstemmelse med dit Lifecycle Services-miljø](inventory-visibility-api.md#endpoint-lcs).
+
+> [!NOTE]
+> Hvis der bruges et forkert slutpunkt, kan det medføre fejl i en installation og fejl i lagersynlighed, når Supply Chain Management synkroniseres til Lagersynlighed. Hvis du ikke er sikker på, hvad slutpunktet er, skal du kontakte systemadministratoren. Slutpunkt-URL-adresser bruger følgende format:
+>
+> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguration af datakilde
 
-Datakilden repræsenterer det system, dataene kommer fra. Datakildenavne omfatter f.eks. `fno` (hvilket står for "Dynamics 365-programmer til finans og drift") og `pos` (hvilket står for "point of sale" – salgssted). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
+Datakilden repræsenterer det system, dataene kommer fra. Datakildenavne omfatter `fno` (hvilket betyder Supply Chain Management) og `pos` (hvilket står for "point of sale"). Supply Chain Management er som standard konfigureret som standarddatakilde (`fno`) i Lagersynlighed.
 
 > [!NOTE]
 > Datakilden `fno` er reserveret til Supply Chain Management. Hvis tilføjelsesprogrammet Lagersynlighed er integreret med et Supply Chain Management-miljø, anbefales det, at du ikke sletter konfigurationer, der er relateret til `fno` i datakilden.
@@ -73,7 +77,7 @@ Hvis du vil tilføje en datakilde, skal du følge disse trin.
 
 1. Log på Power Apps-miljøet, og åbn **Lagersynlighed**.
 1. Åbn siden **Konfiguration**.
-1. Vælg **Ny datakilde** under fanen **Datakilde** for at tilføje en datakilde.
+1. Vælg **Ny datakilde** under fanen **Datakilde** for at tilføje en datakilde (f.eks. `ecommerce` eller et andet beskrivende datakilde-id).
 
 > [!NOTE]
 > Når du tilføjer en datakilde, skal du sørge for at validere datakildens navn, fysiske målinger og dimensionstilknytninger, før du opdaterer konfigurationen af tjenesten Lagersynlighed. Du kan ikke ændre disse indstillinger, når du har valgt **Opdater konfiguration**.
@@ -88,11 +92,11 @@ Datakildekonfigurationen omfatter følgende dele:
 
 Formålet med dimensionskonfigurationen er at standardisere integrationen af flere systemer for bogføringshændelser og -forespørgsler baseret på dimensionskombinationer. Lagersynlighed indeholder en liste over basisdimensioner, der kan tilknyttes fra dimensionerne for datakilden. Der er 33 tilgængelige dimensioner ved tilknytning.
 
-- Hvis du bruger Supply Chain Management som en af datakilderne, knyttes der som standard 13 dimensioner til standarddimensionerne for Supply Chain Management. 12 andre dimensioner (`inventDimension1` til `inventDimension12`) tilknyttes brugerdefinerede dimensioner i Supply Chain Management. De resterende otte dimensioner er udvidede dimensioner, du kan knytte til eksterne datakilder.
+- Hvis du bruger Supply Chain Management som en af datakilderne, er der allerede knyttet 13 dimensioner til Supply Chain Management standard-dimensionerne som standard. De andre 12 dimensioner (`inventDimension1` til `inventDimension12`) tilknyttes brugerdefinerede dimensioner i Supply Chain Management. De resterende otte dimensioner (`ExtendedDimension1` til `ExtendedDimension8`) er udvidede dimensioner, du kan knytte til eksterne datakilder.
 - Hvis du ikke bruger Supply Chain Management som en af datakilderne, kan du frit tilknytte dimensionerne. I følgende tabel vises hele listen over tilgængelige dimensioner.
 
 > [!NOTE]
-> Hvis dimensionen ikke findes på standarddimensionslisten, og du bruger en ekstern datakilde, anbefales det at bruge `ExtendedDimension1` til `ExtendedDimension8` til at udføre tilknytningen.
+> Hvis du bruger Supply Chain Management og ændrer standarddimensionstilknytninger mellem Supply Chain Management og lagersynlighed, vil den ændrede dimension ikke synkronisere data. Så hvis dimensionen ikke findes på standarddimensionslisten, og du bruger en ekstern datakilde, anbefales det at bruge `ExtendedDimension1` til `ExtendedDimension8` til at udføre tilknytningen.
 
 | Dimensionstype | Basisdimension |
 |---|---|
@@ -118,7 +122,7 @@ Formålet med dimensionskonfigurationen er at standardisere integrationen af fle
 >
 > Lagerdimensioner (brugerdefinerede) kan reserveres til Supply Chain Management. I dette tilfælde kan du bruge de udvidede dimensioner i stedet.
 
-Eksterne systemer kan få adgang til Lagersynlighed via dens RESTful-API'er. Med henblik på integrationen kan du med Lagersynlighed konfigurere den _eksterne datakilde_ og tilknytningen fra de _eksterne dimensioner_ til _basisdimensionerne_. Her er et eksempel på en tabel for dimensionstilknytninger.
+Eksterne systemer kan få adgang til Lagersynlighed via dens RESTful-API'er. Med henblik på integrationen kan du med Lagersynlighed konfigurere den *eksterne datakilde* og tilknytningen fra de *eksterne dimensioner* til *basisdimensionerne*. Her er et eksempel på en tabel for dimensionstilknytninger.
 
 | Ekstern dimension | Basisdimension |
 |---|---|
@@ -134,14 +138,15 @@ Hvis du vil tilføje dimensionstilknytninger, skal du følge disse trin.
 
 1. Log på Power Apps-miljøet, og åbn **Lagersynlighed**.
 1. Åbn siden **Konfiguration**.
-1. Under fanen **Datakilde** i sektionen **Dimensionstilknytninger** skal du vælge **Tilføj** for at tilføje dimensionstilknytninger.
+1. Vælg den **datakilde,** hvor du vil udføre dimensionstilknytningen, under fanen Datakilde. Under fanen Datakilde i sektionen **Dimensionstilknytninger** skal du vælge **Tilføj** for at tilføje dimensionstilknytninger.
+
     ![Tilføjelse af dimensionstilknytninger](media/inventory-visibility-dimension-mapping.png "Tilføjelse af dimensionstilknytninger")
 
 1. Angiv kildedimensionen i feltet **Dimensionsnavn**.
 1. Vælg den dimension i Lagersynlighed, du vil tilknytte, i feltet **Til basisdimension**.
 1. Vælg **Gem**.
 
-Hvis datakilden f.eks. indeholder en produktfarvedimension, kan du knytte den til basisdimensionen `ColorId` for at tilføje en brugerdefineret dimension for `ProductColor` i datakilden `exterchannel`. Den knyttes derefter til `ColorId`-basisdimensionen.
+Du har f.eks. allerede oprettet en datakilde med navnet `ecommerce`, og den indeholder en farvedimension for produktet. I dette tilfælde kan du udføre tilknytningen ved først at føje `ProductColor` til feltet **Dimensionsnavn** i `ecommerce`-datakilden og derefter vælge `ColorId` i feltet **Til-basisdimension**.
 
 ### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fysiske målinger
 
@@ -168,11 +173,11 @@ Lagersynlighed indeholder en liste over fysiske standardmål, der er knyttet til
 | `ReservOrdered` | Bestilt reserveret |
 | `ReservPhysical` | Fysisk reserveret |
 
-Hvis datakilden er Supply Chain Management, behøver du ikke oprette de fysiske standardmålinger igen. For eksterne datakilder kan du dog oprette nye fysiske målinger ved at følge disse trin.
+Hvis din datakilde er Supply Chain Management, behøver du ikke oprette de fysiske standardmålinger igen. For eksterne datakilder kan du dog oprette nye fysiske målinger ved at følge disse trin.
 
 1. Log på Power Apps-miljøet, og åbn **Lagersynlighed**.
 1. Åbn siden **Konfiguration**.
-1. Vælg **Tilføj**, angiv navnet på en kildemåling i sektionen **Fysiske målinger** under fanen **Datakilde**, og gem ændringerne.
+1. Vælg den datakilde, du vil føje fysiske målinger til (f.eks. datakilden `ecommerce`) under fanen **Datakilde**. I afsnittet **Fysiske måleenheder** skal du derefter vælge **Tilføj** og angive målepunktnavnet (f.eks. `Returned`, hvis du vil registrere returneret antal i denne datakilde til lagersynlighed). Gem ændringerne.
 
 ### <a name="calculated-measures"></a>Beregnede målinger
 
@@ -181,7 +186,7 @@ Du kan bruge Lagersynlighed til at forespørge på både fysiske målinger for l
 > [!IMPORTANT]
 > En beregnet måling er en komposition af fysiske målinger. Formlen kan kun indeholde fysiske målinger uden dubletter, ikke beregnede målinger.
 
-Med konfigurationen kan du definere et sæt modifikatorer, der skal lægges til eller trækkes fra for at få det totale aggregerede outputantal.
+Med konfigurationen kan du definere et sæt beregnede målingsformler, der inkluderer modifikatorer, der skal lægges til eller trækkes fra for at få det totale aggregerede outputantal.
 
 Hvis du vil konfigurere en brugerdefineret beregnet måling, skal du gøre følgende.
 
@@ -191,7 +196,7 @@ Hvis du vil konfigurere en brugerdefineret beregnet måling, skal du gøre følg
 1. Angiv følgende felter for den nye beregnede måling:
 
     - **Navn på ny beregnet måling** – Angiv navnet på den beregnede måling.
-    - **Datakilde** – Vælg den datakilde, der er tilknyttet den nye modifikator. Forespørgselssystemet er en datakilde.
+    - **Datakilde** – Vælg den datakilde, der er tilknyttet den beregnede måling. Forespørgselssystemet er en datakilde.
 
 1. Vælg **Tilføj** for at føje en modifikator til den nye beregnede måling.
 1. Angiv følgende felter til den nye modifikator:
@@ -200,15 +205,21 @@ Hvis du vil konfigurere en brugerdefineret beregnet måling, skal du gøre følg
     - **Datakilde** – Vælg den datakilde, hvor den måling, der angiver modifikatorværdien, findes.
     - **Måling** – Vælg navnet på den måling (fra den valgte datakilde), der angiver værdien for modifikatoren.
 
-1. Gentag trin 5 til 6, indtil du har tilføjet alle nødvendige modifikatorer.
+1. Gentag trin 5 til 6, indtil du har tilføjet alle de påkrævede modifikatorer og har fuldført formularen for din beregnede måling.
 1. Vælg **Gem**.
 
-Du kan f.eks. få følgende forespørgelsresultat.
+Et modefirma opererer f.eks. på tværs af tre datakilder:
+
+- `pos` – Svarer til butikskanalen.
+- `fno` - svarer til Supply Chain Management.
+- `ecommerce` – Svarer til din webkanal.
+
+Uden beregnede måleenheder, kan du få følgende forespørgselsresultat, som viser lagerantal under hver forudkonfigureret fysisk målepunkt, når du forespørger på produkt D0002 (Cabinet) for websted 1, lagersted 11 og en `ColorID`-dimensionsværdi på `Red`. Du har dog ikke overblik over det samlede tilgængelige antal for reservationsantal på tværs af datakilderne.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -224,7 +235,7 @@ Du kan f.eks. få følgende forespørgelsresultat.
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
@@ -239,22 +250,22 @@ Derefter konfigurerer du en beregnet måling med navnet `MyCustomAvailableforRes
 
 | Forbrugssystem | Beregnet måling | Datakilde | Fysisk måling | Kalkulationstype |
 |---|---|---|---|---|
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `received` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `scheduled` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `issued` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `reserved` | `Subtraction` |
 
 Når denne beregningsformel bruges, omfatter det nye forespørgselsresultat den tilpassede måling.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -270,13 +281,13 @@ Når denne beregningsformel bruges, omfatter det nye forespørgselsresultat den 
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
                 "reserved": 40.0
             },
-            "CustomChannel": {
+            "CrossChannel": {
                 "MyCustomAvailableforReservation": 220.0
             }
         }
@@ -304,7 +315,7 @@ Løsningen inkluderer som standard denne partitionskonfiguration. Du *behøver d
 
 Lagerbeholdningsforespørgslen vil det meste af tiden ikke kun være på det højeste "totalniveau". I stedet vil du måske også se resultater, der aggregeres baseret på lagerdimensionerne.
 
-Lagersynlighed giver fleksibilitet ved at lade dig konfigurere _indekserne_ for at forbedre ydeevnen af dine forespørgsler. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
+Lagersynlighed giver fleksibilitet ved at lade dig konfigurere *indekserne* for at forbedre ydeevnen af dine forespørgsler. Disse indekser er baseret på en dimension eller en kombination af dimensioner. Et indeks består af et *sætnummer*, en *dimension* og et *hierarki* som defineret i følgende tabel.
 
 | Navn | Beskrivelse |
 |---|---|
@@ -334,15 +345,15 @@ Dette afsnit indeholder et eksempel på, hvordan hierarkiet fungerer.
 
 Følgende tabel indeholder en liste over den tilgængelige lagerbeholdning i dette eksempel.
 
-| Post | ColorId | SizeId | StyleId | Mængde |
+| Element | ColorId | SizeId | StyleId | Quantity |
 |---|---|---|---|---|
-| T-shirt | Sort | Lille | Bred | 1 |
-| T-shirt | Sort | Lille | Regulær | 2 |
-| T-shirt | Sort | Stor | Bred | 3 |
-| T-shirt | Sort | Stor | Regulær | 4 |
-| T-shirt | Rød | Lille | Bred | 5 |
-| T-shirt | Rød | Lille | Regulær | 6 |
-| T-shirt | Rød | Stor | Regulær | 7 |
+| D0002 | Sort | Lille | Bred | 1 |
+| D0002 | Sort | Lille | Regulær | 2 |
+| D0002 | Sort | Stor | Bred | 3 |
+| D0002 | Sort | Stor | Regulær | 4 |
+| D0002 | Rød | Lille | Bred | 5 |
+| D0002 | Rød | Lille | Regulær | 6 |
+| D0002 | Rød | Stor | Regulær | 7 |
 
 Følgende tabel viser, hvordan indekshierarkiet er konfigureret.
 
@@ -356,29 +367,29 @@ Med indekset kan du forespørge på den disponible lagerbeholdning på følgende
 
 - `()` – Grupperet efter alle
 
-    - T-shirt, 28
+    - D0002, 28
 
 - `(ColorId)`– Grupperet efter `ColorId`
 
-    - T-shirt, Sort, 10
-    - T-shirt, Rød, 18
+    - D0002, Sort, 10
+    - D0002, Rød, 18
 
 - `(ColorId, SizeId)`– Grupperet efter kombinationen af `ColorId` og `SizeId`
 
-    - T-shirt, Sort, Lille, 3
-    - T-shirt, Sort, Stor, 7
-    - T-shirt, Rød, Lille, 11
-    - T-shirt, Rød, Stor, 7
+    - D0002, Sort, Lille, 3
+    - D0002, Sort, Stor, 7
+    - D0002, Rød, Lille, 11
+    - D0002, Rød, Stor, 7
 
 - `(ColorId, SizeId, StyleId)`– Grupperet efter kombinationen af `ColorId`, `SizeId` og `StyleId`
 
-    - T-shirt, Sort, Lille, Bred, 1
-    - T-shirt, Sort, Lille, Almindelig, 2
-    - T-shirt, Sort, Stor, Bred, 3
-    - T-shirt, Sort, Stor, Almindelig, 4
-    - T-shirt, Rød, Lille, Bred, 5
-    - T-shirt, Rød, Lille, Almindelig, 6
-    - T-shirt, Rød, Stor, Almindelig, 7
+    - D0002, Sort, Lille, Bred, 1
+    - D0002, Sort, Lille, Almindelig, 2
+    - D0002, Sort, Stor, Bred, 3
+    - D0002, Sort, Stor, Almindelig, 4
+    - D0002, Rød, Lille, Bred, 5
+    - D0002, Rød, Lille, Almindelig, 6
+    - D0002, Rød, Stor, Almindelig, 7
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguration af reservationer (valgfrit)
 
@@ -397,35 +408,35 @@ Før du konfigurerer denne tilknytning, skal de fysiske målinger, beregnede må
 
 Hvis du vil definere tilknytningen for en foreløbig reservation, skal du følge disse trin.
 
-1. Definer den fysiske måling, der fungerer som måling for foreløbige reservationer (f.eks. `SoftReservOrdered`).
-1. Definer på siden **Konfiguration** under fanen **Beregnet måling** den beregnede måling for *tilgængelig lagerbeholdning for reservation* (AFR), der indeholder den AFR-beregningsformel, som du vil knytte til den fysiske måling. Du kan f.eks. konfigurere `AvailableToReserve` (tilgængelig for reservation), så den knyttes til den tidligere definerede fysiske måling `SoftReservOrdered`. På den måde kan du finde ud af, hvilke antal med lagerstatussen `SoftReservOrdered`, der er tilgængelige for reservation. Følgende tabel viser AFR-beregningsformlen.
+1. Definer den fysiske måling, der fungerer som måling for foreløbige reservationer (f.eks. `SoftReservPhysical`).
+1. Definer på siden **Konfiguration** under fanen **Beregnet måling** den beregnede måling for *tilgængelig lagerbeholdning for reservation* (AFR), der indeholder den AFR-beregningsformel, som du vil knytte til den fysiske måling. Du kan f.eks. konfigurere `AvailableToReserve` (tilgængelig for reservation), så den knyttes til den tidligere definerede fysiske måling `SoftReservPhysical`. På den måde kan du finde ud af, hvilke antal med lagerstatussen `SoftReservPhysical`, der er tilgængelige for reservation. Følgende tabel viser AFR-beregningsformlen.
 
     | Kalkulationstype | Datakilde | Fysisk måling |
     |---|---|---|
     | Addition | `fno` | `AvailPhysical` |
     | Addition | `pos` | `Inbound` |
     | Subtraktion | `pos` | `Outbound` |
-    | Subtraktion | `iv` | `SoftReservOrdered` |
+    | Subtraktion | `iv` | `SoftReservPhysical` |
 
-    Det anbefales, at du konfigurerer den beregnede måleenhed, så den indeholder den fysiske måling, som reservationsmåleenheden er baseret på. På denne måde påvirkes det beregnede måleantal af antallet for reservationen. I dette eksempel skal det beregnede målepunkt `AvailableToReserve` for datakilden `iv` indeholde den fysiske måling `SoftReservOrdered` fra `iv` som en komponent.
+    Det anbefales, at du konfigurerer den beregnede måleenhed, så den indeholder den fysiske måling, som reservationsmåleenheden er baseret på. På denne måde påvirkes det beregnede måleantal af antallet for reservationen. I dette eksempel skal det beregnede målepunkt `AvailableToReserve` for datakilden `iv` indeholde den fysiske måling `SoftReservPhysical` fra `iv` som en komponent.
 
 1. Åbn siden **Konfiguration**.
-1. Konfigurer tilknytningen fra den fysiske måling til den beregnede måling under fanen **Tilknytning af foreløbig reservation**. I det forrige eksempel kan du bruge følgende indstillinger til at knytte `AvailableToReserve` til den tidligere definerede fysiske måling `SoftReservOrdered`.
+1. Konfigurer tilknytningen fra den fysiske måling til den beregnede måling under fanen **Tilknytning af foreløbig reservation**. I det forrige eksempel kan du bruge følgende indstillinger til at knytte `AvailableToReserve` til den tidligere definerede fysiske måling `SoftReservPhysical`.
 
     | Datakilde for fysisk måling | Fysisk måling | Tilgængelig for reservations datakilde | Tilgængelig for beregnet måling for reservation |
     |---|---|---|---|
-    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > Hvis du ikke kan redigere fanen **Tilknytning af foreløbige reservationer**, skal du aktivere funktionen *OnHandReservation* under fanen **Funktionsstyring**.
 
-Når du foretager reservationer på `SoftReservOrdered`, finder Lagersynlighed automatisk `AvailableToReserve` og den relaterede beregningsformel for at foretage reservationsvalideringen.
+Når du foretager reservationer på `SoftReservPhysical`, finder Lagersynlighed automatisk `AvailableToReserve` og den relaterede beregningsformel for at foretage reservationsvalideringen.
 
 Du har f.eks. følgende disponible lagerbeholdninger i Lagersynlighed.
 
 ```json
 {
-    "productId": "T-shirt",
+    "productId": "D0002",
     "dimensions": {
         "SiteId": "1",
         "LocationId": "11",
@@ -433,7 +444,7 @@ Du har f.eks. følgende disponible lagerbeholdninger i Lagersynlighed.
     },
     "quantities": {
         "iv": {
-            "SoftReservOrdered": 90
+            "SoftReservPhysical": 90
         },
         "fno": {
             "availphysical": 70.0,
@@ -448,14 +459,14 @@ Du har f.eks. følgende disponible lagerbeholdninger i Lagersynlighed.
 
 I dette tilfælde anvendes følgende beregning:
 
-`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservOrdered`  
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservPhysical`  
 = 70 + 50 – 20 – 90  
 = 10
 
-Hvis du forsøger at foretage reservationer for `iv.SoftReservOrdered`, og antallet er mindre end eller lig med `AvailableToReserve` (10), kan du derfor foretage reservationen.
+Hvis du forsøger at foretage reservationer for `iv.SoftReservPhysical`, og antallet er mindre end eller lig med `AvailableToReserve` (10), kan du derfor foretage forhåndsreservation.
 
 > [!NOTE]
-> Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. Værdien `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at valideringen ikke er nødvendig. Standardværdien er `True`.
+> Når du kalder reservations-API'en, kan du styre valideringen af reservationen ved at angive parameteren Boolesk `ifCheckAvailForReserv` i brødteksten. En værdi `True` betyder, at valideringen er påkrævet, mens værdien `False` betyder, at validering ikke er påkrævet (selvom der muligvis vil være en negativ `AvailableToReserve`-mængde, vil systemet stadig tillade en forhåndsreservering). Standardværdien er `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarki for foreløbige reservationer
 
@@ -488,18 +499,21 @@ Du kan konfigurere lagersynlighed, så du kan planlægge fremtidige ændringer a
 
 ## <a name="complete-and-update-the-configuration"></a>Fuldføre og opdatere konfigurationen
 
-Når du har fuldført konfigurationen, skal du foretage alle ændringer af Lagersynlighed. Hvis du vil foretage ændringer, skal du vælge **Opdater konfiguration** øverst til højre på siden **Konfiguration** i Power Apps.
+Når du har fuldført konfigurationen, skal du foretage alle ændringer af Lagersynlighed. Følg disse trin for at publicere ændringer.
 
-Første gang du vælger **Opdater konfiguration**, beder systemet om dine legitimationsoplysninger.
+1. I Power Apps på siden **Konfiguration** skal du vælge **Opdater konfiguration** øverst til højre på siden. 
+1. Systemet anmoder om legitimationsoplysninger til logon. Angiv følgende værdier:
 
-- **Klient-id** – Det program-id for Azure, som du har oprettet for Lagersynlighed.
-- **Lejer-id** – Dit lejer-id for Azure.
-- **Klienthemmelighed** – Den programhemmelighed for Azure, som du har oprettet for Lagersynlighed.
+    - **Klient-id** – Det program-id for Azure, som du har oprettet for Lagersynlighed.
+    - **Lejer-id** – Dit lejer-id for Azure.
+    - **Klienthemmelighed** – Den programhemmelighed for Azure, som du har oprettet for Lagersynlighed.
 
-Når du er logget på, opdateres konfigurationen i tjenesten Lagersynlighed.
+    Du kan finde flere oplysninger om disse legitimationsoplysninger og hvordan du finder dem i [Installere og konfigurere Lagersynlighed](inventory-visibility-setup.md).
 
-> [!NOTE]
-> Sørg for at validere datakildens navn, fysiske målinger og dimensionstilknytninger, før du opdaterer konfigurationen af tjenesten Lagersynlighed. Du kan ikke ændre disse indstillinger, når du har valgt **Opdater konfiguration**.
+    > [!IMPORTANT]
+    > Sørg for at validere datakildens navn, fysiske målinger og dimensionstilknytninger, før du opdaterer konfigurationen. Du kan ikke ændre disse indstillinger, når du har opdateret.
+
+1. Når du er logget på, skal du vælge **Opdater konfiguration** igen. Systemet anvender dine indstillinger og viser, hvad der er ændret.
 
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Eksempel på standardkonfiguration
 
@@ -694,13 +708,19 @@ De dimensionstilknytninger, der vises i følgende tabel, er konfigureret for `fn
 
 Der konfigureres følgende fysiske målinger for `fno`-datakilden:
 
-- `Ordered`
 - `Arrived`
-- `AvailPhysical`
 - `PhysicalInvent`
 - `ReservPhysical`
+- `onorder`
+- `notspecified`
+- `availordered`
+- `availphysical`
+- `picked`
+- `postedqty`
+- `quotationreceipt`
+- `received`
+- `ordered`
 - `ReservOrdered`
-- `OnOrder`
 
 #### <a name="configuration-of-the-pos-data-source"></a>Konfiguration af "pos"-datakilden
 
@@ -766,7 +786,7 @@ I følgende tabel vises standardtilknytningen for reservationer.
 
 | Datakilde for fysisk måling | Fysisk måling | Tilgængelig for reservations datakilde | Tilgængelig for beregnet måling for reservation |
 |---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+| `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
 #### <a name="reservation-hierarchy"></a>Reservationshierarki
 
@@ -778,35 +798,5 @@ I følgende tabel vises standardhierarkiet for reservationer.
 | `LocationId` | 2 |
 | `ColorId` | 3 |
 | `SizeId` | 4 |
-| `StyleId` | 5 |
-| `BatchId` | 6 |
-| `SerialId` | 7 |
-| `StatusId` | 8 |
-| `LicensePlateId` | 9 |
-| `WMSLocationId` | 10 |
-| `WMSPalletId` | 11 |
-| `ConfigId` | 12 |
-| `VersionId` | 13 |
-| `CustomDimension1` | 14 |
-| `CustomDimension2` | 15 |
-| `CustomDimension3` | 16 |
-| `CustomDimension4` | 17 |
-| `CustomDimension5` | 18 |
-| `CustomDimension6` | 19 |
-| `CustomDimension7` | 20 |
-| `CustomDimension8` | 21 |
-| `CustomDimension9` | 22 |
-| `CustomDimension10` | 23 |
-| `CustomDimension11` | 24 |
-| `CustomDimension12` | 25 |
-| `ExtendedDimension1` | 26 |
-| `ExtendedDimension2` | 27 |
-| `ExtendedDimension3` | 28 |
-| `ExtendedDimension4` | 29 |
-| `ExtendedDimension5` | 30 |
-| `ExtendedDimension6` | 31 |
-| `ExtendedDimension7` | 32 |
-| `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: e4ccc8ac9b5374ca0713167a17b8704727c687fd
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643678"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775230"
 ---
 # <a name="customer-aging-snapshots"></a>Aldersfordelte øjebliksbilleder for debitor
 
@@ -31,9 +31,10 @@ Oplysninger fra aldersfordelte øjebliksbilleder vises på listesiden **Aldersfo
 Arbejdsområdet **Kundekredit og inkasso** viser også aldersfordelingen for kunder. Yderligere oplysninger finder du i [Styring af kredit og inkasso Power BI-indholdet](credit-collections-power-bi.md).
 
 > [!NOTE]
-> Hvis du vil reducere den tid, det tager at oprette et aldersfordelt øjebliksbillede, skal du aktivere følgende funktioner i arbejdsområdet **Funktionsstyring**: **Forbedret ydeevne af aldersfordelte debitorer** 
-> **Forbedret ydeevne af aldersfordeling af kunder med kundepuljer**  
-> Når begge funktioner er aktiveret, kan **kundepuljer** bruges til oprettelse af det aldersfordelte øjebliksbillede. 
+> Hvis du vil reducere den tid, det tager at oprette et aldersfordelt øjebliksbillede, skal du aktivere følgende funktioner i arbejdsområdet **Funktionsstyring**: 
+> - **Forbedret ydeevne af aldersfordelte debitorer** 
+> - **Forbedret ydeevne af aldersfordeling af kunder med kundepuljer**  
+>Når begge funktioner er aktiveret, kan **kundepuljer** bruges til oprettelse af det aldersfordelte øjebliksbillede. 
 
 Når du opretter et aldersfordelt øjebliksbillede for debitorer, skal du bruge følgende felter til at angive oplysninger om det:
 

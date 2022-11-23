@@ -2,25 +2,25 @@
 title: Årsafslutning
 description: Denne artikel beskriver den krævede konfiguration og trinnene for at køre årsafslutningsprocessen i Finans.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883207"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779737"
 ---
 # <a name="year-end-close"></a>Årsafslutning
 
@@ -62,7 +62,7 @@ På siden **Opsætning af skabelon for årsafslutning**:
 
 ## <a name="define-year-end-close-templates"></a>Angiv årsafslutningsskabeloner
 
-Når systemet er konfigureret, kan du køre årsafslutningsprocessen. På siden **Opsætning af skabelon for årsafslutning** kan en skabelon defineres for den gruppe af juridiske enheder, som årsafslutningsprocessen skal køres for. Skabelonen kan genbruges ved hver årsafslutning, men den kan ændres, hvis din organisation ændres.
+Når konfigurationen er fuldført, kan du køre årsafslutningsprocessen. På siden **Opsætning af skabelon for årsafslutning** kan en skabelon defineres for den gruppe af juridiske enheder, som årsafslutningsprocessen skal køres for. Skabelonen kan genbruges ved hver årsafslutning, men den kan ændres, hvis din organisation ændres.
 
 Angiv først feltet **Gruppenavn** for skabelonen, og vælge regnskabskalenderen. Gruppenavnet skal identificere gruppen af inkluderede juridiske enheder. Når du bestemmer grupperne af juridiske enheder, skal du huske, at juridiske enheder kun kan medtages i samme gruppe, hvis samme regnskabskalender er valgt for dem. Skabelonerne kan f.eks. oprettes baseret på geografi, og separate grupper kan oprettes for juridiske enheder i Nordamerika, Europa, Mellemøsten og Afrika (EMEA) og Asien og Stillehavsområdet (APAC).
 

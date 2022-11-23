@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-ms.openlocfilehash: ee11647f6f700042e11133181de919e13f16c018
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: a8da366b1e770ea649603ae85d4acc5e377ed9fb
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715958"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780460"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Udligne en delvis og endelig betaling fuldt ud før rabatdatoen
 
@@ -35,21 +35,21 @@ Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 40
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI 10010 | Faktura          | 25-6-2015 | 10010   | 1.000,00                             |                                       | 1.000,00 | USD      |
+| FTI 10010 | Faktura          | 25/6/2020 | 10010   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 Fra siden **Debitor** eller **Debitorposteringer** Arne kan åbne siden **Udlign posteringer** for at få vist datoerne og beløbene for kasserabatter, der er tilgængelige for fakturaen. Forfaldsdatoen er den 25. juli, og en kasserabat på 10,00 er tilgængelig, hvis fakturaen betales inden den 9. juli.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret | Almindelig            | FTI 10010 | 4028    | 25-6-2015 | 25-7-2015 | 10010   | 1.000,00                       | USD      | 990,00           |
+| Valgt | Normal            | FTI 10010 | 4028    | 25/6/2020 | 25/7/2020 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Rabatoplysninger for den markerede faktura vises nederst på siden **Udlign posteringer**.
 
 |    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 10,00     |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatdato           | 09/7/2020 |
+| Kasserabatbeløb         | 10.00     |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 10,00     |
 
@@ -57,8 +57,8 @@ Arnie klikker på fanen **Kasserabat** for at få vist rabatbeløbet.
 
 | Kasserabatdato | Kasserabatbeløb | Beløb i transaktionsvaluta |
 |--------------------|----------------------|--------------------------------|
-| 9-7-2015           | 10,00                | 990,00                         |
-| 25-7-2015          | 0,00                 | 1.000,00                       |
+| 9/7/2020           | 10.00                | 990.00                         |
+| 25/7/2020          | 0,00                 | 1,000.00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Delvis betaling ved hjælp af siden Angiv debitorbetalinger
 Debitor 4028 sender en betaling på 500,00 den 1. juli. For at angive denne betaling klikker Arnie ikke på **Linjer**. I stedet registrerer han betalingen ved at oprette en ny betalingskladde og derefter åbne siden **Angiv debitorbetalinger**. Arnie indtaster oplysningerne om betaling og markerer den faktura, som de har angivet. Når Arnie skriver **500,00** som beløbet, skriver de også **500,00** i feltet **Beløb til betaling** i gitteret. Da Fabrikam giver mulighed for en kasserabat på delbetalinger, kan Arnie se, at en delvis kasserabat på 5,05 også bliver medtaget. Beregningen af denne rabat er 500,00 ÷ 0,99 × 0,01 = 5,05. (I denne beregning divideres 500,00 med 0,99, fordi der er en rabat på 1 %. Derfor betaler debitoren 99 % af fakturaen. Resultatet multipliceres derefter med rabatprocenten, som er 1 % eller 0,01. Hvis kunden tager den fulde rabat på 10,00, bliver det beløb, der skal afregnes 990,00). Rabatoplysninger vises i gitteret i bunden af siden **Angiv debitorbetalinger**.
@@ -72,15 +72,15 @@ I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan 
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret | Almindelig            | FTI 10010 | 4028    | 25-6-2015 | 25-7-2015 | 10010   | 1.000,00                       | USD      | 500,00           |
+| Valgt | Normal            | FTI 10010 | 4028    | 25/6/2020 | 25/7/2020 | 10010   | 1,000.00                       | USD      | 500.00           |
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
 |        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 10,00     |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatdato           | 09/7/2020 |
+| Kasserabatbeløb         | 10.00     |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 5,05      |
 
@@ -88,15 +88,15 @@ Hvis debitoren ønsker at udligne præcist halvdelen af fakturaen, indsender deb
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret | Almindelig            | FTI 10010 | 4028    | 25-6-2015 | 25-7-2015 | 10010   | 1.000,00                       | USD      | 495,00           |
+| Valgt | Normal            | FTI 10010 | 4028    | 25/6/2020 | 25/7/2020 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
 |     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 10,00     |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatdato           | 09/7/2020 |
+| Kasserabatbeløb         | 10.00     |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | 5,00      |
 
@@ -104,9 +104,9 @@ Arnie lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 49
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI 10010  | Faktura          | 25-6-2015 | 10010   | 1.000,00                             |                                       | 500,00  | USD      |
-| ARP-10010  |  Betaling         | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10010 |  Kasserabat   | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI 10010  | Faktura          | 25/6/2020 | 10010   | 1,000.00                             |                                       | 500.00  | USD      |
+| ARP-10010  |  Betaling         | 1.7.2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10010 |  Kasserabat   | 1.7.2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betaling af det resterende beløb
 Debitor 4028 betaler resten af beløbet på 495,00 den 8. juli, som er inden for kasserabatperioden. Arnie opretter betalingskladden den 8. juli og markerer posteringen til udligning. Arnie ser, at det beløb, der skal udlignes, er 495,00. Værdien i feltet **Forkalkuleret kasserabat** er **5,00**, fordi rabatten på 5,00 blev medtaget tidligere.
@@ -120,15 +120,15 @@ Oplysninger om den markerede postering vises i gitteret på siden **Udlign åbne
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret | Almindelig            | FTI 10010 | 4028    | 25-6-2015 | 25-7-2015 | 10010   | 1.000,00                       | USD      | 495,00           |
+| Valgt | Normal            | FTI 10010 | 4028    | 25/6/2020 | 25/7/2020 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Kasserabatdato           | 7/09/2015 |
-| Kasserabatbeløb         | 10,00     |
-| Anvend kasserabat            | Almindelig    |
+| Kasserabatdato           | 09/7/2020 |
+| Kasserabatbeløb         | 10.00     |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 5,00      |
 | Kasserabatbeløb, der skal medtages | 5,00      |
 
@@ -136,11 +136,11 @@ Arnie bogfører denne betalingskladde og gennemgår debitorposteringerne på sid
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI 10010  | Faktura          | 25-6-2015 | 10010   | 1.000,00                             |                                       | 0,00    | USD      |
-| ARP-10010  | Betaling          | 7/1/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10010 | Kasserabat    | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
-| ARP-10011  | Betaling          | 7/8/2015  |         |                                      | 495,00                                | 0,00    | USD      |
-| DISC-10011 | Kasserabat    | 7/8/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+| FTI 10010  | Faktura          | 25/6/2020 | 10010   | 1,000.00                             |                                       | 0,00    | USD      |
+| ARP-10010  | Betaling          | 1.7.2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10010 | Kasserabat    | 1.7.2020  |         |                                      | 5.00                                  | 0,00    | USD      |
+| ARP-10011  | Betaling          | 8/7/2020  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10011 | Kasserabat    | 8/7/2020  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 
 

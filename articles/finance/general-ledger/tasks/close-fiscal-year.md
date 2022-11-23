@@ -2,7 +2,7 @@
 title: Lukke regnskabsåret
 description: Denne procedure gennemgår processen for årsafslutning, som overfører saldi til et nyt regnskabsår.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717468"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779794"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskabsåret
 
@@ -40,7 +40,7 @@ Hvis værdien angives til **Ja**, oprettes der to posteringer. Der oprettes et b
 
 5. Vælg **Ja** eller **Nej** for indstillingen **Indstil status til permanent afsluttet for regnskabsåret**.
 
-Hvis værdien er angivet til **Ja**, angives regnskabsårets status til Permanent lukket. Da et permanent lukket år ikke kan åbnes igen, er den bedste fremgangsmåde at angive denne indstilling til **Nej**.  
+Hvis værdien er angivet til **Ja**, angives regnskabsårets status til **Permanent lukket**. Da et permanent lukket år ikke kan åbnes igen, er den bedste fremgangsmåde at angive denne indstilling til **Nej**.  
 
 6. Vælg **Ja** eller **Nej** for indstillingen **Bilagsnummeret skal udfyldes under årsafslutning**.
 

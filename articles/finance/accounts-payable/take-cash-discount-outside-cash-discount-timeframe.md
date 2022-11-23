@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1abf6722348b57594509e90ca0defc07783a112b
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 26b1eb5e542acf7496d1a0cf7196716a5de75e4e
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715877"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780475"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Brug en kasserabat uden for kasserabatperioden
 
@@ -37,13 +37,13 @@ April markerer fakturaen til betaling. Der anvendes ingen kasserabat, da betalin
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Kasserabatdato | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret | Altid            | Fak-10030 | 3052    | 28-6-2015          | 12-7-2015 | 10030   | -2.000,00                      | USD      | -1.980,00        |
+| Valgt | Altid            | Fak-10030 | 3052    | 28/6/2020          | 12/7/2020 | 10030   | -2.000,00                      | USD      | -1.980,00        |
 
 Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 
 | Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 12-7-2015 |
+| Kasserabatdato           | 12/7/2020 |
 | Kasserabatbeløb         | -20,00    |
 | Anvende kasserabat            | Altid    |
 | Medtaget kasserabat          | 0,00      |
@@ -52,18 +52,18 @@ Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 ## <a name="date-to-use-for-calculating-discounts--selected-date"></a>Dato, der skal bruges til beregning af rabatter = Valgt dato
 Hvis både fakturaen og betalingen er blevet bogført, kan kasserabatten stadig medtages, når posteringerne er udlignet på siden **Udlign posteringer**. April ændre værdien i feltet **Dato, der skal bruges til beregning af rabatter** til **Valgt dato**. Hun skriver derefter datoen 28. juli, som er i kasserabatperioden for fakturaen. Denne dato bruges til at beregne en kasserabat for posteringen. På siden **Udlign åbne posteringer** ser April ser, at den fulde rabat på 20,00 vises som standard. Fakturalinjen viser, at det beløb, der skal udlignes, er 1.980,00.
 
-| Foretag afmærkning                     | Anvend kasserabat | Bilag   | Konto | Kasserabatdato | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
-|--------------------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret og fremhævet | Almindelig            | Fak-10030 | 3052    | 28-6-2015          | 12-7-2015 | 10030   | -2.000,00                      | USD      | -1.980,00        |
-| Valgt                 | Almindelig            | APP-10030 | 3052    | 15-7-2015          | 15-7-2015 |         | 500,00                         | USD      | 500,00           |
+| Foretag afmærkning          | Anvend kasserabat | Bilag   | Konto | Kasserabatdato | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
+|--------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
+| Markeret og fremhævet | Normal    | Fak-10030 | 3052    | 28/6/2020         | 12/7/2020 | 10030   | -2.000,00                      | USD      | -1.980,00        |
+| Valgt                 | Normal    | APP-10030 | 3052    | 15/7/2020          | 15/7/2020 |         | 500.00                         | USD      | 500.00           |
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Det rabatbeløb, der skal medtages, er 20,00, da det beløb, der skal udlignes for fakturaen, er standardbeløbet 1.980,00.
 
 | Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 12-7-2015 |
+| Kasserabatdato           | 12/7/2020 |
 | Kasserabatbeløb         | -20,00    |
-| Anvende kasserabat            | Almindelig    |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -20,00    |
 
@@ -71,16 +71,16 @@ April opdaterer værdien i feltet **Beløb, der skal udlignes** til **500,00**. 
 
 | Foretag afmærkning                     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Markeret og fremhævet | Almindelig            | Fak-10030 | 3052    | 28-6-2015 | 12-7-2015 | 10030   | 2.000,00                       | USD      | -500,00          |
-| Valgt                 | Almindelig            | APP-10030 | 3052    | 15-7-2015 | 15-7-2015 |         | 500,00                         | USD      | 500,00           |
+| Markeret og fremhævet | Normal            | Fak-10030 | 3052    | 28/6/2020 | 12/7/2020 | 10030   | 2,000.00                       | USD      | -500,00          |
+| Valgt                 | Normal            | APP-10030 | 3052    | 15/7/2020 | 15/7/2020 |         | 500.00                         | USD      | 500.00           |
 
 Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**, da det beløb, der skal udlignes for fakturaen, er ændret til betalingsbeløbet 500,00.
 
 | Felt                        | Værdi     |
 |------------------------------|-----------|
-| Kasserabatdato           | 12-7-2015 |
+| Kasserabatdato           | 12/7/2020 |
 | Kasserabatbeløb         | -20,00    |
-| Anvende kasserabat            | Almindelig    |
+| Anvende kasserabat            | Normal    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -5,05     |
 

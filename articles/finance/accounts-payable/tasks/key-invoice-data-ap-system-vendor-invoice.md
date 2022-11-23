@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716797"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775155"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Vigtigste fakturadata i kreditor, der bruger en kreditorfaktura
 
@@ -68,7 +68,10 @@ Denne opgaveguide hjælper dig med at oprette en kreditorfaktura fra en indkøbs
 17. Angiv et tal i feltet **Enhedspris**. Nu, da enhedsprisen passer, opdateres status til Fuldført. Hvis politikken tillader uoverensstemmelser, eller hvis sammenholdelse kun er en advarsel, kan du stadig bogføre fakturaen.  
 18. Luk siden.
 19. Klik på **Bogfør**.
-20. Luk formularen. Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.  
+20. Luk siden. 
+
+>[!Note] 
+>Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.  
 
 
 

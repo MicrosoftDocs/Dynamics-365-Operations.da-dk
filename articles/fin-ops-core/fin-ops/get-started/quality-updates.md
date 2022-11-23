@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752292"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775400"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -112,7 +112,7 @@ Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planla
 | Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 14. oktober til 17. oktober 2022 og 2. november til 5. november 2022 | 13. november til 16. november 2022 |
 | Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 15. oktober til 18. oktober 2022 og 2. november til 5. november 2022 | 13. november til 16. november 2022 |
 | Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 16. oktober til 19. oktober 2022 og 2. november til 5. november 2022 | 13. november til 16. november 2022 |
-| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022 og 2. november til 5. november 2022 | 13. november til 16. november 2022 |
+| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022 og 2. november til 5. november 2022 | 15. november til 18. november 2022 |
 | Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktiv udgivelses af kvalitetsopdatering: 10.0.30

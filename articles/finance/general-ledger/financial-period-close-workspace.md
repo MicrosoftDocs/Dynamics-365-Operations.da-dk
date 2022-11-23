@@ -2,25 +2,25 @@
 title: Arbejdsområde til afslutning på regnskabsperiode
 description: Denne artikel indeholder en oversigt over arbejdsområdet Afslutning på regnskabsperiode og den tilknyttede konfiguration.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865706"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780036"
 ---
 # <a name="financial-period-close-workspace"></a>Arbejdsområde til afslutning på regnskabsperiode
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865706"
 
 Denne artikel indeholder en oversigt over arbejdsområdet **Afslutning på regnskabsperiode** og den tilknyttede konfiguration.
 
-Arbejdsområde til afslutning på regnskabsperiode
+## <a name="financial-period-close-workspace"></a>Arbejdsområde til afslutning på regnskabsperiode
 
 I arbejdsområdet **Afslutning på regnskabsperiode** kan du spore dine afsluttende regnskabsprocesser på tværs af firmaer, områder og personer. Afhængigt af din visning af arbejdsområdet **Afslutning på regnskabsperiode** kan du se enten alle opgaver og statusser for en ultimotidsplan eller blot de opgaver, der er tildelt til dig. 
 
@@ -101,7 +101,7 @@ Tildel den kalender, der er relevant for ultimotidsplanen, for at angive de arbe
 
 Du skal også definere de virksomheder, der skal knyttes til ultimotidsplanen. Hvis skabelonopgaver tildeles flere virksomheder, oprettes der separate opgaver for hver virksomhed, der er i ultimotidsplanen, og de tildeles skabelonopgaven. 
 
-Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket** for den. Opgavehistorikken vil fortsat være tilgængelig fra listesiden **Alle opgaver til afslutning på regnskabsperiode**, men ultimotidsplanen fjernes fra arbejdsområdet. Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket**, kan du ikke føje opgaver til den, redigere opgaver eller fjerne opgaver fra den.
+Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket**. Opgavehistorikken vil fortsat være tilgængelig fra listesiden **Alle opgaver til afslutning på regnskabsperiode**, men ultimotidsplanen fjernes fra arbejdsområdet. Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket**, kan du ikke føje opgaver til den, redigere opgaver eller fjerne opgaver fra den.
 
 
 

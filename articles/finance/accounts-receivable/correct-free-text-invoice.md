@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715491"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780469"
 ---
 # <a name="correct-a-free-text-invoice"></a>Rette en fritekstfaktura
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715491"
 
 I denne artikel beskrives det, hvordan du retter en fritekstfaktura, der er bogført, og genudsteder den som en rettet faktura.
 
-Hvis du vil rette en fritekstfaktura eller salgsfaktura, der allerede er bogført, skal du åbne den bogførte fritekstfaktura. På siden **Faktura** skal vælge **Annuller** og derefter vælge **Ret faktura**. Vælg en årsagskode, tilføj kommentarer, og vælg datoen for den nye rettede faktura. Du kan ændre den rettede faktura og bogføre den. 
+Ret en fritekstfaktura, der allerede er bogført: 
+1. Åbn bogførte fritekstfakturaer. 
+2. På siden **Faktura** skal vælge **Annuller** og derefter vælge **Ret faktura**. 
+3. Vælg en årsagskode, tilføj kommentarer, og vælg datoen for den nye rettede faktura.
+4. Du kan ændre den rettede faktura og bogføre den. 
 
 Når du bogfører den rettede faktura, oprettes der en annullering af fakturaen for et kreditbeløb, der er lig med det oprindelige fakturabeløb. Derfor bliver den samlede saldo af den oprindelige faktura og annulleringen af fakturaen 0 (nul). Annulleringen af fakturaen udlignes mod den oprindelige faktura. 
 

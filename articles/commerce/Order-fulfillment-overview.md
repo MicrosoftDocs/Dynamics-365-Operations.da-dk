@@ -1,35 +1,37 @@
 ---
 title: Butiksordreopfyldning
-description: Denne artikel giver en oversigt over butiksordreopfyldning.
+description: Denne artikel giver en oversigt over butiksordreopfyldning i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854972"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785066"
 ---
 # <a name="store-order-fulfillment"></a>Butiksordreopfyldning
 
 [!include [banner](includes/banner.md)]
+
+Denne artikel giver en oversigt over butiksordreopfyldning i Microsoft Dynamics 365 Commerce.
 
 Mange detailhandlere ønsker at optimere deres ordreopfyldning ved at gøre det muligt for butikker at opfylde ordrer. Ordreopfyldning på butiksniveau kan afhjælpe situationer med overfyldte lagre i en bestemt butik eller kan være nødvendigt fra et logistisk synspunkt i tilfælde, hvor en butik har ekstra kapacitet eller ligger inden for nærmere leveringsafstand i forhold til kunden. Du kan løse dette behov ved hjælp af en samlet ordreopfyldningsoperation, der er tilgængelig på salgsstedet (POS).
 
 På opfyldningsordrer i en bestemt butik er butikkens lagersted angivet på hovedet eller linjerne i ordren.
 
 Ordreopfyldningsoperationen på POS'et indeholder et enkelt arbejdsområde på POS'et, der kan bruges til behandling af ordrer. Dette omfatter alt fra accept af ordren til at markere den som leveret eller start af afhentning i butikken.
+
+Følgende video indeholder en oversigt og demo over butiksopfyldningsfunktioner i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Adgang til samlet ordreopfyldning på POS'et
 

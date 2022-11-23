@@ -2,24 +2,24 @@
 title: Afstemme en bankkonto
 description: Denne artikel beskriver, hvordan du afstemmer en bankkonto.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151245"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779521"
 ---
 # <a name="reconcile-a-bank-account"></a>Afstemme en bankkonto
 
@@ -29,27 +29,27 @@ Når du modtager et bankkontoudtog, bør du jævnligt afstemme bankposteringer f
 
 Du kan ikke afstemme et bankkontoudtog med en bankkonto, hvis noten af de checks eller indbetalingsbilag, der vises i kontoudtoget aktuelt har statussen **Afventer annullering**. Når en evaluator har bogført eller afvist en tilbageførsel af check eller en annullering af indbetalingsbilag, er statussen ikke længere angivet som **Afventer annullering**, og du kan afstemme bankkontoen.
 
-1.  Gå til **Kontant- og bankstyring** \> **Bankkonti** \> **Bankkonti**. Vælg den bankkonto, du vil afstemme med bankkontoudtoget, og vælg derefter **Afstemme** > **Kontoafstemning**.
+1. Gå til **Kontant- og bankstyring** \> **Bankkonti** \> **Bankkonti**. Vælg den bankkonto, du vil afstemme med bankkontoudtoget, og vælg derefter **Afstemme** > **Kontoafstemning**.
 
-2.  Angiv oplysninger i felterne **Dato for bankkontoudtog** og **Bankkontoudtog**. I feltet **Slutsaldo** kan du angive saldoen på bankkontoen, som den vises på bankkontoudtoget.
+2. Angiv oplysninger i felterne **Dato for bankkontoudtog** og **Bankkontoudtog**. I feltet **Slutsaldo** kan du angive saldoen på bankkontoen, som den vises på bankkontoudtoget.
 
-3.  Vælg **Transaktioner** for at åbne siden **Kontoafstemning**.
+3. Vælg **Transaktioner** for at åbne siden **Kontoafstemning**.
 
-4.  For hver transaktion, der skal medtages i bankkontoudtoget, skal du markere afkrydsningsfeltet **Afstemt**, hvis beløbet i Dynamics 365 Finance svarer til beløbet på bankkontoudtoget. Du kan også angive eller ændre værdien i feltet **Banktransaktionstype**. Denne feltværdi er vigtigt for statistikken for bankposteringer og for visse rapporter
+4. For hver transaktion, der skal medtages i bankkontoudtoget, skal du markere afkrydsningsfeltet **Afstemt**, hvis beløbet i Dynamics 365 Finance svarer til beløbet på bankkontoudtoget. Du kan også angive eller ændre værdien i feltet **Banktransaktionstype**. Denne feltværdi er vigtigt for statistikken for bankposteringer og for visse rapporter
     
 
-    > [!NOTE]
-    > <P>Du skal ikke markere afkrydsningsfeltet <STRONG>Afstemt</STRONG> for transaktioner, der ikke findes på bankkontoudtoget. Disse posteringer vises fortsat på denne side, indtil de bliver afstemt med et fremtidigt bankkontoudtog.</P>
-    > <P>Afkrydsningsfeltet <STRONG>Afstemt</STRONG> er ikke tilgængeligt, hvis transaktionen har statussen <STRONG>Afventer annullering</STRONG>. Transaktioner kan have denne status, hvis Finance er konfigureret til at kræve, at tilbageførsler eller annulleringer skal sendes til gennemgang, før de bogføres. Når en evaluator har bogført eller afvist modposteringen eller annulleringen, er statussen ikke længere <STRONG>Afventer annullering</STRONG>, og du kan afstemme bankkontoen med bankkontoudtoget.</P>
+>[!NOTE]
+>Du skal ikke markere afkrydsningsfeltet **Afstemt** for transaktioner, der ikke findes på bankkontoudtoget. Disse posteringer vises fortsat på denne side, indtil de bliver afstemt med et fremtidigt bankkontoudtog.
+>Afkrydsningsfeltet **Afstemt** er ikke tilgængeligt, hvis transaktionen har statussen **Afventer annullering**. Transaktioner kan have denne status, hvis Finance er konfigureret til at kræve, at tilbageførsler eller annulleringer skal sendes til gennemgang, før de bogføres. Når en evaluator har bogført eller afvist modposteringen eller annulleringen, er statussen ikke længere **Afventer annullering**, og du kan afstemme bankkontoen med bankkontoudtoget.
 
-    
-    Hvis du vil markere afkrydsningsfeltet **Afstemt** for et checkinterval, der vises på bankkontoudtoget, skal du klikke på **Markér checkinterval** og derefter angive intervallet.
+
+Hvis du vil markere afkrydsningsfeltet **Afstemt** for et checkinterval, der vises på bankkontoudtoget, skal du klikke på **Markér checkinterval** og derefter angive intervallet.
 
 5.  Hvis beløbet for en bankkontotransaktion ikke svarer til beløbet for transaktionen på bankkontoudtoget, skal du angive korrektionsbeløbet i feltet **Korrektionsbeløb**.
     
 
-    > [!NOTE]
-    > <P>Hvis regnskabsperioden for den transaktion, der skal rettes, er lukket, kan feltet <STRONG>Korrektionsbeløb</STRONG> ikke bruges. I stedet skal du oprette en linje med en posteringsdato, som ligger i en åben regnskabsperiode for korrektionen. I dette tilfælde skal du tilføje de økonomiske dimensioner, der blev brugt på den oprindelige transaktion samt modkontoen.</P>
+> [!NOTE]
+> Hvis regnskabsperioden for den transaktion, der skal rettes, er lukket, kan feltet **Korrektionsbeløb** ikke bruges. I stedet skal du oprette en linje med en posteringsdato, som ligger i en åben regnskabsperiode for korrektionen. I dette tilfælde skal du tilføje de økonomiske dimensioner, der blev brugt på den oprindelige transaktion samt modkontoen.
 
 
 

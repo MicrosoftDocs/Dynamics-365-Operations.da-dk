@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262292"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785093"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -51,7 +51,7 @@ Som et led i arbejdet med [One Dynamics One Platform](/dynamics365-release-plan/
 | Serviceanmodninger | Nej | Ja | Ja: [Selvbetjeningsinstallation](../deployment/infrastructure-stack.md) |
 | SharePoint-integration | Ja | Ja | Nej |
 | Konfiguration og datastyring | Nej | Ja | Nej |
-| Procesdatapakker | Nej | Ja | Ja: struktur til dataimport/-eksport (DIXF) |
+| Procesdatapakker | Nej | Ja | Ja: [Struktur til dataimport/-eksport (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Miljøopgradering | Nej | Ja | Ja: [One Version](../lifecycle-services/oneversion-overview.md)-tjenesteopdateringer er tilgængelige. |
 | Estimator for infrastruktur | Ja | Nej | Nej |
 | Licensvolumen | Ja | Nej | Nej |
@@ -71,10 +71,10 @@ Som et led i arbejdet med [One Dynamics One Platform](/dynamics365-release-plan/
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi fjerner følgende liste over cipher-suiter for at overholde de aktuelle sikkerhedsprotokoller.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Erstattet af en anden funktion?**   | Fra og med den 30. november 2022 kan kunderne kun bruge vores  [standard-cipher-suiter](/power-platform/admin/server-cipher-tls-requirements). Denne ændring påvirker dine klienter og servere, der kommunikerer med vores servere, f.eks. det kan påvirke din tredjepartsintegration, der ikke følger vores standardversioner af cipher-suiter. |
+| **Erstattet af en anden funktion?**   | Fra og med den 31. januar 2023 kan kunderne kun bruge vores  [standard-cipher-suiter](/power-platform/admin/server-cipher-tls-requirements). Denne ændring påvirker dine klienter og servere, der kommunikerer med vores servere, f.eks. det kan påvirke din tredjepartsintegration, der ikke følger vores standardversioner af cipher-suiter. |
 | **Produktområder, der er berørt**         | Programmer til finans og drift |
 | **Installationsindstilling**              | Skyinstallationer |
-| **Status**                         | Forældet. Kunder skal opgradere deres servere inden den 30. november 2022. Yderligere oplysninger om konfiguration af TLS Cipher Suite-ordre finder du i [Administrere Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Forældet. Kunder skal opgradere deres servere inden den 31. januar 2023. Yderligere oplysninger om konfiguration af TLS Cipher Suite-ordre finder du i [Administrere Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Udfasning af funktion træder i kraft i juni 2022

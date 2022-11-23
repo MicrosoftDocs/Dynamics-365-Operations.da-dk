@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220326"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757215"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -107,7 +107,7 @@ Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du og
 
 Dialogboksen **Administrer mine visninger** indeholder grundlæggende vedligeholdelsesfunktioner til dine personlige visninger og rækkefølgen af visninger i visningsvælgeren. Når du vil åbne denne side, skal du vælge navnet på visningen for at åbne rullemenuen for visningsvælger, vælge **Flere** og derefter vælge **Administrer mine visninger**.
 
-**Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser sektionen **Mine visninger** i dialogboksen **Administrer mine visninger** de tilgængelige visninger for siden i sektioner. Eventuelle visninger, der er specifikke for den aktuelle juridiske enhed, vises i deres egen sektion. Sektionen **Globale visninger** vises altid, så du kan administrere de visninger, der er tilgængelige for siden i alle juridiske enheder. 
+Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser sektionen **Mine visninger** i dialogboksen **Administrer mine visninger** de tilgængelige visninger for siden i sektioner. Eventuelle visninger, der er specifikke for den aktuelle juridiske enhed, vises i deres egen sektion. Sektionen **Globale visninger** vises altid, så du kan administrere de visninger, der er tilgængelige for siden i alle juridiske enheder. 
 
 Hvis du vil se en liste over tilgængelige visninger for den pågældende side, kan du bruge følgende sæt handlinger.
 
@@ -138,9 +138,9 @@ Følg disse trin for at publicere en visning:
 
 1. Opret og gem en personlig kopi af den visning, du vil publicere. 
 2. Når denne visning indlæst skal du vælge navnet på visningen for at åbne visningsvælgerens rullemenu. 
-3. Vælg knappen **Flere**, og vælg derefter **Publicer**. Dialogboksen Publicer åbnes.
+3. Vælg knappen **Flere**, og vælg derefter **Publicer**. Dialogboksen **Publicer** åbnes.
 4. Angiv et navn til visningen. Dette er det navn, som brugere, der modtager denne visning, får vist i deres visningsvælgere. Navnene på publicerede visninger for en side skal være entydige. Der tillades ingen dublerede navne, selvom listen over roller eller juridiske enheder, som visningerne gælder for, er forskellige.
-5. **Opdatering 10.0.17 eller senere:** Hvis funktionen **(Forhåndsversion) Understøttelse af oversættelse for organisationsvisninger** er aktiveret, kan du føje oversættelser for dit visningsnavn på så mange sprog, som organisationen har brug for, ved at vælge knappen **Oversættelser** ud for feltet **Navn**. Visningsnavnet vises derefter til brugerne på deres aktuelle sprog. Du kan også angive standardsproget for at angive den oversættelse, der skal vises til brugere, som kører sprog, der ikke er defineret oversættelse for.
+5. Hvis funktionen **Understøttelse af oversættelse for organisationsvisninger** er aktiveret, kan du føje oversættelser for dit visningsnavn på så mange sprog, som organisationen har brug for, ved at vælge knappen **Oversættelser** ud for feltet **Navn**. Visningsnavnet vises derefter til brugerne på deres aktuelle sprog. Du kan også angive standardsproget for at angive den oversættelse, der skal vises til brugere, som kører sprog, der ikke er defineret oversættelse for.
 5. Valgfrit: Angiv en beskrivelse af visningen, så brugere, der modtager denne visning, bedre kan forstå formålet med visningen. 
 6. Afgør, om visningen skal publiceres som standardvisning for de valgte brugere. Når du gør en visning til standarden, vil brugerne se denne visning, næste gang de åbner destinationssiden. Den ene, globale standardvisning for alle målbrugere vil blive ændret. Brugerne kan dog stadig ændre deres standardvisning, når der er foretaget publicering.
 
@@ -150,9 +150,10 @@ Følg disse trin for at publicere en visning:
     > - Hvis du publicerer en visning som standardvisning for nogle eller alle juridiske enheder, forekommer følgende funktionsmåde:
     >
     >    - Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, vil den globale visning blive ændret for hver målbruger. 
-    >    - **Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, og du publicerer visningen til et undersæt af juridiske enheder, vil standardvisningen for disse juridiske enheder blive ændret for alle målbrugere.
+    >    - Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, og du publicerer visningen til et undersæt af juridiske enheder, vil standardvisningen for disse juridiske enheder blive ændret for alle målbrugere.
     >
     > - Hvis en bruger har roller, hvor flere visninger er publiceret som standardvisning, vil den sidst publicerede visning blive brugt som brugerens standardvisning. 
+    > - Udgivelse fungerer ikke for rolletildelinger, der er foretaget vha. AAD-grupper. 
 
 8. Tilføj sikkerhedsroller, der svarer til de brugere, der skal have adgang til denne visning. 
 9. Afgør, om du vil publicere visningen til de underordnede roller for de enkelte sikkerhedsroller, der er valgt. Hvis du gør det, skal du markere afkrydsningsfeltet **Medtag underordnede roller** i rækken for de relevante sikkerhedsroller. Bemærk, at dette afkrydsningsfelt ikke er tilgængeligt for roller, der ikke har underordnede roller.
@@ -162,7 +163,7 @@ Følg disse trin for at publicere en visning:
     > Vær opmærksom på følgende funktionsmåde, hvis du publicerer en visning for en bestemt juridisk enhed, men du ikke publicerer visningen som standardvisning.
     >
     > - Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, viser brugerens visningsvælger for siden først visningen for de angivne juridiske enheder. Når visningen er indlæst for første gang, vil visningsvælgeren for siden altid vise den, uanset den juridiske enhed.
-    > - **Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder.
+    > - Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder.
 
 11. Vælg **Publicer**.
 
@@ -259,7 +260,7 @@ For sider med store visningsvælgere (både brugertilpasninger og forespørgsler
 Hvis publicerer en visning for en bestemt juridisk enhed, men du ikke publicerer visningen som standardvisning, sker følgende:
 
 - Hvis det kun er basisfunktionen **Gemte visninger**, der er aktiveret, viser brugerens visningsvælger for siden først visningen for de angivne juridiske enheder. Når visningen er indlæst for første gang, vil visningsvælgeren for siden altid vise den, uanset den juridiske enhed. Denne funktionsmåde forekommer, fordi brugere får deres egen personlige kopi af den publicerede visning, når den indlæses, og personlige visninger er globale.
-- **Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder. Denne funktionsmåde forekommer, fordi funktionen giver mulighed for at sammenkæde visninger (herunder personlige visninger) med bestemte juridiske enheder.
+- Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren kun visningen for de angivne juridiske enheder. Denne funktionsmåde forekommer, fordi funktionen giver mulighed for at sammenkæde visninger (herunder personlige visninger) med bestemte juridiske enheder.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

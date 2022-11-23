@@ -2,7 +2,7 @@
 title: Masseafslutning af regnskabsperiode
 description: Denne artikel viser, hvordan du kan sætte en periode på hold eller permanent lukke en periode eller mere end én juridisk enhed ad gangen.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872435"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779804"
 ---
 # <a name="mass-financial-period-close"></a>Masseafslutning af regnskabsperiode
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872435"
 
 Denne artikel viser, hvordan du kan sætte en periode på hold eller permanent lukke en periode eller mere end én juridisk enhed ad gangen. Desuden viser opgaven, hvordan du kan begrænse bogføring for en brugergruppe til bestemte moduler.
 
-1. Gå til **Finans > Luk periode > Finanskalendere** i navigationsruden. Bemærk, at listen over juridiske enheder, der vises, afhænger af den regnskabskalender, der er valgt på siden. Kun juridiske enheder, der bruger den valgte regnskabskalender, vises.
+1. Gå til **Finans > Luk periode > Finanskalendere** i navigationsruden. 
+
+>[!NOTE]
+> Listen over juridiske enheder, der vises, afhænger af den regnskabskalender, der er valgt på siden. Kun juridiske enheder, der bruger den valgte regnskabskalender, vises.
+
 2. Vælg **Rediger**.
 3. Vælg den periode, du vil ændre status for.
 4. Vælg de juridiske enheder, du vil opdatere status for. Du kan hurtigt markere alle de juridiske enheder ved at markere afkrydsningsfeltet i øverste venstre side af gitteret.  

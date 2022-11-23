@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910252"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778378"
 ---
 # <a name="create-sales-order-invoices"></a>Oprette salgsordrefakturaer
 
@@ -32,12 +32,12 @@ Denne artikel beskriver, hvordan du kan fakturere en salgsordre, herunder fletni
 2. Vælg en salgsordre på listen. 
 3. Klik på **Faktura > Generér > Faktura** i **handlingsruden**. Bemærk, at denne salgsordre har flere tilknyttede følgesedler. Den viser kun ordet *flere* i stedet for nummeret på følgesedlen.  
 4. Udvid sektionen **Parametre**.
-    - Bogføring skal være angivet til Ja for at bogføre fakturaen. Du kan også deaktivere bogføring og bare udskrive fakturaen. Du kan dog opnå det samme resultat ved at oprette en proformafaktura i stedet for en faktura.  
+    - Bogføring skal være angivet til **Ja** for at bogføre fakturaen. Du kan også deaktivere bogføring og bare udskrive fakturaen. Du kan dog opnå det samme resultat ved at oprette en proformafaktura i stedet for en faktura.  
     - Denne indstilling anvendes til batchjob. Forespørgslen køres, når batchjobbet køres.
-5. Vælg "Efter" i feltet **Udskriv**.
+5. Vælg **Efter** i feltet **Udskriv**.
 6. Vælg **Ja** for **Udskriv faktura**. Udskriftsstyring kan udskrive flere kopier af fakturaen og også sende fakturaen via email som en PDF-fil.  
-7. Vælg "Opsummer" i feltet **Udskriv gebyrer**.
-8. Vælg "Saldo" i feltet **Kontrollér kreditmaks**.
+7. Vælg **Opsummer** i feltet **Udskriv gebyrer**.
+8. Vælg **Saldo** i feltet **Kontrollér kreditmaks**.
 9. Klik på **Annuller**.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Kombinere ordrer i én enkelt faktura
@@ -46,8 +46,8 @@ Denne artikel beskriver, hvordan du kan fakturere en salgsordre, herunder fletni
 3. Vælg flere åbne salgsordrer fra samme kunde.
 4. Klik på **Faktura > Generér > Faktura** i **handlingsruden**.
 5. Udvid sektionen **Parametre**.
-6. Vælg "Alle" i feltet **Antal**. Bemærk, at der er vist to fakturaer oversigtsafsnittet. Nu vi flette dem til en enkelt faktura.  
-7. Vælg "Fakturakonto" i feltet **Samleopdatering for**.
+6. Vælg **Alle**" i feltet **Antal**. Bemærk, at der er vist to fakturaer oversigtsafsnittet. Nu vi flette dem til en enkelt faktura.  
+7. Vælg **Fakturakonto** i feltet **Samleopdatering for**.
 8. Klik på **Arranger** for at flette salgsordrerne til en enkelt faktura. De to salgsordrer er nu flettet i én faktura.   
 9. Klik på **Annuller**.
 10. Klik på **Ja**.
