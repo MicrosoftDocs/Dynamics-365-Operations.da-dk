@@ -2,7 +2,7 @@
 title: Konfiguration af kreditstyringsparametre
 description: Denne artikel beskriver de indstillinger, du kan bruge til at konfigurere kreditstyring, så det opfylder virksomhedens behov.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876348"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799539"
 ---
 # <a name="credit-management-parameters-setup"></a>Konfiguration af kreditstyringsparametre
 
@@ -46,7 +46,7 @@ Der er fire oversigtspaneler i sektionen **Kredit**, hvor du kan ændre parametr
 
 Du kan angive den tidsindstilling, der bruges til at kontrollere salgsordrer for kreditudstedelser. Oversigtspanelet **Kontrolpunkt for kreditstyring** identificerer de dokumentbogføringsprocesser, der omfatter behandling af regler for kreditstyring. Du kan også kontrollere kreditreglerne, mens du enten udfører en proformabogføring eller en fuld bogføring af salgsordren. Markér afkrydsningsfelterne for at definere de posteringsprocesser, der skal sætte en ordre på hold, hvis der findes et problem, efter at reglerne for blokering af kreditstyring er behandlet.
 
-Du kan også definere antallet af respitdage, før kreditreglerne kontrolleres igen. Selvom du kan angive, at reglerne for kreditstyring skal kontrolleres ved bogføring, kontrolleres reglerne ikke i det angivne antal respitdage. Du bekræfter f.eks. en salgsordre på dag 1, og du angiver to respitdage i bekræftelsestrinnet. I dette tilfælde kontrolleres kreditreglerne ikke ved det næste trin i bogføringen (f.eks. oprettelse af en følgeseddel eller fakturering af ordren) før dag 4. Efter den 4. dag kontrolleres reglerne igen, når der foretages bogføring, og antallet af respitdage ændres til den værdi, der er angivet for det næste bogføringskontrolpunkt.
+Du kan også definere antallet af respitdage, før kreditreglerne kontrolleres igen. Selvom du kan angive, at reglerne for kreditstyring skal kontrolleres ved bogføring, kontrolleres reglerne ikke i det angivne antal respitdage. Du bekræfter f.eks. en salgsordre på dag ét, og du angiver to respitdage i bekræftelsestrinnet. I dette tilfælde kontrolleres kreditreglerne ikke ved det næste trin i bogføringen (f.eks. oprettelse af en følgeseddel eller fakturering af ordren) før dag fire. Efter dag fire kontrolleres reglerne igen, når der foretages bogføring, og antallet af respitdage ændres til den værdi, der er angivet for det næste bogføringskontrolpunkt.
 
 Hvis du ikke angiver antallet af respitdage, kontrolleres kreditreglerne for alle de posteringstrin, der er konfigureret til kørslen af regler for kreditstyring. Hvis du frigiver salgsordren uden at bogføre den og derefter kører det samme ordrebehandlingstrin igen, kontrolleres kreditreglerne igen. En ordre sættes f.eks. på hold efter en bekræftelse, og du frigiver den enten med eller uden bogføring. I dette tilfælde vil ordren blive sat på hold igen, hvis du bekræfter den igen. Brug respitdage, hvis ordren skal gå videre til næste behandlingstrin uden at blive sat på hold igen.
 
@@ -73,7 +73,7 @@ Der findes flere kreditstyringsstatistikker i faktaboksen **Statistik for kundek
 
 - I forbindelse med kreditstyring vises kundens kreditmaksimum i kundens valuta. Du skal angive valutakurstypen for kreditmaksimum i kundens valuta. I feltet **Valutakurstype for kreditmaksimum** skal du vælge den type valutakurs, der skal bruges til omregning af den primære kreditmaksimum til debitorens kreditmaksimum.
 - Vælg **Nej** i indstillingen **Tillad manuel redigering af kreditmaks.** for at forhindre brugere i at redigere kreditmaksimum på siden **Debitor**. Hvis du vælger **Nej** i denne indstilling, kan ændringer af en debitors kreditmaksimum kun foretages ved bogføring af reguleringsposteringer for kreditmaksimum.
-- Angiv indstillingen **Undgå lagerreservationer** til **Ja**, hvis du vil ignorere lagerreservationer, når blokeringsregler for kreditstyring kontrolleres. I dette tilfælde kontrollerer systemet hele linjeantal og aktiverer fristerne for kontrolpunktet, uanset antallet på lagerreservationen.
+- Angiv indstillingen **Undgå lagerreservationer** til **Ja**, hvis du vil ignorere lagerreservationer, når blokeringsregler for kreditstyring kontrolleres. I dette tilfælde kontrollerer systemet antallet og aktiverer fristerne for kontrolpunktet, uanset antallet på lagerreservationen.
 - Når Kreditstyring er aktiveret, bruges indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum** kun til behandling af fritekstfakturaer. Selvom meddelelser stadig føjes til salgsordrer, når kunderne har overskredet deres kreditmaksimum, spærres der ikke for bekræftelse, udskrivning af pluklister og følgesedler eller bogføring af fakturaer.
 
     Kreditstyring er som standard aktiveret, men du kan deaktivere den. Hvis den er aktiveret, kan du bruge blokeringsreglerne for kreditstyring og kontrolpunkter til at identificere, hvornår kunder har overskredet deres kreditmaksimum. Hvis den deaktiveres, kan de meddelelser, der føjes til salgsordrer baseret på indstillingen af feltet **Meddelelse ved overskridelse af kreditmaksimum**, hjælpe dig med at identificere, hvornår kunder har overskredet deres kreditmaksimum.

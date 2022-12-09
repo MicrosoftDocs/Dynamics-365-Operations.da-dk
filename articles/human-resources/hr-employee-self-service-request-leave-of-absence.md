@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869830"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805281"
 ---
 # <a name="request-a-leave-of-absence"></a>Anmode om orlov
 
@@ -51,6 +51,22 @@ Du kan sende en anmodning om orlov og se status for dine orlovsanmodninger i Dyn
 1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere** (...) i feltet **Fritidssaldi**.
 
 2. Hvis du vil se dine orlovsanmodninger, skal du vælge **Vis orlovsanmodning**.
+
+## <a name="update-a-leave-of-absence-request"></a>Opdatere en anmodning om orlov
+
+1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere (...)** i feltet **Orlov**.
+2. Vælg den orlovsanmodning, der skal opdateres, og vælg derefter **Opdater orlov**.
+3. Opdater værdien i feltet **Slutdato** for at forlænge eller forkorte orlovstiden.
+4. Hvis slutdatoen er bekræftet, skal du angive indstillingen **Bekræft slutdato** til **Ja**.
+5. Når indstillingen **Bekræft slutdato** er angivet til **Ja**, kan du uploade en meddelelse om returnering til arbejde. Markér derefter afkrydsningsfeltet for at bekræfte, at en meddelelse om returnering til arbejde er blevet uploadet.
+6. Vælg **Send** for at opdatere orlovsanmodningen.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Annullere en anmodning om orlov
+
+1. I arbejdsområdet **Selvbetjeningsservice** skal du vælge **Mere (...)** i feltet **Orlov**.
+2. Vælg den orlovsanmodning, der skal annulleres, og vælg derefter **Opdater orlov**.
+3. Angiv indstillingen **Annuller orlov** til **Ja**.
+4. Vælg **Send** for at annullere orlovsanmodningen.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importere orlovsanmodninger fra andre systemer eller ældre systemer
 

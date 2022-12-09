@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779928"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803958"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garantipostering
 
@@ -43,7 +43,7 @@ Denne procedure bruger demofirmaet USMF.
 1. Gå til **Debitor > Ordrer > Alle salgsordrer**.
 2. Klik på **Ny**.
 3. Indtast eller vælg en værdi i feltet **Debitorkonto**.
-4. Udvid afsnittet Generelt.
+4. Udvid sektionen **Generelt**.
 5. Indtast eller vælg en værdi i feltet **Sted**.
 6. Klik op linket i den valgte række på listen.
 7. Indtast eller vælg en værdi i feltet **Lokation**.
@@ -52,9 +52,12 @@ Denne procedure bruger demofirmaet USMF.
 10. Klik på **OK**.
 11. Indtast eller vælg en værdi i feltet **Varenummer**.
 12. Angiv et tal i feltet **Enhedspris**.
-13. Vis eller skjul sektionen Linjedetaljer.
-14. Klik på fanen Levering.
-    * Bemærk! Vælg leveringsdatokontrol = Ingen  
+13. Vis eller skjul sektionen **Linjedetaljer**.
+14. Klik på fanen **Levering**.
+
+>[!Note] 
+>Vælg **Leveringsdatokontrol** = **Ingen**  
+
 15. Angiv en dato i feltet **Ønsket afsendelsesdato**.
 16. Angiv en dato i feltet **Bekræftet afsendelsesdato**.
 
@@ -83,7 +86,7 @@ Denne procedure bruger demofirmaet USMF.
 2. Skriv en værdi i feltet **Banknummer**.
     * Kontrollér værdierne i de beregnede **avance-** og **udgiftsfelter**.  
 3. Klik på **OK**.
-4. Udvid afsnittet Handlinger.
+4. Udvid afsnittet **Handlinger**.
     * Kontroller posten "Modtag fra bank".  
 5. Klik for at følge linket i feltet **Kladdebatchnummer**.
 6. Klik på **Linjer**.
@@ -102,7 +105,7 @@ Denne procedure bruger demofirmaet USMF.
 9. Find og vælg den ønskede post på listen.
 10. Klik på **Giv til modtager** for at åbne dialogboksen.
 11. Klik på **OK**.
-12. Udvid afsnittet Handlinger.
+12. Udvid afsnittet **Handlinger**.
     * Valider 'Giv til beneficiant'-posten.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Behandle garanti_Opskriv værdi
@@ -118,7 +121,7 @@ Denne procedure bruger demofirmaet USMF.
 10. Find og vælg den ønskede post på listen.
 11. Klik på **Opskriv værdi** for at åbne dialogboksen.
 12. Klik på **OK**.
-13. Udvid afsnittet Handlinger.
+13. Udvid afsnittet **Handlinger**.
     * Kontroller posten 'Opskriv værdi'.  
 14. Find og vælg den ønskede post på listen.
 15. Klik for at følge linket i feltet **Kladdebatchnummer**.
@@ -137,7 +140,7 @@ Denne procedure bruger demofirmaet USMF.
 9. Find og vælg den ønskede post på listen.
 10. Klik på **Udfør afvikling** for at åbne dialogboksen.
 11. Klik på **OK**.
-12. Udvid afsnittet Handlinger.
+12. Udvid afsnittet **Handlinger**.
     * Kontroller posten 'Udfør afvikling'.  
 13. Find og vælg den ønskede post på listen.
 14. Klik for at følge linket i feltet **Kladdebatchnummer**.

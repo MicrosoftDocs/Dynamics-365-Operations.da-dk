@@ -2,7 +2,7 @@
 title: Kreditorposteringsprofil
 description: Kreditorbogføringsprofiler styrer bogføringen af kreditortransaktioner til Finans.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272972"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799593"
 ---
 # <a name="vendor-posting-profiles"></a>Kreditorposteringsprofil
 
@@ -94,7 +94,7 @@ Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun defi
 </tr>
 <tr class="even">
 <td><strong>Indlevering</strong></td>
-<td>Vælg den finanskonto, som oplysninger om ikke-godkendte kreditorfakturaer skal bogføres på. Oplysningerne angives i indgangsbogskladden. En bruger angiver f.eks. meget grundlæggende oplysninger om kreditorfakturaer, når de modtages i indgangsbogen. Når indgangsbogen bogføres, bogføres posterne på den konto, der er angivet her og i feltet <strong>Modkonto</strong>. Når fakturaerne er godkendt, overføres gælden fra ankomstkontoen til den samlekonto, der bruges til kreditoren.</td>
+<td>Vælg den finanskonto, som oplysninger om ikke-godkendte kreditorfakturaer skal bogføres på. Oplysningerne angives i <strong>Indgangsbogskladde</strong>. En bruger angiver f.eks. meget grundlæggende oplysninger om kreditorfakturaer, når de modtages i indgangsbogen. Når indgangsbogen bogføres, bogføres posterne på den konto, der er angivet her og i feltet <strong>Modkonto</strong>. Når fakturaerne er godkendt, overføres gælden fra ankomstkontoen til den samlekonto, der bruges til kreditoren.</td>
 </tr>
 <tr class="odd">
 <td><strong>Modkonto</strong></td>
@@ -110,10 +110,10 @@ For de posteringer, der har den valgte posteringsprofil, skal du angive, om post
 
 Angiv følgende værdier for at definere en posteringsprofil
 
-| Felt          | Beskrivelse                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Felt          | Beskrivelse             |
+|----------------|--------------------------------------------------------------------------|
 | **Udligning** | Vælg denne indstilling for at kunne foretage automatisk udligning af poster med denne posteringsprofil. Hvis ikke denne indstilling vælges, skal posteringerne udlignes manuelt på siden **Udlign åbne posteringer**. |
-| **Annuller**     | Vælg denne indstilling, hvis du vil kunne annullere poster med denne posteringsprofil.                                                                                                               |
+| **Annuller**     | Vælg denne indstilling, hvis du vil kunne annullere poster med denne posteringsprofil.                              |
 | **Luk**      | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                       |
 
 

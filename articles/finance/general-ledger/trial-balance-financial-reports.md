@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a202dac3880717e9498212ca34570101188f48ce
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b26d2ec261720499fc309a5fb850de2cb796bd8b
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725199"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802601"
 ---
 # <a name="trial-balance-financial-reports"></a>Råbalance - økonomiske rapporter
 
@@ -32,8 +32,8 @@ I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives ogs
 
 Tre råbalancerapporter er tilgængelige i Økonomirapportering.
 
-| Standardrapport                                 | Hvad den gør                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standardrapport                                 | Hvad den gør                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
 | Detaljeret råbalance – standard               | Leverer oplysninger om saldoen for alle konti og medtager har debet- og kreditsaldi, og nettobeløbet for disse saldi, sammen med transaktionsdato, bilag og beskrivelse af kladde.                  |
 | Råbalanceoversigt – standard                | Leverer saldooplysninger for alle konti, og medtager start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen.                                        |
 | Årlig råbalanceoversigt – standard | Leverer saldooplysninger for alle konti og medtager start- og ultimosaldi og debet- og kreditsaldi sammen med nettoforskellen for det aktuelle år og det foregående år. |

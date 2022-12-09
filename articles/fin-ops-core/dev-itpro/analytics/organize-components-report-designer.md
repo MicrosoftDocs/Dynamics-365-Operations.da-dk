@@ -2,7 +2,7 @@
 title: Organisere rapportkomponenter i rapportdesigner
 description: I denne artikel beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Report Designer.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135873"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802682"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i Report Designer
 
@@ -31,13 +31,13 @@ Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt a
 Du kan omdøbe mapper, rapporter, dokumentkomponenter og andre objekter i Report Designer for at organisere dine filer. Afhængigt af hvilken type objekt, du omdøber, skal du muligvis opdatere tilknytninger til det pågældende objekt.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
-I Rapportdesigner kan du omdøbe mapper, rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner og trædiagramdefinitioner.
+I Report Designer kan du omdøbe mapper, rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner og trædiagramdefinitioner.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en rapportkomponent i Rapportdesigner
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
 
-1. I Rapportdesigner skal du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
+1. I Report Designer skal du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
 2. Højreklik på mappen eller objektet, og klik derefter på **Omdøb**. Feltet **Navn** i navigationsruden bliver tilgængeligt.
-3. Skriv et nyt navn, og tryk derefter på Enter.
+3. Skriv et nyt navn, og tryk derefter på **Enter**.
 4. Hvis dokumentkomponenten er en rækkedefinition, kolonnedefinition eller rapporteringstrædefinition, skal du opdatere andre komponenter, der er knyttet til den. Højreklik på den dokumentkomponent, du omdøbte i trin 3, vælg **Tilknytninger**, og vælg derefter et element på listen for at opdatere det.
 5. Gentag trin 4, indtil alle tilknyttede elementer er opdateret.
 
@@ -60,13 +60,13 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 3. Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
 4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem.](media/save.gif "Gem") på værktøjslinjen.
 
-> Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
+> [NOTE] Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapportgrupperapport
 
 1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2. Åbn den rapportgruppe, der skal genereres.
-3. Klik på knappen **Opret rapport** ![Opret rapport.](media/generate-report.gif "Generér rapport") for at oprette rapporter.
+3. Klik på knappen **Generér rapport** ![Generér rapport.](media/generate-report.gif "Generér rapport") for at oprette rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
@@ -74,14 +74,14 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 2. Højreklik på rapportgruppen, og vælg derefter **Slet**.
 3. Klik på **Ja**, når der vises en bekræftelsesmeddelelse.
 
-## <a name="report-group-tab-controls"></a>Fanebladskontrolelementer til Rapportgruppe
+## <a name="report-group-tab-controls"></a>Kontrolelementer under fanen Rapportgruppe
 Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapportgruppe**.
 
 <table>
 <thead>
 <tr>
 <th>Styring</th>
-<th>Beskrivelse</th>
+<th>Beskrivende tekst</th>
 </tr>
 </thead>
 <tbody>
@@ -113,7 +113,7 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 </tr>
 <tr>
 <td>Medtag alle rapporteringsvalutaer</td>
-<td>Hvis der konfigureres yderligere rapporteringsvalutaer i Microsoft Dynamics ERP-systemet, vises de her. Markér dette afkrydsningsfelt for at få genereret flere rapporter i de angivne valutaer. Du kan se disse rapporter i webfremviseren ved at klikke på knappen <strong>Valuta</strong> og derefter vælge en valuta.</td>
+<td>Hvis der konfigureres yderligere rapporteringsvalutaer i Microsoft Dynamics 365 Finance-systemet, vises de her. Markér dette afkrydsningsfelt for at få genereret flere rapporter i de angivne valutaer. Du kan se disse rapporter i webfremviseren ved at klikke på knappen <strong>Valuta</strong> og derefter vælge en valuta.</td>
 </tr>
 <tr>
 <td>Datooplysninger gemmes ikke sammen med rapportdefinitionen</td>

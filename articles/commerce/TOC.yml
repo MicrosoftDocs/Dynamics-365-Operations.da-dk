@@ -1008,11 +1008,27 @@
                   href: associate-site-online-store.md
                 - name: Administrere robots.txt-filer
                   href: manage-robots-txt-files.md
-                - name: Masseoverføre omdirigeringer af URL-adresser
+                - name: Masseupload URL-adresseomdirigeringer
                   href: upload-bulk-redirects.md
-                - name: Konfigurere en B2C-lejer i Commerce
-                  href: set-up-B2C-tenant.md
-                - name: Konfigurere brugerdefinerede sider til brugerlogon
+                - name: Opsætte en B2C-lejer i Commerce
+                  items:
+                    - name: Opsætte en B2C-lejer
+                      href: set-up-B2C-tenant.md
+                    - name: Oprette eller sammenkæde til en eksisterende Azure AD B2C-lejer
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Oprette en B2C-applikation
+                      href: create-b2c-app.md
+                    - name: Oprette politikker for brugerflow
+                      href: create-user-flow-policies.md
+                    - name: Tilføje sociale identitetsudbydere
+                      href: add-social-identity-providers.md
+                    - name: Opdatere Commerce Headquarters med Azure AD B2C-oplysninger
+                      href: update-hq-aad-b2c-info.md
+                    - name: Konfigurere din B2C-lejer i webstedsgeneratoren
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Flere B2C-oplysninger
+                      href: additional-b2c-info.md
+                - name: Opsætte brugerdefinerede sider til brugerlogon
                   href: custom-pages-user-logins.md
                 - name: Aktivere automatisk sammenkædning af identitetsposter til kundekonti
                   href: identity-record-linking.md
@@ -1570,6 +1586,8 @@
               items:
                 - name: Generere QR-koder og udskrive dem på kvitteringer til Saudi-Arabien
                   href: localizations/emea-sau-qr-code.md
+                - name: Generere og indsende forenklede elektroniske fakturaer for Saudi-Arabien
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Sverige
               items:
                 - name: Kasseapparatfunktionalitet
@@ -2988,7 +3006,7 @@
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Moms på onlineordrer beregnes forkert
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Fejl ved ordresynkronisering i forbindelse med standardbetalingsservice
+                - name: Fejl ved asynkron ordresynkronisering
                   href: troubleshoot/synchronization-error.md
             - name: Behandling af betalinger
               items:

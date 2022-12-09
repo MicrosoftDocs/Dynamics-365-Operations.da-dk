@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680351"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799620"
 ---
 # <a name="financial-dimensions"></a>Økonomiske dimensioner
 
@@ -136,6 +136,12 @@ Du kan oprette de afledte dimensionssegmenter og -værdier ved hjælp af enheder
 - Med den afledte dimensionsværdienhed kan du importere de værdier, der skal afledes for hver styrende dimension.
 
 Når du bruger en enhed til at importere data, og den pågældende enhed importerer dimensioner, anvendes de afledte dimensionsregler under importen, medmindre enheden specifikt tilsidesætter disse dimensioner.
+
+## <a name="financial-dimension-service"></a>Økonomisk dimensionstjeneste
+
+Tilføjelsesprogrammet Økonomisk dimensionstjeneste er tilgængeligt i dit Microsoft Dynamics Lifecycle Services-miljø. Det giver forbedret ydeevne, når du bruger strukturen Dataadministration til at importere en kladde, der indeholder et stort antal linjer. Hvis du vil bruge tjenesten, skal du aktivere den på siden **Parametre til økonomisk dimensionstjeneste**. I øjeblikket fungerer tjenesten kun på importerede kladder, der har 500 linjer eller mere. Desuden kan den i øjeblikket kun behandle finanskladder, hvor kontotypen **Finans** er angivet på kladdelinjerne. Andre kontotyper på kladdelinjer, f.eks. **Debitor**, **Kreditor** og **Bank**, understøttes ikke i øjeblikket. Denne tjeneste aktiveres ikke, når afledte dimensioner konfigureres i systemet.
+
+Økonomisk dimensionstjeneste giver forbedret ydeevne, når kladder importeres ved hjælp af en ny tjeneste, der kører parallelt med dataimporten. Den kører kun på hovedkontoen og de økonomiske dimensionsdata i kladden, og den genererer de dimensionskombinationer, der er angivet i strengfeltet i finanskonti på kladdelinjerne. Behandlingen konverterer denne streng til det strukturerede datalager, som den økonomiske dimensionsstruktur bruger i resten af produktet til validering, oversigtsrapportering og forespørgsler. Du kan finde flere oplysninger om oversigtsrapportering af økonomiske dimensionsdata i [Økonomiske dimensionsopsætninger](financial-dimension-sets.md).
 
 Du kan finde flere oplysninger under følgende emner:
 

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151338"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803904"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 
@@ -37,7 +37,10 @@ Du kan overføre et bankkontoudtog, der indeholder oplysninger om enten en enkel
 -   For at importere en enkelt bankkontofil for en enkelt konto skal du vælge **Nej** i indstillingen **Importér kontoudtog for flere bankkonti i alle juridiske enheder** og vælge den bankkonto, der er tilknyttet kontoudtoget. Klik på **Gennemse** for at vælge den tilknyttede bankkontofil, og klik derefter på **Overfør**.
 -   For at importere en enkelt bankkontofil for flere konti skal du vælge **Ja** i indstillingen **Importér kontoudtog for flere bankkonti i alle juridiske enheder**. Klik på **Gennemse** for at vælge den tilknyttede bankkontofil, og klik derefter på **Overfør**.
 
-Hvis nogen kontoudtog i den elektroniske fil ikke kan knyttes til en bankkonto, eller hvis det er knyttet til flere bankkonti ved hjælp af id-felterne, kan de ikke importeres. Dog kan andre kontoudtog i filen stadig importeres. Brugeren modtager derefter en meddelelse om, at import af bankkontoudtog lykkedes for bestemte bankkonti. Bemærk, at den bruger, der importerer bankkontoudtogsfilen, skal have adgang til en juridisk enhed for at importere kontoudtog for den juridiske enheds bankkonti. 
+Hvis nogen kontoudtog i den elektroniske fil ikke kan knyttes til en bankkonto, eller hvis det er knyttet til flere bankkonti ved hjælp af id-felterne, kan de ikke importeres. Dog kan andre kontoudtog i filen stadig importeres. Brugeren modtager derefter en meddelelse om, at import af bankkontoudtog lykkedes for bestemte bankkonti. 
+
+>[!Note] 
+>Den bruger, der importerer bankkontoudtogsfilen, skal have adgang til en juridisk enhed for at importere kontoudtog for den juridiske enheds bankkonti. 
 
 Du kan også bruge en zip-fil til at overføre flere kontoudtogsfiler til Finance i en enkelt proces. For at importere flere bankkontofiler for flere konti kan du kombinere alle bankkontofiler i én zip-fil. I dialogboksen **Importér bankkontoudtog** skal du vælge **Ja** i indstillingen **Importér kontoudtog for flere bankkonti i alle juridiske enheder**. Klik på **Gennemse** for at vælge den zip-fil, der indeholder bankkontofilerne, og klik derefter på **Overfør**. Importen vil genkende zip-filen og overføre hvert kontoudtog, som indgår i den, uanset den juridiske enhed for bankkontoen.
 

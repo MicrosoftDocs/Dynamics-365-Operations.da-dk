@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f79ef3ed5db7583eb44b99e49c010778ce8524d1
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: e68b28bfde35b51605aa0b653265da6261b69a90
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733437"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819236"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge"></a>Fletning af Dynamics 365 Human Resources-infrastruktur 
 
@@ -48,7 +48,7 @@ Som et led i infrastrukturfletningen er alle funktioner i Human Resources-progra
 Overførsel af kunder og fletning af kunder er forskellige på følgende måde:
 
 - **Kundeoverførsel** – Værktøjet til automatisk overførsel bruges til at udføre en "flytning" (bevægelse) af kundedatabasen fra Human Resources-infrastrukturen til finans- og driftsinfrastrukturen. Resultatet er et nyt finans- og driftsmiljø, hvor kundens Human Resources-database bruges. 
-- **Kundefletning** – Dette ekstra trin er ikke et krav fra Microsoft. Det sker efter kundens egen vurdering og efter kundens egen tidsplan. I dette trin flyttes kundedata til et eksisterende miljø, f.eks. et Finance- eller Project Operations-miljø. Den er oftest manuel og kan udføres ved hjælp af Data Management Framework-dataenheder (DMF). 
+- **Kundefletning** – Dette ekstra trin er ikke et krav fra Microsoft. Det sker efter kundens egen vurdering og efter kundens egen tidsplan. I dette trin flyttes kundedata til et eksisterende miljø, f.eks. et Finance- eller Project Operations-miljø. Den er oftest manuel og kan udføres ved hjælp af dataenhederne i strukturen Dataadministration. 
 
 ## <a name="planning-a-human-resources-environment-migration"></a>Planlægge en overførsel af et Human Resources-miljø
 
@@ -83,13 +83,14 @@ Under den automatiske proces fuldføres følgende handlinger, og de skal valider
 
 - Data:
 
-    - Konfigurationer
+    - Varianter
     - Sikkerhedsroller (herunder brugerdefinerede roller)
-    - Arbejdsgange
+    - Arbejdsgange (herunder beskeder)
     - Personlige tilpasninger og gemte visninger
     - Transaktioner
     - Brugerdefinerede felter
     - Vedhæftede filer
+    - Påmindelser
 
 - Datastyring – Brug din egen database (BYOD).
 - Funktionsstyring - Aktiverede/deaktiverede funktioner.

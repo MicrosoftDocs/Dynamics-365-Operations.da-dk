@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779432"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803985"
 ---
 # <a name="import-letter-of-credit"></a>Importér remburs
 
@@ -42,7 +42,10 @@ Denne procedure bruger demofirmaet USMF.
 10. Klik op linket i den valgte række på listen.
 11. Angiv en dato i feltet **Regnskabsdato**.
 12. Angiv en dato i feltet **Leveringsdato**.
-    * Bemærk! Vælg **Remburs** som værdi i feltet **Bankdokumenttype**.  
+
+>[!Note] 
+>Vælg **Remburs** som værdi i feltet **Bankdokumenttype**.  
+
 13. Klik på **OK**.
 14. Indtast eller vælg en værdi i feltet **Varenummer**.
 15. Find og vælg den ønskede post på listen.
@@ -97,7 +100,7 @@ Denne procedure bruger demofirmaet USMF.
 1. Klik på **Modtag** i handlingsruden.
 2. Klik på **Produktkvittering**.
 3. Skriv en værdi i feltet **PurchParmTable_Num**.
-    * Vælg det forsendelsesnummer, der blev oprettet med reference til rembursen.  
+    * Vælg det **Forsendelsesnummer**, der blev oprettet med reference til rembursen.  
 4. Klik op linket i den valgte række på listen.
 5. Angiv en dato i feltet **Produktkvittering**.
 6. Klik på **OK**.
@@ -108,7 +111,7 @@ Denne procedure bruger demofirmaet USMF.
 1. Gå til **Likviditets- og bankstyring > Remburser > Importremburs og importinkasso**.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-    * Bekræft status for importrembursen.     
+    * Bekræft **Status for importrembursen**.     
 4. Luk siden.
 5. Luk siden.
 
@@ -152,10 +155,10 @@ Denne procedure bruger demofirmaet USMF.
 6. Indtast en dato i feltet **Dato**.
 7. I feltet **Konto** skal du angive de ønskede værdier.
 8. Klik på **Udlign transaktioner**.
-9. Udvid afsnittet Totaler.
+9. Udvid afsnittet **Totaler**.
 10. Vælg en indstilling i feltet **Vis**.
     * Kontroller, at felterne **Bankdokumentnummer** og **Forsendelsesnummer** er blevet opdateret.  
-11. Marker afkrydsningsfeltet **Marker**.
+11. Markér afkrydsningsfeltet **Markér**.
 12. Klik på **OK**.
 13. Klik på fanen Betaling.
     * Kontroller, at felterne **Bankdokumentnummer** og **Forsendelsesnummer** er blevet opdateret.  
@@ -167,12 +170,12 @@ Denne procedure bruger demofirmaet USMF.
 1. Gå til **Likviditets- og bankstyring > Remburser > Importremburs og importinkasso**.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-    * Bekræft status for importrembursen.   
+    * Bekræft **Status for importrembursen**.   
 4. Luk siden.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Kontrollere rapport om bankfacilitetsgrænse og udnyttelse
 1. Gå til **Likviditets- og bankstyring > Forespørgsler og rapporter > Remburser eller garanti > Bankfaciliteter og udnyttelse, rapport**.
-2. Udvid posterne for at inkludere sektion.
+2. Udvid sektionen **Poster, der skal indgå**.
 3. Klik på **Filtrér**.
     * Definer feltet **Kriterier** med den ønskede bankkonto.  
 4. Indtast eller vælg en værdi i feltet **Kriterier**.

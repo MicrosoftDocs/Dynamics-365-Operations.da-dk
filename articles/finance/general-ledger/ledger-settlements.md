@@ -2,7 +2,7 @@
 title: Finansudligninger
 description: Denne artikel beskriver, hvordan du kan bruge siden Finansudligninger til at udligne finansposteringer og tilbageføre udligninger.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 39fd6c6677565a4b1e9a9bf6f43a4c630cb5e07b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6357629f83873437eb62a4839fafd8efd98fffc1
+ms.sourcegitcommit: 9041fa6e00ecbdf1a1880659d9bdfff4d888f20e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902481"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9800625"
 ---
 # <a name="ledger-settlements"></a>Finansudligninger
 
@@ -90,7 +90,12 @@ Du kan tilbageføre en udligning, der er foretaget ved en fejl.
     > [!IMPORTANT]
     > Alle posteringer, der har samme udlignings-id, tilbageføres, selvom de ikke er markeret. Der er f.eks. markeret og udlignet fire linjer. Alle fire linjer har samme udlignings-id. Hvis du markerer en af de fire linjer og derefter vælger **Tilbagefør markerede posteringer**, tilbageføres alle fire linjer.
 
+## <a name="unmark-for-selected-users"></a>Fjern markeringen for valgte brugere
+Vælg **Fjern markeringen for valgte brugere** for at fjerne markeringen af finansududlignede posteringer for alle juridiske enheder efter bruger-id. Det kan f.eks. give en regnskabschef mulighed for at fjerne markeringen af posteringer for en bruger, der var på ferie, før udligningen blev afsluttet, eller for en bruger, der har forladt organisationen. Handlingen vil tillade, at disse transaktioner kan markeres til udligning af en anden bruger.
 
+
+## <a name="unmark-all-transactions"></a>Fjern markering af alle transaktioner
+Vælg **Fjern markering af alle transaktioner** for at fjerne markeringen af alle finansududlignede posteringer for alle juridiske enheder og alle brugere. Denne opgave administrator er tilgængelig for rollen Administrator.
 
 
 

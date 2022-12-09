@@ -2,21 +2,21 @@
 title: Lagerværdirapporter
 description: Denne artikel beskriver, hvordan du konfigurerer, genererer og bruger lagerværdirapporter. Disse rapporter indeholder oplysninger om fysiske og økonomiske lagerantal og -beløb.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6b21f6a7856526863914aac73d50e5c3a70605e8
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334919"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806400"
 ---
 # <a name="inventory-value-reports"></a>Lagerværdirapporter
 
@@ -129,7 +129,7 @@ Du kan bruge siden **Lagerværdirapporter** til at konfigurere det indhold, der 
     - **Direkte outsourcing** – Angiv denne indstilling til *Ja* for at få vist direkte outsourcing for IGVF. Disse oplysninger bruges til underleverandørarbejde.
     - **Detaljeringsniveau** – Vælg en visningsindstilling for rapporten:
 
-        - *Transaktioner* – Få vist alle relevante transaktioner i rapporten. Bemærk, at du måske oplever problemer med ydeevne, når du får vist rapporter, der indeholder et stort antal transaktioner. Hvis du vil bruge denne visningsindstilling, anbefales det derfor, at du bruger rapporten **Lagerværdirapportlager**.
+        - *Transaktioner* – Få vist alle relevante transaktioner i rapporten. Du kan opleve problemer med ydeevne, når du får vist rapporter, der indeholder et stort antal transaktioner. Hvis du vil bruge denne visningsindstilling, anbefales det derfor, at du bruger rapporten **Lagerværdirapportlager**.
         - *Totaler* – Få vist det samlede resultat.
 
     - **Medtag primosaldo** – Angiv denne indstilling til *Ja* for at vise primosaldoen. Denne indstilling er kun tilgængelig, når feltet **Detaljeringsniveau** er angivet til *Transaktioner*.
@@ -172,7 +172,7 @@ Når du har genereret en rapport, kan du til enhver tid se og udforske den på f
     - Brug feltet **Filter** til at filtrere rapporten efter en hvilken som helst værdi i en af de tilgængelige kolonner.
     - Brug menuen Vis (oven over **Filter**-feltet) til at gemme og indlæse dine favoritkombinationer af sorterings- og filtreringsindstillinger.
 
-## <a name="export-an-inventory-value-report-storage-report"></a>Eksportere en Lagerværdirapportlager-rapport
+## <a name="export-an-inventory-value-report-storage-report"></a><a name="export-stored-report"></a>Eksportere en Lagerværdirapportlager-rapport
 
 Hver rapport, du opretter, gemmes i dataenheden **Lagerværdi**. Du kan bruge standardfunktionerne til datastyring i Supply Chain Management til at eksportere data fra denne enhed til alle understøttede dataformater, herunder CSV eller Excel-format.
 
@@ -203,6 +203,34 @@ I følgende eksempel vises, hvordan du kan eksportere en **Lagerværdirapportlag
 1. Siden **Udførelsesoversigt** åbnes, hvor du kan se status for eksportjobbet og en liste over de enheder, der er eksporteret. Vælg enheden **Lagerværdi** på listen i sektionen **Status for behandling af enhed**, og vælg derefter **Hent fil** for at hente de data, der er eksporteret fra den pågældende enhed.
 
 Du kan finde flere oplysninger om, hvordan du bruger datastyring til at eksportere data i [Oversigt over dataimport og eksportjob](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## <a name="delete-stored-inventory-value-reports"></a>Slette gemte lagerværdirapporter
+
+Efterhånden som antallet af gemte rapporter over lagerværdier øges, kan de i den sidste ende begynde at optage for megen plads i databasen. Denne situation kan påvirke systemets ydeevne og medføre højere datalagringsomkostninger. Derfor er du sandsynligvis nødt til at rydde op i rapporterne fra tid til anden ved at slette ældre rapporter.
+
+> [!IMPORTANT]
+> Før du sletter nogen af de tidligere genererede lagerværdirapporter, anbefales det på det kraftigste, at du først [eksporterer rapporterne](#export-stored-report) og gemmer dem eksternt, da du måske ikke kan generere dem igen senere. Denne begrænsning findes, fordi når du opretter en rapport over lagerværdier, fungerer systemet bagud fra i dag og behandler hver enkelt lagertransaktionspost i omvendt rækkefølge. Hvis du forsøger at søge for langt tilbage, når du opretter en rapport, kan omfanget af posteringer, der skal behandles, i den sidste ende blive så stort, at systemet får timeout, før det kan afslutte generering af rapporten. Hvor langt tilbage i tid, du kan oprette nye rapporter for, afhænger af antallet af lagertransaktioner, du har i systemet for det relevante tidsrum.
+
+### <a name="delete-one-report-at-a-time"></a>Slette én rapport ad gangen
+
+Benyt følgende fremgangsmåde for at slette én gemt rapport ad gangen.
+
+1. [Eksportér den rapport](#export-stored-report), du planlægger at slette, og gem den på en ekstern placering til fremtidig reference.
+1. Gå til **Omkostningsstyring \> Forespørgsler og rapporter \> Lagerrapport over lagerværdi**.
+1. Vælg den rapport, du vil slette, i listeruden.
+1. Vælg **Slet** i handlingsruden.
+1. En advarsel minder dig om at sikkerhedskopiere genererede rapporter. Vælg **Ja**, hvis du er klar til at fortsætte med sletningen.
+
+### <a name="delete-several-reports-at-the-same-time"></a>Slette flere rapporter på én gang
+
+Benyt følgende fremgangsmåde for at slette flere gemte rapporter ad gangen.
+
+1. [Eksportér alle de rapporter](#export-stored-report), du planlægger at slette, og gem dem på en ekstern placering til fremtidig reference.
+1. Gå til **Omkostningsstyring \> Lagerregnskab \> Oprydning \> Rapporten Lagerværdi – oprydning i data**.
+1. I dialogboksen **Rapporten Lagerværdi – oprydning i data** skal du i feltet **Slet lagerværdirapport, der er udført før** vælge den dato, før hvilken alle lagerværdirapporter skal slettes.
+1. I oversigtspanelet **Poster, der skal indgå**, kan du konfigurere flere filterbetingelser for at begrænse det sæt rapporter, som skal slettes. Vælg **Filter** for at åbne en standardforespørgselseditor, hvor du kan definere egenskaberne for de rapporter, der skal slettes.
+1. Angiv, hvordan, hvornår og hvor ofte rapporterne skal slettes, i oversigtspanelet **Kør i baggrunden**. Felterne fungerer på samme måde som for andre typer af [baggrundsjob](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. Du vil dog typisk køre dette job manuelt, hver gang der er brug for det.
+1. Vælg **OK** for at slette de angivne rapporter.
 
 ## <a name="generate-a-standard-inventory-value-report"></a>Generere en standardrapport over lagerværdi
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715823"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804257"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
@@ -65,12 +65,13 @@ Der skal defineres en forudbetalingskonto under fanen **Indkøbsordre** på side
 
 Den modkonto, der udligner kreditorkontoen, defineres i **Kreditorpostering**-profilen. Hvis du vil definere standardposteringsprofilen, skal du klikke på **Kreditor \>Konfiguration \> Kreditorparametre \>Finans og moms \> Bogføringsprofil med kreditorfaktura for forudbetaling**.
 
-**Politikken for anvendelse af forudbetaling** angiver, om systemet automatisk vil anvende udlignede forudbetalingsfakturaer på den endelige faktura, der er oprettet manuelt. Fakturaer, der oprettes ved hjælp af en dataenhed, henviser ikke til **Politik for anvendelse af forudbetaling**. Du skal anvende udlignede forudbetalingsfakturaer manuelt på fakturaer, der er oprettet ved hjælp af en dataenhed. Hvis du vil definere politikken, skal du gå til **Kreditor \>Konfiguration \> Kreditorparametre \> Finans og moms \> Politik for anvendelse af forudbetaling**. Hvis feltet **Politik for anvendelse af forudbetaling** er angivet til **Automatisk**, markeres forudbetalingsfakturaen automatisk til udligning med den endelige faktura. Hvis feltet er angivet til **Besked**, vises en visuel angivelse af, at der er en tilgængelig forudbetalingsfaktura til anvendelse, når den endelige faktura oprettes.
+**Politik for ansøgning om forudbetaling** angiver, om udlignede forudbetalingsfakturaer automatisk bliver anvendt på den endelige faktura, der er oprettet manuelt. Fakturaer, der oprettes ved hjælp af en dataenhed, henviser ikke til **Politik for anvendelse af forudbetaling**. Du skal anvende udlignede forudbetalingsfakturaer manuelt på fakturaer, der er oprettet ved hjælp af en dataenhed. Hvis du vil definere politikken, skal du gå til **Kreditor \>Konfiguration \> Kreditorparametre \> Finans og moms \> Politik for anvendelse af forudbetaling**. Hvis feltet **Politik for anvendelse af forudbetaling** er angivet til **Automatisk**, markeres forudbetalingsfakturaen automatisk til udligning med den endelige faktura. Hvis feltet er angivet til **Besked**, vises en visuel angivelse af, at der er en tilgængelig forudbetalingsfaktura til anvendelse, når den endelige faktura oprettes.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Oprette en indkøbsordre, der indeholder oplysninger om forudbetalingsfaktura
-Når en leverandør fortæller dig, at de kræver forudbetaling for varer og tjenester i en indkøbsordre, skal du definere forudbetalingsværdien for den tilknyttede indkøbsordre. Gå til **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer**, og find leverandørens indkøbsordre. Vælg fanen **Indkøb**, i handlingsruden, og vælg derefter **Forudbetaling**. Angiv oplysninger om forudbetalingen, herunder en beskrivelse, værdien af forudbetalingen, om forudbetalingen er et fast beløb eller en procentdel, og et id for forudbetalingskategorien. 
+Når en leverandør fortæller dig, at de kræver forudbetaling for varer og tjenester i en indkøbsordre, skal du definere forudbetalingsværdien for den tilknyttede indkøbsordre. Gå til **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer**, og find leverandørens indkøbsordre. Vælg fanen **Indkøb** i handlingsruden, og vælg derefter **Forudbetaling**. Angiv oplysninger om forudbetalingen, herunder en beskrivelse, værdien af forudbetalingen, om forudbetalingen er et fast beløb eller en procentdel, og et id for forudbetalingskategorien. 
 
-Bemærk, at flere forudbetalingsdefinitioner i en indkøbsordre ikke er tilladt. Hvis du vil tillade flere forudbetalinger på en indkøbsordre, skal du bogføre betalingerne ved hjælp af betalingskladden i stedet for en forudbetalingsfaktura.
+> [!Note] 
+> Flere forudbetalingsdefinitioner i en indkøbsordre er ikke tilladt. Hvis du vil tillade flere forudbetalinger på en indkøbsordre, skal du bogføre betalingerne ved hjælp af betalingskladden i stedet for en forudbetalingsfaktura.
 
 Forudbetalingen kan fjernes fra indkøbsordren, medmindre du allerede har udlignet en betaling mod den bogførte forudbetalingsfaktura eller bogført standardfakturaen. Hvis du vil fjerne en forudbetalingsoplysning fra indkøbsordren, skal du vælge **Kreditor \> Almindelige \> Indkøbsordrer \> Alle indkøbsordrer** og finde kreditorens indkøbsordre. Vælg fanen **Indkøb** i handlingsruden, og vælg derefter **Fjern forudbetaling**.
 

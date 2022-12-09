@@ -2,7 +2,7 @@
 title: Konfigurere orlovs- og fraværstyper
 description: Konfigurer de orlovstyper, medarbejderne kan tage i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: e35c5fed886ebf9a453c22b3e04ca9ffe50b6d70
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9323952"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805198"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere orlovs- og fraværstyper
+
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,19 +43,25 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 1. På arbejdsområdet **Orlov og fravær** skal du vælge fanen **Links**.
 2. Vælg **Orlovs- og fraværstyper** under **Konfiguration**.
 3. Vælg **Ny**.
-4. Angiv et navn til orlovstypen under **Type**, vælg en arbejdsgang fra **Arbejdsgangs-id**, og indtast en **Beskrivelse**.
+4. Angiv et navn til orlovstypen under **Type**, indtast en **Beskrivelse**, og vælg en arbejdsgang i feltet **Arbejdsgangs-id**. Vælg en anmodningstype i feltet **Anmodningstype** baseret på orlovstypen. Vælg f.eks. **Fravær** eller **Orlov**.
 5. I **Generelt** skal du vælge **Ingen**, **Planlagt** eller **Ikke planlagt** på rullelisten **Kategori**.
 6. Vælg en lønkode på rullelisten **Lønkode**.
 7. Under **Årsagskode skal angives** skal du vælge, om du vil kræve en årsagskode. Hvis du vil kræve årsagskoder, skal du muligvis tilføje dem. Under **Årsagskoder** skal du vælge **Tilføj**, vælge en årsagskode og derefter markere afkrydsningsfeltet **Aktiveret** ved siden af.
-8. Under **Begræns adgangen til valgte roller** skal du vælge, om du vil begrænse adgangen. Vælg derefter sikkerhedsrollerne under **Sikkerhedsroller for denne orlovstype**. Sikkerhedsrollerne defineres i den arbejdsgang, du valgte under **Arbejdsgangs-id** tidligere i denne procedure.
-9. Vælg den farve, der skal vises på orlovs- og fraværskalendere for denne orlovstype, under **Kalenderfarve**. 
-10. Under **Suspensionsforhold** skal du vælge, om du ønsker, at denne orlovstype enten skal suspendere en anden orlovstype, eller den skal suspenderes af en anden orlovstype. Når der sendes en orlovsanmodning for den suspenderende orlovstype, oprettes der automatisk en orlovssuspendering for den suspenderede orlovstype. 
-11. Vælg **Gem**.
+8. Hvis anmodningstypen er **Orlov**, skal du gøre følgende:
+
+      1. Under **Åben afslutning** skal du vælge, om brugerne skal kunne oprette orlov uden afslutning.
+      2. Hvis **Åben afslutning** er aktiveret, kan du vælge, om arbejdere skal sende en meddelelse om retur til arbejde, når de vender tilbage fra orlov.
+      3. Hvis arbejdere skal sende en meddelelse om retur til arbejde, kan du vælge **Aktivér meddelelse om retur til arbejde**. Hvis **Aktivér meddelelse om retur til arbejde** er valgt, aktiveres **Krævet vedhæftet fil** automatisk, og den kan ikke deaktiveres.
+
+9. Hvis brugere skal uploade dokumenter, når de opretter eller opdaterer orlovsanmodninger, kan du aktivere **Krævet vedhæftet fil**.
+10. Under **Begræns adgangen til valgte roller** skal du vælge, om du vil begrænse adgangen. Vælg derefter sikkerhedsrollerne under **Sikkerhedsroller for denne orlovstype**. Sikkerhedsrollerne defineres i den arbejdsgang, du valgte under **Arbejdsgangs-id** tidligere i denne procedure.
+11. Vælg den farve, der skal vises på orlovs- og fraværskalendere for denne orlovstype, under **Kalenderfarve**.
+11. Under **Relationer for midlertidig afbrydelse** skal du vælge, om du ønsker, at denne orlovstype enten skal suspendere en anden orlovstype, eller den skal suspenderes af en anden orlovstype. Når der sendes en orlovsanmodning for den suspenderende orlovstype, oprettes der automatisk en orlovssuspendering for den suspenderede orlovstype.
+12. Vælg **Gem**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurere regler for orlovstype
 
 1. Angiv afrundingsindstillinger for typen **Orlov og fravær**. Indstillingerne omfatter **Ingen**, **Op**, **Ned** og **Nærmeste**. Du kan også angive afrundingspræcision for orlovstypen.
-
 2. Angiv **Helligdagskorrektion** for orlovstypen. Når du vælger denne indstilling, bruges det antal helligdage, der falder på en arbejdsdag, til at bestemme, hvordan der skal periodiseres tid for orlovstypen. Hvis juledag f.eks. falder på en mandag, trækker Human Resources én dag fra orlovstypen ved behandling af periodiseringer.
 
    Du kan angive helligdage i arbejdstidskalenderen. Du kan finde flere oplysninger under [Oprette en arbejdstidskalender](hr-leave-and-absence-working-time-calendar.md).
@@ -69,7 +77,7 @@ Orlovstyper i Dynamics 365 Human Resources bruges til at definere de forskellige
 
 1. Vælg **Orlovs- og fraværstyper** under **Opsætning** under fanen **Links** på siden **Orlov og fravær**.
 
-2. Vælg en orlov- og fraværstype på listen. Brug derefter feltet **Vedhæftet fil påkrævet** i sektionen **Generelt** til at angive, om der skal overføres en vedhæftet fil, når en medarbejder sender en ny orlovsanmodning for den valgte orlovstype. 
+2. Vælg en **Orlov- og fraværstype** på listen. Brug derefter feltet **Vedhæftet fil påkrævet** i sektionen **Generelt** til at angive, om der skal overføres en vedhæftet fil, når en medarbejder sender en ny orlovsanmodning for den valgte orlovstype. 
 
 Medarbejdere skal overføre en vedhæftet fil, når de sender en ny anmodning om orlov, som har en orlovstype, hvor feltet **Vedhæftet fil påkrævet** er aktiveret. Hvis du vil have vist den vedhæftede fil, der er overført som del af en orlovsanmodning, kan godkendere af orlov bruge indstillingen **Vedhæftede filer** til de arbejdselementer, der er tildelt dem. Hvis du får adgang til en anmodning om orlov via Human Resources-appen i Microsoft Teams, kan indstillingen **Vis detaljer** for orlovsanmodningen bruges til at få vist detaljer om den og eventuelle vedhæftede filer.
 

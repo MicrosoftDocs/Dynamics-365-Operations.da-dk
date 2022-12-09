@@ -2,7 +2,7 @@
 title: Rækkedefinitioner i Designer til økonomirapporter
 description: En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274687"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802439"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Rækkedefinitioner i Designer til økonomirapporter
 
@@ -41,7 +41,7 @@ En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver
 ## <a name="contents-of-a-row-definition"></a>Indholdet af en rækkedefinition
 En rækkedefinition kan indeholde op til 20.000 rækker med økonomiske dimensioner og kan indeholde følgende oplysninger:
 
-- Beskrivende tekst i form af afsnitsoverskrifter, linjer og mellemrum, der har en forklarende funktion i rapporten, f.eks. **Kontanter** eller **Samlet omsætning**.
+- Beskrivende tekst i form af afsnitsoverskrifter, linjer og mellemrum, der har en forklarende funktion i rapporten, f.eks. **Kontanter** eller **Samlet omsætning**
 - Links til økonomiske data, der kan omfatte dimensionsværdier i Microsoft Dynamics 365 Finance
 
     > [!NOTE]
@@ -58,7 +58,7 @@ Hver række i en rækkedefinition indeholder normalt en af følgende typer oplys
 Der er to metoder til at angive oplysninger i en rækkedefinition:
 
 - Du kan indtaste rækkeoplysninger manuelt i en ny rækkedefinition. Yderligere oplysninger finder du under [Redigere rækkedefinitionsceller](modify-row-definition-cells-financial-reporting.md).
-- Du kan bruge rapportdesigneren til at trække oplysninger direkte fra de økonomiske dimensioner. Du kan finde flere oplysninger i afsnittet "Relaterede formler/rækker/enheder" i [Ændre rækkedefinitionsceller](modify-row-definition-cells-financial-reporting.md).
+- Du kan bruge Report Designer til at trække oplysninger direkte fra de økonomiske dimensioner. Du kan finde flere oplysninger i afsnittet "Relaterede formler/rækker/enheder" i [Ændre rækkedefinitionsceller](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="add-dimensions-in-a-row-definition"></a>Tilføje dimensioner i en rækkedefinition
 En dimension er et skæringspunkt for data og værdier. Du kan gruppere data og værdier i Report Designer. Du kan derefter klassificere og analysere posteringer i flere detaljer. Du kan bruge dialogboksen **Indsæt rækker fra dimensioner** til at føje flere rækker til en rækkedefinition på samme tid. Dialogboksen indeholder én kolonne for hver dimension. Følgende tabel beskriver de oplysninger, du kan angive for hver dimension.
@@ -95,8 +95,8 @@ Hvis du har en balance, hvor beløbene er afrundede, stemmer totalerne muligvis 
 Hvis du vil justere afrunding i en balance, skal du følge disse trin.
 
 1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
-2. Klik på **Afrundingsdifference** i menuen **Rediger**.
-3. I dialogboksen **Regulering af afrunding** skal du angive følgende værdier:
+2. Klik på **Afrundingsregulering** i menuen **Rediger**.
+3. I dialogboksen **Afrundingsregulering** skal du angive følgende værdier:
 
     - **Række til regulering af afrunding** – rækkekoden for den række, der skal reguleres for at afstemme balancen.
     - **Række for samlede aktiver** – rækkekoden for den række i balancen, der indeholder de samlede aktiver.
@@ -156,7 +156,7 @@ Du kan oprette og ændre typografier for rapporten. Du kan derefter anvende diss
 
 Den formatering, der er angivet i rækkedefinitionen, tilsidesætter den formatering, der er angivet i kolonnedefinitionen og rapportdefinitionen. Du kan ændre tekstformatet ved hjælp af kontrolelementerne på formateringsværktøjslinjen. Disse kontrolelementer er Microsoft Windows-standardkontrolelementer.
 
-1. Åbn den rækkedefinition, der skal redigeres, i Rapportdesigner.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. Marker de celler, der skal formateres. Du kan markere flere celler ved at holde Ctrl-tasten nede, mens du markerer cellen.
 3. Klik på værktøjslinjeknappen for det format, du vil anvende. Hvis du for eksempel vil indrykke en række, skal du markere rækken og derefter klikke på **Forøg indrykning** ![Forøg indrykning.](media/indent.gif "Forøg indrykning") på værktøjslinjen.
 
@@ -166,19 +166,19 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Ændre bredden på en kolonne i visningsruden
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
-2. Vælg **Kolonnebredde** i menuen **Formater**.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
+2. Vælg **Kolonnebredde** i menuen **Format**.
 3. Angiv en værdi i dialogboksen **Kolonnebredde**, og klik derefter på **OK**. Du kan også trække i højre kant af cellen med kolonneoverskriften for at ændre kolonnens bredde.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Skjule kolonner i visningsruden
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. Markér den eller de kolonner, der skal minimeres.
 3. Højreklik, og klik derefter på **Skjul**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Få vist alle skjulte kolonner i visningsruden
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. Højreklik på den minimerede kolonne, der skal vises, og klik derefter på **Vis**.
 
 

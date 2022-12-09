@@ -2,7 +2,7 @@
 title: Arbejdsgang for kreditorer
 description: Rediger leverandøroplysninger, og brug arbejdsgange til at godkende dem.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735661"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799458"
 ---
 # <a name="vendor-workflow"></a>Arbejdsgang for kreditorer
 
@@ -46,7 +46,7 @@ Du skal aktivere arbejdsgangfunktionen, før du kan bruge den.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Ændre kreditoroplysninger og sende ændringerne til arbejdsgangen
 
-Når du ændrer et felt, der er aktiveret for arbejdsgangen, vises siden **Foreslåede ændringer**. Denne side viser den oprindelige værdi i feltet og den nye værdi, du har angivet. Det felt, du har ændret, vender tilbage til den oprindelige værdi. En statusmeddelelse fortæller dig også, at ændringerne ikke er sendt. 
+Når du ændrer et felt, der er aktiveret for arbejdsgangen, vises siden **Foreslåede ændringer**. Denne side viser den oprindelige værdi i feltet og den nye værdi, du har angivet. Det felt, du har ændret, vender tilbage til den oprindelige værdi. En statusmeddelelse fortæller dig, at ændringerne ikke er sendt. 
 
 Hver gang du ændrer et felt, der er aktiveret for arbejdsgangen, føjes dette felt til listen på siden **Foreslåede ændringer**. For at slette den foreslåede værdi for et felt kan du bruge knappen **Slet** ud for feltet på listen. Hvis du vil slette alle ændringer, skal du bruge knappen **Udelad alle ændringer** nederst på siden. Vælg **OK** for at lukke siden.
 

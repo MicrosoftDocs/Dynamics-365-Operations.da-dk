@@ -14,12 +14,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 12de50f26127c54c2f82ace43487de10e7125aea
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779521"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804204"
 ---
 # <a name="reconcile-a-bank-account"></a>Afstemme en bankkonto
 
@@ -39,11 +39,11 @@ Du kan ikke afstemme et bankkontoudtog med en bankkonto, hvis noten af de checks
     
 
 >[!NOTE]
->Du skal ikke markere afkrydsningsfeltet **Afstemt** for transaktioner, der ikke findes på bankkontoudtoget. Disse posteringer vises fortsat på denne side, indtil de bliver afstemt med et fremtidigt bankkontoudtog.
+>Du må ikke markere afkrydsningsfeltet **Afstemt** for transaktioner, der ikke findes på bankkontoudtoget. Disse posteringer vises fortsat på denne side, indtil de bliver afstemt med et fremtidigt bankkontoudtog.
 >Afkrydsningsfeltet **Afstemt** er ikke tilgængeligt, hvis transaktionen har statussen **Afventer annullering**. Transaktioner kan have denne status, hvis Finance er konfigureret til at kræve, at tilbageførsler eller annulleringer skal sendes til gennemgang, før de bogføres. Når en evaluator har bogført eller afvist modposteringen eller annulleringen, er statussen ikke længere **Afventer annullering**, og du kan afstemme bankkontoen med bankkontoudtoget.
 
 
-Hvis du vil markere afkrydsningsfeltet **Afstemt** for et checkinterval, der vises på bankkontoudtoget, skal du klikke på **Markér checkinterval** og derefter angive intervallet.
+Hvis du vil markere afkrydsningsfeltet **Afstemt** for et checkinterval, der vises på bankkontoudtoget, skal du vælge **Markér checkinterval** og derefter angive intervallet.
 
 5.  Hvis beløbet for en bankkontotransaktion ikke svarer til beløbet for transaktionen på bankkontoudtoget, skal du angive korrektionsbeløbet i feltet **Korrektionsbeløb**.
     
@@ -63,7 +63,7 @@ Hvis du vil markere afkrydsningsfeltet **Afstemt** for et checkinterval, der vis
 
 ## <a name="cancel-bank-statement-reconciliation"></a>Annuller afstemning af bankkontoudtog 
 
-Med funktionen Annuller afstemning af bankkontoudtog kan du annullere afstemning af bankkontoudtog. Hvis du vil bruge denne funktion, skal du aktivere funktionen **Annuller bankkontoudtogsafstemning** i arbejdsområdet **Funktionsstyring**. Du skal også aktivere parameteret **Tillad redigering af bankkontoudtog**. For at gøre dette skal du gå til **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > Bankafstemning**.
+Med funktionen **Annuller afstemning af bankkontoudtog** kan du annullere afstemning af bankkontoudtog. Hvis du vil bruge denne funktion, skal du aktivere funktionen **Annuller bankkontoudtogsafstemning** i arbejdsområdet **Funktionsstyring**. Du skal også aktivere parameteret **Tillad redigering af bankkontoudtog**. For at gøre dette skal du gå til **Kontant- og bankstyring > Opsætning > Kontant- og bankstyringsparametre > Bankafstemning**.
  
 Afstemninger af bankkontoudtog kan kun annulleres i den kronologiske rækkefølge, de er indtastet i. Når en afstemning af bankkontoudtog annulleres, tilbageføres nye transaktioner og rettelser, og alle andre transaktioner markeres som ikke afstemte.
  

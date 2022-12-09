@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715518"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804132"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kasserabatter i forbindelse med overbetalinger
 
@@ -53,7 +53,9 @@ Kunden indsender en betaling på 95,00 inden for kasserabatperioden. Betalingen 
 | Betaling       | -95,00 | 0,00    |
 | Kasserabat | -10,50 | 0,00    |
 
-Følgende regnskabsposter genereres for betalingen og udligningen. **Betaling**
+Følgende regnskabsposter genereres for betalingen og udligningen.
+
+**Betaling**
 
 | Konto             | Debetbeløb | Kreditbeløb |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Kunden indsender en betaling på 95,00 inden for kasserabatperioden. Betalingen 
 | Betaling       | -95,00 | -0,50   |
 | Kasserabat | -10,50 | 0,00    |
 
-Det for meget betalte beløb på 0,50 forbliver som en åben saldo for betalingen og kan udlignes mod en anden faktura. Følgende regnskabsposter genereres for betalingen og udligningen. **Betaling**
+Det for meget betalte beløb på 0,50 forbliver som en åben saldo for betalingen og kan udlignes mod en anden faktura. Følgende regnskabsposter genereres for betalingen og udligningen. 
+
+**Betaling**
 
 | Konto             | Debetbeløb | Kreditbeløb |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Kunden indsender en betaling på 95,00 inden for kasserabatdatoen. Betalingen ud
 | Betaling       | -95,00 | -0,00   |
 | Kasserabat | -10,00 | 0,00    |
 
-Kasserabatbeløbet reduceres fra 10,50 til 10,00. Betalingen og fakturaen anses for udlignet. **Betaling**
+Kasserabatbeløbet reduceres fra 10,50 til 10,00. Betalingen og fakturaen anses for udlignet. 
+
+**Betaling**
 
 | Konto             | Debetbeløb | Kreditbeløb |
 |---------------------|--------------|---------------|

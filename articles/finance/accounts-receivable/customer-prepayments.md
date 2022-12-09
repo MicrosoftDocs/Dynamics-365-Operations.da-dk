@@ -2,7 +2,7 @@
 title: Forudbetalinger fra debitorer
 description: Denne artikel indeholder en forklaring på, hvordan du kan konfigurere og behandle forudbetalinger fra kunder (også kaldet kundeindbetalinger).
 author: twheeloc
-ms.date: 04/30/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88773067c472471fb75167712268d1076c1738a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f085d45895530aaf0a16439f62dfc13b27da84b6
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861554"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799427"
 ---
 # <a name="customer-prepayments"></a>Forudbetalinger fra debitorer
 
@@ -32,7 +32,7 @@ Processen til opsætning og arbejde med forudbetalinger fra kunder består af f�
 
 1. Opret en debitorposteringsprofil til forudbetalinger.
 2. Angiv parameteren **Posteringsprofil med kladdebilag for forudbetaling**.
-3. Opret en debitorbetalingskladde, og marker afkrydsningsfeltet **Kladdebilag for forudbetaling** på hver linje.
+3. Opret en debitorbetalingskladde, og markér afkrydsningsfeltet **Kladdebilag for forudbetaling** på hver linje.
 4. Bogfør debitorbetalingskladde.
 5. Når en faktura er genereret, skal du udligne forudbetalingen på den ved hjælp af siden **Udlign åbne posteringer**.
 
@@ -82,7 +82,7 @@ Du kan bruge arbejdsområdet **Debitorbetalinger** til nemt at finde og udligne 
 1. Vælg feltet **Debitorbetalinger** på dashboardet **Start**.
 2. Søg efter og vælg den betaling, der skal udlignes, under fanen **Betalinger, der ikke er udlignet** i sektionen **Debitorposter**.
 3. Vælg **Udlign posteringer**.
-4. Marker afkrydsningsfeltet **Marker** for fakturaen og den betaling, der skal udlignes.
+4. Markér afkrydsningsfeltet **Markér** for fakturaen og den betaling, der skal udlignes.
 5. Vælg **Bogfør**.
 
 Du kan finde flere oplysninger om, hvordan du udligner åbne posteringer, i [Udligningsoversigt](/dynamics365/finance/cash-bank-management/settlement-overview).

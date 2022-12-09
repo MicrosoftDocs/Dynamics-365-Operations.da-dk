@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 6283e07b87dc169d3cbaa71a371839ab9b2d6150
+ms.sourcegitcommit: ee13b854cbd52a3aa33e2449a296aed775862594
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785093"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "9799030"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller udfasede platformfunktioner
 
@@ -71,10 +71,10 @@ Som et led i arbejdet med [One Dynamics One Platform](/dynamics365-release-plan/
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi fjerner følgende liste over cipher-suiter for at overholde de aktuelle sikkerhedsprotokoller.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Erstattet af en anden funktion?**   | Fra og med den 31. januar 2023 kan kunderne kun bruge vores  [standard-cipher-suiter](/power-platform/admin/server-cipher-tls-requirements). Denne ændring påvirker dine klienter og servere, der kommunikerer med vores servere, f.eks. det kan påvirke din tredjepartsintegration, der ikke følger vores standardversioner af cipher-suiter. |
+| **Erstattet af en anden funktion?**   | Fra og med primo januar 2023 kan kunderne kun bruge vores  [standard-cipher-suiter](/power-platform/admin/server-cipher-tls-requirements). Denne ændring påvirker dine klienter og servere, der kommunikerer med vores servere, f.eks. det kan påvirke din tredjepartsintegration, der ikke følger vores standardversioner af cipher-suiter. |
 | **Produktområder, der er berørt**         | Programmer til finans og drift |
 | **Installationsindstilling**              | Skyinstallationer |
-| **Status**                         | Forældet. Kunder skal opgradere deres servere inden den 31. januar 2023. Yderligere oplysninger om konfiguration af TLS Cipher Suite-ordre finder du i [Administrere Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Forældet. Kunder skal opgradere deres servere inden januar 2023. Yderligere oplysninger om konfiguration af TLS Cipher Suite-ordre finder du i [Administrere Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Udfasning af funktion træder i kraft i juni 2022

@@ -2,7 +2,7 @@
 title: Vis økonomiske rapporter
 description: Denne artikel beskriver, hvordan du kan se og undersøge økonomirapporter i Microsoft Dynamics 365 Finance. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907886"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802385"
 ---
 # <a name="view-financial-reports"></a>Vis økonomiske rapporter
 
@@ -31,7 +31,7 @@ I denne artikel beskrives, hvordan du kan se og udforske økonomirapporter. Arti
 ## <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 
 ## <a name="open-a-financial-report"></a>Åbne en økonomisk rapport
-Hvis du vil åbne en rapport, skal du vælge rapportnavnet. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2015, oprettes rapporten for 31. juli 2015. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
+Hvis du vil åbne en rapport, skal du vælge rapportnavnet. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2020, oprettes rapporten for 31. juli 2020. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
 
 ## <a name="drill-down-on-a-financial-report"></a>Foretage detailudledning for en økonomisk rapport
 Økonomiske rapporter kan indeholde flere niveauer med detaljer. Det økonomiske niveau er det første niveau, du ser, når du åbner en økonomisk rapport. For at gå til kontoniveau skal du vælge de data, der skal foretages detaljeopløftning af. Hvis du for eksempel vil have vist kontooplysninger for salg, skal du vælge de salgsdata, du vil undersøge. Fra kontoniveau kan du foretage detailudledning for at få vist de posteringer, der indgår i kontosaldoen. Der er to måder at få vist posteringer på: rapporttransaktioner og bilagsposteringer.
@@ -46,12 +46,12 @@ Du kan anvende attribut- og dimensionsfiltre eller ændre budgetscenariet for en
 
 -   Du kan anvende attributfiltre til en rapport ved at vælge **Tilføj et attributfilter**. Vælg attributten, skriv attributværdien, og klik derefter på **OK**. Hvis du f.eks. vælger attributten **Kontokategori**, skal du angive **SALG** som attributværdi. Hvis du vil fjerne et attributfilter, skal du klikke på **Ryd**.
 -   Du kan anvende dimensionsfiltre på en rapport ved at vælge **Tilføj et attributfilter**. Vælg dimensionen, og derefter enten skriv dimension-ID'et, eller vælg dimensionen på listen. Hvis du vil fjerne et dimensionsfilter, skal du klikke på **Ryd**.
--   Hvis du vil ændre scenariet i en rapport af typen **Faktisk vs. budget**, Vælg et nyt scenario, og klik derefter på **OK**. Hvis det valgte scenarie er for et andet regnskabsår, fremkommer der ingen resultater. Hvis eksempelvis en rapport genereres for regnskabsåret 2015, og det aktuelle scenarie ligeledes er for regnskabsåret 2015, men det nye scenarie der vælges, er for regnskabsåret 2016, fremkommer der ingen resultater. Hvis der er behov for et nyt scenarie for et andet regnskabsår, skal du generere en ny version af rapporten for det regnskabsår, der er relateret til det pågældende scenarie.
+-   Hvis du vil ændre scenariet i en rapport af typen **Faktisk vs. budget**, Vælg et nyt scenario, og klik derefter på **OK**. Hvis det valgte scenarie er for et andet regnskabsår, fremkommer der ingen resultater. Hvis eksempelvis en rapport genereres for regnskabsåret 2015, og det aktuelle scenarie er for regnskabsåret 2020, men det nye valgte scenarie er for regnskabsåret 2016, fremkommer der ingen resultater. Hvis der er behov for et nyt scenarie for et andet regnskabsår, skal du generere en ny version af rapporten for det regnskabsår, der er relateret til det pågældende scenarie.
 
 Når du klikker på **OK**, anvendes alle de indstillinger, du har valgt til rapporten. Hvis du beslutter, at du ikke vil anvende de valgte indstillinger, skal du klikke på **Annuller**.
 
 ## <a name="update-a-financial-report"></a>Opdatere en økonomisk rapport
-Du kan opdatere en økonomisk rapport, så den viser de nyeste data for den periode og år, som rapporten blev oprettet for. Hvis du eksempelvis opdaterer en økonomisk rapport, der blev genereret for oktober 2015, afspejler rapporten eventuelle nye transaktioner, der er bogført for oktober 2015. Hvis du vil opdatere en økonomisk rapport i handlingsruden, skal du klikke på **Opdater**. En opdateret rapport er kun tilgængelig for den person, der har opdateret den. Hvis andre skal kunne se samme data, skal rapporten publiceres.
+Du kan opdatere en økonomisk rapport, så den viser de nyeste data for den periode og år, som rapporten blev oprettet for. Hvis du eksempelvis opdaterer en økonomisk rapport, der blev genereret for oktober 2020, afspejler rapporten eventuelle nye transaktioner, der er bogført for oktober 2020. Hvis du vil opdatere en økonomisk rapport i handlingsruden, skal du klikke på **Opdater**. En opdateret rapport er kun tilgængelig for den person, der har opdateret den. Hvis andre skal kunne se samme data, skal rapporten publiceres.
 
 ## <a name="publish-a-financial-report"></a>Publicere en økonomisk rapport
 Når du opdaterer en økonomisk rapport, kan du publicere den. Andre personer i organisationen vil derefter kunne se den. Hvis du vil publicere en rapport i handlingsruden, skal du klikke på **Publicer**.

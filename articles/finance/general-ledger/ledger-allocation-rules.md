@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901278"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787547"
 ---
 # <a name="ledger-allocation-rules"></a>Finansfordelingsregler
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901278"
 
 Denne artikel indeholder generelle oplysninger om finansfordelingsregler. Den beskriver de forskellige komponenter i disse fordelingsregler og de fordelingsmetoder, som kan bruges til dem.
 
-Finansfordelingsregler bruges til automatisk at beregne og generere fordelingskladder og kontoposter for fordeling af finanssaldi eller faste beløb. Fordelingsmetoderne kan være variable eller faste. Følgende fordelingsmetoder kan bruges til finansfordelingsregler:
+Finansfordelingsregler bruges til automatisk at beregne og generere fordelingskladder og kontoposter for fordeling af finanssaldi eller faste beløb. Fordelingsmetoderne kan være variable eller faste. Fordelingen er baseret på værdien af transaktionsvalutaen. Regnskabsposter om gevinst/tab i udenlandsk valuta bogføres f.eks. for at regulere beløbene i regnskabs- og rapporteringsvalutaen. Disse poster er ikke underlagt fordelingsregler, da deres transaktionsvalutaværdi er 0,00. Følgende fordelingsmetoder kan bruges til finansfordelingsregler:
 
 -   **Basis** – Denne variable metode bruges, når fordelingen afhænger af den faktiske finanssaldo baseret på filterkriterier. Du kan f.eks. fordele reklameomkostninger baseret på den enkelte afdelings salg i forhold til det samlede afdelingssalg.
 -   **Fast procentdel** og **Fast vægt** – For disse metoder defineres fordelingsprocenten eller -vægten direkte for reglen. Reklameudgifter kan f.eks. fordeles, så afdeling A modtager 70 procent af reklameomkostninger, og afdeling B modtager 30 procent.

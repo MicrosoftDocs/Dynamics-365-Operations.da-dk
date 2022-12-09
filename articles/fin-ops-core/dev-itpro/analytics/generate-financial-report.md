@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 59ec6978d83f5c51309bc7d90d47366774cb2880
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f55fe1a23735d8631a5918fa49e08f74eee4d37
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898821"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802763"
 ---
 # <a name="generate-financial-reports"></a>Generere økonomiske rapporter
 
@@ -32,7 +32,7 @@ Denne artikel indeholder oplysninger om generering af en økonomisk rapport.
 
 Efterhånden som generering af rapporter skrider frem, kan følgende statusindikatorer for rapportkøer være synlige på siden **Status for rapportkø**.
 
-| Status          | Tilstand | Beskrivelse|
+| Status          | Stat/område | Beskrivende tekst|
 |-----------------|--------|--------------------|
 | Sætter i kø        | Midlertidig |Rapportdefinitionen valideres, før rapporten sættes i genereringskøen.                    |
 | I kø          | Midlertidig | Rapporten kommer i køen til generering af rapporter og venter på at blive behandlet.                      |
@@ -61,13 +61,13 @@ Når rapporten er genereret, kan den ses i sektionen **Rapporter**.
 
 Du kan vælge **Vis** eller **Slet** for rapporten.
 
-Åbn den ønskede rapportdefinition for at generere en rapport ved hjælp af **Rapportdesigner**, og vælg derefter på knappen **Generer** på værktøjslinjen. Vinduet **Status for rapportkø** åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
+Åbn den ønskede rapportdefinition for at generere en rapport ved hjælp af **Report Designer**, og vælg derefter på knappen **Generer** på værktøjslinjen. Vinduet **Status for rapportkø** åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
 
 ## <a name="report-groups"></a>Rapportgrupper
 
 Du kan bruge rapportgrupper til at oprette flere rapporter på én gang. Antag f.eks., at brugerne opretter otte rapporter hver måned ved udgangen af måneden. Opret en rapportgruppe, og i stedet for at vælge **Generer** for hver af de otte rapporter i gruppen, kan du vælge **Generer** for rapportgruppen, og de otte rapporter genereres i ét trin. Når rapporterne i den valgte rapportgruppe er genereret, kan du gå til **Finans** (**Finans > Forespørgsler og rapporter > Finansrapporter**) for at få vist de enkelte rapporter. Benyt følgende fremgangsmåde for at konfigurere eksemplet på den betingede rapport:
 
-1. Vælg **Rapportgrupper** i rapportdesigner 
+1. Vælg **Rapportgrupper** i **Report Designer**. 
 2. Vælg de eksisterende rapportdefinitioner, der skal medtages i rapportgruppen. 
 3. Vælg overstyringsindstillinger for firma, detaljer og dato i hver af de rapporter, der skal inkluderes i gruppen.
    Det anbefales, at du angiver **Firma**, **Periode**, **År** og **Detaljeringsniveau** for hver rapport. 
@@ -76,21 +76,21 @@ Du kan bruge rapportgrupper til at oprette flere rapporter på én gang. Antag f
 ## <a name="schedule-report-generation"></a>Planlægge rapportgenerering
 Mange firmaer har en grundlæggende række rapporter, der køres på planlagte intervaller for at passe ind i deres forretningsprocesser. Du kan planlægge en rapport, der skal genereres regelmæssigt, f.eks. dagligt, ugentligt, månedligt eller årligt. Dette kan være en enkelt rapport eller en gruppe af rapporter, der indeholder flere virksomheder. Du skal indtaste dine legitimationsoplysninger for hvert firma, der er angivet, som f.eks. dem, der er i en trædiagramdefinition. Hvis legitimationsoplysningerne ikke er gyldige, viser rapporten kun de oplysninger, du har adgang til, f.eks. den virksomhed, som du er logget på, på tidspunktet. Outputoplysninger læses først fra rapportgruppen og derefter fra de enkelte rapporter.
 
-Efterhånden som rapporttidsplaner oprettes og gemmes, vises de i navigationsruden under Rapporttidsplaner. Du kan oprette mapper til at organisere rapporterne. Selvom en enkelt rapport i en tidsplan ikke køres, fortsætter alle andre rapporter med at køre.
+Efterhånden som rapporttidsplaner oprettes og gemmes, vises de i navigationsruden under **Rapporttidsplaner**. Du kan oprette mapper til at organisere rapporterne. Selvom en enkelt rapport i en tidsplan ikke køres, fortsætter alle andre rapporter med at køre.
 
 > [!IMPORTANT]
 > For at oprette, redigere og slette rapporttidsplaner skal du have en rolle som designer eller administrator. Når du kører en rapport, bruges legitimationsoplysningerne for den bruger, der oprettede tidsplanen, til at generere rapporten.
 
 ### <a name="create-a-report-schedule"></a>Opret en ny rapporttidsplan
 
-1. I Report Designer skal du vælge **Ny** i menuen **Filer**, og derefter skal du vælge **Rapporttidsplan**. Dialogboksen **Ny rapporttidsplan** åbnes.
+1. I **Report Designer** skal du vælge **Ny** i menuen **Filer**, og derefter skal du vælge **Rapporttidsplan**. Dialogboksen **Ny rapporttidsplan** åbnes.
 2. Under **Indstillinger** skal du vælge en enkelt rapport eller en rapportgruppe for at planlægge. Kun rapporter eller rapportgrupper for det firma eller den rapportkomponent, som du er logget på for øjeblikket, er tilgængelige.
 3. Vælg afkrydsningsfeltet **Aktiv** for at aktivere rapporttidsplanen. Kun den, der har oprettet rapporten, eller en administrator kan aktivere eller deaktivere en rapporttidsplan.
 4. Vælg knappen **Tilladelser** for at angive firmaets legitimationsoplysninger. Som standard bruges dine logonoplysninger til det firma, som du er logget på. Hvis andre firmaer er inkluderet, f.eks som i definitioner af rapporteringstræ, skal du vælge **Brug separate legitimationsoplysninger** og derefter angiv legitimationsoplysningerne for andre virksomheder, der indgår i rapporttidsplanen. Du kan vælge **Windows-godkendelse** eller skrive et brugernavn og en adgangskode for hver virksomhed. Vælg afkrydsningsfeltet **Gem legitimationsoplysninger** for at gemme legitimationsoplysningerne for disse firmaer. Vælg derefter **OK** for at lukke dialogboksen.
 5. Under **Frekvens** i feltet **Start gentagelse** skal du vælge den dato, hvor tidsplanen skal starte. Som standard er den aktuelle systemdato i klientcomputeren valgt:
 6. I feltet **Kør rapport på** skal du vælge det tidspunkt, hvor rapporten skal køres. Hvis du angiver et tidspunkt, der er før den aktuelle tid i systemet, kører rapporten på den næste planlagte dato.
-7. I området **Gentagelsesmønster** skal du angive, hvor ofte rapporten køres. Som standard vælges **Dagligt** med en Interval-værdi (dage) på 1. Andre muligheder omfatter Ugentligt, Månedligt og Årligt.
-8. Vælg, hvornår rapporten ikke længere skal genereres, i området Gentagelsesperiode.
+7. I området **Gentagelsesmønster** skal du angive, hvor ofte rapporten køres. Som standard vælges **Dagligt** med et **Interval (dage)** på **1**. Andre muligheder omfatter **Ugentligt**, **Månedligt** og **Årligt**.
+8. I området **Gentagelsesperiode** skal du vælge, om rapporten skal stoppe med at genereres.
 
     - **Slutdato mangler** – Rapporttidsplanen kører på ubestemt tid.
     - **Angiv antallet af forekomster** – Rapporttidsplanen kører det angivne antal gange og er derefter deaktiveret.
@@ -116,7 +116,7 @@ Hvis du vil slette en rapporttidsplan, skal du være ejer af rapporttidsplanen e
 
 ### <a name="credentials-and-report-schedules"></a>Legitimationsoplysninger og rapporttidsplaner
 
-Hvis du ikke angiver legitimationsoplysninger, der kræves for alle selskaber, der indgår i rapporterne, modtager du følgende meddelelse, når du gemmer rapporttidsplanen: "Du skal angive dine legitimationsoplysninger for de selskaber, der er indeholdt i denne rapporttidsplan. Vælg knappen Tilladelser for at indtaste dine legitimationsoplysninger."
+Hvis du ikke angiver legitimationsoplysninger, der kræves for alle selskaber, der indgår i rapporterne, modtager du følgende meddelelse, når du gemmer rapporttidsplanen: "Du skal angive dine legitimationsoplysninger for de selskaber, der er indeholdt i denne rapporttidsplan. Vælg knappen **Tilladelser** for at indtaste dine legitimationsoplysninger."
 
 En bruger logger f.eks. på firma A ved hjælp af et brugernavn og en adgangskode. Brugeren opretter en tidsplan for en rapport, der bruger en definition for et rapporteringstræ, for at indsamle data fra flere firmaer. Når denne rapporttidsplan er gemt, bliver brugeren bedt om at indtaste legitimationsoplysninger for det andet firma, som er angivet i trædiagramdefinitionen. Når dine legitimationsoplysninger udløber, genereres de berørte rapporter i rapporttidsplanen ikke, før legitimationsoplysningerne er blevet opdateret. Der vises en meddelelse i rapporteringskøen for at angive, at tilladelser skal opdateres. Rapporttidsplanen mislykkes, hvis en af følgende situationer opstår (fordi de kræver legitimationsoplysninger):
 
@@ -151,7 +151,7 @@ Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglen
 8. Vælg **Opdater** for at opdatere undtagelser, som du har håndteret. Vælg **Ja** for at udføre en komplet opdatering af alle resultater, eller vælg **Nej** for at udføre en delvis opdatering af varer, der er behandlet.
 
     > [!NOTE]
-    > Formularen opdateres automatisk, når den åbnes, medmindre formularen er blevet åbnet inden for de sidste 15 minutter.
+    > Formularen opdateres automatisk, når den åbnes, medmindre siden er blevet åbnet inden for de sidste 15 minutter.
 
 9. Når problemerne er løst, skal du vælge **OK** for at lukke dialogboksen.
 
@@ -176,7 +176,7 @@ Når du kører en manglende kontoanalyse, er følgende tastaturgenveje tilgænge
 
 [Økonomirapportering](financial-reporting-intro.md)
 
-[Brugergrænseflade i Rapportdesigner](report-designer-interface.md)
+[Brugergrænseflade i Report Designer](report-designer-interface.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

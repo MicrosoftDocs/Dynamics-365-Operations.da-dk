@@ -2,7 +2,7 @@
 title: Planlægge bølgeetiketudskrivning under bølgen
 description: Denne artikel indeholder en beskrivelse af, hvordan du kan konfigurere og bruge funktionerne til opgavebaseret bølgeetiketudskrivning.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889451"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822356"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlægge bølgeetiketudskrivning under bølgen
 
@@ -32,7 +32,6 @@ Når du bruger funktionen *Opgavebaseret bølgeetiketudskrivning*, opretter syst
 
 Hvis du vil bruge de funktioner, der er beskrevet i denne artikel, skal de være aktiverede for systemet. I arbejdsområdet [Funktionsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) skal du aktivere funktionerne i følgende rækkefølge:
 
-1. *Udskrivning af bølgeetiket* – Denne funktion kræves for at aktivere metode til behandling af bølgeetiketudskrivning.
 1. *Arbejdsblokering for hele organisationen* – Denne funktion kræves til både manuel og automatisk konfiguration af planlagt oprettelse af arbejde. (Fra og med Supply Chain Management version 10.0.21 er denne funktion obligatorisk, så den er som standard aktiveret og kan ikke deaktiveres igen).
 1. *Opgavebaseret bølgeetiketudskrivning* – Denne funktion kræves for at opdele udskrivning af bølgeetiketter i et separat transaktionsområde.
 

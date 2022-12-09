@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872262"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806369"
 ---
 # <a name="recruiting-request"></a>Rekrutteringsanmodning
 
@@ -68,7 +68,7 @@ Beskriver en anmodning om at rekruttere til et job.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Beskriver en anmodning om at rekruttere til et job.
 | **Status**<br>mshr_status<br>*Indstillingen RekrutteringRequestStatus* | Læse/skrive<br>Påkrævet<br> | Angiver status for rekrutteringsanmodning. |
 | **Beskrivelse**<br>mshr_description<br>*Streng* | Læse/skrive<br>Påkrævet | Beskriver anmodningen. |
 | **Lokation-id for rekrutteringsanmodning**<br>mshr_recruitingrequestlocationid<br>*Streng* | Læse/skrive<br>Valgfri | Det brugerdefinerede entydige id for den joblokation, der er tilknyttet denne anmodning. |
-| **Rekrutteringsværdi for lokation-id**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Fremmed nøgle: mshr_hcmrecruitingrequestlocationentityid af mshr_hcmrecruitingrequestlocationentity-enhed | Systemgenereret GUID-værdi til identifikation af den lokation til rekrutteringsanmodning, der er knyttet til anmodningen. |
+| **Rekrutteringsværdi for lokation-id**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Fremmed nøgle: mshr_hcmrecruitingrequestlocationentityid af mshr_hcmrecruitingrequestlocationentity-enhed | Systemgenereret GUID-værdi til identifikation af den lokation til rekrutteringsanmodning, der er knyttet til anmodningen. |
 | **Bemærkninger**<br>mshr_comments<br>*Streng* | Læse/skrive<br>Valgfri | Kommentarer om anmodningen om brug af ansættelse af ledere og rekrutteringsmedarbejdere. |
 | **Job ID**<br>mshr_jobid<br>*Streng* | Skriv én gang<br>Påkrævet |   Det brugerdefinerede entydige id for det job, der deles af alle positioner, der er tilknyttet denne anmodning. |
 | **Job-id-værdi**<br>_mshr_fk_job_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_hcmjobentityid af mshr_hcmjobentity-enhed | Det systemgenererede entydige id for det job, der deles af alle positioner, der er tilknyttet denne rekrutteringsanmodning. |

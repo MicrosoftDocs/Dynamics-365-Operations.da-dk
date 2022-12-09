@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: 1c125369a5b2134759bf3650175276acf42b69e0
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135533"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802817"
 ---
 # <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
 
@@ -57,11 +57,11 @@ Følgende eksempler er gyldige rækkekoder:
 ### <a name="reset-numeric-row-codes"></a>Nulstille numeriske rækkekoder
 
 1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
-2. I menuen **Rediger** skal du klikke på **Nummerer rækker igen**.
-3. I dialogboksen **Nummerer rækker igen** skal du angive nye værdier for den første rækkekode og rækkekodeforøgelsen. Du kan nulstille de numeriske rækkekoder til værdier med samme mellemrum. I rapportdesigneren nummereres dog kun rækkekoder, der begynder med tal (eksempelvis 130 eller 246). Rækkekoder, der begynder med bogstaver (for eksempel INCOME\_93 eller TP0693) nummereres ikke igen.
+2. I menuen **Rediger** skal du klikke på **Renummerer rækker**.
+3. I dialogboksen **Renummerer rækker** skal du angive nye værdier for den første rækkekode og rækkekodeforøgelsen. Du kan nulstille de numeriske rækkekoder til værdier med samme mellemrum. I Report Designer nummereres dog kun rækkekoder, der begynder med tal (eksempelvis 130 eller 246). Rækkekoder, der begynder med bogstaver (for eksempel INCOME\_93 eller TP0693) nummereres ikke igen.
 
 > [!NOTE]
-> Når du nummererer rækkekoder igen, opdaterer rapportdesigneren automatisk referencerne **TOT** og **CAL**. Hvis en **TOT**-række for eksempel refererer til et område, der starter med rækkekoden 100, og du nummererer rækker igen, startende med 90, ændres **TOT**-referencen fra 100 til 90.
+> Når du nummererer rækkekoder igen, opdaterer Report Designer automatisk referencerne **TOT** og **CAL**. Hvis en **TOT**-række for eksempel refererer til et område, der starter med rækkekoden 100, og du nummererer rækker igen, startende med 90, ændres **TOT**-referencen fra 100 til 90.
 
 ## <a name="add-a-description"></a>Tilføje en beskrivelse
 Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i rækken i rapporten, f.eks. "Omsætning" eller "Nettoindkomst". Teksten i cellen **Beskrivelse** vises i rapporten, nøjagtigt som du angiver dem i rækkedefinitionen.
@@ -85,7 +85,7 @@ Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i ræ
 
 1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2. Find den række, hvor ekstra tekst skal oprettes, og dobbeltklik derefter på cellen i kolonnen **Relaterede formler/rækker/enheder**.
-3. I dialogboksen **Valg af rapporteringsenhed** i feltet **Rapporteringstræ** skal du vælge et rapporteringstræ.
+3. I dialogboksen **Valg af enhed i trædiagram** i feltet **Trædiagram** skal du vælge et trædiagram.
 4. I feltet **Vælg rapporteringsenhed til begrænsning** skal du udvide eller skjule rapporteringstræet og derefter vælge en rapporteringsenhed.
 
 ## <a name="add-a-format-code"></a>Tilføje en formatkode
@@ -103,7 +103,7 @@ Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hen
     | Formatkode                   | Fortolkning af formatkoden | Handling |
     |-------------------------------|-----------------------------------|--------|
     | (Ingen)                        |                                   | Rydder cellen **Formatkode**. |
-    | TOT                           | I alt                             | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Totaler indeholder enkle operatorer som f.eks. **+** eller **-**. |
+    | TOT                           | Sum                             | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Totaler indeholder enkle operatorer som f.eks. **+** eller **-**. |
     | CAL                           | Kalkulation                       | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Beregningerne indeholder komplekse operatorer, f.eks. **+**, **-**, **\**_, _*/** og **IF/THEN/ELSE**-sætninger. |
     | DES                           | Betegnelse                       | Identificerer en overskriftslinje eller en tom linje i en rapport. |
     | LFT RGT CEN                   | Venstre Højre Centreret                 | Justerer rækkebeskrivelsesteksten på rapportsiden, uanset placeringen af teksten i kolonnedefinitionen. |
@@ -149,7 +149,7 @@ Når du opretter en rækketotalformel, skal du bruge rækkekoder til at angive, 
 
 ### <a name="create-a-row-total"></a>Oprette en ny rækketotal
 
-1. Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
+1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2. Dobbeltklik på cellen **Formatkode** i rækkedefinitionen, og vælg **TOT**.
 3. Angiv totalformlen i cellen **Relaterede formler/rækker/enheder**.
 
@@ -239,21 +239,21 @@ Sorteringskoder sorterer konti eller værdier, sorterer en faktisk eller budgeta
 
 I følgende eksempel sorteres værdierne i kolonne D i rapporten i stigende rækkefølge for række 160 til og med 490. Desuden skal de absolutte værdier i kolonne G i rapporten sorteres i faldende rækkefølge for række 610 til og med 940.
 
-| Rækkekode | Beskrivelse                                         | Formatkode | Relaterede formler/rækker/enheder | Normal saldo | Kolonnebegrænsning | Link til økonomiske dimensioner |
-|----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
-| 100      | Sorteret efter månedlig afvigelse i stigende rækkefølge       | DES         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Salg                                               |             |                             | C              |                    | 4100                         |
-| 190      | Salgsstatistik                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Renteindtægt                                     |             |                             | C              |                    | 7000                         |
-| 520      |                                                     | DES         |                             |                |                    |                              |
-| 550      | Sorteret efter absolut afvigelse ÅTD i faldende rækkefølge | DES         |                             |                |                    |                              |
-| 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Salg                                               |             |                             | A              |                    | 4100                         |
-| 640      | Salgsstatistik                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Renteindtægt                                     |             |                             | A              |                    | 7000                         |
+| Rækkekode | Beskrivende tekst                             | Formatkode | Relaterede formler/rækker/enheder | Normal saldo | Kolonnebegrænsning | Link til økonomiske dimensioner |
+|----------|-----------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
+| 100      | Sorteret efter månedlig afvigelse i stigende rækkefølge       | DES         |                |                |                    |                              |
+| 130      |                                        | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Salg                                   |             |                             | C              |                    | 4100                         |
+| 190      | Salgsstatistik                        |             |                             |                |                    | 4110                         |
+|          | ...                             |             |                             |                |                    |                              |
+| 490      | Renteindtægt              |             |                             | C              |                    | 7000                         |
+| 520      |                                     | DES         |                             |                |                    |                              |
+| 550      | Sorteret efter absolut afvigelse ÅTD i faldende rækkefølge | DES         |             |                |                    |                              |
+| 580      |                              | ASORTDESC   | 610:940                     |                | G                  |                              |
+| 610      | Salg                     |             |                             | A              |                    | 4100                         |
+| 640      | Salgsstatistik                |             |                             |                |                    | 4110                         |
+|          | ...                       |             |                             |                |                    |                              |
+| 940      | Renteindtægt               |             |                             | A              |                    | 7000                         |
 
 
 ## <a name="specify-a-format-override-cell"></a>Angiv en celle af typen Tilsidesæt format
@@ -266,7 +266,7 @@ Cellen **Tilsidesæt format** angiver den formatering, der anvendes til rækken,
 
 ### <a name="override-cell-formatting"></a>Tilsidesæt celleformatering
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. I den række, som formatet skal tilsidesættes for, skal du dobbeltklikke på cellen i kolonnen **Tilsidesæt format**.
 3. I dialogboksen **Tilsidesæt format** skal du vælge de formateringsindstillinger, der skal bruges til denne række i rapporten.
 4. Klik på **OK**.
@@ -327,9 +327,9 @@ Typen bør angive den positive værdi og derefter den negative værdi. Normalt a
 | 0,00 %;(0,00 %)                  | 123456,00 % | (123456,00 %) | 0,00 %   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Angiv en celle af typen Normal saldo
-Cellen **Normal saldo** i en rækkedefinition styrer fortegnet på beløb i en række. Hvis du vil ændre fortegnet for en række, eller hvis den normale saldo for en konto er et kreditbeløb, skal du angive et **C** i cellen **Normal saldo** for den pågældende række. Report Designer vender fortegnet om på alle kreditstatuskonti i den pågældende række. Når rapportdesigneren konverterer disse konti, fjernes debet/kredit-egenskaber fra alle beløb, og gør derfor sammentællingen ligetil. Hvis du for eksempel vil beregne nettoresultatet, skal du trække udgifter fra indtægter. Sammentalte og beregnede rækker påvirkes normalt ikke af en **C**-kode. Men **XCR**-protokollen til udskrivning i kolonnedefinitionen vender tegnet for en række, der indeholder et **C** i kolonnen **Normal saldo**. Denne formatering er især vigtig, når du vil have vist alle negative afvigelser som negative beløb. Hvis et sammentalt eller beregnet tal har det forkerte fortegn, skal du angive et **C** i cellen **Normal saldo** for rækken for at vende fortegnet.
+Cellen **Normal saldo** i en rækkedefinition styrer fortegnet på beløb i en række. Hvis du vil ændre fortegnet for en række, eller hvis den normale saldo for en konto er et kreditbeløb, skal du angive et **C** i cellen **Normal saldo** for den pågældende række. Report Designer vender fortegnet om på alle kreditstatuskonti i den pågældende række. Når Report Designer konverterer disse konti, fjernes debet/kredit-egenskaber fra alle beløb, og gør derfor sammentællingen ligetil. Hvis du for eksempel vil beregne nettoresultatet, skal du trække udgifter fra indtægter. Sammentalte og beregnede rækker påvirkes normalt ikke af en **C**-kode. Men **XCR**-protokollen til udskrivning i kolonnedefinitionen vender tegnet for en række, der indeholder et **C** i kolonnen **Normal saldo**. Denne formatering er især vigtig, når du vil have vist alle negative afvigelser som negative beløb. Hvis et sammentalt eller beregnet tal har det forkerte fortegn, skal du angive et **C** i cellen **Normal saldo** for rækken for at vende fortegnet.
 
-## <a name="specify-a-row-modifier-cell"></a>Angiv en celle af typen Rækkemodifikator
+## <a name="specify-a-row-modifier-cell"></a>Angive en celle af typen Rækkemodifikator
 Indholdet af cellen **Rækkemodifikator** i en rækkedefinition tilsidesætter regnskabsårene, perioderne og andre oplysninger, der er angivet i kolonnedefinitionen for rækken. Den valgte modifikator gælder for alle konti i rækken. Du kan redigere hver række ved hjælp af en eller flere af følgende typer modifikatorer:
 
 - Kontomodifikatorer
@@ -338,7 +338,7 @@ Indholdet af cellen **Rækkemodifikator** i en rækkedefinition tilsidesætter r
 
 ### <a name="override-a-column-definition"></a>Tilsidesætte en kolonnedefinition
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. I den række, hvor du vil tilsidesætte kolonnedefinitionen skal du dobbeltklikke på cellen **Rækkemodifikator**.
 3. I dialogboksen **Rækkemodifikator** skal du vælge en indstilling i feltet **Kontomodifikator**. Se en beskrivelse af indstillingerne i afsnittet "Kontomodifikatorer".
 4. I feltet **Bogkodemodifikator** skal du vælge den bogkode, der skal bruges til rækken.
@@ -356,7 +356,7 @@ Indholdet af cellen **Rækkemodifikator** i en rækkedefinition tilsidesætter r
 
 ### <a name="account-modifiers"></a>Kontomodifikatorer
 
-Når du vælger en bestemt konto, kombinerer rapportdesigneren normalt kontoen og regnskabsårene, perioderne og andre oplysninger, du angiver i kolonnedefinitionen. Du kan bruge forskellige oplysninger, såsom forskellige regnskabsperioder for bestemte rækker. Følgende tabel viser de tilgængelige kontomodifikatorer. Erstat nummertegnet (\#) med en værdi, der er lig med eller mindre end antallet af perioder i et regnskabsår.
+Når du vælger en bestemt konto, kombinerer Report Designer normalt kontoen og regnskabsårene, perioderne og andre oplysninger, du angiver i kolonnedefinitionen. Du kan bruge forskellige oplysninger, såsom forskellige regnskabsperioder for bestemte rækker. Følgende tabel viser de tilgængelige kontomodifikatorer. Erstat nummertegnet (\#) med en værdi, der er lig med eller mindre end antallet af perioder i et regnskabsår.
 
 | Kontomodifikator | Hvad udskrives                                                                           |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -382,11 +382,11 @@ Du kan begrænse en række til en eksisterende kode. Kolonnedefinitionen skal in
 
 Nogle regnskabssystemer understøtter kontoattributter og transaktionsattributter i regnskaberne. Disse attributter fungerer som virtuelle kontosegmenter og kan indeholde yderligere oplysninger om kontoen eller transaktionen. Disse ekstra oplysninger kan være konto-id'er, batch-id'er, postnumre eller andre attributter. Hvis regnskabssystemet understøtter attributter, kan du bruge kontoattributter eller transaktionsattributter som rækkemodifikatorer i rækkedefinitionen. Du kan finde oplysninger om, hvordan du tilsidesætter rækkeoplysninger, i afsnittet "Tilsidesætte en kolonnedefinition" tidligere i denne artikel.
 
-## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angive et hyperlink til cellen Økonomiske dimensioner
+## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angive et link til cellen Økonomiske dimensioner
 Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**.
 
 > [!NOTE]
-> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
+> Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics 365 Finance-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
 
 | Linktype, der er valgt       | Beskrivelsen af kolonnen Link ændres til dette |
 |----------------------------------|----------------------------------------------------|
@@ -395,7 +395,7 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 
 ### <a name="specify-a-dimension-or-range"></a>Angiv en dimension eller et interval
 
-1. Åbn den rækkedefinition, der skal redigeres, i Rapportdesigner.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. Dobbeltklik på en celle i kolonnen **Link til økonomiske dimensioner**.
 3. Dobbeltklik på en celle under dimensionsnavnet i dialogboksen **Dimensioner**.
 4. Vælg **Person eller interval** i dialogboksen for dimensionen.
@@ -404,7 +404,7 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 7. Klik på **OK** for at lukke dialogboksen **Dimensioner**.
 
 ## <a name="display-zero-balance-accounts-in-a-row-definition"></a>Få vist konti med nulsaldo i en rækkedefinition
-Som standard udskriver rapportdesigneren ikke rækker, der ikke har en tilsvarende saldo i de økonomiske data. Du kan derfor oprette en rækkedefinition, der omfatter alle naturlige segmentværdier eller alle dimensionsværdier og derefter bruge denne rækkedefinition til alle dine afdelinger.
+Som standard udskriver Report Designer ikke rækker, der ikke har en tilsvarende saldo i de økonomiske data. Du kan derfor oprette en rækkedefinition, der omfatter alle naturlige segmentværdier eller alle dimensionsværdier og derefter bruge denne rækkedefinition til alle dine afdelinger.
 
 ### <a name="modify-zero-balance-settings"></a>Ændre indstillingerne for nulsaldo
 
@@ -413,55 +413,55 @@ Som standard udskriver rapportdesigneren ikke rækker, der ikke har en tilsvaren
 3. Gå til menuen **Filer**, og klik på **Gem** for at gemme ændringerne.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Bruge jokertegn og intervaller i en rækkedefinition
-Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\**_, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som _* 60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet.
+Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du Report Designer om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\**_, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som _* 60** og **600000**. Report Designer erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet.
 
 > [!NOTE]
 > Du bør undgå at bruge jokertegn for start- og slutkonti i intervaller. Hvis du bruger jokertegn i den første konto eller den sidste konto, får du måske uventede resultater.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Enkeltsegment- eller enkeltdimensionsområder
 
-Du kan angive en række segmentværdier eller dimensionsværdier. Fordelen ved at angive et interval er, at du ikke behøver at opdatere rækkedefinitionen, hver gang der tilføjes en ny segmentværdi eller dimensionsværdi til de økonomiske data. Intervallet **+ konto = \[6100:6900\]** henter for eksempel værdierne fra konto 6100 til og med 6900 i rækkebeløbet. Når et interval indeholder et jokertegn (?), evaluerer rapportdesigneren ikke intervallet tegn for tegn. I stedet bestemmes den lave og høje ende af intervallet, og derefter medtages slutværdierne og alle værdier mellem dem.
+Du kan angive en række segmentværdier eller dimensionsværdier. Fordelen ved at angive et interval er, at du ikke behøver at opdatere rækkedefinitionen, hver gang der tilføjes en ny segmentværdi eller dimensionsværdi til de økonomiske data. Intervallet **+ konto = \[6100:6900\]** henter for eksempel værdierne fra konto 6100 til og med 6900 i rækkebeløbet. Når et interval indeholder et jokertegn (?), evaluerer Report Designer ikke intervallet tegn for tegn. I stedet bestemmes den lave og høje ende af intervallet, og derefter medtages slutværdierne og alle værdier mellem dem.
 
 > [!NOTE]
-> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
+> Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics 365 Finance-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Intervaller med flere segmenter eller flere dimensioner
 
-Når du angiver et interval ved hjælp af kombinationer af flere dimensionsværdier, foretages intervalsammenligningen på basis af ..\\financial-dimensions\\dimension-by-dimension. Intervalsammenligningen kan ikke udføres tegn for tegn eller på basis af et delvist segment. Intervallet **+ konto = \[5000:6000\], afdeling = \[1000:2000\], bærer = \[00\]** omfatter for eksempel kun de konti, der svarer til hvert enkelt segment. I dette scenarie skal den første dimension være i intervallet fra 5000 til 6000, den anden dimension skal være i intervallet fra 1000 til 2000, og den sidste dimension skal være 00. For eksempel er **+ konto =\[5100\], afdeling =\[1100\], bærer =\[01\]** ikke medtaget i rapporten, da det sidste segment er uden for det angivne interval. Hvis en segmentværdi indeholder mellemrum, skal du sætte værdien i kantede parenteser (\[ \]). Følgende værdier er gyldige for et segment på fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsværdier skal omsluttes af kantede parenteser (\[ \]), og rapportdesigneren tilføjer disse parenteser for dig. Når et interval med flere segmenter eller flere dimensioner indeholder jokertegn (? eller \*) bestemmes den lave og høje ende af intervallet med flere segmenter eller flere dimensioner, og derefter medtages slutværdierne og alle værdier imellem dem. Hvis du har et stort interval, såsom hele rækken af konti fra 40000 til og med 99999, skal du angive en gyldig startkonto og slutkonto, hvis det er muligt.
+Når du angiver et interval ved hjælp af kombinationer af flere dimensionsværdier, foretages intervalsammenligningen på basis af ..\\financial-dimensions\\dimension-by-dimension. Intervalsammenligningen kan ikke udføres tegn for tegn eller på basis af et delvist segment. Intervallet **+ konto = \[5000:6000\], afdeling = \[1000:2000\], bærer = \[00\]** omfatter for eksempel kun de konti, der svarer til hvert enkelt segment. I dette scenarie skal den første dimension være i intervallet fra 5000 til 6000, den anden dimension skal være i intervallet fra 1000 til 2000, og den sidste dimension skal være 00. For eksempel er **+ konto =\[5100\], afdeling =\[1100\], bærer =\[01\]** ikke medtaget i rapporten, da det sidste segment er uden for det angivne interval. Hvis en segmentværdi indeholder mellemrum, skal du sætte værdien i kantede parenteser (\[ \]). Følgende værdier er gyldige for et segment på fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsværdier skal omsluttes af kantede parenteser (\[ \]), og Report Designer tilføjer disse parenteser for dig. Når et interval med flere segmenter eller flere dimensioner indeholder jokertegn (? eller \*) bestemmes den lave og høje ende af intervallet med flere segmenter eller flere dimensioner, og derefter medtages slutværdierne og alle værdier imellem dem. Hvis du har et stort interval, såsom hele rækken af konti fra 40000 til og med 99999, skal du angive en gyldig startkonto og slutkonto, hvis det er muligt.
 
 > [!NOTE] 
-> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
+> Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics 365 Finance-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Tilføje eller trække fra andre konti i en rækkedefinition
 Hvis du vil tilføje eller fratrække pengebeløbene på en konto fra pengebeløbene på en anden konto, kan du bruge plustegnet (+) og minustegnet (-) i cellen **Link til økonomiske dimensioner**. Følgende tabel viser gyldige formater for links til addition og subtraktion til økonomiske data.
 
-| Handling                                                                               | Brug dette format:                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Tilføj to fuldt kvalificerede konti.                                                       | + Division = \[000\], konto = \[1205\], afdeling = \[00\] + Division = \[100\], konto = \[1205\], afdeling = \[00\] |
-| Tilføj to segmentværdier.                                                                 | + Konto = \[1205\] + konto = \[1210\]                                                                           |
-| Tilføj segmentværdier, der indeholder jokertegn.                                    | + Konto = \[120? + konto = \[11??\]                                                                             |
-| Tilføj et interval af fuldt kvalificerede konti.                                                | + Division = \[000:100\], konto = \[1205\], afdeling = \[00\]                                                   |
-| Tilføj et interval af segmentværdier.                                                          | +Konto = \[1200:1205\]                                                                                       |
-| Tilføj et interval af segmentværdier, der indeholder jokertegn.                         | +Konto = \[120?:130?\]                                                                                       |
+| Handling                                            | Brug dette format:                                                                                              |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Tilføj to fuldt kvalificerede konti.      | + Division = \[000\], konto = \[1205\], afdeling = \[00\] + Division = \[100\], konto = \[1205\], afdeling = \[00\] |
+| Tilføj to segmentværdier.                    | + Konto = \[1205\] + konto = \[1210\]                                                                           |
+| Tilføj segmentværdier, der indeholder jokertegn.  | + Konto = \[120? + konto = \[11??\]                                                                     |
+| Tilføj et interval af fuldt kvalificerede konti.              | + Division = \[000:100\], konto = \[1205\], afdeling = \[00\]                                           |
+| Tilføj et interval af segmentværdier.                | +Konto = \[1200:1205\]                                                                                       |
+| Tilføj et interval af segmentværdier, der indeholder jokertegn.         | +Konto = \[120?:130?\]                                                           |
 | Træk en fuldt kvalificeret konto fra en anden fuldt kvalificeret konto.              | + Division = \[000\], konto = \[1205\], afdeling = \[00\] - Division = \[100\], konto = \[1205\], afdeling = \[00\] |
-| Træk en segmentværdi fra en anden segmentværdi.                                  | + Konto = \[1205\] - konto = \[1210\]                                                                           |
-| Træk en segmentværdi, der indeholder et jokertegn fra en anden segmentværdi. | + Konto = \[1200\] - konto = \[11??\]                                                                           |
-| Træk et interval af fuldt kvalificerede konti fra.                                           | -Division = \[000:100\], konto = \[1200:1205\], afdeling = \[00:01\]                                           |
-| Træk et interval af segmentværdier fra.                                                     | -Konto = \[1200:1205\]                                                                                       |
-| Træk et interval af segmentværdier, der indeholder jokertegn, fra.                    | -Konto = \[120?:130?\]                                                                                       |
+| Træk en segmentværdi fra en anden segmentværdi.          | + Konto = \[1205\] - konto = \[1210\]                                                               |
+| Træk en segmentværdi, der indeholder et jokertegn fra en anden segmentværdi. | + Konto = \[1200\] - konto = \[11??\]                                        |
+| Træk et interval af fuldt kvalificerede konti fra.                               | -Division = \[000:100\], konto = \[1200:1205\], afdeling = \[00:01\]                   |
+| Træk et interval af segmentværdier fra.                   | -Konto = \[1200:1205\]                                                                                       |
+| Træk et interval af segmentværdier, der indeholder jokertegn, fra.                    | -Konto = \[120?:130?\]                                               |
 
 Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimensioner** til at anvende den korrekte formatering på dine hyperlinks til økonomiske data. Alle værdierne kan indeholde jokertegn (? eller \*). Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }.
 
 > [!NOTE]
-> Hvis du vil subtrahere værdier, skal du angive værdierne i parenteser. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer rapportdesigneren i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
+> Hvis du vil subtrahere værdier, skal du angive værdierne i parenteser. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer Report Designer i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Lægge konti til eller trække konti fra andre konti
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Report Designer.
 2. I den relevante række skal du dobbeltklikke på cellen i kolonnen **Link til økonomiske dimensioner**.
 3. I den første række i dialogboksen **Dimensioner** skal du benytte nedenstående fremgangsmåde:
 
-    1. I det første felt skal du markere alle dimensioner (standard) eller klikke for at åbne dialogboksen **Administrer dimensionssæt**, hvor du kan oprette, redigere, kopiere eller slette et sæt.
+    1. I det første felt skal du markere alle dimensioner (standard) eller klikke for at åbne dialogboksen **Administrer dimensionsgrupper**, hvor du kan oprette, redigere, kopiere eller slette et sæt.
     2. Dobbeltklik på cellen **Operator +/-** , og vælg plus- (**+**) eller minusoperatoren (**-**), der gælder for en eller flere dimensionsværdier eller sæt i rækken.
     3. I den relevante kolonne med dimensionsværdier skal du dobbeltklikke på cellen for at åbne dialogboksen **Dimensioner** og vælge, om denne dimensionsværdi er for en enkelt dimension eller et interval, et dimensionsværdisæt eller samlekonti. Du finder beskrivelser af felterne i dialogboksen **Dimensioner** i afsnittet "Beskrivelse af dialogboksen Dimensioner".
     4. Angiv segmentværdier i kolonnen **Fra** og kolonnen **Til**.
@@ -497,7 +497,7 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 
 ### <a name="update-a-set-of-dimension-values"></a>Opdatere en gruppe af dimensionsværdier
 
-1. Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
+1. Åbn den række-, kolonne- eller trædefinition, der skal ændres, i Report Designer.
 2. Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3. I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
 4. Vælg det dimensionsværdisæt, der skal opdateres, på listen, og klik derefter på **Rediger**.
@@ -519,7 +519,7 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 
 ### <a name="delete-a-dimension-set"></a>Slette en dimensionsgruppe
 
-1. Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
+1. Åbn den række-, kolonne- eller trædefinition, der skal ændres, i Report Designer.
 2. Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3. I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
 4. Vælg den gruppe, der skal slettes, og klik derefter på **Slet**. Klik på **Ja** for at slette dimensionsværdigruppen permanent.

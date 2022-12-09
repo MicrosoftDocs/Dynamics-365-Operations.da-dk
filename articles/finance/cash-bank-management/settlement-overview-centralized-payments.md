@@ -2,7 +2,7 @@
 title: Oversigt over udligning for centraliserede betalinger
 description: Denne artikel beskriver udligning af centraliserede betalinger for Microsoft Dynamics 365 Finance.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151156"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804220"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Oversigt over udligning for centraliserede betalinger
 
@@ -84,11 +84,11 @@ Kasserabatter, som genereres i forbindelse med udligninger på tværs af firmaer
 
 Tolerancer for overbetalinger, underbetalinger og øredifferencer bestemmes på basis af den juridiske enhed for overbetalinger og på basis af den juridiske enhed for fakturaen for underbetalinger. Bogføringskontoen, der bruges, afhænger af indstillingen i feltet **Håndtering af kasserabat** på siden **Debitorparametre** for debitorer og feltet **Håndtering af kasserabat** på siden **Kreditorparametre** for kreditorer.
 
--   Hvis indstillingen for håndtering af kasserabat er Præcis, eller hvis indstillingen er Løs, og den relevante kasserabat bogføres i en anden juridisk enhed fra overbetalingen, anvendes den automatiske konto for Debitor, kasserabat, Kreditor kasserabat eller Øredifference i regnskabsvaluta. Du kan angive disse konti på siden **Konti til automatiske posteringer**.
--   Hvis indstillingen for håndtering af kasserabat er Løs, og kasserabatten bogføres i den samme juridiske enhed som overbetalingen (hvis den juridiske enhed for betalingen og den juridiske enhed for fakturaen er den samme), justeres kasserabatkontoen. Hvis en faktura på 100,00 med en mulig kasserabat på 3,00 f.eks. udlignes med en betaling på 98,00, justeres kasserabatkontoen for 1,00. Nettorabatbeløbet er 2,00.
--   Hvis indstillingen for håndtering af kasserabat er Løs, bogføres kasserabatten i den samme juridiske enhed som overbetalingen, og overbetalingen eller underbetalingen udlignes med flere fakturaer med kasserabatter, og kontoen for kasserabatten for den sidste faktura justeres.
+-   Hvis indstillingen for håndtering af kasserabat er **Præcis**, eller hvis indstillingen er **Løs**, og den relevante kasserabat bogføres i en anden juridisk enhed fra overbetalingen, anvendes den automatiske konto for Debitor, kasserabat, Kreditor kasserabat eller Øredifference i regnskabsvaluta. Du kan angive disse konti på siden **Konti til automatiske posteringer**.
+-   Hvis indstillingen for håndtering af kasserabat er **Løs**, og kasserabatten bogføres i den samme juridiske enhed som overbetalingen (hvis den juridiske enhed for betalingen og den juridiske enhed for fakturaen er den samme), justeres kasserabatkontoen. Hvis en faktura på 100,00 med en mulig kasserabat på 3,00 f.eks. udlignes med en betaling på 98,00, justeres kasserabatkontoen for 1,00. Nettorabatbeløbet er 2,00.
+-   Hvis indstillingen for håndtering af kasserabat er **Løs**, bogføres kasserabatten i den samme juridiske enhed som overbetalingen, og overbetalingen eller underbetalingen udlignes med flere fakturaer med kasserabatter, og kontoen for kasserabatten for den sidste faktura justeres.
 
-Hvis indstillingen for håndtering af kasserabat er Løs, gælder de løse udligningsregler kun i følgende situationer:
+Hvis indstillingen for håndtering af kasserabat er **Løs**, gælder de løse udligningsregler kun i følgende situationer:
 -   Der findes en overbetaling.
 -   Overbetalingen udlignes med en eller flere fakturaer, der indeholder en kasserabat.
 -   Kasserabatten bogføres i samme juridiske enhed som overbetalingen.

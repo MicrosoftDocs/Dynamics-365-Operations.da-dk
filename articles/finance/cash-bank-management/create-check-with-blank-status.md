@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 151991b399a30087c484262706e414e4e294bf7f
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 86020d9088d8135c83716128a77090608536a78f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715419"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804012"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Opret checks, der har statussen Blank
 
@@ -35,7 +35,7 @@ På siden **Checks** kan du udføre vedligeholdelsesopgaver for checks. Du kan f
 
 Hvis du vil åbne siden **Checks**, skal du gå til **Kontant- og bankstyring \> Bankkonti \> Bankkonti**, og derefter i handlingsruden vælge **Checks** på fanen **Administrer betalinger** i gruppen **Relaterede oplysninger**. Du kan også gå **Kontant- og bankstyring \> Forespørgsler og rapporter \> Checks**.
 
-Hvis du derefter vil oprette checks med statussen **Blank**, skal du vælge **Create blank checks** (Opret blanke checks) i handlingsruden. Når systemet opretter blanke checks, er den tilknyttede bankkonto midlertidigt deaktiveret. Dette reducerer risikoen for, at der genereres betalinger, samtidig med at der oprettes checks. Når behandlingen er fuldført, aktiveres den tilknyttede bankkonto igen.
+Hvis du derefter vil oprette checks med status **Blanko**, skal du vælge **Opret blankochecks** i handlingsruden. Når blankochecks er oprettet, er den tilknyttede bankkonto midlertidigt deaktiveret. Dette reducerer risikoen for, at der genereres betalinger, samtidig med at der oprettes checks. Når behandlingen er fuldført, aktiveres den tilknyttede bankkonto igen.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

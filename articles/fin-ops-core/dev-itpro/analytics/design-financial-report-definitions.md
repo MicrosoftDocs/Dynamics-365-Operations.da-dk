@@ -2,7 +2,7 @@
 title: Rapportdefinitioner i Designer til økonomirapporter
 description: Denne artikel indeholder oplysninger om rapportdefinitioner.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.form: FinancialReports
-ms.openlocfilehash: e1095502e6dafbe217f51658ac65292c422a0002
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2ffef335c694af56486ccd7738818c4edda49b9e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291792"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802526"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Rapportdefinitioner i Designer til økonomirapporter
 
@@ -37,8 +37,8 @@ En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anven
 Afhængigt af hvordan dataene er lagret i Microsoft Dynamics ERP-systemet, er transaktionsdetaljerne dog muligvis ikke tilgængelige i rapporter.
 
 ## <a name="create-a-report-definition"></a>Oprette en rapportdefinition
-1. I Report Designer skal du klikke på **Ny** i menuen **Filer**, og derefter skal du vælge **Rapportdefinition**.
-2. Angiv de relevante oplysninger på fanerne **Rapport**, **Output og fordeling**, **Sidehoveder og sidefødder** og **Indstillinger**.
+1. I Report Designer skal du klikke på **Ny** i menuen **Filer** og derefter vælge **Rapportdefinition**.
+2. Angiv de relevante oplysninger under fanerne **Rapport**, **Output og distribution**, **Sidehoveder og sidefødder** og **Indstillinger**.
 
 ## <a name="contents-of-a-report-definition"></a>Indholdet af en rapportdefinition
 Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysningerne bruges.

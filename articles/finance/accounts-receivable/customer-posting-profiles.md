@@ -2,7 +2,7 @@
 title: Bogføringsprofiler for kunde
 description: Denne artikel beskriver debitorposteringsprofiler, der styrer, hvordan kundetransaktioner bogføres i finansmodulet.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891689"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799566"
 ---
 # <a name="customer-posting-profiles"></a>Bogføringsprofiler for kunde
 
@@ -58,15 +58,15 @@ Hvis alle kundetransaktioner skal have samme posteringsprofil, skal du kun defin
 </thead>
 <tbody>
 <tr>
-<td>Bogføringsprofil</td>
+<td><strong>Posteringsprofil</strong></td>
 <td>Angiv en kode for posteringsprofilen. Eksempel: Hvis du vil have én konto for debitorsaldi i indenlandsk valuta og én konto for debitorsaldi i udenlandsk valuta, skal du oprette to posteringsprofiler. Du kan kalde den ene konto Indland og den anden Udland.</td>
 </tr>
 <tr>
-<td>Beskrivelse</td>
+<td><strong>Beskrivelse</strong></td>
 <td>Angiv en beskrivelse af posteringsprofilen. Dette bruges kun til at identificere posteringsprofilen bedre, når du ser den på denne side.</td>
 </tr>
 <tr>
-<td>Kontokode</td>
+<td><strong>Kontokode</strong></td>
 <td>Angiv, om posteringsprofilen skal gælde for en bestemt debitor, en gruppe af debitorer eller alle debitorer:
 <ul>
 <li><b>Tabel</b> – Posteringsprofilen anvendes på en enkelt debitor. Vælg debitorkontoen i feltet <b>Konto/gruppenummer</b>.</li>
@@ -76,33 +76,33 @@ Hvis alle kundetransaktioner skal have samme posteringsprofil, skal du kun defin
 </td>
 </tr>
 <tr>
-<td>Konto/gruppenummer</td>
+<td><strong>Konto/gruppenummer</strong></td>
 <td>Hvis du vælger <b>Tabel</b> i feltet <b>Kontokode</b>, skal du vælge kontonummeret på den debitor, der er knyttet til posteringsprofilen. Hvis du vælger <b>Gruppe</b>, skal du vælge debitorgruppen. Hvis du vælger <b>Alle</b>, skal feltet stå tomt.</td>
 </tr>
 <tr>
-<td>Samlekonto</td>
+<td><strong>Samlekonto</strong></td>
 <td>Vælg den hovedkonto, der skal bruges som debitorhandelskonto for de debitorer, som er tilknyttet posteringsprofilen. Denne konto er kontoen til bogføringstypen <b>Debitorsaldo</b>.</td>
 </tr>
 <tr>
-<td>Likviditetskonto for betalinger</td>
-<td>Vælg den likviditetskonto i Finans, der bruges til likviditetsbudgetter. Dette felt vises kun, hvis likviditetsbudgetter er aktiveret.</td>
+<td><strong>Likviditetskonto for betalinger</strong></td>
+<td>Vælg den <strong>likviditetskonto i Finans</strong>, der bruges til likviditetsbudgetter. Dette felt vises kun, hvis likviditetsbudgetter er aktiveret.</td>
 </tr>
 <tr>
-<td>Momsforudbetalinger</td>
+<td><strong>Momsforudbetalinger</strong></td>
 <td><p>Angiv kontonummeret for momsbetaling, der er modtaget forud.</p>
 <p><strong>Bemærk:</strong> Brug siden <b>Debitorparametre</b> til at angive den posteringsprofil, der bruges, når en betaling er markeret som forudbetaling.</p>
 </td>
 </tr>
 <tr>
-<td>Passiver for rabatkonto</td>
+<td><strong>Passiver for rabatkonto</strong></td>
 <td>Vælg finanskontoen til rabatpassiver.</td>
 </tr>
 <tr>
-<td>Rykkerforløb</td>
+<td><strong>Rykkerforløb</strong></td>
 <td>Vælg identifikationen for den rykkerserie, der skal bruges i forbindelse med debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
 </tr>
 <tr>
-<td>Rentekode</td>
+<td><strong>Rentekode</strong></td>
 <td>Vælg den rentekode, der skal bruges ved renteberegning for debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
 </tr>
 </tbody>

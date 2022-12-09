@@ -2,7 +2,7 @@
 title: Gemte visninger
 description: Denne artikel beskriver, hvordan du bruger de gemte visningsfunktioner.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757215"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799485"
 ---
 # <a name="saved-views"></a>Gemte visninger
 
@@ -55,7 +55,7 @@ Visningsvælgeren har to størrelsesvariationer:
  
 Hvis du vælger visningsnavnet, åbnes visningsvælgeren med listen over tilgængelige visninger for denne side.
 
-**Version 10.0.21 eller senere:** Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren de tilgængelige visninger i to sektioner. Den første sektiont indeholder visninger, der er specifikke for den aktuelle juridiske enhed, og den anden indeholder visninger, der er tilgængelige for alle juridiske enheder. Den første sektion er kun synlig, hvis der er visnnger for siden, som er specifikke for de juridiske enheder.
+Hvis funtionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, viser visningsvælgeren de tilgængelige visninger i to sektioner. Den første sektiont indeholder visninger, der er specifikke for den aktuelle juridiske enhed, og den anden indeholder visninger, der er tilgængelige for alle juridiske enheder. Den første sektion er kun synlig, hvis der er visnnger for siden, som er specifikke for de juridiske enheder.
 
 - **Standardvisning** – Visningen **Standard** er den indbyggede visning af siden, hvor der ikke er anvendt brugertilpasninger.
 - **Personlige visninger** – Visningerne uden hængelåse repræsenterer dine personlige visninger. Dette er visninger, som enten du har oprettet, eller som er tildelt af en administrator.
@@ -81,7 +81,7 @@ Hvis du vil gemme disse ændringer, skal du følge nedenstående trin.
     1. Vælg **Gem som**. 
     2. Angiv et navn og eventuelt en beskrivelse af visningen i ruden **Gem visnsing som**.
     3. Hvis denne visning skal være din standardvisning, skal du vælge **Fastgør som standard**. Yderligere oplysninger om standardvisninger finder du i afsnittet [Ændring af standardvisningen](#changing-the-default-view) nedenfor. 
-    4. **Version 10.0.21 eller senere:** Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, kan du vælge, om denne visning skal være tilgængelig for alle juridiske enheder eller kun for et delsæt af dem.
+    4. Hvis funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er aktiveret, kan du vælge, om denne visning skal være tilgængelig for alle juridiske enheder eller kun for et delsæt af dem.
     5. Vælg **Gem**.
 
 ## <a name="changing-the-default-view"></a>Ændre standardvisningen
@@ -90,7 +90,7 @@ Standardvisningen er den visning, som systemet vil forsøge at åbne, første ga
 
 > [!NOTE]
 > - I den grundlæggende funktion **Gemte visninger** er der en enkelt global standardvisning på tværs af juridiske enheder. Hvis du ændrer standardvisningen, åbnes denne visning som standard, uanset hvilken juridisk enhed du aktuelt befinder dig i.
-> - **Version 10.0.21 eller senere:** Når funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, kan hver juridisk enhed få sin egen standardvisning pr. side.
+> - Når funktionen **Forbedret understøttelse af juridisk enhed for gemte visninger** er slået til, kan hver juridiske enhed få sin egen standardvisning pr. side.
 
 For at ændre standardvisningen for en side skal du følge disse trin:
 
@@ -101,7 +101,7 @@ For at ændre standardvisningen for en side skal du følge disse trin:
 Når du opretter en ny visning (ved hjælp af handlingen **Gem som**), kan du også gøre den nye visning til standardvisningen ved at indstille **Vælg som standard**, før du gemmer visningen.
 
 > [!WARNING]
-> I nogle tilfælde køres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du åbner en side. Hvis du f.eks. åbner siden via et felt, køres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du åbner en side med en **standardvisning**, som allerede har en defineret forespørgsel, køres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. I dette tilfælde modtager du en informativ meddelelse, når visningen indlæses. Hvis du skifter visning, efter at siden er blevet indlæst, skal visningsforespørgslen kunne køres som forventet. Fra og med version 10.0.10 vil meddelelsen indeholde en integreret handling, der giver dig mulighed for at indlæse forespørgslen i standardvisningen direkte.
+> I nogle tilfælde køres den forespørgsel, der er knyttet til standardvisningen, ikke, første gang du åbner en side. Hvis du f.eks. åbner siden via et felt, køres feltets forespørgsel, uanset hvilken forespørgsel der er knyttet til standardvisningen. Hvis du åbner en side med en **standardvisning**, som allerede har en defineret forespørgsel, køres den oprindelige forespørgsel i stedet for standardvisningens forespørgsel. I dette tilfælde modtager du en informativ meddelelse, når visningen indlæses, med en integreret handling, der giver dig mulighed for at indlæse forespørgslen i standardvisningen direkte. Hvis du skifter visning, efter at siden er blevet indlæst, skal visningsforespørgslen kunne køres som forventet. 
 
 ## <a name="managing-personal-views"></a>Administrere personlige visninger
 

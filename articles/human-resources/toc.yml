@@ -566,10 +566,12 @@
               href: hr-leave-and-absence-enroll.md
             - name: Periodisere orlovs- og fraværsplaner
               href: hr-leave-and-absence-accrue.md
-            - name: Stoppe orlov midlertidigt
+            - name: Suspendere orlov
               href: hr-leave-and-absence-suspend-leave.md
             - name: Orlovsanmodning
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Oprette en åben orlov
+              href: hr-create-open-leave-absence.md
             - name: Administrere medarbejderorlov
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Vise analyse af orlov og fravær

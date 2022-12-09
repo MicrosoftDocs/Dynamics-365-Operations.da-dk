@@ -12,18 +12,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f89adfc3055da346cfe9b6951076094b133c842
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 06846141aff993dbcc9654d81a3e267343e925c0
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779710"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803850"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og bogføre en fremdateret check for en debitor
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en kunde. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser. Fuldfør følgende opgaver, inden du registrerer og bogfører en fremdateret check, du har modtaget fra en kunde:  * Opret fremdaterede checks på siden Kontant- og bankstyring * Opret en betalingsmåde for fremdaterede checks  Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
+Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en kunde. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser. Fuldfør følgende opgaver, inden du registrerer og bogfører en fremdateret check, du har modtaget fra en kunde:  
+ - Konfigurere fremdaterede check på siden **Kontant- og bankstyring** 
+ - Konfigurere en betalingsmåde for fremdaterede checks   
+  
+ Rollen for denne procedure er Kasserer. Denne procedure bruger demofirmaet USMF.
 
 1. Gå til **Kreditor > Betalinger > Betalingskladde**.
 2. Klik på **Ny**.

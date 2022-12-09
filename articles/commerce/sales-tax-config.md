@@ -9,18 +9,18 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 5936d16039927812dabf99bd770afcc0e827f1ca
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c899bd020ec9536a906a98635a6c70fac1355789
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276710"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819263"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurere moms for onlineordrer
 
@@ -33,6 +33,8 @@ Din e-handelskanal skal måske understøtte valgmuligheder som levering eller af
 ## <a name="destination-based-taxes-for-online-orders"></a>Destinationsbaseret moms for onlineordrer
 
 Generelt defineres moms på onlineordrer, der sendes til kundeadresser, af destinationen. Hver momsgruppe har en konfiguration for moms, der er baseret på en detaildestination, hvor forretningen kan definere destinationsoplysninger som f.eks. land eller område, stat, region og by i en hierarkisk struktur.
+
+Konfigurationen for **Detail, destinationsbaseret moms** finder du i sektionen **Momsmodul > Indirekte skatter > Moms > Momsgrupper**.
 
 ### <a name="orders-delivered-to-customer-address"></a>Ordrer, der leveres til en kundeadresse
 

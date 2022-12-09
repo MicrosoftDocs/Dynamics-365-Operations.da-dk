@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1268e619d27a2e400c76bfa45fb932997ec88483
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56d8f11d1bb53ef580e33ea43c84369c9e7fc0cc
+ms.sourcegitcommit: 0f33f7b7d34d4f9c31ae0faf06a7a5c04b0195a4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675985"
+ms.lasthandoff: 11/24/2022
+ms.locfileid: "9804894"
 ---
 # <a name="purchasing-policies-overview"></a>Oversigt over indkøbspolitikker
 
@@ -114,7 +114,7 @@ Reglen for rekvisitionsformål er en valgfri regel, der bestemmer typen af rekvi
 
 ### <a name="replenishment-category-access-policy-rule"></a>Politikregel for adgang til genopfyldningskategori
 
-Reglen for adgang til genopfyldningskategori er en valgfri regel, der bestemmer, hvilke produkter der er tilgængelige til opfyldelse af rekvisitionsbehov for en bestemt juridisk enhed, når rekvisitionsformålet er **Genopfyldning**.
+Politikreglen for adgang til genopfyldningskategori er en valgfri regel, der bestemmer, hvilke produkter der er tilgængelige til opfyldelse af rekvisitionsbehov for en bestemt juridisk enhed, når rekvisitionsformålet er **Genopfyldning**.
 
 ### <a name="replenishment-control-rule"></a>Kontrolregel for genopfyldning
 

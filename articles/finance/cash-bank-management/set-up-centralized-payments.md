@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715634"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804041"
 ---
 # <a name="set-up-centralized-payments"></a>Konfigurere centraliserede betalinger
 
@@ -34,7 +34,10 @@ Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhe
 -   Konfigurer mellemregning.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Konfigurere et organisationshierarki til centraliserede betalinger
-Du skal konfigurere et organisationshierarki til centraliserede betalinger. Samme organisationshierarki bruges til at behandle centraliserede kreditorbetalinger og centraliserede debitorbetalinger. **Bemærk!** Til centraliserede betalinger er hierarkiets struktur underordnet. Enhver juridisk enhed i hierarkiet kan behandle betalinger på vegne af enhver anden juridisk enhed i hierarkiet. På siden **Organisationshierarkier** kan du oprette et nyt organisationshierarki. I feltet **Formål** skal du vælge **Centraliserede betalinger**. 
+Du skal konfigurere et organisationshierarki til centraliserede betalinger. Samme organisationshierarki bruges til at behandle centraliserede kreditorbetalinger og centraliserede debitorbetalinger. 
+
+>[!Note] 
+>Til centraliserede betalinger er hierarkiets struktur underordnet. Enhver juridisk enhed i hierarkiet kan behandle betalinger på vegne af enhver anden juridisk enhed i hierarkiet. På siden **Organisationshierarkier** kan du oprette et nyt organisationshierarki. I feltet **Formål** skal du vælge **Centraliserede betalinger**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Konfigurer en mellemregningskonto for centraliserede betalinger
 Når betalingsposteringer i den aktuelle juridiske enhed udlignes mod fakturaer i andre juridiske enheder, oprettes de relevante skyldig til- og skyldig fra-posteringer for de enkelte juridiske enheder. Du skal angive den juridiske enhed, hvor alle gældende kontantrabatter og alle realiserede tab eller gevinster bogføres. Før du går i gang, skal du afgøre, hvilken juridisk enhed du vil bruge til behandling af kreditor- og debitorbetalinger. Hvis én juridisk enhed behandler kreditorbetalinger, mens en anden juridisk enhed behandler betalinger fra debitorer, skal du skifte mellem de enkelte juridiske enheder. På siden **Mellemregning** kan du vælge en mellemregningsrelationspost for en juridisk enhed, du vil behandle betalinger på vegne af. 

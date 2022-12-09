@@ -2,7 +2,7 @@
 title: Grænseflade til Report Designer
 description: I denne artikel forklares, hvordan du navigerer gennem Report Designer, og hvordan du bruger de forskellige indstillinger til at opfylde dine specifikke krav.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274721"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802736"
 ---
 # <a name="report-designer-interface"></a>Grænseflade til Report Designer
 
@@ -40,7 +40,7 @@ Menuen **Filer** er tilgængelig for alle brugere og omfatter følgende kommando
 |-----------------------------------|-------------|
 | Ny                               | Opret en ny rapportdefinition, rækkedefinition, kolonnedefinition, rapporteringstrædefinition, rapportgruppedefinition eller mappe. Yderligere indstillinger er tilgængelige afhængigt af din brugerrolle. |
 | Åbnet                              | Åbn en eksisterende rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition. |
-| Afslutning                             | Luk den aktuelle byggesten. |
+| Luk                             | Luk den aktuelle byggesten. |
 | Luk alle                         | Luk alle byggesten. |
 | Gem                              | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition. |
 | Gem som                           | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition under et nyt navn. |
@@ -50,7 +50,7 @@ Menuen **Filer** er tilgængelig for alle brugere og omfatter følgende kommando
 | Seneste rapportdefinitioner         | Vis en liste over rapporter, der for nylig er oprettet eller ændret. Du kan derefter vælge en rapport på listen. |
 | Seneste rækkedefinitioner            | Vis en liste over rækkedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en rækkedefinition på listen. |
 | Seneste kolonnedefinitioner         | Vis en liste over kolonnedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en kolonnedefinition på listen. |
-| Seneste rapporteringstrædefinitioner | Vis en liste over rapporteringstrædefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en rapporteringstrædefinition på listen. |
+| Seneste trædiagramdefinitioner | Vis en liste over rapporteringstrædefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en rapporteringstrædefinition på listen. |
 | Afslut                              | Afslut Report Designer. |
 
 ### <a name="edit-menu"></a>Menuen Rediger
@@ -68,18 +68,18 @@ Menuen **Rediger** er tilgængelig for brugere, der har rollen **Designer** elle
 | Søg                                   | Åbn dialogboksen **Søg og Erstat**, hvor du kan søge efter tekst i visningsruden. |
 | Erstatte                                | Åbn dialogboksen **Søg og Erstat**, hvor du kan søge efter og erstatte tekst i visningsruden. |
 | Indsæt rækker fra dimensioner            | Åbn dialogboksen **Indsæt rækker fra dimensioner**, hvor du kan vælge de dimensionsværdier, der skal medtages i rækkedefinitionen. Denne kommando er tilgængelig fra en rækkedefinition. |
-| Omnummerer rækker                          | Omnummerer alle numeriske rækkekoder. Denne kommando er tilgængelig fra en rækkedefinition. |
-| Link til række                              | Åbn dialogboksen **Links til række**, hvor du kan angive kilder til datalinks i rækkedefinitioner og rapporteringstrædefinitioner. Denne kommando er tilgængelig fra en rækkedefinition. |
-| Afrundingsdifference                    | Åbn dialogboksen **Afrundingsdifference**, hvor du kan angive parametrene for afrunding. Denne kommando er tilgængelig fra en rækkedefinition. |
-| Administrer dimensionsopsætninger                  | Åbn dialogboksen **Dimensionsopsætninger,**, hvor du kan oprette og redigere dimensionsopsætninger. Denne kommando er tilgængelig fra en rækkedefinition eller rapporteringstrædefinition. |
+| Renummerer rækker                          | Omnummerer alle numeriske rækkekoder. Denne kommando er tilgængelig fra en rækkedefinition. |
+| Rækkelinks                              | Åbn dialogboksen **Links til række**, hvor du kan angive kilder til datalinks i rækkedefinitioner og rapporteringstrædefinitioner. Denne kommando er tilgængelig fra en rækkedefinition. |
+| Afrundingsregulering                    | Åbn dialogboksen **Afrundingsdifference**, hvor du kan angive parametrene for afrunding. Denne kommando er tilgængelig fra en rækkedefinition. |
+| Administrer dimensionsgrupper                  | Åbn dialogboksen **Dimensionsopsætninger,**, hvor du kan oprette og redigere dimensionsopsætninger. Denne kommando er tilgængelig fra en rækkedefinition eller rapporteringstrædefinition. |
 | Indsæt række                             | Indsæt en tom række i rækkedefinitionen eller en tom kolonneoverskrift i kolonnedefinitionen. Denne kommando er tilgængelig fra en rækkedefinition eller kolonnedefinition. |
 | Slet række                             | Slet den markerede række fra rækkedefinitionen eller den markerede kolonneoverskrift fra kolonnedefinitionen. Denne kommando er tilgængelig fra en rækkedefinition eller kolonnedefinition. |
 | Indsæt kolonne                          | Indsæt en tom kolonne i kolonnedefinitionen. Denne kommando er tilgængelig fra en kolonnedefinition. |
 | Slet kolonne                          | Slet den markerede kolonne i kolonnedefinitionen. Denne kommando er tilgængelig fra en kolonnedefinition. |
-| Indsæt rapporteringsenheder fra dimensioner | Åbn dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, hvor du kan vælge de dimensionsværdier, der skal medtages i rapporteringstrædefinitionen. Denne kommando er tilgængelig fra en rapporteringstrædefinition. |
-| Importer hierarki for dimensionsopsætning         | Åbn dialogboksen **Hierarki for dimensionsopsætning**, hvor du kan importere et hierarki for dimensionsopsætning fra de økonomiske data. Denne kommando er tilgængelig fra en rapporteringstrædefinition for et ..\\financial-dimensions\\dimensionsbaseret system. |
+| Indsæt enheder i trædiagram fra dimensioner | Åbn dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, hvor du kan vælge de dimensionsværdier, der skal medtages i rapporteringstrædefinitionen. Denne kommando er tilgængelig fra en rapporteringstrædefinition. |
+| Importér dimensionsgruppehierarki         | Åbn dialogboksen **Hierarki for dimensionsopsætning**, hvor du kan importere et hierarki for dimensionsopsætning fra de økonomiske data. Denne kommando er tilgængelig fra en rapporteringstrædefinition for et ..\\financial-dimensions\\dimensionsbaseret system. |
 | Indsæt enhed i trædiagram                  | Indsæt en tom række i definitionen af rapporteringstræet. Denne kommando er tilgængelig fra en rapporteringstrædefinition. |
-| Slet rapporteringsenhed                  | Slet den markerede række for rapporteringsenhed fra definitionen af rapporteringstræ. Denne kommando er tilgængelig fra en trædiagramdefinition. |
+| Slet enhed i trædiagram                  | Slet den markerede række for rapporteringsenhed fra definitionen af rapporteringstræ. Denne kommando er tilgængelig fra en trædiagramdefinition. |
 
 ### <a name="view-menu"></a>Menuen Vis
 
@@ -89,14 +89,14 @@ Menuen **Vis** er tilgængelig for alle brugere og omfatter følgende kommandoer
 |-----------------|------------------------------------------------------------------------|
 | Navigationsrude | Få vist eller skjule navigationsruden.                                      |
 | Værktøjslinjer        | Vælg værktøjslinjer, der er synlige.                                  |
-| Statuslinje      | Vise eller skjule oplysninger om status i det vinduet **Report Designer**. |
+| Statuslinje      | Vis eller skjul oplysninger om status i vinduet **Report Designer**. |
 | Velkomstside    | Åbn siden **Velkommen**.                                             |
 
 ### <a name="format-menu"></a>Menuen Formater
 
 Menuen **Formater** er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**. Menuen indeholder følgende komponenter.
 
-| Kommando               | Beskrivelse |
+| Kommando               | Beskrivende tekst |
 |-----------------------|-------------|
 | Typografier og formatering | Åbn dialogboksen **Typografier og formatering**, hvor du kan oprette og ændre typografien for tekst i rækkedefinitioner og kolonnedefinitioner. Denne kommando er tilgængelig fra en rækkedefinition eller en kolonnedefinition. |
 | Kolonnebredde          | Åbn dialogboksen **Kolonnebredde**, hvor du kan angive bredden af den valgte kolonne. Denne kommando er tilgængelig fra en rækkedefinition, en kolonnedefinition eller en rapporteringstrædefinition. |
@@ -194,28 +194,28 @@ Standardværktøjslinjen giver hurtig adgang til fil- og redigeringskommandoer. 
 
 Formateringsværktøjslinjen giver nem adgang til formateringskommandoer. Denne værktøjslinje indeholder følgende knapper.
 
-| Knap                                                                                                       | Betegnelse                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Knappen Typografi.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Anvend den valgte typografi på den aktuelle tekst.      |
-| [![Knappen Skrifttype.](./media/fonttype.png)](./media/fonttype.png)                                                 | Anvend den valgte typografi på den aktuelle tekst.              |
+| Knap                                                                                                       | Betegnelse                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Knappen Typografi.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Anvend den valgte typografi på den aktuelle tekst.   |
+| [![Knappen Skrifttype.](./media/fonttype.png)](./media/fonttype.png)                                                 | Anvend den valgte typografi på den aktuelle tekst.           |
 | [![Knappen Skriftstørrelse.](./media/fontsize.png)](./media/fontsize.png)                                            | Anvend den valgte skriftstørrelse (i punkter) på den aktuelle tekst. |
-| [![Knappen Fed.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gør den aktuelle tekst fed.                             |
-| [![Knappen Kursiv.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursiver den aktuelle tekst.                           |
-| [![Knappen Understreg.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Understreg den aktuelle tekst.                             |
-| [![Knappen Formindsk indrykning.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Formindsk indrykning for den aktuelle tekst.                |
-| [![Knappen Forøg indrykning.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Forøg indrykning for den aktuelle tekst.                |
-| [![Knappen Baggrundsfarve.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Rediger baggrundsfarven for den aktuelle celle.        |
-| [![Knappen Skriftfarve.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Rediger farven for den aktuelle tekst.                   |
+| [![Knappen Fed.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gør den aktuelle tekst fed.                          |
+| [![Knappen Kursiv.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursiver den aktuelle tekst.                        |
+| [![Knappen Understreg.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Understreg den aktuelle tekst.                          |
+| [![Knappen Formindsk indrykning.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Formindsk indrykning for den aktuelle tekst.             |
+| [![Knappen Forøg indrykning.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Forøg indrykning for den aktuelle tekst.             |
+| [![Knappen Baggrundsfarve.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Rediger baggrundsfarven for den aktuelle celle.     |
+| [![Knappen Skriftfarve.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Rediger farven for den aktuelle tekst.                |
 
 ### <a name="report-designer-toolbar"></a>Værktøjslinjen i Report Designer
 
-Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigering i rapportdesigneren. Denne værktøjslinje indeholder følgende knapper.
+Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigering i Report Designer. Denne værktøjslinje indeholder følgende knapper.
 
 | Knap                                                                                              | Betegnelse |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Knappen Rapportdefinition.](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis den rapportdefinition, der er angivet i menuen **Vindue**. |
-| [![Knappen Rækkedefinition.](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis den rækkedefinition, der er tilknyttet den aktive rapportdefinition. |
-| [![Knappen Kolonnedefinition.](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis den kolonnedefinition, der er tilknyttet den aktive rapportdefinition. |
+| [![Knappen Rapportdefinition.](./media/reportc130389.png)](./media/reportc130389.png)            | Vis den rapportdefinition, der er angivet i menuen **Vindue**. |
+| [![Knappen Rækkedefinition.](./media/rowc130389.png)](./media/rowc130389.png)             | Vis den rækkedefinition, der er tilknyttet den aktive rapportdefinition. |
+| [![Knappen Kolonnedefinition.](./media/columnc130389.png)](./media/columnc130389.png)  | Vis den kolonnedefinition, der er tilknyttet den aktive rapportdefinition. |
 | [![Knappen Rapporteringstrædefinition.](./media/treec130389.png)](./media/treec130389.png)             | Vis den rapporteringstrædefinition, der er tilknyttet den aktive rapportdefinition. |
 | [![Knappen Rapportfremviser.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportfremviser, og vis den seneste version af den genererede rapport. Denne knap er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport. |
 | [![Knappen Generér rapport.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generer en rapport fra den aktive rapportdefinition. Denne knap er tilgængelig fra en rapportdefinition. |
