@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714752"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838466"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og oprette forbindelse til Warehouse Management-mobilappen
 
@@ -58,10 +58,10 @@ Det er lettest at installere appen på en enkelt enhed ved at installere den fra
 
 Som et alternativ til at installere fra en appbutik kan du i stedet hente appen fra Microsoft App Center. App Center indeholder installerbare pakker, som du kan indlæse. Ud over den aktuelle version giver App Center dig også mulighed for at hente tidligere versioner og eventuelt forhåndsversioner med kommende funktioner, som du kan prøve af. Hvis du vil hente aktuelle, tidligere eller forhåndsversioner af mobilappen Warehouse Management fra Microsoft App Center, skal du bruge følgende links:
 
-- **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)  
     Du kan finde oplysninger om, hvordan du installerer en hentet pakke på en Windows-enhed og derefter konfigurerer de nødvendige certifikater, under [Installere en build fra App Center](/appcenter/distribution/installation).
 
-- **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
     Hvis du henter en forhåndsversion, skal du følge nogle få ekstra trin for at installere den. Yderligere oplysninger finder du i [Teste Android-apps](/appcenter/distribution/testers/testing-android).
 
 Du kan finde oplysninger om, hvordan du installerer en build, som er hentet fra App Center, i [Installer et build](/appcenter/distribution/installation).

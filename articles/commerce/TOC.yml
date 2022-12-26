@@ -1422,6 +1422,8 @@
               href: set-up-rfm-analysis.md
             - name: Konfigurere Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Konfigurere Operational Insights
+              href: dev-itpro/operational-insights.md
         - name: Globalization Studio
           items:
             - name: Oversigt over Globalization Studio
@@ -3056,6 +3058,12 @@
               items:
                 - name: Oprette et udviklingsmiljø til e-handel for at fejlfinde en Retail Server VM på niveau 1
                   href: troubleshoot/set-up-dev-environment-debugging.md
+            - name: Butiksregnskab
+              items:
+                - name: Problemer med dataafstemningen af en Z-rapport
+                  href: troubleshoot/z-report-issues.md
+                - name: Fejl i bogføring af opgørelsen pga. ikke tilgængelig lagerbeholdning eller opdateringskonflikter
+                  href: troubleshoot/inventory-errors-posting.md
     - name: Udvikling og administration af programmer til finans og drift
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

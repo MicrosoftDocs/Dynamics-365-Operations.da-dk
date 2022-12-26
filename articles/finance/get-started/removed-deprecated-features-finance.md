@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643788"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854073"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller udfasede funktioner i Dynamics 365 Finance
 
@@ -124,21 +124,20 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formatet (elektronisk rapportering) **Momsopgørelse (AT)** under **Momsopgørelsesmodel**. Der introduceres nye formater for **Momsopgørelse (AT)** og **Momsopgørelse Excel (AT)** under modellen **Momsopgørelse**. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-opgørelse for Tyskland (design baseret på rapporteringskoder)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>ELSTER-opgørelse for Tyskland (design baseret på rapporteringskoder), \"Log over elektronisk momsopgørelse\" menupunkt og side \"Konfiguration af elektronisk momsopgørelse\" menupunkt og side til opsætning af elektronisk momsopgørelse, tysk rapportlayout (TaxReport_DE) SSRS-format
 
 [Momsopgørelse](../localizations/emea-de-vat-declaration.md)</br>
 [Konfigurere elektronisk momsopgørelse for Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[Elektronisk overførsel for momsangivelse (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Tyskland](../localizations/emea-deu-vat-declaration-germany.md) |
 | **Erstattet af en anden funktion?**   | Ja |
 | **Produktområder, der er berørt**         | Applikation |
-| **Installationsindstilling**              | Alt |
-| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formaterne (elektronisk rapportering) **Elster (DE)** og **Elster-model**. Der introduceres nye formater for **Momsopgørelse (DE)** og **Momsopgørelse Excel (DE)** under modellen **Momsopgørelse**. |
+| **Installationsindstilling**              | Alle |
+| **Status**                         | Udfases: den 1. december 2022 planlægger vi ikke længere at understøtte ER-formaterne (elektronisk rapportering) **Elster (DE)** og **Elster-model**. Der introduceres nye ER-formater for **Momsopgørelse (DE)** og **Momsopgørelse Excel (DE)** under modellen **Momsopgørelse**. Vi understøtter heller ikke længere menupunktet og -siden til **Moms** \> **Opgørelser** \> **Salgsmoms** \> menupunktet **Log over elektronisk momsopgørelse** menupunktet **Moms** \> **Opsætning** \> **Salgsmoms** \> **Konfiguration af elektronisk momsopgørelse** og siden **Moms** \> **Opsætning** \> **Salgsmoms** \> **Elektroniske momscertifikater** menupunktet og siden samt det tyske rapportlayout (TaxReport\_DE) SQL Server Reporting Services (SSRS). Processen til momsrapportering i Tyskland understøttes i funktionen [Elektronisk meddelelse](../general-ledger/electronic-messaging.md). Yderligere oplysninger finder du i [momsopgørelsen for Tyskland](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-opgørelse for Nederlandene (design baseret på rapporteringskoder)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>OB-opgørelse for Holland (design baseret på rapporteringskoder), menupunktet og siden \"Elektronisk OB-opgørelse\", hollandsk rapportlayout (TaxReport_NL) SSRS-format
 
 [OB-opgørelse](../localizations/emea-nl-vat-declaration.md)
 
@@ -147,8 +146,8 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 | **Årsagen til forældelsen/fjernelsen** | Erstattet af et nyt momsopgørelsesdesign, [momsopgørelse for Nederlandene](../localizations/emea-nl-vat-declaration-netherlands.md) |
 | **Erstattet af en anden funktion?**   | Ja |
 | **Produktområder, der er berørt**         | Applikation |
-| **Installationsindstilling**              | Alt |
-| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formatet (elektronisk rapportering) **OB-opgørelse (NL)** og **OB-opgørelsesmodel**. Der introduceres nye formater for **Momsopgørelse (NL)** og **Momsopgørelse Excel (NL)** under modellen **Momsopgørelse**. |
+| **Installationsindstilling**              | Alle |
+| **Status**                         | Udfases: Den 1. december 2022 planlægger vi ikke længere at understøtte ER-formatet (elektronisk rapportering) **OB-opgørelse (NL)** og **OB-opgørelsesmodel**. Der introduceres nye ER-formater for **Momsopgørelse (NL)** og **Momsopgørelse Excel (NL)** under modellen **Momsopgørelse**. Vi vil heller ikke længere understøtte menupunktet og -siden **Moms** \> **Erklæringer** \> **Salgsmoms** \> **Electronisk OB-erklæring** samt det hollandske rapportlayout (TaxReport_NL) SSRS-format. Processen til momsrapportering i Holland understøttes i funktionen [Elektronisk meddelelse](../general-ledger/electronic-messaging.md). Yderligere oplysninger finder du i [momsopgørelsen for Holland](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller udfasede funktioner i Finance 10.0.20 udgaven
 

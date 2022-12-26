@@ -2,7 +2,7 @@
 title: Konfigurere handlingsafhængige ER-destinationer
 description: Denne artikel forklarer, hvordan du kan konfigurere handlingsafhængige destinationer for et elektronisk rapporteringsformat (ER), der er konfigureret til at generere udgående dokumenter.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286241"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843791"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 
@@ -32,7 +32,7 @@ I Microsoft Dynamics 365 Finance **version 10.0.17 og senere** kan der køres et
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gøre handlingsafhængige ER-destinationer tilgængelige
 
-Hvis du vil konfigurere handlingsafhængige ER-destinationer i den aktuelle Finans-forekomst og aktivere den [nye](er-apis-app10-0-17.md) ER API, skal du åbne arbejdsområdet til [funktionsstyring](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) og aktivere funktionen **Konfigurer bestemte ER-destinationer til forskellige PM-handlinger**. Hvis du vil bruge konfigurerede ER-destinationer til [bestemte](#reports-list-wave1) rapporter under kørslen, skal du aktivere funktionen **Ruteoutput af PM-rapporter baseret på ER-destinationer, der er brugerhandlingsspecifikke (bølge 1)**.
+Hvis du vil konfigurere handlingsafhængige ER-destinationer i den aktuelle Finans-forekomst og aktivere den [nye](er-apis-app10-0-17.md) ER API, skal du åbne arbejdsområdet til [funktionsstyring](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) og aktivere funktionen **Konfigurer bestemte ER-destinationer til forskellige PM-handlinger**. Hvis du vil bruge konfigurerede ER-destinationer til bestemte rapporter under kørslen, skal du aktivere funktionen **Ruteoutput af PM-rapporter baseret på ER-destinationer, der er brugerhandlingsspecifikke (bølge 1)**.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsafhængige ER-destinationer
 
@@ -89,6 +89,51 @@ I følgende illustration vises et eksempel på dialogboksen **Destinationer for 
 > [!NOTE]
 > Hvis du har konfigureret ER-destinationer for flere komponenter i det kørende ER-format, tilbydes der en indstilling separat for hver konfigureret komponent i ER-formatet.
 
+Hvis der kan anvendes flere ER-formater som rapportskabeloner for det valgte dokument, vises alle ER-destinationer for alle relevante ER-rapportskabeloner i dialogboksen, som kan justeres manuelt under kørslen.
+
+Hvis der ikke kan anvendes [SSRS-rapportskabeloner (SQL Server Reporting Services)](SSRS-report.md) på det valgte dokument, skjules standardvalget af destinationer for udskriftsstyring dynamisk.
+
+Pr. finansversion **10.0.31** kan du manuelt ændre de tildelte ER-destinationer ved kørsel for følgende forretningsdokumenter:
+
+- Kundekontoudtog
+- Rentenota
+- Rykkernota
+- Debitorbetalingsvejledning
+- Kreditorbetalingsvejledning
+
+Hvis du vil aktivere funktionen til ændring af ER-destinationer under kørsel, skal du aktivere funktionen **Tillad ER-destinationsjustering under kørsel i arbejdsområdet** til [funktionsstyring](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+
+> [!IMPORTANT]
+> I rapporterne **Kundebetalingsvejledning** og **Leverandørbetalingsvejledning** er det kun muligt at ændre ER-destinationer manuelt, hvis flight **ForcePrintJobSettings** er aktiveret.
+
+[![Justere ER-destinationer under kørsel.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Når indstillingen **Brug destination for udskriftsstyring** er angivet til **Ja**, bruger systemet de standard ER-destinationer, der er konfigureret til bestemte ER-rapporter. Alle manuelle ændringer, der foretages i dialogboksen, ignoreres. Angiv indstillingen **Brug destination for udskriftsstyring** til **Nej** for at behandle dokumenter til ER-destinationer, der er defineret i dialogboksen, umiddelbart før du kører rapporterne.
+
+I følgende forretningsdokumenter antages det ikke, at der er eksplicit valgt en bruger, når de køres:
+
+- Kundekontoudtog
+- Rentenota
+- Rykkernota
+- Debitorbetalingsvejledning
+- Kreditorbetalingsvejledning
+
+Følgende logik bruges til at bestemme, hvilken handling der bruges, mens de foregående rapporter behandles:
+
+- Hvis en **ForcePrintJobSettings**-flight er aktiveret:
+
+    - Hvis indstillingen **Brug destination for udskriftsstyring** er angivet til **Ja**, bruges handlingen **Udskriv**.
+    - Hvis indstillingen **Brug destination for udskriftsstyring** er angivet til **Nej**, bruges handlingen **Udskriv**.
+
+- Hvis en **ForcePrintJobSettings**-flight ikke er aktiveret:
+
+    - Hvis indstillingen **Brug destination for udskriftsstyring** er angivet **til Ja**, bruges handlingen **Udskriv** til rapporterne **debitorbetalingsvejledning** og **kreditorbetalingsvejledning**.
+    - Hvis indstillingen **Brug destination for udskriftsstyring** er angivet til **Nej**, bruges standardrapportskabelonen for SSRS altid til rapportering af **debitorbetalingsvejledning** og **leverandørbetalingsvejledning**, uanset eventuelle ER-indstillinger, der er konfigureret.
+    - Handlingen **Udskriv** bruges altid i rapporterne **debitorkontoudtog**, **Rentenota** og **Rykkernota**.
+
+I forbindelse med den foregående logik kan handlingerne **Udskriv** eller **Vis** bruges til at konfigurere handlingsafhængige ER-rapportdestinationer. Under kørsel filtreres kun ER-destinationer, der er konfigureret til en bestemt handling, i dialogboksen.
+
 ## <a name="verify-the-provided-user-action"></a>Kontrollere den leverede brugerhandling
 
 Du kan kontrollere, hvilken brugerhandling der eventuelt er angivet for det kørende ER-format, når du udfører en bestemt brugerhandling. Denne kontrol er vigtig, når du skal konfigurere handlingsafhængige ER-destinationer, men du ikke er sikker på, hvilken brugerhandlingskode der eventuelt er angivet. Når du f.eks. begynder at bogføre en fritekstfaktura og angiver indstillingen **Udskriv faktura** til **Ja** i dialogboksen **Bogfør fritekstfaktura**, kan du angive indstillingen **Brug destination for udskriftsstyring** til **Ja** eller **Nej**.
@@ -104,20 +149,6 @@ Følg disse trin for at kontrollere den brugerhandlingskode, der er leveret.
 7. Gennemse de logposter, der skal indeholde den post, der viser den angivne brugerhandlingskode, hvis der er angivet en handling for kørsel af ER-format.
 
     ![Siden Kørselslog for elektronisk rapportering har oplysninger om den brugerhandlingskode, der er angivet for den filtrerede kørsel af et ER-format.](./media/er-destination-action-dependent-03.png)
-
-## <a name=""></a><a name="reports-list-wave1">Liste over forretningsdokumenter (bølge 1)</a>
-
-Følgende liste over forretningsdokumenter styres af funktionen **Ruteoutput af PM-rapporter baseret på ER-destinationer, der er brugerhandlingsspecifikke (bølge 1)**:
-
-- Debitorfaktura (fritekstfaktura)
-- Debitorfaktura (salgsfaktura)
-- Indkøbsordre
-- Købsforespørgsel om indkøbsordre
-- Salgsordrebekræftelse
-- Rykkernota
-- Rentenota
-- Kreditorbetalingsvejledning
-- Tilbudsanmodning
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

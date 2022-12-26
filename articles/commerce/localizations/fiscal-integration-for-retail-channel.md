@@ -2,19 +2,19 @@
 title: Oversigt over regnskabsintegration for Commerce-kanaler
 description: Denne artikel indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631230"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831852"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversigt over regnskabsintegration for Commerce-kanaler
 
@@ -134,7 +134,7 @@ Hvis sundhedskontrollen er mangelfuld, viser POS dialogboksen for sundhedskontro
 - **Annuller** – Hvis operatøren vælger denne knap, annullerer POS den seneste handling (der tilføjes eksempelvis ikke et element til en ny transaktion).
 
 > [!NOTE]
-> Sundhedskontrollen køres udelukkende, hvis den nuværende operation kræver regnskabsregistrering, og parameteren **Fortsæt ved fejl** er deaktiveret for det aktuelle trin i regnskabsregistreringsprocessen. Du kan finde flere oplysninger under [Angiv indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Sundhedskontrollen køres udelukkende, hvis den nuværende operation kræver regnskabsregistrering, og parametret **Fortsæt ved fejl** er deaktiveret for det aktuelle trin i regnskabsregistreringsprocessen. Du kan finde flere oplysninger under [Angiv indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagring af regnskabssvar i regnskabstransaktion
 
@@ -172,19 +172,17 @@ Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i Commerce SDK
 - [Eksempel på integration med kontrolenhed for Sverige](./emea-swe-fi-sample.md)
 - [Eksempel på integration af regnskabsregistreringsservice i Tyskland](./emea-deu-fi-sample.md)
 - [Eksempel på integration af bonprinter i Rusland](./rus-fpi-sample.md)
+- [Digital signaturprøve for Norge](./emea-nor-cash-registers.md)
 
 Følgende funktionalitet til regnskabsintegration implementeres også ved hjælp af strukturen for regnskabsintegration, men den er tilgængelig fra feltet og er ikke inkluderet i Commerce SDK:
 
 - [Regnskabsregistrering for Brasilien](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digital signatur for Frankrig](./emea-fra-cash-registers.md)
 
-Følgende regnskabsintegrationsfunktionalitet er også tilgængelig i Commerce SDK, men den kan i øjeblikket ikke udnytte strukturen for regnskabsintegration. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
-
-- [Digital signatur for Norge](./emea-nor-cash-registers.md)
-
 Følgende ældre finansintegrationsfunktionalitet, der er tilgængelig i Commerce SDK, anvender ikke strukturen for finansintegration og vil blive udfaset i senere opdateringer:
 
 - [Eksempel på integration med kontrolenhed for Sverige (forældet)](./retail-sdk-control-unit-sample.md)
 - [Digital signatur for Frankrig (ældre)](./emea-fra-deployment.md)
+- [Digital signatur for Norge (ældre)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

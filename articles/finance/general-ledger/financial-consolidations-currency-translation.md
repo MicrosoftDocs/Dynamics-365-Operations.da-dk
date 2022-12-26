@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846851"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831827"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversigt over økonomiske konsolideringer og valutaomregning
 
@@ -64,7 +64,7 @@ Her er nogle af de konsolideringsscenarier, som Konsolider online understøtter:
 - Konsolideringer, der involverer flere rapporteringsvalutaer
 
 ## <a name="legal-entity-setup"></a>Opsætning af juridisk enhed
-Før du behandler en konsolidering, skal du indstille den juridiske enhed. Du kan køre konsolideringen, så mange gange du ønsker, og alle data oversættes fra kilderegnskabets regnskabsvaluta til den valuta, der er defineret for det konsoliderede regnskab. Derfor hvis du for følgende organisationsstruktur skal oversætte alle nordamerikanske regnskaber til amerikanske dollar (USD) først og derefter til euro (EUR), som er valutaen i det overordnede regnskab, skal du have mindst to konsoliderede regnskaber.
+Før du behandler en konsolidering, skal du indstille den juridiske enhed. Du kan køre konsolideringen, så mange gange du ønsker, og alle data oversættes fra kilderegnskabets regnskabsvaluta til den valuta eller rapporteringsvaluta til den valuta, der er defineret for det konsoliderede regnskab. Derfor hvis du for følgende organisationsstruktur skal oversætte alle nordamerikanske regnskaber til amerikanske dollar (USD) først og derefter til euro (EUR), som er valutaen i det overordnede regnskab, skal du have mindst to konsoliderede regnskaber.
 
 ![Organisationsstruktur.](./media/organizational-structure.png "Organisationsstruktur")
 
@@ -152,7 +152,7 @@ Du kan finde flere oplysninger om, hvordan værdireguleringen af valuta fungerer
 ### <a name="additional-information"></a>Yderligere oplysninger
 - Når konsolideringen er behandlet, konsolideres alle posteringslag.
 - Elimineringskladder kan kun bogføres for det aktuelle lag.
-- Kun saldi for driftsenheder konsolideres. Derfor for at få vist primosaldi skal du stadig køre en ultimo ved årsafslutning i det konsoliderede regnskab.
+- Kun saldi for driftsenheder konsolideres. Derfor for at få vist startsaldi skal du stadig køre en ultimo ved årsafslutning i det konsoliderede regnskab.
 - Du kan bogføre en kassekladde i et elimineringsregnskab, men ikke i et konsolideret regnskab.
 - Justeringer af saldi i et konsolideret regnskab kan kun foretages ved hjælp af siden **Justeringer af ultimoperiode**. 
 

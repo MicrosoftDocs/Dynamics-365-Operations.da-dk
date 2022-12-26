@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c173057b8e1357790e780469c5806afb857be62a
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893259"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838311"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>NMFC-koder (National Motor Freight Classification)
 
@@ -57,7 +57,7 @@ Benyt følgende fremgangsmåde for at oprette en NMFC-kode.
 
 I følgende eksempel vises det, hvordan du kan konfigurere to forskellige NMFC-koder, som kan bruges til forskellige produkter.
 
-1. Gå til **Lagerstedsstyring \> Opsætning \> Lagerbeholdning \> NMFC-koder**.
+1. Gå til **Warehouse management \> Opsætning \> Lager \> NMFC-koder** eller **Transportstyring \> Opsætning \> Transportstandarder \> NMFC-koder**.
 1. Gå til handlingsruden, og vælg **Ny**.
 1. Angiv følgende værdier på den nye linje:
 

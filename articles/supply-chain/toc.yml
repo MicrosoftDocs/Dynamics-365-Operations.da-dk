@@ -1809,6 +1809,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanlægning
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Oprette spild til beregning af råvarebehov
+                  href: master-planning/scrap-calculations.md
                 - name: Overordnet planlægning for produkter med begrænset hyldelevetid
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Planlægning med ubegrænset kapacitet
@@ -2355,9 +2357,9 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Oprette et frigivet produkt for et enkelt firma
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Bruge dataenheder
+                - name: Produktdataenheder
                   href: pim/data-entities.md
-                - name: Tilstand for produktlivscyklus
+                - name: Status for produktlivscyklus
                   items:
                     - name: Oversigt over produktlivscyklustilstand
                       href: pim/product-lifecycle.md

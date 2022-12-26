@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Release 10.0.11
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
-ms.openlocfilehash: 7509092d353d75cefbbd97393d45c078530a21bd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 61bc5e3f36bd2ae6e38ed0f511d70a7ae62e045c
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291348"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9832025"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Fejlfinde datakilder for et udført ER-format for at analysere dataflow og -transformering
 
@@ -28,7 +28,7 @@ ms.locfileid: "9291348"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en elektronisk rapporteringsløsning (ER) til generering af udgående dokumenter, definerer du de metoder, der bruges til at få data ud af programmet og angive dem i det output, der genereres. Livscyklusunderstøttelsen for ER-løsningen kan gøres mere effektiv, hvis din løsning består af en ER-datamodel og dens tilknytningskomponenter samt et ER-format og de tilhørende tilknytningskomponenter, så modeltilknytningen er programspecifik, mens andre komponenter forbliver programagnostiske. Derfor kan flere ER-komponenter påvirke processen med at indtaste data i det genererede output.
+Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en elektronisk rapporteringsløsning (ER) til generering af udgående dokumenter, definerer du de metoder, der bruges til at få data ud af programmet og angive dem i det output, der genereres. Livscyklusunderstøttelsen for ER-løsningen kan gøres mere effektiv, hvis din løsning består af en ER-datamodel og de tilhørende tilknytningskomponenter samt et ER-format og de tilhørende tilknytningskomponenter, så modeltilknytningen er programspecifik, mens andre komponenter forbliver programagnostiske. Derfor kan flere ER-komponenter påvirke processen med at indtaste data i det genererede output.
 
 Nogle gange ser dataene i det genererede output anderledes ud end de samme data i programdatabasen. I disse tilfælde skal du finde ud af, hvilken ER-komponent der er ansvarlig for datatransformationen. Funktionen til fejlfinding af ER-datakilder reducerer i høj grad den tid og de omkostninger, der bruges på denne undersøgelse. Du kan afbryde udførelsen af et ER-format og åbne grænsefladen til fejlfinding af datakilder. Her kan du gennemse de tilgængelige datakilder og vælge en enkelt datakilde til udførelse. Denne manuelle udførelse simulerer udførelsen af datakilden under den reelle kørsel af et ER-format. Resultatet vises på en side, hvor du kan analysere de data, der modtages.
 

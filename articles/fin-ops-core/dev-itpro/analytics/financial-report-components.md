@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802709"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831604"
 ---
 # <a name="financial-report-components"></a>Komponenter i økonomisk rapport
 
@@ -42,7 +42,7 @@ Designfilosofien bag designeren til økonomirapporter er at opdele oplysninger i
 Hvis du ikke er vant til at designe rapporter, vil du sikker finde det fordelagtigt at benytte rapportguiden til hurtigt at oprette en rapportdefinition, der kan tilpasses senere. Hvis du har erfaring med at designe rapporter og ønsker mere fleksibilitet for rapportdesign, kan du kombinere nye eller eksisterende komponenter for at oprette en ny rapportdefinition. Du behøver ikke fuldt ud at forstå alle tilgængelige rapportdefinitionsindstillinger til fremstilling af kvalitetsrapporter. Efterhånden som du bliver fortrolig med at designe rapporter, kan du udvide dine rapportdefinitioner for at drage fordel af mere avancerede funktioner. Når du har oprettet en grundlæggende rapport, kan du tilpasse rapportdefinitionen og komponenterne i rapportdefinitionen.
 
 ## <a name="organize-the-building-blocks"></a>Organisere komponenterne
-Du kan bruge mapper til at organisere dine komponenter i Report Designer. Alle mapper er specifikke for den komponenttype, de indeholder. Alle mapper, der indeholder rækkedefinitioner, er for eksempel placeret i ruden **Rækkedefinitioner** i Report Designer.
+Du kan bruge mapper til at organisere dine komponenter i Rapportdesigner. Alle mapper er specifikke for den komponenttype, de indeholder. Alle mapper, der indeholder rækkedefinitioner, er for eksempel placeret i ruden **Rækkedefinitioner** i Report Designer.
 
 ### <a name="create-a-folder"></a>Oprette en mappe
 
@@ -65,7 +65,7 @@ Hvis du vil låse en låst komponent op, skal du åbne komponenten og derefter k
 
 ## <a name="building-block-groups"></a>Dokumentkomponentgrupper
 
-Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, du opretter for en rapport. Rapportkomponentgrupper er samlinger af definitioner og dimensionsgrupper.
+Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, du opretter for en rapport. Rapportkomponentgrupper er samlinger af definitioner og dimensionsværdigrupper.
 
 ### <a name="view-a-building-block-group"></a>Få vist en rapportkomponentgruppe
 
@@ -78,17 +78,17 @@ Du kan få vist alle de rapportkomponenter, der er knyttet til en rapportkompone
 
 ### <a name="export-a-building-block-group"></a>Eksportere en rapportkomponentgruppe
 
-Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede komponentgruppe som sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
+Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede komponentgruppe som sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer. Report Designer omfatter de refererede typografier og dimensionsværdiopsætninger sammen med komponentgruppen.
 
 1. Klik på **Rapportkomponentgrupper** i menuen **Firma** i Report Designer.
 2. Markér den rapportkomponentgruppe, du vil eksportere, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Eksportér**.
 3. I dialogboksen **Eksportér** skal du vælge de rapportdefinitioner, der skal eksporteres:
 
     - Hvis du vil eksportere alle rapportdefinitioner og de tilhørende komponenter, skal du klikke på **Markér alt**.
-    - Hvis du vil eksportere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du klikke på den relevante fane og derefter vælge de elementer, der skal eksporteres. Tryk på og hold Ctrl-tasten nede for at vælge flere elementer under en fane.
+    - Hvis du vil eksportere bestemte rapporter, rækker, kolonner, træer eller dimensionsværdiopsætninger, skal du klikke på den relevante fane og derefter vælge de elementer, der skal eksporteres. Tryk på og hold Ctrl-tasten nede for at vælge flere elementer under en fane.
 
     > [!NOTE]
-    > Når du vælger de rapporter, der skal eksporteres, markeres de tilknyttede rækker, kolonner, træer og dimensionsgrupper automatisk.
+    > Når du vælger de rapporter, der skal eksporteres, markeres de tilknyttede rækker, kolonner, træer og dimensionsværdigrupper automatisk.
 
 4. Når du er færdig med at markere elementer til eksport, skal du klikke på **Eksportér**.
 5. I dialogboksen **Gem som** skal du vælge den placering, som komponentgruppen skal eksporteres til.
@@ -97,7 +97,7 @@ Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i 
 
 ### <a name="import-a-building-block-group"></a>Importere en komponentgruppe
 
-Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentgruppe. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionssæt.
+Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentgruppe. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionsværdisæt.
 
 1. Klik på **Rapportkomponentgrupper** i menuen **Firma** i Report Designer.
 2. Markér den rapportkomponent, du vil importere en rapportkomponentgruppe til, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Importér**.
@@ -105,7 +105,7 @@ Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentg
 4. I dialogboksen **Importér** skal du vælge de rapportdefinitioner, der skal importeres:
 
     - Hvis du vil importere alle rapportdefinitioner og de understøttende komponenter, skal du klikke på **Markér alt**.
-    - Hvis du vil importere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du markere de rapporter, rækker, kolonner, træer eller dimensionsopsætninger, der skal importeres.
+    - Hvis du vil importere bestemte rapporter, rækker, kolonner, træer eller dimensionsværdiopsætninger, skal du markere de rapporter, rækker, kolonner, træer eller dimensionsværdiopsætninger, der skal importeres.
 
 5. Når du er færdig med at markere elementer til import, skal du klikke på **Importér**.
 

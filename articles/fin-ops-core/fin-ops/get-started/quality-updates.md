@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
-ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
+ms.openlocfilehash: 7d8de017c54a13a9935d74d33a57813922c9f823
+ms.sourcegitcommit: 8aee31d6dffabe13969dd5b9de4e0bf95f53e67e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/29/2022
-ms.locfileid: "9805308"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887124"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsopdateringer
 
@@ -28,16 +28,24 @@ Denne forudsætning er bekræftet af resultaterne: lavere hændelser tæller på
 
 ## <a name="what-you-need-to-know"></a>Hvad du skal vide
 
-- Proaktive kvalitetsopdateringer anvendes på månedlig basis.
-- Microsoft vil anvende proaktive kvalitetsopdateringer på alle sandkassemiljøer, der kører en serviceopdatering, som var [i brug](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change), da de proaktive kvalitetsopdateringer blev oprettet.
-- Undtagelser til proaktive kvalitetsopdateringer vil være tilladt for kunder, der reguleres af de amerikanske fødevaremyndigheder FDA (Food and Drug Administration).
+- Proaktive kvalitetsopdateringer (PQU) anvendes på månedlig basis.
+- Undtagelser til proaktive kvalitetsopdateringer er tilladt for kunder, der reguleres af de amerikanske fødevaremyndigheder FDA (Food and Drug Administration).
+- Proaktive kvalitetsopdateringer vil aldrig nedgradere miljøet eller automatisk opgradere fra én serviceopdateringsversion til en anden. 
 - Microsoft bestemmer, hvordan proaktive kvalitetsopdateringer skal administreres for regulerede miljøer og for selvstændige og myndigheders kunder i skyer.
-- Beskeder, der er relateret til proaktive kvalitetsopdateringer, posteres i [Microsoft 365 Meddelelsescenteret](https://admin.microsoft.com/AdminPortal/) og på et banner i kundens Microsoft Dynamics Lifecycle Services-projekt.
+- Beskeder, der vedrører proaktive kvalitetsopdateringer, bogføres i [Microsoft 365-meddelelsescenteret](https://admin.microsoft.com/AdminPortal/).
 - Fem dage før en proaktiv kvalitetsopdatering anvendes på et miljø, får kunderne besked om, at opdateringen finder sted.
 - Kunder kan ikke annullere eller udskyde proaktive kvalitetsopdateringer.
 - Proaktive kvalitetsopdateringer installeres i det områdespecifikke [vindue til planlagt vedligeholdelse](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Kvalitetsopdateringer er udviklet til at have lav risiko for at skabe problemer eller tilbageskridt, og dette understøttes af Microsoft-data.
 - Microsoft anbefaler målrettet test af bestemte problemer eller bestemte hotfixes, der er relateret til en proaktiv kvalitetsopdatering.
+- ALLE sandkasser, med undtagelse af dem, der har en tidsbegrænset undtagelse af lovmæssige årsager, vil blive klarmeldt 7. januar 2023.
+- Start af produktions- og proaktive kvalitetsopdateringer fra 21. januar 2023. 
+- Modtagelse af produktion starter kun for Lifecycle Services-projekter, hvor der er startet sandkasse(r) og indtil videre modtager proaktive kvalitetsopdateringer med regelmæssig cadence for alle understøttede serviceopdateringsversioner. Dette gælder kun kundemiljøer, hvor der ikke er angivet undtagelser af lovmæssige eller andre juridiske årsager.
+- Se herunder for at få en komplet plan over proaktive kvalitetsopdateringer til sandkasse- og produktionsmiljøer i løbet af 2023.
+- Hver serviceopdatering har mindst ét løbende eller igangværende PQU-tog, der skal startes. Når dine miljøer er klar til PQU-processen, modtager du muligvis en forudplanlagt proaktiv kvalitetsopdatering af dem alle, når du går til en ny version af serviceopdateringen. Kontroller planen for at fastlægge, hvornår en PQU for en serviceopdatering planlægges, hvis du planlægger opgradering til en nyere version af serviceopdateringen. 
+
+> [!Note]
+> Standardpræstationstest (tier4), test af premium-performance (tier5) og produktionsmiljøer vil modtage PQU'er i weekender. 
 
 ## <a name="focus-on-quality-updates"></a>Fokus på kvalitetsopdateringer
 
@@ -75,33 +83,22 @@ Der implementeres et sæt procesændringer før aktiveringen af proaktiv impleme
     > Microsoft Communications-teamet undersøger løbende forringet ydeevne af mailværktøjet, der forhindrer levering af mailbeskeder. Fortsæt med at overvåge Microsoft 365 Meddelelsescenter for onboarding- og beskedrelaterede meddelelser.
 
 - **Fejlsikret via flighting** – Flighting bruges til ændringer af beskyttelseskode, hvor det er relevant i en kvalitetsopdateringsrettelse eller ved hjælp af den eksisterende funktions-flighting, der er relevant for rettelsen. Hvis der kræves en reserve eller et deaktiveret skift efter en proaktiv installation, kan den udføres via flighting-systemet for at undgå yderligere fejl.
-- **Synkroniseringsangivelse for sandkasse** – Mindre end 20 procent af kunderne har i dag flere sandbokse, og én sandboks anvendes, hvor versionen matcher produktionen, som en hjælp ved fejlfinding. Hvis en kunde bruger en sandkasse til at teste en nyere version end produktionen, vil denne sandkasse modtage kvalitetsopdateringer til den nyere version.
+- **Synkroniseringsangivelse for sandkasse** – Den fortløbende opdatering til en isoleret sandkasse, der er valgt sammen med produktionen, understøttes ikke på dette tidspunkt. Alle trin 2- og trin 3-sandkasser modtager proaktive opdateringer mindst 7 dage før produktionsmiljøet i et Lifecycle Services-projekt. Igen gælder dette kun kundemiljøer, hvor der ikke er angivet undtagelser af lovmæssige eller andre juridiske årsager.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Hvad er rullelisten for kvalitetsopdateringer?
 
-Distributionen af proaktive kvalitetsopdateringer til sandkasse-miljøer forventes at begynde i slutningen af september eller oktober 2022 for Azure-kunder i skyen. Forsøgsmiljøer begynder også at modtage proaktiv opdateringsinstallation på det tidspunkt. I september vil der blive sendt en besked til hver kunde for at informere dem om den forventede tidsplan for deres miljøer. Der tillades kun undtagelser til den proaktive opdaterede distributionsproces for FDA-regulerede kunder. Vi arbejder stadig med, hvordan regulerede miljøer og regulerede og offentlige skykunder skal håndteres.
+Distributionen af proaktive kvalitetsopdateringer til sandkasse-miljøer begyndte i september 2022 for Azure-kunder i skyen. Senest den 1. januar 2023 afslutter vi 99 % af alle sandkasser for proaktive kvalitetsopdateringer.
 
-I løbet af de næste seks måneder vil vi øge procentdelen af sandboksmiljøer, der modtager proaktive opdateringer, indtil alle angivne miljøer er medtaget, og de skrider frem til opdatering af produktionsmiljøer. I løbet af perioden overvåger vi for at sikre, at installationsprocessen fungerer uden problemer, og at vi igen får brug for ikke-forstyrrende nyttelast.
+Der tillades kun undtagelser til den proaktive opdaterede distributionsproces for FDA-regulerede kunder. Vi arbejder stadig med, hvordan regulerede miljøer og regulerede og offentlige skykunder skal håndteres. 
 
 Da kunderne jævnligt modtager mindre nyttelast, forventer vi, at processen med aktuelle arbejde bliver simplere. Vi vil justere frekvensen for opdateringsinstallation, efterhånden som vi viser, hvordan vi kan køre processen uden afbrydelser. Denne proces fungerer allerede effektivt for vores Dataverse-platform og programmer og leverer de forventede forbedringer af servicekvaliteten. Vi gør det samme i forbindelse med finans- og driftsprogrammer.
 
+
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Hvornår starter kvalitetsopdateringerne for produktionsmiljøer?
-På dette tidspunkt er kvalitetsopdateringer kun målsandbokse. Dette område opdateres med en startdato for produktionsmiljøer, når der er mere konkrete data og måleværdier fra proaktive opdateringer for sandkasser til målere af parathed til produktion.
+I løbet af de første få måneder af 2023 med start 15. januar starter vi med at starte produktionsmiljøer for proaktive opdateringer og øge procentdelen af produktionsmiljøer, der modtager proaktive opdateringer. Vi vil kun mål for et produktionsmiljø i et Lifecycle Services-projekt, hvor der allerede er modtaget sandkassemiljøer, for at modtage proaktive opdateringer. Inden en opdatering får kunder med produktionsmiljøer, der er under start, besked via meddelelsescenter eller Lifecycle Services-banner. Se herunder for at få en komplet plan over proaktive kvalitetsopdateringer til sandkasse- og produktionsmiljøer i løbet af 2023.
 
 ## <a name="what-is-the-schedule-for-sandbox-proactive-quality-updates"></a>Hvad er planlægningen for proaktive sandkassekvalitetsopdateringer?
 Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planlagte vedligeholdelsesvinduer efter region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="proactive-quality-update-release-10028"></a>Proaktiv udgivelses af kvalitetsopdatering: 10.0.28
-**App version: 10.0.1265.89**  
-**Tilsvarende seneste KB-artikel: 745340**
-
-| Station | Områder | Fuldført tidsplan| Kommende sandkasseplan
-|---|---|---|---|
-| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 15. september til 18. september 2022, 19. september til 22. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
-| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 25. september til 28. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
-| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 26. september til 29. september 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
-| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 28. september til 1. oktober 2022 og 7. oktober til 10. oktober 2022 | 25. oktober til 28. oktober 2022 |
-| Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktiv udgivelses af kvalitetsopdatering: 10.0.29
 **App version: 10.0.1326.70**  
@@ -109,23 +106,83 @@ Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planla
 
 | Station | Områder | Fuldført tidsplan | Kommende sandkasseplan|
 |---|---|---|---|
-| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 14. oktober til 17. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022 | 5. december til 8. december|
-| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 15. oktober til 18. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022 | 5. december til 8. december|
-| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 16. oktober til 19. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022 | 5. december til 8. december|
-| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022, 2. november til 5. november 2022, 15. november til 18. november 2022 | 5. december til 8. december|
+| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 14. oktober til 17. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022, 5. december til 8. december 2022 | 2. januar til 5. januar 2023 |
+| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 15. oktober til 18. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022, 5. december til 8. december 2022 | 2. januar til 5. januar 2023 |
+| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, det vestlige Europa, det østlige USA, de centrale Forenede Arabiske Emirater | 16. oktober til 19. oktober 2022, 2. november til 5. november 2022, 13. november til 16. november 2022, 5. december til 8. december 2022 | 2. januar til 5. januar 2023 |
+| Station 4 | Nordeuropa, det centrale USA, det vestlige USA | 17. oktober til 20. oktober 2022, 2. november til 5. november 2022, 15. november til 18. november 2022, 5. december til 8. december 2022 | 2. januar til 5. januar 2023 |
 | Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktiv udgivelses af kvalitetsopdatering: 10.0.30
 **App-version: 10.0.1362.77**
 **Tilsvarende seneste KB-artikel: 767597**
 
-| Station | Områder | Kommende sandkasseplan |
+| Station | Områder | Fuldført tidsplan | Kommende sandkasseplan |
+|---|---|---|---|
+| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 1. december til 4. december 2022 |  13. december til 16. december 2022 | 
+| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 2. december til 5. december 2022 |  13. december til 16. december 2022 | 
+| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, Det nordlige Europa, det østlige USA, Det centrale Forenede Arabiske Emirater | 3. december til 6. december 2022 |  13. december til 16. december 2022 | 
+| Station 4 | Det vestlige Europa, Det centrale USA, Det vestlige USA | 4. december til 7. december 2022 |  13. december til 16. december 2022 | 
+| Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt | Ikke planlagt |
+
+### <a name="proactive-quality-update-calendar-year-2023-schedule"></a><a name="schedule"></a> Plan for proaktiv kvalitetsopdatering Kalenderår 2023
+
+#### <a name="stations-to-region-mapping"></a><a name="Stations-Regions"></a> Områdetilknytning
+
+| Stationer | Områder |
+|---|---|
+| Station 1 | Endnu ikke fastlagt |
+| Station 2 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz |
+| Station 3 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien |
+| Station 4 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, Det nordlige Europa, det østlige USA, Det centrale Forenede Arabiske Emirater |
+| Station 5 | Det vestlige Europa, Det centrale USA, Det vestlige USA |
+| Station 6 | DoD, Government Community Cloud (GCC), Kina |
+
+
+> [!IMPORTANT]
+> Dette er en plan på højt niveau for år 2023. Se eksemplet nedenfor for at få en mere tilsnende plan for januar 10.0.30 Release-2. Den nøjagtige plan og appversion opdateres 7 dage før starten på et kvalitetsopdateringstog.
+
+> [!Note]
+> Kun de startede produktionsmiljøer modtager opdateringen for 10.0.30 Release-2-uddannelse, modtagelsesmiljøer modtager eksplicit kommunikation.
+
+| Træning af kvalitetsopdatering | Frigiv afskæring | Træn varighed |
 |---|---|---|
-| Station 1 | Det centrale Canada, det østlige Canada, det centrale Frankrig, det centrale Indien, det østlige Norge, det vestlige Schweiz | 1. december til 4. december 2022 |
-| Station 2 | Det sydlige Frankrig, det sydlige Indien, det vestlige Norge, det nordlige Schweiz, det nordlige Sydafrika, det østlige Australien, det sydlige Storbritannien, de nordlige Forenede Arabiske Emirater, det østlige Japan, det sydøstlige Australien, det sydøstlige Asien | 2. december til 5. december 2022 |
-| Station 3 | Østasien, det vestlige Storbritannien, det vestlige Japan, det sydlige Brasilien, Det nordlige Europa, det østlige USA, Det centrale Forenede Arabiske Emirater | 3. december til 6. december 2022 |
-| Station 4 | Det vestlige Europa, Det centrale USA, Det vestlige USA | 4. december til 7. december 2022 |
-| Station 5 | DoD, Government Community Cloud (GCC), Kina | Ikke planlagt |
+| 10.0.30 Release-2 | 16. december 2022 | 2. januar til 29. januar 2023 |
+| 10.0.30 Release-3 | 13. januar 2023 | 30. januar til 25. februar 2023 |
+| 10.0.30 Release-4 | 24. februar 2023 | 6. marts til 8. april 2023 |
+| 10.0.31 Release-1 | 3. februar 2023 | 13. februar 2023 til 18. marts 2023|
+| 10.0.31 Release-2 | 3. marts 2023 | 13. marts til 15. april 2023|
+| 10.0.31 Release-3 | 14. april 2023 | 24. april 2023 til 27. maj 2023|
+| 10.0.32 Release-1 | 31. marts 2023 | 10. april 2023 til 13. maj 2023|
+| 10.0.32 Release-2 | 28. april 2023 | 8. maj 2023 til 10. juni 2023|
+| 10.0.32 Release-3 | 26. maj 2023 | 5. juni 2023 til 8. juli 2023|
+| 10.0.33 Release-1 | 28. april 2023 | 8. maj 2023 til 10. juni 2023|
+| 10.0.33 Release-2 | 26. maj 2023 | 5. juni 2023 til 8. juli 2023|
+| 10.0.33 Release-3 | 14. juli 2023 | 24. august 2023 til 26. august 2023|
+| 10.0.34 Release-1 | 23. juni 2023 | 3. juli 2023 til 5. august 2023|
+| 10.0.34 Release-2 | 21. juli 2023 | 31. juli 2023 til 2. september 2023|
+| 10.0.34 Release-3 | 1. september 2023 | 11. september 2023 til 14. oktober 2023|
+| 10.0.35 Release-1 | 28. juli 2023 | 7. august 2023 til 9. september 2023|
+| 10.0.35 Release-2 | 25. august 2023 | 4. september 2023 til 7. oktober 2023|
+| 10.0.35 Release-3 | 20. oktober 2023 | 30. december 2023 til 16. december 2023|
+| 10.0.36 Release-1 | 29. september 2023 | 9. oktober 2023 til 11. november 2023|
+| 10.0.36 Release-2 | 27. oktober 2023 | 6. november 2023 til 16. december 2023|
+| 10.0.36 Release-3 | 12. januar 2024 | 22. januar 2023 til 24. februar 2024|
+| 10.0.37 Release-1 | 3. november 2023 | 13. november 2023 til 6. januar 2024|
+| 10.0.37 Release-2 | 30. december 2023 | 8. januar 2024 til 10. februar 2024|
+| 10.0.37 Release-3 | 27. januar 2024 | 5. februar 2024 til 9. marts 2024|
+| 10.0.37 Release-4 | 23. februar 2024 | 4. marts 2024 til 6. april 2024|
+
+### <a name="proactive-quality-update-upcoming-10030-release-2-train-schedule"></a><a name="schedule"></a> Proaktiv kvalitetsopdatering kommende 10.0.30 Release-2-træningsplan
+**App version: 10.0.1362.99**
+
+| Stationer | Kommende sandkasseplan | Kommende produktionsplan |
+|---|---|---|
+| Station 1 | IT | IT |
+| Station 2 | 2. januar til 5. januar 2023 | 21. januar til 22. januar 2023 |
+| Station 3 | 3. januar til 6. januar 2023 | 28. januar til 29. januar 2023 |
+| Station 4 | 9. januar til 12. januar 2023 | IT |
+| Station 5 | 16. januar til 19. januar 2023 | IT |
+| Station 6 | IT | IT |
 
 > [!IMPORTANT] 
 > Fem dage i forvejen opdaterer Microsoft den foregående plan og sender en besked til det sæt miljøer, der er planlagt til at modtage disse kvalitetsopdateringer. Den foregående plan gælder kun for miljøer, der er blevet gjort besked om en forestående opdatering. Du kan finde oplysninger om de mørke timer for hver region i [Hvad er de planlagte vedligeholdelsesvinduer efter region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).

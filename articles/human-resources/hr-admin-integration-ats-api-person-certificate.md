@@ -2,7 +2,7 @@
 title: Personcertifikat
 description: Denne artikel beskriver personcertifikatenheden til Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3c3be061cb8a18a19729932352c82ff3b787000
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f9d5a8c83d9714a4d10dec16e66ab87b794b074
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897916"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887311"
 ---
 # <a name="person-certificate"></a>Personcertifikat
 
@@ -53,17 +53,20 @@ Denne enhed beskriver en kandidats faglige certifikater.
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivende tekst |
 | --- | --- | --- |
-| **Enheds-id for personcertifikat**<br>mshr_hcmpersoncertificateentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet | Systemgenereret entydig identifikation af enhedsposten for personcertifikat. |
-| **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Påkrævet | Part-id (person) for kandidaten. |
-| **Værdi for person-id**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_dirpersonentityid of mshr_dirpersonentity | Systemgenereret id til partpost (person). |
 | **Certifikattype-id**<br>mshr_certificatetypeid<br>*Streng* | Læse/skrive<br>Påkrævet |  Id for den certifikattype, der er defineret i Human Resources. |
-| **Værdi for certifikattype-id**<br>_mshr_fk_certificatetype_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_hcmcertificatetypeentityid of mshr_hcmcertificatetypeentity | Systemgenereret entydig identifikation af certifikattypen i den tilknyttede enhed. |
-| **Startdato**<br>mshr_startdate<br>*Datetime* | Læse/skrive<br>Påkrævet | Den dato, hvor certifikatet blev udstedt. |
+| **Startdato**<br>mshr_startdate<br>*Datetime* | Læse/skrive<br>Obligatorisk | Den dato, hvor certifikatet blev udstedt. |
 | **Slutdato**<br>mshr_enddate<br>*Datetime* | Læse/skrive<br>Valgfri | Den dato, hvor certifikatet udløber. |
 | **Notater**<br>mshr_notes<br>*Streng* | Læse/skrive<br>Valgfri | Noter til brug af rekrutteringsmedarbejdere eller ansættelseschefer. |
-| **Primært felt**<br>mshr_primaryfield<br>*Streng* | Skrivebeskyttet<br>Påkrævet |  Felt, der bruges som id for enhedsposten. Kombination af partnummer, certifikattype-id og startdato. |
+| **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Obligatorisk | Part-id (person) for kandidaten. |
+| **Primært felt**<br>mshr_primaryfield<br>*Streng* | Skrivebeskyttet<br>Obligatorisk |  Felt, der bruges som id for enhedsposten. Kombination af partnummer, certifikattype-id og startdato. |
+| **Værdi for certifikattype-id**<br>_mshr_fk_certificatetype_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_hcmcertificatetypeentityid of mshr_hcmcertificatetypeentity | Systemgenereret entydig identifikation af certifikattypen i den tilknyttede enhed. |
+| **Værdi for person-id**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_dirpersonentityid of mshr_dirpersonentity | Systemgenereret id til partpost (person). |
+| **Enheds-id for personcertifikat**<br>mshr_hcmpersoncertificateentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet | Systemgenereret entydig identifikation af enhedsposten for personcertifikat. |
+
+
+
 
 ## <a name="see-also"></a>Se også
 

@@ -32,7 +32,9 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Nyheder i Dynamics 365 Human Resources (enkeltstående)
                   items:
-                    - name: Nyheder i Dynamics 365 Human Resources-arkiver 2021 (enkeltstående)
+                    - name: Nyheder i Dynamics 365 Human Resources (enkeltstående) December 2022
+                      href: hr-whats-new-2022-12-12.md
+                    - name: Nyheder i Dynamics 365 Human Resources (enkeltstående) arkiver 2021
                       href: hr-admin-whats-new.md
                     - name: 29. november 2021
                       href: hr-whats-new-2021-11-29.md
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Ofte stillede spørgsmål om Human Resources virtuelle tabeller
                   href: hr-admin-virtual-entity-faq.md
+                - name: Konfigurere integration med Dataverse
+                  href: hr-dataverse-integration.md
                 - name: Konfigurere integration med Finance
                   href: hr-admin-integration-finance.md
                 - name: Konfigurere integration med Dayforce

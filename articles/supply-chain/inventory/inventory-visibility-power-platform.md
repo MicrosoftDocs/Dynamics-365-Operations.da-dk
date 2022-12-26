@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762694"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831768"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruge App til Inventory Visibility
 
@@ -106,7 +106,7 @@ Aktivere **lageroversigten** og angive synkroniseringsfrekvensen ved at følge d
 
 1. Åbn siden **Konfiguration**.
 1. Åbn fanen **Funktionsadministration og indstillinger**.
-1. Angiv skift for funktionen **OnHandMostSpecificBackgroundService** til *Ja*.
+1. Angiv skift for funktionen *OnHandMostSpecificBackgroundService* til *Ja*.
 1. Når funktionen er aktiveret, bliver afsnittet **Servicekonfiguration** tilgængelig og indeholder en række til konfiguration af funktionen **OnHandMostSpecificBackgroundService**. Med denne indstilling kan du vælge, hvor ofte lageroversigtsdata synkroniseres. Brug knapperne **Op** og **Ned** i kolonnen **Værdi** til at ændre tiden mellem synkroniseringer (som kan være så lav som 5 minutter). Vælg derefter **Gem**.
 
     ![OnHandMostSpecificBackgroundService-indstillingen](media/inventory-visibility-ohms-freq.png "OnHandMostSpecificBackgroundService-indstillingen")
@@ -125,10 +125,10 @@ Supply Chain Management gemmer mange oplysninger om din aktuelle disponible lage
 
 På siden **Forudindlæs oversigten over lagersynlighed** kan du se enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks*. I modsætning til enheden *Lageroversigt* indeholder enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks* en liste over lagerbeholdning for produkter sammen med valgte dimensioner. Lagersynlighed synkroniserer de forudindlæste oversigtsdata hvert 15. minut.
 
-Hvis du vil have vist data under fanen **Forudindlæs oversigten over lagersynlighed**, skal du aktivere funktionen *OnHandIndexQueryPreloadBackgroundService* under fanen **Funktionsstyring** på siden **Konfiguration** og derefter vælge **Opdater konfiguration** (se også [Konfigurere lagersynlighed](inventory-visibility-configuration.md)).
+Hvis du vil se data på fanen **Forudindlæs oversigten over lagersynlighed** skal du aktivere og konfigurere funktionen *OnHandIndexQueryPreloadBackgroundService*. Se [Aktivere og konfigurere forudindlæste disponible forespørgsler](inventory-visibility-configuration.md#query-preload-configuration) til vejledning.
 
 > [!NOTE]
-> Som med funktionen *OnhandMostSpecificBackgroudService* sporer funktionen *OnHandIndexQueryPreloadBackgroundService* kun de ændringer i lagerbeholdningen, der er foretaget, efter at du aktiverede funktionen. Data for produkter, der ikke er ændret, siden du aktiverede funktionen, synkroniseres ikke fra lagertjenestecachen til Dataverse-miljøet. Hvis **lageroversigtssiden** ikke viser alle de beholdningsoplysninger, du forventer, skal du gå til **Lagerstyring > Periodiske opgaver > integration af Lagersynlighed**, deaktivere batchjobbet og genaktivere det. Derved sker det første push, og alle data synkroniseres med enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks* i løbet af de næste 15 minutter. Hvis du vil bruge denne funktion, anbefales det, at du aktiverer den, før du opretter eventuelle ændringer i lagerbeholdningen, og aktiverer batchjobbet **lagersynlighedsintegration**.
+> Som med funktionen *OnHandMostSpecificBackgroundService* sporer funktionen *OnHandIndexQueryPreloadBackgroundService* kun de ændringer i lagerbeholdningen, der er foretaget, efter at du aktiverede funktionen. Data for produkter, der ikke er ændret, siden du aktiverede funktionen, synkroniseres ikke fra lagertjenestecachen til Dataverse-miljøet. Hvis **lageroversigtssiden** ikke viser alle de beholdningsoplysninger, du forventer, skal du gå til **Lagerstyring > Periodiske opgaver > integration af Lagersynlighed**, deaktivere batchjobbet og genaktivere det. Derved sker det første push, og alle data synkroniseres med enheden for *resultaterne af forudindlæsning af forespørgslen om beholdningsindeks* i løbet af de næste 15 minutter. Hvis du vil bruge denne funktion, anbefales det, at du aktiverer den, før du opretter eventuelle ændringer i lagerbeholdningen, og aktiverer batchjobbet **lagersynlighedsintegration**.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtrere og gennemse lageroversigter
 

@@ -2,23 +2,23 @@
 title: Værdiregulering af udenlandsk valuta i bank
 description: Denne artikel giver et overblik over processen med værdiregulering af udenlandsk valuta i banker. Det omfatter oplysninger om opsætning og kørsel af samt beregningerne til processen og tilbageføring af værdireguleringstransaktioner.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151425"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887253"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Værdiregulering af udenlandsk valuta i bank
 
@@ -39,17 +39,8 @@ Før du kan køre processen til værdiregulering, kræves følgende konfiguratio
 - På siden **Finans** skal du angive valutakurstypen. Hvis en valutakurstype ikke er defineret på hovedkontoen, anvendes denne valutakurstype i forbindelse med værdireguleringen af udenlandsk valuta.
 - På siden **Finans** skal du angive den realiserede gevinst, det realiserede tab og kontiene for urealiseret tab for værdiregulering af valuta. Konti for realiserede gevinster og realiserede tab anvendes, når transaktionerne for debitor og kreditor skal afregnes. Konti for ikke-realiserede gevinster og ikke-realiserede tab anvendes til at værdiregulere åbne transaktioner og hovedfinanskonti.
 - På siden **Konti for valutaværdiregulering** kan du vælge forskellige valutaværdireguleringskonti for hver valuta og hver virksomhed. Hvis der ikke er defineret nogen konti, bruges kontiene på siden **Finans**.
+- Brug fanen **Nummerserier** på siden **Likviditets- og bankstyringsparametre** til at tilføje en nummerserie til værdiregulering af udenlandsk valuta.
 
-## <a name="enable-foreign-currency-revaluation"></a>Aktiver værdiregulering af udenlandsk valuta
-
-Du skal aktivere funktionen til værdireguleringer af udenlandsk valuta i banker, før du kan behandle værdireguleringer af udenlandsk valuta.
-
-1. Gå til **Kontant- og bankstyring \> Opsætning \> Kontant- og bankstyringsparametre**.
-2. På fanen **Generelt** under **Værdiregulering af udenlandsk valuta** skal du ved **Aktiver værdiregulering i bank** indstille den til **Ja** for at slå funktionen til for den aktuelle juridiske enhed. 
-3. Tilføj en nummerserie for værdiregulering af udenlandsk valuta under fanen **Nummerserier**.
-4. Genindlæs browseren for at få vist **Værdiregulering af udenlandsk valuta** under afsnittet med **Periodiske opgaver** på områdesiden.
-
-Du skal aktivere funktionen for alle de juridiske enhed, der skal anvende værdiregulering af udenlandsk valuta. Hvis du er tildelt rollen som systemadministrator eller funktionsleder, kan du eliminere dette trin ved at aktivere funktionen **Aktiver værdiregulering i bank uden en parameter** i arbejdsområdet **Administration af funktioner**.
 
 > [!NOTE]
 > Såfremt jeres juridiske enhed anvender en russisk, polsk eller ungarsk lande-/områdekode, kan du allerede foretage værdiregulering af udenlandsk valuta i banker. Du kan ikke anvende den værdiregulering af udenlandsk valuta, der anvendes af andre lande eller områder.

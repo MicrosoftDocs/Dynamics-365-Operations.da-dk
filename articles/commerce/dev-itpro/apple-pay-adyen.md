@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: 0949b9d7a4b181605d43956932b4fc095940bd64
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 896847cee696e221b2114f7f28a0b56e73fc911b
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780357"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838223"
 ---
 # <a name="set-up-apple-pay-with-adyen-in-dynamics-365-commerce"></a>Konfigurere Apple Pay med Adyen i Dynamics 365 Commerce
 
@@ -102,13 +102,6 @@ Hvis du vil konfigurere en Commerce online butik til at bruge Apple Pay, skal du
 
 1. Når der er angivet oplysninger om den handlende, skal du køre distributionstidsplanen **1070**-kanalkonfiguration.
 
-## <a name="configure-commerce-pos-for-apple-pay"></a>Konfigurer Apple Pay for Commerce POS
-
-POS-konfigurationen bruger konfigurationen i hardwareprofilens **EFT-servicefelt** til Dynamics 365 Payment Connector for Adyen. Du skal konfigurere den elektroniske pengeoverførselstjeneste (EFT) til Dynamics 365 Payment Connector for Adyen i Commerce Headquarters, som beskrevet i [Afsnittet Konfigurere en Dynamics 365 POS-hardwareprofil](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Sørg for, at du føjer **ApplePay** til listen over betalingsmiddeltyper i feltet **Understøttede betalingsmiddeltyper**. Brug semikolon (;) for at adskille betalingsmiddeltyper på listen.
-
-Processortilknytningen for Adyen-connector vil registrere de kontantkorttyper, som Apple Pay bruger på POS-terminalen.
 
 ### <a name="configure-content-security-policies-in-site-builder"></a>Konfigurere sikkerhedspolitikker for indhold i Site Builder
 
@@ -138,6 +131,14 @@ Indstillinger for modulet **Apple Pay** er indbygget i modulet og er forbundet m
 Knappen til betaling **Apple Pay** vises kun på understøttede Apple Pay-enheder (iPhones, iPads og Safari-browsere, der understøtter Apple Pay). Hvis en bruger ikke bruger en af disse enheder, skjules betalingsknappen **Apple Pay**, så den ikke vises.
 
 Når en bruger markerer betalingsknappen **Apple Pay**, vises dialogboksen **Apple Pay**. Her kan brugeren godkendes mod sin Apple Pay-enhed eller browser. Dialogboksen **Apple Pay** viser en oversigt over ordrebeløbet og den betalingsmåde, som brugeren har konfigureret i forhold til Apple Wallet. Brugeren kan gennemse disse oplysninger og derefter vælge **Betal** for at fuldføre betalingen. Når betalingen er fuldført, dirigeres brugeren til siden **Ordre fuldført** på webstedet, der indeholder en detaljeret ordreoversigt for den fuldførte transaktion.
+
+## <a name="configure-commerce-pos-for-apple-pay"></a>Konfigurer Apple Pay for Commerce POS
+
+POS-konfigurationen bruger konfigurationen i hardwareprofilens **EFT-servicefelt** til Dynamics 365 Payment Connector for Adyen. Du skal konfigurere den elektroniske pengeoverførselstjeneste (EFT) til Dynamics 365 Payment Connector for Adyen i Commerce Headquarters, som beskrevet i [Konfigurere en Dynamics 365 POS-hardwareprofil](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Sørg for, at du føjer **ApplePay** til listen over betalingsmiddeltyper i feltet **Understøttede betalingsmiddeltyper**. Brug semikolon (;) for at adskille betalingsmiddeltyper på listen.
+
+Processortilknytningen for Adyen-connector vil registrere de kontantkorttyper, som Apple Pay bruger på POS-terminalen.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

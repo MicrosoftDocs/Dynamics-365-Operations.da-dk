@@ -2,7 +2,7 @@
 title: Aktivere flere leveringsmåder for afhentning af kundeordrer
 description: Denne artikel forklarer den funktionalitet i Microsoft Dynamics 365 Commerce, der giver dig mulighed for at oprette kundeordrer til afhentning i en butik.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858902"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831578"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivere flere leveringsmåder for afhentning af kundeordrer
 
 [!include [banner](includes/banner.md)]
 
 
-I Microsoft Dynamics 365 Commerce version 10.0.16 og nyere kan organisationer definere flere leveringsmåder, som kunder eller salgsforbindelser kan vælge imellem, når de opretter en ordre, der skal afhentes i en butik. På denne måde kan organisationer stille flere afhentningsmuligheder til rådighed for deres kunder. Mange forhandlere tilbyder nu kunder at vælge mellem afhentning af ordrer i butikken eller ved fortovskanten. Commerce understøtter konfigurationen af disse forskellige leveringsmåder for afhentning. Brugerne kan derefter benytte dem, når de opretter kundeordrer i en hvilken som helst understøttet Commerce-kanal (e-handel, callcenter eller butik).
+I Microsoft Dynamics 365 Commerce kan organisationer definere flere leveringsmåder, som kunder eller salgsforbindelser kan vælge imellem, når de opretter en ordre, der skal afhentes i en butik. På denne måde kan organisationer stille flere afhentningsmuligheder til rådighed for deres kunder. Mange forhandlere tilbyder nu kunder at vælge mellem afhentning af ordrer i butikken eller ved fortovskanten. Commerce understøtter konfigurationen af disse forskellige leveringsmåder for afhentning. Brugerne kan derefter benytte dem, når de opretter kundeordrer i en hvilken som helst understøttet Commerce-kanal (e-handel, callcenter eller butik).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Aktivere og konfigurere leveringsmåder for afhentning
 
-Hvis du vil bruge denne funktion, skal du slå funktionen **Understøttelse af flere leveringsmåder for afhentning** til i arbejdsområdet **Funktionsstyring** i Commerce Headquarters. Når du har slået funktionen til, skal der foretages yderligere konfiguration.
+Funktionen **Understøttelse af flere leveringsmåder for afhentning** til i arbejdsområdet **Funktionsstyring** i Commerce Headquarters er obligatorisk og bør være aktiveret i miljøet.
 
-I Commerce version 10.0.15 og tidligere kan organisationer kun definere én leveringsmåde som den angivne afhentningsleveringsmåde. Denne definition udføres på siden **Commerce-parametre**. Når du aktiverer funktionen **Understøttelse af flere leveringsmåder for afhentning** i version 10.0.16 og senere versioner, kopieres den leveringsmåde, der tidligere er defineret som leveringsmåden ved afhentning på siden **Commerce-parametre**, automatisk til den nye konfiguration for afhentningsleveringsmåder.
+Hvis du tidligere har defineret en leveringsmåde for afhentning på siden **Handelsparametre** , vises denne tilstand i den aktuelle konfiguration for leveringsmåder til afhentning.
 
 ![Leveringsmåder ved afhentning på siden Commerce-parametre.](media/multiplepickupparameter.png)
 
-Når du har slået funktionen **Understøttelse af flere leveringsmåder for afhentning** til, kan du definere flere leveringsmåder i gitteret **Levering gennem afhentning** i oversigtspanelet **Leveringsmåder** under fanen **Debitorordrer** på siden **Commerce-parametre**.
+Du kan definere flere **leveringsmåder til afhentningsgitteret** i **Handelsparametre** > **Kundeordrer**-fanen i oversigtspanelet **Moderne for levering**.  
 
 Felterne **Leveringsmåde ved afhentning** og **Elektronisk leveringsmåde**, og indstillingen **Vis kun fragtmandstilstande for indstillingen forsendelsesordrer** er flyttet til dette oversigtspanel.
 
@@ -47,8 +47,6 @@ Når du har defineret flere leveringsmåder for afhentning, skal du føje dem ti
 > [!NOTE]
 > Bortset fra den eksisterende leveringsmåde for afhentning, der kopieres til **Levering gennem afhentning**, når du aktiverer funktionen **Understøttelse af flere leveringsmåder for afhentning**, skal du konfigurere nye leveringsmåder for alle de øvrige konfigurationer af afhentningsleveringsmåder, som du opretter. Når du føjer leveringsmåder til gitteret **Levering gennem afhentning**, validerer Commerce, om de allerede bruges af aktive åbne salgslinjer. Hvis der findes åbne salgslinjer, vises en fejlmeddelelse. Leveringsmåderne betragtes ikke som leveringsmåder for afhentning, før alle åbne salgslinjer, der bruger dem, er blevet lukket (enten faktureret eller annulleret).
 
-> [!IMPORTANT]
-> Når du har defineret mere end én leveringsmåde for afhentning på siden **Commerce-parametre**, vil funktionen **Understøttelse af flere leveringsmåder for afhentning** blive obligatorisk og kan ikke længere deaktiveres. Hvis du skal slå funktionen fra, skal du fjerne alle leveringsmåder for afhentning, undtagen en, fra gitteret **Levering gennem afhentning**. Når der kun er defineret én leveringsmåde for afhentning, betragtes funktionen ikke længere som obligatorisk og kan deaktiveres.
 
 ### <a name="e-commerce-site-configurations"></a>Konfigurationer af e-handelswebsted
 

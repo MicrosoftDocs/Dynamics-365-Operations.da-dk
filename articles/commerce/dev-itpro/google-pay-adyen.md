@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115025"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838385"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Konfigurere Google Pay med Adyen
 
@@ -90,11 +90,6 @@ Hvis du vil konfigurere en Commerce online butik til at bruge google Pay, skal d
 
 1. Når du er færdig med at angive connector-egenskaberne, skal du køre **1070 (kanal-konfiguration**) distributionsplanlægningsjob.
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurer Google Pay for Commerce POS.
-
-POS-konfigurationen bruger indstillingen i hardwareprofilens **EFT-servicefelt** til Dynamics 365 Payment Connector for Adyen. Du kan finde oplysninger om, hvordan du konfigurerer den elektroniske pengeoverførselstjeneste (EFT) til Dynamics 365 Payment Connector for Adyen i Commerce Headquarters, i [Afsnittet Konfigurere en Dynamics 365 POS-hardwareprofil](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Processortilknytningen for Adyen-connector registrerer de kontantkorttyper, som Google Pay bruger på POS-terminalen.
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>Brug betalingsekspresmodul med Google Pay
 
@@ -223,6 +218,12 @@ Den rækkefølge, leveringsmetoderne vises i modulet Ekspresbetaling, er konfigu
 I modulet til betaling ved kassen bruges også modulet til leveringsindstillinger, når leveringsmåder gengives under betaling ved kassen. Der er flere oplysninger i [Leveringsindstillingsmodul](../delivery-options-module.md).
 
 Leveringsmåder vises, når de føjes til listen **Leveringsmåder** i onlinebutikken.
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurer Google Pay for Commerce POS.
+
+POS-konfigurationen bruger indstillingen i hardwareprofilens **EFT-servicefelt** til Dynamics 365 Payment Connector for Adyen. Du kan finde oplysninger om, hvordan du konfigurerer den elektroniske pengeoverførselstjeneste (EFT) til Dynamics 365 Payment Connector for Adyen i Commerce Headquarters, i [Konfigurere en Dynamics 365 POS-hardwareprofil](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Processortilknytningen for Adyen-connector registrerer de kontantkorttyper, som Google Pay bruger på POS-terminalen.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

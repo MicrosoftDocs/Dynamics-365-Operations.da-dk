@@ -2,7 +2,7 @@
 title: Personscreening
 description: Denne artikel beskriver personscreeningenheden til Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9b2bbda8f8191f592462f4fbd1902e7274cf7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3c316e0381f4d407ed7c4c39b5949717b71477bd
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907634"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831884"
 ---
 # <a name="person-screening"></a>Personscreening
 
@@ -44,6 +44,7 @@ Denne enhed beskriver de screeninger, som en kandidat har bestået eller skal be
     "mshr_status": Int,
     "mshr_partynumber": "String",
     "mshr_screeningtypeid": "String",
+    "_mshr_fk_screeningtype_id_value": "Guid",
     "mshr_primaryfield": "String",
     "_mshr_fk_person_id_value": "Guid",
     "mshr_hcmpersonscreeningentityid": "Guid",
@@ -53,17 +54,19 @@ Denne enhed beskriver de screeninger, som en kandidat har bestået eller skal be
 
 ## <a name="properties"></a>Egenskaber
 
-| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivelse |
+| Egenskab<br>**Fysisk navn**<br>**_Type_** | Anvendelse | Beskrivende tekst |
 | --- | --- | --- |
-| **Enheds-id for personscreening**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret | Entydigt primært id for personscreeningpost. |
-| **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Påkrævet | Det partnummer (person), der er tilknyttet kandidaten. |
-| **Værdi for person-id**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_dirpersonentityid of mshr_dirpersonentity | Systemgenereret id til partpost (person). |
+| **Notater**<br>mshr_note<br>*Streng* | Læse/skrive<br>Valgfri | Noter til brug af rekrutteringsmedarbejdere eller ansættelseschefer. |
+| **Ønsket af**<br>mshr_requiredby<br>*Datetime* | Læse/skrive<br>Valgfri | Den dato, hvor screeningen skal være fuldført. |
+| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus indstilling*|Læse/skrive<br>Obligatorisk | Angiver kandidatens status for screeningen. |
+| **Partnummer**<br>mshr_partynumber<br>*Streng* | Læse/skrive<br>Obligatorisk | Det partnummer (person), der er tilknyttet kandidaten. |
 | **Screeningstype-id**<br>mshr_screeningtypeid<br>*Streng* | Læse/skrive<br>Påkrævet<br>Fremmed nøgle: ScreeningType | Id for den screeningtype, der er defineret i Human Resources. |
 | **Værdi for screeningstype-id**<br>_mshr_fk_screeningtype_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_hcmscreeningtypeentityid of mshr_hcmscreeningtypeentity | Systemgenereret entydig identifikation for screeningstypeposten i den tilknyttede enhed. |
-| **Ønsket af**<br>mshr_requiredby<br>*Datetime* | Læse/skrive<br>Valgfri | Den dato, hvor screeningen skal være fuldført. |
-| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus indstilling*<br>Læse/skrive<br>Påkrævet | Angiver kandidatens status for screeningen. |
+| **Primært felt**<br>mshr_primaryfield<br>*Streng* |  Skrivebeskyttet<br>Obligatorisk | Felt, der bruges som id for enhedsposten. |
+| **Værdi for person-id**<br>_mshr_fk_person_id_value<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Fremmed nøgle: mshr_dirpersonentityid of mshr_dirpersonentity | Systemgenereret id til partpost (person). |
+| **Enheds-id for personscreening**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | Skrivebeskyttet<br>Påkrævet<br>Systemgenereret| Entydigt primært id for personscreeningpost. |
 | **Fuldførelsesdato**<br>mshr_completeddate<br>*Datetime* | Læse/skrive<br>Valgfri | Datoen, hvor screeningen blev fuldført. |
-| **Notater**<br>mshr_note<br>*Streng* | Læse/skrive<br>Valgfri | Noter til brug af rekrutteringsmedarbejdere eller ansættelseschefer. |
+
 
 ## <a name="see-also"></a>Se også
 

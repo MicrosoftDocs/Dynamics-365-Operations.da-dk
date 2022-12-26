@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135451"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843620"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Global Inventory Accounting
 
@@ -40,11 +40,17 @@ Et princip er en samling af lagerregnskabspolitikker, der kan knyttes til et ell
 
 Global Inventory Accounting er i øjeblikket tilgængelig i følgende geografiske Azure-områder:
 
-- United States
-- Europa
-- Storbritannien
 - Australien
 - Canada
+- Kina
+- Europa
+- Frankrig
+- Norge
+- Sydafrika
+- Schweiz
+- Forenede Arabiske Emirater
+- Storbritannien
+- USA
 
 Hvis du forsøger at installere tilføjelsesprogrammet fra et andet geografisk område, vil Microsoft Dynamics Lifecycle Services (LCS) vise en meddelelse om, at dit geografiske område ikke understøttes. Global Inventory Accounting understøtter ikke implementering af Supply Chain Management i det lokale miljø.
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405459"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852367"
 ---
 # <a name="grid-capabilities"></a>Gitteregenskaber
 
@@ -225,6 +225,7 @@ I dette afsnit vedligeholdes en liste over kendte problemer for det nye gitterko
 ### <a name="open-issues"></a>Aktuelle problemer
 - Når funktionen **Nyt gitterkontrolelement** er aktiveret, vil nogle sider fortsat anvende det eksisterende gitterkontrolelement. Det sker i følgende situationer:
  
+    - [Løst] Problem 762533: Uventet klientfejl, når du vælger en række på kortlisten.
     - [Løst] Der findes en kortliste på siden, som gengives i flere kolonner.
         - Denne type kortliste understøttes af **Nyt gitterkontrolelement** fra og med version 10.0.30. Enhver brug af forceLegacyGrid() til dette formål kan fjernes. 
     - [Løst] Der findes en grupperet kortliste på siden.

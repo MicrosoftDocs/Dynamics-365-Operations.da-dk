@@ -2,7 +2,7 @@
 title: Økonomiske konsolideringer online
 description: Denne artikel beskriver økonomiske onlinekonsolideringer i Finans.
 author: aprilolson
-ms.date: 07/09/2018
+ms.date: 12/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5843ac78adf32e738d9882c7f4e9e04a79200700
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848543"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838250"
 ---
 # <a name="online-financial-consolidations"></a>Økonomiske konsolideringer online
 
@@ -45,6 +45,19 @@ Her er en forklaring på de forskellige felter under denne fane:
 - **Konsolideringsperiode** – Brug felterne i denne sektion til at definere konsolideringsperioden.
 
     - **Fra** og **Til** – Angiv et datointerval for konsolideringen. Hvis du ikke udfylder disse felter, bliver konsolideringen behandlet for alle perioder, der er defineret i finanskalenderen for firmaet. Det anbefales ikke at udfylde disse felter.
+    - **Vælg konsolideringsbeløb fra** – Brug dette felt til at angive, om regnskabsvalutabeløbene eller rapporteringsvalutabeløbene fra kildefirmaerne skal bruges til at opdatere regnskabsvalutabeløbene i det konsoliderede regnskab.
+
+        - Vælg **Regnskabsvaluta** til at bruge regnskabsvalutabeløbene fra kilderegnskabet til at opdatere regnskabsvalutabeløbene i det konsoliderede regnskab. Når denne værdi er valgt, skal du bruge feltet **Konsolider regnskabsvaluta** til at definere, hvordan regnskabsvalutaerne i det konsoliderede regnskab skal beregnes.
+        - Vælg **Rapporteringsvaluta** til at bruge rapporteringsvalutabeløbene fra kilderegnskabet til at beregne regnskabsvalutabeløbene i det konsoliderede regnskab.
+
+            - Hvis rapporteringsvalutaen fra kildefirmaet er det samme som regnskabsvalutaen for det konsoliderede regnskab, kopieres rapporteringsvalutabeløbene fra kildefirmaet til det konsoliderede firma.
+            - Hvis rapporteringsvalutaen fra kildefirmaet afviger fra regnskabsvalutaen i det konsoliderede regnskab, omregnes værdierne ved hjælp af de valutakursoplysninger, der er defineret under fanen **Valutaomregning** på denne side for at beregne værdierne for konsolideringsfirmaet.
+
+    - **Konsolider regnskabsvaluta** – Dette felt er kun tilgængeligt, hvis feltet **Vælg konsolideringsbeløb fra** er angivet til **Regnskabsvaluta**. Brug det til at angive, om beløbene i regnskabsvalutaen fra kilderegnskaberne skal om oversættes via valutakurser eller kopieres til det konsoliderede regnskab. Vælg **Brug valutaomregning** til at bruge de valutakursoplysninger, der er defineret under fanen **Valutaomregning**, til at beregne regnskabssaldi i konsolideringen. Vælg **Brug regnskabsvalutabeløb** til at kopiere regnskabsvalutabeløbene fra kilderegnskabet til det konsoliderede regnskab.
+
+        - Hvis regnskabsvalutaen fra kildefirmaet er det samme som regnskabsvalutaen for det konsoliderede regnskab, kopieres rapporteringsvalutabeløbene fra kildefirmaet til det konsoliderede firma.
+        - Hvis regnskabsvalutaen fra kildefirmaet afviger fra regnskabsvalutaen i det konsoliderede regnskab, omregnes værdierne ved hjælp af de valutakursoplysninger, der er defineret under fanen **Valutaomregning** på denne side for at beregne værdierne for konsolideringsfirmaet.
+
     - **Medtag faktiske beløb** – Angiv denne indstilling til **Ja** for at konsolidere dine faktiske data.
     - **Medtag budgetbeløb** – Angiv denne indstilling til **Ja** for at konsolidere data fra budgetregisteret.
     - **Gendan saldi under konsolidering** – Vi anbefaler, at du ikke vælger **Ja** i denne indstilling. Gendan i stedet saldi som et separat batchjob.
@@ -80,9 +93,9 @@ Under fanen **Eliminering** har du tre muligheder for at behandle elimineringer:
 Du kan finde flere oplysninger om elimineringer i [Elimineringsregler](./elimination-rules.md).
 
 ## <a name="currency-translation"></a>Valutaomregning
-Under fanen **Valutaomregning** kan du definere den juridiske enhed, kontoen og valutakurstypen og kursen. Der findes tre muligheder i feltet **Anvend valutakurs fra**:
+Under fanen **Valutaomregning** kan du definere den juridiske enhed, kontoen og valutakurstypen og kursen. Hvis det konsoliderede regnskab er knyttet til andre hovedkonti end kildefirmaet, skal det konsoliderede firmas hovedkonto angives i felterne **Fra dato** og **Til dato**, ikke i kilderegnskabet hovedkonti. Der findes tre indstillinger for hver række af juridiske enheder og hovedkonti i feltet **Anvend valutakurs fra** :
 
-- **Konsolideringsdato** – Datoen for konsolideringen bruges til at hente valutakursen. Denne kurs svarer til spotsatsen eller kursen ved månedens afslutning. Du kan se en forhåndsvisning af kursen, men du kan ikke redigere den.
+- **Konsolideringsdato** – Den dato, der er defineret i feltet **Konsolideringsperiode Til** under fanen **Kriterier** for konsolideringen, bruges til at hente valutakursen. Denne kurs svarer til spotsatsen eller kursen ved månedens afslutning. Du kan se en forhåndsvisning af kursen, men du kan ikke redigere den.
 - **Posteringsdato** – Datoen for hver postering, der skal bruges til at vælge en valutakurs. Denne indstilling bruges oftest til anlægsaktiver og kaldes ofte en historisk kurs. Du kan ikke se en forhåndsvisning af satsen, fordi der vil være mange satser for de forskellige transaktioner i kontointervallet.
 - **Brugerdefineret sats** – Når du vælger denne indstilling, kan du angive den valutakurs, som du ønsker. Denne indstilling kan være praktisk ved gennemsnitlige valutakurser, eller hvis du konsoliderer mod en fast valutakurs.
 

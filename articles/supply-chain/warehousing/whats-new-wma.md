@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764233"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843674"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheder eller ændringer i Warehouse Management-mobilappen
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikel viser de nye funktioner, rettelser, forbedringer og kendte problemer for hver frigivet version af Warehouse Management-mobilappen til Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20390"></a>Version 2.0.39.0
+
+I denne version introduceres følgende nye funktioner, rettelser og forbedringer.
+- Øget stabilitet. 
+- Felterne på den **brugerdefinerede** side sorteres ikke længere automatisk ud fra indstillingerne for prioritet og underprioritet.  
+- Appen bruger nu indstillingerne for prioritet og underprioritet for hvert felt til at identificere det primære felt for en side. Det primære felt vises i trinhovedet. 
+- Har løst et problem, hvor det blød tastatur ikke kan skjules på Android.
+- Fast en afgang, hvor antalsnøglen viste en forkert korrekt værdi ved åbning i *bevægelsesflowet*. 
+- Fastlagde et problem, hvor værdien for skrivebeskyttet antal ikke er rettet korrekt. 
+- Fastlagde et problem, hvor websider ikke åbnes fra siden **Om**. 
+- *Auto-farvetemaet* har nu standardudseende (lys eller mørke) baseret på det globale tema, der er angivet i operativsystemet for den mobile enhed.
 
 ## <a name="version-20370"></a>Version 2.0.37.0
 

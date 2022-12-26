@@ -2,7 +2,7 @@
 title: Dynamics 365 Human Resources-kundeoverførsel til finans og drift-infrastrukturen
 description: Denne artikel beskriver kundeoverførsel af Microsoft Dynamics 365 Human Resources til finans og drift-infrastrukturen.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760356"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831714"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources-kundeoverførsel
 
@@ -43,7 +43,7 @@ Overførsel af kunder er en "flytning" (bevægelse) af en kundedatabase til fina
  - Kopiér det eksisterende Dataverse-miljø, som er sammenkædet med den enkeltstående Human Resources-app, til det miljø, du oprettede i forrige trin.
 
 > [!NOTE]
-> Når du tilføjer en database, skal du sikre dig, at indstillingen **Aktivér Dynamics 365-apps** er angivet til **Ja**. Du kan finde detaljerede oplysninger i [Forberede et Power Platform-miljø](hr-cust-migration.md#prepare-a-power-platform-environment)
+> Når du tilføjer en database, skal du sikre dig, at indstillingen **Aktivér Dynamics 365-apps** er angivet til **Ja**. Du kan finde detaljerede oplysninger i [Forberede et Power Platform-miljø](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### <a name="dataverse-capacity"></a>Dataverse-kapacitet
 
@@ -67,7 +67,7 @@ Hvis du vil oprette et nyt projekt, skal du følge disse trin.
 7. Markér afkrydsningsfeltet for at acceptere vilkår og betingelser.
 8. Vælg **Opret**.
 
-Når du har oprettet et nyt Lifecycle Services-projekt, skal du følge disse trin for at konfigurere det.
+Når du har oprettet et nyt Lifecycle Services-projekt, skal du følge disse trin for at konfigurere projektet.
 
 1. Vælg **Projektonboarding** for at fuldføre projektonboarding. Du kan finde flere oplysninger under [Projekt-onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -158,6 +158,7 @@ Når du er færdig med at overføre og validere et sandboksmiljø, skal du følg
 
 - Abonnementsestimator skal være fuldført.
 - [Parathedsvurderingen](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) for udgivelse skal være fuldført.
+- Brugeren, der starter overflytningen af produktionen i Lifecycle Services, skal have rollen Systemadministrator for denne Power Platform. 
 
 #### <a name="migrate-the-production-environment"></a>Overføre produktionsmiljøet
 
